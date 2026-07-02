@@ -1,12 +1,12 @@
 export const Y11_CH3B_QUESTIONS = [
   {
     "id": "y11a-3b-q1a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the graph of the circle below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line that intersects the circle at two points (e.g. at \\( x = 2 \\)). Since one input \\( x \\) maps to two different output values of \\( y \\), it fails the vertical line test and is not a function.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -27,6 +27,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Because one \\( x \\)-value corresponds to more than one \\( y \\)-value, the relation is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 2 \\)) crosses the circle twice, at \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -41,16 +46,22 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0], [5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5], [0,5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.6, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 4.6, 'y'], {fontSize: 14});\nboard.create('circle', [[0,0], 4], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 4.2, '4'], {fontSize: 12});\nboard.create('text', [0.2, -4.2, '-4'], {fontSize: 12});\nboard.create('text', [4.2, 0.2, '4'], {fontSize: 12});\nboard.create('text', [-4.7, 0.2, '-4'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "No — a vertical line (e.g. \\( x = 2 \\)) crosses the circle twice, at \\( (2, \\sqrt{12}) \\) and \\( (2, -\\sqrt{12}) \\).",
+      "Yes — every \\( x \\)-value on the circle has exactly one \\( y \\)-value.",
+      "No — the circle is not centred at the origin.",
+      "Yes — the circle passes the horizontal line test."
+    ]
   },
   {
     "id": "y11a-3b-q1b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the graph of the semicircle below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line (e.g. at \\( x = 1.5 \\)) which intersects the semicircle at two points. Because a vertical line intersects the curve more than once, it is a relation and not a function.",
+    "a": "1",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -71,6 +82,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Thus, the relation fails the vertical line test and is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1.5 \\)) crosses the semicircle twice.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -85,16 +101,22 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0], [4,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.8, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.3, 'y'], {fontSize: 14});\nboard.create('arc', [[0,0], [0,3], [0,-3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 3.1, '3'], {fontSize: 12});\nboard.create('text', [0.2, -3.1, '-3'], {fontSize: 12});\nboard.create('text', [3.1, 0.2, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Yes — a semicircle always passes the vertical line test.",
+      "No — a vertical line (e.g. \\( x = 1.5 \\)) crosses the semicircle twice.",
+      "No — the semicircle has open endpoints.",
+      "Yes — every \\( x \\)-value gives a unique \\( y \\)-value."
+    ]
   },
   {
     "id": "y11a-3b-q1c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the sideways S-curve shown below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line through the loop (e.g. \\( x = 1 \\) or \\( x = -1 \\)). This vertical line will intersect the curve at three distinct points, indicating it is not a function.",
+    "a": "1",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -115,6 +137,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Since one value of \\( x \\) produces three values of \\( y \\), this relation is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses the curve three times.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -129,16 +156,22 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.3, 'y'], {fontSize: 14});\nboard.create('curve', [function(t){ return t*t*t - 4*t; }, function(t){ return t; }, -2.5, 2.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Yes — the curve is symmetric about the origin.",
+      "No — a vertical line (e.g. \\( x = 1 \\)) crosses the curve three times.",
+      "No — the curve does not pass through the origin.",
+      "Yes — every \\( x \\)-value gives one \\( y \\)-value."
+    ]
   },
   {
     "id": "y11a-3b-q1d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the sideways parabola opening to the left below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line (e.g. \\( x = 1 \\)). It cuts the parabola at two points (one above the x-axis, one below). Therefore, it fails the vertical line test and is not a function.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -159,6 +192,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Since \\( x = 1 \\) maps to both \\( y = 2 \\) and \\( y = -2 \\), the relation is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -173,16 +211,22 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-3.5], [0,3.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 3.3, 'y'], {fontSize: 14});\nboard.create('curve', [function(t){ return 3 - t*t/2; }, function(t){ return t; }, -3.5, 3.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [3.1, 0.2, '3'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).",
+      "Yes — parabolas always pass the vertical line test.",
+      "No — the parabola only exists for \\( x < 0 \\).",
+      "Yes — this parabola opens upwards."
+    ]
   },
   {
     "id": "y11a-3b-q1e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the hyperbola shown below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line (e.g. \\( x = 1 \\)). It intersects the upper branch at \\( (1, \\sqrt{5}) \\) and the lower branch at \\( (1, -\\sqrt{5}) \\). Since a vertical line intersects the curve twice, the relation is not a function.",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -203,6 +247,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Since there are two y-values for a single x-value, this hyperbola is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = 1 \\)) crosses both branches, at \\( (1, \\sqrt{5}) \\) and \\( (1, -\\sqrt{5}) \\).",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -217,16 +266,22 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0], [4.5,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-5.5], [0,5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.4, 'x'], {fontSize: 14});\nboard.create('text', [-0.4, 5.2, 'y'], {fontSize: 14});\nboard.create('functiongraph', [function(x){ return Math.sqrt(4 + x*x); }, -5, 5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('functiongraph', [function(x){ return -Math.sqrt(4 + x*x); }, -5, 5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('text', [0.2, 2.2, '2'], {fontSize: 12});\nboard.create('text', [0.2, -2.2, '-2'], {fontSize: 12});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "No — a hyperbola has no \\( y \\)-intercepts.",
+      "Yes — the two branches never share an \\( x \\)-value.",
+      "No — a vertical line (e.g. \\( x = 1 \\)) crosses both branches, at \\( (1, \\sqrt{5}) \\) and \\( (1, -\\sqrt{5}) \\).",
+      "Yes — a hyperbola opens along the \\( x \\)-axis only."
+    ]
   },
   {
     "id": "y11a-3b-q1f",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "t": "Functions, relations, and graphs",
     "question": "Copy the looped curve shown below. Draw a vertical line showing that the graph does not represent a function, and explain why.",
-    "a": "Draw a vertical line (e.g. \\( x = -0.5 \\)). The vertical line cuts the loop at two points (above and below the x-axis). Thus it fails the vertical line test and is not a function.",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "Recall: the vertical line test states a graph represents a function only if every possible vertical line crosses it at most once. If any vertical line crosses the graph twice or more, the graph is not a function.",
@@ -247,6 +302,11 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Because a single input \\( x \\) maps to multiple outputs \\( y \\), it is not a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Applying the vertical line test confirms: No — a vertical line (e.g. \\( x = -0.5 \\)) crosses the loop at two points.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -261,7 +321,13 @@ export const Y11_CH3B_QUESTIONS = [
         ],
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0], [2,0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,-1.5], [0,1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.8, -0.2, 'x'], {fontSize: 14});\nboard.create('text', [-0.2, 1.3, 'y'], {fontSize: 14});\nboard.create('curve', [function(t){ return t*t - 1; }, function(t){ return t*t*t - t; }, -1.5, 1.5], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
       }
-    }
+    },
+    "opts": [
+      "Yes — the loop only touches itself once.",
+      "No — the loop is not a closed curve.",
+      "No — a vertical line (e.g. \\( x = -0.5 \\)) crosses the loop at two points.",
+      "Yes — every \\( x \\)-value in the loop gives one \\( y \\)-value."
+    ]
   },
   {
     "id": "y11a-3b-q2a",
@@ -1079,12 +1145,12 @@ export const Y11_CH3B_QUESTIONS = [
   },
   {
     "id": "y11a-3b-q4a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "For the linear function \\( y = -3x + 2 \\):\n\n(i) Copy and complete the table of values for \\( x = 0, 1, 2 \\).\n(ii) Plot the points and sketch the function.\n(iii) Write down the domain and range.",
-    "a": "(i) Table of values: (0, 2), (1, -1), (2, -4).\n(ii) Line passing through these points.\n(iii) Domain: all real x, Range: all real y.",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x = 0, 1, 2 \\) into \\( y = -3x + 2 \\).",
@@ -1105,17 +1171,28 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
     ]
   },
   {
     "id": "y11a-3b-q4b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "For the quadratic function \\( y = x^2 - 2x + 3 \\):\n\n(i) Copy and complete the table of values for \\( x = -1, 0, 1, 2, 3 \\).\n(ii) Plot the points and sketch the parabola.\n(iii) Write down the domain and range.",
-    "a": "(i) Table of values: (-1, 6), (0, 3), (1, 2), (2, 3), (3, 6).\n(ii) Parabola opening upwards with vertex at (1, 2).\n(iii) Domain: all real x, Range: y >= 2.",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x \\) values into \\( y = x^2 - 2x + 3 \\).",
@@ -1136,7 +1213,18 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq 2 \\)",
+      "\\( \\text{Domain: } x \\geq 2,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 2 \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 2 \\)"
     ]
   },
   {
@@ -1613,15 +1701,26 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "id": "y11a-3b-q8b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Two coloured dice are rolled. The value on the red die is the \\( x \\)-coordinate and the green die is the \\( y \\)-coordinate.\n\n(i) List the set of points possible if the numbers either add or multiply to give 4.\n(ii) Is this set a relation or a function?",
-        "a": "(i) Points: {(1, 3), (3, 1), (2, 2), (1, 4), (4, 1)}.\n(ii) It is a relation and not a function, because the x-coordinate 1 maps to both y = 3 and y = 4.",
+        "a": "1",
         "solutionSteps": [
           {
             "explanation": "Two dice each show values from 1 to 6, giving 36 equally likely outcomes (x, y) in total before filtering for the given condition.",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "Since \\( x=1 \\) gives both \\( y=3 \\) and \\( y=4 \\), the set is: Relation, not a function — the input \\( x = 1 \\) maps to both \\( y = 3 \\) and \\( y = 4 \\).",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "Relation, not a function — because \\( x = 2 \\) maps to two different \\( y \\)-values.",
+          "Relation, not a function — the input \\( x = 1 \\) maps to both \\( y = 3 \\) and \\( y = 4 \\).",
+          "Function — every \\( x \\)-value maps to exactly one \\( y \\)-value.",
+          "Function — this is a one-to-one mapping."
         ]
       }
     ],
@@ -2294,12 +2393,12 @@ export const Y11_CH3B_QUESTIONS = [
   },
   {
     "id": "y11a-3b-q11a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "For the exponential function \\( y = 3^x \\):\n\n(i) Copy and complete the table of values for \\( x = -2, -1, 0, 1, 2 \\).\n(ii) Plot the points and sketch the function.\n(iii) Write down the domain and range.",
-    "a": "(i) Table of values: (-2, 1/9), (-1, 1/3), (0, 1), (1, 3), (2, 9).\n(ii) Exponential curve rising from left to right, asymptotic to the negative x-axis.\n(iii) Domain: all real x, Range: y > 0.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "Evaluate \\( y = 3^x \\) for each given \\( x \\) value.",
@@ -2320,17 +2419,28 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: } y > 0 \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y > 0 \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+      "\\( \\text{Domain: } x > 0,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
     "id": "y11a-3b-q11b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "For the cubic function \\( y = \\frac{1}{4}(3x - x^3) \\):\n\n(i) Copy and complete the table of values for \\( x = -3, -2, -1, 0, 1, 2, 3 \\).\n(ii) Plot the points and sketch the function.\n(iii) State the domain and range of this function.",
-    "a": "(i) Table of values: (-3, 4.5), (-2, 0.5), (-1, -0.5), (0, 0), (1, 0.5), (2, -0.5), (3, -4.5).\n(ii) S-shaped curve passing through these points.\n(iii) Domain: all real x, Range: all real y.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "Substitute \\( x \\) values into the function expression.",
@@ -2351,7 +2461,18 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Recognising the general shape of this function family (linear, quadratic, exponential, or cubic) helps you predict the domain and range quickly, even before plotting every point.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Reading the extent of the curve along each axis gives \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)",
+      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
@@ -2388,28 +2509,50 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "id": "y11a-3b-q12b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Copy and complete the table of values (round to 1 decimal place where necessary) for \\( x = 0, 0.5, 1, 2, 3, 4.5, 8 \\).",
-        "a": "Table of values: (0, 0), (0.5, 1), (1, 1.4), (2, 2), (3, 2.4), (4.5, 3), (8, 4).",
+        "a": "0",
         "solutionSteps": [
           {
             "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "Evaluating \\( R(x)=\\sqrt{2x} \\) at each \\( x \\)-value gives the table \\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4) \\).",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4) \\)",
+          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.4),\\ (4.5,3),\\ (8,4.5) \\)",
+          "\\( (0,0),\\ (0.5,1),\\ (1,1.4),\\ (2,2),\\ (3,2.2),\\ (4.5,3),\\ (8,4) \\)",
+          "\\( (0,0),\\ (0.5,0.7),\\ (1,1),\\ (2,1.4),\\ (3,1.7),\\ (4.5,2.1),\\ (8,2.8) \\)"
         ]
       },
       {
         "id": "y11a-3b-q12c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) Plot these points and join them with a smooth curve starting at the origin. What type of curve is this?",
-        "a": "The curve is the upper half of a parabola opening to the right (specifically, \\( y^2 = 2x \\) for \\( y \\ge 0 \\)).",
+        "a": "0",
         "solutionSteps": [
           {
             "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "Squaring \\( y=\\sqrt{2x} \\) gives \\( y^2=2x \\) with \\( y \\geq 0 \\): The curve is the upper half of a parabola opening to the right (specifically, \\( y^2 = 2x \\) for \\( y \\geq 0 \\)).",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "The curve is the upper half of a parabola opening to the right (specifically, \\( y^2 = 2x \\) for \\( y \\geq 0 \\)).",
+          "The curve is a semicircle centred at the origin.",
+          "The curve is a full parabola opening upwards.",
+          "The curve is one branch of a hyperbola."
         ]
       }
     ],
@@ -2478,28 +2621,50 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "id": "y11a-3b-q13b",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "b) Copy and complete the table of values (use '*' or 'undefined' for \\( x = 0 \\)) for \\( x = -6, -3, -1.5, -1, 0, 1, 1.5, 3, 6 \\). Explain why \\( x = 0 \\) is undefined.",
-        "a": "Table of values: (-6, -0.5), (-3, -1), (-1.5, -2), (-1, -3), (0, undefined), (1, 3), (1.5, 2), (3, 1), (6, 0.5).\nAt x = 0, division by zero is undefined, so the function value does not exist.",
+        "a": "1",
         "solutionSteps": [
           {
             "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "Evaluating \\( h(x)=\\frac{3}{x} \\) at each \\( x \\)-value (undefined at \\( x=0 \\), since division by zero is undefined) gives \\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\).",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,1.5),\\ (3,1),\\ (6,0.5) \\)",
+          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,\\text{undefined}),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\)",
+          "\\( (-6,0.5),\\ (-3,1),\\ (-1.5,2),\\ (-1,3),\\ (0,\\text{undefined}),\\ (1,-3),\\ (1.5,-2),\\ (3,-1),\\ (6,-0.5) \\)",
+          "\\( (-6,-0.5),\\ (-3,-1),\\ (-1.5,-2),\\ (-1,-3),\\ (0,0),\\ (1,3),\\ (1.5,2),\\ (3,1),\\ (6,0.5) \\)"
         ]
       },
       {
         "id": "y11a-3b-q13c",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "c) Plot these points and join them with a smooth curve in two parts. What is the name of this type of curve?",
-        "a": "The curve is a rectangular hyperbola with asymptotes along the x-axis and y-axis.",
+        "a": "0",
         "solutionSteps": [
           {
             "explanation": "Comparing the table of values to the sketch confirms the shape and direction of the curve described in the answer.",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "As \\( x \\to 0 \\), \\( y \\to \\pm\\infty \\), and as \\( x \\to \\pm\\infty \\), \\( y \\to 0 \\): The curve is a rectangular hyperbola with asymptotes along the \\( x \\)-axis and \\( y \\)-axis.",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "The curve is a rectangular hyperbola with asymptotes along the \\( x \\)-axis and \\( y \\)-axis.",
+          "The curve is a full circle centred at the origin.",
+          "The curve is a parabola with vertex at the origin.",
+          "The curve is a straight line through the origin."
         ]
       }
     ],
@@ -2620,15 +2785,26 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "id": "y11a-3b-q14e",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "question": "e) Sketch the graph of the area function \\( A(x) \\) over the domain found in part d.",
-        "a": "Parabola opening downwards with x-intercepts at (0, 0) and (12, 0), and vertex (maximum area) at (6, 36).",
+        "a": "1",
         "solutionSteps": [
           {
             "explanation": "Since A(x) = 12x - x^2 is a downward-opening parabola, its maximum value occurs exactly at the vertex, halfway between the two x-intercepts (x = 0 and x = 12).",
             "workingOut": "",
             "graphData": null
+          },
+          {
+            "explanation": "Since \\( A(x)=12x-x^2 \\) has roots \\( x=0,12 \\) and a maximum at the midpoint \\( x=6 \\), \\( A(6)=36 \\): Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (maximum area) at \\( (6, 36) \\).",
+            "workingOut": "",
+            "graphData": null
           }
+        ],
+        "opts": [
+          "A straight line through \\( (0,0) \\) and \\( (12,0) \\) with no maximum.",
+          "Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (maximum area) at \\( (6, 36) \\).",
+          "Parabola opening upwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (12, 0) \\), and vertex (minimum area) at \\( (6, 36) \\).",
+          "Parabola opening downwards, with \\( x \\)-intercepts at \\( (0, 0) \\) and \\( (24, 0) \\), and vertex at \\( (12, 144) \\)."
         ]
       }
     ],
@@ -2675,12 +2851,12 @@ export const Y11_CH3B_QUESTIONS = [
   },
   {
     "id": "y11a-3b-q15a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "Solve the equation \\( 3x - y + 4 = 0 \\) for \\( y \\) and hence explain why it represents a function.",
-    "a": "y = 3x + 4. It represents a function because for every input x, there is exactly one corresponding value of y.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
@@ -2701,17 +2877,28 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Since each input has exactly one output, the equation represents a function (specifically, a linear function).",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( y = 3x + 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+      "\\( y = 3x + 4 \\). It represents a relation but not a function because some \\( x \\)-values give two \\( y \\)-values.",
+      "\\( y = 3x - 4 \\). It represents a function because for every input \\( x \\), there is exactly one corresponding value of \\( y \\).",
+      "\\( y = -3x - 4 \\). It represents a function because it is linear."
     ]
   },
   {
     "id": "y11a-3b-q15b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "Solve the equation \\( xy = 6 \\) for \\( y \\) and explain why it represents a function.",
-    "a": "y = 6/x. It represents a function because for every input x (except x = 0), there is exactly one value of y.",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
@@ -2732,17 +2919,28 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Since every value in the domain maps to exactly one value in the range, it is a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( y = \\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+      "\\( y = \\frac{6}{x} \\). It represents a relation but not a function because \\( x = 0 \\) gives two values of \\( y \\).",
+      "\\( y = -\\frac{6}{x} \\). It represents a function because for every input \\( x \\) (except \\( x = 0 \\)), there is exactly one value of \\( y \\).",
+      "\\( y = \\frac{x}{6} \\). It represents a function because for every input \\( x \\), there is exactly one value of \\( y \\)."
     ]
   },
   {
     "id": "y11a-3b-q15c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Functions, relations, and graphs",
     "question": "Solve the equation \\( xy - 3y = 4 \\) for \\( y \\) and explain why it represents a function.",
-    "a": "y = 4/(x - 3). It represents a function because for any input x (except x = 3), there is exactly one value of y.",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
@@ -2768,17 +2966,28 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Thus, the relation is a function.",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( y = \\frac{4}{x+3} \\). It represents a function because for any input \\( x \\) (except \\( x = -3 \\)), there is exactly one value of \\( y \\).",
+      "\\( y = \\frac{x-3}{4} \\). It represents a function because it is linear.",
+      "\\( y = \\frac{4}{x-3} \\). It represents a function because for any input \\( x \\) (except \\( x = 3 \\)), there is exactly one value of \\( y \\).",
+      "\\( y = \\frac{4}{x-3} \\). It represents a relation but not a function because \\( x = 3 \\) gives two values of \\( y \\)."
     ]
   },
   {
     "id": "y11a-3b-q15d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Solve the equation \\( y + 3 = \\sqrt{16 - x^2} \\) for \\( y \\) and explain why it represents a function.",
-    "a": "y = \\sqrt{16 - x^2} - 3. It represents a function because the positive square root sign specifies a single principal output value of y for each input x in the domain [-4, 4].",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General principle: once an equation is rearranged into the form y = (a single expression in x), every input x produces exactly one output y, so the relation is a function.",
@@ -2804,7 +3013,18 @@ export const Y11_CH3B_QUESTIONS = [
         "explanation": "Hence, it represents a function (specifically, the upper semicircle centered at (0, -3)).",
         "workingOut": "",
         "graphData": null
+      },
+      {
+        "explanation": "Solving explicitly for \\( y \\) gives a single expression in \\( x \\): \\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
+        "workingOut": "",
+        "graphData": null
       }
+    ],
+    "opts": [
+      "\\( y = \\sqrt{16+x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\).",
+      "\\( y = \\pm\\sqrt{16-x^2} - 3 \\). It represents a relation but not a function because each \\( x \\)-value (except the endpoints) gives two \\( y \\)-values.",
+      "\\( y = \\sqrt{16-x^2} - 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\) for each input \\( x \\) in the domain \\( [-4, 4] \\).",
+      "\\( y = \\sqrt{16-x^2} + 3 \\). It represents a function because the positive square root sign specifies a single principal output value of \\( y \\)."
     ]
   },
   {
@@ -2823,7 +3043,7 @@ export const Y11_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Consider the restrictions. The denominator cannot be zero, and the radicand must be non-negative.",
-        "workingOut": "\\( \\(\\text{Radicand: } x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text{Denominator } \\neq 0 \\implies \\sqrt{x+3} \\neq 0 \\implies x \\neq -3\\) \\)",
+        "workingOut": "\\\\( \\\\text{Radicand: } x + 3 \\\\ge 0 \\\\implies x \\\\ge -3 \\\\\\\\ \\\\text{Denominator } \\\\neq 0 \\\\implies \\\\sqrt{x+3} \\\\neq 0 \\\\implies x \\\\neq -3 \\\\)",
         "graphData": null
       },
       {
