@@ -273,6 +273,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Look at the parabola opening upwards. Any vertical line drawn on this graph will intersect the curve at most once.",
         "workingOut": "",
         "graphData": null
@@ -283,7 +288,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Yes\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
         "workingOut": "",
         "graphData": null
       }
@@ -316,6 +321,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "A vertical line can be drawn (e.g. at \\( x = 0 \\)) that cuts the upper and lower halves of this circular shape.",
         "workingOut": "",
         "graphData": null
@@ -326,7 +336,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"No\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
         "workingOut": "",
         "graphData": null
       }
@@ -359,6 +369,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This is a linear relation representing a straight line with a negative gradient.",
         "workingOut": "",
         "graphData": null
@@ -369,7 +384,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Yes\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
         "workingOut": "",
         "graphData": null
       }
@@ -402,6 +417,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "For any value \\( x > -2 \\) (where the vertex is at \\( x = -2 \\)), a vertical line intersects the curve at two distinct points.",
         "workingOut": "",
         "graphData": null
@@ -412,7 +432,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"No\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
         "workingOut": "",
         "graphData": null
       }
@@ -445,6 +465,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The wave oscillates horizontally as it goes vertically.",
         "workingOut": "",
         "graphData": null
@@ -455,7 +480,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"No\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
         "workingOut": "",
         "graphData": null
       }
@@ -488,6 +513,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This cubic curve goes from top-left to bottom-right.",
         "workingOut": "",
         "graphData": null
@@ -498,7 +528,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Yes\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
         "workingOut": "",
         "graphData": null
       }
@@ -531,6 +561,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This semicircle has endpoints at \\( (0, 3) \\) and \\( (0, -3) \\) and curves to the left.",
         "workingOut": "",
         "graphData": null
@@ -541,7 +576,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"No\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"No\".",
         "workingOut": "",
         "graphData": null
       }
@@ -574,6 +609,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the vertical line test says a graph represents a function only if every possible vertical line crosses it at most once anywhere along the curve.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This semicircle is on the upper half of the plane, starting at \\( (-3, 0) \\) and ending at \\( (3, 0) \\).",
         "workingOut": "",
         "graphData": null
@@ -584,7 +624,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Yes\".",
+        "explanation": "Applying the test to this curve, the correct answer is \"Yes\".",
         "workingOut": "",
         "graphData": null
       }
@@ -617,6 +657,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The graph is a parabola opening upwards with its vertex at \\( (2, -2) \\).",
         "workingOut": "",
         "graphData": null
@@ -632,7 +677,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: all real x, Range: y >= -2\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -651,10 +696,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: all real x, Range: y <= -2",
-      "Domain: all real x, Range: y >= -2",
-      "Domain: y >= -2, Range: all real x",
-      "Domain: x >= -2, Range: all real y"
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\leq -2 \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
+      "\\( \\text{Domain: } y \\geq -2,\\ \\text{Range: all real } x \\)",
+      "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
@@ -666,6 +711,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "State the domain and range of the circular arc (radius 5) shown in the graph, where the top endpoints at \\( y = 3 \\) are open. (Format: 'Domain: -5 < x < 5, Range: -5 <= y < 3' or similar using inequality signs)",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The graph is a circle of radius \\( 5 \\) with the top part missing. The open endpoints are at \\( (-4, 3) \\) and \\( (4, 3) \\).",
         "workingOut": "\\(x^2 + y^2 = 25 \\implies x = \\pm 4 \\text{ when } y = 3\\)",
@@ -682,7 +732,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: -5 < x < 5, Range: -5 <= y < 3\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: } -5 < x < 5,\\ \\text{Range: } -5 \\leq y < 3 \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -701,10 +751,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: -5 < x < 5, Range: -5 <= y < 3",
-      "Domain: -5 < x < 5, Range: -5 < y <= 3",
-      "Domain: -5 <= y < 3, Range: -5 < x < 5",
-      "Domain: -5 <= x <= 5, Range: -5 <= y <= 3"
+      "\\( \\text{Domain: } -5 < x < 5,\\ \\text{Range: } -5 \\leq y < 3 \\)",
+      "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 < y \\leq 3 \\)",
+      "\\( \\text{Domain: } -5 \\leq y < 3,\\ \\text{Range: } -5 < x < 5 \\)",
+      "\\( \\text{Domain: } -5 \\leq x \\leq 5,\\ \\text{Range: } -5 \\leq y \\leq 3 \\)"
     ]
   },
   {
@@ -717,6 +767,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This straight line extends infinitely in both directions without any boundaries.",
         "workingOut": "",
         "graphData": null
@@ -727,7 +782,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: all real x, Range: all real y\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -746,10 +801,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: all real x, Range: all real y",
-      "Domain: x >= 0, Range: all real y",
-      "Domain: all real x, Range: y >= 0",
-      "Domain: all real x, Range: y != 0"
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
     ]
   },
   {
@@ -761,6 +816,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "State the domain and range of the sideways parabola shown in the graph. (Format: 'Domain: x >= -2, Range: all real y')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The vertex of the sideways parabola is at \\( (-2, 0) \\) and it opens to the right.",
         "workingOut": "",
@@ -777,7 +837,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: x >= -2, Range: all real y\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -796,10 +856,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: x <= -2, Range: all real y",
-      "Domain: x >= -2, Range: all real y",
-      "Domain: all real y, Range: x >= -2",
-      "Domain: x > -2, Range: all real y"
+      "\\( \\text{Domain: } x > -2,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: } x \\geq -2,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq -2 \\)",
+      "\\( \\text{Domain: } x \\leq -2,\\ \\text{Range: all real } y \\)"
     ]
   },
   {
@@ -811,6 +871,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "State the domain and range of the relation shown in the graph. (Format: 'Domain: -2 <= x <= 2, Range: all real y')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The curve is a vertically oriented sinusoidal wave.",
         "workingOut": "",
@@ -827,7 +892,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: -2 <= x <= 2, Range: all real y\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: all real } y \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -846,10 +911,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: -2 <= x <= 2, Range: all real y",
-      "Domain: all real y, Range: -2 <= x <= 2",
-      "Domain: -2 < x < 2, Range: all real y",
-      "Domain: -2 <= x <= 2, Range: -2 <= y <= 2"
+      "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)",
+      "\\( \\text{Domain: } -2 < x < 2,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: } -2 \\leq x \\leq 2,\\ \\text{Range: } -2 \\leq y \\leq 2 \\)"
     ]
   },
   {
@@ -862,6 +927,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This cubic curve goes from top-left to bottom-right.",
         "workingOut": "",
         "graphData": null
@@ -872,7 +942,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: all real x, Range: all real y\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -891,10 +961,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: all real x, Range: all real y",
-      "Domain: all real x, Range: y >= 0",
-      "Domain: x >= 0, Range: all real y",
-      "Domain: all real x, Range: y != 0"
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)",
+      "\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)",
+      "\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)"
     ]
   },
   {
@@ -906,6 +976,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "State the domain and range of the semicircle on the left of the y-axis. (Format: 'Domain: -3 <= x <= 0, Range: -3 <= y <= 3')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "This semicircle has radius \\( 3 \\) and lies on the left of the y-axis.",
         "workingOut": "",
@@ -922,7 +997,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: -3 <= x <= 0, Range: -3 <= y <= 3\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: } -3 \\leq x \\leq 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -941,10 +1016,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: -3 <= y <= 3, Range: -3 <= x <= 0",
-      "Domain: -3 <= x <= 0, Range: -3 <= y <= 3",
-      "Domain: 0 <= x <= 3, Range: -3 <= y <= 3",
-      "Domain: -3 < x < 0, Range: -3 <= y <= 3"
+      "\\( \\text{Domain: } -3 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 0 \\)",
+      "\\( \\text{Domain: } -3 \\leq x \\leq 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+      "\\( \\text{Domain: } 0 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+      "\\( \\text{Domain: } -3 < x < 0,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)"
     ]
   },
   {
@@ -956,6 +1031,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "State the domain and range of the upper semicircle shown in the graph. (Format: 'Domain: -3 <= x <= 3, Range: 0 <= y <= 3')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the domain is the full set of x-values the graph covers (read left-to-right); the range is the full set of y-values it covers (read bottom-to-top).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The semicircle lies above the x-axis, spanning horizontally from \\( -3 \\) to \\( 3 \\).",
         "workingOut": "",
@@ -972,7 +1052,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"Domain: -3 <= x <= 3, Range: 0 <= y <= 3\".",
+        "explanation": "Reading the extent of the curve along each axis confirms the answer: \\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y \\leq 3 \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -991,10 +1071,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "Domain: 0 <= y <= 3, Range: -3 <= x <= 3",
-      "Domain: -3 <= x <= 3, Range: 0 <= y <= 3",
-      "Domain: -3 <= x <= 3, Range: -3 <= y <= 3",
-      "Domain: -3 <= x <= 3, Range: 0 <= y < 3"
+      "\\( \\text{Domain: } 0 \\leq y \\leq 3,\\ \\text{Range: } -3 \\leq x \\leq 3 \\)",
+      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y \\leq 3 \\)",
+      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } -3 \\leq y \\leq 3 \\)",
+      "\\( \\text{Domain: } -3 \\leq x \\leq 3,\\ \\text{Range: } 0 \\leq y < 3 \\)"
     ]
   },
   {
@@ -1069,6 +1149,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Division by zero is undefined, so the denominator cannot be zero.",
         "workingOut": "x \\neq 0",
         "graphData": null
@@ -1079,16 +1164,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 0\".",
+        "explanation": "The natural domain is \\( x \\neq 0 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 0",
-      "x != -0",
-      "all real x",
-      "x = 0"
+      "\\( x \\neq 0 \\)",
+      "\\( x \\neq 5 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x = 0 \\)"
     ]
   },
   {
@@ -1101,6 +1186,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The denominator cannot be zero.",
         "workingOut": "x - 4 \\neq 0 \\implies x \\neq 4",
         "graphData": null
@@ -1111,16 +1201,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 4\".",
+        "explanation": "The natural domain is \\( x \\neq 4 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != -4",
-      "all real x",
-      "x != 4",
-      "x = 4"
+      "\\( x \\neq -4 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq 4 \\)",
+      "\\( x = 4 \\)"
     ]
   },
   {
@@ -1133,6 +1223,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the denominator to not equal zero.",
         "workingOut": "x + 2 \\neq 0 \\implies x \\neq -2",
         "graphData": null
@@ -1143,16 +1238,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != -2\".",
+        "explanation": "The natural domain is \\( x \\neq -2 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 2",
-      "all real x",
-      "x != -2",
-      "x = -2"
+      "\\( x \\neq 2 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq -2 \\)",
+      "\\( x = -2 \\)"
     ]
   },
   {
@@ -1165,6 +1260,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Find values of \\( x \\) that make the denominator zero.",
         "workingOut": "3 + x \\neq 0 \\implies x \\neq -3",
         "graphData": null
@@ -1175,16 +1275,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != -3\".",
+        "explanation": "The natural domain is \\( x \\neq -3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "all real x",
-      "x != 3",
-      "x != -3",
-      "x = -3"
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq 3 \\)",
+      "\\( x \\neq -3 \\)",
+      "\\( x = -3 \\)"
     ]
   },
   {
@@ -1197,6 +1297,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The expression inside the square root must be non-negative.",
         "workingOut": "2x \\ge 0",
         "graphData": null
@@ -1207,16 +1312,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= 0\".",
+        "explanation": "The natural domain is \\( x \\geq 0 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x >= 0",
-      "x <= 0",
-      "x > 0",
-      "x >= -0"
+      "\\( x \\geq 0 \\)",
+      "\\( x \\leq 0 \\)",
+      "\\( x > 0 \\)",
+      "\\( x \\geq 5 \\)"
     ]
   },
   {
@@ -1229,6 +1334,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The radicand must be non-negative.",
         "workingOut": "x - 4 \\ge 0",
         "graphData": null
@@ -1239,16 +1349,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= 4\".",
+        "explanation": "The natural domain is \\( x \\geq 4 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x >= 4",
-      "x <= 4",
-      "x > 4",
-      "x >= -4"
+      "\\( x \\geq 4 \\)",
+      "\\( x \\leq 4 \\)",
+      "\\( x > 4 \\)",
+      "\\( x \\geq -4 \\)"
     ]
   },
   {
@@ -1261,6 +1371,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the term under the radical to be greater than or equal to zero.",
         "workingOut": "x + 5 \\ge 0",
         "graphData": null
@@ -1271,16 +1386,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= -5\".",
+        "explanation": "The natural domain is \\( x \\geq -5 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= -5",
-      "x >= -5",
-      "x > -5",
-      "x >= 5"
+      "\\( x \\leq -5 \\)",
+      "\\( x \\geq -5 \\)",
+      "\\( x > -5 \\)",
+      "\\( x \\geq 5 \\)"
     ]
   },
   {
@@ -1293,6 +1408,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the radical expression greater than or equal to zero.",
         "workingOut": "3 + x \\ge 0",
         "graphData": null
@@ -1303,16 +1423,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= -3\".",
+        "explanation": "The natural domain is \\( x \\geq -3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x > -3",
-      "x <= -3",
-      "x >= -3",
-      "x >= 3"
+      "\\( x > -3 \\)",
+      "\\( x \\leq -3 \\)",
+      "\\( x \\geq -3 \\)",
+      "\\( x \\geq 3 \\)"
     ]
   },
   {
@@ -1330,6 +1450,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a relation is a function only if every element of the domain maps to exactly one element of the range (no input has two different outputs).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For a relation to be a function, each input (domain value) must map to exactly one output (range value).",
         "workingOut": "",
@@ -1368,6 +1493,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a relation is a function only if every element of the domain maps to exactly one element of the range (no input has two different outputs).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "A relation is not a function if any input maps to more than one output (one-to-many mapping).",
         "workingOut": "",
         "graphData": null
@@ -1405,6 +1535,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a relation is a function only if every element of the domain maps to exactly one element of the range (no input has two different outputs).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Each element in the domain maps to exactly one unique element in the range.",
         "workingOut": "",
         "graphData": null
@@ -1436,6 +1571,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a relation is a function only if every element of the domain maps to exactly one element of the range (no input has two different outputs).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Look at \\( 0 \\). It maps to both \\(-4\\) and \\(4\\).",
         "workingOut": "",
@@ -1513,6 +1653,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: on a graph that fails the vertical line test, pick any x-coordinate where the curve is crossed twice, then read off the two different y-values at that x.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The equation of the circle centered at the origin with radius 4 is \\( x^2 + y^2 = 16 \\).",
         "workingOut": "",
         "graphData": null
@@ -1528,7 +1673,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"(0, 4) and (0, -4)\".",
+        "explanation": "Two points sharing that x-coordinate are \\( (0, 4) \\text{ and } (0, -4) \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -1547,10 +1692,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "(0, 4) and (4, 0)",
-      "(4, 0) and (-4, 0)",
-      "(0, 4) and (0, -4)",
-      "(0, 4) and (0, 0)"
+      "\\( (0, 4) \\text{ and } (4, 0) \\)",
+      "\\( (4, 0) \\text{ and } (-4, 0) \\)",
+      "\\( (0, 4) \\text{ and } (0, -4) \\)",
+      "\\( (0, 4) \\text{ and } (0, 0) \\)"
     ]
   },
   {
@@ -1563,6 +1708,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: on a graph that fails the vertical line test, pick any x-coordinate where the curve is crossed twice, then read off the two different y-values at that x.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The sideways parabola shown is \\( x = y^2 - 4 \\) (or similar). The vertex is at \\( (-4, 0) \\) and y-intercepts are at \\( \\pm 2 \\).",
         "workingOut": "0 = y^2 - 4 \\implies y = \\pm 2",
         "graphData": null
@@ -1573,7 +1723,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"(0, 2) and (0, -2)\".",
+        "explanation": "Two points sharing that x-coordinate are \\( (0, 2) \\text{ and } (0, -2) \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -1592,10 +1742,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "(2, 0) and (-2, 0)",
-      "(0, 2) and (2, 0)",
-      "(0, 2) and (0, -2)",
-      "(0, 2) and (0, 0)"
+      "\\( (2, 0) \\text{ and } (-2, 0) \\)",
+      "\\( (0, 2) \\text{ and } (2, 0) \\)",
+      "\\( (0, 2) \\text{ and } (0, -2) \\)",
+      "\\( (0, 2) \\text{ and } (0, 0) \\)"
     ]
   },
   {
@@ -1607,6 +1757,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "The circle centered at \\( (3, 2) \\) with radius \\( 3 \\) is not a function. Write down the coordinates of two points on this graph that have the same x-coordinate. (Format: '(3, 5) and (3, -1)')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: on a graph that fails the vertical line test, pick any x-coordinate where the curve is crossed twice, then read off the two different y-values at that x.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The circle is centered at \\( (3, 2) \\) with a radius of \\( 3 \\). Its equation is \\( (x-3)^2 + (y-2)^2 = 9 \\).",
         "workingOut": "",
@@ -1628,7 +1783,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"(3, 5) and (3, -1)\".",
+        "explanation": "Two points sharing that x-coordinate are \\( (3, 5) \\text{ and } (3, -1) \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -1647,10 +1802,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "(3, 5) and (3, -1)",
-      "(3, 5) and (3, 2)",
-      "(5, 2) and (-1, 2)",
-      "(3, 2) and (3, -2)"
+      "\\( (3, 5) \\text{ and } (3, -1) \\)",
+      "\\( (3, 5) \\text{ and } (3, 2) \\)",
+      "\\( (5, 2) \\text{ and } (-1, 2) \\)",
+      "\\( (3, 2) \\text{ and } (3, -2) \\)"
     ]
   },
   {
@@ -1663,6 +1818,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: on a graph that fails the vertical line test, pick any x-coordinate where the curve is crossed twice, then read off the two different y-values at that x.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "A vertical line is defined by the equation \\( x = k \\). Here, the line is \\( x = 3 \\).",
         "workingOut": "",
         "graphData": null
@@ -1673,7 +1833,7 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"(3, 1) and (3, 2)\".",
+        "explanation": "Two points sharing that x-coordinate are \\( (3, 1) \\text{ and } (3, 2) \\).",
         "workingOut": "",
         "graphData": null
       }
@@ -1692,10 +1852,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     },
     "opts": [
-      "(3, 1) and (3, 2)",
-      "(3, 0) and (0, 3)",
-      "(1, 3) and (2, 3)",
-      "(1, 3) and (3, 1)"
+      "\\( (3, 1) \\text{ and } (3, 2) \\)",
+      "\\( (3, 0) \\text{ and } (0, 3) \\)",
+      "\\( (1, 3) \\text{ and } (2, 3) \\)",
+      "\\( (1, 3) \\text{ and } (3, 1) \\)"
     ]
   },
   {
@@ -1708,6 +1868,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The function \\( f(x) = 5x \\) is a linear polynomial.",
         "workingOut": "",
         "graphData": null
@@ -1718,16 +1883,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"all real x\".",
+        "explanation": "The natural domain is \\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "all real x",
-      "x != 0",
-      "x <= 0",
-      "x >= 0"
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq 0 \\)",
+      "\\( x \\leq 0 \\)",
+      "\\( x \\geq 0 \\)"
     ]
   },
   {
@@ -1740,6 +1905,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "This is a linear polynomial function.",
         "workingOut": "",
         "graphData": null
@@ -1750,16 +1920,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"all real x\".",
+        "explanation": "The natural domain is \\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 0",
-      "all real x",
-      "x <= 0",
-      "x >= 0"
+      "\\( x \\neq 0 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\leq 0 \\)",
+      "\\( x \\geq 0 \\)"
     ]
   },
   {
@@ -1772,21 +1942,26 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The denominator cannot be equal to zero.",
         "workingOut": "5 - x \\neq 0 \\implies x \\neq 5",
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 5\".",
+        "explanation": "The natural domain is \\( x \\neq 5 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != -5",
-      "x = 5",
-      "x != 5",
-      "all real x"
+      "\\( x \\neq -5 \\)",
+      "\\( x = 5 \\)",
+      "\\( x \\neq 5 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
     ]
   },
   {
@@ -1799,6 +1974,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the denominator to not equal zero.",
         "workingOut": "3x - 2 \\neq 0",
         "graphData": null
@@ -1809,16 +1989,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 2/3\".",
+        "explanation": "The natural domain is \\( x \\neq \\frac{2}{3} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x = 2/3",
-      "x != -2/3",
-      "x != 2/3",
-      "all real x"
+      "\\( x = \\frac{2}{3} \\)",
+      "\\( x \\neq -\\frac{2}{3} \\)",
+      "\\( x \\neq \\frac{2}{3} \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
     ]
   },
   {
@@ -1831,6 +2011,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The quantity under the square root must be non-negative.",
         "workingOut": "x + 6 \\ge 0",
         "graphData": null
@@ -1841,16 +2026,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= -6\".",
+        "explanation": "The natural domain is \\( x \\geq -6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= -6",
-      "x >= 6",
-      "x >= -6",
-      "x > -6"
+      "\\( x \\leq -6 \\)",
+      "\\( x \\geq 6 \\)",
+      "\\( x \\geq -6 \\)",
+      "\\( x > -6 \\)"
     ]
   },
   {
@@ -1863,6 +2048,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "2",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The term inside the radical must be greater than or equal to zero.",
         "workingOut": "3x + 2 \\ge 0",
         "graphData": null
@@ -1873,16 +2063,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x >= -2/3\".",
+        "explanation": "The natural domain is \\( x \\geq -\\frac{2}{3} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= -2/3",
-      "x >= 2/3",
-      "x >= -2/3",
-      "x > -2/3"
+      "\\( x \\leq -\\frac{2}{3} \\)",
+      "\\( x \\geq \\frac{2}{3} \\)",
+      "\\( x \\geq -\\frac{2}{3} \\)",
+      "\\( x > -\\frac{2}{3} \\)"
     ]
   },
   {
@@ -1895,6 +2085,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Ensure the radicand is non-negative.",
         "workingOut": "6 - x \\ge 0",
         "graphData": null
@@ -1905,16 +2100,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x <= 6\".",
+        "explanation": "The natural domain is \\( x \\leq 6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= 6",
-      "x <= -6",
-      "x >= 6",
-      "x < 6"
+      "\\( x \\leq 6 \\)",
+      "\\( x \\leq -6 \\)",
+      "\\( x \\geq 6 \\)",
+      "\\( x < 6 \\)"
     ]
   },
   {
@@ -1927,6 +2122,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the inside of the square root to be greater than or equal to zero.",
         "workingOut": "9 - 3x \\ge 0",
         "graphData": null
@@ -1937,16 +2137,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x <= 3\".",
+        "explanation": "The natural domain is \\( x \\leq 3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= -3",
-      "x <= 3",
-      "x >= 3",
-      "x < 3"
+      "\\( x \\leq -3 \\)",
+      "\\( x \\leq 3 \\)",
+      "\\( x \\geq 3 \\)",
+      "\\( x < 3 \\)"
     ]
   },
   {
@@ -1959,21 +2159,26 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "For a square root in the denominator, the value inside must be strictly positive (since it cannot be negative, and division by zero is undefined).",
         "workingOut": "x > 0",
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x > 0\".",
+        "explanation": "The natural domain is \\( x > 0 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x > -0",
-      "x > 0",
-      "x < 0",
-      "x >= 0"
+      "\\( x > 5 \\)",
+      "\\( x > 0 \\)",
+      "\\( x < 0 \\)",
+      "\\( x \\geq 0 \\)"
     ]
   },
   {
@@ -1986,6 +2191,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The quantity under the radical in the denominator must be strictly positive.",
         "workingOut": "x + 3 > 0",
         "graphData": null
@@ -1996,16 +2206,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x > -3\".",
+        "explanation": "The natural domain is \\( x > -3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x > -3",
-      "x > 3",
-      "x < -3",
-      "x >= -3"
+      "\\( x > -3 \\)",
+      "\\( x > 3 \\)",
+      "\\( x < -3 \\)",
+      "\\( x \\geq -3 \\)"
     ]
   },
   {
@@ -2018,6 +2228,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "The radicand in the denominator must be strictly positive.",
         "workingOut": "2 - x > 0",
         "graphData": null
@@ -2028,16 +2243,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x < 2\".",
+        "explanation": "The natural domain is \\( x < 2 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 2",
-      "x > 2",
-      "x < -2",
-      "x <= 2"
+      "\\( x < 2 \\)",
+      "\\( x > 2 \\)",
+      "\\( x < -2 \\)",
+      "\\( x \\leq 2 \\)"
     ]
   },
   {
@@ -2050,6 +2265,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the denominator radicand to be strictly greater than zero.",
         "workingOut": "3x - 4 > 0",
         "graphData": null
@@ -2060,16 +2280,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x > 4/3\".",
+        "explanation": "The natural domain is \\( x > \\frac{4}{3} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 4/3",
-      "x > 4/3",
-      "x > -4/3",
-      "x >= 4/3"
+      "\\( x < \\frac{4}{3} \\)",
+      "\\( x > \\frac{4}{3} \\)",
+      "\\( x > -\\frac{4}{3} \\)",
+      "\\( x \\geq \\frac{4}{3} \\)"
     ]
   },
   {
@@ -2148,14 +2368,19 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "a) What is the natural domain of \\( R(x) \\)? (Format: 'x >= 0')",
         "a": "1",
         "opts": [
-          "x >= -0",
-          "x >= 0",
-          "x <= 0",
-          "x > 0"
+          "\\( x \\geq 5 \\)",
+          "\\( x \\geq 0 \\)",
+          "\\( x \\leq 0 \\)",
+          "\\( x > 0 \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Comparing with the answer options, the correct choice is: \"x >= 0\".",
+            "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "The natural domain is \\( x \\geq 0 \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2233,14 +2458,19 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "a) What is the natural domain of \\( h(x) \\)? (Format: 'x != 0')",
         "a": "2",
         "opts": [
-          "x != -0",
-          "x = 0",
-          "x != 0",
-          "all real x"
+          "\\( x \\neq 5 \\)",
+          "\\( x = 0 \\)",
+          "\\( x \\neq 0 \\)",
+          "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Comparing with the answer options, the correct choice is: \"x != 0\".",
+            "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+            "workingOut": "",
+            "graphData": null
+          },
+          {
+            "explanation": "The natural domain is \\( x \\neq 0 \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2318,14 +2548,14 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "a) Write an expression for the length of the opposite side.",
         "a": "2",
         "opts": [
-          "24 - x",
-          "12 - x",
-          "x",
-          "2x"
+          "\\( 24 - x \\)",
+          "\\( 12 - x \\)",
+          "\\( x \\)",
+          "\\( 2x \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Opposite sides of a rectangle are always equal in length, so the opposite side is also x.",
+            "explanation": "Opposite sides of a rectangle are always equal in length, so the opposite side is also \\( x \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2337,14 +2567,14 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "b) Write an expression for the length of each of the remaining sides in terms of \\( x \\).",
         "a": "2",
         "opts": [
-          "24 - x",
-          "x",
-          "12 - x",
-          "12 - 2x"
+          "\\( 24 - x \\)",
+          "\\( x \\)",
+          "\\( 12 - x \\)",
+          "\\( 12 - 2x \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Half the perimeter (12 cm) is shared between one pair of adjacent sides, so the remaining side is 12 - x.",
+            "explanation": "Half the perimeter (\\(12\\text{ cm}\\)) is shared between one pair of adjacent sides, so the remaining side is \\( 12 - x \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2356,14 +2586,14 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "c) Express the area \\( A \\) of the rectangle as a function of \\( x \\).",
         "a": "2",
         "opts": [
-          "x^2(12 - x)",
-          "2x(12 - x)",
-          "x(12 - x)",
-          "x + (12 - x)"
+          "\\( x^2(12 - x) \\)",
+          "\\( 2x(12 - x) \\)",
+          "\\( x(12 - x) \\)",
+          "\\( x + (12 - x) \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Area = length × width = x(12 - x).",
+            "explanation": "Area \\( = \\) length \\( \\times \\) width \\( = x(12-x) \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2375,14 +2605,14 @@ export const Y11_CH3B_QUESTIONS = [
         "question": "d) Using the fact that physical lengths must be positive, state the domain of \\( A \\). (Format: '0 < x < 12')",
         "a": "0",
         "opts": [
-          "0 < x < 12",
-          "x > 0",
-          "0 <= x <= 12",
-          "0 < x < 24"
+          "\\( 0 < x < 12 \\)",
+          "\\( x > 0 \\)",
+          "\\( 0 \\leq x \\leq 12 \\)",
+          "\\( 0 < x < 24 \\)"
         ],
         "solutionSteps": [
           {
-            "explanation": "Both side lengths x and 12 - x must be strictly positive, giving 0 < x < 12.",
+            "explanation": "Both side lengths \\( x \\) and \\( 12-x \\) must be strictly positive, giving \\( 0 < x < 12 \\).",
             "workingOut": "",
             "graphData": null
           }
@@ -2587,6 +2817,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "1",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Consider the restrictions. The denominator cannot be zero, and the radicand must be non-negative.",
         "workingOut": "\\(\\text{Radicand: } x + 3 \\ge 0 \\implies x \\ge -3 \\\\\n\\text{Denominator } \\neq 0 \\implies \\sqrt{x+3} \\neq 0 \\implies x \\neq -3\\)",
         "graphData": null
@@ -2597,16 +2832,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x > -3\".",
+        "explanation": "The natural domain is \\( x > -3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < -3",
-      "x > -3",
-      "x > 3",
-      "x >= -3"
+      "\\( x < -3 \\)",
+      "\\( x > -3 \\)",
+      "\\( x > 3 \\)",
+      "\\( x \\geq -3 \\)"
     ]
   },
   {
@@ -2619,6 +2854,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Set the quadratic denominator to not equal zero.",
         "workingOut": "x^2 - 9 \\neq 0",
         "graphData": null
@@ -2629,16 +2869,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 3 and x != -3\".",
+        "explanation": "The natural domain is \\( x \\neq 3 \\text{ and } x \\neq -3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 3 and x != -3",
-      "x != 3",
-      "all real x",
-      "x != -3"
+      "\\( x \\neq 3 \\text{ and } x \\neq -3 \\)",
+      "\\( x \\neq 3 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq -3 \\)"
     ]
   },
   {
@@ -2650,6 +2890,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 + 2x} \\). (Format: 'x != 0 and x != -2')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set the denominator to be non-zero.",
         "workingOut": "x^2 + 2x \\neq 0",
@@ -2666,16 +2911,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 0 and x != -2\".",
+        "explanation": "The natural domain is \\( x \\neq 0 \\text{ and } x \\neq -2 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 0",
-      "x != 0 and x != -2",
-      "all real x",
-      "x != -2"
+      "\\( x \\neq 0 \\)",
+      "\\( x \\neq 0 \\text{ and } x \\neq -2 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq -2 \\)"
     ]
   },
   {
@@ -2687,6 +2932,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of \\( f(x) = \\frac{1}{x^2 - 6x + 8} \\). (Format: 'x != 2 and x != 4')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set the denominator expression to not equal zero.",
         "workingOut": "x^2 - 6x + 8 \\neq 0",
@@ -2703,16 +2953,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x != 2 and x != 4\".",
+        "explanation": "The natural domain is \\( x \\neq 2 \\text{ and } x \\neq 4 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 2",
-      "x != 2 and x != 4",
-      "all real x",
-      "x != 4"
+      "\\( x \\neq 2 \\)",
+      "\\( x \\neq 2 \\text{ and } x \\neq 4 \\)",
+      "\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)",
+      "\\( x \\neq 4 \\)"
     ]
   },
   {
@@ -2724,6 +2974,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of \\( f(x) = \\sqrt{x^2 - 9} \\). (Format: 'x <= -3 or x >= 3')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The quantity under the square root must be non-negative.",
         "workingOut": "x^2 - 9 \\ge 0",
@@ -2740,16 +2995,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"x <= -3 or x >= 3\".",
+        "explanation": "The natural domain is \\( x \\leq -3 \\text{ or } x \\geq 3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x >= 3",
-      "-3 <= x <= 3",
-      "x <= -3 or x >= 3",
-      "x < -3 or x > 3"
+      "\\( x \\geq 3 \\)",
+      "\\( -3 \\leq x \\leq 3 \\)",
+      "\\( x \\leq -3 \\text{ or } x \\geq 3 \\)",
+      "\\( x < -3 \\text{ or } x > 3 \\)"
     ]
   },
   {
@@ -2761,6 +3016,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of \\( f(x) = \\frac{1}{\\sqrt{4 - x^2}} \\). (Format: '-2 < x < 2')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for an expression under a square root, the radicand must be \\( \\geq 0 \\); for an expression in a denominator, the denominator must be \\( \\neq 0 \\). Combine every such restriction to get the natural domain.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "The radicand in the denominator must be strictly positive.",
         "workingOut": "4 - x^2 > 0",
@@ -2777,16 +3037,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Comparing with the answer options, the correct choice is: \"-2 < x < 2\".",
+        "explanation": "The natural domain is \\( -2 < x < 2 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= -2 or x >= 2",
-      "x < 2",
-      "-2 < x < 2",
-      "-2 <= x <= 2"
+      "\\( x \\leq -2 \\text{ or } x \\geq 2 \\)",
+      "\\( x < 2 \\)",
+      "\\( -2 < x < 2 \\)",
+      "\\( -2 \\leq x \\leq 2 \\)"
     ]
   },
   {
@@ -2798,6 +3058,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 2}{x - 3}} \\). (Format: 'x <= 2 or x > 3')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-2}{x-3} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 3 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 2}{x - 3} \\ge 0 \\quad \\text{and} \\quad x - 3 \\neq 0\\)",
@@ -2819,16 +3084,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 2 \\) or \\( x > 3 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 3 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-2}{x-3} \\) on each interval gives the domain \\( x \\leq 2 \\text{ or } x > 3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x != 3",
-      "x <= 2 or x > 3",
-      "x < 2 or x >= 3",
-      "2 <= x < 3"
+      "\\( x \\neq 3 \\)",
+      "\\( x \\leq 2 \\text{ or } x > 3 \\)",
+      "\\( x < 2 \\text{ or } x \\geq 3 \\)",
+      "\\( 2 \\leq x < 3 \\)"
     ]
   },
   {
@@ -2840,6 +3105,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 4}{x - 6}} \\). (Format: 'x <= 4 or x > 6')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-4}{x-6} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 6 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 4}{x - 6} \\ge 0 \\quad \\text{and} \\quad x - 6 \\neq 0\\)",
@@ -2861,16 +3131,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 4 \\) or \\( x > 6 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 6 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-4}{x-6} \\) on each interval gives the domain \\( x \\leq 4 \\text{ or } x > 6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= 4 or x > 6",
-      "x != 6",
-      "x < 4 or x >= 6",
-      "4 <= x < 6"
+      "\\( x \\leq 4 \\text{ or } x > 6 \\)",
+      "\\( x \\neq 6 \\)",
+      "\\( x < 4 \\text{ or } x \\geq 6 \\)",
+      "\\( 4 \\leq x < 6 \\)"
     ]
   },
   {
@@ -2882,6 +3152,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 6}{x - 9}} \\). (Format: 'x <= 6 or x > 9')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-6}{x-9} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 9 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 6}{x - 9} \\ge 0 \\quad \\text{and} \\quad x - 9 \\neq 0\\)",
@@ -2903,16 +3178,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 6 \\) or \\( x > 9 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 9 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-6}{x-9} \\) on each interval gives the domain \\( x \\leq 6 \\text{ or } x > 9 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= 6 or x > 9",
-      "x < 6 or x >= 9",
-      "x != 9",
-      "6 <= x < 9"
+      "\\( x \\leq 6 \\text{ or } x > 9 \\)",
+      "\\( x < 6 \\text{ or } x \\geq 9 \\)",
+      "\\( x \\neq 9 \\)",
+      "\\( 6 \\leq x < 9 \\)"
     ]
   },
   {
@@ -2924,6 +3199,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 8}{x - 12}} \\). (Format: 'x <= 8 or x > 12')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-8}{x-12} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 12 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 8}{x - 12} \\ge 0 \\quad \\text{and} \\quad x - 12 \\neq 0\\)",
@@ -2945,16 +3225,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 8 \\) or \\( x > 12 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 12 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-8}{x-12} \\) on each interval gives the domain \\( x \\leq 8 \\text{ or } x > 12 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 8 or x >= 12",
-      "x <= 8 or x > 12",
-      "8 <= x < 12",
-      "x != 12"
+      "\\( x < 8 \\text{ or } x \\geq 12 \\)",
+      "\\( x \\leq 8 \\text{ or } x > 12 \\)",
+      "\\( 8 \\leq x < 12 \\)",
+      "\\( x \\neq 12 \\)"
     ]
   },
   {
@@ -2966,6 +3246,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 10}{x - 15}} \\). (Format: 'x <= 10 or x > 15')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-10}{x-15} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 15 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 10}{x - 15} \\ge 0 \\quad \\text{and} \\quad x - 15 \\neq 0\\)",
@@ -2987,16 +3272,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 10 \\) or \\( x > 15 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 15 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-10}{x-15} \\) on each interval gives the domain \\( x \\leq 10 \\text{ or } x > 15 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 10 or x >= 15",
-      "x <= 10 or x > 15",
-      "10 <= x < 15",
-      "x != 15"
+      "\\( x < 10 \\text{ or } x \\geq 15 \\)",
+      "\\( x \\leq 10 \\text{ or } x > 15 \\)",
+      "\\( 10 \\leq x < 15 \\)",
+      "\\( x \\neq 15 \\)"
     ]
   },
   {
@@ -3008,6 +3293,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 12}{x - 18}} \\). (Format: 'x <= 12 or x > 18')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-12}{x-18} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 18 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 12}{x - 18} \\ge 0 \\quad \\text{and} \\quad x - 18 \\neq 0\\)",
@@ -3029,16 +3319,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 12 \\) or \\( x > 18 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 18 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-12}{x-18} \\) on each interval gives the domain \\( x \\leq 12 \\text{ or } x > 18 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x <= 12 or x > 18",
-      "x < 12 or x >= 18",
-      "12 <= x < 18",
-      "x != 18"
+      "\\( x \\leq 12 \\text{ or } x > 18 \\)",
+      "\\( x < 12 \\text{ or } x \\geq 18 \\)",
+      "\\( 12 \\leq x < 18 \\)",
+      "\\( x \\neq 18 \\)"
     ]
   },
   {
@@ -3050,6 +3340,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 14}{x - 21}} \\). (Format: 'x <= 14 or x > 21')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-14}{x-21} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 21 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 14}{x - 21} \\ge 0 \\quad \\text{and} \\quad x - 21 \\neq 0\\)",
@@ -3071,16 +3366,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 14 \\) or \\( x > 21 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 21 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-14}{x-21} \\) on each interval gives the domain \\( x \\leq 14 \\text{ or } x > 21 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 14 or x >= 21",
-      "14 <= x < 21",
-      "x <= 14 or x > 21",
-      "x != 21"
+      "\\( x < 14 \\text{ or } x \\geq 21 \\)",
+      "\\( 14 \\leq x < 21 \\)",
+      "\\( x \\leq 14 \\text{ or } x > 21 \\)",
+      "\\( x \\neq 21 \\)"
     ]
   },
   {
@@ -3092,6 +3387,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 16}{x - 24}} \\). (Format: 'x <= 16 or x > 24')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-16}{x-24} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 24 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 16}{x - 24} \\ge 0 \\quad \\text{and} \\quad x - 24 \\neq 0\\)",
@@ -3113,16 +3413,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 16 \\) or \\( x > 24 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 24 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-16}{x-24} \\) on each interval gives the domain \\( x \\leq 16 \\text{ or } x > 24 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 16 or x >= 24",
-      "16 <= x < 24",
-      "x <= 16 or x > 24",
-      "x != 24"
+      "\\( x < 16 \\text{ or } x \\geq 24 \\)",
+      "\\( 16 \\leq x < 24 \\)",
+      "\\( x \\leq 16 \\text{ or } x > 24 \\)",
+      "\\( x \\neq 24 \\)"
     ]
   },
   {
@@ -3134,6 +3434,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 18}{x - 27}} \\). (Format: 'x <= 18 or x > 27')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-18}{x-27} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 27 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 18}{x - 27} \\ge 0 \\quad \\text{and} \\quad x - 27 \\neq 0\\)",
@@ -3155,16 +3460,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 18 \\) or \\( x > 27 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 27 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-18}{x-27} \\) on each interval gives the domain \\( x \\leq 18 \\text{ or } x > 27 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "18 <= x < 27",
-      "x < 18 or x >= 27",
-      "x <= 18 or x > 27",
-      "x != 27"
+      "\\( 18 \\leq x < 27 \\)",
+      "\\( x < 18 \\text{ or } x \\geq 27 \\)",
+      "\\( x \\leq 18 \\text{ or } x > 27 \\)",
+      "\\( x \\neq 27 \\)"
     ]
   },
   {
@@ -3176,6 +3481,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the natural domain of the function \\( f(x) = \\sqrt{\\frac{x - 20}{x - 30}} \\). (Format: 'x <= 20 or x > 30')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "The expression under the square root, \\( \\frac{x-20}{x-30} \\), must be \\( \\geq 0 \\), and since it is also a denominator, \\( x \\neq 30 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the conditions under which the expression inside the square root is defined.",
         "workingOut": "\\(\\frac{x - 20}{x - 30} \\ge 0 \\quad \\text{and} \\quad x - 30 \\neq 0\\)",
@@ -3197,16 +3507,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The correct domain is \\( x \\le 20 \\) or \\( x > 30 \\): the expression under the square root must be \\( \\ge 0 \\) while \\( x \\neq 30 \\) (denominator can't be zero).",
+        "explanation": "Testing the sign of \\( \\frac{x-20}{x-30} \\) on each interval gives the domain \\( x \\leq 20 \\text{ or } x > 30 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "x < 20 or x >= 30",
-      "20 <= x < 30",
-      "x <= 20 or x > 30",
-      "x != 30"
+      "\\( x < 20 \\text{ or } x \\geq 30 \\)",
+      "\\( 20 \\leq x < 30 \\)",
+      "\\( x \\leq 20 \\text{ or } x > 30 \\)",
+      "\\( x \\neq 30 \\)"
     ]
   },
   {
@@ -3218,6 +3528,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{1x + 3}{5x - 1} \\). (Format: 'y != 1/5')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{1x + 3}{5x - 1} \\implies y(5x - 1) = 1x + 3\\)",
@@ -3239,16 +3554,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{1}{5} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{1}{5} \\), so the answer is \\( y \\neq \\frac{1}{5} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 3/5",
-      "y != -1/5",
-      "y != 1/5",
-      "all real y"
+      "\\( y \\neq \\frac{3}{5} \\)",
+      "\\( y \\neq -\\frac{1}{5} \\)",
+      "\\( y \\neq \\frac{1}{5} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3260,6 +3575,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{2x + 4}{6x - 2} \\). (Format: 'y != 2/6')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{2x + 4}{6x - 2} \\implies y(6x - 2) = 2x + 4\\)",
@@ -3281,16 +3601,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{2}{6} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{2}{6} \\), so the answer is \\( y \\neq \\frac{2}{6} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 4/6",
-      "y != 2/6",
-      "y != -2/6",
-      "all real y"
+      "\\( y \\neq \\frac{4}{6} \\)",
+      "\\( y \\neq \\frac{2}{6} \\)",
+      "\\( y \\neq -\\frac{2}{6} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3302,6 +3622,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{3x + 5}{7x - 3} \\). (Format: 'y != 3/7')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{3x + 5}{7x - 3} \\implies y(7x - 3) = 3x + 5\\)",
@@ -3323,16 +3648,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{3}{7} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{3}{7} \\), so the answer is \\( y \\neq \\frac{3}{7} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 3/7",
-      "y != 5/7",
-      "y != -3/7",
-      "all real y"
+      "\\( y \\neq \\frac{3}{7} \\)",
+      "\\( y \\neq \\frac{5}{7} \\)",
+      "\\( y \\neq -\\frac{3}{7} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3344,6 +3669,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{4x + 6}{8x - 4} \\). (Format: 'y != 4/8')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{4x + 6}{8x - 4} \\implies y(8x - 4) = 4x + 6\\)",
@@ -3365,16 +3695,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{4}{8} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{4}{8} \\), so the answer is \\( y \\neq \\frac{4}{8} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 4/8",
-      "y != 6/8",
-      "y != -4/8",
-      "all real y"
+      "\\( y \\neq \\frac{4}{8} \\)",
+      "\\( y \\neq \\frac{6}{8} \\)",
+      "\\( y \\neq -\\frac{4}{8} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3386,6 +3716,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{5x + 7}{9x - 5} \\). (Format: 'y != 5/9')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{5x + 7}{9x - 5} \\implies y(9x - 5) = 5x + 7\\)",
@@ -3407,16 +3742,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{5}{9} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{5}{9} \\), so the answer is \\( y \\neq \\frac{5}{9} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != -5/9",
-      "y != 5/9",
-      "y != 7/9",
-      "all real y"
+      "\\( y \\neq -\\frac{5}{9} \\)",
+      "\\( y \\neq \\frac{5}{9} \\)",
+      "\\( y \\neq \\frac{7}{9} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3428,6 +3763,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{6x + 8}{10x - 6} \\). (Format: 'y != 6/10')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{6x + 8}{10x - 6} \\implies y(10x - 6) = 6x + 8\\)",
@@ -3449,16 +3789,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{6}{10} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{6}{10} \\), so the answer is \\( y \\neq \\frac{6}{10} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 6/10",
-      "y != -6/10",
-      "y != 8/10",
-      "all real y"
+      "\\( y \\neq \\frac{6}{10} \\)",
+      "\\( y \\neq -\\frac{6}{10} \\)",
+      "\\( y \\neq \\frac{8}{10} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3470,6 +3810,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{7x + 9}{11x - 7} \\). (Format: 'y != 7/11')",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{7x + 9}{11x - 7} \\implies y(11x - 7) = 7x + 9\\)",
@@ -3491,16 +3836,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{7}{11} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{7}{11} \\), so the answer is \\( y \\neq \\frac{7}{11} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 7/11",
-      "y != -7/11",
-      "y != 9/11",
-      "all real y"
+      "\\( y \\neq \\frac{7}{11} \\)",
+      "\\( y \\neq -\\frac{7}{11} \\)",
+      "\\( y \\neq \\frac{9}{11} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3512,6 +3857,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{8x + 10}{12x - 8} \\). (Format: 'y != 8/12')",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{8x + 10}{12x - 8} \\implies y(12x - 8) = 8x + 10\\)",
@@ -3533,16 +3883,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{8}{12} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{8}{12} \\), so the answer is \\( y \\neq \\frac{8}{12} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != -8/12",
-      "y != 8/12",
-      "y != 10/12",
-      "all real y"
+      "\\( y \\neq -\\frac{8}{12} \\)",
+      "\\( y \\neq \\frac{8}{12} \\)",
+      "\\( y \\neq \\frac{10}{12} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3554,6 +3904,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{9x + 11}{13x - 9} \\). (Format: 'y != 9/13')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{9x + 11}{13x - 9} \\implies y(13x - 9) = 9x + 11\\)",
@@ -3575,16 +3930,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{9}{13} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{9}{13} \\), so the answer is \\( y \\neq \\frac{9}{13} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 11/13",
-      "y != -9/13",
-      "y != 9/13",
-      "all real y"
+      "\\( y \\neq \\frac{11}{13} \\)",
+      "\\( y \\neq -\\frac{9}{13} \\)",
+      "\\( y \\neq \\frac{9}{13} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3596,6 +3951,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the rational function \\( f(x) = \\frac{10x + 12}{14x - 10} \\). (Format: 'y != 10/14')",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and rearrange the equation to express x in terms of y.",
         "workingOut": "\\(y = \\frac{10x + 12}{14x - 10} \\implies y(14x - 10) = 10x + 12\\)",
@@ -3617,16 +3977,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The range excludes \\( y = \\frac{10}{14} \\), the ratio of the \\(x\\)-coefficients in the numerator and denominator (the horizontal asymptote of the rational function).",
+        "explanation": "The range excludes \\( y = \\frac{10}{14} \\), so the answer is \\( y \\neq \\frac{10}{14} \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "y != 12/14",
-      "y != -10/14",
-      "y != 10/14",
-      "all real y"
+      "\\( y \\neq \\frac{12}{14} \\)",
+      "\\( y \\neq -\\frac{10}{14} \\)",
+      "\\( y \\neq \\frac{10}{14} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
   {
@@ -3638,6 +3998,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 2x + k, & x < 2 \\\\ kx - 3, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3665,10 +4030,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "8",
-      "1",
-      "7",
-      "6"
+      "\\( k = 8 \\)",
+      "\\( k = 1 \\)",
+      "\\( k = 7 \\)",
+      "\\( k = 6 \\)"
     ]
   },
   {
@@ -3680,6 +4045,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 3x + k, & x < 2 \\\\ kx - 6, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3707,10 +4077,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "0",
-      "13",
-      "12",
-      "11"
+      "\\( k = 0 \\)",
+      "\\( k = 13 \\)",
+      "\\( k = 12 \\)",
+      "\\( k = 11 \\)"
     ]
   },
   {
@@ -3722,6 +4092,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 4x + k, & x < 2 \\\\ kx - 9, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "2",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3749,10 +4124,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "-1",
-      "18",
-      "17",
-      "16"
+      "\\( k = -1 \\)",
+      "\\( k = 18 \\)",
+      "\\( k = 17 \\)",
+      "\\( k = 16 \\)"
     ]
   },
   {
@@ -3764,6 +4139,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 5x + k, & x < 2 \\\\ kx - 12, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3791,10 +4171,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "22",
-      "23",
-      "-2",
-      "21"
+      "\\( k = 22 \\)",
+      "\\( k = 23 \\)",
+      "\\( k = -2 \\)",
+      "\\( k = 21 \\)"
     ]
   },
   {
@@ -3806,6 +4186,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 6x + k, & x < 2 \\\\ kx - 15, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3833,10 +4218,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "28",
-      "27",
-      "-3",
-      "26"
+      "\\( k = 28 \\)",
+      "\\( k = 27 \\)",
+      "\\( k = -3 \\)",
+      "\\( k = 26 \\)"
     ]
   },
   {
@@ -3848,6 +4233,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 7x + k, & x < 2 \\\\ kx - 18, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3875,10 +4265,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "33",
-      "32",
-      "-4",
-      "31"
+      "\\( k = 33 \\)",
+      "\\( k = 32 \\)",
+      "\\( k = -4 \\)",
+      "\\( k = 31 \\)"
     ]
   },
   {
@@ -3890,6 +4280,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 8x + k, & x < 2 \\\\ kx - 21, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3917,10 +4312,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "37",
-      "-5",
-      "38",
-      "36"
+      "\\( k = 37 \\)",
+      "\\( k = -5 \\)",
+      "\\( k = 38 \\)",
+      "\\( k = 36 \\)"
     ]
   },
   {
@@ -3932,6 +4327,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 9x + k, & x < 2 \\\\ kx - 24, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -3959,10 +4359,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "42",
-      "-6",
-      "43",
-      "41"
+      "\\( k = 42 \\)",
+      "\\( k = -6 \\)",
+      "\\( k = 43 \\)",
+      "\\( k = 41 \\)"
     ]
   },
   {
@@ -3974,6 +4374,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 10x + k, & x < 2 \\\\ kx - 27, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "1",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -4001,10 +4406,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "-7",
-      "47",
-      "48",
-      "46"
+      "\\( k = -7 \\)",
+      "\\( k = 47 \\)",
+      "\\( k = 48 \\)",
+      "\\( k = 46 \\)"
     ]
   },
   {
@@ -4016,6 +4421,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 11x + k, & x < 2 \\\\ kx - 30, & x \\ge 2 \\end{cases} \\)\n\nFind the value of the constant \\( k \\) that makes the function continuous at \\( x = 2 \\).",
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a piecewise function is continuous at the boundary point when the two pieces give the same value there — set the two expressions equal at that \\(x\\)-value and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "For the function to be continuous at the boundary, the left-hand limit and right-hand limit must be equal.",
         "workingOut": "\\(\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)\\)",
@@ -4043,10 +4453,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "52",
-      "-8",
-      "53",
-      "51"
+      "\\( k = 52 \\)",
+      "\\( k = -8 \\)",
+      "\\( k = 53 \\)",
+      "\\( k = 51 \\)"
     ]
   },
   {
@@ -4058,6 +4468,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 1(x - 3)^2 + 4 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (3, 4)\\)",
@@ -4079,16 +4494,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 1(x-3)^2 + 4 \\) is at \\( x = 3 \\). Restricting to \\( x \\ge 3 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 1(x-3)^2 + 4 \\) is at \\( x = 3 \\), so the smallest valid \\( d \\) is \\( d = 3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "0",
-      "-3",
-      "4",
-      "3"
+      "\\( d = 0 \\)",
+      "\\( d = -3 \\)",
+      "\\( d = 4 \\)",
+      "\\( d = 3 \\)"
     ]
   },
   {
@@ -4100,6 +4515,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 2(x - 6)^2 + 8 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (6, 8)\\)",
@@ -4121,16 +4541,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 2(x-6)^2 + 8 \\) is at \\( x = 6 \\). Restricting to \\( x \\ge 6 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 2(x-6)^2 + 8 \\) is at \\( x = 6 \\), so the smallest valid \\( d \\) is \\( d = 6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "-6",
-      "8",
-      "0",
-      "6"
+      "\\( d = -6 \\)",
+      "\\( d = 8 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = 6 \\)"
     ]
   },
   {
@@ -4142,6 +4562,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 3(x - 9)^2 + 12 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (9, 12)\\)",
@@ -4163,16 +4588,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 3(x-9)^2 + 12 \\) is at \\( x = 9 \\). Restricting to \\( x \\ge 9 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 3(x-9)^2 + 12 \\) is at \\( x = 9 \\), so the smallest valid \\( d \\) is \\( d = 9 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "-9",
-      "12",
-      "0",
-      "9"
+      "\\( d = -9 \\)",
+      "\\( d = 12 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = 9 \\)"
     ]
   },
   {
@@ -4184,6 +4609,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 4(x - 12)^2 + 16 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (12, 16)\\)",
@@ -4205,16 +4635,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 4(x-12)^2 + 16 \\) is at \\( x = 12 \\). Restricting to \\( x \\ge 12 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 4(x-12)^2 + 16 \\) is at \\( x = 12 \\), so the smallest valid \\( d \\) is \\( d = 12 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "16",
-      "-12",
-      "0",
-      "12"
+      "\\( d = 16 \\)",
+      "\\( d = -12 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = 12 \\)"
     ]
   },
   {
@@ -4226,6 +4656,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 5(x - 15)^2 + 20 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (15, 20)\\)",
@@ -4247,16 +4682,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 5(x-15)^2 + 20 \\) is at \\( x = 15 \\). Restricting to \\( x \\ge 15 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 5(x-15)^2 + 20 \\) is at \\( x = 15 \\), so the smallest valid \\( d \\) is \\( d = 15 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "20",
-      "0",
-      "-15",
-      "15"
+      "\\( d = 20 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = -15 \\)",
+      "\\( d = 15 \\)"
     ]
   },
   {
@@ -4268,6 +4703,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 6(x - 18)^2 + 24 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (18, 24)\\)",
@@ -4289,16 +4729,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 6(x-18)^2 + 24 \\) is at \\( x = 18 \\). Restricting to \\( x \\ge 18 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 6(x-18)^2 + 24 \\) is at \\( x = 18 \\), so the smallest valid \\( d \\) is \\( d = 18 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "24",
-      "0",
-      "-18",
-      "18"
+      "\\( d = 24 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = -18 \\)",
+      "\\( d = 18 \\)"
     ]
   },
   {
@@ -4310,6 +4750,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 7(x - 21)^2 + 28 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (21, 28)\\)",
@@ -4331,16 +4776,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 7(x-21)^2 + 28 \\) is at \\( x = 21 \\). Restricting to \\( x \\ge 21 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 7(x-21)^2 + 28 \\) is at \\( x = 21 \\), so the smallest valid \\( d \\) is \\( d = 21 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "0",
-      "28",
-      "-21",
-      "21"
+      "\\( d = 0 \\)",
+      "\\( d = 28 \\)",
+      "\\( d = -21 \\)",
+      "\\( d = 21 \\)"
     ]
   },
   {
@@ -4352,6 +4797,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 8(x - 24)^2 + 32 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (24, 32)\\)",
@@ -4373,16 +4823,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 8(x-24)^2 + 32 \\) is at \\( x = 24 \\). Restricting to \\( x \\ge 24 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 8(x-24)^2 + 32 \\) is at \\( x = 24 \\), so the smallest valid \\( d \\) is \\( d = 24 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "32",
-      "0",
-      "-24",
-      "24"
+      "\\( d = 32 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = -24 \\)",
+      "\\( d = 24 \\)"
     ]
   },
   {
@@ -4394,6 +4844,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 9(x - 27)^2 + 36 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (27, 36)\\)",
@@ -4415,16 +4870,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 9(x-27)^2 + 36 \\) is at \\( x = 27 \\). Restricting to \\( x \\ge 27 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 9(x-27)^2 + 36 \\) is at \\( x = 27 \\), so the smallest valid \\( d \\) is \\( d = 27 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "-27",
-      "0",
-      "36",
-      "27"
+      "\\( d = -27 \\)",
+      "\\( d = 0 \\)",
+      "\\( d = 36 \\)",
+      "\\( d = 27 \\)"
     ]
   },
   {
@@ -4436,6 +4891,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Consider the quadratic function \\( f(x) = 10(x - 30)^2 + 40 \\) defined on a restricted domain \\( x \\ge d \\). Find the smallest value of \\( d \\) such that \\( f(x) \\) is a one-to-one function and thus has a well-defined inverse.",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a quadratic \\( f(x) = a(x-h)^2+k \\) is one-to-one exactly when its domain is restricted to one side of the vertex \\( x = h \\); the smallest valid \\( d \\) for \\( x \\geq d \\) is the vertex itself.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Identify the vertex of the parabola from the vertex form equation.",
         "workingOut": "\\(\\text{Vertex: } (30, 40)\\)",
@@ -4457,16 +4917,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The vertex of \\( f(x) = 10(x-30)^2 + 40 \\) is at \\( x = 30 \\). Restricting to \\( x \\ge 30 \\) makes the function strictly increasing, and hence one-to-one.",
+        "explanation": "The vertex of \\( f(x) = 10(x-30)^2 + 40 \\) is at \\( x = 30 \\), so the smallest valid \\( d \\) is \\( d = 30 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "0",
-      "-30",
-      "40",
-      "30"
+      "\\( d = 0 \\)",
+      "\\( d = -30 \\)",
+      "\\( d = 40 \\)",
+      "\\( d = 30 \\)"
     ]
   },
   {
@@ -4478,6 +4938,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 1} + 2 \\) and state its domain. (Format: 'f^-1(x) = (x - 2)^2 + 1, x >= 2')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-1}+2 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 1} + 2 \\implies y \\ge 2 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 2\\)",
@@ -4499,16 +4964,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-1}+2 \\) and solve: \\( x = \\sqrt{y-1}+2 \\implies y = (x-2)^2+1 \\), valid for \\( x \\ge 2 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-1}+2 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\) (since the range of \\( f \\) is \\( y \\geq 2 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 2)^2 + 1, all real x",
-      "f^-1(x) = (x - 2)^2 + 1, x <= 2",
-      "f^-1(x) = (x - 1)^2 + 2, x >= 1",
-      "f^-1(x) = (x - 2)^2 + 1, x >= 2"
+      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\leq 2 \\)",
+      "\\( f^{-1}(x) = (x-1)^2+2,\\ \\ x \\geq 1 \\)",
+      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\)"
     ]
   },
   {
@@ -4520,6 +4985,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 2} + 3 \\) and state its domain. (Format: 'f^-1(x) = (x - 3)^2 + 2, x >= 3')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-2}+3 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 2} + 3 \\implies y \\ge 3 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 3\\)",
@@ -4541,16 +5011,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-2}+3 \\) and solve: \\( x = \\sqrt{y-2}+3 \\implies y = (x-3)^2+2 \\), valid for \\( x \\ge 3 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-2}+3 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\geq 3 \\) (since the range of \\( f \\) is \\( y \\geq 3 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 3)^2 + 2, all real x",
-      "f^-1(x) = (x - 3)^2 + 2, x <= 3",
-      "f^-1(x) = (x - 2)^2 + 3, x >= 2",
-      "f^-1(x) = (x - 3)^2 + 2, x >= 3"
+      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\leq 3 \\)",
+      "\\( f^{-1}(x) = (x-2)^2+3,\\ \\ x \\geq 2 \\)",
+      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\geq 3 \\)"
     ]
   },
   {
@@ -4562,6 +5032,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 3} + 4 \\) and state its domain. (Format: 'f^-1(x) = (x - 4)^2 + 3, x >= 4')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-3}+4 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 3} + 4 \\implies y \\ge 4 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 4\\)",
@@ -4583,16 +5058,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-3}+4 \\) and solve: \\( x = \\sqrt{y-3}+4 \\implies y = (x-4)^2+3 \\), valid for \\( x \\ge 4 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-3}+4 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\) (since the range of \\( f \\) is \\( y \\geq 4 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 4)^2 + 3, x <= 4",
-      "f^-1(x) = (x - 4)^2 + 3, all real x",
-      "f^-1(x) = (x - 3)^2 + 4, x >= 3",
-      "f^-1(x) = (x - 4)^2 + 3, x >= 4"
+      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\leq 4 \\)",
+      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-3)^2+4,\\ \\ x \\geq 3 \\)",
+      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\)"
     ]
   },
   {
@@ -4604,6 +5079,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 4} + 5 \\) and state its domain. (Format: 'f^-1(x) = (x - 5)^2 + 4, x >= 5')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-4}+5 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 4} + 5 \\implies y \\ge 5 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 5\\)",
@@ -4625,16 +5105,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-4}+5 \\) and solve: \\( x = \\sqrt{y-4}+5 \\implies y = (x-5)^2+4 \\), valid for \\( x \\ge 5 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-4}+5 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\) (since the range of \\( f \\) is \\( y \\geq 5 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 4)^2 + 5, x >= 4",
-      "f^-1(x) = (x - 5)^2 + 4, x <= 5",
-      "f^-1(x) = (x - 5)^2 + 4, all real x",
-      "f^-1(x) = (x - 5)^2 + 4, x >= 5"
+      "\\( f^{-1}(x) = (x-4)^2+5,\\ \\ x \\geq 4 \\)",
+      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\leq 5 \\)",
+      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\)"
     ]
   },
   {
@@ -4646,6 +5126,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 5} + 6 \\) and state its domain. (Format: 'f^-1(x) = (x - 6)^2 + 5, x >= 6')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-5}+6 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 5} + 6 \\implies y \\ge 6 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 6\\)",
@@ -4667,16 +5152,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-5}+6 \\) and solve: \\( x = \\sqrt{y-5}+6 \\implies y = (x-6)^2+5 \\), valid for \\( x \\ge 6 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-5}+6 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\) (since the range of \\( f \\) is \\( y \\geq 6 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 5)^2 + 6, x >= 5",
-      "f^-1(x) = (x - 6)^2 + 5, x <= 6",
-      "f^-1(x) = (x - 6)^2 + 5, all real x",
-      "f^-1(x) = (x - 6)^2 + 5, x >= 6"
+      "\\( f^{-1}(x) = (x-5)^2+6,\\ \\ x \\geq 5 \\)",
+      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\leq 6 \\)",
+      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\)"
     ]
   },
   {
@@ -4688,6 +5173,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 6} + 7 \\) and state its domain. (Format: 'f^-1(x) = (x - 7)^2 + 6, x >= 7')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-6}+7 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 6} + 7 \\implies y \\ge 7 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 7\\)",
@@ -4709,16 +5199,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-6}+7 \\) and solve: \\( x = \\sqrt{y-6}+7 \\implies y = (x-7)^2+6 \\), valid for \\( x \\ge 7 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-6}+7 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\) (since the range of \\( f \\) is \\( y \\geq 7 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 7)^2 + 6, x <= 7",
-      "f^-1(x) = (x - 6)^2 + 7, x >= 6",
-      "f^-1(x) = (x - 7)^2 + 6, all real x",
-      "f^-1(x) = (x - 7)^2 + 6, x >= 7"
+      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\leq 7 \\)",
+      "\\( f^{-1}(x) = (x-6)^2+7,\\ \\ x \\geq 6 \\)",
+      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\)"
     ]
   },
   {
@@ -4730,6 +5220,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 7} + 8 \\) and state its domain. (Format: 'f^-1(x) = (x - 8)^2 + 7, x >= 8')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-7}+8 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 7} + 8 \\implies y \\ge 8 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 8\\)",
@@ -4751,16 +5246,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-7}+8 \\) and solve: \\( x = \\sqrt{y-7}+8 \\implies y = (x-8)^2+7 \\), valid for \\( x \\ge 8 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-7}+8 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\) (since the range of \\( f \\) is \\( y \\geq 8 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 7)^2 + 8, x >= 7",
-      "f^-1(x) = (x - 8)^2 + 7, all real x",
-      "f^-1(x) = (x - 8)^2 + 7, x <= 8",
-      "f^-1(x) = (x - 8)^2 + 7, x >= 8"
+      "\\( f^{-1}(x) = (x-7)^2+8,\\ \\ x \\geq 7 \\)",
+      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\leq 8 \\)",
+      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\)"
     ]
   },
   {
@@ -4772,6 +5267,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 8} + 9 \\) and state its domain. (Format: 'f^-1(x) = (x - 9)^2 + 8, x >= 9')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-8}+9 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 8} + 9 \\implies y \\ge 9 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 9\\)",
@@ -4793,16 +5293,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-8}+9 \\) and solve: \\( x = \\sqrt{y-8}+9 \\implies y = (x-9)^2+8 \\), valid for \\( x \\ge 9 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-8}+9 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\) (since the range of \\( f \\) is \\( y \\geq 9 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 9)^2 + 8, all real x",
-      "f^-1(x) = (x - 8)^2 + 9, x >= 8",
-      "f^-1(x) = (x - 9)^2 + 8, x <= 9",
-      "f^-1(x) = (x - 9)^2 + 8, x >= 9"
+      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-8)^2+9,\\ \\ x \\geq 8 \\)",
+      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\leq 9 \\)",
+      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\)"
     ]
   },
   {
@@ -4814,6 +5314,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 9} + 10 \\) and state its domain. (Format: 'f^-1(x) = (x - 10)^2 + 9, x >= 10')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-9}+10 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 9} + 10 \\implies y \\ge 10 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 10\\)",
@@ -4835,16 +5340,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-9}+10 \\) and solve: \\( x = \\sqrt{y-9}+10 \\implies y = (x-10)^2+9 \\), valid for \\( x \\ge 10 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-9}+10 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\) (since the range of \\( f \\) is \\( y \\geq 10 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 9)^2 + 10, x >= 9",
-      "f^-1(x) = (x - 10)^2 + 9, all real x",
-      "f^-1(x) = (x - 10)^2 + 9, x <= 10",
-      "f^-1(x) = (x - 10)^2 + 9, x >= 10"
+      "\\( f^{-1}(x) = (x-9)^2+10,\\ \\ x \\geq 9 \\)",
+      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\leq 10 \\)",
+      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\)"
     ]
   },
   {
@@ -4856,6 +5361,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 10} + 11 \\) and state its domain. (Format: 'f^-1(x) = (x - 11)^2 + 10, x >= 11')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-10}+11 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Set y equal to f(x) and state the range, which becomes the domain of the inverse function.",
         "workingOut": "\\(y = \\sqrt{x - 10} + 11 \\implies y \\ge 11 \\implies \\text{Domain of } f^{-1} \\text{ is } x \\ge 11\\)",
@@ -4877,16 +5387,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-10}+11 \\) and solve: \\( x = \\sqrt{y-10}+11 \\implies y = (x-11)^2+10 \\), valid for \\( x \\ge 11 \\) (the range of the original function).",
+        "explanation": "Solving \\( x = \\sqrt{y-10}+11 \\) for \\( y \\) gives \\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\) (since the range of \\( f \\) is \\( y \\geq 11 \\)).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "f^-1(x) = (x - 10)^2 + 11, x >= 10",
-      "f^-1(x) = (x - 11)^2 + 10, all real x",
-      "f^-1(x) = (x - 11)^2 + 10, x <= 11",
-      "f^-1(x) = (x - 11)^2 + 10, x >= 11"
+      "\\( f^{-1}(x) = (x-10)^2+11,\\ \\ x \\geq 10 \\)",
+      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\in \\mathbb{R} \\)",
+      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\leq 11 \\)",
+      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\)"
     ]
   },
   {
@@ -4898,6 +5408,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 1 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 2 \\) units.\n4. Shifted vertically upwards by \\( 3 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -1*f(x - 2) + 3')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 1f(x)\\)",
@@ -4919,16 +5434,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 1 \\) gives \\( 1f(x) \\); reflect in the \\(x\\)-axis gives \\( -1f(x) \\); shift right \\( 2 \\) gives \\( -1f(x-2) \\); shift up \\( 3 \\) gives \\( g(x) = -1f(x-2)+3 \\).",
+        "explanation": "Dilate by 1, reflect in the \\(x\\)-axis, shift right 2, then shift up 3: \\( g(x) = -1f(x-2)+3 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -1*f(x + 2) + 3",
-      "g(x) = -1*f(x - 3) + 2",
-      "g(x) = 1*f(x - 2) + 3",
-      "g(x) = -1*f(x - 2) + 3"
+      "\\( g(x) = -1f(x+2)+3 \\)",
+      "\\( g(x) = -1f(x-3)+2 \\)",
+      "\\( g(x) = 1f(x-2)+3 \\)",
+      "\\( g(x) = -1f(x-2)+3 \\)"
     ]
   },
   {
@@ -4940,6 +5455,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 2 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 3 \\) units.\n4. Shifted vertically upwards by \\( 4 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -2*f(x - 3) + 4')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 2f(x)\\)",
@@ -4961,16 +5481,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 2 \\) gives \\( 2f(x) \\); reflect in the \\(x\\)-axis gives \\( -2f(x) \\); shift right \\( 3 \\) gives \\( -2f(x-3) \\); shift up \\( 4 \\) gives \\( g(x) = -2f(x-3)+4 \\).",
+        "explanation": "Dilate by 2, reflect in the \\(x\\)-axis, shift right 3, then shift up 4: \\( g(x) = -2f(x-3)+4 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -2*f(x - 4) + 3",
-      "g(x) = 2*f(x - 3) + 4",
-      "g(x) = -2*f(x + 3) + 4",
-      "g(x) = -2*f(x - 3) + 4"
+      "\\( g(x) = -2f(x-4)+3 \\)",
+      "\\( g(x) = 2f(x-3)+4 \\)",
+      "\\( g(x) = -2f(x+3)+4 \\)",
+      "\\( g(x) = -2f(x-3)+4 \\)"
     ]
   },
   {
@@ -4982,6 +5502,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 3 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 4 \\) units.\n4. Shifted vertically upwards by \\( 5 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -3*f(x - 4) + 5')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 3f(x)\\)",
@@ -5003,16 +5528,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 3 \\) gives \\( 3f(x) \\); reflect in the \\(x\\)-axis gives \\( -3f(x) \\); shift right \\( 4 \\) gives \\( -3f(x-4) \\); shift up \\( 5 \\) gives \\( g(x) = -3f(x-4)+5 \\).",
+        "explanation": "Dilate by 3, reflect in the \\(x\\)-axis, shift right 4, then shift up 5: \\( g(x) = -3f(x-4)+5 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -3*f(x - 5) + 4",
-      "g(x) = 3*f(x - 4) + 5",
-      "g(x) = -3*f(x + 4) + 5",
-      "g(x) = -3*f(x - 4) + 5"
+      "\\( g(x) = -3f(x-5)+4 \\)",
+      "\\( g(x) = 3f(x-4)+5 \\)",
+      "\\( g(x) = -3f(x+4)+5 \\)",
+      "\\( g(x) = -3f(x-4)+5 \\)"
     ]
   },
   {
@@ -5024,6 +5549,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 4 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 5 \\) units.\n4. Shifted vertically upwards by \\( 6 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -4*f(x - 5) + 6')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 4f(x)\\)",
@@ -5045,16 +5575,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 4 \\) gives \\( 4f(x) \\); reflect in the \\(x\\)-axis gives \\( -4f(x) \\); shift right \\( 5 \\) gives \\( -4f(x-5) \\); shift up \\( 6 \\) gives \\( g(x) = -4f(x-5)+6 \\).",
+        "explanation": "Dilate by 4, reflect in the \\(x\\)-axis, shift right 5, then shift up 6: \\( g(x) = -4f(x-5)+6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = 4*f(x - 5) + 6",
-      "g(x) = -4*f(x - 6) + 5",
-      "g(x) = -4*f(x + 5) + 6",
-      "g(x) = -4*f(x - 5) + 6"
+      "\\( g(x) = 4f(x-5)+6 \\)",
+      "\\( g(x) = -4f(x-6)+5 \\)",
+      "\\( g(x) = -4f(x+5)+6 \\)",
+      "\\( g(x) = -4f(x-5)+6 \\)"
     ]
   },
   {
@@ -5066,6 +5596,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 5 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 6 \\) units.\n4. Shifted vertically upwards by \\( 7 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -5*f(x - 6) + 7')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 5f(x)\\)",
@@ -5087,16 +5622,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 5 \\) gives \\( 5f(x) \\); reflect in the \\(x\\)-axis gives \\( -5f(x) \\); shift right \\( 6 \\) gives \\( -5f(x-6) \\); shift up \\( 7 \\) gives \\( g(x) = -5f(x-6)+7 \\).",
+        "explanation": "Dilate by 5, reflect in the \\(x\\)-axis, shift right 6, then shift up 7: \\( g(x) = -5f(x-6)+7 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -5*f(x - 7) + 6",
-      "g(x) = 5*f(x - 6) + 7",
-      "g(x) = -5*f(x + 6) + 7",
-      "g(x) = -5*f(x - 6) + 7"
+      "\\( g(x) = -5f(x-7)+6 \\)",
+      "\\( g(x) = 5f(x-6)+7 \\)",
+      "\\( g(x) = -5f(x+6)+7 \\)",
+      "\\( g(x) = -5f(x-6)+7 \\)"
     ]
   },
   {
@@ -5108,6 +5643,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 6 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 7 \\) units.\n4. Shifted vertically upwards by \\( 8 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -6*f(x - 7) + 8')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 6f(x)\\)",
@@ -5129,16 +5669,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 6 \\) gives \\( 6f(x) \\); reflect in the \\(x\\)-axis gives \\( -6f(x) \\); shift right \\( 7 \\) gives \\( -6f(x-7) \\); shift up \\( 8 \\) gives \\( g(x) = -6f(x-7)+8 \\).",
+        "explanation": "Dilate by 6, reflect in the \\(x\\)-axis, shift right 7, then shift up 8: \\( g(x) = -6f(x-7)+8 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -6*f(x + 7) + 8",
-      "g(x) = 6*f(x - 7) + 8",
-      "g(x) = -6*f(x - 8) + 7",
-      "g(x) = -6*f(x - 7) + 8"
+      "\\( g(x) = -6f(x+7)+8 \\)",
+      "\\( g(x) = 6f(x-7)+8 \\)",
+      "\\( g(x) = -6f(x-8)+7 \\)",
+      "\\( g(x) = -6f(x-7)+8 \\)"
     ]
   },
   {
@@ -5150,6 +5690,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 7 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 8 \\) units.\n4. Shifted vertically upwards by \\( 9 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -7*f(x - 8) + 9')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 7f(x)\\)",
@@ -5171,16 +5716,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 7 \\) gives \\( 7f(x) \\); reflect in the \\(x\\)-axis gives \\( -7f(x) \\); shift right \\( 8 \\) gives \\( -7f(x-8) \\); shift up \\( 9 \\) gives \\( g(x) = -7f(x-8)+9 \\).",
+        "explanation": "Dilate by 7, reflect in the \\(x\\)-axis, shift right 8, then shift up 9: \\( g(x) = -7f(x-8)+9 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = 7*f(x - 8) + 9",
-      "g(x) = -7*f(x + 8) + 9",
-      "g(x) = -7*f(x - 9) + 8",
-      "g(x) = -7*f(x - 8) + 9"
+      "\\( g(x) = 7f(x-8)+9 \\)",
+      "\\( g(x) = -7f(x+8)+9 \\)",
+      "\\( g(x) = -7f(x-9)+8 \\)",
+      "\\( g(x) = -7f(x-8)+9 \\)"
     ]
   },
   {
@@ -5192,6 +5737,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 8 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 9 \\) units.\n4. Shifted vertically upwards by \\( 10 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -8*f(x - 9) + 10')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 8f(x)\\)",
@@ -5213,16 +5763,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 8 \\) gives \\( 8f(x) \\); reflect in the \\(x\\)-axis gives \\( -8f(x) \\); shift right \\( 9 \\) gives \\( -8f(x-9) \\); shift up \\( 10 \\) gives \\( g(x) = -8f(x-9)+10 \\).",
+        "explanation": "Dilate by 8, reflect in the \\(x\\)-axis, shift right 9, then shift up 10: \\( g(x) = -8f(x-9)+10 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -8*f(x + 9) + 10",
-      "g(x) = 8*f(x - 9) + 10",
-      "g(x) = -8*f(x - 10) + 9",
-      "g(x) = -8*f(x - 9) + 10"
+      "\\( g(x) = -8f(x+9)+10 \\)",
+      "\\( g(x) = 8f(x-9)+10 \\)",
+      "\\( g(x) = -8f(x-10)+9 \\)",
+      "\\( g(x) = -8f(x-9)+10 \\)"
     ]
   },
   {
@@ -5234,6 +5784,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 9 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 10 \\) units.\n4. Shifted vertically upwards by \\( 11 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -9*f(x - 10) + 11')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 9f(x)\\)",
@@ -5255,16 +5810,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 9 \\) gives \\( 9f(x) \\); reflect in the \\(x\\)-axis gives \\( -9f(x) \\); shift right \\( 10 \\) gives \\( -9f(x-10) \\); shift up \\( 11 \\) gives \\( g(x) = -9f(x-10)+11 \\).",
+        "explanation": "Dilate by 9, reflect in the \\(x\\)-axis, shift right 10, then shift up 11: \\( g(x) = -9f(x-10)+11 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -9*f(x - 11) + 10",
-      "g(x) = -9*f(x + 10) + 11",
-      "g(x) = 9*f(x - 10) + 11",
-      "g(x) = -9*f(x - 10) + 11"
+      "\\( g(x) = -9f(x-11)+10 \\)",
+      "\\( g(x) = -9f(x+10)+11 \\)",
+      "\\( g(x) = 9f(x-10)+11 \\)",
+      "\\( g(x) = -9f(x-10)+11 \\)"
     ]
   },
   {
@@ -5276,6 +5831,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "A function \\( y = f(x) \\) undergoes the following sequence of transformations:\n\n1. Dilated vertically by a factor of \\( 10 \\).\n2. Reflected in the \\( x \\)-axis.\n3. Shifted horizontally to the right by \\( 11 \\) units.\n4. Shifted vertically upwards by \\( 12 \\) units.\n\nWrite down the equation of the transformed function \\( g(x) \\) in terms of \\( f(x) \\). (Format: 'g(x) = -10*f(x - 11) + 12')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: apply transformations in the stated order, wrapping each one around the previous result — dilation coefficient multiplies \\(f\\), reflection flips its sign, horizontal shifts change what's inside \\(f(\\cdot)\\), vertical shifts are added outside.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Apply vertical dilation by a factor of the coefficient.",
         "workingOut": "\\(y = 10f(x)\\)",
@@ -5297,16 +5857,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Apply the transformations in order: dilate by \\( 10 \\) gives \\( 10f(x) \\); reflect in the \\(x\\)-axis gives \\( -10f(x) \\); shift right \\( 11 \\) gives \\( -10f(x-11) \\); shift up \\( 12 \\) gives \\( g(x) = -10f(x-11)+12 \\).",
+        "explanation": "Dilate by 10, reflect in the \\(x\\)-axis, shift right 11, then shift up 12: \\( g(x) = -10f(x-11)+12 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "g(x) = -10*f(x + 11) + 12",
-      "g(x) = -10*f(x - 12) + 11",
-      "g(x) = 10*f(x - 11) + 12",
-      "g(x) = -10*f(x - 11) + 12"
+      "\\( g(x) = -10f(x+11)+12 \\)",
+      "\\( g(x) = -10f(x-12)+11 \\)",
+      "\\( g(x) = 10f(x-11)+12 \\)",
+      "\\( g(x) = -10f(x-11)+12 \\)"
     ]
   },
   {
@@ -5318,6 +5878,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 25 \\) at the point \\( (3, 4) \\). (Format: '3x + 4y = 25')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5334,16 +5899,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(3,4) \\) and \\( r^2=25 \\), this gives \\( 3x+4y=25 \\), which simplifies (dividing by \\( 1 \\)) to \\( 3x+4y=25 \\).",
+        "explanation": "With \\( (x_0,y_0)=(3,4) \\) and \\( r^2=25 \\), this gives \\( 3x+4y=25 \\), which simplifies (dividing by \\( 1 \\)) to \\( 3x + 4y = 25 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = -25",
-      "3x + 4y = 5",
-      "4x + 3y = 25",
-      "3x + 4y = 25"
+      "\\( 3x + 4y = -25 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 4x + 3y = 25 \\)",
+      "\\( 3x + 4y = 25 \\)"
     ]
   },
   {
@@ -5355,6 +5920,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 100 \\) at the point \\( (6, 8) \\). (Format: '3x + 4y = 50')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5371,16 +5941,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(6,8) \\) and \\( r^2=100 \\), this gives \\( 6x+8y=100 \\), which simplifies (dividing by \\( 2 \\)) to \\( 3x+4y=50 \\).",
+        "explanation": "With \\( (x_0,y_0)=(6,8) \\) and \\( r^2=100 \\), this gives \\( 6x+8y=100 \\), which simplifies (dividing by \\( 2 \\)) to \\( 3x + 4y = 50 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = -50",
-      "3x + 4y = 5",
-      "4x + 3y = 50",
-      "3x + 4y = 50"
+      "\\( 3x + 4y = -50 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 4x + 3y = 50 \\)",
+      "\\( 3x + 4y = 50 \\)"
     ]
   },
   {
@@ -5392,6 +5962,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 225 \\) at the point \\( (9, 12) \\). (Format: '3x + 4y = 75')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5408,16 +5983,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(9,12) \\) and \\( r^2=225 \\), this gives \\( 9x+12y=225 \\), which simplifies (dividing by \\( 3 \\)) to \\( 3x+4y=75 \\).",
+        "explanation": "With \\( (x_0,y_0)=(9,12) \\) and \\( r^2=225 \\), this gives \\( 9x+12y=225 \\), which simplifies (dividing by \\( 3 \\)) to \\( 3x + 4y = 75 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = 5",
-      "3x + 4y = -75",
-      "4x + 3y = 75",
-      "3x + 4y = 75"
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = -75 \\)",
+      "\\( 4x + 3y = 75 \\)",
+      "\\( 3x + 4y = 75 \\)"
     ]
   },
   {
@@ -5429,6 +6004,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 400 \\) at the point \\( (12, 16) \\). (Format: '3x + 4y = 100')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5445,16 +6025,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(12,16) \\) and \\( r^2=400 \\), this gives \\( 12x+16y=400 \\), which simplifies (dividing by \\( 4 \\)) to \\( 3x+4y=100 \\).",
+        "explanation": "With \\( (x_0,y_0)=(12,16) \\) and \\( r^2=400 \\), this gives \\( 12x+16y=400 \\), which simplifies (dividing by \\( 4 \\)) to \\( 3x + 4y = 100 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "4x + 3y = 100",
-      "3x + 4y = 5",
-      "3x + 4y = -100",
-      "3x + 4y = 100"
+      "\\( 4x + 3y = 100 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = -100 \\)",
+      "\\( 3x + 4y = 100 \\)"
     ]
   },
   {
@@ -5466,6 +6046,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 625 \\) at the point \\( (15, 20) \\). (Format: '3x + 4y = 125')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5482,16 +6067,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(15,20) \\) and \\( r^2=625 \\), this gives \\( 15x+20y=625 \\), which simplifies (dividing by \\( 5 \\)) to \\( 3x+4y=125 \\).",
+        "explanation": "With \\( (x_0,y_0)=(15,20) \\) and \\( r^2=625 \\), this gives \\( 15x+20y=625 \\), which simplifies (dividing by \\( 5 \\)) to \\( 3x + 4y = 125 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "4x + 3y = 125",
-      "3x + 4y = 5",
-      "3x + 4y = -125",
-      "3x + 4y = 125"
+      "\\( 4x + 3y = 125 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = -125 \\)",
+      "\\( 3x + 4y = 125 \\)"
     ]
   },
   {
@@ -5503,6 +6088,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 900 \\) at the point \\( (18, 24) \\). (Format: '3x + 4y = 150')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5519,16 +6109,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(18,24) \\) and \\( r^2=900 \\), this gives \\( 18x+24y=900 \\), which simplifies (dividing by \\( 6 \\)) to \\( 3x+4y=150 \\).",
+        "explanation": "With \\( (x_0,y_0)=(18,24) \\) and \\( r^2=900 \\), this gives \\( 18x+24y=900 \\), which simplifies (dividing by \\( 6 \\)) to \\( 3x + 4y = 150 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = 5",
-      "4x + 3y = 150",
-      "3x + 4y = -150",
-      "3x + 4y = 150"
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 4x + 3y = 150 \\)",
+      "\\( 3x + 4y = -150 \\)",
+      "\\( 3x + 4y = 150 \\)"
     ]
   },
   {
@@ -5540,6 +6130,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1225 \\) at the point \\( (21, 28) \\). (Format: '3x + 4y = 175')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5556,16 +6151,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(21,28) \\) and \\( r^2=1225 \\), this gives \\( 21x+28y=1225 \\), which simplifies (dividing by \\( 7 \\)) to \\( 3x+4y=175 \\).",
+        "explanation": "With \\( (x_0,y_0)=(21,28) \\) and \\( r^2=1225 \\), this gives \\( 21x+28y=1225 \\), which simplifies (dividing by \\( 7 \\)) to \\( 3x + 4y = 175 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "4x + 3y = 175",
-      "3x + 4y = 5",
-      "3x + 4y = -175",
-      "3x + 4y = 175"
+      "\\( 4x + 3y = 175 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = -175 \\)",
+      "\\( 3x + 4y = 175 \\)"
     ]
   },
   {
@@ -5577,6 +6172,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 1600 \\) at the point \\( (24, 32) \\). (Format: '3x + 4y = 200')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5593,16 +6193,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(24,32) \\) and \\( r^2=1600 \\), this gives \\( 24x+32y=1600 \\), which simplifies (dividing by \\( 8 \\)) to \\( 3x+4y=200 \\).",
+        "explanation": "With \\( (x_0,y_0)=(24,32) \\) and \\( r^2=1600 \\), this gives \\( 24x+32y=1600 \\), which simplifies (dividing by \\( 8 \\)) to \\( 3x + 4y = 200 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "4x + 3y = 200",
-      "3x + 4y = -200",
-      "3x + 4y = 5",
-      "3x + 4y = 200"
+      "\\( 4x + 3y = 200 \\)",
+      "\\( 3x + 4y = -200 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = 200 \\)"
     ]
   },
   {
@@ -5614,6 +6214,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2025 \\) at the point \\( (27, 36) \\). (Format: '3x + 4y = 225')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5630,16 +6235,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(27,36) \\) and \\( r^2=2025 \\), this gives \\( 27x+36y=2025 \\), which simplifies (dividing by \\( 9 \\)) to \\( 3x+4y=225 \\).",
+        "explanation": "With \\( (x_0,y_0)=(27,36) \\) and \\( r^2=2025 \\), this gives \\( 27x+36y=2025 \\), which simplifies (dividing by \\( 9 \\)) to \\( 3x + 4y = 225 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = -225",
-      "4x + 3y = 225",
-      "3x + 4y = 5",
-      "3x + 4y = 225"
+      "\\( 3x + 4y = -225 \\)",
+      "\\( 4x + 3y = 225 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = 225 \\)"
     ]
   },
   {
@@ -5651,6 +6256,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the equation of the tangent line to the circle \\( x^2 + y^2 = 2500 \\) at the point \\( (30, 40) \\). (Format: '3x + 4y = 250')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General rule: the tangent to \\( x^2+y^2=r^2 \\) at the point \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Recall the equation of the tangent line to a circle at a given point.",
         "workingOut": "\\(x_1 x + y_1 y = r^2\\)",
@@ -5667,16 +6277,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "The tangent to \\( x^2+y^2=r^2 \\) at \\( (x_0,y_0) \\) is \\( x_0x + y_0y = r^2 \\). With \\( (x_0,y_0)=(30,40) \\) and \\( r^2=2500 \\), this gives \\( 30x+40y=2500 \\), which simplifies (dividing by \\( 10 \\)) to \\( 3x+4y=250 \\).",
+        "explanation": "With \\( (x_0,y_0)=(30,40) \\) and \\( r^2=2500 \\), this gives \\( 30x+40y=2500 \\), which simplifies (dividing by \\( 10 \\)) to \\( 3x + 4y = 250 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3x + 4y = -250",
-      "4x + 3y = 250",
-      "3x + 4y = 5",
-      "3x + 4y = 250"
+      "\\( 3x + 4y = -250 \\)",
+      "\\( 4x + 3y = 250 \\)",
+      "\\( 3x + 4y = 5 \\)",
+      "\\( 3x + 4y = 250 \\)"
     ]
   },
   {
@@ -5688,6 +6298,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 7 \\) and the circle \\( x^2 + y^2 = 25 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 7 \\) into \\( x^2+y^2=25 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 7)^2 = 25\\)",
@@ -5709,16 +6324,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 7 \\) into \\( x^2+y^2=25 \\) gives \\( x^2 + 7x + 12 = 0 \\), which factors as \\( (x+3)(x+4)=0 \\), so \\( x=-3 \\) or \\( x=-4 \\), giving the points (-4, 3) and (-3, 4).",
+        "explanation": "This gives \\( x^2 + 7x + 12 = 0 \\), which factors as \\( (x+3)(x+4)=0 \\), so \\( x=-3 \\) or \\( x=-4 \\), giving \\( (-4, 3) \\text{ and } (-3, 4) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-3, 3) and (-4, 4)",
-      "(4, -3) and (3, -4)",
-      "(-4, 4) and (-3, 3)",
-      "(-4, 3) and (-3, 4)"
+      "\\( (-3, 3) \\text{ and } (-4, 4) \\)",
+      "\\( (4, -3) \\text{ and } (3, -4) \\)",
+      "\\( (-4, 4) \\text{ and } (-3, 3) \\)",
+      "\\( (-4, 3) \\text{ and } (-3, 4) \\)"
     ]
   },
   {
@@ -5730,6 +6345,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 14 \\) and the circle \\( x^2 + y^2 = 100 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 14 \\) into \\( x^2+y^2=100 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 14)^2 = 100\\)",
@@ -5751,16 +6371,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 14 \\) into \\( x^2+y^2=100 \\) gives \\( x^2 + 14x + 48 = 0 \\), which factors as \\( (x+6)(x+8)=0 \\), so \\( x=-6 \\) or \\( x=-8 \\), giving the points (-8, 6) and (-6, 8).",
+        "explanation": "This gives \\( x^2 + 14x + 48 = 0 \\), which factors as \\( (x+6)(x+8)=0 \\), so \\( x=-6 \\) or \\( x=-8 \\), giving \\( (-8, 6) \\text{ and } (-6, 8) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(8, -6) and (6, -8)",
-      "(-6, 6) and (-8, 8)",
-      "(-8, 8) and (-6, 6)",
-      "(-8, 6) and (-6, 8)"
+      "\\( (8, -6) \\text{ and } (6, -8) \\)",
+      "\\( (-6, 6) \\text{ and } (-8, 8) \\)",
+      "\\( (-8, 8) \\text{ and } (-6, 6) \\)",
+      "\\( (-8, 6) \\text{ and } (-6, 8) \\)"
     ]
   },
   {
@@ -5772,6 +6392,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 21 \\) and the circle \\( x^2 + y^2 = 225 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 21 \\) into \\( x^2+y^2=225 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 21)^2 = 225\\)",
@@ -5793,16 +6418,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 21 \\) into \\( x^2+y^2=225 \\) gives \\( x^2 + 21x + 108 = 0 \\), which factors as \\( (x+9)(x+12)=0 \\), so \\( x=-9 \\) or \\( x=-12 \\), giving the points (-12, 9) and (-9, 12).",
+        "explanation": "This gives \\( x^2 + 21x + 108 = 0 \\), which factors as \\( (x+9)(x+12)=0 \\), so \\( x=-9 \\) or \\( x=-12 \\), giving \\( (-12, 9) \\text{ and } (-9, 12) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-12, 12) and (-9, 9)",
-      "(-9, 9) and (-12, 12)",
-      "(12, -9) and (9, -12)",
-      "(-12, 9) and (-9, 12)"
+      "\\( (-12, 12) \\text{ and } (-9, 9) \\)",
+      "\\( (-9, 9) \\text{ and } (-12, 12) \\)",
+      "\\( (12, -9) \\text{ and } (9, -12) \\)",
+      "\\( (-12, 9) \\text{ and } (-9, 12) \\)"
     ]
   },
   {
@@ -5814,6 +6439,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 28 \\) and the circle \\( x^2 + y^2 = 400 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 28 \\) into \\( x^2+y^2=400 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 28)^2 = 400\\)",
@@ -5835,16 +6465,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 28 \\) into \\( x^2+y^2=400 \\) gives \\( x^2 + 28x + 192 = 0 \\), which factors as \\( (x+12)(x+16)=0 \\), so \\( x=-12 \\) or \\( x=-16 \\), giving the points (-16, 12) and (-12, 16).",
+        "explanation": "This gives \\( x^2 + 28x + 192 = 0 \\), which factors as \\( (x+12)(x+16)=0 \\), so \\( x=-12 \\) or \\( x=-16 \\), giving \\( (-16, 12) \\text{ and } (-12, 16) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-16, 16) and (-12, 12)",
-      "(-12, 12) and (-16, 16)",
-      "(16, -12) and (12, -16)",
-      "(-16, 12) and (-12, 16)"
+      "\\( (-16, 16) \\text{ and } (-12, 12) \\)",
+      "\\( (-12, 12) \\text{ and } (-16, 16) \\)",
+      "\\( (16, -12) \\text{ and } (12, -16) \\)",
+      "\\( (-16, 12) \\text{ and } (-12, 16) \\)"
     ]
   },
   {
@@ -5856,6 +6486,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 35 \\) and the circle \\( x^2 + y^2 = 625 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 35 \\) into \\( x^2+y^2=625 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 35)^2 = 625\\)",
@@ -5877,16 +6512,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 35 \\) into \\( x^2+y^2=625 \\) gives \\( x^2 + 35x + 300 = 0 \\), which factors as \\( (x+15)(x+20)=0 \\), so \\( x=-15 \\) or \\( x=-20 \\), giving the points (-20, 15) and (-15, 20).",
+        "explanation": "This gives \\( x^2 + 35x + 300 = 0 \\), which factors as \\( (x+15)(x+20)=0 \\), so \\( x=-15 \\) or \\( x=-20 \\), giving \\( (-20, 15) \\text{ and } (-15, 20) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-15, 15) and (-20, 20)",
-      "(-20, 20) and (-15, 15)",
-      "(20, -15) and (15, -20)",
-      "(-20, 15) and (-15, 20)"
+      "\\( (-15, 15) \\text{ and } (-20, 20) \\)",
+      "\\( (-20, 20) \\text{ and } (-15, 15) \\)",
+      "\\( (20, -15) \\text{ and } (15, -20) \\)",
+      "\\( (-20, 15) \\text{ and } (-15, 20) \\)"
     ]
   },
   {
@@ -5898,6 +6533,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 42 \\) and the circle \\( x^2 + y^2 = 900 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 42 \\) into \\( x^2+y^2=900 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 42)^2 = 900\\)",
@@ -5919,16 +6559,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 42 \\) into \\( x^2+y^2=900 \\) gives \\( x^2 + 42x + 432 = 0 \\), which factors as \\( (x+18)(x+24)=0 \\), so \\( x=-18 \\) or \\( x=-24 \\), giving the points (-24, 18) and (-18, 24).",
+        "explanation": "This gives \\( x^2 + 42x + 432 = 0 \\), which factors as \\( (x+18)(x+24)=0 \\), so \\( x=-18 \\) or \\( x=-24 \\), giving \\( (-24, 18) \\text{ and } (-18, 24) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(24, -18) and (18, -24)",
-      "(-24, 24) and (-18, 18)",
-      "(-18, 18) and (-24, 24)",
-      "(-24, 18) and (-18, 24)"
+      "\\( (24, -18) \\text{ and } (18, -24) \\)",
+      "\\( (-24, 24) \\text{ and } (-18, 18) \\)",
+      "\\( (-18, 18) \\text{ and } (-24, 24) \\)",
+      "\\( (-24, 18) \\text{ and } (-18, 24) \\)"
     ]
   },
   {
@@ -5940,6 +6580,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 49 \\) and the circle \\( x^2 + y^2 = 1225 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 49 \\) into \\( x^2+y^2=1225 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 49)^2 = 1225\\)",
@@ -5961,16 +6606,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 49 \\) into \\( x^2+y^2=1225 \\) gives \\( x^2 + 49x + 588 = 0 \\), which factors as \\( (x+21)(x+28)=0 \\), so \\( x=-21 \\) or \\( x=-28 \\), giving the points (-28, 21) and (-21, 28).",
+        "explanation": "This gives \\( x^2 + 49x + 588 = 0 \\), which factors as \\( (x+21)(x+28)=0 \\), so \\( x=-21 \\) or \\( x=-28 \\), giving \\( (-28, 21) \\text{ and } (-21, 28) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-28, 28) and (-21, 21)",
-      "(28, -21) and (21, -28)",
-      "(-21, 21) and (-28, 28)",
-      "(-28, 21) and (-21, 28)"
+      "\\( (-28, 28) \\text{ and } (-21, 21) \\)",
+      "\\( (28, -21) \\text{ and } (21, -28) \\)",
+      "\\( (-21, 21) \\text{ and } (-28, 28) \\)",
+      "\\( (-28, 21) \\text{ and } (-21, 28) \\)"
     ]
   },
   {
@@ -5982,6 +6627,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 56 \\) and the circle \\( x^2 + y^2 = 1600 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 56 \\) into \\( x^2+y^2=1600 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 56)^2 = 1600\\)",
@@ -6003,16 +6653,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 56 \\) into \\( x^2+y^2=1600 \\) gives \\( x^2 + 56x + 768 = 0 \\), which factors as \\( (x+24)(x+32)=0 \\), so \\( x=-24 \\) or \\( x=-32 \\), giving the points (-32, 24) and (-24, 32).",
+        "explanation": "This gives \\( x^2 + 56x + 768 = 0 \\), which factors as \\( (x+24)(x+32)=0 \\), so \\( x=-24 \\) or \\( x=-32 \\), giving \\( (-32, 24) \\text{ and } (-24, 32) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(32, -24) and (24, -32)",
-      "(-32, 32) and (-24, 24)",
-      "(-24, 24) and (-32, 32)",
-      "(-32, 24) and (-24, 32)"
+      "\\( (32, -24) \\text{ and } (24, -32) \\)",
+      "\\( (-32, 32) \\text{ and } (-24, 24) \\)",
+      "\\( (-24, 24) \\text{ and } (-32, 32) \\)",
+      "\\( (-32, 24) \\text{ and } (-24, 32) \\)"
     ]
   },
   {
@@ -6024,6 +6674,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 63 \\) and the circle \\( x^2 + y^2 = 2025 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 63 \\) into \\( x^2+y^2=2025 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 63)^2 = 2025\\)",
@@ -6045,16 +6700,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 63 \\) into \\( x^2+y^2=2025 \\) gives \\( x^2 + 63x + 972 = 0 \\), which factors as \\( (x+27)(x+36)=0 \\), so \\( x=-27 \\) or \\( x=-36 \\), giving the points (-36, 27) and (-27, 36).",
+        "explanation": "This gives \\( x^2 + 63x + 972 = 0 \\), which factors as \\( (x+27)(x+36)=0 \\), so \\( x=-27 \\) or \\( x=-36 \\), giving \\( (-36, 27) \\text{ and } (-27, 36) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(36, -27) and (27, -36)",
-      "(-36, 36) and (-27, 27)",
-      "(-27, 27) and (-36, 36)",
-      "(-36, 27) and (-27, 36)"
+      "\\( (36, -27) \\text{ and } (27, -36) \\)",
+      "\\( (-36, 36) \\text{ and } (-27, 27) \\)",
+      "\\( (-27, 27) \\text{ and } (-36, 36) \\)",
+      "\\( (-36, 27) \\text{ and } (-27, 36) \\)"
     ]
   },
   {
@@ -6066,6 +6721,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the coordinates of the two points of intersection of the line \\( y = x + 70 \\) and the circle \\( x^2 + y^2 = 2500 \\). (Format: '(-3, 4) and (-4, 3)' or similar, enter coordinates ordered by increasing x)",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: substitute \\( y = x + 70 \\) into \\( x^2+y^2=2500 \\) to get a quadratic in \\( x \\), then factorise and solve.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Substitute the linear equation into the circle equation.",
         "workingOut": "\\(x^2 + (x + 70)^2 = 2500\\)",
@@ -6087,16 +6747,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "Substituting \\( y = x + 70 \\) into \\( x^2+y^2=2500 \\) gives \\( x^2 + 70x + 1200 = 0 \\), which factors as \\( (x+30)(x+40)=0 \\), so \\( x=-30 \\) or \\( x=-40 \\), giving the points (-40, 30) and (-30, 40).",
+        "explanation": "This gives \\( x^2 + 70x + 1200 = 0 \\), which factors as \\( (x+30)(x+40)=0 \\), so \\( x=-30 \\) or \\( x=-40 \\), giving \\( (-40, 30) \\text{ and } (-30, 40) \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "(-30, 30) and (-40, 40)",
-      "(40, -30) and (30, -40)",
-      "(-40, 40) and (-30, 30)",
-      "(-40, 30) and (-30, 40)"
+      "\\( (-30, 30) \\text{ and } (-40, 40) \\)",
+      "\\( (40, -30) \\text{ and } (30, -40) \\)",
+      "\\( (-40, 40) \\text{ and } (-30, 30) \\)",
+      "\\( (-40, 30) \\text{ and } (-30, 40) \\)"
     ]
   },
   {
@@ -6114,6 +6774,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{4} + \\frac{y^2}{9} = 1 \\implies \\frac{x^2}{4} + \\frac{y^2}{9} = 1\\)",
@@ -6152,6 +6817,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{16} + \\frac{y^2}{36} = 1 \\implies \\frac{x^2}{16} + \\frac{y^2}{36} = 1\\)",
         "graphData": null
@@ -6188,6 +6858,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{36} + \\frac{y^2}{81} = 1 \\implies \\frac{x^2}{36} + \\frac{y^2}{81} = 1\\)",
@@ -6226,6 +6901,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{64} + \\frac{y^2}{144} = 1 \\implies \\frac{x^2}{64} + \\frac{y^2}{144} = 1\\)",
         "graphData": null
@@ -6262,6 +6942,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{100} + \\frac{y^2}{225} = 1 \\implies \\frac{x^2}{100} + \\frac{y^2}{225} = 1\\)",
@@ -6300,6 +6985,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{144} + \\frac{y^2}{324} = 1 \\implies \\frac{x^2}{144} + \\frac{y^2}{324} = 1\\)",
         "graphData": null
@@ -6336,6 +7026,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{196} + \\frac{y^2}{441} = 1 \\implies \\frac{x^2}{196} + \\frac{y^2}{441} = 1\\)",
@@ -6374,6 +7069,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{256} + \\frac{y^2}{576} = 1 \\implies \\frac{x^2}{256} + \\frac{y^2}{576} = 1\\)",
         "graphData": null
@@ -6410,6 +7110,11 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "a": "0",
     "solutionSteps": [
+      {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{324} + \\frac{y^2}{729} = 1 \\implies \\frac{x^2}{324} + \\frac{y^2}{729} = 1\\)",
@@ -6448,6 +7153,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "0",
     "solutionSteps": [
       {
+        "explanation": "General rule: a curve is symmetric about the \\(y\\)-axis if replacing \\(x\\) with \\(-x\\) leaves the equation unchanged; about the \\(x\\)-axis if replacing \\(y\\) with \\(-y\\) leaves it unchanged; about the origin if replacing both does.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Test for symmetry about the y-axis by substituting -x for x.",
         "workingOut": "\\(\\frac{(-x)^2}{400} + \\frac{y^2}{900} = 1 \\implies \\frac{x^2}{400} + \\frac{y^2}{900} = 1\\)",
         "graphData": null
@@ -6479,6 +7189,11 @@ export const Y11_CH3B_QUESTIONS = [
     "a": "3",
     "solutionSteps": [
       {
+        "explanation": "General method: \\( f(x) = 2 - \\sqrt{4 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(4 - x^2 \\ge 0 \\implies x^2 \\le 4 \\implies -2 \\le x \\le 2\\)",
         "graphData": null
@@ -6499,16 +7214,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 2 - \\sqrt{4 - x^2} \\) attains its minimum \\( 0 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 2 \\) when the square root is \\( 0 \\) (at \\( x=\\pm2 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(2\\), so \\(f\\) ranges from \\(2-2=0\\) to \\(2-0=2\\): \\( 0 \\leq y \\leq 2 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "0 <= y <= 4",
-      "1 <= y <= 3",
-      "-2 <= y <= 2",
-      "0 <= y <= 2"
+      "\\( 0 \\leq y \\leq 4 \\)",
+      "\\( 1 \\leq y \\leq 3 \\)",
+      "\\( -2 \\leq y \\leq 2 \\)",
+      "\\( 0 \\leq y \\leq 2 \\)"
     ]
   },
   {
@@ -6520,6 +7235,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 4 - \\sqrt{9 - x^2} \\). (Format: '1 <= y <= 4')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 4 - \\sqrt{9 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(9 - x^2 \\ge 0 \\implies x^2 \\le 9 \\implies -3 \\le x \\le 3\\)",
@@ -6541,16 +7261,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 4 - \\sqrt{9 - x^2} \\) attains its minimum \\( 1 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 4 \\) when the square root is \\( 0 \\) (at \\( x=\\pm3 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(3\\), so \\(f\\) ranges from \\(4-3=1\\) to \\(4-0=4\\): \\( 1 \\leq y \\leq 4 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "2 <= y <= 5",
-      "1 <= y <= 6",
-      "-3 <= y <= 3",
-      "1 <= y <= 4"
+      "\\( 2 \\leq y \\leq 5 \\)",
+      "\\( 1 \\leq y \\leq 6 \\)",
+      "\\( -3 \\leq y \\leq 3 \\)",
+      "\\( 1 \\leq y \\leq 4 \\)"
     ]
   },
   {
@@ -6562,6 +7282,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 6 - \\sqrt{16 - x^2} \\). (Format: '2 <= y <= 6')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 6 - \\sqrt{16 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(16 - x^2 \\ge 0 \\implies x^2 \\le 16 \\implies -4 \\le x \\le 4\\)",
@@ -6583,16 +7308,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 6 - \\sqrt{16 - x^2} \\) attains its minimum \\( 2 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 6 \\) when the square root is \\( 0 \\) (at \\( x=\\pm4 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(4\\), so \\(f\\) ranges from \\(6-4=2\\) to \\(6-0=6\\): \\( 2 \\leq y \\leq 6 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "2 <= y <= 8",
-      "-4 <= y <= 4",
-      "3 <= y <= 7",
-      "2 <= y <= 6"
+      "\\( 2 \\leq y \\leq 8 \\)",
+      "\\( -4 \\leq y \\leq 4 \\)",
+      "\\( 3 \\leq y \\leq 7 \\)",
+      "\\( 2 \\leq y \\leq 6 \\)"
     ]
   },
   {
@@ -6604,6 +7329,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 8 - \\sqrt{25 - x^2} \\). (Format: '3 <= y <= 8')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 8 - \\sqrt{25 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(25 - x^2 \\ge 0 \\implies x^2 \\le 25 \\implies -5 \\le x \\le 5\\)",
@@ -6625,16 +7355,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 8 - \\sqrt{25 - x^2} \\) attains its minimum \\( 3 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 8 \\) when the square root is \\( 0 \\) (at \\( x=\\pm5 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(5\\), so \\(f\\) ranges from \\(8-5=3\\) to \\(8-0=8\\): \\( 3 \\leq y \\leq 8 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "3 <= y <= 10",
-      "-5 <= y <= 5",
-      "4 <= y <= 9",
-      "3 <= y <= 8"
+      "\\( 3 \\leq y \\leq 10 \\)",
+      "\\( -5 \\leq y \\leq 5 \\)",
+      "\\( 4 \\leq y \\leq 9 \\)",
+      "\\( 3 \\leq y \\leq 8 \\)"
     ]
   },
   {
@@ -6646,6 +7376,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 10 - \\sqrt{36 - x^2} \\). (Format: '4 <= y <= 10')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 10 - \\sqrt{36 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(36 - x^2 \\ge 0 \\implies x^2 \\le 36 \\implies -6 \\le x \\le 6\\)",
@@ -6667,16 +7402,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 10 - \\sqrt{36 - x^2} \\) attains its minimum \\( 4 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 10 \\) when the square root is \\( 0 \\) (at \\( x=\\pm6 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(6\\), so \\(f\\) ranges from \\(10-6=4\\) to \\(10-0=10\\): \\( 4 \\leq y \\leq 10 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "-6 <= y <= 6",
-      "4 <= y <= 12",
-      "5 <= y <= 11",
-      "4 <= y <= 10"
+      "\\( -6 \\leq y \\leq 6 \\)",
+      "\\( 4 \\leq y \\leq 12 \\)",
+      "\\( 5 \\leq y \\leq 11 \\)",
+      "\\( 4 \\leq y \\leq 10 \\)"
     ]
   },
   {
@@ -6688,6 +7423,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 12 - \\sqrt{49 - x^2} \\). (Format: '5 <= y <= 12')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 12 - \\sqrt{49 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(49 - x^2 \\ge 0 \\implies x^2 \\le 49 \\implies -7 \\le x \\le 7\\)",
@@ -6709,16 +7449,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 12 - \\sqrt{49 - x^2} \\) attains its minimum \\( 5 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 12 \\) when the square root is \\( 0 \\) (at \\( x=\\pm7 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(7\\), so \\(f\\) ranges from \\(12-7=5\\) to \\(12-0=12\\): \\( 5 \\leq y \\leq 12 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "5 <= y <= 14",
-      "-7 <= y <= 7",
-      "6 <= y <= 13",
-      "5 <= y <= 12"
+      "\\( 5 \\leq y \\leq 14 \\)",
+      "\\( -7 \\leq y \\leq 7 \\)",
+      "\\( 6 \\leq y \\leq 13 \\)",
+      "\\( 5 \\leq y \\leq 12 \\)"
     ]
   },
   {
@@ -6730,6 +7470,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 14 - \\sqrt{64 - x^2} \\). (Format: '6 <= y <= 14')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 14 - \\sqrt{64 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(64 - x^2 \\ge 0 \\implies x^2 \\le 64 \\implies -8 \\le x \\le 8\\)",
@@ -6751,16 +7496,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 14 - \\sqrt{64 - x^2} \\) attains its minimum \\( 6 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 14 \\) when the square root is \\( 0 \\) (at \\( x=\\pm8 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(8\\), so \\(f\\) ranges from \\(14-8=6\\) to \\(14-0=14\\): \\( 6 \\leq y \\leq 14 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "-8 <= y <= 8",
-      "7 <= y <= 15",
-      "6 <= y <= 16",
-      "6 <= y <= 14"
+      "\\( -8 \\leq y \\leq 8 \\)",
+      "\\( 7 \\leq y \\leq 15 \\)",
+      "\\( 6 \\leq y \\leq 16 \\)",
+      "\\( 6 \\leq y \\leq 14 \\)"
     ]
   },
   {
@@ -6772,6 +7517,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 16 - \\sqrt{81 - x^2} \\). (Format: '7 <= y <= 16')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 16 - \\sqrt{81 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(81 - x^2 \\ge 0 \\implies x^2 \\le 81 \\implies -9 \\le x \\le 9\\)",
@@ -6793,16 +7543,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 16 - \\sqrt{81 - x^2} \\) attains its minimum \\( 7 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 16 \\) when the square root is \\( 0 \\) (at \\( x=\\pm9 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(9\\), so \\(f\\) ranges from \\(16-9=7\\) to \\(16-0=16\\): \\( 7 \\leq y \\leq 16 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "8 <= y <= 17",
-      "-9 <= y <= 9",
-      "7 <= y <= 18",
-      "7 <= y <= 16"
+      "\\( 8 \\leq y \\leq 17 \\)",
+      "\\( -9 \\leq y \\leq 9 \\)",
+      "\\( 7 \\leq y \\leq 18 \\)",
+      "\\( 7 \\leq y \\leq 16 \\)"
     ]
   },
   {
@@ -6814,6 +7564,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 18 - \\sqrt{100 - x^2} \\). (Format: '8 <= y <= 18')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 18 - \\sqrt{100 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(100 - x^2 \\ge 0 \\implies x^2 \\le 100 \\implies -10 \\le x \\le 10\\)",
@@ -6835,16 +7590,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 18 - \\sqrt{100 - x^2} \\) attains its minimum \\( 8 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 18 \\) when the square root is \\( 0 \\) (at \\( x=\\pm10 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(10\\), so \\(f\\) ranges from \\(18-10=8\\) to \\(18-0=18\\): \\( 8 \\leq y \\leq 18 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "9 <= y <= 19",
-      "-10 <= y <= 10",
-      "8 <= y <= 20",
-      "8 <= y <= 18"
+      "\\( 9 \\leq y \\leq 19 \\)",
+      "\\( -10 \\leq y \\leq 10 \\)",
+      "\\( 8 \\leq y \\leq 20 \\)",
+      "\\( 8 \\leq y \\leq 18 \\)"
     ]
   },
   {
@@ -6856,6 +7611,11 @@ export const Y11_CH3B_QUESTIONS = [
     "question": "Find the range of the function \\( f(x) = 20 - \\sqrt{121 - x^2} \\). (Format: '9 <= y <= 20')",
     "a": "3",
     "solutionSteps": [
+      {
+        "explanation": "General method: \\( f(x) = 20 - \\sqrt{121 - x^2} \\) is smallest when the square-root term is largest, and largest when the square-root term is \\(0\\).",
+        "workingOut": "",
+        "graphData": null
+      },
       {
         "explanation": "Determine the domain of the function based on the radicand definition.",
         "workingOut": "\\(121 - x^2 \\ge 0 \\implies x^2 \\le 121 \\implies -11 \\le x \\le 11\\)",
@@ -6877,16 +7637,16 @@ export const Y11_CH3B_QUESTIONS = [
         "graphData": null
       },
       {
-        "explanation": "\\( f(x) = 20 - \\sqrt{121 - x^2} \\) attains its minimum \\( 9 \\) when the square root is largest (at \\( x=0 \\)), and its maximum \\( 20 \\) when the square root is \\( 0 \\) (at \\( x=\\pm11 \\)).",
+        "explanation": "The square root ranges from \\(0\\) to \\(11\\), so \\(f\\) ranges from \\(20-11=9\\) to \\(20-0=20\\): \\( 9 \\leq y \\leq 20 \\).",
         "workingOut": "",
         "graphData": null
       }
     ],
     "opts": [
-      "9 <= y <= 22",
-      "10 <= y <= 21",
-      "-11 <= y <= 11",
-      "9 <= y <= 20"
+      "\\( 9 \\leq y \\leq 22 \\)",
+      "\\( 10 \\leq y \\leq 21 \\)",
+      "\\( -11 \\leq y \\leq 11 \\)",
+      "\\( 9 \\leq y \\leq 20 \\)"
     ]
   }
 ];
