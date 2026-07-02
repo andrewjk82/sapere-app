@@ -2991,19 +2991,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 2,
     "options": [
       {
-        "text": "\\\\(3\\\\sqrt{3} + 2\\\\sqrt{2} \\\\implies a = 3\\\\)",
+        "text": "\\\\(a = 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(4\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies a = 3\\\\)",
+        "text": "\\\\(a = 4\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(3\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies a = 3\\\\)",
+        "text": "\\\\(a = 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\(2\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies a = 3\\\\)",
+        "text": "\\\\(a = 1\\\\)",
         "imageUrl": ""
       }
     ],
@@ -3043,19 +3043,19 @@ export const Y11A_CH2D_QUESTIONS = [
     "answer": 3,
     "options": [
       {
-        "text": "\\\\((5 - 2)\\\\sqrt{3} - (-5 + 3)\\\\sqrt{2} = 3\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies b = -2\\\\)",
+        "text": "\\\\(b = 2\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((5 - 2)\\\\sqrt{4} + (-5 + 3)\\\\sqrt{2} = 3\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies b = -2\\\\)",
+        "text": "\\\\(b = -3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((5 - 2)\\\\sqrt{2} + (-5 + 3)\\\\sqrt{2} = 3\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies b = -2\\\\)",
+        "text": "\\\\(b = 3\\\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\\\((5 - 2)\\\\sqrt{3} + (-5 + 3)\\\\sqrt{2} = 3\\\\sqrt{3} - 2\\\\sqrt{2} \\\\implies b = -2\\\\)",
+        "text": "\\\\(b = -2\\\\)",
         "imageUrl": ""
       }
     ],
