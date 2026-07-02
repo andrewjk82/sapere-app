@@ -20,7 +20,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Rational; \\\\(\\\\frac{7}{1}\\\\)",
+        "text": "Rational; \\\\(7\\\\)",
         "imageUrl": ""
       }
     ],
@@ -124,7 +124,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Rational; \\\\(\\\\frac{3}{1}\\\\)",
+        "text": "Rational; \\\\(3\\\\)",
         "imageUrl": ""
       }
     ],
@@ -280,7 +280,7 @@ export const Y11A_CH2E_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Rational; \\\\(\\\\frac{2}{1}\\\\)",
+        "text": "Rational; \\\\(2\\\\)",
         "imageUrl": ""
       }
     ],
