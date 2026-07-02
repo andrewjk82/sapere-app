@@ -1740,11 +1740,16 @@ export const FORTST_2020_QUESTIONS = [
     "c": "3A",
     "t": "Functions and function notation",
     "source": "Fort Street 2020 Trial Q17(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "q": "A tank holds water $V = 3600\\left(1 - \\dfrac{t}{60}\\right)^2$ litres ($0 \\le t \\le 60$). What volume remains after $10$ minutes?",
-    "a": "$2500$ litres",
-    "opts": [],
+    "a": "0",
+    "opts": [
+      "$2500$ litres",
+      "$3000$ litres",
+      "$2000$ litres",
+      "$1600$ litres"
+    ],
     "h": "Substitute $t = 10$ into the model.",
     "s": "$V = 3600\\left(1 - \\frac{10}{60}\\right)^2 = 3600\\left(\\frac{5}{6}\\right)^2 = 3600\\cdot\\frac{25}{36} = 2500$ litres.",
     "solutionSteps": [
