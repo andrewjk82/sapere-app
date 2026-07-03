@@ -3740,7 +3740,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{1x + 3}{5x - 1} \\).",
-    "a": "2",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -3774,10 +3774,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{3}{5} \\)",
-      "\\( y \\neq -\\frac{1}{5} \\)",
       "\\( y \\neq \\frac{1}{5} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{5}{1} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{3}{5} \\)"
     ]
   },
   {
@@ -3787,7 +3787,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{2x + 4}{6x - 2} \\).",
-    "a": "1",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -3821,10 +3821,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{4}{6} \\)",
       "\\( y \\neq \\frac{2}{6} \\)",
-      "\\( y \\neq -\\frac{2}{6} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{4}{6} \\)",
+      "\\( y \\neq \\frac{6}{2} \\)"
     ]
   },
   {
@@ -3834,7 +3834,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{3x + 5}{7x - 3} \\).",
-    "a": "0",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -3868,9 +3868,9 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{3}{7} \\)",
       "\\( y \\neq \\frac{5}{7} \\)",
-      "\\( y \\neq -\\frac{3}{7} \\)",
+      "\\( y \\neq \\frac{7}{3} \\)",
+      "\\( y \\neq \\frac{3}{7} \\)",
       "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
@@ -3881,7 +3881,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{4x + 6}{8x - 4} \\).",
-    "a": "0",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -3915,10 +3915,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{4}{8} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
       "\\( y \\neq \\frac{6}{8} \\)",
-      "\\( y \\neq -\\frac{4}{8} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{4}{8} \\)",
+      "\\( y \\neq \\frac{8}{4} \\)"
     ]
   },
   {
@@ -3962,9 +3962,9 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq -\\frac{5}{9} \\)",
-      "\\( y \\neq \\frac{5}{9} \\)",
       "\\( y \\neq \\frac{7}{9} \\)",
+      "\\( y \\neq \\frac{5}{9} \\)",
+      "\\( y \\neq \\frac{9}{5} \\)",
       "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
@@ -3975,7 +3975,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{6x + 8}{10x - 6} \\).",
-    "a": "0",
+    "a": "1",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -4009,10 +4009,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{6}{10} \\)",
-      "\\( y \\neq -\\frac{6}{10} \\)",
       "\\( y \\neq \\frac{8}{10} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{6}{10} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{10}{6} \\)"
     ]
   },
   {
@@ -4057,8 +4057,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "opts": [
       "\\( y \\neq \\frac{7}{11} \\)",
-      "\\( y \\neq -\\frac{7}{11} \\)",
       "\\( y \\neq \\frac{9}{11} \\)",
+      "\\( y \\neq \\frac{11}{7} \\)",
       "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
     ]
   },
@@ -4069,7 +4069,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{8x + 10}{12x - 8} \\).",
-    "a": "1",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -4103,10 +4103,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq -\\frac{8}{12} \\)",
       "\\( y \\neq \\frac{8}{12} \\)",
-      "\\( y \\neq \\frac{10}{12} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{12}{8} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{10}{12} \\)"
     ]
   },
   {
@@ -4116,7 +4116,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the range of the rational function \\( f(x) = \\frac{9x + 11}{13x - 9} \\).",
-    "a": "2",
+    "a": "3",
     "solutionSteps": [
       {
         "explanation": "General rule: for a rational function of the form \\( \\frac{ax+b}{cx+d} \\), the range excludes the horizontal asymptote \\( y = \\frac{a}{c} \\) (the ratio of the \\(x\\)-coefficients).",
@@ -4150,10 +4150,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{13}{9} \\)",
       "\\( y \\neq \\frac{11}{13} \\)",
-      "\\( y \\neq -\\frac{9}{13} \\)",
-      "\\( y \\neq \\frac{9}{13} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{9}{13} \\)"
     ]
   },
   {
@@ -4197,10 +4197,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( y \\neq \\frac{12}{14} \\)",
-      "\\( y \\neq -\\frac{10}{14} \\)",
+      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)",
+      "\\( y \\neq \\frac{14}{10} \\)",
       "\\( y \\neq \\frac{10}{14} \\)",
-      "\\( y \\in \\mathbb{R}\\ (\\text{all real } y) \\)"
+      "\\( y \\neq \\frac{12}{14} \\)"
     ]
   },
   {
@@ -5150,7 +5150,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 1} + 2 \\) and state its domain.",
-    "a": "3",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-1}+2 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5184,10 +5184,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\leq 2 \\)",
+      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\)",
       "\\( f^{-1}(x) = (x-1)^2+2,\\ \\ x \\geq 1 \\)",
-      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\geq 2 \\)"
+      "\\( f^{-1}(x) = (x-2)^2-1,\\ \\ x \\geq 2 \\)",
+      "\\( f^{-1}(x) = (x-2)^2+1,\\ \\ x \\in \\mathbb{R} \\)"
     ]
   },
   {
@@ -5231,9 +5231,9 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\leq 3 \\)",
       "\\( f^{-1}(x) = (x-2)^2+3,\\ \\ x \\geq 2 \\)",
+      "\\( f^{-1}(x) = (x-3)^2-2,\\ \\ x \\geq 3 \\)",
+      "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\in \\mathbb{R} \\)",
       "\\( f^{-1}(x) = (x-3)^2+2,\\ \\ x \\geq 3 \\)"
     ]
   },
@@ -5244,7 +5244,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 3} + 4 \\) and state its domain.",
-    "a": "3",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-3}+4 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5278,10 +5278,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\leq 4 \\)",
-      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\in \\mathbb{R} \\)",
       "\\( f^{-1}(x) = (x-3)^2+4,\\ \\ x \\geq 3 \\)",
-      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\)"
+      "\\( f^{-1}(x) = (x-4)^2-3,\\ \\ x \\geq 4 \\)",
+      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\geq 4 \\)",
+      "\\( f^{-1}(x) = (x-4)^2+3,\\ \\ x \\in \\mathbb{R} \\)"
     ]
   },
   {
@@ -5291,7 +5291,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 4} + 5 \\) and state its domain.",
-    "a": "3",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-4}+5 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5325,10 +5325,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-4)^2+5,\\ \\ x \\geq 4 \\)",
-      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\leq 5 \\)",
+      "\\( f^{-1}(x) = (x-5)^2-4,\\ \\ x \\geq 5 \\)",
       "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\)"
+      "\\( f^{-1}(x) = (x-5)^2+4,\\ \\ x \\geq 5 \\)",
+      "\\( f^{-1}(x) = (x-4)^2+5,\\ \\ x \\geq 4 \\)"
     ]
   },
   {
@@ -5338,7 +5338,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 5} + 6 \\) and state its domain.",
-    "a": "3",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-5}+6 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5373,9 +5373,9 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "opts": [
       "\\( f^{-1}(x) = (x-5)^2+6,\\ \\ x \\geq 5 \\)",
-      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\leq 6 \\)",
       "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\)"
+      "\\( f^{-1}(x) = (x-6)^2+5,\\ \\ x \\geq 6 \\)",
+      "\\( f^{-1}(x) = (x-6)^2-5,\\ \\ x \\geq 6 \\)"
     ]
   },
   {
@@ -5385,7 +5385,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 6} + 7 \\) and state its domain.",
-    "a": "3",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-6}+7 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5419,10 +5419,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\leq 7 \\)",
-      "\\( f^{-1}(x) = (x-6)^2+7,\\ \\ x \\geq 6 \\)",
+      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\)",
       "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-7)^2+6,\\ \\ x \\geq 7 \\)"
+      "\\( f^{-1}(x) = (x-7)^2-6,\\ \\ x \\geq 7 \\)",
+      "\\( f^{-1}(x) = (x-6)^2+7,\\ \\ x \\geq 6 \\)"
     ]
   },
   {
@@ -5432,7 +5432,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 7} + 8 \\) and state its domain.",
-    "a": "3",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-7}+8 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5466,10 +5466,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
-      "\\( f^{-1}(x) = (x-7)^2+8,\\ \\ x \\geq 7 \\)",
+      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\)",
       "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\leq 8 \\)",
-      "\\( f^{-1}(x) = (x-8)^2+7,\\ \\ x \\geq 8 \\)"
+      "\\( f^{-1}(x) = (x-7)^2+8,\\ \\ x \\geq 7 \\)",
+      "\\( f^{-1}(x) = (x-8)^2-7,\\ \\ x \\geq 8 \\)"
     ]
   },
   {
@@ -5479,7 +5479,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 8} + 9 \\) and state its domain.",
-    "a": "3",
+    "a": "0",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-8}+9 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5513,10 +5513,10 @@ export const Y11_CH3B_QUESTIONS = [
       }
     ],
     "opts": [
+      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\)",
+      "\\( f^{-1}(x) = (x-9)^2-8,\\ \\ x \\geq 9 \\)",
       "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-8)^2+9,\\ \\ x \\geq 8 \\)",
-      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\leq 9 \\)",
-      "\\( f^{-1}(x) = (x-9)^2+8,\\ \\ x \\geq 9 \\)"
+      "\\( f^{-1}(x) = (x-8)^2+9,\\ \\ x \\geq 8 \\)"
     ]
   },
   {
@@ -5526,7 +5526,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 9} + 10 \\) and state its domain.",
-    "a": "3",
+    "a": "1",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-9}+10 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5561,9 +5561,9 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "opts": [
       "\\( f^{-1}(x) = (x-9)^2+10,\\ \\ x \\geq 9 \\)",
+      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\)",
       "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\leq 10 \\)",
-      "\\( f^{-1}(x) = (x-10)^2+9,\\ \\ x \\geq 10 \\)"
+      "\\( f^{-1}(x) = (x-10)^2-9,\\ \\ x \\geq 10 \\)"
     ]
   },
   {
@@ -5573,7 +5573,7 @@ export const Y11_CH3B_QUESTIONS = [
     "timeLimit": 120,
     "t": "Functions, relations, and graphs",
     "question": "Find the inverse function \\( f^{-1}(x) \\) of \\( f(x) = \\sqrt{x - 10} + 11 \\) and state its domain.",
-    "a": "3",
+    "a": "2",
     "solutionSteps": [
       {
         "explanation": "General method: swap \\( x \\) and \\( y \\) in \\( y = \\sqrt{x-10}+11 \\), then solve for \\( y \\); restrict the domain of the inverse to the range of the original function.",
@@ -5608,9 +5608,9 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "opts": [
       "\\( f^{-1}(x) = (x-10)^2+11,\\ \\ x \\geq 10 \\)",
-      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\in \\mathbb{R} \\)",
-      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\leq 11 \\)",
-      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\)"
+      "\\( f^{-1}(x) = (x-11)^2-10,\\ \\ x \\geq 11 \\)",
+      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\geq 11 \\)",
+      "\\( f^{-1}(x) = (x-11)^2+10,\\ \\ x \\in \\mathbb{R} \\)"
     ]
   },
   {
