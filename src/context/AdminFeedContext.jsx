@@ -38,8 +38,15 @@ export const AdminFeedProvider = ({ children }) => {
   // Track which docs we've already seen so toasts only fire for *truly new*
   // items, not when an existing item is processed/removed (which would
   // otherwise make the next-in-line look "new" because the top id changed).
+  // The id set alone is NOT enough: the queries are limit()ed, so resolving
+  // one item slides an OLDER doc into the window whose id we've never seen.
+  // We also track the newest timestamp seen and require unseen docs to be
+  // strictly newer before toasting.
   const seenGradingIdsRef = useRef(null);
   const seenReportIdsRef = useRef(null);
+  const latestGradingTsRef = useRef(0);
+  const latestReportTsRef = useRef(0);
+  const tsMillis = (v) => (v && typeof v.toMillis === 'function' ? v.toMillis() : 0);
 
   useEffect(() => {
     if (!user?.uid || !isAdmin) {
@@ -65,11 +72,14 @@ export const AdminFeedProvider = ({ children }) => {
           // First snapshot — silent. Treat everything currently visible as
           // already-known.
           seenGradingIdsRef.current = new Set(items.map(i => i.id));
+          latestGradingTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.submittedAt)));
           return;
         }
         const seen = seenGradingIdsRef.current;
-        const fresh = items.filter(i => !seen.has(i.id));
+        const latestTs = latestGradingTsRef.current;
+        const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.submittedAt) > latestTs);
         for (const i of items) seen.add(i.id);
+        latestGradingTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.submittedAt)));
         if (fresh.length > 0) {
           const top = fresh[0];
           const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
@@ -94,11 +104,14 @@ export const AdminFeedProvider = ({ children }) => {
         if (snap.metadata.fromCache) return;
         if (seenReportIdsRef.current === null) {
           seenReportIdsRef.current = new Set(items.map(i => i.id));
+          latestReportTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.createdAt)));
           return;
         }
         const seen = seenReportIdsRef.current;
-        const fresh = items.filter(i => !seen.has(i.id));
+        const latestTs = latestReportTsRef.current;
+        const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.createdAt) > latestTs);
         for (const i of items) seen.add(i.id);
+        latestReportTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.createdAt)));
         if (fresh.length > 0) {
           const top = fresh[0];
           const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
