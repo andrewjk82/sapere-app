@@ -85,6 +85,20 @@ const JsxGraphDiagram = ({ data, style }) => {
         visible: false,
         withLabel: false,
       };
+      // Lines/arrows/segments/axes given raw coordinate arrays (as every seed
+      // script does, e.g. board.create('arrow', [[-5,0],[5,0]])) silently
+      // create their own invisible endpoint points under a SEPARATE options
+      // namespace (board.options.line.point1/point2) -- setting
+      // board.options.point above does not reach them, so those endpoints
+      // stayed draggable even with a per-call `fixed: true`. Lock them too.
+      const fixedEndpoint = { fixed: true, highlight: false, showInfobox: false, visible: false, withLabel: false };
+      ['line', 'arrow', 'segment', 'axis'].forEach((key) => {
+        board.options[key] = {
+          ...(board.options[key] || {}),
+          point1: { ...fixedEndpoint, ...(board.options[key]?.point1 || {}) },
+          point2: { ...fixedEndpoint, ...(board.options[key]?.point2 || {}) },
+        };
+      });
 
       // Create a gorgeous, faint grid to make the graph look professional
       if (data.grid !== false) {
