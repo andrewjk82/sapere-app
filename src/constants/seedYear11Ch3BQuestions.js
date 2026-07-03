@@ -37,7 +37,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -5,
           5,
@@ -92,7 +92,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -4,
           4,
@@ -147,7 +147,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 175,
         "boundingbox": [
           -6,
           3,
@@ -202,7 +202,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -4,
           4,
@@ -257,7 +257,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -6,
           6,
@@ -312,7 +312,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -2,
           2,
@@ -361,8 +361,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 250,
+        "width": 207,
+        "height": 380,
         "boundingbox": [
           -1,
           8,
@@ -410,7 +410,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 292,
         "boundingbox": [
           -6,
           4,
@@ -458,7 +458,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -2,
           5,
@@ -506,7 +506,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -3,
           5,
@@ -553,8 +553,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 250,
+        "width": 253,
+        "height": 380,
         "boundingbox": [
           -3,
           4.5,
@@ -602,7 +602,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -3,
           3,
@@ -650,7 +650,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -4,
           4,
@@ -698,7 +698,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 241,
         "boundingbox": [
           -4,
           4,
@@ -750,8 +750,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 250,
+        "width": 207,
+        "height": 380,
         "boundingbox": [
           -1,
           8,
@@ -806,7 +806,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 292,
         "boundingbox": [
           -6,
           4,
@@ -856,7 +856,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -2,
           5,
@@ -911,7 +911,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -3,
           5,
@@ -965,8 +965,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 250,
+        "width": 253,
+        "height": 380,
         "boundingbox": [
           -3,
           4.5,
@@ -1016,7 +1016,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -3,
           3,
@@ -1071,7 +1071,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -4,
           4,
@@ -1126,7 +1126,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 241,
         "boundingbox": [
           -4,
           4,
@@ -1780,7 +1780,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -5,
           5,
@@ -1830,7 +1830,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 255,
         "boundingbox": [
           -5,
           4,
@@ -1890,7 +1890,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 350,
-        "height": 250,
+        "height": 350,
         "boundingbox": [
           -1,
           6,
@@ -1939,8 +1939,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 250,
+        "width": 326,
+        "height": 380,
         "boundingbox": [
           -1,
           5,
@@ -2576,7 +2576,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 400,
-        "height": 300,
+        "height": 240,
         "boundingbox": [
           -1,
           5,
@@ -2688,7 +2688,7 @@ export const Y11_CH3B_QUESTIONS = [
     "graphData": {
       "jsxGraph": {
         "width": 400,
-        "height": 300,
+        "height": 229,
         "boundingbox": [
           -7,
           4,
@@ -2831,8 +2831,8 @@ export const Y11_CH3B_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 400,
-        "height": 300,
+        "width": 150,
+        "height": 380,
         "boundingbox": [
           -2,
           45,
