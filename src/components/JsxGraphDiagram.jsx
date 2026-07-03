@@ -100,6 +100,16 @@ const JsxGraphDiagram = ({ data, style }) => {
       board.create = (elementType, parents, attributes = {}) => {
         const type = String(elementType).toLowerCase();
 
+        // 0. Nothing in a diagram should be draggable -- axes, curves, labels
+        // and points are all illustrative, not interactive. Points already
+        // default to fixed via board.options.point below, but lines/arrows/
+        // curves/text have no such default in JSXGraph, so a click-drag on
+        // an axis or label would otherwise move it. Respect an explicit
+        // `fixed` from the seed script if one is given.
+        if (attributes.fixed === undefined) {
+          attributes = { ...attributes, fixed: true };
+        }
+
         // 1. Unified premium styling for curves and functions
         // Automatically extend function graph domain to bounding box edges
         if (type === 'functiongraph' || type === 'curve') {
