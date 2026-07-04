@@ -1848,16 +1848,50 @@ export const Y9_CH16G_QUESTIONS = [
         boundingbox: [-6, 7, 6, -7],
         keepaspectratio: true,
         elements: [
+          // Bottom ellipse front curve (solid)
+          {
+            type: 'curve',
+            x: '4 * Math.cos(t)',
+            y: '-4 + 1.2 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Bottom ellipse back curve (dashed)
+          {
+            type: 'curve',
+            x: '4 * Math.cos(t)',
+            y: '-4 + 1.2 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
+          // Top ellipse (full solid)
+          {
+            type: 'curve',
+            x: '4 * Math.cos(t)',
+            y: '4 + 1.2 * Math.sin(t)',
+            tRange: [0, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Vertical outer boundary lines
+          { type: 'point', id: 'S1', coords: [-4, -4], visible: false },
+          { type: 'point', id: 'S2', coords: [-4, 4], visible: false },
+          { type: 'point', id: 'S3', coords: [4, -4], visible: false },
+          { type: 'point', id: 'S4', coords: [4, 4], visible: false },
+          { type: 'segment', from: 'S1', to: 'S2', color: 'blue' },
+          { type: 'segment', from: 'S3', to: 'S4', color: 'blue' },
+
+          // Indicators & Labels
           { type: 'point', id: 'O1', coords: [0, 4], visible: false },
-          { type: 'point', id: 'O2', coords: [0, -4], visible: false },
           { type: 'point', id: 'R1', coords: [4, 4], visible: false },
           { type: 'segment', from: 'O1', to: 'R1', color: 'red', dash: 2 },
-          { type: 'text', coords: [1.5, 4.3], content: '5 cm' },
-          { type: 'point', id: 'H1', coords: [-4, 4], visible: false },
-          { type: 'point', id: 'H2', coords: [-4, -4], visible: false },
+          { type: 'text', coords: [1.5, 4.5], content: '5 cm' },
+          
+          { type: 'point', id: 'H1', coords: [-5, 4], visible: false },
+          { type: 'point', id: 'H2', coords: [-5, -4], visible: false },
           { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
           { type: 'arrow', from: 'H1', to: 'H2', bidirectional: true, color: 'red' },
-          { type: 'text', coords: [-5.2, 0], content: '10 cm' }
+          { type: 'text', coords: [-6.2, 0], content: '10 cm' }
         ]
       }
     },
@@ -2047,15 +2081,49 @@ export const Y9_CH16G_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16g-q11c-board',
-        boundingbox: [-4, 5, 8, -5],
+        boundingbox: [-3, 5, 8, -5],
         keepaspectratio: true,
         elements: [
+          // Left ellipse front curve (dashed/hidden)
+          {
+            type: 'curve',
+            x: '-1 + 0.6 * Math.cos(t)',
+            y: '2.6 * Math.sin(t)',
+            tRange: [Math.PI/2, 3*Math.PI/2],
+            color: 'blue',
+            dash: 2
+          },
+          // Left ellipse back curve (solid)
+          {
+            type: 'curve',
+            x: '-1 + 0.6 * Math.cos(t)',
+            y: '2.6 * Math.sin(t)',
+            tRange: [-Math.PI/2, Math.PI/2],
+            color: 'blue'
+          },
+          // Right ellipse (full solid)
+          {
+            type: 'curve',
+            x: '4 + 0.6 * Math.cos(t)',
+            y: '2.6 * Math.sin(t)',
+            tRange: [0, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Horizontal boundary lines
+          { type: 'point', id: 'S1', coords: [-1, 2.6], visible: false },
+          { type: 'point', id: 'S2', coords: [4, 2.6], visible: false },
+          { type: 'point', id: 'S3', coords: [-1, -2.6], visible: false },
+          { type: 'point', id: 'S4', coords: [4, -2.6], visible: false },
+          { type: 'segment', from: 'S1', to: 'S2', color: 'blue' },
+          { type: 'segment', from: 'S3', to: 'S4', color: 'blue' },
+
+          // Indicators & Labels
           { type: 'point', id: 'O1', coords: [-1, 0], visible: false },
-          { type: 'point', id: 'O2', coords: [4, 0], visible: false },
           { type: 'point', id: 'R1', coords: [-1, 2.6], visible: false },
           { type: 'segment', from: 'O1', to: 'R1', color: 'red', dash: 2 },
           { type: 'text', coords: [-0.6, 1.3], content: '2.6 cm' },
           { type: 'point', id: 'CenDot', coords: [-1, 0], color: 'red', size: 3 },
+          
           { type: 'point', id: 'H1', coords: [-1, -3.2], visible: false },
           { type: 'point', id: 'H2', coords: [4, -3.2], visible: false },
           { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
