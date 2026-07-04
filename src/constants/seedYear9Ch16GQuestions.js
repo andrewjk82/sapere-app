@@ -965,7 +965,7 @@ export const Y9_CH16G_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the area of the composite shape shown in the diagram:\\n\\n- Rectangular base: width = \\(6\\\\text{ cm}\\) (making semicircle radius \\(3\\\\text{ cm}\\)), height = \\(5\\\\text{ cm}\\)\\n- Semicircular top of radius \\(3\\\\text{ cm}\\)\\n\\n(Round to one decimal place.)',
+    question: 'Calculate the area of the composite shape shown in the diagram:\\n\\n- Rectangular base: width = \\(6\\\\text{ cm}\\) (making semicircle radius \\(3\\\\text{ cm}\\), height = \\(5\\\\text{ cm}\\)\\n- Semicircular top of radius \\(3\\\\text{ cm}\\)\\n\\n(Round to one decimal place.)',
     opts: [
       { text: '\\(44.1\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(58.3\\\\text{ cm}^2\\)', imageUrl: '' },
@@ -1158,7 +1158,7 @@ export const Y9_CH16G_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'A trapezoidal prism has the following dimensions for its cross-sectional front face:\\n- Parallel top side = \\(5\\\\text{ cm}\\), parallel bottom side = \\(14\\\\text{ cm}\\)\\n- Perpendicular height = \\(6\\\\text{ cm}\\), left slanted height = \\(8\\\\text{ cm}\\)\\n- Right slanted height = \\(10\\\\text{ cm}\\) (from Pythagoras: \\\\(h^2 + (14-5-r)^2 = 10^2\\\\))\\n- The prism has a length of \\(20\\\\text{ cm}\\).\\n\\nCalculate the total surface area of this solid.',
+    question: 'A trapezoidal prism has the following dimensions for its cross-sectional front face:\\n- Parallel top side = \\(5\\\\text{ cm}\\), parallel bottom side = \\(14\\\\text{ cm}\\)\\n- Perpendicular height = \\(6\\\\text{ cm}\\), left slanted height = \\(8\\\\text{ cm}\\)\\n- Right slanted height = \\(10\\\\text{ cm}\\)\\n- The prism has a length of \\(20\\\\text{ cm}\\).\\n\\nCalculate the total surface area of this solid.',
     opts: [
       { text: '\\(894\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(780\\\\text{ cm}^2\\)', imageUrl: '' },
@@ -1168,7 +1168,28 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Total Surface Area = 2 * (area of trapezoid base) + perimeter * length.',
     solution: 'Calculate front trapezoid area:\\n\\[A_{\\\\text{base}} = \\\\frac{1}{2} \\\\times (5 + 14) \\\\times 6 = 57\\\\text{ cm}^2\\]\\nCalculate perimeter of the base:\\n\\[P = 5 + 14 + 8 + 10 = 37\\\\text{ cm}\\]\\nCalculate total surface area:\\n\\[\\\\text{TSA} = 2 \\\\times A_{\\\\text{base}} + P \\\\times L = 2 \\\\times 57 + 37 \\\\times 20 = 114 + 740 = 894\\\\text{ cm}^2\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q5ai-board',
+        boundingbox: [-2, 8, 16, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [14, 0], visible: false },
+          { type: 'point', id: 'C', coords: [9, 6], visible: false },
+          { type: 'point', id: 'D', coords: [4, 6], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H1', coords: [4, 0], visible: false },
+          { type: 'segment', from: 'D', to: 'H1', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['D', 'H1', 'B'], size: 0.35 },
+          { type: 'text', coords: [6.5, 6.4], content: '5 cm' },
+          { type: 'text', coords: [7.0, -0.5], content: '14 cm' },
+          { type: 'text', coords: [4.4, 3.0], content: '6 cm' },
+          { type: 'text', coords: [1.5, 3.4], content: '8 cm' },
+          { type: 'text', coords: [11.8, 3.4], content: '10 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the area of the two trapezoidal base faces.',
@@ -1215,7 +1236,28 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Volume = base area * length.',
     solution: 'Calculate front trapezoid area:\\n\\[A_{\\\\text{base}} = \\\\frac{1}{2} \\\\times (5 + 14) \\\\times 6 = 57\\\\text{ cm}^2\\]\\nCalculate volume:\\n\\[V = A_{\\\\text{base}} \\\\times L = 57 \\\\times 20 = 1140\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q5aii-board',
+        boundingbox: [-2, 8, 16, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [14, 0], visible: false },
+          { type: 'point', id: 'C', coords: [9, 6], visible: false },
+          { type: 'point', id: 'D', coords: [4, 6], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H1', coords: [4, 0], visible: false },
+          { type: 'segment', from: 'D', to: 'H1', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['D', 'H1', 'B'], size: 0.35 },
+          { type: 'text', coords: [6.5, 6.4], content: '5 cm' },
+          { type: 'text', coords: [7.0, -0.5], content: '14 cm' },
+          { type: 'text', coords: [4.4, 3.0], content: '6 cm' },
+          { type: 'text', coords: [1.5, 3.4], content: '8 cm' },
+          { type: 'text', coords: [11.8, 3.4], content: '10 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the cross-sectional area of the trapezoidal face.',
@@ -1257,7 +1299,26 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'TSA = 2 * (area of parallelogram) + perimeter of base * length.',
     solution: 'Calculate base area:\\n\\[A_{\\\\text{base}} = 20 \\\\times 5 = 100\\\\text{ cm}^2\\]\\nCalculate base perimeter:\\n\\[P = 2 \\\\times (20 + 12) = 64\\\\text{ cm}\\]\\nCalculate total surface area:\\n\\[\\\\text{TSA} = 2 \\\\times A_{\\\\text{base}} + P \\\\times L = 2 \\\\times 100 + 64 \\\\times 12 = 200 + 768 = 968\\\\text{ cm}^2\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q5bi-board',
+        boundingbox: [-1, 7, 24, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [20, 0], visible: false },
+          { type: 'point', id: 'C', coords: [23, 4.8], visible: false },
+          { type: 'point', id: 'D', coords: [3, 4.8], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H1', coords: [3, 0], visible: false },
+          { type: 'segment', from: 'D', to: 'H1', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['D', 'H1', 'B'], size: 0.5 },
+          { type: 'text', coords: [10, -0.5], content: '20 cm' },
+          { type: 'text', coords: [22.0, 2.4], content: '12 cm' },
+          { type: 'text', coords: [3.5, 2.4], content: '5 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the area of the parallelogram cross-sections.',
@@ -1304,7 +1365,26 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Volume = base area * length.',
     solution: 'Calculate base area:\\n\\[A_{\\\\text{base}} = 20 \\\\times 5 = 100\\\\text{ cm}^2\\]\\nCalculate volume:\\n\\[V = A_{\\\\text{base}} \\\\times L = 100 \\\\times 12 = 1200\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q5bii-board',
+        boundingbox: [-1, 7, 24, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [20, 0], visible: false },
+          { type: 'point', id: 'C', coords: [23, 4.8], visible: false },
+          { type: 'point', id: 'D', coords: [3, 4.8], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H1', coords: [3, 0], visible: false },
+          { type: 'segment', from: 'D', to: 'H1', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['D', 'H1', 'B'], size: 0.5 },
+          { type: 'text', coords: [10, -0.5], content: '20 cm' },
+          { type: 'text', coords: [22.0, 2.4], content: '12 cm' },
+          { type: 'text', coords: [3.5, 2.4], content: '5 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the base area using the formula Base * Height.',
@@ -1347,7 +1427,25 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Volume = area of triangle base * length.',
     solution: 'Calculate triangular base area:\\n\\[A_{\\\\text{tri}} = \\\\frac{1}{2} \\\\times 4 \\\\times 3 = 6\\\\text{ cm}^2\\]\\nCalculate volume:\\n\\[V = A_{\\\\text{tri}} \\\\times L = 6 \\\\times 6 = 36\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q6a-board',
+        boundingbox: [-2, 5, 8, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [4, 0], visible: false },
+          { type: 'point', id: 'C', coords: [2, 3], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H', coords: [2, 0], visible: false },
+          { type: 'segment', from: 'C', to: 'H', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['C', 'H', 'B'], size: 0.25 },
+          { type: 'text', coords: [2.0, -0.4], content: '4 cm' },
+          { type: 'text', coords: [2.3, 1.5], content: '3 cm' },
+          { type: 'text', coords: [5.2, 0.4], content: '6 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the cross-sectional area of the front triangle.',
@@ -1381,15 +1479,6 @@ export const Y9_CH16G_QUESTIONS = [
     type: 'multiple_choice',
     question: 'For the triangular prism shown in the diagram, find the total surface area:\\n\\n- Front triangular face: base = \\(4\\\\text{ cm}\\), vertical height = \\(3\\\\text{ cm}\\) (making the two equal slanted edges \\\\(\\n\\\\sqrt{2^2 + 3^2} = \\\\sqrt{13} \\\\approx 3.61\\\\text{ cm}\\\\))\\n- Length of prism = \\(6\\\\text{ cm}\\)\\n\\n(Round to one decimal place.)',
     opts: [
-      { text: '\\(67.3\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(55.3\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(72.0\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(60.0\\\\text{ cm}^2\\)', imageUrl: '' }
-    ],
-    answer: 0,
-    hint: 'TSA = 2 * (area of triangle) + bottom rectangle + 2 * slanted side rectangles.',
-    solution: 'Calculate dimensions and areas:\\n- Base triangle area: \\(2 \\\\times [\\\\frac{1}{2} \\\\times 4 \\\\times 3] = 12\\\\text{ cm}^2\\)\\n- Slanted side lengths: \\(s = \\\\sqrt{2^2 + 3^2} = \\\\sqrt{13} \\\\approx 3.61\\\\text{ cm}\\)\\n- Areas of rectangles: bottom = \\(4 \\\\times 6 = 24\\\\text{ cm}^2\\), sides = \\(2 \\\\times (3.61 \\\\times 6) \\\\approx 43.32\\\\text{ cm}^2\\)\\n- Total Surface Area:\\n  \\[\\\\text{TSA} = 12 + 24 + 43.32 = 79.32\\\\text{ cm}^2 \\\\quad \\\\text{(Note: if using base sides 20, 12, etc, TSA formula applies.)}\\]\\nWait, let us recalculate: base perimeter is \\(4 + 3.61 + 3.61 = 11.22\\\\text{ cm}\\). Area of sides = \\(11.22 \\\\times 6 = 67.3\\\\text{ cm}^2\\). Total Surface Area = \\(2 \\\\times 6 + 11.22 \\\\times 6 = 12 + 67.32 = 79.3\\\\text{ cm}^2\\). Wait, does the diagram show slanted sides? The triangle has vertical height 3, base 4. If it is isosceles, the slanted sides are \\(\\sqrt{13} \\\\approx 3.61\\). Let us use: TSA = 2 * 6 (front/back) + 4 * 6 (bottom) + 2 * (3.61 * 6) = 12 + 24 + 43.3 = 79.3. If we do not include the bottom (open A-frame tent): TSA = 12 + 43.3 = 55.3. Let us assume a solid closed prism: TSA = 12 + 24 + 43.3 = 79.3 cm^2. Wait, let us check options: 79.3 (not in opts). Let us adjust options to match: 79.3 cm^2.',
-    opts: [
       { text: '\\(79.3\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(55.3\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(67.3\\\\text{ cm}^2\\)', imageUrl: '' },
@@ -1398,7 +1487,25 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Find the slanted side of the triangle using Pythagoras first: side = sqrt(2^2 + 3^2). Then TSA = 2 * triangle_area + bottom_area + 2 * side_area.',
     solution: 'Calculate dimensions:\\n- Triangle area = \\(0.5 \\\\times 4 \\\\times 3 = 6\\\\text{ cm}^2\\)\\n- Slanted side = \\(\\\\sqrt{2^2 + 3^2} = \\\\sqrt{13} \\\\approx 3.61\\\\text{ cm}\\)\\n- Perimeter = \\(4 + 2 \\\\times 3.61 = 11.22\\\\text{ cm}\\)\\n- Side areas = \\(11.22 \\\\times 6 = 67.32\\\\text{ cm}^2\\)\\n- Total Surface Area: \\(2 \\\\times 6 + 67.32 = 79.32 \\\\approx 79.3\\\\text{ cm}^2\\)',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q6b-board',
+        boundingbox: [-2, 5, 8, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [4, 0], visible: false },
+          { type: 'point', id: 'C', coords: [2, 3], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H', coords: [2, 0], visible: false },
+          { type: 'segment', from: 'C', to: 'H', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['C', 'H', 'B'], size: 0.25 },
+          { type: 'text', coords: [2.0, -0.4], content: '4 cm' },
+          { type: 'text', coords: [2.3, 1.5], content: '3 cm' },
+          { type: 'text', coords: [5.2, 0.4], content: '6 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the area of the front and back triangular faces.',
@@ -1735,7 +1842,25 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Use the cylinder surface area formula: TSA = 2 * pi * r * h + 2 * pi * r^2.',
     solution: 'Calculate cylinder surface area:\\n\\[\\\\text{TSA} = 2\\\\pi r h + 2\\\\pi r^2 = 2\\\\pi (5)(10) + 2\\\\pi (5)^2 = 100\\\\pi + 50\\\\pi = 150\\\\pi \\\\approx 471.24\\\\text{ cm}^2\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q10-board',
+        boundingbox: [-6, 7, 6, -7],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'O1', coords: [0, 4], visible: false },
+          { type: 'point', id: 'O2', coords: [0, -4], visible: false },
+          { type: 'point', id: 'R1', coords: [4, 4], visible: false },
+          { type: 'segment', from: 'O1', to: 'R1', color: 'red', dash: 2 },
+          { type: 'text', coords: [1.5, 4.3], content: '5 cm' },
+          { type: 'point', id: 'H1', coords: [-4, 4], visible: false },
+          { type: 'point', id: 'H2', coords: [-4, -4], visible: false },
+          { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
+          { type: 'arrow', from: 'H1', to: 'H2', bidirectional: true, color: 'red' },
+          { type: 'text', coords: [-5.2, 0], content: '10 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Identify the dimensions of the cylinder and state the TSA formula.',
@@ -1856,7 +1981,28 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Use the general volume formula for a prism: Volume = base area * height.',
     solution: 'Calculate the volume:\\n\\[V = A \\\\times h = 30 \\\\times 2.6 = 78\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q11b-board',
+        boundingbox: [-2, 5, 8, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [1, 0], visible: false },
+          { type: 'point', id: 'B', coords: [4, 0], visible: false },
+          { type: 'point', id: 'C', coords: [5, 2], visible: false },
+          { type: 'point', id: 'D', coords: [3.5, 3], visible: false },
+          { type: 'point', id: 'E', coords: [2.5, 1.5], visible: false },
+          { type: 'point', id: 'F', coords: [0.5, 2], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E', 'F'], color: 'blue', fillOpacity: 0.15 },
+          { type: 'text', coords: [1.8, 1.2], content: 'Area 30 cm²' },
+          { type: 'point', id: 'H1', coords: [5.2, 0.5], visible: false },
+          { type: 'point', id: 'H2', coords: [5.2, 2.5], visible: false },
+          { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
+          { type: 'arrow', from: 'H1', to: 'H2', bidirectional: true, color: 'red' },
+          { type: 'text', coords: [5.6, 1.5], content: '2.6 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Identify the cross-sectional base area and the height of the prism.',
@@ -1898,7 +2044,26 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Use the cylinder volume formula: Volume = pi * r^2 * h.',
     solution: 'Calculate cylinder volume:\\n\\[V = \\\\pi r^2 h = \\\\pi \\\\times (2.6)^2 \\\\times 11.2 = 7.76 \\\\times 11.2 \\\\times \\\\pi \\\\approx 237.89\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q11c-board',
+        boundingbox: [-4, 5, 8, -5],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'O1', coords: [-1, 0], visible: false },
+          { type: 'point', id: 'O2', coords: [4, 0], visible: false },
+          { type: 'point', id: 'R1', coords: [-1, 2.6], visible: false },
+          { type: 'segment', from: 'O1', to: 'R1', color: 'red', dash: 2 },
+          { type: 'text', coords: [-0.6, 1.3], content: '2.6 cm' },
+          { type: 'point', id: 'CenDot', coords: [-1, 0], color: 'red', size: 3 },
+          { type: 'point', id: 'H1', coords: [-1, -3.2], visible: false },
+          { type: 'point', id: 'H2', coords: [4, -3.2], visible: false },
+          { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
+          { type: 'arrow', from: 'H1', to: 'H2', bidirectional: true, color: 'red' },
+          { type: 'text', coords: [1.5, -3.8], content: '11.2 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Identify the dimensions of the cylinder and state the volume formula.',
@@ -1940,7 +2105,25 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Volume = area of triangular base * length.',
     solution: 'Calculate area of front triangle:\\n\\[A_{\\\\text{tri}} = \\\\frac{1}{2} \\\\times 7 \\\\times 6 = 21\\\\text{ cm}^2\\]\\nCalculate volume:\\n\\[V = A_{\\\\text{tri}} \\\\times L = 21 \\\\times 25 = 525\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q11d-board',
+        boundingbox: [-2, 8, 10, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [7, 0], visible: false },
+          { type: 'point', id: 'C', coords: [3.5, 6], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'H', coords: [3.5, 0], visible: false },
+          { type: 'segment', from: 'C', to: 'H', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['C', 'H', 'B'], size: 0.35 },
+          { type: 'text', coords: [3.5, -0.4], content: '7 cm' },
+          { type: 'text', coords: [3.8, 3.0], content: '6 cm' },
+          { type: 'text', coords: [7.8, 0.4], content: '25 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the area of the front triangular face.',
@@ -1982,7 +2165,28 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Divide the cross-section into two vertical rectangles of width 15 cm (height 20 cm) and width 10 cm (height 15 cm). Calculate total cross-sectional area and multiply by the length.',
     solution: 'Divide the cross-section into two rectangles:\\n- Left rectangle: \\(A_1 = 15 \\\\times 20 = 300\\\\text{ cm}^2\\)\\n- Right rectangle: \\(A_2 = 10 \\\\times 15 = 150\\\\text{ cm}^2\\)\\n- Total base area: \\(A = A_1 + A_2 = 300 + 150 = 450\\\\text{ cm}^2\\)\\n\\nCalculate the volume by multiplying by the length (50 cm):\\n\\[V = A \\\\times l = 450 \\\\times 50 = 22,500\\\\text{ cm}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q12a-board',
+        boundingbox: [-2, 23, 30, -3],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [25, 0], visible: false },
+          { type: 'point', id: 'C', coords: [25, 15], visible: false },
+          { type: 'point', id: 'D', coords: [15, 15], visible: false },
+          { type: 'point', id: 'E', coords: [15, 20], visible: false },
+          { type: 'point', id: 'F', coords: [0, 20], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E', 'F'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'text', coords: [12.5, -0.6], content: '25 cm' },
+          { type: 'text', coords: [-2, 10], content: '20 cm' },
+          { type: 'text', coords: [7.5, 20.4], content: '15 cm' },
+          { type: 'text', coords: [15.5, 17.5], content: '5 cm' },
+          { type: 'text', coords: [25.5, 7.5], content: '15 cm' },
+          { type: 'text', coords: [20.0, 15.4], content: '10 cm' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Divide the front cross-sectional face into two rectangles to find the total base area.',
@@ -2034,7 +2238,28 @@ export const Y9_CH16G_QUESTIONS = [
     answer: 0,
     hint: 'Calculate the cross-sectional area (area of the rectangle + area of the triangle) and multiply by the length of the building (30 m).',
     solution: 'Calculate cross-sectional area:\\n- Rectangle area: \\(A_{\\\\text{rect}} = 6 \\\\times 10 = 60\\\\text{ m}^2\\)\\n- Triangle area: \\(A_{\\\\text{tri}} = \\\\frac{1}{2} \\\\times 6 \\\\times 3 = 9\\\\text{ m}^2\\)\\n- Total cross-sectional area: \\(A = 60 + 9 = 69\\\\text{ m}^2\\)\\n\\nCalculate the volume:\\n\\[V = A \\\\times l = 69 \\\\times 30 = 2070\\\\text{ m}^3\\]',
-    graphData: null,
+    graphData: {
+      jsxGraph: {
+        id: 'y9-16g-q12b-board',
+        boundingbox: [-2, 15, 8, -2],
+        keepaspectratio: true,
+        elements: [
+          { type: 'point', id: 'A', coords: [0, 0], visible: false },
+          { type: 'point', id: 'B', coords: [6, 0], visible: false },
+          { type: 'point', id: 'C', coords: [6, 10], visible: false },
+          { type: 'point', id: 'D', coords: [3, 13], visible: false },
+          { type: 'point', id: 'E', coords: [0, 10], visible: false },
+          { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E'], color: 'blue', fillOpacity: 0.1 },
+          { type: 'point', id: 'M', coords: [3, 10], visible: false },
+          { type: 'segment', from: 'D', to: 'M', color: 'red', dash: 2 },
+          { type: 'segment', from: 'E', to: 'C', color: 'blue', dash: 2 },
+          { type: 'text', coords: [3, -0.5], content: '6 m' },
+          { type: 'text', coords: [-1, 5], content: '10 m' },
+          { type: 'text', coords: [3.3, 11.5], content: '3 m' },
+          { type: 'text', coords: [7.5, 0.4], content: '30 m' }
+        ]
+      }
+    },
     solutionSteps: [
       {
         explanation: 'Calculate the area of the rectangular portion of the front face.',
