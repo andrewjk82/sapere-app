@@ -287,6 +287,8 @@ import { Y11A_CH2E_QUESTIONS } from './seedYear11aCh2EQuestions.js';
 import { Y5_CH1_QUESTIONS } from './seedYear5Ch1Questions.js';
 import { Y5_CH2_QUESTIONS_AR1, Y5_CH2_QUESTIONS_AR2 } from './seedYear5Ch2Questions.js';
 import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR2, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4, Y5_CH3_QUESTIONS_MR6 } from './seedYear5Ch3Questions.js';
+import { Y5_CH4_QUESTIONS } from './seedYear5Ch4Questions.js';
+
 
 export const CHAPTER_SEED_REGISTRY = [
   {
@@ -368,6 +370,36 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 5',
     seed: Y5_CH3_QUESTIONS_MR6,
     label: 'Y5 Ch3 · MA3-MR-01 Order of operations',
+  },
+  {
+    chapterId: 'y5-rn',
+    chapterTitle: 'Represents Numbers (A)',
+    topicId: 'y5-rn-2',
+    topicCode: 'MA3-RN-02',
+    topicTitle: 'Decimals to thousandths',
+    year: 'Year 5',
+    seed: Y5_CH4_QUESTIONS.filter(q => q.topicId === 'y5-rn-2'),
+    label: 'Y5 Ch1 · MA3-RN-02 Decimals to thousandths',
+  },
+  {
+    chapterId: 'y5-rqf',
+    chapterTitle: 'Rational Quantities / Fractions (A)',
+    topicId: 'y5-rqf-1',
+    topicCode: 'MA3-RQF-01',
+    topicTitle: 'Compare and order fractions',
+    year: 'Year 5',
+    seed: Y5_CH4_QUESTIONS.filter(q => q.topicId === 'y5-rqf-1'),
+    label: 'Y5 Ch4 · MA3-RQF-01 Compare and order fractions',
+  },
+  {
+    chapterId: 'y5-rqf',
+    chapterTitle: 'Rational Quantities / Fractions (A)',
+    topicId: 'y5-rqf-3',
+    topicCode: 'MA3-RQF-01',
+    topicTitle: 'Equivalent fractions',
+    year: 'Year 5',
+    seed: Y5_CH4_QUESTIONS.filter(q => q.topicId === 'y5-rqf-3'),
+    label: 'Y5 Ch4 · MA3-RQF-01 Equivalent fractions',
   },
   {
     chapterId: 'y9-1',
