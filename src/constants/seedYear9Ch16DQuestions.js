@@ -1519,16 +1519,16 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the regular hexagonal prism with side length \\(6\\\\text{ cm}\\) and length \\(10\\\\text{ cm}\\). (Round the final answer to one decimal place.)',
+    question: 'Calculate the volume of the hexagonal prism with the following base dimensions:\\nHexagonal base top/bottom side length = \\(5\\\\text{ cm}\\)\\nHexagonal base middle horizontal width = \\(10\\\\text{ cm}\\)\\nHexagonal base total vertical height = \\(7\\\\text{ cm}\\)\\nPrism length = \\(14\\\\text{ cm}\\)',
     opts: [
-      { text: '\\(935.3\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(820.5\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(750.8\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(1050.2\\\\text{ cm}^3\\)', imageUrl: '' }
+      { text: '\\(735\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(840\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(680\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(980\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
-    hint: 'A regular hexagon is composed of 6 equilateral triangles. Area of base = 6 * (sqrt(3)/4) * s^2.',
-    solution: 'Calculate the area of the regular hexagon base with side length \\(s = 6\\\\text{ cm}\\):\\n\\[A = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times s^2 = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times 36 = 54\\\\sqrt{3}\\\\text{ cm}^2 \\\\approx 93.53\\\\text{ cm}^2\\]\\nMultiply by the length of the prism:\\n\\[V = A \\\\times l = 54\\\\sqrt{3} \\\\times 10 = 540\\\\sqrt{3}\\\\text{ cm}^3 \\\\approx 935.3\\\\text{ cm}^3\\]',
+    hint: 'Divide the hexagonal base horizontally into two identical trapezoids with parallel sides of 5 cm and 10 cm, and a height of 3.5 cm each.',
+    solution: 'Divide the hexagonal base into two identical trapezoids:\\n- Parallel bases: \\(a = 5\\\\text{ cm}\\) and \\(b = 10\\\\text{ cm}\\)\\n- Perpendicular height of each trapezoid: \\(h = \\\\frac{7}{2} = 3.5\\\\text{ cm}\\)\\n\\nCalculate the total area of the hexagonal base:\\n\\[A = 2 \\\\times \\\\left[\\\\frac{1}{2} \\\\times (5 + 10) \\\\times 3.5\\\\right] = 52.5\\\\text{ cm}^2\\]\\nMultiply by the length of the prism:\\n\\[V = A \\\\times l = 52.5 \\\\times 14 = 735\\\\text{ cm}^3\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16d-q3j-board',
@@ -1577,26 +1577,35 @@ export const Y9_CH16D_QUESTIONS = [
           { type: 'segment', from: 'K5', to: 'K6', color: 'blue', dash: 2 },
           { type: 'segment', from: 'K6', to: 'K1', color: 'blue', dash: 2 },
 
+          // Splitting visual lines (dashed, red) for height and middle width
+          { type: 'segment', from: 'H6', to: 'H3', color: 'red', dash: 2 },
+          // Top midpoint to bottom midpoint vertical height line
+          { type: 'point', id: 'M_TOP', coords: [0, 2.5], visible: false },
+          { type: 'point', id: 'M_BOT', coords: [0, -2.5], visible: false },
+          { type: 'segment', from: 'M_TOP', to: 'M_BOT', color: 'red', dash: 2 },
+
           // Labels
-          { type: 'text', coords: [0.0, 2.8], content: '6 cm' },
-          { type: 'text', coords: [5.2, 0.4], content: '10 cm' }
+          { type: 'text', coords: [0.0, 2.8], content: '5 cm' },
+          { type: 'text', coords: [-0.6, -1.0], content: '10 cm' },
+          { type: 'text', coords: [-1.2, -2.9], content: '7 cm' },
+          { type: 'text', coords: [5.2, 0.4], content: '14 cm' }
         ]
       }
     },
     solutionSteps: [
       {
-        explanation: 'Calculate the base area of the regular hexagon. A regular hexagon with side length s = 6 cm consists of 6 equilateral triangles.',
-        workingOut: '\\\\( A = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times 6^2 = 54\\\\sqrt{3}\\\\text{ cm}^2 \\\\approx 93.53\\\\text{ cm}^2 \\\\)',
+        explanation: 'Divide the hexagonal base into two identical trapezoids: parallel bases a = 5 cm and b = 10 cm, and height h = 3.5 cm (half of the 7 cm total height). Calculate the base area.',
+        workingOut: '\\\\( A = 2 \\\\times \\\\left[ \\\\frac{1}{2} \\\\times (5 + 10) \\\\times 3.5 \\\\right] = 52.5\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
-        explanation: 'Multiply the base area by the length of the prism (l = 10 cm) to find the volume.',
-        workingOut: '\\\\( V = 54\\\\sqrt{3} \\\\times 10 = 540\\\\sqrt{3}\\\\text{ cm}^3 \\\\approx 935.3\\\\text{ cm}^3 \\\\)',
+        explanation: 'Multiply the base area by the length of the prism (l = 14 cm) to find the volume.',
+        workingOut: '\\\\( V = 52.5 \\\\times 14 \\\\)',
         graphData: null
       },
       {
-        explanation: 'Round the final volume to one decimal place.',
-        workingOut: '\\\\( V \\\\approx 935.3\\\\text{ cm}^3 \\\\)',
+        explanation: 'Calculate the final volume.',
+        workingOut: '\\\\( V = 735\\\\text{ cm}^3 \\\\)',
         graphData: null
       }
     ]
