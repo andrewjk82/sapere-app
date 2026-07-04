@@ -2207,19 +2207,43 @@ export const Y9_CH16G_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16g-q11d-board',
-        boundingbox: [-2, 8, 10, -2],
+        boundingbox: [-2, 8, 12, -2],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [0, 0], visible: false },
-          { type: 'point', id: 'B', coords: [7, 0], visible: false },
-          { type: 'point', id: 'C', coords: [3.5, 6], visible: false },
-          { type: 'polygon', points: ['A', 'B', 'C'], color: 'blue', fillOpacity: 0.1 },
-          { type: 'point', id: 'H', coords: [3.5, 0], visible: false },
-          { type: 'segment', from: 'C', to: 'H', color: 'red', dash: 2 },
-          { type: 'rightangle', points: ['C', 'H', 'B'], size: 0.35 },
-          { type: 'text', coords: [3.5, -0.4], content: '7 cm' },
-          { type: 'text', coords: [3.8, 3.0], content: '6 cm' },
-          { type: 'text', coords: [7.8, 0.4], content: '25 cm' }
+          // Front triangular base points
+          { type: 'point', id: 'T1', coords: [0, 0], visible: false },
+          { type: 'point', id: 'T2', coords: [5, 0], visible: false },
+          { type: 'point', id: 'T3', coords: [2.5, 5], visible: false },
+          { type: 'point', id: 'M1', coords: [2.5, 0], visible: false },
+
+          // Back triangular base points
+          { type: 'point', id: 'T4', coords: [4, 2], visible: false },
+          { type: 'point', id: 'T5', coords: [9, 2], visible: false },
+          { type: 'point', id: 'T6', coords: [6.5, 7], visible: false },
+
+          // Front face outlines
+          { type: 'segment', from: 'T1', to: 'T2', color: 'blue' },
+          { type: 'segment', from: 'T2', to: 'T3', color: 'blue' },
+          { type: 'segment', from: 'T3', to: 'T1', color: 'blue' },
+
+          // Visible back outlines and connecting lines
+          { type: 'segment', from: 'T2', to: 'T5', color: 'blue' },
+          { type: 'segment', from: 'T3', to: 'T6', color: 'blue' },
+          { type: 'segment', from: 'T5', to: 'T6', color: 'blue' },
+
+          // Hidden back outlines (dashed)
+          { type: 'segment', from: 'T1', to: 'T4', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'T4', to: 'T5', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'T4', to: 'T6', color: 'blue', dash: 2 },
+
+          // Perpendicular height indicators
+          { type: 'segment', from: 'T3', to: 'M1', color: 'red', dash: 2 },
+          { type: 'rightangle', points: ['T3', 'M1', 'T2'], size: 0.3 },
+
+          // Labels & length indicator
+          { type: 'text', coords: [2.5, -0.5], content: '7 cm' },
+          { type: 'text', coords: [1.8, 2.5], content: '6 cm' },
+          { type: 'text', coords: [7.0, 1.3], content: '25 cm' }
         ]
       }
     },
