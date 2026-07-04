@@ -1,5 +1,5 @@
 import { db } from '../firebase/config';
-import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer } from 'firebase/firestore';
+import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer, documentId } from 'firebase/firestore';
 import { recountIds } from './questionCountsService';
 import { applySeedToIndexes } from './questionIndexService';
 import { validateSeedQuestion } from '../utils/latexValidate';
@@ -250,7 +250,25 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
     });
   }
 
-  // Delete stale seed questions (removed from seed file)
+  // Delete stale seed questions (removed from seed file) — but never a doc
+  // the teacher has since edited (origin:'teacher'); those now belong to the
+  // teacher, exactly like questions they added by hand.
+  if (toDelete.length > 0) {
+    try {
+      const keep = new Set();
+      for (let i = 0; i < toDelete.length; i += 30) {
+        const chunk = toDelete.slice(i, i + 30);
+        const snap = await getDocsFromServer(query(collRef, where(documentId(), 'in', chunk)));
+        snap.docs.forEach((d) => { if (d.data()?.origin === 'teacher') keep.add(d.id); });
+      }
+      if (keep.size > 0) {
+        console.info(`[seed] ${chapter.topicId}: keeping ${keep.size} teacher-edited question(s) removed from the seed file`);
+        toDelete = toDelete.filter((id) => !keep.has(id));
+      }
+    } catch (err) {
+      console.warn('[seed] teacher-edit check on deletions failed — proceeding:', err?.code || err);
+    }
+  }
   if (toDelete.length > 0) {
     (indexRemoved[chapter.chapterId] = indexRemoved[chapter.chapterId] || []).push(...toDelete);
     const CHUNK = 400;
@@ -273,11 +291,37 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
 
   // PER-QUESTION DIFF: only write questions that are new or have changed content.
   const currentQHashes = perQuestionHashes(seed);
-  const toWrite = writable.filter((raw) => {
+  const changed = writable.filter((raw) => {
     if (!raw.id) return true; // no ID -- always write (can't diff)
     const stored = storedQHashes[raw.id];
     return stored === undefined || stored !== currentQHashes[raw.id];
   });
+
+  // TEACHER EDITS WIN: editing a question in the Question Bank tags the doc
+  // origin:'teacher' (QuestionBankModal.handleSave). Re-seeding — whether the
+  // auto-sync after a deploy or the manual 🌱 Seed button — must never roll
+  // such an edit back to the seed file content. `changed` is normally tiny
+  // (only diffed questions), so reading those docs first is cheap.
+  let preservedCount = 0;
+  let toWrite = changed;
+  const changedIds = changed.map((raw) => raw.id).filter(Boolean);
+  if (changedIds.length > 0) {
+    const teacherEditedIds = new Set();
+    try {
+      for (let i = 0; i < changedIds.length; i += 30) {
+        const chunk = changedIds.slice(i, i + 30);
+        const snap = await getDocsFromServer(query(collRef, where(documentId(), 'in', chunk)));
+        snap.docs.forEach((d) => { if (d.data()?.origin === 'teacher') teacherEditedIds.add(d.id); });
+      }
+    } catch (err) {
+      console.warn('[seed] teacher-edit check failed — seeding all changed questions:', err?.code || err);
+    }
+    if (teacherEditedIds.size > 0) {
+      toWrite = changed.filter((raw) => !raw.id || !teacherEditedIds.has(raw.id));
+      preservedCount = changed.length - toWrite.length;
+      console.info(`[seed] ${chapter.topicId}: preserving ${preservedCount} teacher-edited question(s):`, [...teacherEditedIds].join(', '));
+    }
+  }
 
   const addedCount = toWrite.filter((raw) => !priorSeedIds.has(String(raw.id))).length;
   const updatedCount = toWrite.length - addedCount;
@@ -370,6 +414,7 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
     added: addedCount,
     removed: removedCount,
     updated: updatedCount,
+    preserved: preservedCount, // teacher-edited docs left untouched
     skipped: invalid.length,
     invalid,
     newQHashes: currentQHashes, // caller merges into seed_hashes

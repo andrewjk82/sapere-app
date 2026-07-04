@@ -1078,10 +1078,10 @@ const Curriculum = () => {
   // Generic chapter seeder — used by every CHAPTER_SEED_REGISTRY entry, so a
   // new chapter never needs its own copy-pasted handler again.
   const handleSeedChapter = async (entry) => {
-    if (!window.confirm(`Seed ${entry.seed.length} questions for ${entry.label}? Existing questions for this topic will be replaced.`)) return;
+    if (!window.confirm(`Seed ${entry.seed.length} questions for ${entry.label}? Existing seed questions for this topic will be replaced (teacher-edited and teacher-added questions are kept).`)) return;
     setIsMigrating(true);
     try {
-      await seedChapterQuestions(entry);
+      const seedResult = await seedChapterQuestions(entry);
       // The seeder is a non-destructive upsert (set merge:true), so the
       // chapter's *total* count is seed.length + any pre-existing questions.
       // Fetch the live counts from the server.
@@ -1100,7 +1100,8 @@ const Curriculum = () => {
       } catch (e) {
         console.warn('Post-seed count fetch failed; falling back to seed length:', e);
       }
-      showToast(`Seeded ${entry.label}. Topic now has ${liveTopicCount} questions.`, 'success');
+      const preservedNote = seedResult?.preserved ? ` (${seedResult.preserved} teacher-edited kept)` : '';
+      showToast(`Seeded ${entry.label}. Topic now has ${liveTopicCount} questions.${preservedNote}`, 'success');
       if (typeof window !== 'undefined') {
         const cached = loadCachedQuestionCounts();
         cached.counts[entry.chapterId] = liveChapterCount;

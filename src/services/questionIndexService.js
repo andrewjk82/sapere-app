@@ -27,6 +27,7 @@ import {
   getDoc,
   getDocs,
   setDoc,
+  updateDoc,
   query,
   where,
   writeBatch,
@@ -65,15 +66,40 @@ export const readChapterIndex = async (chapterId) => {
  */
 // bumpMembership=true when the active-question set changes (add/remove/move/activate/deactivate)
 // so students' practice_pool signatures rebuild and pick up the change.
-const stampVersions = async (version, bumpMembership = false) => {
+// indexIncomplete=true when an incremental index write was skipped because the
+// chapter's index doc doesn't exist yet — builtVersion is then deliberately
+// left behind `version` so the next admin session runs the full rebuild
+// (ensureQuestionIndexFresh) that creates the missing doc properly.
+const stampVersions = async (version, bumpMembership = false, { indexIncomplete = false } = {}) => {
   const v = Number(version) || Date.now();
   const versionFields = bumpMembership
     ? { version: v, membershipVersion: v, updatedAt: serverTimestamp() }
     : { version: v, updatedAt: serverTimestamp() };
-  await Promise.all([
-    setDoc(questionsVersionRef(), versionFields, { merge: true }),
-    setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
-  ]);
+  const writes = [setDoc(questionsVersionRef(), versionFields, { merge: true })];
+  if (!indexIncomplete) {
+    writes.push(setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }));
+  }
+  await Promise.all(writes);
+};
+
+/**
+ * Mutate a chapter index only if the doc already exists. Creating a NEW index
+ * doc from an incremental save is dangerous: chapters populated by legacy
+ * import scripts have no index doc, and readers (Question Bank, practice
+ * pools) treat a MISSING doc as "fall back to a full chapter query" but trust
+ * an EXISTING doc completely — so a freshly created doc holding a single id
+ * would hide every other question in the chapter. Complete docs are only
+ * built by rebuildAllQuestionIndexes / rebuildChapterIndex.
+ * Returns true if the doc existed and was updated.
+ */
+const updateIndexIfExists = async (chapterId, fields) => {
+  try {
+    await updateDoc(indexRef(chapterId), { ...fields, updatedAt: serverTimestamp() });
+    return true;
+  } catch (err) {
+    if (err?.code === 'not-found') return false;
+    throw err;
+  }
 };
 
 /**
@@ -85,61 +111,64 @@ const stampVersions = async (version, bumpMembership = false) => {
  */
 export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) => {
   const chapterIds = [...new Set([...Object.keys(added), ...Object.keys(removed)])].filter(Boolean);
-  
+  let indexIncomplete = false;
+
   for (const chapterId of chapterIds) {
     const add = [...new Set((added[chapterId] || []).map(String))];
     // An id being re-seeded appears in both lists — keep it (add wins).
     const rem = [...new Set((removed[chapterId] || []).map(String))].filter((id) => !add.includes(id));
-    
+
     const docRef = indexRef(chapterId);
     const snap = await getDoc(docRef);
-    let ids = snap.exists() ? (snap.data().ids || []) : [];
-    
+    // Never CREATE an index doc from a seed's ids alone — the chapter may
+    // also hold script-imported or teacher questions this call knows nothing
+    // about, and readers trust an existing doc completely. Leave builtVersion
+    // behind so the next admin session's full rebuild creates it complete.
+    if (!snap.exists()) { indexIncomplete = true; continue; }
+    let ids = snap.data().ids || [];
+
     if (rem.length) {
       const remSet = new Set(rem);
       ids = ids.filter(id => !remSet.has(String(id)));
     }
-    
+
     if (add.length) {
       const idsSet = new Set(ids.map(String));
       add.forEach(id => idsSet.add(id));
       ids = [...idsSet];
     }
-    
+
     await setDoc(docRef, {
       ids,
       count: ids.length,
       updatedAt: serverTimestamp(),
     }, { merge: true });
   }
-  
+
   const v = Number(version) || Date.now();
   // Seeding changes the active-question set → also bump membershipVersion so
   // students' practice_pool signatures rebuild and pick up added/removed IDs.
-  await Promise.all([
+  const writes = [
     setDoc(questionsVersionRef(), { version: v, membershipVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
-    setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
-  ]);
+  ];
+  if (!indexIncomplete) {
+    writes.push(setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }));
+  }
+  await Promise.all(writes);
 };
 
 /** Incremental: a question was created or (re)activated in a chapter. */
 export const addQuestionToIndex = async (chapterId, questionId, version) => {
   if (!chapterId || !questionId) return;
-  await setDoc(indexRef(chapterId), {
-    ids: arrayUnion(String(questionId)),
-    updatedAt: serverTimestamp(),
-  }, { merge: true });
-  await stampVersions(version, true);
+  const existed = await updateIndexIfExists(chapterId, { ids: arrayUnion(String(questionId)) });
+  await stampVersions(version, true, { indexIncomplete: !existed });
 };
 
 /** Incremental: a question was deleted or deactivated. */
 export const removeQuestionFromIndex = async (chapterId, questionId, version) => {
   if (!chapterId || !questionId) return;
-  await setDoc(indexRef(chapterId), {
-    ids: arrayRemove(String(questionId)),
-    updatedAt: serverTimestamp(),
-  }, { merge: true });
-  await stampVersions(version, true);
+  const existed = await updateIndexIfExists(chapterId, { ids: arrayRemove(String(questionId)) });
+  await stampVersions(version, true, { indexIncomplete: !existed });
 };
 
 /**
@@ -150,20 +179,16 @@ export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapt
   if (!questionId) return;
   const ops = [];
   if (prevChapterId && prevChapterId !== chapterId) {
-    ops.push(setDoc(indexRef(prevChapterId), {
-      ids: arrayRemove(String(questionId)),
-      updatedAt: serverTimestamp(),
-    }, { merge: true }));
+    ops.push(updateIndexIfExists(prevChapterId, { ids: arrayRemove(String(questionId)) }));
   }
   if (chapterId) {
-    ops.push(setDoc(indexRef(chapterId), {
+    ops.push(updateIndexIfExists(chapterId, {
       ids: isActive !== false ? arrayUnion(String(questionId)) : arrayRemove(String(questionId)),
-      updatedAt: serverTimestamp(),
-    }, { merge: true }));
+    }));
   }
   if (ops.length) {
-    await Promise.all(ops);
-    await stampVersions(version, true);
+    const results = await Promise.all(ops);
+    await stampVersions(version, true, { indexIncomplete: results.some((existed) => !existed) });
   }
 };
 
