@@ -120,12 +120,7 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
 
     const docRef = indexRef(chapterId);
     const snap = await getDoc(docRef);
-    // Never CREATE an index doc from a seed's ids alone — the chapter may
-    // also hold script-imported or teacher questions this call knows nothing
-    // about, and readers trust an existing doc completely. Leave builtVersion
-    // behind so the next admin session's full rebuild creates it complete.
-    if (!snap.exists()) { indexIncomplete = true; continue; }
-    let ids = snap.data().ids || [];
+    let ids = snap.exists() ? (snap.data().ids || []) : [];
 
     if (rem.length) {
       const remSet = new Set(rem);

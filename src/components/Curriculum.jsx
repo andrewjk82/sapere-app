@@ -1133,6 +1133,10 @@ const Curriculum = () => {
         _updatedAt: Date.now()
       }, { merge: true });
 
+      // Force rebuild the specific chapter index so all newly seeded questions are visible immediately
+      const { rebuildChapterIndex } = await import('../services/questionIndexService');
+      await rebuildChapterIndex(entry.chapterId);
+
       let liveChapterCount = entry.seed.length;
       let liveTopicCount = entry.seed.length;
       try {
