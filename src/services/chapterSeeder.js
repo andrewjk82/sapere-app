@@ -328,11 +328,31 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
   const removedCount = toDelete.length;
 
   if (toWrite.length > 0) {
+    const serializeCurves = (obj) => {
+      if (Array.isArray(obj)) {
+        return obj.map(serializeCurves);
+      } else if (obj !== null && typeof obj === 'object') {
+        const res = {};
+        for (const key of Object.keys(obj)) {
+          if (typeof obj[key] === 'function') {
+            res[key] = obj[key].toString();
+          } else {
+            res[key] = serializeCurves(obj[key]);
+          }
+        }
+        return res;
+      }
+      return obj;
+    };
+
     const CHUNK = 400;
     for (let i = 0; i < toWrite.length; i += CHUNK) {
       const batch = writeBatch(db);
       toWrite.slice(i, i + CHUNK).forEach((raw) => {
         const mapped = mapSeedQuestion(raw, chapter);
+        if (mapped.graphData && mapped.graphData.jsxGraph) {
+          mapped.graphData.jsxGraph = serializeCurves(mapped.graphData.jsxGraph);
+        }
         if (mapped.topicId) affectedTopicIds.add(mapped.topicId);
         const docRef = raw.id ? doc(collRef, raw.id) : doc(collRef);
         if (mapped.chapterId) {
