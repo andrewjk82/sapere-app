@@ -760,7 +760,7 @@ export const Y9_CH16C_QUESTIONS = [
           },
 
           // Middle boundary: center O2(0,4), rx=5, ry=1.5
-          // Front curve
+          // Front curve (visible part: t from pi to 2pi) - MUST be solid
           {
             type: 'curve',
             x: function(t) { return 5 * Math.cos(t); },
@@ -768,7 +768,7 @@ export const Y9_CH16C_QUESTIONS = [
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
-          // Back curve (dashed)
+          // Back curve (hidden/inner part: t from 0 to pi) - dashed
           {
             type: 'curve',
             x: function(t) { return 5 * Math.cos(t); },
@@ -1026,32 +1026,30 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'segment', from: 'P270', to: 'Q270', color: 'blue' },
           { type: 'segment', from: 'P0', to: 'Q0', color: 'blue' },
 
-          // Parametric curves for 270-degree sector (from Math.PI (180 deg) to 2*Math.PI + Math.PI/2 (90 deg/450 deg))
-          // Bottom curve: 180 to 270 to 360/0
+          // Parametric curves for 270-degree sector (from Math.PI (180 deg) to 2.5*Math.PI (90 deg/450 deg))
+          // Bottom curve (visible 270 deg): 180 -> 270 -> 0 -> 90
           {
             type: 'curve',
             x: function(t) { return 6 * Math.cos(t); },
             y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2 * Math.PI],
+            tRange: [Math.PI, 2.5 * Math.PI],
             color: 'blue'
           },
-          // Top curve: 180 to 270 to 360/0
+          // Top curve (visible 270 deg): 180 -> 270 -> 0 -> 90
           {
             type: 'curve',
             x: function(t) { return 6 * Math.cos(t); },
             y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2 * Math.PI],
+            tRange: [Math.PI, 2.5 * Math.PI],
             color: 'blue'
           },
 
-          // Hidden back lines (0 to 90 to 180)
-          { type: 'segment', from: 'O1', to: 'P0', color: 'blue', dash: 2 },
-          { type: 'segment', from: 'O2', to: 'Q0', color: 'blue' },
+          // Hidden back curve (remaining 90 deg: from 90 deg (0.5*pi) to 180 deg (pi)) - dashed
           {
             type: 'curve',
             x: function(t) { return 6 * Math.cos(t); },
             y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [0, Math.PI],
+            tRange: [0.5 * Math.PI, Math.PI],
             color: 'blue',
             dash: 2
           },
@@ -1059,10 +1057,11 @@ export const Y9_CH16C_QUESTIONS = [
             type: 'curve',
             x: function(t) { return 6 * Math.cos(t); },
             y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [0, Math.PI],
+            tRange: [0.5 * Math.PI, Math.PI],
             color: 'blue',
             dash: 2
           },
+          // Vertical edge for the hidden back corner (90 deg)
           { type: 'segment', from: 'P90', to: 'Q90', color: 'blue', dash: 2 },
 
           // Dimension Labels
