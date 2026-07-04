@@ -432,6 +432,58 @@ const GeometryRenderer = ({ data, style }) => {
               break;
             }
 
+            // ──────────────────────────────────────────────────────────────────
+            // CURVE  (parametric math function curve)
+            // Required: x (function or string equation), y (function or string equation), tRange ([tMin, tMax])
+            // Optional: color, strokeWidth, dash
+            // ──────────────────────────────────────────────────────────────────
+            case 'curve': {
+              const parseFunc = (fnVal) => {
+                if (typeof fnVal === 'function') return fnVal;
+                if (typeof fnVal === 'string') {
+                  const cleaned = fnVal.trim();
+                  // Check if it is a standard arrow function string e.g. "t => ..."
+                  if (cleaned.includes('=>')) {
+                    const parts = cleaned.split('=>');
+                    const arg = parts[0].trim();
+                    const body = parts.slice(1).join('=>').trim();
+                    return new Function(arg, `return ${body}`);
+                  }
+                  // Check if it is a standard "function(t) { return ... }" string
+                  if (cleaned.startsWith('function')) {
+                    const bodyStart = cleaned.indexOf('{');
+                    const bodyEnd = cleaned.lastIndexOf('}');
+                    if (bodyStart !== -1 && bodyEnd !== -1) {
+                      const body = cleaned.substring(bodyStart + 1, bodyEnd).trim();
+                      const argsStr = cleaned.substring(cleaned.indexOf('(') + 1, cleaned.indexOf(')'));
+                      return new Function(argsStr, body);
+                    }
+                  }
+                  // Default raw math expression fallback e.g. "4 * Math.cos(t)"
+                  return new Function('t', `return ${cleaned}`);
+                }
+                return null;
+              };
+
+              const xFn = parseFunc(el.x);
+              const yFn = parseFunc(el.y);
+              const tRange = el.tRange ?? [0, 2 * Math.PI];
+
+              if (!xFn || !yFn) {
+                console.warn(`GeometryRenderer: curve "${el.id}" — x or y functions could not be resolved`);
+                break;
+              }
+
+              jxgEl = board.create('curve', [xFn, yFn, tRange[0], tRange[1]], {
+                strokeColor: resolveColor(el.color ?? el.strokeColor ?? 'blue'),
+                strokeWidth: el.strokeWidth ?? 1.5,
+                dash:        el.dash ?? 0,
+                fixed:       true,
+                highlight:   false,
+              });
+              break;
+            }
+
             default:
               console.warn(`GeometryRenderer: unknown element type "${el.type}" — skipping`);
           }
