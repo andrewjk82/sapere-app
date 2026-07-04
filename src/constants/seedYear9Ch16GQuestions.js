@@ -1660,7 +1660,7 @@ export const Y9_CH16G_QUESTIONS = [
           { type: 'point', id: 'D', coords: [0, 8], visible: false },
           { type: 'polygon', points: ['A', 'B', 'C', 'D'], color: 'blue', fillOpacity: 0.2 },
           { type: 'point', id: 'Center', coords: [4, 4], visible: false },
-          { type: 'circle', center: 'Center', radius: 4, color: 'white', fillOpacity: 1.0 },
+          { type: 'circle', center: 'Center', radius: 4, strokeColor: 'blue', fillColor: 'white', fillOpacity: 1.0 },
           { type: 'point', id: 'CenDot', coords: [4, 4], color: 'red', size: 2 }
         ]
       }
