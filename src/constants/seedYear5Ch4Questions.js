@@ -12,12 +12,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A cargo container is divided into 5 equal sections. A logistics drone places medical supplies in 2 of these sections. What fraction of the cargo container is filled with medical supplies?",
     options: [
+      { text: "\\(\\frac{3}{5}\\)", imageUrl: '' },
       { text: "\\(\\frac{2}{5}\\)", imageUrl: '' },
       { text: "\\(\\frac{1}{5}\\)", imageUrl: '' },
-      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' },
-      { text: "\\(\\frac{3}{5}\\)", imageUrl: '' }
+      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 1,
     hint: "Count the number of sections filled with medical supplies and divide it by the total number of sections.",
     solution: "The container has 5 equal sections in total. Out of these, 2 sections are filled with medical supplies. Writing this as a fraction gives \(\frac{2}{5}\).",
     solutionSteps: [
@@ -51,12 +51,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A testing disc in a robotics laboratory is divided into 3 equal sectors. If 1 sector is painted blue, what fraction of the disc is painted blue?",
     options: [
-      { text: "\\(\\frac{1}{4}\\)", imageUrl: '' },
       { text: "\\(\\frac{1}{2}\\)", imageUrl: '' },
-      { text: "\\(\\frac{1}{3}\\)", imageUrl: '' },
-      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' }
+      { text: "\\(\\frac{1}{4}\\)", imageUrl: '' },
+      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{3}\\)", imageUrl: '' }
     ],
-    a: 2,
+    a: 3,
     hint: "Compare the number of blue sectors to the total number of equal sectors.",
     solution: "The disc contains 3 equal sectors, and 1 sector is painted blue. The fraction is \(\frac{1}{3}\).",
     solutionSteps: [
@@ -90,14 +90,14 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A hexagonal solar panel array consists of 6 equal triangular panels. If 3 of these panels are shaded by a tree, what fraction of the solar panel array is shaded?",
     options: [
-      { text: "\\(\\frac{4}{6}\\)", imageUrl: '' },
-      { text: "\\(\\frac{2}{6}\\)", imageUrl: '' },
-      { text: "\\(\\frac{1}{6}\\)", imageUrl: '' },
-      { text: "\\(\\frac{3}{6}\\)", imageUrl: '' }
+      { text: "\\(\\frac{1}{2}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{3}\\)", imageUrl: '' },
+      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{6}\\)", imageUrl: '' }
     ],
-    a: 3,
-    hint: "Place the shaded panels over the total panels and simplify if needed.",
-    solution: "Out of 6 equal panels, 3 are shaded. This is represented by the fraction \(\frac{3}{6}\) (which simplifies to \(\frac{1}{2}\)).",
+    a: 0,
+    hint: "Place the shaded panels over the total panels and simplify by dividing both numerator and denominator by 3.",
+    solution: "Out of 6 equal panels, 3 are shaded. This is represented by the fraction \(\frac{3}{6}\), which simplifies to \(\frac{1}{2}\).",
     solutionSteps: [
       {
         explanation: "Identify the total number of triangular panels.",
@@ -112,6 +112,11 @@ export const Y5_CH4_QUESTIONS = [
       {
         explanation: "Write the fraction of the array that is shaded.",
         workingOut: "\\text{Fraction} = \\frac{3}{6}",
+        graphData: null
+      },
+      {
+        explanation: "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 3.",
+        workingOut: "\\frac{3 \\div 3}{6 \\div 3} = \\frac{1}{2}",
         graphData: null
       }
     ]
@@ -129,14 +134,14 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A greenhouse seedling tray is divided into a grid of 16 equal pockets. If 8 of these pockets sprout seeds, what fraction of the tray has sprouted?",
     options: [
-      { text: "\\(\\frac{8}{16}\\)", imageUrl: '' },
-      { text: "\\(\\frac{12}{16}\\)", imageUrl: '' },
-      { text: "\\(\\frac{6}{16}\\)", imageUrl: '' },
-      { text: "\\(\\frac{10}{16}\\)", imageUrl: '' }
+      { text: "\\(\\frac{3}{8}\\)", imageUrl: '' },
+      { text: "\\(\\frac{3}{4}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{2}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{4}\\)", imageUrl: '' }
     ],
-    a: 0,
-    hint: "Divide the number of sprouted pockets by the total number of pockets.",
-    solution: "The tray has 16 pockets. Since 8 of them sprouted, the fraction is \(\frac{8}{16}\) (or \(\frac{1}{2}\)).",
+    a: 2,
+    hint: "Divide the number of sprouted pockets by the total number of pockets, then simplify by dividing both by 8.",
+    solution: "The tray has 16 pockets. Since 8 of them sprouted, the fraction is \(\frac{8}{16}\), which simplifies to \(\frac{1}{2}\).",
     solutionSteps: [
       {
         explanation: "Find the total pockets on the tray.",
@@ -151,6 +156,11 @@ export const Y5_CH4_QUESTIONS = [
       {
         explanation: "Express this as a fraction.",
         workingOut: "\\text{Fraction} = \\frac{8}{16}",
+        graphData: null
+      },
+      {
+        explanation: "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 8.",
+        workingOut: "\\frac{8 \\div 8}{16 \\div 8} = \\frac{1}{2}",
         graphData: null
       }
     ]
@@ -168,12 +178,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A circular water reservoir is partitioned into 8 equal sectors. A researcher collects water samples from 3 of these sectors. What fraction of the reservoir is sampled?",
     options: [
-      { text: "\\(\\frac{1}{8}\\)", imageUrl: '' },
-      { text: "\\(\\frac{5}{8}\\)", imageUrl: '' },
       { text: "\\(\\frac{3}{8}\\)", imageUrl: '' },
-      { text: "\\(\\frac{7}{8}\\)", imageUrl: '' }
+      { text: "\\(\\frac{1}{8}\\)", imageUrl: '' },
+      { text: "\\(\\frac{7}{8}\\)", imageUrl: '' },
+      { text: "\\(\\frac{5}{8}\\)", imageUrl: '' }
     ],
-    a: 2,
+    a: 0,
     hint: "Find the fraction of sampled sectors over the total sectors.",
     solution: "There are 8 equal sectors, and 3 are sampled. This gives the fraction \(\frac{3}{8}\).",
     solutionSteps: [
@@ -207,14 +217,14 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A warehouse shelf is divided into a grid of 12 equal bins. If an inventory robot stores components in 4 of these bins, what fraction of the shelf is used?",
     options: [
-      { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{5}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{4}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{3}{12}\\)", imageUrl: '' }
+      { text: "\\(\\frac{2}{3}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{4}\\)", imageUrl: '' },
+      { text: "\\(\\frac{1}{3}\\)", imageUrl: '' }
     ],
-    a: 2,
-    hint: "Divide the number of used bins by the total number of bins.",
-    solution: "The shelf has 12 bins. 4 bins are used, which corresponds to the fraction \(\frac{4}{12}\) (or \(\frac{1}{3}\)).",
+    a: 3,
+    hint: "Divide the number of used bins by the total number of bins, then simplify by dividing both by 4.",
+    solution: "The shelf has 12 bins. 4 bins are used, which corresponds to the fraction \(\frac{4}{12}\), which simplifies to \(\frac{1}{3}\).",
     solutionSteps: [
       {
         explanation: "Identify the total number of bins.",
@@ -229,6 +239,11 @@ export const Y5_CH4_QUESTIONS = [
       {
         explanation: "Write the fraction.",
         workingOut: "\\text{Fraction} = \\frac{4}{12}",
+        graphData: null
+      },
+      {
+        explanation: "Simplify the fraction to its simplest form by dividing both the numerator and denominator by 4.",
+        workingOut: "\\frac{4 \\div 4}{12 \\div 4} = \\frac{1}{3}",
         graphData: null
       }
     ]
@@ -246,12 +261,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "An automatic irrigation system is scheduled to water a crop field. If the system completes \(\frac{2}{3}\) of its watering cycle, find the missing numerator that makes an equivalent fraction: \(\frac{2}{3} = \frac{?}{9}\).",
     options: [
-      { text: "\\(8\\)", imageUrl: '' },
       { text: "\\(5\\)", imageUrl: '' },
-      { text: "\\(4\\)", imageUrl: '' },
-      { text: "\\(6\\)", imageUrl: '' }
+      { text: "\\(6\\)", imageUrl: '' },
+      { text: "\\(8\\)", imageUrl: '' },
+      { text: "\\(4\\)", imageUrl: '' }
     ],
-    a: 3,
+    a: 1,
     hint: "Determine what number the denominator 3 was multiplied by to get 9, and multiply the numerator by the same number.",
     solution: "To find the equivalent fraction, observe that the denominator 3 is multiplied by 3 to get 9. Therefore, multiply the numerator 2 by 3 to get 6. Thus, \(\frac{2}{3} = \frac{6}{9}\).",
     solutionSteps: [
@@ -286,9 +301,9 @@ export const Y5_CH4_QUESTIONS = [
     question: "A spacecraft battery is charged to \(\frac{3}{4}\) of its capacity. What is the equivalent fraction of the battery charge if represented in eighths? \(\frac{3}{4} = \frac{?}{8}\).",
     options: [
       { text: "\\(7\\)", imageUrl: '' },
-      { text: "\\(5\\)", imageUrl: '' },
+      { text: "\\(3\\)", imageUrl: '' },
       { text: "\\(6\\)", imageUrl: '' },
-      { text: "\\(3\\)", imageUrl: '' }
+      { text: "\\(5\\)", imageUrl: '' }
     ],
     a: 2,
     hint: "Find the scale factor of the denominators and apply it to the numerator.",
@@ -324,12 +339,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A forestry reserve has \(\frac{4}{5}\) of its area covered by native trees. Find the equivalent fraction of native tree coverage if the reserve is divided into 15 equal zones: \(\frac{4}{5} = \frac{?}{15}\).",
     options: [
+      { text: "\\(8\\)", imageUrl: '' },
       { text: "\\(10\\)", imageUrl: '' },
       { text: "\\(12\\)", imageUrl: '' },
-      { text: "\\(9\\)", imageUrl: '' },
-      { text: "\\(8\\)", imageUrl: '' }
+      { text: "\\(9\\)", imageUrl: '' }
     ],
-    a: 1,
+    a: 2,
     hint: "Identify the multiplier for the denominators, then multiply the numerator.",
     solution: "The denominator 5 is multiplied by 3 to get 15. Multiply the numerator 4 by 3 to get 12. So, \(\frac{4}{5} = \frac{12}{15}\).",
     solutionSteps: [
@@ -365,10 +380,10 @@ export const Y5_CH4_QUESTIONS = [
     options: [
       { text: "\\(4\\)", imageUrl: '' },
       { text: "\\(8\\)", imageUrl: '' },
-      { text: "\\(5\\)", imageUrl: '' },
-      { text: "\\(6\\)", imageUrl: '' }
+      { text: "\\(6\\)", imageUrl: '' },
+      { text: "\\(5\\)", imageUrl: '' }
     ],
-    a: 3,
+    a: 2,
     hint: "Determine the factor of multiplication between 5 and 10.",
     solution: "The denominator 5 is multiplied by 2 to get 10. Multiply the numerator 3 by 2 to get 6. Thus, \(\frac{3}{5} = \frac{6}{10}\).",
     solutionSteps: [
@@ -402,12 +417,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "Using equivalent fractions, find the number of twelfths that equals \(\frac{5}{6}\).",
     options: [
-      { text: "\\(\\frac{9}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{10}{12}\\)", imageUrl: '' },
+      { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
+      { text: "\\(\\frac{9}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{11}{12}\\)", imageUrl: '' }
     ],
-    a: 2,
+    a: 0,
     hint: "Multiply the numerator and denominator by 2 to convert 6ths to 12ths.",
     solution: "To find the equivalent fraction of \(\frac{5}{6}\) in twelfths, multiply both the numerator and denominator by 2: \(\frac{5 \times 2}{6 \times 2} = \frac{10}{12}\).",
     solutionSteps: [
@@ -442,9 +457,9 @@ export const Y5_CH4_QUESTIONS = [
     question: "Find the equivalent fraction of \(\frac{1}{3}\) with a denominator of 6.",
     options: [
       { text: "\\(\\frac{2}{6}\\)", imageUrl: '' },
-      { text: "\\(\\frac{3}{6}\\)", imageUrl: '' },
       { text: "\\(\\frac{1}{6}\\)", imageUrl: '' },
-      { text: "\\(\\frac{4}{6}\\)", imageUrl: '' }
+      { text: "\\(\\frac{4}{6}\\)", imageUrl: '' },
+      { text: "\\(\\frac{3}{6}\\)", imageUrl: '' }
     ],
     a: 0,
     hint: "Determine the factor to convert 3rds to 6ths, and multiply the numerator.",
@@ -481,8 +496,8 @@ export const Y5_CH4_QUESTIONS = [
     question: "Find the equivalent fraction of \(\frac{3}{6}\) with a denominator of 12.",
     options: [
       { text: "\\(\\frac{7}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{5}{12}\\)", imageUrl: '' },
+      { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{6}{12}\\)", imageUrl: '' }
     ],
     a: 3,
@@ -520,9 +535,9 @@ export const Y5_CH4_QUESTIONS = [
     question: "Find the equivalent fraction of \(\frac{2}{3}\) with a denominator of 12.",
     options: [
       { text: "\\(\\frac{8}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{10}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{6}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{4}{12}\\)", imageUrl: '' }
+      { text: "\\(\\frac{4}{12}\\)", imageUrl: '' },
+      { text: "\\(\\frac{10}{12}\\)", imageUrl: '' }
     ],
     a: 0,
     hint: "Determine the multiplier to convert 3rds to 12ths.",
@@ -558,12 +573,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "Find the equivalent fraction of \(\frac{1}{6}\) with a denominator of 12.",
     options: [
+      { text: "\\(\\frac{3}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{4}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{2}{12}\\)", imageUrl: '' },
-      { text: "\\(\\frac{3}{12}\\)", imageUrl: '' },
       { text: "\\(\\frac{1}{12}\\)", imageUrl: '' }
     ],
-    a: 1,
+    a: 2,
     hint: "Determine the factor to convert 6ths to 12ths.",
     solution: "Multiply the numerator and denominator of \(\frac{1}{6}\) by 2: \(\frac{1 \times 2}{6 \times 2} = \frac{2}{12}\).",
     solutionSteps: [
@@ -597,10 +612,10 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "An archaeologist compares two ancient urn fragments. Fragment A is \(\frac{1}{6}\) of the complete urn, while Fragment B is \(\frac{1}{12}\) of the same urn. Compare the two fractions: \(\frac{1}{6} \quad \square \quad \frac{1}{12}\).",
     options: [
-      { text: "\\(<\\)", imageUrl: '' },
+      { text: "\\(=\\)", imageUrl: '' },
       { text: "None of these", imageUrl: '' },
       { text: "\\(>\\)", imageUrl: '' },
-      { text: "\\(=\\)", imageUrl: '' }
+      { text: "\\(<\\)", imageUrl: '' }
     ],
     a: 2,
     hint: "Convert \(\frac{1}{6}\) to an equivalent fraction with a denominator of 12.",
@@ -638,8 +653,8 @@ export const Y5_CH4_QUESTIONS = [
     options: [
       { text: "\\(>\\)", imageUrl: '' },
       { text: "\\(=\\)", imageUrl: '' },
-      { text: "None of these", imageUrl: '' },
-      { text: "\\(<\\)", imageUrl: '' }
+      { text: "\\(<\\)", imageUrl: '' },
+      { text: "None of these", imageUrl: '' }
     ],
     a: 0,
     hint: "Convert \(\frac{1}{3}\) to twelfths by multiplying the top and bottom by 4.",
@@ -675,12 +690,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A robotic arm completes \(\frac{2}{3}\) of a packaging task, while another arm completes \(\frac{8}{12}\) of the same task. Compare the fractions: \(\frac{2}{3} \quad \square \quad \frac{8}{12}\).",
     options: [
+      { text: "\\(=\\)", imageUrl: '' },
       { text: "\\(>\\)", imageUrl: '' },
-      { text: "None of these", imageUrl: '' },
       { text: "\\(<\\)", imageUrl: '' },
-      { text: "\\(=\\)", imageUrl: '' }
+      { text: "None of these", imageUrl: '' }
     ],
-    a: 3,
+    a: 0,
     hint: "Convert \(\frac{2}{3}\) to twelfths.",
     solution: "Convert \(\frac{2}{3}\) to an equivalent fraction in twelfths: \(\frac{2 \times 4}{3 \times 4} = \frac{8}{12}\). Since \(\frac{8}{12}\) is equal to \(\frac{8}{12}\), the two fractions are equal: \(\frac{2}{3} = \frac{8}{12}\).",
     solutionSteps: [
@@ -714,10 +729,10 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "An agricultural sensor measures moisture levels. Plot A is at \(\frac{11}{12}\) capacity, and Plot B is at \(\frac{5}{6}\) capacity. Compare the fractions: \(\frac{11}{12} \quad \square \quad \frac{5}{6}\).",
     options: [
-      { text: "\\(<\\)", imageUrl: '' },
+      { text: "None of these", imageUrl: '' },
       { text: "\\(>\\)", imageUrl: '' },
       { text: "\\(=\\)", imageUrl: '' },
-      { text: "None of these", imageUrl: '' }
+      { text: "\\(<\\)", imageUrl: '' }
     ],
     a: 1,
     hint: "Express \(\frac{5}{6}\) in terms of twelfths.",
@@ -754,9 +769,9 @@ export const Y5_CH4_QUESTIONS = [
     question: "A chemical plant uses \(\frac{4}{12}\) of its reactant supply in batch A, and \(\frac{1}{3}\) in batch B. Compare the fractions: \(\frac{4}{12} \quad \square \quad \frac{1}{3}\).",
     options: [
       { text: "\\(=\\)", imageUrl: '' },
-      { text: "None of these", imageUrl: '' },
+      { text: "\\(<\\)", imageUrl: '' },
       { text: "\\(>\\)", imageUrl: '' },
-      { text: "\\(<\\)", imageUrl: '' }
+      { text: "None of these", imageUrl: '' }
     ],
     a: 0,
     hint: "Simplify the fraction \(\frac{4}{12}\) by dividing the numerator and denominator by 4.",
@@ -792,12 +807,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A computer memory card has 10 equal storage columns. If 6 of these columns are filled with drone logs, write the filled storage area as a decimal.",
     options: [
-      { text: "\\(0.6\\)", imageUrl: '' },
+      { text: "\\(0.06\\)", imageUrl: '' },
       { text: "\\(6.0\\)", imageUrl: '' },
-      { text: "\\(0.66\\)", imageUrl: '' },
-      { text: "\\(0.06\\)", imageUrl: '' }
+      { text: "\\(0.6\\)", imageUrl: '' },
+      { text: "\\(0.66\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 2,
     hint: "Write the fraction \(\frac{6}{10}\) as a decimal.",
     solution: "6 out of 10 equal columns are filled. This is \(\frac{6}{10}\) of the grid, which translates to the decimal \(0.6\).",
     solutionSteps: [
@@ -826,12 +841,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A weather satellite maps a grid of 100 equal regions. If 50 regions are covered by storm clouds, write this cloudy area as a decimal.",
     options: [
-      { text: "\\(0.5\\)", imageUrl: '' },
       { text: "\\(0.05\\)", imageUrl: '' },
       { text: "\\(0.55\\)", imageUrl: '' },
-      { text: "\\(5.0\\)", imageUrl: '' }
+      { text: "\\(5.0\\)", imageUrl: '' },
+      { text: "\\(0.5\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 3,
     hint: "Find the decimal equivalent of \(\frac{50}{100}\).",
     solution: "50 out of 100 grid cells are covered. This is the fraction \(\frac{50}{100}\), which simplifies to \(\frac{1}{2}\) and translates to the decimal \(0.5\).",
     solutionSteps: [
@@ -899,12 +914,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "In a chemistry experiment, a sample of liquid has a mass of \(4.031\) grams. What is the place value of the digit 3 in this decimal number?",
     options: [
-      { text: "Thousandths", imageUrl: '' },
       { text: "Tenths", imageUrl: '' },
       { text: "Hundredths", imageUrl: '' },
+      { text: "Thousandths", imageUrl: '' },
       { text: "Ones", imageUrl: '' }
     ],
-    a: 2,
+    a: 1,
     hint: "Look at the positions of the digits to the right of the decimal point: tenths, hundredths, thousandths.",
     solution: "In \(4.031\):\n- 0 is in the tenths place.\n- 3 is in the hundredths place.\n- 1 is in the thousandths place.\nTherefore, the place value of 3 is hundredths.",
     solutionSteps: [
@@ -933,12 +948,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A surveyor measures a distance of \(17.3\) metres. What is the place value of the digit 3 in this decimal number?",
     options: [
-      { text: "Tenths", imageUrl: '' },
-      { text: "Ones", imageUrl: '' },
       { text: "Hundredths", imageUrl: '' },
-      { text: "Tens", imageUrl: '' }
+      { text: "Tens", imageUrl: '' },
+      { text: "Tenths", imageUrl: '' },
+      { text: "Ones", imageUrl: '' }
     ],
-    a: 0,
+    a: 2,
     hint: "Identify the position of the digit immediately to the right of the decimal point.",
     solution: "In \(17.3\), the digit 3 is immediately to the right of the decimal point, which is the tenths place.",
     solutionSteps: [
@@ -967,12 +982,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "An engineer reports the voltage of a generator as \(137.02\) volts. What is the place value of the digit 3 in this number?",
     options: [
-      { text: "Tenths", imageUrl: '' },
-      { text: "Ones", imageUrl: '' },
       { text: "Tens", imageUrl: '' },
-      { text: "Hundreds", imageUrl: '' }
+      { text: "Hundreds", imageUrl: '' },
+      { text: "Ones", imageUrl: '' },
+      { text: "Tenths", imageUrl: '' }
     ],
-    a: 2,
+    a: 0,
     hint: "Identify the place value of the digit 3, which is to the left of the decimal point.",
     solution: "In \(137.02\):\n- 7 is in the ones place.\n- 3 is in the tens place.\n- 1 is in the hundreds place.\nSo, the place value of 3 is tens.",
     solutionSteps: [
@@ -1001,12 +1016,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A high-precision balance scale measures the mass of a particle as \(18.673\) milligrams. What is the place value of the digit 3 in this decimal number?",
     options: [
-      { text: "Ones", imageUrl: '' },
       { text: "Thousandths", imageUrl: '' },
-      { text: "Tenths", imageUrl: '' },
-      { text: "Hundredths", imageUrl: '' }
+      { text: "Hundredths", imageUrl: '' },
+      { text: "Ones", imageUrl: '' },
+      { text: "Tenths", imageUrl: '' }
     ],
-    a: 1,
+    a: 0,
     hint: "Count three places to the right of the decimal point.",
     solution: "In \(18.673\), the third digit to the right of the decimal point is 3, which represents 3 thousandths.",
     solutionSteps: [
@@ -1035,12 +1050,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "An astrophysicist calculates the distance to a star using the expanded notation: \((5 \times 100) + (0 \times 10) + (3 \times 1) + [8 \times \frac{1}{10}] + [6 \times \frac{1}{100}]\) light years. Write this value as a decimal.",
     options: [
-      { text: "\\(503.086\\)", imageUrl: '' },
       { text: "\\(530.86\\)", imageUrl: '' },
       { text: "\\(503.86\\)", imageUrl: '' },
+      { text: "\\(503.086\\)", imageUrl: '' },
       { text: "\\(53.86\\)", imageUrl: '' }
     ],
-    a: 2,
+    a: 1,
     hint: "Add the whole number parts and the decimal parts together.",
     solution: "Calculate each term:\n- \(5 \times 100 = 500\)\n- \(0 \times 10 = 0\)\n- \(3 \times 1 = 3\)\n- \(8 \times \frac{1}{10} = 0.8\)\n- \(6 \times \frac{1}{100} = 0.06\)\nAdding them: \(500 + 0 + 3 + 0.8 + 0.06 = 503.86\).",
     solutionSteps: [
@@ -1074,12 +1089,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A geologist weighs a mineral sample. The weight is represented in expanded form as: \((4 \times 100) + (7 \times 10) + (5 \times 1) + [9 \times \frac{1}{10}] + [3 \times \frac{1}{100}] + [8 \times \frac{1}{1000}]\) grams. What is the weight as a decimal?",
     options: [
-      { text: "\\(475.938\\)", imageUrl: '' },
-      { text: "\\(475.0938\\)", imageUrl: '' },
       { text: "\\(475.93\\)", imageUrl: '' },
-      { text: "\\(4759.38\\)", imageUrl: '' }
+      { text: "\\(4759.38\\)", imageUrl: '' },
+      { text: "\\(475.938\\)", imageUrl: '' },
+      { text: "\\(475.0938\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 2,
     hint: "Add hundreds, tens, ones, tenths, hundredths, and thousandths together.",
     solution: "Calculate each section:\n- Whole numbers: \(400 + 70 + 5 = 475\)\n- Decimals: \(0.9 + 0.03 + 0.008 = 0.938\)\nSumming both: \(475 + 0.938 = 475.938\) grams.",
     solutionSteps: [
@@ -1113,12 +1128,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A water tank is filled to \(\frac{6}{10}\) of its total capacity. Express this fraction of capacity as a decimal.",
     options: [
-      { text: "\\(0.6\\)", imageUrl: '' },
       { text: "\\(6.0\\)", imageUrl: '' },
       { text: "\\(0.66\\)", imageUrl: '' },
+      { text: "\\(0.6\\)", imageUrl: '' },
       { text: "\\(0.06\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 2,
     hint: "The fraction \(\frac{6}{10}\) represents 6 tenths.",
     solution: "The fraction \(\frac{6}{10}\) can be written as the decimal \(0.6\).",
     solutionSteps: [
@@ -1147,12 +1162,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A solar panel array converts \(\frac{23}{100}\) of captured sunlight into electrical energy. What is this efficiency rate written as a decimal?",
     options: [
-      { text: "\\(2.3\\)", imageUrl: '' },
+      { text: "\\(0.23\\)", imageUrl: '' },
       { text: "\\(0.023\\)", imageUrl: '' },
-      { text: "\\(0.203\\)", imageUrl: '' },
-      { text: "\\(0.23\\)", imageUrl: '' }
+      { text: "\\(2.3\\)", imageUrl: '' },
+      { text: "\\(0.203\\)", imageUrl: '' }
     ],
-    a: 3,
+    a: 0,
     hint: "The fraction \(\frac{23}{100}\) represents 23 hundredths.",
     solution: "The fraction \(\frac{23}{100}\) is equivalent to 23 hundredths, which is written as \(0.23\).",
     solutionSteps: [
@@ -1215,12 +1230,12 @@ export const Y5_CH4_QUESTIONS = [
     type: 'multiple_choice',
     question: "A forestry researcher measures a sapling's growth as \(3\frac{18}{100}\) metres in a year. Express this growth height as a decimal.",
     options: [
-      { text: "\\(3.18\\)", imageUrl: '' },
-      { text: "\\(31.8\\)", imageUrl: '' },
       { text: "\\(3.018\\)", imageUrl: '' },
-      { text: "\\(0.318\\)", imageUrl: '' }
+      { text: "\\(3.18\\)", imageUrl: '' },
+      { text: "\\(0.318\\)", imageUrl: '' },
+      { text: "\\(31.8\\)", imageUrl: '' }
     ],
-    a: 0,
+    a: 1,
     hint: "Combine the whole number 3 with the decimal representation of \(\frac{18}{100}\).",
     solution: "The mixed number \(3\frac{18}{100}\) has a whole number part of 3 and a fractional part of \(\frac{18}{100} = 0.18\). Combining them gives \(3.18\).",
     solutionSteps: [
