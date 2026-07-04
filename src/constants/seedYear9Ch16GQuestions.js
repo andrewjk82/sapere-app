@@ -1056,6 +1056,7 @@ export const Y9_CH16G_QUESTIONS = [
           { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E'], color: 'blue', fillOpacity: 0.1 },
           { type: 'point', id: 'H1', coords: [2, 4], visible: false },
           { type: 'segment', from: 'D', to: 'H1', color: 'red', dash: 2 },
+          { type: 'segment', from: 'E', to: 'C', color: 'blue', dash: 2 }, // dashed original top edge
           { type: 'text', coords: [2.0, -0.4], content: '4 cm' },
           { type: 'text', coords: [4.4, 2.0], content: '4 cm' },
           { type: 'text', coords: [2.3, 3.0], content: '2 cm' }
