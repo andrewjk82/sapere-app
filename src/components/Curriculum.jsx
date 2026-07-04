@@ -1075,16 +1075,64 @@ const Curriculum = () => {
     }
   };
 
-  // Generic chapter seeder — used by every CHAPTER_SEED_REGISTRY entry, so a
-  // new chapter never needs its own copy-pasted handler again.
   const handleSeedChapter = async (entry) => {
     if (!window.confirm(`Seed ${entry.seed.length} questions for ${entry.label}? Existing seed questions for this topic will be replaced (teacher-edited and teacher-added questions are kept).`)) return;
     setIsMigrating(true);
     try {
-      const seedResult = await seedChapterQuestions(entry);
-      // The seeder is a non-destructive upsert (set merge:true), so the
-      // chapter's *total* count is seed.length + any pre-existing questions.
-      // Fetch the live counts from the server.
+      const { doc, getDoc, collection, query, where, getCountFromServer, setDoc } = await import('firebase/firestore');
+      const hashSnap = await getDoc(doc(db, 'sync_meta', 'seed_hashes'));
+      const stored = hashSnap.exists() ? (hashSnap.data() || {}) : {};
+      const storedQHashes = stored._qHashes || {};
+
+      const seedResult = await seedChapterQuestions(entry, storedQHashes);
+      
+      // Update seed_hashes on successful manual seed
+      const currentTopicHashes = stored._topicHashes || {};
+      const currentQHashes = seedResult.newQHashes || {};
+      const updatedQHashes = { ...storedQHashes, ...currentQHashes };
+      
+      const djb2 = (str) => {
+        let h = 5381;
+        for (let i = 0; i < str.length; i++) h = ((h << 5) + h + str.charCodeAt(i)) | 0;
+        return (h >>> 0).toString(36);
+      };
+      const questionFingerprint = (q) => {
+        if (!q || typeof q !== 'object') return String(q);
+        const opts = (q.opts || q.options || [])
+          .map((o) => (typeof o === 'object' && o !== null ? `${o.text || ''}|${o.imageUrl || ''}` : String(o)))
+          .join('~');
+        const steps = Array.isArray(q.solutionSteps)
+          ? q.solutionSteps.map((s) => `${s?.explanation || ''}=>${s?.workingOut || ''}`).join('~')
+          : '';
+        const graphData = q.graphData ? JSON.stringify(q.graphData) : '';
+        const subQuestions = Array.isArray(q.subQuestions)
+          ? q.subQuestions.map(questionFingerprint).join('~')
+          : '';
+        return djb2([
+          q.id || '',
+          q.q ?? q.question ?? '',
+          q.a ?? q.answer ?? q.solution ?? '',
+          q.h ?? q.hint ?? '',
+          q.s ?? q.solution ?? '',
+          q.type || '',
+          opts,
+          steps,
+          graphData,
+          subQuestions,
+        ].join(''));
+      };
+      const hashSeedIds = (seed) => {
+        if (!Array.isArray(seed) || seed.length === 0) return '0';
+        return djb2(seed.map(questionFingerprint).sort().join(''));
+      };
+
+      currentTopicHashes[entry.topicId] = hashSeedIds(entry.seed);
+      await setDoc(doc(db, 'sync_meta', 'seed_hashes'), {
+        _topicHashes: currentTopicHashes,
+        _qHashes: updatedQHashes,
+        _updatedAt: Date.now()
+      }, { merge: true });
+
       let liveChapterCount = entry.seed.length;
       let liveTopicCount = entry.seed.length;
       try {
