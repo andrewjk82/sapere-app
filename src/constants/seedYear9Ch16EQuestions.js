@@ -59,21 +59,21 @@ export const Y9_CH16E_QUESTIONS = [
       { text: '\\(8000\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(800\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(80\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(80\\\\,000\\\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(80\\,000\\\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 10,000 to convert square metres to square centimetres.',
-    solution: 'To convert from square metres (\\(m^2\\)) to square centimetres (\\(cm^2\\)), multiply by \\(100^2 = 10\\\\,000\\):\\n\\[0.8 \\\\times 10\\\\,000 = 8000\\\\text{ cm}^2\\]',
+    solution: 'To convert from square metres (\\(m^2\\)) to square centimetres (\\(cm^2\\)), multiply by \\(100^2 = 10\\,000\\):\\n\\[0.8 \\\\times 10\\,000 = 8000\\\\text{ cm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Identify the conversion factor between square metres and square centimetres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2\\).',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2 \\\\)',
+        explanation: 'Identify the conversion factor between square metres and square centimetres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2\\).',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square metres by 10,000 to find the equivalent area in square centimetres.',
-        workingOut: '\\\\( A = 0.8 \\\\times 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 0.8 \\\\times 10\\,000 \\\\)',
         graphData: null
       },
       {
@@ -140,29 +140,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following area measurement into square centimetres:\\n\\(4.2\\\\text{ m}^2\\)',
     opts: [
-      { text: '\\(42\\\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(42\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(4200\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(420\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(420\\\\,000\\\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(420\\,000\\\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 10,000 to convert square metres to square centimetres.',
-    solution: 'To convert from square metres (\\(m^2\\)) to square centimetres (\\(cm^2\\)), multiply by 10,000:\\n\\[4.2 \\\\times 10\\\\,000 = 42\\\\,000\\\\text{ cm}^2\\]',
+    solution: 'To convert from square metres (\\(m^2\\)) to square centimetres (\\(cm^2\\)), multiply by 10,000:\\n\\[4.2 \\\\times 10\\,000 = 42\\,000\\\\text{ cm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between square metres and square centimetres.',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square metres by 10,000.',
-        workingOut: '\\\\( A = 4.2 \\\\times 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 4.2 \\\\times 10\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 42\\\\,000\\\\text{ cm}^2 \\\\)',
+        workingOut: '\\\\( A = 42\\,000\\\\text{ cm}^2 \\\\)',
         graphData: null
       }
     ]
@@ -224,29 +224,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following area measurement into square millimetres:\\n\\(0.6\\\\text{ m}^2\\)',
     opts: [
-      { text: '\\(600\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(600\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
       { text: '\\(6000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(60\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(6\\\\,000\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
+      { text: '\\(60\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(6\\,000\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert square metres to square millimetres.',
-    solution: 'To convert from square metres (\\(m^2\\)) to square millimetres (\\(mm^2\\)), multiply by \\(1000^2 = 1\\\\,000\\\\,000\\):\\n\\[0.6 \\\\times 1\\\\,000\\\\,000 = 600\\\\,000\\\\text{ mm}^2\\]',
+    solution: 'To convert from square metres (\\(m^2\\)) to square millimetres (\\(mm^2\\)), multiply by \\(1000^2 = 1\\,000\\,000\\):\\n\\[0.6 \\\\times 1\\,000\\,000 = 600\\,000\\\\text{ mm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Identify the conversion factor between square metres and square millimetres. Since \\(1\\\\text{ m} = 1000\\\\text{ mm}\\), it follows that \\(1\\\\text{ m}^2 = 1\\\\,000\\\\,000\\\\text{ mm}^2\\).',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 1\\\\,000\\\\,000\\\\text{ mm}^2 \\\\)',
+        explanation: 'Identify the conversion factor between square metres and square millimetres. Since \\(1\\\\text{ m} = 1000\\\\text{ mm}\\), it follows that \\(1\\\\text{ m}^2 = 1\\,000\\,000\\\\text{ mm}^2\\).',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 1\\,000\\,000\\\\text{ mm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square metres by 1,000,000.',
-        workingOut: '\\\\( A = 0.6 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 0.6 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 600\\\\,000\\\\text{ mm}^2 \\\\)',
+        workingOut: '\\\\( A = 600\\,000\\\\text{ mm}^2 \\\\)',
         graphData: null
       }
     ]
@@ -308,29 +308,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following area measurement into square millimetres:\\n\\(1.5\\\\text{ m}^2\\)',
     opts: [
-      { text: '\\(1\\\\,500\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(150\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(15\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(15\\\\,000\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
+      { text: '\\(1\\,500\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(150\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(15\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(15\\,000\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert square metres to square millimetres.',
-    solution: 'To convert from square metres (\\(m^2\\)) to square millimetres (\\(mm^2\\)), multiply by 1,000,000:\\n\\[1.5 \\\\times 1\\\\,000\\\\,000 = 1\\\\,500\\\\,000\\\\text{ mm}^2\\]',
+    solution: 'To convert from square metres (\\(m^2\\)) to square millimetres (\\(mm^2\\)), multiply by 1,000,000:\\n\\[1.5 \\\\times 1\\,000\\,000 = 1\\,500\\,000\\\\text{ mm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between square metres and square millimetres.',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 1\\\\,000\\\\,000\\\\text{ mm}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 1\\,000\\,000\\\\text{ mm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square metres by 1,000,000.',
-        workingOut: '\\\\( A = 1.5 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 1.5 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 1\\\\,500\\\\,000\\\\text{ mm}^2 \\\\)',
+        workingOut: '\\\\( A = 1\\,500\\,000\\\\text{ mm}^2 \\\\)',
         graphData: null
       }
     ]
@@ -350,29 +350,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following area measurement into square metres:\\n\\(1.8\\\\text{ km}^2\\)',
     opts: [
-      { text: '\\(1\\\\,800\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(180\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(18\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(180\\\\,000\\\\,000\\\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(1\\,800\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(180\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(18\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(180\\,000\\,000\\\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert square kilometres to square metres.',
-    solution: 'To convert from square kilometres (\\(km^2\\)) to square metres (\\(m^2\\)), multiply by \\(1000^2 = 1\\\\,000\\\\,000\\):\\n\\[1.8 \\\\times 1\\\\,000\\\\,000 = 1\\\\,800\\\\,000\\\\text{ m}^2\\]',
+    solution: 'To convert from square kilometres (\\(km^2\\)) to square metres (\\(m^2\\)), multiply by \\(1000^2 = 1\\,000\\,000\\):\\n\\[1.8 \\\\times 1\\,000\\,000 = 1\\,800\\,000\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Identify the conversion factor between square kilometres and square metres. Since \\(1\\\\text{ km} = 1000\\\\text{ m}\\), it follows that \\(1\\\\text{ km}^2 = 1\\\\,000\\\\,000\\\\text{ m}^2\\).',
-        workingOut: '\\\\( 1\\\\text{ km}^2 = 1\\\\,000\\\\,000\\\\text{ m}^2 \\\\)',
+        explanation: 'Identify the conversion factor between square kilometres and square metres. Since \\(1\\\\text{ km} = 1000\\\\text{ m}\\), it follows that \\(1\\\\text{ km}^2 = 1\\,000\\,000\\\\text{ m}^2\\).',
+        workingOut: '\\\\( 1\\\\text{ km}^2 = 1\\,000\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square kilometres by 1,000,000.',
-        workingOut: '\\\\( A = 1.8 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 1.8 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 1\\\\,800\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( A = 1\\,800\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       }
     ]
@@ -390,7 +390,7 @@ export const Y9_CH16E_QUESTIONS = [
     difficulty: 'easy',
     timeLimit: 60,
     type: 'multiple_choice',
-    question: 'Convert the following area measurement into square metres:\\n\\(45\\\\,000\\\\text{ cm}^2\\)',
+    question: 'Convert the following area measurement into square metres:\\n\\(45\\,000\\\\text{ cm}^2\\)',
     opts: [
       { text: '\\(4.5\\\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(45\\\\text{ m}^2\\)', imageUrl: '' },
@@ -399,17 +399,17 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Divide by 10,000 to convert square centimetres to square metres.',
-    solution: 'To convert from square centimetres (\\(cm^2\\)) to square metres (\\(m^2\\)), divide by \\(100^2 = 10\\\\,000\\):\\n\\[45\\\\,000 \\\\div 10\\\\,000 = 4.5\\\\text{ m}^2\\]',
+    solution: 'To convert from square centimetres (\\(cm^2\\)) to square metres (\\(m^2\\)), divide by \\(100^2 = 10\\,000\\):\\n\\[45\\,000 \\\\div 10\\,000 = 4.5\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Identify the conversion factor between square centimetres and square metres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2\\).',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2 \\\\)',
+        explanation: 'Identify the conversion factor between square centimetres and square metres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2\\).',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Divide the value in square centimetres by 10,000.',
-        workingOut: '\\\\( A = 45\\\\,000 \\\\div 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 45\\,000 \\\\div 10\\,000 \\\\)',
         graphData: null
       },
       {
@@ -434,29 +434,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following area measurement into square metres:\\n\\(0.25\\\\text{ km}^2\\)',
     opts: [
-      { text: '\\(250\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(25\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(250\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(25\\,000\\\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(2500\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(2\\\\,500\\\\,000\\\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(2\\,500\\,000\\\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert square kilometres to square metres.',
-    solution: 'To convert from square kilometres (\\(km^2\\)) to square metres (\\(m^2\\)), multiply by 1,000,000:\\n\\[0.25 \\\\times 1\\\\,000\\\\,000 = 250\\\\,000\\\\text{ m}^2\\]',
+    solution: 'To convert from square kilometres (\\(km^2\\)) to square metres (\\(m^2\\)), multiply by 1,000,000:\\n\\[0.25 \\\\times 1\\,000\\,000 = 250\\,000\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between square kilometres and square metres.',
-        workingOut: '\\\\( 1\\\\text{ km}^2 = 1\\\\,000\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ km}^2 = 1\\,000\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in square kilometres by 1,000,000.',
-        workingOut: '\\\\( A = 0.25 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 0.25 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 250\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( A = 250\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       }
     ]
@@ -483,17 +483,17 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Divide by 10,000 to convert square centimetres to square metres.',
-    solution: 'To convert from square centimetres (\\(cm^2\\)) to square metres (\\(m^2\\)), divide by 10,000:\\n\\[3200 \\\\div 10\\\\,000 = 0.32\\\\text{ m}^2\\]',
+    solution: 'To convert from square centimetres (\\(cm^2\\)) to square metres (\\(m^2\\)), divide by 10,000:\\n\\[3200 \\\\div 10\\,000 = 0.32\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between square centimetres and square metres.',
-        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\\\,000\\\\text{ cm}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ m}^2 = 10\\,000\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Divide the value in square centimetres by 10,000.',
-        workingOut: '\\\\( A = 3200 \\\\div 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 3200 \\\\div 10\\,000 \\\\)',
         graphData: null
       },
       {
@@ -519,14 +519,14 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'A table top measures \\(800\\\\text{ mm} \\\\times 1200\\\\text{ mm}\\).\\n\\nCalculate the area of the table top in square millimetres.',
     opts: [
-      { text: '\\(960\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(960\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
       { text: '\\(9600\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(96\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(9\\\\,600\\\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
+      { text: '\\(96\\,000\\\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(9\\,600\\,000\\\\text{ mm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Area of a rectangle = length * width.',
-    solution: 'Calculate the area of the table top in square millimetres:\\n\\[A = 800 \\\\times 1200 = 960\\\\,000\\\\text{ mm}^2\\]',
+    solution: 'Calculate the area of the table top in square millimetres:\\n\\[A = 800 \\\\times 1200 = 960\\,000\\\\text{ mm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -541,7 +541,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Calculate the final product in square millimetres.',
-        workingOut: '\\\\( A = 960\\\\,000\\\\text{ mm}^2 \\\\)',
+        workingOut: '\\\\( A = 960\\,000\\\\text{ mm}^2 \\\\)',
         graphData: null
       }
     ]
@@ -559,16 +559,16 @@ export const Y9_CH16E_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'A table top has an area of \\(960\\\\,000\\\\text{ mm}^2\\).\\n\\nExpress this area in square centimetres.',
+    question: 'A table top has an area of \\(960\\,000\\\\text{ mm}^2\\).\\n\\nExpress this area in square centimetres.',
     opts: [
       { text: '\\(9600\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(96\\\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(96\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(960\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(96\\\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Divide by 100 to convert square millimetres to square centimetres.',
-    solution: 'To convert from square millimetres to square centimetres, divide by 100:\\n\\[960\\\\,000 \\\\div 100 = 9600\\\\text{ cm}^2\\]',
+    solution: 'To convert from square millimetres to square centimetres, divide by 100:\\n\\[960\\,000 \\\\div 100 = 9600\\\\text{ cm}^2\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -578,7 +578,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Divide the area value in square millimetres by 100.',
-        workingOut: '\\\\( A = 960\\\\,000 \\\\div 100 \\\\)',
+        workingOut: '\\\\( A = 960\\,000 \\\\div 100 \\\\)',
         graphData: null
       },
       {
@@ -647,7 +647,7 @@ export const Y9_CH16E_QUESTIONS = [
     opts: [
       { text: '\\(9600\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(960\\\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(96\\\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(96\\,000\\\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(8000\\\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: 0,
@@ -772,14 +772,14 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'A rectangular piece of land measures \\(260\\\\text{ m}\\) by \\(430\\\\text{ m}\\).\\n\\nCalculate the area of the land in square metres.',
     opts: [
-      { text: '\\(111\\\\,800\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(111\\,800\\\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(1118\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(11\\\\,180\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(1\\\\,118\\\\,000\\\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(11\\,180\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(1\\,118\\,000\\\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply the dimensions of the land to get the area.',
-    solution: 'Calculate the area of the land in square metres:\\n\\[A = 260 \\\\times 430 = 111\\\\,800\\\\text{ m}^2\\]',
+    solution: 'Calculate the area of the land in square metres:\\n\\[A = 260 \\\\times 430 = 111\\,800\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -794,7 +794,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Multiply the numbers to get the final area.',
-        workingOut: '\\\\( A = 111\\\\,800\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( A = 111\\,800\\\\text{ m}^2 \\\\)',
         graphData: null
       }
     ]
@@ -812,7 +812,7 @@ export const Y9_CH16E_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'A rectangular piece of land has an area of \\(111\\\\,800\\\\text{ m}^2\\).\\n\\nCalculate the area of the land in hectares.',
+    question: 'A rectangular piece of land has an area of \\(111\\,800\\\\text{ m}^2\\).\\n\\nCalculate the area of the land in hectares.',
     opts: [
       { text: '\\(11.18\\\\text{ ha}\\)', imageUrl: '' },
       { text: '\\(1.118\\\\text{ ha}\\)', imageUrl: '' },
@@ -821,17 +821,17 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Divide by 10,000 to convert square metres to hectares.',
-    solution: 'To convert from square metres to hectares (\\(ha\\)), divide by 10,000:\\n\\[111\\\\,800 \\\\div 10\\\\,000 = 11.18\\\\text{ ha}\\]',
+    solution: 'To convert from square metres to hectares (\\(ha\\)), divide by 10,000:\\n\\[111\\,800 \\\\div 10\\,000 = 11.18\\\\text{ ha}\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor from square metres to hectares. One hectare is equal to 10,000 square metres.',
-        workingOut: '\\\\( 1\\\\text{ ha} = 10\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ ha} = 10\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Divide the value in square metres by 10,000.',
-        workingOut: '\\\\( A = 111\\\\,800 \\\\div 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 111\\,800 \\\\div 10\\,000 \\\\)',
         graphData: null
       },
       {
@@ -863,22 +863,22 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Convert hectares to square metres first, then divide by the width.',
-    solution: 'First, convert the area from hectares to square metres by multiplying by 10,000:\\n\\[2.7 \\\\times 10\\\\,000 = 27\\\\,000\\\\text{ m}^2\\]\\nThen, divide by the width (135 m) to find the length:\\n\\[\\\\text{Length} = 27\\\\,000 \\\\div 135 = 200\\\\text{ m}\\]',
+    solution: 'First, convert the area from hectares to square metres by multiplying by 10,000:\\n\\[2.7 \\\\times 10\\,000 = 27\\,000\\\\text{ m}^2\\]\\nThen, divide by the width (135 m) to find the length:\\n\\[\\\\text{Length} = 27\\,000 \\\\div 135 = 200\\\\text{ m}\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Convert the area from hectares (ha) to square metres (\\(m^2\\)) using the conversion factor \\(1\\\\text{ ha} = 10\\\\,000\\\\text{ m}^2\\).',
-        workingOut: '\\\\( A = 2.7 \\\\times 10\\\\,000 = 27\\\\,000\\\\text{ m}^2 \\\\)',
+        explanation: 'Convert the area from hectares (ha) to square metres (\\(m^2\\)) using the conversion factor \\(1\\\\text{ ha} = 10\\,000\\\\text{ m}^2\\).',
+        workingOut: '\\\\( A = 2.7 \\\\times 10\\,000 = 27\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'State the relationship between area, width, and length for a rectangle: Area = width x length.',
-        workingOut: '\\\\( 27\\\\,000 = 135 \\\\times \\\\text{Length} \\\\)',
+        workingOut: '\\\\( 27\\,000 = 135 \\\\times \\\\text{Length} \\\\)',
         graphData: null
       },
       {
         explanation: 'Solve for the length by dividing the total area in square metres by the width.',
-        workingOut: '\\\\( \\\\text{Length} = 27\\\\,000 \\\\div 135 \\\\)',
+        workingOut: '\\\\( \\\\text{Length} = 27\\,000 \\\\div 135 \\\\)',
         graphData: null
       },
       {
@@ -903,14 +903,14 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'A cattle station has an area of \\(260\\\\text{ km}^2\\). What is its area in hectares?',
     opts: [
-      { text: '\\(26\\\\,000\\\\text{ ha}\\)', imageUrl: '' },
+      { text: '\\(26\\,000\\\\text{ ha}\\)', imageUrl: '' },
       { text: '\\(2600\\\\text{ ha}\\)', imageUrl: '' },
-      { text: '\\(260\\\\,000\\\\text{ ha}\\)', imageUrl: '' },
-      { text: '\\(2600\\\\,000\\\\text{ ha}\\)', imageUrl: '' }
+      { text: '\\(260\\,000\\\\text{ ha}\\)', imageUrl: '' },
+      { text: '\\(2600\\,000\\\\text{ ha}\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: '1 square kilometre equals 100 hectares.',
-    solution: 'Since \\(1\\\\text{ km}^2 = 100\\\\text{ ha}\\), multiply the area in square kilometres by 100:\\n\\[260 \\\\times 100 = 26\\\\,000\\\\text{ ha}\\]',
+    solution: 'Since \\(1\\\\text{ km}^2 = 100\\\\text{ ha}\\), multiply the area in square kilometres by 100:\\n\\[260 \\\\times 100 = 26\\,000\\\\text{ ha}\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -925,7 +925,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Calculate the final area value in hectares.',
-        workingOut: '\\\\( A = 26\\\\,000\\\\text{ ha} \\\\)',
+        workingOut: '\\\\( A = 26\\,000\\\\text{ ha} \\\\)',
         graphData: null
       }
     ]
@@ -946,29 +946,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'A farm has an area of \\(480\\\\text{ ha}\\).\\n\\nCalculate the area in square metres.',
     opts: [
-      { text: '\\(4\\\\,800\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(480\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(48\\\\,000\\\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(48\\\\,000\\\\,000\\\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(4\\,800\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(480\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(48\\,000\\\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(48\\,000\\,000\\\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 10,000 to convert hectares to square metres.',
-    solution: 'To convert from hectares to square metres, multiply by 10,000:\\n\\[480 \\\\times 10\\\\,000 = 4\\\\,800\\\\,000\\\\text{ m}^2\\]',
+    solution: 'To convert from hectares to square metres, multiply by 10,000:\\n\\[480 \\\\times 10\\,000 = 4\\,800\\,000\\\\text{ m}^2\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor from hectares to square metres.',
-        workingOut: '\\\\( 1\\\\text{ ha} = 10\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ ha} = 10\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in hectares by 10,000.',
-        workingOut: '\\\\( A = 480 \\\\times 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A = 480 \\\\times 10\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted area.',
-        workingOut: '\\\\( A = 4\\\\,800\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( A = 4\\,800\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       }
     ]
@@ -1038,7 +1038,7 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Find the area in square metres first, then divide by 10,000.',
-    solution: 'First, calculate the area in square metres:\\n\\[A = 50 \\\\times 150 = 7500\\\\text{ m}^2\\]\\nThen, convert to hectares by dividing by 10,000:\\n\\[7500 \\\\div 10\\\\,000 = 0.75\\\\text{ ha}\\]',
+    solution: 'First, calculate the area in square metres:\\n\\[A = 50 \\\\times 150 = 7500\\\\text{ m}^2\\]\\nThen, convert to hectares by dividing by 10,000:\\n\\[7500 \\\\div 10\\,000 = 0.75\\\\text{ ha}\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -1048,12 +1048,12 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'State the conversion factor from square metres to hectares.',
-        workingOut: '\\\\( 1\\\\text{ ha} = 10\\\\,000\\\\text{ m}^2 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ ha} = 10\\,000\\\\text{ m}^2 \\\\)',
         graphData: null
       },
       {
         explanation: 'Convert the area to hectares by dividing by 10,000.',
-        workingOut: '\\\\( A_{\\\\text{hectares}} = 7500 \\\\div 10\\\\,000 \\\\)',
+        workingOut: '\\\\( A_{\\\\text{hectares}} = 7500 \\\\div 10\\,000 \\\\)',
         graphData: null
       },
       {
@@ -1121,29 +1121,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following volume measurement into cubic centimetres:\\n\\(7\\\\text{ m}^3\\)',
     opts: [
-      { text: '\\(7\\\\,000\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(700\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(70\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(70\\\\,000\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' }
+      { text: '\\(7,000,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(700,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(70,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(70,000,000\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert cubic metres to cubic centimetres.',
-    solution: 'To convert from cubic metres (\\(m^3\\)) to cubic centimetres (\\(cm^3\\)), multiply by \\(100^3 = 1\\\\,000\\\\,000\\):\\n\\[7 \\\\times 1\\\\,000\\\\,000 = 7\\\\,000\\\\,000\\\\text{ cm}^3\\]',
+    solution: 'To convert from cubic metres (\\(m^3\\)) to cubic centimetres (\\(cm^3\\)), multiply by \\(100^3 = 1\\,000\\,000\\):\\n\\[7 \\\\times 1\\,000\\,000 = 7\\,000\\,000\\\\text{ cm}^3\\]',
     graphData: null,
     solutionSteps: [
       {
-        explanation: 'Identify the conversion factor between cubic metres and cubic centimetres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^3 = 100^3\\\\text{ cm}^3 = 1\\\\,000\\\\,000\\\\text{ cm}^3\\).',
-        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\\\,000\\\\,000\\\\text{ cm}^3 \\\\)',
+        explanation: 'Identify the conversion factor between cubic metres and cubic centimetres. Since \\(1\\\\text{ m} = 100\\\\text{ cm}\\), it follows that \\(1\\\\text{ m}^3 = 100^3\\\\text{ cm}^3 = 1\\,000\\,000\\\\text{ cm}^3\\).',
+        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\,000\\,000\\\\text{ cm}^3 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in cubic metres by 1,000,000.',
-        workingOut: '\\\\( V = 7 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( V = 7 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted volume.',
-        workingOut: '\\\\( V = 7\\\\,000\\\\,000\\\\text{ cm}^3 \\\\)',
+        workingOut: '\\\\( V = 7\\,000\\,000\\\\text{ cm}^3 \\\\)',
         graphData: null
       }
     ]
@@ -1165,7 +1165,7 @@ export const Y9_CH16E_QUESTIONS = [
     opts: [
       { text: '\\(7000\\\\text{ L}\\)', imageUrl: '' },
       { text: '\\(700\\\\text{ L}\\)', imageUrl: '' },
-      { text: '\\(70\\\\,000\\\\text{ L}\\)', imageUrl: '' },
+      { text: '\\(70\\,000\\\\text{ L}\\)', imageUrl: '' },
       { text: '\\(70\\\\text{ L}\\)', imageUrl: '' }
     ],
     answer: 0,
@@ -1248,29 +1248,29 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following volume measurement into cubic centimetres:\\n\\(0.56\\\\text{ m}^3\\)',
     opts: [
-      { text: '\\(560\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(56\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(560\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(56\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(5600\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(5\\\\,600\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' }
+      { text: '\\(5\\,600\\,000\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1,000,000 to convert cubic metres to cubic centimetres.',
-    solution: 'To convert from cubic metres (\\(m^3\\)) to cubic centimetres (\\(cm^3\\)), multiply by 1,000,000:\\n\\[0.56 \\\\times 1\\\\,000\\\\,000 = 560\\\\,000\\\\text{ cm}^3\\]',
+    solution: 'To convert from cubic metres (\\(m^3\\)) to cubic centimetres (\\(cm^3\\)), multiply by 1,000,000:\\n\\[0.56 \\\\times 1\\,000\\,000 = 560\\,000\\\\text{ cm}^3\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between cubic metres and cubic centimetres.',
-        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\\\,000\\\\,000\\\\text{ cm}^3 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\,000\\,000\\\\text{ cm}^3 \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value in cubic metres by 1,000,000.',
-        workingOut: '\\\\( V = 0.56 \\\\times 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( V = 0.56 \\\\times 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
         explanation: 'Calculate the final converted volume.',
-        workingOut: '\\\\( V = 560\\\\,000\\\\text{ cm}^3 \\\\)',
+        workingOut: '\\\\( V = 560\\,000\\\\text{ cm}^3 \\\\)',
         graphData: null
       }
     ]
@@ -1288,7 +1288,7 @@ export const Y9_CH16E_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Convert the following volume measurement into cubic metres:\\n\\(765\\\\,000\\\\text{ cm}^3\\)',
+    question: 'Convert the following volume measurement into cubic metres:\\n\\(765\\,000\\\\text{ cm}^3\\)',
     opts: [
       { text: '\\(0.765\\\\text{ m}^3\\)', imageUrl: '' },
       { text: '\\(7.65\\\\text{ m}^3\\)', imageUrl: '' },
@@ -1297,17 +1297,17 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Divide by 1,000,000 to convert cubic centimetres to cubic metres.',
-    solution: 'To convert from cubic centimetres (\\(cm^3\\)) to cubic metres (\\(m^3\\)), divide by 1,000,000:\\n\\[765\\\\,000 \\\\div 1\\\\,000\\\\,000 = 0.765\\\\text{ m}^3\\]',
+    solution: 'To convert from cubic centimetres (\\(cm^3\\)) to cubic metres (\\(m^3\\)), divide by 1,000,000:\\n\\[765\\,000 \\\\div 1\\,000\\,000 = 0.765\\\\text{ m}^3\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between cubic centimetres and cubic metres.',
-        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\\\,000\\\\,000\\\\text{ cm}^3 \\\\)',
+        workingOut: '\\\\( 1\\\\text{ m}^3 = 1\\,000\\,000\\\\text{ cm}^3 \\\\)',
         graphData: null
       },
       {
         explanation: 'Divide the value in cubic centimetres by 1,000,000.',
-        workingOut: '\\\\( V = 765\\\\,000 \\\\div 1\\\\,000\\\\,000 \\\\)',
+        workingOut: '\\\\( V = 765\\,000 \\\\div 1\\,000\\,000 \\\\)',
         graphData: null
       },
       {
@@ -1457,7 +1457,7 @@ export const Y9_CH16E_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Convert the following volume measurement into millilitres:\\n\\(52\\\\,000\\\\text{ mm}^3\\)',
+    question: 'Convert the following volume measurement into millilitres:\\n\\(52\\,000\\\\text{ mm}^3\\)',
     opts: [
       { text: '\\(52\\\\text{ mL}\\)', imageUrl: '' },
       { text: '\\(5.2\\\\text{ mL}\\)', imageUrl: '' },
@@ -1466,7 +1466,7 @@ export const Y9_CH16E_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Divide by 1000 to convert cubic millimetres to millilitres (since 1 mL = 1000 mm^3).',
-    solution: 'Since \\(1\\\\text{ cm}^3 = 1000\\\\text{ mm}^3\\) and \\(1\\\\text{ mL} = 1\\\\text{ cm}^3\\), it follows that \\(1\\\\text{ mL} = 1000\\\\text{ mm}^3\\). Divide the value by 1000:\\n\\[52\\\\,000 \\\\div 1000 = 52\\\\text{ mL}\\]',
+    solution: 'Since \\(1\\\\text{ cm}^3 = 1000\\\\text{ mm}^3\\) and \\(1\\\\text{ mL} = 1\\\\text{ cm}^3\\), it follows that \\(1\\\\text{ mL} = 1000\\\\text{ mm}^3\\). Divide the value by 1000:\\n\\[52\\,000 \\\\div 1000 = 52\\\\text{ mL}\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -1476,7 +1476,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Divide the value in cubic millimetres by 1000.',
-        workingOut: '\\\\( V = 52\\\\,000 \\\\div 1000 \\\\)',
+        workingOut: '\\\\( V = 52\\,000 \\\\div 1000 \\\\)',
         graphData: null
       },
       {
@@ -1503,7 +1503,7 @@ export const Y9_CH16E_QUESTIONS = [
     opts: [
       { text: '\\(2700\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(270\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(27\\\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(27\\,000\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(0.0027\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
@@ -1585,14 +1585,14 @@ export const Y9_CH16E_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Convert the following volume measurement into cubic millimetres:\\n\\(26\\\\text{ mL}\\)',
     opts: [
-      { text: '\\(26\\\\,000\\\\text{ mm}^3\\)', imageUrl: '' },
+      { text: '\\(26\\,000\\\\text{ mm}^3\\)', imageUrl: '' },
       { text: '\\(2600\\\\text{ mm}^3\\)', imageUrl: '' },
       { text: '\\(260\\\\text{ mm}^3\\)', imageUrl: '' },
-      { text: '\\(260\\\\,000\\\\text{ mm}^3\\)', imageUrl: '' }
+      { text: '\\(260\\,000\\\\text{ mm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: 'Multiply by 1000 to convert millilitres to cubic millimetres.',
-    solution: 'Since \\(1\\\\text{ mL} = 1000\\\\text{ mm}^3\\), multiply the value by 1000:\\n\\[26 \\\\times 1000 = 26\\\\,000\\\\text{ mm}^3\\]',
+    solution: 'Since \\(1\\\\text{ mL} = 1000\\\\text{ mm}^3\\), multiply the value by 1000:\\n\\[26 \\\\times 1000 = 26\\,000\\\\text{ mm}^3\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -1607,7 +1607,7 @@ export const Y9_CH16E_QUESTIONS = [
       },
       {
         explanation: 'Calculate the final converted volume.',
-        workingOut: '\\\\( V = 26\\\\,000\\\\text{ mm}^3 \\\\)',
+        workingOut: '\\\\( V = 26\\,000\\\\text{ mm}^3 \\\\)',
         graphData: null
       }
     ]
@@ -1630,7 +1630,7 @@ export const Y9_CH16E_QUESTIONS = [
     opts: [
       { text: '\\(9600\\\\text{ tiles}\\)', imageUrl: '' },
       { text: '\\(960\\\\text{ tiles}\\)', imageUrl: '' },
-      { text: '\\(96\\\\,000\\\\text{ tiles}\\)', imageUrl: '' },
+      { text: '\\(96\\,000\\\\text{ tiles}\\)', imageUrl: '' },
       { text: '\\(4800\\\\text{ tiles}\\)', imageUrl: '' }
     ],
     answer: 0,
