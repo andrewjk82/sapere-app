@@ -653,22 +653,23 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q4-board',
-        boundingbox: [-4,6,14,-4],
+        boundingbox: [-5, 8, 12, -5],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [0,2], visible: false },
-          { type: 'point', id: 'B', coords: [0,-2], visible: false },
-          { type: 'point', id: 'C', coords: [10,3], visible: false },
-          { type: 'point', id: 'D', coords: [10,-1], visible: false },
-          { type: 'point', id: 'O1', coords: [0,0], visible: false },
-          { type: 'point', id: 'O2', coords: [10,1], visible: false },
-          { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
-          { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
-          { type: 'segment', from: 'A', to: 'C', color: 'blue' },
-          { type: 'segment', from: 'B', to: 'D', color: 'blue' },
-          { type: 'segment', from: 'O1', to: 'O2', color: 'red', dash: 2 },
-          { type: 'text', coords: [5,3.2], content: '5 m' },
-          { type: 'text', coords: [-1.2,0.8], content: '6 m' }
+          { type: 'point', id: 'L1', coords: [0, 4], visible: false },
+          { type: 'point', id: 'L2', coords: [0, -4], visible: false },
+          { type: 'point', id: 'OL', coords: [0, 0], visible: false },
+          { type: 'point', id: 'R1', coords: [8, 4.8], visible: false },
+          { type: 'point', id: 'R2', coords: [8, -3.2], visible: false },
+          { type: 'point', id: 'OR', coords: [8, 0.8], visible: false },
+          { type: 'arc', center: 'OL', from: 'L2', to: 'L1', color: 'blue' },
+          { type: 'arc', center: 'OR', from: 'R2', to: 'R1', color: 'blue' },
+          { type: 'arc', center: 'OR', from: 'R1', to: 'R2', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'L1', to: 'R1', color: 'blue' },
+          { type: 'segment', from: 'L2', to: 'R2', color: 'blue' },
+          { type: 'segment', from: 'OL', to: 'OR', color: 'red', dash: 2 },
+          { type: 'text', coords: [4.0, 5.2], content: '6 m' },
+          { type: 'text', coords: [-2.0, 0.0], content: '8 m' }
         ]
       }
     },
