@@ -1688,7 +1688,7 @@ export const CURRICULUM_DATA = {
     {
       id: 'y9-2',
       title: "Chapter 2: Pythagoras' theorem and surds",
-      modules: 9,
+      modules: 10,
       topics: [
         { id: 'y9-2a', code: '2A', title: "Review of Pythagoras' theorem and applications" },
         { id: 'y9-2b', code: '2B', title: 'Simplifying surds' },
@@ -1698,7 +1698,8 @@ export const CURRICULUM_DATA = {
         { id: 'y9-2f', code: '2F', title: 'Rationalising the denominator' },
         { id: 'y9-2g', code: '2G', title: "Applications of Pythagoras' theorem in three dimensions" },
         { id: 'y9-2h', code: '2H', title: 'Binomial denominators' },
-        { id: 'y9-2i', code: '2I', title: 'Irrational numbers and surds' }
+        { id: 'y9-2i', code: '2I', title: 'Irrational numbers and surds' },
+        { id: 'y9-2j', code: '2J', title: 'Revision' }
       ]
     },
     {
@@ -1871,14 +1872,15 @@ export const CURRICULUM_DATA = {
     {
       id: 'y9-16',
       title: 'Chapter 16: Measurement—areas, volumes and time',
-      modules: 6,
+      modules: 7,
       topics: [
         { id: 'y9-16a', code: '16A', title: 'Review of area' },
         { id: 'y9-16b', code: '16B', title: 'Review of surface area of a prism' },
         { id: 'y9-16c', code: '16C', title: 'Surface area of a cylinder' },
         { id: 'y9-16d', code: '16D', title: 'Volumes' },
         { id: 'y9-16e', code: '16E', title: 'Conversion of units' },
-        { id: 'y9-16f', code: '16F', title: 'Small and large units of measurement' }
+        { id: 'y9-16f', code: '16F', title: 'Small and large units of measurement' },
+        { id: 'y9-16g', code: '16G', title: 'Revision' }
       ]
     },
     {
