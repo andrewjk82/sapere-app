@@ -2500,6 +2500,24 @@ export const Y9_CH16D_QUESTIONS = [
             color: 'blue',
             dash: 2
           },
+          // Cap where the narrow cylinder meets the underside of the wide
+          // cylinder — without this rim the two vertical sides (A-C, B-D)
+          // just stop in mid-air with nothing connecting them.
+          {
+            type: 'curve',
+            x: '2 * Math.cos(t)',
+            y: '6 + 0.6 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          {
+            type: 'curve',
+            x: '2 * Math.cos(t)',
+            y: '6 + 0.6 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
 
           // Top cylinder lines
           { type: 'segment', from: 'E', to: 'G', color: 'blue' },
