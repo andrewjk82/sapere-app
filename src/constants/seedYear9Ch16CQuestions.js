@@ -659,16 +659,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front U-shape (center (0,2), rx=4, ry=2, t from pi to 2*pi)
           {
             type: 'curve',
-            x: 't => 4 * Math.cos(t)',
-            y: 't => 2 * Math.sin(t) + 2',
+            x: function(t) { return 4 * Math.cos(t); },
+            y: function(t) { return 2 * Math.sin(t) + 2; },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back U-shape (center (5,4), rx=4, ry=2, t from pi to 2*pi)
           {
             type: 'curve',
-            x: 't => 5 + 4 * Math.cos(t)',
-            y: 't => 4 + 2 * Math.sin(t)',
+            x: function(t) { return 5 + 4 * Math.cos(t); },
+            y: function(t) { return 4 + 2 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
@@ -740,16 +740,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front curve t from pi to 2pi
           {
             type: 'curve',
-            x: 't => 5 * Math.cos(t)',
-            y: 't => 1.5 * Math.sin(t)',
+            x: function(t) { return 5 * Math.cos(t); },
+            y: function(t) { return 1.5 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back curve t from 0 to pi (hidden/dashed)
           {
             type: 'curve',
-            x: 't => 5 * Math.cos(t)',
-            y: 't => 1.5 * Math.sin(t)',
+            x: function(t) { return 5 * Math.cos(t); },
+            y: function(t) { return 1.5 * Math.sin(t); },
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
@@ -759,16 +759,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front curve
           {
             type: 'curve',
-            x: 't => 5 * Math.cos(t)',
-            y: 't => 4 + 1.5 * Math.sin(t)',
+            x: function(t) { return 5 * Math.cos(t); },
+            y: function(t) { return 4 + 1.5 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back curve (dashed)
           {
             type: 'curve',
-            x: 't => 5 * Math.cos(t)',
-            y: 't => 4 + 1.5 * Math.sin(t)',
+            x: function(t) { return 5 * Math.cos(t); },
+            y: function(t) { return 4 + 1.5 * Math.sin(t); },
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
@@ -778,8 +778,8 @@ export const Y9_CH16C_QUESTIONS = [
           // Full ellipse for the very top (front visible, back visible)
           {
             type: 'curve',
-            x: 't => 2 * Math.cos(t)',
-            y: 't => 9 + 0.6 * Math.sin(t)',
+            x: function(t) { return 2 * Math.cos(t); },
+            y: function(t) { return 9 + 0.6 * Math.sin(t); },
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -788,8 +788,8 @@ export const Y9_CH16C_QUESTIONS = [
           // Front visible curve (sitting on bottom cylinder top)
           {
             type: 'curve',
-            x: 't => 2 * Math.cos(t)',
-            y: 't => 4 + 0.6 * Math.sin(t)',
+            x: function(t) { return 2 * Math.cos(t); },
+            y: function(t) { return 4 + 0.6 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
@@ -1026,16 +1026,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Bottom curve: 180 to 270 to 360/0
           {
             type: 'curve',
-            x: 't => 6 * Math.cos(t)',
-            y: 't => -3 + 1.8 * Math.sin(t)',
+            x: function(t) { return 6 * Math.cos(t); },
+            y: function(t) { return -3 + 1.8 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Top curve: 180 to 270 to 360/0
           {
             type: 'curve',
-            x: 't => 6 * Math.cos(t)',
-            y: 't => 1 + 1.8 * Math.sin(t)',
+            x: function(t) { return 6 * Math.cos(t); },
+            y: function(t) { return 1 + 1.8 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
@@ -1045,16 +1045,16 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'segment', from: 'O2', to: 'Q0', color: 'blue' },
           {
             type: 'curve',
-            x: 't => 6 * Math.cos(t)',
-            y: 't => -3 + 1.8 * Math.sin(t)',
+            x: function(t) { return 6 * Math.cos(t); },
+            y: function(t) { return -3 + 1.8 * Math.sin(t); },
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
           },
           {
             type: 'curve',
-            x: 't => 6 * Math.cos(t)',
-            y: 't => 1 + 1.8 * Math.sin(t)',
+            x: function(t) { return 6 * Math.cos(t); },
+            y: function(t) { return 1 + 1.8 * Math.sin(t); },
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
