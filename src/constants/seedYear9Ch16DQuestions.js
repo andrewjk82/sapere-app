@@ -1519,16 +1519,16 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the regular hexagonal prism, given that the cross-sectional area of its hexagonal base is \\(52.5\\\\text{ cm}^2\\) and the length of the prism is \\(14\\\\text{ cm}\\).',
+    question: 'Calculate the volume of the regular hexagonal prism with side length \\(6\\\\text{ cm}\\) and length \\(10\\\\text{ cm}\\). (Round the final answer to one decimal place.)',
     opts: [
-      { text: '\\(735\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(840\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(680\\\\text{ cm}^3\\)', imageUrl: '' },
-      { text: '\\(980\\\\text{ cm}^3\\)', imageUrl: '' }
+      { text: '\\(935.3\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(820.5\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(750.8\\\\text{ cm}^3\\)', imageUrl: '' },
+      { text: '\\(1050.2\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
-    hint: 'Use the volume formula for a prism: Volume = base area * length.',
-    solution: 'Given the base area of the hexagonal face:\\n\\[A = 52.5\\\\text{ cm}^2\\]\\nAnd the length of the prism:\\n\\[l = 14\\\\text{ cm}\\]\\n\\nCalculate the volume:\\n\\[V = A \\\\times l = 52.5 \\\\times 14 = 735\\\\text{ cm}^3\\]',
+    hint: 'A regular hexagon is composed of 6 equilateral triangles. Area of base = 6 * (sqrt(3)/4) * s^2.',
+    solution: 'Calculate the area of the regular hexagon base with side length \\(s = 6\\\\text{ cm}\\):\\n\\[A = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times s^2 = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times 36 = 54\\\\sqrt{3}\\\\text{ cm}^2 \\\\approx 93.53\\\\text{ cm}^2\\]\\nMultiply by the length of the prism:\\n\\[V = A \\\\times l = 54\\\\sqrt{3} \\\\times 10 = 540\\\\sqrt{3}\\\\text{ cm}^3 \\\\approx 935.3\\\\text{ cm}^3\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16d-q3j-board',
@@ -1578,25 +1578,25 @@ export const Y9_CH16D_QUESTIONS = [
           { type: 'segment', from: 'K6', to: 'K1', color: 'blue', dash: 2 },
 
           // Labels
-          { type: 'text', coords: [-1.2, 0.4], content: 'A = 52.5 cm²' },
-          { type: 'text', coords: [5.2, 0.4], content: '14 cm' }
+          { type: 'text', coords: [0.0, 2.8], content: '6 cm' },
+          { type: 'text', coords: [5.2, 0.4], content: '10 cm' }
         ]
       }
     },
     solutionSteps: [
       {
-        explanation: 'State the base area of the hexagonal face.',
-        workingOut: '\\\\( A = 52.5\\\\text{ cm}^2 \\\\)',
+        explanation: 'Calculate the base area of the regular hexagon. A regular hexagon with side length s = 6 cm consists of 6 equilateral triangles.',
+        workingOut: '\\\\( A = 6 \\\\times \\\\frac{\\\\sqrt{3}}{4} \\\\times 6^2 = 54\\\\sqrt{3}\\\\text{ cm}^2 \\\\approx 93.53\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
-        explanation: 'Substitute this base area and the length (l = 14 cm) into the volume formula.',
-        workingOut: '\\\\( V = A \\\\times l = 52.5 \\\\times 14 \\\\)',
+        explanation: 'Multiply the base area by the length of the prism (l = 10 cm) to find the volume.',
+        workingOut: '\\\\( V = 54\\\\sqrt{3} \\\\times 10 = 540\\\\sqrt{3}\\\\text{ cm}^3 \\\\approx 935.3\\\\text{ cm}^3 \\\\)',
         graphData: null
       },
       {
-        explanation: 'Calculate the final volume.',
-        workingOut: '\\\\( V = 735\\\\text{ cm}^3 \\\\)',
+        explanation: 'Round the final volume to one decimal place.',
+        workingOut: '\\\\( V \\\\approx 935.3\\\\text{ cm}^3 \\\\)',
         graphData: null
       }
     ]
