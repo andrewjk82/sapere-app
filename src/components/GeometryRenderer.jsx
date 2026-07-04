@@ -386,6 +386,7 @@ const GeometryRenderer = ({ data, style }) => {
                 strokeColor: resolveColor(el.color ?? 'black'),
                 strokeWidth: el.strokeWidth ?? 1.5,
                 fillColor:   'none',
+                dash:        el.dash ?? 0,
                 fixed:       true,
                 highlight:   false,
               });

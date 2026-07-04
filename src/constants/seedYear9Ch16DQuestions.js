@@ -303,29 +303,29 @@ export const Y9_CH16D_QUESTIONS = [
           // Draw front curved face using Bezier curves to represent the hourglass curved look
           {
             type: 'curve',
-            x: function(t) { return t; },
-            y: function(t) { return 0; },
+            x: 't',
+            y: '0',
             tRange: [0, 4],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 4 + 0.5 * Math.sin(t * Math.PI); },
-            y: function(t) { return 3 * t; },
+            x: '4 + 0.5 * Math.sin(t * Math.PI)',
+            y: '3 * t',
             tRange: [0, 1],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return t; },
-            y: function(t) { return 3; },
+            x: 't',
+            y: '3',
             tRange: [0, 4],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 0.5 * Math.sin(t * Math.PI); },
-            y: function(t) { return 3 * t; },
+            x: '0.5 * Math.sin(t * Math.PI)',
+            y: '3 * t',
             tRange: [0, 1],
             color: 'blue'
           },
@@ -339,16 +339,16 @@ export const Y9_CH16D_QUESTIONS = [
           // Back face top curve
           {
             type: 'curve',
-            x: function(t) { return 4 + t; },
-            y: function(t) { return 5.5; },
+            x: '4 + t',
+            y: '5.5',
             tRange: [0, 4],
             color: 'blue'
           },
           // Back face right curve
           {
             type: 'curve',
-            x: function(t) { return 8 + 0.5 * Math.sin(t * Math.PI); },
-            y: function(t) { return 2.5 + 3 * t; },
+            x: '8 + 0.5 * Math.sin(t * Math.PI)',
+            y: '2.5 + 3 * t',
             tRange: [0, 1],
             color: 'blue'
           },
@@ -426,8 +426,8 @@ export const Y9_CH16D_QUESTIONS = [
           // Bottom shaded ellipse
           {
             type: 'curve',
-            x: function(t) { return 3 * Math.cos(t); },
-            y: function(t) { return 0.8 * Math.sin(t); },
+            x: '3 * Math.cos(t)',
+            y: '0.8 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue',
             fillColor: 'blue',
@@ -437,8 +437,8 @@ export const Y9_CH16D_QUESTIONS = [
           // Top ellipse
           {
             type: 'curve',
-            x: function(t) { return 3 * Math.cos(t); },
-            y: function(t) { return 8 + 0.8 * Math.sin(t); },
+            x: '3 * Math.cos(t)',
+            y: '8 + 0.8 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -502,8 +502,8 @@ export const Y9_CH16D_QUESTIONS = [
           // Front semi-cylinder points (y decreases, so it curves down)
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 1.5 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '1.5 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             fillColor: 'blue',
@@ -512,8 +512,8 @@ export const Y9_CH16D_QUESTIONS = [
           // Back semi-cylinder curves (dashed)
           {
             type: 'curve',
-            x: function(t) { return 4 + 4 * Math.cos(t); },
-            y: function(t) { return 2.5 + 1.5 * Math.sin(t); },
+            x: '4 + 4 * Math.cos(t)',
+            y: '2.5 + 1.5 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
@@ -1821,23 +1821,23 @@ export const Y9_CH16D_QUESTIONS = [
           // Ellipses using curve
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 0.8 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '0.8 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 0.8 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '0.8 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
           },
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 6 + 0.8 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '6 + 0.8 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -1910,23 +1910,23 @@ export const Y9_CH16D_QUESTIONS = [
           // Ellipses using curve
           {
             type: 'curve',
-            x: function(t) { return 10 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '10 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 10 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '10 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
           },
           {
             type: 'curve',
-            x: function(t) { return 10 * Math.cos(t); },
-            y: function(t) { return 15 + 2 * Math.sin(t); },
+            x: '10 * Math.cos(t)',
+            y: '15 + 2 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -1992,15 +1992,15 @@ export const Y9_CH16D_QUESTIONS = [
 
           {
             type: 'curve',
-            x: function(t) { return 1.2 * Math.cos(t); },
-            y: function(t) { return 4 * Math.sin(t); },
+            x: '1.2 * Math.cos(t)',
+            y: '4 * Math.sin(t)',
             tRange: [0.5 * Math.PI, 1.5 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 1.2 * Math.cos(t); },
-            y: function(t) { return 4 * Math.sin(t); },
+            x: '1.2 * Math.cos(t)',
+            y: '4 * Math.sin(t)',
             tRange: [-0.5 * Math.PI, 0.5 * Math.PI],
             color: 'blue',
             dash: 2
@@ -2008,8 +2008,8 @@ export const Y9_CH16D_QUESTIONS = [
 
           {
             type: 'curve',
-            x: function(t) { return 8 + 1.2 * Math.cos(t); },
-            y: function(t) { return 4 * Math.sin(t); },
+            x: '8 + 1.2 * Math.cos(t)',
+            y: '4 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -2087,15 +2087,15 @@ export const Y9_CH16D_QUESTIONS = [
 
           {
             type: 'curve',
-            x: function(t) { return 0.8 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '0.8 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [0.5 * Math.PI, 1.5 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 0.8 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '0.8 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [-0.5 * Math.PI, 0.5 * Math.PI],
             color: 'blue',
             dash: 2
@@ -2103,8 +2103,8 @@ export const Y9_CH16D_QUESTIONS = [
 
           {
             type: 'curve',
-            x: function(t) { return 8 + 0.8 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '8 + 0.8 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -2178,16 +2178,16 @@ export const Y9_CH16D_QUESTIONS = [
           // Front semicircle (facing down)
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 1.8 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '1.8 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back semicircle (shifted)
           {
             type: 'curve',
-            x: function(t) { return 4 + 4 * Math.cos(t); },
-            y: function(t) { return 2.5 + 1.8 * Math.sin(t); },
+            x: '4 + 4 * Math.cos(t)',
+            y: '2.5 + 1.8 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
@@ -2263,16 +2263,16 @@ export const Y9_CH16D_QUESTIONS = [
           // Front semicircle (facing down)
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 1.8 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '1.8 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back semicircle (shifted)
           {
             type: 'curve',
-            x: function(t) { return 4 + 4 * Math.cos(t); },
-            y: function(t) { return 2.5 + 1.8 * Math.sin(t); },
+            x: '4 + 4 * Math.cos(t)',
+            y: '2.5 + 1.8 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
@@ -2342,76 +2342,79 @@ export const Y9_CH16D_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16d-q5g-board',
-        boundingbox: [-10, 8, 10, -8],
+        boundingbox: [-9, 4.5, 9, -6.5],
         keepaspectratio: true,
+        // 3/4 cylinder: the removed 90° wedge spans t = 250°..340° so the
+        // notch faces the viewer and both flat cut faces are visible
+        // (matches the y9-16c-q8 cheese-wedge fix). Projection: rx=6, ry=1.8,
+        // top-face centre (0,1), bottom (0,-3).
         elements: [
-          // Bottom center and top center
-          { type: 'point', id: 'O1', coords: [0, -3], visible: false },
+          // Centres of the top and bottom faces
           { type: 'point', id: 'O2', coords: [0, 1], visible: false },
+          { type: 'point', id: 'O1', coords: [0, -3], visible: false },
+          // Cut edge at t=250°: top rim, bottom rim
+          { type: 'point', id: 'T1', coords: [-2.05, -0.69], visible: false },
+          { type: 'point', id: 'B1', coords: [-2.05, -4.69], visible: false },
+          // Cut edge at t=340°: top rim, bottom rim
+          { type: 'point', id: 'T2', coords: [5.64, 0.38], visible: false },
+          { type: 'point', id: 'B2', coords: [5.64, -3.62], visible: false },
+          // Silhouette edges (t=180° left, t=0° right)
+          { type: 'point', id: 'L2', coords: [-6, 1], visible: false },
+          { type: 'point', id: 'L1', coords: [-6, -3], visible: false },
+          { type: 'point', id: 'R2', coords: [6, 1], visible: false },
+          { type: 'point', id: 'R1', coords: [6, -3], visible: false },
 
-          // Outer points
-          { type: 'point', id: 'P180', coords: [-6, -3], visible: false },
-          { type: 'point', id: 'Q180', coords: [-6, 1], visible: false },
-          { type: 'point', id: 'P0', coords: [6, -3], visible: false },
-          { type: 'point', id: 'Q0', coords: [6, 1], visible: false },
-          { type: 'point', id: 'P270', coords: [0, -4.8], visible: false },
-          { type: 'point', id: 'Q270', coords: [0, -0.8], visible: false },
-          { type: 'point', id: 'P90', coords: [0, -1.2], visible: false },
-          { type: 'point', id: 'Q90', coords: [0, 2.8], visible: false },
+          // Flat cut face 1 (at 250°): radius on top, vertical edge, radius on bottom
+          { type: 'segment', from: 'O2', to: 'T1', color: 'blue' },
+          { type: 'segment', from: 'T1', to: 'B1', color: 'blue' },
+          { type: 'segment', from: 'O1', to: 'B1', color: 'blue' },
+          // Flat cut face 2 (at 340°)
+          { type: 'segment', from: 'O2', to: 'T2', color: 'blue' },
+          { type: 'segment', from: 'T2', to: 'B2', color: 'blue' },
+          { type: 'segment', from: 'O1', to: 'B2', color: 'blue' },
+          // Central axis edge where the two cut faces meet
+          { type: 'segment', from: 'O2', to: 'O1', color: 'blue' },
+          // Outer silhouette verticals
+          { type: 'segment', from: 'L2', to: 'L1', color: 'blue' },
+          { type: 'segment', from: 'R2', to: 'R1', color: 'blue' },
 
-          // Flat cuts
-          { type: 'segment', from: 'O1', to: 'P180', color: 'blue' },
-          { type: 'segment', from: 'O1', to: 'P270', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q180', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q270', color: 'blue' },
-
-          // Vertical lines
-          { type: 'segment', from: 'O1', to: 'O2', color: 'blue' },
-          { type: 'segment', from: 'P180', to: 'Q180', color: 'blue' },
-          { type: 'segment', from: 'P270', to: 'Q270', color: 'blue' },
-          { type: 'segment', from: 'P0', to: 'Q0', color: 'blue' },
-
-          // Parametric curves
+          // Top face rim — the kept 270° arc (340° round to 250°+360°)
           {
             type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2.5 * Math.PI],
+            x: '6 * Math.cos(t)',
+            y: '1 + 1.8 * Math.sin(t)',
+            tRange: [5.9341, 10.6465],
             color: 'blue'
           },
+          // Bottom front rim, left of the notch (180°..250°)
           {
             type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2.5 * Math.PI],
+            x: '6 * Math.cos(t)',
+            y: '-3 + 1.8 * Math.sin(t)',
+            tRange: [3.1416, 4.3633],
+            color: 'blue'
+          },
+          // Bottom front rim, right of the notch (340°..360°)
+          {
+            type: 'curve',
+            x: '6 * Math.cos(t)',
+            y: '-3 + 1.8 * Math.sin(t)',
+            tRange: [5.9341, 6.2832],
+            color: 'blue'
+          },
+          // 270° angle marker on the top face (small arc around the centre)
+          {
+            type: 'curve',
+            x: '1.9 * Math.cos(t)',
+            y: '1 + 0.57 * Math.sin(t)',
+            tRange: [5.9341, 10.6465],
             color: 'blue'
           },
 
-          // Hidden back lines
-          { type: 'segment', from: 'O1', to: 'P0', color: 'blue', dash: 2 },
-          { type: 'segment', from: 'O2', to: 'Q0', color: 'blue' },
-          {
-            type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [0.5 * Math.PI, Math.PI],
-            color: 'blue',
-            dash: 2
-          },
-          {
-            type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [0.5 * Math.PI, Math.PI],
-            color: 'blue',
-            dash: 2
-          },
-          { type: 'segment', from: 'P90', to: 'Q90', color: 'blue', dash: 2 },
-
-          // Dimension Labels
-          { type: 'text', coords: [-4.2, -1.0], content: '2 cm' },
-          { type: 'text', coords: [-3.2, -3.6], content: '4 cm' },
-          { type: 'text', coords: [0.8, -1.8], content: '270°' }
+          // Dimension labels
+          { type: 'text', coords: [-2.2, 1.9], content: '270°' },
+          { type: 'text', coords: [3.0, 0.95], content: '4 cm' },
+          { type: 'text', coords: [6.45, -1.1], content: '2 cm' }
         ]
       }
     },
@@ -2484,15 +2487,15 @@ export const Y9_CH16D_QUESTIONS = [
           { type: 'segment', from: 'B', to: 'D', color: 'blue' },
           {
             type: 'curve',
-            x: function(t) { return 2 * Math.cos(t); },
-            y: function(t) { return 0.6 * Math.sin(t); },
+            x: '2 * Math.cos(t)',
+            y: '0.6 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 2 * Math.cos(t); },
-            y: function(t) { return 0.6 * Math.sin(t); },
+            x: '2 * Math.cos(t)',
+            y: '0.6 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
@@ -2503,23 +2506,23 @@ export const Y9_CH16D_QUESTIONS = [
           { type: 'segment', from: 'F', to: 'H', color: 'blue' },
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 6 + 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '6 + 1.5 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 6 + 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '6 + 1.5 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
           },
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 8 + 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '8 + 1.5 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
