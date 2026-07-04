@@ -120,6 +120,7 @@ import { Y9_CH14G_QUESTIONS } from './seedYear9Ch14GQuestions.js';
 import { Y9_CH16_QUESTIONS } from './seedYear9Ch16Questions.js';
 import { Y9_CH16B_QUESTIONS } from './seedYear9Ch16BQuestions.js';
 import { Y9_CH16C_QUESTIONS } from './seedYear9Ch16CQuestions.js';
+import { Y9_CH16D_QUESTIONS } from './seedYear9Ch16DQuestions.js';
 import { Y12A_CH5A_QUESTIONS } from './seedYear12Ch5Questions.js';
 import { Y12A_CH5B_QUESTIONS } from './seedYear12Ch5BQuestions.js';
 import { Y12A_CH5C_QUESTIONS } from './seedYear12Ch5CQuestions.js';
@@ -1172,6 +1173,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-16', chapterTitle: 'Chapter 16: Measurement—areas, volumes and time', topicId: 'y9-16a', topicCode: '16A', topicTitle: 'Review of area', year: 'Year 9', seed: Y9_CH16_QUESTIONS, label: 'Y9 Ch16 · 16A Review of area' },
   { chapterId: 'y9-16', chapterTitle: 'Chapter 16: Measurement—areas, volumes and time', topicId: 'y9-16b', topicCode: '16B', topicTitle: 'Review of surface area of prism', year: 'Year 9', seed: Y9_CH16B_QUESTIONS, label: 'Y9 Ch16 · 16B Review of surface area of prism' },
   { chapterId: 'y9-16', chapterTitle: 'Chapter 16: Measurement—areas, volumes and time', topicId: 'y9-16c', topicCode: '16C', topicTitle: 'Surface area of a cylinder', year: 'Year 9', seed: Y9_CH16C_QUESTIONS, label: 'Y9 Ch16 · 16C Surface area of a cylinder' },
+  { chapterId: 'y9-16', chapterTitle: 'Chapter 16: Measurement—areas, volumes and time', topicId: 'y9-16d', topicCode: '16D', topicTitle: 'Volumes', year: 'Year 9', seed: Y9_CH16D_QUESTIONS, label: 'Y9 Ch16 · 16D Volumes' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1a', topicCode: '1A', topicTitle: 'Addition and subtraction of whole numbers', year: 'Year 8', seed: Y8_CH1A_QUESTIONS, label: 'Y8 Ch1 · Addition and subtraction of whole numbers' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1b', topicCode: '1B', topicTitle: 'Multiplication and division', year: 'Year 8', seed: Y8_CH1B_QUESTIONS, label: 'Y8 Ch1 · Multiplication and division' },
   { chapterId: 'y8-1', chapterTitle: 'Chapter 1: Whole numbers', topicId: 'y8-1c', topicCode: '1C', topicTitle: 'Problem solving', year: 'Year 8', seed: Y8_CH1C_QUESTIONS, label: 'Y8 Ch1 · Problem solving' },
