@@ -653,23 +653,33 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q4-board',
-        boundingbox: [-7, 7, 13, -7],
+        boundingbox: [-6, 6, 12, -6],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'FO', coords: [0, 0], visible: false },
-          { type: 'point', id: 'FTL', coords: [-4, 0], visible: false },
-          { type: 'point', id: 'FTR', coords: [4, 0], visible: false },
-          { type: 'point', id: 'BO', coords: [5, 3], visible: false },
-          { type: 'point', id: 'BTL', coords: [1, 3], visible: false },
-          { type: 'point', id: 'BTR', coords: [9, 3], visible: false },
-          { type: 'arc', center: 'FO', from: 'FTL', to: 'FTR', color: 'blue' },
-          { type: 'arc', center: 'BO', from: 'BTL', to: 'BTR', color: 'blue' },
-          { type: 'arc', center: 'BO', from: 'BTR', to: 'BTL', color: 'blue', dash: 2 },
-          { type: 'segment', from: 'FTL', to: 'BTL', color: 'blue' },
-          { type: 'segment', from: 'FTR', to: 'BTR', color: 'blue' },
-          { type: 'segment', from: 'FO', to: 'BO', color: 'red', dash: 2 },
-          { type: 'text', coords: [0, 0.8], content: '8 m' },
-          { type: 'text', coords: [-2.0, 2.5], content: '6 m' }
+          // Front semicircle points (facing down)
+          { type: 'point', id: 'FO', coords: [0, 2], visible: false },
+          { type: 'point', id: 'FL', coords: [-4, 2], visible: false },
+          { type: 'point', id: 'FR', coords: [4, 2], visible: false },
+          
+          // Back semicircle points (shifted up and right for 3D perspective)
+          { type: 'point', id: 'BO', coords: [5, 4], visible: false },
+          { type: 'point', id: 'BL', coords: [1, 4], visible: false },
+          { type: 'point', id: 'BR', coords: [9, 4], visible: false },
+
+          // Draw the U-shape arcs: center O, from Left, to Right (bottom-side semicircle)
+          { type: 'arc', center: 'FO', from: 'FR', to: 'FL', color: 'blue' },
+          { type: 'arc', center: 'BO', from: 'BR', to: 'BL', color: 'blue', dash: 2 }, // hidden back arc
+
+          // Connect front and back to complete the trough
+          { type: 'segment', from: 'FL', to: 'BL', color: 'blue' },
+          { type: 'segment', from: 'FR', to: 'BR', color: 'blue' },
+
+          // Diameter/radius indicator lines
+          { type: 'segment', from: 'FL', to: 'FR', color: 'red', dash: 2 },
+
+          // Labels
+          { type: 'text', coords: [0, 2.5], content: '8 m' },
+          { type: 'text', coords: [2.5, 4.3], content: '6 m' }
         ]
       }
     },
@@ -716,33 +726,51 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q5-board',
-        boundingbox: [-9, 14, 10, -4],
+        boundingbox: [-8, 12, 8, -4],
         keepaspectratio: true,
         elements: [
+          // Centers (isometric perspective)
+          { type: 'point', id: 'O1', coords: [0, 0], visible: false },  // Bottom circle center
+          { type: 'point', id: 'O2', coords: [0, 4], visible: false },  // Middle boundary center
+          { type: 'point', id: 'O3', coords: [0, 9], visible: false },  // Top circle center
+
+          // Outer points of the bottom cylinder (radius = 5)
           { type: 'point', id: 'A', coords: [-5, 0], visible: false },
           { type: 'point', id: 'B', coords: [5, 0], visible: false },
-          { type: 'point', id: 'C', coords: [5, 4], visible: false },
-          { type: 'point', id: 'D', coords: [-5, 4], visible: false },
+          { type: 'point', id: 'C', coords: [-5, 4], visible: false },
+          { type: 'point', id: 'D', coords: [5, 4], visible: false },
+
+          // Outer points of the top cylinder (radius = 2)
           { type: 'point', id: 'E', coords: [-2, 4], visible: false },
           { type: 'point', id: 'F', coords: [2, 4], visible: false },
-          { type: 'point', id: 'G', coords: [2, 9], visible: false },
-          { type: 'point', id: 'H', coords: [-2, 9], visible: false },
-          { type: 'point', id: 'O1', coords: [0, 0], visible: false },
-          { type: 'point', id: 'O2', coords: [0, 9], visible: false },
-          { type: 'segment', from: 'A', to: 'B', color: 'blue' },
-          { type: 'segment', from: 'B', to: 'C', color: 'blue' },
-          { type: 'segment', from: 'D', to: 'A', color: 'blue' },
-          { type: 'segment', from: 'E', to: 'H', color: 'blue' },
-          { type: 'segment', from: 'F', to: 'G', color: 'blue' },
-          { type: 'segment', from: 'H', to: 'G', color: 'blue' },
-          { type: 'segment', from: 'D', to: 'E', color: 'blue' },
-          { type: 'segment', from: 'F', to: 'C', color: 'blue' },
+          { type: 'point', id: 'G', coords: [-2, 9], visible: false },
+          { type: 'point', id: 'H', coords: [2, 9], visible: false },
+
+          // Draw Bottom Cylinder
+          { type: 'segment', from: 'A', to: 'C', color: 'blue' },
+          { type: 'segment', from: 'B', to: 'D', color: 'blue' },
+          { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
+          { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 }, // hidden
+          { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
+          { type: 'arc', center: 'O2', from: 'D', to: 'C', color: 'blue', dash: 2 }, // hidden
+
+          // Draw Top Cylinder
+          { type: 'segment', from: 'E', to: 'G', color: 'blue' },
+          { type: 'segment', from: 'F', to: 'H', color: 'blue' },
+          { type: 'arc', center: 'O3', from: 'G', to: 'H', color: 'blue' },
+          { type: 'arc', center: 'O3', from: 'H', to: 'G', color: 'blue', dash: 2 }, // hidden top-back
+          // The base of the top cylinder sits on the top of the bottom cylinder.
+          { type: 'arc', center: 'O2', from: 'E', to: 'F', color: 'blue' },
+
+          // Radius indicator lines
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'segment', from: 'O2', to: 'G', color: 'red', dash: 2 },
-          { type: 'text', coords: [2.5, -0.8], content: '5 cm' },
+          { type: 'segment', from: 'O3', to: 'H', color: 'red', dash: 2 },
+
+          // Labels
+          { type: 'text', coords: [1.8, -0.6], content: '5 cm' },
           { type: 'text', coords: [0.5, 9.6], content: '2 cm' },
-          { type: 'text', coords: [5.8, 2.0], content: '4 cm' },
-          { type: 'text', coords: [2.8, 6.5], content: '5 cm' }
+          { type: 'text', coords: [5.4, 2.0], content: '4 cm' },
+          { type: 'text', coords: [2.3, 6.5], content: '5 cm' }
         ]
       }
     },
@@ -917,29 +945,63 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q8-board',
-        boundingbox: [-10,10,10,-10],
+        boundingbox: [-10, 8, 10, -8],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'O1', coords: [0,-3], visible: false },
-          { type: 'point', id: 'O2', coords: [0,1], visible: false },
-          { type: 'point', id: 'P1', coords: [6,-3], visible: false },
-          { type: 'point', id: 'P2', coords: [0,-3.5], visible: false },
-          { type: 'point', id: 'P3', coords: [-6,-3], visible: false },
-          { type: 'point', id: 'Q1', coords: [6,1], visible: false },
-          { type: 'point', id: 'Q2', coords: [0,0.5], visible: false },
-          { type: 'point', id: 'Q3', coords: [-6,1], visible: false },
-          { type: 'segment', from: 'O1', to: 'P1', color: 'blue' },
-          { type: 'segment', from: 'O1', to: 'P3', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q1', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q3', color: 'blue' },
-          { type: 'segment', from: 'P1', to: 'Q1', color: 'blue' },
-          { type: 'segment', from: 'P3', to: 'Q3', color: 'blue' },
+          // Centers (isometric perspective)
+          { type: 'point', id: 'O1', coords: [0, -3], visible: false }, // bottom center
+          { type: 'point', id: 'O2', coords: [0, 1], visible: false },  // top center
+
+          // Bottom sector corners (0, 90, 180, 270 deg around center O1)
+          { type: 'point', id: 'P0', coords: [6, -3], visible: false },   // right
+          { type: 'point', id: 'P90', coords: [0, -1.2], visible: false }, // top (depth)
+          { type: 'point', id: 'P180', coords: [-6, -3], visible: false }, // left
+          { type: 'point', id: 'P270', coords: [0, -4.8], visible: false }, // bottom
+
+          // Top sector corners (0, 90, 180, 270 deg around center O2)
+          { type: 'point', id: 'Q0', coords: [6, 1], visible: false },
+          { type: 'point', id: 'Q90', coords: [0, 2.8], visible: false },
+          { type: 'point', id: 'Q180', coords: [-6, 1], visible: false },
+          { type: 'point', id: 'Q270', coords: [0, -0.8], visible: false },
+
+          // The cheese block has a 270 degree sector (from 180 deg, through 270, to 0 deg).
+          // The 90 degree sector (from 0 to 180 deg) is cut out.
+          // Let's connect center to P180 and P270 to show the cut faces.
+          // Bottom cut surfaces
+          { type: 'segment', from: 'O1', to: 'P180', color: 'blue' },
+          { type: 'segment', from: 'O1', to: 'P270', color: 'blue' },
+          // Top cut surfaces
+          { type: 'segment', from: 'O2', to: 'Q180', color: 'blue' },
+          { type: 'segment', from: 'O2', to: 'Q270', color: 'blue' },
+
+          // Inner corner vertical edge
           { type: 'segment', from: 'O1', to: 'O2', color: 'blue' },
-          { type: 'arc', center: 'O1', from: 'P1', to: 'P3', color: 'blue' },
-          { type: 'arc', center: 'O2', from: 'Q1', to: 'Q3', color: 'blue' },
-          { type: 'text', coords: [-8.8,-1], content: '3 cm' },
-          { type: 'text', coords: [3,1.3], content: '6 cm' },
-          { type: 'text', coords: [-1.5,0.2], content: '270°' }
+          // Outer corner vertical edges
+          { type: 'segment', from: 'P180', to: 'Q180', color: 'blue' },
+          { type: 'segment', from: 'P270', to: 'Q270', color: 'blue' },
+          { type: 'segment', from: 'P0', to: 'Q0', color: 'blue' },
+
+          // Draw the 270-degree curve in pieces (from P180 to P270 to P0)
+          // Bottom curve: 180 -> 270 -> 0
+          { type: 'arc', center: 'O1', from: 'P180', to: 'P270', color: 'blue' },
+          { type: 'arc', center: 'O1', from: 'P270', to: 'P0', color: 'blue' },
+          // Top curve: 180 -> 270 -> 0
+          { type: 'arc', center: 'O2', from: 'Q180', to: 'Q270', color: 'blue' },
+          { type: 'arc', center: 'O2', from: 'Q270', to: 'Q0', color: 'blue' },
+
+          // Hidden back lines (0 to 90 to 180) to complete the 3D projection representation
+          { type: 'segment', from: 'O1', to: 'P0', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'O2', to: 'Q0', color: 'blue' },
+          { type: 'arc', center: 'O1', from: 'P0', to: 'P90', color: 'blue', dash: 2 },
+          { type: 'arc', center: 'O1', from: 'P90', to: 'P180', color: 'blue', dash: 2 },
+          { type: 'arc', center: 'O2', from: 'Q0', to: 'Q90', color: 'blue', dash: 2 },
+          { type: 'arc', center: 'O2', from: 'Q90', to: 'Q180', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'P90', to: 'Q90', color: 'blue', dash: 2 },
+
+          // Dimension Labels
+          { type: 'text', coords: [-4.2, -1.0], content: '4 cm' },
+          { type: 'text', coords: [-3.2, -3.6], content: '8 cm' },
+          { type: 'text', coords: [0.8, -1.8], content: '270°' }
         ]
       }
     },
