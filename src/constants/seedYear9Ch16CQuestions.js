@@ -40,8 +40,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [1,-0.6], content: '5 cm' },
-          { type: 'text', coords: [3,6], content: '12 cm' }
+          { type: 'text', coords: [0.3,-0.7], content: '5 cm' },
+          { type: 'text', coords: [2.8,6], content: '12 cm' }
         ]
       }
     },
@@ -104,8 +104,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [1.2,-0.6], content: '8 cm' },
-          { type: 'text', coords: [3.5,7.5], content: '15 cm' }
+          { type: 'text', coords: [0.3,-0.7], content: '8 cm' },
+          { type: 'text', coords: [3.2,7.5], content: '15 cm' }
         ]
       }
     },
@@ -168,8 +168,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [-1.2,-0.6], content: '14 cm' },
-          { type: 'text', coords: [3.5,6], content: '14 cm' }
+          { type: 'text', coords: [-1.2,-0.7], content: '14 cm' },
+          { type: 'text', coords: [3.2,6], content: '14 cm' }
         ]
       }
     },
@@ -296,8 +296,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [1,-0.6], content: '4 cm' },
-          { type: 'text', coords: [3,4], content: '10 cm' }
+          { type: 'text', coords: [0.3,-0.7], content: '4 cm' },
+          { type: 'text', coords: [2.8,4], content: '10 cm' }
         ]
       }
     },
