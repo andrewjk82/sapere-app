@@ -111,7 +111,7 @@ export const Y9_CH16B_QUESTIONS = [
           { type: 'segment', from: 'H', to: 'E', color: 'blue', dash: 2 },
           { type: 'segment', from: 'E', to: 'F', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'E', color: 'blue', dash: 2 },
-          { type: 'text', coords: [2.5,-0.6], content: '5 cm' }
+          { type: 'text', coords: [2.5,-0.6], content: '6 cm' }
         ]
       }
     },
