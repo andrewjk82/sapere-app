@@ -12,7 +12,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the rectangular prism.\\nThe area, \\(A\\), of the shaded face is given as:\\n- \\(A = 28\\\\text{ cm}^2\\)\\n\\nThe height perpendicular to this face is:\\n- \\(h = 6\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the rectangular prism.\\nThe area, \\(A\\), of the shaded face is given as:\\n\\(A = 28\\\\text{ cm}^2\\)\\n\\nThe height perpendicular to this face is:\\n\\(h = 6\\\\text{ cm}\\)',
     opts: [
       { text: '\\(168\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(186\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -101,7 +101,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the rectangular prism.\\nThe area, \\(A\\), of the shaded face is given as:\\n- \\(A = 35\\\\text{ cm}^2\\)\\n\\nThe depth perpendicular to this face is:\\n- \\(d = 9\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the rectangular prism.\\nThe area, \\(A\\), of the shaded face is given as:\\n\\(A = 35\\\\text{ cm}^2\\)\\n\\nThe depth perpendicular to this face is:\\n\\(d = 9\\\\text{ cm}\\)',
     opts: [
       { text: '\\(315\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(350\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -189,7 +189,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the triangular prism.\\nThe area, \\(A\\), of the shaded triangular face is given as:\\n- \\(A = 22\\\\text{ cm}^2\\)\\n\\nThe length of the prism is:\\n- \\(l = 12\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the triangular prism.\\nThe area, \\(A\\), of the shaded triangular face is given as:\\n\\(A = 22\\\\text{ cm}^2\\)\\n\\nThe length of the prism is:\\n\\(l = 12\\\\text{ cm}\\)',
     opts: [
       { text: '\\(264\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(242\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -272,7 +272,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the solid with the curved sides.\\nThe area, \\(A\\), of the shaded face is given as:\\n- \\(A = 14\\\\text{ cm}^2\\)\\n\\nThe length of the solid is:\\n- \\(l = 20\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the solid with the curved sides.\\nThe area, \\(A\\), of the shaded face is given as:\\n\\(A = 14\\\\text{ cm}^2\\)\\n\\nThe length of the solid is:\\n\\(l = 20\\\\text{ cm}\\)',
     opts: [
       { text: '\\(280\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(240\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -393,7 +393,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the cylinder.\\nThe area, \\(A\\), of the shaded circular face is given as:\\n- \\(A = 85\\\\text{ cm}^2\\)\\n\\nThe height perpendicular to this face is:\\n- \\(h = 8\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the cylinder.\\nThe area, \\(A\\), of the shaded circular face is given as:\\n\\(A = 85\\\\text{ cm}^2\\)\\n\\nThe height perpendicular to this face is:\\n\\(h = 8\\\\text{ cm}\\)',
     opts: [
       { text: '\\(680\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(640\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -483,7 +483,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the half-cylinder.\\nThe area, \\(A\\), of the shaded semi-circular face is given as:\\n- \\(A = 30\\\\text{ cm}^2\\)\\n\\nThe length of the half-cylinder is:\\n- \\(l = 16\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the half-cylinder.\\nThe area, \\(A\\), of the shaded semi-circular face is given as:\\n\\(A = 30\\\\text{ cm}^2\\)\\n\\nThe length of the half-cylinder is:\\n\\(l = 16\\\\text{ cm}\\)',
     opts: [
       { text: '\\(480\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(450\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -696,7 +696,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the rectangular prism with the given dimensions:\\n- Length = \\(12\\\\text{ cm}\\)\\n- Width = \\(10\\\\text{ cm}\\)\\n- Height = \\(7\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the rectangular prism with the given dimensions:\\nLength = \\(12\\\\text{ cm}\\)\\nWidth = \\(10\\\\text{ cm}\\)\\nHeight = \\(7\\\\text{ cm}\\)',
     opts: [
       { text: '\\(840\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(720\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -779,7 +779,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the cube with side length:\\n- \\(s = 8\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the cube with side length:\\n\\(s = 8\\\\text{ cm}\\)',
     opts: [
       { text: '\\(512\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(384\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -863,7 +863,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the triangular prism with the following cross-section dimensions:\\n- Triangle base = \\(8\\\\text{ cm}\\)\\n- Triangle perpendicular height = \\(6\\\\text{ cm}\\)\\n- Length of prism = \\(12\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the triangular prism with the following cross-section dimensions:\\nTriangle base = \\(8\\\\text{ cm}\\)\\nTriangle perpendicular height = \\(6\\\\text{ cm}\\)\\nLength of prism = \\(12\\\\text{ cm}\\)',
     opts: [
       { text: '\\(288\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(576\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -947,7 +947,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the trapezoidal prism with the following cross-section dimensions:\\n- Parallel side 1 = \\(15\\\\text{ cm}\\)\\n- Parallel side 2 = \\(25\\\\text{ cm}\\)\\n- Perpendicular height of trapezoid = \\(10\\\\text{ cm}\\)\\n- Length of prism = \\(40\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the trapezoidal prism with the following cross-section dimensions:\\nParallel side 1 = \\(15\\\\text{ cm}\\)\\nParallel side 2 = \\(25\\\\text{ cm}\\)\\nPerpendicular height of trapezoid = \\(10\\\\text{ cm}\\)\\nLength of prism = \\(40\\\\text{ cm}\\)',
     opts: [
       { text: '\\(8000\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(7200\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1039,7 +1039,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the stepped block with the given dimensions:\\n- Overall width = \\(16\\\\text{ cm}\\)\\n- Overall height = \\(12\\\\text{ cm}\\)\\n- Overall length = \\(14\\\\text{ cm}\\)\\n- Step cut width = \\(10\\\\text{ cm}\\)\\n- Step cut height = \\(3\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the stepped block with the given dimensions:\\nOverall width = \\(16\\\\text{ cm}\\)\\nOverall height = \\(12\\\\text{ cm}\\)\\nOverall length = \\(14\\\\text{ cm}\\)\\nStep cut width = \\(10\\\\text{ cm}\\)\\nStep cut height = \\(3\\\\text{ cm}\\)',
     opts: [
       { text: '\\(2268\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(2420\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1142,7 +1142,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the U-shaped channel block with the given dimensions:\\n- Total width = \\(30\\\\text{ cm}\\)\\n- Total height = \\(12\\\\text{ cm}\\)\\n- Inner channel depth = \\(6\\\\text{ cm}\\)\\n- Inner channel width = \\(10\\\\text{ cm}\\)\\n- Total length = \\(10\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the U-shaped channel block with the given dimensions:\\nTotal width = \\(30\\\\text{ cm}\\)\\nTotal height = \\(12\\\\text{ cm}\\)\\nInner channel depth = \\(6\\\\text{ cm}\\)\\nInner channel width = \\(10\\\\text{ cm}\\)\\nTotal length = \\(10\\\\text{ cm}\\)',
     opts: [
       { text: '\\(3000\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(2800\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1255,7 +1255,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the right-angled triangular prism with the following dimensions:\\n- Triangle base height = \\(30\\\\text{ cm}\\)\\n- Triangle horizontal base = \\(40\\\\text{ cm}\\)\\n- Prism length = \\(80\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the right-angled triangular prism with the following dimensions:\\nTriangle base height = \\(30\\\\text{ cm}\\)\\nTriangle horizontal base = \\(40\\\\text{ cm}\\)\\nPrism length = \\(80\\\\text{ cm}\\)',
     opts: [
       { text: '\\(48000\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(96000\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1340,7 +1340,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the triangular prism with the following dimensions:\\n- Triangle base = \\(16\\\\text{ mm}\\)\\n- Triangle height = \\(15\\\\text{ mm}\\)\\n- Prism length = \\(120\\\\text{ mm}\\)',
+    question: 'Calculate the volume of the triangular prism with the following dimensions:\\nTriangle base = \\(16\\\\text{ mm}\\)\\nTriangle height = \\(15\\\\text{ mm}\\)\\nPrism length = \\(120\\\\text{ mm}\\)',
     opts: [
       { text: '\\(14400\\\\text{ mm}^3\\)', imageUrl: '' },
       { text: '\\(28800\\\\text{ mm}^3\\)', imageUrl: '' },
@@ -1423,7 +1423,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the trapezoidal prism with the following dimensions:\\n- Parallel top side = \\(4\\\\text{ cm}\\)\\n- Parallel bottom side = \\(6\\\\text{ cm}\\)\\n- Perpendicular height of trapezoid = \\(2\\\\text{ cm}\\)\\n- Length of prism = \\(12\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the trapezoidal prism with the following dimensions:\\nParallel top side = \\(4\\\\text{ cm}\\)\\nParallel bottom side = \\(6\\\\text{ cm}\\)\\nPerpendicular height of trapezoid = \\(2\\\\text{ cm}\\)\\nLength of prism = \\(12\\\\text{ cm}\\)',
     opts: [
       { text: '\\(120\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(96\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1519,7 +1519,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the regular hexagonal prism with the following dimensions:\\n- Hexagon side length = \\(5\\\\text{ cm}\\)\\n- Hexagon perpendicular height (corner-to-corner/span) = \\(7\\\\text{ cm}\\)\\n- Prism length = \\(14\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the regular hexagonal prism with the following dimensions:\\nHexagon side length = \\(5\\\\text{ cm}\\)\\nHexagon perpendicular height (corner-to-corner/span) = \\(7\\\\text{ cm}\\)\\nPrism length = \\(14\\\\text{ cm}\\)',
     opts: [
       { text: '\\(735\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(840\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -2321,7 +2321,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the 270-degree cylinder sector block with the following dimensions:\\n- Radius = \\(4\\\\text{ cm}\\)\\n- Height = \\(2\\\\text{ cm}\\). (Round the final answer to two decimal places.)',
+    question: 'Calculate the volume of the 270-degree cylinder sector block with the following dimensions:\\nRadius = \\(4\\\\text{ cm}\\)\\nHeight = \\(2\\\\text{ cm}\\). (Round the final answer to two decimal places.)',
     opts: [
       { text: '\\(75.40\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(68.50\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -2438,7 +2438,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the total volume of the composite solid consisting of two cylinders:\\n- Top cylinder: Radius = \\(5\\\\text{ cm}\\), Height = \\(2\\\\text{ cm}\\)\\n- Bottom cylinder: Radius = \\(2\\\\text{ cm}\\), Height = \\(6\\\\text{ cm}\\). (Round the final answer to two decimal places.)',
+    question: 'Calculate the total volume of the composite solid consisting of two cylinders:\\nTop cylinder: Radius = \\(5\\\\text{ cm}\\), Height = \\(2\\\\text{ cm}\\)\\nBottom cylinder: Radius = \\(2\\\\text{ cm}\\), Height = \\(6\\\\text{ cm}\\). (Round the final answer to two decimal places.)',
     opts: [
       { text: '\\(232.48\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(212.50\\\\text{ cm}^3\\)', imageUrl: '' },
