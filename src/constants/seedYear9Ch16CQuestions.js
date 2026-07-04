@@ -656,21 +656,28 @@ export const Y9_CH16C_QUESTIONS = [
         boundingbox: [-6, 6, 12, -6],
         keepaspectratio: true,
         elements: [
-          // Front semicircle points (facing down)
-          { type: 'point', id: 'FO', coords: [0, 2], visible: false },
-          { type: 'point', id: 'FL', coords: [-4, 2], visible: false },
-          { type: 'point', id: 'FR', coords: [4, 2], visible: false },
-          
-          // Back semicircle points (shifted up and right for 3D perspective)
-          { type: 'point', id: 'BO', coords: [5, 4], visible: false },
-          { type: 'point', id: 'BL', coords: [1, 4], visible: false },
-          { type: 'point', id: 'BR', coords: [9, 4], visible: false },
-
-          // Draw the U-shape arcs: center O, from Left, to Right (bottom-side semicircle)
-          { type: 'arc', center: 'FO', from: 'FR', to: 'FL', color: 'blue' },
-          { type: 'arc', center: 'BO', from: 'BR', to: 'BL', color: 'blue', dash: 2 }, // hidden back arc
-
+          // Front U-shape (center (0,2), rx=4, ry=2, t from pi to 2*pi)
+          {
+            type: 'curve',
+            x: 't => 4 * Math.cos(t)',
+            y: 't => 2 * Math.sin(t) + 2',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Back U-shape (center (5,4), rx=4, ry=2, t from pi to 2*pi)
+          {
+            type: 'curve',
+            x: 't => 5 + 4 * Math.cos(t)',
+            y: 't => 4 + 2 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue',
+            dash: 2
+          },
           // Connect front and back to complete the trough
+          { type: 'point', id: 'FL', coords: [-4, 2], visible: false },
+          { type: 'point', id: 'BL', coords: [1, 4], visible: false },
+          { type: 'point', id: 'FR', coords: [4, 2], visible: false },
+          { type: 'point', id: 'BR', coords: [9, 4], visible: false },
           { type: 'segment', from: 'FL', to: 'BL', color: 'blue' },
           { type: 'segment', from: 'FR', to: 'BR', color: 'blue' },
 
@@ -729,40 +736,81 @@ export const Y9_CH16C_QUESTIONS = [
         boundingbox: [-8, 12, 8, -4],
         keepaspectratio: true,
         elements: [
-          // Centers (isometric perspective)
-          { type: 'point', id: 'O1', coords: [0, 0], visible: false },  // Bottom circle center
-          { type: 'point', id: 'O2', coords: [0, 4], visible: false },  // Middle boundary center
-          { type: 'point', id: 'O3', coords: [0, 9], visible: false },  // Top circle center
+          // Bottom cylinder: center O1(0,0), rx=5, ry=1.5
+          // Front curve t from pi to 2pi
+          {
+            type: 'curve',
+            x: 't => 5 * Math.cos(t)',
+            y: 't => 1.5 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Back curve t from 0 to pi (hidden/dashed)
+          {
+            type: 'curve',
+            x: 't => 5 * Math.cos(t)',
+            y: 't => 1.5 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
 
-          // Outer points of the bottom cylinder (radius = 5)
+          // Middle boundary: center O2(0,4), rx=5, ry=1.5
+          // Front curve
+          {
+            type: 'curve',
+            x: 't => 5 * Math.cos(t)',
+            y: 't => 4 + 1.5 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Back curve (dashed)
+          {
+            type: 'curve',
+            x: 't => 5 * Math.cos(t)',
+            y: 't => 4 + 1.5 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
+
+          // Top cylinder: center O3(0,9), rx=2, ry=0.6
+          // Full ellipse for the very top (front visible, back visible)
+          {
+            type: 'curve',
+            x: 't => 2 * Math.cos(t)',
+            y: 't => 9 + 0.6 * Math.sin(t)',
+            tRange: [0, 2 * Math.PI],
+            color: 'blue'
+          },
+
+          // Base of top cylinder: center O2(0,4), rx=2, ry=0.6
+          // Front visible curve (sitting on bottom cylinder top)
+          {
+            type: 'curve',
+            x: 't => 2 * Math.cos(t)',
+            y: 't => 4 + 0.6 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+
+          // Outer vertical edges of bottom cylinder
           { type: 'point', id: 'A', coords: [-5, 0], visible: false },
           { type: 'point', id: 'B', coords: [5, 0], visible: false },
           { type: 'point', id: 'C', coords: [-5, 4], visible: false },
           { type: 'point', id: 'D', coords: [5, 4], visible: false },
+          { type: 'segment', from: 'A', to: 'C', color: 'blue' },
+          { type: 'segment', from: 'B', to: 'D', color: 'blue' },
 
-          // Outer points of the top cylinder (radius = 2)
+          // Outer vertical edges of top cylinder
           { type: 'point', id: 'E', coords: [-2, 4], visible: false },
           { type: 'point', id: 'F', coords: [2, 4], visible: false },
           { type: 'point', id: 'G', coords: [-2, 9], visible: false },
           { type: 'point', id: 'H', coords: [2, 9], visible: false },
-
-          // Draw Bottom Cylinder
-          { type: 'segment', from: 'A', to: 'C', color: 'blue' },
-          { type: 'segment', from: 'B', to: 'D', color: 'blue' },
-          { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
-          { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 }, // hidden
-          { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
-          { type: 'arc', center: 'O2', from: 'D', to: 'C', color: 'blue', dash: 2 }, // hidden
-
-          // Draw Top Cylinder
           { type: 'segment', from: 'E', to: 'G', color: 'blue' },
           { type: 'segment', from: 'F', to: 'H', color: 'blue' },
-          { type: 'arc', center: 'O3', from: 'G', to: 'H', color: 'blue' },
-          { type: 'arc', center: 'O3', from: 'H', to: 'G', color: 'blue', dash: 2 }, // hidden top-back
-          // The base of the top cylinder sits on the top of the bottom cylinder.
-          { type: 'arc', center: 'O2', from: 'E', to: 'F', color: 'blue' },
 
-          // Radius indicator lines
+          // Radius indicators
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
           { type: 'segment', from: 'O3', to: 'H', color: 'red', dash: 2 },
 
@@ -952,50 +1000,65 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'point', id: 'O1', coords: [0, -3], visible: false }, // bottom center
           { type: 'point', id: 'O2', coords: [0, 1], visible: false },  // top center
 
-          // Bottom sector corners (0, 90, 180, 270 deg around center O1)
-          { type: 'point', id: 'P0', coords: [6, -3], visible: false },   // right
-          { type: 'point', id: 'P90', coords: [0, -1.2], visible: false }, // top (depth)
-          { type: 'point', id: 'P180', coords: [-6, -3], visible: false }, // left
-          { type: 'point', id: 'P270', coords: [0, -4.8], visible: false }, // bottom
-
-          // Top sector corners (0, 90, 180, 270 deg around center O2)
-          { type: 'point', id: 'Q0', coords: [6, 1], visible: false },
-          { type: 'point', id: 'Q90', coords: [0, 2.8], visible: false },
+          // Outer points
+          { type: 'point', id: 'P180', coords: [-6, -3], visible: false },
           { type: 'point', id: 'Q180', coords: [-6, 1], visible: false },
+          { type: 'point', id: 'P0', coords: [6, -3], visible: false },
+          { type: 'point', id: 'Q0', coords: [6, 1], visible: false },
+          { type: 'point', id: 'P270', coords: [0, -4.8], visible: false },
           { type: 'point', id: 'Q270', coords: [0, -0.8], visible: false },
+          { type: 'point', id: 'P90', coords: [0, -1.2], visible: false },
+          { type: 'point', id: 'Q90', coords: [0, 2.8], visible: false },
 
-          // The cheese block has a 270 degree sector (from 180 deg, through 270, to 0 deg).
-          // The 90 degree sector (from 0 to 180 deg) is cut out.
-          // Let's connect center to P180 and P270 to show the cut faces.
-          // Bottom cut surfaces
+          // Cut faces (flat rectangles)
           { type: 'segment', from: 'O1', to: 'P180', color: 'blue' },
           { type: 'segment', from: 'O1', to: 'P270', color: 'blue' },
-          // Top cut surfaces
           { type: 'segment', from: 'O2', to: 'Q180', color: 'blue' },
           { type: 'segment', from: 'O2', to: 'Q270', color: 'blue' },
 
-          // Inner corner vertical edge
+          // Vertical edges
           { type: 'segment', from: 'O1', to: 'O2', color: 'blue' },
-          // Outer corner vertical edges
           { type: 'segment', from: 'P180', to: 'Q180', color: 'blue' },
           { type: 'segment', from: 'P270', to: 'Q270', color: 'blue' },
           { type: 'segment', from: 'P0', to: 'Q0', color: 'blue' },
 
-          // Draw the 270-degree curve in pieces (from P180 to P270 to P0)
-          // Bottom curve: 180 -> 270 -> 0
-          { type: 'arc', center: 'O1', from: 'P180', to: 'P270', color: 'blue' },
-          { type: 'arc', center: 'O1', from: 'P270', to: 'P0', color: 'blue' },
-          // Top curve: 180 -> 270 -> 0
-          { type: 'arc', center: 'O2', from: 'Q180', to: 'Q270', color: 'blue' },
-          { type: 'arc', center: 'O2', from: 'Q270', to: 'Q0', color: 'blue' },
+          // Parametric curves for 270-degree sector (from Math.PI (180 deg) to 2*Math.PI + Math.PI/2 (90 deg/450 deg))
+          // Bottom curve: 180 to 270 to 360/0
+          {
+            type: 'curve',
+            x: 't => 6 * Math.cos(t)',
+            y: 't => -3 + 1.8 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
+          // Top curve: 180 to 270 to 360/0
+          {
+            type: 'curve',
+            x: 't => 6 * Math.cos(t)',
+            y: 't => 1 + 1.8 * Math.sin(t)',
+            tRange: [Math.PI, 2 * Math.PI],
+            color: 'blue'
+          },
 
-          // Hidden back lines (0 to 90 to 180) to complete the 3D projection representation
+          // Hidden back lines (0 to 90 to 180)
           { type: 'segment', from: 'O1', to: 'P0', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O2', to: 'Q0', color: 'blue' },
-          { type: 'arc', center: 'O1', from: 'P0', to: 'P90', color: 'blue', dash: 2 },
-          { type: 'arc', center: 'O1', from: 'P90', to: 'P180', color: 'blue', dash: 2 },
-          { type: 'arc', center: 'O2', from: 'Q0', to: 'Q90', color: 'blue', dash: 2 },
-          { type: 'arc', center: 'O2', from: 'Q90', to: 'Q180', color: 'blue', dash: 2 },
+          {
+            type: 'curve',
+            x: 't => 6 * Math.cos(t)',
+            y: 't => -3 + 1.8 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
+          {
+            type: 'curve',
+            x: 't => 6 * Math.cos(t)',
+            y: 't => 1 + 1.8 * Math.sin(t)',
+            tRange: [0, Math.PI],
+            color: 'blue',
+            dash: 2
+          },
           { type: 'segment', from: 'P90', to: 'Q90', color: 'blue', dash: 2 },
 
           // Dimension Labels
