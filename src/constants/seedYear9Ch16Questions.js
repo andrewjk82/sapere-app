@@ -1900,7 +1900,7 @@ export const Y9_CH16_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10a-board',
-        boundingbox: [-1, 11, 13, -1],
+        boundingbox: [-2.5, 11.5, 14.5, -1.5],
         elements: [
           { type: 'point', id: 'A', coords: [0, 0], visible: false },
           { type: 'point', id: 'B', coords: [12, 0], visible: false },
@@ -1910,9 +1910,9 @@ export const Y9_CH16_QUESTIONS = [
           { type: 'point', id: 'F', coords: [0, 10], visible: false },
           { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E', 'F'], color: 'blue', fillOpacity: 0.1 },
           { type: 'text', coords: [6, -0.6], content: '12 cm' },
-          { type: 'text', coords: [-1, 5], content: '10 cm' },
+          { type: 'text', coords: [-1.4, 5], content: '10 cm' },
           { type: 'text', coords: [3, 10.3], content: '6 cm' },
-          { type: 'text', coords: [12.3, 3], content: '6 cm' }
+          { type: 'text', coords: [12.6, 3], content: '6 cm' }
         ]
       }
     },
