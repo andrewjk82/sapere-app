@@ -611,6 +611,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                         <MathView content={step.workingOut} style={{ fontSize: '0.9rem', color: '#1e1b4b' }} />
                                       </div>
                                     )}
+                                    {step.graphData && (
+                                      <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                                        <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                                      </div>
+                                    )}
                                   </div>
                                 </div>
                               ))}
@@ -808,6 +813,11 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                             {step.workingOut && (
                               <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f8fafc', border: '1px solid #eef2f7' }}>
                                 <MathView content={step.workingOut} style={{ fontSize: '0.95rem', color: '#1e1b4b' }} />
+                              </div>
+                            )}
+                            {step.graphData && (
+                              <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                                <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
                               </div>
                             )}
                           </div>

@@ -641,6 +641,11 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
                         <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#4f46e5' }} />
                       </div>
                     )}
+                    {step.graphData && (
+                      <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                        <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
@@ -891,9 +896,14 @@ const ReviewView = ({ questions, answers, onDone }) => {
                             <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
                           </div>
                         )}
+                        {step.graphData && (
+                          <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                            <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                          </div>
+                        )}
                       </div>
                     </div>
-                  ))}
+    ))}
                 </div>
               </motion.div>
             )}

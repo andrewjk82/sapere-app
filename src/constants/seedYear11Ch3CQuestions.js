@@ -79,7 +79,25 @@ export const Y11_CH3C_QUESTIONS = [
         explanation: "Since the equation is linear (no \\(x^2\\), no other powers), its graph must be a perfectly straight line — so just line up a ruler with both points and draw through them."
       },
       {
-        explanation: "Extend the line in both directions past the two points, since the line continues infinitely."
+        explanation: "Extend the line in both directions past the two points, since the line continues infinitely.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.9,
+            1.9,
+            3.9,
+            -4.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -3], {name: '(0,-3)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [1, 0], {name: '(1,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -3], [1, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -151,7 +169,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{y-intercept: } (0, 2), \\quad \\text{x-intercept: } (3, 0)"
       },
       {
-        explanation: "Draw a straight line through both points using a ruler, and extend it beyond each point in both directions."
+        explanation: "Draw a straight line through both points using a ruler, and extend it beyond each point in both directions.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            4.4,
+            4.9,
+            -2.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 2], [3, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -173,7 +209,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "0 = x + 2 \\implies x = -2 \\implies (-2, 0)"
       },
       {
-        explanation: "Plot \\((0, 2)\\) and \\((-2, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 2)\\) and \\((-2, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4.4,
+            4.4,
+            2.4,
+            -2.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 2], [-2, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -195,7 +249,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "0 = 6 - 3x \\implies 3x = 6 \\implies x = 2 \\implies (2, 0)"
       },
       {
-        explanation: "Plot \\((0, 6)\\) and \\((2, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 6)\\) and \\((2, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.4,
+            8.1,
+            4.4,
+            -2.1
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 6], {name: '(0,6)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 6], [2, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -217,7 +289,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "0 = \\frac{1}{2}x - 2 \\implies \\frac{1}{2}x = 2 \\implies x = 4 \\implies (4, 0)"
       },
       {
-        explanation: "Plot \\((0, -2)\\) and \\((4, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, -2)\\) and \\((4, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.4,
+            2.4,
+            5.4,
+            -4.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -2], [4, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -239,7 +329,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "x + 0 - 2 = 0 \\implies x = 2 \\implies (2, 0)"
       },
       {
-        explanation: "Plot \\((0, 2)\\) and \\((2, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 2)\\) and \\((2, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.4,
+            4.4,
+            4.4,
+            -2.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 2], {name: '(0,2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 2], [2, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -261,7 +369,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "3x - 0 + 3 = 0 \\implies 3x = -3 \\implies x = -1 \\implies (-1, 0)"
       },
       {
-        explanation: "Plot \\((0, 3)\\) and \\((-1, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 3)\\) and \\((-1, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -3.9,
+            4.9,
+            2.9,
+            -1.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 3], {name: '(0,3)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [-1, 0], {name: '(-1,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 3], [-1, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -283,7 +409,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "x - 2(0) - 4 = 0 \\implies x = 4 \\implies (4, 0)"
       },
       {
-        explanation: "Plot \\((0, -2)\\) and \\((4, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, -2)\\) and \\((4, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.4,
+            2.4,
+            5.4,
+            -4.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -2], [4, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -305,7 +449,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "3x - 2(0) - 12 = 0 \\implies 3x = 12 \\implies x = 4 \\implies (4, 0)"
       },
       {
-        explanation: "Plot \\((0, -6)\\) and \\((4, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, -6)\\) and \\((4, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.4,
+            2.1,
+            5.4,
+            -8.1
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -6], {name: '(0,-6)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [4, 0], {name: '(4,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -6], [4, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -327,7 +489,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "x + 3(0) + 6 = 0 \\implies x = -6 \\implies (-6, 0)"
       },
       {
-        explanation: "Plot \\((0, -2)\\) and \\((-6, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, -2)\\) and \\((-6, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -8.1,
+            2.4,
+            2.1,
+            -4.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [-6, 0], {name: '(-6,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -2], [-6, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -349,7 +529,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "4x + 3(0) - 12 = 0 \\implies 4x = 12 \\implies x = 3 \\implies (3, 0)"
       },
       {
-        explanation: "Plot \\((0, 4)\\) and \\((3, 0)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 4)\\) and \\((3, 0)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            5.4,
+            4.9,
+            -1.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 4], {name: '(0,4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 4], [3, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -395,7 +593,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = -3(1) = -3 \\implies \\text{point: } (1, -3)"
       },
       {
-        explanation: "Plot the origin \\((0, 0)\\) and the point \\((1, -3)\\), then draw a straight line through both."
+        explanation: "Plot the origin \\((0, 0)\\) and the point \\((1, -3)\\), then draw a straight line through both.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.9,
+            1.9,
+            3.9,
+            -4.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [1, -3], {name: '(1,-3)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [1, -3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -417,7 +633,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = 2(1) = 2 \\implies (1, 2)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((1, 2)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((1, 2)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.9,
+            4.4,
+            3.9,
+            -2.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [1, 2], {name: '(1,2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [1, 2]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -439,7 +673,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = 4(1) = 4 \\implies (1, 4)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((1, 4)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((1, 4)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.9,
+            5.4,
+            3.9,
+            -1.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [1, 4], {name: '(1,4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [1, 4]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -461,7 +713,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = -5(1) = -5 \\implies (1, -5)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((1, -5)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((1, -5)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.9,
+            1.75,
+            3.9,
+            -6.75
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [1, -5], {name: '(1,-5)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [1, -5]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -486,7 +756,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = -\\frac{1}{2}(2) = -1 \\implies (2, -1)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((2, -1)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((2, -1)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2.4,
+            2.9,
+            4.4,
+            -3.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [2, -1], {name: '(2,-1)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [2, -1]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -511,7 +799,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = \\frac{1}{3}(3) = 1 \\implies (3, 1)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((3, 1)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((3, 1)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            3.9,
+            4.9,
+            -2.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, 1], {name: '(3,1)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [3, 1]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -536,7 +842,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = -\\frac{2}{3}(3) = -2 \\implies (3, -2)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((3, -2)\\) and draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((3, -2)\\) and draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            2.4,
+            4.9,
+            -4.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, -2], {name: '(3,-2)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [3, -2]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -558,7 +882,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "-2x - 4 = 0 \\implies -2x = 4 \\implies x = -2 \\implies (-2, 0)"
       },
       {
-        explanation: "Plot \\((0, -4)\\) and \\((-2, 0)\\), then draw a straight line through them."
+        explanation: "Plot \\((0, -4)\\) and \\((-2, 0)\\), then draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4.4,
+            1.4,
+            2.4,
+            -5.4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -4], {name: '(0,-4)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [-2, 0], {name: '(-2,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -4], [-2, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -580,7 +922,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\frac{1}{3}x - 1 = 0 \\implies \\frac{1}{3}x = 1 \\implies x = 3 \\implies (3, 0)"
       },
       {
-        explanation: "Plot \\((0, -1)\\) and \\((3, 0)\\), then draw a straight line through them."
+        explanation: "Plot \\((0, -1)\\) and \\((3, 0)\\), then draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            2.9,
+            4.9,
+            -3.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -1], {name: '(0,-1)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, 0], {name: '(3,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -1], [3, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -602,7 +962,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "f(3) = -\\frac{1}{3}(3) = -1 \\implies (3, -1)"
       },
       {
-        explanation: "Plot \\((0, 0)\\) and \\((3, -1)\\), then draw a straight line through them."
+        explanation: "Plot \\((0, 0)\\) and \\((3, -1)\\), then draw a straight line through them.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -1.9,
+            2.9,
+            4.9,
+            -3.9
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 0], {name: 'O(0,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [3, -1], {name: '(3,-1)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 0], [3, -1]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -620,7 +998,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{Points on the line: } (2, -5), (2, 0), (2, 5), \\dots"
       },
       {
-        explanation: "Draw a vertical line straight up and down through \\(x = 2\\) on the \\(x\\)-axis. This is the classic exception: it is NOT of the form \\(y = mx + b\\), and it is NOT a function of \\(x\\)."
+        explanation: "Draw a vertical line straight up and down through \\(x = 2\\) on the \\(x\\)-axis. This is the classic exception: it is NOT of the form \\(y = mx + b\\), and it is NOT a function of \\(x\\).",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4,
+            4,
+            5,
+            -4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [2, 3], {name: 'x=2', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[2, -3], [2, 3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -638,7 +1034,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{Points on the line: } (-5, 3), (0, 3), (5, 3), \\dots"
       },
       {
-        explanation: "Draw a horizontal line straight across through \\(y = 3\\) on the \\(y\\)-axis."
+        explanation: "Draw a horizontal line straight across through \\(y = 3\\) on the \\(y\\)-axis.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4,
+            5,
+            4,
+            -3
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [3, 3], {name: 'y=3', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[-3, 3], [3, 3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -656,7 +1070,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{Points on the line: } (-3, -5), (-3, 0), (-3, 5), \\dots"
       },
       {
-        explanation: "Draw a vertical line straight up and down through \\(x = -3\\), which is \\(3\\) units to the LEFT of the origin."
+        explanation: "Draw a vertical line straight up and down through \\(x = -3\\), which is \\(3\\) units to the LEFT of the origin.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -5,
+            4,
+            4,
+            -4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [-3, 3], {name: 'x=-3', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[-3, -3], [-3, 3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -674,7 +1106,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{Points on the line: } (-5, -2), (0, -2), (5, -2), \\dots"
       },
       {
-        explanation: "Draw a horizontal line straight across through \\(y = -2\\), which is \\(2\\) units BELOW the origin."
+        explanation: "Draw a horizontal line straight across through \\(y = -2\\), which is \\(2\\) units BELOW the origin.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4,
+            3,
+            4,
+            -4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [3, -2], {name: 'y=-2', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[-3, -2], [3, -2]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -692,7 +1142,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "y = -\\frac{5}{2} = -2.5"
       },
       {
-        explanation: "Since only \\(y\\) appears (no \\(x\\)), this is a horizontal line passing through every point with \\(y\\)-coordinate \\(-2.5\\), i.e. through \\((0, -2.5)\\)."
+        explanation: "Since only \\(y\\) appears (no \\(x\\)), this is a horizontal line passing through every point with \\(y\\)-coordinate \\(-2.5\\), i.e. through \\((0, -2.5)\\).",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4,
+            3,
+            4,
+            -4.5
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [3, -2.5], {name: 'y=-2.5', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[-3, -2.5], [3, -2.5]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -710,7 +1178,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "x = \\frac{4}{3} \\approx 1.33"
       },
       {
-        explanation: "Since only \\(x\\) appears (no \\(y\\)), this is a vertical line passing through every point with \\(x\\)-coordinate \\(\\frac{4}{3}\\), i.e. through \\(\\left(\\frac{4}{3}, 0\\right)\\)."
+        explanation: "Since only \\(x\\) appears (no \\(y\\)), this is a vertical line passing through every point with \\(x\\)-coordinate \\(\\frac{4}{3}\\), i.e. through \\(\\left(\\frac{4}{3}, 0\\right)\\).",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -3,
+            4,
+            5,
+            -4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [1.3333333333333333, 3], {name: 'x=4/3', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[1.3333333333333333, -3], [1.3333333333333333, 3]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -1047,7 +1533,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "\\text{Intercepts: } (0, -2) \\text{ and } (2, 0)"
       },
       {
-        explanation: "Plot both lines on the same axes using their intercepts. They should cross at a single point — this crossing point is the SIMULTANEOUS solution to both equations."
+        explanation: "Plot both lines on the same axes using their intercepts. They should cross at a single point — this crossing point is the SIMULTANEOUS solution to both equations.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2,
+            8,
+            8,
+            -4
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, 6], {name: '(0,6)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [6, 0], {name: '(6,0)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 6], [6, 0]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0, -2], {name: '(0,-2)', visible: true, strokeColor: '#dc2626', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('point', [2, 0], {name: '(2,0)', visible: true, strokeColor: '#dc2626', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -2], [2, 0]], {strokeColor: '#dc2626', strokeWidth: 2});\nboard.create('point', [4, 2], {name: '(4,2)', visible: true, strokeColor: '#1e1b4b', size: 3, label: {autoPosition: false, offset: [8, -14]}});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -1303,7 +1807,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "(3, -2), \\quad (3, 0), \\quad (3, 2), \\quad (3, 4)"
       },
       {
-        explanation: "Draw all four lines on the same axes — they should look evenly spaced and tilted at the same angle, never touching each other."
+        explanation: "Draw all four lines on the same axes — they should look evenly spaced and tilted at the same angle, never touching each other.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -4,
+            6,
+            6,
+            -6
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [0, -3], {name: 'c=-3', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -3], [3, -2]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('point', [0, -1], {name: 'c=-1', visible: true, strokeColor: '#dc2626', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, -1], [3, 0]], {strokeColor: '#dc2626', strokeWidth: 2});\nboard.create('point', [0, 1], {name: 'c=1', visible: true, strokeColor: '#059669', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 1], [3, 2]], {strokeColor: '#059669', strokeWidth: 2});\nboard.create('point', [0, 3], {name: 'c=3', visible: true, strokeColor: '#d97706', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[0, 3], [3, 4]], {strokeColor: '#d97706', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
@@ -1359,7 +1881,25 @@ export const Y11_CH3C_QUESTIONS = [
         workingOut: "m=0: \\ y - 3 = 0 \\implies y = 3"
       },
       {
-        explanation: "Plot all four lines on the same axes. Notice they all pass through \\((2, 3)\\) despite having completely different slopes — that point never changes because it is built into the equation's form."
+        explanation: "Plot all four lines on the same axes. Notice they all pass through \\((2, 3)\\) despite having completely different slopes — that point never changes because it is built into the equation's form.",
+        graphData: {
+        jsxGraph: {
+          width: 320,
+          height: 260,
+          boundingbox: [
+            -2,
+            10,
+            8,
+            -2
+          ],
+          boardOptions: {
+            axis: true,
+            grid: true,
+            keepaspectratio: false
+          },
+          script: "board.suspendUpdate();\nboard.create('point', [2, 3], {name: '(2,3)', visible: true, strokeColor: '#4f46e5', label: {autoPosition: false, offset: [8, 8]}});\nboard.create('line', [[2, 3], [5, 6]], {strokeColor: '#4f46e5', strokeWidth: 2});\nboard.create('line', [[2, 3], [5, 9]], {strokeColor: '#dc2626', strokeWidth: 2});\nboard.create('line', [[2, 3], [5, 1.5]], {strokeColor: '#059669', strokeWidth: 2});\nboard.create('line', [[2, 3], [5, 3]], {strokeColor: '#d97706', strokeWidth: 2});\nboard.unsuspendUpdate();"
+        }
+      }
       }
     ]
   },
