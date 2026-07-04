@@ -474,10 +474,16 @@ const GeometryRenderer = ({ data, style }) => {
                 break;
               }
 
+              // Map el.dash to appropriate strokeDasharray style
+              let strokeDasharray = '';
+              if (el.dash === 1) strokeDasharray = '6,6'; // dashed
+              else if (el.dash === 2) strokeDasharray = '2,4'; // dotted/short-dashed
+              else if (el.dash === 3) strokeDasharray = '8,4,2,4';
+
               jxgEl = board.create('curve', [xFn, yFn, tRange[0], tRange[1]], {
                 strokeColor: resolveColor(el.color ?? el.strokeColor ?? 'blue'),
                 strokeWidth: el.strokeWidth ?? 1.5,
-                dash:        el.dash ?? 0,
+                strokeDasharray: strokeDasharray,
                 fixed:       true,
                 highlight:   false,
               });
