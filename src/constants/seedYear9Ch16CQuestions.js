@@ -656,37 +656,41 @@ export const Y9_CH16C_QUESTIONS = [
         boundingbox: [-6, 6, 12, -6],
         keepaspectratio: true,
         elements: [
-          // Front U-shape (center (0,2), rx=4, ry=2, t from pi to 2*pi)
+          // Front U-shape (centered at (0,0), rx=4, ry=2, t from pi to 2*pi for bottom-half)
           {
             type: 'curve',
             x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t) + 2; },
+            y: function(t) { return 2 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
-          // Back U-shape (center (5,4), rx=4, ry=2, t from pi to 2*pi)
+          // Back U-shape (centered at (4,2.5) for 3D perspective shift, rx=4, ry=2)
           {
             type: 'curve',
-            x: function(t) { return 5 + 4 * Math.cos(t); },
-            y: function(t) { return 4 + 2 * Math.sin(t); },
+            x: function(t) { return 4 + 4 * Math.cos(t); },
+            y: function(t) { return 2.5 + 2 * Math.sin(t); },
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
           },
-          // Connect front and back to complete the trough
-          { type: 'point', id: 'FL', coords: [-4, 2], visible: false },
-          { type: 'point', id: 'BL', coords: [1, 4], visible: false },
-          { type: 'point', id: 'FR', coords: [4, 2], visible: false },
-          { type: 'point', id: 'BR', coords: [9, 4], visible: false },
+          // Endpoints of the front top diameter (y = 0)
+          { type: 'point', id: 'FL', coords: [-4, 0], visible: false },
+          { type: 'point', id: 'FR', coords: [4, 0], visible: false },
+          
+          // Endpoints of the back top diameter (y = 2.5)
+          { type: 'point', id: 'BL', coords: [0, 2.5], visible: false },
+          { type: 'point', id: 'BR', coords: [8, 2.5], visible: false },
+
+          // Connect top-left to top-left, top-right to top-right
           { type: 'segment', from: 'FL', to: 'BL', color: 'blue' },
           { type: 'segment', from: 'FR', to: 'BR', color: 'blue' },
 
-          // Diameter/radius indicator lines
+          // Diameter indicators
           { type: 'segment', from: 'FL', to: 'FR', color: 'red', dash: 2 },
 
           // Labels
-          { type: 'text', coords: [0, 2.5], content: '8 m' },
-          { type: 'text', coords: [2.5, 4.3], content: '6 m' }
+          { type: 'text', coords: [0, 0.5], content: '8 m' },
+          { type: 'text', coords: [2.5, 2.0], content: '6 m' }
         ]
       }
     },
