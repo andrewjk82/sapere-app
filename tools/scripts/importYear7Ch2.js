@@ -4031,7 +4031,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers from the list have \\(6\\) as a factor?<br>$\\(\\{12, 18, 22, 28, 96, 114, 130, 204\\}\\)$",
+    "question": "Which of the following numbers from the list have \\(6\\) as a factor?<br>\\(\\{12, 18, 22, 28, 96, 114, 130, 204\\}\\)",
     "options": [
       "\\(\\{18, 96, 114, 130, 204\\}\\)",
       "\\(\\{12, 18, 96, 204\\}\\)",
@@ -4065,7 +4065,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers have \\(12\\) as a factor?<br>$\\(\\{18, 24, 48, 60, 78, 108, 132, 150\\}\\)$",
+    "question": "Which of the following numbers have \\(12\\) as a factor?<br>\\(\\{18, 24, 48, 60, 78, 108, 132, 150\\}\\)",
     "options": [
       "\\(\\{24, 48, 60, 108, 132\\}\\)",
       "\\(\\{24, 48, 60, 78, 108, 132\\}\\)",
@@ -4099,7 +4099,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers are multiples of \\(17\\)?<br>$\\(\\{34, 45, 51, 68, 80, 85, 102, 110\\}\\)$",
+    "question": "Which of the following numbers are multiples of \\(17\\)?<br>\\(\\{34, 45, 51, 68, 80, 85, 102, 110\\}\\)",
     "options": [
       "\\(\\{34, 51, 68, 85, 102\\}\\)",
       "\\(\\{34, 51, 80, 85, 102\\}\\)",
@@ -4133,7 +4133,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers are multiples of \\(23\\)?<br>$\\(\\{46, 69, 75, 92, 115, 120, 138, 161\\}\\)$",
+    "question": "Which of the following numbers are multiples of \\(23\\)?<br>\\(\\{46, 69, 75, 92, 115, 120, 138, 161\\}\\)",
     "options": [
       "\\(\\{46, 69, 92, 115, 138\\}\\)",
       "\\(\\{69, 92, 115, 138, 161\\}\\)",
@@ -4167,7 +4167,7 @@ export const allQuestions = [
     "difficulty": "easy",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers have \\(220\\) as a multiple?<br>$\\(\\{2, 4, 5, 8, 10, 11, 20, 22, 44, 50, 110\\}\\)$",
+    "question": "Which of the following numbers have \\(220\\) as a multiple?<br>\\(\\{2, 4, 5, 8, 10, 11, 20, 22, 44, 50, 110\\}\\)",
     "options": [
       "\\(\\{4, 5, 10, 11, 20, 22, 44, 110\\}\\)",
       "\\(\\{2, 4, 5, 8, 10, 11, 20, 22, 44, 110\\}\\)",
@@ -4206,7 +4206,7 @@ export const allQuestions = [
     "difficulty": "medium",
     "isActive": true,
     "isManual": true,
-    "question": "Which of the following numbers have \\(315\\) as a multiple?<br>$\\(\\{3, 5, 7, 9, 15, 21, 35, 45, 63, 105\\}\\)$",
+    "question": "Which of the following numbers have \\(315\\) as a multiple?<br>\\(\\{3, 5, 7, 9, 15, 21, 35, 45, 63, 105\\}\\)",
     "options": [
       "\\(\\{3, 5, 9, 15, 45, 105\\}\\)",
       "\\(\\{3, 5, 7, 9, 15, 21, 35\\}\\)",
