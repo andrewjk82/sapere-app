@@ -741,10 +741,10 @@ export const Y9_CH16B_QUESTIONS = [
           { type: 'segment', from: 'H', to: 'E', color: 'blue', dash: 2 },
           { type: 'segment', from: 'E', to: 'F', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'E', color: 'blue', dash: 2 },
-          { type: 'text', coords: [3,-0.5], content: '16 cm' },
-          { type: 'text', coords: [5.2,2.2], content: '13 cm' },
-          { type: 'text', coords: [-1.4,2], content: '12 cm' },
-          { type: 'text', coords: [5.5,0.8], content: '4 cm' }
+          { type: 'text', coords: [3, -0.6], content: '15 cm' },
+          { type: 'text', coords: [5.5, 1.8], content: '10 cm' },
+          { type: 'text', coords: [-1.4, 2], content: '8 cm' },
+          { type: 'text', coords: [8.0, 1.0], content: '5 cm' }
         ]
       }
     },
@@ -811,10 +811,10 @@ export const Y9_CH16B_QUESTIONS = [
           { type: 'segment', from: 'H', to: 'E', color: 'blue', dash: 2 },
           { type: 'segment', from: 'E', to: 'F', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'E', color: 'blue', dash: 2 },
-          { type: 'text', coords: [4,-0.5], content: '13 cm' },
-          { type: 'text', coords: [7.2,1.8], content: '5 cm' },
-          { type: 'text', coords: [4,3.2], content: '5 cm' },
-          { type: 'text', coords: [6.8,0.8], content: '5 cm' }
+          { type: 'text', coords: [4, -0.6], content: '14 cm' },
+          { type: 'text', coords: [7.4, 1.6], content: '5 cm' },
+          { type: 'text', coords: [4, 3.2], content: '6 cm' },
+          { type: 'text', coords: [9.5, 0.6], content: '8 cm' }
         ]
       }
     },
@@ -877,9 +877,9 @@ export const Y9_CH16B_QUESTIONS = [
           { type: 'segment', from: 'D', to: 'E', color: 'blue', dash: 2 },
           { type: 'segment', from: 'D', to: 'F', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'D', color: 'blue', dash: 2 },
-          { type: 'text', coords: [3,-0.5], content: '6 cm' },
-          { type: 'text', coords: [4.8,2.2], content: '5 cm' },
-          { type: 'text', coords: [5.2,0.8], content: '15 cm' }
+          { type: 'text', coords: [3, -0.6], content: '8 cm' },
+          { type: 'text', coords: [4.8, 2.2], content: '5 cm' },
+          { type: 'text', coords: [8.2, 0.8], content: '12 cm' }
         ]
       }
     },
