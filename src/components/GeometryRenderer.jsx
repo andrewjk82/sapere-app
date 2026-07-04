@@ -520,8 +520,22 @@ const GeometryRenderer = ({ data, style }) => {
   }, [data]);
 
   // ── Dimensions (same scaling as JsxGraphDiagram) ──
-  const baseWidth   = typeof data.width  === 'number' ? data.width  : (parseInt(data.width)  || 300);
-  const baseHeight  = typeof data.height === 'number' ? data.height : (parseInt(data.height) || 300);
+  // Most seed authors never set width/height on this format (it wasn't part
+  // of the documented schema) and rely on keepaspectratio to keep circles
+  // circular — but a hardcoded 300x300 canvas with keepaspectratio:true on a
+  // non-square boundingbox forces JSXGraph to shrink the LONGER axis to fit,
+  // silently clipping whatever sits near that edge (e.g. a quadrant's arc).
+  // When width/height are omitted, size the canvas to the boundingbox's own
+  // aspect ratio instead of assuming square, so nothing gets clipped.
+  const bboxForSize = data.boundingbox ?? [-6, 6, 6, -6];
+  const bboxDx = Math.abs(bboxForSize[2] - bboxForSize[0]) || 1;
+  const bboxDy = Math.abs(bboxForSize[1] - bboxForSize[3]) || 1;
+  const bboxAspect = bboxDy / bboxDx;
+  const AUTO_SIZE_LONG_SIDE = 320;
+  const autoWidth  = bboxAspect <= 1 ? AUTO_SIZE_LONG_SIDE : AUTO_SIZE_LONG_SIDE / bboxAspect;
+  const autoHeight = bboxAspect <= 1 ? AUTO_SIZE_LONG_SIDE * bboxAspect : AUTO_SIZE_LONG_SIDE;
+  const baseWidth   = typeof data.width  === 'number' ? data.width  : (parseInt(data.width)  || autoWidth);
+  const baseHeight  = typeof data.height === 'number' ? data.height : (parseInt(data.height) || autoHeight);
   const displayWidth  = baseWidth  * 1.2;
   const displayHeight = baseHeight * 1.2;
 
