@@ -2291,9 +2291,10 @@ export const Y9_CH16G_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16g-q12a-board',
-        boundingbox: [-2, 23, 30, -3],
+        boundingbox: [-2, 25, 33, -3],
         keepaspectratio: true,
         elements: [
+          // Front face points (solid)
           { type: 'point', id: 'A', coords: [0, 0], visible: false },
           { type: 'point', id: 'B', coords: [25, 0], visible: false },
           { type: 'point', id: 'C', coords: [25, 15], visible: false },
@@ -2301,12 +2302,39 @@ export const Y9_CH16G_QUESTIONS = [
           { type: 'point', id: 'E', coords: [15, 20], visible: false },
           { type: 'point', id: 'F', coords: [0, 20], visible: false },
           { type: 'polygon', points: ['A', 'B', 'C', 'D', 'E', 'F'], color: 'blue', fillOpacity: 0.1 },
+
+          // Back face points (shifted by [5, 4] representing length projection)
+          { type: 'point', id: 'A_back', coords: [5, 4], visible: false },
+          { type: 'point', id: 'B_back', coords: [30, 4], visible: false },
+          { type: 'point', id: 'C_back', coords: [30, 19], visible: false },
+          { type: 'point', id: 'D_back', coords: [20, 19], visible: false },
+          { type: 'point', id: 'E_back', coords: [20, 24], visible: false },
+          { type: 'point', id: 'F_back', coords: [5, 24], visible: false },
+
+          // Visible back outlines and connecting lines
+          { type: 'segment', from: 'B', to: 'B_back', color: 'blue' },
+          { type: 'segment', from: 'C', to: 'C_back', color: 'blue' },
+          { type: 'segment', from: 'D', to: 'D_back', color: 'blue' },
+          { type: 'segment', from: 'E', to: 'E_back', color: 'blue' },
+          { type: 'segment', from: 'F', to: 'F_back', color: 'blue' },
+          { type: 'segment', from: 'B_back', to: 'C_back', color: 'blue' },
+          { type: 'segment', from: 'C_back', to: 'D_back', color: 'blue' },
+          { type: 'segment', from: 'D_back', to: 'E_back', color: 'blue' },
+          { type: 'segment', from: 'E_back', to: 'F_back', color: 'blue' },
+
+          // Hidden back outlines (dashed)
+          { type: 'segment', from: 'A', to: 'A_back', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'A_back', to: 'B_back', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'A_back', to: 'F_back', color: 'blue', dash: 2 },
+
+          // Labels
           { type: 'text', coords: [12.5, -0.6], content: '25 cm' },
           { type: 'text', coords: [-2, 10], content: '20 cm' },
           { type: 'text', coords: [7.5, 20.4], content: '15 cm' },
           { type: 'text', coords: [15.5, 17.5], content: '5 cm' },
           { type: 'text', coords: [25.5, 7.5], content: '15 cm' },
-          { type: 'text', coords: [20.0, 15.4], content: '10 cm' }
+          { type: 'text', coords: [20.0, 15.4], content: '10 cm' },
+          { type: 'text', coords: [28.0, 10.5], content: '50 cm' }
         ]
       }
     },
@@ -2364,9 +2392,10 @@ export const Y9_CH16G_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16g-q12b-board',
-        boundingbox: [-2, 15, 8, -2],
+        boundingbox: [-2, 17, 12, -2],
         keepaspectratio: true,
         elements: [
+          // Front face points (solid)
           { type: 'point', id: 'A', coords: [0, 0], visible: false },
           { type: 'point', id: 'B', coords: [6, 0], visible: false },
           { type: 'point', id: 'C', coords: [6, 10], visible: false },
@@ -2376,10 +2405,33 @@ export const Y9_CH16G_QUESTIONS = [
           { type: 'point', id: 'M', coords: [3, 10], visible: false },
           { type: 'segment', from: 'D', to: 'M', color: 'red', dash: 2 },
           { type: 'segment', from: 'E', to: 'C', color: 'blue', dash: 2 },
+
+          // Back face points (shifted by [3, 2] representing length projection)
+          { type: 'point', id: 'A_back', coords: [3, 2], visible: false },
+          { type: 'point', id: 'B_back', coords: [9, 2], visible: false },
+          { type: 'point', id: 'C_back', coords: [9, 12], visible: false },
+          { type: 'point', id: 'D_back', coords: [6, 15], visible: false },
+          { type: 'point', id: 'E_back', coords: [3, 12], visible: false },
+
+          // Visible back outlines and connecting lines
+          { type: 'segment', from: 'B', to: 'B_back', color: 'blue' },
+          { type: 'segment', from: 'C', to: 'C_back', color: 'blue' },
+          { type: 'segment', from: 'D', to: 'D_back', color: 'blue' },
+          { type: 'segment', from: 'B_back', to: 'C_back', color: 'blue' },
+          { type: 'segment', from: 'C_back', to: 'D_back', color: 'blue' },
+          { type: 'segment', from: 'D_back', to: 'E_back', color: 'blue' },
+
+          // Hidden back outlines (dashed)
+          { type: 'segment', from: 'A', to: 'A_back', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'E', to: 'E_back', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'A_back', to: 'B_back', color: 'blue', dash: 2 },
+          { type: 'segment', from: 'A_back', to: 'E_back', color: 'blue', dash: 2 },
+
+          // Labels
           { type: 'text', coords: [3, -0.5], content: '6 m' },
           { type: 'text', coords: [-1, 5], content: '10 m' },
           { type: 'text', coords: [3.3, 11.5], content: '3 m' },
-          { type: 'text', coords: [7.5, 0.4], content: '30 m' }
+          { type: 'text', coords: [7.5, 0.8], content: '30 m' }
         ]
       }
     },
