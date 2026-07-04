@@ -147,17 +147,17 @@ export const Y9_CH16F_QUESTIONS = [
     ],
     answer: 0,
     hint: '1 micrometre is 10^-6 metres.',
-    solution: 'Convert from micrometres to metres:\\n\\[25\\\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} = 2.5 \\\\times 10^{-5}\\\\text{ m}\\]',
+    solution: 'Convert from micrometres to metres:\\n\\[25\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} = 2.5 \\\\times 10^{-5}\\\\text{ m}\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor from micrometres to metres. One micrometre is \\(10^{-6}\\) metres.',
-        workingOut: '\\\\( 1\\\\,\\\\mu\\\\text{m} = 10^{-6}\\\\text{ m} \\\\)',
+        workingOut: '\\\\( 1\\,\\\\mu\\\\text{m} = 10^{-6}\\\\text{ m} \\\\)',
         graphData: null
       },
       {
         explanation: 'Multiply the value of 25 micrometres by the conversion factor.',
-        workingOut: '\\\\( 25\\\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} \\\\)',
+        workingOut: '\\\\( 25\\,\\\\mu\\\\text{m} = 25 \\\\times 10^{-6}\\\\text{ m} \\\\)',
         graphData: null
       },
       {
@@ -567,12 +567,12 @@ export const Y9_CH16F_QUESTIONS = [
     ],
     answer: 0,
     hint: 'Multiply by 1000 to convert microseconds to nanoseconds.',
-    solution: 'Convert from microseconds to nanoseconds:\\n\\[672\\\\,\\\\mu\\\\text{s} = 672 \\\\times 1000 = 672,000\\\\text{ nanoseconds} = 6.72 \\\\times 10^{5}\\\\text{ nanoseconds}\\]',
+    solution: 'Convert from microseconds to nanoseconds:\\n\\[672\\,\\\\mu\\\\text{s} = 672 \\\\times 1000 = 672,000\\\\text{ nanoseconds} = 6.72 \\\\times 10^{5}\\\\text{ nanoseconds}\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor between microseconds and nanoseconds. One microsecond equals 1,000 nanoseconds.',
-        workingOut: '\\\\( 1\\\\,\\\\mu\\\\text{s} = 1000\\\\text{ nanoseconds} \\\\)',
+        workingOut: '\\\\( 1\\,\\\\mu\\\\text{s} = 1000\\\\text{ nanoseconds} \\\\)',
         graphData: null
       },
       {
@@ -698,12 +698,12 @@ export const Y9_CH16F_QUESTIONS = [
     ],
     answer: 0,
     hint: '1 microsecond is 10^-6 seconds.',
-    solution: 'Convert microseconds to seconds:\\n\\[240\\\\,\\\\mu\\\\text{s} = 240 \\\\times 10^{-6}\\\\text{ s} = 2.4 \\\\times 10^{-4}\\\\text{ s}\\]',
+    solution: 'Convert microseconds to seconds:\\n\\[240\\,\\\\mu\\\\text{s} = 240 \\\\times 10^{-6}\\\\text{ s} = 2.4 \\\\times 10^{-4}\\\\text{ s}\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Identify the conversion factor from microseconds to seconds.',
-        workingOut: '\\\\( 1\\\\,\\\\mu\\\\text{s} = 10^{-6}\\\\text{ s} \\\\)',
+        workingOut: '\\\\( 1\\,\\\\mu\\\\text{s} = 10^{-6}\\\\text{ s} \\\\)',
         graphData: null
       },
       {
@@ -741,12 +741,12 @@ export const Y9_CH16F_QUESTIONS = [
     ],
     answer: 0,
     hint: '1 million is 10^6 and 1 megalitre is 10^6 litres.',
-    solution: 'Calculate total volume in litres:\\n\\[1\\\\,000\\\\,000\\\\text{ ML} = 10^6 \\\\times 10^6\\\\text{ L} = 10^{12}\\\\text{ L}\\]',
+    solution: 'Calculate total volume in litres:\\n\\[1\\,000\\,000\\\\text{ ML} = 10^6 \\\\times 10^6\\\\text{ L} = 10^{12}\\\\text{ L}\\]',
     graphData: null,
     solutionSteps: [
       {
         explanation: 'Express one million in scientific index form.',
-        workingOut: '\\\\( 1\\\\,000\\\\,000 = 10^6 \\\\)',
+        workingOut: '\\\\( 1\\,000\\,000 = 10^6 \\\\)',
         graphData: null
       },
       {
@@ -778,12 +778,12 @@ export const Y9_CH16F_QUESTIONS = [
     opts: [
       { text: '\\(1000\\\\text{ GL}\\)', imageUrl: '' },
       { text: '\\(100\\\\text{ GL}\\)', imageUrl: '' },
-      { text: '\\(10\\\\,000\\\\text{ GL}\\)', imageUrl: '' },
+      { text: '\\(10\\,000\\\\text{ GL}\\)', imageUrl: '' },
       { text: '\\(10\\\\text{ GL}\\)', imageUrl: '' }
     ],
     answer: 0,
     hint: '1 gigalitre is 10^9 litres, or 1000 megalitres.',
-    solution: 'Convert megalitres to gigalitres by dividing by 1000:\\n\\[1\\\\,000\\\\,000\\\\text{ ML} \\\\div 1000 = 1000\\\\text{ GL}\\]',
+    solution: 'Convert megalitres to gigalitres by dividing by 1000:\\n\\[1\\,000\\,000\\\\text{ ML} \\\\div 1000 = 1000\\\\text{ GL}\\]',
     graphData: null,
     solutionSteps: [
       {
@@ -793,7 +793,7 @@ export const Y9_CH16F_QUESTIONS = [
       },
       {
         explanation: 'Divide the volume in megalitres by 1000 to convert to gigalitres.',
-        workingOut: '\\\\( V = 1\\\\,000\\\\,000 \\\\div 1000 \\\\)',
+        workingOut: '\\\\( V = 1\\,000\\,000 \\\\div 1000 \\\\)',
         graphData: null
       },
       {
@@ -816,7 +816,7 @@ export const Y9_CH16F_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 90,
     type: 'multiple_choice',
-    question: 'To find the volume of a dam on a farm, use the following steps:\\n- Step 1: Determine the width, length and depth of the dam.\\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\\\text{ m}\\)).\\n- Step 3: Calculate volume: \\\\(Volume = 0.4 \\\\times surface\\\\,area \\\\times depth\\\\) (where depth = \\(4\\\\text{ m}\\)).\\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\\n\\nCalculate the volume of water held in the dam in megalitres.',
+    question: 'To find the volume of a dam on a farm, use the following steps:\\n- Step 1: Determine the width, length and depth of the dam.\\n- Step 2: Calculate the circular surface area in square metres (diameter = \\(40\\\\text{ m}\\)).\\n- Step 3: Calculate volume: \\\\(Volume = 0.4 \\\\times surface\\,area \\\\times depth\\\\) (where depth = \\(4\\\\text{ m}\\)).\\n- Step 4: Convert capacity to megalitres (ML) by dividing the volume in cubic metres by 1000.\\n\\nCalculate the volume of water held in the dam in megalitres.',
     opts: [
       { text: '\\(2.01\\\\text{ ML}\\)', imageUrl: '' },
       { text: '\\(2.01 \\\\times 10^3\\\\text{ ML}\\)', imageUrl: '' },
@@ -834,7 +834,7 @@ export const Y9_CH16F_QUESTIONS = [
         graphData: null
       },
       {
-        explanation: 'Calculate the volume in cubic metres using the provided formula: \\\\(Volume = 0.4 \\\\times surface\\\\,area \\\\times depth\\\\).',
+        explanation: 'Calculate the volume in cubic metres using the provided formula: \\\\(Volume = 0.4 \\\\times surface\\,area \\\\times depth\\\\).',
         workingOut: '\\\\( V = 0.4 \\\\times 1256.64 \\\\times 4 = 2010.62\\\\text{ m}^3 \\\\)',
         graphData: null
       },
