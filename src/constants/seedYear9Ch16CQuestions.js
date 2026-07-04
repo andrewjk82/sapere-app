@@ -659,16 +659,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front U-shape (centered at (0,0), rx=4, ry=2, t from pi to 2*pi for bottom-half)
           {
             type: 'curve',
-            x: function(t) { return 4 * Math.cos(t); },
-            y: function(t) { return 2 * Math.sin(t); },
+            x: '4 * Math.cos(t)',
+            y: '2 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back U-shape (centered at (4,2.5) for 3D perspective shift, rx=4, ry=2)
           {
             type: 'curve',
-            x: function(t) { return 4 + 4 * Math.cos(t); },
-            y: function(t) { return 2.5 + 2 * Math.sin(t); },
+            x: '4 + 4 * Math.cos(t)',
+            y: '2.5 + 2 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue',
             dash: 2
@@ -744,16 +744,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front curve t from pi to 2pi
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '1.5 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back curve t from 0 to pi (hidden/dashed)
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '1.5 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
@@ -763,16 +763,16 @@ export const Y9_CH16C_QUESTIONS = [
           // Front curve (visible part: t from pi to 2pi) - MUST be solid
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 4 + 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '4 + 1.5 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
           // Back curve (hidden/inner part: t from 0 to pi) - dashed
           {
             type: 'curve',
-            x: function(t) { return 5 * Math.cos(t); },
-            y: function(t) { return 4 + 1.5 * Math.sin(t); },
+            x: '5 * Math.cos(t)',
+            y: '4 + 1.5 * Math.sin(t)',
             tRange: [0, Math.PI],
             color: 'blue',
             dash: 2
@@ -782,8 +782,8 @@ export const Y9_CH16C_QUESTIONS = [
           // Full ellipse for the very top (front visible, back visible)
           {
             type: 'curve',
-            x: function(t) { return 2 * Math.cos(t); },
-            y: function(t) { return 9 + 0.6 * Math.sin(t); },
+            x: '2 * Math.cos(t)',
+            y: '9 + 0.6 * Math.sin(t)',
             tRange: [0, 2 * Math.PI],
             color: 'blue'
           },
@@ -792,8 +792,8 @@ export const Y9_CH16C_QUESTIONS = [
           // Front visible curve (sitting on bottom cylinder top)
           {
             type: 'curve',
-            x: function(t) { return 2 * Math.cos(t); },
-            y: function(t) { return 4 + 0.6 * Math.sin(t); },
+            x: '2 * Math.cos(t)',
+            y: '4 + 0.6 * Math.sin(t)',
             tRange: [Math.PI, 2 * Math.PI],
             color: 'blue'
           },
@@ -834,7 +834,7 @@ export const Y9_CH16C_QUESTIONS = [
       },
       {
         explanation: 'Determine the visible top circular faces. The smaller cylinder top is visible, and the bottom cylinder top is partially covered.',
-        workingOut: '\\\\( A_{\\\\\\\\text{visible\\\\_tops}} = \\\\pi(2)^2 + (\\\\pi(5)^2 - \\\\pi(2)^2) = 25\\\\pi\\\\text{ cm}^2 \\\\)',
+        workingOut: '\\\\( A_{\\\\text{visible tops}} = \\\\pi(2)^2 + (\\\\pi(5)^2 - \\\\pi(2)^2) = 25\\\\pi\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
@@ -997,77 +997,78 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q8-board',
-        boundingbox: [-10, 8, 10, -8],
+        boundingbox: [-9, 4.5, 9, -6.5],
         keepaspectratio: true,
+        // 3/4 cheese wheel: the removed 90° wedge spans t = 250°..340° so the
+        // notch faces the viewer and both flat cut faces are visible.
+        // Projection: rx=6, ry=1.8, top-face centre (0,1), bottom (0,-3).
         elements: [
-          // Centers (isometric perspective)
-          { type: 'point', id: 'O1', coords: [0, -3], visible: false }, // bottom center
-          { type: 'point', id: 'O2', coords: [0, 1], visible: false },  // top center
+          // Centres of the top and bottom faces
+          { type: 'point', id: 'O2', coords: [0, 1], visible: false },
+          { type: 'point', id: 'O1', coords: [0, -3], visible: false },
+          // Cut edge at t=250°: top rim, bottom rim
+          { type: 'point', id: 'T1', coords: [-2.05, -0.69], visible: false },
+          { type: 'point', id: 'B1', coords: [-2.05, -4.69], visible: false },
+          // Cut edge at t=340°: top rim, bottom rim
+          { type: 'point', id: 'T2', coords: [5.64, 0.38], visible: false },
+          { type: 'point', id: 'B2', coords: [5.64, -3.62], visible: false },
+          // Silhouette edges (t=180° left, t=0° right)
+          { type: 'point', id: 'L2', coords: [-6, 1], visible: false },
+          { type: 'point', id: 'L1', coords: [-6, -3], visible: false },
+          { type: 'point', id: 'R2', coords: [6, 1], visible: false },
+          { type: 'point', id: 'R1', coords: [6, -3], visible: false },
 
-          // Outer points
-          { type: 'point', id: 'P180', coords: [-6, -3], visible: false },
-          { type: 'point', id: 'Q180', coords: [-6, 1], visible: false },
-          { type: 'point', id: 'P0', coords: [6, -3], visible: false },
-          { type: 'point', id: 'Q0', coords: [6, 1], visible: false },
-          { type: 'point', id: 'P270', coords: [0, -4.8], visible: false },
-          { type: 'point', id: 'Q270', coords: [0, -0.8], visible: false },
-          { type: 'point', id: 'P90', coords: [0, -1.2], visible: false },
-          { type: 'point', id: 'Q90', coords: [0, 2.8], visible: false },
+          // Flat cut face 1 (at 250°): radius on top, vertical edge, radius on bottom
+          { type: 'segment', from: 'O2', to: 'T1', color: 'blue' },
+          { type: 'segment', from: 'T1', to: 'B1', color: 'blue' },
+          { type: 'segment', from: 'O1', to: 'B1', color: 'blue' },
+          // Flat cut face 2 (at 340°)
+          { type: 'segment', from: 'O2', to: 'T2', color: 'blue' },
+          { type: 'segment', from: 'T2', to: 'B2', color: 'blue' },
+          { type: 'segment', from: 'O1', to: 'B2', color: 'blue' },
+          // Central axis edge where the two cut faces meet
+          { type: 'segment', from: 'O2', to: 'O1', color: 'blue' },
+          // Outer silhouette verticals
+          { type: 'segment', from: 'L2', to: 'L1', color: 'blue' },
+          { type: 'segment', from: 'R2', to: 'R1', color: 'blue' },
 
-          // Cut faces (flat rectangles)
-          { type: 'segment', from: 'O1', to: 'P180', color: 'blue' },
-          { type: 'segment', from: 'O1', to: 'P270', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q180', color: 'blue' },
-          { type: 'segment', from: 'O2', to: 'Q270', color: 'blue' },
-
-          // Vertical edges
-          { type: 'segment', from: 'O1', to: 'O2', color: 'blue' },
-          { type: 'segment', from: 'P180', to: 'Q180', color: 'blue' },
-          { type: 'segment', from: 'P270', to: 'Q270', color: 'blue' },
-          { type: 'segment', from: 'P0', to: 'Q0', color: 'blue' },
-
-          // Parametric curves for 270-degree sector (from Math.PI (180 deg) to 2.5*Math.PI (90 deg/450 deg))
-          // Bottom curve (visible 270 deg): 180 -> 270 -> 0 -> 90
+          // Top face rim — the kept 270° arc (340° round to 250°+360°)
           {
             type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2.5 * Math.PI],
+            x: '6 * Math.cos(t)',
+            y: '1 + 1.8 * Math.sin(t)',
+            tRange: [5.9341, 10.6465],
             color: 'blue'
           },
-          // Top curve (visible 270 deg): 180 -> 270 -> 0 -> 90
+          // Bottom front rim, left of the notch (180°..250°)
           {
             type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [Math.PI, 2.5 * Math.PI],
+            x: '6 * Math.cos(t)',
+            y: '-3 + 1.8 * Math.sin(t)',
+            tRange: [3.1416, 4.3633],
+            color: 'blue'
+          },
+          // Bottom front rim, right of the notch (340°..360°)
+          {
+            type: 'curve',
+            x: '6 * Math.cos(t)',
+            y: '-3 + 1.8 * Math.sin(t)',
+            tRange: [5.9341, 6.2832],
+            color: 'blue'
+          },
+          // 270° angle marker on the top face (small arc around the centre)
+          {
+            type: 'curve',
+            x: '1.9 * Math.cos(t)',
+            y: '1 + 0.57 * Math.sin(t)',
+            tRange: [5.9341, 10.6465],
             color: 'blue'
           },
 
-          // Hidden back curve (remaining 90 deg: from 90 deg (0.5*pi) to 180 deg (pi)) - dashed
-          {
-            type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return -3 + 1.8 * Math.sin(t); },
-            tRange: [0.5 * Math.PI, Math.PI],
-            color: 'blue',
-            dash: 2
-          },
-          {
-            type: 'curve',
-            x: function(t) { return 6 * Math.cos(t); },
-            y: function(t) { return 1 + 1.8 * Math.sin(t); },
-            tRange: [0.5 * Math.PI, Math.PI],
-            color: 'blue',
-            dash: 2
-          },
-          // Vertical edge for the hidden back corner (90 deg)
-          { type: 'segment', from: 'P90', to: 'Q90', color: 'blue', dash: 2 },
-
-          // Dimension Labels
-          { type: 'text', coords: [-4.2, -1.0], content: '4 cm' },
-          { type: 'text', coords: [-3.2, -3.6], content: '8 cm' },
-          { type: 'text', coords: [0.8, -1.8], content: '270°' }
+          // Dimension labels
+          { type: 'text', coords: [-2.2, 1.9], content: '270°' },
+          { type: 'text', coords: [3.0, 0.95], content: '8 cm' },
+          { type: 'text', coords: [6.45, -1.1], content: '4 cm' }
         ]
       }
     },
