@@ -13,10 +13,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the rectangle shown in the diagram:\\n\\n- Length = \\(6\\text{ cm}\\)\\n- Width = \\(4\\text{ cm}\\)',
     opts: [
-      { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(12\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(12\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '2',
     hint: 'Use the rectangle area formula: Area = length \\(\\times\\) width.',
@@ -25,6 +25,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q1a-board',
         boundingbox: [-3,5,7,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -68,18 +69,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the parallelogram shown in the diagram:\\n\\n- Base = \\(6\\text{ cm}\\)\\n- Height = \\(8\\text{ cm}\\)',
     opts: [
-      { text: '\\(28\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(14\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(14\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(28\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '3',
     hint: 'Use the parallelogram area formula: Area = base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = 6 \\\\times 8 = 48\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1b-board',
         boundingbox: [-3,9,9,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -126,10 +128,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the triangle shown in the diagram:\\n\\n- Base = \\(8\\text{ cm}\\)\\n- Height = \\(6\\text{ cm}\\)',
     opts: [
-      { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(14\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '2',
     hint: 'Use the triangle area formula: Area = 0.5 \\(\\times\\) base \\(\\times\\) height.',
@@ -138,6 +140,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q1c-board',
         boundingbox: [-3,7,9,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [8,0], visible: false },
@@ -183,9 +186,9 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the obtuse-angled triangle shown in the diagram:\\n\\n- Base = \\(6\\text{ cm}\\)\\n- Height = \\(5\\text{ cm}\\)',
     opts: [
-      { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(30\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(15\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(11\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '2',
@@ -195,6 +198,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q1d-board',
         boundingbox: [-3,6,8,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -241,10 +245,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the trapezium shown in the diagram:\\n\\n- Parallel sides = \\(5\\text{ m}\\) and \\(9\\text{ m}\\)\\n- Height = \\(4\\text{ m}\\)',
     opts: [
-      { text: '\\(36\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(56\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(28\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(14\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(14\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(36\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(56\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: '2',
     hint: 'Use the trapezium area formula: Area = 0.5 \\(\\times (a + b) \\times\\) height.',
@@ -253,6 +257,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q1e-board',
         boundingbox: [-3,5,10,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [9,0], visible: false },
@@ -302,16 +307,17 @@ export const Y9_CH16_QUESTIONS = [
     opts: [
       { text: '\\(30\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(35\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(40\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(70\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(70\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(40\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '0',
     hint: 'Use the trapezium area formula: Area = 0.5 \\(\\times (a + b) \\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times (6 + 8) \\\\times 5 = 7 \\\\times 5 = 35\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1f-board',
         boundingbox: [-3,7,9,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [8,0], visible: false },
@@ -358,18 +364,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the circle with radius \\(5\\text{ cm}\\). Give the answer in exact form and correct to two decimal places.',
     opts: [
-      { text: '\\(5\\pi\\text{ cm}^2\\) (approx. \\(15.71\\text{ cm}^2\\))', imageUrl: '' },
+      { text: '\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))', imageUrl: '' },
-      { text: '\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))', imageUrl: '' }
+      { text: '\\(5\\pi\\text{ cm}^2\\) (approx. \\(15.71\\text{ cm}^2\\))', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'Use the circle area formula: Area = \\(\\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\pi \\\\times 5^2 = 25\\pi\\\\text{ cm}^2 \\\\approx 78.54\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1g-board',
         boundingbox: [-6,6,6,-6],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'circle', id: 'C', center: 'O', radius: 5, color: 'blue' },
@@ -411,18 +418,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of a circle with a diameter of \\(10\\text{ cm}\\). Give the answer in exact form and correct to two decimal places.',
     opts: [
+      { text: '\\(50\\pi\\text{ cm}^2\\) (approx. \\(157.08\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(100\\pi\\text{ cm}^2\\) (approx. \\(314.16\\text{ cm}^2\\))', imageUrl: '' },
-      { text: '\\(50\\pi\\text{ cm}^2\\) (approx. \\(157.08\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(25\\pi\\text{ cm}^2\\) (approx. \\(78.54\\text{ cm}^2\\))', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '1',
     hint: 'Halve the diameter to find the radius, then use Area = \\(\\pi r^2\\).',
     solution: 'The radius is \\(r = 10 \\\\div 2 = 5\\text{ cm}\\).\\n\\nArea is:\\n\\[A = \\pi \\\\times 5^2 = 25\\pi\\\\text{ cm}^2 \\\\approx 78.54\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1h-board',
         boundingbox: [-6,6,6,-6],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'circle', id: 'C', center: 'O', radius: 5, color: 'blue' },
@@ -465,18 +473,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the right-angled trapezium shown in the diagram:\\n\\n- Height = \\(4\\text{ cm}\\)\\n- Parallel sides = \\(3\\text{ cm}\\) and \\(6\\text{ cm}\\)',
     opts: [
-      { text: '\\(18\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(15\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(12\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(36\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(36\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(18\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(15\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: '2',
     hint: 'Use the formula Area = 0.5 \\(\\times (a + b) \\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times (3 + 6) \\\\times 4 = 9 \\\\times 2 = 18\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1i-board',
         boundingbox: [-3,5,8,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -524,17 +533,18 @@ export const Y9_CH16_QUESTIONS = [
     question: 'Calculate the area of the parallelogram shown in the diagram:\\n\\n- Base = \\(5\\text{ cm}\\)\\n- Height = \\(3\\text{ cm}\\)',
     opts: [
       { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(7.5\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(8\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(15\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(8\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(7.5\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '0',
     hint: 'Use the parallelogram area formula: Area = base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = 5 \\\\times 3 = 15\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q1j-board',
         boundingbox: [-3,4,8,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [5,0], visible: false },
@@ -581,18 +591,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the rhombus with diagonals of length \\(8\\text{ cm}\\) and \\(6\\text{ cm}\\).',
     opts: [
-      { text: '\\(12\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(14\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(12\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '1',
     hint: 'Use the formula: Area = 0.5 \\(\\times x \\times y\\), where x and y are the diagonal lengths.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 8 \\\\times 6 = 24\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q2a-board',
         boundingbox: [-5,4,5,-4],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [-4,0], visible: false },
           { type: 'point', id: 'B', coords: [0,3], visible: false },
@@ -638,10 +649,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the kite with diagonals of length \\(18\\text{ cm}\\) and \\(14\\text{ cm}\\).',
     opts: [
-      { text: '\\(63\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(252\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(126\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(126\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(63\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '3',
     hint: 'Use the formula: Area = 0.5 \\(\\times x \\times y\\), where x and y are the diagonal lengths.',
@@ -650,6 +661,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q2b-board',
         boundingbox: [-10,8,10,-8],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [-9,0], visible: false },
           { type: 'point', id: 'B', coords: [3,7], visible: false },
@@ -695,18 +707,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the kite with diagonals of length \\(4\\text{ m}\\) and \\(16\\text{ m}\\).',
     opts: [
+      { text: '\\(64\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(20\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(16\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(32\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(64\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(16\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '1',
     hint: 'Use the diagonal area formula: Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 4 \\\\times 16 = 32\\\\text{ m}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q2c-board',
         boundingbox: [-3,9,3,-9],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,8], visible: false },
           { type: 'point', id: 'B', coords: [2,4], visible: false },
@@ -752,18 +765,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the rhombus with diagonals of length \\(16\\text{ mm}\\) and \\(24\\text{ mm}\\).',
     opts: [
-      { text: '\\(384\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(40\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(192\\text{ mm}^2\\)', imageUrl: '' },
       { text: '\\(96\\text{ mm}^2\\)', imageUrl: '' },
-      { text: '\\(192\\text{ mm}^2\\)', imageUrl: '' }
+      { text: '\\(384\\text{ mm}^2\\)', imageUrl: '' },
+      { text: '\\(40\\text{ mm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '2',
     hint: 'Use the diagonal area formula: Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 16 \\\\times 24 = 8 \\\\times 24 = 192\\\\text{ mm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q2d-board',
         boundingbox: [-10,15,10,-15],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [-8,0], visible: false },
           { type: 'point', id: 'B', coords: [0,12], visible: false },
@@ -809,12 +823,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a rectangle with side lengths \\(4\\text{ m}\\) and \\(7\\text{ m}\\).',
     opts: [
-      { text: '\\(11\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(14\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(22\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(28\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(11\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(28\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(14\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '1',
     hint: 'Area = length \\(\\times\\) width.',
     solution: 'The area is calculated as:\\n\\[A = 4 \\\\times 7 = 28\\\\text{ m}^2\\]',
     graphData: null,
@@ -845,12 +859,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a square with side length \\(8\\text{ cm}\\).',
     opts: [
-      { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(80\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(64\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(80\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '3',
     hint: 'Area = side \\(\\times\\) side.',
     solution: 'The area is calculated as:\\n\\[A = 8 \\\\times 8 = 64\\\\text{ cm}^2\\]',
     graphData: null,
@@ -881,10 +895,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a circle with a diameter of \\(10\\text{ m}\\). (Give answer in exact form.)',
     opts: [
-      { text: '\\(100\\pi\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(5\\pi\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(25\\pi\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(50\\pi\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(50\\pi\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(100\\pi\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(25\\pi\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: '2',
     hint: 'First find the radius: \\(r = d/2\\), then apply \\(A = \\pi r^2\\).',
@@ -917,9 +931,9 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a rhombus with diagonals \\(8\\text{ cm}\\) and \\(5\\text{ cm}\\).',
     opts: [
-      { text: '\\(13\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(40\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(13\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '2',
@@ -953,12 +967,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a kite with diagonals \\(4\\text{ m}\\) and \\(3\\text{ m}\\).',
     opts: [
-      { text: '\\(6\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(12\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(7\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(3.5\\text{ m}^2\\)', imageUrl: '' },
-      { text: '\\(7\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(6\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(12\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: '2',
     hint: 'Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 4 \\\\times 3 = 6\\\\text{ m}^2\\]',
     graphData: null,
@@ -989,12 +1003,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of a square with a diagonal of length \\(8\\text{ cm}\\).',
     opts: [
-      { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(8\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(64\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '2',
     hint: 'A square is also a rhombus with equal diagonals: Area = 0.5 \\(\\times d^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times d^2 = \\\\frac{1}{2} \\\\times 8^2 = \\\\frac{1}{2} \\\\times 64 = 32\\\\text{ cm}^2\\]',
     graphData: null,
@@ -1032,13 +1046,14 @@ export const Y9_CH16_QUESTIONS = [
     opts: [
 
     ],
-    answer: 'By duplicating the trapezium and placing the second copy upside down next to the first, we form a parallelogram with base \(b_1 + b_2\) and height \(h\). The area of this parallelogram is \((b_1 + b_2) \\times h\). Since this contains two identical trapeziums, the area of one trapezium is half of that: \\frac{1}{2}(b_1 + b_2)h.',
+    answer: 'By duplicating the trapezium and placing the second copy upside down next to the first, we form a parallelogram with base (b_1 + b_2) and height (h). The area of this parallelogram is ((b_1 + b_2) \times h). Since this contains two identical trapeziums, the area of one trapezium is half of that: \frac{1}{2}(b_1 + b_2)h.',
     hint: 'Think about what shape is formed when two identical trapeziums are joined.',
     solution: 'Duplicating the trapezium and joining them along their non-parallel side forms a parallelogram.\\n- Base of parallelogram = \\(b_1 + b_2\\)\\n- Height of parallelogram = \\(h\\)\\n\\nArea of parallelogram = \\((b_1 + b_2)h\\).\\n\\nSince the parallelogram is made of two identical trapeziums, the area of one trapezium is:\\n\\[A = \\\\frac{1}{2}(b_1 + b_2)h\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q4-board',
         boundingbox: [-3,5,12,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [3,4], visible: false },
@@ -1085,13 +1100,14 @@ export const Y9_CH16_QUESTIONS = [
     opts: [
 
     ],
-    answer: 'Enclosing the kite in a rectangle of width \(d_2\) and height \(d_1\) divides the rectangle into 8 smaller right-angled triangles. The kite consists of 4 of these triangles, while the outer region contains the other 4 identical triangles. Thus, the area of the kite is exactly half the area of the enclosing rectangle: \\frac{1}{2} d_1 d_2.',
+    answer: 'Enclosing the kite in a rectangle of width (d_2) and height (d_1) divides the rectangle into 8 smaller right-angled triangles. The kite consists of 4 of these triangles, while the outer region contains the other 4 identical triangles. Thus, the area of the kite is exactly half the area of the enclosing rectangle: \frac{1}{2} d_1 d_2.',
     hint: 'Compare the area of the outer triangles to the triangles forming the kite.',
     solution: 'The enclosing rectangle has area:\\n\\[A_{\\\\text{rect}} = d_1 \\\\times d_2\\]\\nBy observing the symmetry, the four outer right-angled triangles are congruent to the four inner right-angled triangles that make up the kite.\\n\\nTherefore, the area of the kite is exactly half of the rectangle\'s area:\\n\\[A = \\\\frac{1}{2} d_1 d_2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q5-board',
         boundingbox: [-3,7,7,-1],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,3], visible: false },
           { type: 'point', id: 'B', coords: [3,6], visible: false },
@@ -1140,18 +1156,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of the circle with radius \\(6\\text{ cm}\\). Give the answer in exact form.',
     opts: [
+      { text: '\\(12\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(144\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(18\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(12\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '1',
     hint: 'Apply Area = \\(\\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\pi r^2 = \\pi \\\\times 6^2 = 36\\pi\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q6a-board',
         boundingbox: [-7,7,7,-7],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'circle', id: 'C', center: 'O', radius: 6, color: 'blue' },
@@ -1188,18 +1205,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the semicircle with radius \\(8\\text{ cm}\\). Give the answer in exact form.',
     opts: [
-      { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(16\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(64\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(16\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'A semicircle is half a circle: Area = 0.5 \\(\\times \\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times \\pi \\\\times 8^2 = \\\\frac{1}{2} \\\\times 64\\pi = 32\\pi\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q6bi-board',
         boundingbox: [-9,9,9,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [-8,0], visible: false },
@@ -1243,9 +1261,9 @@ export const Y9_CH16_QUESTIONS = [
     question: 'Calculate the area of the quadrant (quarter circle) with radius \\(12\\text{ cm}\\). Give the answer in exact form.',
     opts: [
       { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(72\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(144\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(18\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(72\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(18\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '0',
     hint: 'A quadrant has an angle of 90 degrees: Area = 0.25 \\(\\times \\pi r^2\\).',
@@ -1254,6 +1272,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q6bii-board',
         boundingbox: [-3,14,14,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [12,0], visible: false },
@@ -1298,18 +1317,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the sector with radius \\(9\\text{ cm}\\) and center angle \\(120^\\circ\\). Give the answer in exact form.',
     opts: [
-      { text: '\\(9\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(27\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(18\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(81\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(81\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(27\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(9\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'Use the sector area formula: Area = \\(\\frac{\\theta}{360} \\times \\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{120}{360} \\\\times \\pi \\\\times 9^2 = \\\\frac{1}{3} \\\\times 81\\pi = 27\\pi\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q6biii-board',
         boundingbox: [-10,10,10,-5],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [9,0], visible: false },
@@ -1354,10 +1374,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the major sector with radius \\(8\\text{ cm}\\) and center angle \\(270^\\circ\\). Give the answer in exact form.',
     opts: [
-      { text: '\\(16\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(48\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(64\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(16\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(64\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(48\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '1',
     hint: 'Use the sector area formula: Area = \\(\\frac{\\theta}{360} \\times \\pi r^2\\).',
@@ -1366,6 +1386,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q6biv-board',
         boundingbox: [-10,10,10,-10],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [8,0], visible: false },
@@ -1410,18 +1431,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the sector with radius \\(12\\text{ cm}\\) and center angle \\(30^\\circ\\). Give the answer in exact form.',
     opts: [
-      { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(24\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(12\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(6\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(6\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(24\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '3',
     hint: 'Use the sector area formula with \\(\\theta = 30^\\circ\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{30}{360} \\\\times \\pi \\\\times 12^2 = \\\\frac{1}{12} \\\\times 144\\pi = 12\\pi\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q6bv-board',
         boundingbox: [-3,14,14,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [12,0], visible: false },
@@ -1466,18 +1488,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the sector with radius \\(8\\text{ cm}\\) and center angle \\(45^\\circ\\). Give the answer in exact form.',
     opts: [
-      { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(16\\pi\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(4\\pi\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(4\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'Use the sector area formula with \\(\\theta = 45^\\circ\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{45}{360} \\\\times \\pi \\\\times 8^2 = \\\\frac{1}{8} \\\\times 64\\pi = 8\\pi\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q6bvi-board',
         boundingbox: [-3,10,10,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'point', id: 'P1', coords: [8,0], visible: false },
@@ -1518,11 +1541,11 @@ export const Y9_CH16_QUESTIONS = [
     question: 'Choose the correct algebraic expression for the area \\(A\\) of a sector with radius \\(r\\) and central angle \\(\\theta^\\circ\\).',
     opts: [
       { text: '\\(A = \\\\frac{\\\\theta}{360} (2 \\\\pi r)\\)', imageUrl: '' },
+      { text: '\\(A = \\\\frac{\\\\theta}{180} \\\\pi r^2\\)', imageUrl: '' },
       { text: '\\(A = \\\\theta \\\\pi r^2\\)', imageUrl: '' },
-      { text: '\\(A = \\\\frac{\\\\theta}{360} \\\\pi r^2\\)', imageUrl: '' },
-      { text: '\\(A = \\\\frac{\\\\theta}{180} \\\\pi r^2\\)', imageUrl: '' }
+      { text: '\\(A = \\\\frac{\\\\theta}{360} \\\\pi r^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '0',
     hint: 'The sector area is a fraction of the total area of the circle, where the fraction is defined by the central angle divided by a full rotation.',
     solution: 'A full circle has an angle of \\(360^\\circ\\) and an area of \\(\\pi r^2\\).\\n\\nTherefore, a sector representing a fraction \\(\\frac{\\\\theta}{360}\\) of the full rotation has area:\\n\\[A = \\\\frac{\\\\theta}{360} \\\\pi r^2\\]',
     graphData: null,
@@ -1563,7 +1586,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(3.18\\text{ mm}\\)', imageUrl: '' },
       { text: '\\(2.19\\text{ mm}\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '0',
     hint: 'Rearrange the circle area formula: \\(r = \\sqrt{A/\\pi}\\).',
     solution: 'From the area formula:\\n\\[15 = \\\\pi r^2\\\\\\\\\nr^2 = \\\\frac{15}{\\\\pi} \\\\approx 4.7746\\\\\\\\\nr = \\\\sqrt{\\\\frac{15}{\\\\pi}} \\\\approx 2.19\\\\text{ mm}\\\\]',
     graphData: null,
@@ -1599,12 +1622,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the radius of the circle with an area of \\(80\\text{ cm}^2\\). (Correct to two decimal places.)',
     opts: [
-      { text: '\\(10.09\\text{ cm}\\)', imageUrl: '' },
       { text: '\\(5.05\\text{ cm}\\)', imageUrl: '' },
       { text: '\\(25.46\\text{ cm}\\)', imageUrl: '' },
-      { text: '\\(5.64\\text{ cm}\\)', imageUrl: '' }
+      { text: '\\(5.64\\text{ cm}\\)', imageUrl: '' },
+      { text: '\\(10.09\\text{ cm}\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'Use the formula: \\(r = \\sqrt{A/\\pi}\\).',
     solution: 'Solve for the radius:\\n\\[80 = \\\\pi r^2\\\\\\\\\nr^2 = \\\\frac{80}{\\\\pi} \\\\approx 25.4647\\\\\\\\\nr = \\\\sqrt{\\\\frac{80}{\\\\pi}} \\\\approx 5.05\\\\text{ cm}\\\\]',
     graphData: null,
@@ -1640,12 +1663,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the radius of a circle with an area of \\(16\\pi\\text{ m}^2\\).',
     opts: [
-      { text: '\\(4\\text{ m}\\)', imageUrl: '' },
       { text: '\\(2\\text{ m}\\)', imageUrl: '' },
-      { text: '\\(8\\text{ m}\\)', imageUrl: '' },
-      { text: '\\(16\\text{ m}^2\\)', imageUrl: '' }
+      { text: '\\(4\\text{ m}\\)', imageUrl: '' },
+      { text: '\\(16\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(8\\text{ m}\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: '1',
     hint: 'Set up the equation \\(\\pi r^2 = 16\\pi\\) and solve for r.',
     solution: 'Solve for radius:\\n\\[\\\\pi r^2 = 16\\\\pi\\\\\\\\\nr^2 = 16\\\\\\\\\nr = 4\\\\text{ m}\\\\]',
     graphData: null,
@@ -1681,9 +1704,9 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the radius of a circle with an area of \\(36\\pi\\text{ cm}^2\\).',
     opts: [
-      { text: '\\(12\\text{ cm}\\)', imageUrl: '' },
-      { text: '\\(9\\text{ cm}\\)', imageUrl: '' },
       { text: '\\(6\\text{ cm}\\)', imageUrl: '' },
+      { text: '\\(9\\text{ cm}\\)', imageUrl: '' },
+      { text: '\\(12\\text{ cm}\\)', imageUrl: '' },
       { text: '\\(18\\text{ cm}\\)', imageUrl: '' }
     ],
     answer: '2',
@@ -1722,18 +1745,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Find the area of the shaded ring (annulus) with an inner radius of \\(4\\text{ cm}\\) and an outer radius of \\(6\\text{ cm}\\). Give the answer in exact form and correct to two decimal places.',
     opts: [
+      { text: '\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(16\\pi\\text{ cm}^2\\) (approx. \\(50.27\\text{ cm}^2\\))', imageUrl: '' },
-      { text: '\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))', imageUrl: '' },
       { text: '\\(52\\pi\\text{ cm}^2\\) (approx. \\(163.36\\text{ cm}^2\\))', imageUrl: '' },
-      { text: '\\(20\\pi\\text{ cm}^2\\) (approx. \\(62.83\\text{ cm}^2\\))', imageUrl: '' }
+      { text: '\\(10\\pi\\text{ cm}^2\\) (approx. \\(31.42\\text{ cm}^2\\))', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '1',
     hint: 'Area of annulus = Area of outer circle - Area of inner circle.',
     solution: 'Calculate the outer and inner areas:\\n\\[A_{\\\\text{annulus}} = \\\\pi R^2 - \\\\pi r^2 = \\\\pi (6^2 - 4^2) = \\\\pi (36 - 16) = 20\\\\pi \\\\approx 62.83\\\\text{ cm}^2\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q8-board',
         boundingbox: [-7,7,7,-7],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'O', coords: [0,0], name: 'O', visible: true },
           { type: 'circle', id: 'C_outer', center: 'O', radius: 6, color: 'blue', fillOpacity: 0.1 },
@@ -1779,12 +1803,12 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the radius of a circle whose area is half that of a circle with a radius of \\(8\\text{ cm}\\). (Correct to two decimal places.)',
     opts: [
-      { text: '\\(4.00\\text{ cm}\\)', imageUrl: '' },
-      { text: '\\(8.00\\text{ cm}\\)', imageUrl: '' },
       { text: '\\(5.66\\text{ cm}\\)', imageUrl: '' },
-      { text: '\\(2.83\\text{ cm}\\)', imageUrl: '' }
+      { text: '\\(2.83\\text{ cm}\\)', imageUrl: '' },
+      { text: '\\(8.00\\text{ cm}\\)', imageUrl: '' },
+      { text: '\\(4.00\\text{ cm}\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '3',
     hint: 'Find the area of the larger circle first, halve it, then find the corresponding radius.',
     solution: 'Area of larger circle is:\\n\\[A_1 = \\\\pi \\\\times 8^2 = 64\\\\pi\\\\text{ cm}^2\\]\\nArea of smaller circle is:\\n\\[A_2 = \\\\frac{1}{2} \\\\times 64\\\\pi = 32\\\\pi\\\\text{ cm}^2\\]\\nRadius of smaller circle is:\\n\\[r = \\\\sqrt{\\\\frac{32\\\\pi}{\\\\pi}} = \\\\sqrt{32} \\\\approx 5.66\\\\text{ cm}\\\\]',
     graphData: null,
@@ -1820,18 +1844,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the composite L-shaped region with the following dimensions:\\n- Total width = \\(12\\text{ cm}\\)\\n- Total height = \\(10\\text{ cm}\\)\\n- Top horizontal side = \\(6\\text{ cm}\\)\\n- Right vertical side = \\(4\\text{ cm}\\)',
     opts: [
-      { text: '\\(96\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(108\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(84\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(120\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(108\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(96\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(120\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: '2',
     hint: 'Divide the L-shape into two rectangles.',
     solution: 'Divide the L-shape vertically into two rectangles:\\n- Rectangle 1 (left): width = 6 cm, height = 10 cm. Area = 60 cm².\\n- Rectangle 2 (right): width = 6 cm (12 - 6), height = 6 cm (10 - 4). Area = 36 cm².\\n\\nTotal area = 60 + 36 = 96 cm².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10a-board',
         boundingbox: [-3,12,15,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [12,0], visible: false },
@@ -1884,18 +1909,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the composite U-shaped region with the following dimensions:\\n- Total width = \\(18\\text{ cm}\\)\\n- Total height = \\(15\\text{ cm}\\)\\n- Bottom widths of the legs = \\(4\\text{ cm}\\) each\\n- Height of the inner cutout = \\(10\\text{ cm}\\)',
     opts: [
-      { text: '\\(210\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(190\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(170\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(270\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(190\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(210\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '3',
     hint: 'Subtract the area of the inner rectangle cutout from the area of the outer bounding rectangle.',
     solution: 'Area of outer rectangle: 18 cm x 15 cm = 270 cm².\\nInner cutout dimensions: width = 10 cm (18 - 4 - 4), height = 10 cm.\\nInner cutout area = 10 cm x 10 cm = 100 cm².\\n\\nTotal area = 270 - 100 = 170 cm².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10b-board',
         boundingbox: [-3,17,21,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [18,0], visible: false },
@@ -1951,18 +1977,19 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the house-shaped composite region consisting of a rectangle and a triangular roof with:\\n- Rectangle base = \\(6\\text{ cm}\\)\\n- Rectangle side height = \\(4\\text{ cm}\\)\\n- Total height from base to the apex of the roof = \\(7\\text{ cm}\\)',
     opts: [
-      { text: '\\(42\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(36\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(33\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(42\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(33\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '1',
     hint: 'Divide the shape into a rectangle of height 4 cm and a triangle of height 3 cm (7 - 4).',
     solution: 'Calculate the two component areas:\\n- Rectangle: 6 cm x 4 cm = 24 cm².\\n- Triangle: base = 6 cm, height = 3 cm (7 - 4). Area = 0.5 x 6 x 3 = 9 cm².\\n\\nTotal area = 24 + 9 = 33 cm².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10c-board',
         boundingbox: [-3,9,9,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -2014,10 +2041,10 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of the composite shape consisting of a rectangle with a semicircle on top of it:\\n- Rectangle width = \\(6\\text{ cm}\\)\\n- Rectangle height = \\(3\\text{ cm}\\)\\n\\n(Round the final answer to two decimal places.)',
     opts: [
-      { text: '\\(36.14\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(46.27\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(32.14\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(24.50\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(24.50\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(36.14\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(32.14\\text{ cm}^2\\)', imageUrl: '' }
     ],
     answer: '2',
     hint: 'The semicircle diameter is 6 cm (so radius is 3 cm). Add the rectangle area (18) and the semicircle area (0.5 * pi * 3^2).',
@@ -2026,6 +2053,7 @@ export const Y9_CH16_QUESTIONS = [
       jsxGraph: {
         id: 'y9-16a-q10d-board',
         boundingbox: [-3,8,9,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [6,0], visible: false },
@@ -2076,9 +2104,9 @@ export const Y9_CH16_QUESTIONS = [
     type: 'multiple_choice',
     question: 'Calculate the area of a stadium track made from a central rectangle and two semicircles at each end:\\n- Rectangle length = \\(15\\text{ m}\\)\\n- Rectangle width = \\(10\\text{ m}\\)\\n\\n(Round the final answer to two decimal places.)',
     opts: [
-      { text: '\\(150.00\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(207.08\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(228.54\\text{ m}^2\\)', imageUrl: '' },
+      { text: '\\(150.00\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(307.08\\text{ m}^2\\)', imageUrl: '' }
     ],
     answer: '2',
@@ -2087,7 +2115,8 @@ export const Y9_CH16_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10e-board',
-        boundingbox: [-6,6,21,-6],
+        boundingbox: [-7,10,22,-10],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,-5], visible: false },
           { type: 'point', id: 'B', coords: [15,-5], visible: false },
@@ -2098,8 +2127,8 @@ export const Y9_CH16_QUESTIONS = [
           { type: 'polygon', points: ["A","B","C","D"], color: 'blue', fillOpacity: 0.1 },
           { type: 'arc', center: 'M1', from: 'D', to: 'A', color: 'blue' },
           { type: 'arc', center: 'M2', from: 'B', to: 'C', color: 'blue' },
-          { type: 'text', coords: [7.5,-5.5], content: '15 m' },
-          { type: 'text', coords: [7.5,0], content: '10 m' }
+          { type: 'text', coords: [7.5,-6.5], content: '15 m' },
+          { type: 'text', coords: [7.5,0.5], content: '10 m' }
         ]
       }
     },
@@ -2145,13 +2174,14 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(44.63\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(54.63\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: '0',
     hint: 'Divide the shape into a rectangle of dimensions 5 m x 7 m and a quadrant with a radius of 5 m.',
     solution: 'Divide the shape:\\n- Rectangle: 5 m x 7 m = 35 m².\\n- Quadrant: radius = 5 m. Area = 0.25 x pi x 5² = 6.25pi ≈ 19.63 m².\\n\\nTotal area = 35 + 19.63 = 54.63 m².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10f-board',
         boundingbox: [-3,9,13,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [5,0], visible: false },
@@ -2205,17 +2235,18 @@ export const Y9_CH16_QUESTIONS = [
     question: 'Calculate the area of the composite step-like shape with the following dimensions:\\n- Total bottom length = \\(24\\text{ cm}\\)\\n- Left vertical height = \\(12\\text{ cm}\\)\\n- Vertical step down height = \\(2\\text{ cm}\\)',
     opts: [
       { text: '\\(288\\text{ cm}^2\\)', imageUrl: '' },
+      { text: '\\(240\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(264\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(192\\text{ cm}^2\\)', imageUrl: '' },
-      { text: '\\(240\\text{ cm}^2\\)', imageUrl: '' }
+      { text: '\\(192\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: '0',
     hint: 'Divide the shape horizontally or vertically into rectangles using the heights of the steps.',
     solution: 'Split the shape into two sections:\\n- Left rectangle: width = 12 cm, height = 12 cm. Area = 12 x 12 = 144 cm².\\n- Right rectangle: width = 12 cm (24 - 12), height = 10 cm (12 - 2). Area = 12 x 10 = 120 cm².\\n\\nTotal area = 144 + 120 = 264 cm².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10g-board',
         boundingbox: [-3,15,27,-2],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [24,0], visible: false },
@@ -2277,13 +2308,14 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(158.27\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(119.00\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: '0',
     hint: 'Sum the areas of the rectangle, the semicircle (diameter 10 cm, radius 5 cm), and the bottom triangle (base 14 cm, height 5 cm).',
     solution: 'Calculate each section:\\n- Rectangle Area: 14 cm x 6 cm = 84 cm².\\n- Semicircle Area: radius = 5 cm. Area = 0.5 x pi x 5² = 12.5pi ≈ 39.27 cm².\\n- Triangle Area: base = 14 cm, height = 5 cm. Area = 0.5 x 14 x 5 = 35 cm².\\n\\nTotal area = 84 + 39.27 + 35 = 158.27 cm².',
     graphData: {
       jsxGraph: {
         id: 'y9-16a-q10h-board',
         boundingbox: [-3,14,17,-8],
+        keepaspectratio: true,
         elements: [
           { type: 'point', id: 'A', coords: [0,0], visible: false },
           { type: 'point', id: 'B', coords: [14,0], visible: false },
