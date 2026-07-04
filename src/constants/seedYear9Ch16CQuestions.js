@@ -24,15 +24,15 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q1a-board',
-        boundingbox: [-6,16,6,-4],
+        boundingbox: [-6, 16, 8, -4],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [-2.5,0], visible: false },
-          { type: 'point', id: 'B', coords: [2.5,0], visible: false },
-          { type: 'point', id: 'C', coords: [-2.5,12], visible: false },
-          { type: 'point', id: 'D', coords: [2.5,12], visible: false },
-          { type: 'point', id: 'O1', coords: [0,0], visible: false },
-          { type: 'point', id: 'O2', coords: [0,12], visible: false },
+          { type: 'point', id: 'A', coords: [-4, 0], visible: false },
+          { type: 'point', id: 'B', coords: [1, 0], visible: false },
+          { type: 'point', id: 'C', coords: [-4, 12], visible: false },
+          { type: 'point', id: 'D', coords: [1, 12], visible: false },
+          { type: 'point', id: 'O1', coords: [-1.5, 0], visible: false },
+          { type: 'point', id: 'O2', coords: [-1.5, 12], visible: false },
           { type: 'segment', from: 'C', to: 'A', color: 'blue' },
           { type: 'segment', from: 'D', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
@@ -40,8 +40,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [0.3,-0.7], content: '5 cm' },
-          { type: 'text', coords: [2.8,6], content: '12 cm' }
+          { type: 'text', coords: [-1.3, -1.2], content: '5 cm' },
+          { type: 'text', coords: [1.5, 6], content: '12 cm' }
         ]
       }
     },
@@ -88,15 +88,15 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q1b-board',
-        boundingbox: [-7,19,7,-5],
+        boundingbox: [-7, 19, 9, -5],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [-3,0], visible: false },
-          { type: 'point', id: 'B', coords: [3,0], visible: false },
-          { type: 'point', id: 'C', coords: [-3,15], visible: false },
-          { type: 'point', id: 'D', coords: [3,15], visible: false },
-          { type: 'point', id: 'O1', coords: [0,0], visible: false },
-          { type: 'point', id: 'O2', coords: [0,15], visible: false },
+          { type: 'point', id: 'A', coords: [-5, 0], visible: false },
+          { type: 'point', id: 'B', coords: [1, 0], visible: false },
+          { type: 'point', id: 'C', coords: [-5, 15], visible: false },
+          { type: 'point', id: 'D', coords: [1, 15], visible: false },
+          { type: 'point', id: 'O1', coords: [-2, 0], visible: false },
+          { type: 'point', id: 'O2', coords: [-2, 15], visible: false },
           { type: 'segment', from: 'C', to: 'A', color: 'blue' },
           { type: 'segment', from: 'D', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
@@ -104,8 +104,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [0.3,-0.7], content: '8 cm' },
-          { type: 'text', coords: [3.2,7.5], content: '15 cm' }
+          { type: 'text', coords: [-1.7, -1.2], content: '8 cm' },
+          { type: 'text', coords: [1.5, 7.5], content: '15 cm' }
         ]
       }
     },
@@ -152,15 +152,15 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q1c-board',
-        boundingbox: [-6,16,6,-4],
+        boundingbox: [-7, 16, 8, -4],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [-3,0], visible: false },
-          { type: 'point', id: 'B', coords: [3,0], visible: false },
-          { type: 'point', id: 'C', coords: [-3,12], visible: false },
-          { type: 'point', id: 'D', coords: [3,12], visible: false },
-          { type: 'point', id: 'O1', coords: [0,0], visible: false },
-          { type: 'point', id: 'O2', coords: [0,12], visible: false },
+          { type: 'point', id: 'A', coords: [-5, 0], visible: false },
+          { type: 'point', id: 'B', coords: [1, 0], visible: false },
+          { type: 'point', id: 'C', coords: [-5, 12], visible: false },
+          { type: 'point', id: 'D', coords: [1, 12], visible: false },
+          { type: 'point', id: 'O1', coords: [-2, 0], visible: false },
+          { type: 'point', id: 'O2', coords: [-2, 12], visible: false },
           { type: 'segment', from: 'C', to: 'A', color: 'blue' },
           { type: 'segment', from: 'D', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
@@ -168,8 +168,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'A', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [-1.2,-0.7], content: '14 cm' },
-          { type: 'text', coords: [3.2,6], content: '14 cm' }
+          { type: 'text', coords: [-2.0, -1.2], content: '12 cm' },
+          { type: 'text', coords: [1.5, 6], content: '12 cm' }
         ]
       }
     },
@@ -280,15 +280,15 @@ export const Y9_CH16C_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16c-q1e-board',
-        boundingbox: [-6,12,6,-4],
+        boundingbox: [-6, 12, 8, -4],
         keepaspectratio: true,
         elements: [
-          { type: 'point', id: 'A', coords: [-2.5,0], visible: false },
-          { type: 'point', id: 'B', coords: [2.5,0], visible: false },
-          { type: 'point', id: 'C', coords: [-2.5,8], visible: false },
-          { type: 'point', id: 'D', coords: [2.5,8], visible: false },
-          { type: 'point', id: 'O1', coords: [0,0], visible: false },
-          { type: 'point', id: 'O2', coords: [0,8], visible: false },
+          { type: 'point', id: 'A', coords: [-4, 0], visible: false },
+          { type: 'point', id: 'B', coords: [1, 0], visible: false },
+          { type: 'point', id: 'C', coords: [-4, 8], visible: false },
+          { type: 'point', id: 'D', coords: [1, 8], visible: false },
+          { type: 'point', id: 'O1', coords: [-1.5, 0], visible: false },
+          { type: 'point', id: 'O2', coords: [-1.5, 8], visible: false },
           { type: 'segment', from: 'C', to: 'A', color: 'blue' },
           { type: 'segment', from: 'D', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O2', from: 'C', to: 'D', color: 'blue' },
@@ -296,8 +296,8 @@ export const Y9_CH16C_QUESTIONS = [
           { type: 'arc', center: 'O1', from: 'A', to: 'B', color: 'blue' },
           { type: 'arc', center: 'O1', from: 'B', to: 'A', color: 'blue', dash: 2 },
           { type: 'segment', from: 'O1', to: 'B', color: 'red', dash: 2 },
-          { type: 'text', coords: [0.3,-0.7], content: '4 cm' },
-          { type: 'text', coords: [2.8,4], content: '10 cm' }
+          { type: 'text', coords: [-1.3, -1.2], content: '5 cm' },
+          { type: 'text', coords: [1.5, 4], content: '8 cm' }
         ]
       }
     },
