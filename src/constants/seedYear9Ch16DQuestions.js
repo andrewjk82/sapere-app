@@ -1519,7 +1519,7 @@ export const Y9_CH16D_QUESTIONS = [
     difficulty: 'hard',
     timeLimit: 120,
     type: 'multiple_choice',
-    question: 'Calculate the volume of the regular hexagonal prism with the following dimensions:\\nHexagon side length = \\(5\\\\text{ cm}\\)\\nHexagon perpendicular height (corner-to-corner/span) = \\(7\\\\text{ cm}\\)\\nPrism length = \\(14\\\\text{ cm}\\)',
+    question: 'Calculate the volume of the regular hexagonal prism, given that the cross-sectional area of its hexagonal base is \\(52.5\\\\text{ cm}^2\\) and the length of the prism is \\(14\\\\text{ cm}\\).',
     opts: [
       { text: '\\(735\\\\text{ cm}^3\\)', imageUrl: '' },
       { text: '\\(840\\\\text{ cm}^3\\)', imageUrl: '' },
@@ -1527,8 +1527,8 @@ export const Y9_CH16D_QUESTIONS = [
       { text: '\\(980\\\\text{ cm}^3\\)', imageUrl: '' }
     ],
     answer: 0,
-    hint: 'Divide the regular hexagon into two trapezoids or triangles, calculate its total area, and multiply by length.',
-    solution: 'A regular hexagon can be split into two trapezoids of parallel sides \\(5\\\\text{ cm}\\) and overall middle width \\(10\\\\text{ cm}\\) (since regular hexagon diagonal is twice the side length: \\(2s = 10\\\\text{ cm}\\)), with height \\(h = \\\\frac{7}{2} = 3.5\\\\text{ cm}\\) each.\\n\\nCalculate the total area of the hexagon base:\\n\\[A = 2 \\\\times \\\\left[\\\\frac{1}{2} \\\\times (5 + 10) \\\\times 3.5\\\\right] = 52.5\\\\text{ cm}^2\\]\\nMultiply by the length of the prism:\\n\\[V = A \\\\times l = 52.5 \\\\times 14 = 735\\\\text{ cm}^3\\]',
+    hint: 'Use the volume formula for a prism: Volume = base area * length.',
+    solution: 'Given the base area of the hexagonal face:\\n\\[A = 52.5\\\\text{ cm}^2\\]\\nAnd the length of the prism:\\n\\[l = 14\\\\text{ cm}\\]\\n\\nCalculate the volume:\\n\\[V = A \\\\times l = 52.5 \\\\times 14 = 735\\\\text{ cm}^3\\]',
     graphData: {
       jsxGraph: {
         id: 'y9-16d-q3j-board',
@@ -1578,21 +1578,20 @@ export const Y9_CH16D_QUESTIONS = [
           { type: 'segment', from: 'K6', to: 'K1', color: 'blue', dash: 2 },
 
           // Labels
-          { type: 'text', coords: [0.0, 2.8], content: '5 cm' },
-          { type: 'text', coords: [-2.5, 0.0], content: '7 cm' },
+          { type: 'text', coords: [-1.2, 0.4], content: 'A = 52.5 cm²' },
           { type: 'text', coords: [5.2, 0.4], content: '14 cm' }
         ]
       }
     },
     solutionSteps: [
       {
-        explanation: 'Determine the area of the regular hexagon base. Divide the regular hexagon into two identical trapezoids with parallel bases of 5 cm and 10 cm, and height of 3.5 cm each.',
-        workingOut: '\\\\( A = 2 \\\\times \\\\left[ \\\\frac{1}{2} \\\\times (5 + 10) \\\\times 3.5 \\\\right] = 52.5\\\\text{ cm}^2 \\\\)',
+        explanation: 'State the base area of the hexagonal face.',
+        workingOut: '\\\\( A = 52.5\\\\text{ cm}^2 \\\\)',
         graphData: null
       },
       {
-        explanation: 'Multiply the base area by the length of the prism.',
-        workingOut: '\\\\( V = 52.5 \\\\times 14 \\\\)',
+        explanation: 'Substitute this base area and the length (l = 14 cm) into the volume formula.',
+        workingOut: '\\\\( V = A \\\\times l = 52.5 \\\\times 14 \\\\)',
         graphData: null
       },
       {
