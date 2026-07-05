@@ -641,7 +641,7 @@ export const Y7_CH2I_QUESTIONS = [
       },
       {
         explanation: "Form all possible products from the prime factors 3, 7, 7.",
-        workingOut: "\\text{Factors} = \\{1, 3, 7, 21, 49, 147\\}",
+        workingOut: "\\text{Factors} = {1, 3, 7, 21, 49, 147}",
         graphData: null
       }
     ]
@@ -675,7 +675,7 @@ export const Y7_CH2I_QUESTIONS = [
       },
       {
         explanation: "List and sort all factors.",
-        workingOut: "\\{1, 3, 5, 15, 23, 69, 115, 345\\}",
+        workingOut: "{1, 3, 5, 15, 23, 69, 115, 345}",
         graphData: null
       }
     ]
