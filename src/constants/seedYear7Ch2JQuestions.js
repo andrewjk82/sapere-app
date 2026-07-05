@@ -4469,23 +4469,23 @@ export const Y7_CH2J_QUESTIONS = [
     "question": "Find three non-zero cubes that sum to 62. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
     "opts": [
       {
-        "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(5\\)",
+        "text": "\\(3^3 + 2^3 + 2^3\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(3^3 + 3^3 + 2^3\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(3^3 + 3^3 + 1^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2^3 + 2^3 + 2^3\\)",
+        "imageUrl": ""
       }
     ],
-    "answer": 3,
+    "answer": 1,
     "hint": "Use combinations of 1, 8, 27, 64.",
     "solution": "The correct answer is 3^3 + 3^3 + 2^3.",
     "solutionSteps": [
@@ -4514,15 +4514,15 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(4^3 + 2^3 + 2^3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(8\\)",
+        "text": "\\(3^3 + 3^3 + 3^3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(2\\)",
+        "text": "\\(4^3 + 3^3 + 2^3\\)",
         "imageUrl": ""
       }
     ],
