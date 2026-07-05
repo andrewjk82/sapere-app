@@ -261,17 +261,17 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Identify all factors of 30.",
-        workingOut: "\\text{Factors of 30} = \\{1, 2, 3, 5, 6, 10, 15, 30\\}",
+        workingOut: "\\text{Factors of 30} = {1, 2, 3, 5, 6, 10, 15, 30}",
         graphData: null
       },
       {
         explanation: "Identify all factors of 24.",
-        workingOut: "\\text{Factors of 24} = \\{1, 2, 3, 4, 6, 8, 12, 24\\}",
+        workingOut: "\\text{Factors of 24} = {1, 2, 3, 4, 6, 8, 12, 24}",
         graphData: null
       },
       {
         explanation: "Find the largest factor present in both groups.",
-        workingOut: "\\text{Common factors} = \\{1, 2, 3, 6\\} \\implies \\text{HCF} = 6",
+        workingOut: "\\text{Common factors} = {1, 2, 3, 6} \\implies \\text{HCF} = 6",
         graphData: null
       }
     ]
@@ -295,17 +295,17 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Find all factors of 15.",
-        workingOut: "\\text{Factors of 15} = \\{1, 3, 5, 15\\}",
+        workingOut: "\\text{Factors of 15} = {1, 3, 5, 15}",
         graphData: null
       },
       {
         explanation: "Find all factors of 21.",
-        workingOut: "\\text{Factors of 21} = \\{1, 3, 7, 21\\}",
+        workingOut: "\\text{Factors of 21} = {1, 3, 7, 21}",
         graphData: null
       },
       {
         explanation: "Identify the highest factor they share.",
-        workingOut: "\\text{Common factors} = \\{1, 3\\} \\implies \\text{HCF} = 3",
+        workingOut: "\\text{Common factors} = {1, 3} \\implies \\text{HCF} = 3",
         graphData: null
       }
     ]
@@ -431,12 +431,12 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "Write out the factors for 12, 18, and 30.",
-        workingOut: "12: \\{1, 2, 3, 4, 6, 12\\} \\\\ 18: \\{1, 2, 3, 6, 9, 18\\} \\\\ 30: \\{1, 2, 3, 5, 6, 10, 15, 30\\}",
+        workingOut: "12: {1, 2, 3, 4, 6, 12} \\\\ 18: {1, 2, 3, 6, 9, 18} \\\\ 30: {1, 2, 3, 5, 6, 10, 15, 30}",
         graphData: null
       },
       {
         explanation: "Determine the common factors.",
-        workingOut: "\\text{Common factors} = \\{1, 2, 3, 6\\}",
+        workingOut: "\\text{Common factors} = {1, 2, 3, 6}",
         graphData: null
       },
       {
@@ -465,12 +465,12 @@ export const Y7_CH2H_QUESTIONS = [
     solutionSteps: [
       {
         explanation: "List factors for each number.",
-        workingOut: "15: \\{1, 3, 5, 15\\} \\\\ 6: \\{1, 2, 3, 6\\} \\\\ 14: \\{1, 2, 7, 14\\}",
+        workingOut: "15: {1, 3, 5, 15} \\\\ 6: {1, 2, 3, 6} \\\\ 14: {1, 2, 7, 14}",
         graphData: null
       },
       {
         explanation: "Find the intersection of all three sets.",
-        workingOut: "\\text{Common factors} = \\{1\\}",
+        workingOut: "\\text{Common factors} = {1}",
         graphData: null
       },
       {
