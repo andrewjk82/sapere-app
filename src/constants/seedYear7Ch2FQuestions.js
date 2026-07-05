@@ -494,7 +494,7 @@ export const Y7_CH2F_QUESTIONS = [
       },
       {
         explanation: "List and sort all valid two-digit solutions.",
-        workingOut: "\\{30, 42, 66, 70, 78\\}",
+        workingOut: "{30, 42, 66, 70, 78}",
         graphData: null
       }
     ]
