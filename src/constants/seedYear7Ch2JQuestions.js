@@ -4345,25 +4345,25 @@ export const Y7_CH2J_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "t": "Revision",
-    "question": "Show that 1575 is abundant.",
+    "question": "A number is called abundant if the sum of all its factors (excluding itself) is greater than the number. Show that 1575 is an abundant number.",
     "a": "Proper factors sum is 1750, which is greater than 1575",
-    "hint": "Find all the factors of 1575, add them up excluding 1575, and show the sum is larger than 1575.",
+    "hint": "Step 1: Find all the factors of 1575 (excluding 1575 itself). Step 2: Add them all up. Step 3: Check if the total is greater than 1575.",
     "solutionSteps": [
       {
         "explanation": "Find the prime factorisation of 1575.",
         "workingOut": "1575 = 3^2 \\times 5^2 \\times 7"
       },
       {
-        "explanation": "List all proper factors of 1575.",
+        "explanation": "List all factors of 1575 (excluding 1575 itself).",
         "workingOut": "1, 3, 5, 7, 9, 15, 21, 25, 35, 45, 63, 75, 105, 175, 225, 315, 525"
       },
       {
-        "explanation": "Sum these proper factors.",
+        "explanation": "Add up all the factors.",
         "workingOut": "1 + 3 + 5 + 7 + 9 + 15 + 21 + 25 + 35 + 45 + 63 + 75 + 105 + 175 + 225 + 315 + 525 = 1750"
       },
       {
-        "explanation": "Compare the sum with the original number.",
-        "workingOut": "1750 > 1575 \\implies \\text{abundant}"
+        "explanation": "Compare with the original number.",
+        "workingOut": "1750 > 1575, so the sum of factors is greater than the number itself. Therefore 1575 is abundant."
       }
     ],
     "requiresManualGrading": true
