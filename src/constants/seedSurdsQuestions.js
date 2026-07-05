@@ -1,1069 +1,1069 @@
 export const SURDS_QUESTIONS_Y11A = [
-  {
-    "id": "s2a_1",
-    "q": "Is $\\sqrt{45}$ rational or irrational?",
-    "a": "Irrational",
-    "opts": [
-      "Rational",
-      "Irrational",
-      "Integer",
-      "Fraction"
-    ],
-    "h": "45 is not a perfect square.",
-    "s": "$\\sqrt{45} = 3\\sqrt{5}$, which is an irrational number.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_2",
-    "q": "Identify if $\\sqrt[3]{64}$ is rational or irrational.",
-    "a": "Rational",
-    "opts": [
-      "Rational",
-      "Irrational",
-      "Surd",
-      "Complex"
-    ],
-    "h": "Calculate the cube root.",
-    "s": "$\\sqrt[3]{64} = 4$, which is an integer (Rational).",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_3",
-    "q": "Express $0.32$ as a fraction in simplest form.",
-    "a": "$\\frac{8}{25}$",
-    "opts": [
-      "$\\frac{8}{25}$",
-      "$\\frac{32}{100}$",
-      "$\\frac{4}{12}$",
-      "$\\frac{16}{50}$"
-    ],
-    "h": "32/100 and simplify.",
-    "s": "$0.32 = \\frac{32}{100} = \\frac{8}{25}$",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_4",
-    "q": "Classify $\\pi + 2$ as rational or irrational.",
-    "a": "Irrational",
-    "opts": [
-      "Rational",
-      "Irrational",
-      "Algebraic",
-      "Integer"
-    ],
-    "h": "Adding a rational to an irrational results in an irrational.",
-    "s": "$\\pi$ is irrational, so $\\pi + 2$ is also irrational.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_5",
-    "q": "Write the interval $x < 5$ using bracket notation.",
-    "a": "$(-\\infty, 5)$",
-    "opts": [
-      "$(-\\infty, 5)$",
-      "$[ -\\infty, 5)$",
-      "$(-\\infty, 5]$ ",
-      "$(5, infty)$"
-    ],
-    "h": "Exclusive inequality uses round brackets.",
-    "s": "$x < 5$ means everything from negative infinity up to 5 (not included).",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_6",
-    "q": "Express the interval $[-2, 7]$ using inequalities.",
-    "a": "$-2 \\le x \\le 7$",
-    "opts": [
-      "$-2 \\le x \\le 7$",
-      "$-2 < x < 7$",
-      "$-2 \\le x < 7$",
-      "$-2 < x \\le 7$"
-    ],
-    "h": "Square brackets mean inclusive.",
-    "s": "Notation $[-2, 7]$ means $x$ is between -2 and 7, including both.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_7",
-    "q": "Write the inequality $-3 < x \\le 4$ in bracket notation.",
-    "a": "$(-3, 4]$",
-    "opts": [
-      "$(-3, 4]$",
-      "$[-3, 4]$",
-      "$(-3, 4)$",
-      "$[-3, 4)$"
-    ],
-    "h": "Check which endpoint is included.",
-    "s": "-3 is not included ($>$), 4 is included ($\\le$).",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_8",
-    "q": "Write the interval $(-\\infty, -4]$ using inequalities.",
-    "a": "$x \\le -4$",
-    "opts": [
-      "$x \\le -4$",
-      "$x < -4$",
-      "$x \\ge -4$",
-      "$x > -4$"
-    ],
-    "h": "Infinity means no boundary on one side.",
-    "s": "Up to and including -4.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_9",
-    "q": "Classify $\\sqrt{1.44}$ as rational or irrational.",
-    "a": "Rational",
-    "opts": [
-      "Rational",
-      "Irrational",
-      "Surd",
-      "Imaginary"
-    ],
-    "h": "Calculate the square root of 1.44.",
-    "s": "$\\sqrt{1.44} = 1.2 = 6/5$. Rational.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_10",
-    "q": "Identify if $3\\sqrt{7}$ is rational or irrational.",
-    "a": "Irrational",
-    "opts": [
-      "Rational",
-      "Irrational",
-      "Integer",
-      "Fraction"
-    ],
-    "h": "Multiple of an irrational.",
-    "s": "Product of rational and irrational is irrational.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_11",
-    "q": "Write $-4 \\le x < 6$ in interval notation.",
-    "a": "$[-4, 6)$",
-    "opts": [
-      "$[-4, 6)$",
-      "$(-4, 6]$",
-      "$[-4, 6]$",
-      "$(-4, 6)$"
-    ],
-    "h": "Check the symbols.",
-    "s": "$-4$ is included, $6$ is not.",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_12",
-    "q": "Write $x > -4$ in interval notation.",
-    "a": "$(-4, \\infty)$",
-    "opts": [
-      "$(-4, infty)$",
-      "$[-4, infty)$",
-      "$( -\\infty, -4)$",
-      "$( -\\infty, -4]$"
-    ],
-    "h": "Greater than means towards positive infinity.",
-    "s": "$x > -4$ starts at -4 (not included).",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_13",
-    "q": "Express $(-5, 3)$ using inequalities.",
-    "a": "$-5 < x < 3$",
-    "opts": [
-      "$-5 < x < 3$",
-      "$-5 \\le x \\le 3$",
-      "$-5 < x \\le 3$",
-      "$-5 \\le x < 3$"
-    ],
-    "h": "Round brackets mean strictly greater/less.",
-    "s": "$-5 < x < 3$",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_14",
-    "q": "Express $[-5, 3]$ using inequalities.",
-    "a": "$-5 \\le x \\le 3$",
-    "opts": [
-      "$-5 \\le x \\le 3$",
-      "$-5 < x < 3$",
-      "$-5 \\le x < 3$",
-      "$-5 < x \\le 3$"
-    ],
-    "h": "Square brackets mean inclusive.",
-    "s": "$-5 \\le x \\le 3$",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_15",
-    "q": "Express $(3, infty)$ using inequalities.",
-    "a": "$x > 3$",
-    "opts": [
-      "$x > 3$",
-      "$x \\ge 3$",
-      "$x < 3$",
-      "$x \\le 3$"
-    ],
-    "h": "Infinity means no upper bound.",
-    "s": "$x > 3$",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2a_16",
-    "q": "Express $(-\\infty, -5]$ using inequalities.",
-    "a": "$x \\le -5$",
-    "opts": [
-      "$x \\le -5$",
-      "$x < -5$",
-      "$x \\ge -5$",
-      "$x > -5$"
-    ],
-    "h": "Up to -5, inclusive.",
-    "s": "$x \\le -5$",
-    "t": "Real numbers and intervals",
-    "c": "2A"
-  },
-  {
-    "id": "s2bc_1",
-    "q": "Simplify $\\sqrt{48}$.",
-    "a": "$4\\sqrt{3}$",
-    "opts": [
-      "$4\\sqrt{3}$",
-      "$2\\sqrt{12}$",
-      "$16\\sqrt{3}$",
-      "$3\\sqrt{4}$"
-    ],
-    "h": "Find largest square factor (16).",
-    "s": "$\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_2",
-    "q": "Simplify $\\sqrt{150}$.",
-    "a": "$5\\sqrt{6}$",
-    "opts": [
-      "$5\\sqrt{6}$",
-      "$25\\sqrt{6}$",
-      "$6\\sqrt{5}$",
-      "$10\\sqrt{1.5}$"
-    ],
-    "h": "150 = 25 x 6.",
-    "s": "$\\sqrt{150} = \\sqrt{25 \\times 6} = 5\\sqrt{6}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_3",
-    "q": "Simplify $3\\sqrt{24}$.",
-    "a": "$6\\sqrt{6}$",
-    "opts": [
-      "$6\\sqrt{6}$",
-      "$12\\sqrt{6}$",
-      "$3\\sqrt{6}$",
-      "$6\\sqrt{4}$"
-    ],
-    "h": "24 = 4 x 6.",
-    "s": "$3\\sqrt{4 \\times 6} = 3 \\times 2\\sqrt{6} = 6\\sqrt{6}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_4",
-    "q": "Simplify $2\\sqrt{80}$.",
-    "a": "$8\\sqrt{5}$",
-    "opts": [
-      "$8\\sqrt{5}$",
-      "$4\\sqrt{20}$",
-      "$16\\sqrt{5}$",
-      "$4\\sqrt{5}$"
-    ],
-    "h": "80 = 16 x 5.",
-    "s": "$2\\sqrt{16 \\times 5} = 2 \\times 4\\sqrt{5} = 8\\sqrt{5}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_5",
-    "q": "Simplify $5\\sqrt{8} + 2\\sqrt{18}$.",
-    "a": "$16\\sqrt{2}$",
-    "opts": [
-      "$16\\sqrt{2}$",
-      "$7\\sqrt{26}$",
-      "$10\\sqrt{2}$",
-      "$14\\sqrt{2}$"
-    ],
-    "h": "Simplify each surd first.",
-    "s": "$5(2\\sqrt{2}) + 2(3\\sqrt{2}) = 10\\sqrt{2} + 6\\sqrt{2} = 16\\sqrt{2}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_6",
-    "q": "Simplify $3\\sqrt{7} \\times 2\\sqrt{5}$.",
-    "a": "$6\\sqrt{35}$",
-    "opts": [
-      "$6\\sqrt{35}$",
-      "$5\\sqrt{12}$",
-      "$6\\sqrt{12}$",
-      "$12\\sqrt{35}$"
-    ],
-    "h": "Multiply outer and inner numbers.",
-    "s": "$(3 \\times 2)(\\sqrt{7 \\times 5}) = 6\\sqrt{35}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_7",
-    "q": "Simplify $\\sqrt{40} \\div \\sqrt{8}$.",
-    "a": "$\\sqrt{5}$",
-    "opts": [
-      "$\\sqrt{5}$",
-      "$5$",
-      "$\\sqrt{32}$",
-      "$2\\sqrt{5}$"
-    ],
-    "h": "Use $\\sqrt{a}/\\sqrt{b} = \\sqrt{a/b}$.",
-    "s": "$\\sqrt{40/8} = \\sqrt{5}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_8",
-    "q": "Simplify $(4\\sqrt{6})^2$.",
-    "a": "$96$",
-    "opts": [
-      "$96$",
-      "$24$",
-      "$144$",
-      "$36$"
-    ],
-    "h": "$a^2 \\times b$.",
-    "s": "$4^2 \\times 6 = 16 \\times 6 = 96$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_9",
-    "q": "Simplify $\\sqrt{27} - \\sqrt{12}$.",
-    "a": "$\\sqrt{3}$",
-    "opts": [
-      "$\\sqrt{3}$",
-      "$\\sqrt{15}$",
-      "$3\\sqrt{3}$",
-      "$-3\\sqrt{3}$"
-    ],
-    "h": "$3\\sqrt{3} - 2\\sqrt{3}$.",
-    "s": "$3\\sqrt{3} - 2\\sqrt{3} = \\sqrt{3}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_10",
-    "q": "Simplify $3\\sqrt{2} + 4\\sqrt{50} - \\sqrt{32}$.",
-    "a": "$19\\sqrt{2}$",
-    "opts": [
-      "$19\\sqrt{2}$",
-      "$23\\sqrt{2}$",
-      "$15\\sqrt{2}$",
-      "$27\\sqrt{2}$"
-    ],
-    "h": "Convert everything to $\\sqrt{2}$ form.",
-    "s": "$3\\sqrt{2} + 4(5\\sqrt{2}) - 4\\sqrt{2} = 3\\sqrt{2} + 20\\sqrt{2} - 4\\sqrt{2} = 19\\sqrt{2}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_11",
-    "q": "Simplify $\\sqrt{54} - \\sqrt{24} + \\sqrt{150}$.",
-    "a": "$6\\sqrt{6}$",
-    "opts": [
-      "$6\\sqrt{6}$",
-      "$4\\sqrt{6}$",
-      "$\\sqrt{180}$",
-      "$12\\sqrt{6}$"
-    ],
-    "h": "Simplify to $\\sqrt{6}$ terms.",
-    "s": "$3\\sqrt{6} - 2\\sqrt{6} + 5\\sqrt{6} = 6\\sqrt{6}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_12",
-    "q": "Simplify $\\sqrt{20} \\times \\sqrt{5}$.",
-    "a": "$10$",
-    "opts": [
-      "$10$",
-      "$\\sqrt{100}$",
-      "$5\\sqrt{2}$",
-      "$25$"
-    ],
-    "h": "$\\sqrt{100}$.",
-    "s": "$10$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_13",
-    "q": "Simplify $2\\sqrt{6} \\times 4\\sqrt{3}$.",
-    "a": "$24\\sqrt{2}$",
-    "opts": [
-      "$24\\sqrt{2}$",
-      "$8\\sqrt{18}$",
-      "$12\\sqrt{2}$",
-      "$24$"
-    ],
-    "h": "$8\\sqrt{18} = 8(3\\sqrt{2})$.",
-    "s": "$24\\sqrt{2}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_14",
-    "q": "Simplify $\\sqrt{98} - \\sqrt{72}$.",
-    "a": "$\\sqrt{2}$",
-    "opts": [
-      "$\\sqrt{2}$",
-      "$2\\sqrt{2}$",
-      "$\\sqrt{26}$",
-      "$0$"
-    ],
-    "h": "$7\\sqrt{2} - 6\\sqrt{2}$.",
-    "s": "$\\sqrt{2}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_15",
-    "q": "Simplify $2\\sqrt{45} - \\sqrt{20} + 3\\sqrt{5}$.",
-    "a": "$7\\sqrt{5}$",
-    "opts": [
-      "$7\\sqrt{5}$",
-      "$9\\sqrt{5}$",
-      "$5\\sqrt{5}$",
-      "$11\\sqrt{5}$"
-    ],
-    "h": "$6\\sqrt{5} - 2\\sqrt{5} + 3\\sqrt{5}$.",
-    "s": "$7\\sqrt{5}$",
-    "t": "Further simplification of surds",
-    "c": "2C"
-  },
-  {
-    "id": "s2bc_16",
-    "q": "Simplify $\\sqrt{5} + \\sqrt{5}$.",
-    "a": "$2\\sqrt{5}$",
-    "opts": [
-      "$2\\sqrt{5}$",
-      "$\\sqrt{10}$",
-      "$5$",
-      "$\\sqrt{25}$"
-    ],
-    "h": "Like terms.",
-    "s": "$2\\sqrt{5}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_17",
-    "q": "Simplify $\\sqrt{5} \\times \\sqrt{5}$.",
-    "a": "$5$",
-    "opts": [
-      "$5$",
-      "$\\sqrt{10}$",
-      "$25$",
-      "$\\sqrt{5}$"
-    ],
-    "h": "Square of a root.",
-    "s": "$5$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_18",
-    "q": "Simplify $2\\sqrt{5} + \\sqrt{7} - 3\\sqrt{5}$.",
-    "a": "$\\sqrt{7} - \\sqrt{5}$",
-    "opts": [
-      "$\\sqrt{7} - \\sqrt{5}$",
-      "$\\sqrt{7} + \\sqrt{5}$",
-      "$-\\sqrt{5}$",
-      "$\\sqrt{2}$"
-    ],
-    "h": "Combine $\\sqrt{5}$ terms.",
-    "s": "$(2-3)\\sqrt{5} + \\sqrt{7} = -\\sqrt{5} + \\sqrt{7}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_19",
-    "q": "Simplify $\\sqrt{35} \\div \\sqrt{5}$.",
-    "a": "$\\sqrt{7}$",
-    "opts": [
-      "$\\sqrt{7}$",
-      "$7$",
-      "$\\sqrt{30}$",
-      "$30$"
-    ],
-    "h": "Divide inside.",
-    "s": "$\\sqrt{35/5} = \\sqrt{7}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_20",
-    "q": "Simplify $6\\sqrt{55} \\div 2\\sqrt{11}$.",
-    "a": "$3\\sqrt{5}$",
-    "opts": [
-      "$3\\sqrt{5}$",
-      "$4\\sqrt{44}$",
-      "$3\\sqrt{11}$",
-      "$3$"
-    ],
-    "h": "Divide outer and inner.",
-    "s": "$(6/2)\\sqrt{55/11} = 3\\sqrt{5}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_21",
-    "q": "Simplify $\\sqrt{8} \\times \\sqrt{2}$.",
-    "a": "$4$",
-    "opts": [
-      "$4$",
-      "$\\sqrt{16}$",
-      "$2\\sqrt{2}$",
-      "$16$"
-    ],
-    "h": "$\\sqrt{16}$.",
-    "s": "$4$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_22",
-    "q": "Simplify $\\sqrt{10} \\times \\sqrt{2}$.",
-    "a": "$2\\sqrt{5}$",
-    "opts": [
-      "$2\\sqrt{5}$",
-      "$\\sqrt{20}$",
-      "$10\\sqrt{2}$",
-      "$5\\sqrt{2}$"
-    ],
-    "h": "$\\sqrt{20} = 2\\sqrt{5}$.",
-    "s": "$2\\sqrt{5}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2bc_23",
-    "q": "Simplify $2\\sqrt{6} \\times 4\\sqrt{15}$.",
-    "a": "$24\\sqrt{10}$",
-    "opts": [
-      "$24\\sqrt{10}$",
-      "$8\\sqrt{90}$",
-      "$24\\sqrt{15}$",
-      "$80$"
-    ],
-    "h": "$8\\sqrt{90} = 8(3\\sqrt{10}) = 24\\sqrt{10}$.",
-    "s": "$24\\sqrt{10}$",
-    "t": "Surds and their arithmetic",
-    "c": "2B"
-  },
-  {
-    "id": "s2e_1",
-    "q": "Expand and simplify: $\\sqrt{5}(3 - \\sqrt{5})$.",
-    "a": "$3\\sqrt{5} - 5$",
-    "opts": [
-      "$3\\sqrt{5} - 5$",
-      "$3\\sqrt{5} - 25$",
-      "$15 - 5$",
-      "$3\\sqrt{5} + 5$"
-    ],
-    "h": "Distribute the $\\sqrt{5}$.",
-    "s": "$3\\sqrt{5} - (\\sqrt{5})^2 = 3\\sqrt{5} - 5$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_2",
-    "q": "Expand and simplify: $2\\sqrt{3}(\\sqrt{6} + 4)$.",
-    "a": "$6\\sqrt{2} + 8\\sqrt{3}$",
-    "opts": [
-      "$6\\sqrt{2} + 8\\sqrt{3}$",
-      "$2\\sqrt{18} + 8\\sqrt{3}$",
-      "$12 + 8\\sqrt{3}$",
-      "$6\\sqrt{3} + 8\\sqrt{3}$"
-    ],
-    "h": "$\\sqrt{3} \\times \\sqrt{6} = \\sqrt{18} = 3\\sqrt{2}$.",
-    "s": "$2\\sqrt{18} + 8\\sqrt{3} = 2(3\\sqrt{2}) + 8\\sqrt{3} = 6\\sqrt{2} + 8\\sqrt{3}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_3",
-    "q": "Expand: $(\\sqrt{3} + 4)(\\sqrt{3} - 1)$.",
-    "a": "$-1 + 3\\sqrt{3}$",
-    "opts": [
-      "$-1 + 3\\sqrt{3}$",
-      "$3 + 3\\sqrt{3} - 4$",
-      "$-1 - 3\\sqrt{3}$",
-      "$7 + 3\\sqrt{3}$"
-    ],
-    "h": "Use FOIL.",
-    "s": "$3 - \\sqrt{3} + 4\\sqrt{3} - 4 = -1 + 3\\sqrt{3}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_4",
-    "q": "Expand and simplify: $(2\\sqrt{5} + 3)(3\\sqrt{5} - 2)$.",
-    "a": "$24 + 5\\sqrt{5}$",
-    "opts": [
-      "$24 + 5\\sqrt{5}$",
-      "$30 + 5\\sqrt{5} - 6$",
-      "$24 - 5\\sqrt{5}$",
-      "$36 + 5\\sqrt{5}$"
-    ],
-    "h": "Use FOIL.",
-    "s": "$6(5) - 4\\sqrt{5} + 9\\sqrt{5} - 6 = 30 + 5\\sqrt{5} - 6 = 24 + 5\\sqrt{5}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_5",
-    "q": "Simplify: $(\\sqrt{11} - 3)(\\sqrt{11} + 3)$.",
-    "a": "$2$",
-    "opts": [
-      "$2$",
-      "$8$",
-      "$121 - 9$",
-      "$20$"
-    ],
-    "h": "Difference of squares.",
-    "s": "$11 - 9 = 2$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_6",
-    "q": "Expand: $(\\sqrt{6} - 2)^2$.",
-    "a": "$10 - 4\\sqrt{6}$",
-    "opts": [
-      "$10 - 4\\sqrt{6}$",
-      "$8 - 4\\sqrt{6}$",
-      "$10 + 4\\sqrt{6}$",
-      "$2$"
-    ],
-    "h": "$a^2 - 2ab + b^2$.",
-    "s": "$6 - 2(2\\sqrt{6}) + 4 = 10 - 4\\sqrt{6}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_7",
-    "q": "Expand: $(3 + 2\\sqrt{2})^2$.",
-    "a": "$17 + 12\\sqrt{2}$",
-    "opts": [
-      "$17 + 12\\sqrt{2}$",
-      "$11 + 12\\sqrt{2}$",
-      "$17 + 6\\sqrt{2}$",
-      "$25$"
-    ],
-    "h": "$9 + 2(3)(2\\sqrt{2}) + (2\\sqrt{2})^2$.",
-    "s": "$9 + 12\\sqrt{2} + 8 = 17 + 12\\sqrt{2}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_8",
-    "q": "Expand and simplify: $(\\sqrt{5} + 2)(3 - \\sqrt{5})$.",
-    "a": "$\\sqrt{5} + 1$",
-    "opts": [
-      "$\\sqrt{5} + 1$",
-      "$\\sqrt{5} - 1$",
-      "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5}$",
-      "$11$"
-    ],
-    "h": "FOIL.",
-    "s": "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5} = \\sqrt{5} + 1$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_9",
-    "q": "Expand: $(2\\sqrt{3} - 1)(3\\sqrt{3} + 5)$.",
-    "a": "$13 + 7\\sqrt{3}$",
-    "opts": [
-      "$13 + 7\\sqrt{3}$",
-      "$18 + 7\\sqrt{3} - 5$",
-      "$23 + 7\\sqrt{3}$",
-      "$13 - 7\\sqrt{3}$"
-    ],
-    "h": "FOIL.",
-    "s": "$6(3) + 10\\sqrt{3} - 3\\sqrt{3} - 5 = 18 + 7\\sqrt{3} - 5 = 13 + 7\\sqrt{3}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_10",
-    "q": "Expand: $(\\sqrt{10} - 3)(\\sqrt{10} + 3)$.",
-    "a": "$1$",
-    "opts": [
-      "$1$",
-      "$7$",
-      "$19$",
-      "$10-9$"
-    ],
-    "h": "Difference of squares.",
-    "s": "$10 - 9 = 1$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_11",
-    "q": "Expand: $(\\sqrt{7} - 2)^2$.",
-    "a": "$11 - 4\\sqrt{7}$",
-    "opts": [
-      "$11 - 4\\sqrt{7}$",
-      "$9 - 4\\sqrt{7}$",
-      "$11 + 4\\sqrt{7}$",
-      "$3$"
-    ],
-    "h": "$7 - 2(2\\sqrt{7}) + 4$.",
-    "s": "$11 - 4\\sqrt{7}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_12",
-    "q": "Expand: $(\\sqrt{5} + \\sqrt{2})^2$.",
-    "a": "$7 + 2\\sqrt{10}$",
-    "opts": [
-      "$7 + 2\\sqrt{10}$",
-      "$5 + 2$",
-      "$7 + \\sqrt{10}$",
-      "$9$"
-    ],
-    "h": "$5 + 2\\sqrt{10} + 2$.",
-    "s": "$7 + 2\\sqrt{10}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2e_13",
-    "q": "Expand: $(4 - 3\\sqrt{2})^2$.",
-    "a": "$34 - 24\\sqrt{2}$",
-    "opts": [
-      "$34 - 24\\sqrt{2}$",
-      "$16 - 18 + 24\\sqrt{2}$",
-      "$22 - 24\\sqrt{2}$",
-      "$16 - 24\\sqrt{2} + 18$"
-    ],
-    "h": "$16 - 2(4)(3\\sqrt{2}) + 18$.",
-    "s": "$16 - 24\\sqrt{2} + 18 = 34 - 24\\sqrt{2}$",
-    "t": "Binomial expansion of surds",
-    "c": "2E"
-  },
-  {
-    "id": "s2f_1",
-    "q": "Rationalize $\\frac{5}{\\sqrt{7}}$.",
-    "a": "$\\frac{5\\sqrt{7}}{7}$",
-    "opts": [
-      "$\\frac{5\\sqrt{7}}{7}$",
-      "$\\frac{\\sqrt{35}}{7}$",
-      "$\\frac{5}{7}$",
-      "$5\\sqrt{7}$"
-    ],
-    "h": "Multiply by $\\sqrt{7}/\\sqrt{7}$.",
-    "s": "$\\frac{5\\sqrt{7}}{7}$",
-    "t": "Rationalising the denominator",
-    "c": "2D"
-  },
-  {
-    "id": "s2f_2",
-    "q": "Rationalize $\\frac{\\sqrt{3}}{2\\sqrt{5}}$.",
-    "a": "$\\frac{\\sqrt{15}}{10}$",
-    "opts": [
-      "$\\frac{\\sqrt{15}}{10}$",
-      "$\\frac{\\sqrt{3}}{10}$",
-      "$\\frac{3}{10}$",
-      "$\\frac{\\sqrt{15}}{5}$"
-    ],
-    "h": "Multiply by $\\sqrt{5}/\\sqrt{5}$.",
-    "s": "$\\frac{\\sqrt{15}}{2(5)} = \\frac{\\sqrt{15}}{10}$",
-    "t": "Rationalising the denominator",
-    "c": "2D"
-  },
-  {
-    "id": "s2f_3",
-    "q": "Rationalize $\\frac{1}{\\sqrt{5} + 2}$.",
-    "a": "$\\sqrt{5} - 2$",
-    "opts": [
-      "$\\sqrt{5} - 2$",
-      "$\\frac{\\sqrt{5}-2}{1}$",
-      "$\\sqrt{5} + 2$",
-      "$\\frac{1}{\\sqrt{5}-2}$"
-    ],
-    "h": "Conjugate is $\\sqrt{5} - 2$.",
-    "s": "$\\frac{\\sqrt{5}-2}{5-4} = \\sqrt{5}-2$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_4",
-    "q": "Rationalize $\\frac{6}{\\sqrt{5} - \\sqrt{2}}$.",
-    "a": "$2(\\sqrt{5} + \\sqrt{2})$",
-    "opts": [
-      "$2(\\sqrt{5} + \\sqrt{2})$",
-      "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3}$",
-      "$3(\\sqrt{5} + \\sqrt{2})$",
-      "$2\\sqrt{5} + 2\\sqrt{2}$"
-    ],
-    "h": "Denominator becomes $5-2=3$.",
-    "s": "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3} = 2(\\sqrt{5}+\\sqrt{2})$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_5",
-    "q": "Rationalize $\\frac{\\sqrt{2}}{\\sqrt{6} + 2}$.",
-    "a": "$\\frac{\\sqrt{12} - 2\\sqrt{2}}{2}$",
-    "opts": [
-      "$\\frac{\\sqrt{3} - \\sqrt{2}}{1}$",
-      "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
-      "$\\sqrt{3} - \\sqrt{2}$",
-      "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$"
-    ],
-    "h": "Multiply by $(\\sqrt{6}-2)$.",
-    "s": "$\\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_6",
-    "q": "Simplify $\\frac{3}{\\sqrt{5}-2} + \\frac{3}{\\sqrt{5}+2}$.",
-    "a": "$6\\sqrt{5}$",
-    "opts": [
-      "$6\\sqrt{5}$",
-      "$12$",
-      "$6$",
-      "$2\\sqrt{5}$"
-    ],
-    "h": "Common denominator is $(5-4)=1$.",
-    "s": "$\\frac{3(\\sqrt{5}+2) + 3(\\sqrt{5}-2)}{1} = 3\\sqrt{5} + 6 + 3\\sqrt{5} - 6 = 6\\sqrt{5}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_7",
-    "q": "Rationalize $\\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$.",
-    "a": "$6 - \\sqrt{35}$",
-    "opts": [
-      "$6 - \\sqrt{35}$",
-      "$12 - 2\\sqrt{35}$",
-      "$\\frac{12-2\\sqrt{35}}{2}$",
-      "$1$"
-    ],
-    "h": "Multiply by $(\\sqrt{7}-\\sqrt{5})$.",
-    "s": "$\\frac{7 - 2\\sqrt{35} + 5}{7-5} = \\frac{12-2\\sqrt{35}}{2} = 6-\\sqrt{35}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_8",
-    "q": "Rationalize $\\frac{3\\sqrt{2} + 1}{3\\sqrt{2} - 1}$.",
-    "a": "$\\frac{19 + 6\\sqrt{2}}{17}$",
-    "opts": [
-      "$\\frac{19 + 6\\sqrt{2}}{17}$",
-      "$\\frac{19 - 6\\sqrt{2}}{17}$",
-      "$\\frac{17 + 6\\sqrt{2}}{19}$",
-      "$1$"
-    ],
-    "h": "Denominator is $(3\\sqrt{2})^2 - 1^2 = 18-1=17$.",
-    "s": "$\\frac{(3\\sqrt{2}+1)^2}{17} = \\frac{18 + 6\\sqrt{2} + 1}{17} = \\frac{19+6\\sqrt{2}}{17}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_9",
-    "q": "Rationalize $\\frac{1}{\\sqrt{5}}$.",
-    "a": "$\\frac{\\sqrt{5}}{5}$",
-    "opts": [
-      "$\\frac{\\sqrt{5}}{5}$",
-      "$\\sqrt{5}$",
-      "$\\frac{1}{5}$",
-      "$\\frac{5}{\\sqrt{5}}$"
-    ],
-    "h": "Simple rationalize.",
-    "s": "$\\frac{\\sqrt{5}}{5}$",
-    "t": "Rationalising the denominator",
-    "c": "2D"
-  },
-  {
-    "id": "s2f_10",
-    "q": "Rationalize $\\frac{3}{\\sqrt{2}}$.",
-    "a": "$\\frac{3\\sqrt{2}}{2}$",
-    "opts": [
-      "$\\frac{3\\sqrt{2}}{2}$",
-      "$3\\sqrt{2}$",
-      "$\\frac{\\sqrt{6}}{2}$",
-      "$\\frac{2\\sqrt{3}}{3}$"
-    ],
-    "h": "Multiply by $\\sqrt{2}$.",
-    "s": "$\\frac{3\\sqrt{2}}{2}$",
-    "t": "Rationalising the denominator",
-    "c": "2D"
-  },
-  {
-    "id": "s2f_11",
-    "q": "Rationalize $\\frac{1}{5\\sqrt{3}}$.",
-    "a": "$\\frac{\\sqrt{3}}{15}$",
-    "opts": [
-      "$\\frac{\\sqrt{3}}{15}$",
-      "$\\frac{5\\sqrt{3}}{15}$",
-      "$\\frac{\\sqrt{3}}{5}$",
-      "$\\frac{1}{15}$"
-    ],
-    "h": "Multiply by $\\sqrt{3}$.",
-    "s": "$\\frac{\\sqrt{3}}{5(3)} = \\frac{\\sqrt{3}}{15}$",
-    "t": "Rationalising the denominator",
-    "c": "2D"
-  },
-  {
-    "id": "s2f_12",
-    "q": "Rationalize $\\frac{1}{\\sqrt{5} + \\sqrt{2}}$.",
-    "a": "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
-    "opts": [
-      "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
-      "$\\frac{\\sqrt{5} + \\sqrt{2}}{3}$",
-      "$\\sqrt{5} - \\sqrt{2}$",
-      "$\\frac{\\sqrt{3}}{3}$"
-    ],
-    "h": "Conjugate.",
-    "s": "$\\frac{\\sqrt{5}-\\sqrt{2}}{5-2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_13",
-    "q": "Rationalize $\\frac{\\sqrt{3}}{\\sqrt{3} + 1}$.",
-    "a": "$\\frac{3 - \\sqrt{3}}{2}$",
-    "opts": [
-      "$\\frac{3 - \\sqrt{3}}{2}$",
-      "$\\frac{3 + \\sqrt{3}}{2}$",
-      "$1 - \\sqrt{3}$",
-      "$\\frac{\\sqrt{3}-3}{2}$"
-    ],
-    "h": "Multiply by $(\\sqrt{3}-1)$.",
-    "s": "$\\frac{3 - \\sqrt{3}}{3-1} = \\frac{3-\\sqrt{3}}{2}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2f_14",
-    "q": "Rationalize $\\frac{3\\sqrt{7}}{2\\sqrt{5} - \\sqrt{7}}$.",
-    "a": "$\\frac{6\\sqrt{35} + 21}{13}$",
-    "opts": [
-      "$\\frac{6\\sqrt{35} + 21}{13}$",
-      "$\\frac{6\\sqrt{35} - 21}{13}$",
-      "$\\frac{3\\sqrt{35} + 21}{13}$",
-      "$21$"
-    ],
-    "h": "Multiply by $(2\\sqrt{5}+\\sqrt{7})$.",
-    "s": "$\\frac{3\\sqrt{7}(2\\sqrt{5}+\\sqrt{7})}{4(5)-7} = \\frac{6\\sqrt{35}+21}{13}$",
-    "t": "Further rationalising the denominator",
-    "c": "2F"
-  },
-  {
-    "id": "s2g_1",
-    "q": "Find $x$ if $\\sqrt{12} + \\sqrt{27} = \\sqrt{x}$.",
-    "a": "$75$",
-    "opts": [
-      "$75$",
-      "$39$",
-      "$15$",
-      "$45$"
-    ],
-    "h": "Left side is $2\\sqrt{3} + 3\\sqrt{3} = 5\\sqrt{3}$.",
-    "s": "$5\\sqrt{3} = \\sqrt{25 \\times 3} = \\sqrt{75}$",
-    "t": "Surd equations",
-    "c": "2G"
-  },
-  {
-    "id": "s2g_2",
-    "q": "Find $x$ if $\\sqrt{18} + \\sqrt{50} = \\sqrt{x}$.",
-    "a": "$128$",
-    "opts": [
-      "$128$",
-      "$68$",
-      "$32$",
-      "$98$"
-    ],
-    "h": "Left side is $3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}$.",
-    "s": "$8\\sqrt{2} = \\sqrt{64 \\times 2} = \\sqrt{128}$",
-    "t": "Surd equations",
-    "c": "2G"
-  },
-  {
-    "id": "s2g_3",
-    "q": "Find $a$ and $b$ if $\\frac{2}{\\sqrt{3}-1} = a + b\\sqrt{3}$.",
-    "a": "$a=1, b=1$",
-    "opts": [
-      "$a=1, b=1$",
-      "$a=2, b=1$",
-      "$a=1, b=2$",
-      "$a=1, b=-1$"
-    ],
-    "h": "Rationalize the denominator.",
-    "s": "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$.",
-    "t": "Surd equations",
-    "c": "2G"
-  },
-  {
-    "id": "s2g_4",
-    "q": "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.",
-    "a": "$p=10, q=2$",
-    "opts": [
-      "$p=5, q=2$",
-      "$p=10, q=2$",
-      "$p=5, q=1$",
-      "$p=2, q=1$"
-    ],
-    "h": "Rationalize by $(\\sqrt{5}+2)$.",
-    "s": "$\\frac{\\sqrt{5}(\\sqrt{5}+2)}{5-4} = 5 + 2\\sqrt{5}$. Wait, my calc was wrong. $p=5, q=2$.",
-    "t": "Surd equations",
-    "c": "2G"
-  },
-  {
-    "id": "s2g_5",
-    "q": "If $\\sqrt{20} + \\sqrt{45} = \\sqrt{x}$, find $x$.",
-    "a": "$125$",
-    "opts": [
-      "$125$",
-      "$65$",
-      "$25$",
-      "$100$"
-    ],
-    "h": "$2\\sqrt{5} + 3\\sqrt{5} = 5\\sqrt{5}$.",
-    "s": "$5\\sqrt{5} = \\sqrt{125}$",
-    "t": "Surd equations",
-    "c": "2G"
-  },
+    {
+        "id": "s2a_1",
+        "q": "Is $\\sqrt{45}$ rational or irrational?",
+        "a": "Irrational",
+        "opts": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Fraction"
+        ],
+        "h": "45 is not a perfect square.",
+        "s": "$\\sqrt{45} = 3\\sqrt{5}$, which is an irrational number.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_2",
+        "q": "Identify if $\\sqrt[3]{64}$ is rational or irrational.",
+        "a": "Rational",
+        "opts": [
+            "Rational",
+            "Irrational",
+            "Surd",
+            "Complex"
+        ],
+        "h": "Calculate the cube root.",
+        "s": "$\\sqrt[3]{64} = 4$, which is an integer (Rational).",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_3",
+        "q": "Express $0.32$ as a fraction in simplest form.",
+        "a": "$\\frac{8}{25}$",
+        "opts": [
+            "$\\frac{8}{25}$",
+            "$\\frac{32}{100}$",
+            "$\\frac{4}{12}$",
+            "$\\frac{16}{50}$"
+        ],
+        "h": "32/100 and simplify.",
+        "s": "$0.32 = \\frac{32}{100} = \\frac{8}{25}$",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_4",
+        "q": "Classify $\\pi + 2$ as rational or irrational.",
+        "a": "Irrational",
+        "opts": [
+            "Rational",
+            "Irrational",
+            "Algebraic",
+            "Integer"
+        ],
+        "h": "Adding a rational to an irrational results in an irrational.",
+        "s": "$\\pi$ is irrational, so $\\pi + 2$ is also irrational.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_5",
+        "q": "Write the interval $x < 5$ using bracket notation.",
+        "a": "$(-\\infty, 5)$",
+        "opts": [
+            "$(-\\infty, 5)$",
+            "$[ -\\infty, 5)$",
+            "$(-\\infty, 5]$ ",
+            "$(5, infty)$"
+        ],
+        "h": "Exclusive inequality uses round brackets.",
+        "s": "$x < 5$ means everything from negative infinity up to 5 (not included).",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_6",
+        "q": "Express the interval $[-2, 7]$ using inequalities.",
+        "a": "$-2 \\le x \\le 7$",
+        "opts": [
+            "$-2 \\le x \\le 7$",
+            "$-2 < x < 7$",
+            "$-2 \\le x < 7$",
+            "$-2 < x \\le 7$"
+        ],
+        "h": "Square brackets mean inclusive.",
+        "s": "Notation $[-2, 7]$ means $x$ is between -2 and 7, including both.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_7",
+        "q": "Write the inequality $-3 < x \\le 4$ in bracket notation.",
+        "a": "$(-3, 4]$",
+        "opts": [
+            "$(-3, 4]$",
+            "$[-3, 4]$",
+            "$(-3, 4)$",
+            "$[-3, 4)$"
+        ],
+        "h": "Check which endpoint is included.",
+        "s": "-3 is not included ($>$), 4 is included ($\\le$).",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_8",
+        "q": "Write the interval $(-\\infty, -4]$ using inequalities.",
+        "a": "$x \\le -4$",
+        "opts": [
+            "$x \\le -4$",
+            "$x < -4$",
+            "$x \\ge -4$",
+            "$x > -4$"
+        ],
+        "h": "Infinity means no boundary on one side.",
+        "s": "Up to and including -4.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_9",
+        "q": "Classify $\\sqrt{1.44}$ as rational or irrational.",
+        "a": "Rational",
+        "opts": [
+            "Rational",
+            "Irrational",
+            "Surd",
+            "Imaginary"
+        ],
+        "h": "Calculate the square root of 1.44.",
+        "s": "$\\sqrt{1.44} = 1.2 = 6/5$. Rational.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_10",
+        "q": "Identify if $3\\sqrt{7}$ is rational or irrational.",
+        "a": "Irrational",
+        "opts": [
+            "Rational",
+            "Irrational",
+            "Integer",
+            "Fraction"
+        ],
+        "h": "Multiple of an irrational.",
+        "s": "Product of rational and irrational is irrational.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_11",
+        "q": "Write $-4 \\le x < 6$ in interval notation.",
+        "a": "$[-4, 6)$",
+        "opts": [
+            "$[-4, 6)$",
+            "$(-4, 6]$",
+            "$[-4, 6]$",
+            "$(-4, 6)$"
+        ],
+        "h": "Check the symbols.",
+        "s": "$-4$ is included, $6$ is not.",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_12",
+        "q": "Write $x > -4$ in interval notation.",
+        "a": "$(-4, \\infty)$",
+        "opts": [
+            "$(-4, infty)$",
+            "$[-4, infty)$",
+            "$( -\\infty, -4)$",
+            "$( -\\infty, -4]$"
+        ],
+        "h": "Greater than means towards positive infinity.",
+        "s": "$x > -4$ starts at -4 (not included).",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_13",
+        "q": "Express $(-5, 3)$ using inequalities.",
+        "a": "$-5 < x < 3$",
+        "opts": [
+            "$-5 < x < 3$",
+            "$-5 \\le x \\le 3$",
+            "$-5 < x \\le 3$",
+            "$-5 \\le x < 3$"
+        ],
+        "h": "Round brackets mean strictly greater/less.",
+        "s": "$-5 < x < 3$",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_14",
+        "q": "Express $[-5, 3]$ using inequalities.",
+        "a": "$-5 \\le x \\le 3$",
+        "opts": [
+            "$-5 \\le x \\le 3$",
+            "$-5 < x < 3$",
+            "$-5 \\le x < 3$",
+            "$-5 < x \\le 3$"
+        ],
+        "h": "Square brackets mean inclusive.",
+        "s": "$-5 \\le x \\le 3$",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_15",
+        "q": "Express $(3, infty)$ using inequalities.",
+        "a": "$x > 3$",
+        "opts": [
+            "$x > 3$",
+            "$x \\ge 3$",
+            "$x < 3$",
+            "$x \\le 3$"
+        ],
+        "h": "Infinity means no upper bound.",
+        "s": "$x > 3$",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2a_16",
+        "q": "Express $(-\\infty, -5]$ using inequalities.",
+        "a": "$x \\le -5$",
+        "opts": [
+            "$x \\le -5$",
+            "$x < -5$",
+            "$x \\ge -5$",
+            "$x > -5$"
+        ],
+        "h": "Up to -5, inclusive.",
+        "s": "$x \\le -5$",
+        "t": "Real numbers and intervals",
+        "c": "2A"
+    },
+    {
+        "id": "s2bc_1",
+        "q": "Simplify $\\sqrt{48}$.",
+        "a": "$4\\sqrt{3}$",
+        "opts": [
+            "$4\\sqrt{3}$",
+            "$2\\sqrt{12}$",
+            "$16\\sqrt{3}$",
+            "$3\\sqrt{4}$"
+        ],
+        "h": "Find largest square factor (16).",
+        "s": "$\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_2",
+        "q": "Simplify $\\sqrt{150}$.",
+        "a": "$5\\sqrt{6}$",
+        "opts": [
+            "$5\\sqrt{6}$",
+            "$25\\sqrt{6}$",
+            "$6\\sqrt{5}$",
+            "$10\\sqrt{1.5}$"
+        ],
+        "h": "150 = 25 x 6.",
+        "s": "$\\sqrt{150} = \\sqrt{25 \\times 6} = 5\\sqrt{6}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_3",
+        "q": "Simplify $3\\sqrt{24}$.",
+        "a": "$6\\sqrt{6}$",
+        "opts": [
+            "$6\\sqrt{6}$",
+            "$12\\sqrt{6}$",
+            "$3\\sqrt{6}$",
+            "$6\\sqrt{4}$"
+        ],
+        "h": "24 = 4 x 6.",
+        "s": "$3\\sqrt{4 \\times 6} = 3 \\times 2\\sqrt{6} = 6\\sqrt{6}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_4",
+        "q": "Simplify $2\\sqrt{80}$.",
+        "a": "$8\\sqrt{5}$",
+        "opts": [
+            "$8\\sqrt{5}$",
+            "$4\\sqrt{20}$",
+            "$16\\sqrt{5}$",
+            "$4\\sqrt{5}$"
+        ],
+        "h": "80 = 16 x 5.",
+        "s": "$2\\sqrt{16 \\times 5} = 2 \\times 4\\sqrt{5} = 8\\sqrt{5}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_5",
+        "q": "Simplify $5\\sqrt{8} + 2\\sqrt{18}$.",
+        "a": "$16\\sqrt{2}$",
+        "opts": [
+            "$16\\sqrt{2}$",
+            "$7\\sqrt{26}$",
+            "$10\\sqrt{2}$",
+            "$14\\sqrt{2}$"
+        ],
+        "h": "Simplify each surd first.",
+        "s": "$5(2\\sqrt{2}) + 2(3\\sqrt{2}) = 10\\sqrt{2} + 6\\sqrt{2} = 16\\sqrt{2}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_6",
+        "q": "Simplify $3\\sqrt{7} \\times 2\\sqrt{5}$.",
+        "a": "$6\\sqrt{35}$",
+        "opts": [
+            "$6\\sqrt{35}$",
+            "$5\\sqrt{12}$",
+            "$6\\sqrt{12}$",
+            "$12\\sqrt{35}$"
+        ],
+        "h": "Multiply outer and inner numbers.",
+        "s": "$(3 \\times 2)(\\sqrt{7 \\times 5}) = 6\\sqrt{35}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_7",
+        "q": "Simplify $\\sqrt{40} \\div \\sqrt{8}$.",
+        "a": "$\\sqrt{5}$",
+        "opts": [
+            "$\\sqrt{5}$",
+            "$5$",
+            "$\\sqrt{32}$",
+            "$2\\sqrt{5}$"
+        ],
+        "h": "Use $\\sqrt{a}/\\sqrt{b} = \\sqrt{a/b}$.",
+        "s": "$\\sqrt{40/8} = \\sqrt{5}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_8",
+        "q": "Simplify $(4\\sqrt{6})^2$.",
+        "a": "$96$",
+        "opts": [
+            "$96$",
+            "$24$",
+            "$144$",
+            "$36$"
+        ],
+        "h": "$a^2 \\times b$.",
+        "s": "$4^2 \\times 6 = 16 \\times 6 = 96$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_9",
+        "q": "Simplify $\\sqrt{27} - \\sqrt{12}$.",
+        "a": "$\\sqrt{3}$",
+        "opts": [
+            "$\\sqrt{3}$",
+            "$\\sqrt{15}$",
+            "$3\\sqrt{3}$",
+            "$-3\\sqrt{3}$"
+        ],
+        "h": "$3\\sqrt{3} - 2\\sqrt{3}$.",
+        "s": "$3\\sqrt{3} - 2\\sqrt{3} = \\sqrt{3}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_10",
+        "q": "Simplify $3\\sqrt{2} + 4\\sqrt{50} - \\sqrt{32}$.",
+        "a": "$19\\sqrt{2}$",
+        "opts": [
+            "$19\\sqrt{2}$",
+            "$23\\sqrt{2}$",
+            "$15\\sqrt{2}$",
+            "$27\\sqrt{2}$"
+        ],
+        "h": "Convert everything to $\\sqrt{2}$ form.",
+        "s": "$3\\sqrt{2} + 4(5\\sqrt{2}) - 4\\sqrt{2} = 3\\sqrt{2} + 20\\sqrt{2} - 4\\sqrt{2} = 19\\sqrt{2}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_11",
+        "q": "Simplify $\\sqrt{54} - \\sqrt{24} + \\sqrt{150}$.",
+        "a": "$6\\sqrt{6}$",
+        "opts": [
+            "$6\\sqrt{6}$",
+            "$4\\sqrt{6}$",
+            "$\\sqrt{180}$",
+            "$12\\sqrt{6}$"
+        ],
+        "h": "Simplify to $\\sqrt{6}$ terms.",
+        "s": "$3\\sqrt{6} - 2\\sqrt{6} + 5\\sqrt{6} = 6\\sqrt{6}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_12",
+        "q": "Simplify $\\sqrt{20} \\times \\sqrt{5}$.",
+        "a": "$10$",
+        "opts": [
+            "$10$",
+            "$\\sqrt{100}$",
+            "$5\\sqrt{2}$",
+            "$25$"
+        ],
+        "h": "$\\sqrt{100}$.",
+        "s": "$10$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_13",
+        "q": "Simplify $2\\sqrt{6} \\times 4\\sqrt{3}$.",
+        "a": "$24\\sqrt{2}$",
+        "opts": [
+            "$24\\sqrt{2}$",
+            "$8\\sqrt{18}$",
+            "$12\\sqrt{2}$",
+            "$24$"
+        ],
+        "h": "$8\\sqrt{18} = 8(3\\sqrt{2})$.",
+        "s": "$24\\sqrt{2}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_14",
+        "q": "Simplify $\\sqrt{98} - \\sqrt{72}$.",
+        "a": "$\\sqrt{2}$",
+        "opts": [
+            "$\\sqrt{2}$",
+            "$2\\sqrt{2}$",
+            "$\\sqrt{26}$",
+            "$0$"
+        ],
+        "h": "$7\\sqrt{2} - 6\\sqrt{2}$.",
+        "s": "$\\sqrt{2}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_15",
+        "q": "Simplify $2\\sqrt{45} - \\sqrt{20} + 3\\sqrt{5}$.",
+        "a": "$7\\sqrt{5}$",
+        "opts": [
+            "$7\\sqrt{5}$",
+            "$9\\sqrt{5}$",
+            "$5\\sqrt{5}$",
+            "$11\\sqrt{5}$"
+        ],
+        "h": "$6\\sqrt{5} - 2\\sqrt{5} + 3\\sqrt{5}$.",
+        "s": "$7\\sqrt{5}$",
+        "t": "Further simplification of surds",
+        "c": "2C"
+    },
+    {
+        "id": "s2bc_16",
+        "q": "Simplify $\\sqrt{5} + \\sqrt{5}$.",
+        "a": "$2\\sqrt{5}$",
+        "opts": [
+            "$2\\sqrt{5}$",
+            "$\\sqrt{10}$",
+            "$5$",
+            "$\\sqrt{25}$"
+        ],
+        "h": "Like terms.",
+        "s": "$2\\sqrt{5}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_17",
+        "q": "Simplify $\\sqrt{5} \\times \\sqrt{5}$.",
+        "a": "$5$",
+        "opts": [
+            "$5$",
+            "$\\sqrt{10}$",
+            "$25$",
+            "$\\sqrt{5}$"
+        ],
+        "h": "Square of a root.",
+        "s": "$5$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_18",
+        "q": "Simplify $2\\sqrt{5} + \\sqrt{7} - 3\\sqrt{5}$.",
+        "a": "$\\sqrt{7} - \\sqrt{5}$",
+        "opts": [
+            "$\\sqrt{7} - \\sqrt{5}$",
+            "$\\sqrt{7} + \\sqrt{5}$",
+            "$-\\sqrt{5}$",
+            "$\\sqrt{2}$"
+        ],
+        "h": "Combine $\\sqrt{5}$ terms.",
+        "s": "$(2-3)\\sqrt{5} + \\sqrt{7} = -\\sqrt{5} + \\sqrt{7}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_19",
+        "q": "Simplify $\\sqrt{35} \\div \\sqrt{5}$.",
+        "a": "$\\sqrt{7}$",
+        "opts": [
+            "$\\sqrt{7}$",
+            "$7$",
+            "$\\sqrt{30}$",
+            "$30$"
+        ],
+        "h": "Divide inside.",
+        "s": "$\\sqrt{35/5} = \\sqrt{7}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_20",
+        "q": "Simplify $6\\sqrt{55} \\div 2\\sqrt{11}$.",
+        "a": "$3\\sqrt{5}$",
+        "opts": [
+            "$3\\sqrt{5}$",
+            "$4\\sqrt{44}$",
+            "$3\\sqrt{11}$",
+            "$3$"
+        ],
+        "h": "Divide outer and inner.",
+        "s": "$(6/2)\\sqrt{55/11} = 3\\sqrt{5}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_21",
+        "q": "Simplify $\\sqrt{8} \\times \\sqrt{2}$.",
+        "a": "$4$",
+        "opts": [
+            "$4$",
+            "$\\sqrt{16}$",
+            "$2\\sqrt{2}$",
+            "$16$"
+        ],
+        "h": "$\\sqrt{16}$.",
+        "s": "$4$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_22",
+        "q": "Simplify $\\sqrt{10} \\times \\sqrt{2}$.",
+        "a": "$2\\sqrt{5}$",
+        "opts": [
+            "$2\\sqrt{5}$",
+            "$\\sqrt{20}$",
+            "$10\\sqrt{2}$",
+            "$5\\sqrt{2}$"
+        ],
+        "h": "$\\sqrt{20} = 2\\sqrt{5}$.",
+        "s": "$2\\sqrt{5}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2bc_23",
+        "q": "Simplify $2\\sqrt{6} \\times 4\\sqrt{15}$.",
+        "a": "$24\\sqrt{10}$",
+        "opts": [
+            "$24\\sqrt{10}$",
+            "$8\\sqrt{90}$",
+            "$24\\sqrt{15}$",
+            "$80$"
+        ],
+        "h": "$8\\sqrt{90} = 8(3\\sqrt{10}) = 24\\sqrt{10}$.",
+        "s": "$24\\sqrt{10}$",
+        "t": "Surds and their arithmetic",
+        "c": "2B"
+    },
+    {
+        "id": "s2e_1",
+        "q": "Expand and simplify: $\\sqrt{5}(3 - \\sqrt{5})$.",
+        "a": "$3\\sqrt{5} - 5$",
+        "opts": [
+            "$3\\sqrt{5} - 5$",
+            "$3\\sqrt{5} - 25$",
+            "$15 - 5$",
+            "$3\\sqrt{5} + 5$"
+        ],
+        "h": "Distribute the $\\sqrt{5}$.",
+        "s": "$3\\sqrt{5} - (\\sqrt{5})^2 = 3\\sqrt{5} - 5$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_2",
+        "q": "Expand and simplify: $2\\sqrt{3}(\\sqrt{6} + 4)$.",
+        "a": "$6\\sqrt{2} + 8\\sqrt{3}$",
+        "opts": [
+            "$6\\sqrt{2} + 8\\sqrt{3}$",
+            "$2\\sqrt{18} + 8\\sqrt{3}$",
+            "$12 + 8\\sqrt{3}$",
+            "$6\\sqrt{3} + 8\\sqrt{3}$"
+        ],
+        "h": "$\\sqrt{3} \\times \\sqrt{6} = \\sqrt{18} = 3\\sqrt{2}$.",
+        "s": "$2\\sqrt{18} + 8\\sqrt{3} = 2(3\\sqrt{2}) + 8\\sqrt{3} = 6\\sqrt{2} + 8\\sqrt{3}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_3",
+        "q": "Expand: $(\\sqrt{3} + 4)(\\sqrt{3} - 1)$.",
+        "a": "$-1 + 3\\sqrt{3}$",
+        "opts": [
+            "$-1 + 3\\sqrt{3}$",
+            "$3 + 3\\sqrt{3} - 4$",
+            "$-1 - 3\\sqrt{3}$",
+            "$7 + 3\\sqrt{3}$"
+        ],
+        "h": "Use FOIL.",
+        "s": "$3 - \\sqrt{3} + 4\\sqrt{3} - 4 = -1 + 3\\sqrt{3}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_4",
+        "q": "Expand and simplify: $(2\\sqrt{5} + 3)(3\\sqrt{5} - 2)$.",
+        "a": "$24 + 5\\sqrt{5}$",
+        "opts": [
+            "$24 + 5\\sqrt{5}$",
+            "$30 + 5\\sqrt{5} - 6$",
+            "$24 - 5\\sqrt{5}$",
+            "$36 + 5\\sqrt{5}$"
+        ],
+        "h": "Use FOIL.",
+        "s": "$6(5) - 4\\sqrt{5} + 9\\sqrt{5} - 6 = 30 + 5\\sqrt{5} - 6 = 24 + 5\\sqrt{5}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_5",
+        "q": "Simplify: $(\\sqrt{11} - 3)(\\sqrt{11} + 3)$.",
+        "a": "$2$",
+        "opts": [
+            "$2$",
+            "$8$",
+            "$121 - 9$",
+            "$20$"
+        ],
+        "h": "Difference of squares.",
+        "s": "$11 - 9 = 2$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_6",
+        "q": "Expand: $(\\sqrt{6} - 2)^2$.",
+        "a": "$10 - 4\\sqrt{6}$",
+        "opts": [
+            "$10 - 4\\sqrt{6}$",
+            "$8 - 4\\sqrt{6}$",
+            "$10 + 4\\sqrt{6}$",
+            "$2$"
+        ],
+        "h": "$a^2 - 2ab + b^2$.",
+        "s": "$6 - 2(2\\sqrt{6}) + 4 = 10 - 4\\sqrt{6}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_7",
+        "q": "Expand: $(3 + 2\\sqrt{2})^2$.",
+        "a": "$17 + 12\\sqrt{2}$",
+        "opts": [
+            "$17 + 12\\sqrt{2}$",
+            "$11 + 12\\sqrt{2}$",
+            "$17 + 6\\sqrt{2}$",
+            "$25$"
+        ],
+        "h": "$9 + 2(3)(2\\sqrt{2}) + (2\\sqrt{2})^2$.",
+        "s": "$9 + 12\\sqrt{2} + 8 = 17 + 12\\sqrt{2}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_8",
+        "q": "Expand and simplify: $(\\sqrt{5} + 2)(3 - \\sqrt{5})$.",
+        "a": "$\\sqrt{5} + 1$",
+        "opts": [
+            "$\\sqrt{5} + 1$",
+            "$\\sqrt{5} - 1$",
+            "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5}$",
+            "$11$"
+        ],
+        "h": "FOIL.",
+        "s": "$3\\sqrt{5} - 5 + 6 - 2\\sqrt{5} = \\sqrt{5} + 1$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_9",
+        "q": "Expand: $(2\\sqrt{3} - 1)(3\\sqrt{3} + 5)$.",
+        "a": "$13 + 7\\sqrt{3}$",
+        "opts": [
+            "$13 + 7\\sqrt{3}$",
+            "$18 + 7\\sqrt{3} - 5$",
+            "$23 + 7\\sqrt{3}$",
+            "$13 - 7\\sqrt{3}$"
+        ],
+        "h": "FOIL.",
+        "s": "$6(3) + 10\\sqrt{3} - 3\\sqrt{3} - 5 = 18 + 7\\sqrt{3} - 5 = 13 + 7\\sqrt{3}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_10",
+        "q": "Expand: $(\\sqrt{10} - 3)(\\sqrt{10} + 3)$.",
+        "a": "$1$",
+        "opts": [
+            "$1$",
+            "$7$",
+            "$19$",
+            "$10-9$"
+        ],
+        "h": "Difference of squares.",
+        "s": "$10 - 9 = 1$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_11",
+        "q": "Expand: $(\\sqrt{7} - 2)^2$.",
+        "a": "$11 - 4\\sqrt{7}$",
+        "opts": [
+            "$11 - 4\\sqrt{7}$",
+            "$9 - 4\\sqrt{7}$",
+            "$11 + 4\\sqrt{7}$",
+            "$3$"
+        ],
+        "h": "$7 - 2(2\\sqrt{7}) + 4$.",
+        "s": "$11 - 4\\sqrt{7}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_12",
+        "q": "Expand: $(\\sqrt{5} + \\sqrt{2})^2$.",
+        "a": "$7 + 2\\sqrt{10}$",
+        "opts": [
+            "$7 + 2\\sqrt{10}$",
+            "$5 + 2$",
+            "$7 + \\sqrt{10}$",
+            "$9$"
+        ],
+        "h": "$5 + 2\\sqrt{10} + 2$.",
+        "s": "$7 + 2\\sqrt{10}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2e_13",
+        "q": "Expand: $(4 - 3\\sqrt{2})^2$.",
+        "a": "$34 - 24\\sqrt{2}$",
+        "opts": [
+            "$34 - 24\\sqrt{2}$",
+            "$16 - 18 + 24\\sqrt{2}$",
+            "$22 - 24\\sqrt{2}$",
+            "$16 - 24\\sqrt{2} + 18$"
+        ],
+        "h": "$16 - 2(4)(3\\sqrt{2}) + 18$.",
+        "s": "$16 - 24\\sqrt{2} + 18 = 34 - 24\\sqrt{2}$",
+        "t": "Binomial expansion of surds",
+        "c": "2E"
+    },
+    {
+        "id": "s2f_1",
+        "q": "Rationalize $\\frac{5}{\\sqrt{7}}$.",
+        "a": "$\\frac{5\\sqrt{7}}{7}$",
+        "opts": [
+            "$\\frac{5\\sqrt{7}}{7}$",
+            "$\\frac{\\sqrt{35}}{7}$",
+            "$\\frac{5}{7}$",
+            "$5\\sqrt{7}$"
+        ],
+        "h": "Multiply by $\\sqrt{7}/\\sqrt{7}$.",
+        "s": "$\\frac{5\\sqrt{7}}{7}$",
+        "t": "Rationalising the denominator",
+        "c": "2D"
+    },
+    {
+        "id": "s2f_2",
+        "q": "Rationalize $\\frac{\\sqrt{3}}{2\\sqrt{5}}$.",
+        "a": "$\\frac{\\sqrt{15}}{10}$",
+        "opts": [
+            "$\\frac{\\sqrt{15}}{10}$",
+            "$\\frac{\\sqrt{3}}{10}$",
+            "$\\frac{3}{10}$",
+            "$\\frac{\\sqrt{15}}{5}$"
+        ],
+        "h": "Multiply by $\\sqrt{5}/\\sqrt{5}$.",
+        "s": "$\\frac{\\sqrt{15}}{2(5)} = \\frac{\\sqrt{15}}{10}$",
+        "t": "Rationalising the denominator",
+        "c": "2D"
+    },
+    {
+        "id": "s2f_3",
+        "q": "Rationalize $\\frac{1}{\\sqrt{5} + 2}$.",
+        "a": "$\\sqrt{5} - 2$",
+        "opts": [
+            "$\\sqrt{5} - 2$",
+            "$\\frac{\\sqrt{5}-2}{1}$",
+            "$\\sqrt{5} + 2$",
+            "$\\frac{1}{\\sqrt{5}-2}$"
+        ],
+        "h": "Conjugate is $\\sqrt{5} - 2$.",
+        "s": "$\\frac{\\sqrt{5}-2}{5-4} = \\sqrt{5}-2$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_4",
+        "q": "Rationalize $\\frac{6}{\\sqrt{5} - \\sqrt{2}}$.",
+        "a": "$2(\\sqrt{5} + \\sqrt{2})$",
+        "opts": [
+            "$2(\\sqrt{5} + \\sqrt{2})$",
+            "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3}$",
+            "$3(\\sqrt{5} + \\sqrt{2})$",
+            "$2\\sqrt{5} + 2\\sqrt{2}$"
+        ],
+        "h": "Denominator becomes $5-2=3$.",
+        "s": "$\\frac{6(\\sqrt{5}+\\sqrt{2})}{3} = 2(\\sqrt{5}+\\sqrt{2})$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_5",
+        "q": "Rationalize $\\frac{\\sqrt{2}}{\\sqrt{6} + 2}$.",
+        "a": "$\\frac{\\sqrt{12} - 2\\sqrt{2}}{2}$",
+        "opts": [
+            "$\\frac{\\sqrt{3} - \\sqrt{2}}{1}$",
+            "$\\frac{2\\sqrt{3} - 2\\sqrt{2}}{2}$",
+            "$\\sqrt{3} - \\sqrt{2}$",
+            "$\\frac{\\sqrt{12} + 2\\sqrt{2}}{2}$"
+        ],
+        "h": "Multiply by $(\\sqrt{6}-2)$.",
+        "s": "$\\frac{\\sqrt{12}-2\\sqrt{2}}{6-4} = \\frac{2\\sqrt{3}-2\\sqrt{2}}{2} = \\sqrt{3}-\\sqrt{2}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_6",
+        "q": "Simplify $\\frac{3}{\\sqrt{5}-2} + \\frac{3}{\\sqrt{5}+2}$.",
+        "a": "$6\\sqrt{5}$",
+        "opts": [
+            "$6\\sqrt{5}$",
+            "$12$",
+            "$6$",
+            "$2\\sqrt{5}$"
+        ],
+        "h": "Common denominator is $(5-4)=1$.",
+        "s": "$\\frac{3(\\sqrt{5}+2) + 3(\\sqrt{5}-2)}{1} = 3\\sqrt{5} + 6 + 3\\sqrt{5} - 6 = 6\\sqrt{5}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_7",
+        "q": "Rationalize $\\frac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$.",
+        "a": "$6 - \\sqrt{35}$",
+        "opts": [
+            "$6 - \\sqrt{35}$",
+            "$12 - 2\\sqrt{35}$",
+            "$\\frac{12-2\\sqrt{35}}{2}$",
+            "$1$"
+        ],
+        "h": "Multiply by $(\\sqrt{7}-\\sqrt{5})$.",
+        "s": "$\\frac{7 - 2\\sqrt{35} + 5}{7-5} = \\frac{12-2\\sqrt{35}}{2} = 6-\\sqrt{35}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_8",
+        "q": "Rationalize $\\frac{3\\sqrt{2} + 1}{3\\sqrt{2} - 1}$.",
+        "a": "$\\frac{19 + 6\\sqrt{2}}{17}$",
+        "opts": [
+            "$\\frac{19 + 6\\sqrt{2}}{17}$",
+            "$\\frac{19 - 6\\sqrt{2}}{17}$",
+            "$\\frac{17 + 6\\sqrt{2}}{19}$",
+            "$1$"
+        ],
+        "h": "Denominator is $(3\\sqrt{2})^2 - 1^2 = 18-1=17$.",
+        "s": "$\\frac{(3\\sqrt{2}+1)^2}{17} = \\frac{18 + 6\\sqrt{2} + 1}{17} = \\frac{19+6\\sqrt{2}}{17}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_9",
+        "q": "Rationalize $\\frac{1}{\\sqrt{5}}$.",
+        "a": "$\\frac{\\sqrt{5}}{5}$",
+        "opts": [
+            "$\\frac{\\sqrt{5}}{5}$",
+            "$\\sqrt{5}$",
+            "$\\frac{1}{5}$",
+            "$\\frac{5}{\\sqrt{5}}$"
+        ],
+        "h": "Simple rationalize.",
+        "s": "$\\frac{\\sqrt{5}}{5}$",
+        "t": "Rationalising the denominator",
+        "c": "2D"
+    },
+    {
+        "id": "s2f_10",
+        "q": "Rationalize $\\frac{3}{\\sqrt{2}}$.",
+        "a": "$\\frac{3\\sqrt{2}}{2}$",
+        "opts": [
+            "$\\frac{3\\sqrt{2}}{2}$",
+            "$3\\sqrt{2}$",
+            "$\\frac{\\sqrt{6}}{2}$",
+            "$\\frac{2\\sqrt{3}}{3}$"
+        ],
+        "h": "Multiply by $\\sqrt{2}$.",
+        "s": "$\\frac{3\\sqrt{2}}{2}$",
+        "t": "Rationalising the denominator",
+        "c": "2D"
+    },
+    {
+        "id": "s2f_11",
+        "q": "Rationalize $\\frac{1}{5\\sqrt{3}}$.",
+        "a": "$\\frac{\\sqrt{3}}{15}$",
+        "opts": [
+            "$\\frac{\\sqrt{3}}{15}$",
+            "$\\frac{5\\sqrt{3}}{15}$",
+            "$\\frac{\\sqrt{3}}{5}$",
+            "$\\frac{1}{15}$"
+        ],
+        "h": "Multiply by $\\sqrt{3}$.",
+        "s": "$\\frac{\\sqrt{3}}{5(3)} = \\frac{\\sqrt{3}}{15}$",
+        "t": "Rationalising the denominator",
+        "c": "2D"
+    },
+    {
+        "id": "s2f_12",
+        "q": "Rationalize $\\frac{1}{\\sqrt{5} + \\sqrt{2}}$.",
+        "a": "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
+        "opts": [
+            "$\\frac{\\sqrt{5} - \\sqrt{2}}{3}$",
+            "$\\frac{\\sqrt{5} + \\sqrt{2}}{3}$",
+            "$\\sqrt{5} - \\sqrt{2}$",
+            "$\\frac{\\sqrt{3}}{3}$"
+        ],
+        "h": "Conjugate.",
+        "s": "$\\frac{\\sqrt{5}-\\sqrt{2}}{5-2} = \\frac{\\sqrt{5}-\\sqrt{2}}{3}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_13",
+        "q": "Rationalize $\\frac{\\sqrt{3}}{\\sqrt{3} + 1}$.",
+        "a": "$\\frac{3 - \\sqrt{3}}{2}$",
+        "opts": [
+            "$\\frac{3 - \\sqrt{3}}{2}$",
+            "$\\frac{3 + \\sqrt{3}}{2}$",
+            "$1 - \\sqrt{3}$",
+            "$\\frac{\\sqrt{3}-3}{2}$"
+        ],
+        "h": "Multiply by $(\\sqrt{3}-1)$.",
+        "s": "$\\frac{3 - \\sqrt{3}}{3-1} = \\frac{3-\\sqrt{3}}{2}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2f_14",
+        "q": "Rationalize $\\frac{3\\sqrt{7}}{2\\sqrt{5} - \\sqrt{7}}$.",
+        "a": "$\\frac{6\\sqrt{35} + 21}{13}$",
+        "opts": [
+            "$\\frac{6\\sqrt{35} + 21}{13}$",
+            "$\\frac{6\\sqrt{35} - 21}{13}$",
+            "$\\frac{3\\sqrt{35} + 21}{13}$",
+            "$21$"
+        ],
+        "h": "Multiply by $(2\\sqrt{5}+\\sqrt{7})$.",
+        "s": "$\\frac{3\\sqrt{7}(2\\sqrt{5}+\\sqrt{7})}{4(5)-7} = \\frac{6\\sqrt{35}+21}{13}$",
+        "t": "Further rationalising the denominator",
+        "c": "2F"
+    },
+    {
+        "id": "s2g_1",
+        "q": "Find $x$ if $\\sqrt{12} + \\sqrt{27} = \\sqrt{x}$.",
+        "a": "$75$",
+        "opts": [
+            "$75$",
+            "$39$",
+            "$15$",
+            "$45$"
+        ],
+        "h": "Left side is $2\\sqrt{3} + 3\\sqrt{3} = 5\\sqrt{3}$.",
+        "s": "$5\\sqrt{3} = \\sqrt{25 \\times 3} = \\sqrt{75}$",
+        "t": "Surd equations",
+        "c": "2G"
+    },
+    {
+        "id": "s2g_2",
+        "q": "Find $x$ if $\\sqrt{18} + \\sqrt{50} = \\sqrt{x}$.",
+        "a": "$128$",
+        "opts": [
+            "$128$",
+            "$68$",
+            "$32$",
+            "$98$"
+        ],
+        "h": "Left side is $3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2}$.",
+        "s": "$8\\sqrt{2} = \\sqrt{64 \\times 2} = \\sqrt{128}$",
+        "t": "Surd equations",
+        "c": "2G"
+    },
+    {
+        "id": "s2g_3",
+        "q": "Find $a$ and $b$ if $\\frac{2}{\\sqrt{3}-1} = a + b\\sqrt{3}$.",
+        "a": "$a=1, b=1$",
+        "opts": [
+            "$a=1, b=1$",
+            "$a=2, b=1$",
+            "$a=1, b=2$",
+            "$a=1, b=-1$"
+        ],
+        "h": "Rationalize the denominator.",
+        "s": "$\\frac{2(\\sqrt{3}+1)}{3-1} = \\frac{2(\\sqrt{3}+1)}{2} = 1 + \\sqrt{3}$. So $a=1, b=1$.",
+        "t": "Surd equations",
+        "c": "2G"
+    },
+    {
+        "id": "s2g_4",
+        "q": "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.",
+        "a": "$p=10, q=2$",
+        "opts": [
+            "$p=5, q=2$",
+            "$p=10, q=2$",
+            "$p=5, q=1$",
+            "$p=2, q=1$"
+        ],
+        "h": "Rationalize by $(\\sqrt{5}+2)$.",
+        "s": "$\\frac{\\sqrt{5}(\\sqrt{5}+2)}{5-4} = 5 + 2\\sqrt{5}$. Wait, my calc was wrong. $p=5, q=2$.",
+        "t": "Surd equations",
+        "c": "2G"
+    },
+    {
+        "id": "s2g_5",
+        "q": "If $\\sqrt{20} + \\sqrt{45} = \\sqrt{x}$, find $x$.",
+        "a": "$125$",
+        "opts": [
+            "$125$",
+            "$65$",
+            "$25$",
+            "$100$"
+        ],
+        "h": "$2\\sqrt{5} + 3\\sqrt{5} = 5\\sqrt{5}$.",
+        "s": "$5\\sqrt{5} = \\sqrt{125}$",
+        "t": "Surd equations",
+        "c": "2G"
+    },
     {
         "id": "y9-2a-10a",
         "c": "2A",
@@ -1248,22 +1248,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(851\\)",
             "\\(847\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The 120 cm diagonal cuts the square into two right-angled triangles where both shorter sides equal the square's side length s. Set up s^2 + s^2 = 120^2 and solve for s.",
         "s": "The correct answer is 849.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Both shorter sides of the right-angled triangle formed are equal to the square's side length, s. Apply Pythagoras' theorem with the diagonal as the hypotenuse.",
+                "workingOut": "s^2 + s^2 = 120^2 \\Rightarrow 2s^2 = 14400",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Divide both sides by 2 to isolate s^2.",
+                "workingOut": "s^2 = 7200",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 849",
+                "explanation": "Take the square root, convert to millimetres, and round to the nearest millimetre.",
+                "workingOut": "s = \\sqrt{7200} \\approx 84.853 \\text{ cm} = 848.53 \\text{ mm} \\approx 849 \\text{ mm}",
                 "graphData": null
             }
         ]
@@ -1282,22 +1282,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(30.4\\)",
             "\\(31.65\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The straight-line path she actually swam is the hypotenuse of a right-angled triangle with the river width (30 m) and the downstream drift (5 m) as the two shorter sides.",
         "s": "The correct answer is 30.4.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the actual distance swum (the hypotenuse) c.",
+                "workingOut": "c^2 = 30^2 + 5^2 = 900 + 25 = 925",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root of both sides.",
+                "workingOut": "c = \\sqrt{925} = 30.4138\\ldots \\text{ m}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 30.4",
+                "explanation": "Round to 1 decimal place.",
+                "workingOut": "c \\approx 30.4 \\text{ m}",
                 "graphData": null
             }
         ]
@@ -1316,22 +1316,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(4.65\\)",
             "\\(4.2\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The steel beam (5.2 m) is the diagonal (hypotenuse) of the rectangular floor. The width (3.0 m) is one shorter side, and the shed length is the unknown shorter side — subtract to find it.",
         "s": "The correct answer is 4.2.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the unknown shed length, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "l^2 = 5.2^2 - 3.0^2 = 27.04 - 9 = 18.04",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root of both sides.",
+                "workingOut": "l = \\sqrt{18.04} = 4.24735\\ldots \\text{ m}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 4.2",
+                "explanation": "Round to 1 decimal place.",
+                "workingOut": "l \\approx 4.2 \\text{ m}",
                 "graphData": null
             }
         ]
@@ -1447,22 +1447,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(20\\)",
             "\\(15\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse is the longest side, opposite the right angle. Add the squares of the two shorter sides (9 cm and 12 cm), then take the square root.",
         "s": "The correct answer is 15.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse c.",
+                "workingOut": "c^2 = a^2 + b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Substitute the two shorter sides, 9 cm and 12 cm, and square each one.",
+                "workingOut": "c^2 = 9^2 + 12^2 = 81 + 144 = 225",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 15",
+                "explanation": "Take the square root of both sides to find c.",
+                "workingOut": "c = \\sqrt{225} = 15 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1481,22 +1481,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(17\\)",
             "\\(15\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse is the longest side, opposite the right angle. Add the squares of the two shorter sides (8 cm and 15 cm), then take the square root.",
         "s": "The correct answer is 17.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse h.",
+                "workingOut": "h^2 = a^2 + b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Substitute the two shorter sides, 8 cm and 15 cm, and square each one.",
+                "workingOut": "h^2 = 8^2 + 15^2 = 64 + 225 = 289",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 17",
+                "explanation": "Take the square root of both sides to find h.",
+                "workingOut": "h = \\sqrt{289} = 17 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1515,22 +1515,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(2.5\\)",
             "\\(2.95\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse is the longest side, opposite the right angle. Add the squares of the two shorter sides (1.5 cm and 2 cm), then take the square root.",
         "s": "The correct answer is 2.5.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse p.",
+                "workingOut": "p^2 = a^2 + b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Substitute the two shorter sides, 1.5 cm and 2 cm, and square each one.",
+                "workingOut": "p^2 = 1.5^2 + 2^2 = 2.25 + 4 = 6.25",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 2.5",
+                "explanation": "Take the square root of both sides to find p.",
+                "workingOut": "p = \\sqrt{6.25} = 2.5 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1549,22 +1549,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(29\\)",
             "\\(31\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse is the longest side, opposite the right angle. Add the squares of the two shorter sides (20 cm and 21 cm), then take the square root.",
         "s": "The correct answer is 29.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse m.",
+                "workingOut": "m^2 = a^2 + b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Substitute the two shorter sides, 20 cm and 21 cm, and square each one.",
+                "workingOut": "m^2 = 20^2 + 21^2 = 400 + 441 = 841",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 29",
+                "explanation": "Take the square root of both sides to find m.",
+                "workingOut": "m = \\sqrt{841} = 29 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1583,22 +1583,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(12\\)",
             "\\(17\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (13 cm) is given this time, so subtract the square of the known shorter side (5 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 12.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "k^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (13 cm) and the known side (5 cm), then square them.",
+                "workingOut": "k^2 = 13^2 - 5^2 = 169 - 25 = 144",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 12",
+                "explanation": "Take the square root of both sides to find k.",
+                "workingOut": "k = \\sqrt{144} = 12 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1617,22 +1617,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(5\\)",
             "\\(12\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (25 cm) is given this time, so subtract the square of the known shorter side (24 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 7.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "w^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (25 cm) and the known side (24 cm), then square them.",
+                "workingOut": "w^2 = 25^2 - 24^2 = 625 - 576 = 49",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 7",
+                "explanation": "Take the square root of both sides to find w.",
+                "workingOut": "w = \\sqrt{49} = 7 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1651,22 +1651,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(36\\)",
             "\\(41\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (39 cm) is given this time, so subtract the square of the known shorter side (15 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 36.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "n^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (39 cm) and the known side (15 cm), then square them.",
+                "workingOut": "n^2 = 39^2 - 15^2 = 1521 - 225 = 1296",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 36",
+                "explanation": "Take the square root of both sides to find n.",
+                "workingOut": "n = \\sqrt{1296} = 36 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1685,22 +1685,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(38\\)",
             "\\(45\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (41 cm) is given this time, so subtract the square of the known shorter side (9 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 40.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "r^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (41 cm) and the known side (9 cm), then square them.",
+                "workingOut": "r^2 = 41^2 - 9^2 = 1681 - 81 = 1600",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 40",
+                "explanation": "Take the square root of both sides to find r.",
+                "workingOut": "r = \\sqrt{1600} = 40 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1719,22 +1719,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(10\\)",
             "\\(14\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (37 cm) is given this time, so subtract the square of the known shorter side (35 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 12.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "t^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (37 cm) and the known side (35 cm), then square them.",
+                "workingOut": "t^2 = 37^2 - 35^2 = 1369 - 1225 = 144",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 12",
+                "explanation": "Take the square root of both sides to find t.",
+                "workingOut": "t = \\sqrt{144} = 12 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1753,22 +1753,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(21\\)",
             "\\(14\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (65 cm) is given this time, so subtract the square of the known shorter side (63 cm) from the square of the hypotenuse, then take the square root.",
         "s": "The correct answer is 16.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "z^2 = c^2 - b^2",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
+                "explanation": "Substitute the hypotenuse (65 cm) and the known side (63 cm), then square them.",
+                "workingOut": "z^2 = 65^2 - 63^2 = 4225 - 3969 = 256",
                 "graphData": null
             },
             {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = 16",
+                "explanation": "Take the square root of both sides to find z.",
+                "workingOut": "z = \\sqrt{256} = 16 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1787,17 +1787,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(5.03\\)",
             "\\(5.83\\)"
         ],
-        "h": "Use your calculator to find the square root and round to 2 decimal places.",
+        "h": "Type the number under the square root sign into your calculator, then round the display value to 2 decimal places.",
         "s": "The correct answer is 4.58.",
         "solutionSteps": [
             {
-                "explanation": "Find the square root using a calculator.",
-                "workingOut": "Expression: Use a calculator to find the approximation to 2 decimal places for \\sqrt{21}.",
+                "explanation": "Enter 21 into your calculator's square root function.",
+                "workingOut": "\\sqrt{21}",
                 "graphData": null
             },
             {
-                "explanation": "Round the result to 2 decimal places (check the third decimal digit).",
-                "workingOut": "Rounded answer: 4.58",
+                "explanation": "Read the full calculator display.",
+                "workingOut": "\\sqrt{21} = 4.58257\\ldots",
+                "graphData": null
+            },
+            {
+                "explanation": "Round to 2 decimal places (the third decimal digit, 2, rounds down).",
+                "workingOut": "\\sqrt{21} \\approx 4.58",
                 "graphData": null
             }
         ]
@@ -1816,17 +1821,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(7.01\\)",
             "\\(7.81\\)"
         ],
-        "h": "Use your calculator to find the square root and round to 2 decimal places.",
+        "h": "Type the number under the square root sign into your calculator, then round the display value to 2 decimal places.",
         "s": "The correct answer is 6.56.",
         "solutionSteps": [
             {
-                "explanation": "Find the square root using a calculator.",
-                "workingOut": "Expression: Use a calculator to find the approximation to 2 decimal places for \\sqrt{43}.",
+                "explanation": "Enter 43 into your calculator's square root function.",
+                "workingOut": "\\sqrt{43}",
                 "graphData": null
             },
             {
-                "explanation": "Round the result to 2 decimal places (check the third decimal digit).",
-                "workingOut": "Rounded answer: 6.56",
+                "explanation": "Read the full calculator display.",
+                "workingOut": "\\sqrt{43} = 6.55744\\ldots",
+                "graphData": null
+            },
+            {
+                "explanation": "Round to 2 decimal places (the third decimal digit, 4, rounds down).",
+                "workingOut": "\\sqrt{43} \\approx 6.56",
                 "graphData": null
             }
         ]
@@ -1845,17 +1855,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(8.14\\)",
             "\\(10.14\\)"
         ],
-        "h": "Use your calculator to find the square root and round to 2 decimal places.",
+        "h": "Type the number under the square root sign into your calculator, then round the display value to 2 decimal places.",
         "s": "The correct answer is 8.89.",
         "solutionSteps": [
             {
-                "explanation": "Find the square root using a calculator.",
-                "workingOut": "Expression: Use a calculator to find the approximation to 2 decimal places for \\sqrt{79}.",
+                "explanation": "Enter 79 into your calculator's square root function.",
+                "workingOut": "\\sqrt{79}",
                 "graphData": null
             },
             {
-                "explanation": "Round the result to 2 decimal places (check the third decimal digit).",
-                "workingOut": "Rounded answer: 8.89",
+                "explanation": "Read the full calculator display.",
+                "workingOut": "\\sqrt{79} = 8.88819\\ldots",
+                "graphData": null
+            },
+            {
+                "explanation": "Round to 2 decimal places (the third decimal digit, 9, rounds up).",
+                "workingOut": "\\sqrt{79} \\approx 8.89",
                 "graphData": null
             }
         ]
@@ -1874,17 +1889,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(22.69\\)",
             "\\(21.94\\)"
         ],
-        "h": "Use your calculator to find the square root and round to 2 decimal places.",
+        "h": "Type the number under the square root sign into your calculator, then round the display value to 2 decimal places.",
         "s": "The correct answer is 22.69.",
         "solutionSteps": [
             {
-                "explanation": "Find the square root using a calculator.",
-                "workingOut": "Expression: Use a calculator to find the approximation to 2 decimal places for \\sqrt{515}.",
+                "explanation": "Enter 515 into your calculator's square root function.",
+                "workingOut": "\\sqrt{515}",
                 "graphData": null
             },
             {
-                "explanation": "Round the result to 2 decimal places (check the third decimal digit).",
-                "workingOut": "Rounded answer: 22.69",
+                "explanation": "Read the full calculator display.",
+                "workingOut": "\\sqrt{515} = 22.69361\\ldots",
+                "graphData": null
+            },
+            {
+                "explanation": "Round to 2 decimal places (the third decimal digit, 6, rounds up).",
+                "workingOut": "\\sqrt{515} \\approx 22.69",
                 "graphData": null
             }
         ]
@@ -1903,22 +1923,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(\\sqrt{65}, 8.06\\)",
             "\\(25\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (4 cm and 7 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{65}, 8.06.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse c.",
+                "workingOut": "c^2 = 4^2 + 7^2 = 16 + 49 = 65",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "c = \\sqrt{65} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{65}, 8.06",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "c \\approx 8.06 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1937,22 +1957,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(9\\)",
             "\\(\\sqrt{106}, 10.30\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (5 cm and 9 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{106}, 10.30.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse d.",
+                "workingOut": "d^2 = 5^2 + 9^2 = 25 + 81 = 106",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "d = \\sqrt{106} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{106}, 10.30",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "d \\approx 10.30 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -1971,22 +1991,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(\\sqrt{73}, 8.54\\)",
             "\\(25\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (8 cm and 3 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{73}, 8.54.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse m.",
+                "workingOut": "m^2 = 8^2 + 3^2 = 64 + 9 = 73",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "m = \\sqrt{73} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{73}, 8.54",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "m \\approx 8.54 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2005,22 +2025,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(9\\)",
             "\\(12\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (6 cm and 4 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{52}, 7.21.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse n.",
+                "workingOut": "n^2 = 6^2 + 4^2 = 36 + 16 = 52",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "n = \\sqrt{52} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{52}, 7.21",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "n \\approx 7.21 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2039,22 +2059,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(25\\)",
             "\\(\\sqrt{136}, 11.66\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (10 cm and 6 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{136}, 11.66.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse p.",
+                "workingOut": "p^2 = 10^2 + 6^2 = 100 + 36 = 136",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "p = \\sqrt{136} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{136}, 11.66",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "p \\approx 11.66 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2073,22 +2093,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(25\\)",
             "\\(\\sqrt{89}, 9.43\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "This is the hypotenuse (8 cm and 5 cm are the two shorter sides), so add the squares of the shorter sides. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{89}, 9.43.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the hypotenuse q.",
+                "workingOut": "q^2 = 8^2 + 5^2 = 64 + 25 = 89",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "q = \\sqrt{89} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{89}, 9.43",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "q \\approx 9.43 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2107,22 +2127,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(25\\)",
             "\\(12\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (15 cm) is given, so subtract the square of the known shorter side (5 cm) from the square of the hypotenuse. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{200}, 14.14.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "a^2 = 15^2 - 5^2 = 225 - 25 = 200",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "a = \\sqrt{200} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{200}, 14.14",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "a \\approx 14.14 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2141,22 +2161,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(9\\)",
             "\\(\\sqrt{80}, 8.94\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (12 cm) is given, so subtract the square of the known shorter side (8 cm) from the square of the hypotenuse. Leave the exact answer as a surd, then round it separately.",
         "s": "The correct answer is \\sqrt{80}, 8.94.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "b^2 = 12^2 - 8^2 = 144 - 64 = 80",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to get the exact value.",
+                "workingOut": "b = \\sqrt{80} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{80}, 8.94",
+                "explanation": "Use a calculator to round the exact value to 2 decimal places.",
+                "workingOut": "b \\approx 8.94 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2175,22 +2195,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(\\sqrt{41}, 6.40\\)",
             "\\(12\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "Split the isosceles triangle into two identical right-angled triangles using the height. The half-base (4 cm) and the height (5 cm) are the two shorter sides of each right-angled triangle.",
         "s": "The correct answer is \\sqrt{41}, 6.40.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "The height splits the base of 8 cm into two equal halves of 4 cm each, forming a right-angled triangle with height 5 cm and half-base 4 cm.",
+                "workingOut": "\\text{half-base} = 4 \\text{ cm}, \\quad \\text{height} = 5 \\text{ cm}",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Apply Pythagoras' theorem to find the slant side x (the hypotenuse of the small triangle).",
+                "workingOut": "x^2 = 4^2 + 5^2 = 16 + 25 = 41",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{41}, 6.40",
+                "explanation": "Take the square root, giving the exact value, then round to 2 decimal places.",
+                "workingOut": "x = \\sqrt{41} \\text{ cm (exact)} \\approx 6.40 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2209,22 +2229,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(6\\)",
             "\\(2\\sqrt{51}, 14.28\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "Split the isosceles triangle into two identical right-angled triangles using the height. Each has hypotenuse 10 cm (the slant) and one shorter side 7 cm (the height) — find the half-base, then double it.",
         "s": "The correct answer is 2\\sqrt{51}, 14.28.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Each half of the isosceles triangle is a right-angled triangle with hypotenuse 10 cm (slant) and one shorter side 7 cm (height). Find the half-base using Pythagoras' theorem.",
+                "workingOut": "\\text{half-base}^2 = 10^2 - 7^2 = 100 - 49 = 51",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root to find the half-base.",
+                "workingOut": "\\text{half-base} = \\sqrt{51} \\text{ cm (exact)}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 2\\sqrt{51}, 14.28",
+                "explanation": "Double the half-base to get the total base length y, then round to 2 decimal places.",
+                "workingOut": "y = 2\\sqrt{51} \\text{ cm (exact)} \\approx 14.28 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2243,22 +2263,17 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(13\\)",
             "\\(11\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "Add the squares of the two shorter sides (5 cm and 12 cm), then take the square root — this answer happens to be a whole number.",
         "s": "The correct answer is 13.",
         "solutionSteps": [
             {
                 "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "workingOut": "c^2 = 5^2 + 12^2 = 25 + 144 = 169",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
-                "graphData": null
-            },
-            {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 13",
+                "explanation": "Take the square root of both sides.",
+                "workingOut": "c = \\sqrt{169} = 13 \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2277,22 +2292,17 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(12\\)",
             "\\(25\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "Add the squares of the two shorter sides (4 cm and 7 cm), then take the square root — since 65 is not a perfect square, leave the answer as a surd.",
         "s": "The correct answer is \\sqrt{65}.",
         "solutionSteps": [
             {
                 "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "workingOut": "c^2 = 4^2 + 7^2 = 16 + 49 = 65",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
-                "graphData": null
-            },
-            {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{65}",
+                "explanation": "Take the square root of both sides. Since 65 has no square factors, leave it as a surd.",
+                "workingOut": "c = \\sqrt{65} \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2311,22 +2321,17 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(12\\)",
             "\\(9\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (11 cm) is given, so subtract the square of the known shorter side (5 cm) from the square of the hypotenuse — since 96 is not a perfect square, leave the answer as a surd.",
         "s": "The correct answer is \\sqrt{96}.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "a^2 = 11^2 - 5^2 = 121 - 25 = 96",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
-                "graphData": null
-            },
-            {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = \\sqrt{96}",
+                "explanation": "Take the square root of both sides. Since 96 has no square factors that make it simplify to an integer, leave it as a surd.",
+                "workingOut": "a = \\sqrt{96} \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2345,22 +2350,17 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(\\sqrt{130}\\)",
             "\\(9\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "Add the squares of the two shorter sides (7 cm and 9 cm), then take the square root — since 130 is not a perfect square, leave the answer as a surd.",
         "s": "The correct answer is \\sqrt{130}.",
         "solutionSteps": [
             {
                 "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "workingOut": "c^2 = 7^2 + 9^2 = 49 + 81 = 130",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
-                "graphData": null
-            },
-            {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = \\sqrt{130}",
+                "explanation": "Take the square root of both sides. Since 130 has no square factors, leave it as a surd.",
+                "workingOut": "c = \\sqrt{130} \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2379,22 +2379,17 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(12\\)",
             "\\(25\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The hypotenuse (14 cm) is given, so subtract the square of the known shorter side (6 cm) from the square of the hypotenuse — since 160 is not a perfect square, leave the answer as a surd.",
         "s": "The correct answer is \\sqrt{160}.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for a shorter side.",
-                "workingOut": "a = \\sqrt{c^2 - b^2} \\quad \\text{(where c is the hypotenuse)}",
+                "explanation": "Write down the Pythagoras formula for a shorter side, rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "a^2 = 14^2 - 6^2 = 196 - 36 = 160",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the hypotenuse and the given side length, then square them.",
-                "workingOut": "a = \\sqrt{\\text{hypotenuse}^2 - \\text{side}^2}",
-                "graphData": null
-            },
-            {
-                "explanation": "Subtract the squares and calculate the square root.",
-                "workingOut": "a = \\sqrt{160}",
+                "explanation": "Take the square root of both sides. Since 160 has no square factors that make it simplify to an integer, leave it as a surd.",
+                "workingOut": "a = \\sqrt{160} \\text{ cm}",
                 "graphData": null
             }
         ]
@@ -2413,22 +2408,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(2.608\\)",
             "\\(3.86\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The diagonal is the hypotenuse of a right-angled triangle with the width (1.4 m) and height (2.2 m) as the two shorter sides.",
         "s": "The correct answer is 2.608.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the diagonal (hypotenuse) c.",
+                "workingOut": "c^2 = 1.4^2 + 2.2^2 = 1.96 + 4.84 = 6.8",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root of both sides.",
+                "workingOut": "c = \\sqrt{6.8} = 2.60768\\ldots \\text{ m}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 2.608",
+                "explanation": "Round to 3 decimal places.",
+                "workingOut": "c \\approx 2.608 \\text{ m}",
                 "graphData": null
             }
         ]
@@ -2447,22 +2442,22 @@ export const SURDS_QUESTIONS_Y11A = [
             "\\(1.45\\)",
             "\\(2.2\\)"
         ],
-        "h": "Identify if you are finding the hypotenuse (longest side, use addition: c = sqrt(a^2 + b^2)) or a shorter side (use subtraction: a = sqrt(c^2 - b^2)).",
+        "h": "The ladder (5 m) is the hypotenuse. The height up the wall (4.5 m) is one shorter side, and the distance from the wall is the unknown shorter side — subtract to find it.",
         "s": "The correct answer is 2.2.",
         "solutionSteps": [
             {
-                "explanation": "Write down the Pythagoras formula for the hypotenuse.",
-                "workingOut": "c = \\sqrt{a^2 + b^2}",
+                "explanation": "Write down the Pythagoras formula for the unknown shorter side (distance from the wall), rearranged from c^2 = a^2 + b^2.",
+                "workingOut": "d^2 = 5^2 - 4.5^2 = 25 - 20.25 = 4.75",
                 "graphData": null
             },
             {
-                "explanation": "Substitute the given shorter side lengths and calculate their squares.",
-                "workingOut": "c = \\sqrt{\\text{side1}^2 + \\text{side2}^2}",
+                "explanation": "Take the square root of both sides.",
+                "workingOut": "d = \\sqrt{4.75} = 2.17944\\ldots \\text{ m}",
                 "graphData": null
             },
             {
-                "explanation": "Find the sum of the squares and calculate the square root.",
-                "workingOut": "c = 2.2",
+                "explanation": "Round to 1 decimal place.",
+                "workingOut": "d \\approx 2.2 \\text{ m}",
                 "graphData": null
             }
         ]
