@@ -1158,7 +1158,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2^{4 \\times 5^{3",
+        "text": "2^3 \\times 5^3",
         "imageUrl": ""
       },
       {
@@ -1281,7 +1281,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "5^{4 \\times 3^2",
+        "text": "5^3 \\times 3^2",
         "imageUrl": ""
       },
       {
@@ -3305,7 +3305,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2^{3 \\times 3 \\times 5^{2",
+        "text": "2^2 \\times 3^2 \\times 5^2",
         "imageUrl": ""
       },
       {
@@ -3498,7 +3498,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2^{6 \\times 5^{3",
+        "text": "2^5 \\times 5^3",
         "imageUrl": ""
       }
     ],
@@ -3626,7 +3626,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "3^4 \\times 5^{2",
+        "text": "3^3 \\times 5^2",
         "imageUrl": ""
       }
     ],
@@ -3660,7 +3660,7 @@ export const Y7_CH2J_QUESTIONS = [
     "question": "Express 2888 as a product of prime factors. Use index notation where appropriate.",
     "opts": [
       {
-        "text": "2^{3 \\times 19^2",
+        "text": "2^2 \\times 19^2",
         "imageUrl": ""
       },
       {
