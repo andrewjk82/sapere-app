@@ -1167,32 +1167,70 @@ export const SURDS_QUESTIONS_Y11A = [
         ]
     },
     {
-        "id": "y9-2a-11",
+        "id": "y9-2a-11a",
         "c": "2A",
         "t": "Pythagoras' Theorem",
-        "type": "teacher_review",
+        "type": "multiple_choice",
         "difficulty": "medium",
-        "q": "As part of a design, an artist draws a circle passing through the four corners (vertices) of a square.\n\na) If the square has side lengths of 6 cm, what is the radius, to the nearest millimetre, of the circle?\nb) If the circle has a radius of 5 cm, what are the side lengths, to the nearest millimetre, of the square?",
-        "a": "a) 42 mm, b) 71 mm",
-        "opts": [],
-        "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
-        "s": "",
+        "q": "As part of a design, an artist draws a circle passing through the four corners (vertices) of a square.\n\nIf the square has side lengths of 6 cm, what is the radius, to the nearest millimetre, of the circle?",
+        "a": 2,
+        "opts": [
+            "\\(38 mm\\)",
+            "\\(45 mm\\)",
+            "\\(42 mm\\)",
+            "\\(40 mm\\)"
+        ],
+        "h": "The diagonal of the square is the diameter of the circle. Calculate the diagonal first.",
+        "s": "The correct answer is 42 mm.",
         "solutionSteps": [
             {
-                "explanation": "a) The diagonal of the square is the diameter of the circle.",
-                "workingOut": "\\text{Diagonal} = \\sqrt{6^2 + 6^2} = \\sqrt{72} \\approx 8.485 \\text{ cm}"
+                "explanation": "Calculate the diagonal of the square using Pythagoras' theorem.",
+                "workingOut": "\\text{Diagonal} = \\sqrt{6^2 + 6^2} = \\sqrt{72} \\approx 8.485 \\text{ cm}",
+                "graphData": null
             },
             {
-                "explanation": "Find the radius (half the diameter).",
-                "workingOut": "\\text{Radius} = 8.485 / 2 = 4.243 \\text{ cm} = 42 \\text{ mm}"
+                "explanation": "The radius of the circle is half of the diagonal (diameter).",
+                "workingOut": "\\text{Radius} = 8.485 / 2 = 4.243 \\text{ cm} = 42.43 \\text{ mm}",
+                "graphData": null
             },
             {
-                "explanation": "b) If radius is 5 cm, diameter is 10 cm. Let the side be $s$.",
-                "workingOut": "s^2 + s^2 = 10^2 \\Rightarrow 2s^2 = 100 \\Rightarrow s^2 = 50"
+                "explanation": "Round the result to the nearest millimetre.",
+                "workingOut": "42.43 \\text{ mm} \\approx 42 \\text{ mm}",
+                "graphData": null
+            }
+        ]
+    },
+    {
+        "id": "y9-2a-11b",
+        "c": "2A",
+        "t": "Pythagoras' Theorem",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "q": "As part of a design, an artist draws a circle passing through the four corners (vertices) of a square.\n\nIf the circle has a radius of 5 cm, what are the side lengths, to the nearest millimetre, of the square?",
+        "a": 1,
+        "opts": [
+            "\\(68 mm\\)",
+            "\\(71 mm\\)",
+            "\\(65 mm\\)",
+            "\\(75 mm\\)"
+        ],
+        "h": "The diagonal of the square is the diameter of the circle. If the radius is 5 cm, the diagonal is 10 cm.",
+        "s": "The correct answer is 71 mm.",
+        "solutionSteps": [
+            {
+                "explanation": "Determine the diagonal of the square.",
+                "workingOut": "\\text{Diagonal} = 2 \\times 5 = 10 \\text{ cm}",
+                "graphData": null
             },
             {
-                "explanation": "Take the square root to find the side length.",
-                "workingOut": "s = \\sqrt{50} \\approx 7.071 \\text{ cm} = 71 \\text{ mm}"
+                "explanation": "Set up the Pythagoras formula for the square sides (s).",
+                "workingOut": "s^2 + s^2 = 10^2 \\Rightarrow 2s^2 = 100 \\Rightarrow s^2 = 50",
+                "graphData": null
+            },
+            {
+                "explanation": "Solve for s and round to the nearest millimetre.",
+                "workingOut": "s = \\sqrt{50} \\approx 7.071 \\text{ cm} = 70.71 \\text{ mm} \\approx 71 \\text{ mm}",
+                "graphData": null
             }
         ]
     },
@@ -1299,44 +1337,99 @@ export const SURDS_QUESTIONS_Y11A = [
         ]
     },
     {
-        "id": "y9-2a-15",
+        "id": "y9-2a-15a",
         "c": "2A",
         "t": "Pythagoras' Theorem",
-        "type": "teacher_review",
-        "difficulty": "hard",
-        "q": "In triangle $PQR$, the angle at $Q$ is a right angle. The line $QS$ is drawn perpendicular to $PR$. $h$ is the length of $QS$ and $x$ is the length of $RS$. Given $PQ = 15$ and $QR = 8$:\n\na) Show that the length of $PR$ is 17.\nb) Find the area of triangle $PQR$ in two ways to show that $17h = 120$.\nc) Use Pythagoras' theorem to find $x$.",
-        "a": "a) $15^2 + 8^2 = 17^2$, b) Area is 60. $0.5 \\times 17 \\times h = 60$, c) $x \\approx 3.76$",
-        "opts": [],
-        "h": "Use Pythagoras' theorem $a^2 + b^2 = c^2$.",
-        "s": "",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "q": "In triangle $PQR$, the angle at $Q$ is a right angle. The line $QS$ is drawn perpendicular to $PR$. Given $PQ = 15$ and $QR = 8$:\n\nFind the length of $PR$.",
+        "a": 0,
+        "opts": [
+            "\\(17\\)",
+            "\\(18\\)",
+            "\\(16\\)",
+            "\\(19\\)"
+        ],
+        "h": "Use Pythagoras' theorem on the right-angled triangle PQR: PR = sqrt(PQ^2 + QR^2).",
+        "s": "The correct answer is 17.",
         "solutionSteps": [
             {
-                "explanation": "a) Use Pythagoras in $\\triangle PQR$.",
-                "workingOut": "PR^2 = 15^2 + 8^2 = 225 + 64 = 289 \\Rightarrow PR = 17"
+                "explanation": "Apply Pythagoras' theorem to find the hypotenuse PR.",
+                "workingOut": "PR^2 = PQ^2 + QR^2 = 15^2 + 8^2 = 225 + 64 = 289",
+                "graphData": null
             },
             {
-                "explanation": "b) Calculate the area using legs $PQ$ and $QR$.",
-                "workingOut": "\\text{Area} = \\frac{1}{2} \\times 15 \\times 8 = 60"
+                "explanation": "Calculate the square root of 289.",
+                "workingOut": "PR = \\sqrt{289} = 17",
+                "graphData": null
+            }
+        ]
+    },
+    {
+        "id": "y9-2a-15b",
+        "c": "2A",
+        "t": "Pythagoras' Theorem",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "q": "In triangle $PQR$, the angle at $Q$ is a right angle. The line $QS$ is drawn perpendicular to $PR$. $h$ is the length of $QS$.\nGiven $PQ = 15$ and $QR = 8$:\n\nFind the value of $h$ to 2 decimal places.",
+        "a": 1,
+        "opts": [
+            "\\(7.12\\)",
+            "\\(7.06\\)",
+            "\\(7.25\\)",
+            "\\(6.85\\)"
+        ],
+        "h": "Express the area of triangle PQR in two ways: using bases PQ and base PR.",
+        "s": "The correct answer is 7.06.",
+        "solutionSteps": [
+            {
+                "explanation": "Calculate the area using the shorter sides (PQ and QR).",
+                "workingOut": "\\text{Area} = \\frac{1}{2} \\times PQ \\times QR = \\frac{1}{2} \\times 15 \\times 8 = 60",
+                "graphData": null
             },
             {
-                "explanation": "Calculate the area using base $PR$ and height $QS$.",
-                "workingOut": "\\text{Area} = \\frac{1}{2} \\times 17 \\times h = 8.5h"
+                "explanation": "Express the area using base PR and height QS (h).",
+                "workingOut": "\\text{Area} = \\frac{1}{2} \\times PR \\times h = \\frac{1}{2} \\times 17 \\times h = 8.5h",
+                "graphData": null
             },
             {
-                "explanation": "Equate the two areas.",
-                "workingOut": "8.5h = 60 \\Rightarrow 17h = 120"
+                "explanation": "Equate the two areas and solve for h.",
+                "workingOut": "8.5h = 60 \\Rightarrow h = \\frac{60}{8.5} = \\frac{120}{17} \\approx 7.0588 \\approx 7.06",
+                "graphData": null
+            }
+        ]
+    },
+    {
+        "id": "y9-2a-15c",
+        "c": "2A",
+        "t": "Pythagoras' Theorem",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "q": "In triangle $PQR$, the angle at $Q$ is a right angle. The line $QS$ is drawn perpendicular to $PR$. $x$ is the length of $RS$.\nGiven $PQ = 15$ and $QR = 8$:\n\nUse Pythagoras' theorem to find $x$ to 2 decimal places.",
+        "a": 0,
+        "opts": [
+            "\\(3.76\\)",
+            "\\(3.54\\)",
+            "\\(3.95\\)",
+            "\\(3.82\\)"
+        ],
+        "h": "Use Pythagoras' theorem in right-angled triangle QSR: x = sqrt(QR^2 - h^2).",
+        "s": "The correct answer is 3.76.",
+        "solutionSteps": [
+            {
+                "explanation": "Set up the Pythagoras formula in triangle QSR to find side RS (x).",
+                "workingOut": "x^2 + h^2 = QR^2 \\Rightarrow x^2 + \\left(\\frac{120}{17}\\right)^2 = 8^2",
+                "graphData": null
             },
             {
-                "explanation": "c) First, find $h$.",
-                "workingOut": "h = 120 / 17"
+                "explanation": "Solve for x^2.",
+                "workingOut": "x^2 = 64 - \\frac{14400}{289} = \\frac{18496 - 14400}{289} = \\frac{4096}{289}",
+                "graphData": null
             },
             {
-                "explanation": "Use Pythagoras in $\\triangle QSR$ to find $x$.",
-                "workingOut": "x^2 + h^2 = 8^2 \\Rightarrow x^2 + \\left(\\frac{120}{17}\\right)^2 = 64"
-            },
-            {
-                "explanation": "Solve for $x$.",
-                "workingOut": "x^2 = 64 - \\frac{14400}{289} = \\frac{18496 - 14400}{289} = \\frac{4096}{289} \\Rightarrow x = \\frac{64}{17} \\approx 3.76"
+                "explanation": "Calculate the square root and round to 2 decimal places.",
+                "workingOut": "x = \\frac{64}{17} \\approx 3.7647 \\approx 3.76",
+                "graphData": null
             }
         ]
     },
