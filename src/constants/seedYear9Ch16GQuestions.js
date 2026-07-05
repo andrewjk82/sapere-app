@@ -1846,7 +1846,7 @@ export const Y9_CH16G_QUESTIONS = [
     graphData: {
       jsxGraph: {
         id: 'y9-16g-q10-board',
-        boundingbox: [-6, 7, 6, -7],
+        boundingbox: [-8, 7, 7, -7],
         keepaspectratio: true,
         elements: [
           // Bottom ellipse front curve (solid)
@@ -1888,11 +1888,11 @@ export const Y9_CH16G_QUESTIONS = [
           { type: 'segment', from: 'O1', to: 'R1', color: 'red', dash: 2 },
           { type: 'text', coords: [1.5, 4.5], content: '5 cm' },
           
-          { type: 'point', id: 'H1', coords: [-5, 4], visible: false },
-          { type: 'point', id: 'H2', coords: [-5, -4], visible: false },
+          { type: 'point', id: 'H1', coords: [-5.2, 4], visible: false },
+          { type: 'point', id: 'H2', coords: [-5.2, -4], visible: false },
           { type: 'segment', from: 'H1', to: 'H2', color: 'red', dash: 2 },
           { type: 'arrow', from: 'H1', to: 'H2', bidirectional: true, color: 'red' },
-          { type: 'text', coords: [-6.2, 0], content: '10 cm' }
+          { type: 'text', coords: [-7.2, 0], content: '10 cm' }
         ]
       }
     },
