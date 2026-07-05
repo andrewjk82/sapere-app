@@ -1206,6 +1206,14 @@ export const Y7_CH2J_QUESTIONS = [
       {
         "text": "7^2",
         "imageUrl": ""
+      },
+      {
+        "text": "7^4",
+        "imageUrl": ""
+      },
+      {
+        "text": "7^{12}",
+        "imageUrl": ""
       }
     ],
     "answer": 0,
@@ -1238,6 +1246,14 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         "text": "20^2",
+        "imageUrl": ""
+      },
+      {
+        "text": "20^3",
+        "imageUrl": ""
+      },
+      {
+        "text": "4^{20}",
         "imageUrl": ""
       }
     ],
@@ -3176,7 +3192,11 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2^{8",
+        "text": "2^6",
+        "imageUrl": ""
+      },
+      {
+        "text": "4^4",
         "imageUrl": ""
       }
     ],
@@ -3200,11 +3220,19 @@ export const Y7_CH2J_QUESTIONS = [
     "question": "Express 2048 as a product of prime factors. Use index notation where appropriate.",
     "opts": [
       {
-        "text": "2^{{11}",
+        "text": "2^{10}",
         "imageUrl": ""
       },
       {
         "text": "2^{11}",
+        "imageUrl": ""
+      },
+      {
+        "text": "2^{12}",
+        "imageUrl": ""
+      },
+      {
+        "text": "4^5 \\times 2",
         "imageUrl": ""
       }
     ],
@@ -3237,6 +3265,10 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         "text": "7^3",
+        "imageUrl": ""
+      },
+      {
+        "text": "3 \\times 7^2",
         "imageUrl": ""
       }
     ],
@@ -3316,6 +3348,10 @@ export const Y7_CH2J_QUESTIONS = [
       {
         "text": "2 \\times 7 \\times 11 \\times 13",
         "imageUrl": ""
+      },
+      {
+        "text": "2^2 \\times 7 \\times 11 \\times 13",
+        "imageUrl": ""
       }
     ],
     "answer": 2,
@@ -3357,6 +3393,10 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         "text": "2 + 7 \\times 11 \\times 13 \\times 17",
+        "imageUrl": ""
+      },
+      {
+        "text": "2^2 \\times 7 \\times 11 \\times 13 \\times 17",
         "imageUrl": ""
       }
     ],
@@ -3404,6 +3444,10 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         "text": "2 + 7 \\times 11 \\times 13 \\times 19",
+        "imageUrl": ""
+      },
+      {
+        "text": "2 \\times 7^2 \\times 11 \\times 13 \\times 19",
         "imageUrl": ""
       }
     ],
@@ -3492,11 +3536,15 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "2^{{11} \\times 5",
+        "text": "2^{10} \\times 5^2",
         "imageUrl": ""
       },
       {
         "text": "2^{11} \\times 5",
+        "imageUrl": ""
+      },
+      {
+        "text": "2^{12} \\times 5",
         "imageUrl": ""
       }
     ],
@@ -3535,6 +3583,14 @@ export const Y7_CH2J_QUESTIONS = [
       },
       {
         "text": "3^2",
+        "imageUrl": ""
+      },
+      {
+        "text": "3^5",
+        "imageUrl": ""
+      },
+      {
+        "text": "9^3",
         "imageUrl": ""
       }
     ],
