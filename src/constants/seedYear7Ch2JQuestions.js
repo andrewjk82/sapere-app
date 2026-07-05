@@ -4423,23 +4423,23 @@ export const Y7_CH2J_QUESTIONS = [
     "question": "Find three non-zero cubes that sum to 43. Write the expression in the format \\(a^3 + b^3 + c^3\\) with \\(a \\ge b \\ge c\\).",
     "opts": [
       {
+        "text": "\\(3^3 + 2^3 + 1^3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3^3 + 3^3 + 1^3\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(3^3 + 2^3 + 2^3\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(6\\)",
+        "text": "\\(2^3 + 2^3 + 2^3\\)",
         "imageUrl": ""
       }
     ],
-    "answer": 0,
+    "answer": 2,
     "hint": "Cubes to consider: 1, 8, 27. Try combinations of these numbers.",
     "solution": "The correct answer is 3^3 + 2^3 + 2^3.",
     "solutionSteps": [
