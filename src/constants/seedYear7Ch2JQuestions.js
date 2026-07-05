@@ -3268,7 +3268,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "3 \\times 7^2",
+        "text": "7^5",
         "imageUrl": ""
       }
     ],
