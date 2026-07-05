@@ -1212,7 +1212,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "7^{12}",
+        "text": "7^6",
         "imageUrl": ""
       }
     ],
@@ -1253,7 +1253,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "4^{20}",
+        "text": "20^5",
         "imageUrl": ""
       }
     ],
@@ -3196,7 +3196,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "4^4",
+        "text": "2^7",
         "imageUrl": ""
       }
     ],
@@ -3232,7 +3232,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "4^5 \\times 2",
+        "text": "2^9",
         "imageUrl": ""
       }
     ],
@@ -3590,7 +3590,7 @@ export const Y7_CH2J_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "9^3",
+        "text": "3^7",
         "imageUrl": ""
       }
     ],
