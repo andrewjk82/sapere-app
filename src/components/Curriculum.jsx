@@ -130,6 +130,39 @@ const Curriculum = () => {
   // Chapter card click navigates to a topics list page (not a modal); choosing
   // a topic opens the student-style question bank page for that topic.
   const [selectedChapterForQuestions, setSelectedChapterForQuestions] = useState(null);
+  const [viewedIds, setViewedIds] = useState(() => {
+    try {
+      const saved = localStorage.getItem('sapere_viewed_questions');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
+  const [newUnreadQuestions, setNewUnreadQuestions] = useState([]);
+
+  const reloadViewedIds = () => {
+    try {
+      const saved = localStorage.getItem('sapere_viewed_questions');
+      setViewedIds(saved ? JSON.parse(saved) : []);
+    } catch (e) {
+      // ignore
+    }
+  };
+
+  useEffect(() => {
+    const fetchNewQuestions = async () => {
+      try {
+        const q = query(collection(db, 'questions'), where('isNew', '==', true));
+        const snap = await getDocs(q);
+        const list = snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        setNewUnreadQuestions(list);
+      } catch (err) {
+        console.error('Failed to fetch new questions for notifications:', err);
+      }
+    };
+    fetchNewQuestions();
+  }, [db, selectedChapterForQuestions]);
+
   const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
   const [previewLesson, setPreviewLesson] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
@@ -2318,7 +2351,7 @@ const Curriculum = () => {
       <div className="app-page" style={{ padding: '24px 20px 80px', background: '#f8fafc', minHeight: '100vh' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
           <button
-            onClick={() => setSelectedChapterForQuestions(null)}
+            onClick={() => { setSelectedChapterForQuestions(null); reloadViewedIds(); }}
             style={{ alignSelf: 'flex-start', display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', background: '#fff', color: '#475569', fontWeight: 700, cursor: 'pointer' }}
           >
             ← Back to chapters
@@ -2337,36 +2370,44 @@ const Curriculum = () => {
             </div>
           ) : (
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: '16px' }}>
-              {topics.map((t, idx) => (
-                <div
-                  key={t.id || idx}
-                  style={{ borderRadius: '20px', border: '1px solid #e2e8f0', background: '#fff', display: 'flex', flexDirection: 'column', gap: '0', boxShadow: '0 4px 14px rgba(0,0,0,0.03)', overflow: 'hidden' }}
-                >
-                  <button
-                    onClick={() => setSelectedTopicForBank({ chapter: ch, topic: t })}
-                    style={{ textAlign: 'left', padding: '20px 22px', background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '8px', transition: 'background 0.15s', width: '100%' }}
-                    onMouseEnter={(e) => { e.currentTarget.style.background = '#f8f7ff'; }}
-                    onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
+              {topics.map((t, idx) => {
+                const hasUnreadInTopic = newUnreadQuestions.some(q => q.topicId === t.id && !viewedIds.includes(q.id));
+                return (
+                  <div
+                    key={t.id || idx}
+                    style={{ borderRadius: '20px', border: '1px solid #e2e8f0', background: '#fff', display: 'flex', flexDirection: 'column', gap: '0', boxShadow: '0 4px 14px rgba(0,0,0,0.03)', overflow: 'hidden' }}
                   >
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                      <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.code || `Topic ${idx + 1}`}</span>
-                      <ChevronRight size={18} color="#94a3b8" />
-                    </div>
-                    <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
-                  </button>
-                  {hasLesson(t.id) && (
                     <button
-                      onClick={() => setPreviewLesson(getLesson(t.id))}
-                      style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '9px', borderTop: '1px solid #f1f0fe', background: '#faf8ff', border: 'none', borderTop: '1px solid #ede9fe', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', letterSpacing: '0.02em', transition: 'background 0.15s', width: '100%' }}
-                      onMouseEnter={(e) => { e.currentTarget.style.background = '#f5f3ff'; }}
-                      onMouseLeave={(e) => { e.currentTarget.style.background = '#faf8ff'; }}
+                      onClick={() => setSelectedTopicForBank({ chapter: ch, topic: t })}
+                      style={{ textAlign: 'left', padding: '20px 22px', background: 'transparent', border: 'none', cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '8px', transition: 'background 0.15s', width: '100%' }}
+                      onMouseEnter={(e) => { e.currentTarget.style.background = '#f8f7ff'; }}
+                      onMouseLeave={(e) => { e.currentTarget.style.background = 'transparent'; }}
                     >
-                      <GraduationCap size={14} />
-                      Preview Lesson
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase', letterSpacing: '0.1em' }}>{t.code || `Topic ${idx + 1}`}</span>
+                          {hasUnreadInTopic && (
+                            <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#ef4444' }} title="New questions inside" />
+                          )}
+                        </div>
+                        <ChevronRight size={18} color="#94a3b8" />
+                      </div>
+                      <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#1e1b4b', lineHeight: 1.3 }}>{t.title}</div>
                     </button>
-                  )}
-                </div>
-              ))}
+                    {hasLesson(t.id) && (
+                      <button
+                        onClick={() => setPreviewLesson(getLesson(t.id))}
+                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', padding: '9px', borderTop: '1px solid #f1f0fe', background: '#faf8ff', border: 'none', borderTop: '1px solid #ede9fe', cursor: 'pointer', fontSize: '0.75rem', fontWeight: 800, color: '#7c3aed', letterSpacing: '0.02em', transition: 'background 0.15s', width: '100%' }}
+                        onMouseEnter={(e) => { e.currentTarget.style.background = '#f5f3ff'; }}
+                        onMouseLeave={(e) => { e.currentTarget.style.background = '#faf8ff'; }}
+                      >
+                        <GraduationCap size={14} />
+                        Preview Lesson
+                      </button>
+                    )}
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
@@ -3082,10 +3123,28 @@ const Curriculum = () => {
             <div className="chapters-grid" style={{ display: selectedYear === 'Past Paper' ? 'none' : undefined }}>
               {displayData.length > 0 ? displayData.map((chapter, chapterIndex) => {
                 const p = chapter.modules > 0 ? Math.round(((chapter.completed || 0) / chapter.modules) * 100) : 0;
+                const hasUnreadInChapter = newUnreadQuestions.some(q => q.chapterId === chapter.id && !viewedIds.includes(q.id));
                 return (
                   <div key={chapter.id} className="chapter-card" onClick={() => setSelectedChapterForQuestions({ ...chapter, year: selectedYear, course: selectedCourse, courses: courses })}>
                     <div className="chapter-card__head">
-                      <div className="chapter-card__icon"><BookText size={18} /></div>
+                      <div className="chapter-card__icon" style={{ position: 'relative' }}>
+                        <BookText size={18} />
+                        {hasUnreadInChapter && (
+                          <span
+                            style={{
+                              position: 'absolute',
+                              top: '-3px',
+                              right: '-3px',
+                              width: '8px',
+                              height: '8px',
+                              borderRadius: '50%',
+                              background: '#ef4444',
+                              border: '1.5px solid #fff'
+                            }}
+                            title="New questions inside"
+                          />
+                        )}
+                      </div>
                       <div className="chapter-card__edits">
                         <button className="chapter-card__edit-btn" onClick={(e) => { e.stopPropagation(); setEditingChapter({ mode: 'edit', chapter }); }}><Edit2 size={13} /></button>
                         <button className="chapter-card__edit-btn chapter-card__delete-btn" onClick={(e) => { e.stopPropagation(); handleDeleteChapter(chapter.id); }}><Trash2 size={13} /></button>

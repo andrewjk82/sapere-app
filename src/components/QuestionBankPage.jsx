@@ -160,6 +160,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   // a stale index. We drop these from the visible list so the bank never gets
   // stuck on "Loading question details..." for a pointer that can't resolve.
   const [deadIds, setDeadIds] = useState(() => new Set());
+  const [viewedIds, setViewedIds] = useState(() => {
+    try {
+      const saved = localStorage.getItem('sapere_viewed_questions');
+      return saved ? JSON.parse(saved) : [];
+    } catch (e) {
+      return [];
+    }
+  });
 
   const reload = useCallback(async () => {
     setLoading(true);
@@ -203,23 +211,23 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
           ids = docs.map(q => q.id);
         }
 
-        // Filter by topic if selected (most topic questions have the topic ID in their own ID)
+        // Filter by topic if selected. The chapter index can be PARTIALLY
+        // stale for a topic (e.g. an admin script re-imported questions
+        // without rebuilding question_index) — and a partial prefix match
+        // here would silently hide the rest of the topic. So the topicId
+        // query is always the ground truth, unioned with prefix matches to
+        // keep questions whose doc lacks a topicId field but carries the
+        // topic in its id.
         if (topic?.id) {
-          // We can also fetch the topic's documents if needed, but filtering by prefix is extremely fast and robust for seed files.
-          // To be safe, if we don't find enough matches, we fallback to querying.
-          let filteredIds = ids.filter(id => id.startsWith(topic.id) || id.toLowerCase().includes(topic.id.toLowerCase()));
-          if (filteredIds.length === 0) {
-            const snap = await getDocs(
-              query(collection(db, 'questions'), where('topicId', '==', topic.id))
-            );
-            const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
-            docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
-            const fetched = {};
-            docs.forEach(q => { fetched[q.id] = q; });
-            setLoadedQuestions(prev => ({ ...prev, ...fetched }));
-            filteredIds = docs.map(q => q.id);
-          }
-          ids = filteredIds;
+          const prefixIds = ids.filter(id => id.startsWith(topic.id) || id.toLowerCase().includes(topic.id.toLowerCase()));
+          const snap = await getDocs(
+            query(collection(db, 'questions'), where('topicId', '==', topic.id))
+          );
+          const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
+          const fetched = {};
+          docs.forEach(q => { fetched[q.id] = q; });
+          setLoadedQuestions(prev => ({ ...prev, ...fetched }));
+          ids = [...new Set([...prefixIds, ...docs.map(q => q.id)])];
         }
       }
 
@@ -267,6 +275,18 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   }, [chapter.id, topic?.id, showToast]);
 
   useEffect(() => { reload(); }, [reload]);
+
+  useEffect(() => {
+    const visibleIds = questionIds.filter(id => !deadIds.has(id));
+    if (visibleIds.length > 0 && currentIdx < visibleIds.length) {
+      const qId = visibleIds[currentIdx];
+      if (qId && !viewedIds.includes(qId)) {
+        const nextViewed = [...viewedIds, qId];
+        setViewedIds(nextViewed);
+        localStorage.setItem('sapere_viewed_questions', JSON.stringify(nextViewed));
+      }
+    }
+  }, [currentIdx, questionIds, deadIds, viewedIds]);
 
   // Load question docs on demand around currentIdx (active + next 10 + prev 5 for caching)
   useEffect(() => {
@@ -484,22 +504,38 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     : difficulty === 'hard'
                       ? '#fca5a5'
                       : '#fed7aa'; // medium
+                const isNewAndUnread = item?.isNew && !viewedIds.includes(item.id);
                 return (
-                  <button
-                    key={item.id || i}
-                    onClick={() => { setCurrentIdx(i); setShowHint(false); setPreviewAnswer(''); }}
-                    style={{
-                      width: isActive ? '24px' : '10px',
-                      height: '10px',
-                      borderRadius: '999px',
-                      background: dotColor,
-                      border: 'none',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease',
-                      padding: 0,
-                    }}
-                    title={`Question ${i + 1} (${difficulty})`}
-                  />
+                  <div key={item.id || i} style={{ position: 'relative', display: 'inline-block' }}>
+                    <button
+                      onClick={() => { setCurrentIdx(i); setShowHint(false); setPreviewAnswer(''); }}
+                      style={{
+                        width: isActive ? '24px' : '10px',
+                        height: '10px',
+                        borderRadius: '999px',
+                        background: dotColor,
+                        border: 'none',
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease',
+                        padding: 0,
+                      }}
+                      title={`Question ${i + 1} (${difficulty})${item.isNew ? ' [NEW]' : ''}`}
+                    />
+                    {isNewAndUnread && (
+                      <span
+                        style={{
+                          position: 'absolute',
+                          top: '-4px',
+                          right: '-4px',
+                          width: '6px',
+                          height: '6px',
+                          borderRadius: '50%',
+                          background: '#ef4444',
+                          border: '1px solid #fff',
+                        }}
+                      />
+                    )}
+                  </div>
                 );
               })}
             </div>
@@ -511,9 +547,17 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               ) : (
                 <>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', gap: '8px' }}>
-                    <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
-                      {q?.difficulty || 'medium'} · {q?.type?.replace('_', ' ') || 'question'}
-                    </span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '0.7rem', fontWeight: 800, background: '#e0e7ff', color: '#6366f1', padding: '4px 10px', borderRadius: '8px', textTransform: 'uppercase' }}>
+                        {q?.difficulty || 'medium'} · {q?.type?.replace('_', ' ') || 'question'}
+                      </span>
+                      {q?.isNew && !viewedIds.includes(q.id) && (
+                        <span style={{ fontSize: '0.65rem', fontWeight: 900, background: '#ef4444', color: '#fff', padding: '3px 8px', borderRadius: '6px', textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                          <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#fff' }} />
+                          New
+                        </span>
+                      )}
+                    </div>
                     {q?.hint && (
                       <button
                         onClick={() => setShowHint((v) => !v)}
