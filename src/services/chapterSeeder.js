@@ -196,6 +196,7 @@ const mapSeedQuestion = (raw, chapter) => {
     blanks: Array.isArray(raw.blanks) ? raw.blanks : [],
     graphData: raw.graphData || null,
     examPaper: raw.examPaper || chapter.examPaper || '',
+    isNew: raw.isNew || false,
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   };

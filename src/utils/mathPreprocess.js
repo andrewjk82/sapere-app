@@ -128,25 +128,26 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   str = str.replace(/÷/g, '\\div');
   // Fix unrecognized \Colon macro from MathLive/DB
   str = str.replace(/\\Colon\b/g, '\\colon');
+  // Replace \hexagon with \text{⬡} so KaTeX renders it as a white hexagon
+  str = str.replace(/\\hexagon\b/g, '\\\\text{⬡}');
   // Fix a bad-data artifact: SVG diagram labels sometimes contain "60^°"
   // (a stray caret before the degree sign). It is never valid, so drop it.
   str = str.replace(/\^\s*°/g, '°');
 
-  // 1b. Rich HTML content (e.g. a solution with <p>/<strong>/<br>) must NOT
-  // go through the math-string transforms below — they corrupt the markup.
-  // Return as-is after symbol substitution; KaTeX still renders any $...$.
-  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6]|svg)>|<br\s*\/?>/i.test(str)) {
-    return str;
-  }
-
-
   // 2. Safety catches for broken data imports (Double backslashes & excessive dollars)
   // Replaces \\ with \ unless it's a structural newline like \\n
-  str = str.replace(/\\\\([a-zA-Z0-9])/g, '\\$1');
+  str = str.replace(/\\\\([a-zA-Z0-9\$\{\}])/g, '\\$1');
   // Also clean up double backslashes before parenthesis / brackets for KaTeX delimiters
   str = str.replace(/\\\\([\(\)\[\]])/g, '\\$1');
   // Fix weird triple dollars that sometimes happen in LLM data
   str = str.replace(/\$\$\$/g, '$$');
+
+  // 1b. Rich HTML content (e.g. a solution with <p>/<strong>/<br>) must NOT
+  // go through the math-string transforms below — they corrupt the markup.
+  // Return as-is after symbol substitution; KaTeX still renders any $...$.
+  if (/<\/(p|div|ul|ol|li|strong|em|h[1-6]|svg|table|thead|tbody|tr|th|td)>|<br\s*\/?>/i.test(str)) {
+    return str;
+  }
 
   // 3. Fix surd syntax: \sqrt18 -> \sqrt{18}
   str = str.replace(/\\sqrt(\d+)/g, '\\sqrt{$1}');

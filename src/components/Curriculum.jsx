@@ -19,9 +19,14 @@ import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
 import { WHOLE_NUMBER_QUESTIONS_Y6 } from '../constants/seedYear6WholeNumberQuestions.js';
 import { FRACTION_QUESTIONS_Y6 } from '../constants/seedYear6FractionsQuestions.js';
+import { DECIMALS_QUESTIONS_Y6 } from '../constants/seedYear6DecimalsQuestions.js';
 import { CH5_QUESTIONS_Y11A, Y11_CH5_QUESTIONS } from '../constants/seedYear11Ch5Questions.js';
 import { Y9_CH2A_QUESTIONS } from '../constants/seedSurdsQuestions.js';
 import { Y9_CH3A_QUESTIONS } from '../constants/seedYear9Ch3Questions.js';
+import { Y9_CH3B_QUESTIONS } from '../constants/seedYear9Ch3BQuestions.js';
+import { Y10_CH3A_QUESTIONS } from '../constants/seedYear10Ch3AQuestions.js';
+import { Y10_CH3B_QUESTIONS } from '../constants/seedYear10Ch3BQuestions.js';
+import { Y10_CH3C_QUESTIONS } from '../constants/seedYear10Ch3CQuestions.js';
 import { Y9_CH4A_QUESTIONS } from '../constants/seedYear9Ch4Questions.js';
 import { Y9_CH5A_QUESTIONS } from '../constants/seedYear9Ch5Questions.js';
 import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
@@ -960,6 +965,124 @@ const Curriculum = () => {
     }
   };
 
+  const handleSeedDecimalsQuestions = async () => {
+    if (!window.confirm("This will replace and update all Year 6 Decimals questions across representing numbers, additive, and multiplicative relations. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp } = await import('firebase/firestore');
+      
+      // 1. Ensure curriculum chapters exist in curriculum/Year_6
+      const curDocRef = doc(db, 'curriculum', 'Year_6');
+      const curSnap = await getDoc(curDocRef);
+      let chapters = [];
+      if (curSnap.exists()) {
+        chapters = curSnap.data().chapters || [];
+      }
+      
+      const y6Data = CURRICULUM_DATA['Year 6'] || [];
+      const decimalsChapters = y6Data.filter(c => ['y6-rn', 'y6-ar', 'y6-mr'].includes(c.id));
+      
+      decimalsChapters.forEach(ch => {
+        if (!chapters.some(existing => existing.id === ch.id)) {
+          chapters.push(ch);
+        }
+      });
+
+      await setDoc(curDocRef, {
+        id: 'Year_6',
+        year: 'Year 6',
+        course: null,
+        chapters,
+        updatedAt: new Date().toISOString()
+      }, { merge: true });
+      
+      const metaRef = doc(db, 'sync_meta', 'curriculum');
+      await setDoc(metaRef, { 
+        version: Date.now(),
+        lastUpdated: serverTimestamp() 
+      }, { merge: true });
+
+      // Clear local cache for curriculum
+      localCache.remove(CURRICULUM_CACHE_KEY);
+
+      // Update local state directly so it re-renders immediately
+      setCurriculumRecords(prev => {
+        const index = prev.findIndex(r => r.id === 'Year_6');
+        if (index >= 0) {
+          const updated = [...prev];
+          updated[index] = { ...updated[index], chapters, updatedAt: new Date().toISOString() };
+          return updated;
+        } else {
+          return [...prev, { id: 'Year_6', year: 'Year 6', course: null, chapters, updatedAt: new Date().toISOString() }];
+        }
+      });
+
+      // 2. Upload the decimals questions
+      const collRef = collection(db, 'questions');
+      const addBatch = writeBatch(db);
+      const version = Date.now();
+      
+      DECIMALS_QUESTIONS_Y6.forEach(qData => {
+        const docRef = doc(collRef, qData.id);
+        
+        let optionsField = qData.options || [];
+        let answerField = String(qData.answer);
+        
+        addBatch.set(docRef, {
+          chapterId: qData.chapterId,
+          chapterTitle: qData.chapterId === 'y6-rn' ? 'Chapter 3: Represents Numbers (B)' :
+                        qData.chapterId === 'y6-ar' ? 'Chapter 4: Additive Relations (B)' :
+                        'Chapter 5: Multiplicative Relations (B)',
+          topicId: qData.topicId,
+          topicCode: qData.topicId === 'y6-rn-2' ? 'MA3-RN-01' :
+                     qData.topicId === 'y6-ar-2' ? 'MA3-AR-01' :
+                     'MA3-MR-01',
+          topicTitle: qData.topicId === 'y6-rn-2' ? 'Fractions, decimals, percentages' :
+                      qData.topicId === 'y6-ar-2' ? 'Add and subtract decimals' :
+                      'Multiply and divide decimals',
+          isManual: true,
+          title: qData.question.replace(/\\\\\(|\\\\\)/g, '').slice(0, 30) + '...',
+          question: qData.question,
+          difficulty: qData.difficulty || 'easy',
+          timeLimit: 120,
+          type: qData.type,
+          options: optionsField,
+          answer: answerField,
+          hint: qData.hint || "",
+          solution: "",
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+          bankVersion: version
+        }, { merge: true });
+      });
+      
+      await addBatch.commit();
+      
+      // 3. Rebuild indexes
+      const { rebuildChapterIndex } = await import('../services/questionIndexService');
+      await rebuildChapterIndex('y6-rn');
+      await rebuildChapterIndex('y6-ar');
+      await rebuildChapterIndex('y6-mr');
+      
+      showToast(`Successfully updated ${DECIMALS_QUESTIONS_Y6.length} Decimal questions and synced curriculum!`, 'success');
+      
+      // Re-trigger global question count loading
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        // Force refresh all counts
+        cached.counts['y6-dec'] = DECIMALS_QUESTIONS_Y6.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts(cached.counts);
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Decimal questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
   const handleSeedY11Ch5Questions = async () => {
     if (!window.confirm("This will replace all existing questions for Year 11 Advanced Chapter 5 with the latest questions. Continue?")) return;
     setIsMigrating(true);
@@ -1263,6 +1386,261 @@ const Curriculum = () => {
     } catch (err) {
       console.error(err);
       showToast("Failed to seed Year 9 Ch3 questions.", 'error');
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY9Ch3BQuestions = async () => {
+    if (!window.confirm("This will seed all Year 9 Chapter 3B (Using percentages) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y9-3b questions
+      const q = query(collRef, where('topicId', '==', 'y9-3b'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y9_CH3B_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y9-3',
+          chapterTitle: "Chapter 3: Consumer arithmetic",
+          topicId: 'y9-3b',
+          topicCode: '3B',
+          topicTitle: qData.t || "Using percentages",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y9_CH3B_QUESTIONS.length} Year 9 Ch3B questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y9-3'] = (cached.counts['y9-3'] || 0) + Y9_CH3B_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY10Ch3AQuestions = async () => {
+    if (!window.confirm("This will seed all Year 10 Chapter 3A (Expanding brackets and collecting like terms) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y10-3a questions
+      const q = query(collRef, where('topicId', '==', 'y10-3a'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y10_CH3A_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y10-3',
+          chapterTitle: "Chapter 3: Algebra review",
+          topicId: 'y10-3a',
+          topicCode: '3A',
+          topicTitle: qData.t || "Expanding brackets and collecting like terms",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y10_CH3A_QUESTIONS.length} Year 10 Ch3A questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y10-3'] = (cached.counts['y10-3'] || 0) + Y10_CH3A_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY10Ch3BQuestions = async () => {
+    if (!window.confirm("This will seed all Year 10 Chapter 3B (Solving linear equations and inequalities) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y10-3b questions
+      const q = query(collRef, where('topicId', '==', 'y10-3b'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y10_CH3B_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y10-3',
+          chapterTitle: "Chapter 3: Algebra review",
+          topicId: 'y10-3b',
+          topicCode: '3B',
+          topicTitle: qData.t || "Solving linear equations and inequalities",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y10_CH3B_QUESTIONS.length} Year 10 Ch3B questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y10-3'] = (cached.counts['y10-3'] || 0) + Y10_CH3B_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } finally {
+      setIsMigrating(false);
+    }
+  };
+
+  const handleSeedY10Ch3CQuestions = async () => {
+    if (!window.confirm("This will seed all Year 10 Chapter 3C (More difficult linear equations and inequalities) questions. Existing questions for this topic will be replaced. Continue?")) return;
+    setIsMigrating(true);
+    try {
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
+      const collRef = collection(db, 'questions');
+
+      // Clear existing y10-3c questions
+      const q = query(collRef, where('topicId', '==', 'y10-3c'));
+      const snap = await getDocs(q);
+      const clearBatch = writeBatch(db);
+      snap.docs.forEach(d => clearBatch.delete(d.ref));
+      await clearBatch.commit();
+
+      // Add new questions
+      const addBatch = writeBatch(db);
+      Y10_CH3C_QUESTIONS.forEach(qData => {
+        const docRef = qData.id ? doc(collRef, qData.id) : doc(collRef);
+        let optionsField = [];
+        let answerField = qData.a || '';
+
+        if (qData.type === 'multiple_choice') {
+          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
+          const correctIndex = shuffledOpts.indexOf(qData.a);
+          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          answerField = correctIndex.toString();
+        }
+
+        addBatch.set(docRef, {
+          chapterId: 'y10-3',
+          chapterTitle: "Chapter 3: Algebra review",
+          topicId: 'y10-3c',
+          topicCode: '3C',
+          topicTitle: qData.t || "More difficult linear equations and inequalities",
+          isManual: true,
+          title: (qData.q || '').replace(/\$/g, '').slice(0, 30) + '...',
+          question: qData.q || '',
+          difficulty: qData.difficulty || 'medium',
+          timeLimit: 120,
+          type: qData.type || 'short_answer',
+          options: optionsField,
+          answer: answerField,
+          hint: qData.h || '',
+          solution: qData.s || '',
+          solutionSteps: qData.solutionSteps || [],
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp()
+        }, { merge: true });
+      });
+      await addBatch.commit();
+      showToast(`Successfully seeded ${Y10_CH3C_QUESTIONS.length} Year 10 Ch3C questions!`, 'success');
+
+      if (typeof window !== 'undefined') {
+        const cached = loadCachedQuestionCounts();
+        cached.counts['y10-3'] = (cached.counts['y10-3'] || 0) + Y10_CH3C_QUESTIONS.length;
+        saveCachedQuestionCounts(cached.counts, cached.version);
+        setQuestionCounts({ ...cached.counts });
+      }
+    } catch (err) {
+      console.error(err);
+      showToast("Failed to seed Year 10 Ch3C questions.", 'error');
     } finally {
       setIsMigrating(false);
     }
@@ -2652,6 +3030,7 @@ const Curriculum = () => {
                       'Year 6': [
                         <SeedCard key="y6-wn" badge="Y6 WN" badgeStyle={{ background: '#f59e0b', color: '#fff' }} title="Whole Numbers" countKey="y6-wn" onSeed={handleSeedWholeNumbersQuestions} />,
                         <SeedCard key="y6-frac" badge="Y6 Frac" badgeStyle={{ background: '#f59e0b', color: '#fff' }} title="Fractions" countKey="y6-frac" onSeed={handleSeedFractionsQuestions} />,
+                        <SeedCard key="y6-dec" badge="Y6 Dec" badgeStyle={{ background: '#f59e0b', color: '#fff' }} title="Decimals" countKey={null} extraCount={(questionCounts['y6-rn-2'] || 0) + (questionCounts['y6-ar-2'] || 0) + (questionCounts['y6-mr-2'] || 0)} onSeed={handleSeedDecimalsQuestions} />,
                       ],
                     };
 

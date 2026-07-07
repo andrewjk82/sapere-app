@@ -13,7 +13,10 @@
  *         groups: {
  *           [groupKey]: {           // 'A', 'B', 'C' …
  *             currentStepId: string,
- *             weeklyScores: [{ date: 'YYYY-MM-DD', score: number, total: number }]
+ *             // 마지막 판정 이후 누적된, 아직 소비되지 않은 세션들.
+ *             // 판정이 나면(UP/DOWN/STAY 무관) 비우고 새로 쌓기 시작한다.
+ *             weeklyScores: [{ date: 'YYYY-MM-DD', score: number, total: number }],
+ *             lastEvaluatedWeek: 'YYYY-MM-DD' | null  // 마지막으로 "체크"한 날짜
  *           }
  *         }
  *       }
@@ -21,11 +24,15 @@
  *     updatedAt: serverTimestamp
  *   }
  *
- * 주간 평가 (월요일 첫 세션 시 자동 실행):
- *   - 지난 월~일 세션 중 최소 3회 이상인 그룹만 평가
- *   - 평균 ≥ 90% → 다음 스텝 UP
- *   - 평균 ≤ 50% → 이전 스텝 DOWN (첫 스텝이면 선생님 알림)
- *   - 그 외 → 유지
+ * 누적-기반 2주 평가 (앱 진입 시 최대 주 1회 트리거되지만, 그룹별로는 마지막
+ * 체크 후 14일 이상 지나야 실제로 판정한다):
+ *   - 그룹별로 마지막 판정 이후 누적된 문제 수가 50문제 미만이면 스텝 유지,
+ *     14일 뒤 다시 누적량을 확인한다 (계속 쌓임 — 데이터 손실 없음).
+ *   - 50문제 이상 쌓였으면 누적 전체의 정답률로 판정 후 누적 초기화:
+ *     평균 ≥ 90% → 다음 스텝 UP · 평균 ≤ 50% → 이전 스텝 DOWN
+ *     (첫 스텝이면 선생님 알림) · 그 외 → 유지
+ *   1문제짜리 하루치 세션 하나로 스텝이 오르내리던 문제(작은 표본의 우연)를
+ *   막기 위해 주 단위 소표본 평가에서 2주 단위 50문제 누적 평가로 변경.
  */
 
 import { doc, getDoc, setDoc, serverTimestamp } from 'firebase/firestore';
@@ -240,21 +247,14 @@ const getMondayOf = (dateStr) => {
   return toDateKey(d);
 };
 
-/** 지난주 월요일 (YYYY-MM-DD) */
-const getLastWeekMonday = () => {
-  const d = new Date();
-  d.setDate(d.getDate() - 7);
-  return getMondayOf(toDateKey(d));
-};
-
 /** 이번주 월요일 (YYYY-MM-DD) — 앱 진입 주간 가드용 */
 export const getThisWeekMonday = () => getMondayOf(toDateKey());
 
-/** dateStr이 lastWeekMonday 기준 월~일에 속하는지 */
-const isLastWeek = (dateStr, lastWeekMonday) => {
-  const sun = new Date(lastWeekMonday + 'T00:00:00');
-  sun.setDate(sun.getDate() + 6);
-  return dateStr >= lastWeekMonday && dateStr <= toDateKey(sun);
+/** 두 'YYYY-MM-DD' 날짜 사이의 일수 (오늘 - dateStr) */
+const daysSince = (dateStr) => {
+  const then = new Date(dateStr + 'T00:00:00');
+  const now = new Date(toDateKey() + 'T00:00:00');
+  return Math.round((now - then) / 86400000);
 };
 
 // ─── 초기화 ───────────────────────────────────────────────────────────────────
@@ -327,16 +327,23 @@ export const setCalcAutoMode = async (uid, autoMode) => {
   }, { merge: false });
 };
 
-// ─── 주간 평가 ────────────────────────────────────────────────────────────────
+// ─── 누적 기반 2주 평가 ──────────────────────────────────────────────────────
 
-const MIN_SESSIONS_FOR_EVAL = 3;
+const MIN_QUESTIONS_FOR_EVAL = 50;
 const UP_THRESHOLD = 0.9;
 const DOWN_THRESHOLD = 0.5;
+const EVAL_PERIOD_DAYS = 14;
 
 /**
- * 새로운 주의 첫 세션에서 지난 주 결과를 평가해 스텝을 조정한다.
- * 요일과 무관하게 동작한다 — 학생이 월요일을 건너뛰어도 그 주 첫 세션에서
- * 지난 주가 평가된다. 그룹별 lastEvaluatedWeek 가드로 주당 1회만 평가됨.
+ * 그룹별 누적-기반 2주 평가. 앱은 최대 주 1회 이 함수를 호출하지만, 그룹별로는
+ * 마지막 체크(lastEvaluatedWeek) 후 EVAL_PERIOD_DAYS(14일)가 지나야 실제로
+ * 판정을 시도한다 — 그보다 자주 불려도 대부분의 그룹은 그냥 skip된다.
+ *
+ * 판정 시점에 누적된 세션 수가 MIN_QUESTIONS_FOR_EVAL(50문제) 미만이면 스텝을
+ * 유지하고 데이터를 지우지 않은 채 다음 체크(14일 뒤)까지 계속 쌓는다 — 하루
+ * 1문제짜리 세션 하나로 스텝이 오르내리는 것을 막기 위함. 50문제 이상 쌓이면
+ * 누적 전체의 정답률로 판정하고 그 즉시 누적을 초기화해 다음 판정을 위한 새
+ * 배치를 시작한다.
  *
  * @returns {{ changes: Array<{stageId, groupKey, from, to, reason}>, alerts: Array, data: Object }}
  */
@@ -347,7 +354,7 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
   if (!data) return { changes: [], alerts: [], data: null };
   if (!data.autoMode) return { changes: [], alerts: [], data };
 
-  const lastWeekMonday = getLastWeekMonday();
+  const today = toDateKey();
   const changes = [];
   const alerts = [];
   const newlyUnlockedGroups = [];
@@ -358,26 +365,21 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
   Object.entries(updatedStages).forEach(([stageId, stageCfg]) => {
     if (!stageCfg.enabled) return;
     Object.entries(stageCfg.groups || {}).forEach(([groupKey, groupData]) => {
-      // 이번 주에 이미 지난주를 평가했으면 skip
-      if (groupData.lastEvaluatedWeek === lastWeekMonday) return;
+      // 마지막 체크 후 14일이 안 지났으면 아직 체크포인트가 아님 — skip
+      if (groupData.lastEvaluatedWeek && daysSince(groupData.lastEvaluatedWeek) < EVAL_PERIOD_DAYS) return;
 
-      mutated = true; // 이 그룹을 평가/정리하므로 doc이 바뀜
-      const lastWeekSessions = (groupData.weeklyScores || [])
-        .filter((s) => isLastWeek(s.date, lastWeekMonday));
+      mutated = true; // 이 그룹을 체크하므로 doc이 바뀜 (lastEvaluatedWeek 갱신)
+      const accumulated = groupData.weeklyScores || [];
+      const totalPossible = accumulated.reduce((s, r) => s + r.total, 0);
 
-      // 최소 3회 미만이면 평가 skip (스텝 유지)
-      if (lastWeekSessions.length < MIN_SESSIONS_FOR_EVAL) {
-        groupData.lastEvaluatedWeek = lastWeekMonday;
-        // 지난주 데이터는 정리 (7일 이전 데이터 제거)
-        groupData.weeklyScores = (groupData.weeklyScores || []).filter(
-          (s) => s.date >= lastWeekMonday,
-        );
+      // 50문제 미만이면 판정 보류 — 데이터는 그대로 두고 다음 체크포인트(14일 뒤)에 다시 확인
+      if (totalPossible < MIN_QUESTIONS_FOR_EVAL) {
+        groupData.lastEvaluatedWeek = today;
         return;
       }
 
-      const totalScore = lastWeekSessions.reduce((s, r) => s + r.score, 0);
-      const totalPossible = lastWeekSessions.reduce((s, r) => s + r.total, 0);
-      const avg = totalPossible > 0 ? totalScore / totalPossible : 0;
+      const totalScore = accumulated.reduce((s, r) => s + r.score, 0);
+      const avg = totalScore / totalPossible;
 
       const currentStepId = groupData.currentStepId;
       let newStepId = currentStepId;
@@ -434,14 +436,10 @@ export const evaluateWeeklyProgress = async (uid, notifyFn, preloaded = null) =>
         }
       }
 
-      groupData.lastEvaluatedWeek = lastWeekMonday;
-      // 14일 이전 데이터 정리
-      const cutoff = new Date(lastWeekMonday + 'T00:00:00');
-      cutoff.setDate(cutoff.getDate() - 7);
-      const cutoffStr = toDateKey(cutoff);
-      groupData.weeklyScores = (groupData.weeklyScores || []).filter(
-        (s) => s.date >= cutoffStr,
-      );
+      // 이번 배치로 판정을 내렸으니(UP/DOWN/STAY 무관) 누적을 비우고 다음
+      // 체크포인트를 위한 새 배치를 시작한다.
+      groupData.lastEvaluatedWeek = today;
+      groupData.weeklyScores = [];
     });
 
     // stage 메달: 이 stage의 모든 그룹이 마스터됐으면 발급

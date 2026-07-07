@@ -338,6 +338,23 @@ function App() {
   useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
   const [examInProgress, setExamInProgress] = useState(false);
   
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('sapere_viewed_questions');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          const filtered = parsed.filter(id => !String(id).startsWith('y5-'));
+          if (filtered.length !== parsed.length) {
+            localStorage.setItem('sapere_viewed_questions', JSON.stringify(filtered));
+          }
+        }
+      }
+    } catch (e) {
+      console.error('Failed to reset viewed questions', e);
+    }
+  }, []);
+
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
   const viewportActivityAtRef = useRef(0);

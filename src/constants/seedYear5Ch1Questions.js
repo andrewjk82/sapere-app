@@ -474,7 +474,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 2,
     "hint": [
       {
         "explanation": "Identify the place values of each digit.",
@@ -491,7 +491,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{One hundred and thirty-two}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-q3b",
@@ -518,7 +519,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 2,
     "hint": [
       {
         "explanation": "Identify the digit values by place value.",
@@ -535,7 +536,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Seven hundred and nine}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-q3c",
@@ -562,7 +564,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 1,
     "hint": [
       {
         "explanation": "Identify the place value values.",
@@ -579,7 +581,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{Five hundred and sixty}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-q3d",
@@ -990,23 +993,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{VIII}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(9\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(8\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7\\)",
+        "text": "\\(9\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(13\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(7\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 0,
     "hint": "V represents 5 and I represents 1.",
     "solutionSteps": [
       {
@@ -1019,7 +1022,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{VIII} = 5 + 1 + 1 + 1 = 8\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q1b",
@@ -1059,7 +1063,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{XXI} = 20 + 1 = 21\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q1c",
@@ -1070,11 +1075,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{IX}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(9\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(8\\)",
+        "text": "\\(15\\)",
         "imageUrl": ""
       },
       {
@@ -1082,11 +1083,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(15\\)",
+        "text": "\\(9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Since I is before X, subtract 1 from 10.",
     "solutionSteps": [
       {
@@ -1094,7 +1099,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{IX} = 10 - 1 = 9\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q1d",
@@ -1105,15 +1111,15 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{XXVI}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(27\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(36\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(24\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(27\\)",
         "imageUrl": ""
       },
       {
@@ -1129,7 +1135,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{XXVI} = 20 + 5 + 1 = 26\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q1e",
@@ -1140,7 +1147,11 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the Roman numeral \\(\\text{LX}\\) in our Hindu-Arabic number system.",
     "opts": [
       {
-        "text": "\\(70\\)",
+        "text": "\\(40\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(50\\)",
         "imageUrl": ""
       },
       {
@@ -1148,15 +1159,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(40\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(50\\)",
+        "text": "\\(70\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 2,
     "hint": "L represents 50 and X represents 10.",
     "solutionSteps": [
       {
@@ -1164,7 +1171,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{LX} = 50 + 10 = 60\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q2a",
@@ -1175,11 +1183,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(4\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{V}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{IV}\\)",
+        "text": "\\(\\text{IIII}\\)",
         "imageUrl": ""
       },
       {
@@ -1187,11 +1191,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{IIII}\\)",
+        "text": "\\(\\text{V}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{IV}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Write 4 as 5 - 1.",
     "solutionSteps": [
       {
@@ -1199,7 +1207,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(4 = 5 - 1 = \\text{IV}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q2b",
@@ -1210,6 +1219,10 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(15\\) as a Roman numeral.",
     "opts": [
       {
+        "text": "\\(\\text{XV}\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(\\text{XVI}\\)",
         "imageUrl": ""
       },
@@ -1218,15 +1231,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{XV}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XIIIII}\\)",
         "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 0,
     "hint": "Write 15 as 10 + 5.",
     "solutionSteps": [
       {
@@ -1239,7 +1248,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(\\text{XV}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q2c",
@@ -1250,23 +1260,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(23\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{XXIII}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{XXII}\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{XVIII}\\)",
+        "text": "\\(\\text{XXIII}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XIIIV}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{XVIII}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Write 23 as 20 + 3.",
     "solutionSteps": [
       {
@@ -1274,7 +1284,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(20 = \\text{XX}\\), \\(3 = \\text{III} \\implies \\text{XXIII}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q2d",
@@ -1289,19 +1300,19 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(\\text{LVI}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{LIV}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XLVI}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LVI}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Write 56 as 50 + 5 + 1.",
     "solutionSteps": [
       {
@@ -1309,7 +1320,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(50 = \\text{L}\\), \\(5 = \\text{V}\\), \\(1 = \\text{I} \\implies \\text{LVI}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q2e",
@@ -1320,23 +1332,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(70\\) as a Roman numeral.",
     "opts": [
       {
-        "text": "\\(\\text{LXX}\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(\\text{LXXX}\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(\\text{LX}\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(\\text{XXXXXXX}\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LXX}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\text{LXXX}\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Write 70 as 50 + 20.",
     "solutionSteps": [
       {
@@ -1344,7 +1356,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(50 = \\text{L}\\), \\(20 = \\text{XX} \\implies \\text{LXX}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q3a",
@@ -1354,6 +1367,10 @@ export const Y5_CH1_QUESTIONS = [
     "t": "Numbers to millions",
     "question": "Write the number \\(147\\) in words.",
     "opts": [
+      {
+        "text": "One hundred and forty-six",
+        "imageUrl": ""
+      },
       {
         "text": "One hundred forty seven",
         "imageUrl": ""
@@ -1365,13 +1382,9 @@ export const Y5_CH1_QUESTIONS = [
       {
         "text": "One hundred and seventeen",
         "imageUrl": ""
-      },
-      {
-        "text": "One hundred and forty-six",
-        "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 2,
     "hint": [
       {
         "explanation": "Identify digit values.",
@@ -1383,7 +1396,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(147 \\implies \\text{One hundred and forty-seven}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q3b",
@@ -1398,7 +1412,7 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Three hundred and six",
+        "text": "Thirty-six",
         "imageUrl": ""
       },
       {
@@ -1406,18 +1420,19 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Thirty-six",
+        "text": "Three hundred and six",
         "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 3,
     "hint": [
       {
         "explanation": "Wording values.",
         "workingOut": "\\(300 + 6 \\implies \\text{Three hundred and six}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q3c",
@@ -1428,30 +1443,31 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(470\\) in words.",
     "opts": [
       {
-        "text": "Four hundred and seventy",
-        "imageUrl": ""
-      },
-      {
         "text": "Four hundred seventy",
         "imageUrl": ""
       },
       {
-        "text": "Forty-seven",
+        "text": "Four hundred and seventy",
         "imageUrl": ""
       },
       {
         "text": "Four hundred and seventeen",
         "imageUrl": ""
+      },
+      {
+        "text": "Forty-seven",
+        "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 1,
     "hint": [
       {
         "explanation": "Combine.",
         "workingOut": "\\(400 + 70 \\implies \\text{Four hundred and seventy}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q3d",
@@ -1462,7 +1478,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the number \\(1792\\) in words.",
     "opts": [
       {
-        "text": "One thousand, seven hundred and ninety-two",
+        "text": "One thousand, seven hundred and nineteen-two",
         "imageUrl": ""
       },
       {
@@ -1470,22 +1486,23 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Seventeen hundred and ninety-two",
+        "text": "One thousand, seven hundred and ninety-two",
         "imageUrl": ""
       },
       {
-        "text": "One thousand, seven hundred and nineteen-two",
+        "text": "Seventeen hundred and ninety-two",
         "imageUrl": ""
       }
     ],
-    "a": -1,
+    "a": 2,
     "hint": [
       {
         "explanation": "Identify digit values.",
         "workingOut": "\\(1000 + 700 + 92 \\implies \\text{One thousand, seven hundred and ninety-two}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q4a",
@@ -1504,11 +1521,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(10053\\)",
+        "text": "\\(1053\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1053\\)",
+        "text": "\\(10053\\)",
         "imageUrl": ""
       }
     ],
@@ -1520,7 +1537,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(100 + 53 = 153\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q4b",
@@ -1539,11 +1557,11 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(60028\\)",
+        "text": "\\(6028\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6028\\)",
+        "text": "\\(60028\\)",
         "imageUrl": ""
       }
     ],
@@ -1555,7 +1573,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(600 + 28 = 628\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q4c",
@@ -1566,23 +1585,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nFour hundred and nine",
     "opts": [
       {
-        "text": "\\(490\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(409\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(4009\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(490\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(49\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(409\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 1,
+    "a": 3,
     "hint": "Since there is no 'ty' word, the tens digit is 0.",
     "solutionSteps": [
       {
@@ -1590,7 +1609,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(400 + 9 = 409\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q4d",
@@ -1601,23 +1621,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following number as an ordinary numeral:\nOne thousand and forty",
     "opts": [
       {
-        "text": "\\(1040\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(100040\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(1400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1040\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(10040\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(100040\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "Write 1 thousand, 0 hundreds, and 40.",
     "solutionSteps": [
       {
@@ -1625,7 +1645,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(1000 + 40 = 1040\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q5a",
@@ -1636,23 +1657,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((5 \\times 100) + (7 \\times 10) + (4 \\times 1)\\)",
     "opts": [
       {
-        "text": "\\(547\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(50074\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(5074\\)",
+        "text": "\\(547\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(574\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(5074\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "Multiply each bracket and add.",
     "solutionSteps": [
       {
@@ -1665,7 +1686,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(574\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q5b",
@@ -1676,23 +1698,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write the following expanded notation as an ordinary numeral:\n\\((8 \\times 100) + (0 \\times 10) + (5 \\times 1)\\)",
     "opts": [
       {
-        "text": "\\(80005\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(8005\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(805\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(850\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\(80005\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(805\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 2,
+    "a": 3,
     "hint": "Notice the tens place is multiplied by 0.",
     "solutionSteps": [
       {
@@ -1705,7 +1727,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\(805\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q6a",
@@ -1716,11 +1739,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(452\\) in expanded notation.",
     "opts": [
       {
-        "text": "\\((4 \\times 100) + (5 \\times 10) + (2 \\times 1)\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\((4 \\times 1000) + (5 \\times 10) + (2 \\times 1)\\)",
+        "text": "\\((4 \\times 10) + (5 \\times 1) + (2 \\times 1)\\)",
         "imageUrl": ""
       },
       {
@@ -1728,11 +1747,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((4 \\times 10) + (5 \\times 1) + (2 \\times 1)\\)",
+        "text": "\\((4 \\times 100) + (5 \\times 10) + (2 \\times 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4 \\times 1000) + (5 \\times 10) + (2 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "Write each digit multiplied by its place value.",
     "solutionSteps": [
       {
@@ -1745,7 +1768,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\((4 \\times 100) + (5 \\times 10) + (2 \\times 1)\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q6b",
@@ -1760,19 +1784,19 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((7 \\times 1000) + (4 \\times 10) + (8 \\times 1)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((7 \\times 100) + (8 \\times 10) + (4 \\times 1)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((7 \\times 100) + (4 \\times 10) + (8 \\times 1)\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\((7 \\times 1000) + (4 \\times 10) + (8 \\times 1)\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 3,
+    "a": 2,
     "hint": "7 hundreds, 4 tens, 8 units.",
     "solutionSteps": [
       {
@@ -1780,7 +1804,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\((7 \\times 100) + (4 \\times 10) + (8 \\times 1)\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q6c",
@@ -1791,23 +1816,23 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(590\\) in expanded notation.",
     "opts": [
       {
-        "text": "\\((5 \\times 100) + (9 \\times 10) + (0 \\times 1)\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\((5 \\times 100) + (9 \\times 10)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((5 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
+        "text": "\\((5 \\times 100) + (9 \\times 10) + (0 \\times 1)\\)",
         "imageUrl": ""
       },
       {
         "text": "\\((5 \\times 10) + (9 \\times 1) + (0 \\times 1)\\)",
         "imageUrl": ""
+      },
+      {
+        "text": "\\((5 \\times 100) + (0 \\times 10) + (9 \\times 1)\\)",
+        "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 1,
     "hint": "The units digit is 0, so write 0 x 1.",
     "solutionSteps": [
       {
@@ -1815,7 +1840,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\((5 \\times 100) + (9 \\times 10) + (0 \\times 1)\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l2-q6d",
@@ -1826,7 +1852,7 @@ export const Y5_CH1_QUESTIONS = [
     "question": "Write \\(803\\) in expanded notation.",
     "opts": [
       {
-        "text": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
+        "text": "\\((8 \\times 100) + (3 \\times 10) + (0 \\times 1)\\)",
         "imageUrl": ""
       },
       {
@@ -1834,15 +1860,15 @@ export const Y5_CH1_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\((8 \\times 10) + (0 \\times 1) + (3 \\times 1)\\)",
+        "text": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\((8 \\times 100) + (3 \\times 10) + (0 \\times 1)\\)",
+        "text": "\\((8 \\times 10) + (0 \\times 1) + (3 \\times 1)\\)",
         "imageUrl": ""
       }
     ],
-    "a": 0,
+    "a": 2,
     "hint": "The tens digit is 0, so write 0 x 10.",
     "solutionSteps": [
       {
@@ -1850,7 +1876,8 @@ export const Y5_CH1_QUESTIONS = [
         "workingOut": "\\((8 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
         "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y5-rn-1-l3-q1a",
@@ -4312,5 +4339,998 @@ export const Y5_CH1_QUESTIONS = [
       }
     ],
     "graphData": null
+  },
+  {
+    "id": "y5-rn-1-l1-q1a",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An autonomous warehouse drone is assigned to retrieve packages only from lockers with even numbers between \\\\(11\\\\) and \\\\(19\\\\). Which list represents the locker numbers the drone will visit?",
+    "opts": [
+      {
+        "text": "\\\\(12, 14, 16, 18\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11, 13, 15, 17, 19\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12, 14, 16, 18, 20\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(14, 16, 18\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Even numbers are numbers that can be divided exactly by 2. Look for all even integers strictly between 11 and 19.",
+    "solutionSteps": [
+      {
+        "explanation": "First, identify the range and condition given in the problem. We need to find even numbers strictly between \\\\(11\\\\) and \\\\(19\\\\).",
+        "workingOut": "\\\\(\\text{Range} = 11 < n < 19\\\\text{ where } n\\\\text{ is even}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "List all integers strictly between 11 and 19.",
+        "workingOut": "\\\\(\\text{Integers} = \\\\{12, 13, 14, 15, 16, 17, 18\\\\}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Filter the listed integers to keep only the even ones (numbers ending in 0, 2, 4, 6, or 8).",
+        "workingOut": "\\\\(\\text{Even Numbers} = \\\\{12, 14, 16, 18\\\\}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final list of locker numbers that the drone will visit. The drone will visit lockers 12, 14, 16, and 18.",
+        "workingOut": "\\\\(\\\\text{Locker Numbers} = 12, 14, 16, 18\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q1b",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A botanical garden sensor array records temperature fluctuations from soil probes positioned at odd-numbered stations between \\\\(18\\\\) and \\\\(26\\\\). What are the station numbers of these probes?",
+    "opts": [
+      {
+        "text": "\\\\(19, 21, 23, 25\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(18, 20, 22, 24, 26\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(19, 21, 23, 25, 27\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(21, 23, 25\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Odd numbers are numbers that cannot be divided exactly by 2. Look for all odd integers strictly between 18 and 26.",
+    "solutionSteps": [
+      {
+        "explanation": "First, identify the boundaries and conditions for the stations. Probes are located at odd numbers strictly between \\\\(18\\\\) and \\\\(26\\\\).",
+        "workingOut": "\\\\(\\text{Range} = 18 < n < 26\\\\text{ where } n\\\\text{ is odd}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "List all integers that fall between 18 and 26.",
+        "workingOut": "\\\\(\\text{Integers} = \\\\{19, 20, 21, 22, 23, 24, 25\\\\}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Filter this list to include only odd numbers (numbers ending in 1, 3, 5, 7, or 9).",
+        "workingOut": "\\\\(\\text{Odd Numbers} = \\\\{19, 21, 23, 25\\\\}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify that these odd numbers represent the correct sensor probe locations. The probe stations are 19, 21, 23, and 25.",
+        "workingOut": "\\\\(\\\\text{Odd Station Numbers} = 19, 21, 23, 25\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q1c",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A graphics processing unit partitions a grid into square blocks. The sizes of the active blocks must be square numbers of pixels between \\\\(5\\\\) and \\\\(40\\\\). Which list shows the valid block sizes?",
+    "opts": [
+      {
+        "text": "\\\\(9, 16, 25, 36\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4, 9, 16, 25, 36\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9, 16, 25, 36, 49\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8, 16, 24, 32, 40\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Square numbers are integers multiplied by themselves (e.g., \\\\(1 \\\\times 1 = 1\\\\), \\\\(2 \\\\times 2 = 4\\\\), etc.). Check which squares fall between 5 and 40.",
+    "solutionSteps": [
+      {
+        "explanation": "First, identify the condition for valid sizes. The block sizes must be square numbers strictly between \\\\(5\\\\) and \\\\(40\\\\).",
+        "workingOut": "\\\\(\\text{Range} = 5 < s^2 < 40\\\\text{ where } s\\\\text{ is a whole number}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "List the first few square numbers by squaring consecutive positive integers.",
+        "workingOut": "\\\\(\\begin{aligned} 1^2 &= 1 \\\\ 2^2 &= 4 \\\\ 3^2 &= 9 \\\\ 4^2 &= 16 \\\\ 5^2 &= 25 \\\\ 6^2 &= 36 \\\\ 7^2 &= 49 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Filter the square numbers to find those that are strictly greater than 5 and strictly less than 40.",
+        "workingOut": "\\\\(\\text{Square Numbers between 5 and 40} = \\\\{9, 16, 25, 36\\\\}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude which list of numbers matches the filtered active block sizes in pixels.",
+        "workingOut": "\\\\(\\\\text{Valid Block Sizes} = 9, 16, 25, 36\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q1d",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A logistics depot stacks barrels in a triangular pyramid layout. The base layers correspond to triangular numbers. What are the first four triangular numbers representing the barrel stack capacities?",
+    "opts": [
+      {
+        "text": "\\\\(1, 3, 6, 10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1, 2, 3, 4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1, 4, 9, 16\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1, 3, 5, 7\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "A triangular number represents the sum of consecutive integers starting from 1. For example, the first is 1, the second is 1+2.",
+    "solutionSteps": [
+      {
+        "explanation": "First, understand the mathematical definition of a triangular number. The n-th triangular number is calculated by adding all whole numbers from 1 up to n.",
+        "workingOut": "\\\\(T_n = 1 + 2 + 3 + \\\\dots + n\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the first and second triangular numbers.",
+        "workingOut": "\\\\(\\begin{aligned} T_1 &= 1 \\\\ T_2 &= 1 + 2 = 3 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the third and fourth triangular numbers by adding the next consecutive integers.",
+        "workingOut": "\\\\(\\begin{aligned} T_3 &= 3 + 3 = 6 \\\\ T_4 &= 6 + 4 = 10 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine these values to get the first four triangular numbers of the barrel stack sequence.",
+        "workingOut": "\\\\(\\\\text{Triangular Numbers} = 1, 3, 6, 10\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2a",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A cellular automaton simulates bacterial growth where the colony diameter increases in a pattern: \\\\(8\\\\text{ mm}\\\\), \\\\(10\\\\text{ mm}\\\\), \\\\(12\\\\text{ mm}\\\\). If this pattern continues, what will be the next two recorded diameters?",
+    "opts": [
+      {
+        "text": "\\\\(14\\\\text{ and } 16\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(13\\\\text{ and } 14\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(14\\\\text{ and } 18\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16\\\\text{ and } 18\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Examine the difference between consecutive numbers in the sequence to identify the pattern rule.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the given terms of the growth sequence and calculate the difference between consecutive numbers.",
+        "workingOut": "\\\\(\\begin{aligned} 10 - 8 &= 2 \\\\ 12 - 10 &= 2 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Establish the pattern rule based on the constant difference. The rule is to add 2 to the previous term.",
+        "workingOut": "\\\\(\\\\text{Rule: Add } 2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the rule to the last term (12) to find the fourth term.",
+        "workingOut": "\\\\(12 + 2 = 14\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the rule to the fourth term (14) to find the fifth term.",
+        "workingOut": "\\\\(14 + 2 = 16\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm the next two diameters in the colony growth pattern are 14 mm and 16 mm.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 14, 16\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2b",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An orbital satellite records elevation changes in mountain terrain at intervals: \\\\(17\\\\text{ m}\\\\), \\\\(20\\\\text{ m}\\\\), \\\\(23\\\\text{ m}\\\\), \\\\(26\\\\text{ m}\\\\). What are the next two elevation values in this sequence?",
+    "opts": [
+      {
+        "text": "\\\\(29\\\\text{ and } 32\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28\\\\text{ and } 30\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(29\\\\text{ and } 31\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(30\\\\text{ and } 33\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Subtract each number from the next one to find the common difference in this arithmetic sequence.",
+    "solutionSteps": [
+      {
+        "explanation": "Analyze the differences between successive numbers in the satellite elevation data.",
+        "workingOut": "\\\\(\\begin{aligned} 20 - 17 &= 3 \\\\ 23 - 20 &= 3 \\\\ 26 - 23 &= 3 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the common difference which represents the sequence rule. The rule is to add 3 to each term.",
+        "workingOut": "\\\\(\\\\text{Rule: Add } 3\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the next term after 26 by adding the common difference of 3.",
+        "workingOut": "\\\\(26 + 3 = 29\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the following term by adding 3 to the previous result of 29.",
+        "workingOut": "\\\\(29 + 3 = 32\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude that the next two elevations in the satellite sequence are 29 m and 32 m.",
+        "workingOut": "\\\\(\\\\text{Next elevations} = 29, 32\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2c",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A thermal sensor logs temperature cooling inside a reactor: \\\\(35^\\circ\\\\text{C}\\\\), \\\\(29^\\circ\\\\text{C}\\\\), \\\\(23^\\circ\\\\text{C}\\\\), \\\\(17^\\circ\\\\text{C}\\\\). What are the next two temperatures in this cooling pattern?",
+    "opts": [
+      {
+        "text": "\\\\(11\\\\text{ and } 5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12\\\\text{ and } 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11\\\\text{ and } 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\text{ and } 4\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Check the difference between consecutive temperatures. Note that the numbers are decreasing.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the difference between successive terms to understand how fast the reactor is cooling.",
+        "workingOut": "\\\\(\\begin{aligned} 29 - 35 &= -6 \\\\ 23 - 29 &= -6 \\\\ 17 - 23 &= -6 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the constant cooling rate rule. The temperature drops by 6 degrees in each interval.",
+        "workingOut": "\\\\(\\\\text{Rule: Subtract } 6\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract 6 from the last recorded temperature of 17 to find the next temperature.",
+        "workingOut": "\\\\(17 - 6 = 11\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract 6 from 11 to find the second subsequent temperature.",
+        "workingOut": "\\\\(11 - 6 = 5\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm that the next two cooling temperatures are 11 degrees and 5 degrees Celsius.",
+        "workingOut": "\\\\(\\\\text{Next temperatures} = 11, 5\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2d",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A cryptocurrency token's value doubles every week: \\\\(\\$3\\\\), \\\\(\\$6\\\\), \\\\(\\$12\\\\), \\\\(\\$24\\\\). What will be the value of the token for the next two weeks if the doubling pattern continues?",
+    "opts": [
+      {
+        "text": "\\\\(\\$48\\\\text{ and } \\$96\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\$36\\\\text{ and } \\$48\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\$48\\\\text{ and } \\$80\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\$30\\\\text{ and } \\$36\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Analyze the ratio between consecutive terms in the sequence. Each term is multiplied by a constant number.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the factor by which the token's value grows each week.",
+        "workingOut": "\\\\(\\begin{aligned} 6 \\\\div 3 &= 2 \\\\ 12 \\\\div 6 &= 2 \\\\ 24 \\\\div 12 &= 2 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the multiplication rule of this geometric sequence. The rule is to multiply the previous value by 2.",
+        "workingOut": "\\\\(\\\\text{Rule: Multiply by } 2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the doubling rule to the last value of 24 to find the next week's value.",
+        "workingOut": "\\\\(24 \\\\times 2 = 48\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Double the value of 48 to find the value for the subsequent week.",
+        "workingOut": "\\\\(48 \\\\times 2 = 96\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify that the calculated values correspond to the token values. The token value will be \\\\(\\$48\\\\) and then \\\\(\\$96\\\\).",
+        "workingOut": "\\\\(\\\\text{Next values} = \\\\$48, \\\\$96\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2e",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An agricultural drone monitors the growth rate of a crop stem: \\\\(5.3\\\\text{ cm}\\\\), \\\\(5.7\\\\text{ cm}\\\\), \\\\(6.1\\\\text{ cm}\\\\), \\\\(6.5\\\\text{ cm}\\\\). What will be the next two heights in this linear growth pattern?",
+    "opts": [
+      {
+        "text": "\\\\(6.9\\\\text{ and } 7.3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6.8\\\\text{ and } 7.2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7.0\\\\text{ and } 7.5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6.9\\\\text{ and } 7.4\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Analyze the decimal differences between consecutive growth measurements.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract consecutive terms in the crop stem heights to determine the interval growth.",
+        "workingOut": "\\\\(\\begin{aligned} 5.7 - 5.3 &= 0.4 \\\\ 6.1 - 5.7 &= 0.4 \\\\ 6.5 - 6.1 &= 0.4 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Establish the growth pattern rule. The stem grows by a constant 0.4 cm in each measurement interval.",
+        "workingOut": "\\\\(\\\\text{Rule: Add } 0.4\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 0.4 to the last recorded height of 6.5 cm to find the next height.",
+        "workingOut": "\\\\(6.5 + 0.4 = 6.9\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 0.4 to 6.9 cm to calculate the following height.",
+        "workingOut": "\\\\(6.9 + 0.4 = 7.3\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final two heights with appropriate decimal units. The next two stem heights are 6.9 cm and 7.3 cm.",
+        "workingOut": "\\\\(\\\\text{Next heights} = 6.9\\\\text{ cm}, 7.3\\\\text{ cm}\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2f",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A fluid containment tank has liquid levels of \\\\(\\frac{3}{4}\\\\text{ L}\\\\), \\\\(1\\\\text{ L}\\\\), \\\\(1 \\\\frac{1}{4}\\\\text{ L}\\\\), and \\\\(1 \\\\frac{1}{2}\\\\text{ L}\\\\). What will be the next two volumes if the liquid level increases in this constant pattern?",
+    "opts": [
+      {
+        "text": "\\\\(1 \\\\frac{3}{4}\\\\text{ L} \\\\text{ and } 2\\\\text{ L}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1 \\\\frac{2}{3}\\\\text{ L} \\\\text{ and } 2\\\\text{ L}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\text{ L} \\\\text{ and } 2 \\\\frac{1}{4}\\\\text{ L}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1 \\\\frac{3}{4}\\\\text{ L} \\\\text{ and } 2 \\\\frac{1}{4}\\\\text{ L}\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Express all mixed numbers as fractions with a denominator of 4, then check the common fractional difference.",
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite all the terms as fractions with a common denominator of 4 to make comparison straightforward.",
+        "workingOut": "\\\\(\\text{Sequence} = \\\\frac{3}{4}, \\\\frac{4}{4}, \\\\frac{5}{4}, \\\\frac{6}{4}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the constant difference between consecutive fractions.",
+        "workingOut": "\\\\(\\frac{4}{4} - \\frac{3}{4} = \\frac{1}{4}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add \\\\(\\frac{1}{4}\\\\) to the last term of \\\\(\\frac{6}{4}\\\\) (which is \\\\(1 \\\\frac{1}{2}\\\\)) to get the fifth term.",
+        "workingOut": "\\\\(\\frac{6}{4} + \\frac{1}{4} = \\frac{7}{4} = 1 \\\\frac{3}{4}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add \\\\(\\frac{1}{4}\\\\) to \\\\(\\frac{7}{4}\\\\) to calculate the sixth term.",
+        "workingOut": "\\\\(\\frac{7}{4} + \\frac{1}{4} = \\frac{8}{4} = 2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the next two volume measurements in litres as mixed fractions. The next volumes are \\\\(1 \\\\frac{3}{4}\\\\text{ L}\\\\) and \\\\(2\\\\text{ L}\\\\).",
+        "workingOut": "\\\\(\\\\text{Next volumes} = 1 \\\\frac{3}{4}\\\\text{ L}, 2\\\\text{ L}\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2g",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An electric vehicle battery cell charge drops steadily during testing: \\\\(40\\%\\\\), \\\\(37\\%\\\\), \\\\(34\\%\\\\), \\\\(31\\%\\\\). What will be the next two battery percentages recorded?",
+    "opts": [
+      {
+        "text": "\\\\(28\\%\\\\text{ and } 25\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(29\\%\\\\text{ and } 27\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28\\%\\\\text{ and } 24\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(27\\%\\\\text{ and } 24\\%\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Observe the subtraction pattern between consecutive values in the sequence.",
+    "solutionSteps": [
+      {
+        "explanation": "Compute the difference between successive terms to identify the discharge rate.",
+        "workingOut": "\\\\(\\begin{aligned} 37 - 40 &= -3 \\\\ 34 - 37 &= -3 \\\\ 31 - 34 &= -3 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the discharge rule. The charge drops by 3% in each step.",
+        "workingOut": "\\\\(\\\\text{Rule: Subtract } 3\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the rule to the last recorded value of 31 to find the next value.",
+        "workingOut": "\\\\(31 - 3 = 28\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the rule to 28 to find the subsequent percentage value.",
+        "workingOut": "\\\\(28 - 3 = 25\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final two battery charge percentages. The next two battery percentages are 28% and 25%.",
+        "workingOut": "\\\\(\\\\text{Next percentages} = 28\\%, 25\\%\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l1-q2h",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A seismology sensor detects shockwave energy release levels at discrete intervals: \\\\(25\\\\text{ J}\\\\), \\\\(36\\\\text{ J}\\\\), \\\\(49\\\\text{ J}\\\\), \\\\(64\\\\text{ J}\\\\). Assuming the square number pattern continues, what are the next two shockwave energy levels?",
+    "opts": [
+      {
+        "text": "\\\\(81\\\\text{ and } 100\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(75\\\\text{ and } 86\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(81\\\\text{ and } 99\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(80\\\\text{ and } 100\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Identify the base numbers being squared to generate each term in this sequence.",
+    "solutionSteps": [
+      {
+        "explanation": "Write each term of the sequence as the square of an integer to find the pattern.",
+        "workingOut": "\\\\(\\begin{aligned} 25 &= 5^2 \\\\ 36 &= 6^2 \\\\ 49 &= 7^2 \\\\ 64 &= 8^2 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the rule of the sequence. The terms are squares of consecutive integers starting from 5.",
+        "workingOut": "\\\\(\\\\text{Bases: } 5, 6, 7, 8 \\\\implies \\\\text{Next bases: } 9, 10\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the square of the next integer, 9.",
+        "workingOut": "\\\\(9^2 = 81\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the square of the following integer, 10.",
+        "workingOut": "\\\\(10^2 = 100\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm that the next two energy levels are 81 J and 100 J.",
+        "workingOut": "\\\\(\\\\text{Next levels} = 81, 100\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1a",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A drone delivery company is optimizing battery usage over successive long-range deliveries. The drone's battery capacity drops in a steady sequence: \\\\(17\\%\\\\), \\\\(15 \\\\frac{1}{2}\\%\\\\), \\\\(14\\%\\\\), \\\\(12 \\\\frac{1}{2}\\%\\\\). What will be the next two battery capacity percentages?",
+    "opts": [
+      {
+        "text": "\\\\(10 \\\\frac{1}{2}\\%\\\\text{ and } 9\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\%\\\\text{ and } 8.5\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11\\%\\\\text{ and } 9 \\\\frac{1}{2}\\%\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11\\%\\\\text{ and } 10\\%\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Find the constant difference between consecutive terms. Note that the percentages are decreasing.",
+    "solutionSteps": [
+      {
+        "explanation": "First, analyze the given terms of the sequence to identify the pattern and rate of battery capacity drop.",
+        "workingOut": "\\\\(\\text{Sequence} = 17, 15 \\\\frac{1}{2}, 14, 12 \\\\frac{1}{2}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the difference between consecutive terms to find the common difference.",
+        "workingOut": "\\\\(\\begin{aligned} 15 \\\\frac{1}{2} - 17 &= -1 \\\\frac{1}{2} \\\\ 14 - 15 \\\\frac{1}{2} &= -1 \\\\frac{1}{2} \\\\ 12 \\\\frac{1}{2} - 14 &= -1 \\\\frac{1}{2} \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Establish the pattern rule based on the constant decrease of \\\\(1 \\\\frac{1}{2}\\%\\\\). The rule is to subtract \\\\(1 \\\\frac{1}{2}\\%\\\\) from the previous term.",
+        "workingOut": "\\\\(\\text{Rule} = \\\\text{Subtract } 1 \\\\frac{1}{2}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract \\\\(1 \\\\frac{1}{2}\\%\\\\) from the last term \\\\(12 \\\\frac{1}{2}\\%\\\\) to find the fifth term.",
+        "workingOut": "\\\\(12 \\\\frac{1}{2}\\% - 1 \\\\frac{1}{2}\\% = 11\\%\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract \\\\(1 \\\\frac{1}{2}\\%\\\\) from \\\\(11\\%\\\\) to calculate the sixth term.",
+        "workingOut": "\\\\(11\\% - 1 \\\\frac{1}{2}\\% = 9 \\\\frac{1}{2}\\%\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final two capacity percentages. The next two battery percentages are \\\\(11\\%\\\\) and \\\\(9 \\\\frac{1}{2}\\%\\\\).",
+        "workingOut": "\\\\(\\\\text{Next terms} = 11\\%, 9 \\\\frac{1}{2}\\%\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1b",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A colony of genetically modified micro-organisms under observation in a biotechnology lab triples in population count every hour: \\\\(2\\\\), \\\\(6\\\\), \\\\(18\\\\), \\\\(54\\\\). What will be the population count for the next two hours?",
+    "opts": [
+      {
+        "text": "\\\\(162\\\\text{ and } 324\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(150\\\\text{ and } 450\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(108\\\\text{ and } 216\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(162\\\\text{ and } 486\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 3,
+    "hint": "Determine the growth multiplier by dividing each term by the previous one.",
+    "solutionSteps": [
+      {
+        "explanation": "First, analyze the given population progression and find the growth ratio between consecutive hours.",
+        "workingOut": "\\\\(\\begin{aligned} 6 \\\\div 2 &= 3 \\\\ 18 \\\\div 6 &= 3 \\\\ 54 \\\\div 18 &= 3 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the multiplication rule of this geometric sequence. The rule is to multiply the previous hour's population by 3.",
+        "workingOut": "\\\\(\\text{Rule} = \\\\text{Multiply by } 3\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the last given value of 54 by 3 to find the population for the next hour.",
+        "workingOut": "\\\\(54 \\\\times 3 = 162\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply 162 by 3 to calculate the population count for the hour after.",
+        "workingOut": "\\\\(162 \\\\times 3 = 486\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclude that the next two hours' population counts are 162 and 486.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 162, 486\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1c",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A geological surveyor records the daily shift in millimeters of a tectonic fault line: \\\\(7.2\\\\text{ mm}\\\\), \\\\(8.4\\\\text{ mm}\\\\), \\\\(9.6\\\\text{ mm}\\\\), \\\\(10.8\\\\text{ mm}\\\\). What will be the fault line shift for the next two days if this linear pattern persists?",
+    "opts": [
+      {
+        "text": "\\\\(12.0\\\\text{ and } 13.2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12.0\\\\text{ and } 13.4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11.8\\\\text{ and } 12.8\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(11.0\\\\text{ and } 12.2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Analyze the decimal difference between consecutive terms in the sequence.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the constant increase by subtracting consecutive daily shifts.",
+        "workingOut": "\\\\(\\begin{aligned} 8.4 - 7.2 &= 1.2 \\\\ 9.6 - 8.4 &= 1.2 \\\\ 10.8 - 9.6 &= 1.2 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Establish the pattern rule. The fault line shift increases by a constant 1.2 mm every day.",
+        "workingOut": "\\\\(\\text{Rule} = \\\\text{Add } 1.2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 1.2 to the last term of 10.8 to calculate the fifth day's shift.",
+        "workingOut": "\\\\(10.8 + 1.2 = 12.0\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 1.2 to 12.0 to calculate the sixth day's shift.",
+        "workingOut": "\\\\(12.0 + 1.2 = 13.2\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm that the next two daily shifts are 12.0 mm and 13.2 mm.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 12.0, 13.2\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1d",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "A maritime shipping container port registers cargo ship arrivals every week. The cumulative count of docked vessels follows the sequence: \\\\(7\\\\), \\\\(14\\\\), \\\\(21\\\\), \\\\(28\\\\). What are the next two cumulative arrival numbers in this sequence?",
+    "opts": [
+      {
+        "text": "\\\\(32\\\\text{ and } 39\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35\\\\text{ and } 42\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35\\\\text{ and } 40\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36\\\\text{ and } 43\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 1,
+    "hint": "Recognize that the sequence terms are multiples of a specific prime number.",
+    "solutionSteps": [
+      {
+        "explanation": "First, analyze the difference between successive terms of the cumulative vessel arrivals sequence.",
+        "workingOut": "\\\\(\\begin{aligned} 14 - 7 &= 7 \\\\ 21 - 14 &= 7 \\\\ 28 - 21 &= 7 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Establish the pattern rule. The count increases by 7 each week, generating consecutive multiples of 7.",
+        "workingOut": "\\\\(\\text{Rule} = \\\\text{Add } 7\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 7 to the last cumulative term of 28 to find the next term.",
+        "workingOut": "\\\\(28 + 7 = 35\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add 7 to 35 to calculate the following term in the sequence.",
+        "workingOut": "\\\\(35 + 7 = 42\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify that 35 and 42 are the next multiples of 7. The next two cumulative arrival numbers are 35 and 42.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 35, 42\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1e",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An electric vehicle cooling system manages coolant temperature decrease in steps: \\\\(20^\\circ\\\\text{C}\\\\), \\\\(17.5^\\circ\\\\text{C}\\\\), \\\\(15^\\circ\\\\text{C}\\\\), \\\\(12.5^\\circ\\\\text{C}\\\\). What are the next two temperatures in this cooling sequence?",
+    "opts": [
+      {
+        "text": "\\\\(10\\\\text{ and } 7.5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9.5\\\\text{ and } 7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10.5\\\\text{ and } 8.5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\text{ and } 8\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 0,
+    "hint": "Analyze the rate of temperature decrease between successive stages in the EV system.",
+    "solutionSteps": [
+      {
+        "explanation": "Find the constant cooling difference by subtracting consecutive temperature values.",
+        "workingOut": "\\\\(\\begin{aligned} 17.5 - 20 &= -2.5 \\\\ 15 - 17.5 &= -2.5 \\\\ 12.5 - 15 &= -2.5 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Determine the cooling pattern rule. The coolant temperature decreases by 2.5 degrees in each step.",
+        "workingOut": "\\\\(\\text{Rule} = \\\\text{Subtract } 2.5\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the rule to the last recorded value of 12.5 to find the next temperature.",
+        "workingOut": "\\\\(12.5 - 2.5 = 10\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract 2.5 from 10 to calculate the subsequent cooling temperature.",
+        "workingOut": "\\\\(10 - 2.5 = 7.5\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm that the next two temperatures in the sequence are 10 degrees and 7.5 degrees Celsius.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 10, 7.5\\\\)",
+        "graphData": null
+      }
+    ]
+  },
+  {
+    "id": "y5-rn-1-l2-q1f",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "t": "Numbers to millions",
+    "isNew": true,
+    "question": "An astrophysicist analyzes the light intensity levels of a pulsating star at discrete intervals: \\\\(100\\\\text{ lux}\\\\), \\\\(81\\\\text{ lux}\\\\), \\\\(64\\\\text{ lux}\\\\), \\\\(49\\\\text{ lux}\\\\). If this square number pattern continues, what are the next two light intensity levels?",
+    "opts": [
+      {
+        "text": "\\\\(36\\\\text{ and } 27\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35\\\\text{ and } 24\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36\\\\text{ and } 25\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(40\\\\text{ and } 30\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "a": 2,
+    "hint": "Express each intensity level as a square of a decreasing integer (e.g., \\\\(10 \\\\times 10 = 100\\\\)).",
+    "solutionSteps": [
+      {
+        "explanation": "First, analyze the light intensity values and represent them as squares of integers.",
+        "workingOut": "\\\\(\\begin{aligned} 100 &= 10^2 \\\\ 81 &= 9^2 \\\\ 64 &= 8^2 \\\\ 49 &= 7^2 \\\\end{aligned}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Identify the base number sequence, which decreases by 1 in each step.",
+        "workingOut": "\\\\(\\text{Bases} = 10, 9, 8, 7 \\\\implies \\\\text{Next bases} = 6, 5\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the square of the next base, 6.",
+        "workingOut": "\\\\(6^2 = 36\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Calculate the square of the following base, 5.",
+        "workingOut": "\\\\(5^2 = 25\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the results to state the next two light intensity levels. The next levels are 36 lux and 25 lux.",
+        "workingOut": "\\\\(\\\\text{Next terms} = 36, 25\\\\)",
+        "graphData": null
+      }
+    ]
   }
 ];

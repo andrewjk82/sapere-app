@@ -1,850 +1,1794 @@
 export const Y7_CH3F_QUESTIONS = [
   {
     "id": "y7-3f-q1a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$4 \\times 5m$",
-    "a": "20m",
+    "question": "Simplify:\\n\\n\\\\(4 \\times 5m\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers \\(4\\) and \\(5\\).",
-        "workingOut": "4 \\times 5 = 20"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 4 \\times 5m\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Attach the variable \\(m\\).",
-        "workingOut": "20m"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(20m\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(20\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(15m\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20m\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(25m\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q1b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$3 \\times 7y$",
-    "a": "21y",
+    "question": "Simplify:\\n\\n\\\\(3 \\times 7y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers \\(3\\) and \\(7\\).",
-        "workingOut": "3 \\times 7 = 21"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 3 \\times 7y\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Attach the variable \\(y\\).",
-        "workingOut": "21y"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(21y\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(21\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16y\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(26y\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(21y\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q1c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$6 \\times 2n$",
-    "a": "12n",
+    "question": "Simplify:\\n\\n\\\\(6 \\times 2n\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the numbers \\(6\\) and \\(2\\).",
-        "workingOut": "6 \\times 2 = 12"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 6 \\times 2n\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Attach the variable \\(n\\).",
-        "workingOut": "12n"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(12n\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(17n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q1d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$5y \\times 3y$",
-    "a": "15y^2",
+    "question": "Simplify:\\n\\n\\\\(5y \\times 3y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(5\\) and \\(3\\).",
-        "workingOut": "5 \\times 3 = 15"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 5y \\times 3y\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(y\\) by \\(y\\).",
-        "workingOut": "y \\times y = y^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "15y^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(15y^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(8y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(15y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(18y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(15y\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q1e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$4p \\times 6p$",
-    "a": "24p^2",
+    "question": "Simplify:\\n\\n\\\\(4p \\times 6p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(4\\) and \\(6\\).",
-        "workingOut": "4 \\times 6 = 24"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 4p \\times 6p\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(p\\) by \\(p\\).",
-        "workingOut": "p \\times p = p^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "24p^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(24p^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(24p\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(24p^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(27p^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(17p^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q1f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$5a \\times 4b$",
-    "a": "20ab",
+    "question": "Simplify:\\n\\n\\\\(5a \\times 4b\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then write the variables together in alphabetical order.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(5\\) and \\(4\\).",
-        "workingOut": "5 \\times 4 = 20"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 5a \\times 4b\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables \\(a\\) and \\(b\\).",
-        "workingOut": "a \\times b = ab"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "20ab"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(20ab\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(20ba\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20ab\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(24ab\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20 + a + b\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q1g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$4mn \\times 5m$",
-    "a": "20m^2n",
+    "question": "Simplify:\\n\\n\\\\(4mn \\times 5m\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(4\\) and \\(5\\).",
-        "workingOut": "4 \\times 5 = 20"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 4mn \\times 5m\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(m\\) and \\(m\\).",
-        "workingOut": "m \\times m = m^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Include the remaining variable \\(n\\).",
-        "workingOut": "20m^2n"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(20m^2n\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(20m^2n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20m^2na\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20m^2n + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(220m^2n\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 0
   },
   {
     "id": "y7-3f-q1h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Simplify:\\n\\n$3pq \\times 6pq$",
-    "a": "18p^2q^2",
+    "question": "Simplify:\\n\\n\\\\(3pq \\times 6pq\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(3\\) and \\(6\\).",
-        "workingOut": "3 \\times 6 = 18"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 3pq \\times 6pq\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(p\\) and \\(p\\).",
-        "workingOut": "p \\times p = p^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(q\\) and \\(q\\).",
-        "workingOut": "q \\times q = q^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "18p^2q^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(18p^2q^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(218p^2q^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(18p^2q^2 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(18p^2q^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(18p^2q^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n$(4m)^2$",
-    "a": "16m^2",
+    "question": "Rewrite the expression without brackets.\\n\\n\\\\((4m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "The expression \\((4m)^2\\) means \\(4m \\times 4m\\).",
-        "workingOut": "4m \\times 4m"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (4m)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers \\(4 \\times 4 = 16\\).",
-        "workingOut": "16"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables \\(m \\times m = m^2\\).",
-        "workingOut": "16m^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(16m^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(19m^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16m\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16m^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9m^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n$(6y)^2$",
-    "a": "36y^2",
+    "question": "Rewrite the expression without brackets.\\n\\n\\\\((6y)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "The expression \\((6y)^2\\) means \\(6y \\times 6y\\).",
-        "workingOut": "6y \\times 6y"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (6y)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers \\(6 \\times 6 = 36\\).",
-        "workingOut": "36"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables \\(y \\times y = y^2\\).",
-        "workingOut": "36y^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(36y^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(39y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36y\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(29y^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n$(12x)^2$",
-    "a": "144x^2",
+    "question": "Rewrite the expression without brackets.\\n\\n\\\\((12x)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "The expression \\((12x)^2\\) means \\(12x \\times 12x\\).",
-        "workingOut": "12x \\times 12x"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (12x)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Square the number \\(12^2 = 144\\).",
-        "workingOut": "144"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Square the variable \\(x^2\\).",
-        "workingOut": "144x^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(144x^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(147x^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(137x^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144x\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144x^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q2d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Rewrite the expression without brackets.\\n\\n$(15a)^2$",
-    "a": "225a^2",
+    "question": "Rewrite the expression without brackets.\\n\\n\\\\((15a)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "The expression \\((15a)^2\\) means \\(15a \\times 15a\\).",
-        "workingOut": "15a \\times 15a"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (15a)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Square the number \\(15^2 = 225\\).",
-        "workingOut": "225"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Square the variable \\(a^2\\).",
-        "workingOut": "225a^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(225a^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(218a^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(228a^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(225a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(225a^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q3a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$3m$ and $7n$",
-    "a": "21mn",
+    "question": "Find the product in simplified form.\\n\\n\\\\(3m\\\\) and \\\\(7n\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Product means to multiply.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication problem.",
-        "workingOut": "3m \\times 7n"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "3 \\times 7 = 21"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Write the variables together.",
-        "workingOut": "21mn"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(21mn\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(21nm\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(21 + m + n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(21mn\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(25mn\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q3b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$5y$ and $6y$",
-    "a": "30y^2",
+    "question": "Find the product in simplified form.\\n\\n\\\\(5y\\\\) and \\\\(6y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "5y \\times 6y"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "5 \\times 6 = 30"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables.",
-        "workingOut": "y \\times y = y^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "30y^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(30y^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(30y\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(30y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(23y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(33y^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q3c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$8xy$ and $9$",
-    "a": "72xy",
+    "question": "Find the product in simplified form.\\n\\n\\\\(8xy\\\\) and \\\\(9\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "8xy \\times 9"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers \\(8\\) and \\(9\\).",
-        "workingOut": "72"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Attach the variables.",
-        "workingOut": "72xy"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(72xy\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(76xy\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(72 + x + y\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(72yx\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(72xy\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q3d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$4d$ and $12d$",
-    "a": "48d^2",
+    "question": "Find the product in simplified form.\\n\\n\\\\(4d\\\\) and \\\\(12d\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "4d \\times 12d"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "4 \\times 12 = 48"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(d\\) and \\(d\\).",
-        "workingOut": "d^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "48d^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(48d^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(48d\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(48d^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(41d^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(51d^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q3e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$5p$ and $8q$",
-    "a": "40pq",
+    "question": "Find the product in simplified form.\\n\\n\\\\(5p\\\\) and \\\\(8q\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "5p \\times 8q"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "5 \\times 8 = 40"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine with variables.",
-        "workingOut": "40pq"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(40pq\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(40pq\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(40 + p + q\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(44pq\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(40qp\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 0
   },
   {
     "id": "y7-3f-q3f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$6xy$ and $9xy$",
-    "a": "54x^2y^2",
+    "question": "Find the product in simplified form.\\n\\n\\\\(6xy\\\\) and \\\\(9xy\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply the variables by adding indices.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "6xy \\times 9xy"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "6 \\times 9 = 54"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(x \\times x\\).",
-        "workingOut": "x^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(y \\times y\\).",
-        "workingOut": "y^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "54x^2y^2"
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(54x^2y^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(54x^2y^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(54x^2y^2 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(54x^2y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(254x^2y^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q3g",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$5m^2$ and $7$",
-    "a": "35m^2",
+    "question": "Find the product in simplified form.\\n\\n\\\\(5m^2\\\\) and \\\\(7\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers together.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "5m^2 \\times 7"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers \\(5\\) and \\(7\\).",
-        "workingOut": "35"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine with the variable part.",
-        "workingOut": "35m^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(35m^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(38m^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35m\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(35m^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28m^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   },
   {
     "id": "y7-3f-q3h",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Find the product in simplified form.\\n\\n$8p^2$ and $4p$",
-    "a": "32p^3",
+    "question": "Find the product in simplified form.\\n\\n\\\\(8p^2\\\\) and \\\\(4p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Write as a multiplication.",
-        "workingOut": "8p^2 \\times 4p"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = the given expression\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers \\(8\\) and \\(4\\).",
-        "workingOut": "32"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(p^2\\) and \\(p^1\\).",
-        "workingOut": "p^{2+1} = p^3"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "32p^3"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(32p^3\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(32p^3 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(32p^3a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(232p^3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(32p^3\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$(3y)^2 \\times y^4$",
-    "a": "9y^6",
+    "question": "Simplify:\\n\\n\\\\((3y)^2 \\times y^4\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((3y)^2\\).",
-        "workingOut": "9y^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (3y)^2 \\times y^4\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the result by \\(y^4\\).",
-        "workingOut": "9y^2 \\times y^4"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Add the indices for the base \\(y\\).",
-        "workingOut": "9y^{2+4} = 9y^6"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(9y^6\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(9y^6 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9y^6a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(29y^6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(9y^6\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$2m \\times (5m)^2$",
-    "a": "50m^3",
+    "question": "Simplify:\\n\\n\\\\(2m \\times (5m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((5m)^2\\).",
-        "workingOut": "25m^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 2m \\times (5m)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the expression by \\(2m\\).",
-        "workingOut": "2m \\times 25m^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers and add the indices.",
-        "workingOut": "50m^3"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(50m^3\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(50m^3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(50m^3 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(50m^3a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(250m^3\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 0
   },
   {
     "id": "y7-3f-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$7p^2 \\times 4p$",
-    "a": "28p^3",
+    "question": "Simplify:\\n\\n\\\\(7p^2 \\times 4p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then use index laws for the variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(7\\) and \\(4\\).",
-        "workingOut": "28"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 7p^2 \\times 4p\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(p^2\\) and \\(p^1\\) by adding indices.",
-        "workingOut": "p^{2+1} = p^3"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "28p^3"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(28p^3\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(28p^3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28p^3 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(28p^3a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(228p^3\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 0
   },
   {
     "id": "y7-3f-q4d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$5ab \\times 4ab$",
-    "a": "20a^2b^2",
+    "question": "Simplify:\\n\\n\\\\(5ab \\times 4ab\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(5\\) and \\(4\\).",
-        "workingOut": "20"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 5ab \\times 4ab\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(a \\times a\\).",
-        "workingOut": "a^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply \\(b \\times b\\).",
-        "workingOut": "b^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "20a^2b^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(20a^2b^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(220a^2b^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20a^2b^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20a^2b^2 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20a^2b^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q4e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$(3m)^2 \\times 4mn$",
-    "a": "36m^3n",
+    "question": "Simplify:\\n\\n\\\\((3m)^2 \\times 4mn\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((3m)^2\\).",
-        "workingOut": "9m^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (3m)^2 \\times 4mn\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the result by \\(4mn\\).",
-        "workingOut": "9m^2 \\times 4mn"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers.",
-        "workingOut": "36"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables.",
-        "workingOut": "36m^3n"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(36m^3n\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(236m^3n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36m^3n\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36m^3n + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(36m^3na\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q4f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$4x^2y \\times 5xy$",
-    "a": "20x^3y^2",
+    "question": "Simplify:\\n\\n\\\\(4x^2y \\times 5xy\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(4\\) and \\(5\\).",
-        "workingOut": "20"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 4x^2y \\times 5xy\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the \\(x\\) terms.",
-        "workingOut": "x^2 \\times x^1 = x^3"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the \\(y\\) terms.",
-        "workingOut": "y^1 \\times y^1 = y^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "20x^3y^2"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(20x^3y^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(220x^3y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20x^3y^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20x^3y^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(20x^3y^2 + 2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q5a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$(4y)^2 \\times 3y \\times y$",
-    "a": "48y^4",
+    "question": "Simplify:\\n\\n\\\\((4y)^2 \\times 3y \\times y\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first, then multiply from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((4y)^2\\).",
-        "workingOut": "16y^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (4y)^2 \\times 3y \\times y\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rewrite the expression.",
-        "workingOut": "16y^2 \\times 3y \\times y"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the terms.",
-        "workingOut": "(16 \\times 3)(y^2 \\times y^1 \\times y^1)"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "48y^4"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(48y^4\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(48y^4 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(248y^4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(48y^4a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(48y^4\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q5b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$3ab \\times b \\times a$",
-    "a": "3a^2b^2",
+    "question": "Simplify:\\n\\n\\\\(3ab \\times b \\times a\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Collect the coefficients and like variables.",
-        "workingOut": "3 \\times (a \\times a) \\times (b \\times b)"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 3ab \\times b \\times a\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables.",
-        "workingOut": "3 \\times a^2 \\times b^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "3a^2b^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(3a^2b^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(23a^2b^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3a^2b^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3a^2b^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3a^2b^2 + 2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 1
   },
   {
     "id": "y7-3f-q5c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$(3m)^2 \\times (4m)^2$",
-    "a": "144m^4",
+    "question": "Simplify:\\n\\n\\\\((3m)^2 \\times (4m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((3m)^2\\).",
-        "workingOut": "9m^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = (3m)^2 \\times (4m)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand \\((4m)^2\\).",
-        "workingOut": "16m^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the results together.",
-        "workingOut": "9m^2 \\times 16m^2"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the numbers and add the indices.",
-        "workingOut": "144m^4"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(144m^4\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(144m^4 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144m^4a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2144m^4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(144m^4\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q5d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$3mn^2 \\times (6m)^2$",
-    "a": "108m^3n^2",
+    "question": "Simplify:\\n\\n\\\\(3mn^2 \\times (6m)^2\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((6m)^2\\).",
-        "workingOut": "36m^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 3mn^2 \\times (6m)^2\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rewrite the expression.",
-        "workingOut": "3mn^2 \\times 36m^2"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the coefficients.",
-        "workingOut": "3 \\times 36 = 108"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables.",
-        "workingOut": "m^1 \\times m^2 = m^3"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine with \\(n^2\\).",
-        "workingOut": "108m^3n^2"
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(108m^3n^2\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(108m^3n^2a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2108m^3n^2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(108m^3n^2 + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(108m^3n^2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q5e",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$4p^2 \\times 5q \\times 3p$",
-    "a": "60p^3q",
+    "question": "Simplify:\\n\\n\\\\(4p^2 \\times 5q \\times 3p\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Multiply the coefficients \\(4\\), \\(5\\), and \\(3\\).",
-        "workingOut": "4 \\times 5 \\times 3 = 60"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 4p^2 \\times 5q \\times 3p\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the \\(p\\) terms.",
-        "workingOut": "p^2 \\times p^1 = p^3"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine with the remaining variable \\(q\\).",
-        "workingOut": "60p^3q"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(60p^3q\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(60p^3q + 2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(260p^3q\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(60p^3qa\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(60p^3q\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 3
   },
   {
     "id": "y7-3f-q5f",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Simplify:\\n\\n$6k^2 \\times (3k)^2 \\times k$",
-    "a": "54k^5",
+    "question": "Simplify:\\n\\n\\\\(6k^2 \\times (3k)^2 \\times k\\\\)",
     "t": "Multiplying algebraic terms",
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Expand \\((3k)^2\\).",
-        "workingOut": "9k^2"
+        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
+        "workingOut": "\\\\(\\text{Expression} = 6k^2 \\times (3k)^2 \\times k\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rewrite the expression.",
-        "workingOut": "6k^2 \\times 9k^2 \\times k"
+        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
+        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the coefficients \\(6\\) and \\(9\\).",
-        "workingOut": "54"
+        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
+        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply the variables by adding indices.",
-        "workingOut": "k^{2+2+1} = k^5"
+        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
+        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine them.",
-        "workingOut": "54k^5"
+        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
+        "workingOut": "\\\\(54k^5\\\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "options": [
+      {
+        "text": "\\\\(54k^5a\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(254k^5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(54k^5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(54k^5 + 2\\\\)",
+        "imageUrl": ""
+      }
+    ],
+    "answer": 2
   }
 ];

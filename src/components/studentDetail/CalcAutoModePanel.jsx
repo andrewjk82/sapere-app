@@ -261,7 +261,7 @@ export default function CalcAutoModePanel({ uid }) {
             </div>
             <p style={{ fontSize: "0.8rem", color: "#6d28d9", fontWeight: 600, marginBottom: "14px", lineHeight: 1.5 }}>
               학년을 선택하면 모든 연산 Stage/Group이 적정 난이도에 자동 배치됩니다.
-              주간 성과에 따라 각 Group이 자동으로 레벨 업/다운합니다.
+              각 Group은 문제 50개가 누적될 때마다(2주 간격 체크) 정답률에 따라 자동으로 레벨 업/다운합니다.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "8px" }}>

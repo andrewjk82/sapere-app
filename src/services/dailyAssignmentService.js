@@ -603,9 +603,13 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
 
   const targets = buildDailyTargets(studentProfile);
 
-  // For Year 1-6, only keep questions that already have multiple-choice options.
+  // For Year 1-4, only keep questions that already have multiple-choice options.
   // Open-ended questions from the bank are replaced by the procedural generator below.
-  const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 7);
+  // Year 5-6 moved to seed-only (2026-07-06, alongside Year 7-12) now that the
+  // seed bank has enough coverage per chapter — this flag must stay in sync
+  // with generationYears below, or Year 5-6 short-answer seed questions would
+  // be filtered out with no generator left to replace them.
+  const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 5);
 
   let questions = rawDocs
     .filter((d) => d.isActive !== false)
@@ -623,11 +627,12 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     if (pruneIds.length > 0) pruneSeenQuestions(uid, pruneIds).catch(() => {});
   }
 
-  // Top up the shortfall with procedurally-generated questions for the lower
-  // years (Year 1-6), which rely on generation rather than seeded questions.
-  // Year 7-12 stays seed-only (see commit c99114b), so we restrict generation
-  // to the targeted years below 7.
-  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 7);
+  // Top up the shortfall with procedurally-generated questions for the lowest
+  // years (Year 1-4), which still rely on generation rather than seeded
+  // questions. Year 5-6 joined Year 7-12 as seed-only on 2026-07-06 now that
+  // those chapters have enough seeded coverage (see commit c99114b for the
+  // original Year 7-12 cutover).
+  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 5);
   let generatedCount = 0;
   if (generationYears.length > 0 && questions.length < questionCount) {
     const need = questionCount - questions.length;

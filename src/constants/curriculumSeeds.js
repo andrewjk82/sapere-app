@@ -88,6 +88,7 @@ import { Y11_EXT1_CH1B_QUESTIONS } from './seedYear11Ext1Ch1BQuestions.js';
 import { Y11_EXT1_CH1C_QUESTIONS } from './seedYear11Ext1Ch1CQuestions.js';
 import { Y11_EXT1_CH1D_QUESTIONS } from './seedYear11Ext1Ch1DQuestions.js';
 import { Y9_CH3A_QUESTIONS } from './seedYear9Ch3Questions.js';
+import { Y9_CH3B_QUESTIONS } from './seedYear9Ch3BQuestions.js';
 import { Y9_CH4A_QUESTIONS } from './seedYear9Ch4Questions.js';
 import { Y9_CH5A_QUESTIONS } from './seedYear9Ch5Questions.js';
 import { Y9_CH5B_QUESTIONS } from './seedYear9Ch5BQuestions.js';
@@ -228,6 +229,9 @@ import { Y10_CH2C_QUESTIONS } from './seedYear10Ch2CQuestions.js';
 import { Y10_CH2D_QUESTIONS } from './seedYear10Ch2DQuestions.js';
 import { Y10_CH2E_QUESTIONS } from './seedYear10Ch2EQuestions.js';
 import { Y10_CH3J_QUESTIONS } from './seedYear10Ch3JQuestions.js';
+import { Y10_CH3A_QUESTIONS } from './seedYear10Ch3AQuestions.js';
+import { Y10_CH3B_QUESTIONS } from './seedYear10Ch3BQuestions.js';
+import { Y10_CH3C_QUESTIONS } from './seedYear10Ch3CQuestions.js';
 import { Y10_CH4G_QUESTIONS } from './seedYear10Ch4GQuestions.js';
 import { Y10_CH5_QUESTIONS } from './seedYear10Ch5GQuestions.js';
 import { Y10_CH5A_QUESTIONS } from './seedYear10Ch5AQuestions.js';
@@ -295,6 +299,7 @@ import { Y5_CH1_QUESTIONS } from './seedYear5Ch1Questions.js';
 import { Y5_CH2_QUESTIONS_AR1, Y5_CH2_QUESTIONS_AR2 } from './seedYear5Ch2Questions.js';
 import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR2, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4, Y5_CH3_QUESTIONS_MR6 } from './seedYear5Ch3Questions.js';
 import { Y5_CH4_QUESTIONS } from './seedYear5Ch4Questions.js';
+import { Y5_CH5_QUESTIONS } from './seedYear5Ch5Questions.js';
 
 
 export const CHAPTER_SEED_REGISTRY = [
@@ -407,6 +412,46 @@ export const CHAPTER_SEED_REGISTRY = [
     year: 'Year 5',
     seed: Y5_CH4_QUESTIONS.filter(q => q.topicId === 'y5-rqf-3'),
     label: 'Y5 Ch4 · MA3-RQF-01 Equivalent fractions',
+  },
+  {
+    chapterId: 'y5-rn',
+    chapterTitle: 'Represents Numbers (A)',
+    topicId: 'y5-rn-4',
+    topicCode: 'MA3-RN-01',
+    topicTitle: 'Percentages',
+    year: 'Year 5',
+    seed: Y5_CH5_QUESTIONS.filter(q => q.topicId === 'y5-rn-4'),
+    label: 'Y5 Ch1 · MA3-RN-01 Percentages',
+  },
+  {
+    chapterId: 'y5-rn',
+    chapterTitle: 'Represents Numbers (A)',
+    topicId: 'y5-rn-5',
+    topicCode: 'MA3-RN-01',
+    topicTitle: 'Percentage discounts',
+    year: 'Year 5',
+    seed: Y5_CH5_QUESTIONS.filter(q => q.topicId === 'y5-rn-5'),
+    label: 'Y5 Ch1 · MA3-RN-01 Percentage discounts',
+  },
+  {
+    chapterId: 'y5-ar',
+    chapterTitle: 'Additive Relations (A)',
+    topicId: 'y5-ar-3',
+    topicCode: 'MA3-AR-01',
+    topicTitle: 'Add and subtract decimals',
+    year: 'Year 5',
+    seed: Y5_CH5_QUESTIONS.filter(q => q.topicId === 'y5-ar-3'),
+    label: 'Y5 Ch2 · MA3-AR-01 Add and subtract decimals',
+  },
+  {
+    chapterId: 'y5-ar',
+    chapterTitle: 'Additive Relations (A)',
+    topicId: 'y5-ar-4',
+    topicCode: 'MA3-AR-01',
+    topicTitle: 'Budgeting',
+    year: 'Year 5',
+    seed: Y5_CH5_QUESTIONS.filter(q => q.topicId === 'y5-ar-4'),
+    label: 'Y5 Ch2 · MA3-AR-01 Budgeting',
   },
   {
     chapterId: 'y9-1',
@@ -1021,6 +1066,9 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2e', topicCode: '2E', topicTitle: 'Rationalising denominators', year: 'Year 10', seed: Y10_CH2E_QUESTIONS, label: 'Y10 Ch2 · 2E Rationalising denominators' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2f', topicCode: '2F', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH2F_QUESTIONS, label: 'Y10 Ch2 · 2F Revision' },
   { chapterId: 'y10-2', chapterTitle: 'Chapter 2: Review of surds', topicId: 'y10-2g', topicCode: '2G', topicTitle: 'Challenge exercise', year: 'Year 10', seed: Y10_CH2G_QUESTIONS, label: 'Y10 Ch2 · 2G Challenge exercise' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Expanding brackets and collecting like terms', year: 'Year 10', seed: Y10_CH3A_QUESTIONS, label: 'Y10 Ch3 · 3A Expanding brackets' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Solving linear equations and inequalities', year: 'Year 10', seed: Y10_CH3B_QUESTIONS, label: 'Y10 Ch3 · 3B Solving linear equations' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'More difficult linear equations and inequalities', year: 'Year 10', seed: Y10_CH3C_QUESTIONS, label: 'Y10 Ch3 · 3C More difficult equations' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-4', chapterTitle: 'Chapter 4: Lines and linear equations', topicId: 'y10-4g', topicCode: '4G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH4G_QUESTIONS, label: 'Y10 Ch4 · 4G Revision' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5g', topicCode: '5G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH5_QUESTIONS, label: 'Y10 Ch5 · 5G Revision' },
@@ -1144,6 +1192,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1C', topicCode: '1C', topicTitle: 'Algebraic fractions', year: 'Year 11', seed: Y11_EXT1_CH1C_QUESTIONS, label: 'Y11 Ext1 Ch1 · Algebraic fractions' },
   { chapterId: 'y11e1-1', chapterTitle: 'Chapter 1: Algebra review', topicId: 'y11e1-1D', topicCode: '1D', topicTitle: 'Quadratic equations', year: 'Year 11', seed: Y11_EXT1_CH1D_QUESTIONS, label: 'Y11 Ext1 Ch1 · Quadratic equations' },
   { chapterId: 'y9-3', chapterTitle: 'Chapter 3: Consumer arithmetic', topicId: 'y9-3a', topicCode: '3A', topicTitle: 'Review of percentages', year: 'Year 9', seed: Y9_CH3A_QUESTIONS, label: 'Y9 Ch3 · Consumer arithmetic' },
+  { chapterId: 'y9-3', chapterTitle: 'Chapter 3: Consumer arithmetic', topicId: 'y9-3b', topicCode: '3B', topicTitle: 'Using percentages', year: 'Year 9', seed: Y9_CH3B_QUESTIONS, label: 'Y9 Ch3 · Consumer arithmetic' },
   { chapterId: 'y9-4', chapterTitle: 'Chapter 4: Factorisation', topicId: 'y9-4a', topicCode: '4A', topicTitle: 'Factorisation', year: 'Year 9', seed: Y9_CH4A_QUESTIONS, label: 'Y9 Ch4 · Factorisation' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5a', topicCode: '5A', topicTitle: 'Expressions', year: 'Year 9', seed: Y9_CH5A_QUESTIONS, label: 'Y9 Ch5 · Linear equations' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5b', topicCode: '5B', topicTitle: 'Solving simple linear equations', year: 'Year 9', seed: Y9_CH5B_QUESTIONS, label: 'Y9 Ch5 · Solving simple linear equations' },
@@ -1294,9 +1343,13 @@ export {
   CH5_QUESTIONS_Y11A,
   Y9_CH2A_QUESTIONS,
   Y9_CH3A_QUESTIONS,
+  Y9_CH3B_QUESTIONS,
   Y9_CH4A_QUESTIONS,
   Y9_CH5A_QUESTIONS,
   Y9_CH6A_QUESTIONS,
   Y9_CH7A_QUESTIONS,
   Y9_CH8A_QUESTIONS,
+  Y10_CH3A_QUESTIONS,
+  Y10_CH3B_QUESTIONS,
+  Y10_CH3C_QUESTIONS,
 };

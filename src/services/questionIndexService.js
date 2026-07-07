@@ -120,7 +120,16 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
 
     const docRef = indexRef(chapterId);
     const snap = await getDoc(docRef);
-    let ids = snap.exists() ? (snap.data().ids || []) : [];
+    if (!snap.exists()) {
+      // Same contract as updateIndexIfExists: never CREATE an index doc from
+      // an incremental update. A fresh doc holding only this seed batch's ids
+      // would hide every other question in the chapter from readers that
+      // trust an existing doc completely. Leave builtVersion behind instead
+      // so the doc gets built by a proper full rebuild.
+      indexIncomplete = true;
+      continue;
+    }
+    let ids = snap.data().ids || [];
 
     if (rem.length) {
       const remSet = new Set(rem);

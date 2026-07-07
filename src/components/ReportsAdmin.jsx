@@ -529,6 +529,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         approved: true,
         approvedAt: serverTimestamp(),
       });
+      setReports(prev => prev.map(r =>
+        r.id === report.id ? { ...r, status: 'resolved', approved: true } : r
+      ));
+      showToast('Secret Note approved — the student\'s note will be marked as mastered.', 'success');
       setPreviewReport(null);
       setPreviewQuestion(null);
     } catch (err) {

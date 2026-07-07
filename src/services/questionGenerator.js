@@ -1837,8 +1837,13 @@ const genNumbersTo1000 = (difficulty) => {
       answer, `${n} = ${h > 0 ? h + ' hundreds + ' : ''}${t} tens + ${o} ones = ${answer}.`, 30);
   }
   if (mode === 'compare') {
-    let a = randomInt(100, max), b = randomInt(100, max);
-    while (a === b) b = randomInt(100, max);
+    // 'easy' sets max=100, so [100, max] holds only the single value 100 —
+    // rejecting for a distinct b would spin forever and freeze the tab.
+    // Widen the ceiling for this comparison only so there's always a second
+    // number available.
+    const compareMax = Math.max(max, 101);
+    let a = randomInt(100, compareMax), b = randomInt(100, compareMax);
+    while (a === b) b = randomInt(100, compareMax);
     const answer = a > b ? `${a} > ${b}` : `${a} < ${b}`;
     return q('numbers_to_1000', `Which statement is correct?`,
       wordOptions(answer, [`${a} > ${b}`, `${a} < ${b}`, `${a} = ${b}`].filter(s => s !== answer)),
@@ -4334,7 +4339,13 @@ const normalizeInput = (input, maybeDifficulty) => {
     course: input?.course || 'Advanced',
     chapterId: input?.chapterId,
     topicId: input?.topicId,
-    difficulty: normalizeDifficulty(input?.difficulty),
+    // input?.difficulty wins if the caller set it on the object; otherwise
+    // fall back to the second positional arg (dailyAssignmentService's daily
+    // top-up loop calls generateQuestion({...}, difficulty) — without this
+    // fallback that difficulty was silently discarded and every procedurally
+    // generated Year 1-6 question was generated at 'easy' regardless of the
+    // intended rotation.
+    difficulty: normalizeDifficulty(input?.difficulty ?? maybeDifficulty),
     type: input?.type,
     assignedChapters: input?.assignedChapters || [],
     assignedTopics: input?.assignedTopics || [],

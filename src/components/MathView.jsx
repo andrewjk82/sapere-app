@@ -17,7 +17,7 @@ const convertMarkdownTables = (str) => {
   if (typeof str !== 'string') return str;
   const tableLineRe = /^\s*\|.+\|\s*$/;
   const separatorRe = /^\s*\|[\s|:\-]+\|\s*$/;
-  const rawLines = str.split(/\r?\n/);
+  const rawLines = str.split(/\\+n|\r?\n/);
   const out = [];
   let i = 0;
   while (i < rawLines.length) {
@@ -187,6 +187,9 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
               { left: '\\(', right: '\\)', display: false },
               { left: '\\[', right: '\\]', display: true },
             ],
+            macros: {
+              "\\hexagon": "\\text{⬡}"
+            },
             throwOnError: false,
           });
         } catch (err) {
@@ -220,8 +223,8 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       <div ref={containerRef} style={combinedStyle}>
         {lines.map((line, idx) => {
           const isSecondLine = idx === 1;
-          const hasDisplayMath = /\\\[|\$\$/.test(String(line));
-          const isPureMath = /^\s*(?:\$\$|\\\[|\$|\\\()[\s\S]+?(?:\$\$|\\\]|\$|\\\))[\s,;:?.!]*$/.test(String(line).trim());
+          const hasDisplayMath = /\\+\[|\$\$/.test(String(line));
+          const isPureMath = /^\s*(?:\$\$|\\+\[|\$|\\+\()[\s\S]+?(?:\$\$|\\+\]|\$|\\+\))[\s,;:?.!]*$/.test(String(line).trim());
           const isCentered = idx > 0 && (hasDisplayMath || isPureMath);
           return (
             <div
@@ -241,7 +244,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
         <img
           src={diagramSvgSrc}
           alt="Diagram"
-          style={{ width: '100%', maxHeight: '320px', objectFit: 'contain', marginTop: '8px' }}
+          style={{ width: 'auto', maxHeight: '320px', objectFit: 'contain', marginTop: '16px', alignSelf: 'center', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
         />
       ) : (
         <>

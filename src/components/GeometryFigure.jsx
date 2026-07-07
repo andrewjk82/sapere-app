@@ -38,6 +38,7 @@ const formatLabel = (str) => {
     .replace(/\^2/g, '²')
     .replace(/\^3/g, '³')
     .replace(/\\sqrt/g, '√')
+    .replace(/√\{([^}]+)\}/g, '√$1')
     .replace(/\\/g, '') // remove trailing backslashes if any
     .replace(/\$+/g, '');
 };

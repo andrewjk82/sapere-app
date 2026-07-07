@@ -9,9 +9,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "174",
-      "191",
+      "183",
       "157",
-      "183"
+      "191"
     ],
     "h": "Break the Roman numeral down from left to right: $C = 100$, $L = 50$, $X = 10$, and look out for subtractive pairs like $IV$.",
     "s": "To convert $CLXXIV$:\n1. $C = 100$\n2. $L = 50$\n3. $XX = 10 + 10 = 20$\n4. $IV = 5 - 1 = 4$\n\nAdding these together: $100 + 50 + 20 + 4 = 174$.",
@@ -37,12 +37,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Convert the Roman numeral $CDLVI$ to a Hindu-Arabic numeral.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "456",
       "502",
-      "410",
-      "479"
+      "479",
+      "456",
+      "410"
     ],
     "h": "Note that $C$ (100) comes before $D$ (500), which forms the subtractive pair $CD = 400$.",
     "s": "To convert $CDLVI$:\n1. $CD = 500 - 100 = 400$\n2. $L = 50$\n3. $V = 5$\n4. $I = 1$\n\nSumming the values: $400 + 50 + 5 + 1 = 456$.",
@@ -64,12 +64,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Convert the Roman numeral $CMXCVIII$ to a Hindu-Arabic numeral.",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "998",
       "1098",
-      "898",
-      "1048"
+      "998",
+      "1048",
+      "898"
     ],
     "h": "Look for subtractive pairs: $CM$ (100 before 1000) and $XC$ (10 before 100).",
     "s": "To convert $CMXCVIII$:\n1. $CM = 1000 - 100 = 900$\n2. $XC = 100 - 10 = 90$\n3. $VIII = 5 + 3 = 8$\n\nSumming the values: $900 + 90 + 8 = 998$.",
@@ -91,12 +91,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Convert the Roman numeral $CCLXIX$ to a Hindu-Arabic numeral.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "269",
       "296",
-      "242",
-      "282"
+      "282",
+      "269",
+      "242"
     ],
     "h": "Break down the parts: $CC = 200$, $LX = 60$, and $IX$ is a subtractive pair.",
     "s": "To convert $CCLXIX$:\n1. $CC = 200$\n2. $L = 50$\n3. $X = 10$\n4. $IX = 10 - 1 = 9$\n\nSumming the values: $200 + 50 + 10 + 9 = 269$.",
@@ -118,11 +118,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Convert the Roman numeral $DCCLX$ to a Hindu-Arabic numeral.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "684",
       "760",
       "836",
-      "684",
       "798"
     ],
     "h": "Break down the parts: $D = 500$, $CC = 200$, $L = 50$, and $X = 10$.",
@@ -148,8 +148,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "DCCCXL",
-      "DCCCXC",
       "DCCXL",
+      "DCCCXC",
       "CMXL"
     ],
     "h": "Write the number by breaking it down into hundreds and tens: $800 + 40$. Remember $800 = 500 + 300$ and $40$ is written by subtracting $10$ from $50$.",
@@ -176,12 +176,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Express the number $946$ in Roman numerals.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "CMLXVI",
       "CMXLVI",
-      "CMXVI",
       "DCCCCXLVI",
-      "CMLXVI"
+      "CMXVI"
     ],
     "h": "Break the number into $900 + 40 + 6$. Note that $900$ is written as $100$ subtracted from $1000$, and $40$ is $10$ subtracted from $50$.",
     "s": "To express $946$ in Roman numerals:\n1. Break it down: $900 + 40 + 6$\n2. $900 = CM$ (1000 - 100)\n3. $40 = XL$ (50 - 10)\n4. $6 = VI$ (5 + 1)\n\nCombine the parts: $CMXLVI$.",
@@ -207,12 +207,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Express the number $1996$ in Roman numerals.",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "MCMXCVI",
+      "MXMXCVI",
       "MCMLXXXXVI",
       "MCMXCIV",
-      "MXMXCVI"
+      "MCMXCVI"
     ],
     "h": "Break down into thousands, hundreds, tens, and units: $1000 + 900 + 90 + 6$. Check the subtractive notations for $900$ and $90$.",
     "s": "To express $1996$:\n1. $1000 = M$\n2. $900 = CM$ (1000 - 100)\n3. $90 = XC$ (100 - 10)\n4. $6 = VI$ (5 + 1)\n\nCombine: $MCMXCVI$.",
@@ -238,12 +238,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Express the number $439$ in Roman numerals.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "CDXLIX",
       "CDXXXIX",
       "CCCCXXXIX",
-      "CMXXXIX",
-      "CDXLIX"
+      "CMXXXIX"
     ],
     "h": "Break down the number into $400 + 30 + 9$. Remember that $400$ is $CD$ and $9$ is $IX$.",
     "s": "To express $439$:\n1. $400 = CD$\n2. $30 = XXX$\n3. $9 = IX$\n\nCombine: $CDXXXIX$.",
@@ -269,12 +269,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Express the number $88$ in Roman numerals.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "LXXXVIII",
       "XXVIII",
-      "LXXXVII",
-      "XCIII"
+      "XCIII",
+      "LXXXVIII",
+      "LXXXVII"
     ],
     "h": "Break down into $80 + 8$. $80$ is $L$ (50) plus three $X$'s, and $8$ is $V$ (5) plus three $I$'s.",
     "s": "To express $88$:\n1. $80 = LXXX$\n2. $8 = VIII$\n\nCombine: $LXXXVIII$.",
@@ -300,12 +300,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Write the number $3\\,482\\,905$ in words.",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "Three million, four hundred and eighty-two thousand, nine hundred and five",
-      "Three million, forty-eight thousand, nine hundred and five",
       "Three hundred and forty-eight thousand, nine hundred and five",
-      "Thirty-four million, eighty-two thousand, nine hundred and five"
+      "Three million, forty-eight thousand, nine hundred and five",
+      "Thirty-four million, eighty-two thousand, nine hundred and five",
+      "Three million, four hundred and eighty-two thousand, nine hundred and five"
     ],
     "h": "Read the number in periods of three digits: Millions, Thousands, and Units. $3$ is in the millions period, $482$ is in the thousands, and $905$ is in the units.",
     "s": "The number $3\\,482\\,905$ is grouped as:\n- $3$: Three million\n- $482$: four hundred and eighty-two thousand\n- $905$: nine hundred and five.\n\nCombined: 'Three million, four hundred and eighty-two thousand, nine hundred and five'.",
@@ -331,11 +331,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Write the number $97\\,003\\,002$ in words.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Ninety-seven million, three thousand and two",
       "Ninety-seven million, three hundred thousand and two",
       "Nine million, seven hundred and three thousand and two",
+      "Ninety-seven million, three thousand and two",
       "Ninety-seven million, thirty thousand and two"
     ],
     "h": "Look at the periods of three. $97$ is in the millions period. In the thousands period, we have only $003$. In the units period, we have $002$.",
@@ -362,12 +362,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "What is the place value of the digit $7$ in the number $547\\,210$?",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "7,000",
-      "70,000",
+      "7",
       "700",
-      "7"
+      "70,000",
+      "7,000"
     ],
     "h": "Identify which column the digit $7$ sits in (Units, Tens, Hundreds, Thousands, Ten Thousands, or Hundred Thousands).",
     "s": "In the number $547\\,210$, the digit $7$ is in the thousands place. Therefore, its place value is $7 \\times 1000 = 7,000$.",
@@ -389,11 +389,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Write the following expanded expression as an ordinary numeral:\n$(7 \\times 10^4) + (4 \\times 10^3) + (0 \\times 10^2) + (9 \\times 10^1) + (3 \\times 1)$",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "74093",
-      "81502",
       "66684",
+      "81502",
+      "74093",
       "77798"
     ],
     "h": "Calculate the value of each term ($10^4 = 10\\,000$, $10^3 = 1\\,000$, etc.) and add them together.",
@@ -420,12 +420,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Write the number $8\\,352$ in expanded exponential notation.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)\\)",
-      "\\((8 \\times 10^4) + (3 \\times 10^3) + (5 \\times 10^2) + (2 \\times 10)\\)",
       "\\((8 \\times 1000) + (3 \\times 100) + (5 \\times 10) + 2\\)",
-      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^2) + (2 \\times 1)\\)"
+      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^2) + (2 \\times 1)\\)",
+      "\\((8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)\\)",
+      "\\((8 \\times 10^4) + (3 \\times 10^3) + (5 \\times 10^2) + (2 \\times 10)\\)"
     ],
     "h": "Write the place value of each digit using powers of $10$. E.g. Thousands place is $10^3$, Hundreds is $10^2$, Tens is $10^1$, and Units is $1$.",
     "s": "To express $8\\,352$:\n- $8$ is in Thousands ($8 \\times 10^3$)\n- $3$ is in Hundreds ($3 \\times 10^2$)\n- $5$ is in Tens ($5 \\times 10^1$)\n- $2$ is in Units ($2 \\times 1$)\n\nCombining these: $(8 \\times 10^3) + (3 \\times 10^2) + (5 \\times 10^1) + (2 \\times 1)$.",
@@ -454,9 +454,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "300",
-      "330",
       "270",
-      "315"
+      "315",
+      "330"
     ],
     "h": "Identify which column the digit $3$ sits in.",
     "s": "In the number $27\\,318$, the digit $3$ is in the hundreds place. Thus, its place value is $3 \\times 100 = 300$.",
@@ -478,12 +478,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Write the number **four hundred and five thousand, two hundred and twelve** in ordinary numerals.",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "405212",
+      "425473",
       "445733",
       "364691",
-      "425473"
+      "405212"
     ],
     "h": "Write the thousands period first (four hundred and five -> 405), then write the units period (two hundred and twelve -> 212). Join them.",
     "s": "1. The thousands period is 'four hundred and five thousand' $= 405\\,000$.\n2. The units period is 'two hundred and twelve' $= 212$.\n\nCombining these gives $405\\,212$.",
@@ -505,11 +505,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Write the number **six million, seventy-two thousand and five** in ordinary numerals.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "5464805",
       "6072005",
       "6679206",
-      "5464805",
       "6375605"
     ],
     "h": "Break it down: Six million ($6\\,000\\,000$), seventy-two thousand ($72\\,000$), and five ($5$). Use placeholder zeros for columns with no values (like hundred thousands and hundreds/tens).",
@@ -532,12 +532,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Convert the following expanded notation to an ordinary numeral:\n$(9 \\times 10^5) + (8 \\times 10^3) + (2 \\times 10^2) + (6 \\times 1)$",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "953616",
       "908206",
       "999027",
-      "817385",
-      "953616"
+      "817385"
     ],
     "h": "Note that there is no $10^4$ (ten thousands) or $10^1$ (tens) term. Use $0$ as a placeholder for these positions.",
     "s": "Expand the terms:\n- $9 \\times 10^5 = 900\\,000$\n- No $10^4$ term $= 0$\n- $8 \\times 10^3 = 8\\,000$\n- $2 \\times 10^2 = 200$\n- No $10^1$ term $= 0$\n- $6 \\times 1 = 6$\n\nSum: $900\\,000 + 8\\,000 + 200 + 6 = 908\\,206$.",
@@ -559,12 +559,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "What is the numerical place value of the digit $9$ in the number $395\\,072$?",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "90000",
-      "99000",
+      "94500",
       "81000",
-      "94500"
+      "90000",
+      "99000"
     ],
     "h": "Find which position the digit $9$ holds. It is to the left of the thousands column.",
     "s": "In the number $395\\,072$, the digit $9$ is in the ten thousands place. Its value is $9 \\times 10\\,000 = 90\\,000$.",
@@ -589,9 +589,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "80000",
+      "84000",
       "88000",
-      "72000",
-      "84000"
+      "72000"
     ],
     "h": "Look at the digit in the thousands place (which is $3$). If it is less than $5$, round down.",
     "s": "1. The digit in the ten-thousands place is $8$.\n2. The digit to its right (thousands place) is $3$.\n3. Since $3 < 5$, we round down. The $8$ remains, and all digits to the right become zero.\n\nResult: $80\\,000$.",
@@ -613,11 +613,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Round off the number $4\\,517\\,380$ to the nearest $10\\,000$.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "4520000",
-      "4972000",
       "4068000",
+      "4972000",
+      "4520000",
       "4746000"
     ],
     "h": "Identify the ten-thousands place (which has a $1$). Look at the digit to its right ($7$) to decide whether to round up or down.",
@@ -640,11 +640,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Round off the number $849$ to the nearest $100$.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "800",
-      "880",
       "720",
+      "880",
+      "800",
       "840"
     ],
     "h": "Look at the tens place digit ($4$) to decide whether to round the hundreds digit up or down.",
@@ -667,12 +667,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Round off the number $750$ to the nearest $100$.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "840",
       "800",
-      "880",
       "720",
-      "840"
+      "880"
     ],
     "h": "Look at the tens place digit ($5$). When the digit is exactly $5$, we round up.",
     "s": "1. Rounding place (hundreds): $7$\n2. Deciding digit (tens): $5$\n3. Since the tens digit is $5$, we round up. Add $1$ to $7$ to get $8$, and write zeros.\n\nResult: $800$.",
@@ -694,12 +694,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Is the number $86$ closer to $80$ or to $90$? Choose the correct statement.",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "Closer to 80; rounds to 90",
       "Closer to 90; rounds to 90",
       "Closer to 80; rounds to 80",
-      "Closer to 90; rounds to 80",
-      "Closer to 80; rounds to 90"
+      "Closer to 90; rounds to 80"
     ],
     "h": "Find the distance from $86$ to $80$ and to $90$. The midpoint is $85$.",
     "s": "Distance to $80$: $86 - 80 = 6$\nDistance to $90$: $90 - 86 = 4$\n\nSince $4 < 6$, it is closer to $90$. Rounding $86$ to the nearest $10$ yields $90$.",
@@ -721,12 +721,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Compare $8^2$ and $60$ using the correct inequality symbol.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "8^2 > 60",
       "8^2 < 60",
-      "8^2 = 60",
-      "None of the above"
+      "None of the above",
+      "8^2 > 60",
+      "8^2 = 60"
     ],
     "h": "First calculate the value of $8^2$ (which is $8 \\times 8$) and then compare it to $60$.",
     "s": "1. Calculate exponent: $8^2 = 8 \\times 8 = 64$\n2. Compare values: Since $64$ is greater than $60$, we write: $8^2 > 60$.",
@@ -756,8 +756,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "opts": [
       "\\(3 \\times (4 + 2) = 20 - 2\\)",
       "\\(3 \\times (4 + 2) > 20 - 2\\)",
-      "\\(3 \\times (4 + 2) < 20 - 2\\)",
-      "None of the above"
+      "None of the above",
+      "\\(3 \\times (4 + 2) < 20 - 2\\)"
     ],
     "h": "Evaluate both sides of the expression first. Follow the order of operations (BODMAS) for the left side.",
     "s": "Left Side: $3 \\times (4 + 2) = 3 \\times 6 = 18$\nRight Side: $20 - 2 = 18$\n\nSince both sides equal $18$, the correct symbol is $=$.",
@@ -786,9 +786,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "14000",
+      "14700",
       "15400",
-      "12600",
-      "14700"
+      "12600"
     ],
     "h": "Find the thousands digit ($4$) and check the hundreds digit ($3$) to its right.",
     "s": "1. Rounding place (thousands): $4$\n2. Checking digit (hundreds): $3$\n3. Since $3 < 5$, round down.\n\nResult: $14\\,000$.",
@@ -810,12 +810,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Compare $2^4$ and $4^2$ with the correct symbol.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "2^4 = 4^2",
-      "2^4 > 4^2",
       "2^4 < 4^2",
-      "None of the above"
+      "None of the above",
+      "2^4 = 4^2",
+      "2^4 > 4^2"
     ],
     "h": "Calculate $2^4$ ($2 \\times 2 \\times 2 \\times 2$) and $4^2$ ($4 \\times 4$) separately, then compare.",
     "s": "1. $2^4 = 2 \\times 2 \\times 2 \\times 2 = 16$\n2. $4^2 = 4 \\times 4 = 16$\n\nBoth values are equal, so $2^4 = 4^2$.",
@@ -841,12 +841,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Round off the number $899\\,950$ to the nearest hundred ($100$).",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "945000",
       "900000",
-      "990000",
       "810000",
-      "945000"
+      "990000"
     ],
     "h": "Find the hundreds digit ($9$). Look at the tens digit ($5$). Notice how rounding up triggers a chain of carrying over.",
     "s": "1. Hundreds digit is $9$. Deciding digit (tens) is $5$, so round up.\n2. Add $1$ to the hundreds place: $9 + 1 = 10$ (write $0$, carry over $1$ to the thousands place).\n3. Thousands place: $9 + 1 = 10$ (write $0$, carry over $1$ to ten-thousands).\n4. Ten-thousands place: $9 + 1 = 10$ (write $0$, carry over $1$ to hundred-thousands).\n5. Hundred-thousands place: $8 + 1 = 9$.\n\nResult: $900\\,000$.",
@@ -868,12 +868,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Calculate: $85\\,314 - 67\\,429$",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "17885",
       "19674",
-      "16097",
-      "18779"
+      "17885",
+      "18779",
+      "16097"
     ],
     "h": "Set up the subtraction vertically. You will need to borrow from left columns because several digits on top are smaller than those on the bottom.",
     "s": "Performing vertical subtraction:\n  $85\\,314 - 67\\,429 = 17\\,885$.",
@@ -895,12 +895,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Calculate: $2345 \\times 168$",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "393960",
       "433356",
+      "413658",
       "354564",
-      "413658"
+      "393960"
     ],
     "h": "Multiply $2345$ by each digit of $168$ ($8$, then $60$, then $100$) and add the partial products.",
     "s": "Partial products:\n- $2345 \\times 8 = 18\\,760$\n- $2345 \\times 60 = 140\\,700$\n- $2345 \\times 100 = 234\\,500$\n\nSum of partial products: $18\\,760 + 140\\,700 + 234\\,500 = 393\\,960$.",
@@ -933,8 +933,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "Quotient: 698, Remainder: 9",
-      "Quotient: 698, Remainder: 19",
       "Quotient: 697, Remainder: 34",
+      "Quotient: 698, Remainder: 19",
       "Quotient: 699, Remainder: 4"
     ],
     "h": "Use long division. Find how many times $25$ goes into $174$, then pull down digits step by step.",
@@ -953,12 +953,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Find the sum: $824 + 27 + 513 + 9 + 2146$",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "3519",
-      "3871",
       "3167",
-      "3695"
+      "3695",
+      "3519",
+      "3871"
     ],
     "h": "Align all numbers vertically by their units column, then add them column by column from right to left, carrying over numbers as needed.",
     "s": "Adding the numbers vertically:\n$824 + 27 + 513 + 9 + 2146 = 3\\,519$.",
@@ -983,9 +983,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "5522",
-      "6074",
+      "5798",
       "4970",
-      "5798"
+      "6074"
     ],
     "h": "Since $8000$ has consecutive zeros, you must borrow starting all the way from the thousands place ($8$).",
     "s": "Borrowing steps:\n- Borrow from thousands place: $8000$ becomes $7$ thousands, $9$ hundreds, $9$ tens, and $10$ units.\n- Subtract: $10-8=2$, $9-7=2$, $9-4=5$, $7-2=5$.\n\nResult: $5\\,522$.",
@@ -1007,11 +1007,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Multiply: $234 \\times 16$",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "3744",
-      "4118",
       "3370",
+      "4118",
+      "3744",
       "3931"
     ],
     "h": "Multiply $234$ by $6$, then multiply $234$ by $10$, and add the results.",
@@ -1041,8 +1041,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "1",
-      "2",
       "3",
+      "2",
       "4"
     ],
     "h": "Find how many times $15$ goes into $586$ by performing division. The amount left over is the remainder.",
@@ -1065,11 +1065,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Divide $149$ by $6$ and find the quotient and remainder.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Quotient: 24, Remainder: 5",
-      "Quotient: 24, Remainder: 1",
       "Quotient: 25, Remainder: 0",
+      "Quotient: 24, Remainder: 1",
+      "Quotient: 24, Remainder: 5",
       "Quotient: 23, Remainder: 11"
     ],
     "h": "Calculate how many times $6$ goes into $149$ (look at $14 \\div 6$, then the remaining units).",
@@ -1092,12 +1092,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Calculate: $385 + 748 + 196$",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "1329",
+      "1395",
       "1462",
       "1196",
-      "1395"
+      "1329"
     ],
     "h": "Add vertically: start with units ($5+8+6$), then tens, then hundreds, carrying numbers over appropriately.",
     "s": "Performing addition:\n$385 + 748 + 196 = 1\\,329$.",
@@ -1127,12 +1127,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Multiply: $84 \\times 13$",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "1147",
       "1092",
       "1201",
-      "983",
-      "1147"
+      "983"
     ],
     "h": "You can multiply $84 \\times 10$ and $84 \\times 3$, then add them.",
     "s": "1. $84 \\times 10 = 840$\n2. $84 \\times 3 = 252$\n\nSum: $840 + 252 = 1\\,092$.",
@@ -1161,9 +1161,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "58",
-      "64",
+      "61",
       "52",
-      "61"
+      "64"
     ],
     "h": "Always compute terms inside brackets first. Within brackets, division ($\\div$) takes priority over subtraction ($-$).",
     "s": "1. Brackets first: $18 - 8 \\div 2$\n   - Divide first: $8 \\div 2 = 4$\n   - Subtract: $18 - 4 = 14$\n2. Replace brackets: $8 \\times 9 - 14$\n3. Multiply: $8 \\times 9 = 72$\n4. Subtract: $72 - 14 = 58$.",
@@ -1196,9 +1196,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "43",
-      "47",
       "39",
-      "45"
+      "45",
+      "47"
     ],
     "h": "Work from the innermost brackets outward. Calculate $(18 \\div 3)$ and $(32 \\div 16)$ first.",
     "s": "1. Inner brackets:\n   - $18 \\div 3 = 6$\n   - $32 \\div 16 = 2$\n2. Outer square brackets: $[6 - 2] = 4$\n3. Expression becomes: $85 - 4 \\times 12 + 6$\n4. Multiplication next: $4 \\times 12 = 48$\n5. Perform addition/subtraction from left to right:\n   - $85 - 48 = 37$\n   - $37 + 6 = 43$.",
@@ -1228,11 +1228,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Evaluate: $(24 + 12) \\div 3 + 2$",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "13",
       "14",
       "15",
-      "13",
       "17"
     ],
     "h": "Brackets are computed first, then division, and finally addition.",
@@ -1259,12 +1259,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Evaluate: $30 - 10 \\div (3 + 2)$",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "28",
-      "31",
       "25",
-      "29"
+      "28",
+      "29",
+      "31"
     ],
     "h": "BODMAS order: Brackets first, then Division, then Subtraction.",
     "s": "1. Brackets: $3 + 2 = 5$\n2. Division: $10 \\div 5 = 2$\n3. Subtraction: $30 - 2 = 28$.",
@@ -1290,12 +1290,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Find the value of $3^4$.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "81",
       "89",
-      "73",
-      "85"
+      "85",
+      "81",
+      "73"
     ],
     "h": "An exponent tells you how many times to multiply the base by itself: $3^4 = 3 \\times 3 \\times 3 \\times 3$.",
     "s": "$3^4 = 3 \\times 3 \\times 3 \\times 3 = 9 \\times 9 = 81$.",
@@ -1317,12 +1317,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Find the value of $3 \\times 4^3$.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "192",
+      "202",
       "211",
-      "173",
-      "202"
+      "192",
+      "173"
     ],
     "h": "According to BODMAS, exponents (orders) must be calculated before multiplication: calculate $4^3$ first.",
     "s": "1. Exponent: $4^3 = 4 \\times 4 \\times 4 = 64$\n2. Multiplication: $3 \\times 64 = 192$.",
@@ -1344,12 +1344,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Write the expression $5 \\times 5 \\times 5 \\times 5$ in exponential notation.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(5^4\\)",
+      "\\(20^1\\)",
       "\\(5 \\times 4\\)",
-      "\\(4^5\\)",
-      "\\(20^1\\)"
+      "\\(5^4\\)",
+      "\\(4^5\\)"
     ],
     "h": "Count how many times $5$ is multiplied by itself. This count is the exponent (power).",
     "s": "The number $5$ is multiplied by itself $4$ times. In exponential notation, this is written as $5^4$.",
@@ -1371,12 +1371,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Evaluate: $2^6$",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "64",
-      "70",
       "58",
-      "67"
+      "67",
+      "64",
+      "70"
     ],
     "h": "Multiply $2$ by itself $6$ times: $2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$.",
     "s": "$2^6 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 = 64$.",
@@ -1398,12 +1398,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Evaluate: $18 - 8 \\div 2 + 3$",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "17",
       "19",
-      "15",
-      "18"
+      "17",
+      "18",
+      "15"
     ],
     "h": "BODMAS rule: Division comes before addition and subtraction. Subtraction and addition are then done from left to right.",
     "s": "1. Division: $8 \\div 2 = 4$\n2. Substitute back: $18 - 4 + 3$\n3. Left-to-right:\n   - $18 - 4 = 14$\n   - $14 + 3 = 17$.",
@@ -1425,12 +1425,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Write the equation $8000 = 8 \\times 1000$ in exponential notation.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(8 \\times 10^3\\)",
+      "\\(8 \\times 10^4\\)",
       "\\(8 \\times 10^2\\)",
-      "\\(80^3\\)",
-      "\\(8 \\times 10^4\\)"
+      "\\(8 \\times 10^3\\)",
+      "\\(80^3\\)"
     ],
     "h": "Convert $1000$ into a power of $10$. Count the number of zeros in $1000$.",
     "s": "1. $1000 = 10 \\times 10 \\times 10 = 10^3$\n2. Therefore, $8 \\times 1000 = 8 \\times 10^3$.",
@@ -1456,12 +1456,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "The average of $4$ numbers is $8$. A fifth number is added, and the new average of all five numbers is $10$. What is the fifth number?",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "18",
-      "20",
+      "19",
       "16",
-      "19"
+      "20",
+      "18"
     ],
     "h": "First find the total sum of the first 4 numbers ($4 \\times \\text{average}$). Then find the total sum of the 5 numbers ($5 \\times \\text{new average}$). The difference is the fifth number.",
     "s": "1. Sum of first 4 numbers: $4 \\times 8 = 32$\n2. Sum of 5 numbers: $5 \\times 10 = 50$\n3. The fifth number is the difference: $50 - 32 = 18$.",
@@ -1487,12 +1487,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "A cricket player's batting average is $24$ runs across $6$ matches. If they score $108$ runs in their $7\\text{th}$ match, what is their new batting average?",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "36",
-      "40",
       "32",
-      "38"
+      "38",
+      "36",
+      "40"
     ],
     "h": "Find the total runs scored in the first $6$ matches. Add the $108$ runs from the $7\\text{th}$ match to get the new total. Divide by $7$.",
     "s": "1. Runs in first 6 matches: $6 \\times 24 = 144$\n2. New total runs: $144 + 108 = 252$\n3. Divide by total matches (7): $252 \\div 7 = 36$.\n\nNew average is $36$.",
@@ -1518,11 +1518,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Translate the following statement into a mathematical expression and evaluate:\n'The product of $8$ and $7$ is decreased by the quotient of $12$ and $4$.'",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "53",
-      "58",
       "48",
+      "58",
+      "53",
       "56"
     ],
     "h": "'Product' means multiply ($\\times$). 'Decreased by' means subtract ($-$). 'Quotient' means divide ($\\div$). Write it as $(8 \\times 7) - (12 \\div 4)$.",
@@ -1549,11 +1549,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Translate the following statement into a mathematical expression and evaluate:\n'$3$ times the square of $4$ is increased by the difference between $15$ and $6$.'",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "51",
       "57",
       "63",
-      "51",
       "60"
     ],
     "h": "Write '3 times the square of 4' as $3 \\times 4^2$. 'Difference between 15 and 6' is $(15 - 6)$. 'Increased by' means add ($+$).",
@@ -1584,12 +1584,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Evaluate: **Decrease the quotient of $36$ and $4$ by $3$.**",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "6",
       "7",
-      "5",
-      "8"
+      "8",
+      "6",
+      "5"
     ],
     "h": "First find the quotient of $36$ and $4$ (which is $36 \\div 4$). Then decrease (subtract) that value by $3$.",
     "s": "1. Quotient: $36 \\div 4 = 9$\n2. Decrease by 3: $9 - 3 = 6$.",
@@ -1615,12 +1615,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "What is the difference between $12$ and the square of $4$?",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "4",
+      "6",
       "5",
-      "3",
-      "6"
+      "4",
+      "3"
     ],
     "h": "First find the square of $4$ ($4^2 = 4 \\times 4$). Then find the positive difference between that result and $12$.",
     "s": "1. Square of 4: $4^2 = 16$\n2. Difference between 16 and 12: $16 - 12 = 4$.",
@@ -1642,12 +1642,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Calculate the average of the following numbers: $4$, $8$, $9$, $13$, and $16$.",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "10",
       "11",
-      "9",
-      "12"
+      "10",
+      "12",
+      "9"
     ],
     "h": "To find the average, add all the numbers together, then divide by the total count of numbers (which is $5$).",
     "s": "1. Sum: $4 + 8 + 9 + 13 + 16 = 50$\n2. Count: $5$\n3. Average: $50 \\div 5 = 10$.",
@@ -1669,11 +1669,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Calculate the average of the following numbers: $8$, $12$, $15$, and $21$.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "14",
       "15",
       "13",
+      "14",
       "17"
     ],
     "h": "Add the four numbers together, then divide by the count of numbers ($4$).",
@@ -1696,12 +1696,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Evaluate: **Increase the product of $12$ and $4$ by $9$.**",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "57",
+      "60",
       "63",
       "51",
-      "60"
+      "57"
     ],
     "h": "First find the product (multiplication) of $12$ and $4$. Then increase (add) the result by $9$.",
     "s": "1. Product: $12 \\times 4 = 48$\n2. Increase by 9: $48 + 9 = 57$.",
@@ -1727,12 +1727,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "A school has $6$ classes in Year 6. The number of students in each class is $28$, $30$, $29$, $31$, $28$, and $34$. What is the average number of students per class?",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "30",
       "33",
-      "27",
-      "32"
+      "30",
+      "32",
+      "27"
     ],
     "h": "Find the total number of students in Year 6 by adding all class sizes, then divide by the number of classes ($6$).",
     "s": "1. Total students: $28 + 30 + 29 + 31 + 28 + 34 = 180$\n2. Classes count: $6$\n3. Average students per class: $180 \\div 6 = 30$.",
@@ -1758,9 +1758,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(12\\)",
-      "\\(11\\)",
+      "\\(15\\)",
       "\\(13\\)",
-      "\\(15\\)"
+      "\\(11\\)"
     ],
     "h": "Add the values of the symbols together: X = 10, I = 1.",
     "s": "X = 10, II = 2. Adding them together gives: 10 + 2 = 12.",
@@ -1789,9 +1789,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(15\\)",
-      "\\(14\\)",
+      "\\(20\\)",
       "\\(16\\)",
-      "\\(20\\)"
+      "\\(14\\)"
     ],
     "h": "Add the values of the symbols: X = 10, V = 5.",
     "s": "X = 10, V = 5. Adding them together gives: 10 + 5 = 15.",
@@ -1817,12 +1817,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XXVII\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(37\\)",
       "\\(27\\)",
-      "\\(26\\)",
       "\\(28\\)",
-      "\\(37\\)"
+      "\\(26\\)"
     ],
     "h": "Add the values of the symbols: X = 10, V = 5, I = 1.",
     "s": "XX = 20, V = 5, II = 2. Adding them together gives: 20 + 5 + 2 = 27.",
@@ -1848,12 +1848,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LIV\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(54\\)",
-      "\\(56\\)",
+      "\\(44\\)",
       "\\(64\\)",
-      "\\(44\\)"
+      "\\(56\\)",
+      "\\(54\\)"
     ],
     "h": "Note that L = 50 and IV is a subtractive pair (5 - 1 = 4).",
     "s": "L = 50, IV = 5 - 1 = 4. Adding them together gives: 50 + 4 = 54.",
@@ -1882,9 +1882,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(XIV\\)",
-      "\\(XIIII\\)",
       "\\(XVI\\)",
-      "\\(IXV\\)"
+      "\\(IXV\\)",
+      "\\(XIIII\\)"
     ],
     "h": "Break the number into tens (10) and units (4). 10 is X, 4 is IV.",
     "s": "14 = 10 + 4. 10 is represented as X, and 4 is IV. Combined, they form XIV.",
@@ -1918,9 +1918,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(XVII\\)",
-      "\\(XVV\\)",
       "\\(XIIV\\)",
-      "\\(XIVII\\)"
+      "\\(XIVII\\)",
+      "\\(XVV\\)"
     ],
     "h": "Break the number into 10 + 5 + 2. 10 is X, 5 is V, 2 is II.",
     "s": "17 = 10 + 5 + 2. 10 is X, 5 is V, 2 is II. Combined, they form XVII.",
@@ -1951,12 +1951,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Convert the following number to Roman numerals:\n\\(21\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(XXI\\)",
       "\\(XIX\\)",
-      "\\(XIXI\\)",
-      "\\(LXXI\\)"
+      "\\(LXXI\\)",
+      "\\(XXI\\)",
+      "\\(XIXI\\)"
     ],
     "h": "Break 21 into 20 (XX) and 1 (I).",
     "s": "21 = 20 + 1. 20 is XX, 1 is I. Combined, they form XXI.",
@@ -1990,9 +1990,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(XLIV\\)",
+      "\\(XLVI\\)",
       "\\(XXXXIV\\)",
-      "\\(LXIV\\)",
-      "\\(XLVI\\)"
+      "\\(LXIV\\)"
     ],
     "h": "Break 44 into 40 (XL) and 4 (IV).",
     "s": "44 = 40 + 4. 40 is represented as XL (10 before 50) and 4 as IV. Combined, they form XLIV.",
@@ -2023,12 +2023,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(143\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "One hundred and forty-three",
+      "One hundred and thirty-three",
       "One hundred and thirty-four",
       "One hundred and forty-two",
-      "One hundred and thirty-three"
+      "One hundred and forty-three"
     ],
     "h": "Break the number into hundreds, tens, and units.",
     "s": "143 consists of 1 hundred, 4 tens (forty), and 3 units (three).",
@@ -2054,12 +2054,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(807\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "Eight hundred and seven",
       "Eight hundred and seventy",
-      "Eight hundred and seventeen",
-      "Eighty-seven"
+      "Eight hundred and seven",
+      "Eighty-seven",
+      "Eight hundred and seventeen"
     ],
     "h": "Break the number into hundreds and units, noting there are zero tens.",
     "s": "807 consists of 8 hundreds and 7 units. Written as: Eight hundred and seven.",
@@ -2085,12 +2085,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(650\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "Six hundred and fifty",
       "Six hundred and fifteen",
       "Six hundred and five",
-      "Six hundred and fifty-five"
+      "Six hundred and fifty-five",
+      "Six hundred and fifty"
     ],
     "h": "Break the number into hundreds and tens, noting there are zero units.",
     "s": "650 consists of 6 hundreds and 5 tens. Written as: Six hundred and fifty.",
@@ -2119,9 +2119,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "One thousand, six hundred and thirty-four",
+      "One thousand, six hundred and thirty",
       "One thousand, six hundred and forty-three",
-      "One thousand, six hundred and thirty-six",
-      "One thousand, six hundred and thirty"
+      "One thousand, six hundred and thirty-six"
     ],
     "h": "Break the number into thousands, hundreds, tens, and units.",
     "s": "1 634 consists of 1 thousand, 6 hundreds, 3 tens (thirty), and 4 units (four).",
@@ -2147,12 +2147,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following word number as an ordinary numeral:\nFour hundred and eighty-seven",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(487\\)",
-      "\\(478\\)",
       "\\(400\\ 87\\)",
-      "\\(4870\\)"
+      "\\(4870\\)",
+      "\\(478\\)",
+      "\\(487\\)"
     ],
     "h": "Identify the value of each part: four hundred (400), eighty-seven (87).",
     "s": "Four hundred is 400. Eighty-seven is 87. Combining them gives 487.",
@@ -2178,12 +2178,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following word number as an ordinary numeral:\nSix hundred and three",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(603\\)",
-      "\\(630\\)",
+      "\\(633\\)",
       "\\(6003\\)",
-      "\\(633\\)"
+      "\\(630\\)",
+      "\\(603\\)"
     ],
     "h": "Identify the value of each part: six hundred (600), three (3). Use a zero in the tens place.",
     "s": "Six hundred is 600. Three is 3. Combining them gives 603.",
@@ -2209,12 +2209,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expanded expression to find the ordinary numeral:\n\\((8 \\times 100) + (6 \\times 10) + (3 \\times 1)\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(863\\)",
-      "\\(836\\)",
       "\\(800\\ 63\\)",
-      "\\(860\\)"
+      "\\(863\\)",
+      "\\(860\\)",
+      "\\(836\\)"
     ],
     "h": "Evaluate the multiplication inside each set of parentheses first, then add them.",
     "s": "(8 x 100) = 800. (6 x 10) = 60. (3 x 1) = 3. Adding them gives: 800 + 60 + 3 = 863.",
@@ -2307,12 +2307,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Round off the following number to the nearest ten:\n\\(84\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(80\\)",
       "\\(90\\)",
+      "\\(84\\)",
       "\\(85\\)",
-      "\\(84\\)"
+      "\\(80\\)"
     ],
     "h": "Look at the units digit. If the units digit is less than 5, round down.",
     "s": "In 84, the units digit is 4. Since 4 is less than 5, we round down to 80.",
@@ -2343,12 +2343,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(46 + 33\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(79\\)",
       "\\(78\\)",
-      "\\(89\\)",
-      "\\(73\\)"
+      "\\(79\\)",
+      "\\(73\\)",
+      "\\(89\\)"
     ],
     "h": "Add the units digits first, then add the tens digits.",
     "s": "Units: 6 + 3 = 9. Tens: 4 + 3 = 7. Combining them gives 79.",
@@ -2384,11 +2384,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(68 + 25\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(93\\)",
-      "\\(83\\)",
       "\\(95\\)",
+      "\\(83\\)",
+      "\\(93\\)",
       "\\(98\\)"
     ],
     "h": "Add the units digits first. If the sum is 10 or more, carry over to the tens place.",
@@ -2425,11 +2425,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(83 + 54\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(137\\)",
-      "\\(127\\)",
       "\\(133\\)",
+      "\\(127\\)",
+      "\\(137\\)",
       "\\(147\\)"
     ],
     "h": "Add the units digits, then add the tens digits.",
@@ -2469,9 +2469,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(23\\)",
-      "\\(21\\)",
+      "\\(13\\)",
       "\\(27\\)",
-      "\\(13\\)"
+      "\\(21\\)"
     ],
     "h": "Subtract the units column first, then the tens column.",
     "s": "Units: 7 - 4 = 3. Tens: 4 - 2 = 2. Combined difference is 23.",
@@ -2507,10 +2507,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the difference:\n\\(58 - 15\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(43\\)",
       "\\(33\\)",
+      "\\(43\\)",
       "\\(45\\)",
       "\\(53\\)"
     ],
@@ -2548,12 +2548,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the difference:\n\\(64 - 18\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(46\\)",
-      "\\(56\\)",
       "\\(48\\)",
-      "\\(36\\)"
+      "\\(36\\)",
+      "\\(56\\)",
+      "\\(46\\)"
     ],
     "h": "Borrow 1 ten from the tens place to subtract 8 from 4 in the units place.",
     "s": "Borrowing makes units 14 - 8 = 6. Tens place becomes 5 - 1 = 4. Difference is 46.",
@@ -2589,12 +2589,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the product:\n\\(13 \\times 5\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(65\\)",
-      "\\(55\\)",
       "\\(75\\)",
-      "\\(60\\)"
+      "\\(65\\)",
+      "\\(60\\)",
+      "\\(55\\)"
     ],
     "h": "Multiply 3 by 5, then multiply 10 by 5, and add the results.",
     "s": "13 x 5 = (10 + 3) x 5 = 50 + 15 = 65.",
@@ -2625,12 +2625,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the product:\n\\(16 \\times 7\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(122\\)",
       "\\(112\\)",
-      "\\(102\\)",
       "\\(116\\)",
-      "\\(122\\)"
+      "\\(102\\)"
     ],
     "h": "Multiply 6 by 7 (42, carry 4), then multiply 1 by 7 and add the carry.",
     "s": "16 x 7 = (10 + 6) x 7 = 70 + 42 = 112.",
@@ -2661,12 +2661,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the product:\n\\(15 \\times 8\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(120\\)",
-      "\\(110\\)",
       "\\(130\\)",
-      "\\(100\\)"
+      "\\(120\\)",
+      "\\(100\\)",
+      "\\(110\\)"
     ],
     "h": "Multiply 15 by 8, or use doubling/halving: 15 x 8 = 30 x 4.",
     "s": "15 x 8 = (10 + 5) x 8 = 80 + 40 = 120.",
@@ -2692,12 +2692,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the quotient:\n\\(48 \\div 8\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(6\\)",
       "\\(8\\)",
       "\\(7\\)",
-      "\\(5\\)"
+      "\\(5\\)",
+      "\\(6\\)"
     ],
     "h": "Recall the multiplication facts for 8: what number multiplied by 8 equals 48?",
     "s": "8 x 6 = 48. Therefore, 48 / 8 = 6.",
@@ -2723,12 +2723,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the quotient:\n\\(54 \\div 3\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(21\\)",
       "\\(18\\)",
-      "\\(16\\)",
       "\\(17\\)",
-      "\\(21\\)"
+      "\\(16\\)"
     ],
     "h": "Divide 50 by 3 (gives 10 with remainder 2) and combine with the remaining units.",
     "s": "54 / 3 = (30 + 24) / 3 = 10 + 8 = 18.",
@@ -2762,9 +2762,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(13\\)",
-      "\\(12\\)",
+      "\\(16\\)",
       "\\(14\\)",
-      "\\(16\\)"
+      "\\(12\\)"
     ],
     "h": "Decompose 78 into 60 and 18, and divide both parts by 6.",
     "s": "78 / 6 = (60 + 18) / 6 = 10 + 3 = 13.",
@@ -2795,12 +2795,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expression:\n\\(6 \\times 3 + 4\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(22\\)",
       "\\(42\\)",
-      "\\(18\\)",
-      "\\(24\\)"
+      "\\(22\\)",
+      "\\(24\\)",
+      "\\(18\\)"
     ],
     "h": "Evaluate the multiplication first, then perform the addition.",
     "s": "According to BODMAS/BOMDAS, multiplication is done first: 6 x 3 = 18. Then add 4: 18 + 4 = 22.",
@@ -2826,10 +2826,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expression:\n\\(7 + 3 \\times 4\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(19\\)",
       "\\(40\\)",
+      "\\(19\\)",
       "\\(14\\)",
       "\\(17\\)"
     ],
@@ -2860,9 +2860,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(16\\)",
-      "\\(10\\)",
+      "\\(18\\)",
       "\\(14\\)",
-      "\\(18\\)"
+      "\\(10\\)"
     ],
     "h": "Evaluate the division first, then perform the addition.",
     "s": "Perform division first: 8 / 2 = 4. Then perform addition: 12 + 4 = 16.",
@@ -2888,12 +2888,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the following terminology problem:\nWhat is the product of \\(4\\) and \\(5\\)?",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(20\\)",
-      "\\(9\\)",
       "\\(1\\)",
-      "\\(25\\)"
+      "\\(20\\)",
+      "\\(25\\)",
+      "\\(9\\)"
     ],
     "h": "The term 'product' means to multiply the two numbers.",
     "s": "The product of 4 and 5 is 4 x 5 = 20.",
@@ -2919,12 +2919,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the following terminology problem:\nWhat is the sum of \\(9\\) and \\(4\\)?",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(13\\)",
       "\\(36\\)",
-      "\\(5\\)",
-      "\\(12\\)"
+      "\\(13\\)",
+      "\\(12\\)",
+      "\\(5\\)"
     ],
     "h": "The term 'sum' means to add the two numbers.",
     "s": "The sum of 9 and 4 is 9 + 4 = 13.",
@@ -2981,12 +2981,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the following terminology problem:\nWhat is the quotient of \\(8\\) and \\(2\\)?",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(10\\)",
       "\\(4\\)",
       "\\(16\\)",
-      "\\(6\\)",
-      "\\(10\\)"
+      "\\(6\\)"
     ],
     "h": "The term 'quotient' means the result of dividing the first number by the second.",
     "s": "The quotient of 8 and 2 is 8 / 2 = 4.",
@@ -3012,12 +3012,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the following terminology problem:\nWhat is the average of \\(8\\) and \\(12\\)?",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(20\\)",
       "\\(10\\)",
-      "\\(8\\)",
       "\\(12\\)",
-      "\\(20\\)"
+      "\\(8\\)"
     ],
     "h": "To find the average of two numbers, add them together and divide by 2.",
     "s": "Sum of 8 and 12 is 20. Divide by 2: 20 / 2 = 10.",
@@ -3046,8 +3046,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(18\\)",
-      "\\(17\\)",
       "\\(19\\)",
+      "\\(17\\)",
       "\\(23\\)"
     ],
     "h": "Add the values of the symbols: X = 10, V = 5, I = 1.",
@@ -3077,8 +3077,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(29\\)",
-      "\\(31\\)",
       "\\(28\\)",
+      "\\(31\\)",
       "\\(39\\)"
     ],
     "h": "X = 10. IX is a subtractive pair (10 - 1 = 9).",
@@ -3105,12 +3105,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(XLII\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(42\\)",
       "\\(62\\)",
-      "\\(43\\)",
-      "\\(52\\)"
+      "\\(42\\)",
+      "\\(52\\)",
+      "\\(43\\)"
     ],
     "h": "XL is a subtractive pair (50 - 10 = 40).",
     "s": "XL = 40. II = 2. 40 + 2 = 42.",
@@ -3136,12 +3136,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\(LXXII\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(72\\)",
-      "\\(62\\)",
       "\\(82\\)",
-      "\\(73\\)"
+      "\\(73\\)",
+      "\\(62\\)",
+      "\\(72\\)"
     ],
     "h": "L = 50, X = 10, I = 1.",
     "s": "L = 50, XX = 20, II = 2. 50 + 20 + 2 = 72.",
@@ -3167,12 +3167,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Convert the following number to Roman numerals:\n\\(24\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(XXIV\\)",
-      "\\(XXVI\\)",
       "\\(XXIIII\\)",
-      "\\(XIV\\)"
+      "\\(XXVI\\)",
+      "\\(XIV\\)",
+      "\\(XXIV\\)"
     ],
     "h": "Break 24 into 20 (XX) and 4 (IV).",
     "s": "24 = 20 + 4. 20 is XX, 4 is IV. Combined: XXIV.",
@@ -3203,12 +3203,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Convert the following number to Roman numerals:\n\\(39\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(XXXIX\\)",
+      "\\(XLIX\\)",
       "\\(XXXVII\\)",
       "\\(XXIX\\)",
-      "\\(XLIX\\)"
+      "\\(XXXIX\\)"
     ],
     "h": "Break 39 into 30 (XXX) and 9 (IX).",
     "s": "39 = 30 + 9. 30 is XXX, 9 is IX. Combined: XXXIX.",
@@ -3239,12 +3239,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Convert the following number to Roman numerals:\n\\(64\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(LXXIV\\)",
       "\\(LXIV\\)",
-      "\\(LXVI\\)",
       "\\(XLIV\\)",
-      "\\(LXXIV\\)"
+      "\\(LXVI\\)"
     ],
     "h": "Break 64 into 60 (LX) and 4 (IV).",
     "s": "64 = 60 + 4. 60 is LX, 4 is IV. Combined: LXIV.",
@@ -3275,12 +3275,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Convert the following number to Roman numerals:\n\\(95\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(CXCV\\)",
       "\\(XCV\\)",
-      "\\(LXXXXV\\)",
       "\\(CXV\\)",
-      "\\(CXCV\\)"
+      "\\(LXXXXV\\)"
     ],
     "h": "90 is represented as XC (10 before 100).",
     "s": "95 = 90 + 5. 90 is XC, 5 is V. Combined: XCV.",
@@ -3311,12 +3311,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(72\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(70\\)",
-      "\\(7\\)",
       "\\(700\\)",
-      "\\(7000\\)"
+      "\\(70\\)",
+      "\\(7000\\)",
+      "\\(7\\)"
     ],
     "h": "Identify the place value column of the digit 7.",
     "s": "In 72, the digit 7 is in the tens position, so its value is 70.",
@@ -3342,12 +3342,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(537\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(7\\)",
+      "\\(7000\\)",
       "\\(70\\)",
       "\\(700\\)",
-      "\\(7000\\)"
+      "\\(7\\)"
     ],
     "h": "Identify the place value column of the digit 7.",
     "s": "In 537, the digit 7 is in the units position, so its value is 7.",
@@ -3373,10 +3373,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(702\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(700\\)",
       "\\(70\\)",
+      "\\(700\\)",
       "\\(7\\)",
       "\\(7000\\)"
     ],
@@ -3404,12 +3404,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "What is the place value of the digit \\(7\\) in the following number:\n\\(4\\ 672\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(70\\)",
+      "\\(7000\\)",
       "\\(7\\)",
-      "\\(700\\)",
-      "\\(7000\\)"
+      "\\(70\\)",
+      "\\(700\\)"
     ],
     "h": "Identify the place value column of the digit 7.",
     "s": "In 4 672, the digit 7 is in the tens position, so its value is 70.",
@@ -3435,12 +3435,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(683\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Six hundred and eighty-three",
+      "Six hundred and eighty-five",
       "Six hundred and thirty-eight",
-      "Six hundred and eighty",
-      "Six hundred and eighty-five"
+      "Six hundred and eighty-three",
+      "Six hundred and eighty"
     ],
     "h": "Identify place values: 6 hundreds, 8 tens, 3 units.",
     "s": "683 consists of 6 hundreds and 83. Written as: Six hundred and eighty-three.",
@@ -3466,11 +3466,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(4\\ 312\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "Four thousand, two hundred and twelve",
       "Four thousand, three hundred and twelve",
       "Four thousand, three hundred and twenty",
-      "Four thousand, two hundred and twelve",
       "Four thousand, three hundred and two"
     ],
     "h": "Identify place values: 4 thousands, 3 hundreds, 12.",
@@ -3497,12 +3497,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Write the following number in words:\n\\(5\\ 072\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "Five thousand and seventy-two",
+      "Five thousand and seventy",
       "Five thousand and twenty-seven",
       "Five thousand, seven hundred and two",
-      "Five thousand and seventy"
+      "Five thousand and seventy-two"
     ],
     "h": "Identify place values: 5 thousands, 0 hundreds, 72.",
     "s": "5 072 consists of 5 thousands and 72. Written as: Five thousand and seventy-two.",
@@ -3528,12 +3528,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expanded expression to find the ordinary numeral:\n\\((5 \\times 100) + (0 \\times 10) + (3 \\times 1)\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(503\\)",
+      "\\(5003\\)",
       "\\(530\\)",
       "\\(53\\)",
-      "\\(5003\\)"
+      "\\(503\\)"
     ],
     "h": "Multiply terms in parentheses first.",
     "s": "(5 x 100) = 500. (0 x 10) = 0. (3 x 1) = 3. 500 + 0 + 3 = 503.",
@@ -3559,12 +3559,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expanded expression to find the ordinary numeral:\n\\((7 \\times 1000) + (0 \\times 100) + (8 \\times 10) + (6 \\times 1)\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(7086\\)",
-      "\\(786\\)",
       "\\(7860\\)",
-      "\\(70860\\)"
+      "\\(7086\\)",
+      "\\(70860\\)",
+      "\\(786\\)"
     ],
     "h": "Multiply terms inside parentheses first.",
     "s": "7000 + 0 + 80 + 6 = 7086.",
@@ -3590,12 +3590,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Round off the following number to the nearest hundred:\n\\(749\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(740\\)",
       "\\(700\\)",
-      "\\(800\\)",
       "\\(750\\)",
-      "\\(740\\)"
+      "\\(800\\)"
     ],
     "h": "Look at the tens digit. If it is less than 5, round down.",
     "s": "The tens digit in 749 is 4. Since 4 is less than 5, we round down to 700.",
@@ -3624,8 +3624,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(800\\)",
-      "\\(700\\)",
       "\\(750\\)",
+      "\\(700\\)",
       "\\(760\\)"
     ],
     "h": "Look at the tens digit. If it is 5 or more, round up.",
@@ -3652,12 +3652,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Round off the following number to the nearest hundred:\n\\(750\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(800\\)",
+      "\\(760\\)",
       "\\(700\\)",
       "\\(750\\)",
-      "\\(760\\)"
+      "\\(800\\)"
     ],
     "h": "Look at the tens digit. If it is 5 or more, round up.",
     "s": "The tens digit in 750 is 5. We round up to 800.",
@@ -3683,12 +3683,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Round off the following number to the nearest hundred:\n\\(1\\ 432\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(1\\ 400\\)",
-      "\\(1\\ 500\\)",
       "\\(1\\ 430\\)",
-      "\\(1\\ 000\\)"
+      "\\(1\\ 500\\)",
+      "\\(1\\ 000\\)",
+      "\\(1\\ 400\\)"
     ],
     "h": "Look at the tens digit. If it is less than 5, round down.",
     "s": "The tens digit in 1 432 is 3. Since 3 is less than 5, we round down to 1 400.",
@@ -3714,12 +3714,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(349 + 62\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(411\\)",
-      "\\(401\\)",
       "\\(412\\)",
-      "\\(311\\)"
+      "\\(401\\)",
+      "\\(311\\)",
+      "\\(411\\)"
     ],
     "h": "Add units, tens, and hundreds.",
     "s": "349 + 62 = 411.",
@@ -3755,12 +3755,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(423 + 54\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(477\\)",
       "\\(467\\)",
-      "\\(478\\)",
-      "\\(577\\)"
+      "\\(577\\)",
+      "\\(477\\)",
+      "\\(478\\)"
     ],
     "h": "Perform column addition.",
     "s": "423 + 54 = 477.",
@@ -3791,12 +3791,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the sum:\n\\(742 + 339\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(1\\ 081\\)",
-      "\\(1\\ 071\\)",
       "\\(1\\ 082\\)",
-      "\\(981\\)"
+      "\\(981\\)",
+      "\\(1\\ 071\\)",
+      "\\(1\\ 081\\)"
     ],
     "h": "Set up column addition and carry over values.",
     "s": "742 + 339 = 1081.",
@@ -3835,9 +3835,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(54\\)",
-      "\\(44\\)",
+      "\\(53\\)",
       "\\(55\\)",
-      "\\(53\\)"
+      "\\(44\\)"
     ],
     "h": "Subtract place values.",
     "s": "79 - 25 = 54.",
@@ -3866,8 +3866,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(38\\)",
-      "\\(48\\)",
       "\\(37\\)",
+      "\\(48\\)",
       "\\(42\\)"
     ],
     "h": "Borrow 1 ten to subtract in the units place.",
@@ -3894,12 +3894,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the difference:\n\\(327 - 51\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\(276\\)",
-      "\\(266\\)",
       "\\(275\\)",
-      "\\(286\\)"
+      "\\(276\\)",
+      "\\(286\\)",
+      "\\(266\\)"
     ],
     "h": "Perform column subtraction.",
     "s": "327 - 51 = 276.",
@@ -3930,11 +3930,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the product:\n\\(37 \\times 6\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(222\\)",
-      "\\(212\\)",
       "\\(226\\)",
+      "\\(212\\)",
+      "\\(222\\)",
       "\\(182\\)"
     ],
     "h": "Multiply 7 by 6, then multiply 30 by 6.",
@@ -3964,9 +3964,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(480\\)",
+      "\\(48\\)",
       "\\(4800\\)",
-      "\\(408\\)",
-      "\\(48\\)"
+      "\\(408\\)"
     ],
     "h": "To multiply by 10, append a zero to the end of the number.",
     "s": "48 x 10 = 480.",
@@ -3987,12 +3987,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the product:\n\\(59 \\times 13\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(767\\)",
+      "\\(667\\)",
       "\\(757\\)",
-      "\\(763\\)",
-      "\\(667\\)"
+      "\\(767\\)",
+      "\\(763\\)"
     ],
     "h": "Set up long multiplication.",
     "s": "59 x 13 = 767.",
@@ -4026,9 +4026,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(17\\)",
-      "\\(16\\)",
       "\\(18\\)",
-      "\\(21\\)"
+      "\\(21\\)",
+      "\\(16\\)"
     ],
     "h": "Use short division.",
     "s": "51 / 3 = 17.",
@@ -4054,11 +4054,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Calculate the quotient:\n\\(84 \\div 7\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(13\\)",
       "\\(12\\)",
       "\\(11\\)",
-      "\\(13\\)",
       "\\(14\\)"
     ],
     "h": "Use standard division tables.",
@@ -4088,9 +4088,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\(13 \\text{ remainder } 1\\)",
+      "\\(14 \\text{ remainder } 1\\)",
       "\\(13 \\text{ remainder } 2\\)",
-      "\\(12 \\text{ remainder } 1\\)",
-      "\\(14 \\text{ remainder } 1\\)"
+      "\\(12 \\text{ remainder } 1\\)"
     ],
     "h": "Divide 53 by 4 and find the integer quotient and remainder.",
     "s": "53 / 4 = 13 with remainder 1.",
@@ -4116,12 +4116,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expression:\n\\(8 + 7 \\times 2\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(22\\)",
       "\\(30\\)",
-      "\\(17\\)",
-      "\\(24\\)"
+      "\\(24\\)",
+      "\\(22\\)",
+      "\\(17\\)"
     ],
     "h": "Multiply before adding.",
     "s": "7 x 2 = 14. 8 + 14 = 22.",
@@ -4147,12 +4147,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expression:\n\\(12 \\div (3 + 1)\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\(2\\)",
       "\\(3\\)",
-      "\\(5\\)",
       "\\(4\\)",
-      "\\(2\\)"
+      "\\(5\\)"
     ],
     "h": "Calculate terms inside parentheses first.",
     "s": "(3 + 1) = 4. 12 / 4 = 3.",
@@ -4178,12 +4178,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Evaluate the expression:\n\\(10 - 3 \\times 2 + 1\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\(5\\)",
-      "\\(15\\)",
       "\\(4\\)",
-      "\\(6\\)"
+      "\\(6\\)",
+      "\\(5\\)",
+      "\\(15\\)"
     ],
     "h": "Multiply first, then perform addition and subtraction from left to right.",
     "s": "3 x 2 = 6. 10 - 6 = 4. 4 + 1 = 5.",
@@ -4214,12 +4214,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the average of the following numbers:\n\\(3\\), \\(7\\) and \\(8\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(6\\)",
       "\\(7\\)",
       "\\(8\\)",
-      "\\(18\\)"
+      "\\(18\\)",
+      "\\(6\\)"
     ],
     "h": "Add the numbers and divide by 3.",
     "s": "(3 + 7 + 8)/3 = 18/3 = 6.",
@@ -4245,12 +4245,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the average of the following numbers:\n\\(4\\), \\(7\\), \\(10\\), \\(13\\) and \\(11\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\(9\\)",
+      "\\(11\\)",
       "\\(10\\)",
       "\\(8\\)",
-      "\\(11\\)"
+      "\\(9\\)"
     ],
     "h": "Add the numbers and divide by 5.",
     "s": "(4 + 7 + 10 + 13 + 11)/5 = 45/5 = 9.",
@@ -4276,12 +4276,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(CLII\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(152\\\\)",
       "\\\\(102\\\\)",
+      "\\\\(142\\\\)",
       "\\\\(162\\\\)",
-      "\\\\(142\\\\)"
+      "\\\\(152\\\\)"
     ],
     "h": "Identify the value of each symbol: \\\\(C = 100\\\\), \\\\(L = 50\\\\), and \\\\(II = 2\\\\).",
     "s": "Add the values of the symbols:\n1. \\\\(C = 100\\\\)\n2. \\\\(L = 50\\\\)\n3. \\\\(II = 2\\\\)\n\n\\\\(100 + 50 + 2 = 152\\\\).",
@@ -4310,9 +4310,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(225\\\\)",
-      "\\\\(205\\\\)",
       "\\\\(215\\\\)",
-      "\\\\(235\\\\)"
+      "\\\\(235\\\\)",
+      "\\\\(205\\\\)"
     ],
     "h": "Identify the value of each symbol: \\\\(C = 100\\\\), \\\\(X = 10\\\\), and \\\\(V = 5\\\\).",
     "s": "Add the values of the symbols:\n1. \\\\(CC = 100 + 100 = 200\\\\)\n2. \\\\(XX = 10 + 10 = 20\\\\)\n3. \\\\(V = 5\\\\)\n\n\\\\(200 + 20 + 5 = 225\\\\).",
@@ -4338,12 +4338,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(XCIX\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(99\\\\)",
       "\\\\(111\\\\)",
       "\\\\(91\\\\)",
-      "\\\\(109\\\\)"
+      "\\\\(109\\\\)",
+      "\\\\(99\\\\)"
     ],
     "h": "Look for subtractive pairs: \\\\(XC\\\\) (10 before 100) and \\\\(IX\\\\) (1 before 10).",
     "s": "Identify subtractive pairs:\n1. \\\\(XC = 100 - 10 = 90\\\\)\n2. \\\\(IX = 10 - 1 = 9\\\\)\n\n\\\\(90 + 9 = 99\\\\).",
@@ -4369,12 +4369,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following Roman numeral in Hindu-Arabic numerals:\n\\\\(DLV\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(555\\\\)",
       "\\\\(505\\\\)",
-      "\\\\(605\\\\)",
-      "\\\\(515\\\\)"
+      "\\\\(515\\\\)",
+      "\\\\(555\\\\)",
+      "\\\\(605\\\\)"
     ],
     "h": "Identify the value of each symbol: \\\\(D = 500\\\\), \\\\(L = 50\\\\), and \\\\(V = 5\\\\).",
     "s": "Add the values of the symbols:\n1. \\\\(D = 500\\\\)\n2. \\\\(L = 50\\\\)\n3. \\\\(V = 5\\\\)\n\n\\\\(500 + 50 + 5 = 555\\\\).",
@@ -4400,12 +4400,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following number in Roman numerals:\n\\\\(123\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(CXXIII\\\\)",
       "\\\\(CIII\\\\)",
+      "\\\\(CLXXIII\\\\)",
       "\\\\(CXXXIII\\\\)",
-      "\\\\(CLXXIII\\\\)"
+      "\\\\(CXXIII\\\\)"
     ],
     "h": "Break the number down into hundreds, tens, and units: \\\\(123 = 100 + 20 + 3\\\\).",
     "s": "Convert each part:\n1. \\\\(100 = C\\\\)\n2. \\\\(20 = XX\\\\)\n3. \\\\(3 = III\\\\)\n\nCombine: \\\\(CXXIII\\\\).",
@@ -4436,12 +4436,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in Roman numerals:\n\\\\(79\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(LXXXIX\\\\)",
       "\\\\(LXXIX\\\\)",
-      "\\\\(LXXI\\\\)",
       "\\\\(LXIX\\\\)",
-      "\\\\(LXXXIX\\\\)"
+      "\\\\(LXXI\\\\)"
     ],
     "h": "Break the number down into tens and units: \\\\(79 = 70 + 9\\\\). Note that \\\\(9\\\\) is written as a subtractive pair \\\\(IX\\\\).",
     "s": "Convert each part:\n1. \\\\(70 = LXX\\\\)\n2. \\\\(9 = IX\\\\)\n\nCombine: \\\\(LXXIX\\\\).",
@@ -4475,9 +4475,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(CCCXXVII\\\\)",
-      "\\\\(CCXXVII\\\\)",
       "\\\\(CCCXVIII\\\\)",
-      "\\\\(CCCXXII\\\\)"
+      "\\\\(CCCXXII\\\\)",
+      "\\\\(CCXXVII\\\\)"
     ],
     "h": "Break \\\\(327\\\\) into place values: \\\\(300 + 20 + 7\\\\).",
     "s": "Convert each part:\n1. \\\\(300 = CCC\\\\)\n2. \\\\(20 = XX\\\\)\n3. \\\\(7 = VII\\\\)\n\nCombine: \\\\(CCCXXVII\\\\).",
@@ -4511,9 +4511,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(DXXX\\\\)",
+      "\\\\(CXXX\\\\)",
       "\\\\(DXX\\\\)",
-      "\\\\(DLXXX\\\\)",
-      "\\\\(CXXX\\\\)"
+      "\\\\(DLXXX\\\\)"
     ],
     "h": "Break \\\\(530\\\\) into place values: \\\\(500 + 30\\\\).",
     "s": "Convert each part:\n1. \\\\(500 = D\\\\)\n2. \\\\(30 = XXX\\\\)\n\nCombine: \\\\(DXXX\\\\).",
@@ -4575,12 +4575,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(2731\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(3000\\\\)",
       "\\\\(30\\\\)",
-      "\\\\(3\\\\)",
       "\\\\(300\\\\)",
-      "\\\\(3000\\\\)"
+      "\\\\(3\\\\)"
     ],
     "h": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
     "s": "In \\\\(2731\\\\), the digit \\\\(3\\\\) is in the tens place. Its place value is \\\\(3 \\\\times 10 = 30\\\\).",
@@ -4609,8 +4609,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(3000\\\\)",
-      "\\\\(300\\\\)",
       "\\\\(30\\\\)",
+      "\\\\(300\\\\)",
       "\\\\(3\\\\)"
     ],
     "h": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
@@ -4637,12 +4637,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Determine the place value of the digit \\\\(3\\\\) in the following number:\n\\\\(6743\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(3\\\\)",
+      "\\\\(3000\\\\)",
       "\\\\(30\\\\)",
       "\\\\(300\\\\)",
-      "\\\\(3000\\\\)"
+      "\\\\(3\\\\)"
     ],
     "h": "Identify the position of the digit \\\\(3\\\\) (ones, tens, hundreds, thousands).",
     "s": "In \\\\(6743\\\\), the digit \\\\(3\\\\) is in the ones place. Its place value is \\\\(3 \\\\times 1 = 3\\\\).",
@@ -4668,11 +4668,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following number in expanded notation:\n\\\\(731\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\((7 \\\\times 10^2) + (3 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
       "\\\\((7 \\\\times 10^3) + (3 \\\\times 10^2) + (1 \\\\times 10)\\\\)",
       "\\\\((7 \\\\times 100) + (3 \\\\times 100) + (1 \\\\times 1)\\\\)",
+      "\\\\((7 \\\\times 10^2) + (3 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
       "\\\\((7 \\\\times 10^1) + (3 \\\\times 10^2) + (1 \\\\times 1)\\\\)"
     ],
     "h": "Find the place value of each digit and write the number as their sum: \\\\(731 = 700 + 30 + 1\\\\).",
@@ -4704,12 +4704,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded notation:\n\\\\(5713\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)",
-      "\\\\((5 \\\\times 10^4) + (7 \\\\times 10^3) + (1 \\\\times 10^2) + (3 \\\\times 10)\\\\)",
+      "\\\\((5 \\\\times 10^2) + (7 \\\\times 10^3) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)",
       "\\\\((5 \\\\times 1000) + (7 \\\\times 10) + (1 \\\\times 10) + 3\\\\)",
-      "\\\\((5 \\\\times 10^2) + (7 \\\\times 10^3) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)"
+      "\\\\((5 \\\\times 10^4) + (7 \\\\times 10^3) + (1 \\\\times 10^2) + (3 \\\\times 10)\\\\)",
+      "\\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\)"
     ],
     "h": "Write the number as the sum of its place values: \\\\(5000 + 700 + 10 + 3\\\\).",
     "s": "Express each component using powers of 10:\n\\\\(5000 = 5 \\\\times 10^3\\\\)\n\\\\(700 = 7 \\\\times 10^2\\\\)\n\\\\(10 = 1 \\\\times 10^1\\\\)\n\\\\(3 = 3 \\\\times 1\\\\)\n\nCombine: \\\\((5 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1) + (3 \\\\times 1)\\\\).",
@@ -4740,12 +4740,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded notation:\n\\\\(95072\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)",
       "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^2) + (2 \\\\times 1)\\\\)",
+      "\\\\((9 \\\\times 10^5) + (5 \\\\times 10^4) + (7 \\\\times 10^2) + (2 \\\\times 10)\\\\)",
       "\\\\((9 \\\\times 10^3) + (5 \\\\times 10^2) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)",
-      "\\\\((9 \\\\times 10^5) + (5 \\\\times 10^4) + (7 \\\\times 10^2) + (2 \\\\times 10)\\\\)"
+      "\\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\)"
     ],
     "h": "Decompose into place values: \\\\(90000 + 5000 + 70 + 2\\\\) (note that the hundreds digit is 0).",
     "s": "Express using powers of 10:\n\\\\(90000 = 9 \\\\times 10^4\\\\)\n\\\\(5000 = 5 \\\\times 10^3\\\\)\n\\\\(70 = 7 \\\\times 10^1\\\\)\n\\\\(2 = 2 \\\\times 1\\\\)\n\nCombine (ignoring the 0 term): \\\\((9 \\\\times 10^4) + (5 \\\\times 10^3) + (7 \\\\times 10^1) + (2 \\\\times 1)\\\\).",
@@ -4776,10 +4776,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the sum of the following numbers:\n\\\\(472 + 629 + 254\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(1355\\\\)",
       "\\\\(1345\\\\)",
+      "\\\\(1355\\\\)",
       "\\\\(1255\\\\)",
       "\\\\(1365\\\\)"
     ],
@@ -4817,12 +4817,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the sum of the following numbers:\n\\\\(645 + 438 + 294\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(1377\\\\)",
       "\\\\(1367\\\\)",
+      "\\\\(1387\\\\)",
       "\\\\(1277\\\\)",
-      "\\\\(1387\\\\)"
+      "\\\\(1377\\\\)"
     ],
     "h": "Line up the place values and add from right to left, carrying over when a column sum exceeds 9.",
     "s": "Calculate the sum:\n\\\\(645 + 438 = 1083\\\\)\n\\\\(1083 + 294 = 1377\\\\).",
@@ -4858,11 +4858,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the sum of the following numbers:\n\\\\(1594 + 685 + 473\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(2752\\\\)",
-      "\\\\(2652\\\\)",
       "\\\\(2742\\\\)",
+      "\\\\(2652\\\\)",
+      "\\\\(2752\\\\)",
       "\\\\(2852\\\\)"
     ],
     "h": "Align the numbers by place values. Add the ones column, then tens, hundreds, and thousands, carrying values as needed.",
@@ -4904,12 +4904,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the difference:\n\\\\(73 - 48\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(25\\\\)",
       "\\\\(35\\\\)",
       "\\\\(27\\\\)",
-      "\\\\(33\\\\)"
+      "\\\\(33\\\\)",
+      "\\\\(25\\\\)"
     ],
     "h": "Since \\\\(3\\\\) is less than \\\\(8\\\\) in the ones column, borrow \\\\(1\\\\) ten from the tens column.",
     "s": "Borrow from tens column:\n\\\\(13 - 8 = 5\\\\) (ones column)\n\\\\(6 - 4 = 2\\\\) (tens column)\n\n\\\\(73 - 48 = 25\\\\).",
@@ -4948,9 +4948,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(295\\\\)",
+      "\\\\(305\\\\)",
       "\\\\(285\\\\)",
-      "\\\\(291\\\\)",
-      "\\\\(305\\\\)"
+      "\\\\(291\\\\)"
     ],
     "h": "Subtract the ones column first, then borrow from the hundreds column to subtract the tens column.",
     "s": "Subtract: \n1. Ones column: \\\\(9 - 4 = 5\\\\)\n2. Tens column: borrow from hundreds column to get \\\\(15 - 6 = 9\\\\)\n3. Hundreds column: \\\\(2 - 0 = 2\\\\)\n\n\\\\(359 - 64 = 295\\\\).",
@@ -4986,10 +4986,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the difference:\n\\\\(743 - 358\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(385\\\\)",
       "\\\\(395\\\\)",
+      "\\\\(385\\\\)",
       "\\\\(375\\\\)",
       "\\\\(383\\\\)"
     ],
@@ -5027,12 +5027,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\n\\\\(73 \\\\times 14\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(1022\\\\)",
-      "\\\\(1012\\\\)",
+      "\\\\(1032\\\\)",
       "\\\\(922\\\\)",
-      "\\\\(1032\\\\)"
+      "\\\\(1022\\\\)",
+      "\\\\(1012\\\\)"
     ],
     "h": "Multiply \\\\(73\\\\) by \\\\(4\\\\), then multiply \\\\(73\\\\) by \\\\(10\\\\), and add the results.",
     "s": "Multiply: \n\\\\(73 \\\\times 4 = 292\\\\)\n\\\\(73 \\\\times 10 = 730\\\\)\n\\\\(292 + 730 = 1022\\\\).",
@@ -5063,11 +5063,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\n\\\\(67 \\\\times 18\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(1196\\\\)",
       "\\\\(1206\\\\)",
       "\\\\(1216\\\\)",
-      "\\\\(1196\\\\)",
       "\\\\(1226\\\\)"
     ],
     "h": "Multiply \\\\(67\\\\) by \\\\(8\\\\) first, then multiply \\\\(67\\\\) by \\\\(10\\\\), and add the two sums.",
@@ -5099,12 +5099,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\n\\\\(45 \\\\times 23\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(1035\\\\)",
-      "\\\\(1045\\\\)",
+      "\\\\(1025\\\\)",
       "\\\\(935\\\\)",
-      "\\\\(1025\\\\)"
+      "\\\\(1045\\\\)",
+      "\\\\(1035\\\\)"
     ],
     "h": "Multiply \\\\(45\\\\) by \\\\(3\\\\), then multiply \\\\(45\\\\) by \\\\(20\\\\), and add the results.",
     "s": "Multiply:\n\\\\(45 \\\\times 3 = 135\\\\)\n\\\\(45 \\\\times 20 = 900\\\\)\n\\\\(135 + 900 = 1035\\\\).",
@@ -5135,12 +5135,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the quotient:\n\\\\(68 \\\\div 4\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(17\\\\)",
-      "\\\\(16\\\\)",
       "\\\\(18\\\\)",
-      "\\\\(15\\\\)"
+      "\\\\(15\\\\)",
+      "\\\\(16\\\\)",
+      "\\\\(17\\\\)"
     ],
     "h": "Divide the tens column first: \\\\(6 \\\\div 4 = 1\\\\) remainder \\\\(2\\\\). Carry over the remainder to make \\\\(28\\\\).",
     "s": "Perform short division:\n1. Tens: \\\\(6 \\\\div 4 = 1\\\\) with remainder \\\\(2\\\\)\n2. Ones: \\\\(28 \\\\div 4 = 7\\\\)\n\n\\\\(68 \\\\div 4 = 17\\\\).",
@@ -5175,8 +5175,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "opts": [
       "\\\\(13\\\\)",
       "\\\\(14\\\\)",
-      "\\\\(12\\\\)",
-      "\\\\(15\\\\)"
+      "\\\\(15\\\\)",
+      "\\\\(12\\\\)"
     ],
     "h": "Divide the tens digit first: \\\\(9 \\\\div 7 = 1\\\\) remainder \\\\(2\\\\). Carry the remainder to the units column to make \\\\(21\\\\).",
     "s": "Divide:\n1. Tens: \\\\(9 \\\\div 7 = 1\\\\) with remainder \\\\(2\\\\)\n2. Ones: \\\\(21 \\\\div 7 = 3\\\\)\n\n\\\\(91 \\\\div 7 = 13\\\\).",
@@ -5207,12 +5207,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Perform the division and find the quotient and remainder:\n\\\\(139 \\\\div 6\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(23 \\\\text{ remainder } 1\\\\)",
       "\\\\(23 \\\\text{ remainder } 3\\\\)",
-      "\\\\(24 \\\\text{ remainder } 1\\\\)",
-      "\\\\(22 \\\\text{ remainder } 5\\\\)"
+      "\\\\(22 \\\\text{ remainder } 5\\\\)",
+      "\\\\(23 \\\\text{ remainder } 1\\\\)",
+      "\\\\(24 \\\\text{ remainder } 1\\\\)"
     ],
     "h": "Divide \\\\(13\\\\) by \\\\(6\\\\) first to get \\\\(2\\\\) remainder \\\\(1\\\\). Carry this over to make \\\\(19\\\\) in the ones place.",
     "s": "Divide:\n1. Hundreds/Tens: \\\\(13 \\\\div 6 = 2\\\\) with remainder \\\\(1\\\\)\n2. Ones: \\\\(19 \\\\div 6 = 3\\\\) with remainder \\\\(1\\\\)\n\n\\\\(139 \\\\div 6 = 23 \\\\text{ remainder } 1\\\\).",
@@ -5243,12 +5243,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 30,
     "q": "Choose the correct comparison symbol to place in the box:\n\\\\(7 \\\\quad \\\\square \\\\quad 6\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(\\le\\\\)",
       "\\\\(>\\\\)",
       "\\\\(<\\\\)",
-      "\\\\(=\\\\)",
-      "\\\\(\\le\\\\)"
+      "\\\\(=\\\\)"
     ],
     "h": "Recall the meaning of the symbols: \\\\(>\\\\) means greater than, \\\\(<\\\\) means less than, and \\\\(=\\\\) means equal to.",
     "s": "Since \\\\(7\\\\) is larger than \\\\(6\\\\), the correct symbol is \\\\(>\\\\).",
@@ -5269,11 +5269,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Choose the correct comparison symbol to place in the box:\n\\\\(5^2 \\\\quad \\\\square \\\\quad 25\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(<\\\\)",
       "\\\\(=\\\\)",
       "\\\\(>\\\\)",
-      "\\\\(<\\\\)",
       "\\\\(\\ne\\\\)"
     ],
     "h": "First evaluate the exponent: \\\\(5^2 = 5 \\\\times 5\\\\).",
@@ -5300,12 +5300,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 30,
     "q": "Choose the correct comparison symbol to place in the box:\n\\\\(3 \\\\quad \\\\square \\\\quad 10\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(\\ge\\\\)",
       "\\\\(<\\\\)",
-      "\\\\(>\\\\)",
       "\\\\(=\\\\)",
-      "\\\\(\\ge\\\\)"
+      "\\\\(>\\\\)"
     ],
     "h": "Compare the relative size of \\\\(3\\\\) and \\\\(10\\\\).",
     "s": "Since \\\\(3\\\\) is smaller than \\\\(10\\\\), the correct symbol is \\\\(<\\\\).",
@@ -5326,11 +5326,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Calculate the value based on the terminology:\nFind the product of \\\\(8\\\\) and \\\\(9\\\\).",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(89\\\\)",
       "\\\\(72\\\\)",
       "\\\\(17\\\\)",
-      "\\\\(89\\\\)",
       "\\\\(73\\\\)"
     ],
     "h": "The term 'product' means the result of multiplying the two numbers.",
@@ -5360,9 +5360,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(83\\\\)",
+      "\\\\(11\\\\)",
       "\\\\(73\\\\)",
-      "\\\\(81\\\\)",
-      "\\\\(11\\\\)"
+      "\\\\(81\\\\)"
     ],
     "h": "The term 'sum' means the result of adding the two numbers.",
     "s": "Add: \\\\(36 + 47 = 83\\\\).",
@@ -5388,12 +5388,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Calculate the value based on the terminology:\nFind the quotient of \\\\(45\\\\) and \\\\(9\\\\).",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(54\\\\)",
       "\\\\(5\\\\)",
       "\\\\(405\\\\)",
-      "\\\\(36\\\\)",
-      "\\\\(54\\\\)"
+      "\\\\(36\\\\)"
     ],
     "h": "The term 'quotient' means the result of dividing the first number by the second.",
     "s": "Divide: \\\\(45 \\\\div 9 = 5\\\\).",
@@ -5422,9 +5422,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(59\\\\)",
+      "\\\\(49\\\\)",
       "\\\\(87\\\\)",
-      "\\\\(69\\\\)",
-      "\\\\(49\\\\)"
+      "\\\\(69\\\\)"
     ],
     "h": "The term 'difference' means subtracting the smaller number from the larger number.",
     "s": "Subtract: \\\\(73 - 14 = 59\\\\).",
@@ -5481,12 +5481,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Calculate the value based on the terminology:\nEvaluate \\\\(2\\\\) cubed.",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(8\\\\)",
       "\\\\(6\\\\)",
-      "\\\\(16\\\\)",
-      "\\\\(4\\\\)"
+      "\\\\(8\\\\)",
+      "\\\\(4\\\\)",
+      "\\\\(16\\\\)"
     ],
     "h": "A number 'cubed' is multiplied by itself three times: \\\\(2 \\\\times 2 \\\\times 2\\\\).",
     "s": "Multiply: \\\\(2 \\\\times 2 \\\\times 2 = 8\\\\).",
@@ -5512,12 +5512,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Calculate the value:\n\\\\(7^2\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(49\\\\)",
-      "\\\\(14\\\\)",
       "\\\\(21\\\\)",
-      "\\\\(35\\\\)"
+      "\\\\(35\\\\)",
+      "\\\\(49\\\\)",
+      "\\\\(14\\\\)"
     ],
     "h": "The notation \\\\(7^2\\\\) represents \\\\(7\\\\) raised to the power of 2, which means \\\\(7 \\\\times 7\\\\).",
     "s": "Multiply: \\\\(7 \\\\times 7 = 49\\\\).",
@@ -5543,12 +5543,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following repeated multiplication expression in exponential notation:\n\\\\(7 \\\\times 7 \\\\times 7\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(7^3\\\\)",
+      "\\\\(7 \\\\times 3\\\\)",
       "\\\\(7^2\\\\)",
-      "\\\\(3^7\\\\)",
-      "\\\\(7 \\\\times 3\\\\)"
+      "\\\\(7^3\\\\)",
+      "\\\\(3^7\\\\)"
     ],
     "h": "Count how many times \\\\(7\\\\) is multiplied by itself. This count is the exponent (power).",
     "s": "Since \\\\(7\\\\) is multiplied by itself 3 times, it is written as \\\\(7^3\\\\).",
@@ -5574,12 +5574,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write the following repeated multiplication expression in exponential notation:\n\\\\(4 \\\\times 4 \\\\times 4 \\\\times 4 \\\\times 4\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(4 \\\\times 5\\\\)",
       "\\\\(4^5\\\\)",
-      "\\\\(4^4\\\\)",
       "\\\\(5^4\\\\)",
-      "\\\\(4 \\\\times 5\\\\)"
+      "\\\\(4^4\\\\)"
     ],
     "h": "Count the number of times \\\\(4\\\\) is multiplied by itself.",
     "s": "Since \\\\(4\\\\) is multiplied by itself 5 times, it is written as \\\\(4^5\\\\).",
@@ -5605,11 +5605,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the equation \\\\(5000 = 5 \\\\times 1000\\\\) in exponential notation.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(5 \\\\times 10^3\\\\)",
       "\\\\(5 \\\\times 10^2\\\\)",
       "\\\\(50^3\\\\)",
+      "\\\\(5 \\\\times 10^3\\\\)",
       "\\\\(5 \\\\times 10^4\\\\)"
     ],
     "h": "Convert the value \\\\(1000\\\\) to a power of 10. Check the number of zeros in \\\\(1000\\\\).",
@@ -5636,12 +5636,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CCLXII}\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(262\\\\)",
-      "\\\\(242\\\\)",
       "\\\\(272\\\\)",
-      "\\\\(362\\\\)"
+      "\\\\(262\\\\)",
+      "\\\\(362\\\\)",
+      "\\\\(242\\\\)"
     ],
     "h": "Break down the Roman numeral into its individual values: \\\\(\\text{C}\\\\), \\\\(\\text{L}\\\\), \\\\(\\text{X}\\\\), and \\\\(\\text{I}\\\\).",
     "s": "Convert each part of the Roman numeral \\\\(\\text{CCLXII}\\\\):\\n- \\\\(\\text{CC} = 100 + 100 = 200\\\\)\\n- \\\\(\\text{L} = 50\\\\)\\n- \\\\(\\text{X} = 10\\\\)\\n- \\\\(\\text{II} = 1 + 1 = 2\\\\)\\n\\nAdd them together: \\\\(200 + 50 + 10 + 2 = 262\\\\).",
@@ -5669,12 +5669,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CDXLIV}\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(446\\\\)",
       "\\\\(444\\\\)",
-      "\\\\(464\\\\)",
       "\\\\(644\\\\)",
-      "\\\\(446\\\\)"
+      "\\\\(464\\\\)"
     ],
     "h": "Look for subtractive pairs like \\\\(\\text{CD}\\\\) (100 before 500) and \\\\(\\text{XL}\\\\) (10 before 50).",
     "s": "Convert each part of the Roman numeral \\\\(\\text{CDXLIV}\\\\):\\n- \\\\(\\text{CD} = 500 - 100 = 400\\\\)\\n- \\\\(\\text{XL} = 50 - 10 = 40\\\\)\\n- \\\\(\\text{IV} = 5 - 1 = 4\\\\)\\n\\nAdd them together: \\\\(400 + 40 + 4 = 444\\\\).",
@@ -5702,11 +5702,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the Roman numeral in Hindu-Arabic numerals:\\n\\\\(\\text{CMXCIX}\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(909\\\\)",
       "\\\\(999\\\\)",
       "\\\\(990\\\\)",
-      "\\\\(909\\\\)",
       "\\\\(1099\\\\)"
     ],
     "h": "Look for subtractive pairs like \\\\(\\text{CM}\\\\), \\\\(\\text{XC}\\\\), and \\\\(\\text{IX}\\\\).",
@@ -5735,12 +5735,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Express the following number in Roman numerals:\\n\\\\(730\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(\\text{DCCXXX}\\\\)",
       "\\\\(\\text{DCCCXXX}\\\\)",
+      "\\\\(\\text{CDXXX}\\\\)",
       "\\\\(\\text{DCCXX}\\\\)",
-      "\\\\(\\text{CDXXX}\\\\)"
+      "\\\\(\\text{DCCXXX}\\\\)"
     ],
     "h": "Break down 730 into hundreds and tens: \\\\(700 + 30\\\\).",
     "s": "Convert each part of \\\\(730\\\\) to Roman numerals:\\n- \\\\(700 = 500 + 100 + 100 = \\text{DCC}\\\\)\\n- \\\\(30 = 10 + 10 + 10 = \\text{XXX}\\\\)\\n\\nCombine them: \\\\(\\text{DCCXXX}\\\\).",
@@ -5768,12 +5768,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Express the following number in Roman numerals:\\n\\\\(934\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(\\text{CMXXXIV}\\\\)",
       "\\\\(\\text{DCCCXXXIV}\\\\)",
-      "\\\\(\\text{MCXXXIV}\\\\)",
-      "\\\\(\\text{CMXXXVI}\\\\)"
+      "\\\\(\\text{CMXXXIV}\\\\)",
+      "\\\\(\\text{CMXXXVI}\\\\)",
+      "\\\\(\\text{MCXXXIV}\\\\)"
     ],
     "h": "Break down 934 into place values: \\\\(900 + 30 + 4\\\\). Note that 900 is written by subtracting 100 from 1000.",
     "s": "Convert each part of \\\\(934\\\\) to Roman numerals:\\n- \\\\(900 = 1000 - 100 = \\text{CM}\\\\)\\n- \\\\(30 = 10 + 10 + 10 = \\text{XXX}\\\\)\\n- \\\\(4 = 5 - 1 = \\text{IV}\\\\)\\n\\nCombine them: \\\\(\\text{CMXXXIV}\\\\).",
@@ -5801,12 +5801,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Express the following number in Roman numerals:\\n\\\\(1989\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(\\text{MCMLXXXIX}\\\\)",
       "\\\\(\\text{MCMXCVII}\\\\)",
-      "\\\\(\\text{MDCLXXXIX}\\\\)",
-      "\\\\(\\text{MCMLXXIX}\\\\)"
+      "\\\\(\\text{MCMLXXIX}\\\\)",
+      "\\\\(\\text{MCMLXXXIX}\\\\)",
+      "\\\\(\\text{MDCLXXXIX}\\\\)"
     ],
     "h": "Break down 1989 into place values: \\\\(1000 + 900 + 80 + 9\\\\).",
     "s": "Convert each part of \\\\(1989\\\\) to Roman numerals:\\n- \\\\(1000 = \\text{M}\\\\)\\n- \\\\(900 = 1000 - 100 = \\text{CM}\\\\)\\n- \\\\(80 = 50 + 10 + 10 + 10 = \\text{LXXX}\\\\)\\n- \\\\(9 = 10 - 1 = \\text{IX}\\\\)\\n\\nCombine them: \\\\(\\text{MCMLXXXIX}\\\\).",
@@ -5834,12 +5834,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the expanded exponential notation to find the value:\\n\\\\((5 \\\\times 10^3) + (3 \\\\times 10^2) + (9 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(5396\\\\)",
       "\\\\(53096\\\\)",
       "\\\\(50396\\\\)",
-      "\\\\(53960\\\\)"
+      "\\\\(53960\\\\)",
+      "\\\\(5396\\\\)"
     ],
     "h": "Evaluate each multiplication first, then sum the results.",
     "s": "Calculate each term:\\n- \\\\(5 \\\\times 10^3 = 5 \\\\times 1000 = 5000\\\\)\\n- \\\\(3 \\\\times 10^2 = 3 \\\\times 100 = 300\\\\)\\n- \\\\(9 \\\\times 10^1 = 9 \\\\times 10 = 90\\\\)\\n- \\\\(6 \\\\times 1 = 6\\\\)\\n\\nSum them up: \\\\(5000 + 300 + 90 + 6 = 5396\\\\).",
@@ -5867,11 +5867,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the expanded exponential notation to find the value:\\n\\\\((8 \\\\times 10^5) + (0 \\\\times 10^4) + (2 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(827600\\\\)",
       "\\\\(802076\\\\)",
       "\\\\(820760\\\\)",
-      "\\\\(827600\\\\)",
       "\\\\(802760\\\\)"
     ],
     "h": "Be careful with terms containing 0, as they act as place holders.",
@@ -5900,12 +5900,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded exponential notation:\\n\\\\(971\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
-      "\\\\((9 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1)\\\\)",
       "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^2) + (1 \\\\times 1)\\\\)",
-      "\\\\((9 \\\\times 10^1) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
+      "\\\\((9 \\\\times 10^3) + (7 \\\\times 10^2) + (1 \\\\times 10^1)\\\\)",
+      "\\\\((9 \\\\times 10^1) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)",
+      "\\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\)"
     ],
     "h": "Break down 971 into place values: \\\\(900 + 70 + 1\\\\). Then write each part using powers of 10.",
     "s": "Convert \\\\(971\\\\) into expanded form:\\n- \\\\(900 = 9 \\\\times 100 = 9 \\\\times 10^2\\\\)\\n- \\\\(70 = 7 \\\\times 10 = 7 \\\\times 10^1\\\\)\\n- \\\\(1 = 1 \\\\times 1\\\\)\\n\\nCombine: \\\\((9 \\\\times 10^2) + (7 \\\\times 10^1) + (1 \\\\times 1)\\\\).",
@@ -5933,10 +5933,10 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded exponential notation:\\n\\\\(3406\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
       "\\\\((3 \\\\times 10^2) + (4 \\\\times 10^1) + (0 \\\\times 1) + (6 \\\\times 1)\\\\)",
+      "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (0 \\\\times 10^1) + (6 \\\\times 1)\\\\)",
       "\\\\((3 \\\\times 10^3) + (4 \\\\times 10^2) + (6 \\\\times 1)\\\\)",
       "\\\\((3 \\\\times 10^4) + (4 \\\\times 10^3) + (0 \\\\times 10^2) + (6 \\\\times 1)\\\\)"
     ],
@@ -5966,12 +5966,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded exponential notation:\\n\\\\(29037\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)",
       "\\\\((2 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (3 \\\\times 1) + (7 \\\\times 1)\\\\)",
+      "\\\\((2 \\\\times 10^5) + (9 \\\\times 10^4) + (0 \\\\times 10^3) + (3 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)",
       "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)",
-      "\\\\((2 \\\\times 10^5) + (9 \\\\times 10^4) + (0 \\\\times 10^3) + (3 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)"
+      "\\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\)"
     ],
     "h": "Break down 29037 into place values: \\\\(20000 + 9000 + 0 + 30 + 7\\\\). Use powers of 10.",
     "s": "Convert \\\\(29037\\\\) into expanded form:\\n- \\\\(20000 = 2 \\\\times 10^4\\\\)\\n- \\\\(9000 = 9 \\\\times 10^3\\\\)\\n- \\\\(0 = 0 \\\\times 10^2\\\\)\\n- \\\\(30 = 3 \\\\times 10^1\\\\)\\n- \\\\(7 = 7 \\\\times 1\\\\)\\n\\nCombine: \\\\((2 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (3 \\\\times 10^1) + (7 \\\\times 1)\\\\).",
@@ -5999,12 +5999,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the sum:\\n\\\\(731 + 16 + 409 + 8 + 1072\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(2236\\\\)",
+      "\\\\(2336\\\\)",
       "\\\\(2136\\\\)",
       "\\\\(2246\\\\)",
-      "\\\\(2336\\\\)"
+      "\\\\(2236\\\\)"
     ],
     "h": "Group numbers to make addition easier, or align them vertically.",
     "s": "Add the numbers vertically or by grouping:\\n\\\\(731 + 409 = 1140\\\\)\\n\\\\(16 + 8 = 24\\\\)\\n\\\\(1140 + 24 + 1072 = 2236\\\\).",
@@ -6032,12 +6032,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the sum:\\n\\\\(96 + 854 + 1376 + 4 + 32\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(2362\\\\)",
+      "\\\\(2462\\\\)",
       "\\\\(2262\\\\)",
-      "\\\\(2352\\\\)",
-      "\\\\(2462\\\\)"
+      "\\\\(2362\\\\)",
+      "\\\\(2352\\\\)"
     ],
     "h": "Group compatible pairs to simplify calculations: e.g. \\\\(96 + 4 = 100\\\\).",
     "s": "Use grouping methods to solve:\\n- \\\\(96 + 4 = 100\\\\)\\n- \\\\(854 + 1376 + 32 = 2262\\\\)\\n\\nAdd together: \\\\(100 + 2262 = 2362\\\\).",
@@ -6068,9 +6068,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(89620\\\\)",
-      "\\\\(89520\\\\)",
       "\\\\(88620\\\\)",
-      "\\\\(89610\\\\)"
+      "\\\\(89610\\\\)",
+      "\\\\(89520\\\\)"
     ],
     "h": "Stack the numbers vertically, aligning place values, and add them.",
     "s": "Calculate the vertical addition:\\n- Carry over digits from units, tens, hundreds, thousands columns.\\n- Sum = \\\\(89620\\\\).",
@@ -6098,12 +6098,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the difference:\\n\\\\(793 - 147\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(646\\\\)",
-      "\\\\(656\\\\)",
       "\\\\(636\\\\)",
-      "\\\\(746\\\\)"
+      "\\\\(656\\\\)",
+      "\\\\(746\\\\)",
+      "\\\\(646\\\\)"
     ],
     "h": "Subtract column by column. Borrow from the tens column since 7 is greater than 3.",
     "s": "Perform subtraction:\\n- Borrow 10 from 9 in the tens column (making 13 in the units column).\\n- \\\\(13 - 7 = 6\\\\).\\n- Tens column: \\\\(8 - 4 = 4\\\\).\\n- Hundreds column: \\\\(7 - 1 = 6\\\\).\\n- Result: \\\\(646\\\\).",
@@ -6131,11 +6131,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the difference:\\n\\\\(632 - 248\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(384\\\\)",
       "\\\\(394\\\\)",
       "\\\\(374\\\\)",
+      "\\\\(384\\\\)",
       "\\\\(484\\\\)"
     ],
     "h": "Borrow from the tens place and then from the hundreds place as needed.",
@@ -6164,12 +6164,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the difference:\\n\\\\(6000 - 1369\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(4631\\\\)",
-      "\\\\(4731\\\\)",
+      "\\\\(5631\\\\)",
       "\\\\(4621\\\\)",
-      "\\\\(5631\\\\)"
+      "\\\\(4631\\\\)",
+      "\\\\(4731\\\\)"
     ],
     "h": "Borrow repeatedly across the zeros of 6000 to perform subtraction.",
     "s": "Subtract by borrowing:\\n- Treat 6000 as \\\\(5990 + 10\\\\).\\n- \\\\(10 - 9 = 1\\\\)\\n- \\\\(9 - 6 = 3\\\\)\\n- \\\\(9 - 3 = 6\\\\)\\n- \\\\(5 - 1 = 4\\\\)\\n- Result: \\\\(4631\\\\).",
@@ -6197,12 +6197,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\\n\\\\(37 \\\\times 28\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(1036\\\\)",
-      "\\\\(1026\\\\)",
       "\\\\(936\\\\)",
-      "\\\\(1136\\\\)"
+      "\\\\(1136\\\\)",
+      "\\\\(1036\\\\)",
+      "\\\\(1026\\\\)"
     ],
     "h": "Multiply 37 by 8, then by 20, and add the two products.",
     "s": "Multiply using partial products:\\n- \\\\(37 \\\\times 8 = 296\\\\)\\n- \\\\(37 \\\\times 20 = 740\\\\)\\n\\nAdd the results: \\\\(296 + 740 = 1036\\\\).",
@@ -6230,12 +6230,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\\n\\\\(145 \\\\times 13\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(1885\\\\)",
-      "\\\\(1785\\\\)",
       "\\\\(1875\\\\)",
-      "\\\\(1985\\\\)"
+      "\\\\(1785\\\\)",
+      "\\\\(1985\\\\)",
+      "\\\\(1885\\\\)"
     ],
     "h": "Multiply 145 by 3, then by 10, and sum the partial products.",
     "s": "Calculate the multiplication:\\n- \\\\(145 \\\\times 3 = 435\\\\)\\n- \\\\(145 \\\\times 10 = 1450\\\\)\\n\\nAdd: \\\\(435 + 1450 = 1885\\\\).",
@@ -6263,12 +6263,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\\n\\\\(632 \\\\times 47\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(29704\\\\)",
+      "\\\\(30704\\\\)",
       "\\\\(28704\\\\)",
-      "\\\\(29604\\\\)",
-      "\\\\(30704\\\\)"
+      "\\\\(29704\\\\)",
+      "\\\\(29604\\\\)"
     ],
     "h": "Multiply 632 by 7, then by 40, and add the two results.",
     "s": "Calculate partial products:\\n- \\\\(632 \\\\times 7 = 4424\\\\)\\n- \\\\(632 \\\\times 40 = 25280\\\\)\\n\\nAdd: \\\\(4424 + 25280 = 29704\\\\).",
@@ -6299,8 +6299,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(74\\\\) remainder \\\\(5\\\\)",
-      "\\\\(74\\\\) remainder \\\\(0\\\\)",
       "\\\\(7\\\\) remainder \\\\(45\\\\)",
+      "\\\\(74\\\\) remainder \\\\(0\\\\)",
       "\\\\(75\\\\) remainder \\\\(5\\\\)"
     ],
     "h": "When dividing by 10, the units digit is the remainder and the other digits form the quotient.",
@@ -6329,11 +6329,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the quotient and remainder of the division:\\n\\\\(386 \\\\div 15\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(25\\\\) remainder \\\\(11\\\\)",
-      "\\\\(25\\\\) remainder \\\\(6\\\\)",
       "\\\\(26\\\\) remainder \\\\(11\\\\)",
+      "\\\\(25\\\\) remainder \\\\(6\\\\)",
+      "\\\\(25\\\\) remainder \\\\(11\\\\)",
       "\\\\(24\\\\) remainder \\\\(11\\\\)"
     ],
     "h": "Use long division. Find how many times 15 goes into 38, then calculate the remaining division.",
@@ -6362,12 +6362,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the quotient and remainder of the division:\\n\\\\(490 \\\\div 18\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(27\\\\) remainder \\\\(4\\\\)",
       "\\\\(27\\\\) remainder \\\\(2\\\\)",
-      "\\\\(28\\\\) remainder \\\\(4\\\\)",
-      "\\\\(26\\\\) remainder \\\\(8\\\\)"
+      "\\\\(26\\\\) remainder \\\\(8\\\\)",
+      "\\\\(27\\\\) remainder \\\\(4\\\\)",
+      "\\\\(28\\\\) remainder \\\\(4\\\\)"
     ],
     "h": "Find how many times 18 goes into 49, then compute remainder step-by-step.",
     "s": "Perform long division:\\n1. \\\\(49 \\div 18 = 2\\\\) remainder \\\\(13\\\\).\\n2. Bring down 0 to make 130.\\n3. \\\\(130 \\div 18 = 7\\\\) (since \\\\(18 \\\\times 7 = 126\\\\)).\\n4. Remainder: \\\\(130 - 126 = 4\\\\).\\n5. Quotient: \\\\(27\\\\), Remainder: \\\\(4\\\\).",
@@ -6395,12 +6395,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\(16 + 8 \\\\div 2 + 1\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(21\\\\)",
       "\\\\(13\\\\)",
-      "\\\\(17\\\\)",
-      "\\\\(25\\\\)"
+      "\\\\(21\\\\)",
+      "\\\\(25\\\\)",
+      "\\\\(17\\\\)"
     ],
     "h": "According to the order of operations (BODMAS), perform division before addition.",
     "s": "Evaluate using order of operations:\\n- Division first: \\\\(8 \\div 2 = 4\\\\).\\n- Expression becomes: \\\\(16 + 4 + 1\\\\).\\n- Addition: \\\\(20 + 1 = 21\\\\).",
@@ -6428,12 +6428,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\((16 + 8) \\\\div 2 + 1\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(13\\\\)",
-      "\\\\(21\\\\)",
+      "\\\\(8\\\\)",
       "\\\\(12\\\\)",
-      "\\\\(8\\\\)"
+      "\\\\(13\\\\)",
+      "\\\\(21\\\\)"
     ],
     "h": "Brackets have the highest priority. Evaluate the brackets first.",
     "s": "Evaluate using order of operations:\\n- Brackets first: \\\\(16 + 8 = 24\\\\).\\n- Expression becomes: \\\\(24 \\div 2 + 1\\\\).\\n- Division next: \\\\(24 \\div 2 = 12\\\\).\\n- Addition last: \\\\(12 + 1 = 13\\\\).",
@@ -6464,9 +6464,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(8\\\\)",
-      "\\\\(13\\\\)",
       "\\\\(24\\\\)",
-      "\\\\(9\\\\)"
+      "\\\\(9\\\\)",
+      "\\\\(13\\\\)"
     ],
     "h": "Evaluate the expressions in both sets of brackets first.",
     "s": "Evaluate using order of operations:\\n- First bracket: \\\\(16 + 8 = 24\\\\).\\n- Second bracket: \\\\(2 + 1 = 3\\\\).\\n- Expression becomes: \\\\(24 \\div 3\\\\).\\n- Divide: \\\\(24 \\div 3 = 8\\\\).",
@@ -6494,12 +6494,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\(18 - 6 \\\\div 2 + 1\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(16\\\\)",
-      "\\\\(7\\\\)",
       "\\\\(15\\\\)",
-      "\\\\(9\\\\)"
+      "\\\\(16\\\\)",
+      "\\\\(9\\\\)",
+      "\\\\(7\\\\)"
     ],
     "h": "Division must be performed before subtraction and addition.",
     "s": "Evaluate using order of operations:\\n- Division first: \\\\(6 \\div 2 = 3\\\\).\\n- Expression becomes: \\\\(18 - 3 + 1\\\\).\\n- Solve left to right: \\\\(15 + 1 = 16\\\\).",
@@ -6527,11 +6527,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\(18 - 6 \\\\div (2 + 1)\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(16\\\\)",
-      "\\\\(4\\\\)",
       "\\\\(14\\\\)",
+      "\\\\(4\\\\)",
+      "\\\\(16\\\\)",
       "\\\\(15\\\\)"
     ],
     "h": "Perform the operation inside the bracket first, then division, then subtraction.",
@@ -6560,12 +6560,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\((18 - 6) \\\\div (2 + 1)\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(4\\\\)",
       "\\\\(16\\\\)",
-      "\\\\(6\\\\)",
-      "\\\\(3\\\\)"
+      "\\\\(4\\\\)",
+      "\\\\(3\\\\)",
+      "\\\\(6\\\\)"
     ],
     "h": "Evaluate both brackets first before doing the division.",
     "s": "Evaluate using order of operations:\\n- First bracket: \\\\(18 - 6 = 12\\\\).\\n- Second bracket: \\\\(2 + 1 = 3\\\\).\\n- Expression becomes: \\\\(12 \\div 3\\\\).\\n- Divide: \\\\(12 \\div 3 = 4\\\\).",
@@ -6593,12 +6593,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Translate the sentence into a mathematical expression and find the value:\\nDecrease the quotient of \\\\(18\\\\) and \\\\(2\\\\) by \\\\(4\\\\).",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(5\\\\)",
       "\\\\(8\\\\)",
       "\\\\(14\\\\)",
-      "\\\\(1\\\\)"
+      "\\\\(1\\\\)",
+      "\\\\(5\\\\)"
     ],
     "h": "Find the quotient first (division), then decrease it (subtraction).",
     "s": "Translate the operations:\\n- Quotient of \\\\(18\\\\) and \\\\(2\\\\): \\\\(18 \\div 2 = 9\\\\).\\n- Decrease by \\\\(4\\\\): \\\\(9 - 4 = 5\\\\).\\n- Expression: \\\\((18 \\div 2) - 4 = 5\\\\).",
@@ -6626,12 +6626,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Translate the sentence into a mathematical expression and find the value:\\nWhat is the difference between \\\\(8\\\\) and the square of \\\\(5\\\\)?",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(17\\\\)",
+      "\\\\(33\\\\)",
       "\\\\(2\\\\)",
       "\\\\(3\\\\)",
-      "\\\\(33\\\\)"
+      "\\\\(17\\\\)"
     ],
     "h": "Square of 5 is \\\\(5^2 = 25\\\\). Find the difference between 25 and 8.",
     "s": "Translate the operations:\\n- Square of \\\\(5\\\\): \\\\(5^2 = 25\\\\).\\n- Difference between \\\\(8\\\\) and \\\\(25\\\\): \\\\(25 - 8 = 17\\\\).\\n- Expression: \\\\(5^2 - 8 = 17\\\\).",
@@ -6659,12 +6659,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Translate the sentence into a mathematical expression and find the value:\\nIncrease the product of \\\\(15\\\\) and \\\\(2\\\\) by \\\\(7\\\\).",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(37\\\\)",
-      "\\\\(24\\\\)",
       "\\\\(30\\\\)",
-      "\\\\(49\\\\)"
+      "\\\\(49\\\\)",
+      "\\\\(24\\\\)",
+      "\\\\(37\\\\)"
     ],
     "h": "Find the product first (multiplication), then increase it (addition).",
     "s": "Translate the operations:\\n- Product of \\\\(15\\\\) and \\\\(2\\\\): \\\\(15 \\\\times 2 = 30\\\\).\\n- Increase by \\\\(7\\\\): \\\\(30 + 7 = 37\\\\).\\n- Expression: \\\\((15 \\\\times 2) + 7 = 37\\\\).",
@@ -6692,11 +6692,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Choose the mathematical statement that represents the phrase:\\n\\\\(7\\\\) is not equal to \\\\(6\\\\).",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(7 > 6\\\\)",
       "\\\\(7 \\\\neq 6\\\\)",
       "\\\\(7 = 6\\\\)",
-      "\\\\(7 > 6\\\\)",
       "\\\\(7 < 6\\\\)"
     ],
     "h": "The symbol for 'not equal' is a slash through an equals sign: \\\\(\\neq\\\\).",
@@ -6725,12 +6725,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Choose the mathematical statement that represents the phrase:\\nTherefore, the square of \\\\(6\\\\) is equal to \\\\(36\\\\).",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(\\therefore 6^2 = 36\\\\)",
+      "\\\\(\\therefore 6^2 \\\\neq 36\\\\)",
       "\\\\(\\because 6^2 = 36\\\\)",
       "\\\\(\\therefore 6 \\\\times 2 = 36\\\\)",
-      "\\\\(\\therefore 6^2 \\\\neq 36\\\\)"
+      "\\\\(\\therefore 6^2 = 36\\\\)"
     ],
     "h": "The symbol for 'therefore' is three dots forming a triangle: \\\\(\\therefore\\\\). 'Square of 6' is \\\\(6^2\\\\).",
     "s": "Identify the symbols:\\n- 'Therefore' is \\\\(\\therefore\\\\).\\n- 'Square of 6' is \\\\(6^2\\\\).\\n- 'Is equal to' is \\\\(=\\\\).\\n- The statement is \\\\(\\therefore 6^2 = 36\\\\).",
@@ -6758,12 +6758,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Choose the mathematical statement that represents the phrase:\\n\\\\(8\\\\) is less than the sum of \\\\(5\\\\) and \\\\(6\\\\).",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(8 = 5 + 6\\\\)",
       "\\\\(8 < 5 + 6\\\\)",
       "\\\\(8 > 5 + 6\\\\)",
-      "\\\\(8 < 5 \\\\times 6\\\\)",
-      "\\\\(8 = 5 + 6\\\\)"
+      "\\\\(8 < 5 \\\\times 6\\\\)"
     ],
     "h": "The symbol for 'less than' is \\\\(<\\\\). The sum of 5 and 6 is written as \\\\(5 + 6\\\\).",
     "s": "Identify the symbols:\\n- 'is less than' is \\\\(<\\\\).\\n- 'sum of 5 and 6' is \\\\(5 + 6\\\\).\\n- Combine: \\\\(8 < 5 + 6\\\\).",
@@ -6794,9 +6794,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "Two million, four hundred and seventy-three thousand, nine hundred and seven",
+      "Two million, four hundred and seventy-three thousand, nine hundred and seventy",
       "Two million, four hundred and seventy-three thousand, ninety-seven",
-      "Twenty-four million, seventy-three thousand, nine hundred and seven",
-      "Two million, four hundred and seventy-three thousand, nine hundred and seventy"
+      "Twenty-four million, seventy-three thousand, nine hundred and seven"
     ],
     "h": "Group the digits in periods of three: Millions (2), Thousands (473), and Ones (907).",
     "s": "Break down by periods:\\n- Millions: \\\\(2\\\\) (two million)\\n- Thousands: \\\\(473\\\\) (four hundred and seventy-three thousand)\\n- Ones: \\\\(907\\\\) (nine hundred and seven)\\n\\nCombine: Two million, four hundred and seventy-three thousand, nine hundred and seven.",
@@ -6824,11 +6824,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Choose the correct word notation for the number:\\n\\\\(97\\ 003\\ 002\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Ninety-seven million, three thousand and two",
-      "Ninety-seven million, thirty thousand and two",
       "Ninety-seven thousand, three hundred and two",
+      "Ninety-seven million, thirty thousand and two",
+      "Ninety-seven million, three thousand and two",
       "Nine million, seven hundred and three thousand and two"
     ],
     "h": "Identify the periods of the digits: Millions (97), Thousands (003), and Ones (002).",
@@ -6857,12 +6857,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Choose the correct word notation for the number:\\n\\\\(817\\ 653\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Eight hundred and seventeen thousand, six hundred and fifty-three",
       "Eight hundred and seventy thousand, six hundred and fifty-three",
-      "Eight hundred and seventeen thousand, six hundred and thirty-five",
-      "Eight hundred and sixteen thousand, five hundred and sixty-three"
+      "Eight hundred and sixteen thousand, five hundred and sixty-three",
+      "Eight hundred and seventeen thousand, six hundred and fifty-three",
+      "Eight hundred and seventeen thousand, six hundred and thirty-five"
     ],
     "h": "Identify the periods: Thousands (817) and Ones (653).",
     "s": "Break down by periods:\\n- Thousands: \\\\(817\\\\) (eight hundred and seventeen thousand)\\n- Ones: \\\\(653\\\\) (six hundred and fifty-three)\\n\\nCombine: Eight hundred and seventeen thousand, six hundred and fifty-three.",
@@ -6893,8 +6893,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (0 \\\\times 10^2) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)",
-      "\\\\((7 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1) + (1 \\\\times 1) + (5 \\\\times 1)\\\\)",
       "\\\\((7 \\\\times 10^4) + (6 \\\\times 10^3) + (1 \\\\times 10^1) + (5 \\\\times 1)\\\\)",
+      "\\\\((7 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1) + (1 \\\\times 1) + (5 \\\\times 1)\\\\)",
       "\\\\((7 \\\\times 10^5) + (6 \\\\times 10^4) + (0 \\\\times 10^3) + (1 \\\\times 10^2) + (5 \\\\times 10^1)\\\\)"
     ],
     "h": "Break down 76 015 into place values: \\\\(70000 + 6000 + 0 + 10 + 5\\\\). Write each using powers of 10.",
@@ -6923,12 +6923,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the following number in expanded exponential notation:\\n\\\\(713\\ 860\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\((7 \\\\times 10^6) + (1 \\\\times 10^5) + (3 \\\\times 10^4) + (8 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1)\\\\)",
       "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\)",
       "\\\\((7 \\\\times 10^4) + (1 \\\\times 10^3) + (3 \\\\times 10^2) + (8 \\\\times 10^1) + (6 \\\\times 1) + (0 \\\\times 1)\\\\)",
-      "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1)\\\\)",
-      "\\\\((7 \\\\times 10^6) + (1 \\\\times 10^5) + (3 \\\\times 10^4) + (8 \\\\times 10^3) + (6 \\\\times 10^2) + (0 \\\\times 10^1)\\\\)"
+      "\\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1)\\\\)"
     ],
     "h": "Break down 713 860 into place values: \\\\(700000 + 10000 + 3000 + 800 + 60 + 0\\\\). Write each using powers of 10.",
     "s": "Convert \\\\(713\\ 860\\\\) into expanded form:\\n- \\\\(700000 = 7 \\\\times 10^5\\\\)\\n- \\\\(10000 = 1 \\\\times 10^4\\\\)\\n- \\\\(3000 = 3 \\\\times 10^3\\\\)\\n- \\\\(800 = 8 \\\\times 10^2\\\\)\\n- \\\\(60 = 6 \\\\times 10^1\\\\)\\n- \\\\(0 = 0 \\\\times 1\\\\)\\n\\nCombine: \\\\((7 \\\\times 10^5) + (1 \\\\times 10^4) + (3 \\\\times 10^3) + (8 \\\\times 10^2) + (6 \\\\times 10^1) + (0 \\\\times 1)\\\\).",
@@ -6959,9 +6959,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\)",
-      "\\\\((3 \\\\times 10^5) + (4 \\\\times 10^4) + (2 \\\\times 10^3) + (1 \\\\times 10^2) + (9 \\\\times 10^1) + (0 \\\\times 1) + (7 \\\\times 1)\\\\)",
       "\\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (7 \\\\times 1)\\\\)",
-      "\\\\((3 \\\\times 10^7) + (4 \\\\times 10^6) + (2 \\\\times 10^5) + (1 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)"
+      "\\\\((3 \\\\times 10^7) + (4 \\\\times 10^6) + (2 \\\\times 10^5) + (1 \\\\times 10^4) + (9 \\\\times 10^3) + (0 \\\\times 10^2) + (7 \\\\times 10^1)\\\\)",
+      "\\\\((3 \\\\times 10^5) + (4 \\\\times 10^4) + (2 \\\\times 10^3) + (1 \\\\times 10^2) + (9 \\\\times 10^1) + (0 \\\\times 1) + (7 \\\\times 1)\\\\)"
     ],
     "h": "Break down 3 421 907 into place values: \\\\(3000000 + 400000 + 20000 + 1000 + 900 + 0 + 7\\\\). Write each using powers of 10.",
     "s": "Convert \\\\(3\\ 421\\ 907\\\\) into expanded form:\\n- \\\\(3000000 = 3 \\\\times 10^6\\\\)\\n- \\\\(400000 = 4 \\\\times 10^5\\\\)\\n- \\\\(20000 = 2 \\\\times 10^4\\\\)\\n- \\\\(1000 = 1 \\\\times 10^3\\\\)\\n- \\\\(900 = 9 \\\\times 10^2\\\\)\\n- \\\\(0 = 0 \\\\times 10^1\\\\)\\n- \\\\(7 = 7 \\\\times 1\\\\)\\n\\nCombine: \\\\((3 \\\\times 10^6) + (4 \\\\times 10^5) + (2 \\\\times 10^4) + (1 \\\\times 10^3) + (9 \\\\times 10^2) + (0 \\\\times 10^1) + (7 \\\\times 1)\\\\).",
@@ -6992,9 +6992,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(70\\ 000\\\\)",
-      "\\\\(80\\ 000\\\\)",
+      "\\\\(72\\ 000\\\\)",
       "\\\\(73\\ 000\\\\)",
-      "\\\\(72\\ 000\\\\)"
+      "\\\\(80\\ 000\\\\)"
     ],
     "h": "Look at the digit in the thousands place (2) to decide whether to round up or down.",
     "s": "Round to nearest 10 000:\\n- The thousands digit is \\\\(2\\\\).\\n- Since \\\\(2 < 5\\\\), round down.\\n- The number becomes \\\\(70\\ 000\\\\).",
@@ -7055,12 +7055,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Round off the following number to the nearest \\\\(10\\ 000\\\\):\\n\\\\(676\\ 403\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(680\\ 000\\\\)",
-      "\\\\(670\\ 000\\\\)",
       "\\\\(700\\ 000\\\\)",
-      "\\\\(676\\ 000\\\\)"
+      "\\\\(676\\ 000\\\\)",
+      "\\\\(670\\ 000\\\\)",
+      "\\\\(680\\ 000\\\\)"
     ],
     "h": "Look at the thousands digit (6) to decide whether to round up or down.",
     "s": "Round to nearest 10 000:\\n- The thousands digit is \\\\(6\\\\).\\n- Since \\\\(6 \\\\ge 5\\\\), round up.\\n- Increase the ten-thousands digit (7) by 1 to make it 8.\\n- The number becomes \\\\(680\\ 000\\\\).",
@@ -7124,9 +7124,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(6293\\\\)",
-      "\\\\(6393\\\\)",
+      "\\\\(6283\\\\)",
       "\\\\(5293\\\\)",
-      "\\\\(6283\\\\)"
+      "\\\\(6393\\\\)"
     ],
     "h": "Perform column-by-column subtraction, borrowing from the left as needed.",
     "s": "Perform subtraction:\\n- Units: \\\\(12 - 9 = 3\\\\) (borrowed from tens).\\n- Tens: \\\\(15 - 6 = 9\\\\) (borrowed from hundreds).\\n- Hundreds: \\\\(3 - 1 = 2\\\\).\\n- Thousands: \\\\(13 - 7 = 6\\\\) (borrowed from ten-thousands).\\n- Ten-thousands: \\\\(4 - 4 = 0\\\\).\\n- Result: \\\\(6293\\\\).",
@@ -7154,11 +7154,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the difference:\\n\\\\(73\\ 851 - 68\\ 674\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(4177\\\\)",
       "\\\\(5177\\\\)",
       "\\\\(5277\\\\)",
-      "\\\\(4177\\\\)",
       "\\\\(5187\\\\)"
     ],
     "h": "Perform subtraction from right to left, borrowing from adjacent left places when needed.",
@@ -7190,9 +7190,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(633\\ 184\\\\)",
-      "\\\\(632\\ 184\\\\)",
       "\\\\(633\\ 284\\\\)",
-      "\\\\(533\\ 184\\\\)"
+      "\\\\(533\\ 184\\\\)",
+      "\\\\(632\\ 184\\\\)"
     ],
     "h": "Find the partial products of 1684 with 6, 70, and 300, then sum them up.",
     "s": "Perform multiplication using partial products:\\n- \\\\(1684 \\\\times 6 = 10104\\\\)\\n- \\\\(1684 \\\\times 70 = 117880\\\\)\\n- \\\\(1684 \\\\times 300 = 505200\\\\)\\n\\nSum: \\\\(10104 + 117880 + 505200 = 633184\\\\).",
@@ -7223,9 +7223,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(2\\ 406\\ 716\\\\)",
-      "\\\\(2\\ 406\\ 816\\\\)",
       "\\\\(2\\ 396\\ 716\\\\)",
-      "\\\\(2\\ 416\\ 716\\\\)"
+      "\\\\(2\\ 416\\ 716\\\\)",
+      "\\\\(2\\ 406\\ 816\\\\)"
     ],
     "h": "Multiply 5972 by 3, and then 5972 by 400. Sum the results.",
     "s": "Perform multiplication using partial products:\\n- \\\\(5972 \\\\times 3 = 17916\\\\)\\n- \\\\(5972 \\\\times 400 = 2388800\\\\)\\n\\nSum: \\\\(17916 + 2388800 = 2406716\\\\).",
@@ -7253,11 +7253,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the product:\\n\\\\(8916 \\\\times 765\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "\\\\(6\\ 820\\ 840\\\\)",
       "\\\\(6\\ 820\\ 740\\\\)",
       "\\\\(6\\ 810\\ 740\\\\)",
-      "\\\\(6\\ 820\\ 840\\\\)",
       "\\\\(7\\ 820\\ 740\\\\)"
     ],
     "h": "Find the partial products of 8916 with 5, 60, and 700, then sum them up.",
@@ -7286,12 +7286,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the quotient and remainder of the division:\\n\\\\(15 382 \\\\div 32\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(480\\\\) remainder \\\\(22\\\\)",
       "\\\\(480\\\\) remainder \\\\(12\\\\)",
-      "\\\\(48\\\\) remainder \\\\(22\\\\)",
-      "\\\\(481\\\\) remainder \\\\(22\\\\)"
+      "\\\\(480\\\\) remainder \\\\(22\\\\)",
+      "\\\\(481\\\\) remainder \\\\(22\\\\)",
+      "\\\\(48\\\\) remainder \\\\(22\\\\)"
     ],
     "h": "Use long division. Check how many times 32 goes into 153 first.",
     "s": "Divide 15382 by 32:\\n1. \\\\(153 \\div 32 = 4\\\\) remainder \\\\(25\\\\) (since \\\\(32 \\\\times 4 = 128\\\\)).\\n2. Bring down 8 to make 258.\\n3. \\\\(258 \\div 32 = 8\\\\) remainder \\\\(2\\\\) (since \\\\(32 \\\\times 8 = 256\\\\)).\\n4. Bring down 2 to make 22.\\n5. \\\\(22 \\div 32 = 0\\\\) remainder \\\\(22\\\\).\\n6. Quotient: \\\\(480\\\\), Remainder: \\\\(22\\\\).",
@@ -7319,12 +7319,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the quotient and remainder of the division:\\n\\\\(24 769 \\\\div 63\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(393\\\\) remainder \\\\(10\\\\)",
-      "\\\\(393\\\\) remainder \\\\(0\\\\)",
       "\\\\(392\\\\) remainder \\\\(10\\\\)",
-      "\\\\(3930\\\\) remainder \\\\(10\\\\)"
+      "\\\\(393\\\\) remainder \\\\(0\\\\)",
+      "\\\\(3930\\\\) remainder \\\\(10\\\\)",
+      "\\\\(393\\\\) remainder \\\\(10\\\\)"
     ],
     "h": "Use long division. Determine how many times 63 goes into 247.",
     "s": "Divide 24769 by 63:\\n1. \\\\(247 \\div 63 = 3\\\\) remainder \\\\(58\\\\) (since \\\\(63 \\\\times 3 = 189\\\\)).\\n2. Bring down 6 to make 586.\\n3. \\\\(586 \\div 63 = 9\\\\) remainder \\\\(19\\\\) (since \\\\(63 \\\\times 9 = 567\\\\)).\\n4. Bring down 9 to make 199.\\n5. \\\\(199 \\div 63 = 3\\\\) remainder \\\\(10\\\\) (since \\\\(63 \\\\times 3 = 189\\\\)).\\n6. Quotient: \\\\(393\\\\), Remainder: \\\\(10\\\\).",
@@ -7352,12 +7352,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the quotient and remainder of the division:\\n\\\\(72 083 \\\\div 17\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(4240\\\\) remainder \\\\(3\\\\)",
-      "\\\\(424\\\\) remainder \\\\(3\\\\)",
       "\\\\(4240\\\\) remainder \\\\(13\\\\)",
-      "\\\\(4241\\\\) remainder \\\\(3\\\\)"
+      "\\\\(4241\\\\) remainder \\\\(3\\\\)",
+      "\\\\(424\\\\) remainder \\\\(3\\\\)",
+      "\\\\(4240\\\\) remainder \\\\(3\\\\)"
     ],
     "h": "Use long division. Find how many times 17 goes into 72.",
     "s": "Divide 72083 by 17:\\n1. \\\\(72 \\div 17 = 4\\\\) remainder \\\\(4\\\\) (since \\\\(17 \\\\times 4 = 68\\\\)).\\n2. Bring down 0 to make 40.\\n3. \\\\(40 \\div 17 = 2\\\\) remainder \\\\(6\\\\) (since \\\\(17 \\\\times 2 = 34\\\\)).\\n4. Bring down 8 to make 68.\\n5. \\\\(68 \\div 17 = 4\\\\) remainder \\\\(0\\\\) (since \\\\(17 \\\\times 4 = 68\\\\)).\\n6. Bring down 3. \\\\(3 \\div 17 = 0\\\\) remainder \\\\(3\\\\).\\n7. Quotient: \\\\(4240\\\\), Remainder: \\\\(3\\\\).",
@@ -7385,12 +7385,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\(7 \\\\times 8 - (16 - 6 \\\\div 2)\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(43\\\\)",
+      "\\\\(45\\\\)",
       "\\\\(51\\\\)",
       "\\\\(39\\\\)",
-      "\\\\(45\\\\)"
+      "\\\\(43\\\\)"
     ],
     "h": "Evaluate operations inside the brackets first, noting that division inside brackets must be done before subtraction.",
     "s": "Calculate step-by-step:\\n1. Inside bracket: \\\\(6 \\div 2 = 3\\\\).\\n2. Bracket becomes: \\\\(16 - 3 = 13\\\\).\\n3. Product: \\\\(7 \\\\times 8 = 56\\\\).\\n4. Result: \\\\(56 - 13 = 43\\\\).",
@@ -7418,12 +7418,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Evaluate the numerical expression:\\n\\\\(96 - [(15 \\\\div 3) - (45 \\\\div 15)] \\\\times 10 + 4\\\\)",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(80\\\\)",
-      "\\\\(76\\\\)",
       "\\\\(84\\\\)",
-      "\\\\(90\\\\)"
+      "\\\\(90\\\\)",
+      "\\\\(76\\\\)",
+      "\\\\(80\\\\)"
     ],
     "h": "Solve the innermost brackets first, then perform the operations inside the square brackets.",
     "s": "Calculate step-by-step:\\n1. Innermost brackets: \\\\(15 \\div 3 = 5\\\\) and \\\\(45 \\div 15 = 3\\\\).\\n2. Square brackets: \\\\(5 - 3 = 2\\\\).\\n3. Multiplication: \\\\(2 \\\\times 10 = 20\\\\).\\n4. Solve additions and subtractions from left to right: \\\\(96 - 20 + 4 = 76 + 4 = 80\\\\).",
@@ -7455,8 +7455,8 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "opts": [
       "\\\\(52\\\\)",
       "\\\\(56\\\\)",
-      "\\\\(16\\\\)",
-      "\\\\(50\\\\)"
+      "\\\\(50\\\\)",
+      "\\\\(16\\\\)"
     ],
     "h": "Find the product (multiplication) and the quotient (division), then subtract the quotient from the product.",
     "s": "Translate the operations:\\n- Product of \\\\(6\\\\) and \\\\(9\\\\): \\\\(6 \\\\times 9 = 54\\\\).\\n- Quotient of \\\\(6\\\\) and \\\\(3\\\\): \\\\(6 \\div 3 = 2\\\\).\\n- Decreased by: \\\\(54 - 2 = 52\\\\).\\n- Expression: \\\\((6 \\\\times 9) - (6 \\div 3) = 52\\\\).",
@@ -7484,12 +7484,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Translate the sentence into a mathematical expression and find the value:\\n\\\\(4\\\\) times the square of \\\\(3\\\\) is increased by the difference of \\\\(9\\\\) and \\\\(2\\\\).",
-    "a": 0,
+    "a": 3,
     "opts": [
-      "\\\\(43\\\\)",
       "\\\\(41\\\\)",
+      "\\\\(51\\\\)",
       "\\\\(38\\\\)",
-      "\\\\(51\\\\)"
+      "\\\\(43\\\\)"
     ],
     "h": "First calculate the square of 3, multiply it by 4, then add the difference of 9 and 2.",
     "s": "Translate and calculate:\\n- Square of \\\\(3\\\\): \\\\(3^2 = 9\\\\).\\n- \\\\(4\\\\) times the square of \\\\(3\\\\): \\\\(4 \\\\times 9 = 36\\\\).\\n- Difference of \\\\(9\\\\) and \\\\(2\\\\): \\\\(9 - 2 = 7\\\\).\\n- Increased by: \\\\(36 + 7 = 43\\\\).\\n- Expression: \\\\(4 \\\\times 3^2 + (9 - 2) = 43\\\\).",
@@ -7517,12 +7517,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Solve the average problem:\\nThe average of \\\\(3\\\\) numbers is \\\\(7\\\\). A fourth number is added to the total, and the new average is \\\\(9\\\\). What is the fourth number?",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(15\\\\)",
+      "\\\\(17\\\\)",
       "\\\\(13\\\\)",
-      "\\\\(11\\\\)",
-      "\\\\(17\\\\)"
+      "\\\\(15\\\\)",
+      "\\\\(11\\\\)"
     ],
     "h": "Find the total sum of the first 3 numbers, then the total sum of all 4 numbers, and calculate the difference.",
     "s": "Solve using sums:\\n- Total of first 3 numbers: \\\\(3 \\\\times 7 = 21\\\\).\\n- Total of all 4 numbers: \\\\(4 \\\\times 9 = 36\\\\).\\n- The fourth number is the difference: \\\\(36 - 21 = 15\\\\).",
@@ -7550,12 +7550,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Solve the average problem:\\nMy cricket batting average is \\\\(26\\\\) runs for \\\\(5\\\\) matches. If I score \\\\(128\\\\) runs in my \\\\(6\\text{th}\\\\) match, what is my new batting average?",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(43\\\\)",
-      "\\\\(41\\\\)",
+      "\\\\(45\\\\)",
       "\\\\(38\\\\)",
-      "\\\\(45\\\\)"
+      "\\\\(43\\\\)",
+      "\\\\(41\\\\)"
     ],
     "h": "Find the total runs scored in the first 5 matches, add 128 to get the new total, and divide by 6.",
     "s": "Calculate the average:\\n- Total runs in 5 matches: \\\\(5 \\\\times 26 = 130\\\\) runs.\\n- Total runs in 6 matches: \\\\(130 + 128 = 258\\\\) runs.\\n- New average: \\\\(258 \\div 6 = 43\\\\) runs.",
@@ -7586,9 +7586,9 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "a": 0,
     "opts": [
       "\\\\(243\\\\)",
+      "\\\\(125\\\\)",
       "\\\\(15\\\\)",
-      "\\\\(81\\\\)",
-      "\\\\(125\\\\)"
+      "\\\\(81\\\\)"
     ],
     "h": "Evaluate 3 raised to the power of 5, which means 3 multiplied by itself 5 times.",
     "s": "Calculate power value:\\n\\\\(3^5 = 3 \\\\times 3 \\\\times 3 \\\\times 3 \\\\times 3 = 243\\\\).",
@@ -7616,12 +7616,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the exponential term as an ordinary number:\\n\\\\(2^8\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
-      "\\\\(256\\\\)",
       "\\\\(128\\\\)",
-      "\\\\(512\\\\)",
-      "\\\\(64\\\\)"
+      "\\\\(256\\\\)",
+      "\\\\(64\\\\)",
+      "\\\\(512\\\\)"
     ],
     "h": "Evaluate 2 raised to the power of 8, which means 2 multiplied by itself 8 times.",
     "s": "Calculate power value:\\n\\\\(2^8 = 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 \\\\times 2 = 256\\\\).",
@@ -7649,11 +7649,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the exponential term as an ordinary number:\\n\\\\(6^4\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(1296\\\\)",
-      "\\\\(216\\\\)",
       "\\\\(24\\\\)",
+      "\\\\(216\\\\)",
+      "\\\\(1296\\\\)",
       "\\\\(360\\\\)"
     ],
     "h": "Evaluate 6 raised to the power of 4, which means 6 multiplied by itself 4 times.",
@@ -7682,12 +7682,12 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Write the exponential expression as an ordinary number:\\n\\\\(2 \\\\times 5^3\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "\\\\(250\\\\)",
+      "\\\\(125\\\\)",
       "\\\\(1000\\\\)",
-      "\\\\(30\\\\)",
-      "\\\\(125\\\\)"
+      "\\\\(250\\\\)",
+      "\\\\(30\\\\)"
     ],
     "h": "Order of operations applies: calculate the power first (5^3), then multiply by 2.",
     "s": "Calculate step-by-step:\\n1. Evaluate power first: \\\\(5^3 = 5 \\\\times 5 \\\\times 5 = 125\\\\).\\n2. Multiply: \\\\(2 \\\\times 125 = 250\\\\).",
