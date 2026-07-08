@@ -1205,15 +1205,22 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
         // Also strip any embedded base64 image data that might have leaked into
         // questions/options or userAnswers (defence-in-depth — should never
-        // happen, but guarantees the main doc stays small).
+        // happen, but guarantees the main doc stays small). Also drops
+        // `undefined` values — Firestore rejects them with "invalid-argument"
+        // and real curriculum questions (unlike locally-generated calc
+        // questions) carry many optional fields that are frequently undefined.
         const stripDataUrls = (val) => {
+          if (val === undefined) return null;
           if (typeof val === 'string') {
             return val.startsWith('data:image/') && !val.startsWith('data:image/svg+xml') ? '[image]' : val;
           }
           if (Array.isArray(val)) return val.map(stripDataUrls);
           if (val && typeof val === 'object') {
             const out = {};
-            for (const k of Object.keys(val)) out[k] = stripDataUrls(val[k]);
+            for (const k of Object.keys(val)) {
+              const cleaned = stripDataUrls(val[k]);
+              if (cleaned !== null || val[k] !== undefined) out[k] = cleaned;
+            }
             return out;
           }
           return val;
@@ -1329,8 +1336,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               savedAt: now.toISOString(),
               questions: slimQuestions,
               userAnswers: slimUserAnswers,
-              answerResults: slimAnswerResults,
-              questionComments: questionComments.length > 0 ? questionComments : [],
+              answerResults: stripDataUrls(slimAnswerResults),
+              questionComments: stripDataUrls(questionComments.length > 0 ? questionComments : []),
             }
           : null;
 

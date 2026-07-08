@@ -46,6 +46,14 @@ export const robustNormalize = (str, isAlgebraic = false) => {
     // the inner {2} causes the \frac regex to bail and the answer
     // ends up as "\frac3sqrt22" which never matches "3sqrt2/2".
     .replace(/sqrt\{([^{}]*)\}/g, 'sqrt$1')
+    // Normalise the division symbol: getOptionText()/toDisplayText() convert
+    // unicode "÷" to LaTeX "\div" for KaTeX rendering, but a raw stored
+    // answer (e.g. question.answer = "5 ÷ 6") keeps the unicode character.
+    // Without this, a correct "5 ÷ 6" selection compares its rendered form
+    // "5\div6" against the raw "5÷6" and never matches. Collapse both forms
+    // to a single "÷" token instead of stripping it (unlike ×) so "5÷6"
+    // stays distinguishable from "5×6".
+    .replace(/\\div/g, '÷')
     // Normalise ratio colons so "1\Colon4", "1\colon4", "1\ratio4" match "1:4"
     .replace(/\\[Cc]olon/g, ':')
     // Strip any leftover "unit"/"units" word, even when concatenated to a
