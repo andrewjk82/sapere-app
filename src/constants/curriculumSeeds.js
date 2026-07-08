@@ -232,6 +232,7 @@ import { Y10_CH3J_QUESTIONS } from './seedYear10Ch3JQuestions.js';
 import { Y10_CH3A_QUESTIONS } from './seedYear10Ch3AQuestions.js';
 import { Y10_CH3B_QUESTIONS } from './seedYear10Ch3BQuestions.js';
 import { Y10_CH3C_QUESTIONS } from './seedYear10Ch3CQuestions.js';
+import { Y10_CH3D_QUESTIONS } from './seedYear10Ch3DQuestions.js';
 import { Y10_CH4G_QUESTIONS } from './seedYear10Ch4GQuestions.js';
 import { Y10_CH5_QUESTIONS } from './seedYear10Ch5GQuestions.js';
 import { Y10_CH5A_QUESTIONS } from './seedYear10Ch5AQuestions.js';
@@ -1069,6 +1070,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3a', topicCode: '3A', topicTitle: 'Expanding brackets and collecting like terms', year: 'Year 10', seed: Y10_CH3A_QUESTIONS, label: 'Y10 Ch3 · 3A Expanding brackets' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Solving linear equations and inequalities', year: 'Year 10', seed: Y10_CH3B_QUESTIONS, label: 'Y10 Ch3 · 3B Solving linear equations' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'More difficult linear equations and inequalities', year: 'Year 10', seed: Y10_CH3C_QUESTIONS, label: 'Y10 Ch3 · 3C More difficult equations' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3d', topicCode: '3D', topicTitle: 'Formulas', year: 'Year 10', seed: Y10_CH3D_QUESTIONS, label: 'Y10 Ch3 · 3D Formulas' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-4', chapterTitle: 'Chapter 4: Lines and linear equations', topicId: 'y10-4g', topicCode: '4G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH4G_QUESTIONS, label: 'Y10 Ch4 · 4G Revision' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5g', topicCode: '5G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH5_QUESTIONS, label: 'Y10 Ch5 · 5G Revision' },
@@ -1352,4 +1354,5 @@ export {
   Y10_CH3A_QUESTIONS,
   Y10_CH3B_QUESTIONS,
   Y10_CH3C_QUESTIONS,
+  Y10_CH3D_QUESTIONS,
 };
