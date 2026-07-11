@@ -288,6 +288,22 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     }
   }, [currentIdx, questionIds, deadIds, viewedIds]);
 
+  // Clear the [NEW] flag in Firestore the moment its question is actually
+  // viewed, so the badge doesn't accumulate forever (isNew is otherwise
+  // never reset — see tools/audit-state/PROGRESS.md). Only fires when the
+  // loaded doc still has isNew:true, so normal browsing writes nothing.
+  useEffect(() => {
+    const visibleIds = questionIds.filter(id => !deadIds.has(id));
+    const qId = visibleIds[currentIdx];
+    if (!qId) return;
+    const loaded = loadedQuestions[qId];
+    if (!loaded || loaded.isNew !== true) return;
+    setLoadedQuestions(prev => ({ ...prev, [qId]: { ...prev[qId], isNew: false } }));
+    updateDoc(doc(db, 'questions', qId), { isNew: false }).catch((e) => {
+      console.error('Failed to clear isNew flag', qId, e);
+    });
+  }, [currentIdx, questionIds, deadIds, loadedQuestions]);
+
   // Load question docs on demand around currentIdx (active + next 10 + prev 5 for caching)
   useEffect(() => {
     if (loading || questionIds.length === 0) return;
@@ -657,7 +673,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                     )}
                                     {step.graphData && (
                                       <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                                        <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                                        <MathView content="" graphData={step.graphData} style={{ minHeight: step.graphData?.jsxGraph?.height ? `${step.graphData.jsxGraph.height}px` : '240px' }} />
                                       </div>
                                     )}
                                   </div>
