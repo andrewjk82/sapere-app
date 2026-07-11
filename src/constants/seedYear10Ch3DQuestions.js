@@ -856,32 +856,492 @@ export const Y10_CH3D_QUESTIONS = [
     t: "Formulas",
     type: "multiple_choice",
     difficulty: "hard",
-    q: "Make \\\\(x\\\\) the subject of the equation: \\\\(a(x + b) = c(x - d)\\\\)",
-    h: "Expand both sides, collect all x terms on one side, factor out x, and divide.",
-    opts: ["\\\\(x = \\frac{cd + ab}{c - a}\\\\)","\\\\(x = \\frac{ab - cd}{c - a}\\\\)","\\\\(x = \\frac{cd - ab}{c - a}\\\\)","\\\\(x = \n\\frac{cd + ab}{a - c}\\\\)"],
+    q: "Make \\\\(h\\\\) the subject of the formula for the total surface area of a cylinder: \\\\(A = 2\\\\pi r(r + h)\\\\)",
+    h: "Expand or divide by 2πr first, then subtract r to isolate h.",
+    opts: ["\\\\(h = \\\\frac{A}{2\\\\pi r} - r\\\\)", "\\\\(h = \\\\frac{A}{2\\\\pi r}\\\\)", "\\\\(h = \\\\frac{A - r}{2\\\\pi r}\\\\)", "\\\\(h = \\\\frac{A}{2\\\\pi} - r\\\\)"],
     a: 0,
     solutionSteps: [
-          {
-                "explanation": "Expand both sides of the equation.",
-                "workingOut": "\\\\(ax + ab = cx - cd\\\\)",
-                "graphData": null
-          },
-          {
-                "explanation": "Rearrange the equation to group x terms on the right side and constant terms on the left.",
-                "workingOut": "\\\\(cd + ab = cx - ax\\\\)",
-                "graphData": null
-          },
-          {
-                "explanation": "Factor out x on the right side.",
-                "workingOut": "\\\\(cd + ab = x(c - a)\\\\)",
-                "graphData": null
-          },
-          {
-                "explanation": "Divide by the bracket to isolate x.",
-                "workingOut": "\\\\(x = \\frac{cd + ab}{c - a}\\\\)",
-                "graphData": null
-          }
+      { explanation: "Divide both sides by \\\\(2\\\\pi r\\\\) to simplify the right side.", workingOut: "\\\\(\\\\frac{A}{2\\\\pi r} = r + h\\\\)", graphData: null },
+      { explanation: "Subtract r from both sides to isolate h.", workingOut: "\\\\(h = \\\\frac{A}{2\\\\pi r} - r\\\\)", graphData: null }
     ],
     graphData: undefined
+  },
+
+  // ── ADDITIONAL QUESTIONS (31-60) ─────────────────────────────────────────
+  {
+    id: "y10-3d-31",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Find the area \\\\(A\\\\) of a triangle when the base \\\\(b = 8\\\\) cm and the height \\\\(h = 5\\\\) cm, using the formula: \\\\(A = \\frac{1}{2}bh\\\\)",
+    h: "Multiply the base by the height, then divide by 2.",
+    opts: ["\\\\(40\\\\)", "\\\\(13\\\\)", "\\\\(20\\\\)", "\\\\(10\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Substitute base and height into the formula.", workingOut: "\\\\(A = \\frac{1}{2} \\times 8 \\times 5\\\\)", graphData: null },
+      { explanation: "Multiply 8 by 5.", workingOut: "\\\\(8 \\times 5 = 40\\\\)", graphData: null },
+      { explanation: "Multiply by 1/2 to get the final area.", workingOut: "\\\\(A = 20\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-32",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Calculate the average velocity \\\\(v_{\\\\text{avg}}\\\\) of a car if its initial velocity \\\\(u = 14\\\\) m/s and final velocity \\\\(v = 22\\\\) m/s, using the formula: \\\\(v_{\\\\text{avg}} = \\frac{u + v}{2}\\\\)",
+    h: "Add the initial and final velocities together, then divide by 2.",
+    opts: ["\\\\(36\\\\)", "\\\\(18\\\\)", "\\\\(8\\\\)", "\\\\(20\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Substitute the given velocities into the formula.", workingOut: "\\\\(v_{\\text{avg}} = \\frac{14 + 22}{2}\\\\)", graphData: null },
+      { explanation: "Add the velocities.", workingOut: "\\\\(14 + 22 = 36\\\\)", graphData: null },
+      { explanation: "Divide by 2.", workingOut: "\\\\(v_{\\text{avg}} = 18\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-33",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Using Ohm's Law \\\\(V = IR\\\\), find the voltage \\\\(V\\\\) across a resistor when current \\\\(I = 4\\\\) amperes and resistance \\\\(R = 15\\\\) ohms.",
+    h: "Multiply current by resistance.",
+    opts: ["\\\\(19\\\\)", "\\\\(3.75\\\\)", "\\\\(30\\\\)", "\\\\(60\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Substitute the current and resistance into the formula.", workingOut: "\\\\(V = 4 \\times 15\\\\)", graphData: null },
+      { explanation: "Calculate the product.", workingOut: "\\\\(V = 60\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-34",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Find the energy equivalent \\\\(E\\\\) of a particle with mass \\\\(m = 2\\\\) kg traveling at the speed of light \\\\(c = 3\\\\) m/s, using the formula: \\\\(E = mc^2\\\\)",
+    h: "Square c first, then multiply by m.",
+    opts: ["\\\\(18\\\\)", "\\\\(12\\\\)", "\\\\(36\\\\)", "\\\\(6\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Substitute the mass and light speed into the formula.", workingOut: "\\\\(E = 2 \\times 3^2\\\\)", graphData: null },
+      { explanation: "Square the velocity of light.", workingOut: "\\\\(3^2 = 9\\\\)", graphData: null },
+      { explanation: "Multiply by the mass.", workingOut: "\\\\(E = 2 \\times 9 = 18\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-35",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Find the final selling price \\\\(S\\\\) of a product with cost price \\\\(P = 500\\\\) dollars and a markup rate of \\\\(r = 0.12\\\\), using the formula: \\\\(S = P(1 + r)\\\\)",
+    h: "Add 1 to the markup rate, then multiply by the cost price.",
+    opts: ["\\\\(500.12\\\\)", "\\\\(560\\\\)", "\\\\(600\\\\)", "\\\\(512\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Substitute the cost price and markup rate.", workingOut: "\\\\(S = 500(1 + 0.12)\\\\)", graphData: null },
+      { explanation: "Simplify the expression inside the brackets.", workingOut: "\\\\(1 + 0.12 = 1.12\\\\)", graphData: null },
+      { explanation: "Multiply to find the selling price.", workingOut: "\\\\(S = 500 \\times 1.12 = 560\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-36",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Find the period \\\\(T\\\\) in seconds of a wave with frequency \\\\(f = 25\\\\) Hz, using the formula: \\\\(T = \\frac{1}{f}\\\\)",
+    h: "Calculate the reciprocal of the frequency.",
+    opts: ["\\\\(25\\\\)", "\\\\(0.25\\\\)", "\\\\(0.04\\\\)", "\\\\(0.4\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Substitute the frequency into the formula.", workingOut: "\\\\(T = \\frac{1}{25}\\\\)", graphData: null },
+      { explanation: "Convert the fraction to a decimal.", workingOut: "\\\\(T = 0.04\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-37",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Calculate the area \\\\(A\\\\) of a circle with radius \\\\(r = 7\\\\) cm, using the formula: \\\\(A = \\pi r^2\\\\) (Take \\\\(\\pi \\approx \\frac{22}{7}\\\\))",
+    h: "Square the radius first, then multiply by pi.",
+    opts: ["\\\\(154\\\\)", "\\\\(44\\\\)", "\\\\(22\\\\)", "\\\\(196\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Substitute radius and pi approximation into the formula.", workingOut: "\\\\(A = \\frac{22}{7} \\times 7^2\\\\)", graphData: null },
+      { explanation: "Square the radius.", workingOut: "\\\\(7^2 = 49\\\\)", graphData: null },
+      { explanation: "Multiply and simplify.", workingOut: "\\\\(A = \\frac{22}{7} \\times 49 = 22 \\times 7 = 154\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-38",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Find the pressure \\\\(P\\\\) in pascals exerted by a force of \\\\(F = 120\\\\) N on an area of \\\\(A = 15\\\\) \\\\(\\text{m}^2\\\\), using the formula: \\\\(P = \\frac{F}{A}\\\\)",
+    h: "Divide the force by the area.",
+    opts: ["\\\\(1800\\\\)", "\\\\(135\\\\)", "\\\\(10\\\\)", "\\\\(8\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Substitute the force and area.", workingOut: "\\\\(P = \\frac{120}{15}\\\\)", graphData: null },
+      { explanation: "Perform the division.", workingOut: "\\\\(P = 8\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-39",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Convert Fahrenheit \\\\(F = 41\\\\) to Celsius \\\\(C\\\\) using: \\\\(C = \\frac{5}{9}(F - 32)\\\\)",
+    h: "Subtract 32 from 41, then multiply by 5/9.",
+    opts: ["\\\\(9\\\\)", "\\\\(5\\\\)", "\\\\(45\\\\)", "\\\\(1\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Substitute F = 41 into the formula.", workingOut: "\\\\(C = \\frac{5}{9}(41 - 32)\\\\)", graphData: null },
+      { explanation: "Subtract inside the bracket.", workingOut: "\\\\(41 - 32 = 9\\\\)", graphData: null },
+      { explanation: "Multiply to get Celsius.", workingOut: "\\\\(C = \\frac{5}{9} \\times 9 = 5\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-40",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "easy",
+    q: "Calculate the compound amount \\\\(A\\\\) on a principal \\\\(P = 1000\\\\) dollars, at interest rate \\\\(r = 0.10\\\\) per year, for \\\\(t = 2\\\\) years, using: \\\\(A = P(1 + r)^2\\\\)",
+    h: "Add 1 to the rate, square it, and multiply by the principal.",
+    opts: ["\\\\(1200\\\\)", "\\\\(1100\\\\)", "\\\\(1210\\\\)", "\\\\(1440\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Substitute the principal and interest rate.", workingOut: "\\\\(A = 1000(1 + 0.10)^2\\\\)", graphData: null },
+      { explanation: "Simplify the base.", workingOut: "\\\\(1 + 0.10 = 1.10\\\\)", graphData: null },
+      { explanation: "Square 1.10.", workingOut: "\\\\(1.10^2 = 1.21\\\\)", graphData: null },
+      { explanation: "Multiply by 1000.", workingOut: "\\\\(A = 1000 \\times 1.21 = 1210\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-41",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make \\\\(b\\\\) the subject of the slope-intercept formula: \\\\(y = mx + b\\\\)",
+    h: "Subtract mx from both sides.",
+    opts: ["\\\\(b = mx - y\\\\)", "\\\\(b = \\frac{y}{mx}\\\\)", "\\\\(b = y + mx\\\\)", "\\\\(b = y - mx\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Identify the variable b to isolate.", workingOut: "\\\\(y = mx + b\\\\)", graphData: null },
+      { explanation: "Subtract the term mx from both sides.", workingOut: "\\\\(b = y - mx\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-42",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make \\\\(x\\\\) the subject of the formula: \\\\(y = \\frac{x}{a} - b\\\\)",
+    h: "Add b to both sides, then multiply by a.",
+    opts: ["\\\\(x = a(y + b)\\\\)", "\\\\(x = ay + b\\\\)", "\\\\(x = a(y - b)\\\\)", "\\\\(x = \\frac{y + b}{a}\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Write the equation.", workingOut: "\\\\(y = \\frac{x}{a} - b\\\\)", graphData: null },
+      { explanation: "Add b to both sides.", workingOut: "\\\\(y + b = \\frac{x}{a}\\\\)", graphData: null },
+      { explanation: "Multiply both sides by a to isolate x.", workingOut: "\\\\(x = a(y + b)\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-43",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make resistance \\\\(R\\\\) the subject of the electrical power equation: \\\\(\\frac{V^2}{R} = P\\\\)",
+    h: "Multiply both sides by R, then divide by P.",
+    opts: ["\\\\(R = \\frac{P}{V^2}\\\\)", "\\\\(R = V^2 P\\\\)", "\\\\(R = \\frac{V^2}{P}\\\\)", "\\\\(R = \\frac{V}{P}\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Multiply both sides by R to remove it from the denominator.", workingOut: "\\\\(V^2 = PR\\\\)", graphData: null },
+      { explanation: "Divide both sides by P.", workingOut: "\\\\(R = \\frac{V^2}{P}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-44",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make rate \\\\(r\\\\) the subject of the linear growth formula: \\\\(A = P(1 + rt)\\\\)",
+    h: "Divide by P, subtract 1, then divide by t.",
+    opts: ["\\\\(r = \\frac{A - P}{t}\\\\)", "\\\\(r = \\frac{A - P}{Pt}\\\\)", "\\\\(r = \\frac{A}{Pt} - 1\\\\)", "\\\\(r = A - P - t\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Divide both sides by P.", workingOut: "\\\\(\\frac{A}{P} = 1 + rt\\\\)", graphData: null },
+      { explanation: "Subtract 1 from both sides.", workingOut: "\\\\(\\frac{A}{P} - 1 = rt \\Rightarrow \\frac{A - P}{P} = rt\\\\)", graphData: null },
+      { explanation: "Divide both sides by t to isolate r.", workingOut: "\\\\(r = \\frac{A - P}{Pt}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-45",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make variable \\\\(C\\\\) the subject of: \\\\(A = B(C - D)\\\\)",
+    h: "Divide by B first, then add D.",
+    opts: ["\\\\(C = \\frac{A - D}{B}\\\\)", "\\\\(C = AB + D\\\\)", "\\\\(C = \\frac{A}{B} - D\\\\)", "\\\\(C = \\frac{A}{B} + D\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Divide both sides by B.", workingOut: "\\\\(\\frac{A}{B} = C - D\\\\)", graphData: null },
+      { explanation: "Add D to both sides to solve for C.", workingOut: "\\\\(C = \\frac{A}{B} + D\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-46",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make acceleration \\\\(a\\\\) the subject of: \\\\(v^2 = u^2 + 2as\\\\)",
+    h: "Subtract u^2, then divide by 2s.",
+    opts: ["\\\\(a = \\frac{v^2 - u^2}{2s}\\\\)", "\\\\(a = \\frac{v^2 + u^2}{2s}\\\\)", "\\\\(a = \\frac{v - u}{2s}\\\\)", "\\\\(a = \\frac{u^2 - v^2}{2s}\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Subtract \\\\(u^2\\\\) from both sides.", workingOut: "\\\\(v^2 - u^2 = 2as\\\\)", graphData: null },
+      { explanation: "Divide both sides by \\\\(2s\\\\) to isolate a.", workingOut: "\\\\(a = \\frac{v^2 - u^2}{2s}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-47",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make height \\\\(h\\\\) the subject of the cylinder volume formula: \\\\(V = \\pi r^2 h\\\\)",
+    h: "Divide both sides by the product \\\\(\\pi r^2\\\\).",
+    opts: ["\\\\(h = V - \\pi r^2\\\\)", "\\\\(h = \\frac{\\pi r^2}{V}\\\\)", "\\\\(h = \\frac{V}{\\pi r^2}\\\\)", "\\\\(h = \\sqrt{\\frac{V}{\\pi r^2}}\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Identify the coefficient of h, which is \\\\(\\pi r^2\\\\).", workingOut: "\\\\(V = (\\pi r^2)h\\\\)", graphData: null },
+      { explanation: "Divide both sides by \\\\(\\pi r^2\\\\).", workingOut: "\\\\(h = \\frac{V}{\\pi r^2}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-48",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make length \\\\(L\\\\) the subject of: \\\\(T = 2\\pi \\sqrt{\\frac{L}{g}}\\\\) (given \\\\(L, g > 0\\\\))",
+    h: "Divide by 2π, square both sides, then multiply by g.",
+    opts: ["\\\\(L = \\frac{gT^2}{2\\pi}\\\\)", "\\\\(L = \\frac{gT^2}{4\\pi^2}\\\\)", "\\\\(L = \\frac{T^2}{4\\pi^2 g}\\\\)", "\\\\(L = \\sqrt{\\frac{gT^2}{4\\pi^2}}\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Divide both sides by 2π.", workingOut: "\\\\(\\frac{T}{2\\pi} = \\sqrt{\\frac{L}{g}}\\\\)", graphData: null },
+      { explanation: "Square both sides.", workingOut: "\\\\(\\frac{T^2}{4\\pi^2} = \\frac{L}{g}\\\\)", graphData: null },
+      { explanation: "Multiply both sides by g to isolate L.", workingOut: "\\\\(L = \\frac{gT^2}{4\\pi^2}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-49",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make \\\\(y\\\\) the subject of the linear standard form: \\\\(ax + by = c\\\\)",
+    h: "Subtract ax from both sides, then divide by b.",
+    opts: ["\\\\(y = \\frac{ax - c}{b}\\\\)", "\\\\(y = \\frac{c + ax}{b}\\\\)", "\\\\(y = c - ax - b\\\\)", "\\\\(y = \\frac{c - ax}{b}\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Subtract the term ax from both sides.", workingOut: "\\\\(by = c - ax\\\\)", graphData: null },
+      { explanation: "Divide both sides by b to solve for y.", workingOut: "\\\\(y = \\frac{c - ax}{b}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-50",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "medium",
+    q: "Make \\\\(x\\\\) the subject of: \\\\(y = \\sqrt{2x - 5}\\\\) (given \\\\(2x - 5 \\ge 0\\\\))",
+    h: "Square both sides first, then add 5 and divide by 2.",
+    opts: ["\\\\(x = \\frac{y^2 + 5}{2}\\\\)", "\\\\(x = \\frac{y^2 - 5}{2}\\\\)", "\\\\(x = y^2 + 5\\\\)", "\\\\(x = \\sqrt{y} + 5\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Square both sides to eliminate the square root.", workingOut: "\\\\(y^2 = 2x - 5\\\\)", graphData: null },
+      { explanation: "Add 5 to both sides.", workingOut: "\\\\(y^2 + 5 = 2x\\\\)", graphData: null },
+      { explanation: "Divide both sides by 2.", workingOut: "\\\\(x = \\frac{y^2 + 5}{2}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-51",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(x\\\\) the subject of: \\\\(y = (x - a)^2\\\\) (given \\\\(x > a\\\\) and \\\\(y > 0\\\\))",
+    h: "Take the square root of both sides, then add a.",
+    opts: ["\\\\(x = a - \\sqrt{y}\\\\)", "\\\\(x = y^2 + a\\\\)", "\\\\(x = a + \\sqrt{y}\\\\)", "\\\\(x = \\sqrt{y - a}\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Take the square root of both sides. Since x > a, use the positive root.", workingOut: "\\\\(\\sqrt{y} = x - a\\\\)", graphData: null },
+      { explanation: "Add a to both sides to solve for x.", workingOut: "\\\\(x = a + \\sqrt{y}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-52",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(d\\\\) the subject of: \\\\(S = \\frac{a + b}{c + d}\\\\)",
+    h: "Multiply by c+d, divide by S, and subtract c.",
+    opts: ["\\\\(d = \\frac{a + b}{S} + c\\\\)", "\\\\(d = \\frac{a + b}{S} - c\\\\)", "\\\\(d = S(a + b) - c\\\\)", "\\\\(d = \\frac{S}{a + b} - c\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Multiply both sides by \\\\((c+d)\\\\).", workingOut: "\\\\(S(c + d) = a + b\\\\)", graphData: null },
+      { explanation: "Divide both sides by S.", workingOut: "\\\\(c + d = \\frac{a + b}{S}\\\\)", graphData: null },
+      { explanation: "Subtract c from both sides to isolate d.", workingOut: "\\\\(d = \\frac{a + b}{S} - c\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-53",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(x\\\\) the subject of the exponential relation: \\\\(y = 2^x\\\\)",
+    h: "Take the logarithm base 2 of both sides.",
+    opts: ["\\\\(x = 2^y\\\\)", "\\\\(x = \\log_{10}(y)\\\\)", "\\\\(x = y^2\\\\)", "\\\\(x = \\log_2(y)\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Identify the base of the exponent, which is 2.", workingOut: "\\\\(y = 2^x\\\\)", graphData: null },
+      { explanation: "Apply the definition of a logarithm to write the exponent as a subject.", workingOut: "\\\\(x = \\log_2(y)\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-54",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(y\\\\) the subject of: \\\\(x = \\frac{y}{y + 1}\\\\)",
+    h: "Multiply by y+1, expand, collect y terms, factor, and divide.",
+    opts: ["\\\\(y = \\frac{x}{1 - x}\\\\)", "\\\\(y = \\frac{x}{x - 1}\\\\)", "\\\\(y = \\frac{1 - x}{x}\\\\)", "\\\\(y = \\frac{x}{x + 1}\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Multiply both sides by \\\\((y+1)\\\\).", workingOut: "\\\\(x(y + 1) = y\\\\)", graphData: null },
+      { explanation: "Expand the left side.", workingOut: "\\\\(xy + x = y\\\\)", graphData: null },
+      { explanation: "Rearrange to group all y terms on the right side.", workingOut: "\\\\(x = y - xy\\\\)", graphData: null },
+      { explanation: "Factor out y on the right side.", workingOut: "\\\\(x = y(1 - x)\\\\)", graphData: null },
+      { explanation: "Divide by \\\\((1-x)\\\\) to solve for y.", workingOut: "\\\\(y = \\frac{x}{1 - x}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-55",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make the first term \\\\(a\\\\) the subject of the arithmetic series sum formula: \\\\(S = \\frac{n}{2}[2a + (n - 1)d]\\\\)",
+    h: "Multiply by 2/n, subtract (n-1)d, then divide by 2.",
+    opts: ["\\\\(a = \\frac{S}{n} + \\frac{(n-1)d}{2}\\\\)", "\\\\(a = \\frac{2S}{n} - (n-1)d\\\\)", "\\\\(a = \\frac{S}{n} - \\frac{(n-1)d}{2}\\\\)", "\\\\(a = \\frac{2S - (n-1)d}{n}\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Multiply both sides by 2 and divide by n.", workingOut: "\\\\(\\frac{2S}{n} = 2a + (n - 1)d\\\\)", graphData: null },
+      { explanation: "Subtract \\\\((n - 1)d\\\\) from both sides.", workingOut: "\\\\(\\frac{2S}{n} - (n - 1)d = 2a\\\\)", graphData: null },
+      { explanation: "Divide all terms by 2.", workingOut: "\\\\(a = \\frac{S}{n} - \\frac{(n - 1)d}{2}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-56",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(x\\\\) the subject of: \\\\(y = \\frac{a}{x^2}\\\\) (given \\\\(x > 0\\\\) and \\\\(a, y > 0\\\\))",
+    h: "Multiply by x^2, divide by y, and take the square root.",
+    opts: ["\\\\(x = \\frac{a}{y}\\\\)", "\\\\(x = \\sqrt{\\frac{a}{y}}\\\\)", "\\\\(x = \\sqrt{\\frac{y}{a}}\\\\)", "\\\\(x = \\frac{a^2}{y}\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Multiply both sides by \\\\(x^2\\\\).", workingOut: "\\\\(x^2 y = a\\\\)", graphData: null },
+      { explanation: "Divide both sides by y.", workingOut: "\\\\(x^2 = \\frac{a}{y}\\\\)", graphData: null },
+      { explanation: "Take the positive square root of both sides.", workingOut: "\\\\(x = \\sqrt{\\frac{a}{y}}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-57",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(b\\\\) the subject of: \\\\(\\frac{a}{b} + \\frac{c}{d} = 1\\\\)",
+    h: "Isolate the fraction containing b, take reciprocals, and solve.",
+    opts: ["\\\\(b = \\frac{a(d - c)}{d}\\\\)", "\\\\(b = \\frac{ad}{c - d}\\\\)", "\\\\(b = a(1 - \\frac{c}{d})\\\\)", "\\\\(b = \\frac{ad}{d - c}\\\\)"],
+    a: 3,
+    solutionSteps: [
+      { explanation: "Subtract \\\\(\\frac{c}{d}\\\\) from both sides.", workingOut: "\\\\(\\frac{a}{b} = 1 - \\frac{c}{d}\\\\)", graphData: null },
+      { explanation: "Express the right side as a single fraction.", workingOut: "\\\\(\\frac{a}{b} = \\frac{d - c}{d}\\\\)", graphData: null },
+      { explanation: "Take the reciprocal of both sides.", workingOut: "\\\\(\\frac{b}{a} = \\frac{d}{d - c}\\\\)", graphData: null },
+      { explanation: "Multiply by a to solve for b.", workingOut: "\\\\(b = \\frac{ad}{d - c}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-58",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(x\\\\) the subject of: \\\\(y = \\frac{3x + 1}{2x - 5}\\\\)",
+    h: "Multiply by 2x-5, expand, group x terms, factor, and divide.",
+    opts: ["\\\\(x = \\frac{5y + 1}{2y - 3}\\\\)", "\\\\(x = \\frac{5y - 1}{2y - 3}\\\\)", "\\\\(x = \\frac{5y + 1}{2y + 3}\\\\)", "\\\\(x = \\frac{5y}{2y - 3}\\\\)"],
+    a: 0,
+    solutionSteps: [
+      { explanation: "Multiply both sides by \\\\((2x-5)\\\\).", workingOut: "\\\\(y(2x - 5) = 3x + 1\\\\)", graphData: null },
+      { explanation: "Expand the left side.", workingOut: "\\\\(2xy - 5y = 3x + 1\\\\)", graphData: null },
+      { explanation: "Rearrange to group all x terms on the left.", workingOut: "\\\\(2xy - 3x = 5y + 1\\\\)", graphData: null },
+      { explanation: "Factor out x on the left side.", workingOut: "\\\\(x(2y - 3) = 5y + 1\\\\)", graphData: null },
+      { explanation: "Divide by the bracket to solve for x.", workingOut: "\\\\(x = \\frac{5y + 1}{2y - 3}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-59",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Make \\\\(u\\\\) the subject of the thin lens formula: \\\\(\\frac{1}{f} = \\frac{1}{v} + \\frac{1}{u}\\\\)",
+    h: "Isolate 1/u, subtract, and take the reciprocal of the resulting fraction.",
+    opts: ["\\\\(u = \\frac{fv}{f - v}\\\\)", "\\\\(u = \\frac{v - f}{fv}\\\\)", "\\\\(u = \\frac{fv}{v - f}\\\\)", "\\\\(u = f - v\\\\)"],
+    a: 2,
+    solutionSteps: [
+      { explanation: "Subtract \\\\(\\frac{1}{v}\\\\) from both sides.", workingOut: "\\\\(\\frac{1}{u} = \\frac{1}{f} - \\frac{1}{v}\\\\)", graphData: null },
+      { explanation: "Combine the fractions on the right side using common denominator fv.", workingOut: "\\\\(\\frac{1}{u} = \\frac{v - f}{fv}\\\\)", graphData: null },
+      { explanation: "Invert both sides to find u.", workingOut: "\\\\(u = \\frac{fv}{v - f}\\\\)", graphData: null }
+    ]
+  },
+  {
+    id: "y10-3d-60",
+    c: "3D",
+    t: "Formulas",
+    type: "multiple_choice",
+    difficulty: "hard",
+    q: "Rearrange to make \\\\(x\\\\) the subject: \\\\(y = a + b e^{kx}\\\\)",
+    h: "Subtract a, divide by b, take natural logarithm, then divide by k.",
+    opts: ["\\\\(x = \\frac{\\ln(y - a) - b}{k}\\\\)", "\\\\(x = \\frac{1}{k} \\ln\\left(\\frac{y - a}{b}\\right)\\\\)", "\\\\(x = \\frac{1}{k} \\ln(y - a - b)\\\\)", "\\\\(x = k \\ln\\left(\\frac{y - a}{b}\\right)\\\\)"],
+    a: 1,
+    solutionSteps: [
+      { explanation: "Subtract a from both sides.", workingOut: "\\\\(y - a = b e^{kx}\\\\)", graphData: null },
+      { explanation: "Divide both sides by b.", workingOut: "\\\\(\\frac{y - a}{b} = e^{kx}\\\\)", graphData: null },
+      { explanation: "Take the natural logarithm of both sides.", workingOut: "\\\\(\\ln\\left(\\frac{y - a}{b}\\right) = kx\\\\)", graphData: null },
+      { explanation: "Divide both sides by k.", workingOut: "\\\\(x = \\frac{1}{k} \\ln\\left(\\frac{y - a}{b}\\right)\\\\)", graphData: null }
+    ]
   }
 ];

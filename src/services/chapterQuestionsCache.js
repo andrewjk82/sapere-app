@@ -32,7 +32,7 @@ const KEEP_FIELDS = [
   'id', 'question', 'options', 'answer', 'type', 'topicId', 'chapterId',
   'examPaper', 'isActive', 'blanks', 'subQuestions', 'acceptedAnswers',
   'hint', 'solution', 'solutionImage', 'questionImage', 'marks',
-  'difficulty', 'source',
+  'difficulty', 'source', 'solutionSteps',
 ];
 
 const stripQuestion = (q) => {

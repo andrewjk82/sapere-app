@@ -137,6 +137,7 @@ import { Y12A_CH5I_QUESTIONS } from './seedYear12Ch5IQuestions.js';
 import { Y12A_CH5J_QUESTIONS } from './seedYear12Ch5JQuestions.js';
 import { Y12A_CH5K_QUESTIONS } from './seedYear12Ch5KQuestions.js';
 import { Y12A_CH5L_QUESTIONS } from './seedYear12Ch5LQuestions.js';
+import { Y12A_CH10A_QUESTIONS } from './seedYear12aCh10AQuestions.js';
 import { Y8_CH1A_QUESTIONS } from './seedYear8Ch1AQuestions.js';
 import { Y8_CH1C_QUESTIONS } from './seedYear8Ch1Questions.js';
 import { Y8_CH1B_QUESTIONS } from './seedYear8Ch1BQuestions.js';
@@ -233,6 +234,8 @@ import { Y10_CH3A_QUESTIONS } from './seedYear10Ch3AQuestions.js';
 import { Y10_CH3B_QUESTIONS } from './seedYear10Ch3BQuestions.js';
 import { Y10_CH3C_QUESTIONS } from './seedYear10Ch3CQuestions.js';
 import { Y10_CH3D_QUESTIONS } from './seedYear10Ch3DQuestions.js';
+import { Y10_CH3E_QUESTIONS } from './seedYear10Ch3EQuestions.js';
+import { Y10_CH3F_QUESTIONS } from './seedYear10Ch3FQuestions.js';
 import { Y10_CH4G_QUESTIONS } from './seedYear10Ch4GQuestions.js';
 import { Y10_CH5_QUESTIONS } from './seedYear10Ch5GQuestions.js';
 import { Y10_CH5A_QUESTIONS } from './seedYear10Ch5AQuestions.js';
@@ -1054,6 +1057,16 @@ export const CHAPTER_SEED_REGISTRY = [
     seed: Y12A_CH8F_QUESTIONS,
     label: 'Y12A Ch8 · 8F Chapter review',
   },
+  {
+    chapterId: 'y12a-10',
+    chapterTitle: 'Chapter 10: Random variables',
+    topicId: 'y12a-10A',
+    topicCode: '10A',
+    topicTitle: 'Relative frequency',
+    year: 'Year 12',
+    seed: Y12A_CH10A_QUESTIONS,
+    label: 'Y12A Ch10 · 10A Relative frequency',
+  },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1a', topicCode: '1A', topicTitle: 'Review of percentage', year: 'Year 10', seed: Y10_CH1_QUESTIONS, label: 'Y10 Ch1 · 1A Review of percentage' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1b', topicCode: '1B', topicTitle: 'Percentage increase and decrease', year: 'Year 10', seed: Y10_CH1B_QUESTIONS, label: 'Y10 Ch1 · 1B Percentage increase and decrease' },
   { chapterId: 'y10-1', chapterTitle: 'Chapter 1: Consumer arithmetic', topicId: 'y10-1c', topicCode: '1C', topicTitle: 'Repeated increases and decreases', year: 'Year 10', seed: Y10_CH1C_QUESTIONS, label: 'Y10 Ch1 · 1C Repeated increases and decreases' },
@@ -1071,6 +1084,8 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3b', topicCode: '3B', topicTitle: 'Solving linear equations and inequalities', year: 'Year 10', seed: Y10_CH3B_QUESTIONS, label: 'Y10 Ch3 · 3B Solving linear equations' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3c', topicCode: '3C', topicTitle: 'More difficult linear equations and inequalities', year: 'Year 10', seed: Y10_CH3C_QUESTIONS, label: 'Y10 Ch3 · 3C More difficult equations' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3d', topicCode: '3D', topicTitle: 'Formulas', year: 'Year 10', seed: Y10_CH3D_QUESTIONS, label: 'Y10 Ch3 · 3D Formulas' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3e', topicCode: '3E', topicTitle: 'Factorising a difference of two squares', year: 'Year 10', seed: Y10_CH3E_QUESTIONS, label: 'Y10 Ch3 · 3E Factorising a difference of two squares' },
+  { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3f', topicCode: '3F', topicTitle: 'Monic quadratics and grouping', year: 'Year 10', seed: Y10_CH3F_QUESTIONS, label: 'Y10 Ch3 · 3F Monic quadratics and grouping' },
   { chapterId: 'y10-3', chapterTitle: 'Chapter 3: Algebra review', topicId: 'y10-3j', topicCode: '3J', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH3J_QUESTIONS, label: 'Y10 Ch3 · 3J Revision' },
   { chapterId: 'y10-4', chapterTitle: 'Chapter 4: Lines and linear equations', topicId: 'y10-4g', topicCode: '4G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH4G_QUESTIONS, label: 'Y10 Ch4 · 4G Revision' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5g', topicCode: '5G', topicTitle: 'Revision', year: 'Year 10', seed: Y10_CH5_QUESTIONS, label: 'Y10 Ch5 · 5G Revision' },
@@ -1355,4 +1370,6 @@ export {
   Y10_CH3B_QUESTIONS,
   Y10_CH3C_QUESTIONS,
   Y10_CH3D_QUESTIONS,
+  Y10_CH3E_QUESTIONS,
+  Y10_CH3F_QUESTIONS,
 };
