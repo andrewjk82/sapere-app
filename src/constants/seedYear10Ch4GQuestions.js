@@ -1274,11 +1274,11 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Locate the coordinate pair (0, 40000) representing its initial position.",
-            "workingOut": "(t, \\; V) = (0, \\; 40000)"
+            "workingOut": "(t, \\\\; V) = (0, \\\\; 40000)"
           },
           {
             "explanation": "Therefore, the initial amount of water in the tank was 40000 litres.",
-            "workingOut": "V_{\\text{initial}} = 40000"
+            "workingOut": "V_{\\\\text{initial}} = 40000"
           }
         ]
       },
@@ -1292,15 +1292,15 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "The leak rate corresponds to the gradient (slope) of the straight line graph.",
-            "workingOut": "m = \\dfrac{V_2 - V_1}{t_2 - t_1}"
+            "workingOut": "m = \\\\dfrac{V_2 - V_1}{t_2 - t_1}"
           },
           {
             "explanation": "Substitute the points (0, 40000) and (500, 20000) into the gradient formula.",
-            "workingOut": "m = \\dfrac{20000 - 40000}{500 - 0} = \\dfrac{-20000}{500} = -40"
+            "workingOut": "m = \\\\dfrac{20000 - 40000}{500 - 0} = \\\\dfrac{-20000}{500} = -40"
           },
           {
             "explanation": "The negative sign indicates water is leaving. Thus, the tank leaks at 40 litres per hour.",
-            "workingOut": "\\text{Leak rate} = 40"
+            "workingOut": "\\\\text{Leak rate} = 40"
           }
         ]
       },
@@ -1318,7 +1318,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Substitute the gradient m = -40 and the initial volume (intercept) c = 40000 into the equation.",
-            "workingOut": "m = -40, \\; c = 40000"
+            "workingOut": "m = -40, \\\\; c = 40000"
           },
           {
             "explanation": "State the final equation showing remaining volume V in terms of hours t.",
@@ -1344,7 +1344,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Transpose 40t and divide to find the final hours.",
-            "workingOut": "40t = 40000 \\Rightarrow t = 1000"
+            "workingOut": "40t = 40000 \\\\Rightarrow t = 1000"
           }
         ]
       }
@@ -1383,11 +1383,11 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Look at the starting coordinate pair (0, 30) for Car A.",
-            "workingOut": "(t, \\; d) = (0, \\; 30)"
+            "workingOut": "(t, \\\\; d) = (0, \\\\; 30)"
           },
           {
             "explanation": "Thus, the starting distance of Car A from Melbourne is 30 km.",
-            "workingOut": "d_{\\text{start}} = 30"
+            "workingOut": "d_{\\\\text{start}} = 30"
           }
         ]
       },
@@ -1401,11 +1401,11 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Car A ends its trip at the coordinate point (2.5, 180).",
-            "workingOut": "(t, \\; d) = (2.5, \\; 180)"
+            "workingOut": "(t, \\\\; d) = (2.5, \\\\; 180)"
           },
           {
             "explanation": "Read the distance value from the coordinates.",
-            "workingOut": "d_{\\text{finish}} = 180"
+            "workingOut": "d_{\\\\text{finish}} = 180"
           }
         ]
       },
@@ -1419,11 +1419,11 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Find the time taken by taking the difference between the finish and start times.",
-            "workingOut": "t_{\\text{taken}} = t_{\\text{finish}} - t_{\\text{start}}"
+            "workingOut": "t_{\\\\text{taken}} = t_{\\\\text{finish}} - t_{\\\\text{start}}"
           },
           {
             "explanation": "Substitute the values: t = 2.5 at finish, and t = 0 at start.",
-            "workingOut": "t_{\\text{taken}} = 2.5 - 0 = 2.5"
+            "workingOut": "t_{\\\\text{taken}} = 2.5 - 0 = 2.5"
           }
         ]
       },
@@ -1437,15 +1437,15 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "First, determine the total distance traveled by Car A.",
-            "workingOut": "\\text{Distance} = 180 - 30 = 150"
+            "workingOut": "\\\\text{Distance} = 180 - 30 = 150"
           },
           {
             "explanation": "The average speed is the total distance divided by the time taken.",
-            "workingOut": "\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{150}{2.5}"
+            "workingOut": "\\\\text{Speed} = \\\\dfrac{\\\\text{Distance}}{\\\\text{Time}} = \\\\dfrac{150}{2.5}"
           },
           {
             "explanation": "Evaluate the fraction.",
-            "workingOut": "\\text{Speed} = 60"
+            "workingOut": "\\\\text{Speed} = 60"
           }
         ]
       },
@@ -1463,7 +1463,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Substitute the gradient (speed) m = 60 and initial distance (intercept) c = 30.",
-            "workingOut": "m = 60, \\; c = 30"
+            "workingOut": "m = 60, \\\\; c = 30"
           },
           {
             "explanation": "State the final equation for Car A.",
@@ -1504,11 +1504,11 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Locate the starting coordinate pair (0, 120) for Car B.",
-            "workingOut": "(t, \\; d) = (0, \\; 120)"
+            "workingOut": "(t, \\\\; d) = (0, \\\\; 120)"
           },
           {
             "explanation": "Thus, Car B started 120 km from Melbourne.",
-            "workingOut": "d_{\\text{start}} = 120"
+            "workingOut": "d_{\\\\text{start}} = 120"
           }
         ]
       },
@@ -1522,11 +1522,11 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Car B finishes its trip at the coordinate point (1.5, 0).",
-            "workingOut": "(t, \\; d) = (1.5, \\; 0)"
+            "workingOut": "(t, \\\\; d) = (1.5, \\\\; 0)"
           },
           {
             "explanation": "Read the distance d from the coordinate pair.",
-            "workingOut": "d_{\\text{finish}} = 0"
+            "workingOut": "d_{\\\\text{finish}} = 0"
           }
         ]
       },
@@ -1540,7 +1540,7 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "The time taken is the difference in time from start (t = 0) to finish (t = 1.5).",
-            "workingOut": "t_{\\text{taken}} = 1.5 - 0 = 1.5"
+            "workingOut": "t_{\\\\text{taken}} = 1.5 - 0 = 1.5"
           }
         ]
       },
@@ -1554,15 +1554,15 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Determine the total distance traveled by Car B.",
-            "workingOut": "\\text{Distance} = 120 - 0 = 120"
+            "workingOut": "\\\\text{Distance} = 120 - 0 = 120"
           },
           {
             "explanation": "Average speed is total distance divided by time taken.",
-            "workingOut": "\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{120}{1.5}"
+            "workingOut": "\\\\text{Speed} = \\\\dfrac{\\\\text{Distance}}{\\\\text{Time}} = \\\\dfrac{120}{1.5}"
           },
           {
             "explanation": "Evaluate the division.",
-            "workingOut": "\\text{Speed} = 80"
+            "workingOut": "\\\\text{Speed} = 80"
           }
         ]
       },
@@ -1580,11 +1580,11 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Rearrange the terms to solve for time t.",
-            "workingOut": "\\begin{aligned} 140t &= 90 \\\\ t &= \\dfrac{9}{14} \\approx 0.643 \\text{ hours} \\end{aligned}"
+            "workingOut": "\\\\begin{aligned} 140t &= 90 \\\\ t &= \\\\dfrac{9}{14} \\\\approx 0.643 \\\\text{ hours} \\\\end{aligned}"
           },
           {
             "explanation": "Convert the fractional hours to minutes (0.643 × 60 = 38.57 minutes) and add it to 9:00 a.m.",
-            "workingOut": "\\begin{aligned} \\text{Minutes} &\\approx 39 \\\\ \\text{Passing Time} &= 9\\!:\\!39 \\text{ a.m.} \\end{aligned}"
+            "workingOut": "\\\\begin{aligned} \\\\text{Minutes} &\\\\approx 39 \\\\ \\\\text{Passing Time} &= 9\\\\!:\\\\!39 \\\\text{ a.m.} \\\\end{aligned}"
           }
         ]
       }
