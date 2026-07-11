@@ -133,7 +133,45 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     try {
       const qReports = query(collection(db, 'reports'), orderBy('createdAt', 'desc'), limit(ADMIN_REPORT_LIMIT));
       const snapshot = await getDocs(qReports);
-      setReports(snapshot.docs.map(d => ({ id: d.id, ...d.data() })));
+      const rawReports = snapshot.docs.map(d => ({ id: d.id, ...d.data() }));
+
+      // Reports save only a lightweight questionData snapshot that omits
+      // subQuestions, so multi-part questions showed only the parent prompt.
+      // Enrich any report whose saved questionData lacks subQuestions by
+      // reading the live question doc (deduped by questionId to bound reads —
+      // a direct getDoc per unique id, never a collection scan).
+      const idsToFetch = [...new Set(
+        rawReports
+          .filter(r => {
+            const qid = r.questionId || r.questionData?.id;
+            const hasSubs = Array.isArray(r.questionData?.subQuestions) && r.questionData.subQuestions.length > 0;
+            return qid && !hasSubs;
+          })
+          .map(r => r.questionId || r.questionData?.id)
+      )];
+      const liveById = {};
+      await Promise.all(idsToFetch.map(async (qid) => {
+        try {
+          const snap = await getDoc(doc(db, 'questions', qid));
+          if (snap.exists()) liveById[qid] = snap.data();
+        } catch { /* non-fatal — report still renders its parent prompt */ }
+      }));
+      const enriched = rawReports.map(r => {
+        const qid = r.questionId || r.questionData?.id;
+        const live = qid ? liveById[qid] : null;
+        if (live && Array.isArray(live.subQuestions) && live.subQuestions.length > 0) {
+          return {
+            ...r,
+            questionData: {
+              ...(r.questionData || {}),
+              subQuestions: live.subQuestions,
+              graphData: r.questionData?.graphData ?? live.graphData,
+            },
+          };
+        }
+        return r;
+      });
+      setReports(enriched);
     } catch (err) {
       console.error('Reports fetch error:', err);
     } finally {
@@ -755,6 +793,25 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                 <div style={{ margin: '8px 0 0' }}>
                   <MathView content={report.questionData.question || report.questionData.text || 'No question text'} graphData={report.questionData.graphData} style={{ fontWeight: 600, color: '#1e293b' }} />
                 </div>
+                {Array.isArray(report.questionData.subQuestions) && report.questionData.subQuestions.length > 0 && (
+                  <div style={{ marginTop: '12px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                    {report.questionData.subQuestions.map((sq, idx) => (
+                      <div key={sq.id ?? idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', padding: '12px 14px', borderRadius: '12px', background: '#fff', border: '1px solid #eef2ff' }}>
+                        <span style={{ width: '24px', height: '24px', borderRadius: '7px', background: '#eef2ff', color: '#4f46e5', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.78rem', flexShrink: 0, marginTop: '1px' }}>
+                          {String.fromCharCode(97 + idx)}
+                        </span>
+                        <div style={{ flex: 1 }}>
+                          <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontWeight: 600, color: '#1e293b', fontSize: '0.95rem' }} />
+                          {(sq.answer ?? '') !== '' && (
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px', color: '#64748b', fontWeight: 700, fontSize: '0.82rem' }}>
+                              Answer: <MathView content={String(sq.answer ?? '')} style={{ color: '#166534', fontWeight: 800 }} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                )}
                 {report.creditRestored && (
                   <div style={{ marginTop: '12px', display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 10px', borderRadius: '999px', background: '#ecfdf5', color: '#047857', fontSize: '0.75rem', fontWeight: 900 }}>
                     <CheckCircle size={14} /> Credit restored +{report.restoredPoints || 0} point{report.restoredPoints === 1 ? '' : 's'}
