@@ -617,6 +617,36 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     .map(slimQuestion)
     .map(correctQuestionAnswer);
 
+  // ── Backfill: if filtering removed questions (missing docs, isActive:false,
+  // no options for primary), request additional IDs from the pool so the student
+  // still receives exactly `questionCount` questions. Up to 3 retry rounds to
+  // avoid infinite loops when the pool itself is smaller than questionCount.
+  const usedIdSet = new Set(selectedIds.map(String));
+  for (let backfillRound = 0; backfillRound < 3 && questions.length < questionCount; backfillRound++) {
+    const shortfall = questionCount - questions.length;
+    // Ask the pool for extra IDs (request more than needed to account for further filtering).
+    const { selectedIds: extraIds } = await selectDailyQuestions(uid, shortfall + 5);
+    const newIds = extraIds.filter((id) => !usedIdSet.has(String(id)));
+    if (newIds.length === 0) break; // pool exhausted — nothing more to try
+    newIds.forEach((id) => usedIdSet.add(String(id)));
+    const extraDocs = await fetchQuestionsByIds(newIds);
+    const extraQs = extraDocs
+      .filter((d) => d.isActive !== false)
+      .filter((d) => !isPrimaryStudent || (Array.isArray(d.options) && d.options.length >= 2))
+      .map(slimQuestion)
+      .map(correctQuestionAnswer)
+      .filter((q) => !usedIdSet.has('_used_' + String(q.id)));
+    // Deduplicate against already-selected questions
+    const existingQIds = new Set(questions.map((q) => String(q.id)));
+    for (const eq of extraQs) {
+      if (questions.length >= questionCount) break;
+      if (!existingQIds.has(String(eq.id))) {
+        questions.push(eq);
+        existingQIds.add(String(eq.id));
+      }
+    }
+  }
+
   // question_index 미구축으로 practicePool이 0개를 반환한 경우 legacy 경로로 폴백.
   if (questions.length === 0) {
     const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
