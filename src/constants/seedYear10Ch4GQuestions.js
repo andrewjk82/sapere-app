@@ -1253,73 +1253,97 @@ export const Y10_CH4G_QUESTIONS = [
   },
   {
     "id": "y10-4g-q12",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "Water was leaking from a tank at a constant rate. A graph of volume $V$ (litres) against time $t$ (hours) is a straight line passing through $(0, 40000)$ and $(500, 20000)$.",
-    "a": "",
+    "question": "Water was leaking from a tank at a constant rate. A graph of volume \\(V\\) (litres) against time \\(t\\) (hours) is a straight line passing through \\((0, 40000)\\) and \\((500, 20000)\\).",
+    "a": 0,
     "subQuestions": [
       {
         "id": "y10-4g-q12a",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
+        "type": "multiple_choice",
         "question": "a) How many litres of water were initially in the tank?",
-        "a": "40000",
+        "opts": ["20000", "30000", "40000", "50000"],
+        "a": 2,
+        "answer": 2,
         "solutionSteps": [
           {
-            "explanation": "Initial volume is y-intercept",
-            "workingOut": "40000"
+            "explanation": "The initial volume corresponds to the start of the leak at time t = 0.",
+            "workingOut": "t = 0"
+          },
+          {
+            "explanation": "Locate the coordinate pair (0, 40000) representing its initial position.",
+            "workingOut": "(t, \\; V) = (0, \\; 40000)"
+          },
+          {
+            "explanation": "Therefore, the initial amount of water in the tank was 40000 litres.",
+            "workingOut": "V_{\\text{initial}} = 40000"
           }
         ]
       },
       {
         "id": "y10-4g-q12b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
+        "type": "multiple_choice",
         "question": "b) How many litres were leaking from the tank per hour?",
-        "a": "40",
+        "opts": ["20", "40", "60", "80"],
+        "a": 1,
+        "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "Calculate gradient",
-            "workingOut": "\\frac{40000-20000}{0-500} = -40"
+            "explanation": "The leak rate corresponds to the gradient (slope) of the straight line graph.",
+            "workingOut": "m = \\dfrac{V_2 - V_1}{t_2 - t_1}"
           },
           {
-            "explanation": "Leaking rate is positive magnitude",
-            "workingOut": "40"
+            "explanation": "Substitute the points (0, 40000) and (500, 20000) into the gradient formula.",
+            "workingOut": "m = \\dfrac{20000 - 40000}{500 - 0} = \\dfrac{-20000}{500} = -40"
+          },
+          {
+            "explanation": "The negative sign indicates water is leaving. Thus, the tank leaks at 40 litres per hour.",
+            "workingOut": "\\text{Leak rate} = 40"
           }
         ]
       },
       {
         "id": "y10-4g-q12c",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "c) Write a rule for finding the number of litres remaining ($V$) after $t$ hours.",
-        "a": "V = -40t + 40000",
+        "type": "multiple_choice",
+        "question": "c) Write a rule for finding the number of litres remaining (\\(V\\)) after \\(t\\) hours.",
+        "opts": ["V = -20t + 40000", "V = 40t + 20000", "V = -40t + 20000", "V = -40t + 40000"],
+        "a": 3,
+        "answer": 3,
         "solutionSteps": [
           {
-            "explanation": "Equation of line $V = mt + c$",
+            "explanation": "A straight line relation is written in the form V = mt + c, where m is the gradient and c is the vertical intercept.",
+            "workingOut": "V = mt + c"
+          },
+          {
+            "explanation": "Substitute the gradient m = -40 and the initial volume (intercept) c = 40000 into the equation.",
+            "workingOut": "m = -40, \\; c = 40000"
+          },
+          {
+            "explanation": "State the final equation showing remaining volume V in terms of hours t.",
             "workingOut": "V = -40t + 40000"
           }
         ]
       },
       {
         "id": "y10-4g-q12d",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "d) When would the tank be empty if the leaking continued at this rate? Give answer in hours.",
-        "a": "1000",
+        "type": "multiple_choice",
+        "question": "d) When would the tank be empty if the leaking continued at this rate? Give your answer in hours.",
+        "opts": ["1000", "800", "1200", "500"],
+        "a": 0,
+        "answer": 0,
         "solutionSteps": [
           {
-            "explanation": "Set V = 0",
+            "explanation": "The tank is empty when the volume V reaches 0 litres.",
+            "workingOut": "V = 0"
+          },
+          {
+            "explanation": "Substitute V = 0 into the volume rule and solve for time t.",
             "workingOut": "0 = -40t + 40000"
           },
           {
-            "explanation": "Solve for t",
+            "explanation": "Transpose 40t and divide to find the final hours.",
             "workingOut": "40t = 40000 \\Rightarrow t = 1000"
           }
         ]
@@ -1327,204 +1351,251 @@ export const Y10_CH4G_QUESTIONS = [
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 400,
+        "width": 300,
         "height": 300,
-        "boundingbox": [
-          -200,
-          65000,
-          700,
-          -15000
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 48000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [600, 0]], {strokeColor: 'black', strokeWidth: 1});\n\nboard.create('text', [680, -3000, 't (hours)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-40, 52000, 'V (litres)'], {anchorX: 'right', anchorY: 'bottom', fontSize: 14});\n\nboard.create('segment', [[-15, 40000], [0, 40000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-20, 40000, '40000'], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n\nboard.create('segment', [[-15, 20000], [0, 20000]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [-20, 20000, '20000'], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n\nboard.create('segment', [[500, -1500], [500, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [500, -3000, '500'], {anchorX: 'middle', anchorY: 'top', fontSize: 14});\n\nvar p = board.create('point', [500, 20000], {visible: false});\nboard.create('text', [520, 20000, '(500, 20000)'], {anchorX: 'left', anchorY: 'middle', fontSize: 14, cssClass: 'nowrap-text'});\n\nvar pStart = board.create('point', [0, 40000], {visible: false});\nboard.create('segment', [pStart, p], {strokeColor: 'blue', strokeWidth: 1.5});\n\nboard.create('segment', [[500,0], p], {strokeColor: 'red', strokeWidth: 1.5, dash: 2});\n\nboard.unsuspendUpdate();",
-        "boardOptions": {
-          "keepaspectratio": false
-        }
-      },
-      "geometry": null
+        "boundingbox": [-100, 50000, 600, -10000],
+        "showAxisLabels": true,
+        "keepaspectratio": false,
+        "script": "board.suspendUpdate();board.options.point.withLabel = false;board.options.point.visible = false;board.create('arrow', [[-50, 0], [550, 0]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('arrow', [[0, -5000], [0, 48000]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('text', [530, 2000, 't (h)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});board.create('text', [20, 46000, 'V (L)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});board.create('segment', [[-10, 40000], [10, 40000]], {strokeColor: '#cbd5e1', strokeWidth: 1});board.create('text', [-80, 40000, '40000'], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});board.create('segment', [[-10, 20000], [10, 20000]], {strokeColor: '#cbd5e1', strokeWidth: 1});board.create('text', [-80, 20000, '20000'], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});board.create('segment', [[500, -1000], [500, 1000]], {strokeColor: '#cbd5e1', strokeWidth: 1});board.create('text', [490, -3000, '500'], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});board.create('segment', [[0, 40000], [500, 20000]], {strokeColor: '#3b82f6', strokeWidth: 2.5, fixed: true});board.create('segment', [[500, 0], [500, 20000]], {strokeColor: '#ef4444', strokeWidth: 1.5, dash: 2, fixed: true});board.unsuspendUpdate();"
+      }
     }
   },
   {
-    "id": "y10-4g-q13",
-    "type": "short_answer",
+    "id": "y10-4g-q13_part1",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "t": "Revision",
-    "question": "The graph shown represents the trips of two cars, A and B, along the Hume Highway. The vertical axis is the $d$ axis, where $d$ km is the distance from Melbourne. The horizontal axis is $t$ hours. Both start at 9 a.m. Car A goes from $(0, 30)$ to $(2.5, 180)$. Car B goes from $(0, 120)$ to $(1.5, 0)$.",
-    "a": "",
+    "question": "The graph represents the trips of two cars, A and B, along the Hume Highway. Car A goes from \\((0, 30)\\) to \\((2.5, 180)\\). Both start at 9 a.m. Analyze the trip details for **Car A**.",
+    "a": 0,
     "subQuestions": [
       {
         "id": "y10-4g-q13a_i_a",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
+        "type": "multiple_choice",
         "question": "a) Describe Car A's trip: Where did it start? (Distance from Melbourne in km)",
-        "a": "30",
+        "opts": ["0", "120", "30", "180"],
+        "a": 2,
+        "answer": 2,
         "solutionSteps": [
           {
-            "explanation": "Initial point (0, 30)",
-            "workingOut": "30"
+            "explanation": "Car A starts its trip at time t = 0.",
+            "workingOut": "t = 0"
+          },
+          {
+            "explanation": "Look at the starting coordinate pair (0, 30) for Car A.",
+            "workingOut": "(t, \\; d) = (0, \\; 30)"
+          },
+          {
+            "explanation": "Thus, the starting distance of Car A from Melbourne is 30 km.",
+            "workingOut": "d_{\\text{start}} = 30"
           }
         ]
       },
       {
         "id": "y10-4g-q13a_ii_a",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car A's trip: Where did it finish? (Distance from Melbourne in km)",
-        "a": "180",
+        "type": "multiple_choice",
+        "question": "b) Describe Car A's trip: Where did it finish? (Distance from Melbourne in km)",
+        "opts": ["30", "120", "0", "180"],
+        "a": 3,
+        "answer": 3,
         "solutionSteps": [
           {
-            "explanation": "Final point (2.5, 180)",
-            "workingOut": "180"
+            "explanation": "Car A ends its trip at the coordinate point (2.5, 180).",
+            "workingOut": "(t, \\; d) = (2.5, \\; 180)"
+          },
+          {
+            "explanation": "Read the distance value from the coordinates.",
+            "workingOut": "d_{\\text{finish}} = 180"
           }
         ]
       },
       {
         "id": "y10-4g-q13a_iii_a",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car A's trip: What was the time taken in hours?",
-        "a": "2.5",
+        "type": "multiple_choice",
+        "question": "c) Describe Car A's trip: What was the time taken in hours?",
+        "opts": ["1.5", "2.5", "2.0", "3.0"],
+        "a": 1,
+        "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "From t=0 to t=2.5",
-            "workingOut": "2.5"
+            "explanation": "Find the time taken by taking the difference between the finish and start times.",
+            "workingOut": "t_{\\text{taken}} = t_{\\text{finish}} - t_{\\text{start}}"
+          },
+          {
+            "explanation": "Substitute the values: t = 2.5 at finish, and t = 0 at start.",
+            "workingOut": "t_{\\text{taken}} = 2.5 - 0 = 2.5"
           }
         ]
       },
       {
         "id": "y10-4g-q13a_iv_a",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car A's trip: What was the average speed in km/h?",
-        "a": "60",
+        "type": "multiple_choice",
+        "question": "d) Describe Car A's trip: What was the average speed in km/h?",
+        "opts": ["60", "70", "80", "50"],
+        "a": 0,
+        "answer": 0,
         "solutionSteps": [
           {
-            "explanation": "Distance / Time",
-            "workingOut": "\\frac{180-30}{2.5} = 60"
-          }
-        ]
-      },
-      {
-        "id": "y10-4g-q13a_i_b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car B's trip: Where did it start? (Distance from Melbourne in km)",
-        "a": "120",
-        "solutionSteps": [
-          {
-            "explanation": "Initial point (0, 120)",
-            "workingOut": "120"
-          }
-        ]
-      },
-      {
-        "id": "y10-4g-q13a_ii_b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car B's trip: Where did it finish? (Distance from Melbourne in km)",
-        "a": "0",
-        "solutionSteps": [
-          {
-            "explanation": "Final point (1.5, 0)",
-            "workingOut": "0"
-          }
-        ]
-      },
-      {
-        "id": "y10-4g-q13a_iii_b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car B's trip: What was the time taken in hours?",
-        "a": "1.5",
-        "solutionSteps": [
-          {
-            "explanation": "From t=0 to t=1.5",
-            "workingOut": "1.5"
-          }
-        ]
-      },
-      {
-        "id": "y10-4g-q13a_iv_b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "a) Describe Car B's trip: What was the average speed in km/h?",
-        "a": "80",
-        "solutionSteps": [
-          {
-            "explanation": "Distance / Time (magnitude)",
-            "workingOut": "|\\frac{0-120}{1.5}| = 80"
-          }
-        ]
-      },
-      {
-        "id": "y10-4g-q13b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "b) Find the equation of the graph of each car's trip (in terms of $d$ and $t$). Format: A: d=_, B: d=_",
-        "a": "A: d=60t+30, B: d=-80t+120",
-        "solutionSteps": [
-          {
-            "explanation": "Use y=mx+c",
-            "workingOut": "d_A = 60t + 30"
+            "explanation": "First, determine the total distance traveled by Car A.",
+            "workingOut": "\\text{Distance} = 180 - 30 = 150"
           },
           {
-            "explanation": "For B, m=-80, c=120",
-            "workingOut": "d_B = -80t + 120"
+            "explanation": "The average speed is the total distance divided by the time taken.",
+            "workingOut": "\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{150}{2.5}"
+          },
+          {
+            "explanation": "Evaluate the fraction.",
+            "workingOut": "\\text{Speed} = 60"
           }
         ]
       },
       {
-        "id": "y10-4g-q13c",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 120,
-        "question": "c) Find the time at which they passed each other, giving your answer to the nearest minute (e.g. 9:39 a.m.).",
-        "a": "9:39 a.m.",
+        "id": "y10-4g-q13b_part1",
+        "type": "multiple_choice",
+        "question": "e) Find the equation representing Car A's trip (in terms of \\(d\\) and \\(t\\)).",
+        "opts": ["d = 60t", "d = 60t + 30", "d = 30t + 60", "d = -60t + 180"],
+        "a": 1,
+        "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "Equate distances",
-            "workingOut": "60t + 30 = -80t + 120"
+            "explanation": "A linear equation is written in the form d = mt + c.",
+            "workingOut": "d = mt + c"
           },
           {
-            "explanation": "Solve for t",
-            "workingOut": "140t = 90 \\Rightarrow t = 9/14 \\text{ hours}"
+            "explanation": "Substitute the gradient (speed) m = 60 and initial distance (intercept) c = 30.",
+            "workingOut": "m = 60, \\; c = 30"
           },
           {
-            "explanation": "Convert to minutes",
-            "workingOut": "\\frac{9}{14} \\times 60 \\approx 38.57 \\text{ minutes}"
-          },
-          {
-            "explanation": "Add to start time 9 a.m.",
-            "workingOut": "9:39 \\text{ a.m.}"
+            "explanation": "State the final equation for Car A.",
+            "workingOut": "d = 60t + 30"
           }
         ]
       }
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 400,
+        "width": 300,
         "height": 300,
-        "boundingbox": [
-          -0.8,
-          280,
-          3.5,
-          -50
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0], [0, 210]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0,0], [3.1, 0]], {strokeColor: 'black', strokeWidth: 1});\n\nboard.create('text', [3.4, -10, 't (hours)'], {anchorX: 'right', anchorY: 'top', fontSize: 14});\nboard.create('text', [-0.2, 230, 'd (km)'], {anchorX: 'right', anchorY: 'bottom', fontSize: 14});\n\nvar yTicks = [30, 120, 180];\nyTicks.forEach(function(y) {\n  board.create('segment', [[-0.05, y], [0, y]], {strokeColor: 'black', strokeWidth: 1});\n  board.create('text', [-0.1, y, y.toString()], {anchorX: 'right', anchorY: 'middle', fontSize: 14});\n});\n\nvar xTicks = [1.5, 2.5];\nxTicks.forEach(function(x) {\n  board.create('segment', [[x, -3], [x, 0]], {strokeColor: 'black', strokeWidth: 1});\n  board.create('text', [x, -10, x.toString()], {anchorX: 'middle', anchorY: 'top', fontSize: 14});\n});\n\nvar aStart = board.create('point', [0, 30], {visible: true, name: '', size: 2, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nvar aEnd = board.create('point', [2.5, 180], {visible: true, name: '', size: 2, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('segment', [aStart, aEnd], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('text', [2.5, 190, 'Car A'], {anchorX: 'middle', anchorY: 'bottom', fontSize: 14});\n\nvar bStart = board.create('point', [0, 120], {visible: true, name: '', size: 2, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nvar bEnd = board.create('point', [1.5, 0], {visible: true, name: '', size: 2, color: 'red', label: {autoPosition: false, offset: [0, 10]}});\nboard.create('segment', [bStart, bEnd], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('text', [0.5, 20, 'Car B'], {anchorX: 'left', anchorY: 'bottom', fontSize: 14});\n\nboard.unsuspendUpdate();",
-        "boardOptions": {
-          "keepaspectratio": false
-        }
+        "boundingbox": [-0.5, 200, 3.0, -20],
+        "script": "board.suspendUpdate();board.options.point.withLabel = false;board.options.point.visible = false;board.create('arrow', [[-0.2, 0], [2.8, 0]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('arrow', [[0, -10], [0, 190]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('text', [2.7, 8, 't (h)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});board.create('text', [0.1, 185, 'd (km)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});for (var t = 0.5; t <= 2.5; t += 0.5) {board.create('segment', [[t, -3], [t, 3]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});board.create('text', [t - 0.08, -12, t.toFixed(1)], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});}for (var d = 30; d <= 180; d += 30) {board.create('segment', [[-0.05, d], [0.05, d]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});board.create('text', [-0.35, d - 3, d], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});}board.create('segment', [[0, 30], [2.5, 180]], {strokeColor: '#3b82f6', strokeWidth: 2.5, fixed: true});board.create('text', [1.8, 120, 'Car A'], {fontSize: 10, strokeColor: '#3b82f6', fixed: true});board.create('segment', [[0, 120], [1.5, 0]], {strokeColor: '#ef4444', strokeWidth: 2.5, fixed: true});board.create('text', [0.8, 80, 'Car B'], {fontSize: 10, strokeColor: '#ef4444', fixed: true});board.unsuspendUpdate();"
+      }
+    }
+  },
+  {
+    "id": "y10-4g-q13_part2",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "t": "Revision",
+    "question": "The graph represents the trips of two cars, A and B, along the Hume Highway. Car B goes from \\((0, 120)\\) to \\((1.5, 0)\\). Both start at 9 a.m. Analyze the trip details for **Car B**.",
+    "a": 0,
+    "subQuestions": [
+      {
+        "id": "y10-4g-q13a_i_b",
+        "type": "multiple_choice",
+        "question": "a) Describe Car B's trip: Where did it start? (Distance from Melbourne in km)",
+        "opts": ["30", "120", "0", "180"],
+        "a": 1,
+        "answer": 1,
+        "solutionSteps": [
+          {
+            "explanation": "Car B starts its trip at time t = 0.",
+            "workingOut": "t = 0"
+          },
+          {
+            "explanation": "Locate the starting coordinate pair (0, 120) for Car B.",
+            "workingOut": "(t, \\; d) = (0, \\; 120)"
+          },
+          {
+            "explanation": "Thus, Car B started 120 km from Melbourne.",
+            "workingOut": "d_{\\text{start}} = 120"
+          }
+        ]
       },
-      "geometry": null
+      {
+        "id": "y10-4g-q13a_ii_b",
+        "type": "multiple_choice",
+        "question": "b) Describe Car B's trip: Where did it finish? (Distance from Melbourne in km)",
+        "opts": ["120", "30", "0", "180"],
+        "a": 2,
+        "answer": 2,
+        "solutionSteps": [
+          {
+            "explanation": "Car B finishes its trip at the coordinate point (1.5, 0).",
+            "workingOut": "(t, \\; d) = (1.5, \\; 0)"
+          },
+          {
+            "explanation": "Read the distance d from the coordinate pair.",
+            "workingOut": "d_{\\text{finish}} = 0"
+          }
+        ]
+      },
+      {
+        "id": "y10-4g-q13a_iii_b",
+        "type": "multiple_choice",
+        "question": "c) Describe Car B's trip: What was the time taken in hours?",
+        "opts": ["1.5", "2.5", "1.0", "2.0"],
+        "a": 0,
+        "answer": 0,
+        "solutionSteps": [
+          {
+            "explanation": "The time taken is the difference in time from start (t = 0) to finish (t = 1.5).",
+            "workingOut": "t_{\\text{taken}} = 1.5 - 0 = 1.5"
+          }
+        ]
+      },
+      {
+        "id": "y10-4g-q13a_iv_b",
+        "type": "multiple_choice",
+        "question": "d) Describe Car B's trip: What was the average speed in km/h?",
+        "opts": ["60", "70", "90", "80"],
+        "a": 3,
+        "answer": 3,
+        "solutionSteps": [
+          {
+            "explanation": "Determine the total distance traveled by Car B.",
+            "workingOut": "\\text{Distance} = 120 - 0 = 120"
+          },
+          {
+            "explanation": "Average speed is total distance divided by time taken.",
+            "workingOut": "\\text{Speed} = \\dfrac{\\text{Distance}}{\\text{Time}} = \\dfrac{120}{1.5}"
+          },
+          {
+            "explanation": "Evaluate the division.",
+            "workingOut": "\\text{Speed} = 80"
+          }
+        ]
+      },
+      {
+        "id": "y10-4g-q13c_part2",
+        "type": "multiple_choice",
+        "question": "e) Find the time at which they passed each other, giving your answer to the nearest minute (assuming they start at 9:00 a.m.).",
+        "opts": ["9:30 a.m.", "9:39 a.m.", "9:45 a.m.", "10:00 a.m."],
+        "a": 1,
+        "answer": 1,
+        "solutionSteps": [
+          {
+            "explanation": "Equate the distance equations for both cars. Car A is d = 60t + 30 and Car B is d = -80t + 120.",
+            "workingOut": "60t + 30 = -80t + 120"
+          },
+          {
+            "explanation": "Rearrange the terms to solve for time t.",
+            "workingOut": "\\begin{aligned} 140t &= 90 \\\\ t &= \\dfrac{9}{14} \\approx 0.643 \\text{ hours} \\end{aligned}"
+          },
+          {
+            "explanation": "Convert the fractional hours to minutes (0.643 × 60 = 38.57 minutes) and add it to 9:00 a.m.",
+            "workingOut": "\\begin{aligned} \\text{Minutes} &\\approx 39 \\\\ \\text{Passing Time} &= 9\\!:\\!39 \\text{ a.m.} \\end{aligned}"
+          }
+        ]
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [-0.5, 200, 3.0, -20],
+        "script": "board.suspendUpdate();board.options.point.withLabel = false;board.options.point.visible = false;board.create('arrow', [[-0.2, 0], [2.8, 0]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('arrow', [[0, -10], [0, 190]], {strokeColor: '#64748b', strokeWidth: 1.5, fixed: true});board.create('text', [2.7, 8, 't (h)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});board.create('text', [0.1, 185, 'd (km)'], {fontSize: 10, fontFamily: 'sans-serif', strokeColor: '#475569', fixed: true});for (var t = 0.5; t <= 2.5; t += 0.5) {board.create('segment', [[t, -3], [t, 3]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});board.create('text', [t - 0.08, -12, t.toFixed(1)], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});}for (var d = 30; d <= 180; d += 30) {board.create('segment', [[-0.05, d], [0.05, d]], {strokeColor: '#cbd5e1', strokeWidth: 1, fixed: true});board.create('text', [-0.35, d - 3, d], {fontSize: 8.5, strokeColor: '#64748b', fixed: true});}board.create('segment', [[0, 30], [2.5, 180]], {strokeColor: '#3b82f6', strokeWidth: 2.5, fixed: true});board.create('text', [1.8, 120, 'Car A'], {fontSize: 10, strokeColor: '#3b82f6', fixed: true});board.create('segment', [[0, 120], [1.5, 0]], {strokeColor: '#ef4444', strokeWidth: 2.5, fixed: true});board.create('text', [0.8, 80, 'Car B'], {fontSize: 10, strokeColor: '#ef4444', fixed: true});board.unsuspendUpdate();"
+      }
     }
   }
 ];
