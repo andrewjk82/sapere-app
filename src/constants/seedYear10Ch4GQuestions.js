@@ -1360,8 +1360,7 @@ export const Y10_CH4G_QUESTIONS = [
       }
     }
   },
-  {
-    rt const Y10_CH4G_QUESTIONS = [
+
   {
     "id": "y10-4g-q1a",
     "type": "short_answer",
