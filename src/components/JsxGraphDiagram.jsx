@@ -61,7 +61,7 @@ const JsxGraphDiagram = ({ data, style }) => {
         showNavigation: false,
         pan: { enabled: false },
         zoom: { enabled: false, wheel: false, needShift: false, pinchHorizontal: false, pinchVertical: false },
-        keepaspectratio: data.keepaspectratio !== undefined ? data.keepaspectratio : (data.boardOptions?.keepaspectratio !== undefined ? data.boardOptions.keepaspectratio : autoKeepAspectRatio),
+        keepaspectratio: data.keepaspectratio !== undefined ? data.keepaspectratio : (data.boardOptions?.keepaspectratio !== undefined ? data.boardOptions.keepaspectratio : false),
         point: {
           fixed: true,
           highlight: false,
