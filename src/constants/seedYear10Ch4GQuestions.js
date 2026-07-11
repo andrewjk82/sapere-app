@@ -1274,7 +1274,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Locate the coordinate pair (0, 40000) representing its initial position.",
-            "workingOut": "(t,  V) = (0,  40000)"
+            "workingOut": "(t, \\\\; V) = (0, \\\\; 40000)"
           },
           {
             "explanation": "Therefore, the initial amount of water in the tank was 40000 litres.",
@@ -1318,7 +1318,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Substitute the gradient m = -40 and the initial volume (intercept) c = 40000 into the equation.",
-            "workingOut": "m = -40,  c = 40000"
+            "workingOut": "m = -40, \\\\; c = 40000"
           },
           {
             "explanation": "State the final equation showing remaining volume V in terms of hours t.",
@@ -2637,7 +2637,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Locate the coordinate pair (0, 40000) representing its initial position.",
-            "workingOut": "(t,  V) = (0,  40000)"
+            "workingOut": "(t, \\\\; V) = (0, \\\\; 40000)"
           },
           {
             "explanation": "Therefore, the initial amount of water in the tank was 40000 litres.",
@@ -2681,7 +2681,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Substitute the gradient m = -40 and the initial volume (intercept) c = 40000 into the equation.",
-            "workingOut": "m = -40,  c = 40000"
+            "workingOut": "m = -40, \\\\; c = 40000"
           },
           {
             "explanation": "State the final equation showing remaining volume V in terms of hours t.",
@@ -2746,7 +2746,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Look at the starting coordinate pair (0, 30) for Car A.",
-            "workingOut": "(t,  d) = (0,  30)"
+            "workingOut": "(t, \\; d) = (0, \\; 30)"
           },
           {
             "explanation": "Thus, the starting distance of Car A from Melbourne is 30 km.",
@@ -2764,7 +2764,7 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Car A ends its trip at the coordinate point (2.5, 180).",
-            "workingOut": "(t,  d) = (2.5,  180)"
+            "workingOut": "(t, \\; d) = (2.5, \\; 180)"
           },
           {
             "explanation": "Read the distance value from the coordinates.",
@@ -2826,7 +2826,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Substitute the gradient (speed) m = 60 and initial distance (intercept) c = 30.",
-            "workingOut": "m = 60,  c = 30"
+            "workingOut": "m = 60, \\; c = 30"
           },
           {
             "explanation": "State the final equation for Car A.",
@@ -2867,7 +2867,7 @@ export const Y10_CH4G_QUESTIONS = [
           },
           {
             "explanation": "Locate the starting coordinate pair (0, 120) for Car B.",
-            "workingOut": "(t,  d) = (0,  120)"
+            "workingOut": "(t, \\; d) = (0, \\; 120)"
           },
           {
             "explanation": "Thus, Car B started 120 km from Melbourne.",
@@ -2885,7 +2885,7 @@ export const Y10_CH4G_QUESTIONS = [
         "solutionSteps": [
           {
             "explanation": "Car B finishes its trip at the coordinate point (1.5, 0).",
-            "workingOut": "(t,  d) = (1.5,  0)"
+            "workingOut": "(t, \\; d) = (1.5, \\; 0)"
           },
           {
             "explanation": "Read the distance d from the coordinate pair.",
