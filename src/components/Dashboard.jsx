@@ -419,7 +419,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               >
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', gap: '8px', flexWrap: 'wrap' }}>
                   <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
-                    Daily Practice · This Week
+                    Daily Practice
                   </label>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
                     {/* Shared pill metrics — same height/padding so XP + streak feel like a pair */}
