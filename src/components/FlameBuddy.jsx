@@ -11,36 +11,173 @@ import { getDueCount } from '../utils/secretNote';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import './FlameBuddy.css';
 
-const CALM_UNTIL = 17; // 5 PM local
-const DEADLINE = 24;
+// Time-of-day stages for unfinished Daily Practice (local hours, float).
+// 0 morning → 6 near midnight. Mood climbs with the stage.
+const PRACTICE_STAGES = [
+  // 0 — morning / before noon: gentle "now's a good time"
+  {
+    mood: 'idle',
+    lines: [
+      { msg: "Hey! Now's a perfect time to start today's practice.", sub: "Morning brain is fresh — you'll fly through it." },
+      { msg: "Psst… today's practice is unlocked and waiting for you.", sub: "Kick it off early and the rest of the day feels lighter." },
+      { msg: "Good morning! Shall we tick off Daily Practice before anything else?", sub: "Small win first. Future-you will high-five you later." },
+      { msg: "I saved you a seat at the practice desk. Ready when you are!", sub: "No rush… okay, a tiny rush. It feels good to start." },
+    ],
+  },
+  // 1 — early afternoon
+  {
+    mood: 'idle',
+    lines: [
+      { msg: "Lunch brain activated — perfect for a quick practice session.", sub: "Tenish minutes and you're done. Want to go?" },
+      { msg: "Hey friend, practice is still sitting there looking lonely.", sub: "Give it some love this afternoon?" },
+      { msg: "Midday check-in: have we practiced yet? (Spoiler: not yet.)", sub: "Hop in now while the day's still soft and easy." },
+      { msg: "If you start now, you could be finished before the next snack.", sub: "That's basically free progress. I'm just saying." },
+    ],
+  },
+  // 2 — late afternoon (~3–6)
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "Afternoon's rolling on and practice is still open…", sub: "This is usually the sweet spot — not too early, not too late." },
+      { msg: "Okay, official nudge: it's practice o'clock.", sub: "You'll feel so smug when it's done. The good kind of smug." },
+      { msg: "I believe in you. Also I believe practice won't do itself.", sub: "One short session. Then free time, guilt-free." },
+      { msg: "Still on the to-do list: Daily Practice.", sub: "Cross it off before dinner and the evening is yours." },
+    ],
+  },
+  // 3 — early evening (~6–8)
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "Evening already? Practice still says hi from the Challenge tab.", sub: "Do it now and you can actually relax after." },
+      { msg: "Hey — we still haven't practiced today.", sub: "I won't tell Andrew… yet. Let's just finish it, yeah?" },
+      { msg: "Dinner can wait five more minutes. Practice first?", sub: "Okay maybe not dinner. But you get the idea." },
+      { msg: "Your streak is peeking around the corner, waiting for you.", sub: "Don't leave it hanging. Quick session?" },
+    ],
+  },
+  // 4 — late evening (~8–10)
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "It's getting late and practice is still open… just saying.", sub: "Better now than at 11 when I get dramatic." },
+      { msg: "Friendly reminder from your flame: practice is unfinished.", sub: "Andrew would say the same thing, but nicer if you do it first." },
+      { msg: "Night mode unlocked. Practice mode… still waiting.", sub: "Knock it out before the couch absorbs you completely." },
+      { msg: "You and I both know it'll take less time than scrolling.", sub: "One practice. Then you can doom-scroll with a clear conscience." },
+    ],
+  },
+  // 5 — ~10–11pm: ramping up
+  {
+    mood: 'urgent',
+    lines: [
+      { msg: "Okay it's getting seriously late — practice is still not done!", sub: "Start now so we don't enter full panic mode at 11." },
+      { msg: "Clock's loud tonight. Practice is louder in my head.", sub: "Please? Your streak (and my nerves) will thank you." },
+      { msg: "We're in the danger zone. Practice still open.", sub: "If Andrew checks the dashboard later… let's make him smile, not sigh." },
+      { msg: "Ten-o'clock energy: still time, but not forever.", sub: "Short session. Big relief. Let's go." },
+    ],
+  },
+  // 6 — ~11pm–midnight: full urgent + Andrew nag energy
+  {
+    mood: 'urgent',
+    lines: [
+      { msg: "It's basically 11 — we need to start practice NOW.", sub: "Otherwise Andrew's going to start the famous lecture. Save us both." },
+      { msg: "Midnight is way too close and practice is still empty!", sub: "Quick — before Andrew sends the 'did you practice?' message." },
+      { msg: "I'm not yelling. I'm urgently encouraging. PRACTICE.", sub: "Andrew's residual nagging power activates at this hour. Trust me." },
+      { msg: "Last call for today's practice — for real this time.", sub: "Do it now or face Andrew tomorrow with the 'I forgot' face. Nope." },
+      { msg: "Friend. It's late. Practice. Please.", sub: "I can bounce. You can finish. Andrew can stay quiet. Win-win-win." },
+    ],
+  },
+];
+
+const SPRINT_STAGES = [
+  {
+    mood: 'idle',
+    lines: [
+      { msg: "Oh — calculation sprint is still open too!", sub: "Tiny set of questions. Like a warm-up for your brain." },
+      { msg: "Sprint's waiting whenever you're ready.", sub: "A few minutes and it's gone from your list." },
+    ],
+  },
+  {
+    mood: 'idle',
+    lines: [
+      { msg: "Calculation sprint still needs a little love.", sub: "Perfect between other things — super short." },
+      { msg: "Hey, don't forget the sprint after practice!", sub: "Or before. I'm flexible. The sprint is not." },
+    ],
+  },
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "Sprint check: still unfinished.", sub: "Three-ish minutes. You've survived longer things." },
+      { msg: "Calculation sprint is giving you the puppy eyes.", sub: "Don't leave it hanging all afternoon." },
+    ],
+  },
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "Evening sprint reminder, coming through!", sub: "Quick numbers, then free evening. Deal?" },
+      { msg: "Sprint's still on the board.", sub: "Andrew likes completed sprints. Just putting that out there." },
+    ],
+  },
+  {
+    mood: 'thinking',
+    lines: [
+      { msg: "Late-night sprint still open…", sub: "It's short. Your pillow can wait two more minutes." },
+      { msg: "Don't let the sprint be the thing you 'meant to do'.", sub: "Open Challenge, finish it, sleep heroically." },
+    ],
+  },
+  {
+    mood: 'urgent',
+    lines: [
+      { msg: "Sprint's almost out of time today!", sub: "Hit it now before the clock wins." },
+      { msg: "Calculation sprint: still not done, still very doable.", sub: "Last good window before midnight chaos." },
+    ],
+  },
+  {
+    mood: 'urgent',
+    lines: [
+      { msg: "It's late and the sprint is STILL open!", sub: "Finish it before Andrew asks about calculations tomorrow." },
+      { msg: "Midnight sprint emergency — sort of!", sub: "You're one short set away from a clean day. Go!" },
+    ],
+  },
+];
 
 const COPY = {
-  practice: [
-    { msg: "Hey — still haven't done today's practice yet?", sub: "It's a quick one. Start now and you'll feel so much better after." },
-    { msg: "Pssst… your daily practice is waiting for you.", sub: "Afternoon's a great time to knock it out. Want to try?" },
-    { msg: "Okay friend, evening's here and practice is still open…", sub: "Let's do it together? The longer you wait, the harder it feels." },
-    { msg: "Almost midnight!! We really should finish practice today.", sub: "Come on — one short session so your streak stays alive." },
-  ],
-  sprint: [
-    { msg: "Oh, and the calculation sprint is still open!", sub: "Just a few questions — like three minutes. Easy win." },
-    { msg: "Perfect little window for your calculation sprint.", sub: "Quick questions, done before you know it." },
-    { msg: "Hey — sprint still needs you!", sub: "Only a few minutes. You can squeeze it in right now." },
-    { msg: "Still no sprint today… last chance before the day ends!", sub: "I believe in you — let's finish it now." },
-  ],
   bothDone: [
     { msg: "You crushed today's practice — I'm so proud of you!", sub: "Rest a bit, or poke around the Journey Map if you're curious." },
+    { msg: "Both done? Look at you go!", sub: "I'm doing a little victory flicker over here." },
+    { msg: "Practice complete. Streak safe. Flame happy.", sub: "You've earned a break — seriously." },
+    { msg: "That's a full day of work. Nice one!", sub: "Andrew would be nodding approvingly right now." },
   ],
   secretNote: [
     { msg: "Hey, your Secret Note has a few things to review.", sub: "A quick look now means those mistakes won't stick. Want to peek?" },
+    { msg: "Secret Note's waving at you with some review items.", sub: "Short review, stronger memory. Worth it." },
+    { msg: "Psst — a couple of old mistakes want a rematch.", sub: "Jump into Secret Note when you have a minute." },
   ],
   idle: [
     { msg: "I'm right here if you need a little nudge!", sub: "Tap me anytime — happy to chat." },
   ],
 };
 
-const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
-const urgencyFor = (hour) => clamp((hour - CALM_UNTIL) / (DEADLINE - CALM_UNTIL), 0, 1);
-const stageIndex = (t) => (t < 0.2 ? 0 : t < 0.5 ? 1 : t < 0.78 ? 2 : 3);
+/** Stable pick so the line doesn't change every re-render (changes by day + stage). */
+const hashSeed = (str) => {
+  let h = 0;
+  for (let i = 0; i < str.length; i += 1) h = (Math.imul(31, h) + str.charCodeAt(i)) | 0;
+  return Math.abs(h);
+};
+
+const pickLine = (lines, seed) => {
+  if (!lines?.length) return { msg: '', sub: '' };
+  return lines[hashSeed(seed) % lines.length];
+};
+
+/** Map local hour (0–24 float) → practice stage 0–6. */
+const practiceStageForHour = (hour) => {
+  if (hour < 12) return 0;
+  if (hour < 15) return 1;
+  if (hour < 18) return 2;
+  if (hour < 20) return 3;
+  if (hour < 22) return 4;
+  if (hour < 23) return 5;
+  return 6;
+};
 
 const parseSessionStartMs = (s) => {
   try {
@@ -411,16 +548,18 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     }
   }, [uid, activeTab, tasks]);
 
-  const urgency = urgencyFor(hour);
-  const stage = stageIndex(urgency);
+  const stage = practiceStageForHour(hour);
 
   const situation = useMemo(() => {
+    const seedBase = `${uid || 'anon'}-${today}`;
     const cheering = Date.now() < cheerUntil;
     if (cheering) {
+      const line = pickLine(COPY.bothDone, `${seedBase}-cheer`);
       return {
         mood: 'cheer',
         eyebrow: 'Great job',
-        ...COPY.bothDone[0],
+        msg: line.msg,
+        sub: line.sub,
         cta: null,
         key: `cheer-${today}`,
       };
@@ -431,24 +570,28 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       return buildScheduleSpeech(nextSession);
     }
 
+    // Dashboard (and other tabs): time-escalating practice coaching.
     const needDaily = !tasks.dailyDone;
     const needCalc = calcEnabled && !tasks.calcDone;
 
     if (!needDaily && !needCalc) {
       if (dueNotes > 0) {
+        const line = pickLine(COPY.secretNote, `${seedBase}-note`);
         return {
           mood: 'hint',
           eyebrow: 'Secret Note',
-          msg: COPY.secretNote[0].msg,
-          sub: `${dueNotes} item${dueNotes === 1 ? '' : 's'} · ${COPY.secretNote[0].sub}`,
+          msg: line.msg,
+          sub: `${dueNotes} item${dueNotes === 1 ? '' : 's'} · ${line.sub}`,
           cta: { label: 'Review now', tab: 'Challenge' },
           key: `note-${today}-${dueNotes}`,
         };
       }
+      const line = pickLine(COPY.bothDone, `${seedBase}-done`);
       return {
         mood: 'idle',
         eyebrow: 'All set',
-        ...COPY.bothDone[0],
+        msg: line.msg,
+        sub: line.sub,
         cta: null,
         key: `done-${today}`,
       };
@@ -456,11 +599,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
     // Prefer daily practice messaging first (matches old nudge priority).
     if (needDaily) {
-      const line = COPY.practice[stage];
-      const mood = stage >= 2 ? 'urgent' : stage >= 1 ? 'thinking' : 'idle';
+      const pack = PRACTICE_STAGES[stage] || PRACTICE_STAGES[0];
+      const line = pickLine(pack.lines, `${seedBase}-daily-${stage}`);
       return {
-        mood,
-        eyebrow: 'Daily Practice',
+        mood: pack.mood,
+        eyebrow: stage >= 5 ? 'Almost midnight' : stage >= 3 ? 'Evening check-in' : 'Daily Practice',
         msg: line.msg,
         sub: line.sub,
         cta: { label: 'Start practice', tab: 'Challenge' },
@@ -469,17 +612,17 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     }
 
     // Calc only left
-    const line = COPY.sprint[stage];
-    const mood = stage >= 2 ? 'urgent' : 'thinking';
+    const pack = SPRINT_STAGES[stage] || SPRINT_STAGES[0];
+    const line = pickLine(pack.lines, `${seedBase}-calc-${stage}`);
     return {
-      mood,
-      eyebrow: 'Daily Calculation',
+      mood: pack.mood,
+      eyebrow: stage >= 5 ? 'Sprint — last call' : 'Daily Calculation',
       msg: line.msg,
       sub: line.sub,
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}`,
     };
-  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession]);
+  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   useEffect(() => {
