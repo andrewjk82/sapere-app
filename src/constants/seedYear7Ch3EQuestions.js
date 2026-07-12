@@ -427,29 +427,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute $x = 4$ and evaluate inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 3(x + 2) \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 3 \\times (4 + 2) = 3 \\times 6 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(18\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 18\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 18 \\\\)"
       }
     ],
     "graphData": null,
@@ -471,7 +458,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q3b",
@@ -483,29 +471,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute $x = 4$, multiply first, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 3x + 2 \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 3 \\times 4 + 2 = 12 + 2 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(14\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 14\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 14 \\\\)"
       }
     ],
     "graphData": null,
@@ -527,7 +502,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q3c",
@@ -539,29 +515,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute $x = 4$ and evaluate inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 4(x - 1) \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 4 \\times (4 - 1) = 4 \\times 3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(12\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 12\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 12 \\\\)"
       }
     ],
     "graphData": null,
@@ -583,7 +546,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q3d",
@@ -595,29 +559,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 5 + 3(x - 1) \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 5 + 3 \\times (4 - 1) = 5 + 3 \\times 3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(14\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 14\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 5 + 9 = 14 \\\\)"
       }
     ],
     "graphData": null,
@@ -639,7 +590,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3e-q3e",
@@ -651,29 +603,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 5 + 3(x + 1) \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 5 + 3 \\times (4 + 1) = 5 + 3 \\times 5 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(20\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 20\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 5 + 15 = 20 \\\\)"
       }
     ],
     "graphData": null,
@@ -695,7 +634,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q3f",
@@ -707,29 +647,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(x = 4\\\\) into the algebraic expression wherever the variable \\\\(x\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } (2 + 4x) - 3 \\text{ with } x=4 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( (2 + 4 \\times 4) - 3 = (2 + 16) - 3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(15\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 15\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 18 - 3 = 15 \\\\)"
       }
     ],
     "graphData": null,
@@ -751,7 +678,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4a",
@@ -763,29 +691,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute $y = 5$ and evaluate inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 3(y + 2) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 3 \\times (5 + 2) = 3 \\times 7 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(21\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 21\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 21 \\\\)"
       }
     ],
     "graphData": null,
@@ -807,7 +722,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4b",
@@ -819,29 +735,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate inside the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 4(3y + 2) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 4 \\times (3 \\times 5 + 2) = 4 \\times (15 + 2) \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(68\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 68\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 4 \\times 17 = 68 \\\\)"
       }
     ],
     "graphData": null,
@@ -863,7 +766,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4c",
@@ -875,29 +779,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 5 + 3(y + 4) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 5 + 3 \\times (5 + 4) = 5 + 3 \\times 9 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(32\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 32\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 5 + 27 = 32 \\\\)"
       }
     ],
     "graphData": null,
@@ -919,7 +810,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4d",
@@ -931,29 +823,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 7 + 4(y - 2) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 7 + 4 \\times (5 - 2) = 7 + 4 \\times 3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(19\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 19\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 7 + 12 = 19 \\\\)"
       }
     ],
     "graphData": null,
@@ -975,7 +854,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4e",
@@ -987,29 +867,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 8 + 3(y - 3) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 8 + 3 \\times (5 - 3) = 8 + 3 \\times 2 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(14\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 14\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 8 + 6 = 14 \\\\)"
       }
     ],
     "graphData": null,
@@ -1031,7 +898,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q4f",
@@ -1043,29 +911,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(y = 5\\\\) into the algebraic expression wherever the variable \\\\(y\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 9 + 2(y - 1) \\text{ with } y=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 9 + 2 \\times (5 - 1) = 9 + 2 \\times 4 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(17\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 17\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 9 + 8 = 17 \\\\)"
       }
     ],
     "graphData": null,
@@ -1087,7 +942,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5a",
@@ -1099,29 +955,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute the value of $p$ and evaluate.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } p(4 + 1) \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 8 \\times (4 + 1) = 8 \\times 5 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(40\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 40\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 40 \\\\)"
       }
     ],
     "graphData": null,
@@ -1143,7 +986,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5b",
@@ -1155,29 +999,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Substitute both values and evaluate.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } 5(p - q) \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 5 \\times (8 - 2) = 5 \\times 6 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(30\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 30\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 30 \\\\)"
       }
     ],
     "graphData": null,
@@ -1199,7 +1030,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5c",
@@ -1211,29 +1043,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } 4 + 3(p - q) \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 4 + 3 \\times (8 - 2) = 4 + 3 \\times 6 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(22\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 22\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 4 + 18 = 22 \\\\)"
       }
     ],
     "graphData": null,
@@ -1255,7 +1074,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5d",
@@ -1267,29 +1087,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } 4(p - q) + 5 \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 4 \\times (8 - 2) + 5 = 4 \\times 6 + 5 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(29\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 29\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 24 + 5 = 29 \\\\)"
       }
     ],
     "graphData": null,
@@ -1311,7 +1118,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5e",
@@ -1323,29 +1131,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } q(p - 4) + 2 \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 2 \\times (8 - 4) + 2 = 2 \\times 4 + 2 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(10\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 10\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 8 + 2 = 10 \\\\)"
       }
     ],
     "graphData": null,
@@ -1367,7 +1162,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q5f",
@@ -1379,29 +1175,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the given values of the variables into the algebraic expression. Replace \\\\(p\\\\) with \\\\(8\\\\) and \\\\(q\\\\) with \\\\(2\\\\). This converts the variable expression into a purely numerical calculation.",
+        "workingOut": "\\\\( \\text{Evaluate } 3(2p - 5q) + 4q \\text{ with } p=8, \\; q=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we compute the values inside the brackets first, according to the standard order of operations (BODMAS/PEMDAS). Once the bracketed terms are evaluated, we perform any multiplication or division before handling addition.",
+        "workingOut": "\\\\( 3 \\times (2 \\times 8 - 5 \\times 2) + 4 \\times 2 = 3 \\times (16 - 10) + 8 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(26\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 26\\\\)",
-        "graphData": null
+        "explanation": "Finally, we complete the remaining addition or subtraction to determine the final numerical value. Double-check all calculation steps to ensure no basic arithmetic slips were made.",
+        "workingOut": "\\\\( 3 \\times 6 + 8 = 18 + 8 = 26 \\\\)"
       }
     ],
     "graphData": null,
@@ -1423,7 +1206,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3e-q6a",
@@ -1654,29 +1438,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Square the value of $m$ first, then multiply.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(m = 5\\\\) into the algebraic expression wherever the variable \\\\(m\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 4m^2 \\text{ with } m=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 4 \\times 5^2 = 4 \\times 25 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(100\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 100\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 100 \\\\)"
       }
     ],
     "graphData": null,
@@ -1698,7 +1469,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q7b",
@@ -1710,29 +1482,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Multiply first inside the brackets, then square the result.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(m = 5\\\\) into the algebraic expression wherever the variable \\\\(m\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } (4m)^2 \\text{ with } m=5 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( (4 \\times 5)^2 = 20^2 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(400\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 400\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 400 \\\\)"
       }
     ],
     "graphData": null,
@@ -1754,7 +1513,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q8a",
@@ -1766,29 +1526,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Cube the value of $k$ first, then multiply.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(k = 3\\\\) into the algebraic expression wherever the variable \\\\(k\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 2k^3 \\text{ with } k=3 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 2 \\times 3^3 = 2 \\times 27 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(54\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 54\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 54 \\\\)"
       }
     ],
     "graphData": null,
@@ -1810,7 +1557,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q8b",
@@ -1822,29 +1570,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Multiply first inside the brackets, then cube the result.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(k = 3\\\\) into the algebraic expression wherever the variable \\\\(k\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } (2k)^3 \\text{ with } k=3 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( (2 \\times 3)^3 = 6^3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(216\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 216\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 216 \\\\)"
       }
     ],
     "graphData": null,
@@ -1866,7 +1601,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3e-q9a",
@@ -1878,29 +1614,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Multiply first inside the brackets, then square the result.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(p = 2\\\\) into the algebraic expression wherever the variable \\\\(p\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } (4p)^2 \\text{ with } p=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( (4 \\times 2)^2 = 8^2 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(64\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 64\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 64 \\\\)"
       }
     ],
     "graphData": null,
@@ -1922,7 +1645,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3e-q9b",
@@ -1934,29 +1658,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Evaluate brackets, square, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(p = 2\\\\) into the algebraic expression wherever the variable \\\\(p\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } (5p)^2 + 3 \\text{ with } p=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( (5 \\times 2)^2 + 3 = 10^2 + 3 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(103\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 103\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 100 + 3 = 103 \\\\)"
       }
     ],
     "graphData": null,
@@ -1978,7 +1689,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3e-q9c",
@@ -1990,29 +1702,16 @@ export const Y7_CH3E_QUESTIONS = [
     "hint": "Square the value of $p$ first, multiply, then add.",
     "solutionSteps": [
       {
-        "explanation": "Read the verbal mathematical statement carefully to identify the sequence of operations and any numbers or variables involved in the problem.",
-        "workingOut": "\\\\(\\text{Given Statement} = \\text{Translate verbal description to algebra}\\\\)",
-        "graphData": null
+        "explanation": "We begin by substituting the numerical value of \\\\(p = 2\\\\) into the algebraic expression wherever the variable \\\\(p\\\\) appears. This replaces variables with numbers.",
+        "workingOut": "\\\\( \\text{Evaluate } 3p^2 + 5 \\text{ with } p=2 \\\\)"
       },
       {
-        "explanation": "Identify the order of operations according to mathematical convention (BODMAS). Multiplication naturally takes precedence over addition, so brackets are not required.",
-        "workingOut": "\\\\(\\text{Order} = \\text{Multiplication first, then Addition}\\\\)",
-        "graphData": null
+        "explanation": "Next, we carry out operations inside the brackets first, followed by exponents (powers) and multiplications according to BODMAS/PEMDAS order of operations rules.",
+        "workingOut": "\\\\( 3 \\times 2^2 + 5 = 3 \\times 4 + 5 \\\\)"
       },
       {
-        "explanation": "Translate the multiplication part first. Multiplying the variable by the coefficient is represented by writing the number directly in front of the variable.",
-        "workingOut": "\\\\(\\text{Multiplication part} = \\text{Coefficient } \\times \\text{ Variable}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Add or subtract the constant value to obtain the final simplified algebraic expression.",
-        "workingOut": "\\\\(17\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Verify that the final expression aligns with the standard order of operations and matches the verbal description exactly.",
-        "workingOut": "\\\\(\\text{Final Expression} = 17\\\\)",
-        "graphData": null
+        "explanation": "Finally, we execute any remaining additions or subtractions to find the final simplified answer. Check the calculations to avoid arithmetic errors.",
+        "workingOut": "\\\\( 12 + 5 = 17 \\\\)"
       }
     ],
     "graphData": null,
@@ -2034,7 +1733,8 @@ export const Y7_CH3E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3e-q10a",
