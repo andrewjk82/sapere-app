@@ -636,14 +636,17 @@ function useTypewriter(msg, sub, active, msPerChar = 15) {
   return { msgOut, subOut, done };
 }
 
-function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss }) {
+function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'idle' }) {
   const { msgOut, subOut, done } = useTypewriter(msg, sub, true, 14);
   const fullMsgLen = String(msg || '').length;
   const typingMsg = !done && msgOut.length < fullMsgLen;
   const typingSub = !done && !typingMsg && Boolean(sub);
+  const moodClass = ['idle', 'thinking', 'urgent', 'cheer', 'hint'].includes(mood)
+    ? mood
+    : 'idle';
 
   return (
-    <div className="fb-bubble">
+    <div className={`fb-bubble fb-bubble--${moodClass}`}>
       {eyebrow && <div className="fb-bubble__eyebrow">{eyebrow}</div>}
       <p className="fb-bubble__msg">
         {msgOut}
@@ -1132,6 +1135,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           msg={situation.msg}
           sub={situation.sub}
           cta={situation.cta}
+          mood={situation.mood || mood}
           onCta={() => {
             setActiveTab?.(situation.cta.tab);
             setBubbleOpen(false);
