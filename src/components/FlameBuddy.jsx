@@ -1,13 +1,14 @@
 /**
  * FlameBuddy — floating coach in the bottom-right corner.
  * Visuals ported from flame_character_prototype.html.
- * Speaks nudge lines (former DailyNudge cards) based on unfinished daily work.
+ * Speaks friendly, conversational tips based on daily work + schedule.
  */
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { doc, getDoc } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
 import { getDueCount } from '../utils/secretNote';
+import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import './FlameBuddy.css';
 
 const CALM_UNTIL = 17; // 5 PM local
@@ -15,31 +16,126 @@ const DEADLINE = 24;
 
 const COPY = {
   practice: [
-    { msg: "Let's knock this out — quick and easy today!", sub: "Start now and you'll be done in no time. You've got this! 😊" },
-    { msg: "Time's ticking — shall we get started?", sub: 'Finishing before evening just feels better.' },
-    { msg: "Whoa, it's evening already — let's go! 😟", sub: "Still not done today. The longer you wait, the harder it gets." },
-    { msg: "Hurry — it's almost midnight! 😠", sub: 'Finish before the day ends, or your streak breaks.' },
+    { msg: "Hey — still haven't done today's practice yet?", sub: "It's a quick one. Start now and you'll feel so much better after. 😊" },
+    { msg: "Pssst… your daily practice is waiting for you.", sub: "Afternoon's a great time to knock it out. Want to try?" },
+    { msg: "Okay friend, evening's here and practice is still open…", sub: "Let's do it together? The longer you wait, the harder it feels. 😟" },
+    { msg: "Almost midnight!! We really should finish practice today.", sub: "Come on — one short session so your streak stays alive. 😠" },
   ],
   sprint: [
-    { msg: "Let's clear the sprint too — easy does it!", sub: 'A few quick questions · about 3 minutes.' },
-    { msg: 'Perfect timing for your sprint!', sub: 'Just a few quick questions to go.' },
-    { msg: "Your sprint's still waiting — hurry!", sub: 'Only a few minutes. You can do it right now.' },
-    { msg: "The sprint STILL isn't done! 😤", sub: 'Last chance… solve it right now!' },
+    { msg: "Oh, and the calculation sprint is still open!", sub: "Just a few questions — like three minutes. Easy win." },
+    { msg: "Perfect little window for your calculation sprint.", sub: "Quick questions, done before you know it." },
+    { msg: "Hey — sprint still needs you!", sub: "Only a few minutes. You can squeeze it in right now." },
+    { msg: "Still no sprint today… last chance before the day ends!", sub: "I believe in you — let's finish it now. 😤" },
   ],
   bothDone: [
-    { msg: 'Nice work — both practices done today! 🔥', sub: 'Your flame is proud of you. Rest or explore the Journey Map.' },
+    { msg: "You crushed today's practice — I'm so proud of you! 🔥", sub: "Rest a bit, or poke around the Journey Map if you're curious." },
   ],
   secretNote: [
-    { msg: 'Your Secret Note has review items waiting.', sub: 'A quick review now keeps mistakes from sticking.' },
+    { msg: "Hey, your Secret Note has a few things to review.", sub: "A quick look now means those mistakes won't stick. Want to peek?" },
   ],
   idle: [
-    { msg: "I'm here if you need a nudge!", sub: 'Tap me anytime for a tip.' },
+    { msg: "I'm right here if you need a little nudge!", sub: "Tap me anytime — happy to chat." },
   ],
 };
 
 const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
 const urgencyFor = (hour) => clamp((hour - CALM_UNTIL) / (DEADLINE - CALM_UNTIL), 0, 1);
 const stageIndex = (t) => (t < 0.2 ? 0 : t < 0.5 ? 1 : t < 0.78 ? 2 : 3);
+
+const parseSessionStartMs = (s) => {
+  try {
+    if (!s?.date || !s?.startTime) return 0;
+    const timeMatch = String(s.startTime).match(/(\d+):(\d+)\s*(AM|PM)/i);
+    if (!timeMatch) return new Date(`${s.date}T12:00:00`).getTime();
+    let hours = parseInt(timeMatch[1], 10);
+    const minutes = parseInt(timeMatch[2], 10);
+    const period = timeMatch[3].toUpperCase();
+    if (period === 'PM' && hours !== 12) hours += 12;
+    if (period === 'AM' && hours === 12) hours = 0;
+    const [y, m, d] = s.date.split('-').map(Number);
+    return new Date(y, m - 1, d, hours, minutes).getTime();
+  } catch {
+    return 0;
+  }
+};
+
+/** "today at 3:30 PM" / "tomorrow at …" / "Wed, 22 Jul at …" */
+const friendlyWhen = (dateStr, startTime) => {
+  if (!dateStr) return startTime || 'soon';
+  const time = startTime || '';
+  const todayStr = new Date().toLocaleDateString('en-CA');
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  const tomStr = tomorrow.toLocaleDateString('en-CA');
+  if (dateStr === todayStr) return time ? `today at ${time}` : 'today';
+  if (dateStr === tomStr) return time ? `tomorrow at ${time}` : 'tomorrow';
+  try {
+    const d = new Date(`${dateStr}T12:00:00`);
+    const label = d.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' });
+    return time ? `${label} at ${time}` : label;
+  } catch {
+    return time ? `${dateStr} at ${time}` : dateStr;
+  }
+};
+
+const clipText = (text, max = 100) => {
+  const t = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!t) return '';
+  return t.length > max ? `${t.slice(0, max - 1)}…` : t;
+};
+
+/** Friendly schedule bubble for the next class + homework nudge. */
+const buildScheduleSpeech = (session) => {
+  if (!session) {
+    return {
+      mood: 'idle',
+      eyebrow: 'Schedule',
+      msg: "Hmm, nothing booked on your calendar right now.",
+      sub: "When your tutor adds a class, I'll remind you here — promise!",
+      cta: null,
+      key: 'sched-empty',
+    };
+  }
+
+  const subject = normalizeSubjectLabel(session.subject || 'class');
+  const when = friendlyWhen(session.date, session.startTime);
+  const hw = clipText(session.homework);
+  const hwDone = Boolean(session.isHomeworkCompleted);
+
+  let msg = `Hey! Just a heads-up — you've got ${subject} ${when}.`;
+  let sub = "I'll be rooting for you. Bring any questions you've been stuck on!";
+  let mood = 'hint';
+
+  if (hw && !hwDone) {
+    sub = `Also… don't forget your homework: "${hw}" Want me to keep reminding you? You've got this! 💪`;
+    mood = 'thinking';
+  } else if (hw && hwDone) {
+    sub = "And nice one — homework for that lesson is already ticked off. ✨ You're ahead of the game!";
+    mood = 'cheer';
+  }
+
+  // Class is later today → a bit more urgent energy
+  const todayStr = new Date().toLocaleDateString('en-CA');
+  if (session.date === todayStr && !hwDone) {
+    msg = `Today's the day! ${subject} is ${when.replace(/^today at /, 'at ')}.`;
+    if (hw) {
+      sub = `Before you go, try to finish: "${hw}" — future-you will thank you.`;
+      mood = 'thinking';
+    } else {
+      sub = "Any last questions? Write them down so you don't forget in class.";
+      mood = 'hint';
+    }
+  }
+
+  return {
+    mood,
+    eyebrow: 'Your schedule',
+    msg,
+    sub,
+    cta: null,
+    key: `sched-${session.id || session.date}-${session.startTime || ''}-${hwDone ? 'hw1' : 'hw0'}`,
+  };
+};
 
 function useLocalHour() {
   const [, force] = useState(0);
@@ -155,6 +251,7 @@ function FlameSvg() {
 export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidden = false }) {
   const hour = useLocalHour();
   const [tasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
+  const [nextSession, setNextSession] = useState(null);
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
@@ -234,6 +331,50 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     refreshTasks();
   }, [refreshTasks, activeTab]);
 
+  // Next class + homework (for Schedule-tab coaching). Cached for the day.
+  useEffect(() => {
+    if (!uid) return undefined;
+    let cancelled = false;
+    const cacheKey = `flame-buddy-next-session-v1-${uid}`;
+    const cached = localCache.get(cacheKey);
+    if (cached?.date === today && cached.session !== undefined) {
+      setNextSession(cached.session || null);
+      // Still refresh in background when opening Schedule so homework flags stay fresh.
+      if (activeTab !== 'Schedule') return undefined;
+    }
+
+    (async () => {
+      try {
+        const snap = await getDocs(query(collection(db, 'sessions'), where('studentId', '==', uid)));
+        if (cancelled) return;
+        const now = Date.now();
+        const upcoming = snap.docs
+          .map((d) => ({ id: d.id, ...d.data() }))
+          .filter((s) => parseSessionStartMs(s) > now)
+          .sort((a, b) => parseSessionStartMs(a) - parseSessionStartMs(b));
+        const next = upcoming[0] || null;
+        // Keep only the fields we speak about (small cache payload).
+        const slim = next
+          ? {
+              id: next.id,
+              date: next.date || '',
+              startTime: next.startTime || '',
+              endTime: next.endTime || '',
+              subject: next.subject || '',
+              homework: next.homework || '',
+              isHomeworkCompleted: Boolean(next.isHomeworkCompleted),
+            }
+          : null;
+        setNextSession(slim);
+        localCache.set(cacheKey, { date: today, session: slim });
+      } catch (e) {
+        console.warn('[FlameBuddy] session fetch failed:', e?.code || e);
+      }
+    })();
+
+    return () => { cancelled = true; };
+  }, [uid, today, activeTab]);
+
   // Cheer when daily practice completes.
   useEffect(() => {
     if (!uid) return undefined;
@@ -285,6 +426,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       };
     }
 
+    // On Schedule tab: talk about the next class + homework in a friendly voice.
+    if (activeTab === 'Schedule') {
+      return buildScheduleSpeech(nextSession);
+    }
+
     const needDaily = !tasks.dailyDone;
     const needCalc = calcEnabled && !tasks.calcDone;
 
@@ -294,7 +440,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           mood: 'hint',
           eyebrow: 'Secret Note',
           msg: COPY.secretNote[0].msg,
-          sub: `${dueNotes} item${dueNotes === 1 ? '' : 's'} ready · ${COPY.secretNote[0].sub}`,
+          sub: `${dueNotes} item${dueNotes === 1 ? '' : 's'} · ${COPY.secretNote[0].sub}`,
           cta: { label: 'Review now', tab: 'Challenge' },
           key: `note-${today}-${dueNotes}`,
         };
@@ -333,9 +479,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}`,
     };
-  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today]);
+  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession]);
 
-  // Auto-open bubble when situation key changes (new day / new urgency / complete).
+  // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   useEffect(() => {
     if (!situation?.key) return;
     if (dismissedKey === situation.key) return;
