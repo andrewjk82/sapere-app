@@ -378,29 +378,47 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 </div>
               </div>
             </div>
-            {/* Right stack: flex children fill the same height as the vision card (bottoms align). */}
-            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0, height: isMobile ? 'auto' : '100%', minHeight: isMobile ? 0 : 560, alignSelf: 'stretch', boxSizing: 'border-box' }}>
+            {/* Right stack: 3 equal-height cards (1fr each) matching vision card height. */}
+            <div
+              style={{
+                gridColumn: isMobile ? 'span 1' : 'span 5',
+                display: isMobile ? 'flex' : 'grid',
+                flexDirection: isMobile ? 'column' : undefined,
+                // Three main cards always get equal 1fr rows. Medal shelf (if any) sits between
+                // Journey Map and Next Lesson as an auto-height row.
+                gridTemplateRows: isMobile
+                  ? undefined
+                  : (profile?.calcAutoMode === true ? '1fr auto 1fr 1fr' : '1fr 1fr 1fr'),
+                gap: isMobile ? '16px' : '20px',
+                padding: 0,
+                height: isMobile ? 'auto' : '100%',
+                minHeight: isMobile ? 0 : 560,
+                alignSelf: 'stretch',
+                boxSizing: 'border-box',
+              }}
+            >
               {/* Journey Map snapshot */}
-              <JourneyMapSnapshot
-                profile={profile}
-                onClick={onOpenJourneyMap}
-                fill
-              />
-              {/* Daily Calculation 메달 진열장 (Auto Mode) — fixed size, doesn't steal flex from the trio */}
+              <div style={isMobile ? { flex: '0 0 auto', height: 156 } : { minHeight: 0, height: '100%' }}>
+                <JourneyMapSnapshot
+                  profile={profile}
+                  onClick={onOpenJourneyMap}
+                  fill={!isMobile}
+                />
+              </div>
+              {/* Daily Calculation 메달 진열장 (Auto Mode) */}
               {profile?.calcAutoMode === true && (
-                <div style={{ flex: '0 0 auto' }}>
+                <div style={{ minHeight: 0 }}>
                   <MedalShelf uid={user?.uid} />
                 </div>
               )}
-              {/* Next Lesson — shares remaining height equally with Journey Map + Daily Practice */}
+              {/* Next Lesson */}
               <div
                 data-press
                 {...liftHover}
                 onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
                 style={{
-                  flex: isMobile ? '0 0 auto' : '1 1 0',
-                  minHeight: isMobile ? 156 : 120,
-                  height: isMobile ? 156 : undefined,
+                  minHeight: isMobile ? 156 : 0,
+                  height: isMobile ? 156 : '100%',
                   boxSizing: 'border-box',
                   background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
                   borderRadius: '28px',
@@ -431,9 +449,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 {...liftHover}
                 onClick={() => setActiveTab?.('Challenge')}
                 style={{
-                  flex: isMobile ? '0 0 auto' : '1 1 0',
-                  minHeight: isMobile ? 156 : 120,
-                  height: isMobile ? 156 : undefined,
+                  minHeight: isMobile ? 156 : 0,
+                  height: isMobile ? 156 : '100%',
                   boxSizing: 'border-box',
                   background: 'white',
                   borderRadius: '28px',

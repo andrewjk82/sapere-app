@@ -200,8 +200,7 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
   const firstName = name.split(' ')[0];
   const title = firstName ? `${firstName}'s Journey Map` : 'My Journey Map';
 
-  // When fill=true (Dashboard side column), share height with Next Lesson +
-  // Daily Practice so bottoms line up with the vision card.
+  // When fill=true, fill the parent grid/flex cell (equal height with siblings).
   return (
     <div
       onClick={onClick}
@@ -214,10 +213,10 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
         boxShadow: '0 15px 40px rgba(99,102,241,0.2)',
         border: '1px solid rgba(129,140,248,0.2)',
         transition: 'transform 0.2s, box-shadow 0.2s',
+        width: '100%',
         height: fill ? '100%' : 156,
-        minHeight: fill ? 120 : 156,
+        minHeight: fill ? 0 : 156,
         maxHeight: fill ? 'none' : 156,
-        flex: fill ? '1 1 0' : '0 0 auto',
         boxSizing: 'border-box',
       }}
       onMouseEnter={e => {
