@@ -592,7 +592,11 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
   await ensurePracticePool(uid, studentProfile, membershipVersion);
 
   // 2. 풀에서 균등+약점 보충 알고리즘으로 ID 선택 (1 read)
-  const { selectedIds, chapterBreakdown } = await selectDailyQuestions(uid, questionCount);
+  // ── [TRAFFIC FIX] oversample by +5 upfront so filtering losses (isActive:false,
+  // no options for primary) are already covered — removes the old 3-round backfill
+  // loop that caused up to 3 extra selectDailyQuestions + fetchQuestionsByIds calls.
+  const oversampleCount = questionCount + 5;
+  const { selectedIds, chapterBreakdown } = await selectDailyQuestions(uid, oversampleCount);
 
   // 3. 선택된 ID로 실제 문제 내용 fetch (~2 reads)
   const rawDocs = selectedIds.length ? await fetchQuestionsByIds(selectedIds) : [];
@@ -611,41 +615,14 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
   // be filtered out with no generator left to replace them.
   const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 5);
 
+  // Slice to exactly questionCount after filtering — the +5 oversample ensures
+  // we almost always have enough even after isActive/options filtering.
   let questions = rawDocs
     .filter((d) => d.isActive !== false)
     .filter((d) => !isPrimaryStudent || (Array.isArray(d.options) && d.options.length >= 2))
     .map(slimQuestion)
-    .map(correctQuestionAnswer);
-
-  // ── Backfill: if filtering removed questions (missing docs, isActive:false,
-  // no options for primary), request additional IDs from the pool so the student
-  // still receives exactly `questionCount` questions. Up to 3 retry rounds to
-  // avoid infinite loops when the pool itself is smaller than questionCount.
-  const usedIdSet = new Set(selectedIds.map(String));
-  for (let backfillRound = 0; backfillRound < 3 && questions.length < questionCount; backfillRound++) {
-    const shortfall = questionCount - questions.length;
-    // Ask the pool for extra IDs (request more than needed to account for further filtering).
-    const { selectedIds: extraIds } = await selectDailyQuestions(uid, shortfall + 5);
-    const newIds = extraIds.filter((id) => !usedIdSet.has(String(id)));
-    if (newIds.length === 0) break; // pool exhausted — nothing more to try
-    newIds.forEach((id) => usedIdSet.add(String(id)));
-    const extraDocs = await fetchQuestionsByIds(newIds);
-    const extraQs = extraDocs
-      .filter((d) => d.isActive !== false)
-      .filter((d) => !isPrimaryStudent || (Array.isArray(d.options) && d.options.length >= 2))
-      .map(slimQuestion)
-      .map(correctQuestionAnswer)
-      .filter((q) => !usedIdSet.has('_used_' + String(q.id)));
-    // Deduplicate against already-selected questions
-    const existingQIds = new Set(questions.map((q) => String(q.id)));
-    for (const eq of extraQs) {
-      if (questions.length >= questionCount) break;
-      if (!existingQIds.has(String(eq.id))) {
-        questions.push(eq);
-        existingQIds.add(String(eq.id));
-      }
-    }
-  }
+    .map(correctQuestionAnswer)
+    .slice(0, questionCount);
 
   // question_index 미구축으로 practicePool이 0개를 반환한 경우 legacy 경로로 폴백.
   if (questions.length === 0) {
@@ -737,6 +714,7 @@ export const createDailyAssignment = async ({
     requestedQuestionCount: resolvedQuestionCount,
     curriculumSignature: getCurriculumSignature(studentProfile),
     questionsVersion,
+    membershipVersion,       // ← persisted so stale-check can compare correctly
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
@@ -806,12 +784,17 @@ export const fetchOrCreateDailyAssignment = async ({
   const cacheKey = getDailyAssignmentCacheKey(uid, dateKey);
   const cached = localCache.get(cacheKey);
 
-  // Fetch the latest question-bank version so we can detect edits.
+  // Fetch the latest question-bank versions so we can detect structural changes.
+  // membershipVersion bumps only on question add/delete (pool must rebuild).
+  // contentVersion bumps on content edits (solutionSteps, LaTeX etc.) — does NOT
+  // trigger assignment regeneration, so editing questions doesn't cost every student a re-gen.
   const [assignmentSnap, syncMetaSnap] = await Promise.all([
     getDoc(doc(db, "users", uid, "daily_assignments", dateKey)),
     getDoc(doc(db, "sync_meta", "questions")),
   ]);
-  const latestQuestionsVersion = syncMetaSnap.exists() ? (syncMetaSnap.data().version || 0) : 0;
+  const syncData = syncMetaSnap.exists() ? syncMetaSnap.data() : {};
+  // membershipVersion: tracks add/delete only. Falls back to version for backwards compatibility.
+  const latestMembershipVersion = syncData.membershipVersion ?? syncData.version ?? 0;
 
   if (assignmentSnap.exists()) {
     const assignment = { id: assignmentSnap.id, ...assignmentSnap.data() };
@@ -820,13 +803,13 @@ export const fetchOrCreateDailyAssignment = async ({
     const signatureMatches = assignment.curriculumSignature === expectedSignature;
     // Never overwrite a started or completed assignment.
     const isLocked = assignment.status === "started" || assignment.status === "completed";
-    // For open assignments: also regenerate if questions were edited after this
-    // assignment was generated (e.g. teacher changed type from fill_blank → MC).
-    const questionsStale = !isLocked
-      && latestQuestionsVersion > 0
-      && latestQuestionsVersion > (assignment.questionsVersion || 0);
+    // Only regenerate if the SET of available questions changed (add/delete),
+    // NOT when question content (solutionSteps, LaTeX) was edited.
+    const membershipStale = !isLocked
+      && latestMembershipVersion > 0
+      && latestMembershipVersion > (assignment.membershipVersion || assignment.questionsVersion || 0);
 
-    if (isLocked || (hasQuestions && countMatches && signatureMatches && !questionsStale)) {
+    if (isLocked || (hasQuestions && countMatches && signatureMatches && !membershipStale)) {
       const value = { ...assignment, savedAt: Date.now() };
       localCache.set(cacheKey, value);
       return value;

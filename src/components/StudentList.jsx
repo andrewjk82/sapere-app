@@ -24,9 +24,13 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
 
   const handleResetAllXP = async () => {
     if (!confirm('⚠️ Reset ALL students\' XP to 0?\n\nThis cannot be undone. Are you absolutely sure?')) return;
-    if (!confirm('Final confirmation: this will set every student\'s totalXP to 0 on both the student doc and the leaderboard.')) return;
+    if (!confirm('Final confirmation: this will set every student\'s totalXP to 0 on both the student doc and the leaderboard.\n\nSecret Note questions saved before this reset will no longer award XP.')) return;
     setIsResettingAllXP(true);
     try {
+      // Cutoff: Secret Notes added at-or-before this timestamp no longer award XP
+      // (students can still review them — they just don't farm free points after a season reset).
+      const secretNoteXpCutoff = Date.now();
+
       // Process in batches of 500 (Firestore writeBatch limit)
       const resetCollection = async (colId) => {
         const snap = await getDocs(collection(db, colId));
@@ -34,7 +38,11 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
         let batch = writeBatch(db);
         let count = 0;
         snap.forEach((d) => {
-          batch.set(doc(db, colId, d.id), { totalXP: 0, challengesCompleted: 0 }, { merge: true });
+          batch.set(
+            doc(db, colId, d.id),
+            { totalXP: 0, challengesCompleted: 0, secretNoteXpCutoff },
+            { merge: true },
+          );
           count++;
           if (count === 499) { chunks.push(batch); batch = writeBatch(db); count = 0; }
         });
@@ -55,7 +63,19 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       });
       if (count > 0) chunks.push(batch);
       await Promise.all(chunks.map(b => b.commit()));
-      alert('✅ All students\' XP has been reset to 0.');
+
+      // Global stamp so any client can fall back if a user doc is stale/missing the field.
+      await setDoc(
+        doc(db, 'system_config', 'xpReset'),
+        {
+          secretNoteXpCutoff,
+          resetAt: new Date().toISOString(),
+          note: 'Bulk XP reset — Secret Notes with addedAt <= cutoff do not award XP',
+        },
+        { merge: true },
+      );
+
+      alert('✅ All students\' XP has been reset to 0.\n\nPre-reset Secret Notes will no longer award XP.');
       onRefreshStudents?.();
     } catch (err) {
       alert('Failed to reset XP: ' + err.message);

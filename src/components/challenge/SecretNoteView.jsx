@@ -347,7 +347,7 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
 );
 
 // ── Main component ─────────────────────────────────────────────────────────
-const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => {
+const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose, isMobile }) => {
   const accent = kind === 'calc'
     ? { from: '#fbbf24', to: '#f59e0b', soft: '#fef3c7', text: '#b45309' }
     : { from: '#a78bfa', to: '#8b5cf6', soft: '#ede9fe', text: '#6d28d9' };
@@ -436,6 +436,31 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
   // ── Actions ──────────────────────────────────────────────────────────────
   // Reward effort: +1 XP for each Secret Note question solved correctly.
   // Exam Prep Secret Note does NOT award XP (review-only mode).
+  //
+  // After a season / bulk XP reset, notes that were already in the notebook
+  // must not farm free points. Cutoff sources (highest wins):
+  //   1. users/{uid}.secretNoteXpCutoff  — stamped by "Reset All XP"
+  //   2. users/{uid}.secretNoteResets.resetAt — per-student notebook reset
+  //   3. system_config/xpReset.secretNoteXpCutoff — global fallback
+  const [globalXpCutoff, setGlobalXpCutoff] = useState(0);
+  useEffect(() => {
+    let cancelled = false;
+    getDoc(doc(db, 'system_config', 'xpReset'))
+      .then((snap) => {
+        if (cancelled || !snap.exists()) return;
+        const n = Number(snap.data()?.secretNoteXpCutoff) || 0;
+        if (n > 0) setGlobalXpCutoff(n);
+      })
+      .catch(() => { /* non-fatal */ });
+    return () => { cancelled = true; };
+  }, []);
+
+  const secretNoteXpCutoff = Math.max(
+    Number(studentProfile?.secretNoteXpCutoff) || 0,
+    Number(studentProfile?.secretNoteResets?.resetAt) || 0,
+    globalXpCutoff || 0,
+  );
+
   const awardXp = (amount) => {
     if (!uid || !amount || kind === 'exam_prep') return;
     try {
@@ -459,11 +484,19 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
     const correct = answersMatch(val, prep.correctText);
     const status = recordResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
+    let xpAwarded = 0;
     if (correct) {
-      awardXp(XP_PER_QUESTION);
-      setSummary((s) => ({ ...s, xp: s.xp + XP_PER_QUESTION }));
+      // Notes saved at-or-before the last XP reset are review-only (no XP).
+      // Missing addedAt is treated as pre-cutoff (safe default after a reset).
+      const addedAt = item?.addedAt || 0;
+      const eligible = kind !== 'exam_prep' && addedAt > secretNoteXpCutoff;
+      if (eligible) {
+        xpAwarded = XP_PER_QUESTION;
+        awardXp(XP_PER_QUESTION);
+        setSummary((s) => ({ ...s, xp: s.xp + XP_PER_QUESTION }));
+      }
     }
-    setGraded({ correct, status });
+    setGraded({ correct, status, xpAwarded });
     setPhase('feedback');
   };
 
@@ -822,8 +855,19 @@ const SecretNoteView = ({ kind, uid, user, studentName, onClose, isMobile }) => 
                   {feedbackCorrect
                     ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
                     : <XCircle size={20} style={{ color: '#ef4444' }} />}
-                  <span>{feedbackCorrect ? 'Correct!' : 'Not quite'}</span>
+                  <span>
+                    {feedbackCorrect
+                      ? (phase === 'feedback' && graded?.xpAwarded > 0
+                        ? `Correct! +${graded.xpAwarded} XP`
+                        : 'Correct!')
+                      : 'Not quite'}
+                  </span>
                 </div>
+                {feedbackCorrect && phase === 'feedback' && kind !== 'exam_prep' && !(graded?.xpAwarded > 0) && (
+                  <div className="sn__fb-answer" style={{ color: '#64748b', fontWeight: 600 }}>
+                    Review only — this note was saved before the XP reset, so no XP this time.
+                  </div>
+                )}
                 {!feedbackCorrect && (
                   <div className="sn__fb-answer">
                     Correct answer: <MathView content={activePrep.correctText} style={{ display: 'inline', fontWeight: 800 }} />
