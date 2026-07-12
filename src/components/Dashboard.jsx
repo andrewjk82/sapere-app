@@ -22,7 +22,6 @@ import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
-import { DailyNudgeCards } from './DailyNudgeCard';
 import MedalShelf from './MedalShelf';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
@@ -54,39 +53,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [importDone, setImportDone] = useState(false);
   const [isSeedingLeaderboard, setIsSeedingLeaderboard] = useState(false);
   const [isRefreshing, setIsRefreshing] = useState(false);
-  // Today's challenge completion — drives the "do your daily!" nudge cards.
-  const [todayTasks, setTodayTasks] = useState(null); // { dailyDone, calcDone }
-
-  // ── Today's daily/calc completion (direct doc reads — no scans) ──
-  useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
-    const today = new Date().toLocaleDateString('en-CA');
-    const cacheKey = `daily-nudge-${user.uid}`;
-    const calcEnabled = profile?.calculationEnabled !== false;
-    const cached = localCache.get(cacheKey);
-    // "Done" never un-happens within a day, so a fully-done cache skips the reads.
-    if (cached?.date === today && cached.dailyDone && (cached.calcDone || !calcEnabled)) {
-      setTodayTasks({ dailyDone: true, calcDone: true });
-      return undefined;
-    }
-    let cancelled = false;
-    (async () => {
-      try {
-        const [dailySnap, calcSnap] = await Promise.all([
-          getDoc(doc(db, 'users', user.uid, 'daily_stats', today)),
-          calcEnabled ? getDoc(doc(db, 'users', user.uid, 'calc_stats', today)) : Promise.resolve(null),
-        ]);
-        if (cancelled) return;
-        const dailyDone = dailySnap.exists() && dailySnap.data().completed === true;
-        const calcDone = !calcEnabled || (calcSnap?.exists() && calcSnap.data().completed === true);
-        setTodayTasks({ dailyDone, calcDone });
-        localCache.set(cacheKey, { date: today, dailyDone, calcDone });
-      } catch (e) {
-        console.warn('daily nudge status fetch failed:', e?.code || e);
-      }
-    })();
-    return () => { cancelled = true; };
-  }, [user?.uid, isAdmin, profile?.calculationEnabled]);
 
   // Fetch student daily stats for insights. Stat docs are heavy (full question
   // arrays) and insights only change when a new challenge is submitted, so
@@ -307,22 +273,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               </div>
             </div>
             <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0 }}>
-              {/* Daily challenge nudge — sits between the greeting and the
-                  Journey Map. Calm pastel-green before 5 PM, escalating toward
-                  urgent red on the mascot as midnight nears. Finished tasks
-                  drop out; both done → nothing renders. */}
-              {todayTasks && (
-                <DailyNudgeCards
-                  tasks={[
-                    { id: 'challenge', label: 'Daily Practice', kind: 'practice', done: todayTasks.dailyDone },
-                    ...(profile?.calculationEnabled !== false
-                      ? [{ id: 'sprint', label: 'Daily Calculation', kind: 'sprint', done: todayTasks.calcDone }]
-                      : []),
-                  ]}
-                  onOpen={() => setActiveTab('Challenge')}
-                  style={{ gridTemplateColumns: '1fr', gap: isMobile ? '16px' : '20px' }}
-                />
-              )}
               {/* Journey Map snapshot */}
               <JourneyMapSnapshot
                 profile={profile}
