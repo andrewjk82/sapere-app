@@ -10,8 +10,11 @@ import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } from 'firebase/firestore';
 
-// XP awarded for each Secret Note question solved correctly.
-const XP_PER_QUESTION = 1;
+// Secret Note is review-only for leaderboard fairness.
+// Daily Practice / Calculation are the only XP sources after the season reset.
+// (Previously +1 XP per correct note farmed 60–80+ XP and inflated the board.)
+const SECRET_NOTE_AWARDS_XP = false;
+const XP_PER_QUESTION = 0;
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 
 const SN_QUICK_INSERTS = [
@@ -434,35 +437,11 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const isFeedback = phase === 'feedback' || phase === 'twinFeedback';
 
   // ── Actions ──────────────────────────────────────────────────────────────
-  // Reward effort: +1 XP for each Secret Note question solved correctly.
-  // Exam Prep Secret Note does NOT award XP (review-only mode).
-  //
-  // After a season / bulk XP reset, notes that were already in the notebook
-  // must not farm free points. Cutoff sources (highest wins):
-  //   1. users/{uid}.secretNoteXpCutoff  — stamped by "Reset All XP"
-  //   2. users/{uid}.secretNoteResets.resetAt — per-student notebook reset
-  //   3. system_config/xpReset.secretNoteXpCutoff — global fallback
-  const [globalXpCutoff, setGlobalXpCutoff] = useState(0);
-  useEffect(() => {
-    let cancelled = false;
-    getDoc(doc(db, 'system_config', 'xpReset'))
-      .then((snap) => {
-        if (cancelled || !snap.exists()) return;
-        const n = Number(snap.data()?.secretNoteXpCutoff) || 0;
-        if (n > 0) setGlobalXpCutoff(n);
-      })
-      .catch(() => { /* non-fatal */ });
-    return () => { cancelled = true; };
-  }, []);
-
-  const secretNoteXpCutoff = Math.max(
-    Number(studentProfile?.secretNoteXpCutoff) || 0,
-    Number(studentProfile?.secretNoteResets?.resetAt) || 0,
-    globalXpCutoff || 0,
-  );
-
+  // Secret Note is review-only — no XP. Leaderboard XP comes only from Daily
+  // Practice / Calculation. SECRET_NOTE_AWARDS_XP stays false unless product
+  // deliberately re-enables a capped reward later.
   const awardXp = (amount) => {
-    if (!uid || !amount || kind === 'exam_prep') return;
+    if (!SECRET_NOTE_AWARDS_XP || !uid || !amount || kind === 'exam_prep') return;
     try {
       setDoc(
         doc(db, 'users', uid),
@@ -485,16 +464,10 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     const status = recordResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
     let xpAwarded = 0;
-    if (correct) {
-      // Notes saved at-or-before the last XP reset are review-only (no XP).
-      // Missing addedAt is treated as pre-cutoff (safe default after a reset).
-      const addedAt = item?.addedAt || 0;
-      const eligible = kind !== 'exam_prep' && addedAt > secretNoteXpCutoff;
-      if (eligible) {
-        xpAwarded = XP_PER_QUESTION;
-        awardXp(XP_PER_QUESTION);
-        setSummary((s) => ({ ...s, xp: s.xp + XP_PER_QUESTION }));
-      }
+    if (SECRET_NOTE_AWARDS_XP && correct && kind !== 'exam_prep' && XP_PER_QUESTION > 0) {
+      xpAwarded = XP_PER_QUESTION;
+      awardXp(XP_PER_QUESTION);
+      setSummary((s) => ({ ...s, xp: s.xp + XP_PER_QUESTION }));
     }
     setGraded({ correct, status, xpAwarded });
     setPhase('feedback');
@@ -698,7 +671,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
               <div className="sn__done-num" style={{ color: accent.text }}>{summary.kept}</div>
               <div className="sn__done-lbl">Still practising</div>
             </div>
-            {kind !== 'exam_prep' && (
+            {SECRET_NOTE_AWARDS_XP && kind !== 'exam_prep' && (
               <div className="sn__done-stat">
                 <div className="sn__done-num" style={{ color: '#8b5cf6' }}>+{summary.xp}</div>
                 <div className="sn__done-lbl">XP earned</div>
@@ -707,7 +680,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           </div>
           <p className="sn__muted">
             Graduated questions left your notebook. The rest will come back on
-            their next review day.
+            their next review day. Secret Note is review-only — XP comes from Daily Practice.
           </p>
           <button className="sn__btn sn__btn--primary" style={{ background: headerGradient }} onClick={onClose}>
             Done <ArrowRight size={16} />
@@ -865,7 +838,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                 </div>
                 {feedbackCorrect && phase === 'feedback' && kind !== 'exam_prep' && !(graded?.xpAwarded > 0) && (
                   <div className="sn__fb-answer" style={{ color: '#64748b', fontWeight: 600 }}>
-                    Review only — this note was saved before the XP reset, so no XP this time.
+                    Review only — Secret Note does not award XP. Keep practising Daily Challenge for points.
                   </div>
                 )}
                 {!feedbackCorrect && (
