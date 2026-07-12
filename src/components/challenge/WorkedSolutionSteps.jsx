@@ -12,7 +12,7 @@ import { parseSolutionSteps } from '../../utils/solutionSteps';
 // chip ("Step 1") followed by its body. A "Next step" pill reveals the
 // next; when all steps are revealed the pill turns into a completed
 // badge. New steps fade + slide in with a small spring.
-const WorkedSolutionSteps = ({ question, graphData }) => {
+const WorkedSolutionSteps = ({ question, graphData, compact = false }) => {
   const steps = useMemo(() => parseSolutionSteps(question), [question]);
   // steps is now an array of { explanation, workingOut }
   const [revealed, setRevealed] = useState(1);
@@ -39,54 +39,78 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
     return () => window.clearTimeout(timer);
   }, [revealed]);
 
+  // Reset reveal when the question changes (e.g. next sub-part in grading).
+  useEffect(() => {
+    setRevealed(1);
+  }, [question?.id, question?.question, question?.text, question?.answer]);
+
   if (!steps || steps.length === 0) return null;
 
   const totalSteps = steps.length;
   const visibleSteps = steps.slice(0, Math.min(revealed, totalSteps));
   const allRevealed = revealed >= totalSteps;
   const hasMultipleSteps = totalSteps > 1;
-  // Treat a one-block "full solution" as Step 1 of 1 so every question uses
-  // the same stable card + internal scroll layout across Safari/PWA/iPadOS.
-  const scrollSteps = true;
+  // Full review page: tall scrollable card. Embedded (grading queue / sub-parts):
+  // auto-height so text can breathe in a narrow column.
+  const scrollSteps = !compact;
+
+  const shell = compact
+    ? {
+        padding: '14px 14px 12px',
+        borderRadius: '16px',
+        height: 'auto',
+        minHeight: 0,
+        maxHeight: 'none',
+        boxShadow: '0 6px 16px rgba(124, 58, 237, 0.06)',
+      }
+    : {
+        padding: '30px 32px',
+        borderRadius: '24px',
+        height: '64vh',
+        minHeight: '420px',
+        maxHeight: '760px',
+        boxShadow: '0 14px 32px rgba(124, 58, 237, 0.08)',
+      };
+
+  const stepPad = compact ? '12px 12px 12px 14px' : '22px 24px';
+  const numSize = compact ? 28 : 44;
+  const bodyFs = compact ? '0.95rem' : '1.12rem';
+  const workFs = compact ? '0.92rem' : '1.06rem';
+  const stepGap = compact ? '10px' : '16px';
 
   return (
     <div
       style={{
-        padding: '30px 32px',
-        borderRadius: '24px',
+        ...shell,
         background: '#fff',
         border: '1px solid rgba(124, 58, 237, 0.14)',
-        boxShadow: '0 14px 32px rgba(124, 58, 237, 0.08)',
         position: 'relative',
         overflow: 'hidden',
         display: 'flex',
         flexDirection: 'column',
-        height: '64vh',
-        minHeight: '420px',
-        maxHeight: '760px',
       }}
     >
       {/* Top accent stripe */}
       <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%)' }} />
 
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '18px', gap: '12px', flexShrink: 0 }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%)', color: '#7c3aed', display: 'grid', placeItems: 'center' }}>
-            <Sparkles size={18} />
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: compact ? '10px' : '18px', gap: '10px', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: compact ? '8px' : '10px' }}>
+          <div style={{ width: compact ? '28px' : '36px', height: compact ? '28px' : '36px', borderRadius: compact ? '9px' : '12px', background: 'linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%)', color: '#7c3aed', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
+            <Sparkles size={compact ? 14 : 18} />
           </div>
           <div>
-            <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed' }}>
+            <div style={{ fontSize: compact ? '0.62rem' : '0.68rem', fontWeight: 900, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed' }}>
               Worked solution
             </div>
-            <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#64748b', marginTop: '2px' }}>
+            <div style={{ fontSize: compact ? '0.72rem' : '0.78rem', fontWeight: 700, color: '#64748b', marginTop: '2px' }}>
               Step {Math.min(revealed, totalSteps)} of {totalSteps}
             </div>
           </div>
         </div>
 
         {allRevealed && (
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '999px', background: '#dcfce7', color: '#166534', fontWeight: 800, fontSize: '0.72rem', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
-            <CheckCircle2 size={14} /> Complete
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '5px 10px', borderRadius: '999px', background: '#dcfce7', color: '#166534', fontWeight: 800, fontSize: '0.68rem', letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+            <CheckCircle2 size={13} /> Complete
           </div>
         )}
       </div>
@@ -97,19 +121,19 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '18px',
+          gap: compact ? '10px' : '18px',
           flex: scrollSteps ? '1 1 auto' : '0 0 auto',
           minHeight: scrollSteps ? 0 : 'auto',
           overflowY: scrollSteps ? 'auto' : 'visible',
           overscrollBehaviorY: scrollSteps ? 'contain' : 'auto',
           touchAction: scrollSteps ? 'pan-y' : 'auto',
           WebkitOverflowScrolling: scrollSteps ? 'touch' : 'auto',
-          paddingRight: '6px',
-          marginRight: '-6px',
-          scrollbarGutter: 'stable',
+          paddingRight: scrollSteps ? '6px' : 0,
+          marginRight: scrollSteps ? '-6px' : 0,
+          scrollbarGutter: scrollSteps ? 'stable' : 'auto',
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: compact ? '10px' : '18px' }}>
           <AnimatePresence initial={false}>
             {visibleSteps.map((step, i) => (
               <motion.div
@@ -119,59 +143,83 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
                 transition={{ type: 'spring', stiffness: 280, damping: 24, delay: i === revealed - 1 ? 0.05 : 0 }}
                 style={{
                   display: 'flex',
-                  gap: '16px',
-                  padding: '22px 24px',
-                  borderRadius: '16px',
+                  gap: stepGap,
+                  padding: stepPad,
+                  borderRadius: compact ? '12px' : '16px',
                   background: '#faf5ff',
                   border: '1px solid #ede9fe',
                   position: 'relative',
+                  alignItems: 'flex-start',
                 }}
               >
                 {/* Left purple accent bar */}
                 <div style={{ position: 'absolute', left: 0, top: '12%', bottom: '12%', width: '3px', borderRadius: '3px', background: 'linear-gradient(180deg, #a78bfa 0%, #7c3aed 100%)' }} />
 
                 <div style={{
-                  flex: '0 0 44px',
-                  height: '44px',
+                  flex: `0 0 ${numSize}px`,
+                  width: numSize,
+                  height: numSize,
                   borderRadius: '50%',
                   background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
                   color: '#fff',
                   display: 'grid',
                   placeItems: 'center',
                   fontWeight: 900,
-                  fontSize: '1.08rem',
+                  fontSize: compact ? '0.85rem' : '1.08rem',
                   boxShadow: '0 6px 14px rgba(124,58,237,0.28)',
-                  marginLeft: '6px',
+                  marginLeft: compact ? '2px' : '6px',
                   flexShrink: 0,
                 }}>
                   {i + 1}
                 </div>
 
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ fontSize: '0.76rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: '8px' }}>
+                <div style={{ flex: '1 1 auto', minWidth: 0, overflowWrap: 'anywhere', wordBreak: 'break-word' }}>
+                  <div style={{ fontSize: compact ? '0.68rem' : '0.76rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', marginBottom: compact ? '6px' : '8px' }}>
                     Step {i + 1}
                   </div>
                   {step.explanation && (
-                    <MathView
-                      content={step.explanation}
-                      graphData={step.graphData || (i === totalSteps - 1 ? graphData : undefined)}
-                      style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.12rem', lineHeight: 1.75 }}
-                    />
+                    <div style={{ width: '100%', minWidth: 0 }}>
+                      <MathView
+                        content={step.explanation}
+                        graphData={step.graphData || (i === totalSteps - 1 ? graphData : undefined)}
+                        style={{
+                          color: '#1e1b4b',
+                          fontWeight: 500,
+                          fontSize: bodyFs,
+                          lineHeight: 1.65,
+                          display: 'block',
+                          width: '100%',
+                          maxWidth: '100%',
+                          overflowWrap: 'anywhere',
+                          wordBreak: 'break-word',
+                        }}
+                      />
+                    </div>
                   )}
                   {step.workingOut && (
                     <div style={{
-                      marginTop: '14px',
-                      padding: '16px 18px',
+                      marginTop: compact ? '10px' : '14px',
+                      padding: compact ? '10px 12px' : '16px 18px',
                       borderRadius: '12px',
                       background: '#fff',
                       border: '1px solid #ddd6fe',
+                      width: '100%',
+                      boxSizing: 'border-box',
                     }}>
-                      <div style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '6px' }}>
+                      <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#a78bfa', marginBottom: '6px' }}>
                         Working Out
                       </div>
                       <MathView
                         content={step.workingOut}
-                        style={{ color: '#4c1d95', fontWeight: 500, fontSize: '1.06rem', lineHeight: 1.75 }}
+                        style={{
+                          color: '#4c1d95',
+                          fontWeight: 500,
+                          fontSize: workFs,
+                          lineHeight: 1.65,
+                          display: 'block',
+                          width: '100%',
+                          overflowWrap: 'anywhere',
+                        }}
                       />
                     </div>
                   )}
@@ -197,20 +245,20 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
               setRevealed((r) => Math.min(totalSteps, r + 1));
             }}
             style={{
-              marginTop: '18px',
+              marginTop: compact ? '10px' : '18px',
               width: '100%',
-              padding: '14px 22px',
-              borderRadius: '16px',
+              padding: compact ? '11px 16px' : '14px 22px',
+              borderRadius: compact ? '12px' : '16px',
               background: 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)',
               color: '#fff',
               border: 'none',
               cursor: 'pointer',
               fontWeight: 800,
-              fontSize: '0.95rem',
+              fontSize: compact ? '0.85rem' : '0.95rem',
               display: 'inline-flex',
               alignItems: 'center',
               justifyContent: 'center',
-              gap: '10px',
+              gap: '8px',
               boxShadow: '0 12px 24px rgba(124,58,237,0.28)',
               letterSpacing: '0.02em',
               transition: 'transform 0.15s ease',
@@ -219,7 +267,7 @@ const WorkedSolutionSteps = ({ question, graphData }) => {
             onMouseUp={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
             onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
           >
-            Next step <ChevronDown size={18} strokeWidth={2.5} />
+            Next step <ChevronDown size={compact ? 16 : 18} strokeWidth={2.5} />
           </button>
         )}
       </div>

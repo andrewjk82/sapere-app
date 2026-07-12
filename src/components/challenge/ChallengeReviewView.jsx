@@ -492,11 +492,11 @@ const ChallengeReviewView = ({
           {q.subQuestions?.length > 0 ? (
             q.subQuestions.map((sq, sqIdx) => (
               (sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
-                <div key={sqIdx}>
-                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>
+                <div key={sqIdx} style={{ borderRadius: '18px', border: '1px solid #ede9fe', background: '#faf5ff', padding: '14px 14px 12px' }}>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '10px' }}>
                     Part ({String.fromCharCode(97 + sqIdx)}) — Worked Solution
                   </div>
-                  <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
+                  <WorkedSolutionSteps question={sq} graphData={sq.graphData} compact />
                 </div>
               )
             ))

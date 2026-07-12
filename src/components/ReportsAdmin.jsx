@@ -33,6 +33,41 @@ import TrafficMonitorPanel from './TrafficMonitorPanel';
 const NON_CREDITABLE_SOURCES = new Set(['secret_note', 'topic_practice', 'exam_prep']);
 const isCreditable = (r) => !NON_CREDITABLE_SOURCES.has(r?.source);
 
+/** Split "expr or expr" answers so each piece renders cleanly (avoids "1/torv"). */
+const formatAnswerParts = (raw) => {
+  const s = String(raw ?? '').trim();
+  if (!s) return [];
+  // Prefer splitting on standalone "or" / "OR" / "||"
+  const parts = s.split(/\s+(?:or|OR|\|\|)\s+/).map((p) => p.trim()).filter(Boolean);
+  return parts.length > 0 ? parts : [s];
+};
+
+const CorrectAnswerDisplay = ({ answer, style }) => {
+  const parts = formatAnswerParts(answer);
+  if (parts.length === 0) {
+    return <span style={{ fontWeight: 800, color: '#64748b' }}>—</span>;
+  }
+  if (parts.length === 1) {
+    return <MathView content={parts[0]} style={style} />;
+  }
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '8px 10px' }}>
+      {parts.map((p, i) => (
+        <React.Fragment key={`${i}-${p.slice(0, 24)}`}>
+          {i > 0 && (
+            <span style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#86efac', padding: '2px 8px', borderRadius: '999px', background: 'rgba(22,101,52,0.08)' }}>
+              or
+            </span>
+          )}
+          <span style={{ display: 'inline-block', padding: '6px 12px', borderRadius: '10px', background: '#fff', border: '1px solid #bbf7d0' }}>
+            <MathView content={p} style={style} />
+          </span>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
+
 const getReportSource = (r) => {
   switch (r?.source) {
     case 'secret_note':
@@ -979,98 +1014,178 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                 </div>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                <div>
-                  <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
-                  <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
-                    {(() => {
-                      // Filter empty/corrupt data URLs before deciding which branch to render
-                      const validImages = (item.answerImages || []).filter(url => url && url.length > 100);
-                      const singleImage = item.answerImage && item.answerImage.length > 100 ? item.answerImage : null;
-                      const GRID_BG = { background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' };
+              {(() => {
+                const renderStudentPane = () => {
+                  const validImages = (item.answerImages || []).filter((url) => url && url.length > 100);
+                  const singleImage = item.answerImage && item.answerImage.length > 100 ? item.answerImage : null;
+                  const GRID_BG = {
+                    background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)',
+                    backgroundSize: '20px 20px',
+                  };
 
-                      if (validImages.length > 0) {
-                        return (
-                          <>
-                            {validImages.map((imgUrl, i) => (
-                              <div key={i} style={{ ...GRID_BG, borderBottom: i < validImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px' }}>
-                                <img src={imgUrl} alt={`Student Drawing Page ${i + 1}`} style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block' }} />
-                              </div>
-                            ))}
-                            {item.answerText && (
-                              <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
-                                <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
-                                <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
-                              </div>
-                            )}
-                          </>
-                        );
-                      }
-
-                      if (singleImage) {
-                        return (
-                          <>
-                            <div style={{ ...GRID_BG, padding: '16px', flex: 1, display: 'flex' }}>
-                              <img src={singleImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: '500px', objectFit: 'contain', display: 'block', margin: 'auto' }} />
-                            </div>
-                            {item.answerText && (
-                              <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
-                                <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
-                                <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
-                              </div>
-                            )}
-                          </>
-                        );
-                      }
-
-                      if (item.answerText) {
-                        return (
-                          <div style={{ padding: '20px', textAlign: 'center', margin: 'auto' }}>
-                            <MathView content={item.answerText} style={{ fontSize: '1.2rem', fontWeight: 800 }} />
-                          </div>
-                        );
-                      }
-
-                      // No image and no text — student submitted a blank canvas
-                      return (
-                        <div style={{ padding: '24px', textAlign: 'center', margin: 'auto', color: '#94a3b8' }}>
-                          <div style={{ fontSize: '2rem', marginBottom: '8px' }}>✏️</div>
-                          <p style={{ margin: 0, fontWeight: 700, fontSize: '0.9rem' }}>No drawing submitted</p>
-                          <p style={{ margin: '4px 0 0', fontSize: '0.8rem' }}>Student submitted a blank canvas.</p>
-                        </div>
-                      );
-                    })()}
-                  </div>
-                </div>
-                <div>
-                  <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Expected Answer / Solution</span>
-                  <div style={{ marginTop: '10px', minHeight: '150px', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '20px', padding: '20px' }}>
-                    {hasSubs ? (
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                        {item.subQuestions.map((sq, idx) => (
-                          <div key={sq.id ?? idx} style={{ padding: '14px', borderRadius: '14px', background: '#fff', border: '1px solid #bbf7d0' }}>
-                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '10px' }}>
-                              <span style={{ width: '24px', height: '24px', borderRadius: '7px', background: '#dcfce7', color: '#166534', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.78rem', flexShrink: 0 }}>
-                                {String.fromCharCode(97 + idx)}
-                              </span>
-                              <MathView content={sq.question || sq.text || ''} style={{ fontSize: '0.9rem', fontWeight: 700, color: '#14532d', lineHeight: 1.45, flex: 1 }} />
-                            </div>
-                            <div style={{ padding: '10px 12px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', marginBottom: (sq.solution || sq.solutionSteps?.length) ? '10px' : 0 }}>
-                              <div style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#15803d', marginBottom: '4px' }}>Correct answer</div>
-                              <MathView content={String(sq.answer ?? '—')} style={{ fontSize: '0.95rem', fontWeight: 800, color: '#166534' }} />
-                            </div>
-                            {(sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
-                              <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
-                            )}
+                  if (validImages.length > 0) {
+                    return (
+                      <>
+                        {validImages.map((imgUrl, i) => (
+                          <div key={i} style={{ ...GRID_BG, borderBottom: i < validImages.length - 1 ? '1px dashed #cbd5e1' : 'none', padding: '16px' }}>
+                            <img src={imgUrl} alt={`Student Drawing Page ${i + 1}`} style={{ width: '100%', height: 'auto', maxHeight: hasSubs ? '360px' : '500px', objectFit: 'contain', display: 'block' }} />
                           </div>
                         ))}
-                      </div>
-                    ) : (
+                        {item.answerText && (
+                          <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
+                            <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
+                          </div>
+                        )}
+                      </>
+                    );
+                  }
+
+                  if (singleImage) {
+                    return (
                       <>
-                        <MathView content={item.correctAnswer || 'N/A'} style={{ fontSize: '1rem', fontWeight: 700, color: '#166534', marginBottom: '12px' }} />
+                        <div style={{ ...GRID_BG, padding: '16px', flex: 1, display: 'flex' }}>
+                          <img src={singleImage} alt="Student Drawing" style={{ width: '100%', height: 'auto', maxHeight: hasSubs ? '360px' : '500px', objectFit: 'contain', display: 'block', margin: 'auto' }} />
+                        </div>
+                        {item.answerText && (
+                          <div style={{ padding: '12px 16px', borderTop: '1px dashed #cbd5e1', background: '#f8fafc' }}>
+                            <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Written Answer</span>
+                            <MathView content={item.answerText} style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b', marginTop: '4px' }} />
+                          </div>
+                        )}
+                      </>
+                    );
+                  }
+
+                  if (item.answerText) {
+                    return (
+                      <div style={{ padding: '20px', textAlign: 'center', margin: 'auto' }}>
+                        <MathView content={item.answerText} style={{ fontSize: '1.2rem', fontWeight: 800 }} />
+                      </div>
+                    );
+                  }
+
+                  return (
+                    <div style={{ padding: '24px', textAlign: 'center', margin: 'auto', color: '#94a3b8' }}>
+                      <div style={{ fontSize: '2rem', marginBottom: '8px' }}>✏️</div>
+                      <p style={{ margin: 0, fontWeight: 700, fontSize: '0.9rem' }}>No drawing submitted</p>
+                      <p style={{ margin: '4px 0 0', fontSize: '0.8rem' }}>Student submitted a blank canvas.</p>
+                    </div>
+                  );
+                };
+
+                // Multi-part: student work on top, each sub-part full-width below (readable solutions).
+                if (hasSubs) {
+                  return (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
+                      <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
+                        <div style={{ marginTop: '10px', minHeight: '120px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
+                          {renderStudentPane()}
+                        </div>
+                      </div>
+
+                      <div>
+                        <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                          Expected answers · {item.subQuestions.length} parts
+                        </span>
+                        <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                          {item.subQuestions.map((sq, idx) => {
+                            const hasSolution = Boolean(sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0));
+                            return (
+                              <div
+                                key={sq.id ?? idx}
+                                style={{
+                                  borderRadius: '20px',
+                                  background: '#fff',
+                                  border: '1px solid #d1fae5',
+                                  boxShadow: '0 10px 24px rgba(15, 23, 42, 0.04)',
+                                  overflow: 'hidden',
+                                }}
+                              >
+                                {/* Part header */}
+                                <div style={{
+                                  display: 'flex',
+                                  alignItems: 'flex-start',
+                                  gap: '12px',
+                                  padding: '16px 18px',
+                                  background: 'linear-gradient(180deg, #f0fdf4 0%, #fff 100%)',
+                                  borderBottom: '1px solid #ecfdf5',
+                                }}>
+                                  <span style={{
+                                    width: '32px',
+                                    height: '32px',
+                                    borderRadius: '10px',
+                                    background: '#166534',
+                                    color: '#fff',
+                                    display: 'grid',
+                                    placeItems: 'center',
+                                    fontWeight: 900,
+                                    fontSize: '0.9rem',
+                                    flexShrink: 0,
+                                  }}>
+                                    {String.fromCharCode(97 + idx)}
+                                  </span>
+                                  <div style={{ flex: 1, minWidth: 0 }}>
+                                    <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#15803d', marginBottom: '4px' }}>
+                                      Part {String.fromCharCode(97 + idx)}
+                                    </div>
+                                    <MathView
+                                      content={sq.question || sq.text || ''}
+                                      graphData={sq.graphData}
+                                      style={{ fontSize: '0.98rem', fontWeight: 700, color: '#14532d', lineHeight: 1.55, display: 'block' }}
+                                    />
+                                  </div>
+                                </div>
+
+                                {/* Correct answer band */}
+                                <div style={{ padding: '14px 18px', background: '#f0fdf4', borderBottom: hasSolution ? '1px solid #dcfce7' : 'none' }}>
+                                  <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#15803d', marginBottom: '8px' }}>
+                                    Correct answer
+                                  </div>
+                                  <CorrectAnswerDisplay
+                                    answer={sq.answer ?? '—'}
+                                    style={{ fontSize: '1.05rem', fontWeight: 800, color: '#166534' }}
+                                  />
+                                </div>
+
+                                {/* Compact step-by-step (full width for readability) */}
+                                {hasSolution && (
+                                  <div style={{ padding: '14px 16px 16px', background: '#fafafa' }}>
+                                    <WorkedSolutionSteps question={sq} graphData={sq.graphData} compact />
+                                  </div>
+                                )}
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+
+                // Single-answer: classic two-column compare
+                return (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: '20px' }}>
+                    <div style={{ minWidth: 0 }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Student Answer</span>
+                      <div style={{ marginTop: '10px', minHeight: '150px', background: '#fff', border: '2.5px solid #6366f1', borderRadius: '20px', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+                        {renderStudentPane()}
+                      </div>
+                    </div>
+                    <div style={{ minWidth: 0 }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Expected Answer / Solution</span>
+                      <div style={{ marginTop: '10px', minHeight: '150px', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '20px', padding: '20px' }}>
+                        <div style={{ marginBottom: '12px' }}>
+                          <div style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#15803d', marginBottom: '6px' }}>Correct answer</div>
+                          <CorrectAnswerDisplay
+                            answer={item.correctAnswer || 'N/A'}
+                            style={{ fontSize: '1rem', fontWeight: 700, color: '#166534' }}
+                          />
+                        </div>
                         {(item.solution || (Array.isArray(item.solutionSteps) && item.solutionSteps.length > 0)) && (
                           item.solutionSteps?.length
-                            ? <WorkedSolutionSteps question={item} graphData={item.graphData} />
+                            ? <WorkedSolutionSteps question={item} graphData={item.graphData} compact />
                             : (
                               <div style={{ borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
                                 <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d' }}>SOLUTION GUIDE:</span>
@@ -1078,20 +1193,20 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                               </div>
                             )
                         )}
-                      </>
-                    )}
-                    {(() => {
-                      const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
-                      return !hasSubs && item.graphData && isSketchQuestion && (
-                        <div style={{ marginTop: '12px', borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
-                          <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d', display: 'block', marginBottom: '8px' }}>EXPECTED GRAPH:</span>
-                          <MathView content="" graphData={item.graphData} />
-                        </div>
-                      );
-                    })()}
+                        {(() => {
+                          const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
+                          return item.graphData && isSketchQuestion && (
+                            <div style={{ marginTop: '12px', borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
+                              <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d', display: 'block', marginBottom: '8px' }}>EXPECTED GRAPH:</span>
+                              <MathView content="" graphData={item.graphData} />
+                            </div>
+                          );
+                        })()}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
+                );
+              })()}
                   </>
                 );
               })()}
@@ -1407,24 +1522,25 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                               <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5 }} />
                             </div>
 
-                            {/* Student's answer for this part */}
-                            <div style={{ padding: '12px 14px', borderRadius: '14px', background: '#eef2ff', border: '1px solid #c7d2fe', marginBottom: '8px' }}>
-                              <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4f46e5', marginBottom: '4px' }}>Student's Answer</div>
-                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
-                                {hasAns && isCorrect && <CheckCircle size={16} style={{ color: '#10b981' }} />}
-                                {hasAns && !isCorrect && <X size={16} style={{ color: '#ef4444' }} />}
-                                <MathView content={hasAns ? formatStudentAnswer(sAns) : 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '0.95rem' }} />
-                              </div>
-                              {hasAns && !isCorrect && (
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', marginTop: '6px', color: '#64748b', fontWeight: 700, fontSize: '0.85rem' }}>
-                                  Correct: <MathView content={String(sq.answer ?? '')} style={{ color: '#166534', fontWeight: 800 }} />
+                            {/* Student's answer + correct side by side for readability */}
+                            <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) minmax(0, 1fr)', gap: '10px', marginBottom: '12px' }}>
+                              <div style={{ padding: '12px 14px', borderRadius: '14px', background: '#eef2ff', border: '1px solid #c7d2fe', minWidth: 0 }}>
+                                <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4f46e5', marginBottom: '6px' }}>Student's Answer</div>
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                                  {hasAns && isCorrect && <CheckCircle size={16} style={{ color: '#10b981' }} />}
+                                  {hasAns && !isCorrect && <X size={16} style={{ color: '#ef4444' }} />}
+                                  <MathView content={hasAns ? formatStudentAnswer(sAns) : 'No answer recorded'} style={{ color: '#312e81', fontWeight: 800, fontSize: '0.95rem' }} />
                                 </div>
-                              )}
+                              </div>
+                              <div style={{ padding: '12px 14px', borderRadius: '14px', background: '#f0fdf4', border: '1px solid #bbf7d0', minWidth: 0 }}>
+                                <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#15803d', marginBottom: '6px' }}>Correct</div>
+                                <CorrectAnswerDisplay answer={sq.answer ?? ''} style={{ color: '#166534', fontWeight: 800, fontSize: '0.95rem' }} />
+                              </div>
                             </div>
 
                             {/* Step-by-step solution for this part */}
                             {(sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
-                              <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
+                              <WorkedSolutionSteps question={sq} graphData={sq.graphData} compact />
                             )}
                           </div>
                         );
