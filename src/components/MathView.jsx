@@ -206,7 +206,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
       cancelled = true;
       if (retryTimer) clearTimeout(retryTimer);
     };
-  }, [content]);
+  }, [content, rawGraphData]);
 
   const combinedStyle = {
     fontFamily: '"Lora", "Georgia", "Times New Roman", serif',
