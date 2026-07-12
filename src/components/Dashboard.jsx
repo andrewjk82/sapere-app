@@ -422,41 +422,54 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                     Daily Practice · This Week
                   </label>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
-                    {/* XP moved here from the old Total XP card — sits left of streak */}
-                    <span
-                      style={{
+                    {/* Shared pill metrics — same height/padding so XP + streak feel like a pair */}
+                    {(() => {
+                      const pillBase = {
+                        boxSizing: 'border-box',
+                        height: '28px',
+                        minHeight: '28px',
+                        padding: '0 12px',
+                        borderRadius: '999px',
                         fontSize: '0.72rem',
                         fontWeight: 800,
-                        color: '#4f46e5',
-                        background: 'linear-gradient(135deg, #eef2ff, #e0e7ff)',
-                        padding: '3px 9px',
-                        borderRadius: '999px',
+                        lineHeight: 1,
                         whiteSpace: 'nowrap',
                         display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '4px',
-                      }}
-                      title="Total XP"
-                    >
-                      <Trophy size={12} strokeWidth={2.5} />
-                      {(Number(profile?.totalXP) || 0).toLocaleString()} XP
-                    </span>
-                    <span
-                      style={{
-                        fontSize: '0.72rem',
-                        fontWeight: 800,
-                        color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
-                        background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
-                        padding: '3px 9px',
-                        borderRadius: '999px',
-                        whiteSpace: 'nowrap',
-                      }}
-                      title="Consecutive days of Daily Practice"
-                    >
-                      {practiceStreak > 0
-                        ? `🔥 ${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
-                        : 'No streak yet'}
-                    </span>
+                        justifyContent: 'center',
+                        gap: '5px',
+                      };
+                      return (
+                        <>
+                          <span
+                            style={{
+                              ...pillBase,
+                              color: '#4f46e5',
+                              background: 'linear-gradient(135deg, #eef2ff, #e0e7ff)',
+                            }}
+                            title="Total XP"
+                          >
+                            <Trophy size={12} strokeWidth={2.5} style={{ flexShrink: 0 }} />
+                            {(Number(profile?.totalXP) || 0).toLocaleString()} XP
+                          </span>
+                          <span
+                            style={{
+                              ...pillBase,
+                              color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
+                              background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
+                            }}
+                            title="Consecutive days of Daily Practice"
+                          >
+                            <span style={{ fontSize: '0.85rem', lineHeight: 1, flexShrink: 0 }} aria-hidden>
+                              {practiceStreak > 0 ? '🔥' : '💤'}
+                            </span>
+                            {practiceStreak > 0
+                              ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
+                              : 'No streak yet'}
+                          </span>
+                        </>
+                      );
+                    })()}
                   </div>
                 </div>
 
