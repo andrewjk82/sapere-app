@@ -5,7 +5,7 @@
  */
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
+import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
 import { getDueCount } from '../utils/secretNote';
@@ -189,6 +189,197 @@ const secretNoteCountPhrase = (n) => {
   if (n <= 40) return 'a decent pile of notes';
   if (n <= 80) return 'quite a few notes waiting';
   return 'a big stack of notes waiting';
+};
+
+/**
+ * Build weak-topic insights from recent daily_stats docs (topicStats preferred).
+ * Returns [{ label, errorRate, total, wrong }] sorted weakest first.
+ */
+const analyzeWeakTopics = (statsDocs) => {
+  const topicMistakes = {};
+  const topicTotals = {};
+  const topicLabels = {};
+
+  (statsDocs || []).forEach((stat) => {
+    if (stat.topicStats && typeof stat.topicStats === 'object' && Object.keys(stat.topicStats).length > 0) {
+      Object.entries(stat.topicStats).forEach(([topicKey, data]) => {
+        if (!topicKey || topicKey === 'undefined') return;
+        const label = data?.label || data?.topicTitle || topicKey;
+        topicLabels[topicKey] = label;
+        topicTotals[topicKey] = (topicTotals[topicKey] || 0) + (Number(data?.total) || 0);
+        const correct = Number(data?.correct) || 0;
+        const total = Number(data?.total) || 0;
+        topicMistakes[topicKey] = (topicMistakes[topicKey] || 0) + Math.max(0, total - correct);
+      });
+      return;
+    }
+    const results = stat.answerResults || [];
+    results.forEach((result) => {
+      const topicKey = result?.topicId || result?.type || 'general';
+      if (!topicKey || topicKey === 'undefined') return;
+      const topicLabel = result?.topicTitle || result?.topicCode || topicKey;
+      topicLabels[topicKey] = result?.topicCode
+        ? `${result.topicCode} ${result.topicTitle || ''}`.trim()
+        : topicLabel;
+      topicTotals[topicKey] = (topicTotals[topicKey] || 0) + 1;
+      if (!result?.correct) topicMistakes[topicKey] = (topicMistakes[topicKey] || 0) + 1;
+    });
+  });
+
+  return Object.keys(topicTotals)
+    .filter((k) => topicTotals[k] >= 2)
+    .map((k) => {
+      const total = topicTotals[k];
+      const wrong = topicMistakes[k] || 0;
+      return {
+        label: topicLabels[k] || k,
+        total,
+        wrong,
+        errorRate: total > 0 ? (wrong / total) * 100 : 0,
+      };
+    })
+    .filter((t) => t.errorRate >= 25)
+    .sort((a, b) => b.errorRate - a.errorRate || b.wrong - a.wrong)
+    .slice(0, 3);
+};
+
+const summarizeRecentScores = (statsDocs) => {
+  let sessions = 0;
+  let scoreSum = 0;
+  let totalSum = 0;
+  (statsDocs || []).forEach((s) => {
+    const total = Number(s.total) || 0;
+    const score = Number(s.score) || 0;
+    if (total <= 0) return;
+    sessions += 1;
+    scoreSum += score;
+    totalSum += total;
+  });
+  if (sessions === 0 || totalSum === 0) {
+    return { sessions: 0, avgPct: null, scoreSum: 0, totalSum: 0 };
+  }
+  return {
+    sessions,
+    avgPct: Math.round((scoreSum / totalSum) * 100),
+    scoreSum,
+    totalSum,
+  };
+};
+
+/** Friendly Challenge-tab briefing from recent performance. */
+const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
+  const weak = analyzeWeakTopics(statsDocs);
+  const scores = summarizeRecentScores(statsDocs);
+  const n = firstName || '';
+  const hey = n ? `Hey ${n}` : 'Hey';
+  const cn = n ? `, ${n}` : '';
+
+  if (scores.sessions === 0 && weak.length === 0) {
+    const lines = [
+      {
+        msg: `${hey}! Ready when you are.`,
+        sub: "I don't have much history yet — after a few practices I'll start spotting your soft spots.",
+      },
+      {
+        msg: `Fresh slate${cn}. Let's build some momentum.`,
+        sub: 'Start a session when you feel ready. I will keep notes and coach you next time.',
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ch-empty`, firstName);
+    return {
+      mood: 'idle',
+      eyebrow: 'Challenge briefing',
+      msg: line.msg,
+      sub: line.sub,
+      cta: null,
+      key: `challenge-empty-${seedBase}`,
+    };
+  }
+
+  const top = weak[0];
+  const second = weak[1];
+  const avg = scores.avgPct;
+
+  // Soft labels for accuracy bands
+  let overallLine = '';
+  if (avg == null) {
+    overallLine = 'I have a few of your recent attempts lined up.';
+  } else if (avg >= 85) {
+    overallLine = `Lately you are around ${avg}% — solid work.`;
+  } else if (avg >= 70) {
+    overallLine = `Lately you are around ${avg}% — good base, room to climb.`;
+  } else if (avg >= 50) {
+    overallLine = `Lately you are around ${avg}%. Totally fixable with focus.`;
+  } else {
+    overallLine = `Lately you are around ${avg}%. No shame — we just need careful practice.`;
+  }
+
+  if (top) {
+    const weakLabel = String(top.label || 'that topic').replace(/\s+/g, ' ').trim();
+    const rate = Math.round(top.errorRate);
+    const watchList = [weakLabel]
+      .concat(second ? [String(second.label || '').replace(/\s+/g, ' ').trim()] : [])
+      .filter(Boolean);
+
+    const watchPhrase = watchList.length > 1
+      ? `${watchList[0]} and ${watchList[1]}`
+      : watchList[0];
+
+    const lines = [
+      {
+        msg: `${hey} — quick scouting report before you dive in.`,
+        sub: `${overallLine} Watch ${watchPhrase} today (about ${rate}% of those have been tripping you up). Read carefully, double-check signs, and do not rush the setup.`,
+      },
+      {
+        msg: `${n || 'Friend'}, I peeked at your recent practice.`,
+        sub: `${overallLine} Soft spot: ${weakLabel}. When a question smells like that, slow down and check your method twice.`,
+      },
+      {
+        msg: `Coach tip${cn}: be extra careful with ${weakLabel}.`,
+        sub: `${overallLine} That area has been your trickiest lately. Write steps cleanly and ask "does this answer make sense?" before you lock it.`,
+      },
+      {
+        msg: `${hey}! One thing to keep in mind for this session.`,
+        sub: `${weakLabel} has been a bit wobbly for you. If you see it, take a breath and work it slowly. You have got this.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ch-weak-${weakLabel}`, firstName);
+    return {
+      mood: rate >= 50 ? 'thinking' : 'hint',
+      eyebrow: 'Pre-practice briefing',
+      msg: line.msg,
+      sub: line.sub,
+      cta: null,
+      key: `challenge-weak-${todayKeyFromSeed(seedBase)}-${weakLabel}`,
+    };
+  }
+
+  // No weak topics over threshold — positive briefing
+  const lines = [
+    {
+      msg: `${hey} — you are looking consistent lately.`,
+      sub: `${overallLine} No big red flags in recent topics. Stay sharp on reading the question fully, and enjoy the session.`,
+    },
+    {
+      msg: `Nice form${cn}. Ready for another round?`,
+      sub: `${overallLine} Keep the same careful habits and you will keep climbing.`,
+    },
+  ];
+  const line = pickLine(lines, `${seedBase}-ch-strong`, firstName);
+  return {
+    mood: 'cheer',
+    eyebrow: 'Pre-practice briefing',
+    msg: line.msg,
+    sub: line.sub,
+    cta: null,
+    key: `challenge-strong-${todayKeyFromSeed(seedBase)}`,
+  };
+};
+
+const todayKeyFromSeed = (seedBase) => {
+  // seedBase is `${uid}-${today}`
+  const parts = String(seedBase).split('-');
+  return parts.slice(-3).join('-') || 'today';
 };
 
 /** Given-name only, English UI. Empty if unknown. */
@@ -460,6 +651,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const hour = useLocalHour();
   const [tasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
   const [nextSession, setNextSession] = useState(null);
+  // Recent daily_stats for Challenge-tab performance briefing (topicStats only).
+  const [recentPerf, setRecentPerf] = useState([]);
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
@@ -601,6 +794,59 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     return () => { cancelled = true; };
   }, [uid, today, activeTab]);
 
+  // Recent performance for Challenge-tab briefing (last 7 daily_stats, slim fields).
+  useEffect(() => {
+    if (!uid) return undefined;
+    // Load when opening Challenge, or once in the background after arrive.
+    if (activeTab !== 'Challenge' && recentPerf.length > 0) return undefined;
+
+    const cacheKey = `flame-buddy-perf-v1-${uid}`;
+    const cached = localCache.get(cacheKey);
+    if (cached?.date === today && Array.isArray(cached.stats)) {
+      setRecentPerf(cached.stats);
+      // Still refresh under the hood when landing on Challenge.
+      if (activeTab !== 'Challenge') return undefined;
+    }
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const snap = await getDocs(
+          query(
+            collection(db, 'users', uid, 'daily_stats'),
+            orderBy('timestamp', 'desc'),
+            limit(7),
+          ),
+        );
+        if (cancelled) return;
+        const stats = snap.docs.map((d) => {
+          const data = d.data() || {};
+          return {
+            id: d.id,
+            score: data.score,
+            total: data.total,
+            topicStats: data.topicStats || null,
+            // Slim answerResults fallback (no full question payloads).
+            answerResults: Array.isArray(data.answerResults)
+              ? data.answerResults.map((r) => ({
+                  correct: !!r?.correct,
+                  topicId: r?.topicId || '',
+                  topicTitle: r?.topicTitle || '',
+                  topicCode: r?.topicCode || '',
+                  type: r?.type || '',
+                }))
+              : null,
+          };
+        });
+        setRecentPerf(stats);
+        localCache.set(cacheKey, { date: today, stats });
+      } catch (e) {
+        console.warn('[FlameBuddy] perf fetch failed:', e?.code || e);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [uid, today, activeTab, recentPerf.length]);
+
   // Cheer when daily practice completes.
   useEffect(() => {
     if (!uid) return undefined;
@@ -613,6 +859,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         localCache.set(`flame-buddy-tasks-${uid}`, { date: today, dailyDone: true, calcDone: t.calcDone });
         return next;
       });
+      // Bust perf cache so next Challenge visit re-reads.
+      try { localCache.remove(`flame-buddy-perf-v1-${uid}`); } catch { /* ignore */ }
+      setRecentPerf([]);
       setBubbleOpen(true);
       setDismissedKey('');
     };
@@ -657,6 +906,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     // On Schedule tab: talk about the next class + homework in a friendly voice.
     if (activeTab === 'Schedule') {
       return buildScheduleSpeech(nextSession, firstName);
+    }
+
+    // On Challenge tab: short performance report + weak-topic caution.
+    if (activeTab === 'Challenge') {
+      return buildChallengeBriefing(recentPerf, firstName, seedBase);
     }
 
     // Dashboard (and other tabs): time-escalating practice coaching.
@@ -716,16 +970,18 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}`,
     };
-  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName]);
+  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
+  // Challenge tab is allowed — that is where the performance briefing lives.
   useEffect(() => {
     if (!situation?.key) return;
     if (dismissedKey === situation.key) return;
-    // Don't force bubble open on Challenge while user is mid-session.
-    if (activeTab === 'Challenge') return;
+    // Hide speech while a quiz is actively locked (hidden prop covers exam;
+    // Challenge start screen still gets the briefing).
+    if (hidden) return;
     setBubbleOpen(true);
-  }, [situation?.key, dismissedKey, activeTab]);
+  }, [situation?.key, dismissedKey, hidden]);
 
   if (!uid || phase === 'hidden') return null;
 
@@ -733,7 +989,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   // but don't cover the quiz UI.
   if (hidden) return null;
 
-  const showBubble = bubbleOpen && dismissedKey !== situation.key && activeTab !== 'Challenge';
+  const showBubble = bubbleOpen && dismissedKey !== situation.key;
   const phaseClass = phase === 'enter' ? 'fb-root--enter' : 'fb-root--ready';
   const mood = situation?.mood || 'idle';
 
