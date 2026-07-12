@@ -393,6 +393,18 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     }
   }, [user?.uid, viewMode, step, fetchHistory]);
 
+  // Flame coach CTA on the result screen → open Review for missed questions.
+  useEffect(() => {
+    if (!user?.uid) return undefined;
+    const onOpenReview = (e) => {
+      if (e.detail?.uid && e.detail.uid !== user.uid) return;
+      if (step !== 'result') return;
+      setStep('review');
+    };
+    window.addEventListener('sapere:flame-open-review', onOpenReview);
+    return () => window.removeEventListener('sapere:flame-open-review', onOpenReview);
+  }, [user?.uid, step]);
+
   // ── Lazy-load detailed snapshots for lightweight calculation records ──
   // The calc parent doc keeps only summary fields; questions, selected answers
   // and per-question result metadata are fetched only when the detail modal opens.
@@ -1382,16 +1394,33 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           localCache.remove(`dashboard-week-practice-v1-${user.uid}`);
           localCache.remove(`flame-buddy-tasks-${user.uid}`);
           localCache.remove(`flame-buddy-perf-v1-${user.uid}`);
-          if (challengeType === 'daily' && typeof window !== 'undefined') {
-            window.dispatchEvent(new CustomEvent('sapere:daily-practice-completed', {
-              detail: {
-                uid: user.uid,
-                date: today,
-                score: questionsCorrect,
-                total: displayTotal,
-                completed: !isAbandoned,
-              },
-            }));
+          if (typeof window !== 'undefined') {
+            if (challengeType === 'daily') {
+              window.dispatchEvent(new CustomEvent('sapere:daily-practice-completed', {
+                detail: {
+                  uid: user.uid,
+                  date: today,
+                  score: questionsCorrect,
+                  total: displayTotal,
+                  completed: !isAbandoned,
+                  challengeType: 'daily',
+                },
+              }));
+            }
+            // Flame coach: score mantra + "review your misses" on the result screen.
+            if (!isAbandoned && displayTotal > 0) {
+              window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
+                detail: {
+                  uid: user.uid,
+                  date: today,
+                  score: questionsCorrect,
+                  total: displayTotal,
+                  wrong: Math.max(0, displayTotal - questionsCorrect),
+                  completed: true,
+                  challengeType,
+                },
+              }));
+            }
           }
         } catch (_) { /* non-fatal */ }
         if (detailSnapshot) {

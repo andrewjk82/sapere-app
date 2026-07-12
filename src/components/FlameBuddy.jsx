@@ -3,7 +3,7 @@
  * Visuals ported from flame_character_prototype.html.
  * Speaks friendly, conversational tips based on daily work + schedule.
  */
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
@@ -266,13 +266,49 @@ const summarizeRecentScores = (statsDocs) => {
   };
 };
 
-/** Friendly Challenge-tab briefing from recent performance. */
-const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
+/** Soft add-ons for Challenge tab: teacher comments + Secret Note backlog. */
+const challengeFeedbackPhrase = (count) => {
+  const n = Number(count) || 0;
+  if (n <= 0) return '';
+  if (n === 1) {
+    return 'Also — Andrew left you a teacher comment. Pop into Feedback when you can; it is written just for you.';
+  }
+  return `Also — you have ${n} new teacher comments waiting. Check Feedback when you have a sec; they are gold for next time.`;
+};
+
+const challengeSecretNoteBacklogPhrase = (dueNotes) => {
+  const n = Number(dueNotes) || 0;
+  // Only mention when it feels "backed up", not for a tiny handful.
+  if (n < 12) return '';
+  const pile = secretNoteCountPhrase(n);
+  if (n >= 40) {
+    return `One more thing: your Secret Note has ${pile}. Totally normal after a busy stretch — chipping away a few at a time keeps old mistakes from piling forever.`;
+  }
+  return `And hey — Secret Note has ${pile}. A short rematch session later would help them stick less.`;
+};
+
+/** Friendly Challenge-tab briefing from recent performance + optional nudges. */
+const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => {
   const weak = analyzeWeakTopics(statsDocs);
   const scores = summarizeRecentScores(statsDocs);
   const n = firstName || '';
   const hey = n ? `Hey ${n}` : 'Hey';
   const cn = n ? `, ${n}` : '';
+  const unreadFeedback = Number(extras.unreadFeedback) || 0;
+  const dueNotes = Number(extras.dueNotes) || 0;
+  const fbBit = challengeFeedbackPhrase(unreadFeedback);
+  const noteBit = challengeSecretNoteBacklogPhrase(dueNotes);
+  const appendBits = (sub) => {
+    const parts = [sub, fbBit, noteBit].filter(Boolean);
+    return parts.join(' ');
+  };
+  // Prefer Feedback CTA when comments are unread; else Secret Note peek if backlog-y.
+  let cta = null;
+  if (unreadFeedback > 0) {
+    cta = { label: unreadFeedback === 1 ? 'See feedback' : 'See comments', tab: 'Feedback' };
+  } else if (dueNotes >= 12) {
+    cta = { label: 'Secret Note', tab: 'Challenge', action: 'secret-note' };
+  }
 
   if (scores.sessions === 0 && weak.length === 0) {
     const lines = [
@@ -286,13 +322,14 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
       },
     ];
     const line = pickLine(lines, `${seedBase}-ch-empty`, firstName);
+    const mood = unreadFeedback > 0 || dueNotes >= 40 ? 'hint' : 'idle';
     return {
-      mood: 'idle',
-      eyebrow: 'Challenge briefing',
+      mood,
+      eyebrow: unreadFeedback > 0 ? 'Heads-up' : 'Challenge briefing',
       msg: line.msg,
-      sub: line.sub,
-      cta: null,
-      key: `challenge-empty-${seedBase}`,
+      sub: appendBits(line.sub),
+      cta,
+      key: `challenge-empty-${todayKeyFromSeed(seedBase)}-fb${unreadFeedback}-n${dueNotes >= 12 ? 1 : 0}`,
     };
   }
 
@@ -301,16 +338,14 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
   const avg = scores.avgPct;
 
   // Soft labels for accuracy bands
-  let overallLine = '';
-  if (avg == null) {
-    overallLine = 'I have a few of your recent attempts lined up.';
-  } else if (avg >= 85) {
+  let overallLine = 'I have a few of your recent attempts lined up.';
+  if (avg != null && avg >= 85) {
     overallLine = `Lately you are around ${avg}% — solid work.`;
-  } else if (avg >= 70) {
+  } else if (avg != null && avg >= 70) {
     overallLine = `Lately you are around ${avg}% — good base, room to climb.`;
-  } else if (avg >= 50) {
+  } else if (avg != null && avg >= 50) {
     overallLine = `Lately you are around ${avg}%. Totally fixable with focus.`;
-  } else {
+  } else if (avg != null) {
     overallLine = `Lately you are around ${avg}%. No shame — we just need careful practice.`;
   }
 
@@ -346,11 +381,11 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
     const line = pickLine(lines, `${seedBase}-ch-weak-${weakLabel}`, firstName);
     return {
       mood: rate >= 50 ? 'thinking' : 'hint',
-      eyebrow: 'Pre-practice briefing',
+      eyebrow: unreadFeedback > 0 ? 'Briefing + feedback' : 'Pre-practice briefing',
       msg: line.msg,
-      sub: line.sub,
-      cta: null,
-      key: `challenge-weak-${todayKeyFromSeed(seedBase)}-${weakLabel}`,
+      sub: appendBits(line.sub),
+      cta,
+      key: `challenge-weak-${todayKeyFromSeed(seedBase)}-${weakLabel}-fb${unreadFeedback}-n${dueNotes >= 12 ? 1 : 0}`,
     };
   }
 
@@ -367,12 +402,125 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase) => {
   ];
   const line = pickLine(lines, `${seedBase}-ch-strong`, firstName);
   return {
-    mood: 'cheer',
-    eyebrow: 'Pre-practice briefing',
+    mood: unreadFeedback > 0 ? 'hint' : 'cheer',
+    eyebrow: unreadFeedback > 0 ? 'Briefing + feedback' : 'Pre-practice briefing',
+    msg: line.msg,
+    sub: appendBits(line.sub),
+    cta,
+    key: `challenge-strong-${todayKeyFromSeed(seedBase)}-fb${unreadFeedback}-n${dueNotes >= 12 ? 1 : 0}`,
+  };
+};
+
+/**
+ * Score-based post-result coaching. Ends by nudging Review for missed questions.
+ * pct = 0–100 accuracy; wrongCount for soft wording.
+ */
+const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'daily') => {
+  const s = Math.max(0, Number(score) || 0);
+  const t = Math.max(0, Number(total) || 0);
+  const wrong = Math.max(0, t - s);
+  const pct = t > 0 ? Math.round((s / t) * 100) : 0;
+  const n = firstName || '';
+  const hey = n ? `Hey ${n}` : 'Hey';
+  const cn = n ? `, ${n}` : '';
+  const scoreBit = t > 0 ? `${s}/${t}` : `${pct}%`;
+  const kind = challengeType === 'calc' ? 'sprint' : 'practice';
+
+  const reviewCloser = wrong > 0
+    ? (wrong === 1
+      ? 'When you are ready, hop into Review and walk through that one miss — that is where the real learning sticks.'
+      : `When you are ready, hop into Review and walk through the ${wrong} you missed — that is where the real learning sticks.`)
+    : 'Everything correct — still worth a quick Review skim if you want to lock the methods in.';
+
+  let band;
+  let mood;
+  let eyebrow;
+  let lines;
+
+  if (pct >= 90) {
+    band = 'great';
+    mood = 'cheer';
+    eyebrow = 'Crushing it';
+    lines = [
+      {
+        msg: `${hey}! ${scoreBit} — that is seriously strong.`,
+        sub: `You showed up and the numbers show it. ${reviewCloser}`,
+      },
+      {
+        msg: `Look at that score${cn}: ${scoreBit}. Flame is doing a little victory flicker.`,
+        sub: `Proud of you. ${reviewCloser}`,
+      },
+      {
+        msg: `${n || 'Friend'}, ${scoreBit} on this ${kind}? Chef's kiss.`,
+        sub: `Keep that careful energy. ${reviewCloser}`,
+      },
+    ];
+  } else if (pct >= 75) {
+    band = 'good';
+    mood = 'cheer';
+    eyebrow = 'Nice work';
+    lines = [
+      {
+        msg: `${hey} — ${scoreBit}. Solid session.`,
+        sub: `You are in a good zone. A little review on the misses and you will climb even higher. ${reviewCloser}`,
+      },
+      {
+        msg: `Nice job${cn}! ${scoreBit} is real progress.`,
+        sub: `Not perfect — and that is fine. ${reviewCloser}`,
+      },
+      {
+        msg: `${scoreBit}${cn}. I like that consistency.`,
+        sub: `Celebrate the wins, then clean up the wobbly ones. ${reviewCloser}`,
+      },
+    ];
+  } else if (pct >= 55) {
+    band = 'mid';
+    mood = 'hint';
+    eyebrow = 'Good effort';
+    lines = [
+      {
+        msg: `${hey}, you finished — ${scoreBit}. That still counts.`,
+        sub: `Some bits need another look, and that is normal. Next time a little more focus goes a long way. ${reviewCloser}`,
+      },
+      {
+        msg: `${scoreBit}${cn}. Honest score, honest plan.`,
+        sub: `You showed up. Now Review turns "almost" into "got it." ${reviewCloser}`,
+      },
+      {
+        msg: `Session done${cn}: ${scoreBit}.`,
+        sub: `Not your peak day — totally fine. Let's learn from the misses and come back sharper. ${reviewCloser}`,
+      },
+    ];
+  } else {
+    band = 'low';
+    mood = 'thinking';
+    eyebrow = 'Keep going';
+    lines = [
+      {
+        msg: `${hey}… ${scoreBit}. Rough set, not a rough student.`,
+        sub: `Everyone has days like this. What matters is we review the misses and try a bit harder next time — I've got your back. ${reviewCloser}`,
+      },
+      {
+        msg: `Okay${cn}, ${scoreBit}. Let's not spiral — let's learn.`,
+        sub: `Slow down on the next one, read twice, and use Review as your coach. ${reviewCloser}`,
+      },
+      {
+        msg: `${n || 'Friend'}, finishing still takes guts. Score: ${scoreBit}.`,
+        sub: `Tomorrow we climb. Today we understand the tricky ones. ${reviewCloser}`,
+      },
+    ];
+  }
+
+  const line = pickLine(lines, `${seedBase}-result-${band}-${scoreBit}`, firstName);
+  return {
+    mood,
+    eyebrow,
     msg: line.msg,
     sub: line.sub,
-    cta: null,
-    key: `challenge-strong-${todayKeyFromSeed(seedBase)}`,
+    cta: wrong > 0
+      ? { label: 'Review misses', action: 'review' }
+      : { label: 'Review answers', action: 'review' },
+    key: `result-${seedBase}-${band}-${scoreBit}`,
   };
 };
 
@@ -452,23 +600,80 @@ const parseSessionStartMs = (s) => {
   }
 };
 
-/** "today at 3:30 PM" / "tomorrow at …" / "Wed, 22 Jul at …" */
+/** "Today · 3:30 PM" / "Tomorrow · …" / "Wed · 22 Jul · 3:30 PM" — easy to scan. */
 const friendlyWhen = (dateStr, startTime) => {
   if (!dateStr) return startTime || 'soon';
-  const time = startTime || '';
+  const time = String(startTime || '').trim();
   const todayStr = new Date().toLocaleDateString('en-CA');
   const tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
   const tomStr = tomorrow.toLocaleDateString('en-CA');
-  if (dateStr === todayStr) return time ? `today at ${time}` : 'today';
-  if (dateStr === tomStr) return time ? `tomorrow at ${time}` : 'tomorrow';
+  if (dateStr === todayStr) return time ? `Today · ${time}` : 'Today';
+  if (dateStr === tomStr) return time ? `Tomorrow · ${time}` : 'Tomorrow';
   try {
     const d = new Date(`${dateStr}T12:00:00`);
-    const label = d.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' });
-    return time ? `${label} at ${time}` : label;
+    const weekday = d.toLocaleDateString('en-AU', { weekday: 'short' });
+    const dayMonth = d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short' });
+    return time ? `${weekday} · ${dayMonth} · ${time}` : `${weekday} · ${dayMonth}`;
   } catch {
-    return time ? `${dateStr} at ${time}` : dateStr;
+    return time ? `${dateStr} · ${time}` : dateStr;
   }
+};
+
+/** Wrap schedule date / weekday / time for bold rendering in the bubble. */
+const boldWhen = (when) => {
+  const w = String(when || '').trim();
+  if (!w) return w;
+  return `**${w}**`;
+};
+
+/** Remove **bold** markers (for typewriter length / plain compare). */
+const stripMdBold = (text) => String(text || '').replace(/\*\*/g, '');
+
+/**
+ * Render text with **bold** markers as <strong>.
+ * Works on a full template + how many plain chars are visible (typewriter).
+ */
+const renderMdBold = (template, visiblePlainLen = null) => {
+  const raw = String(template || '');
+  if (!raw.includes('**')) {
+    if (visiblePlainLen == null) return raw;
+    return raw.slice(0, visiblePlainLen);
+  }
+  const limit = visiblePlainLen == null ? Infinity : visiblePlainLen;
+  const nodes = [];
+  let plainIdx = 0;
+  let i = 0;
+  let bold = false;
+  let buf = '';
+  let key = 0;
+  const flush = () => {
+    if (!buf) return;
+    if (bold) {
+      nodes.push(
+        <strong key={`b${key}`} className="fb-em">{buf}</strong>,
+      );
+    } else {
+      nodes.push(buf);
+    }
+    key += 1;
+    buf = '';
+  };
+  while (i < raw.length && plainIdx < limit) {
+    if (raw[i] === '*' && raw[i + 1] === '*') {
+      flush();
+      bold = !bold;
+      i += 2;
+      continue;
+    }
+    buf += raw[i];
+    plainIdx += 1;
+    i += 1;
+  }
+  flush();
+  if (nodes.length === 0) return '';
+  if (nodes.length === 1 && typeof nodes[0] === 'string') return nodes[0];
+  return nodes;
 };
 
 const clipText = (text, max = 100) => {
@@ -496,10 +701,11 @@ const buildScheduleSpeech = (session, firstName = '') => {
 
   const subject = normalizeSubjectLabel(session.subject || 'class');
   const when = friendlyWhen(session.date, session.startTime);
+  const whenBold = boldWhen(when);
   const hw = clipText(session.homework);
   const hwDone = Boolean(session.isHomeworkCompleted);
 
-  let msg = `${hey}! Just a heads-up — you've got ${subject} ${when}.`;
+  let msg = `${hey}! Just a heads-up — you've got ${subject} ${whenBold}.`;
   let sub = "I'll be rooting for you. Bring any questions you've been stuck on!";
   let mood = 'hint';
 
@@ -515,8 +721,8 @@ const buildScheduleSpeech = (session, firstName = '') => {
   const todayStr = new Date().toLocaleDateString('en-CA');
   if (session.date === todayStr && !hwDone) {
     msg = n
-      ? `${n}, today's the day! ${subject} is ${when.replace(/^today at /, 'at ')}.`
-      : `Today's the day! ${subject} is ${when.replace(/^today at /, 'at ')}.`;
+      ? `${n}, today's the day! ${subject} is ${whenBold}.`
+      : `Today's the day! ${subject} is ${whenBold}.`;
     if (hw) {
       sub = `Before you go, try to finish: "${hw}" — future-you will thank you.`;
       mood = 'thinking';
@@ -552,8 +758,9 @@ function useLocalHour() {
  * ~16ms/char (~60 chars/s) — snappy but readable.
  */
 function useTypewriter(msg, sub, active, msPerChar = 15) {
-  const fullMsg = String(msg || '');
-  const fullSub = String(sub || '');
+  // Type plain characters only (** markers are not typed, but still bolded on render).
+  const fullMsg = stripMdBold(msg);
+  const fullSub = stripMdBold(sub);
   const [msgOut, setMsgOut] = useState('');
   const [subOut, setSubOut] = useState('');
   const [done, setDone] = useState(false);
@@ -633,14 +840,13 @@ function useTypewriter(msg, sub, active, msPerChar = 15) {
     };
   }, [msg, sub, active, msPerChar, fullMsg, fullSub]);
 
-  return { msgOut, subOut, done };
+  return { msgOut, subOut, done, fullMsgLen: fullMsg.length, fullSubLen: fullSub.length };
 }
 
 function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'idle' }) {
-  const { msgOut, subOut, done } = useTypewriter(msg, sub, true, 14);
-  const fullMsgLen = String(msg || '').length;
+  const { msgOut, subOut, done, fullMsgLen, fullSubLen } = useTypewriter(msg, sub, true, 14);
   const typingMsg = !done && msgOut.length < fullMsgLen;
-  const typingSub = !done && !typingMsg && Boolean(sub);
+  const typingSub = !done && !typingMsg && Boolean(stripMdBold(sub));
   const moodClass = ['idle', 'thinking', 'urgent', 'cheer', 'hint'].includes(mood)
     ? mood
     : 'idle';
@@ -649,13 +855,13 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'id
     <div className={`fb-bubble fb-bubble--${moodClass}`}>
       {eyebrow && <div className="fb-bubble__eyebrow">{eyebrow}</div>}
       <p className="fb-bubble__msg">
-        {msgOut}
+        {renderMdBold(msg, msgOut.length)}
         {typingMsg && <span className="fb-caret" aria-hidden />}
       </p>
       {(subOut || typingSub || (done && sub)) && (
         <p className="fb-bubble__sub">
-          {subOut}
-          {typingSub && <span className="fb-caret" aria-hidden />}
+          {renderMdBold(sub, subOut.length)}
+          {typingSub && subOut.length < fullSubLen && <span className="fb-caret" aria-hidden />}
         </p>
       )}
       {done && (
@@ -784,6 +990,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
+  // Brief bounce when the avatar is tapped.
+  const [tapBounce, setTapBounce] = useState(false);
+  // Post-quiz score coaching (takes priority while active).
+  const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
   // Entrance phase: hidden → enter (pop) → ready.
   // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
   // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
@@ -792,6 +1002,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const calcEnabled = profile?.calculationEnabled !== false;
   const today = new Date().toLocaleDateString('en-CA');
   const firstName = useMemo(() => studentFirstName(profile), [profile]);
+  const unreadFeedback = Number(profile?.unreadFeedbackCount) || 0;
 
   // First appearance this browser session: wait ~1s, then fairy pop-in.
   // Later remounts in the same session appear immediately as "ready".
@@ -975,26 +1186,74 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     return () => { cancelled = true; };
   }, [uid, today, activeTab, recentPerf.length]);
 
-  // Cheer when daily practice completes.
+  // Cheer when daily practice completes (task flags + legacy short cheer).
   useEffect(() => {
     if (!uid) return undefined;
     const onDone = (e) => {
       if (e.detail?.uid && e.detail.uid !== uid) return;
       if (e.detail?.completed === false) return;
-      setCheerUntil(Date.now() + 12_000);
-      setTasks((t) => {
-        const next = { ...t, dailyDone: true, loaded: true };
-        localCache.set(`flame-buddy-tasks-${uid}`, { date: today, dailyDone: true, calcDone: t.calcDone });
-        return next;
-      });
+      // Task board: only mark daily done from daily event (not calc).
+      if ((e.detail?.challengeType || 'daily') === 'daily') {
+        setCheerUntil(Date.now() + 12_000);
+        setTasks((t) => {
+          const next = { ...t, dailyDone: true, loaded: true };
+          localCache.set(`flame-buddy-tasks-${uid}`, { date: today, dailyDone: true, calcDone: t.calcDone });
+          return next;
+        });
+      } else if (e.detail?.challengeType === 'calc') {
+        setTasks((t) => {
+          const next = { ...t, calcDone: true, loaded: true };
+          localCache.set(`flame-buddy-tasks-${uid}`, { date: today, dailyDone: t.dailyDone, calcDone: true });
+          return next;
+        });
+      }
       // Bust perf cache so next Challenge visit re-reads.
       try { localCache.remove(`flame-buddy-perf-v1-${uid}`); } catch { /* ignore */ }
       setRecentPerf([]);
       setBubbleOpen(true);
       setDismissedKey('');
     };
+    // Score-based wrap-up when any challenge ends (daily or calc).
+    const onResult = (e) => {
+      if (e.detail?.uid && e.detail.uid !== uid) return;
+      if (e.detail?.completed === false) return;
+      const score = Number(e.detail?.score);
+      const total = Number(e.detail?.total);
+      if (!(total > 0) || Number.isNaN(score)) return;
+      setCheerUntil(0); // score speech replaces the generic cheer
+      const kind = e.detail?.challengeType || 'daily';
+      setTasks((t) => {
+        const next = {
+          ...t,
+          loaded: true,
+          dailyDone: kind === 'daily' ? true : t.dailyDone,
+          calcDone: kind === 'calc' ? true : t.calcDone,
+        };
+        localCache.set(`flame-buddy-tasks-${uid}`, {
+          date: today,
+          dailyDone: next.dailyDone,
+          calcDone: next.calcDone,
+        });
+        return next;
+      });
+      try { localCache.remove(`flame-buddy-perf-v1-${uid}`); } catch { /* ignore */ }
+      setRecentPerf([]);
+      setResultCoach({
+        score,
+        total,
+        challengeType: kind,
+        until: Date.now() + 50_000,
+        id: `${Date.now()}-${score}-${total}`,
+      });
+      setBubbleOpen(true);
+      setDismissedKey('');
+    };
     window.addEventListener('sapere:daily-practice-completed', onDone);
-    return () => window.removeEventListener('sapere:daily-practice-completed', onDone);
+    window.addEventListener('sapere:challenge-result', onResult);
+    return () => {
+      window.removeEventListener('sapere:daily-practice-completed', onDone);
+      window.removeEventListener('sapere:challenge-result', onResult);
+    };
   }, [uid, today]);
 
   // End cheer mood after the celebration window.
@@ -1004,6 +1263,14 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     const t = setTimeout(() => setCheerUntil(0), ms);
     return () => clearTimeout(t);
   }, [cheerUntil]);
+
+  // Clear post-result coaching after its window.
+  useEffect(() => {
+    if (!resultCoach?.until) return undefined;
+    const ms = Math.max(0, resultCoach.until - Date.now());
+    const t = setTimeout(() => setResultCoach(null), ms);
+    return () => clearTimeout(t);
+  }, [resultCoach?.until, resultCoach?.id]);
 
   const dueNotes = useMemo(() => {
     if (!uid) return 0;
@@ -1018,8 +1285,21 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   const situation = useMemo(() => {
     const seedBase = `${uid || 'anon'}-${today}`;
-    const cheering = Date.now() < cheerUntil;
-    if (cheering) {
+
+    // Highest priority: just finished a challenge — score mantras + review CTA.
+    // Cleared by timeout / dismiss (no Date.now() in render — purity lint).
+    if (resultCoach) {
+      return buildResultSpeech(
+        resultCoach.score,
+        resultCoach.total,
+        firstName,
+        `${seedBase}-${resultCoach.id || 'r'}`,
+        resultCoach.challengeType,
+      );
+    }
+
+    // cheerUntil is a timestamp; non-zero means still celebrating (cleared by timer).
+    if (cheerUntil) {
       const line = pickLine(COPY.bothDone, `${seedBase}-cheer`, firstName);
       return {
         mood: 'cheer',
@@ -1036,9 +1316,12 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       return buildScheduleSpeech(nextSession, firstName);
     }
 
-    // On Challenge tab: short performance report + weak-topic caution.
+    // On Challenge tab: performance report + teacher feedback + secret-note backlog.
     if (activeTab === 'Challenge') {
-      return buildChallengeBriefing(recentPerf, firstName, seedBase);
+      return buildChallengeBriefing(recentPerf, firstName, seedBase, {
+        unreadFeedback,
+        dueNotes,
+      });
     }
 
     // Dashboard (and other tabs): time-escalating practice coaching.
@@ -1098,7 +1381,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}`,
     };
-  }, [cheerUntil, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf]);
+  }, [cheerUntil, resultCoach, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.
@@ -1137,20 +1420,35 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           cta={situation.cta}
           mood={situation.mood || mood}
           onCta={() => {
-            setActiveTab?.(situation.cta.tab);
+            const action = situation.cta?.action;
+            if (action === 'review') {
+              try {
+                window.dispatchEvent(new CustomEvent('sapere:flame-open-review', {
+                  detail: { uid },
+                }));
+              } catch { /* ignore */ }
+              setBubbleOpen(false);
+              return;
+            }
+            if (situation.cta?.tab) setActiveTab?.(situation.cta.tab);
             setBubbleOpen(false);
           }}
           onDismiss={() => {
             setDismissedKey(situation.key);
             setBubbleOpen(false);
+            // Don't re-open the same result speech after dismiss.
+            if (situation.key?.startsWith('result-')) setResultCoach(null);
           }}
         />
       )}
 
       <div
-        className="fb-stage"
+        className={`fb-stage${tapBounce ? ' fb-stage--bounce' : ''}`}
         title="Tap for a tip"
         onClick={() => {
+          // Re-trigger bounce even if already mid-animation.
+          setTapBounce(false);
+          requestAnimationFrame(() => setTapBounce(true));
           setDismissedKey('');
           setBubbleOpen((o) => !o);
         }}
@@ -1159,12 +1457,22 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         onKeyDown={(e) => {
           if (e.key === 'Enter' || e.key === ' ') {
             e.preventDefault();
+            setTapBounce(false);
+            requestAnimationFrame(() => setTapBounce(true));
             setDismissedKey('');
             setBubbleOpen((o) => !o);
           }
         }}
       >
-        <div className={`fb-flame ${mood}`}>
+        <div
+          className={`fb-flame ${mood}`}
+          onAnimationEnd={(e) => {
+            if (e.animationName === 'fb-tap-bounce') {
+              e.stopPropagation();
+              setTapBounce(false);
+            }
+          }}
+        >
           <div className="fb-flame-wrap">
             <div className="fb-aura" />
             <div className="fb-ember fb-ember1" />
