@@ -338,13 +338,13 @@ const GeometryFigure = ({
 
   const seenFree = new Set();
   freeLabels.filter((label) => {
-    const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
+    const pt = label.at && points[label.at] ? points[label.at] : (Array.isArray(label.point) ? label.point : [label.x, label.y]);
     const sig = `${(label.text ?? '').toString().trim()}|${(Number(pt?.[0]) || 0).toFixed(2)},${(Number(pt?.[1]) || 0).toFixed(2)}`;
     if (seenFree.has(sig)) return false;
     seenFree.add(sig);
     return true;
   }).forEach((label) => {
-    const pt = Array.isArray(label.point) ? label.point : [label.x, label.y];
+    const pt = label.at && points[label.at] ? points[label.at] : (Array.isArray(label.point) ? label.point : [label.x, label.y]);
     const x = ((Number(pt[0]) || 0) - minX) * scale + pad;
     const y = (maxY - (Number(pt[1]) || 0)) * scale + pad;
     els.push(
