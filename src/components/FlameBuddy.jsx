@@ -3,7 +3,7 @@
  * Visuals ported from flame_character_prototype.html.
  * Speaks friendly, conversational tips based on daily work + schedule.
  */
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
@@ -11,6 +11,66 @@ import { localCache } from '../services/localCacheService';
 import { getDueCount } from '../utils/secretNote';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import './FlameBuddy.css';
+
+/**
+ * Andrew (or coach) voice clips played when the flame is tapped.
+ * Drop short mp3/m4a/wav files in public/sounds/flame/ and list them here.
+ * Missing files fail silently — bounce still works without audio.
+ *
+ * Tip: keep each clip ~1–3s ("Hey!", "Let's practice!", "You've got this!").
+ */
+const FLAME_TAP_VOICES = [
+  '/sounds/flame/tap-0.mp3',
+  '/sounds/flame/tap-1.mp3',
+  '/sounds/flame/tap-2.mp3',
+  '/sounds/flame/tap-3.mp3',
+  '/sounds/flame/tap-4.mp3',
+  '/sounds/flame/tap-5.mp3',
+];
+
+const isFlameVoiceMuted = () => {
+  try {
+    // Share the app-wide intro mute, plus a flame-specific opt-out.
+    if (localStorage.getItem('sapere:intro-muted') === '1') return true;
+    if (localStorage.getItem('sapere:flame-muted') === '1') return true;
+  } catch { /* ignore */ }
+  return false;
+};
+
+/** Play a short coach voice line. `index` rotates which clip. */
+const playFlameTapVoice = (audioRef, index = 0) => {
+  if (typeof window === 'undefined') return;
+  if (isFlameVoiceMuted()) return;
+  const list = FLAME_TAP_VOICES;
+  if (!list.length) return;
+  const url = list[Math.abs(Number(index) || 0) % list.length];
+  try {
+    // Stop anything still playing so taps don't stack.
+    if (audioRef?.current) {
+      try {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      } catch { /* ignore */ }
+      audioRef.current = null;
+    }
+    const a = new Audio(url);
+    a.volume = 0.95;
+    a.preload = 'auto';
+    if (audioRef) audioRef.current = a;
+    const p = a.play();
+    if (p && typeof p.catch === 'function') {
+      p.catch(() => {
+        // 404 / autoplay / decode — silent; bounce UX still works.
+        if (audioRef) audioRef.current = null;
+      });
+    }
+    a.addEventListener('ended', () => {
+      if (audioRef && audioRef.current === a) audioRef.current = null;
+    }, { once: true });
+  } catch {
+    /* ignore */
+  }
+};
 
 // Time-of-day stages for unfinished Daily Practice (local hours, float).
 // 0 morning → 6 near midnight. Mood climbs with the stage.
@@ -1037,6 +1097,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [tapBounce, setTapBounce] = useState(false);
   // Bumps each time the student re-opens the bubble so practice lines rotate.
   const [speechEpoch, setSpeechEpoch] = useState(0);
+  // Rotates which coach voice clip plays on each tap.
+  const [voiceIndex, setVoiceIndex] = useState(0);
+  const voiceAudioRef = useRef(null);
   // Post-quiz score coaching (takes priority while active).
   const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
   // Entrance phase: hidden → enter (pop) → ready.
@@ -1497,6 +1560,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           // Re-trigger bounce even if already mid-animation.
           setTapBounce(false);
           requestAnimationFrame(() => setTapBounce(true));
+          // Coach voice on every tap (user gesture → allowed by browsers).
+          playFlameTapVoice(voiceAudioRef, voiceIndex);
+          setVoiceIndex((n) => n + 1);
           setDismissedKey('');
           setBubbleOpen((o) => {
             // Each re-open rotates to a different practice / sprint line.
@@ -1511,6 +1577,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
             e.preventDefault();
             setTapBounce(false);
             requestAnimationFrame(() => setTapBounce(true));
+            playFlameTapVoice(voiceAudioRef, voiceIndex);
+            setVoiceIndex((n) => n + 1);
             setDismissedKey('');
             setBubbleOpen((o) => {
               if (!o) setSpeechEpoch((n) => n + 1);
