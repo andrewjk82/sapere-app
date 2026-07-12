@@ -155,12 +155,55 @@ function FlameSvg() {
 export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidden = false }) {
   const hour = useLocalHour();
   const [tasks, setTasks] = useState({ dailyDone: false, calcDone: false, loaded: false });
-  const [bubbleOpen, setBubbleOpen] = useState(true);
+  const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
+  // Fairy-pop entrance: hidden → wait ~1s → scale/pop in.
+  const [arrived, setArrived] = useState(false);
+  const [enterAnim, setEnterAnim] = useState(false);
 
   const calcEnabled = profile?.calculationEnabled !== false;
   const today = new Date().toLocaleDateString('en-CA');
+
+  // First mount this session: wait ~1s, then pop in like a fairy appearing.
+  // Later remounts in the same tab session appear immediately (no re-delay).
+  useEffect(() => {
+    if (!uid || hidden) return undefined;
+    let showTimer;
+    let animTimer;
+    let bubbleTimer;
+    const sessionKey = `sapere:flame-buddy-arrived:${uid}`;
+    let already = false;
+    try {
+      already = Boolean(sessionStorage.getItem(sessionKey));
+    } catch { /* ignore */ }
+
+    if (already) {
+      setArrived(true);
+      setEnterAnim(false);
+      setBubbleOpen(true);
+      return undefined;
+    }
+
+    showTimer = setTimeout(() => {
+      setArrived(true);
+      // Double-rAF so the browser paints the pre-enter frame before animating.
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => setEnterAnim(true));
+      });
+      try {
+        sessionStorage.setItem(sessionKey, '1');
+      } catch { /* ignore */ }
+      // Speech bubble follows the pop (after the bounce settles).
+      bubbleTimer = setTimeout(() => setBubbleOpen(true), 450);
+    }, 1000);
+
+    return () => {
+      clearTimeout(showTimer);
+      clearTimeout(animTimer);
+      clearTimeout(bubbleTimer);
+    };
+  }, [uid, hidden]);
 
   // Load today's completion (same cheap point-reads as old nudge cards).
   const refreshTasks = useCallback(async () => {
@@ -301,12 +344,17 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     setBubbleOpen(true);
   }, [situation?.key, dismissedKey, activeTab]);
 
-  if (hidden || !uid) return null;
+  if (hidden || !uid || !arrived) return null;
 
   const showBubble = bubbleOpen && dismissedKey !== situation.key;
 
   return (
-    <div className="fb-root" role="complementary" aria-label="Flame coach">
+    <div
+      className={`fb-root${enterAnim ? ' fb-root--enter' : ' fb-root--pre'}`}
+      role="complementary"
+      aria-label="Flame coach"
+    >
+      <div className="fb-burst" aria-hidden />
       {showBubble && (
         <div className="fb-bubble">
           <div className="fb-bubble__eyebrow">{situation.eyebrow}</div>

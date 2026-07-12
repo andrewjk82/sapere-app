@@ -11,6 +11,67 @@
   gap: 8px;
   pointer-events: none;
   font-family: inherit;
+  transform-origin: 85% 95%;
+}
+
+/* Pre-enter frame (invisible, tiny) — painted before fb-root--enter runs */
+.fb-root--pre {
+  opacity: 0;
+  transform: scale(0.12) translateY(28px);
+  filter: blur(6px);
+}
+
+/* Fairy pop-in: wait is handled in JS (~1s), then this bounce appears */
+.fb-root--enter {
+  animation: fb-arrive 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+@keyframes fb-arrive {
+  0% {
+    opacity: 0;
+    transform: scale(0.12) translateY(28px);
+    filter: blur(6px);
+  }
+  45% {
+    opacity: 1;
+    transform: scale(1.18) translateY(-10px);
+    filter: blur(0);
+  }
+  68% {
+    transform: scale(0.94) translateY(4px);
+  }
+  85% {
+    transform: scale(1.04) translateY(-2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: none;
+  }
+}
+
+/* Soft starburst behind the flame on entrance only */
+.fb-burst {
+  position: absolute;
+  right: 8px;
+  bottom: 28px;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255, 210, 100, 0.55) 0%, rgba(255, 140, 40, 0.2) 40%, rgba(255, 140, 40, 0) 70%);
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+.fb-root--enter .fb-burst {
+  animation: fb-burst 0.75s ease-out both;
+}
+
+@keyframes fb-burst {
+  0% { opacity: 0; transform: scale(0.3); }
+  30% { opacity: 0.9; transform: scale(1.15); }
+  100% { opacity: 0; transform: scale(1.6); }
 }
 
 .fb-root * {
@@ -434,7 +495,13 @@
 @media (prefers-reduced-motion: reduce) {
   .fb-outer, .fb-inner, .fb-glow, .fb-aura, .fb-ember,
   .fb-flame.thinking, .fb-flame.urgent, .fb-flame.cheer,
-  .fb-eye, .fb-mouth, .fb-sparkle, .fb-bubble {
+  .fb-eye, .fb-mouth, .fb-sparkle, .fb-bubble,
+  .fb-root--enter, .fb-burst {
     animation: none !important;
+  }
+  .fb-root--pre {
+    opacity: 1;
+    transform: none;
+    filter: none;
   }
 }
