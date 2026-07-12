@@ -297,14 +297,22 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return sorted.find(s => getTime(s) > now.getTime());
   }, [studentSessions]);
 
-  // Week chart summary: done days + average accuracy among completed days.
-  const weekPracticeSummary = useMemo(() => {
-    const done = weekPractice.filter((d) => d.completed && d.total > 0);
-    if (done.length === 0) return { doneCount: 0, avgPct: null };
-    const avgPct = Math.round(
-      done.reduce((sum, d) => sum + (d.score / d.total) * 100, 0) / done.length,
-    );
-    return { doneCount: done.length, avgPct };
+  // Consecutive Daily Practice streak ending today (or yesterday if today
+  // is still open). Computed from the Mon→Sun week bars we already load.
+  const practiceStreak = useMemo(() => {
+    if (!weekPractice.length) return 0;
+    const todayIdx = weekPractice.findIndex((d) => d.isToday);
+    if (todayIdx < 0) return 0;
+    const isDone = (d) => d?.completed === true && Number(d.total) > 0;
+    let i = todayIdx;
+    // If today isn't finished yet, streak is unbroken days through yesterday.
+    if (!isDone(weekPractice[i])) i = todayIdx - 1;
+    let streak = 0;
+    for (; i >= 0; i -= 1) {
+      if (!isDone(weekPractice[i])) break;
+      streak += 1;
+    }
+    return streak;
   }, [weekPractice]);
 
   // profile comes from the shared ProfileContext — no per-component listener.
@@ -420,10 +428,21 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
                     Daily Practice · This Week
                   </label>
-                  <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#6366f1', background: '#eef2ff', padding: '3px 9px', borderRadius: '999px', whiteSpace: 'nowrap' }}>
-                    {weekPracticeSummary.doneCount > 0
-                      ? `${weekPracticeSummary.doneCount}/7 · avg ${weekPracticeSummary.avgPct}%`
-                      : '0/7 done'}
+                  <span
+                    style={{
+                      fontSize: '0.72rem',
+                      fontWeight: 800,
+                      color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
+                      background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
+                      padding: '3px 9px',
+                      borderRadius: '999px',
+                      whiteSpace: 'nowrap',
+                    }}
+                    title="Consecutive days of Daily Practice"
+                  >
+                    {practiceStreak > 0
+                      ? `🔥 ${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
+                      : 'No streak yet'}
                   </span>
                 </div>
 
