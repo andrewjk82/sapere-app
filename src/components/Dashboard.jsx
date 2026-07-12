@@ -43,6 +43,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   const [lastSync, setLastSync] = useState(null);
   const [isSyncing, setIsSyncing] = useState(false);
   const [dailyStats, setDailyStats] = useState([]);
+  // Mon→Sun daily practice results for the dashboard bar chart.
+  // [{ day, dateStr, score, total, completed, isToday }]
+  const [weekPractice, setWeekPractice] = useState([]);
   const { pendingGrading: feedPendingGrading } = useAdminFeed();
   const pendingGrading = useMemo(() => feedPendingGrading.slice(0, 5), [feedPendingGrading]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
@@ -88,6 +91,63 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       setDailyStats(stats);
       localCache.set(cacheKey, { date: today, stats });
     }).catch((err) => console.warn('insights stats fetch failed:', err?.code || err));
+    return () => { cancelled = true; };
+  }, [user?.uid, isAdmin]);
+
+  // This week's Daily Practice scores (Mon→Sun) for the bar chart card.
+  // 7 point-reads by doc id — no collection scan. Cached for the calendar day.
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return undefined;
+
+    const DAY_LABELS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    const now = new Date();
+    const dow = now.getDay(); // 0 = Sun
+    const mondayOffset = dow === 0 ? -6 : 1 - dow;
+    const weekDays = DAY_LABELS.map((day, i) => {
+      const d = new Date(now);
+      d.setDate(now.getDate() + mondayOffset + i);
+      const dateStr = d.toLocaleDateString('en-CA');
+      return {
+        day,
+        dateStr,
+        isToday: dateStr === now.toLocaleDateString('en-CA'),
+      };
+    });
+    const weekStart = weekDays[0].dateStr;
+    const today = now.toLocaleDateString('en-CA');
+    const cacheKey = `dashboard-week-practice-v1-${user.uid}`;
+    const cached = localCache.get(cacheKey);
+    if (cached?.date === today && cached.weekStart === weekStart && Array.isArray(cached.days)) {
+      setWeekPractice(cached.days);
+      return undefined;
+    }
+
+    let cancelled = false;
+    (async () => {
+      try {
+        const snaps = await Promise.all(
+          weekDays.map(({ dateStr }) => getDoc(doc(db, 'users', user.uid, 'daily_stats', dateStr))),
+        );
+        if (cancelled) return;
+        const days = weekDays.map((w, i) => {
+          const snap = snaps[i];
+          if (!snap.exists()) {
+            return { ...w, score: 0, total: 0, completed: false };
+          }
+          const data = snap.data();
+          return {
+            ...w,
+            score: Number(data.score) || 0,
+            total: Number(data.total) || 0,
+            completed: data.completed === true,
+          };
+        });
+        setWeekPractice(days);
+        localCache.set(cacheKey, { date: today, weekStart, days });
+      } catch (e) {
+        console.warn('week practice fetch failed:', e?.code || e);
+      }
+    })();
     return () => { cancelled = true; };
   }, [user?.uid, isAdmin]);
 
@@ -185,7 +245,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return () => unsubId();
   }, [user?.uid, isAdmin]);
 
-  const { nextLesson, lastLesson } = useMemo(() => {
+  const nextLesson = useMemo(() => {
     const now = new Date();
     const getTime = (s) => {
       try {
@@ -203,10 +263,18 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       } catch (e) { return 0; }
     };
     const sorted = [...studentSessions].sort((a, b) => getTime(a) - getTime(b));
-    const next = sorted.find(s => getTime(s) > now.getTime());
-    const past = [...sorted].reverse().find(s => getTime(s) < now.getTime());
-    return { nextLesson: next, lastLesson: past };
+    return sorted.find(s => getTime(s) > now.getTime());
   }, [studentSessions]);
+
+  // Week chart summary: done days + average accuracy among completed days.
+  const weekPracticeSummary = useMemo(() => {
+    const done = weekPractice.filter((d) => d.completed && d.total > 0);
+    if (done.length === 0) return { doneCount: 0, avgPct: null };
+    const avgPct = Math.round(
+      done.reduce((sum, d) => sum + (d.score / d.total) * 100, 0) / done.length,
+    );
+    return { doneCount: done.length, avgPct };
+  }, [weekPractice]);
 
   // profile comes from the shared ProfileContext — no per-component listener.
 
@@ -296,15 +364,94 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
               </div>
-              <div data-press {...liftHover} onClick={() => lastLesson && setSelectedViewSession(lastLesson)} style={{ flex: 1, background: 'white', borderRadius: '28px', padding: '12px 24px', boxShadow: '0 15px 35px rgba(0,0,0,0.06)', border: '1px solid #f1f5f9', position: 'relative', overflow: 'hidden', cursor: lastLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
-                <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.06, color: '#6366f1' }}><CheckCircle2 size={120} /></div>
-                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', marginBottom: '4px' }}>Previous Lesson</label>
-                {lastLesson ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                    <h4 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 900, color: '#1e1b4b' }}>{normalizeSubjectLabel(lastLesson.subject)}</h4>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.9rem', fontWeight: 600, color: '#64748b' }}><CheckCircle2 size={16} style={{ color: '#10b981' }} />Completed {lastLesson.date}</div>
-                  </div>
-                ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem', color: '#cbd5e1' }}>No past lessons.</p>}
+              {/* Daily Practice · this week bar chart (replaces Previous Lesson) */}
+              <div
+                data-press
+                {...liftHover}
+                onClick={() => setActiveTab?.('Challenge')}
+                style={{
+                  flex: 1,
+                  background: 'white',
+                  borderRadius: '28px',
+                  padding: '14px 18px 12px',
+                  boxShadow: '0 15px 35px rgba(0,0,0,0.06)',
+                  border: '1px solid #f1f5f9',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  minHeight: '148px',
+                  transition: 'transform 0.2s, box-shadow 0.2s',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', gap: '8px' }}>
+                  <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
+                    Daily Practice · This Week
+                  </label>
+                  <span style={{ fontSize: '0.72rem', fontWeight: 800, color: '#6366f1', background: '#eef2ff', padding: '3px 9px', borderRadius: '999px', whiteSpace: 'nowrap' }}>
+                    {weekPracticeSummary.doneCount > 0
+                      ? `${weekPracticeSummary.doneCount}/7 · avg ${weekPracticeSummary.avgPct}%`
+                      : '0/7 done'}
+                  </span>
+                </div>
+
+                <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '6px', minHeight: '88px', paddingTop: '4px' }}>
+                  {(weekPractice.length > 0 ? weekPractice : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => ({ day, score: 0, total: 0, completed: false, isToday: false }))).map((d) => {
+                    const pct = d.completed && d.total > 0 ? Math.max(8, Math.round((d.score / d.total) * 100)) : 0;
+                    const barH = d.completed && d.total > 0 ? `${pct}%` : '6px';
+                    const good = d.completed && d.total > 0 && (d.score / d.total) >= 0.7;
+                    const mid = d.completed && d.total > 0 && (d.score / d.total) >= 0.4;
+                    const barBg = !d.completed
+                      ? (d.isToday ? '#e0e7ff' : '#f1f5f9')
+                      : good
+                        ? 'linear-gradient(180deg, #818cf8, #6366f1)'
+                        : mid
+                          ? 'linear-gradient(180deg, #a5b4fc, #818cf8)'
+                          : 'linear-gradient(180deg, #c7d2fe, #a5b4fc)';
+                    return (
+                      <div
+                        key={d.day}
+                        title={d.completed && d.total > 0 ? `${d.day}: ${d.score}/${d.total}` : `${d.day}: not done`}
+                        style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', minWidth: 0, height: '100%' }}
+                      >
+                        <div style={{ flex: 1, width: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minHeight: 0 }}>
+                          <div
+                            style={{
+                              width: '100%',
+                              maxWidth: '28px',
+                              height: barH,
+                              minHeight: d.completed ? '10px' : '6px',
+                              borderRadius: '8px 8px 6px 6px',
+                              background: barBg,
+                              boxShadow: d.completed ? '0 4px 10px rgba(99,102,241,0.22)' : 'none',
+                              transition: 'height 0.35s ease',
+                              border: d.isToday && !d.completed ? '1.5px dashed #a5b4fc' : 'none',
+                            }}
+                          />
+                        </div>
+                        <span style={{
+                          fontSize: '0.65rem',
+                          fontWeight: 800,
+                          color: d.isToday ? '#6366f1' : '#94a3b8',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.04em',
+                        }}>
+                          {d.day}
+                        </span>
+                        <span style={{
+                          fontSize: '0.6rem',
+                          fontWeight: 800,
+                          color: d.completed ? '#475569' : '#cbd5e1',
+                          lineHeight: 1,
+                          fontVariantNumeric: 'tabular-nums',
+                        }}>
+                          {d.completed && d.total > 0 ? `${d.score}/${d.total}` : '—'}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           </div>
