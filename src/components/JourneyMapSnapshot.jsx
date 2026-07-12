@@ -170,8 +170,8 @@ export default function JourneyMapSnapshot({ profile, onClick }) {
   const firstName = name.split(' ')[0];
   const title = firstName ? `${firstName}'s Journey Map` : 'My Journey Map';
 
-  // Original full-bleed canvas design — only the card height is reduced.
-  const CARD_H = 120;
+  // Match Dashboard side-column cards (Next Lesson + Daily Practice).
+  const CARD_H = 156;
 
   return (
     <div
@@ -187,7 +187,9 @@ export default function JourneyMapSnapshot({ profile, onClick }) {
         transition: 'transform 0.2s, box-shadow 0.2s',
         height: CARD_H,
         minHeight: CARD_H,
-        flexShrink: 0,
+        maxHeight: CARD_H,
+        flex: '0 0 auto',
+        boxSizing: 'border-box',
       }}
       onMouseEnter={e => {
         e.currentTarget.style.transform = 'translateY(-3px)';

@@ -386,7 +386,31 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               />
               {/* Daily Calculation 메달 진열장 (Auto Mode) */}
               {profile?.calcAutoMode === true && <MedalShelf uid={user?.uid} />}
-              <div data-press {...liftHover} onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
+              {/* Journey Map / Next Lesson / Daily Practice share SIDE_CARD_H (156px) */}
+              <div
+                data-press
+                {...liftHover}
+                onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
+                style={{
+                  flex: '0 0 auto',
+                  height: 156,
+                  minHeight: 156,
+                  maxHeight: 156,
+                  boxSizing: 'border-box',
+                  background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
+                  borderRadius: '28px',
+                  padding: '16px 24px',
+                  color: 'white',
+                  boxShadow: '0 15px 35px rgba(99,102,241,0.25)',
+                  position: 'relative',
+                  overflow: 'hidden',
+                  cursor: nextLesson ? 'pointer' : 'default',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'center',
+                  transition: 'transform 0.2s, box-shadow 0.2s',
+                }}
+              >
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}><Calendar size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
                 {nextLesson ? (
@@ -396,16 +420,20 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 ) : <p style={{ margin: 0, fontWeight: 700, fontSize: '1.1rem' }}>No upcoming lessons.</p>}
               </div>
-              {/* Daily Practice · this week bar chart (replaces Previous Lesson) */}
+              {/* Daily Practice week bar chart */}
               <div
                 data-press
                 {...liftHover}
                 onClick={() => setActiveTab?.('Challenge')}
                 style={{
-                  flex: 1,
+                  flex: '0 0 auto',
+                  height: 156,
+                  minHeight: 156,
+                  maxHeight: 156,
+                  boxSizing: 'border-box',
                   background: 'white',
                   borderRadius: '28px',
-                  padding: '14px 18px 12px',
+                  padding: '12px 18px 10px',
                   boxShadow: '0 15px 35px rgba(0,0,0,0.06)',
                   border: '1px solid #f1f5f9',
                   position: 'relative',
@@ -413,11 +441,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   cursor: 'pointer',
                   display: 'flex',
                   flexDirection: 'column',
-                  minHeight: '148px',
                   transition: 'transform 0.2s, box-shadow 0.2s',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', gap: '8px', flexWrap: 'wrap' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '6px', gap: '8px', flexWrap: 'wrap', flexShrink: 0 }}>
                   <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
                     Daily Practice
                   </label>
@@ -473,10 +500,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   </div>
                 </div>
 
-                <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '6px', minHeight: '88px', paddingTop: '4px' }}>
+                <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '5px', minHeight: 0, paddingTop: '2px' }}>
                   {(weekPractice.length > 0 ? weekPractice : ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].map((day) => ({ day, score: 0, total: 0, completed: false, isToday: false }))).map((d) => {
-                    const pct = d.completed && d.total > 0 ? Math.max(8, Math.round((d.score / d.total) * 100)) : 0;
-                    const barH = d.completed && d.total > 0 ? `${pct}%` : '6px';
+                    const pct = d.completed && d.total > 0 ? Math.max(10, Math.round((d.score / d.total) * 100)) : 0;
+                    const barH = d.completed && d.total > 0 ? `${pct}%` : '5px';
                     const good = d.completed && d.total > 0 && (d.score / d.total) >= 0.7;
                     const mid = d.completed && d.total > 0 && (d.score / d.total) >= 0.4;
                     const barBg = !d.completed
@@ -490,16 +517,16 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                       <div
                         key={d.day}
                         title={d.completed && d.total > 0 ? `${d.day}: ${d.score}/${d.total}` : `${d.day}: not done`}
-                        style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '6px', minWidth: 0, height: '100%' }}
+                        style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', minWidth: 0, height: '100%' }}
                       >
                         <div style={{ flex: 1, width: '100%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', minHeight: 0 }}>
                           <div
                             style={{
                               width: '100%',
-                              maxWidth: '28px',
+                              maxWidth: '26px',
                               height: barH,
-                              minHeight: d.completed ? '10px' : '6px',
-                              borderRadius: '8px 8px 6px 6px',
+                              minHeight: d.completed ? '8px' : '5px',
+                              borderRadius: '7px 7px 5px 5px',
                               background: barBg,
                               boxShadow: d.completed ? '0 4px 10px rgba(99,102,241,0.22)' : 'none',
                               transition: 'height 0.35s ease',
@@ -508,7 +535,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                           />
                         </div>
                         <span style={{
-                          fontSize: '0.65rem',
+                          fontSize: '0.62rem',
                           fontWeight: 800,
                           color: d.isToday ? '#6366f1' : '#94a3b8',
                           textTransform: 'uppercase',
@@ -517,7 +544,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                           {d.day}
                         </span>
                         <span style={{
-                          fontSize: '0.6rem',
+                          fontSize: '0.58rem',
                           fontWeight: 800,
                           color: d.completed ? '#475569' : '#cbd5e1',
                           lineHeight: 1,
