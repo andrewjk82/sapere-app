@@ -170,64 +170,83 @@ export default function JourneyMapSnapshot({ profile, onClick }) {
   const firstName = name.split(' ')[0];
   const title = firstName ? `${firstName}'s Journey Map` : 'My Journey Map';
 
+  // Compact card — same footprint as Next Lesson (thin horizontal strip).
   return (
     <div
       onClick={onClick}
       style={{
         position: 'relative',
+        flex: 1,
         borderRadius: '28px',
         overflow: 'hidden',
         cursor: 'pointer',
-        background: '#09090f',
-        boxShadow: '0 15px 40px rgba(99,102,241,0.2)',
+        background: 'linear-gradient(135deg, #1e1b4b, #312e81)',
+        boxShadow: '0 15px 35px rgba(30,27,75,0.25)',
         border: '1px solid rgba(129,140,248,0.2)',
         transition: 'transform 0.2s, box-shadow 0.2s',
-        minHeight: '180px',
+        minHeight: '82px',
+        padding: '12px 24px',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '14px',
+        color: 'white',
       }}
       onMouseEnter={e => {
         e.currentTarget.style.transform = 'translateY(-3px)';
-        e.currentTarget.style.boxShadow = '0 22px 50px rgba(99,102,241,0.32)';
+        e.currentTarget.style.boxShadow = '0 18px 40px rgba(49,46,129,0.35)';
       }}
       onMouseLeave={e => {
         e.currentTarget.style.transform = '';
-        e.currentTarget.style.boxShadow = '0 15px 40px rgba(99,102,241,0.2)';
+        e.currentTarget.style.boxShadow = '0 15px 35px rgba(30,27,75,0.25)';
       }}
     >
-      {/* Canvas fills the card */}
-      <canvas
-        ref={canvasRef}
-        style={{ display: 'block', width: '100%', height: '100%', minHeight: '180px' }}
-      />
+      {/* Small animated mini-map thumbnail (keeps the journey feel without tall height) */}
+      <div
+        style={{
+          width: '52px',
+          height: '52px',
+          borderRadius: '14px',
+          overflow: 'hidden',
+          flexShrink: 0,
+          border: '1px solid rgba(129,140,248,0.35)',
+          boxShadow: '0 6px 14px rgba(0,0,0,0.25)',
+          background: '#09090f',
+        }}
+      >
+        <canvas
+          ref={canvasRef}
+          style={{ display: 'block', width: '100%', height: '100%' }}
+        />
+      </div>
 
-      {/* Overlay text */}
-      <div style={{
-        position: 'absolute', inset: 0,
-        display: 'flex', flexDirection: 'column',
-        justifyContent: 'flex-end',
-        padding: '20px 22px',
-        background: 'linear-gradient(to top, rgba(9,9,15,0.85) 0%, transparent 60%)',
-        pointerEvents: 'none',
-      }}>
-        <div style={{ fontSize: '0.6rem', fontWeight: 800, letterSpacing: '0.15em', textTransform: 'uppercase', color: '#818cf8', marginBottom: '4px' }}>
-          Interactive 3D Map
-        </div>
-        <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#fff', lineHeight: 1.2 }}>
+      <div style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '2px' }}>
+        <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', margin: 0 }}>
+          Journey Map
+        </label>
+        <h4 style={{ margin: 0, fontSize: '1.25rem', fontWeight: 900, color: 'white', lineHeight: 1.15, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
           {title}
-        </div>
-        <div style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.5)', marginTop: '3px' }}>
+        </h4>
+        <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'rgba(255,255,255,0.85)' }}>
           Year 1 – 12 · tap to explore
         </div>
       </div>
 
-      {/* Arrow badge */}
-      <div style={{
-        position: 'absolute', top: '16px', right: '16px',
-        width: '32px', height: '32px', borderRadius: '10px',
-        background: 'rgba(129,140,248,0.2)',
-        border: '1px solid rgba(129,140,248,0.35)',
-        display: 'grid', placeItems: 'center',
-        color: '#818cf8', fontSize: '1rem', pointerEvents: 'none',
-      }}>↗</div>
+      <div
+        style={{
+          width: '32px',
+          height: '32px',
+          borderRadius: '10px',
+          background: 'rgba(255,255,255,0.15)',
+          display: 'grid',
+          placeItems: 'center',
+          color: '#fff',
+          fontSize: '0.95rem',
+          flexShrink: 0,
+          pointerEvents: 'none',
+        }}
+      >
+        ↗
+      </div>
     </div>
   );
 }
