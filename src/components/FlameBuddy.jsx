@@ -152,14 +152,43 @@ const COPY = {
     { msg: "Practice complete{commaName}. Streak safe. Flame happy.", sub: "You've earned a break — seriously." },
     { msg: "That's a full day of work{commaName}. Nice one!", sub: "Andrew would be nodding approvingly right now." },
   ],
+  // Soft, friendly Secret Note prompts. Count is phrased gently via {countPhrase}.
   secretNote: [
-    { msg: "Hey {Name}, your Secret Note has a few things to review.", sub: "A quick look now means those mistakes won't stick. Want to peek?" },
-    { msg: "Secret Note's waving at you{commaName} with some review items.", sub: "Short review, stronger memory. Worth it." },
-    { msg: "Psst{name} — a couple of old mistakes want a rematch.", sub: "Jump into Secret Note when you have a minute." },
+    {
+      msg: "Hey {Name} — got a quiet minute?",
+      sub: "Your Secret Note has {countPhrase} ready for a friendly rematch. No pressure — even one or two helps them stick less next time.",
+    },
+    {
+      msg: "Psst{name}… your old mistakes are being very polite today.",
+      sub: "There's {countPhrase} waiting in Secret Note. Peek when you feel like it — small reviews, big payoff.",
+    },
+    {
+      msg: "{Name}, want a tiny brain-boost?",
+      sub: "Secret Note has {countPhrase} lined up. Think of it as a chat with past-you, not a test.",
+    },
+    {
+      msg: "Whenever you're free{commaName}, I've got something light.",
+      sub: "{countPhraseCapital} in your Secret Note would love a quick look. Start with any one — you're allowed to stop anytime.",
+    },
+    {
+      msg: "Hey {Name}, practice is done — nice work.",
+      sub: "If you've got a spare moment, Secret Note has {countPhrase}. Totally optional, totally worth it.",
+    },
   ],
   idle: [
     { msg: "I'm right here if you need a little nudge{commaName}!", sub: "Tap me anytime — happy to chat." },
   ],
+};
+
+/** Soft English for due-count (avoid "137 items"). */
+const secretNoteCountPhrase = (n) => {
+  if (n <= 0) return 'a few notes';
+  if (n === 1) return 'one note';
+  if (n <= 5) return 'a few notes';
+  if (n <= 15) return 'a little stack of notes';
+  if (n <= 40) return 'a decent pile of notes';
+  if (n <= 80) return 'quite a few notes waiting';
+  return 'a big stack of notes waiting';
 };
 
 /** Given-name only, English UI. Empty if unknown. */
@@ -173,15 +202,19 @@ const studentFirstName = (profile) => {
   return raw.split(/\s+/)[0];
 };
 
-/** Fill {name} / {Name} / {heyName} / {commaName} placeholders. */
-const withName = (text, firstName) => {
+/** Fill name + optional count placeholders. */
+const fillTemplate = (text, firstName, extras = {}) => {
   if (!text) return text;
   const n = firstName || '';
-  return String(text)
+  let out = String(text)
     .replaceAll('{heyName}', n ? `Hey ${n}` : 'Hey')
     .replaceAll('{commaName}', n ? `, ${n}` : '')
     .replaceAll('{name}', n ? ` ${n}` : '')
     .replaceAll('{Name}', n || 'friend');
+  Object.entries(extras).forEach(([key, val]) => {
+    out = out.replaceAll(`{${key}}`, val == null ? '' : String(val));
+  });
+  return out;
 };
 
 /** Stable pick so the line doesn't change every re-render (changes by day + stage). */
@@ -191,12 +224,12 @@ const hashSeed = (str) => {
   return Math.abs(h);
 };
 
-const pickLine = (lines, seed, firstName = '') => {
+const pickLine = (lines, seed, firstName = '', extras = {}) => {
   if (!lines?.length) return { msg: '', sub: '' };
   const line = lines[hashSeed(seed) % lines.length];
   return {
-    msg: withName(line.msg, firstName),
-    sub: withName(line.sub, firstName),
+    msg: fillTemplate(line.msg, firstName, extras),
+    sub: fillTemplate(line.sub, firstName, extras),
   };
 };
 
@@ -263,7 +296,7 @@ const buildScheduleSpeech = (session, firstName = '') => {
     return {
       mood: 'idle',
       eyebrow: 'Schedule',
-      msg: withName("Hmm{commaName}, nothing booked on your calendar right now.", firstName),
+      msg: fillTemplate("Hmm{commaName}, nothing booked on your calendar right now.", firstName),
       sub: "When your tutor adds a class, I'll remind you here — promise!",
       cta: null,
       key: 'sched-empty',
@@ -632,13 +665,18 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
     if (!needDaily && !needCalc) {
       if (dueNotes > 0) {
-        const line = pickLine(COPY.secretNote, `${seedBase}-note`, firstName);
+        const countPhrase = secretNoteCountPhrase(dueNotes);
+        const countPhraseCapital = countPhrase.charAt(0).toUpperCase() + countPhrase.slice(1);
+        const line = pickLine(COPY.secretNote, `${seedBase}-note`, firstName, {
+          countPhrase,
+          countPhraseCapital,
+        });
         return {
           mood: 'hint',
-          eyebrow: 'Secret Note',
+          eyebrow: 'A gentle nudge',
           msg: line.msg,
-          sub: `${dueNotes} item${dueNotes === 1 ? '' : 's'} · ${line.sub}`,
-          cta: { label: 'Review now', tab: 'Challenge' },
+          sub: line.sub,
+          cta: { label: 'Take a peek', tab: 'Challenge' },
           key: `note-${today}-${dueNotes}`,
         };
       }
