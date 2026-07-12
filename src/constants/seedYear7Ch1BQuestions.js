@@ -5742,18 +5742,84 @@ export const Y7_CH1B_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Draw the first segment AB and label it 4 cm.",
-        "workingOut": "",
-        "graphData": null
+        "workingOut": "\\\\( AB = 4 \\\\text{ cm} \\\\)",
+        "graphData": {
+          "geometry": {
+            "showPointLabels": false,
+            "points": {
+              "_A": [0, 0], "_B": [4, 0],
+              "_lblA": [0, -0.4], "_lblB": [4, -0.4],
+              "_lblAB": [2, 0.4]
+            },
+            "segments": [
+              { "from": "_A", "to": "_B" }
+            ],
+            "freeLabels": [
+              { "at": "_lblA", "text": "A", "italic": true },
+              { "at": "_lblB", "text": "B", "italic": true },
+              { "at": "_lblAB", "text": "4 cm", "italic": false }
+            ]
+          }
+        }
       },
       {
         "explanation": "Draw the adjacent segment BC (5 cm) and the final segment CD (6 cm) in a straight line.",
-        "workingOut": "",
-        "graphData": null
+        "workingOut": "\\\\( BC = 5 \\\\text{ cm}, \\\\; CD = 6 \\\\text{ cm} \\\\)",
+        "graphData": {
+          "geometry": {
+            "showPointLabels": false,
+            "points": {
+              "_A": [0, 0], "_B": [4, 0], "_C": [9, 0], "_D": [15, 0],
+              "_lblA": [0, -0.4], "_lblB": [4, -0.4], "_lblC": [9, -0.4], "_lblD": [15, -0.4],
+              "_lblAB": [2, 0.4], "_lblBC": [6.5, 0.4], "_lblCD": [12, 0.4]
+            },
+            "segments": [
+              { "from": "_A", "to": "_B" },
+              { "from": "_B", "to": "_C" },
+              { "from": "_C", "to": "_D" }
+            ],
+            "freeLabels": [
+              { "at": "_lblA", "text": "A", "italic": true },
+              { "at": "_lblB", "text": "B", "italic": true },
+              { "at": "_lblC", "text": "C", "italic": true },
+              { "at": "_lblD", "text": "D", "italic": true },
+              { "at": "_lblAB", "text": "4 cm", "italic": false },
+              { "at": "_lblBC", "text": "5 cm", "italic": false },
+              { "at": "_lblCD", "text": "6 cm", "italic": false }
+            ]
+          }
+        }
       },
       {
         "explanation": "Calculate and label the total length of segment AD.",
         "workingOut": "\\\\( AD = 4 + 5 + 6 = 15 \\\\text{ cm} \\\\)",
-        "graphData": null
+        "graphData": {
+          "geometry": {
+            "showPointLabels": false,
+            "points": {
+              "_A": [0, 0], "_B": [4, 0], "_C": [9, 0], "_D": [15, 0],
+              "_lblA": [0, -0.4], "_lblB": [4, -0.4], "_lblC": [9, -0.4], "_lblD": [15, -0.4],
+              "_lblAB": [2, 0.4], "_lblBC": [6.5, 0.4], "_lblCD": [12, 0.4],
+              "_bracket_start": [0, -0.8], "_bracket_end": [15, -0.8],
+              "_lblAD": [7.5, -1.3]
+            },
+            "segments": [
+              { "from": "_A", "to": "_B" },
+              { "from": "_B", "to": "_C" },
+              { "from": "_C", "to": "_D" }
+            ],
+            "freeLabels": [
+              { "at": "_lblA", "text": "A", "italic": true },
+              { "at": "_lblB", "text": "B", "italic": true },
+              { "at": "_lblC", "text": "C", "italic": true },
+              { "at": "_lblD", "text": "D", "italic": true },
+              { "at": "_lblAB", "text": "4 cm", "italic": false },
+              { "at": "_lblBC", "text": "5 cm", "italic": false },
+              { "at": "_lblCD", "text": "6 cm", "italic": false },
+              { "at": "_lblAD", "text": "Total AD = 15 cm", "italic": false }
+            ]
+          }
+        }
       }
     ]
   }
