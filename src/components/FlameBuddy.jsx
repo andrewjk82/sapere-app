@@ -429,21 +429,26 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
-  // Fairy-pop entrance: hidden → wait ~1s → scale/pop in.
-  const [arrived, setArrived] = useState(false);
-  const [enterAnim, setEnterAnim] = useState(false);
+  // Entrance phase: hidden → pre → enter (pop) → ready (always visible after).
+  // IMPORTANT: remounts (e.g. after Challenge unlocks isLocked) must use "ready",
+  // never stick on "pre" (opacity 0) — that was making the avatar vanish.
+  const [phase, setPhase] = useState('hidden'); // hidden | pre | enter | ready
 
   const calcEnabled = profile?.calculationEnabled !== false;
   const today = new Date().toLocaleDateString('en-CA');
   const firstName = useMemo(() => studentFirstName(profile), [profile]);
 
-  // First mount this session: wait ~1s, then pop in like a fairy appearing.
-  // Later remounts in the same tab session appear immediately (no re-delay).
+  // First appearance this browser session: wait ~1s, then fairy pop-in.
+  // Later remounts in the same session appear immediately as "ready".
   useEffect(() => {
-    if (!uid || hidden) return undefined;
+    if (!uid || hidden) {
+      return undefined;
+    }
     let showTimer;
-    let animTimer;
+    let settleTimer;
     let bubbleTimer;
+    let raf1 = 0;
+    let raf2 = 0;
     const sessionKey = `sapere:flame-buddy-arrived:${uid}`;
     let already = false;
     try {
@@ -451,29 +456,33 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     } catch { /* ignore */ }
 
     if (already) {
-      setArrived(true);
-      setEnterAnim(false);
+      setPhase('ready');
       setBubbleOpen(true);
       return undefined;
     }
 
     showTimer = setTimeout(() => {
-      setArrived(true);
-      // Double-rAF so the browser paints the pre-enter frame before animating.
-      requestAnimationFrame(() => {
-        requestAnimationFrame(() => setEnterAnim(true));
+      setPhase('pre');
+      // Paint invisible pre frame, then kick the enter animation.
+      raf1 = requestAnimationFrame(() => {
+        raf2 = requestAnimationFrame(() => {
+          setPhase('enter');
+          try {
+            sessionStorage.setItem(sessionKey, '1');
+          } catch { /* ignore */ }
+          // After the bounce, lock into ready so remounts never go invisible.
+          settleTimer = setTimeout(() => setPhase('ready'), 750);
+          bubbleTimer = setTimeout(() => setBubbleOpen(true), 450);
+        });
       });
-      try {
-        sessionStorage.setItem(sessionKey, '1');
-      } catch { /* ignore */ }
-      // Speech bubble follows the pop (after the bounce settles).
-      bubbleTimer = setTimeout(() => setBubbleOpen(true), 450);
     }, 1000);
 
     return () => {
       clearTimeout(showTimer);
-      clearTimeout(animTimer);
+      clearTimeout(settleTimer);
       clearTimeout(bubbleTimer);
+      if (raf1) cancelAnimationFrame(raf1);
+      if (raf2) cancelAnimationFrame(raf2);
     };
   }, [uid, hidden]);
 
@@ -671,13 +680,17 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     setBubbleOpen(true);
   }, [situation?.key, dismissedKey, activeTab]);
 
-  if (hidden || !uid || !arrived) return null;
+  if (hidden || !uid || phase === 'hidden') return null;
 
   const showBubble = bubbleOpen && dismissedKey !== situation.key;
+  const phaseClass =
+    phase === 'enter' ? 'fb-root--enter'
+      : phase === 'pre' ? 'fb-root--pre'
+        : 'fb-root--ready';
 
   return (
     <div
-      className={`fb-root${enterAnim ? ' fb-root--enter' : ' fb-root--pre'}`}
+      className={`fb-root ${phaseClass}`}
       role="complementary"
       aria-label="Flame coach"
     >

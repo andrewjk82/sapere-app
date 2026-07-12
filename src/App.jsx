@@ -1279,13 +1279,16 @@ function App() {
         </ErrorBoundary>
       </div>
 
-      {/* Floating flame coach — students only; hides during exam / lock / admin */}
-      {!isAdmin && user?.uid && !examInProgress && !isLocked && (
+      {/* Floating flame coach — students only.
+          Stay mounted across Challenge lock so remount never leaves it stuck
+          invisible; hide visually/quietly while exam or quiz is active. */}
+      {!isAdmin && user?.uid && (
         <FlameBuddy
           uid={user.uid}
           profile={profile || sharedProfile}
           activeTab={activeTab}
           setActiveTab={handleTabChange}
+          hidden={examInProgress || isLocked}
         />
       )}
 

@@ -14,11 +14,18 @@
   transform-origin: 85% 95%;
 }
 
-/* Pre-enter frame (invisible, tiny) — painted before fb-root--enter runs */
+/* Pre-enter frame (invisible, tiny) — only used for the first-ever pop-in */
 .fb-root--pre {
   opacity: 0;
   transform: scale(0.12) translateY(28px);
   filter: blur(6px);
+}
+
+/* Settled / remounted after first appearance — always fully visible */
+.fb-root--ready {
+  opacity: 1;
+  transform: none;
+  filter: none;
 }
 
 /* Fairy pop-in: wait is handled in JS (~1s), then this bounce appears */
@@ -499,7 +506,8 @@
   .fb-root--enter, .fb-burst {
     animation: none !important;
   }
-  .fb-root--pre {
+  .fb-root--pre,
+  .fb-root--ready {
     opacity: 1;
     transform: none;
     filter: none;
