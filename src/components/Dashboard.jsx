@@ -46,6 +46,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
   // Mon→Sun daily practice results for the dashboard bar chart.
   // [{ day, dateStr, score, total, completed, isToday }]
   const [weekPractice, setWeekPractice] = useState([]);
+  // Bumped when Daily Practice finishes so we re-fetch even within the same day.
+  const [weekPracticeEpoch, setWeekPracticeEpoch] = useState(0);
   const { pendingGrading: feedPendingGrading } = useAdminFeed();
   const pendingGrading = useMemo(() => feedPendingGrading.slice(0, 5), [feedPendingGrading]);
   const [selectedGradingItem, setSelectedGradingItem] = useState(null);
@@ -94,8 +96,35 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     return () => { cancelled = true; };
   }, [user?.uid, isAdmin]);
 
+  // Live-refresh: when Daily Practice finishes, patch today's bar immediately
+  // and bump epoch so we re-read from Firestore (truth) in the background.
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return undefined;
+    const onPracticeDone = (event) => {
+      const detail = event?.detail || {};
+      if (detail.uid && detail.uid !== user.uid) return;
+      if (detail.date) {
+        setWeekPractice((prev) => prev.map((d) => (
+          d.dateStr === detail.date
+            ? {
+                ...d,
+                score: Number(detail.score) || 0,
+                total: Number(detail.total) || 0,
+                completed: detail.completed !== false,
+              }
+            : d
+        )));
+      }
+      setWeekPracticeEpoch((n) => n + 1);
+    };
+    window.addEventListener('sapere:daily-practice-completed', onPracticeDone);
+    return () => window.removeEventListener('sapere:daily-practice-completed', onPracticeDone);
+  }, [user?.uid, isAdmin]);
+
   // This week's Daily Practice scores (Mon→Sun) for the bar chart card.
-  // 7 point-reads by doc id — no collection scan. Cached for the calendar day.
+  // 7 point-reads by doc id — no collection scan.
+  // Cached for the calendar day, but invalidated when practice finishes
+  // (see finishQuiz + weekPracticeEpoch).
   useEffect(() => {
     if (!user?.uid || isAdmin) return undefined;
 
@@ -116,7 +145,9 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
     const weekStart = weekDays[0].dateStr;
     const today = now.toLocaleDateString('en-CA');
     const cacheKey = `dashboard-week-practice-v1-${user.uid}`;
-    const cached = localCache.get(cacheKey);
+    // After a forced refresh (epoch > 0), skip cache so the new score shows up.
+    const allowCache = weekPracticeEpoch === 0;
+    const cached = allowCache ? localCache.get(cacheKey) : null;
     if (cached?.date === today && cached.weekStart === weekStart && Array.isArray(cached.days)) {
       setWeekPractice(cached.days);
       return undefined;
@@ -149,7 +180,7 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       }
     })();
     return () => { cancelled = true; };
-  }, [user?.uid, isAdmin]);
+  }, [user?.uid, isAdmin, weekPracticeEpoch]);
 
   const learningInsights = useMemo(() => {
     if (dailyStats.length === 0) return [];
