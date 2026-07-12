@@ -3,7 +3,7 @@
  * Visuals ported from flame_character_prototype.html.
  * Speaks friendly, conversational tips based on daily work + schedule.
  */
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, getDocs, limit, orderBy, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
@@ -546,6 +546,131 @@ function useLocalHour() {
   return d.getHours() + d.getMinutes() / 60;
 }
 
+/**
+ * Fast typewriter for bubble text.
+ * Types `msg` first, then `sub`. Calls onDone when finished.
+ * ~16ms/char (~60 chars/s) — snappy but readable.
+ */
+function useTypewriter(msg, sub, active, msPerChar = 15) {
+  const fullMsg = String(msg || '');
+  const fullSub = String(sub || '');
+  const [msgOut, setMsgOut] = useState('');
+  const [subOut, setSubOut] = useState('');
+  const [done, setDone] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    let timer;
+    const preferReduce = typeof window !== 'undefined'
+      && window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+
+    if (!active) {
+      setMsgOut('');
+      setSubOut('');
+      setDone(false);
+      return undefined;
+    }
+
+    if (preferReduce || (!fullMsg && !fullSub)) {
+      setMsgOut(fullMsg);
+      setSubOut(fullSub);
+      setDone(true);
+      return undefined;
+    }
+
+    setMsgOut('');
+    setSubOut('');
+    setDone(false);
+
+    let i = 0;
+    let phase = 'msg'; // msg → pause → sub → done
+
+    const schedule = (fn, ms) => {
+      clearTimeout(timer);
+      timer = setTimeout(fn, ms);
+    };
+
+    const tick = () => {
+      if (cancelled) return;
+      if (phase === 'msg') {
+        i += 1;
+        setMsgOut(fullMsg.slice(0, i));
+        if (i >= fullMsg.length) {
+          if (fullSub) {
+            phase = 'pause';
+            i = 0;
+            schedule(tick, 100);
+          } else {
+            setDone(true);
+          }
+          return;
+        }
+        const ch = fullMsg[i - 1];
+        schedule(tick, ch === ' ' ? msPerChar * 0.5 : msPerChar);
+        return;
+      }
+      if (phase === 'pause') {
+        phase = 'sub';
+        schedule(tick, msPerChar);
+        return;
+      }
+      if (phase === 'sub') {
+        i += 1;
+        setSubOut(fullSub.slice(0, i));
+        if (i >= fullSub.length) {
+          setDone(true);
+          return;
+        }
+        const ch = fullSub[i - 1];
+        schedule(tick, ch === ' ' ? msPerChar * 0.5 : msPerChar);
+      }
+    };
+
+    schedule(tick, 30);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [msg, sub, active, msPerChar, fullMsg, fullSub]);
+
+  return { msgOut, subOut, done };
+}
+
+function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss }) {
+  const { msgOut, subOut, done } = useTypewriter(msg, sub, true, 14);
+  const fullMsgLen = String(msg || '').length;
+  const typingMsg = !done && msgOut.length < fullMsgLen;
+  const typingSub = !done && !typingMsg && Boolean(sub);
+
+  return (
+    <div className="fb-bubble">
+      {eyebrow && <div className="fb-bubble__eyebrow">{eyebrow}</div>}
+      <p className="fb-bubble__msg">
+        {msgOut}
+        {typingMsg && <span className="fb-caret" aria-hidden />}
+      </p>
+      {(subOut || typingSub || (done && sub)) && (
+        <p className="fb-bubble__sub">
+          {subOut}
+          {typingSub && <span className="fb-caret" aria-hidden />}
+        </p>
+      )}
+      {done && (
+        <div className="fb-bubble__actions fb-bubble__actions--in">
+          {cta && (
+            <button type="button" className="fb-bubble__cta" onClick={onCta}>
+              {cta.label}
+            </button>
+          )}
+          <button type="button" className="fb-bubble__dismiss" onClick={onDismiss}>
+            Got it
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
 function FlameSvg() {
   return (
     <svg viewBox="0 0 100 130" width="88" height="114" aria-hidden>
@@ -1001,35 +1126,21 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     >
       <div className="fb-burst" aria-hidden />
       {showBubble && (
-        <div className="fb-bubble">
-          <div className="fb-bubble__eyebrow">{situation.eyebrow}</div>
-          <p className="fb-bubble__msg">{situation.msg}</p>
-          {situation.sub && <p className="fb-bubble__sub">{situation.sub}</p>}
-          <div className="fb-bubble__actions">
-            {situation.cta && (
-              <button
-                type="button"
-                className="fb-bubble__cta"
-                onClick={() => {
-                  setActiveTab?.(situation.cta.tab);
-                  setBubbleOpen(false);
-                }}
-              >
-                {situation.cta.label}
-              </button>
-            )}
-            <button
-              type="button"
-              className="fb-bubble__dismiss"
-              onClick={() => {
-                setDismissedKey(situation.key);
-                setBubbleOpen(false);
-              }}
-            >
-              Got it
-            </button>
-          </div>
-        </div>
+        <BubbleTypewriter
+          key={situation.key}
+          eyebrow={situation.eyebrow}
+          msg={situation.msg}
+          sub={situation.sub}
+          cta={situation.cta}
+          onCta={() => {
+            setActiveTab?.(situation.cta.tab);
+            setBubbleOpen(false);
+          }}
+          onDismiss={() => {
+            setDismissedKey(situation.key);
+            setBubbleOpen(false);
+          }}
+        />
       )}
 
       <div
