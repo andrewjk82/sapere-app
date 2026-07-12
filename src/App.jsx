@@ -94,7 +94,13 @@ import { CURRENT_APP_VERSION } from './constants/appVersion';
 import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
-import { pruneBlocked, applyTeacherApprovals as applySecretNoteApprovals, applyTeacherReset as applySecretNoteReset } from './utils/secretNote';
+import {
+  pruneBlocked,
+  applyTeacherApprovals as applySecretNoteApprovals,
+  applyTeacherReset as applySecretNoteReset,
+  filterUnappliedTeacherApprovals,
+  markTeacherApprovalsApplied,
+} from './utils/secretNote';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -452,9 +458,10 @@ function App() {
   // Teacher approvals queued on the student's user doc:
   //  - secretNoteApprovals → graduate (remove) the approved note locally
   //  - examPrepApprovals   → count the approved answer as correct in local stats
-  // Applied live, then the queue fields are cleared so they run exactly once.
-  // Reads the shared ProfileContext snapshot instead of opening a second
-  // onSnapshot on the same users/{uid} doc (every profile write was billed 2×).
+  // Secret Note approvals: apply once on-device (localStorage fingerprint) and
+  // do NOT write back to clear the queue — saves 1 Firestore write per approve.
+  // Exam prep queues still clear (those arrays are short-lived work items).
+  // Uses shared ProfileContext (no second users/{uid} onSnapshot).
   useEffect(() => {
     if (!user?.uid || isAdmin || !sharedProfile) return undefined;
     const ref = doc(db, 'users', user.uid);
@@ -468,9 +475,15 @@ function App() {
       const clear = {};
       try {
         if (Array.isArray(noteApprovals) && noteApprovals.length) {
-          const n = applySecretNoteApprovals(user.uid, noteApprovals);
-          if (n > 0) showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
-          clear.secretNoteApprovals = deleteField();
+          const pending = filterUnappliedTeacherApprovals(user.uid, noteApprovals);
+          if (pending.length > 0) {
+            const n = applySecretNoteApprovals(user.uid, pending);
+            markTeacherApprovalsApplied(user.uid, pending);
+            if (n > 0) {
+              showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
+            }
+          }
+          // Intentionally no clear.secretNoteApprovals — local applied set is enough.
         }
         if (noteResets) {
           const kinds = Array.isArray(noteResets.kinds) ? noteResets.kinds : [];
@@ -482,7 +495,12 @@ function App() {
           const n = applyExamPrepApprovals(user.uid, examApprovals);
           // The approved question also sits in the exam-prep Secret Note deck
           // (wrong/pending answers are auto-added) — graduate it there too.
-          applySecretNoteApprovals(user.uid, examApprovals.map((a) => ({ kind: 'exam_prep', questionId: a.questionId })));
+          const examNotePayload = examApprovals.map((a) => ({ kind: 'exam_prep', questionId: a.questionId, approvedAt: a.approvedAt }));
+          const pendingExamNotes = filterUnappliedTeacherApprovals(user.uid, examNotePayload);
+          if (pendingExamNotes.length) {
+            applySecretNoteApprovals(user.uid, pendingExamNotes);
+            markTeacherApprovalsApplied(user.uid, pendingExamNotes);
+          }
           if (n > 0) {
             const comment = examApprovals.map(a => a?.teacherFeedback).find(Boolean);
             showToast(

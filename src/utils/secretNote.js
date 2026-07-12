@@ -251,6 +251,61 @@ export function pruneBlocked(uid, blockedIds) {
   return removed;
 }
 
+// ── Teacher approvals (low Firebase cost) ───────────────────────────────────
+// Approvals live on users/{uid}.secretNoteApprovals. We apply them once on the
+// device and remember the keys in localStorage — we do NOT write back to
+// Firestore to clear the queue (saves 1 write per approval).
+const appliedApprovalsKey = (uid) => `sapere:sn-approvals-applied:${uid || 'anon'}`;
+
+const approvalFingerprint = (a) => {
+  const qid = String(a?.questionId ?? '');
+  const kind = String(a?.kind ?? '');
+  const at = String(a?.approvedAt ?? '');
+  return `${kind}|${qid}|${at}`;
+};
+
+const readAppliedApprovalKeys = (uid) => {
+  try {
+    const raw = localStorage.getItem(appliedApprovalsKey(uid));
+    const arr = raw ? JSON.parse(raw) : [];
+    return new Set(Array.isArray(arr) ? arr.map(String) : []);
+  } catch {
+    return new Set();
+  }
+};
+
+const writeAppliedApprovalKeys = (uid, keySet) => {
+  try {
+    // Cap growth — keep the most recent ~400 fingerprints.
+    const list = [...keySet];
+    const trimmed = list.length > 400 ? list.slice(list.length - 400) : list;
+    localStorage.setItem(appliedApprovalsKey(uid), JSON.stringify(trimmed));
+  } catch { /* ignore quota / private mode */ }
+};
+
+/** Approvals not yet applied on this device (localStorage). */
+export function filterUnappliedTeacherApprovals(uid, approvals) {
+  if (!Array.isArray(approvals) || approvals.length === 0) return [];
+  const applied = readAppliedApprovalKeys(uid);
+  return approvals.filter((a) => {
+    const qid = String(a?.questionId ?? '');
+    if (!qid) return false;
+    return !applied.has(approvalFingerprint(a));
+  });
+}
+
+/** Mark approvals as applied locally so we never need a Firestore clear write. */
+export function markTeacherApprovalsApplied(uid, approvals) {
+  if (!uid || !Array.isArray(approvals) || approvals.length === 0) return;
+  const applied = readAppliedApprovalKeys(uid);
+  approvals.forEach((a) => {
+    const qid = String(a?.questionId ?? '');
+    if (!qid) return;
+    applied.add(approvalFingerprint(a));
+  });
+  writeAppliedApprovalKeys(uid, applied);
+}
+
 // Teacher-driven approvals: when a teacher approves a Secret Note review
 // request, the approval lands on the student's user doc
 // (secretNoteApprovals: [{ kind, questionId }]) and is applied here on the
