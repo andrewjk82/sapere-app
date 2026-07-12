@@ -386,13 +386,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
               />
               {/* Daily Calculation 메달 진열장 (Auto Mode) */}
               {profile?.calcAutoMode === true && <MedalShelf uid={user?.uid} />}
-              <div {...liftHover} style={{ flex: 1, background: 'linear-gradient(135deg, #1e1b4b, #312e81)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(30,27,75,0.2)', display: 'flex', flexDirection: 'column', justifyContent: 'center', position: 'relative', overflow: 'hidden', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
-                <div style={{ position: 'absolute', top: '-10px', right: '-10px', opacity: 0.1 }}><Trophy size={100} /></div>
-                <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Total XP</label>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px' }}>
-                  <h4 style={{ margin: 0, fontSize: '1.8rem', fontWeight: 900, color: 'white' }}>{profile?.totalXP || 0}</h4>
-                </div>
-              </div>
               <div data-press {...liftHover} onClick={() => nextLesson && setSelectedViewSession(nextLesson)} style={{ flex: 1, background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', borderRadius: '28px', padding: '12px 24px', color: 'white', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden', cursor: nextLesson ? 'pointer' : 'default', display: 'flex', flexDirection: 'column', justifyContent: 'center', minHeight: '82px', transition: 'transform 0.2s, box-shadow 0.2s' }}>
                 <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}><Calendar size={120} /></div>
                 <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>Next Lesson</label>
@@ -424,26 +417,47 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   transition: 'transform 0.2s, box-shadow 0.2s',
                 }}
               >
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', gap: '8px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px', gap: '8px', flexWrap: 'wrap' }}>
                   <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: '#94a3b8', margin: 0 }}>
                     Daily Practice · This Week
                   </label>
-                  <span
-                    style={{
-                      fontSize: '0.72rem',
-                      fontWeight: 800,
-                      color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
-                      background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
-                      padding: '3px 9px',
-                      borderRadius: '999px',
-                      whiteSpace: 'nowrap',
-                    }}
-                    title="Consecutive days of Daily Practice"
-                  >
-                    {practiceStreak > 0
-                      ? `🔥 ${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
-                      : 'No streak yet'}
-                  </span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexShrink: 0 }}>
+                    {/* XP moved here from the old Total XP card — sits left of streak */}
+                    <span
+                      style={{
+                        fontSize: '0.72rem',
+                        fontWeight: 800,
+                        color: '#4f46e5',
+                        background: 'linear-gradient(135deg, #eef2ff, #e0e7ff)',
+                        padding: '3px 9px',
+                        borderRadius: '999px',
+                        whiteSpace: 'nowrap',
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '4px',
+                      }}
+                      title="Total XP"
+                    >
+                      <Trophy size={12} strokeWidth={2.5} />
+                      {(Number(profile?.totalXP) || 0).toLocaleString()} XP
+                    </span>
+                    <span
+                      style={{
+                        fontSize: '0.72rem',
+                        fontWeight: 800,
+                        color: practiceStreak > 0 ? '#ea580c' : '#6366f1',
+                        background: practiceStreak > 0 ? '#fff7ed' : '#eef2ff',
+                        padding: '3px 9px',
+                        borderRadius: '999px',
+                        whiteSpace: 'nowrap',
+                      }}
+                      title="Consecutive days of Daily Practice"
+                    >
+                      {practiceStreak > 0
+                        ? `🔥 ${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
+                        : 'No streak yet'}
+                    </span>
+                  </div>
                 </div>
 
                 <div style={{ flex: 1, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '6px', minHeight: '88px', paddingTop: '4px' }}>
