@@ -9,29 +9,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 4 \\times 5m\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(4 \\times 5m\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 4 \\times 5m \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (4 \\times 5) \\times m = 20 \\times m \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(20m\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(20m\\\\).",
+        "workingOut": "\\\\( 20m \\\\)"
       }
     ],
     "graphData": null,
@@ -53,7 +40,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1b",
@@ -65,29 +53,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 3 \\times 7y\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(3 \\times 7y\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 3 \\times 7y \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (3 \\times 7) \\times y = 21 \\times y \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(21y\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(21y\\\\).",
+        "workingOut": "\\\\( 21y \\\\)"
       }
     ],
     "graphData": null,
@@ -109,7 +84,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1c",
@@ -121,29 +97,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers together and keep the variable.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 6 \\times 2n\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(6 \\times 2n\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 6 \\times 2n \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (6 \\times 2) \\times n = 12 \\times n \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(12n\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(12n\\\\).",
+        "workingOut": "\\\\( 12n \\\\)"
       }
     ],
     "graphData": null,
@@ -165,7 +128,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1d",
@@ -177,29 +141,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply the variables using index laws.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 5y \\times 3y\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(5y \\times 3y\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 5y \\times 3y \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (5 \\times 3) \\times (y \\times y) = 15 \\times y^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(15y^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(15y^2\\\\).",
+        "workingOut": "\\\\( 15y^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -221,7 +172,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1e",
@@ -233,29 +185,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply the variables.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 4p \\times 6p\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(4p \\times 6p\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 4p \\times 6p \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (4 \\times 6) \\times (p \\times p) = 24 \\times p^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(24p^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(24p^2\\\\).",
+        "workingOut": "\\\\( 24p^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -277,7 +216,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1f",
@@ -289,29 +229,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then write the variables together in alphabetical order.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 5a \\times 4b\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(5a \\times 4b\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 5a \\times 4b \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( (5 \\times 4) \\times (a \\times b) = 20 \\times ab \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(20ab\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(20ab\\\\).",
+        "workingOut": "\\\\( 20ab \\\\)"
       }
     ],
     "graphData": null,
@@ -333,7 +260,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1g",
@@ -345,29 +273,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 4mn \\times 5m\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(4mn \\times 5m\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 4mn \\times 5m \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 4 \\times 5 \\text{ and variables: } mn \\times m \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(20m^2n\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(20m^2n\\\\).",
+        "workingOut": "\\\\( 20m^2n \\\\)"
       }
     ],
     "graphData": null,
@@ -389,7 +304,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3f-q1h",
@@ -401,29 +317,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 3pq \\times 6pq\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(3pq \\times 6pq\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 3pq \\times 6pq \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 3 \\times 6 \\text{ and variables: } pq \\times pq \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(18p^2q^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(18p^2q^2\\\\).",
+        "workingOut": "\\\\( 18p^2q^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -445,7 +348,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q2a",
@@ -457,29 +361,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (4m)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((4m)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (4m)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( 4^2 \\times m^2 = 16 \\times m^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(16m^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(16m^2\\\\).",
+        "workingOut": "\\\\( 16m^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -501,7 +392,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3f-q2b",
@@ -513,29 +405,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (6y)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((6y)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (6y)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( 6^2 \\times y^2 = 36 \\times y^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(36y^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(36y^2\\\\).",
+        "workingOut": "\\\\( 36y^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -557,7 +436,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   },
   {
     "id": "y7-3f-q2c",
@@ -569,29 +449,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (12x)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((12x)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (12x)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( 12^2 \\times x^2 = 144 \\times x^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(144x^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(144x^2\\\\).",
+        "workingOut": "\\\\( 144x^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -613,7 +480,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q2d",
@@ -625,29 +493,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Square both the number and the variable inside the brackets.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (15a)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((15a)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (15a)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( 15^2 \\times a^2 = 225 \\times a^2 \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(225a^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(225a^2\\\\).",
+        "workingOut": "\\\\( 225a^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -669,7 +524,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q3a",
@@ -1129,29 +985,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (3y)^2 \\times y^4\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((3y)^2 \\times y^4\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (3y)^2 \\times y^4 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: }  \\text{ and variables: } y \\times y \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(9y^6\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(9y^6\\\\).",
+        "workingOut": "\\\\( 9y^6 \\\\)"
       }
     ],
     "graphData": null,
@@ -1173,7 +1016,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q4b",
@@ -1185,29 +1029,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 2m \\times (5m)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(2m \\times (5m)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 2m \\times (5m)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 2 \\text{ and variables: } m \\times m \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(50m^3\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(50m^3\\\\).",
+        "workingOut": "\\\\( 50m^3 \\\\)"
       }
     ],
     "graphData": null,
@@ -1229,7 +1060,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3f-q4c",
@@ -1241,29 +1073,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then use index laws for the variables.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 7p^2 \\times 4p\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(7p^2 \\times 4p\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 7p^2 \\times 4p \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 7 \\times 4 \\text{ and variables: } p \\times p \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(28p^3\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(28p^3\\\\).",
+        "workingOut": "\\\\( 28p^3 \\\\)"
       }
     ],
     "graphData": null,
@@ -1285,7 +1104,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 0
+    "answer": 0,
+    "isNew": true
   },
   {
     "id": "y7-3f-q4d",
@@ -1297,29 +1117,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 5ab \\times 4ab\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(5ab \\times 4ab\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 5ab \\times 4ab \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 5 \\times 4 \\text{ and variables: } ab \\times ab \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(20a^2b^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(20a^2b^2\\\\).",
+        "workingOut": "\\\\( 20a^2b^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -1341,7 +1148,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q4e",
@@ -1353,29 +1161,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (3m)^2 \\times 4mn\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((3m)^2 \\times 4mn\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (3m)^2 \\times 4mn \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 4 \\text{ and variables: } m \\times mn \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(36m^3n\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(36m^3n\\\\).",
+        "workingOut": "\\\\( 36m^3n \\\\)"
       }
     ],
     "graphData": null,
@@ -1397,7 +1192,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q4f",
@@ -1409,29 +1205,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 4x^2y \\times 5xy\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(4x^2y \\times 5xy\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 4x^2y \\times 5xy \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 4 \\times 5 \\text{ and variables: } x \\times xy \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(20x^3y^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(20x^3y^2\\\\).",
+        "workingOut": "\\\\( 20x^3y^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -1453,7 +1236,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5a",
@@ -1465,29 +1249,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first, then multiply from left to right.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (4y)^2 \\times 3y \\times y\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((4y)^2 \\times 3y \\times y\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (4y)^2 \\times 3y \\times y \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 3 \\text{ and variables: } y \\times y \\times y \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(48y^4\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(48y^4\\\\).",
+        "workingOut": "\\\\( 48y^4 \\\\)"
       }
     ],
     "graphData": null,
@@ -1509,7 +1280,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5b",
@@ -1521,29 +1293,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply like variables by adding their indices.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 3ab \\times b \\times a\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(3ab \\times b \\times a\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 3ab \\times b \\times a \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 3 \\text{ and variables: } ab \\times b \\times a \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(3a^2b^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(3a^2b^2\\\\).",
+        "workingOut": "\\\\( 3a^2b^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -1565,7 +1324,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 1
+    "answer": 1,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5c",
@@ -1577,29 +1337,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the brackets first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = (3m)^2 \\times (4m)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\((3m)^2 \\times (4m)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } (3m)^2 \\times (4m)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: }  \\text{ and variables: } m \\times m \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(144m^4\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(144m^4\\\\).",
+        "workingOut": "\\\\( 144m^4 \\\\)"
       }
     ],
     "graphData": null,
@@ -1621,7 +1368,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5d",
@@ -1633,29 +1381,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 3mn^2 \\times (6m)^2\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(3mn^2 \\times (6m)^2\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 3mn^2 \\times (6m)^2 \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 3 \\text{ and variables: } mn \\times m \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(108m^3n^2\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(108m^3n^2\\\\).",
+        "workingOut": "\\\\( 108m^3n^2 \\\\)"
       }
     ],
     "graphData": null,
@@ -1677,7 +1412,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5e",
@@ -1689,29 +1425,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Multiply the numbers, then multiply like variables.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 4p^2 \\times 5q \\times 3p\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(4p^2 \\times 5q \\times 3p\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 4p^2 \\times 5q \\times 3p \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 4 \\times 5 \\times 3 \\text{ and variables: } p \\times p \\times q \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(60p^3q\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(60p^3q\\\\).",
+        "workingOut": "\\\\( 60p^3q \\\\)"
       }
     ],
     "graphData": null,
@@ -1733,7 +1456,8 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 3
+    "answer": 3,
+    "isNew": true
   },
   {
     "id": "y7-3f-q5f",
@@ -1745,29 +1469,16 @@ export const Y7_CH3F_QUESTIONS = [
     "hint": "Expand the bracket first.",
     "solutionSteps": [
       {
-        "explanation": "Identify the terms to be multiplied from the question and set up the initial algebraic expression. This defines the starting point for simplification.",
-        "workingOut": "\\\\(\\text{Expression} = 6k^2 \\times (3k)^2 \\times k\\\\)",
-        "graphData": null
+        "explanation": "We begin by identifying the algebraic terms to be multiplied from the question: \\\\(6k^2 \\times (3k)^2 \\times k\\\\). Our goal is to simplify this product by separating the numeric coefficients from the variable parts.",
+        "workingOut": "\\\\( \\text{Simplify: } 6k^2 \\times (3k)^2 \\times k \\\\)"
       },
       {
-        "explanation": "Expand any bracketed powers or exponents first if present. Group all the numeric coefficients together and all the variable terms together so they can be multiplied systematically.",
-        "workingOut": "\\\\(\\text{Grouping} = \\text{Group numbers together and variables together}\\\\)",
-        "graphData": null
+        "explanation": "Next, we group the numbers together and group the variables together. We perform the coefficient multiplication and collect the variable factors. If the variables are identical, we add their power indices; if they are different, we list them alphabetically.",
+        "workingOut": "\\\\( \\text{Group numbers: } 6 \\text{ and variables: } k \\times k \\times k \\\\)"
       },
       {
-        "explanation": "Multiply the numeric coefficients together. This calculates the final constant multiplier of the resulting simplified term.",
-        "workingOut": "\\\\(\\text{Coefficient multiplication completed}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the variable factors. When multiplying identical variables, add their exponent indices according to the laws of indices, and write distinct variables in alphabetical order.",
-        "workingOut": "\\\\(\\text{Index laws applied to variables}\\\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Combine the final coefficient and the simplified variable part into a single, cohesive algebraic term. This is the simplest possible representation of the product.",
-        "workingOut": "\\\\(54k^5\\\\)",
-        "graphData": null
+        "explanation": "Finally, we combine the computed coefficient and the simplified variables into a single algebraic term. This yields the final simplified expression \\\\(54k^5\\\\).",
+        "workingOut": "\\\\( 54k^5 \\\\)"
       }
     ],
     "graphData": null,
@@ -1789,6 +1500,7 @@ export const Y7_CH3F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": 2
+    "answer": 2,
+    "isNew": true
   }
 ];
