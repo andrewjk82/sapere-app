@@ -19,7 +19,6 @@ import ScheduleLessonModal from './ScheduleLessonModal';
 import { TIME_OPTIONS } from '../constants/timeOptions';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
-import { getDueCount } from '../utils/secretNote';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
@@ -368,26 +367,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'rgba(255,255,255,0.18)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
                   <ArrowRight size={16} />
                 </div>
-              </div>
-            </button>
-          );
-        })()}
-
-        {!isAdmin && (() => {
-          const dueTotal = getDueCount('daily', user?.uid) + getDueCount('calc', user?.uid);
-          if (dueTotal === 0) return null;
-          return (
-            <button type="button" onClick={() => setActiveTab('Challenge')} style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', margin: isMobile ? '0 0 16px' : '0 0 24px', maxWidth: '100%', padding: '20px 24px', borderRadius: '28px', cursor: 'pointer', textAlign: 'left', background: 'linear-gradient(135deg, #6366f1, #8b5cf6)', border: 'none', color: '#fff', boxShadow: '0 15px 35px rgba(99,102,241,0.25)', position: 'relative', overflow: 'hidden' }}>
-              <div style={{ position: 'absolute', top: '-20px', right: '-20px', width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.08)' }} />
-              <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', fontSize: '1.4rem', flexShrink: 0 }}>🧠</div>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.7)', marginBottom: '3px' }}>Secret Note Review</div>
-                <div style={{ fontSize: '0.97rem', fontWeight: 700, lineHeight: 1.4, color: '#fff' }}>
-                  <strong style={{ fontWeight: 900 }}>{dueTotal} question{dueTotal > 1 ? 's' : ''}</strong> {dueTotal > 1 ? 'are' : 'is'} due for review today.
-                </div>
-              </div>
-              <div style={{ width: '36px', height: '36px', borderRadius: '12px', background: 'rgba(255,255,255,0.2)', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                <ArrowRight size={18} />
               </div>
             </button>
           );
