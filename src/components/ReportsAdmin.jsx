@@ -75,7 +75,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
   const [reports, setReports] = useState([]);
   // Pending grading items come from the shared AdminFeedContext listener —
   // opening this screen must not add a second grading_queue subscription.
-  const { pendingGrading: gradingQueue } = useAdminFeed();
+  const { pendingGrading: gradingQueueRaw } = useAdminFeed();
   const [reportsLoading, setReportsLoading] = useState(true);
   const gradingLoading = false;
   const [editingQuestion, setEditingQuestion] = useState(null);
@@ -90,6 +90,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
   const [annotationSaving, setAnnotationSaving] = useState(false);
   const [comments, setComments] = useState({}); // { [itemId]: teacher comment text }
   const [aiBusy, setAiBusy] = useState({}); // { [itemId]: true } while re-running AI grading
+  // Live question docs for grading-queue items missing subQuestions (keyed by questionId).
+  const [gradingLiveQuestions, setGradingLiveQuestions] = useState({});
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -103,6 +105,62 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     }
     return String(answer);
   };
+
+  // Enrich grading-queue items with live subQuestions when the queue snapshot
+  // only has the parent prompt + "Refer to parts a and b…" style answer.
+  useEffect(() => {
+    const queue = gradingQueueRaw || [];
+    const ids = [...new Set(
+      queue
+        .filter((item) => {
+          if (!item.questionId) return false;
+          const hasSubs = Array.isArray(item.subQuestions) && item.subQuestions.length > 0;
+          return !hasSubs;
+        })
+        .map((item) => item.questionId),
+    )];
+    if (ids.length === 0) return undefined;
+    let cancelled = false;
+    (async () => {
+      const next = {};
+      await Promise.all(ids.map(async (qid) => {
+        try {
+          const snap = await getDoc(doc(db, 'questions', qid));
+          if (snap.exists()) next[qid] = snap.data();
+        } catch { /* non-fatal */ }
+      }));
+      if (cancelled || Object.keys(next).length === 0) return;
+      setGradingLiveQuestions((prev) => {
+        // Skip write if we already have every id (avoids effect loops).
+        const missing = ids.filter((id) => !prev[id]);
+        if (missing.length === 0) return prev;
+        return { ...prev, ...next };
+      });
+    })();
+    return () => { cancelled = true; };
+  }, [gradingQueueRaw]);
+
+  const gradingQueue = (gradingQueueRaw || []).map((item) => {
+    const live = item.questionId ? gradingLiveQuestions[item.questionId] : null;
+    const fromItem = Array.isArray(item.subQuestions) && item.subQuestions.length > 0
+      ? item.subQuestions
+      : null;
+    const fromLive = live && Array.isArray(live.subQuestions) && live.subQuestions.length > 0
+      ? live.subQuestions
+      : null;
+    const subQuestions = fromItem || fromLive || null;
+    if (!subQuestions && !live) return item;
+    return {
+      ...item,
+      subQuestions: subQuestions || item.subQuestions,
+      // Prefer live solution when queue only has a short placeholder.
+      solution: (item.solution && !/^see detailed|refer to parts/i.test(String(item.solution)))
+        ? item.solution
+        : (live?.solution || item.solution),
+      solutionSteps: item.solutionSteps || live?.solutionSteps || null,
+      graphData: item.graphData ?? live?.graphData ?? null,
+    };
+  });
 
   const getPreviewStudentAnswer = () => {
     if (!previewReport) return null;
@@ -871,6 +929,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
             </div>
 
             <div style={{ padding: '24px' }}>
+              {(() => {
+                const hasSubs = Array.isArray(item.subQuestions) && item.subQuestions.length > 0;
+                return (
+                  <>
               <div style={{ marginBottom: '24px' }}>
                 <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Question</span>
                 <div style={{ marginTop: '10px', padding: '16px', background: '#f1f5f9', borderRadius: '16px' }}>
@@ -898,6 +960,22 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                       })}
                     </div>
                   )}
+
+                  {/* Multi-part: list every sub-question under the parent prompt */}
+                  {hasSubs && (
+                    <div style={{ marginTop: '16px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                      {item.subQuestions.map((sq, idx) => (
+                        <div key={sq.id ?? idx} style={{ padding: '12px 14px', borderRadius: '14px', background: '#fff', border: '1px solid #e2e8f0' }}>
+                          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                            <span style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#eef2ff', color: '#4f46e5', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.82rem', flexShrink: 0 }}>
+                              {String.fromCharCode(97 + idx)}
+                            </span>
+                            <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5, flex: 1 }} />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
 
@@ -910,8 +988,6 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                       const validImages = (item.answerImages || []).filter(url => url && url.length > 100);
                       const singleImage = item.answerImage && item.answerImage.length > 100 ? item.answerImage : null;
                       const GRID_BG = { background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)', backgroundSize: '20px 20px' };
-
-                      const hasImages = validImages.length > 0 || singleImage;
 
                       if (validImages.length > 0) {
                         return (
@@ -969,16 +1045,44 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                 <div>
                   <span style={{ fontSize: '0.75rem', fontWeight: 900, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Expected Answer / Solution</span>
                   <div style={{ marginTop: '10px', minHeight: '150px', background: '#f0fdf4', border: '1px solid #bbf7d0', borderRadius: '20px', padding: '20px' }}>
-                    <MathView content={item.correctAnswer || 'N/A'} style={{ fontSize: '1rem', fontWeight: 700, color: '#166534', marginBottom: '12px' }} />
-                    {item.solution && (
-                      <div style={{ borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d' }}>SOLUTION GUIDE:</span>
-                        <MathView content={item.solution} style={{ fontSize: '0.9rem', color: '#166534' }} />
+                    {hasSubs ? (
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                        {item.subQuestions.map((sq, idx) => (
+                          <div key={sq.id ?? idx} style={{ padding: '14px', borderRadius: '14px', background: '#fff', border: '1px solid #bbf7d0' }}>
+                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', marginBottom: '10px' }}>
+                              <span style={{ width: '24px', height: '24px', borderRadius: '7px', background: '#dcfce7', color: '#166534', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.78rem', flexShrink: 0 }}>
+                                {String.fromCharCode(97 + idx)}
+                              </span>
+                              <MathView content={sq.question || sq.text || ''} style={{ fontSize: '0.9rem', fontWeight: 700, color: '#14532d', lineHeight: 1.45, flex: 1 }} />
+                            </div>
+                            <div style={{ padding: '10px 12px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0', marginBottom: (sq.solution || sq.solutionSteps?.length) ? '10px' : 0 }}>
+                              <div style={{ fontSize: '0.65rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#15803d', marginBottom: '4px' }}>Correct answer</div>
+                              <MathView content={String(sq.answer ?? '—')} style={{ fontSize: '0.95rem', fontWeight: 800, color: '#166534' }} />
+                            </div>
+                            {(sq.solution || (Array.isArray(sq.solutionSteps) && sq.solutionSteps.length > 0)) && (
+                              <WorkedSolutionSteps question={sq} graphData={sq.graphData} />
+                            )}
+                          </div>
+                        ))}
                       </div>
+                    ) : (
+                      <>
+                        <MathView content={item.correctAnswer || 'N/A'} style={{ fontSize: '1rem', fontWeight: 700, color: '#166534', marginBottom: '12px' }} />
+                        {(item.solution || (Array.isArray(item.solutionSteps) && item.solutionSteps.length > 0)) && (
+                          item.solutionSteps?.length
+                            ? <WorkedSolutionSteps question={item} graphData={item.graphData} />
+                            : (
+                              <div style={{ borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
+                                <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d' }}>SOLUTION GUIDE:</span>
+                                <MathView content={item.solution} style={{ fontSize: '0.9rem', color: '#166534' }} />
+                              </div>
+                            )
+                        )}
+                      </>
                     )}
                     {(() => {
                       const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
-                      return item.graphData && isSketchQuestion && (
+                      return !hasSubs && item.graphData && isSketchQuestion && (
                         <div style={{ marginTop: '12px', borderTop: '1px solid #bbf7d0', paddingTop: '12px' }}>
                           <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#15803d', display: 'block', marginBottom: '8px' }}>EXPECTED GRAPH:</span>
                           <MathView content="" graphData={item.graphData} />
@@ -988,6 +1092,9 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                   </div>
                 </div>
               </div>
+                  </>
+                );
+              })()}
 
               {item.aiAssessment && (
                 <div style={{ marginTop: '24px', padding: '20px', borderRadius: '20px', border: `2px solid ${item.aiAssessment.isCorrect ? '#bbf7d0' : '#fecaca'}`, background: item.aiAssessment.isCorrect ? '#f0fdf4' : '#fef2f2' }}>

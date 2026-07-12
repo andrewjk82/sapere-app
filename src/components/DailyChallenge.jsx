@@ -963,6 +963,18 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           totalQuestions: TOTAL_QUESTIONS,
           correctAnswer: currentQ?.answer || '',
           solution: currentQ?.solution || '',
+          // Persist multi-part prompts so the grading queue can show each
+          // sub-question + its answer/solution without an extra live fetch.
+          subQuestions: Array.isArray(currentQ?.subQuestions)
+            ? currentQ.subQuestions.map((sq, i) => ({
+                id: sq.id ?? i,
+                question: sq.question || sq.text || '',
+                answer: sq.answer ?? '',
+                solution: sq.solution || '',
+                solutionSteps: Array.isArray(sq.solutionSteps) ? sq.solutionSteps : null,
+                graphData: sq.graphData || null,
+              }))
+            : [],
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
         const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
