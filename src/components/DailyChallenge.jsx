@@ -1368,6 +1368,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         try {
           localCache.remove(`dashboard-insights-${user.uid}`);
           localCache.remove(`dashboard-week-practice-v1-${user.uid}`);
+          localCache.remove(`flame-buddy-tasks-${user.uid}`);
           if (challengeType === 'daily' && typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('sapere:daily-practice-completed', {
               detail: {

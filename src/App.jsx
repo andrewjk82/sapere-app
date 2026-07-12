@@ -86,6 +86,7 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
+import FlameBuddy from './components/FlameBuddy';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
 import { doc, getDoc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
@@ -1277,6 +1278,16 @@ function App() {
           </Suspense>
         </ErrorBoundary>
       </div>
+
+      {/* Floating flame coach — students only; hides during exam / lock / admin */}
+      {!isAdmin && user?.uid && !examInProgress && !isLocked && (
+        <FlameBuddy
+          uid={user.uid}
+          profile={profile || sharedProfile}
+          activeTab={activeTab}
+          setActiveTab={handleTabChange}
+        />
+      )}
 
       {/* ── Journey Map overlay — rendered via portal to escape filter/stacking context ── */}
       {showJourneyMap && createPortal(
