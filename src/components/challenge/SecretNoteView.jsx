@@ -321,10 +321,16 @@ const WorkedSolution = ({ question }) => {
 const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct, onClose, children, isMobile, wide }) => (
   <motion.div
     initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+    className={`sn__shell${isMobile ? ' sn__shell--mobile' : ''}`}
     style={{
-      position: 'fixed', inset: 0, background: '#f5f3ff', zIndex: 2000,
-      overflowY: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center',
-      padding: isMobile ? '0 0 40px' : '0 0 60px',
+      position: 'fixed', inset: 0, background: isMobile ? '#fff' : '#f5f3ff', zIndex: 2000,
+      // Mobile: one page scroll (header sticky, content flows). Desktop: same shell scroll.
+      overflowY: 'auto',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: isMobile ? 'stretch' : 'center',
+      padding: isMobile ? '0 0 env(safe-area-inset-bottom, 0px)' : '0 0 60px',
+      WebkitOverflowScrolling: 'touch',
     }}
   >
     <style>{secretNoteStyles}</style>
@@ -336,8 +342,20 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
           <div className="sn__bar-sub">{subtitle}</div>
         </div>
       </div>
-      <button onClick={onClose} style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 16px', borderRadius: '20px', border: '2px solid rgba(255,255,255,0.5)', background: 'rgba(255,255,255,0.15)', color: '#fff', fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer', backdropFilter: 'blur(4px)' }}>
-        <X size={15} /> Exit
+      <button
+        onClick={onClose}
+        aria-label="Exit"
+        style={{
+          display: 'flex', alignItems: 'center', gap: isMobile ? 0 : '6px',
+          padding: isMobile ? '8px' : '8px 16px',
+          borderRadius: isMobile ? '12px' : '20px',
+          border: '2px solid rgba(255,255,255,0.5)',
+          background: 'rgba(255,255,255,0.15)',
+          color: '#fff', fontWeight: 800, fontSize: '0.85rem',
+          cursor: 'pointer', backdropFilter: 'blur(4px)', flexShrink: 0,
+        }}
+      >
+        <X size={15} />{!isMobile && ' Exit'}
       </button>
     </div>
     {showProgress && (
@@ -345,7 +363,7 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
         <div className="sn__progress" style={{ width: `${progressPct}%`, background: headerGradient }} />
       </div>
     )}
-    <div className={`sn__body${wide ? ' sn__body--wide' : ''}`}>{children}</div>
+    <div className={`sn__body${wide ? ' sn__body--wide' : ''}${isMobile ? ' sn__body--mobile' : ''}`}>{children}</div>
   </motion.div>
 );
 
@@ -1019,38 +1037,81 @@ const secretNoteStyles = `
   .sn__bar {
     width: 100%; display: flex; align-items: center; justify-content: space-between;
     padding: 16px 22px; color: #fff;
+    flex-shrink: 0;
+    position: sticky; top: 0; z-index: 5;
   }
-  .sn__bar-l { display: flex; align-items: center; gap: 12px; }
+  .sn__shell--mobile .sn__bar {
+    padding: 12px 14px;
+    padding-top: max(12px, env(safe-area-inset-top, 12px));
+  }
+  .sn__bar-l { display: flex; align-items: center; gap: 12px; min-width: 0; }
   .sn__bar-ico {
     width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center;
-    background: rgba(255,255,255,0.22);
+    background: rgba(255,255,255,0.22); flex-shrink: 0;
   }
+  .sn__shell--mobile .sn__bar-ico { width: 34px; height: 34px; border-radius: 10px; }
   .sn__bar-title { font-weight: 900; font-size: 1.02rem; }
+  .sn__shell--mobile .sn__bar-title { font-size: 0.95rem; }
   .sn__bar-sub { font-size: 0.74rem; opacity: 0.85; font-weight: 700; }
   .sn__close {
     width: 34px; height: 34px; border-radius: 10px; border: 0; cursor: pointer;
     background: rgba(255,255,255,0.22); color: #fff; display: grid; place-items: center;
   }
-  .sn__progress-wrap { width: 100%; height: 4px; background: rgba(0,0,0,0.06); }
+  .sn__progress-wrap { width: 100%; height: 4px; background: rgba(0,0,0,0.06); flex-shrink: 0; }
   .sn__progress { height: 100%; transition: width 0.4s ease; }
 
   .sn__body { width: 100%; max-width: 620px; padding: 24px 18px 0; box-sizing: border-box; }
   /* Wider body when the solve layout shows the side working-out pad. */
   .sn__body--wide { max-width: min(1540px, calc(100vw - 48px)); }
+  /* Mobile: use full viewport width; no nested max-width “phone inside phone”. */
+  .sn__body--mobile {
+    max-width: none;
+    width: 100%;
+    flex: 1 1 auto;
+    padding: 0;
+    min-height: 0;
+  }
   .sn__solve-row { display: flex; gap: 20px; align-items: stretch; width: 100%; flex-wrap: nowrap; }
-  /* In split view the right sketch pad is sticky/tall; let the question card
-     scroll on its own so the Submit button below the fold stays reachable. */
-  .sn__solve-row .sn__card { flex: 0 1 600px; max-width: 600px; min-width: 0; max-height: calc(100vh - 48px); overflow-y: auto; -webkit-overflow-scrolling: touch; }
   .sn__solve-pad { flex: 1 1 340px; min-width: 300px; display: flex; }
-  /* On narrow tablets (768–1099px) keep side-by-side but tighten the question card */
-  @media (max-width: 1099px) {
-    .sn__solve-row .sn__card { flex: 0 1 420px; max-width: 420px; }
+
+  /* Desktop split only: constrained card with its own scroll so the side pad stays usable. */
+  @media (min-width: 1101px) {
+    .sn__solve-row .sn__card {
+      flex: 0 1 600px; max-width: 600px; min-width: 0;
+      max-height: calc(100vh - 48px); overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  /* Mid tablets: still side-by-side when wide enough, but no inner scroll trap. */
+  @media (min-width: 768px) and (max-width: 1100px) {
+    .sn__solve-row .sn__card { flex: 0 1 420px; max-width: 420px; max-height: none; overflow: visible; }
     .sn__solve-pad { flex: 1 1 300px; min-width: 280px; }
   }
+
   .sn__card {
     background: #fff; border-radius: 28px; padding: 28px;
     border: 1px solid #ece9f6; box-shadow: 0 20px 44px rgba(91,33,182,0.08);
     display: flex; flex-direction: column; gap: 16px;
+  }
+  /* Mobile card: edge-to-edge content area, no max-height / inner scrollbar. */
+  .sn__shell--mobile .sn__solve-row {
+    flex-direction: column;
+    gap: 0;
+    min-height: calc(100dvh - 88px);
+  }
+  .sn__shell--mobile .sn__solve-row .sn__card {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    border-radius: 0;
+    border: none;
+    border-top: 1px solid #f1f5f9;
+    box-shadow: none;
+    padding: 16px 16px calc(24px + env(safe-area-inset-bottom, 0px));
+    min-height: calc(100dvh - 88px);
+    box-sizing: border-box;
   }
   .sn__center { align-items: center; text-align: center; }
   .sn__big-emoji { font-size: 3rem; }
@@ -1188,14 +1249,13 @@ const secretNoteStyles = `
   .sn__rv-msg:focus { outline: none; border-color: #8b5cf6; }
 
   @media (max-width: 540px) {
-    .sn__card { padding: 22px 18px; border-radius: 22px; }
     .sn__tags-row { grid-template-columns: 1fr; }
   }
 
   @media (max-width: 1100px) {
-    .sn__body--wide { max-width: 760px; }
+    .sn__body--wide:not(.sn__body--mobile) { max-width: 760px; }
     .sn__solve-row { flex-direction: column; }
-    .sn__solve-row .sn__card { max-width: none; width: 100%; }
+    .sn__solve-row .sn__card { max-width: none; width: 100%; max-height: none; overflow: visible; }
     .sn__solve-pad { min-width: 0; width: 100%; }
   }
 
