@@ -390,9 +390,11 @@ const GeometryFigure = ({
         </text>
       );
     }
-    els.push(
-      <circle key={`vd${key++}`} cx={vx} cy={vy} r="1.0" fill="#000000" />
-    );
+    if (showPointLabels !== false && !n.startsWith('_')) {
+      els.push(
+        <circle key={`vd${key++}`} cx={vx} cy={vy} r="1.0" fill="#000000" />
+      );
+    }
   });
 
   return (
@@ -401,7 +403,7 @@ const GeometryFigure = ({
         display: 'flex', justifyContent: 'center',
         padding: '12px', background: '#fff',
         borderRadius: '14px', border: '1px solid #e2e8f0',
-        marginTop: '8px', ...style,
+        marginTop: '8px', height: `${drawH}px`, ...style,
       }}
     >
       <svg width={drawW} height={drawH} viewBox={`0 0 ${drawW} ${drawH}`}

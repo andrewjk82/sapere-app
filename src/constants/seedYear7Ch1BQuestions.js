@@ -5636,6 +5636,45 @@ export const Y7_CH1B_QUESTIONS = [
         "explanation": "Draw the second number line showing a vector arrow of 3 units followed by a vector arrow of 6 units.",
         "workingOut": "\\\\( 3 + 6 = 9 \\\\)",
         "graphData": null
+      },
+      {
+        "explanation": "Compare the two parallel number lines visually to confirm they both start at 0 and land on the same coordinate 9.",
+        "workingOut": "\\\\( 6 + 3 = 3 + 6 = 9 \\\\)",
+        "graphData": {
+          "geometry": {
+            "showPointLabels": false,
+            "points": {
+              "_L1_start": [0, 1.5], "_L1_end": [10, 1.5],
+              "_L2_start": [0, 0], "_L2_end": [10, 0],
+              "_L1_0": [0, 1.8], "_L1_6": [6, 1.8], "_L1_9": [9, 1.8],
+              "_L2_0": [0, 0.3], "_L2_3": [3, 0.3], "_L2_9": [9, 0.3],
+              "_lbl1_0": [0, 1.1], "_lbl1_6": [6, 1.1], "_lbl1_9": [9, 1.1],
+              "_lbl2_0": [0, -0.4], "_lbl2_3": [3, -0.4], "_lbl2_9": [9, -0.4]
+            },
+            "segments": [
+              { "from": "_L1_start", "to": "_L1_end" },
+              { "from": "_L2_start", "to": "_L2_end" },
+              { "from": "_L1_0", "to": "_L1_6", "arrow": true },
+              { "from": "_L1_6", "to": "_L1_9", "arrow": true },
+              { "from": "_L2_0", "to": "_L2_3", "arrow": true },
+              { "from": "_L2_3", "to": "_L2_9", "arrow": true }
+            ],
+            "sideLabels": [
+              { "between": ["_L1_0", "_L1_6"], "text": "6", "side": "out" },
+              { "between": ["_L1_6", "_L1_9"], "text": "3", "side": "out" },
+              { "between": ["_L2_0", "_L2_3"], "text": "3", "side": "out" },
+              { "between": ["_L2_3", "_L2_9"], "text": "6", "side": "out" }
+            ],
+            "freeLabels": [
+              { "at": "_lbl1_0", "text": "0", "italic": false },
+              { "at": "_lbl1_6", "text": "6", "italic": false },
+              { "at": "_lbl1_9", "text": "9", "italic": false },
+              { "at": "_lbl2_0", "text": "0", "italic": false },
+              { "at": "_lbl2_3", "text": "3", "italic": false },
+              { "at": "_lbl2_9", "text": "9", "italic": false }
+            ]
+          }
+        }
       }
     ]
   },
@@ -5661,7 +5700,34 @@ export const Y7_CH1B_QUESTIONS = [
       {
         "explanation": "Indicate the overall dimensions of the combined rectangle.",
         "workingOut": "\\\\( 3 \\\\times (4 + 2) = 18 \\\\)",
-        "graphData": null
+        "graphData": {
+          "geometry": {
+            "showPointLabels": false,
+            "points": {
+              "_A": [0, 3], "_B": [4, 3], "_C": [6, 3],
+              "_D": [0, 0], "_E": [4, 0], "_F": [6, 0],
+              "_L_h": [-0.6, 1.5], "_L_w1": [2, 3.4], "_L_w2": [5, 3.4],
+              "_L_w_tot": [3, -0.5]
+            },
+            "shadedPolygons": [
+              { "points": ["_A", "_B", "_E", "_D"], "color": "#bfdbfe", "opacity": 0.45 },
+              { "points": ["_B", "_C", "_F", "_E"], "color": "#fed7aa", "opacity": 0.45 }
+            ],
+            "segments": [
+              { "from": "_A", "to": "_C" },
+              { "from": "_D", "to": "_F" },
+              { "from": "_A", "to": "_D" },
+              { "from": "_B", "to": "_E", "dashed": true },
+              { "from": "_C", "to": "_F" }
+            ],
+            "freeLabels": [
+              { "at": "_L_h", "text": "3", "italic": false },
+              { "at": "_L_w1", "text": "4", "italic": false },
+              { "at": "_L_w2", "text": "2", "italic": false },
+              { "at": "_L_w_tot", "text": "4 + 2 = 6", "italic": false }
+            ]
+          }
+        }
       }
     ]
   },
