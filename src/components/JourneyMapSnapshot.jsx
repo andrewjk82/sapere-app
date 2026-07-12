@@ -67,7 +67,7 @@ function buildMiniGraph(W, H, completedCount = 0, totalYears = 12) {
 }
 
 // ── Component ─────────────────────────────────────────────────────────────────
-export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
+export default function JourneyMapSnapshot({ profile, onClick }) {
   const canvasRef = useRef(null);
   const rafRef    = useRef(null);
 
@@ -75,12 +75,11 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    let tick = 0;
-    let graph = null;
-    let w = 0;
-    let h = 0;
-    let lastW = 0;
-    let lastH = 0;
+
+    const W = canvas.width  = canvas.offsetWidth  * devicePixelRatio;
+    const H = canvas.height = canvas.offsetHeight * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+    const w = canvas.offsetWidth, h = canvas.offsetHeight;
 
     const completedCount = (profile?.completedChapters?.length || 0);
     const rawYear   = Array.isArray(profile?.assignedYear) ? profile.assignedYear[0] : profile?.assignedYear;
@@ -88,28 +87,10 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
     // auto-complete past years
     const effectiveDone = Math.max(completedCount > 0 ? yearIdx : 0, 0);
 
-    const resize = () => {
-      const ow = canvas.offsetWidth || 1;
-      const oh = canvas.offsetHeight || 1;
-      if (ow === lastW && oh === lastH) return;
-      lastW = ow;
-      lastH = oh;
-      canvas.width  = ow * devicePixelRatio;
-      canvas.height = oh * devicePixelRatio;
-      ctx.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
-      w = ow;
-      h = oh;
-      graph = buildMiniGraph(w, h, effectiveDone);
-    };
+    const graph = buildMiniGraph(w, h, effectiveDone);
+    let tick = 0;
 
     const draw = () => {
-      if (!graph || w < 2 || h < 2) {
-        resize();
-      }
-      if (!graph) {
-        rafRef.current = requestAnimationFrame(draw);
-        return;
-      }
       ctx.clearRect(0, 0, w, h);
 
       // Background
@@ -142,7 +123,7 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
       });
 
       // Year nodes
-      graph.yearNodes.forEach((n) => {
+      graph.yearNodes.forEach((n, i) => {
         // Glow for completed
         if (n.done) {
           const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 2.5);
@@ -181,26 +162,17 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
       rafRef.current = requestAnimationFrame(draw);
     };
 
-    resize();
     draw();
-
-    let ro;
-    if (typeof ResizeObserver !== 'undefined') {
-      ro = new ResizeObserver(() => resize());
-      ro.observe(canvas.parentElement || canvas);
-    }
-
-    return () => {
-      cancelAnimationFrame(rafRef.current);
-      ro?.disconnect();
-    };
+    return () => cancelAnimationFrame(rafRef.current);
   }, [profile]);
 
   const name = profile?.displayName || profile?.name || '';
   const firstName = name.split(' ')[0];
   const title = firstName ? `${firstName}'s Journey Map` : 'My Journey Map';
 
-  // When fill=true, fill the parent grid/flex cell (equal height with siblings).
+  // Match Dashboard side-column cards (Next Lesson + Daily Practice).
+  const CARD_H = 156;
+
   return (
     <div
       onClick={onClick}
@@ -213,10 +185,10 @@ export default function JourneyMapSnapshot({ profile, onClick, fill = false }) {
         boxShadow: '0 15px 40px rgba(99,102,241,0.2)',
         border: '1px solid rgba(129,140,248,0.2)',
         transition: 'transform 0.2s, box-shadow 0.2s',
-        width: '100%',
-        height: fill ? '100%' : 156,
-        minHeight: fill ? 0 : 156,
-        maxHeight: fill ? 'none' : 156,
+        height: CARD_H,
+        minHeight: CARD_H,
+        maxHeight: CARD_H,
+        flex: '0 0 auto',
         boxSizing: 'border-box',
       }}
       onMouseEnter={e => {

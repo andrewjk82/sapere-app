@@ -368,8 +368,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
       >
         {!isAdmin && (
           <div className="student-hero-container" style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'repeat(12, 1fr)', gap: isMobile ? '16px' : '24px', padding: isMobile ? '0 0 16px 0' : '0 0 24px 0', alignItems: 'stretch' }}>
-            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7', display: 'flex', minHeight: isMobile ? 0 : 560 }}>
-              <div className="app-panel vision-card" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=1200'}')`, backgroundSize: 'cover', backgroundPosition: 'center', height: isMobile ? '460px' : '100%', minHeight: isMobile ? '460px' : 560, flex: 1, borderRadius: isMobile ? '0 0 32px 32px' : '32px', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: isMobile ? '40px 24px' : '40px', color: 'white', overflow: 'hidden', boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)', border: 'none', width: '100%', boxSizing: 'border-box' }}>
+            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 7' }}>
+              <div className="app-panel vision-card" style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url('${profile?.dreamImageUrl || 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format\u0026fit=crop\u0026q=80\u0026w=1200'}')`, backgroundSize: 'cover', backgroundPosition: 'center', height: isMobile ? '460px' : '100%', minHeight: isMobile ? '460px' : '560px', borderRadius: isMobile ? '0 0 32px 32px' : '32px', position: 'relative', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', padding: isMobile ? '40px 24px' : '40px', color: 'white', overflow: 'hidden', boxShadow: isMobile ? 'none' : '0 20px 50px rgba(0,0,0,0.15)', border: 'none', width: '100%' }}>
                 <div className="vision-card__content" style={{ zIndex: 1 }}>
                   <h1 style={{ fontFamily: "'Poppins', sans-serif", fontSize: isMobile ? '2.2rem' : '3.5rem', fontWeight: 900, margin: 0, lineHeight: 1.1, color: '#fff', letterSpacing: '-0.02em', textShadow: '0 4px 20px rgba(0,0,0,0.3)' }}>
                     <span style={{ fontSize: '0.35em', display: 'block', textTransform: 'uppercase', letterSpacing: '0.25em', opacity: 0.9, marginBottom: '4px', color: 'rgba(255,255,255,0.8)' }}>{getGreeting()},</span>
@@ -378,47 +378,24 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 </div>
               </div>
             </div>
-            {/* Right stack: 3 equal-height cards (1fr each) matching vision card height. */}
-            <div
-              style={{
-                gridColumn: isMobile ? 'span 1' : 'span 5',
-                display: isMobile ? 'flex' : 'grid',
-                flexDirection: isMobile ? 'column' : undefined,
-                // Three main cards always get equal 1fr rows. Medal shelf (if any) sits between
-                // Journey Map and Next Lesson as an auto-height row.
-                gridTemplateRows: isMobile
-                  ? undefined
-                  : (profile?.calcAutoMode === true ? '1fr auto 1fr 1fr' : '1fr 1fr 1fr'),
-                gap: isMobile ? '16px' : '20px',
-                padding: 0,
-                height: isMobile ? 'auto' : '100%',
-                minHeight: isMobile ? 0 : 560,
-                alignSelf: 'stretch',
-                boxSizing: 'border-box',
-              }}
-            >
+            <div style={{ gridColumn: isMobile ? 'span 1' : 'span 5', display: 'flex', flexDirection: 'column', gap: isMobile ? '16px' : '20px', padding: 0 }}>
               {/* Journey Map snapshot */}
-              <div style={isMobile ? { flex: '0 0 auto', height: 156 } : { minHeight: 0, height: '100%' }}>
-                <JourneyMapSnapshot
-                  profile={profile}
-                  onClick={onOpenJourneyMap}
-                  fill={!isMobile}
-                />
-              </div>
+              <JourneyMapSnapshot
+                profile={profile}
+                onClick={onOpenJourneyMap}
+              />
               {/* Daily Calculation 메달 진열장 (Auto Mode) */}
-              {profile?.calcAutoMode === true && (
-                <div style={{ minHeight: 0 }}>
-                  <MedalShelf uid={user?.uid} />
-                </div>
-              )}
-              {/* Next Lesson */}
+              {profile?.calcAutoMode === true && <MedalShelf uid={user?.uid} />}
+              {/* Journey Map / Next Lesson / Daily Practice share SIDE_CARD_H (156px) */}
               <div
                 data-press
                 {...liftHover}
                 onClick={() => nextLesson && setSelectedViewSession(nextLesson)}
                 style={{
-                  minHeight: isMobile ? 156 : 0,
-                  height: isMobile ? 156 : '100%',
+                  flex: '0 0 auto',
+                  height: 156,
+                  minHeight: 156,
+                  maxHeight: 156,
                   boxSizing: 'border-box',
                   background: 'linear-gradient(135deg, #6366f1, #8b5cf6)',
                   borderRadius: '28px',
@@ -449,8 +426,10 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                 {...liftHover}
                 onClick={() => setActiveTab?.('Challenge')}
                 style={{
-                  minHeight: isMobile ? 156 : 0,
-                  height: isMobile ? 156 : '100%',
+                  flex: '0 0 auto',
+                  height: 156,
+                  minHeight: 156,
+                  maxHeight: 156,
                   boxSizing: 'border-box',
                   background: 'white',
                   borderRadius: '28px',
