@@ -28,6 +28,10 @@ const PRACTICE_STAGES = [
       { msg: "Psst{name}… today's practice is unlocked and waiting for you.", sub: "Kick it off early and the rest of the day feels lighter." },
       { msg: "Good morning{commaName}! Shall we tick off Daily Practice before anything else?", sub: "Small win first. Future-you will high-five you later." },
       { msg: "I saved you a seat at the practice desk{commaName}. Ready when you are!", sub: "No rush… okay, a tiny rush. It feels good to start." },
+      { msg: "Rise and shine{commaName} — practice is already on the menu.", sub: "Do it while the house is quiet. Peak productivity vibes." },
+      { msg: "{Name}, the early bird gets the XP. Just saying.", sub: "A short session now beats a long guilt later." },
+      { msg: "Coffee? Optional. Practice? Strongly recommended{commaName}.", sub: "I'll cheer quietly while you crush it." },
+      { msg: "Plot twist{commaName}: you could be done before lunch.", sub: "That would be extremely cool of you." },
     ],
   },
   // 1 — early afternoon
@@ -38,6 +42,10 @@ const PRACTICE_STAGES = [
       { msg: "Hey {Name}, practice is still sitting there looking lonely.", sub: "Give it some love this afternoon?" },
       { msg: "Midday check-in{commaName}: have we practiced yet? (Spoiler: not yet.)", sub: "Hop in now while the day's still soft and easy." },
       { msg: "If you start now{commaName}, you could be finished before the next snack.", sub: "That's basically free progress. I'm just saying." },
+      { msg: "Post-lunch power hour{commaName}? Perfect for Daily Practice.", sub: "Your brain is online. Let's use it." },
+      { msg: "{heyName} — little reminder floating by.", sub: "Challenge tab is open. Practice is unfinished. You know the rest." },
+      { msg: "Not to be dramatic{commaName}, but practice is still on the list.", sub: "Knock it out and the afternoon feels lighter." },
+      { msg: "Quick math break{commaName}? Your future self already high-fived you.", sub: "I'll wait here. (Not that I have a choice.)" },
     ],
   },
   // 2 — late afternoon (~3–6)
@@ -48,6 +56,10 @@ const PRACTICE_STAGES = [
       { msg: "Okay {Name}, official nudge: it's practice o'clock.", sub: "You'll feel so smug when it's done. The good kind of smug." },
       { msg: "I believe in you{commaName}. Also I believe practice won't do itself.", sub: "One short session. Then free time, guilt-free." },
       { msg: "Still on the to-do list{commaName}: Daily Practice.", sub: "Cross it off before dinner and the evening is yours." },
+      { msg: "Hey {Name}, the day's half gone — practice isn't though.", sub: "Fifteenish minutes now saves the 'I'll do it later' spiral." },
+      { msg: "Soft afternoon reminder{commaName}.", sub: "Challenge is one tap away. You've got this." },
+      { msg: "{Name}, want a tiny win before evening?", sub: "Finish practice and ride that good feeling into dinner." },
+      { msg: "I'm not the boss of you{commaName}. But practice is still open.", sub: "Consider this a friendly flame-shaped sticky note." },
     ],
   },
   // 3 — early evening (~6–8)
@@ -58,6 +70,12 @@ const PRACTICE_STAGES = [
       { msg: "Hey {Name} — we still haven't practiced today.", sub: "I won't tell Andrew… yet. Let's just finish it, yeah?" },
       { msg: "{Name}, dinner can wait five more minutes. Practice first?", sub: "Okay maybe not dinner. But you get the idea." },
       { msg: "Your streak is peeking around the corner{commaName}.", sub: "Don't leave it hanging. Quick session?" },
+      { msg: "Evening check-in{commaName}: Daily Practice is still unfinished.", sub: "Do it now and the rest of the night is guilt-free TV." },
+      { msg: "Plot twist{commaName}: you could still finish practice before 8.", sub: "I'd be extremely proud. Quietly. With sparkles." },
+      { msg: "{heyName}! One more thing before you fully clock out.", sub: "A short practice session. Then you're free. Deal?" },
+      { msg: "I'm bouncing over here for a reason{commaName}.", sub: "Practice is still open. Let's not make tomorrow-you do double work." },
+      { msg: "Friendly flame alert{commaName}: today's practice is incomplete.", sub: "Andrew's not watching right now. Still… better finish it, yeah?" },
+      { msg: "{Name}, same time tomorrow we could be celebrating instead.", sub: "All it takes is one session tonight. You've done harder things." },
     ],
   },
   // 4 — late evening (~8–10)
@@ -68,6 +86,10 @@ const PRACTICE_STAGES = [
       { msg: "Friendly reminder{commaName}: practice is unfinished.", sub: "Andrew would say the same thing, but nicer if you do it first." },
       { msg: "Night mode unlocked{commaName}. Practice mode… still waiting.", sub: "Knock it out before the couch absorbs you completely." },
       { msg: "{Name}, you and I both know it'll take less time than scrolling.", sub: "One practice. Then you can scroll with a clear conscience." },
+      { msg: "Hey {Name} — still time tonight, still no practice logged.", sub: "Short session now = peaceful bedtime later." },
+      { msg: "Couch is calling{commaName}. So is Daily Practice.", sub: "Pick practice first. Couch will still be there. Promise." },
+      { msg: "Soft but serious nudge{commaName}.", sub: "Today's practice is incomplete. You've got a little window left." },
+      { msg: "If practice were a snack{commaName}, you'd have finished it already.", sub: "Treat your brain to one quick set. Then snack. Fair?" },
     ],
   },
   // 5 — ~10–11pm
@@ -78,6 +100,10 @@ const PRACTICE_STAGES = [
       { msg: "Clock's loud tonight{commaName}. Practice is louder in my head.", sub: "Please? Your streak (and my nerves) will thank you." },
       { msg: "We're in the danger zone{commaName}. Practice still open.", sub: "If Andrew checks the dashboard later… let's make him smile, not sigh." },
       { msg: "Ten-o'clock energy{commaName}: still time, but not forever.", sub: "Short session. Big relief. Let's go." },
+      { msg: "{Name}, this is the 'do it before it's a problem' window.", sub: "Open Challenge, finish practice, sleep like a champion." },
+      { msg: "Not mad{commaName}. Just… highly motivated for you.", sub: "Practice is unfinished. We can still save the day." },
+      { msg: "Late-night flame reporting in{commaName}.", sub: "Daily Practice: still open. You: still capable. Go team." },
+      { msg: "Hey {Name} — last good hour for a calm session.", sub: "After this I get louder. You don't want loud flame." },
     ],
   },
   // 6 — ~11pm–midnight
@@ -89,6 +115,9 @@ const PRACTICE_STAGES = [
       { msg: "I'm not yelling{commaName}. I'm urgently encouraging. PRACTICE.", sub: "Andrew's residual nagging power activates at this hour. Trust me." },
       { msg: "Last call for today's practice{commaName} — for real this time.", sub: "Do it now or face Andrew tomorrow with the 'I forgot' face. Nope." },
       { msg: "{Name}. It's late. Practice. Please.", sub: "I can bounce. You can finish. Andrew can stay quiet. Win-win-win." },
+      { msg: "Emergency sparkle mode{commaName}: practice still not done!", sub: "One session. Then bed. Then pride. In that order." },
+      { msg: "If this were a movie{commaName}, this is the montage moment.", sub: "Open Challenge. Finish practice. Cue the victory music." },
+      { msg: "Final boss of the day{commaName}: Daily Practice.", sub: "You're the hero. I'm the tiny coach. Let's end this chapter." },
     ],
   },
 ];
@@ -99,6 +128,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Oh {Name} — calculation sprint is still open too!", sub: "Tiny set of questions. Like a warm-up for your brain." },
       { msg: "Sprint's waiting whenever you're ready{commaName}.", sub: "A few minutes and it's gone from your list." },
+      { msg: "Bonus round{commaName}: the calculation sprint is unlocked.", sub: "Quick numbers. Instant tidy-up on your day list." },
+      { msg: "Psst{name}… sprint wants a turn after practice.", sub: "Or before. Or right now. I'm flexible." },
     ],
   },
   {
@@ -106,6 +137,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Calculation sprint still needs a little love{commaName}.", sub: "Perfect between other things — super short." },
       { msg: "Hey {Name}, don't forget the sprint after practice!", sub: "Or before. I'm flexible. The sprint is not." },
+      { msg: "Numbers check{commaName}: sprint still open.", sub: "Three minutes of focus. That's the whole pitch." },
+      { msg: "{Name}, sprint is giving polite coughs in the corner.", sub: "Tap Challenge and clear it when you can." },
     ],
   },
   {
@@ -113,6 +146,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Sprint check{commaName}: still unfinished.", sub: "Three-ish minutes. You've survived longer things." },
       { msg: "{Name}, calculation sprint is giving you the puppy eyes.", sub: "Don't leave it hanging all afternoon." },
+      { msg: "Afternoon sprint reminder{commaName}!", sub: "Short, sharp, done. Then pure free time." },
+      { msg: "Still on the board{commaName}: calculation sprint.", sub: "Andrew likes completed sprints. Just putting that out there." },
     ],
   },
   {
@@ -120,6 +155,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Evening sprint reminder for you{commaName}!", sub: "Quick numbers, then free evening. Deal?" },
       { msg: "Sprint's still on the board{commaName}.", sub: "Andrew likes completed sprints. Just putting that out there." },
+      { msg: "Hey {Name} — practice might be done, sprint might not.", sub: "One more tiny win and the day is fully clear." },
+      { msg: "Calculation sprint says hi from Challenge{commaName}.", sub: "You'll barely notice the time. Promise." },
     ],
   },
   {
@@ -127,6 +164,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Late-night sprint still open{commaName}…", sub: "It's short. Your pillow can wait two more minutes." },
       { msg: "Don't let the sprint be the thing you 'meant to do'{commaName}.", sub: "Open Challenge, finish it, sleep heroically." },
+      { msg: "{Name}, sprint is the last sticky note on the day.", sub: "Peel it off with a quick session." },
+      { msg: "Night sprint nudge{commaName}: still unfinished.", sub: "Tiny effort, big clean-day feeling." },
     ],
   },
   {
@@ -134,6 +173,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "Sprint's almost out of time today{commaName}!", sub: "Hit it now before the clock wins." },
       { msg: "{Name}, calculation sprint: still not done, still very doable.", sub: "Last good window before midnight chaos." },
+      { msg: "Ten-ish and sprint's still open{commaName}.", sub: "Go go go — short set, big relief." },
+      { msg: "Final sprint window{commaName}. You've got this.", sub: "I believe in your calculation muscles." },
     ],
   },
   {
@@ -141,6 +182,8 @@ const SPRINT_STAGES = [
     lines: [
       { msg: "It's late{commaName}, and the sprint is STILL open!", sub: "Finish it before Andrew asks about calculations tomorrow." },
       { msg: "Midnight sprint emergency{commaName} — sort of!", sub: "You're one short set away from a clean day. Go!" },
+      { msg: "{Name}. Sprint. Now. Please.", sub: "Then sleep. Then glory. In that order." },
+      { msg: "Last call for calculation sprint{commaName}!", sub: "Open Challenge and close the day properly." },
     ],
   },
 ];
@@ -992,6 +1035,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [cheerUntil, setCheerUntil] = useState(0);
   // Brief bounce when the avatar is tapped.
   const [tapBounce, setTapBounce] = useState(false);
+  // Bumps each time the student re-opens the bubble so practice lines rotate.
+  const [speechEpoch, setSpeechEpoch] = useState(0);
   // Post-quiz score coaching (takes priority while active).
   const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
   // Entrance phase: hidden → enter (pop) → ready.
@@ -1285,6 +1330,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   const situation = useMemo(() => {
     const seedBase = `${uid || 'anon'}-${today}`;
+    // Rotate lines: time slot (~30 min) + reopen count, so the same nag isn't stuck all day.
+    const slot = Math.floor(hour * 2);
+    const rotateSeed = `${seedBase}-s${slot}-e${speechEpoch}`;
 
     // Highest priority: just finished a challenge — score mantras + review CTA.
     // Cleared by timeout / dismiss (no Date.now() in render — purity lint).
@@ -1300,14 +1348,14 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
     // cheerUntil is a timestamp; non-zero means still celebrating (cleared by timer).
     if (cheerUntil) {
-      const line = pickLine(COPY.bothDone, `${seedBase}-cheer`, firstName);
+      const line = pickLine(COPY.bothDone, `${rotateSeed}-cheer`, firstName);
       return {
         mood: 'cheer',
         eyebrow: 'Great job',
         msg: line.msg,
         sub: line.sub,
         cta: null,
-        key: `cheer-${today}`,
+        key: `cheer-${today}-${speechEpoch}`,
       };
     }
 
@@ -1318,7 +1366,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
     // On Challenge tab: performance report + teacher feedback + secret-note backlog.
     if (activeTab === 'Challenge') {
-      return buildChallengeBriefing(recentPerf, firstName, seedBase, {
+      return buildChallengeBriefing(recentPerf, firstName, `${rotateSeed}-ch`, {
         unreadFeedback,
         dueNotes,
       });
@@ -1332,7 +1380,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       if (dueNotes > 0) {
         const countPhrase = secretNoteCountPhrase(dueNotes);
         const countPhraseCapital = countPhrase.charAt(0).toUpperCase() + countPhrase.slice(1);
-        const line = pickLine(COPY.secretNote, `${seedBase}-note`, firstName, {
+        const line = pickLine(COPY.secretNote, `${rotateSeed}-note`, firstName, {
           countPhrase,
           countPhraseCapital,
         });
@@ -1342,46 +1390,46 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           msg: line.msg,
           sub: line.sub,
           cta: { label: 'Take a peek', tab: 'Challenge' },
-          key: `note-${today}-${dueNotes}`,
+          key: `note-${today}-${dueNotes}-${speechEpoch}`,
         };
       }
-      const line = pickLine(COPY.bothDone, `${seedBase}-done`, firstName);
+      const line = pickLine(COPY.bothDone, `${rotateSeed}-done`, firstName);
       return {
         mood: 'idle',
         eyebrow: 'All set',
         msg: line.msg,
         sub: line.sub,
         cta: null,
-        key: `done-${today}`,
+        key: `done-${today}-${speechEpoch}`,
       };
     }
 
     // Prefer daily practice messaging first (matches old nudge priority).
     if (needDaily) {
       const pack = PRACTICE_STAGES[stage] || PRACTICE_STAGES[0];
-      const line = pickLine(pack.lines, `${seedBase}-daily-${stage}`, firstName);
+      const line = pickLine(pack.lines, `${rotateSeed}-daily-${stage}`, firstName);
       return {
         mood: pack.mood,
         eyebrow: stage >= 5 ? 'Almost midnight' : stage >= 3 ? 'Evening check-in' : 'Daily Practice',
         msg: line.msg,
         sub: line.sub,
         cta: { label: 'Start practice', tab: 'Challenge' },
-        key: `daily-${today}-${stage}`,
+        key: `daily-${today}-${stage}-${slot}-${speechEpoch}`,
       };
     }
 
     // Calc only left
     const pack = SPRINT_STAGES[stage] || SPRINT_STAGES[0];
-    const line = pickLine(pack.lines, `${seedBase}-calc-${stage}`, firstName);
+    const line = pickLine(pack.lines, `${rotateSeed}-calc-${stage}`, firstName);
     return {
       mood: pack.mood,
       eyebrow: stage >= 5 ? 'Sprint — last call' : 'Daily Calculation',
       msg: line.msg,
       sub: line.sub,
       cta: { label: 'Start sprint', tab: 'Challenge' },
-      key: `calc-${today}-${stage}`,
+      key: `calc-${today}-${stage}-${slot}-${speechEpoch}`,
     };
-  }, [cheerUntil, resultCoach, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback]);
+  }, [cheerUntil, resultCoach, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.
@@ -1450,7 +1498,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           setTapBounce(false);
           requestAnimationFrame(() => setTapBounce(true));
           setDismissedKey('');
-          setBubbleOpen((o) => !o);
+          setBubbleOpen((o) => {
+            // Each re-open rotates to a different practice / sprint line.
+            if (!o) setSpeechEpoch((n) => n + 1);
+            return !o;
+          });
         }}
         role="button"
         tabIndex={0}
@@ -1460,7 +1512,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
             setTapBounce(false);
             requestAnimationFrame(() => setTapBounce(true));
             setDismissedKey('');
-            setBubbleOpen((o) => !o);
+            setBubbleOpen((o) => {
+              if (!o) setSpeechEpoch((n) => n + 1);
+              return !o;
+            });
           }
         }}
       >
