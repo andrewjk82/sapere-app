@@ -487,9 +487,6 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                             }}
                             title="Consecutive days of Daily Practice"
                           >
-                            <span style={{ fontSize: '0.85rem', lineHeight: 1, flexShrink: 0 }} aria-hidden>
-                              {practiceStreak > 0 ? '🔥' : '💤'}
-                            </span>
                             {practiceStreak > 0
                               ? `${practiceStreak} day${practiceStreak === 1 ? '' : 's'} streak`
                               : 'No streak yet'}

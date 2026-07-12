@@ -16,19 +16,19 @@ const DEADLINE = 24;
 
 const COPY = {
   practice: [
-    { msg: "Hey — still haven't done today's practice yet?", sub: "It's a quick one. Start now and you'll feel so much better after. 😊" },
+    { msg: "Hey — still haven't done today's practice yet?", sub: "It's a quick one. Start now and you'll feel so much better after." },
     { msg: "Pssst… your daily practice is waiting for you.", sub: "Afternoon's a great time to knock it out. Want to try?" },
-    { msg: "Okay friend, evening's here and practice is still open…", sub: "Let's do it together? The longer you wait, the harder it feels. 😟" },
-    { msg: "Almost midnight!! We really should finish practice today.", sub: "Come on — one short session so your streak stays alive. 😠" },
+    { msg: "Okay friend, evening's here and practice is still open…", sub: "Let's do it together? The longer you wait, the harder it feels." },
+    { msg: "Almost midnight!! We really should finish practice today.", sub: "Come on — one short session so your streak stays alive." },
   ],
   sprint: [
     { msg: "Oh, and the calculation sprint is still open!", sub: "Just a few questions — like three minutes. Easy win." },
     { msg: "Perfect little window for your calculation sprint.", sub: "Quick questions, done before you know it." },
     { msg: "Hey — sprint still needs you!", sub: "Only a few minutes. You can squeeze it in right now." },
-    { msg: "Still no sprint today… last chance before the day ends!", sub: "I believe in you — let's finish it now. 😤" },
+    { msg: "Still no sprint today… last chance before the day ends!", sub: "I believe in you — let's finish it now." },
   ],
   bothDone: [
-    { msg: "You crushed today's practice — I'm so proud of you! 🔥", sub: "Rest a bit, or poke around the Journey Map if you're curious." },
+    { msg: "You crushed today's practice — I'm so proud of you!", sub: "Rest a bit, or poke around the Journey Map if you're curious." },
   ],
   secretNote: [
     { msg: "Hey, your Secret Note has a few things to review.", sub: "A quick look now means those mistakes won't stick. Want to peek?" },
@@ -107,10 +107,10 @@ const buildScheduleSpeech = (session) => {
   let mood = 'hint';
 
   if (hw && !hwDone) {
-    sub = `Also… don't forget your homework: "${hw}" Want me to keep reminding you? You've got this! 💪`;
+    sub = `Also… don't forget your homework: "${hw}" Want me to keep reminding you? You've got this!`;
     mood = 'thinking';
   } else if (hw && hwDone) {
-    sub = "And nice one — homework for that lesson is already ticked off. ✨ You're ahead of the game!";
+    sub = "And nice one — homework for that lesson is already ticked off. You're ahead of the game!";
     mood = 'cheer';
   }
 
