@@ -1280,15 +1280,15 @@ function App() {
       </div>
 
       {/* Floating flame coach — students only.
-          Stay mounted across Challenge lock so remount never leaves it stuck
-          invisible; hide visually/quietly while exam or quiz is active. */}
+          Only fully hide during exam (quiz lock used to unmount/remount and
+          leave the avatar stuck invisible). Keep mounted otherwise. */}
       {!isAdmin && user?.uid && (
         <FlameBuddy
           uid={user.uid}
           profile={profile || sharedProfile}
           activeTab={activeTab}
           setActiveTab={handleTabChange}
-          hidden={examInProgress || isLocked}
+          hidden={!!examInProgress}
         />
       )}
 

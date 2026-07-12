@@ -4,6 +4,7 @@
  * Speaks friendly, conversational tips based on daily work + schedule.
  */
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
@@ -429,10 +430,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
-  // Entrance phase: hidden → pre → enter (pop) → ready (always visible after).
-  // IMPORTANT: remounts (e.g. after Challenge unlocks isLocked) must use "ready",
-  // never stick on "pre" (opacity 0) — that was making the avatar vanish.
-  const [phase, setPhase] = useState('hidden'); // hidden | pre | enter | ready
+  // Entrance phase: hidden → enter (pop) → ready.
+  // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
+  // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
+  const [phase, setPhase] = useState('hidden'); // hidden | enter | ready
 
   const calcEnabled = profile?.calculationEnabled !== false;
   const today = new Date().toLocaleDateString('en-CA');
@@ -441,48 +442,56 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   // First appearance this browser session: wait ~1s, then fairy pop-in.
   // Later remounts in the same session appear immediately as "ready".
   useEffect(() => {
-    if (!uid || hidden) {
-      return undefined;
-    }
+    if (!uid) return undefined;
+
+    // Soft-hide (exam etc.) must not cancel a half-finished entrance forever.
+    // When un-hidden again, if we already marked arrived → ready; else restart.
+    if (hidden) return undefined;
+
+    let cancelled = false;
     let showTimer;
     let settleTimer;
     let bubbleTimer;
-    let raf1 = 0;
-    let raf2 = 0;
+    let safetyTimer;
     const sessionKey = `sapere:flame-buddy-arrived:${uid}`;
     let already = false;
     try {
       already = Boolean(sessionStorage.getItem(sessionKey));
     } catch { /* ignore */ }
 
-    if (already) {
+    const goReady = (openBubble) => {
+      if (cancelled) return;
       setPhase('ready');
-      setBubbleOpen(true);
+      if (openBubble) setBubbleOpen(true);
+      try { sessionStorage.setItem(sessionKey, '1'); } catch { /* ignore */ }
+    };
+
+    if (already) {
+      goReady(true);
       return undefined;
     }
 
+    // Absolute safety: never stay invisible more than 3.5s after becoming visible.
+    safetyTimer = setTimeout(() => goReady(true), 3500);
+
     showTimer = setTimeout(() => {
-      setPhase('pre');
-      // Paint invisible pre frame, then kick the enter animation.
-      raf1 = requestAnimationFrame(() => {
-        raf2 = requestAnimationFrame(() => {
-          setPhase('enter');
-          try {
-            sessionStorage.setItem(sessionKey, '1');
-          } catch { /* ignore */ }
-          // After the bounce, lock into ready so remounts never go invisible.
-          settleTimer = setTimeout(() => setPhase('ready'), 750);
-          bubbleTimer = setTimeout(() => setBubbleOpen(true), 450);
-        });
-      });
+      if (cancelled) return;
+      setPhase('enter');
+      try { sessionStorage.setItem(sessionKey, '1'); } catch { /* ignore */ }
+      settleTimer = setTimeout(() => {
+        if (!cancelled) setPhase('ready');
+      }, 750);
+      bubbleTimer = setTimeout(() => {
+        if (!cancelled) setBubbleOpen(true);
+      }, 450);
     }, 1000);
 
     return () => {
+      cancelled = true;
       clearTimeout(showTimer);
       clearTimeout(settleTimer);
       clearTimeout(bubbleTimer);
-      if (raf1) cancelAnimationFrame(raf1);
-      if (raf2) cancelAnimationFrame(raf2);
+      clearTimeout(safetyTimer);
     };
   }, [uid, hidden]);
 
@@ -680,15 +689,17 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     setBubbleOpen(true);
   }, [situation?.key, dismissedKey, activeTab]);
 
-  if (hidden || !uid || phase === 'hidden') return null;
+  if (!uid || phase === 'hidden') return null;
 
-  const showBubble = bubbleOpen && dismissedKey !== situation.key;
-  const phaseClass =
-    phase === 'enter' ? 'fb-root--enter'
-      : phase === 'pre' ? 'fb-root--pre'
-        : 'fb-root--ready';
+  // Soft-hide during exam / quiz lock: stay mounted so entrance state is kept,
+  // but don't cover the quiz UI.
+  if (hidden) return null;
 
-  return (
+  const showBubble = bubbleOpen && dismissedKey !== situation.key && activeTab !== 'Challenge';
+  const phaseClass = phase === 'enter' ? 'fb-root--enter' : 'fb-root--ready';
+  const mood = situation?.mood || 'idle';
+
+  const node = (
     <div
       className={`fb-root ${phaseClass}`}
       role="complementary"
@@ -744,7 +755,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           }
         }}
       >
-        <div className={`fb-flame ${situation.mood}`}>
+        <div className={`fb-flame ${mood}`}>
           <div className="fb-flame-wrap">
             <div className="fb-aura" />
             <div className="fb-ember fb-ember1" />
@@ -765,4 +776,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       </div>
     </div>
   );
+
+  // Portal to body so app-shell filter/overflow never clips or re-parents fixed.
+  if (typeof document !== 'undefined' && document.body) {
+    return createPortal(node, document.body);
+  }
+  return node;
 }
