@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { Calendar, Clock, ChevronLeft, ChevronRight, CheckCircle2, Trash2, X, Save, Check, List } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, query, where, onSnapshot, doc, updateDoc, deleteDoc, getDoc } from 'firebase/firestore';
@@ -19,8 +19,12 @@ const TIME_OPTIONS = [
 
 const SESSION_ACCENTS = ['#4f46e5', '#0891b2', '#16a34a', '#db2777', '#ea580c', '#7c3aed'];
 const SCHEDULE_STUDENT_PROFILE_CACHE_VERSION = 1;
-const SLOT_H = 70;
-const timeSlots = Array.from({ length: 17 }, (_, i) => i + 8); // 8 AM – 12 AM
+// Hour row height is computed from the available viewport so the full week
+// (8 AM – 12 AM) fits on one screen without vertical scrolling.
+const GRID_START_HOUR = 8;
+const timeSlots = Array.from({ length: 17 }, (_, i) => i + GRID_START_HOUR); // 8 AM – 12 AM
+const MIN_SLOT_H = 32;
+const DEFAULT_SLOT_H = 48;
 const STUDENT_LIST_CACHE_VERSION = 2;
 
 const formatDateKey = (date) => {
@@ -238,6 +242,8 @@ const Schedule = ({ students = [] }) => {
   const [loading, setLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [currentDate, setCurrentDate] = useState(new Date());
+  const gridBodyRef = useRef(null);
+  const [slotH, setSlotH] = useState(DEFAULT_SLOT_H);
   const [editData, setEditData] = useState({
     notes: '',
     homework: '',
@@ -259,6 +265,30 @@ const Schedule = ({ students = [] }) => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  // Fit the full day range (all timeSlots) into the visible calendar body so
+  // the week grid doesn't need vertical scrolling on a normal desktop window.
+  useEffect(() => {
+    if (isMobile) return undefined;
+    const el = gridBodyRef.current;
+    if (!el) return undefined;
+
+    const measure = () => {
+      const available = el.clientHeight;
+      if (available <= 0) return;
+      const next = Math.max(MIN_SLOT_H, Math.floor(available / timeSlots.length));
+      setSlotH((prev) => (prev === next ? prev : next));
+    };
+
+    measure();
+    const ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(measure) : null;
+    ro?.observe(el);
+    window.addEventListener('resize', measure);
+    return () => {
+      ro?.disconnect();
+      window.removeEventListener('resize', measure);
+    };
+  }, [isMobile, loading]);
 
   // ── Fetch sessions from Firestore ──────────────────────────────────────────
   useEffect(() => {
@@ -689,9 +719,16 @@ const Schedule = ({ students = [] }) => {
   };
 
   // ── Desktop Calendar Grid View ──
+  // Hour row height (slotH) is measured so all timeSlots fit the body height.
+  const minEventH = Math.max(18, Math.min(28, slotH - 4));
+  const eventPad = slotH < 40 ? '4px 6px' : '8px 9px';
+  const eventTitleSize = slotH < 40 ? '9px' : '10px';
+  const eventNameSize = slotH < 40 ? '10px' : '11px';
+
   const renderCalendarView = () => (
     <div style={{ 
       flex: 1, 
+      minHeight: 0,
       backgroundColor: '#fff', 
       borderRadius: '18px', 
       border: '1px solid #e2e8f0', 
@@ -700,23 +737,23 @@ const Schedule = ({ students = [] }) => {
       overflow: 'hidden', 
       boxShadow: '0 18px 45px rgba(15,23,42,0.08)' 
     }}>
-      {/* Days header row */}
-      <div style={{ display: 'grid', gridTemplateColumns: '76px repeat(7, 1fr)', borderBottom: '1px solid #e2e8f0', backgroundColor: '#f8fafc', flexShrink: 0 }}>
+      {/* Days header row — kept compact so more room for the hour grid */}
+      <div style={{ display: 'grid', gridTemplateColumns: '64px repeat(7, 1fr)', borderBottom: '1px solid #e2e8f0', backgroundColor: '#f8fafc', flexShrink: 0 }}>
         <div style={{ borderRight: '1px solid #e2e8f0' }} />
         {weekDays.map((day, i) => {
           const isToday = day.toDateString() === new Date().toDateString();
           const dateStr = formatDateKey(day);
           const dayCount = sessions.filter(s => s.date === dateStr).length;
           return (
-            <div key={i} style={{ padding: '14px 8px', textAlign: 'center', borderRight: i < 6 ? '1px solid #e2e8f0' : 'none', backgroundColor: isToday ? '#eef2ff' : 'transparent' }}>
-              <span style={{ display: 'block', fontSize: '10px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '4px' }}>
+            <div key={i} style={{ padding: '8px 6px', textAlign: 'center', borderRight: i < 6 ? '1px solid #e2e8f0' : 'none', backgroundColor: isToday ? '#eef2ff' : 'transparent' }}>
+              <span style={{ display: 'block', fontSize: '10px', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '2px' }}>
                 {day.toLocaleDateString('en-US', { weekday: 'short' })}
               </span>
-              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
+              <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '5px' }}>
                 <span style={{
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
-                  width: '34px', height: '34px', borderRadius: '12px',
-                  fontSize: '1rem', fontWeight: 900,
+                  width: '30px', height: '30px', borderRadius: '10px',
+                  fontSize: '0.95rem', fontWeight: 900,
                   backgroundColor: isToday ? '#4f46e5' : '#fff',
                   color: isToday ? '#fff' : '#334155',
                   border: isToday ? 'none' : '1px solid #e2e8f0',
@@ -725,7 +762,7 @@ const Schedule = ({ students = [] }) => {
                   {day.getDate()}
                 </span>
                 {dayCount > 0 && (
-                  <span style={{ minWidth: '22px', height: '22px', borderRadius: '999px', background: '#e0f2fe', color: '#0369a1', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.72rem', fontWeight: 900 }}>
+                  <span style={{ minWidth: '20px', height: '20px', borderRadius: '999px', background: '#e0f2fe', color: '#0369a1', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.7rem', fontWeight: 900 }}>
                     {dayCount}
                   </span>
                 )}
@@ -735,24 +772,24 @@ const Schedule = ({ students = [] }) => {
         })}
       </div>
 
-      {/* Scrollable time grid */}
-      <div style={{ flex: 1, overflowY: 'auto', position: 'relative' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '76px repeat(7, 1fr)', position: 'relative' }}>
+      {/* Time grid — sized to fill remaining viewport (no vertical scroll) */}
+      <div ref={gridBodyRef} style={{ flex: 1, minHeight: 0, overflow: 'hidden', position: 'relative' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '64px repeat(7, 1fr)', position: 'relative', height: '100%' }}>
           {/* Hour labels */}
           <div style={{ backgroundColor: '#fbfdff', borderRight: '1px solid #e2e8f0' }}>
             {timeSlots.map(h => (
-              <div key={h} style={{ height: `${SLOT_H}px`, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end', paddingRight: '14px', paddingTop: '10px' }}>
-                <span style={{ fontSize: '10px', fontWeight: 800, color: '#94a3b8' }}>
-                  {h === 12 ? '12 PM' : h === 24 ? '12 AM' : h > 12 ? `${h - 12} PM` : `${h} AM`}
+              <div key={h} style={{ height: `${slotH}px`, display: 'flex', alignItems: 'flex-start', justifyContent: 'flex-end', paddingRight: '10px', paddingTop: '4px' }}>
+                <span style={{ fontSize: '10px', fontWeight: 800, color: '#94a3b8', lineHeight: 1 }}>
+                  {h === 12 ? '12 PM' : h === 24 || h === 0 ? '12 AM' : h > 12 ? `${h - 12} PM` : `${h} AM`}
                 </span>
               </div>
             ))}
           </div>
 
           {/* Grid background lines */}
-          <div style={{ position: 'absolute', left: '76px', right: 0, top: 0, pointerEvents: 'none', zIndex: 1 }}>
+          <div style={{ position: 'absolute', left: '64px', right: 0, top: 0, pointerEvents: 'none', zIndex: 1 }}>
             {timeSlots.map(h => (
-              <div key={h} style={{ height: `${SLOT_H}px`, borderBottom: '1px solid rgba(226,232,240,0.6)' }} />
+              <div key={h} style={{ height: `${slotH}px`, borderBottom: '1px solid rgba(226,232,240,0.6)' }} />
             ))}
           </div>
 
@@ -761,7 +798,7 @@ const Schedule = ({ students = [] }) => {
             const dateStr = formatDateKey(day);
             const daySessions = sessions.filter(s => s.date === dateStr);
             return (
-              <div key={di} style={{ position: 'relative', height: `${timeSlots.length * SLOT_H}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.9)' : 'none', background: di % 2 === 0 ? '#fff' : '#fcfdff' }}>
+              <div key={di} style={{ position: 'relative', height: `${timeSlots.length * slotH}px`, borderRight: di < 6 ? '1px solid rgba(241,245,249,0.9)' : 'none', background: di % 2 === 0 ? '#fff' : '#fcfdff' }}>
                 {(() => {
                   // Group sessions by startTime, endTime, and subject to handle group classes
                   const groups = daySessions.reduce((acc, s) => {
@@ -774,12 +811,11 @@ const Schedule = ({ students = [] }) => {
                   return Object.values(groups).map(group => {
                     const session = group[0];
                     const isGroup = group.length > 1;
-                    const studentNames = group.map(s => s.studentName).join('\n');
                     
                     const start = parseTime(session.startTime);
                     const end = parseTime(session.endTime);
-                    const top = (start - 8) * SLOT_H;
-                    const height = Math.max((end - start) * SLOT_H - 4, 30);
+                    const top = (start - GRID_START_HOUR) * slotH;
+                    const height = Math.max((end - start) * slotH - 3, minEventH);
                     const accent = getSessionAccent(session);
 
                     return (
@@ -787,32 +823,35 @@ const Schedule = ({ students = [] }) => {
                         key={session.id}
                         onClick={() => handleOpenDetails(isGroup ? { ...session, isGroupedClass: true, groupStudents: group } : session)}
                         style={{
-                          position: 'absolute', top: `${top + 2}px`, height: `${height}px`,
-                          left: '6px', right: '6px',
-                          backgroundColor: `${accent}14`, borderLeft: `4px solid ${accent}`,
-                          borderRadius: '10px', padding: '8px 9px',
+                          position: 'absolute', top: `${top + 1}px`, height: `${height}px`,
+                          left: '4px', right: '4px',
+                          backgroundColor: `${accent}14`, borderLeft: `3px solid ${accent}`,
+                          borderRadius: '8px', padding: eventPad,
                           cursor: 'pointer', zIndex: 5, overflow: 'hidden',
-                          boxShadow: '0 10px 22px rgba(15,23,42,0.08)',
+                          boxShadow: '0 6px 14px rgba(15,23,42,0.07)',
                           transition: 'transform 0.2s',
                           display: 'flex',
-                          flexDirection: 'column'
+                          flexDirection: 'column',
+                          minHeight: 0,
                         }}
                         onMouseOver={(e) => e.currentTarget.style.transform = 'scale(1.02)'}
                         onMouseOut={(e) => e.currentTarget.style.transform = 'scale(1)'}
                       >
-                        <div style={{ fontSize: '10px', fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '3px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                        <div style={{ fontSize: eventTitleSize, fontWeight: 900, color: accent, textTransform: 'uppercase', marginBottom: '1px', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           {normalizeSubjectLabel(session.subject)} {isGroup && `(${group.length})`}
                         </div>
-                        <div style={{ fontSize: '11px', fontWeight: 800, color: '#0f172a', lineHeight: '1.2' }}>
+                        <div style={{ fontSize: eventNameSize, fontWeight: 800, color: '#0f172a', lineHeight: '1.15', minHeight: 0, overflow: 'hidden' }}>
                           {group.map((s, i) => (
                             <div key={i} style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                               {s.studentName}
                             </div>
                           ))}
                         </div>
-                        <div style={{ fontSize: '9px', color: '#475569', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '4px', fontWeight: 800 }}>
-                          <Clock size={10} />{session.startTime}
-                        </div>
+                        {height >= 36 && (
+                          <div style={{ fontSize: '9px', color: '#475569', marginTop: 'auto', display: 'flex', alignItems: 'center', gap: '3px', fontWeight: 800 }}>
+                            <Clock size={9} />{session.startTime}
+                          </div>
+                        )}
                       </div>
                     );
                   });
@@ -826,10 +865,23 @@ const Schedule = ({ students = [] }) => {
   );
 
   return (
-    <div className="app-page" style={{ height: 'calc(100vh - 80px)', display: 'flex', flexDirection: 'column' }}>
+    <div
+      className="app-page"
+      style={{
+        // Fill the shell main pane (100vh shell − 32px top/bottom padding) so the
+        // week grid can size hour rows to fit without page scroll.
+        height: 'calc(100dvh - 64px)',
+        maxHeight: 'calc(100dvh - 64px)',
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: 0,
+        overflow: 'hidden',
+        gap: '12px',
+      }}
+    >
 
       {/* ── Header ── */}
-      <div className="app-page__header" style={{ marginBottom: '24px' }}>
+      <div className="app-page__header" style={{ marginBottom: 0, flexShrink: 0 }}>
         <div className="app-page__title">
           <p style={{ margin: '0 0 6px', fontSize: '0.75rem', color: '#64748b', fontWeight: 900, textTransform: 'uppercase', letterSpacing: '0.1em' }}>
             {weekRangeLabel}
