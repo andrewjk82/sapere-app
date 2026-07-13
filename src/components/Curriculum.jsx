@@ -154,19 +154,23 @@ const Curriculum = () => {
     }
   };
 
+  // ── [TRAFFIC FIX] isNew badge: read ONE sync_meta doc (not 627 question docs) ──
+  // sync_meta/newQuestions stores { ids: [...] } — maintained by update scripts.
+  // We re-read only when questionsSyncVersion changes (already subscribed above).
   useEffect(() => {
     const fetchNewQuestions = async () => {
       try {
-        const q = query(collection(db, 'questions'), where('isNew', '==', true));
-        const snap = await getDocs(q);
-        const list = snap.docs.map(doc => ({ id: doc.id, ...doc.data() }));
-        setNewUnreadQuestions(list);
+        const snap = await getDoc(doc(db, 'sync_meta', 'newQuestions'));
+        if (!snap.exists()) { setNewUnreadQuestions([]); return; }
+        const ids = snap.data()?.ids || [];
+        // ids is the minimal list — store as lightweight objects for badge counts
+        setNewUnreadQuestions(ids.map(id => ({ id })));
       } catch (err) {
         console.error('Failed to fetch new questions for notifications:', err);
       }
     };
     fetchNewQuestions();
-  }, [db, selectedChapterForQuestions]);
+  }, [db, questionsSyncVersion]);
 
   const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
   const [previewLesson, setPreviewLesson] = useState(null);
@@ -2795,16 +2799,28 @@ const Curriculum = () => {
 
   return (
     <div className="app-page">
-      <div className="app-page__header">
-        <div className="app-page__title">
-          <h2>Curriculum</h2>
+      {/* Student HSC view owns its own title (tab-aware). Admin keeps "Curriculum". */}
+      {isAdmin && (
+        <div className="app-page__header">
+          <div className="app-page__title">
+            <h2>Curriculum</h2>
+          </div>
         </div>
-      </div>
+      )}
+      {!isAdmin && profile?.showHscGraph !== true && (
+        <div className="app-page__header">
+          <div className="app-page__title">
+            <h2>Your learning path</h2>
+            <p>Work through each chapter and topic at your own pace</p>
+          </div>
+        </div>
+      )}
 
       {!isAdmin ? (
         profile?.showHscGraph === true ? (
           // HSC-activated students see the past-paper journey by default,
           // with an in-view toggle back to the regular curriculum roadmap.
+          // Title switches with the Past papers / Curriculum tabs inside HscJourney.
           <HscJourney
             hscRecords={hscRecords}
             profile={profile}

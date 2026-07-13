@@ -96,15 +96,9 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
     return NSW_SCHOOL_RANKINGS.filter((s) => s.school.toLowerCase().includes(q));
   }, [rankSearch]);
 
-  const courseLabel = (() => {
-    const c = Array.isArray(profile?.assignedCourse) ? profile.assignedCourse[0] : (profile?.assignedCourse || profile?.course || '');
-    return c ? `Mathematics ${String(c).replace(/mathematics/i, '').trim() || c}`.replace(/\s+/g, ' ').trim() : 'Mathematics';
-  })();
-  const yearLabel = profile?.year || 'Year 12';
-
   // ── Toggle ──────────────────────────────────────────────────────────────
   const toggle = (
-    <div style={{ display: 'inline-flex', padding: '5px', borderRadius: '14px', background: 'rgba(167,139,250,0.12)', gap: '4px' }}>
+    <div style={{ display: 'inline-flex', padding: '5px', borderRadius: '14px', background: 'rgba(167,139,250,0.12)', gap: '4px', flexShrink: 0 }}>
       {[['papers', 'Past papers'], ['curriculum', 'Curriculum']].map(([key, label]) => (
         <button
           key={key}
@@ -123,23 +117,22 @@ const HscJourney = ({ hscRecords = [], profile = {}, curriculumSlot = null, onPr
     </div>
   );
 
-  // ── Banner ──────────────────────────────────────────────────────────────
+  // Page-level header: title follows the active tab (no duplicate "Curriculum",
+  // no purple Year · HSC Prep · Mathematics Advanced eyebrow — that read wrong
+  // for junior years and repeated the page context).
   const banner = (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '20px' }}>
-      <div>
-        <div style={{ fontSize: '0.7rem', fontWeight: 900, letterSpacing: '0.16em', color: '#8b5cf6', textTransform: 'uppercase' }}>
-          {yearLabel} · {view === 'curriculum' ? 'Curriculum' : 'HSC Prep'} · {courseLabel}
-        </div>
-        <h2 style={{ fontFamily: '"Outfit", sans-serif', fontSize: 'clamp(1.5rem, 4vw, 2.1rem)', color: '#1e1b4b', margin: '4px 0 0' }}>
+    <div className="app-page__header" style={{ marginBottom: '8px' }}>
+      <div className="app-page__title">
+        <h2>
           {view === 'curriculum' ? 'Your learning path' : 'Past paper journey'}
         </h2>
-        <div style={{ color: '#6d6a85', marginTop: '6px', fontSize: '0.9rem', fontWeight: 600 }}>
+        <p>
           {view === 'curriculum'
             ? 'Work through each chapter and topic at your own pace'
             : papers.length > 0
               ? `${papers.length} paper${papers.length === 1 ? '' : 's'} completed · scores tracked by your teacher`
               : 'Your teacher will log each past paper you complete here'}
-        </div>
+        </p>
       </div>
       {toggle}
     </div>
