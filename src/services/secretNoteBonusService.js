@@ -1,18 +1,20 @@
 /**
  * Secret-Note clear bonus XP (low Firebase cost).
  *
- * Rules (local calendar day, en-CA — same as Daily Challenge):
- *  - Daily-only students (calculationEnabled === false):
- *      empty daily notebook → +10 XP once per day
- *  - Students with calculation test:
- *      empty daily notebook → +5 XP once per day
- *      empty calc notebook  → +5 XP once per day
+ * Timing (per product rule):
+ *  - NOT awarded the moment notes become empty.
+ *  - Settled after that local calendar day's midnight ("저녁 12시").
+ *  - On the next day, when the student opens the app, we check whether the
+ *    notebook is still empty and award for YESTERDAY (once).
+ *
+ * Amounts:
+ *  - Daily-only (calculationEnabled === false): +10 if daily notebook empty
+ *  - With calculation: +5 if daily empty, +5 if calc empty
  *
  * Traffic:
- *  - Note counts: localStorage only (0 reads)
- *  - Idempotency: local watermark + users/{uid}.secretNoteClearBonus on profile
- *    (already in shared ProfileContext — no extra get for the common path)
- *  - Award path: 1 transaction (user + leaderboard merge) — no collection scans
+ *  - Note counts: localStorage (0 reads)
+ *  - Idempotency: local watermark + users/{uid}.secretNoteClearBonus
+ *  - Award path: 1 transaction (user + leaderboard) — no collection scans / cron
  */
 
 import {
@@ -21,10 +23,17 @@ import {
 import { db } from '../firebase/config';
 import { getNoteCount } from '../utils/secretNote';
 
-/** Feature go-live (local date). Days before this never get the bonus. */
+/** Feature go-live (local date). Award days before this never get the bonus. */
 export const SECRET_NOTE_BONUS_START = '2026-07-14';
 
-const localDateKey = () => new Date().toLocaleDateString('en-CA');
+const localDateKey = (date = new Date()) => date.toLocaleDateString('en-CA');
+
+/** Calendar day that just ended (local) — the day we may settle at/after midnight. */
+export const yesterdayDateKey = () => {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return localDateKey(d);
+};
 
 const localWatermarkKey = (uid, dateKey) => `sapere:sn-clear-bonus:${uid || 'anon'}:${dateKey}`;
 
@@ -50,64 +59,60 @@ const writeLocalWatermark = (uid, dateKey, stamp) => {
 };
 
 /**
- * Compute pending bonus from local note counts + already-claimed flags.
- * @returns {{ xp: number, claimDaily: boolean, claimCalc: boolean, claimDailyOnly: boolean, hasCalc: boolean, dateKey: string } | null}
+ * Compute pending bonus for YESTERDAY only (after that day's midnight).
+ * Notes must be empty at check time (first open after midnight).
  */
 export function computeSecretNoteClearBonus(uid, profile) {
   if (!uid) return null;
-  const dateKey = localDateKey();
-  if (dateKey < SECRET_NOTE_BONUS_START) return null;
+
+  // Only settle the day that has already ended.
+  const awardDate = yesterdayDateKey();
+  if (awardDate < SECRET_NOTE_BONUS_START) return null;
 
   const hasCalc = profile?.calculationEnabled !== false;
   const dailyEmpty = getNoteCount('daily', uid) === 0;
   const calcEmpty = getNoteCount('calc', uid) === 0;
 
   const remote = profile?.secretNoteClearBonus;
-  const remoteSameDay = remote && String(remote.date) === dateKey;
+  const remoteSameDay = remote && String(remote.date) === awardDate;
   const claimed = {
     daily: remoteSameDay ? !!remote.daily : false,
     calc: remoteSameDay ? !!remote.calc : false,
     dailyOnly: remoteSameDay ? !!remote.dailyOnly : false,
   };
-  // Local watermark also blocks re-award if profile snapshot is briefly stale.
-  const local = readLocalWatermark(uid, dateKey);
+  const local = readLocalWatermark(uid, awardDate);
   claimed.daily = claimed.daily || local.daily;
   claimed.calc = claimed.calc || local.calc;
   claimed.dailyOnly = claimed.dailyOnly || local.dailyOnly;
 
   if (!hasCalc) {
-    // Daily-only: single 10 XP when daily notebook empty.
-    if (!dailyEmpty || claimed.dailyOnly || claimed.daily) {
-      return null;
-    }
+    if (!dailyEmpty || claimed.dailyOnly || claimed.daily) return null;
     return {
       xp: 10,
       claimDaily: true,
       claimCalc: false,
       claimDailyOnly: true,
       hasCalc: false,
-      dateKey,
+      dateKey: awardDate,
     };
   }
 
-  // Calc-enabled: 5 each for empty daily / empty calc notebooks.
   const claimDaily = dailyEmpty && !claimed.daily;
   const claimCalc = calcEmpty && !claimed.calc;
   if (!claimDaily && !claimCalc) return null;
-  const xp = (claimDaily ? 5 : 0) + (claimCalc ? 5 : 0);
   return {
-    xp,
+    xp: (claimDaily ? 5 : 0) + (claimCalc ? 5 : 0),
     claimDaily,
     claimCalc,
     claimDailyOnly: false,
     hasCalc: true,
-    dateKey,
+    dateKey: awardDate,
   };
 }
 
 /**
- * Award pending clear-bonus if eligible. Safe to call often (no-ops cheaply).
- * @returns {Promise<{ awarded: boolean, xp?: number, reason?: string }>}
+ * Award pending clear-bonus for yesterday if eligible.
+ * Safe to call often — no-ops until after midnight + empty notes.
  */
 export async function tryAwardSecretNoteClearBonus(uid, profile) {
   const plan = computeSecretNoteClearBonus(uid, profile);
@@ -143,7 +148,6 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
       let xp = 0;
       if (!hasCalc) {
         if (!claimDailyOnly && !claimDaily) return;
-        // Re-check: only award daily-only package once
         if (sameDay && (remote.dailyOnly || remote.daily)) return;
         xp = 10;
         claimDailyOnly = true;
@@ -164,6 +168,7 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
         calc: !!(sameDay && remote?.calc) || claimCalc,
         dailyOnly: !!(sameDay && remote?.dailyOnly) || claimDailyOnly,
         xp: (sameDay ? Number(remote?.xp) || 0 : 0) + xp,
+        settledAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };
 
@@ -207,7 +212,6 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
     return { awarded: true, xp: awardedXp, dateKey: plan.dateKey };
   }
 
-  // Lost race / already claimed in transaction
   writeLocalWatermark(uid, plan.dateKey, {
     daily: plan.claimDaily || plan.claimDailyOnly,
     calc: plan.claimCalc,

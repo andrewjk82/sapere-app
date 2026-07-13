@@ -474,7 +474,7 @@ function App() {
               showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
               tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
                 if (r?.awarded && r.xp > 0) {
-                  showToast(`Secret Note clear bonus: +${r.xp} XP ✨`, 'success');
+                  showToast(`Secret Note clear bonus (+${r.xp} XP) for keeping notes empty ✨`, 'success');
                 }
               }).catch(() => {});
             }
@@ -492,10 +492,10 @@ function App() {
           if (resetAt > lastApplied) {
             applySecretNoteReset(user.uid, kinds, resetAt);
             showToast('Your teacher reset your Secret Notebook.', 'info');
-            // Empty notebooks may unlock clear-bonus XP (local counts; 0–1 write).
+            // Bonus is midnight-settled for the previous day — probe is cheap no-op same day.
             tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
               if (r?.awarded && r.xp > 0) {
-                showToast(`Secret Note clear bonus: +${r.xp} XP ✨`, 'success');
+                showToast(`Secret Note clear bonus (+${r.xp} XP) for keeping notes empty ✨`, 'success');
               }
             }).catch(() => {});
           }

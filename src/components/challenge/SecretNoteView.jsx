@@ -412,17 +412,17 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const [tag, setTag] = useState(null);         // mistake tag chosen this card
   const [summary, setSummary] = useState({ graduated: 0, kept: 0, xp: 0 });
 
-  // Clear-bonus when this notebook is empty (daily-only 10 / calc kids 5+5).
-  // Local counts first; award is 0–1 user+leaderboard txn, idempotent per day.
+  // Clear-bonus is settled AFTER midnight for the previous day (not on empty).
+  // Still safe to probe here — same-day empty notes are ineligible until tomorrow.
   useEffect(() => {
-    if (phase !== 'empty' || !uid) return undefined;
+    if (!uid) return undefined;
     tryAwardSecretNoteClearBonus(uid, studentProfile).then((r) => {
       if (r?.awarded && r.xp > 0) {
         setSummary((s) => ({ ...s, xp: (s.xp || 0) + r.xp }));
       }
     }).catch(() => {});
     return undefined;
-  }, [phase, uid, studentProfile]);
+  }, [uid, studentProfile, phase]);
 
   // Problem-report panel (flag a broken question)
   const [reportOpen, setReportOpen] = useState(false);
