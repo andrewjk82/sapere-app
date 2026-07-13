@@ -12,6 +12,7 @@ import './SecretNoteClearModal.css';
  * Celebration card when midnight Secret-Note-clear bonus awards XP.
  * Design: yellow-border congrats card + real FlameBuddy avatar + XP count-up.
  * Payload is localStorage only (forcePayload for teacher design preview).
+ * UI only — no Firebase.
  */
 export default function SecretNoteClearModal({
   uid,
@@ -59,32 +60,44 @@ export default function SecretNoteClearModal({
   const open = payload && bonusXp > 0;
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="sync">
       {open && (
         <motion.div
+          key="snc-root"
           className="snc-modal"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.28 }}
+          variants={overlayVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
           role="dialog"
           aria-modal="true"
           aria-labelledby="snc-title"
         >
-          <motion.div className="snc-modal__backdrop" onClick={close} />
+          <motion.div
+            className="snc-modal__backdrop"
+            variants={backdropVariants}
+            onClick={close}
+          />
 
           <motion.div
             className="snc-modal__frame"
-            initial={{ opacity: 0, y: 28, scale: 0.94 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 16, scale: 0.97 }}
-            transition={{ type: 'spring', stiffness: 300, damping: 24 }}
+            variants={frameVariants}
+            initial="hidden"
+            animate="visible"
+            exit="exit"
           >
+            {/* Soft glow bloom behind the card */}
+            <motion.div
+              className="snc-modal__glow"
+              aria-hidden
+              variants={glowVariants}
+            />
+
             <div className="snc-modal__card">
-              {/* Confetti dots */}
+              {/* Confetti — burst in, then gentle float */}
               <div className="snc-confetti" aria-hidden>
                 {CONFETTI.map((c, i) => (
-                  <span
+                  <motion.span
                     key={i}
                     className="snc-confetti__bit"
                     style={{
@@ -94,56 +107,90 @@ export default function SecretNoteClearModal({
                       width: c.size,
                       height: c.size,
                       borderRadius: c.round ? '50%' : '2px',
-                      transform: `rotate(${c.rot}deg)`,
-                      animationDelay: `${c.delay}s`,
+                    }}
+                    initial={{ opacity: 0, scale: 0, y: 12, rotate: c.rot - 40 }}
+                    animate={{
+                      opacity: [0, 1, 0.9],
+                      scale: [0.4, 1.25, 1],
+                      y: [12, -4, 0],
+                      rotate: [c.rot - 40, c.rot + 12, c.rot],
+                    }}
+                    transition={{
+                      duration: 0.7,
+                      delay: 0.12 + c.delay * 0.55,
+                      ease: [0.22, 1, 0.36, 1],
                     }}
                   />
                 ))}
               </div>
 
-              {/* Real FlameBuddy avatar (cheer mood) */}
               <motion.div
-                className="snc-modal__flame-wrap"
-                animate={{ y: [0, -6, 0] }}
-                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+                className="snc-modal__body"
+                variants={staggerParent}
+                initial="hidden"
+                animate="visible"
               >
-                {/* idle = default orange flame (CSS mood fills need main fb- ids) */}
-                <FlameBuddyAvatar mood="idle" />
+                {/* Real FlameBuddy avatar — outer: enter stagger; inner: idle float */}
+                <motion.div className="snc-modal__flame-wrap" variants={itemVariants}>
+                  <motion.div
+                    animate={{ y: [0, -6, 0] }}
+                    transition={{
+                      duration: 2.4,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                      delay: 0.65,
+                    }}
+                  >
+                    <FlameBuddyAvatar mood="idle" />
+                  </motion.div>
+                </motion.div>
+
+                <motion.h2
+                  id="snc-title"
+                  className="snc-modal__title"
+                  variants={itemVariants}
+                >
+                  Congratulations
+                </motion.h2>
+                <motion.p className="snc-modal__msg" variants={itemVariants}>
+                  {copy.msg}
+                </motion.p>
+                <motion.p className="snc-modal__sub" variants={itemVariants}>
+                  {copy.sub}
+                </motion.p>
+
+                {/* XP badge */}
+                <motion.div
+                  className="snc-modal__xp-badge"
+                  variants={badgeVariants}
+                >
+                  <span className="snc-modal__xp-plus">+</span>
+                  <span className="snc-modal__xp-num">{bonusXp}</span>
+                  <span className="snc-modal__xp-unit">XP</span>
+                </motion.div>
+
+                {/* Animated total XP */}
+                <motion.div variants={itemVariants}>
+                  <XpCountUp
+                    key={`${startXp}-${targetXp}-${open}`}
+                    from={startXp}
+                    to={targetXp}
+                    bonus={bonusXp}
+                  />
+                </motion.div>
+
+                <motion.button
+                  type="button"
+                  className="snc-modal__cta"
+                  onClick={close}
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.96 }}
+                  transition={{ type: 'spring', stiffness: 420, damping: 22 }}
+                >
+                  Continue
+                </motion.button>
               </motion.div>
-
-              <h2 id="snc-title" className="snc-modal__title">Congratulations</h2>
-              <p className="snc-modal__msg">{copy.msg}</p>
-              <p className="snc-modal__sub">{copy.sub}</p>
-
-              {/* XP badge instead of medal */}
-              <motion.div
-                className="snc-modal__xp-badge"
-                initial={{ scale: 0.5, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.2, type: 'spring', stiffness: 340, damping: 16 }}
-              >
-                <span className="snc-modal__xp-plus">+</span>
-                <span className="snc-modal__xp-num">{bonusXp}</span>
-                <span className="snc-modal__xp-unit">XP</span>
-              </motion.div>
-
-              {/* Animated total XP: previous → previous + bonus */}
-              <XpCountUp
-                key={`${startXp}-${targetXp}-${open}`}
-                from={startXp}
-                to={targetXp}
-                bonus={bonusXp}
-              />
-
-              <motion.button
-                type="button"
-                className="snc-modal__cta"
-                onClick={close}
-                whileHover={{ scale: 1.03, y: -1 }}
-                whileTap={{ scale: 0.97 }}
-              >
-                Continue
-              </motion.button>
             </div>
           </motion.div>
         </motion.div>
@@ -151,6 +198,122 @@ export default function SecretNoteClearModal({
     </AnimatePresence>
   );
 }
+
+/* ── Motion variants (enter / exit) ─────────────────────────────────────── */
+
+const overlayVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.32, ease: [0.22, 1, 0.36, 1] },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.28, ease: [0.4, 0, 1, 1], delay: 0.04 },
+  },
+};
+
+const backdropVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.35, ease: 'easeOut' },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.25, ease: 'easeIn' },
+  },
+};
+
+// Card pops in with soft overshoot; exits with a gentle shrink + float-up.
+const frameVariants = {
+  hidden: {
+    opacity: 0,
+    y: 36,
+    scale: 0.86,
+    rotate: -1.2,
+    filter: 'blur(6px)',
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    filter: 'blur(0px)',
+    transition: {
+      type: 'spring',
+      stiffness: 380,
+      damping: 22,
+      mass: 0.85,
+      opacity: { duration: 0.22 },
+      filter: { duration: 0.28 },
+    },
+  },
+  exit: {
+    opacity: 0,
+    y: -18,
+    scale: 0.92,
+    rotate: 0.6,
+    filter: 'blur(4px)',
+    transition: {
+      duration: 0.32,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+};
+
+const glowVariants = {
+  hidden: { opacity: 0, scale: 0.7 },
+  visible: {
+    opacity: [0, 0.85, 0.55],
+    scale: [0.7, 1.08, 1],
+    transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.05 },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.85,
+    transition: { duration: 0.22 },
+  },
+};
+
+const staggerParent = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.055,
+      delayChildren: 0.14,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 14, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 420,
+      damping: 26,
+    },
+  },
+};
+
+const badgeVariants = {
+  hidden: { opacity: 0, scale: 0.45, y: 10 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 460,
+      damping: 16,
+      delay: 0.08,
+    },
+  },
+};
 
 function XpCountUp({ from, to, bonus }) {
   const mv = useMotionValue(from);
@@ -184,9 +347,9 @@ function XpCountUp({ from, to, bonus }) {
         </motion.span>
         <motion.span
           className="snc-modal__total-delta"
-          initial={{ opacity: 0, y: 6 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
+          initial={{ opacity: 0, y: 6, scale: 0.9 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ delay: 0.7, type: 'spring', stiffness: 380, damping: 20 }}
         >
           +{bonus}
         </motion.span>
