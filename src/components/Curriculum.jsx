@@ -154,9 +154,19 @@ const Curriculum = () => {
     }
   };
 
+  const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
+  const [previewLesson, setPreviewLesson] = useState(null);
+  const [questionCounts, setQuestionCounts] = useState({});
+  // Live "questions changed" signal. Any add/delete path bumps
+  // sync_meta/questions.version; this realtime listener mirrors that version so
+  // the count-fetch effect re-runs automatically — counts update without a
+  // page refresh whenever a question is added or removed anywhere.
+  // Declared before effects that depend on it (TDZ: "Cannot access 'q' before initialization").
+  const [questionsSyncVersion, setQuestionsSyncVersion] = useState(0);
+
   // ── [TRAFFIC FIX] isNew badge: read ONE sync_meta doc (not 627 question docs) ──
   // sync_meta/newQuestions stores { ids: [...] } — maintained by update scripts.
-  // We re-read only when questionsSyncVersion changes (already subscribed above).
+  // We re-read only when questionsSyncVersion changes.
   useEffect(() => {
     const fetchNewQuestions = async () => {
       try {
@@ -172,14 +182,6 @@ const Curriculum = () => {
     fetchNewQuestions();
   }, [db, questionsSyncVersion]);
 
-  const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
-  const [previewLesson, setPreviewLesson] = useState(null);
-  const [questionCounts, setQuestionCounts] = useState({});
-  // Live "questions changed" signal. Any add/delete path bumps
-  // sync_meta/questions.version; this realtime listener mirrors that version so
-  // the count-fetch effect re-runs automatically — counts update without a
-  // page refresh whenever a question is added or removed anywhere.
-  const [questionsSyncVersion, setQuestionsSyncVersion] = useState(0);
   const [showAdminTools, setShowAdminTools] = useState(false);
   const [adminActiveTab, setAdminActiveTab] = useState('y11_12');
   const [expandedSeedYears, setExpandedSeedYears] = useState({});
