@@ -29,3 +29,38 @@ Other standing rules for question-writing scripts:
 - New questions must be counted via `questionCountsService` semantics —
   `rebuildQuestionIndexes.js` handles this for you.
 - Deploy is Vercel (`https://sapere-app.vercel.app/`) — never `firebase deploy`.
+
+## Admin scripts: never full-scan `daily_stats` / `calc_stats`
+
+Firestore bills **1 read per document**. A full
+
+```js
+db.collection('users').doc(uid).collection('daily_stats').get()
+```
+
+costs ~30–90+ reads **per student**. Looping all users easily hits **thousands
+of reads in one investigation** (2026-07 traffic spike contributor).
+
+**Required pattern** — use point-reads by `YYYY-MM-DD` doc id:
+
+```js
+import {
+  getUserStatDoc,
+  getUserStatsForDateRange,
+  getUserStatsSinceReset,
+} from './_lib/safeUserStats.js';
+
+// One day:
+await getUserStatDoc(db, uid, 'daily_stats', '2026-07-13');
+
+// Tight window (max 120 days, enforced):
+await getUserStatsForDateRange(db, uid, 'daily_stats', '2026-07-11', '2026-07-13');
+
+// Since season XP reset (default since 2026-07-11):
+await getUserStatsSinceReset(db, uid, 'daily_stats');
+```
+
+Example CLI: `node tools/scripts/auditUserXpSinceReset.js Wonmin`
+
+Emergency override only: `SAPERE_ALLOW_FULL_STATS_SCAN=1` (still logs a warning).
+Never use full collection scans in default tooling or one-off audits.
