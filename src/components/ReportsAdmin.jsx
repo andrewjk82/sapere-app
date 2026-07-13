@@ -334,10 +334,11 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       await Promise.all([
         updateDoc(doc(db, 'questions', question.id), { isActive: false }),
         removeQuestionFromIndex(question.chapterId, question.id).catch(() => {}),
-        // Add to the Secret-Note blocklist so students' locally-saved copies of
-        // this broken question are purged on their next app load.
+        // Blocklist + version stamp. Students getDoc once when opening Secret
+        // Note; if version matches local cache they skip prune work.
         setDoc(doc(db, 'system_config', 'secretNoteBlocklist'), {
           ids: arrayUnion(String(question.id)),
+          version: Date.now(),
           updatedAt: serverTimestamp(),
         }, { merge: true }),
         ...linkedReports.map(r => (isCreditable(r) ? restoreCreditForReport(r) : Promise.reject(new Error('not-creditable'))).catch(() =>

@@ -95,7 +95,6 @@ import { getRandomConcept } from './data/keyConceptsData';
 import { localCache } from './services/localCacheService';
 import { getChallengeBootCacheKey } from './utils/challengeUtils';
 import {
-  pruneBlocked,
   applyTeacherApprovals as applySecretNoteApprovals,
   applyTeacherReset as applySecretNoteReset,
   filterUnappliedTeacherApprovals,
@@ -441,19 +440,9 @@ function App() {
       .catch((err) => console.warn('question index freshness check failed:', err?.code || err));
   }, [user?.uid, isAdmin]);
 
-  // Secret-Note blocklist: when a teacher flags a broken question, purge any
-  // locally-saved copy from this student's Secret Note(s). Live subscription so
-  // it clears immediately even while the student is using the app.
-  useEffect(() => {
-    if (!user?.uid || isAdmin) return undefined;
-    const ref = doc(db, 'system_config', 'secretNoteBlocklist');
-    return onSnapshot(ref, (snap) => {
-      const ids = snap.exists() ? snap.data().ids : null;
-      if (Array.isArray(ids) && ids.length) {
-        try { pruneBlocked(user.uid, ids); } catch (_) { /* non-fatal */ }
-      }
-    }, () => { /* ignore permission/transient errors */ });
-  }, [user?.uid, isAdmin]);
+  // Secret-Note blocklist: no permanent onSnapshot (was 1 live listener per
+  // online student). Sync runs once when Secret Note opens — see
+  // syncSecretNoteBlocklist() in utils/secretNoteBlocklist.js.
 
   // Teacher approvals queued on the student's user doc:
   //  - secretNoteApprovals → graduate (remove) the approved note locally

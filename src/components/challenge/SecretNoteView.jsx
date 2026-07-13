@@ -37,6 +37,7 @@ import {
   recordTwinResult,
   setMistakeTag,
 } from '../../utils/secretNote';
+import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 
 // ── Grading helpers ────────────────────────────────────────────────────────
 // Normalise a maths answer for comparison: unicode superscripts → digits,
@@ -374,10 +375,32 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     : { from: '#a78bfa', to: '#8b5cf6', soft: '#ede9fe', text: '#6d28d9' };
   const title = kind === 'calc' ? 'Secret Note · Calculation' : 'Secret Note · Daily';
 
-  // Frozen snapshot of the notebook for this session.
-  const [queue] = useState(() => getNote(kind, uid));
+  // Notebook snapshot for this session (refreshed after blocklist sync).
+  const [queue, setQueue] = useState(() => getNote(kind, uid));
   const [idx, setIdx] = useState(0);
-  const [phase, setPhase] = useState(queue.length === 0 ? 'empty' : 'solve');
+  const [phase, setPhase] = useState(() => (getNote(kind, uid).length === 0 ? 'empty' : 'solve'));
+
+  // Blocklist: one getDoc on open (not a permanent App-level onSnapshot).
+  // If server version changed, prune local notes and refresh the queue.
+  useEffect(() => {
+    if (!uid) return undefined;
+    let cancelled = false;
+    (async () => {
+      const removed = await syncSecretNoteBlocklist(uid);
+      if (cancelled || removed <= 0) return;
+      const next = getNote(kind, uid);
+      setQueue(next);
+      setIdx(0);
+      setPhase(next.length === 0 ? 'empty' : 'solve');
+      setAnswer('');
+      setSelectedIdx(null);
+      setGraded(null);
+      setTwin(null);
+      setTwinPrep(null);
+      setTwinGraded(null);
+    })();
+    return () => { cancelled = true; };
+  }, [uid, kind]);
   const [answer, setAnswer] = useState('');
   const [selectedIdx, setSelectedIdx] = useState(null);
   const [graded, setGraded] = useState(null);   // bool: was original correct
