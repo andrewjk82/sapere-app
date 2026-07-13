@@ -1,7 +1,9 @@
 import admin from 'firebase-admin';
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+// Flash-Lite: cheaper + higher free-tier headroom for sketch pre-grades.
+// Override in Vercel with GEMINI_MODEL if you need full Flash quality.
+const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
 
 function getAdminApp() {
   if (admin.apps.length > 0) return admin.apps[0];
@@ -13,7 +15,12 @@ function getAdminApp() {
 }
 
 function stripDataUrl(dataUrl) {
-  return dataUrl?.replace(/^data:image\/[a-z]+;base64,/, '') || null;
+  return dataUrl?.replace(/^data:image\/[a-zA-Z0-9.+-]+;base64,/, '') || null;
+}
+
+function mimeFromDataUrl(dataUrl) {
+  const m = String(dataUrl || '').match(/^data:(image\/[a-zA-Z0-9.+-]+);base64,/);
+  return m?.[1] || 'image/png';
 }
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -98,7 +105,7 @@ export default async function handler(req, res) {
     // Build Gemini multimodal parts
     const parts = [];
 
-    const hasDrawing = item.hasDrawing || (item.answerImage && item.answerImage.length > 100);
+    const hasDrawingFlag = item.hasDrawing || (item.answerImage && item.answerImage.length > 100);
     const validImages = (item.answerImages || []).filter((u) => u && u.length > 100);
     const imagesToSend = validImages.length > 0
       ? validImages
@@ -111,6 +118,22 @@ export default async function handler(req, res) {
     if (!hasContent) {
       console.log(`[auto-grade] skipped — empty submission ${gradingItemId}`);
       return res.status(200).json({ success: false, skipped: true, message: 'Empty submission — nothing to grade' });
+    }
+
+    // Quota saver: only auto-grade when the sketch has substantial ink (path-length
+    // heuristic). empty/light boards waste tokens and grade poorly. Typed-only
+    // answers (no drawing) are still allowed. Teacher manual re-grade can pass
+    // force: true to bypass this gate.
+    const force = Boolean(req.body?.force);
+    const inkLevel = item.inkLevel || null;
+    const hasDrawing = hasDrawingFlag || imagesToSend.length > 0;
+    if (!force && hasDrawing && inkLevel && inkLevel !== 'substantial') {
+      console.log(`[auto-grade] skipped — inkLevel=${inkLevel} ${gradingItemId}`);
+      return res.status(200).json({
+        success: false,
+        skipped: true,
+        message: `Skipped AI grade — ink level is "${inkLevel}" (need substantial or force)`,
+      });
     }
 
     const promptText = [
@@ -136,10 +159,17 @@ export default async function handler(req, res) {
 
     parts.push({ text: promptText });
 
-    // Attach up to 4 images (Gemini 2.0 Flash supports multiple inline images)
+    // Attach up to 4 images (client usually sends resized JPEG; honour mime).
     for (const imgUrl of imagesToSend.slice(0, 4)) {
       const b64 = stripDataUrl(imgUrl);
-      if (b64) parts.push({ inlineData: { mimeType: 'image/png', data: b64 } });
+      if (b64) {
+        parts.push({
+          inlineData: {
+            mimeType: mimeFromDataUrl(imgUrl),
+            data: b64,
+          },
+        });
+      }
     }
 
     const assessment = await callGemini(parts);

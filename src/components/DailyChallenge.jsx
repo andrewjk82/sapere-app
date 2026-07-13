@@ -30,6 +30,7 @@ import {
   aggregateGroupResults,
 } from '../services/calcProgressService';
 import { notifyTeacherCalcStuck } from '../utils/challengeUtils';
+import { resizeDataUrlImages, resizeDataUrlImage } from '../utils/imageResize';
 
 // Sub-components
 import ChallengeStartView from './challenge/ChallengeStartView';
@@ -873,6 +874,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     const canvasExportWithTimeout = (fn, ms = 4000) =>
       Promise.race([fn(), new Promise((_, rej) => setTimeout(() => rej(new Error('canvas export timeout')), ms))]);
 
+    // Ink level (empty/light/substantial) — used for FlameBuddy + Gemini quota gate.
+    let submitInkLevel = null;
+    let submitInkStats = null;
+    try {
+      submitInkStats = canvasRef.current?.getInkStats?.() || null;
+      submitInkLevel = submitInkStats?.level
+        || (canvasRef.current?.hasContent?.() ? 'light' : 'empty');
+    } catch {
+      submitInkLevel = canvasRef.current?.hasContent?.() ? 'light' : 'empty';
+    }
+
     // Capture canvas for graph_sketch always, or for any question if split screen is active (Senior Students)
     if (canvasRef.current && (isGraphSketch || (showSplitScreen && canvasRef.current?.hasContent?.()))) {
       try {
@@ -896,6 +908,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         } catch (err) {
           console.error("Failed to export graph answer image", err);
         }
+      }
+      // Shrink PNGs → JPEG before Firestore + Gemini (token/cost saver).
+      try {
+        if (canvasPageImages?.length) {
+          canvasPageImages = await resizeDataUrlImages(canvasPageImages);
+          canvasDataUrl = canvasPageImages[0] || canvasDataUrl;
+        } else if (canvasDataUrl) {
+          canvasDataUrl = await resizeDataUrlImage(canvasDataUrl);
+        }
+      } catch (err) {
+        console.warn('Sketch resize failed (using original):', err?.message || err);
       }
       correct = false; // Pending review
     } else if (currentQ?.subQuestions?.length > 0) {
@@ -966,6 +989,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           // Always save typed text — shown alongside or instead of the drawing
           answerText: typeof optionText === 'string' && optionText.trim() ? optionText.trim() : null,
           hasDrawing: Boolean(canvasDataUrl),
+          inkLevel: submitInkLevel,
+          inkStrokeCount: submitInkStats?.strokeCount ?? null,
+          inkPathLength: submitInkStats?.pathLength ?? null,
           status: 'pending',
           submittedAt: serverTimestamp(),
           year: currentQ?.year || CHALLENGE_YEAR,
@@ -990,14 +1016,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           requiresManualGrading: currentQ?.requiresManualGrading || true,
         };
         const gradingDocRef = await addDoc(collection(db, 'grading_queue'), gradingEntry);
-        // Skip AI grading when the student submitted nothing (no drawing and no
-        // typed answer) — there is nothing for Gemini to assess, and an empty
-        // submission would only waste an API call. The teacher still sees the
-        // blank submission in the queue and can grade it manually.
+        // Skip AI grading when:
+        //  - nothing submitted (empty board + no typed answer), or
+        //  - drawing exists but ink is not "substantial" (dots/blank waste Gemini quota).
+        // Typed-only answers still get auto-grade. Teacher re-grade can pass force:true.
         const hasSubmittedContent = gradingEntry.hasDrawing
           || (gradingEntry.answerImages && gradingEntry.answerImages.length > 0)
           || Boolean(gradingEntry.answerText);
-        if (hasSubmittedContent) {
+        const typedOnly = !gradingEntry.hasDrawing && Boolean(gradingEntry.answerText);
+        const inkOk = submitInkLevel === 'substantial' || typedOnly;
+        if (hasSubmittedContent && inkOk) {
           // Fire-and-forget: ask Gemini to pre-grade so the teacher sees an AI assessment
           fetch('/api/auto-grade', {
             method: 'POST',
@@ -1009,7 +1037,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             else console.log('[auto-grade] ok:', gradingDocRef.id);
           }).catch((err) => console.warn('[auto-grade] network error:', err?.message));
         } else {
-          console.log('[auto-grade] skipped — empty submission:', gradingDocRef.id);
+          console.log(
+            '[auto-grade] skipped —',
+            !hasSubmittedContent ? 'empty submission' : `inkLevel=${submitInkLevel}`,
+            gradingDocRef.id,
+          );
         }
         markSessionReviewRequested();
         notifyTeacherPendingReview({

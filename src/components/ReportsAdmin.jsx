@@ -779,10 +779,12 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     if (aiBusy[item.id]) return;
     setAiBusy(prev => ({ ...prev, [item.id]: true }));
     try {
+      // force: true — teacher-triggered re-grade bypasses the "substantial ink only"
+      // quota gate used on student submit (empty/light boards still skip auto fire-and-forget).
       const res = await fetch('/api/auto-grade', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ gradingItemId: item.id }),
+        body: JSON.stringify({ gradingItemId: item.id, force: true }),
       });
       const body = await res.json().catch(() => ({}));
       if (!body.success) {
