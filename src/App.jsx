@@ -367,24 +367,31 @@ function App() {
     }
   }, []);
 
-  // One-time design preview of the Secret-Note clear celebration for teachers.
-  // Local only — no XP / Firebase writes. Flag prevents repeat after dismiss.
+  // One-time design preview for teachers — React state (reliable, no event race).
+  // Local only; no XP / Firebase. Stays up until dismiss (then session flag).
+  const [snClearDesignPreview, setSnClearDesignPreview] = useState(null);
   useEffect(() => {
-    if (!isAdmin || !user?.uid) return undefined;
-    const flag = 'sapere:sn-clear-modal-teacher-preview-v1';
+    if (!user?.uid) return undefined;
+    const teacher =
+      isAdmin === true
+      || sharedProfile?.role === 'admin'
+      || sharedProfile?.role === 'teacher';
+    if (!teacher) return undefined;
+    const flag = 'sapere:sn-clear-modal-teacher-preview-v3';
     try {
-      if (localStorage.getItem(flag)) return undefined;
-      localStorage.setItem(flag, '1');
-    } catch { /* still try to show once this session */ }
-    queueSecretNoteClearCelebration(user.uid, {
+      if (sessionStorage.getItem(flag) === 'dismissed') return undefined;
+    } catch { /* ignore */ }
+    const sample = {
       xp: 10,
       dateKey: new Date().toLocaleDateString('en-CA'),
       dailyOnly: true,
       claimDaily: true,
       claimCalc: false,
-    });
+    };
+    setSnClearDesignPreview(sample);
+    queueSecretNoteClearCelebration(user.uid, sample);
     return undefined;
-  }, [isAdmin, user?.uid]);
+  }, [isAdmin, user?.uid, sharedProfile?.role]);
 
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
@@ -1336,7 +1343,7 @@ function App() {
       )}
 
       {/* Secret-Note clear bonus — local celebration only (no extra Firebase).
-          Teachers also see a one-time design preview (see preview effect above). */}
+          Teachers get forcePayload once for design review. */}
       {user?.uid && !examInProgress && (
         <SecretNoteClearModal
           uid={user.uid}
@@ -1345,6 +1352,11 @@ function App() {
             || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
             || (isAdmin ? 'Teacher' : '')
           }
+          forcePayload={snClearDesignPreview}
+          onForceDismiss={() => {
+            setSnClearDesignPreview(null);
+            try { sessionStorage.setItem('sapere:sn-clear-modal-teacher-preview-v3', 'dismissed'); } catch { /* ignore */ }
+          }}
         />
       )}
 

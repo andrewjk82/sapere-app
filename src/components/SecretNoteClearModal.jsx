@@ -9,11 +9,21 @@ import './SecretNoteClearModal.css';
 /**
  * Ghibli-inspired celebration card when a student earned the midnight
  * Secret-Note-clear bonus. Celebration payload is localStorage only.
+ * `forcePayload` — teacher design preview (React state, no race with events).
  */
-export default function SecretNoteClearModal({ uid, firstName = '' }) {
+export default function SecretNoteClearModal({
+  uid,
+  firstName = '',
+  forcePayload = null,
+  onForceDismiss = null,
+}) {
   const [payload, setPayload] = useState(null);
 
   useEffect(() => {
+    if (forcePayload && Number(forcePayload.xp) > 0) {
+      setPayload(forcePayload);
+      return undefined;
+    }
     if (!uid) return undefined;
     setPayload(peekSecretNoteClearCelebration(uid));
     const onEvent = (e) => {
@@ -22,11 +32,14 @@ export default function SecretNoteClearModal({ uid, firstName = '' }) {
     };
     window.addEventListener('sapere:sn-clear-celebration', onEvent);
     return () => window.removeEventListener('sapere:sn-clear-celebration', onEvent);
-  }, [uid]);
+  }, [uid, forcePayload]);
 
   const copy = useMemo(() => buildCopy(payload, firstName), [payload, firstName]);
 
   const close = () => {
+    if (forcePayload) {
+      onForceDismiss?.();
+    }
     dismissSecretNoteClearCelebration(uid);
     setPayload(null);
   };
