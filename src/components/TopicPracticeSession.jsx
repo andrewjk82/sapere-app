@@ -300,8 +300,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     // Flame coach: score + empty-sketch nags (same channel as Daily Challenge).
     if (user?.uid && sessionTotal > 0 && typeof window !== 'undefined') {
       const sketchQs = allResults.filter((r) => r.sketchAvailable === true);
-      const emptyWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === false).length;
+      const emptyQs = sketchQs.filter((r) => r.hadWorkingOut === false);
+      const emptyWorkingOutCount = emptyQs.length;
       const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
+      const emptyAndWrongCount = emptyQs.filter((r) => r.correct === false).length;
+      const emptyAndCorrectCount = emptyQs.filter((r) => r.correct === true).length;
       try {
         window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
           detail: {
@@ -314,6 +317,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             sketchQuestionCount: sketchQs.length || sessionTotal,
             emptyWorkingOutCount: sketchQs.length ? emptyWorkingOutCount : 0,
             withWorkingOutCount,
+            emptyAndWrongCount,
+            emptyAndCorrectCount,
           },
         }));
       } catch { /* ignore */ }

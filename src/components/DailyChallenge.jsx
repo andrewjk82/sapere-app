@@ -1421,8 +1421,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             // when the student only picks answers and never writes working out.
             if (!isAbandoned && displayTotal > 0) {
               const sketchQs = currentAnswerResults.filter((r) => r && r.sketchAvailable === true);
-              const emptyWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === false).length;
+              const emptyQs = sketchQs.filter((r) => r.hadWorkingOut === false);
+              const emptyWorkingOutCount = emptyQs.length;
               const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
+              const emptyAndWrongCount = emptyQs.filter((r) => r.correct === false && !r.isPending).length;
+              const emptyAndCorrectCount = emptyQs.filter((r) => r.correct === true).length;
               window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
                 detail: {
                   uid: user.uid,
@@ -1435,6 +1438,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   sketchQuestionCount: sketchQs.length,
                   emptyWorkingOutCount,
                   withWorkingOutCount,
+                  emptyAndWrongCount,
+                  emptyAndCorrectCount,
                 },
               }));
             }

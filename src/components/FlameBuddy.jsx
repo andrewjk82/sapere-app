@@ -522,8 +522,11 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
 
 /**
  * Score-based post-result coaching. Ends by nudging Review for missed questions.
- * When the sketch board was available but stayed blank a lot, swap in playful
- * "write your working out — or I tell Andrew" lines (escalates with skip streak).
+ *
+ * Working-out ladder (gentle → snitch):
+ *  1) Early skips → soft coach lines (write beside the answer, retry with steps)
+ *  2) Correct + empty → only occasional soft hint
+ *  3) Keep skipping sessions → escalate to "I'll tell Andrew"
  */
 const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'daily', opts = {}) => {
   const s = Math.max(0, Number(score) || 0);
@@ -539,10 +542,11 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
   const emptyWO = Math.max(0, Number(opts.emptyWorkingOutCount) || 0);
   const sketchQs = Math.max(0, Number(opts.sketchQuestionCount) || 0);
   const skipStreak = Math.max(0, Number(opts.workingOutSkipStreak) || 0);
-  // Nag when at least 2 blanks, and half+ of sketch-available questions were empty.
+  const emptyWrong = Math.max(0, Number(opts.emptyAndWrongCount) || 0);
+  const emptyCorrect = Math.max(0, Number(opts.emptyAndCorrectCount) || 0);
+  // Majority of sketch-available questions left blank this session.
   const blankHeavy = sketchQs >= 2 && emptyWO >= Math.max(2, Math.ceil(sketchQs * 0.5));
-  // Soft flag: a few blanks but not majority.
-  const blankSome = !blankHeavy && emptyWO >= 3;
+  const blankSome = !blankHeavy && emptyWO >= 2;
 
   const reviewCloser = wrong > 0
     ? (wrong === 1
@@ -550,62 +554,122 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
       : `When you are ready, hop into Review and walk through the ${wrong} you missed — that is where the real learning sticks.`)
     : 'Everything correct — still worth a quick Review skim if you want to lock the methods in.';
 
-  // ── Working-out snitch track (playful, not mean) ─────────────────────────
-  if (blankHeavy || skipStreak >= 2) {
-    const snitchLevel = skipStreak >= 3 || emptyWO >= sketchQs
-      ? 'hot'
-      : skipStreak >= 2 || blankHeavy
-        ? 'warm'
-        : 'soft';
-    const snitchLines = snitchLevel === 'hot'
+  const cta = wrong > 0
+    ? { label: 'Review misses', action: 'review' }
+    : { label: 'Review answers', action: 'review' };
+
+  // ── Stage 3+: keep skipping → Andrew snitch (only after repeated sessions) ─
+  if (skipStreak >= 2 && (blankHeavy || blankSome)) {
+    const hot = skipStreak >= 3;
+    const snitchLines = hot
       ? [
           {
-            msg: `${hey}, score ${scoreBit} — but that sketch board was basically a clean plate.`,
-            sub: `Working out is not optional homework fluff. Keep answering with a blank board and I am texting Andrew. Yes, really. ${reviewCloser}`,
+            msg: `${hey}, ${scoreBit} — but the sketch board was basically empty again.`,
+            sub: `I gave soft reminders. You kept tapping answers only. Next blank run and I am telling Andrew. Write the steps. ${reviewCloser}`,
           },
           {
             msg: `${emptyWO} blank boards this ${kind}${cn}. I am writing this down.`,
-            sub: `Andrew likes notes. Next time: pen on paper (well, pen on screen) before you tap an option. ${reviewCloser}`,
+            sub: `Andrew likes notes. Pen on the pad before you pick an option — please. ${reviewCloser}`,
           },
           {
-            msg: `I see you${cn}. Answers only. No working out.`,
-            sub: `Cute strategy until it is not. One more session like this and Andrew gets the report. Use the sketch pad. ${reviewCloser}`,
+            msg: `Still answer-only mode${cn}. Score ${scoreBit}.`,
+            sub: `Friendly flame, serious note: keep skipping working out and Andrew hears about it. ${reviewCloser}`,
           },
         ]
-      : snitchLevel === 'warm'
-        ? [
-            {
-              msg: `${hey} — ${scoreBit}, but the working-out pad stayed quiet a lot.`,
-              sub: `Write the steps. If you keep skipping, I might have to tell Andrew. Friendly warning from your flame. ${reviewCloser}`,
-            },
-            {
-              msg: `Blank sketch board × ${emptyWO}${cn}. I noticed.`,
-              sub: `Picking answers is fine for speed runs — learning needs the scribbles. Keep it up and Andrew hears about it. ${reviewCloser}`,
-            },
-            {
-              msg: `${scoreBit} on the ${kind}${cn}. Working out? Mostly missing.`,
-              sub: `I am not mad. I am a tiny flame with a big mouth. Write next time or I snitch to Andrew. ${reviewCloser}`,
-            },
-          ]
-        : [
-            {
-              msg: `${hey}, solid finish at ${scoreBit}.`,
-              sub: `Tiny request: use the sketch board for the steps. Blank boards make me nervous (and chatty with Andrew). ${reviewCloser}`,
-            },
-          ];
-    const line = pickLine(snitchLines, `${seedBase}-result-snitch-${snitchLevel}-${emptyWO}`, firstName);
+      : [
+          {
+            msg: `${hey} — ${scoreBit}, and the working-out pad stayed quiet a lot again.`,
+            sub: `Second session like this. If it keeps happening, I might have to tell Andrew. Scribble the steps next time? ${reviewCloser}`,
+          },
+          {
+            msg: `Blank sketch boards keep showing up${cn}.`,
+            sub: `I am not mad — I am a tiny coach with a big mouth. Write next time, or Andrew gets a heads-up. ${reviewCloser}`,
+          },
+        ];
+    const line = pickLine(snitchLines, `${seedBase}-result-snitch-${hot ? 'hot' : 'warm'}-${emptyWO}`, firstName);
     return {
-      mood: snitchLevel === 'hot' ? 'urgent' : 'hint',
-      eyebrow: snitchLevel === 'hot' ? 'Andrew alert' : 'Working out?',
+      mood: hot ? 'urgent' : 'hint',
+      eyebrow: hot ? 'Andrew alert' : 'Heads-up',
       msg: line.msg,
       sub: line.sub,
-      cta: wrong > 0
-        ? { label: 'Review misses', action: 'review' }
-        : { label: 'Review answers', action: 'review' },
-      key: `result-${seedBase}-snitch-${snitchLevel}-${emptyWO}-${scoreBit}`,
+      cta,
+      key: `result-${seedBase}-snitch-${hot ? 'hot' : 'warm'}-${emptyWO}-${scoreBit}`,
     };
   }
 
+  // ── Stage 1–2: first times blank → soft table-style coaching (no Andrew yet) ─
+  if (blankHeavy || blankSome) {
+    let softLines;
+    let eyebrow = 'Sketch tip';
+    let mood = 'hint';
+
+    if (emptyWrong >= Math.max(2, emptyCorrect)) {
+      // Mostly wrong + empty — "retry with working out"
+      eyebrow = 'Try writing it out';
+      mood = 'thinking';
+      softLines = [
+        {
+          msg: `${hey}, you finished — ${scoreBit}.`,
+          sub: `A few of those misses had a blank sketch pad. Next time, write the working out first — it catches silly mistakes. ${reviewCloser}`,
+        },
+        {
+          msg: `${scoreBit}${cn}. Honest score.`,
+          sub: `When you review the ones you missed, try the steps on the sketch board — not just the final answer. ${reviewCloser}`,
+        },
+        {
+          msg: `Session done${cn}: ${scoreBit}.`,
+          sub: `On the next attempt, start on the pad: jot numbers, show the path. Working out first, then tap. ${reviewCloser}`,
+        },
+      ];
+    } else if (emptyCorrect > emptyWrong && emptyWrong === 0 && pct >= 75) {
+      // All (or mostly) correct but empty — occasional soft hint only
+      eyebrow = 'Nice work';
+      mood = 'cheer';
+      softLines = [
+        {
+          msg: `${hey}! ${scoreBit} — strong.`,
+          sub: `Tiny habit tip: even when you know it, scribble a line of working out. It locks the method in. ${reviewCloser}`,
+        },
+        {
+          msg: `Look at that score${cn}: ${scoreBit}.`,
+          sub: `Proud of you. Optional upgrade: use the sketch pad so speed and method grow together. ${reviewCloser}`,
+        },
+        // Fall through-ish: some variants stay pure cheer with no sketch nag
+        {
+          msg: `${n || 'Friend'}, ${scoreBit} on this ${kind}? Chef's kiss.`,
+          sub: `Keep that careful energy. ${reviewCloser}`,
+        },
+      ];
+    } else {
+      // Generic empty pad — "don't just pick the number"
+      softLines = [
+        {
+          msg: `${hey} — ${scoreBit}. You finished the set.`,
+          sub: `Don't only pick the answer — try writing the steps on the sketch pad next to it. ${reviewCloser}`,
+        },
+        {
+          msg: `Score ${scoreBit}${cn}. The pad was pretty quiet though.`,
+          sub: `Numbers on the side, not just the option tap. Working out is where the learning sticks. ${reviewCloser}`,
+        },
+        {
+          msg: `${hey}, solid finish at ${scoreBit}.`,
+          sub: `Next round: pen on the board before you choose. Even a short scribble helps. ${reviewCloser}`,
+        },
+      ];
+    }
+
+    const line = pickLine(softLines, `${seedBase}-result-softwo-${emptyWrong}-${emptyCorrect}-${scoreBit}`, firstName);
+    return {
+      mood,
+      eyebrow,
+      msg: line.msg,
+      sub: line.sub,
+      cta,
+      key: `result-${seedBase}-softwo-${emptyWO}-${scoreBit}`,
+    };
+  }
+
+  // ── Normal score track (wrote working out, or sketch wasn't available) ────
   let band;
   let mood;
   let eyebrow;
@@ -685,24 +749,14 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
     ];
   }
 
-  // Light append when a few boards were blank but not enough for full snitch mode.
-  if (blankSome) {
-    lines = lines.map((L) => ({
-      ...L,
-      sub: `${L.sub} Also — try scribbling the steps on the sketch pad next time; blank boards make me want to tell Andrew.`,
-    }));
-  }
-
   const line = pickLine(lines, `${seedBase}-result-${band}-${scoreBit}`, firstName);
   return {
     mood,
     eyebrow,
     msg: line.msg,
     sub: line.sub,
-    cta: wrong > 0
-      ? { label: 'Review misses', action: 'review' }
-      : { label: 'Review answers', action: 'review' },
-    key: `result-${seedBase}-${band}-${scoreBit}${blankSome ? '-softwo' : ''}`,
+    cta,
+    key: `result-${seedBase}-${band}-${scoreBit}`,
   };
 };
 
@@ -1413,10 +1467,14 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       const kind = e.detail?.challengeType || 'daily';
       const emptyWorkingOutCount = Math.max(0, Number(e.detail?.emptyWorkingOutCount) || 0);
       const sketchQuestionCount = Math.max(0, Number(e.detail?.sketchQuestionCount) || 0);
+      const emptyAndWrongCount = Math.max(0, Number(e.detail?.emptyAndWrongCount) || 0);
+      const emptyAndCorrectCount = Math.max(0, Number(e.detail?.emptyAndCorrectCount) || 0);
       const blankHeavy = sketchQuestionCount >= 2
         && emptyWorkingOutCount >= Math.max(2, Math.ceil(sketchQuestionCount * 0.5));
+      // Also count lighter skips so repeated "a few blanks" still escalates.
+      const blankSome = !blankHeavy && emptyWorkingOutCount >= 2;
       // Escalate across sessions when they keep skipping the sketch board.
-      const workingOutSkipStreak = updateWorkingOutSkipStreak(uid, blankHeavy);
+      const workingOutSkipStreak = updateWorkingOutSkipStreak(uid, blankHeavy || blankSome);
       setTasks((t) => {
         const next = {
           ...t,
@@ -1439,6 +1497,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         challengeType: kind,
         emptyWorkingOutCount,
         sketchQuestionCount,
+        emptyAndWrongCount,
+        emptyAndCorrectCount,
         workingOutSkipStreak,
         until: Date.now() + 50_000,
         id: `${Date.now()}-${score}-${total}-wo${emptyWorkingOutCount}`,
@@ -1499,6 +1559,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         {
           emptyWorkingOutCount: resultCoach.emptyWorkingOutCount,
           sketchQuestionCount: resultCoach.sketchQuestionCount,
+          emptyAndWrongCount: resultCoach.emptyAndWrongCount,
+          emptyAndCorrectCount: resultCoach.emptyAndCorrectCount,
           workingOutSkipStreak: resultCoach.workingOutSkipStreak,
         },
       );
