@@ -985,7 +985,7 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'id
 
 function FlameSvg() {
   return (
-    <svg viewBox="0 0 100 130" width="88" height="114" aria-hidden>
+    <svg viewBox="0 0 100 130" width="62" height="80" aria-hidden>
       <defs>
         <filter id="fb-softGlow" x="-60%" y="-60%" width="220%" height="220%">
           <feGaussianBlur stdDeviation="4.5" result="blur" />
