@@ -377,30 +377,30 @@
   height: 25px;
 }
 
-/* Soft friendly eyes — warm amber-brown + bright catchlight (never solid black). */
+/* Soft friendly eyes — warm cocoa, bright catchlight (not solid black voids). */
 .fb-eye {
   position: absolute;
-  top: 5.5px;
-  width: 5.5px;
-  height: 5.5px;
+  top: 5px;
+  width: 6px;
+  height: 6px;
   background:
-    radial-gradient(circle at 30% 26%, #fffef8 0 28%, transparent 30%),
-    radial-gradient(circle at 50% 55%, #c9a06a 0 38%, #a67c42 65%, #8b5a2b 100%);
+    radial-gradient(circle at 32% 28%, #fff8e8 0 22%, transparent 24%),
+    radial-gradient(circle at 48% 52%, #6b3f1a 0 42%, #4a2a10 70%, #3a2010 100%);
   border-radius: 50%;
-  box-shadow: 0 0 1.5px rgba(255, 200, 120, 0.45);
+  box-shadow: 0 0 2px rgba(255, 180, 80, 0.35);
   animation: fb-blink 2.8s ease-in-out infinite;
 }
 
 .fb-eye .fb-highlight {
   position: absolute;
-  top: 0.4px;
+  top: 0.5px;
   left: 0.5px;
-  width: 2px;
-  height: 2px;
-  background: #ffffff;
+  width: 2.2px;
+  height: 2.2px;
+  background: #fffdf5;
   border-radius: 50%;
-  box-shadow: 0.7px 0.9px 0 0 rgba(255, 255, 255, 0.65);
-  opacity: 1;
+  box-shadow: 0.8px 1px 0 0 rgba(255, 255, 255, 0.55);
+  opacity: 0.95;
 }
 
 .fb-eyeL { left: 19px; }
@@ -461,8 +461,9 @@
   animation: none;
 }
 .fb-flame.thinking .fb-eye {
-  width: 5.5px;
-  height: 5.5px;
+  /* keep base cute eyes — no oversized dark orbs */
+  width: 6px;
+  height: 6px;
 }
 .fb-flame.thinking { animation: fb-tiltFlame 3s ease-in-out infinite; transform-origin: 50% 100%; }
 
@@ -488,8 +489,8 @@
   animation: none;
 }
 .fb-flame.urgent .fb-eye {
-  width: 5.5px;
-  height: 5.5px;
+  width: 6px;
+  height: 6px;
 }
 
 @keyframes fb-shakeFlame {
@@ -504,8 +505,8 @@
 .fb-flame.cheer .fb-glow .fb-flamePath { fill: url(#fb-cheerOuterGrad); }
 .fb-flame.cheer .fb-inner .fb-flamePath { fill: url(#fb-cheerInnerGrad); }
 .fb-flame.cheer .fb-eye {
-  width: 5.5px;
-  height: 5.5px;
+  width: 6px;
+  height: 6px;
 }
 .fb-flame.cheer .fb-mouth {
   background: transparent;
@@ -554,12 +555,21 @@
 .fb-flame.hint .fb-aura {
   background: radial-gradient(circle, rgba(255, 225, 120, 0.5) 0%, rgba(255, 210, 80, 0.18) 45%, rgba(255, 210, 80, 0) 72%);
 }
-/* Same soft amber eyes as every other mood — no bigger/darker dots on gold. */
+/* Gold body makes dark cocoa pupils look black — use softer amber only for hint. */
 .fb-flame.hint .fb-eye {
   width: 5.5px;
   height: 5.5px;
+  background:
+    radial-gradient(circle at 30% 26%, #fffef8 0 28%, transparent 30%),
+    radial-gradient(circle at 50% 55%, #c9a06a 0 38%, #a67c42 65%, #8b5a2b 100%);
   box-shadow: 0 0 1.5px rgba(255, 200, 120, 0.45);
   animation: fb-blink 2.8s ease-in-out infinite;
+}
+.fb-flame.hint .fb-eye .fb-highlight {
+  width: 2px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 1;
 }
 .fb-flame.hint .fb-mouth {
   width: 9px;
