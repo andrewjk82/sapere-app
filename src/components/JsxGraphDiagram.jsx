@@ -182,50 +182,58 @@ const JsxGraphDiagram = ({ data, style }) => {
               }
             }
 
-            // showAxisLabels flag: when false (e.g. thermometers), suppress x/y/O labels
-            const showAxisLabels = data.showAxisLabels !== false;
+             // showAxisLabels flag: when false (e.g. thermometers or 1D number lines where dy < 3), suppress x/y/O labels
+             const showAxisLabels = data.showAxisLabels !== false && dy >= 3;
 
-            if (isXAxis) {
-              attributes.firstArrow = true;
-              attributes.lastArrow = true;
+             if (type === 'axis' && dy < 3) {
+               // On narrow 1D number lines, force ticks to draw zero (0)
+               attributes.ticks = {
+                 drawZero: true,
+                 ...(attributes.ticks || {})
+               };
+             }
 
-              if (showAxisLabels) {
-                // Automatically label x-axis near the positive end, just below
-                // the line -- seed scripts conventionally place their own
-                // numeric tick labels just above the x-axis, so putting the
-                // axis name on the other side avoids colliding with them.
-                const xPos = parents[1][0];
-                const xLabelOffset = dx * 0.03;
-                board.create('text', [xPos - xLabelOffset, -dy * 0.05, 'x'], {
-                  fixed: true,
-                  fontSize: 12,
-                  fontFamily: '"Outfit", "Inter", sans-serif',
-                  strokeColor: '#64748b',
-                  fontWeight: 'bold',
-                });
-              }
-            }
+             if (isXAxis) {
+               attributes.firstArrow = true;
+               attributes.lastArrow = true;
 
-            if (isYAxis) {
-              attributes.firstArrow = true;
-              attributes.lastArrow = true;
+               if (showAxisLabels) {
+                 // Automatically label x-axis near the positive end, just below
+                 // the line -- seed scripts conventionally place their own
+                 // numeric tick labels just above the x-axis, so putting the
+                 // axis name on the other side avoids colliding with them.
+                 const xPos = parents[1][0];
+                 const xLabelOffset = dx * 0.03;
+                 board.create('text', [xPos - xLabelOffset, -dy * 0.05, 'x'], {
+                   fixed: true,
+                   fontSize: 12,
+                   fontFamily: '"Outfit", "Inter", sans-serif',
+                   strokeColor: '#64748b',
+                   fontWeight: 'bold',
+                 });
+               }
+             }
 
-              if (showAxisLabels) {
-                // Automatically label y-axis near the positive end, just left
-                // of the line -- seed scripts conventionally place their own
-                // numeric tick labels just right of the y-axis, so putting the
-                // axis name on the other side avoids colliding with them.
-                const yPos = parents[1][1];
-                const yLabelOffset = dy * 0.03;
-                board.create('text', [-dx * 0.06, yPos - yLabelOffset, 'y'], {
-                  fixed: true,
-                  fontSize: 12,
-                  fontFamily: '"Outfit", "Inter", sans-serif',
-                  strokeColor: '#64748b',
-                  fontWeight: 'bold',
-                });
-              }
-            }
+             if (isYAxis) {
+               attributes.firstArrow = true;
+               attributes.lastArrow = true;
+
+               if (showAxisLabels) {
+                 // Automatically label y-axis near the positive end, just left
+                 // of the line -- seed scripts conventionally place their own
+                 // numeric tick labels just right of the y-axis, so putting the
+                 // axis name on the other side avoids colliding with them.
+                 const yPos = parents[1][1];
+                 const yLabelOffset = dy * 0.03;
+                 board.create('text', [-dx * 0.06, yPos - yLabelOffset, 'y'], {
+                   fixed: true,
+                   fontSize: 12,
+                   fontFamily: '"Outfit", "Inter", sans-serif',
+                   strokeColor: '#64748b',
+                   fontWeight: 'bold',
+                 });
+               }
+             }
 
             // Label Origin (O) once — only on 2D planes, not on narrow 1D number lines (where dy < 3)
             if (showAxisLabels && (isXAxis || isYAxis) && !board._originLabeled && dy >= 3) {
