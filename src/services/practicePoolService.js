@@ -299,6 +299,49 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   };
 };
 
+/**
+ * Extra IDs when the first draw was short after filtering (e.g. isActive:false).
+ * Prefers still-undone questions; if not enough, reuses done IDs not in excludeIds
+ * so Year 5–6 seed-only assignments can still fill to the requested count.
+ *
+ * No extra Firestore read when the in-memory pool cache is warm.
+ *
+ * @returns {string[]}
+ */
+export const pickExtraPoolIds = async (uid, { excludeIds = [], count = 10 } = {}) => {
+  if (!uid || count <= 0) return [];
+
+  const exclude = new Set((excludeIds || []).map(String));
+  const cachedEntry = _poolCache.get(uid);
+  let data = cachedEntry?.data || null;
+  if (!data) {
+    const snap = await getDoc(poolRef(uid));
+    if (!snap.exists()) return [];
+    data = snap.data();
+  }
+
+  const chapter_pools = data.chapter_pools || {};
+  const undone = [];
+  const recycled = [];
+
+  Object.values(chapter_pools).forEach((cp) => {
+    const ids = cp?.ids || [];
+    const doneSet = new Set((cp?.done || []).map(String));
+    ids.forEach((id) => {
+      const sid = String(id);
+      if (!sid || exclude.has(sid)) return;
+      if (doneSet.has(sid)) recycled.push(sid);
+      else undone.push(sid);
+    });
+  });
+
+  const pick = [...shuffle(undone)];
+  if (pick.length < count) {
+    pick.push(...shuffle(recycled).filter((id) => !pick.includes(id)));
+  }
+  return pick.slice(0, count);
+};
+
 // ─── update pool after quiz ──────────────────────────────────────────────────
 
 /**

@@ -586,15 +586,13 @@ const hashGeneratedQuestion = (question) => {
 };
 
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid, membershipVersion) => {
-  const { ensurePracticePool, selectDailyQuestions } = await import("./practicePoolService");
+  const { ensurePracticePool, selectDailyQuestions, pickExtraPoolIds } = await import("./practicePoolService");
 
   // 1. 풀 초기화 / 커리큘럼·문제집합(add·delete) 변경 감지 (이미 최신이면 1 read만 발생)
   await ensurePracticePool(uid, studentProfile, membershipVersion);
 
   // 2. 풀에서 균등+약점 보충 알고리즘으로 ID 선택 (1 read)
-  // ── [TRAFFIC FIX] oversample by +5 upfront so filtering losses (isActive:false,
-  // no options for primary) are already covered — removes the old 3-round backfill
-  // loop that caused up to 3 extra selectDailyQuestions + fetchQuestionsByIds calls.
+  // Oversample by +5 so isActive/option filters rarely leave a shortfall.
   const oversampleCount = questionCount + 5;
   const { selectedIds, chapterBreakdown } = await selectDailyQuestions(uid, oversampleCount);
 
@@ -607,19 +605,18 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
 
   const targets = buildDailyTargets(studentProfile);
 
-  // For Year 1-4, only keep questions that already have multiple-choice options.
-  // Open-ended questions from the bank are replaced by the procedural generator below.
-  // Year 5-6 moved to seed-only (2026-07-06, alongside Year 7-12) now that the
-  // seed bank has enough coverage per chapter — this flag must stay in sync
-  // with generationYears below, or Year 5-6 short-answer seed questions would
-  // be filtered out with no generator left to replace them.
+  // Year 1-4: seed MCQ only from bank (open-ended replaced by generator below).
+  // Year 5+: all active seed types (short answer allowed).
   const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 5);
 
-  // Slice to exactly questionCount after filtering — the +5 oversample ensures
-  // we almost always have enough even after isActive/options filtering.
+  const passesBankFilter = (d) => {
+    if (!d || d.isActive === false) return false;
+    if (isPrimaryStudent && !(Array.isArray(d.options) && d.options.length >= 2)) return false;
+    return true;
+  };
+
   let questions = rawDocs
-    .filter((d) => d.isActive !== false)
-    .filter((d) => !isPrimaryStudent || (Array.isArray(d.options) && d.options.length >= 2))
+    .filter(passesBankFilter)
     .map(slimQuestion)
     .map(correctQuestionAnswer)
     .slice(0, questionCount);
@@ -634,16 +631,43 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     if (pruneIds.length > 0) pruneSeenQuestions(uid, pruneIds).catch(() => {});
   }
 
-  // Top up the shortfall with procedurally-generated questions for the lowest
-  // years (Year 1-4), which still rely on generation rather than seeded
-  // questions. Year 5-6 joined Year 7-12 as seed-only on 2026-07-06 now that
-  // those chapters have enough seeded coverage (see commit c99114b for the
-  // original Year 7-12 cutover).
+  // ── Top-up from remaining pool IDs (all years, esp. Year 5–6 seed-only) ──
+  // If isActive:false / filter losses left us short, pull more IDs from the
+  // practice pool (prefer undone, then recycled) instead of shipping a short quiz.
+  const usedIds = new Set(questions.map((q) => String(q.id)).filter(Boolean));
+  let poolTopUpCount = 0;
+  let topUpRounds = 0;
+  while (questions.length < questionCount && topUpRounds < 4) {
+    topUpRounds += 1;
+    const need = questionCount - questions.length;
+    const extraIds = await pickExtraPoolIds(uid, {
+      excludeIds: [...usedIds],
+      count: need + 8,
+    });
+    if (!extraIds.length) break;
+
+    const extraDocs = await fetchQuestionsByIds(extraIds);
+    let addedThisRound = 0;
+    for (const d of extraDocs) {
+      if (questions.length >= questionCount) break;
+      const sid = String(d?.id || "");
+      if (!sid || usedIds.has(sid) || !passesBankFilter(d)) continue;
+      const q = correctQuestionAnswer(slimQuestion(d));
+      usedIds.add(sid);
+      questions.push(q);
+      poolTopUpCount += 1;
+      addedThisRound += 1;
+    }
+    // All candidates filtered out → stop to avoid extra reads with no progress.
+    if (addedThisRound === 0) break;
+  }
+
+  // Top up any remaining shortfall with procedural generation for Year 1–4 only.
+  // Year 5+ stay seed-only (pool top-up above is their fill path).
   const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 5);
   let generatedCount = 0;
   if (generationYears.length > 0 && questions.length < questionCount) {
     const need = questionCount - questions.length;
-    const usedIds = new Set(questions.map((q) => String(q.id)));
     const difficulties = ["easy", "medium", "hard"];
     const maxAttempts = need * 6 + 6;
     for (let attempt = 0; attempt < maxAttempts && generatedCount < need; attempt += 1) {
@@ -660,7 +684,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
         break;
       }
       const withId = correctQuestionAnswer({ ...generated, id: hashGeneratedQuestion(generated) });
-      if (usedIds.has(String(withId.id))) continue; // skip duplicates
+      if (usedIds.has(String(withId.id))) continue;
       usedIds.add(String(withId.id));
       questions.push(withId);
       generatedCount += 1;
@@ -677,6 +701,7 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
       assignedTopics: targets.assignedTopics,
       manualQuestionCount: questions.length - generatedCount,
       generatedQuestionCount: generatedCount,
+      poolTopUpCount,
     },
   };
 };
