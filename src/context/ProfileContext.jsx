@@ -3,6 +3,7 @@ import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAuth } from './AuthContext';
 import { recoverMissingXP } from '../services/xpRecoveryService';
+import { tryAwardSecretNoteClearBonus } from '../services/secretNoteBonusService';
 
 /**
  * Single shared realtime listener for the signed-in user's own
@@ -28,6 +29,14 @@ export const ProfileProvider = ({ children }) => {
     recoveryRanRef.current = true;
     recoverMissingXP(user.uid).catch(() => {});
   }, [user?.uid]);
+
+  // Secret-Note clear bonus: local note counts + users.secretNoteClearBonus stamp.
+  // Ineligible / already-claimed paths do zero network. Award = 1 txn max/day.
+  useEffect(() => {
+    if (!user?.uid || !profile || profile.role === 'admin') return undefined;
+    tryAwardSecretNoteClearBonus(user.uid, profile).catch(() => {});
+    return undefined;
+  }, [user?.uid, profile]);
 
   useEffect(() => {
     if (!user?.uid) {

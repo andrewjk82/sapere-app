@@ -38,6 +38,7 @@ import {
   setMistakeTag,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
+import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
 
 // ── Grading helpers ────────────────────────────────────────────────────────
 // Normalise a maths answer for comparison: unicode superscripts → digits,
@@ -401,6 +402,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     })();
     return () => { cancelled = true; };
   }, [uid, kind]);
+
   const [answer, setAnswer] = useState('');
   const [selectedIdx, setSelectedIdx] = useState(null);
   const [graded, setGraded] = useState(null);   // bool: was original correct
@@ -409,6 +411,18 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const [twinPrep, setTwinPrep] = useState(null);
   const [tag, setTag] = useState(null);         // mistake tag chosen this card
   const [summary, setSummary] = useState({ graduated: 0, kept: 0, xp: 0 });
+
+  // Clear-bonus when this notebook is empty (daily-only 10 / calc kids 5+5).
+  // Local counts first; award is 0–1 user+leaderboard txn, idempotent per day.
+  useEffect(() => {
+    if (phase !== 'empty' || !uid) return undefined;
+    tryAwardSecretNoteClearBonus(uid, studentProfile).then((r) => {
+      if (r?.awarded && r.xp > 0) {
+        setSummary((s) => ({ ...s, xp: (s.xp || 0) + r.xp }));
+      }
+    }).catch(() => {});
+    return undefined;
+  }, [phase, uid, studentProfile]);
 
   // Problem-report panel (flag a broken question)
   const [reportOpen, setReportOpen] = useState(false);
@@ -687,6 +701,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           <h2 className="sn__h2">Notebook is clear!</h2>
           <p className="sn__muted">
             You have no mistakes saved for this test. Keep up the great work.
+            {summary.xp > 0 ? ` Clear bonus: +${summary.xp} XP.` : ''}
           </p>
           <button className="sn__btn sn__btn--primary" style={{ background: headerGradient }} onClick={onClose}>
             Back <ArrowRight size={16} />

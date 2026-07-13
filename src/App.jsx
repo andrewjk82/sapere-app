@@ -101,6 +101,7 @@ import {
   markTeacherApprovalsApplied,
   getLastAppliedSecretNoteResetAt,
 } from './utils/secretNote';
+import { tryAwardSecretNoteClearBonus } from './services/secretNoteBonusService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -471,6 +472,11 @@ function App() {
             markTeacherApprovalsApplied(user.uid, pending);
             if (n > 0) {
               showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
+              tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
+                if (r?.awarded && r.xp > 0) {
+                  showToast(`Secret Note clear bonus: +${r.xp} XP ✨`, 'success');
+                }
+              }).catch(() => {});
             }
           }
           // Intentionally no clear.secretNoteApprovals — local applied set is enough.
@@ -486,6 +492,12 @@ function App() {
           if (resetAt > lastApplied) {
             applySecretNoteReset(user.uid, kinds, resetAt);
             showToast('Your teacher reset your Secret Notebook.', 'info');
+            // Empty notebooks may unlock clear-bonus XP (local counts; 0–1 write).
+            tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
+              if (r?.awarded && r.xp > 0) {
+                showToast(`Secret Note clear bonus: +${r.xp} XP ✨`, 'success');
+              }
+            }).catch(() => {});
           }
         }
         if (Array.isArray(examApprovals) && examApprovals.length) {
