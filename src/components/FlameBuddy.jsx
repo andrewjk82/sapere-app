@@ -522,9 +522,10 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
 
 /**
  * Score-based post-result coaching. Ends by nudging Review for missed questions.
- * pct = 0–100 accuracy; wrongCount for soft wording.
+ * When the sketch board was available but stayed blank a lot, swap in playful
+ * "write your working out — or I tell Andrew" lines (escalates with skip streak).
  */
-const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'daily') => {
+const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'daily', opts = {}) => {
   const s = Math.max(0, Number(score) || 0);
   const t = Math.max(0, Number(total) || 0);
   const wrong = Math.max(0, t - s);
@@ -535,11 +536,75 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
   const scoreBit = t > 0 ? `${s}/${t}` : `${pct}%`;
   const kind = challengeType === 'calc' ? 'sprint' : 'practice';
 
+  const emptyWO = Math.max(0, Number(opts.emptyWorkingOutCount) || 0);
+  const sketchQs = Math.max(0, Number(opts.sketchQuestionCount) || 0);
+  const skipStreak = Math.max(0, Number(opts.workingOutSkipStreak) || 0);
+  // Nag when at least 2 blanks, and half+ of sketch-available questions were empty.
+  const blankHeavy = sketchQs >= 2 && emptyWO >= Math.max(2, Math.ceil(sketchQs * 0.5));
+  // Soft flag: a few blanks but not majority.
+  const blankSome = !blankHeavy && emptyWO >= 3;
+
   const reviewCloser = wrong > 0
     ? (wrong === 1
       ? 'When you are ready, hop into Review and walk through that one miss — that is where the real learning sticks.'
       : `When you are ready, hop into Review and walk through the ${wrong} you missed — that is where the real learning sticks.`)
     : 'Everything correct — still worth a quick Review skim if you want to lock the methods in.';
+
+  // ── Working-out snitch track (playful, not mean) ─────────────────────────
+  if (blankHeavy || skipStreak >= 2) {
+    const snitchLevel = skipStreak >= 3 || emptyWO >= sketchQs
+      ? 'hot'
+      : skipStreak >= 2 || blankHeavy
+        ? 'warm'
+        : 'soft';
+    const snitchLines = snitchLevel === 'hot'
+      ? [
+          {
+            msg: `${hey}, score ${scoreBit} — but that sketch board was basically a clean plate.`,
+            sub: `Working out is not optional homework fluff. Keep answering with a blank board and I am texting Andrew. Yes, really. ${reviewCloser}`,
+          },
+          {
+            msg: `${emptyWO} blank boards this ${kind}${cn}. I am writing this down.`,
+            sub: `Andrew likes notes. Next time: pen on paper (well, pen on screen) before you tap an option. ${reviewCloser}`,
+          },
+          {
+            msg: `I see you${cn}. Answers only. No working out.`,
+            sub: `Cute strategy until it is not. One more session like this and Andrew gets the report. Use the sketch pad. ${reviewCloser}`,
+          },
+        ]
+      : snitchLevel === 'warm'
+        ? [
+            {
+              msg: `${hey} — ${scoreBit}, but the working-out pad stayed quiet a lot.`,
+              sub: `Write the steps. If you keep skipping, I might have to tell Andrew. Friendly warning from your flame. ${reviewCloser}`,
+            },
+            {
+              msg: `Blank sketch board × ${emptyWO}${cn}. I noticed.`,
+              sub: `Picking answers is fine for speed runs — learning needs the scribbles. Keep it up and Andrew hears about it. ${reviewCloser}`,
+            },
+            {
+              msg: `${scoreBit} on the ${kind}${cn}. Working out? Mostly missing.`,
+              sub: `I am not mad. I am a tiny flame with a big mouth. Write next time or I snitch to Andrew. ${reviewCloser}`,
+            },
+          ]
+        : [
+            {
+              msg: `${hey}, solid finish at ${scoreBit}.`,
+              sub: `Tiny request: use the sketch board for the steps. Blank boards make me nervous (and chatty with Andrew). ${reviewCloser}`,
+            },
+          ];
+    const line = pickLine(snitchLines, `${seedBase}-result-snitch-${snitchLevel}-${emptyWO}`, firstName);
+    return {
+      mood: snitchLevel === 'hot' ? 'urgent' : 'hint',
+      eyebrow: snitchLevel === 'hot' ? 'Andrew alert' : 'Working out?',
+      msg: line.msg,
+      sub: line.sub,
+      cta: wrong > 0
+        ? { label: 'Review misses', action: 'review' }
+        : { label: 'Review answers', action: 'review' },
+      key: `result-${seedBase}-snitch-${snitchLevel}-${emptyWO}-${scoreBit}`,
+    };
+  }
 
   let band;
   let mood;
@@ -620,6 +685,14 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
     ];
   }
 
+  // Light append when a few boards were blank but not enough for full snitch mode.
+  if (blankSome) {
+    lines = lines.map((L) => ({
+      ...L,
+      sub: `${L.sub} Also — try scribbling the steps on the sketch pad next time; blank boards make me want to tell Andrew.`,
+    }));
+  }
+
   const line = pickLine(lines, `${seedBase}-result-${band}-${scoreBit}`, firstName);
   return {
     mood,
@@ -629,8 +702,27 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
     cta: wrong > 0
       ? { label: 'Review misses', action: 'review' }
       : { label: 'Review answers', action: 'review' },
-    key: `result-${seedBase}-${band}-${scoreBit}`,
+    key: `result-${seedBase}-${band}-${scoreBit}${blankSome ? '-softwo' : ''}`,
   };
+};
+
+const WORKING_OUT_STREAK_KEY = (uid) => `flame-wo-skip-streak-v1-${uid || 'anon'}`;
+
+const readWorkingOutSkipStreak = (uid) => {
+  try {
+    return Math.max(0, Number(localStorage.getItem(WORKING_OUT_STREAK_KEY(uid)) || 0));
+  } catch {
+    return 0;
+  }
+};
+
+const updateWorkingOutSkipStreak = (uid, blankHeavy) => {
+  const prev = readWorkingOutSkipStreak(uid);
+  const next = blankHeavy ? prev + 1 : 0;
+  try {
+    localStorage.setItem(WORKING_OUT_STREAK_KEY(uid), String(next));
+  } catch { /* ignore */ }
+  return next;
 };
 
 const todayKeyFromSeed = (seedBase) => {
@@ -1319,6 +1411,12 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       if (!(total > 0) || Number.isNaN(score)) return;
       setCheerUntil(0); // score speech replaces the generic cheer
       const kind = e.detail?.challengeType || 'daily';
+      const emptyWorkingOutCount = Math.max(0, Number(e.detail?.emptyWorkingOutCount) || 0);
+      const sketchQuestionCount = Math.max(0, Number(e.detail?.sketchQuestionCount) || 0);
+      const blankHeavy = sketchQuestionCount >= 2
+        && emptyWorkingOutCount >= Math.max(2, Math.ceil(sketchQuestionCount * 0.5));
+      // Escalate across sessions when they keep skipping the sketch board.
+      const workingOutSkipStreak = updateWorkingOutSkipStreak(uid, blankHeavy);
       setTasks((t) => {
         const next = {
           ...t,
@@ -1339,8 +1437,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         score,
         total,
         challengeType: kind,
+        emptyWorkingOutCount,
+        sketchQuestionCount,
+        workingOutSkipStreak,
         until: Date.now() + 50_000,
-        id: `${Date.now()}-${score}-${total}`,
+        id: `${Date.now()}-${score}-${total}-wo${emptyWorkingOutCount}`,
       });
       setBubbleOpen(true);
       setDismissedKey('');
@@ -1395,6 +1496,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         firstName,
         `${seedBase}-${resultCoach.id || 'r'}`,
         resultCoach.challengeType,
+        {
+          emptyWorkingOutCount: resultCoach.emptyWorkingOutCount,
+          sketchQuestionCount: resultCoach.sketchQuestionCount,
+          workingOutSkipStreak: resultCoach.workingOutSkipStreak,
+        },
       );
     }
 

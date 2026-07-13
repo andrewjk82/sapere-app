@@ -245,7 +245,16 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     const correct = gradeQuestion(q, userAnswer);
     setIsCorrect(correct);
     setSubmitted(true);
-    setResults((prev) => [...prev, { correct, userAnswer, q }]);
+    // Sketch pad is always shown in topic practice — track blank boards for FlameBuddy.
+    let hadWorkingOut = false;
+    try { hadWorkingOut = sketchRef.current?.hasContent?.() === true; } catch { /* ignore */ }
+    setResults((prev) => [...prev, {
+      correct,
+      userAnswer,
+      q,
+      sketchAvailable: true,
+      hadWorkingOut,
+    }]);
 
     // Persist mastery INCREMENTALLY — the moment a question is answered
     // correctly. Topics have hundreds of questions, so a student almost never
@@ -286,6 +295,28 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
 
     if (user?.uid) {
       saveMastered(user.uid, chapter.id, topic.id, updatedMastered, totalInTopic);
+    }
+
+    // Flame coach: score + empty-sketch nags (same channel as Daily Challenge).
+    if (user?.uid && sessionTotal > 0 && typeof window !== 'undefined') {
+      const sketchQs = allResults.filter((r) => r.sketchAvailable === true);
+      const emptyWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === false).length;
+      const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
+      try {
+        window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
+          detail: {
+            uid: user.uid,
+            score: sessionCorrect,
+            total: sessionTotal,
+            wrong: Math.max(0, sessionTotal - sessionCorrect),
+            completed: true,
+            challengeType: 'daily',
+            sketchQuestionCount: sketchQs.length || sessionTotal,
+            emptyWorkingOutCount: sketchQs.length ? emptyWorkingOutCount : 0,
+            withWorkingOutCount,
+          },
+        }));
+      } catch { /* ignore */ }
     }
 
     setView('done');

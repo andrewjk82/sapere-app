@@ -1049,6 +1049,13 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         ? (currentQ.subQuestions.length)
         : 1;
 
+      // Sketch board was on screen for this answer — used by FlameBuddy to nag
+      // when the student only picks options and never writes working out.
+      const sketchAvailable = Boolean(showSplitScreen && canvasRef.current);
+      const hadWorkingOut = sketchAvailable
+        ? Boolean(canvasDataUrl || canvasPageImages?.length || canvasRef.current?.hasContent?.())
+        : null;
+
       newResults[currentIdx] = {
         questionId: currentQ?.id || null,
         type: currentQ?.type || 'unknown',
@@ -1069,6 +1076,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         isManual: Boolean(currentQ?.isManual),
         workingOut: canvasDataUrl, // Store the handwritten work
         workingOutPages: canvasPageImages,
+        sketchAvailable,
+        hadWorkingOut,
       };
       return newResults;
     });
@@ -1408,7 +1417,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               }));
             }
             // Flame coach: score mantra + "review your misses" on the result screen.
+            // Also pass sketch usage so Flame can gently (then snitch-ily) nag
+            // when the student only picks answers and never writes working out.
             if (!isAbandoned && displayTotal > 0) {
+              const sketchQs = currentAnswerResults.filter((r) => r && r.sketchAvailable === true);
+              const emptyWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === false).length;
+              const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
               window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
                 detail: {
                   uid: user.uid,
@@ -1418,6 +1432,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   wrong: Math.max(0, displayTotal - questionsCorrect),
                   completed: true,
                   challengeType,
+                  sketchQuestionCount: sketchQs.length,
+                  emptyWorkingOutCount,
+                  withWorkingOutCount,
                 },
               }));
             }
