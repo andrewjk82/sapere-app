@@ -328,11 +328,31 @@ export function applyTeacherApprovals(uid, approvals) {
 }
 
 // Teacher-triggered full reset: clears all notes for given kinds (or all kinds).
-export function applyTeacherReset(uid, kinds) {
+// Per-device watermark: each browser/phone applies once for a given resetAt and
+// does NOT require Firestore to delete secretNoteResets (that broke multi-device —
+// first device wiped the flag before the phone could apply).
+const lastResetKey = (uid) => `sapere:sn-reset-applied:${uid || 'anon'}`;
+
+export function getLastAppliedSecretNoteResetAt(uid) {
+  try {
+    return Math.max(0, Number(localStorage.getItem(lastResetKey(uid)) || 0));
+  } catch {
+    return 0;
+  }
+}
+
+export function markSecretNoteResetApplied(uid, resetAt) {
+  try {
+    localStorage.setItem(lastResetKey(uid), String(Math.max(0, Number(resetAt) || Date.now())));
+  } catch { /* ignore */ }
+}
+
+export function applyTeacherReset(uid, kinds, resetAt = Date.now()) {
   const targets = Array.isArray(kinds) && kinds.length ? kinds.filter(k => ALL_NOTE_KINDS.includes(k)) : ALL_NOTE_KINDS;
   for (const kind of targets) {
     write(kind, uid, []);
   }
+  markSecretNoteResetApplied(uid, resetAt);
   return targets.length;
 }
 

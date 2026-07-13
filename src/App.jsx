@@ -99,6 +99,7 @@ import {
   applyTeacherReset as applySecretNoteReset,
   filterUnappliedTeacherApprovals,
   markTeacherApprovalsApplied,
+  getLastAppliedSecretNoteResetAt,
 } from './utils/secretNote';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
@@ -475,10 +476,17 @@ function App() {
           // Intentionally no clear.secretNoteApprovals — local applied set is enough.
         }
         if (noteResets) {
+          // Multi-device safe: each device applies when resetAt is newer than its
+          // local watermark. Do NOT delete secretNoteResets from Firestore —
+          // that left phones with old localStorage after a desktop had already
+          // cleared the flag.
           const kinds = Array.isArray(noteResets.kinds) ? noteResets.kinds : [];
-          applySecretNoteReset(user.uid, kinds);
-          showToast('Your teacher reset your Secret Notebook.', 'info');
-          clear.secretNoteResets = deleteField();
+          const resetAt = Number(noteResets.resetAt) || 0;
+          const lastApplied = getLastAppliedSecretNoteResetAt(user.uid);
+          if (resetAt > lastApplied) {
+            applySecretNoteReset(user.uid, kinds, resetAt);
+            showToast('Your teacher reset your Secret Notebook.', 'info');
+          }
         }
         if (Array.isArray(examApprovals) && examApprovals.length) {
           const n = applyExamPrepApprovals(user.uid, examApprovals);
