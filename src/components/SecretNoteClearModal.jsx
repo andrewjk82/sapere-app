@@ -1,21 +1,25 @@
 import { useEffect, useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import {
   dismissSecretNoteClearCelebration,
   peekSecretNoteClearCelebration,
 } from '../services/secretNoteBonusService';
+import { FlameBuddyAvatar } from './FlameBuddy';
+import './FlameBuddy.css';
 import './SecretNoteClearModal.css';
 
 /**
- * Ghibli-inspired celebration card when a student earned the midnight
- * Secret-Note-clear bonus. Celebration payload is localStorage only.
- * `forcePayload` — teacher design preview (React state, no race with events).
+ * Celebration card when midnight Secret-Note-clear bonus awards XP.
+ * Design: yellow-border congrats card + real FlameBuddy avatar + XP count-up.
+ * Payload is localStorage only (forcePayload for teacher design preview).
  */
 export default function SecretNoteClearModal({
   uid,
   firstName = '',
+  currentXP = 0,
   forcePayload = null,
   onForceDismiss = null,
+  isPreview = false,
 }) {
   const [payload, setPayload] = useState(null);
 
@@ -34,122 +38,102 @@ export default function SecretNoteClearModal({
     return () => window.removeEventListener('sapere:sn-clear-celebration', onEvent);
   }, [uid, forcePayload]);
 
-  const copy = useMemo(() => buildCopy(payload, firstName), [payload, firstName]);
+  const bonusXp = Number(payload?.xp) || 0;
+  const endXp = Math.max(0, Number(currentXP) || 0);
+  // Real award: totalXP already includes bonus. Preview: animate current → +bonus.
+  const startXp = isPreview || forcePayload
+    ? endXp
+    : Math.max(0, endXp - bonusXp);
+  const targetXp = isPreview || forcePayload
+    ? endXp + bonusXp
+    : endXp;
+
+  const copy = useMemo(() => buildCopy(payload, firstName, bonusXp), [payload, firstName, bonusXp]);
 
   const close = () => {
-    if (forcePayload) {
-      onForceDismiss?.();
-    }
+    if (forcePayload) onForceDismiss?.();
     dismissSecretNoteClearCelebration(uid);
     setPayload(null);
   };
 
+  const open = payload && bonusXp > 0;
+
   return (
     <AnimatePresence>
-      {payload && Number(payload.xp) > 0 && (
+      {open && (
         <motion.div
           className="snc-modal"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.35 }}
+          transition={{ duration: 0.28 }}
           role="dialog"
           aria-modal="true"
           aria-labelledby="snc-title"
         >
-          <motion.div
-            className="snc-modal__backdrop"
-            onClick={close}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          />
+          <motion.div className="snc-modal__backdrop" onClick={close} />
 
           <motion.div
-            className="snc-modal__card"
-            initial={{ opacity: 0, y: 36, scale: 0.92 }}
+            className="snc-modal__frame"
+            initial={{ opacity: 0, y: 28, scale: 0.94 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.96 }}
-            transition={{ type: 'spring', stiffness: 280, damping: 22 }}
+            exit={{ opacity: 0, y: 16, scale: 0.97 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 24 }}
           >
-            {/* Soft floating orbs — watercolor sky feel */}
-            <div className="snc-modal__orb snc-modal__orb--a" aria-hidden />
-            <div className="snc-modal__orb snc-modal__orb--b" aria-hidden />
-            <div className="snc-modal__orb snc-modal__orb--c" aria-hidden />
-
-            <div className="snc-modal__clouds" aria-hidden>
-              <span className="snc-cloud snc-cloud--1" />
-              <span className="snc-cloud snc-cloud--2" />
-              <span className="snc-cloud snc-cloud--3" />
-            </div>
-
-            <div className="snc-modal__body">
-              {/* Flame avatar — talks with bounce + speech bubble */}
-              <div className="snc-modal__stage">
-                <motion.div
-                  className="snc-flame"
-                  animate={{
-                    y: [0, -8, 0, -5, 0],
-                    rotate: [0, -3, 2, -2, 0],
-                    scale: [1, 1.04, 1, 1.03, 1],
-                  }}
-                  transition={{ duration: 2.8, repeat: Infinity, ease: 'easeInOut' }}
-                >
-                  <svg className="snc-flame__svg" viewBox="0 0 80 100" aria-hidden>
-                    <defs>
-                      <linearGradient id="sncOuter" x1="0%" y1="100%" x2="0%" y2="0%">
-                        <stop offset="0%" stopColor="#f97316" />
-                        <stop offset="55%" stopColor="#fb923c" />
-                        <stop offset="100%" stopColor="#fde68a" />
-                      </linearGradient>
-                      <linearGradient id="sncInner" x1="0%" y1="100%" x2="0%" y2="0%">
-                        <stop offset="0%" stopColor="#fef3c7" />
-                        <stop offset="100%" stopColor="#fffbeb" />
-                      </linearGradient>
-                    </defs>
-                    <path
-                      d="M40 8 C52 28 68 36 68 56 C68 74 56 90 40 94 C24 90 12 74 12 56 C12 36 28 28 40 8 Z"
-                      fill="url(#sncOuter)"
-                    />
-                    <path
-                      d="M40 38 C46 48 52 52 52 62 C52 72 46 80 40 82 C34 80 28 72 28 62 C28 52 34 48 40 38 Z"
-                      fill="url(#sncInner)"
-                      opacity="0.95"
-                    />
-                    {/* soft cocoa eyes */}
-                    <circle cx="32" cy="58" r="3.2" fill="#4a2a10" />
-                    <circle cx="48" cy="58" r="3.2" fill="#4a2a10" />
-                    <circle cx="31" cy="57" r="1.1" fill="#fff8e8" />
-                    <circle cx="47" cy="57" r="1.1" fill="#fff8e8" />
-                    {/* smile */}
-                    <path d="M34 68 Q40 73 46 68" fill="none" stroke="#4a2a10" strokeWidth="1.8" strokeLinecap="round" opacity="0.55" />
-                  </svg>
-                  <div className="snc-flame__glow" />
-                </motion.div>
-
-                <motion.div
-                  className="snc-speech"
-                  initial={{ opacity: 0, scale: 0.8, x: -8 }}
-                  animate={{ opacity: 1, scale: 1, x: 0 }}
-                  transition={{ delay: 0.25, type: 'spring', stiffness: 260, damping: 18 }}
-                >
-                  <div className="snc-speech__eyebrow">{copy.eyebrow}</div>
-                  <h2 id="snc-title" className="snc-speech__title">{copy.title}</h2>
-                  <p className="snc-speech__msg">{copy.msg}</p>
-                  <p className="snc-speech__sub">{copy.sub}</p>
-                </motion.div>
+            <div className="snc-modal__card">
+              {/* Confetti dots */}
+              <div className="snc-confetti" aria-hidden>
+                {CONFETTI.map((c, i) => (
+                  <span
+                    key={i}
+                    className="snc-confetti__bit"
+                    style={{
+                      left: c.left,
+                      top: c.top,
+                      background: c.color,
+                      width: c.size,
+                      height: c.size,
+                      borderRadius: c.round ? '50%' : '2px',
+                      transform: `rotate(${c.rot}deg)`,
+                      animationDelay: `${c.delay}s`,
+                    }}
+                  />
+                ))}
               </div>
 
+              {/* Real FlameBuddy avatar (cheer mood) */}
               <motion.div
-                className="snc-xp"
-                initial={{ scale: 0.6, opacity: 0 }}
-                animate={{ scale: 1, opacity: 1 }}
-                transition={{ delay: 0.4, type: 'spring', stiffness: 320, damping: 14 }}
+                className="snc-modal__flame-wrap"
+                animate={{ y: [0, -6, 0] }}
+                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
               >
-                <span className="snc-xp__plus">+</span>
-                <span className="snc-xp__num">{payload.xp}</span>
-                <span className="snc-xp__label">XP</span>
+                {/* idle = default orange flame (CSS mood fills need main fb- ids) */}
+                <FlameBuddyAvatar mood="idle" />
               </motion.div>
+
+              <h2 id="snc-title" className="snc-modal__title">Congratulations</h2>
+              <p className="snc-modal__msg">{copy.msg}</p>
+              <p className="snc-modal__sub">{copy.sub}</p>
+
+              {/* XP badge instead of medal */}
+              <motion.div
+                className="snc-modal__xp-badge"
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: 0.2, type: 'spring', stiffness: 340, damping: 16 }}
+              >
+                <span className="snc-modal__xp-plus">+</span>
+                <span className="snc-modal__xp-num">{bonusXp}</span>
+                <span className="snc-modal__xp-unit">XP</span>
+              </motion.div>
+
+              {/* Animated total XP: previous → previous + bonus */}
+              <XpCountUp
+                key={`${startXp}-${targetXp}-${open}`}
+                from={startXp}
+                to={targetXp}
+                bonus={bonusXp}
+              />
 
               <motion.button
                 type="button"
@@ -158,11 +142,9 @@ export default function SecretNoteClearModal({
                 whileHover={{ scale: 1.03, y: -1 }}
                 whileTap={{ scale: 0.97 }}
               >
-                Thanks, Flame! ✨
+                Continue
               </motion.button>
             </div>
-
-            <div className="snc-modal__grass" aria-hidden />
           </motion.div>
         </motion.div>
       )}
@@ -170,41 +152,88 @@ export default function SecretNoteClearModal({
   );
 }
 
-function buildCopy(payload, firstName) {
+function XpCountUp({ from, to, bonus }) {
+  const mv = useMotionValue(from);
+  const display = useTransform(mv, (v) => Math.round(v).toLocaleString());
+  const [shown, setShown] = useState(String(Math.round(from)));
+
+  useEffect(() => {
+    mv.set(from);
+    const controls = animate(mv, to, {
+      duration: 1.35,
+      delay: 0.55,
+      ease: [0.22, 1, 0.36, 1],
+    });
+    const unsub = display.on('change', (v) => setShown(v));
+    return () => {
+      controls.stop();
+      unsub();
+    };
+  }, [from, to, mv, display]);
+
+  return (
+    <div className="snc-modal__total">
+      <div className="snc-modal__total-label">Your XP</div>
+      <div className="snc-modal__total-row">
+        <motion.span
+          className="snc-modal__total-num"
+          animate={{ scale: [1, 1.06, 1] }}
+          transition={{ delay: 0.55, duration: 1.35, ease: 'easeOut' }}
+        >
+          {shown}
+        </motion.span>
+        <motion.span
+          className="snc-modal__total-delta"
+          initial={{ opacity: 0, y: 6 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.7 }}
+        >
+          +{bonus}
+        </motion.span>
+      </div>
+    </div>
+  );
+}
+
+function buildCopy(payload, firstName, bonusXp) {
   const n = (firstName || '').trim();
   const hey = n ? `Hey ${n}` : 'Hey';
-  const xp = Number(payload?.xp) || 10;
-  const dailyOnly = payload?.dailyOnly;
+  const xp = bonusXp || 10;
   const both = payload?.claimDaily && payload?.claimCalc;
 
-  if (dailyOnly || (!payload?.claimCalc && payload?.claimDaily)) {
+  if (payload?.dailyOnly || (payload?.claimDaily && !payload?.claimCalc)) {
     return {
-      eyebrow: 'Midnight check-in',
-      title: 'You cleared the board!',
-      msg: `${hey}! Too good — keep going just like this.`,
-      sub: `Zero Secret Notes left at last night’s check. I’m tossing you +${xp} XP. Sparkle mode: on.`,
+      msg: `${hey}! You did a great job — keep going just like this.`,
+      sub: `Zero Secret Notes left at last night’s check. +${xp} XP for you!`,
     };
   }
   if (both) {
     return {
-      eyebrow: 'Midnight check-in',
-      title: 'Both notebooks sparkling!',
-      msg: `${hey}! Daily and Calculation Secret Notes — empty. Chef’s kiss.`,
-      sub: `That’s +${xp} XP for the clean sweep. Stay this sharp tomorrow too!`,
+      msg: `${hey}! Daily and Calculation notebooks are clear. Amazing.`,
+      sub: `That’s +${xp} XP for the clean sweep. Stay this sharp!`,
     };
   }
   if (payload?.claimCalc) {
     return {
-      eyebrow: 'Midnight check-in',
-      title: 'Calculation notebook clear!',
-      msg: `${hey}! No calc mistakes hanging around. Love that.`,
-      sub: `+${xp} XP for the empty calc Secret Note. Keep the streak kind and clean.`,
+      msg: `${hey}! Calculation Secret Note is empty. Love that.`,
+      sub: `+${xp} XP added. Keep the streak kind and clean.`,
     };
   }
   return {
-    eyebrow: 'Midnight check-in',
-    title: 'Daily notebook clear!',
-    msg: `${hey}! Not a single Secret Note left. That’s the good habit.`,
-    sub: `+${xp} XP for keeping it empty through the night. Proud of you!`,
+    msg: `${hey}! You did a great job — keep going just like this.`,
+    sub: `No Secret Notes left overnight. +${xp} XP!`,
   };
 }
+
+const CONFETTI = [
+  { left: '12%', top: '10%', color: '#f472b6', size: 8, round: false, rot: 20, delay: 0 },
+  { left: '22%', top: '18%', color: '#60a5fa', size: 6, round: true, rot: 0, delay: 0.2 },
+  { left: '78%', top: '12%', color: '#fbbf24', size: 7, round: false, rot: -25, delay: 0.1 },
+  { left: '85%', top: '22%', color: '#a78bfa', size: 6, round: true, rot: 0, delay: 0.35 },
+  { left: '18%', top: '42%', color: '#34d399', size: 5, round: false, rot: 40, delay: 0.15 },
+  { left: '80%', top: '40%', color: '#fb7185', size: 6, round: false, rot: -15, delay: 0.25 },
+  { left: '8%', top: '28%', color: '#38bdf8', size: 4, round: true, rot: 0, delay: 0.4 },
+  { left: '90%', top: '32%', color: '#facc15', size: 5, round: false, rot: 30, delay: 0.05 },
+  { left: '30%', top: '8%', color: '#c084fc', size: 5, round: true, rot: 0, delay: 0.3 },
+  { left: '68%', top: '9%', color: '#4ade80', size: 6, round: false, rot: 12, delay: 0.18 },
+];

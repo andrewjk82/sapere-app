@@ -377,7 +377,7 @@ function App() {
       || sharedProfile?.role === 'admin'
       || sharedProfile?.role === 'teacher';
     if (!teacher) return undefined;
-    const flag = 'sapere:sn-clear-modal-teacher-preview-v3';
+    const flag = 'sapere:sn-clear-modal-teacher-preview-v4';
     try {
       if (sessionStorage.getItem(flag) === 'dismissed') return undefined;
     } catch { /* ignore */ }
@@ -1352,10 +1352,12 @@ function App() {
             || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
             || (isAdmin ? 'Teacher' : '')
           }
+          currentXP={Number((profile || sharedProfile)?.totalXP) || 0}
+          isPreview={Boolean(snClearDesignPreview)}
           forcePayload={snClearDesignPreview}
           onForceDismiss={() => {
             setSnClearDesignPreview(null);
-            try { sessionStorage.setItem('sapere:sn-clear-modal-teacher-preview-v3', 'dismissed'); } catch { /* ignore */ }
+            try { sessionStorage.setItem('sapere:sn-clear-modal-teacher-preview-v4', 'dismissed'); } catch { /* ignore */ }
           }}
         />
       )}
