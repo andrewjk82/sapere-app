@@ -543,8 +543,8 @@ const Settings = () => {
                   type="button"
                   className="app-button app-button--secondary"
                   onClick={() => {
+                    // Modal only — no toast (celebration card is the feedback).
                     requestSecretNoteClearModalPreview({ xp: 10, dailyOnly: true, claimDaily: true, claimCalc: false });
-                    showToast('Secret Note clear modal opened (preview).', 'info');
                   }}
                   style={{
                     width: '100%',
