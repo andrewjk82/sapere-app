@@ -626,7 +626,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                   }}>
                     {correct ? <Check size={16} /> : wrong ? <X size={16} /> : String.fromCharCode(65 + i)}
                   </div>
-                  <MathView content={optText} style={{ fontSize: '0.98rem', fontWeight: 600, color: '#1e1b4b', flex: 1 }} />
+                  <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontSize: '0.98rem', fontWeight: 600, color: '#1e1b4b', flex: 1 }} />
                 </motion.button>
               );
             })}
@@ -668,7 +668,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                               color: '#1e1b4b', fontWeight: 700, cursor: submitted ? 'default' : 'pointer', fontSize: '0.88rem',
                             }}
                           >
-                            {String.fromCharCode(65 + oi)}. <MathView content={optText} style={{ display: 'inline' }} />
+                            {String.fromCharCode(65 + oi)}. <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ display: 'inline' }} />
                           </button>
                         );
                       })}

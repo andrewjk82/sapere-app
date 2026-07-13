@@ -630,7 +630,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                               const isCorrectOpt = !Number.isNaN(Number(sq.answer)) && oIdx === Number(sq.answer);
                               return (
                                 <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: `2px solid ${isCorrectOpt ? '#10b981' : '#f1f5f9'}`, background: isCorrectOpt ? '#f0fdf4' : '#fff', color: isCorrectOpt ? '#166534' : '#64748b', fontWeight: 800, fontSize: '0.85rem' }}>
-                                  {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                                  {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ display: 'inline' }} />
                                 </div>
                               );
                             })}
@@ -786,12 +786,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                       const isCorrect = !Number.isNaN(correctIdx) && i === correctIdx;
                       return (
                         <div key={i} style={{ padding: '16px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', border: `2px solid ${isCorrect ? '#10b981' : 'transparent'}`, borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
-                          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                           <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%' }}>
                             <div style={{ width: '34px', height: '34px', borderRadius: '50%', background: isCorrect ? '#10b981' : '#f1f5f9', color: isCorrect ? '#fff' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: '"Inter", sans-serif', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>
                               {String.fromCharCode(65 + i)}
                             </div>
                             <div style={{ flex: 1 }}>
-                              <MathView content={optText} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
+                              <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ fontWeight: 500, fontSize: '1.05rem', color: '#1e1b4b' }} />
                               {typeof opt === 'object' && opt.imageUrl && <img src={opt.imageUrl} alt="" style={{ maxHeight: '60px', marginTop: '8px', display: 'block', borderRadius: '8px' }} />}
                             </div>
                           </div>
