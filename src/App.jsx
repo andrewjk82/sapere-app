@@ -102,7 +102,10 @@ import {
   markTeacherApprovalsApplied,
   getLastAppliedSecretNoteResetAt,
 } from './utils/secretNote';
-import { tryAwardSecretNoteClearBonus } from './services/secretNoteBonusService';
+import {
+  tryAwardSecretNoteClearBonus,
+  queueSecretNoteClearCelebration,
+} from './services/secretNoteBonusService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -363,6 +366,25 @@ function App() {
       console.error('Failed to reset viewed questions', e);
     }
   }, []);
+
+  // One-time design preview of the Secret-Note clear celebration for teachers.
+  // Local only — no XP / Firebase writes. Flag prevents repeat after dismiss.
+  useEffect(() => {
+    if (!isAdmin || !user?.uid) return undefined;
+    const flag = 'sapere:sn-clear-modal-teacher-preview-v1';
+    try {
+      if (localStorage.getItem(flag)) return undefined;
+      localStorage.setItem(flag, '1');
+    } catch { /* still try to show once this session */ }
+    queueSecretNoteClearCelebration(user.uid, {
+      xp: 10,
+      dateKey: new Date().toLocaleDateString('en-CA'),
+      dailyOnly: true,
+      claimDaily: true,
+      claimCalc: false,
+    });
+    return undefined;
+  }, [isAdmin, user?.uid]);
 
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
@@ -1313,14 +1335,15 @@ function App() {
         />
       )}
 
-      {/* Secret-Note clear bonus — local celebration only (no extra Firebase). */}
-      {!isAdmin && user?.uid && !examInProgress && (
+      {/* Secret-Note clear bonus — local celebration only (no extra Firebase).
+          Teachers also see a one-time design preview (see preview effect above). */}
+      {user?.uid && !examInProgress && (
         <SecretNoteClearModal
           uid={user.uid}
           firstName={
             (profile || sharedProfile)?.firstName
             || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
-            || ''
+            || (isAdmin ? 'Teacher' : '')
           }
         />
       )}
