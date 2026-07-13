@@ -245,15 +245,26 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     const correct = gradeQuestion(q, userAnswer);
     setIsCorrect(correct);
     setSubmitted(true);
-    // Sketch pad is always shown in topic practice — track blank boards for FlameBuddy.
-    let hadWorkingOut = false;
-    try { hadWorkingOut = sketchRef.current?.hasContent?.() === true; } catch { /* ignore */ }
+    // Sketch pad always shown — ink level (empty/light/substantial) for FlameBuddy.
+    let inkLevel = 'empty';
+    let inkStats = null;
+    try {
+      inkStats = sketchRef.current?.getInkStats?.() || null;
+      inkLevel = inkStats?.level
+        || (sketchRef.current?.hasContent?.() ? 'light' : 'empty');
+    } catch {
+      try { inkLevel = sketchRef.current?.hasContent?.() ? 'light' : 'empty'; } catch { /* ignore */ }
+    }
     setResults((prev) => [...prev, {
       correct,
       userAnswer,
       q,
       sketchAvailable: true,
-      hadWorkingOut,
+      hadWorkingOut: inkLevel === 'substantial',
+      hadAnyInk: inkLevel === 'light' || inkLevel === 'substantial',
+      inkLevel,
+      inkStrokeCount: inkStats?.strokeCount ?? null,
+      inkPathLength: inkStats?.pathLength ?? null,
     }]);
 
     // Persist mastery INCREMENTALLY — the moment a question is answered
@@ -300,11 +311,12 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     // Flame coach: score + empty-sketch nags (same channel as Daily Challenge).
     if (user?.uid && sessionTotal > 0 && typeof window !== 'undefined') {
       const sketchQs = allResults.filter((r) => r.sketchAvailable === true);
-      const emptyQs = sketchQs.filter((r) => r.hadWorkingOut === false);
-      const emptyWorkingOutCount = emptyQs.length;
-      const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
-      const emptyAndWrongCount = emptyQs.filter((r) => r.correct === false).length;
-      const emptyAndCorrectCount = emptyQs.filter((r) => r.correct === true).length;
+      const levelOf = (r) => r.inkLevel
+        || (r.hadWorkingOut ? 'substantial' : (r.hadAnyInk ? 'light' : 'empty'));
+      const emptyQs = sketchQs.filter((r) => levelOf(r) === 'empty');
+      const lightQs = sketchQs.filter((r) => levelOf(r) === 'light');
+      const substantialQs = sketchQs.filter((r) => levelOf(r) === 'substantial');
+      const weakQs = sketchQs.filter((r) => levelOf(r) !== 'substantial');
       try {
         window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
           detail: {
@@ -315,10 +327,13 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             completed: true,
             challengeType: 'daily',
             sketchQuestionCount: sketchQs.length || sessionTotal,
-            emptyWorkingOutCount: sketchQs.length ? emptyWorkingOutCount : 0,
-            withWorkingOutCount,
-            emptyAndWrongCount,
-            emptyAndCorrectCount,
+            emptyWorkingOutCount: sketchQs.length ? emptyQs.length : 0,
+            lightWorkingOutCount: lightQs.length,
+            withWorkingOutCount: substantialQs.length,
+            weakWorkingOutCount: weakQs.length,
+            emptyAndWrongCount: emptyQs.filter((r) => r.correct === false).length,
+            emptyAndCorrectCount: emptyQs.filter((r) => r.correct === true).length,
+            lightAndWrongCount: lightQs.filter((r) => r.correct === false).length,
           },
         }));
       } catch { /* ignore */ }

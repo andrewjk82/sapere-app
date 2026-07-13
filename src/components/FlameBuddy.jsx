@@ -523,9 +523,10 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
 /**
  * Score-based post-result coaching. Ends by nudging Review for missed questions.
  *
- * Working-out ladder (gentle → snitch):
- *  1) Early skips → soft coach lines (write beside the answer, retry with steps)
- *  2) Correct + empty → only occasional soft hint
+ * Working-out ladder (ink level from stroke path length — no OCR/AI):
+ *   empty | light (dots) | substantial (real steps)
+ *  1) Early weak ink → soft coach lines
+ *  2) Correct + empty/light → rare soft hint
  *  3) Keep skipping sessions → escalate to "I'll tell Andrew"
  */
 const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'daily', opts = {}) => {
@@ -540,13 +541,21 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
   const kind = challengeType === 'calc' ? 'sprint' : 'practice';
 
   const emptyWO = Math.max(0, Number(opts.emptyWorkingOutCount) || 0);
+  const lightWO = Math.max(0, Number(opts.lightWorkingOutCount) || 0);
+  const substantialWO = Math.max(0, Number(opts.withWorkingOutCount) || 0);
+  const weakWO = Math.max(
+    0,
+    Number(opts.weakWorkingOutCount) || (emptyWO + lightWO),
+  );
   const sketchQs = Math.max(0, Number(opts.sketchQuestionCount) || 0);
   const skipStreak = Math.max(0, Number(opts.workingOutSkipStreak) || 0);
   const emptyWrong = Math.max(0, Number(opts.emptyAndWrongCount) || 0);
   const emptyCorrect = Math.max(0, Number(opts.emptyAndCorrectCount) || 0);
-  // Majority of sketch-available questions left blank this session.
-  const blankHeavy = sketchQs >= 2 && emptyWO >= Math.max(2, Math.ceil(sketchQs * 0.5));
-  const blankSome = !blankHeavy && emptyWO >= 2;
+  const lightWrong = Math.max(0, Number(opts.lightAndWrongCount) || 0);
+  // Weak = empty or light (not substantial). Majority weak → coach.
+  const blankHeavy = sketchQs >= 2 && weakWO >= Math.max(2, Math.ceil(sketchQs * 0.5));
+  const blankSome = !blankHeavy && weakWO >= 2;
+  const mostlyLight = lightWO > emptyWO && lightWO >= 2;
 
   const reviewCloser = wrong > 0
     ? (wrong === 1
@@ -558,18 +567,18 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
     ? { label: 'Review misses', action: 'review' }
     : { label: 'Review answers', action: 'review' };
 
-  // ── Stage 3+: keep skipping → Andrew snitch (only after repeated sessions) ─
+  // ── Stage 3+: keep skipping substantial writing → Andrew snitch ──────────
   if (skipStreak >= 2 && (blankHeavy || blankSome)) {
     const hot = skipStreak >= 3;
     const snitchLines = hot
       ? [
           {
-            msg: `${hey}, ${scoreBit} — but the sketch board was basically empty again.`,
-            sub: `I gave soft reminders. You kept tapping answers only. Next blank run and I am telling Andrew. Write the steps. ${reviewCloser}`,
+            msg: `${hey}, ${scoreBit} — but I still barely see real working out.`,
+            sub: `Empty boards and tiny scribbles don't count. Next weak run and I am telling Andrew. Write the full steps. ${reviewCloser}`,
           },
           {
-            msg: `${emptyWO} blank boards this ${kind}${cn}. I am writing this down.`,
-            sub: `Andrew likes notes. Pen on the pad before you pick an option — please. ${reviewCloser}`,
+            msg: `${weakWO} thin pads this ${kind}${cn}. I am writing this down.`,
+            sub: `Andrew likes notes. Fill the sketch board with actual steps before you tap. ${reviewCloser}`,
           },
           {
             msg: `Still answer-only mode${cn}. Score ${scoreBit}.`,
@@ -578,39 +587,57 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
         ]
       : [
           {
-            msg: `${hey} — ${scoreBit}, and the working-out pad stayed quiet a lot again.`,
-            sub: `Second session like this. If it keeps happening, I might have to tell Andrew. Scribble the steps next time? ${reviewCloser}`,
+            msg: `${hey} — ${scoreBit}, and the pad stayed thin again.`,
+            sub: `Second session with empty or tiny marks. If it keeps happening, I might have to tell Andrew. Real steps next time? ${reviewCloser}`,
           },
           {
-            msg: `Blank sketch boards keep showing up${cn}.`,
-            sub: `I am not mad — I am a tiny coach with a big mouth. Write next time, or Andrew gets a heads-up. ${reviewCloser}`,
+            msg: `Working out still looking sparse${cn}.`,
+            sub: `I am not mad — I am a tiny coach with a big mouth. Write more next time, or Andrew gets a heads-up. ${reviewCloser}`,
           },
         ];
-    const line = pickLine(snitchLines, `${seedBase}-result-snitch-${hot ? 'hot' : 'warm'}-${emptyWO}`, firstName);
+    const line = pickLine(snitchLines, `${seedBase}-result-snitch-${hot ? 'hot' : 'warm'}-${weakWO}`, firstName);
     return {
       mood: hot ? 'urgent' : 'hint',
       eyebrow: hot ? 'Andrew alert' : 'Heads-up',
       msg: line.msg,
       sub: line.sub,
       cta,
-      key: `result-${seedBase}-snitch-${hot ? 'hot' : 'warm'}-${emptyWO}-${scoreBit}`,
+      key: `result-${seedBase}-snitch-${hot ? 'hot' : 'warm'}-${weakWO}-${scoreBit}`,
     };
   }
 
-  // ── Stage 1–2: first times blank → soft table-style coaching (no Andrew yet) ─
+  // ── Stage 1–2: first times weak ink → soft coaching (no Andrew yet) ──────
   if (blankHeavy || blankSome) {
     let softLines;
     let eyebrow = 'Sketch tip';
     let mood = 'hint';
 
-    if (emptyWrong >= Math.max(2, emptyCorrect)) {
-      // Mostly wrong + empty — "retry with working out"
+    if (mostlyLight && emptyWO === 0) {
+      // Had some ink but only light — "a bit more than dots"
+      eyebrow = 'A bit more ink';
+      mood = 'hint';
+      softLines = [
+        {
+          msg: `${hey} — ${scoreBit}. I saw a few marks on the pad.`,
+          sub: `Dots and tiny scribbles are a start — try writing the full steps next time, not just a flick. ${reviewCloser}`,
+        },
+        {
+          msg: `Score ${scoreBit}${cn}. Sketch pad was a little shy.`,
+          sub: `One more line of working out goes a long way. Numbers, arrows, the path — not only a tap. ${reviewCloser}`,
+        },
+        {
+          msg: `${hey}, solid finish at ${scoreBit}.`,
+          sub: `Next round: fill a little more of the board. Light marks → real steps. ${reviewCloser}`,
+        },
+      ];
+    } else if ((emptyWrong + lightWrong) >= Math.max(2, emptyCorrect)) {
+      // Mostly wrong + weak ink — "retry with working out"
       eyebrow = 'Try writing it out';
       mood = 'thinking';
       softLines = [
         {
           msg: `${hey}, you finished — ${scoreBit}.`,
-          sub: `A few of those misses had a blank sketch pad. Next time, write the working out first — it catches silly mistakes. ${reviewCloser}`,
+          sub: `A few of those misses had almost no working out. Next time, write the steps first — it catches silly mistakes. ${reviewCloser}`,
         },
         {
           msg: `${scoreBit}${cn}. Honest score.`,
@@ -621,8 +648,8 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
           sub: `On the next attempt, start on the pad: jot numbers, show the path. Working out first, then tap. ${reviewCloser}`,
         },
       ];
-    } else if (emptyCorrect > emptyWrong && emptyWrong === 0 && pct >= 75) {
-      // All (or mostly) correct but empty — occasional soft hint only
+    } else if (emptyCorrect > emptyWrong && emptyWrong === 0 && pct >= 75 && emptyWO >= lightWO) {
+      // Strong score but mostly empty — rare soft hint
       eyebrow = 'Nice work';
       mood = 'cheer';
       softLines = [
@@ -634,14 +661,13 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
           msg: `Look at that score${cn}: ${scoreBit}.`,
           sub: `Proud of you. Optional upgrade: use the sketch pad so speed and method grow together. ${reviewCloser}`,
         },
-        // Fall through-ish: some variants stay pure cheer with no sketch nag
         {
           msg: `${n || 'Friend'}, ${scoreBit} on this ${kind}? Chef's kiss.`,
           sub: `Keep that careful energy. ${reviewCloser}`,
         },
       ];
     } else {
-      // Generic empty pad — "don't just pick the number"
+      // Generic weak pad — "don't just pick the number"
       softLines = [
         {
           msg: `${hey} — ${scoreBit}. You finished the set.`,
@@ -653,19 +679,19 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
         },
         {
           msg: `${hey}, solid finish at ${scoreBit}.`,
-          sub: `Next round: pen on the board before you choose. Even a short scribble helps. ${reviewCloser}`,
+          sub: `Next round: pen on the board before you choose. Real steps beat a blank board. ${reviewCloser}`,
         },
       ];
     }
 
-    const line = pickLine(softLines, `${seedBase}-result-softwo-${emptyWrong}-${emptyCorrect}-${scoreBit}`, firstName);
+    const line = pickLine(softLines, `${seedBase}-result-softwo-${emptyWO}-${lightWO}-${scoreBit}`, firstName);
     return {
       mood,
       eyebrow,
       msg: line.msg,
       sub: line.sub,
       cta,
-      key: `result-${seedBase}-softwo-${emptyWO}-${scoreBit}`,
+      key: `result-${seedBase}-softwo-${weakWO}-s${substantialWO}-${scoreBit}`,
     };
   }
 
@@ -1466,14 +1492,20 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       setCheerUntil(0); // score speech replaces the generic cheer
       const kind = e.detail?.challengeType || 'daily';
       const emptyWorkingOutCount = Math.max(0, Number(e.detail?.emptyWorkingOutCount) || 0);
+      const lightWorkingOutCount = Math.max(0, Number(e.detail?.lightWorkingOutCount) || 0);
+      const withWorkingOutCount = Math.max(0, Number(e.detail?.withWorkingOutCount) || 0);
+      const weakWorkingOutCount = Math.max(
+        0,
+        Number(e.detail?.weakWorkingOutCount) || (emptyWorkingOutCount + lightWorkingOutCount),
+      );
       const sketchQuestionCount = Math.max(0, Number(e.detail?.sketchQuestionCount) || 0);
       const emptyAndWrongCount = Math.max(0, Number(e.detail?.emptyAndWrongCount) || 0);
       const emptyAndCorrectCount = Math.max(0, Number(e.detail?.emptyAndCorrectCount) || 0);
+      const lightAndWrongCount = Math.max(0, Number(e.detail?.lightAndWrongCount) || 0);
+      // Weak ink (empty + light dots) counts toward skip streak — substantial resets it.
       const blankHeavy = sketchQuestionCount >= 2
-        && emptyWorkingOutCount >= Math.max(2, Math.ceil(sketchQuestionCount * 0.5));
-      // Also count lighter skips so repeated "a few blanks" still escalates.
-      const blankSome = !blankHeavy && emptyWorkingOutCount >= 2;
-      // Escalate across sessions when they keep skipping the sketch board.
+        && weakWorkingOutCount >= Math.max(2, Math.ceil(sketchQuestionCount * 0.5));
+      const blankSome = !blankHeavy && weakWorkingOutCount >= 2;
       const workingOutSkipStreak = updateWorkingOutSkipStreak(uid, blankHeavy || blankSome);
       setTasks((t) => {
         const next = {
@@ -1496,12 +1528,16 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         total,
         challengeType: kind,
         emptyWorkingOutCount,
+        lightWorkingOutCount,
+        withWorkingOutCount,
+        weakWorkingOutCount,
         sketchQuestionCount,
         emptyAndWrongCount,
         emptyAndCorrectCount,
+        lightAndWrongCount,
         workingOutSkipStreak,
         until: Date.now() + 50_000,
-        id: `${Date.now()}-${score}-${total}-wo${emptyWorkingOutCount}`,
+        id: `${Date.now()}-${score}-${total}-wo${weakWorkingOutCount}`,
       });
       setBubbleOpen(true);
       setDismissedKey('');
@@ -1558,9 +1594,13 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         resultCoach.challengeType,
         {
           emptyWorkingOutCount: resultCoach.emptyWorkingOutCount,
+          lightWorkingOutCount: resultCoach.lightWorkingOutCount,
+          withWorkingOutCount: resultCoach.withWorkingOutCount,
+          weakWorkingOutCount: resultCoach.weakWorkingOutCount,
           sketchQuestionCount: resultCoach.sketchQuestionCount,
           emptyAndWrongCount: resultCoach.emptyAndWrongCount,
           emptyAndCorrectCount: resultCoach.emptyAndCorrectCount,
+          lightAndWrongCount: resultCoach.lightAndWrongCount,
           workingOutSkipStreak: resultCoach.workingOutSkipStreak,
         },
       );

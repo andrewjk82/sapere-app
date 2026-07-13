@@ -1049,12 +1049,26 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         ? (currentQ.subQuestions.length)
         : 1;
 
-      // Sketch board was on screen for this answer — used by FlameBuddy to nag
-      // when the student only picks options and never writes working out.
+      // Sketch board on screen — ink level (empty/light/substantial) for FlameBuddy.
+      // light = a few dots; substantial = enough path length to look like steps.
       const sketchAvailable = Boolean(showSplitScreen && canvasRef.current);
-      const hadWorkingOut = sketchAvailable
-        ? Boolean(canvasDataUrl || canvasPageImages?.length || canvasRef.current?.hasContent?.())
-        : null;
+      let inkLevel = null;
+      let inkStats = null;
+      if (sketchAvailable) {
+        try {
+          inkStats = canvasRef.current?.getInkStats?.() || null;
+          inkLevel = inkStats?.level
+            || (canvasRef.current?.hasContent?.() ? 'light' : 'empty');
+        } catch {
+          inkLevel = canvasRef.current?.hasContent?.() ? 'light' : 'empty';
+        }
+        // If we exported an image but stats say empty (race), treat as light at least.
+        if (inkLevel === 'empty' && (canvasDataUrl || canvasPageImages?.length)) {
+          inkLevel = 'light';
+        }
+      }
+      const hadWorkingOut = inkLevel === 'substantial';
+      const hadAnyInk = inkLevel === 'light' || inkLevel === 'substantial';
 
       newResults[currentIdx] = {
         questionId: currentQ?.id || null,
@@ -1078,6 +1092,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         workingOutPages: canvasPageImages,
         sketchAvailable,
         hadWorkingOut,
+        hadAnyInk,
+        inkLevel, // 'empty' | 'light' | 'substantial' | null
+        inkStrokeCount: inkStats?.strokeCount ?? null,
+        inkPathLength: inkStats?.pathLength ?? null,
       };
       return newResults;
     });
@@ -1421,11 +1439,20 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             // when the student only picks answers and never writes working out.
             if (!isAbandoned && displayTotal > 0) {
               const sketchQs = currentAnswerResults.filter((r) => r && r.sketchAvailable === true);
-              const emptyQs = sketchQs.filter((r) => r.hadWorkingOut === false);
+              const levelOf = (r) => r.inkLevel
+                || (r.hadWorkingOut ? 'substantial' : (r.hadAnyInk ? 'light' : 'empty'));
+              const emptyQs = sketchQs.filter((r) => levelOf(r) === 'empty');
+              const lightQs = sketchQs.filter((r) => levelOf(r) === 'light');
+              const substantialQs = sketchQs.filter((r) => levelOf(r) === 'substantial');
+              // "Weak" working out = empty OR light (dots only) — used for soft nags / streak.
+              const weakQs = sketchQs.filter((r) => levelOf(r) !== 'substantial');
               const emptyWorkingOutCount = emptyQs.length;
-              const withWorkingOutCount = sketchQs.filter((r) => r.hadWorkingOut === true).length;
+              const lightWorkingOutCount = lightQs.length;
+              const withWorkingOutCount = substantialQs.length;
+              const weakWorkingOutCount = weakQs.length;
               const emptyAndWrongCount = emptyQs.filter((r) => r.correct === false && !r.isPending).length;
               const emptyAndCorrectCount = emptyQs.filter((r) => r.correct === true).length;
+              const lightAndWrongCount = lightQs.filter((r) => r.correct === false && !r.isPending).length;
               window.dispatchEvent(new CustomEvent('sapere:challenge-result', {
                 detail: {
                   uid: user.uid,
@@ -1437,9 +1464,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   challengeType,
                   sketchQuestionCount: sketchQs.length,
                   emptyWorkingOutCount,
+                  lightWorkingOutCount,
                   withWorkingOutCount,
+                  weakWorkingOutCount,
                   emptyAndWrongCount,
                   emptyAndCorrectCount,
+                  lightAndWrongCount,
                 },
               }));
             }

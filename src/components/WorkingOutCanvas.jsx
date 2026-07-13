@@ -165,6 +165,65 @@ const pageHasInk = (pageStrokes = []) =>
     !stroke?.isEraser && Array.isArray(stroke.points) && stroke.points.length > 0
   );
 
+/**
+ * Ink amount without OCR/AI — stroke count + polyline path length.
+ * Levels:
+ *   empty       — no pen ink
+ *   light       — a dot / short scribble (not real working out)
+ *   substantial — enough ink to look like steps were written
+ *
+ * Thresholds are CSS-pixel path lengths across freehand strokes (eraser ignored).
+ */
+export const analyzeInkPages = (pagesStrokes = []) => {
+  let strokeCount = 0;
+  let pathLength = 0;
+  let pointCount = 0;
+
+  const pages = Array.isArray(pagesStrokes) ? pagesStrokes : [];
+  for (const page of pages) {
+    if (!Array.isArray(page)) continue;
+    for (const stroke of page) {
+      if (stroke?.isEraser || !Array.isArray(stroke?.points) || stroke.points.length === 0) continue;
+      strokeCount += 1;
+      const pts = stroke.points;
+      pointCount += pts.length;
+      for (let i = 1; i < pts.length; i++) {
+        const a = pts[i - 1];
+        const b = pts[i];
+        if (!a || !b) continue;
+        const dx = (Number(b[0]) || 0) - (Number(a[0]) || 0);
+        const dy = (Number(b[1]) || 0) - (Number(a[1]) || 0);
+        pathLength += Math.hypot(dx, dy);
+      }
+      // Single-point tap still counts as a tiny mark.
+      if (pts.length === 1) pathLength += 4;
+    }
+  }
+
+  const roundedLen = Math.round(pathLength);
+  let level = 'empty';
+  if (strokeCount > 0) {
+    // substantial: long total path, or several strokes with some length, or many samples
+    if (
+      roundedLen >= 280
+      || (strokeCount >= 4 && roundedLen >= 120)
+      || pointCount >= 80
+    ) {
+      level = 'substantial';
+    } else {
+      level = 'light';
+    }
+  }
+
+  return {
+    level, // 'empty' | 'light' | 'substantial'
+    strokeCount,
+    pathLength: roundedLen,
+    pointCount,
+    hasContent: level !== 'empty',
+  };
+};
+
 const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isGraph: isGraphProp, onPageChange }, ref) => {
   const bgCanvasRef = useRef(null);
   const liveCanvasRef = useRef(null);
@@ -873,6 +932,17 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
         const all = [...pages];
         all[currentPage] = getCurrentPageStrokes();
         return all.some(pageHasInk);
+      },
+      /** empty | light | substantial — path-length heuristic, no OCR. */
+      getInkLevel: () => {
+        const all = [...pages];
+        all[currentPage] = getCurrentPageStrokes();
+        return analyzeInkPages(all).level;
+      },
+      getInkStats: () => {
+        const all = [...pages];
+        all[currentPage] = getCurrentPageStrokes();
+        return analyzeInkPages(all);
       },
       exportImage: ({ force = false } = {}) => {
         const pageStrokes = getCurrentPageStrokes();
