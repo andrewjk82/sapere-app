@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { localCache } from '../services/localCacheService';
+import { getCachedSessions, setCachedSessions } from '../utils/sessionsCache';
 import ScheduleLessonModal from './ScheduleLessonModal';
 
 const TIME_OPTIONS = [
@@ -291,11 +292,20 @@ const Schedule = ({ students = [] }) => {
   }, [isMobile, loading]);
 
   // ── Fetch sessions from Firestore ──────────────────────────────────────────
+  // Students: hydrate from localCache first (instant UI, 0 reads), then keep a
+  // single onSnapshot. Snapshot only bills again when docs actually change.
+  // Shared cache is written for FlameBuddy so it never re-queries sessions.
   useEffect(() => {
     if (!user?.uid) return;
 
     let unsub1 = () => {};
-    let unsub2 = () => {};
+
+    const sortSessions = (docs) => docs.sort((a, b) => {
+      const dateA = a.date || '';
+      const dateB = b.date || '';
+      if (dateA !== dateB) return dateA.localeCompare(dateB);
+      return parseTime(a.startTime) - parseTime(b.startTime);
+    });
 
     if (isAdmin) {
       const { startDate, endDate } = getAdminScheduleWindow();
@@ -305,30 +315,29 @@ const Schedule = ({ students = [] }) => {
         where('date', '<=', endDate)
       );
       unsub1 = onSnapshot(q, (snap) => {
-        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setSessions(docs.sort((a, b) => {
-          const dateA = a.date || '';
-          const dateB = b.date || '';
-          if (dateA !== dateB) return dateA.localeCompare(dateB);
-          return parseTime(a.startTime) - parseTime(b.startTime);
-        }));
+        const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+        setSessions(docs);
         setLoading(false);
       }, (err) => {
         console.error('Firestore error:', err);
         setLoading(false);
       });
     } else {
+      // Paint from cache immediately — no network.
+      const cached = getCachedSessions(user.uid);
+      if (cached?.sessions?.length) {
+        setSessions(sortSessions([...cached.sessions]));
+        setLoading(false);
+      }
+
       const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
 
       unsub1 = onSnapshot(qId, (snap) => {
-        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setSessions(docs.sort((a, b) => {
-          const dateA = a.date || '';
-          const dateB = b.date || '';
-          if (dateA !== dateB) return dateA.localeCompare(dateB);
-          return parseTime(a.startTime) - parseTime(b.startTime);
-        }));
+        const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+        setSessions(docs);
         setLoading(false);
+        // Persist for FlameBuddy / next visit. Skips write if fingerprint unchanged.
+        setCachedSessions(user.uid, docs);
       }, (err) => {
         console.error('Firestore session query error:', err);
         setLoading(false);

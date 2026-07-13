@@ -10,6 +10,12 @@ import { db } from '../firebase/config';
 import { localCache } from '../services/localCacheService';
 import { getDueCount } from '../utils/secretNote';
 import { normalizeSubjectLabel } from '../utils/subjectLabels';
+import {
+  getCachedSessions,
+  setCachedSessions,
+  pickNextSession,
+  SESSIONS_CACHE_EVENT,
+} from '../utils/sessionsCache';
 import './FlameBuddy.css';
 
 /**
@@ -686,23 +692,6 @@ const practiceStageForHour = (hour) => {
   return 6;
 };
 
-const parseSessionStartMs = (s) => {
-  try {
-    if (!s?.date || !s?.startTime) return 0;
-    const timeMatch = String(s.startTime).match(/(\d+):(\d+)\s*(AM|PM)/i);
-    if (!timeMatch) return new Date(`${s.date}T12:00:00`).getTime();
-    let hours = parseInt(timeMatch[1], 10);
-    const minutes = parseInt(timeMatch[2], 10);
-    const period = timeMatch[3].toUpperCase();
-    if (period === 'PM' && hours !== 12) hours += 12;
-    if (period === 'AM' && hours === 12) hours = 0;
-    const [y, m, d] = s.date.split('-').map(Number);
-    return new Date(y, m - 1, d, hours, minutes).getTime();
-  } catch {
-    return 0;
-  }
-};
-
 /** "Today · 3:30 PM" / "Tomorrow · …" / "Wed · 22 Jul · 3:30 PM" — easy to scan. */
 const friendlyWhen = (dateStr, startTime) => {
   if (!dateStr) return startTime || 'soon';
@@ -1197,49 +1186,49 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     refreshTasks();
   }, [refreshTasks, activeTab]);
 
-  // Next class + homework (for Schedule-tab coaching). Cached for the day.
+  // Next class + homework — prefer shared local sessions cache (filled by Schedule
+  // onSnapshot). Network only if cache is empty (first visit / cleared storage).
+  // No re-fetch on every tab change — that was 100+ reads for heavy students.
   useEffect(() => {
     if (!uid) return undefined;
+
+    const applyFromCache = () => {
+      const cached = getCachedSessions(uid);
+      if (!cached?.sessions) return false;
+      const next = pickNextSession(cached.sessions);
+      setNextSession(next);
+      return true;
+    };
+
+    applyFromCache();
+
+    const onCacheUpdated = (e) => {
+      if (e?.detail?.uid && e.detail.uid !== uid) return;
+      applyFromCache();
+    };
+    window.addEventListener(SESSIONS_CACHE_EVENT, onCacheUpdated);
+
     let cancelled = false;
-    const cacheKey = `flame-buddy-next-session-v1-${uid}`;
-    const cached = localCache.get(cacheKey);
-    if (cached?.date === today && cached.session !== undefined) {
-      setNextSession(cached.session || null);
-      // Still refresh in background when opening Schedule so homework flags stay fresh.
-      if (activeTab !== 'Schedule') return undefined;
+    if (!getCachedSessions(uid)) {
+      (async () => {
+        try {
+          // One-shot bootstrap only. Schedule will keep the cache fresh thereafter.
+          const snap = await getDocs(query(collection(db, 'sessions'), where('studentId', '==', uid)));
+          if (cancelled) return;
+          const docs = snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+          setCachedSessions(uid, docs);
+          setNextSession(pickNextSession(docs));
+        } catch (e) {
+          console.warn('[FlameBuddy] session bootstrap failed:', e?.code || e);
+        }
+      })();
     }
 
-    (async () => {
-      try {
-        const snap = await getDocs(query(collection(db, 'sessions'), where('studentId', '==', uid)));
-        if (cancelled) return;
-        const now = Date.now();
-        const upcoming = snap.docs
-          .map((d) => ({ id: d.id, ...d.data() }))
-          .filter((s) => parseSessionStartMs(s) > now)
-          .sort((a, b) => parseSessionStartMs(a) - parseSessionStartMs(b));
-        const next = upcoming[0] || null;
-        // Keep only the fields we speak about (small cache payload).
-        const slim = next
-          ? {
-              id: next.id,
-              date: next.date || '',
-              startTime: next.startTime || '',
-              endTime: next.endTime || '',
-              subject: next.subject || '',
-              homework: next.homework || '',
-              isHomeworkCompleted: Boolean(next.isHomeworkCompleted),
-            }
-          : null;
-        setNextSession(slim);
-        localCache.set(cacheKey, { date: today, session: slim });
-      } catch (e) {
-        console.warn('[FlameBuddy] session fetch failed:', e?.code || e);
-      }
-    })();
-
-    return () => { cancelled = true; };
-  }, [uid, today, activeTab]);
+    return () => {
+      cancelled = true;
+      window.removeEventListener(SESSIONS_CACHE_EVENT, onCacheUpdated);
+    };
+  }, [uid]);
 
   // Recent performance for Challenge-tab briefing (last 7 daily_stats, slim fields).
   useEffect(() => {
