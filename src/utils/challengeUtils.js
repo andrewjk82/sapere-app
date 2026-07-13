@@ -185,6 +185,10 @@ export const getChallengeMaxXp = (type, hasCalculationTest = true) => {
   return hasCalculationTest ? 50 : 100;
 };
 
+/**
+ * XP from question accuracy (fully correct questions / assigned count).
+ * Multi-part items are all-or-nothing — do NOT pass sub-question point totals.
+ */
 export const getEarnedXp = (earnedScore, total, type, hasCalculationTest = true) => {
   const safeTotal = Number(total) || 0;
   if (safeTotal <= 0) return 0;

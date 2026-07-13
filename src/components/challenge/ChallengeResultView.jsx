@@ -69,9 +69,8 @@ const ChallengeResultView = ({
   streakDays = null,
   userName = '',
   recommendations = null,
-  // When the headline score is shown question-based (score/totalPossibleScore
-  // are question counts), pass the point-based XP here so the XP figure still
-  // reflects per-part marking instead of being recomputed from question counts.
+  // Optional XP override (same question-ratio formula as finishQuiz). Kept so
+  // the parent can pass the already-computed session XP if needed.
   xpEarnedOverride = null,
 }) => {
   const isAbandoned =

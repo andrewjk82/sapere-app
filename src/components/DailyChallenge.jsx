@@ -1238,8 +1238,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         const assignedTopics = Array.isArray(studentProfile?.assignedTopics) ? studentProfile.assignedTopics : [];
         // Pass hasCalculationTest so a daily-only student earns the full 100 XP
         // (50 XP only applies when the student also has the calculation test).
+        // XP uses QUESTION ratio (fully-correct items / assigned count), not
+        // sub-question points — multi-part is all-or-nothing for both score and XP.
         const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
-        const xpEarned = getEarnedXp(actualScore, totalPossibleScore, challengeType, hasCalculationTest);
+        const xpEarned = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
         const resultStats = summarizeResults(currentAnswerResults);
         const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle', 'topicCode');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
@@ -2151,7 +2153,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   answerResults={answerResults}
                   score={resultQuestionsCorrect}
                   totalPossibleScore={TOTAL_QUESTIONS}
-                  xpEarnedOverride={getEarnedXp(score, totalPossibleScore, challengeType, hasCalculationTest)}
+                  xpEarnedOverride={getEarnedXp(resultQuestionsCorrect, TOTAL_QUESTIONS, challengeType, hasCalculationTest)}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   challengeType={challengeType}
                   challengeBlueprint={CHALLENGE_BLUEPRINT}
