@@ -58,6 +58,48 @@ const writeLocalWatermark = (uid, dateKey, stamp) => {
   } catch { /* ignore */ }
 };
 
+// ── Celebration modal (local only — zero Firebase) ─────────────────────────
+// After a successful award (or if award already landed but modal not seen),
+// we keep a small payload in localStorage and show a Ghibli-style card on login.
+const celebrationKey = (uid) => `sapere:sn-clear-celebration:${uid || 'anon'}`;
+
+export function queueSecretNoteClearCelebration(uid, payload) {
+  if (!uid || !payload) return;
+  try {
+    localStorage.setItem(celebrationKey(uid), JSON.stringify({
+      xp: Number(payload.xp) || 0,
+      dateKey: payload.dateKey || '',
+      dailyOnly: !!payload.dailyOnly,
+      claimDaily: !!payload.claimDaily,
+      claimCalc: !!payload.claimCalc,
+      queuedAt: Date.now(),
+    }));
+  } catch { /* ignore */ }
+  try {
+    window.dispatchEvent(new CustomEvent('sapere:sn-clear-celebration', {
+      detail: { uid, ...(payload || {}) },
+    }));
+  } catch { /* ignore */ }
+}
+
+export function peekSecretNoteClearCelebration(uid) {
+  if (!uid) return null;
+  try {
+    const raw = localStorage.getItem(celebrationKey(uid));
+    if (!raw) return null;
+    const p = JSON.parse(raw);
+    if (!p || !(Number(p.xp) > 0)) return null;
+    return p;
+  } catch {
+    return null;
+  }
+}
+
+export function dismissSecretNoteClearCelebration(uid) {
+  if (!uid) return;
+  try { localStorage.removeItem(celebrationKey(uid)); } catch { /* ignore */ }
+}
+
 /**
  * Compute pending bonus for YESTERDAY only (after that day's midnight).
  * Notes must be empty at check time (first open after midnight).
@@ -208,6 +250,14 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
       daily: stamp.daily || plan.claimDaily || plan.claimDailyOnly,
       calc: stamp.calc || plan.claimCalc,
       dailyOnly: stamp.dailyOnly || plan.claimDailyOnly,
+    });
+    // Local-only UI queue — modal on login / same session (no extra Firebase).
+    queueSecretNoteClearCelebration(uid, {
+      xp: awardedXp,
+      dateKey: plan.dateKey,
+      dailyOnly: plan.claimDailyOnly,
+      claimDaily: plan.claimDaily,
+      claimCalc: plan.claimCalc,
     });
     return { awarded: true, xp: awardedXp, dateKey: plan.dateKey };
   }

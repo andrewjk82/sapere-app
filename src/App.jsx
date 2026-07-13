@@ -87,6 +87,7 @@ import Signup from './pages/Signup';
 import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import FlameBuddy from './components/FlameBuddy';
+import SecretNoteClearModal from './components/SecretNoteClearModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
 import { doc, getDoc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
@@ -472,11 +473,8 @@ function App() {
             markTeacherApprovalsApplied(user.uid, pending);
             if (n > 0) {
               showToast(`Your teacher approved ${n} Secret Note answer${n === 1 ? '' : 's'} — mastered! 🎉`, 'success');
-              tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
-                if (r?.awarded && r.xp > 0) {
-                  showToast(`Secret Note clear bonus (+${r.xp} XP) for keeping notes empty ✨`, 'success');
-                }
-              }).catch(() => {});
+              // Midnight-settled bonus queues a local celebration modal (no toast).
+              tryAwardSecretNoteClearBonus(user.uid, data).catch(() => {});
             }
           }
           // Intentionally no clear.secretNoteApprovals — local applied set is enough.
@@ -492,12 +490,8 @@ function App() {
           if (resetAt > lastApplied) {
             applySecretNoteReset(user.uid, kinds, resetAt);
             showToast('Your teacher reset your Secret Notebook.', 'info');
-            // Bonus is midnight-settled for the previous day — probe is cheap no-op same day.
-            tryAwardSecretNoteClearBonus(user.uid, data).then((r) => {
-              if (r?.awarded && r.xp > 0) {
-                showToast(`Secret Note clear bonus (+${r.xp} XP) for keeping notes empty ✨`, 'success');
-              }
-            }).catch(() => {});
+            // Midnight-settled bonus → local celebration modal if eligible (0–1 write).
+            tryAwardSecretNoteClearBonus(user.uid, data).catch(() => {});
           }
         }
         if (Array.isArray(examApprovals) && examApprovals.length) {
@@ -1316,6 +1310,18 @@ function App() {
           activeTab={activeTab}
           setActiveTab={handleTabChange}
           hidden={!!examInProgress}
+        />
+      )}
+
+      {/* Secret-Note clear bonus — local celebration only (no extra Firebase). */}
+      {!isAdmin && user?.uid && !examInProgress && (
+        <SecretNoteClearModal
+          uid={user.uid}
+          firstName={
+            (profile || sharedProfile)?.firstName
+            || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
+            || ''
+          }
         />
       )}
 
