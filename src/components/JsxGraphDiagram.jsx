@@ -227,8 +227,8 @@ const JsxGraphDiagram = ({ data, style }) => {
               }
             }
 
-            // Label Origin (O) once — only when axis labels are enabled
-            if (showAxisLabels && (isXAxis || isYAxis) && !board._originLabeled) {
+            // Label Origin (O) once — only on 2D planes, not on narrow 1D number lines (where dy < 3)
+            if (showAxisLabels && (isXAxis || isYAxis) && !board._originLabeled && dy >= 3) {
               board._originLabeled = true;
               // Origin label positioned slightly down-left of (0,0)
               board.create('text', [-dx * 0.03, -dy * 0.04, 'O'], {
