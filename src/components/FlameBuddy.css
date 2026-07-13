@@ -377,25 +377,30 @@
   height: 25px;
 }
 
+/* Soft friendly eyes — warm cocoa, bright catchlight (not solid black voids). */
 .fb-eye {
   position: absolute;
   top: 5px;
-  width: 7px;
-  height: 7px;
-  background: radial-gradient(circle at 35% 30%, #4a2e14 0%, #2a1607 70%, #1a0c04 100%);
+  width: 6px;
+  height: 6px;
+  background:
+    radial-gradient(circle at 32% 28%, #fff8e8 0 22%, transparent 24%),
+    radial-gradient(circle at 48% 52%, #6b3f1a 0 42%, #4a2a10 70%, #3a2010 100%);
   border-radius: 50%;
-  box-shadow: 0 0 3px rgba(255, 150, 40, 0.5);
+  box-shadow: 0 0 2px rgba(255, 180, 80, 0.35);
   animation: fb-blink 2.8s ease-in-out infinite;
 }
 
 .fb-eye .fb-highlight {
   position: absolute;
-  top: 1px;
-  left: 1px;
-  width: 2px;
-  height: 2px;
-  background: #fff3d6;
+  top: 0.5px;
+  left: 0.5px;
+  width: 2.2px;
+  height: 2.2px;
+  background: #fffdf5;
   border-radius: 50%;
+  box-shadow: 0.8px 1px 0 0 rgba(255, 255, 255, 0.55);
+  opacity: 0.95;
 }
 
 .fb-eyeL { left: 19px; }
@@ -447,10 +452,18 @@
 .fb-flame.thinking .fb-glow .fb-flamePath { fill: url(#fb-thinkOuterGrad); }
 .fb-flame.thinking .fb-inner .fb-flamePath { fill: url(#fb-thinkInnerGrad); }
 .fb-flame.thinking .fb-mouth {
+  width: 7px;
+  height: 3px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(50, 40, 30, 0.45);
+  border-radius: 0 0 8px 8px;
+  animation: none;
+}
+.fb-flame.thinking .fb-eye {
+  /* keep base cute eyes — no oversized dark orbs */
   width: 6px;
   height: 6px;
-  background: rgba(20, 40, 60, 0.5);
-  animation: fb-pursedMouth 1.2s ease-in-out infinite;
 }
 .fb-flame.thinking { animation: fb-tiltFlame 3s ease-in-out infinite; transform-origin: 50% 100%; }
 
@@ -467,10 +480,17 @@
 .fb-flame.urgent .fb-glow .fb-flamePath { fill: url(#fb-urgentOuterGrad); }
 .fb-flame.urgent .fb-inner .fb-flamePath { fill: url(#fb-urgentInnerGrad); }
 .fb-flame.urgent .fb-mouth {
-  width: 7px;
-  height: 7px;
-  background: rgba(60, 10, 10, 0.7);
-  animation: fb-worryMouth 0.25s ease-in-out infinite;
+  width: 8px;
+  height: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(80, 30, 20, 0.5);
+  border-radius: 0 0 10px 10px;
+  animation: none;
+}
+.fb-flame.urgent .fb-eye {
+  width: 6px;
+  height: 6px;
 }
 
 @keyframes fb-shakeFlame {
@@ -484,8 +504,17 @@
 .fb-flame.cheer .fb-outer .fb-flamePath,
 .fb-flame.cheer .fb-glow .fb-flamePath { fill: url(#fb-cheerOuterGrad); }
 .fb-flame.cheer .fb-inner .fb-flamePath { fill: url(#fb-cheerInnerGrad); }
+.fb-flame.cheer .fb-eye {
+  width: 6px;
+  height: 6px;
+}
 .fb-flame.cheer .fb-mouth {
-  background: rgba(30, 14, 8, 0.7);
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid rgba(60, 30, 15, 0.55);
+  border-radius: 0 0 10px 10px;
+  width: 10px;
+  height: 4px;
   animation: fb-cheerMouth 0.7s ease-in-out infinite;
 }
 
@@ -513,12 +542,12 @@
 }
 
 @keyframes fb-cheerMouth {
-  0%, 100% { width: 11px; height: 4px; border-radius: 0 0 10px 10px; }
-  40%, 60% { width: 16px; height: 11px; border-radius: 0 0 14px 14px; }
-  80% { width: 18px; height: 3px; border-radius: 0 0 8px 8px; }
+  0%, 100% { width: 10px; height: 4px; border-radius: 0 0 10px 10px; border-bottom-width: 2.5px; }
+  40%, 60% { width: 12px; height: 5px; border-radius: 0 0 12px 12px; border-bottom-width: 2.5px; }
+  80% { width: 11px; height: 3px; border-radius: 0 0 8px 8px; border-bottom-width: 2px; }
 }
 
-/* hint */
+/* hint — soft gold flame, still cute eyes (not giant black dots) */
 .fb-flame.hint .fb-outer .fb-flamePath,
 .fb-flame.hint .fb-glow .fb-flamePath { fill: url(#fb-hintOuterGrad); }
 .fb-flame.hint .fb-inner .fb-flamePath { fill: url(#fb-hintInnerGrad); }
@@ -527,22 +556,19 @@
   background: radial-gradient(circle, rgba(255, 225, 120, 0.5) 0%, rgba(255, 210, 80, 0.18) 45%, rgba(255, 210, 80, 0) 72%);
 }
 .fb-flame.hint .fb-eye {
-  width: 11px;
-  height: 11px;
-  box-shadow: 0 0 7px rgba(255, 220, 120, 0.85);
-  animation: fb-blinkRare 2.4s ease-in-out infinite;
+  width: 6.5px;
+  height: 6.5px;
+  box-shadow: 0 0 3px rgba(255, 200, 100, 0.4);
+  animation: fb-blink 2.8s ease-in-out infinite;
 }
 .fb-flame.hint .fb-mouth {
-  width: 7px;
-  height: 7px;
-  background: rgba(70, 45, 10, 0.55);
-  border-radius: 50%;
-  animation: fb-ahaMouth 1.6s ease-in-out infinite;
-}
-
-@keyframes fb-ahaMouth {
-  0%, 100% { transform: translateX(-50%) scale(1); }
-  50% { transform: translateX(-50%) scale(1.15); }
+  width: 9px;
+  height: 4px;
+  background: transparent;
+  border: none;
+  border-bottom: 2.5px solid rgba(70, 45, 15, 0.5);
+  border-radius: 0 0 10px 10px;
+  animation: none;
 }
 
 .fb-sparkle {
@@ -600,10 +626,15 @@
     width: 50px;
     height: 20px;
   }
-  .fb-eye { width: 6px; height: 6px; top: 4px; }
+  .fb-eye { width: 5px; height: 5px; top: 4px; }
+  .fb-eye .fb-highlight { width: 1.8px; height: 1.8px; }
   .fb-eyeL { left: 15px; }
   .fb-eyeR { left: 29px; }
   .fb-mouth { top: 12px; width: 7px; height: 2px; }
+  .fb-flame.hint .fb-eye,
+  .fb-flame.thinking .fb-eye,
+  .fb-flame.urgent .fb-eye,
+  .fb-flame.cheer .fb-eye { width: 5px; height: 5px; }
   .fb-stage { height: 70px; }
   .fb-aura { width: 68px; height: 68px; }
   .fb-shadow { width: 30px; height: 7px; }
