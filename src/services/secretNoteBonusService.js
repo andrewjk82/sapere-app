@@ -100,6 +100,33 @@ export function dismissSecretNoteClearCelebration(uid) {
   try { localStorage.removeItem(celebrationKey(uid)); } catch { /* ignore */ }
 }
 
+/** Teacher/admin design QA — open celebration modal without awarding XP. */
+export const SN_CLEAR_PREVIEW_EVENT = 'sapere:sn-clear-preview';
+
+export function buildSecretNoteClearPreviewPayload(overrides = {}) {
+  return {
+    xp: Number(overrides.xp) > 0 ? Number(overrides.xp) : 10,
+    dateKey: overrides.dateKey || new Date().toLocaleDateString('en-CA'),
+    dailyOnly: overrides.dailyOnly !== false,
+    claimDaily: overrides.claimDaily !== false,
+    claimCalc: !!overrides.claimCalc,
+    // Bust React identity so re-clicks reopen the modal.
+    _previewAt: Date.now(),
+  };
+}
+
+/**
+ * Ask App to show SecretNoteClearModal in force-preview mode.
+ * Local UI only — no Firebase / no XP.
+ */
+export function requestSecretNoteClearModalPreview(overrides = {}) {
+  const sample = buildSecretNoteClearPreviewPayload(overrides);
+  try {
+    window.dispatchEvent(new CustomEvent(SN_CLEAR_PREVIEW_EVENT, { detail: sample }));
+  } catch { /* ignore */ }
+  return sample;
+}
+
 /**
  * Compute pending bonus for YESTERDAY only (after that day's midnight).
  * Notes must be empty at check time (first open after midnight).

@@ -104,7 +104,8 @@ import {
 } from './utils/secretNote';
 import {
   tryAwardSecretNoteClearBonus,
-  queueSecretNoteClearCelebration,
+  SN_CLEAR_PREVIEW_EVENT,
+  buildSecretNoteClearPreviewPayload,
 } from './services/secretNoteBonusService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
@@ -367,31 +368,18 @@ function App() {
     }
   }, []);
 
-  // One-time design preview for teachers — React state (reliable, no event race).
-  // Local only; no XP / Firebase. Stays up until dismiss (then session flag).
+  // Teacher/admin design QA — open via Settings button (no auto-popup, no XP).
   const [snClearDesignPreview, setSnClearDesignPreview] = useState(null);
   useEffect(() => {
-    if (!user?.uid) return undefined;
-    const teacher =
-      isAdmin === true
-      || sharedProfile?.role === 'admin'
-      || sharedProfile?.role === 'teacher';
-    if (!teacher) return undefined;
-    const flag = 'sapere:sn-clear-modal-teacher-preview-v5';
-    try {
-      if (sessionStorage.getItem(flag) === 'dismissed') return undefined;
-    } catch { /* ignore */ }
-    const sample = {
-      xp: 10,
-      dateKey: new Date().toLocaleDateString('en-CA'),
-      dailyOnly: true,
-      claimDaily: true,
-      claimCalc: false,
+    const onPreview = (e) => {
+      const sample = e?.detail && Number(e.detail.xp) > 0
+        ? e.detail
+        : buildSecretNoteClearPreviewPayload();
+      setSnClearDesignPreview(sample);
     };
-    setSnClearDesignPreview(sample);
-    queueSecretNoteClearCelebration(user.uid, sample);
-    return undefined;
-  }, [isAdmin, user?.uid, sharedProfile?.role]);
+    window.addEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
+    return () => window.removeEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
+  }, []);
 
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
@@ -1343,7 +1331,7 @@ function App() {
       )}
 
       {/* Secret-Note clear bonus — local celebration only (no extra Firebase).
-          Teachers get forcePayload once for design review. */}
+          Teachers/admins can force-open via Settings → Preview button. */}
       {user?.uid && !examInProgress && (
         <SecretNoteClearModal
           uid={user.uid}
@@ -1355,10 +1343,7 @@ function App() {
           currentXP={Number((profile || sharedProfile)?.totalXP) || 0}
           isPreview={Boolean(snClearDesignPreview)}
           forcePayload={snClearDesignPreview}
-          onForceDismiss={() => {
-            setSnClearDesignPreview(null);
-            try { sessionStorage.setItem('sapere:sn-clear-modal-teacher-preview-v5', 'dismissed'); } catch { /* ignore */ }
-          }}
+          onForceDismiss={() => setSnClearDesignPreview(null)}
         />
       )}
 

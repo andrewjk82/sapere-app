@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
-import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera } from 'lucide-react';
+import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera, Sparkles } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
@@ -7,6 +7,7 @@ import { db, requestNotificationPermission } from '../firebase/config';
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
+import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
@@ -527,6 +528,45 @@ const Settings = () => {
               </div>
             </div>
           </section>
+
+          {(isAdmin || profile?.role === 'admin' || profile?.role === 'teacher') && (
+            <section className="app-panel page-card" style={{ marginTop: '24px', border: '1px solid #fde68a' }}>
+              <div className="page-card__header">
+                <h3 style={{ color: '#92400e' }}>Design QA</h3>
+                <span className="page-pill" style={{ background: '#fffbeb', color: '#92400e' }}>Teacher</span>
+              </div>
+              <div style={{ marginTop: '16px' }}>
+                <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '14px', lineHeight: 1.45 }}>
+                  Preview the Secret Note clear celebration modal. Local only — no XP is awarded and nothing is written to Firebase.
+                </p>
+                <button
+                  type="button"
+                  className="app-button app-button--secondary"
+                  onClick={() => {
+                    requestSecretNoteClearModalPreview({ xp: 10, dailyOnly: true, claimDaily: true, claimCalc: false });
+                    showToast('Secret Note clear modal opened (preview).', 'info');
+                  }}
+                  style={{
+                    width: '100%',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: 8,
+                    padding: '14px',
+                    borderRadius: 16,
+                    fontWeight: 800,
+                    border: '1px solid #fbbf24',
+                    background: 'linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%)',
+                    color: '#92400e',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <Sparkles size={16} />
+                  Preview Secret Note clear modal
+                </button>
+              </div>
+            </section>
+          )}
 
           {isAdmin && (
             <section className="app-panel page-card" style={{ marginTop: '24px', border: '1px solid #fee2e2' }}>
