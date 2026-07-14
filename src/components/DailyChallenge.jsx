@@ -749,15 +749,21 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
 
     // Shuffle multiple-choice options.
     // For isManual questions the answer is stored as an option index ("0","1"…).
+    // Seeds often use `a` instead of `answer` — accept both.
     // We normalise it to the option text before shuffling so text-matching still works.
     const opts = getOptions(q);
     if (opts.length > 1 && q.type !== 'short_answer' && q.type !== 'graph_sketch' && !q.subQuestions?.length) {
-      let normalizedAnswer = q.answer;
-      if (q.isManual) {
-        const answerIdx = parseInt(String(q.answer), 10);
+      const rawKey = q.answer ?? q.a;
+      let normalizedAnswer = rawKey;
+      if (q.isManual || (rawKey !== undefined && rawKey !== null && /^\d+$/.test(String(rawKey).trim()))) {
+        const answerIdx = parseInt(String(rawKey), 10);
         if (!isNaN(answerIdx) && opts[answerIdx] !== undefined) {
           normalizedAnswer = getOptionText(opts[answerIdx]);
         }
+      }
+      // Ensure grading can fall back to index if text match fails.
+      if (q.answer === undefined || q.answer === null || q.answer === '') {
+        q.answer = rawKey !== undefined && rawKey !== null ? rawKey : q.answer;
       }
       // Fisher-Yates shuffle
       const indices = opts.map((_, i) => i);
@@ -1035,13 +1041,31 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       if (correct) setScore(prev => prev + 1);
     } else {
       // Use _shuffledAnswer (text-normalised) if options were shuffled, else original answer.
-      const effectiveAnswer = currentQ._shuffledAnswer !== undefined ? currentQ._shuffledAnswer : currentQ.answer;
+      // Seeds often store the key only in `a` (index) without `answer`.
+      const rawKey = currentQ.answer ?? currentQ.a;
+      const effectiveAnswer = currentQ._shuffledAnswer !== undefined
+        ? currentQ._shuffledAnswer
+        : rawKey;
       // 1. Text match against (possibly normalised) answer
       const isTextMatch = answersMatch(optionText, effectiveAnswer);
-      // 2. Fallback index match for non-shuffled isManual questions
-      const isIndexMatch = currentQ._shuffledAnswer === undefined && optIdx !== null && String(currentQ.answer) === String(optIdx);
+      // 2. Fallback index match for non-shuffled questions keyed by index
+      const isIndexMatch = currentQ._shuffledAnswer === undefined
+        && optIdx !== null
+        && rawKey !== undefined
+        && rawKey !== null
+        && String(rawKey) === String(optIdx);
+      // 3. If rawKey is a numeric index but options were shuffled, resolve to text
+      //    once more (covers cases where setupQuestion never set _shuffledAnswer).
+      let isResolvedIndexText = false;
+      if (!isTextMatch && !isIndexMatch && rawKey !== undefined && rawKey !== null) {
+        const idx = parseInt(String(rawKey), 10);
+        const optsNow = getOptions(currentQ);
+        if (!isNaN(idx) && optsNow[idx] !== undefined) {
+          isResolvedIndexText = answersMatch(optionText, getOptionText(optsNow[idx]));
+        }
+      }
 
-      correct = isTextMatch || isIndexMatch;
+      correct = isTextMatch || isIndexMatch || isResolvedIndexText;
       if (correct) setScore(prev => prev + 1);
     }
 

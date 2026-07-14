@@ -180,7 +180,17 @@ const removeDataUrl = (value) =>
     ? ""
     : value;
 
-const slimQuestion = (data) => ({
+const slimQuestion = (data) => {
+  // Seeds/Firestore often store MC keys as `a` (index) without `answer`.
+  // Grading + option shuffle only read `answer` — copy `a` across or students
+  // who pick the correct choice (e.g. 370.802) are marked wrong.
+  let answer = data.answer;
+  if (answer === undefined || answer === null || answer === '') {
+    if (data.a !== undefined && data.a !== null && data.a !== '') {
+      answer = data.a;
+    }
+  }
+  return {
   id: data.id,
   type: data.type || "manual",
   question: data.question || "",
@@ -190,7 +200,8 @@ const slimQuestion = (data) => ({
       ? { ...option, imageUrl: removeDataUrl(option.imageUrl || option.image || "") }
       : String(option)
   )),
-  answer: data.answer,
+  answer,
+  a: data.a,
   solution: data.solution || "",
   solutionSteps: Array.isArray(data.solutionSteps) ? data.solutionSteps : [],
   hint: data.hint || "",
@@ -210,7 +221,8 @@ const slimQuestion = (data) => ({
   blanks: Array.isArray(data.blanks) ? data.blanks : [],
   requiresManualGrading: data.requiresManualGrading === true,
   isManual: data.isManual !== false,
-});
+};
+};
 
 // Fisher-Yates — the old `sort(() => Math.random() - 0.5)` is biased and
 // leaves much of the input order intact, which (combined with Firestore's
