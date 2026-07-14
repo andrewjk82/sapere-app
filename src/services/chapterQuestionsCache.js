@@ -20,7 +20,10 @@
 
 import {
   collection, query, where, getDocs, getDoc, doc,
-} from 'firebase/firestore';
+} from '../firebase/firestoreWrapper';
+// Raw getDocs for chapter bulk fetch — we tag reads ourselves with chapterId
+// so TrafficMonitor hotspots stay meaningful (wrapper only sees pathname).
+import { getDocs as getDocsRaw } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { trackRead } from './trafficTrackerService';
 
@@ -117,12 +120,12 @@ const writeCache = (uid, chapterId, questions, membershipVersion) => {
 const fetchFromFirestore = async (chapterId) => {
   const isExam = chapterId?.startsWith('exam:');
   const examPaperKey = isExam ? chapterId.replace('exam:', '') : null;
-  const snap = await getDocs(
+  const snap = await getDocsRaw(
     isExam
       ? query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
       : query(collection(db, 'questions'), where('chapterId', '==', chapterId)),
   );
-  trackRead(snap.size, `questions_fetch:${chapterId}`);
+  trackRead(snap.size || 1, `questions_fetch:${chapterId}`);
   return snap.docs
     .map((d) => ({ id: d.id, ...d.data() }))
     .filter((q) => q.isActive !== false);

@@ -8,6 +8,9 @@ import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './
 // spreading the load (avoids email throttling).
 const SIX_PM_BATCH_SIZE = 15;          // evening reminders (5–9 PM window)
 const WEEKLY_REPORT_BATCH_SIZE = 15;   // Sunday weekly reports (1–4 PM window)
+/** Cap per-student retries in the 5–9 PM window so SMTP outages don't re-hit
+ *  the same 24 users every hour with identical user-doc reads. */
+const SIX_PM_MAX_ATTEMPTS = 3;
 const CRON_STARTED_AT = Date.now();
 const CRON_SOFT_LIMIT_MS = 24_000;
 const ADMIN_UID = 'MeohP8s0LkPWSTWgEbzc7uaWVEG2';
@@ -601,11 +604,16 @@ async function processSixPmQueue({
 
   const items = Array.isArray(queue.items) ? queue.items : [];
   const sentIds = new Set(queue.sentIds || []);
+  const failCounts = { ...(queue.failCounts || {}) };
+  const abandonedIds = new Set(queue.abandonedIds || []);
   let sentCount = 0;
 
-  // Retry model: each hourly run targets only students not yet successfully
-  // sent — a student missed at 5pm is retried at 6/7/8/9pm until delivered.
-  const pending = items.filter((it) => it?.studentId && !sentIds.has(it.studentId));
+  // Retry model: each hourly run targets students not yet sent and not abandoned
+  // after SIX_PM_MAX_ATTEMPTS failures (e.g. Gmail 535 during an outage).
+  const pending = items.filter((it) => {
+    if (!it?.studentId || sentIds.has(it.studentId) || abandonedIds.has(it.studentId)) return false;
+    return (failCounts[it.studentId] || 0) < SIX_PM_MAX_ATTEMPTS;
+  });
   const batch = pending.slice(0, SIX_PM_BATCH_SIZE);
 
   const results = await Promise.allSettled(batch.map(async (item) => {
@@ -637,16 +645,27 @@ async function processSixPmQueue({
       }, { merge: true });
 
       sentIds.add(item.studentId);
+      delete failCounts[item.studentId];
       return {
         ok: true,
         item,
         message: `6PM wrap-up sent to ${item.studentName} (email=${result.emailSent}, push=${result.pushSent})`,
       };
     } catch (err) {
+      const n = (failCounts[item.studentId] || 0) + 1;
+      failCounts[item.studentId] = n;
+      if (n >= SIX_PM_MAX_ATTEMPTS) {
+        abandonedIds.add(item.studentId);
+        return {
+          ok: false,
+          item,
+          message: `6PM wrap-up abandoned for ${item.studentName || item.studentId} after ${n} failures: ${err.message}`,
+        };
+      }
       return {
         ok: false,
         item,
-        message: `6PM wrap-up failed for ${item.studentName || item.studentId}: ${err.message}`,
+        message: `6PM wrap-up failed for ${item.studentName || item.studentId} (attempt ${n}/${SIX_PM_MAX_ATTEMPTS}): ${err.message}`,
       };
     }
   }));
@@ -659,10 +678,18 @@ async function processSixPmQueue({
     logs.push(value.message);
   });
 
-  const remaining = items.filter((it) => it?.studentId && !sentIds.has(it.studentId)).length;
+  const remaining = items.filter((it) => (
+    it?.studentId
+    && !sentIds.has(it.studentId)
+    && !abandonedIds.has(it.studentId)
+    && (failCounts[it.studentId] || 0) < SIX_PM_MAX_ATTEMPTS
+  )).length;
+  // Queue is "complete" when nothing left to try (sent or abandoned).
   const complete = remaining === 0;
   await queueRef.set({
     sentIds: Array.from(sentIds),
+    abandonedIds: Array.from(abandonedIds),
+    failCounts,
     sentCount: sentIds.size,
     status: complete ? 'complete' : 'partial',
     lastRunAt: admin.firestore.FieldValue.serverTimestamp(),

@@ -30,7 +30,7 @@ import {
   getDoc,
   setDoc,
   serverTimestamp,
-} from 'firebase/firestore';
+} from '../firebase/firestoreWrapper';
 import { db } from '../firebase/config';
 import { readChapterIndex } from './questionIndexService';
 import { buildDailyTargets, getCurriculumSignature } from './dailyAssignmentService';

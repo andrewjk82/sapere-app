@@ -57,12 +57,14 @@ export const trackApiCall = (page = 'unknown') => {
   scheduleFlush();
 };
 
-/** Schedule buffer flush after 30 seconds of inactivity */
+/** Schedule buffer flush after 30 seconds of inactivity (or sooner if buffer is large). */
 const scheduleFlush = () => {
   if (flushTimeout) return;
+  // Large bursts (chapter re-fetch) flush sooner so traffic_logs capture spikes.
+  const delay = buffer.reads >= 50 ? 5000 : 30000;
   flushTimeout = setTimeout(() => {
     flushBuffer();
-  }, 30000); // 30 seconds interval
+  }, delay);
 };
 
 /** Flush memory buffer to Firestore traffic_logs collection in background */

@@ -17,6 +17,7 @@ import {
 import { notifyTeacherCalcStuck } from './utils/challengeUtils';
 import { playSchoolBell } from './utils/schoolBell';
 import { installButtonFeedback } from './utils/uiFeedback';
+// Side-effect: installs window.__sapereTrafficTracker used by firestoreWrapper.
 import { setTrafficUserContext } from './services/trafficTrackerService';
 
 // 한 페이지 로드당 종소리 1회만 — React StrictMode 이중 마운트/재렌더 방지.

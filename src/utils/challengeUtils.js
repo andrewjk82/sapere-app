@@ -448,16 +448,34 @@ export const notifyTeacherPendingReview = async ({
   }
 };
 
+/**
+ * Drop old daily_stats / calc_stats docs without a full collection scan.
+ * Doc ids are YYYY-MM-DD (Sydney local date keys). We only point-read the
+ * calendar days older than `keep` days and delete those that exist.
+ * Cost: at most ~keep..keep+30 get attempts, never O(all history).
+ */
 export const pruneOldChallengeStats = async (userId, statCollection, keep = MAX_HISTORY_PER_TYPE) => {
-  if (!userId) return;
-  const snap = await getDocs(collection(db, 'users', userId, statCollection));
-  const staleDocs = snap.docs
-    .map(statDoc => ({ ref: statDoc.ref, id: statDoc.id, ...statDoc.data() }))
-    .sort((a, b) => getHistorySortTime(b) - getHistorySortTime(a))
-    .slice(keep);
-
-  if (staleDocs.length === 0) return;
-  await Promise.all(staleDocs.map(item => deleteDoc(item.ref)));
+  if (!userId || !statCollection) return;
+  const keepN = Math.max(1, Math.min(90, Number(keep) || MAX_HISTORY_PER_TYPE));
+  // Probe a modest window beyond `keep` so we gradually drain long histories
+  // without scanning the whole subcollection (was 30–60+ reads per finish).
+  const PROBE_EXTRA = 30;
+  const today = new Date();
+  const deletes = [];
+  for (let daysAgo = keepN; daysAgo < keepN + PROBE_EXTRA; daysAgo += 1) {
+    const d = new Date(today);
+    d.setDate(d.getDate() - daysAgo);
+    const dateKey = d.toLocaleDateString('en-CA'); // YYYY-MM-DD
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) continue;
+    const ref = doc(db, 'users', userId, statCollection, dateKey);
+    try {
+      const snap = await getDoc(ref);
+      if (snap.exists()) deletes.push(deleteDoc(ref));
+    } catch {
+      /* non-fatal */
+    }
+  }
+  if (deletes.length) await Promise.all(deletes);
 };
 
 export const updateAdminDailySummary = async ({

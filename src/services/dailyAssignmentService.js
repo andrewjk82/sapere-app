@@ -12,7 +12,7 @@ import {
   setDoc,
   deleteDoc,
   where,
-} from "firebase/firestore";
+} from "../firebase/firestoreWrapper";
 import { readChapterIndex } from "./questionIndexService";
 import { db } from "../firebase/config";
 import { CURRICULUM_DATA } from "../constants/curriculumData";
@@ -743,6 +743,13 @@ export const createDailyAssignment = async ({
 
   const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid, membershipVersion);
 
+  // Never persist an empty open assignment — readers treat questions:[] as
+  // "needs regen" and re-run the full pool/index path on every open (traffic
+  // amplifier when bank/filter yields 0 MCQs).
+  if (!Array.isArray(questions) || questions.length === 0) {
+    throw new Error("No daily assignment questions were generated.");
+  }
+
   const assignment = {
     date: dateKey,
     status: "open",
@@ -779,6 +786,10 @@ export const prepareNextDailyAssignment = async ({
   const membershipVersion = syncData.membershipVersion ?? questionsVersion;
   const { questions, source } = await buildQuestionsForStudent(studentProfile, resolvedQuestionCount, uid, membershipVersion);
 
+  if (!Array.isArray(questions) || questions.length === 0) {
+    throw new Error("No daily assignment questions were generated.");
+  }
+
   const prepAssignment = {
     date: "next_prep",
     status: "prepared",
@@ -791,6 +802,7 @@ export const prepareNextDailyAssignment = async ({
     // handled separately (questionsVersion + practice_pool signature).
     curriculumSignature: getCurriculumSignature(studentProfile),
     questionsVersion,
+    membershipVersion,
     questionIds: questions.map((question) => question.id).filter(Boolean),
     questions,
     source,
@@ -830,8 +842,13 @@ export const fetchOrCreateDailyAssignment = async ({
     getDoc(doc(db, "sync_meta", "questions")),
   ]);
   const syncData = syncMetaSnap.exists() ? syncMetaSnap.data() : {};
-  // membershipVersion: tracks add/delete only. Falls back to version for backwards compatibility.
-  const latestMembershipVersion = syncData.membershipVersion ?? syncData.version ?? 0;
+  // membershipVersion tracks add/delete only. Prefer it over content `version`
+  // so pure text/option edits do not force every open assignment to regenerate
+  // (and every practice_pool to rebuild). Fall back to version only for legacy
+  // meta docs that never wrote membershipVersion.
+  const latestMembershipVersion = syncData.membershipVersion != null
+    ? Number(syncData.membershipVersion) || 0
+    : (Number(syncData.version) || 0);
 
   if (assignmentSnap.exists()) {
     const assignment = { id: assignmentSnap.id, ...assignmentSnap.data() };
@@ -842,9 +859,12 @@ export const fetchOrCreateDailyAssignment = async ({
     const isLocked = assignment.status === "started" || assignment.status === "completed";
     // Only regenerate if the SET of available questions changed (add/delete),
     // NOT when question content (solutionSteps, LaTeX) was edited.
+    const assignmentMv = assignment.membershipVersion != null
+      ? Number(assignment.membershipVersion) || 0
+      : (Number(assignment.questionsVersion) || 0);
     const membershipStale = !isLocked
       && latestMembershipVersion > 0
-      && latestMembershipVersion > (assignment.membershipVersion || assignment.questionsVersion || 0);
+      && latestMembershipVersion > assignmentMv;
 
     if (isLocked || (hasQuestions && countMatches && signatureMatches && !membershipStale)) {
       const value = { ...assignment, savedAt: Date.now() };

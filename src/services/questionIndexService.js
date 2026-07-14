@@ -112,6 +112,10 @@ const updateIndexIfExists = async (chapterId, fields) => {
 export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) => {
   const chapterIds = [...new Set([...Object.keys(added), ...Object.keys(removed)])].filter(Boolean);
   let indexIncomplete = false;
+  // Only fan-out practice_pool rebuilds when the active ID set actually changed.
+  // Re-seeding identical IDs used to stamp membershipVersion every time and
+  // force every student to rebuild pools + regenerate chapter caches.
+  let membershipChanged = false;
 
   for (const chapterId of chapterIds) {
     const add = [...new Set((added[chapterId] || []).map(String))];
@@ -127,9 +131,12 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
       // trust an existing doc completely. Leave builtVersion behind instead
       // so the doc gets built by a proper full rebuild.
       indexIncomplete = true;
+      // Missing index that needs a full rebuild is a structural change for readers.
+      if (add.length || rem.length) membershipChanged = true;
       continue;
     }
-    let ids = snap.data().ids || [];
+    let ids = (snap.data().ids || []).map(String);
+    const beforeKey = ids.slice().sort().join('\0');
 
     if (rem.length) {
       const remSet = new Set(rem);
@@ -142,6 +149,9 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
       ids = [...idsSet];
     }
 
+    const afterKey = ids.slice().sort().join('\0');
+    if (beforeKey !== afterKey) membershipChanged = true;
+
     await setDoc(docRef, {
       ids,
       count: ids.length,
@@ -149,16 +159,8 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
     }, { merge: true });
   }
 
-  const v = Number(version) || Date.now();
-  // Seeding changes the active-question set → also bump membershipVersion so
-  // students' practice_pool signatures rebuild and pick up added/removed IDs.
-  const writes = [
-    setDoc(questionsVersionRef(), { version: v, membershipVersion: v, updatedAt: serverTimestamp() }, { merge: true }),
-  ];
-  if (!indexIncomplete) {
-    writes.push(setDoc(metaRef(), { builtVersion: v, updatedAt: serverTimestamp() }, { merge: true }));
-  }
-  await Promise.all(writes);
+  // Content/version stamp always; membership only when the ID set changed.
+  await stampVersions(version, membershipChanged, { indexIncomplete });
 };
 
 /** Incremental: a question was created or (re)activated in a chapter. */
@@ -178,21 +180,47 @@ export const removeQuestionFromIndex = async (chapterId, questionId, version) =>
 /**
  * Incremental: a question was saved. Handles chapter moves (remove from the
  * old chapter's index, add to the new one) and active-flag changes.
+ *
+ * Membership (practice_pool fan-out) only bumps when the active ID *set* may
+ * have changed — chapter move, activate, or deactivate. Pure content edits
+ * (same chapter, still active) only bump `version` so chapter text caches
+ * refresh without forcing every student to rebuild pools / daily assignments.
  */
-export const syncQuestionIndexOnSave = async ({ questionId, chapterId, prevChapterId, isActive = true, version }) => {
+export const syncQuestionIndexOnSave = async ({
+  questionId,
+  chapterId,
+  prevChapterId,
+  isActive = true,
+  prevIsActive,
+  version,
+}) => {
   if (!questionId) return;
+  const moved = Boolean(prevChapterId && prevChapterId !== chapterId);
+  // prevIsActive undefined → treat as "was already active" (common content edit).
+  const wasActive = prevIsActive !== false;
+  const nowActive = isActive !== false;
+  const activeToggled = wasActive !== nowActive;
+  const membershipChange = moved || activeToggled;
+
   const ops = [];
-  if (prevChapterId && prevChapterId !== chapterId) {
+  if (moved) {
     ops.push(updateIndexIfExists(prevChapterId, { ids: arrayRemove(String(questionId)) }));
   }
   if (chapterId) {
+    // Content-only saves still touch the index doc (arrayUnion no-op) so
+    // updatedAt moves, but we do not fan-out membership when the set is unchanged.
     ops.push(updateIndexIfExists(chapterId, {
-      ids: isActive !== false ? arrayUnion(String(questionId)) : arrayRemove(String(questionId)),
+      ids: nowActive ? arrayUnion(String(questionId)) : arrayRemove(String(questionId)),
     }));
   }
   if (ops.length) {
     const results = await Promise.all(ops);
-    await stampVersions(version, true, { indexIncomplete: results.some((existed) => !existed) });
+    await stampVersions(version, membershipChange, {
+      indexIncomplete: results.some((existed) => !existed),
+    });
+  } else if (version != null) {
+    // No index ops — still stamp content version so clients refetch text.
+    await stampVersions(version, false);
   }
 };
 
@@ -213,8 +241,25 @@ export const rebuildAllQuestionIndexes = async () => {
     byChapter[chapterId].push(d.id);
   });
 
-  // Batched writes (500/batch limit)
+  // Detect whether the active ID sets actually changed vs existing indexes.
+  // A no-op rebuild (same IDs) must not bump membershipVersion — that was a
+  // major traffic spike source when admin tools re-stamped the bank.
+  let membershipChanged = false;
   const entries = Object.entries(byChapter);
+  const existingSnaps = await Promise.all(
+    entries.map(([chapterId]) => getDoc(indexRef(chapterId)).catch(() => null)),
+  );
+  existingSnaps.forEach((s, i) => {
+    if (!s?.exists()) {
+      membershipChanged = true;
+      return;
+    }
+    const oldKey = (s.data().ids || []).map(String).slice().sort().join('\0');
+    const newKey = (entries[i][1] || []).map(String).slice().sort().join('\0');
+    if (oldKey !== newKey) membershipChanged = true;
+  });
+
+  // Batched writes (500/batch limit)
   for (let i = 0; i < entries.length; i += 400) {
     const batch = writeBatch(db);
     entries.slice(i, i + 400).forEach(([chapterId, ids]) => {
@@ -226,17 +271,25 @@ export const rebuildAllQuestionIndexes = async () => {
     });
     await batch.commit();
   }
-  await stampVersions(undefined, true);
+  await stampVersions(undefined, membershipChanged);
   return entries.length;
 };
 
 /** Rebuild a single chapter's index from a fresh chapter scan. */
 export const rebuildChapterIndex = async (chapterId) => {
   if (!chapterId) return 0;
-  const snap = await getDocs(query(collection(db, 'questions'), where('chapterId', '==', chapterId)));
+  const [snap, prevSnap] = await Promise.all([
+    getDocs(query(collection(db, 'questions'), where('chapterId', '==', chapterId))),
+    getDoc(indexRef(chapterId)).catch(() => null),
+  ]);
   const ids = snap.docs.filter((d) => d.data().isActive !== false).map((d) => d.id);
+  const oldKey = prevSnap?.exists()
+    ? (prevSnap.data().ids || []).map(String).slice().sort().join('\0')
+    : '';
+  const newKey = ids.map(String).slice().sort().join('\0');
+  const membershipChanged = oldKey !== newKey || !prevSnap?.exists();
   await setDoc(indexRef(chapterId), { ids, count: ids.length, updatedAt: serverTimestamp() });
-  await stampVersions(undefined, true);
+  await stampVersions(undefined, membershipChanged);
   return ids.length;
 };
 

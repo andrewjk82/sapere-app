@@ -71,6 +71,7 @@ import {
   notifyTeacherChallengeCompleted,
   notifyTeacherPendingReview,
   updateAdminDailySummary,
+  pruneOldChallengeStats,
   createSessionSeed,
   correctQuestionAnswer,
   getEarnedXp,
@@ -1671,6 +1672,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           studentProfile,
           user,
         }).catch((err) => console.warn('admin daily summary update failed (non-critical):', err?.code || err));
+
+        // Point-delete old YYYY-MM-DD stat docs (no full subcollection scan).
+        const pruneCol = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
+        pruneOldChallengeStats(user.uid, pruneCol).catch(() => {});
 
         // 2. Atomic Update for XP and Progress
         try {
