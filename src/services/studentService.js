@@ -69,7 +69,8 @@ const metaVersionOf = (data) =>
 
 // In-memory cache: avoids the sync_meta Firestore read on rapid successive calls.
 // Invalidated on any write operation (add/update/delete/touch).
-const MEM_CACHE_TTL_MS = 30_000;
+// P1: 5 min TTL — teacher roster rarely changes mid-session; forceRefresh still bypasses.
+const MEM_CACHE_TTL_MS = 5 * 60_000;
 const memCache = new Map();
 const memGet = (key) => {
   const entry = memCache.get(key);

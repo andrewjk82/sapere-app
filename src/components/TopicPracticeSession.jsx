@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { getChapterQuestions } from '../services/chapterQuestionsCache';
+import { getTopicQuestions } from '../services/chapterQuestionsCache';
 
 // localStorage helpers for per-topic mastery (rings — no Firestore reads needed)
 export const lsTopicKey = (uid, chapterId, topicId) => `sapere:tp:${uid}:${chapterId}:${topicId}`;
@@ -186,8 +186,8 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
     (async () => {
       setLoading(true);
       try {
-        const allChapter = await getChapterQuestions(user?.uid, chapter.id);
-        const all = allChapter.filter((q) => q.topicId === topic.id);
+        // Topic-scoped load (topic index + ID batches) — not the whole chapter.
+        const all = await getTopicQuestions(user?.uid, chapter.id, topic.id);
 
         // Load existing mastered IDs from localStorage (no Firestore read needed)
         const existingMastered = user?.uid

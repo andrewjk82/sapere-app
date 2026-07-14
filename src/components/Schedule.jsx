@@ -294,11 +294,12 @@ const Schedule = ({ students = [] }) => {
   // ── Fetch sessions from Firestore ──────────────────────────────────────────
   // Students: hydrate from localCache first (instant UI, 0 reads), then keep a
   // single onSnapshot. Snapshot only bills again when docs actually change.
-  // Shared cache is written for FlameBuddy so it never re-queries sessions.
+  // P1: pause the listener while the tab is hidden (resume on visible).
   useEffect(() => {
-    if (!user?.uid) return;
+    if (!user?.uid) return undefined;
 
     let unsub1 = () => {};
+    let cancelled = false;
 
     const sortSessions = (docs) => docs.sort((a, b) => {
       const dateA = a.date || '';
@@ -307,44 +308,60 @@ const Schedule = ({ students = [] }) => {
       return parseTime(a.startTime) - parseTime(b.startTime);
     });
 
-    if (isAdmin) {
-      const { startDate, endDate } = getAdminScheduleWindow();
-      const q = query(
-        collection(db, 'sessions'),
-        where('date', '>=', startDate),
-        where('date', '<=', endDate)
-      );
-      unsub1 = onSnapshot(q, (snap) => {
-        const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-        setSessions(docs);
-        setLoading(false);
-      }, (err) => {
-        console.error('Firestore error:', err);
-        setLoading(false);
-      });
-    } else {
-      // Paint from cache immediately — no network.
-      const cached = getCachedSessions(user.uid);
-      if (cached?.sessions?.length) {
-        setSessions(sortSessions([...cached.sessions]));
-        setLoading(false);
+    const attach = () => {
+      unsub1();
+      unsub1 = () => {};
+      if (cancelled || document.visibilityState === 'hidden') return;
+
+      if (isAdmin) {
+        const { startDate, endDate } = getAdminScheduleWindow();
+        const q = query(
+          collection(db, 'sessions'),
+          where('date', '>=', startDate),
+          where('date', '<=', endDate)
+        );
+        unsub1 = onSnapshot(q, (snap) => {
+          const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+          setSessions(docs);
+          setLoading(false);
+        }, (err) => {
+          console.error('Firestore error:', err);
+          setLoading(false);
+        });
+      } else {
+        const cached = getCachedSessions(user.uid);
+        if (cached?.sessions?.length) {
+          setSessions(sortSessions([...cached.sessions]));
+          setLoading(false);
+        }
+
+        const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
+        unsub1 = onSnapshot(qId, (snap) => {
+          const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+          setSessions(docs);
+          setLoading(false);
+          setCachedSessions(user.uid, docs);
+        }, (err) => {
+          console.error('Firestore session query error:', err);
+          setLoading(false);
+        });
       }
+    };
 
-      const qId = query(collection(db, 'sessions'), where('studentId', '==', user.uid));
-
-      unsub1 = onSnapshot(qId, (snap) => {
-        const docs = sortSessions(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-        setSessions(docs);
-        setLoading(false);
-        // Persist for FlameBuddy / next visit. Skips write if fingerprint unchanged.
-        setCachedSessions(user.uid, docs);
-      }, (err) => {
-        console.error('Firestore session query error:', err);
-        setLoading(false);
-      });
-    }
+    attach();
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') {
+        unsub1();
+        unsub1 = () => {};
+      } else {
+        attach();
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
 
     return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
       unsub1();
     };
   }, [user?.uid, isAdmin]);

@@ -57,71 +57,95 @@ export const AdminFeedProvider = ({ children }) => {
       return undefined;
     }
 
-    const qGrading = query(
-      collection(db, 'grading_queue'),
-      where('status', '==', 'pending'),
-      orderBy('submittedAt', 'desc'),
-      limit(FEED_LIMIT)
-    );
-    const unsubGrading = onSnapshot(
-      qGrading,
-      (snap) => {
-        const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setPendingGrading(items);
-        if (seenGradingIdsRef.current === null) {
-          // First snapshot — silent. Treat everything currently visible as
-          // already-known.
-          seenGradingIdsRef.current = new Set(items.map(i => i.id));
-          latestGradingTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.submittedAt)));
-          return;
-        }
-        const seen = seenGradingIdsRef.current;
-        const latestTs = latestGradingTsRef.current;
-        const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.submittedAt) > latestTs);
-        for (const i of items) seen.add(i.id);
-        latestGradingTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.submittedAt)));
-        if (fresh.length > 0) {
-          const top = fresh[0];
-          const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
-          showToast(`📝 New Review Required: ${top.userName || 'Student'} submitted a question${extra}.`, 'info', 5000);
-        }
-      },
-      (err) => console.warn('grading feed listener failed (non-fatal):', err?.code || err)
-    );
+    let unsubGrading = () => {};
+    let unsubReports = () => {};
+    let cancelled = false;
 
-    const qReports = query(
-      collection(db, 'reports'),
-      where('status', '==', 'open'),
-      orderBy('createdAt', 'desc'),
-      limit(FEED_LIMIT)
-    );
-    const unsubReports = onSnapshot(
-      qReports,
-      (snap) => {
-        const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
-        setOpenReports(items);
-        // Skip cache snapshots — only trust server-confirmed data for notifications.
-        if (snap.metadata.fromCache) return;
-        if (seenReportIdsRef.current === null) {
-          seenReportIdsRef.current = new Set(items.map(i => i.id));
-          latestReportTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.createdAt)));
-          return;
-        }
-        const seen = seenReportIdsRef.current;
-        const latestTs = latestReportTsRef.current;
-        const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.createdAt) > latestTs);
-        for (const i of items) seen.add(i.id);
-        latestReportTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.createdAt)));
-        if (fresh.length > 0) {
-          const top = fresh[0];
-          const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
-          showToast(`⚠️ New Issue Reported: ${top.studentName || 'Student'} filed a report${extra}.`, 'warning', 5000);
-        }
-      },
-      (err) => console.warn('reports feed listener failed (non-fatal):', err?.code || err)
-    );
+    const attach = () => {
+      unsubGrading();
+      unsubReports();
+      unsubGrading = () => {};
+      unsubReports = () => {};
+      if (cancelled || document.visibilityState === 'hidden') return;
+
+      const qGrading = query(
+        collection(db, 'grading_queue'),
+        where('status', '==', 'pending'),
+        orderBy('submittedAt', 'desc'),
+        limit(FEED_LIMIT)
+      );
+      unsubGrading = onSnapshot(
+        qGrading,
+        (snap) => {
+          const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+          setPendingGrading(items);
+          if (seenGradingIdsRef.current === null) {
+            seenGradingIdsRef.current = new Set(items.map(i => i.id));
+            latestGradingTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.submittedAt)));
+            return;
+          }
+          const seen = seenGradingIdsRef.current;
+          const latestTs = latestGradingTsRef.current;
+          const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.submittedAt) > latestTs);
+          for (const i of items) seen.add(i.id);
+          latestGradingTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.submittedAt)));
+          if (fresh.length > 0) {
+            const top = fresh[0];
+            const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
+            showToast(`📝 New Review Required: ${top.userName || 'Student'} submitted a question${extra}.`, 'info', 5000);
+          }
+        },
+        (err) => console.warn('grading feed listener failed (non-fatal):', err?.code || err)
+      );
+
+      const qReports = query(
+        collection(db, 'reports'),
+        where('status', '==', 'open'),
+        orderBy('createdAt', 'desc'),
+        limit(FEED_LIMIT)
+      );
+      unsubReports = onSnapshot(
+        qReports,
+        (snap) => {
+          const items = snap.docs.map(d => ({ id: d.id, ...d.data() }));
+          setOpenReports(items);
+          if (snap.metadata.fromCache) return;
+          if (seenReportIdsRef.current === null) {
+            seenReportIdsRef.current = new Set(items.map(i => i.id));
+            latestReportTsRef.current = Math.max(0, ...items.map(i => tsMillis(i.createdAt)));
+            return;
+          }
+          const seen = seenReportIdsRef.current;
+          const latestTs = latestReportTsRef.current;
+          const fresh = items.filter(i => !seen.has(i.id) && tsMillis(i.createdAt) > latestTs);
+          for (const i of items) seen.add(i.id);
+          latestReportTsRef.current = Math.max(latestTs, ...items.map(i => tsMillis(i.createdAt)));
+          if (fresh.length > 0) {
+            const top = fresh[0];
+            const extra = fresh.length > 1 ? ` (+${fresh.length - 1} more)` : '';
+            showToast(`⚠️ New Issue Reported: ${top.studentName || 'Student'} filed a report${extra}.`, 'warning', 5000);
+          }
+        },
+        (err) => console.warn('reports feed listener failed (non-fatal):', err?.code || err)
+      );
+    };
+
+    attach();
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') {
+        unsubGrading();
+        unsubReports();
+        unsubGrading = () => {};
+        unsubReports = () => {};
+      } else {
+        attach();
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
 
     return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
       unsubGrading();
       unsubReports();
     };

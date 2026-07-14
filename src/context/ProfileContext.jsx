@@ -47,18 +47,43 @@ export const ProfileProvider = ({ children }) => {
     }
     setProfileLoading(true);
     const ref = doc(db, 'users', user.uid);
-    const unsubscribe = onSnapshot(
-      ref,
-      (snap) => {
-        setProfile(snap.exists() ? snap.data() : null);
-        setProfileLoading(false);
-      },
-      (err) => {
-        console.warn('Profile listener error:', err?.code || err);
-        setProfileLoading(false);
-      },
-    );
-    return () => unsubscribe();
+    let unsub = () => {};
+    let cancelled = false;
+
+    // Keep realtime profile while visible; pause when tab hidden so overnight
+    // background tabs do not re-bill every XP/field write.
+    const attach = () => {
+      unsub();
+      unsub = () => {};
+      if (cancelled || document.visibilityState === 'hidden') return;
+      unsub = onSnapshot(
+        ref,
+        (snap) => {
+          setProfile(snap.exists() ? snap.data() : null);
+          setProfileLoading(false);
+        },
+        (err) => {
+          console.warn('Profile listener error:', err?.code || err);
+          setProfileLoading(false);
+        },
+      );
+    };
+
+    attach();
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') {
+        unsub();
+        unsub = () => {};
+      } else {
+        attach();
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
+      unsub();
+    };
   }, [user?.uid]);
 
   return (

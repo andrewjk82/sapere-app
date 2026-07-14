@@ -1,8 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { db } from '../firebase/config';
-import { collection, query, orderBy, limit, onSnapshot } from 'firebase/firestore';
+import { collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
 import { Activity, Database, Server, Clock, Users, ArrowUpRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+
+// P1: one-shot fetch + 60s poll while visible (not a permanent onSnapshot on
+// traffic_logs — that collection is write-heavy and was double-billing monitors).
+const POLL_MS = 60_000;
 
 const TrafficMonitorPanel = () => {
   const [logs, setLogs] = useState([]);
@@ -14,49 +18,70 @@ const TrafficMonitorPanel = () => {
     activeSessions: new Set(),
   });
 
-  useEffect(() => {
-    const q = query(
-      collection(db, 'traffic_logs'),
-      orderBy('timestamp', 'desc'),
-      limit(100)
-    );
+  const applySnap = useCallback((snap) => {
+    const docs = snap.docs.map(d => ({
+      id: d.id,
+      ...d.data(),
+      formattedTime: d.data().timestamp
+        ? new Date(d.data().timestamp.seconds * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+        : 'Just now'
+    }));
 
-    const unsubscribe = onSnapshot(q, (snap) => {
-      const docs = snap.docs.map(d => ({
-        id: d.id,
-        ...d.data(),
-        formattedTime: d.data().timestamp
-          ? new Date(d.data().timestamp.seconds * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
-          : 'Just now'
-      }));
+    let reads = 0;
+    let writes = 0;
+    let apis = 0;
+    const sessions = new Set();
 
-      let reads = 0;
-      let writes = 0;
-      let apis = 0;
-      const sessions = new Set();
-
-      docs.forEach(log => {
-        reads += log.reads || 0;
-        writes += log.writes || 0;
-        apis += log.apiCalls || 0;
-        if (log.sessionKey) sessions.add(log.sessionKey);
-      });
-
-      setLogs(docs);
-      setStats({
-        totalReads: reads,
-        totalWrites: writes,
-        totalApiCalls: apis,
-        activeSessions: sessions
-      });
-      setLoading(false);
-    }, (error) => {
-      console.warn("TrafficMonitor fetch error:", error);
-      setLoading(false);
+    docs.forEach(log => {
+      reads += log.reads || 0;
+      writes += log.writes || 0;
+      apis += log.apiCalls || 0;
+      if (log.sessionKey) sessions.add(log.sessionKey);
     });
 
-    return () => unsubscribe();
+    setLogs(docs);
+    setStats({
+      totalReads: reads,
+      totalWrites: writes,
+      totalApiCalls: apis,
+      activeSessions: sessions
+    });
+    setLoading(false);
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+    let timer = null;
+
+    const load = async () => {
+      if (document.visibilityState === 'hidden') return;
+      try {
+        const q = query(
+          collection(db, 'traffic_logs'),
+          orderBy('timestamp', 'desc'),
+          limit(100)
+        );
+        const snap = await getDocs(q);
+        if (!cancelled) applySnap(snap);
+      } catch (error) {
+        console.warn("TrafficMonitor fetch error:", error);
+        if (!cancelled) setLoading(false);
+      }
+    };
+
+    load();
+    timer = setInterval(load, POLL_MS);
+    const onVis = () => {
+      if (document.visibilityState === 'visible') load();
+    };
+    document.addEventListener('visibilitychange', onVis);
+
+    return () => {
+      cancelled = true;
+      clearInterval(timer);
+      document.removeEventListener('visibilitychange', onVis);
+    };
+  }, [applySnap]);
 
   // Simple SVG sparkline generator for the last 20 logs
   const generateSparkline = (key, color) => {

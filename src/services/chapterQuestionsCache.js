@@ -1,34 +1,32 @@
 /**
  * chapterQuestionsCache.js
  *
- * Caches chapter question objects locally so TopicPracticeSession never hits
- * Firestore for a chapter it has already downloaded.
+ * Caches question objects locally so TopicPractice never re-hits Firestore
+ * for a chapter/topic it has already downloaded at the current bank version.
  *
- * Cache key:   sapere:qcache:{uid}:{chapterId}
- * Cache value: { questions: [...], membershipVersion: N, savedAt: T }
- *
- * Invalidation: compare local membershipVersion against
- * sync_meta/questions.membershipVersion (1 read per app session, stored in
- * sessionStorage so repeated navigation is free).
- *
- * Traffic model:
- *   - First visit to a chapter:  1 meta read + chapter questions read
- *   - Subsequent visits (same session):  0 reads (version already confirmed)
- *   - New session with unchanged questions: 1 meta read → cache hit
- *   - After teacher adds/removes questions: 1 meta read → version mismatch → re-fetch
+ * Traffic model (P1):
+ *   - Topic practice: 1 topic-index read + N question docs (topic size only)
+ *   - Full chapter:   1 chapter-index read + N question docs (when needed)
+ *   - Cache hit:      0 reads (after 1 session version check)
+ *   - Prefetch:       at most 1 chapter, skipped if already cached
  */
 
 import {
-  collection, query, where, getDocs, getDoc, doc,
+  collection, query, where, getDoc, doc,
 } from '../firebase/firestoreWrapper';
-// Raw getDocs for chapter bulk fetch — we tag reads ourselves with chapterId
-// so TrafficMonitor hotspots stay meaningful (wrapper only sees pathname).
-import { getDocs as getDocsRaw } from 'firebase/firestore';
+import {
+  getDocs as getDocsRaw,
+  getDoc as getDocRaw,
+  documentId,
+} from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { trackRead } from './trafficTrackerService';
+import { readChapterIndex } from './questionIndexService';
 
 const CACHE_PREFIX = 'sapere:qcache';
+const TOPIC_CACHE_PREFIX = 'sapere:tqcache';
 const SESSION_VERSION_KEY = 'sapere:qcache:membershipVersion';
+const IN_QUERY_LIMIT = 30;
 
 /** Fields to keep in cache. Omits server-only metadata to save space. */
 const KEEP_FIELDS = [
@@ -45,8 +43,10 @@ const stripQuestion = (q) => {
 };
 
 const cacheKey = (uid, chapterId) => `${CACHE_PREFIX}:${uid}:${chapterId}`;
+const topicCacheKey = (uid, chapterId, topicId) =>
+  `${TOPIC_CACHE_PREFIX}:${uid}:${chapterId}:${topicId}`;
 
-/** Read the confirmed remote membershipVersion for this session (sessionStorage). */
+/** Read the confirmed remote content version for this session (sessionStorage). */
 const getSessionVersion = () => {
   try { return Number(sessionStorage.getItem(SESSION_VERSION_KEY) || 0); } catch { return 0; }
 };
@@ -56,15 +56,7 @@ const setSessionVersion = (v) => {
 
 /**
  * Fetch sync_meta/questions.version from Firestore (1 read).
- *
- * We key the cache on `version` (the CONTENT version) rather than
- * `membershipVersion`. `version` bumps on *any* question change — including a
- * pure content edit such as fixing a question's answer options — whereas
- * `membershipVersion` only bumps when the active-question SET changes
- * (add/remove/move). Keying on content version guarantees students always
- * refetch after a teacher edits question text/options, not just when questions
- * are added or removed. In steady state (no edits) `version` is stable, so the
- * cache still serves zero-read hits.
+ * Keyed on content `version` so option/text edits invalidate caches.
  */
 export const fetchRemoteMembershipVersion = async () => {
   try {
@@ -76,11 +68,6 @@ export const fetchRemoteMembershipVersion = async () => {
   }
 };
 
-/**
- * Get the confirmed remote membershipVersion.
- * Uses sessionStorage so we only hit Firestore once per browser tab.
- * Pass forceRefresh=true to re-read (e.g. after a teacher update).
- */
 export const getConfirmedMembershipVersion = async (forceRefresh = false) => {
   if (!forceRefresh) {
     const cached = getSessionVersion();
@@ -91,14 +78,12 @@ export const getConfirmedMembershipVersion = async (forceRefresh = false) => {
   return v;
 };
 
-/** Read the cached question list for a chapter. Returns null on miss or stale. */
-const readCache = (uid, chapterId, confirmedVersion) => {
+const readCacheEntry = (key, confirmedVersion) => {
   try {
-    const raw = localStorage.getItem(cacheKey(uid, chapterId));
+    const raw = localStorage.getItem(key);
     if (!raw) return null;
     const entry = JSON.parse(raw);
     if (!Array.isArray(entry?.questions)) return null;
-    // If we have a confirmed remote version and it differs, cache is stale.
     if (confirmedVersion > 0 && entry.membershipVersion !== confirmedVersion) return null;
     return entry.questions;
   } catch {
@@ -106,19 +91,48 @@ const readCache = (uid, chapterId, confirmedVersion) => {
   }
 };
 
-/** Write question list to localStorage cache. Non-fatal on quota exceeded. */
-const writeCache = (uid, chapterId, questions, membershipVersion) => {
+const writeCacheEntry = (key, questions, membershipVersion) => {
   try {
     const entry = { questions: questions.map(stripQuestion), membershipVersion, savedAt: Date.now() };
-    localStorage.setItem(cacheKey(uid, chapterId), JSON.stringify(entry));
+    localStorage.setItem(key, JSON.stringify(entry));
   } catch {
-    /* localStorage full — skip cache, Firestore remains source of truth */
+    /* localStorage full */
   }
 };
 
-/** Fetch all active questions for a chapter from Firestore. */
-const fetchFromFirestore = async (chapterId) => {
+/** Batched documentId-in fetches (max 30 per query). */
+const fetchQuestionsByIds = async (ids, trackTag) => {
+  const unique = [...new Set((ids || []).map(String).filter(Boolean))];
+  if (!unique.length) return [];
+  const batches = [];
+  for (let i = 0; i < unique.length; i += IN_QUERY_LIMIT) {
+    batches.push(unique.slice(i, i + IN_QUERY_LIMIT));
+  }
+  const snaps = await Promise.all(
+    batches.map((batch) => getDocsRaw(
+      query(collection(db, 'questions'), where(documentId(), 'in', batch)),
+    )),
+  );
+  const docs = snaps.flatMap((snap) => snap.docs.map((d) => ({ id: d.id, ...d.data() })));
+  trackRead(docs.length || 1, trackTag);
+  return docs.filter((q) => q.isActive !== false);
+};
+
+/** Full chapter via question_index (preferred) or legacy chapterId query. */
+const fetchChapterFromFirestore = async (chapterId) => {
   const isExam = chapterId?.startsWith('exam:');
+  if (!isExam) {
+    try {
+      const index = await readChapterIndex(chapterId);
+      if (index?.ids?.length) {
+        trackRead(1, `question_index:${chapterId}`);
+        return fetchQuestionsByIds(index.ids, `questions_by_id:${chapterId}`);
+      }
+    } catch {
+      /* fall through */
+    }
+  }
+
   const examPaperKey = isExam ? chapterId.replace('exam:', '') : null;
   const snap = await getDocsRaw(
     isExam
@@ -132,61 +146,102 @@ const fetchFromFirestore = async (chapterId) => {
 };
 
 /**
- * Main entry point for TopicPracticeSession.
- *
- * Returns all active questions for the chapter, using cache when valid.
- * Flow:
- *   1. Check sessionStorage for confirmed membershipVersion (0 reads if already done)
- *   2. If not known yet, fetch from sync_meta/questions (1 read)
- *   3. If cache exists and version matches → return cache (0 reads)
- *   4. Otherwise fetch from questions collection and store in cache
+ * Topic-scoped load: question_topic_index/{topicId} + ID batch gets.
+ * Typical cost: 1 + ceil(topicSize/30) reads instead of entire chapter.
+ */
+const fetchTopicFromFirestore = async (chapterId, topicId) => {
+  if (!topicId) return fetchChapterFromFirestore(chapterId);
+
+  try {
+    const topicSnap = await getDocRaw(doc(db, 'question_topic_index', topicId));
+    trackRead(1, `topic_index:${topicId}`);
+    if (topicSnap.exists()) {
+      const data = topicSnap.data() || {};
+      const ids = Array.isArray(data.ids) ? data.ids.map(String) : [];
+      // If index is for a different chapter, ignore and fall back.
+      if (!data.chapterId || String(data.chapterId) === String(chapterId)) {
+        if (ids.length) {
+          return fetchQuestionsByIds(ids, `questions_topic:${topicId}`);
+        }
+      }
+    }
+  } catch {
+    /* fall through to chapter + filter */
+  }
+
+  // Fallback: load chapter (cached path) then filter client-side.
+  const all = await fetchChapterFromFirestore(chapterId);
+  return all.filter((q) => String(q.topicId || '') === String(topicId));
+};
+
+/**
+ * Full chapter questions (cached). Prefer getTopicQuestions for practice.
  */
 export const getChapterQuestions = async (uid, chapterId) => {
   const remoteVersion = await getConfirmedMembershipVersion();
-  const cached = readCache(uid, chapterId, remoteVersion);
+  const key = cacheKey(uid || 'anon', chapterId);
+  const cached = readCacheEntry(key, remoteVersion);
   if (cached) return cached;
 
-  const questions = await fetchFromFirestore(chapterId);
-  writeCache(uid, chapterId, questions, remoteVersion);
+  const questions = await fetchChapterFromFirestore(chapterId);
+  writeCacheEntry(key, questions, remoteVersion);
   return questions;
 };
 
 /**
- * Pre-fetch and cache question for a list of chapterIds in the background.
- * Called by LearningPath when the student's assigned chapters are known.
- * Errors are silently swallowed — this is best-effort pre-warming.
+ * Topic practice entry point — only the topic's questions.
+ */
+export const getTopicQuestions = async (uid, chapterId, topicId) => {
+  if (!topicId) return getChapterQuestions(uid, chapterId);
+
+  const remoteVersion = await getConfirmedMembershipVersion();
+  const key = topicCacheKey(uid || 'anon', chapterId, topicId);
+  const cached = readCacheEntry(key, remoteVersion);
+  if (cached) return cached;
+
+  // Reuse full-chapter cache if present (filter free).
+  const chapterCached = readCacheEntry(cacheKey(uid || 'anon', chapterId), remoteVersion);
+  if (chapterCached) {
+    const filtered = chapterCached.filter((q) => String(q.topicId || '') === String(topicId));
+    writeCacheEntry(key, filtered, remoteVersion);
+    return filtered;
+  }
+
+  const questions = await fetchTopicFromFirestore(chapterId, topicId);
+  writeCacheEntry(key, questions, remoteVersion);
+  return questions;
+};
+
+/**
+ * Best-effort pre-warm. P1: only the first uncached chapter, never a fan-out
+ * across the whole curriculum (was a spike amplifier after version bumps).
  */
 export const prefetchChapterQuestions = async (uid, chapterIds) => {
   if (!uid || !chapterIds?.length) return;
   const remoteVersion = await getConfirmedMembershipVersion();
-
-  for (const chapterId of chapterIds) {
-    // Skip if already cached at the current version
-    if (readCache(uid, chapterId, remoteVersion)) continue;
-    try {
-      const questions = await fetchFromFirestore(chapterId);
-      writeCache(uid, chapterId, questions, remoteVersion);
-    } catch {
-      /* non-fatal — student will fetch on first topic open */
-    }
+  const first = chapterIds.find((chapterId) => !readCacheEntry(cacheKey(uid, chapterId), remoteVersion));
+  if (!first) return;
+  try {
+    const questions = await fetchChapterFromFirestore(first);
+    writeCacheEntry(cacheKey(uid, first), questions, remoteVersion);
+  } catch {
+    /* non-fatal */
   }
 };
 
-/**
- * Invalidate all cached chapters for a user (call after confirmed version bump).
- * Leaves topic-progress (sapere:tp:*) keys untouched.
- */
 export const invalidateAllChapterCaches = (uid) => {
   if (!uid) return;
-  const prefix = `${CACHE_PREFIX}:${uid}:`;
+  const prefixes = [
+    `${CACHE_PREFIX}:${uid}:`,
+    `${TOPIC_CACHE_PREFIX}:${uid}:`,
+  ];
   try {
     const toRemove = [];
     for (let i = 0; i < localStorage.length; i++) {
       const key = localStorage.key(i);
-      if (key?.startsWith(prefix)) toRemove.push(key);
+      if (key && prefixes.some((p) => key.startsWith(p))) toRemove.push(key);
     }
     toRemove.forEach((k) => localStorage.removeItem(k));
   } catch { /* ignore */ }
-  // Also clear the session-level version so the next read re-confirms
   try { sessionStorage.removeItem(SESSION_VERSION_KEY); } catch { /* ignore */ }
 };

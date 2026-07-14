@@ -757,19 +757,44 @@ function App() {
   const [notifications, setNotifications] = useState([]);
   const unreadCount = notifications.filter(n => !n.read).length;
 
-  // Real listener for notifications
+  // Notifications: live while tab is visible; unsubscribe when hidden so
+  // background tabs do not keep billing snapshot updates overnight.
   useEffect(() => {
     if (!user?.uid) return undefined;
-    const q = query(
-      collection(db, 'users', user.uid, 'notifications'),
-      orderBy('timestamp', 'desc'),
-      limit(10)
-    );
-    return onSnapshot(q, (snap) => {
-      setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
-    }, (err) => {
-      console.warn('[App] Notifications listener failed:', err);
-    });
+    let unsub = () => {};
+    let cancelled = false;
+
+    const attach = () => {
+      unsub();
+      unsub = () => {};
+      if (cancelled || document.visibilityState === 'hidden') return;
+      const q = query(
+        collection(db, 'users', user.uid, 'notifications'),
+        orderBy('timestamp', 'desc'),
+        limit(10)
+      );
+      unsub = onSnapshot(q, (snap) => {
+        setNotifications(snap.docs.map(d => ({ id: d.id, ...d.data() })));
+      }, (err) => {
+        console.warn('[App] Notifications listener failed:', err);
+      });
+    };
+
+    attach();
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') {
+        unsub();
+        unsub = () => {};
+      } else {
+        attach();
+      }
+    };
+    document.addEventListener('visibilitychange', onVis);
+    return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
+      unsub();
+    };
   }, [user?.uid]);
 
   const handleMarkAsRead = async () => {

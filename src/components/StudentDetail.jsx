@@ -699,12 +699,13 @@ const StudentDetail = ({ studentId, onBack }) => {
   };
 
   useEffect(() => {
-    if (!activeStudentId || !student?.id) return;
+    if (!activeStudentId || !student?.id) return undefined;
 
     // We must listen to both possible paths:
     // 1. The teacher's view collection (manual: students/, registered: users/)
     // 2. The actual Firebase Auth user's path (users/{registeredUid}) where challenge results are written
     // These can differ when a manual student (students/) has a linked registered account (users/)
+    // P1: pause listeners while the tab is hidden.
 
     const statsMap = {}; // key: `${statCollection}:${id}` => stat object
     const updateStats = () => {
@@ -754,19 +755,41 @@ const StudentDetail = ({ studentId, onBack }) => {
       return () => { unsubDaily(); unsubCalc(); };
     };
 
-    const cleanups = [];
+    let cleanups = [];
+    let cancelled = false;
 
-    // Always listen to the primary collection path
-    cleanups.push(buildListener(`${activeStudentCollection}/${activeStudentId}`, 'primary'));
+    const detach = () => {
+      cleanups.forEach((fn) => { try { fn(); } catch { /* */ } });
+      cleanups = [];
+    };
 
-    // If challengeResultsUid is different from activeStudentId (manual student with linked registered account),
-    // ALSO listen to users/{registeredUid} to capture challenge results written by the student app
-    if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
-      console.log(`[StudentDetail] Dual-listen: also watching users/${challengeResultsUid} for challenge results`);
-      cleanups.push(buildListener(`users/${challengeResultsUid}`, 'registered'));
-    }
+    const attach = () => {
+      detach();
+      if (cancelled || document.visibilityState === 'hidden') return;
 
-    return () => cleanups.forEach(fn => fn());
+      // Always listen to the primary collection path
+      cleanups.push(buildListener(`${activeStudentCollection}/${activeStudentId}`, 'primary'));
+
+      // If challengeResultsUid is different from activeStudentId (manual student with linked registered account),
+      // ALSO listen to users/{registeredUid} to capture challenge results written by the student app
+      if (challengeResultsUid && challengeResultsUid !== activeStudentId) {
+        console.log(`[StudentDetail] Dual-listen: also watching users/${challengeResultsUid} for challenge results`);
+        cleanups.push(buildListener(`users/${challengeResultsUid}`, 'registered'));
+      }
+    };
+
+    attach();
+    const onVis = () => {
+      if (document.visibilityState === 'hidden') detach();
+      else attach();
+    };
+    document.addEventListener('visibilitychange', onVis);
+
+    return () => {
+      cancelled = true;
+      document.removeEventListener('visibilitychange', onVis);
+      detach();
+    };
   }, [activeStudentCollection, activeStudentId, student?.id, challengeResultsUid]);
 
 
