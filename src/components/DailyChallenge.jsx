@@ -120,6 +120,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   // ── Post-quiz state ──
   const [elapsedSeconds, setElapsedSeconds] = useState(null);
   const [analyticsRecs, setAnalyticsRecs] = useState(null);
+  // Result screen: session XP + total count-up (set in finishQuiz before write).
+  const [resultXpSnapshot, setResultXpSnapshot] = useState(null);
 
   // ── UI state ──
   const [viewMode, setViewMode] = useState('challenge');
@@ -1314,6 +1316,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       } catch (e) {
         console.warn('analytics generation failed (non-fatal):', e);
       }
+      // Snapshot XP for result animations before setStep('result').
+      const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
+      const xpEarned = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
+      const xpBefore = Number(studentProfile?.totalXP) || 0;
+      setResultXpSnapshot({
+        earned: isAbandoned ? 0 : xpEarned,
+        previousTotal: xpBefore,
+        newTotal: xpBefore + (isAbandoned ? 0 : xpEarned),
+      });
+
       // Lock briefly so the auto-update effect in App.jsx can't fire a page
       // reload in the narrow window between quiz end and result render.
       // Release after 1 s — the result screen is fully rendered by then and
@@ -1338,8 +1350,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         // (50 XP only applies when the student also has the calculation test).
         // XP uses QUESTION ratio (fully-correct items / assigned count), not
         // sub-question points — multi-part is all-or-nothing for both score and XP.
-        const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
-        const xpEarned = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
         const resultStats = summarizeResults(currentAnswerResults);
         const topicStats = summarizeByKey(currentAnswerResults, 'topicId', 'topicTitle', 'topicCode');
         const chapterStats = summarizeByKey(currentAnswerResults, 'chapterId', 'chapterTitle');
@@ -2268,7 +2278,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   answerResults={answerResults}
                   score={resultQuestionsCorrect}
                   totalPossibleScore={TOTAL_QUESTIONS}
-                  xpEarnedOverride={getEarnedXp(resultQuestionsCorrect, TOTAL_QUESTIONS, challengeType, hasCalculationTest)}
+                  xpEarnedOverride={
+                    resultXpSnapshot?.earned
+                    ?? getEarnedXp(resultQuestionsCorrect, TOTAL_QUESTIONS, challengeType, hasCalculationTest)
+                  }
+                  previousTotalXP={resultXpSnapshot?.previousTotal}
+                  newTotalXP={resultXpSnapshot?.newTotal}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
                   challengeType={challengeType}
                   challengeBlueprint={CHALLENGE_BLUEPRINT}

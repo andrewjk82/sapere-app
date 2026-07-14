@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useMemo, useState } from 'react';
+import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 import {
   Trophy,
   XCircle,
@@ -53,6 +53,42 @@ const buildTopicBreakdown = (questions, answerResults) => {
     .slice(0, 5);
 };
 
+/** Count-up number for score / XP displays. */
+function CountUp({
+  from = 0,
+  to = 0,
+  duration = 1.1,
+  delay = 0.2,
+  className = '',
+  prefix = '',
+  suffix = '',
+  format = (n) => String(Math.round(n)),
+}) {
+  const mv = useMotionValue(from);
+  const display = useTransform(mv, (v) => format(v));
+  const [shown, setShown] = useState(format(from));
+
+  useEffect(() => {
+    mv.set(from);
+    const controls = animate(mv, to, {
+      duration,
+      delay,
+      ease: [0.22, 1, 0.36, 1],
+    });
+    const unsub = display.on('change', (v) => setShown(v));
+    return () => {
+      controls.stop();
+      unsub();
+    };
+  }, [from, to, duration, delay, mv, display, format]);
+
+  return (
+    <span className={className}>
+      {prefix}{shown}{suffix}
+    </span>
+  );
+}
+
 const ChallengeResultView = ({
   questions,
   userAnswers,
@@ -72,6 +108,9 @@ const ChallengeResultView = ({
   // Optional XP override (same question-ratio formula as finishQuiz). Kept so
   // the parent can pass the already-computed session XP if needed.
   xpEarnedOverride = null,
+  // Total XP before/after this session for count-up animation.
+  previousTotalXP = null,
+  newTotalXP = null,
 }) => {
   const isAbandoned =
     (answerResults || []).some(r => r === 'abandoned') ||
@@ -91,6 +130,12 @@ const ChallengeResultView = ({
         hasCalculationTest
       );
 
+  const prevTotal = Math.max(0, Number(previousTotalXP) || 0);
+  const endTotal = newTotalXP != null
+    ? Math.max(0, Number(newTotalXP) || 0)
+    : prevTotal + (isAbandoned ? 0 : Math.max(0, Number(xpEarned) || 0));
+  const showTotalAnim = previousTotalXP != null || newTotalXP != null;
+
   const topics = useMemo(
     () => buildTopicBreakdown(questions, answerResults),
     [questions, answerResults]
@@ -104,6 +149,7 @@ const ChallengeResultView = ({
   };
 
   const elapsedLabel = formatTime(elapsedSeconds);
+  const localeFmt = useMemo(() => (n) => Math.round(n).toLocaleString(), []);
 
   // ── Abandoned / terminated state ──────────────────────────
   if (isAbandoned) {
@@ -167,15 +213,85 @@ const ChallengeResultView = ({
         </h1>
       </div>
 
+      {/* Score: how many correct — animated count-up */}
       <div className="cr__score">
-        <span className="cr__score-num">{score}</span>
+        <CountUp
+          className="cr__score-num"
+          from={0}
+          to={score}
+          duration={1.05}
+          delay={0.15}
+        />
         <span className="cr__score-den">/{totalPossibleScore}</span>
       </div>
+      <motion.p
+        className="cr__score-caption"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.35 }}
+      >
+        questions correct
+      </motion.p>
+
+      {/* Session XP — big badge with count-up */}
+      <motion.div
+        className="cr__xp-badge"
+        initial={{ scale: 0.55, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ type: 'spring', stiffness: 340, damping: 16, delay: 0.35 }}
+      >
+        <Zap size={22} strokeWidth={2.5} />
+        <span className="cr__xp-plus">+</span>
+        <CountUp
+          className="cr__xp-num"
+          from={0}
+          to={xpEarned}
+          duration={1.15}
+          delay={0.45}
+        />
+        <span className="cr__xp-unit">XP</span>
+      </motion.div>
+
+      {/* Total XP rising: previous → previous + session */}
+      {showTotalAnim && (
+        <motion.div
+          className="cr__total"
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55 }}
+        >
+          <div className="cr__total-label">Your total XP</div>
+          <div className="cr__total-row">
+            <CountUp
+              className="cr__total-num"
+              from={prevTotal}
+              to={endTotal}
+              duration={1.35}
+              delay={0.65}
+              format={localeFmt}
+            />
+            {xpEarned > 0 && (
+              <motion.span
+                className="cr__total-delta"
+                initial={{ opacity: 0, scale: 0.85 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.85, type: 'spring', stiffness: 380, damping: 18 }}
+              >
+                +{xpEarned}
+              </motion.span>
+            )}
+          </div>
+        </motion.div>
+      )}
 
       <div className="cr__chips">
-        <div className="cr__chip">
+        <div className="cr__chip cr__chip--xp">
           <Zap size={16} />
-          <span>+{xpEarned} XP earned</span>
+          <span>
+            +
+            <CountUp from={0} to={xpEarned} duration={1.1} delay={0.5} />
+            {' '}XP this session
+          </span>
         </div>
         {streakDays != null && streakDays > 0 && (
           <div className="cr__chip">
@@ -191,7 +307,10 @@ const ChallengeResultView = ({
         )}
         <div className="cr__chip">
           <CheckCircle2 size={16} style={{ color: '#10b981' }} />
-          <span>{accuracy}% accuracy</span>
+          <span>
+            <CountUp from={0} to={accuracy} duration={1} delay={0.4} />
+            % accuracy
+          </span>
         </div>
       </div>
 
@@ -281,7 +400,7 @@ const challengeResultStyles = `
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
+    gap: 18px;
     text-align: center;
   }
   .cr__crown {
@@ -333,11 +452,88 @@ const challengeResultStyles = `
     font-size: 4.4rem;
     font-weight: 900;
     color: #8b5cf6;
+    font-variant-numeric: tabular-nums;
   }
   .cr__score-den {
     font-size: 1.6rem;
     color: #8b7aa7;
     font-weight: 700;
+  }
+  .cr__score-caption {
+    margin: -6px 0 0;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #94a3b8;
+  }
+  .cr__xp-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 2px;
+    padding: 14px 28px;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fef3c7 0%, #fde68a 40%, #fbbf24 100%);
+    border: 2px solid rgba(251, 191, 36, 0.65);
+    box-shadow:
+      0 12px 28px rgba(245, 158, 11, 0.28),
+      0 0 0 4px rgba(254, 243, 199, 0.45);
+    color: #92400e;
+  }
+  .cr__xp-badge svg { color: #b45309; flex-shrink: 0; }
+  .cr__xp-plus {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #b45309;
+  }
+  .cr__xp-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #92400e;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+  }
+  .cr__xp-unit {
+    font-size: 0.95rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    color: #b45309;
+    margin-left: 2px;
+  }
+  .cr__total {
+    margin: 0;
+  }
+  .cr__total-label {
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    margin-bottom: 4px;
+  }
+  .cr__total-row {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .cr__total-num {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #1e1b4b;
+    font-variant-numeric: tabular-nums;
+  }
+  .cr__total-delta {
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 3px 10px;
+    border-radius: 999px;
   }
   .cr__chips {
     display: flex;
@@ -358,6 +554,10 @@ const challengeResultStyles = `
     color: #1e1b4b;
   }
   .cr__chip svg { color: #8b5cf6; }
+  .cr__chip--xp {
+    background: #faf5ff;
+    border-color: rgba(167, 139, 250, 0.35);
+  }
   .cr__panel {
     width: 100%;
     padding: 20px 22px;
@@ -484,12 +684,13 @@ const challengeResultStyles = `
     .challenge-result {
       padding: 28px 20px;
       border-radius: 24px;
-      gap: 18px;
+      gap: 16px;
     }
     .cr__crown { width: 80px; height: 80px; border-radius: 24px; }
     .cr__title { font-size: 1.7rem; }
     .cr__score-num { font-size: 3.4rem; }
     .cr__score-den { font-size: 1.3rem; }
+    .cr__xp-num { font-size: 2rem; }
     .cr__actions { width: 100%; flex-direction: column; }
     .cr__btn { width: 100%; }
   }
