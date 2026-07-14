@@ -96,14 +96,8 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
   const chapterIds = Array.from(targets.targetChapterIds);
   const prevPools = existing?.chapter_pools || {};
   const prevAccuracy = existing?.chapter_accuracy || {};
-  const prevChapterKeys = Object.keys(prevPools).sort().join('\0');
-  const nextChapterKeys = [...chapterIds].sort().join('\0');
-  const chaptersUnchanged = prevChapterKeys === nextChapterKeys && chapterIds.length > 0;
 
-  // P1: when only membershipVersion (mv) in the signature changed and the
-  // assigned chapter set is identical, re-read indexes but reuse prior done[]
-  // aggressively. Skip re-fetch for a chapter whose previous id list fingerprint
-  // matches the freshly read index (ids already in memory after one index read).
+  // Re-read indexes for assigned chapters; preserve done[] for IDs still active.
   const indexResults = await Promise.all(
     chapterIds.map(async (chapterId) => {
       const index = await readChapterIndex(chapterId);
@@ -112,13 +106,8 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
   );
 
   const chapter_pools = {};
-  let anyIdSetChanged = !chaptersUnchanged;
   indexResults.forEach(({ chapterId, ids }) => {
     const prev = prevPools[chapterId] || {};
-    const prevIds = (prev.ids || []).map(String);
-    const prevKey = prevIds.slice().sort().join('\0');
-    const nextKey = ids.slice().sort().join('\0');
-    if (prevKey !== nextKey) anyIdSetChanged = true;
     const prevDoneSet = new Set(prev.done || []);
     // 여전히 active인 ID만 done으로 유지
     const done = ids.filter((id) => prevDoneSet.has(id));
