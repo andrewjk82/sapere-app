@@ -67,17 +67,20 @@ const shuffle = (arr) => {
 // Resolve the correct-answer TEXT and (for MC) a freshly shuffled option list.
 const prepareQuestion = (q) => {
   const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.type !== 'short_answer');
+  // Seeds often store the key as `a` (option index) without `answer`.
+  const rawKey = q.answer ?? q.a;
   if (isMC) {
     const opts = getOptions(q);
     let correctText;
-    if (q.isManual && !Number.isNaN(parseInt(q.answer, 10))) {
-      correctText = getOptionText(opts[parseInt(q.answer, 10)]);
+    const idx = parseInt(String(rawKey), 10);
+    if ((q.isManual || !Number.isNaN(idx)) && !Number.isNaN(idx) && opts[idx] !== undefined) {
+      correctText = getOptionText(opts[idx]);
     } else {
-      correctText = String(q.answer);
+      correctText = String(rawKey ?? '');
     }
     return { mode: 'mc', options: shuffle(opts), correctText };
   }
-  return { mode: 'text', options: [], correctText: String(q.answer) };
+  return { mode: 'text', options: [], correctText: String(rawKey ?? '') };
 };
 
 // ── Parse a hint string into ordered steps ────────────────────────────────
