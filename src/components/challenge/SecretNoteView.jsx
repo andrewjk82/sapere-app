@@ -65,18 +65,22 @@ const shuffle = (arr) => {
 };
 
 // Resolve the correct-answer TEXT and (for MC) a freshly shuffled option list.
+// IMPORTANT: only treat numeric keys as option *indices* for isManual seed
+// questions. Calculation / generator MCQs store the real answer value
+// ("1" for 4−3), which collides with index 1 — treating it as an index marks
+// the wrong option correct (see Secret Note S5 screenshot: 4−3 marked as 3).
 const prepareQuestion = (q) => {
   const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.type !== 'short_answer');
   // Seeds often store the key as `a` (option index) without `answer`.
   const rawKey = q.answer ?? q.a;
   if (isMC) {
     const opts = getOptions(q);
-    let correctText;
-    const idx = parseInt(String(rawKey), 10);
-    if ((q.isManual || !Number.isNaN(idx)) && !Number.isNaN(idx) && opts[idx] !== undefined) {
-      correctText = getOptionText(opts[idx]);
-    } else {
-      correctText = String(rawKey ?? '');
+    let correctText = String(rawKey ?? '');
+    if (q.isManual && rawKey !== undefined && rawKey !== null) {
+      const idx = parseInt(String(rawKey), 10);
+      if (!Number.isNaN(idx) && opts[idx] !== undefined) {
+        correctText = getOptionText(opts[idx]);
+      }
     }
     return { mode: 'mc', options: shuffle(opts), correctText };
   }

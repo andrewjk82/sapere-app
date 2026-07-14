@@ -748,14 +748,18 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     } catch { /* ignore */ }
 
     // Shuffle multiple-choice options.
-    // For isManual questions the answer is stored as an option index ("0","1"…).
+    // For isManual seed questions the answer is stored as an option index ("0","1"…).
     // Seeds often use `a` instead of `answer` — accept both.
     // We normalise it to the option text before shuffling so text-matching still works.
+    //
+    // Do NOT treat every pure-digit answer as an index. Calculation generators store
+    // the real value (e.g. answer "1" for 4−3=?). Mapping that to opts[1] flips the
+    // correct choice to the wrong option.
     const opts = getOptions(q);
     if (opts.length > 1 && q.type !== 'short_answer' && q.type !== 'graph_sketch' && !q.subQuestions?.length) {
       const rawKey = q.answer ?? q.a;
       let normalizedAnswer = rawKey;
-      if (q.isManual || (rawKey !== undefined && rawKey !== null && /^\d+$/.test(String(rawKey).trim()))) {
+      if (q.isManual && rawKey !== undefined && rawKey !== null && /^\d+$/.test(String(rawKey).trim())) {
         const answerIdx = parseInt(String(rawKey), 10);
         if (!isNaN(answerIdx) && opts[answerIdx] !== undefined) {
           normalizedAnswer = getOptionText(opts[answerIdx]);
@@ -1048,16 +1052,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         : rawKey;
       // 1. Text match against (possibly normalised) answer
       const isTextMatch = answersMatch(optionText, effectiveAnswer);
-      // 2. Fallback index match for non-shuffled questions keyed by index
-      const isIndexMatch = currentQ._shuffledAnswer === undefined
+      // 2–3. Index match only for isManual seeds (answer is option index 0–3).
+      // Generator/calc MCQs store the value ("1"); treating that as an index
+      // marks the wrong option correct when opts[1] is a distractor.
+      const isIndexMatch = !!currentQ.isManual
+        && currentQ._shuffledAnswer === undefined
         && optIdx !== null
         && rawKey !== undefined
         && rawKey !== null
         && String(rawKey) === String(optIdx);
-      // 3. If rawKey is a numeric index but options were shuffled, resolve to text
-      //    once more (covers cases where setupQuestion never set _shuffledAnswer).
       let isResolvedIndexText = false;
-      if (!isTextMatch && !isIndexMatch && rawKey !== undefined && rawKey !== null) {
+      if (!isTextMatch && !isIndexMatch && currentQ.isManual && rawKey !== undefined && rawKey !== null) {
         const idx = parseInt(String(rawKey), 10);
         const optsNow = getOptions(currentQ);
         if (!isNaN(idx) && optsNow[idx] !== undefined) {
