@@ -1287,6 +1287,28 @@ const StudentDetail = ({ studentId, onBack }) => {
     const includeStat = (data) =>
       data.completed || (Number(data.score) || 0) > 0;
 
+    // Season boundary: bulk "Reset ALL XP" stamps secretNoteXpCutoff (and optionally
+    // system_config/xpReset). Stats before that day must NOT re-inflate totalXP.
+    const userSnapForCutoff = await getDoc(doc(db, colName, activeStudentId));
+    let cutoffMs = Number(userSnapForCutoff.data()?.secretNoteXpCutoff)
+      || Number(student?.secretNoteXpCutoff)
+      || 0;
+    if (!cutoffMs) {
+      try {
+        const sys = await getDoc(doc(db, 'system_config', 'xpReset'));
+        cutoffMs = Number(sys.data()?.secretNoteXpCutoff) || 0;
+      } catch { /* ignore */ }
+    }
+    const seasonStartDateKey = cutoffMs > 0
+      ? new Date(cutoffMs).toLocaleDateString('en-CA', { timeZone: 'Australia/Sydney' })
+      : null;
+    const isInCurrentSeason = (docId, data) => {
+      if (!seasonStartDateKey) return true;
+      const dateKey = String(data?.date || docId || '').slice(0, 10);
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(dateKey)) return true; // unknown → keep (safer for non-date ids)
+      return dateKey >= seasonStartDateKey;
+    };
+
     // Collect stats from both paths, deduplicating by doc ID so registered
     // students (whose results are written to users/{registeredUid}) aren't
     // under-counted when the primary and registered paths differ.
@@ -1309,24 +1331,23 @@ const StudentDetail = ({ studentId, onBack }) => {
     let totalXP = 0;
     let challengesCompleted = 0;
 
-    mergedDaily.forEach((data) => {
-      if (!includeStat(data)) return;
+    mergedDaily.forEach((data, docId) => {
+      if (!includeStat(data) || !isInCurrentSeason(docId, data)) return;
       totalXP += Number(data.xpEarned) || getFallbackXp(data, "daily");
       challengesCompleted += 1;
     });
-    mergedCalc.forEach((data) => {
-      if (!includeStat(data)) return;
+    mergedCalc.forEach((data, docId) => {
+      if (!includeStat(data) || !isInCurrentSeason(docId, data)) return;
       totalXP += Number(data.xpEarned) || getFallbackXp(data, "calc");
       challengesCompleted += 1;
     });
 
-    // ── Never silently reduce XP unless teacher explicitly allows it ──
-    // allowDecrease=true only when called from a deliberate challenge reset.
-    // Recalculate button uses allowDecrease=false so Secret Note XP is preserved.
+    // allowDecrease=false: never drop below current (preserves Secret Note / bonus XP
+    // not stored in daily_stats). Still cannot re-add pre-season challenge XP because
+    // those stats are filtered out above.
     let finalXP = totalXP;
     if (!allowDecrease) {
-      const currentSnap = await getDoc(doc(db, colName, activeStudentId));
-      const currentXP = Number(currentSnap.data()?.totalXP) || 0;
+      const currentXP = Number(userSnapForCutoff.data()?.totalXP) || 0;
       finalXP = Math.max(totalXP, currentXP);
     }
 
@@ -1351,7 +1372,7 @@ const StudentDetail = ({ studentId, onBack }) => {
       console.warn('Leaderboard sync failed during totals update:', lbErr);
     }
 
-    return { totalXP: finalXP, challengesCompleted };
+    return { totalXP: finalXP, challengesCompleted, seasonStartDateKey };
   };
 
   const deleteWorkingOutForChallenge = async (stat) => {
@@ -1488,25 +1509,26 @@ const StudentDetail = ({ studentId, onBack }) => {
         }),
       }).catch((err) => console.warn("Challenge reset notification failed:", err));
 
-      // Deduct only the XP from the deleted stat — do NOT full-recalculate with
-      // allowDecrease:true, which would wipe Secret Note XP and manual bonus XP
-      // that live only on the user doc (not in stat sub-docs).
-      let finalXP;
-      if (statXpEarned > 0) {
-        const userDocRef = doc(db, activeStudentCollection, activeStudentId);
-        const userSnap = await getDoc(userDocRef);
-        const currentXP = Number(userSnap.data()?.totalXP) || 0;
-        finalXP = Math.max(0, currentXP - statXpEarned);
-        await setDoc(userDocRef, { totalXP: finalXP }, { merge: true });
-        // Keep leaderboard in sync
-        const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
-        finalXP = totals.totalXP;
-      } else {
-        const totals = await recalculateStudentTotals(activeStudentCollection, { allowDecrease: false });
-        finalXP = totals.totalXP;
+      // Deduct only this attempt's XP. Do NOT re-sum all-time daily_stats/calc_stats
+      // with allowDecrease:false — that re-inflated pre-season XP after a bulk reset
+      // (history docs still exist with xpEarned, so Math.max restored ~300+ XP).
+      const userDocRef = doc(db, activeStudentCollection, activeStudentId);
+      const userSnap = await getDoc(userDocRef);
+      const currentXP = Number(userSnap.data()?.totalXP) || 0;
+      const finalXP = Math.max(0, currentXP - Math.max(0, statXpEarned));
+      await setDoc(userDocRef, { totalXP: finalXP }, { merge: true });
+      try {
+        const fullStudentData = { ...student, totalXP: finalXP };
+        if (student.source === 'manual') {
+          await upsertManualStudentLeaderboard(activeStudentId, fullStudentData);
+        } else {
+          await upsertRegisteredUserLeaderboard(activeStudentId, fullStudentData);
+        }
+      } catch (lbErr) {
+        console.warn('Leaderboard sync failed after challenge reset:', lbErr);
       }
       showToast(
-        `Challenge reset. XP adjusted to ${finalXP}. Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
+        `Challenge reset. XP adjusted to ${finalXP}${statXpEarned > 0 ? ` (−${statXpEarned} from this attempt)` : ''}. Removed ${deletedWorkingOutCount} working out item${deletedWorkingOutCount === 1 ? "" : "s"}.`,
         "success",
       );
     } catch (err) {

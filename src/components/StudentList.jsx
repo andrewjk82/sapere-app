@@ -65,12 +65,16 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
       await Promise.all(chunks.map(b => b.commit()));
 
       // Global stamp so any client can fall back if a user doc is stale/missing the field.
+      // Also used by recalculateStudentTotals to ignore pre-season daily_stats / calc_stats.
       await setDoc(
         doc(db, 'system_config', 'xpReset'),
         {
           secretNoteXpCutoff,
+          seasonStartDateKey: new Date(secretNoteXpCutoff).toLocaleDateString('en-CA', {
+            timeZone: 'Australia/Sydney',
+          }),
           resetAt: new Date().toISOString(),
-          note: 'Bulk XP reset — Secret Notes with addedAt <= cutoff do not award XP',
+          note: 'Bulk XP reset — pre-cutoff Secret Notes and challenge stats must not re-inflate totalXP',
         },
         { merge: true },
       );
