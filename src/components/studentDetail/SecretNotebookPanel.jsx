@@ -35,7 +35,13 @@ const SecretNotebookPanel = ({ student }) => {
     setResetting(true);
     try {
       await updateDoc(doc(db, "users", student.uid), {
-        secretNoteResets: { kinds: ["daily", "calc"], resetAt: Date.now() },
+        // All local notebooks — including exam_prep — so multi-device devices clear fully.
+        secretNoteResets: {
+          kinds: ["daily", "calc", "exam_prep"],
+          resetAt: Date.now(),
+          reason: "teacher_panel_reset",
+        },
+        secretNoteCount: { daily: 0, calc: 0, exam_prep: 0 },
       });
       setResetDone(true);
       setConfirming(false);
