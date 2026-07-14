@@ -1316,11 +1316,14 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       } catch (e) {
         console.warn('analytics generation failed (non-fatal):', e);
       }
-      // Snapshot XP for result animations before setStep('result').
+      // Snapshot score/XP for result screen before setStep('result') so the
+      // headline does not briefly flash 0 while answerResults settle.
       const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
       const xpEarned = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
       const xpBefore = Number(studentProfile?.totalXP) || 0;
       setResultXpSnapshot({
+        score: isAbandoned ? 0 : questionsCorrect,
+        total: displayTotal,
         earned: isAbandoned ? 0 : xpEarned,
         previousTotal: xpBefore,
         newTotal: xpBefore + (isAbandoned ? 0 : xpEarned),
@@ -2276,8 +2279,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   questions={questions}
                   userAnswers={userAnswers}
                   answerResults={answerResults}
-                  score={resultQuestionsCorrect}
-                  totalPossibleScore={TOTAL_QUESTIONS}
+                  score={
+                    resultXpSnapshot?.score != null
+                      ? resultXpSnapshot.score
+                      : resultQuestionsCorrect
+                  }
+                  totalPossibleScore={
+                    resultXpSnapshot?.total != null
+                      ? resultXpSnapshot.total
+                      : TOTAL_QUESTIONS
+                  }
                   xpEarnedOverride={
                     resultXpSnapshot?.earned
                     ?? getEarnedXp(resultQuestionsCorrect, TOTAL_QUESTIONS, challengeType, hasCalculationTest)

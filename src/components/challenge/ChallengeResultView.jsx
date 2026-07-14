@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
+import { motion, animate } from 'framer-motion';
 import {
   Trophy,
   XCircle,
@@ -53,6 +53,9 @@ const buildTopicBreakdown = (questions, answerResults) => {
     .slice(0, 5);
 };
 
+const defaultCountFormat = (n) => String(Math.round(n));
+const formatLocaleCount = (n) => Math.round(n).toLocaleString();
+
 /** Count-up number for score / XP displays. */
 function CountUp({
   from = 0,
@@ -62,25 +65,33 @@ function CountUp({
   className = '',
   prefix = '',
   suffix = '',
-  format = (n) => String(Math.round(n)),
+  format: formatProp,
 }) {
-  const mv = useMotionValue(from);
-  const display = useTransform(mv, (v) => format(v));
-  const [shown, setShown] = useState(format(from));
+  // Stable formatter — never put an inline default fn in the effect deps
+  // (that recreated every render and restarted the animation → flicker on 0).
+  const formatRef = React.useRef(formatProp || defaultCountFormat);
+  formatRef.current = formatProp || defaultCountFormat;
+
+  const start = Math.max(0, Number(from) || 0);
+  const end = Math.max(0, Number(to) || 0);
+  const [shown, setShown] = useState(() => formatRef.current(start));
 
   useEffect(() => {
-    mv.set(from);
-    const controls = animate(mv, to, {
+    // No animation needed — avoid 0→0 restart loops that look like blinking.
+    if (start === end) {
+      setShown(formatRef.current(end));
+      return undefined;
+    }
+    const mv = { current: start };
+    setShown(formatRef.current(start));
+    const controls = animate(start, end, {
       duration,
       delay,
       ease: [0.22, 1, 0.36, 1],
+      onUpdate: (v) => setShown(formatRef.current(v)),
     });
-    const unsub = display.on('change', (v) => setShown(v));
-    return () => {
-      controls.stop();
-      unsub();
-    };
-  }, [from, to, duration, delay, mv, display, format]);
+    return () => controls.stop();
+  }, [start, end, duration, delay]);
 
   return (
     <span className={className}>
@@ -149,7 +160,8 @@ const ChallengeResultView = ({
   };
 
   const elapsedLabel = formatTime(elapsedSeconds);
-  const localeFmt = useMemo(() => (n) => Math.round(n).toLocaleString(), []);
+  // Module-level stable fn — must not be recreated each render (CountUp deps).
+  const localeFmt = formatLocaleCount;
 
   // ── Abandoned / terminated state ──────────────────────────
   if (isAbandoned) {
