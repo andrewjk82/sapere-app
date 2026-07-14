@@ -1082,9 +1082,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         ? (currentQ.subQuestions.length)
         : 1;
 
-      // Sketch board on screen — ink level (empty/light/substantial) for FlameBuddy.
-      // light = a few dots; substantial = enough path length to look like steps.
-      const sketchAvailable = Boolean(showSplitScreen && canvasRef.current);
+      // Sketch board was part of this question layout (even if canvas ref is slow).
+      // empty | light (dots) | substantial (real steps) — FlameBuddy + per-answer tip.
+      const sketchAvailable = Boolean(showSplitScreen);
       let inkLevel = null;
       let inkStats = null;
       if (sketchAvailable) {
@@ -1099,6 +1099,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         if (inkLevel === 'empty' && (canvasDataUrl || canvasPageImages?.length)) {
           inkLevel = 'light';
         }
+        if (!inkLevel) inkLevel = 'empty';
       }
       const hadWorkingOut = inkLevel === 'substantial';
       const hadAnyInk = inkLevel === 'light' || inkLevel === 'substantial';
@@ -2132,6 +2133,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   subAnswers={subAnswers}
                   setSubAnswers={setSubAnswers}
                   userAnswers={userAnswers}
+                  answerResults={answerResults}
                   showHint={showHint}
                   setShowHint={setShowHint}
                   isSubmittingCanvas={isSubmittingCanvas}

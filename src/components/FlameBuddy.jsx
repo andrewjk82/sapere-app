@@ -552,10 +552,10 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
   const emptyWrong = Math.max(0, Number(opts.emptyAndWrongCount) || 0);
   const emptyCorrect = Math.max(0, Number(opts.emptyAndCorrectCount) || 0);
   const lightWrong = Math.max(0, Number(opts.lightAndWrongCount) || 0);
-  // Weak = empty or light (not substantial). Majority weak → coach.
-  const blankHeavy = sketchQs >= 2 && weakWO >= Math.max(2, Math.ceil(sketchQs * 0.5));
-  const blankSome = !blankHeavy && weakWO >= 2;
-  const mostlyLight = lightWO > emptyWO && lightWO >= 2;
+  // Weak = empty or light (not substantial). Even one blank pad → coach.
+  const blankHeavy = sketchQs >= 1 && weakWO >= Math.max(1, Math.ceil(sketchQs * 0.5));
+  const blankSome = !blankHeavy && weakWO >= 1;
+  const mostlyLight = lightWO > emptyWO && lightWO >= 1;
 
   const reviewCloser = wrong > 0
     ? (wrong === 1
@@ -1530,9 +1530,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       const emptyAndCorrectCount = Math.max(0, Number(e.detail?.emptyAndCorrectCount) || 0);
       const lightAndWrongCount = Math.max(0, Number(e.detail?.lightAndWrongCount) || 0);
       // Weak ink (empty + light dots) counts toward skip streak — substantial resets it.
-      const blankHeavy = sketchQuestionCount >= 2
-        && weakWorkingOutCount >= Math.max(2, Math.ceil(sketchQuestionCount * 0.5));
-      const blankSome = !blankHeavy && weakWorkingOutCount >= 2;
+      // Threshold: even 1 blank pad counts (was 2+, so single skips were invisible).
+      const blankHeavy = sketchQuestionCount >= 1
+        && weakWorkingOutCount >= Math.max(1, Math.ceil(sketchQuestionCount * 0.5));
+      const blankSome = !blankHeavy && weakWorkingOutCount >= 1;
       const workingOutSkipStreak = updateWorkingOutSkipStreak(uid, blankHeavy || blankSome);
       setTasks((t) => {
         const next = {
