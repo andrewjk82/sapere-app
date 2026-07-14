@@ -1,8 +1,12 @@
-import { useState, useRef, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Medal, Award, Trophy, Crown } from "lucide-react";
-import { describeMedal } from "../constants/calcMedals";
-import { markMedalsSeen } from "../services/calcProgressService";
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Medal, Award, Trophy, Crown } from 'lucide-react';
+import { describeMedal } from '../constants/calcMedals';
+import { markMedalsSeen } from '../services/calcProgressService';
+import { FlameBuddyAvatar } from './FlameBuddy';
+import './FlameBuddy.css';
+import './SecretNoteClearModal.css';
+import './MedalCelebrationModal.css';
 
 const ICONS = { Medal, Award, Trophy, Crown };
 
@@ -11,48 +15,16 @@ const MedalIcon = ({ name, size, color }) => {
   return <Cmp size={size} color={color} strokeWidth={2} />;
 };
 
-const Confetti = () => {
-  const cols = ["#f59e0b", "#7c3aed", "#ec4899", "#14b8a6", "#6366f1"];
-  const pieces = Array.from({ length: 14 });
-  return (
-    <div style={{ position: "absolute", inset: 0, overflow: "hidden", pointerEvents: "none" }}>
-      {pieces.map((_, i) => {
-        const left = (i * 7 + 5) % 100;
-        const delay = (i % 5) * 0.08;
-        return (
-          <motion.div
-            key={i}
-            initial={{ y: -20, opacity: 0, rotate: 0 }}
-            animate={{ y: 140, opacity: [0, 1, 1, 0], rotate: 360 }}
-            transition={{ duration: 1.4, delay, repeat: Infinity, repeatDelay: 0.6 }}
-            style={{
-              position: "absolute", top: 0, left: `${left}%`,
-              width: i % 2 ? 7 : 6, height: i % 2 ? 7 : 6,
-              borderRadius: i % 3 ? "2px" : "50%",
-              background: cols[i % cols.length],
-            }}
-          />
-        );
-      })}
-    </div>
-  );
-};
-
 /**
- * 메달 획득 축하 모달.
- * 앱 진입 시 미확인 메달이 있으면 표시. "받기"를 누르면 메달이 화면 우상단
- * (대시보드 진열장 방향)으로 날아가는 연출 후 닫히고 markMedalsSeen 처리.
- *
- * props:
- *  - uid: 학생 uid
- *  - medals: 미확인 메달 배열 (raw)
- *  - onClose: 닫힘 콜백 (선택)
+ * Medal claim celebration — same yellow-frame congrats card as Secret Note clear.
+ * Claim still flies the medal toward the shelf, then marks medals seen.
  */
-export default function MedalCelebrationModal({ uid, medals, onClose }) {
+export default function MedalCelebrationModal({ uid, medals, onClose, isPreview = false }) {
   const [open, setOpen] = useState(true);
   const [flying, setFlying] = useState(false);
-  const described = (medals || []).map(describeMedal);
+  const described = useMemo(() => (medals || []).map(describeMedal), [medals]);
   const multi = described.length > 1;
+  const primary = described[0];
   const flyRef = useRef(null);
 
   useEffect(() => {
@@ -61,136 +33,204 @@ export default function MedalCelebrationModal({ uid, medals, onClose }) {
 
   if (!medals || medals.length === 0) return null;
 
-  const handleClaim = async () => {
+  const handleClaim = () => {
     if (flying) return;
     setFlying(true);
-    // 진열장 방향(우상단)으로 날아가는 연출 시간 후 닫기 + seen 처리
-    if (uid) markMedalsSeen(uid).catch(() => {});
+    // Design QA preview must not write / clear real unseen medals.
+    if (uid && !isPreview) markMedalsSeen(uid).catch(() => {});
     setTimeout(() => {
       setOpen(false);
       onClose?.();
     }, 1000);
   };
 
-  const accent = multi ? "#7c3aed" : described[0].border;
-  const accentDark = multi ? "#6d28d9" : described[0].color;
+  const copy = multi
+    ? {
+        title: 'Congratulations',
+        msg: `You earned ${described.length} medals — amazing work!`,
+        sub: 'Claim them to pin them on your dashboard shelf.',
+      }
+    : {
+        title: 'Congratulations',
+        msg: 'You leveled up — well done!',
+        sub: primary
+          ? `${primary.stageName || primary.label}${primary.subtitle ? ` · ${primary.subtitle}` : ''}`
+          : 'A new medal is ready for your shelf.',
+      };
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="sync">
       {open && (
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          style={{
-            position: "fixed", inset: 0, zIndex: 9999,
-            background: "rgba(15,23,42,0.45)", backdropFilter: "blur(6px)",
-            display: "flex", alignItems: "center", justifyContent: "center", padding: "20px",
-          }}
+          key="mcm-root"
+          className="snc-modal"
+          style={{ zIndex: 1500 }}
+          variants={overlayVariants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="mcm-title"
         >
           <motion.div
-            initial={{ scale: 0.8, opacity: 0, y: 20 }}
-            animate={flying ? { scale: 0.9, opacity: 0 } : { scale: 1, opacity: 1, y: 0 }}
-            exit={{ scale: 0.85, opacity: 0 }}
-            transition={{ type: "spring", stiffness: 280, damping: 22 }}
-            style={{
-              width: "340px", maxWidth: "100%", borderRadius: "24px",
-              background: "#fff", boxShadow: "0 24px 60px rgba(99,102,241,0.3)",
-              overflow: "hidden", position: "relative",
-            }}
+            className="snc-modal__backdrop"
+            variants={backdropVariants}
+            onClick={flying ? undefined : handleClaim}
+          />
+
+          <motion.div
+            className="snc-modal__frame"
+            variants={frameVariants}
+            initial="hidden"
+            animate={flying ? 'flyOut' : 'visible'}
+            exit="exit"
           >
-            {/* Header band with confetti + hero medal */}
-            <div style={{
-              height: multi ? "92px" : "124px", position: "relative", overflow: "hidden",
-              background: multi
-                ? "linear-gradient(135deg,#f5f3ff,#ddd6fe)"
-                : `linear-gradient(135deg,${described[0].bgFrom},${described[0].bgTo})`,
-              display: "flex", alignItems: "center", justifyContent: "center",
-            }}>
-              <Confetti />
-              {multi ? (
-                <div style={{ fontSize: "18px", fontWeight: 800, color: "#5b21b6", zIndex: 2 }}>
-                  🎉 You earned {described.length} medals!
-                </div>
-              ) : (
-                <motion.div
-                  ref={flyRef}
-                  animate={flying
-                    ? { x: 220, y: -260, scale: 0.3, rotate: 360, opacity: 0 }
-                    : { scale: [0.4, 1.15, 1], rotate: [0, 0, 0] }}
-                  transition={flying
-                    ? { duration: 1, ease: [0.45, 0, 0.3, 1] }
-                    : { duration: 0.6, ease: "easeOut" }}
-                  style={{
-                    width: "84px", height: "84px", borderRadius: "50%",
-                    background: `linear-gradient(135deg,${described[0].bgFrom},${described[0].bgTo})`,
-                    border: `3px solid ${described[0].border}`,
-                    boxShadow: `0 8px 20px ${described[0].border}66`,
-                    display: "flex", alignItems: "center", justifyContent: "center", zIndex: 3,
-                  }}
-                >
-                  <MedalIcon name={described[0].icon} size={42} color={described[0].color} />
-                </motion.div>
-              )}
-            </div>
+            <motion.div className="snc-modal__glow" aria-hidden variants={glowVariants} />
 
-            {/* Body */}
-            <div style={{ padding: multi ? "16px 18px 20px" : "22px 24px 24px" }}>
-              {multi ? (
-                <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
-                  {described.map((m, i) => (
-                    <div key={i} style={{
-                      display: "flex", alignItems: "center", gap: "12px",
-                      padding: "10px 12px", borderRadius: "12px",
-                      background: m.pillBg, border: `1px solid ${m.pillBorder}`,
-                    }}>
-                      <div style={{
-                        width: "42px", height: "42px", borderRadius: "50%", flexShrink: 0,
-                        background: `linear-gradient(135deg,${m.bgFrom},${m.bgTo})`,
-                        border: `2px solid ${m.border}`,
-                        display: "flex", alignItems: "center", justifyContent: "center",
-                      }}>
-                        <MedalIcon name={m.icon} size={22} color={m.color} />
-                      </div>
-                      <div style={{ minWidth: 0 }}>
-                        <div style={{ fontSize: "12px", fontWeight: 800, color: "#1e1b4b" }}>{m.title}</div>
-                        <div style={{ fontSize: "10px", color: m.color }}>{m.subtitle}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div style={{ textAlign: "center" }}>
-                  <div style={{
-                    fontSize: "10px", fontWeight: 800, letterSpacing: "0.08em",
-                    color: described[0].border, textTransform: "uppercase",
-                  }}>
-                    {described[0].label}
-                  </div>
-                  <div style={{ fontSize: "18px", fontWeight: 800, color: "#1e1b4b", marginTop: "6px" }}>
-                    You leveled up! 🎉
-                  </div>
-                  <div style={{ fontSize: "12px", color: "#64748b", marginTop: "8px", lineHeight: 1.5 }}>
-                    {described[0].stageName}<br />
-                    <b style={{ color: "#1e1b4b" }}>{described[0].subtitle}</b>
-                  </div>
-                </div>
-              )}
+            <div className="snc-modal__card">
+              <div className="snc-confetti" aria-hidden>
+                {CONFETTI.map((c, i) => (
+                  <motion.span
+                    key={i}
+                    className="snc-confetti__bit"
+                    style={{
+                      left: c.left,
+                      top: c.top,
+                      background: c.color,
+                      width: c.size,
+                      height: c.size,
+                      borderRadius: c.round ? '50%' : '2px',
+                    }}
+                    initial={{ opacity: 0, scale: 0, y: 12, rotate: c.rot - 40 }}
+                    animate={{
+                      opacity: [0, 1, 0.9],
+                      scale: [0.4, 1.25, 1],
+                      y: [12, -4, 0],
+                      rotate: [c.rot - 40, c.rot + 12, c.rot],
+                    }}
+                    transition={{
+                      duration: 0.7,
+                      delay: 0.12 + c.delay * 0.55,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                  />
+                ))}
+              </div>
 
-              <button
-                onClick={handleClaim}
-                disabled={flying}
-                style={{
-                  marginTop: "18px", width: "100%", padding: "13px", border: "none",
-                  borderRadius: "14px", color: "#fff", fontSize: "14px", fontWeight: 800,
-                  cursor: flying ? "default" : "pointer",
-                  background: `linear-gradient(135deg,${accent},${accentDark})`,
-                  boxShadow: `0 6px 16px ${accent}4d`,
-                  opacity: flying ? 0.7 : 1,
-                }}
+              <motion.div
+                className="snc-modal__body"
+                variants={staggerParent}
+                initial="hidden"
+                animate="visible"
               >
-                {flying ? "Claiming…" : multi ? "Claim all 🏅" : "Claim 🏅"}
-              </button>
+                <motion.div className="snc-modal__flame-wrap" variants={itemVariants}>
+                  <motion.div
+                    animate={{ y: [0, -6, 0] }}
+                    transition={{
+                      duration: 2.4,
+                      repeat: Infinity,
+                      ease: 'easeInOut',
+                      delay: 0.65,
+                    }}
+                  >
+                    <FlameBuddyAvatar mood="idle" />
+                  </motion.div>
+                </motion.div>
+
+                <motion.h2 id="mcm-title" className="snc-modal__title" variants={itemVariants}>
+                  {copy.title}
+                </motion.h2>
+                <motion.p className="snc-modal__msg" variants={itemVariants}>
+                  {copy.msg}
+                </motion.p>
+                <motion.p className="snc-modal__sub" variants={itemVariants}>
+                  {copy.sub}
+                </motion.p>
+
+                {/* Hero medal (single) or compact list (multi) */}
+                {multi ? (
+                  <motion.div className="mcm-medal-list" variants={itemVariants}>
+                    {described.map((m, i) => (
+                      <div
+                        key={`${m.tier}-${m.stepId || m.stageId || i}`}
+                        className="mcm-medal-row"
+                        style={{ background: m.pillBg, borderColor: m.pillBorder }}
+                      >
+                        <div
+                          className="mcm-medal-row__icon"
+                          style={{
+                            background: `linear-gradient(135deg, ${m.bgFrom}, ${m.bgTo})`,
+                            borderColor: m.border,
+                          }}
+                        >
+                          <MedalIcon name={m.icon} size={20} color={m.color} />
+                        </div>
+                        <div style={{ minWidth: 0 }}>
+                          <div className="mcm-medal-row__title">{m.title}</div>
+                          <div className="mcm-medal-row__sub" style={{ color: m.color }}>
+                            {m.subtitle}
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </motion.div>
+                ) : primary ? (
+                  <>
+                    <motion.div
+                      ref={flyRef}
+                      className="mcm-medal-badge"
+                      variants={badgeVariants}
+                      animate={
+                        flying
+                          ? { x: 220, y: -280, scale: 0.28, rotate: 360, opacity: 0 }
+                          : { scale: 1, opacity: 1, x: 0, y: 0, rotate: 0 }
+                      }
+                      transition={
+                        flying
+                          ? { duration: 0.95, ease: [0.45, 0, 0.3, 1] }
+                          : { type: 'spring', stiffness: 460, damping: 16 }
+                      }
+                      style={{
+                        background: `linear-gradient(145deg, ${primary.bgFrom}, ${primary.bgTo})`,
+                      }}
+                    >
+                      <div
+                        className="mcm-medal-badge__icon-ring"
+                        style={{
+                          borderColor: primary.border,
+                          background: `linear-gradient(135deg, ${primary.bgFrom}, ${primary.bgTo})`,
+                          boxShadow: `0 8px 20px ${primary.border}55`,
+                        }}
+                      >
+                        <MedalIcon name={primary.icon} size={36} color={primary.color} />
+                      </div>
+                      <span className="mcm-medal-badge__tier" style={{ color: primary.color }}>
+                        {primary.label}
+                      </span>
+                    </motion.div>
+
+                    <motion.div className="mcm-meta" variants={itemVariants}>
+                      <div className="mcm-meta__label">Medal</div>
+                      <div className="mcm-meta__value">{primary.title}</div>
+                      <div className="mcm-meta__hint">{primary.subtitle}</div>
+                    </motion.div>
+                  </>
+                ) : null}
+
+                <motion.button
+                  type="button"
+                  className="snc-modal__cta"
+                  onClick={handleClaim}
+                  disabled={flying}
+                  variants={itemVariants}
+                  whileHover={flying ? undefined : { scale: 1.04, y: -2 }}
+                  whileTap={flying ? undefined : { scale: 0.96 }}
+                  transition={{ type: 'spring', stiffness: 420, damping: 22 }}
+                >
+                  {flying ? 'Claiming…' : multi ? 'Claim all' : 'Claim medal'}
+                </motion.button>
+              </motion.div>
             </div>
           </motion.div>
         </motion.div>
@@ -198,3 +238,138 @@ export default function MedalCelebrationModal({ uid, medals, onClose }) {
     </AnimatePresence>
   );
 }
+
+/* ── Motion variants (match Secret Note clear modal) ────────────────────── */
+
+const overlayVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.32, ease: [0.22, 1, 0.36, 1] },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.28, ease: [0.4, 0, 1, 1], delay: 0.04 },
+  },
+};
+
+const backdropVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.35, ease: 'easeOut' },
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 0.25, ease: 'easeIn' },
+  },
+};
+
+const frameVariants = {
+  hidden: {
+    opacity: 0,
+    y: 36,
+    scale: 0.86,
+    rotate: -1.2,
+    filter: 'blur(6px)',
+  },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    rotate: 0,
+    filter: 'blur(0px)',
+    transition: {
+      type: 'spring',
+      stiffness: 380,
+      damping: 22,
+      mass: 0.85,
+      opacity: { duration: 0.22 },
+      filter: { duration: 0.28 },
+    },
+  },
+  flyOut: {
+    opacity: 0,
+    y: -12,
+    scale: 0.94,
+    filter: 'blur(3px)',
+    transition: { duration: 0.85, ease: [0.4, 0, 0.2, 1] },
+  },
+  exit: {
+    opacity: 0,
+    y: -18,
+    scale: 0.92,
+    rotate: 0.6,
+    filter: 'blur(4px)',
+    transition: {
+      duration: 0.32,
+      ease: [0.4, 0, 0.2, 1],
+    },
+  },
+};
+
+const glowVariants = {
+  hidden: { opacity: 0, scale: 0.7 },
+  visible: {
+    opacity: [0, 0.85, 0.55],
+    scale: [0.7, 1.08, 1],
+    transition: { duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.05 },
+  },
+  exit: {
+    opacity: 0,
+    scale: 0.85,
+    transition: { duration: 0.22 },
+  },
+};
+
+const staggerParent = {
+  hidden: {},
+  visible: {
+    transition: {
+      staggerChildren: 0.055,
+      delayChildren: 0.14,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 14, scale: 0.97 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: {
+      type: 'spring',
+      stiffness: 420,
+      damping: 26,
+    },
+  },
+};
+
+const badgeVariants = {
+  hidden: { opacity: 0, scale: 0.45, y: 10 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: 460,
+      damping: 16,
+      delay: 0.08,
+    },
+  },
+};
+
+const CONFETTI = [
+  { left: '12%', top: '10%', color: '#f472b6', size: 8, round: false, rot: 20, delay: 0 },
+  { left: '22%', top: '18%', color: '#60a5fa', size: 6, round: true, rot: 0, delay: 0.2 },
+  { left: '78%', top: '12%', color: '#fbbf24', size: 7, round: false, rot: -25, delay: 0.1 },
+  { left: '85%', top: '22%', color: '#a78bfa', size: 6, round: true, rot: 0, delay: 0.35 },
+  { left: '18%', top: '42%', color: '#34d399', size: 5, round: false, rot: 40, delay: 0.15 },
+  { left: '80%', top: '40%', color: '#fb7185', size: 6, round: false, rot: -15, delay: 0.25 },
+  { left: '8%', top: '28%', color: '#38bdf8', size: 4, round: true, rot: 0, delay: 0.4 },
+  { left: '90%', top: '32%', color: '#facc15', size: 5, round: false, rot: 30, delay: 0.05 },
+  { left: '30%', top: '8%', color: '#c084fc', size: 5, round: true, rot: 0, delay: 0.3 },
+  { left: '68%', top: '9%', color: '#4ade80', size: 6, round: false, rot: 12, delay: 0.18 },
+];

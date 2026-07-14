@@ -381,6 +381,19 @@ function App() {
     return () => window.removeEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
   }, []);
 
+  // Teacher/admin: force-open medal celebration card (design QA only — no markMedalsSeen).
+  useEffect(() => {
+    const onMedalPreview = (e) => {
+      const sample = e?.detail?.medals;
+      if (Array.isArray(sample) && sample.length > 0) {
+        setMedalCelebrationPreview(true);
+        setCelebrationMedals(sample);
+      }
+    };
+    window.addEventListener('sapere:medal-preview', onMedalPreview);
+    return () => window.removeEventListener('sapere:medal-preview', onMedalPreview);
+  }, []);
+
   const [isScreenProtected, setIsScreenProtected] = useState(false);
   const keyboardActivityAtRef = useRef(0);
   const viewportActivityAtRef = useRef(0);
@@ -738,6 +751,7 @@ function App() {
   const [profile, setProfile] = useState(null);
   const [profileLoaded, setProfileLoaded] = useState(false);
   const [celebrationMedals, setCelebrationMedals] = useState(null);
+  const [medalCelebrationPreview, setMedalCelebrationPreview] = useState(false);
   const medalCheckedRef = useRef(false);
   const [notifications, setNotifications] = useState([]);
   const unreadCount = notifications.filter(n => !n.read).length;
@@ -962,11 +976,12 @@ function App() {
   }, [isAdmin, profileLoaded, user?.uid, profile?.calcAutoMode, profile?.firstName, profile?.displayName]);
 
   const dismissCelebration = useCallback(() => {
-    if (user?.uid) {
+    if (user?.uid && !medalCelebrationPreview) {
       try { localStorage.removeItem(`calc:pending-medals:${user.uid}`); } catch { /* noop */ }
     }
+    setMedalCelebrationPreview(false);
     setCelebrationMedals(null);
-  }, [user?.uid]);
+  }, [user?.uid, medalCelebrationPreview]);
 
   const hasProfile = Boolean(profile);
   const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
@@ -1277,6 +1292,7 @@ function App() {
         <MedalCelebrationModal
           uid={user?.uid}
           medals={celebrationMedals}
+          isPreview={medalCelebrationPreview}
           onClose={dismissCelebration}
         />,
         document.body,

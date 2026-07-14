@@ -9,6 +9,19 @@ import AvatarPickerModal from './AvatarPickerModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 
+const requestMedalModalPreview = (multi = false) => {
+  const medals = multi
+    ? [
+        { tier: 'step', stageId: 'stage-1', stepId: 'calc-1-core', groupKey: 'A' },
+        { tier: 'phase', stageId: 'stage-1', groupKey: 'A' },
+        { tier: 'stage', stageId: 'stage-1' },
+      ]
+    : [{ tier: 'step', stageId: 'stage-1', stepId: 'calc-1-core', groupKey: 'A' }];
+  try {
+    window.dispatchEvent(new CustomEvent('sapere:medal-preview', { detail: { medals } }));
+  } catch { /* ignore */ }
+};
+
 const Settings = () => {
   const { user, isAdmin, logout, resetPassword } = useAuth();
   const { showToast } = useToast();
@@ -593,6 +606,50 @@ const Settings = () => {
                   >
                     <Sparkles size={16} />
                     Preview +5 (one notebook)
+                  </button>
+                  <button
+                    type="button"
+                    className="app-button app-button--secondary"
+                    onClick={() => requestMedalModalPreview(false)}
+                    style={{
+                      width: '100%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 8,
+                      padding: '14px',
+                      borderRadius: 16,
+                      fontWeight: 800,
+                      border: '1px solid #fde68a',
+                      background: '#fffbeb',
+                      color: '#92400e',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Sparkles size={16} />
+                    Preview medal modal
+                  </button>
+                  <button
+                    type="button"
+                    className="app-button app-button--secondary"
+                    onClick={() => requestMedalModalPreview(true)}
+                    style={{
+                      width: '100%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 8,
+                      padding: '14px',
+                      borderRadius: 16,
+                      fontWeight: 800,
+                      border: '1px solid #fde68a',
+                      background: '#fffbeb',
+                      color: '#92400e',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Sparkles size={16} />
+                    Preview multi-medal modal
                   </button>
                 </div>
               </div>
