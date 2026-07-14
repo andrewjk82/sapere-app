@@ -571,6 +571,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           challengeType,
           questionIndex: 0,
           hasHint: Boolean(String(q0?.hint || '').trim()),
+          hintText: String(q0?.hint || '').trim(),
           timeLimit: Number(q0?.timeLimit) || 30,
         },
       }));
@@ -737,6 +738,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             challengeType,
             questionIndex: idx,
             hasHint: Boolean(String(q?.hint || '').trim()),
+            hintText: String(q?.hint || '').trim(),
             timeLimit: Number(q?.timeLimit) || 30,
           },
         }));
@@ -789,8 +791,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     const limit = Number(q.timeLimit) || 30;
     const half = Math.max(1, Math.ceil(limit / 2));
     if (!(timeLeft > 0 && timeLeft <= half)) return;
-    const hasHint = Boolean(String(q.hint || '').trim());
-    if (!hasHint) return;
+    const hintText = String(q.hint || '').trim();
+    if (!hintText) return;
     const key = `${currentIdx}`;
     if (midtimeHintFiredRef.current.has(key)) return;
     midtimeHintFiredRef.current.add(key);
@@ -802,6 +804,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           challengeType,
           questionIndex: currentIdx,
           hasHint: true,
+          hintText,
           timeLeft,
           timeLimit: limit,
         },
@@ -2180,6 +2183,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                         challengeType: d.challengeType,
                         questionIndex: d.currentIdx,
                         hasHint: Boolean(String(rq?.hint || '').trim()),
+                        hintText: String(rq?.hint || '').trim(),
                         timeLimit: Number(rq?.timeLimit) || 30,
                       },
                     }));

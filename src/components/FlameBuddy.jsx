@@ -520,9 +520,27 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
   };
 };
 
+/** Flatten question hint text for FlameBuddy bubble (plain speech, not "open hint"). */
+const formatHintForBubble = (raw) => {
+  let t = String(raw || '').trim();
+  if (!t) return '';
+  // Soft-clean common markup noise for readable speech.
+  t = t
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/\$+/g, '')
+    .replace(/\\\(|\\\)|\\\[|\\\]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // Prefer first step if multi-step numbered hints.
+  const firstStep = t.split(/\s(?=\d+[\.)]\s)|(?=Step\s+\d+)/i)[0]?.trim() || t;
+  const body = firstStep.length >= 24 ? firstStep : t;
+  if (body.length > 280) return `${body.slice(0, 277).trim()}…`;
+  return body;
+};
+
 /**
  * During an active quiz: hold pre-practice briefing; coach working-out first,
- * then (at ~50% time left) nudge the question hint when one exists.
+ * then (at ~50% time left) speak the question hint directly in the bubble.
  */
 const buildInQuizSpeech = (firstName, seedBase, session = {}) => {
   const n = firstName || '';
@@ -531,28 +549,21 @@ const buildInQuizSpeech = (firstName, seedBase, session = {}) => {
   const mode = session.mode === 'hint' ? 'hint' : 'working-out';
 
   if (mode === 'hint') {
-    const lines = [
-      {
-        msg: `${hey} — about half the clock left.`,
-        sub: 'Stuck? Open the hint on this question. A small nudge beats staring at a blank pad.',
-      },
-      {
-        msg: `Time is halfway gone${n ? `, ${n}` : ''}.`,
-        sub: 'There is a hint for this one — tap Show hint if you need a foothold, then write the steps.',
-      },
-      {
-        msg: `${hey}, mid-timer check.`,
-        sub: 'Hint is available. Peek, then work it out on the sketch board — not just the final tap.',
-      },
+    const hintText = formatHintForBubble(session.hintText);
+    const openers = [
+      `${hey} — halfway on the clock. Here's a hint:`,
+      `Mid-timer tip${n ? ` for ${n}` : ''}:`,
+      `${hey}, try this:`,
     ];
-    const line = pickLine(lines, `${seedBase}-inquiz-hint-${session.questionIndex ?? 0}`, firstName);
+    const opener = openers[Math.abs(Number(session.questionIndex) || 0) % openers.length];
     return {
       mood: 'hint',
-      eyebrow: 'Hint available',
-      msg: line.msg,
-      sub: line.sub,
+      eyebrow: 'Hint',
+      msg: opener,
+      // Actual question hint in the bubble (not "tap Show hint").
+      sub: hintText || 'Look carefully at what the question is asking, then write one clear step on the pad.',
       cta: null,
-      key: `inquiz-hint-${seedBase}-q${session.questionIndex ?? 0}`,
+      key: `inquiz-hint-${seedBase}-q${session.questionIndex ?? 0}-${(hintText || '').slice(0, 24)}`,
     };
   }
 
@@ -1410,8 +1421,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
   // Live tip after each answer when sketch pad was empty/light (FlameBuddy speech).
   const [liveSketchTip, setLiveSketchTip] = useState(null); // { inkLevel, correct, questionIndex, until, id }
-  // Active Daily/Calc quiz: hold briefing; coach working-out → mid-timer hint.
-  const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint }
+  // Active Daily/Calc quiz: hold briefing; coach working-out → mid-timer hint text.
+  const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint, hintText }
   // Entrance phase: hidden → enter (pop) → ready.
   // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
   // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
@@ -1730,20 +1741,23 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           challengeType: e.detail?.challengeType || 'daily',
           questionIndex: Number(e.detail?.questionIndex) || 0,
           hasHint: Boolean(e.detail?.hasHint),
+          hintText: String(e.detail?.hintText || '').trim(),
         });
         setBubbleOpen(true);
         setDismissedKey('');
         return;
       }
       if (phase === 'midtime') {
-        // Only promote to hint mode when this question actually has a hint.
-        if (!e.detail?.hasHint) return;
+        // Only promote to hint mode when this question actually has hint text.
+        const hintText = String(e.detail?.hintText || '').trim();
+        if (!hintText && !e.detail?.hasHint) return;
         setQuizSession((prev) => ({
           active: true,
           mode: 'hint',
           challengeType: e.detail?.challengeType || prev?.challengeType || 'daily',
           questionIndex: Number(e.detail?.questionIndex) || 0,
           hasHint: true,
+          hintText: hintText || prev?.hintText || '',
         }));
         setBubbleOpen(true);
         setDismissedKey('');
