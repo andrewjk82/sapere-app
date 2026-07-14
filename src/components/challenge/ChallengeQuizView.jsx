@@ -176,7 +176,6 @@ const ChallengeQuizView = ({
   subAnswers,
   setSubAnswers,
   userAnswers,
-  answerResults = [],
   showHint,
   setShowHint,
   isSubmittingCanvas,
@@ -789,33 +788,6 @@ const ChallengeQuizView = ({
                 ? { accent: '#10b981', text: '#065f46', iconBg: '#d1fae5', barBg: '#ecfdf5', shadow: 'rgba(16,185,129,0.20)', label: 'Correct', icon: <CheckCircle2 size={32} color="#10b981" /> }
                 : { accent: '#ef4444', text: '#7f1d1d', iconBg: '#fee2e2', barBg: '#fef2f2', shadow: 'rgba(239,68,68,0.18)', label: 'Not quite', icon: <XCircle size={32} color="#ef4444" /> };
             const isLast = currentIdx === TOTAL_QUESTIONS - 1;
-            // Per-submit sketch coach: empty / light ink on the working-out pad.
-            const lastResult = answerResults?.[currentIdx];
-            const inkLevel = lastResult?.inkLevel
-              || (lastResult?.hadWorkingOut ? 'substantial' : (lastResult?.hadAnyInk ? 'light' : null));
-            const sketchWasAvailable = lastResult?.sketchAvailable === true || (showSplitScreen && lastResult != null);
-            const sketchTip = (() => {
-              if (!sketchWasAvailable || isPendingReview) return null;
-              if (inkLevel === 'empty' || (!inkLevel && lastResult?.sketchAvailable)) {
-                if (isCorrect) {
-                  return {
-                    title: 'Nice answer — write the steps too',
-                    body: 'The sketch board was empty. Next time jot a line of working out so the method sticks.',
-                  };
-                }
-                return {
-                  title: 'Try the sketch board next time',
-                  body: 'Working out was blank. Writing the steps first often catches small mistakes.',
-                };
-              }
-              if (inkLevel === 'light') {
-                return {
-                  title: 'A bit more on the pad',
-                  body: 'A few dots are a start — try writing full steps, not only a quick mark.',
-                };
-              }
-              return null;
-            })();
             return (
               <motion.div
                 ref={feedbackRef}
@@ -863,34 +835,6 @@ const ChallengeQuizView = ({
                 <div style={{ fontSize: '1.5rem', fontWeight: 800, color: palette.text, letterSpacing: '-0.01em', lineHeight: 1 }}>
                   {palette.label}
                 </div>
-
-                {/* Working-out coach — shows when sketch pad was empty / only light marks */}
-                {sketchTip && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.12 }}
-                    style={{
-                      width: '100%',
-                      maxWidth: 320,
-                      padding: '12px 14px',
-                      borderRadius: 14,
-                      background: '#fffbeb',
-                      border: '1px solid #fde68a',
-                      textAlign: 'left',
-                    }}
-                  >
-                    <div style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#b45309', marginBottom: 4 }}>
-                      Sketch tip
-                    </div>
-                    <div style={{ fontSize: '0.9rem', fontWeight: 800, color: '#78350f', lineHeight: 1.3 }}>
-                      {sketchTip.title}
-                    </div>
-                    <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#92400e', marginTop: 4, lineHeight: 1.4, opacity: 0.9 }}>
-                      {sketchTip.body}
-                    </div>
-                  </motion.div>
-                )}
 
                 {/* Thin animated countdown bar */}
                 <div style={{ width: '180px', height: '3px', background: palette.barBg, borderRadius: '999px', overflow: 'hidden' }}>

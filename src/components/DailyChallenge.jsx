@@ -1073,6 +1073,28 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       return newAnswers;
     });
 
+    // Sketch ink for this submit — shared by answerResults + FlameBuddy speech.
+    // empty | light (dots) | substantial (real steps)
+    const sketchAvailable = Boolean(showSplitScreen);
+    let inkLevel = null;
+    let inkStats = null;
+    if (sketchAvailable) {
+      try {
+        inkStats = canvasRef.current?.getInkStats?.() || null;
+        inkLevel = inkStats?.level
+          || (canvasRef.current?.hasContent?.() ? 'light' : 'empty');
+      } catch {
+        inkLevel = canvasRef.current?.hasContent?.() ? 'light' : 'empty';
+      }
+      // If we exported an image but stats say empty (race), treat as light at least.
+      if (inkLevel === 'empty' && (canvasDataUrl || canvasPageImages?.length)) {
+        inkLevel = 'light';
+      }
+      if (!inkLevel) inkLevel = 'empty';
+    }
+    const hadWorkingOut = inkLevel === 'substantial';
+    const hadAnyInk = inkLevel === 'light' || inkLevel === 'substantial';
+
     setAnswerResults(prev => {
       const newResults = [...prev];
       const pEarned = currentQ?.subQuestions?.length > 0 
@@ -1081,28 +1103,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       const tPoints = currentQ?.subQuestions?.length > 0 
         ? (currentQ.subQuestions.length)
         : 1;
-
-      // Sketch board was part of this question layout (even if canvas ref is slow).
-      // empty | light (dots) | substantial (real steps) — FlameBuddy + per-answer tip.
-      const sketchAvailable = Boolean(showSplitScreen);
-      let inkLevel = null;
-      let inkStats = null;
-      if (sketchAvailable) {
-        try {
-          inkStats = canvasRef.current?.getInkStats?.() || null;
-          inkLevel = inkStats?.level
-            || (canvasRef.current?.hasContent?.() ? 'light' : 'empty');
-        } catch {
-          inkLevel = canvasRef.current?.hasContent?.() ? 'light' : 'empty';
-        }
-        // If we exported an image but stats say empty (race), treat as light at least.
-        if (inkLevel === 'empty' && (canvasDataUrl || canvasPageImages?.length)) {
-          inkLevel = 'light';
-        }
-        if (!inkLevel) inkLevel = 'empty';
-      }
-      const hadWorkingOut = inkLevel === 'substantial';
-      const hadAnyInk = inkLevel === 'light' || inkLevel === 'substantial';
 
       newResults[currentIdx] = {
         questionId: currentQ?.id || null,
@@ -1137,6 +1137,22 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     setStep('feedback');
     // Brief pastel flash on the quiz view to give an instant emotional cue.
     setFlash(isGraphSketch ? 'pending' : (correct ? 'correct' : 'wrong'));
+
+    // FlameBuddy speaks when the working-out pad was empty / only light marks.
+    // (Not graph_sketch "pending review" — those boards are the answer itself.)
+    if (showSplitScreen && !isGraphSketch && user?.uid && inkLevel) {
+      try {
+        window.dispatchEvent(new CustomEvent('sapere:sketch-submit-tip', {
+          detail: {
+            uid: user.uid,
+            inkLevel,
+            correct: Boolean(correct),
+            questionIndex: currentIdx,
+            challengeType,
+          },
+        }));
+      } catch { /* ignore */ }
+    }
 
     // Auto-advance after 3 seconds for ALL outcomes — feedback is intentionally
     // minimal now (just correct/wrong + countdown). The detailed worked
@@ -2133,7 +2149,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   subAnswers={subAnswers}
                   setSubAnswers={setSubAnswers}
                   userAnswers={userAnswers}
-                  answerResults={answerResults}
                   showHint={showHint}
                   setShowHint={setShowHint}
                   isSubmittingCanvas={isSubmittingCanvas}
