@@ -7,6 +7,7 @@ import {
   getChallengeBootCacheKey,
   mergeChallengeBootCache,
 } from '../utils/challengeUtils';
+import { markLocalChallengeCompleted } from '../services/secretNoteBonusService';
 
 // Module-level cache: { [uid:date]: { daily, calc, fetchedAt } }
 // Prevents redundant Firestore reads when the component re-mounts or the user
@@ -105,6 +106,8 @@ export const useChallengeHistory = (uid, {
         const completed = Boolean(todayDaily.completed);
         setTodayCompleted(completed);
         setAbandonedToday(!completed);
+        // Persist across midnight for Secret Note clear-bonus eligibility.
+        if (completed) markLocalChallengeCompleted(uid, today, 'daily');
       } else if (cachedBoot?.date === today && !cachedBoot.todayCompleted && !cachedBoot.abandonedToday) {
         setTodayCompleted(false);
         setAbandonedToday(false);
@@ -118,6 +121,7 @@ export const useChallengeHistory = (uid, {
         const completed = Boolean(todayCalc.completed);
         setCalcCompletedToday(completed);
         setCalcAbandonedToday(!completed);
+        if (completed) markLocalChallengeCompleted(uid, today, 'calc');
       } else if (cachedBoot?.date === today && !cachedBoot.calcCompletedToday && !cachedBoot.calcAbandonedToday) {
         setCalcCompletedToday(false);
         setCalcAbandonedToday(false);

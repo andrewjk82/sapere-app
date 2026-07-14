@@ -48,6 +48,7 @@ import { useChallengeHistory } from '../hooks/useChallengeHistory';
 
 // Secret Notebook (local-only mistake review)
 import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
+import { markLocalChallengeCompleted } from '../services/secretNoteBonusService';
 
 // Answer matching (shared with ExamPrep)
 import { answersMatch } from '../utils/answerMatching';
@@ -1657,10 +1658,13 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         if (challengeType === 'daily') {
           setTodayCompleted(true);
           setAbandonedToday(false);
+          // Stamp for next-day Secret Note clear bonus (skipped days must not award).
+          if (!isAbandoned) markLocalChallengeCompleted(user.uid, today, 'daily');
         } else if (challengeType === 'calc') {
           setCalcCompletedToday(true);
           setCalcAbandonedToday(false);
           setCalcSessionMeta(null);
+          if (!isAbandoned) markLocalChallengeCompleted(user.uid, today, 'calc');
         }
         const cacheKey = getChallengeBootCacheKey(user.uid);
         const cachedBoot = localCache.get(cacheKey) || {};
