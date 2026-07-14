@@ -19,6 +19,7 @@ import { CURRICULUM_DATA } from "../constants/curriculumData";
 import {
   getQuestionBlueprint,
   getQuestionTargets,
+  generateQuestion,
 } from "./questionGenerator";
 import { localCache } from "./localCacheService";
 import {
@@ -584,6 +585,17 @@ const pruneSeenQuestions = async (uid, ids) => {
   }
 };
 
+// Stable content hash for generated questions so they get an ID — enabling
+// seen-tracking and within-quiz de-duplication for the procedural pool too.
+const hashGeneratedQuestion = (question) => {
+  const text = `${question?.question || ""}|${question?.answer ?? ""}`;
+  let h = 5381;
+  for (let i = 0; i < text.length; i += 1) {
+    h = ((h << 5) + h + text.charCodeAt(i)) | 0; // djb2
+  }
+  return `gen-${(h >>> 0).toString(36)}`;
+};
+
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid, membershipVersion) => {
   const { ensurePracticePool, selectDailyQuestions, pickExtraPoolIds } = await import("./practicePoolService");
 
@@ -604,8 +616,8 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
 
   const targets = buildDailyTargets(studentProfile);
 
-  // Year 1-4: seed MCQ only from bank (open-ended bank items skipped — no generator).
-  // Year 5+: all active seed types (short answer allowed).
+  // Year 1-4: seed MCQ only from bank; open-ended skipped; shortfall → generator.
+  // Year 5+: all active seed types (short answer allowed); pool top-up only.
   const isPrimaryStudent = targets.assignedYears.some((y) => getYearNumber(y) < 5);
 
   const passesBankFilter = (d) => {
@@ -661,8 +673,35 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     if (addedThisRound === 0) break;
   }
 
-  // No procedural generator — bank/pool only. If still short, the quiz ships
-  // with fewer questions (pool exhausted or all remaining filtered out).
+  // Top up any remaining shortfall with procedural generation for Year 1–4 only.
+  // Year 5+ stay seed-only (pool top-up above is their fill path).
+  // Primary (Y1–4) bank is thin on MCQs — without this, students get 0 questions.
+  const generationYears = targets.assignedYears.filter((y) => getYearNumber(y) < 5);
+  let generatedCount = 0;
+  if (generationYears.length > 0 && questions.length < questionCount) {
+    const need = questionCount - questions.length;
+    const difficulties = ["easy", "medium", "hard"];
+    const maxAttempts = need * 6 + 6;
+    for (let attempt = 0; attempt < maxAttempts && generatedCount < need; attempt += 1) {
+      let generated;
+      try {
+        generated = generateQuestion({
+          year: generationYears,
+          course: targets.assignedCourses,
+          assignedChapters: targets.assignedChapters,
+          assignedTopics: targets.assignedTopics,
+        }, difficulties[generatedCount % difficulties.length]);
+      } catch (err) {
+        console.warn("Daily question generation failed:", err?.message || err);
+        break;
+      }
+      const withId = correctQuestionAnswer({ ...generated, id: hashGeneratedQuestion(generated) });
+      if (usedIds.has(String(withId.id))) continue;
+      usedIds.add(String(withId.id));
+      questions.push(withId);
+      generatedCount += 1;
+    }
+  }
 
   return {
     questions,
@@ -672,8 +711,8 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
       chapters: Object.keys(chapterBreakdown),
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
-      manualQuestionCount: questions.length,
-      generatedQuestionCount: 0,
+      manualQuestionCount: questions.length - generatedCount,
+      generatedQuestionCount: generatedCount,
       poolTopUpCount,
     },
   };
