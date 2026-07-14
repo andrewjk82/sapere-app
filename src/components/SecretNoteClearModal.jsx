@@ -370,7 +370,7 @@ function buildCopy(payload, firstName, bonusXp) {
   // Clean sweep — both notebooks clear same night (+10 with calc).
   if (both) {
     return {
-      msg: `${hey}! Amazing — Daily and Calculation Secret Notes are both clear.`,
+      msg: `${hey}! Amazing — Daily Practice and Calculation Secret Notes are both clear.`,
       sub: `That’s a full +${xp} XP clean sweep. You’re on fire — keep it up!`,
     };
   }
@@ -383,19 +383,19 @@ function buildCopy(payload, firstName, bonusXp) {
     };
   }
 
-  // +5: cleared Daily only → nudge Calculation for the full 10 next time.
+  // +5: cleared Daily Practice notebook only → nudge Calculation for full +10.
   if (onlyDailyHalf) {
     return {
-      msg: `${hey}! Congrats — well done clearing your Daily Secret Note.`,
-      sub: `That’s +${xp} XP today. Tomorrow finish Calculation Secret Note too and grab the full +10!`,
+      msg: `${hey}! Congrats — well done clearing your Daily Practice Secret Note.`,
+      sub: `That’s +${xp} XP today. Tomorrow finish Calculation too and grab the full +10!`,
     };
   }
 
-  // +5: cleared Calc only → nudge Daily for the full 10 next time.
+  // +5: cleared Calculation notebook only → nudge Daily Practice for full +10.
   if (onlyCalcHalf) {
     return {
       msg: `${hey}! Congrats — well done clearing your Calculation Secret Note.`,
-      sub: `That’s +${xp} XP today. Tomorrow finish Daily Secret Note too and grab the full +10!`,
+      sub: `That’s +${xp} XP today. Tomorrow finish Daily Practice too and grab the full +10!`,
     };
   }
 
