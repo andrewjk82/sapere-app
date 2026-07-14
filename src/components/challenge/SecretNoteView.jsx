@@ -31,7 +31,8 @@ const SN_QUICK_INSERTS = [
 import { answersMatch } from '../../utils/answerMatching';
 import {
   MISTAKE_TAGS,
-  getNote,
+  getDueNote,
+  getNoteCount,
   generateTwin,
   recordResult,
   recordTwinResult,
@@ -383,10 +384,12 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     : { from: '#a78bfa', to: '#8b5cf6', soft: '#ede9fe', text: '#6d28d9' };
   const title = kind === 'calc' ? 'Secret Note · Calculation' : 'Secret Note · Daily';
 
-  // Notebook snapshot for this session (refreshed after blocklist sync).
-  const [queue, setQueue] = useState(() => getNote(kind, uid));
+  // Session queue = items DUE now only (matches "N questions ready to review").
+  // Future-scheduled cards stay in the notebook until nextReviewAt arrives.
+  const [queue, setQueue] = useState(() => getDueNote(kind, uid));
   const [idx, setIdx] = useState(0);
-  const [phase, setPhase] = useState(() => (getNote(kind, uid).length === 0 ? 'empty' : 'solve'));
+  const [phase, setPhase] = useState(() => (getDueNote(kind, uid).length === 0 ? 'empty' : 'solve'));
+  const [savedTotal] = useState(() => getNoteCount(kind, uid));
 
   // Blocklist: one getDoc on open (not a permanent App-level onSnapshot).
   // If server version changed, prune local notes and refresh the queue.
@@ -396,7 +399,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     (async () => {
       const removed = await syncSecretNoteBlocklist(uid);
       if (cancelled || removed <= 0) return;
-      const next = getNote(kind, uid);
+      const next = getDueNote(kind, uid);
       setQueue(next);
       setIdx(0);
       setPhase(next.length === 0 ? 'empty' : 'solve');
@@ -699,15 +702,18 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     progressPct: queue.length > 0 ? (idx / queue.length) * 100 : 0,
   };
 
-  // Empty notebook
+  // Empty notebook — either nothing saved, or only future-scheduled reviews.
   if (phase === 'empty') {
+    const scheduledOnly = savedTotal > 0;
     return (
-      <NoteShell {...shellProps}>
+      <NoteShell {...shellProps} subtitle={scheduledOnly ? `${savedTotal} saved · next review later` : '0 saved'}>
         <div className="sn__card sn__center">
-          <div className="sn__big-emoji">🎉</div>
-          <h2 className="sn__h2">Notebook is clear!</h2>
+          <div className="sn__big-emoji">{scheduledOnly ? '📅' : '🎉'}</div>
+          <h2 className="sn__h2">{scheduledOnly ? 'Nothing due right now' : 'Notebook is clear!'}</h2>
           <p className="sn__muted">
-            You have no mistakes saved for this test. Keep up the great work.
+            {scheduledOnly
+              ? `You still have ${savedTotal} note${savedTotal === 1 ? '' : 's'} saved for later spaced review. Come back when they're due.`
+              : 'You have no mistakes saved for this test. Keep up the great work.'}
             {summary.xp > 0 ? ` Clear bonus: +${summary.xp} XP.` : ''}
           </p>
           <button className="sn__btn sn__btn--primary" style={{ background: headerGradient }} onClick={onClose}>

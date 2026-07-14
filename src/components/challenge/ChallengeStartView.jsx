@@ -48,11 +48,15 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
   const m = KIND[kind];
   const total = note?.total || 0;
   const due = note?.due || 0;
+  // "ready to review" = due only. Future-scheduled cards stay saved but are
+  // not opened in this session — copy must not contradict the session queue.
   const sub = total === 0
     ? 'no notes yet'
     : due > 0
-    ? `${due} questions ready to review`
-    : `${total} saved · all reviewed`;
+    ? (total > due
+      ? `${due} ready to review · ${total} saved`
+      : `${due} question${due === 1 ? '' : 's'} ready to review`)
+    : `${total} saved · next review later`;
   return (
     <button
       type="button"

@@ -94,13 +94,29 @@ export function generateTwin(q) {
 }
 
 // ── Reads ─────────────────────────────────────────────────────────────────
-export function getNote(kind, uid) {
-  const items = read(kind, uid);
+const isDue = (it, now = Date.now()) => (it.nextReviewAt || 0) <= now;
+
+const shuffleInPlace = (items) => {
   for (let i = items.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [items[i], items[j]] = [items[j], items[i]];
   }
   return items;
+};
+
+/** All notebook items (including future-scheduled reviews). */
+export function getNote(kind, uid) {
+  return shuffleInPlace(read(kind, uid));
+}
+
+/**
+ * Only items due for review now (nextReviewAt <= now).
+ * The start-screen "ready to review" count uses this same filter — the session
+ * queue must match so students don't open "1 ready" and find 5 cards.
+ */
+export function getDueNote(kind, uid) {
+  const now = Date.now();
+  return shuffleInPlace(read(kind, uid).filter((it) => isDue(it, now)));
 }
 
 export function getNoteCount(kind, uid) {
@@ -110,7 +126,7 @@ export function getNoteCount(kind, uid) {
 // Items whose nextReviewAt has arrived (forgetting-curve due today).
 export function getDueCount(kind, uid) {
   const now = Date.now();
-  return read(kind, uid).filter((it) => (it.nextReviewAt || 0) <= now).length;
+  return read(kind, uid).filter((it) => isDue(it, now)).length;
 }
 
 export function getTagCounts(kind, uid) {
