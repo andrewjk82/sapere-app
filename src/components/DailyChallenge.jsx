@@ -558,9 +558,23 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     quizStartTimeRef.current = Date.now();
     setElapsedSeconds(null);
     setStep('quiz');
-    setupQuestion(combinedQs[0]);
+    setupQuestion(combinedQs[0], 0);
     if (setIsLocked) setIsLocked(true);
     setLoading(false);
+    // FlameBuddy: hold pre-practice briefing; coach working-out during the quiz.
+    try {
+      const q0 = combinedQs?.[0];
+      window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+        detail: {
+          uid: user?.uid,
+          phase: 'start',
+          challengeType,
+          questionIndex: 0,
+          hasHint: Boolean(String(q0?.hint || '').trim()),
+          timeLimit: Number(q0?.timeLimit) || 30,
+        },
+      }));
+    } catch { /* ignore */ }
   };
 
   const startCalculationQuiz = async () => {
@@ -702,7 +716,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     }
   };
 
-  const setupQuestion = (q) => {
+  const setupQuestion = (q, idx = currentIdx) => {
     setTimeLeft(q.timeLimit || 30);
     setQuestionStartTime(Date.now());
     setSelectedOption(null);
@@ -713,6 +727,21 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     if (canvasRef.current) {
       try { canvasRef.current.clear(); } catch(e) {}
     }
+    // New question in an active quiz → working-out mode again (midtime tip resets per Q).
+    try {
+      if (user?.uid) {
+        window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+          detail: {
+            uid: user.uid,
+            phase: 'question',
+            challengeType,
+            questionIndex: idx,
+            hasHint: Boolean(String(q?.hint || '').trim()),
+            timeLimit: Number(q?.timeLimit) || 30,
+          },
+        }));
+      }
+    } catch { /* ignore */ }
 
     // Shuffle multiple-choice options.
     // For isManual questions the answer is stored as an option index ("0","1"…).
@@ -747,8 +776,50 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   // time the user types, but the timer only needs the final snapshot).
   const selectedOptionRef = useRef(selectedOption);
   const selectedOptionIdxRef = useRef(selectedOptionIdx);
+  // One mid-timer FlameBuddy hint per question index (when hint exists).
+  const midtimeHintFiredRef = useRef(new Set());
   useEffect(() => { selectedOptionRef.current = selectedOption; }, [selectedOption]);
   useEffect(() => { selectedOptionIdxRef.current = selectedOptionIdx; }, [selectedOptionIdx]);
+
+  // ~50% time remaining → FlameBuddy hint nudge (if this question has a hint).
+  useEffect(() => {
+    if (step !== 'quiz' || !user?.uid) return;
+    const q = questions[currentIdx];
+    if (!q) return;
+    const limit = Number(q.timeLimit) || 30;
+    const half = Math.max(1, Math.ceil(limit / 2));
+    if (!(timeLeft > 0 && timeLeft <= half)) return;
+    const hasHint = Boolean(String(q.hint || '').trim());
+    if (!hasHint) return;
+    const key = `${currentIdx}`;
+    if (midtimeHintFiredRef.current.has(key)) return;
+    midtimeHintFiredRef.current.add(key);
+    try {
+      window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+        detail: {
+          uid: user.uid,
+          phase: 'midtime',
+          challengeType,
+          questionIndex: currentIdx,
+          hasHint: true,
+          timeLeft,
+          timeLimit: limit,
+        },
+      }));
+    } catch { /* ignore */ }
+  }, [timeLeft, step, currentIdx, questions, user?.uid, challengeType]);
+
+  // Clear midtime keys when a fresh quiz starts.
+  useEffect(() => {
+    if (step === 'quiz' && currentIdx === 0 && timeLeft > 0) {
+      // Don't wipe on every tick — only when beginning a session (idx 0 + full-ish timer).
+      const limit = Number(questions[0]?.timeLimit) || 30;
+      if (timeLeft >= limit - 1) midtimeHintFiredRef.current = new Set();
+    }
+    if (step === 'start' || step === 'result') {
+      midtimeHintFiredRef.current = new Set();
+    }
+  }, [step, currentIdx, timeLeft, questions]);
 
   useEffect(() => {
     if (step !== 'quiz' || !questionStartTime) return;
@@ -1192,7 +1263,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     if (currentIdx < TOTAL_QUESTIONS - 1) {
       const nextIdx = currentIdx + 1;
       setCurrentIdx(nextIdx);
-      setupQuestion(questions[nextIdx]);
+      setupQuestion(questions[nextIdx], nextIdx);
       setStep('quiz');
     } else {
       await finishQuiz();
@@ -1202,6 +1273,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     if (isFinishingRef.current) return;
     isFinishingRef.current = true;
     clearDraft();
+    // Release FlameBuddy quiz hold so post-result / briefing can speak again.
+    try {
+      window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+        detail: { uid: user?.uid, phase: 'end', challengeType },
+      }));
+    } catch { /* ignore */ }
     // Declared outside try so catch block can safely reference it
     const currentAnswerResults = answerResults || [];
     // Point-based score (each sub-question part = 1 point) — used ONLY for XP.
@@ -2094,6 +2171,19 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   setStep('quiz');
                   if (setIsLocked) setIsLocked(true);
                   setRestoredDraft(null);
+                  try {
+                    const rq = d.questions?.[d.currentIdx];
+                    window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
+                      detail: {
+                        uid: user?.uid,
+                        phase: 'start',
+                        challengeType: d.challengeType,
+                        questionIndex: d.currentIdx,
+                        hasHint: Boolean(String(rq?.hint || '').trim()),
+                        timeLimit: Number(rq?.timeLimit) || 30,
+                      },
+                    }));
+                  } catch { /* ignore */ }
                 }
                 return null;
               })()}

@@ -521,6 +521,68 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
 };
 
 /**
+ * During an active quiz: hold pre-practice briefing; coach working-out first,
+ * then (at ~50% time left) nudge the question hint when one exists.
+ */
+const buildInQuizSpeech = (firstName, seedBase, session = {}) => {
+  const n = firstName || '';
+  const hey = n ? `Hey ${n}` : 'Hey';
+  const kind = session.challengeType === 'calc' ? 'sprint' : 'practice';
+  const mode = session.mode === 'hint' ? 'hint' : 'working-out';
+
+  if (mode === 'hint') {
+    const lines = [
+      {
+        msg: `${hey} — about half the clock left.`,
+        sub: 'Stuck? Open the hint on this question. A small nudge beats staring at a blank pad.',
+      },
+      {
+        msg: `Time is halfway gone${n ? `, ${n}` : ''}.`,
+        sub: 'There is a hint for this one — tap Show hint if you need a foothold, then write the steps.',
+      },
+      {
+        msg: `${hey}, mid-timer check.`,
+        sub: 'Hint is available. Peek, then work it out on the sketch board — not just the final tap.',
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-inquiz-hint-${session.questionIndex ?? 0}`, firstName);
+    return {
+      mood: 'hint',
+      eyebrow: 'Hint available',
+      msg: line.msg,
+      sub: line.sub,
+      cta: null,
+      key: `inquiz-hint-${seedBase}-q${session.questionIndex ?? 0}`,
+    };
+  }
+
+  // Default in-quiz: working-out focus (holds pre-practice briefing).
+  const lines = [
+    {
+      msg: `${hey} — ${kind} is live. Use the sketch pad.`,
+      sub: 'Write the steps next to the question before you choose. Working out first, then submit.',
+    },
+    {
+      msg: `Quick focus${n ? `, ${n}` : ''}: pen on the board.`,
+      sub: "Don't only pick the answer — jot numbers, arrows, the path. I am watching the pad (nicely).",
+    },
+    {
+      msg: `${hey}, show your working out.`,
+      sub: 'Even one clear line on the sketch board helps. Steps stick better than a blank board.',
+    },
+  ];
+  const line = pickLine(lines, `${seedBase}-inquiz-wo`, firstName);
+  return {
+    mood: 'thinking',
+    eyebrow: 'Working out',
+    msg: line.msg,
+    sub: line.sub,
+    cta: null,
+    key: `inquiz-wo-${seedBase}`,
+  };
+};
+
+/**
  * Live tip right after a single answer submit when the sketch pad was thin.
  * FlameBuddy bubble — not inline quiz UI.
  */
@@ -1348,6 +1410,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
   // Live tip after each answer when sketch pad was empty/light (FlameBuddy speech).
   const [liveSketchTip, setLiveSketchTip] = useState(null); // { inkLevel, correct, questionIndex, until, id }
+  // Active Daily/Calc quiz: hold briefing; coach working-out → mid-timer hint.
+  const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint }
   // Entrance phase: hidden → enter (pop) → ready.
   // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
   // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
@@ -1610,6 +1674,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       try { localCache.remove(`flame-buddy-perf-v1-${uid}`); } catch { /* ignore */ }
       setRecentPerf([]);
       setLiveSketchTip(null); // session wrap-up replaces mid-quiz tips
+      setQuizSession(null);
       setResultCoach({
         score,
         total,
@@ -1650,13 +1715,49 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       setBubbleOpen(true);
       setDismissedKey('');
     };
+    // Quiz lifecycle: start holds briefing; midtime may surface hint; end clears.
+    const onQuizSession = (e) => {
+      if (e.detail?.uid && e.detail.uid !== uid) return;
+      const phase = e.detail?.phase;
+      if (phase === 'end') {
+        setQuizSession(null);
+        return;
+      }
+      if (phase === 'start' || phase === 'question') {
+        setQuizSession({
+          active: true,
+          mode: 'working-out',
+          challengeType: e.detail?.challengeType || 'daily',
+          questionIndex: Number(e.detail?.questionIndex) || 0,
+          hasHint: Boolean(e.detail?.hasHint),
+        });
+        setBubbleOpen(true);
+        setDismissedKey('');
+        return;
+      }
+      if (phase === 'midtime') {
+        // Only promote to hint mode when this question actually has a hint.
+        if (!e.detail?.hasHint) return;
+        setQuizSession((prev) => ({
+          active: true,
+          mode: 'hint',
+          challengeType: e.detail?.challengeType || prev?.challengeType || 'daily',
+          questionIndex: Number(e.detail?.questionIndex) || 0,
+          hasHint: true,
+        }));
+        setBubbleOpen(true);
+        setDismissedKey('');
+      }
+    };
     window.addEventListener('sapere:daily-practice-completed', onDone);
     window.addEventListener('sapere:challenge-result', onResult);
     window.addEventListener('sapere:sketch-submit-tip', onSketchSubmit);
+    window.addEventListener('sapere:quiz-session', onQuizSession);
     return () => {
       window.removeEventListener('sapere:daily-practice-completed', onDone);
       window.removeEventListener('sapere:challenge-result', onResult);
       window.removeEventListener('sapere:sketch-submit-tip', onSketchSubmit);
+      window.removeEventListener('sapere:quiz-session', onQuizSession);
     };
   }, [uid, today]);
 
@@ -1733,6 +1834,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       });
     }
 
+    // Active quiz: hold pre-practice briefing; working-out first, then mid-timer hint.
+    if (quizSession?.active) {
+      return buildInQuizSpeech(firstName, `${seedBase}-quiz`, quizSession);
+    }
+
     // cheerUntil is a timestamp; non-zero means still celebrating (cleared by timer).
     if (cheerUntil) {
       const line = pickLine(COPY.bothDone, `${rotateSeed}-cheer`, firstName);
@@ -1751,7 +1857,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       return buildScheduleSpeech(nextSession, firstName);
     }
 
-    // On Challenge tab: performance report + teacher feedback + secret-note backlog.
+    // On Challenge tab (start screen only — quiz holds briefing via quizSession):
+    // performance report + teacher feedback + secret-note backlog.
     if (activeTab === 'Challenge') {
       return buildChallengeBriefing(recentPerf, firstName, `${rotateSeed}-ch`, {
         unreadFeedback,
@@ -1816,7 +1923,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}-${slot}-${speechEpoch}`,
     };
-  }, [cheerUntil, resultCoach, liveSketchTip, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch]);
+  }, [cheerUntil, resultCoach, liveSketchTip, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.
