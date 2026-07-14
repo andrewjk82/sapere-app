@@ -363,25 +363,42 @@ function buildCopy(payload, firstName, bonusXp) {
   const hey = n ? `Hey ${n}` : 'Hey';
   const xp = bonusXp || 10;
   const both = payload?.claimDaily && payload?.claimCalc;
+  // Partial +5 with calc enabled (not the daily-only full +10 path).
+  const onlyDailyHalf = !!payload?.claimDaily && !payload?.claimCalc && !payload?.dailyOnly;
+  const onlyCalcHalf = !!payload?.claimCalc && !payload?.claimDaily;
 
-  if (payload?.dailyOnly || (payload?.claimDaily && !payload?.claimCalc)) {
+  // Clean sweep — both notebooks clear same night (+10 with calc).
+  if (both) {
+    return {
+      msg: `${hey}! Amazing — Daily and Calculation Secret Notes are both clear.`,
+      sub: `That’s a full +${xp} XP clean sweep. You’re on fire — keep it up!`,
+    };
+  }
+
+  // Daily-only students (no calc feature) — full +10.
+  if (payload?.dailyOnly) {
     return {
       msg: `${hey}! You did a great job — keep going just like this.`,
       sub: `Zero Secret Notes left at last night’s check. +${xp} XP for you!`,
     };
   }
-  if (both) {
+
+  // +5: cleared Daily only → nudge Calculation for the full 10 next time.
+  if (onlyDailyHalf) {
     return {
-      msg: `${hey}! Daily and Calculation notebooks are clear. Amazing.`,
-      sub: `That’s +${xp} XP for the clean sweep. Stay this sharp!`,
+      msg: `${hey}! Congrats — well done clearing your Daily Secret Note.`,
+      sub: `That’s +${xp} XP today. Tomorrow finish Calculation Secret Note too and grab the full +10!`,
     };
   }
-  if (payload?.claimCalc) {
+
+  // +5: cleared Calc only → nudge Daily for the full 10 next time.
+  if (onlyCalcHalf) {
     return {
-      msg: `${hey}! Calculation Secret Note is empty. Love that.`,
-      sub: `+${xp} XP added. Keep the streak kind and clean.`,
+      msg: `${hey}! Congrats — well done clearing your Calculation Secret Note.`,
+      sub: `That’s +${xp} XP today. Tomorrow finish Daily Secret Note too and grab the full +10!`,
     };
   }
+
   return {
     msg: `${hey}! You did a great job — keep going just like this.`,
     sub: `No Secret Notes left overnight. +${xp} XP!`,

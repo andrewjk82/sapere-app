@@ -539,31 +539,62 @@ const Settings = () => {
                 <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '14px', lineHeight: 1.45 }}>
                   Preview the Secret Note clear celebration modal. Local only — no XP is awarded and nothing is written to Firebase.
                 </p>
-                <button
-                  type="button"
-                  className="app-button app-button--secondary"
-                  onClick={() => {
-                    // Modal only — no toast (celebration card is the feedback).
-                    requestSecretNoteClearModalPreview({ xp: 10, dailyOnly: true, claimDaily: true, claimCalc: false });
-                  }}
-                  style={{
-                    width: '100%',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: 8,
-                    padding: '14px',
-                    borderRadius: 16,
-                    fontWeight: 800,
-                    border: '1px solid #fbbf24',
-                    background: 'linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%)',
-                    color: '#92400e',
-                    cursor: 'pointer',
-                  }}
-                >
-                  <Sparkles size={16} />
-                  Preview Secret Note clear modal
-                </button>
+                <div style={{ display: 'grid', gap: 10 }}>
+                  <button
+                    type="button"
+                    className="app-button app-button--secondary"
+                    onClick={() => {
+                      requestSecretNoteClearModalPreview({ xp: 10, dailyOnly: true, claimDaily: true, claimCalc: false });
+                    }}
+                    style={{
+                      width: '100%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 8,
+                      padding: '14px',
+                      borderRadius: 16,
+                      fontWeight: 800,
+                      border: '1px solid #fbbf24',
+                      background: 'linear-gradient(180deg, #fffbeb 0%, #fef3c7 100%)',
+                      color: '#92400e',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Sparkles size={16} />
+                    Preview +10 (full clear)
+                  </button>
+                  <button
+                    type="button"
+                    className="app-button app-button--secondary"
+                    onClick={() => {
+                      // Partial daily clear — encourages finishing the other part for +10.
+                      requestSecretNoteClearModalPreview({
+                        xp: 5,
+                        dailyOnly: false,
+                        claimDaily: true,
+                        claimCalc: false,
+                      });
+                    }}
+                    style={{
+                      width: '100%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 8,
+                      padding: '14px',
+                      borderRadius: 16,
+                      fontWeight: 800,
+                      border: '1px solid #fde68a',
+                      background: '#fffbeb',
+                      color: '#92400e',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Sparkles size={16} />
+                    Preview +5 (one notebook)
+                  </button>
+                </div>
               </div>
             </section>
           )}
