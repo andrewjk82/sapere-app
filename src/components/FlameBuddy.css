@@ -650,6 +650,29 @@
   .fb-shadow { width: 30px; height: 7px; }
 }
 
+/* Embeddable avatar (modals / mode select) — full flame, not corner-fixed. */
+.fb-avatar-embed.fb-stage,
+.snc-fb-embed.fb-stage {
+  position: relative !important;
+  bottom: auto !important;
+  right: auto !important;
+  width: 90px !important;
+  height: 110px !important;
+  pointer-events: none !important;
+  z-index: 1 !important;
+  cursor: default;
+}
+.fb-avatar-embed .fb-flame,
+.snc-fb-embed .fb-flame {
+  transform: scale(0.95);
+  transform-origin: 50% 100%;
+}
+.fb-avatar-embed .fb-shadow,
+.snc-fb-embed .fb-shadow {
+  width: 36px;
+  height: 8px;
+}
+
 /* Soft boing when the avatar is tapped (overrides mood loops while active). */
 .fb-stage--bounce .fb-flame,
 .fb-stage--bounce .fb-flame.idle,

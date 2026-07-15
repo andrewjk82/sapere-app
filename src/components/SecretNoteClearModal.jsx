@@ -141,7 +141,7 @@ export default function SecretNoteClearModal({
                       delay: 0.65,
                     }}
                   >
-                    <FlameBuddyAvatar mood="idle" />
+                    <FlameBuddyAvatar mood="cheer" />
                   </motion.div>
                 </motion.div>
 

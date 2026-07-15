@@ -124,13 +124,17 @@
 }
 .cms-coach-avatar {
   flex-shrink: 0;
-  width: 72px;
-  height: 88px;
-  transform: scale(1.05);
+  width: 96px;
+  height: 116px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: visible;
 }
-.cms-coach-avatar .fb-stage {
-  width: 72px;
-  height: 88px;
+.cms-coach-avatar .fb-stage,
+.cms-coach-avatar .fb-avatar-embed {
+  width: 90px !important;
+  height: 110px !important;
 }
 .cms-coach-bubble {
   flex: 1;

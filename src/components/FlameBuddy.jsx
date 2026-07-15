@@ -1273,17 +1273,22 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'id
   );
 }
 
-/** Standalone avatar for modals — same SVG + face CSS as the floating coach. */
+/**
+ * Standalone avatar for modals — same SVG + face CSS as the floating coach.
+ * Gradient IDs must stay unprefixed ("fb-cheerOuterGrad" etc.) so mood CSS
+ * in FlameBuddy.css can recolor the flame. Use only while the corner buddy
+ * is hidden (or alone on screen) to avoid duplicate SVG id clashes.
+ */
 export function FlameBuddyAvatar({ mood = 'cheer', className = '' }) {
   return (
-    <div className={`fb-stage snc-fb-embed ${className}`.trim()} aria-hidden>
+    <div className={`fb-stage fb-avatar-embed ${className}`.trim()} aria-hidden>
       <div className={`fb-flame ${mood}`}>
         <div className="fb-flame-wrap">
           <div className="fb-aura" />
           <div className="fb-ember fb-ember1" />
           <div className="fb-ember fb-ember2" />
           <div className="fb-ember fb-ember3" />
-          <FlameSvg idPrefix="snc-" />
+          <FlameSvg idPrefix="" />
           <div className="fb-sparkle fb-sparkle1" />
           <div className="fb-sparkle fb-sparkle2" />
           <div className="fb-sparkle fb-sparkle3" />
