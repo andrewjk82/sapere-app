@@ -179,7 +179,6 @@ export default function ChallengeModeSelect({
                       <ModeIcon name={mode.icon} />
                     </span>
                     <span className="cms-card-label">{mode.label}</span>
-                    <span className="cms-card-tag">{mode.tagline}</span>
                     <div className="cms-card-stats">
                       <span className="cms-stat">
                         <Clock size={13} />
