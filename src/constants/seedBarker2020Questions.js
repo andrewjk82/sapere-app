@@ -2395,11 +2395,16 @@ export const BARKER_2020_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Barker 2020 Trial Q17(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "q": "The function $f(x) = |x|$ is transformed and the new equation is of the form $y = kf(x+b)+c$. The graph of the new function has its vertex at $(2, 1)$, opens downward, and has a \"width\" twice that of $y=|x|$ (i.e. gradient $\\pm\\frac{1}{2}$). What are the values of $k$, $b$ and $c$?",
-    "a": "$k = -\\dfrac{1}{2}$, $b = -2$, $c = 1$",
-    "opts": [],
+    "options": [
+      "$k = -\\dfrac{1}{2}$, $b = -2$, $c = 1$",
+      "$k = -\\dfrac{1}{2}$, $b = 2$, $c = 1$",
+      "$k = \\dfrac{1}{2}$, $b = -2$, $c = 1$",
+      "$k = -2$, $b = -2$, $c = 1$"
+    ],
+    "answer": "0",
     "h": "The vertex of $y=k|x+b|+c$ is at $(-b,c)$. Flipped (downward) means $k<0$. The gradient magnitude gives $|k|$.",
     "s": "Vertex at $(2,1)$: $-b=2 \\Rightarrow b=-2$; $c=1$. Flipped downward: $k<0$. Gradient $=\\frac{1}{2}$: $|k|=\\frac{1}{2}$. So $k=-\\frac{1}{2}$.",
     "solutionSteps": [
@@ -2428,11 +2433,16 @@ export const BARKER_2020_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Adapted from Barker 2020 Trial Q17(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "q": "A transformed absolute value function has equation $y = kf(x+b)+c$ where $f(x)=|x|$. Its vertex is at $(-1, 3)$, it opens upward, and its gradient is $\\pm 2$. Find $k$, $b$, and $c$.",
-    "a": "$k = 2$, $b = 1$, $c = 3$",
-    "opts": [],
+    "options": [
+      "$k = 2$, $b = 1$, $c = 3$",
+      "$k = -2$, $b = 1$, $c = 3$",
+      "$k = 2$, $b = -1$, $c = 3$",
+      "$k = 2$, $b = 1$, $c = -3$"
+    ],
+    "answer": "0",
     "h": "Vertex at $(-b,c)=(-1,3)$. Upward means $k>0$. Gradient $=2$ means $|k|=2$.",
     "s": "$-b=-1 \\Rightarrow b=1$; $c=3$; opens upward so $k>0$; gradient $=2$ so $k=2$.",
     "solutionSteps": [

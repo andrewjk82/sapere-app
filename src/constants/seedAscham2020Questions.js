@@ -766,11 +766,16 @@ export const ASCHAM_2020_QUESTIONS = [
     "t": "The absolute value function",
     "source": "Ascham 2020 Trial Q11",
     "examPaper": "asc-2020",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Solve $|5 - 2x| = 3$.",
-    "a": "$x = 1$ or $x = 4$",
-    "opts": [],
+    "options": [
+      "$x = 1$ or $x = 4$",
+      "$x = -1$ or $x = 4$",
+      "$x = 1$ or $x = -4$",
+      "$x = 2$ or $x = 3$"
+    ],
+    "answer": "0",
     "h": "Split into two cases: $5 - 2x = 3$ and $5 - 2x = -3$.",
     "s": "Case 1: $5 - 2x = 3 \\Rightarrow x = 1$. Case 2: $5 - 2x = -3 \\Rightarrow 2x = 8 \\Rightarrow x = 4$.",
     "solutionSteps": [
@@ -807,11 +812,16 @@ export const ASCHAM_2020_QUESTIONS = [
     "t": "The absolute value function",
     "source": "Adapted from Ascham 2020 Trial Q11",
     "examPaper": "asc-2020",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Solve $|3x - 7| = 5$.",
-    "a": "$x = 4$ or $x = \\dfrac{2}{3}$",
-    "opts": [],
+    "options": [
+      "$x = 4$ or $x = \\dfrac{2}{3}$",
+      "$x = -4$ or $x = \\dfrac{2}{3}$",
+      "$x = 4$ or $x = -\\dfrac{2}{3}$",
+      "$x = 3$ or $x = 1$"
+    ],
+    "answer": "0",
     "h": "Split into two cases: $3x - 7 = 5$ and $3x - 7 = -5$.",
     "s": "Case 1: $3x - 7 = 5 \\Rightarrow 3x = 12 \\Rightarrow x = 4$. Case 2: $3x - 7 = -5 \\Rightarrow 3x = 2 \\Rightarrow x = \\frac{2}{3}$.",
     "solutionSteps": [

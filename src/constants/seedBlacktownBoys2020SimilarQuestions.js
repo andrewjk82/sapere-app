@@ -427,11 +427,17 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Similar to Blacktown Boys 2020 Trial Q13a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "marks": 2,
     "q": "The graph of $f(x) = |ax + b|$ has its vertex at $(1.5, 0)$ and $y$-intercept at $(0, 3)$. Find the values of $a$ and $b$.",
-    "a": "$a = 2,\\ b = -3$",
+    "options": [
+      "$a = 2,\\ b = -3$",
+      "$a = -2,\\ b = 3$",
+      "$a = 2,\\ b = 3$",
+      "$a = 1,\\ b = -1.5$"
+    ],
+    "answer": "0",
     "h": "At the vertex, $ax + b = 0$. Use the $y$-intercept to find $|b|$, then determine the sign of $b$.",
     "s": "Vertex at $x = 1.5$: $1.5a + b = 0$. $y$-intercept: $|b| = 3$, so $b = \\pm 3$. Testing $b = -3$: $a = 3/1.5 = 2$. Verify: $f(0) = |0 - 3| = 3$ ✓. So $a = 2$, $b = -3$.",
     "solutionSteps": [
@@ -455,11 +461,17 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Similar to Blacktown Boys 2020 Trial Q13b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "marks": 1,
     "q": "Given $f(x) = |2x - 3|$, solve $f(x) \\geq 5$.",
-    "a": "$x \\leq -1$ or $x \\geq 4$",
+    "options": [
+      "$x \\le -1$ or $x \\ge 4$",
+      "$-1 \\le x \\le 4$",
+      "$x \\le 1$ or $x \\ge 4$",
+      "$x \\le -1$ or $x \\ge 5$"
+    ],
+    "answer": "0",
     "h": "Solve $|2x - 3| \\geq 5$ by considering two cases.",
     "s": "Case 1: $2x - 3 \\geq 5 \\Rightarrow x \\geq 4$. Case 2: $2x - 3 \\leq -5 \\Rightarrow x \\leq -1$. Answer: $x \\leq -1$ or $x \\geq 4$.",
     "solutionSteps": [

@@ -427,11 +427,17 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Blacktown Boys 2020 Trial Q13a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "marks": 2,
     "q": "Given the graph of $f(x) = |ax + b|$, the graph has its vertex at $(2.5, 0)$ and $y$-intercept at $(0, 5)$. What are the values of $a$ and $b$?",
-    "a": "$a = 2,\\ b = -5$",
+    "options": [
+      "$a = 2,\\ b = -5$",
+      "$a = -2,\\ b = 5$",
+      "$a = 2,\\ b = 5$",
+      "$a = 1,\\ b = -2.5$"
+    ],
+    "answer": "0",
     "h": "The vertex is at the $x$-intercept where $ax + b = 0$. Use the $y$-intercept to find $|b|$, then check which sign for $b$ is consistent.",
     "s": "$x$-intercept at 2.5: $2.5a + b = 0$. $y$-intercept: $|b| = 5$, so $b = \\pm5$. Testing $b = -5$: $a = 5/2.5 = 2$. Check point $(2, 1)$: $|2 \\times 2 - 5| = |{-1}| = 1$ ✓. So $a = 2$, $b = -5$.",
     "solutionSteps": [
@@ -455,11 +461,17 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "c": "4E",
     "t": "The absolute value function",
     "source": "Blacktown Boys 2020 Trial Q13b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "marks": 1,
     "q": "Given $f(x) = |2x - 5|$, solve $f(x) \\geq 3$.",
-    "a": "$x \\leq 1$ or $x \\geq 4$",
+    "options": [
+      "$x \\le 1$ or $x \\ge 4$",
+      "$1 \\le x \\le 4$",
+      "$x \\le -1$ or $x \\ge 4$",
+      "$x \\le 1$ or $x \\ge 5$"
+    ],
+    "answer": "0",
     "h": "Solve $|2x - 5| \\geq 3$ by considering two cases: $2x - 5 \\geq 3$ or $2x - 5 \\leq -3$.",
     "s": "Case 1: $2x - 5 \\geq 3 \\Rightarrow x \\geq 4$. Case 2: $2x - 5 \\leq -3 \\Rightarrow x \\leq 1$. Answer: $x \\leq 1$ or $x \\geq 4$.",
     "solutionSteps": [
