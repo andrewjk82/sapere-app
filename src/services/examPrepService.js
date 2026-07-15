@@ -119,13 +119,17 @@ export const getProgressAnalysis = (uid, pool = []) => {
   let mastered = 0;
   let wrongNow = 0;
   let unseen = 0;
-  const byChapter = {}; // chapterId → { title, total, mastered, wrong, attempted }
+  const byChapter = {}; // chapterId → deck mastery
+  const byTopic = {}; // topicId → deck mastery + lifetime accuracy
 
   for (const q of pool || []) {
     const id = String(q.id);
     const entry = byId[id];
     const chapterId = q.chapterId || q.topicId || 'unknown';
     const chapterTitle = q.chapterTitle || q.topicTitle || 'Untitled';
+    const topicId = q.topicId || q.chapterId || 'unknown';
+    const topicTitle = q.topicTitle || q.chapterTitle || 'Untitled topic';
+
     byChapter[chapterId] = byChapter[chapterId] || {
       chapterId,
       title: chapterTitle,
@@ -135,21 +139,40 @@ export const getProgressAnalysis = (uid, pool = []) => {
       attempted: 0,
       correctAttempts: 0,
     };
+    byTopic[topicId] = byTopic[topicId] || {
+      topicId,
+      title: topicTitle,
+      chapterId,
+      chapterTitle,
+      total: 0,
+      mastered: 0,
+      wrong: 0,
+      attempted: 0,
+      correctAttempts: 0,
+    };
+
     const ch = byChapter[chapterId];
+    const tp = byTopic[topicId];
     ch.total += 1;
+    tp.total += 1;
     if (entry?.status === 'correct') {
       mastered += 1;
       ch.mastered += 1;
       ch.attempted += 1;
+      tp.mastered += 1;
+      tp.attempted += 1;
     } else if (entry?.status === 'wrong') {
       wrongNow += 1;
       ch.wrong += 1;
       ch.attempted += 1;
+      tp.wrong += 1;
+      tp.attempted += 1;
     } else {
       unseen += 1;
     }
     if (entry) {
       ch.correctAttempts += Number(entry.correctCount) || 0;
+      tp.correctAttempts += Number(entry.correctCount) || 0;
     }
   }
 
@@ -158,6 +181,7 @@ export const getProgressAnalysis = (uid, pool = []) => {
   const correct = Number(stats.correct) || 0;
   const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
   const remaining = Math.max(0, total - mastered);
+  const lifeByTopic = stats.byTopic || {};
 
   const chapters = Object.values(byChapter)
     .map((c) => ({
@@ -168,6 +192,31 @@ export const getProgressAnalysis = (uid, pool = []) => {
         ? (1 - c.mastered / c.total) * 100 + (c.wrong > 0 ? 10 : 0)
         : 0,
     }))
+    .sort((a, b) => b.weakScore - a.weakScore || a.title.localeCompare(b.title));
+
+  // Per-topic deck progress + lifetime accuracy (for bottom dashboard card).
+  const topics = Object.values(byTopic)
+    .map((t) => {
+      const life = lifeByTopic[t.topicId] || {};
+      const lifeAttempted = Number(life.attempted) || 0;
+      const lifeCorrect = Number(life.correct) || 0;
+      const accuracyPct = lifeAttempted > 0
+        ? Math.round((lifeCorrect / lifeAttempted) * 100)
+        : 0;
+      const progressPct = t.total > 0 ? Math.round((t.mastered / t.total) * 100) : 0;
+      return {
+        ...t,
+        title: life.title || t.title,
+        lifeAttempted,
+        lifeCorrect,
+        accuracyPct,
+        progressPct,
+        remaining: Math.max(0, t.total - t.mastered),
+        weakScore: t.total > 0
+          ? (1 - t.mastered / t.total) * 100 + (t.wrong > 0 ? 10 : 0) + (lifeAttempted >= 2 && accuracyPct < 70 ? 15 : 0)
+          : 0,
+      };
+    })
     .sort((a, b) => b.weakScore - a.weakScore || a.title.localeCompare(b.title));
 
   return {
@@ -182,6 +231,7 @@ export const getProgressAnalysis = (uid, pool = []) => {
     cycles: progress.cycles || 0,
     sessions: Number(stats.sessions) || 0,
     chapters,
+    topics,
     byTopic: stats.byTopic || {},
   };
 };

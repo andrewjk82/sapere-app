@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   GraduationCap, Settings as SettingsIcon, Play, ArrowLeft, ArrowRight,
   Lock, Trophy, Sparkles, Clock, Lightbulb, RotateCcw, ChevronRight, CheckCircle2, XCircle,
-  Flag, BookmarkPlus, X, Target, PenLine, LayoutGrid, AlignJustify,
+  Flag, BookmarkPlus, X, Target, PenLine, LayoutGrid, AlignJustify, BookOpen,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -1183,7 +1183,7 @@ const topicTone = (pct, attempted = 0) => {
 // ── Setup dashboard — command-center + single goal CTA ────────────────
 const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
   const { isNarrow } = useViewport();
-  const [showChapters, setShowChapters] = useState(false);
+  const [lessonTopicId, setLessonTopicId] = useState(null);
 
   const accuracy = progressSummary?.accuracy
     ?? (stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0);
@@ -1191,7 +1191,6 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   const poolTotal = progressSummary?.total ?? 0;
   const remaining = progressSummary?.remaining ?? Math.max(0, poolTotal - mastered);
   const masteryPct = poolTotal > 0 ? Math.round((mastered / poolTotal) * 100) : 0;
-  const chapterFocus = (progressSummary?.chapters || []).filter((c) => c.total > 0);
 
   const allChapters = useMemo(() => {
     const list = [];
@@ -1202,9 +1201,35 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   const hasTopics = selectedChips.length > 0;
   const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 
+  // Topics from pool analysis (deck progress + lifetime accuracy)
+  const topicRows = useMemo(() => {
+    const fromPool = Array.isArray(progressSummary?.topics) ? progressSummary.topics : [];
+    if (fromPool.length > 0) return fromPool;
+    // Pool still loading: show assigned chapters as empty rows so the card isn't blank.
+    return selectedChips.map((ch) => ({
+      topicId: ch.id,
+      title: ch.title,
+      chapterId: ch.id,
+      chapterTitle: ch.title,
+      year: ch.year,
+      total: 0,
+      mastered: 0,
+      remaining: 0,
+      progressPct: 0,
+      accuracyPct: 0,
+      lifeAttempted: 0,
+      lifeCorrect: 0,
+      wrong: 0,
+    }));
+  // selectedChips is derived from selection.chapters; use that stable key.
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [progressSummary?.topics, selection.chapters?.join(','), allChapters]);
+
   // Weak topics first (lifetime); highlight top as recommended focus
   const weakTopics = analysis.filter((t) => t.attempted >= 1).slice(0, 5);
   const focusTopic = weakTopics[0] || null;
+
+  const activeLesson = lessonTopicId ? getLesson(lessonTopicId) : null;
 
   const accN = useCountUp(accuracy, { delay: 60 });
   const masN = useCountUp(mastered, { delay: 120 });
@@ -1234,7 +1259,7 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
       {/* ── Header ── */}
       <div style={{
         display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
-        gap: '16px', flexWrap: 'wrap', marginBottom: '18px',
+        gap: '16px', flexWrap: 'wrap', marginBottom: '22px',
       }}>
         <div>
           <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7c3aed' }}>
@@ -1252,64 +1277,6 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
           <div>{stats.sessions || 0} session{(stats.sessions || 0) === 1 ? '' : 's'} · quit anytime</div>
         </div>
       </div>
-
-      {/* Assigned chapters — quiet list (not loud chips) */}
-      {hasTopics && (() => {
-        // Group by year so "Y12" isn't repeated on every long title.
-        const byYear = new Map();
-        selectedChips.forEach((ch) => {
-          const y = ch.year || 'Topics';
-          if (!byYear.has(y)) byYear.set(y, []);
-          byYear.get(y).push(ch);
-        });
-        // Shorten "Chapter 5: The exponential…" → "Ch 5 · The exponential…"
-        const shortTitle = (title) => {
-          const m = String(title || '').match(/^Chapter\s+(\d+)\s*[:–—-]\s*(.+)$/i);
-          if (m) return `Ch ${m[1]} · ${m[2]}`;
-          return title;
-        };
-        return (
-          <div style={{
-            display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '6px 18px',
-            marginBottom: '20px', paddingBottom: '16px',
-            borderBottom: '1px solid rgba(15, 23, 42, 0.06)',
-          }}>
-            <span style={{
-              fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.08em',
-              textTransform: 'uppercase', color: '#94a3b8', flexShrink: 0,
-            }}>
-              Assigned
-            </span>
-            {[...byYear.entries()].map(([year, chapters]) => (
-              <div key={year} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '4px 10px' }}>
-                <span style={{
-                  fontSize: '0.72rem', fontWeight: 800, color: '#64748b',
-                  fontVariantNumeric: 'tabular-nums',
-                }}>
-                  {(year || '').replace(/^Year\s+/i, 'Y')}
-                </span>
-                {chapters.map((ch, i) => (
-                  <span key={ch.id} style={{ display: 'inline-flex', alignItems: 'baseline', gap: '10px' }}>
-                    {i > 0 && (
-                      <span style={{ color: '#e2e8f0', fontWeight: 400, userSelect: 'none' }} aria-hidden>·</span>
-                    )}
-                    <span
-                      title={ch.title}
-                      style={{
-                        fontSize: '0.84rem', fontWeight: 600, color: '#334155',
-                        maxWidth: isNarrow ? '100%' : '280px',
-                        overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
-                      }}
-                    >
-                      {shortTitle(ch.title)}
-                    </span>
-                  </span>
-                ))}
-              </div>
-            ))}
-          </div>
-        );
-      })()}
 
       {/* ── Command card: goal + KPIs + CTA ── */}
       <motion.div
@@ -1602,89 +1569,150 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
         )}
       </div>
 
-      {/* ── Chapters (collapsed by default) ── */}
-      {chapterFocus.length > 0 && (
-        <div style={{ ...card, padding: isNarrow ? '14px 16px' : '16px 20px', marginBottom: '16px' }}>
-          <button
-            type="button"
-            onClick={() => setShowChapters((v) => !v)}
-            style={{
-              width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-              gap: '12px', background: 'none', border: 'none', cursor: 'pointer', padding: 0,
-            }}
-          >
-            <div style={{ textAlign: 'left' }}>
-              <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
-                Chapters
-              </div>
-              <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#0f172a', marginTop: '2px' }}>
-                Mastery by chapter · {chapterFocus.length}
-              </div>
+      {/* ── Assigned topics card (progress + accuracy + lesson) ── */}
+      {(hasTopics || topicRows.length > 0) && (
+        <div style={{ ...card, padding: isNarrow ? '18px' : '22px 24px', marginBottom: '8px' }}>
+          <div style={{ marginBottom: '16px' }}>
+            <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
+              Assigned
             </div>
-            <ChevronRight
-              size={18}
-              color="#94a3b8"
-              style={{ transform: showChapters ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0 }}
-            />
-          </button>
+            <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0f172a', marginTop: '2px' }}>
+              Topics in your deck
+              {topicRows.length > 0 && (
+                <span style={{ fontWeight: 600, color: '#94a3b8', fontSize: '0.88rem', marginLeft: '8px' }}>
+                  {topicRows.length}
+                </span>
+              )}
+            </div>
+          </div>
 
-          <AnimatePresence initial={false}>
-            {showChapters && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.25 }}
-                style={{ overflow: 'hidden' }}
-              >
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0', marginTop: '12px', borderTop: '1px solid rgba(15,23,42,0.05)', paddingTop: '4px' }}>
-                  {chapterFocus.map((c, i) => {
-                    const tone = topicTone(c.pct, c.attempted || c.mastered + c.wrong);
-                    return (
-                      <div
-                        key={c.chapterId}
-                        style={{
-                          display: 'grid',
-                          gridTemplateColumns: isNarrow ? '1fr auto' : '1fr 120px 48px',
-                          gap: '12px', alignItems: 'center',
-                          padding: '12px 4px',
-                          borderBottom: i < chapterFocus.length - 1 ? '1px solid rgba(15,23,42,0.05)' : 'none',
-                        }}
-                      >
-                        <div style={{ minWidth: 0 }}>
-                          <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1e293b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                            {c.title}
-                          </div>
-                          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '2px' }}>
-                            {c.mastered}/{c.total} mastered{c.wrong > 0 ? ` · ${c.wrong} wrong` : ''}
-                          </div>
+          {topicRows.length === 0 ? (
+            <div style={{
+              padding: '24px 12px', textAlign: 'center', borderRadius: '14px',
+              background: '#f8fafc', border: '1px dashed #e2e8f0',
+              color: '#94a3b8', fontWeight: 600, fontSize: '0.88rem',
+            }}>
+              Loading topics from your question pool…
+            </div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              {topicRows.map((t) => {
+                const lesson = getLesson(t.topicId);
+                const progressTone = topicTone(t.progressPct, t.total > 0 ? Math.max(2, t.attempted || 0) : 0);
+                const accTone = topicTone(t.accuracyPct, t.lifeAttempted);
+                return (
+                  <div
+                    key={t.topicId}
+                    style={{
+                      padding: isNarrow ? '14px' : '16px 18px',
+                      borderRadius: '16px',
+                      border: '1px solid rgba(15, 23, 42, 0.06)',
+                      background: '#fafafa',
+                    }}
+                  >
+                    <div style={{
+                      display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
+                      gap: '12px', marginBottom: '12px',
+                    }}>
+                      <div style={{ minWidth: 0, flex: 1 }}>
+                        <div style={{
+                          fontSize: '0.95rem', fontWeight: 800, color: '#0f172a',
+                          lineHeight: 1.3,
+                        }}>
+                          {t.title}
                         </div>
-                        {!isNarrow && (
-                          <div style={{ height: '4px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
-                            <div style={{ height: '100%', width: `${c.pct}%`, borderRadius: 999, background: tone.bar }} />
+                        {t.chapterTitle && t.chapterTitle !== t.title && (
+                          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '3px' }}>
+                            {t.chapterTitle}
                           </div>
                         )}
-                        <div style={{ fontWeight: 800, fontSize: '0.88rem', color: tone.fg, textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>
-                          {c.pct}%
-                        </div>
                       </div>
-                    );
-                  })}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+                      {lesson && (
+                        <button
+                          type="button"
+                          onClick={() => setLessonTopicId(t.topicId)}
+                          style={{
+                            display: 'inline-flex', alignItems: 'center', gap: '6px',
+                            flexShrink: 0,
+                            padding: '8px 12px', borderRadius: '10px',
+                            border: '1px solid rgba(124, 58, 237, 0.18)',
+                            background: 'rgba(139, 92, 246, 0.08)',
+                            color: '#5b21b6', fontWeight: 700, fontSize: '0.78rem',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <BookOpen size={14} />
+                          Lesson
+                        </button>
+                      )}
+                    </div>
+
+                    {/* Progress (deck mastery this cycle) */}
+                    <div style={{ marginBottom: '10px' }}>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#94a3b8' }}>
+                          Progress
+                        </span>
+                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0f172a', fontVariantNumeric: 'tabular-nums' }}>
+                          {t.total > 0 ? `${t.mastered}/${t.total}` : '—'}
+                          <span style={{ fontWeight: 600, color: '#94a3b8', marginLeft: '6px' }}>
+                            {t.total > 0 ? `${t.progressPct}%` : 'not loaded'}
+                          </span>
+                        </span>
+                      </div>
+                      <div style={{ height: '6px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${t.progressPct || 0}%` }}
+                          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+                          style={{ height: '100%', borderRadius: 999, background: progressTone.bar }}
+                        />
+                      </div>
+                    </div>
+
+                    {/* Accuracy (lifetime) */}
+                    <div>
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
+                        <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#94a3b8' }}>
+                          Accuracy
+                        </span>
+                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: accTone.fg, fontVariantNumeric: 'tabular-nums' }}>
+                          {t.lifeAttempted > 0 ? `${t.accuracyPct}%` : '—'}
+                          <span style={{ fontWeight: 600, color: '#94a3b8', marginLeft: '6px' }}>
+                            {t.lifeAttempted > 0 ? `${t.lifeCorrect}/${t.lifeAttempted}` : 'no attempts yet'}
+                          </span>
+                        </span>
+                      </div>
+                      <div style={{ height: '6px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${t.lifeAttempted > 0 ? t.accuracyPct : 0}%` }}
+                          transition={{ duration: 0.9, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
+                          style={{ height: '100%', borderRadius: 999, background: accTone.bar }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       )}
 
       {!hasTopics && (
         <div style={{
           ...card, padding: '20px', textAlign: 'center',
-          color: '#92400e', fontWeight: 650, fontSize: '0.9rem',
+          color: '#92400e', fontWeight: 600, fontSize: '0.9rem',
           background: '#fffbeb', borderColor: '#fde68a',
         }}>
           Your teacher hasn&apos;t assigned exam chapters yet. Ask them to set topics in your profile.
         </div>
+      )}
+
+      {activeLesson && createPortal(
+        <LessonPlayer lesson={activeLesson} onClose={() => setLessonTopicId(null)} />,
+        document.body,
       )}
     </div>
   );
