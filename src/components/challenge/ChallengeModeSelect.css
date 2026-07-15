@@ -139,7 +139,7 @@
 .cms-coach-bubble {
   flex: 1;
   position: relative;
-  top: -10px;
+  top: -40px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 16px 16px 16px 6px;
