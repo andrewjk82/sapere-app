@@ -1109,7 +1109,7 @@ const useCountUp = (target, { duration = 1100, delay = 0, enabled = true } = {})
   return value;
 };
 
-/** SVG ring that draws from 0 → pct when mounted. Gradients live in ProgressChartsPanel. */
+/** SVG ring that draws from 0 → pct when mounted. Gradients live on SetupDashboard. */
 const AnimatedRing = ({
   pct = 0,
   size = 88,
@@ -1172,187 +1172,27 @@ const AnimatedBar = ({ pct = 0, delay = 0, color = 'linear-gradient(90deg, #a78b
   );
 };
 
-/** Right-rail (and mobile) animated mastery charts. */
-const ProgressChartsPanel = ({ accuracy, mastered, poolTotal, remaining, compact = false }) => {
-  const masteryPct = poolTotal > 0 ? Math.round((mastered / poolTotal) * 100) : 0;
-  const clearPct = poolTotal > 0 ? Math.round((remaining / poolTotal) * 100) : 0;
-  // Invert remaining ring: how much of the deck is still open (visual weight).
-  const accN = useCountUp(accuracy, { delay: 80 });
-  const masN = useCountUp(mastered, { delay: 180 });
-  const remN = useCountUp(remaining, { delay: 280 });
-  const totN = useCountUp(poolTotal, { delay: 180 });
-
-  const ringSize = compact ? 72 : 92;
-  const stroke = compact ? 7 : 9;
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-      style={{
-        display: 'flex',
-        flexDirection: compact ? 'row' : 'column',
-        gap: compact ? '14px' : '20px',
-        alignItems: compact ? 'stretch' : 'stretch',
-        flexWrap: compact ? 'wrap' : 'nowrap',
-        position: 'relative',
-      }}
-    >
-      {/* Shared gradients for all rings in this panel */}
-      <svg width={0} height={0} style={{ position: 'absolute', overflow: 'hidden' }} aria-hidden>
-        <defs>
-          <linearGradient id="examPrepRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#c4b5fd" />
-            <stop offset="55%" stopColor="#8b5cf6" />
-            <stop offset="100%" stopColor="#6d28d9" />
-          </linearGradient>
-          <linearGradient id="examPrepRingMint" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#6ee7b7" />
-            <stop offset="100%" stopColor="#10b981" />
-          </linearGradient>
-          <linearGradient id="examPrepRingAmber" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#fcd34d" />
-            <stop offset="100%" stopColor="#f59e0b" />
-          </linearGradient>
-        </defs>
-      </svg>
-      {/* Lifetime accuracy — big ring */}
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: '14px',
-        padding: compact ? '12px 14px' : '4px 0 2px',
-        flex: compact ? '1 1 100%' : undefined,
-        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
-        borderRadius: compact ? '16px' : 0,
-        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
-      }}>
-        <AnimatedRing
-          pct={accuracy}
-          size={ringSize}
-          stroke={stroke}
-          color="url(#examPrepRingGrad)"
-          delay={0.05}
-        >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.85 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.35, duration: 0.4 }}
-            style={{ textAlign: 'center', lineHeight: 1 }}
-          >
-            <div style={{ fontWeight: 900, fontSize: compact ? '1.15rem' : '1.35rem', color: '#1e1b4b' }}>
-              {accN}<span style={{ fontSize: '0.72em', fontWeight: 800 }}>%</span>
-            </div>
-          </motion.div>
-        </AnimatedRing>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
-            Lifetime accuracy
-          </div>
-          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '4px', lineHeight: 1.35 }}>
-            Across every answer so far
-          </div>
-          {!compact && (
-            <div style={{ marginTop: '10px' }}>
-              <AnimatedBar pct={accuracy} delay={0.15} color="linear-gradient(90deg, #c4b5fd, #7c3aed)" height={6} />
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Mastered this deck */}
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: '14px',
-        padding: compact ? '12px 14px' : '0',
-        flex: compact ? '1 1 calc(50% - 7px)' : undefined,
-        minWidth: compact ? '140px' : undefined,
-        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
-        borderRadius: compact ? '16px' : 0,
-        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
-      }}>
-        <AnimatedRing
-          pct={masteryPct}
-          size={compact ? 64 : 80}
-          stroke={compact ? 6 : 8}
-          color="url(#examPrepRingMint)"
-          delay={0.18}
-        >
-          <div style={{ textAlign: 'center', lineHeight: 1.05 }}>
-            <div style={{ fontWeight: 900, fontSize: compact ? '0.95rem' : '1.05rem', color: '#065f46' }}>
-              {poolTotal > 0 ? masN : '—'}
-            </div>
-            {poolTotal > 0 && (
-              <div style={{ fontSize: '0.58rem', fontWeight: 800, color: '#6ee7b7', marginTop: '2px' }}>
-                / {totN}
-              </div>
-            )}
-          </div>
-        </AnimatedRing>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
-            Mastered
-          </div>
-          <div style={{ fontSize: compact ? '0.75rem' : '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '3px' }}>
-            {poolTotal > 0 ? `${masteryPct}% of deck` : 'Loading pool…'}
-          </div>
-          {poolTotal > 0 && (
-            <div style={{ marginTop: '8px' }}>
-              <AnimatedBar pct={masteryPct} delay={0.28} color="linear-gradient(90deg, #6ee7b7, #10b981)" height={5} />
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Still to clear */}
-      <div style={{
-        display: 'flex', alignItems: 'center', gap: '14px',
-        padding: compact ? '12px 14px' : '0',
-        flex: compact ? '1 1 calc(50% - 7px)' : undefined,
-        minWidth: compact ? '140px' : undefined,
-        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
-        borderRadius: compact ? '16px' : 0,
-        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
-      }}>
-        <AnimatedRing
-          pct={poolTotal > 0 ? clearPct : 0}
-          size={compact ? 64 : 80}
-          stroke={compact ? 6 : 8}
-          color="url(#examPrepRingAmber)"
-          delay={0.3}
-        >
-          <div style={{ fontWeight: 900, fontSize: compact ? '1.05rem' : '1.2rem', color: '#92400e', lineHeight: 1 }}>
-            {remN}
-          </div>
-        </AnimatedRing>
-        <div style={{ minWidth: 0, flex: 1 }}>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
-            Still to clear
-          </div>
-          <div style={{ fontSize: compact ? '0.75rem' : '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '3px' }}>
-            {poolTotal > 0 ? 'Left in this cycle' : 'Waiting for topics'}
-          </div>
-          {poolTotal > 0 && (
-            <div style={{ marginTop: '8px' }}>
-              <AnimatedBar pct={clearPct} delay={0.4} color="linear-gradient(90deg, #fcd34d, #f59e0b)" height={5} />
-            </div>
-          )}
-        </div>
-      </div>
-    </motion.div>
-  );
+/** Soft status colour — low samples stay neutral so empty decks don't look "failed". */
+const topicTone = (pct, attempted = 0) => {
+  if (attempted < 2) return { fg: '#64748b', bar: '#cbd5e1', bg: '#f8fafc' };
+  if (pct < 50) return { fg: '#dc2626', bar: '#f87171', bg: '#fef2f2' };
+  if (pct < 75) return { fg: '#d97706', bar: '#fbbf24', bg: '#fffbeb' };
+  return { fg: '#059669', bar: '#34d399', bg: '#ecfdf5' };
 };
 
-// ── Setup dashboard ────────────────────────────────────────────────────
-// A single composed view that fills the page when stage === 'setup'. It
-// reads like a dashboard: hero (stats + CTA) on top, two-column row with
-// topics & secret-note side by side, and the topic analysis chart below.
+// ── Setup dashboard — command-center + single goal CTA ────────────────
 const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
   const { isNarrow } = useViewport();
+  const [showChapters, setShowChapters] = useState(false);
+
   const accuracy = progressSummary?.accuracy
     ?? (stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0);
   const mastered = progressSummary?.mastered ?? 0;
   const poolTotal = progressSummary?.total ?? 0;
   const remaining = progressSummary?.remaining ?? Math.max(0, poolTotal - mastered);
-  const chapterFocus = (progressSummary?.chapters || []).filter((c) => c.total > 0).slice(0, 6);
+  const masteryPct = poolTotal > 0 ? Math.round((mastered / poolTotal) * 100) : 0;
+  const chapterFocus = (progressSummary?.chapters || []).filter((c) => c.total > 0);
+
   const allChapters = useMemo(() => {
     const list = [];
     allYearKeys.forEach((y) => flattenChapters(y).forEach((ch) => list.push({ ...ch, year: y })));
@@ -1360,266 +1200,416 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
   }, []);
   const selectedChips = selection.chapters.map((id) => allChapters.find((c) => c.id === id)).filter(Boolean);
   const hasTopics = selectedChips.length > 0;
-  const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+  const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 
-  // Weakest topics for focus grid (lifetime topic accuracy)
-  const focusTopics = analysis.filter(t => t.attempted >= 1).slice(0, 4);
-  const worstTopic = analysis.find(t => t.attempted >= 2 && t.pct < 70);
+  // Weak topics first (lifetime); highlight top as recommended focus
+  const weakTopics = analysis.filter((t) => t.attempted >= 1).slice(0, 5);
+  const focusTopic = weakTopics[0] || null;
+
+  const accN = useCountUp(accuracy, { delay: 60 });
+  const masN = useCountUp(mastered, { delay: 120 });
+  const remN = useCountUp(remaining, { delay: 160 });
+  const totN = useCountUp(poolTotal, { delay: 120 });
+
+  const card = {
+    background: '#fff',
+    border: '1px solid rgba(15, 23, 42, 0.06)',
+    borderRadius: '20px',
+    boxShadow: '0 1px 2px rgba(15,23,42,0.04), 0 8px 24px rgba(124,58,237,0.06)',
+  };
 
   return (
-    <div style={{ maxWidth: '1040px', margin: '0 auto', padding: isNarrow ? '0' : '0' }}>
+    <div style={{ maxWidth: '960px', margin: '0 auto' }}>
+      {/* Shared SVG gradients for rings */}
+      <svg width={0} height={0} style={{ position: 'absolute', overflow: 'hidden' }} aria-hidden>
+        <defs>
+          <linearGradient id="examPrepRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#c4b5fd" />
+            <stop offset="55%" stopColor="#8b5cf6" />
+            <stop offset="100%" stopColor="#6d28d9" />
+          </linearGradient>
+        </defs>
+      </svg>
 
-      {/* ── MASTHEAD ── */}
-      <div style={{ borderBottom: '1px solid rgba(124,58,237,0.18)', paddingBottom: '18px', marginBottom: '26px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
+      {/* ── Header ── */}
+      <div style={{
+        display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
+        gap: '16px', flexWrap: 'wrap', marginBottom: '18px',
+      }}>
         <div>
-          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#7c3aed' }}>
-            EXAM PREP · SAPERE
-          </div>
-          <h1 style={{ fontWeight: 800, fontSize: isNarrow ? '2.1rem' : 'clamp(2rem, 3vw, 2.75rem)', lineHeight: 1.05, color: '#1e1b4b', margin: '8px 0 0', letterSpacing: '-0.02em' }}>
+          <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.06em', textTransform: 'uppercase', color: '#7c3aed' }}>
             Exam Prep
+          </div>
+          <h1 style={{
+            fontWeight: 800, fontSize: isNarrow ? '1.75rem' : '2rem', lineHeight: 1.15,
+            color: '#0f172a', margin: '6px 0 0', letterSpacing: '-0.03em',
+          }}>
+            Practice deck
           </h1>
         </div>
-        <div style={{ textAlign: 'right', fontSize: '0.76rem', color: '#8b7aa7', fontWeight: 700, lineHeight: 1.6 }}>
+        <div style={{ textAlign: isNarrow ? 'left' : 'right', fontSize: '0.8rem', color: '#94a3b8', fontWeight: 600, lineHeight: 1.5, paddingTop: '4px' }}>
           <div>{today}</div>
-          <div>{stats.sessions} {stats.sessions === 1 ? 'session' : 'sessions'} · quit anytime</div>
+          <div>{stats.sessions || 0} session{(stats.sessions || 0) === 1 ? '' : 's'} · quit anytime</div>
         </div>
       </div>
 
-      {/* ── LEAD: standfirst + figures rail ── */}
-      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1fr 260px', gap: '28px', marginBottom: '30px' }}>
-        {/* Left: standfirst + CTA */}
-        <div>
-          <p style={{ fontSize: '1.1rem', lineHeight: 1.6, color: '#3b2b68', fontWeight: 500, margin: '0 0 6px' }}>
-            <b style={{ color: '#1e1b4b' }}>Practise smarter, not harder.</b>{' '}
-            {hasTopics
-              ? `Random questions from every chapter your teacher selected. Correct once and it won't come back until you've cleared the whole deck — then it reshuffles so you can start again.`
-              : 'Your teacher will set your exam topics. Once they\'re ready, start practising with targeted questions.'}
-          </p>
-          <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+      {/* Topic chips (teacher selection) */}
+      {hasTopics && (
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px' }}>
+          {selectedChips.map((ch) => (
+            <span
+              key={ch.id}
+              style={{
+                display: 'inline-flex', alignItems: 'center', gap: '6px',
+                padding: '6px 12px', borderRadius: '999px',
+                background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.14)',
+                fontSize: '0.78rem', fontWeight: 700, color: '#4c1d95',
+              }}
+            >
+              <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#7c3aed', opacity: 0.85 }}>
+                {(ch.year || '').replace('Year ', 'Y')}
+              </span>
+              {ch.title}
+            </span>
+          ))}
+        </div>
+      )}
+
+      {/* ── Command card: goal + KPIs + CTA ── */}
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+        style={{ ...card, padding: isNarrow ? '20px' : '24px 28px', marginBottom: '20px' }}
+      >
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: isNarrow ? '1fr' : '1fr auto',
+          gap: isNarrow ? '20px' : '28px',
+          alignItems: 'center',
+        }}>
+          {/* Left: goal + deck bar + metrics */}
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginBottom: '6px' }}>
+              This cycle
+            </div>
+            <div style={{ fontSize: isNarrow ? '1.25rem' : '1.4rem', fontWeight: 800, color: '#0f172a', letterSpacing: '-0.02em', lineHeight: 1.25 }}>
+              {poolTotal > 0
+                ? (remaining === 0 ? 'Deck cleared — ready to reshuffle' : `Clear ${remaining} remaining question${remaining === 1 ? '' : 's'}`)
+                : (hasTopics ? 'Loading your question deck…' : 'Waiting for teacher topics')}
+            </div>
+            <p style={{ margin: '8px 0 0', fontSize: '0.88rem', color: '#64748b', fontWeight: 500, lineHeight: 1.45, maxWidth: '36em' }}>
+              Correct answers drop out until you finish the deck. Then everything resets so you can practise again.
+            </p>
+
+            {/* Deck progress */}
+            <div style={{ marginTop: '18px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+                <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#475569' }}>Deck progress</span>
+                <span style={{ fontSize: '0.82rem', fontWeight: 800, color: '#0f172a', fontVariantNumeric: 'tabular-nums' }}>
+                  {poolTotal > 0 ? `${masN} / ${totN}` : '—'}
+                  <span style={{ fontWeight: 600, color: '#94a3b8', marginLeft: '6px' }}>mastered</span>
+                </span>
+              </div>
+              <AnimatedBar
+                pct={masteryPct}
+                delay={0.12}
+                color="linear-gradient(90deg, #a78bfa 0%, #7c3aed 100%)"
+                height={10}
+              />
+            </div>
+
+            {/* KPI strip: accuracy ring + remaining number */}
+            <div style={{
+              display: 'flex', flexWrap: 'wrap', gap: isNarrow ? '16px' : '28px',
+              marginTop: '20px', alignItems: 'center',
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <AnimatedRing pct={accuracy} size={64} stroke={7} color="url(#examPrepRingGrad)" delay={0.08}>
+                  <div style={{ fontWeight: 900, fontSize: '0.95rem', color: '#1e1b4b', lineHeight: 1 }}>
+                    {accN}<span style={{ fontSize: '0.65em' }}>%</span>
+                  </div>
+                </AnimatedRing>
+                <div>
+                  <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', letterSpacing: '0.04em', textTransform: 'uppercase' }}>Accuracy</div>
+                  <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '2px' }}>Lifetime</div>
+                </div>
+              </div>
+
+              <div style={{ width: '1px', height: '40px', background: 'rgba(15,23,42,0.08)', display: isNarrow ? 'none' : 'block' }} />
+
+              <div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', letterSpacing: '0.04em', textTransform: 'uppercase' }}>Remaining</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0f172a', lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', marginTop: '2px' }}>
+                  {poolTotal > 0 ? remN : '—'}
+                </div>
+              </div>
+
+              <div style={{ width: '1px', height: '40px', background: 'rgba(15,23,42,0.08)', display: isNarrow ? 'none' : 'block' }} />
+
+              <div>
+                <div style={{ fontSize: '0.72rem', fontWeight: 700, color: '#94a3b8', letterSpacing: '0.04em', textTransform: 'uppercase' }}>Sessions</div>
+                <div style={{ fontSize: '1.5rem', fontWeight: 900, color: '#0f172a', lineHeight: 1.1, fontVariantNumeric: 'tabular-nums', marginTop: '2px' }}>
+                  {stats.sessions || 0}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right: primary CTA */}
+          <div style={{
+            display: 'flex', flexDirection: 'column', gap: '10px',
+            minWidth: isNarrow ? '100%' : '200px',
+            alignItems: isNarrow ? 'stretch' : 'stretch',
+          }}>
             <button
               onClick={onStart}
               disabled={!hasTopics || loading}
               style={{
-                display: 'inline-flex', alignItems: 'center', gap: '10px',
-                padding: '14px 26px', borderRadius: '14px',
-                background: !hasTopics || loading ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #8b5cf6 55%, #7c3aed 100%)',
-                color: '#fff', fontWeight: 800, border: 'none',
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
+                padding: '16px 22px', borderRadius: '14px', border: 'none',
+                background: !hasTopics || loading
+                  ? '#e2e8f0'
+                  : 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%)',
+                color: !hasTopics || loading ? '#94a3b8' : '#fff',
+                fontWeight: 800, fontSize: '1rem', letterSpacing: '-0.01em',
                 cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
-                fontSize: '0.95rem', letterSpacing: '-0.01em',
-                boxShadow: !hasTopics || loading ? 'none' : '0 14px 28px rgba(124,58,237,0.24)',
+                boxShadow: !hasTopics || loading ? 'none' : '0 12px 28px rgba(109,40,217,0.28)',
               }}
             >
-              <Play size={16} fill="currentColor" />
-              {loading ? 'Loading…' : 'Start practice'}
-              {poolTotal > 0 && (
-                <span style={{ opacity: 0.6, fontWeight: 600, paddingLeft: '10px', marginLeft: '2px', borderLeft: '1px solid rgba(255,255,255,0.25)', fontSize: '0.82rem' }}>
-                  {remaining} left
-                </span>
-              )}
+              <Play size={18} fill="currentColor" />
+              {loading ? 'Loading…' : (poolTotal > 0 && remaining === 0 ? 'Practise again' : 'Continue practice')}
             </button>
+            {poolTotal > 0 && (
+              <div style={{ textAlign: 'center', fontSize: '0.78rem', fontWeight: 600, color: '#94a3b8' }}>
+                {remaining} left in this cycle
+              </div>
+            )}
             {noteCount > 0 && (
               <button
                 onClick={onOpenSecretNote}
                 style={{
-                  display: 'inline-flex', alignItems: 'center', gap: '8px',
-                  padding: '14px 18px', borderRadius: '14px',
-                  background: '#fffbeb', border: '1px solid #fcd34d',
-                  color: '#78350f', fontWeight: 800, cursor: 'pointer', fontSize: '0.88rem',
+                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                  padding: '11px 14px', borderRadius: '12px',
+                  background: '#fffbeb', border: '1px solid #fde68a',
+                  color: '#92400e', fontWeight: 700, fontSize: '0.84rem', cursor: 'pointer',
                 }}
               >
                 <BookmarkPlus size={15} />
                 {noteCount} note{noteCount > 1 ? 's' : ''}
-                {dueCount > 0 && <span style={{ background: '#fbbf24', color: '#fff', borderRadius: '999px', padding: '1px 7px', fontSize: '0.7rem', fontWeight: 900 }}>{dueCount} due</span>}
+                {dueCount > 0 && (
+                  <span style={{ background: '#f59e0b', color: '#fff', borderRadius: '999px', padding: '1px 7px', fontSize: '0.68rem', fontWeight: 900 }}>
+                    {dueCount} due
+                  </span>
+                )}
               </button>
             )}
           </div>
         </div>
+      </motion.div>
 
-        {/* Right: animated chart rail (desktop) */}
-        {!isNarrow && (
-          <div style={{
-            borderLeft: '1px solid rgba(124,58,237,0.22)',
-            paddingLeft: '22px',
-            paddingTop: '2px',
-            paddingBottom: '4px',
-          }}>
-            <ProgressChartsPanel
-              accuracy={accuracy}
-              mastered={mastered}
-              poolTotal={poolTotal}
-              remaining={remaining}
-            />
+      {/* ── Weak topics (list, not card grid) ── */}
+      <div style={{ ...card, padding: isNarrow ? '18px' : '22px 24px', marginBottom: '16px' }}>
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          gap: '12px', marginBottom: '14px', flexWrap: 'wrap',
+        }}>
+          <div>
+            <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
+              Focus
+            </div>
+            <div style={{ fontSize: '1.05rem', fontWeight: 800, color: '#0f172a', marginTop: '2px' }}>
+              Weak topics
+            </div>
           </div>
+          {focusTopic && (
+            <span style={{
+              fontSize: '0.72rem', fontWeight: 700, color: '#7c3aed',
+              background: 'rgba(139,92,246,0.1)', padding: '5px 10px', borderRadius: '999px',
+            }}>
+              Start with {focusTopic.title}
+            </span>
+          )}
+        </div>
+
+        {weakTopics.length === 0 ? (
+          <div style={{
+            padding: '28px 16px', textAlign: 'center', borderRadius: '14px',
+            background: '#f8fafc', border: '1px dashed #e2e8f0',
+            color: '#94a3b8', fontWeight: 600, fontSize: '0.9rem',
+          }}>
+            {hasTopics
+              ? 'Practise a few questions — weak areas will show up here.'
+              : 'Ask your teacher to assign exam chapters first.'}
+          </div>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
+            {weakTopics.map((t, i) => {
+              const tone = topicTone(t.pct, t.attempted);
+              const isTop = i === 0;
+              return (
+                <div
+                  key={t.topicId}
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: isNarrow ? '1fr auto' : '1fr 100px 56px',
+                    gap: '12px',
+                    alignItems: 'center',
+                    padding: '12px 12px',
+                    margin: '0 -4px',
+                    borderRadius: '12px',
+                    background: isTop ? 'rgba(139,92,246,0.06)' : 'transparent',
+                    borderBottom: i < weakTopics.length - 1 ? '1px solid rgba(15,23,42,0.05)' : 'none',
+                  }}
+                >
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      {isTop && (
+                        <span style={{
+                          fontSize: '0.62rem', fontWeight: 800, letterSpacing: '0.06em',
+                          textTransform: 'uppercase', color: '#7c3aed',
+                          background: 'rgba(139,92,246,0.12)', padding: '2px 7px', borderRadius: '6px',
+                        }}>
+                          Focus
+                        </span>
+                      )}
+                      <span style={{
+                        fontSize: '0.92rem', fontWeight: 700, color: '#0f172a',
+                        overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                      }}>
+                        {t.title}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: 600, color: '#94a3b8', marginTop: '3px' }}>
+                      {t.correct}/{t.attempted} correct
+                    </div>
+                    {isNarrow && (
+                      <div style={{ marginTop: '8px' }}>
+                        <div style={{ height: '4px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
+                          <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: 999, background: tone.bar }} />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                  {!isNarrow && (
+                    <div style={{ height: '5px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
+                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: 999, background: tone.bar }} />
+                    </div>
+                  )}
+                  <div style={{
+                    fontWeight: 900, fontSize: '0.95rem', color: tone.fg, textAlign: 'right',
+                    fontVariantNumeric: 'tabular-nums',
+                  }}>
+                    {t.pct}%
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {focusTopic && hasTopics && (
+          <button
+            onClick={onStart}
+            disabled={loading}
+            style={{
+              marginTop: '14px', width: '100%', padding: '12px', borderRadius: '12px',
+              border: '1px solid rgba(124,58,237,0.2)', background: 'rgba(139,92,246,0.06)',
+              color: '#5b21b6', fontWeight: 800, fontSize: '0.88rem', cursor: loading ? 'not-allowed' : 'pointer',
+            }}
+          >
+            Practise focus topic →
+          </button>
         )}
       </div>
 
-      {/* Mobile: same charts under the CTA */}
-      {isNarrow && (
-        <div style={{ marginBottom: '26px' }}>
-          <ProgressChartsPanel
-            accuracy={accuracy}
-            mastered={mastered}
-            poolTotal={poolTotal}
-            remaining={remaining}
-            compact
-          />
-        </div>
-      )}
-
-      {/* ── TWO COLUMNS ── */}
-      <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1.6fr 1fr', gap: '28px', alignItems: 'start' }}>
-
-        {/* LEFT: Chapter mastery from local cache + topic focus */}
-        <div>
-          <div style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#7c3aed', paddingBottom: '8px', borderBottom: '1px solid rgba(124,58,237,0.2)', marginBottom: '16px' }}>
-            Chapters · mastery
-          </div>
-          {chapterFocus.length === 0 && focusTopics.length === 0 ? (
-            <div style={{ padding: '32px', background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(167,139,250,0.18)', borderRadius: '16px', textAlign: 'center', color: '#8b7aa7', fontWeight: 700, fontSize: '0.9rem' }}>
-              Start practising to build your local progress map.
+      {/* ── Chapters (collapsed by default) ── */}
+      {chapterFocus.length > 0 && (
+        <div style={{ ...card, padding: isNarrow ? '14px 16px' : '16px 20px', marginBottom: '16px' }}>
+          <button
+            type="button"
+            onClick={() => setShowChapters((v) => !v)}
+            style={{
+              width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              gap: '12px', background: 'none', border: 'none', cursor: 'pointer', padding: 0,
+            }}
+          >
+            <div style={{ textAlign: 'left' }}>
+              <div style={{ fontSize: '0.72rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8' }}>
+                Chapters
+              </div>
+              <div style={{ fontSize: '0.95rem', fontWeight: 700, color: '#0f172a', marginTop: '2px' }}>
+                Mastery by chapter · {chapterFocus.length}
+              </div>
             </div>
-          ) : (
-            <>
-              {chapterFocus.length > 0 && (
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: focusTopics.length ? '16px' : 0 }}>
-                  {chapterFocus.map((c) => {
-                    const color = c.pct < 50 ? '#ef4444' : c.pct < 75 ? '#f59e0b' : '#10b981';
+            <ChevronRight
+              size={18}
+              color="#94a3b8"
+              style={{ transform: showChapters ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s', flexShrink: 0 }}
+            />
+          </button>
+
+          <AnimatePresence initial={false}>
+            {showChapters && (
+              <motion.div
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.25 }}
+                style={{ overflow: 'hidden' }}
+              >
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0', marginTop: '12px', borderTop: '1px solid rgba(15,23,42,0.05)', paddingTop: '4px' }}>
+                  {chapterFocus.map((c, i) => {
+                    const tone = topicTone(c.pct, c.attempted || c.mastered + c.wrong);
                     return (
-                      <div key={c.chapterId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
-                        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
-                          <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{c.title}</div>
-                          <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{c.pct}%</div>
+                      <div
+                        key={c.chapterId}
+                        style={{
+                          display: 'grid',
+                          gridTemplateColumns: isNarrow ? '1fr auto' : '1fr 120px 48px',
+                          gap: '12px', alignItems: 'center',
+                          padding: '12px 4px',
+                          borderBottom: i < chapterFocus.length - 1 ? '1px solid rgba(15,23,42,0.05)' : 'none',
+                        }}
+                      >
+                        <div style={{ minWidth: 0 }}>
+                          <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#1e293b', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                            {c.title}
+                          </div>
+                          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '2px' }}>
+                            {c.mastered}/{c.total} mastered{c.wrong > 0 ? ` · ${c.wrong} wrong` : ''}
+                          </div>
                         </div>
-                        <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>
-                          {c.mastered}/{c.total} mastered{c.wrong > 0 ? ` · ${c.wrong} wrong` : ''}
-                        </div>
-                        <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
-                          <div style={{ height: '100%', width: `${c.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
+                        {!isNarrow && (
+                          <div style={{ height: '4px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
+                            <div style={{ height: '100%', width: `${c.pct}%`, borderRadius: 999, background: tone.bar }} />
+                          </div>
+                        )}
+                        <div style={{ fontWeight: 800, fontSize: '0.88rem', color: tone.fg, textAlign: 'right', fontVariantNumeric: 'tabular-nums' }}>
+                          {c.pct}%
                         </div>
                       </div>
                     );
                   })}
                 </div>
-              )}
-              {focusTopics.length > 0 && (
-                <>
-                  <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7', marginBottom: '10px' }}>
-                    Lifetime topic accuracy
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-                    {focusTopics.map((t) => {
-                      const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
-                      return (
-                        <div key={t.topicId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
-                          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
-                            <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{t.title}</div>
-                            <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{t.pct}%</div>
-                          </div>
-                          <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>{t.correct}/{t.attempted} correct</div>
-                          <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
-                            <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </>
-              )}
-            </>
-          )}
-        </div>
-
-        {/* RIGHT: Sidebar */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-
-          {/* Pull quote — recommended topic */}
-          {worstTopic ? (
-            <div style={{ padding: '20px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d' }}>
-              <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#b45309', marginBottom: '8px' }}>
-                Recommended focus
-              </div>
-              <div style={{ fontSize: '1.2rem', color: '#78350f', lineHeight: 1.35, marginBottom: '14px', fontWeight: 800 }}>
-                "{worstTopic.title}"
-              </div>
-              <div style={{ fontSize: '0.8rem', color: '#92400e', fontWeight: 700 }}>
-                {worstTopic.pct}% accuracy · {worstTopic.correct}/{worstTopic.attempted} correct — needs work
-              </div>
-              <button
-                onClick={onStart}
-                disabled={!hasTopics || loading}
-                style={{ marginTop: '14px', width: '100%', padding: '11px', borderRadius: '12px', background: '#92400e', color: '#fff', fontWeight: 800, fontSize: '0.86rem', border: 'none', cursor: !hasTopics || loading ? 'not-allowed' : 'pointer' }}
-              >
-                Practise now →
-              </button>
-            </div>
-          ) : noteCount > 0 ? (
-            <button
-              onClick={onOpenSecretNote}
-              style={{ padding: '18px', borderRadius: '18px', background: 'linear-gradient(135deg, #fffbeb, #fef3c7)', border: '1px solid #fcd34d', display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', textAlign: 'left', width: '100%' }}
-            >
-              <div style={{ width: '44px', height: '44px', borderRadius: '13px', background: '#fbbf24', color: '#fff', display: 'grid', placeItems: 'center', flexShrink: 0 }}>
-                <BookmarkPlus size={20} />
-              </div>
-              <div>
-                <div style={{ fontWeight: 900, color: '#78350f', fontSize: '0.95rem' }}>Secret Note</div>
-                <div style={{ fontSize: '0.78rem', color: '#b45309', fontWeight: 700 }}>{noteCount} note{noteCount > 1 ? 's' : ''} · {dueCount} due now</div>
-              </div>
-              <ChevronRight size={16} color="#b45309" style={{ marginLeft: 'auto' }} />
-            </button>
-          ) : null}
-
-          {/* Topics list */}
-          <div style={{ padding: '18px', borderRadius: '18px', background: 'rgba(255,255,255,0.88)', border: '1px solid rgba(167,139,250,0.16)' }}>
-            <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Target size={12} /> Your exam topics
-            </div>
-            {!hasTopics ? (
-              <div style={{ fontSize: '0.85rem', color: '#94a3b8', fontWeight: 700, textAlign: 'center', padding: '12px 0' }}>
-                No topics set yet — ask your teacher.
-              </div>
-            ) : (
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-                {selectedChips.map((ch, i) => (
-                  <div key={ch.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 0', borderBottom: i < selectedChips.length - 1 ? '1px solid rgba(167,139,250,0.1)' : 'none' }}>
-                    <span style={{ fontFamily: 'inherit', fontSize: '0.62rem', fontWeight: 800, color: '#6d28d9', background: 'rgba(139,92,246,0.1)', padding: '3px 8px', borderRadius: '7px', flexShrink: 0 }}>
-                      {ch.year.replace('Year ', 'Y')}
-                    </span>
-                    <span style={{ fontSize: '0.86rem', fontWeight: 600, color: '#1e1b4b' }}>{ch.title}</span>
-                  </div>
-                ))}
-              </div>
+              </motion.div>
             )}
-          </div>
-
-          {/* Secret note shortcut if no worst topic shown */}
-          {!worstTopic && noteCount === 0 && (
-            <button
-              onClick={onOpenSecretNote}
-              style={{ padding: '14px 16px', borderRadius: '16px', background: '#f8fafc', border: '1px solid #e2e8f0', display: 'flex', alignItems: 'center', gap: '10px', cursor: 'default', textAlign: 'left', width: '100%', opacity: 0.6 }}
-            >
-              <BookmarkPlus size={16} color="#94a3b8" />
-              <div style={{ fontSize: '0.82rem', color: '#94a3b8', fontWeight: 700 }}>Mistakes will appear here for review.</div>
-            </button>
-          )}
+          </AnimatePresence>
         </div>
-      </div>
+      )}
+
+      {!hasTopics && (
+        <div style={{
+          ...card, padding: '20px', textAlign: 'center',
+          color: '#92400e', fontWeight: 650, fontSize: '0.9rem',
+          background: '#fffbeb', borderColor: '#fde68a',
+        }}>
+          Your teacher hasn&apos;t assigned exam chapters yet. Ask them to set topics in your profile.
+        </div>
+      )}
     </div>
   );
 };
-
-const GlassStat = ({ label, value, compact }) => (
-  <div style={{
-    background: 'rgba(255,255,255,0.55)',
-    backdropFilter: 'blur(6px)',
-    border: '1px solid rgba(255,255,255,0.7)',
-    borderRadius: compact ? '12px' : '16px',
-    padding: compact ? '8px 8px' : '12px 14px',
-    textAlign: 'center',
-  }}>
-    <div style={{ fontSize: compact ? '0.6rem' : '0.65rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#5b21b6' }}>{label}</div>
-    <div style={{ fontSize: compact ? '1.2rem' : '1.6rem', fontWeight: 900, marginTop: '2px', color: '#1e1b4b' }}>{value}</div>
-  </div>
-);
 
 // ── Top-level ExamPrep page ────────────────────────────────────────────
 const ExamPrep = ({ profile, onExamActiveChange }) => {
