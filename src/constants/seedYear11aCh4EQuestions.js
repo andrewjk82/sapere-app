@@ -417,9 +417,9 @@ export const Y11A_CH4E_QUESTIONS = [
         "height": 300,
         "boundingbox": [
           -3,
-          6,
-          6,
-          -6
+          10,
+          7,
+          -8
         ],
         "boardOptions": {
           "keepaspectratio": true
@@ -474,7 +474,7 @@ export const Y11A_CH4E_QUESTIONS = [
             }
           }
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[5.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5.5],[0,5.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 3*x - 4; }, -2, 5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[6.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-7.5],[0,9.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 3*x - 4; }, -2, 5.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
       }
     },
     "subQuestions": [
@@ -580,7 +580,7 @@ export const Y11A_CH4E_QUESTIONS = [
         "height": 300,
         "boundingbox": [
           -5,
-          4,
+          8,
           3,
           -4
         ],
@@ -621,7 +621,7 @@ export const Y11A_CH4E_QUESTIONS = [
             }
           }
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3.5],[0,3.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x; }, -4, 1], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0],[2.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3.5],[0,7.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x; }, -4.5, 1.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
       }
     },
     "solutionSteps": [
@@ -664,9 +664,9 @@ export const Y11A_CH4E_QUESTIONS = [
         "height": 300,
         "boundingbox": [
           -7,
-          5,
+          12,
           4,
-          -13
+          -14
         ],
         "boardOptions": {
           "keepaspectratio": true
@@ -721,7 +721,7 @@ export const Y11A_CH4E_QUESTIONS = [
             }
           }
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0],[3.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-12.5],[0,4.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x - 10; }, -6, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0],[3.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-13.5],[0,11.5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 3*x - 10; }, -6, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
       }
     },
     "solutionSteps": [
