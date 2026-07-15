@@ -60,51 +60,23 @@ const ElectricFx = ({ active }) => (
 );
 
 /**
- * Extreme fire — cinematic & restrained.
- * Bottom heat + 3 flame silhouettes + sparse embers + edge rim.
- * (Avoids the "particle soup" look of a full flame wall.)
+ * Extreme — Voltage / Overdrive.
+ * Clean card + red-zone gauge bar + occasional warning blink (no fire soup).
  */
-const FireFx = ({ active }) => (
-  <div className={`cms-fx-fire${active ? ' is-on' : ''}`} aria-hidden>
-    <div className="cms-fx-heatbase" />
-    <div className="cms-fx-rim" />
-
-    <svg className="cms-fx-svg cms-fx-svg--fire" viewBox="0 0 200 100" preserveAspectRatio="xMidYMax meet">
-      <defs>
-        <linearGradient id="cms-flame-a" x1="0.5" y1="1" x2="0.5" y2="0">
-          <stop offset="0%" stopColor="#7f1d1d" stopOpacity="0" />
-          <stop offset="30%" stopColor="#ef4444" stopOpacity="0.85" />
-          <stop offset="65%" stopColor="#fb923c" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="#fef3c7" stopOpacity="0.55" />
-        </linearGradient>
-        <linearGradient id="cms-flame-b" x1="0.5" y1="1" x2="0.5" y2="0">
-          <stop offset="0%" stopColor="#991b1b" stopOpacity="0" />
-          <stop offset="40%" stopColor="#f97316" stopOpacity="0.8" />
-          <stop offset="100%" stopColor="#fff7ed" stopOpacity="0.45" />
-        </linearGradient>
-        <filter id="cms-fire-soft" x="-15%" y="-15%" width="130%" height="130%">
-          <feGaussianBlur stdDeviation="1.1" />
-        </filter>
-      </defs>
-      <g filter="url(#cms-fire-soft)" opacity="0.92">
-        <path className="cms-flame-path cms-flame-path--1" fill="url(#cms-flame-a)" d="M48 100 C40 78 42 62 56 44 C64 32 58 24 66 12 C76 28 72 40 80 54 C90 72 82 88 78 100 Z" />
-        <path className="cms-flame-path cms-flame-path--2" fill="url(#cms-flame-b)" d="M92 100 C82 76 84 58 100 38 C110 26 104 16 114 6 C126 22 120 34 130 50 C142 72 132 88 126 100 Z" />
-        <path className="cms-flame-path cms-flame-path--3" fill="url(#cms-flame-a)" d="M138 100 C130 80 132 66 144 50 C152 40 148 32 154 22 C164 36 160 46 168 58 C178 74 170 90 164 100 Z" />
-      </g>
-      <path className="cms-flame-core" fill="url(#cms-flame-b)" d="M100 100 C96 84 100 72 108 58 C114 68 112 82 110 100 Z" opacity="0.65" />
-    </svg>
-
-    {Array.from({ length: 7 }, (_, i) => (
-      <span
-        key={i}
-        className={`cms-ember-dot cms-ember-dot--${i + 1}`}
-        style={{
-          left: `${18 + i * 10}%`,
-          animationDelay: `${0.15 + i * 0.18}s`,
-          animationDuration: `${1.8 + (i % 3) * 0.25}s`,
-        }}
-      />
-    ))}
+const OverdriveFx = ({ active }) => (
+  <div className={`cms-fx-overdrive${active ? ' is-on' : ''}`} aria-hidden>
+    <span className="cms-od-scan" />
+    <span className="cms-od-warn" />
+    <div className="cms-od-gauge">
+      <span className="cms-od-gauge-label">Overdrive</span>
+      <div className="cms-od-track">
+        <span className="cms-od-fill" />
+        <span className="cms-od-tick cms-od-tick--1" />
+        <span className="cms-od-tick cms-od-tick--2" />
+        <span className="cms-od-tick cms-od-tick--3" />
+        <span className="cms-od-needle" />
+      </div>
+    </div>
   </div>
 );
 
@@ -285,7 +257,7 @@ export default function ChallengeModeSelect({
                     >
                       {mode.id === 'normal' && <NormalFx active={isSel} />}
                       {mode.id === 'challenge' && <ElectricFx active={isSel} />}
-                      {mode.id === 'extreme' && <FireFx active={isSel} />}
+                      {mode.id === 'extreme' && <OverdriveFx active={isSel} />}
                     </span>
 
                     {isSel && (

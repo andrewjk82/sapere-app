@@ -39,9 +39,10 @@ export const CHALLENGE_MODES = {
     timeScale: 0.5,
     bonusPercent: 0.1,
     icon: 'flame',
-    color: '#ef4444',
-    glow: 'rgba(239, 68, 68, 0.55)',
-    gradient: 'linear-gradient(145deg, #f87171 0%, #ef4444 45%, #b91c1c 100%)',
+    color: '#fecaca',
+    // Overdrive: deep crimson panel, warning-gauge energy (not fire particles).
+    glow: 'rgba(239, 68, 68, 0.5)',
+    gradient: 'linear-gradient(150deg, #450a0a 0%, #991b1b 42%, #dc2626 78%, #7f1d1d 100%)',
     speech:
       "Extreme mode — half the time! Only pick this if you're ready to fly. Clear the challenge and bank 10% extra XP on your score. No pressure… okay, a little pressure!",
   },
