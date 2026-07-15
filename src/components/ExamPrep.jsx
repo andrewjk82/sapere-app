@@ -33,6 +33,7 @@ import SecretNoteView from './challenge/SecretNoteView';
 import WorkingOutCanvas from './WorkingOutCanvas';
 import LessonPlayer from './lessons/LessonPlayer';
 import { getLesson } from '../lessons/registry';
+import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import {
   getStats, getTopicAnalysis, getProgressAnalysis,
   startPractice, pickNextQuestion, recordAnswer, endSession,
@@ -611,41 +612,14 @@ const QuizView = ({
         </div>
       )}
 
-      {/* Solution */}
+      {/* Worked solution — step-by-step reveal (same UI as Challenge) */}
       {(q.solution || (q.solutionSteps || []).length > 0) && (
-        <div style={{ padding: '16px 18px', borderRadius: '16px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
-            <Lightbulb size={16} color="#7c3aed" />
-            <span style={{ fontSize: '0.72rem', fontWeight: 900, color: '#7c3aed', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Solution</span>
-          </div>
-          {q.solution && !(Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0) && (
-            <MathView content={q.solution} style={{ fontSize: '0.92rem', color: '#3730a3', fontWeight: 600, lineHeight: 1.65 }} />
-          )}
-          {(q.solutionSteps || []).length > 0 && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: q.solution ? '12px' : 0 }}>
-              {q.solutionSteps.map((step, si) => (
-                <div key={si} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-                  <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.7rem', flexShrink: 0 }}>
-                    {si + 1}
-                  </div>
-                  <div style={{ flex: 1 }}>
-                    {step.explanation && <MathView content={step.explanation} style={{ fontSize: '0.88rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6 }} />}
-                    {step.workingOut && (
-                      <div style={{ marginTop: '6px', padding: '8px 12px', borderRadius: '10px', background: '#ede9fe', border: '1px solid #c4b5fd' }}>
-                        <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '0.95rem', fontWeight: 700, color: '#4f46e5' }} />
-                      </div>
-                    )}
-                    {step.graphData && (
-                      <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                        <MathView content="" graphData={step.graphData} style={{ minHeight: step.graphData?.jsxGraph?.height ? `${step.graphData.jsxGraph.height}px` : '240px' }} />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
+        <WorkedSolutionSteps
+          key={`sol-${q.id || q.question || 'q'}`}
+          question={q}
+          graphData={q.graphData}
+          compact
+        />
       )}
     </motion.div>
   );
@@ -799,13 +773,12 @@ const QuizView = ({
 // ── Review screen — question-by-question solution walkthrough ──────────
 const ReviewView = ({ questions, answers, onDone }) => {
   const [idx, setIdx] = useState(0);
-  const [expandedSteps, setExpandedSteps] = useState(true);
   const [showLesson, setShowLesson] = useState(false);
   const q = questions[idx];
   const ans = answers[idx];
   const total = questions.length;
 
-  useEffect(() => { setExpandedSteps(true); setShowLesson(false); }, [idx]);
+  useEffect(() => { setShowLesson(false); }, [idx]);
 
   if (!q) return null;
 
@@ -892,60 +865,14 @@ const ReviewView = ({ questions, answers, onDone }) => {
         </div>
       </div>
 
-      {/* step-by-step solution */}
-      {solutionSteps.length > 0 && (
-        <div className="app-panel" style={{ padding: '20px', borderRadius: '22px', border: '1px solid #e0e7ff' }}>
-          <button
-            onClick={() => setExpandedSteps((v) => !v)}
-            style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', background: 'none', border: 'none', cursor: 'pointer', padding: 0, marginBottom: expandedSteps ? '16px' : 0 }}
-          >
-            <div style={{ width: '32px', height: '32px', borderRadius: '10px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff', flexShrink: 0 }}>
-              <Lightbulb size={16} />
-            </div>
-            <div style={{ flex: 1, textAlign: 'left' }}>
-              <div style={{ fontWeight: 900, color: '#1e1b4b', fontSize: '0.95rem' }}>Step-by-step solution</div>
-              <div style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 700 }}>{solutionSteps.length} steps</div>
-            </div>
-            <ChevronRight size={18} color="#94a3b8" style={{ transform: expandedSteps ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }} />
-          </button>
-
-          <AnimatePresence initial={false}>
-            {expandedSteps && (
-              <motion.div
-                key="steps"
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                style={{ overflow: 'hidden' }}
-              >
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                  {solutionSteps.map((step, si) => (
-                    <div key={si} style={{ display: 'flex', gap: '14px', alignItems: 'flex-start' }}>
-                      <div style={{ width: '26px', height: '26px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', color: '#fff', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.75rem', flexShrink: 0, marginTop: '2px' }}>
-                        {si + 1}
-                      </div>
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        {step.explanation && (
-                          <MathView content={step.explanation} style={{ fontSize: '0.9rem', color: '#1e293b', fontWeight: 600, lineHeight: 1.6, marginBottom: step.workingOut ? '8px' : 0 }} />
-                        )}
-                        {step.workingOut && (
-                          <div style={{ padding: '10px 14px', borderRadius: '12px', background: '#f5f3ff', border: '1px solid #ddd6fe' }}>
-                            <MathView content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} style={{ fontSize: '1rem', fontWeight: 700, color: '#4f46e5' }} />
-                          </div>
-                        )}
-                        {step.graphData && (
-                          <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                            <MathView content="" graphData={step.graphData} style={{ minHeight: step.graphData?.jsxGraph?.height ? `${step.graphData.jsxGraph.height}px` : '320px' }} />
-                          </div>
-                        )}
-                      </div>
-                    </div>
-    ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </div>
+      {/* Worked solution — progressive step reveal (Challenge-style) */}
+      {(q.solution || solutionSteps.length > 0) && (
+        <WorkedSolutionSteps
+          key={`review-sol-${q.id || idx}`}
+          question={q}
+          graphData={q.graphData}
+          compact
+        />
       )}
 
       {/* hint (if any) */}
@@ -1359,97 +1286,80 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
             </div>
           </div>
 
-          {/* Right: unified action stack (same radius / padding language) */}
+          {/* Right: matching action buttons (same shape; secret note = pastel yellow) */}
           <div style={{
             minWidth: isNarrow ? '100%' : '220px',
             display: 'flex',
             flexDirection: 'column',
-            gap: '8px',
-            padding: '8px',
-            borderRadius: '18px',
-            background: 'rgba(248, 250, 252, 0.9)',
-            border: '1px solid rgba(15, 23, 42, 0.06)',
+            gap: '10px',
           }}>
-            <button
-              onClick={onStart}
-              disabled={!hasTopics || loading}
-              style={{
-                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-                gap: '3px',
+            {(() => {
+              // Shared geometry so both CTAs read as the same button family.
+              const btnBase = {
+                display: 'inline-flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
                 width: '100%',
-                padding: poolTotal > 0 ? '14px 18px 12px' : '16px 18px',
-                borderRadius: '12px', border: 'none',
-                background: !hasTopics || loading
-                  ? '#e2e8f0'
-                  : 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%)',
-                color: !hasTopics || loading ? '#94a3b8' : '#fff',
-                cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
-                boxShadow: !hasTopics || loading ? 'none' : '0 8px 20px rgba(109,40,217,0.22)',
-              }}
-            >
-              <span style={{
-                display: 'inline-flex', alignItems: 'center', gap: '8px',
-                fontWeight: 800, fontSize: '0.95rem', letterSpacing: '-0.01em',
-              }}>
-                <Play size={16} fill="currentColor" />
-                {loading ? 'Loading…' : (poolTotal > 0 && remaining === 0 ? 'Practise again' : 'Continue practice')}
-              </span>
-              {poolTotal > 0 && !loading && (
-                <span style={{
-                  fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.01em',
-                  color: !hasTopics ? '#94a3b8' : 'rgba(255,255,255,0.78)',
-                }}>
-                  {remaining} left in this cycle
-                </span>
-              )}
-            </button>
+                padding: '15px 18px',
+                borderRadius: '14px',
+                fontWeight: 800,
+                fontSize: '0.95rem',
+                letterSpacing: '-0.01em',
+                border: 'none',
+                cursor: 'pointer',
+                boxSizing: 'border-box',
+              };
+              return (
+                <>
+                  <button
+                    onClick={onStart}
+                    disabled={!hasTopics || loading}
+                    style={{
+                      ...btnBase,
+                      background: !hasTopics || loading
+                        ? '#e2e8f0'
+                        : 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%)',
+                      color: !hasTopics || loading ? '#94a3b8' : '#fff',
+                      cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
+                      boxShadow: !hasTopics || loading ? 'none' : '0 8px 20px rgba(109,40,217,0.22)',
+                    }}
+                  >
+                    <Play size={16} fill="currentColor" />
+                    {loading ? 'Loading…' : (poolTotal > 0 && remaining === 0 ? 'Practise again' : 'Continue practice')}
+                  </button>
 
-            {noteCount > 0 ? (
-              <button
-                onClick={onOpenSecretNote}
-                style={{
-                  display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                  width: '100%',
-                  padding: '12px 16px',
-                  borderRadius: '12px',
-                  border: '1px solid rgba(124, 58, 237, 0.16)',
-                  background: '#fff',
-                  color: '#5b21b6',
-                  fontWeight: 700, fontSize: '0.88rem',
-                  cursor: 'pointer',
-                }}
-              >
-                <BookmarkPlus size={15} strokeWidth={2.25} />
-                <span>{noteCount} note{noteCount > 1 ? 's' : ''}</span>
-                {dueCount > 0 && (
-                  <span style={{
-                    marginLeft: '2px',
-                    background: 'rgba(124, 58, 237, 0.1)',
-                    color: '#6d28d9',
-                    borderRadius: '999px',
-                    padding: '2px 8px',
-                    fontSize: '0.7rem',
-                    fontWeight: 800,
-                  }}>
-                    {dueCount} due
-                  </span>
-                )}
-              </button>
-            ) : (
-              <div style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                width: '100%',
-                padding: '12px 16px',
-                borderRadius: '12px',
-                border: '1px dashed rgba(15, 23, 42, 0.08)',
-                background: 'transparent',
-                color: '#94a3b8',
-                fontWeight: 600, fontSize: '0.82rem',
-              }}>
-                <BookmarkPlus size={14} />
-                Notes appear after mistakes
-              </div>
-            )}
+                  {noteCount > 0 ? (
+                    <button
+                      onClick={onOpenSecretNote}
+                      style={{
+                        ...btnBase,
+                        background: 'linear-gradient(135deg, #fffbeb 0%, #fef3c7 55%, #fde68a 100%)',
+                        color: '#92400e',
+                        border: '1px solid #fcd34d',
+                        boxShadow: '0 4px 14px rgba(245, 158, 11, 0.12)',
+                      }}
+                    >
+                      <BookmarkPlus size={16} strokeWidth={2.25} />
+                      <span>{noteCount} note{noteCount > 1 ? 's' : ''}</span>
+                      {dueCount > 0 && (
+                        <span style={{
+                          marginLeft: '2px',
+                          background: 'rgba(180, 83, 9, 0.12)',
+                          color: '#b45309',
+                          borderRadius: '999px',
+                          padding: '2px 8px',
+                          fontSize: '0.72rem',
+                          fontWeight: 800,
+                        }}>
+                          {dueCount} due
+                        </span>
+                      )}
+                    </button>
+                  ) : null}
+                </>
+              );
+            })()}
           </div>
         </div>
       </motion.div>
@@ -1749,6 +1659,19 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   useEffect(() => {
     onExamActiveChange?.(stage === 'quiz');
   }, [stage, onExamActiveChange]);
+
+  // FlameBuddy CTA can open Exam Prep Secret Note without leaving the tab.
+  useEffect(() => {
+    const onOpenNotes = (e) => {
+      if (e?.detail?.uid && uid && e.detail.uid !== uid) return;
+      // Don't yank the student out of an active quiz mid-question.
+      if (stage === 'quiz') return;
+      setStage('secretNote');
+    };
+    window.addEventListener('sapere:exam-prep-open-secret-note', onOpenNotes);
+    return () => window.removeEventListener('sapere:exam-prep-open-secret-note', onOpenNotes);
+  }, [uid, stage]);
+
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [analysis, setAnalysis] = useState(() => uid ? getTopicAnalysis(uid) : []);

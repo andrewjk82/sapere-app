@@ -16,6 +16,13 @@ import {
   pickNextSession,
   SESSIONS_CACHE_EVENT,
 } from '../utils/sessionsCache';
+import {
+  getStats as getExamPrepStats,
+  getTopicAnalysis as getExamPrepTopicAnalysis,
+  getProgressAnalysis as getExamPrepProgressAnalysis,
+  getCachedPoolQuestions,
+  EXAM_PREP_NOTE_KIND,
+} from '../services/examPrepService';
 import './FlameBuddy.css';
 
 /**
@@ -517,6 +524,256 @@ const buildChallengeBriefing = (statsDocs, firstName, seedBase, extras = {}) => 
     sub: appendBits(line.sub),
     cta,
     key: `challenge-strong-${todayKeyFromSeed(seedBase)}-fb${unreadFeedback}-n${dueNotes >= 12 ? 1 : 0}`,
+  };
+};
+
+/**
+ * Exam Prep tab coaching from local progress cache only (no Firestore).
+ * Uses deck mastery, lifetime accuracy, weak topics, sessions, secret-note dues.
+ */
+const buildExamPrepBriefing = (snap, firstName, seedBase) => {
+  const n = firstName || '';
+  const hey = n ? `Hey ${n}` : 'Hey';
+  const cn = n ? `, ${n}` : '';
+  const analysis = snap?.analysis || {};
+  const weakTopics = Array.isArray(snap?.weakTopics) ? snap.weakTopics : [];
+  const dueNotes = Number(snap?.dueNotes) || 0;
+  const total = Number(analysis.total) || 0;
+  const mastered = Number(analysis.mastered) || 0;
+  const remaining = Number(analysis.remaining) || Math.max(0, total - mastered);
+  const accuracy = Number(analysis.accuracy) || 0;
+  const sessions = Number(analysis.sessions) || 0;
+  const top = weakTopics[0];
+  const topTitle = top?.title ? String(top.title).replace(/\s+/g, ' ').trim() : '';
+  const topPct = top ? Math.round(top.pct) : null;
+  const day = todayKeyFromSeed(seedBase);
+
+  if (!snap?.enabled) {
+    const lines = [
+      {
+        msg: `${hey} — Exam Prep is locked for now.`,
+        sub: 'Ask your teacher to turn it on and pick chapters. I will coach you as soon as the deck is ready.',
+      },
+      {
+        msg: `Quiet on the exam board${cn}.`,
+        sub: 'Once your teacher assigns topics, this is where we clear them one correct answer at a time.',
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-locked`, firstName);
+    return {
+      mood: 'idle',
+      eyebrow: 'Exam Prep',
+      msg: line.msg,
+      sub: line.sub,
+      cta: null,
+      key: `ep-locked-${day}`,
+    };
+  }
+
+  if (total === 0) {
+    const lines = [
+      {
+        msg: `${hey}! Your exam topics are set — I am still loading the deck.`,
+        sub: 'Hit Continue practice in a moment. After a few questions I will start calling out weak spots.',
+      },
+      {
+        msg: `Deck warming up${cn}.`,
+        sub: 'Questions come from every chapter your teacher chose. Correct ones drop out until you clear the pile.',
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-empty`, firstName);
+    return {
+      mood: 'hint',
+      eyebrow: 'Exam Prep',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Continue practice', tab: 'ExamPrep' },
+      key: `ep-empty-${day}`,
+    };
+  }
+
+  if (remaining === 0 && total > 0) {
+    const lines = [
+      {
+        msg: `${hey} — you cleared the whole deck!`,
+        sub: `All ${total} questions have been correct at least once. Next start reshuffles everything so you can run it again cold.`,
+      },
+      {
+        msg: `Deck complete${cn}. That is a real finish line.`,
+        sub: `Lifetime accuracy sits around ${accuracy}%. When you are ready, start again and treat it like a fresh mock.`,
+      },
+      {
+        msg: `Nice work${cn} — nothing left to clear this cycle.`,
+        sub: dueNotes > 0
+          ? `You still have ${dueNotes} Secret Note${dueNotes === 1 ? '' : 's'} due. A quick review would lock it in.`
+          : 'Take a breath, then reshuffle for another full pass when you feel ready.',
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-clear`, firstName);
+    return {
+      mood: 'cheer',
+      eyebrow: 'Deck cleared',
+      msg: line.msg,
+      sub: line.sub,
+      cta: dueNotes > 0
+        ? { label: 'Secret Note', tab: 'ExamPrep', action: 'exam-secret-note' }
+        : { label: 'Practise again', tab: 'ExamPrep' },
+      key: `ep-clear-${day}-n${dueNotes > 0 ? 1 : 0}`,
+    };
+  }
+
+  if (total > 0 && mastered / total >= 0.7) {
+    const lines = [
+      {
+        msg: `${hey} — almost there. ${remaining} left to clear.`,
+        sub: `You have mastered ${mastered} of ${total}. Lifetime accuracy ${accuracy}%. Finish strong and the deck resets for another lap.`,
+      },
+      {
+        msg: `Home stretch${cn}!`,
+        sub: `${remaining} question${remaining === 1 ? '' : 's'} still waiting. Same careful habits — do not rush the last ones.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-stretch`, firstName);
+    return {
+      mood: 'cheer',
+      eyebrow: 'Almost clear',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Continue practice', tab: 'ExamPrep' },
+      key: `ep-stretch-${day}-r${remaining}`,
+    };
+  }
+
+  if (dueNotes >= 3) {
+    const lines = [
+      {
+        msg: `${hey}, your Exam Prep notes are stacking up.`,
+        sub: `${dueNotes} due for review. Clearing a few mistakes before new questions will raise that ${accuracy}% lifetime score faster.`,
+      },
+      {
+        msg: `Quick coach call${cn}: Secret Note first?`,
+        sub: `You still have ${remaining} in the deck, but ${dueNotes} review cards are due. Five minutes of notes can save a messy session.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-notes`, firstName);
+    return {
+      mood: 'hint',
+      eyebrow: 'Review first',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Open notes', tab: 'ExamPrep', action: 'exam-secret-note' },
+      key: `ep-notes-${day}-d${dueNotes}`,
+    };
+  }
+
+  if (topTitle && top && top.attempted >= 2 && topPct != null && topPct < 70) {
+    const lines = [
+      {
+        msg: `${hey} — scouting report for Exam Prep.`,
+        sub: `${remaining} left in this cycle · lifetime ${accuracy}%. Soft spot: ${topTitle} (${topPct}%). When that topic shows up, slow down and check every step.`,
+      },
+      {
+        msg: `Coach tip${cn}: watch ${topTitle} today.`,
+        sub: `It has been around ${topPct}% for you. Deck progress is ${mastered}/${total}. One careful correct answer removes it from the pile.`,
+      },
+      {
+        msg: `${hey}! ${remaining} question${remaining === 1 ? '' : 's'} still to clear.`,
+        sub: `I would prioritise ${topTitle} if it appears — that is where most of the wobble has been. You have got this.`,
+      },
+      {
+        msg: `Exam mode${cn}: quality over speed.`,
+        sub: `Lifetime accuracy ${accuracy}% across ${sessions} session${sessions === 1 ? '' : 's'}. Weakest lately: ${topTitle}. Read the question twice before you ink.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-weak-${topTitle}`, firstName);
+    return {
+      mood: topPct < 40 ? 'thinking' : 'hint',
+      eyebrow: 'Exam Prep briefing',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Continue practice', tab: 'ExamPrep' },
+      key: `ep-weak-${day}-${topTitle}`,
+    };
+  }
+
+  if (accuracy > 0 && accuracy < 50 && sessions >= 1) {
+    const lines = [
+      {
+        msg: `${hey} — accuracy is a rebuild project, not a verdict.`,
+        sub: `You are at ${accuracy}% lifetime with ${remaining} still to clear. Focus on method, not speed. Every correct answer permanently clears a card this cycle.`,
+      },
+      {
+        msg: `Steady beats flashy${cn}.`,
+        sub: `${mastered}/${total} mastered so far. Treat each question like a mini exam — write steps, check signs, then submit.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-lowacc`, firstName);
+    return {
+      mood: 'thinking',
+      eyebrow: 'Exam Prep',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Continue practice', tab: 'ExamPrep' },
+      key: `ep-lowacc-${day}-a${accuracy}`,
+    };
+  }
+
+  if (mastered === 0 && sessions === 0) {
+    const lines = [
+      {
+        msg: `${hey}! Fresh Exam Prep deck ready.`,
+        sub: `${total} questions from your teacher's chapters. Correct ones drop out; wrong ones can return. Quit anytime — progress saves on this device.`,
+      },
+      {
+        msg: `Welcome to the practice deck${cn}.`,
+        sub: `Goal: clear all ${total}. I will keep score and point out weak topics as you go.`,
+      },
+    ];
+    const line = pickLine(lines, `${seedBase}-ep-fresh`, firstName);
+    return {
+      mood: 'idle',
+      eyebrow: 'Exam Prep',
+      msg: line.msg,
+      sub: line.sub,
+      cta: { label: 'Start practice', tab: 'ExamPrep' },
+      key: `ep-fresh-${day}-t${total}`,
+    };
+  }
+
+  const lines = [
+    {
+      msg: `${hey} — ${remaining} left in this cycle.`,
+      sub: `Mastered ${mastered}/${total} · lifetime ${accuracy || 0}%. Keep the same careful rhythm and the pile will shrink.`,
+    },
+    {
+      msg: `Exam Prep check-in${cn}.`,
+      sub: `${sessions} session${sessions === 1 ? '' : 's'} logged. ${remaining} still to clear. One solid answer at a time is enough.`,
+    },
+    {
+      msg: `${hey}! Ready for another stretch?`,
+      sub: `Deck is ${mastered} down, ${remaining} to go. Correct answers stay cleared until you finish everything.`,
+    },
+    {
+      msg: `Small wins add up${cn}.`,
+      sub: total > 0
+        ? `You are ${Math.round((mastered / total) * 100)}% through this cycle. Stay sharp on reading and algebra setup.`
+        : 'Jump back in when you are ready — I will keep your progress safe.',
+    },
+  ];
+  if (topTitle) {
+    lines.push({
+      msg: `${hey} — keep an eye on ${topTitle}.`,
+      sub: `${remaining} remaining overall. If that topic shows up, double-check your working before you submit.`,
+    });
+  }
+  const line = pickLine(lines, `${seedBase}-ep-mid`, firstName);
+  return {
+    mood: 'hint',
+    eyebrow: 'Exam Prep',
+    msg: line.msg,
+    sub: line.sub,
+    cta: { label: 'Continue practice', tab: 'ExamPrep' },
+    key: `ep-mid-${day}-m${mastered}-r${remaining}-a${accuracy}`,
   };
 };
 
@@ -1412,6 +1669,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [nextSession, setNextSession] = useState(null);
   // Recent daily_stats for Challenge-tab performance briefing (topicStats only).
   const [recentPerf, setRecentPerf] = useState([]);
+  // Exam Prep local snapshot for tab-specific coaching (IDB pool + localStorage).
+  const [examPrepSnap, setExamPrepSnap] = useState(null);
   const [bubbleOpen, setBubbleOpen] = useState(false);
   const [dismissedKey, setDismissedKey] = useState('');
   const [cheerUntil, setCheerUntil] = useState(0);
@@ -1568,6 +1827,42 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       window.removeEventListener(SESSIONS_CACHE_EVENT, onCacheUpdated);
     };
   }, [uid]);
+
+  // Exam Prep coaching snapshot — local only (stats + progress + cached pool).
+  useEffect(() => {
+    if (!uid || activeTab !== 'ExamPrep') return undefined;
+    let cancelled = false;
+    (async () => {
+      try {
+        const enabled = profile?.examPrepEnabled === true;
+        const pool = enabled ? await getCachedPoolQuestions(uid) : [];
+        if (cancelled) return;
+        const analysis = getExamPrepProgressAnalysis(uid, pool);
+        const weakTopics = getExamPrepTopicAnalysis(uid);
+        const dueNotes = getDueCount(EXAM_PREP_NOTE_KIND, uid);
+        // Touch stats so sessions stays consistent if analysis was empty.
+        getExamPrepStats(uid);
+        setExamPrepSnap({
+          enabled,
+          analysis,
+          weakTopics,
+          dueNotes,
+          refreshedAt: Date.now(),
+        });
+      } catch (e) {
+        console.warn('[FlameBuddy] exam prep snap failed:', e?.message || e);
+        if (!cancelled) {
+          setExamPrepSnap({
+            enabled: profile?.examPrepEnabled === true,
+            analysis: {},
+            weakTopics: [],
+            dueNotes: 0,
+          });
+        }
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [uid, activeTab, profile?.examPrepEnabled, speechEpoch]);
 
   // Recent performance for Challenge-tab briefing (last 7 daily_stats, slim fields).
   useEffect(() => {
@@ -1884,6 +2179,21 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       return buildScheduleSpeech(nextSession, firstName);
     }
 
+    // On Exam Prep setup: deck progress / weak topics / notes (local cache only).
+    // Hidden during active quiz via `hidden` prop (examInProgress).
+    if (activeTab === 'ExamPrep') {
+      return buildExamPrepBriefing(
+        examPrepSnap || {
+          enabled: profile?.examPrepEnabled === true,
+          analysis: {},
+          weakTopics: [],
+          dueNotes: 0,
+        },
+        firstName,
+        `${rotateSeed}-ep`,
+      );
+    }
+
     // On Challenge tab (start screen only — quiz holds briefing via quizSession):
     // performance report + teacher feedback + secret-note backlog.
     if (activeTab === 'Challenge') {
@@ -1950,7 +2260,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}-${slot}-${speechEpoch}`,
     };
-  }, [cheerUntil, resultCoach, liveSketchTip, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch]);
+  }, [cheerUntil, resultCoach, liveSketchTip, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch, examPrepSnap, profile?.examPrepEnabled]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.
@@ -1996,6 +2306,16 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
                   detail: { uid },
                 }));
               } catch { /* ignore */ }
+              setBubbleOpen(false);
+              return;
+            }
+            if (action === 'exam-secret-note') {
+              try {
+                window.dispatchEvent(new CustomEvent('sapere:exam-prep-open-secret-note', {
+                  detail: { uid },
+                }));
+              } catch { /* ignore */ }
+              if (situation.cta?.tab) setActiveTab?.(situation.cta.tab);
               setBubbleOpen(false);
               return;
             }

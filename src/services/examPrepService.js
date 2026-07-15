@@ -532,6 +532,21 @@ const loadCachedPool = async (uid, selection, latestVersion) => {
   return cached.questions || [];
 };
 
+/**
+ * Read the locally cached question pool without any Firestore calls.
+ * Used by FlameBuddy (and other UI) for offline-safe coaching copy.
+ */
+export const getCachedPoolQuestions = async (uid) => {
+  if (!uid) return [];
+  purgeLegacyLocalStoragePool();
+  try {
+    const cached = await idbGet(k(uid, 'pool'));
+    return Array.isArray(cached?.questions) ? cached.questions : [];
+  } catch {
+    return [];
+  }
+};
+
 const saveCachedPool = async (uid, selection, questions, questionsVersion) => {
   await idbSet(k(uid, 'pool'), {
     fetchedAt: Date.now(),
