@@ -1169,11 +1169,17 @@ export const Y11A_CH4E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-4e-q12a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Write down an expression for the area \\(A\\) of this rectangle in terms of \\(x\\).",
-        "a": "x(13 - x)",
+        "options": [
+          "\\(A = x(13 - x)\\)",
+          "\\(A = x(26 - x)\\)",
+          "\\(A = 2x(13 - x)\\)",
+          "\\(A = x(13 - 2x)\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Determine the sum of the adjacent sides using the perimeter of 26 cm.",
@@ -1194,11 +1200,17 @@ export const Y11A_CH4E_QUESTIONS = [
       },
       {
         "id": "y11a-4e-q12b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "What values may \\(x\\) take if the area \\(A\\) is strictly greater than 36 square centimeters?",
-        "a": "4 < x < 9",
+        "options": [
+          "\\(4 < x < 9\\)",
+          "\\(x < 4\\; \\text{or}\\; x > 9\\)",
+          "\\(3 < x < 12\\)",
+          "\\(x < 3\\; \\text{or}\\; x > 12\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Set up the inequality using the area expression derived in part a.",
@@ -1237,11 +1249,17 @@ export const Y11A_CH4E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-4e-q13a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Find an expression for the length of the third side (parallel to the barn wall) in terms of \\(x\\).",
-        "a": "80 - 2x",
+        "options": [
+          "\\(80 - 2x\\)",
+          "\\(80 - x\\)",
+          "\\(40 - x\\)",
+          "\\(80 - 4x\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Express the total length of fencing as the sum of the three fenced side lengths.",
@@ -1262,11 +1280,17 @@ export const Y11A_CH4E_QUESTIONS = [
       },
       {
         "id": "y11a-4e-q13b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "If the area \\(A\\) of the pen must be at least 600 square meters, find the smallest value of \\(x\\) that satisfies this requirement.",
-        "a": "10",
+        "options": [
+          "\\(10\\)",
+          "\\(30\\)",
+          "\\(20\\)",
+          "\\(5\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Write the area equation as the product of the adjacent side lengths and set up the inequality.",
@@ -1305,11 +1329,17 @@ export const Y11A_CH4E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-4e-q14a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "hard",
         "timeLimit": 120,
         "question": "Find the values of the constants \\(a\\), \\(b\\), and \\(c\\).",
-        "a": "a = 2, b = 5, c = 7",
+        "options": [
+          "\\(a = 2, \\; b = 5, \\; c = 7\\)",
+          "\\(a = 2, \\; b = -3, \\; c = 5\\)",
+          "\\(a = 1, \\; b = 5, \\; c = 7\\)",
+          "\\(a = 2, \\; b = 7, \\; c = 5\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Substitute \\(x = 2\\) into both sides of the identity to isolate \\(c\\).",
@@ -1335,11 +1365,17 @@ export const Y11A_CH4E_QUESTIONS = [
       },
       {
         "id": "y11a-4e-q14b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "medium",
         "timeLimit": 90,
         "question": "Hence, evaluate \\(2x^2 - 3x + 5\\) when \\(x = 2.03\\) without using a calculator.",
-        "a": "7.1518",
+        "options": [
+          "\\(7.1518\\)",
+          "\\(7.1500\\)",
+          "\\(7.1815\\)",
+          "\\(7.0518\\)"
+        ],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Substitute \\(x = 2.03\\) into the rewritten form of the quadratic expression \\(2(x-2)^2 + 5(x-2) + 7\\).",
