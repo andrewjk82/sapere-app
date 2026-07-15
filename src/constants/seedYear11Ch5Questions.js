@@ -937,10 +937,10 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "By completing the square, express $y = x^2 - 8x + 15$ in the form $y = (x-h)^2 + k$. What is the turning point?",
     "a": "0",
     "opts": [
-      "$y = (x-4)^2 - 1$, TP: $(4, -1)$",
-      "$y = (x+4)^2 - 1$, TP: $(-4, -1)$",
-      "$y = (x-4)^2 + 1$, TP: $(4, 1)$",
-      "$y = (x-8)^2 - 49$, TP: $(8, -49)$"
+      "$(4, -1)$",
+      "$(-4, -1)$",
+      "$(4, 1)$",
+      "$(8, -49)$"
     ],
     "h": "Take half of the $x$-coefficient, square it, and add/subtract it.",
     "s": "$y = (x^2 - 8x + 16) - 16 + 15 = (x - 4)^2 - 1$. The turning point is $(4, -1)$.",
@@ -968,10 +968,10 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "By completing the square, express $y = x^2 + 10x + 22$ in the form $y = (x-h)^2 + k$. What is the turning point?",
     "a": "0",
     "opts": [
-      "$y = (x+5)^2 - 3$, TP: $(-5, -3)$",
-      "$y = (x-5)^2 - 3$, TP: $(5, -3)$",
-      "$y = (x+5)^2 + 3$, TP: $(-5, 3)$",
-      "$y = (x+10)^2 - 78$, TP: $(-10, -78)$"
+      "$(-5, -3)$",
+      "$(5, -3)$",
+      "$(-5, 3)$",
+      "$(-10, -78)$"
     ],
     "h": "Half of $10$ is $5$, square is $25$.",
     "s": "$y = (x^2 + 10x + 25) - 25 + 22 = (x + 5)^2 - 3$. The turning point is $(-5, -3)$.",
@@ -995,10 +995,10 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "By completing the square, express $y = x^2 - 6x + 14$ in the form $y = (x-h)^2 + k$. What is the turning point?",
     "a": "0",
     "opts": [
-      "$y = (x-3)^2 + 5$, TP: $(3, 5)$",
-      "$y = (x+3)^2 + 5$, TP: $(-3, 5)$",
-      "$y = (x-3)^2 - 5$, TP: $(3, -5)$",
-      "$y = (x-6)^2 - 22$, TP: $(6, -22)$"
+      "$(3, 5)$",
+      "$(-3, 5)$",
+      "$(3, -5)$",
+      "$(6, -22)$"
     ],
     "h": "Half of $-6$ is $-3$, square is $9$.",
     "s": "$y = (x^2 - 6x + 9) - 9 + 14 = (x - 3)^2 + 5$. The turning point is $(3, 5)$.",
@@ -1022,10 +1022,10 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "By completing the square, express $y = x^2 + 12x + 40$ in the form $y = (x-h)^2 + k$. What is the turning point?",
     "a": "0",
     "opts": [
-      "$y = (x+6)^2 + 4$, TP: $(-6, 4)$",
-      "$y = (x-6)^2 + 4$, TP: $(6, 4)$",
-      "$y = (x+6)^2 - 4$, TP: $(-6, -4)$",
-      "$y = (x+12)^2 - 104$, TP: $(-12, -104)$"
+      "$(-6, 4)$",
+      "$(6, 4)$",
+      "$(-6, -4)$",
+      "$(-12, -104)$"
     ],
     "h": "Half of $12$ is $6$, square is $36$.",
     "s": "$y = (x^2 + 12x + 36) - 36 + 40 = (x + 6)^2 + 4$. The turning point is $(-6, 4)$.",
