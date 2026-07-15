@@ -620,10 +620,10 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "q": "Consider the function $f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$. Is $f(x)$ even, odd, or neither?",
     "a": "Expanding gives $f(x) = -\\cos\\!\\left(\\dfrac{x}{2}\\right)$, and $f(-x) = -\\cos\\!\\left(-\\dfrac{x}{2}\\right) = -\\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$.",
     "options": [
-      "Even: $f(-x) = -\\cos\\!\\left(-\\dfrac{x}{2}\\right) = -\\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$",
-      "Odd: $f(-x) = -\\cos\\!\\left(-\\dfrac{x}{2}\\right) = \\cos\\!\\left(\\dfrac{x}{2}\\right) = -f(x)$",
-      "Even: $f(-x) = -\\sin\\!\\left(-\\dfrac{x}{2}\\right) = f(x)$",
-      "Neither even nor odd"
+      "Even",
+      "Odd",
+      "Neither",
+      "Not enough information"
     ],
     "answer": "0",
     "h": "Expand $\\sin\\!\\left(\\dfrac{x}{2} + \\dfrac{\\pi}{2}\\right)$ with the compound angle formula, then check $f(-x) = f(x)$.",
