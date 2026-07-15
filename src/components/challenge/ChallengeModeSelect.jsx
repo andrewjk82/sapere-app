@@ -34,11 +34,14 @@ export default function ChallengeModeSelect({
 }) {
   const [selected, setSelected] = useState('normal');
   const [hovered, setHovered] = useState(null);
+  // Bumps on each pick so select FX (sparks / fire) can re-fire.
+  const [fxTick, setFxTick] = useState(0);
 
   useEffect(() => {
     if (!open) return undefined;
     setSelected('normal');
     setHovered(null);
+    setFxTick(0);
     // Hide the floating corner FlameBuddy while this modal owns the coach UI.
     try {
       window.dispatchEvent(new CustomEvent('sapere:ui-overlay', {
@@ -155,12 +158,19 @@ export default function ChallengeModeSelect({
                     type="button"
                     role="option"
                     aria-selected={isSel}
-                    className={`cms-card${isSel ? ' is-selected' : ''}`}
+                    className={[
+                      'cms-card',
+                      `cms-card--${mode.id}`,
+                      isSel ? 'is-selected' : '',
+                    ].filter(Boolean).join(' ')}
                     style={{
                       '--cms-grad': mode.gradient,
                       '--cms-glow': mode.glow,
                     }}
-                    onClick={() => setSelected(mode.id)}
+                    onClick={() => {
+                      setSelected(mode.id);
+                      setFxTick((n) => n + 1);
+                    }}
                     onMouseEnter={() => setHovered(mode.id)}
                     onMouseLeave={() => setHovered(null)}
                     onFocus={() => setHovered(mode.id)}
@@ -168,8 +178,48 @@ export default function ChallengeModeSelect({
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.08 + i * 0.07, type: 'spring', stiffness: 280, damping: 22 }}
-                    whileTap={{ scale: 0.98 }}
+                    whileTap={{ scale: 0.97 }}
                   >
+                    {/* Mode-specific FX layer (re-mounts on each pick via key) */}
+                    <span
+                      className="cms-fx"
+                      aria-hidden
+                      key={isSel ? `${mode.id}-fx-${fxTick}` : `${mode.id}-fx-idle`}
+                    >
+                      {mode.id === 'normal' && (
+                        <>
+                          <span className="cms-fx-shimmer" />
+                          <span className="cms-fx-ring" />
+                        </>
+                      )}
+                      {mode.id === 'challenge' && (
+                        <>
+                          <span className="cms-fx-bolt cms-fx-bolt--a" />
+                          <span className="cms-fx-bolt cms-fx-bolt--b" />
+                          <span className="cms-fx-bolt cms-fx-bolt--c" />
+                          <span className="cms-fx-spark cms-fx-spark--1" />
+                          <span className="cms-fx-spark cms-fx-spark--2" />
+                          <span className="cms-fx-spark cms-fx-spark--3" />
+                          <span className="cms-fx-spark cms-fx-spark--4" />
+                          <span className="cms-fx-scan" />
+                        </>
+                      )}
+                      {mode.id === 'extreme' && (
+                        <>
+                          <span className="cms-fx-heat" />
+                          <span className="cms-fx-flame cms-fx-flame--1" />
+                          <span className="cms-fx-flame cms-fx-flame--2" />
+                          <span className="cms-fx-flame cms-fx-flame--3" />
+                          <span className="cms-fx-flame cms-fx-flame--4" />
+                          <span className="cms-fx-ember cms-fx-ember--1" />
+                          <span className="cms-fx-ember cms-fx-ember--2" />
+                          <span className="cms-fx-ember cms-fx-ember--3" />
+                          <span className="cms-fx-ember cms-fx-ember--4" />
+                          <span className="cms-fx-ember cms-fx-ember--5" />
+                        </>
+                      )}
+                    </span>
+
                     {isSel && (
                       <span className="cms-card-check" aria-hidden>
                         <Zap size={14} fill="currentColor" />
