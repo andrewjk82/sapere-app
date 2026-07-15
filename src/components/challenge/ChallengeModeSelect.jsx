@@ -8,9 +8,9 @@ import { CHALLENGE_MODE_LIST, getChallengeMode } from '../../constants/challenge
 import './ChallengeModeSelect.css';
 
 const ModeIcon = ({ name, size = 28 }) => {
-  if (name === 'zap') return <Zap size={size} strokeWidth={2.4} />;
-  if (name === 'flame') return <Flame size={size} strokeWidth={2.4} />;
-  return <Shield size={size} strokeWidth={2.4} />;
+  if (name === 'zap') return <Zap size={size} strokeWidth={2.6} />;
+  if (name === 'flame') return <Flame size={size} strokeWidth={2.6} />;
+  return <Shield size={size} strokeWidth={2.6} />;
 };
 
 const PARTICLES = Array.from({ length: 18 }, (_, i) => ({
@@ -175,10 +175,12 @@ export default function ChallengeModeSelect({
                         <Zap size={14} fill="currentColor" />
                       </span>
                     )}
-                    <span className="cms-card-icon" aria-hidden>
-                      <ModeIcon name={mode.icon} />
+                    <span className="cms-card-title">
+                      <span className="cms-card-icon" aria-hidden>
+                        <ModeIcon name={mode.icon} size={26} />
+                      </span>
+                      <span className="cms-card-label">{mode.label}</span>
                     </span>
-                    <span className="cms-card-label">{mode.label}</span>
                     <div className="cms-card-stats">
                       <span className="cms-stat">
                         <Clock size={13} />
