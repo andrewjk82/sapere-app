@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.9i-pen';
+const CANVAS_VERSION = 'v9.10-2finger-page';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -876,6 +876,119 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
     });
   };
 
+  // Keep latest page-nav actions for the gesture listener (stable mount effect).
+  const pageNavRef = useRef({
+    currentPage: 0,
+    pageCount: 1,
+    isSubmitted: false,
+    addPage: () => {},
+    goToPage: () => {},
+    discardStroke: () => {},
+  });
+  pageNavRef.current = {
+    currentPage,
+    pageCount: pages.length,
+    isSubmitted: !!isSubmitted,
+    addPage,
+    goToPage,
+    discardStroke: discardCurrentStroke,
+  };
+
+  // Two-finger vertical swipe (or trackpad wheel) → page change.
+  // Swipe fingers up / scroll down → next page (create if at end).
+  // Swipe fingers down / scroll up → previous page.
+  // Single-finger drawing is unchanged; only ≥2 touches drive navigation.
+  useEffect(() => {
+    const wrapper = canvasWrapperRef.current;
+    if (!wrapper) return undefined;
+
+    const SWIPE_PX = 64;
+    const WHEEL_PX = 90;
+    let gesture = null; // { y0, fired }
+    let wheelAcc = 0;
+    let wheelResetTimer = 0;
+
+    const goNext = () => {
+      const nav = pageNavRef.current;
+      if (nav.isSubmitted) return;
+      nav.discardStroke?.();
+      if (nav.currentPage < nav.pageCount - 1) nav.goToPage(nav.currentPage + 1);
+      else nav.addPage();
+    };
+
+    const goPrev = () => {
+      const nav = pageNavRef.current;
+      if (nav.isSubmitted) return;
+      if (nav.currentPage <= 0) return;
+      nav.discardStroke?.();
+      nav.goToPage(nav.currentPage - 1);
+    };
+
+    const onTouchStart = (e) => {
+      if (e.touches.length === 2) {
+        const y = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        gesture = { y0: y, fired: false };
+        // Abort any one-finger stroke so a page flip never keeps a ghost line.
+        pageNavRef.current.discardStroke?.();
+      } else if (e.touches.length < 2) {
+        gesture = null;
+      }
+    };
+
+    const onTouchMove = (e) => {
+      if (!gesture || e.touches.length < 2) return;
+      if (e.cancelable !== false) e.preventDefault();
+      if (gesture.fired) return;
+      const y = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+      const dy = y - gesture.y0;
+      if (dy <= -SWIPE_PX) {
+        // Fingers moved up → next page (like scrolling content down).
+        gesture.fired = true;
+        goNext();
+      } else if (dy >= SWIPE_PX) {
+        gesture.fired = true;
+        goPrev();
+      }
+    };
+
+    const onTouchEnd = (e) => {
+      if (e.touches.length < 2) gesture = null;
+    };
+
+    // Trackpads emit wheel for two-finger scroll — same mapping as swipe.
+    const onWheel = (e) => {
+      // Ignore wheel on toolbar controls (color/undo/page buttons).
+      if (e.target?.closest?.('button, select')) return;
+      if (pageNavRef.current.isSubmitted) return;
+      if (e.cancelable !== false) e.preventDefault();
+      wheelAcc += e.deltaY;
+      if (wheelAcc >= WHEEL_PX) {
+        wheelAcc = 0;
+        goNext();
+      } else if (wheelAcc <= -WHEEL_PX) {
+        wheelAcc = 0;
+        goPrev();
+      }
+      window.clearTimeout(wheelResetTimer);
+      wheelResetTimer = window.setTimeout(() => { wheelAcc = 0; }, 220);
+    };
+
+    wrapper.addEventListener('touchstart', onTouchStart, { passive: true });
+    wrapper.addEventListener('touchmove', onTouchMove, { passive: false });
+    wrapper.addEventListener('touchend', onTouchEnd, { passive: true });
+    wrapper.addEventListener('touchcancel', onTouchEnd, { passive: true });
+    wrapper.addEventListener('wheel', onWheel, { passive: false });
+
+    return () => {
+      wrapper.removeEventListener('touchstart', onTouchStart);
+      wrapper.removeEventListener('touchmove', onTouchMove);
+      wrapper.removeEventListener('touchend', onTouchEnd);
+      wrapper.removeEventListener('touchcancel', onTouchEnd);
+      wrapper.removeEventListener('wheel', onWheel);
+      window.clearTimeout(wheelResetTimer);
+    };
+  }, []);
+
   useImperativeHandle(ref, () => {
     const drawBackground = (ctx, dpr) => {
       if (isGraph) {
@@ -1035,7 +1148,11 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage === 0} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === 0 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <ChevronLeft size={15} />
             </button>
-            <button onClick={addPage} style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer' }}>
+            <button
+              onClick={addPage}
+              title="Add page · or two-finger swipe up / scroll down"
+              style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer' }}
+            >
               {currentPage + 1}/{pages.length} +
             </button>
             <button onClick={() => goToPage(currentPage + 1)} disabled={currentPage === pages.length - 1} style={{ width: '30px', height: '30px', borderRadius: '8px', border: 'none', cursor: 'pointer', background: '#f1f5f9', color: currentPage === pages.length - 1 ? '#cbd5e1' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
