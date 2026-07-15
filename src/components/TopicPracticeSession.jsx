@@ -703,7 +703,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                     <MathView content={sq.question} graphData={sq.type === 'graph_sketch' ? (submitted ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
                   </div>
                   {sq.type === 'multiple_choice' ? (
-                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oi) => {
                         const optText = typeof opt === 'string' ? opt : opt.text;
                         const selO = val === String(oi);
@@ -714,9 +714,10 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                             key={oi}
                             onClick={() => !submitted && setUserAnswer((prev) => ({ ...prev, [key]: String(oi) }))}
                             style={{
-                              padding: '8px 14px', borderRadius: '10px', border: `2px solid ${correctO ? '#10b981' : wrongO ? '#f43f5e' : selO ? '#a78bfa' : '#e2e8f0'}`,
+                              padding: '12px 16px', borderRadius: '12px', border: `2px solid ${correctO ? '#10b981' : wrongO ? '#f43f5e' : selO ? '#a78bfa' : '#e2e8f0'}`,
                               background: correctO ? '#f0fdf4' : wrongO ? '#fff1f2' : selO ? '#f5f3ff' : '#fff',
                               color: '#1e1b4b', fontWeight: 700, cursor: submitted ? 'default' : 'pointer', fontSize: '0.88rem',
+                              textAlign: 'left'
                             }}
                           >
                             {String.fromCharCode(65 + oi)}. <MathView content={optText} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ display: 'inline' }} />

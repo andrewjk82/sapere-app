@@ -436,7 +436,7 @@ const ChallengeQuizView = ({
                   </div>
 
                   {sq.type === 'multiple_choice' ? (
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oIdx) => {
                         const isSelected = subAnswers[sq.id || sIdx] === (typeof opt === 'string' ? opt : opt.text);
                         const isCorrectAnswer = step === 'feedback' && (

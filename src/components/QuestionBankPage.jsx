@@ -625,7 +625,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                           <MathView content={sq.question} graphData={sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                         </div>
                         {sq.type === 'multiple_choice' ? (
-                          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '8px' }}>
+                          <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                             {(sq.options || []).map((opt, oIdx) => {
                               const isCorrectOpt = !Number.isNaN(Number(sq.answer)) && oIdx === Number(sq.answer);
                               return (
