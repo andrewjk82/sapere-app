@@ -59,48 +59,49 @@ const ElectricFx = ({ active }) => (
   </svg>
 );
 
-/** Layered fire: soft heat bloom + SVG flame tongues + drifting embers. */
+/**
+ * Extreme fire — cinematic & restrained.
+ * Bottom heat + 3 flame silhouettes + sparse embers + edge rim.
+ * (Avoids the "particle soup" look of a full flame wall.)
+ */
 const FireFx = ({ active }) => (
   <div className={`cms-fx-fire${active ? ' is-on' : ''}`} aria-hidden>
     <div className="cms-fx-heatbase" />
-    <div className="cms-fx-heatbase cms-fx-heatbase--2" />
-    <svg className="cms-fx-svg cms-fx-svg--fire" viewBox="0 0 200 120" preserveAspectRatio="xMidYMax meet">
+    <div className="cms-fx-rim" />
+
+    <svg className="cms-fx-svg cms-fx-svg--fire" viewBox="0 0 200 100" preserveAspectRatio="xMidYMax meet">
       <defs>
         <linearGradient id="cms-flame-a" x1="0.5" y1="1" x2="0.5" y2="0">
           <stop offset="0%" stopColor="#7f1d1d" stopOpacity="0" />
-          <stop offset="25%" stopColor="#ef4444" stopOpacity="0.9" />
-          <stop offset="55%" stopColor="#f97316" stopOpacity="0.95" />
-          <stop offset="80%" stopColor="#fbbf24" stopOpacity="0.85" />
-          <stop offset="100%" stopColor="#fff7ed" stopOpacity="0.5" />
+          <stop offset="30%" stopColor="#ef4444" stopOpacity="0.85" />
+          <stop offset="65%" stopColor="#fb923c" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#fef3c7" stopOpacity="0.55" />
         </linearGradient>
         <linearGradient id="cms-flame-b" x1="0.5" y1="1" x2="0.5" y2="0">
           <stop offset="0%" stopColor="#991b1b" stopOpacity="0" />
-          <stop offset="35%" stopColor="#ea580c" stopOpacity="0.85" />
-          <stop offset="70%" stopColor="#fcd34d" stopOpacity="0.75" />
-          <stop offset="100%" stopColor="#ffffff" stopOpacity="0.35" />
+          <stop offset="40%" stopColor="#f97316" stopOpacity="0.8" />
+          <stop offset="100%" stopColor="#fff7ed" stopOpacity="0.45" />
         </linearGradient>
-        <filter id="cms-fire-blur" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="1.2" />
+        <filter id="cms-fire-soft" x="-15%" y="-15%" width="130%" height="130%">
+          <feGaussianBlur stdDeviation="1.1" />
         </filter>
       </defs>
-      <g filter="url(#cms-fire-blur)" opacity="0.95">
-        <path className="cms-flame-path cms-flame-path--1" fill="url(#cms-flame-a)" d="M28 118 C22 96 18 82 28 64 C36 48 30 40 36 28 C44 44 40 56 48 70 C58 88 52 102 48 118 Z" />
-        <path className="cms-flame-path cms-flame-path--2" fill="url(#cms-flame-a)" d="M72 120 C62 98 58 80 72 58 C82 40 74 30 82 16 C94 34 88 48 96 64 C108 86 100 102 96 120 Z" />
-        <path className="cms-flame-path cms-flame-path--3" fill="url(#cms-flame-b)" d="M118 120 C108 100 104 84 116 62 C126 46 120 36 128 22 C138 40 134 52 142 68 C154 90 146 106 142 120 Z" />
-        <path className="cms-flame-path cms-flame-path--4" fill="url(#cms-flame-a)" d="M158 118 C150 100 148 86 158 68 C166 54 160 46 166 34 C176 48 172 58 180 72 C190 90 184 104 178 118 Z" />
+      <g filter="url(#cms-fire-soft)" opacity="0.92">
+        <path className="cms-flame-path cms-flame-path--1" fill="url(#cms-flame-a)" d="M48 100 C40 78 42 62 56 44 C64 32 58 24 66 12 C76 28 72 40 80 54 C90 72 82 88 78 100 Z" />
+        <path className="cms-flame-path cms-flame-path--2" fill="url(#cms-flame-b)" d="M92 100 C82 76 84 58 100 38 C110 26 104 16 114 6 C126 22 120 34 130 50 C142 72 132 88 126 100 Z" />
+        <path className="cms-flame-path cms-flame-path--3" fill="url(#cms-flame-a)" d="M138 100 C130 80 132 66 144 50 C152 40 148 32 154 22 C164 36 160 46 168 58 C178 74 170 90 164 100 Z" />
       </g>
-      {/* bright cores */}
-      <path className="cms-flame-core cms-flame-core--1" fill="url(#cms-flame-b)" d="M78 118 C74 100 76 88 84 74 C90 84 88 96 86 118 Z" opacity="0.7" />
-      <path className="cms-flame-core cms-flame-core--2" fill="url(#cms-flame-b)" d="M124 118 C120 102 122 90 130 76 C136 88 134 100 132 118 Z" opacity="0.65" />
+      <path className="cms-flame-core" fill="url(#cms-flame-b)" d="M100 100 C96 84 100 72 108 58 C114 68 112 82 110 100 Z" opacity="0.65" />
     </svg>
-    {Array.from({ length: 10 }, (_, i) => (
+
+    {Array.from({ length: 7 }, (_, i) => (
       <span
         key={i}
         className={`cms-ember-dot cms-ember-dot--${i + 1}`}
         style={{
-          left: `${12 + i * 8}%`,
-          animationDelay: `${(i * 0.11) % 1.1}s`,
-          animationDuration: `${1.4 + (i % 4) * 0.22}s`,
+          left: `${18 + i * 10}%`,
+          animationDelay: `${0.15 + i * 0.18}s`,
+          animationDuration: `${1.8 + (i % 3) * 0.25}s`,
         }}
       />
     ))}
