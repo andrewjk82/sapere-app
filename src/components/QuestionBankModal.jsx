@@ -1222,8 +1222,11 @@ const StudentViewPreview = ({ question, onClose }) => {
                   {sq.type === 'multiple_choice' ? (
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oIdx) => (
-                        <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', color: '#64748b', fontWeight: 800, fontSize: '0.85rem', textAlign: 'left' }}>
-                          {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                        <div key={oIdx} style={{ padding: '14px 22px', display: 'flex', alignItems: 'center', gap: '14px', border: '2px solid transparent', borderRadius: '100px', background: '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                          <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: '#f1f5f9', color: '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
+                            {String.fromCharCode(65 + oIdx)}
+                          </div>
+                          <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
                         </div>
                       ))}
                     </div>

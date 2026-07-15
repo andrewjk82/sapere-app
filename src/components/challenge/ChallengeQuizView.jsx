@@ -450,19 +450,26 @@ const ChallengeQuizView = ({
                             onClick={() => step !== 'feedback' && setSubAnswers(prev => ({ ...prev, [sq.id || sIdx]: (typeof opt === 'string' ? opt : opt.text) }))}
                             aria-disabled={isFeedback}
                             style={{
-                              padding: '12px 16px',
-                              borderRadius: '12px',
-                              border: `2px solid ${isCorrectAnswer ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9'}`,
+                              padding: '14px 22px',
+                              borderRadius: '100px',
+                              border: `2px solid ${isCorrectAnswer ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : 'transparent'}`,
                               background: isCorrectAnswer ? '#f0fdf4' : isWrong ? '#fef2f2' : isSelected ? '#f5f3ff' : '#fff',
-                              color: isCorrectAnswer ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#64748b',
-                              fontWeight: 800,
-                              fontSize: '0.85rem',
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: '14px',
                               cursor: step === 'feedback' ? 'default' : 'pointer',
+                              boxShadow: '0 4px 12px rgba(0,0,0,0.03)',
+                              textAlign: 'left',
                               transition: 'all 0.2s',
-                              textAlign: 'left'
+                              width: '100%',
                             }}
                           >
-                            {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ display: 'inline' }} />
+                            <div style={{ width: '32px', height: '32px', borderRadius: '50%', flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', background: isCorrectAnswer ? '#10b981' : isWrong ? '#ef4444' : isSelected ? '#6366f1' : '#f1f5f9', color: isCorrectAnswer || isWrong || isSelected ? '#fff' : '#64748b' }}>
+                              {String.fromCharCode(65 + oIdx)}
+                            </div>
+                            <MathView content={typeof opt === 'string' ? opt : opt.text} style={{ flex: 1, fontSize: '1rem', color: isCorrectAnswer ? '#166534' : isWrong ? '#991b1b' : isSelected ? '#4f46e5' : '#1e1b4b', fontWeight: 500 }} />
+                            {isCorrectAnswer && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
+                            {isWrong && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#ef4444', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Wrong</span>}
                           </button>
                         );
                       })}

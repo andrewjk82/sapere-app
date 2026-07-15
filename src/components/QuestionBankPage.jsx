@@ -629,8 +629,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                             {(sq.options || []).map((opt, oIdx) => {
                               const isCorrectOpt = !Number.isNaN(Number(sq.answer)) && oIdx === Number(sq.answer);
                               return (
-                                <div key={oIdx} style={{ padding: '12px 16px', borderRadius: '12px', border: `2px solid ${isCorrectOpt ? '#10b981' : '#f1f5f9'}`, background: isCorrectOpt ? '#f0fdf4' : '#fff', color: isCorrectOpt ? '#166534' : '#64748b', fontWeight: 800, fontSize: '0.85rem' }}>
-                                  {String.fromCharCode(65 + oIdx)}. <MathView content={typeof opt === 'string' ? opt : opt.text} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ display: 'inline' }} />
+                                <div key={oIdx} style={{ padding: '14px 22px', display: 'flex', alignItems: 'center', gap: '14px', border: `2px solid ${isCorrectOpt ? '#10b981' : 'transparent'}`, borderRadius: '100px', background: isCorrectOpt ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
+                                  <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrectOpt ? '#10b981' : '#f1f5f9', color: isCorrectOpt ? '#fff' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
+                                    {String.fromCharCode(65 + oIdx)}
+                                  </div>
+                                  <MathView content={typeof opt === 'string' ? opt : opt.text} graphData={typeof opt === 'object' ? opt.graphData : null} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+                                  {isCorrectOpt && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
                                 </div>
                               );
                             })}
