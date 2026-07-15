@@ -63,6 +63,24 @@ const curveGradient = (raw) => {
   return CURVE_PALETTES.blue; // default
 };
 
+const formatLabel = (str) => {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/\^\\circ/g, '°')
+    .replace(/\\circ/g, '°')
+    .replace(/\\alpha/g, 'α')
+    .replace(/\\beta/g, 'β')
+    .replace(/\\gamma/g, 'γ')
+    .replace(/\\theta/g, 'θ')
+    .replace(/\\pi/g, 'π')
+    .replace(/\^2/g, '²')
+    .replace(/\^3/g, '³')
+    .replace(/\\sqrt/g, '√')
+    .replace(/√\{([^}]+)\}/g, '√$1')
+    .replace(/\\/g, '') // remove trailing backslashes if any
+    .replace(/\$+/g, '');
+};
+
 
 /* ═══════════════════════════════════════════════════════════════════
    Component
@@ -83,30 +101,33 @@ const SvgGraph = ({ data }) => {
     const list = [];
 
     // 1. Execute script with a mock board
-    if (typeof data.script === 'string' && data.script.trim()) {
-      const board = {
-        create: (type, parents, attrs = {}) => {
-          const t = String(type).toLowerCase();
-          list.push({ src: 'script', type: t, parents: parents || [], attrs });
-          const mock = { _type: t, _explicit: true };
-          if (t === 'point' && Array.isArray(parents)) {
-            mock.X = () => parents[0];
-            mock.Y = () => parents[1];
-            mock.coords = { usrCoords: [1, parents[0], parents[1]] };
-          }
-          return mock;
-        },
-        suspendUpdate() {},
-        unsuspendUpdate() {},
-        options: { point: {} },
-        objects: {},
-      };
-      try {
-        new Function('board', 'JXG', data.script)(board, { Math });
-      } catch (e) {
-        console.warn('[SvgGraph] script error:', e);
+      if (typeof data.script === 'string' && data.script.trim()) {
+        const board = {
+          create: (type, parents, attrs = {}) => {
+            const t = String(type).toLowerCase();
+            list.push({ src: 'script', type: t, parents: parents || [], attrs });
+            const mock = { _type: t, _explicit: true };
+            if (t === 'point' && Array.isArray(parents)) {
+              mock.X = () => parents[0];
+              mock.Y = () => parents[1];
+              mock.coords = { usrCoords: [1, parents[0], parents[1]] };
+            }
+            return mock;
+          },
+          suspendUpdate() {},
+          unsuspendUpdate() {},
+          options: { point: {} },
+          objects: {},
+        };
+        try {
+          // Simply run the script as a function without double backslash preprocessing
+          // which can eat math backslashes and corrupt LaTeX expressions.
+          const executeScript = new Function('board', 'JXG', data.script);
+          executeScript(board, { Math });
+        } catch (e) {
+          console.warn('[SvgGraph] script error:', e);
+        }
       }
-    }
 
     // 2. Elements array (typically points with labels)
     if (Array.isArray(data.elements)) {
@@ -288,7 +309,7 @@ const SvgGraph = ({ data }) => {
             <text key={`st${i}`} x={toX(p[0])} y={toY(p[1])}
               fill={mapColor(t.attrs.strokeColor || t.attrs.color)}
               fontSize={t.attrs.fontSize || 12} fontWeight={t.attrs.fontWeight || 500}
-              fontFamily={FONT}>{String(p[2])}</text>
+              fontFamily={FONT}>{formatLabel(String(p[2]))}</text>
           );
         })}
 
@@ -309,7 +330,7 @@ const SvgGraph = ({ data }) => {
                   fill={isYInt ? '#be123c' : C.label}
                   fontSize={13} fontWeight={700} fontFamily={FONT}
                   textAnchor={off[0] < 0 ? 'end' : 'start'}>
-                  {pt.name}
+                  {formatLabel(pt.name)}
                 </text>
               )}
             </g>
@@ -329,7 +350,7 @@ const SvgGraph = ({ data }) => {
               {pt.attrs.name && (
                 <text x={sx + 10} y={sy - 8} fill={C.label}
                   fontSize={12} fontWeight={600} fontFamily={FONT}>
-                  {pt.attrs.name}
+                  {formatLabel(pt.attrs.name)}
                 </text>
               )}
             </g>
