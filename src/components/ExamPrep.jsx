@@ -1107,6 +1107,45 @@ const topicTone = (pct, attempted = 0) => {
   return { fg: '#059669', bar: '#34d399', bg: '#ecfdf5' };
 };
 
+/** Compact animated ring for topic rows (progress / accuracy). */
+const TopicStatRing = ({
+  pct = 0,
+  label,
+  color = '#8b5cf6',
+  delay = 0,
+  empty = false,
+  detail,
+}) => {
+  const show = empty ? 0 : Math.max(0, Math.min(100, Number(pct) || 0));
+  return (
+    <motion.div
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.35, delay, ease: [0.22, 1, 0.36, 1] }}
+      title={detail || label}
+      style={{
+        display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
+        flexShrink: 0, minWidth: 52,
+      }}
+    >
+      <AnimatedRing pct={show} size={48} stroke={5} color={color} track="rgba(15,23,42,0.06)" delay={delay}>
+        <span style={{
+          fontSize: '0.62rem', fontWeight: 900, color: empty ? '#94a3b8' : '#0f172a',
+          fontVariantNumeric: 'tabular-nums', lineHeight: 1,
+        }}>
+          {empty ? '—' : `${Math.round(show)}%`}
+        </span>
+      </AnimatedRing>
+      <span style={{
+        fontSize: '0.58rem', fontWeight: 800, letterSpacing: '0.06em',
+        textTransform: 'uppercase', color: '#94a3b8',
+      }}>
+        {label}
+      </span>
+    </motion.div>
+  );
+};
+
 // ── Setup dashboard — command-center + single goal CTA ────────────────
 const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
   const { isNarrow } = useViewport();
@@ -1505,104 +1544,89 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
               Loading topics from your question pool…
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              {topicRows.map((t) => {
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              {topicRows.map((t, rowIdx) => {
                 const lesson = getLesson(t.topicId);
-                const progressTone = topicTone(t.progressPct, t.total > 0 ? Math.max(2, t.attempted || 0) : 0);
+                const progressTone = topicTone(
+                  t.progressPct,
+                  t.total > 0 ? Math.max(2, t.attempted || t.mastered + (t.wrong || 0) || 0) : 0,
+                );
                 const accTone = topicTone(t.accuracyPct, t.lifeAttempted);
+                const progressEmpty = !(t.total > 0);
+                const accEmpty = !(t.lifeAttempted > 0);
+                const stagger = 0.04 * Math.min(rowIdx, 12);
                 return (
-                  <div
+                  <motion.div
                     key={t.topicId}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.35, delay: stagger, ease: [0.22, 1, 0.36, 1] }}
                     style={{
-                      padding: isNarrow ? '14px' : '16px 18px',
-                      borderRadius: '16px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: isNarrow ? '10px' : '14px',
+                      padding: isNarrow ? '12px 12px' : '12px 16px',
+                      borderRadius: '14px',
                       border: '1px solid rgba(15, 23, 42, 0.06)',
-                      background: '#fafafa',
+                      background: '#fff',
                     }}
                   >
-                    <div style={{
-                      display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between',
-                      gap: '12px', marginBottom: '12px',
-                    }}>
-                      <div style={{ minWidth: 0, flex: 1 }}>
-                        <div style={{
-                          fontSize: '0.95rem', fontWeight: 800, color: '#0f172a',
-                          lineHeight: 1.3,
-                        }}>
-                          {t.title}
-                        </div>
-                        {t.chapterTitle && t.chapterTitle !== t.title && (
-                          <div style={{ fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '3px' }}>
-                            {t.chapterTitle}
-                          </div>
-                        )}
+                    {/* Title */}
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{
+                        fontSize: '0.92rem', fontWeight: 800, color: '#0f172a',
+                        lineHeight: 1.3,
+                        overflow: 'hidden', textOverflow: 'ellipsis',
+                        whiteSpace: isNarrow ? 'normal' : 'nowrap',
+                      }}>
+                        {t.title}
                       </div>
+                      {t.chapterTitle && t.chapterTitle !== t.title && (
+                        <div style={{
+                          fontSize: '0.72rem', fontWeight: 600, color: '#94a3b8', marginTop: '2px',
+                          overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                        }}>
+                          {t.chapterTitle}
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Two rings at the right of the title */}
+                    <div style={{ display: 'flex', alignItems: 'center', gap: isNarrow ? '8px' : '12px', flexShrink: 0 }}>
+                      <TopicStatRing
+                        pct={t.progressPct}
+                        label="Prog"
+                        color={progressTone.bar}
+                        delay={0.08 + stagger}
+                        empty={progressEmpty}
+                        detail={progressEmpty ? 'Progress not loaded' : `${t.mastered}/${t.total} mastered`}
+                      />
+                      <TopicStatRing
+                        pct={t.accuracyPct}
+                        label="Acc"
+                        color={accTone.bar}
+                        delay={0.16 + stagger}
+                        empty={accEmpty}
+                        detail={accEmpty ? 'No attempts yet' : `${t.lifeCorrect}/${t.lifeAttempted} correct`}
+                      />
                       {lesson && (
                         <button
                           type="button"
                           onClick={() => setLessonTopicId(t.topicId)}
+                          title="Open lesson"
                           style={{
-                            display: 'inline-flex', alignItems: 'center', gap: '6px',
-                            flexShrink: 0,
-                            padding: '8px 12px', borderRadius: '10px',
-                            border: '1px solid rgba(124, 58, 237, 0.18)',
+                            width: 40, height: 40, borderRadius: '12px',
+                            display: 'grid', placeItems: 'center', flexShrink: 0,
+                            border: '1px solid rgba(124, 58, 237, 0.16)',
                             background: 'rgba(139, 92, 246, 0.08)',
-                            color: '#5b21b6', fontWeight: 700, fontSize: '0.78rem',
-                            cursor: 'pointer',
+                            color: '#6d28d9', cursor: 'pointer',
                           }}
                         >
-                          <BookOpen size={14} />
-                          Lesson
+                          <BookOpen size={16} />
                         </button>
                       )}
                     </div>
-
-                    {/* Progress (deck mastery this cycle) */}
-                    <div style={{ marginBottom: '10px' }}>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#94a3b8' }}>
-                          Progress
-                        </span>
-                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: '#0f172a', fontVariantNumeric: 'tabular-nums' }}>
-                          {t.total > 0 ? `${t.mastered}/${t.total}` : '—'}
-                          <span style={{ fontWeight: 600, color: '#94a3b8', marginLeft: '6px' }}>
-                            {t.total > 0 ? `${t.progressPct}%` : 'not loaded'}
-                          </span>
-                        </span>
-                      </div>
-                      <div style={{ height: '6px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${t.progressPct || 0}%` }}
-                          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-                          style={{ height: '100%', borderRadius: 999, background: progressTone.bar }}
-                        />
-                      </div>
-                    </div>
-
-                    {/* Accuracy (lifetime) */}
-                    <div>
-                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '6px' }}>
-                        <span style={{ fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.04em', textTransform: 'uppercase', color: '#94a3b8' }}>
-                          Accuracy
-                        </span>
-                        <span style={{ fontSize: '0.8rem', fontWeight: 700, color: accTone.fg, fontVariantNumeric: 'tabular-nums' }}>
-                          {t.lifeAttempted > 0 ? `${t.accuracyPct}%` : '—'}
-                          <span style={{ fontWeight: 600, color: '#94a3b8', marginLeft: '6px' }}>
-                            {t.lifeAttempted > 0 ? `${t.lifeCorrect}/${t.lifeAttempted}` : 'no attempts yet'}
-                          </span>
-                        </span>
-                      </div>
-                      <div style={{ height: '6px', borderRadius: 999, background: 'rgba(15,23,42,0.06)', overflow: 'hidden' }}>
-                        <motion.div
-                          initial={{ width: 0 }}
-                          animate={{ width: `${t.lifeAttempted > 0 ? t.accuracyPct : 0}%` }}
-                          transition={{ duration: 0.9, delay: 0.05, ease: [0.22, 1, 0.36, 1] }}
-                          style={{ height: '100%', borderRadius: 999, background: accTone.bar }}
-                        />
-                      </div>
-                    </div>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
