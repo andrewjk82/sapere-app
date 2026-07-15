@@ -38,7 +38,13 @@ import ChallengeQuizView from './challenge/ChallengeQuizView';
 import ChallengeResultView from './challenge/ChallengeResultView';
 import ChallengeReviewView from './challenge/ChallengeReviewView';
 import SecretNoteView from './challenge/SecretNoteView';
+import ChallengeModeSelect from './challenge/ChallengeModeSelect';
 import ReportModal from './challenge/ReportModal';
+import {
+  applyModeTimeScale,
+  getModeBonusXp,
+  getChallengeMode,
+} from '../constants/challengeModes';
 
 // Custom hooks
 import { useKeyboardActivity } from '../hooks/useKeyboardActivity';
@@ -117,6 +123,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [isFinishing, setIsFinishing] = useState(false);
   const isFinishingRef = useRef(false);
   const [loading, setLoading] = useState(false);
+  // Difficulty lobby: null | 'daily' | 'calc' while picker is open
+  const [modePickerType, setModePickerType] = useState(null);
+  const [challengeMode, setChallengeMode] = useState('normal');
+  const challengeModeRef = useRef('normal');
 
   // ── Post-quiz state ──
   const [elapsedSeconds, setElapsedSeconds] = useState(null);
@@ -581,13 +591,16 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     } catch { /* ignore */ }
   };
 
-  const startCalculationQuiz = async () => {
+  const startCalculationQuiz = async (modeId = 'normal') => {
     const today = new Date().toLocaleDateString('en-CA');
     if (calcCompletedToday || calcAbandonedToday) {
       showToast("Today's Daily Calculation has already been used. Please try again tomorrow.", 'info');
       return;
     }
 
+    const mode = getChallengeMode(modeId);
+    challengeModeRef.current = mode.id;
+    setChallengeMode(mode.id);
     setChallengeType('calc');
     const qCount = getQuestionCount('calc');
 
@@ -618,13 +631,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       calcTopics = (Array.isArray(studentProfile?.assignedChapters) ? studentProfile.assignedChapters : [])
         .filter(id => id.startsWith('calc-') || id.startsWith('clock-'));
     }
-    const combinedQs = generateCalculationSet(calcTopics, qCount, assignedYear, studentProfile?.calcTimeLimit || 30);
+    const rawQs = generateCalculationSet(calcTopics, qCount, assignedYear, studentProfile?.calcTimeLimit || 30);
+    const combinedQs = applyModeTimeScale(rawQs, mode.id);
 
     const sessionMeta = {
       engineVersion: CALC_ENGINE_VERSION,
       generationMode: 'local-random',
       seed: createSessionSeed(),
       startedAt: new Date().toISOString(),
+      challengeMode: mode.id,
+      modeBonusXp: mode.bonusXp,
+      modeTimeScale: mode.timeScale,
     };
     setCurrentSessionId(today);
     setCalcSessionMeta(sessionMeta);
@@ -646,6 +663,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       setDoc(doc(db, 'users', user.uid, 'calc_stats', today), {
         completed: false, abandoned: true, score: 0, total: qCount,
         challengeType: 'calc',
+        challengeMode: mode.id,
+        modeBonusXp: mode.bonusXp,
         timestamp: now.toISOString(), date: today,
         dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
         questionCount: qCount,
@@ -660,8 +679,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     }
   };
 
-  const startDailyQuiz = async () => {
+  const startDailyQuiz = async (modeId = 'normal') => {
     try {
+      const mode = getChallengeMode(modeId);
+      challengeModeRef.current = mode.id;
+      setChallengeMode(mode.id);
       setChallengeType('daily');
       const qCount = getQuestionCount('daily');
       setLoading(true);
@@ -679,8 +701,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         }),
         new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 12000)),
       ]);
-      const combinedQs = (assignment.questions || []).map(correctQuestionAnswer);
-      if (combinedQs.length === 0) throw new Error('No daily assignment questions were generated.');
+      const rawQs = (assignment.questions || []).map(correctQuestionAnswer);
+      if (rawQs.length === 0) throw new Error('No daily assignment questions were generated.');
+      const combinedQs = applyModeTimeScale(rawQs, mode.id);
 
       initQuizState(combinedQs);
       // Lock immediately so auto-update can't reload the page during Firebase writes.
@@ -701,6 +724,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         setDoc(doc(db, 'users', user.uid, 'daily_stats', today), {
           completed: false, abandoned: true, score: 0, total: combinedQs.length,
           challengeType: 'daily',
+          challengeMode: mode.id,
+          modeBonusXp: mode.bonusXp,
           timestamp: now.toISOString(), date: today,
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questionCount: combinedQs.length,
@@ -718,6 +743,29 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       if (setIsLocked) setIsLocked(false);
       setLoading(false);
     }
+  };
+
+  const requestStartDaily = () => {
+    if (todayCompleted || abandonedToday) {
+      showToast("Today's Daily Practice has already been used. Please try again tomorrow.", 'info');
+      return;
+    }
+    setModePickerType('daily');
+  };
+
+  const requestStartCalc = () => {
+    if (calcCompletedToday || calcAbandonedToday) {
+      showToast("Today's Daily Calculation has already been used. Please try again tomorrow.", 'info');
+      return;
+    }
+    setModePickerType('calc');
+  };
+
+  const confirmModeAndStart = (modeId) => {
+    const type = modePickerType;
+    setModePickerType(null);
+    if (type === 'calc') startCalculationQuiz(modeId);
+    else if (type === 'daily') startDailyQuiz(modeId);
   };
 
   const setupQuestion = (q, idx = currentIdx) => {
@@ -1349,14 +1397,20 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // Snapshot score/XP for result screen before setStep('result') so the
       // headline does not briefly flash 0 while answerResults settle.
       const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
-      const xpEarned = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
+      const modeId = challengeModeRef.current || challengeMode || 'normal';
+      const baseXp = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
+      const modeBonus = getModeBonusXp(modeId, { abandoned: isAbandoned });
+      const xpEarned = isAbandoned ? 0 : baseXp + modeBonus;
       const xpBefore = Number(studentProfile?.totalXP) || 0;
       setResultXpSnapshot({
         score: isAbandoned ? 0 : questionsCorrect,
         total: displayTotal,
-        earned: isAbandoned ? 0 : xpEarned,
+        earned: xpEarned,
+        baseXp: isAbandoned ? 0 : baseXp,
+        modeBonus,
+        challengeMode: modeId,
         previousTotal: xpBefore,
-        newTotal: xpBefore + (isAbandoned ? 0 : xpEarned),
+        newTotal: xpBefore + xpEarned,
       });
 
       // Lock briefly so the auto-update effect in App.jsx can't fire a page
@@ -1517,7 +1571,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           pointsScore: actualScore,
           pointsTotal: totalPossibleScore,
           challengeType,
-          maxXp,
+          challengeMode: modeId,
+          modeBonusXp: modeBonus,
+          maxXp: maxXp + (isAbandoned ? 0 : modeBonus),
           xpEarned,
           year: assignedYear,
           chapterId: assignedChapters.length === 1 ? assignedChapters[0] : 'mixed',
@@ -2248,8 +2304,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   calcCompletedToday={calcCompletedToday}
                   calcAbandonedToday={calcAbandonedToday}
                   history={history}
-                  onStartDailyQuiz={startDailyQuiz}
-                  onStartCalculationQuiz={startCalculationQuiz}
+                  onStartDailyQuiz={requestStartDaily}
+                  onStartCalculationQuiz={requestStartCalc}
                   onViewHistory={handleViewFeedback}
                   newFeedbackCount={Number(studentProfile?.unreadFeedbackCount) || 0}
                   onViewFeedback={onOpenFeedback}
@@ -2327,6 +2383,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                     resultXpSnapshot?.earned
                     ?? getEarnedXp(resultQuestionsCorrect, TOTAL_QUESTIONS, challengeType, hasCalculationTest)
                   }
+                  modeBonusXp={resultXpSnapshot?.modeBonus || 0}
+                  challengeMode={resultXpSnapshot?.challengeMode || challengeMode || 'normal'}
                   previousTotalXP={resultXpSnapshot?.previousTotal}
                   newTotalXP={resultXpSnapshot?.newTotal}
                   TOTAL_QUESTIONS={TOTAL_QUESTIONS}
@@ -2378,6 +2436,13 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                 />
               )}
             </AnimatePresence>
+
+            <ChallengeModeSelect
+              open={Boolean(modePickerType)}
+              challengeType={modePickerType || 'daily'}
+              onCancel={() => setModePickerType(null)}
+              onConfirm={confirmModeAndStart}
+            />
           </motion.div>
         )}
       </AnimatePresence>

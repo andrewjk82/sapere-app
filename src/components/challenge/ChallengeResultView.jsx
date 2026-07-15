@@ -122,6 +122,8 @@ const ChallengeResultView = ({
   // Total XP before/after this session for count-up animation.
   previousTotalXP = null,
   newTotalXP = null,
+  modeBonusXp = 0,
+  challengeMode = 'normal',
 }) => {
   const isAbandoned =
     (answerResults || []).some(r => r === 'abandoned') ||
@@ -263,6 +265,21 @@ const ChallengeResultView = ({
         />
         <span className="cr__xp-unit">XP</span>
       </motion.div>
+      {modeBonusXp > 0 && (
+        <motion.p
+          initial={{ opacity: 0, y: 4 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55 }}
+          style={{
+            margin: '6px 0 0',
+            fontSize: '0.82rem',
+            fontWeight: 800,
+            color: challengeMode === 'extreme' ? '#ef4444' : '#d97706',
+          }}
+        >
+          includes +{modeBonusXp} {challengeMode === 'extreme' ? 'Extreme' : 'Challenge'} mode bonus
+        </motion.p>
+      )}
 
       {/* Total XP rising: previous → previous + session */}
       {showTotalAnim && (
