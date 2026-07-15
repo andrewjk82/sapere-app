@@ -2,7 +2,7 @@ import React, { useRef, useState, useImperativeHandle, forwardRef, useEffect, us
 import { PenTool, Eraser, MousePointer2, RotateCcw, Trash2, ChevronLeft, ChevronRight } from 'lucide-react';
 
 // ⬆ Bump this every time you modify the canvas so you can confirm the deployed version
-const CANVAS_VERSION = 'v9.10-2finger-page';
+const CANVAS_VERSION = 'v9.11-2finger-page';
 
 // Minimum squared distance between captured points (~1.4px).
 const MIN_DIST_SQ = 2;
@@ -895,18 +895,26 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
   };
 
   // Two-finger vertical swipe (or trackpad wheel) → page change.
+  // Used on Exam Prep, Challenge, Secret Note, Topic practice — all share this canvas.
   // Swipe fingers up / scroll down → next page (create if at end).
   // Swipe fingers down / scroll up → previous page.
-  // Single-finger drawing is unchanged; only ≥2 touches drive navigation.
+  // Capture-phase + multi-pointer tracking so parent scroll views (e.g. Secret Note)
+  // do not steal the gesture before we see it.
   useEffect(() => {
     const wrapper = canvasWrapperRef.current;
     if (!wrapper) return undefined;
 
-    const SWIPE_PX = 64;
-    const WHEEL_PX = 90;
+    const SWIPE_PX = 50;
+    const WHEEL_PX = 80;
     let gesture = null; // { y0, fired }
     let wheelAcc = 0;
     let wheelResetTimer = 0;
+    // pointerId → { y } for touch pointers that began on this board
+    const activeTouches = new Map();
+    let boardActive = false; // at least one touch/pointer started inside wrapper
+
+    const isInsideBoard = (target) =>
+      !!(target && (wrapper === target || wrapper.contains(target)));
 
     const goNext = () => {
       const nav = pageNavRef.current;
@@ -924,25 +932,15 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       nav.goToPage(nav.currentPage - 1);
     };
 
-    const onTouchStart = (e) => {
-      if (e.touches.length === 2) {
-        const y = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-        gesture = { y0: y, fired: false };
-        // Abort any one-finger stroke so a page flip never keeps a ghost line.
-        pageNavRef.current.discardStroke?.();
-      } else if (e.touches.length < 2) {
-        gesture = null;
-      }
+    const avgYFromTouches = (touchList) => {
+      let sum = 0;
+      for (let i = 0; i < touchList.length; i++) sum += touchList[i].clientY;
+      return sum / touchList.length;
     };
 
-    const onTouchMove = (e) => {
-      if (!gesture || e.touches.length < 2) return;
-      if (e.cancelable !== false) e.preventDefault();
-      if (gesture.fired) return;
-      const y = (e.touches[0].clientY + e.touches[1].clientY) / 2;
-      const dy = y - gesture.y0;
+    const tryNavigate = (dy) => {
+      if (!gesture || gesture.fired) return;
       if (dy <= -SWIPE_PX) {
-        // Fingers moved up → next page (like scrolling content down).
         gesture.fired = true;
         goNext();
       } else if (dy >= SWIPE_PX) {
@@ -951,14 +949,76 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       }
     };
 
-    const onTouchEnd = (e) => {
-      if (e.touches.length < 2) gesture = null;
+    // ── Touch path (iPad / phones) ──────────────────────────────────────
+    const onTouchStart = (e) => {
+      if (!isInsideBoard(e.target) && !boardActive) return;
+      // Count touches that are over our board (or already tracked).
+      if (isInsideBoard(e.target) || e.touches.length >= 2) boardActive = true;
+      if (!boardActive) return;
+
+      if (e.touches.length >= 2) {
+        const y = avgYFromTouches(e.touches);
+        gesture = { y0: y, fired: false };
+        pageNavRef.current.discardStroke?.();
+        // Stop parent scroll containers (Secret Note left column, etc.)
+        if (e.cancelable !== false) e.preventDefault();
+      }
     };
 
-    // Trackpads emit wheel for two-finger scroll — same mapping as swipe.
+    const onTouchMove = (e) => {
+      if (!boardActive || !gesture || e.touches.length < 2) return;
+      if (e.cancelable !== false) e.preventDefault();
+      if (gesture.fired) return;
+      const y = avgYFromTouches(e.touches);
+      tryNavigate(y - gesture.y0);
+    };
+
+    const onTouchEnd = (e) => {
+      if (e.touches.length < 2) {
+        gesture = null;
+      }
+      if (e.touches.length === 0) boardActive = false;
+    };
+
+    // ── Pointer path (when first finger is pointer-captured on canvas,
+    // touch events can be flaky — track multi-touch via pointers too) ───
+    const onPointerDown = (e) => {
+      if (e.pointerType !== 'touch') return;
+      if (!isInsideBoard(e.target)) return;
+      boardActive = true;
+      activeTouches.set(e.pointerId, { y: e.clientY });
+      if (activeTouches.size >= 2) {
+        const ys = [...activeTouches.values()].map((p) => p.y);
+        const y = ys.reduce((a, b) => a + b, 0) / ys.length;
+        gesture = { y0: y, fired: false };
+        pageNavRef.current.discardStroke?.();
+      }
+    };
+
+    const onPointerMove = (e) => {
+      if (e.pointerType !== 'touch') return;
+      if (!activeTouches.has(e.pointerId)) return;
+      activeTouches.set(e.pointerId, { y: e.clientY });
+      if (activeTouches.size < 2 || !gesture || gesture.fired) return;
+      if (e.cancelable !== false) e.preventDefault();
+      const ys = [...activeTouches.values()].map((p) => p.y);
+      const y = ys.reduce((a, b) => a + b, 0) / ys.length;
+      tryNavigate(y - gesture.y0);
+    };
+
+    const onPointerUp = (e) => {
+      if (e.pointerType !== 'touch') return;
+      activeTouches.delete(e.pointerId);
+      if (activeTouches.size < 2) {
+        gesture = null;
+      }
+      if (activeTouches.size === 0) boardActive = false;
+    };
+
+    // Trackpads emit wheel for two-finger scroll.
     const onWheel = (e) => {
-      // Ignore wheel on toolbar controls (color/undo/page buttons).
       if (e.target?.closest?.('button, select')) return;
+      if (!isInsideBoard(e.target)) return;
       if (pageNavRef.current.isSubmitted) return;
       if (e.cancelable !== false) e.preventDefault();
       wheelAcc += e.deltaY;
@@ -973,18 +1033,31 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
       wheelResetTimer = window.setTimeout(() => { wheelAcc = 0; }, 220);
     };
 
-    wrapper.addEventListener('touchstart', onTouchStart, { passive: true });
-    wrapper.addEventListener('touchmove', onTouchMove, { passive: false });
-    wrapper.addEventListener('touchend', onTouchEnd, { passive: true });
-    wrapper.addEventListener('touchcancel', onTouchEnd, { passive: true });
-    wrapper.addEventListener('wheel', onWheel, { passive: false });
+    const touchOpts = { capture: true, passive: false };
+    const touchEndOpts = { capture: true, passive: true };
+
+    // Capture on wrapper so we win against parent overflow scroll (Secret Note).
+    wrapper.addEventListener('touchstart', onTouchStart, touchOpts);
+    wrapper.addEventListener('touchmove', onTouchMove, touchOpts);
+    wrapper.addEventListener('touchend', onTouchEnd, touchEndOpts);
+    wrapper.addEventListener('touchcancel', onTouchEnd, touchEndOpts);
+    wrapper.addEventListener('wheel', onWheel, { capture: true, passive: false });
+    // Window-level pointer tracking: first finger may have setPointerCapture on canvas.
+    window.addEventListener('pointerdown', onPointerDown, true);
+    window.addEventListener('pointermove', onPointerMove, true);
+    window.addEventListener('pointerup', onPointerUp, true);
+    window.addEventListener('pointercancel', onPointerUp, true);
 
     return () => {
-      wrapper.removeEventListener('touchstart', onTouchStart);
-      wrapper.removeEventListener('touchmove', onTouchMove);
-      wrapper.removeEventListener('touchend', onTouchEnd);
-      wrapper.removeEventListener('touchcancel', onTouchEnd);
-      wrapper.removeEventListener('wheel', onWheel);
+      wrapper.removeEventListener('touchstart', onTouchStart, true);
+      wrapper.removeEventListener('touchmove', onTouchMove, true);
+      wrapper.removeEventListener('touchend', onTouchEnd, true);
+      wrapper.removeEventListener('touchcancel', onTouchEnd, true);
+      wrapper.removeEventListener('wheel', onWheel, true);
+      window.removeEventListener('pointerdown', onPointerDown, true);
+      window.removeEventListener('pointermove', onPointerMove, true);
+      window.removeEventListener('pointerup', onPointerUp, true);
+      window.removeEventListener('pointercancel', onPointerUp, true);
       window.clearTimeout(wheelResetTimer);
     };
   }, []);
@@ -1150,7 +1223,7 @@ const WorkingOutCanvas = React.memo(forwardRef(({ questionType, isSubmitted, isG
             </button>
             <button
               onClick={addPage}
-              title="Add page · or two-finger swipe up / scroll down"
+              title="Add page · two-finger swipe up = next · swipe down = previous"
               style={{ height: '30px', padding: '0 10px', borderRadius: '8px', border: 'none', background: '#e0e7ff', color: '#4f46e5', fontWeight: 900, fontSize: '0.72rem', cursor: 'pointer' }}
             >
               {currentPage + 1}/{pages.length} +
