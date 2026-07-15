@@ -277,7 +277,8 @@ const ChallengeResultView = ({
             color: challengeMode === 'extreme' ? '#ef4444' : '#d97706',
           }}
         >
-          includes +{modeBonusXp} {challengeMode === 'extreme' ? 'Extreme' : 'Challenge'} mode bonus
+          includes +{modeBonusXp} XP {challengeMode === 'extreme' ? 'Extreme' : 'Challenge'} bonus
+            ({challengeMode === 'extreme' ? '10%' : '5%'} of score)
         </motion.p>
       )}
 

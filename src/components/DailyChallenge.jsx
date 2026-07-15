@@ -640,7 +640,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       seed: createSessionSeed(),
       startedAt: new Date().toISOString(),
       challengeMode: mode.id,
-      modeBonusXp: mode.bonusXp,
+      modeBonusPercent: mode.bonusPercent,
       modeTimeScale: mode.timeScale,
     };
     setCurrentSessionId(today);
@@ -664,7 +664,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         completed: false, abandoned: true, score: 0, total: qCount,
         challengeType: 'calc',
         challengeMode: mode.id,
-        modeBonusXp: mode.bonusXp,
+        modeBonusPercent: mode.bonusPercent,
         timestamp: now.toISOString(), date: today,
         dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
         questionCount: qCount,
@@ -725,7 +725,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           completed: false, abandoned: true, score: 0, total: combinedQs.length,
           challengeType: 'daily',
           challengeMode: mode.id,
-          modeBonusXp: mode.bonusXp,
+          modeBonusPercent: mode.bonusPercent,
           timestamp: now.toISOString(), date: today,
           dateLabel: now.toLocaleDateString('en-AU', { weekday: 'short', day: 'numeric', month: 'short' }),
           questionCount: combinedQs.length,
@@ -1398,9 +1398,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // headline does not briefly flash 0 while answerResults settle.
       const maxXp = getChallengeMaxXp(challengeType, hasCalculationTest);
       const modeId = challengeModeRef.current || challengeMode || 'normal';
+      const mode = getChallengeMode(modeId);
       const baseXp = getEarnedXp(questionsCorrect, displayTotal, challengeType, hasCalculationTest);
-      const modeBonus = getModeBonusXp(modeId, { abandoned: isAbandoned });
+      const modeBonus = getModeBonusXp(modeId, { abandoned: isAbandoned, baseXp });
       const xpEarned = isAbandoned ? 0 : baseXp + modeBonus;
+      const maxXpWithBonus = Math.round(maxXp * (1 + (Number(mode.bonusPercent) || 0)));
       const xpBefore = Number(studentProfile?.totalXP) || 0;
       setResultXpSnapshot({
         score: isAbandoned ? 0 : questionsCorrect,
@@ -1572,8 +1574,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           pointsTotal: totalPossibleScore,
           challengeType,
           challengeMode: modeId,
+          modeBonusPercent: mode.bonusPercent,
           modeBonusXp: modeBonus,
-          maxXp: maxXp + (isAbandoned ? 0 : modeBonus),
+          maxXp: isAbandoned ? maxXp : maxXpWithBonus,
           xpEarned,
           year: assignedYear,
           chapterId: assignedChapters.length === 1 ? assignedChapters[0] : 'mixed',

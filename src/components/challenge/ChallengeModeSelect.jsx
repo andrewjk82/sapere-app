@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { X, Clock, Zap, ArrowRight, Swords, Shield, Flame } from 'lucide-react';
 import { FlameBuddyAvatar } from '../FlameBuddy';
 import '../FlameBuddy.css';
-import { CHALLENGE_MODE_LIST, getChallengeMode } from '../../constants/challengeModes';
+import { CHALLENGE_MODE_LIST, getChallengeMode, formatModeBonusLabel } from '../../constants/challengeModes';
 import './ChallengeModeSelect.css';
 
 const ModeIcon = ({ name, size = 28 }) => {
@@ -188,7 +188,7 @@ export default function ChallengeModeSelect({
                       </span>
                       <span className="cms-stat">
                         <Zap size={13} />
-                        {mode.bonusXp > 0 ? `+${mode.bonusXp} bonus XP` : 'No bonus XP'}
+                        {formatModeBonusLabel(mode.id)}
                       </span>
                     </div>
                   </motion.button>
