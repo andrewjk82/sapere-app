@@ -13,14 +13,110 @@ const ModeIcon = ({ name, size = 28 }) => {
   return <Shield size={size} strokeWidth={2.6} />;
 };
 
-const PARTICLES = Array.from({ length: 18 }, (_, i) => ({
+const PARTICLES = Array.from({ length: 14 }, (_, i) => ({
   id: i,
-  left: `${4 + ((i * 17) % 92)}%`,
-  delay: `${(i % 9) * 0.35}s`,
-  duration: `${7 + (i % 5)}s`,
-  size: 3 + (i % 4),
-  opacity: 0.2 + (i % 5) * 0.08,
+  left: `${6 + ((i * 19) % 88)}%`,
+  delay: `${(i % 8) * 0.4}s`,
+  duration: `${9 + (i % 4)}s`,
+  size: 2 + (i % 3),
+  opacity: 0.12 + (i % 4) * 0.05,
 }));
+
+/** Premium SVG lightning — branched polylines, not straight bars. */
+const ElectricFx = ({ active }) => (
+  <svg className={`cms-fx-svg cms-fx-svg--electric${active ? ' is-on' : ''}`} viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden>
+    <defs>
+      <filter id="cms-glow-bolt" x="-40%" y="-40%" width="180%" height="180%">
+        <feGaussianBlur stdDeviation="1.4" result="b" />
+        <feMerge>
+          <feMergeNode in="b" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+      <linearGradient id="cms-bolt-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stopColor="#ffffff" stopOpacity="0" />
+        <stop offset="20%" stopColor="#ffffff" stopOpacity="1" />
+        <stop offset="55%" stopColor="#fef08a" stopOpacity="0.95" />
+        <stop offset="100%" stopColor="#f59e0b" stopOpacity="0.2" />
+      </linearGradient>
+    </defs>
+    <g filter="url(#cms-glow-bolt)" className="cms-bolt-g cms-bolt-g--1" fill="none" stroke="url(#cms-bolt-grad)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="38,8 52,32 44,38 58,62 50,70 64,98" />
+      <polyline points="52,32 68,40 62,48" opacity="0.75" strokeWidth="1.1" />
+      <polyline points="58,62 72,58 78,72" opacity="0.65" strokeWidth="1" />
+    </g>
+    <g filter="url(#cms-glow-bolt)" className="cms-bolt-g cms-bolt-g--2" fill="none" stroke="url(#cms-bolt-grad)" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="108,4 96,28 112,36 100,54 118,66 106,92 120,112" />
+      <polyline points="96,28 84,36 88,48" opacity="0.7" strokeWidth="1.1" />
+      <polyline points="118,66 132,60 140,78" opacity="0.6" strokeWidth="1" />
+    </g>
+    <g filter="url(#cms-glow-bolt)" className="cms-bolt-g cms-bolt-g--3" fill="none" stroke="url(#cms-bolt-grad)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="162,12 148,40 160,48 150,72 164,88" />
+      <polyline points="160,48 174,52 170,66" opacity="0.7" strokeWidth="1" />
+    </g>
+    {/* residual corona flash */}
+    <ellipse className="cms-bolt-flash" cx="100" cy="55" rx="70" ry="40" fill="rgba(255,255,255,0.12)" />
+  </svg>
+);
+
+/** Layered fire: soft heat bloom + SVG flame tongues + drifting embers. */
+const FireFx = ({ active }) => (
+  <div className={`cms-fx-fire${active ? ' is-on' : ''}`} aria-hidden>
+    <div className="cms-fx-heatbase" />
+    <div className="cms-fx-heatbase cms-fx-heatbase--2" />
+    <svg className="cms-fx-svg cms-fx-svg--fire" viewBox="0 0 200 120" preserveAspectRatio="xMidYMax meet">
+      <defs>
+        <linearGradient id="cms-flame-a" x1="0.5" y1="1" x2="0.5" y2="0">
+          <stop offset="0%" stopColor="#7f1d1d" stopOpacity="0" />
+          <stop offset="25%" stopColor="#ef4444" stopOpacity="0.9" />
+          <stop offset="55%" stopColor="#f97316" stopOpacity="0.95" />
+          <stop offset="80%" stopColor="#fbbf24" stopOpacity="0.85" />
+          <stop offset="100%" stopColor="#fff7ed" stopOpacity="0.5" />
+        </linearGradient>
+        <linearGradient id="cms-flame-b" x1="0.5" y1="1" x2="0.5" y2="0">
+          <stop offset="0%" stopColor="#991b1b" stopOpacity="0" />
+          <stop offset="35%" stopColor="#ea580c" stopOpacity="0.85" />
+          <stop offset="70%" stopColor="#fcd34d" stopOpacity="0.75" />
+          <stop offset="100%" stopColor="#ffffff" stopOpacity="0.35" />
+        </linearGradient>
+        <filter id="cms-fire-blur" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="1.2" />
+        </filter>
+      </defs>
+      <g filter="url(#cms-fire-blur)" opacity="0.95">
+        <path className="cms-flame-path cms-flame-path--1" fill="url(#cms-flame-a)" d="M28 118 C22 96 18 82 28 64 C36 48 30 40 36 28 C44 44 40 56 48 70 C58 88 52 102 48 118 Z" />
+        <path className="cms-flame-path cms-flame-path--2" fill="url(#cms-flame-a)" d="M72 120 C62 98 58 80 72 58 C82 40 74 30 82 16 C94 34 88 48 96 64 C108 86 100 102 96 120 Z" />
+        <path className="cms-flame-path cms-flame-path--3" fill="url(#cms-flame-b)" d="M118 120 C108 100 104 84 116 62 C126 46 120 36 128 22 C138 40 134 52 142 68 C154 90 146 106 142 120 Z" />
+        <path className="cms-flame-path cms-flame-path--4" fill="url(#cms-flame-a)" d="M158 118 C150 100 148 86 158 68 C166 54 160 46 166 34 C176 48 172 58 180 72 C190 90 184 104 178 118 Z" />
+      </g>
+      {/* bright cores */}
+      <path className="cms-flame-core cms-flame-core--1" fill="url(#cms-flame-b)" d="M78 118 C74 100 76 88 84 74 C90 84 88 96 86 118 Z" opacity="0.7" />
+      <path className="cms-flame-core cms-flame-core--2" fill="url(#cms-flame-b)" d="M124 118 C120 102 122 90 130 76 C136 88 134 100 132 118 Z" opacity="0.65" />
+    </svg>
+    {Array.from({ length: 10 }, (_, i) => (
+      <span
+        key={i}
+        className={`cms-ember-dot cms-ember-dot--${i + 1}`}
+        style={{
+          left: `${12 + i * 8}%`,
+          animationDelay: `${(i * 0.11) % 1.1}s`,
+          animationDuration: `${1.4 + (i % 4) * 0.22}s`,
+        }}
+      />
+    ))}
+  </div>
+);
+
+/** Normal — restrained luxury: soft specular sweep + ambient dust. */
+const NormalFx = ({ active }) => (
+  <div className={`cms-fx-normal${active ? ' is-on' : ''}`} aria-hidden>
+    <span className="cms-fx-sheen" />
+    <span className="cms-fx-glowspot" />
+    {Array.from({ length: 6 }, (_, i) => (
+      <span key={i} className={`cms-dust cms-dust--${i + 1}`} />
+    ))}
+  </div>
+);
 
 /**
  * Game-style lobby: pick Normal / Challenge / Extreme before Daily or Calc.
@@ -180,44 +276,15 @@ export default function ChallengeModeSelect({
                     transition={{ delay: 0.08 + i * 0.07, type: 'spring', stiffness: 280, damping: 22 }}
                     whileTap={{ scale: 0.97 }}
                   >
-                    {/* Mode-specific FX layer (re-mounts on each pick via key) */}
+                    {/* Premium FX — remounts on pick so strike / ignition re-fires */}
                     <span
                       className="cms-fx"
                       aria-hidden
                       key={isSel ? `${mode.id}-fx-${fxTick}` : `${mode.id}-fx-idle`}
                     >
-                      {mode.id === 'normal' && (
-                        <>
-                          <span className="cms-fx-shimmer" />
-                          <span className="cms-fx-ring" />
-                        </>
-                      )}
-                      {mode.id === 'challenge' && (
-                        <>
-                          <span className="cms-fx-bolt cms-fx-bolt--a" />
-                          <span className="cms-fx-bolt cms-fx-bolt--b" />
-                          <span className="cms-fx-bolt cms-fx-bolt--c" />
-                          <span className="cms-fx-spark cms-fx-spark--1" />
-                          <span className="cms-fx-spark cms-fx-spark--2" />
-                          <span className="cms-fx-spark cms-fx-spark--3" />
-                          <span className="cms-fx-spark cms-fx-spark--4" />
-                          <span className="cms-fx-scan" />
-                        </>
-                      )}
-                      {mode.id === 'extreme' && (
-                        <>
-                          <span className="cms-fx-heat" />
-                          <span className="cms-fx-flame cms-fx-flame--1" />
-                          <span className="cms-fx-flame cms-fx-flame--2" />
-                          <span className="cms-fx-flame cms-fx-flame--3" />
-                          <span className="cms-fx-flame cms-fx-flame--4" />
-                          <span className="cms-fx-ember cms-fx-ember--1" />
-                          <span className="cms-fx-ember cms-fx-ember--2" />
-                          <span className="cms-fx-ember cms-fx-ember--3" />
-                          <span className="cms-fx-ember cms-fx-ember--4" />
-                          <span className="cms-fx-ember cms-fx-ember--5" />
-                        </>
-                      )}
+                      {mode.id === 'normal' && <NormalFx active={isSel} />}
+                      {mode.id === 'challenge' && <ElectricFx active={isSel} />}
+                      {mode.id === 'extreme' && <FireFx active={isSel} />}
                     </span>
 
                     {isSel && (
