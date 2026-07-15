@@ -1253,27 +1253,63 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
         </div>
       </div>
 
-      {/* Topic chips (teacher selection) */}
-      {hasTopics && (
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px' }}>
-          {selectedChips.map((ch) => (
-            <span
-              key={ch.id}
-              style={{
-                display: 'inline-flex', alignItems: 'center', gap: '6px',
-                padding: '6px 12px', borderRadius: '999px',
-                background: 'rgba(139,92,246,0.08)', border: '1px solid rgba(139,92,246,0.14)',
-                fontSize: '0.78rem', fontWeight: 700, color: '#4c1d95',
-              }}
-            >
-              <span style={{ fontSize: '0.65rem', fontWeight: 800, color: '#7c3aed', opacity: 0.85 }}>
-                {(ch.year || '').replace('Year ', 'Y')}
-              </span>
-              {ch.title}
+      {/* Assigned chapters — quiet list (not loud chips) */}
+      {hasTopics && (() => {
+        // Group by year so "Y12" isn't repeated on every long title.
+        const byYear = new Map();
+        selectedChips.forEach((ch) => {
+          const y = ch.year || 'Topics';
+          if (!byYear.has(y)) byYear.set(y, []);
+          byYear.get(y).push(ch);
+        });
+        // Shorten "Chapter 5: The exponential…" → "Ch 5 · The exponential…"
+        const shortTitle = (title) => {
+          const m = String(title || '').match(/^Chapter\s+(\d+)\s*[:–—-]\s*(.+)$/i);
+          if (m) return `Ch ${m[1]} · ${m[2]}`;
+          return title;
+        };
+        return (
+          <div style={{
+            display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '6px 18px',
+            marginBottom: '20px', paddingBottom: '16px',
+            borderBottom: '1px solid rgba(15, 23, 42, 0.06)',
+          }}>
+            <span style={{
+              fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.08em',
+              textTransform: 'uppercase', color: '#94a3b8', flexShrink: 0,
+            }}>
+              Assigned
             </span>
-          ))}
-        </div>
-      )}
+            {[...byYear.entries()].map(([year, chapters]) => (
+              <div key={year} style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'baseline', gap: '4px 10px' }}>
+                <span style={{
+                  fontSize: '0.72rem', fontWeight: 800, color: '#64748b',
+                  fontVariantNumeric: 'tabular-nums',
+                }}>
+                  {(year || '').replace(/^Year\s+/i, 'Y')}
+                </span>
+                {chapters.map((ch, i) => (
+                  <span key={ch.id} style={{ display: 'inline-flex', alignItems: 'baseline', gap: '10px' }}>
+                    {i > 0 && (
+                      <span style={{ color: '#e2e8f0', fontWeight: 400, userSelect: 'none' }} aria-hidden>·</span>
+                    )}
+                    <span
+                      title={ch.title}
+                      style={{
+                        fontSize: '0.84rem', fontWeight: 600, color: '#334155',
+                        maxWidth: isNarrow ? '100%' : '280px',
+                        overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap',
+                      }}
+                    >
+                      {shortTitle(ch.title)}
+                    </span>
+                  </span>
+                ))}
+              </div>
+            ))}
+          </div>
+        );
+      })()}
 
       {/* ── Command card: goal + KPIs + CTA ── */}
       <motion.div
