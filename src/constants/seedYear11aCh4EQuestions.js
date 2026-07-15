@@ -812,11 +812,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q7c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the quadratic inequation \\(x^2 - 5x > 0\\) using a sketch or table of values.",
-    "a": "x < 0 or x > 5",
+    "question": "Solve the quadratic inequation \\(x^2 - 5x > 0\\).",
+    "options": [
+      "\\(x < 0\\; \\text{or}\\; x > 5\\)",
+      "\\(0 < x < 5\\)",
+      "\\(x \\le 0\\; \\text{or}\\; x \\ge 5\\)",
+      "\\(x < -5\\; \\text{or}\\; x > 0\\)"
+    ],
+    "answer": "0",
     "solution": "Factorise to get \\(x(x - 5) > 0\\). The roots are 0 and 5. The upright parabola is above the x-axis outside these roots. Thus, \\(x < 0\\) or \\(x > 5\\).",
     "t": "Revision",
     "hint": "Factorise the quadratic expression to find the boundary points.",
@@ -840,11 +846,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q7d",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the quadratic inequation \\(x^2 - 16 \\le 0\\) using a sketch or table of values.",
-    "a": "-4 <= x <= 4",
+    "question": "Solve the quadratic inequation \\(x^2 - 16 \\le 0\\).",
+    "options": [
+      "\\(-4 \\le x \\le 4\\)",
+      "\\(x \\le -4\\; \\text{or}\\; x \\ge 4\\)",
+      "\\(-4 < x < 4\\)",
+      "\\(x < -4\\; \\text{or}\\; x > 4\\)"
+    ],
+    "answer": "0",
     "solution": "Factorise as a difference of squares: \\((x-4)(x+4) \\le 0\\). The roots are -4 and 4. The upright parabola lies below or on the x-axis between these roots. Thus, \\(-4 \\le x \\le 4\\).",
     "t": "Revision",
     "hint": "Factorise the expression as a difference of two squares.",
