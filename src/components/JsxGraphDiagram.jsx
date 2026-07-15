@@ -252,15 +252,17 @@ const JsxGraphDiagram = ({ data, style }) => {
 
         // 3. Keep explicit points visible & styled premium (unified theme color)
         if (type === 'point') {
-          // Unified color: use the theme Slate (#64748b) to match curves and axes
-          let mappedColor = '#64748b'; 
+          // Keep the original color if specified (e.g. blue), otherwise fallback to slate
+          let mappedColor = attributes.color || attributes.strokeColor || '#64748b';
+          if (mappedColor === 'blue') mappedColor = '#3b82f6';
+          else if (mappedColor === 'red') mappedColor = '#f43f5e';
+          else if (mappedColor === 'green') mappedColor = '#10b981';
+          else if (mappedColor === 'orange') mappedColor = '#f59e0b';
           
           const labelAttrs = attributes.label || {};
           const rawName = attributes.name || '';
           const hasLatex = rawName.includes('$');
           
-          // If name contains $...$ LaTeX, we'll create a separate KaTeX label
-          // instead of using JSXGraph's default SVG text label
           const pointAttributes = {
             fixed: true,
             highlight: false,
@@ -269,7 +271,7 @@ const JsxGraphDiagram = ({ data, style }) => {
             color: mappedColor,
             strokeColor: mappedColor,
             fillColor: mappedColor,
-            size: attributes.size || 2.2,
+            size: attributes.size !== undefined ? attributes.size : 3.5, // slightly larger for visibility
             visible: attributes.visible !== false,
             withLabel: hasLatex ? false : (attributes.withLabel !== undefined ? attributes.withLabel : (attributes.name ? true : false)),
             label: {
