@@ -301,11 +301,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q4a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) of the equation \\(x^2 - 8x + 16 = 0\\), and state the number and nature of its zeroes.",
-    "a": "1 rational zero",
+    "options": [
+      "\\(\\Delta = 0\\), 1 rational zero",
+      "\\(\\Delta = 64\\), 2 rational zeroes",
+      "\\(\\Delta = -64\\), no real zeroes",
+      "\\(\\Delta = 0\\), 2 irrational zeroes"
+    ],
+    "answer": "0",
     "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = (-8)^2 - 4(1)(16) = 0\\). Since \\(\\Delta = 0\\), there is 1 rational zero.",
     "t": "Revision",
     "hint": "Calculate the discriminant using the formula \\(\\Delta = b^2 - 4ac\\).",
@@ -329,11 +335,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q4b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) of the equation \\(-x^2 - 6x + 3 = 0\\), and state the number and nature of its zeroes.",
-    "a": "2 irrational zeroes",
+    "options": [
+      "\\(\\Delta = 48\\), 2 irrational zeroes",
+      "\\(\\Delta = 48\\), 2 rational zeroes",
+      "\\(\\Delta = 24\\), 2 irrational zeroes",
+      "\\(\\Delta = -24\\), no real zeroes"
+    ],
+    "answer": "0",
     "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = (-6)^2 - 4(-1)(3) = 36 + 12 = 48\\). Since \\(\\Delta = 48 > 0\\) and is not a perfect square, there are 2 distinct irrational zeroes.",
     "t": "Revision",
     "hint": "Substitute coefficients into \\(\\Delta = b^2 - 4ac\\) and check if it is positive and a perfect square.",
@@ -357,11 +369,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q4c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find the discriminant \\(\\Delta\\) of the equation \\(4x^2 - 9 = 0\\), and state the number and nature of its zeroes.",
-    "a": "2 rational zeroes",
+    "options": [
+      "\\(\\Delta = 144\\), 2 rational zeroes",
+      "\\(\\Delta = 144\\), 2 irrational zeroes",
+      "\\(\\Delta = -144\\), no real zeroes",
+      "\\(\\Delta = 0\\), 1 rational zero"
+    ],
+    "answer": "0",
     "solution": "Using \\(\\Delta = b^2 - 4ac\\), we find \\(\\Delta = 0^2 - 4(4)(-9) = 144\\). Since \\(\\Delta = 144 > 0\\) and is a perfect square, there are 2 distinct rational zeroes.",
     "t": "Revision",
     "hint": "Identify b as 0 and calculate the discriminant.",
@@ -462,11 +480,12 @@ export const Y11A_CH4E_QUESTIONS = [
     "subQuestions": [
       {
         "id": "y11a-4e-q5a",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Find the values of \\(x\\) for which \\(y = 0\\).",
-        "a": "x = -1, 4",
+        "options": ["\\(x = -1, \\; 4\\)", "\\(x = 1, \\; -4\\)", "\\(x = 0, \\; 4\\)", "\\(x = -1, \\; 3\\)"],
+        "answer": "0",
         "solutionSteps": [
           {
             "explanation": "Identify the points where the curve intersects the \\(x\\)-axis.",
@@ -487,11 +506,12 @@ export const Y11A_CH4E_QUESTIONS = [
       },
       {
         "id": "y11a-4e-q5b",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Find the values of \\(x\\) for which \\(y > 0\\).",
-        "a": "x < -1 or x > 4",
+        "options": ["\\(-1 < x < 4\\)", "\\(x < -1\\; \\text{or}\\; x > 4\\)", "\\(x \\le -1\\; \\text{or}\\; x \\ge 4\\)", "\\(x < 1\\; \\text{or}\\; x > -4\\)"],
+        "answer": "1",
         "solutionSteps": [
           {
             "explanation": "Determine the intervals where the parabola lies strictly above the \\(x\\)-axis.",
@@ -512,11 +532,12 @@ export const Y11A_CH4E_QUESTIONS = [
       },
       {
         "id": "y11a-4e-q5c",
-        "type": "short_answer",
+        "type": "multiple_choice",
         "difficulty": "easy",
         "timeLimit": 60,
         "question": "Find the values of \\(x\\) for which \\(y < 0\\).",
-        "a": "-1 < x < 4",
+        "options": ["\\(x < -1\\; \\text{or}\\; x > 4\\)", "\\(-1 < x < 4\\)", "\\(-1 \\le x \\le 4\\)", "\\(-4 < x < 1\\)"],
+        "answer": "1",
         "solutionSteps": [
           {
             "explanation": "Determine the interval where the parabola lies below the \\(x\\)-axis.",
@@ -539,11 +560,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q6a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve the quadratic inequation \\(x^2 + 3x < 0\\), using the graph provided.",
-    "a": "-3 < x < 0",
+    "options": [
+      "\\(-3 < x < 0\\)",
+      "\\(x < -3\\; \\text{or}\\; x > 0\\)",
+      "\\(-3 \\le x \\le 0\\)",
+      "\\(x < 0\\)"
+    ],
+    "answer": "0",
     "solution": "The graph is below the x-axis between the x-intercepts at -3 and 0. Therefore, the solution is \\(-3 < x < 0\\).",
     "t": "Revision",
     "hint": "Identify the x-intercepts of the parabola and observe where the curve lies below the horizontal axis.",
@@ -617,11 +644,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q6b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve the quadratic inequation \\(x^2 + 3x - 10 \\ge 0\\), using the graph provided.",
-    "a": "x <= -5 or x >= 2",
+    "options": [
+      "\\(x \\le -5\\; \\text{or}\\; x \\ge 2\\)",
+      "\\(-5 \\le x \\le 2\\)",
+      "\\(x < -5\\; \\text{or}\\; x > 2\\)",
+      "\\(x \\le -2\\; \\text{or}\\; x \\ge 5\\)"
+    ],
+    "answer": "0",
     "solution": "The graph is above or on the x-axis for values of x that are less than or equal to -5, or greater than or equal to 2. The solution is \\(x \\le -5\\) or \\(x \\ge 2\\).",
     "t": "Revision",
     "hint": "Identify the x-intercepts of the parabola and observe where the curve lies above or on the horizontal axis.",
@@ -711,11 +744,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q7a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the quadratic inequation \\((x + 5)(x - 2) < 0\\) using a sketch or table of values.",
-    "a": "-5 < x < 2",
+    "question": "Solve the quadratic inequation \\((x + 5)(x - 2) < 0\\).",
+    "options": [
+      "\\(-5 < x < 2\\)",
+      "\\(x < -5\\; \\text{or}\\; x > 2\\)",
+      "\\(-5 \\le x \\le 2\\)",
+      "\\(-2 < x < 5\\)"
+    ],
+    "answer": "0",
     "solution": "The boundary points are \\(x = -5\\) and \\(x = 2\\). A sketch of the upright parabola shows that the curve is below the x-axis between these roots. Thus, \\(-5 < x < 2\\).",
     "t": "Revision",
     "hint": "Find the roots of the quadratic equation first, then consider the shape of the parabola.",
@@ -739,11 +778,17 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q7b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Solve the quadratic inequation \\((x - 2)(x + 4) \\ge 0\\) using a sketch or table of values.",
-    "a": "x <= -4 or x >= 2",
+    "question": "Solve the quadratic inequation \\((x - 2)(x + 4) \\ge 0\\).",
+    "options": [
+      "\\(x \\le -4\\; \\text{or}\\; x \\ge 2\\)",
+      "\\(-4 \\le x \\le 2\\)",
+      "\\(x < -4\\; \\text{or}\\; x > 2\\)",
+      "\\(x \\le -2\\; \\text{or}\\; x \\ge 4\\)"
+    ],
+    "answer": "0",
     "solution": "The boundary points are \\(x = -4\\) and \\(x = 2\\). An upright parabola is above the x-axis outside the roots. Thus, \\(x \\le -4\\) or \\(x \\ge 2\\).",
     "t": "Revision",
     "hint": "Identify the critical points and check the region outside of them.",
