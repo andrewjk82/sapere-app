@@ -670,7 +670,7 @@ const buildExamPrepBriefing = (snap, firstName, seedBase) => {
     const lines = [
       {
         msg: `${hey} — scouting report for Exam Prep.`,
-        sub: `${remaining} left in this cycle · lifetime ${accuracy}%. Soft spot: ${topTitle} (${topPct}%). When that topic shows up, slow down and check every step.`,
+        sub: `${remaining} left on the deck · lifetime ${accuracy}%. Soft spot: ${topTitle} (${topPct}%). When that topic shows up, slow down and check every step.`,
       },
       {
         msg: `Coach tip${cn}: watch ${topTitle} today.`,
@@ -742,7 +742,7 @@ const buildExamPrepBriefing = (snap, firstName, seedBase) => {
 
   const lines = [
     {
-      msg: `${hey} — ${remaining} left in this cycle.`,
+      msg: `${hey} — ${remaining} left on the deck.`,
       sub: `Mastered ${mastered}/${total} · lifetime ${accuracy || 0}%. Keep the same careful rhythm and the pile will shrink.`,
     },
     {
