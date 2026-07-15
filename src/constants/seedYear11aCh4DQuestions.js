@@ -12,11 +12,12 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q1a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 2\\) to find \\(a\\).",
-        a: "4",
+        options: ["2", "3", "4", "5"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 2\\) into the identity to eliminate the term containing \\(b\\).",
@@ -37,11 +38,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q1b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = -3\\) to find \\(b\\).",
-        a: "2",
+        options: ["1", "2", "3", "4"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = -3\\) into the identity to eliminate the term containing \\(a\\).",
@@ -62,11 +64,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q1c",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Why were the values \\(x = 2\\) and \\(x = -3\\) chosen?",
-        a: "They make one of the linear factors equal to zero, isolating the other constant.",
+        options: [
+          "They make the coefficients of \\(a\\) and \\(b\\) equal.",
+          "They make one of the linear factors equal to zero, isolating the other constant.",
+          "They are the coefficients of \\(x\\) on the right-hand side.",
+          "They make the right-hand side equal to zero."
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Identify the linear factors attached to the coefficients \\(a\\) and \\(b\\).",
@@ -87,11 +95,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q1d",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Equate the coefficients of like terms on both sides of the identity to get a pair of simultaneous equations in \\(a\\) and \\(b\\), and solve them. Do you get the same answer?",
-        a: "a = 4, b = 2",
+        options: [
+          "\\(a = 2, b = 4\\)",
+          "\\(a = 3, b = 3\\)",
+          "\\(a = 4, b = 2\\)",
+          "\\(a = 5, b = 1\\)"
+        ],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Expand the left-hand side of the identity and group the terms by powers of \\(x\\).",
@@ -130,11 +144,12 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q2a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 1\\) to find \\(a\\).",
-        a: "2",
+        options: ["1", "2", "3", "4"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 1\\) into the identity to eliminate \\(b(x-1)\\).",
@@ -155,11 +170,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q2b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = -4\\) to find \\(b\\).",
-        a: "3",
+        options: ["2", "3", "4", "5"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = -4\\) to make the term \\(a(x+4)\\) zero.",
@@ -180,11 +196,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q2c",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Why were the values \\(x = 1\\) and \\(x = -4\\) chosen?",
-        a: "They are the roots of the linear factors, which makes them vanish.",
+        options: [
+          "They are the coefficients of \\(a\\) and \\(b\\).",
+          "They are the roots of the linear factors, which makes them vanish.",
+          "They make the right-hand side equal to zero.",
+          "They make \\(a + b = 5\\)."
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Identify the linear expressions on the left-hand side.",
@@ -205,11 +227,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q2d",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Equate the coefficients of like terms to get a pair of simultaneous equations in \\(a\\) and \\(b\\), and solve them.",
-        a: "a = 2, b = 3",
+        options: [
+          "\\(a = 1, b = 4\\)",
+          "\\(a = 2, b = 3\\)",
+          "\\(a = 3, b = 2\\)",
+          "\\(a = 4, b = 1\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Expand and collect like terms on the left-hand side.",
@@ -248,11 +276,12 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q3a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Equate the coefficients of \\(x^2\\) to find the value of \\(a\\).",
-        a: "3",
+        options: ["1", "2", "3", "4"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Identify the term containing \\(x^2\\) on the right-hand side when expanded.",
@@ -273,11 +302,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q3b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 1\\) into the identity to find the value of \\(c\\).",
-        a: "1",
+        options: ["-1", "0", "1", "2"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 1\\) into the entire quadratic identity.",
@@ -298,11 +328,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q3c",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 2\\) into the identity to find the value of \\(b\\).",
-        a: "2",
+        options: ["1", "2", "3", "4"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 2\\), \\(a = 3\\), and \\(c = 1\\) into the identity.",
@@ -323,11 +354,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q3d",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Why was the value \\(x = 2\\) chosen in part c?",
-        a: "It makes the linear term (x - 1) equal to 1, simplifying the calculation.",
+        options: [
+          "It makes \\(3x^2 - 4x + 2 = 0\\).",
+          "It makes the linear term \\(x - 1\\) equal to 1, simplifying the calculation.",
+          "It makes \\(c = 0\\).",
+          "It is the coefficient of \\(x^2\\)."
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Examine the linear factor in the identity.",
@@ -361,11 +398,12 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q4a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Equate the coefficients of \\(x^2\\) to find the value of \\(a\\).",
-        a: "1",
+        options: ["0", "1", "2", "3"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Identify the leading coefficient on the left hand side of the equation.",
@@ -386,11 +424,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q4b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 2\\) into the identity to find the value of \\(c\\).",
-        a: "5",
+        options: ["3", "4", "5", "6"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 2\\) into both sides of the identity.",
@@ -411,11 +450,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q4c",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = 3\\) into the identity to find the value of \\(b\\).",
-        a: "3",
+        options: ["1", "2", "3", "4"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 3\\), \\(a = 1\\), and \\(c = 5\\) into the equation.",
@@ -436,11 +476,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q4d",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Why was the value \\(x = 3\\) chosen in part c?",
-        a: "It makes the linear term (x - 2) equal to 1, simplifying the calculation.",
+        options: [
+          "It makes the right-hand side equal to zero.",
+          "It makes the linear term \\(x - 2\\) equal to 1, simplifying the calculation.",
+          "It makes \\(c = 0\\).",
+          "It is the root of the equation."
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Look at the factor \\(x-2\\).",
@@ -474,11 +520,12 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q5a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Compare the coefficients of \\(x^2\\) to find the value of \\(a\\).",
-        a: "3",
+        options: ["1", "2", "3", "4"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Write down the expanded leading term of \\(f(x)\\).",
@@ -499,11 +546,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q5b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute \\(x = -2\\) to find the value of \\(c\\).",
-        a: "17",
+        options: ["13", "15", "17", "19"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Evaluate \\(f(-2)\\) and set it equal to \\(g(-2)\\).",
@@ -524,11 +572,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q5c",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Substitute another suitable value of \\(x\\) to determine \\(b\\).",
-        a: "-14",
+        options: ["-16", "-14", "-12", "-10"],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Choose a simple value, e.g., \\(x = -1\\), and substitute it along with \\(a = 3\\) and \\(c = 17\\).",
@@ -549,11 +598,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q5d",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "easy",
         timeLimit: 60,
         question: "Write down the resulting quadratic identity.",
-        a: "3x^2-2x+1 = 3(x+2)^2-14(x+2)+17",
+        options: [
+          "\\(3x^2-2x+1 = 3(x+2)^2-12(x+2)+15\\)",
+          "\\(3x^2-2x+1 = 3(x+2)^2-14(x+2)+17\\)",
+          "\\(3x^2-2x+1 = 3(x+2)^2-10(x+2)+13\\)",
+          "\\(3x^2-2x+1 = 3(x+2)^2-16(x+2)+19\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Collect the calculated coefficients.",
@@ -577,11 +632,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q6a
   {
     id: "y11a-4d-q6a",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Find \\(a\\), \\(b\\) and \\(c\\) if \\(n^2 + n = a(n-3)^2 + b(n-3) + c\\) for all values of \\(n\\).",
-    a: "a = 1, b = 7, c = 12",
+    options: [
+      "\\(a = 1, b = 5, c = 10\\)",
+      "\\(a = 1, b = 7, c = 12\\)",
+      "\\(a = 1, b = 6, c = 12\\)",
+      "\\(a = 1, b = 7, c = 10\\)"
+    ],
+    answer: "1",
     solution: "By comparing the coefficients of \\(n^2\\), we find \\(a = 1\\). Substituting \\(n = 3\\) yields \\(c = 3^2 + 3 = 12\\). Substituting \\(n = 4\\) yields \\(a(1) + b(1) + c = 4^2 + 4 \\implies 1 + b + 12 = 20 \\implies b = 7\\). Thus, \\(a = 1\\), \\(b = 7\\), and \\(c = 12\\).",
     t: "Quadratic identities",
     hint: "Use coefficient matching for the quadratic term, then substitute key values to solve for the other constants.",
@@ -606,11 +667,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q6b
   {
     id: "y11a-4d-q6b",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Find \\(a\\), \\(b\\) and \\(c\\) if \\(3x^2 - 2x + 4 = a(x-2)^2 + b(x-2) + c\\) for all values of \\(x\\).",
-    a: "a = 3, b = 10, c = 12",
+    options: [
+      "\\(a = 3, b = 8, c = 10\\)",
+      "\\(a = 3, b = 10, c = 12\\)",
+      "\\(a = 3, b = 12, c = 12\\)",
+      "\\(a = 3, b = 10, c = 10\\)"
+    ],
+    answer: "1",
     solution: "Comparing the coefficient of \\(x^2\\) gives \\(a = 3\\). Substituting \\(x = 2\\) yields \\(c = 3(2)^2 - 2(2) + 4 = 12\\). Substituting \\(x = 3\\) yields \\(a(1) + b(1) + c = 3(3)^2 - 2(3) + 4 \\implies 3 + b + 12 = 25 \\implies b = 10\\). Thus, \\(a = 3\\), \\(b = 10\\), and \\(c = 12\\).",
     t: "Quadratic identities",
     hint: "Equate \\(x^2\\) coefficients, then substitute \\(x = 2\\) and \\(x = 3\\).",
@@ -635,11 +702,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q7a
   {
     id: "y11a-4d-q7a",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Express \\(x^2\\) in the form \\(A(x+3)^2 + B(x+3) + C\\).",
-    a: "A = 1, B = -6, C = 9",
+    options: [
+      "\\((x+3)^2 - 6(x+3) + 9\\)",
+      "\\((x+3)^2 - 5(x+3) + 8\\)",
+      "\\((x+3)^2 - 6(x+3) + 6\\)",
+      "\\(2(x+3)^2 - 6(x+3) + 9\\)"
+    ],
+    answer: "0",
     solution: "We compare coefficients: \\(A = 1\\). Substitute \\(x = -3 \\implies C = (-3)^2 = 9\\). Substitute \\(x = -2 \\implies A(1)^2 + B(1) + C = (-2)^2 \\implies 1 + B + 9 = 4 \\implies B = -6\\). Thus, \\(x^2 = (x+3)^2 - 6(x+3) + 9\\).",
     t: "Quadratic identities",
     hint: "Match the coefficients of \\(x^2\\), then substitute \\(x = -3\\) and \\(x = -2\\).",
@@ -664,11 +737,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q7b
   {
     id: "y11a-4d-q7b",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Express \\(x^2\\) in the form \\(A(x-3)^2 + B(x-3) + C\\).",
-    a: "A = 1, B = 6, C = 9",
+    options: [
+      "\\((x-3)^2 + 6(x-3) - 9\\)",
+      "\\((x-3)^2 - 6(x-3) + 9\\)",
+      "\\((x-3)^2 + 6(x-3) + 9\\)",
+      "\\(2(x-3)^2 + 6(x-3) + 9\\)"
+    ],
+    answer: "2",
     solution: "Comparing coefficients yields \\(A = 1\\). Substituting \\(x = 3\\) yields \\(C = 3^2 = 9\\). Substituting \\(x = 4\\) yields \\(A(1)^2 + B(1) + C = 4^2 \\implies 1 + B + 9 = 16 \\implies B = 6\\). Thus, \\(x^2 = (x-3)^2 + 6(x-3) + 9\\).",
     t: "Quadratic identities",
     hint: "Identify the leading coefficient, then evaluate the identity at the root \\(x = 3\\).",
@@ -693,11 +772,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q7c
   {
     id: "y11a-4d-q7c",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Express \\(x^2\\) in the form \\(A(x+4)^2 + B(x+4) + C\\).",
-    a: "A = 1, B = -8, C = 16",
+    options: [
+      "\\((x+4)^2 - 8(x+4) + 16\\)",
+      "\\((x+4)^2 - 8(x+4) + 8\\)",
+      "\\((x+4)^2 - 6(x+4) + 16\\)",
+      "\\(2(x+4)^2 - 8(x+4) + 16\\)"
+    ],
+    answer: "0",
     solution: "Comparing coefficients gives \\(A = 1\\). Substitute \\(x = -4 \\implies C = (-4)^2 = 16\\). Substitute \\(x = -3 \\implies 1(1) + B(1) + 16 = (-3)^2 \\implies 17 + B = 9 \\implies B = -8\\). Thus, \\(x^2 = (x+4)^2 - 8(x+4) + 16\\).",
     t: "Quadratic identities",
     hint: "Identify \\(A = 1\\), then substitute \\(x = -4\\) and \\(x = -3\\).",
@@ -722,11 +807,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q8a
   {
     id: "y11a-4d-q8a",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Express \\(3x^2 + 2x - 4\\) in the form \\(A(x+2)^2 + B(x+2) + C\\).",
-    a: "A = 3, B = -10, C = 4",
+    options: [
+      "\\(3(x+2)^2 - 10(x+2) + 4\\)",
+      "\\(3(x+2)^2 - 8(x+2) + 4\\)",
+      "\\(3(x+2)^2 - 10(x+2) + 2\\)",
+      "\\(2(x+2)^2 - 10(x+2) + 4\\)"
+    ],
+    answer: "0",
     solution: "Comparing coefficients: \\(A = 3\\). Substitute \\(x = -2 \\implies C = 3(-2)^2 + 2(-2) - 4 = 12 - 4 - 4 = 4\\). Substitute \\(x = -1 \\implies A(1)^2 + B(1) + C = 3(-1)^2 + 2(-1) - 4 \\implies 3 + B + 4 = -3 \\implies 7 + B = -3 \\implies B = -10\\). Thus, \\(3x^2 + 2x - 4 = 3(x+2)^2 - 10(x+2) + 4\\).",
     t: "Quadratic identities",
     hint: "Identify the leading coefficient \\(A\\), then substitute \\(x = -2\\) and \\(x = -1\\).",
@@ -751,11 +842,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q8b
   {
     id: "y11a-4d-q8b",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Express \\(2x^2 - 5x - 3\\) in the form \\(p(x-2)^2 + q(x-2) + r\\).",
-    a: "p = 2, q = 3, r = -5",
+    options: [
+      "\\(2(x-2)^2 + 3(x-2) - 4\\)",
+      "\\(2(x-2)^2 + 2(x-2) - 5\\)",
+      "\\(2(x-2)^2 + 3(x-2) - 5\\)",
+      "\\(3(x-2)^2 + 3(x-2) - 5\\)"
+    ],
+    answer: "2",
     solution: "Comparing coefficients: \\(p = 2\\). Substitute \\(x = 2 \\implies r = 2(2)^2 - 5(2) - 3 = 8 - 10 - 3 = -5\\). Substitute \\(x = 3 \\implies p(1)^2 + q(1) + r = 2(3)^2 - 5(3) - 3 \\implies 2 + q - 5 = 0 \\implies q - 3 = 0 \\implies q = 3\\). Thus, \\(2x^2 - 5x - 3 = 2(x-2)^2 + 3(x-2) - 5\\).",
     t: "Quadratic identities",
     hint: "Set \\(p = 2\\), then substitute the root \\(x = 2\\) to determine \\(r\\).",
@@ -780,11 +877,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q9
   {
     id: "y11a-4d-q9",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Determine the equation of the parabola \\(y = ax^2 + bx + c\\) that passes through the three points \\(A(-1, 2)\\), \\(B(0, 5)\\) and \\(C(1, 12)\\).",
-    a: "y = 2x^2 + 5x + 5",
+    options: [
+      "\\(y = 2x^2 + 5x + 5\\)",
+      "\\(y = 2x^2 + 4x + 5\\)",
+      "\\(y = 3x^2 + 5x + 5\\)",
+      "\\(y = 2x^2 + 5x + 4\\)"
+    ],
+    answer: "0",
     solution: "Substitute \\(B(0,5) \\implies c = 5\\). Substitute \\(A(-1,2) \\implies a - b + 5 = 2 \\implies a - b = -3\\). Substitute \\(C(1,12) \\implies a + b + 5 = 12 \\implies a + b = 7\\). Adding these equations gives \\(2a = 4 \\implies a = 2\\), which yields \\(b = 5\\). The equation is \\(y = 2x^2 + 5x + 5\\).",
     t: "Quadratic identities",
     hint: "Substitute \\(x = 0\\) first to find the value of \\(c\\). Then set up a system of two equations for \\(a\\) and \\(b\\).",
@@ -819,11 +922,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q10
   {
     id: "y11a-4d-q10",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Find the values of \\(a\\), \\(b\\) and \\(c\\) for which \\(2x^2 = a(x-1)^2 + b(x-2)^2 + c(x-3)^2\\) is an identity.",
-    a: "a = 6, b = -6, c = 2",
+    options: [
+      "\\(a = 6, b = -5, c = 2\\)",
+      "\\(a = 6, b = -6, c = 2\\)",
+      "\\(a = 5, b = -6, c = 2\\)",
+      "\\(a = 6, b = -6, c = 3\\)"
+    ],
+    answer: "1",
     solution: "Substitute \\(x = 2 \\implies a(1) + c(1) = 2(2^2) = 8 \\implies a+c = 8\\). Substitute \\(x = 1 \\implies b(1) + c(4) = 2 \\implies b+4c = 2\\). Substitute \\(x = 3 \\implies a(4) + b(1) = 18 \\implies 4a+b = 18\\). Solving this system gives \\(a = 6\\), \\(b = -6\\), and \\(c = 2\\).",
     t: "Quadratic identities",
     hint: "Substitute \\(x = 1\\), \\(x = 2\\), and \\(x = 3\\) to generate three simultaneous equations.",
@@ -853,11 +962,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q11
   {
     id: "y11a-4d-q11",
-    type: "short_answer",
+    type: "multiple_choice",
     difficulty: "medium",
     timeLimit: 90,
     question: "Find the unknown constants \\(a\\), \\(b\\) and \\(c\\) if \\(P(x) = ax^2 + b(x+1)^2 + c(x+2)^2\\) and \\(Q(x) = 5x^2 + 8x + 6\\) have the same graph.",
-    a: "a = 2, b = 2, c = 1",
+    options: [
+      "\\(a = 2, b = 2, c = 1\\)",
+      "\\(a = 2, b = 1, c = 2\\)",
+      "\\(a = 1, b = 2, c = 2\\)",
+      "\\(a = 2, b = 2, c = 2\\)"
+    ],
+    answer: "0",
     solution: "Expand \\(P(x) = (a+b+c)x^2 + (2b+4c)x + (b+4c)\\). Compare with \\(Q(x)\\): \\(a+b+c=5\\), \\(2b+4c=8\\), and \\(b+4c=6\\). Subtracting the last two gives \\(b = 2\\), which yields \\(c = 1\\). Then \\(a = 2\\).",
     t: "Quadratic identities",
     hint: "Expand P(x) fully, group like terms, and equate the resulting coefficients to those of Q(x).",
@@ -897,11 +1012,17 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q12a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Find \\(A\\) and \\(B\\) such that \\(Am^2 + B(m-1)^2 = 4m - 2\\).",
-        a: "A = 2, B = -2",
+        options: [
+          "\\(A = 2, B = 2\\)",
+          "\\(A = 2, B = -2\\)",
+          "\\(A = -2, B = 2\\)",
+          "\\(A = 4, B = -2\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Expand the left-hand side of the equation.",
@@ -922,11 +1043,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q12b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Hence find the sum of \\(2 + 6 + 10 + \\dots + 98\\).",
-        a: "1250",
+        options: ["1150", "1200", "1250", "1300"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Identify the general term of the sequence \\(2, 6, 10, \\dots\\). The terms are of the form \\(4m - 2\\). Find the number of terms \\(N\\).",
@@ -960,11 +1082,17 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q13a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Evaluate the constants \\(a\\), \\(b\\) and \\(c\\).",
-        a: "a = 11, b = -61, c = 88",
+        options: [
+          "\\(a = 11, b = -60, c = 88\\)",
+          "\\(a = 11, b = -61, c = 88\\)",
+          "\\(a = 11, b = -61, c = 80\\)",
+          "\\(a = 10, b = -61, c = 88\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Determine \\(a\\) by matching the coefficient of \\(x^2\\). Note that \\(a(3-x)^2 = ax^2 + \\dots\\).",
@@ -985,11 +1113,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q13b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Hence evaluate \\(11x^2 - 5x + 4\\) when \\(x = 2.99\\) without using a calculator.",
-        a: "87.3911",
+        options: ["86.3911", "87.1911", "87.3911", "88.3911"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute \\(x = 2.99\\) into the identity form using \\(a = 11\\), \\(b = -61\\), and \\(c = 88\\).",
@@ -1023,11 +1152,17 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q14a",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Find \\(A\\) and \\(B\\) such that \\(A(m+1)^2 + B(m-1)^2 = 8m\\).",
-        a: "A = 2, B = -2",
+        options: [
+          "\\(A = 2, B = 2\\)",
+          "\\(A = 2, B = -2\\)",
+          "\\(A = -2, B = 2\\)",
+          "\\(A = 4, B = -4\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Expand the left-hand side.",
@@ -1048,11 +1183,12 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q14b",
-        type: "short_answer",
+        type: "multiple_choice",
         difficulty: "hard",
         timeLimit: 120,
         question: "Hence find the sum of the first twelve multiples of 8.",
-        a: "624",
+        options: ["584", "604", "624", "644"],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Express the sum of the first twelve multiples of 8 (8, 16, \\dots, 96) in sigma notation.",
@@ -1081,11 +1217,17 @@ export const Y11A_CH4D_QUESTIONS = [
   // Q15
   {
     id: "y11a-4d-q15",
-    type: "teacher_review",
+    type: "multiple_choice",
     difficulty: "hard",
     timeLimit: 120,
-    question: "Let \\(u\\), \\(v\\) and \\(w\\) be distinct real numbers. Substitute three appropriate values of \\(x\\) in order to show that the quadratic equation \\(\\frac{(u - x)(v - x)}{(u - w)(v - w)} + \\frac{(v - x)(w - x)}{(v - u)(w - u)} + \\frac{(w - x)(u - x)}{(w - v)(u - v)} = 1\\) holds for all values of \\(x\\).",
-    a: "Substitute x = u, x = v, and x = w to show the quadratic equation holds at three distinct points.",
+    question: "Let \\(u\\), \\(v\\) and \\(w\\) be distinct real numbers. Determine the value of \\(x\\) for which the quadratic equation \\(\\frac{(u - x)(v - x)}{(u - w)(v - w)} + \\frac{(v - x)(w - x)}{(v - u)(w - u)} + \\frac{(w - x)(u - x)}{(w - v)(u - v)} = 1\\) holds.",
+    options: [
+      "Only for \\(x = u, v, w\\)",
+      "Only for \\(x = 0\\)",
+      "For all values of \\(x\\) (it is an identity)",
+      "No real values of \\(x\\)"
+    ],
+    answer: "2",
     solution: "Since the left-hand side is a quadratic expression in \\(x\\) (at most degree 2) and it equals the constant 1 (degree 0) at three distinct points \\(x = u\\), \\(x = v\\), and \\(x = w\\), by the uniqueness of quadratic identities, it must be an identity for all \\(x\\).",
     t: "Quadratic identities",
     hint: "Identify three values of x that make two of the three fractions vanish.",
@@ -1125,11 +1267,17 @@ export const Y11A_CH4D_QUESTIONS = [
     subQuestions: [
       {
         id: "y11a-4d-q16a",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "medium",
         timeLimit: 90,
         question: "Express \\(x^2\\) as a quadratic in \\((x - d)\\). Begin by writing \\(x^2 = ((x - d) + d)^2\\), then expand only the outer brackets of the RHS.",
-        a: "(x-d)^2 + 2d(x-d) + d^2",
+        options: [
+          "\\((x-d)^2 + d(x-d) + d^2\\)",
+          "\\((x-d)^2 + 2d(x-d) + d^2\\)",
+          "\\((x-d)^2 + 2d(x-d) - d^2\\)",
+          "\\(d(x-d)^2 + 2d(x-d) + d^2\\)"
+        ],
+        answer: "1",
         solutionSteps: [
           {
             explanation: "Write \\(x^2\\) by adding and subtracting \\(d\\) inside the brackets.",
@@ -1150,11 +1298,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q16b",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "hard",
         timeLimit: 120,
-        question: "Use the formula found in part a to quickly find \\(x^2\\) as a quadratic in the given expressions.",
-        a: "Refer to steps for parts i, ii, and iii.",
+        question: "Use the formula found in part a to quickly find \\(x^2\\) as a quadratic in the given expressions. Match \\(x - 2\\), \\(x + 4\\) and \\(x - 12\\).",
+        options: [
+          "\\((x-2)^2+4(x-2)+4\\), \\((x+4)^2-8(x+4)+16\\), \\((x-12)^2+24(x-12)+144\\)",
+          "\\((x-2)^2+4(x-2)+2\\), \\((x+4)^2-8(x+4)+8\\), \\((x-12)^2+24(x-12)+144\\)",
+          "\\((x-2)^2+2(x-2)+4\\), \\((x+4)^2-4(x+4)+16\\), \\((x-12)^2+12(x-12)+144\\)",
+          "\\((x-2)^2-4(x-2)+4\\), \\((x+4)^2+8(x+4)+16\\), \\((x-12)^2-24(x-12)+144\\)"
+        ],
+        answer: "0",
         solutionSteps: [
           {
             explanation: "For part (i) \\(x - 2\\), substitute \\(d = 2\\) into the identity.",
@@ -1175,11 +1329,17 @@ export const Y11A_CH4D_QUESTIONS = [
       },
       {
         id: "y11a-4d-q16c",
-        type: "teacher_review",
+        type: "multiple_choice",
         difficulty: "hard",
         timeLimit: 120,
         question: "Use this method to express \\(3x^2 - 4x + 5\\) in terms of \\((x - 2)\\).",
-        a: "3(x-2)^2 + 8(x-2) + 9",
+        options: [
+          "\\(3(x-2)^2 + 6(x-2) + 9\\)",
+          "\\(3(x-2)^2 + 8(x-2) + 7\\)",
+          "\\(3(x-2)^2 + 8(x-2) + 9\\)",
+          "\\(2(x-2)^2 + 8(x-2) + 9\\)"
+        ],
+        answer: "2",
         solutionSteps: [
           {
             explanation: "Substitute the expansion of \\(x^2\\) in terms of \\((x-2)\\) and \\(x = (x-2) + 2\\) into the expression.",
