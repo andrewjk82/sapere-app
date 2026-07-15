@@ -489,8 +489,31 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '6px 12px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '6px' }}>
-                  <Clock size={14} /> {q?.timeLimit || 120}s
+                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '2px 8px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '4px', border: '1px solid #e2e8f0' }}>
+                  <Clock size={14} />
+                  <select
+                    value={q?.timeLimit || 120}
+                    onChange={async (e) => {
+                      const newTime = Number(e.target.value);
+                      if (!q?.id) return;
+                      try {
+                        await updateDoc(doc(db, 'questions', q.id), { timeLimit: newTime });
+                        setLoadedQuestions(prev => ({
+                          ...prev,
+                          [q.id]: { ...prev[q.id], timeLimit: newTime }
+                        }));
+                        showToast(`Time limit updated to ${newTime}s`, 'success');
+                      } catch (err) {
+                        console.error('Failed to update time limit:', err);
+                        showToast('Failed to update time limit in Firestore', 'error');
+                      }
+                    }}
+                    style={{ border: 'none', background: 'transparent', fontWeight: 800, color: '#475569', fontSize: '0.8rem', cursor: 'pointer', paddingRight: '4px', outline: 'none' }}
+                  >
+                    {[30, 45, 60, 90, 120, 180, 240, 300].map(sec => (
+                      <option key={sec} value={sec}>{sec}s</option>
+                    ))}
+                  </select>
                 </div>
                 <button
                   onClick={() => setEditingQuestion(q)}
