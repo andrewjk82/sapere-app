@@ -639,11 +639,17 @@ export const CRANBROOK_2023_QUESTIONS = [
     "c": "4D",
     "t": "Odd and even symmetry",
     "source": "Cranbrook 2023 Trial Q16(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Consider the function $f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$. Show that $f(x)$ is even.",
     "a": "Expanding gives $f(x) = \\cos\\!\\left(\\dfrac{x}{2}\\right)$, and since cosine is even, $f(-x) = \\cos\\!\\left(-\\dfrac{x}{2}\\right) = \\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$.",
-    "opts": [],
+    "options": [
+      "Even: $f(-x) = \\cos\\!\\left(-\\dfrac{x}{2}\\right) = \\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$",
+      "Odd: $f(-x) = \\cos\\!\\left(-\\dfrac{x}{2}\\right) = -\\cos\\!\\left(\\dfrac{x}{2}\\right) = -f(x)$",
+      "Even: $f(-x) = -\\sin\\!\\left(-\\dfrac{x}{2}\\right) = f(x)$",
+      "Neither even nor odd"
+    ],
+    "answer": "0",
     "h": "Expand $\\sin\\!\\left(\\dfrac{x}{2} - \\dfrac{\\pi}{2}\\right)$ with the compound angle formula, or check $f(-x) = f(x)$ directly.",
     "s": "$f(x) = -\\sin\\!\\left(\\dfrac{x}{2} - \\dfrac{\\pi}{2}\\right) = -\\left[\\sin\\dfrac{x}{2}\\cos\\dfrac{\\pi}{2} - \\cos\\dfrac{x}{2}\\sin\\dfrac{\\pi}{2}\\right] = -\\left[0 - \\cos\\dfrac{x}{2}\\right] = \\cos\\dfrac{x}{2}$.\n\nThen $f(-x) = \\cos\\!\\left(-\\dfrac{x}{2}\\right) = \\cos\\dfrac{x}{2} = f(x)$, so $f$ is even.",
     "solutionSteps": [
