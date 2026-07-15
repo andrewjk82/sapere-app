@@ -143,11 +143,10 @@ const JsxGraphDiagram = ({ data, style }) => {
             strokeWidth: attributes.strokeWidth !== undefined ? Math.min(attributes.strokeWidth, 1.5) : 1.5,
           };
 
-          // Extend domain for functiongraph to avoid mid-air truncation
-          if (type === 'functiongraph' && parents && parents.length >= 3) {
-            parents[1] = bbox[0]; // Set to left edge of bounding box
-            parents[2] = bbox[2]; // Set to right edge of bounding box
-          }
+          // NOTE: Do NOT auto-extend the domain to bbox edges for functiongraph.
+          // The seed script specifies its own x-range (e.g. [-2, 5]) which is appropriate
+          // for the parabola to display nicely. Extending to bbox edges causes the arms
+          // to shoot off the top of the canvas and get clipped.
         }
         
         // 2. Softer colors for axes and arrows (Slate instead of harsh black)
