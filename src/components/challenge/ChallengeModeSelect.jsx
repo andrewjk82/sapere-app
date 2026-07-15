@@ -196,10 +196,6 @@ export default function ChallengeModeSelect({
             </div>
 
             <div className="cms-foot">
-              <p className="cms-hint">
-                Bonus XP is added when you complete the session (not if you abandon).
-                Timers shrink on every question.
-              </p>
               <div className="cms-actions">
                 <button type="button" className="cms-btn cms-btn--ghost" onClick={onCancel}>
                   Cancel
