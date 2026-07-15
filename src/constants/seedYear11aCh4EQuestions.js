@@ -1,12 +1,13 @@
 export const Y11A_CH4E_QUESTIONS = [
   {
     "id": "y11a-4e-q1a",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(3x + 4 < 19\\), and sketch your solution on a number line.",
-    "a": "x < 5",
-    "solution": "Subtract 4 from both sides to get \\(3x < 15\\), then divide by 3 to obtain \\(x < 5\\). Draw an open circle at 5 on the number line and shade to the left.",
+    "question": "Solve the linear inequation \\(3x + 4 < 19\\).",
+    "options": ["\\(x < 5\\)", "\\(x > 5\\)", "\\(x < 15\\)", "\\(x \\ge 5\\)"],
+    "answer": "0",
+    "solution": "Subtract 4 from both sides to get \\(3x < 15\\), then divide by 3 to obtain \\(x < 5\\).",
     "t": "Revision",
     "hint": "Isolate x by performing inverse operations on both sides of the inequality.",
     "solutionSteps": [
@@ -24,22 +25,18 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by 3 to find the final inequality for \\(x\\).",
         "workingOut": "x < 5",
         "graphData": null
-      },
-      {
-        "explanation": "Sketch the solution on a number line by placing an open circle at 5 (since it is strictly less than) and drawing an arrow pointing to the left.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q1b",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(4x + 3 > 19\\), and sketch your solution on a number line.",
-    "a": "x > 4",
-    "solution": "Subtract 3 from both sides to get \\(4x > 16\\), then divide by 4 to obtain \\(x > 4\\). Draw an open circle at 4 on the number line and shade to the right.",
+    "question": "Solve the linear inequation \\(4x + 3 > 19\\).",
+    "options": ["\\(x < 4\\)", "\\(x > 4\\)", "\\(x \\ge 4\\)", "\\(x > 16\\)"],
+    "answer": "1",
+    "solution": "Subtract 3 from both sides to get \\(4x > 16\\), then divide by 4 to obtain \\(x > 4\\).",
     "t": "Revision",
     "hint": "Perform standard algebraic operations to isolate the variable x.",
     "solutionSteps": [
@@ -57,22 +54,18 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by 4 to solve for \\(x\\).",
         "workingOut": "x > 4",
         "graphData": null
-      },
-      {
-        "explanation": "Represent the solution on a number line with an open circle at 4 and an arrow pointing to the right.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q1c",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(5 - 2x \\ge 13\\), and sketch your solution on a number line.",
-    "a": "x \\le -4",
-    "solution": "Subtract 5 from both sides to get \\(-2x \\ge 8\\). Divide by -2 and reverse the inequality sign to obtain \\(x \\le -4\\). Draw a solid circle at -4 and shade to the left.",
+    "question": "Solve the linear inequation \\(5 - 2x \\ge 13\\).",
+    "options": ["\\(x \\ge -4\\)", "\\(x \\le 4\\)", "\\(x \\le -4\\)", "\\(x \\le -9\\)"],
+    "answer": "2",
+    "solution": "Subtract 5 from both sides to get \\(-2x \\ge 8\\). Divide by -2 and reverse the inequality sign to obtain \\(x \\le -4\\).",
     "t": "Revision",
     "hint": "Remember to reverse the inequality sign when multiplying or dividing by a negative number.",
     "solutionSteps": [
@@ -90,22 +83,18 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by -2. Since you are dividing by a negative number, you must reverse the inequality sign.",
         "workingOut": "x \\le -4",
         "graphData": null
-      },
-      {
-        "explanation": "On the number line, draw a solid circle at -4 (since the inequality includes equals to) and an arrow pointing to the left.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q1d",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(3 - 4x \\le 11\\), and sketch your solution on a number line.",
-    "a": "x \\ge -2",
-    "solution": "Subtract 3 from both sides to get \\(-4x \\le 8\\). Divide by -4 and reverse the inequality sign to obtain \\(x \\ge -2\\). Draw a solid circle at -2 and shade to the right.",
+    "question": "Solve the linear inequation \\(3 - 4x \\le 11\\).",
+    "options": ["\\(x \\ge -2\\)", "\\(x \\le -2\\)", "\\(x \\ge 2\\)", "\\(x \\le 2\\)"],
+    "answer": "0",
+    "solution": "Subtract 3 from both sides to get \\(-4x \\le 8\\). Divide by -4 and reverse the inequality sign to obtain \\(x \\ge -2\\).",
     "t": "Revision",
     "hint": "Isolate x and be careful with the inequality sign when dividing by a negative number.",
     "solutionSteps": [
@@ -123,22 +112,18 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by -4 and reverse the inequality sign because of the negative divisor.",
         "workingOut": "x \\ge -2",
         "graphData": null
-      },
-      {
-        "explanation": "Sketch the solution on a number line with a solid circle at -2 and an arrow pointing to the right.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q1e",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(7 - 2x < 2x - 5\\), and sketch your solution on a number line.",
-    "a": "x > 3",
-    "solution": "Add \\(2x\\) to both sides to get \\(7 < 4x - 5\\). Add 5 to both sides to get \\(12 < 4x\\), then divide by 4 to obtain \\(x > 3\\). Draw an open circle at 3 and shade to the right.",
+    "question": "Solve the linear inequation \\(7 - 2x < 2x - 5\\).",
+    "options": ["\\(x < 3\\)", "\\(x > 3\\)", "\\(x > 2\\)", "\\(x \\le 3\\)"],
+    "answer": "1",
+    "solution": "Add \\(2x\\) to both sides to get \\(7 < 4x - 5\\). Add 5 to both sides to get \\(12 < 4x\\), then divide by 4 to obtain \\(x > 3\\).",
     "t": "Revision",
     "hint": "Collect all variable terms on one side and constant terms on the other side.",
     "solutionSteps": [
@@ -156,22 +141,18 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by 4 to solve for \\(x\\). Note that \\(12 < 4x\\) is equivalent to \\(4x > 12\\).",
         "workingOut": "x > 3",
         "graphData": null
-      },
-      {
-        "explanation": "Graph the solution on a number line with an open circle at 3 and an arrow pointing to the right.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q1f",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "question": "Solve the linear inequation \\(8x + 6 \\le 2x - 6\\), and sketch your solution on a number line.",
-    "a": "x \\le -2",
-    "solution": "Subtract \\(2x\\) from both sides to get \\(6x + 6 \\le -6\\). Subtract 6 from both sides to get \\(6x \\le -12\\), and divide by 6 to obtain \\(x \\le -2\\). Draw a solid circle at -2 and shade to the left.",
+    "question": "Solve the linear inequation \\(8x + 6 \\le 2x - 6\\).",
+    "options": ["\\(x \\le -2\\)", "\\(x \\ge -2\\)", "\\(x \\le 0\\)", "\\(x \\le -1\\)"],
+    "answer": "0",
+    "solution": "Subtract \\(2x\\) from both sides to get \\(6x + 6 \\le -6\\). Subtract 6 from both sides to get \\(6x \\le -12\\), and divide by 6 to obtain \\(x \\le -2\\).",
     "t": "Revision",
     "hint": "Rearrange the inequality to bring all x terms to one side.",
     "solutionSteps": [
@@ -189,21 +170,17 @@ export const Y11A_CH4E_QUESTIONS = [
         "explanation": "Divide both sides by 6 to find the solution for \\(x\\).",
         "workingOut": "x \\le -2",
         "graphData": null
-      },
-      {
-        "explanation": "Sketch a solid circle at -2 on the number line and draw an arrow pointing to the left.",
-        "workingOut": "",
-        "graphData": null
       }
     ]
   },
   {
     "id": "y11a-4e-q2a",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the double inequation \\(3 < x + 2 \\le 8\\) and write your answer using bracket interval notation.",
-    "a": "(1, 6]",
+    "options": ["\\((1, 6)\\)", "\\([1, 6]\\)", "\\((1, 6]\\)", "\\([1, 6)\\)"],
+    "answer": "2",
     "solution": "Subtract 2 from all parts of the inequality to get \\(1 < x \\le 6\\). In interval notation, this is written as \\((1, 6]\\).",
     "t": "Revision",
     "hint": "Apply the same operation to all three parts of the inequality to isolate x.",
@@ -227,11 +204,12 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q2b",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the double inequation \\(2 \\le 3x + 5 < 17\\) and write your answer using bracket interval notation.",
-    "a": "[-1, 4)",
+    "options": ["\\([-1, 4)\\)", "\\((-1, 4]\\)", "\\([-1, 4]\\)", "\\((-1, 4)\\)"],
+    "answer": "0",
     "solution": "Subtract 5 from all parts to get \\(-3 \\le 3x < 12\\). Divide all parts by 3 to get \\(-1 \\le x < 4\\). In interval notation, this is \\([-1, 4)\\).",
     "t": "Revision",
     "hint": "First subtract the constant from all parts, then divide by the coefficient of x.",
@@ -260,11 +238,12 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Solve the double inequation \\(-2 < 4 - 2x \\le 10\\) and write your answer using bracket interval notation.",
-    "a": "[-3, 3)",
+    "options": ["\\((-3, 3]\\)", "\\([-3, 3)\\)", "\\((-3, 3)\\)", "\\([-3, 3]\\)"],
+    "answer": "1",
     "solution": "Subtract 4 from all parts to get \\(-6 < -2x \\le 6\\). Divide by -2 and reverse the inequality signs to get \\(3 > x \\ge -3\\), which is \\(-3 \\le x < 3\\). In interval notation, this is \\([-3, 3)\\).",
     "t": "Revision",
     "hint": "Remember to reverse both inequality signs when dividing by a negative number.",
@@ -293,11 +272,12 @@ export const Y11A_CH4E_QUESTIONS = [
   },
   {
     "id": "y11a-4e-q3",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "For what values of \\(x\\) does the line \\(y = \\frac{1}{3}x + 2\\) lie between \\(y = -1\\) and \\(y = 3\\)?",
-    "a": "-9 < x < 3",
+    "options": ["\\(-9 < x < 3\\)", "\\(-9 \\le x \\le 3\\)", "\\(-3 < x < 3\\)", "\\(-9 < x < 9\\)"],
+    "answer": "0",
     "solution": "Set up the inequality \\(-1 < \\frac{1}{3}x + 2 < 3\\). Subtract 2 from all parts to get \\(-3 < \\frac{1}{3}x < 1\\). Multiply all parts by 3 to obtain \\(-9 < x < 3\\).",
     "t": "Revision",
     "hint": "Form a compound inequality with the line equation bounded by -1 and 3.",
