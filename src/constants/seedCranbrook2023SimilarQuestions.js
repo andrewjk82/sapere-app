@@ -617,7 +617,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "source": "Cranbrook 2023 Trial Q16(a)",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Consider the function $f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$. Show that $f(x)$ is even.",
+    "q": "Consider the function $f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x + \\pi)\\right)$. Is $f(x)$ even, odd, or neither?",
     "a": "Expanding gives $f(x) = -\\cos\\!\\left(\\dfrac{x}{2}\\right)$, and $f(-x) = -\\cos\\!\\left(-\\dfrac{x}{2}\\right) = -\\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$.",
     "options": [
       "Even: $f(-x) = -\\cos\\!\\left(-\\dfrac{x}{2}\\right) = -\\cos\\!\\left(\\dfrac{x}{2}\\right) = f(x)$",
