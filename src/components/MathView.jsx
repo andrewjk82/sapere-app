@@ -255,7 +255,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
               {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
               {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
               {graphData?.jsxGraph && (
-                graphData.jsxGraph.elements
+                (graphData.jsxGraph.elements && !graphData.jsxGraph.script)
                   ? <GeometryRenderer data={graphData.jsxGraph} />
                   : <JsxGraphDiagram data={graphData.jsxGraph} />
               )}
