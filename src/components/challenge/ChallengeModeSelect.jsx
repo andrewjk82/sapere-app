@@ -198,9 +198,6 @@ export default function ChallengeModeSelect({
 
             <div className="cms-foot">
               <div className="cms-actions">
-                <button type="button" className="cms-btn cms-btn--ghost" onClick={onCancel}>
-                  Cancel
-                </button>
                 <button
                   type="button"
                   className="cms-btn cms-btn--go"
