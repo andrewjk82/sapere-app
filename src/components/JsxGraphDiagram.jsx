@@ -494,6 +494,43 @@ const JsxGraphDiagram = ({ data, style }) => {
         });
       };
 
+      // ── Process elements array (intercept points etc.) before running script ──
+      if (Array.isArray(data.elements)) {
+        for (const el of data.elements) {
+          if (!el || el.type !== 'point') continue;
+          const coords = el.coords || [0, 0];
+          const rawName = String(el.name || '');
+          const labelAttrs = el.label || {};
+          let elColor = el.color || 'blue';
+          if (elColor === 'blue') elColor = '#3b82f6';
+          else if (elColor === 'red') elColor = '#f43f5e';
+          else if (elColor === 'green') elColor = '#10b981';
+          else if (elColor === 'slate' || elColor === 'gray') elColor = '#64748b';
+
+          const pt = board.create('point', coords, {
+            name: rawName,
+            fixed: true,
+            highlight: false,
+            showInfobox: false,
+            visible: true,
+            color: elColor,
+            strokeColor: elColor,
+            fillColor: elColor,
+            size: el.size !== undefined ? el.size : 3.5,
+            withLabel: !!rawName,
+            label: {
+              fontSize: 13,
+              fontFamily: '"Outfit", "Inter", sans-serif',
+              fontWeight: 'bold',
+              strokeColor: '#1e293b',
+              ...labelAttrs,
+              offset: labelAttrs.offset || [8, 10],
+            }
+          });
+          if (pt) pt._explicit = true;
+        }
+      }
+
       // ── Execute the user script ──
       if (typeof data.script === 'function') {
         data.script(board, JXG);
