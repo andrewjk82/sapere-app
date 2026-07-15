@@ -1392,53 +1392,96 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
             </div>
           </div>
 
-          {/* Right: primary CTA */}
+          {/* Right: unified action stack (same radius / padding language) */}
           <div style={{
-            display: 'flex', flexDirection: 'column', gap: '10px',
-            minWidth: isNarrow ? '100%' : '200px',
-            alignItems: isNarrow ? 'stretch' : 'stretch',
+            minWidth: isNarrow ? '100%' : '220px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+            padding: '8px',
+            borderRadius: '18px',
+            background: 'rgba(248, 250, 252, 0.9)',
+            border: '1px solid rgba(15, 23, 42, 0.06)',
           }}>
             <button
               onClick={onStart}
               disabled={!hasTopics || loading}
               style={{
-                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px',
-                padding: '16px 22px', borderRadius: '14px', border: 'none',
+                display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+                gap: '3px',
+                width: '100%',
+                padding: poolTotal > 0 ? '14px 18px 12px' : '16px 18px',
+                borderRadius: '12px', border: 'none',
                 background: !hasTopics || loading
                   ? '#e2e8f0'
                   : 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 55%, #6d28d9 100%)',
                 color: !hasTopics || loading ? '#94a3b8' : '#fff',
-                fontWeight: 800, fontSize: '1rem', letterSpacing: '-0.01em',
                 cursor: !hasTopics || loading ? 'not-allowed' : 'pointer',
-                boxShadow: !hasTopics || loading ? 'none' : '0 12px 28px rgba(109,40,217,0.28)',
+                boxShadow: !hasTopics || loading ? 'none' : '0 8px 20px rgba(109,40,217,0.22)',
               }}
             >
-              <Play size={18} fill="currentColor" />
-              {loading ? 'Loading…' : (poolTotal > 0 && remaining === 0 ? 'Practise again' : 'Continue practice')}
+              <span style={{
+                display: 'inline-flex', alignItems: 'center', gap: '8px',
+                fontWeight: 800, fontSize: '0.95rem', letterSpacing: '-0.01em',
+              }}>
+                <Play size={16} fill="currentColor" />
+                {loading ? 'Loading…' : (poolTotal > 0 && remaining === 0 ? 'Practise again' : 'Continue practice')}
+              </span>
+              {poolTotal > 0 && !loading && (
+                <span style={{
+                  fontSize: '0.72rem', fontWeight: 600, letterSpacing: '0.01em',
+                  color: !hasTopics ? '#94a3b8' : 'rgba(255,255,255,0.78)',
+                }}>
+                  {remaining} left in this cycle
+                </span>
+              )}
             </button>
-            {poolTotal > 0 && (
-              <div style={{ textAlign: 'center', fontSize: '0.78rem', fontWeight: 600, color: '#94a3b8' }}>
-                {remaining} left in this cycle
-              </div>
-            )}
-            {noteCount > 0 && (
+
+            {noteCount > 0 ? (
               <button
                 onClick={onOpenSecretNote}
                 style={{
                   display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
-                  padding: '11px 14px', borderRadius: '12px',
-                  background: '#fffbeb', border: '1px solid #fde68a',
-                  color: '#92400e', fontWeight: 700, fontSize: '0.84rem', cursor: 'pointer',
+                  width: '100%',
+                  padding: '12px 16px',
+                  borderRadius: '12px',
+                  border: '1px solid rgba(124, 58, 237, 0.16)',
+                  background: '#fff',
+                  color: '#5b21b6',
+                  fontWeight: 700, fontSize: '0.88rem',
+                  cursor: 'pointer',
                 }}
               >
-                <BookmarkPlus size={15} />
-                {noteCount} note{noteCount > 1 ? 's' : ''}
+                <BookmarkPlus size={15} strokeWidth={2.25} />
+                <span>{noteCount} note{noteCount > 1 ? 's' : ''}</span>
                 {dueCount > 0 && (
-                  <span style={{ background: '#f59e0b', color: '#fff', borderRadius: '999px', padding: '1px 7px', fontSize: '0.68rem', fontWeight: 900 }}>
+                  <span style={{
+                    marginLeft: '2px',
+                    background: 'rgba(124, 58, 237, 0.1)',
+                    color: '#6d28d9',
+                    borderRadius: '999px',
+                    padding: '2px 8px',
+                    fontSize: '0.7rem',
+                    fontWeight: 800,
+                  }}>
                     {dueCount} due
                   </span>
                 )}
               </button>
+            ) : (
+              <div style={{
+                display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                width: '100%',
+                padding: '12px 16px',
+                borderRadius: '12px',
+                border: '1px dashed rgba(15, 23, 42, 0.08)',
+                background: 'transparent',
+                color: '#94a3b8',
+                fontWeight: 600, fontSize: '0.82rem',
+              }}>
+                <BookmarkPlus size={14} />
+                Notes appear after mistakes
+              </div>
             )}
           </div>
         </div>
