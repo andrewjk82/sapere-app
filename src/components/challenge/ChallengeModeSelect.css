@@ -211,14 +211,19 @@
     0 0 50px var(--cms-glow);
 }
 
-.cms-card-emoji {
-  font-size: 2.1rem;
-  line-height: 1;
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+.cms-card-icon {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
   animation: cms-bob 2.4s ease-in-out infinite;
 }
-.cms-card:nth-child(2) .cms-card-emoji { animation-delay: 0.2s; }
-.cms-card:nth-child(3) .cms-card-emoji { animation-delay: 0.4s; }
+.cms-card:nth-child(2) .cms-card-icon { animation-delay: 0.2s; }
+.cms-card:nth-child(3) .cms-card-icon { animation-delay: 0.4s; }
 
 @keyframes cms-bob {
   0%, 100% { transform: translateY(0); }
@@ -340,8 +345,10 @@
     gap: 8px 12px;
     padding: 14px;
   }
-  .cms-card-emoji {
-    font-size: 1.7rem;
+  .cms-card-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
   }
   .cms-card-stats {
     flex-direction: row;

@@ -1423,6 +1423,8 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [liveSketchTip, setLiveSketchTip] = useState(null); // { inkLevel, correct, questionIndex, until, id }
   // Active Daily/Calc quiz: hold briefing; coach working-out → mid-timer hint text.
   const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint, hintText }
+  // Full-screen UI overlays (e.g. mode select) that embed their own FlameBuddy.
+  const [overlayHide, setOverlayHide] = useState(false);
   // Entrance phase: hidden → enter (pop) → ready.
   // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
   // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
@@ -1763,15 +1765,21 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         setDismissedKey('');
       }
     };
+    const onUiOverlay = (e) => {
+      // Hide floating buddy while a full-screen overlay shows its own coach.
+      setOverlayHide(Boolean(e.detail?.open));
+    };
     window.addEventListener('sapere:daily-practice-completed', onDone);
     window.addEventListener('sapere:challenge-result', onResult);
     window.addEventListener('sapere:sketch-submit-tip', onSketchSubmit);
     window.addEventListener('sapere:quiz-session', onQuizSession);
+    window.addEventListener('sapere:ui-overlay', onUiOverlay);
     return () => {
       window.removeEventListener('sapere:daily-practice-completed', onDone);
       window.removeEventListener('sapere:challenge-result', onResult);
       window.removeEventListener('sapere:sketch-submit-tip', onSketchSubmit);
       window.removeEventListener('sapere:quiz-session', onQuizSession);
+      window.removeEventListener('sapere:ui-overlay', onUiOverlay);
     };
   }, [uid, today]);
 
@@ -1952,9 +1960,9 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   if (!uid || phase === 'hidden') return null;
 
-  // Soft-hide during exam / quiz lock: stay mounted so entrance state is kept,
-  // but don't cover the quiz UI.
-  if (hidden) return null;
+  // Soft-hide during exam / quiz lock / mode-select overlay: stay mounted so
+  // entrance state is kept, but don't cover the fullscreen UI.
+  if (hidden || overlayHide) return null;
 
   const showBubble = bubbleOpen && dismissedKey !== situation.key;
   const phaseClass = phase === 'enter' ? 'fb-root--enter' : 'fb-root--ready';

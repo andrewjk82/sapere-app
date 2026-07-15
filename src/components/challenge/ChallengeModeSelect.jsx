@@ -1,11 +1,17 @@
 import { useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
-import { X, Clock, Zap, ArrowRight, Swords } from 'lucide-react';
+import { X, Clock, Zap, ArrowRight, Swords, Shield, Flame } from 'lucide-react';
 import { FlameBuddyAvatar } from '../FlameBuddy';
 import '../FlameBuddy.css';
 import { CHALLENGE_MODE_LIST, getChallengeMode } from '../../constants/challengeModes';
 import './ChallengeModeSelect.css';
+
+const ModeIcon = ({ name, size = 28 }) => {
+  if (name === 'zap') return <Zap size={size} strokeWidth={2.4} />;
+  if (name === 'flame') return <Flame size={size} strokeWidth={2.4} />;
+  return <Shield size={size} strokeWidth={2.4} />;
+};
 
 const PARTICLES = Array.from({ length: 18 }, (_, i) => ({
   id: i,
@@ -33,11 +39,24 @@ export default function ChallengeModeSelect({
     if (!open) return undefined;
     setSelected('normal');
     setHovered(null);
+    // Hide the floating corner FlameBuddy while this modal owns the coach UI.
+    try {
+      window.dispatchEvent(new CustomEvent('sapere:ui-overlay', {
+        detail: { id: 'challenge-mode-select', open: true },
+      }));
+    } catch { /* ignore */ }
     const onKey = (e) => {
       if (e.key === 'Escape') onCancel?.();
     };
     window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+      try {
+        window.dispatchEvent(new CustomEvent('sapere:ui-overlay', {
+          detail: { id: 'challenge-mode-select', open: false },
+        }));
+      } catch { /* ignore */ }
+    };
   }, [open, onCancel]);
 
   const activeId = hovered || selected;
@@ -156,7 +175,9 @@ export default function ChallengeModeSelect({
                         <Zap size={14} fill="currentColor" />
                       </span>
                     )}
-                    <span className="cms-card-emoji" aria-hidden>{mode.emoji}</span>
+                    <span className="cms-card-icon" aria-hidden>
+                      <ModeIcon name={mode.icon} />
+                    </span>
                     <span className="cms-card-label">{mode.label}</span>
                     <span className="cms-card-tag">{mode.tagline}</span>
                     <div className="cms-card-stats">
