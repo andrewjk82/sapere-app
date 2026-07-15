@@ -1082,6 +1082,265 @@ const useViewport = () => {
   };
 };
 
+// ── Animated count-up number (dashboard charts) ───────────────────────
+const useCountUp = (target, { duration = 1100, delay = 0, enabled = true } = {}) => {
+  const [value, setValue] = useState(0);
+  useEffect(() => {
+    if (!enabled) { setValue(0); return undefined; }
+    const to = Math.max(0, Number(target) || 0);
+    let raf = 0;
+    let startAt = 0;
+    const timeout = setTimeout(() => {
+      startAt = performance.now();
+      const tick = (now) => {
+        const t = Math.min(1, (now - startAt) / duration);
+        // ease-out cubic
+        const eased = 1 - (1 - t) ** 3;
+        setValue(Math.round(to * eased));
+        if (t < 1) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
+    }, delay);
+    return () => {
+      clearTimeout(timeout);
+      cancelAnimationFrame(raf);
+    };
+  }, [target, duration, delay, enabled]);
+  return value;
+};
+
+/** SVG ring that draws from 0 → pct when mounted. Gradients live in ProgressChartsPanel. */
+const AnimatedRing = ({
+  pct = 0,
+  size = 88,
+  stroke = 8,
+  track = 'rgba(167,139,250,0.14)',
+  color = 'url(#examPrepRingGrad)',
+  delay = 0,
+  children,
+}) => {
+  const r = (size - stroke) / 2;
+  const c = 2 * Math.PI * r;
+  const clamped = Math.max(0, Math.min(100, Number(pct) || 0));
+  return (
+    <div style={{ position: 'relative', width: size, height: size, flexShrink: 0 }}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ transform: 'rotate(-90deg)', display: 'block' }}>
+        <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={track} strokeWidth={stroke} />
+        <motion.circle
+          cx={size / 2}
+          cy={size / 2}
+          r={r}
+          fill="none"
+          stroke={color}
+          strokeWidth={stroke}
+          strokeLinecap="round"
+          strokeDasharray={c}
+          initial={{ strokeDashoffset: c }}
+          animate={{ strokeDashoffset: c * (1 - clamped / 100) }}
+          transition={{ duration: 1.15, delay, ease: [0.22, 1, 0.36, 1] }}
+        />
+      </svg>
+      <div style={{
+        position: 'absolute', inset: 0, display: 'flex', alignItems: 'center',
+        justifyContent: 'center', flexDirection: 'column', pointerEvents: 'none',
+      }}>
+        {children}
+      </div>
+    </div>
+  );
+};
+
+/** Horizontal bar that fills on enter. */
+const AnimatedBar = ({ pct = 0, delay = 0, color = 'linear-gradient(90deg, #a78bfa, #7c3aed)', height = 8 }) => {
+  const clamped = Math.max(0, Math.min(100, Number(pct) || 0));
+  return (
+    <div style={{
+      width: '100%', height, borderRadius: 999, background: 'rgba(167,139,250,0.12)',
+      overflow: 'hidden',
+    }}>
+      <motion.div
+        initial={{ width: 0 }}
+        animate={{ width: `${clamped}%` }}
+        transition={{ duration: 1.1, delay, ease: [0.22, 1, 0.36, 1] }}
+        style={{
+          height: '100%', borderRadius: 999,
+          background: color,
+          boxShadow: clamped > 0 ? '0 0 12px rgba(124,58,237,0.35)' : 'none',
+        }}
+      />
+    </div>
+  );
+};
+
+/** Right-rail (and mobile) animated mastery charts. */
+const ProgressChartsPanel = ({ accuracy, mastered, poolTotal, remaining, compact = false }) => {
+  const masteryPct = poolTotal > 0 ? Math.round((mastered / poolTotal) * 100) : 0;
+  const clearPct = poolTotal > 0 ? Math.round((remaining / poolTotal) * 100) : 0;
+  // Invert remaining ring: how much of the deck is still open (visual weight).
+  const accN = useCountUp(accuracy, { delay: 80 });
+  const masN = useCountUp(mastered, { delay: 180 });
+  const remN = useCountUp(remaining, { delay: 280 });
+  const totN = useCountUp(poolTotal, { delay: 180 });
+
+  const ringSize = compact ? 72 : 92;
+  const stroke = compact ? 7 : 9;
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+      style={{
+        display: 'flex',
+        flexDirection: compact ? 'row' : 'column',
+        gap: compact ? '14px' : '20px',
+        alignItems: compact ? 'stretch' : 'stretch',
+        flexWrap: compact ? 'wrap' : 'nowrap',
+        position: 'relative',
+      }}
+    >
+      {/* Shared gradients for all rings in this panel */}
+      <svg width={0} height={0} style={{ position: 'absolute', overflow: 'hidden' }} aria-hidden>
+        <defs>
+          <linearGradient id="examPrepRingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#c4b5fd" />
+            <stop offset="55%" stopColor="#8b5cf6" />
+            <stop offset="100%" stopColor="#6d28d9" />
+          </linearGradient>
+          <linearGradient id="examPrepRingMint" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#6ee7b7" />
+            <stop offset="100%" stopColor="#10b981" />
+          </linearGradient>
+          <linearGradient id="examPrepRingAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#fcd34d" />
+            <stop offset="100%" stopColor="#f59e0b" />
+          </linearGradient>
+        </defs>
+      </svg>
+      {/* Lifetime accuracy — big ring */}
+      <div style={{
+        display: 'flex', alignItems: 'center', gap: '14px',
+        padding: compact ? '12px 14px' : '4px 0 2px',
+        flex: compact ? '1 1 100%' : undefined,
+        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
+        borderRadius: compact ? '16px' : 0,
+        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
+      }}>
+        <AnimatedRing
+          pct={accuracy}
+          size={ringSize}
+          stroke={stroke}
+          color="url(#examPrepRingGrad)"
+          delay={0.05}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.85 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.35, duration: 0.4 }}
+            style={{ textAlign: 'center', lineHeight: 1 }}
+          >
+            <div style={{ fontWeight: 900, fontSize: compact ? '1.15rem' : '1.35rem', color: '#1e1b4b' }}>
+              {accN}<span style={{ fontSize: '0.72em', fontWeight: 800 }}>%</span>
+            </div>
+          </motion.div>
+        </AnimatedRing>
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
+            Lifetime accuracy
+          </div>
+          <div style={{ fontSize: '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '4px', lineHeight: 1.35 }}>
+            Across every answer so far
+          </div>
+          {!compact && (
+            <div style={{ marginTop: '10px' }}>
+              <AnimatedBar pct={accuracy} delay={0.15} color="linear-gradient(90deg, #c4b5fd, #7c3aed)" height={6} />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Mastered this deck */}
+      <div style={{
+        display: 'flex', alignItems: 'center', gap: '14px',
+        padding: compact ? '12px 14px' : '0',
+        flex: compact ? '1 1 calc(50% - 7px)' : undefined,
+        minWidth: compact ? '140px' : undefined,
+        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
+        borderRadius: compact ? '16px' : 0,
+        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
+      }}>
+        <AnimatedRing
+          pct={masteryPct}
+          size={compact ? 64 : 80}
+          stroke={compact ? 6 : 8}
+          color="url(#examPrepRingMint)"
+          delay={0.18}
+        >
+          <div style={{ textAlign: 'center', lineHeight: 1.05 }}>
+            <div style={{ fontWeight: 900, fontSize: compact ? '0.95rem' : '1.05rem', color: '#065f46' }}>
+              {poolTotal > 0 ? masN : '—'}
+            </div>
+            {poolTotal > 0 && (
+              <div style={{ fontSize: '0.58rem', fontWeight: 800, color: '#6ee7b7', marginTop: '2px' }}>
+                / {totN}
+              </div>
+            )}
+          </div>
+        </AnimatedRing>
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
+            Mastered
+          </div>
+          <div style={{ fontSize: compact ? '0.75rem' : '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '3px' }}>
+            {poolTotal > 0 ? `${masteryPct}% of deck` : 'Loading pool…'}
+          </div>
+          {poolTotal > 0 && (
+            <div style={{ marginTop: '8px' }}>
+              <AnimatedBar pct={masteryPct} delay={0.28} color="linear-gradient(90deg, #6ee7b7, #10b981)" height={5} />
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Still to clear */}
+      <div style={{
+        display: 'flex', alignItems: 'center', gap: '14px',
+        padding: compact ? '12px 14px' : '0',
+        flex: compact ? '1 1 calc(50% - 7px)' : undefined,
+        minWidth: compact ? '140px' : undefined,
+        background: compact ? 'rgba(255,255,255,0.72)' : 'transparent',
+        borderRadius: compact ? '16px' : 0,
+        border: compact ? '1px solid rgba(167,139,250,0.16)' : 'none',
+      }}>
+        <AnimatedRing
+          pct={poolTotal > 0 ? clearPct : 0}
+          size={compact ? 64 : 80}
+          stroke={compact ? 6 : 8}
+          color="url(#examPrepRingAmber)"
+          delay={0.3}
+        >
+          <div style={{ fontWeight: 900, fontSize: compact ? '1.05rem' : '1.2rem', color: '#92400e', lineHeight: 1 }}>
+            {remN}
+          </div>
+        </AnimatedRing>
+        <div style={{ minWidth: 0, flex: 1 }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7' }}>
+            Still to clear
+          </div>
+          <div style={{ fontSize: compact ? '0.75rem' : '0.8rem', fontWeight: 600, color: '#64748b', marginTop: '3px' }}>
+            {poolTotal > 0 ? 'Left in this cycle' : 'Waiting for topics'}
+          </div>
+          {poolTotal > 0 && (
+            <div style={{ marginTop: '8px' }}>
+              <AnimatedBar pct={clearPct} delay={0.4} color="linear-gradient(90deg, #fcd34d, #f59e0b)" height={5} />
+            </div>
+          )}
+        </div>
+      </div>
+    </motion.div>
+  );
+};
+
 // ── Setup dashboard ────────────────────────────────────────────────────
 // A single composed view that fills the page when stage === 'setup'. It
 // reads like a dashboard: hero (stats + CTA) on top, two-column row with
@@ -1176,24 +1435,36 @@ const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount
           </div>
         </div>
 
-        {/* Right: figures rail — driven by local progress cache */}
+        {/* Right: animated chart rail (desktop) */}
         {!isNarrow && (
-          <div style={{ borderLeft: '1px solid rgba(124,58,237,0.25)', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
-            {[
-              { n: `${accuracy}%`, small: null, l: 'Lifetime accuracy' },
-              { n: poolTotal > 0 ? `${mastered}/${poolTotal}` : '—', small: null, l: 'Mastered this deck' },
-              { n: remaining, small: null, l: 'Still to clear' },
-            ].map(({ n, small, l }) => (
-              <div key={l}>
-                <div style={{ fontWeight: 800, fontSize: '2.2rem', color: '#1e1b4b', lineHeight: 1 }}>
-                  {n}{small && <small style={{ fontSize: '1rem', color: '#8b7aa7' }}>{small}</small>}
-                </div>
-                <div style={{ fontSize: '0.72rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#8b7aa7', marginTop: '4px' }}>{l}</div>
-              </div>
-            ))}
+          <div style={{
+            borderLeft: '1px solid rgba(124,58,237,0.22)',
+            paddingLeft: '22px',
+            paddingTop: '2px',
+            paddingBottom: '4px',
+          }}>
+            <ProgressChartsPanel
+              accuracy={accuracy}
+              mastered={mastered}
+              poolTotal={poolTotal}
+              remaining={remaining}
+            />
           </div>
         )}
       </div>
+
+      {/* Mobile: same charts under the CTA */}
+      {isNarrow && (
+        <div style={{ marginBottom: '26px' }}>
+          <ProgressChartsPanel
+            accuracy={accuracy}
+            mastered={mastered}
+            poolTotal={poolTotal}
+            remaining={remaining}
+            compact
+          />
+        </div>
+      )}
 
       {/* ── TWO COLUMNS ── */}
       <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1.6fr 1fr', gap: '28px', alignItems: 'start' }}>
