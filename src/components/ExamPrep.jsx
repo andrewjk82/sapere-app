@@ -34,10 +34,10 @@ import WorkingOutCanvas from './WorkingOutCanvas';
 import LessonPlayer from './lessons/LessonPlayer';
 import { getLesson } from '../lessons/registry';
 import {
-  getStats, getTopicAnalysis,
-  startRound, finishRound,
-  hydrateExamPrepState,
-  ROUND_SIZE_CONST, EXAM_PREP_NOTE_KIND,
+  getStats, getTopicAnalysis, getProgressAnalysis,
+  startPractice, pickNextQuestion, recordAnswer, endSession,
+  hydrateExamPrepState, ensurePool,
+  EXAM_PREP_NOTE_KIND,
 } from '../services/examPrepService';
 
 // Fisher–Yates shuffle (returns a new array).
@@ -74,67 +74,7 @@ const flattenChapters = (yearKey) => {
 
 const allYearKeys = Object.keys(CURRICULUM_DATA);
 
-// ── Student-side "ready to start" card ─────────────────────────────────
-// Topic selection is the teacher's job (set in Student Detail → Challenge
-// tab). The student just sees what's been chosen and presses Start.
-const ChosenTopicsCard = ({ selection, onStart, loading }) => {
-  // Flatten all selected chapters to their {id, title} pairs so we can
-  // render them as chips for the student to see what's being tested.
-  const allChapters = useMemo(() => {
-    const list = [];
-    allYearKeys.forEach((y) => {
-      flattenChapters(y).forEach((ch) => { list.push({ ...ch, year: y }); });
-    });
-    return list;
-  }, []);
-  const selectedChips = selection.chapters
-    .map((id) => allChapters.find((c) => c.id === id))
-    .filter(Boolean);
-
-  return (
-    <div className="app-panel" style={{ padding: '28px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-        <div style={{ width: '44px', height: '44px', borderRadius: '14px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff' }}>
-          <GraduationCap size={22} />
-        </div>
-        <div>
-          <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b' }}>Ready when you are</h3>
-          <p style={{ margin: '4px 0 0', color: '#64748b', fontSize: '0.9rem', fontWeight: 600 }}>
-            {ROUND_SIZE_CONST} random questions from the topics your teacher set below.
-          </p>
-        </div>
-      </div>
-
-      {selectedChips.length === 0 ? (
-        <div style={{ padding: '20px', background: '#fffbeb', border: '1px dashed #fcd34d', borderRadius: '14px', color: '#92400e', fontWeight: 700, textAlign: 'center', fontSize: '0.9rem' }}>
-          Your teacher hasn't picked any exam topics yet. Ask them to set chapters in your profile.
-        </div>
-      ) : (
-        <div>
-          <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '8px' }}>
-            {selectedChips.length} {selectedChips.length === 1 ? 'topic' : 'topics'} set by your teacher
-          </div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-            {selectedChips.map((ch) => (
-              <span key={ch.id} style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', padding: '6px 12px', borderRadius: '999px', background: '#faf5ff', border: '1px solid #ddd6fe', color: '#5b21b6', fontWeight: 800, fontSize: '0.8rem' }}>
-                {ch.year} · {ch.title}
-              </span>
-            ))}
-          </div>
-        </div>
-      )}
-
-      <button
-        onClick={onStart}
-        disabled={selectedChips.length === 0 || loading}
-        className="app-button app-button--primary"
-        style={{ padding: '18px', borderRadius: '20px', fontSize: '1rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '10px', background: (selectedChips.length === 0 || loading) ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: (selectedChips.length === 0 || loading) ? 'not-allowed' : 'pointer' }}
-      >
-        <Play size={18} /> {loading ? 'Loading questions…' : 'Start round'}
-      </button>
-    </div>
-  );
-};
+// ChosenTopicsCard removed — setup dashboard owns the start CTA.
 
 // ── Topic-analysis card (cumulative weak-area breakdown) ────────────────
 const TopicAnalysisCard = ({ analysis }) => (
@@ -144,7 +84,7 @@ const TopicAnalysisCard = ({ analysis }) => (
       <h3 style={{ margin: 0, fontWeight: 900, color: '#1e1b4b', fontSize: '1rem' }}>Where to focus</h3>
     </div>
     {analysis.length === 0 ? (
-      <p style={{ margin: 0, color: '#94a3b8', fontWeight: 700, fontSize: '0.9rem' }}>Finish a round to see your topic breakdown.</p>
+      <p style={{ margin: 0, color: '#94a3b8', fontWeight: 700, fontSize: '0.9rem' }}>Practise a few questions to see your topic breakdown.</p>
     ) : (
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         {analysis.slice(0, 8).map((t) => {
@@ -166,29 +106,46 @@ const TopicAnalysisCard = ({ analysis }) => (
   </div>
 );
 
-// ── Quiz view (one question at a time, self-contained) ─────────────────
-const QuizView = ({ questions, onFinish, onReport, user }) => {
-  const [idx, setIdx] = useState(0);
-  const [answers, setAnswers] = useState([]); // [{userAnswer, correct}]
+// ── Quiz view — endless practice (one live question; quit anytime) ─────
+const QuizView = ({
+  question: q,
+  sessionNum = 1,
+  mastery = { mastered: 0, total: 0, remaining: 0 },
+  onAnswered,
+  onRequestNext,
+  onQuit,
+  onReport,
+  user,
+}) => {
   const [draft, setDraft] = useState(null);
   const [showHint, setShowHint] = useState(false);
   const [showFeedback, setShowFeedback] = useState(false);
+  const [lastRes, setLastRes] = useState(null); // { userAnswer, correct, pending, ... }
   const [focusedBlank, setFocusedBlank] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(null);
   const [showCanvas, setShowCanvas] = useState(true);
   const [isGraphPaper, setIsGraphPaper] = useState(false);
-  const [sketchSnapshots, setSketchSnapshots] = useState({}); // { [questionId]: dataURL }
+  const [advancing, setAdvancing] = useState(false);
+  const [showLesson, setShowLesson] = useState(false);
+  const [viewW, setViewW] = useState(() => (typeof window !== 'undefined' ? window.innerWidth : 1024));
   const canvasRef = useRef(null);
   const mathInputRef = useRef(null);
+  // Scroll container (wide left panel) + action button — after feedback, Next
+  // can sit below the fold; sketch stays editable so we scroll/pin the CTA instead.
+  const leftScrollRef = useRef(null);
+  const actionBtnRef = useRef(null);
+  const showFeedbackRef = useRef(showFeedback);
 
-  const q = questions[idx];
-  const total = questions.length;
   const needsTeacher = q ? (q.type === 'teacher_review' || q.type === 'graph_sketch' || q.requiresManualGrading === true) : false;
-
-  // 현재 문제 토픽에 강의(authored lesson)가 있으면 "강의 보기" 링크를 노출
   const lesson = getLesson(q?.topicId);
-  const [showLesson, setShowLesson] = useState(false);
+  const isWide = viewW >= 860;
+
+  useEffect(() => {
+    const onResize = () => setViewW(window.innerWidth);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
 
   useEffect(() => {
     if (!q) return;
@@ -197,19 +154,41 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
     else setDraft('');
     setShowHint(false);
     setShowFeedback(false);
+    setLastRes(null);
     setFocusedBlank(0);
+    setAdvancing(false);
     const limit = q.timeLimit || 120;
     setTimeLeft(limit);
     setQuestionStartTime(Date.now());
-  }, [idx, q?.id]);
+  }, [q?.id]);
 
-  // Countdown timer — ref tracks whether feedback is showing to prevent
-  // stale-closure double-fire after the timer hits zero.
-  const showFeedbackRef = useRef(showFeedback);
   useEffect(() => { showFeedbackRef.current = showFeedback; }, [showFeedback]);
 
+  // After answer reveal, bring feedback + Next into view. Sketch board stays
+  // unlocked so students can correct work — only scroll/pin the CTA, not the pad.
   useEffect(() => {
-    if (!questionStartTime || showFeedback) return;
+    if (!showFeedback) return;
+    let cancelled = false;
+    let timeoutId = null;
+    const rafId = requestAnimationFrame(() => {
+      timeoutId = setTimeout(() => {
+        if (cancelled) return;
+        const left = leftScrollRef.current;
+        if (left && left.scrollHeight > left.clientHeight) {
+          left.scrollTo({ top: left.scrollHeight, behavior: 'smooth' });
+        }
+        actionBtnRef.current?.scrollIntoView?.({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+      }, 80);
+    });
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(rafId);
+      if (timeoutId != null) clearTimeout(timeoutId);
+    };
+  }, [showFeedback, q?.id]);
+
+  useEffect(() => {
+    if (!q || !questionStartTime || showFeedback) return;
     const limit = (q?.timeLimit || 120) * 1000;
     const endTime = questionStartTime + limit;
     const timer = setInterval(() => {
@@ -218,31 +197,34 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
       setTimeLeft(remaining);
       if (remaining <= 0) {
         clearInterval(timer);
-        // Auto-submit with empty answer so the session advances
         if (!showFeedbackRef.current) {
-          setAnswers((prev) => {
-            const userAnswer = '';
-            return [...prev, { userAnswer, correct: false, questionId: q?.id, topicId: q?.topicId, topicTitle: q?.topicTitle, timedOut: true }];
-          });
+          const timed = {
+            userAnswer: '',
+            correct: false,
+            questionId: q?.id,
+            topicId: q?.topicId,
+            topicTitle: q?.topicTitle,
+            timedOut: true,
+            pending: false,
+          };
+          setLastRes(timed);
           setShowFeedback(true);
+          onAnswered?.(timed, q);
         }
       }
     }, 200);
     return () => clearInterval(timer);
-  }, [questionStartTime, showFeedback, q?.timeLimit, q?.id]);
+  }, [questionStartTime, showFeedback, q?.timeLimit, q?.id, onAnswered, q]);
 
   if (!q) return null;
 
   const submit = async () => {
+    if (showFeedbackRef.current || showFeedback) return;
     const userAnswer = draft;
     const { correct } = needsTeacher ? { correct: null } : gradeQuestion(q, userAnswer);
 
     // 손글씨 캡처는 setShowFeedback(리렌더로 캔버스 언마운트 가능)보다 먼저.
-    // WorkingOutCanvas는 exportPageImages/exportImage만 제공 (exportImageSync 없음
-    // — 예전 코드가 항상 null을 저장해 선생님 화면에 blank canvas로 보이던 버그).
     let answerImages = [];
-    // hasContent()가 있으면 실제 필기가 있을 때만 캡처 (빈 캔버스의 빈 PNG 방지).
-    // graph_sketch는 그림 자체가 답이므로 항상 캡처.
     const hasInk = canvasRef.current?.hasContent ? canvasRef.current.hasContent() : true;
     const alwaysCapture = q?.type === 'graph_sketch';
     if (needsTeacher && user?.uid && (hasInk || alwaysCapture)) {
@@ -258,9 +240,17 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
       answerImages = answerImages.filter((u) => u && u.length > 100);
     }
 
-    const next = [...answers, { userAnswer, correct, questionId: q.id, topicId: q.topicId, topicTitle: q.topicTitle, pending: needsTeacher }];
-    setAnswers(next);
+    const res = {
+      userAnswer,
+      correct,
+      questionId: q.id,
+      topicId: q.topicId,
+      topicTitle: q.topicTitle,
+      pending: needsTeacher,
+    };
+    setLastRes(res);
     setShowFeedback(true);
+    onAnswered?.(res, q);
 
     if (needsTeacher && user?.uid) {
       const canvasDataUrl = answerImages[0] || null;
@@ -301,20 +291,15 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
   };
 
   const advance = async () => {
-    // Save sketch snapshot for the current question, then clear canvas
+    if (advancing) return;
+    setAdvancing(true);
     if (canvasRef.current) {
-      try {
-        const dataURL = await canvasRef.current.exportImage({ force: false });
-        if (dataURL && q?.id) {
-          setSketchSnapshots(prev => ({ ...prev, [q.id]: dataURL }));
-        }
-      } catch (e) { /* ignore */ }
-      canvasRef.current.clear();
+      try { canvasRef.current.clear?.(); } catch { /* ignore */ }
     }
-    if (idx + 1 >= total) {
-      onFinish(answers);
-    } else {
-      setIdx(idx + 1);
+    try {
+      await onRequestNext?.();
+    } finally {
+      setAdvancing(false);
     }
   };
 
@@ -325,24 +310,33 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
     return String(draft || '').trim() !== '';
   })();
 
-  const lastRes = showFeedback ? answers[answers.length - 1] : null;
   const correctMc = q.type === 'multiple_choice' ? Number(q.answer) : null;
 
-  const [viewW, setViewW] = useState(() => (typeof window !== 'undefined' ? window.innerWidth : 1024));
-  useEffect(() => {
-    const onResize = () => setViewW(window.innerWidth);
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
-  const isWide = viewW >= 860;
+  const masteryPct = mastery.total > 0 ? Math.round((mastery.mastered / mastery.total) * 100) : 0;
 
   const header = (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
       <div>
-        <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Exam Prep</div>
-        <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {idx + 1} of {total}</div>
+        <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Exam Prep · endless practice</div>
+        <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>
+          Question {sessionNum}
+          <span style={{ fontSize: '0.78rem', fontWeight: 700, color: '#94a3b8', marginLeft: '8px' }}>
+            · {mastery.mastered}/{mastery.total} mastered
+          </span>
+        </div>
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+        <button
+          onClick={() => onQuit?.()}
+          title="Stop practice and save progress"
+          style={{
+            height: '36px', padding: '0 12px', borderRadius: '12px', border: '1px solid #e2e8f0',
+            background: '#fff', color: '#475569', fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer',
+            display: 'inline-flex', alignItems: 'center', gap: '6px',
+          }}
+        >
+          <X size={14} /> Quit
+        </button>
         <button
           onClick={async () => {
             let sketchDataUrl = null;
@@ -375,9 +369,9 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
 
   const progressBar = (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-      {/* Question progress */}
+      {/* Deck mastery (correct-once questions / full pool) */}
       <div style={{ width: '100%', height: '3px', background: '#e2e8f0', borderRadius: '999px', overflow: 'hidden' }}>
-        <div style={{ height: '100%', width: `${((idx + (showFeedback ? 1 : 0)) / total) * 100}%`, background: '#a78bfa', borderRadius: '999px', transition: 'width 0.3s' }} />
+        <div style={{ height: '100%', width: `${masteryPct}%`, background: '#a78bfa', borderRadius: '999px', transition: 'width 0.3s' }} />
       </div>
       {/* Timer bar */}
       <div style={{ width: '100%', height: '5px', background: '#e2e8f0', borderRadius: '999px', overflow: 'visible' }}>
@@ -657,13 +651,39 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
   );
 
   const actionButton = !showFeedback ? (
-    <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
+    <button onClick={submit} disabled={!canSubmit} className="app-button app-button--primary" style={{ width: '100%', padding: '16px', borderRadius: '18px', background: !canSubmit ? '#cbd5e1' : 'linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%)', cursor: !canSubmit ? 'not-allowed' : 'pointer' }}>
       Submit Answer
     </button>
   ) : (
-    <button onClick={advance} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px' }}>
-      {idx + 1 >= total ? 'Finish round' : 'Next question'} <ArrowRight size={18} />
+    <button onClick={advance} disabled={advancing} className="app-button app-button--primary" style={{ width: '100%', padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '10px', opacity: advancing ? 0.7 : 1 }}>
+      {advancing ? 'Loading…' : 'Next question'} <ArrowRight size={18} />
     </button>
+  );
+
+  // CTA row: wide layout pins it under the left scroll pane so Next is always
+  // reachable without locking the sketch pad. Narrow uses sticky so page scroll
+  // still works when the solution is long.
+  const actionRow = (
+    <div
+      ref={actionBtnRef}
+      style={{
+        flexShrink: 0,
+        paddingTop: '12px',
+        marginTop: '4px',
+        borderTop: '1px solid #f1f5f9',
+        background: 'linear-gradient(180deg, rgba(255,255,255,0.92) 0%, #fff 40%)',
+        // Narrow / page-scroll path: keep CTA reachable while reading solution
+        // or scrolling the sketch area below.
+        ...(isWide && showCanvas ? {} : {
+          position: 'sticky',
+          bottom: 8,
+          zIndex: 6,
+          paddingBottom: 4,
+        }),
+      }}
+    >
+      {actionButton}
+    </div>
   );
 
   // Wide layout: question on left, canvas on right — both fill viewport height
@@ -674,25 +694,42 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
         gridTemplateColumns: '1fr 1fr',
         gap: '16px',
         height: 'calc(100vh - 80px)',
+        maxHeight: 'calc(100dvh - 80px)',
         alignItems: 'stretch',
+        minHeight: 0,
       }}>
-        {/* Left: question + answer + button */}
+        {/* Left: scrollable Q/A + pinned Submit/Next (sketch stays editable on right) */}
         <div className="app-panel" style={{
           padding: '28px', borderRadius: '28px',
-          display: 'flex', flexDirection: 'column', gap: '16px',
-          minWidth: 0, overflow: 'auto',
+          display: 'flex', flexDirection: 'column', gap: '0',
+          minWidth: 0, minHeight: 0, overflow: 'hidden',
         }}>
-          {header}
-          {progressBar}
-          {questionCard}
-          {answerArea}
-          {feedbackPanel}
-          <div style={{ flex: 1 }} />
-          {actionButton}
+          <div
+            ref={leftScrollRef}
+            style={{
+              flex: 1,
+              minHeight: 0,
+              overflowY: 'auto',
+              overflowX: 'hidden',
+              WebkitOverflowScrolling: 'touch',
+              overscrollBehavior: 'contain',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px',
+              paddingRight: '2px',
+            }}
+          >
+            {header}
+            {progressBar}
+            {questionCard}
+            {answerArea}
+            {feedbackPanel}
+          </div>
+          {actionRow}
         </div>
-        {/* Right: canvas fills full height */}
-        <div style={{ minWidth: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+        {/* Right: canvas fills full height — always unlocked for practice/correction */}
+        <div style={{ minWidth: 0, minHeight: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', flexShrink: 0 }}>
             <button
               onClick={() => setIsGraphPaper(v => !v)}
               title={isGraphPaper ? 'Switch to lined paper' : 'Switch to grid paper'}
@@ -708,7 +745,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
               {isGraphPaper ? 'Lined' : 'Grid'}
             </button>
           </div>
-          <div style={{ flex: 1, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+          <div style={{ flex: 1, minHeight: 0, borderRadius: '20px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
             <WorkingOutCanvas ref={canvasRef} questionType="short_answer" isSubmitted={false} isGraph={isGraphPaper} />
           </div>
         </div>
@@ -716,7 +753,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
     );
   }
 
-  // Narrow layout: stacked
+  // Narrow layout: stacked — sticky CTA so Next stays reachable over long solutions
   return (
     <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
       {header}
@@ -724,7 +761,7 @@ const QuizView = ({ questions, onFinish, onReport, user }) => {
       {questionCard}
       {answerArea}
       {feedbackPanel}
-      {actionButton}
+      {actionRow}
       <AnimatePresence>
         {showCanvas && (
           <motion.div
@@ -955,15 +992,29 @@ const ReviewView = ({ questions, answers, onDone }) => {
   );
 };
 
-// ── Result screen ──────────────────────────────────────────────────────
-const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis }) => (
+// ── Result screen (session end / quit) ─────────────────────────────────
+const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis, progressSummary }) => {
+  const sessionEmpty = !result?.total;
+  return (
   <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
     <div className="app-panel" style={{ padding: '28px', borderRadius: '28px', textAlign: 'center', background: 'linear-gradient(135deg, #ede9fe, #fff)' }}>
       <div style={{ width: '72px', height: '72px', borderRadius: '50%', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'grid', placeItems: 'center', color: '#fff', margin: '0 auto 14px' }}>
         <Trophy size={34} />
       </div>
-      <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>Round complete</div>
-      <div style={{ fontSize: '2.4rem', fontWeight: 900, color: '#1e1b4b', margin: '6px 0' }}>{result.correct} / {result.total}</div>
+      <div style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+        {sessionEmpty ? 'Practice paused' : 'Session complete'}
+      </div>
+      <div style={{ fontSize: '2.4rem', fontWeight: 900, color: '#1e1b4b', margin: '6px 0' }}>
+        {sessionEmpty ? '—' : `${result.correct} / ${result.total}`}
+      </div>
+      <div style={{ fontSize: '0.88rem', fontWeight: 700, color: '#64748b' }}>
+        {sessionEmpty ? 'No answers this time — progress is still saved.' : 'correct this session'}
+      </div>
+      {progressSummary?.total > 0 && (
+        <div style={{ marginTop: '14px', fontSize: '0.85rem', fontWeight: 800, color: '#5b21b6' }}>
+          Deck: {progressSummary.mastered}/{progressSummary.total} mastered · {progressSummary.accuracy}% lifetime accuracy
+        </div>
+      )}
       {result.addedToNote > 0 && (
         <div style={{ marginTop: '10px', display: 'inline-flex', alignItems: 'center', gap: '6px', background: '#fffbeb', border: '1px solid #fde68a', color: '#92400e', padding: '6px 12px', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 800 }}>
           <BookmarkPlus size={14} /> {result.addedToNote} added to Secret Note
@@ -971,43 +1022,48 @@ const ResultPanel = ({ result, onRestart, onExit, onReview, cumulativeAnalysis }
       )}
     </div>
 
-    <div className="app-panel" style={{ padding: '24px', borderRadius: '24px' }}>
-      <h4 style={{ margin: '0 0 14px', color: '#1e1b4b', fontWeight: 900, fontSize: '0.95rem' }}>This round by topic</h4>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        {Object.entries(result.perTopic || {}).map(([id, t]) => {
-          const pct = t.attempted > 0 ? Math.round((t.correct / t.attempted) * 100) : 0;
-          const color = pct < 50 ? '#ef4444' : pct < 75 ? '#f59e0b' : '#10b981';
-          return (
-            <div key={id}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', marginBottom: '4px' }}>
-                <span style={{ fontWeight: 700, color: '#1e293b' }}>{t.title}</span>
-                <span style={{ fontWeight: 800, color }}>{t.correct}/{t.attempted} · {pct}%</span>
+    {!sessionEmpty && Object.keys(result.perTopic || {}).length > 0 && (
+      <div className="app-panel" style={{ padding: '24px', borderRadius: '24px' }}>
+        <h4 style={{ margin: '0 0 14px', color: '#1e1b4b', fontWeight: 900, fontSize: '0.95rem' }}>This session by topic</h4>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          {Object.entries(result.perTopic || {}).map(([id, t]) => {
+            const pct = t.attempted > 0 ? Math.round((t.correct / t.attempted) * 100) : 0;
+            const color = pct < 50 ? '#ef4444' : pct < 75 ? '#f59e0b' : '#10b981';
+            return (
+              <div key={id}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.85rem', marginBottom: '4px' }}>
+                  <span style={{ fontWeight: 700, color: '#1e293b' }}>{t.title}</span>
+                  <span style={{ fontWeight: 800, color }}>{t.correct}/{t.attempted} · {pct}%</span>
+                </div>
+                <div style={{ height: '6px', background: '#f1f5f9', borderRadius: '999px', overflow: 'hidden' }}>
+                  <div style={{ height: '100%', width: `${pct}%`, background: color }} />
+                </div>
               </div>
-              <div style={{ height: '6px', background: '#f1f5f9', borderRadius: '999px', overflow: 'hidden' }}>
-                <div style={{ height: '100%', width: `${pct}%`, background: color }} />
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    )}
 
     <TopicAnalysisCard analysis={cumulativeAnalysis} />
 
-    <button onClick={onReview} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)', color: '#166534', fontWeight: 800, border: '1px solid #bbf7d0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px', width: '100%' }}>
-      <Lightbulb size={16} /> Review step-by-step solutions
-    </button>
+    {!sessionEmpty && (
+      <button onClick={onReview} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #f0fdf4, #dcfce7)', color: '#166534', fontWeight: 800, border: '1px solid #bbf7d0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px', width: '100%' }}>
+        <Lightbulb size={16} /> Review step-by-step solutions
+      </button>
+    )}
 
     <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px' }}>
       <button onClick={onExit} className="app-button" style={{ padding: '16px', borderRadius: '18px', background: '#fff', color: '#475569', fontWeight: 800, border: '1px solid #e2e8f0', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
         <ArrowLeft size={16} /> Back to setup
       </button>
       <button onClick={onRestart} className="app-button app-button--primary" style={{ padding: '16px', borderRadius: '18px', background: 'linear-gradient(135deg, #a78bfa, #7c3aed)', display: 'inline-flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
-        <RotateCcw size={16} /> Start a new round
+        <Play size={16} /> Continue practice
       </button>
     </div>
   </div>
-);
+  );
+};
 
 // Small viewport hook — re-renders on width breakpoints so the dashboard
 // can swap layouts (column counts, padding, stacking) responsively.
@@ -1030,9 +1086,14 @@ const useViewport = () => {
 // A single composed view that fills the page when stage === 'setup'. It
 // reads like a dashboard: hero (stats + CTA) on top, two-column row with
 // topics & secret-note side by side, and the topic analysis chart below.
-const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
+const SetupDashboard = ({ stats, selection, analysis, progressSummary, noteCount, dueCount, loading, onStart, onOpenSecretNote }) => {
   const { isNarrow } = useViewport();
-  const accuracy = stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0;
+  const accuracy = progressSummary?.accuracy
+    ?? (stats.attempted > 0 ? Math.round((stats.correct / stats.attempted) * 100) : 0);
+  const mastered = progressSummary?.mastered ?? 0;
+  const poolTotal = progressSummary?.total ?? 0;
+  const remaining = progressSummary?.remaining ?? Math.max(0, poolTotal - mastered);
+  const chapterFocus = (progressSummary?.chapters || []).filter((c) => c.total > 0).slice(0, 6);
   const allChapters = useMemo(() => {
     const list = [];
     allYearKeys.forEach((y) => flattenChapters(y).forEach((ch) => list.push({ ...ch, year: y })));
@@ -1042,7 +1103,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
   const hasTopics = selectedChips.length > 0;
   const today = new Date().toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
 
-  // Weakest topics for focus grid
+  // Weakest topics for focus grid (lifetime topic accuracy)
   const focusTopics = analysis.filter(t => t.attempted >= 1).slice(0, 4);
   const worstTopic = analysis.find(t => t.attempted >= 2 && t.pct < 70);
 
@@ -1061,7 +1122,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
         </div>
         <div style={{ textAlign: 'right', fontSize: '0.76rem', color: '#8b7aa7', fontWeight: 700, lineHeight: 1.6 }}>
           <div>{today}</div>
-          <div>{stats.sessions} {stats.sessions === 1 ? 'session' : 'sessions'} completed</div>
+          <div>{stats.sessions} {stats.sessions === 1 ? 'session' : 'sessions'} · quit anytime</div>
         </div>
       </div>
 
@@ -1072,7 +1133,7 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
           <p style={{ fontSize: '1.1rem', lineHeight: 1.6, color: '#3b2b68', fontWeight: 500, margin: '0 0 6px' }}>
             <b style={{ color: '#1e1b4b' }}>Practise smarter, not harder.</b>{' '}
             {hasTopics
-              ? `Your teacher has selected ${selectedChips.length} topic${selectedChips.length > 1 ? 's' : ''} for you to master. Each round gives you ${ROUND_SIZE_CONST} carefully chosen questions.`
+              ? `Random questions from every chapter your teacher selected. Correct once and it won't come back until you've cleared the whole deck — then it reshuffles so you can start again.`
               : 'Your teacher will set your exam topics. Once they\'re ready, start practising with targeted questions.'}
           </p>
           <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
@@ -1090,10 +1151,12 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
               }}
             >
               <Play size={16} fill="currentColor" />
-              {loading ? 'Loading…' : 'Start round'}
-              <span style={{ opacity: 0.6, fontWeight: 600, paddingLeft: '10px', marginLeft: '2px', borderLeft: '1px solid rgba(255,255,255,0.25)', fontSize: '0.82rem' }}>
-                {ROUND_SIZE_CONST} Qs
-              </span>
+              {loading ? 'Loading…' : 'Start practice'}
+              {poolTotal > 0 && (
+                <span style={{ opacity: 0.6, fontWeight: 600, paddingLeft: '10px', marginLeft: '2px', borderLeft: '1px solid rgba(255,255,255,0.25)', fontSize: '0.82rem' }}>
+                  {remaining} left
+                </span>
+              )}
             </button>
             {noteCount > 0 && (
               <button
@@ -1113,13 +1176,13 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
           </div>
         </div>
 
-        {/* Right: figures rail */}
+        {/* Right: figures rail — driven by local progress cache */}
         {!isNarrow && (
           <div style={{ borderLeft: '1px solid rgba(124,58,237,0.25)', paddingLeft: '24px', display: 'flex', flexDirection: 'column', gap: '18px' }}>
             {[
-              { n: `${accuracy}%`, small: null, l: 'Accuracy' },
-              { n: stats.attempted, small: null, l: 'Questions attempted' },
-              { n: stats.sessions, small: null, l: 'Rounds completed' },
+              { n: `${accuracy}%`, small: null, l: 'Lifetime accuracy' },
+              { n: poolTotal > 0 ? `${mastered}/${poolTotal}` : '—', small: null, l: 'Mastered this deck' },
+              { n: remaining, small: null, l: 'Still to clear' },
             ].map(({ n, small, l }) => (
               <div key={l}>
                 <div style={{ fontWeight: 800, fontSize: '2.2rem', color: '#1e1b4b', lineHeight: 1 }}>
@@ -1135,51 +1198,63 @@ const SetupDashboard = ({ stats, selection, analysis, noteCount, dueCount, loadi
       {/* ── TWO COLUMNS ── */}
       <div style={{ display: 'grid', gridTemplateColumns: isNarrow ? '1fr' : '1.6fr 1fr', gap: '28px', alignItems: 'start' }}>
 
-        {/* LEFT: Focus grid */}
+        {/* LEFT: Chapter mastery from local cache + topic focus */}
         <div>
           <div style={{ fontSize: '0.74rem', fontWeight: 800, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#7c3aed', paddingBottom: '8px', borderBottom: '1px solid rgba(124,58,237,0.2)', marginBottom: '16px' }}>
-            Where to focus
+            Chapters · mastery
           </div>
-          {focusTopics.length === 0 ? (
+          {chapterFocus.length === 0 && focusTopics.length === 0 ? (
             <div style={{ padding: '32px', background: 'rgba(255,255,255,0.7)', border: '1px solid rgba(167,139,250,0.18)', borderRadius: '16px', textAlign: 'center', color: '#8b7aa7', fontWeight: 700, fontSize: '0.9rem' }}>
-              Complete a round to see your topic breakdown.
+              Start practising to build your local progress map.
             </div>
           ) : (
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
-              {focusTopics.map((t) => {
-                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
-                return (
-                  <div key={t.topicId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
-                    <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
-                      <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{t.title}</div>
-                      <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{t.pct}%</div>
-                    </div>
-                    <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>{t.correct}/{t.attempted} correct</div>
-                    <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
-                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
-                    </div>
+            <>
+              {chapterFocus.length > 0 && (
+                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px', marginBottom: focusTopics.length ? '16px' : 0 }}>
+                  {chapterFocus.map((c) => {
+                    const color = c.pct < 50 ? '#ef4444' : c.pct < 75 ? '#f59e0b' : '#10b981';
+                    return (
+                      <div key={c.chapterId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
+                        <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
+                          <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{c.title}</div>
+                          <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{c.pct}%</div>
+                        </div>
+                        <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>
+                          {c.mastered}/{c.total} mastered{c.wrong > 0 ? ` · ${c.wrong} wrong` : ''}
+                        </div>
+                        <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
+                          <div style={{ height: '100%', width: `${c.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
+              {focusTopics.length > 0 && (
+                <>
+                  <div style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#8b7aa7', marginBottom: '10px' }}>
+                    Lifetime topic accuracy
                   </div>
-                );
-              })}
-            </div>
-          )}
-
-          {/* Extended analysis (> 4 topics) */}
-          {analysis.length > 4 && (
-            <div style={{ marginTop: '12px' }}>
-              {analysis.slice(4, 10).map((t) => {
-                const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
-                return (
-                  <div key={t.topicId} style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '10px 0', borderBottom: '1px solid rgba(167,139,250,0.1)' }}>
-                    <div style={{ flex: 1, fontSize: '0.88rem', fontWeight: 600, color: '#1e1b4b', minWidth: 0 }}>{t.title}</div>
-                    <div style={{ width: '90px', height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden', flexShrink: 0 }}>
-                      <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color }} />
-                    </div>
-                    <div style={{ fontWeight: 800, fontSize: '0.82rem', color, width: '36px', textAlign: 'right', flexShrink: 0 }}>{t.pct}%</div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                    {focusTopics.map((t) => {
+                      const color = t.pct < 50 ? '#ef4444' : t.pct < 75 ? '#f59e0b' : '#10b981';
+                      return (
+                        <div key={t.topicId} style={{ padding: '16px', borderRadius: '16px', border: '1px solid rgba(167,139,250,0.18)', background: 'rgba(255,255,255,0.7)' }}>
+                          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: '4px' }}>
+                            <div style={{ fontWeight: 800, fontSize: '0.88rem', color: '#1e1b4b', flex: 1, marginRight: '8px', lineHeight: 1.3 }}>{t.title}</div>
+                            <div style={{ fontWeight: 900, fontSize: '1.4rem', color, flexShrink: 0 }}>{t.pct}%</div>
+                          </div>
+                          <div style={{ fontSize: '0.7rem', color: '#8b7aa7', fontWeight: 600, marginBottom: '10px' }}>{t.correct}/{t.attempted} correct</div>
+                          <div style={{ height: '5px', borderRadius: '999px', background: 'rgba(167,139,250,0.14)', overflow: 'hidden' }}>
+                            <div style={{ height: '100%', width: `${t.pct}%`, borderRadius: '999px', background: color, transition: 'width 0.4s' }} />
+                          </div>
+                        </div>
+                      );
+                    })}
                   </div>
-                );
-              })}
-            </div>
+                </>
+              )}
+            </>
           )}
         </div>
 
@@ -1292,11 +1367,20 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   }), [profile?.examPrepSelection]);
   const [stage, setStage] = useState('setup'); // 'setup' | 'quiz' | 'result' | 'review' | 'secretNote'
   const [lastAnswers, setLastAnswers] = useState([]);
+  const [sessionQuestions, setSessionQuestions] = useState([]); // questions answered this session (for review)
+  const [pool, setPool] = useState([]);
+  const [currentQuestion, setCurrentQuestion] = useState(null);
+  const [sessionNum, setSessionNum] = useState(1);
+  const [mastery, setMastery] = useState({ mastered: 0, total: 0, remaining: 0 });
+  const [progressSummary, setProgressSummary] = useState(null);
+  const sessionAnswersRef = useRef([]); // [{userAnswer, correct, ...}]
+  const sessionQuestionsRef = useRef([]); // Question[] answered this session
+  const poolRef = useRef([]);
+  const currentQuestionRef = useRef(null);
 
   useEffect(() => {
     onExamActiveChange?.(stage === 'quiz');
   }, [stage, onExamActiveChange]);
-  const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [analysis, setAnalysis] = useState(() => uid ? getTopicAnalysis(uid) : []);
@@ -1308,13 +1392,49 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
   const [reportMessage, setReportMessage] = useState('');
   const [submittingReport, setSubmittingReport] = useState(false);
 
-  useEffect(() => {
+  const refreshLocalStats = (poolOverride) => {
     if (!uid) return;
     setAnalysis(getTopicAnalysis(uid));
     setStats(getStats(uid));
+    const p = poolOverride || poolRef.current || [];
+    const summary = getProgressAnalysis(uid, p);
+    setProgressSummary(summary);
+    setMastery({
+      mastered: summary.mastered,
+      total: summary.total,
+      remaining: summary.remaining,
+    });
     setNoteCount(getNoteCount(EXAM_PREP_NOTE_KIND, uid));
     setDueCount(getDueCount(EXAM_PREP_NOTE_KIND, uid));
+  };
+
+  useEffect(() => {
+    if (!uid) return;
+    refreshLocalStats();
   }, [uid, stage]);
+
+  // Prefetch pool on setup so mastery X/Y is accurate before Start.
+  useEffect(() => {
+    if (!uid || !selection.chapters?.length) return;
+    let cancelled = false;
+    (async () => {
+      try {
+        const p = await ensurePool(uid, selection);
+        if (cancelled) return;
+        poolRef.current = p;
+        setPool(p);
+        setProgressSummary(getProgressAnalysis(uid, p));
+        setMastery({
+          mastered: getProgressAnalysis(uid, p).mastered,
+          total: p.length,
+          remaining: getProgressAnalysis(uid, p).remaining,
+        });
+      } catch (e) {
+        console.warn('[ExamPrep] pool prefetch failed:', e?.message || e);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [uid, selection.chapters?.join(','), selection.examPaperOnly]);
 
   // On login/device change, pull server-saved stats + history so progress
   // follows the student across devices, then refresh the on-screen values.
@@ -1324,8 +1444,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     (async () => {
       const hydrated = await hydrateExamPrepState(uid);
       if (hydrated && !cancelled) {
-        setAnalysis(getTopicAnalysis(uid));
-        setStats(getStats(uid));
+        refreshLocalStats();
       }
     })();
     return () => { cancelled = true; };
@@ -1392,34 +1511,106 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
     if (!uid) return;
     setLoading(true);
     try {
-      const { questions: q } = await startRound(uid, selection);
-      if (!q || q.length === 0) {
+      const r = await startPractice(uid, selection);
+      if (!r.question) {
         showToast('No questions found for the chosen topics yet. Ask your teacher to add questions.', 'warning', 6000);
         return;
       }
-      setQuestions(q.map(shuffleMcOptions));
+      if (r.resetCycle) {
+        showToast('Deck complete — all questions reset. Practise again from the start!', 'success', 5000);
+      }
+      poolRef.current = r.pool || [];
+      setPool(r.pool || []);
+      const first = shuffleMcOptions(r.question);
+      currentQuestionRef.current = first;
+      setCurrentQuestion(first);
+      sessionAnswersRef.current = [];
+      sessionQuestionsRef.current = [];
+      setSessionQuestions([]);
+      setLastAnswers([]);
+      setSessionNum(1);
+      setMastery({
+        mastered: r.mastered ?? 0,
+        total: r.total ?? (r.pool?.length || 0),
+        remaining: r.remaining ?? 0,
+      });
+      setProgressSummary(getProgressAnalysis(uid, r.pool || []));
       setStage('quiz');
     } catch (err) {
-      console.error('[ExamPrep] startRound failed:', err);
-      showToast(`Could not start the round: ${err?.message || 'unknown error'}`, 'error', 6000);
+      console.error('[ExamPrep] startPractice failed:', err);
+      showToast(`Could not start practice: ${err?.message || 'unknown error'}`, 'error', 6000);
     } finally {
       setLoading(false);
     }
   };
 
-  const handleFinishRound = async (answers) => {
+  const handleAnswered = (res, q) => {
+    if (!uid || !q) return;
+    // Guard against double-fire (timer + submit on the same question).
+    const lastQ = sessionQuestionsRef.current[sessionQuestionsRef.current.length - 1];
+    if (lastQ && String(lastQ.id) === String(q.id)) return;
+    recordAnswer(uid, q, { correct: res?.correct === true, pending: res?.pending === true });
+    sessionAnswersRef.current = [...sessionAnswersRef.current, res];
+    sessionQuestionsRef.current = [...sessionQuestionsRef.current, q];
+    setSessionQuestions(sessionQuestionsRef.current);
+    const summary = getProgressAnalysis(uid, poolRef.current);
+    setProgressSummary(summary);
+    setMastery({
+      mastered: summary.mastered,
+      total: summary.total,
+      remaining: summary.remaining,
+    });
+    setStats(getStats(uid));
+    setAnalysis(getTopicAnalysis(uid));
+  };
+
+  const handleRequestNext = async () => {
     if (!uid) return;
-    const r = await finishRound(uid, answers, { questions });
+    const excludeId = currentQuestionRef.current?.id;
+    const pick = pickNextQuestion(uid, poolRef.current, { excludeId });
+    if (pick.resetCycle) {
+      showToast('You cleared the whole deck! Resetting — every question is available again.', 'success', 5500);
+    }
+    if (!pick.question) {
+      await handleQuit();
+      return;
+    }
+    const next = shuffleMcOptions(pick.question);
+    currentQuestionRef.current = next;
+    setCurrentQuestion(next);
+    setSessionNum((n) => n + 1);
+    setMastery({
+      mastered: pick.mastered ?? getProgressAnalysis(uid, poolRef.current).mastered,
+      total: pick.total ?? poolRef.current.length,
+      remaining: pick.remaining ?? 0,
+    });
+  };
+
+  const handleQuit = async () => {
+    if (!uid) {
+      setStage('setup');
+      return;
+    }
+    const answers = sessionAnswersRef.current;
+    const questionsForSession = sessionQuestionsRef.current;
+    const r = await endSession(uid, answers, { questions: questionsForSession });
     setResult(r);
     setLastAnswers(answers);
-    setAnalysis(getTopicAnalysis(uid));
-    setStats(getStats(uid));
-    setStage('result');
+    setSessionQuestions(questionsForSession);
+    refreshLocalStats(poolRef.current);
+    setStage(answers.length > 0 ? 'result' : 'setup');
+    if (answers.length === 0) {
+      showToast('Practice stopped. Progress is saved on this device.', 'success', 3500);
+    }
   };
 
   const handleRestart = async () => {
     setResult(null);
-    setQuestions([]);
+    setCurrentQuestion(null);
+    currentQuestionRef.current = null;
+    sessionAnswersRef.current = [];
+    sessionQuestionsRef.current = [];
+    setSessionQuestions([]);
     await handleStart();
   };
 
@@ -1437,6 +1628,7 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
             stats={stats}
             selection={selection}
             analysis={analysis}
+            progressSummary={progressSummary}
             noteCount={noteCount}
             dueCount={dueCount}
             loading={loading}
@@ -1445,8 +1637,21 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
           />
         )}
 
-        {stage === 'quiz' && questions.length > 0 && (
-          <QuizView questions={questions} onFinish={handleFinishRound} user={user} onReport={(q, studentAnswer, sketchDataUrl) => { reportTargetRef.current = { ...q, _studentAnswer: studentAnswer, _sketchDataUrl: sketchDataUrl }; setReportTarget(q); }} />
+        {stage === 'quiz' && currentQuestion && (
+          <QuizView
+            key={currentQuestion.id}
+            question={currentQuestion}
+            sessionNum={sessionNum}
+            mastery={mastery}
+            onAnswered={handleAnswered}
+            onRequestNext={handleRequestNext}
+            onQuit={handleQuit}
+            user={user}
+            onReport={(q, studentAnswer, sketchDataUrl) => {
+              reportTargetRef.current = { ...q, _studentAnswer: studentAnswer, _sketchDataUrl: sketchDataUrl };
+              setReportTarget(q);
+            }}
+          />
         )}
 
         {stage === 'secretNote' && uid && (
@@ -1461,11 +1666,18 @@ const ExamPrep = ({ profile, onExamActiveChange }) => {
         )}
 
         {stage === 'result' && result && (
-          <ResultPanel result={result} onRestart={handleRestart} onExit={() => setStage('setup')} onReview={() => setStage('review')} cumulativeAnalysis={analysis} />
+          <ResultPanel
+            result={result}
+            onRestart={handleRestart}
+            onExit={() => setStage('setup')}
+            onReview={() => setStage('review')}
+            cumulativeAnalysis={analysis}
+            progressSummary={progressSummary}
+          />
         )}
 
-        {stage === 'review' && questions.length > 0 && (
-          <ReviewView questions={questions} answers={lastAnswers} onDone={() => setStage('result')} />
+        {stage === 'review' && sessionQuestions.length > 0 && (
+          <ReviewView questions={sessionQuestions} answers={lastAnswers} onDone={() => setStage('result')} />
         )}
         </>
         )}

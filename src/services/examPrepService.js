@@ -2,18 +2,20 @@
  * Exam Prep — local-first data layer.
  *
  * Goal: minimise Firebase reads/writes by caching the entire candidate
- * question pool in localStorage, then random-sampling 15 questions per round
- * without any network call. Stats and selection live in localStorage too;
- * only XP redemption writes back to the student doc.
+ * question pool in IndexedDB, then serving endless random practice from
+ * teacher-selected chapters with no network call after the first fetch.
+ *
+ * Progress is stored per-question in localStorage:
+ *   - correct once → excluded from the draw until a full-deck reset
+ *   - wrong / pending → can reappear
+ *   - when every pool question is correct → statuses reset to "unsolved"
  *
  * Storage keys (all scoped by uid):
- *   examPrep:v1:<uid>:selection   { years: string[], chapters: string[] }
- *   examPrep:v1:<uid>:pool        { fetchedAt, signature, questions: [] }
- *   examPrep:v1:<uid>:next        Question[]  pre-picked next round
- *   examPrep:v1:<uid>:stats       { sessions, correct, attempted,
- *                                   byTopic: { [topicId]: { title, correct,
- *                                   attempted } } }
- *   examPrep:v1:<uid>:history     Session[]   recent rounds (capped)
+ *   examPrep:v1:<uid>:selection   { years, chapters, examPaperOnly }
+ *   examPrep:v1:<uid>:pool        IDB { signature, questions, ... }
+ *   examPrep:v1:<uid>:stats       lifetime sessions / correct / attempted
+ *   examPrep:v1:<uid>:progress    per-question mastery cache (local)
+ *   examPrep:v1:<uid>:history     Session[] recent practice sessions
  */
 import { db } from '../firebase/config';
 import { collection, query, where, getDocs, getDoc, doc, setDoc, serverTimestamp, documentId } from 'firebase/firestore';
@@ -23,7 +25,8 @@ import { readChapterIndex } from './questionIndexService';
 
 export const EXAM_PREP_NOTE_KIND = 'exam_prep';
 
-const ROUND_SIZE = 15;
+/** @deprecated Fixed rounds removed — endless practice. Kept for any stray imports. */
+const ROUND_SIZE = 0;
 const POOL_TTL_MS = 1000 * 60 * 60 * 24; // 24h safety-net TTL (version-based invalidation is primary)
 const HISTORY_CAP = 30;
 const V = 'v1';
@@ -51,17 +54,241 @@ export const setSelection = (uid, selection) => {
   localStorage.removeItem(k(uid, 'next'));
 };
 
-// ── Stats (cumulative across all rounds) ──────────────────────────────
+// ── Stats (lifetime counters across all practice) ─────────────────────
 const blankStats = () => ({ sessions: 0, correct: 0, attempted: 0, byTopic: {} });
 
 export const getStats = (uid) =>
   safeParse(localStorage.getItem(k(uid, 'stats')), blankStats());
 
+const saveStats = (uid, stats) => {
+  localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
+};
+
 export const resetStats = (uid) => {
   localStorage.removeItem(k(uid, 'stats'));
   localStorage.removeItem(k(uid, 'history'));
+  localStorage.removeItem(k(uid, 'progress'));
   // Mirror the reset to the server so it doesn't re-hydrate stale data.
   persistStateToServer(uid);
+};
+
+// ── Per-question progress (local mastery cache) ───────────────────────
+// status: 'correct' | 'wrong'  (missing key = not yet attempted this cycle)
+const blankProgress = () => ({
+  byId: {},
+  cycles: 0,
+  updatedAt: 0,
+});
+
+export const getProgress = (uid) => {
+  const raw = safeParse(localStorage.getItem(k(uid, 'progress')), null);
+  if (!raw || typeof raw !== 'object') return blankProgress();
+  return {
+    byId: raw.byId && typeof raw.byId === 'object' ? raw.byId : {},
+    cycles: Number(raw.cycles) || 0,
+    updatedAt: Number(raw.updatedAt) || 0,
+  };
+};
+
+const saveProgress = (uid, progress) => {
+  progress.updatedAt = Date.now();
+  localStorage.setItem(k(uid, 'progress'), JSON.stringify(progress));
+};
+
+/** All questions currently marked correct (excluded from draw until cycle reset). */
+export const getMasteredIds = (uid) => {
+  const { byId } = getProgress(uid);
+  return new Set(
+    Object.entries(byId)
+      .filter(([, v]) => v?.status === 'correct')
+      .map(([id]) => id),
+  );
+};
+
+/**
+ * Analyse local progress against the current pool.
+ * Returns mastery X/Y, accuracy %, and per-chapter / per-topic breakdowns.
+ */
+export const getProgressAnalysis = (uid, pool = []) => {
+  const progress = getProgress(uid);
+  const stats = getStats(uid);
+  const byId = progress.byId || {};
+  const poolIds = new Set((pool || []).map((q) => String(q.id)));
+  const total = poolIds.size;
+
+  let mastered = 0;
+  let wrongNow = 0;
+  let unseen = 0;
+  const byChapter = {}; // chapterId → { title, total, mastered, wrong, attempted }
+
+  for (const q of pool || []) {
+    const id = String(q.id);
+    const entry = byId[id];
+    const chapterId = q.chapterId || q.topicId || 'unknown';
+    const chapterTitle = q.chapterTitle || q.topicTitle || 'Untitled';
+    byChapter[chapterId] = byChapter[chapterId] || {
+      chapterId,
+      title: chapterTitle,
+      total: 0,
+      mastered: 0,
+      wrong: 0,
+      attempted: 0,
+      correctAttempts: 0,
+    };
+    const ch = byChapter[chapterId];
+    ch.total += 1;
+    if (entry?.status === 'correct') {
+      mastered += 1;
+      ch.mastered += 1;
+      ch.attempted += 1;
+    } else if (entry?.status === 'wrong') {
+      wrongNow += 1;
+      ch.wrong += 1;
+      ch.attempted += 1;
+    } else {
+      unseen += 1;
+    }
+    if (entry) {
+      ch.correctAttempts += Number(entry.correctCount) || 0;
+    }
+  }
+
+  // Lifetime accuracy from cumulative stats (survives deck resets).
+  const attempted = Number(stats.attempted) || 0;
+  const correct = Number(stats.correct) || 0;
+  const accuracy = attempted > 0 ? Math.round((correct / attempted) * 100) : 0;
+  const remaining = Math.max(0, total - mastered);
+
+  const chapters = Object.values(byChapter)
+    .map((c) => ({
+      ...c,
+      pct: c.total > 0 ? Math.round((c.mastered / c.total) * 100) : 0,
+      // Weakness score: low mastery + has wrongs ranks higher for "focus"
+      weakScore: c.total > 0
+        ? (1 - c.mastered / c.total) * 100 + (c.wrong > 0 ? 10 : 0)
+        : 0,
+    }))
+    .sort((a, b) => b.weakScore - a.weakScore || a.title.localeCompare(b.title));
+
+  return {
+    total,
+    mastered,
+    wrongNow,
+    unseen,
+    remaining,
+    accuracy,
+    lifetimeAttempted: attempted,
+    lifetimeCorrect: correct,
+    cycles: progress.cycles || 0,
+    sessions: Number(stats.sessions) || 0,
+    chapters,
+    byTopic: stats.byTopic || {},
+  };
+};
+
+/** Reset every question to "not yet solved" so the deck can be practised again. */
+export const resetMasteryCycle = (uid) => {
+  const progress = getProgress(uid);
+  const next = { byId: {}, cycles: (progress.cycles || 0) + 1, updatedAt: Date.now() };
+  saveProgress(uid, next);
+  return next;
+};
+
+/**
+ * Record one answer into the local progress cache + lifetime stats.
+ * Correct answers are locked out of the draw until a full-deck reset.
+ * Wrong / pending answers stay eligible.
+ */
+export const recordAnswer = (uid, question, { correct, pending = false } = {}) => {
+  if (!uid || !question?.id) return getProgress(uid);
+  const qid = String(question.id);
+  const progress = getProgress(uid);
+  const prev = progress.byId[qid] || {
+    status: 'unseen',
+    attempts: 0,
+    correctCount: 0,
+    wrongCount: 0,
+  };
+
+  const isCorrect = correct === true && !pending;
+  // Once correct in this cycle, stay correct (won't reappear until deck reset).
+  const nextStatus = prev.status === 'correct' || isCorrect ? 'correct' : 'wrong';
+  const entry = {
+    status: nextStatus,
+    attempts: (prev.attempts || 0) + 1,
+    correctCount: (prev.correctCount || 0) + (isCorrect ? 1 : 0),
+    wrongCount: (prev.wrongCount || 0) + (isCorrect ? 0 : 1),
+    chapterId: question.chapterId || prev.chapterId || '',
+    chapterTitle: question.chapterTitle || prev.chapterTitle || '',
+    topicId: question.topicId || prev.topicId || '',
+    topicTitle: question.topicTitle || prev.topicTitle || '',
+    lastAt: Date.now(),
+    pending: pending === true && nextStatus !== 'correct',
+  };
+
+  progress.byId[qid] = entry;
+  saveProgress(uid, progress);
+
+  // Lifetime counters (used for overall accuracy %).
+  const stats = getStats(uid);
+  stats.attempted = (Number(stats.attempted) || 0) + 1;
+  if (isCorrect) stats.correct = (Number(stats.correct) || 0) + 1;
+  const topicId = question.topicId || question.chapterId || 'unknown';
+  const topicTitle = question.topicTitle || question.chapterTitle || 'Untitled topic';
+  stats.byTopic[topicId] = stats.byTopic[topicId] || { title: topicTitle, correct: 0, attempted: 0 };
+  stats.byTopic[topicId].title = topicTitle;
+  stats.byTopic[topicId].attempted += 1;
+  if (isCorrect) stats.byTopic[topicId].correct += 1;
+  saveStats(uid, stats);
+
+  return progress;
+};
+
+/** Eligible questions = pool minus those already correct this cycle. */
+export const getEligibleQuestions = (pool, uid) => {
+  const mastered = getMasteredIds(uid);
+  return (pool || []).filter((q) => q?.id != null && !mastered.has(String(q.id)));
+};
+
+/**
+ * Pick the next random question from non-mastered pool items.
+ * If every question is mastered, reset the cycle and pick from the full pool.
+ * @param {{ excludeId?: string }} [options] — skip this id when other items remain
+ */
+export const pickNextQuestion = (uid, pool, options = {}) => {
+  const list = Array.isArray(pool) ? pool : [];
+  if (list.length === 0) {
+    return { question: null, pool: list, resetCycle: false, remaining: 0, mastered: 0, total: 0 };
+  }
+
+  let eligible = getEligibleQuestions(list, uid);
+  let resetCycle = false;
+
+  if (eligible.length === 0) {
+    resetMasteryCycle(uid);
+    resetCycle = true;
+    eligible = [...list];
+  }
+
+  // Avoid immediate re-draw of the same question when others remain.
+  let drawFrom = eligible;
+  if (options.excludeId != null && eligible.length > 1) {
+    const filtered = eligible.filter((q) => String(q.id) !== String(options.excludeId));
+    if (filtered.length > 0) drawFrom = filtered;
+  }
+
+  const question = drawFrom[Math.floor(Math.random() * drawFrom.length)] || null;
+  // remaining = non-mastered still in deck (including the one about to be shown).
+  const remaining = getEligibleQuestions(list, uid).length;
+
+  return {
+    question,
+    pool: list,
+    resetCycle,
+    remaining: resetCycle ? list.length : remaining,
+    mastered: getMasteredIds(uid).size,
+    total: list.length,
+  };
 };
 
 // ── History (recent sessions, capped) ──────────────────────────────────
@@ -97,6 +324,7 @@ export function applyTeacherApprovals(uid, approvals) {
   if (!Array.isArray(approvals) || approvals.length === 0) return 0;
   const ledger = getAppliedLedger(uid);
   const stats = getStats(uid);
+  const progress = getProgress(uid);
   let applied = 0;
   for (const a of approvals) {
     if (!a || !a.questionId) continue;
@@ -110,11 +338,24 @@ export function applyTeacherApprovals(uid, approvals) {
     if (stats.byTopic[topicId].attempted < stats.byTopic[topicId].correct) {
       stats.byTopic[topicId].attempted = stats.byTopic[topicId].correct;
     }
+    // Mark mastered in local progress so the question leaves the draw.
+    const qid = String(a.questionId);
+    const prev = progress.byId[qid] || { attempts: 0, correctCount: 0, wrongCount: 0 };
+    progress.byId[qid] = {
+      ...prev,
+      status: 'correct',
+      correctCount: (prev.correctCount || 0) + 1,
+      pending: false,
+      topicId: a.topicId || prev.topicId || '',
+      topicTitle: a.topicTitle || prev.topicTitle || '',
+      lastAt: Date.now(),
+    };
     applied += 1;
   }
   if (applied > 0) {
     if (stats.attempted < stats.correct) stats.attempted = stats.correct;
-    localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
+    saveStats(uid, stats);
+    saveProgress(uid, progress);
     saveAppliedLedger(uid, ledger);
     persistStateToServer(uid);
   }
@@ -146,13 +387,14 @@ export function applyTeacherRejections(uid, rejections) {
 // under the student's own user document: users/{uid}/examPrep/state.
 const stateDocRef = (uid) => doc(db, 'users', uid, 'examPrep', 'state');
 
-// Persist the current local stats + history to Firestore (best-effort).
+// Persist local stats + history + progress to Firestore (best-effort).
 export const persistStateToServer = async (uid) => {
   if (!uid) return;
   try {
     await setDoc(stateDocRef(uid), {
       stats: getStats(uid),
       history: getHistory(uid),
+      progress: getProgress(uid),
       updatedAt: serverTimestamp(),
     }, { merge: true });
   } catch (e) {
@@ -160,14 +402,8 @@ export const persistStateToServer = async (uid) => {
   }
 };
 
-// Pull server-saved stats/history into localStorage so the synchronous getters
-// (getStats/getHistory/getTopicAnalysis) return the cross-device values.
-// The server is treated as canonical when it has at least as many sessions as
-// the local copy — this restores progress on a fresh device while never
-// clobbering newer local progress that hasn't been pushed yet.
-// Track which uids have already been hydrated this page-load so navigating in
-// and out of Exam Prep doesn't re-read the server doc each time. A full page
-// reload resets this (module state is cleared), triggering one fresh sync.
+// Pull server-saved stats/history/progress into localStorage so the synchronous
+// getters return cross-device values. Server wins when it has ≥ local sessions.
 const hydratedUids = new Set();
 
 export const hydrateExamPrepState = async (uid, { force = false } = {}) => {
@@ -186,9 +422,16 @@ export const hydrateExamPrepState = async (uid, { force = false } = {}) => {
     if (serverSessions >= localSessions) {
       localStorage.setItem(k(uid, 'stats'), JSON.stringify(serverStats));
       localStorage.setItem(k(uid, 'history'), JSON.stringify(serverHistory.slice(0, HISTORY_CAP)));
+      if (data.progress && typeof data.progress === 'object') {
+        localStorage.setItem(k(uid, 'progress'), JSON.stringify({
+          byId: data.progress.byId && typeof data.progress.byId === 'object' ? data.progress.byId : {},
+          cycles: Number(data.progress.cycles) || 0,
+          updatedAt: Number(data.progress.updatedAt) || Date.now(),
+        }));
+      }
       return true;
     }
-    // Local is ahead (offline rounds not yet pushed) — push it up instead.
+    // Local is ahead (offline practice not yet pushed) — push it up instead.
     persistStateToServer(uid);
     return false;
   } catch (e) {
@@ -348,7 +591,7 @@ export const ensurePool = async (uid, selection, { force = false } = {}) => {
   return usable;
 };
 
-// ── Random batch picker ────────────────────────────────────────────────
+// ── Random helpers ─────────────────────────────────────────────────────
 const shuffle = (arr) => {
   const a = [...arr];
   for (let i = a.length - 1; i > 0; i--) {
@@ -358,21 +601,18 @@ const shuffle = (arr) => {
   return a;
 };
 
-export const pickRound = (pool, n = ROUND_SIZE) => shuffle(pool).slice(0, n);
+/** @deprecated Use pickNextQuestion — kept so old callers don't crash. */
+export const pickRound = (pool, n = 15) => shuffle(pool).slice(0, Math.max(1, n));
 
-// ── Pre-fetched "next round" (so the student can start immediately) ────
-// Stored in IndexedDB (same reasoning as the pool — can include base64 images).
+// Clear any legacy "next round" stash from older builds.
 export const getNextRound = (uid) => idbGet(k(uid, 'next'));
-
 export const stashNextRound = async (uid, questions) => {
   if (!Array.isArray(questions) || questions.length === 0) {
     await idbDel(k(uid, 'next'));
     return;
   }
-  // Best-effort — never throws (round is already in-memory).
   await idbSet(k(uid, 'next'), questions);
 };
-
 export const consumeNextRound = async (uid) => {
   const next = await getNextRound(uid);
   if (next) await idbDel(k(uid, 'next'));
@@ -380,79 +620,81 @@ export const consumeNextRound = async (uid) => {
 };
 
 /**
- * Get a fresh round to play right now. Reuses the pre-fetched next round
- * (instant start), and as a side-effect re-stashes a brand new next round
- * so the *following* session is also instant.
+ * Start endless practice: load the teacher-selected pool and pick the first
+ * non-mastered random question. If the deck is fully mastered, resets first.
  */
-export const startRound = async (uid, selection) => {
-  // Make sure the pool is loaded once. Cheap if already cached.
+export const startPractice = async (uid, selection) => {
   let pool = await ensurePool(uid, selection);
-  // A previously-cached EMPTY pool (e.g. fetched before the teacher added
-  // questions, or after a transient failure) would otherwise block the round
-  // for the full cache TTL. If empty, force a fresh fetch before giving up.
   if (pool.length === 0) {
     pool = await ensurePool(uid, selection, { force: true });
   }
-  if (pool.length === 0) return { questions: [], pool };
+  // Drop legacy pre-fetched rounds so they can't reintroduce fixed-15 behaviour.
+  try { await idbDel(k(uid, 'next')); } catch { /* ignore */ }
 
-  const stashed = await consumeNextRound(uid);
-  const round = (stashed && stashed.length > 0) ? stashed : pickRound(pool);
-  // Stash a new "next" round for instant restart after this one finishes.
-  // Fire-and-forget — it's a pre-fetch optimisation, not required for this run.
-  stashNextRound(uid, pickRound(pool));
-  return { questions: round, pool };
+  if (pool.length === 0) {
+    return { question: null, pool: [], resetCycle: false, remaining: 0, total: 0, mastered: 0 };
+  }
+
+  const pick = pickNextQuestion(uid, pool);
+  return {
+    ...pick,
+    analysis: getProgressAnalysis(uid, pool),
+  };
 };
 
-// ── Result recording + XP ──────────────────────────────────────────────
+/** @deprecated Alias — endless practice replaces fixed rounds. */
+export const startRound = async (uid, selection) => {
+  const r = await startPractice(uid, selection);
+  // Old UI expected { questions: Question[] }. Hand a one-item array so a
+  // missed call site still shows something instead of an empty screen.
+  return {
+    questions: r.question ? [r.question] : [],
+    pool: r.pool,
+    ...r,
+  };
+};
+
 /**
- * Record the outcome of a finished round. Updates cumulative stats, pushes
- * a history entry, and returns the XP earned (0..10).
+ * End a practice session (student quit or left). Per-answer stats were already
+ * written by recordAnswer; this only bumps session count, history, secret note,
+ * and teacher-facing summary.
  */
-export const finishRound = async (uid, results, { questions = [] } = {}) => {
+export const endSession = async (uid, results, { questions = [] } = {}) => {
   const stats = getStats(uid);
-  stats.sessions += 1;
+  // Only count as a session if the student answered at least one question.
+  const answered = Array.isArray(results) ? results.length : 0;
+  if (answered > 0) {
+    stats.sessions = (Number(stats.sessions) || 0) + 1;
+    saveStats(uid, stats);
+  }
 
   let correct = 0;
-  const perTopic = {}; // capture this round's per-topic so the UI can show it
+  const perTopic = {};
   results.forEach((res, i) => {
     const q = questions[i] || {};
     const topicId = q.topicId || q.chapterId || 'unknown';
     const topicTitle = q.topicTitle || q.chapterTitle || 'Untitled topic';
-
-    stats.byTopic[topicId] = stats.byTopic[topicId] || { title: topicTitle, correct: 0, attempted: 0 };
-    stats.byTopic[topicId].title = topicTitle;
-    stats.byTopic[topicId].attempted += 1;
     perTopic[topicId] = perTopic[topicId] || { title: topicTitle, correct: 0, attempted: 0 };
     perTopic[topicId].title = topicTitle;
     perTopic[topicId].attempted += 1;
-
     if (res?.correct) {
-      stats.byTopic[topicId].correct += 1;
       perTopic[topicId].correct += 1;
       correct += 1;
     }
-    stats.attempted += 1;
-    stats.correct += correct ? 0 : 0; // tally added below in one go
-  });
-  // Re-add round correctness in a single pass (the per-iter mutation above
-  // intentionally only tracks attempted; correctness is tallied here).
-  stats.correct += correct;
-
-  const total = results.length || 1;
-
-  localStorage.setItem(k(uid, 'stats'), JSON.stringify(stats));
-  pushHistory(uid, {
-    finishedAt: Date.now(),
-    total: results.length,
-    correct,
-    perTopic,
   });
 
-  // Persist the updated stats + history to Firestore so progress follows the
-  // student across devices. Best-effort; never blocks the result screen.
+  if (answered > 0) {
+    pushHistory(uid, {
+      finishedAt: Date.now(),
+      total: results.length,
+      correct,
+      perTopic,
+      mode: 'endless',
+    });
+  }
+
   persistStateToServer(uid);
 
-  // Wrong questions roll into the Exam Prep Secret Note deck for review.
   const wrongQuestions = results
     .map((res, i) => (res?.correct ? null : questions[i]))
     .filter(Boolean);
@@ -465,8 +707,11 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
     }
   }
 
-  // Mirror a compact summary to Firestore so the teacher app can see the
-  // student's cumulative topic analysis without reading their device cache.
+  const progress = getProgress(uid);
+  const mastery = {
+    mastered: Object.values(progress.byId || {}).filter((v) => v?.status === 'correct').length,
+  };
+
   if (uid) {
     try {
       await setDoc(doc(db, 'students', uid, 'exam_prep', 'summary'), {
@@ -474,11 +719,14 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
         attempted: stats.attempted,
         correct: stats.correct,
         byTopic: stats.byTopic,
+        progressMastered: mastery.mastered,
+        progressCycles: progress.cycles || 0,
         lastRound: {
           finishedAt: Date.now(),
           total: results.length,
           correct,
           perTopic,
+          mode: 'endless',
         },
         updatedAt: serverTimestamp(),
       }, { merge: true });
@@ -487,8 +735,18 @@ export const finishRound = async (uid, results, { questions = [] } = {}) => {
     }
   }
 
-  return { correct, total: results.length, xp: 0, perTopic, addedToNote };
+  return {
+    correct,
+    total: results.length,
+    xp: 0,
+    perTopic,
+    addedToNote,
+    analysis: getProgressAnalysis(uid, questions),
+  };
 };
+
+/** @deprecated Use endSession. */
+export const finishRound = endSession;
 
 // ── Topic-analysis helper for the UI ───────────────────────────────────
 /**
@@ -514,4 +772,5 @@ export const getTopicAnalysis = (uid) => {
   });
 };
 
-export const ROUND_SIZE_CONST = ROUND_SIZE;
+/** No fixed round size — endless practice. Export 0 for any leftover UI. */
+export const ROUND_SIZE_CONST = 0;
