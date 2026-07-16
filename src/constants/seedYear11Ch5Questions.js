@@ -19036,6 +19036,1937 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "timeLimit": 60,
     "isNew": true
+  },
+  {
+    "id": "y11a-5i-q1a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate \\(|7|\\).",
+    "a": "0",
+    "opts": [
+      "\\(7\\)",
+      "\\(-7\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "options": [
+      "\\(7\\)",
+      "\\(-7\\)",
+      "\\(0\\)",
+      "\\(1\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Absolute value of a non-negative number is itself.",
+        "workingOut": "\\(|7|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(7 > 0\\), \\(|7| = 7\\).",
+        "workingOut": "\\(|7| = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer: \\(7\\).",
+        "workingOut": "\\(7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q1b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate \\(|4 - 12|\\).",
+    "a": "1",
+    "opts": [
+      "\\(-8\\)",
+      "\\(8\\)",
+      "\\(16\\)",
+      "\\(4\\)"
+    ],
+    "options": [
+      "\\(-8\\)",
+      "\\(8\\)",
+      "\\(16\\)",
+      "\\(4\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "First simplify inside: \\(4 - 12 = -8\\).",
+        "workingOut": "\\(4 - 12 = -8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Absolute value of a negative number is its opposite: \\(|-8| = 8\\).",
+        "workingOut": "\\(|-8| = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(|4 - 12| = 8\\).",
+        "workingOut": "\\(8\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q1c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate \\(|-3 - (-9)|\\).",
+    "a": "2",
+    "opts": [
+      "\\(-6\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "options": [
+      "\\(-6\\)",
+      "\\(12\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Simplify: \\(-3 - (-9) = -3 + 9 = 6\\).",
+        "workingOut": "\\(-3 + 9 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Then \\(|6| = 6\\).",
+        "workingOut": "\\(|6| = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer: \\(6\\).",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q1d",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Evaluate \\(|-4| - |-6|\\).",
+    "a": "3",
+    "opts": [
+      "\\(2\\)",
+      "\\(10\\)",
+      "\\(-10\\)",
+      "\\(-2\\)"
+    ],
+    "options": [
+      "\\(2\\)",
+      "\\(10\\)",
+      "\\(-10\\)",
+      "\\(-2\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate each absolute value: \\(|-4| = 4\\), \\(|-6| = 6\\).",
+        "workingOut": "\\(4\\) and \\(6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract: \\(4 - 6 = -2\\).",
+        "workingOut": "\\(4 - 6 = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Note the absolute values are taken first; the result can still be negative.",
+        "workingOut": "\\(-2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q2a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Solve for \\(x\\): \\(|4x| = 24\\).",
+    "a": "0",
+    "opts": [
+      "\\(x = 6\\) or \\(x = -6\\)",
+      "\\(x = 6\\) only",
+      "\\(x = -6\\) only",
+      "No solution"
+    ],
+    "options": [
+      "\\(x = 6\\) or \\(x = -6\\)",
+      "\\(x = 6\\) only",
+      "\\(x = -6\\) only",
+      "No solution"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Rewrite: \\(4x = 24\\) or \\(4x = -24\\).",
+        "workingOut": "\\(4x = \\pm 24\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve: \\(x = 6\\) or \\(x = -6\\).",
+        "workingOut": "\\(x = 6\\) or \\(x = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both satisfy the original equation.",
+        "workingOut": "\\(x = \\pm 6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q2b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Solve for \\(x\\): \\(|x - 3| = 5\\).",
+    "a": "1",
+    "opts": [
+      "\\(x = 8\\) or \\(x = 2\\)",
+      "\\(x = 8\\) or \\(x = -2\\)",
+      "\\(x = -8\\) or \\(x = 2\\)",
+      "No solution"
+    ],
+    "options": [
+      "\\(x = 8\\) or \\(x = 2\\)",
+      "\\(x = 8\\) or \\(x = -2\\)",
+      "\\(x = -8\\) or \\(x = 2\\)",
+      "No solution"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Two cases: \\(x - 3 = 5\\) or \\(x - 3 = -5\\).",
+        "workingOut": "\\(x - 3 = \\pm 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(x = 8\\) or \\(x = -2\\).",
+        "workingOut": "\\(x = 8\\) or \\(x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: distance from \\(3\\) to each solution is \\(5\\).",
+        "workingOut": "\\(x = 8,\\ -2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q2c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Solve for \\(x\\): \\(|3x - 4| = 11\\).",
+    "a": "2",
+    "opts": [
+      "\\(x = 5\\) or \\(x = \\dfrac{7}{3}\\)",
+      "\\(x = -5\\) or \\(x = \\dfrac{7}{3}\\)",
+      "\\(x = 5\\) or \\(x = -\\dfrac{7}{3}\\)",
+      "No solution"
+    ],
+    "options": [
+      "\\(x = 5\\) or \\(x = \\dfrac{7}{3}\\)",
+      "\\(x = -5\\) or \\(x = \\dfrac{7}{3}\\)",
+      "\\(x = 5\\) or \\(x = -\\dfrac{7}{3}\\)",
+      "No solution"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(3x - 4 = 11\\) or \\(3x - 4 = -11\\).",
+        "workingOut": "\\(3x - 4 = \\pm 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "First: \\(3x = 15 \\implies x = 5\\).",
+        "workingOut": "\\(x = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Second: \\(3x = -7 \\implies x = -\\dfrac{7}{3}\\).",
+        "workingOut": "\\(x = -\\dfrac{7}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q2d",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Solve for \\(x\\): \\(|2x - 5| = 9\\).",
+    "a": "3",
+    "opts": [
+      "\\(x = 7\\) or \\(x = 2\\)",
+      "\\(x = -7\\) or \\(x = 2\\)",
+      "No solution",
+      "\\(x = 7\\) or \\(x = -2\\)"
+    ],
+    "options": [
+      "\\(x = 7\\) or \\(x = 2\\)",
+      "\\(x = -7\\) or \\(x = 2\\)",
+      "No solution",
+      "\\(x = 7\\) or \\(x = -2\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(2x - 5 = 9\\) or \\(2x - 5 = -9\\).",
+        "workingOut": "\\(2x - 5 = \\pm 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(2x = 14 \\implies x = 7\\).",
+        "workingOut": "\\(x = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(2x = -4 \\implies x = -2\\).",
+        "workingOut": "\\(x = -2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q10a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the absolute value equation: \\(|4x| = 28\\).",
+    "a": "0",
+    "opts": [
+      "\\(x = 7\\) or \\(x = -7\\)",
+      "\\(x = 7\\) only",
+      "\\(x = 28\\) or \\(x = -28\\)",
+      "No solution"
+    ],
+    "options": [
+      "\\(x = 7\\) or \\(x = -7\\)",
+      "\\(x = 7\\) only",
+      "\\(x = 28\\) or \\(x = -28\\)",
+      "No solution"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Divide by 4: \\(|x| = 7\\).",
+        "workingOut": "\\(|x| = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(x = 7\\) or \\(x = -7\\).",
+        "workingOut": "\\(x = \\pm 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both solutions check in the original equation.",
+        "workingOut": "\\(x = 7\\) or \\(x = -7\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q10b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the absolute value equation: \\(|x + 6| = -3\\).",
+    "a": "1",
+    "opts": [
+      "\\(x = -9\\) or \\(x = -3\\)",
+      "No solution",
+      "\\(x = 9\\) or \\(x = 3\\)",
+      "\\(x = -3\\) only"
+    ],
+    "options": [
+      "\\(x = -9\\) or \\(x = -3\\)",
+      "No solution",
+      "\\(x = 9\\) or \\(x = 3\\)",
+      "\\(x = -3\\) only"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "By definition, \\(|x + 6| \\ge 0\\) for all real \\(x\\).",
+        "workingOut": "\\(|x + 6| \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A non-negative quantity cannot equal \\(-3\\).",
+        "workingOut": "\\(\\ge 0 \\neq -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore there is no solution.",
+        "workingOut": "\\(\\text{no solution}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q10c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Solve the absolute value equation: \\(|3x + 5| = 14\\).",
+    "a": "2",
+    "opts": [
+      "\\(x = 3\\) or \\(x = \\dfrac{19}{3}\\)",
+      "\\(x = -3\\) or \\(x = \\dfrac{19}{3}\\)",
+      "\\(x = 3\\) or \\(x = -\\dfrac{19}{3}\\)",
+      "\\(x = 3\\) only"
+    ],
+    "options": [
+      "\\(x = 3\\) or \\(x = \\dfrac{19}{3}\\)",
+      "\\(x = -3\\) or \\(x = \\dfrac{19}{3}\\)",
+      "\\(x = 3\\) or \\(x = -\\dfrac{19}{3}\\)",
+      "\\(x = 3\\) only"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Cases: \\(3x + 5 = 14\\) or \\(3x + 5 = -14\\).",
+        "workingOut": "\\(3x + 5 = \\pm 14\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "First: \\(3x = 9 \\implies x = 3\\).",
+        "workingOut": "\\(x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Second: \\(3x = -19 \\implies x = -\\dfrac{19}{3}\\).",
+        "workingOut": "\\(x = -\\dfrac{19}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q3a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "How do you shift the graph of \\(y = x^2\\) to obtain \\(y = x^2 + 6\\)?",
+    "a": "3",
+    "opts": [
+      "Shift \\(6\\) units downwards",
+      "Shift \\(6\\) units right",
+      "Shift \\(6\\) units left",
+      "Shift \\(6\\) units upwards"
+    ],
+    "options": [
+      "Shift \\(6\\) units downwards",
+      "Shift \\(6\\) units right",
+      "Shift \\(6\\) units left",
+      "Shift \\(6\\) units upwards"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "The form is \\(y = x^2 + c\\) with \\(c = +6\\).",
+        "workingOut": "\\(c = +6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Adding a positive constant outside shifts the graph vertically up.",
+        "workingOut": "\\(\\text{up by } 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So shift \\(6\\) units upwards.",
+        "workingOut": "\\(\\text{up } 6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q3b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "How do you shift the graph of \\(y = x^2\\) to obtain \\(y = x^2 - 3\\)?",
+    "a": "0",
+    "opts": [
+      "Shift \\(3\\) units downwards",
+      "Shift \\(3\\) units upwards",
+      "Shift \\(3\\) units right",
+      "Shift \\(3\\) units left"
+    ],
+    "options": [
+      "Shift \\(3\\) units downwards",
+      "Shift \\(3\\) units upwards",
+      "Shift \\(3\\) units right",
+      "Shift \\(3\\) units left"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Here \\(c = -3\\) in \\(y = x^2 + c\\).",
+        "workingOut": "\\(c = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "A negative constant shifts the graph vertically down.",
+        "workingOut": "\\(\\text{down by } 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So shift \\(3\\) units downwards.",
+        "workingOut": "\\(\\text{down } 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q3c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "How do you shift the graph of \\(y = x^2\\) to obtain \\(y = (x - 4)^2\\)?",
+    "a": "1",
+    "opts": [
+      "Shift \\(4\\) units left",
+      "Shift \\(4\\) units right",
+      "Shift \\(4\\) units upwards",
+      "Shift \\(4\\) units downwards"
+    ],
+    "options": [
+      "Shift \\(4\\) units left",
+      "Shift \\(4\\) units right",
+      "Shift \\(4\\) units upwards",
+      "Shift \\(4\\) units downwards"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Replacing \\(x\\) by \\(x - 4\\) is a horizontal translation.",
+        "workingOut": "\\(x \\to x - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The graph moves in the opposite sense to the sign inside: right by \\(4\\).",
+        "workingOut": "\\(\\text{right } 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertex moves from \\((0,0)\\) to \\((4,0)\\).",
+        "workingOut": "\\((4, 0)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q5b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Find the function obtained when \\(y = x^2 - 5x - 6\\) is reflected in the \\(x\\)-axis.",
+    "a": "2",
+    "opts": [
+      "\\(y = -x^2 - 5x - 6\\)",
+      "\\(y = x^2 + 5x + 6\\)",
+      "\\(y = -x^2 + 5x + 6\\)",
+      "\\(y = -x^2 + 5x - 6\\)"
+    ],
+    "options": [
+      "\\(y = -x^2 - 5x - 6\\)",
+      "\\(y = x^2 + 5x + 6\\)",
+      "\\(y = -x^2 + 5x + 6\\)",
+      "\\(y = -x^2 + 5x - 6\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Reflection in the \\(x\\)-axis replaces \\(y\\) by \\(-y\\).",
+        "workingOut": "\\(y \\to -y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(y = -(x^2 - 5x - 6)\\).",
+        "workingOut": "\\(y = -(x^2 - 5x - 6)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand: \\(y = -x^2 + 5x + 6\\).",
+        "workingOut": "\\(y = -x^2 + 5x + 6\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q14a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Write the equation for \\(y = x^2\\) after shifting right by \\(3\\) units and upwards by \\(2\\) units.",
+    "a": "3",
+    "opts": [
+      "\\(y = (x + 3)^2 + 2\\)",
+      "\\(y = (x - 3)^2 - 2\\)",
+      "\\(y = x^2 + 5\\)",
+      "\\(y = (x - 3)^2 + 2\\)"
+    ],
+    "options": [
+      "\\(y = (x + 3)^2 + 2\\)",
+      "\\(y = (x - 3)^2 - 2\\)",
+      "\\(y = x^2 + 5\\)",
+      "\\(y = (x - 3)^2 + 2\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Right \\(3\\): replace \\(x\\) by \\(x - 3\\) to get \\(y = (x - 3)^2\\).",
+        "workingOut": "\\(y = (x - 3)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Up \\(2\\): add \\(2\\) outside.",
+        "workingOut": "\\(y = (x - 3)^2 + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertex is at \\((3, 2)\\).",
+        "workingOut": "\\((3, 2)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q14b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Write the equation for \\(y = \\dfrac{1}{x}\\) after shifting left by \\(3\\) units and downwards by \\(4\\) units.",
+    "a": "0",
+    "opts": [
+      "\\(y = \\dfrac{1}{x + 3} - 4\\)",
+      "\\(y = \\dfrac{1}{x - 3} - 4\\)",
+      "\\(y = \\dfrac{1}{x + 3} + 4\\)",
+      "\\(y = \\dfrac{1}{x - 4} + 3\\)"
+    ],
+    "options": [
+      "\\(y = \\dfrac{1}{x + 3} - 4\\)",
+      "\\(y = \\dfrac{1}{x - 3} - 4\\)",
+      "\\(y = \\dfrac{1}{x + 3} + 4\\)",
+      "\\(y = \\dfrac{1}{x - 4} + 3\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Left \\(3\\): replace \\(x\\) by \\(x + 3\\).",
+        "workingOut": "\\(y = \\dfrac{1}{x + 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Down \\(4\\): subtract \\(4\\).",
+        "workingOut": "\\(y = \\dfrac{1}{x + 3} - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertical asymptote \\(x = -3\\); horizontal asymptote \\(y = -4\\).",
+        "workingOut": "\\(x = -3,\\; y = -4\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Complete the square for \\(y = x^2 - 6x + 2\\). Which description is correct?",
+    "a": "1",
+    "opts": [
+      "\\(y = (x - 3)^2 + 7\\); vertex \\((3, 7)\\)",
+      "\\(y = (x - 3)^2 - 7\\); vertex \\((3, -7)\\); \\(y\\)-int \\((0, 2)\\)",
+      "\\(y = (x + 3)^2 - 7\\); vertex \\((-3, -7)\\)",
+      "\\(y = (x - 6)^2 - 2\\); vertex \\((6, -2)\\)"
+    ],
+    "options": [
+      "\\(y = (x - 3)^2 + 7\\); vertex \\((3, 7)\\)",
+      "\\(y = (x - 3)^2 - 7\\); vertex \\((3, -7)\\); \\(y\\)-int \\((0, 2)\\)",
+      "\\(y = (x + 3)^2 - 7\\); vertex \\((-3, -7)\\)",
+      "\\(y = (x - 6)^2 - 2\\); vertex \\((6, -2)\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Half of \\(-6\\) is \\(-3\\); square is \\(9\\).",
+        "workingOut": "\\(\\left(\\dfrac{-6}{2}\\right)^2 = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = (x^2 - 6x + 9) - 9 + 2 = (x - 3)^2 - 7\\).",
+        "workingOut": "\\(y = (x - 3)^2 - 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertex \\((3, -7)\\); \\(y\\)-intercept from original: \\(2\\).",
+        "workingOut": "\\((3, -7),\\ (0, 2)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Complete the square for \\(y = 5 + 4x - x^2\\). Which description is correct?",
+    "a": "2",
+    "opts": [
+      "\\(y = (x - 2)^2 + 9\\); vertex \\((2, 9)\\)",
+      "\\(y = -(x + 2)^2 + 9\\); vertex \\((-2, 9)\\)",
+      "\\(y = -(x - 2)^2 + 9\\); vertex \\((2, 9)\\); \\(x\\)-ints \\((-1, 0)\\) and \\((5, 0)\\)",
+      "\\(y = -(x - 2)^2 - 9\\); vertex \\((2, -9)\\)"
+    ],
+    "options": [
+      "\\(y = (x - 2)^2 + 9\\); vertex \\((2, 9)\\)",
+      "\\(y = -(x + 2)^2 + 9\\); vertex \\((-2, 9)\\)",
+      "\\(y = -(x - 2)^2 + 9\\); vertex \\((2, 9)\\); \\(x\\)-ints \\((-1, 0)\\) and \\((5, 0)\\)",
+      "\\(y = -(x - 2)^2 - 9\\); vertex \\((2, -9)\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Factor out \\(-1\\) from the quadratic terms: \\(y = -(x^2 - 4x) + 5\\).",
+        "workingOut": "\\(y = -(x^2 - 4x) + 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Complete the square: \\(y = -(x^2 - 4x + 4 - 4) + 5 = -(x - 2)^2 + 9\\).",
+        "workingOut": "\\(y = -(x - 2)^2 + 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertex \\((2, 9)\\); roots of \\(x^2 - 4x - 5 = 0\\) give \\(x\\)-ints \\(-1\\) and \\(5\\).",
+        "workingOut": "\\((-1,0),\\ (5,0)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12d",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Complete the square for \\(y = x^2 - 2x - 3\\). Which description is correct?",
+    "a": "3",
+    "opts": [
+      "\\(y = (x - 1)^2 + 4\\); vertex \\((1, 4)\\)",
+      "\\(y = (x + 1)^2 - 4\\); vertex \\((-1, -4)\\)",
+      "\\(y = (x - 2)^2 - 3\\); vertex \\((2, -3)\\)",
+      "\\(y = (x - 1)^2 - 4\\); vertex \\((1, -4)\\); \\(x\\)-ints \\((-1, 0)\\) and \\((3, 0)\\)"
+    ],
+    "options": [
+      "\\(y = (x - 1)^2 + 4\\); vertex \\((1, 4)\\)",
+      "\\(y = (x + 1)^2 - 4\\); vertex \\((-1, -4)\\)",
+      "\\(y = (x - 2)^2 - 3\\); vertex \\((2, -3)\\)",
+      "\\(y = (x - 1)^2 - 4\\); vertex \\((1, -4)\\); \\(x\\)-ints \\((-1, 0)\\) and \\((3, 0)\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Half of \\(-2\\) is \\(-1\\); square is \\(1\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = (x^2 - 2x + 1) - 1 - 3 = (x - 1)^2 - 4\\).",
+        "workingOut": "\\(y = (x - 1)^2 - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertex \\((1, -4)\\); factor \\((x - 3)(x + 1)\\) for intercepts.",
+        "workingOut": "\\((-1,0),\\ (3,0)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q16aii",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Given \\(f(x) = x - 2\\) and \\(g(x) = \\sqrt{x}\\), find the domain and range of \\(g(f(x))\\).",
+    "a": "0",
+    "opts": [
+      "Domain: \\(x \\ge 2\\); range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 0\\); range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 2\\); range: \\(y \\ge 2\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)"
+    ],
+    "options": [
+      "Domain: \\(x \\ge 2\\); range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 0\\); range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 2\\); range: \\(y \\ge 2\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Composite: \\(g(f(x)) = \\sqrt{x - 2}\\).",
+        "workingOut": "\\(\\sqrt{x - 2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Need \\(x - 2 \\ge 0 \\implies x \\ge 2\\).",
+        "workingOut": "\\(x \\ge 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Square-root outputs are non-negative: range \\(y \\ge 0\\).",
+        "workingOut": "\\(y \\ge 0\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q16bi",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Given \\(f(x) = \\dfrac{2}{x}\\) and \\(g(x) = x^2 + 3\\), find the domain and range of \\(f(g(x))\\).",
+    "a": "1",
+    "opts": [
+      "Domain: \\(x \\neq 0\\); range: \\(0 < y \\le \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(0 < y \\le \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(y > 0\\)"
+    ],
+    "options": [
+      "Domain: \\(x \\neq 0\\); range: \\(0 < y \\le \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(0 < y \\le \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge \\dfrac{2}{3}\\)",
+      "Domain: all real \\(x\\); range: \\(y > 0\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(f(g(x)) = \\dfrac{2}{x^2 + 3}\\). Denominator \\(\\ge 3 > 0\\), never zero.",
+        "workingOut": "\\(\\dfrac{2}{x^2 + 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Domain is all real \\(x\\).",
+        "workingOut": "\\(D = \\mathbb{R}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(x^2 + 3 \\ge 3\\), we have \\(0 < \\dfrac{2}{x^2 + 3} \\le \\dfrac{2}{3}\\).",
+        "workingOut": "\\(0 < y \\le \\dfrac{2}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q16bii",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Given \\(f(x) = \\dfrac{2}{x}\\) and \\(g(x) = x^2 + 3\\), find the domain and range of \\(g(f(x))\\).",
+    "a": "2",
+    "opts": [
+      "Domain: all real \\(x\\); range: \\(y > 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y \\ge 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y > 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y \\ge 0\\)"
+    ],
+    "options": [
+      "Domain: all real \\(x\\); range: \\(y > 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y \\ge 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y > 3\\)",
+      "Domain: \\(x \\neq 0\\); range: \\(y \\ge 0\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(g(f(x)) = \\left(\\dfrac{2}{x}\\right)^2 + 3 = \\dfrac{4}{x^2} + 3\\).",
+        "workingOut": "\\(\\dfrac{4}{x^2} + 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Requires \\(x \\neq 0\\).",
+        "workingOut": "\\(x \\neq 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{4}{x^2} > 0\\) so \\(y > 3\\) (never equals \\(3\\)).",
+        "workingOut": "\\(y > 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q18b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "How can the graph of \\(y = \\dfrac{1}{3x - 9}\\) be obtained from \\(y = \\dfrac{1}{x - 3}\\) by a suitable dilation?",
+    "a": "3",
+    "opts": [
+      "Horizontal dilation by a factor of \\(\\dfrac{1}{3}\\) (compression)",
+      "Horizontal dilation by a factor of \\(3\\) (stretch)",
+      "Vertical dilation by a factor of \\(3\\) (stretch)",
+      "Vertical dilation by a factor of \\(\\dfrac{1}{3}\\) (compression)"
+    ],
+    "options": [
+      "Horizontal dilation by a factor of \\(\\dfrac{1}{3}\\) (compression)",
+      "Horizontal dilation by a factor of \\(3\\) (stretch)",
+      "Vertical dilation by a factor of \\(3\\) (stretch)",
+      "Vertical dilation by a factor of \\(\\dfrac{1}{3}\\) (compression)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(f(x) = \\dfrac{1}{x - 3}\\).",
+        "workingOut": "\\(f(x) = \\dfrac{1}{x - 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor: \\(\\dfrac{1}{3x - 9} = \\dfrac{1}{3(x - 3)} = \\dfrac{1}{3} f(x)\\).",
+        "workingOut": "\\(y = \\dfrac{1}{3} f(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Multiplying the function by \\(\\dfrac{1}{3}\\) is a vertical compression by factor \\(\\dfrac{1}{3}\\).",
+        "workingOut": "\\(\\text{vertical } \\times \\dfrac{1}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q21a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Which transformations take \\(y = x^2\\) to \\(y = 9 - x^2\\)?",
+    "a": "0",
+    "opts": [
+      "Reflect in the \\(x\\)-axis, then shift up by \\(9\\) units",
+      "Shift up by \\(9\\) units, then reflect in the \\(x\\)-axis",
+      "Reflect in the \\(y\\)-axis, then shift up by \\(9\\)",
+      "Horizontal stretch by \\(9\\), then reflect in the \\(x\\)-axis"
+    ],
+    "options": [
+      "Reflect in the \\(x\\)-axis, then shift up by \\(9\\) units",
+      "Shift up by \\(9\\) units, then reflect in the \\(x\\)-axis",
+      "Reflect in the \\(y\\)-axis, then shift up by \\(9\\)",
+      "Horizontal stretch by \\(9\\), then reflect in the \\(x\\)-axis"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Reflect in the \\(x\\)-axis: \\(y = -x^2\\).",
+        "workingOut": "\\(y = -x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Shift up \\(9\\): \\(y = -x^2 + 9 = 9 - x^2\\).",
+        "workingOut": "\\(y = 9 - x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Order matters: reflecting after shifting up would give \\(y = -(x^2 + 9)\\), not the target.",
+        "workingOut": "\\(\\text{reflect then up } 9\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = f(x) + 2\\)?",
+    "a": "1",
+    "opts": [
+      "Shift the graph vertically downwards by \\(2\\) units",
+      "Shift the graph vertically upwards by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph horizontally left by \\(2\\) units"
+    ],
+    "options": [
+      "Shift the graph vertically downwards by \\(2\\) units",
+      "Shift the graph vertically upwards by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph horizontally left by \\(2\\) units"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(y \\to y + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{up } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = f(x) + 2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = f(x - 2)\\)?",
+    "a": "2",
+    "opts": [
+      "Shift the graph horizontally left by \\(2\\) units",
+      "Shift the graph vertically up by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph vertically down by \\(2\\) units"
+    ],
+    "options": [
+      "Shift the graph horizontally left by \\(2\\) units",
+      "Shift the graph vertically up by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph vertically down by \\(2\\) units"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(x \\to x - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{right } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = f(x - 2)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17d",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = f(x) - 2\\)?",
+    "a": "3",
+    "opts": [
+      "Shift the graph vertically upwards by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph horizontally left by \\(2\\) units",
+      "Shift the graph vertically downwards by \\(2\\) units"
+    ],
+    "options": [
+      "Shift the graph vertically upwards by \\(2\\) units",
+      "Shift the graph horizontally right by \\(2\\) units",
+      "Shift the graph horizontally left by \\(2\\) units",
+      "Shift the graph vertically downwards by \\(2\\) units"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(y \\to y - 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{down } 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = f(x) - 2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17e",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = f(-x)\\)?",
+    "a": "0",
+    "opts": [
+      "Reflect the graph across the \\(y\\)-axis",
+      "Reflect the graph across the \\(x\\)-axis",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift the graph left by \\(1\\) unit"
+    ],
+    "options": [
+      "Reflect the graph across the \\(y\\)-axis",
+      "Reflect the graph across the \\(x\\)-axis",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift the graph left by \\(1\\) unit"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(x \\to -x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{reflect in } y\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = f(-x)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17f",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = -f(x)\\)?",
+    "a": "1",
+    "opts": [
+      "Reflect the graph across the \\(y\\)-axis",
+      "Reflect the graph across the \\(x\\)-axis",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift the graph down by \\(1\\) unit"
+    ],
+    "options": [
+      "Reflect the graph across the \\(y\\)-axis",
+      "Reflect the graph across the \\(x\\)-axis",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift the graph down by \\(1\\) unit"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(y \\to -y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{reflect in } x\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = -f(x)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17g",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = -f(-x)\\)?",
+    "a": "2",
+    "opts": [
+      "Reflect across the \\(x\\)-axis only",
+      "Reflect across the \\(y\\)-axis only",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift left by \\(1\\) then up by \\(1\\)"
+    ],
+    "options": [
+      "Reflect across the \\(x\\)-axis only",
+      "Reflect across the \\(y\\)-axis only",
+      "Rotate the graph \\(180^\\circ\\) about the origin",
+      "Shift left by \\(1\\) then up by \\(1\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(x \\to -x\\) and \\(y \\to -y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(180^\\circ\\) rotation",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = -f(-x)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17h",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = 3f(x)\\)?",
+    "a": "3",
+    "opts": [
+      "Stretch the graph horizontally by a factor of \\(3\\)",
+      "Compress the graph vertically by a factor of \\(3\\)",
+      "Compress the graph horizontally by a factor of \\(\\dfrac{1}{3}\\)",
+      "Stretch the graph vertically by a factor of \\(3\\)"
+    ],
+    "options": [
+      "Stretch the graph horizontally by a factor of \\(3\\)",
+      "Compress the graph vertically by a factor of \\(3\\)",
+      "Compress the graph horizontally by a factor of \\(\\dfrac{1}{3}\\)",
+      "Stretch the graph vertically by a factor of \\(3\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(y \\to 3y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{vertical } \\times 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = 3f(x)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q17i",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Starting from a graph of \\(y = f(x)\\), which transformation produces \\(y = f\\!\\left(\\dfrac{1}{3}x\\right)\\)?",
+    "a": "0",
+    "opts": [
+      "Stretch the graph horizontally by a factor of \\(3\\)",
+      "Stretch the graph vertically by a factor of \\(3\\)",
+      "Compress the graph horizontally by a factor of \\(3\\)",
+      "Compress the graph vertically by a factor of \\(\\dfrac{1}{3}\\)"
+    ],
+    "options": [
+      "Stretch the graph horizontally by a factor of \\(3\\)",
+      "Stretch the graph vertically by a factor of \\(3\\)",
+      "Compress the graph horizontally by a factor of \\(3\\)",
+      "Compress the graph vertically by a factor of \\(\\dfrac{1}{3}\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Identify the algebraic change to \\(x\\) or \\(y\\).",
+        "workingOut": "\\(x \\to \\dfrac{x}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Translate that into a geometric transformation of the graph.",
+        "workingOut": "\\(\\text{horizontal } \\times 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Resulting equation matches the target.",
+        "workingOut": "\\(y = f\\!\\left(\\dfrac{x}{3}\\right)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q6b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "A cubic-looking graph has a local maximum and a local minimum that are not symmetrically placed about either axis. Classify the function as odd, even, or neither.",
+    "a": "1",
+    "opts": [
+      "Odd",
+      "Neither",
+      "Even",
+      "Both odd and even"
+    ],
+    "options": [
+      "Odd",
+      "Neither",
+      "Even",
+      "Both odd and even"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Even graphs are symmetric about the \\(y\\)-axis; this graph is not.",
+        "workingOut": "\\(\\text{not even}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Odd graphs have \\(180^\\circ\\) rotational symmetry about the origin; this graph does not.",
+        "workingOut": "\\(\\text{not odd}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore the function is neither odd nor even.",
+        "workingOut": "\\(\\text{neither}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q22a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Let \\(f(x) = \\begin{cases} x^2 & x \\le 0 \\\\ x^2 + 2 & x > 0 \\end{cases}\\). Is \\(f\\) continuous at \\(x = 0\\)?",
+    "a": "2",
+    "opts": [
+      "Yes — both limits equal \\(0\\)",
+      "Yes — both limits equal \\(2\\)",
+      "No — left limit is \\(0\\) but right limit is \\(2\\)",
+      "No — the function is undefined at \\(x = 0\\)"
+    ],
+    "options": [
+      "Yes — both limits equal \\(0\\)",
+      "Yes — both limits equal \\(2\\)",
+      "No — left limit is \\(0\\) but right limit is \\(2\\)",
+      "No — the function is undefined at \\(x = 0\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Left: \\(\\lim_{x \\to 0^-} x^2 = 0\\), and \\(f(0) = 0\\).",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Right: \\(\\lim_{x \\to 0^+} (x^2 + 2) = 2\\).",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits disagree, so discontinuous at \\(x = 0\\).",
+        "workingOut": "\\(\\text{discontinuous}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q22b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "For the same \\(f\\) as above, what are the domain and range?",
+    "a": "3",
+    "opts": [
+      "Domain: \\(x \\le 0\\); range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\); range: \\(y > 2\\)",
+      "Domain: all real \\(x\\); range: \\((-\\infty, 0] \\cup (2, \\infty)\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)"
+    ],
+    "options": [
+      "Domain: \\(x \\le 0\\); range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\); range: \\(y > 2\\)",
+      "Domain: all real \\(x\\); range: \\((-\\infty, 0] \\cup (2, \\infty)\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Both pieces cover their half-lines; domain is \\(\\mathbb{R}\\).",
+        "workingOut": "\\(D = \\mathbb{R}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For \\(x \\le 0\\), \\(y = x^2 \\ge 0\\). For \\(x > 0\\), \\(y = x^2 + 2 > 2\\).",
+        "workingOut": "\\(y \\ge 0\\) or \\(y > 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combined range is still \\(y \\ge 0\\) (values in \\((0, 2]\\) come from the left branch).",
+        "workingOut": "\\(R = [0, \\infty)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q23a",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Let \\(f(x) = \\begin{cases} x^2 - 9 & x < 3 \\\\ x - 3 & x \\ge 3 \\end{cases}\\). Is \\(f\\) continuous at \\(x = 3\\)?",
+    "a": "0",
+    "opts": [
+      "Yes — both one-sided limits equal \\(f(3) = 0\\)",
+      "No — left limit is \\(0\\) but right limit is \\(3\\)",
+      "No — left limit is \\(-9\\) but right limit is \\(0\\)",
+      "Yes — but only from the right"
+    ],
+    "options": [
+      "Yes — both one-sided limits equal \\(f(3) = 0\\)",
+      "No — left limit is \\(0\\) but right limit is \\(3\\)",
+      "No — left limit is \\(-9\\) but right limit is \\(0\\)",
+      "Yes — but only from the right"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Left: \\(\\lim_{x \\to 3^-} (x^2 - 9) = 0\\).",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Right and value: \\(f(3) = 3 - 3 = 0\\).",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits and value agree: continuous at \\(x = 3\\).",
+        "workingOut": "\\(\\text{continuous}\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q23b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "For the same \\(f\\) as above, what are the domain and range?",
+    "a": "1",
+    "opts": [
+      "Domain: \\(x \\ge 3\\); range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\); range: \\(y > -9\\)"
+    ],
+    "options": [
+      "Domain: \\(x \\ge 3\\); range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\); range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\); range: \\(y > -9\\)"
+    ],
+    "h": "",
+    "s": "",
+    "solutionSteps": [
+      {
+        "explanation": "Pieces cover all reals; domain is \\(\\mathbb{R}\\).",
+        "workingOut": "\\(D = \\mathbb{R}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Left branch has minimum \\(-9\\) at \\(x = 0\\); right branch gives \\(y \\ge 0\\).",
+        "workingOut": "\\(y \\ge -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combined range is \\(y \\ge -9\\).",
+        "workingOut": "\\(R = [-9, \\infty)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q8d",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch the graph of \\(y = |x| + 4\\), indicating the vertex.",
+    "a": "V-shaped graph with vertex at \\((0, 4)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "Start from \\(y = |x|\\) with vertex \\((0, 0)\\).",
+        "workingOut": "\\(y = |x|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add \\(4\\): shift up by \\(4\\). Vertex moves to \\((0, 4)\\).",
+        "workingOut": "\\((0, 4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch the V with arms of slope \\(\\pm 1\\).",
+        "workingOut": "\\(y = |x| + 4\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"194.7\" x2=\"282\" y2=\"194.7\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"208.7\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"159.0\" y1=\"22\" x2=\"159.0\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"165.0\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M36.0,56.5 L159.0,125.6 L282.0,56.5\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <circle cx=\"159.0\" cy=\"125.6\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"167\" y=\"117.63636363636363\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(0, 4)</text>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = |x| + 4</text>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12b-sketch",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch \\(y = (x - 3)^2 - 7\\), marking the vertex and intercepts.",
+    "a": "Upright parabola, vertex \\((3, -7)\\); \\(y\\)-int \\((0, 2)\\); \\(x\\)-ints \\((3 \\pm \\sqrt{7}, 0)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "Vertex form already gives vertex \\((3, -7)\\).",
+        "workingOut": "\\((3, -7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y\\)-intercept: set \\(x = 0\\) to get \\(2\\).",
+        "workingOut": "\\((0, 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch the upright parabola through these points.",
+        "workingOut": "\\(\\text{sketch}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\"><line x1=\"36\" y1=\"43.1\" x2=\"282\" y2=\"43.1\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"57.1\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"66.8\" y1=\"22\" x2=\"66.8\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"72.8\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text><path d=\"M36.0,22.0 L40.9,22.0 L45.8,22.0 L50.8,22.0 L55.7,22.0 L60.6,22.0 L65.5,22.0 L70.4,22.0 L75.4,34.7 L80.3,52.5 L85.2,69.3 L90.1,85.0 L95.0,99.6 L100.0,113.1 L104.9,125.5 L109.8,136.8 L114.7,147.1 L119.6,156.3 L124.6,164.4 L129.5,171.4 L134.4,177.4 L139.3,182.2 L144.2,186.0 L149.2,188.7 L154.1,190.3 L159.0,190.9 L163.9,190.3 L168.8,188.7 L173.8,186.0 L178.7,182.2 L183.6,177.4 L188.5,171.4 L193.4,164.4 L198.4,156.3 L203.3,147.1 L208.2,136.8 L213.1,125.5 L218.0,113.1 L223.0,99.6 L227.9,85.0 L232.8,69.3 L237.7,52.5 L242.6,34.7 L247.6,22.0 L252.5,22.0 L257.4,22.0 L262.3,22.0 L267.2,22.0 L272.2,22.0 L277.1,22.0 L282.0,22.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"159.0\" cy=\"190.9\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"167\" y=\"182.88888888888889\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(3, -7)</text><circle cx=\"66.8\" cy=\"0.9\" r=\"3\" fill=\"#f59e0b\"/><text x=\"72.75\" y=\"-5.111111111111111\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(0,2)</text><text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = (x−3)² − 7</text></svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12c-sketch",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch \\(y = -(x - 2)^2 + 9\\), marking the vertex and intercepts.",
+    "a": "Downward parabola, vertex \\((2, 9)\\); intercepts \\((0, 5)\\), \\((-1, 0)\\), \\((5, 0)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "Vertex \\((2, 9)\\); opens downward.",
+        "workingOut": "\\((2, 9)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Mark intercepts \\((0, 5)\\), \\((-1, 0)\\), \\((5, 0)\\).",
+        "workingOut": "\\(\\text{intercepts}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch the inverted parabola.",
+        "workingOut": "\\(\\text{sketch}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\"><line x1=\"97.5\" y1=\"22\" x2=\"97.5\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"103.5\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text><path d=\"M36.0,212.0 L40.9,212.0 L45.8,212.0 L50.8,212.0 L55.7,212.0 L60.6,212.0 L65.5,212.0 L70.4,212.0 L75.4,199.3 L80.3,181.5 L85.2,164.7 L90.1,149.0 L95.0,134.4 L100.0,120.9 L104.9,108.5 L109.8,97.2 L114.7,86.9 L119.6,77.7 L124.6,69.6 L129.5,62.6 L134.4,56.6 L139.3,51.8 L144.2,48.0 L149.2,45.3 L154.1,43.7 L159.0,43.1 L163.9,43.7 L168.8,45.3 L173.8,48.0 L178.7,51.8 L183.6,56.6 L188.5,62.6 L193.4,69.6 L198.4,77.7 L203.3,86.9 L208.2,97.2 L213.1,108.5 L218.0,120.9 L223.0,134.4 L227.9,149.0 L232.8,164.7 L237.7,181.5 L242.6,199.3 L247.6,212.0 L252.5,212.0 L257.4,212.0 L262.3,212.0 L267.2,212.0 L272.2,212.0 L277.1,212.0 L282.0,212.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"159.0\" cy=\"43.1\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"167\" y=\"35.111111111111114\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(2, 9)</text><circle cx=\"97.5\" cy=\"127.6\" r=\"3\" fill=\"#f59e0b\"/><text x=\"103.5\" y=\"121.55555555555556\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(0,5)</text><circle cx=\"66.8\" cy=\"233.1\" r=\"3\" fill=\"#f59e0b\"/><text x=\"72.75\" y=\"227.11111111111111\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(-1,0)</text><circle cx=\"251.3\" cy=\"233.1\" r=\"3\" fill=\"#f59e0b\"/><text x=\"257.25\" y=\"227.11111111111111\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(5,0)</text><text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = −(x−2)² + 9</text></svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q12d-sketch",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch \\(y = (x - 1)^2 - 4\\), marking the vertex and intercepts.",
+    "a": "Upright parabola, vertex \\((1, -4)\\); intercepts \\((0, -3)\\), \\((-1, 0)\\), \\((3, 0)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "Vertex \\((1, -4)\\).",
+        "workingOut": "\\((1, -4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Mark intercepts \\((0, -3)\\), \\((-1, 0)\\), \\((3, 0)\\).",
+        "workingOut": "\\(\\text{intercepts}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch the upright parabola.",
+        "workingOut": "\\(\\text{sketch}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\"><line x1=\"36\" y1=\"106.4\" x2=\"282\" y2=\"106.4\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"120.4\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"128.3\" y1=\"22\" x2=\"128.3\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"134.3\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text><path d=\"M36.0,22.0 L40.9,22.0 L45.8,22.0 L50.8,22.0 L55.7,22.0 L60.6,22.0 L65.5,22.0 L70.4,22.0 L75.4,34.7 L80.3,52.5 L85.2,69.3 L90.1,85.0 L95.0,99.6 L100.0,113.1 L104.9,125.5 L109.8,136.8 L114.7,147.1 L119.6,156.3 L124.6,164.4 L129.5,171.4 L134.4,177.4 L139.3,182.2 L144.2,186.0 L149.2,188.7 L154.1,190.3 L159.0,190.9 L163.9,190.3 L168.8,188.7 L173.8,186.0 L178.7,182.2 L183.6,177.4 L188.5,171.4 L193.4,164.4 L198.4,156.3 L203.3,147.1 L208.2,136.8 L213.1,125.5 L218.0,113.1 L223.0,99.6 L227.9,85.0 L232.8,69.3 L237.7,52.5 L242.6,34.7 L247.6,22.0 L252.5,22.0 L257.4,22.0 L262.3,22.0 L267.2,22.0 L272.2,22.0 L277.1,22.0 L282.0,22.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"159.0\" cy=\"190.9\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"167\" y=\"182.88888888888889\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(1, -4)</text><circle cx=\"128.3\" cy=\"169.8\" r=\"3\" fill=\"#f59e0b\"/><text x=\"134.25\" y=\"163.77777777777777\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(0,−3)</text><circle cx=\"97.5\" cy=\"106.4\" r=\"3\" fill=\"#f59e0b\"/><text x=\"103.5\" y=\"100.44444444444444\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(-1,0)</text><circle cx=\"220.5\" cy=\"106.4\" r=\"3\" fill=\"#f59e0b\"/><text x=\"226.5\" y=\"100.44444444444444\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(3,0)</text><text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = (x−1)² − 4</text></svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q19b",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch on one pair of axes: \\(y = -\\dfrac{1}{3}x\\), \\(y = -\\dfrac{1}{3}x + 2\\), \\(y = -\\dfrac{1}{3}x - 3\\).",
+    "a": "Three parallel lines, gradient \\(-\\dfrac{1}{3}\\), \\(y\\)-intercepts \\(0\\), \\(2\\), \\(-3\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "All three lines share gradient \\(m = -\\dfrac{1}{3}\\).",
+        "workingOut": "\\(m = -\\dfrac{1}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y\\)-intercepts are \\(0\\), \\(2\\) and \\(-3\\).",
+        "workingOut": "\\((0,0),\\ (0,2),\\ (0,-3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch three parallel lines through these intercepts.",
+        "workingOut": "\\(\\text{parallel lines}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"117.0\" x2=\"282\" y2=\"117.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"131.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"159.0\" y1=\"22\" x2=\"159.0\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"165.0\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M36.0,79.0 L40.9,80.5 L45.8,82.0 L50.8,83.6 L55.7,85.1 L60.6,86.6 L65.5,88.1 L70.4,89.6 L75.4,91.2 L80.3,92.7 L85.2,94.2 L90.1,95.7 L95.0,97.2 L100.0,98.8 L104.9,100.3 L109.8,101.8 L114.7,103.3 L119.6,104.8 L124.6,106.4 L129.5,107.9 L134.4,109.4 L139.3,110.9 L144.2,112.4 L149.2,114.0 L154.1,115.5 L159.0,117.0 L163.9,118.5 L168.8,120.0 L173.8,121.6 L178.7,123.1 L183.6,124.6 L188.5,126.1 L193.4,127.6 L198.4,129.2 L203.3,130.7 L208.2,132.2 L213.1,133.7 L218.0,135.2 L223.0,136.8 L227.9,138.3 L232.8,139.8 L237.7,141.3 L242.6,142.8 L247.6,144.4 L252.5,145.9 L257.4,147.4 L262.3,148.9 L267.2,150.4 L272.2,152.0 L277.1,153.5 L282.0,155.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><path d=\"M36.0,41.0 L40.9,42.5 L45.8,44.0 L50.8,45.6 L55.7,47.1 L60.6,48.6 L65.5,50.1 L70.4,51.6 L75.4,53.2 L80.3,54.7 L85.2,56.2 L90.1,57.7 L95.0,59.2 L100.0,60.8 L104.9,62.3 L109.8,63.8 L114.7,65.3 L119.6,66.8 L124.6,68.4 L129.5,69.9 L134.4,71.4 L139.3,72.9 L144.2,74.4 L149.2,76.0 L154.1,77.5 L159.0,79.0 L163.9,80.5 L168.8,82.0 L173.8,83.6 L178.7,85.1 L183.6,86.6 L188.5,88.1 L193.4,89.6 L198.4,91.2 L203.3,92.7 L208.2,94.2 L213.1,95.7 L218.0,97.2 L223.0,98.8 L227.9,100.3 L232.8,101.8 L237.7,103.3 L242.6,104.8 L247.6,106.4 L252.5,107.9 L257.4,109.4 L262.3,110.9 L267.2,112.4 L272.2,114.0 L277.1,115.5 L282.0,117.0\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/><path d=\"M36.0,136.0 L40.9,137.5 L45.8,139.0 L50.8,140.6 L55.7,142.1 L60.6,143.6 L65.5,145.1 L70.4,146.6 L75.4,148.2 L80.3,149.7 L85.2,151.2 L90.1,152.7 L95.0,154.2 L100.0,155.8 L104.9,157.3 L109.8,158.8 L114.7,160.3 L119.6,161.8 L124.6,163.4 L129.5,164.9 L134.4,166.4 L139.3,167.9 L144.2,169.4 L149.2,171.0 L154.1,172.5 L159.0,174.0 L163.9,175.5 L168.8,177.0 L173.8,178.6 L178.7,180.1 L183.6,181.6 L188.5,183.1 L193.4,184.6 L198.4,186.2 L203.3,187.7 L208.2,189.2 L213.1,190.7 L218.0,192.2 L223.0,193.8 L227.9,195.3 L232.8,196.8 L237.7,198.3 L242.6,199.8 L247.6,201.4 L252.5,202.9 L257.4,204.4 L262.3,205.9 L267.2,207.4 L272.2,209.0 L277.1,210.5 L282.0,212.0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">m = −1/3</text>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q19c",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch on one pair of axes: \\(y = x + 4\\), \\(y = 4 - x\\), \\(y = -x - 4\\).",
+    "a": "Three lines: slopes \\(1\\), \\(-1\\), \\(-1\\) with intercepts forming a triangular pattern.",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "\\(y = x + 4\\): intercepts \\((0, 4)\\), \\((-4, 0)\\).",
+        "workingOut": "\\(y = x + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = 4 - x\\): intercepts \\((0, 4)\\), \\((4, 0)\\).",
+        "workingOut": "\\(y = 4 - x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = -x - 4\\): intercepts \\((0, -4)\\), \\((-4, 0)\\). Sketch all three.",
+        "workingOut": "\\(y = -x - 4\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"117.0\" x2=\"282\" y2=\"117.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"131.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"159.0\" y1=\"22\" x2=\"159.0\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"165.0\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M36.0,148.7 L40.9,144.9 L45.8,141.1 L50.8,137.3 L55.7,133.5 L60.6,129.7 L65.5,125.9 L70.4,122.1 L75.4,118.3 L80.3,114.5 L85.2,110.7 L90.1,106.9 L95.0,103.1 L100.0,99.3 L104.9,95.5 L109.8,91.7 L114.7,87.9 L119.6,84.1 L124.6,80.3 L129.5,76.5 L134.4,72.7 L139.3,68.9 L144.2,65.1 L149.2,61.3 L154.1,57.5 L159.0,53.7 L163.9,49.9 L168.8,46.1 L173.8,42.3 L178.7,38.5 L183.6,34.7 L188.5,30.9 L193.4,27.1 L198.4,23.3 L203.3,22.0 L208.2,22.0 L213.1,22.0 L218.0,22.0 L223.0,22.0 L227.9,22.0 L232.8,22.0 L237.7,22.0 L242.6,22.0 L247.6,22.0 L252.5,22.0 L257.4,22.0 L262.3,22.0 L267.2,22.0 L272.2,22.0 L277.1,22.0 L282.0,22.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><path d=\"M36.0,22.0 L40.9,22.0 L45.8,22.0 L50.8,22.0 L55.7,22.0 L60.6,22.0 L65.5,22.0 L70.4,22.0 L75.4,22.0 L80.3,22.0 L85.2,22.0 L90.1,22.0 L95.0,22.0 L100.0,22.0 L104.9,22.0 L109.8,22.0 L114.7,22.0 L119.6,23.3 L124.6,27.1 L129.5,30.9 L134.4,34.7 L139.3,38.5 L144.2,42.3 L149.2,46.1 L154.1,49.9 L159.0,53.7 L163.9,57.5 L168.8,61.3 L173.8,65.1 L178.7,68.9 L183.6,72.7 L188.5,76.5 L193.4,80.3 L198.4,84.1 L203.3,87.9 L208.2,91.7 L213.1,95.5 L218.0,99.3 L223.0,103.1 L227.9,106.9 L232.8,110.7 L237.7,114.5 L242.6,118.3 L247.6,122.1 L252.5,125.9 L257.4,129.7 L262.3,133.5 L267.2,137.3 L272.2,141.1 L277.1,144.9 L282.0,148.7\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/><path d=\"M36.0,85.3 L40.9,89.1 L45.8,92.9 L50.8,96.7 L55.7,100.5 L60.6,104.3 L65.5,108.1 L70.4,111.9 L75.4,115.7 L80.3,119.5 L85.2,123.3 L90.1,127.1 L95.0,130.9 L100.0,134.7 L104.9,138.5 L109.8,142.3 L114.7,146.1 L119.6,149.9 L124.6,153.7 L129.5,157.5 L134.4,161.3 L139.3,165.1 L144.2,168.9 L149.2,172.7 L154.1,176.5 L159.0,180.3 L163.9,184.1 L168.8,187.9 L173.8,191.7 L178.7,195.5 L183.6,199.3 L188.5,203.1 L193.4,206.9 L198.4,210.7 L203.3,212.0 L208.2,212.0 L213.1,212.0 L218.0,212.0 L223.0,212.0 L227.9,212.0 L232.8,212.0 L237.7,212.0 L242.6,212.0 L247.6,212.0 L252.5,212.0 L257.4,212.0 L262.3,212.0 L267.2,212.0 L272.2,212.0 L277.1,212.0 L282.0,212.0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q19g",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch on one pair of axes: \\(y = x^2 - 4\\), \\(y = 4 - x^2\\), \\(y = 9 - x^2\\).",
+    "a": "One upright parabola vertex \\((0, -4)\\); two inverted with vertices \\((0, 4)\\) and \\((0, 9)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "\\(y = x^2 - 4\\): opens up, vertex \\((0, -4)\\).",
+        "workingOut": "\\((0, -4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = 4 - x^2\\) and \\(y = 9 - x^2\\): open down, vertices \\((0, 4)\\), \\((0, 9)\\).",
+        "workingOut": "\\((0,4),\\ (0,9)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch all three on the same axes.",
+        "workingOut": "\\(\\text{sketch}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"140.8\" x2=\"282\" y2=\"140.8\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"154.8\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"159.0\" y1=\"22\" x2=\"159.0\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"165.0\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M36.0,22.0 L40.9,22.0 L45.8,27.4 L50.8,41.1 L55.7,54.2 L60.6,66.6 L65.5,78.5 L70.4,89.8 L75.4,100.4 L80.3,110.4 L85.2,119.9 L90.1,128.7 L95.0,136.9 L100.0,144.5 L104.9,151.5 L109.8,157.8 L114.7,163.6 L119.6,168.8 L124.6,173.4 L129.5,177.3 L134.4,180.7 L139.3,183.4 L144.2,185.5 L149.2,187.0 L154.1,187.9 L159.0,188.3 L163.9,187.9 L168.8,187.0 L173.8,185.5 L178.7,183.4 L183.6,180.7 L188.5,177.3 L193.4,173.4 L198.4,168.8 L203.3,163.6 L208.2,157.9 L213.1,151.5 L218.0,144.5 L223.0,136.9 L227.9,128.7 L232.8,119.8 L237.7,110.4 L242.6,100.4 L247.6,89.8 L252.5,78.5 L257.4,66.6 L262.3,54.2 L267.2,41.1 L272.2,27.4 L277.1,22.0 L282.0,22.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/><path d=\"M36.0,212.0 L40.9,212.0 L45.8,212.0 L50.8,212.0 L55.7,212.0 L60.6,212.0 L65.5,203.0 L70.4,191.7 L75.4,181.1 L80.3,171.1 L85.2,161.7 L90.1,152.8 L95.0,144.6 L100.0,137.0 L104.9,130.0 L109.8,123.7 L114.7,117.9 L119.6,112.7 L124.6,108.1 L129.5,104.2 L134.4,100.8 L139.3,98.1 L144.2,96.0 L149.2,94.5 L154.1,93.6 L159.0,93.3 L163.9,93.6 L168.8,94.5 L173.8,96.0 L178.7,98.1 L183.6,100.8 L188.5,104.2 L193.4,108.1 L198.4,112.7 L203.3,117.9 L208.2,123.6 L213.1,130.0 L218.0,137.0 L223.0,144.6 L227.9,152.8 L232.8,161.7 L237.7,171.1 L242.6,181.1 L247.6,191.7 L252.5,203.0 L257.4,212.0 L262.3,212.0 L267.2,212.0 L272.2,212.0 L277.1,212.0 L282.0,212.0\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/><path d=\"M36.0,212.0 L40.9,209.0 L45.8,194.7 L50.8,181.0 L55.7,167.9 L60.6,155.5 L65.5,143.6 L70.4,132.4 L75.4,121.7 L80.3,111.7 L85.2,102.3 L90.1,93.5 L95.0,85.3 L100.0,77.7 L104.9,70.7 L109.8,64.3 L114.7,58.5 L119.6,53.3 L124.6,48.8 L129.5,44.8 L134.4,41.5 L139.3,38.7 L144.2,36.6 L149.2,35.1 L154.1,34.2 L159.0,33.9 L163.9,34.2 L168.8,35.1 L173.8,36.6 L178.7,38.7 L183.6,41.5 L188.5,44.8 L193.4,48.8 L198.4,53.3 L203.3,58.5 L208.2,64.3 L213.1,70.7 L218.0,77.7 L223.0,85.3 L227.9,93.5 L232.8,102.3 L237.7,111.7 L242.6,121.7 L247.6,132.4 L252.5,143.6 L257.4,155.5 L262.3,167.9 L267.2,181.0 L272.2,194.7 L277.1,209.0 L282.0,212.0\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q19j",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch on one pair of axes: \\(y = \\sqrt{x}\\), \\(y = \\sqrt{x} + 2\\), \\(y = \\sqrt{x + 2}\\).",
+    "a": "Three half-parabolas starting at \\((0, 0)\\), \\((0, 2)\\) and \\((-2, 0)\\).",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "\\(y = \\sqrt{x}\\) starts at \\((0, 0)\\).",
+        "workingOut": "\\((0, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = \\sqrt{x} + 2\\) is shifted up to start at \\((0, 2)\\).",
+        "workingOut": "\\((0, 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = \\sqrt{x + 2}\\) is shifted left to start at \\((-2, 0)\\).",
+        "workingOut": "\\((-2, 0)\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"180.3\" x2=\"282\" y2=\"180.3\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"194.3\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"118.0\" y1=\"22\" x2=\"118.0\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"124.0\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M118.0,180.3 L121.3,169.4 L124.6,164.8 L127.8,161.3 L131.1,158.4 L134.4,155.8 L137.7,153.5 L141.0,151.3 L144.2,149.3 L147.5,147.4 L150.8,145.6 L154.1,144.0 L157.4,142.3 L160.6,140.8 L163.9,139.3 L167.2,137.8 L170.5,136.5 L173.8,135.1 L177.0,133.8 L180.3,132.5 L183.6,131.3 L186.9,130.1 L190.2,128.9 L193.4,127.7 L196.7,126.6 L200.0,125.5 L203.3,124.4 L206.6,123.3 L209.8,122.3 L213.1,121.3 L216.4,120.3 L219.7,119.3 L223.0,118.3 L226.2,117.3 L229.5,116.4 L232.8,115.4 L236.1,114.5 L239.4,113.6 L242.6,112.7 L245.9,111.8 L249.2,111.0 L252.5,110.1 L255.8,109.2 L259.0,108.4 L262.3,107.6 L265.6,106.7 L268.9,105.9 L272.2,105.1 L275.4,104.3 L278.7,103.5 L282.0,102.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <path d=\"M118.0,117.0 L121.3,106.0 L124.6,101.5 L127.8,98.0 L131.1,95.1 L134.4,92.5 L137.7,90.1 L141.0,88.0 L144.2,86.0 L147.5,84.1 L150.8,82.3 L154.1,80.6 L157.4,79.0 L160.6,77.4 L163.9,76.0 L167.2,74.5 L170.5,73.1 L173.8,71.8 L177.0,70.5 L180.3,69.2 L183.6,67.9 L186.9,66.7 L190.2,65.5 L193.4,64.4 L196.7,63.3 L200.0,62.2 L203.3,61.1 L206.6,60.0 L209.8,59.0 L213.1,57.9 L216.4,56.9 L219.7,55.9 L223.0,54.9 L226.2,54.0 L229.5,53.0 L232.8,52.1 L236.1,51.2 L239.4,50.3 L242.6,49.4 L245.9,48.5 L249.2,47.6 L252.5,46.8 L255.8,45.9 L259.0,45.1 L262.3,44.2 L265.6,43.4 L268.9,42.6 L272.2,41.8 L275.4,41.0 L278.7,40.2 L282.0,39.4\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M63.3,180.3 L67.7,167.7 L72.1,162.4 L76.5,158.4 L80.8,155.0 L85.2,152.0 L89.6,149.3 L93.9,146.8 L98.3,144.5 L102.7,142.3 L107.1,140.3 L111.4,138.3 L115.8,136.5 L120.2,134.7 L124.6,132.9 L128.9,131.3 L133.3,129.7 L137.7,128.1 L142.1,126.6 L146.4,125.1 L150.8,123.7 L155.2,122.3 L159.5,120.9 L163.9,119.6 L168.3,118.3 L172.7,117.0 L177.0,115.7 L181.4,114.5 L185.8,113.3 L190.2,112.1 L194.5,111.0 L198.9,109.8 L203.3,108.7 L207.7,107.6 L212.0,106.5 L216.4,105.4 L220.8,104.3 L225.1,103.3 L229.5,102.3 L233.9,101.2 L238.3,100.2 L242.6,99.2 L247.0,98.2 L251.4,97.3 L255.8,96.3 L260.1,95.4 L264.5,94.4 L268.9,93.5 L273.3,92.6 L277.6,91.7 L282.0,90.8\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
+  },
+  {
+    "id": "y11a-5i-q19o",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Sketch on one pair of axes: \\(y = \\sqrt{x}\\), \\(y = -\\sqrt{x}\\), \\(y = 3 - \\sqrt{x}\\).",
+    "a": "Half-parabolas from \\((0, 0)\\) up and down, and from \\((0, 3)\\) curving down.",
+    "opts": [],
+    "options": [],
+    "solutionSteps": [
+      {
+        "explanation": "\\(y = \\sqrt{x}\\) and \\(y = -\\sqrt{x}\\) are reflections across the \\(x\\)-axis.",
+        "workingOut": "\\(\\pm\\sqrt{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(y = 3 - \\sqrt{x}\\) starts at \\((0, 3)\\) and decreases.",
+        "workingOut": "\\((0, 3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch all three half-parabolas for \\(x \\ge 0\\).",
+        "workingOut": "\\(\\text{sketch}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"36\" y1=\"127.6\" x2=\"282\" y2=\"127.6\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"278\" y=\"141.6\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text><line x1=\"71.1\" y1=\"22\" x2=\"71.1\" y2=\"212\" stroke=\"#64748b\" stroke-width=\"1.5\"/><text x=\"77.1\" y=\"26\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M71.1,127.6 L75.4,120.2 L79.6,117.2 L83.8,114.9 L88.0,112.9 L92.2,111.2 L96.4,109.6 L100.7,108.2 L104.9,106.9 L109.1,105.6 L113.3,104.4 L117.5,103.3 L121.7,102.2 L126.0,101.2 L130.2,100.2 L134.4,99.2 L138.6,98.3 L142.8,97.4 L147.1,96.5 L151.3,95.7 L155.5,94.9 L159.7,94.0 L163.9,93.3 L168.1,92.5 L172.4,91.7 L176.6,91.0 L180.8,90.3 L185.0,89.6 L189.2,88.9 L193.4,88.2 L197.7,87.5 L201.9,86.8 L206.1,86.2 L210.3,85.5 L214.5,84.9 L218.7,84.3 L223.0,83.7 L227.2,83.1 L231.4,82.5 L235.6,81.9 L239.8,81.3 L244.0,80.7 L248.3,80.2 L252.5,79.6 L256.7,79.0 L260.9,78.5 L265.1,78.0 L269.3,77.4 L273.6,76.9 L277.8,76.4 L282.0,75.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\"/>\n  <path d=\"M71.1,127.6 L75.4,134.9 L79.6,137.9 L83.8,140.2 L88.0,142.2 L92.2,143.9 L96.4,145.5 L100.7,146.9 L104.9,148.2 L109.1,149.5 L113.3,150.7 L117.5,151.8 L121.7,152.9 L126.0,153.9 L130.2,154.9 L134.4,155.9 L138.6,156.8 L142.8,157.7 L147.1,158.6 L151.3,159.4 L155.5,160.3 L159.7,161.1 L163.9,161.9 L168.1,162.6 L172.4,163.4 L176.6,164.1 L180.8,164.8 L185.0,165.6 L189.2,166.3 L193.4,166.9 L197.7,167.6 L201.9,168.3 L206.1,168.9 L210.3,169.6 L214.5,170.2 L218.7,170.8 L223.0,171.4 L227.2,172.0 L231.4,172.6 L235.6,173.2 L239.8,173.8 L244.0,174.4 L248.3,174.9 L252.5,175.5 L256.7,176.1 L260.9,176.6 L265.1,177.2 L269.3,177.7 L273.6,178.2 L277.8,178.7 L282.0,179.3\" fill=\"none\" stroke=\"#22c55e\" stroke-width=\"2\"/>\n  <path d=\"M71.1,64.2 L75.4,71.5 L79.6,74.6 L83.8,76.9 L88.0,78.8 L92.2,80.6 L96.4,82.1 L100.7,83.6 L104.9,84.9 L109.1,86.2 L113.3,87.3 L117.5,88.5 L121.7,89.6 L126.0,90.6 L130.2,91.6 L134.4,92.5 L138.6,93.5 L142.8,94.4 L147.1,95.2 L151.3,96.1 L155.5,96.9 L159.7,97.7 L163.9,98.5 L168.1,99.3 L172.4,100.0 L176.6,100.8 L180.8,101.5 L185.0,102.2 L189.2,102.9 L193.4,103.6 L197.7,104.3 L201.9,104.9 L206.1,105.6 L210.3,106.2 L214.5,106.9 L218.7,107.5 L223.0,108.1 L227.2,108.7 L231.4,109.3 L235.6,109.9 L239.8,110.5 L244.0,111.0 L248.3,111.6 L252.5,112.2 L256.7,112.7 L260.9,113.3 L265.1,113.8 L269.3,114.4 L273.6,114.9 L277.8,115.4 L282.0,115.9\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n</svg>"
+        }
+      }
+    ],
+    "graphData": null,
+    "timeLimit": 60,
+    "isNew": true
   }
 ];
 
