@@ -2337,7 +2337,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                               <div style={{ fontSize: '0.65rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
                                 📊 Graph Preview (solution graph)
                               </div>
-                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: '320px' }} />
+                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '320px' }} />
                             </div>
                           )}
                         </div>
@@ -2565,7 +2565,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                                 <div style={{ fontSize: '0.62rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '5px' }}>
                                   📊 Graph Preview (solution graph)
                                 </div>
-                                <MathPreview content="" graphData={step.graphData} style={{ minHeight: '300px' }} />
+                                <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '300px' }} />
                               </div>
                             )}
                           </div>

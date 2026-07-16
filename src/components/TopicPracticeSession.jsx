@@ -1001,7 +1001,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                       )}
                       {step.graphData && (
                         <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                          <MathView content="" graphData={step.graphData} style={{ minHeight: '240px' }} />
+                          <MathView content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '240px' }} />
                         </div>
                       )}
                     </div>

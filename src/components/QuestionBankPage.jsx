@@ -706,7 +706,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                           style={{
                                             minHeight: step.graphData?.jsxGraph?.height
                                               ? `${step.graphData.jsxGraph.height}px`
-                                              : (step.graphData?.geometry ? 'auto' : '240px')
+                                              : (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '240px'
                                           }}
                                         />
                                       </div>
@@ -912,7 +912,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                             )}
                             {step.graphData && (
                               <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                                <MathView content="" graphData={step.graphData} style={{ minHeight: step.graphData?.geometry ? 'auto' : '240px' }} />
+                                <MathView content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '240px' }} />
                               </div>
                             )}
                           </div>

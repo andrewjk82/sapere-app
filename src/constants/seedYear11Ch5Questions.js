@@ -2046,7 +2046,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-4, 8, 4, -2],
+            "boundingbox": [
+              -4,
+              8,
+              4,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2054,11 +2059,17 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "V",
-                "coords": [0, 5],
+                "coords": [
+                  0,
+                  5
+                ],
                 "name": "(0,5)",
                 "color": "red",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               }
             ],
@@ -2091,7 +2102,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-4, 4, 4, -6],
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -6
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2099,31 +2115,49 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "V",
-                "coords": [0, -4],
+                "coords": [
+                  0,
+                  -4
+                ],
                 "name": "(0,-4)",
                 "color": "red",
                 "label": {
-                  "offset": [10, -10]
+                  "offset": [
+                    10,
+                    -10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X1",
-                "coords": [-2, 0],
+                "coords": [
+                  -2,
+                  0
+                ],
                 "name": "(-2,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [-15, 10]
+                  "offset": [
+                    -15,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X2",
-                "coords": [2, 0],
+                "coords": [
+                  2,
+                  0
+                ],
                 "name": "(2,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               }
             ],
@@ -2156,7 +2190,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-2, 10, 6, -2],
+            "boundingbox": [
+              -2,
+              10,
+              6,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2164,21 +2203,33 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "V",
-                "coords": [3, 0],
+                "coords": [
+                  3,
+                  0
+                ],
                 "name": "(3,0)",
                 "color": "red",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y",
-                "coords": [0, 9],
+                "coords": [
+                  0,
+                  9
+                ],
                 "name": "(0,9)",
                 "color": "slate",
                 "label": {
-                  "offset": [10, 0]
+                  "offset": [
+                    10,
+                    0
+                  ]
                 }
               }
             ],
@@ -2211,7 +2262,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-5, 6, 3, -2],
+            "boundingbox": [
+              -5,
+              6,
+              3,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2219,21 +2275,33 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "V",
-                "coords": [-2, 0],
+                "coords": [
+                  -2,
+                  0
+                ],
                 "name": "(-2,0)",
                 "color": "red",
                 "label": {
-                  "offset": [-15, 10]
+                  "offset": [
+                    -15,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y",
-                "coords": [0, 4],
+                "coords": [
+                  0,
+                  4
+                ],
                 "name": "(0,4)",
                 "color": "slate",
                 "label": {
-                  "offset": [10, 0]
+                  "offset": [
+                    10,
+                    0
+                  ]
                 }
               }
             ],
@@ -2266,7 +2334,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-6, 3, 2, -3],
+            "boundingbox": [
+              -6,
+              3,
+              2,
+              -3
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2274,11 +2347,17 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "Y",
-                "coords": [0, 0.33],
+                "coords": [
+                  0,
+                  0.33
+                ],
                 "name": "(0,1/3)",
                 "color": "slate",
                 "label": {
-                  "offset": [10, 0]
+                  "offset": [
+                    10,
+                    0
+                  ]
                 }
               }
             ],
@@ -2311,7 +2390,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-2, 3, 6, -3],
+            "boundingbox": [
+              -2,
+              3,
+              6,
+              -3
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2319,11 +2403,17 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "Y",
-                "coords": [0, -0.25],
+                "coords": [
+                  0,
+                  -0.25
+                ],
                 "name": "(0,-1/4)",
                 "color": "slate",
                 "label": {
-                  "offset": [-45, -5]
+                  "offset": [
+                    -45,
+                    -5
+                  ]
                 }
               }
             ],
@@ -2356,7 +2446,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-3, 5, 3, -1],
+            "boundingbox": [
+              -3,
+              5,
+              3,
+              -1
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2364,11 +2459,17 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "X",
-                "coords": [-0.5, 0],
+                "coords": [
+                  -0.5,
+                  0
+                ],
                 "name": "(-1/2,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [-25, 10]
+                  "offset": [
+                    -25,
+                    10
+                  ]
                 }
               }
             ],
@@ -2401,7 +2502,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-2, 2, 4, -7],
+            "boundingbox": [
+              -2,
+              2,
+              4,
+              -7
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2409,11 +2515,17 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "X",
-                "coords": [0.2, 0],
+                "coords": [
+                  0.2,
+                  0
+                ],
                 "name": "(1/5,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               }
             ],
@@ -2446,7 +2558,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-2, 6, 10, -6],
+            "boundingbox": [
+              -2,
+              6,
+              10,
+              -6
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2454,31 +2571,49 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "C",
-                "coords": [4, 0],
+                "coords": [
+                  4,
+                  0
+                ],
                 "name": "(4,0)",
                 "color": "red",
                 "label": {
-                  "offset": [10, -10]
+                  "offset": [
+                    10,
+                    -10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X1",
-                "coords": [0, 0],
+                "coords": [
+                  0,
+                  0
+                ],
                 "name": "(0,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [-15, -15]
+                  "offset": [
+                    -15,
+                    -15
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X2",
-                "coords": [8, 0],
+                "coords": [
+                  8,
+                  0
+                ],
                 "name": "(8,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               }
             ],
@@ -2511,7 +2646,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-4, 8, 4, -2],
+            "boundingbox": [
+              -4,
+              8,
+              4,
+              -2
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2519,31 +2659,49 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "C",
-                "coords": [0, 3],
+                "coords": [
+                  0,
+                  3
+                ],
                 "name": "(0,3)",
                 "color": "red",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y1",
-                "coords": [0, 0],
+                "coords": [
+                  0,
+                  0
+                ],
                 "name": "(0,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, -10]
+                  "offset": [
+                    10,
+                    -10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y2",
-                "coords": [0, 6],
+                "coords": [
+                  0,
+                  6
+                ],
                 "name": "(0,6)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               }
             ],
@@ -2576,7 +2734,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-6, 2, 6, -12],
+            "boundingbox": [
+              -6,
+              2,
+              6,
+              -12
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2584,31 +2747,49 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "C",
-                "coords": [0, -5],
+                "coords": [
+                  0,
+                  -5
+                ],
                 "name": "(0,-5)",
                 "color": "red",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y1",
-                "coords": [0, 0],
+                "coords": [
+                  0,
+                  0
+                ],
                 "name": "(0,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "Y2",
-                "coords": [0, -10],
+                "coords": [
+                  0,
+                  -10
+                ],
                 "name": "(0,-10)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, -10]
+                  "offset": [
+                    10,
+                    -10
+                  ]
                 }
               }
             ],
@@ -2641,7 +2822,12 @@ export const CH5_QUESTIONS_Y11A = [
           "jsxGraph": {
             "width": 300,
             "height": 300,
-            "boundingbox": [-6, 3, 2, -3],
+            "boundingbox": [
+              -6,
+              3,
+              2,
+              -3
+            ],
             "boardOptions": {
               "keepaspectratio": true
             },
@@ -2649,31 +2835,49 @@ export const CH5_QUESTIONS_Y11A = [
               {
                 "type": "point",
                 "id": "C",
-                "coords": [-2, 0],
+                "coords": [
+                  -2,
+                  0
+                ],
                 "name": "(-2,0)",
                 "color": "red",
                 "label": {
-                  "offset": [10, -10]
+                  "offset": [
+                    10,
+                    -10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X1",
-                "coords": [0, 0],
+                "coords": [
+                  0,
+                  0
+                ],
                 "name": "(0,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [10, 10]
+                  "offset": [
+                    10,
+                    10
+                  ]
                 }
               },
               {
                 "type": "point",
                 "id": "X2",
-                "coords": [-4, 0],
+                "coords": [
+                  -4,
+                  0
+                ],
                 "name": "(-4,0)",
                 "color": "blue",
                 "label": {
-                  "offset": [-25, 10]
+                  "offset": [
+                    -25,
+                    10
+                  ]
                 }
               }
             ],
@@ -6079,67 +6283,449 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-10",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Answer the following questions about the cubic $y = x^3 - 3x^2$, which can be factored as $y = x^2(x - 3)$. Notice that the curve has local turning points (where it is momentarily horizontal) at $(0, 0)$ and $(2, -4)$.\n**a)** Graph this cubic.\n**b)** The cubic is dilated vertically by a factor of 3.\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** Write down the equation of this new cubic.\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** Where is this new curve momentarily horizontal? Have the $x$-coordinates changed?\n**c)** The original cubic is dilated horizontally by a factor of 2.\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** Write down the equation of this third cubic.\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** Where is this third curve momentarily horizontal? Have the $y$-coordinates changed?",
-    "a": "See solution steps.",
+    "q": "Answer the following questions about the cubic \\(y = x^3 - 3x^2\\), which can be factored as \\(y = x^2(x - 3)\\). Notice that the curve has local turning points (where it is momentarily horizontal) at \\((0, 0)\\) and \\((2, -4)\\).",
+    "a": null,
     "opts": [],
-    "h": "Vertical dilations affect the y-coordinates of the turning points. Horizontal dilations affect the x-coordinates.",
-    "s": "**b)** i) $y = 3(x^3 - 3x^2) = 3x^3 - 9x^2$. ii) The $y$-coordinates are multiplied by 3. Turning points are $(0, 0)$ and $(2, -12)$. The $x$-coordinates have not changed.\\n**c)** i) $y = (\\frac{x}{2})^3 - 3(\\frac{x}{2})^2 = \\frac{x^3}{8} - \\frac{3x^2}{4}$. ii) The $x$-coordinates are multiplied by 2. Turning points are $(0, 0)$ and $(4, -4)$. The $y$-coordinates have not changed.",
-    "solutionSteps": [
+    "question": "Answer the following questions about the cubic \\(y = x^3 - 3x^2\\), which can be factored as \\(y = x^2(x - 3)\\). Notice that the curve has local turning points (where it is momentarily horizontal) at \\((0, 0)\\) and \\((2, -4)\\).",
+    "options": [],
+    "answer": null,
+    "subQuestions": [
       {
-        "explanation": "Part b: Vertical stretch.",
-        "workingOut": "y = 3(x^3 - 3x^2). \\text{ Turning points: } y \\times 3 \\implies (0,0), (2,-12)"
+        "id": "y11a-5D-new-10a",
+        "type": "teacher_review",
+        "requiresManualGrading": true,
+        "question": "Graph this cubic function \\(y = x^3 - 3x^2\\) on the number plane, indicating all intercepts and turning points.",
+        "opts": [],
+        "options": [],
+        "a": null,
+        "answer": null,
+        "hint": "Plot the intercepts at \\(x = 0, 3\\) and turning points at \\((0, 0), (2, -4)\\) before drawing the curve.",
+        "solution": "The graph is a smooth cubic curve. It has x-intercepts at \\(x = 0\\) (a double root where the curve is tangent to the axis) and \\(x = 3\\). The turning points are a local maximum at \\((0, 0)\\) and a local minimum at \\((2, -4)\\).",
+        "graphData": null,
+        "solutionSteps": [
+          {
+            "explanation": "We are given the cubic equation \\(y = x^3 - 3x^2\\) which factors as \\(y = x^2(x - 3)\\). Our strategy is to identify the key features of the graph, including the horizontal axis intercepts and the local turning points. This establishes the structural blueprint for sketching.",
+            "workingOut": "\\text{Key features: Intercepts and turning points}",
+            "graphData": null
+          },
+          {
+            "explanation": "We find the x-intercepts by setting the function equal to zero. The factor \\(x^2\\) implies a double root at \\(x = 0\\) where the graph touches the axis, while \\(x - 3 = 0\\) gives a single root at \\(x = 3\\). A common mistake is treating the origin as a simple crossing point rather than a tangent point. This identifies the horizontal axis crossings.",
+            "workingOut": "\\(x^2(x - 3) = 0 \\implies x = 0 \\text{ (double root) and } x = 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We locate the local turning points at \\((0, 0)\\) and \\((2, -4)\\) as given. We draw a smooth, continuous cubic curve that starts in the third quadrant, reaches a local maximum at the origin, dips to a local minimum at \\((2, -4)\\), and then rises into the first quadrant. This confirms the graphical shape of the function.",
+            "workingOut": "\\text{Turning points: } (0, 0) \\text{ (max), } (2, -4) \\text{ (min)}",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <!-- Grid Lines -->\n  <path d=\"M 0,20 H 300 M 0,40 H 300 M 0,60 H 300 M 0,80 H 300 M 0,120 H 300 M 0,140 H 300 M 0,160 H 300 M 0,180 H 300 M 0,200 H 300 M 0,220 H 300\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <path d=\"M 20,0 V 240 M 40,0 V 240 M 60,0 V 240 M 80,0 V 240 M 120,0 V 240 M 140,0 V 240 M 160,0 V 240 M 180,0 V 240 M 200,0 V 240 M 220,0 V 240 M 240,0 V 240 M 260,0 V 240 M 280,0 V 240\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"100\" x2=\"290\" y2=\"100\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"100\" y1=\"10\" x2=\"100\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <!-- Axes Labels -->\n  <text x=\"285\" y=\"115\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"85\" y=\"15\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <!-- Curve y = x^3 - 3x^2 -->\n  <path d=\"M 40,220 C 70,160 85,100 100,100 C 115,100 150,180 180,180 C 200,180 210,140 230,20\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" />\n  <!-- Key points -->\n  <circle cx=\"100\" cy=\"100\" r=\"4\" fill=\"#ef4444\" />\n  <text x=\"80\" y=\"95\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(0,0)</text>\n  <circle cx=\"180\" cy=\"180\" r=\"4\" fill=\"#ef4444\" />\n  <text x=\"185\" y=\"195\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(2,-4)</text>\n  <circle cx=\"220\" cy=\"100\" r=\"4\" fill=\"#ef4444\" />\n  <text x=\"220\" y=\"90\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">3</text>\n</svg>"
+            }
+          }
+        ]
       },
       {
-        "explanation": "Part c: Horizontal stretch.",
-        "workingOut": "y = (x/2)^3 - 3(x/2)^2. \\text{ Turning points: } x \\times 2 \\implies (0,0), (4,-4)"
+        "id": "y11a-5D-new-10b-1",
+        "type": "multiple_choice",
+        "question": "The cubic is dilated vertically by a factor of 3. Write down the equation of this new cubic.",
+        "opts": [
+          "\\(y = x^3 - 3x^2 + 3\\)",
+          "\\(y = 3x^3 - 3x^2\\)",
+          "\\(y = 3x^3 - 9x^2\\)",
+          "\\(y = \\dfrac{1}{3}x^3 - x^2\\)"
+        ],
+        "options": [
+          "\\(y = x^3 - 3x^2 + 3\\)",
+          "\\(y = 3x^3 - 3x^2\\)",
+          "\\(y = 3x^3 - 9x^2\\)",
+          "\\(y = \\dfrac{1}{3}x^3 - x^2\\)"
+        ],
+        "a": 2,
+        "answer": 2,
+        "hint": "Multiply the entire function formula by the vertical dilation factor.",
+        "solution": "Vertically dilating a function \\(y = f(x)\\) by a factor of \\(k\\) yields \\(y = k \\cdot f(x)\\). Here, \\(y = 3(x^3 - 3x^2) = 3x^3 - 9x^2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the function \\(f(x) = x^3 - 3x^2\\) and told it is dilated vertically by a factor of 3. Our strategy is to multiply the entire output formula by the dilation factor. This corresponds to the vertical stretching transformation.",
+            "workingOut": "\\(y_{new} = 3 \\cdot f(x)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We substitute the algebraic expression for \\(f(x)\\) into the product. We expand the expression by distributing the factor of 3 to both terms. A common mistake is only multiplying the leading term by 3 and neglecting the quadratic term. This step gives us the expanded polynomial form.",
+            "workingOut": "\\(y = 3(x^3 - 3x^2) \\;\\Rightarrow\\; y = 3x^3 - 9x^2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We confirm that every vertical coordinate is scaled by a factor of 3, corresponding to a vertical stretch. The final answer is \\(y = 3x^3 - 9x^2\\), which represents the equation of the transformed cubic curve. This completes the derivation by verifying the vertical scale change.",
+            "workingOut": "\\(y = 3x^3 - 9x^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-10b-2",
+        "type": "multiple_choice",
+        "question": "Where are the turning points of this vertically dilated curve? Have the \\(x\\)-coordinates of the turning points changed?",
+        "opts": [
+          "Turning points are \\((0, 0)\\) and \\((6, -4)\\); \\(x\\)-coordinates have changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -12)\\); \\(x\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -1.33)\\); \\(x\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -4)\\); \\(x\\)-coordinates have not changed."
+        ],
+        "options": [
+          "Turning points are \\((0, 0)\\) and \\((6, -4)\\); \\(x\\)-coordinates have changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -12)\\); \\(x\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -1.33)\\); \\(x\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -4)\\); \\(x\\)-coordinates have not changed."
+        ],
+        "a": 1,
+        "answer": 1,
+        "hint": "Vertical stretch changes only the vertical coordinates by the dilation factor.",
+        "solution": "Turning points are scaled vertically: \\((x, y) \\to (x, 3y)\\). Thus, \\((0, 0)\\) stays \\((0, 0)\\), and \\((2, -4)\\) becomes \\((2, -12)\\). The \\(x\\)-coordinates remain unchanged.",
+        "solutionSteps": [
+          {
+            "explanation": "We are given turning points at \\((0, 0)\\) and \\((2, -4)\\) on the base graph, which is dilated vertically by 3. Our strategy is to multiply each turning point's vertical coordinate by the factor of 3 while leaving the horizontal coordinates constant. This applies the vertical coordinate scaling rule.",
+            "workingOut": "\\((x, y) \\;→\\; (x, 3y)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We calculate the coordinates for each point individually. For the origin, the product remains zero. For the second point, we multiply the vertical coordinate \\(-4\\) by 3. A common mistake is multiplying the horizontal coordinate instead, which represents a horizontal transformation. This yields the new coordinate pairs.",
+            "workingOut": "\\((0, 0) \\;→\\; (0, 3 \\times 0) = (0, 0) \\quad \\text{and} \\quad (2, -4) \\;→\\; (2, 3 \\times -4) = (2, -12)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We conclude that the horizontal coordinates are unchanged, while the vertical coordinates are stretched downward. Therefore, the final answer is that the turning points are \\((0, 0)\\) and \\((2, -12)\\), and the horizontal coordinates have not changed. This verifies the new locations of the turning points geometrically.",
+            "workingOut": "\\text{Turning points: } (0, 0), (2, -12) \\quad (x\\text{-coordinates unchanged})",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-10c-1",
+        "type": "multiple_choice",
+        "question": "The original cubic is dilated horizontally by a factor of 2. Write down the equation of this third cubic.",
+        "opts": [
+          "\\(y = 8x^3 - 12x^2\\)",
+          "\\(y = 2x^3 - 6x^2\\)",
+          "\\(y = \\dfrac{x^3}{2} - \\dfrac{3x^2}{2}\\)",
+          "\\(y = \\dfrac{x^3}{8} - \\dfrac{3x^2}{4}\\)"
+        ],
+        "options": [
+          "\\(y = 8x^3 - 12x^2\\)",
+          "\\(y = 2x^3 - 6x^2\\)",
+          "\\(y = \\dfrac{x^3}{2} - \\dfrac{3x^2}{2}\\)",
+          "\\(y = \\dfrac{x^3}{8} - \\dfrac{3x^2}{4}\\)"
+        ],
+        "a": 3,
+        "answer": 3,
+        "hint": "Replace every x in the equation with (x/2).",
+        "solution": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) gives: \\(y = (\\frac{x}{2})^3 - 3(\\frac{x}{2})^2 = \\frac{x^3}{8} - \\frac{3x^2}{4}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the function \\(f(x) = x^3 - 3x^2\\) and told it is dilated horizontally by a factor of 2. Our strategy is to replace each variable \\(x\\) with \\(\\dfrac{x}{2}\\). This horizontal scaling method represents stretching by 2.",
+            "workingOut": "\\(y = f\\left(\\dfrac{x}{2}\\right)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We perform the algebraic replacement in both terms. We simplify by raising both components of the fraction to the power, evaluating \\(2^3 = 8\\) and \\(2^2 = 4\\). A common mistake is multiplying the variable by 2 as \\(f(2x)\\), which would compress rather than stretch the graph. This gives us the factored fractional terms.",
+            "workingOut": "\\(y = \\left(\\dfrac{x}{2}\\right)^3 - 3\\left(\\dfrac{x}{2}\\right)^2 \\;\\Rightarrow\\; y = \\dfrac{x^3}{8} - 3\\left(\\dfrac{x^2}{4}\\right)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We simplify the terms to write the final expanded formula. This represents the equation of the horizontally stretched cubic function. The final answer is \\(y = \\dfrac{x^3}{8} - \\dfrac{3x^2}{4}\\). This completes the horizontal scale transformation validation.",
+            "workingOut": "\\(y = \\dfrac{x^3}{8} - \\dfrac{3x^2}{4}\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-10c-2",
+        "type": "multiple_choice",
+        "question": "Where are the turning points of this horizontally dilated curve? Have the \\(y\\)-coordinates of the turning points changed?",
+        "opts": [
+          "Turning points are \\((0, 0)\\) and \\((4, -4)\\); \\(y\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -8)\\); \\(y\\)-coordinates have changed.",
+          "Turning points are \\((0, 0)\\) and \\((1, -4)\\); \\(y\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((4, -8)\\); \\(y\\)-coordinates have changed."
+        ],
+        "options": [
+          "Turning points are \\((0, 0)\\) and \\((4, -4)\\); \\(y\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((2, -8)\\); \\(y\\)-coordinates have changed.",
+          "Turning points are \\((0, 0)\\) and \\((1, -4)\\); \\(y\\)-coordinates have not changed.",
+          "Turning points are \\((0, 0)\\) and \\((4, -8)\\); \\(y\\)-coordinates have changed."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Horizontal dilation scales only the horizontal coordinates by the dilation factor.",
+        "solution": "Turning points are scaled horizontally: \\((x, y) \\to (2x, y)\\). Thus, \\((0, 0)\\) stays \\((0, 0)\\), and \\((2, -4)\\) becomes \\((4, -4)\\). The \\(y\\)-coordinates remain unchanged.",
+        "solutionSteps": [
+          {
+            "explanation": "We are given turning points at \\((0, 0)\\) and \\((2, -4)\\) on the base graph, which is dilated horizontally by 2. Our strategy is to multiply each turning point's horizontal coordinate by the factor of 2 while leaving the vertical coordinates constant. This applies the horizontal coordinate scaling rule.",
+            "workingOut": "\\((x, y) \\;→\\; (2x, y)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We calculate the coordinates for each point individually. For the origin, the product remains zero. For the second point, we multiply the horizontal coordinate \\(2\\) by 2. A common mistake is multiplying the vertical coordinate instead, which represents a vertical transformation. This yields the new coordinate pairs.",
+            "workingOut": "\\((0, 0) \\;→\\; (2 \\times 0, 0) = (0, 0) \\quad \\text{and} \\quad (2, -4) \\;→\\; (2 \\times 2, -4) = (4, -4)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We conclude that the vertical coordinates are unchanged, while the horizontal coordinates are stretched outward. Therefore, the final answer is that the turning points are \\((0, 0)\\) and \\((4, -4)\\), and the vertical coordinates have not changed. This confirms the coordinates of the turning points after horizontal dilation.",
+            "workingOut": "\\text{Turning points: } (0, 0), (4, -4) \\quad (y\\text{-coordinates unchanged})",
+            "graphData": null
+          }
+        ]
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-11a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "The cubic $y = x^3$ is transformed to obtain $y = \\frac{1}{64}x^3$.\n**i)** Explain the transformation as a horizontal stretch.\n**ii)** Explain the transformation as a vertical stretch.\n**iii)** Graph both functions on the same number plane.",
-    "a": "Horizontal stretch by 4. OR Vertical compression by 1/64.",
+    "q": "The cubic \\(y = x^3\\) is transformed to obtain \\(y = \\dfrac{1}{64}x^3\\).",
+    "a": null,
     "opts": [],
-    "h": "Rewrite $\\frac{1}{64}x^3$ as $(\\frac{x}{4})^3$.",
-    "s": "i) Since $y = \\frac{1}{64}x^3 = (\\frac{x}{4})^3$, it can be viewed as a horizontal stretch by a factor of 4.\\nii) It can also be viewed directly as $y = \\frac{1}{64}(x^3)$, which is a vertical compression by a factor of $\\frac{1}{64}$.",
-    "solutionSteps": [
+    "question": "The cubic \\(y = x^3\\) is transformed to obtain \\(y = \\dfrac{1}{64}x^3\\).",
+    "options": [],
+    "answer": null,
+    "subQuestions": [
       {
-        "explanation": "Horizontal view.",
-        "workingOut": "y = (\\frac{x}{4})^3 \\implies \\text{Horizontal stretch by 4.}"
+        "id": "y11a-5D-new-11a-1",
+        "type": "multiple_choice",
+        "question": "Explain the transformation as a horizontal dilation.",
+        "opts": [
+          "Horizontal dilation by a factor of 64",
+          "Horizontal dilation by a factor of 4",
+          "Horizontal dilation by a factor of \\(\\frac{1}{4}\\)",
+          "Horizontal dilation by a factor of 16"
+        ],
+        "options": [
+          "Horizontal dilation by a factor of 64",
+          "Horizontal dilation by a factor of 4",
+          "Horizontal dilation by a factor of \\(\\frac{1}{4}\\)",
+          "Horizontal dilation by a factor of 16"
+        ],
+        "a": 1,
+        "answer": 1,
+        "hint": "Rewrite the transformed equation in the form y = (x/k)^3.",
+        "solution": "We can rewrite the equation as \\(y = \\frac{1}{64}x^3 = (\\frac{x}{4})^3 = (\\frac{x}{k})^3\\) where \\(k=4\\). This is a horizontal dilation by a factor of 4.",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the transformed equation \\(y = \\dfrac{1}{64}x^3\\). To interpret it as a horizontal dilation, our strategy is to rewrite the expression so that the horizontal variable is grouped inside the cube power. This is of the form \\(y = \\left(\\dfrac{x}{k}\\right)^3\\).",
+            "workingOut": "\\(y = \\left(\\dfrac{x}{k}\\right)^3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We take the cube root of the coefficient \\(\\dfrac{1}{64}\\) to bring it inside the power, which is \\(\\dfrac{1}{4}\\) since \\(4^3 = 64\\). We write the expression as \\(y = \\left(\\dfrac{x}{4}\\right)^3\\). A common mistake is interpreting the divisor as the factor directly without taking the power root. This step gives us the horizontal dilation form.",
+            "workingOut": "\\(y = \\dfrac{1}{64}x^3 = \\left(\\dfrac{1}{4}\\right)^3 x^3 = \\left(\\dfrac{x}{4}\\right)^3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We match this with the standard horizontal dilation form. Since \\(x\\) is divided by 4, this corresponds to a horizontal stretch by a factor of 4. Therefore, the final answer is that it represents a horizontal dilation by a factor of 4.",
+            "workingOut": "\\text{Dilation factor: } k = 4 \\implies \\text{Horizontal dilation by 4}",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Vertical view.",
-        "workingOut": "y = \\frac{1}{64}(x^3) \\implies \\text{Vertical compression by 1/64.}"
+        "id": "y11a-5D-new-11a-2",
+        "type": "multiple_choice",
+        "question": "Explain the transformation as a vertical dilation.",
+        "opts": [
+          "Vertical dilation by a factor of 64",
+          "Vertical dilation by a factor of 4",
+          "Vertical dilation by a factor of \\(\\frac{1}{64}\\)",
+          "Vertical dilation by a factor of \\(\\frac{1}{4}\\)"
+        ],
+        "options": [
+          "Vertical dilation by a factor of 64",
+          "Vertical dilation by a factor of 4",
+          "Vertical dilation by a factor of \\(\\frac{1}{64}\\)",
+          "Vertical dilation by a factor of \\(\\frac{1}{4}\\)"
+        ],
+        "a": 2,
+        "answer": 2,
+        "hint": "Express the equation in the form y = c * f(x) where f(x) = x^3.",
+        "solution": "We can write \\(y = \\frac{1}{64}(x^3) = c \\cdot f(x)\\) where \\(c = \\frac{1}{64}\\). This is a vertical dilation by a factor of \\(\\frac{1}{64}\\) (a vertical compression).",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the transformed equation \\(y = \\dfrac{1}{64}x^3\\). To interpret it as a vertical dilation, our strategy is to isolate the scaling factor outside the base function \\(f(x) = x^3\\). This is of the form \\(y = c \\cdot f(x)\\).",
+            "workingOut": "\\(y = c \\cdot x^3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We identify the constant scaling factor directly from the equation, which is \\(c = \\dfrac{1}{64}\\). A common mistake is confusing this with the horizontal root factor \\(\\frac{1}{4}\\). This step gives the vertical dilation factor.",
+            "workingOut": "\\(c = \\dfrac{1}{64}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We match this with the standard vertical dilation definition. Since the factor is \\(\\dfrac{1}{64}\\), it represents a vertical compression by this factor. Thus, the final answer is that it represents a vertical dilation by a factor of \\(\\dfrac{1}{64}\\).",
+            "workingOut": "\\text{Vertical dilation by } \\dfrac{1}{64}",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-11a-3",
+        "type": "teacher_review",
+        "requiresManualGrading": true,
+        "question": "Graph both functions \\(y = x^3\\) and \\(y = \\dfrac{1}{64}x^3\\) on the same set of coordinate axes.",
+        "opts": [],
+        "options": [],
+        "a": null,
+        "answer": null,
+        "hint": "Draw \\(y = x^3\\) passing through \\((1, 1)\\) and \\((2, 8)\\), and show \\(y = \\frac{1}{64}x^3\\) much closer to the horizontal axis.",
+        "solution": "The graph displays two cubic curves intersecting at the origin \\((0,0)\\). The standard cubic \\(y = x^3\\) rises steeply, passing through \\((2, 8)\\) and \\((-2, -8)\\). The transformed curve \\(y = \\frac{1}{64}x^3\\) is vertically compressed, passing through \\((4, 1)\\) and \\((-4, -1)\\), presenting a wider shape.",
+        "graphData": null,
+        "solutionSteps": [
+          {
+            "explanation": "We are given two cubic functions to graph on the same axes: the base curve \\(y = x^3\\) and the dilated curve \\(y = \\dfrac{1}{64}x^3\\). Our strategy is to determine key coordinates for both curves to show their relative steepness and shape. This establishes the graphing reference points.",
+            "workingOut": "\\text{Functions: } y = x^3 \\text{ and } y = \\dfrac{1}{64}x^3",
+            "graphData": null
+          },
+          {
+            "explanation": "We evaluate coordinates for both functions. For \\(y = x^3\\), we use \\((0, 0)\\), \\((2, 8)\\), and \\((-2, -8)\\). For \\(y = \\dfrac{1}{64}x^3\\), we evaluate the coordinates to find nice integer pairs like \\((4, 1)\\) and \\((-4, -1)\\). A common mistake is sketching both curves with the same slope, ignoring the scaling difference. This identifies the key coordinate pairs.",
+            "workingOut": "\\text{Curve 1: } (2, 8), (0, 0), (-2, -8) \\quad \\text{Curve 2: } (4, 1), (0, 0), (-4, -1)",
+            "graphData": null
+          },
+          {
+            "explanation": "We sketch both cubic curves through the origin. The curve \\(y = x^3\\) rises steeply, while the curve \\(y = \\dfrac{1}{64}x^3\\) is compressed towards the horizontal axis, appearing wider. This confirms the graphical comparison of the two cubics on the plane.",
+            "workingOut": "\\text{Sketch both curves intersecting at } (0, 0)",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <!-- Grid Lines -->\n  <path d=\"M 0,20 H 300 M 0,40 H 300 M 0,60 H 300 M 0,80 H 300 M 0,100 H 300 M 0,140 H 300 M 0,160 H 300 M 0,180 H 300 M 0,200 H 300 M 0,220 H 300\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <path d=\"M 20,0 V 240 M 40,0 V 240 M 60,0 V 240 M 80,0 V 240 M 100,0 V 240 M 120,0 V 240 M 160,0 V 240 M 180,0 V 240 M 200,0 V 240 M 220,0 V 240 M 240,0 V 240 M 260,0 V 240 M 280,0 V 240\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <!-- Axes Labels -->\n  <text x=\"285\" y=\"135\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"125\" y=\"15\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <!-- Curve y = x^3 (Steep) -->\n  <path d=\"M 100,220 C 120,180 130,120 140,120 C 150,120 160,60 180,20\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\" />\n  <text x=\"185\" y=\"25\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = x³</text>\n  <!-- Curve y = 1/64 x^3 (Compressed) -->\n  <path d=\"M 30,210 C 90,180 120,120 140,120 C 160,120 190,60 250,30\" fill=\"none\" stroke=\"#10b981\" stroke-width=\"2\" />\n  <text x=\"220\" y=\"45\" font-size=\"10\" fill=\"#10b981\" font-weight=\"bold\">y = x³/64</text>\n</svg>"
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-11b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "The cubic $y = x^3$ is transformed to obtain $y = -x^3$.\n**i)** Explain the transformation as a horizontal stretch/reflection.\n**ii)** Explain the transformation as a vertical stretch/reflection.\n**iii)** Graph both functions on the same number plane.",
-    "a": "Horizontal reflection across y-axis. OR Vertical reflection across x-axis.",
+    "q": "The cubic \\(y = x^3\\) is transformed to obtain \\(y = -x^3\\).",
+    "a": null,
     "opts": [],
-    "h": "Does $(-x)^3$ equal $-(x^3)$?",
-    "s": "i) Since $y = (-x)^3 = -x^3$, it is a reflection across the $y$-axis (horizontal dilation by factor -1).\\nii) Since $y = -(x^3) = -x^3$, it is a reflection across the $x$-axis (vertical dilation by factor -1). For odd functions, these two reflections produce the same result.",
-    "solutionSteps": [
+    "question": "The cubic \\(y = x^3\\) is transformed to obtain \\(y = -x^3\\).",
+    "options": [],
+    "answer": null,
+    "subQuestions": [
       {
-        "explanation": "Horizontal view.",
-        "workingOut": "y = (-x)^3 \\implies \\text{Reflection in y-axis.}"
+        "id": "y11a-5D-new-11b-1",
+        "type": "multiple_choice",
+        "question": "Explain the transformation as a horizontal transformation (reflection).",
+        "opts": [
+          "Reflection across the \\(x\\)-axis (vertical reflection)",
+          "Horizontal dilation by a factor of 2",
+          "Horizontal shift to the left by 1 unit",
+          "Reflection across the \\(y\\)-axis (horizontal reflection)"
+        ],
+        "options": [
+          "Reflection across the \\(x\\)-axis (vertical reflection)",
+          "Horizontal dilation by a factor of 2",
+          "Horizontal shift to the left by 1 unit",
+          "Reflection across the \\(y\\)-axis (horizontal reflection)"
+        ],
+        "a": 3,
+        "answer": 3,
+        "hint": "Substitute -x into the base function y = x^3 and evaluate.",
+        "solution": "Replacing \\(x\\) with \\(-x\\) gives \\(y = (-x)^3 = -x^3\\). Thus, the transformation can be viewed as a reflection across the \\(y\\)-axis.",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the transformed equation \\(y = -x^3\\). To interpret this horizontally, our strategy is to check if replacing the variable \\(x\\) with \\(-x\\) yields the same algebraic formula. This tests for horizontal reflection symmetry.",
+            "workingOut": "\\(y = f(-x) = (-x)^3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We evaluate the cube of the negative variable, noting that \\((-x)^3 = -x^3\\). A common mistake is assuming that horizontal reflection must yield a different graph shape, ignoring that odd functions relate horizontal and vertical reflections. This identity links the two forms.",
+            "workingOut": "\\(y = (-x)^3 = -x^3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We conclude that because \\((-x)^3 = -x^3\\), the transformation is algebraically equivalent to replacing \\(x\\) with \\(-x\\), which is a reflection across the vertical \\(y\\)-axis. Therefore, the final answer is a reflection across the \\(y\\)-axis. This confirms the horizontal transformation matches origin reflection behavior.",
+            "workingOut": "\\text{Reflection across the } y\\text{-axis}",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Vertical view.",
-        "workingOut": "y = -(x^3) \\implies \\text{Reflection in x-axis.}"
+        "id": "y11a-5D-new-11b-2",
+        "type": "multiple_choice",
+        "question": "Explain the transformation as a vertical transformation (reflection).",
+        "opts": [
+          "Reflection across the \\(x\\)-axis (vertical reflection)",
+          "Reflection across the \\(y\\)-axis (horizontal reflection)",
+          "Vertical dilation by a factor of 2",
+          "Vertical shift downwards by 1 unit"
+        ],
+        "options": [
+          "Reflection across the \\(x\\)-axis (vertical reflection)",
+          "Reflection across the \\(y\\)-axis (horizontal reflection)",
+          "Vertical dilation by a factor of 2",
+          "Vertical shift downwards by 1 unit"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Express the transformation in the form y = -f(x) where f(x) = x^3.",
+        "solution": "The equation is of the form \\(y = -f(x)\\) where \\(f(x) = x^3\\). This is a reflection across the \\(x\\)-axis.",
+        "solutionSteps": [
+          {
+            "explanation": "We are given the transformed equation \\(y = -x^3\\). To interpret it vertically, our strategy is to check if the entire output of the base function \\(f(x) = x^3\\) has been multiplied by \\(-1\\). This represents vertical reflection.",
+            "workingOut": "\\(y = -f(x)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We identify that the negative sign is positioned outside the cube function, making it \\(y = -(x^3)\\). A common mistake is confusing this with horizontal reflection, which is only identical because the function is odd. This step confirms the negative scaling factor.",
+            "workingOut": "\\(y = -(x^3)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "We conclude that multiplying the entire function output by \\(-1\\) is a reflection across the horizontal \\(x\\)-axis. Therefore, the final answer is a reflection across the \\(x\\)-axis. This geometric interpretation verifies the vertical reflection behavior.",
+            "workingOut": "\\text{Reflection across the } x\\text{-axis}",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-11b-3",
+        "type": "teacher_review",
+        "requiresManualGrading": true,
+        "question": "Graph both functions \\(y = x^3\\) and \\(y = -x^3\\) on the same set of coordinate axes.",
+        "opts": [],
+        "options": [],
+        "a": null,
+        "answer": null,
+        "hint": "Graph \\(y = x^3\\) rising from quadrant 3 to quadrant 1, and graph \\(y = -x^3\\) falling from quadrant 2 to quadrant 4.",
+        "solution": "The graph shows two cubic curves intersecting at the origin \\((0,0)\\). The standard cubic \\(y = x^3\\) goes from the bottom-left to the top-right, passing through \\((2, 8)\\). The reflected cubic \\(y = -x^3\\) goes from the top-left to the bottom-right, passing through \\((2, -8)\\).",
+        "graphData": null,
+        "solutionSteps": [
+          {
+            "explanation": "We are given two cubic functions to graph on the same axes: the base curve \\(y = x^3\\) and the reflected curve \\(y = -x^3\\). Our strategy is to determine key coordinates for both curves to show their reflectional relationship. This establishes the graphing reference points.",
+            "workingOut": "\\text{Functions: } y = x^3 \\text{ and } y = -x^3",
+            "graphData": null
+          },
+          {
+            "explanation": "We evaluate coordinates for both functions. For \\(y = x^3\\), we use \\((0, 0)\\), \\((1, 1)\\), and \\((-1, -1)\\). For \\(y = -x^3\\), the coordinates are reflected, yielding \\((1, -1)\\) and \\((-1, 1)\\). A common mistake is drawing the reflected curve in the wrong quadrants. This identifies the key coordinate pairs.",
+            "workingOut": "\\text{Curve 1: } (1, 1), (0, 0), (-1, -1) \\quad \\text{Curve 2: } (1, -1), (0, 0), (-1, 1)",
+            "graphData": null
+          },
+          {
+            "explanation": "We sketch both cubic curves through the origin. The curve \\(y = x^3\\) rises from the third quadrant to the first quadrant, while \\(y = -x^3\\) falls from the second quadrant to the fourth quadrant. This confirms the graphical reflection of the two curves.",
+            "workingOut": "\\text{Sketch both curves intersecting at } (0, 0)",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <!-- Grid Lines -->\n  <path d=\"M 0,20 H 300 M 0,40 H 300 M 0,60 H 300 M 0,80 H 300 M 0,100 H 300 M 0,140 H 300 M 0,160 H 300 M 0,180 H 300 M 0,200 H 300 M 0,220 H 300\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <path d=\"M 20,0 V 240 M 40,0 V 240 M 60,0 V 240 M 80,0 V 240 M 100,0 V 240 M 120,0 V 240 M 160,0 V 240 M 180,0 V 240 M 200,0 V 240 M 220,0 V 240 M 240,0 V 240 M 260,0 V 240 M 280,0 V 240\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <!-- Axes Labels -->\n  <text x=\"285\" y=\"135\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"125\" y=\"15\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <!-- Curve y = x^3 -->\n  <path d=\"M 100,220 C 120,180 130,120 140,120 C 150,120 160,60 180,20\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\" />\n  <text x=\"185\" y=\"25\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = x³</text>\n  <!-- Curve y = -x^3 -->\n  <path d=\"M 100,20 C 120,60 130,120 140,120 C 150,120 160,180 180,220\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"4\" />\n  <text x=\"185\" y=\"215\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = -x³</text>\n</svg>"
+            }
+          }
+        ]
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-11c",
@@ -11847,1120 +12433,1122 @@ export const CH5_QUESTIONS_Y11A = [
     ]
   }
 ];
+
 export const Y11_CH5_QUESTIONS = [
-{
-  "id": "y11a-5-22a",
-  "c": "5H",
-  "t": "Piecewise Functions",
-  "type": "multiple_choice",
-  "difficulty": "medium",
-  "q": "A piecewise function is defined as $f(x) = 2x + 1$ for $x < 0$ and $f(x) = x^2$ for $x \\ge 0$. Evaluate $f(-3)$.",
-  "a": "0",
-  "opts": [
-  "$-5$",
-  "$9$",
-  "$7$",
-  "$-8$"],
-
-  "h": "Determine which condition $x = -3$ satisfies.",
-  "s": "Since $-3 < 0$, we use the first rule: $f(-3) = 2(-3) + 1 = -6 + 1 = -5$.",
-  "solutionSteps": [
   {
-    "explanation": "Choose the correct domain.",
-    "workingOut": "-3 < 0 \\implies \\text{use } 2x + 1"
-  },
-  {
-    "explanation": "Evaluate.",
-    "workingOut": "f(-3) = 2(-3) + 1 = -5"
-  }]
-
-},
-{
-  "id": "y11a-5-22b",
-  "c": "5H",
-  "t": "Piecewise Functions",
-  "type": "multiple_choice",
-  "difficulty": "medium",
-  "q": "A piecewise function is defined as $f(x) = 2x + 1$ for $x < 0$ and $f(x) = x^2$ for $x \\ge 0$. Evaluate $f(4)$.",
-  "a": "0",
-  "opts": [
-  "$16$",
-  "$9$",
-  "$17$",
-  "$8$"],
-
-  "h": "Determine which condition $x = 4$ satisfies.",
-  "s": "Since $4 \\ge 0$, we use the second rule: $f(4) = 4^2 = 16$.",
-  "solutionSteps": [
-  {
-    "explanation": "Choose the correct domain.",
-    "workingOut": "4 \\ge 0 \\implies \\text{use } x^2"
-  },
-  {
-    "explanation": "Evaluate.",
-    "workingOut": "f(4) = 4^2 = 16"
-  }]
-
-},
-{
-  "id": "y11a-5-23a",
-  "c": "5H",
-  "t": "Piecewise Functions",
-  "type": "multiple_choice",
-  "difficulty": "hard",
-  "q": "Let $f(x) = x + 3$ for $x < 2$, and $f(x) = kx^2$ for $x \\ge 2$. Find the value of $k$ that makes the function continuous at $x = 2$.",
-  "a": "0",
-  "opts": [
-  "$k = \\frac{5}{4}$",
-  "$k = 5$",
-  "$k = 1$",
-  "$k = \\frac{4}{5}$"],
-
-  "h": "For continuity at $x=2$, the limit as $x \\to 2^-$ must equal the value at $x=2$.",
-  "s": "Approaching from the left: $f(2^-) = 2 + 3 = 5$. Approaching from the right: $f(2) = k(2^2) = 4k$. Set them equal: $4k = 5 \\implies k = 5/4$.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate the left side limit.",
-    "workingOut": "x \\to 2^- \\implies x + 3 = 5"
-  },
-  {
-    "explanation": "Evaluate the right side value.",
-    "workingOut": "f(2) = k(2)^2 = 4k"
-  },
-  {
-    "explanation": "Equate for continuity.",
-    "workingOut": "4k = 5 \\implies k = \\frac{5}{4}"
-  }]
-
-},
-{
-  "id": "y11a-5-23b",
-  "c": "5H",
-  "t": "Piecewise Functions",
-  "type": "multiple_choice",
-  "difficulty": "hard",
-  "q": "Let $f(x) = -x + 6$ for $x < 3$, and $f(x) = kx + 1$ for $x \\ge 3$. Find the value of $k$ that makes the function continuous at $x = 3$.",
-  "a": "0",
-  "opts": [
-  "$k = \\frac{2}{3}$",
-  "$k = 1$",
-  "$k = \\frac{4}{3}$",
-  "$k = 3$"],
-
-  "h": "Match the values of the two pieces at $x=3$.",
-  "s": "Left piece at $x=3$: $-3 + 6 = 3$. Right piece at $x=3$: $k(3) + 1 = 3k + 1$. Setting them equal: $3k + 1 = 3 \\implies 3k = 2 \\implies k = 2/3$.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate the left side limit.",
-    "workingOut": "-3 + 6 = 3"
-  },
-  {
-    "explanation": "Evaluate the right side limit.",
-    "workingOut": "3k + 1"
-  },
-  {
-    "explanation": "Equate and solve.",
-    "workingOut": "3k + 1 = 3 \\implies k = \\frac{2}{3}"
-  }]
-
-},
-{
-  "id": "y11a-5h-1a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "State the zeroes and discontinuities of the function: $g(t) = \\frac{7}{8 - t}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: None, Discontinuities: $t = 8$",
-  "Zeroes: $t = 7$, Discontinuities: $t = 8$",
-  "Zeroes: $t = 8$, Discontinuities: None",
-  "Zeroes: None, Discontinuities: $t = -8$"],
-
-  "h": "Zeroes occur when the numerator is zero. Discontinuities occur when the denominator is zero.",
-  "s": "Numerator is $7$, which is never zero, so there are no zeroes. Denominator is $0$ when $8 - t = 0$, so $t = 8$ is a discontinuity.",
-  "solutionSteps": [
-  {
-    "explanation": "Identify zeroes by setting the numerator to zero.",
-    "workingOut": "7 = 0 \\text{ (No solution, so no zeroes)}"
-  },
-  {
-    "explanation": "Identify discontinuities by setting the denominator to zero.",
-    "workingOut": "8 - t = 0 \\Rightarrow t = 8"
-  }]
-
-},
-{
-  "id": "y11a-5h-1b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "State the zeroes and discontinuities of the function: $h(y) = \\frac{4y}{(y - 2)(y - 4)(y - 6)}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: $y = 0$, Discontinuities: $y = 2, 4, 6$",
-  "Zeroes: $y = 2, 4, 6$, Discontinuities: $y = 0$",
-  "Zeroes: None, Discontinuities: $y = 2, 4, 6$",
-  "Zeroes: $y = 0$, Discontinuities: $y = -2, -4, -6$"],
-
-  "h": "Zeroes occur when the numerator is zero. Discontinuities occur when the denominator is zero.",
-  "s": "Numerator is zero when $4y = 0 \\Rightarrow y = 0$. Denominator is zero when $y = 2, 4$, or $6$.",
-  "solutionSteps": [
-  {
-    "explanation": "Set the numerator to zero to find the zeroes.",
-    "workingOut": "4y = 0 \\Rightarrow y = 0"
-  },
-  {
-    "explanation": "Set the denominator to zero to find the discontinuities.",
-    "workingOut": "(y - 2)(y - 4)(y - 6) = 0 \\Rightarrow y = 2, 4, 6"
-  }]
-
-},
-{
-  "id": "y11a-5h-1c",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "State the zeroes and discontinuities of the function: $p(m) = \\frac{m(m + 2)}{(m + 1)(m + 4)}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: $m = 0, -2$, Discontinuities: $m = -1, -4$",
-  "Zeroes: $m = -1, -4$, Discontinuities: $m = 0, -2$",
-  "Zeroes: $m = 0, 2$, Discontinuities: $m = 1, 4$",
-  "Zeroes: $m = 0, -2$, Discontinuities: None"],
-
-  "h": "Numerator gives zeroes, denominator gives discontinuities.",
-  "s": "Numerator $m(m + 2) = 0 \\Rightarrow m = 0, -2$. Denominator $(m + 1)(m + 4) = 0 \\Rightarrow m = -1, -4$.",
-  "solutionSteps": [
-  {
-    "explanation": "Find zeroes from the numerator.",
-    "workingOut": "m(m + 2) = 0 \\Rightarrow m = 0 \\text{ or } m = -2"
-  },
-  {
-    "explanation": "Find discontinuities from the denominator.",
-    "workingOut": "(m + 1)(m + 4) = 0 \\Rightarrow m = -1 \\text{ or } m = -4"
-  }]
-
-},
-{
-  "id": "y11a-5h-2",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "easy",
-  "q": "Let $g(u) = \\begin{cases} 2 - u & \\text{for } u < 0 \\\\ 2 + u^2 & \\text{for } u \\ge 0 \\end{cases}$\n\na) Find $g(0)$. Then evaluate the left branch ($2 - u$) and right branch ($2 + u^2$) at $u = 0$.\nb) Is $g(u)$ continuous at $u = 0$?\nc) Sketch the graph, and write down its domain and range.",
-  "a": "a) $g(0) = 2$. Left branch $= 2$, right branch $= 2$. b) Yes. c) Domain: All real $u$, Range: $y \\ge 2$.",
-  "opts": [],
-  "h": "Evaluate the limits as $u$ approaches 0 from the left and right.",
-  "s": "Since the left limit equals the right limit and the function value at $u=0$, it is continuous.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Evaluate $g(0)$ using the appropriate branch.",
-    "workingOut": "g(0) = 2 + (0)^2 = 2"
-  },
-  {
-    "explanation": "Evaluate the limits from the left and right.",
-    "workingOut": "\\lim_{u \\to 0^-} (2 - u) = 2 - 0 = 2 \\\\ \\lim_{u \\to 0^+} (2 + u^2) = 2 + 0^2 = 2"
-  },
-  {
-    "explanation": "b) Compare the limits and function value.",
-    "workingOut": "\\text{Since } \\lim_{u \\to 0^-} g(u) = \\lim_{u \\to 0^+} g(u) = g(0) = 2, \\text{ it is continuous at } u = 0."
-  },
-  {
-    "explanation": "c) State the domain and range from the sketch (a line decreasing to 2, then a parabola increasing from 2).",
-    "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -5,
-        8,
-        5,
-        -1],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2 - x; }, -5, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 + x*x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,2], {name:'(0,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5-22a",
+    "c": "5H",
+    "t": "Piecewise Functions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "A piecewise function is defined as $f(x) = 2x + 1$ for $x < 0$ and $f(x) = x^2$ for $x \\ge 0$. Evaluate $f(-3)$.",
+    "a": "0",
+    "opts": [
+      "$-5$",
+      "$9$",
+      "$7$",
+      "$-8$"
+    ],
+    "h": "Determine which condition $x = -3$ satisfies.",
+    "s": "Since $-3 < 0$, we use the first rule: $f(-3) = 2(-3) + 1 = -6 + 1 = -5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Choose the correct domain.",
+        "workingOut": "-3 < 0 \\implies \\text{use } 2x + 1"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "f(-3) = 2(-3) + 1 = -5"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-3",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "easy",
-  "q": "Let $h(v) = \\begin{cases} 3 - v & \\text{for } v \\le 2 \\\\ v - 1 & \\text{for } v > 2 \\end{cases}$\n\na) Find $h(2)$. Then evaluate the left branch ($3 - v$) and right branch ($v - 1$) at $v = 2$.\nb) Is the function continuous at $v = 2$?\nc) Sketch the graph, and write down its domain and range.",
-  "a": "a) $h(2) = 1$. Left branch $= 1$, right branch $= 1$. b) Yes. c) Domain: All real $v$, Range: $y \\ge 1$.",
-  "opts": [],
-  "h": "Check if the two branches meet at $v = 2$.",
-  "s": "Both branches evaluate to 1 at $v=2$. The graph is V-shaped with a minimum at $(2, 1)$.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Evaluate $h(2)$ and the limits.",
-    "workingOut": "h(2) = 3 - 2 = 1 \\\\ \\lim_{v \\to 2^-} (3 - v) = 1 \\\\ \\lim_{v \\to 2^+} (v - 1) = 1"
+    ]
   },
   {
-    "explanation": "b) Since limits and value match, it is continuous.",
-    "workingOut": "\\text{Continuous at } v = 2."
-  },
-  {
-    "explanation": "c) Identify the domain and range.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -2,
-        6,
-        6,
-        -1],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 1; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,1], {name:'(2,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5-22b",
+    "c": "5H",
+    "t": "Piecewise Functions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "A piecewise function is defined as $f(x) = 2x + 1$ for $x < 0$ and $f(x) = x^2$ for $x \\ge 0$. Evaluate $f(4)$.",
+    "a": "0",
+    "opts": [
+      "$16$",
+      "$9$",
+      "$17$",
+      "$8$"
+    ],
+    "h": "Determine which condition $x = 4$ satisfies.",
+    "s": "Since $4 \\ge 0$, we use the second rule: $f(4) = 4^2 = 16$.",
+    "solutionSteps": [
+      {
+        "explanation": "Choose the correct domain.",
+        "workingOut": "4 \\ge 0 \\implies \\text{use } x^2"
+      },
+      {
+        "explanation": "Evaluate.",
+        "workingOut": "f(4) = 4^2 = 16"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-4a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$g(z) = \\begin{cases} z^2 + 3z & \\text{for } z < 0 \\\\ z^2 - 3z & \\text{for } z \\ge 0 \\end{cases}$",
-  "a": "0",
-  "opts": [
-  "Continuous at $z = 0$, Even function",
-  "Continuous at $z = 0$, Odd function",
-  "Discontinuous at $z = 0$, Neither",
-  "Continuous at $z = 0$, Neither"],
-
-  "h": "Check limits as $z \\to 0$. To test odd/even, find $g(-z)$.",
-  "s": "Limits match at $z=0$, so it's continuous. $g(-z) = (-z)^2 - 3(-z) = z^2 + 3z$ (for $-z \\ge 0 \\Rightarrow z \\le 0$), which matches $g(z)$.",
-  "solutionSteps": [
-  {
-    "explanation": "Check continuity at $z = 0$.",
-    "workingOut": "\\lim_{z \\to 0^-} (z^2 + 3z) = 0 \\\\ \\lim_{z \\to 0^+} (z^2 - 3z) = 0 \\\\ g(0) = 0 \\\\ \\text{Continuous.}"
+    ]
   },
   {
-    "explanation": "Test for even/odd by evaluating $g(-z)$ for $z > 0$.",
-    "workingOut": "\\text{For } z > 0, -z < 0. \\\\ g(-z) = (-z)^2 + 3(-z) = z^2 - 3z. \\\\ \\text{This matches } g(z) \\text{ for } z > 0, \\text{ so } g(-z) = g(z). \\text{ It is even.}"
-  }]
-
-},
-{
-  "id": "y11a-5h-4b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$h(z) = \\begin{cases} -2 - \\sqrt{-z} & \\text{for } z < 0 \\\\ 0 & \\text{for } z = 0 \\\\ 2 + \\sqrt{z} & \\text{for } z > 0 \\end{cases}$",
-  "a": "0",
-  "opts": [
-  "Discontinuous at $z = 0$, Odd function",
-  "Continuous at $z = 0$, Odd function",
-  "Discontinuous at $z = 0$, Even function",
-  "Continuous at $z = 0$, Neither"],
-
-  "h": "Check the limits at $z=0$. Compare $h(-z)$ to $-h(z)$.",
-  "s": "Left limit is $-2$, right limit is $2$. Discontinuous. $h(-z) = 2 + \\sqrt{-(-z)} = 2 + \\sqrt{z} = -h(z)$ for $z<0$. Thus, odd.",
-  "solutionSteps": [
-  {
-    "explanation": "Check continuity at $z = 0$.",
-    "workingOut": "\\lim_{z \\to 0^-} (-2 - \\sqrt{-z}) = -2 \\\\ \\lim_{z \\to 0^+} (2 + \\sqrt{z}) = 2 \\\\ h(0) = 0 \\\\ \\text{Limits do not match, so discontinuous.}"
-  },
-  {
-    "explanation": "Test for even/odd by evaluating $h(-z)$ for $z > 0$.",
-    "workingOut": "\\text{For } z > 0, -z < 0. \\\\ h(-z) = -2 - \\sqrt{-(-z)} = -2 - \\sqrt{z} = -(2 + \\sqrt{z}) = -h(z). \\text{ It is odd.}"
-  }]
-
-},
-{
-  "id": "y11a-5h-4c",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$p(z) = \\begin{cases} 1 - z & \\text{for } z < 0 \\\\ z - 1 & \\text{for } z \\ge 0 \\end{cases}$",
-  "a": "0",
-  "opts": [
-  "Discontinuous at $z = 0$, Neither even nor odd",
-  "Continuous at $z = 0$, Neither even nor odd",
-  "Discontinuous at $z = 0$, Odd function",
-  "Continuous at $z = 0$, Even function"],
-
-  "h": "Check limits as $z \\to 0$.",
-  "s": "Left limit is $1$, right limit is $-1$. Discontinuous. $p(-1) = 1 - (-1) = 2$, but $p(1) = 1 - 1 = 0$. Since $p(-1) \\neq p(1)$ and $p(-1) \\neq -p(1)$, it is neither.",
-  "solutionSteps": [
-  {
-    "explanation": "Check continuity at $z = 0$.",
-    "workingOut": "\\lim_{z \\to 0^-} (1 - z) = 1 \\\\ \\lim_{z \\to 0^+} (z - 1) = -1 \\\\ \\text{Limits do not match, so discontinuous.}"
-  },
-  {
-    "explanation": "Test for even/odd using a test point, e.g., $z = 1$.",
-    "workingOut": "p(1) = 1 - 1 = 0 \\\\ p(-1) = 1 - (-1) = 2 \\\\ p(-1) \\neq p(1) \\text{ and } p(-1) \\neq -p(1). \\text{ Neither.}"
-  }]
-
-},
-{
-  "id": "y11a-5h-4d",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "easy",
-  "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$q(z) = \\begin{cases} z^2 + 4z & \\text{for } z < 0 \\\\ 0 & \\text{for } z = 0 \\\\ 4z - z^2 & \\text{for } z > 0 \\end{cases}$",
-  "a": "0",
-  "opts": [
-  "Continuous at $z = 0$, Odd function",
-  "Discontinuous at $z = 0$, Odd function",
-  "Continuous at $z = 0$, Even function",
-  "Continuous at $z = 0$, Neither"],
-
-  "h": "Check limits at $z=0$, and evaluate $q(-z)$.",
-  "s": "Both limits are $0$, so continuous. $q(-z) = (-z)^2 + 4(-z) = z^2 - 4z = -(4z - z^2) = -q(z)$ for $z>0$. Thus, odd.",
-  "solutionSteps": [
-  {
-    "explanation": "Check continuity at $z = 0$.",
-    "workingOut": "\\lim_{z \\to 0^-} (z^2 + 4z) = 0 \\\\ \\lim_{z \\to 0^+} (4z - z^2) = 0 \\\\ q(0) = 0 \\\\ \\text{Continuous.}"
-  },
-  {
-    "explanation": "Test for even/odd.",
-    "workingOut": "\\text{For } z > 0, -z < 0. \\\\ q(-z) = (-z)^2 + 4(-z) = z^2 - 4z = -(4z - z^2) = -q(z). \\text{ It is odd.}"
-  }]
-
-},
-{
-  "id": "y11a-5h-5a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "medium",
-  "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{1}{w^2 - 6w}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: None, Discontinuities: $w = 0, 6$",
-  "Zeroes: $w = 6$, Discontinuities: $w = 0$",
-  "Zeroes: $w = 0, 6$, Discontinuities: None",
-  "Zeroes: None, Discontinuities: $w = 6$"],
-
-  "h": "Denominator factors to $w(w - 6)$.",
-  "s": "Numerator is $1$ (no zeroes). Denominator is $w(w-6)$, zero at $w=0, 6$.",
-  "solutionSteps": [
-  {
-    "explanation": "Find zeroes by checking the numerator.",
-    "workingOut": "1 = 0 \\text{ (No solution, no zeroes)}"
-  },
-  {
-    "explanation": "Factor the denominator to find discontinuities.",
-    "workingOut": "w^2 - 6w = 0 \\Rightarrow w(w - 6) = 0 \\Rightarrow w = 0, 6"
-  }]
-
-},
-{
-  "id": "y11a-5h-5b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "medium",
-  "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{w}{w^2 - 7w + 10}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: $w = 0$, Discontinuities: $w = 2, 5$",
-  "Zeroes: $w = 2, 5$, Discontinuities: $w = 0$",
-  "Zeroes: $w = 0$, Discontinuities: $w = -2, -5$",
-  "Zeroes: None, Discontinuities: $w = 0, 2, 5$"],
-
-  "h": "Factor the quadratic $w^2 - 7w + 10$.",
-  "s": "Numerator $w = 0$ is the zero. Denominator $(w-2)(w-5) = 0 \\Rightarrow w=2, 5$ are discontinuities.",
-  "solutionSteps": [
-  {
-    "explanation": "Find zeroes by setting the numerator to 0.",
-    "workingOut": "w = 0"
-  },
-  {
-    "explanation": "Factor the denominator to find discontinuities.",
-    "workingOut": "w^2 - 7w + 10 = (w - 2)(w - 5) = 0 \\Rightarrow w = 2, 5"
-  }]
-
-},
-{
-  "id": "y11a-5h-5c",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "multiple_choice",
-  "difficulty": "medium",
-  "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{w^2 - 25}{w^2 - 4}$",
-  "a": "0",
-  "opts": [
-  "Zeroes: $w = 5, -5$, Discontinuities: $w = 2, -2$",
-  "Zeroes: $w = 2, -2$, Discontinuities: $w = 5, -5$",
-  "Zeroes: $w = 25$, Discontinuities: $w = 4$",
-  "Zeroes: $w = -5, 5$, Discontinuities: None"],
-
-  "h": "Use the difference of two squares.",
-  "s": "Numerator $(w-5)(w+5)$ gives zeroes $5, -5$. Denominator $(w-2)(w+2)$ gives discontinuities $2, -2$.",
-  "solutionSteps": [
-  {
-    "explanation": "Factor numerator for zeroes.",
-    "workingOut": "w^2 - 25 = (w - 5)(w + 5) = 0 \\Rightarrow w = 5, -5"
-  },
-  {
-    "explanation": "Factor denominator for discontinuities.",
-    "workingOut": "w^2 - 4 = (w - 2)(w + 2) = 0 \\Rightarrow w = 2, -2"
-  }]
-
-},
-{
-  "id": "y11a-5h-6",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Draw up a table of values for $y = \\frac{|2x|}{x}$, and explain whether the function is continuous at $x = 0$. Sketch the curve, and write down its domain and range.",
-  "a": "Discontinuous at $x = 0$. Domain: $x \\neq 0$, Range: ${-2, 2}$.",
-  "opts": [],
-  "h": "Remember that $|2x| = 2x$ for $x > 0$, and $|2x| = -2x$ for $x < 0$.",
-  "s": "The function simplifies to $y = -2$ for $x < 0$ and $y = 2$ for $x > 0$. It is undefined at $x = 0$, so it has a discontinuity.",
-  "solutionSteps": [
-  {
-    "explanation": "Simplify the expression for positive and negative $x$.",
-    "workingOut": "\\text{For } x > 0: y = \\frac{2x}{x} = 2 \\\\ \\text{For } x < 0: y = \\frac{-2x}{x} = -2"
-  },
-  {
-    "explanation": "Evaluate continuity at $x = 0$.",
-    "workingOut": "y \\text{ is undefined at } x = 0. \\text{ Limit from left is } -2 \\text{, limit from right is } 2. \\text{ Discontinuous.}"
-  },
-  {
-    "explanation": "State domain and range.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -5,
-        4,
-        5,
-        -4],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -2; }, -5, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2; }, 0.001, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,-2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0,2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+    "id": "y11a-5-23a",
+    "c": "5H",
+    "t": "Piecewise Functions",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Let $f(x) = x + 3$ for $x < 2$, and $f(x) = kx^2$ for $x \\ge 2$. Find the value of $k$ that makes the function continuous at $x = 2$.",
+    "a": "0",
+    "opts": [
+      "$k = \\frac{5}{4}$",
+      "$k = 5$",
+      "$k = 1$",
+      "$k = \\frac{4}{5}$"
+    ],
+    "h": "For continuity at $x=2$, the limit as $x \\to 2^-$ must equal the value at $x=2$.",
+    "s": "Approaching from the left: $f(2^-) = 2 + 3 = 5$. Approaching from the right: $f(2) = k(2^2) = 4k$. Set them equal: $4k = 5 \\implies k = 5/4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the left side limit.",
+        "workingOut": "x \\to 2^- \\implies x + 3 = 5"
+      },
+      {
+        "explanation": "Evaluate the right side value.",
+        "workingOut": "f(2) = k(2)^2 = 4k"
+      },
+      {
+        "explanation": "Equate for continuity.",
+        "workingOut": "4k = 5 \\implies k = \\frac{5}{4}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-7a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} x^2 & \\text{for } x \\le 3 \\\\ 12 - x & \\text{for } x > 3 \\end{cases}$",
-  "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\ge 0$.",
-  "opts": [],
-  "h": "Evaluate $\\lim_{x \\to 3} f(x)$ from both sides.",
-  "s": "Left limit $= 3^2 = 9$. Right limit $= 12 - 3 = 9$. Value $f(3) = 9$. They match.",
-  "solutionSteps": [
-  {
-    "explanation": "Calculate limits from the left and right.",
-    "workingOut": "\\lim_{x \\to 3^-} x^2 = 9 \\\\ \\lim_{x \\to 3^+} (12 - x) = 9"
+    ]
   },
   {
-    "explanation": "Compare to the function value.",
-    "workingOut": "f(3) = 3^2 = 9. \\text{ Since limits and value are equal, it is continuous.}"
-  },
-  {
-    "explanation": "Determine domain and range from the sketch.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -1,
-        12,
-        8,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 12 - x; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,9], {name:'(3,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5-23b",
+    "c": "5H",
+    "t": "Piecewise Functions",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Let $f(x) = -x + 6$ for $x < 3$, and $f(x) = kx + 1$ for $x \\ge 3$. Find the value of $k$ that makes the function continuous at $x = 3$.",
+    "a": "0",
+    "opts": [
+      "$k = \\frac{2}{3}$",
+      "$k = 1$",
+      "$k = \\frac{4}{3}$",
+      "$k = 3$"
+    ],
+    "h": "Match the values of the two pieces at $x=3$.",
+    "s": "Left piece at $x=3$: $-3 + 6 = 3$. Right piece at $x=3$: $k(3) + 1 = 3k + 1$. Setting them equal: $3k + 1 = 3 \\implies 3k = 2 \\implies k = 2/3$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the left side limit.",
+        "workingOut": "-3 + 6 = 3"
+      },
+      {
+        "explanation": "Evaluate the right side limit.",
+        "workingOut": "3k + 1"
+      },
+      {
+        "explanation": "Equate and solve.",
+        "workingOut": "3k + 1 = 3 \\implies k = \\frac{2}{3}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-7b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} 2^x & \\text{for } x < 3 \\\\ 17 - x^2 & \\text{for } x > 3 \\\\ 8 & \\text{for } x = 3 \\end{cases}$",
-  "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\le 8$.",
-  "opts": [],
-  "h": "Check if left limit, right limit, and $f(3)$ are equal.",
-  "s": "Left limit $= 2^3 = 8$. Right limit $= 17 - 3^2 = 8$. $f(3) = 8$. Continuous.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate limits.",
-    "workingOut": "\\lim_{x \\to 3^-} 2^x = 8 \\\\ \\lim_{x \\to 3^+} (17 - x^2) = 17 - 9 = 8"
+    ]
   },
   {
-    "explanation": "Check function value.",
-    "workingOut": "f(3) = 8. \\text{ Limits and value match, so continuous.}"
-  },
-  {
-    "explanation": "Determine domain and range. $17 - x^2$ is a downward parabola with vertex at $(0, 17)$, so it has values $< 8$. $2^x$ increases to 8.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -1,
-        18,
-        5,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,18]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(2, x); }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 17 - x*x; }, 3, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,8], {name:'(3,8)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-1a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "State the zeroes and discontinuities of the function: $g(t) = \\frac{7}{8 - t}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: None, Discontinuities: $t = 8$",
+      "Zeroes: $t = 7$, Discontinuities: $t = 8$",
+      "Zeroes: $t = 8$, Discontinuities: None",
+      "Zeroes: None, Discontinuities: $t = -8$"
+    ],
+    "h": "Zeroes occur when the numerator is zero. Discontinuities occur when the denominator is zero.",
+    "s": "Numerator is $7$, which is never zero, so there are no zeroes. Denominator is $0$ when $8 - t = 0$, so $t = 8$ is a discontinuity.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify zeroes by setting the numerator to zero.",
+        "workingOut": "7 = 0 \\text{ (No solution, so no zeroes)}"
+      },
+      {
+        "explanation": "Identify discontinuities by setting the denominator to zero.",
+        "workingOut": "8 - t = 0 \\Rightarrow t = 8"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-7c",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} \\frac{2}{x} & \\text{for } 0 < x < 3 \\\\ 1 - \\frac{1}{9}x & \\text{for } x > 3 \\\\ \\frac{2}{3} & \\text{for } x = 3 \\end{cases}$",
-  "a": "Continuous at $x = 3$. Domain: $x > 0$, Range: $\\mathbb{R}$.",
-  "opts": [],
-  "h": "Find the limit from left and right as $x \\to 3$.",
-  "s": "Left limit is $2/3$. Right limit is $1 - 3/9 = 2/3$. $f(3) = 2/3$. Continuous.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate left and right limits.",
-    "workingOut": "\\lim_{x \\to 3^-} \\frac{2}{x} = \\frac{2}{3} \\\\ \\lim_{x \\to 3^+} (1 - \\frac{x}{9}) = 1 - \\frac{3}{9} = \\frac{2}{3}"
+    ]
   },
   {
-    "explanation": "Check continuity.",
-    "workingOut": "f(3) = \\frac{2}{3}. \\text{ Limits match, so continuous.}"
-  },
-  {
-    "explanation": "Determine range. Left branch goes from $2/3$ to $\\infty$. Right branch goes from $2/3$ down to $-\\infty$.",
-    "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -1,
-        5,
-        8,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2/x; }, 0.4, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1 - x/9; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2/3], {name:'(3, 2/3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-1b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "State the zeroes and discontinuities of the function: $h(y) = \\frac{4y}{(y - 2)(y - 4)(y - 6)}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: $y = 0$, Discontinuities: $y = 2, 4, 6$",
+      "Zeroes: $y = 2, 4, 6$, Discontinuities: $y = 0$",
+      "Zeroes: None, Discontinuities: $y = 2, 4, 6$",
+      "Zeroes: $y = 0$, Discontinuities: $y = -2, -4, -6$"
+    ],
+    "h": "Zeroes occur when the numerator is zero. Discontinuities occur when the denominator is zero.",
+    "s": "Numerator is zero when $4y = 0 \\Rightarrow y = 0$. Denominator is zero when $y = 2, 4$, or $6$.",
+    "solutionSteps": [
+      {
+        "explanation": "Set the numerator to zero to find the zeroes.",
+        "workingOut": "4y = 0 \\Rightarrow y = 0"
+      },
+      {
+        "explanation": "Set the denominator to zero to find the discontinuities.",
+        "workingOut": "(y - 2)(y - 4)(y - 6) = 0 \\Rightarrow y = 2, 4, 6"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-7d",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} x - 1 & \\text{for } x < 3 \\\\ 5 - x & \\text{for } x > 3 \\\\ 2 & \\text{for } x = 3 \\end{cases}$",
-  "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\le 2$.",
-  "opts": [],
-  "h": "Find the limit from the left and the right.",
-  "s": "Left limit is $3-1 = 2$. Right limit is $5-3 = 2$. $f(3)=2$. Continuous.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate limits.",
-    "workingOut": "\\lim_{x \\to 3^-} (x - 1) = 2 \\\\ \\lim_{x \\to 3^+} (5 - x) = 2"
+    ]
   },
   {
-    "explanation": "Check continuity.",
-    "workingOut": "f(3) = 2. \\text{ It is continuous.}"
-  },
-  {
-    "explanation": "Determine domain and range. Both branches are lines moving downward away from $y=2$.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -1,
-        4,
-        6,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 1; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 5 - x; }, 3, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2], {name:'(3,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-1c",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "State the zeroes and discontinuities of the function: $p(m) = \\frac{m(m + 2)}{(m + 1)(m + 4)}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: $m = 0, -2$, Discontinuities: $m = -1, -4$",
+      "Zeroes: $m = -1, -4$, Discontinuities: $m = 0, -2$",
+      "Zeroes: $m = 0, 2$, Discontinuities: $m = 1, 4$",
+      "Zeroes: $m = 0, -2$, Discontinuities: None"
+    ],
+    "h": "Numerator gives zeroes, denominator gives discontinuities.",
+    "s": "Numerator $m(m + 2) = 0 \\Rightarrow m = 0, -2$. Denominator $(m + 1)(m + 4) = 0 \\Rightarrow m = -1, -4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Find zeroes from the numerator.",
+        "workingOut": "m(m + 2) = 0 \\Rightarrow m = 0 \\text{ or } m = -2"
+      },
+      {
+        "explanation": "Find discontinuities from the denominator.",
+        "workingOut": "(m + 1)(m + 4) = 0 \\Rightarrow m = -1 \\text{ or } m = -4"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-8",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Consider the function $g(t) = \\begin{cases} t + 4 & \\text{for } t < -2 \\\\ -t & \\text{for } -2 \\le t \\le 2 \\\\ t - 4 & \\text{for } t > 2 \\end{cases}$\n\na) Show that $g(t)$ is continuous at $t = -2$ and $t = 2$.\nb) Sketch $y = g(t)$.\nc) Simplify $g(-t)$ and hence show that $g(t)$ is an odd function.",
-  "a": "a) Limits match values at both points. c) $g(-t) = -g(t)$ for all branches, so it is odd.",
-  "opts": [],
-  "h": "For part c, remember to negate the domain conditions as well (e.g., $t < -2$ becomes $-t < -2 \\Rightarrow t > 2$).",
-  "s": "At $t=-2$, limit is $2$. At $t=2$, limit is $-2$. $g(-t) = -g(t)$, thus odd.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Check continuity at $t = -2$.",
-    "workingOut": "\\lim_{t \\to -2^-} (t + 4) = 2 \\\\ \\lim_{t \\to -2^+} (-t) = 2 \\\\ g(-2) = 2. \\text{ Continuous.}"
+    ]
   },
   {
-    "explanation": "a) Check continuity at $t = 2$.",
-    "workingOut": "\\lim_{t \\to 2^-} (-t) = -2 \\\\ \\lim_{t \\to 2^+} (t - 4) = -2 \\\\ g(2) = -2. \\text{ Continuous.}"
-  },
-  {
-    "explanation": "c) Evaluate $g(-t)$ to test for odd function.",
-    "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -6,
-        4,
-        6,
-        -4],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x + 4; }, -6, -2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 4; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 2], {name:'(-2,2)', size:3, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, -2], {name:'(2,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-2",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "q": "Let $g(u) = \\begin{cases} 2 - u & \\text{for } u < 0 \\\\ 2 + u^2 & \\text{for } u \\ge 0 \\end{cases}$\n\na) Find $g(0)$. Then evaluate the left branch ($2 - u$) and right branch ($2 + u^2$) at $u = 0$.\nb) Is $g(u)$ continuous at $u = 0$?\nc) Sketch the graph, and write down its domain and range.",
+    "a": "a) $g(0) = 2$. Left branch $= 2$, right branch $= 2$. b) Yes. c) Domain: All real $u$, Range: $y \\ge 2$.",
+    "opts": [],
+    "h": "Evaluate the limits as $u$ approaches 0 from the left and right.",
+    "s": "Since the left limit equals the right limit and the function value at $u=0$, it is continuous.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Evaluate $g(0)$ using the appropriate branch.",
+        "workingOut": "g(0) = 2 + (0)^2 = 2"
+      },
+      {
+        "explanation": "Evaluate the limits from the left and right.",
+        "workingOut": "\\lim_{u \\to 0^-} (2 - u) = 2 - 0 = 2 \\\\ \\lim_{u \\to 0^+} (2 + u^2) = 2 + 0^2 = 2"
+      },
+      {
+        "explanation": "b) Compare the limits and function value.",
+        "workingOut": "\\text{Since } \\lim_{u \\to 0^-} g(u) = \\lim_{u \\to 0^+} g(u) = g(0) = 2, \\text{ it is continuous at } u = 0."
+      },
+      {
+        "explanation": "c) State the domain and range from the sketch (a line decreasing to 2, then a parabola increasing from 2).",
+        "workingOut": "\\text{Domain: } u \\in \\mathbb{R} \\\\ \\text{Range: } y \\ge 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2 - x; }, -5, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2 + x*x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,2], {name:'(0,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-9",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Consider the function $h(v) = \\begin{cases} -3v - 2 & \\text{for } v < -1 \\\\ 2v^2 - 1 & \\text{for } -1 \\le v \\le 1 \\\\ 3v - 2 & \\text{for } v > 1 \\end{cases}$\n\na) Show that $h(v)$ is continuous at $v = -1$ and $v = 1$.\nb) Sketch $y = h(v)$.\nc) Simplify $h(-v)$ and hence show that $h(v)$ is an even function.",
-  "a": "a) Limits match values. c) $h(-v) = h(v)$, so it is even.",
-  "opts": [],
-  "h": "For part c, evaluate $h(-v)$ for each branch.",
-  "s": "At $v=1, -1$, limits evaluate to $1$. $h(-v) = h(v)$ for all branches, so it is even.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Check continuity at $v = -1$.",
-    "workingOut": "\\lim_{v \\to -1^-} (-3v - 2) = 1 \\\\ \\lim_{v \\to -1^+} (2v^2 - 1) = 1 \\\\ h(-1) = 1. \\text{ Continuous.}"
+    ]
   },
   {
-    "explanation": "a) Check continuity at $v = 1$.",
-    "workingOut": "\\lim_{v \\to 1^-} (2v^2 - 1) = 1 \\\\ \\lim_{v \\to 1^+} (3v - 2) = 1 \\\\ h(1) = 1. \\text{ Continuous.}"
-  },
-  {
-    "explanation": "c) Evaluate $h(-v)$.",
-    "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -3,
-        4,
-        3,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -3*x - 2; }, -3, -1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2*x*x - 1; }, -1, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x - 2; }, 1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1, 1], {name:'(-1,1)', size:3, color:'red', label:{offset:[-15,10]}});\nboard.create('point', [1, 1], {name:'(1,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-3",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "q": "Let $h(v) = \\begin{cases} 3 - v & \\text{for } v \\le 2 \\\\ v - 1 & \\text{for } v > 2 \\end{cases}$\n\na) Find $h(2)$. Then evaluate the left branch ($3 - v$) and right branch ($v - 1$) at $v = 2$.\nb) Is the function continuous at $v = 2$?\nc) Sketch the graph, and write down its domain and range.",
+    "a": "a) $h(2) = 1$. Left branch $= 1$, right branch $= 1$. b) Yes. c) Domain: All real $v$, Range: $y \\ge 1$.",
+    "opts": [],
+    "h": "Check if the two branches meet at $v = 2$.",
+    "s": "Both branches evaluate to 1 at $v=2$. The graph is V-shaped with a minimum at $(2, 1)$.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Evaluate $h(2)$ and the limits.",
+        "workingOut": "h(2) = 3 - 2 = 1 \\\\ \\lim_{v \\to 2^-} (3 - v) = 1 \\\\ \\lim_{v \\to 2^+} (v - 1) = 1"
+      },
+      {
+        "explanation": "b) Since limits and value match, it is continuous.",
+        "workingOut": "\\text{Continuous at } v = 2."
+      },
+      {
+        "explanation": "c) Identify the domain and range.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 1",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              6,
+              6,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3 - x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 1; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,1], {name:'(2,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-10a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Determine whether the following piecewise function is odd, even, or neither. Graph the function to confirm your answer.\n$p(m) = \\begin{cases} m - m^3 & \\text{for } m < 0 \\\\ m^3 - m & \\text{for } m \\ge 0 \\end{cases}$",
-  "a": "Odd function.",
-  "opts": [],
-  "h": "Evaluate $p(-m)$ for $m > 0$.",
-  "s": "For $m > 0$, $-m < 0$, so $p(-m) = (-m) - (-m)^3 = -m + m^3 = -(m^3 - m) = -p(m)$. It is odd.",
-  "solutionSteps": [
-  {
-    "explanation": "Test for even or odd by finding $p(-m)$. Assume $m > 0$, so $-m < 0$.",
-    "workingOut": "p(-m) = (-m) - (-m)^3 = -m + m^3"
+    ]
   },
   {
-    "explanation": "Compare to $p(m)$ for $m > 0$.",
-    "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -3,
-        3,
-        3,
-        -3],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - x*x*x; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x*x - x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-4a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$g(z) = \\begin{cases} z^2 + 3z & \\text{for } z < 0 \\\\ z^2 - 3z & \\text{for } z \\ge 0 \\end{cases}$",
+    "a": "0",
+    "opts": [
+      "Continuous at $z = 0$, Even function",
+      "Continuous at $z = 0$, Odd function",
+      "Discontinuous at $z = 0$, Neither",
+      "Continuous at $z = 0$, Neither"
+    ],
+    "h": "Check limits as $z \\to 0$. To test odd/even, find $g(-z)$.",
+    "s": "Limits match at $z=0$, so it's continuous. $g(-z) = (-z)^2 - 3(-z) = z^2 + 3z$ (for $-z \\ge 0 \\Rightarrow z \\le 0$), which matches $g(z)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Check continuity at $z = 0$.",
+        "workingOut": "\\lim_{z \\to 0^-} (z^2 + 3z) = 0 \\\\ \\lim_{z \\to 0^+} (z^2 - 3z) = 0 \\\\ g(0) = 0 \\\\ \\text{Continuous.}"
+      },
+      {
+        "explanation": "Test for even/odd by evaluating $g(-z)$ for $z > 0$.",
+        "workingOut": "\\text{For } z > 0, -z < 0. \\\\ g(-z) = (-z)^2 + 3(-z) = z^2 - 3z. \\\\ \\text{This matches } g(z) \\text{ for } z > 0, \\text{ so } g(-z) = g(z). \\text{ It is even.}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-10b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Determine whether the following piecewise function is odd, even, or neither. Graph the function to confirm your answer.\n$q(m) = \\begin{cases} m^2 + 2 & \\text{for } m < 0 \\\\ m^2 - 2 & \\text{for } m \\ge 0 \\end{cases}$",
-  "a": "Neither.",
-  "opts": [],
-  "h": "Check $q(1)$ and $q(-1)$.",
-  "s": "$q(1) = 1 - 2 = -1$. $q(-1) = 1 + 2 = 3$. It's neither.",
-  "solutionSteps": [
-  {
-    "explanation": "Test with a specific value, e.g., $m = 1$.",
-    "workingOut": "q(1) = 1^2 - 2 = -1"
+    ]
   },
   {
-    "explanation": "Evaluate $q(-1)$.",
-    "workingOut": "q(-1) = (-1)^2 + 2 = 3"
-  },
-  {
-    "explanation": "Compare.",
-    "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -4,
-        6,
-        4,
-        -4],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 2; }, -4, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x - 2; }, 0, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0, -2], {name:'(0,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-4b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$h(z) = \\begin{cases} -2 - \\sqrt{-z} & \\text{for } z < 0 \\\\ 0 & \\text{for } z = 0 \\\\ 2 + \\sqrt{z} & \\text{for } z > 0 \\end{cases}$",
+    "a": "0",
+    "opts": [
+      "Discontinuous at $z = 0$, Odd function",
+      "Continuous at $z = 0$, Odd function",
+      "Discontinuous at $z = 0$, Even function",
+      "Continuous at $z = 0$, Neither"
+    ],
+    "h": "Check the limits at $z=0$. Compare $h(-z)$ to $-h(z)$.",
+    "s": "Left limit is $-2$, right limit is $2$. Discontinuous. $h(-z) = 2 + \\sqrt{-(-z)} = 2 + \\sqrt{z} = -h(z)$ for $z<0$. Thus, odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Check continuity at $z = 0$.",
+        "workingOut": "\\lim_{z \\to 0^-} (-2 - \\sqrt{-z}) = -2 \\\\ \\lim_{z \\to 0^+} (2 + \\sqrt{z}) = 2 \\\\ h(0) = 0 \\\\ \\text{Limits do not match, so discontinuous.}"
+      },
+      {
+        "explanation": "Test for even/odd by evaluating $h(-z)$ for $z > 0$.",
+        "workingOut": "\\text{For } z > 0, -z < 0. \\\\ h(-z) = -2 - \\sqrt{-(-z)} = -2 - \\sqrt{z} = -(2 + \\sqrt{z}) = -h(z). \\text{ It is odd.}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-11a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k^2 + 4k + 4}{k + 2}$",
-  "a": "Undefined at $k = -2$. Simplifies to $y = k + 2$. Domain: $k \\neq -2$, Range: $y \\neq 0$.",
-  "opts": [],
-  "h": "Factor the numerator.",
-  "s": "Numerator is $(k+2)^2$. Function is $y = k+2$ with a hole at $(-2, 0)$.",
-  "solutionSteps": [
-  {
-    "explanation": "Identify where the function is undefined.",
-    "workingOut": "k + 2 = 0 \\Rightarrow k = -2"
+    ]
   },
   {
-    "explanation": "Factor the numerator and simplify.",
-    "workingOut": "y = \\frac{(k + 2)^2}{k + 2} = k + 2 \\text{ (for } k \\neq -2)"
-  },
-  {
-    "explanation": "Determine domain and range. Graph is a line with a hole at $k = -2, y = 0$.",
-    "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -6,
-        4,
-        4,
-        -4],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x+2; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,0], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-4c",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$p(z) = \\begin{cases} 1 - z & \\text{for } z < 0 \\\\ z - 1 & \\text{for } z \\ge 0 \\end{cases}$",
+    "a": "0",
+    "opts": [
+      "Discontinuous at $z = 0$, Neither even nor odd",
+      "Continuous at $z = 0$, Neither even nor odd",
+      "Discontinuous at $z = 0$, Odd function",
+      "Continuous at $z = 0$, Even function"
+    ],
+    "h": "Check limits as $z \\to 0$.",
+    "s": "Left limit is $1$, right limit is $-1$. Discontinuous. $p(-1) = 1 - (-1) = 2$, but $p(1) = 1 - 1 = 0$. Since $p(-1) \\neq p(1)$ and $p(-1) \\neq -p(1)$, it is neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Check continuity at $z = 0$.",
+        "workingOut": "\\lim_{z \\to 0^-} (1 - z) = 1 \\\\ \\lim_{z \\to 0^+} (z - 1) = -1 \\\\ \\text{Limits do not match, so discontinuous.}"
+      },
+      {
+        "explanation": "Test for even/odd using a test point, e.g., $z = 1$.",
+        "workingOut": "p(1) = 1 - 1 = 0 \\\\ p(-1) = 1 - (-1) = 2 \\\\ p(-1) \\neq p(1) \\text{ and } p(-1) \\neq -p(1). \\text{ Neither.}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-11b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k^4 - 4k^2}{k^2 - 4}$",
-  "a": "Undefined at $k = 2, -2$. Simplifies to $y = k^2$. Domain: $k \\neq \\pm 2$, Range: $y \\ge 0, y \\neq 4$.",
-  "opts": [],
-  "h": "Factor out $k^2$ in the numerator.",
-  "s": "Numerator is $k^2(k^2-4)$. Simplifies to $y = k^2$ with holes at $(\\pm 2, 4)$.",
-  "solutionSteps": [
-  {
-    "explanation": "Identify where undefined.",
-    "workingOut": "k^2 - 4 = 0 \\Rightarrow k = 2, -2"
+    ]
   },
   {
-    "explanation": "Factor and simplify.",
-    "workingOut": "y = \\frac{k^2(k^2 - 4)}{k^2 - 4} = k^2 \\text{ (for } k \\neq \\pm 2)"
-  },
-  {
-    "explanation": "Determine domain and range. Parabola $y=k^2$ with holes at $k=2$ and $k=-2$, where $y=4$.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -4,
-        8,
-        4,
-        -2],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -4, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-4d",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Decide whether the function is continuous at $z = 0$, and whether it is odd, even, or neither:\n$q(z) = \\begin{cases} z^2 + 4z & \\text{for } z < 0 \\\\ 0 & \\text{for } z = 0 \\\\ 4z - z^2 & \\text{for } z > 0 \\end{cases}$",
+    "a": "0",
+    "opts": [
+      "Continuous at $z = 0$, Odd function",
+      "Discontinuous at $z = 0$, Odd function",
+      "Continuous at $z = 0$, Even function",
+      "Continuous at $z = 0$, Neither"
+    ],
+    "h": "Check limits at $z=0$, and evaluate $q(-z)$.",
+    "s": "Both limits are $0$, so continuous. $q(-z) = (-z)^2 + 4(-z) = z^2 - 4z = -(4z - z^2) = -q(z)$ for $z>0$. Thus, odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Check continuity at $z = 0$.",
+        "workingOut": "\\lim_{z \\to 0^-} (z^2 + 4z) = 0 \\\\ \\lim_{z \\to 0^+} (4z - z^2) = 0 \\\\ q(0) = 0 \\\\ \\text{Continuous.}"
+      },
+      {
+        "explanation": "Test for even/odd.",
+        "workingOut": "\\text{For } z > 0, -z < 0. \\\\ q(-z) = (-z)^2 + 4(-z) = z^2 - 4z = -(4z - z^2) = -q(z). \\text{ It is odd.}"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-11c",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k - 4}{k^2 - 6k + 8}$",
-  "a": "Undefined at $k = 2, 4$. Simplifies to $y = \\frac{1}{k-2}$. Domain: $k \\neq 2, 4$, Range: $y \\neq 0, y \\neq 1/2$.",
-  "opts": [],
-  "h": "Factor the denominator $k^2 - 6k + 8$.",
-  "s": "Denominator is $(k-4)(k-2)$. Simplifies to $y = 1/(k-2)$ with a hole at $k=4$.",
-  "solutionSteps": [
-  {
-    "explanation": "Identify where undefined by factoring denominator.",
-    "workingOut": "k^2 - 6k + 8 = (k - 4)(k - 2) = 0 \\Rightarrow k = 4, 2"
+    ]
   },
   {
-    "explanation": "Cancel common factors.",
-    "workingOut": "y = \\frac{k - 4}{(k - 4)(k - 2)} = \\frac{1}{k - 2} \\text{ (for } k \\neq 4)"
-  },
-  {
-    "explanation": "State domain and range. Hyperbola with asymptote $k=2$, $y=0$, and a hole at $k=4$, where $y=1/2$.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -2,
-        4,
-        8,
-        -4],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('line', [[2,-4],[2,4]], {strokeColor:'red', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, -2, 1.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, 2.1, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [4, 0.5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-5a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{1}{w^2 - 6w}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: None, Discontinuities: $w = 0, 6$",
+      "Zeroes: $w = 6$, Discontinuities: $w = 0$",
+      "Zeroes: $w = 0, 6$, Discontinuities: None",
+      "Zeroes: None, Discontinuities: $w = 6$"
+    ],
+    "h": "Denominator factors to $w(w - 6)$.",
+    "s": "Numerator is $1$ (no zeroes). Denominator is $w(w-6)$, zero at $w=0, 6$.",
+    "solutionSteps": [
+      {
+        "explanation": "Find zeroes by checking the numerator.",
+        "workingOut": "1 = 0 \\text{ (No solution, no zeroes)}"
+      },
+      {
+        "explanation": "Factor the denominator to find discontinuities.",
+        "workingOut": "w^2 - 6w = 0 \\Rightarrow w(w - 6) = 0 \\Rightarrow w = 0, 6"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-11d",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "medium",
-  "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{5k + 10}{k + 2}$",
-  "a": "Undefined at $k = -2$. Simplifies to $y = 5$. Domain: $k \\neq -2$, Range: $y = 5$.",
-  "opts": [],
-  "h": "Factor out 5 in the numerator.",
-  "s": "Numerator is $5(k+2)$. Simplifies to $y=5$ with a hole at $(-2, 5)$.",
-  "solutionSteps": [
-  {
-    "explanation": "Identify where undefined.",
-    "workingOut": "k + 2 = 0 \\Rightarrow k = -2"
+    ]
   },
   {
-    "explanation": "Simplify.",
-    "workingOut": "y = \\frac{5(k + 2)}{k + 2} = 5 \\text{ (for } k \\neq -2)"
-  },
-  {
-    "explanation": "State domain and range. Horizontal line with a hole.",
-    "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-        -6,
-        7,
-        4,
-        -1],
-
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 5; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+    "id": "y11a-5h-5b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{w}{w^2 - 7w + 10}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: $w = 0$, Discontinuities: $w = 2, 5$",
+      "Zeroes: $w = 2, 5$, Discontinuities: $w = 0$",
+      "Zeroes: $w = 0$, Discontinuities: $w = -2, -5$",
+      "Zeroes: None, Discontinuities: $w = 0, 2, 5$"
+    ],
+    "h": "Factor the quadratic $w^2 - 7w + 10$.",
+    "s": "Numerator $w = 0$ is the zero. Denominator $(w-2)(w-5) = 0 \\Rightarrow w=2, 5$ are discontinuities.",
+    "solutionSteps": [
+      {
+        "explanation": "Find zeroes by setting the numerator to 0.",
+        "workingOut": "w = 0"
+      },
+      {
+        "explanation": "Factor the denominator to find discontinuities.",
+        "workingOut": "w^2 - 7w + 10 = (w - 2)(w - 5) = 0 \\Rightarrow w = 2, 5"
       }
-    }
-  }]
-
-},
-{
-  "id": "y11a-5h-12a",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "short_answer",
-  "difficulty": "medium",
-  "q": "Find the value of the constant $b$ that makes the function continuous:\n$f(n) = \\begin{cases} b n^2 & \\text{for } n \\le 2 \\\\ 10 - n & \\text{for } n > 2 \\end{cases}$",
-  "a": "2",
-  "opts": [],
-  "h": "Set the limits from the left and right at $n=2$ equal to each other.",
-  "s": "At $n=2$, $b(2)^2 = 10 - 2 \\Rightarrow 4b = 8 \\Rightarrow b = 2$.",
-  "solutionSteps": [
-  {
-    "explanation": "Evaluate the limit as $n \\to 2$ from the left.",
-    "workingOut": "\\lim_{n \\to 2^-} b n^2 = 4b"
+    ]
   },
   {
-    "explanation": "Evaluate the limit as $n \\to 2$ from the right.",
-    "workingOut": "\\lim_{n \\to 2^+} (10 - n) = 10 - 2 = 8"
+    "id": "y11a-5h-5c",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Factor the numerator and denominator, and hence write down the zeroes and discontinuities:\n$f(w) = \\frac{w^2 - 25}{w^2 - 4}$",
+    "a": "0",
+    "opts": [
+      "Zeroes: $w = 5, -5$, Discontinuities: $w = 2, -2$",
+      "Zeroes: $w = 2, -2$, Discontinuities: $w = 5, -5$",
+      "Zeroes: $w = 25$, Discontinuities: $w = 4$",
+      "Zeroes: $w = -5, 5$, Discontinuities: None"
+    ],
+    "h": "Use the difference of two squares.",
+    "s": "Numerator $(w-5)(w+5)$ gives zeroes $5, -5$. Denominator $(w-2)(w+2)$ gives discontinuities $2, -2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Factor numerator for zeroes.",
+        "workingOut": "w^2 - 25 = (w - 5)(w + 5) = 0 \\Rightarrow w = 5, -5"
+      },
+      {
+        "explanation": "Factor denominator for discontinuities.",
+        "workingOut": "w^2 - 4 = (w - 2)(w + 2) = 0 \\Rightarrow w = 2, -2"
+      }
+    ]
   },
   {
-    "explanation": "Equate the limits for continuity.",
-    "workingOut": "4b = 8 \\Rightarrow b = 2"
-  }]
-
-},
-{
-  "id": "y11a-5h-12b",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "short_answer",
-  "difficulty": "medium",
-  "q": "Find the value of the constant $b$ that makes the function continuous:\n$g(n) = \\begin{cases} \\frac{b(n^2 - 16)}{n + 4} & \\text{for } n \\neq -4 \\\\ 16 & \\text{for } n = -4 \\end{cases}$",
-  "a": "-2",
-  "opts": [],
-  "h": "Simplify the fraction by factoring the numerator, then evaluate the limit as $n \\to -4$.",
-  "s": "Limit as $n \\to -4$ of $b(n-4)(n+4)/(n+4)$ is $b(-4-4) = -8b$. Setting this equal to $16$ gives $b = -2$.",
-  "solutionSteps": [
-  {
-    "explanation": "Factor the numerator to simplify the limit.",
-    "workingOut": "\\lim_{n \\to -4} \\frac{b(n - 4)(n + 4)}{n + 4} = \\lim_{n \\to -4} b(n - 4)"
+    "id": "y11a-5h-6",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Draw up a table of values for $y = \\frac{|2x|}{x}$, and explain whether the function is continuous at $x = 0$. Sketch the curve, and write down its domain and range.",
+    "a": "Discontinuous at $x = 0$. Domain: $x \\neq 0$, Range: ${-2, 2}$.",
+    "opts": [],
+    "h": "Remember that $|2x| = 2x$ for $x > 0$, and $|2x| = -2x$ for $x < 0$.",
+    "s": "The function simplifies to $y = -2$ for $x < 0$ and $y = 2$ for $x > 0$. It is undefined at $x = 0$, so it has a discontinuity.",
+    "solutionSteps": [
+      {
+        "explanation": "Simplify the expression for positive and negative $x$.",
+        "workingOut": "\\text{For } x > 0: y = \\frac{2x}{x} = 2 \\\\ \\text{For } x < 0: y = \\frac{-2x}{x} = -2"
+      },
+      {
+        "explanation": "Evaluate continuity at $x = 0$.",
+        "workingOut": "y \\text{ is undefined at } x = 0. \\text{ Limit from left is } -2 \\text{, limit from right is } 2. \\text{ Discontinuous.}"
+      },
+      {
+        "explanation": "State domain and range.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{0\\} \\\\ \\text{Range: } y \\in \\{-2, 2\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              4,
+              5,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -2; }, -5, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2; }, 0.001, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,-2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0,2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
   },
   {
-    "explanation": "Evaluate the limit.",
-    "workingOut": "b(-4 - 4) = -8b"
+    "id": "y11a-5h-7a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} x^2 & \\text{for } x \\le 3 \\\\ 12 - x & \\text{for } x > 3 \\end{cases}$",
+    "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\ge 0$.",
+    "opts": [],
+    "h": "Evaluate $\\lim_{x \\to 3} f(x)$ from both sides.",
+    "s": "Left limit $= 3^2 = 9$. Right limit $= 12 - 3 = 9$. Value $f(3) = 9$. They match.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate limits from the left and right.",
+        "workingOut": "\\lim_{x \\to 3^-} x^2 = 9 \\\\ \\lim_{x \\to 3^+} (12 - x) = 9"
+      },
+      {
+        "explanation": "Compare to the function value.",
+        "workingOut": "f(3) = 3^2 = 9. \\text{ Since limits and value are equal, it is continuous.}"
+      },
+      {
+        "explanation": "Determine domain and range from the sketch.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\ge 0",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              12,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 12 - x; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,9], {name:'(3,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
   },
   {
-    "explanation": "Equate to the function value at $n = -4$.",
-    "workingOut": "-8b = 16 \\Rightarrow b = -2"
-  }]
-
-},
-{
-  "id": "y11a-5h-13",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "hard",
-  "q": "a) Show that the function $p(y)$ below is discontinuous at $y = 1$.\n$p(y) = \\begin{cases} 3^y & \\text{for } y < 1 \\\\ 5 & \\text{for } y = 1 \\\\ 4 - y & \\text{for } y > 1 \\end{cases}$\n\nb) What simple change to $p(y)$ would make it continuous?",
-  "a": "a) Limits are 3, but value is 5. b) Change the value at $y=1$ to $3$.",
-  "opts": [],
-  "h": "Evaluate limits from left and right, and compare to $p(1)$.",
-  "s": "Left limit $= 3^1 = 3$. Right limit $= 4 - 1 = 3$. $p(1) = 5$. Since $3 \\neq 5$, it is discontinuous. Change $p(1)$ to $3$.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Calculate left and right limits.",
-    "workingOut": "\\lim_{y \\to 1^-} 3^y = 3 \\\\ \\lim_{y \\to 1^+} (4 - y) = 3"
+    "id": "y11a-5h-7b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} 2^x & \\text{for } x < 3 \\\\ 17 - x^2 & \\text{for } x > 3 \\\\ 8 & \\text{for } x = 3 \\end{cases}$",
+    "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\le 8$.",
+    "opts": [],
+    "h": "Check if left limit, right limit, and $f(3)$ are equal.",
+    "s": "Left limit $= 2^3 = 8$. Right limit $= 17 - 3^2 = 8$. $f(3) = 8$. Continuous.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate limits.",
+        "workingOut": "\\lim_{x \\to 3^-} 2^x = 8 \\\\ \\lim_{x \\to 3^+} (17 - x^2) = 17 - 9 = 8"
+      },
+      {
+        "explanation": "Check function value.",
+        "workingOut": "f(3) = 8. \\text{ Limits and value match, so continuous.}"
+      },
+      {
+        "explanation": "Determine domain and range. $17 - x^2$ is a downward parabola with vertex at $(0, 17)$, so it has values $< 8$. $2^x$ increases to 8.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 8",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              18,
+              5,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,18]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(2, x); }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 17 - x*x; }, 3, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,8], {name:'(3,8)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
   },
   {
-    "explanation": "Compare to the function value.",
-    "workingOut": "p(1) = 5 \\neq 3 \\text{, so it is discontinuous.}"
+    "id": "y11a-5h-7c",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} \\frac{2}{x} & \\text{for } 0 < x < 3 \\\\ 1 - \\frac{1}{9}x & \\text{for } x > 3 \\\\ \\frac{2}{3} & \\text{for } x = 3 \\end{cases}$",
+    "a": "Continuous at $x = 3$. Domain: $x > 0$, Range: $\\mathbb{R}$.",
+    "opts": [],
+    "h": "Find the limit from left and right as $x \\to 3$.",
+    "s": "Left limit is $2/3$. Right limit is $1 - 3/9 = 2/3$. $f(3) = 2/3$. Continuous.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate left and right limits.",
+        "workingOut": "\\lim_{x \\to 3^-} \\frac{2}{x} = \\frac{2}{3} \\\\ \\lim_{x \\to 3^+} (1 - \\frac{x}{9}) = 1 - \\frac{3}{9} = \\frac{2}{3}"
+      },
+      {
+        "explanation": "Check continuity.",
+        "workingOut": "f(3) = \\frac{2}{3}. \\text{ Limits match, so continuous.}"
+      },
+      {
+        "explanation": "Determine range. Left branch goes from $2/3$ to $\\infty$. Right branch goes from $2/3$ down to $-\\infty$.",
+        "workingOut": "\\text{Domain: } x > 0 \\\\ \\text{Range: } \\mathbb{R}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              5,
+              8,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 2/x; }, 0.4, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1 - x/9; }, 3, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2/3], {name:'(3, 2/3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
   },
   {
-    "explanation": "b) Suggest a fix.",
-    "workingOut": "\\text{Change the definition so } p(1) = 3."
-  }]
-
-},
-{
-  "id": "y11a-5h-14",
-  "c": "5H",
-  "t": "Continuous Functions",
-  "type": "teacher_review",
-  "difficulty": "hard",
-  "q": "a) Suppose that $g(x)$ is discontinuous at $x = k$, but continuous at $x = -k$. Explain why $g(x)$ can be neither even nor odd.\n\nb) Use your answer to decide which of the functions in Question 11 are neither even nor odd.",
-  "a": "a) Even/odd functions have symmetrical discontinuities. b) 11a, 11c, 11d.",
-  "opts": [],
-  "h": "If a function is even or odd, its graph is symmetric. What does that mean for its discontinuities?",
-  "s": "If $g(x)$ is even or odd, its discontinuities must be symmetric about the y-axis. Functions in 11a, 11c, 11d have asymmetric discontinuities.",
-  "solutionSteps": [
-  {
-    "explanation": "a) Explain symmetry of even/odd functions.",
-    "workingOut": "\\text{An even function satisfies } g(x) = g(-x) \\text{ and an odd function } g(-x) = -g(x). \\text{ Both symmetries require that if a discontinuity exists at } x=k, \\text{ one must also exist at } x=-k."
+    "id": "y11a-5h-7d",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Find whether the function is continuous at $x = 3$. Then sketch the curve and state the domain and range.\n$f(x) = \\begin{cases} x - 1 & \\text{for } x < 3 \\\\ 5 - x & \\text{for } x > 3 \\\\ 2 & \\text{for } x = 3 \\end{cases}$",
+    "a": "Continuous at $x = 3$. Domain: $\\mathbb{R}$, Range: $y \\le 2$.",
+    "opts": [],
+    "h": "Find the limit from the left and the right.",
+    "s": "Left limit is $3-1 = 2$. Right limit is $5-3 = 2$. $f(3)=2$. Continuous.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate limits.",
+        "workingOut": "\\lim_{x \\to 3^-} (x - 1) = 2 \\\\ \\lim_{x \\to 3^+} (5 - x) = 2"
+      },
+      {
+        "explanation": "Check continuity.",
+        "workingOut": "f(3) = 2. \\text{ It is continuous.}"
+      },
+      {
+        "explanation": "Determine domain and range. Both branches are lines moving downward away from $y=2$.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\\\ \\text{Range: } y \\le 2",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -1,
+              4,
+              6,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - 1; }, -1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 5 - x; }, 3, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3, 2], {name:'(3,2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
   },
   {
-    "explanation": "b) Analyze the discontinuities in Q11.",
-    "workingOut": "\\text{11a has discontinuity only at } -2. \\\\ \\text{11b has discontinuities at } 2 \\text{ and } -2. \\text{ (Symmetric)} \\\\ \\text{11c has discontinuities at } 2 \\text{ and } 4. \\\\ \\text{11d has discontinuity only at } -2. \\\\ \\text{Thus, 11a, 11c, and 11d are neither even nor odd.}"
-  }]
-
-}];
+    "id": "y11a-5h-8",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Consider the function $g(t) = \\begin{cases} t + 4 & \\text{for } t < -2 \\\\ -t & \\text{for } -2 \\le t \\le 2 \\\\ t - 4 & \\text{for } t > 2 \\end{cases}$\n\na) Show that $g(t)$ is continuous at $t = -2$ and $t = 2$.\nb) Sketch $y = g(t)$.\nc) Simplify $g(-t)$ and hence show that $g(t)$ is an odd function.",
+    "a": "a) Limits match values at both points. c) $g(-t) = -g(t)$ for all branches, so it is odd.",
+    "opts": [],
+    "h": "For part c, remember to negate the domain conditions as well (e.g., $t < -2$ becomes $-t < -2 \\Rightarrow t > 2$).",
+    "s": "At $t=-2$, limit is $2$. At $t=2$, limit is $-2$. $g(-t) = -g(t)$, thus odd.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Check continuity at $t = -2$.",
+        "workingOut": "\\lim_{t \\to -2^-} (t + 4) = 2 \\\\ \\lim_{t \\to -2^+} (-t) = 2 \\\\ g(-2) = 2. \\text{ Continuous.}"
+      },
+      {
+        "explanation": "a) Check continuity at $t = 2$.",
+        "workingOut": "\\lim_{t \\to 2^-} (-t) = -2 \\\\ \\lim_{t \\to 2^+} (t - 4) = -2 \\\\ g(2) = -2. \\text{ Continuous.}"
+      },
+      {
+        "explanation": "c) Evaluate $g(-t)$ to test for odd function.",
+        "workingOut": "\\text{For } t > 2, -t < -2 \\Rightarrow g(-t) = (-t) + 4 = -(t - 4) = -g(t) \\\\ \\text{For } -2 \\le t \\le 2, g(-t) = -(-t) = t = -(-t) = -g(t) \\\\ \\text{For } t < -2, -t > 2 \\Rightarrow g(-t) = (-t) - 4 = -(t + 4) = -g(t) \\\\ \\text{Since } g(-t) = -g(t) \\text{ for all } t, \\text{ it is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              6,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x + 4; }, -6, -2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x - 4; }, 2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 2], {name:'(-2,2)', size:3, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, -2], {name:'(2,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-9",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Consider the function $h(v) = \\begin{cases} -3v - 2 & \\text{for } v < -1 \\\\ 2v^2 - 1 & \\text{for } -1 \\le v \\le 1 \\\\ 3v - 2 & \\text{for } v > 1 \\end{cases}$\n\na) Show that $h(v)$ is continuous at $v = -1$ and $v = 1$.\nb) Sketch $y = h(v)$.\nc) Simplify $h(-v)$ and hence show that $h(v)$ is an even function.",
+    "a": "a) Limits match values. c) $h(-v) = h(v)$, so it is even.",
+    "opts": [],
+    "h": "For part c, evaluate $h(-v)$ for each branch.",
+    "s": "At $v=1, -1$, limits evaluate to $1$. $h(-v) = h(v)$ for all branches, so it is even.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Check continuity at $v = -1$.",
+        "workingOut": "\\lim_{v \\to -1^-} (-3v - 2) = 1 \\\\ \\lim_{v \\to -1^+} (2v^2 - 1) = 1 \\\\ h(-1) = 1. \\text{ Continuous.}"
+      },
+      {
+        "explanation": "a) Check continuity at $v = 1$.",
+        "workingOut": "\\lim_{v \\to 1^-} (2v^2 - 1) = 1 \\\\ \\lim_{v \\to 1^+} (3v - 2) = 1 \\\\ h(1) = 1. \\text{ Continuous.}"
+      },
+      {
+        "explanation": "c) Evaluate $h(-v)$.",
+        "workingOut": "\\text{For } v > 1, -v < -1 \\Rightarrow h(-v) = -3(-v) - 2 = 3v - 2 = h(v) \\\\ \\text{For } -1 \\le v \\le 1, h(-v) = 2(-v)^2 - 1 = 2v^2 - 1 = h(v) \\\\ \\text{For } v < -1, -v > 1 \\Rightarrow h(-v) = 3(-v) - 2 = -3v - 2 = h(v) \\\\ \\text{Since } h(-v) = h(v) \\text{ for all } v, \\text{ it is even.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              4,
+              3,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -3*x - 2; }, -3, -1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2*x*x - 1; }, -1, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x - 2; }, 1, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1, 1], {name:'(-1,1)', size:3, color:'red', label:{offset:[-15,10]}});\nboard.create('point', [1, 1], {name:'(1,1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-10a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Determine whether the following piecewise function is odd, even, or neither. Graph the function to confirm your answer.\n$p(m) = \\begin{cases} m - m^3 & \\text{for } m < 0 \\\\ m^3 - m & \\text{for } m \\ge 0 \\end{cases}$",
+    "a": "Odd function.",
+    "opts": [],
+    "h": "Evaluate $p(-m)$ for $m > 0$.",
+    "s": "For $m > 0$, $-m < 0$, so $p(-m) = (-m) - (-m)^3 = -m + m^3 = -(m^3 - m) = -p(m)$. It is odd.",
+    "solutionSteps": [
+      {
+        "explanation": "Test for even or odd by finding $p(-m)$. Assume $m > 0$, so $-m < 0$.",
+        "workingOut": "p(-m) = (-m) - (-m)^3 = -m + m^3"
+      },
+      {
+        "explanation": "Compare to $p(m)$ for $m > 0$.",
+        "workingOut": "p(m) = m^3 - m \\\\ -p(m) = -(m^3 - m) = -m + m^3 = p(-m) \\\\ \\text{Thus, } p(m) \\text{ is odd.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              3,
+              3,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x - x*x*x; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x*x - x; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-10b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Determine whether the following piecewise function is odd, even, or neither. Graph the function to confirm your answer.\n$q(m) = \\begin{cases} m^2 + 2 & \\text{for } m < 0 \\\\ m^2 - 2 & \\text{for } m \\ge 0 \\end{cases}$",
+    "a": "Neither.",
+    "opts": [],
+    "h": "Check $q(1)$ and $q(-1)$.",
+    "s": "$q(1) = 1 - 2 = -1$. $q(-1) = 1 + 2 = 3$. It's neither.",
+    "solutionSteps": [
+      {
+        "explanation": "Test with a specific value, e.g., $m = 1$.",
+        "workingOut": "q(1) = 1^2 - 2 = -1"
+      },
+      {
+        "explanation": "Evaluate $q(-1)$.",
+        "workingOut": "q(-1) = (-1)^2 + 2 = 3"
+      },
+      {
+        "explanation": "Compare.",
+        "workingOut": "q(-1) \\neq q(1) \\text{ and } q(-1) \\neq -q(1). \\text{ Thus, neither.}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              6,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 2; }, -4, -0.001], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x - 2; }, 0, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0, 2], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [0, -2], {name:'(0,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-11a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k^2 + 4k + 4}{k + 2}$",
+    "a": "Undefined at $k = -2$. Simplifies to $y = k + 2$. Domain: $k \\neq -2$, Range: $y \\neq 0$.",
+    "opts": [],
+    "h": "Factor the numerator.",
+    "s": "Numerator is $(k+2)^2$. Function is $y = k+2$ with a hole at $(-2, 0)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where the function is undefined.",
+        "workingOut": "k + 2 = 0 \\Rightarrow k = -2"
+      },
+      {
+        "explanation": "Factor the numerator and simplify.",
+        "workingOut": "y = \\frac{(k + 2)^2}{k + 2} = k + 2 \\text{ (for } k \\neq -2)"
+      },
+      {
+        "explanation": "Determine domain and range. Graph is a line with a hole at $k = -2, y = 0$.",
+        "workingOut": "\\text{Domain: } k \\in \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } y \\in \\mathbb{R} \\setminus \\{0\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              4,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x+2; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,0], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-11b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k^4 - 4k^2}{k^2 - 4}$",
+    "a": "Undefined at $k = 2, -2$. Simplifies to $y = k^2$. Domain: $k \\neq \\pm 2$, Range: $y \\ge 0, y \\neq 4$.",
+    "opts": [],
+    "h": "Factor out $k^2$ in the numerator.",
+    "s": "Numerator is $k^2(k^2-4)$. Simplifies to $y = k^2$ with holes at $(\\pm 2, 4)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where undefined.",
+        "workingOut": "k^2 - 4 = 0 \\Rightarrow k = 2, -2"
+      },
+      {
+        "explanation": "Factor and simplify.",
+        "workingOut": "y = \\frac{k^2(k^2 - 4)}{k^2 - 4} = k^2 \\text{ (for } k \\neq \\pm 2)"
+      },
+      {
+        "explanation": "Determine domain and range. Parabola $y=k^2$ with holes at $k=2$ and $k=-2$, where $y=4$.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2, 2\\} \\\\ \\text{Range: } y \\ge 0 \\text{ and } y \\neq 4",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              8,
+              4,
+              -2
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -4, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,4], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-11c",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{k - 4}{k^2 - 6k + 8}$",
+    "a": "Undefined at $k = 2, 4$. Simplifies to $y = \\frac{1}{k-2}$. Domain: $k \\neq 2, 4$, Range: $y \\neq 0, y \\neq 1/2$.",
+    "opts": [],
+    "h": "Factor the denominator $k^2 - 6k + 8$.",
+    "s": "Denominator is $(k-4)(k-2)$. Simplifies to $y = 1/(k-2)$ with a hole at $k=4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where undefined by factoring denominator.",
+        "workingOut": "k^2 - 6k + 8 = (k - 4)(k - 2) = 0 \\Rightarrow k = 4, 2"
+      },
+      {
+        "explanation": "Cancel common factors.",
+        "workingOut": "y = \\frac{k - 4}{(k - 4)(k - 2)} = \\frac{1}{k - 2} \\text{ (for } k \\neq 4)"
+      },
+      {
+        "explanation": "State domain and range. Hyperbola with asymptote $k=2$, $y=0$, and a hole at $k=4$, where $y=1/2$.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{2, 4\\} \\\\ \\text{Range: } y \\neq 0, y \\neq \\frac{1}{2}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              4,
+              8,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('line', [[2,-4],[2,4]], {strokeColor:'red', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, -2, 1.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-2); }, 2.1, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [4, 0.5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-11d",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "q": "Cancel the algebraic fraction, noting first the values of $k$ for which the function is undefined. Then sketch the curve and state its domain and range:\n$y = \\frac{5k + 10}{k + 2}$",
+    "a": "Undefined at $k = -2$. Simplifies to $y = 5$. Domain: $k \\neq -2$, Range: $y = 5$.",
+    "opts": [],
+    "h": "Factor out 5 in the numerator.",
+    "s": "Numerator is $5(k+2)$. Simplifies to $y=5$ with a hole at $(-2, 5)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Identify where undefined.",
+        "workingOut": "k + 2 = 0 \\Rightarrow k = -2"
+      },
+      {
+        "explanation": "Simplify.",
+        "workingOut": "y = \\frac{5(k + 2)}{k + 2} = 5 \\text{ (for } k \\neq -2)"
+      },
+      {
+        "explanation": "State domain and range. Horizontal line with a hole.",
+        "workingOut": "\\text{Domain: } \\mathbb{R} \\setminus \\{-2\\} \\\\ \\text{Range: } \\{5\\}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -6,
+              7,
+              4,
+              -1
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 5; }, -6, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2, 5], {name:'', size:3, color:'white', strokeColor:'blue', strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-12a",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "Find the value of the constant $b$ that makes the function continuous:\n$f(n) = \\begin{cases} b n^2 & \\text{for } n \\le 2 \\\\ 10 - n & \\text{for } n > 2 \\end{cases}$",
+    "a": "2",
+    "opts": [],
+    "h": "Set the limits from the left and right at $n=2$ equal to each other.",
+    "s": "At $n=2$, $b(2)^2 = 10 - 2 \\Rightarrow 4b = 8 \\Rightarrow b = 2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate the limit as $n \\to 2$ from the left.",
+        "workingOut": "\\lim_{n \\to 2^-} b n^2 = 4b"
+      },
+      {
+        "explanation": "Evaluate the limit as $n \\to 2$ from the right.",
+        "workingOut": "\\lim_{n \\to 2^+} (10 - n) = 10 - 2 = 8"
+      },
+      {
+        "explanation": "Equate the limits for continuity.",
+        "workingOut": "4b = 8 \\Rightarrow b = 2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-12b",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "q": "Find the value of the constant $b$ that makes the function continuous:\n$g(n) = \\begin{cases} \\frac{b(n^2 - 16)}{n + 4} & \\text{for } n \\neq -4 \\\\ 16 & \\text{for } n = -4 \\end{cases}$",
+    "a": "-2",
+    "opts": [],
+    "h": "Simplify the fraction by factoring the numerator, then evaluate the limit as $n \\to -4$.",
+    "s": "Limit as $n \\to -4$ of $b(n-4)(n+4)/(n+4)$ is $b(-4-4) = -8b$. Setting this equal to $16$ gives $b = -2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Factor the numerator to simplify the limit.",
+        "workingOut": "\\lim_{n \\to -4} \\frac{b(n - 4)(n + 4)}{n + 4} = \\lim_{n \\to -4} b(n - 4)"
+      },
+      {
+        "explanation": "Evaluate the limit.",
+        "workingOut": "b(-4 - 4) = -8b"
+      },
+      {
+        "explanation": "Equate to the function value at $n = -4$.",
+        "workingOut": "-8b = 16 \\Rightarrow b = -2"
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-13",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "a) Show that the function $p(y)$ below is discontinuous at $y = 1$.\n$p(y) = \\begin{cases} 3^y & \\text{for } y < 1 \\\\ 5 & \\text{for } y = 1 \\\\ 4 - y & \\text{for } y > 1 \\end{cases}$\n\nb) What simple change to $p(y)$ would make it continuous?",
+    "a": "a) Limits are 3, but value is 5. b) Change the value at $y=1$ to $3$.",
+    "opts": [],
+    "h": "Evaluate limits from left and right, and compare to $p(1)$.",
+    "s": "Left limit $= 3^1 = 3$. Right limit $= 4 - 1 = 3$. $p(1) = 5$. Since $3 \\neq 5$, it is discontinuous. Change $p(1)$ to $3$.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Calculate left and right limits.",
+        "workingOut": "\\lim_{y \\to 1^-} 3^y = 3 \\\\ \\lim_{y \\to 1^+} (4 - y) = 3"
+      },
+      {
+        "explanation": "Compare to the function value.",
+        "workingOut": "p(1) = 5 \\neq 3 \\text{, so it is discontinuous.}"
+      },
+      {
+        "explanation": "b) Suggest a fix.",
+        "workingOut": "\\text{Change the definition so } p(1) = 3."
+      }
+    ]
+  },
+  {
+    "id": "y11a-5h-14",
+    "c": "5H",
+    "t": "Continuous Functions",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "a) Suppose that $g(x)$ is discontinuous at $x = k$, but continuous at $x = -k$. Explain why $g(x)$ can be neither even nor odd.\n\nb) Use your answer to decide which of the functions in Question 11 are neither even nor odd.",
+    "a": "a) Even/odd functions have symmetrical discontinuities. b) 11a, 11c, 11d.",
+    "opts": [],
+    "h": "If a function is even or odd, its graph is symmetric. What does that mean for its discontinuities?",
+    "s": "If $g(x)$ is even or odd, its discontinuities must be symmetric about the y-axis. Functions in 11a, 11c, 11d have asymmetric discontinuities.",
+    "solutionSteps": [
+      {
+        "explanation": "a) Explain symmetry of even/odd functions.",
+        "workingOut": "\\text{An even function satisfies } g(x) = g(-x) \\text{ and an odd function } g(-x) = -g(x). \\text{ Both symmetries require that if a discontinuity exists at } x=k, \\text{ one must also exist at } x=-k."
+      },
+      {
+        "explanation": "b) Analyze the discontinuities in Q11.",
+        "workingOut": "\\text{11a has discontinuity only at } -2. \\\\ \\text{11b has discontinuities at } 2 \\text{ and } -2. \\text{ (Symmetric)} \\\\ \\text{11c has discontinuities at } 2 \\text{ and } 4. \\\\ \\text{11d has discontinuity only at } -2. \\\\ \\text{Thus, 11a, 11c, and 11d are neither even nor odd.}"
+      }
+    ]
+  }
+];
