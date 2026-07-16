@@ -3,85 +3,141 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5-1a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate: $|-6|$",
-    "a": "6",
-    "opts": [],
-    "h": "Absolute value makes a number positive.",
-    "s": "$|-6| = 6$.",
+    "q": "Evaluate: \\(|-6|\\)",
+    "a": "2",
+    "opts": [
+      "\\(-6\\)",
+      "\\(0\\)",
+      "\\(6\\)",
+      "\\(1\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "The absolute value of a negative number is its positive counterpart.",
-        "workingOut": "|-6| = 6"
+        "explanation": "We are given a single absolute-value expression and asked to evaluate it to a number. Absolute value measures distance from zero on the number line, so the result is never negative. The strategy is to recognise that the input is already a negative constant and apply the definition of absolute value directly.",
+        "workingOut": "\\(\\text{Given: } |-6|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "By definition, for any real number a, |a| equals a when a is non-negative and equals -a when a is negative. Here a = -6 is negative, so we take the opposite of -6. A common mistake is to leave the answer as -6, forgetting that distance cannot be negative.",
+        "workingOut": "\\(|-6| = -(-6) = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The value 6 is the distance from -6 to 0, which matches the definition. Checking: 6 is positive and |6| = 6, so the answer is consistent. Therefore the evaluation of the given expression is 6.",
+        "workingOut": "\\(\\text{Final answer: } 6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-1b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate: $|4 - 11|$",
-    "a": "7",
-    "opts": [],
-    "h": "Calculate inside the absolute value first.",
-    "s": "$|4 - 11| = |-7| = 7$.",
+    "q": "Evaluate: \\(|4 - 11|\\)",
+    "a": "0",
+    "opts": [
+      "\\(7\\)",
+      "\\(-7\\)",
+      "\\(15\\)",
+      "\\(-15\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the expression inside the absolute value.",
-        "workingOut": "4 - 11 = -7"
+        "explanation": "We must evaluate an absolute value of a difference. Order of operations requires simplifying inside the bars first, then applying absolute value. The plan is to compute 4 - 11, then take the non-negative magnitude of that result.",
+        "workingOut": "\\(\\text{Given: } |4 - 11|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take the absolute value.",
-        "workingOut": "|-7| = 7"
+        "explanation": "Subtract inside the absolute value: 4 - 11 = -7. Students often reverse the order and compute 11 - 4 = 7 too early; that happens to give the same magnitude here, but you must still show the intermediate negative value so the absolute-value step is clear.",
+        "workingOut": "\\(4 - 11 = -7 \\;\\Rightarrow\\; |-7|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the definition: |-7| = 7. The final result is positive 7, the distance between 4 and 11 on the number line. This confirms that absolute value of a difference equals the positive distance between the two numbers.",
+        "workingOut": "\\(|-7| = 7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-1c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Evaluate: $|-3 - (-8)|$",
-    "a": "5",
-    "opts": [],
-    "h": "Subtracting a negative is adding.",
-    "s": "$|-3 - (-8)| = |-3 + 8| = |5| = 5$.",
+    "q": "Evaluate: \\(|-3 - (-8)|\\)",
+    "a": "3",
+    "opts": [
+      "\\(-5\\)",
+      "\\(11\\)",
+      "\\(-11\\)",
+      "\\(5\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Simplify the expression inside.",
-        "workingOut": "-3 - (-8) = -3 + 8 = 5"
+        "explanation": "The expression nests a double negative inside absolute value. We first simplify the arithmetic inside the bars using the rule that subtracting a negative is addition, then take absolute value. Strategy: rewrite -3 - (-8), evaluate, then apply |·|.",
+        "workingOut": "\\(\\text{Given: } |-3 - (-8)|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take the absolute value.",
-        "workingOut": "|5| = 5"
+        "explanation": "Subtracting a negative flips the sign: -3 - (-8) = -3 + 8 = 5. A frequent error is treating - (-8) as still negative, which yields -11 instead of 5. Double-check the double-negative before continuing.",
+        "workingOut": "\\(-3 - (-8) = -3 + 8 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Now |5| = 5 since 5 is already non-negative. The absolute value does not change a positive result. Final answer is 5, which is the distance from -3 to -8.",
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-1d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Evaluate: $|-5| - |-7|$",
-    "a": "-2",
-    "opts": [],
-    "h": "Evaluate each absolute value before subtracting.",
-    "s": "$|-5| = 5$ and $|-7| = 7$. So, $5 - 7 = -2$.",
+    "q": "Evaluate: \\(|-5| - |-7|\\)",
+    "a": "1",
+    "opts": [
+      "\\(2\\)",
+      "\\(-2\\)",
+      "\\(12\\)",
+      "\\(-12\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Evaluate each absolute value separately.",
-        "workingOut": "|-5| = 5 \\\\ |-7| = 7"
+        "explanation": "This is a difference of two absolute values, not the absolute value of a difference. Evaluate each absolute value separately first, then subtract. Strategy: compute |-5| and |-7|, then perform the outer subtraction.",
+        "workingOut": "\\(\\text{Given: } |-5| - |-7|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Perform the subtraction.",
-        "workingOut": "5 - 7 = -2"
+        "explanation": "Absolute value of each term: |-5| = 5 and |-7| = 7. A common mistake is to write | -5 - 7 | or |-5 - (-7)|, which are different expressions. Keep the two absolute values separate.",
+        "workingOut": "\\(|-5| = 5,\\quad |-7| = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Subtract the results: 5 - 7 = -2. Note that the overall answer may be negative because subtraction is outside the absolute value bars. Check: 5 - 7 is indeed -2, so the final answer is -2.",
+        "workingOut": "\\(5 - 7 = -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-2a",
@@ -89,26 +145,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|4x| = 24$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|4x| = 24\\)",
+    "a": "1",
     "opts": [
-      "$x = 6$ or $x = -6$",
-      "$x = 6$ only",
-      "$x = -6$ only",
+      "\\(x = 6\\) only",
+      "\\(x = 6\\) or \\(x = -6\\)",
+      "\\(x = -6\\) only",
       "No solution"
     ],
-    "h": "The value inside the absolute bars can be positive or negative 24.",
-    "s": "$4x = 24 \\implies x = 6$. Or $4x = -24 \\implies x = -6$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations.",
-        "workingOut": "4x = 24 \\quad \\text{or} \\quad 4x = -24"
+        "explanation": "We solve an absolute-value equation of the form |A| = k with k > 0. By definition this splits into two linear cases A = k or A = -k. Here A = 4x and k = 24, so both cases must be solved.",
+        "workingOut": "\\(\\text{Given: } |4x| = 24,\\; 24 > 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve each.",
-        "workingOut": "x = 6 \\quad \\text{or} \\quad x = -6"
+        "explanation": "Write the two equations: 4x = 24 or 4x = -24. Students sometimes forget the negative case and report only x = 6. Both branches are required whenever the right-hand side is positive.",
+        "workingOut": "\\(4x = 24 \\quad \\text{or} \\quad 4x = -24\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Divide each equation by 4: x = 6 or x = -6. These are the only candidates so far; next we confirm both satisfy the original equation.",
+        "workingOut": "\\(x = 6 \\quad \\text{or} \\quad x = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |4(6)| = |24| = 24 and |4(-6)| = |-24| = 24. Both work, so the complete solution set is x = 6 or x = -6. Neither root is extraneous.",
+        "workingOut": "\\(\\text{Solution: } x = 6 \\text{ or } x = -6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-2b",
@@ -116,26 +185,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|x - 3| = 7$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|x - 3| = 7\\)",
+    "a": "3",
     "opts": [
-      "$x = 10$ or $x = -4$",
-      "$x = 10$ or $x = 4$",
-      "$x = 4$ or $x = -4$",
-      "No solution"
+      "\\(x = 10\\) or \\(x = 4\\)",
+      "\\(x = 4\\) or \\(x = -4\\)",
+      "No solution",
+      "\\(x = 10\\) or \\(x = -4\\)"
     ],
-    "h": "$x - 3$ can be $7$ or $-7$.",
-    "s": "$x - 3 = 7 \\implies x = 10$. Or $x - 3 = -7 \\implies x = -4$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations.",
-        "workingOut": "x - 3 = 7 \\quad \\text{or} \\quad x - 3 = -7"
+        "explanation": "The equation |x - 3| = 7 means the distance from x to 3 is 7. Algebraically we split into x - 3 = 7 or x - 3 = -7. Plan: solve both linear equations and verify.",
+        "workingOut": "\\(\\text{Given: } |x - 3| = 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve each.",
-        "workingOut": "x = 10 \\quad \\text{or} \\quad x = -4"
+        "explanation": "Case 1: x - 3 = 7 gives x = 10. Case 2: x - 3 = -7 gives x = -4. A common sign error is writing x - 3 = -7 as x = 3 - 7 incorrectly as x = 4.",
+        "workingOut": "\\(x - 3 = 7 \\;\\Rightarrow\\; x = 10\\)\\\\\n\\(x - 3 = -7 \\;\\Rightarrow\\; x = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify: |10 - 3| = 7 and |-4 - 3| = |-7| = 7. Both solutions are valid. The solution set is x = 10 or x = -4, which are the two points 7 units from 3 on the number line.",
+        "workingOut": "\\(\\text{Solution: } x = 10 \\text{ or } x = -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-2c",
@@ -143,30 +220,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|3x - 2| = 10$",
+    "q": "Solve for \\(x\\): \\(|3x - 2| = 10\\)",
     "a": "0",
     "opts": [
-      "$x = 4$ or $x = -\\frac{8}{3}$",
-      "$x = 4$ or $x = \\frac{8}{3}$",
-      "$x = -4$ or $x = \\frac{8}{3}$",
+      "\\(x = 4\\) or \\(x = -\\frac{8}{3}\\)",
+      "\\(x = 4\\) or \\(x = \\frac{8}{3}\\)",
+      "\\(x = -4\\) or \\(x = \\frac{8}{3}\\)",
       "No solution"
     ],
-    "h": "Create two equations: $3x - 2 = 10$ and $3x - 2 = -10$.",
-    "s": "$3x - 2 = 10 \\implies 3x = 12 \\implies x = 4$. Or $3x - 2 = -10 \\implies 3x = -8 \\implies x = -\\frac{8}{3}$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations.",
-        "workingOut": "3x - 2 = 10 \\quad \\text{or} \\quad 3x - 2 = -10"
+        "explanation": "Solve |3x - 2| = 10 by splitting into two linear equations because the right-hand side is positive. Strategy: set 3x - 2 equal to 10 and to -10, then solve carefully for fractions.",
+        "workingOut": "\\(\\text{Given: } |3x - 2| = 10\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve the first.",
-        "workingOut": "3x = 12 \\implies x = 4"
+        "explanation": "Positive case: 3x - 2 = 10, so 3x = 12 and x = 4. Keep arithmetic exact; do not skip the +2 step.",
+        "workingOut": "\\(3x - 2 = 10 \\;\\Rightarrow\\; 3x = 12 \\;\\Rightarrow\\; x = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve the second.",
-        "workingOut": "3x = -8 \\implies x = -\\frac{8}{3}"
+        "explanation": "Negative case: 3x - 2 = -10, so 3x = -8 and x = -8/3. A frequent error is flipping only the 10 and forgetting to keep the -2, or writing x = 8/3 with the wrong sign.",
+        "workingOut": "\\(3x - 2 = -10 \\;\\Rightarrow\\; 3x = -8 \\;\\Rightarrow\\; x = -\\frac{8}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check both: |3(4) - 2| = |10| = 10 and |3(-8/3) - 2| = |-8 - 2| = 10. Both satisfy the original equation. Final answer: x = 4 or x = -8/3.",
+        "workingOut": "\\(\\text{Solution: } x = 4 \\text{ or } x = -\\frac{8}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-2d",
@@ -174,26 +260,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|2x - 5| = 9$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|2x - 5| = 9\\)",
+    "a": "2",
     "opts": [
-      "$x = 7$ or $x = -2$",
-      "$x = 7$ or $x = 2$",
-      "$x = 2$ or $x = -7$",
+      "\\(x = 7\\) or \\(x = 2\\)",
+      "\\(x = 2\\) or \\(x = -7\\)",
+      "\\(x = 7\\) or \\(x = -2\\)",
       "No solution"
     ],
-    "h": "Solve $2x - 5 = 9$ and $2x - 5 = -9$.",
-    "s": "$2x - 5 = 9 \\implies 2x = 14 \\implies x = 7$. Or $2x - 5 = -9 \\implies 2x = -4 \\implies x = -2$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations.",
-        "workingOut": "2x - 5 = 9 \\quad \\text{or} \\quad 2x - 5 = -9"
+        "explanation": "Again we have |linear| = positive constant. Split into 2x - 5 = 9 and 2x - 5 = -9, solve each, and verify both roots.",
+        "workingOut": "\\(\\text{Given: } |2x - 5| = 9\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve each.",
-        "workingOut": "2x = 14 \\implies x = 7 \\\\ 2x = -4 \\implies x = -2"
+        "explanation": "First case: 2x - 5 = 9 gives 2x = 14, so x = 7. Second case: 2x - 5 = -9 gives 2x = -4, so x = -2. Watch the sign when adding 5 to both sides of the second equation.",
+        "workingOut": "\\(2x - 5 = 9 \\;\\Rightarrow\\; x = 7\\)\\\\\n\\(2x - 5 = -9 \\;\\Rightarrow\\; x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verification: |2(7) - 5| = |9| = 9 and |2(-2) - 5| = |-4 - 5| = 9. Both roots work. Solution: x = 7 or x = -2.",
+        "workingOut": "\\(\\text{Solution: } x = 7 \\text{ or } x = -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-3a",
@@ -598,139 +692,366 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5-8a",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the graph of $y = |x| - 5$, showing the vertex.",
+    "q": "Sketch the graph of \\(y = |x| - 5\\), showing the vertex.",
     "a": "Graph showing vertex at (0, -5)",
     "opts": [],
-    "h": "The base graph $y = |x|$ has its vertex at $(0,0)$. Consider the translation.",
-    "s": "The graph of $y = |x|$ is shifted downwards by 5 units. The vertex moves from $(0,0)$ to $(0, -5)$.",
+    "h": "The base graph \\(y = |x|\\) has its vertex at \\((0,0)\\). Consider the translation.",
+    "s": "The graph of \\(y = |x|\\) is shifted downwards by 5 units. The vertex moves from \\((0,0)\\) to \\((0, -5)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (0, -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (0, -5)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Apply vertical shift to the origin.",
-        "workingOut": "(0, 0) \\to (0, -5)"
+        "workingOut": "\\((0, 0) \\to (0, -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (0, -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (0, -5)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-8b",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the graph of $y = |x - 6|$, showing the vertex.",
+    "q": "Sketch the graph of \\(y = |x - 6|\\), showing the vertex.",
     "a": "Graph showing vertex at (6, 0)",
     "opts": [],
-    "h": "Consider the horizontal shift of $y = |x|$.",
-    "s": "Replacing $x$ with $x - 6$ shifts the graph 6 units to the right. The vertex moves to $(6, 0)$.",
+    "h": "Consider the horizontal shift of \\(y = |x|\\).",
+    "s": "Replacing \\(x\\) with \\(x - 6\\) shifts the graph 6 units to the right. The vertex moves to \\((6, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (6, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (6, 0)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Apply horizontal shift.",
-        "workingOut": "(0,0) \\to (6,0)"
+        "workingOut": "\\((0,0) \\to (6,0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (6, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (6, 0)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-8c",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the graph of $y = |x + 4|$, showing the vertex.",
+    "q": "Sketch the graph of \\(y = |x + 4|\\), showing the vertex.",
     "a": "Graph showing vertex at (-4, 0)",
     "opts": [],
-    "h": "Consider the horizontal shift of $y = |x|$.",
-    "s": "Replacing $x$ with $x + 4$ shifts the graph 4 units to the left. The vertex moves to $(-4, 0)$.",
+    "h": "Consider the horizontal shift of \\(y = |x|\\).",
+    "s": "Replacing \\(x\\) with \\(x + 4\\) shifts the graph 4 units to the left. The vertex moves to \\((-4, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (-4, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (-4, 0)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Apply horizontal shift.",
-        "workingOut": "(0,0) \\to (-4,0)"
+        "workingOut": "\\((0,0) \\to (-4,0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (-4, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (-4, 0)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-8d",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the graph of $y = |x| + 7$, showing the vertex.",
+    "q": "Sketch the graph of \\(y = |x| + 7\\), showing the vertex.",
     "a": "Graph showing vertex at (0, 7)",
     "opts": [],
-    "h": "Consider the vertical shift of $y = |x|$.",
-    "s": "The graph is shifted upwards by 7 units. The vertex moves to $(0, 7)$.",
+    "h": "Consider the vertical shift of \\(y = |x|\\).",
+    "s": "The graph is shifted upwards by 7 units. The vertex moves to \\((0, 7)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (0, 7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (0, 7)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Apply vertical shift.",
-        "workingOut": "(0,0) \\to (0,7)"
+        "workingOut": "\\((0,0) \\to (0,7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (0, 7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (0, 7)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-9a",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = |4x + 12|$, indicating the $x$-intercept and $y$-intercept.",
+    "q": "Sketch the graph of \\(y = |4x + 12|\\), indicating the \\(x\\)-intercept and \\(y\\)-intercept.",
     "a": "Graph showing x-int at (-3, 0) and y-int at (0, 12)",
     "opts": [],
-    "h": "For $x$-intercept, set $y=0$. For $y$-intercept, set $x=0$.",
-    "s": "Set $x=0$: $y = |4(0) + 12| = 12$. Set $y=0$: $|4x + 12| = 0 \\implies 4x = -12 \\implies x = -3$.",
+    "h": "For \\(x\\)-intercept, set \\(y=0\\). For \\(y\\)-intercept, set \\(x=0\\).",
+    "s": "Set \\(x=0\\): \\(y = |4(0) + 12| = 12\\). Set \\(y=0\\): \\(|4x + 12| = 0 \\implies 4x = -12 \\implies x = -3\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 12)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 12)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Find \\(y\\)-intercept by setting \\(x=0\\).",
-        "workingOut": "y = |0 + 12| = 12"
+        "workingOut": "\\(y = |0 + 12| = 12\\)",
+        "graphData": null
       },
       {
         "explanation": "Find \\(x\\)-intercept by setting \\(y=0\\).",
-        "workingOut": "|4x + 12| = 0 \\implies x = -3"
+        "workingOut": "\\(|4x + 12| = 0 \\implies x = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 12)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 12)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-9b",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = -|2x - 10|$, indicating the $x$-intercept and $y$-intercept.",
+    "q": "Sketch the graph of \\(y = -|2x - 10|\\), indicating the \\(x\\)-intercept and \\(y\\)-intercept.",
     "a": "Graph showing x-int at (5, 0) and y-int at (0, -10)",
     "opts": [],
-    "h": "For $x$-intercept, set $y=0$. For $y$-intercept, set $x=0$.",
-    "s": "Set $x=0$: $y = -|2(0) - 10| = -|-10| = -10$. Set $y=0$: $-|2x - 10| = 0 \\implies 2x = 10 \\implies x = 5$.",
+    "h": "For \\(x\\)-intercept, set \\(y=0\\). For \\(y\\)-intercept, set \\(x=0\\).",
+    "s": "Set \\(x=0\\): \\(y = -|2(0) - 10| = -|-10| = -10\\). Set \\(y=0\\): \\(-|2x - 10| = 0 \\implies 2x = 10 \\implies x = 5\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (5, 0) and y-int at (0, -10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (5, 0) and y-int at (0, -10)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Find \\(y\\)-intercept by setting \\(x=0\\).",
-        "workingOut": "y = -|-10| = -10"
+        "workingOut": "\\(y = -|-10| = -10\\)",
+        "graphData": null
       },
       {
         "explanation": "Find \\(x\\)-intercept by setting \\(y=0\\).",
-        "workingOut": "2x - 10 = 0 \\implies x = 5"
+        "workingOut": "\\(2x - 10 = 0 \\implies x = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (5, 0) and y-int at (0, -10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (5, 0) and y-int at (0, -10)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-9c",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = |5x + 15|$, indicating the $x$-intercept and $y$-intercept.",
+    "q": "Sketch the graph of \\(y = |5x + 15|\\), indicating the \\(x\\)-intercept and \\(y\\)-intercept.",
     "a": "Graph showing x-int at (-3, 0) and y-int at (0, 15)",
     "opts": [],
-    "h": "For $x$-intercept, set $y=0$. For $y$-intercept, set $x=0$.",
-    "s": "Set $x=0$: $y = |15| = 15$. Set $y=0$: $5x + 15 = 0 \\implies x = -3$.",
+    "h": "For \\(x\\)-intercept, set \\(y=0\\). For \\(y\\)-intercept, set \\(x=0\\).",
+    "s": "Set \\(x=0\\): \\(y = |15| = 15\\). Set \\(y=0\\): \\(5x + 15 = 0 \\implies x = -3\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 15)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 15)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Find \\(y\\)-intercept by setting \\(x=0\\).",
-        "workingOut": "y = |0 + 15| = 15"
+        "workingOut": "\\(y = |0 + 15| = 15\\)",
+        "graphData": null
       },
       {
         "explanation": "Find \\(x\\)-intercept by setting \\(y=0\\).",
-        "workingOut": "5x + 15 = 0 \\implies x = -3"
+        "workingOut": "\\(5x + 15 = 0 \\implies x = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 15)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing x-int at (-3, 0) and y-int at (0, 15)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-10a",
@@ -738,22 +1059,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value Equations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|5x| = 35$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|5x| = 35\\)",
+    "a": "3",
     "opts": [
-      "$x = 7$ or $x = -7$",
-      "$x = 7$ only",
-      "$x = -7$ only",
-      "No solution"
+      "\\(x = 7\\) only",
+      "\\(x = -7\\) only",
+      "No solution",
+      "\\(x = 7\\) or \\(x = -7\\)"
     ],
-    "h": "Set $5x = 35$ and $5x = -35$.",
-    "s": "Dividing by 5 gives $x = 7$ or $x = -7$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Create two equations.",
-        "workingOut": "5x = 35 \\implies x = 7 \\\\ 5x = -35 \\implies x = -7"
+        "explanation": "Equation |5x| = 35 has a positive right-hand side, so two real solutions exist. Strategy: 5x = 35 or 5x = -35, then divide by 5.",
+        "workingOut": "\\(\\text{Given: } |5x| = 35\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve both branches: x = 7 and x = -7. Omitting the negative branch is a common incomplete-solution error on absolute-value equations.",
+        "workingOut": "\\(5x = 35 \\;\\Rightarrow\\; x = 7\\)\\\\\n\\(5x = -35 \\;\\Rightarrow\\; x = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |5(7)| = 35 and |5(-7)| = 35. Both valid. Complete solution: x = 7 or x = -7.",
+        "workingOut": "\\(\\text{Solution: } x = 7 \\text{ or } x = -7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-10b",
@@ -761,22 +1094,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value Equations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|x + 8| = -2$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|x + 8| = -2\\)",
+    "a": "1",
     "opts": [
+      "\\(x = -10\\) or \\(x = -6\\)",
       "No solution",
-      "$x = -10$ or $x = -6$",
-      "$x = 10$ or $x = 6$",
-      "$x = -2$ or $x = 2$"
+      "\\(x = 10\\) or \\(x = 6\\)",
+      "\\(x = -2\\) or \\(x = 2\\)"
     ],
-    "h": "Absolute values cannot be negative.",
-    "s": "Since $|x + 8| \\ge 0$, it can never equal $-2$. Thus, there is no real solution.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Absolute value must be non-negative.",
-        "workingOut": "|x+8| \\ge 0 \\neq -2"
+        "explanation": "Before splitting cases, check whether the right-hand side can equal an absolute value. Absolute value is always greater than or equal to zero for every real input. Here the right-hand side is -2, which is negative.",
+        "workingOut": "\\(\\text{Given: } |x + 8| = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "By definition |anything| ≥ 0, so |x + 8| ≥ 0 for all real x. It is impossible for a non-negative quantity to equal -2. A common mistake is still writing x + 8 = ±(-2) and producing fake solutions.",
+        "workingOut": "\\(|x + 8| \\ge 0 \\quad \\text{for all real } x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Because the equation asks a non-negative expression to equal a negative number, there is no real x that works. The solution set is empty: no solution.",
+        "workingOut": "\\(\\text{No real solution}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-10c",
@@ -784,26 +1129,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value Equations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|3x + 4| = 13$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|3x + 4| = 13\\)",
+    "a": "2",
     "opts": [
-      "$x = 3$ or $x = -\\frac{17}{3}$",
-      "$x = 3$ or $x = \\frac{17}{3}$",
-      "$x = -3$ or $x = \\frac{17}{3}$",
+      "\\(x = 3\\) or \\(x = \\frac{17}{3}\\)",
+      "\\(x = -3\\) or \\(x = \\frac{17}{3}\\)",
+      "\\(x = 3\\) or \\(x = -\\frac{17}{3}\\)",
       "No solution"
     ],
-    "h": "Set $3x + 4 = 13$ and $3x + 4 = -13$.",
-    "s": "$3x + 4 = 13 \\implies 3x = 9 \\implies x = 3$. Or $3x + 4 = -13 \\implies 3x = -17 \\implies x = -17/3$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "First equation.",
-        "workingOut": "3x + 4 = 13 \\implies x = 3"
+        "explanation": "Positive right-hand side: split into 3x + 4 = 13 and 3x + 4 = -13. Solve each linear equation carefully, especially the negative branch which yields a fraction.",
+        "workingOut": "\\(\\text{Given: } |3x + 4| = 13\\)",
+        "graphData": null
       },
       {
-        "explanation": "Second equation.",
-        "workingOut": "3x + 4 = -13 \\implies x = -\\frac{17}{3}"
+        "explanation": "Positive case: 3x + 4 = 13 → 3x = 9 → x = 3.",
+        "workingOut": "\\(3x + 4 = 13 \\;\\Rightarrow\\; 3x = 9 \\;\\Rightarrow\\; x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Negative case: 3x + 4 = -13 → 3x = -17 → x = -17/3. Watch the sign of -17 when dividing by 3.",
+        "workingOut": "\\(3x + 4 = -13 \\;\\Rightarrow\\; 3x = -17 \\;\\Rightarrow\\; x = -\\frac{17}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Verify: |3(3)+4| = 13 and |3(-17/3)+4| = |-17+4| = 13. Both valid. Solution: x = 3 or x = -17/3.",
+        "workingOut": "\\(\\text{Solution: } x = 3 \\text{ or } x = -\\frac{17}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-10d",
@@ -811,22 +1169,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value Equations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|6x + 3| = 0$",
+    "q": "Solve for \\(x\\): \\(|6x + 3| = 0\\)",
     "a": "0",
     "opts": [
-      "$x = -\\frac{1}{2}$",
-      "$x = \\frac{1}{2}$",
-      "$x = 0$",
+      "\\(x = -\\frac{1}{2}\\)",
+      "\\(x = \\frac{1}{2}\\)",
+      "\\(x = 0\\)",
       "No solution"
     ],
-    "h": "If absolute value is zero, the inside must be exactly zero.",
-    "s": "$6x + 3 = 0 \\implies 6x = -3 \\implies x = -1/2$. There is only one solution.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Set the inside to zero.",
-        "workingOut": "6x + 3 = 0 \\implies x = -\\frac{1}{2}"
+        "explanation": "When |A| = 0, the only possibility is A = 0 (there is no separate ±0). Strategy: set the inside equal to zero and solve the resulting linear equation.",
+        "workingOut": "\\(\\text{Given: } |6x + 3| = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set 6x + 3 = 0. A common mistake is still writing two cases ±0 as if they were different, or concluding no solution because absolute value is usually positive.",
+        "workingOut": "\\(6x + 3 = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Solve: 6x = -3 so x = -1/2. Check: |6(-1/2)+3| = |-3+3| = 0. Exactly one solution: x = -1/2.",
+        "workingOut": "\\(6x = -3 \\;\\Rightarrow\\; x = -\\frac{1}{2}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-11a",
@@ -1821,23 +2191,56 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5-19d",
     "c": "5E",
     "t": "Absolute Value Graphs",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph $y = |2x - 8|$, indicating the vertex and $y$-intercept.",
+    "q": "Sketch the graph \\(y = |2x - 8|\\), indicating the vertex and \\(y\\)-intercept.",
     "a": "Graph showing vertex at (4, 0) and y-int at (0, 8)",
     "opts": [],
     "h": "The vertex occurs where the expression inside the absolute value is zero.",
-    "s": "Vertex: $2x - 8 = 0 \\implies x = 4$. The vertex is $(4, 0)$. $y$-intercept: set $x = 0$, $y = |-8| = 8$.",
+    "s": "Vertex: \\(2x - 8 = 0 \\implies x = 4\\). The vertex is \\((4, 0)\\). \\(y\\)-intercept: set \\(x = 0\\), \\(y = |-8| = 8\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (4, 0) and y-int at (0, 8)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Graph showing vertex at (4, 0) and y-int at (0, 8)\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Find vertex by equating inside to 0.",
-        "workingOut": "2x - 8 = 0 \\implies x = 4"
+        "workingOut": "\\(2x - 8 = 0 \\implies x = 4\\)",
+        "graphData": null
       },
       {
         "explanation": "Find \\(y\\)-intercept.",
-        "workingOut": "y = |0 - 8| = 8"
+        "workingOut": "\\(y = |0 - 8| = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (4, 0) and y-int at (0, 8)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Graph showing vertex at (4, 0) and y-int at (0, 8)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-19e",
@@ -9024,22 +9427,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|5|$",
-    "a": "0",
+    "q": "Evaluate \\(|5|\\)",
+    "a": "1",
     "opts": [
-      "5",
-      "-5",
-      "0",
-      "1/5"
+      "\\(-5\\)",
+      "\\(5\\)",
+      "\\(0\\)",
+      "\\(\\frac{1}{5}\\)"
     ],
-    "h": "Absolute value is distance from zero.",
-    "s": "$|5| = 5$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|5| = 5"
+        "explanation": "Evaluate the absolute value of a positive constant. Absolute value returns distance from zero, which equals the number itself when the number is already non-negative.",
+        "workingOut": "\\(\\text{Given: } |5|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since 5 ≥ 0, |5| = 5 by definition. Do not change the sign of a positive input. The result is already the final answer.",
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Interpretation: 5 is 5 units from 0 on the number line. Final answer is 5.",
+        "workingOut": "\\(\\text{Final answer: } 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1b",
@@ -9047,22 +9462,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|-6|$",
-    "a": "0",
+    "q": "Evaluate \\(|-6|\\)",
+    "a": "2",
     "opts": [
-      "6",
-      "-6",
-      "0",
-      "1/6"
+      "\\(-6\\)",
+      "\\(0\\)",
+      "\\(6\\)",
+      "\\(\\frac{1}{6}\\)"
     ],
-    "h": "Absolute value makes a negative number positive.",
-    "s": "$|-6| = 6$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|-6| = 6"
+        "explanation": "Evaluate absolute value of a negative constant. Use the definition: if a < 0 then |a| = -a.",
+        "workingOut": "\\(\\text{Given: } |-6|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Because -6 is negative, |-6| = -(-6) = 6. Leaving the answer as -6 is the classic mistake of confusing absolute value with the number itself.",
+        "workingOut": "\\(|-6| = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The distance from -6 to 0 is 6 units. Final answer is 6.",
+        "workingOut": "\\(\\text{Final answer: } 6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1c",
@@ -9070,26 +9497,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|3 - 8|$",
+    "q": "Evaluate \\(|3 - 8|\\)",
     "a": "0",
     "opts": [
-      "5",
-      "-5",
-      "11",
-      "-11"
+      "\\(5\\)",
+      "\\(-5\\)",
+      "\\(11\\)",
+      "\\(-11\\)"
     ],
-    "h": "Calculate inside the absolute value first.",
-    "s": "$|3 - 8| = |-5| = 5$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Inside absolute value.",
-        "workingOut": "3 - 8 = -5"
+        "explanation": "Simplify inside the bars first, then apply absolute value. Plan: compute 3 - 8, then take |·|.",
+        "workingOut": "\\(\\text{Given: } |3 - 8|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|-5| = 5"
+        "explanation": "3 - 8 = -5, so we need |-5|. Do not stop at -5; the absolute value still remains to be applied.",
+        "workingOut": "\\(3 - 8 = -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "|-5| = 5. Final answer is 5, the distance between 3 and 8.",
+        "workingOut": "\\(|-5| = 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1d",
@@ -9097,26 +9532,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|8 - 3|$",
-    "a": "0",
+    "q": "Evaluate \\(|8 - 3|\\)",
+    "a": "3",
     "opts": [
-      "5",
-      "-5",
-      "11",
-      "-11"
+      "\\(-5\\)",
+      "\\(11\\)",
+      "\\(-11\\)",
+      "\\(5\\)"
     ],
-    "h": "Calculate inside the absolute value first.",
-    "s": "$|8 - 3| = |5| = 5$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Inside absolute value.",
-        "workingOut": "8 - 3 = 5"
+        "explanation": "Evaluate |8 - 3| by simplifying inside first. This contrasts with |3 - 8| and shows absolute value of a difference is order-independent in magnitude.",
+        "workingOut": "\\(\\text{Given: } |8 - 3|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|5| = 5"
+        "explanation": "8 - 3 = 5, which is already positive.",
+        "workingOut": "\\(8 - 3 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "|5| = 5. Same magnitude as |3 - 8|, as expected for distance. Final answer is 5.",
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1e",
@@ -9124,26 +9567,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|15 - 7 - 14|$",
-    "a": "0",
+    "q": "Evaluate \\(|15 - 7 - 14|\\)",
+    "a": "2",
     "opts": [
-      "6",
-      "-6",
-      "22",
-      "-22"
+      "\\(-6\\)",
+      "\\(22\\)",
+      "\\(6\\)",
+      "\\(-22\\)"
     ],
-    "h": "Calculate inside first.",
-    "s": "$|15 - 7 - 14| = |-6| = 6$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Inside.",
-        "workingOut": "15 - 7 - 14 = -6"
+        "explanation": "Simplify the multi-term expression inside the absolute value left to right, then apply |·|. Strategy: 15 - 7 first, then subtract 14.",
+        "workingOut": "\\(\\text{Given: } |15 - 7 - 14|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|-6| = 6"
+        "explanation": "15 - 7 = 8, then 8 - 14 = -6. A common error is 15 - 7 - 14 = 15 - (7 - 14) = 22 by wrongly grouping.",
+        "workingOut": "\\(15 - 7 - 14 = 8 - 14 = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "|-6| = 6. Final answer is 6.",
+        "workingOut": "\\(|-6| = 6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1f",
@@ -9151,26 +9602,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|-9 + 5|$",
-    "a": "0",
+    "q": "Evaluate \\(|-9 + 5|\\)",
+    "a": "1",
     "opts": [
-      "4",
-      "-4",
-      "14",
-      "-14"
+      "\\(-4\\)",
+      "\\(4\\)",
+      "\\(14\\)",
+      "\\(-14\\)"
     ],
-    "h": "Calculate inside first.",
-    "s": "$|-9 + 5| = |-4| = 4$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Inside.",
-        "workingOut": "-9 + 5 = -4"
+        "explanation": "Add inside the absolute value first: -9 + 5, then take absolute value of the sum.",
+        "workingOut": "\\(\\text{Given: } |-9 + 5|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|-4| = 4"
+        "explanation": "-9 + 5 = -4. Avoid computing | -9 | + |5| = 14, which is a different expression.",
+        "workingOut": "\\(-9 + 5 = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "|-4| = 4. Final answer is 4.",
+        "workingOut": "\\(|-4| = 4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1g",
@@ -9178,26 +9637,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|4^2 - 6^2|$",
+    "q": "Evaluate \\(|4^2 - 6^2|\\)",
     "a": "0",
     "opts": [
-      "20",
-      "-20",
-      "52",
-      "4"
+      "\\(20\\)",
+      "\\(-20\\)",
+      "\\(52\\)",
+      "\\(4\\)"
     ],
-    "h": "Calculate exponents first.",
-    "s": "$|16 - 36| = |-20| = 20$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Inside.",
-        "workingOut": "16 - 36 = -20"
+        "explanation": "Powers come before subtraction. Evaluate 4² and 6² first, subtract, then apply absolute value. Strategy follows standard order of operations.",
+        "workingOut": "\\(\\text{Given: } |4^2 - 6^2|\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "|-20| = 20"
+        "explanation": "4² = 16 and 6² = 36, so 16 - 36 = -20. A common error is writing (4-6)² = 4 or |4|² - |6|² incorrectly.",
+        "workingOut": "\\(4^2 = 16,\\; 6^2 = 36 \\;\\Rightarrow\\; 16 - 36 = -20\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "|-20| = 20. Note this also equals |4² - 6²| = |-(6² - 4²)| = 6² - 4² by difference of squares magnitude. Final answer is 20.",
+        "workingOut": "\\(|-20| = 20\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-1h",
@@ -9205,848 +9672,2134 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Evaluate $|14 - 18| - 7$",
-    "a": "0",
+    "q": "Evaluate \\(|14 - 18| - 7\\)",
+    "a": "3",
     "opts": [
-      "-3",
-      "3",
-      "11",
-      "-11"
+      "\\(3\\)",
+      "\\(11\\)",
+      "\\(-11\\)",
+      "\\(-3\\)"
     ],
-    "h": "Evaluate absolute value before subtracting 7.",
-    "s": "$|-4| - 7 = 4 - 7 = -3$",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Absolute value.",
-        "workingOut": "|-4| = 4"
+        "explanation": "Absolute value is applied only to 14 - 18; the -7 is outside the bars. Evaluate |14 - 18| first, then subtract 7.",
+        "workingOut": "\\(\\text{Given: } |14 - 18| - 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract.",
-        "workingOut": "4 - 7 = -3"
+        "explanation": "14 - 18 = -4, so |-4| = 4. Do not write |14 - 18 - 7|, which would be a different problem.",
+        "workingOut": "\\(|14 - 18| = |-4| = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Now 4 - 7 = -3. The overall result can be negative because subtraction is outside absolute value. Final answer is -3.",
+        "workingOut": "\\(4 - 7 = -3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2a-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x| = |-x|$ for $x = 5, y = -3$.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = 5, y = -3\\).",
     "a": "LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.",
     "opts": [],
-    "h": "Substitute $x=5$ into both sides.",
-    "s": "LHS: $|5| = 5$. RHS: $|-5| = 5$. Since LHS = RHS, verified.",
+    "h": "Substitute \\(x=5\\) into both sides.",
+    "s": "LHS: \\(|5| = 5\\). RHS: \\(|-5| = 5\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|5| = 5"
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|-5| = 5"
+        "workingOut": "\\(|-5| = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2a-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x - y| = |y - x|$ for $x = 5, y = -3$.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = 5, y = -3\\).",
     "a": "LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|5 - (-3)| = |8| = 8$. RHS: $|-3 - 5| = |-8| = 8$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|5 - (-3)| = |8| = 8\\). RHS: \\(|-3 - 5| = |-8| = 8\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|5 - (-3)| = 8"
+        "workingOut": "\\(|5 - (-3)| = 8\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|-3 - 5| = 8"
+        "workingOut": "\\(|-3 - 5| = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2a-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|xy| = |x||y|$ for $x = 5, y = -3$.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = 5, y = -3\\).",
     "a": "LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|5 \\times -3| = |-15| = 15$. RHS: $|5| \\times |-3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|5 \\times -3| = |-15| = 15\\). RHS: \\(|5| \\times |-3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-15| = 15"
+        "workingOut": "\\(|-15| = 15\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "5 \\times 3 = 15"
+        "workingOut": "\\(5 \\times 3 = 15\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2a-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = 5, y = -3$.",
+    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = 5, y = -3\\).",
     "a": "LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|\\frac{5}{-3}| = \\frac{5}{3}$. RHS: $\\frac{|5|}{|-3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|\\frac{5}{-3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|5|}{|-3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|\\frac{5}{-3}| = \\frac{5}{3}"
+        "workingOut": "\\(|\\frac{5}{-3}| = \\frac{5}{3}\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "\\frac{5}{3}"
+        "workingOut": "\\(\\frac{5}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2b-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x| = |-x|$ for $x = -5, y = 3$.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5, y = 3\\).",
     "a": "LHS = |-5| = 5. RHS = |5| = 5.",
     "opts": [],
-    "h": "Substitute $x=-5$ into both sides.",
-    "s": "LHS: $|-5| = 5$. RHS: $|-(-5)| = |5| = 5$. Since LHS = RHS, verified.",
+    "h": "Substitute \\(x=-5\\) into both sides.",
+    "s": "LHS: \\(|-5| = 5\\). RHS: \\(|-(-5)| = |5| = 5\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-5| = 5"
+        "workingOut": "\\(|-5| = 5\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|5| = 5"
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2b-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x - y| = |y - x|$ for $x = -5, y = 3$.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5, y = 3\\).",
     "a": "LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|-5 - 3| = |-8| = 8$. RHS: $|3 - (-5)| = |8| = 8$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|-5 - 3| = |-8| = 8\\). RHS: \\(|3 - (-5)| = |8| = 8\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-8| = 8"
+        "workingOut": "\\(|-8| = 8\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|8| = 8"
+        "workingOut": "\\(|8| = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2b-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|xy| = |x||y|$ for $x = -5, y = 3$.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5, y = 3\\).",
     "a": "LHS = |-15| = 15. RHS = |-5| * |3| = 15.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|-5 \\times 3| = |-15| = 15$. RHS: $|-5| \\times |3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|-5 \\times 3| = |-15| = 15\\). RHS: \\(|-5| \\times |3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-15| = 15"
+        "workingOut": "\\(|-15| = 15\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "5 \\times 3 = 15"
+        "workingOut": "\\(5 \\times 3 = 15\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2b-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = -5, y = 3$.",
+    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = -5, y = 3\\).",
     "a": "LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|\\frac{-5}{3}| = \\frac{5}{3}$. RHS: $\\frac{|-5|}{|3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|\\frac{-5}{3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|-5|}{|3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "\\frac{5}{3}"
+        "workingOut": "\\(\\frac{5}{3}\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "\\frac{5}{3}"
+        "workingOut": "\\(\\frac{5}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2c-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x| = |-x|$ for $x = -5, y = -3$.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5, y = -3\\).",
     "a": "LHS = |-5| = 5. RHS = |5| = 5.",
     "opts": [],
-    "h": "Substitute $x=-5$ into both sides.",
-    "s": "LHS: $|-5| = 5$. RHS: $|-(-5)| = |5| = 5$. Since LHS = RHS, verified.",
+    "h": "Substitute \\(x=-5\\) into both sides.",
+    "s": "LHS: \\(|-5| = 5\\). RHS: \\(|-(-5)| = |5| = 5\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-5| = 5"
+        "workingOut": "\\(|-5| = 5\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|5| = 5"
+        "workingOut": "\\(|5| = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2c-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|x - y| = |y - x|$ for $x = -5, y = -3$.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5, y = -3\\).",
     "a": "LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|-5 + 3| = |-2| = 2$. RHS: $|-3 + 5| = |2| = 2$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|-5 + 3| = |-2| = 2\\). RHS: \\(|-3 + 5| = |2| = 2\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-2| = 2"
+        "workingOut": "\\(|-2| = 2\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|2| = 2"
+        "workingOut": "\\(|2| = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2c-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $|xy| = |x||y|$ for $x = -5, y = -3$.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5, y = -3\\).",
     "a": "LHS = |15| = 15. RHS = |-5| * |-3| = 15.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|-5 \\times -3| = |15| = 15$. RHS: $|-5| \\times |-3| = 5 \\times 3 = 15$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|-5 \\times -3| = |15| = 15\\). RHS: \\(|-5| \\times |-3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|15| = 15"
+        "workingOut": "\\(|15| = 15\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "5 \\times 3 = 15"
+        "workingOut": "\\(5 \\times 3 = 15\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-2c-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Verify that $\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}$ for $x = -5, y = -3$.",
+    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = -5, y = -3\\).",
     "a": "LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.",
     "opts": [],
     "h": "Substitute the values.",
-    "s": "LHS: $|\\frac{-5}{-3}| = |\\frac{5}{3}| = \\frac{5}{3}$. RHS: $\\frac{|-5|}{|-3|} = \\frac{5}{3}$. Since LHS = RHS, verified.",
+    "s": "LHS: \\(|\\frac{-5}{-3}| = |\\frac{5}{3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|-5|}{|-3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|5/3| = 5/3"
+        "workingOut": "\\(|5/3| = 5/3\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "\\frac{5}{3}"
+        "workingOut": "\\(\\frac{5}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|x| = 2$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|x| = 2\\), then graph the solution on a number line.",
     "a": "x = 2, -2",
     "opts": [],
     "h": "What numbers are 2 units away from zero?",
-    "s": "The solutions are $x = 2$ and $x = -2$. The graph shows solid dots at $-2$ and $2$ on the number line.",
+    "s": "The solutions are \\(x = 2\\) and \\(x = -2\\). The graph shows solid dots at \\(-2\\) and \\(2\\) on the number line.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 2, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 2, -2\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Solve.",
-        "workingOut": "x = \\pm 2"
+        "workingOut": "\\(x = \\pm 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 2, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 2, -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|x| = 5$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|x| = 5\\), then graph the solution on a number line.",
     "a": "x = 5, -5",
     "opts": [],
     "h": "What numbers are 5 units away from zero?",
-    "s": "The solutions are $x = 5$ and $x = -5$. The graph shows solid dots at $-5$ and $5$ on the number line.",
+    "s": "The solutions are \\(x = 5\\) and \\(x = -5\\). The graph shows solid dots at \\(-5\\) and \\(5\\) on the number line.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Solve.",
-        "workingOut": "x = \\pm 5"
+        "workingOut": "\\(x = \\pm 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|3x| = 12$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|3x| = 12\\), then graph the solution on a number line.",
     "a": "x = 4, -4",
     "opts": [],
-    "h": "First, solve for $3x$.",
-    "s": "$3x = 12$ or $3x = -12$. This means $x = 4$ or $x = -4$. The graph shows solid dots at $-4$ and $4$.",
+    "h": "First, solve for \\(3x\\).",
+    "s": "\\(3x = 12\\) or \\(3x = -12\\). This means \\(x = 4\\) or \\(x = -4\\). The graph shows solid dots at \\(-4\\) and \\(4\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Separate into cases.",
-        "workingOut": "3x = 12 \\text{ or } 3x = -12"
+        "workingOut": "\\(3x = 12 \\text{ or } 3x = -12\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "x = \\pm 4"
+        "workingOut": "\\(x = \\pm 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|4x| = 20$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|4x| = 20\\), then graph the solution on a number line.",
     "a": "x = 5, -5",
     "opts": [],
-    "h": "First, solve for $4x$.",
-    "s": "$4x = 20$ or $4x = -20$. This means $x = 5$ or $x = -5$. The graph shows solid dots at $-5$ and $5$.",
+    "h": "First, solve for \\(4x\\).",
+    "s": "\\(4x = 20\\) or \\(4x = -20\\). This means \\(x = 5\\) or \\(x = -5\\). The graph shows solid dots at \\(-5\\) and \\(5\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Separate into cases.",
-        "workingOut": "4x = 20 \\text{ or } 4x = -20"
+        "workingOut": "\\(4x = 20 \\text{ or } 4x = -20\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "x = \\pm 5"
+        "workingOut": "\\(x = \\pm 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|5x| = 15$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|5x| = 15\\), then graph the solution on a number line.",
     "a": "x = 3, -3",
     "opts": [],
-    "h": "First, solve for $5x$.",
-    "s": "$5x = 15$ or $5x = -15$. This means $x = 3$ or $x = -3$. The graph shows solid dots at $-3$ and $3$.",
+    "h": "First, solve for \\(5x\\).",
+    "s": "\\(5x = 15\\) or \\(5x = -15\\). This means \\(x = 3\\) or \\(x = -3\\). The graph shows solid dots at \\(-3\\) and \\(3\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 3, -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 3, -3\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Separate into cases.",
-        "workingOut": "5x = 15 \\text{ or } 5x = -15"
+        "workingOut": "\\(5x = 15 \\text{ or } 5x = -15\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "x = \\pm 3"
+        "workingOut": "\\(x = \\pm 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 3, -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 3, -3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-3f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the absolute value equation $|6x| = 24$, then graph the solution on a number line.",
+    "q": "Solve the absolute value equation \\(|6x| = 24\\), then graph the solution on a number line.",
     "a": "x = 4, -4",
     "opts": [],
-    "h": "First, solve for $6x$.",
-    "s": "$6x = 24$ or $6x = -24$. This means $x = 4$ or $x = -4$. The graph shows solid dots at $-4$ and $4$.",
+    "h": "First, solve for \\(6x\\).",
+    "s": "\\(6x = 24\\) or \\(6x = -24\\). This means \\(x = 4\\) or \\(x = -4\\). The graph shows solid dots at \\(-4\\) and \\(4\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Separate into cases.",
-        "workingOut": "6x = 24 \\text{ or } 6x = -24"
+        "workingOut": "\\(6x = 24 \\text{ or } 6x = -24\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve for x.",
-        "workingOut": "x = \\pm 4"
+        "workingOut": "\\(x = \\pm 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 4, -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x - 5| = 2$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x - 5| = 2\\) and graph the solution on a number line.",
     "a": "x = 7, 3",
     "opts": [],
-    "h": "Set $x - 5 = 2$ and $x - 5 = -2$.",
-    "s": "$x - 5 = 2 \\implies x = 7$. $x - 5 = -2 \\implies x = 3$. Solid dots at 3 and 7.",
+    "h": "Set \\(x - 5 = 2\\) and \\(x - 5 = -2\\).",
+    "s": "\\(x - 5 = 2 \\implies x = 7\\). \\(x - 5 = -2 \\implies x = 3\\). Solid dots at 3 and 7.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 7, 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 7, 3\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x - 5 = \\pm 2"
+        "workingOut": "\\(x - 5 = \\pm 2\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 7 \\text{ or } x = 3"
+        "workingOut": "\\(x = 7 \\text{ or } x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 7, 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 7, 3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x - 4| = 6$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x - 4| = 6\\) and graph the solution on a number line.",
     "a": "x = 10, -2",
     "opts": [],
-    "h": "Set $x - 4 = 6$ and $x - 4 = -6$.",
-    "s": "$x - 4 = 6 \\implies x = 10$. $x - 4 = -6 \\implies x = -2$. Solid dots at -2 and 10.",
+    "h": "Set \\(x - 4 = 6\\) and \\(x - 4 = -6\\).",
+    "s": "\\(x - 4 = 6 \\implies x = 10\\). \\(x - 4 = -6 \\implies x = -2\\). Solid dots at -2 and 10.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 10, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 10, -2\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x - 4 = \\pm 6"
+        "workingOut": "\\(x - 4 = \\pm 6\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 10 \\text{ or } x = -2"
+        "workingOut": "\\(x = 10 \\text{ or } x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 10, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 10, -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x - 2| = 4$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x - 2| = 4\\) and graph the solution on a number line.",
     "a": "x = 6, -2",
     "opts": [],
-    "h": "Set $x - 2 = 4$ and $x - 2 = -4$.",
-    "s": "$x - 2 = 4 \\implies x = 6$. $x - 2 = -4 \\implies x = -2$. Solid dots at -2 and 6.",
+    "h": "Set \\(x - 2 = 4\\) and \\(x - 2 = -4\\).",
+    "s": "\\(x - 2 = 4 \\implies x = 6\\). \\(x - 2 = -4 \\implies x = -2\\). Solid dots at -2 and 6.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 6, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 6, -2\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x - 2 = \\pm 4"
+        "workingOut": "\\(x - 2 = \\pm 4\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 6 \\text{ or } x = -2"
+        "workingOut": "\\(x = 6 \\text{ or } x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 6, -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 6, -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x - 8| = 3$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x - 8| = 3\\) and graph the solution on a number line.",
     "a": "x = 11, 5",
     "opts": [],
-    "h": "Set $x - 8 = 3$ and $x - 8 = -3$.",
-    "s": "$x - 8 = 3 \\implies x = 11$. $x - 8 = -3 \\implies x = 5$. Solid dots at 5 and 11.",
+    "h": "Set \\(x - 8 = 3\\) and \\(x - 8 = -3\\).",
+    "s": "\\(x - 8 = 3 \\implies x = 11\\). \\(x - 8 = -3 \\implies x = 5\\). Solid dots at 5 and 11.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 11, 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 11, 5\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x - 8 = \\pm 3"
+        "workingOut": "\\(x - 8 = \\pm 3\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 11 \\text{ or } x = 5"
+        "workingOut": "\\(x = 11 \\text{ or } x = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 11, 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 11, 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x + 6| = 3$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x + 6| = 3\\) and graph the solution on a number line.",
     "a": "x = -3, -9",
     "opts": [],
-    "h": "Set $x + 6 = 3$ and $x + 6 = -3$.",
-    "s": "$x + 6 = 3 \\implies x = -3$. $x + 6 = -3 \\implies x = -9$. Solid dots at -9 and -3.",
+    "h": "Set \\(x + 6 = 3\\) and \\(x + 6 = -3\\).",
+    "s": "\\(x + 6 = 3 \\implies x = -3\\). \\(x + 6 = -3 \\implies x = -9\\). Solid dots at -9 and -3.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = -3, -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = -3, -9\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x + 6 = \\pm 3"
+        "workingOut": "\\(x + 6 = \\pm 3\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = -3 \\text{ or } x = -9"
+        "workingOut": "\\(x = -3 \\text{ or } x = -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = -3, -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = -3, -9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x + 3| = 4$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x + 3| = 4\\) and graph the solution on a number line.",
     "a": "x = 1, -7",
     "opts": [],
-    "h": "Set $x + 3 = 4$ and $x + 3 = -4$.",
-    "s": "$x + 3 = 4 \\implies x = 1$. $x + 3 = -4 \\implies x = -7$. Solid dots at -7 and 1.",
+    "h": "Set \\(x + 3 = 4\\) and \\(x + 3 = -4\\).",
+    "s": "\\(x + 3 = 4 \\implies x = 1\\). \\(x + 3 = -4 \\implies x = -7\\). Solid dots at -7 and 1.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 1, -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 1, -7\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x + 3 = \\pm 4"
+        "workingOut": "\\(x + 3 = \\pm 4\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 1 \\text{ or } x = -7"
+        "workingOut": "\\(x = 1 \\text{ or } x = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 1, -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 1, -7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4g",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x + 2| = 7$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x + 2| = 7\\) and graph the solution on a number line.",
     "a": "x = 5, -9",
     "opts": [],
-    "h": "Set $x + 2 = 7$ and $x + 2 = -7$.",
-    "s": "$x + 2 = 7 \\implies x = 5$. $x + 2 = -7 \\implies x = -9$. Solid dots at -9 and 5.",
+    "h": "Set \\(x + 2 = 7\\) and \\(x + 2 = -7\\).",
+    "s": "\\(x + 2 = 7 \\implies x = 5\\). \\(x + 2 = -7 \\implies x = -9\\). Solid dots at -9 and 5.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = 5, -9\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x + 2 = \\pm 7"
+        "workingOut": "\\(x + 2 = \\pm 7\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = 5 \\text{ or } x = -9"
+        "workingOut": "\\(x = 5 \\text{ or } x = -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = 5, -9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-4h",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Solve the equation $|x + 4| = 2$ and graph the solution on a number line.",
+    "q": "Solve the equation \\(|x + 4| = 2\\) and graph the solution on a number line.",
     "a": "x = -2, -6",
     "opts": [],
-    "h": "Set $x + 4 = 2$ and $x + 4 = -2$.",
-    "s": "$x + 4 = 2 \\implies x = -2$. $x + 4 = -2 \\implies x = -6$. Solid dots at -6 and -2.",
+    "h": "Set \\(x + 4 = 2\\) and \\(x + 4 = -2\\).",
+    "s": "\\(x + 4 = 2 \\implies x = -2\\). \\(x + 4 = -2 \\implies x = -6\\). Solid dots at -6 and -2.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = -2, -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x = -2, -6\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Two cases.",
-        "workingOut": "x + 4 = \\pm 2"
+        "workingOut": "\\(x + 4 = \\pm 2\\)",
+        "graphData": null
       },
       {
         "explanation": "Solve.",
-        "workingOut": "x = -2 \\text{ or } x = -6"
+        "workingOut": "\\(x = -2 \\text{ or } x = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = -2, -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x = -2, -6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-5",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Consider the functions $y = |x - 2|$ and $y = |x| - 2$.\n**a)** Copy and complete a table of values for both functions for integer values of $x$ from $-2$ to $4$.\n**b)** Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.\n**c)** Explain how each graph is obtained by shifting the basic graph $y = |x|$.\n**d)** Write down the domain and range of each function.",
+    "q": "Consider the functions \\(y = |x - 2|\\) and \\(y = |x| - 2\\).\n**a)** Copy and complete a table of values for both functions for integer values of \\(x\\) from \\(-2\\) to \\(4\\).\n**b)** Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.\n**c)** Explain how each graph is obtained by shifting the basic graph \\(y = |x|\\).\n**d)** Write down the domain and range of each function.",
     "a": "See solution steps.",
     "opts": [],
     "h": "The first function shifts horizontally. The second shifts vertically.",
-    "s": "**a)** Tables:\\n$x$: -2, -1, 0, 1, 2, 3, 4\\n$|x-2|$: 4, 3, 2, 1, 0, 1, 2\\n$|x|-2$: 0, -1, -2, -1, 0, 1, 2\n**b)** $y = |x-2|$ is a V-shape with its vertex at $(2, 0)$. $y = |x|-2$ is a V-shape with its vertex at $(0, -2)$.\n**c)** $y = |x-2|$ is a horizontal shift of $y = |x|$ by 2 units to the right. $y = |x|-2$ is a vertical shift of $y = |x|$ by 2 units downwards.\n**d)** $y = |x-2|$: Domain is all real $x$, Range is $y \\ge 0$.\\n$y = |x|-2$: Domain is all real $x$, Range is $y \\ge -2$.",
+    "s": "**a)** Tables:\\n\\(x\\): -2, -1, 0, 1, 2, 3, 4\\n\\(|x-2|\\): 4, 3, 2, 1, 0, 1, 2\\n\\(|x|-2\\): 0, -1, -2, -1, 0, 1, 2\n**b)** \\(y = |x-2|\\) is a V-shape with its vertex at \\((2, 0)\\). \\(y = |x|-2\\) is a V-shape with its vertex at \\((0, -2)\\).\n**c)** \\(y = |x-2|\\) is a horizontal shift of \\(y = |x|\\) by 2 units to the right. \\(y = |x|-2\\) is a vertical shift of \\(y = |x|\\) by 2 units downwards.\n**d)** \\(y = |x-2|\\): Domain is all real \\(x\\), Range is \\(y \\ge 0\\).\\n\\(y = |x|-2\\): Domain is all real \\(x\\), Range is \\(y \\ge -2\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "a) Evaluate tables.",
-        "workingOut": "y = |x-2|: 4,3,2,1,0,1,2. \\quad y = |x|-2: 0,-1,-2,-1,0,1,2"
+        "workingOut": "\\(y = |x-2|: 4,3,2,1,0,1,2. \\quad y = |x|-2: 0,-1,-2,-1,0,1,2\\)",
+        "graphData": null
       },
       {
         "explanation": "c) Analyze shifts.",
-        "workingOut": "|x-2| \\implies \\text{Right 2}. \\quad |x|-2 \\implies \\text{Down 2}."
+        "workingOut": "\\(|x-2| \\implies \\text{Right 2}. \\quad |x|-2 \\implies \\text{Down 2}.\\)",
+        "graphData": null
       },
       {
         "explanation": "d) Domain and Range.",
-        "workingOut": "D: \\text{All real } x. \\quad R: y \\ge 0 \\text{ and } y \\ge -2."
+        "workingOut": "\\(D: \\text{All real } x. \\quad R: y \\ge 0 \\text{ and } y \\ge -2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|4x| = 4|x|$ is true when $x = -4$.",
+    "q": "Show that \\(|4x| = 4|x|\\) is true when \\(x = -4\\).",
     "a": "LHS = |-16| = 16. RHS = 4*|-4| = 16.",
     "opts": [],
     "h": "Substitute the value into both sides.",
-    "s": "LHS: $|4(-4)| = |-16| = 16$. RHS: $4|-4| = 4(4) = 16$. LHS = RHS, so it is true.",
+    "s": "LHS: \\(|4(-4)| = |-16| = 16\\). RHS: \\(4|-4| = 4(4) = 16\\). LHS = RHS, so it is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|4(-4)| = |-16| = 16"
+        "workingOut": "\\(|4(-4)| = |-16| = 16\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "4|-4| = 4(4) = 16"
+        "workingOut": "\\(4|-4| = 4(4) = 16\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|-x| = |x|$ is true when $x = -4$.",
+    "q": "Show that \\(|-x| = |x|\\) is true when \\(x = -4\\).",
     "a": "LHS = |4| = 4. RHS = |-4| = 4.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-(-4)| = |4| = 4$. RHS: $|-4| = 4$. LHS = RHS, so it is true.",
+    "s": "LHS: \\(|-(-4)| = |4| = 4\\). RHS: \\(|-4| = 4\\). LHS = RHS, so it is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-(-4)| = |4| = 4"
+        "workingOut": "\\(|-(-4)| = |4| = 4\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|-4| = 4"
+        "workingOut": "\\(|-4| = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x|^2 = x^2$ is true when $x = -4$.",
+    "q": "Show that \\(|x|^2 = x^2\\) is true when \\(x = -4\\).",
     "a": "LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-4|^2 = (4)^2 = 16$. RHS: $(-4)^2 = 16$. LHS = RHS, so it is true.",
+    "s": "LHS: \\(|-4|^2 = (4)^2 = 16\\). RHS: \\((-4)^2 = 16\\). LHS = RHS, so it is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-4|^2 = 16"
+        "workingOut": "\\(|-4|^2 = 16\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "(-4)^2 = 16"
+        "workingOut": "\\((-4)^2 = 16\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x - 5| = |5 - x|$ is true when $x = -4$.",
+    "q": "Show that \\(|x - 5| = |5 - x|\\) is true when \\(x = -4\\).",
     "a": "LHS = |-9| = 9. RHS = |9| = 9.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-4 - 5| = |-9| = 9$. RHS: $|5 - (-4)| = |9| = 9$. LHS = RHS, so it is true.",
+    "s": "LHS: \\(|-4 - 5| = |-9| = 9\\). RHS: \\(|5 - (-4)| = |9| = 9\\). LHS = RHS, so it is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "LHS",
-        "workingOut": "|-4-5| = |-9| = 9"
+        "workingOut": "\\(|-4-5| = |-9| = 9\\)",
+        "graphData": null
       },
       {
         "explanation": "RHS",
-        "workingOut": "|5-(-4)| = |9| = 9"
+        "workingOut": "\\(|5-(-4)| = |9| = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $x \\le |x|$ is true when $x = -4$.",
+    "q": "Show that \\(x \\le |x|\\) is true when \\(x = -4\\).",
     "a": "LHS = -4. RHS = 4. -4 <= 4.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $-4$. RHS: $|-4| = 4$. Since $-4 \\le 4$, the statement is true.",
+    "s": "LHS: \\(-4\\). RHS: \\(|-4| = 4\\). Since \\(-4 \\le 4\\), the statement is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "-4 \\le |-4| \\implies -4 \\le 4"
+        "workingOut": "\\(-4 \\le |-4| \\implies -4 \\le 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-6f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $-|x| \\le x$ is true when $x = -4$.",
+    "q": "Show that \\(-|x| \\le x\\) is true when \\(x = -4\\).",
     "a": "LHS = -4. RHS = -4. -4 <= -4.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $-|-4| = -4$. RHS: $-4$. Since $-4 \\le -4$, the statement is true.",
+    "s": "LHS: \\(-|-4| = -4\\). RHS: \\(-4\\). Since \\(-4 \\le -4\\), the statement is true.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "-|-4| \\le -4 \\implies -4 \\le -4"
+        "workingOut": "\\(-|-4| \\le -4 \\implies -4 \\le -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x| = x$ is false when $x = -3$.",
+    "q": "Show that \\(|x| = x\\) is false when \\(x = -3\\).",
     "a": "LHS = 3, RHS = -3.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-3| = 3$. RHS: $-3$. Since $3 \\neq -3$, the statement is false.",
+    "s": "LHS: \\(|-3| = 3\\). RHS: \\(-3\\). Since \\(3 \\neq -3\\), the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-3| = 3 \\neq -3"
+        "workingOut": "\\(|-3| = 3 \\neq -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|-x| = x$ is false when $x = -3$.",
+    "q": "Show that \\(|-x| = x\\) is false when \\(x = -3\\).",
     "a": "LHS = 3, RHS = -3.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-(-3)| = |3| = 3$. RHS: $-3$. Since $3 \\neq -3$, the statement is false.",
+    "s": "LHS: \\(|-(-3)| = |3| = 3\\). RHS: \\(-3\\). Since \\(3 \\neq -3\\), the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-(-3)| = 3 \\neq -3"
+        "workingOut": "\\(|-(-3)| = 3 \\neq -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x + 2| = |x| + 2$ is false when $x = -3$.",
+    "q": "Show that \\(|x + 2| = |x| + 2\\) is false when \\(x = -3\\).",
     "a": "LHS = 1, RHS = 5.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-3 + 2| = |-1| = 1$. RHS: $|-3| + 2 = 3 + 2 = 5$. Since $1 \\neq 5$, the statement is false.",
+    "s": "LHS: \\(|-3 + 2| = |-1| = 1\\). RHS: \\(|-3| + 2 = 3 + 2 = 5\\). Since \\(1 \\neq 5\\), the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-3+2| = 1, |-3|+2 = 5"
+        "workingOut": "\\(|-3+2| = 1, |-3|+2 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x + 1| = x + 1$ is false when $x = -3$.",
+    "q": "Show that \\(|x + 1| = x + 1\\) is false when \\(x = -3\\).",
     "a": "LHS = 2, RHS = -2.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-3 + 1| = |-2| = 2$. RHS: $-3 + 1 = -2$. Since $2 \\neq -2$, the statement is false.",
+    "s": "LHS: \\(|-3 + 1| = |-2| = 2\\). RHS: \\(-3 + 1 = -2\\). Since \\(2 \\neq -2\\), the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-3+1| = 2, -3+1 = -2"
+        "workingOut": "\\(|-3+1| = 2, -3+1 = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x - 1| < |x| - 1$ is false when $x = -3$.",
+    "q": "Show that \\(|x - 1| < |x| - 1\\) is false when \\(x = -3\\).",
     "a": "LHS = 4, RHS = 2. 4 is not < 2.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-3 - 1| = |-4| = 4$. RHS: $|-3| - 1 = 3 - 1 = 2$. Since 4 is not less than 2, the statement is false.",
+    "s": "LHS: \\(|-3 - 1| = |-4| = 4\\). RHS: \\(|-3| - 1 = 3 - 1 = 2\\). Since 4 is not less than 2, the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-3-1| = 4, |-3|-1 = 2. 4 \\not< 2"
+        "workingOut": "\\(|-3-1| = 4, |-3|-1 = 2. 4 \\not< 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-7f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Show that $|x|^3 = x^3$ is false when $x = -3$.",
+    "q": "Show that \\(|x|^3 = x^3\\) is false when \\(x = -3\\).",
     "a": "LHS = 27, RHS = -27.",
     "opts": [],
     "h": "Substitute the value.",
-    "s": "LHS: $|-3|^3 = 3^3 = 27$. RHS: $(-3)^3 = -27$. Since $27 \\neq -27$, the statement is false.",
+    "s": "LHS: \\(|-3|^3 = 3^3 = 27\\). RHS: \\((-3)^3 = -27\\). Since \\(27 \\neq -27\\), the statement is false.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Evaluate sides.",
-        "workingOut": "|-3|^3 = 27, (-3)^3 = -27"
+        "workingOut": "\\(|-3|^3 = 27, (-3)^3 = -27\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8a",
@@ -10054,26 +11807,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|5x| = 30$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|5x| = 30\\)",
+    "a": "1",
     "opts": [
-      "x = 6, -6",
-      "x = 6",
-      "x = -6",
+      "\\(x = 6\\) only",
+      "\\(x = 6\\) or \\(x = -6\\)",
+      "\\(x = -6\\) only",
       "No solution"
     ],
-    "h": "$5x$ must be either 30 or -30.",
-    "s": "$5x = 30 \\implies x = 6$. $5x = -30 \\implies x = -6$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Split into cases.",
-        "workingOut": "5x = \\pm 30"
+        "explanation": "Solve |5x| = 30 by writing 5x = 30 or 5x = -30. Both cases apply because 30 > 0.",
+        "workingOut": "\\(\\text{Given: } |5x| = 30\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = \\pm 6"
+        "explanation": "x = 6 from the positive case and x = -6 from the negative case. Include both.",
+        "workingOut": "\\(5x = \\pm 30 \\;\\Rightarrow\\; x = \\pm 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |5(6)| = 30 and |5(-6)| = 30. Solution: x = 6 or x = -6.",
+        "workingOut": "\\(\\text{Solution: } x = 6 \\text{ or } x = -6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8b",
@@ -10081,26 +11842,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|3x + 1| = 7$",
+    "q": "Solve for \\(x\\): \\(|3x + 1| = 7\\)",
     "a": "0",
     "opts": [
-      "x = 2, -8/3",
-      "x = 2, -2",
-      "x = 8/3, -2",
+      "\\(x = 2\\) or \\(x = -\\frac{8}{3}\\)",
+      "\\(x = 2\\) or \\(x = -2\\)",
+      "\\(x = \\frac{8}{3}\\) or \\(x = -2\\)",
       "No solution"
     ],
-    "h": "$3x + 1 = 7$ or $3x + 1 = -7$.",
-    "s": "$3x + 1 = 7 \\implies 3x = 6 \\implies x = 2$. $3x + 1 = -7 \\implies 3x = -8 \\implies x = -8/3$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Split into cases.",
-        "workingOut": "3x+1 = 7 \\text{ or } 3x+1 = -7"
+        "explanation": "Split |3x + 1| = 7 into 3x + 1 = 7 and 3x + 1 = -7. Solve each linear equation exactly.",
+        "workingOut": "\\(\\text{Given: } |3x + 1| = 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 2, -8/3"
+        "explanation": "Positive case: 3x + 1 = 7 → 3x = 6 → x = 2.",
+        "workingOut": "\\(3x + 1 = 7 \\;\\Rightarrow\\; x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Negative case: 3x + 1 = -7 → 3x = -8 → x = -8/3. Avoid writing -8/3 as -2 by incorrectly dividing only part of the expression.",
+        "workingOut": "\\(3x + 1 = -7 \\;\\Rightarrow\\; x = -\\frac{8}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |3(2)+1| = 7 and |3(-8/3)+1| = |-8+1| = 7. Solution: x = 2 or x = -8/3.",
+        "workingOut": "\\(\\text{Solution: } x = 2 \\text{ or } x = -\\frac{8}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8c",
@@ -10108,26 +11882,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|2x - 3| = 11$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|2x - 3| = 11\\)",
+    "a": "2",
     "opts": [
-      "x = 7, -4",
-      "x = -7, 4",
-      "x = 7",
+      "\\(x = -7\\) or \\(x = 4\\)",
+      "\\(x = 7\\) only",
+      "\\(x = 7\\) or \\(x = -4\\)",
       "No solution"
     ],
-    "h": "$2x - 3 = 11$ or $2x - 3 = -11$.",
-    "s": "$2x - 3 = 11 \\implies 2x = 14 \\implies x = 7$. $2x - 3 = -11 \\implies 2x = -8 \\implies x = -4$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Split into cases.",
-        "workingOut": "2x-3 = 11 \\text{ or } 2x-3 = -11"
+        "explanation": "Split into 2x - 3 = 11 and 2x - 3 = -11. Solve both and verify.",
+        "workingOut": "\\(\\text{Given: } |2x - 3| = 11\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 7, -4"
+        "explanation": "2x - 3 = 11 → 2x = 14 → x = 7. 2x - 3 = -11 → 2x = -8 → x = -4.",
+        "workingOut": "\\(x = 7 \\quad \\text{or} \\quad x = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |2(7)-3| = 11 and |2(-4)-3| = |-8-3| = 11. Solution: x = 7 or x = -4.",
+        "workingOut": "\\(\\text{Solution: } x = 7 \\text{ or } x = -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8d",
@@ -10135,26 +11917,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|7x - 3| = -11$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|7x - 3| = -11\\)",
+    "a": "3",
     "opts": [
-      "No solution",
-      "x = -8/7, 14/7",
-      "x = 8/7, -14/7",
-      "x = 0"
+      "\\(x = -\\frac{8}{7}\\) or \\(x = 2\\)",
+      "\\(x = \\frac{8}{7}\\) or \\(x = -2\\)",
+      "\\(x = 0\\)",
+      "No solution"
     ],
-    "h": "Can an absolute value ever be negative?",
-    "s": "An absolute value cannot be equal to a negative number. Thus, there is no real solution.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Check right side.",
-        "workingOut": "|7x-3| \\ge 0 \\text{ for all } x"
+        "explanation": "Inspect the right-hand side before solving. Absolute value is never negative, so if the constant on the right is negative the equation has no real solution.",
+        "workingOut": "\\(\\text{Given: } |7x - 3| = -11\\)",
+        "graphData": null
       },
       {
-        "explanation": "Conclusion.",
-        "workingOut": "\\text{No solution since } -11 < 0"
+        "explanation": "For every real x, |7x - 3| ≥ 0. It cannot equal -11. Generating solutions from 7x - 3 = ±(-11) is invalid because the original equation is already impossible.",
+        "workingOut": "\\(|7x - 3| \\ge 0 \\neq -11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Conclusion: empty solution set. Final answer: no solution.",
+        "workingOut": "\\(\\text{No real solution}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8e",
@@ -10162,26 +11952,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|3x + 2| = -8$",
+    "q": "Solve for \\(x\\): \\(|3x + 2| = -8\\)",
     "a": "0",
     "opts": [
       "No solution",
-      "x = 2, -10/3",
-      "x = -2, 10/3",
-      "x = 0"
+      "\\(x = 2\\) or \\(x = -\\frac{10}{3}\\)",
+      "\\(x = -2\\) or \\(x = \\frac{10}{3}\\)",
+      "\\(x = 0\\)"
     ],
-    "h": "Can an absolute value ever be negative?",
-    "s": "An absolute value cannot be equal to a negative number. Thus, there is no real solution.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Check right side.",
-        "workingOut": "|3x+2| \\ge 0 \\text{ for all } x"
+        "explanation": "Again the right-hand side is negative. Absolute value cannot equal a negative number, so stop before inventing spurious roots.",
+        "workingOut": "\\(\\text{Given: } |3x + 2| = -8\\)",
+        "graphData": null
       },
       {
-        "explanation": "Conclusion.",
-        "workingOut": "\\text{No solution since } -8 < 0"
+        "explanation": "|3x + 2| ≥ 0 for all real x, so it is never equal to -8. Solving 3x + 2 = ±8 would answer a different (possible) equation.",
+        "workingOut": "\\(|3x + 2| \\ge 0 \\neq -8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "No real x satisfies the equation. Final answer: no solution.",
+        "workingOut": "\\(\\text{No real solution}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8f",
@@ -10189,26 +11987,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|5x + 2| = 0$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|5x + 2| = 0\\)",
+    "a": "2",
     "opts": [
-      "x = -2/5",
-      "x = 2/5",
-      "x = 0",
+      "\\(x = \\frac{2}{5}\\)",
+      "\\(x = 0\\)",
+      "\\(x = -\\frac{2}{5}\\)",
       "No solution"
     ],
-    "h": "If the absolute value is zero, the inside must be zero.",
-    "s": "$5x + 2 = 0 \\implies 5x = -2 \\implies x = -2/5$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Only one case.",
-        "workingOut": "5x+2 = 0"
+        "explanation": "Absolute value equals zero only when the inside is zero. Set 5x + 2 = 0 and solve once.",
+        "workingOut": "\\(\\text{Given: } |5x + 2| = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = -2/5"
+        "explanation": "5x + 2 = 0 → 5x = -2 → x = -2/5. Sign error often produces +2/5.",
+        "workingOut": "\\(5x + 2 = 0 \\;\\Rightarrow\\; x = -\\frac{2}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |5(-2/5)+2| = |-2+2| = 0. Unique solution x = -2/5.",
+        "workingOut": "\\(\\text{Solution: } x = -\\frac{2}{5}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8g",
@@ -10216,26 +12022,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|3x - 5| = 0$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|3x - 5| = 0\\)",
+    "a": "1",
     "opts": [
-      "x = 5/3",
-      "x = -5/3",
-      "x = 0",
+      "\\(x = -\\frac{5}{3}\\)",
+      "\\(x = \\frac{5}{3}\\)",
+      "\\(x = 0\\)",
       "No solution"
     ],
-    "h": "If the absolute value is zero, the inside must be zero.",
-    "s": "$3x - 5 = 0 \\implies 3x = 5 \\implies x = 5/3$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Only one case.",
-        "workingOut": "3x-5 = 0"
+        "explanation": "Set the inside equal to zero: 3x - 5 = 0. Only one case because ±0 is the same number.",
+        "workingOut": "\\(\\text{Given: } |3x - 5| = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 5/3"
+        "explanation": "3x = 5 → x = 5/3. Avoid the sign flip that yields -5/3.",
+        "workingOut": "\\(3x - 5 = 0 \\;\\Rightarrow\\; x = \\frac{5}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |3(5/3)-5| = |5-5| = 0. Solution: x = 5/3.",
+        "workingOut": "\\(\\text{Solution: } x = \\frac{5}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8h",
@@ -10243,26 +12057,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|6x - 7| = 5$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|6x - 7| = 5\\)",
+    "a": "3",
     "opts": [
-      "x = 2, 1/3",
-      "x = 2, -1/3",
-      "x = -2, 1/3",
-      "No solution"
+      "\\(x = 2\\) or \\(x = -\\frac{1}{3}\\)",
+      "\\(x = -2\\) or \\(x = \\frac{1}{3}\\)",
+      "No solution",
+      "\\(x = 2\\) or \\(x = \\frac{1}{3}\\)"
     ],
-    "h": "$6x - 7 = 5$ or $6x - 7 = -5$.",
-    "s": "$6x - 7 = 5 \\implies 6x = 12 \\implies x = 2$. $6x - 7 = -5 \\implies 6x = 2 \\implies x = 1/3$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Split into cases.",
-        "workingOut": "6x-7 = 5 \\text{ or } 6x-7 = -5"
+        "explanation": "Split |6x - 7| = 5 into 6x - 7 = 5 and 6x - 7 = -5. Both sides of the split are valid linear equations.",
+        "workingOut": "\\(\\text{Given: } |6x - 7| = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 2, 1/3"
+        "explanation": "Positive case: 6x - 7 = 5 → 6x = 12 → x = 2.",
+        "workingOut": "\\(6x - 7 = 5 \\;\\Rightarrow\\; x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Negative case: 6x - 7 = -5 → 6x = 2 → x = 1/3. A sign error on the right often produces x = -1/3.",
+        "workingOut": "\\(6x - 7 = -5 \\;\\Rightarrow\\; x = \\frac{1}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |6(2)-7| = 5 and |6(1/3)-7| = |2-7| = 5. Solution: x = 2 or x = 1/3.",
+        "workingOut": "\\(\\text{Solution: } x = 2 \\text{ or } x = \\frac{1}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-8i",
@@ -10270,26 +12097,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve for $x$: $|5x + 4| = 6$",
-    "a": "0",
+    "q": "Solve for \\(x\\): \\(|5x + 4| = 6\\)",
+    "a": "1",
     "opts": [
-      "x = 2/5, -2",
-      "x = -2/5, 2",
-      "x = 2, -2",
+      "\\(x = -\\frac{2}{5}\\) or \\(x = 2\\)",
+      "\\(x = \\frac{2}{5}\\) or \\(x = -2\\)",
+      "\\(x = 2\\) or \\(x = -2\\)",
       "No solution"
     ],
-    "h": "$5x + 4 = 6$ or $5x + 4 = -6$.",
-    "s": "$5x + 4 = 6 \\implies 5x = 2 \\implies x = 2/5$. $5x + 4 = -6 \\implies 5x = -10 \\implies x = -2$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Split into cases.",
-        "workingOut": "5x+4 = 6 \\text{ or } 5x+4 = -6"
+        "explanation": "Split into 5x + 4 = 6 and 5x + 4 = -6. Solve each carefully.",
+        "workingOut": "\\(\\text{Given: } |5x + 4| = 6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 2/5, -2"
+        "explanation": "5x + 4 = 6 → 5x = 2 → x = 2/5.",
+        "workingOut": "\\(5x + 4 = 6 \\;\\Rightarrow\\; x = \\frac{2}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "5x + 4 = -6 → 5x = -10 → x = -2. Swapping signs of both solutions is a common distractor pattern.",
+        "workingOut": "\\(5x + 4 = -6 \\;\\Rightarrow\\; x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |5(2/5)+4| = |2+4| = 6 and |5(-2)+4| = |-10+4| = 6. Solution: x = 2/5 or x = -2.",
+        "workingOut": "\\(\\text{Solution: } x = \\frac{2}{5} \\text{ or } x = -2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-9a-i",
@@ -10297,26 +12137,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Explain why the equation $|2 - 3x| = 5$ has the same solutions as $|3x - 2| = 5$.",
+    "q": "Why does the equation \\(|2 - 3x| = 5\\) have the same solutions as \\(|3x - 2| = 5\\)?",
     "a": "0",
     "opts": [
-      "Because |x| = |-x| for all real numbers.",
+      "Because \\(|a| = |-a|\\) for all real \\(a\\).",
       "Because 5 is a positive number.",
-      "Because absolute value makes everything positive.",
-      "Because 2 - 3x = 3x - 2 always."
+      "Because absolute value makes every expression positive for all x.",
+      "Because \\(2 - 3x = 3x - 2\\) for all x."
     ],
-    "h": "Consider the property that $|-a| = |a|$.",
-    "s": "Since $|a| = |-a|$, we can factor out a negative sign: $|2 - 3x| = |-(3x - 2)| = |3x - 2|$. Thus, the equations are identical.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Use property.",
-        "workingOut": "|-a| = |a|"
+        "explanation": "We compare two absolute-value equations that look different inside the bars. The key property is |a| = |-a| for every real a. Strategy: rewrite 2 - 3x as the opposite of 3x - 2.",
+        "workingOut": "\\(\\text{Compare } |2 - 3x| = 5 \\text{ and } |3x - 2| = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply to expression.",
-        "workingOut": "|2 - 3x| = |-(3x - 2)| = |3x - 2|"
+        "explanation": "Note that 2 - 3x = -(3x - 2). Taking absolute values: |2 - 3x| = |-(3x - 2)| = |3x - 2| by the property | -a | = |a|. A common misconception is that 2 - 3x always equals 3x - 2 (false unless x = 2/3).",
+        "workingOut": "\\(|2 - 3x| = |-(3x - 2)| = |3x - 2|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore the left-hand sides are identical for every x, so the two equations have exactly the same solution sets. The correct reason is the property |a| = |-a|.",
+        "workingOut": "\\(\\text{Same equation for all } x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-9a-ii",
@@ -10324,30 +12172,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve the equation $|2 - 3x| = 5$.",
-    "a": "0",
+    "q": "Solve the equation \\(|2 - 3x| = 5\\).",
+    "a": "2",
     "opts": [
-      "x = -1, 7/3",
-      "x = 1, -7/3",
-      "x = -1, 3/7",
+      "\\(x = 1\\) or \\(x = -\\frac{7}{3}\\)",
+      "\\(x = -1\\) or \\(x = \\frac{3}{7}\\)",
+      "\\(x = -1\\) or \\(x = \\frac{7}{3}\\)",
       "No solution"
     ],
-    "h": "Solve $|3x - 2| = 5$ instead, as it is easier.",
-    "s": "$|3x - 2| = 5 implies 3x - 2 = 5$ or $3x - 2 = -5$. \\nIf $3x - 2 = 5 implies 3x = 7 implies x = 7/3$. \\nIf $3x - 2 = -5 implies 3x = -3 implies x = -1$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Rewrite.",
-        "workingOut": "|3x-2| = 5"
+        "explanation": "Using |2 - 3x| = |3x - 2|, solve |3x - 2| = 5 by splitting into two linear cases. This often makes the algebra cleaner than working with 2 - 3x directly.",
+        "workingOut": "\\(\\text{Given: } |2 - 3x| = 5 \\equiv |3x - 2| = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cases.",
-        "workingOut": "3x-2 = 5 \\text{ or } 3x-2 = -5"
+        "explanation": "Case 1: 3x - 2 = 5 → 3x = 7 → x = 7/3.",
+        "workingOut": "\\(3x - 2 = 5 \\;\\Rightarrow\\; x = \\frac{7}{3}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 7/3, -1"
+        "explanation": "Case 2: 3x - 2 = -5 → 3x = -3 → x = -1.",
+        "workingOut": "\\(3x - 2 = -5 \\;\\Rightarrow\\; x = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check in the original: |2 - 3(7/3)| = |2 - 7| = 5 and |2 - 3(-1)| = |2 + 3| = 5. Solution: x = -1 or x = 7/3.",
+        "workingOut": "\\(\\text{Solution: } x = -1 \\text{ or } x = \\frac{7}{3}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-9b-i",
@@ -10355,30 +12212,39 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve the equation $|4 - 5x| = 6$.",
-    "a": "0",
+    "q": "Solve the equation \\(|4 - 5x| = 6\\).",
+    "a": "3",
     "opts": [
-      "x = -2/5, 2",
-      "x = 2/5, -2",
-      "x = 2, -2",
-      "No solution"
+      "\\(x = \\frac{2}{5}\\) or \\(x = -2\\)",
+      "\\(x = 2\\) or \\(x = -2\\)",
+      "No solution",
+      "\\(x = -\\frac{2}{5}\\) or \\(x = 2\\)"
     ],
-    "h": "Solve $|5x - 4| = 6$.",
-    "s": "$|5x - 4| = 6 implies 5x - 4 = 6$ or $5x - 4 = -6$. \\n$5x - 4 = 6 implies 5x = 10 implies x = 2$. \\n$5x - 4 = -6 implies 5x = -2 implies x = -2/5$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Rewrite.",
-        "workingOut": "|5x-4| = 6"
+        "explanation": "Equivalently solve |5x - 4| = 6. Split into 5x - 4 = 6 and 5x - 4 = -6.",
+        "workingOut": "\\(\\text{Given: } |4 - 5x| = 6 \\equiv |5x - 4| = 6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cases.",
-        "workingOut": "5x-4 = 6 \\text{ or } 5x-4 = -6"
+        "explanation": "5x - 4 = 6 → 5x = 10 → x = 2.",
+        "workingOut": "\\(5x - 4 = 6 \\;\\Rightarrow\\; x = 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 2, -2/5"
+        "explanation": "5x - 4 = -6 → 5x = -2 → x = -2/5.",
+        "workingOut": "\\(5x - 4 = -6 \\;\\Rightarrow\\; x = -\\frac{2}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |4 - 5(2)| = |4 - 10| = 6 and |4 - 5(-2/5)| = |4 + 2| = 6. Solution: x = -2/5 or x = 2.",
+        "workingOut": "\\(\\text{Solution: } x = -\\frac{2}{5} \\text{ or } x = 2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-9b-ii",
@@ -10386,530 +12252,1269 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Solve the equation $|2 - 7x| = 5$.",
-    "a": "0",
+    "q": "Solve the equation \\(|2 - 7x| = 5\\).",
+    "a": "1",
     "opts": [
-      "x = -3/7, 1",
-      "x = 3/7, -1",
-      "x = 1, -1",
+      "\\(x = \\frac{3}{7}\\) or \\(x = -1\\)",
+      "\\(x = -\\frac{3}{7}\\) or \\(x = 1\\)",
+      "\\(x = 1\\) or \\(x = -1\\)",
       "No solution"
     ],
-    "h": "Solve $|7x - 2| = 5$.",
-    "s": "$|7x - 2| = 5 implies 7x - 2 = 5$ or $7x - 2 = -5$. \\n$7x - 2 = 5 implies 7x = 7 implies x = 1$. \\n$7x - 2 = -5 implies 7x = -3 implies x = -3/7$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Rewrite.",
-        "workingOut": "|7x-2| = 5"
+        "explanation": "Use |2 - 7x| = |7x - 2| = 5. Split into 7x - 2 = 5 and 7x - 2 = -5.",
+        "workingOut": "\\(\\text{Given: } |2 - 7x| = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cases.",
-        "workingOut": "7x-2 = 5 \\text{ or } 7x-2 = -5"
+        "explanation": "7x - 2 = 5 → 7x = 7 → x = 1.",
+        "workingOut": "\\(7x - 2 = 5 \\;\\Rightarrow\\; x = 1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve.",
-        "workingOut": "x = 1, -3/7"
+        "explanation": "7x - 2 = -5 → 7x = -3 → x = -3/7.",
+        "workingOut": "\\(7x - 2 = -5 \\;\\Rightarrow\\; x = -\\frac{3}{7}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: |2 - 7(1)| = 5 and |2 - 7(-3/7)| = |2 + 3| = 5. Solution: x = -3/7 or x = 1.",
+        "workingOut": "\\(\\text{Solution: } x = -\\frac{3}{7} \\text{ or } x = 1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use cases to help sketch the branches of $y = |x|$.",
+    "q": "Use cases to help sketch the branches of \\(y = |x|\\).",
     "a": "See steps.",
     "opts": [],
-    "h": "Consider when $x \\ge 0$ and when $x < 0$.",
-    "s": "By definition, $|x| = x$ when $x \\ge 0$, and $|x| = -x$ when $x < 0$. The graph consists of the line $y = x$ for positive $x$, and the line $y = -x$ for negative $x$, meeting at $(0,0)$.",
+    "h": "Consider when \\(x \\ge 0\\) and when \\(x < 0\\).",
+    "s": "By definition, \\(|x| = x\\) when \\(x \\ge 0\\), and \\(|x| = -x\\) when \\(x < 0\\). The graph consists of the line \\(y = x\\) for positive \\(x\\), and the line \\(y = -x\\) for negative \\(x\\), meeting at \\((0,0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Cases.",
-        "workingOut": "y = \\begin{cases} x & x \\ge 0 \\\\ -x & x < 0 \\end{cases}"
+        "workingOut": "\\(y = \\begin{cases} x & x \\ge 0 \\\\ -x & x < 0 \\end{cases}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x-4|$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x-4|\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift right 4.",
     "opts": [],
-    "h": "The vertex is at $x=4$.",
-    "s": "Shift: 4 units right. \\nBranches: $y = x-4$ for $x \\ge 4$, and $y = -(x-4) = 4-x$ for $x < 4$. \\nDomain: All real $x$. Range: $y \\ge 0$.",
+    "h": "The vertex is at \\(x=4\\).",
+    "s": "Shift: 4 units right. \\nBranches: \\(y = x-4\\) for \\(x \\ge 4\\), and \\(y = -(x-4) = 4-x\\) for \\(x < 4\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge 0\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift right 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift right 4.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Right 4 units}"
+        "workingOut": "\\(\\text{Right 4 units}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x-4 \\ (x \\ge 4) \\text{ and } y = 4-x \\ (x < 4)"
+        "workingOut": "\\(y = x-4 \\ (x \\ge 4) \\text{ and } y = 4-x \\ (x < 4)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge 0"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift right 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift right 4.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x+3|$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x+3|\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift left 3.",
     "opts": [],
-    "h": "The vertex is at $x=-3$.",
-    "s": "Shift: 3 units left. \\nBranches: $y = x+3$ for $x \\ge -3$, and $y = -x-3$ for $x < -3$. \\nDomain: All real $x$. Range: $y \\ge 0$.",
+    "h": "The vertex is at \\(x=-3\\).",
+    "s": "Shift: 3 units left. \\nBranches: \\(y = x+3\\) for \\(x \\ge -3\\), and \\(y = -x-3\\) for \\(x < -3\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge 0\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift left 3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift left 3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Left 3 units}"
+        "workingOut": "\\(\\text{Left 3 units}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x+3 \\ (x \\ge -3) \\text{ and } y = -x-3 \\ (x < -3)"
+        "workingOut": "\\(y = x+3 \\ (x \\ge -3) \\text{ and } y = -x-3 \\ (x < -3)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge 0"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift left 3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift left 3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x| - 4$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x| - 4\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift down 4.",
     "opts": [],
-    "h": "The vertex is at $(0, -4)$.",
-    "s": "Shift: 4 units down. \\nBranches: $y = x-4$ for $x \\ge 0$, and $y = -x-4$ for $x < 0$. \\nDomain: All real $x$. Range: $y \\ge -4$.",
+    "h": "The vertex is at \\((0, -4)\\).",
+    "s": "Shift: 4 units down. \\nBranches: \\(y = x-4\\) for \\(x \\ge 0\\), and \\(y = -x-4\\) for \\(x < 0\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge -4\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift down 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift down 4.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Down 4 units}"
+        "workingOut": "\\(\\text{Down 4 units}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x-4 \\ (x \\ge 0) \\text{ and } y = -x-4 \\ (x < 0)"
+        "workingOut": "\\(y = x-4 \\ (x \\ge 0) \\text{ and } y = -x-4 \\ (x < 0)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge -4"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift down 4.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift down 4.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x| + 2$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x| + 2\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift up 2.",
     "opts": [],
-    "h": "The vertex is at $(0, 2)$.",
-    "s": "Shift: 2 units up. \\nBranches: $y = x+2$ for $x \\ge 0$, and $y = -x+2$ for $x < 0$. \\nDomain: All real $x$. Range: $y \\ge 2$.",
+    "h": "The vertex is at \\((0, 2)\\).",
+    "s": "Shift: 2 units up. \\nBranches: \\(y = x+2\\) for \\(x \\ge 0\\), and \\(y = -x+2\\) for \\(x < 0\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge 2\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift up 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift up 2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Up 2 units}"
+        "workingOut": "\\(\\text{Up 2 units}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x+2 \\ (x \\ge 0) \\text{ and } y = -x+2 \\ (x < 0)"
+        "workingOut": "\\(y = x+2 \\ (x \\ge 0) \\text{ and } y = -x+2 \\ (x < 0)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge 2"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift up 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift up 2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-v",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x-3| - 2$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x-3| - 2\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift right 3, down 2.",
     "opts": [],
-    "h": "The vertex is at $(3, -2)$.",
-    "s": "Shift: 3 units right, 2 units down. \\nBranches: $y = x-3-2 = x-5$ for $x \\ge 3$, and $y = -(x-3)-2 = -x+1$ for $x < 3$. \\nDomain: All real $x$. Range: $y \\ge -2$.",
+    "h": "The vertex is at \\((3, -2)\\).",
+    "s": "Shift: 3 units right, 2 units down. \\nBranches: \\(y = x-3-2 = x-5\\) for \\(x \\ge 3\\), and \\(y = -(x-3)-2 = -x+1\\) for \\(x < 3\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge -2\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift right 3, down 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift right 3, down 2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Right 3, Down 2}"
+        "workingOut": "\\(\\text{Right 3, Down 2}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x-5 \\ (x \\ge 3) \\text{ and } y = -x+1 \\ (x < 3)"
+        "workingOut": "\\(y = x-5 \\ (x \\ge 3) \\text{ and } y = -x+1 \\ (x < 3)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge -2"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift right 3, down 2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift right 3, down 2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-10b-vi",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Identify the shift of $y = |x+2| - 3$ relative to $y=|x|$. Sketch the graph, write down the equations of the two branches, and state the domain and range.",
+    "q": "Identify the shift of \\(y = |x+2| - 3\\) relative to \\(y=|x|\\). Sketch the graph, write down the equations of the two branches, and state the domain and range.",
     "a": "Shift left 2, down 3.",
     "opts": [],
-    "h": "The vertex is at $(-2, -3)$.",
-    "s": "Shift: 2 units left, 3 units down. \\nBranches: $y = x+2-3 = x-1$ for $x \\ge -2$, and $y = -(x+2)-3 = -x-5$ for $x < -2$. \\nDomain: All real $x$. Range: $y \\ge -3$.",
+    "h": "The vertex is at \\((-2, -3)\\).",
+    "s": "Shift: 2 units left, 3 units down. \\nBranches: \\(y = x+2-3 = x-1\\) for \\(x \\ge -2\\), and \\(y = -(x+2)-3 = -x-5\\) for \\(x < -2\\). \\nDomain: All real \\(x\\). Range: \\(y \\ge -3\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift left 2, down 3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Shift left 2, down 3.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Shift.",
-        "workingOut": "\\text{Left 2, Down 3}"
+        "workingOut": "\\(\\text{Left 2, Down 3}\\)",
+        "graphData": null
       },
       {
         "explanation": "Branches.",
-        "workingOut": "y = x-1 \\ (x \\ge -2) \\text{ and } y = -x-5 \\ (x < -2)"
+        "workingOut": "\\(y = x-1 \\ (x \\ge -2) \\text{ and } y = -x-5 \\ (x < -2)\\)",
+        "graphData": null
       },
       {
         "explanation": "Domain & Range.",
-        "workingOut": "D: \\mathbb{R}, R: y \\ge -3"
+        "workingOut": "\\(D: \\mathbb{R}, R: y \\ge -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift left 2, down 3.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Shift left 2, down 3.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-11a-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the function $y = |3x|$ using cases. Check the graph with a small table of values.",
+    "q": "Sketch the function \\(y = |3x|\\) using cases. Check the graph with a small table of values.",
     "a": "See steps.",
     "opts": [],
-    "h": "The branches are $y=3x$ for $x \\ge 0$ and $y=-3x$ for $x < 0$.",
-    "s": "Cases: $y = 3x$ when $x \\ge 0$, and $y = -3x$ when $x < 0$. This is a V-shape passing through $(0,0), (1,3), (-1,3)$.",
+    "h": "The branches are \\(y=3x\\) for \\(x \\ge 0\\) and \\(y=-3x\\) for \\(x < 0\\).",
+    "s": "Cases: \\(y = 3x\\) when \\(x \\ge 0\\), and \\(y = -3x\\) when \\(x < 0\\). This is a V-shape passing through \\((0,0), (1,3), (-1,3)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Cases.",
-        "workingOut": "y = \\begin{cases} 3x & x \\ge 0 \\\\ -3x & x < 0 \\end{cases}"
+        "workingOut": "\\(y = \\begin{cases} 3x & x \\ge 0 \\\\ -3x & x < 0 \\end{cases}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-11a-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the function $y = |\\frac{1}{3}x|$ using cases. Check the graph with a small table of values.",
+    "q": "Sketch the function \\(y = |\\frac{1}{3}x|\\) using cases. Check the graph with a small table of values.",
     "a": "See steps.",
     "opts": [],
-    "h": "The branches are $y=\\frac{1}{3}x$ for $x \\ge 0$ and $y=-\\frac{1}{3}x$ for $x < 0$.",
-    "s": "Cases: $y = \\frac{1}{3}x$ when $x \\ge 0$, and $y = -\\frac{1}{3}x$ when $x < 0$. This is a wider V-shape passing through $(0,0), (3,1), (-3,1)$.",
+    "h": "The branches are \\(y=\\frac{1}{3}x\\) for \\(x \\ge 0\\) and \\(y=-\\frac{1}{3}x\\) for \\(x < 0\\).",
+    "s": "Cases: \\(y = \\frac{1}{3}x\\) when \\(x \\ge 0\\), and \\(y = -\\frac{1}{3}x\\) when \\(x < 0\\). This is a wider V-shape passing through \\((0,0), (3,1), (-3,1)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Cases.",
-        "workingOut": "y = \\begin{cases} x/3 & x \\ge 0 \\\\ -x/3 & x < 0 \\end{cases}"
+        "workingOut": "\\(y = \\begin{cases} x/3 & x \\ge 0 \\\\ -x/3 & x < 0 \\end{cases}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-11b-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the function $y = |3x|$ using a suitable vertical dilation of $y = |x|$. Verify that you get the same graph as using cases.",
+    "q": "Sketch the function \\(y = |3x|\\) using a suitable vertical dilation of \\(y = |x|\\). Verify that you get the same graph as using cases.",
     "a": "See steps.",
     "opts": [],
-    "h": "Notice that $|3x| = 3|x|$.",
-    "s": "Since $|3x| = 3|x|$, the graph of $y = |3x|$ is simply a vertical stretch of $y = |x|$ by a factor of 3. Every y-value is multiplied by 3, which matches the case-by-case sketch perfectly.",
+    "h": "Notice that \\(|3x| = 3|x|\\).",
+    "s": "Since \\(|3x| = 3|x|\\), the graph of \\(y = |3x|\\) is simply a vertical stretch of \\(y = |x|\\) by a factor of 3. Every y-value is multiplied by 3, which matches the case-by-case sketch perfectly.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Property.",
-        "workingOut": "|3x| = 3|x|"
+        "workingOut": "\\(|3x| = 3|x|\\)",
+        "graphData": null
       },
       {
         "explanation": "Dilation.",
-        "workingOut": "\\text{Vertical stretch by 3}"
+        "workingOut": "\\(\\text{Vertical stretch by 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-11b-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the function $y = |\\frac{1}{3}x|$ using a suitable vertical dilation of $y = |x|$. Verify that you get the same graph as using cases.",
+    "q": "Sketch the function \\(y = |\\frac{1}{3}x|\\) using a suitable vertical dilation of \\(y = |x|\\). Verify that you get the same graph as using cases.",
     "a": "See steps.",
     "opts": [],
-    "h": "Notice that $|\\frac{1}{3}x| = \\frac{1}{3}|x|$.",
-    "s": "Since $|\\frac{1}{3}x| = \\frac{1}{3}|x|$, the graph is a vertical compression of $y = |x|$ by a factor of $1/3$. Every y-value is divided by 3, which matches the case-by-case sketch.",
+    "h": "Notice that \\(|\\frac{1}{3}x| = \\frac{1}{3}|x|\\).",
+    "s": "Since \\(|\\frac{1}{3}x| = \\frac{1}{3}|x|\\), the graph is a vertical compression of \\(y = |x|\\) by a factor of \\(1/3\\). Every y-value is divided by 3, which matches the case-by-case sketch.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Property.",
-        "workingOut": "|x/3| = \\frac{1}{3}|x|"
+        "workingOut": "\\(|x/3| = \\frac{1}{3}|x|\\)",
+        "graphData": null
       },
       {
         "explanation": "Dilation.",
-        "workingOut": "\\text{Vertical compression by 1/3}"
+        "workingOut": "\\(\\text{Vertical compression by 1/3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-12a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |3x - 6|$. Complete the graph using symmetry and check with a table of values.",
+    "q": "Find and plot the \\(x\\)-intercept and \\(y\\)-intercept of \\(y = |3x - 6|\\). Complete the graph using symmetry and check with a table of values.",
     "a": "x-int: 2, y-int: 6.",
     "opts": [],
-    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
-    "s": "$y$-intercept: set $x=0 \\implies y = |-6| = 6$. $(0, 6)$.\\n$x$-intercept: set $y=0 \\implies 3x - 6 = 0 \\implies x = 2$. $(2, 0)$.\\nBy symmetry, if it goes from $(2,0)$ up to $(0,6)$ on the left, it will go up to $(4,6)$ on the right.",
+    "h": "Set \\(y=0\\) to find the vertex (x-int). Set \\(x=0\\) for the y-int.",
+    "s": "\\(y\\)-intercept: set \\(x=0 \\implies y = |-6| = 6\\). \\((0, 6)\\).\\n\\(x\\)-intercept: set \\(y=0 \\implies 3x - 6 = 0 \\implies x = 2\\). \\((2, 0)\\).\\nBy symmetry, if it goes from \\((2,0)\\) up to \\((0,6)\\) on the left, it will go up to \\((4,6)\\) on the right.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: 2, y-int: 6.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: 2, y-int: 6.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "y-intercept.",
-        "workingOut": "|-6| = 6"
+        "workingOut": "\\(|-6| = 6\\)",
+        "graphData": null
       },
       {
         "explanation": "x-intercept.",
-        "workingOut": "3x-6=0 \\implies x=2"
+        "workingOut": "\\(3x-6=0 \\implies x=2\\)",
+        "graphData": null
       },
       {
         "explanation": "Symmetry.",
-        "workingOut": "\\text{Vertex at } x=2. \\text{ Reflect } (0,6) \\to (4,6)."
+        "workingOut": "\\(\\text{Vertex at } x=2. \\text{ Reflect } (0,6) \\to (4,6).\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: 2, y-int: 6.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: 2, y-int: 6.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-12b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |8 - 2x|$. Complete the graph using symmetry.",
+    "q": "Find and plot the \\(x\\)-intercept and \\(y\\)-intercept of \\(y = |8 - 2x|\\). Complete the graph using symmetry.",
     "a": "x-int: 4, y-int: 8.",
     "opts": [],
-    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
-    "s": "$y$-intercept: set $x=0 \\implies y = |8| = 8$. $(0, 8)$.\\n$x$-intercept: set $y=0 \\implies 8 - 2x = 0 \\implies x = 4$. $(4, 0)$.\\nBy symmetry, since the vertex is at $x=4$, another point is $(8, 8)$.",
+    "h": "Set \\(y=0\\) to find the vertex (x-int). Set \\(x=0\\) for the y-int.",
+    "s": "\\(y\\)-intercept: set \\(x=0 \\implies y = |8| = 8\\). \\((0, 8)\\).\\n\\(x\\)-intercept: set \\(y=0 \\implies 8 - 2x = 0 \\implies x = 4\\). \\((4, 0)\\).\\nBy symmetry, since the vertex is at \\(x=4\\), another point is \\((8, 8)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: 4, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: 4, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "y-intercept.",
-        "workingOut": "|8| = 8"
+        "workingOut": "\\(|8| = 8\\)",
+        "graphData": null
       },
       {
         "explanation": "x-intercept.",
-        "workingOut": "8-2x=0 \\implies x=4"
+        "workingOut": "\\(8-2x=0 \\implies x=4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: 4, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: 4, y-int: 8.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-12c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Find and plot the $x$-intercept and $y$-intercept of $y = |4x + 8|$. Complete the graph using symmetry.",
+    "q": "Find and plot the \\(x\\)-intercept and \\(y\\)-intercept of \\(y = |4x + 8|\\). Complete the graph using symmetry.",
     "a": "x-int: -2, y-int: 8.",
     "opts": [],
-    "h": "Set $y=0$ to find the vertex (x-int). Set $x=0$ for the y-int.",
-    "s": "$y$-intercept: set $x=0 \\implies y = |8| = 8$. $(0, 8)$.\\n$x$-intercept: set $y=0 \\implies 4x + 8 = 0 \\implies x = -2$. $(-2, 0)$.\\nBy symmetry, the vertex is at $x=-2$. Reflect $(0, 8)$ across $x=-2$ to get $(-4, 8)$.",
+    "h": "Set \\(y=0\\) to find the vertex (x-int). Set \\(x=0\\) for the y-int.",
+    "s": "\\(y\\)-intercept: set \\(x=0 \\implies y = |8| = 8\\). \\((0, 8)\\).\\n\\(x\\)-intercept: set \\(y=0 \\implies 4x + 8 = 0 \\implies x = -2\\). \\((-2, 0)\\).\\nBy symmetry, the vertex is at \\(x=-2\\). Reflect \\((0, 8)\\) across \\(x=-2\\) to get \\((-4, 8)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: -2, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(x-int: -2, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "y-intercept.",
-        "workingOut": "|8| = 8"
+        "workingOut": "\\(|8| = 8\\)",
+        "graphData": null
       },
       {
         "explanation": "x-intercept.",
-        "workingOut": "4x+8=0 \\implies x=-2"
+        "workingOut": "\\(4x+8=0 \\implies x=-2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: -2, y-int: 8.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(x-int: -2, y-int: 8.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-13a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use cases to sketch the function $y = -|3x|$. Check with a table of values.",
+    "q": "Use cases to sketch the function \\(y = -|3x|\\). Check with a table of values.",
     "a": "See steps.",
     "opts": [],
     "h": "This is an upside down V-shape.",
-    "s": "Cases: If $x \\ge 0$, $y = -3x$. If $x < 0$, $y = -(-3x) = 3x$. The graph is an inverted V with vertex at $(0,0)$.",
+    "s": "Cases: If \\(x \\ge 0\\), \\(y = -3x\\). If \\(x < 0\\), \\(y = -(-3x) = 3x\\). The graph is an inverted V with vertex at \\((0,0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Cases.",
-        "workingOut": "y = -3x \\ (x \\ge 0), y = 3x \\ (x < 0)"
+        "workingOut": "\\(y = -3x \\ (x \\ge 0), y = 3x \\ (x < 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-13b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use cases to sketch the function $y = |2x + 6|$. Check with a table of values.",
+    "q": "Use cases to sketch the function \\(y = |2x + 6|\\). Check with a table of values.",
     "a": "See steps.",
     "opts": [],
-    "h": "Find where the inside is positive and negative. Zero is at $x = -3$.",
-    "s": "Zero is at $x = -3$.\\nCases: If $x \\ge -3$, $y = 2x + 6$. If $x < -3$, $y = -(2x + 6) = -2x - 6$. V-shape with vertex at $(-3, 0)$.",
+    "h": "Find where the inside is positive and negative. Zero is at \\(x = -3\\).",
+    "s": "Zero is at \\(x = -3\\).\\nCases: If \\(x \\ge -3\\), \\(y = 2x + 6\\). If \\(x < -3\\), \\(y = -(2x + 6) = -2x - 6\\). V-shape with vertex at \\((-3, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Vertex.",
-        "workingOut": "2x+6 = 0 \\implies x = -3"
+        "workingOut": "\\(2x+6 = 0 \\implies x = -3\\)",
+        "graphData": null
       },
       {
         "explanation": "Cases.",
-        "workingOut": "y = 2x+6 \\ (x \\ge -3), y = -2x-6 \\ (x < -3)"
+        "workingOut": "\\(y = 2x+6 \\ (x \\ge -3), y = -2x-6 \\ (x < -3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-13c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use cases to sketch the function $y = -|x + 5|$. Check with a table of values.",
+    "q": "Use cases to sketch the function \\(y = -|x + 5|\\). Check with a table of values.",
     "a": "See steps.",
     "opts": [],
     "h": "This is an upside down V-shape shifted left.",
-    "s": "Zero is at $x = -5$.\\nCases: If $x \\ge -5$, $y = -(x + 5) = -x - 5$. If $x < -5$, $y = -(-(x + 5)) = x + 5$. Inverted V-shape with vertex at $(-5, 0)$.",
+    "s": "Zero is at \\(x = -5\\).\\nCases: If \\(x \\ge -5\\), \\(y = -(x + 5) = -x - 5\\). If \\(x < -5\\), \\(y = -(-(x + 5)) = x + 5\\). Inverted V-shape with vertex at \\((-5, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Vertex.",
-        "workingOut": "x = -5"
+        "workingOut": "\\(x = -5\\)",
+        "graphData": null
       },
       {
         "explanation": "Cases.",
-        "workingOut": "y = -x-5 \\ (x \\ge -5), y = x+5 \\ (x < -5)"
+        "workingOut": "\\(y = -x-5 \\ (x \\ge -5), y = x+5 \\ (x < -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-14a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "When $y=|x|$ is shifted by $a$, it is $y=|x-a|$. Applying a horizontal stretch by $1/h$ yields $y=|hx-a|$. Use this approach (identifying the shift then stretch) to sketch $y = |3x - 6|$.",
+    "q": "When \\(y=|x|\\) is shifted by \\(a\\), it is \\(y=|x-a|\\). Applying a horizontal stretch by \\(1/h\\) yields \\(y=|hx-a|\\). Use this approach (identifying the shift then stretch) to sketch \\(y = |3x - 6|\\).",
     "a": "See steps.",
     "opts": [],
-    "h": "Notice that $y = |3(x-2)| = 3|x-2|$.",
-    "s": "$y = |3x - 6| = 3|x - 2|$. This can be viewed as shifting $y=|x|$ right by 2, then applying a vertical stretch by a factor of 3 (or horizontal compression by 1/3). The vertex is at $(2, 0)$, and it rises steeply.",
+    "h": "Notice that \\(y = |3(x-2)| = 3|x-2|\\).",
+    "s": "\\(y = |3x - 6| = 3|x - 2|\\). This can be viewed as shifting \\(y=|x|\\) right by 2, then applying a vertical stretch by a factor of 3 (or horizontal compression by 1/3). The vertex is at \\((2, 0)\\), and it rises steeply.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Factor.",
-        "workingOut": "y = 3|x-2|"
+        "workingOut": "\\(y = 3|x-2|\\)",
+        "graphData": null
       },
       {
         "explanation": "Transformations.",
-        "workingOut": "\\text{Shift right 2, Vertical stretch 3.}"
+        "workingOut": "\\(\\text{Shift right 2, Vertical stretch 3.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-14b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use the shift-then-stretch approach to sketch $y = |2x + 4|$.",
+    "q": "Use the shift-then-stretch approach to sketch \\(y = |2x + 4|\\).",
     "a": "See steps.",
     "opts": [],
-    "h": "Notice that $y = |2(x+2)|$.",
-    "s": "$y = |2x + 4| = 2|x + 2|$. This is a shift left by 2 units, followed by a vertical stretch by a factor of 2. Vertex is at $(-2, 0)$.",
+    "h": "Notice that \\(y = |2(x+2)|\\).",
+    "s": "\\(y = |2x + 4| = 2|x + 2|\\). This is a shift left by 2 units, followed by a vertical stretch by a factor of 2. Vertex is at \\((-2, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Factor.",
-        "workingOut": "y = 2|x+2|"
+        "workingOut": "\\(y = 2|x+2|\\)",
+        "graphData": null
       },
       {
         "explanation": "Transformations.",
-        "workingOut": "\\text{Shift left 2, Vertical stretch 2.}"
+        "workingOut": "\\(\\text{Shift left 2, Vertical stretch 2.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-14c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Use the shift-then-stretch approach to sketch $y = |\\frac{1}{2}x - 2|$.",
+    "q": "Use the shift-then-stretch approach to sketch \\(y = |\\frac{1}{2}x - 2|\\).",
     "a": "See steps.",
     "opts": [],
-    "h": "Notice that $y = |\\frac{1}{2}(x - 4)|$.",
-    "s": "$y = |\\frac{1}{2}x - 2| = \\frac{1}{2}|x - 4|$. This is a shift right by 4 units, followed by a vertical compression by a factor of 1/2. Vertex is at $(4, 0)$.",
+    "h": "Notice that \\(y = |\\frac{1}{2}(x - 4)|\\).",
+    "s": "\\(y = |\\frac{1}{2}x - 2| = \\frac{1}{2}|x - 4|\\). This is a shift right by 4 units, followed by a vertical compression by a factor of 1/2. Vertex is at \\((4, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Factor.",
-        "workingOut": "y = \\frac{1}{2}|x-4|"
+        "workingOut": "\\(y = \\frac{1}{2}|x-4|\\)",
+        "graphData": null
       },
       {
         "explanation": "Transformations.",
-        "workingOut": "\\text{Shift right 4, Vertical compress 1/2.}"
+        "workingOut": "\\(\\text{Shift right 4, Vertical compress 1/2.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-15",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "**a)** Sketch $y = |x - 4|$ and $y = 2$ on the same set of axes, clearly showing the points of intersection.\nHence write down the solution of $|x - 4| = 2$.\n**b)** Now use similar graphical methods to solve each of the following:\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** $|x + 2| = 3$\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** $|2x - 3| = 5$\n&nbsp;&nbsp;&nbsp;&nbsp;**iii)** $|4x - 1| = -3$\n&nbsp;&nbsp;&nbsp;&nbsp;**iv)** $|3x + 6| = 0$",
+    "q": "**a)** Sketch \\(y = |x - 4|\\) and \\(y = 2\\) on the same set of axes, clearly showing the points of intersection.\nHence write down the solution of \\(|x - 4| = 2\\).\n**b)** Now use similar graphical methods to solve each of the following:\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** \\(|x + 2| = 3\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** \\(|2x - 3| = 5\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**iii)** \\(|4x - 1| = -3\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**iv)** \\(|3x + 6| = 0\\)",
     "a": "See solution steps.",
     "opts": [],
     "h": "Find where the V-shape intersects the horizontal line.",
-    "s": "**a)** The intersection points are at $x=6$ and $x=2$. Solution: $x=6, 2$.\n**b) i)** Graph $y = |x+2|$ and $y=3$. Intersections at $x=1, -5$.\n**b) ii)** Graph $y = |2x-3|$ and $y=5$. Intersections at $x=4, -1$.\n**b) iii)** Graph $y = |4x-1|$ and $y=-3$. The V-shape is always above $y=0$, so it never intersects $y=-3$. No solution.\n**b) iv)** Graph $y = |3x+6|$ and $y=0$. The vertex touches the x-axis at $x=-2$. Solution: $x=-2$.",
+    "s": "**a)** The intersection points are at \\(x=6\\) and \\(x=2\\). Solution: \\(x=6, 2\\).\n**b) i)** Graph \\(y = |x+2|\\) and \\(y=3\\). Intersections at \\(x=1, -5\\).\n**b) ii)** Graph \\(y = |2x-3|\\) and \\(y=5\\). Intersections at \\(x=4, -1\\).\n**b) iii)** Graph \\(y = |4x-1|\\) and \\(y=-3\\). The V-shape is always above \\(y=0\\), so it never intersects \\(y=-3\\). No solution.\n**b) iv)** Graph \\(y = |3x+6|\\) and \\(y=0\\). The vertex touches the x-axis at \\(x=-2\\). Solution: \\(x=-2\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "a) Intersection points.",
-        "workingOut": "x-4=2 \\implies x=6, x-4=-2 \\implies x=2"
+        "workingOut": "\\(x-4=2 \\implies x=6, x-4=-2 \\implies x=2\\)",
+        "graphData": null
       },
       {
         "explanation": "b-ii) Solve.",
-        "workingOut": "2x-3=\\pm 5 \\implies x=4, -1"
+        "workingOut": "\\(2x-3=\\pm 5 \\implies x=4, -1\\)",
+        "graphData": null
       },
       {
         "explanation": "b-iii) Observe.",
-        "workingOut": "\\text{No intersection with negative y.}"
+        "workingOut": "\\(\\text{No intersection with negative y.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See solution steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-16",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Consider the absolute value function $f(x) = |x|$.\n**a)** Use the result $f(x) = \\sqrt{x^2}$ to help prove that the absolute value function is even.\n**b)** Why was this result obvious from the graph of $y = |x|$?",
+    "q": "Consider the absolute value function \\(f(x) = |x|\\).\n**a)** Use the result \\(f(x) = \\sqrt{x^2}\\) to help prove that the absolute value function is even.\n**b)** Why was this result obvious from the graph of \\(y = |x|\\)?",
     "a": "See steps.",
     "opts": [],
-    "h": "Substitute $-x$ into the function.",
-    "s": "**a)** $f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)$. Since $f(-x) = f(x)$, the function is even.\n**b)** The graph of $y = |x|$ is a V-shape symmetric about the y-axis. Functions with y-axis symmetry are even functions by definition.",
+    "h": "Substitute \\(-x\\) into the function.",
+    "s": "**a)** \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\). Since \\(f(-x) = f(x)\\), the function is even.\n**b)** The graph of \\(y = |x|\\) is a V-shape symmetric about the y-axis. Functions with y-axis symmetry are even functions by definition.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "a) Prove even.",
-        "workingOut": "f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)"
+        "workingOut": "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\)",
+        "graphData": null
       },
       {
         "explanation": "b) Geometric meaning.",
-        "workingOut": "\\text{Symmetric across y-axis.}"
+        "workingOut": "\\(\\text{Symmetric across y-axis.}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-17a",
@@ -10917,44 +13522,89 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "For what values of $x$ is $y = \\frac{|x|}{x}$ undefined?",
-    "a": "0",
+    "q": "For what values of \\(x\\) is \\(y = \\frac{|x|}{x}\\) undefined?",
+    "a": "2",
     "opts": [
-      "x = 0",
-      "x < 0",
-      "x > 0",
-      "It is defined for all real x."
+      "\\(x < 0\\)",
+      "\\(x > 0\\)",
+      "\\(x = 0\\)",
+      "It is defined for all real \\(x\\)."
     ],
-    "h": "A fraction is undefined when its denominator is zero.",
-    "s": "The function is undefined when the denominator is zero. Thus, it is undefined at $x=0$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Denominator condition.",
-        "workingOut": "x \\neq 0"
+        "explanation": "A rational expression is undefined when its denominator is zero (and the numerator is defined). Here the denominator is simply x, while |x| is defined for all real x.",
+        "workingOut": "\\(\\text{Given: } y = \\frac{|x|}{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Set the denominator equal to zero: x = 0. At x = 0 the fraction has the form |0|/0 = 0/0, which is undefined. For x ≠ 0 the expression is defined.",
+        "workingOut": "\\(x = 0 \\;\\Rightarrow\\; \\text{denominator is zero}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore y is undefined only at x = 0. It is defined for all other real x (and equals 1 for x > 0, -1 for x < 0). Final answer: x = 0.",
+        "workingOut": "\\(\\text{Undefined at } x = 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-17b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Use a table of values of $x$ from $-3$ to $3$ (excluding $x=0$) to sketch the graph of $y = \\frac{|x|}{x}$.",
+    "q": "Use a table of values of \\(x\\) from \\(-3\\) to \\(3\\) (excluding \\(x=0\\)) to sketch the graph of \\(y = \\frac{|x|}{x}\\).",
     "a": "Horizontal lines at y=1 and y=-1.",
     "opts": [],
     "h": "Evaluate the function for negative and positive values.",
-    "s": "For $x > 0$, $|x| = x$, so $y = \\frac{x}{x} = 1$. For $x < 0$, $|x| = -x$, so $y = \\frac{-x}{x} = -1$. The graph consists of two horizontal half-lines with open circles on the y-axis at $(0,1)$ and $(0,-1)$.",
+    "s": "For \\(x > 0\\), \\(|x| = x\\), so \\(y = \\frac{x}{x} = 1\\). For \\(x < 0\\), \\(|x| = -x\\), so \\(y = \\frac{-x}{x} = -1\\). The graph consists of two horizontal half-lines with open circles on the y-axis at \\((0,1)\\) and \\((0,-1)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Horizontal lines at y=1 and y=-1.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(Horizontal lines at y=1 and y=-1.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Positive x.",
-        "workingOut": "y = 1"
+        "workingOut": "\\(y = 1\\)",
+        "graphData": null
       },
       {
         "explanation": "Negative x.",
-        "workingOut": "y = -1"
+        "workingOut": "\\(y = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Horizontal lines at y=1 and y=-1.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(Horizontal lines at y=1 and y=-1.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-17c",
@@ -10962,132 +13612,314 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Absolute Value",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Hence, write down the equations of the two branches of $y = \\frac{|x|}{x}$.",
+    "q": "Hence, write down the equations of the two branches of \\(y = \\frac{|x|}{x}\\).",
     "a": "0",
     "opts": [
-      "y = 1 for x > 0, and y = -1 for x < 0.",
-      "y = x for x > 0, and y = -x for x < 0.",
-      "y = 1 for all x.",
-      "y = -1 for all x."
+      "\\(y = 1\\) for \\(x > 0\\), and \\(y = -1\\) for \\(x < 0\\).",
+      "\\(y = x\\) for \\(x > 0\\), and \\(y = -x\\) for \\(x < 0\\).",
+      "\\(y = 1\\) for all \\(x\\).",
+      "\\(y = -1\\) for all \\(x\\)."
     ],
-    "h": "Look at the simplified expressions from the previous graph.",
-    "s": "When $x > 0$, the equation simplifies to $y = 1$. When $x < 0$, it simplifies to $y = -1$.",
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Simplify branches.",
-        "workingOut": "x>0 \\implies y=1, quad x<0 \\implies y=-1"
+        "explanation": "Piecewise-define |x|: |x| = x when x > 0 and |x| = -x when x < 0. Divide by x on each piece (x ≠ 0 from the previous question).",
+        "workingOut": "\\(\\text{Given: } y = \\frac{|x|}{x},\\; x \\neq 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For x > 0: |x| = x, so y = x/x = 1. Do not confuse this with y = x.",
+        "workingOut": "\\(x > 0 \\;\\Rightarrow\\; y = \\frac{x}{x} = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "For x < 0: |x| = -x, so y = (-x)/x = -1. A common error is writing y = -x for x < 0 without dividing by x.",
+        "workingOut": "\\(x < 0 \\;\\Rightarrow\\; y = \\frac{-x}{x} = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The graph is the horizontal half-line y = 1 for positive x and y = -1 for negative x, with a hole at x = 0. Final answer: y = 1 for x > 0, and y = -1 for x < 0.",
+        "workingOut": "\\(y = 1\\ (x>0),\\quad y = -1\\ (x<0)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-18",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Prove that $g(x) = f(|x|)$ is an even function, for ANY function $f(x)$.",
+    "q": "Prove that \\(g(x) = f(|x|)\\) is an even function, for ANY function \\(f(x)\\).",
     "a": "See steps.",
     "opts": [],
-    "h": "Substitute $-x$ into $g(x)$ and use the property that $|-x| = |x|$.",
-    "s": "To test if $g(x)$ is even, we evaluate $g(-x)$.\\n$g(-x) = f(|-x|)$.\\nSince absolute value is an even function itself, $|-x| = |x|$.\\nTherefore, $f(|-x|) = f(|x|) = g(x)$.\\nSince $g(-x) = g(x)$ for all $x$, the function is even.",
+    "h": "Substitute \\(-x\\) into \\(g(x)\\) and use the property that \\(|-x| = |x|\\).",
+    "s": "To test if \\(g(x)\\) is even, we evaluate \\(g(-x)\\).\\n\\(g(-x) = f(|-x|)\\).\\nSince absolute value is an even function itself, \\(|-x| = |x|\\).\\nTherefore, \\(f(|-x|) = f(|x|) = g(x)\\).\\nSince \\(g(-x) = g(x)\\) for all \\(x\\), the function is even.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Substitute -x.",
-        "workingOut": "g(-x) = f(|-x|)"
+        "workingOut": "\\(g(-x) = f(|-x|)\\)",
+        "graphData": null
       },
       {
         "explanation": "Apply absolute value property.",
-        "workingOut": "|-x| = |x| \\implies g(-x) = f(|x|) = g(x)"
+        "workingOut": "\\(|-x| = |x| \\implies g(-x) = f(|x|) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(See steps.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-19a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = |x| + x$. Then use cases to determine the equation of each branch of the function.",
+    "q": "Sketch the graph of \\(y = |x| + x\\). Then use cases to determine the equation of each branch of the function.",
     "a": "y=2x for x>=0, y=0 for x<0.",
     "opts": [],
-    "h": "Separate into $x \\ge 0$ and $x < 0$.",
-    "s": "Cases:\\nIf $x \\ge 0$: $|x| = x$, so $y = x + x = 2x$.\\nIf $x < 0$: $|x| = -x$, so $y = -x + x = 0$.\\nThe graph is a horizontal line along the negative x-axis, and a straight line with gradient 2 for positive x.",
+    "h": "Separate into \\(x \\ge 0\\) and \\(x < 0\\).",
+    "s": "Cases:\\nIf \\(x \\ge 0\\): \\(|x| = x\\), so \\(y = x + x = 2x\\).\\nIf \\(x < 0\\): \\(|x| = -x\\), so \\(y = -x + x = 0\\).\\nThe graph is a horizontal line along the negative x-axis, and a straight line with gradient 2 for positive x.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y=2x for x>=0, y=0 for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y=2x for x>=0, y=0 for x<0.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Case x>=0.",
-        "workingOut": "y = x+x = 2x"
+        "workingOut": "\\(y = x+x = 2x\\)",
+        "graphData": null
       },
       {
         "explanation": "Case x<0.",
-        "workingOut": "y = -x+x = 0"
+        "workingOut": "\\(y = -x+x = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y=2x for x>=0, y=0 for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y=2x for x>=0, y=0 for x<0.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-19b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = |x| - x$. Then use cases to determine the equation of each branch of the function.",
+    "q": "Sketch the graph of \\(y = |x| - x\\). Then use cases to determine the equation of each branch of the function.",
     "a": "y=0 for x>=0, y=-2x for x<0.",
     "opts": [],
-    "h": "Separate into $x \\ge 0$ and $x < 0$.",
-    "s": "Cases:\\nIf $x \\ge 0$: $|x| = x$, so $y = x - x = 0$.\\nIf $x < 0$: $|x| = -x$, so $y = -x - x = -2x$.\\nThe graph is a straight line with gradient -2 for negative x, and a horizontal line along the positive x-axis.",
+    "h": "Separate into \\(x \\ge 0\\) and \\(x < 0\\).",
+    "s": "Cases:\\nIf \\(x \\ge 0\\): \\(|x| = x\\), so \\(y = x - x = 0\\).\\nIf \\(x < 0\\): \\(|x| = -x\\), so \\(y = -x - x = -2x\\).\\nThe graph is a straight line with gradient -2 for negative x, and a horizontal line along the positive x-axis.",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y=0 for x>=0, y=-2x for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y=0 for x>=0, y=-2x for x<0.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Case x>=0.",
-        "workingOut": "y = x-x = 0"
+        "workingOut": "\\(y = x-x = 0\\)",
+        "graphData": null
       },
       {
         "explanation": "Case x<0.",
-        "workingOut": "y = -x-x = -2x"
+        "workingOut": "\\(y = -x-x = -2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y=0 for x>=0, y=-2x for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y=0 for x>=0, y=-2x for x<0.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-19c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = 2(x - 2) - |x - 2|$. Then use cases to determine the equation of each branch of the function.",
+    "q": "Sketch the graph of \\(y = 2(x - 2) - |x - 2|\\). Then use cases to determine the equation of each branch of the function.",
     "a": "y = x-2 for x>=2, y = 3x-6 for x<2.",
     "opts": [],
-    "h": "Separate into $x - 2 \\ge 0$ and $x - 2 < 0$.",
-    "s": "Zero is at $x=2$.\\nCases:\\nIf $x \\ge 2$: $|x-2| = x-2$, so $y = 2(x-2) - (x-2) = x-2$.\\nIf $x < 2$: $|x-2| = -(x-2)$, so $y = 2(x-2) - (-(x-2)) = 2(x-2) + (x-2) = 3(x-2) = 3x - 6$.\\nBoth branches meet at $(2, 0)$.",
+    "h": "Separate into \\(x - 2 \\ge 0\\) and \\(x - 2 < 0\\).",
+    "s": "Zero is at \\(x=2\\).\\nCases:\\nIf \\(x \\ge 2\\): \\(|x-2| = x-2\\), so \\(y = 2(x-2) - (x-2) = x-2\\).\\nIf \\(x < 2\\): \\(|x-2| = -(x-2)\\), so \\(y = 2(x-2) - (-(x-2)) = 2(x-2) + (x-2) = 3(x-2) = 3x - 6\\).\\nBoth branches meet at \\((2, 0)\\).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y = x-2 for x>=2, y = 3x-6 for x<2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y = x-2 for x>=2, y = 3x-6 for x<2.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Case x>=2.",
-        "workingOut": "y = 2(x-2) - (x-2) = x-2"
+        "workingOut": "\\(y = 2(x-2) - (x-2) = x-2\\)",
+        "graphData": null
       },
       {
         "explanation": "Case x<2.",
-        "workingOut": "y = 2(x-2) + (x-2) = 3x-6"
+        "workingOut": "\\(y = 2(x-2) + (x-2) = 3x-6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y = x-2 for x>=2, y = 3x-6 for x<2.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y = x-2 for x>=2, y = 3x-6 for x<2.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5E-new-19d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph of $y = x^2 - |4x|$. Then use cases to determine the equation of each branch of the function.",
+    "q": "Sketch the graph of \\(y = x^2 - |4x|\\). Then use cases to determine the equation of each branch of the function.",
     "a": "y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.",
     "opts": [],
-    "h": "Separate into $x \\ge 0$ and $x < 0$.",
-    "s": "Cases:\\nIf $x \\ge 0$: $|4x| = 4x$, so $y = x^2 - 4x$. This is a parabola opening upwards with roots at $0, 4$.\\nIf $x < 0$: $|4x| = -4x$, so $y = x^2 - (-4x) = x^2 + 4x$. This is a parabola opening upwards with roots at $-4, 0$.\\nThe graph looks like a W-shape (two parabolas meeting at the origin).",
+    "h": "Separate into \\(x \\ge 0\\) and \\(x < 0\\).",
+    "s": "Cases:\\nIf \\(x \\ge 0\\): \\(|4x| = 4x\\), so \\(y = x^2 - 4x\\). This is a parabola opening upwards with roots at \\(0, 4\\).\\nIf \\(x < 0\\): \\(|4x| = -4x\\), so \\(y = x^2 - (-4x) = x^2 + 4x\\). This is a parabola opening upwards with roots at \\(-4, 0\\).\\nThe graph looks like a W-shape (two parabolas meeting at the origin).",
     "solutionSteps": [
       {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
+        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
+        "workingOut": "\\(y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.\\)",
+        "graphData": null
+      },
+      {
         "explanation": "Case x>=0.",
-        "workingOut": "y = x^2 - 4x"
+        "workingOut": "\\(y = x^2 - 4x\\)",
+        "graphData": null
       },
       {
         "explanation": "Case x<0.",
-        "workingOut": "y = x^2 + 4x"
+        "workingOut": "\\(y = x^2 + 4x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
+        "workingOut": "\\(y = x^2 - 4x for x>=0, y = x^2 + 4x for x<0.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1ai",
