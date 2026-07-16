@@ -9721,52 +9721,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2a-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x| = |-x|\\) for \\(x = 5, y = -3\\).",
-    "a": "LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.",
-    "opts": [],
-    "h": "Substitute \\(x=5\\) into both sides.",
-    "s": "LHS: \\(|5| = 5\\). RHS: \\(|-5| = 5\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = 5\\). Which statement is correct?",
+    "a": "1",
+    "opts": [
+      "\\(|5| = 5\\) and \\(|-5| = -5\\), so both sides equal 5.",
+      "\\(|5| = 5\\) and \\(|-5| = 5\\), so both sides equal 5.",
+      "\\(|5| = 5\\) but \\(|-5| = -5\\), so the sides differ.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "options": [
+      "\\(|5| = 5\\) and \\(|-5| = -5\\), so both sides equal 5.",
+      "\\(|5| = 5\\) and \\(|-5| = 5\\), so both sides equal 5.",
+      "\\(|5| = 5\\) but \\(|-5| = -5\\), so the sides differ.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute the given value into both sides of \\(|x| = |-x|\\). Absolute value measures distance from zero, so \\(|x|\\) and \\(|-x|\\) must be equal for every real number.",
+        "workingOut": "\\(\\text{Given: } x = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "explanation": "Evaluate the left-hand side: \\(|5| = 5\\). Evaluate the right-hand side: \\(|-(5)| = |-5| = 5\\). A common mistake is dropping the absolute value on the right and writing \\(-x\\).",
+        "workingOut": "\\(|5| = 5,\\quad |-(5)| = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|-5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5| = 5. RHS = |-5| = 5. LHS = RHS.\\)",
+        "explanation": "Both sides equal 5, so the identity holds for this value of \\(x\\).",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 5\\)",
         "graphData": null
       }
     ],
@@ -9776,52 +9762,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2a-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = 5, y = -3\\).",
-    "a": "LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|5 - (-3)| = |8| = 8\\). RHS: \\(|-3 - 5| = |-8| = 8\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
+    "a": "2",
+    "opts": [
+      "\\(|5 - (-3)| = 8\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "\\(|5 - (-3)| = 8\\) and \\(|-3 - (5)| = 8\\), so both sides equal 8.",
+      "Both sides equal -8."
+    ],
+    "options": [
+      "\\(|5 - (-3)| = 8\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "\\(|5 - (-3)| = 8\\) and \\(|-3 - (5)| = 8\\), so both sides equal 8.",
+      "Both sides equal -8."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "The identity \\(|a| = |-a|\\) with \\(a = x - y\\) gives \\(|x - y| = |y - x|\\). Substitute the given numbers carefully, especially signs.",
+        "workingOut": "\\(\\text{Given: } x = 5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "explanation": "Left: \\(|5 - (-3)| = |8| = 8\\). Right: \\(|-3 - (5)| = |-8| = 8\\).",
+        "workingOut": "\\(|5-(-3)| = 8,\\quad |-3-(5)| = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|5 - (-3)| = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|-3 - 5| = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5 - (-3)| = 8. RHS = |-3 - 5| = 8.\\)",
+        "explanation": "Both sides equal 8, confirming the identity for these values.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 8\\)",
         "graphData": null
       }
     ],
@@ -9831,52 +9803,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2a-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = 5, y = -3\\).",
-    "a": "LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|5 \\times -3| = |-15| = 15\\). RHS: \\(|5| \\times |-3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
+    "a": "0",
+    "opts": [
+      "\\(|5\\times(-3)| = 15\\) and \\(|5|\\,|-3| = 5\\times3 = 15\\).",
+      "\\(|xy| = -15\\) (absolute value forgotten).",
+      "\\(|x||y| = 15\\) (absolute value only on \\(y\\)).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "options": [
+      "\\(|5\\times(-3)| = 15\\) and \\(|5|\\,|-3| = 5\\times3 = 15\\).",
+      "\\(|xy| = -15\\) (absolute value forgotten).",
+      "\\(|x||y| = 15\\) (absolute value only on \\(y\\)).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Evaluate \\(|xy|\\) and \\(|x||y|\\) separately with the given values. Absolute value of a product equals the product of absolute values for all real numbers.",
+        "workingOut": "\\(\\text{Given: } x = 5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "explanation": "Left: \\(|5\\times(-3)| = |-15| = 15\\). Right: \\(|5|\\times|-3| = 5\\times3 = 15\\).",
+        "workingOut": "\\(|xy| = 15,\\quad |x||y| = 15\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-15| = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(5 \\times 3 = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5 * -3| = 15. RHS = |5| * |-3| = 15.\\)",
+        "explanation": "Both sides equal 15, so the identity holds.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 15\\)",
         "graphData": null
       }
     ],
@@ -9886,52 +9844,43 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2a-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = 5, y = -3\\).",
-    "a": "LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|\\frac{5}{-3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|5|}{|-3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = 5,\\; y = -3\\). Which statement is correct?",
+    "a": "3",
+    "opts": [
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
+      "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\).",
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+    ],
+    "options": [
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
+      "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\).",
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute into both sides of \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\). Write every fraction with \\(\\dfrac{\\cdot}{\\cdot}\\) so the numerator and denominator are clear. Never write a bare slash like 5/3 inside absolute value when you mean a fraction.",
+        "workingOut": "\\(\\text{Given: } x = 5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "explanation": "Left-hand side: divide first, then take absolute value. \\(\\dfrac{5}{-3} = -\\dfrac{5}{3}\\), so \\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\).",
+        "workingOut": "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Right-hand side: \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides match.",
+        "workingOut": "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|\\frac{5}{-3}| = \\frac{5}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(\\frac{5}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |5|/|-3| = 5/3.\\)",
+        "explanation": "Therefore \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|} = \\dfrac{5}{3}\\) for these values. The identity is verified.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = \\dfrac{5}{3}\\)",
         "graphData": null
       }
     ],
@@ -9941,52 +9890,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2b-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5, y = 3\\).",
-    "a": "LHS = |-5| = 5. RHS = |5| = 5.",
-    "opts": [],
-    "h": "Substitute \\(x=-5\\) into both sides.",
-    "s": "LHS: \\(|-5| = 5\\). RHS: \\(|-(-5)| = |5| = 5\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5\\). Which statement is correct?",
+    "a": "2",
+    "opts": [
+      "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+      "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
+      "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "options": [
+      "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+      "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
+      "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute the given value into both sides of \\(|x| = |-x|\\). Absolute value measures distance from zero, so \\(|x|\\) and \\(|-x|\\) must be equal for every real number.",
+        "workingOut": "\\(\\text{Given: } x = -5\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "explanation": "Evaluate the left-hand side: \\(|-5| = 5\\). Evaluate the right-hand side: \\(|-(-5)| = |5| = 5\\). A common mistake is dropping the absolute value on the right and writing \\(-x\\).",
+        "workingOut": "\\(|-5| = 5,\\quad |-(-5)| = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "explanation": "Both sides equal 5, so the identity holds for this value of \\(x\\).",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 5\\)",
         "graphData": null
       }
     ],
@@ -9996,52 +9931,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2b-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5, y = 3\\).",
-    "a": "LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|-5 - 3| = |-8| = 8\\). RHS: \\(|3 - (-5)| = |8| = 8\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5,\\; y = 3\\). Which statement is correct?",
+    "a": "0",
+    "opts": [
+      "\\(|-5 - (3)| = 8\\) and \\(|3 - (-5)| = 8\\), so both sides equal 8.",
+      "\\(|-5 - (3)| = -8\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "Both sides equal -8."
+    ],
+    "options": [
+      "\\(|-5 - (3)| = 8\\) and \\(|3 - (-5)| = 8\\), so both sides equal 8.",
+      "\\(|-5 - (3)| = -8\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "Both sides equal -8."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "The identity \\(|a| = |-a|\\) with \\(a = x - y\\) gives \\(|x - y| = |y - x|\\). Substitute the given numbers carefully, especially signs.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "explanation": "Left: \\(|-5 - (3)| = |-8| = 8\\). Right: \\(|3 - (-5)| = |8| = 8\\).",
+        "workingOut": "\\(|-5-(3)| = 8,\\quad |3-(-5)| = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-8| = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|8| = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5 - 3| = 8. RHS = |3 - (-5)| = 8.\\)",
+        "explanation": "Both sides equal 8, confirming the identity for these values.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 8\\)",
         "graphData": null
       }
     ],
@@ -10051,52 +9972,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2b-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5, y = 3\\).",
-    "a": "LHS = |-15| = 15. RHS = |-5| * |3| = 15.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|-5 \\times 3| = |-15| = 15\\). RHS: \\(|-5| \\times |3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5,\\; y = 3\\). Which statement is correct?",
+    "a": "1",
+    "opts": [
+      "\\(|xy| = -15\\) (absolute value forgotten).",
+      "\\(|-5\\times(3)| = 15\\) and \\(|-5|\\,|3| = 5\\times3 = 15\\).",
+      "\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "options": [
+      "\\(|xy| = -15\\) (absolute value forgotten).",
+      "\\(|-5\\times(3)| = 15\\) and \\(|-5|\\,|3| = 5\\times3 = 15\\).",
+      "\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Evaluate \\(|xy|\\) and \\(|x||y|\\) separately with the given values. Absolute value of a product equals the product of absolute values for all real numbers.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "explanation": "Left: \\(|-5\\times(3)| = |-15| = 15\\). Right: \\(|-5|\\times|3| = 5\\times3 = 15\\).",
+        "workingOut": "\\(|xy| = 15,\\quad |x||y| = 15\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-15| = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(5 \\times 3 = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-15| = 15. RHS = |-5| * |3| = 15.\\)",
+        "explanation": "Both sides equal 15, so the identity holds.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 15\\)",
         "graphData": null
       }
     ],
@@ -10106,52 +10013,43 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2b-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = -5, y = 3\\).",
-    "a": "LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|\\frac{-5}{3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|-5|}{|3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = -5,\\; y = 3\\). Which statement is correct?",
+    "a": "3",
+    "opts": [
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
+      "\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\).",
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+    ],
+    "options": [
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
+      "\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\).",
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute into both sides of \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\). Write every fraction with \\(\\dfrac{\\cdot}{\\cdot}\\) so the numerator and denominator are clear. Never write a bare slash like 5/3 inside absolute value when you mean a fraction.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "explanation": "Left-hand side: divide first, then take absolute value. \\(\\dfrac{-5}{3} = -\\dfrac{5}{3}\\), so \\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\).",
+        "workingOut": "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Right-hand side: \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides match.",
+        "workingOut": "\\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(\\frac{5}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(\\frac{5}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5/3| = 5/3. RHS = |-5|/|3| = 5/3.\\)",
+        "explanation": "Therefore \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|} = \\dfrac{5}{3}\\) for these values. The identity is verified.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = \\dfrac{5}{3}\\)",
         "graphData": null
       }
     ],
@@ -10161,52 +10059,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2c-i",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5, y = -3\\).",
-    "a": "LHS = |-5| = 5. RHS = |5| = 5.",
-    "opts": [],
-    "h": "Substitute \\(x=-5\\) into both sides.",
-    "s": "LHS: \\(|-5| = 5\\). RHS: \\(|-(-5)| = |5| = 5\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x| = |-x|\\) for \\(x = -5\\). Which statement is correct?",
+    "a": "0",
+    "opts": [
+      "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+      "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+      "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "options": [
+      "\\(|-5| = 5\\) and \\(|--5| = 5\\), so both sides equal 5.",
+      "\\(|-5| = -5\\) and \\(|--5| = 5\\), so both sides equal -5.",
+      "\\(|-5| = 5\\) but \\(|--5| = -5\\), so the sides differ.",
+      "The identity only holds when \\(x \\ge 0\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute the given value into both sides of \\(|x| = |-x|\\). Absolute value measures distance from zero, so \\(|x|\\) and \\(|-x|\\) must be equal for every real number.",
+        "workingOut": "\\(\\text{Given: } x = -5\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "explanation": "Evaluate the left-hand side: \\(|-5| = 5\\). Evaluate the right-hand side: \\(|-(-5)| = |5| = 5\\). A common mistake is dropping the absolute value on the right and writing \\(-x\\).",
+        "workingOut": "\\(|-5| = 5,\\quad |-(-5)| = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|5| = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5| = 5. RHS = |5| = 5.\\)",
+        "explanation": "Both sides equal 5, so the identity holds for this value of \\(x\\).",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 5\\)",
         "graphData": null
       }
     ],
@@ -10216,52 +10100,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2c-ii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5, y = -3\\).",
-    "a": "LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|-5 + 3| = |-2| = 2\\). RHS: \\(|-3 + 5| = |2| = 2\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|x - y| = |y - x|\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
+    "a": "3",
+    "opts": [
+      "\\(|-5 - (-3)| = -2\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "Both sides equal -2.",
+      "\\(|-5 - (-3)| = 2\\) and \\(|-3 - (-5)| = 2\\), so both sides equal 2."
+    ],
+    "options": [
+      "\\(|-5 - (-3)| = -2\\) without absolute value.",
+      "The two sides are always opposite in sign, so they cannot be equal.",
+      "Both sides equal -2.",
+      "\\(|-5 - (-3)| = 2\\) and \\(|-3 - (-5)| = 2\\), so both sides equal 2."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "The identity \\(|a| = |-a|\\) with \\(a = x - y\\) gives \\(|x - y| = |y - x|\\). Substitute the given numbers carefully, especially signs.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "explanation": "Left: \\(|-5 - (-3)| = |-2| = 2\\). Right: \\(|-3 - (-5)| = |2| = 2\\).",
+        "workingOut": "\\(|-5-(-3)| = 2,\\quad |-3-(-5)| = 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-2| = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|2| = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-5 - (-3)| = 2. RHS = |-3 - (-5)| = 2.\\)",
+        "explanation": "Both sides equal 2, confirming the identity for these values.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 2\\)",
         "graphData": null
       }
     ],
@@ -10271,52 +10141,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2c-iii",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5, y = -3\\).",
-    "a": "LHS = |15| = 15. RHS = |-5| * |-3| = 15.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|-5 \\times -3| = |15| = 15\\). RHS: \\(|-5| \\times |-3| = 5 \\times 3 = 15\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(|xy| = |x||y|\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
+    "a": "2",
+    "opts": [
+      "\\(|xy| = 15\\) (absolute value forgotten).",
+      "\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
+      "\\(|-5\\times(-3)| = 15\\) and \\(|-5|\\,|-3| = 5\\times3 = 15\\).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "options": [
+      "\\(|xy| = 15\\) (absolute value forgotten).",
+      "\\(|x||y| = -15\\) (absolute value only on \\(y\\)).",
+      "\\(|-5\\times(-3)| = 15\\) and \\(|-5|\\,|-3| = 5\\times3 = 15\\).",
+      "The product rule for absolute values is false when both factors are negative."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Evaluate \\(|xy|\\) and \\(|x||y|\\) separately with the given values. Absolute value of a product equals the product of absolute values for all real numbers.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "explanation": "Left: \\(|-5\\times(-3)| = |15| = 15\\). Right: \\(|-5|\\times|-3| = 5\\times3 = 15\\).",
+        "workingOut": "\\(|xy| = 15,\\quad |x||y| = 15\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|15| = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(5 \\times 3 = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |15| = 15. RHS = |-5| * |-3| = 15.\\)",
+        "explanation": "Both sides equal 15, so the identity holds.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 15\\)",
         "graphData": null
       }
     ],
@@ -10326,52 +10182,43 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-2c-iv",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Verify that \\(\\left|\\frac{x}{y}\\right| = \\frac{|x|}{|y|}\\) for \\(x = -5, y = -3\\).",
-    "a": "LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.",
-    "opts": [],
-    "h": "Substitute the values.",
-    "s": "LHS: \\(|\\frac{-5}{-3}| = |\\frac{5}{3}| = \\frac{5}{3}\\). RHS: \\(\\frac{|-5|}{|-3|} = \\frac{5}{3}\\). Since LHS = RHS, verified.",
+    "q": "Verify that \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\) for \\(x = -5,\\; y = -3\\). Which statement is correct?",
+    "a": "1",
+    "opts": [
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}.",
+      "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\)."
+    ],
+    "options": [
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}.",
+      "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
+      "The quotient rule fails whenever \\(y < 0\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute into both sides of \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|}\\). Write every fraction with \\(\\dfrac{\\cdot}{\\cdot}\\) so the numerator and denominator are clear. Never write a bare slash like 5/3 inside absolute value when you mean a fraction.",
+        "workingOut": "\\(\\text{Given: } x = -5,\\; y = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "explanation": "Left-hand side: divide first, then take absolute value. \\(\\dfrac{-5}{-3} = \\dfrac{5}{3}\\), so \\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\).",
+        "workingOut": "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Right-hand side: \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\). Both sides match.",
+        "workingOut": "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|5/3| = 5/3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(\\frac{5}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |5/3| = 5/3. RHS = |-5|/|-3| = 5/3.\\)",
+        "explanation": "Therefore \\(\\left|\\dfrac{x}{y}\\right| = \\dfrac{|x|}{|y|} = \\dfrac{5}{3}\\) for these values. The identity is verified.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = \\dfrac{5}{3}\\)",
         "graphData": null
       }
     ],
@@ -11334,52 +11181,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|4x| = 4|x|\\) is true when \\(x = -4\\).",
-    "a": "LHS = |-16| = 16. RHS = 4*|-4| = 16.",
-    "opts": [],
-    "h": "Substitute the value into both sides.",
-    "s": "LHS: \\(|4(-4)| = |-16| = 16\\). RHS: \\(4|-4| = 4(4) = 16\\). LHS = RHS, so it is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|4x| = 4|x|\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "0",
+    "opts": [
+      "LHS \\(= |4(-4)| = 16\\), RHS \\(= 4|-4| = 16\\); equal.",
+      "LHS \\(= 4(-4) = -16\\), RHS \\(= 4|-4| = 16\\); not equal.",
+      "LHS \\(= |4(-4)| = 16\\), RHS \\(= 4(-4) = -16\\); not equal.",
+      "Both sides equal \\(-16\\)."
+    ],
+    "options": [
+      "LHS \\(= |4(-4)| = 16\\), RHS \\(= 4|-4| = 16\\); equal.",
+      "LHS \\(= 4(-4) = -16\\), RHS \\(= 4|-4| = 16\\); not equal.",
+      "LHS \\(= |4(-4)| = 16\\), RHS \\(= 4(-4) = -16\\); not equal.",
+      "Both sides equal \\(-16\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into both sides of \\(|4x| = 4|x|\\).",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "explanation": "LHS: \\(|4(-4)| = |-16| = 16\\). RHS: \\(4|-4| = 4\\times 4 = 16\\).",
+        "workingOut": "\\(|4x| = 16,\\quad 4|x| = 16\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|4(-4)| = |-16| = 16\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(4|-4| = 4(4) = 16\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-16| = 16. RHS = 4*|-4| = 16.\\)",
+        "explanation": "Both sides equal 16, so the statement is true for \\(x = -4\\).",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 16\\)",
         "graphData": null
       }
     ],
@@ -11389,52 +11222,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|-x| = |x|\\) is true when \\(x = -4\\).",
-    "a": "LHS = |4| = 4. RHS = |-4| = 4.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-(-4)| = |4| = 4\\). RHS: \\(|-4| = 4\\). LHS = RHS, so it is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|-x| = |x|\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "1",
+    "opts": [
+      "LHS \\(= -(-4) = 4\\) without absolute value on the left structure.",
+      "LHS \\(= |-(-4)| = |4| = 4\\), RHS \\(= |-4| = 4\\); equal.",
+      "LHS \\(= 4\\), RHS \\(= -4\\); not equal.",
+      "Both sides equal \\(-4\\)."
+    ],
+    "options": [
+      "LHS \\(= -(-4) = 4\\) without absolute value on the left structure.",
+      "LHS \\(= |-(-4)| = |4| = 4\\), RHS \\(= |-4| = 4\\); equal.",
+      "LHS \\(= 4\\), RHS \\(= -4\\); not equal.",
+      "Both sides equal \\(-4\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into \\(|-x| = |x|\\).",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "explanation": "LHS: \\(|-(-4)| = |4| = 4\\). RHS: \\(|-4| = 4\\).",
+        "workingOut": "\\(|-x| = 4 = |x|\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-(-4)| = |4| = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|-4| = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |4| = 4. RHS = |-4| = 4.\\)",
+        "explanation": "Equal, so the identity holds.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 4\\)",
         "graphData": null
       }
     ],
@@ -11444,52 +11263,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x|^2 = x^2\\) is true when \\(x = -4\\).",
-    "a": "LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-4|^2 = (4)^2 = 16\\). RHS: \\((-4)^2 = 16\\). LHS = RHS, so it is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x|^2 = x^2\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "2",
+    "opts": [
+      "LHS \\(= |-4|^2 = 16\\), RHS \\(= -16\\); not equal.",
+      "LHS \\(= -16\\), RHS \\(= 16\\); not equal.",
+      "LHS \\(= |-4|^2 = 4^2 = 16\\), RHS \\(= (-4)^2 = 16\\); equal.",
+      "Both sides equal \\(-16\\)."
+    ],
+    "options": [
+      "LHS \\(= |-4|^2 = 16\\), RHS \\(= -16\\); not equal.",
+      "LHS \\(= -16\\), RHS \\(= 16\\); not equal.",
+      "LHS \\(= |-4|^2 = 4^2 = 16\\), RHS \\(= (-4)^2 = 16\\); equal.",
+      "Both sides equal \\(-16\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into \\(|x|^2 = x^2\\).",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "explanation": "LHS: \\(|-4|^2 = 4^2 = 16\\). RHS: \\((-4)^2 = 16\\).",
+        "workingOut": "\\(|x|^2 = 16 = x^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-4|^2 = 16\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\((-4)^2 = 16\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-4|^2 = 16. RHS = (-4)^2 = 16.\\)",
+        "explanation": "Both sides equal 16.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 16\\)",
         "graphData": null
       }
     ],
@@ -11499,52 +11304,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x - 5| = |5 - x|\\) is true when \\(x = -4\\).",
-    "a": "LHS = |-9| = 9. RHS = |9| = 9.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-4 - 5| = |-9| = 9\\). RHS: \\(|5 - (-4)| = |9| = 9\\). LHS = RHS, so it is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x - 5| = |5 - x|\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "0",
+    "opts": [
+      "LHS \\(= |-4-5| = 9\\), RHS \\(= |5-(-4)| = 9\\); equal.",
+      "LHS \\(= -9\\), RHS \\(= 9\\); not equal.",
+      "Both sides equal \\(-9\\).",
+      "LHS \\(= 1\\), RHS \\(= 9\\)."
+    ],
+    "options": [
+      "LHS \\(= |-4-5| = 9\\), RHS \\(= |5-(-4)| = 9\\); equal.",
+      "LHS \\(= -9\\), RHS \\(= 9\\); not equal.",
+      "Both sides equal \\(-9\\).",
+      "LHS \\(= 1\\), RHS \\(= 9\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into both sides.",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "explanation": "LHS: \\(|-4-5| = |-9| = 9\\). RHS: \\(|5-(-4)| = |9| = 9\\).",
+        "workingOut": "\\(|x-5| = 9 = |5-x|\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "LHS",
-        "workingOut": "\\(|-4-5| = |-9| = 9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "RHS",
-        "workingOut": "\\(|5-(-4)| = |9| = 9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = |-9| = 9. RHS = |9| = 9.\\)",
+        "explanation": "Equal, identity holds.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = 9\\)",
         "graphData": null
       }
     ],
@@ -11554,47 +11345,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(x \\le |x|\\) is true when \\(x = -4\\).",
-    "a": "LHS = -4. RHS = 4. -4 <= 4.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(-4\\). RHS: \\(|-4| = 4\\). Since \\(-4 \\le 4\\), the statement is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(x \\le |x|\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "3",
+    "opts": [
+      "\\(-4 \\le |-4|\\) becomes \\(-4 \\le -4\\) only.",
+      "\\(-4 \\le 4\\) is false.",
+      "\\(|-4| = -4\\), so the inequality fails.",
+      "\\(-4 \\le |-4|\\) becomes \\(-4 \\le 4\\), which is true."
+    ],
+    "options": [
+      "\\(-4 \\le |-4|\\) becomes \\(-4 \\le -4\\) only.",
+      "\\(-4 \\le 4\\) is false.",
+      "\\(|-4| = -4\\), so the inequality fails.",
+      "\\(-4 \\le |-4|\\) becomes \\(-4 \\le 4\\), which is true."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into \\(x \\le |x|\\).",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "explanation": "Right side: \\(|-4| = 4\\). Compare \\(-4 \\le 4\\).",
+        "workingOut": "\\(-4 \\le 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(-4 \\le |-4| \\implies -4 \\le 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = -4. RHS = 4. -4 <= 4.\\)",
+        "explanation": "True, so the inequality holds for this value.",
+        "workingOut": "\\(\\text{True}\\)",
         "graphData": null
       }
     ],
@@ -11604,47 +11386,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-6f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(-|x| \\le x\\) is true when \\(x = -4\\).",
-    "a": "LHS = -4. RHS = -4. -4 <= -4.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(-|-4| = -4\\). RHS: \\(-4\\). Since \\(-4 \\le -4\\), the statement is true.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(-|x| \\le x\\) is true when \\(x = -4\\). Which evaluation is correct?",
+    "a": "1",
+    "opts": [
+      "\\(-4 \\le -4\\) is false.",
+      "\\(-|-4| \\le -4\\) becomes \\(-4 \\le -4\\), which is true.",
+      "LHS is \\(4\\), so \\(4 \\le -4\\).",
+      "The inequality never holds for negative \\(x\\)."
+    ],
+    "options": [
+      "\\(-4 \\le -4\\) is false.",
+      "\\(-|-4| \\le -4\\) becomes \\(-4 \\le -4\\), which is true.",
+      "LHS is \\(4\\), so \\(4 \\le -4\\).",
+      "The inequality never holds for negative \\(x\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -4\\) into \\(-|x| \\le x\\).",
+        "workingOut": "\\(x = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "explanation": "LHS: \\(-|-4| = -4\\). Compare \\(-4 \\le -4\\).",
+        "workingOut": "\\(-4 \\le -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(-|-4| \\le -4 \\implies -4 \\le -4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = -4. RHS = -4. -4 <= -4.\\)",
+        "explanation": "True (equality is allowed by \\(\\le\\)).",
+        "workingOut": "\\(\\text{True}\\)",
         "graphData": null
       }
     ],
@@ -11654,47 +11427,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7a",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x| = x\\) is false when \\(x = -3\\).",
-    "a": "LHS = 3, RHS = -3.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-3| = 3\\). RHS: \\(-3\\). Since \\(3 \\neq -3\\), the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x| = x\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "2",
+    "opts": [
+      "Both sides equal \\(-3\\).",
+      "Both sides equal \\(3\\).",
+      "LHS \\(= 3\\), RHS \\(= -3\\); \\(3 \\neq -3\\), so false.",
+      "The equation holds for all real \\(x\\)."
+    ],
+    "options": [
+      "Both sides equal \\(-3\\).",
+      "Both sides equal \\(3\\).",
+      "LHS \\(= 3\\), RHS \\(= -3\\); \\(3 \\neq -3\\), so false.",
+      "The equation holds for all real \\(x\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\) into \\(|x| = x\\).",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "explanation": "LHS: \\(|-3| = 3\\). RHS: \\(-3\\).",
+        "workingOut": "\\(3 \\neq -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-3| = 3 \\neq -3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "explanation": "Sides differ, so the statement is false for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
@@ -11704,47 +11468,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7b",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|-x| = x\\) is false when \\(x = -3\\).",
-    "a": "LHS = 3, RHS = -3.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-(-3)| = |3| = 3\\). RHS: \\(-3\\). Since \\(3 \\neq -3\\), the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|-x| = x\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "0",
+    "opts": [
+      "LHS \\(= |-(-3)| = 3\\), RHS \\(= -3\\); not equal.",
+      "LHS \\(= 3\\), RHS \\(= 3\\).",
+      "LHS \\(= -3\\), RHS \\(= -3\\).",
+      "Always true for negative \\(x\\)."
+    ],
+    "options": [
+      "LHS \\(= |-(-3)| = 3\\), RHS \\(= -3\\); not equal.",
+      "LHS \\(= 3\\), RHS \\(= 3\\).",
+      "LHS \\(= -3\\), RHS \\(= -3\\).",
+      "Always true for negative \\(x\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\) into \\(|-x| = x\\).",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "explanation": "LHS: \\(|-(-3)| = 3\\). RHS: \\(-3\\).",
+        "workingOut": "\\(3 \\neq -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-(-3)| = 3 \\neq -3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 3, RHS = -3.\\)",
+        "explanation": "False for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
@@ -11754,47 +11509,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7c",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x + 2| = |x| + 2\\) is false when \\(x = -3\\).",
-    "a": "LHS = 1, RHS = 5.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-3 + 2| = |-1| = 1\\). RHS: \\(|-3| + 2 = 3 + 2 = 5\\). Since \\(1 \\neq 5\\), the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x + 2| = |x| + 2\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "1",
+    "opts": [
+      "Both sides equal 1.",
+      "LHS \\(= |-3+2| = 1\\), RHS \\(= 3+2 = 5\\); \\(1 \\neq 5\\).",
+      "Both sides equal 5.",
+      "LHS \\(= 5\\), RHS \\(= 1\\)."
+    ],
+    "options": [
+      "Both sides equal 1.",
+      "LHS \\(= |-3+2| = 1\\), RHS \\(= 3+2 = 5\\); \\(1 \\neq 5\\).",
+      "Both sides equal 5.",
+      "LHS \\(= 5\\), RHS \\(= 1\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\).",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "explanation": "LHS: \\(|-3+2| = 1\\). RHS: \\(|-3|+2 = 5\\).",
+        "workingOut": "\\(1 \\neq 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-3+2| = 1, |-3|+2 = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 1, RHS = 5.\\)",
+        "explanation": "False for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
@@ -11804,47 +11550,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7d",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x + 1| = x + 1\\) is false when \\(x = -3\\).",
-    "a": "LHS = 2, RHS = -2.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-3 + 1| = |-2| = 2\\). RHS: \\(-3 + 1 = -2\\). Since \\(2 \\neq -2\\), the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x + 1| = x + 1\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "3",
+    "opts": [
+      "Both sides equal 2.",
+      "Both sides equal \\(-2\\).",
+      "LHS \\(= -2\\), RHS \\(= 2\\).",
+      "LHS \\(= 2\\), RHS \\(= -2\\); not equal."
+    ],
+    "options": [
+      "Both sides equal 2.",
+      "Both sides equal \\(-2\\).",
+      "LHS \\(= -2\\), RHS \\(= 2\\).",
+      "LHS \\(= 2\\), RHS \\(= -2\\); not equal."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\).",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "explanation": "LHS: \\(|-3+1| = 2\\). RHS: \\(-3+1 = -2\\).",
+        "workingOut": "\\(2 \\neq -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-3+1| = 2, -3+1 = -2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 2, RHS = -2.\\)",
+        "explanation": "False for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
@@ -11854,47 +11591,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7e",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x - 1| < |x| - 1\\) is false when \\(x = -3\\).",
-    "a": "LHS = 4, RHS = 2. 4 is not < 2.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-3 - 1| = |-4| = 4\\). RHS: \\(|-3| - 1 = 3 - 1 = 2\\). Since 4 is not less than 2, the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x - 1| < |x| - 1\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "0",
+    "opts": [
+      "LHS \\(= 4\\), RHS \\(= 2\\); \\(4 \\not< 2\\), so the strict inequality is false.",
+      "\\(4 < 2\\) is true.",
+      "Both sides equal 4.",
+      "Both sides equal 2."
+    ],
+    "options": [
+      "LHS \\(= 4\\), RHS \\(= 2\\); \\(4 \\not< 2\\), so the strict inequality is false.",
+      "\\(4 < 2\\) is true.",
+      "Both sides equal 4.",
+      "Both sides equal 2."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\) into the inequality.",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "explanation": "LHS: \\(|-3-1| = 4\\). RHS: \\(|-3|-1 = 2\\). Is \\(4 < 2\\)? No.",
+        "workingOut": "\\(4 \\not< 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-3-1| = 4, |-3|-1 = 2. 4 \\not< 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 4, RHS = 2. 4 is not < 2.\\)",
+        "explanation": "The claimed inequality is false for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
@@ -11904,47 +11632,38 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-7f",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "q": "Show that \\(|x|^3 = x^3\\) is false when \\(x = -3\\).",
-    "a": "LHS = 27, RHS = -27.",
-    "opts": [],
-    "h": "Substitute the value.",
-    "s": "LHS: \\(|-3|^3 = 3^3 = 27\\). RHS: \\((-3)^3 = -27\\). Since \\(27 \\neq -27\\), the statement is false.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "q": "Show that \\(|x|^3 = x^3\\) is false when \\(x = -3\\). Which evaluation is correct?",
+    "a": "2",
+    "opts": [
+      "Both sides equal 27.",
+      "Both sides equal \\(-27\\).",
+      "LHS \\(= 27\\), RHS \\(= -27\\); not equal.",
+      "LHS \\(= -27\\), RHS \\(= 27\\)."
+    ],
+    "options": [
+      "Both sides equal 27.",
+      "Both sides equal \\(-27\\).",
+      "LHS \\(= 27\\), RHS \\(= -27\\); not equal.",
+      "LHS \\(= -27\\), RHS \\(= 27\\)."
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
+        "explanation": "Substitute \\(x = -3\\).",
+        "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "explanation": "LHS: \\(|-3|^3 = 3^3 = 27\\). RHS: \\((-3)^3 = -27\\).",
+        "workingOut": "\\(27 \\neq -27\\)",
         "graphData": null
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate sides.",
-        "workingOut": "\\(|-3|^3 = 27, (-3)^3 = -27\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(LHS = 27, RHS = -27.\\)",
+        "explanation": "False for this value.",
+        "workingOut": "\\(\\text{False}\\)",
         "graphData": null
       }
     ],
