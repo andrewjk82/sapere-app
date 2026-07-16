@@ -13,7 +13,10 @@
     "sync-seeds": "node scratch/dump_db_to_seeds.js",
     "seed": "node --import ./scripts/extResolve.mjs scratch/seed.js",
     "validate-seeds": "node --import ./scripts/extResolve.mjs scripts/validateSeeds.mjs",
-    "test:mc-shuffle": "node scripts/testMcOptionShuffle.mjs"
+    "test:mc-shuffle": "node scripts/testMcOptionShuffle.mjs",
+    "test:mc-guard": "node scripts/checkMcShuffleUsage.mjs",
+    "test:mc": "npm run test:mc-shuffle && npm run test:mc-guard",
+    "audit:mc-seeds": "node --import ./scripts/extResolve.mjs scripts/auditMcSeedAnswers.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

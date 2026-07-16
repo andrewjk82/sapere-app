@@ -12,6 +12,7 @@ import MathView from '../MathView';
 import MathInput from '../MathInput';
 import ChallengeSketchBoard from '../challenge/ChallengeSketchBoard';
 import { gradeQuestion } from '../../utils/answerMatching';
+import { prepareShuffledMcOptions, gradeMcSelection, resolveCorrectOptionText } from '../../utils/mcOptionShuffle';
 import { parseSolutionSteps } from '../../utils/solutionSteps';
 import { MATH_SYMBOLS } from '../../utils/challengeUtils';
 
@@ -26,13 +27,28 @@ const shuffleArray = (arr) => {
   return a;
 };
 
+// Shuffle MC options via the shared helper, which resolves the answer to TEXT
+// (`_shuffledAnswer`) *before* reordering. The old code remapped `q.answer` as
+// an index while grading read `q.a` — so seeds storing the key in `a` were
+// graded against a stale pre-shuffle position. It also assumed any integer was
+// an index, failing every question whose answer is a literal number.
+// See src/utils/mcOptionShuffle.js.
 const shuffleOptions = (q) => {
   if (!q.options?.length || q.type === 'short_answer') return q;
-  const order = shuffleArray(q.options.map((_, i) => i));
-  const newOptions = order.map(i => q.options[i]);
-  const correctIdx = Number(q.answer);
-  const newAnswer = Number.isInteger(correctIdx) ? String(order.indexOf(correctIdx)) : q.answer;
-  return { ...q, options: newOptions, answer: newAnswer };
+  const next = { ...q };
+  next.options = prepareShuffledMcOptions(next);
+  return next;
+};
+
+// MC picks are stored as the index into the displayed (shuffled) list; resolve
+// back to text for grading. '' / null (timeout) must not resolve to option 0.
+const optionTextAt = (opts, idx) => {
+  if (idx === '' || idx === null || idx === undefined) return '';
+  const i = Number(idx);
+  if (!Number.isInteger(i)) return '';
+  const opt = opts?.[i];
+  if (opt === undefined || opt === null) return '';
+  return typeof opt === 'string' ? opt : (opt.text ?? '');
 };
 
 const useViewportWidth = () => {
@@ -76,11 +92,13 @@ const SolutionSteps = ({ question, userAnswer, isCorrect }) => {
   useEffect(() => { setRevealedSteps(0); }, [question?.id]);
 
   const isMC = question?.options?.length > 0 && question.type !== 'short_answer';
+  // Resolve to option TEXT — indexing the shuffled list with the raw answer
+  // showed students the wrong "correct answer" (and objects for image options).
   const correctDisplay = isMC
-    ? (question.options?.[Number(question.answer)] ?? String(question.answer))
+    ? (resolveCorrectOptionText(question) || String(question.answer ?? ''))
     : String(question.answer ?? '');
   const userDisplay = isMC
-    ? (question.options?.[Number(userAnswer)] ?? String(userAnswer ?? '—'))
+    ? (optionTextAt(question.options, userAnswer) || '—')
     : String(userAnswer ?? '—');
 
   return (
@@ -381,7 +399,9 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
       showToast('Select an answer first.', 'info'); return;
     }
     const question = { ...q, question: q.q || q.question, answer: q.a || q.answer };
-    const { correct } = gradeQuestion(question, userAnswer);
+    const correct = isMC
+      ? gradeMcSelection(q, optionTextAt(q.options, userAnswer), userAnswer, q.options || [])
+      : gradeQuestion(question, userAnswer).correct;
     const timedOut = forcedAnswer === '';
     setLastCorrect(correct);
     setAnswers(prev => [...prev, { userAnswer, correct, timedOut, questionId: q.id, questionText: q.q || q.question }]);

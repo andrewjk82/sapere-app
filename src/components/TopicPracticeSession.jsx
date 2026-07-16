@@ -32,6 +32,12 @@ import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import MathView from './MathView';
 import { answersMatch } from '../utils/answerMatching';
+import {
+  prepareShuffledMcOptions,
+  isDisplayedOptionCorrect,
+  gradeMcSelection,
+  resolveCorrectOptionText,
+} from '../utils/mcOptionShuffle';
 import MathInput from './MathInput';
 import ChallengeSketchBoard from './challenge/ChallengeSketchBoard';
 import LessonPlayer from './lessons/LessonPlayer';
@@ -49,36 +55,41 @@ const shuffleArray = (arr) => {
   return a;
 };
 
-// Shuffle a multiple-choice question's options and remap the answer index so
-// the correct option follows its new position. Sub-question MC options are
-// shuffled too. Non-MC questions are returned unchanged.
+// Shuffle a multiple-choice question's options via the shared helper, which
+// resolves the answer to TEXT (`_shuffledAnswer`) *before* reordering. Never
+// remap a seed answer index onto the shuffled list: "2" may be the literal
+// option value rather than a position, and guessing wrong marks the wrong
+// option green and fails the student. See src/utils/mcOptionShuffle.js.
+// Sub-question MC options are shuffled too. Non-MC questions pass through.
 const shuffleQuestionOptions = (q) => {
   const isMCQ = (qq) =>
     (qq.options?.length > 0) && qq.type !== 'short_answer' && qq.type !== 'fill_blank';
 
-  const remap = (opts, answer) => {
-    if (!opts || opts.length < 2) return { options: opts, answer };
-    const order = shuffleArray(opts.map((_, i) => i));
-    const newOptions = order.map((i) => opts[i]);
-    const correctIdx = Number(answer);
-    const newAnswer = Number.isInteger(correctIdx) ? String(order.indexOf(correctIdx)) : answer;
-    return { options: newOptions, answer: newAnswer };
-  };
-
-  let next = { ...q };
+  const next = { ...q };
   if (!q.subQuestions?.length && isMCQ(q)) {
-    const { options, answer } = remap(q.options, q.answer);
-    next.options = options;
-    next.answer = answer;
+    next.options = prepareShuffledMcOptions(next);
   }
   if (q.subQuestions?.length) {
     next.subQuestions = q.subQuestions.map((sq) => {
       if (sq.type !== 'multiple_choice' || !(sq.options?.length > 1)) return sq;
-      const { options, answer } = remap(sq.options, sq.answer);
-      return { ...sq, options, answer };
+      const nextSq = { ...sq };
+      nextSq.options = prepareShuffledMcOptions(nextSq);
+      return nextSq;
     });
   }
   return next;
+};
+
+// Student MC picks are stored as the index into the *displayed* (shuffled)
+// list. Resolve that back to option text for grading — an unanswered question
+// ('' / null) must never resolve to option 0.
+const optionTextAt = (opts, idx) => {
+  if (idx === '' || idx === null || idx === undefined) return '';
+  const i = Number(idx);
+  if (!Number.isInteger(i)) return '';
+  const opt = opts?.[i];
+  if (opt === undefined || opt === null) return '';
+  return typeof opt === 'string' ? opt : (opt.text ?? '');
 };
 
 // Small viewport-width hook so the quiz can switch between the side-by-side
@@ -117,14 +128,18 @@ const gradeQuestion = (q, userAnswer) => {
     const subs = q.subQuestions;
     const correct = subs.filter((sq, i) => {
       const ua = userAnswer?.[sq.id ?? i] ?? '';
-      if (sq.type === 'multiple_choice') return String(ua) === String(sq.answer);
+      if (sq.type === 'multiple_choice') {
+        const opts = Array.isArray(sq.options) ? sq.options : [];
+        return gradeMcSelection(sq, optionTextAt(opts, ua), ua, opts);
+      }
       return answersMatch(String(ua), String(sq.answer ?? ''));
     });
     return correct.length === subs.length;
   }
   if (!q.answer && q.answer !== 0) return false;
   if (q.type === 'multiple_choice' || (q.options?.length && q.type !== 'short_answer' && q.type !== 'fill_blank')) {
-    return String(userAnswer) === String(q.answer);
+    const opts = Array.isArray(q.options) ? q.options : [];
+    return gradeMcSelection(q, optionTextAt(opts, userAnswer), userAnswer, opts);
   }
   if (q.type === 'fill_blank') {
     const blanks = q.blanks || [];
@@ -652,7 +667,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             {(q.options || []).map((opt, i) => {
               const optText = typeof opt === 'string' ? opt : opt.text;
               const sel = userAnswer === String(i);
-              const correct = submitted && String(i) === String(q.answer);
+              const correct = submitted && isDisplayedOptionCorrect(q, q.options || [], i);
               const wrong = submitted && sel && !correct;
               return (
                 <motion.button
@@ -692,7 +707,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             {(q.subQuestions || []).map((sq, i) => {
               const key = sq.id ?? i;
               const val = userAnswer?.[key] ?? '';
-              const sqCorrect = submitted && answersMatch(String(val), String(sq.answer ?? ''));
+              const sqCorrect = submitted && (sq.type === 'multiple_choice'
+                ? gradeMcSelection(sq, optionTextAt(sq.options || [], val), val, sq.options || [])
+                : answersMatch(String(val), String(sq.answer ?? '')));
               const sqWrong = submitted && !sqCorrect;
               return (
                 <div key={i} style={{ padding: '16px 18px', borderRadius: '14px', background: '#f8fafc', border: `2px solid ${submitted ? (sqCorrect ? '#10b981' : '#f43f5e') : '#e2e8f0'}` }}>
@@ -707,7 +724,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                       {(sq.options || []).map((opt, oi) => {
                         const optText = typeof opt === 'string' ? opt : opt.text;
                         const selO = val === String(oi);
-                        const correctO = submitted && String(oi) === String(sq.answer);
+                        const correctO = submitted && isDisplayedOptionCorrect(sq, sq.options || [], oi);
                         const wrongO = submitted && selO && !correctO;
                         return (
                           <button
@@ -961,7 +978,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                 </div>
                 {!isCorrect && q?.answer != null && (
                   <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#9f1239', marginTop: '2px' }}>
-                    Answer: <MathView content={String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
+                    {/* Never print the raw answer — for MC it is often a 0-based
+                        index, which showed students "Answer: 2". */}
+                    Answer: <MathView content={resolveCorrectOptionText(q) || String(q.answer)} style={{ display: 'inline', fontWeight: 800 }} />
                   </div>
                 )}
               </div>

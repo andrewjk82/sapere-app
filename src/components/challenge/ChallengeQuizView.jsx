@@ -440,9 +440,11 @@ const ChallengeQuizView = ({
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oIdx) => {
                         const isSelected = subAnswers[sq.id || sIdx] === (typeof opt === 'string' ? opt : opt.text);
-                        const isCorrectAnswer = step === 'feedback' && (
-                          (sq.isManual && String(oIdx) === String(sq.answer)) || (!sq.isManual && String(typeof opt === 'string' ? opt : opt.text) === String(sq.answer))
-                        );
+                        // Sub-question options are not shuffled today, so the raw
+                        // index still resolves — but let the shared helper decide
+                        // so this stays correct if they ever are.
+                        const isCorrectAnswer = step === 'feedback'
+                          && isDisplayedOptionCorrect(sq, sq.options || [], oIdx);
                         const isWrong = step === 'feedback' && isSelected && !isCorrectAnswer;
 
                         return (

@@ -40,6 +40,32 @@ import HscTypePractice from './hsc/HscTypePractice';
 import { seedChapterQuestions } from '../services/chapterSeeder';
 import { readAggregatedCounts, writeAggregatedCounts } from '../services/questionCountsService';
 
+// ── MC seeding ─────────────────────────────────────────────────────────────
+// Seed options in AUTHORED order and return the correct option's index.
+//
+// These blocks used to shuffle here and store the resulting index:
+//   const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
+//   const correctIndex = shuffledOpts.indexOf(qData.a);   // -1 when not found!
+//   answer: correctIndex.toString()
+//
+// Two things were wrong. Seed-time shuffling is pointless — every quiz surface
+// shuffles at display time via src/utils/mcOptionShuffle.js — and `indexOf`
+// returning -1 wrote `answer: "-1"` to Firestore, permanently making the
+// question unanswerable: no option can ever match, so the student is marked
+// wrong whatever they pick. Throwing aborts before batch.commit(), so a bad
+// seed writes nothing rather than writing poison.
+const seedMcOptions = (opts, correctValue, label = 'question') => {
+  const options = [...(opts || [])];
+  const correctIndex = options.indexOf(correctValue);
+  if (correctIndex < 0) {
+    throw new Error(
+      `Seed aborted — correct answer ${JSON.stringify(correctValue)} is not among the options `
+      + `${JSON.stringify(options)} for "${String(label).slice(0, 60)}". Fix the seed data.`,
+    );
+  }
+  return { options, correctIndex };
+};
+
 // ── Chapter seed registry ──────────────────────────────────────────────────
 // Single source of truth for bulk question seeding. To add a new chapter:
 // create its seed file, import the array above, and add ONE entry here — a
@@ -704,8 +730,7 @@ const Curriculum = () => {
       
       SURDS_QUESTIONS_Y11A.forEach(qData => {
         const docRef = doc(collRef);
-        const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
-        const correctIndex = shuffledOpts.indexOf(qData.a);
+        const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
 
         addBatch.set(docRef, {
           chapterId: 'y11a-2',
@@ -719,7 +744,7 @@ const Curriculum = () => {
           difficulty: 'medium',
           timeLimit: 120,
           type: 'multiple_choice',
-          options: shuffledOpts.map(o => ({ text: o, imageUrl: "" })),
+          options: seededOpts.map(o => ({ text: o, imageUrl: "" })),
           answer: correctIndex.toString(),
           hint: qData.h,
           solution: qData.s,
@@ -814,9 +839,8 @@ const Curriculum = () => {
         let answerField = "";
         
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: "" }));
           answerField = correctIndex.toString();
         } else {
           optionsField = [];
@@ -922,9 +946,8 @@ const Curriculum = () => {
         let answerField = "";
         
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: "" }));
           answerField = correctIndex.toString();
         } else {
           optionsField = [];
@@ -1104,9 +1127,8 @@ const Curriculum = () => {
         let answerField = "";
         
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...qData.opts].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: "" }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: "" }));
           answerField = correctIndex.toString();
         } else {
           optionsField = [];
@@ -1193,9 +1215,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1353,9 +1374,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1419,9 +1439,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1482,9 +1501,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1545,9 +1563,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1608,9 +1625,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1672,9 +1688,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1736,9 +1751,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1800,9 +1814,8 @@ const Curriculum = () => {
         let answerField = qData.a || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1865,9 +1878,8 @@ const Curriculum = () => {
         let answerField = qData.a || qData.solution || '';
 
         if (isMC) {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a || qData.solution);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a || qData.solution, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 
@@ -1928,9 +1940,8 @@ const Curriculum = () => {
         let answerField = qData.a || qData.solution || '';
 
         if (qData.type === 'multiple_choice') {
-          const shuffledOpts = [...(qData.opts || [])].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffledOpts.indexOf(qData.a || qData.solution);
-          optionsField = shuffledOpts.map(o => ({ text: o, imageUrl: '' }));
+          const { options: seededOpts, correctIndex } = seedMcOptions(qData.opts, qData.a || qData.solution, qData.q);
+          optionsField = seededOpts.map(o => ({ text: o, imageUrl: '' }));
           answerField = correctIndex.toString();
         }
 

@@ -9,10 +9,16 @@
  *   1) the real correct option (text match), and
  *   2) whatever sits at the old index after shuffle.
  *
- * Rule: after shuffle, only use:
- *   - `_shuffledAnswer` (correct option TEXT), and/or
- *   - `_shuffledAnswerIndex` (index in the *shuffled* display order).
- * Never apply the raw seed index to the displayed order.
+ * Rule: an index answers "which option did the author mean?" and nothing else.
+ * It is resolved ONCE, at prepare time, into `_shuffledAnswer` (the correct
+ * option TEXT). From then on highlight and grading compare text only — no index
+ * is ever applied to a displayed list. `_shuffledAnswerIndex` is informational.
+ *
+ * Corollary: a question carrying two options that read the same ("4"/"4") or
+ * mean the same ("0.5"/"1/2") lights up both, and both grade correct. That is
+ * broken data — 444 seed questions have duplicate options — but the student
+ * picked a correct answer and must not lose a mark for our typo. Two greens on
+ * *equal* options is honest; a green on an *unrelated* option is the bug.
  *
  * All quiz surfaces that shuffle MC options MUST use these helpers.
  *
@@ -77,6 +83,13 @@ export function resolveCorrectOptionIndex(question, options = optionList(questio
     if (Number.isInteger(idx) && idx >= 0 && idx < options.length) return idx;
   }
   const text = resolveCorrectOptionText(question, options);
+  // Exact text wins over mathematical equivalence: with options like
+  // ["0.5", "1/2", …] answersMatch() is true for BOTH, and taking the first
+  // match would anchor the answer to the wrong option.
+  // Compare in display space — toDisplayText() rewrites "1/2" to "$\frac{1}{2}$".
+  const target = optionText(text).trim();
+  const exact = options.findIndex((o) => optionText(o).trim() === target);
+  if (exact >= 0) return exact;
   return options.findIndex((o) => answersMatch(optionText(o), text));
 }
 
@@ -119,6 +132,14 @@ export function prepareShuffledMcOptions(question, opts = {}) {
 /**
  * Whether the option at `displayIndex` is the correct choice in the
  * *currently displayed* (possibly shuffled) list.
+ *
+ * Post-shuffle this is decided by TEXT only — never by an index. An index is a
+ * position, and a position means nothing in a list it wasn't computed for.
+ * Consequence: when a question carries two options that read the same ("4"/"4")
+ * or are the same value ("0.5"/"1/2"), both light up and both grade correct.
+ * That question is broken data, but the student picked a correct answer and
+ * must not be punished for our typo. What must never happen is an *unrelated*
+ * option lighting up, which is what applying a stale index caused.
  */
 export function isDisplayedOptionCorrect(question, displayOptions, displayIndex) {
   if (!question || !displayOptions?.length) return false;
@@ -128,12 +149,6 @@ export function isDisplayedOptionCorrect(question, displayOptions, displayIndex)
   const shuffled = question._shuffledAnswer !== undefined && question._shuffledAnswer !== null;
 
   if (shuffled) {
-    if (
-      question._shuffledAnswerIndex != null
-      && Number(question._shuffledAnswerIndex) === displayIndex
-    ) {
-      return true;
-    }
     return answersMatch(optText, question._shuffledAnswer);
   }
 
@@ -158,15 +173,14 @@ export function gradeMcSelection(question, optionTextIn, optIdx, displayOptions)
     ? question._shuffledAnswer
     : resolveCorrectOptionText(question, opts);
 
+  // Same rule as the highlight: text decides. A student who picked an option
+  // reading exactly like the answer is correct, whichever copy they tapped.
   if (answersMatch(optionTextIn, correctText)) return true;
 
-  if (optIdx != null && optIdx !== '') {
-    const i = Number(optIdx);
-    if (shuffled && question._shuffledAnswerIndex != null) {
-      return i === Number(question._shuffledAnswerIndex);
-    }
-    if (!shuffled && isOptionIndexAnswer(question.answer ?? question.a, opts)) {
-      return i === Number(String(question.answer ?? question.a).trim());
+  // Not shuffled: a raw index answer still refers to the untouched list.
+  if (!shuffled && optIdx != null && optIdx !== '') {
+    if (isOptionIndexAnswer(question.answer ?? question.a, opts)) {
+      return Number(optIdx) === Number(String(question.answer ?? question.a).trim());
     }
   }
   return false;

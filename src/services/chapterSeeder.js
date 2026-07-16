@@ -3,6 +3,7 @@ import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, wh
 import { recountIds } from './questionCountsService';
 import { applySeedToIndexes } from './questionIndexService';
 import { validateSeedQuestion } from '../utils/latexValidate';
+import { answersMatch } from '../utils/answerMatching';
 
 // Write-time LaTeX gate: a question whose rendered math KaTeX cannot parse must
 // not reach Firestore (it shows as a broken/red box or raw source to students).
@@ -19,6 +20,70 @@ const validateRawQuestion = (raw) => {
   } catch (_) {
     return []; // never let the validator itself break a seed run
   }
+};
+
+const rawOptionText = (opt) => (typeof opt === 'object' && opt !== null ? opt.text : opt);
+
+// Which option does the seed's answer refer to? `a` is either a 0-based index
+// into the AUTHORED option order or the option's own text. Returns -1 when it
+// refers to nothing — callers MUST treat that as broken and never fall back to
+// index 0. See mcAnswerErrors below.
+const resolveSeedCorrectIndex = (rawOpts, rawCorrect) => {
+  let correct = rawCorrect;
+  if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
+    const idx = parseInt(correct, 10);
+    if (idx >= 0 && idx < rawOpts.length) {
+      correct = rawOptionText(rawOpts[idx]);
+    }
+  }
+  return rawOpts.findIndex(
+    (opt) => String(rawOptionText(opt)).trim() === String(correct).trim(),
+  );
+};
+
+// Write-time ANSWER gate — the counterpart to the LaTeX gate above.
+//
+// This used to be `answer = String(correctIndex >= 0 ? correctIndex : 0)`: when
+// the seed's answer matched no option (e.g. a: "1.56%" against an option
+// written `\(1.56\%\)`), the seeder silently declared the FIRST option correct.
+// Students who picked the real answer were marked wrong, and the wrong option
+// lit up green — with no error anywhere. Broken LaTeX at least shows up on the
+// page; a wrong answer key is invisible until a student loses a mark for it.
+// Same contract as bad LaTeX: skip the question and report it.
+const mcAnswerErrors = (raw) => {
+  const errors = [];
+  const check = (q, label) => {
+    if (q?.type !== 'multiple_choice') return;
+    const rawOpts = q.opts || q.options || [];
+    if (rawOpts.length === 0) return;
+    const rawCorrect = q.a ?? q.answer ?? q.solution;
+    const idx = resolveSeedCorrectIndex(rawOpts, rawCorrect);
+    if (idx < 0) {
+      errors.push({
+        field: label,
+        error: `correct answer ${JSON.stringify(rawCorrect)} matches none of the options `
+          + `${JSON.stringify(rawOpts.map(rawOptionText))}`,
+      });
+      return;
+    }
+    // The correct option must be gradeable. A value that cannot even match
+    // itself — empty text, or math that strips to nothing like `\(\)` — can
+    // never match a student's pick, so the question is unanswerable however
+    // they answer it. (No seed uses image-only options; if that changes, exempt
+    // options carrying an imageUrl here.)
+    const correctText = rawOptionText(rawOpts[idx]);
+    if (!answersMatch(correctText, correctText)) {
+      errors.push({
+        field: label,
+        error: `correct option ${JSON.stringify(correctText)} is empty/ungradeable — no answer can ever match it`,
+      });
+    }
+  };
+  check(raw, 'answer');
+  if (Array.isArray(raw?.subQuestions)) {
+    raw.subQuestions.forEach((sq, i) => check(sq, `subQuestions[${i}].answer`));
+  }
+  return errors;
 };
 
 // djb2-style hash -- fast, zero-dependency.
@@ -99,26 +164,22 @@ const mapSeedQuestion = (raw, chapter) => {
   let answer = raw.a ?? raw.answer ?? raw.solution ?? '';
 
   if (isMC) {
+    // Authored order — every quiz surface shuffles at display time via
+    // src/utils/mcOptionShuffle.js, so shuffling here bought nothing and made
+    // the stored index harder to reason about.
     const rawOpts = raw.opts || raw.options || [];
-    let correct = raw.a ?? raw.answer ?? raw.solution;
-    if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
-      const idx = parseInt(correct, 10);
-      if (idx >= 0 && idx < rawOpts.length) {
-        const correctOpt = rawOpts[idx];
-        correct = typeof correctOpt === 'object' && correctOpt !== null ? correctOpt.text : correctOpt;
-      }
+    const correctIndex = resolveSeedCorrectIndex(rawOpts, raw.a ?? raw.answer ?? raw.solution);
+    if (correctIndex < 0) {
+      // Unreachable: mcAnswerErrors() gates these out before we get here. If it
+      // ever is reached, fail the sync — writing "0" marks a wrong option correct.
+      throw new Error(`[seed] unresolvable MC answer for ${raw.id || '(no id)'} — refusing to write a guessed answer`);
     }
-    const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
-    const correctIndex = shuffled.findIndex((opt) => {
-      const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
-      return String(text).trim() === String(correct).trim();
-    });
-    options = shuffled.map((opt) => (
+    options = rawOpts.map((opt) => (
       typeof opt === 'object' && opt !== null
         ? { text: String(opt.text || ''), imageUrl: opt.imageUrl || '' }
         : { text: String(opt), imageUrl: '' }
     ));
-    answer = String(correctIndex >= 0 ? correctIndex : 0);
+    answer = String(correctIndex);
   }
 
   const resolvedTopicId = raw.topicId || chapter.topicId;
@@ -138,25 +199,16 @@ const mapSeedQuestion = (raw, chapter) => {
 
         if (isSqMC) {
           const rawOpts = sq.opts || sq.options || [];
-          let correct = sq.a ?? sq.answer ?? sq.solution;
-          if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
-            const idx = parseInt(correct, 10);
-            if (idx >= 0 && idx < rawOpts.length) {
-              const correctOpt = rawOpts[idx];
-              correct = typeof correctOpt === 'object' && correctOpt !== null ? correctOpt.text : correctOpt;
-            }
+          const correctIndex = resolveSeedCorrectIndex(rawOpts, sq.a ?? sq.answer ?? sq.solution);
+          if (correctIndex < 0) {
+            throw new Error(`[seed] unresolvable MC answer for sub-question ${sq.id || '(no id)'} — refusing to write a guessed answer`);
           }
-          const shuffled = [...rawOpts].sort(() => Math.random() - 0.5);
-          const correctIndex = shuffled.findIndex((opt) => {
-            const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
-            return String(text).trim() === String(correct).trim();
-          });
-          sqOptions = shuffled.map((opt) => (
+          sqOptions = rawOpts.map((opt) => (
             typeof opt === 'object' && opt !== null
               ? { text: String(opt.text || ''), imageUrl: opt.imageUrl || '' }
               : { text: String(opt), imageUrl: '' }
           ));
-          sqAnswer = String(correctIndex >= 0 ? correctIndex : 0);
+          sqAnswer = String(correctIndex);
         }
 
         return {
@@ -280,13 +332,13 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
     }
   }
 
-  // Validate and filter bad LaTeX
+  // Validate and filter bad LaTeX + unresolvable MC answers
   const invalid = [];
   const writable = seed.filter((raw) => {
-    const errs = validateRawQuestion(raw);
+    const errs = [...validateRawQuestion(raw), ...mcAnswerErrors(raw)];
     if (errs.length === 0) return true;
     errs.forEach((e) => invalid.push({ id: raw.id || '(no id)', field: e.field, error: e.error }));
-    console.warn(`[seed] skipping invalid LaTeX in ${chapter.topicId} id=${raw.id || '?'}:`, errs.map((e) => `${e.field}: ${e.error}`).join('; '));
+    console.warn(`[seed] skipping invalid question in ${chapter.topicId} id=${raw.id || '?'}:`, errs.map((e) => `${e.field}: ${e.error}`).join('; '));
     return false;
   });
 

@@ -13,6 +13,12 @@ import MathView from './MathView';
 import MathInput from './MathInput';
 import { MATH_SYMBOLS, notifyTeacherPendingReview } from '../utils/challengeUtils';
 import { gradeQuestion } from '../utils/answerMatching';
+import {
+  prepareShuffledMcOptions,
+  isDisplayedOptionCorrect,
+  gradeMcSelection,
+  resolveCorrectOptionText,
+} from '../utils/mcOptionShuffle';
 
 // Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
 const EXAM_QUICK_INSERTS = [
@@ -41,28 +47,28 @@ import {
   EXAM_PREP_NOTE_KIND,
 } from '../services/examPrepService';
 
-// Fisher–Yates shuffle (returns a new array).
-const shuffleArray = (arr) => {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
-
-// Shuffle a multiple-choice question's options and remap the answer index so
-// the correct option follows its new position. MC answers in Exam Prep are
-// stored/graded as the option index (see correctMc / gradeQuestion), so we keep
-// `answer` pointing at the correct option after the reorder. Non-MC questions
-// are returned unchanged.
+// Shuffle a multiple-choice question's options via the shared helper, which
+// resolves the answer to TEXT (`_shuffledAnswer`) *before* reordering. The old
+// code assumed any integer answer was a 0-based index and remapped it onto the
+// shuffled list — but calc/bank questions store the literal value ("2" meaning
+// two), so it marked an unrelated option correct and failed the real answer.
+// See src/utils/mcOptionShuffle.js. Non-MC questions are returned unchanged.
 const shuffleMcOptions = (q) => {
   if (q?.type !== 'multiple_choice' || !(q.options?.length > 1)) return q;
-  const order = shuffleArray(q.options.map((_, i) => i));
-  const newOptions = order.map((i) => q.options[i]);
-  const correctIdx = Number(q.answer);
-  const newAnswer = Number.isInteger(correctIdx) ? order.indexOf(correctIdx) : q.answer;
-  return { ...q, options: newOptions, answer: newAnswer };
+  const next = { ...q };
+  next.options = prepareShuffledMcOptions(next);
+  return next;
+};
+
+// Draft holds the index into the displayed (shuffled) list; resolve it back to
+// option text for grading. An unanswered question must not resolve to option 0.
+const optionTextAt = (opts, idx) => {
+  if (idx === '' || idx === null || idx === undefined) return '';
+  const i = Number(idx);
+  if (!Number.isInteger(i)) return '';
+  const opt = opts?.[i];
+  if (opt === undefined || opt === null) return '';
+  return typeof opt === 'string' ? opt : (opt.text ?? '');
 };
 
 const flattenChapters = (yearKey) => {
@@ -222,7 +228,10 @@ const QuizView = ({
   const submit = async () => {
     if (showFeedbackRef.current || showFeedback) return;
     const userAnswer = draft;
-    const { correct } = needsTeacher ? { correct: null } : gradeQuestion(q, userAnswer);
+    const gradeNow = () => (q.type === 'multiple_choice'
+      ? gradeMcSelection(q, optionTextAt(q.options, userAnswer), userAnswer, q.options || [])
+      : gradeQuestion(q, userAnswer).correct);
+    const correct = needsTeacher ? null : gradeNow();
 
     // 손글씨 캡처는 setShowFeedback(리렌더로 캔버스 언마운트 가능)보다 먼저.
     let answerImages = [];
@@ -311,7 +320,6 @@ const QuizView = ({
     return String(draft || '').trim() !== '';
   })();
 
-  const correctMc = q.type === 'multiple_choice' ? Number(q.answer) : null;
 
   const masteryPct = mastery.total > 0 ? Math.round((mastery.mastered / mastery.total) * 100) : 0;
 
@@ -489,7 +497,7 @@ const QuizView = ({
       {(q.options || []).map((opt, i) => {
         const optText = typeof opt === 'string' ? opt : opt.text;
         const selected = draft === i;
-        const isCorrect = showFeedback && i === correctMc;
+        const isCorrect = showFeedback && isDisplayedOptionCorrect(q, q.options || [], i);
         const isWrong = showFeedback && selected && !isCorrect;
         return (
           <button
@@ -603,7 +611,7 @@ const QuizView = ({
               <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#475569', marginTop: '2px' }}>
                 Correct answer: <MathView content={
                   q.type === 'multiple_choice'
-                    ? (typeof q.options?.[Number(q.answer)] === 'string' ? q.options[Number(q.answer)] : q.options?.[Number(q.answer)]?.text ?? String(q.answer))
+                    ? (resolveCorrectOptionText(q) || String(q.answer))
                     : String(q.answer)
                 } style={{ display: 'inline', color: '#15803d', fontWeight: 800 }} />
               </div>
@@ -846,7 +854,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
           <MathView
             content={
               q.type === 'multiple_choice'
-                ? (q.options?.[ans?.userAnswer] ?? '—')
+                ? (optionTextAt(q.options, ans?.userAnswer) || '—')
                 : (Array.isArray(ans?.userAnswer) ? ans.userAnswer.join(', ') : String(ans?.userAnswer ?? '—'))
             }
             style={{ fontSize: '1rem', fontWeight: 700, color: '#1e293b' }}
@@ -857,7 +865,7 @@ const ReviewView = ({ questions, answers, onDone }) => {
           <MathView
             content={
               q.type === 'multiple_choice'
-                ? (q.options?.[Number(q.answer)] ?? String(q.answer))
+                ? (resolveCorrectOptionText(q) || String(q.answer ?? ''))
                 : String(q.answer ?? '')
             }
             style={{ fontSize: '1rem', fontWeight: 700, color: '#166534' }}

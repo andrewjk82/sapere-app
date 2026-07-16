@@ -1960,9 +1960,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   const qData = q || questions.find(qq => qq.id === result.questionId);
                   if (!qData) return null;
 
+                  // Legacy records predate the stored `correct` flag. selectedAnswer
+                  // is option TEXT, so grade it as text — comparing it to a raw
+                  // index answer marked every old MC row wrong.
                   const isCorrect = typeof result?.correct === 'boolean'
                     ? result.correct
-                    : String(userAnswer) === String(qData.answer);
+                    : gradeMcSelection(qData, userAnswer, null, qData.options || []);
                   const questionText = toDisplayText(qData?.text || qData?.question, 'Question text unavailable');
                   const lazyWO = workingOutByIdx[idx];
                   const workingOutPages = getWorkingOutPages(lazyWO ? { ...result, ...lazyWO } : result);
@@ -2022,7 +2025,9 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                           {qData.subQuestions.map((sq, sIdx) => {
                             const sUserAnswer = userAnswer && typeof userAnswer === 'object' ? userAnswer[sq.id || sIdx] : '';
                             const sResult = result?.subResults?.[sIdx] || result?.subResults?.[sq.id];
-                            const sIsCorrect = typeof sResult?.correct === 'boolean' ? sResult.correct : String(sUserAnswer) === String(sq.answer);
+                            const sIsCorrect = typeof sResult?.correct === 'boolean'
+                              ? sResult.correct
+                              : gradeMcSelection(sq, sUserAnswer, null, sq.options || []);
 
                             return (
                               <div key={sIdx} style={{ padding: '16px', background: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0' }}>

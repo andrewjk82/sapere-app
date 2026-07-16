@@ -1,5 +1,49 @@
 # Sapere — project rules
 
+## Multiple-choice option shuffle (Daily Challenge / quiz)
+
+Seed/bank MC answers are often a **0-based index** (`"0"`…`"3"`). When options
+are shuffled for the student, grading and feedback must **never** treat that
+index as a position in the shuffled list — that marks **two** options green
+(the real correct choice by text + a wrong choice at the old index).
+
+**Required:** use `src/utils/mcOptionShuffle.js` only:
+
+- `prepareShuffledMcOptions(q)` — sets `_shuffledAnswer` + `_shuffledAnswerIndex`
+- `isDisplayedOptionCorrect(q, displayOptions, i)` — feedback highlight
+- `gradeMcSelection(q, optionText, optIdx, displayOptions)` — submit grading
+- `resolveCorrectOptionText(q)` — display the answer (never print raw `q.answer`;
+  for MC it is usually an index, which showed students "Answer: 2")
+
+Regression: `npm run test:mc` — unit tests **and** the repo guard. Must stay green.
+
+**Never hand-roll a shuffle.** Every screen that re-implemented it got the same
+thing wrong (2026-07, four copies):
+
+```js
+const correctIdx = Number(q.answer);            // ← "any integer is an index"
+const newAnswer  = order.indexOf(correctIdx);   // ← WRONG for answer "2" = the value two
+```
+
+That marks an unrelated option green *and* fails the student who picked
+correctly. `npm run test:mc-guard` fails the build on this idiom; do not
+allowlist your file, use the helper. `isOptionIndexAnswer()` is what decides
+index-vs-value, and it needs `isManual` to disambiguate a numeric answer that is
+also an option value ("2" among `["1","2","3","4"]`) — 335 seeds rely on it.
+
+**Never seed-time shuffle.** Every quiz surface shuffles at display time.
+Shuffling at write time adds nothing and only makes the stored index fragile.
+
+**Never guess an answer at write time.** `chapterSeeder.js` used to fall back to
+`answer = "0"` when the seed's answer matched no option — silently declaring the
+FIRST option correct. Broken LaTeX is visible; a wrong answer key is not. Bad MC
+answers are now skipped + reported like bad LaTeX. Audit the seed files (local,
+**zero Firestore reads**) with:
+
+```
+npm run audit:mc-seeds
+```
+
 ## Admin-SDK scripts that write to `questions` (tools/scripts/*)
 
 The client keeps four denormalized docs in sync incrementally; admin scripts
