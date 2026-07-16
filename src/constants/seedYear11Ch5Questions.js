@@ -8630,10 +8630,10 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "Show algebraically that the equation \\\\(y = mx\\\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin.",
     "a": 1,
     "opts": [
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to \\\\left(kx, \\\\frac{y}{k}\\\\right)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\).",
       "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(ky = m(kx)\\\\), which simplifies to \\\\(y = mx\\\\).",
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (x/k, y/k)\\\\), the equation becomes \\\\(y/k = m(x/k)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, y/k)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\)."
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to \\\\left(\\\\frac{x}{k}, \\\\frac{y}{k}\\\\right)\\\\), the equation becomes \\\\(\\\\frac{y}{k} = m\\\\left(\\\\frac{x}{k}\\\\right)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\)."
     ],
     "h": "An enlargement by a factor of \\\\(k\\\\) from the origin replaces \\\\(x\\\\) with \\\\(x/k\\\\) and \\\\(y\\\\) with \\\\(y/k\\\\).",
     "s": "Let the enlargement factor be \\\\(k\\\\). The transformation maps \\\\((x,y) \\to (kx, ky)\\\\). To find the new equation, we replace \\\\(x\\\\) with \\\\(\\frac{x}{k}\\\\) and \\\\(y\\\\) with \\\\(\\frac{y}{k}\\\\). \\nSubstituting these into \\\\(y = mx\\\\): \\n\\\\(\\frac{y}{k} = m(\\frac{x}{k})\\\\). \\nMultiplying both sides by \\\\(k\\\\) gives: \\n\\\\(y = mx\\\\). \\nThe equation remains completely unchanged.",
@@ -8653,10 +8653,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to \\\\left(kx, \\\\frac{y}{k}\\\\right)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\).",
       "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(ky = m(kx)\\\\), which simplifies to \\\\(y = mx\\\\).",
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (x/k, y/k)\\\\), the equation becomes \\\\(y/k = m(x/k)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
-      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, y/k)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\)."
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to \\\\left(\\\\frac{x}{k}, \\\\frac{y}{k}\\\\right)\\\\), the equation becomes \\\\(\\\\frac{y}{k} = m\\\\left(\\\\frac{x}{k}\\\\right)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\)."
     ],
     "answer": null,
     "question": "Show algebraically that the equation \\\\(y = mx\\\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin."
