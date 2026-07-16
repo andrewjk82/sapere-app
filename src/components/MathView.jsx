@@ -16,7 +16,10 @@ const convertMarkdownTables = (str) => {
   if (typeof str !== 'string') return str;
   const tableLineRe = /^\s*\|.+\|\s*$/;
   const separatorRe = /^\s*\|[\s|:\-]+\|\s*$/;
-  const rawLines = str.split(/\\+n|\r?\n/);
+  // Split on real newlines or a lone "\n" escape — NOT TeX commands that
+  // start with \n (\neq, \ne, \nu, \nabla, \notin, …). Using /\\+n/ alone
+  // turned "\neq" into "eq" (domain keq −2 / range yeq0 in options).
+  const rawLines = str.split(/\r?\n|\\n(?![a-zA-Z])/);
   const out = [];
   let i = 0;
   while (i < rawLines.length) {
