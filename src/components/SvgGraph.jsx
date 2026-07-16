@@ -33,16 +33,28 @@ const C = {
   slate:  '#64748b',
 };
 
+const HEX_RE = /^#([0-9a-f]{3}|[0-9a-f]{6}|[0-9a-f]{8})$/i;
+
+/** Expand #rgb → #rrggbb for consistent matching. */
+const normalizeHex = (s) => {
+  if (!HEX_RE.test(s)) return s;
+  if (s.length === 4) {
+    return `#${s[1]}${s[1]}${s[2]}${s[2]}${s[3]}${s[3]}`.toLowerCase();
+  }
+  return s.toLowerCase();
+};
+
 const mapColor = (raw) => {
   if (!raw) return C.blue;
-  const s = String(raw).toLowerCase();
-  if (s === 'blue'   || s === '#3b82f6') return C.blue;
-  if (s === 'red'    || s === '#ef4444' || s === '#f43f5e') return C.red;
-  if (s === 'green'  || s === '#10b981' || s === '#22c55e') return C.green;
-  if (s === 'orange' || s === '#f59e0b') return C.orange;
-  if (s === 'purple' || s === '#8b5cf6') return C.purple;
-  if (s === 'slate'  || s === 'gray' || s === '#64748b' || s === '#94a3b8') return C.slate;
+  const s = normalizeHex(String(raw).toLowerCase().trim());
+  if (s === 'blue'   || s === '#3b82f6' || s === '#1d4ed8' || s === '#2563eb' || s === '#6366f1') return s.startsWith('#') ? s : C.blue;
+  if (s === 'red'    || s === '#ef4444' || s === '#f43f5e' || s === '#dc2626') return s.startsWith('#') ? s : C.red;
+  if (s === 'green'  || s === '#10b981' || s === '#22c55e' || s === '#15803d' || s === '#16a34a') return s.startsWith('#') ? s : C.green;
+  if (s === 'orange' || s === '#f59e0b' || s === '#d97706') return s.startsWith('#') ? s : C.orange;
+  if (s === 'purple' || s === '#8b5cf6' || s === '#7c3aed') return s.startsWith('#') ? s : C.purple;
+  if (s === 'slate'  || s === 'gray' || s === 'grey' || s === '#64748b' || s === '#94a3b8') return C.slate;
   if (s === 'black'  || s === '#000'  || s === '#000000') return C.axis;
+  // Preserve any other hex / named CSS color as-is (do not force blue).
   return raw;
 };
 
@@ -54,13 +66,28 @@ const CURVE_PALETTES = {
   purple: ['#8b5cf6', '#a78bfa', '#c4b5fd'],
 };
 
+/** Build a 3-stop gradient from a single hex (mid = base, ends slightly lightened via same). */
+const solidGradient = (hex) => {
+  const c = mapColor(hex);
+  return [c, c, c];
+};
+
+/**
+ * Map strokeColor (name or hex) → gradient stops.
+ * Named colours use the premium palette; arbitrary hex is preserved so
+ * multi-curve scripts (e.g. blue sin + green tan) stay distinguishable.
+ */
 const curveGradient = (raw) => {
-  const s = String(raw || '').toLowerCase();
-  if (s === 'red')    return CURVE_PALETTES.red;
-  if (s === 'green')  return CURVE_PALETTES.green;
-  if (s === 'orange') return CURVE_PALETTES.orange;
-  if (s === 'purple') return CURVE_PALETTES.purple;
-  return CURVE_PALETTES.blue; // default
+  const s = normalizeHex(String(raw || '').toLowerCase().trim());
+  if (!s) return CURVE_PALETTES.blue;
+  if (s === 'red'    || s === '#ef4444' || s === '#f43f5e' || s === '#dc2626') return CURVE_PALETTES.red;
+  if (s === 'green'  || s === '#10b981' || s === '#22c55e' || s === '#15803d' || s === '#16a34a') return CURVE_PALETTES.green;
+  if (s === 'orange' || s === '#f59e0b' || s === '#d97706') return CURVE_PALETTES.orange;
+  if (s === 'purple' || s === '#8b5cf6' || s === '#7c3aed') return CURVE_PALETTES.purple;
+  if (s === 'blue'   || s === '#3b82f6' || s === '#1d4ed8' || s === '#2563eb' || s === '#6366f1') return CURVE_PALETTES.blue;
+  if (HEX_RE.test(s)) return solidGradient(s);
+  // unknown named colour → try as CSS color solid
+  return solidGradient(raw);
 };
 
 const formatLabel = (str) => {

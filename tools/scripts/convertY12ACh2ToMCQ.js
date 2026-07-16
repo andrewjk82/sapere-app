@@ -76,11 +76,23 @@ function baseMeta(topicId, chapterId, chapterTitle, source) {
   };
 }
 
-/** Short title for UI lists — strip TeX so we never cut mid-delimiter. */
+/** Short title for UI lists — strip TeX so we never cut mid-delimiter.
+ *  Keep function names (\sin → sin) so "2\sin x" does not become "2 x".
+ *  Expand \dfrac{a}{b} before dropping braces so fractions stay readable. */
 function shortTitle(q) {
   return dollarToParen(q)
-    .replace(/\\\(|\\\)|\\\[|\\\]/g, '')
-    .replace(/\\[a-zA-Z]+/g, '')
+    .replace(/\\\(|\\\)|\\\[|\\\]|\$+/g, '')
+    .replace(/\\d?frac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, '($1)/($2)')
+    .replace(/\\tfrac\s*\{([^{}]*)\}\s*\{([^{}]*)\}/g, '($1)/($2)')
+    .replace(/\\left|\\right|\\!/g, '')
+    .replace(/\\le\b|\\leq\b/g, '≤')
+    .replace(/\\ge\b|\\geq\b/g, '≥')
+    .replace(/\\infty\b/g, '∞')
+    .replace(/\\pi\b/g, 'π')
+    .replace(/\\prime\b/g, "'")
+    .replace(/\\pm\b/g, '±')
+    .replace(/\\times\b/g, '×')
+    .replace(/\\([a-zA-Z]+)/g, '$1')
     .replace(/[{}]/g, '')
     .replace(/\s+/g, ' ')
     .trim()
