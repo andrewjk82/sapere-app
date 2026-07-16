@@ -13807,17 +13807,17 @@ export const CH5_QUESTIONS_Y11A = [
         "answer": 2,
         "solutionSteps": [
           {
-            "explanation": "A function is even when f(-x) = f(x) for every real x. Use the identity |x| = square root of x squared, which is defined for all real x and returns a non-negative value.",
+            "explanation": "A function is even if \\(f(-x) = f(x)\\) for every real \\(x\\). Use the identity \\(|x| = \\sqrt{x^2}\\), which is valid for all real \\(x\\) because the principal square root is never negative.",
             "workingOut": "\\(f(x) = |x| = \\sqrt{x^2}\\)",
             "graphData": null
           },
           {
-            "explanation": "Replace x by -x: f(-x) = sqrt of (-x) squared. Since (-x) squared equals x squared, this simplifies to sqrt of x squared, which is f(x). Do not write sqrt of (-x) squared as negative sqrt of x squared.",
+            "explanation": "Replace \\(x\\) by \\(-x\\): \\(f(-x) = \\sqrt{(-x)^2}\\). Since \\((-x)^2 = x^2\\), this equals \\(\\sqrt{x^2} = f(x)\\). A common slip is writing \\(\\sqrt{(-x)^2} = -\\sqrt{x^2}\\).",
             "workingOut": "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\)",
             "graphData": null
           },
           {
-            "explanation": "Because f(-x) = f(x) for all real x, f is even. Choose the option that states this identity for all real x.",
+            "explanation": "Because \\(f(-x) = f(x)\\) for all real \\(x\\), the function \\(f\\) is even. This matches the correct multiple-choice option.",
             "workingOut": "\\(\\text{Hence } f \\text{ is even.}\\)",
             "graphData": null
           }
@@ -13843,19 +13843,19 @@ export const CH5_QUESTIONS_Y11A = [
         "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "Even functions have reflection symmetry in the y-axis: the left and right halves are mirror images. Odd functions instead have rotational symmetry of 180 degrees about the origin.",
+            "explanation": "Even functions have reflection symmetry in the \\(y\\)-axis: the left and right halves are mirror images. Odd functions instead have \\(180^\\circ\\) rotational symmetry about the origin.",
             "workingOut": "\\(\\text{Even } \\Leftrightarrow \\text{y-axis reflection symmetry}\\)",
             "graphData": null
           },
           {
-            "explanation": "The V-shaped graph of y = |x| is clearly a mirror image across the y-axis, so the function is even. Symmetry about the x-axis would mean reflecting upside-down, which does not apply here.",
+            "explanation": "The V-shaped graph of \\(y = |x|\\) is a left–right mirror image across the \\(y\\)-axis, so the function is even. Symmetry about the \\(x\\)-axis would flip the graph upside down, which does not apply here.",
             "workingOut": "\\(\\text{y-axis symmetry of } y = |x|\\)",
             "graphData": {
               "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"183.0\" x2=\"282.0\" y2=\"183.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"155.0\" y1=\"18\" x2=\"155.0\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,18.0 L 155.0,183.0 L 282.0,18.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <circle cx=\"155.0\" cy=\"183.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = |x| (y-axis symmetry)</text>\n</svg>"
             }
           },
           {
-            "explanation": "Therefore the geometric reason is y-axis (left–right) symmetry.",
+            "explanation": "Therefore the geometric reason is \\(y\\)-axis (left–right) symmetry.",
             "workingOut": "\\(\\text{Answer: y-axis symmetry}\\)",
             "graphData": null
           }
