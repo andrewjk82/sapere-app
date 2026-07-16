@@ -5965,30 +5965,85 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-3",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "multiple_choice",
+    "type": "multipart",
     "difficulty": "easy",
-    "q": "On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:\n**a)** A zero (x-intercept) of a function is unchanged by a [ ... ] dilation.\n**b)** The $y$-intercept (the value of $f(0)$) is unchanged by a [ ... ] dilation.",
-    "a": "0",
-    "opts": [
-      "a) vertical, b) horizontal",
-      "a) horizontal, b) vertical",
-      "a) horizontal, b) horizontal",
-      "a) vertical, b) vertical"
-    ],
-    "h": "If you stretch a graph up and down, do points on the x-axis move?",
-    "s": "A vertical dilation multiplies the $y$-values by a factor. Since a zero has $y=0$, it remains at $y=0$ (unchanged). A horizontal dilation multiplies $x$-values. Since the $y$-intercept is at $x=0$, it remains at $x=0$ (unchanged).",
-    "solutionSteps": [
+    "q": "On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:",
+    "question": "On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:",
+    "opts": [],
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"On the basis of the previous exercises, complete these two sentences about the intercepts of the graph of a function with the axes:\n**a)** A zero (x-intercept) of a function is unchanged by a [ ... ] dilation.\n**b)** The \\(y\\)-intercept (the value of \\(f(0)\\)) is unchanged by a [ ... ] dilation.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-3a",
+        "type": "multiple_choice",
+        "question": "A zero (\\(x\\)-intercept) of a function is unchanged by a _____ dilation.",
+        "opts": [
+          "vertical",
+          "horizontal",
+          "both horizontal and vertical",
+          "neither"
+        ],
+        "options": [
+          "vertical",
+          "horizontal",
+          "both horizontal and vertical",
+          "neither"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A zero has \\(y = 0\\). Which dilation keeps \\(y\\)-values the same?",
+        "solution": "A vertical dilation multiplies all \\(y\\)-values by a constant. Since a zero has \\(y = 0\\), and \\(k \\times 0 = 0\\), the zero is unchanged. So a zero is unchanged by a vertical dilation.",
+        "solutionSteps": [
+          {
+            "explanation": "A zero (\\(x\\)-intercept) is a point where \\(y = 0\\). A vertical dilation multiplies every \\(y\\)-value by a factor \\(k\\).",
+            "workingOut": "\\(y_{\\text{new}} = k \\times y_{\\text{old}} = k \\times 0 = 0\\)"
+          },
+          {
+            "explanation": "Since \\(k \\times 0 = 0\\), the \\(y\\)-value at a zero remains 0 after any vertical dilation — the \\(x\\)-intercept stays in the same position.",
+            "workingOut": "\\(\\text{zero position unchanged}\\)"
+          },
+          {
+            "explanation": "A zero (\\(x\\)-intercept) is unchanged by a **vertical** dilation.",
+            "workingOut": "\\(\\text{Answer: vertical}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "A vertical dilation multiplies the \\(y\\)-values by a factor. Since a zero has \\(y=0\\), it remains at \\(y=0\\) (unchanged). A horizontal dilation multiplies \\(x\\)-values. Since the \\(y\\)-intercept is at \\(x=0\\), it remains at \\(x=0\\) (unchanged)."
-      },
-      {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"A vertical dilation multiplies the \\(y\\)-values by a factor. Since a zero has \\(y=0\\), it remains at \\(y=0\\) (unchanged). A horizontal dilation multiplies \\(x\\)-values. Since the \\(y\\)-intercept is at \\(x=0\\), it remains at \\(x=0\\) (unchanged).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "A vertical dilation multiplies the \\(y\\)-values by a factor. Since a zero has \\(y=0\\), it remains at \\(y=0\\) (unchanged). A horizontal dilation multiplies \\(x\\)-values. Since the \\(y\\)-intercept is at \\(x=0\\), it remains at \\(x=0\\) (unchanged)."
+        "id": "y11a-5D-new-3b",
+        "type": "multiple_choice",
+        "question": "The \\(y\\)-intercept (the value of \\(f(0)\\)) is unchanged by a _____ dilation.",
+        "opts": [
+          "horizontal",
+          "vertical",
+          "both horizontal and vertical",
+          "neither"
+        ],
+        "options": [
+          "horizontal",
+          "vertical",
+          "both horizontal and vertical",
+          "neither"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "The \\(y\\)-intercept occurs at \\(x = 0\\). Which dilation keeps \\(x\\)-values the same?",
+        "solution": "A horizontal dilation replaces \\(x\\) with \\(\\frac{x}{k}\\). At \\(x = 0\\): \\(\\frac{0}{k} = 0\\). So \\(f(0)\\) is unchanged. The \\(y\\)-intercept is unchanged by a horizontal dilation.",
+        "solutionSteps": [
+          {
+            "explanation": "The \\(y\\)-intercept is the value \\(f(0)\\) — the function evaluated at \\(x = 0\\). A horizontal dilation by \\(k\\) replaces \\(x\\) with \\(\\frac{x}{k}\\).",
+            "workingOut": "\\(f_{\\text{new}}(x) = f\\!\\left(\\frac{x}{k}\\right)\\)"
+          },
+          {
+            "explanation": "Evaluate at \\(x = 0\\): \\(f_{\\text{new}}(0) = f\\!\\left(\\frac{0}{k}\\right) = f(0)\\). The \\(y\\)-intercept is the same.",
+            "workingOut": "\\(f_{\\text{new}}(0) = f(0) \\text{ (unchanged)}\\)"
+          },
+          {
+            "explanation": "The \\(y\\)-intercept is unchanged by a **horizontal** dilation.",
+            "workingOut": "\\(\\text{Answer: horizontal}\\)"
+          }
+        ]
       }
     ]
   },
@@ -6167,25 +6222,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-6b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "easy",
-    "q": "Using dilations, sketch the following three equations on the same set of axes. Clearly label each graph and describe how it was transformed from the first equation: \\n1) $x^2 + y^2 = 16$ \\n2) $(\\frac{x}{2})^2 + (\\frac{y}{4})^2 = 16$ \\n3) $(4x)^2 + (2y)^2 = 16$",
-    "a": "See solution steps.",
+    "q": "Using dilations, the following three equations are graphed on the same set of axes:\n1) \\(x^2 + y^2 = 16\\)\n2) \\(\\left(\\frac{x}{2}\\right)^2 + \\left(\\frac{y}{4}\\right)^2 = 16\\)\n3) \\((4x)^2 + (2y)^2 = 16\\)",
+    "question": "Using dilations, the following three equations are graphed on the same set of axes:\n1) \\(x^2 + y^2 = 16\\)\n2) \\(\\left(\\frac{x}{2}\\right)^2 + \\left(\\frac{y}{4}\\right)^2 = 16\\)\n3) \\((4x)^2 + (2y)^2 = 16\\)",
     "opts": [],
-    "h": "The first equation is a circle. The others are ellipses formed by horizontal and vertical dilations.",
-    "s": "Equation 1 is a circle with radius 4.\\nEquation 2 replaces $x$ with $x/2$ and $y$ with $y/4$, meaning a horizontal stretch by 2 and vertical stretch by 4.\\nEquation 3 replaces $x$ with $4x$ and $y$ with $2y$, meaning a horizontal compression by 1/4 and vertical compression by 1/2.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Using dilations, sketch the following three equations on the same set of axes. Clearly label each graph and describe how it was transformed from the first equation: \\n1) \\(x^2 + y^2 = 16\\) \\n2) \\((\\frac{x}{2})^2 + (\\frac{y}{4})^2 = 16\\) \\n3) \\((4x)^2 + (2y)^2 = 16\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-6b-1",
+        "type": "multiple_choice",
+        "question": "Equation 1 is \\(x^2 + y^2 = 16\\). What shape does this describe?",
+        "opts": [
+          "A circle centred at the origin with radius 4",
+          "An ellipse with semi-axes 4 and 4",
+          "A parabola",
+          "A circle with radius 16"
+        ],
+        "options": [
+          "A circle centred at the origin with radius 4",
+          "An ellipse with semi-axes 4 and 4",
+          "A parabola",
+          "A circle with radius 16"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Recall \\(x^2 + y^2 = r^2\\) is a circle with radius \\(r\\).",
+        "solution": "\\(x^2 + y^2 = 16 = 4^2\\). This is a circle centred at the origin with radius 4.",
+        "solutionSteps": [
+          {
+            "explanation": "The standard form of a circle centred at the origin is \\(x^2 + y^2 = r^2\\). Here \\(r^2 = 16\\), so \\(r = 4\\).",
+            "workingOut": "\\(x^2 + y^2 = 4^2\\)"
+          },
+          {
+            "explanation": "This is a circle centred at \\((0, 0)\\) passing through \\((\\pm 4, 0)\\) and \\((0, \\pm 4)\\).",
+            "workingOut": "\\(\\text{Circle, radius } 4\\)"
+          },
+          {
+            "explanation": "Equation 1 is a circle centred at the origin with radius 4.",
+            "workingOut": "\\(\\text{Answer: circle, radius 4}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "Equation 1 is a circle with radius 4.\\nEquation 2 replaces \\(x\\) with \\(x/2\\) and \\(y\\) with \\(y/4\\), meaning a horizontal stretch by 2 and vertical stretch by 4.\\nEquation 3 replaces \\(x\\) with \\(4x\\) and \\(y\\) with \\(2y\\), meaning a horizontal compression by 1/4 and vertical compression by 1/2."
+        "id": "y11a-5D-new-6b-2",
+        "type": "multiple_choice",
+        "question": "Equation 2 is \\(\\left(\\frac{x}{2}\\right)^2 + \\left(\\frac{y}{4}\\right)^2 = 16\\). What transformation maps equation 1 to equation 2?",
+        "opts": [
+          "Horizontal stretch by 2, vertical stretch by 4",
+          "Horizontal compression by 2, vertical compression by 4",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Translation of 2 right and 4 up"
+        ],
+        "options": [
+          "Horizontal stretch by 2, vertical stretch by 4",
+          "Horizontal compression by 2, vertical compression by 4",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Translation of 2 right and 4 up"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) is a horizontal dilation by factor 2.",
+        "solution": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) is a horizontal stretch by 2; replacing \\(y\\) with \\(\\frac{y}{4}\\) is a vertical stretch by 4.",
+        "solutionSteps": [
+          {
+            "explanation": "In equation 2, \\(x\\) is replaced by \\(\\frac{x}{2}\\), which is a horizontal dilation by factor 2 (each \\(x\\)-coordinate is doubled).",
+            "workingOut": "\\(x \\to \\frac{x}{2}: \\text{horizontal stretch by 2}\\)"
+          },
+          {
+            "explanation": "Similarly, \\(y\\) is replaced by \\(\\frac{y}{4}\\), which is a vertical dilation by factor 4 (each \\(y\\)-coordinate is multiplied by 4).",
+            "workingOut": "\\(y \\to \\frac{y}{4}: \\text{vertical stretch by 4}\\)"
+          },
+          {
+            "explanation": "The ellipse in equation 2 has semi-axes of length \\(2 \\times 4 = 8\\) horizontally and \\(4 \\times 4 = 16\\) vertically — much larger than the original circle.",
+            "workingOut": "\\(\\text{Ellipse: semi-axes } 8 \\text{ (horizontal)}, 16 \\text{ (vertical)}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Equation 1 is a circle with radius 4.\\nEquation 2 replaces \\(x\\) with \\(x/2\\) and \\(y\\) with \\(y/4\\), meaning a horizontal stretch by 2 and vertical stretch by 4.\\nEquation 3 replaces \\(x\\) with \\(4x\\) and \\(y\\) with \\(2y\\), meaning a horizontal compression by 1/4 and vertical compression by 1/2.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "Equation 1 is a circle with radius 4.\\nEquation 2 replaces \\(x\\) with \\(x/2\\) and \\(y\\) with \\(y/4\\), meaning a horizontal stretch by 2 and vertical stretch by 4.\\nEquation 3 replaces \\(x\\) with \\(4x\\) and \\(y\\) with \\(2y\\), meaning a horizontal compression by 1/4 and vertical compression by 1/2."
+        "id": "y11a-5D-new-6b-3",
+        "type": "multiple_choice",
+        "question": "Equation 3 is \\((4x)^2 + (2y)^2 = 16\\). What transformation maps equation 1 to equation 3?",
+        "opts": [
+          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Horizontal compression by \\(\\frac{1}{2}\\), vertical stretch by 4",
+          "No transformation — same as equation 1"
+        ],
+        "options": [
+          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Horizontal compression by \\(\\frac{1}{2}\\), vertical stretch by 4",
+          "No transformation — same as equation 1"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Replacing \\(x\\) with \\(4x\\) is a horizontal dilation by factor \\(\\frac{1}{4}\\) (compression).",
+        "solution": "Replacing \\(x\\) with \\(4x\\) is a horizontal compression by \\(\\frac{1}{4}\\); replacing \\(y\\) with \\(2y\\) is a vertical compression by \\(\\frac{1}{2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "In equation 3, \\(x\\) is replaced by \\(4x\\), which is a horizontal dilation by \\(\\frac{1}{4}\\) — every \\(x\\)-coordinate is divided by 4, compressing the graph.",
+            "workingOut": "\\(x \\to 4x: \\text{horizontal compression by } \\frac{1}{4}\\)"
+          },
+          {
+            "explanation": "Similarly, \\(y\\) is replaced by \\(2y\\), which is a vertical dilation by \\(\\frac{1}{2}\\) — compressing the graph vertically.",
+            "workingOut": "\\(y \\to 2y: \\text{vertical compression by } \\frac{1}{2}\\)"
+          },
+          {
+            "explanation": "The resulting ellipse is smaller than the original circle, with semi-axes \\(\\frac{4}{4} = 1\\) horizontally and \\(\\frac{4}{2} = 2\\) vertically.",
+            "workingOut": "\\(\\text{Ellipse: semi-axes } 1 \\text{ (horizontal)}, 2 \\text{ (vertical)}\\)"
+          }
+        ]
       }
     ]
   },
@@ -6193,25 +6343,85 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-7a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "**[The Order of Dilations]** Consider the function $y = x(x + 4)$.\n**i)** The graph is stretched horizontally by a factor of 3. Write down the equation of this new function and sketch it.\n**ii)** This new graph is then stretched vertically by a factor of 2. Write down the final equation and sketch it.",
-    "a": "i) y = x/3(x/3 + 4). ii) y = 2x/3(x/3 + 4).",
+    "q": "**[The Order of Dilations]** Consider the function \\(y = x(x + 4)\\).",
+    "question": "**[The Order of Dilations]** Consider the function \\(y = x(x + 4)\\).",
     "opts": [],
-    "h": "Perform the dilations step by step. Replace $x$ with $x/3$, then multiply the whole function by 2.",
-    "s": "i) Replace $x$ with $\\frac{x}{3}$. Equation: $y = \\frac{x}{3}(\\frac{x}{3} + 4) = \\frac{x^2}{9} + \\frac{4x}{3}$.\\nii) Multiply by 2. Final Equation: $y = 2[\\frac{x}{3}(\\frac{x}{3} + 4)] = \\frac{2x^2}{9} + \\frac{8x}{3}$.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"**[The Order of Dilations]** Consider the function \\(y = x(x + 4)\\).\n**i)** The graph is stretched horizontally by a factor of 3. Write down the equation of this new function and sketch it.\n**ii)** This new graph is then stretched vertically by a factor of 2. Write down the final equation and sketch it.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-7a-i",
+        "type": "multiple_choice",
+        "question": "The graph of \\(y = x(x + 4)\\) is stretched horizontally by a factor of 3. Which equation describes the new function?",
+        "opts": [
+          "\\(y = \\dfrac{x}{3}\\!\\left(\\dfrac{x}{3} + 4\\right) = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\)",
+          "\\(y = 3x(3x + 4)\\)",
+          "\\(y = x(x + 12)\\)",
+          "\\(y = \\dfrac{1}{3}x(x + 4)\\)"
+        ],
+        "options": [
+          "\\(y = \\dfrac{x}{3}\\!\\left(\\dfrac{x}{3} + 4\\right) = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\)",
+          "\\(y = 3x(3x + 4)\\)",
+          "\\(y = x(x + 12)\\)",
+          "\\(y = \\dfrac{1}{3}x(x + 4)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A horizontal stretch by 3 replaces \\(x\\) with \\(\\frac{x}{3}\\).",
+        "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(y = \\frac{x}{3}\\left(\\frac{x}{3} + 4\\right) = \\frac{x^2}{9} + \\frac{4x}{3}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A horizontal stretch by factor 3 replaces every \\(x\\) in the equation with \\(\\frac{x}{3}\\) (since each \\(x\\)-coordinate is multiplied by 3).",
+            "workingOut": "\\(y = \\frac{x}{3}\\left(\\frac{x}{3} + 4\\right)\\)"
+          },
+          {
+            "explanation": "Expand: \\(\\frac{x}{3} \\times \\frac{x}{3} = \\frac{x^2}{9}\\) and \\(\\frac{x}{3} \\times 4 = \\frac{4x}{3}\\).",
+            "workingOut": "\\(y = \\frac{x^2}{9} + \\frac{4x}{3}\\)"
+          },
+          {
+            "explanation": "The new equation is \\(y = \\frac{x^2}{9} + \\frac{4x}{3}\\). The parabola is wider, with the \\(x\\)-intercepts moved from 0 and \\(-4\\) to 0 and \\(-12\\).",
+            "workingOut": "\\(y = \\frac{x^2}{9} + \\frac{4x}{3}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "i) Replace \\(x\\) with \\(\\frac{x}{3}\\). Equation: \\(y = \\frac{x}{3}(\\frac{x}{3} + 4) = \\frac{x^2}{9} + \\frac{4x}{3}\\).\\nii) Multiply by 2. Final Equation: \\(y = 2[\\frac{x}{3}(\\frac{x}{3} + 4)] = \\frac{2x^2}{9} + \\frac{8x}{3}\\)."
-      },
-      {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"i) Replace \\(x\\) with \\(\\frac{x}{3}\\). Equation: \\(y = \\frac{x}{3}(\\frac{x}{3} + 4) = \\frac{x^2}{9} + \\frac{4x}{3}\\).\\nii) Multiply by 2. Final Equation: \\(y = 2[\\frac{x}{3}(\\frac{x}{3} + 4)] = \\frac{2x^2}{9} + \\frac{8x}{3}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "i) Replace \\(x\\) with \\(\\frac{x}{3}\\). Equation: \\(y = \\frac{x}{3}(\\frac{x}{3} + 4) = \\frac{x^2}{9} + \\frac{4x}{3}\\).\\nii) Multiply by 2. Final Equation: \\(y = 2[\\frac{x}{3}(\\frac{x}{3} + 4)] = \\frac{2x^2}{9} + \\frac{8x}{3}\\)."
+        "id": "y11a-5D-new-7a-ii",
+        "type": "multiple_choice",
+        "question": "This new graph is then stretched vertically by a factor of 2. Which equation describes the final function?",
+        "opts": [
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
+          "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} + 2\\)",
+          "\\(y = \\dfrac{x^2}{18} + \\dfrac{4x}{6}\\)",
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{4x}{3}\\)"
+        ],
+        "options": [
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
+          "\\(y = \\dfrac{x^2}{9} + \\dfrac{4x}{3} + 2\\)",
+          "\\(y = \\dfrac{x^2}{18} + \\dfrac{4x}{6}\\)",
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{4x}{3}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A vertical stretch by 2 multiplies the entire function by 2.",
+        "solution": "Multiply by 2: \\(y = 2\\left(\\frac{x^2}{9} + \\frac{4x}{3}\\right) = \\frac{2x^2}{9} + \\frac{8x}{3}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A vertical stretch by factor 2 multiplies all \\(y\\)-values by 2. Apply this to the current equation \\(y = \\frac{x^2}{9} + \\frac{4x}{3}\\).",
+            "workingOut": "\\(y_{\\text{new}} = 2 \\times \\left(\\frac{x^2}{9} + \\frac{4x}{3}\\right)\\)"
+          },
+          {
+            "explanation": "Distribute the 2: \\(2 \\times \\frac{x^2}{9} = \\frac{2x^2}{9}\\) and \\(2 \\times \\frac{4x}{3} = \\frac{8x}{3}\\).",
+            "workingOut": "\\(y = \\frac{2x^2}{9} + \\frac{8x}{3}\\)"
+          },
+          {
+            "explanation": "The final equation is \\(y = \\frac{2x^2}{9} + \\frac{8x}{3}\\). The \\(x\\)-intercepts are unchanged by the vertical stretch (they remain at 0 and \\(-12\\)).",
+            "workingOut": "\\(y = \\frac{2x^2}{9} + \\frac{8x}{3}\\)"
+          }
+        ]
       }
     ]
   },
@@ -7176,25 +7386,190 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-14",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "Consider the parabola $y = x^2$.\n**a)** The parabola is dilated horizontally by a factor of $\\frac{1}{3}$. Write down its equation.\n**b)** The original parabola is dilated vertically by a factor of 9. Write down its equation.\n**c)** What do you notice about the answers to parts **a** and **b**?\n**d)** Can these parabolas be achieved by a single enlargement from the origin?\n**e)** Briefly investigate whether there are any other functions that exhibit similar behaviour.",
-    "a": "See solution steps.",
+    "q": "Consider the parabola \\(y = x^2\\).",
+    "question": "Consider the parabola \\(y = x^2\\).",
     "opts": [],
-    "h": "Substitute the dilations carefully into $y=x^2$.",
-    "s": "**a)** Replace $x$ with $3x$. $y = (3x)^2 = 9x^2$.\\n**b)** Multiply the function by 9. $y = 9x^2$.\\n**c)** The equations are exactly the same.\\n**d)** No, an enlargement from the origin by a factor $k$ yields $\\frac{y}{k} = (\\frac{x}{k})^2 \\implies y = \\frac{x^2}{k}$. This cannot equal $9x^2$ unless $k = 1/9$, which means $y = 9x^2$, but an enlargement applies the same scale factor to both axes. If $k=1/9$, the enlargement factor is $1/9$, but it results in a vertical stretch of 9 and horizontal compression of 9, which doesn't perfectly match parts a and b conceptually (part a was only horizontal, part b only vertical). (Actually, yes, an enlargement by factor $1/9$ gives $y=9x^2$).\\n**e)** Functions of the form $y = Ax^n$ exhibit this property, where a horizontal dilation by $1/k$ is equivalent to a vertical dilation by $k^n$.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Consider the parabola \\(y = x^2\\).\n**a)** The parabola is dilated horizontally by a factor of \\(\\frac{1}{3}\\). Write down its equation.\n**b)** The original parabola is dilated vertically by a factor of 9. Write down its equation.\n**c)** What do you notice about the answers to parts **a** and **b**?\n**d)** Can these parabolas be achieved by a single enlargement from the origin?\n**e)** Briefly investigate whether there are any other functions that exhibit similar behaviour.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-14a",
+        "type": "multiple_choice",
+        "question": "The parabola \\(y = x^2\\) is dilated horizontally by a factor of \\(\\frac{1}{3}\\). Which is the new equation?",
+        "opts": [
+          "\\(y = 9x^2\\)",
+          "\\(y = \\frac{1}{9}x^2\\)",
+          "\\(y = x^2 + \\frac{1}{3}\\)",
+          "\\(y = 3x^2\\)"
+        ],
+        "options": [
+          "\\(y = 9x^2\\)",
+          "\\(y = \\frac{1}{9}x^2\\)",
+          "\\(y = x^2 + \\frac{1}{3}\\)",
+          "\\(y = 3x^2\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A horizontal dilation by \\(\\frac{1}{3}\\) replaces \\(x\\) with \\(\\frac{x}{1/3} = 3x\\).",
+        "solution": "Horizontal dilation by \\(\\frac{1}{3}\\) replaces \\(x\\) with \\(3x\\): \\(y = (3x)^2 = 9x^2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A horizontal dilation by factor \\(k\\) replaces \\(x\\) with \\(\\frac{x}{k}\\). Here \\(k = \\frac{1}{3}\\), so we replace \\(x\\) with \\(\\frac{x}{1/3} = 3x\\).",
+            "workingOut": "\\(y = (3x)^2\\)"
+          },
+          {
+            "explanation": "Expand the square: \\((3x)^2 = 9x^2\\). The parabola becomes steeper — it is compressed horizontally, so it appears narrower.",
+            "workingOut": "\\(y = 9x^2\\)"
+          },
+          {
+            "explanation": "The new equation after a horizontal dilation by \\(\\frac{1}{3}\\) is \\(y = 9x^2\\). Note the \\(x\\)-intercept (at the origin) is unchanged, as expected for horizontal dilations.",
+            "workingOut": "\\(\\text{New equation: } y = 9x^2\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "**a)** Replace \\(x\\) with \\(3x\\). \\(y = (3x)^2 = 9x^2\\).\\n**b)** Multiply the function by 9. \\(y = 9x^2\\).\\n**c)** The equations are exactly the same.\\n**d)** No, an enlargement from the origin by a factor \\(k\\) yields \\(\\frac{y}{k} = (\\frac{x}{k})^2 \\implies y = \\frac{x^2}{k}\\). This cannot equal \\(9x^2\\) unless \\(k = 1/9\\), which means \\(y = 9x^2\\), but an enlargement applies the same scale factor to both axes. If \\(k=1/9\\), the enlargement factor is \\(1/9\\), but it results in a vertical stretch of 9 and horizontal compression of 9, which doesn't perfectly match parts a and b conceptually (part a was only horizontal, part b only vertical). (Actually, yes, an enlargement by factor \\(1/9\\) gives \\(y=9x^2\\)).\\n**e)** Functions of the form \\(y = Ax^n\\) exhibit this property, where a horizontal dilation by \\(1/k\\) is equivalent to a vertical dilation by \\(k^n\\)."
+        "id": "y11a-5D-new-14b",
+        "type": "multiple_choice",
+        "question": "The original parabola \\(y = x^2\\) is dilated vertically by a factor of 9. Which is the new equation?",
+        "opts": [
+          "\\(y = 9x^2\\)",
+          "\\(y = x^2 + 9\\)",
+          "\\(y = (x+9)^2\\)",
+          "\\(y = \\frac{x^2}{9}\\)"
+        ],
+        "options": [
+          "\\(y = 9x^2\\)",
+          "\\(y = x^2 + 9\\)",
+          "\\(y = (x+9)^2\\)",
+          "\\(y = \\frac{x^2}{9}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A vertical dilation by factor 9 multiplies the whole function by 9.",
+        "solution": "Multiply the function by 9: \\(y = 9x^2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A vertical dilation by factor \\(k\\) multiplies the entire output by \\(k\\). Here \\(k = 9\\), so every \\(y\\)-value is multiplied by 9 while \\(x\\)-values stay unchanged.",
+            "workingOut": "\\(y = 9 \\times x^2 = 9x^2\\)"
+          },
+          {
+            "explanation": "The parabola \\(y = 9x^2\\) is also narrower than \\(y = x^2\\), with the same vertex at the origin but rising 9 times faster.",
+            "workingOut": "\\(y = 9x^2\\)"
+          },
+          {
+            "explanation": "The new equation after a vertical dilation by 9 is \\(y = 9x^2\\). Remarkably, this is the same as part (a).",
+            "workingOut": "\\(\\text{New equation: } y = 9x^2\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"**a)** Replace \\(x\\) with \\(3x\\). \\(y = (3x)^2 = 9x^2\\).\\n**b)** Multiply the function by 9. \\(y = 9x^2\\).\\n**c)** The equations are exactly the same.\\n**d)** No, an enlargement from the origin by a factor \\(k\\) yields \\(\\frac{y}{k} = (\\frac{x}{k})^2 \\implies y = \\frac{x^2}{k}\\). This cannot equal \\(9x^2\\) unless \\(k = 1/9\\), which means \\(y = 9x^2\\), but an enlargement applies the same scale factor to both axes. If \\(k=1/9\\), the enlargement factor is \\(1/9\\), but it results in a vertical stretch of 9 and horizontal compression of 9, which doesn't perfectly match parts a and b conceptually (part a was only horizontal, part b only vertical). (Actually, yes, an enlargement by factor \\(1/9\\) gives \\(y=9x^2\\)).\\n**e)** Functions of the form \\(y = Ax^n\\) exhibit this property, where a horizontal dilation by \\(1/k\\) is equivalent to a vertical dilation by \\(k^n\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "**a)** Replace \\(x\\) with \\(3x\\). \\(y = (3x)^2 = 9x^2\\).\\n**b)** Multiply the function by 9. \\(y = 9x^2\\).\\n**c)** The equations are exactly the same.\\n**d)** No, an enlargement from the origin by a factor \\(k\\) yields \\(\\frac{y}{k} = (\\frac{x}{k})^2 \\implies y = \\frac{x^2}{k}\\). This cannot equal \\(9x^2\\) unless \\(k = 1/9\\), which means \\(y = 9x^2\\), but an enlargement applies the same scale factor to both axes. If \\(k=1/9\\), the enlargement factor is \\(1/9\\), but it results in a vertical stretch of 9 and horizontal compression of 9, which doesn't perfectly match parts a and b conceptually (part a was only horizontal, part b only vertical). (Actually, yes, an enlargement by factor \\(1/9\\) gives \\(y=9x^2\\)).\\n**e)** Functions of the form \\(y = Ax^n\\) exhibit this property, where a horizontal dilation by \\(1/k\\) is equivalent to a vertical dilation by \\(k^n\\)."
+        "id": "y11a-5D-new-14c",
+        "type": "multiple_choice",
+        "question": "What do you notice about the answers to parts (a) and (b)?",
+        "opts": [
+          "They are exactly the same equation.",
+          "They are different equations.",
+          "Part (a) is wider than part (b).",
+          "They have different intercepts."
+        ],
+        "options": [
+          "They are exactly the same equation.",
+          "They are different equations.",
+          "Part (a) is wider than part (b).",
+          "They have different intercepts."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Compare \\(y = 9x^2\\) from part (a) and \\(y = 9x^2\\) from part (b).",
+        "solution": "Both give \\(y = 9x^2\\). A horizontal compression by \\(\\frac{1}{3}\\) is equivalent to a vertical stretch by 9 for the parabola \\(y = x^2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Part (a) gave \\(y = 9x^2\\) and part (b) also gave \\(y = 9x^2\\). The two equations are identical.",
+            "workingOut": "\\(\\text{Both: } y = 9x^2\\)"
+          },
+          {
+            "explanation": "This is a special property of power functions \\(y = x^n\\). For \\(y = x^2\\), a horizontal dilation by \\(\\frac{1}{3}\\) equals a vertical dilation by \\(3^2 = 9\\), since \\((kx)^2 = k^2 x^2\\).",
+            "workingOut": "\\((3x)^2 = 9x^2 = 9 \\cdot x^2\\)"
+          },
+          {
+            "explanation": "The two transformations produce identical graphs. The correct answer is: they are exactly the same equation.",
+            "workingOut": "\\(\\text{Conclusion: the equations are identical}\\)"
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-14d",
+        "type": "multiple_choice",
+        "question": "Can the parabola \\(y = 9x^2\\) be obtained from \\(y = x^2\\) by a single enlargement from the origin (same scale factor \\(k\\) on both axes)?",
+        "opts": [
+          "Yes — an enlargement by \\(k = \\frac{1}{9}\\) gives \\(y = 9x^2\\).",
+          "No — a single enlargement cannot produce \\(y = 9x^2\\).",
+          "Yes — an enlargement by \\(k = 9\\) gives \\(y = 9x^2\\).",
+          "No — only separate dilations can produce \\(y = 9x^2\\)."
+        ],
+        "options": [
+          "Yes — an enlargement by \\(k = \\frac{1}{9}\\) gives \\(y = 9x^2\\).",
+          "No — a single enlargement cannot produce \\(y = 9x^2\\).",
+          "Yes — an enlargement by \\(k = 9\\) gives \\(y = 9x^2\\).",
+          "No — only separate dilations can produce \\(y = 9x^2\\)."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "An enlargement by \\(k\\) replaces \\(x \\to \\frac{x}{k}\\) and \\(y \\to \\frac{y}{k}\\). Solve \\(\\frac{y}{k} = \\left(\\frac{x}{k}\\right)^2\\) for \\(y\\).",
+        "solution": "An enlargement by \\(k\\) gives \\(\\frac{y}{k} = \\frac{x^2}{k^2}\\), so \\(y = \\frac{x^2}{k}\\). Setting \\(\\frac{1}{k} = 9\\) gives \\(k = \\frac{1}{9}\\). Yes, an enlargement by \\(\\frac{1}{9}\\) works.",
+        "solutionSteps": [
+          {
+            "explanation": "An enlargement by factor \\(k\\) replaces \\(x \\to \\frac{x}{k}\\) and \\(y \\to \\frac{y}{k}\\). Applying this to \\(y = x^2\\):",
+            "workingOut": "\\(\\frac{y}{k} = \\left(\\frac{x}{k}\\right)^2 = \\frac{x^2}{k^2}\\)"
+          },
+          {
+            "explanation": "Multiply both sides by \\(k\\): \\(y = \\frac{x^2}{k}\\). We want this to equal \\(9x^2\\), so \\(\\frac{1}{k} = 9\\), giving \\(k = \\frac{1}{9}\\).",
+            "workingOut": "\\(y = \\frac{x^2}{k} = 9x^2 \\implies k = \\frac{1}{9}\\)"
+          },
+          {
+            "explanation": "Yes — a single enlargement from the origin by scale factor \\(k = \\frac{1}{9}\\) (a compression) maps \\(y = x^2\\) to \\(y = 9x^2\\).",
+            "workingOut": "\\(\\text{Enlargement factor: } k = \\frac{1}{9}\\)"
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-14e",
+        "type": "multiple_choice",
+        "question": "For functions of the form \\(y = x^n\\), a horizontal dilation by \\(\\frac{1}{k}\\) is equivalent to a vertical dilation by which factor?",
+        "opts": [
+          "\\(k^n\\)",
+          "\\(k\\)",
+          "\\(\\frac{1}{k^n}\\)",
+          "\\(n^k\\)"
+        ],
+        "options": [
+          "\\(k^n\\)",
+          "\\(k\\)",
+          "\\(\\frac{1}{k^n}\\)",
+          "\\(n^k\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "If you replace \\(x\\) with \\(kx\\) in \\(y = x^n\\), what do you get?",
+        "solution": "Replacing \\(x\\) with \\(kx\\): \\(y = (kx)^n = k^n x^n\\). This is a vertical stretch by \\(k^n\\). So a horizontal dilation by \\(\\frac{1}{k}\\) equals a vertical dilation by \\(k^n\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For \\(y = x^n\\), a horizontal dilation by \\(\\frac{1}{k}\\) replaces \\(x\\) with \\(kx\\) (since \\(\\frac{x}{1/k} = kx\\)).",
+            "workingOut": "\\(y = (kx)^n\\)"
+          },
+          {
+            "explanation": "Expanding: \\((kx)^n = k^n x^n\\). This is exactly the same as multiplying \\(y = x^n\\) by \\(k^n\\), which is a vertical dilation by \\(k^n\\).",
+            "workingOut": "\\(y = k^n x^n = k^n \\cdot x^n\\)"
+          },
+          {
+            "explanation": "For power functions \\(y = x^n\\), a horizontal dilation by \\(\\frac{1}{k}\\) is always equivalent to a vertical dilation by \\(k^n\\). For our parabola (\\(n=2\\)), \\(k^n = 3^2 = 9\\) — matching parts (a) and (b).",
+            "workingOut": "\\(\\text{Horizontal dilation by } \\frac{1}{k} = \\text{Vertical dilation by } k^n\\)"
+          }
+        ]
       }
     ]
   },
@@ -7202,25 +7577,155 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-15",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "The mass $M$ grams of a certain radioactive substance after $t$ years is modeled by the formula $M = 5 \\times 2^{-t/20}$.\n**a)** Find the initial mass.\n**b)** Find the time taken for the mass to halve, called the half-life.\n**c)** Suppose now that the initial mass is doubled.\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** Explain this in terms of a dilation and hence write down the new equation for $M$.\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** Show algebraically that the dilation does not change the value of the half-life.",
-    "a": "a) 5g, b) 20 years, c-i) Vertical stretch by 2, M = 10 * 2^(-t/20), c-ii) See steps.",
+    "q": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-t/20}\\).",
+    "question": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-t/20}\\).",
     "opts": [],
-    "h": "Initial mass is when $t=0$.",
-    "s": "**a)** At $t=0$, $M = 5 \\times 2^0 = 5$ grams.\\n**b)** We want $M = 2.5$. $2.5 = 5 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20$ years.\\n**c) i)** Doubling the initial mass means we multiply the entire function by 2, which is a vertical dilation by a factor of 2. $M = 10 \\times 2^{-t/20}$.\\n**c) ii)** To find the new half-life: we want $M = 5$. $5 = 10 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies t = 20$ years. The half-life remains the same.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modeled by the formula \\(M = 5 \\times 2^{-t/20}\\).\n**a)** Find the initial mass.\n**b)** Find the time taken for the mass to halve, called the half-life.\n**c)** Suppose now that the initial mass is doubled.\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** Explain this in terms of a dilation and hence write down the new equation for \\(M\\).\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** Show algebraically that the dilation does not change the value of the half-life.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-15a",
+        "type": "multiple_choice",
+        "question": "What is the initial mass (when \\(t = 0\\))?",
+        "opts": [
+          "\\(5\\) grams",
+          "\\(2\\) grams",
+          "\\(20\\) grams",
+          "\\(10\\) grams"
+        ],
+        "options": [
+          "\\(5\\) grams",
+          "\\(2\\) grams",
+          "\\(20\\) grams",
+          "\\(10\\) grams"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Substitute \\(t = 0\\) into the formula.",
+        "solution": "At \\(t = 0\\): \\(M = 5 \\times 2^{0} = 5 \\times 1 = 5\\) grams.",
+        "solutionSteps": [
+          {
+            "explanation": "The initial mass is the value of \\(M\\) at time \\(t = 0\\). Substitute \\(t = 0\\) into the formula \\(M = 5 \\times 2^{-t/20}\\).",
+            "workingOut": "\\(M = 5 \\times 2^{-0/20} = 5 \\times 2^0\\)"
+          },
+          {
+            "explanation": "Since any number to the power 0 equals 1: \\(2^0 = 1\\).",
+            "workingOut": "\\(M = 5 \\times 1 = 5\\)"
+          },
+          {
+            "explanation": "The initial mass is \\(5\\) grams.",
+            "workingOut": "\\(M_0 = 5 \\text{ grams}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "**a)** At \\(t=0\\), \\(M = 5 \\times 2^0 = 5\\) grams.\\n**b)** We want \\(M = 2.5\\). \\(2.5 = 5 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\) years.\\n**c) i)** Doubling the initial mass means we multiply the entire function by 2, which is a vertical dilation by a factor of 2. \\(M = 10 \\times 2^{-t/20}\\).\\n**c) ii)** To find the new half-life: we want \\(M = 5\\). \\(5 = 10 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies t = 20\\) years. The half-life remains the same."
+        "id": "y11a-5D-new-15b",
+        "type": "multiple_choice",
+        "question": "What is the half-life of the substance (the time for the mass to halve)?",
+        "opts": [
+          "\\(20\\) years",
+          "\\(5\\) years",
+          "\\(10\\) years",
+          "\\(40\\) years"
+        ],
+        "options": [
+          "\\(20\\) years",
+          "\\(5\\) years",
+          "\\(10\\) years",
+          "\\(40\\) years"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Set \\(M = 2.5\\) (half of 5) and solve for \\(t\\).",
+        "solution": "Set \\(M = 2.5\\): \\(2.5 = 5 \\times 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\) years.",
+        "solutionSteps": [
+          {
+            "explanation": "The half-life is the time \\(t\\) when \\(M\\) equals half its initial value. Half of 5 is 2.5, so set \\(M = 2.5\\).",
+            "workingOut": "\\(2.5 = 5 \\times 2^{-t/20}\\)"
+          },
+          {
+            "explanation": "Divide both sides by 5: \\(\\frac{1}{2} = 2^{-t/20}\\). Since \\(\\frac{1}{2} = 2^{-1}\\), we equate exponents: \\(-1 = -\\frac{t}{20}\\).",
+            "workingOut": "\\(2^{-1} = 2^{-t/20} \\implies -1 = -\\frac{t}{20}\\)"
+          },
+          {
+            "explanation": "Multiply both sides by \\(-20\\): \\(t = 20\\) years. The half-life is 20 years.",
+            "workingOut": "\\(t = 20 \\text{ years}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"**a)** At \\(t=0\\), \\(M = 5 \\times 2^0 = 5\\) grams.\\n**b)** We want \\(M = 2.5\\). \\(2.5 = 5 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\) years.\\n**c) i)** Doubling the initial mass means we multiply the entire function by 2, which is a vertical dilation by a factor of 2. \\(M = 10 \\times 2^{-t/20}\\).\\n**c) ii)** To find the new half-life: we want \\(M = 5\\). \\(5 = 10 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies t = 20\\) years. The half-life remains the same.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "**a)** At \\(t=0\\), \\(M = 5 \\times 2^0 = 5\\) grams.\\n**b)** We want \\(M = 2.5\\). \\(2.5 = 5 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\) years.\\n**c) i)** Doubling the initial mass means we multiply the entire function by 2, which is a vertical dilation by a factor of 2. \\(M = 10 \\times 2^{-t/20}\\).\\n**c) ii)** To find the new half-life: we want \\(M = 5\\). \\(5 = 10 \\times 2^{-t/20} \\implies 0.5 = 2^{-t/20} \\implies t = 20\\) years. The half-life remains the same."
+        "id": "y11a-5D-new-15c-i",
+        "type": "multiple_choice",
+        "question": "Suppose the initial mass is doubled. This corresponds to which dilation, and what is the new equation for \\(M\\)?",
+        "opts": [
+          "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
+          "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
+          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
+          "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
+        ],
+        "options": [
+          "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
+          "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
+          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
+          "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Doubling every output value is a vertical dilation by factor 2.",
+        "solution": "Doubling the mass at every time is a vertical dilation by 2, multiplying the function by 2. New equation: \\(M = 10 \\times 2^{-t/20}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Doubling the initial mass means every \\(M\\)-value doubles. Multiplying the entire function by 2 is a vertical dilation by factor 2.",
+            "workingOut": "\\(M_{\\text{new}} = 2 \\times M = 2 \\times 5 \\times 2^{-t/20}\\)"
+          },
+          {
+            "explanation": "Simplify: \\(2 \\times 5 = 10\\).",
+            "workingOut": "\\(M = 10 \\times 2^{-t/20}\\)"
+          },
+          {
+            "explanation": "The new equation is \\(M = 10 \\times 2^{-t/20}\\). The initial mass is now 10 grams instead of 5.",
+            "workingOut": "\\(M = 10 \\times 2^{-t/20}\\)"
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-15c-ii",
+        "type": "multiple_choice",
+        "question": "Using the new equation \\(M = 10 \\times 2^{-t/20}\\), what is the half-life of the doubled substance?",
+        "opts": [
+          "\\(20\\) years — the same as before.",
+          "\\(10\\) years — it halved.",
+          "\\(40\\) years — it doubled.",
+          "\\(2.5\\) years — it quartered."
+        ],
+        "options": [
+          "\\(20\\) years — the same as before.",
+          "\\(10\\) years — it halved.",
+          "\\(40\\) years — it doubled.",
+          "\\(2.5\\) years — it quartered."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Find \\(t\\) when \\(M = 5\\) (half of 10) in the new equation.",
+        "solution": "Set \\(M = 5\\): \\(5 = 10 \\times 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\). The half-life is unchanged at 20 years.",
+        "solutionSteps": [
+          {
+            "explanation": "For the new equation \\(M = 10 \\times 2^{-t/20}\\), the half-life is when \\(M\\) reaches half of 10, i.e., \\(M = 5\\).",
+            "workingOut": "\\(5 = 10 \\times 2^{-t/20}\\)"
+          },
+          {
+            "explanation": "Divide both sides by 10: \\(\\frac{1}{2} = 2^{-t/20}\\), so \\(2^{-1} = 2^{-t/20}\\), giving \\(t = 20\\).",
+            "workingOut": "\\(2^{-1} = 2^{-t/20} \\implies t = 20\\)"
+          },
+          {
+            "explanation": "The half-life is still 20 years — identical to the original. A vertical dilation (scaling the mass) does not affect the rate of decay.",
+            "workingOut": "\\(\\text{Half-life} = 20 \\text{ years (unchanged)}\\)"
+          }
+        ]
       }
     ]
   },
