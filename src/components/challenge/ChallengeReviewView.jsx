@@ -17,14 +17,22 @@ import { answersMatch } from '../../utils/answerMatching';
 // shuffled-option questions stored with `_shuffledAnswer`.
 const getCorrectAnswerText = (q) => {
   if (!q) return '';
-  if (q._shuffledAnswer !== undefined) return String(q._shuffledAnswer);
-  if (q.type === 'multiple_choice' && q.isManual) {
-    const opts = getOptions(q);
-    const idx = parseInt(q.answer, 10);
-    if (Number.isFinite(idx) && opts[idx]) return getOptionText(opts[idx]);
+  if (q._shuffledAnswer !== undefined && q._shuffledAnswer !== null) {
+    return String(q._shuffledAnswer);
   }
   if (q.type === 'interactive_grid') return `${q.answer} panels shaded`;
-  return String(q.answer ?? '');
+  const opts = getOptions(q);
+  const raw = q.answer ?? q.a;
+  const rawStr = raw == null ? '' : String(raw).trim();
+  // MC seed banks store a 0-based option index ("0"…"3") — resolve to text.
+  if (opts.length > 1 && /^\d+$/.test(rawStr)) {
+    const idx = parseInt(rawStr, 10);
+    const valueIsOptionText = opts.some((o) => answersMatch(getOptionText(o), rawStr));
+    if (Number.isFinite(idx) && opts[idx] !== undefined && (q.isManual || !valueIsOptionText)) {
+      return getOptionText(opts[idx]);
+    }
+  }
+  return String(raw ?? '');
 };
 
 // Format the student's answer for display.

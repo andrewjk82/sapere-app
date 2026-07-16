@@ -724,23 +724,35 @@ const ChallengeQuizView = ({
 
                 let status = 'default';
                 if (step === 'feedback') {
+                  // After option shuffle, `_shuffledAnswer` holds the correct option
+                  // TEXT. The raw seed answer may still be a 0-based index into the
+                  // *unshuffled* list — never compare that index against the shuffled
+                  // display order (that lit up two "Correct" choices).
                   const rawKey = currentQuestion.answer ?? currentQuestion.a;
-                  const effectiveAnswer = currentQuestion._shuffledAnswer !== undefined
+                  const shuffled = currentQuestion._shuffledAnswer !== undefined
+                    && currentQuestion._shuffledAnswer !== null;
+                  const effectiveAnswer = shuffled
                     ? currentQuestion._shuffledAnswer
                     : rawKey;
                   const rawKeyStr = rawKey == null ? '' : String(rawKey).trim();
                   const rawIsDigits = /^\d+$/.test(rawKeyStr);
                   const rawIdx = rawIsDigits ? Number(rawKeyStr) : NaN;
-                  const answerLooksLikeIndex = rawIsDigits
+                  const answerLooksLikeIndex = !shuffled
+                    && rawIsDigits
                     && Number.isInteger(rawIdx)
                     && rawIdx >= 0
                     && rawIdx < displayOptions.length
                     && !displayOptions.some((o) => answersMatch(getOptionText(o), rawKeyStr));
                   let resolvedText = effectiveAnswer;
-                  if (answerLooksLikeIndex && currentQuestion._shuffledAnswer === undefined) {
+                  if (answerLooksLikeIndex) {
                     resolvedText = getOptionText(displayOptions[rawIdx]);
                   }
-                  const isCorrectChoice = answersMatch(optText, effectiveAnswer)
+                  // Prefer remapped index after shuffle when present.
+                  const shuffledIdx = currentQuestion._shuffledAnswerIndex;
+                  const isCorrectChoice = (shuffled
+                    && shuffledIdx != null
+                    && Number(shuffledIdx) === i)
+                    || answersMatch(optText, effectiveAnswer)
                     || answersMatch(optText, resolvedText)
                     || (answerLooksLikeIndex && i === rawIdx);
                   if (isCorrectChoice) status = 'correct';
