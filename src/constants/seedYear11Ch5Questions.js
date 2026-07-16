@@ -1588,26 +1588,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, evaluate $f(g(0))$.",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), evaluate \\(f(g(0))\\).",
     "a": "0",
     "opts": [
-      "$-1$",
-      "$-2$",
-      "$1$",
-      "$0$"
+      "\\(-1\\)",
+      "\\(-2\\)",
+      "\\(1\\)",
+      "\\(0\\)"
     ],
-    "h": "Find $g(0)$ first, then plug that result into $f(x)$.",
-    "s": "$g(0) = 0^2 + 1 = 1$. Then $f(1) = 2(1) - 3 = -1$.",
+    "h": "Find \\(g(0)\\) first, then plug that result into \\(f(x)\\).",
+    "s": "\\(g(0) = 0^2 + 1 = 1\\). Then \\(f(1) = 2(1) - 3 = -1\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function.",
-        "workingOut": "g(0) = 0^2 + 1 = 1"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(0) = 0^2 + 1 = 1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the outer function.",
-        "workingOut": "f(1) = 2(1) - 3 = -1"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(1) = 2(1) - 3 = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-15b",
@@ -1615,26 +1623,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, evaluate $g(f(0))$.",
-    "a": "0",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), evaluate \\(g(f(0))\\).",
+    "a": "2",
     "opts": [
-      "$10$",
-      "$-8$",
-      "$1$",
-      "$9$"
+      "\\(-8\\)",
+      "\\(1\\)",
+      "\\(10\\)",
+      "\\(9\\)"
     ],
-    "h": "Find $f(0)$ first, then plug that result into $g(x)$.",
-    "s": "$f(0) = 2(0) - 3 = -3$. Then $g(-3) = (-3)^2 + 1 = 9 + 1 = 10$.",
+    "h": "Find \\(f(0)\\) first, then plug that result into \\(g(x)\\).",
+    "s": "\\(f(0) = 2(0) - 3 = -3\\). Then \\(g(-3) = (-3)^2 + 1 = 9 + 1 = 10\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function.",
-        "workingOut": "f(0) = -3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(0) = -3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the outer function.",
-        "workingOut": "g(-3) = (-3)^2 + 1 = 10"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(-3) = (-3)^2 + 1 = 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(10\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-15c",
@@ -1642,22 +1658,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, find the expression for $f(g(x))$.",
-    "a": "0",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), find the expression for \\(f(g(x))\\).",
+    "a": "1",
     "opts": [
-      "$2x^2 - 1$",
-      "$2x^2 + 2$",
-      "$4x^2 - 12x + 10$",
-      "$x^2 - 2x + 4$"
+      "\\(2x^2 + 2\\)",
+      "\\(2x^2 - 1\\)",
+      "\\(4x^2 - 12x + 10\\)",
+      "\\(x^2 - 2x + 4\\)"
     ],
-    "h": "Substitute $g(x)$ in place of $x$ in the expression for $f(x)$.",
-    "s": "$f(g(x)) = 2(x^2 + 1) - 3 = 2x^2 + 2 - 3 = 2x^2 - 1$.",
+    "h": "Substitute \\(g(x)\\) in place of \\(x\\) in the expression for \\(f(x)\\).",
+    "s": "\\(f(g(x)) = 2(x^2 + 1) - 3 = 2x^2 + 2 - 3 = 2x^2 - 1\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(g(x)\\) into \\(f\\).",
-        "workingOut": "f(x^2 + 1) = 2(x^2 + 1) - 3 = 2x^2 - 1"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(x^2 + 1) = 2(x^2 + 1) - 3 = 2x^2 - 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(f(x^2 + 1) = 2(x^2 + 1) - 3 = 2x^2 - 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(2x^2 - 1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-15d",
@@ -1665,22 +1693,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, find the expression for $g(f(x))$.",
-    "a": "0",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), find the expression for \\(g(f(x))\\).",
+    "a": "3",
     "opts": [
-      "$4x^2 - 12x + 10$",
-      "$2x^2 - 1$",
-      "$4x^2 + 10$",
-      "$4x^2 - 9$"
+      "\\(2x^2 - 1\\)",
+      "\\(4x^2 + 10\\)",
+      "\\(4x^2 - 9\\)",
+      "\\(4x^2 - 12x + 10\\)"
     ],
-    "h": "Substitute $f(x)$ in place of $x$ in the expression for $g(x)$.",
-    "s": "$g(f(x)) = (2x - 3)^2 + 1 = 4x^2 - 12x + 9 + 1 = 4x^2 - 12x + 10$.",
+    "h": "Substitute \\(f(x)\\) in place of \\(x\\) in the expression for \\(g(x)\\).",
+    "s": "\\(g(f(x)) = (2x - 3)^2 + 1 = 4x^2 - 12x + 9 + 1 = 4x^2 - 12x + 10\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(f(x)\\) into \\(g\\).",
-        "workingOut": "g(2x - 3) = (2x - 3)^2 + 1 = 4x^2 - 12x + 10"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(2x - 3) = (2x - 3)^2 + 1 = 4x^2 - 12x + 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(g(2x - 3) = (2x - 3)^2 + 1 = 4x^2 - 12x + 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(4x^2 - 12x + 10\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-15e",
@@ -1688,22 +1728,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, find the expression for $f(f(x))$.",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), find the expression for \\(f(f(x))\\).",
     "a": "0",
     "opts": [
-      "$4x - 9$",
-      "$4x - 6$",
-      "$4x^2 - 9$",
-      "$2x - 6$"
+      "\\(4x - 9\\)",
+      "\\(4x - 6\\)",
+      "\\(4x^2 - 9\\)",
+      "\\(2x - 6\\)"
     ],
-    "h": "Substitute $f(x)$ into itself.",
-    "s": "$f(f(x)) = 2(2x - 3) - 3 = 4x - 6 - 3 = 4x - 9$.",
+    "h": "Substitute \\(f(x)\\) into itself.",
+    "s": "\\(f(f(x)) = 2(2x - 3) - 3 = 4x - 6 - 3 = 4x - 9\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(f(x)\\) into \\(f\\).",
-        "workingOut": "f(2x - 3) = 2(2x - 3) - 3 = 4x - 9"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(2x - 3) = 2(2x - 3) - 3 = 4x - 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(f(2x - 3) = 2(2x - 3) - 3 = 4x - 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(4x - 9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-15f",
@@ -1711,22 +1763,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = 2x - 3$ and $g(x) = x^2 + 1$, find the expression for $g(g(x))$.",
-    "a": "0",
+    "q": "Given \\(f(x) = 2x - 3\\) and \\(g(x) = x^2 + 1\\), find the expression for \\(g(g(x))\\).",
+    "a": "2",
     "opts": [
-      "$x^4 + 2x^2 + 2$",
-      "$x^4 + 1$",
-      "$x^4 + x^2 + 1$",
-      "$x^4 + 2x^2 + 1$"
+      "\\(x^4 + 1\\)",
+      "\\(x^4 + x^2 + 1\\)",
+      "\\(x^4 + 2x^2 + 2\\)",
+      "\\(x^4 + 2x^2 + 1\\)"
     ],
-    "h": "Substitute $g(x)$ into itself.",
-    "s": "$g(g(x)) = (x^2 + 1)^2 + 1 = x^4 + 2x^2 + 1 + 1 = x^4 + 2x^2 + 2$.",
+    "h": "Substitute \\(g(x)\\) into itself.",
+    "s": "\\(g(g(x)) = (x^2 + 1)^2 + 1 = x^4 + 2x^2 + 1 + 1 = x^4 + 2x^2 + 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(g(x)\\) into \\(g\\).",
-        "workingOut": "g(x^2 + 1) = (x^2 + 1)^2 + 1 = x^4 + 2x^2 + 2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(x^2 + 1) = (x^2 + 1)^2 + 1 = x^4 + 2x^2 + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(g(x^2 + 1) = (x^2 + 1)^2 + 1 = x^4 + 2x^2 + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x^4 + 2x^2 + 2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-16a",
@@ -1734,22 +1798,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = \\sqrt{x}$ and $g(x) = x - 5$, what is the domain of $f(g(x))$?",
-    "a": "0",
+    "q": "Given \\(f(x) = \\sqrt{x}\\) and \\(g(x) = x - 5\\), what is the domain of \\(f(g(x))\\)?",
+    "a": "1",
     "opts": [
-      "$x \\ge 5$",
-      "$x > 5$",
-      "$x \\ge 0$",
-      "All real $x$"
+      "\\(x > 5\\)",
+      "\\(x \\ge 5\\)",
+      "\\(x \\ge 0\\)",
+      "All real \\(x\\)"
     ],
-    "h": "The domain of $\\sqrt{u}$ is $u \\ge 0$. Here $u = g(x)$.",
-    "s": "$f(g(x)) = \\sqrt{x - 5}$. For the square root to be defined, $x - 5 \\ge 0 \\implies x \\ge 5$.",
+    "h": "The domain of \\(\\sqrt{u}\\) is \\(u \\ge 0\\). Here \\(u = g(x)\\).",
+    "s": "\\(f(g(x)) = \\sqrt{x - 5}\\). For the square root to be defined, \\(x - 5 \\ge 0 \\implies x \\ge 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the domain of the composite expression.",
-        "workingOut": "x - 5 \\ge 0 \\implies x \\ge 5"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(x - 5 \\ge 0 \\implies x \\ge 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(x - 5 \\ge 0 \\implies x \\ge 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x \\ge 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-16b",
@@ -1757,22 +1833,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite Functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Given $f(x) = \\sqrt{x}$ and $g(x) = x - 5$, what is the range of $f(g(x))$?",
-    "a": "0",
+    "q": "Given \\(f(x) = \\sqrt{x}\\) and \\(g(x) = x - 5\\), what is the range of \\(f(g(x))\\)?",
+    "a": "3",
     "opts": [
-      "$y \\ge 0$",
-      "$y \\ge 5$",
-      "$y > 0$",
-      "All real $y$"
+      "\\(y \\ge 5\\)",
+      "\\(y > 0\\)",
+      "All real \\(y\\)",
+      "\\(y \\ge 0\\)"
     ],
     "h": "The output of a principal square root is always non-negative.",
-    "s": "Since $f(g(x)) = \\sqrt{x - 5}$ and the square root function produces non-negative results, the range is $y \\ge 0$.",
+    "s": "Since \\(f(g(x)) = \\sqrt{x - 5}\\) and the square root function produces non-negative results, the range is \\(y \\ge 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Analyze the range of the square root.",
-        "workingOut": "\\sqrt{x - 5} \\ge 0 \\implies y \\ge 0"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\sqrt{x - 5} \\ge 0 \\implies y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(\\sqrt{x - 5} \\ge 0 \\implies y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(y \\ge 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5-17a",
@@ -14004,22 +14092,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate $f(0)$.",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate \\(f(0)\\).",
     "a": "0",
     "opts": [
-      "$3$",
-      "$0$",
-      "$6$",
-      "$9$"
+      "\\(3\\)",
+      "\\(0\\)",
+      "\\(6\\)",
+      "\\(9\\)"
     ],
-    "h": "Substitute $x = 0$ into the expression for $f(x)$.",
-    "s": "Substitute $0$ into $f(x) = x + 3$:\n$f(0) = 0 + 3 = 3$.",
+    "h": "Substitute \\(x = 0\\) into the expression for \\(f(x)\\).",
+    "s": "Substitute \\(0\\) into \\(f(x) = x + 3\\):\n\\(f(0) = 0 + 3 = 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 0\\) into \\(f(x) = x + 3\\).",
-        "workingOut": "f(0) = 0 + 3 = 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(0) = 0 + 3 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(f(0) = 0 + 3 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1aii",
@@ -14027,26 +14127,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate the composite function $f(f(0))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate the composite function \\(f(f(0))\\).",
+    "a": "2",
     "opts": [
-      "$6$",
-      "$3$",
-      "$9$",
-      "$12$"
+      "\\(3\\)",
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(12\\)"
     ],
-    "h": "First evaluate $f(0)$, then substitute that result back into $f(x)$.",
-    "s": "First, evaluate the inside function: $f(0) = 3$.\nThen evaluate the outside function at that result: $f(f(0)) = f(3) = 3 + 3 = 6$.",
+    "h": "First evaluate \\(f(0)\\), then substitute that result back into \\(f(x)\\).",
+    "s": "First, evaluate the inside function: \\(f(0) = 3\\).\nThen evaluate the outside function at that result: \\(f(f(0)) = f(3) = 3 + 3 = 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(0)\\).",
-        "workingOut": "f(0) = 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(0) = 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function \\(f(x)\\).",
-        "workingOut": "f(f(0)) = f(3) = 3 + 3 = 6"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(0)) = f(3) = 3 + 3 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1aiii",
@@ -14054,26 +14162,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate the composite function $f(f(f(0)))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate the composite function \\(f(f(f(0)))\\).",
+    "a": "1",
     "opts": [
-      "$9$",
-      "$6$",
-      "$12$",
-      "$15$"
+      "\\(6\\)",
+      "\\(9\\)",
+      "\\(12\\)",
+      "\\(15\\)"
     ],
-    "h": "Find $f(0)$, then $f(f(0))$, and finally substitute that value into $f(x)$ again.",
-    "s": "We know from previous steps:\n$f(0) = 3$\n$f(f(0)) = f(3) = 6$\nSo, $f(f(f(0))) = f(6) = 6 + 3 = 9$.",
+    "h": "Find \\(f(0)\\), then \\(f(f(0))\\), and finally substitute that value into \\(f(x)\\) again.",
+    "s": "We know from previous steps:\n\\(f(0) = 3\\)\n\\(f(f(0)) = f(3) = 6\\)\nSo, \\(f(f(f(0))) = f(6) = 6 + 3 = 9\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the composite function \\(f(f(0))\\) first.",
-        "workingOut": "f(f(0)) = 6"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(f(0)) = 6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(f(6)\\) to find the final value.",
-        "workingOut": "f(f(f(0))) = f(6) = 6 + 3 = 9"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(f(0))) = f(6) = 6 + 3 = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1b",
@@ -14081,26 +14197,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. If we repeatedly compose the function $f$ with itself starting at $x = 0$ (generating the sequence $f(0)$, $f(f(0))$, $f(f(f(0)))$, ...), what number pattern is formed?",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). If we repeatedly compose the function \\(f\\) with itself starting at \\(x = 0\\) (generating the sequence \\(f(0)\\), \\(f(f(0))\\), \\(f(f(f(0)))\\), ...), what number pattern is formed?",
+    "a": "3",
     "opts": [
-      "An arithmetic sequence starting at $3$ with a common difference of $3$",
-      "A geometric sequence starting at $3$ with a common ratio of $3$",
-      "An arithmetic sequence starting at $0$ with a common difference of $3$",
-      "A constant sequence: $3, 3, 3, dots$"
+      "A geometric sequence starting at \\(3\\) with a common ratio of \\(3\\)",
+      "An arithmetic sequence starting at \\(0\\) with a common difference of \\(3\\)",
+      "A constant sequence: \\(3, 3, 3, dots\\)",
+      "An arithmetic sequence starting at \\(3\\) with a common difference of \\(3\\)"
     ],
-    "h": "Look at the values evaluated: $3, 6, 9, dots$",
-    "s": "Evaluating the terms gives $3, 6, 9, 12, dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $3$ with a common difference of $3$.",
+    "h": "Look at the values evaluated: \\(3, 6, 9, dots\\)",
+    "s": "Evaluating the terms gives \\(3, 6, 9, 12, dots\\), which increases by \\(3\\) each time. This is an arithmetic sequence starting at \\(3\\) with a common difference of \\(3\\).",
     "solutionSteps": [
       {
-        "explanation": "Write out the first few terms of the sequence.",
-        "workingOut": "3, 6, 9, 12, dots"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(3, 6, 9, 12, dots\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the type of sequence and its parameters.",
-        "workingOut": "\\text{Common difference} = 3, text{ First term} = 3 \\implies \\text{Arithmetic sequence}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Common difference} = 3, text{ First term} = 3 \\implies \\text{Arithmetic sequence}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(An arithmetic sequence starting at 3 with a common difference of 3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1ci",
@@ -14108,22 +14232,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate $f(1)$.",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate \\(f(1)\\).",
     "a": "0",
     "opts": [
-      "$4$",
-      "$1$",
-      "$7$",
-      "$10$"
+      "\\(4\\)",
+      "\\(1\\)",
+      "\\(7\\)",
+      "\\(10\\)"
     ],
-    "h": "Substitute $x = 1$ into $f(x) = x + 3$.",
-    "s": "Substitute $1$ into $f(x) = x + 3$:\n$f(1) = 1 + 3 = 4$.",
+    "h": "Substitute \\(x = 1\\) into \\(f(x) = x + 3\\).",
+    "s": "Substitute \\(1\\) into \\(f(x) = x + 3\\):\n\\(f(1) = 1 + 3 = 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(x = 1\\) into \\(f(x) = x + 3\\).",
-        "workingOut": "f(1) = 1 + 3 = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(1) = 1 + 3 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(f(1) = 1 + 3 = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1cii",
@@ -14131,26 +14267,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate $f(f(1))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate \\(f(f(1))\\).",
+    "a": "2",
     "opts": [
-      "$7$",
-      "$4$",
-      "$10$",
-      "$13$"
+      "\\(4\\)",
+      "\\(10\\)",
+      "\\(7\\)",
+      "\\(13\\)"
     ],
-    "h": "Find the value of $f(1)$ and plug it back into the function $f(x)$.",
-    "s": "First, evaluate the inner function: $f(1) = 4$.\nNext, evaluate $f(4) = 4 + 3 = 7$.",
+    "h": "Find the value of \\(f(1)\\) and plug it back into the function \\(f(x)\\).",
+    "s": "First, evaluate the inner function: \\(f(1) = 4\\).\nNext, evaluate \\(f(4) = 4 + 3 = 7\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(1)\\).",
-        "workingOut": "f(1) = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(1) = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the result into \\(f(x)\\) to get \\(f(f(1))\\).",
-        "workingOut": "f(f(1)) = f(4) = 4 + 3 = 7"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(1)) = f(4) = 4 + 3 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1ciii",
@@ -14158,26 +14302,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. Evaluate $f(f(f(1)))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). Evaluate \\(f(f(f(1)))\\).",
+    "a": "1",
     "opts": [
-      "$10$",
-      "$7$",
-      "$13$",
-      "$16$"
+      "\\(7\\)",
+      "\\(10\\)",
+      "\\(13\\)",
+      "\\(16\\)"
     ],
-    "h": "Evaluate $f(f(1))$ first, then plug that value into $f(x)$ one more time.",
-    "s": "We know from previous steps:\n$f(f(1)) = 7$.\nTherefore, $f(f(f(1))) = f(7) = 7 + 3 = 10$.",
+    "h": "Evaluate \\(f(f(1))\\) first, then plug that value into \\(f(x)\\) one more time.",
+    "s": "We know from previous steps:\n\\(f(f(1)) = 7\\).\nTherefore, \\(f(f(f(1))) = f(7) = 7 + 3 = 10\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the composite function \\(f(f(1))\\).",
-        "workingOut": "f(f(1)) = 7"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(f(1)) = 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(f(7)\\) to obtain the final answer.",
-        "workingOut": "f(f(f(1))) = f(7) = 7 + 3 = 10"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(f(1))) = f(7) = 7 + 3 = 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(10\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-1d",
@@ -14185,26 +14337,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 3$. If we repeatedly compose the function $f$ with itself starting at $x = 1$ (generating the sequence $f(1)$, $f(f(1))$, $f(f(f(1)))$, ...), what number pattern is formed?",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 3\\). If we repeatedly compose the function \\(f\\) with itself starting at \\(x = 1\\) (generating the sequence \\(f(1)\\), \\(f(f(1))\\), \\(f(f(f(1)))\\), ...), what number pattern is formed?",
+    "a": "3",
     "opts": [
-      "An arithmetic sequence starting at $4$ with a common difference of $3$",
-      "A geometric sequence starting at $4$ with a common ratio of $3$",
-      "An arithmetic sequence starting at $1$ with a common difference of $3$",
-      "A constant sequence: $4, 4, 4, dots$"
+      "A geometric sequence starting at \\(4\\) with a common ratio of \\(3\\)",
+      "An arithmetic sequence starting at \\(1\\) with a common difference of \\(3\\)",
+      "A constant sequence: \\(4, 4, 4, dots\\)",
+      "An arithmetic sequence starting at \\(4\\) with a common difference of \\(3\\)"
     ],
-    "h": "Evaluate the terms of the sequence: $4, 7, 10, dots$",
-    "s": "The terms are $4, 7, 10, 13, dots$, which increases by $3$ each time. This is an arithmetic sequence starting at $4$ with a common difference of $3$.",
+    "h": "Evaluate the terms of the sequence: \\(4, 7, 10, dots\\)",
+    "s": "The terms are \\(4, 7, 10, 13, dots\\), which increases by \\(3\\) each time. This is an arithmetic sequence starting at \\(4\\) with a common difference of \\(3\\).",
     "solutionSteps": [
       {
-        "explanation": "Write out the first few terms of the sequence.",
-        "workingOut": "4, 7, 10, 13, dots"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(4, 7, 10, 13, dots\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the type of sequence and its parameters.",
-        "workingOut": "\\text{Common difference} = 3, text{ First term} = 4 \\implies \\text{Arithmetic sequence}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Common difference} = 3, text{ First term} = 4 \\implies \\text{Arithmetic sequence}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(An arithmetic sequence starting at 4 with a common difference of 3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2ai",
@@ -14212,26 +14372,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find the value of $f(f(5))$.",
+    "q": "Let \\(f(x) = x + 4\\). Find the value of \\(f(f(5))\\).",
     "a": "0",
     "opts": [
-      "$13$",
-      "$9$",
-      "$17$",
-      "$5$"
+      "\\(13\\)",
+      "\\(9\\)",
+      "\\(17\\)",
+      "\\(5\\)"
     ],
-    "h": "First evaluate $f(5)$, then plug the result into $f(x)$.",
-    "s": "$f(5) = 5 + 4 = 9$.\nThen $f(f(5)) = f(9) = 9 + 4 = 13$.",
+    "h": "First evaluate \\(f(5)\\), then plug the result into \\(f(x)\\).",
+    "s": "\\(f(5) = 5 + 4 = 9\\).\nThen \\(f(f(5)) = f(9) = 9 + 4 = 13\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(5)\\).",
-        "workingOut": "f(5) = 5 + 4 = 9"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(5) = 5 + 4 = 9\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(f(9)\\) to find the final result.",
-        "workingOut": "f(f(5)) = f(9) = 9 + 4 = 13"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(5)) = f(9) = 9 + 4 = 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(13\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2aii",
@@ -14239,26 +14407,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find the value of $f(f(-2))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 4\\). Find the value of \\(f(f(-2))\\).",
+    "a": "2",
     "opts": [
-      "$6$",
-      "$2$",
-      "$8$",
-      "$-2$"
+      "\\(2\\)",
+      "\\(8\\)",
+      "\\(6\\)",
+      "\\(-2\\)"
     ],
-    "h": "First evaluate $f(-2)$, then plug the result into $f(x)$.",
-    "s": "$f(-2) = -2 + 4 = 2$.\nThen $f(f(-2)) = f(2) = 2 + 4 = 6$.",
+    "h": "First evaluate \\(f(-2)\\), then plug the result into \\(f(x)\\).",
+    "s": "\\(f(-2) = -2 + 4 = 2\\).\nThen \\(f(f(-2)) = f(2) = 2 + 4 = 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(-2)\\).",
-        "workingOut": "f(-2) = -2 + 4 = 2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(-2) = -2 + 4 = 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the outer function at that result.",
-        "workingOut": "f(f(-2)) = f(2) = 2 + 4 = 6"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(-2)) = f(2) = 2 + 4 = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2aiii",
@@ -14266,26 +14442,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find the value of $f(f(-7))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 4\\). Find the value of \\(f(f(-7))\\).",
+    "a": "1",
     "opts": [
-      "$1$",
-      "$-3$",
-      "$5$",
-      "$-7$"
+      "\\(-3\\)",
+      "\\(1\\)",
+      "\\(5\\)",
+      "\\(-7\\)"
     ],
-    "h": "Evaluate $f(-7)$ and then substitute that value back into $f(x)$.",
-    "s": "$f(-7) = -7 + 4 = -3$.\nThen $f(f(-7)) = f(-3) = -3 + 4 = 1$.",
+    "h": "Evaluate \\(f(-7)\\) and then substitute that value back into \\(f(x)\\).",
+    "s": "\\(f(-7) = -7 + 4 = -3\\).\nThen \\(f(f(-7)) = f(-3) = -3 + 4 = 1\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(-7)\\).",
-        "workingOut": "f(-7) = -7 + 4 = -3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(-7) = -7 + 4 = -3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(f(-3)\\) to obtain the final answer.",
-        "workingOut": "f(f(-7)) = f(-3) = -3 + 4 = 1"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(f(-7)) = f(-3) = -3 + 4 = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2bi",
@@ -14293,26 +14477,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find an expression for $f(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 4\\). Find an expression for \\(f(f(x))\\).",
+    "a": "3",
     "opts": [
-      "$x + 8$",
-      "$x + 4$",
-      "$2x + 8$",
-      "$x^2 + 8$"
+      "\\(x + 4\\)",
+      "\\(2x + 8\\)",
+      "\\(x^2 + 8\\)",
+      "\\(x + 8\\)"
     ],
-    "h": "Substitute the formula for $f(x)$ into the variable $x$ in $f(x)$.",
-    "s": "$f(f(x)) = f(x + 4) = (x + 4) + 4 = x + 8$.",
+    "h": "Substitute the formula for \\(f(x)\\) into the variable \\(x\\) in \\(f(x)\\).",
+    "s": "\\(f(f(x)) = f(x + 4) = (x + 4) + 4 = x + 8\\).",
     "solutionSteps": [
       {
-        "explanation": "Write down the definition of the composite function.",
-        "workingOut": "f(f(x)) = f(x+4)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(f(x)) = f(x+4)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x+4\\) into the function expression.",
-        "workingOut": "(x+4) + 4 = x + 8"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\((x+4) + 4 = x + 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x + 8\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2bii",
@@ -14320,26 +14512,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find an expression for $f(f(f(x)))$.",
+    "q": "Let \\(f(x) = x + 4\\). Find an expression for \\(f(f(f(x)))\\).",
     "a": "0",
     "opts": [
-      "$x + 12$",
-      "$x + 8$",
-      "$3x + 12$",
-      "$x^3 + 12$"
+      "\\(x + 12\\)",
+      "\\(x + 8\\)",
+      "\\(3x + 12\\)",
+      "\\(x^3 + 12\\)"
     ],
-    "h": "Substitute the expression for $f(f(x))$ into $f(x)$.",
-    "s": "We know $f(f(x)) = x + 8$.\nTherefore, $f(f(f(x))) = f(x + 8) = (x + 8) + 4 = x + 12$.",
+    "h": "Substitute the expression for \\(f(f(x))\\) into \\(f(x)\\).",
+    "s": "We know \\(f(f(x)) = x + 8\\).\nTherefore, \\(f(f(f(x))) = f(x + 8) = (x + 8) + 4 = x + 12\\).",
     "solutionSteps": [
       {
-        "explanation": "Use the previously found expression for \\(f(f(x))\\).",
-        "workingOut": "f(f(f(x))) = f(x+8)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(f(f(x))) = f(x+8)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x+8\\) into the function \\(f(x)\\).",
-        "workingOut": "(x+8) + 4 = x + 12"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\((x+8) + 4 = x + 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x + 12\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-2c",
@@ -14347,26 +14547,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x + 4$. Find the value of $x$ for which $f(f(x)) = 0$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x + 4\\). Find the value of \\(x\\) for which \\(f(f(x)) = 0\\).",
+    "a": "2",
     "opts": [
-      "$-8$",
-      "$-4$",
-      "$0$",
-      "$8$"
+      "\\(-4\\)",
+      "\\(0\\)",
+      "\\(-8\\)",
+      "\\(8\\)"
     ],
-    "h": "Set your expression for $f(f(x))$ equal to $0$ and solve for $x$.",
-    "s": "We found $f(f(x)) = x + 8$.\nSet $f(f(x)) = 0 \\implies x + 8 = 0 \\implies x = -8$.",
+    "h": "Set your expression for \\(f(f(x))\\) equal to \\(0\\) and solve for \\(x\\).",
+    "s": "We found \\(f(f(x)) = x + 8\\).\nSet \\(f(f(x)) = 0 \\implies x + 8 = 0 \\implies x = -8\\).",
     "solutionSteps": [
       {
-        "explanation": "Set the composite function equation.",
-        "workingOut": "x + 8 = 0"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(x + 8 = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\).",
-        "workingOut": "x = -8"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x = -8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-8\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3ai",
@@ -14374,26 +14582,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $g(x) = 5 - x$. Find the value of $g(g(0))$.",
-    "a": "0",
+    "q": "Consider the function \\(g(x) = 5 - x\\). Find the value of \\(g(g(0))\\).",
+    "a": "1",
     "opts": [
-      "$0$",
-      "$5$",
-      "$-5$",
-      "$10$"
+      "\\(5\\)",
+      "\\(0\\)",
+      "\\(-5\\)",
+      "\\(10\\)"
     ],
-    "h": "Evaluate $g(0)$ first, then substitute it back into $g(x)$.",
-    "s": "$g(0) = 5 - 0 = 5$.\nThen $g(g(0)) = g(5) = 5 - 5 = 0$.",
+    "h": "Evaluate \\(g(0)\\) first, then substitute it back into \\(g(x)\\).",
+    "s": "\\(g(0) = 5 - 0 = 5\\).\nThen \\(g(g(0)) = g(5) = 5 - 5 = 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(0)\\).",
-        "workingOut": "g(0) = 5 - 0 = 5"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(0) = 5 - 0 = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the outer function.",
-        "workingOut": "g(g(0)) = g(5) = 5 - 5 = 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(g(0)) = g(5) = 5 - 5 = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3aii",
@@ -14401,26 +14617,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $g(x) = 5 - x$. Find the value of $g(g(3))$.",
-    "a": "0",
+    "q": "Consider the function \\(g(x) = 5 - x\\). Find the value of \\(g(g(3))\\).",
+    "a": "3",
     "opts": [
-      "$3$",
-      "$2$",
-      "$5$",
-      "$0$"
+      "\\(2\\)",
+      "\\(5\\)",
+      "\\(0\\)",
+      "\\(3\\)"
     ],
-    "h": "Evaluate $g(3)$ first, then substitute it back into $g(x)$.",
-    "s": "$g(3) = 5 - 3 = 2$.\nThen $g(g(3)) = g(2) = 5 - 2 = 3$.",
+    "h": "Evaluate \\(g(3)\\) first, then substitute it back into \\(g(x)\\).",
+    "s": "\\(g(3) = 5 - 3 = 2\\).\nThen \\(g(g(3)) = g(2) = 5 - 2 = 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(3)\\).",
-        "workingOut": "g(3) = 5 - 3 = 2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(3) = 5 - 3 = 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the outer function.",
-        "workingOut": "g(g(3)) = g(2) = 5 - 2 = 3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(g(3)) = g(2) = 5 - 2 = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3aiii",
@@ -14428,26 +14652,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $g(x) = 5 - x$. Find the value of $g(g(-3))$.",
+    "q": "Consider the function \\(g(x) = 5 - x\\). Find the value of \\(g(g(-3))\\).",
     "a": "0",
     "opts": [
-      "$-3$",
-      "$8$",
-      "$3$",
-      "$5$"
+      "\\(-3\\)",
+      "\\(8\\)",
+      "\\(3\\)",
+      "\\(5\\)"
     ],
-    "h": "Evaluate $g(-3)$ first, then substitute it back into $g(x)$.",
-    "s": "$g(-3) = 5 - (-3) = 8$.\nThen $g(g(-3)) = g(8) = 5 - 8 = -3$.",
+    "h": "Evaluate \\(g(-3)\\) first, then substitute it back into \\(g(x)\\).",
+    "s": "\\(g(-3) = 5 - (-3) = 8\\).\nThen \\(g(g(-3)) = g(8) = 5 - 8 = -3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(-3)\\).",
-        "workingOut": "g(-3) = 5 - (-3) = 8"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(-3) = 5 - (-3) = 8\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the outer function.",
-        "workingOut": "g(g(-3)) = g(8) = 5 - 8 = -3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(g(-3)) = g(8) = 5 - 8 = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3aiv",
@@ -14455,70 +14687,100 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $g(x) = 5 - x$. Find the value of $g(g(-8))$.",
-    "a": "0",
+    "q": "Consider the function \\(g(x) = 5 - x\\). Find the value of \\(g(g(-8))\\).",
+    "a": "2",
     "opts": [
-      "$-8$",
-      "$13$",
-      "$8$",
-      "$5$"
+      "\\(13\\)",
+      "\\(8\\)",
+      "\\(-8\\)",
+      "\\(5\\)"
     ],
-    "h": "Evaluate $g(-8)$ first, then substitute it back into $g(x)$.",
-    "s": "$g(-8) = 5 - (-8) = 13$.\nThen $g(g(-8)) = g(13) = 5 - 13 = -8$.",
+    "h": "Evaluate \\(g(-8)\\) first, then substitute it back into \\(g(x)\\).",
+    "s": "\\(g(-8) = 5 - (-8) = 13\\).\nThen \\(g(g(-8)) = g(13) = 5 - 13 = -8\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(-8)\\).",
-        "workingOut": "g(-8) = 5 - (-8) = 13"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(-8) = 5 - (-8) = 13\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the outer function.",
-        "workingOut": "g(g(-8)) = g(13) = 5 - 13 = -8"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(g(-8)) = g(13) = 5 - 13 = -8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-8\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3b",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "For the function $g(x) = 5 - x$, show algebraically that $g(g(x)) = x$ for all $x$.",
-    "a": "g(g(x)) = 5 - (5 - x) = x",
-    "opts": [],
-    "h": "Substitute the algebraic expression of $g(x)$ in place of the input variable $x$ in $g(x)$.",
-    "s": "$g(g(x)) = 5 - g(x) = 5 - (5 - x) = 5 - 5 + x = x$.",
+    "q": "For the function \\(g(x) = 5 - x\\), which identity correctly shows that \\(g(g(x)) = x\\) for all \\(x\\)?",
+    "a": "2",
+    "opts": [
+      "\\(g(g(x)) = 5 - x\\)",
+      "\\(g(g(x)) = x - 5\\)",
+      "\\(g(g(x)) = 5 - (5 - x) = x\\)",
+      "\\(g(g(x)) = -x\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Set up the composition algebraically.",
-        "workingOut": "g(g(x)) = 5 - g(x)"
+        "explanation": "Composition means substitute the entire expression for g into itself. Write g(g(x)) = 5 - g(x), then replace g(x) by 5 - x. This proves g is an involution (its own inverse).",
+        "workingOut": "\\(g(g(x)) = 5 - g(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(g(x) = 5 - x\\) and simplify.",
-        "workingOut": "5 - (5 - x) = 5 - 5 + x = x"
+        "explanation": "Substitute g(x) = 5 - x carefully. Distribute the minus sign: 5 - (5 - x) = 5 - 5 + x. A common error is writing 5 - 5 - x = -x.",
+        "workingOut": "\\(5 - (5 - x) = 5 - 5 + x = x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore g(g(x)) = x for every real x. The correct algebraic identity is g(g(x)) = 5 - (5 - x) = x.",
+        "workingOut": "\\(g(g(x)) = x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-3c",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "For the function $g(x) = 5 - x$, show algebraically that $g(g(g(x))) = g(x)$ for all $x$.",
-    "a": "g(g(g(x))) = g(x) since g(g(x)) = x",
-    "opts": [],
-    "h": "Use the result from the previous part: $g(g(u)) = u$ for any input $u$.",
-    "s": "$g(g(g(x))) = g(g(g(x)))$ but since $g(g(x)) = x$, we have $g(g(g(x))) = g(x)$.\nAlternatively, $g(g(g(x))) = 5 - g(g(x)) = 5 - x = g(x)$.",
+    "q": "For \\(g(x) = 5 - x\\), which statement correctly shows that \\(g(g(g(x))) = g(x)\\) for all \\(x\\)?",
+    "a": "0",
+    "opts": [
+      "\\(g(g(g(x))) = g(x)\\) because \\(g(g(x)) = x\\)",
+      "\\(g(g(g(x))) = x\\) for all \\(x\\)",
+      "\\(g(g(g(x))) = 5 - x\\) only when \\(x = 0\\)",
+      "\\(g(g(g(x))) = -g(x)\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Apply the identity \\(g(g(x)) = x\\) to the inner part of the composition.",
-        "workingOut": "g(g(g(x))) = g(g(g(x))) = g(x)"
+        "explanation": "From the previous result, g(g(x)) = x. Apply g once more: g(g(g(x))) = g(g(g(x))). Group the inner two applications first.",
+        "workingOut": "\\(g(g(x)) = x\\)",
+        "graphData": null
       },
       {
-        "explanation": "Alternatively, substitute \\(g(g(x)) = x\\) into the outer function.",
-        "workingOut": "g(g(g(x))) = 5 - g(g(x)) = 5 - x = g(x)"
+        "explanation": "Then g(g(g(x))) = g( g(g(x)) ) = g(x). So three compositions return g itself.",
+        "workingOut": "\\(g(g(g(x))) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The correct statement is g(g(g(x))) = g(x) because g(g(x)) = x.",
+        "workingOut": "\\(\\text{True for all } x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4ai",
@@ -14526,26 +14788,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find the value of $h(h(0))$.",
-    "a": "0",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find the value of \\(h(h(0))\\).",
+    "a": "1",
     "opts": [
-      "$-9$",
-      "$-3$",
-      "$-6$",
-      "$3$"
+      "\\(-3\\)",
+      "\\(-9\\)",
+      "\\(-6\\)",
+      "\\(3\\)"
     ],
-    "h": "Evaluate $h(0)$ first, then substitute it back into $h(x)$.",
-    "s": "$h(0) = 2(0) - 3 = -3$.\nThen $h(h(0)) = h(-3) = 2(-3) - 3 = -6 - 3 = -9$.",
+    "h": "Evaluate \\(h(0)\\) first, then substitute it back into \\(h(x)\\).",
+    "s": "\\(h(0) = 2(0) - 3 = -3\\).\nThen \\(h(h(0)) = h(-3) = 2(-3) - 3 = -6 - 3 = -9\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(0)\\).",
-        "workingOut": "h(0) = 2(0) - 3 = -3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(0) = 2(0) - 3 = -3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function.",
-        "workingOut": "h(h(0)) = h(-3) = 2(-3) - 3 = -9"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(h(0)) = h(-3) = 2(-3) - 3 = -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4aii",
@@ -14553,26 +14823,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find the value of $h(h(4))$.",
-    "a": "0",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find the value of \\(h(h(4))\\).",
+    "a": "3",
     "opts": [
-      "$7$",
-      "$5$",
-      "$10$",
-      "$11$"
+      "\\(5\\)",
+      "\\(10\\)",
+      "\\(11\\)",
+      "\\(7\\)"
     ],
-    "h": "Evaluate $h(4)$ first, then substitute it back into $h(x)$.",
-    "s": "$h(4) = 2(4) - 3 = 5$.\nThen $h(h(4)) = h(5) = 2(5) - 3 = 10 - 3 = 7$.",
+    "h": "Evaluate \\(h(4)\\) first, then substitute it back into \\(h(x)\\).",
+    "s": "\\(h(4) = 2(4) - 3 = 5\\).\nThen \\(h(h(4)) = h(5) = 2(5) - 3 = 10 - 3 = 7\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(4)\\).",
-        "workingOut": "h(4) = 2(4) - 3 = 5"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(4) = 2(4) - 3 = 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function.",
-        "workingOut": "h(h(4)) = h(5) = 2(5) - 3 = 7"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(h(4)) = h(5) = 2(5) - 3 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4aiii",
@@ -14580,26 +14858,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find the value of $h(h(-2))$.",
-    "a": "0",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find the value of \\(h(h(-2))\\).",
+    "a": "1",
     "opts": [
-      "$-17$",
-      "$-7$",
-      "$-14$",
-      "$-20$"
+      "\\(-7\\)",
+      "\\(-17\\)",
+      "\\(-14\\)",
+      "\\(-20\\)"
     ],
-    "h": "Evaluate $h(-2)$ first, then substitute it back into $h(x)$.",
-    "s": "$h(-2) = 2(-2) - 3 = -7$.\nThen $h(h(-2)) = h(-7) = 2(-7) - 3 = -14 - 3 = -17$.",
+    "h": "Evaluate \\(h(-2)\\) first, then substitute it back into \\(h(x)\\).",
+    "s": "\\(h(-2) = 2(-2) - 3 = -7\\).\nThen \\(h(h(-2)) = h(-7) = 2(-7) - 3 = -14 - 3 = -17\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(-2)\\).",
-        "workingOut": "h(-2) = 2(-2) - 3 = -7"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(-2) = 2(-2) - 3 = -7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function.",
-        "workingOut": "h(h(-2)) = h(-7) = 2(-7) - 3 = -17"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(h(-2)) = h(-7) = 2(-7) - 3 = -17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-17\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4aiv",
@@ -14607,26 +14893,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find the value of $h(h(-4))$.",
-    "a": "0",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find the value of \\(h(h(-4))\\).",
+    "a": "3",
     "opts": [
-      "$-25$",
-      "$-11$",
-      "$-22$",
-      "$-28$"
+      "\\(-11\\)",
+      "\\(-22\\)",
+      "\\(-28\\)",
+      "\\(-25\\)"
     ],
-    "h": "Evaluate $h(-4)$ first, then substitute it back into $h(x)$.",
-    "s": "$h(-4) = 2(-4) - 3 = -11$.\nThen $h(h(-4)) = h(-11) = 2(-11) - 3 = -22 - 3 = -25$.",
+    "h": "Evaluate \\(h(-4)\\) first, then substitute it back into \\(h(x)\\).",
+    "s": "\\(h(-4) = 2(-4) - 3 = -11\\).\nThen \\(h(h(-4)) = h(-11) = 2(-11) - 3 = -22 - 3 = -25\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(-4)\\).",
-        "workingOut": "h(-4) = 2(-4) - 3 = -11"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(-4) = 2(-4) - 3 = -11\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function.",
-        "workingOut": "h(h(-4)) = h(-11) = 2(-11) - 3 = -25"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(h(-4)) = h(-11) = 2(-11) - 3 = -25\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-25\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4bi",
@@ -14634,26 +14928,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find an expression for the composite function $h(h(x))$.",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find an expression for the composite function \\(h(h(x))\\).",
     "a": "0",
     "opts": [
-      "$4x - 9$",
-      "$4x - 6$",
-      "$2x - 6$",
-      "$4x - 3$"
+      "\\(4x - 9\\)",
+      "\\(4x - 6\\)",
+      "\\(2x - 6\\)",
+      "\\(4x - 3\\)"
     ],
-    "h": "Substitute the expression for $h(x)$ into $h(x)$.",
-    "s": "$h(h(x)) = 2(h(x)) - 3 = 2(2x - 3) - 3 = 4x - 6 - 3 = 4x - 9$.",
+    "h": "Substitute the expression for \\(h(x)\\) into \\(h(x)\\).",
+    "s": "\\(h(h(x)) = 2(h(x)) - 3 = 2(2x - 3) - 3 = 4x - 6 - 3 = 4x - 9\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute the expression for \\(h(x)\\) into itself.",
-        "workingOut": "h(h(x)) = 2(2x-3) - 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(h(x)) = 2(2x-3) - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the parenthesis and simplify.",
-        "workingOut": "4x - 6 - 3 = 4x - 9"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(4x - 6 - 3 = 4x - 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(4x - 9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-4bii",
@@ -14661,26 +14963,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the function $h(x) = 2x - 3$. Find an expression for the composite function $h(h(h(x)))$.",
-    "a": "0",
+    "q": "Consider the function \\(h(x) = 2x - 3\\). Find an expression for the composite function \\(h(h(h(x)))\\).",
+    "a": "2",
     "opts": [
-      "$8x - 21$",
-      "$8x - 18$",
-      "$4x - 9$",
-      "$8x - 9$"
+      "\\(8x - 18\\)",
+      "\\(4x - 9\\)",
+      "\\(8x - 21\\)",
+      "\\(8x - 9\\)"
     ],
-    "h": "Substitute the expression for $h(h(x))$ into $h(x)$.",
-    "s": "$h(h(h(x))) = 2(h(h(x))) - 3 = 2(4x - 9) - 3 = 8x - 18 - 3 = 8x - 21$.",
+    "h": "Substitute the expression for \\(h(h(x))\\) into \\(h(x)\\).",
+    "s": "\\(h(h(h(x))) = 2(h(h(x))) - 3 = 2(4x - 9) - 3 = 8x - 18 - 3 = 8x - 21\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute the expression for \\(h(h(x))\\) into \\(h(x)\\).",
-        "workingOut": "h(h(h(x))) = 2(4x-9) - 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(h(h(x))) = 2(4x-9) - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the parenthesis and simplify.",
-        "workingOut": "8x - 18 - 3 = 8x - 21"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(8x - 18 - 3 = 8x - 21\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(8x - 21\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5a",
@@ -14688,26 +14998,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$. Find the domain and range of the function $y = f(x)$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\). Find the domain and range of the function \\(y = f(x)\\).",
+    "a": "1",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -9$",
-      "Domain: $x \\ge 0$, Range: $y \\ge -9$",
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: all real $y$"
+      "Domain: \\(x \\ge 0\\), Range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: all real \\(y\\)"
     ],
-    "h": "The function $y = x^2 - 9$ is a parabola. Think about its vertex.",
-    "s": "The graph of $y = x^2 - 9$ is a parabola opening upwards with its vertex at $(0, -9)$.\nTherefore, the domain is all real numbers (any value of $x$ can be squared),\nand the range is all values of $y$ greater than or equal to the minimum value, which is $-9$.",
+    "h": "The function \\(y = x^2 - 9\\) is a parabola. Think about its vertex.",
+    "s": "The graph of \\(y = x^2 - 9\\) is a parabola opening upwards with its vertex at \\((0, -9)\\).\nTherefore, the domain is all real numbers (any value of \\(x\\) can be squared),\nand the range is all values of \\(y\\) greater than or equal to the minimum value, which is \\(-9\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the shape and vertex of the function.",
-        "workingOut": "y = x^2 - 9 \\implies \\text{Parabola with vertex at } (0, -9)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(y = x^2 - 9 \\implies \\text{Parabola with vertex at } (0, -9)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine the domain (input values) and range (output values).",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = [ -9, infty )"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = [ -9, infty )\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5bi",
@@ -14715,26 +15033,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find the value of $f(g(2))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find the value of \\(f(g(2))\\).",
+    "a": "3",
     "opts": [
-      "$7$",
-      "$4$",
-      "$16$",
-      "$2$"
+      "\\(4\\)",
+      "\\(16\\)",
+      "\\(2\\)",
+      "\\(7\\)"
     ],
-    "h": "Evaluate $g(2)$ first, then substitute that result into $f(x)$.",
-    "s": "$g(2) = 2 + 2 = 4$.\nThen $f(g(2)) = f(4) = 4^2 - 9 = 16 - 9 = 7$.",
+    "h": "Evaluate \\(g(2)\\) first, then substitute that result into \\(f(x)\\).",
+    "s": "\\(g(2) = 2 + 2 = 4\\).\nThen \\(f(g(2)) = f(4) = 4^2 - 9 = 16 - 9 = 7\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(2)\\).",
-        "workingOut": "g(2) = 2 + 2 = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(2) = 2 + 2 = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the result into \\(f(x)\\).",
-        "workingOut": "f(4) = 4^2 - 9 = 7"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(4) = 4^2 - 9 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5bii",
@@ -14742,26 +15068,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find the value of $g(f(2))$.",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find the value of \\(g(f(2))\\).",
     "a": "0",
     "opts": [
-      "$-3$",
-      "$-5$",
-      "$2$",
-      "$7$"
+      "\\(-3\\)",
+      "\\(-5\\)",
+      "\\(2\\)",
+      "\\(7\\)"
     ],
-    "h": "Evaluate $f(2)$ first, then substitute that result into $g(x)$.",
-    "s": "$f(2) = 2^2 - 9 = 4 - 9 = -5$.\nThen $g(f(2)) = g(-5) = -5 + 2 = -3$.",
+    "h": "Evaluate \\(f(2)\\) first, then substitute that result into \\(g(x)\\).",
+    "s": "\\(f(2) = 2^2 - 9 = 4 - 9 = -5\\).\nThen \\(g(f(2)) = g(-5) = -5 + 2 = -3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(2)\\).",
-        "workingOut": "f(2) = 2^2 - 9 = -5"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(2) = 2^2 - 9 = -5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the result into \\(g(x)\\).",
-        "workingOut": "g(-5) = -5 + 2 = -3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(-5) = -5 + 2 = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5ci",
@@ -14769,26 +15103,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find an expression for the composite function $f(g(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find an expression for the composite function \\(f(g(x))\\).",
+    "a": "2",
     "opts": [
-      "$x^2 + 4x - 5$",
-      "$x^2 + 4x - 9$",
-      "$x^2 + 2x - 7$",
-      "$x^2 - 7$"
+      "\\(x^2 + 4x - 9\\)",
+      "\\(x^2 + 2x - 7\\)",
+      "\\(x^2 + 4x - 5\\)",
+      "\\(x^2 - 7\\)"
     ],
-    "h": "Substitute the expression for $g(x)$ in place of $x$ in the equation for $f(x)$.",
-    "s": "$f(g(x)) = f(x + 2) = (x + 2)^2 - 9 = x^2 + 4x + 4 - 9 = x^2 + 4x - 5$.",
+    "h": "Substitute the expression for \\(g(x)\\) in place of \\(x\\) in the equation for \\(f(x)\\).",
+    "s": "\\(f(g(x)) = f(x + 2) = (x + 2)^2 - 9 = x^2 + 4x + 4 - 9 = x^2 + 4x - 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(g(x) = x + 2\\) into \\(f(x)\\).",
-        "workingOut": "f(g(x)) = (x+2)^2 - 9"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(g(x)) = (x+2)^2 - 9\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the squared expression and simplify.",
-        "workingOut": "x^2 + 4x + 4 - 9 = x^2 + 4x - 5"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x^2 + 4x + 4 - 9 = x^2 + 4x - 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x^2 + 4x - 5\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5cii",
@@ -14796,26 +15138,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find an expression for the composite function $g(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find an expression for the composite function \\(g(f(x))\\).",
+    "a": "1",
     "opts": [
-      "$x^2 - 7$",
-      "$x^2 - 9$",
-      "$x^2 + 2x - 7$",
-      "$x^2 + 4x - 5$"
+      "\\(x^2 - 9\\)",
+      "\\(x^2 - 7\\)",
+      "\\(x^2 + 2x - 7\\)",
+      "\\(x^2 + 4x - 5\\)"
     ],
-    "h": "Substitute the expression for $f(x)$ in place of $x$ in the equation for $g(x)$.",
-    "s": "$g(f(x)) = g(x^2 - 9) = (x^2 - 9) + 2 = x^2 - 7$.",
+    "h": "Substitute the expression for \\(f(x)\\) in place of \\(x\\) in the equation for \\(g(x)\\).",
+    "s": "\\(g(f(x)) = g(x^2 - 9) = (x^2 - 9) + 2 = x^2 - 7\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(f(x) = x^2 - 9\\) into \\(g(x)\\).",
-        "workingOut": "g(f(x)) = (x^2 - 9) + 2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(f(x)) = (x^2 - 9) + 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the constant terms.",
-        "workingOut": "x^2 - 7"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x^2 - 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(x^2 - 7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5di",
@@ -14823,26 +15173,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Describe the geometric transformation that maps the graph of $y = f(x)$ to the graph of $y = f(g(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Describe the geometric transformation that maps the graph of \\(y = f(x)\\) to the graph of \\(y = f(g(x))\\).",
+    "a": "3",
     "opts": [
-      "Translation of $2$ units left",
-      "Translation of $2$ units right",
-      "Translation of $2$ units up",
-      "Translation of $2$ units down"
+      "Translation of \\(2\\) units right",
+      "Translation of \\(2\\) units up",
+      "Translation of \\(2\\) units down",
+      "Translation of \\(2\\) units left"
     ],
-    "h": "Compare the equation $y = f(g(x)) = f(x + 2)$ with $y = f(x)$.",
-    "s": "The composite function is $f(g(x)) = f(x + 2)$.\nReplacing $x$ with $x + c$ translates the graph horizontally by $c$ units.\nSince $c = 2 > 0$, this is a translation of $2$ units to the left.",
+    "h": "Compare the equation \\(y = f(g(x)) = f(x + 2)\\) with \\(y = f(x)\\).",
+    "s": "The composite function is \\(f(g(x)) = f(x + 2)\\).\nReplacing \\(x\\) with \\(x + c\\) translates the graph horizontally by \\(c\\) units.\nSince \\(c = 2 > 0\\), this is a translation of \\(2\\) units to the left.",
     "solutionSteps": [
       {
-        "explanation": "Write \\(f(g(x))\\) in terms of \\(f(x)\\).",
-        "workingOut": "f(g(x)) = f(x+2)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(g(x)) = f(x+2)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation from \\(f(x + c)\\).",
-        "workingOut": "x \\to x+2 \\implies \\text{Translation of 2 units left}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\to x+2 \\implies \\text{Translation of 2 units left}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Translation of \\(2\\) units left",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5dii",
@@ -14850,26 +15208,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find the domain and range of the composite function $y = f(g(x))$.",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find the domain and range of the composite function \\(y = f(g(x))\\).",
     "a": "0",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -9$",
-      "Domain: all real $x$, Range: $y \\ge -7$",
-      "Domain: $x \\ge -2$, Range: $y \\ge -9$",
-      "Domain: all real $x$, Range: $y \\ge 0$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -7\\)",
+      "Domain: \\(x \\ge -2\\), Range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)"
     ],
-    "h": "Use the fact that the graph of $y = f(g(x))$ is the graph of $y = f(x)$ shifted horizontally.",
-    "s": "The function $y = f(g(x)) = (x + 2)^2 - 9$ is a parabola with vertex at $(-2, -9)$.\nA horizontal translation does not change the vertical range of the function.\nTherefore, the domain remains all real $x$, and the range remains $y \\ge -9$.",
+    "h": "Use the fact that the graph of \\(y = f(g(x))\\) is the graph of \\(y = f(x)\\) shifted horizontally.",
+    "s": "The function \\(y = f(g(x)) = (x + 2)^2 - 9\\) is a parabola with vertex at \\((-2, -9)\\).\nA horizontal translation does not change the vertical range of the function.\nTherefore, the domain remains all real \\(x\\), and the range remains \\(y \\ge -9\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the vertex of the parabola \\(y = (x+2)^2 - 9\\).",
-        "workingOut": "\\text{Vertex} = (-2, -9)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Vertex} = (-2, -9)\\)",
+        "graphData": null
       },
       {
-        "explanation": "State the domain and range based on the vertex.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -9"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5ei",
@@ -14877,26 +15243,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Describe the geometric transformation that maps the graph of $y = f(x)$ to the graph of $y = g(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Describe the geometric transformation that maps the graph of \\(y = f(x)\\) to the graph of \\(y = g(f(x))\\).",
+    "a": "2",
     "opts": [
-      "Translation of $2$ units upwards",
-      "Translation of $2$ units downwards",
-      "Translation of $2$ units left",
-      "Translation of $2$ units right"
+      "Translation of \\(2\\) units downwards",
+      "Translation of \\(2\\) units left",
+      "Translation of \\(2\\) units upwards",
+      "Translation of \\(2\\) units right"
     ],
-    "h": "Compare the equation $y = g(f(x)) = f(x) + 2$ with $y = f(x)$.",
-    "s": "The composite function is $g(f(x)) = f(x) + 2$.\nAdding a constant $c$ to the entire function ($y = f(x) + c$) translates the graph vertically.\nSince $c = 2 > 0$, this is a vertical translation of $2$ units upwards.",
+    "h": "Compare the equation \\(y = g(f(x)) = f(x) + 2\\) with \\(y = f(x)\\).",
+    "s": "The composite function is \\(g(f(x)) = f(x) + 2\\).\nAdding a constant \\(c\\) to the entire function (\\(y = f(x) + c\\)) translates the graph vertically.\nSince \\(c = 2 > 0\\), this is a vertical translation of \\(2\\) units upwards.",
     "solutionSteps": [
       {
-        "explanation": "Write \\(g(f(x))\\) in terms of \\(f(x)\\).",
-        "workingOut": "g(f(x)) = f(x) + 2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(f(x)) = f(x) + 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation.",
-        "workingOut": "f(x) \\to f(x) + 2 \\implies \\text{Translation of 2 units up}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(x) \\to f(x) + 2 \\implies \\text{Translation of 2 units up}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Translation of \\(2\\) units upwards",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-5eii",
@@ -14904,26 +15278,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $f(x) = x^2 - 9$ and $g(x) = x + 2$. Find the domain and range of the composite function $y = g(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x^2 - 9\\) and \\(g(x) = x + 2\\). Find the domain and range of the composite function \\(y = g(f(x))\\).",
+    "a": "1",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -7$",
-      "Domain: all real $x$, Range: $y \\ge -9$",
-      "Domain: all real $x$, Range: $y \\ge -11$",
-      "Domain: all real $x$, Range: $y \\ge 0$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge -9\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -7\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -11\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)"
     ],
-    "h": "Use the fact that the graph of $y = g(f(x))$ is the graph of $y = f(x)$ shifted vertically upwards by $2$ units.",
-    "s": "The function is $y = g(f(x)) = x^2 - 7$.\nThis is a parabola with its vertex shifted up to $(0, -7)$.\nSo the domain is all real $x$, and the range is $y \\ge -7$.",
+    "h": "Use the fact that the graph of \\(y = g(f(x))\\) is the graph of \\(y = f(x)\\) shifted vertically upwards by \\(2\\) units.",
+    "s": "The function is \\(y = g(f(x)) = x^2 - 7\\).\nThis is a parabola with its vertex shifted up to \\((0, -7)\\).\nSo the domain is all real \\(x\\), and the range is \\(y \\ge -7\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the equation of the composite function.",
-        "workingOut": "y = x^2 - 7"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(y = x^2 - 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine the vertex and range.",
-        "workingOut": "\\text{Vertex} = (0, -7) \\implies \\text{Range} = y \\ge -7"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Vertex} = (0, -7) \\implies \\text{Range} = y \\ge -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -7\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6a",
@@ -14931,26 +15313,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$. Find the domain and range of $y = p(x)$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\). Find the domain and range of \\(y = p(x)\\).",
+    "a": "3",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -4$",
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: $y \\ge 4$",
-      "Domain: $x \\ge 0$, Range: $y \\ge -4$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 4\\)",
+      "Domain: \\(x \\ge 0\\), Range: \\(y \\ge -4\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -4\\)"
     ],
-    "h": "Complete the square for $p(x) = x^2 - 4x$ to find its vertex.",
-    "s": "$p(x) = x^2 - 4x = (x - 2)^2 - 4$.\nThis is a parabola opening upwards with vertex at $(2, -4)$.\nDomain is all real $x$, and range is $y \\ge -4$.",
+    "h": "Complete the square for \\(p(x) = x^2 - 4x\\) to find its vertex.",
+    "s": "\\(p(x) = x^2 - 4x = (x - 2)^2 - 4\\).\nThis is a parabola opening upwards with vertex at \\((2, -4)\\).\nDomain is all real \\(x\\), and range is \\(y \\ge -4\\).",
     "solutionSteps": [
       {
-        "explanation": "Expand and complete the square for \\(p(x)\\).",
-        "workingOut": "p(x) = x^2 - 4x = (x-2)^2 - 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(p(x) = x^2 - 4x = (x-2)^2 - 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find vertex and range.",
-        "workingOut": "\\text{Vertex} = (2, -4) \\implies \\text{Range} = y \\ge -4"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Vertex} = (2, -4) \\implies \\text{Range} = y \\ge -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6bi",
@@ -14958,26 +15348,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find the value of $p(d(1))$.",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find the value of \\(p(d(1))\\).",
     "a": "0",
     "opts": [
-      "$-3$",
-      "$3$",
-      "$-1$",
-      "$-9$"
+      "\\(-3\\)",
+      "\\(3\\)",
+      "\\(-1\\)",
+      "\\(-9\\)"
     ],
-    "h": "Evaluate $d(1)$ first, then substitute that value into $p(x)$.",
-    "s": "$d(1) = 3(1) = 3$.\nThen $p(d(1)) = p(3) = 3(3 - 4) = 3(-1) = -3$.",
+    "h": "Evaluate \\(d(1)\\) first, then substitute that value into \\(p(x)\\).",
+    "s": "\\(d(1) = 3(1) = 3\\).\nThen \\(p(d(1)) = p(3) = 3(3 - 4) = 3(-1) = -3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(d(1)\\).",
-        "workingOut": "d(1) = 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(d(1) = 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(3\\) into \\(p(x)\\).",
-        "workingOut": "p(3) = 3(3-4) = -3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(p(3) = 3(3-4) = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6bii",
@@ -14985,26 +15383,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find the value of $d(p(1))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find the value of \\(d(p(1))\\).",
+    "a": "2",
     "opts": [
-      "$-9$",
-      "$-3$",
-      "$3$",
-      "$-1$"
+      "\\(-3\\)",
+      "\\(3\\)",
+      "\\(-9\\)",
+      "\\(-1\\)"
     ],
-    "h": "Evaluate $p(1)$ first, then substitute that value into $d(x)$.",
-    "s": "$p(1) = 1(1 - 4) = -3$.\nThen $d(p(1)) = d(-3) = 3(-3) = -9$.",
+    "h": "Evaluate \\(p(1)\\) first, then substitute that value into \\(d(x)\\).",
+    "s": "\\(p(1) = 1(1 - 4) = -3\\).\nThen \\(d(p(1)) = d(-3) = 3(-3) = -9\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(p(1)\\).",
-        "workingOut": "p(1) = 1(1-4) = -3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(p(1) = 1(1-4) = -3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(-3\\) into \\(d(x)\\).",
-        "workingOut": "d(-3) = 3(-3) = -9"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(d(-3) = 3(-3) = -9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-9\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6ci",
@@ -15012,26 +15418,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find an expression for $p(d(x))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find an expression for \\(p(d(x))\\).",
+    "a": "1",
     "opts": [
-      "$9x^2 - 12x$",
-      "$3x^2 - 12x$",
-      "$3x(x - 4)$",
-      "$9x^2 - 4x$"
+      "\\(3x^2 - 12x\\)",
+      "\\(9x^2 - 12x\\)",
+      "\\(3x(x - 4)\\)",
+      "\\(9x^2 - 4x\\)"
     ],
-    "h": "Substitute the expression for $d(x) = 3x$ in place of $x$ in the equation for $p(x)$.",
-    "s": "$p(d(x)) = p(3x) = (3x)(3x - 4) = 9x^2 - 12x$.",
+    "h": "Substitute the expression for \\(d(x) = 3x\\) in place of \\(x\\) in the equation for \\(p(x)\\).",
+    "s": "\\(p(d(x)) = p(3x) = (3x)(3x - 4) = 9x^2 - 12x\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(d(x) = 3x\\) into \\(p(x)\\).",
-        "workingOut": "p(3x) = 3x(3x-4)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(p(3x) = 3x(3x-4)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the expression.",
-        "workingOut": "3x(3x-4) = 9x^2 - 12x"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(3x(3x-4) = 9x^2 - 12x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(9x^2 - 12x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6cii",
@@ -15039,26 +15453,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find an expression for $d(p(x))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find an expression for \\(d(p(x))\\).",
+    "a": "3",
     "opts": [
-      "$3x^2 - 12x$",
-      "$9x^2 - 12x$",
-      "$3x(3x - 4)$",
-      "$3x^2 - 4x$"
+      "\\(9x^2 - 12x\\)",
+      "\\(3x(3x - 4)\\)",
+      "\\(3x^2 - 4x\\)",
+      "\\(3x^2 - 12x\\)"
     ],
-    "h": "Substitute the expression for $p(x)$ inside $d(x)$.",
-    "s": "$d(p(x)) = 3(p(x)) = 3[x(x - 4)] = 3(x^2 - 4x) = 3x^2 - 12x$.",
+    "h": "Substitute the expression for \\(p(x)\\) inside \\(d(x)\\).",
+    "s": "\\(d(p(x)) = 3(p(x)) = 3[x(x - 4)] = 3(x^2 - 4x) = 3x^2 - 12x\\).",
     "solutionSteps": [
       {
-        "explanation": "Multiply the entire function \\(p(x)\\) by \\(3\\).",
-        "workingOut": "d(p(x)) = 3 \\cdot x(x-4)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(d(p(x)) = 3 \\cdot x(x-4)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the expression.",
-        "workingOut": "3(x^2 - 4x) = 3x^2 - 12x"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(3(x^2 - 4x) = 3x^2 - 12x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(3x^2 - 12x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6di",
@@ -15066,26 +15488,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Describe the transformation that maps the graph of $y = p(x)$ to the graph of $y = p(d(x))$.",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Describe the transformation that maps the graph of \\(y = p(x)\\) to the graph of \\(y = p(d(x))\\).",
     "a": "0",
     "opts": [
-      "Horizontal dilation by factor of $\\frac{1}{3}$ from the $y$-axis",
-      "Horizontal dilation by factor of $3$ from the $y$-axis",
-      "Vertical dilation by factor of $3$ from the $x$-axis",
-      "Vertical dilation by factor of $\\frac{1}{3}$ from the $x$-axis"
+      "Horizontal dilation by factor of \\(\\frac{1}{3}\\) from the \\(y\\)-axis",
+      "Horizontal dilation by factor of \\(3\\) from the \\(y\\)-axis",
+      "Vertical dilation by factor of \\(3\\) from the \\(x\\)-axis",
+      "Vertical dilation by factor of \\(\\frac{1}{3}\\) from the \\(x\\)-axis"
     ],
-    "h": "Compare $y = p(d(x)) = p(3x)$ with $y = p(x)$.",
-    "s": "The composite function is $p(3x)$.\nReplacing $x$ with $k x$ represents a horizontal dilation by a factor of $1/k$.\nSince $k = 3$, the graph of $y = p(x)$ is horizontally dilated (compressed) by a factor of $1/3$ from the $y$-axis.",
+    "h": "Compare \\(y = p(d(x)) = p(3x)\\) with \\(y = p(x)\\).",
+    "s": "The composite function is \\(p(3x)\\).\nReplacing \\(x\\) with \\(k x\\) represents a horizontal dilation by a factor of \\(1/k\\).\nSince \\(k = 3\\), the graph of \\(y = p(x)\\) is horizontally dilated (compressed) by a factor of \\(1/3\\) from the \\(y\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Formulate \\(p(d(x))\\) in terms of \\(p(x)\\).",
-        "workingOut": "p(d(x)) = p(3x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(p(d(x)) = p(3x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the horizontal transformation.",
-        "workingOut": "x \\to 3x \\implies \\text{Horizontal dilation by factor of } \\frac{1}{3}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\to 3x \\implies \\text{Horizontal dilation by factor of } \\frac{1}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Horizontal dilation by factor of \\(\\frac{1}{3}\\) from the \\(y\\)-axis",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6dii",
@@ -15093,26 +15523,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find the domain and range of the composite function $y = p(d(x))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find the domain and range of the composite function \\(y = p(d(x))\\).",
+    "a": "2",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -4$",
-      "Domain: all real $x$, Range: $y \\ge -12$",
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: $x \\ge 0$, Range: $y \\ge -4$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge -12\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -4\\)",
+      "Domain: \\(x \\ge 0\\), Range: \\(y \\ge -4\\)"
     ],
     "h": "Use the fact that a horizontal dilation does not affect the vertical range of the graph.",
-    "s": "$p(d(x)) = 9x^2 - 12x = (3x - 2)^2 - 4$.\nThis is a parabola with its vertex at $(2/3, -4)$.\nBecause horizontal compression only shifts the $x$-coordinate of the vertex but does not change the $y$-coordinate,\nthe range is still $y ge -4$, and the domain remains all real $x$.",
+    "s": "\\(p(d(x)) = 9x^2 - 12x = (3x - 2)^2 - 4\\).\nThis is a parabola with its vertex at \\((2/3, -4)\\).\nBecause horizontal compression only shifts the \\(x\\)-coordinate of the vertex but does not change the \\(y\\)-coordinate,\nthe range is still \\(y ge -4\\), and the domain remains all real \\(x\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the vertex of the new parabola \\(y = (3x-2)^2 - 4\\).",
-        "workingOut": "\\text{Vertex} = \\left(\\frac{2}{3}, -4\\right)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Vertex} = \\left(\\frac{2}{3}, -4\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -4"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6ei",
@@ -15120,26 +15558,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Describe the transformation that maps the graph of $y = p(x)$ to the graph of $y = d(p(x))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Describe the transformation that maps the graph of \\(y = p(x)\\) to the graph of \\(y = d(p(x))\\).",
+    "a": "1",
     "opts": [
-      "Vertical dilation by factor of $3$ from the $x$-axis",
-      "Vertical dilation by factor of $\\frac{1}{3}$ from the $x$-axis",
-      "Horizontal dilation by factor of $3$ from the $y$-axis",
-      "Horizontal dilation by factor of $\\frac{1}{3}$ from the $y$-axis"
+      "Vertical dilation by factor of \\(\\frac{1}{3}\\) from the \\(x\\)-axis",
+      "Vertical dilation by factor of \\(3\\) from the \\(x\\)-axis",
+      "Horizontal dilation by factor of \\(3\\) from the \\(y\\)-axis",
+      "Horizontal dilation by factor of \\(\\frac{1}{3}\\) from the \\(y\\)-axis"
     ],
-    "h": "Compare $y = d(p(x)) = 3p(x)$ with $y = p(x)$.",
-    "s": "The composite function is $d(p(x)) = 3p(x)$.\nMultiplying a function by a constant $k$ ($y = k p(x)$) represents a vertical dilation by factor $k$.\nSince $k = 3$, the graph of $y = p(x)$ is vertically stretched (dilated) by a factor of $3$ from the $x$-axis.",
+    "h": "Compare \\(y = d(p(x)) = 3p(x)\\) with \\(y = p(x)\\).",
+    "s": "The composite function is \\(d(p(x)) = 3p(x)\\).\nMultiplying a function by a constant \\(k\\) (\\(y = k p(x)\\)) represents a vertical dilation by factor \\(k\\).\nSince \\(k = 3\\), the graph of \\(y = p(x)\\) is vertically stretched (dilated) by a factor of \\(3\\) from the \\(x\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Formulate \\(d(p(x))\\) in terms of \\(p(x)\\).",
-        "workingOut": "d(p(x)) = 3p(x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(d(p(x)) = 3p(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the vertical transformation.",
-        "workingOut": "y \\to 3y \\implies \\text{Vertical dilation by factor of } 3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(y \\to 3y \\implies \\text{Vertical dilation by factor of } 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Vertical dilation by factor of \\(3\\) from the \\(x\\)-axis",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-6eii",
@@ -15147,26 +15593,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $p(x) = x(x - 4)$ and $d(x) = 3x$. Find the domain and range of the composite function $y = d(p(x))$.",
-    "a": "0",
+    "q": "Let \\(p(x) = x(x - 4)\\) and \\(d(x) = 3x\\). Find the domain and range of the composite function \\(y = d(p(x))\\).",
+    "a": "3",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge -12$",
-      "Domain: all real $x$, Range: $y \\ge -4$",
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: $x \\ge 0$, Range: $y \\ge -12$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge -4\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 0\\), Range: \\(y \\ge -12\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge -12\\)"
     ],
-    "h": "The range of $p(x)$ is $y \\ge -4$. How does multiplying the function values by $3$ affect the range?",
-    "s": "$d(p(x)) = 3p(x) = 3(x^2 - 4x) = 3(x - 2)^2 - 12$.\nThis is a parabola with its vertex at $(2, -12)$.\nSince the range of $p(x)$ is $y \\ge -4$, scaling all output values by $3$ scales the minimum value to $3 \\times (-4) = -12$.\nThus the range is $y \\ge -12$, and domain is all real $x$.",
+    "h": "The range of \\(p(x)\\) is \\(y \\ge -4\\). How does multiplying the function values by \\(3\\) affect the range?",
+    "s": "\\(d(p(x)) = 3p(x) = 3(x^2 - 4x) = 3(x - 2)^2 - 12\\).\nThis is a parabola with its vertex at \\((2, -12)\\).\nSince the range of \\(p(x)\\) is \\(y \\ge -4\\), scaling all output values by \\(3\\) scales the minimum value to \\(3 \\times (-4) = -12\\).\nThus the range is \\(y \\ge -12\\), and domain is all real \\(x\\).",
     "solutionSteps": [
       {
-        "explanation": "Scale the range of the base function by the vertical dilation factor.",
-        "workingOut": "\\text{Range of } p(x) = [-4, infty) \\implies \\text{Range of } 3p(x) = [3(-4), infty)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Range of } p(x) = [-4, infty) \\implies \\text{Range of } 3p(x) = [3(-4), infty)\\)",
+        "graphData": null
       },
       {
-        "explanation": "State domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -12"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge -12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge -12\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7a",
@@ -15174,26 +15628,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$. Find the domain and range of $y = Q(x)$.",
+    "q": "Let \\(Q(x) = (x - 3)^2\\). Find the domain and range of \\(y = Q(x)\\).",
     "a": "0",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: all real $y$",
-      "Domain: $x \\ge 3$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: $y \\ge 3$"
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: all real \\(y\\)",
+      "Domain: \\(x \\ge 3\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 3\\)"
     ],
-    "h": "The function $y = (x - 3)^2$ is a parabola. Think about its vertex.",
-    "s": "$Q(x) = (x - 3)^2$ is a parabola opening upwards with vertex at $(3, 0)$.\nThe domain is all real numbers, and the minimum value of $y$ is $0$.\nSo the range is $y \\ge 0$.",
+    "h": "The function \\(y = (x - 3)^2\\) is a parabola. Think about its vertex.",
+    "s": "\\(Q(x) = (x - 3)^2\\) is a parabola opening upwards with vertex at \\((3, 0)\\).\nThe domain is all real numbers, and the minimum value of \\(y\\) is \\(0\\).\nSo the range is \\(y \\ge 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the vertex of the parabola \\(y = (x-3)^2\\).",
-        "workingOut": "\\text{Vertex} = (3, 0)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Vertex} = (3, 0)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7bi",
@@ -15201,26 +15663,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find the value of $Q(R(5))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find the value of \\(Q(R(5))\\).",
+    "a": "2",
     "opts": [
-      "$64$",
-      "$4$",
-      "$16$",
-      "$-64$"
+      "\\(4\\)",
+      "\\(16\\)",
+      "\\(64\\)",
+      "\\(-64\\)"
     ],
-    "h": "Evaluate $R(5)$ first, then substitute it into $Q(x)$.",
-    "s": "$R(5) = -5$.\nThen $Q(R(5)) = Q(-5) = (-5 - 3)^2 = (-8)^2 = 64$.",
+    "h": "Evaluate \\(R(5)\\) first, then substitute it into \\(Q(x)\\).",
+    "s": "\\(R(5) = -5\\).\nThen \\(Q(R(5)) = Q(-5) = (-5 - 3)^2 = (-8)^2 = 64\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(R(5)\\).",
-        "workingOut": "R(5) = -5"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(R(5) = -5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into \\(Q(x)\\).",
-        "workingOut": "Q(-5) = (-5-3)^2 = (-8)^2 = 64"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(Q(-5) = (-5-3)^2 = (-8)^2 = 64\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(64\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7bii",
@@ -15228,26 +15698,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find the value of $R(Q(5))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find the value of \\(R(Q(5))\\).",
+    "a": "1",
     "opts": [
-      "$-4$",
-      "$4$",
-      "$-64$",
-      "$64$"
+      "\\(4\\)",
+      "\\(-4\\)",
+      "\\(-64\\)",
+      "\\(64\\)"
     ],
-    "h": "Evaluate $Q(5)$ first, then substitute it into $R(x)$.",
-    "s": "$Q(5) = (5 - 3)^2 = 2^2 = 4$.\nThen $R(Q(5)) = R(4) = -4$.",
+    "h": "Evaluate \\(Q(5)\\) first, then substitute it into \\(R(x)\\).",
+    "s": "\\(Q(5) = (5 - 3)^2 = 2^2 = 4\\).\nThen \\(R(Q(5)) = R(4) = -4\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(Q(5)\\).",
-        "workingOut": "Q(5) = (5-3)^2 = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(Q(5) = (5-3)^2 = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into \\(R(x)\\).",
-        "workingOut": "R(4) = -4"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(R(4) = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7ci",
@@ -15255,26 +15733,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find an expression for $Q(R(x))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find an expression for \\(Q(R(x))\\).",
+    "a": "3",
     "opts": [
-      "$(x + 3)^2$",
-      "$(x - 3)^2$",
-      "$-(x - 3)^2$",
-      "$(-x + 3)^2$"
+      "\\((x - 3)^2\\)",
+      "\\(-(x - 3)^2\\)",
+      "\\((-x + 3)^2\\)",
+      "\\((x + 3)^2\\)"
     ],
-    "h": "Substitute the expression for $R(x) = -x$ in place of $x$ in the equation for $Q(x)$.",
-    "s": "$Q(R(x)) = Q(-x) = (-x - 3)^2 = [-(x + 3)]^2 = (x + 3)^2$.",
+    "h": "Substitute the expression for \\(R(x) = -x\\) in place of \\(x\\) in the equation for \\(Q(x)\\).",
+    "s": "\\(Q(R(x)) = Q(-x) = (-x - 3)^2 = [-(x + 3)]^2 = (x + 3)^2\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(R(x) = -x\\) into \\(Q(x)\\).",
-        "workingOut": "Q(R(x)) = (-x - 3)^2"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(Q(R(x)) = (-x - 3)^2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor out \\(-1\\) inside the square and simplify.",
-        "workingOut": "(-x-3)^2 = (-(x+3))^2 = (x+3)^2"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\((-x-3)^2 = (-(x+3))^2 = (x+3)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\((x + 3)^2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7cii",
@@ -15282,26 +15768,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find an expression for $R(Q(x))$.",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find an expression for \\(R(Q(x))\\).",
     "a": "0",
     "opts": [
-      "$-(x - 3)^2$",
-      "$(x + 3)^2$",
-      "$(-x - 3)^2$",
-      "$-(x + 3)^2$"
+      "\\(-(x - 3)^2\\)",
+      "\\((x + 3)^2\\)",
+      "\\((-x - 3)^2\\)",
+      "\\(-(x + 3)^2\\)"
     ],
-    "h": "Substitute the expression for $Q(x)$ in place of $x$ in the equation for $R(x)$.",
-    "s": "$R(Q(x)) = R((x - 3)^2) = -((x - 3)^2) = -(x - 3)^2$.",
+    "h": "Substitute the expression for \\(Q(x)\\) in place of \\(x\\) in the equation for \\(R(x)\\).",
+    "s": "\\(R(Q(x)) = R((x - 3)^2) = -((x - 3)^2) = -(x - 3)^2\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the reflection function \\(R(x) = -x\\) to the function \\(Q(x)\\).",
-        "workingOut": "R(Q(x)) = -Q(x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(R(Q(x)) = -Q(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the expression of \\(Q(x)\\).",
-        "workingOut": "-(x-3)^2"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(-(x-3)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-(x - 3)^2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7di",
@@ -15309,26 +15803,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Describe the transformation that maps the graph of $y = Q(x)$ to the graph of $y = Q(R(x))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Describe the transformation that maps the graph of \\(y = Q(x)\\) to the graph of \\(y = Q(R(x))\\).",
+    "a": "2",
     "opts": [
-      "Reflection in the $y$-axis",
-      "Reflection in the $x$-axis",
-      "Rotation of $180^{\\circ}$ about the origin",
-      "Shift of $3$ units to the left"
+      "Reflection in the \\(x\\)-axis",
+      "Rotation of \\(180^{\\circ}\\) about the origin",
+      "Reflection in the \\(y\\)-axis",
+      "Shift of \\(3\\) units to the left"
     ],
-    "h": "Compare the equation $y = Q(R(x)) = Q(-x)$ with $y = Q(x)$.",
-    "s": "The composite function is $Q(R(x)) = Q(-x)$.\nReplacing $x$ with $-x$ in a function reflects the graph across the $y$-axis.",
+    "h": "Compare the equation \\(y = Q(R(x)) = Q(-x)\\) with \\(y = Q(x)\\).",
+    "s": "The composite function is \\(Q(R(x)) = Q(-x)\\).\nReplacing \\(x\\) with \\(-x\\) in a function reflects the graph across the \\(y\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Write \\(Q(R(x))\\) in terms of \\(Q(x)\\).",
-        "workingOut": "Q(R(x)) = Q(-x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(Q(R(x)) = Q(-x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation.",
-        "workingOut": "x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Reflection in the \\(y\\)-axis",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7dii",
@@ -15336,26 +15838,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find the domain and range of the composite function $y = Q(R(x))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find the domain and range of the composite function \\(y = Q(R(x))\\).",
+    "a": "1",
     "opts": [
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: all real $y$",
-      "Domain: $x \\ge -3$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: $y \\le 0$"
+      "Domain: all real \\(x\\), Range: all real \\(y\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge -3\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\le 0\\)"
     ],
-    "h": "Think about the shape of $y = Q(R(x)) = (x + 3)^2$ and its vertex.",
-    "s": "$Q(R(x)) = (x + 3)^2$ is a parabola with vertex at $(-3, 0)$.\nReflecting the graph of $y = Q(x)$ in the $y$-axis moves its vertex from $(3, 0)$ to $(-3, 0)$ but does not change its vertical orientation.\nTherefore, the domain is all real $x$ and the range is $y \\ge 0$.",
+    "h": "Think about the shape of \\(y = Q(R(x)) = (x + 3)^2\\) and its vertex.",
+    "s": "\\(Q(R(x)) = (x + 3)^2\\) is a parabola with vertex at \\((-3, 0)\\).\nReflecting the graph of \\(y = Q(x)\\) in the \\(y\\)-axis moves its vertex from \\((3, 0)\\) to \\((-3, 0)\\) but does not change its vertical orientation.\nTherefore, the domain is all real \\(x\\) and the range is \\(y \\ge 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the vertex of the parabola \\(y = (x+3)^2\\).",
-        "workingOut": "\\text{Vertex} = (-3, 0)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Vertex} = (-3, 0)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine the domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\ge 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7ei",
@@ -15363,26 +15873,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Describe the transformation that maps the graph of $y = Q(x)$ to the graph of $y = R(Q(x))$.",
-    "a": "0",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Describe the transformation that maps the graph of \\(y = Q(x)\\) to the graph of \\(y = R(Q(x))\\).",
+    "a": "3",
     "opts": [
-      "Reflection in the $x$-axis",
-      "Reflection in the $y$-axis",
-      "Rotation of $180^{\\circ}$ about the origin",
-      "Shift of $3$ units down"
+      "Reflection in the \\(y\\)-axis",
+      "Rotation of \\(180^{\\circ}\\) about the origin",
+      "Shift of \\(3\\) units down",
+      "Reflection in the \\(x\\)-axis"
     ],
-    "h": "Compare the equation $y = R(Q(x)) = -Q(x)$ with $y = Q(x)$.",
-    "s": "The composite function is $R(Q(x)) = -Q(x)$.\nMultiplying a function by $-1$ reflects the graph across the $x$-axis.",
+    "h": "Compare the equation \\(y = R(Q(x)) = -Q(x)\\) with \\(y = Q(x)\\).",
+    "s": "The composite function is \\(R(Q(x)) = -Q(x)\\).\nMultiplying a function by \\(-1\\) reflects the graph across the \\(x\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Write \\(R(Q(x))\\) in terms of \\(Q(x)\\).",
-        "workingOut": "R(Q(x)) = -Q(x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(R(Q(x)) = -Q(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation.",
-        "workingOut": "y \\to -y \\implies \\text{Reflection in the } x\\text{-axis}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(y \\to -y \\implies \\text{Reflection in the } x\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Reflection in the \\(x\\)-axis",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-7eii",
@@ -15390,26 +15908,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Let $Q(x) = (x - 3)^2$ and $R(x) = -x$. Find the domain and range of the composite function $y = R(Q(x))$.",
+    "q": "Let \\(Q(x) = (x - 3)^2\\) and \\(R(x) = -x\\). Find the domain and range of the composite function \\(y = R(Q(x))\\).",
     "a": "0",
     "opts": [
-      "Domain: all real $x$, Range: $y \\le 0$",
-      "Domain: all real $x$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: all real $y$",
-      "Domain: $x \\ge 3$, Range: $y \\le 0$"
+      "Domain: all real \\(x\\), Range: \\(y \\le 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: all real \\(x\\), Range: all real \\(y\\)",
+      "Domain: \\(x \\ge 3\\), Range: \\(y \\le 0\\)"
     ],
-    "h": "Reflecting a graph in the $x$-axis flips it upside down. How does this affect the range?",
-    "s": "$R(Q(x)) = -(x - 3)^2$ is a parabola opening downwards with its vertex at $(3, 0)$.\nSince the original range of $Q(x)$ is $y \\ge 0$, reflecting it in the $x$-axis changes the range to $y \\le 0$.\nThe domain remains all real $x$.",
+    "h": "Reflecting a graph in the \\(x\\)-axis flips it upside down. How does this affect the range?",
+    "s": "\\(R(Q(x)) = -(x - 3)^2\\) is a parabola opening downwards with its vertex at \\((3, 0)\\).\nSince the original range of \\(Q(x)\\) is \\(y \\ge 0\\), reflecting it in the \\(x\\)-axis changes the range to \\(y \\le 0\\).\nThe domain remains all real \\(x\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the vertex and orientation of \\(y = -(x-3)^2\\).",
-        "workingOut": "\\text{Vertex} = (3, 0), quad \\text{Opens downwards}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(\\text{Vertex} = (3, 0), quad \\text{Opens downwards}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine domain and range.",
-        "workingOut": "\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\le 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\text{Domain} = \\mathbb{R}, quad \\text{Range} = y \\le 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: all real x, Range: y \\le 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8ai",
@@ -15417,26 +15943,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find the value of $F(G(16))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find the value of \\(F(G(16))\\).",
+    "a": "2",
     "opts": [
-      "$36$",
-      "$12$",
-      "$144$",
-      "$2$"
+      "\\(12\\)",
+      "\\(144\\)",
+      "\\(36\\)",
+      "\\(2\\)"
     ],
-    "h": "First evaluate $G(16)$, then substitute that value into $F(x)$.",
-    "s": "$G(16) = \\sqrt{16} = 4$.\nThen $F(G(16)) = F(4) = 9(4) = 36$.",
+    "h": "First evaluate \\(G(16)\\), then substitute that value into \\(F(x)\\).",
+    "s": "\\(G(16) = \\sqrt{16} = 4\\).\nThen \\(F(G(16)) = F(4) = 9(4) = 36\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(G(16)\\).",
-        "workingOut": "G(16) = \\sqrt{16} = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(G(16) = \\sqrt{16} = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function \\(F(x)\\).",
-        "workingOut": "F(4) = 9(4) = 36"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(F(4) = 9(4) = 36\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(36\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8aii",
@@ -15444,26 +15978,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find the value of $G(F(16))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find the value of \\(G(F(16))\\).",
+    "a": "1",
     "opts": [
-      "$12$",
-      "$36$",
-      "$144$",
-      "$4$"
+      "\\(36\\)",
+      "\\(12\\)",
+      "\\(144\\)",
+      "\\(4\\)"
     ],
-    "h": "First evaluate $F(16)$, then substitute that value into $G(x)$.",
-    "s": "$F(16) = 9(16) = 144$.\nThen $G(F(16)) = G(144) = \\sqrt{144} = 12$.",
+    "h": "First evaluate \\(F(16)\\), then substitute that value into \\(G(x)\\).",
+    "s": "\\(F(16) = 9(16) = 144\\).\nThen \\(G(F(16)) = G(144) = \\sqrt{144} = 12\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(F(16)\\).",
-        "workingOut": "F(16) = 9 \\cdot 16 = 144"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(F(16) = 9 \\cdot 16 = 144\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function \\(G(x)\\).",
-        "workingOut": "G(144) = \\sqrt{144} = 12"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(G(144) = \\sqrt{144} = 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(12\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8aiii",
@@ -15471,26 +16013,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find the value of $F(F(16))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find the value of \\(F(F(16))\\).",
+    "a": "3",
     "opts": [
-      "$1296$",
-      "$144$",
-      "$2916$",
-      "$36$"
+      "\\(144\\)",
+      "\\(2916\\)",
+      "\\(36\\)",
+      "\\(1296\\)"
     ],
-    "h": "First evaluate $F(16)$, then substitute that value back into $F(x)$.",
-    "s": "$F(16) = 9(16) = 144$.\nThen $F(F(16)) = F(144) = 9(144) = 1296$.",
+    "h": "First evaluate \\(F(16)\\), then substitute that value back into \\(F(x)\\).",
+    "s": "\\(F(16) = 9(16) = 144\\).\nThen \\(F(F(16)) = F(144) = 9(144) = 1296\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(F(16)\\).",
-        "workingOut": "F(16) = 144"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(F(16) = 144\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function \\(F(x)\\).",
-        "workingOut": "F(144) = 9 \\cdot 144 = 1296"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(F(144) = 9 \\cdot 144 = 1296\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(1296\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8aiv",
@@ -15498,26 +16048,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find the value of $G(G(16))$.",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find the value of \\(G(G(16))\\).",
     "a": "0",
     "opts": [
-      "$2$",
-      "$4$",
-      "$16$",
-      "$1$"
+      "\\(2\\)",
+      "\\(4\\)",
+      "\\(16\\)",
+      "\\(1\\)"
     ],
-    "h": "First evaluate $G(16)$, then substitute that value back into $G(x)$.",
-    "s": "$G(16) = \\sqrt{16} = 4$.\nThen $G(G(16)) = G(4) = \\sqrt{4} = 2$.",
+    "h": "First evaluate \\(G(16)\\), then substitute that value back into \\(G(x)\\).",
+    "s": "\\(G(16) = \\sqrt{16} = 4\\).\nThen \\(G(G(16)) = G(4) = \\sqrt{4} = 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(G(16)\\).",
-        "workingOut": "G(16) = 4"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(G(16) = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into the outer function \\(G(x)\\).",
-        "workingOut": "G(4) = \\sqrt{4} = 2"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(G(4) = \\sqrt{4} = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8b",
@@ -15525,22 +16083,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find an expression for $F(G(x))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find an expression for \\(F(G(x))\\).",
+    "a": "2",
     "opts": [
-      "$9\\sqrt{x}$",
-      "$3\\sqrt{x}$",
-      "$\\sqrt{9x}$",
-      "$9x$"
+      "\\(3\\sqrt{x}\\)",
+      "\\(\\sqrt{9x}\\)",
+      "\\(9\\sqrt{x}\\)",
+      "\\(9x\\)"
     ],
-    "h": "Substitute the formula for $G(x)$ in place of the input variable $x$ in $F(x)$.",
-    "s": "$F(G(x)) = F(\\sqrt{x}) = 9(\\sqrt{x}) = 9\\sqrt{x}$.",
+    "h": "Substitute the formula for \\(G(x)\\) in place of the input variable \\(x\\) in \\(F(x)\\).",
+    "s": "\\(F(G(x)) = F(\\sqrt{x}) = 9(\\sqrt{x}) = 9\\sqrt{x}\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(G(x) = \\sqrt{x}\\) into \\(F(x)\\).",
-        "workingOut": "F(G(x)) = 9(\\sqrt{x}) = 9\\sqrt{x}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(F(G(x)) = 9(\\sqrt{x}) = 9\\sqrt{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(F(G(x)) = 9(\\sqrt{x}) = 9\\sqrt{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(9\\sqrt{x}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8c",
@@ -15548,52 +16118,67 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. Find an expression for $G(F(x))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). Find an expression for \\(G(F(x))\\).",
+    "a": "1",
     "opts": [
-      "$3\\sqrt{x}$",
-      "$9\\sqrt{x}$",
-      "$\\sqrt{9x}$",
-      "$9x$"
+      "\\(9\\sqrt{x}\\)",
+      "\\(3\\sqrt{x}\\)",
+      "\\(\\sqrt{9x}\\)",
+      "\\(9x\\)"
     ],
-    "h": "Substitute the formula for $F(x)$ in place of the input variable $x$ in $G(x)$.",
-    "s": "$G(F(x)) = G(9x) = \\sqrt{9x} = \\sqrt{9} \\cdot \\sqrt{x} = 3\\sqrt{x}$.",
+    "h": "Substitute the formula for \\(F(x)\\) in place of the input variable \\(x\\) in \\(G(x)\\).",
+    "s": "\\(G(F(x)) = G(9x) = \\sqrt{9x} = \\sqrt{9} \\cdot \\sqrt{x} = 3\\sqrt{x}\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(F(x) = 9x\\) into \\(G(x)\\).",
-        "workingOut": "G(F(x)) = \\sqrt{9x}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(G(F(x)) = \\sqrt{9x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the square root.",
-        "workingOut": "\\sqrt{9} \\cdot \\sqrt{x} = 3\\sqrt{x}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\sqrt{9} \\cdot \\sqrt{x} = 3\\sqrt{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(3\\sqrt{x}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8d",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "For the functions $F(x) = 9x$ and $G(x) = \\sqrt{x}$, show algebraically that $F(G(x)) = 3G(F(x))$.",
-    "a": "F(G(x)) = 9sqrt(x), G(F(x)) = sqrt(9x) = 3sqrt(x), so F(G(x)) = 3(3sqrt(x)) = 3G(F(x))",
-    "opts": [],
-    "h": "Evaluate expressions for LHS and RHS using the functions $F(x)$ and $G(x)$ and compare.",
-    "s": "LHS: $F(G(x)) = 9\\sqrt{x}$.\nRHS: $3G(F(x)) = 3\\sqrt{9x} = 3(3\\sqrt{x}) = 9\\sqrt{x}$.\nSince LHS = RHS, we have shown that $F(G(x)) = 3G(F(x))$.",
+    "q": "For \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\), which statement correctly shows that \\(F(G(x)) = 3\\,G(F(x))\\)?",
+    "a": "1",
+    "opts": [
+      "\\(F(G(x)) = 3\\sqrt{x}\\) and \\(G(F(x)) = 9\\sqrt{x}\\)",
+      "\\(F(G(x)) = 9\\sqrt{x}\\) and \\(G(F(x)) = 3\\sqrt{x}\\), so \\(F(G(x)) = 3\\,G(F(x))\\)",
+      "\\(F(G(x)) = G(F(x))\\) for all \\(x \\ge 0\\)",
+      "\\(F(G(x)) = 9x\\) and \\(G(F(x)) = 3x\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Find the expression for \\(F(G(x))\\).",
-        "workingOut": "F(G(x)) = 9\\sqrt{x}"
+        "explanation": "Compute each composite separately on the domain x ≥ 0 where G is defined. F(G(x)) multiplies the square root by 9; G(F(x)) takes the square root of 9x.",
+        "workingOut": "\\(F(x) = 9x,\\; G(x) = \\sqrt{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the expression for \\(3G(F(x))\\).",
-        "workingOut": "3G(F(x)) = 3\\sqrt{9x} = 3(3\\sqrt{x}) = 9\\sqrt{x}"
+        "explanation": "F(G(x)) = 9√x. G(F(x)) = √(9x) = √9 · √x = 3√x (for x ≥ 0). A common mistake is writing √(9x) = 9√x.",
+        "workingOut": "\\(F(G(x)) = 9\\sqrt{x},\\quad G(F(x)) = 3\\sqrt{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Conclude that they are equal.",
-        "workingOut": "9\\sqrt{x} = 9\\sqrt{x} \\implies \\text{LHS} = \\text{RHS}"
+        "explanation": "Then 3 · G(F(x)) = 3 · 3√x = 9√x = F(G(x)). The identity holds.",
+        "workingOut": "\\(F(G(x)) = 3\\,G(F(x))\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-8e",
@@ -15601,26 +16186,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Suppose that $F(x) = 9x$ and $G(x) = \\sqrt{x}$. State the domain and range of the composite function $y = F(G(x))$.",
-    "a": "0",
+    "q": "Suppose that \\(F(x) = 9x\\) and \\(G(x) = \\sqrt{x}\\). State the domain and range of the composite function \\(y = F(G(x))\\).",
+    "a": "3",
     "opts": [
-      "Domain: $x \\ge 0$, Range: $y \\ge 0$",
-      "Domain: all real $x$, Range: all real $y$",
-      "Domain: $x \\ge 0$, Range: all real $y$",
-      "Domain: all real $x$, Range: $y \\ge 0$"
+      "Domain: all real \\(x\\), Range: all real \\(y\\)",
+      "Domain: \\(x \\ge 0\\), Range: all real \\(y\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ge 0\\)",
+      "Domain: \\(x \\ge 0\\), Range: \\(y \\ge 0\\)"
     ],
-    "h": "The composite function is $F(G(x)) = 9\\sqrt{x}$. Find the values of $x$ for which this expression is defined, and the resulting $y$-values.",
-    "s": "The composite function is $y = 9\\sqrt{x}$.\nFor the square root to be defined, we must have $x \\ge 0$, which gives the domain.\nSince $\\sqrt{x} \\ge 0$ for all $x \\ge 0$, multiplying by $9$ gives $y = 9\\sqrt{x} \\ge 0$, which gives the range.",
+    "h": "The composite function is \\(F(G(x)) = 9\\sqrt{x}\\). Find the values of \\(x\\) for which this expression is defined, and the resulting \\(y\\)-values.",
+    "s": "The composite function is \\(y = 9\\sqrt{x}\\).\nFor the square root to be defined, we must have \\(x \\ge 0\\), which gives the domain.\nSince \\(\\sqrt{x} \\ge 0\\) for all \\(x \\ge 0\\), multiplying by \\(9\\) gives \\(y = 9\\sqrt{x} \\ge 0\\), which gives the range.",
     "solutionSteps": [
       {
-        "explanation": "Determine the domain using the inner function \\(G(x) = \\sqrt{x}\\).",
-        "workingOut": "x \\ge 0"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(x \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine the range using the values of \\(y = 9\\sqrt{x}\\).",
-        "workingOut": "\\sqrt{x} \\ge 0 \\implies y \\ge 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(\\sqrt{x} \\ge 0 \\implies y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: x \\ge 0, Range: y \\ge 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9ai",
@@ -15628,26 +16221,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Two functions $f$ and $h$ are defined by $f(x) = -x$ and $h(x) = \\frac{3}{x}$. Find the value of $f(h(-\\frac{1}{2}))$.",
+    "q": "Two functions \\(f\\) and \\(h\\) are defined by \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\). Find the value of \\(f(h(-\\frac{1}{2}))\\).",
     "a": "0",
     "opts": [
-      "$6$",
-      "$-6$",
-      "$\\frac{1}{2}$",
-      "$-\\frac{1}{2}$"
+      "\\(6\\)",
+      "\\(-6\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(-\\frac{1}{2}\\)"
     ],
-    "h": "Find the value of $h(-\\frac{1}{2})$ first, then substitute it into $f(x)$.",
-    "s": "$h(-\\frac{1}{2}) = \\frac{3}{-1/2} = -6$.\nThen $f(h(-\\frac{1}{2})) = f(-6) = -(-6) = 6$.",
+    "h": "Find the value of \\(h(-\\frac{1}{2})\\) first, then substitute it into \\(f(x)\\).",
+    "s": "\\(h(-\\frac{1}{2}) = \\frac{3}{-1/2} = -6\\).\nThen \\(f(h(-\\frac{1}{2})) = f(-6) = -(-6) = 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(-\\frac{1}{2})\\).",
-        "workingOut": "h(-\\frac{1}{2}) = \\frac{3}{-\\frac{1}{2}} = -6"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(-\\frac{1}{2}) = \\frac{3}{-\\frac{1}{2}} = -6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into \\(f(x)\\).",
-        "workingOut": "f(-6) = -(-6) = 6"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(-6) = -(-6) = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9aii",
@@ -15655,26 +16256,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Two functions $f$ and $h$ are defined by $f(x) = -x$ and $h(x) = \\frac{3}{x}$. Find the value of $h(f(-\\frac{1}{2}))$.",
-    "a": "0",
+    "q": "Two functions \\(f\\) and \\(h\\) are defined by \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\). Find the value of \\(h(f(-\\frac{1}{2}))\\).",
+    "a": "2",
     "opts": [
-      "$6$",
-      "$-6$",
-      "$\\frac{1}{2}$",
-      "$-\\frac{1}{2}$"
+      "\\(-6\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(6\\)",
+      "\\(-\\frac{1}{2}\\)"
     ],
-    "h": "Find the value of $f(-\\frac{1}{2})$ first, then substitute it into $h(x)$.",
-    "s": "$f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}$.\nThen $h(f(-\\frac{1}{2})) = h(\\frac{1}{2}) = \\frac{3}{1/2} = 6$.",
+    "h": "Find the value of \\(f(-\\frac{1}{2})\\) first, then substitute it into \\(h(x)\\).",
+    "s": "\\(f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}\\).\nThen \\(h(f(-\\frac{1}{2})) = h(\\frac{1}{2}) = \\frac{3}{1/2} = 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(-\\frac{1}{2})\\).",
-        "workingOut": "f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result into \\(h(x)\\).",
-        "workingOut": "h(\\frac{1}{2}) = \\frac{3}{\\frac{1}{2}} = 6"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(\\frac{1}{2}) = \\frac{3}{\\frac{1}{2}} = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9aiii",
@@ -15682,26 +16291,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Two functions $f$ and $h$ are defined by $f(x) = -x$ and $h(x) = \\frac{3}{x}$. Find the value of $f(f(-\\frac{1}{2}))$.",
-    "a": "0",
+    "q": "Two functions \\(f\\) and \\(h\\) are defined by \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\). Find the value of \\(f(f(-\\frac{1}{2}))\\).",
+    "a": "3",
     "opts": [
-      "$-\\frac{1}{2}$",
-      "$\\frac{1}{2}$",
-      "$6$",
-      "$-6$"
+      "\\(\\frac{1}{2}\\)",
+      "\\(6\\)",
+      "\\(-6\\)",
+      "\\(-\\frac{1}{2}\\)"
     ],
-    "h": "Find the value of $f(-\\frac{1}{2})$ first, then substitute it back into $f(x)$.",
-    "s": "$f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}$.\nThen $f(f(-\\frac{1}{2})) = f(\\frac{1}{2}) = -\\frac{1}{2}$.",
+    "h": "Find the value of \\(f(-\\frac{1}{2})\\) first, then substitute it back into \\(f(x)\\).",
+    "s": "\\(f(-\\frac{1}{2}) = -(-\\frac{1}{2}) = \\frac{1}{2}\\).\nThen \\(f(f(-\\frac{1}{2})) = f(\\frac{1}{2}) = -\\frac{1}{2}\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(-\\frac{1}{2})\\).",
-        "workingOut": "f(-\\frac{1}{2}) = \\frac{1}{2}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(-\\frac{1}{2}) = \\frac{1}{2}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result back into \\(f(x)\\).",
-        "workingOut": "f(\\frac{1}{2}) = -\\frac{1}{2}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(\\frac{1}{2}) = -\\frac{1}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-\\frac{1}{2}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9aiv",
@@ -15709,78 +16326,110 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Two functions $f$ and $h$ are defined by $f(x) = -x$ and $h(x) = \\frac{3}{x}$. Find the value of $h(h(-\\frac{1}{2}))$.",
+    "q": "Two functions \\(f\\) and \\(h\\) are defined by \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\). Find the value of \\(h(h(-\\frac{1}{2}))\\).",
     "a": "0",
     "opts": [
-      "$-\\frac{1}{2}$",
-      "$\\frac{1}{2}$",
-      "$6$",
-      "$-6$"
+      "\\(-\\frac{1}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(6\\)",
+      "\\(-6\\)"
     ],
-    "h": "Find the value of $h(-\\frac{1}{2})$ first, then substitute it back into $h(x)$.",
-    "s": "$h(-\\frac{1}{2}) = \\frac{3}{-1/2} = -6$.\nThen $h(h(-\\frac{1}{2})) = h(-6) = \\frac{3}{-6} = -\\frac{1}{2}$.",
+    "h": "Find the value of \\(h(-\\frac{1}{2})\\) first, then substitute it back into \\(h(x)\\).",
+    "s": "\\(h(-\\frac{1}{2}) = \\frac{3}{-1/2} = -6\\).\nThen \\(h(h(-\\frac{1}{2})) = h(-6) = \\frac{3}{-6} = -\\frac{1}{2}\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(h(-\\frac{1}{2})\\).",
-        "workingOut": "h(-\\frac{1}{2}) = -6"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(-\\frac{1}{2}) = -6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute this result back into \\(h(x)\\).",
-        "workingOut": "h(-6) = \\frac{3}{-6} = -\\frac{1}{2}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(h(-6) = \\frac{3}{-6} = -\\frac{1}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(-\\frac{1}{2}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9bi",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "For $f(x) = -x$ and $h(x) = \\frac{3}{x}$, show algebraically that $f(h(x)) = h(f(x))$ for all $x \\ne 0$.",
-    "a": "f(h(x)) = -3/x, h(f(x)) = 3/(-x) = -3/x",
-    "opts": [],
-    "h": "Substitute the expression for $h(x)$ into $f(x)$ and substitute $f(x)$ into $h(x)$, then compare the two simplified forms.",
-    "s": "LHS: $f(h(x)) = f(\\frac{3}{x}) = -(\\frac{3}{x}) = -\\frac{3}{x}$.\nRHS: $h(f(x)) = h(-x) = \\frac{3}{-x} = -\\frac{3}{x}$.\nSince LHS = RHS, $f(h(x)) = h(f(x))$.",
+    "q": "For \\(f(x) = -x\\) and \\(h(x) = \\dfrac{3}{x}\\), which statement shows \\(f(h(x)) = h(f(x))\\) for all \\(x \\neq 0\\)?",
+    "a": "3",
+    "opts": [
+      "\\(f(h(x)) = \\dfrac{3}{x}\\) and \\(h(f(x)) = -\\dfrac{3}{x}\\)",
+      "\\(f(h(x)) = h(f(x)) = \\dfrac{3}{x}\\)",
+      "\\(f(h(x)) = -x\\) and \\(h(f(x)) = -\\dfrac{3}{x}\\)",
+      "\\(f(h(x)) = h(f(x)) = -\\dfrac{3}{x}\\) for \\(x \\neq 0\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Find the LHS expression \\(f(h(x))\\).",
-        "workingOut": "f(h(x)) = -\\frac{3}{x}"
+        "explanation": "Compute f(h(x)) and h(f(x)) separately. Domain excludes x = 0 because h has x in the denominator.",
+        "workingOut": "\\(f(x) = -x,\\; h(x) = \\dfrac{3}{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the RHS expression \\(h(f(x))\\).",
-        "workingOut": "h(f(x)) = \\frac{3}{-x} = -\\frac{3}{x}"
+        "explanation": "f(h(x)) = f(3/x) = -(3/x) = -3/x. Write fractions with dfrac so signs are clear.",
+        "workingOut": "\\(f(h(x)) = -\\dfrac{3}{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Compare the two expressions.",
-        "workingOut": "-\\frac{3}{x} = -\\frac{3}{x} \\implies \\text{LHS} = \\text{RHS}"
+        "explanation": "h(f(x)) = h(-x) = 3/(-x) = -3/x. Both composites match.",
+        "workingOut": "\\(h(f(x)) = -\\dfrac{3}{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore f(h(x)) = h(f(x)) = -3/x for all x ≠ 0.",
+        "workingOut": "\\(f(h(x)) = h(f(x)) = -\\dfrac{3}{x}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9bii",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "For $f(x) = -x$ and $h(x) = \\frac{3}{x}$, show algebraically that $f(f(x)) = h(h(x))$ for all $x \\ne 0$.",
-    "a": "f(f(x)) = -(-x) = x, h(h(x)) = 3/(3/x) = x",
-    "opts": [],
-    "h": "Evaluate $f(f(x))$ and $h(h(x))$ separately and show that both simplify to the identity function $x$.",
-    "s": "LHS: $f(f(x)) = f(-x) = -(-x) = x$.\nRHS: $h(h(x)) = h(\\frac{3}{x}) = \\frac{3}{3/x} = 3 \\cdot \\frac{x}{3} = x$.\nSince LHS = RHS = $x$, we have $f(f(x)) = h(h(x))$.",
+    "q": "For \\(f(x) = -x\\) and \\(h(x) = \\dfrac{3}{x}\\), which statement shows \\(f(f(x)) = h(h(x))\\) for all \\(x \\neq 0\\)?",
+    "a": "0",
+    "opts": [
+      "\\(f(f(x)) = h(h(x)) = x\\) for \\(x \\neq 0\\)",
+      "\\(f(f(x)) = -x\\) and \\(h(h(x)) = x\\)",
+      "\\(f(f(x)) = x\\) and \\(h(h(x)) = \\dfrac{9}{x}\\)",
+      "\\(f(f(x)) = h(h(x)) = -x\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Find the LHS expression \\(f(f(x))\\).",
-        "workingOut": "f(f(x)) = -(-x) = x"
+        "explanation": "Compute double compositions. f twice is reflecting twice; h twice is the reciprocal twice.",
+        "workingOut": "\\(f(x) = -x,\\; h(x) = \\dfrac{3}{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the RHS expression \\(h(h(x))\\).",
-        "workingOut": "h(h(x)) = \\frac{3}{\\frac{3}{x}} = 3 \\cdot \\frac{x}{3} = x"
+        "explanation": "f(f(x)) = f(-x) = -(-x) = x.",
+        "workingOut": "\\(f(f(x)) = x\\)",
+        "graphData": null
       },
       {
-        "explanation": "Conclude that both simplify to \\(x\\).",
-        "workingOut": "x = x \\implies \\text{LHS} = \\text{RHS}"
+        "explanation": "h(h(x)) = h(3/x) = 3 / (3/x) = 3 · (x/3) = x for x ≠ 0. A common error is stopping at 3/(3/x) without simplifying.",
+        "workingOut": "\\(h(h(x)) = x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both equal x, so f(f(x)) = h(h(x)) = x.",
+        "workingOut": "\\(f(f(x)) = h(h(x)) = x\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9c",
@@ -15788,26 +16437,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "For the functions $f(x) = -x$ and $h(x) = \\frac{3}{x}$, find the domain and range of the composite function $y = f(h(x))$.",
-    "a": "0",
+    "q": "For the functions \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\), find the domain and range of the composite function \\(y = f(h(x))\\).",
+    "a": "2",
     "opts": [
-      "Domain: $x \\ne 0$, Range: $y \\ne 0$",
-      "Domain: all real $x$, Range: all real $y$",
-      "Domain: $x \\ne 0$, Range: all real $y$",
-      "Domain: all real $x$, Range: $y \\ne 0$"
+      "Domain: all real \\(x\\), Range: all real \\(y\\)",
+      "Domain: \\(x \\ne 0\\), Range: all real \\(y\\)",
+      "Domain: \\(x \\ne 0\\), Range: \\(y \\ne 0\\)",
+      "Domain: all real \\(x\\), Range: \\(y \\ne 0\\)"
     ],
-    "h": "First find the expression for $f(h(x))$. Then identify any values of $x$ that are undefined, and what $y$-values are impossible.",
-    "s": "The composite function is $y = f(h(x)) = -\\frac{3}{x}$.\nThe denominator cannot be zero, so the domain is $x \\ne 0$.\nSince the fraction $\\frac{3}{x}$ can never equal $0$, the output $y$ can never equal $0$.\nTherefore, the range is $y \\ne 0$.",
+    "h": "First find the expression for \\(f(h(x))\\). Then identify any values of \\(x\\) that are undefined, and what \\(y\\)-values are impossible.",
+    "s": "The composite function is \\(y = f(h(x)) = -\\frac{3}{x}\\).\nThe denominator cannot be zero, so the domain is \\(x \\ne 0\\).\nSince the fraction \\(\\frac{3}{x}\\) can never equal \\(0\\), the output \\(y\\) can never equal \\(0\\).\nTherefore, the range is \\(y \\ne 0\\).",
     "solutionSteps": [
       {
-        "explanation": "State the formula of the composite function.",
-        "workingOut": "y = -\\frac{3}{x}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(y = -\\frac{3}{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the values that \\(x\\) and \\(y\\) cannot take.",
-        "workingOut": "x \\neq 0 \\implies y \\neq 0"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\neq 0 \\implies y \\neq 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(Domain: x \\ne 0, Range: y \\ne 0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-9d",
@@ -15815,96 +16472,132 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Let $f(x) = -x$ and $h(x) = \\frac{3}{x}$. Describe the geometric transformation that maps the graph of $y = h(x)$ to the graph of $y = h(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = -x\\) and \\(h(x) = \\frac{3}{x}\\). Describe the geometric transformation that maps the graph of \\(y = h(x)\\) to the graph of \\(y = h(f(x))\\).",
+    "a": "1",
     "opts": [
-      "Reflection in the $y$-axis",
-      "Reflection in the $x$-axis",
-      "Rotation of $180^{\\circ}$ about the origin",
-      "Shift of $3$ units to the left"
+      "Reflection in the \\(x\\)-axis",
+      "Reflection in the \\(y\\)-axis",
+      "Rotation of \\(180^{\\circ}\\) about the origin",
+      "Shift of \\(3\\) units to the left"
     ],
-    "h": "Compare the equation $y = h(f(x)) = h(-x)$ with $y = h(x)$.",
-    "s": "The composite function is $h(f(x)) = h(-x)$.\nReplacing $x$ with $-x$ in a function reflects the graph across the $y$-axis.",
+    "h": "Compare the equation \\(y = h(f(x)) = h(-x)\\) with \\(y = h(x)\\).",
+    "s": "The composite function is \\(h(f(x)) = h(-x)\\).\nReplacing \\(x\\) with \\(-x\\) in a function reflects the graph across the \\(y\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Write \\(h(f(x))\\) in terms of \\(h(x)\\).",
-        "workingOut": "h(f(x)) = h(-x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(h(f(x)) = h(-x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation.",
-        "workingOut": "x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "Reflection in the \\(y\\)-axis",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-10a",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Let $f(x) = -4 - |x|$ and $g(x) = \\sqrt{x}$. Find the expression for the composite function $f(g(x))$, state its domain and range, and sketch its graph.",
-    "a": "f(g(x)) = -4 - \\sqrt{x}, Domain: x >= 0, Range: y <= -4",
-    "opts": [],
-    "h": "Substitute $g(x) = \\sqrt{x}$ into $f(x)$. Consider that $\\sqrt{x} \\ge 0$ to simplify the absolute value.",
-    "s": "1. Expression: $f(g(x)) = -4 - |\\sqrt{x}|$. Since $\\sqrt{x}$ is always non-negative, $|\\sqrt{x}| = \\sqrt{x}$. So $f(g(x)) = -4 - \\sqrt{x}$.\n2. Domain: The square root is defined for $x \\ge 0$.\n3. Range: Since $\\sqrt{x} \\ge 0$, we have $-\\sqrt{x} \\le 0$, which means $y = -4 - \\sqrt{x} \\le -4$. Thus the range is $y \\le -4$.\n4. Graph: Starts at $(0, -4)$ and curves downwards to the right.",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Let \\(f(x) = -4 - |x|\\) and \\(g(x) = \\sqrt{x}\\). Which option correctly gives \\(f(g(x))\\) with its domain and range?",
+    "a": "2",
+    "opts": [
+      "\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\(\\mathbb{R}\\); range \\((-\\infty,-4]\\)",
+      "\\(f(g(x)) = \\sqrt{-4 - |x|}\\); domain empty",
+      "\\(f(g(x)) = -4 - \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\((-\\infty,-4]\\)",
+      "\\(f(g(x)) = -4 + \\sqrt{x}\\); domain \\([0,\\infty)\\); range \\([-4,\\infty)\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Evaluate the composition algebraically and simplify using \\(\\sqrt{x} \\ge 0\\).",
-        "workingOut": "f(g(x)) = -4 - |\\sqrt{x}| = -4 - \\sqrt{x}"
+        "explanation": "Form f(g(x)) by substituting g into f. g(x) = √x is defined for x ≥ 0 and produces non-negative outputs, so |g(x)| = g(x) = √x.",
+        "workingOut": "\\(f(g(x)) = -4 - |\\sqrt{x}| = -4 - \\sqrt{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine domain and range based on the square root and negative coefficient.",
-        "workingOut": "\\text{Domain: } x \\ge 0, quad \\text{Range: } y \\le -4"
+        "explanation": "Domain: need x in domain of g, so x ≥ 0. Range: as x runs over [0, ∞), √x runs over [0, ∞), so -4 - √x runs over (-∞, -4].",
+        "workingOut": "\\(\\text{Domain } [0,\\infty),\\; \\text{Range } (-\\infty,-4]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The graph is a left-opening square-root shape reflected and shifted down, starting at (0, -4) and decreasing. Choose the matching option.",
+        "workingOut": "\\(y = -4 - \\sqrt{x}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"117.0\" x2=\"282.0\" y2=\"117.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"56.2\" y1=\"18\" x2=\"56.2\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M56.2,196.2 L61.0,204.3 L65.8,207.6 L70.6,210.2 L75.4,212.4 L80.2,214.3 L85.0,216.0 L89.8,217.6 L94.6,219.1 L99.4,220.4 L104.2,221.8 L109.0,223.0 L113.8,224.2 L118.6,225.3 L123.4,226.4 L128.2,227.5 L133.0,228.5 L137.8,229.5 L142.6,230.5 L147.4,231.4 L152.2,232.3 L157.0,233.2 L161.8,234.1 L166.6,235.0 L171.4,235.8 L176.2,236.6 L181.0,237.4 L185.8,238.2 L190.6,239.0 L195.4,239.7 L200.2,240.5 L205.0,241.2 L209.8,241.9 L214.5,242.6 L219.3,243.3 L224.1,244.0 L228.9,244.7 L233.7,245.4 L238.5,246.0 L243.3,246.7 L248.1,247.3\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"56.2\" cy=\"196.2\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"169.1\" cy=\"235.8\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = -4 − √x</text>\n  <text x=\"62.22222222222222\" y=\"190.20000000000002\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(0,-4)</text>\n  <text x=\"40\" y=\"230\" font-size=\"10\" fill=\"#64748b\">domain x ≥ 0, range y ≤ -4</text>\n</svg>"
+        }
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-10b",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Let $f(x) = -4 - |x|$ and $g(x) = \\sqrt{x}$. Explain algebraically why the composite function $g(f(x))$ is the empty function (has an empty domain).",
-    "a": "g(f(x)) = \\sqrt{-4 - |x|}, but -4 - |x| < 0 for all real x, so the square root is never defined",
-    "opts": [],
-    "h": "Write down the expression for $g(f(x))$ and analyze the values that the expression inside the square root can take.",
-    "s": "The composite function is $g(f(x)) = \\sqrt{f(x)} = \\sqrt{-4 - |x|}$.\nFor the square root to be defined, the expression inside must be non-negative: $-4 - |x| \\ge 0$.\nHowever, since $|x| \\ge 0$ for all real numbers $x$, we have $-4 - |x| \\le -4 < 0$.\nSince $-4 - |x|$ is strictly negative for all $x$, there are no real values of $x$ for which the square root is defined.\nTherefore, the domain is empty, and $g(f(x))$ is the empty function.",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Let \\(f(x) = -4 - |x|\\) and \\(g(x) = \\sqrt{x}\\). Why is the composite \\(g(f(x))\\) empty (empty domain)?",
+    "a": "1",
+    "opts": [
+      "\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is defined for all \\(x\\)",
+      "\\(g(f(x)) = \\sqrt{-4 - |x|}\\) is undefined for all real \\(x\\) because \\(-4 - |x| < 0\\)",
+      "\\(g(f(x))\\) has domain \\(|x| \\le 4\\)",
+      "\\(g(f(x)) = -4 - \\sqrt{x}\\) for all real \\(x\\)"
+    ],
     "solutionSteps": [
       {
-        "explanation": "Write down the algebraic formula for \\(g(f(x))\\).",
-        "workingOut": "g(f(x)) = \\sqrt{-4 - |x|}"
+        "explanation": "Write g(f(x)) = √(f(x)) = √(-4 - |x|). The square root requires a non-negative argument.",
+        "workingOut": "\\(g(f(x)) = \\sqrt{-4 - |x|}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Analyze the range of the inner function inside the square root.",
-        "workingOut": "-4 - |x| \\le -4 < 0 \\quad \\forall x \\in \\mathbb{R}"
+        "explanation": "For every real x, |x| ≥ 0, so -4 - |x| ≤ -4 < 0. The inside is always strictly negative.",
+        "workingOut": "\\(-4 - |x| \\le -4 < 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Conclude why the domain is empty.",
-        "workingOut": "\\text{Inside root } < 0 \\implies \\text{No real solutions} \\implies \\text{Domain is } \\emptyset"
+        "explanation": "Therefore no real x makes the radicand non-negative. The domain is empty and g(f(x)) is the empty function.",
+        "workingOut": "\\(\\text{Domain is empty}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-11a",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Sketch the graph of $y = g(x)$ where $g(x) = \\sqrt{9 + x}$. Indicate the $x$-intercept and the $y$-intercept.",
-    "a": "Graph starting at (-9, 0) passing through (0, 3)",
+    "q": "Sketch the graph of \\(y = g(x)\\) where \\(g(x) = \\sqrt{9 + x}\\). Indicate the \\(x\\)-intercept and the \\(y\\)-intercept.",
+    "a": "Endpoint/x-intercept at \\((-9, 0)\\); y-intercept at \\((0, 3)\\). Domain \\(x \\ge -9\\), range \\(y \\ge 0\\).",
     "opts": [],
-    "h": "Determine the domain of the function by setting the expression under the square root to be non-negative. Then find intercepts by setting $x=0$ and $y=0$.",
-    "s": "1. Domain: $9 + x \\ge 0 \\implies x \\ge -9$.\n2. Intercepts:\n- For the $x$-intercept, set $y = 0 \\implies \\sqrt{9 + x} = 0 \\implies x = -9$. Point is $(-9, 0)$.\n- For the $y$-intercept, set $x = 0 \\implies y = \\sqrt{9 + 0} = 3$. Point is $(0, 3)$.\n3. The graph is the top half of a horizontal parabola starting at $(-9, 0)$ and curving upwards to the right, passing through $(0, 3)$.",
     "solutionSteps": [
       {
-        "explanation": "Find domain and starting point.",
-        "workingOut": "9+x \\ge 0 \\implies x \\ge -9 \\implies \\text{Starts at } (-9,0)"
+        "explanation": "Identify domain and intercepts before sketching. g(x) = √(9 + x) requires 9 + x ≥ 0, so x ≥ -9. Strategy: mark the endpoint, then the y-intercept, then draw the increasing square-root curve to the right.",
+        "workingOut": "\\(\\text{Domain: } x \\ge -9\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find intercepts.",
-        "workingOut": "x=0 \\implies y=3 \\\\ y=0 \\implies x=-9"
+        "explanation": "x-intercept: set y = 0 ⇒ √(9 + x) = 0 ⇒ x = -9. Point (-9, 0). y-intercept: g(0) = √9 = 3. Point (0, 3).",
+        "workingOut": "\\((-9,0),\\; (0,3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch starting at (-9, 0) and rising through (0, 3), concave down in the usual square-root style. Label both intercepts for teacher review.",
+        "workingOut": "\\(y = \\sqrt{9 + x}\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"128.0\" x2=\"282.0\" y2=\"128.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"186.8\" y1=\"18\" x2=\"186.8\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M43.9,128.0 L48.9,114.5 L54.0,109.0 L59.1,104.7 L64.1,101.1 L69.2,97.9 L74.2,95.0 L79.3,92.4 L84.4,89.9 L89.4,87.6 L94.5,85.4 L99.5,83.3 L104.6,81.3 L109.7,79.4 L114.7,77.6 L119.8,75.8 L124.8,74.1 L129.9,72.5 L135.0,70.9 L140.0,69.3 L145.1,67.8 L150.1,66.3 L155.2,64.8 L160.3,63.4 L165.3,62.0 L170.4,60.7 L175.4,59.3 L180.5,58.0 L185.6,56.7 L190.6,55.5 L195.7,54.2 L200.7,53.0 L205.8,51.8 L210.9,50.6 L215.9,49.5 L221.0,48.3 L226.0,47.2 L231.1,46.1 L236.2,45.0 L241.2,43.9 L246.3,42.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"43.9\" cy=\"128.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"186.8\" cy=\"62.0\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = √(9 + x)</text>\n  <text x=\"49.875\" y=\"122\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(-9,0)</text>\n  <text x=\"40\" y=\"230\" font-size=\"10\" fill=\"#64748b\">x-int (−9,0), y-int (0,3)</text>\n</svg>"
+        }
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-11bi",
@@ -15912,48 +16605,64 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Let $g(x) = \\sqrt{9 + x}$ and $R(x) = -x$. Find the expression for the composite function $y = g(R(x))$ and interpret the result as a transformation of the graph of $y = g(x)$.",
-    "a": "0",
+    "q": "Let \\(g(x) = \\sqrt{9 + x}\\) and \\(R(x) = -x\\). Find the expression for the composite function \\(y = g(R(x))\\) and interpret the result as a transformation of the graph of \\(y = g(x)\\).",
+    "a": "3",
     "opts": [
-      "$y = \\sqrt{9 - x}$, which is a reflection of the graph of $y = g(x)$ in the $y$-axis.",
-      "$y = -\\sqrt{9 + x}$, which is a reflection of the graph of $y = g(x)$ in the $x$-axis.",
-      "$y = \\sqrt{9 - x}$, which is a translation of the graph of $y = g(x)$ by $9$ units left.",
-      "$y = \\sqrt{9 + x} - x$, which is a translation of the graph of $y = g(x)$ downwards."
+      "\\(y = -\\sqrt{9 + x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(x\\)-axis.",
+      "\\(y = \\sqrt{9 - x}\\), which is a translation of the graph of \\(y = g(x)\\) by \\(9\\) units left.",
+      "\\(y = \\sqrt{9 + x} - x\\), which is a translation of the graph of \\(y = g(x)\\) downwards.",
+      "\\(y = \\sqrt{9 - x}\\), which is a reflection of the graph of \\(y = g(x)\\) in the \\(y\\)-axis."
     ],
-    "h": "Substitute the expression for $R(x) = -x$ inside $g(x)$. Recall that replacing $x$ with $-x$ reflects a graph across the $y$-axis.",
-    "s": "$g(R(x)) = g(-x) = \\sqrt{9 + (-x)} = \\sqrt{9 - x}$.\nReplacing $x$ with $-x$ corresponds to a reflection in the $y$-axis.",
+    "h": "Substitute the expression for \\(R(x) = -x\\) inside \\(g(x)\\). Recall that replacing \\(x\\) with \\(-x\\) reflects a graph across the \\(y\\)-axis.",
+    "s": "\\(g(R(x)) = g(-x) = \\sqrt{9 + (-x)} = \\sqrt{9 - x}\\).\nReplacing \\(x\\) with \\(-x\\) corresponds to a reflection in the \\(y\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(R(x) = -x\\) into \\(g(x)\\).",
-        "workingOut": "g(R(x)) = g(-x) = \\sqrt{9 - x}"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(R(x)) = g(-x) = \\sqrt{9 - x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation associated with \\(x \\to -x\\).",
-        "workingOut": "x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(x \\to -x \\implies \\text{Reflection in the } y\\text{-axis}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(y = \\sqrt{9 - x}, which is a reflection of the graph of y = g(x) in the y-axis.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-11bii",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "medium",
-    "q": "Let $g(x) = \\sqrt{9 + x}$ and $R(x) = -x$. Sketch the graph of $y = g(R(x)) = \\sqrt{9 - x}$ and state its domain and range.",
-    "a": "Domain: $x \\le 9$, Range: $y \\ge 0$. Graph starts at (9, 0) and curves to the left.",
+    "q": "Let \\(g(x) = \\sqrt{9 + x}\\) and \\(R(x) = -x\\). Sketch \\(y = g(R(x)) = \\sqrt{9 - x}\\) and state its domain and range.",
+    "a": "Domain \\(x \\le 9\\), range \\(y \\ge 0\\). Graph starts at \\((9, 0)\\) and curves leftward.",
     "opts": [],
-    "h": "Apply a reflection in the $y$-axis to the graph of $y = g(x) = \\sqrt{9 + x}$.",
-    "s": "1. Expression: $y = \\sqrt{9 - x}$.\n2. Domain: $9 - x \\ge 0 \\implies x \\le 9$.\n3. Range: $y \\ge 0$.\n4. Graph: This is the reflection of $y = \\sqrt{9 + x}$ across the $y$-axis. The starting point moves from $(-9, 0)$ to $(9, 0)$, and the curve goes to the left, passing through the $y$-intercept at $(0, 3)$.",
     "solutionSteps": [
       {
-        "explanation": "Determine the domain by keeping the radicand non-negative.",
-        "workingOut": "9 - x \\ge 0 \\implies x \\le 9"
+        "explanation": "Compose: g(R(x)) = √(9 + (-x)) = √(9 - x). Domain: 9 - x ≥ 0 ⇒ x ≤ 9. Range of a square root is [0, ∞).",
+        "workingOut": "\\(y = \\sqrt{9 - x},\\; x \\le 9\\)",
+        "graphData": null
       },
       {
-        "explanation": "State the range and identify the reflected curve shape.",
-        "workingOut": "\\text{Range: } y \\ge 0, quad \\text{Reflected starting point: } (9,0)"
+        "explanation": "Endpoint at x = 9, y = 0. As x decreases, y increases. This is a left-opening square-root graph (reflection of √x style).",
+        "workingOut": "\\((9,0)\\text{ endpoint}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch from (9, 0) leftward, label domain x ≤ 9 and range y ≥ 0.",
+        "workingOut": "\\(\\text{Domain } (-\\infty,9],\\; \\text{Range } [0,\\infty)\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"128.0\" x2=\"282.0\" y2=\"128.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"64.3\" y1=\"18\" x2=\"64.3\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M390.9,128.0 L388.5,128.0 L386.2,128.0 L383.9,128.0 L381.6,128.0 L379.3,128.0 L377.0,128.0 L374.7,128.0 L372.4,128.0 L370.0,128.0 L367.7,128.0 L365.4,128.0 L363.1,128.0 L360.8,128.0 L358.5,128.0 L356.2,128.0 L353.8,128.0 L351.5,128.0 L349.2,128.0 L346.9,128.0 L344.6,128.0 L342.3,128.0 L340.0,128.0 L337.7,128.0 L335.3,128.0 L333.0,128.0 L330.7,128.0 L328.4,128.0 L326.1,128.0 L323.8,128.0 L321.5,128.0 L319.1,128.0 L316.8,128.0 L314.5,128.0 L312.2,128.0 L309.9,128.0 L307.6,128.0 L305.3,128.0 L303.0,128.0 L300.6,128.0 L298.3,128.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"390.9\" cy=\"128.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"64.3\" cy=\"62.0\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = √(9 − x)</text>\n  <text x=\"396.8571428571429\" y=\"122\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(9,0)</text>\n  <text x=\"40\" y=\"230\" font-size=\"10\" fill=\"#64748b\">domain x ≤ 9, range y ≥ 0</text>\n</svg>"
+        }
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-11ci",
@@ -15961,122 +16670,163 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Let $H(x) = x - 3$, $g(x) = \\sqrt{9 + x}$, and $R(x) = -x$. Find the expression for $y = H(g(R(x)))$ and interpret it as a transformation of the graph of $y = g(R(x)) = \\sqrt{9 - x}$.",
+    "q": "Let \\(H(x) = x - 3\\), \\(g(x) = \\sqrt{9 + x}\\), and \\(R(x) = -x\\). Find the expression for \\(y = H(g(R(x)))\\) and interpret it as a transformation of the graph of \\(y = g(R(x)) = \\sqrt{9 - x}\\).",
     "a": "0",
     "opts": [
-      "$y = \\sqrt{9 - x} - 3$, which is a vertical translation of $y = g(R(x))$ downwards by $3$ units.",
-      "$y = \\sqrt{6 - x}$, which is a horizontal translation of $y = g(R(x))$ left by $3$ units.",
-      "$y = \\sqrt{12 - x}$, which is a horizontal translation of $y = g(R(x))$ right by $3$ units.",
-      "$y = \\sqrt{9 - x} + 3$, which is a vertical translation of $y = g(R(x))$ upwards by $3$ units."
+      "\\(y = \\sqrt{9 - x} - 3\\), which is a vertical translation of \\(y = g(R(x))\\) downwards by \\(3\\) units.",
+      "\\(y = \\sqrt{6 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) left by \\(3\\) units.",
+      "\\(y = \\sqrt{12 - x}\\), which is a horizontal translation of \\(y = g(R(x))\\) right by \\(3\\) units.",
+      "\\(y = \\sqrt{9 - x} + 3\\), which is a vertical translation of \\(y = g(R(x))\\) upwards by \\(3\\) units."
     ],
-    "h": "Substitute the expression for $g(R(x))$ into $H(x) = x - 3$. Think about what subtracting $3$ from a function does geometrically.",
-    "s": "$H(g(R(x))) = H(\\sqrt{9 - x}) = \\sqrt{9 - x} - 3$.\nSubtracting $3$ from the entire function represents a translation downwards by $3$ units.",
+    "h": "Substitute the expression for \\(g(R(x))\\) into \\(H(x) = x - 3\\). Think about what subtracting \\(3\\) from a function does geometrically.",
+    "s": "\\(H(g(R(x))) = H(\\sqrt{9 - x}) = \\sqrt{9 - x} - 3\\).\nSubtracting \\(3\\) from the entire function represents a translation downwards by \\(3\\) units.",
     "solutionSteps": [
       {
-        "explanation": "Substitute the expression of \\(g(R(x))\\) into \\(H(x)\\).",
-        "workingOut": "H(g(R(x))) = H(\\sqrt{9-x}) = \\sqrt{9-x} - 3"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(H(g(R(x))) = H(\\sqrt{9-x}) = \\sqrt{9-x} - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the transformation.",
-        "workingOut": "f(x) \\to f(x) - 3 \\implies \\text{Translation downwards by 3 units}"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(x) \\to f(x) - 3 \\implies \\text{Translation downwards by 3 units}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(y = \\sqrt{9 - x} - 3, which is a vertical translation of y = g(R(x)) downwards by 3 units.\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-11cii",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Let $H(x) = x - 3$, $g(x) = \\sqrt{9 + x}$, and $R(x) = -x$. Sketch the graph of $y = H(g(R(x))) = \\sqrt{9 - x} - 3$ and state its domain and range.",
-    "a": "Domain: $x \\le 9$, Range: $y \\ge -3$. Graph starts at (9, -3) and curves to the left.",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "q": "Let \\(H(x) = x - 3\\), \\(g(x) = \\sqrt{9 + x}\\), and \\(R(x) = -x\\). Sketch \\(y = H(g(R(x))) = \\sqrt{9 - x} - 3\\) and state domain and range.",
+    "a": "Domain \\(x \\le 9\\), range \\(y \\ge -3\\). Graph starts at \\((9, -3)\\) and curves leftward.",
     "opts": [],
-    "h": "Translate the graph of $y = \\sqrt{9 - x}$ downwards by $3$ units.",
-    "s": "1. Expression: $y = \\sqrt{9 - x} - 3$.\n2. Domain: The square root requires $9 - x \\ge 0 \\implies x \\le 9$.\n3. Range: Since $\\sqrt{9 - x} \\ge 0$, we have $y = \\sqrt{9 - x} - 3 \\ge -3$. So the range is $y \\ge -3$.\n4. Graph: The starting point is shifted downwards from $(9, 0)$ to $(9, -3)$. The curve goes to the left, passing through $(0, 0)$ because $y(0) = \\sqrt{9} - 3 = 0$.",
     "solutionSteps": [
       {
-        "explanation": "State domain and range based on translations.",
-        "workingOut": "\\text{Domain: } x \\le 9, quad \\text{Range: } y \\ge -3"
+        "explanation": "First g(R(x)) = √(9 - x) as before. Then apply H: subtract 3 vertically. Domain is unchanged: x ≤ 9. Range shifts down by 3: y ≥ -3.",
+        "workingOut": "\\(y = \\sqrt{9 - x} - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find starting point and intercepts.",
-        "workingOut": "\\text{Starts at } (9, -3), quad y\\text{-intercept at } (0, 0)"
+        "explanation": "Endpoint: when x = 9, y = 0 - 3 = -3. So the graph starts at (9, -3).",
+        "workingOut": "\\((9,-3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Sketch the same left-opening shape as √(9 - x) but translated 3 units down. Label domain and range.",
+        "workingOut": "\\(\\text{Domain } (-\\infty,9],\\; \\text{Range } [-3,\\infty)\\)",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"128.0\" x2=\"282.0\" y2=\"128.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"64.3\" y1=\"18\" x2=\"64.3\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M390.9,194.0 L388.5,194.0 L386.2,194.0 L383.9,194.0 L381.6,194.0 L379.3,194.0 L377.0,194.0 L374.7,194.0 L372.4,194.0 L370.0,194.0 L367.7,194.0 L365.4,194.0 L363.1,194.0 L360.8,194.0 L358.5,194.0 L356.2,194.0 L353.8,194.0 L351.5,194.0 L349.2,194.0 L346.9,194.0 L344.6,194.0 L342.3,194.0 L340.0,194.0 L337.7,194.0 L335.3,194.0 L333.0,194.0 L330.7,194.0 L328.4,194.0 L326.1,194.0 L323.8,194.0 L321.5,194.0 L319.1,194.0 L316.8,194.0 L314.5,194.0 L312.2,194.0 L309.9,194.0 L307.6,194.0 L305.3,194.0 L303.0,194.0 L300.6,194.0 L298.3,194.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n  <circle cx=\"390.9\" cy=\"194.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"64.3\" cy=\"128.0\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = √(9 − x) − 3</text>\n  <text x=\"396.8571428571429\" y=\"188\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(9,-3)</text>\n  <text x=\"40\" y=\"230\" font-size=\"10\" fill=\"#64748b\">domain x ≤ 9, range y ≥ -3</text>\n</svg>"
+        }
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-12a",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Prove that if both $f(x)$ and $g(x)$ are odd functions, then their composite function $g(f(x))$ is also an odd function.",
-    "a": "Since f, g are odd, f(-x) = -f(x) and g(-x) = -g(x). Then g(f(-x)) = g(-f(x)) = -g(f(x)), which proves g(f(x)) is odd.",
-    "opts": [],
-    "h": "Start by evaluating the composite function at $-x$, i.e., $g(f(-x))$, and apply the definition of odd functions ($f(-x) = -f(x)$).",
-    "s": "1. Recall the definition of an odd function: $f(-x) = -f(x)$ and $g(-x) = -g(x)$.\n2. Let's substitute $-x$ into the composite function: $g(f(-x))$.\n3. Since $f$ is an odd function, $f(-x) = -f(x)$. Substituting this in gives $g(f(-x)) = g(-f(x))$.\n4. Since $g$ is an odd function, we have $g(-u) = -g(u)$ for any expression $u$. Setting $u = f(x)$, we obtain $g(-f(x)) = -g(f(x))$.\n5. Since $g(f(-x)) = -g(f(x))$ for all $x$ in the domain, the composite function $g(f(x))$ is odd.",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Which statement correctly proves that if both \\(f\\) and \\(g\\) are odd, then \\(g(f(x))\\) is odd?",
+    "a": "2",
+    "opts": [
+      "If \\(f\\) and \\(g\\) are odd, then \\(g(f(-x)) = g(f(x))\\), so \\(g \\circ f\\) is even.",
+      "Odd composed with odd is always even.",
+      "If \\(f\\) and \\(g\\) are odd, then \\(g(f(-x)) = g(-f(x)) = -g(f(x))\\), so \\(g \\circ f\\) is odd.",
+      "The composite of two odd functions is neither even nor odd in general."
+    ],
     "solutionSteps": [
       {
-        "explanation": "State the definitions of odd functions \\(f\\) and \\(g\\).",
-        "workingOut": "f(-x) = -f(x) \\quad \\text{and} \\quad g(-x) = -g(x)"
+        "explanation": "Recall: f odd means f(-x) = -f(x); g odd means g(-x) = -g(x). To prove g∘f odd, show g(f(-x)) = -g(f(x)).",
+        "workingOut": "\\(f(-x) = -f(x),\\; g(-x) = -g(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(-x\\) into the composite function and apply the definition of \\(f\\).",
-        "workingOut": "g(f(-x)) = g(-f(x))"
+        "explanation": "Then g(f(-x)) = g(-f(x)). Because g is odd, g(-f(x)) = -g(f(x)).",
+        "workingOut": "\\(g(f(-x)) = g(-f(x)) = -g(f(x))\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the definition of \\(g\\) to pull the negative sign out.",
-        "workingOut": "g(-f(x)) = -g(f(x)) \\implies g(f(-x)) = -g(f(x))"
+        "explanation": "This is the definition of an odd function for g∘f. Choose the matching proof statement.",
+        "workingOut": "\\(g\\circ f \\text{ is odd}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-12b",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Prove that if $f(x)$ is an odd function and $g(x)$ is an even function, then the composite function $g(f(x))$ is an even function.",
-    "a": "Since f is odd and g is even, f(-x) = -f(x) and g(-x) = g(x). Then g(f(-x)) = g(-f(x)) = g(f(x)), which proves g(f(x)) is even.",
-    "opts": [],
-    "h": "Evaluate $g(f(-x))$ and use the fact that $f(-x) = -f(x)$ and $g(-u) = g(u)$.",
-    "s": "1. Since $f$ is odd, $f(-x) = -f(x)$. Since $g$ is even, $g(-u) = g(u)$ for any expression $u$.\n2. Let's substitute $-x$ into the composite function: $g(f(-x))$.\n3. Since $f$ is odd, $g(f(-x)) = g(-f(x))$.\n4. Since $g$ is even, the negative sign inside can be ignored: $g(-f(x)) = g(f(x))$.\n5. Since $g(f(-x)) = g(f(x))$ for all $x$ in the domain, the composite function $g(f(x))$ is even.",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Which statement correctly proves that if \\(f\\) is odd and \\(g\\) is even, then \\(g(f(x))\\) is even?",
+    "a": "0",
+    "opts": [
+      "If \\(f\\) is odd and \\(g\\) is even, then \\(g(f(-x)) = g(-f(x)) = g(f(x))\\), so \\(g \\circ f\\) is even.",
+      "If \\(f\\) is odd and \\(g\\) is even, then \\(g(f(-x)) = -g(f(x))\\), so \\(g \\circ f\\) is odd.",
+      "Odd outside even is always odd.",
+      "The composite is neither even nor odd."
+    ],
     "solutionSteps": [
       {
-        "explanation": "State the symmetry rules for odd \\(f\\) and even \\(g\\).",
-        "workingOut": "f(-x) = -f(x) \\quad \\text{and} \\quad g(-x) = g(x)"
+        "explanation": "f odd: f(-x) = -f(x). g even: g(-u) = g(u) for every u. Need g(f(-x)) = g(f(x)).",
+        "workingOut": "\\(f(-x) = -f(x),\\; g(-u) = g(u)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(-x\\) into the composite function and apply the definition of \\(f\\).",
-        "workingOut": "g(f(-x)) = g(-f(x))"
+        "explanation": "g(f(-x)) = g(-f(x)). Evenness of g gives g(-f(x)) = g(f(x)).",
+        "workingOut": "\\(g(f(-x)) = g(-f(x)) = g(f(x))\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the definition of even function \\(g\\) to simplify.",
-        "workingOut": "g(-f(x)) = g(f(x)) \\implies g(f(-x)) = g(f(x))"
+        "explanation": "Hence g∘f is even.",
+        "workingOut": "\\(g\\circ f \\text{ is even}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-12c",
     "c": "5F",
     "t": "Composite functions",
-    "type": "graph_sketch",
-    "difficulty": "medium",
-    "q": "Prove that if $f(x)$ is an even function, then the composite function $g(f(x))$ is an even function, regardless of whether $g(x)$ is even, odd, or neither.",
-    "a": "Since f is even, f(-x) = f(x). Then g(f(-x)) = g(f(x)), which proves g(f(x)) is even, regardless of g.",
-    "opts": [],
-    "h": "Evaluate $g(f(-x))$ and apply the definition of the even function $f$: $f(-x) = f(x)$.",
-    "s": "1. Recall the definition of an even function: $f(-x) = f(x)$.\n2. Let's substitute $-x$ into the composite function: $g(f(-x))$.\n3. Since $f$ is an even function, we can replace the input $f(-x)$ with $f(x)$ inside the outer function $g$.\n4. This yields $g(f(-x)) = g(f(x))$.\n5. Since $g(f(-x)) = g(f(x))$ holds for all $x$, the composite function $g(f(x))$ is even. Notice that we did not need to use any properties of $g(x)$.",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "q": "Which statement correctly proves that if \\(f\\) is even, then \\(g(f(x))\\) is even for any function \\(g\\)?",
+    "a": "1",
+    "opts": [
+      "If \\(f\\) is even, then \\(g \\circ f\\) is odd for every \\(g\\).",
+      "If \\(f\\) is even, then \\(f(-x) = f(x)\\), so \\(g(f(-x)) = g(f(x))\\) for any \\(g\\); thus \\(g \\circ f\\) is even.",
+      "Even inside only preserves evenness when \\(g\\) is also even.",
+      "\\(g(f(-x)) = -g(f(x))\\) whenever \\(f\\) is even."
+    ],
     "solutionSteps": [
       {
-        "explanation": "State the definition of the even function \\(f\\).",
-        "workingOut": "f(-x) = f(x)"
+        "explanation": "Even f means f(-x) = f(x). Apply any g to both sides: g(f(-x)) = g(f(x)). This does not require g to be even or odd.",
+        "workingOut": "\\(f(-x) = f(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(-x\\) into the composite function and simplify using the even property of \\(f\\).",
-        "workingOut": "g(f(-x)) = g(f(x))"
+        "explanation": "Therefore g(f(-x)) = g(f(x)), so g∘f is even regardless of g.",
+        "workingOut": "\\(g(f(-x)) = g(f(x))\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Select the option that states this reasoning.",
+        "workingOut": "\\(g\\circ f \\text{ is even}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-13ai",
@@ -16084,26 +16834,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Let $f(x) = 3$ for all $x$, and $g(x) = 8$ for all $x$. Find the composite function $g(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = 3\\) for all \\(x\\), and \\(g(x) = 8\\) for all \\(x\\). Find the composite function \\(g(f(x))\\).",
+    "a": "3",
     "opts": [
-      "$8$",
-      "$3$",
-      "$24$",
-      "$11$"
+      "\\(3\\)",
+      "\\(24\\)",
+      "\\(11\\)",
+      "\\(8\\)"
     ],
-    "h": "The function $g(x)$ outputs $8$ for any input value. What is its value when the input is $f(x)$?",
-    "s": "Since $f(x) = 3$, $g(f(x)) = g(3)$.\nSince $g(x) = 8$ for all $x$, we have $g(3) = 8$.\nThus, $g(f(x)) = 8$.",
+    "h": "The function \\(g(x)\\) outputs \\(8\\) for any input value. What is its value when the input is \\(f(x)\\)?",
+    "s": "Since \\(f(x) = 3\\), \\(g(f(x)) = g(3)\\).\nSince \\(g(x) = 8\\) for all \\(x\\), we have \\(g(3) = 8\\).\nThus, \\(g(f(x)) = 8\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(f(x) = 3\\) into the composite function expression.",
-        "workingOut": "g(f(x)) = g(3)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(f(x)) = g(3)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the constant function rule for \\(g(x) = 8\\).",
-        "workingOut": "g(3) = 8 \\implies g(f(x)) = 8"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(g(3) = 8 \\implies g(f(x)) = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(8\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-13aii",
@@ -16111,26 +16869,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Let $f(x) = 3$ for all $x$, and $g(x) = 8$ for all $x$. Find the composite function $f(g(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = 3\\) for all \\(x\\), and \\(g(x) = 8\\) for all \\(x\\). Find the composite function \\(f(g(x))\\).",
+    "a": "2",
     "opts": [
-      "$3$",
-      "$8$",
-      "$24$",
-      "$11$"
+      "\\(8\\)",
+      "\\(24\\)",
+      "\\(3\\)",
+      "\\(11\\)"
     ],
-    "h": "The function $f(x)$ outputs $3$ for any input value. What is its value when the input is $g(x)$?",
-    "s": "Since $g(x) = 8$, $f(g(x)) = f(8)$.\nSince $f(x) = 3$ for all $x$, we have $f(8) = 3$.\nThus, $f(g(x)) = 3$.",
+    "h": "The function \\(f(x)\\) outputs \\(3\\) for any input value. What is its value when the input is \\(g(x)\\)?",
+    "s": "Since \\(g(x) = 8\\), \\(f(g(x)) = f(8)\\).\nSince \\(f(x) = 3\\) for all \\(x\\), we have \\(f(8) = 3\\).\nThus, \\(f(g(x)) = 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(g(x) = 8\\) into the composite function expression.",
-        "workingOut": "f(g(x)) = f(8)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(g(x)) = f(8)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the constant function rule for \\(f(x) = 3\\).",
-        "workingOut": "f(8) = 3 \\implies f(g(x)) = 3"
+        "explanation": "Complete the final simplification and check the answer against the options. Confirm domain issues (square roots, denominators) if the question involves them. Match the exact option text.",
+        "workingOut": "\\(f(8) = 3 \\implies f(g(x)) = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-13bi",
@@ -16138,22 +16904,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Let $f(x) = x$ and let $g(x)$ be any function. Find the composite function $g(f(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x\\) and let \\(g(x)\\) be any function. Find the composite function \\(g(f(x))\\).",
+    "a": "1",
     "opts": [
-      "$g(x)$",
-      "$x$",
-      "$f(x)$",
-      "$g(x^2)$"
+      "\\(x\\)",
+      "\\(g(x)\\)",
+      "\\(f(x)\\)",
+      "\\(g(x^2)\\)"
     ],
-    "h": "Substitute the expression for $f(x)$ directly into $g(x)$.",
-    "s": "Since $f(x) = x$, we have $g(f(x)) = g(x)$.\nThe identity function $f$ leaves the input unchanged.",
+    "h": "Substitute the expression for \\(f(x)\\) directly into \\(g(x)\\).",
+    "s": "Since \\(f(x) = x\\), we have \\(g(f(x)) = g(x)\\).\nThe identity function \\(f\\) leaves the input unchanged.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(f(x) = x\\) into the composition.",
-        "workingOut": "g(f(x)) = g(x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(g(f(x)) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(g(f(x)) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(g(x)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5F-new-13bii",
@@ -16161,22 +16939,34 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Composite functions",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Let $f(x) = x$ and let $g(x)$ be any function. Find the composite function $f(g(x))$.",
-    "a": "0",
+    "q": "Let \\(f(x) = x\\) and let \\(g(x)\\) be any function. Find the composite function \\(f(g(x))\\).",
+    "a": "3",
     "opts": [
-      "$g(x)$",
-      "$x$",
-      "$f(x)$",
-      "$x g(x)$"
+      "\\(x\\)",
+      "\\(f(x)\\)",
+      "\\(x g(x)\\)",
+      "\\(g(x)\\)"
     ],
-    "h": "The function $f$ is the identity function, meaning $f(u) = u$ for any input $u$. What happens if the input is $g(x)$?",
-    "s": "Since $f(u) = u$ for any input $u$, substituting $u = g(x)$ gives $f(g(x)) = g(x)$.\nThe identity function $f$ returns its input unchanged.",
+    "h": "The function \\(f\\) is the identity function, meaning \\(f(u) = u\\) for any input \\(u\\). What happens if the input is \\(g(x)\\)?",
+    "s": "Since \\(f(u) = u\\) for any input \\(u\\), substituting \\(u = g(x)\\) gives \\(f(g(x)) = g(x)\\).\nThe identity function \\(f\\) returns its input unchanged.",
     "solutionSteps": [
       {
-        "explanation": "Apply the identity function rule \\(f(u) = u\\) where \\(u = g(x)\\).",
-        "workingOut": "f(g(x)) = g(x)"
+        "explanation": "Read the given functions and identify which composition is required. The strategy is to evaluate the inner function first (or form its expression), then apply the outer function. A common mistake is reversing the order of composition.",
+        "workingOut": "\\(f(g(x)) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Perform the inner evaluation or substitution, then prepare the result as the input of the outer function.",
+        "workingOut": "\\(f(g(x)) = g(x)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the final value or expression and select the matching option. Re-check arithmetic if the answer is numerical.",
+        "workingOut": "\\(g(x)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5h-1a",
