@@ -17,6 +17,10 @@ import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
 import TrafficMonitorPanel from './TrafficMonitorPanel';
 import ModeReviewPanel from './ModeReviewPanel';
+import {
+  fetchModeReviewSessions,
+  countUnreviewedModeSessions,
+} from '../services/modeReviewService';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -128,6 +132,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
   const [aiBusy, setAiBusy] = useState({}); // { [itemId]: true } while re-running AI grading
   // Live question docs for grading-queue items missing subQuestions (keyed by questionId).
   const [gradingLiveQuestions, setGradingLiveQuestions] = useState({});
+  // Unreviewed Challenge/Extreme sessions for Mode Review tab badge.
+  const [modeReviewNewCount, setModeReviewNewCount] = useState(0);
   const ADMIN_REPORT_LIMIT = 100;
 
   const formatStudentAnswer = (answer) => {
@@ -276,6 +282,21 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
   useEffect(() => {
     fetchReports();
   }, [fetchReports]);
+
+  // Lightweight badge count so Mode Review shows "new" even before that tab opens.
+  useEffect(() => {
+    let cancelled = false;
+    fetchModeReviewSessions()
+      .then((rows) => {
+        if (!cancelled) setModeReviewNewCount(countUnreviewedModeSessions(rows));
+      })
+      .catch(() => {
+        if (!cancelled) setModeReviewNewCount(0);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const loading = (viewMode === 'traffic' || viewMode === 'mode_review')
     ? false
@@ -1364,6 +1385,11 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'mode_review' ? 'white' : 'transparent', color: viewMode === 'mode_review' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'mode_review' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
             <Zap size={18} /> Mode Review
+            {modeReviewNewCount > 0 && (
+              <span style={{ background: '#ef4444', color: 'white', fontSize: '0.7rem', padding: '2px 6px', borderRadius: '8px', marginLeft: '4px' }}>
+                {modeReviewNewCount}
+              </span>
+            )}
           </button>
           <button 
             onClick={() => handleSetViewMode('traffic')}
@@ -1401,7 +1427,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
             ) : viewMode === 'grading' ? (
               renderGradingQueue()
             ) : viewMode === 'mode_review' ? (
-              <ModeReviewPanel searchQuery={searchQuery} />
+              <ModeReviewPanel
+                searchQuery={searchQuery}
+                onUnreviewedCountChange={setModeReviewNewCount}
+              />
             ) : (
               <TrafficMonitorPanel />
             )}

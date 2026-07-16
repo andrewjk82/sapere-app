@@ -8,6 +8,7 @@
  */
 import {
   collection,
+  deleteDoc,
   doc,
   getDoc,
   getDocs,
@@ -18,6 +19,7 @@ import {
   serverTimestamp,
   setDoc,
   updateDoc,
+  writeBatch,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { getModeBonusXp, getChallengeMode } from '../constants/challengeModes';
@@ -70,12 +72,61 @@ export async function recordModeReviewSession({
     modeBonusXp: Math.max(0, Number(modeBonusXp) || 0),
     xpEarned: Math.max(0, Number(xpEarned) || 0),
     modeBonusRevoked: false,
+    // Fresh finish always counts as new for the teacher badge.
+    reviewed: false,
+    reviewedAt: null,
     timestamp: timestamp || new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
 
   await setDoc(doc(db, COLLECTION, id), payload, { merge: true });
   return { id, ...payload };
+}
+
+/** True when the teacher has not opened / cleared this session yet. */
+export function isModeReviewUnreviewed(session) {
+  return session?.reviewed !== true;
+}
+
+export function countUnreviewedModeSessions(sessions = []) {
+  return sessions.filter(isModeReviewUnreviewed).length;
+}
+
+/** Mark a Mode Review pointer as reviewed (badge count drops). */
+export async function markModeReviewReviewed(id) {
+  if (!id) return;
+  const nowIso = new Date().toISOString();
+  await updateDoc(doc(db, COLLECTION, id), {
+    reviewed: true,
+    reviewedAt: nowIso,
+    updatedAt: nowIso,
+  });
+}
+
+/** Remove a single Mode Review pointer (student history stays intact). */
+export async function deleteModeReviewSession(id) {
+  if (!id) return;
+  await deleteDoc(doc(db, COLLECTION, id));
+}
+
+/**
+ * Delete all pointers already marked reviewed.
+ * Only removes the teacher index — never touches daily_stats / working_out.
+ */
+export async function deleteReviewedModeReviewSessions(sessions = []) {
+  const ids = sessions
+    .filter((s) => s?.reviewed === true && s?.id)
+    .map((s) => s.id);
+  if (ids.length === 0) return 0;
+
+  // Firestore batch limit 500.
+  for (let i = 0; i < ids.length; i += 450) {
+    const chunk = ids.slice(i, i + 450);
+    const batch = writeBatch(db);
+    chunk.forEach((id) => batch.delete(doc(db, COLLECTION, id)));
+    await batch.commit();
+  }
+  return ids.length;
 }
 
 /**
@@ -195,6 +246,8 @@ export async function revokeModeBonus(pointer, {
       modeBonusRevoked: true,
       modeBonusRevokedAt: nowIso,
       modeBonusRevokedAmount: bonus,
+      reviewed: true,
+      reviewedAt: nowIso,
       updatedAt: nowIso,
     }, { merge: true });
 

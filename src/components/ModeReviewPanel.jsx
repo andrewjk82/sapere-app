@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Zap, Flame, BookOpen, Calculator, PenLine, RefreshCw, Filter, User, Ban,
+  Zap, Flame, BookOpen, Calculator, PenLine, RefreshCw, Filter, User, Ban, Trash2,
 } from 'lucide-react';
 import {
   fetchModeReviewSessions,
@@ -9,6 +9,11 @@ import {
   loadModeReviewWorkingOut,
   revokeModeBonus,
   resolveModeBonusXp,
+  markModeReviewReviewed,
+  deleteModeReviewSession,
+  deleteReviewedModeReviewSessions,
+  isModeReviewUnreviewed,
+  countUnreviewedModeSessions,
   DEFAULT_MODE_BONUS_PENALTY_MESSAGE,
 } from '../services/modeReviewService';
 import { getChallengeMode } from '../constants/challengeModes';
@@ -73,7 +78,7 @@ function ModeBadge({ modeId }) {
   );
 }
 
-const ModeReviewPanel = ({ searchQuery = '' }) => {
+const ModeReviewPanel = ({ searchQuery = '', onUnreviewedCountChange }) => {
   const { showToast } = useToast();
   const [sessions, setSessions] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -88,10 +93,16 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
   const [revokeTarget, setRevokeTarget] = useState(null);
   const [revokeMessage, setRevokeMessage] = useState(DEFAULT_MODE_BONUS_PENALTY_MESSAGE);
   const [revoking, setRevoking] = useState(false);
+  const [clearingReviewed, setClearingReviewed] = useState(false);
+  const [deletingId, setDeletingId] = useState(null);
 
   const load = useCallback(() => {
     setReloadToken((t) => t + 1);
   }, []);
+
+  const notifyCount = useCallback((rows) => {
+    onUnreviewedCountChange?.(countUnreviewedModeSessions(rows));
+  }, [onUnreviewedCountChange]);
 
   useEffect(() => {
     let cancelled = false;
@@ -100,6 +111,7 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
         const rows = await fetchModeReviewSessions();
         if (cancelled) return;
         setSessions(rows);
+        notifyCount(rows);
         setError(null);
         setLoading(false);
       } catch (err) {
@@ -107,13 +119,14 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
         if (cancelled) return;
         setError(err?.message || 'Failed to load Mode Review');
         setSessions([]);
+        notifyCount([]);
         setLoading(false);
       }
     })();
     return () => {
       cancelled = true;
     };
-  }, [reloadToken]);
+  }, [reloadToken, notifyCount]);
 
   // Lazy-fill working-out images once detail is open (same pattern as StudentDetail).
   useEffect(() => {
@@ -154,6 +167,18 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
     });
   }, [sessions, modeFilter, typeFilter, searchQuery]);
 
+  const markReviewedLocal = useCallback((id) => {
+    setSessions((prev) => {
+      const next = prev.map((s) =>
+        s.id === id
+          ? { ...s, reviewed: true, reviewedAt: new Date().toISOString() }
+          : s,
+      );
+      notifyCount(next);
+      return next;
+    });
+  }, [notifyCount]);
+
   const handleOpen = async (pointer) => {
     if (openingId) return;
     setOpeningId(pointer.id);
@@ -175,6 +200,13 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
         userAnswers: [],
         answerResults: [],
       });
+      // Opening a session = reviewed for badge purposes (index only).
+      if (isModeReviewUnreviewed(pointer)) {
+        markReviewedLocal(pointer.id);
+        markModeReviewReviewed(pointer.id).catch((err) =>
+          console.warn('[ModeReview] mark reviewed failed:', err?.code || err),
+        );
+      }
       const detail = await loadModeReviewDetail(pointer);
       if (detail) {
         setSelectedChallenge(detail);
@@ -212,8 +244,8 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
     setRevoking(true);
     try {
       const result = await revokeModeBonus(revokeTarget, { message: revokeMessage });
-      setSessions((prev) =>
-        prev.map((s) =>
+      setSessions((prev) => {
+        const next = prev.map((s) =>
           s.id === revokeTarget.id
             ? {
                 ...s,
@@ -221,10 +253,14 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
                 modeBonusRevoked: true,
                 modeBonusRevokedAmount: result.bonus,
                 modeBonusRevokedAt: new Date().toISOString(),
+                reviewed: true,
+                reviewedAt: new Date().toISOString(),
               }
             : s,
-        ),
-      );
+        );
+        notifyCount(next);
+        return next;
+      });
       showToast(
         `Removed +${result.bonus} mode bonus XP from ${revokeTarget.studentName || 'student'}`,
         'success',
@@ -237,6 +273,55 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
       setRevoking(false);
     }
   };
+
+  const handleDeleteOne = async (session, e) => {
+    e?.stopPropagation?.();
+    if (!session?.id || deletingId) return;
+    if (!window.confirm(`Remove ${session.studentName || 'this'} session from Mode Review?\n(Student history is kept.)`)) {
+      return;
+    }
+    setDeletingId(session.id);
+    try {
+      await deleteModeReviewSession(session.id);
+      setSessions((prev) => {
+        const next = prev.filter((s) => s.id !== session.id);
+        notifyCount(next);
+        return next;
+      });
+      showToast('Removed from Mode Review', 'success');
+    } catch (err) {
+      console.warn('[ModeReview] delete failed:', err);
+      showToast(err?.message || 'Could not delete', 'error');
+    } finally {
+      setDeletingId(null);
+    }
+  };
+
+  const handleClearReviewed = async () => {
+    const reviewed = sessions.filter((s) => s.reviewed === true);
+    if (reviewed.length === 0 || clearingReviewed) return;
+    if (!window.confirm(`Clear ${reviewed.length} reviewed session${reviewed.length === 1 ? '' : 's'} from Mode Review?\n(Student history is kept.)`)) {
+      return;
+    }
+    setClearingReviewed(true);
+    try {
+      const n = await deleteReviewedModeReviewSessions(sessions);
+      setSessions((prev) => {
+        const next = prev.filter((s) => s.reviewed !== true);
+        notifyCount(next);
+        return next;
+      });
+      showToast(`Cleared ${n} reviewed session${n === 1 ? '' : 's'}`, 'success');
+    } catch (err) {
+      console.warn('[ModeReview] clear reviewed failed:', err);
+      showToast(err?.message || 'Could not clear reviewed sessions', 'error');
+    } finally {
+      setClearingReviewed(false);
+    }
+  };
+
+  const reviewedCount = sessions.filter((s) => s.reviewed === true).length;
+  const unreviewedCount = countUnreviewedModeSessions(sessions);
 
   if (loading) {
     return (
@@ -329,34 +414,64 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
             </button>
           ))}
         </div>
-        <button
-          type="button"
-          onClick={load}
-          title="Refresh"
-          style={{
-            marginLeft: 'auto',
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: 6,
-            padding: '8px 14px',
-            borderRadius: 12,
-            border: '1.5px solid #e2e8f0',
-            background: '#fff',
-            color: '#475569',
-            fontWeight: 800,
-            fontSize: '0.8rem',
-            cursor: 'pointer',
-          }}
-        >
-          <RefreshCw size={14} /> Refresh
-        </button>
+        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 8 }}>
+          {reviewedCount > 0 && (
+            <button
+              type="button"
+              onClick={handleClearReviewed}
+              disabled={clearingReviewed}
+              title="Remove all reviewed sessions from this list"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: 6,
+                padding: '8px 14px',
+                borderRadius: 12,
+                border: '1.5px solid #fecdd3',
+                background: '#fff1f2',
+                color: '#e11d48',
+                fontWeight: 800,
+                fontSize: '0.8rem',
+                cursor: clearingReviewed ? 'wait' : 'pointer',
+                opacity: clearingReviewed ? 0.7 : 1,
+              }}
+            >
+              <Trash2 size={14} />
+              {clearingReviewed ? 'Clearing…' : `Clear reviewed (${reviewedCount})`}
+            </button>
+          )}
+          <button
+            type="button"
+            onClick={load}
+            title="Refresh"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              padding: '8px 14px',
+              borderRadius: 12,
+              border: '1.5px solid #e2e8f0',
+              background: '#fff',
+              color: '#475569',
+              fontWeight: 800,
+              fontSize: '0.8rem',
+              cursor: 'pointer',
+            }}
+          >
+            <RefreshCw size={14} /> Refresh
+          </button>
+        </div>
       </div>
 
       <p style={{ margin: '0 0 16px', color: '#94a3b8', fontWeight: 600, fontSize: '0.85rem' }}>
         Challenge & Extreme sessions only — opens existing history by ID (no extra snapshots).
         {' '}
         Showing {filtered.length}
-        {filtered.length !== sessions.length ? ` of ${sessions.length}` : ''} recent.
+        {filtered.length !== sessions.length ? ` of ${sessions.length}` : ''} recent
+        {unreviewedCount > 0 ? (
+          <span style={{ color: '#e11d48', fontWeight: 800 }}> · {unreviewedCount} new</span>
+        ) : null}
+        .
       </p>
 
       {filtered.length === 0 ? (
@@ -384,6 +499,7 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
             const busy = openingId === s.id;
             const bonus = resolveModeBonusXp(s);
             const revoked = Boolean(s.modeBonusRevoked);
+            const isNew = isModeReviewUnreviewed(s);
             return (
               <motion.div
                 key={s.id}
@@ -397,8 +513,12 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
                   width: '100%',
                   padding: '16px 18px',
                   borderRadius: 16,
-                  border: revoked ? '1.5px solid #fecaca' : '1.5px solid #e2e8f0',
-                  background: revoked ? '#fffbfb' : '#fff',
+                  border: isNew
+                    ? '1.5px solid #c7d2fe'
+                    : revoked
+                      ? '1.5px solid #fecaca'
+                      : '1.5px solid #e2e8f0',
+                  background: isNew ? '#fafbff' : revoked ? '#fffbfb' : '#fff',
                   boxShadow: '0 2px 10px rgba(15,23,42,0.04)',
                   opacity: busy ? 0.7 : 1,
                 }}
@@ -441,6 +561,22 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
                       <span style={{ fontWeight: 900, color: '#0f172a', fontSize: '0.98rem' }}>
                         {s.studentName || 'Student'}
                       </span>
+                      {isNew && (
+                        <span
+                          style={{
+                            padding: '2px 8px',
+                            borderRadius: 8,
+                            fontSize: '0.68rem',
+                            fontWeight: 900,
+                            letterSpacing: '0.04em',
+                            textTransform: 'uppercase',
+                            color: '#fff',
+                            background: '#ef4444',
+                          }}
+                        >
+                          New
+                        </span>
+                      )}
                       <ModeBadge modeId={s.challengeMode} />
                       <span
                         style={{
@@ -520,45 +656,71 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
                   </div>
                 </button>
 
-                {!revoked ? (
-                  <button
-                    type="button"
-                    onClick={(e) => openRevoke(s, e)}
-                    title="Remove mode bonus XP"
-                    style={{
-                      flexShrink: 0,
-                      display: 'inline-flex',
-                      alignItems: 'center',
-                      gap: 6,
-                      padding: '10px 12px',
-                      borderRadius: 12,
-                      border: '1.5px solid #fecaca',
-                      background: '#fff1f2',
-                      color: '#be123c',
-                      fontWeight: 800,
-                      fontSize: '0.78rem',
-                      cursor: 'pointer',
-                      whiteSpace: 'nowrap',
-                    }}
-                  >
-                    <Ban size={14} />
-                    Remove bonus
-                  </button>
-                ) : (
-                  <span
-                    style={{
-                      flexShrink: 0,
-                      padding: '10px 12px',
-                      borderRadius: 12,
-                      background: '#f1f5f9',
-                      color: '#94a3b8',
-                      fontWeight: 800,
-                      fontSize: '0.75rem',
-                    }}
-                  >
-                    Done
-                  </span>
-                )}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 6, flexShrink: 0 }}>
+                  {!revoked ? (
+                    <button
+                      type="button"
+                      onClick={(e) => openRevoke(s, e)}
+                      title="Remove mode bonus XP"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '10px 12px',
+                        borderRadius: 12,
+                        border: '1.5px solid #fecaca',
+                        background: '#fff1f2',
+                        color: '#be123c',
+                        fontWeight: 800,
+                        fontSize: '0.78rem',
+                        cursor: 'pointer',
+                        whiteSpace: 'nowrap',
+                      }}
+                    >
+                      <Ban size={14} />
+                      Remove bonus
+                    </button>
+                  ) : (
+                    <span
+                      style={{
+                        padding: '8px 12px',
+                        borderRadius: 12,
+                        background: '#f1f5f9',
+                        color: '#94a3b8',
+                        fontWeight: 800,
+                        fontSize: '0.72rem',
+                        textAlign: 'center',
+                      }}
+                    >
+                      Bonus removed
+                    </span>
+                  )}
+                  {!isNew && (
+                    <button
+                      type="button"
+                      onClick={(e) => handleDeleteOne(s, e)}
+                      disabled={deletingId === s.id}
+                      title="Remove from Mode Review list"
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: 6,
+                        padding: '8px 12px',
+                        borderRadius: 12,
+                        border: '1.5px solid #e2e8f0',
+                        background: '#fff',
+                        color: '#64748b',
+                        fontWeight: 800,
+                        fontSize: '0.75rem',
+                        cursor: deletingId === s.id ? 'wait' : 'pointer',
+                      }}
+                    >
+                      <Trash2 size={13} />
+                      {deletingId === s.id ? '…' : 'Clear'}
+                    </button>
+                  )}
+                </div>
               </motion.div>
             );
           })}
