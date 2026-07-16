@@ -5848,12 +5848,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "q": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image.",
-    "a": 2,
+    "a": 0,
     "opts": [
-      "\\\\(y = \\\\sqrt{-3x}\\\\)",
-      "\\\\(y = 3\\\\sqrt{x}\\\")",
       "\\\\(y = -3\\\\sqrt{x}\\\\)",
-      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)"
+      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)",
+      "\\\\(y = 3\\\\sqrt{x}\\\\)",
+      "\\\\(y = \\\\sqrt{-3x}\\\\)"
     ],
     "h": "Multiply the function by \\\\(-3\\\\).",
     "s": "Multiply by \\\\(-3\\\\) to get \\\\(y = -3\\sqrt{x}\\\\). The graph is stretched vertically by 3 and reflected across the x-axis.",
@@ -5873,10 +5873,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "\\\\(y = \\\\sqrt{-3x}\\\\)",
-      "\\\\(y = 3\\\\sqrt{x}\\\")",
       "\\\\(y = -3\\\\sqrt{x}\\\\)",
-      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)"
+      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)",
+      "\\\\(y = 3\\\\sqrt{x}\\\\)",
+      "\\\\(y = \\\\sqrt{-3x}\\\\)"
     ],
     "answer": null,
     "question": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image."
@@ -8668,12 +8668,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "The unit circle \\\\(x^2 + y^2 = 1\\\\) is transformed into an ellipse centered at the origin, with \\\\(x\\\\)-intercepts at \\\\(\\pm 5\\\\) and \\\\(y\\\\)-intercepts at \\\\(\\pm 2\\\\). Identify the correct equation of this transformed graph.",
-    "a": 2,
+    "a": 3,
     "opts": [
-      "(2x)^2 + (5y)^2 = 1",
-      "(x/2)^2 + (y/5)^2 = 1",
-      "(x/5)^2 + (y/2)^2 = 1",
-      "(5x)^2 + (2y)^2 = 1"
+      "\\\\(\\\\left(\\\\frac{x}{2}\\\\right)^2 + \\\\left(\\\\frac{y}{5}\\\\right)^2 = 1\\\\)",
+      "\\\\((2x)^2 + (5y)^2 = 1\\\\)",
+      "\\\\((5x)^2 + (2y)^2 = 1\\\\)",
+      "\\\\(\\\\left(\\\\frac{x}{5}\\\\right)^2 + \\\\left(\\\\frac{y}{2}\\\\right)^2 = 1\\\\)"
     ],
     "h": "This is a horizontal stretch by 5 and a vertical stretch by 2.",
     "s": "A horizontal stretch by 5 replaces \\\\(x\\\\) with \\\\(x/5\\\\). A vertical stretch by 2 replaces \\\\(y\\\\) with \\\\(y/2\\\\). Therefore, the equation becomes \\\\((\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1\\\\).",
@@ -8693,12 +8693,13 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "(2x)^2 + (5y)^2 = 1",
-      "(x/2)^2 + (y/5)^2 = 1",
-      "(x/5)^2 + (y/2)^2 = 1",
-      "(5x)^2 + (2y)^2 = 1"
+      "\\\\(\\\\left(\\\\frac{x}{2}\\\\right)^2 + \\\\left(\\\\frac{y}{5}\\\\right)^2 = 1\\\\)",
+      "\\\\((2x)^2 + (5y)^2 = 1\\\\)",
+      "\\\\((5x)^2 + (2y)^2 = 1\\\\)",
+      "\\\\(\\\\left(\\\\frac{x}{5}\\\\right)^2 + \\\\left(\\\\frac{y}{2}\\\\right)^2 = 1\\\\)"
     ],
-    "question": "The unit circle \\\\(x^2 + y^2 = 1\\\\) is transformed into an ellipse centered at the origin, with \\\\(x\\\\)-intercepts at \\\\(\\pm 5\\\\) and \\\\(y\\\\)-intercepts at \\\\(\\pm 2\\\\). Identify the correct equation of this transformed graph."
+    "question": "The unit circle \\\\(x^2 + y^2 = 1\\\\) is transformed into an ellipse centered at the origin, with \\\\(x\\\\)-intercepts at \\\\(\\pm 5\\\\) and \\\\(y\\\\)-intercepts at \\\\(\\pm 2\\\\). Identify the correct equation of this transformed graph.",
+    "answer": null
   },
   {
     "id": "y11a-5D-new-17b",
@@ -8707,12 +8708,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "The function \\\\(y = 4^x\\\\) is transformed by dilations to pass through \\\\((0, -3)\\\\) and \\\\((1, -12)\\\\). Identify the correct equation of this transformed graph.",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "y = -3(4^x)",
-      "y = -4^(3x)",
-      "y = 4^(-3x)",
-      "y = 3(-4^x)"
+      "\\\\(y = 4^{-3x}\\\\)",
+      "\\\\(y = -4^{3x}\\\\)",
+      "\\\\(y = -3(4^x)\\\\)",
+      "\\\\(y = 3(-4^x)\\\\)"
     ],
     "h": "The new \\\\(y\\\\)-intercept is -3, instead of 1. What vertical stretch achieves this?",
     "s": "The original graph has a \\\\(y\\\\)-intercept of \\\\(1\\\\). The new graph has a \\\\(y\\\\)-intercept of \\\\(-3\\\\). This indicates a vertical stretch by a factor of \\\\(-3\\\\). Thus, \\\\(y = -3(4^x)\\\\). Checking the point \\\\(x=1\\\\): \\\\(y = -3(4^1) = -12\\\\), which perfectly matches.",
@@ -8732,12 +8733,13 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "y = -3(4^x)",
-      "y = -4^(3x)",
-      "y = 4^(-3x)",
-      "y = 3(-4^x)"
+      "\\\\(y = 4^{-3x}\\\\)",
+      "\\\\(y = -4^{3x}\\\\)",
+      "\\\\(y = -3(4^x)\\\\)",
+      "\\\\(y = 3(-4^x)\\\\)"
     ],
-    "question": "The function \\\\(y = 4^x\\\\) is transformed by dilations to pass through \\\\((0, -3)\\\\) and \\\\((1, -12)\\\\). Identify the correct equation of this transformed graph."
+    "question": "The function \\\\(y = 4^x\\\\) is transformed by dilations to pass through \\\\((0, -3)\\\\) and \\\\((1, -12)\\\\). Identify the correct equation of this transformed graph.",
+    "answer": null
   },
   {
     "id": "y11a-5D-new-17c",
@@ -8746,12 +8748,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "The function \\\\(y = x^2 - 9\\\\) is transformed to have its \\\\(x\\\\)-intercepts at \\\\(\\pm 2\\\\) while maintaining its vertex at \\\\((0, -9)\\\\). Identify the correct equation of this transformed graph.",
-    "a": 2,
+    "a": 3,
     "opts": [
-      "y = (2x/3)^2 - 9",
-      "y = 4x^2 - 9",
-      "y = (3x/2)^2 - 9",
-      "y = 9x^2 - 9"
+      "\\\\(y = 4x^2 - 9\\\\)",
+      "\\\\(y = 9x^2 - 9\\\\)",
+      "\\\\(y = \\\\left(\\\\frac{2x}{3}\\\\right)^2 - 9\\\\)",
+      "\\\\(y = \\\\left(\\\\frac{3x}{2}\\\\right)^2 - 9\\\\)"
     ],
     "h": "The original \\\\(x\\\\)-intercepts are at \\\\(\\pm 3\\\\). The new ones are at \\\\(\\pm 2\\\\). What is the horizontal compression factor?",
     "s": "The original \\\\(x\\\\)-intercepts of \\\\(y = x^2 - 9\\\\) are \\\\(\\pm 3\\\\). The new \\\\(x\\\\)-intercepts are \\\\(\\pm 2\\\\). This represents a horizontal compression by a factor of \\\\(\\frac{2}{3}\\\\). Therefore, we replace \\\\(x\\\\) with \\\\(\\frac{x}{2/3} = \\frac{3x}{2}\\\\). The equation is \\\\(y = (\\frac{3x}{2})^2 - 9\\\\).",
@@ -8771,12 +8773,13 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "y = (2x/3)^2 - 9",
-      "y = 4x^2 - 9",
-      "y = (3x/2)^2 - 9",
-      "y = 9x^2 - 9"
+      "\\\\(y = 4x^2 - 9\\\\)",
+      "\\\\(y = 9x^2 - 9\\\\)",
+      "\\\\(y = \\\\left(\\\\frac{2x}{3}\\\\right)^2 - 9\\\\)",
+      "\\\\(y = \\\\left(\\\\frac{3x}{2}\\\\right)^2 - 9\\\\)"
     ],
-    "question": "The function \\\\(y = x^2 - 9\\\\) is transformed to have its \\\\(x\\\\)-intercepts at \\\\(\\pm 2\\\\) while maintaining its vertex at \\\\((0, -9)\\\\). Identify the correct equation of this transformed graph."
+    "question": "The function \\\\(y = x^2 - 9\\\\) is transformed to have its \\\\(x\\\\)-intercepts at \\\\(\\pm 2\\\\) while maintaining its vertex at \\\\((0, -9)\\\\). Identify the correct equation of this transformed graph.",
+    "answer": null
   },
   {
     "id": "y11a-5D-new-18",
