@@ -11168,61 +11168,124 @@ export const CH5_QUESTIONS_Y11A = [
   {
     "id": "y11a-5E-new-5",
     "c": "5E",
-    "t": "Absolute Value",
-    "type": "teacher_review",
+    "t": "Absolute Value Graphs",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "Consider the functions \\(y = |x - 2|\\) and \\(y = |x| - 2\\).\n**a)** Copy and complete a table of values for both functions for integer values of \\(x\\) from \\(-2\\) to \\(4\\).\n**b)** Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.\n**c)** Explain how each graph is obtained by shifting the basic graph \\(y = |x|\\).\n**d)** Write down the domain and range of each function.",
-    "a": "See solution steps.",
+    "q": "Consider the functions \\(y = |x - 2|\\) and \\(y = |x| - 2\\).",
+    "question": "Consider the functions \\(y = |x - 2|\\) and \\(y = |x| - 2\\).",
+    "a": null,
+    "answer": null,
     "opts": [],
-    "h": "The first function shifts horizontally. The second shifts vertically.",
-    "s": "**a)** Tables:\\n\\(x\\): -2, -1, 0, 1, 2, 3, 4\\n\\(|x-2|\\): 4, 3, 2, 1, 0, 1, 2\\n\\(|x|-2\\): 0, -1, -2, -1, 0, 1, 2\n**b)** \\(y = |x-2|\\) is a V-shape with its vertex at \\((2, 0)\\). \\(y = |x|-2\\) is a V-shape with its vertex at \\((0, -2)\\).\n**c)** \\(y = |x-2|\\) is a horizontal shift of \\(y = |x|\\) by 2 units to the right. \\(y = |x|-2\\) is a vertical shift of \\(y = |x|\\) by 2 units downwards.\n**d)** \\(y = |x-2|\\): Domain is all real \\(x\\), Range is \\(y \\ge 0\\).\\n\\(y = |x|-2\\): Domain is all real \\(x\\), Range is \\(y \\ge -2\\).",
-    "solutionSteps": [
+    "options": [],
+    "h": "",
+    "s": "",
+    "solutionSteps": [],
+    "subQuestions": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
+        "id": "y11a-5E-new-5a",
+        "type": "teacher_review",
+        "question": "Copy and complete a table of values for both functions for integer values of \\(x\\) from \\(-2\\) to \\(4\\).",
+        "opts": [],
+        "options": [],
+        "a": "For \\(y = |x-2|\\): at \\(x = -2,-1,0,1,2,3,4\\) values are \\(4,3,2,1,0,1,2\\).\nFor \\(y = |x|-2\\): values are \\(0,-1,-2,-1,0,1,2\\).",
+        "answer": "For \\(y = |x-2|\\): at \\(x = -2,-1,0,1,2,3,4\\) values are \\(4,3,2,1,0,1,2\\).\nFor \\(y = |x|-2\\): values are \\(0,-1,-2,-1,0,1,2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "List integer x-values from -2 to 4. For each x, evaluate both |x - 2| and |x| - 2 separately. Absolute value is applied only inside its own bars — do not subtract 2 before taking |x| for the second function.",
+            "workingOut": "\\(x \\in \\{-2,-1,0,1,2,3,4\\}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Compute y = |x - 2|: distance from x to 2. At the vertex x = 2 the value is 0; values increase by 1 for each unit left or right.",
+            "workingOut": "\\(|x-2|:\\ 4,3,2,1,0,1,2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Compute y = |x| - 2: take |x| first, then subtract 2. At x = 0 you get -2 (the vertex of this graph). Final tables are ready for sketching in part (b).",
+            "workingOut": "\\(|x|-2:\\ 0,-1,-2,-1,0,1,2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
+        "id": "y11a-5E-new-5b",
+        "type": "teacher_review",
+        "question": "Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.",
+        "opts": [],
+        "options": [],
+        "a": "Both are V-shaped. \\(y = |x-2|\\) has vertex (2,0); \\(y = |x|-2\\) has vertex (0,-2). Same shape; different vertex positions.",
+        "answer": "Both are V-shaped. \\(y = |x-2|\\) has vertex (2,0); \\(y = |x|-2\\) has vertex (0,-2). Same shape; different vertex positions.",
+        "solutionSteps": [
+          {
+            "explanation": "Plot points from the table for each function. The graph of y = |x - 2| is a V with vertex at (2, 0). The graph of y = |x| - 2 is a V with vertex at (0, -2).",
+            "workingOut": "\\(\\text{Vertices: } (2,0)\\text{ and }(0,-2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Compare: both open upwards with slope ±1. The first is shifted right 2 from y = |x|; the second is shifted down 2. A common mistake is treating |x| - 2 as |x - 2|.",
+            "workingOut": "\\(\\text{Same shape, different translations}\\)",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"128.0\" x2=\"282.0\" y2=\"128.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"129.6\" y1=\"18\" x2=\"129.6\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,-4.0 L 180.4,128.0 L 282.0,40.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <path d=\"M 28.0,84.0 L 129.6,172.0 L 282.0,40.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"5 3\" stroke-linejoin=\"round\"/>\n  <circle cx=\"180.4\" cy=\"128.0\" r=\"3.5\" fill=\"#6366f1\"/>\n  <circle cx=\"129.6\" cy=\"172.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"150\" y=\"28\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 2|</text>\n  <text x=\"150\" y=\"44\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = |x| − 2</text>\n</svg>"
+            }
+          }
+        ]
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
+        "id": "y11a-5E-new-5c",
+        "type": "teacher_review",
+        "question": "Explain how each graph is obtained by shifting the basic graph \\(y = |x|\\).",
+        "opts": [],
+        "options": [],
+        "a": "\\(y = |x-2|\\) is \\(y = |x|\\) shifted 2 units right. \\(y = |x|-2\\) is \\(y = |x|\\) shifted 2 units down.",
+        "answer": "\\(y = |x-2|\\) is \\(y = |x|\\) shifted 2 units right. \\(y = |x|-2\\) is \\(y = |x|\\) shifted 2 units down.",
+        "solutionSteps": [
+          {
+            "explanation": "Recall translations of y = |x|: replacing x by x - h shifts the graph h units right (h > 0). Adding k outside the absolute value shifts k units up.",
+            "workingOut": "\\(y = |x - h| + k\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "For y = |x - 2|: h = 2, k = 0, so shift 2 units to the right. For y = |x| - 2: h = 0, k = -2, so shift 2 units down.",
+            "workingOut": "\\(|x-2|:\\ right\\ 2;\\quad |x|-2:\\ down\\ 2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "a) Evaluate tables.",
-        "workingOut": "\\(y = |x-2|: 4,3,2,1,0,1,2. \\quad y = |x|-2: 0,-1,-2,-1,0,1,2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "c) Analyze shifts.",
-        "workingOut": "\\(|x-2| \\implies \\text{Right 2}. \\quad |x|-2 \\implies \\text{Down 2}.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "d) Domain and Range.",
-        "workingOut": "\\(D: \\text{All real } x. \\quad R: y \\ge 0 \\text{ and } y \\ge -2.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": {
-          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"163.3\" x2=\"282.0\" y2=\"163.3\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"136.9\" y1=\"18\" x2=\"136.9\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"282.0\" y=\"177.3\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"142.9\" y=\"22.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M 28.0,40.9 L 173.1,163.3 L 282.0,71.5\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <path d=\"M 28.0,102.1 L 136.9,193.8 L 282.0,71.5\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"5 3\" stroke-linejoin=\"round\"/>\n  <text x=\"209.4\" y=\"126.7\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 2|</text>\n  <text x=\"173.1\" y=\"177.3\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = |x| − 2</text>\n  <circle cx=\"173.1\" cy=\"163.3\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"179.1\" y=\"157.3\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(2,0)</text>\n  <circle cx=\"136.9\" cy=\"193.8\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"142.9\" y=\"187.8\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(0,−2)</text>\n</svg>"
-        }
+        "id": "y11a-5E-new-5d",
+        "type": "multiple_choice",
+        "question": "Write down the domain and range of each function.",
+        "opts": [
+          "Both: domain \\(\\mathbb{R}\\). Range of \\(y=|x-2|\\) is \\([0,\\infty)\\); range of \\(y=|x|-2\\) is \\([-2,\\infty)\\).",
+          "Both: domain \\([0,\\infty)\\), range \\(\\mathbb{R}\\)",
+          "Both: domain \\(\\mathbb{R}\\), range \\([0,\\infty)\\)",
+          "Domain of each is \\([2,\\infty)\\); ranges differ"
+        ],
+        "options": [
+          "Both: domain \\(\\mathbb{R}\\). Range of \\(y=|x-2|\\) is \\([0,\\infty)\\); range of \\(y=|x|-2\\) is \\([-2,\\infty)\\).",
+          "Both: domain \\([0,\\infty)\\), range \\(\\mathbb{R}\\)",
+          "Both: domain \\(\\mathbb{R}\\), range \\([0,\\infty)\\)",
+          "Domain of each is \\([2,\\infty)\\); ranges differ"
+        ],
+        "a": 0,
+        "answer": 0,
+        "solutionSteps": [
+          {
+            "explanation": "Domain of any absolute-value expression in x with no further restrictions is all real numbers. Neither function has a denominator or even root that would exclude x-values.",
+            "workingOut": "\\(\\text{Domain of both: } \\mathbb{R}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Range of y = |x - 2|: values are always ≥ 0, and every y ≥ 0 is achieved. Range is [0, ∞).",
+            "workingOut": "\\(y = |x-2| \\ge 0 \\Rightarrow \\text{range } [0,\\infty)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Range of y = |x| - 2: minimum is -2 at x = 0, and all y ≥ -2 occur. Range is [-2, ∞). Choose the option that states both domains are R and these two ranges.",
+            "workingOut": "\\(y = |x|-2 \\ge -2 \\Rightarrow \\text{range } [-2,\\infty)\\)",
+            "graphData": null
+          }
+        ]
       }
     ],
     "isNew": true
@@ -13490,61 +13553,170 @@ export const CH5_QUESTIONS_Y11A = [
   {
     "id": "y11a-5E-new-15",
     "c": "5E",
-    "t": "Absolute Value",
-    "type": "teacher_review",
+    "t": "Absolute Value Equations",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "**a)** Sketch \\(y = |x - 4|\\) and \\(y = 2\\) on the same set of axes, clearly showing the points of intersection.\nHence write down the solution of \\(|x - 4| = 2\\).\n**b)** Now use similar graphical methods to solve each of the following:\n&nbsp;&nbsp;&nbsp;&nbsp;**i)** \\(|x + 2| = 3\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**ii)** \\(|2x - 3| = 5\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**iii)** \\(|4x - 1| = -3\\)\n&nbsp;&nbsp;&nbsp;&nbsp;**iv)** \\(|3x + 6| = 0\\)",
-    "a": "See solution steps.",
+    "q": "Use graphical methods to solve absolute value equations. Sketch where asked, then state solutions.",
+    "question": "Use graphical methods to solve absolute value equations. Sketch where asked, then state solutions.",
+    "a": null,
+    "answer": null,
     "opts": [],
-    "h": "Find where the V-shape intersects the horizontal line.",
-    "s": "**a)** The intersection points are at \\(x=6\\) and \\(x=2\\). Solution: \\(x=6, 2\\).\n**b) i)** Graph \\(y = |x+2|\\) and \\(y=3\\). Intersections at \\(x=1, -5\\).\n**b) ii)** Graph \\(y = |2x-3|\\) and \\(y=5\\). Intersections at \\(x=4, -1\\).\n**b) iii)** Graph \\(y = |4x-1|\\) and \\(y=-3\\). The V-shape is always above \\(y=0\\), so it never intersects \\(y=-3\\). No solution.\n**b) iv)** Graph \\(y = |3x+6|\\) and \\(y=0\\). The vertex touches the x-axis at \\(x=-2\\). Solution: \\(x=-2\\).",
-    "solutionSteps": [
+    "options": [],
+    "h": "",
+    "s": "",
+    "solutionSteps": [],
+    "subQuestions": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
+        "id": "y11a-5E-new-15a",
+        "type": "teacher_review",
+        "question": "Sketch \\(y = |x - 4|\\) and \\(y = 2\\) on the same set of axes, clearly showing the points of intersection. Hence write down the solution of \\(|x - 4| = 2\\).",
+        "opts": [],
+        "options": [],
+        "a": "Intersections at \\((2, 2)\\) and \\((6, 2)\\). Solution: \\(x = 2\\) or \\(x = 6\\).",
+        "answer": "Intersections at \\((2, 2)\\) and \\((6, 2)\\). Solution: \\(x = 2\\) or \\(x = 6\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Graph y = |x - 4| as a V with vertex (4, 0). Draw the horizontal line y = 2. Intersection x-coordinates solve |x - 4| = 2.",
+            "workingOut": "\\(y = |x-4|,\\quad y = 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve algebraically to confirm: x - 4 = 2 or x - 4 = -2, so x = 6 or x = 2. Mark both intersection points on the sketch.",
+            "workingOut": "\\(x = 6 \\quad \\text{or} \\quad x = 2\\)",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"191.3\" x2=\"282.0\" y2=\"191.3\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"51.1\" y1=\"18\" x2=\"51.1\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,67.5 L 143.5,191.3 L 282.0,42.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"28\" y1=\"141.8\" x2=\"282.0\" y2=\"141.8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/>\n  <circle cx=\"97.3\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"189.6\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"103.27272727272727\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(2,2)</text>\n  <text x=\"195.63636363636363\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(6,2)</text>\n  <text x=\"160\" y=\"36\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 4|</text>\n  <text x=\"200\" y=\"135.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = 2</text>\n</svg>"
+            }
+          },
+          {
+            "explanation": "The solution of |x - 4| = 2 is therefore x = 2 or x = 6. Both points lie 2 units above the x-axis on the absolute-value graph.",
+            "workingOut": "\\(\\text{Solution: } x = 2 \\text{ or } x = 6\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
+        "id": "y11a-5E-new-15b-i",
+        "type": "multiple_choice",
+        "question": "Use a similar graphical method to solve \\(|x + 2| = 3\\).",
+        "opts": [
+          "\\(x = 1\\) or \\(x = -5\\)",
+          "\\(x = 1\\) only",
+          "\\(x = -5\\) only",
+          "No solution"
+        ],
+        "options": [
+          "\\(x = 1\\) or \\(x = -5\\)",
+          "\\(x = 1\\) only",
+          "\\(x = -5\\) only",
+          "No solution"
+        ],
+        "a": 0,
+        "answer": 0,
+        "solutionSteps": [
+          {
+            "explanation": "Graphically, solve by intersecting y = |x + 2| (vertex (-2, 0)) with y = 3. Algebraically: x + 2 = 3 or x + 2 = -3.",
+            "workingOut": "\\(x + 2 = 3 \\quad \\text{or} \\quad x + 2 = -3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "x = 1 or x = -5. Check: |1+2| = 3 and |-5+2| = 3. Both valid.",
+            "workingOut": "\\(x = 1 \\text{ or } x = -5\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
+        "id": "y11a-5E-new-15b-ii",
+        "type": "multiple_choice",
+        "question": "Use a similar graphical method to solve \\(|2x - 3| = 5\\).",
+        "opts": [
+          "\\(x = 4\\) only",
+          "\\(x = 4\\) or \\(x = -1\\)",
+          "\\(x = 1\\) or \\(x = -4\\)",
+          "No solution"
+        ],
+        "options": [
+          "\\(x = 4\\) only",
+          "\\(x = 4\\) or \\(x = -1\\)",
+          "\\(x = 1\\) or \\(x = -4\\)",
+          "No solution"
+        ],
+        "a": 1,
+        "answer": 1,
+        "solutionSteps": [
+          {
+            "explanation": "Intersect y = |2x - 3| with y = 5, or solve 2x - 3 = 5 or 2x - 3 = -5.",
+            "workingOut": "\\(2x - 3 = 5 \\quad \\text{or} \\quad 2x - 3 = -5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "2x = 8 → x = 4; 2x = -2 → x = -1. Check both in the original equation.",
+            "workingOut": "\\(x = 4 \\text{ or } x = -1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
+        "id": "y11a-5E-new-15b-iii",
+        "type": "multiple_choice",
+        "question": "Use a similar graphical method to solve \\(|4x - 1| = -3\\).",
+        "opts": [
+          "\\(x = 1\\) or \\(x = -\\frac{1}{2}\\)",
+          "\\(x = -1\\) or \\(x = \\frac{1}{2}\\)",
+          "No solution",
+          "\\(x = 0\\)"
+        ],
+        "options": [
+          "\\(x = 1\\) or \\(x = -\\frac{1}{2}\\)",
+          "\\(x = -1\\) or \\(x = \\frac{1}{2}\\)",
+          "No solution",
+          "\\(x = 0\\)"
+        ],
+        "a": 2,
+        "answer": 2,
+        "solutionSteps": [
+          {
+            "explanation": "The graph of y = |4x - 1| never goes below the x-axis, so it cannot meet the horizontal line y = -3. Absolute value is never negative.",
+            "workingOut": "\\(|4x - 1| \\ge 0 \\neq -3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore there is no real solution. Do not write 4x - 1 = ±(-3) as if solutions exist.",
+            "workingOut": "\\(\\text{No real solution}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "a) Intersection points.",
-        "workingOut": "\\(x-4=2 \\implies x=6, x-4=-2 \\implies x=2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "b-ii) Solve.",
-        "workingOut": "\\(2x-3=\\pm 5 \\implies x=4, -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "b-iii) Observe.",
-        "workingOut": "\\(\\text{No intersection with negative y.}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See solution steps.\\)",
-        "graphData": {
-          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"191.3\" x2=\"282.0\" y2=\"191.3\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"51.1\" y1=\"18\" x2=\"51.1\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,67.5 L 143.5,191.3 L 282.0,42.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"28\" y1=\"141.8\" x2=\"282.0\" y2=\"141.8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/>\n  <circle cx=\"97.3\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"189.6\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"103.27272727272727\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(2,2)</text>\n  <text x=\"195.63636363636363\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(6,2)</text>\n  <text x=\"160\" y=\"36\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 4|</text>\n  <text x=\"200\" y=\"135.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = 2</text>\n</svg>"
-        }
+        "id": "y11a-5E-new-15b-iv",
+        "type": "multiple_choice",
+        "question": "Use a similar graphical method to solve \\(|3x + 6| = 0\\).",
+        "opts": [
+          "\\(x = -2\\)",
+          "\\(x = 2\\)",
+          "\\(x = 0\\)",
+          "No solution"
+        ],
+        "options": [
+          "\\(x = -2\\)",
+          "\\(x = 2\\)",
+          "\\(x = 0\\)",
+          "No solution"
+        ],
+        "a": 0,
+        "answer": 0,
+        "solutionSteps": [
+          {
+            "explanation": "The line y = 0 meets y = |3x + 6| only at the vertex, where the expression inside is zero.",
+            "workingOut": "\\(3x + 6 = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "x = -2. Check: |3(-2)+6| = 0. Unique solution.",
+            "workingOut": "\\(x = -2\\)",
+            "graphData": null
+          }
+        ]
       }
     ],
     "isNew": true
@@ -13553,55 +13725,66 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5E-new-16",
     "c": "5E",
     "t": "Absolute Value",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "q": "Consider the absolute value function \\(f(x) = |x|\\).\n**a)** Use the result \\(f(x) = \\sqrt{x^2}\\) to help prove that the absolute value function is even.\n**b)** Why was this result obvious from the graph of \\(y = |x|\\)?",
-    "a": "See steps.",
+    "type": "multipart",
+    "difficulty": "hard",
+    "q": "Consider the absolute value function \\(f(x) = |x|\\).",
+    "question": "Consider the absolute value function \\(f(x) = |x|\\).",
+    "a": null,
+    "answer": null,
     "opts": [],
-    "h": "Substitute \\(-x\\) into the function.",
-    "s": "**a)** \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\). Since \\(f(-x) = f(x)\\), the function is even.\n**b)** The graph of \\(y = |x|\\) is a V-shape symmetric about the y-axis. Functions with y-axis symmetry are even functions by definition.",
-    "solutionSteps": [
+    "options": [],
+    "h": "",
+    "s": "",
+    "solutionSteps": [],
+    "subQuestions": [
       {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
+        "id": "y11a-5E-new-16a",
+        "type": "teacher_review",
+        "question": "Use the result \\(f(x) = \\sqrt{x^2}\\) to help prove that the absolute value function is even.",
+        "opts": [],
+        "options": [],
+        "a": "Since \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\), \\(f\\) is even.",
+        "answer": "Since \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\), \\(f\\) is even.",
+        "solutionSteps": [
+          {
+            "explanation": "A function is even if f(-x) = f(x) for every x in the domain. Use the identity |x| = √(x²), which is valid for all real x because √ returns the non-negative root.",
+            "workingOut": "\\(f(x) = |x| = \\sqrt{x^2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Replace x by -x: f(-x) = √((-x)²) = √(x²) because (-x)² = x². This equals f(x). A common slip is writing √((-x)²) = -√(x²).",
+            "workingOut": "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Because f(-x) = f(x) for all real x, f is an even function. This is the required proof.",
+            "workingOut": "\\(\\text{Hence } f \\text{ is even.}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Read the given absolute-value equation and identify the base graph y = |x| together with any horizontal or vertical translations, reflections, or stretches. The plan is to find the vertex first, then sketch the V-shaped graph with correct orientation for teacher review.",
-        "workingOut": "\\(\\text{Strategy: find vertex, then sketch V-graph}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Locate the vertex from the form y = a|x - h| + k. The vertex is at (h, k). Horizontal shifts reverse the sign of h inside the bars; vertical shifts match the sign of k. A common error is swapping horizontal and vertical directions.",
-        "workingOut": "\\(See steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "a) Prove even.",
-        "workingOut": "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "b) Geometric meaning.",
-        "workingOut": "\\(\\text{Symmetric across y-axis.}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See steps.\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch both rays through the vertex, mark intercepts if the question asks for them, and label the vertex clearly. Confirm the graph opens upward when a > 0 and downward when a < 0. The expected features for marking are summarised in the model answer.",
-        "workingOut": "\\(See steps.\\)",
-        "graphData": {
-          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28.0\" y1=\"18\" x2=\"28.0\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"49.2\" y1=\"18\" x2=\"49.2\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"70.3\" y1=\"18\" x2=\"70.3\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"91.5\" y1=\"18\" x2=\"91.5\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"112.7\" y1=\"18\" x2=\"112.7\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"133.8\" y1=\"18\" x2=\"133.8\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"176.2\" y1=\"18\" x2=\"176.2\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"197.3\" y1=\"18\" x2=\"197.3\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"218.5\" y1=\"18\" x2=\"218.5\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"239.7\" y1=\"18\" x2=\"239.7\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"260.8\" y1=\"18\" x2=\"260.8\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"282.0\" y1=\"18\" x2=\"282.0\" y2=\"216.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"205.0\" x2=\"282.0\" y2=\"205.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"161.0\" x2=\"282.0\" y2=\"161.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"139.0\" x2=\"282.0\" y2=\"139.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"117.0\" x2=\"282.0\" y2=\"117.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"95.0\" x2=\"282.0\" y2=\"95.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"73.0\" x2=\"282.0\" y2=\"73.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"51.0\" x2=\"282.0\" y2=\"51.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"29.0\" x2=\"282.0\" y2=\"29.0\" stroke=\"#f1f5f9\" stroke-width=\"1\"/>\n  <line x1=\"28\" y1=\"183.0\" x2=\"282.0\" y2=\"183.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"155.0\" y1=\"18\" x2=\"155.0\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"284.0\" y=\"197.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"161.0\" y=\"22.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <text x=\"28.0\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-6</text>\n  <text x=\"49.2\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-5</text>\n  <text x=\"70.3\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-4</text>\n  <text x=\"91.5\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-3</text>\n  <text x=\"112.7\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-2</text>\n  <text x=\"133.8\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">-1</text>\n  <text x=\"176.2\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">1</text>\n  <text x=\"197.3\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">2</text>\n  <text x=\"218.5\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">3</text>\n  <text x=\"239.7\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">4</text>\n  <text x=\"260.8\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">5</text>\n  <text x=\"282.0\" y=\"195.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"middle\">6</text>\n  <text x=\"149.0\" y=\"208.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">-1</text>\n  <text x=\"149.0\" y=\"164.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">1</text>\n  <text x=\"149.0\" y=\"142.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">2</text>\n  <text x=\"149.0\" y=\"120.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">3</text>\n  <text x=\"149.0\" y=\"98.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">4</text>\n  <text x=\"149.0\" y=\"76.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">5</text>\n  <text x=\"149.0\" y=\"54.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">6</text>\n  <text x=\"149.0\" y=\"32.0\" font-size=\"9\" fill=\"#94a3b8\" text-anchor=\"end\">7</text>\n  <path d=\"M 28.0,51.0 L 155.0,183.0 L 282.0,51.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\" stroke-linecap=\"round\"/>\n  <text x=\"247.9\" y=\"84.6\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">f(x) = |x|</text>\n  <circle cx=\"155.0\" cy=\"183.0\" r=\"3.5\" fill=\"#ef4444\"/><text x=\"163.0\" y=\"175.0\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">V(0,0)</text>\n</svg>"
-        }
+        "id": "y11a-5E-new-16b",
+        "type": "teacher_review",
+        "question": "Why was this result obvious from the graph of \\(y = |x|\\)?",
+        "opts": [],
+        "options": [],
+        "a": "The graph is symmetric about the y-axis (mirror image left and right), which is the geometric definition of an even function.",
+        "answer": "The graph is symmetric about the y-axis (mirror image left and right), which is the geometric definition of an even function.",
+        "solutionSteps": [
+          {
+            "explanation": "Even functions are symmetric in the y-axis: the left and right halves are mirror images. Look at y = |x|.",
+            "workingOut": "\\(\\text{Even } \\Leftrightarrow \\text{ reflection symmetry in } y\\text{-axis}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The V-shape of y = |x| is clearly mirrored across the y-axis, so the graph alone shows the function is even — matching the algebraic proof.",
+            "workingOut": "\\(\\text{Graph of } y = |x| \\text{ is y-axis symmetric}\\)",
+            "graphData": {
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"183.0\" x2=\"282.0\" y2=\"183.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"155.0\" y1=\"18\" x2=\"155.0\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"282.0\" y=\"197.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"161.0\" y=\"22.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M 28.0,51.0 L 155.0,183.0 L 282.0,51.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = |x| (even: mirror in y-axis)</text>\n  <circle cx=\"155.0\" cy=\"183.0\" r=\"3.5\" fill=\"#ef4444\"/><text x=\"161.0\" y=\"177.0\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">V(0,0)</text>\n</svg>"
+            }
+          }
+        ]
       }
     ],
     "isNew": true
