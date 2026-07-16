@@ -1887,22 +1887,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(x) + 3$?",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(x) + 3\\)?",
     "a": "0",
     "opts": [
-      "$(4, 13)$",
-      "$(4, 7)$",
-      "$(7, 10)$",
-      "$(1, 10)$"
+      "\\((4, 13)\\)",
+      "\\((4, 7)\\)",
+      "\\((7, 10)\\)",
+      "\\((1, 10)\\)"
     ],
-    "h": "The $+3$ shifts the graph vertically up.",
-    "s": "A vertical translation of $+3$ increases the $y$-coordinate by $3$. The new point is $(4, 10+3) = (4, 13)$.",
+    "options": [
+      "\\((4, 13)\\)",
+      "\\((4, 7)\\)",
+      "\\((7, 10)\\)",
+      "\\((1, 10)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply vertical shift to the point.",
-        "workingOut": "(4, 10) \\to (4, 13)"
+        "explanation": "The given turning point is \\((4, 10)\\). Adding 3 outside \\(f\\) is a vertical translation up by 3. Strategy: keep the \\(x\\)-coordinate fixed and add 3 to the \\(y\\)-coordinate.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the vertical shift: \\(y_{\\text{new}} = 10 + 3 = 13\\). A common mistake is adding 3 to the \\(x\\)-coordinate instead.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (4, 13)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The new turning point is \\((4, 13)\\). It remains a maximum because a pure vertical shift does not flip the graph.",
+        "workingOut": "\\(\\text{Turning point: } (4, 13)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17b",
@@ -1910,22 +1929,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(x - 2)$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(x - 2)\\)?",
+    "a": "1",
     "opts": [
-      "$(6, 10)$",
-      "$(2, 10)$",
-      "$(4, 12)$",
-      "$(4, 8)$"
+      "\\((2, 10)\\)",
+      "\\((6, 10)\\)",
+      "\\((4, 12)\\)",
+      "\\((4, 8)\\)"
     ],
-    "h": "Replacing $x$ with $x-2$ shifts the graph horizontally to the right.",
-    "s": "A horizontal translation of $+2$ increases the $x$-coordinate by $2$. The new point is $(4+2, 10) = (6, 10)$.",
+    "options": [
+      "\\((2, 10)\\)",
+      "\\((6, 10)\\)",
+      "\\((4, 12)\\)",
+      "\\((4, 8)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal shift.",
-        "workingOut": "(4, 10) \\to (6, 10)"
+        "explanation": "Replacing \\(x\\) by \\(x - 2\\) is a horizontal translation 2 units to the right. The \\(y\\)-coordinate is unchanged.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "New \\(x\\)-coordinate: \\(4 + 2 = 6\\). A common error is shifting left because of the minus sign inside.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (6, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point is \\((6, 10)\\) and remains a maximum.",
+        "workingOut": "\\(\\text{Turning point: } (6, 10)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17c",
@@ -1933,22 +1971,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(x) - 5$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(x) - 5\\)?",
+    "a": "2",
     "opts": [
-      "$(4, 5)$",
-      "$(4, 15)$",
-      "$(-1, 10)$",
-      "$(9, 10)$"
+      "\\((4, 15)\\)",
+      "\\((-1, 10)\\)",
+      "\\((4, 5)\\)",
+      "\\((9, 10)\\)"
     ],
-    "h": "The $-5$ shifts the graph vertically down.",
-    "s": "A vertical translation of $-5$ decreases the $y$-coordinate by $5$. The new point is $(4, 10-5) = (4, 5)$.",
+    "options": [
+      "\\((4, 15)\\)",
+      "\\((-1, 10)\\)",
+      "\\((4, 5)\\)",
+      "\\((9, 10)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply vertical shift.",
-        "workingOut": "(4, 10) \\to (4, 5)"
+        "explanation": "Subtracting 5 outside \\(f\\) is a vertical translation down by 5. Keep \\(x = 4\\).",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "New \\(y\\)-coordinate: \\(10 - 5 = 5\\).",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (4, 5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point is \\((4, 5)\\).",
+        "workingOut": "\\(\\text{Turning point: } (4, 5)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17d",
@@ -1956,22 +2013,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(x + 5)$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(x + 5)\\)?",
+    "a": "3",
     "opts": [
-      "$(-1, 10)$",
-      "$(9, 10)$",
-      "$(4, 15)$",
-      "$(4, 5)$"
+      "\\((9, 10)\\)",
+      "\\((4, 15)\\)",
+      "\\((4, 5)\\)",
+      "\\((-1, 10)\\)"
     ],
-    "h": "Replacing $x$ with $x+5$ shifts the graph horizontally to the left.",
-    "s": "A horizontal translation of $-5$ decreases the $x$-coordinate by $5$. The new point is $(4-5, 10) = (-1, 10)$.",
+    "options": [
+      "\\((9, 10)\\)",
+      "\\((4, 15)\\)",
+      "\\((4, 5)\\)",
+      "\\((-1, 10)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal shift.",
-        "workingOut": "(4, 10) \\to (-1, 10)"
+        "explanation": "Replacing \\(x\\) by \\(x + 5\\) shifts the graph 5 units left. The \\(y\\)-value is unchanged.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "New \\(x\\)-coordinate: \\(4 - 5 = -1\\).",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (-1, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point is \\((-1, 10)\\).",
+        "workingOut": "\\(\\text{Turning point: } (-1, 10)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17e",
@@ -1979,22 +2055,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = 2f(x)$?",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = 2f(x)\\)?",
     "a": "0",
     "opts": [
-      "$(4, 20)$",
-      "$(8, 10)$",
-      "$(4, 5)$",
-      "$(2, 10)$"
+      "\\((4, 20)\\)",
+      "\\((8, 10)\\)",
+      "\\((4, 5)\\)",
+      "\\((2, 10)\\)"
     ],
-    "h": "Multiplying the function by $2$ dilates it vertically by a factor of $2$.",
-    "s": "The $y$-coordinate is multiplied by $2$. The new point is $(4, 10 \\times 2) = (4, 20)$.",
+    "options": [
+      "\\((4, 20)\\)",
+      "\\((8, 10)\\)",
+      "\\((4, 5)\\)",
+      "\\((2, 10)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply vertical dilation.",
-        "workingOut": "(4, 10) \\to (4, 20)"
+        "explanation": "Multiplying by 2 is a vertical dilation by factor 2 from the \\(x\\)-axis. Only the \\(y\\)-coordinate scales.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "New \\(y\\)-coordinate: \\(10 \\times 2 = 20\\). Do not double the \\(x\\)-coordinate.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (4, 20)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point is \\((4, 20)\\).",
+        "workingOut": "\\(\\text{Turning point: } (4, 20)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17f",
@@ -2002,22 +2097,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(2x)$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(2x)\\)?",
+    "a": "1",
     "opts": [
-      "$(2, 10)$",
-      "$(8, 10)$",
-      "$(4, 20)$",
-      "$(4, 5)$"
+      "\\((8, 10)\\)",
+      "\\((2, 10)\\)",
+      "\\((4, 20)\\)",
+      "\\((4, 5)\\)"
     ],
-    "h": "Replacing $x$ with $2x$ dilates the graph horizontally by a factor of $1/2$.",
-    "s": "The $x$-coordinate is multiplied by $1/2$. The new point is $(4/2, 10) = (2, 10)$.",
+    "options": [
+      "\\((8, 10)\\)",
+      "\\((2, 10)\\)",
+      "\\((4, 20)\\)",
+      "\\((4, 5)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal dilation.",
-        "workingOut": "(4, 10) \\to (2, 10)"
+        "explanation": "Replacing \\(x\\) by \\(2x\\) is a horizontal dilation by factor \\(\\frac{1}{2}\\) from the \\(y\\)-axis. Divide the \\(x\\)-coordinate by 2.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "New \\(x\\)-coordinate: \\(4 / 2 = 2\\). The \\(y\\)-coordinate stays 10.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (2, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point is \\((2, 10)\\).",
+        "workingOut": "\\(\\text{Turning point: } (2, 10)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17g",
@@ -2025,22 +2139,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = -f(x)$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = -f(x)\\)?",
+    "a": "2",
     "opts": [
-      "$(4, -10)$ (minimum)",
-      "$(-4, 10)$ (maximum)",
-      "$(4, -10)$ (maximum)",
-      "$(-4, -10)$ (minimum)"
+      "\\((-4, 10)\\) (maximum)",
+      "\\((4, -10)\\) (maximum)",
+      "\\((4, -10)\\) (minimum)",
+      "\\((-4, -10)\\) (minimum)"
     ],
-    "h": "Multiplying by $-1$ reflects the graph across the $x$-axis.",
-    "s": "Reflection in the $x$-axis negates the $y$-coordinate. The point becomes $(4, -10)$. Because it was a maximum, it flips upside down to become a minimum.",
+    "options": [
+      "\\((-4, 10)\\) (maximum)",
+      "\\((4, -10)\\) (maximum)",
+      "\\((4, -10)\\) (minimum)",
+      "\\((-4, -10)\\) (minimum)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply reflection in x-axis.",
-        "workingOut": "(4, 10) \\to (4, -10)"
+        "explanation": "Multiplying by \\(-1\\) reflects the graph in the \\(x\\)-axis. Negate the \\(y\\)-coordinate.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\) (maximum)",
+        "graphData": null
+      },
+      {
+        "explanation": "New point: \\((4, -10)\\). Reflection in the \\(x\\)-axis turns a maximum into a minimum.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (4, -10)\\) (minimum)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer: \\((4, -10)\\) and it is a minimum.",
+        "workingOut": "\\(\\text{TP: } (4, -10)\\text{ (minimum)}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17h",
@@ -2048,22 +2181,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = f(-x)$?",
-    "a": "0",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = f(-x)\\)?",
+    "a": "3",
     "opts": [
-      "$(-4, 10)$ (maximum)",
-      "$(4, -10)$ (minimum)",
-      "$(-4, -10)$ (maximum)",
-      "$(4, 10)$ (minimum)"
+      "\\((4, -10)\\) (minimum)",
+      "\\((-4, -10)\\) (maximum)",
+      "\\((4, 10)\\) (minimum)",
+      "\\((-4, 10)\\) (maximum)"
     ],
-    "h": "Replacing $x$ with $-x$ reflects the graph across the $y$-axis.",
-    "s": "Reflection in the $y$-axis negates the $x$-coordinate. The point becomes $(-4, 10)$. It remains a maximum.",
+    "options": [
+      "\\((4, -10)\\) (minimum)",
+      "\\((-4, -10)\\) (maximum)",
+      "\\((4, 10)\\) (minimum)",
+      "\\((-4, 10)\\) (maximum)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply reflection in y-axis.",
-        "workingOut": "(4, 10) \\to (-4, 10)"
+        "explanation": "Replacing \\(x\\) by \\(-x\\) reflects the graph in the \\(y\\)-axis. Negate the \\(x\\)-coordinate only.",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\) (maximum)",
+        "graphData": null
+      },
+      {
+        "explanation": "New point: \\((-4, 10)\\). The nature (maximum) is unchanged by a \\(y\\)-axis reflection.",
+        "workingOut": "\\((4, 10) \\;\\rightarrow\\; (-4, 10)\\) (maximum)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer: \\((-4, 10)\\) (maximum).",
+        "workingOut": "\\(\\text{TP: } (-4, 10)\\text{ (maximum)}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-17i",
@@ -2071,22 +2223,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "A function $y = f(x)$ has a maximum turning point at $(4, 10)$. What is the turning point of $y = |f(x)|$? (Assume the graph does not cross the x-axis around the turning point)",
+    "q": "A function \\(y = f(x)\\) has a maximum turning point at \\((4, 10)\\). What is the turning point of \\(y = |f(x)|\\)? (Assume the graph does not cross the \\(x\\)-axis near the turning point.)",
     "a": "0",
     "opts": [
-      "$(4, 10)$",
-      "$(4, -10)$",
-      "$(-4, 10)$",
-      "$(-4, -10)$"
+      "\\((4, 10)\\)",
+      "\\((4, -10)\\)",
+      "\\((-4, 10)\\)",
+      "\\((-4, -10)\\)"
     ],
-    "h": "Absolute value reflects negative $y$-values to positive. What happens if $y$ is already positive?",
-    "s": "Since the $y$-coordinate is $10$ (which is positive), $|10| = 10$. The turning point remains unchanged at $(4, 10)$.",
+    "options": [
+      "\\((4, 10)\\)",
+      "\\((4, -10)\\)",
+      "\\((-4, 10)\\)",
+      "\\((-4, -10)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Apply absolute value to the y-coordinate.",
-        "workingOut": "(4, |10|) = (4, 10)"
+        "explanation": "Absolute value reflects parts of the graph below the \\(x\\)-axis above it. At the given turning point, \\(y = 10 > 0\\).",
+        "workingOut": "\\(\\text{Given TP: } (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(10\\) is already positive, \\(|10| = 10\\). The point is unchanged.",
+        "workingOut": "\\((4, |10|) = (4, 10)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The turning point remains \\((4, 10)\\).",
+        "workingOut": "\\(\\text{Turning point: } (4, 10)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-18a",
@@ -2170,143 +2341,93 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5-19a",
     "c": "5G",
     "t": "Combining Transformations",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph $y = (x - 2)^2 - 5$, showing the turning point.",
-    "a": "Parabola with vertex at (2, -5)",
+    "q": "Sketch the graph \\(y = (x - 2)^2 - 5\\), showing the turning point.",
+    "a": "Parabola with vertex at \\((2, -5)\\).",
     "opts": [],
-    "h": "The base graph is $y = x^2$ with turning point $(0,0)$.",
-    "s": "The graph shifts 2 units right and 5 units down. The turning point is $(2, -5)$.",
+    "options": [],
     "solutionSteps": [
       {
-        "explanation": "Start with the base function \\(y = x^2\\), which has a vertex (turning point) at \\((0, 0)\\).",
-        "workingOut": "y = x^2 \\implies \\text{Vertex: } (0, 0)"
+        "explanation": "Start from \\(y = x^2\\) with vertex \\((0, 0)\\). The form \\(y = (x - h)^2 + k\\) has vertex \\((h, k)\\).",
+        "workingOut": "\\(y = x^2 \\Rightarrow \\text{vertex } (0, 0)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the horizontal translation. Replacing \\(x\\) with \\(x - 2\\) translates the graph 2 units to the right, shifting the vertex to \\((2, 0)\\).",
-        "workingOut": "y = (x - 2)^2 \\implies \\text{Vertex: } (2, 0)"
+        "explanation": "Here \\(h = 2\\), \\(k = -5\\): shift 2 right and 5 down. Vertex is \\((2, -5)\\).",
+        "workingOut": "\\(\\text{Vertex: } (2, -5)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the vertical translation. Subtracting 5 translates the entire graph 5 units downwards, shifting the vertex to \\((2, -5)\\).",
-        "workingOut": "y = (x - 2)^2 - 5 \\implies \\text{Vertex: } (2, -5)"
-      },
-      {
-        "explanation": "Find the y-intercept by setting \\(x = 0\\). This gives \\(y = (0 - 2)^2 - 5 = 4 - 5 = -1\\).",
-        "workingOut": "\\text{y-intercept: } (0, -1)"
-      },
-      {
-        "explanation": "Sketch the upward-opening parabola with vertex at \\((2, -5)\\), passing through \\((0, -1)\\).",
-        "workingOut": "",
+        "explanation": "Sketch the upright parabola through the vertex. Label the turning point clearly for teacher review.",
+        "workingOut": "\\(y = (x-2)^2 - 5\\)",
         "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -2,
-              5,
-              6,
-              -7
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-7],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2)-5; }, -2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,-5], {name:'(2,-5)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,-1], {name:'(0,-1)', size:3, color:'red', label:{offset:[-15,8]}});\nboard.unsuspendUpdate();"
-          }
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"28\" y1=\"90.0\" x2=\"282\" y2=\"90.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"91.5\" y1=\"18\" x2=\"91.5\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M28.0,-108.0 L34.4,-79.9 L40.7,-53.3 L47.1,-28.1 L53.4,-4.3 L59.8,18.0 L66.1,38.9 L72.4,58.3 L78.8,76.3 L85.2,92.9 L91.5,108.0 L97.9,121.7 L104.2,133.9 L110.5,144.7 L116.9,154.1 L123.3,162.0 L129.6,168.5 L135.9,173.5 L142.3,177.1 L148.6,179.3 L155.0,180.0 L161.3,179.3 L167.7,177.1 L174.0,173.5 L180.4,168.5 L186.8,162.0 L193.1,154.1 L199.5,144.7 L205.8,133.9 L212.2,121.7 L218.5,108.0 L224.8,92.9 L231.2,76.3 L237.5,58.3 L243.9,38.9 L250.3,18.0 L256.6,-4.3 L263.0,-28.1 L269.3,-53.3 L275.6,-79.9 L282.0,-108.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"155.0\" cy=\"180.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"161\" y=\"174\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(2,-5)</text>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = (x−2)² − 5</text>\n</svg>"
         }
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-19b",
     "c": "5G",
     "t": "Combining Transformations",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph $y = -(x + 1)^3$.",
-    "a": "Cubic shifted 1 unit left and reflected in x-axis",
+    "q": "Sketch the graph \\(y = -(x + 1)^3\\).",
+    "a": "Cubic shifted 1 unit left and reflected in the \\(x\\)-axis.",
     "opts": [],
-    "h": "Follow the order of operations for $x$.",
-    "s": "First, replacing $x$ with $x+1$ shifts the graph $1$ unit left. Second, negating the whole function reflects it across the $x$-axis.",
+    "options": [],
     "solutionSteps": [
       {
-        "explanation": "Start with the base cubic function \\(y = x^3\\), which has a point of inflection at \\((0, 0)\\).",
-        "workingOut": "y = x^3 \\implies \\text{Inflection Point: } (0, 0)"
+        "explanation": "Start from \\(y = x^3\\). Replacing \\(x\\) by \\(x + 1\\) shifts 1 unit left.",
+        "workingOut": "\\(y = (x + 1)^3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the horizontal shift. Replacing \\(x\\) with \\(x + 1\\) translates the graph 1 unit to the left, shifting the inflection point to \\((-1, 0)\\).",
-        "workingOut": "y = (x + 1)^3 \\implies \\text{Inflection Point: } (-1, 0)"
+        "explanation": "The leading minus reflects in the \\(x\\)-axis: increasing cubics become decreasing through the origin of the shifted axes.",
+        "workingOut": "\\(y = -(x + 1)^3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the reflection. Multiplying by \\(-1\\) reflects the graph across the x-axis, flipping its direction.",
-        "workingOut": "y = -(x + 1)^3"
-      },
-      {
-        "explanation": "Find the y-intercept by substituting \\(x = 0\\): \\(y = -(0 + 1)^3 = -1\\).",
-        "workingOut": "\\text{y-intercept: } (0, -1)"
-      },
-      {
-        "explanation": "Sketch the cubic curve decreasing from top-left to bottom-right, passing through \\((-1, 0)\\) and \\((0, -1)\\).",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              6,
-              2,
-              -6
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -Math.pow(x+1, 3); }, -3, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-1,0], {name:'(-1,0)', size:3, color:'red', label:{offset:[-10,12]}});\nboard.create('point', [0,-1], {name:'(0,-1)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "The graph passes through \\((-1, 0)\\) and is a decreasing cubic. Sketch and label the inflection point.",
+        "workingOut": "\\(\\text{Inflection at } (-1, 0)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-19c",
     "c": "5G",
     "t": "Combining Transformations",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph $y = \\frac{1}{x - 3} + 4$, indicating its asymptotes.",
-    "a": "Hyperbola with vertical asymptote x = 3 and horizontal y = 4",
+    "q": "Sketch the graph \\(y = \\dfrac{1}{x - 3} + 4\\), indicating its asymptotes.",
+    "a": "Hyperbola with vertical asymptote \\(x = 3\\) and horizontal asymptote \\(y = 4\\).",
     "opts": [],
-    "h": "The base graph $y = 1/x$ has asymptotes $x=0$ and $y=0$.",
-    "s": "The graph is shifted $3$ units right and $4$ units up. The new asymptotes are $x = 3$ and $y = 4$.",
+    "options": [],
     "solutionSteps": [
       {
-        "explanation": "Find vertical asymptote (denominator = 0).",
-        "workingOut": "x - 3 = 0 \\implies x = 3"
+        "explanation": "Base graph \\(y = \\frac{1}{x}\\) has asymptotes \\(x = 0\\) and \\(y = 0\\).",
+        "workingOut": "\\(y = \\frac{1}{x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find horizontal asymptote (shift).",
-        "workingOut": "y = 4"
+        "explanation": "Replace \\(x\\) by \\(x - 3\\): vertical asymptote moves to \\(x = 3\\). Add 4: horizontal asymptote moves to \\(y = 4\\).",
+        "workingOut": "\\(x = 3,\\quad y = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Sketch the hyperbola with vertical asymptote at \\(x = 3\\) and horizontal asymptote at \\(y = 4\\).",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -1,
-              10,
-              7,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,10]], {strokeColor:'black'});\nboard.create('line', [[3,-2],[3,10]], {strokeColor:'gray', dash:2});\nboard.create('line', [[-1,4],[7,4]], {strokeColor:'gray', dash:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, -1, 2.9], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 1/(x-3)+4; }, 3.1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Sketch both branches of the rectangular hyperbola about these asymptotes and label them.",
+        "workingOut": "\\(y = \\dfrac{1}{x-3} + 4\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-19d",
@@ -2370,47 +2491,31 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5-19e",
     "c": "5G",
     "t": "Combining Transformations",
-    "type": "graph_sketch",
+    "type": "teacher_review",
     "difficulty": "hard",
-    "q": "Sketch the graph $y = \\sqrt{9 - (x - 2)^2}$.",
-    "a": "Semi-circle of radius 3, centered at (2, 0)",
+    "q": "Sketch the graph \\(y = \\sqrt{9 - (x - 2)^2}\\).",
+    "a": "Upper semicircle of radius 3 centred at \\((2, 0)\\).",
     "opts": [],
-    "h": "This is a semi-circle of radius $3$ shifted $2$ units right.",
-    "s": "The base semi-circle $y = \\sqrt{9 - x^2}$ has domain $[-3, 3]$ and range $[0, 3]$. Shifting $2$ units right changes the domain to $[-3+2, 3+2] = [-1, 5]$. The range is unaffected.",
+    "options": [],
     "solutionSteps": [
       {
-        "explanation": "Identify the base function \\(y = \\sqrt{9 - x^2}\\), which represents the upper semi-circle of radius 3 centered at the origin \\((0,0)\\).",
-        "workingOut": "x^2 + y^2 = 9 \\quad (y \\ge 0)"
+        "explanation": "Square both sides conceptually: \\(y^2 = 9 - (x - 2)^2\\) with \\(y \\ge 0\\) gives the upper half of a circle.",
+        "workingOut": "\\((x-2)^2 + y^2 = 9,\\; y \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the horizontal shift. Replacing \\(x\\) with \\(x - 2\\) translates the entire semi-circle 2 units to the right.",
-        "workingOut": "y = \\sqrt{9 - (x - 2)^2}"
+        "explanation": "Centre \\((2, 0)\\), radius 3. Domain \\([-1, 5]\\), range \\([0, 3]\\).",
+        "workingOut": "\\(\\text{Centre } (2,0),\\; r = 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the new center, domain, and endpoints. The center shifts to \\((2, 0)\\). The domain is \\([-1, 5]\\) (shifted from \\([-3, 3]\\)), and the peak of the semi-circle is at \\((2, 3)\\).",
-        "workingOut": "\\text{Domain: } [-1, 5], quad \\text{Peak: } (2, 3)"
-      },
-      {
-        "explanation": "Sketch the semi-circle centered at \\((2, 0)\\), passing through \\((-1, 0)\\), \\((5, 0)\\), with its maximum point at \\((2, 3)\\).",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -2,
-              5,
-              6,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,5]], {strokeColor:'black'});\nboard.create('arc', [[2,0], [5,0], [-1,0]], {strokeColor:'blue', strokeWidth:2});\nboard.create('point', [2,0], {name:'(2,0)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [2,3], {name:'(2,3)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Sketch the upper semicircle from \\((-1, 0)\\) to \\((5, 0)\\) with top at \\((2, 3)\\).",
+        "workingOut": "\\(y = \\sqrt{9 - (x-2)^2}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-20a",
@@ -2418,26 +2523,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "If $y = f(x)$ is translated $2$ units up, and then reflected in the $x$-axis, what is the new equation?",
-    "a": "0",
+    "q": "If \\(y = f(x)\\) is translated 2 units up, and then reflected in the \\(x\\)-axis, what is the new equation?",
+    "a": "1",
     "opts": [
-      "$y = -(f(x) + 2)$",
-      "$y = -f(x) + 2$",
-      "$y = f(-x) + 2$",
-      "$y = -(f(x) - 2)$"
+      "\\(y = -f(x) + 2\\)",
+      "\\(y = -(f(x) + 2)\\)",
+      "\\(y = f(-x) + 2\\)",
+      "\\(y = -(f(x) - 2)\\)"
     ],
-    "h": "Apply the transformations in the exact order given.",
-    "s": "Step 1: Translate $2$ units up $\\implies y = f(x) + 2$. Step 2: Reflect in $x$-axis $\\implies y = -(f(x) + 2) = -f(x) - 2$.",
+    "options": [
+      "\\(y = -f(x) + 2\\)",
+      "\\(y = -(f(x) + 2)\\)",
+      "\\(y = f(-x) + 2\\)",
+      "\\(y = -(f(x) - 2)\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Translate up 2.",
-        "workingOut": "y = f(x) + 2"
+        "explanation": "Apply transformations in the order given. First translate 2 units up: replace \\(y\\) by adding 2 outside \\(f\\).",
+        "workingOut": "\\(y = f(x) + 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Reflect in x-axis.",
-        "workingOut": "y = -(f(x) + 2)"
+        "explanation": "Reflect in the \\(x\\)-axis by multiplying the entire right-hand side by \\(-1\\). A common mistake is reflecting first and then translating.",
+        "workingOut": "\\(y = -(f(x) + 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Equivalently \\(y = -f(x) - 2\\). The option matching the composition order is \\(y = -(f(x) + 2)\\).",
+        "workingOut": "\\(y = -(f(x) + 2)\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-20b",
@@ -2445,26 +2565,41 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Combining Transformations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "If $y = f(x)$ is reflected in the $x$-axis, and then translated $2$ units up, what is the new equation?",
-    "a": "0",
+    "q": "If \\(y = f(x)\\) is reflected in the \\(x\\)-axis, and then translated 2 units up, what is the new equation?",
+    "a": "2",
     "opts": [
-      "$y = -f(x) + 2$",
-      "$y = -(f(x) + 2)$",
-      "$y = f(-x) + 2$",
-      "$y = -f(x) - 2$"
+      "\\(y = -(f(x) + 2)\\)",
+      "\\(y = f(-x) + 2\\)",
+      "\\(y = -f(x) + 2\\)",
+      "\\(y = -f(x) - 2\\)"
     ],
-    "h": "Order matters. Reflect first, then shift.",
-    "s": "Step 1: Reflect in $x$-axis $\\implies y = -f(x)$. Step 2: Translate $2$ units up $\\implies y = -f(x) + 2$.",
+    "options": [
+      "\\(y = -(f(x) + 2)\\)",
+      "\\(y = f(-x) + 2\\)",
+      "\\(y = -f(x) + 2\\)",
+      "\\(y = -f(x) - 2\\)"
+    ],
+    "h": "",
+    "s": "",
     "solutionSteps": [
       {
-        "explanation": "Reflect in x-axis.",
-        "workingOut": "y = -f(x)"
+        "explanation": "Order matters. First reflect in the \\(x\\)-axis: \\(y = -f(x)\\).",
+        "workingOut": "\\(y = -f(x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Translate up 2.",
-        "workingOut": "y = -f(x) + 2"
+        "explanation": "Then translate 2 units up by adding 2: \\(y = -f(x) + 2\\). This is different from translating first then reflecting.",
+        "workingOut": "\\(y = -f(x) + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(y = -f(x) + 2\\).",
+        "workingOut": "\\(y = -f(x) + 2\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "timeLimit": 60,
+    "isNew": true
   },
   {
     "id": "y11a-5-22a",
