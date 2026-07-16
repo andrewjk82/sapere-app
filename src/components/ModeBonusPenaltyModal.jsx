@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, useRef } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence, useMotionValue, useTransform, animate } from 'framer-motion';
 import { PenLine, AlertTriangle } from 'lucide-react';
 import { clearModeBonusPenaltyNotice } from '../services/modeReviewService';
@@ -18,20 +18,14 @@ export default function ModeBonusPenaltyModal({
   currentXP = 0,
   onDismissed,
 }) {
-  const [dismissedLocal, setDismissedLocal] = useState(false);
+  // After dismiss, hide until a different notice key appears (or profile clears).
+  const [dismissedKey, setDismissedKey] = useState('');
   const noticeKey = notice
     ? `${notice.date || ''}|${notice.createdAt || ''}|${notice.amount || 0}`
     : '';
 
-  // Reset local dismiss when a new notice arrives.
-  const prevKey = useRef('');
-  if (noticeKey && noticeKey !== prevKey.current) {
-    prevKey.current = noticeKey;
-    if (dismissedLocal) setDismissedLocal(false);
-  }
-
   const amount = Math.max(0, Number(notice?.amount) || 0);
-  const open = Boolean(notice && amount > 0 && !dismissedLocal);
+  const open = Boolean(notice && amount > 0 && noticeKey && noticeKey !== dismissedKey);
 
   // Prefer notice snapshot of XP after deduct; fall back to live profile.
   const endXp = Number.isFinite(Number(notice?.xpAfter))
@@ -57,7 +51,7 @@ export default function ModeBonusPenaltyModal({
   }, [notice, firstName, amount]);
 
   const dismiss = async () => {
-    setDismissedLocal(true);
+    if (noticeKey) setDismissedKey(noticeKey);
     try {
       if (uid) await clearModeBonusPenaltyNotice(uid);
     } catch (err) {
