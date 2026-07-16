@@ -9852,13 +9852,13 @@ export const CH5_QUESTIONS_Y11A = [
       "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
       "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\).",
-      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
     ],
     "options": [
       "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{-3}\\) without taking absolute value.",
       "\\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{-3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\).",
-      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+      "\\(\\left|\\dfrac{5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
     ],
     "h": "",
     "s": "",
@@ -10021,13 +10021,13 @@ export const CH5_QUESTIONS_Y11A = [
       "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
       "\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\).",
-      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
     ],
     "options": [
       "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{-5}{3}\\) without taking absolute value.",
       "\\(\\dfrac{|-5|}{|3|} = \\dfrac{-5}{3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\).",
-      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}."
+      "\\(\\left|\\dfrac{-5}{3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\)."
     ],
     "h": "",
     "s": "",
@@ -10188,13 +10188,13 @@ export const CH5_QUESTIONS_Y11A = [
     "a": "1",
     "opts": [
       "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
-      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}.",
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
       "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\)."
     ],
     "options": [
       "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{-5}{-3}\\) without taking absolute value.",
-      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\), so both sides equal \\dfrac{5}{3}.",
+      "\\(\\left|\\dfrac{-5}{-3}\\right| = \\dfrac{5}{3}\\) and \\(\\dfrac{|-5|}{|-3|} = \\dfrac{5}{3}\\). Both sides equal \\(\\dfrac{5}{3}\\).",
       "\\(\\dfrac{|-5|}{|-3|} = \\dfrac{-5}{-3}\\) (signs left on the fraction).",
       "The quotient rule fails whenever \\(y < 0\\)."
     ],
