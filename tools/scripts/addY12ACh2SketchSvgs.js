@@ -21,62 +21,103 @@ const db = getFirestore();
 const SVG_STYLE =
   'display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;';
 
-function plane(xmin, xmax, ymin, ymax, W = 320, H = 260) {
-  const padL = 40, padR = 20, padT = 24, padB = 30;
-  const sx = (x) => padL + ((x - xmin) / (xmax - xmin)) * (W - padL - padR);
-  const sy = (y) => padT + ((ymax - y) / (ymax - ymin)) * (H - padT - padB);
+function plane(xmin, xmax, ymin, ymax, W = 320, H = 260, opts = {}) {
+  const padL = opts.padL ?? 40;
+  const padR = opts.padR ?? 20;
+  const padT = opts.padT ?? 24;
+  const padB = opts.padB ?? 30;
+  const ox0 = opts.offsetX ?? 0;
+  const oy0 = opts.offsetY ?? 0;
+  const sx = (x) => ox0 + padL + ((x - xmin) / (xmax - xmin)) * (W - padL - padR);
+  const sy = (y) => oy0 + padT + ((ymax - y) / (ymax - ymin)) * (H - padT - padB);
   let axes = '';
+  // Always draw both axes when 0 is in range; otherwise draw a frame baseline
+  // so temperature-style graphs (all y > 0) still read as coordinate planes.
   if (ymin <= 0 && ymax >= 0) {
     const oy = sy(0);
-    axes += `<line x1="${padL}" y1="${oy.toFixed(1)}" x2="${W - padR}" y2="${oy.toFixed(1)}" stroke="#64748b" stroke-width="1.5"/>`;
-    axes += `<text x="${W - padR - 2}" y="${(oy + 14).toFixed(1)}" font-size="12" fill="#64748b" font-weight="bold">x</text>`;
+    axes += `<line x1="${(ox0 + padL).toFixed(1)}" y1="${oy.toFixed(1)}" x2="${(ox0 + W - padR).toFixed(1)}" y2="${oy.toFixed(1)}" stroke="#64748b" stroke-width="1.5"/>`;
+    axes += `<text x="${(ox0 + W - padR - 2).toFixed(1)}" y="${(oy + 14).toFixed(1)}" font-size="12" fill="#64748b" font-weight="bold">x</text>`;
+  } else {
+    const oy = sy(ymin);
+    axes += `<line x1="${(ox0 + padL).toFixed(1)}" y1="${oy.toFixed(1)}" x2="${(ox0 + W - padR).toFixed(1)}" y2="${oy.toFixed(1)}" stroke="#94a3b8" stroke-width="1"/>`;
+    axes += `<text x="${(ox0 + W - padR - 2).toFixed(1)}" y="${(oy - 4).toFixed(1)}" font-size="11" fill="#64748b" font-weight="bold">x</text>`;
   }
   if (xmin <= 0 && xmax >= 0) {
     const ox = sx(0);
-    axes += `<line x1="${ox.toFixed(1)}" y1="${padT}" x2="${ox.toFixed(1)}" y2="${H - padB}" stroke="#64748b" stroke-width="1.5"/>`;
-    axes += `<text x="${(ox + 6).toFixed(1)}" y="${padT + 4}" font-size="12" fill="#64748b" font-weight="bold">y</text>`;
+    axes += `<line x1="${ox.toFixed(1)}" y1="${(oy0 + padT).toFixed(1)}" x2="${ox.toFixed(1)}" y2="${(oy0 + H - padB).toFixed(1)}" stroke="#64748b" stroke-width="1.5"/>`;
+    axes += `<text x="${(ox + 6).toFixed(1)}" y="${(oy0 + padT + 4).toFixed(1)}" font-size="12" fill="#64748b" font-weight="bold">y</text>`;
+  } else {
+    const ox = sx(xmin);
+    axes += `<line x1="${ox.toFixed(1)}" y1="${(oy0 + padT).toFixed(1)}" x2="${ox.toFixed(1)}" y2="${(oy0 + H - padB).toFixed(1)}" stroke="#94a3b8" stroke-width="1"/>`;
+    axes += `<text x="${(ox + 6).toFixed(1)}" y="${(oy0 + padT + 4).toFixed(1)}" font-size="11" fill="#64748b" font-weight="bold">y</text>`;
   }
-  return { sx, sy, W, H, axes };
+  return { sx, sy, W, H, axes, padL, padR, padT, padB, ox0, oy0 };
 }
 
 /**
- * Sample a curve across [x0,x1]. Points outside the y-window are clipped to the
- * edge (not dropped mid-segment) so arms run cleanly to the frame instead of
- * ending in mid-air. Segments that leave and re-enter start a new subpath.
+ * Sample a curve across [x0,x1]. Only keeps points inside the y-window; when
+ * the curve exits, the path stops (no horizontal plateau along the frame edge).
+ * Re-entry starts a new subpath so arms never look "cut then flat".
  */
-function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 100) {
+function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 120) {
   let d = '';
   let pen = false;
-  let prev = null; // {x,y,inside}
+  let prev = null; // {x,y}
   for (let i = 0; i <= n; i++) {
     const x = x0 + ((x1 - x0) * i) / n;
-    let y = fn(x);
+    const y = fn(x);
     if (!Number.isFinite(y)) {
       pen = false;
       prev = null;
       continue;
     }
     const inside = y >= ymin && y <= ymax;
-    const yDraw = Math.max(ymin, Math.min(ymax, y));
     if (inside) {
-      if (!pen && prev && !prev.inside) {
-        // re-enter: draw from clipped edge of previous to this point
-        d += `M${sx(prev.x).toFixed(1)},${sy(Math.max(ymin, Math.min(ymax, prev.y))).toFixed(1)} `;
-        d += `L${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+      if (!pen && prev) {
+        // linear interpolate to the frame edge so the arm meets the border
+        const yEdge = prev.y > ymax ? ymax : prev.y < ymin ? ymin : null;
+        if (yEdge != null && prev.y !== y) {
+          const t = (yEdge - prev.y) / (y - prev.y);
+          const xEdge = prev.x + t * (x - prev.x);
+          d += `M${sx(xEdge).toFixed(1)},${sy(yEdge).toFixed(1)} `;
+          d += `L${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
+        } else {
+          d += `M${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
+        }
       } else {
-        d += `${pen ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+        d += `${pen ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
       }
       pen = true;
-    } else {
-      if (pen && prev && prev.inside) {
-        // leave: draw out to the clipped edge
-        d += `L${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+    } else if (pen && prev) {
+      const yEdge = y > ymax ? ymax : ymin;
+      if (prev.y !== y) {
+        const t = (yEdge - prev.y) / (y - prev.y);
+        const xEdge = prev.x + t * (x - prev.x);
+        d += `L${sx(xEdge).toFixed(1)},${sy(yEdge).toFixed(1)} `;
       }
       pen = false;
     }
-    prev = { x, y, inside };
+    prev = { x, y };
   }
   return d.trim();
+}
+
+/** Auto y-window from samples of fn on [x0,x1], always including 0 if near. */
+function autoY(fn, x0, x1, n = 80, padFrac = 0.12) {
+  const ys = [];
+  for (let i = 0; i <= n; i++) {
+    const y = fn(x0 + ((x1 - x0) * i) / n);
+    if (Number.isFinite(y)) ys.push(y);
+  }
+  if (!ys.length) return { ymin: -1, ymax: 1 };
+  let ymin = Math.min(...ys);
+  let ymax = Math.max(...ys);
+  // include a little air, and the axis if we are close
+  if (ymin > 0) ymin = 0;
+  if (ymax < 0) ymax = 0;
+  const span = Math.max(1e-6, ymax - ymin);
+  const pad = span * padFrac;
+  return { ymin: ymin - pad, ymax: ymax + pad };
 }
 
 function mark(sx, sy, x, y, label, color = '#ef4444', dx = 6, dy = -7) {
@@ -103,27 +144,26 @@ function wrapSvg(body, W, H) {
 }
 
 function svgBaulko13ai() {
-  // Full view so both arms of the downward parabola and the line run to the
-  // frame edges (no mid-air cut-offs). f=2x(1-x) vertex (1/2,1/2); intersects
-  // g=x-1 at x=-1/2 and x=1.
-  const xmin = -1.4;
-  const xmax = 2.6;
-  const ymin = -2.8;
-  const ymax = 1.4;
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 280);
+  // f=2x-2x² vertex (1/2,1/2); intersects g=x-1 at x=-1/2 and x=1.
+  // y-window sized so both the full parabola arms and the line stay on-screen
+  // (no flat plateau where a line was previously y-clamped).
+  const xmin = -1.5;
+  const xmax = 2.4;
   const f = (x) => 2 * x - 2 * x * x;
   const g = (x) => x - 1;
+  const yf = autoY(f, xmin, xmax, 80, 0.1);
+  const yg = autoY(g, xmin, xmax, 20, 0.1);
+  const ymin = Math.min(yf.ymin, yg.ymin, -2.5);
+  const ymax = Math.max(yf.ymax, yg.ymax, 1.2);
+  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 280);
   let body = axes;
-  // Draw across the full plot window so curves reach the border cleanly.
   body += `<path d="${samplePath(f, xmin, xmax, sx, sy, ymin, ymax, 140)}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>`;
   body += `<path d="${samplePath(g, xmin, xmax, sx, sy, ymin, ymax, 40)}" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>`;
-  // intercepts / vertex / intersections
   body += mark(sx, sy, 0, 0, '(0,0)', '#6366f1', 8, 14);
   body += mark(sx, sy, 1, 0, '(1,0)', '#6366f1', 10, 14);
   body += mark(sx, sy, 0.5, 0.5, 'V(1/2, 1/2)', '#ef4444', 8, -10);
   body += mark(sx, sy, 0, -1, '(0,-1)', '#22c55e', 8, 14);
   body += mark(sx, sy, -0.5, -1.5, '(-1/2, -3/2)', '#f59e0b', -70, -6);
-  // second intersection is also (1,0) — mark with dual colour ring via larger note
   body += mark(sx, sy, 1, 0, '', '#f59e0b');
   body += legend([
     { color: '#6366f1', text: 'f(x)=2x-2x²' },
@@ -165,40 +205,109 @@ function svgSinAbs() {
 }
 
 function svgTemp(A, phase, C, label) {
-  const xmin = 0, xmax = 13, ymin = C - A - 2, ymax = C + A + 2;
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 240);
+  // Domain [1,12]; force y-window to include the mean and both extrema so the
+  // full sine wave is visible with x and y frame axes.
+  const xmin = 0;
+  const xmax = 13;
+  const ymin = C - A - 2;
+  const ymax = C + A + 2;
+  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 360, 260);
   const fn = (x) => A * Math.sin((Math.PI / 6) * x + phase) + C;
   let body = axes;
-  body += `<path d="${samplePath(fn, 1, 12, sx, sy, ymin, ymax, 100)}" fill="none" stroke="#6366f1" stroke-width="2.4"/>`;
-  for (let k = -2; k <= 6; k++) {
+  body += `<path d="${samplePath(fn, 1, 12, sx, sy, ymin, ymax, 140)}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>`;
+  // Mark every extremum in [1,12]
+  for (let k = -4; k <= 8; k++) {
     const arg = Math.PI / 2 + k * Math.PI;
     const x = ((arg - phase) * 6) / Math.PI;
-    if (x < 1 || x > 12) continue;
+    if (x < 1 - 1e-6 || x > 12 + 1e-6) continue;
     const y = fn(x);
     const isMax = Math.sin(arg) > 0;
-    body += mark(sx, sy, x, y, `(${x.toFixed(1)},${y.toFixed(0)})`, isMax ? '#22c55e' : '#ef4444', 6, isMax ? -8 : 14);
+    const xl = Number.isInteger(x) ? String(x) : x.toFixed(1);
+    body += mark(
+      sx,
+      sy,
+      x,
+      y,
+      `(${xl},${y.toFixed(0)})`,
+      isMax ? '#22c55e' : '#ef4444',
+      6,
+      isMax ? -8 : 14
+    );
   }
   body += `<text x="44" y="28" font-size="11" fill="#6366f1" font-weight="bold">${label}</text>`;
   body += `<text x="44" y="44" font-size="10" fill="#64748b">A=${A}, mean=${C}, period=12</text>`;
   return wrapSvg(body, W, H);
 }
 
+/**
+ * ASC 2020 Q22: "On separate axes, sketch y=-2f(x) and y=f(x/2+2)"
+ * given f is a U-parabola through (-1,3). Model f with vertex there:
+ *   f(x) = (x+1)^2 + 3
+ * Then:
+ *   y = -2f(x)      = -2(x+1)^2 - 6   → inverted, vertex (-1,-6)
+ *   y = f(x/2+2)    = (x/2+3)^2 + 3    → wider U, vertex (-6,3)
+ * Drawn as two side-by-side panels so neither curve is clipped or overlaid.
+ */
 function svgAsc22() {
-  const xmin = -8, xmax = 4, ymin = -8, ymax = 6;
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 260);
   const f = (x) => (x + 1) ** 2 + 3;
-  const fNeg2 = (x) => -2 * f(x);
-  const fDil = (x) => f(x / 2 + 2);
-  let body = axes;
-  body += `<path d="${samplePath(fNeg2, -3.5, 1.5, sx, sy, ymin, ymax)}" fill="none" stroke="#6366f1" stroke-width="2.3"/>`;
-  body += `<path d="${samplePath(fDil, -8, 2, sx, sy, ymin, ymax)}" fill="none" stroke="#f59e0b" stroke-width="2.3"/>`;
-  body += mark(sx, sy, -1, -6, '(-1,-6)', '#6366f1', 8, 14);
-  body += mark(sx, sy, -6, 3, '(-6,3)', '#f59e0b', 8, -8);
-  body += legend([
-    { color: '#6366f1', text: 'y=-2f(x)' },
-    { color: '#f59e0b', text: 'y=f(x/2+2)' },
-  ]);
-  return wrapSvg(body, W, H);
+  const fNeg2 = (x) => -2 * f(x); // -2(x+1)^2 - 6
+  const fDil = (x) => f(x / 2 + 2); // (x/2 + 3)^2 + 3
+
+  const panelW = 300;
+  const panelH = 260;
+  const gap = 16;
+  const totalW = panelW * 2 + gap;
+  const totalH = panelH + 8;
+
+  // ── panel A: y = -2f(x) ──────────────────────────────────
+  // Vertex (-1,-6). Keep arms until y ≈ -14 so the inverted U is clear.
+  const aXmin = -3.2;
+  const aXmax = 1.2;
+  const aY = autoY(fNeg2, aXmin, aXmax, 80, 0.1);
+  // force x-axis visible and a little headroom above 0
+  const aYmin = Math.min(aY.ymin, -14);
+  const aYmax = Math.max(aY.ymax, 2);
+  const A = plane(aXmin, aXmax, aYmin, aYmax, panelW, panelH, {
+    offsetX: 0,
+    offsetY: 0,
+    padT: 36,
+  });
+
+  // ── panel B: y = f(x/2+2) ────────────────────────────────
+  // Vertex (-6,3). Wider arms; show until y ≈ 12.
+  const bXmin = -12;
+  const bXmax = 0;
+  const bY = autoY(fDil, bXmin, bXmax, 80, 0.1);
+  const bYmin = Math.min(bY.ymin, -1);
+  const bYmax = Math.max(bY.ymax, 12);
+  const B = plane(bXmin, bXmax, bYmin, bYmax, panelW, panelH, {
+    offsetX: panelW + gap,
+    offsetY: 0,
+    padT: 36,
+  });
+
+  let body = '';
+  // panel backgrounds
+  body += `<rect x="0" y="0" width="${panelW}" height="${panelH}" rx="8" fill="#fafafa" stroke="#e2e8f0"/>`;
+  body += `<rect x="${panelW + gap}" y="0" width="${panelW}" height="${panelH}" rx="8" fill="#fafafa" stroke="#e2e8f0"/>`;
+
+  body += A.axes;
+  body += B.axes;
+
+  body += `<path d="${samplePath(fNeg2, aXmin, aXmax, A.sx, A.sy, aYmin, aYmax, 140)}" fill="none" stroke="#6366f1" stroke-width="2.6" stroke-linecap="round"/>`;
+  body += `<path d="${samplePath(fDil, bXmin, bXmax, B.sx, B.sy, bYmin, bYmax, 140)}" fill="none" stroke="#f59e0b" stroke-width="2.6" stroke-linecap="round"/>`;
+
+  // key points
+  body += mark(A.sx, A.sy, -1, -6, '(-1, -6)', '#ef4444', 10, -8);
+  body += mark(B.sx, B.sy, -6, 3, '(-6, 3)', '#ef4444', 10, -8);
+
+  // panel titles
+  body += `<text x="12" y="22" font-size="12" fill="#6366f1" font-weight="700">y = −2f(x)</text>`;
+  body += `<text x="12" y="36" font-size="10" fill="#64748b">reflect + vertical ×2</text>`;
+  body += `<text x="${panelW + gap + 12}" y="22" font-size="12" fill="#f59e0b" font-weight="700">y = f(x/2 + 2)</text>`;
+  body += `<text x="${panelW + gap + 12}" y="36" font-size="10" fill="#64748b">horizontal ×2, then left 4</text>`;
+
+  return wrapSvg(body, totalW, totalH);
 }
 
 function svgFortst10g(variant = 'a') {
@@ -221,9 +330,10 @@ function svgFortst10g(variant = 'a') {
   }
 
   // Choose third root s so y'=0 at minX (stationary point), then scale so y(minX)=minY.
-  // 1/(minX-r1)+1/(minX-r2)+1/(minX-s)=0  ⇒  s = minX - 1/(1/(minX-r1)+1/(minX-r2))
+  // log-derivative: 1/(minX-r1)+1/(minX-r2)+1/(minX-s)=0
+  // ⇒ 1/(minX-s) = -sum ⇒ s = minX + 1/sum
   const sum = 1 / (minX - r1) + 1 / (minX - r2);
-  const s = minX - 1 / sum;
+  const s = minX + 1 / sum;
   const rawMin = (minX - r1) * (minX - r2) * (minX - s);
   const a = minY / (rawMin || 1);
   const fn = (x) => a * (x - r1) * (x - r2) * (x - s);
