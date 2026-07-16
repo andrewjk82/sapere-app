@@ -165,40 +165,90 @@ function absSvg(h, k, label) {
 </svg>`;
 }
 
+function markDots(sx, sy, marks = []) {
+  let body = '';
+  for (const m of marks) {
+    const color = m.color || '#ef4444';
+    const r = m.r ?? 3.2;
+    body += `<circle cx="${sx(m.x).toFixed(1)}" cy="${sy(m.y).toFixed(1)}" r="${r}" fill="${color}"/>`;
+    if (m.label) {
+      const dx = m.dx ?? 6;
+      const dy = m.dy ?? -7;
+      body += `<text x="${(sx(m.x) + dx).toFixed(1)}" y="${(sy(m.y) + dy).toFixed(1)}" font-size="10" fill="${color}" font-weight="bold">${m.label}</text>`;
+    }
+  }
+  return body;
+}
+
+function legendBox(items = []) {
+  // items: [{color, text}] top-left legend
+  if (!items.length) return '';
+  const maxLen = Math.max(...items.map((it) => String(it.text).length));
+  const w = Math.min(160, 70 + maxLen * 6.2);
+  let body = `<rect x="36" y="12" width="${w}" height="${12 + items.length * 14}" rx="6" fill="#fff" fill-opacity="0.92" stroke="#e2e8f0"/>`;
+  items.forEach((it, i) => {
+    const y = 26 + i * 14;
+    body += `<line x1="44" y1="${y - 3}" x2="58" y2="${y - 3}" stroke="${it.color}" stroke-width="2.5"/>`;
+    body += `<text x="62" y="${y}" font-size="10" fill="${it.color}" font-weight="700">${it.text}</text>`;
+  });
+  return body;
+}
+
+/**
+ * Multi-curve plot with intercepts / key points labelled.
+ * curves: [{fn, x0, x1, color, n?}]
+ * marks:  [{x,y,label,color?,dx?,dy?}]
+ * legend: [{color,text}]
+ * bounds optional; otherwise auto from samples + marks
+ */
+function multiSvg({ curves, marks = [], legend = [], xmin, xmax, ymin, ymax, padY = 0.15 }) {
+  const xs = [];
+  const ys = [0];
+  for (const c of curves) {
+    xs.push(c.x0, c.x1);
+    for (let i = 0; i <= 24; i++) {
+      const x = c.x0 + ((c.x1 - c.x0) * i) / 24;
+      const y = c.fn(x);
+      if (Number.isFinite(y)) ys.push(y);
+    }
+  }
+  for (const m of marks) {
+    xs.push(m.x);
+    ys.push(m.y);
+  }
+  let x0 = xmin ?? Math.min(...xs) - 0.4;
+  let x1 = xmax ?? Math.max(...xs) + 0.4;
+  let y0 = ymin ?? Math.min(...ys);
+  let y1 = ymax ?? Math.max(...ys);
+  const py = Math.max(0.8, (y1 - y0) * padY);
+  y0 -= py;
+  y1 += py;
+  if (y0 > -0.3) y0 = -0.3;
+  if (y1 < 0.3) y1 = 0.3;
+
+  const { sx, sy, W, H, axes } = plane(x0, x1, y0, y1);
+  let body = axes;
+  for (const c of curves) {
+    const d = samplePath(c.fn, c.x0, c.x1, sx, sy, y0, y1, c.n || 70);
+    if (d) body += `<path d="${d}" fill="none" stroke="${c.color}" stroke-width="2.4" stroke-linecap="round"/>`;
+  }
+  body += markDots(sx, sy, marks);
+  body += legendBox(legend);
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">${body}</svg>`;
+}
+
 function parabolaSvg(h, k, a = 1, label = '', marks = []) {
   // Choose x-window so the arms stay readable; auto-fit y from actual samples
   // (plus intercept marks) so the curve never gets flattened by a tight ymax.
   const half = 3.2;
   const xmin = h - half;
   const xmax = h + half;
-  const ys = [k, 0];
-  for (let i = 0; i <= 20; i++) {
-    const x = xmin + ((xmax - xmin) * i) / 20;
-    ys.push(a * (x - h) ** 2 + k);
-  }
-  for (const m of marks) ys.push(m.y);
-  let ymin = Math.min(...ys);
-  let ymax = Math.max(...ys);
-  const padY = Math.max(1, (ymax - ymin) * 0.12);
-  ymin -= padY;
-  ymax += padY;
-  // Keep x-axis in view when intercepts matter
-  if (ymin > -0.5) ymin = -0.5;
-  if (ymax < 0.5) ymax = 0.5;
-
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-  const d = samplePath((x) => a * (x - h) ** 2 + k, xmin, xmax, sx, sy, ymin, ymax, 70);
-  let body = `${axes}<path d="${d}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
-  <circle cx="${sx(h).toFixed(1)}" cy="${sy(k).toFixed(1)}" r="3.5" fill="#ef4444"/>
-  <text x="${sx(h) + 8}" y="${sy(k) - 8}" font-size="11" fill="#ef4444" font-weight="bold">(${h}, ${k})</text>`;
-  for (const m of marks) {
-    body += `<circle cx="${sx(m.x).toFixed(1)}" cy="${sy(m.y).toFixed(1)}" r="3" fill="${m.color || '#f59e0b'}"/>`;
-    if (m.label) {
-      body += `<text x="${sx(m.x) + 6}" y="${sy(m.y) - 6}" font-size="10" fill="${m.color || '#f59e0b'}" font-weight="bold">${m.label}</text>`;
-    }
-  }
-  if (label) body += `<text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">${label}</text>`;
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">${body}</svg>`;
+  // Always mark vertex; merge caller marks (intercepts)
+  const allMarks = [{ x: h, y: k, label: `(${h}, ${k})`, color: '#ef4444', dx: 8, dy: -8 }, ...marks];
+  // Also add x-intercepts if solvable for a=±1 standard forms when not provided
+  const curves = [{ fn: (x) => a * (x - h) ** 2 + k, x0: xmin, x1: xmax, color: '#6366f1' }];
+  const legend = label ? [{ color: '#6366f1', text: label }] : [];
+  return multiSvg({ curves, marks: allMarks, legend, xmin, xmax });
 }
 
 // ── Items ───────────────────────────────────────────────────────────────────
@@ -815,10 +865,14 @@ const sketches = [
     id: 'y11a-5i-q12b-sketch',
     q: 'Sketch \\(y = (x - 3)^2 - 7\\), marking the vertex and intercepts.',
     answer: 'Upright parabola, vertex \\((3, -7)\\); \\(y\\)-int \\((0, 2)\\); \\(x\\)-ints \\((3 \\pm \\sqrt{7}, 0)\\).',
-    svg: parabolaSvg(3, -7, 1, 'y = (x−3)² − 7', [{ x: 0, y: 2, label: '(0,2)' }]),
+    svg: parabolaSvg(3, -7, 1, 'y=(x−3)²−7', [
+      { x: 0, y: 2, label: 'y-int (0,2)', color: '#f59e0b', dx: 6, dy: -8 },
+      { x: 3 + Math.sqrt(7), y: 0, label: '(3+√7,0)', color: '#f59e0b', dx: 4, dy: 14 },
+      { x: 3 - Math.sqrt(7), y: 0, label: '(3−√7,0)', color: '#f59e0b', dx: -52, dy: 14 },
+    ]),
     steps: [
       step('Vertex form already gives vertex \\((3, -7)\\).', '\\((3, -7)\\)'),
-      step('\\(y\\)-intercept: set \\(x = 0\\) to get \\(2\\).', '\\((0, 2)\\)'),
+      step('\\(y\\)-intercept: set \\(x = 0\\) to get \\(2\\). \\(x\\)-ints: \\(3 \\pm \\sqrt{7}\\).', '\\((0, 2),\\ (3\\pm\\sqrt{7}, 0)\\)'),
       step('Sketch the upright parabola through these points.', '\\(\\text{sketch}\\)'),
     ],
   },
@@ -826,10 +880,10 @@ const sketches = [
     id: 'y11a-5i-q12c-sketch',
     q: 'Sketch \\(y = -(x - 2)^2 + 9\\), marking the vertex and intercepts.',
     answer: 'Downward parabola, vertex \\((2, 9)\\); intercepts \\((0, 5)\\), \\((-1, 0)\\), \\((5, 0)\\).',
-    svg: parabolaSvg(2, 9, -1, 'y = −(x−2)² + 9', [
-      { x: 0, y: 5, label: '(0,5)' },
-      { x: -1, y: 0, label: '(-1,0)' },
-      { x: 5, y: 0, label: '(5,0)' },
+    svg: parabolaSvg(2, 9, -1, 'y=−(x−2)²+9', [
+      { x: 0, y: 5, label: '(0,5)', color: '#f59e0b', dx: -36, dy: -4 },
+      { x: -1, y: 0, label: '(-1,0)', color: '#f59e0b', dx: -40, dy: 14 },
+      { x: 5, y: 0, label: '(5,0)', color: '#f59e0b', dx: 6, dy: 14 },
     ]),
     steps: [
       step('Vertex \\((2, 9)\\); opens downward.', '\\((2, 9)\\)'),
@@ -841,10 +895,10 @@ const sketches = [
     id: 'y11a-5i-q12d-sketch',
     q: 'Sketch \\(y = (x - 1)^2 - 4\\), marking the vertex and intercepts.',
     answer: 'Upright parabola, vertex \\((1, -4)\\); intercepts \\((0, -3)\\), \\((-1, 0)\\), \\((3, 0)\\).',
-    svg: parabolaSvg(1, -4, 1, 'y = (x−1)² − 4', [
-      { x: 0, y: -3, label: '(0,−3)' },
-      { x: -1, y: 0, label: '(-1,0)' },
-      { x: 3, y: 0, label: '(3,0)' },
+    svg: parabolaSvg(1, -4, 1, 'y=(x−1)²−4', [
+      { x: 0, y: -3, label: '(0,−3)', color: '#f59e0b', dx: 6, dy: 12 },
+      { x: -1, y: 0, label: '(-1,0)', color: '#f59e0b', dx: -42, dy: -8 },
+      { x: 3, y: 0, label: '(3,0)', color: '#f59e0b', dx: 6, dy: -8 },
     ]),
     steps: [
       step('Vertex \\((1, -4)\\).', '\\((1, -4)\\)'),
@@ -856,22 +910,27 @@ const sketches = [
     id: 'y11a-5i-q19b',
     q: 'Sketch on one pair of axes: \\(y = -\\dfrac{1}{3}x\\), \\(y = -\\dfrac{1}{3}x + 2\\), \\(y = -\\dfrac{1}{3}x - 3\\).',
     answer: 'Three parallel lines, gradient \\(-\\dfrac{1}{3}\\), \\(y\\)-intercepts \\(0\\), \\(2\\), \\(-3\\).',
-    svg: (() => {
-      const xmin = -6,
-        xmax = 6,
-        ymin = -5,
-        ymax = 5;
-      const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-      const line = (c, color) => {
-        const d = samplePath((x) => (-1 / 3) * x + c, xmin, xmax, sx, sy, ymin, ymax);
-        return `<path d="${d}" fill="none" stroke="${color}" stroke-width="2"/>`;
-      };
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  ${axes}
-  ${line(0, '#6366f1')}${line(2, '#22c55e')}${line(-3, '#f59e0b')}
-  <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">m = −1/3</text>
-</svg>`;
-    })(),
+    svg: multiSvg({
+      xmin: -6,
+      xmax: 6,
+      ymin: -5,
+      ymax: 5,
+      curves: [
+        { fn: (x) => (-1 / 3) * x, x0: -6, x1: 6, color: '#6366f1' },
+        { fn: (x) => (-1 / 3) * x + 2, x0: -6, x1: 6, color: '#22c55e' },
+        { fn: (x) => (-1 / 3) * x - 3, x0: -6, x1: 6, color: '#f59e0b' },
+      ],
+      marks: [
+        { x: 0, y: 0, label: '(0,0)', color: '#6366f1', dx: 6, dy: 14 },
+        { x: 0, y: 2, label: '(0,2)', color: '#22c55e', dx: 6, dy: -6 },
+        { x: 0, y: -3, label: '(0,−3)', color: '#f59e0b', dx: 6, dy: 14 },
+      ],
+      legend: [
+        { color: '#6366f1', text: 'y=−x/3' },
+        { color: '#22c55e', text: 'y=−x/3+2' },
+        { color: '#f59e0b', text: 'y=−x/3−3' },
+      ],
+    }),
     steps: [
       step('All three lines share gradient \\(m = -\\dfrac{1}{3}\\).', '\\(m = -\\dfrac{1}{3}\\)'),
       step('\\(y\\)-intercepts are \\(0\\), \\(2\\) and \\(-3\\).', '\\((0,0),\\ (0,2),\\ (0,-3)\\)'),
@@ -882,21 +941,28 @@ const sketches = [
     id: 'y11a-5i-q19c',
     q: 'Sketch on one pair of axes: \\(y = x + 4\\), \\(y = 4 - x\\), \\(y = -x - 4\\).',
     answer: 'Three lines: slopes \\(1\\), \\(-1\\), \\(-1\\) with intercepts forming a triangular pattern.',
-    svg: (() => {
-      const xmin = -6,
-        xmax = 6,
-        ymin = -6,
-        ymax = 6;
-      const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-      const mk = (fn, color) => {
-        const d = samplePath(fn, xmin, xmax, sx, sy, ymin, ymax);
-        return `<path d="${d}" fill="none" stroke="${color}" stroke-width="2"/>`;
-      };
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  ${axes}
-  ${mk((x) => x + 4, '#6366f1')}${mk((x) => 4 - x, '#22c55e')}${mk((x) => -x - 4, '#f59e0b')}
-</svg>`;
-    })(),
+    svg: multiSvg({
+      xmin: -6,
+      xmax: 6,
+      ymin: -6,
+      ymax: 6,
+      curves: [
+        { fn: (x) => x + 4, x0: -6, x1: 2, color: '#6366f1' },
+        { fn: (x) => 4 - x, x0: -2, x1: 6, color: '#22c55e' },
+        { fn: (x) => -x - 4, x0: -6, x1: 2, color: '#f59e0b' },
+      ],
+      marks: [
+        { x: 0, y: 4, label: '(0,4)', color: '#6366f1', dx: 6, dy: -6 },
+        { x: -4, y: 0, label: '(-4,0)', color: '#6366f1', dx: -42, dy: -8 },
+        { x: 4, y: 0, label: '(4,0)', color: '#22c55e', dx: 6, dy: -8 },
+        { x: 0, y: -4, label: '(0,−4)', color: '#f59e0b', dx: 6, dy: 14 },
+      ],
+      legend: [
+        { color: '#6366f1', text: 'y=x+4' },
+        { color: '#22c55e', text: 'y=4−x' },
+        { color: '#f59e0b', text: 'y=−x−4' },
+      ],
+    }),
     steps: [
       step('\\(y = x + 4\\): intercepts \\((0, 4)\\), \\((-4, 0)\\).', '\\(y = x + 4\\)'),
       step('\\(y = 4 - x\\): intercepts \\((0, 4)\\), \\((4, 0)\\).', '\\(y = 4 - x\\)'),
@@ -907,43 +973,63 @@ const sketches = [
     id: 'y11a-5i-q19g',
     q: 'Sketch on one pair of axes: \\(y = x^2 - 4\\), \\(y = 4 - x^2\\), \\(y = 9 - x^2\\).',
     answer: 'One upright parabola vertex \\((0, -4)\\); two inverted with vertices \\((0, 4)\\) and \\((0, 9)\\).',
-    svg: (() => {
-      const xmin = -4,
-        xmax = 4,
-        ymin = -6,
-        ymax = 10;
-      const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-      const mk = (fn, color) => `<path d="${samplePath(fn, xmin, xmax, sx, sy, ymin, ymax)}" fill="none" stroke="${color}" stroke-width="2"/>`;
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  ${axes}
-  ${mk((x) => x * x - 4, '#6366f1')}${mk((x) => 4 - x * x, '#22c55e')}${mk((x) => 9 - x * x, '#f59e0b')}
-</svg>`;
-    })(),
+    svg: multiSvg({
+      xmin: -3.5,
+      xmax: 3.5,
+      ymin: -5,
+      ymax: 10,
+      curves: [
+        { fn: (x) => x * x - 4, x0: -3.5, x1: 3.5, color: '#6366f1' },
+        { fn: (x) => 4 - x * x, x0: -3.2, x1: 3.2, color: '#22c55e' },
+        { fn: (x) => 9 - x * x, x0: -3.2, x1: 3.2, color: '#f59e0b' },
+      ],
+      marks: [
+        { x: 0, y: -4, label: 'V(0,−4)', color: '#6366f1', dx: 8, dy: 12 },
+        { x: 0, y: 4, label: 'V(0,4)', color: '#22c55e', dx: 8, dy: -6 },
+        { x: 0, y: 9, label: 'V(0,9)', color: '#f59e0b', dx: 8, dy: -6 },
+        { x: 2, y: 0, label: '(±2,0)', color: '#64748b', dx: 6, dy: 14 },
+        { x: -2, y: 0, label: '', color: '#64748b' },
+        { x: 3, y: 0, label: '(±3,0)', color: '#f59e0b', dx: 6, dy: -8 },
+        { x: -3, y: 0, label: '', color: '#f59e0b' },
+      ],
+      legend: [
+        { color: '#6366f1', text: 'y=x²−4' },
+        { color: '#22c55e', text: 'y=4−x²' },
+        { color: '#f59e0b', text: 'y=9−x²' },
+      ],
+    }),
     steps: [
-      step('\\(y = x^2 - 4\\): opens up, vertex \\((0, -4)\\).', '\\((0, -4)\\)'),
-      step('\\(y = 4 - x^2\\) and \\(y = 9 - x^2\\): open down, vertices \\((0, 4)\\), \\((0, 9)\\).', '\\((0,4),\\ (0,9)\\)'),
-      step('Sketch all three on the same axes.', '\\(\\text{sketch}\\)'),
+      step('\\(y = x^2 - 4\\): opens up, vertex \\((0, -4)\\), \\(x\\)-ints \\(\\pm 2\\).', '\\((0, -4),\\ (\\pm2,0)\\)'),
+      step('\\(y = 4 - x^2\\): opens down, vertex \\((0, 4)\\), \\(x\\)-ints \\(\\pm 2\\).', '\\((0,4),\\ (\\pm2,0)\\)'),
+      step('\\(y = 9 - x^2\\): opens down, vertex \\((0, 9)\\), \\(x\\)-ints \\(\\pm 3\\).', '\\((0,9),\\ (\\pm3,0)\\)'),
     ],
   },
   {
     id: 'y11a-5i-q19j',
     q: 'Sketch on one pair of axes: \\(y = \\sqrt{x}\\), \\(y = \\sqrt{x} + 2\\), \\(y = \\sqrt{x + 2}\\).',
     answer: 'Three half-parabolas starting at \\((0, 0)\\), \\((0, 2)\\) and \\((-2, 0)\\).',
-    svg: (() => {
-      const xmin = -3,
-        xmax = 6,
-        ymin = -1,
-        ymax = 5;
-      const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-      const mk = (fn, x0, x1, color) =>
-        `<path d="${samplePath(fn, x0, x1, sx, sy, ymin, ymax)}" fill="none" stroke="${color}" stroke-width="2"/>`;
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  ${axes}
-  ${mk((x) => Math.sqrt(x), 0, 6, '#6366f1')}
-  ${mk((x) => Math.sqrt(x) + 2, 0, 6, '#22c55e')}
-  ${mk((x) => Math.sqrt(x + 2), -2, 6, '#f59e0b')}
-</svg>`;
-    })(),
+    svg: multiSvg({
+      xmin: -2.5,
+      xmax: 6,
+      ymin: -0.5,
+      ymax: 4.5,
+      curves: [
+        { fn: (x) => Math.sqrt(x), x0: 0, x1: 6, color: '#6366f1' },
+        { fn: (x) => Math.sqrt(x) + 2, x0: 0, x1: 6, color: '#22c55e' },
+        { fn: (x) => Math.sqrt(x + 2), x0: -2, x1: 6, color: '#f59e0b' },
+      ],
+      marks: [
+        { x: 0, y: 0, label: '(0,0)', color: '#6366f1', dx: 8, dy: 14 },
+        { x: 0, y: 2, label: '(0,2)', color: '#22c55e', dx: 8, dy: -6 },
+        { x: -2, y: 0, label: '(-2,0)', color: '#f59e0b', dx: -48, dy: -8 },
+        { x: 1, y: 1, label: '', color: '#6366f1', r: 0 },
+      ],
+      legend: [
+        { color: '#6366f1', text: 'y=√x' },
+        { color: '#22c55e', text: 'y=√x+2' },
+        { color: '#f59e0b', text: 'y=√(x+2)' },
+      ],
+    }),
     steps: [
       step('\\(y = \\sqrt{x}\\) starts at \\((0, 0)\\).', '\\((0, 0)\\)'),
       step('\\(y = \\sqrt{x} + 2\\) is shifted up to start at \\((0, 2)\\).', '\\((0, 2)\\)'),
@@ -954,24 +1040,30 @@ const sketches = [
     id: 'y11a-5i-q19o',
     q: 'Sketch on one pair of axes: \\(y = \\sqrt{x}\\), \\(y = -\\sqrt{x}\\), \\(y = 3 - \\sqrt{x}\\).',
     answer: 'Half-parabolas from \\((0, 0)\\) up and down, and from \\((0, 3)\\) curving down.',
-    svg: (() => {
-      const xmin = -1,
-        xmax = 6,
-        ymin = -4,
-        ymax = 5;
-      const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-      const mk = (fn, color) =>
-        `<path d="${samplePath(fn, 0, 6, sx, sy, ymin, ymax)}" fill="none" stroke="${color}" stroke-width="2"/>`;
-      return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  ${axes}
-  ${mk((x) => Math.sqrt(x), '#6366f1')}
-  ${mk((x) => -Math.sqrt(x), '#22c55e')}
-  ${mk((x) => 3 - Math.sqrt(x), '#f59e0b')}
-</svg>`;
-    })(),
+    svg: multiSvg({
+      xmin: -0.5,
+      xmax: 9.5,
+      ymin: -3.5,
+      ymax: 4,
+      curves: [
+        { fn: (x) => Math.sqrt(x), x0: 0, x1: 9, color: '#6366f1' },
+        { fn: (x) => -Math.sqrt(x), x0: 0, x1: 9, color: '#22c55e' },
+        { fn: (x) => 3 - Math.sqrt(x), x0: 0, x1: 9, color: '#f59e0b' },
+      ],
+      marks: [
+        { x: 0, y: 0, label: '(0,0)', color: '#6366f1', dx: 8, dy: 14 },
+        { x: 0, y: 3, label: '(0,3)', color: '#f59e0b', dx: 8, dy: -6 },
+        { x: 9, y: 0, label: '(9,0)', color: '#f59e0b', dx: -36, dy: -8 },
+      ],
+      legend: [
+        { color: '#6366f1', text: 'y=√x' },
+        { color: '#22c55e', text: 'y=−√x' },
+        { color: '#f59e0b', text: 'y=3−√x' },
+      ],
+    }),
     steps: [
-      step('\\(y = \\sqrt{x}\\) and \\(y = -\\sqrt{x}\\) are reflections across the \\(x\\)-axis.', '\\(\\pm\\sqrt{x}\\)'),
-      step('\\(y = 3 - \\sqrt{x}\\) starts at \\((0, 3)\\) and decreases.', '\\((0, 3)\\)'),
+      step('\\(y = \\sqrt{x}\\) and \\(y = -\\sqrt{x}\\) meet at \\((0, 0)\\) (reflections).', '\\((0, 0)\\)'),
+      step('\\(y = 3 - \\sqrt{x}\\) starts at \\((0, 3)\\) and decreases; meets \\(x\\)-axis at \\((9, 0)\\).', '\\((0, 3)\\)'),
       step('Sketch all three half-parabolas for \\(x \\ge 0\\).', '\\(\\text{sketch}\\)'),
     ],
   },
