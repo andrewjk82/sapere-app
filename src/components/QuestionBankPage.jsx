@@ -609,7 +609,14 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
 
                   <MathView
                     content={q?.question}
-                    graphData={q?.graphData}
+                    // Sketch / draw prompts: model graph belongs in solutionSteps only,
+                    // never on the question stem (spoiler).
+                    graphData={
+                      q?.type === 'graph_sketch'
+                      || /^(sketch|draw)\b/i.test(String(q?.question || '').trim())
+                        ? null
+                        : q?.graphData
+                    }
                     style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
                   />
 
