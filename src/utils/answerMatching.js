@@ -155,31 +155,88 @@ export const evalFractionValue = (value) => {
   return null;
 };
 
+/** Strip KaTeX / MathJax wrappers so "\\(15.36\\)" and "15.36" compare equal. */
+export const stripLatexWrappers = (value) => {
+  let s = String(value ?? '').trim();
+  if (!s) return '';
+  // Collapse doubled backslashes from over-escaped seeds: \\\\( → \\(
+  for (let i = 0; i < 4; i += 1) {
+    if (!s.includes('\\\\')) break;
+    s = s.replace(/\\\\/g, '\\');
+  }
+  s = s
+    .replace(/\$\$([\s\S]*?)\$\$/g, '$1')
+    .replace(/\$([^$]+)\$/g, '$1')
+    .replace(/\\\(([\s\S]*?)\\\)/g, '$1')
+    .replace(/\\\[([\s\S]*?)\\\]/g, '$1')
+    .replace(/\\left|\\right/g, '')
+    .replace(/\\,/g, ' ')
+    .replace(/\\;/g, ' ')
+    .replace(/\\ /g, ' ')
+    .trim();
+  return s;
+};
+
+/**
+ * Expand answers like "66 (or 66.0)" / "66 or 66.0" into candidate strings
+ * so either form grades as correct.
+ */
+export const expandAnswerCandidates = (value) => {
+  const stripped = stripLatexWrappers(value);
+  if (!stripped) return [];
+  const parts = stripped
+    .split(/\s*\(?\s*or\s*\)?\s*/i)
+    .map((p) => p.replace(/^\(+|\)+$/g, '').trim())
+    .filter(Boolean);
+  const out = [];
+  const seen = new Set();
+  for (const p of parts.length > 0 ? parts : [stripped]) {
+    if (!seen.has(p)) {
+      seen.add(p);
+      out.push(p);
+    }
+  }
+  return out;
+};
+
 export const parseNumericAnswer = (value) => {
   if (value === null || value === undefined) return null;
-  const raw = String(value).trim();
+  const raw = stripLatexWrappers(value);
   if (!raw) return null;
 
-  const cleaned = raw
-    .replace(/[−–—]/g, '-')
-    .replace(/\\\$/g, '').replace(/\$/g, '')
-    .replace(/\\%/g, '%')          // LaTeX \% → %
-    .replace(/,/g, '')
-    .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
-    // Strip measurement units so "9355 m" → "9355", "15m" → "15"
-    .replace(/\s*(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?)\s*/gi, '')
-    .replace(/\\text\s*\{[^{}]*\}/g, '')
-    .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\s*/g, '')
-    .replace(/(\d)\s*m\b/, '$1')   // trailing m after digit
-    .replace(/(\d)\s*g\b/, '$1')   // trailing g after digit
-    .replace(/(\d)\s*[Ll]\b/, '$1') // trailing L after digit
-    .replace(/(\d)\s*s\b/, '$1')   // trailing s (seconds) after digit
-    .trim();
+  // First try pure number (possibly after stripping "or" wrappers by taking first candidate).
+  const tryParse = (str) => {
+    const cleaned = str
+      .replace(/[−–—]/g, '-')
+      .replace(/\\\$/g, '').replace(/\$/g, '')
+      .replace(/\\%/g, '%')          // LaTeX \% → %
+      .replace(/,/g, '')
+      .replace(/\b(aud|usd|nzd|dollars?|cents?)\b/gi, '')
+      // Strip measurement units so "9355 m" → "9355", "15m" → "15"
+      .replace(/\s*(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?)\s*/gi, '')
+      .replace(/\\text\s*\{[^{}]*\}/g, '')
+      .replace(/\s*(km²|m²|cm²|mm²|km³|m³|cm³|mm³|km|cm|mm|ml|mg|kg|MJ|kJ)\s*/g, '')
+      .replace(/(\d)\s*m\b/, '$1')   // trailing m after digit
+      .replace(/(\d)\s*g\b/, '$1')   // trailing g after digit
+      .replace(/(\d)\s*[Ll]\b/, '$1') // trailing L after digit
+      .replace(/(\d)\s*s\b/, '$1')   // trailing s (seconds) after digit
+      .trim();
 
-  if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
-  const isPercent = cleaned.endsWith('%');
-  const number = Number(cleaned.replace(/%$/, ''));
-  return Number.isFinite(number) ? { number, isPercent } : null;
+    if (!/^-?\d+(?:\.\d+)?%?$/.test(cleaned)) return null;
+    const isPercent = cleaned.endsWith('%');
+    const number = Number(cleaned.replace(/%$/, ''));
+    return Number.isFinite(number) ? { number, isPercent } : null;
+  };
+
+  const direct = tryParse(raw);
+  if (direct) return direct;
+
+  // "66 (or 66.0)" → try each piece
+  for (const part of expandAnswerCandidates(raw)) {
+    const n = tryParse(part);
+    if (n) return n;
+  }
+  return null;
 };
 
 // Extract the numeric (or algebraic) value from an equation like "c = 16" → "16",
@@ -242,12 +299,14 @@ export const answersMatchAny = (studentAnswer, acceptedAnswers, isAlgebraic = fa
   return acceptedAnswers.some((a) => answersMatch(studentAnswer, String(a ?? ''), isAlgebraic));
 };
 
-export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false) => {
-  // Empty student answer is never correct.
+/** Core single-pair match (no "or" expansion). */
+const answersMatchOne = (studentAnswer, expectedAnswer, isAlgebraic = false) => {
   if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
 
-  const sStr = String(studentAnswer).trim();
-  const eStr = String(expectedAnswer).trim();
+  const sStr = stripLatexWrappers(studentAnswer);
+  const eStr = stripLatexWrappers(expectedAnswer);
+  if (!sStr || !eStr) return false;
+  if (sStr === eStr) return true;
 
   // If the answer is a list of comma-separated items, compare as sets/lists
   // Ensure it's not a coordinate/interval like (1, 2) or [3, 4]
@@ -255,12 +314,12 @@ export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false)
     str.includes(',') && !str.startsWith('(') && !str.endsWith(')') && !str.startsWith('[') && !str.endsWith(']');
 
   if (isListLike(eStr) || isListLike(sStr)) {
-    const sParts = sStr.split(/\s*,\s*/).map(x => x.trim()).filter(Boolean);
-    const eParts = eStr.split(/\s*,\s*/).map(x => x.trim()).filter(Boolean);
+    const sParts = sStr.split(/\s*,\s*/).map((x) => x.trim()).filter(Boolean);
+    const eParts = eStr.split(/\s*,\s*/).map((x) => x.trim()).filter(Boolean);
     if (sParts.length === eParts.length && sParts.length > 1) {
       const unmatched = [...sParts];
       const allMatched = eParts.every((ep) => {
-        const idx = unmatched.findIndex((sp) => answersMatch(sp, ep, isAlgebraic));
+        const idx = unmatched.findIndex((sp) => answersMatchOne(sp, ep, isAlgebraic));
         if (idx !== -1) {
           unmatched.splice(idx, 1);
           return true;
@@ -271,17 +330,17 @@ export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false)
     }
   }
 
-  const isAlg = isAlgebraic || isAlgebraicStr(expectedAnswer) || isAlgebraicStr(studentAnswer);
+  const isAlg = isAlgebraic || isAlgebraicStr(eStr) || isAlgebraicStr(sStr);
 
   // Fraction / mixed-number equivalence: "2 1/2" == "5/2" == "2.5".
-  const sFrac = evalFractionValue(studentAnswer);
-  const eFrac = evalFractionValue(expectedAnswer);
+  const sFrac = evalFractionValue(sStr);
+  const eFrac = evalFractionValue(eStr);
   if (sFrac !== null && eFrac !== null && Math.abs(sFrac - eFrac) < 0.000001) {
     return true;
   }
 
-  const studentNumeric = parseNumericAnswer(studentAnswer);
-  const expectedNumeric = parseNumericAnswer(expectedAnswer);
+  const studentNumeric = parseNumericAnswer(sStr);
+  const expectedNumeric = parseNumericAnswer(eStr);
 
   if (studentNumeric && expectedNumeric) {
     // Same number, allow % vs no-% mismatch (student may or may not include symbol)
@@ -290,32 +349,28 @@ export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false)
     }
   }
 
-  const sNorm = robustNormalize(studentAnswer, isAlg);
-  const eNorm = robustNormalize(expectedAnswer, isAlg);
-  if (sNorm === eNorm) return true;
+  const sNorm = robustNormalize(sStr, isAlg);
+  const eNorm = robustNormalize(eStr, isAlg);
+  if (sNorm && eNorm && sNorm === eNorm) return true;
 
   // Allow "c = 16" to match "16" and vice versa
-  // Extract RHS of both sides, then compare numerically and textually
-  const sRhs = extractRhs(studentAnswer);
-  const eRhs = extractRhs(expectedAnswer);
+  const sRhs = extractRhs(sStr);
+  const eRhs = extractRhs(eStr);
 
-  // student typed just a number, expected is "var = number"
   if (sRhs === null && eRhs !== null) {
-    if (robustNormalize(studentAnswer, isAlg) === robustNormalize(eRhs, isAlg)) return true;
-    const sNum = parseNumericAnswer(studentAnswer);
+    if (robustNormalize(sStr, isAlg) === robustNormalize(eRhs, isAlg)) return true;
+    const sNum = parseNumericAnswer(sStr);
     const eNum = parseNumericAnswer(eRhs);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
   }
 
-  // student typed "var = number", expected is just a number
   if (sRhs !== null && eRhs === null) {
-    if (robustNormalize(sRhs, isAlg) === robustNormalize(expectedAnswer, isAlg)) return true;
+    if (robustNormalize(sRhs, isAlg) === robustNormalize(eStr, isAlg)) return true;
     const sNum = parseNumericAnswer(sRhs);
-    const eNum = parseNumericAnswer(expectedAnswer);
+    const eNum = parseNumericAnswer(eStr);
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
   }
 
-  // both are "var = value" forms — compare RHS only (different variable names OK)
   if (sRhs !== null && eRhs !== null) {
     if (robustNormalize(sRhs, isAlg) === robustNormalize(eRhs, isAlg)) return true;
     const sNum = parseNumericAnswer(sRhs);
@@ -323,6 +378,22 @@ export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false)
     if (sNum && eNum && Math.abs(sNum.number - eNum.number) < 0.000001) return true;
   }
 
+  return false;
+};
+
+export const answersMatch = (studentAnswer, expectedAnswer, isAlgebraic = false) => {
+  // Empty student answer is never correct.
+  if (studentAnswer === null || studentAnswer === undefined || String(studentAnswer ?? '').trim() === '') return false;
+  if (expectedAnswer === null || expectedAnswer === undefined) return false;
+
+  // Expand "66 (or 66.0)" style bank answers — any candidate pair may match.
+  const sCands = expandAnswerCandidates(studentAnswer);
+  const eCands = expandAnswerCandidates(expectedAnswer);
+  for (const sc of sCands) {
+    for (const ec of eCands) {
+      if (answersMatchOne(sc, ec, isAlgebraic)) return true;
+    }
+  }
   return false;
 };
 

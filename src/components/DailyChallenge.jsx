@@ -1097,30 +1097,34 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // Use _shuffledAnswer (text-normalised) if options were shuffled, else original answer.
       // Seeds often store the key only in `a` (index) without `answer`.
       const rawKey = currentQ.answer ?? currentQ.a;
+      const optsNow = getOptions(currentQ);
       const effectiveAnswer = currentQ._shuffledAnswer !== undefined
         ? currentQ._shuffledAnswer
         : rawKey;
-      // 1. Text match against (possibly normalised) answer
-      const isTextMatch = answersMatch(optionText, effectiveAnswer);
-      // 2–3. Index match only for isManual seeds (answer is option index 0–3).
-      // Generator/calc MCQs store the value ("1"); treating that as an index
-      // marks the wrong option correct when opts[1] is a distractor.
-      const isIndexMatch = !!currentQ.isManual
-        && currentQ._shuffledAnswer === undefined
-        && optIdx !== null
-        && rawKey !== undefined
-        && rawKey !== null
-        && String(rawKey) === String(optIdx);
-      let isResolvedIndexText = false;
-      if (!isTextMatch && !isIndexMatch && currentQ.isManual && rawKey !== undefined && rawKey !== null) {
-        const idx = parseInt(String(rawKey), 10);
-        const optsNow = getOptions(currentQ);
-        if (!isNaN(idx) && optsNow[idx] !== undefined) {
-          isResolvedIndexText = answersMatch(optionText, getOptionText(optsNow[idx]));
-        }
+      // Resolve 0-based index keys to option display text for fair comparison
+      // (student pick is getOptionText → toDisplayText; raw seed has \\( … \\)).
+      let resolvedCorrectText = effectiveAnswer;
+      const rawKeyStr = rawKey === undefined || rawKey === null ? '' : String(rawKey).trim();
+      const rawIsDigits = /^\d+$/.test(rawKeyStr);
+      const rawIdx = rawIsDigits ? Number(rawKeyStr) : NaN;
+      // Index-only when no option's *value* equals the digit string (calc may store "1" as value).
+      const answerLooksLikeIndex = rawIsDigits
+        && Number.isInteger(rawIdx)
+        && rawIdx >= 0
+        && rawIdx < optsNow.length
+        && !optsNow.some((o) => answersMatch(getOptionText(o), rawKeyStr));
+      if (answerLooksLikeIndex && currentQ._shuffledAnswer === undefined) {
+        resolvedCorrectText = getOptionText(optsNow[rawIdx]);
       }
+      // 1. Text match (LaTeX wrappers + "66 (or 66.0)" forms)
+      const isTextMatch = answersMatch(optionText, effectiveAnswer)
+        || answersMatch(optionText, resolvedCorrectText);
+      // 2. Index match only for true index keys (seed bank isManual / no value collision)
+      const isIndexMatch = answerLooksLikeIndex
+        && optIdx !== null
+        && Number(optIdx) === rawIdx;
 
-      correct = isTextMatch || isIndexMatch || isResolvedIndexText;
+      correct = isTextMatch || isIndexMatch;
       if (correct) setScore(prev => prev + 1);
     }
 

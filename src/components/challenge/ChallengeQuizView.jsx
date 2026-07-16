@@ -724,8 +724,25 @@ const ChallengeQuizView = ({
 
                 let status = 'default';
                 if (step === 'feedback') {
-                  const effectiveAnswer = currentQuestion._shuffledAnswer !== undefined ? currentQuestion._shuffledAnswer : currentQuestion.answer;
-                  const isCorrectChoice = answersMatch(optText, effectiveAnswer) || (currentQuestion._shuffledAnswer === undefined && currentQuestion.isManual && String(i) === String(currentQuestion.answer));
+                  const rawKey = currentQuestion.answer ?? currentQuestion.a;
+                  const effectiveAnswer = currentQuestion._shuffledAnswer !== undefined
+                    ? currentQuestion._shuffledAnswer
+                    : rawKey;
+                  const rawKeyStr = rawKey == null ? '' : String(rawKey).trim();
+                  const rawIsDigits = /^\d+$/.test(rawKeyStr);
+                  const rawIdx = rawIsDigits ? Number(rawKeyStr) : NaN;
+                  const answerLooksLikeIndex = rawIsDigits
+                    && Number.isInteger(rawIdx)
+                    && rawIdx >= 0
+                    && rawIdx < displayOptions.length
+                    && !displayOptions.some((o) => answersMatch(getOptionText(o), rawKeyStr));
+                  let resolvedText = effectiveAnswer;
+                  if (answerLooksLikeIndex && currentQuestion._shuffledAnswer === undefined) {
+                    resolvedText = getOptionText(displayOptions[rawIdx]);
+                  }
+                  const isCorrectChoice = answersMatch(optText, effectiveAnswer)
+                    || answersMatch(optText, resolvedText)
+                    || (answerLooksLikeIndex && i === rawIdx);
                   if (isCorrectChoice) status = 'correct';
                   else if (isSelected) status = 'wrong';
                 }

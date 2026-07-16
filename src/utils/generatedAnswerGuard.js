@@ -133,16 +133,21 @@ export const optionsContainAnswer = (options, answer) => {
 };
 
 /**
- * Ensure MCQ options include the answer value. Replaces index-style answers.
- * Returns { options, answer } with answer always the value string.
+ * Ensure MCQ options include the answer value when the answer is a *value*.
+ *
+ * IMPORTANT: Seed/bank MCQs (isManual) store answer as a 0-based option INDEX.
+ * Do NOT promote those indices to option text here — DailyChallenge grades
+ * isManual by index, and promoting broke correct selections (student pick
+ * via toDisplayText no longer matched the raw seed string / index key).
+ *
+ * For AI/calc generators the answer is already a value string ("66", "15.36").
  */
-export const ensureAnswerValueInOptions = (options, answer) => {
+export const ensureAnswerValueInOptions = (options, answer, { allowIndexPromotion = true } = {}) => {
   let ans = String(answer ?? '').trim();
   let opts = Array.isArray(options) ? [...options] : [];
 
-  // If answer looks like a bare index and that slot's text is the real value,
-  // promote to value form when the value isn't already used as an option elsewhere.
-  if (/^\d+$/.test(ans) && opts.length > 0) {
+  // Promote bare index → option text only for non-manual / generated MCQs.
+  if (allowIndexPromotion && /^\d+$/.test(ans) && opts.length > 0) {
     const idx = Number(ans);
     if (Number.isInteger(idx) && idx >= 0 && idx < opts.length) {
       const atIdx = optionText(opts[idx]);
@@ -161,6 +166,14 @@ export const ensureAnswerValueInOptions = (options, answer) => {
 
   if (opts.length === 0) {
     return { options: opts, answer: ans };
+  }
+
+  // Index-style answers (0–3) are valid without being option *text*.
+  if (/^\d+$/.test(ans)) {
+    const idx = Number(ans);
+    if (Number.isInteger(idx) && idx >= 0 && idx < opts.length) {
+      return { options: opts, answer: ans };
+    }
   }
 
   if (!optionsContainAnswer(opts, ans)) {
@@ -232,17 +245,17 @@ export const verifyAndRepairGeneratedQuestion = (question) => {
     }
   }
 
-  answer = String(answer ?? '').trim();
+  answer = answer === null || answer === undefined ? '' : String(answer).trim();
 
-  // MCQ integrity: answer must be a value present in options.
+  // MCQ integrity. Manual seed bank answers are 0-based indices — keep them.
   if (options.length > 0) {
-    const fixed = ensureAnswerValueInOptions(options, answer);
+    const allowIndexPromotion = question.isManual !== true;
+    const fixed = ensureAnswerValueInOptions(options, answer, { allowIndexPromotion });
     if (fixed.answer !== answer) {
       notes.push(`index→value: ${answer} → ${fixed.answer}`);
       answer = fixed.answer;
       repaired = true;
     }
-    // Detect option list mutation (answer injected).
     const before = options.map(optionText).join('|');
     const after = fixed.options.map(optionText).join('|');
     if (before !== after) {
@@ -251,8 +264,11 @@ export const verifyAndRepairGeneratedQuestion = (question) => {
     }
     options = fixed.options;
 
-    if (!optionsContainAnswer(options, answer)) {
-      // Last resort: force-inject
+    // Index answers (isManual) are valid without matching option *text*.
+    const isIndexAns = /^\d+$/.test(answer)
+      && Number(answer) >= 0
+      && Number(answer) < options.length;
+    if (!isIndexAns && !optionsContainAnswer(options, answer)) {
       options = [answer, ...options].slice(0, 4);
       notes.push('force_inject_answer');
       repaired = true;
