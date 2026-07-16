@@ -63,8 +63,11 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     let currentLine = "";
     for (let i = 0; i < parts.length; i++) {
       if (i % 2 === 0) {
-        // Plain text part: split by actual newlines or the literal string "\n" (handling double-escaped newlines)
-        const textParts = parts[i].split(/\\+n|\r?\n/);
+        // Plain text part: split by real newlines, or a \n newline escape that is
+        // NOT the start of a longer TeX control word (\neq, \ne, \nu, \nabla, …).
+        // Using /\\+n/ alone sliced "\neq" into "" + "eq" and "\infty" paths
+        // that left "eq" / broken infinity in solution explanations.
+        const textParts = parts[i].split(/\r?\n|\\n(?![a-zA-Z])/);
         for (let j = 0; j < textParts.length; j++) {
           if (j > 0) {
             lines.push(currentLine);
