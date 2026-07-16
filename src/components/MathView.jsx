@@ -83,11 +83,17 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     lines = [processedContent];
   }
 
-  // Auto-split trailing math block at the end of a single-line question to center it
+  // Auto-split trailing DISPLAY math at the end of a single-line question so it
+  // can be centered on its own row (e.g. "Solve:\n$$x=5$$").
+  //
+  // Do NOT split on inline \(...\) / $...$ — MCQ options like
+  // "Domain: \([-1,1]\), Range: \((0,\\infty)\)" must stay one line. The old
+  // regex matched the first colon + first \( and left "Domain:" alone with the
+  // rest centered below (MathView centers pure-math continuation lines).
   if (lines.length === 1 && typeof lines[0] === 'string') {
-    // Only auto-split if the preceding text ends with a colon (:) or the math block is a block math block ($$ or \[)
-    const match = lines[0].match(/^(.*?:)(?:\s+)(\$\$[\s\S]+?\$\$|\$[\s\S]+?\$|\\\([\s\S]+?\\\)|\\\[[\s\S]+?\\\])([.?!]*)$/) ||
-                  lines[0].match(/^(.*?(?::|,)?)(?:\s+)(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\])([.?!]*)$/);
+    const match =
+      lines[0].match(/^(.*?:)(?:\s+)(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\])([.?!]*)$/) ||
+      lines[0].match(/^(.*?(?::|,)?)(?:\s+)(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\])([.?!]*)$/);
     if (match) {
       lines = [match[1].trim(), (match[2] + match[3]).trim()];
     }
