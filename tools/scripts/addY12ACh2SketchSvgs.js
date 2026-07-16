@@ -202,25 +202,61 @@ function svgAsc22() {
 }
 
 function svgFortst10g(variant = 'a') {
-  const xmin = -2, xmax = 2.5, ymin = -30, ymax = 8;
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 260);
+  // Model curve with the documented x-intercepts and a local min, drawn as ONE
+  // continuous path (previous cubic re-entered the frame after a tall local max
+  // and looked "cut" into two pieces).
   let r1, r2, minX, minY, labels;
   if (variant === 'a') {
-    r1 = -0.75; r2 = 1.25; minX = -0.25; minY = -27;
+    r1 = -0.75;
+    r2 = 1.25;
+    minX = -0.25;
+    minY = -27;
     labels = { r1: '(-3/4,0)', r2: '(5/4,0)', min: '(-1/4,-27)' };
   } else {
-    r1 = -1.25; r2 = 0.75; minX = -0.75; minY = -27;
+    r1 = -1.25;
+    r2 = 0.75;
+    minX = -0.75;
+    minY = -27;
     labels = { r1: '(-5/4,0)', r2: '(3/4,0)', min: '(-3/4,-27)' };
   }
-  const mid = (r1 + r2) / 2;
-  const rawMin = (minX - r1) * (minX - r2) * (minX - mid);
-  const fn = (x) => (minY / (rawMin || 1)) * (x - r1) * (x - r2) * (x - mid);
+
+  // Choose third root s so y'=0 at minX (stationary point), then scale so y(minX)=minY.
+  // 1/(minX-r1)+1/(minX-r2)+1/(minX-s)=0  ⇒  s = minX - 1/(1/(minX-r1)+1/(minX-r2))
+  const sum = 1 / (minX - r1) + 1 / (minX - r2);
+  const s = minX - 1 / sum;
+  const rawMin = (minX - r1) * (minX - r2) * (minX - s);
+  const a = minY / (rawMin || 1);
+  const fn = (x) => a * (x - r1) * (x - r2) * (x - s);
+
+  // Auto y-bounds from samples so the whole continuous arc stays on-screen
+  // (no path break from clipping a tall local max).
+  const xLo = r1 - 0.55;
+  const xHi = r2 + 0.55;
+  const ys = [0, minY];
+  for (let i = 0; i <= 60; i++) {
+    const x = xLo + ((xHi - xLo) * i) / 60;
+    const y = fn(x);
+    if (Number.isFinite(y)) ys.push(y);
+  }
+  let ymin = Math.min(...ys);
+  let ymax = Math.max(...ys);
+  const pad = Math.max(2, (ymax - ymin) * 0.08);
+  ymin -= pad;
+  ymax += pad;
+  if (ymin > -1) ymin = -1;
+  if (ymax < 1) ymax = 1;
+
+  const xmin = xLo - 0.15;
+  const xmax = xHi + 0.15;
+  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 280);
   let body = axes;
-  body += `<path d="${samplePath(fn, r1 - 0.4, r2 + 0.4, sx, sy, ymin, ymax, 100)}" fill="none" stroke="#6366f1" stroke-width="2.4"/>`;
-  body += mark(sx, sy, r1, 0, labels.r1, '#f59e0b', -40, 14);
-  body += mark(sx, sy, r2, 0, labels.r2, '#f59e0b', 6, 14);
-  body += mark(sx, sy, minX, fn(minX), labels.min, '#ef4444', 8, -8);
-  body += `<text x="44" y="28" font-size="11" fill="#6366f1" font-weight="bold">y=f(2(x-1/4))</text>`;
+  // Dense continuous sample across full window — do not break the path.
+  body += `<path d="${samplePath(fn, xmin, xmax, sx, sy, ymin - 1, ymax + 1, 160)}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>`;
+  body += mark(sx, sy, r1, 0, labels.r1, '#f59e0b', -48, 14);
+  body += mark(sx, sy, r2, 0, labels.r2, '#f59e0b', 8, 14);
+  body += mark(sx, sy, minX, minY, labels.min, '#ef4444', 8, -10);
+  body += `<text x="44" y="28" font-size="11" fill="#6366f1" font-weight="bold">y=f(2(x−1/4))</text>`;
+  body += `<text x="44" y="44" font-size="10" fill="#64748b">h-dilate ½, then right ¼</text>`;
   return wrapSvg(body, W, H);
 }
 
