@@ -1,5 +1,6 @@
 import { CURRICULUM_DATA } from '../constants/curriculumData.js';
 import { clockSvg, digital12, digital24, timePhrase } from '../utils/clockSvg.js';
+import { verifyAndRepairGeneratedQuestion } from '../utils/generatedAnswerGuard.js';
 
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 const pick = (arr) => arr[randomInt(0, arr.length - 1)];
@@ -488,7 +489,7 @@ const generateClockQuestion = (topicId, timeLimit = 30) => {
     }
   }
 
-  return {
+  return verifyAndRepairGeneratedQuestion({
     id: `calc-${Date.now()}-${randomInt(1000, 9999)}`,
     type: 'multiple_choice',
     question: q,
@@ -499,13 +500,13 @@ const generateClockQuestion = (topicId, timeLimit = 30) => {
     topicId,
     generatorType: 'calculation',
     timeLimit,
-  };
+  });
 };
 
 export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
   // Clock Reading topics have their own generator (SVG clock faces + MCQ).
   if (typeof topicId === 'string' && topicId.startsWith('clock-')) {
-    return withStepMeta(generateClockQuestion(topicId, timeLimit));
+    return verifyAndRepairGeneratedQuestion(withStepMeta(generateClockQuestion(topicId, timeLimit)));
   }
   // Legacy Stage 5 topic ids → representative new step (assignments made
   // before the 28-step fraction curriculum still produce sensible questions).
@@ -2437,7 +2438,7 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
       break;
   }
 
-  return withStepMeta({
+  return verifyAndRepairGeneratedQuestion(withStepMeta({
     id: `calc-${Date.now()}-${randomInt(1000, 9999)}`,
     type: 'short_answer',
     question: q,
@@ -2446,8 +2447,8 @@ export const generateCalculationQuestion = (topicId, timeLimit = 30) => {
     chapterTitle: 'Daily Calculation',
     topicId: topicId,
     generatorType: 'calculation',
-    timeLimit: timeLimit
-  });
+    timeLimit: timeLimit,
+  }));
 };
 
 // ── MCQ distractor generator for Y1-Y4 calc sprint ──────────────────────────
@@ -2713,7 +2714,8 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
         q.type = 'multiple_choice';
       }
     }
-    questions.push(q);
+    // Final integrity pass after MCQ options attached.
+    questions.push(verifyAndRepairGeneratedQuestion(q));
   }
   return questions;
 };

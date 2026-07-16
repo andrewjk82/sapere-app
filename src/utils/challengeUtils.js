@@ -7,6 +7,10 @@ import { DEFAULT_DIFFICULTY_MIX, getQuestionBlueprint } from '../services/questi
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { toDisplayText } from '../components/MathView';
 import { localCache } from '../services/localCacheService';
+import {
+  deriveBinaryMathAnswer,
+  verifyAndRepairGeneratedQuestion,
+} from './generatedAnswerGuard.js';
 
 // ── Constants ────────────────────────────────────────────────────────────────
 export const CHALLENGE_YEAR = 11;
@@ -58,61 +62,59 @@ export const normalizeText = (value) => String(value ?? '')
 
 export const getAnswerText = (option) => toDisplayText(option).trim();
 
-export const deriveSimpleMathAnswer = (questionText) => {
-  const text = normalizeText(questionText).replace(/\s+/g, ' ');
-  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
-  if (!binary) return null;
-
-  const left = Number(binary[1]);
-  const right = Number(binary[3]);
-  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
-
-  const op = binary[2].toLowerCase();
-  let result = null;
-  if (op === '+') result = left + right;
-  if (op === '-') result = left - right;
-  if (op === 'x' || op === '*') result = left * right;
-  if ((op === '÷' || op === '/') && right !== 0) result = left / right;
-
-  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
-};
+export const deriveSimpleMathAnswer = (questionText) => deriveBinaryMathAnswer(questionText);
 
 export const getOptions = (question) => {
   return Array.isArray(question?.options) ? question.options : [];
 };
 
+/**
+ * Repair load-time answers for AI / bank questions.
+ * Always keeps answer as the option *value* (never a 0-based index) for
+ * non-manual questions — index answers caused dual green checks in reports.
+ */
 export const correctQuestionAnswer = (question) => {
-  const expectedAnswer = deriveSimpleMathAnswer(question?.question);
-  if (expectedAnswer === null) return question;
+  if (!question) return question;
+  // Full guard: before/after, patterns, binary/nested arithmetic, options inject.
+  const guarded = verifyAndRepairGeneratedQuestion(question);
+  const expectedAnswer = deriveBinaryMathAnswer(question?.question);
+  if (expectedAnswer === null) return guarded;
 
-  const options = getOptions(question);
-  const matchingOptionIndex = options.findIndex(option => getAnswerText(option) === expectedAnswer);
+  const options = getOptions(guarded);
   const repaired = {
-    ...question,
-    solution: question.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
+    ...guarded,
+    solution: guarded.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
+    answer: expectedAnswer,
   };
 
+  // Manual bank items historically used index answers — keep that contract
+  // only when isManual and the index points at the derived value.
   if (question?.isManual) {
+    const matchingOptionIndex = options.findIndex(
+      (option) => getAnswerText(option) === expectedAnswer,
+    );
     if (matchingOptionIndex >= 0) {
       return { ...repaired, answer: String(matchingOptionIndex) };
     }
-
     return {
       ...repaired,
       isManual: false,
       answer: expectedAnswer,
-      options: options.length ? [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4) : options,
+      options: options.length
+        ? [expectedAnswer, ...options.filter((option) => getAnswerText(option) !== expectedAnswer)].slice(0, 4)
+        : options,
     };
   }
 
-  if (!options.length || options.some(option => getAnswerText(option) === expectedAnswer)) {
+  // AI / procedural: value form only.
+  if (!options.length || options.some((option) => getAnswerText(option) === expectedAnswer)) {
     return { ...repaired, answer: expectedAnswer };
   }
 
   return {
     ...repaired,
     answer: expectedAnswer,
-    options: [expectedAnswer, ...options.filter(option => getAnswerText(option) !== expectedAnswer)].slice(0, 4),
+    options: [expectedAnswer, ...options.filter((option) => getAnswerText(option) !== expectedAnswer)].slice(0, 4),
   };
 };
 

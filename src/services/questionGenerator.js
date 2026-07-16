@@ -1,4 +1,8 @@
 import { CURRICULUM_DATA } from '../constants/curriculumData.js';
+import {
+  deriveBinaryMathAnswer,
+  verifyAndRepairGeneratedQuestion,
+} from '../utils/generatedAnswerGuard.js';
 
 /**
  * Curriculum-aware Year 1 question generator.
@@ -131,47 +135,20 @@ const normalizeMathText = (value) => String(value ?? '')
   .replace(/×/g, 'x')
   .trim();
 
-const deriveSimpleMathAnswer = (questionText) => {
-  const text = normalizeMathText(questionText).replace(/\s+/g, ' ');
-  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
-  if (!binary) return null;
-
-  const left = Number(binary[1]);
-  const right = Number(binary[3]);
-  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
-
-  const op = binary[2].toLowerCase();
-  let result = null;
-  if (op === '+') result = left + right;
-  if (op === '-') result = left - right;
-  if (op === 'x' || op === '*') result = left * right;
-  if ((op === '÷' || op === '/') && right !== 0) result = left / right;
-
-  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
-};
-
-const optionText = (option) => {
-  if (option === null || option === undefined) return '';
-  if (typeof option === 'object') return String(option.text ?? option.label ?? option.value ?? '');
-  return String(option);
-};
-
-const ensureAnswerInOptions = (options, answer) => {
-  if (!Array.isArray(options) || options.length === 0) return options;
-  if (options.some(option => optionText(option).trim() === String(answer))) return options;
-  return [answer, ...options.filter(option => optionText(option).trim() !== String(answer))].slice(0, 4);
-};
+const deriveSimpleMathAnswer = (questionText) => deriveBinaryMathAnswer(questionText);
 
 const validateGeneratedQuestion = (question) => {
-  const expectedAnswer = deriveSimpleMathAnswer(question?.question);
-  if (expectedAnswer === null) return question;
-
-  return {
-    ...question,
-    answer: expectedAnswer,
-    options: ensureAnswerInOptions(question.options, expectedAnswer),
-    solution: question.solution || `${normalizeMathText(question.question).replace(/\?$/, expectedAnswer)}`,
-  };
+  // Full integrity pass: re-derive known stems, keep answer as option VALUE
+  // (never 0-based index), inject answer into options if missing.
+  const repaired = verifyAndRepairGeneratedQuestion(question);
+  const expectedBinary = deriveBinaryMathAnswer(question?.question);
+  if (expectedBinary != null && !repaired.solution) {
+    return {
+      ...repaired,
+      solution: `${normalizeMathText(question.question).replace(/\?$/, expectedBinary)}`,
+    };
+  }
+  return repaired;
 };
 
 export const QUESTION_BLUEPRINTS = Object.fromEntries(
@@ -4396,7 +4373,9 @@ export const generateQuestion = (input = {}, maybeDifficulty) => {
   const selectedType = config.type || pickGeneratorType(target.generatorTypes);
   const generator = GENERATORS_BY_TYPE[selectedType] || genGeneric;
 
-  return {
+  // Final guard after generator + metadata: AI answers must never be wrong /
+  // index-only / missing from MCQ options.
+  return verifyAndRepairGeneratedQuestion({
     ...generator(config.difficulty),
     year: target.year,
     chapterId: target.chapterId,
@@ -4408,7 +4387,7 @@ export const generateQuestion = (input = {}, maybeDifficulty) => {
     generatorType: selectedType,
     difficulty: config.difficulty,
     isManual: false,
-  };
+  });
 };
 
 export const questionGenerator = {

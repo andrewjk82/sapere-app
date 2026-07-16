@@ -27,6 +27,10 @@ import {
   normalizeYearLabel,
   getValidChapterIdsForYears,
 } from "../utils/challengeUtils";
+import {
+  deriveBinaryMathAnswer as deriveSimpleMathAnswer,
+  verifyAndRepairGeneratedQuestion,
+} from "../utils/generatedAnswerGuard.js";
 
 const DEFAULT_YEAR = "Year 1";
 const DEFAULT_CHAPTER_ID = "y1-number";
@@ -121,37 +125,23 @@ const normalizeText = (value) => String(value ?? "")
   .replace(/×/g, "x")
   .trim();
 
-const deriveSimpleMathAnswer = (questionText) => {
-  const text = normalizeText(questionText).replace(/\s+/g, " ");
-  const binary = text.match(/^(-?\d+(?:\.\d+)?)\s*([+\-x*÷/])\s*(-?\d+(?:\.\d+)?)\s*=\s*\?$/i);
-  if (!binary) return null;
-
-  const left = Number(binary[1]);
-  const right = Number(binary[3]);
-  if (!Number.isFinite(left) || !Number.isFinite(right)) return null;
-
-  const op = binary[2].toLowerCase();
-  let result = null;
-  if (op === "+") result = left + right;
-  if (op === "-") result = left - right;
-  if (op === "x" || op === "*") result = left * right;
-  if ((op === "÷" || op === "/") && right !== 0) result = left / right;
-
-  return result === null ? null : String(Number.isInteger(result) ? result : Number(result.toFixed(4)));
-};
-
 const correctQuestionAnswer = (question) => {
+  if (!question) return question;
+  const guarded = verifyAndRepairGeneratedQuestion(question);
   const expectedAnswer = deriveSimpleMathAnswer(question?.question);
-  if (expectedAnswer === null) return question;
+  if (expectedAnswer === null) return guarded;
 
-  const options = getOptions(question);
-  const matchingOptionIndex = options.findIndex((option) => toAnswerText(option) === expectedAnswer);
+  const options = getOptions(guarded);
   const repaired = {
-    ...question,
-    solution: question.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
+    ...guarded,
+    solution: guarded.solution || `${normalizeText(question.question).replace(/\?$/, expectedAnswer)}`,
+    answer: expectedAnswer,
   };
 
   if (question?.isManual) {
+    const matchingOptionIndex = options.findIndex(
+      (option) => toAnswerText(option) === expectedAnswer,
+    );
     if (matchingOptionIndex >= 0) {
       return { ...repaired, answer: String(matchingOptionIndex) };
     }
@@ -165,6 +155,7 @@ const correctQuestionAnswer = (question) => {
     };
   }
 
+  // AI / procedural: always value form, never option index.
   if (!options.length || options.some((option) => toAnswerText(option) === expectedAnswer)) {
     return { ...repaired, answer: expectedAnswer };
   }
