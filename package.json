@@ -12,7 +12,8 @@
     "gen-5d": "node scratch/generateYear12Ch5DQuestions.js",
     "sync-seeds": "node scratch/dump_db_to_seeds.js",
     "seed": "node --import ./scripts/extResolve.mjs scratch/seed.js",
-    "validate-seeds": "node --import ./scripts/extResolve.mjs scripts/validateSeeds.mjs"
+    "validate-seeds": "node --import ./scripts/extResolve.mjs scripts/validateSeeds.mjs",
+    "test:mc-shuffle": "node scripts/testMcOptionShuffle.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

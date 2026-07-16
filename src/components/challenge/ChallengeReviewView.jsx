@@ -12,27 +12,14 @@ import { getLesson } from '../../lessons/registry';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { getOptions, getOptionText } from '../../utils/challengeUtils';
 import { answersMatch } from '../../utils/answerMatching';
+import { resolveCorrectOptionText } from '../../utils/mcOptionShuffle';
 
 // Resolve the "correct answer" display text — handles MC index answers and
 // shuffled-option questions stored with `_shuffledAnswer`.
 const getCorrectAnswerText = (q) => {
   if (!q) return '';
-  if (q._shuffledAnswer !== undefined && q._shuffledAnswer !== null) {
-    return String(q._shuffledAnswer);
-  }
   if (q.type === 'interactive_grid') return `${q.answer} panels shaded`;
-  const opts = getOptions(q);
-  const raw = q.answer ?? q.a;
-  const rawStr = raw == null ? '' : String(raw).trim();
-  // MC seed banks store a 0-based option index ("0"…"3") — resolve to text.
-  if (opts.length > 1 && /^\d+$/.test(rawStr)) {
-    const idx = parseInt(rawStr, 10);
-    const valueIsOptionText = opts.some((o) => answersMatch(getOptionText(o), rawStr));
-    if (Number.isFinite(idx) && opts[idx] !== undefined && (q.isManual || !valueIsOptionText)) {
-      return getOptionText(opts[idx]);
-    }
-  }
-  return String(raw ?? '');
+  return resolveCorrectOptionText(q);
 };
 
 // Format the student's answer for display.
