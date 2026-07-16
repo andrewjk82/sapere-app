@@ -740,7 +740,10 @@ function App() {
   }, []);
 
   const [students, setStudents] = useState([]);
-  const [loading, setLoading] = useState(true);
+  // Do NOT block the whole shell on roster fetch. Teacher login used to hang
+  // on a white/spinner screen while getStudents scanned users/. Open the UI
+  // immediately; roster fills in when ready.
+  const [loading, setLoading] = useState(false);
   const [loadError, setLoadError] = useState('');
   
   const [newStudent, setNewStudent] = useState({
@@ -1012,24 +1015,27 @@ function App() {
 
   const hasProfile = Boolean(profile);
   const handleRefreshStudents = useCallback(async (silent = false, forceRefresh = false) => {
-    // 1. Guard: Wait for both auth user and Firestore profile to be certain of isAdmin status
-    if (!user || !profileLoaded) {
-      // Profile not yet loaded — clear the initial loading spinner to avoid getting stuck
+    // 1. Need a signed-in user. Profile can still be loading for teachers —
+    //    isAdmin is derived from auth email, not the profile doc.
+    if (!user) {
       setLoading(false);
       return;
     }
 
-    // 2. Optimization: Regular students who haven't completed setup yet shouldn't trigger full fetches.
-    // FIX: Must call setLoading(false) here too, because loading starts as true on mount.
-    // Without this, new students who haven't finished signup see an infinite loading spinner.
+    // Teachers (admin): never wait for profileLoaded before fetching roster /
+    // opening the shell. Students still wait so we know they finished signup.
+    if (!isAdmin && !profileLoaded) {
+      setLoading(false);
+      return;
+    }
+
+    // 2. Regular students who haven't completed setup yet shouldn't trigger full fetches.
     if (!hasProfile && !isAdmin) {
       setLoading(false);
       return;
     }
 
-    // Show the full-page loading spinner only on non-silent calls.
-    // Silent calls (background refreshes after quiz etc.) skip the spinner
-    // but ALWAYS clear the loading state in finally so we don't get stuck.
+    // Full-page spinner only on explicit user-triggered refresh — never on login.
     if (!silent) setLoading(true);
 
     try {
@@ -1037,28 +1043,33 @@ function App() {
       const data = await Promise.race([
         studentService.getStudents(user.uid, isAdmin, { forceRefresh }),
         new Promise((_, reject) => {
-          window.setTimeout(() => reject(new Error('students-timeout')), 12000);
+          window.setTimeout(() => reject(new Error('students-timeout')), 10000);
         }),
       ]);
-      setStudents(data);
+      setStudents(Array.isArray(data) ? data : []);
       setLoadError('');
     } catch (err) {
       if (err?.message === 'students-timeout') {
-        console.warn('[App] Student roster fetch timed out — opening shell without roster');
+        console.warn('[App] Student roster fetch timed out — shell stays open');
+        // Keep any previously loaded students; don't blank the UI.
         setLoadError('');
       } else {
-        setStudents([]);
-        setLoadError('We couldn\'t load your students. Please try again.');
         console.error(err);
+        // Only show blocking error on explicit refresh; login path stays usable.
+        if (!silent) {
+          setStudents([]);
+          setLoadError('We couldn\'t load your students. Please try again.');
+        }
       }
     } finally {
-      setLoading(false); // always clear — loading starts as true on mount
+      setLoading(false);
     }
   }, [user, profileLoaded, hasProfile, isAdmin]);
 
 
   useEffect(() => {
     if (user) {
+      // Background roster load — shell already visible (loading defaults false).
       handleRefreshStudents(true);
     }
     // Intentionally omit handleRefreshStudents from deps: its identity changes when
@@ -1074,7 +1085,7 @@ function App() {
     const t = window.setTimeout(() => {
       console.warn('[App] Loading safety timeout — forcing shell open');
       setLoading(false);
-    }, 10000);
+    }, 6000);
     return () => window.clearTimeout(t);
   }, [loading]);
 

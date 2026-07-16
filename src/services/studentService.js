@@ -136,6 +136,16 @@ export const studentService = {
     }
 
     const cached = forceRefresh ? null : localCache.get(cacheKey);
+    // Stale cache is better than a blank teacher shell while users/ is scanned.
+    if (!forceRefresh && cached?.students?.length) {
+      memSet(cacheKey, cached.students);
+      // Refresh in background — do not block login on full users scan.
+      Promise.resolve().then(() => {
+        studentService.getStudents(tutorId, isAdmin, { forceRefresh: true }).catch(() => {});
+      });
+      return cached.students;
+    }
+
     try {
       const metaSnap = await getDoc(doc(db, "sync_meta", getStudentsMetaId(tutorId, isAdmin)));
       const remoteVersion = metaVersionOf(metaSnap.data());
@@ -158,23 +168,40 @@ export const studentService = {
 
       let registeredStudents = [];
       if (isAdmin) {
-        const usersRef = collection(db, "users");
-        const usersSnap = await getDocs(usersRef);
-        registeredStudents = usersSnap.docs
-          .filter(doc =>
-            doc.data().email !== "andrewjk82@gmail.com" &&
-            doc.data().role !== 'admin' &&
-            doc.id !== tutorId
-          )
-          .map(doc => ({ id: doc.id, ...doc.data() }))
-          .map(data => ({
-            ...data,
-            source: 'registered',
-            name: buildDisplayName(data),
-            avatarUrl: buildAvatarUrl(data, data.email || data.id),
-            level: data.assignedYear?.[0] || data.year || data.level || "Year 11",
-            subject: data.assignedCourse?.[0] || data.subject || "Maths",
-          }));
+        // Prefer returning manual roster first if the full users scan is slow.
+        // Teachers can still teach with manual students while registered accounts load.
+        try {
+          const usersRef = collection(db, "users");
+          const usersSnap = await Promise.race([
+            getDocs(usersRef),
+            new Promise((_, reject) => {
+              setTimeout(() => reject(new Error('users-scan-timeout')), 8000);
+            }),
+          ]);
+          registeredStudents = usersSnap.docs
+            .filter(doc =>
+              doc.data().email !== "andrewjk82@gmail.com" &&
+              doc.data().role !== 'admin' &&
+              doc.id !== tutorId
+            )
+            .map(doc => ({ id: doc.id, ...doc.data() }))
+            .map(data => ({
+              ...data,
+              source: 'registered',
+              name: buildDisplayName(data),
+              avatarUrl: buildAvatarUrl(data, data.email || data.id),
+              level: data.assignedYear?.[0] || data.year || data.level || "Year 11",
+              subject: data.assignedCourse?.[0] || data.subject || "Maths",
+            }));
+        } catch (scanErr) {
+          console.warn('[studentService] registered users scan skipped:', scanErr?.message || scanErr);
+          // Fall back to manual-only roster so the teacher UI still opens.
+          if (manualStudents.length > 0) {
+            const partial = mergeDuplicateStudentRecords(manualStudents, []);
+            memSet(cacheKey, partial);
+            return partial;
+          }
+        }
       }
 
       const students = mergeDuplicateStudentRecords(manualStudents, registeredStudents);

@@ -120,20 +120,34 @@ export const AuthProvider = ({ children }) => {
     resendVerificationEmail
   };
 
-  // Safety: if onAuthStateChanged is delayed, still mount the app after 6s
-  // so users never see a permanent blank screen after sign-in.
+  // Safety: if onAuthStateChanged is delayed, still mount the app quickly
+  // so teachers never sit on a permanent blank white screen after sign-in.
   useEffect(() => {
     if (!loading) return undefined;
     const t = window.setTimeout(() => {
       console.warn('[Auth] auth loading safety timeout');
       setLoading(false);
-    }, 6000);
+    }, 2500);
     return () => window.clearTimeout(t);
   }, [loading]);
 
   return (
     <AuthContext.Provider value={value}>
-      {!loading && children}
+      {loading ? (
+        // Never render an empty document body — that looks like a frozen white page.
+        <div
+          style={{
+            minHeight: '100vh',
+            display: 'grid',
+            placeItems: 'center',
+            background: '#f6f1ff',
+          }}
+        >
+          <div className="app-spinner" aria-label="Loading" />
+        </div>
+      ) : (
+        children
+      )}
     </AuthContext.Provider>
   );
 };
