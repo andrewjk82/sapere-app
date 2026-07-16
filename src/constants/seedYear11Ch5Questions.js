@@ -2381,19 +2381,21 @@ export const CH5_QUESTIONS_Y11A = [
     "options": [],
     "solutionSteps": [
       {
-        "explanation": "Start from \\(y = x^3\\). Replacing \\(x\\) by \\(x + 1\\) shifts 1 unit left.",
+        "explanation": "Start from \\(y = x^3\\). Replacing \\(x\\) by \\(x + 1\\) shifts the graph 1 unit to the left.",
         "workingOut": "\\(y = (x + 1)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "The leading minus reflects in the \\(x\\)-axis: increasing cubics become decreasing through the origin of the shifted axes.",
+        "explanation": "The leading minus reflects the graph in the \\(x\\)-axis, so the cubic decreases through the shifted inflection point.",
         "workingOut": "\\(y = -(x + 1)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "The graph passes through \\((-1, 0)\\) and is a decreasing cubic. Sketch and label the inflection point.",
+        "explanation": "The graph passes through the inflection point \\((-1, 0)\\). Sketch the decreasing cubic and label this point.",
         "workingOut": "\\(\\text{Inflection at } (-1, 0)\\)",
-        "graphData": null
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"28\" y1=\"117.0\" x2=\"282\" y2=\"117.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"197.3\" y1=\"18\" x2=\"197.3\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"278\" y=\"131\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"203.33333333333331\" y=\"22\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  \n  <path d=\"M87.3,15.6 L91.5,33.5 L95.7,49.1 L100.0,62.6 L104.2,74.2 L108.4,84.1 L112.7,92.3 L116.9,99.0 L121.1,104.3 L125.4,108.5 L129.6,111.7 L133.8,113.9 L138.1,115.4 L142.3,116.3 L146.5,116.8 L150.8,117.0 L155.0,117.0 L159.2,117.0 L163.5,117.2 L167.7,117.7 L171.9,118.6 L176.2,120.1 L180.4,122.3 L184.6,125.5 L188.9,129.7 L193.1,135.0 L197.3,141.8 L201.6,149.9 L205.8,159.8 L210.0,171.4 L214.3,184.9 L218.5,200.5 L222.7,218.4\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"155.0\" cy=\"117.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"161\" y=\"109\" font-size=\"11\" fill=\"#ef4444\" font-weight=\"bold\">(-1, 0)</text>\n  <text x=\"36\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = −(x+1)³</text>\n</svg>"
+        }
       }
     ],
     "timeLimit": 60,
@@ -2411,19 +2413,21 @@ export const CH5_QUESTIONS_Y11A = [
     "options": [],
     "solutionSteps": [
       {
-        "explanation": "Base graph \\(y = \\frac{1}{x}\\) has asymptotes \\(x = 0\\) and \\(y = 0\\).",
-        "workingOut": "\\(y = \\frac{1}{x}\\)",
+        "explanation": "Start from \\(y = \\dfrac{1}{x}\\) with asymptotes \\(x = 0\\) and \\(y = 0\\).",
+        "workingOut": "\\(y = \\dfrac{1}{x}\\)",
         "graphData": null
       },
       {
-        "explanation": "Replace \\(x\\) by \\(x - 3\\): vertical asymptote moves to \\(x = 3\\). Add 4: horizontal asymptote moves to \\(y = 4\\).",
+        "explanation": "Replace \\(x\\) by \\(x - 3\\) (vertical asymptote \\(x = 3\\)), then add 4 (horizontal asymptote \\(y = 4\\)).",
         "workingOut": "\\(x = 3,\\quad y = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch both branches of the rectangular hyperbola about these asymptotes and label them.",
+        "explanation": "Sketch both branches of the hyperbola about these asymptotes and label them clearly.",
         "workingOut": "\\(y = \\dfrac{1}{x-3} + 4\\)",
-        "graphData": null
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"28\" y1=\"216.0\" x2=\"282\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"59.8\" y1=\"18\" x2=\"59.8\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"278\" y=\"230\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"65.75\" y=\"22\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  \n  <line x1=\"155.0\" y1=\"18.0\" x2=\"155.0\" y2=\"216.0\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <line x1=\"28.0\" y1=\"117.0\" x2=\"282.0\" y2=\"117.0\" stroke=\"#94a3b8\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/>\n  <path d=\"M28.0,123.2 L31.1,123.3 L34.1,123.5 L37.2,123.7 L40.2,123.8 L43.3,124.0 L46.3,124.2 L49.4,124.4 L52.4,124.7 L55.5,124.9 L58.6,125.1 L61.6,125.4 L64.7,125.7 L67.7,126.0 L70.8,126.3 L73.8,126.7 L76.9,127.1 L80.0,127.5 L83.0,127.9 L86.1,128.4 L89.1,128.9 L92.2,129.5 L95.2,130.1 L98.3,130.9 L101.3,131.6 L104.4,132.5 L107.5,133.5 L110.5,134.7 L113.6,136.0 L116.6,137.5 L119.7,139.2 L122.7,141.4 L125.8,143.9 L128.8,147.0 L131.9,151.0 L135.0,156.2 L138.0,163.3 L141.1,173.4 L144.1,189.3\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <path d=\"M165.9,44.7 L168.9,60.6 L172.0,70.7 L175.0,77.8 L178.1,83.0 L181.2,87.0 L184.2,90.1 L187.3,92.6 L190.3,94.8 L193.4,96.5 L196.4,98.0 L199.5,99.3 L202.5,100.5 L205.6,101.5 L208.7,102.4 L211.7,103.1 L214.8,103.9 L217.8,104.5 L220.9,105.1 L223.9,105.6 L227.0,106.1 L230.0,106.5 L233.1,106.9 L236.2,107.3 L239.2,107.7 L242.3,108.0 L245.3,108.3 L248.4,108.6 L251.4,108.9 L254.5,109.1 L257.6,109.3 L260.6,109.6 L263.7,109.8 L266.7,110.0 L269.8,110.2 L272.8,110.3 L275.9,110.5 L278.9,110.7 L282.0,110.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <text x=\"159\" y=\"30.375\" font-size=\"10\" fill=\"#64748b\">x=3</text>\n  <text x=\"234.375\" y=\"111\" font-size=\"10\" fill=\"#64748b\">y=4</text>\n  <text x=\"36\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = 1/(x−3)+4</text>\n</svg>"
+        }
       }
     ],
     "timeLimit": 60,
@@ -2499,19 +2503,21 @@ export const CH5_QUESTIONS_Y11A = [
     "options": [],
     "solutionSteps": [
       {
-        "explanation": "Square both sides conceptually: \\(y^2 = 9 - (x - 2)^2\\) with \\(y \\ge 0\\) gives the upper half of a circle.",
+        "explanation": "Rewrite as the upper half of a circle: \\((x-2)^2 + y^2 = 9\\) with \\(y \\ge 0\\).",
         "workingOut": "\\((x-2)^2 + y^2 = 9,\\; y \\ge 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Centre \\((2, 0)\\), radius 3. Domain \\([-1, 5]\\), range \\([0, 3]\\).",
+        "explanation": "Centre \\((2, 0)\\), radius 3. Endpoints \\((-1, 0)\\) and \\((5, 0)\\); highest point \\((2, 3)\\).",
         "workingOut": "\\(\\text{Centre } (2,0),\\; r = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the upper semicircle from \\((-1, 0)\\) to \\((5, 0)\\) with top at \\((2, 3)\\).",
+        "explanation": "Sketch the upper semicircle and label the centre and endpoints.",
         "workingOut": "\\(y = \\sqrt{9 - (x-2)^2}\\)",
-        "graphData": null
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;\">\n  <line x1=\"28\" y1=\"176.4\" x2=\"282\" y2=\"176.4\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"91.5\" y1=\"18\" x2=\"91.5\" y2=\"216\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"278\" y=\"190.4\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"97.5\" y=\"22\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  \n  <path d=\"M59.8,176.4 L59.9,170.2 L60.3,164.0 L60.9,157.8 L61.8,151.7 L63.0,145.7 L64.4,139.7 L66.1,133.8 L68.0,128.1 L70.1,122.5 L72.5,117.0 L75.1,111.7 L77.9,106.6 L81.0,101.6 L84.2,96.9 L87.6,92.4 L91.3,88.1 L95.1,84.1 L99.0,80.3 L103.1,76.8 L107.4,73.5 L111.8,70.5 L116.3,67.9 L120.9,65.5 L125.6,63.4 L130.3,61.6 L135.2,60.2 L140.1,59.1 L145.0,58.3 L150.0,57.8 L155.0,57.6 L160.0,57.8 L165.0,58.3 L169.9,59.1 L174.8,60.2 L179.7,61.6 L184.4,63.4 L189.1,65.5 L193.7,67.9 L198.2,70.5 L202.6,73.5 L206.9,76.8 L211.0,80.3 L214.9,84.1 L218.7,88.1 L222.4,92.4 L225.8,96.9 L229.0,101.6 L232.1,106.6 L234.9,111.7 L237.5,117.0 L239.9,122.5 L242.0,128.1 L243.9,133.8 L245.6,139.7 L247.0,145.7 L248.2,151.7 L249.1,157.8 L249.7,164.0 L250.1,170.2 L250.3,176.4\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\"/>\n  <circle cx=\"155.0\" cy=\"176.4\" r=\"3\" fill=\"#94a3b8\"/>\n  <circle cx=\"59.8\" cy=\"176.4\" r=\"3\" fill=\"#ef4444\"/>\n  <circle cx=\"250.3\" cy=\"176.4\" r=\"3\" fill=\"#ef4444\"/>\n  <circle cx=\"155.0\" cy=\"57.6\" r=\"3.5\" fill=\"#f59e0b\"/>\n  <text x=\"159\" y=\"51.6\" font-size=\"10\" fill=\"#f59e0b\" font-weight=\"bold\">(2,3)</text>\n  <text x=\"36\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = √(9−(x−2)²)</text>\n</svg>"
+        }
       }
     ],
     "timeLimit": 60,
