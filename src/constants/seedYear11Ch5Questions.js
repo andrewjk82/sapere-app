@@ -1633,7 +1633,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical dilation by a factor of \\\\(\\frac{1}{3}\\\\)",
       "Horizontal dilation by a factor of \\\\(3\\\\)",
       "Vertical dilation by a factor of \\\\(3\\\\)"
-    ]
+    ],
+    "question": "A function \\\\(y = f(x)\\\\) is transformed to \\\\(y = 3f(x)\\\\). Describe the geometric transformation."
   },
   {
     "id": "y11a-5-18b",
@@ -1671,7 +1672,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
       "Horizontal dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
       "Vertical dilation by a factor of \\\\(4\\\\)"
-    ]
+    ],
+    "question": "A function \\\\(y = f(x)\\\\) is transformed to \\\\(y = f(4x)\\\\). Describe the geometric transformation."
   },
   {
     "id": "y11a-5-19a",
@@ -5596,7 +5598,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = 9x^2\\\\)",
       "\\\\(y = \\\\frac{1}{3}x^2\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1b",
@@ -5635,7 +5638,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = 4 \\\\times 3^x\\\\)",
       "\\\\(y = \\\\frac{1}{4} \\\\times 3^x\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated **vertically** by a factor of \\\\(4\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1c",
@@ -5674,7 +5678,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = 3x^2 - 6\\\\)",
       "\\\\(y = \\\\frac{1}{3}x^2 - \\\\frac{2}{3}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated **vertically** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1d",
@@ -5713,7 +5718,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{2}{3x}\\\\)",
       "\\\\(y = \\\\frac{6}{x}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1e",
@@ -5752,7 +5758,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(x^2 + 4y^2 = 9\\\\)",
       "\\\\(4x^2 + y^2 = 9\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated **vertically** by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1f",
@@ -5791,7 +5798,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\sqrt{2 + \\\\frac{x}{2}}\\\\)",
       "\\\\(y = \\\\sqrt{2 + 2x}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1g",
@@ -5830,7 +5838,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\sqrt{16 - 16x^2}\\\\)",
       "\\\\(y = \\\\sqrt{16 - 4x^2}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1h",
@@ -5869,7 +5878,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = -3\\\\sqrt{x}\\\\)",
       "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-2a-i",
@@ -5908,7 +5918,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)",
       "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = f(x)\\\\) has zeroes at \\\\(x = -4, 2, 4\\\\) and a \\\\(y\\\\)-intercept of \\\\(-2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = f(2x)\\\\), and sketch a possible graph."
   },
   {
     "id": "y11a-5D-new-2a-ii",
@@ -5947,7 +5958,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
       "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = f(x)\\\\) has zeroes at \\\\(x = -4, 2, 4\\\\) and a \\\\(y\\\\)-intercept of \\\\(-2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = 2f(x)\\\\), and sketch a possible graph."
   },
   {
     "id": "y11a-5D-new-2b-i",
@@ -5986,7 +5998,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
       "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 4)\\\\); Min: \\\\((6, -2)\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = P(x)\\\\) has zeroes at \\\\(x = -2\\\\) and \\\\(x = 0\\\\). It has a local maximum at \\\\((1, 2)\\\\) and a local minimum at \\\\((3, -1)\\\\). Write down the zeroes, \\\\(y\\\\)-intercept, and coordinates of the turning points for \\\\(y = P\\left(\\frac{x}{2}\\right)\\\\)."
   },
   {
     "id": "y11a-5D-new-2b-ii",
@@ -6025,7 +6038,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
       "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 1)\\\\); Min: \\\\((3, -0.5)\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = P(x)\\\\) has zeroes at \\\\(x = -2\\\\) and \\\\(x = 0\\\\). It has a local maximum at \\\\((1, 2)\\\\) and a local minimum at \\\\((3, -1)\\\\). Write down the zeroes, \\\\(y\\\\)-intercept, and coordinates of the turning points for \\\\(y = \\frac{1}{2}P(x)\\\\)."
   },
   {
     "id": "y11a-5D-new-2c-i",
@@ -6064,7 +6078,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)",
       "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(\\\\frac{2}{3}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = h(x)\\\\) has a zero at \\\\(x = 2\\\\) and a \\\\(y\\\\)-intercept of \\\\(2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(\\frac{y}{3} = h(x)\\\\)."
   },
   {
     "id": "y11a-5D-new-2c-ii",
@@ -6103,7 +6118,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
       "Zero: \\\\(x = \\\\frac{2}{3}\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = h(x)\\\\) has a zero at \\\\(x = 2\\\\) and a \\\\(y\\\\)-intercept of \\\\(2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = h\\left(\\frac{x}{3}\\right)\\\\)."
   },
   {
     "id": "y11a-5D-new-2d-i",
@@ -6142,7 +6158,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)",
       "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(9\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = g(x)\\\\) is a semi-circle with zeroes at \\\\(x = -3, 3\\\\) and a \\\\(y\\\\)-intercept of \\\\(3\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(3y = g(x)\\\\)."
   },
   {
     "id": "y11a-5D-new-2d-ii",
@@ -6181,7 +6198,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
       "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "A function \\\\(y = g(x)\\\\) is a semi-circle with zeroes at \\\\(x = -3, 3\\\\) and a \\\\(y\\\\)-intercept of \\\\(3\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = g(3x)\\\\)."
   },
   {
     "id": "y11a-5D-new-3",
@@ -6305,7 +6323,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Horizontal stretch by a factor of 4.",
       "Horizontal compression by a factor of 1/4.",
       "Vertical stretch by a factor of 4."
-    ]
+    ],
+    "question": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilation that transforms this line into \\\\(\\frac{x}{4} + y = 3\\\\)."
   },
   {
     "id": "y11a-5D-new-4b",
@@ -6343,7 +6362,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Horizontal compression by 1/4, and vertical compression by 1/2.",
       "Horizontal stretch by a factor of 4, and vertical stretch by a factor of 2.",
       "Vertical stretch by a factor of 4 only."
-    ]
+    ],
+    "question": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilations that transform this line into \\\\(\\frac{x}{4} + \\frac{y}{2} = 3\\\\)."
   },
   {
     "id": "y11a-5D-new-4c",
@@ -6381,7 +6401,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical stretch by a factor of 5.",
       "Horizontal compression by a factor of 1/5.",
       "Vertical compression by a factor of 1/5."
-    ]
+    ],
+    "question": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilation that transforms this line into \\\\(5x + y = 3\\\\)."
   },
   {
     "id": "y11a-5D-new-5a",
@@ -6420,7 +6441,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{4}\\\\)",
       "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{2}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "The circle \\\\((x - 4)^2 + y^2 = 9\\\\) is dilated from the origin by a factor of \\\\(\\frac{1}{2}\\\\) in both the horizontal and vertical directions. Write down the new equation of the shape."
   },
   {
     "id": "y11a-5D-new-5b",
@@ -6459,7 +6481,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{2\\\\sqrt{5}}{x}\\\\)",
       "\\\\(y = \\\\frac{2}{x}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "The hyperbola \\\\(y = \\frac{2}{x}\\\\) is enlarged from the origin by a factor of \\\\(\\sqrt{5}\\\\) in both directions. Write down the new equation of the hyperbola."
   },
   {
     "id": "y11a-5D-new-6a",
@@ -6911,7 +6934,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Yes, the order completely changes the final equation.",
       "Only if the dilation factors are negative.",
       "No, the order does not matter."
-    ]
+    ],
+    "question": "Compare your final equations in the previous two questions. Does the order of applying a horizontal dilation and a vertical dilation change the final result?"
   },
   {
     "id": "y11a-5D-new-8a",
@@ -7191,7 +7215,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical dilations preserve symmetry, but horizontal dilations do not.",
       "Horizontal dilations preserve symmetry, but vertical dilations do not.",
       "Dilations preserve both even and odd symmetries."
-    ]
+    ],
+    "question": "Based on the previous examples, what can you conclude about dilations and symmetry?"
   },
   {
     "id": "y11a-5D-new-9a",
@@ -7899,7 +7924,8 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(\\\\text{Horizontal stretch by a factor of } 3\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{27}\\\\)",
       "\\\\(\\\\text{Horizontal stretch by a factor of } 27\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{3}\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "Give two possible interpretations of transforming \\\\(y = x^3\\\\) to get the graph of \\\\(y = \\frac{1}{27}x^3\\\\), then graph both functions on the same number plane."
   },
   {
     "id": "y11a-5D-new-12a",
@@ -7937,7 +7963,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Horizontal compression by a factor of 1/5.",
       "Horizontal stretch by a factor of 5.",
       "Vertical compression by a factor of 1/5."
-    ]
+    ],
+    "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = x^2 - 4x\\\\) and \\\\(y = 5x^2 - 20x\\\\)"
   },
   {
     "id": "y11a-5D-new-12b",
@@ -7975,7 +8002,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Horizontal compression by a factor of 1/4.",
       "Vertical stretch by a factor of 4.",
       "Vertical compression by a factor of 1/4."
-    ]
+    ],
+    "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x - 3}\\\\) and \\\\(y = \\frac{1}{4x - 3}\\\\)"
   },
   {
     "id": "y11a-5D-new-12c",
@@ -8013,7 +8041,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical compression by a factor of 1/3.",
       "Vertical stretch by a factor of 3.",
       "Horizontal compression by a factor of 1/3."
-    ]
+    ],
+    "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = 4^x\\\\) and \\\\(y = 4^{x/3}\\\\)"
   },
   {
     "id": "y11a-5D-new-12d",
@@ -8051,7 +8080,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Horizontal stretch by a factor of 6.",
       "Vertical stretch by a factor of 6.",
       "Horizontal compression by a factor of 1/6."
-    ]
+    ],
+    "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x + 5}\\\\) and \\\\(y = \\frac{6}{x + 5}\\\\)"
   },
   {
     "id": "y11a-5D-new-13",
@@ -8595,11 +8625,16 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-16",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Show algebraically that the equation \\\\(y = mx\\\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin.",
-    "a": "Proof provided in solution steps.",
-    "opts": [],
+    "a": 1,
+    "opts": [
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(ky = m(kx)\\\\), which simplifies to \\\\(y = mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (x/k, y/k)\\\\), the equation becomes \\\\(y/k = m(x/k)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, y/k)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\)."
+    ],
     "h": "An enlargement by a factor of \\\\(k\\\\) from the origin replaces \\\\(x\\\\) with \\\\(x/k\\\\) and \\\\(y\\\\) with \\\\(y/k\\\\).",
     "s": "Let the enlargement factor be \\\\(k\\\\). The transformation maps \\\\((x,y) \\to (kx, ky)\\\\). To find the new equation, we replace \\\\(x\\\\) with \\\\(\\frac{x}{k}\\\\) and \\\\(y\\\\) with \\\\(\\frac{y}{k}\\\\). \\nSubstituting these into \\\\(y = mx\\\\): \\n\\\\(\\frac{y}{k} = m(\\frac{x}{k})\\\\). \\nMultiplying both sides by \\\\(k\\\\) gives: \\n\\\\(y = mx\\\\). \\nThe equation remains completely unchanged.",
     "solutionSteps": [
@@ -8616,7 +8651,15 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "Let the enlargement factor be \\(k\\). The transformation maps \\((x,y) \\to (kx, ky)\\). To find the new equation, we replace \\(x\\) with \\(\\frac{x}{k}\\) and \\(y\\) with \\(\\frac{y}{k}\\). \\nSubstituting these into \\(y = mx\\): \\n\\(\\frac{y}{k} = m(\\frac{x}{k})\\). \\nMultiplying both sides by \\(k\\) gives: \\n\\(y = mx\\). \\nThe equation remains completely unchanged."
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "options": [
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, ky)\\\\), the equation becomes \\\\(ky = m(kx)\\\\), which simplifies to \\\\(y = mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (x/k, y/k)\\\\), the equation becomes \\\\(y/k = m(x/k)\\\\), which simplifies to \\\\(y = k^2 mx\\\\).",
+      "\\\\(\\\\text{Under enlargement } (x, y) \\\\to (kx, y/k)\\\\), the equation becomes \\\\(y = \\\\frac{m}{k^2} x\\\\)."
+    ],
+    "answer": null,
+    "question": "Show algebraically that the equation \\\\(y = mx\\\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin."
   },
   {
     "id": "y11a-5D-new-17a",
@@ -8654,7 +8697,8 @@ export const CH5_QUESTIONS_Y11A = [
       "(x/2)^2 + (y/5)^2 = 1",
       "(x/5)^2 + (y/2)^2 = 1",
       "(5x)^2 + (2y)^2 = 1"
-    ]
+    ],
+    "question": "The unit circle \\\\(x^2 + y^2 = 1\\\\) is transformed into an ellipse centered at the origin, with \\\\(x\\\\)-intercepts at \\\\(\\pm 5\\\\) and \\\\(y\\\\)-intercepts at \\\\(\\pm 2\\\\). Identify the correct equation of this transformed graph."
   },
   {
     "id": "y11a-5D-new-17b",
@@ -8692,7 +8736,8 @@ export const CH5_QUESTIONS_Y11A = [
       "y = -4^(3x)",
       "y = 4^(-3x)",
       "y = 3(-4^x)"
-    ]
+    ],
+    "question": "The function \\\\(y = 4^x\\\\) is transformed by dilations to pass through \\\\((0, -3)\\\\) and \\\\((1, -12)\\\\). Identify the correct equation of this transformed graph."
   },
   {
     "id": "y11a-5D-new-17c",
@@ -8730,17 +8775,23 @@ export const CH5_QUESTIONS_Y11A = [
       "y = 4x^2 - 9",
       "y = (3x/2)^2 - 9",
       "y = 9x^2 - 9"
-    ]
+    ],
+    "question": "The function \\\\(y = x^2 - 9\\\\) is transformed to have its \\\\(x\\\\)-intercepts at \\\\(\\pm 2\\\\) while maintaining its vertex at \\\\((0, -9)\\\\). Identify the correct equation of this transformed graph."
   },
   {
     "id": "y11a-5D-new-18",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Explain the gradient-intercept formula \\\\(y = mx + b\\\\) for a straight line in terms of a dilation of the line \\\\(y = x + b\\\\).",
-    "a": "See solution steps.",
-    "opts": [],
+    "a": 2,
+    "opts": [
+      "\\\\(\\\\text{A vertical dilation of } y = x + b \\\\text{ by a factor of } m \\\\text{ yields } y = m(x) + b\\\\).",
+      "\\\\(\\\\text{A horizontal dilation of } y = x + b \\\\text{ by a factor of } m \\\\text{ yields } y = mx + mb\\\\).",
+      "\\\\(\\\\text{A horizontal dilation of } y = x + b \\\\text{ by a factor of } \\\\frac{1}{m} \\\\text{ yields } y = m(x) + b\\\\).",
+      "\\\\(\\\\text{A vertical dilation of } y = x + b \\\\text{ by a factor of } \\\\frac{1}{m} \\\\text{ yields } y = \\\\frac{x}{m} + b\\\\)."
+    ],
     "h": "How do you transform \\\\(x\\\\) to get \\\\(mx\\\\)?",
     "s": "The equation \\\\(y = x + b\\\\) has a gradient of 1. By applying a horizontal dilation (compression) by a factor of \\\\(\\frac{1}{m}\\\\), we replace \\\\(x\\\\) with \\\\(\\frac{x}{1/m} = mx\\\\). The equation becomes \\\\(y = mx + b\\\\). Thus, any line \\\\(y=mx+b\\\\) can be viewed as a horizontal stretch/compression of the line \\\\(y=x+b\\\\).",
     "solutionSteps": [
@@ -8757,7 +8808,15 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "The equation \\(y = x + b\\) has a gradient of 1. By applying a horizontal dilation (compression) by a factor of \\(\\frac{1}{m}\\), we replace \\(x\\) with \\(\\frac{x}{1/m} = mx\\). The equation becomes \\(y = mx + b\\). Thus, any line \\(y=mx+b\\) can be viewed as a horizontal stretch/compression of the line \\(y=x+b\\)."
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "options": [
+      "\\\\(\\\\text{A vertical dilation of } y = x + b \\\\text{ by a factor of } m \\\\text{ yields } y = m(x) + b\\\\).",
+      "\\\\(\\\\text{A horizontal dilation of } y = x + b \\\\text{ by a factor of } m \\\\text{ yields } y = mx + mb\\\\).",
+      "\\\\(\\\\text{A horizontal dilation of } y = x + b \\\\text{ by a factor of } \\\\frac{1}{m} \\\\text{ yields } y = m(x) + b\\\\).",
+      "\\\\(\\\\text{A vertical dilation of } y = x + b \\\\text{ by a factor of } \\\\frac{1}{m} \\\\text{ yields } y = \\\\frac{x}{m} + b\\\\)."
+    ],
+    "answer": null,
+    "question": "Explain the gradient-intercept formula \\\\(y = mx + b\\\\) for a straight line in terms of a dilation of the line \\\\(y = x + b\\\\)."
   },
   {
     "id": "y11a-5D-new-19a-i",
@@ -8795,7 +8854,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Shift left by 2, OR vertical stretch by 16.",
       "Shift left by 2, OR horizontal stretch by 2.",
       "Shift right by 2, OR vertical compression by 16."
-    ]
+    ],
+    "question": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = 4^x\\\\) \\n2) \\\\(y = 4^{x+2}\\\\)"
   },
   {
     "id": "y11a-5D-new-19a-ii",
@@ -8833,7 +8893,8 @@ export const CH5_QUESTIONS_Y11A = [
       "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
       "Vertical stretch by k^2, OR horizontal stretch by k^2.",
       "Vertical stretch by k, OR horizontal stretch by k."
-    ]
+    ],
+    "question": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = \\frac{3}{x}\\\\) \\n2) \\\\(y = \\frac{3k^2}{x}\\\\)"
   },
   {
     "id": "y11a-5D-new-19a-iii",
@@ -8871,17 +8932,23 @@ export const CH5_QUESTIONS_Y11A = [
       "Shift up by 4, OR vertical stretch by -1.",
       "Shift down by 8, OR reflection across the x-axis.",
       "Shift down by 4, OR horizontal stretch by -1."
-    ]
+    ],
+    "question": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(x^2 + (y-4)^2 = 1\\\\) \\n2) \\\\(x^2 + (y+4)^2 = 1\\\\)"
   },
   {
     "id": "y11a-5D-new-19b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Investigate and provide another example of a combination of curves and transformations with similar ambiguity (where two distinct transformations yield the exact same result).",
-    "a": "Various possible answers.",
-    "opts": [],
+    "a": 0,
+    "opts": [
+      "\\\\(y = x^2\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{\\\\sqrt{a}}\\\\))",
+      "\\\\(y = e^x\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(a\\\\))",
+      "\\\\(y = \\\\sin(x)\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{a}\\\\))",
+      "\\\\(y = x^3\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{\\\\sqrt{a}}\\\\))"
+    ],
     "h": "Think about parabolas: \\\\(y = x^2\\\\) transformed to \\\\(y = 4x^2\\\\).",
     "s": "Consider \\\\(y = x^2\\\\) and \\\\(y = 9x^2\\\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\\\(\\frac{1}{3}\\\\), since \\\\(y = (3x)^2 = 9x^2\\\\).",
     "solutionSteps": [
@@ -8898,7 +8965,15 @@ export const CH5_QUESTIONS_Y11A = [
         "workingOut": "Consider \\(y = x^2\\) and \\(y = 9x^2\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\(\\frac{1}{3}\\), since \\(y = (3x)^2 = 9x^2\\)."
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "options": [
+      "\\\\(y = x^2\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{\\\\sqrt{a}}\\\\))",
+      "\\\\(y = e^x\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(a\\\\))",
+      "\\\\(y = \\\\sin(x)\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{a}\\\\))",
+      "\\\\(y = x^3\\\\) (vertical dilation by \\\\(a\\\\) is equivalent to horizontal dilation by \\\\(\\\\frac{1}{\\\\sqrt{a}}\\\\))"
+    ],
+    "answer": null,
+    "question": "Investigate and provide another example of a combination of curves and transformations with similar ambiguity (where two distinct transformations yield the exact same result)."
   },
   {
     "id": "y11a-5D-new-20",
@@ -8937,7 +9012,8 @@ export const CH5_QUESTIONS_Y11A = [
       "A vertical dilation by a factor of \\\\(k^2\\\\)",
       "A vertical dilation by a factor of \\\\(2k\\\\)"
     ],
-    "answer": null
+    "answer": null,
+    "question": "The parabola \\\\(y = x^2\\\\) is stretched horizontally by a factor of \\\\(k\\\\). Clearly, a subsequent horizontal stretch by a factor of \\\\(\\frac{1}{k}\\\\) will restore the original parabola. What *vertical* stretch will produce a new parabola that appears identical to the original parabola \\\\(y = x^2\\\\)?"
   },
   {
     "id": "y11a-5E-new-1a",
