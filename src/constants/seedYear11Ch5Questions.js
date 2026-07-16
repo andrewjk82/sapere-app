@@ -5567,7 +5567,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated horizontally by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(y = 3x^2\\\\)",
@@ -5599,7 +5599,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{1}{3}x^2\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated horizontally by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1b",
@@ -5607,7 +5607,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated **vertically** by a factor of \\\\(4\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated vertically by a factor of \\\\(4\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(y = 3^{4x}\\\\)",
@@ -5639,7 +5639,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{1}{4} \\\\times 3^x\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated **vertically** by a factor of \\\\(4\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated vertically by a factor of \\\\(4\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1c",
@@ -5647,7 +5647,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated **vertically** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated vertically by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(y = 9x^2 - 2\\\\)",
@@ -5679,7 +5679,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{1}{3}x^2 - \\\\frac{2}{3}\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated **vertically** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated vertically by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1d",
@@ -5687,7 +5687,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated horizontally by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
     "a": 3,
     "opts": [
       "\\\\(y = \\\\frac{2}{x} + 3\\\\)",
@@ -5719,7 +5719,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\frac{6}{x}\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated horizontally by a factor of \\\\(3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1e",
@@ -5727,7 +5727,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated **vertically** by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated vertically by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(x^2 + \\\\frac{1}{4}y^2 = 9\\\\)",
@@ -5759,7 +5759,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(4x^2 + y^2 = 9\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated **vertically** by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated vertically by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1f",
@@ -5767,7 +5767,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated horizontally by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(y = \\\\sqrt{2 - \\\\frac{x}{2}}\\\\)",
@@ -5799,7 +5799,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\sqrt{2 + 2x}\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated horizontally by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1g",
@@ -5807,7 +5807,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated horizontally by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image.",
     "a": 2,
     "opts": [
       "\\\\(y = \\\\sqrt{16 - \\\\frac{x^2}{16}}\\\\)",
@@ -5839,7 +5839,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\sqrt{16 - 4x^2}\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated horizontally by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-1h",
@@ -5847,7 +5847,7 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image.",
+    "q": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated vertically by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image.",
     "a": 0,
     "opts": [
       "\\\\(y = -3\\\\sqrt{x}\\\\)",
@@ -5879,7 +5879,7 @@ export const CH5_QUESTIONS_Y11A = [
       "\\\\(y = \\\\sqrt{-3x}\\\\)"
     ],
     "answer": null,
-    "question": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image."
+    "question": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated vertically by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image."
   },
   {
     "id": "y11a-5D-new-2a-i",
