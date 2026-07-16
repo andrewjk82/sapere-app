@@ -7934,12 +7934,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = x^2 - 4x\\\\) and \\\\(y = 5x^2 - 20x\\\\)",
-    "a": 0,
+    "a": 2,
     "opts": [
-      "Vertical stretch by a factor of 5.",
-      "Horizontal compression by a factor of 1/5.",
       "Horizontal stretch by a factor of 5.",
-      "Vertical compression by a factor of 1/5."
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{5}\\\\).",
+      "Vertical stretch by a factor of 5.",
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{5}\\\\)."
     ],
     "h": "Factor out the 5 from the second equation.",
     "s": "The second equation is \\\\(y = 5(x^2 - 4x)\\\\), which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5.",
@@ -7959,10 +7959,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "Vertical stretch by a factor of 5.",
-      "Horizontal compression by a factor of 1/5.",
       "Horizontal stretch by a factor of 5.",
-      "Vertical compression by a factor of 1/5."
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{5}\\\\).",
+      "Vertical stretch by a factor of 5.",
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{5}\\\\)."
     ],
     "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = x^2 - 4x\\\\) and \\\\(y = 5x^2 - 20x\\\\)"
   },
@@ -7973,12 +7973,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x - 3}\\\\) and \\\\(y = \\frac{1}{4x - 3}\\\\)",
-    "a": 1,
+    "a": 0,
     "opts": [
-      "Horizontal stretch by a factor of 4.",
-      "Horizontal compression by a factor of 1/4.",
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{4}\\\\).",
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{4}\\\\).",
       "Vertical stretch by a factor of 4.",
-      "Vertical compression by a factor of 1/4."
+      "Horizontal stretch by a factor of 4."
     ],
     "h": "The \\\\(x\\\\) in the first equation has been replaced by \\\\(4x\\\\).",
     "s": "Replacing \\\\(x\\\\) with \\\\(4x\\\\) (which is \\\\(x / 0.25\\\\)) means the graph is horizontally compressed by a factor of \\\\(\\frac{1}{4}\\\\).",
@@ -7998,10 +7998,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "Horizontal stretch by a factor of 4.",
-      "Horizontal compression by a factor of 1/4.",
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{4}\\\\).",
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{4}\\\\).",
       "Vertical stretch by a factor of 4.",
-      "Vertical compression by a factor of 1/4."
+      "Horizontal stretch by a factor of 4."
     ],
     "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x - 3}\\\\) and \\\\(y = \\frac{1}{4x - 3}\\\\)"
   },
@@ -8012,12 +8012,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = 4^x\\\\) and \\\\(y = 4^{x/3}\\\\)",
-    "a": 0,
+    "a": 1,
     "opts": [
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{3}\\\\).",
       "Horizontal stretch by a factor of 3.",
-      "Vertical compression by a factor of 1/3.",
-      "Vertical stretch by a factor of 3.",
-      "Horizontal compression by a factor of 1/3."
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{3}\\\\).",
+      "Vertical stretch by a factor of 3."
     ],
     "h": "The exponent \\\\(x\\\\) has been replaced by \\\\(\\frac{x}{3}\\\\).",
     "s": "Replacing \\\\(x\\\\) with \\\\(\\frac{x}{3}\\\\) represents a horizontal stretch by a factor of 3.",
@@ -8037,10 +8037,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{3}\\\\).",
       "Horizontal stretch by a factor of 3.",
-      "Vertical compression by a factor of 1/3.",
-      "Vertical stretch by a factor of 3.",
-      "Horizontal compression by a factor of 1/3."
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{3}\\\\).",
+      "Vertical stretch by a factor of 3."
     ],
     "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = 4^x\\\\) and \\\\(y = 4^{x/3}\\\\)"
   },
@@ -8051,12 +8051,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x + 5}\\\\) and \\\\(y = \\frac{6}{x + 5}\\\\)",
-    "a": 2,
+    "a": 1,
     "opts": [
-      "Vertical compression by a factor of 1/6.",
-      "Horizontal stretch by a factor of 6.",
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{6}\\\\).",
       "Vertical stretch by a factor of 6.",
-      "Horizontal compression by a factor of 1/6."
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{6}\\\\).",
+      "Horizontal stretch by a factor of 6."
     ],
     "h": "The entire right hand side has been multiplied by 6.",
     "s": "The second equation is \\\\(6 \\times \\frac{1}{x+5}\\\\), which represents a vertical stretch by a factor of 6.",
@@ -8076,10 +8076,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "Vertical compression by a factor of 1/6.",
-      "Horizontal stretch by a factor of 6.",
+      "Horizontal compression by a factor of \\\\(\\\\frac{1}{6}\\\\).",
       "Vertical stretch by a factor of 6.",
-      "Horizontal compression by a factor of 1/6."
+      "Vertical compression by a factor of \\\\(\\\\frac{1}{6}\\\\).",
+      "Horizontal stretch by a factor of 6."
     ],
     "question": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x + 5}\\\\) and \\\\(y = \\frac{6}{x + 5}\\\\)"
   },
@@ -8471,8 +8471,8 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multipart",
     "difficulty": "medium",
-    "q": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-t/20}\\).",
-    "question": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-t/20}\\).",
+    "q": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-\\frac{t}{20}}\\).",
+    "question": "The mass \\(M\\) grams of a certain radioactive substance after \\(t\\) years is modelled by \\(M = 5 \\times 2^{-\\frac{t}{20}}\\).",
     "opts": [],
     "options": [],
     "a": null,
@@ -8501,8 +8501,8 @@ export const CH5_QUESTIONS_Y11A = [
         "solution": "At \\(t = 0\\): \\(M = 5 \\times 2^{0} = 5 \\times 1 = 5\\) grams.",
         "solutionSteps": [
           {
-            "explanation": "The initial mass is the value of \\(M\\) at time \\(t = 0\\). Substitute \\(t = 0\\) into the formula \\(M = 5 \\times 2^{-t/20}\\).",
-            "workingOut": "\\(M = 5 \\times 2^{-0/20} = 5 \\times 2^0\\)"
+            "explanation": "The initial mass is the value of \\(M\\) at time \\(t = 0\\). Substitute \\(t = 0\\) into the formula \\(M = 5 \\times 2^{-\\frac{t}{20}}\\).",
+            "workingOut": "\\(M = 5 \\times 2^{-\\frac{0}{20}} = 5 \\times 2^0\\)"
           },
           {
             "explanation": "Since any number to the power 0 equals 1: \\(2^0 = 1\\).",
@@ -8537,11 +8537,11 @@ export const CH5_QUESTIONS_Y11A = [
         "solutionSteps": [
           {
             "explanation": "The half-life is the time \\(t\\) when \\(M\\) equals half its initial value. Half of 5 is 2.5, so set \\(M = 2.5\\).",
-            "workingOut": "\\(2.5 = 5 \\times 2^{-t/20}\\)"
+            "workingOut": "\\(2.5 = 5 \\times 2^{-\\frac{t}{20}}\\)"
           },
           {
-            "explanation": "Divide both sides by 5: \\(\\frac{1}{2} = 2^{-t/20}\\). Since \\(\\frac{1}{2} = 2^{-1}\\), we equate exponents: \\(-1 = -\\frac{t}{20}\\).",
-            "workingOut": "\\(2^{-1} = 2^{-t/20} \\implies -1 = -\\frac{t}{20}\\)"
+            "explanation": "Divide both sides by 5: \\(\\frac{1}{2} = 2^{-\\frac{t}{20}}\\). Since \\(\\frac{1}{2} = 2^{-1}\\), we equate exponents: \\(-1 = -\\frac{t}{20}\\).",
+            "workingOut": "\\(2^{-1} = 2^{-\\frac{t}{20}} \\implies -1 = -\\frac{t}{20}\\)"
           },
           {
             "explanation": "Multiply both sides by \\(-20\\): \\(t = 20\\) years. The half-life is 20 years.",
@@ -8555,13 +8555,13 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "Suppose the initial mass is doubled. This corresponds to which dilation, and what is the new equation for \\(M\\)?",
         "opts": [
           "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
-          "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
+          "Vertical dilation by 2: \\(M = 10 \\times 2^{-\\frac{t}{20}}\\)",
           "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
           "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
         ],
         "options": [
           "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
-          "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
+          "Vertical dilation by 2: \\(M = 10 \\times 2^{-\\frac{t}{20}}\\)",
           "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
           "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
         ],
@@ -8572,22 +8572,22 @@ export const CH5_QUESTIONS_Y11A = [
         "solutionSteps": [
           {
             "explanation": "Doubling the initial mass means every \\(M\\)-value doubles. Multiplying the entire function by 2 is a vertical dilation by factor 2.",
-            "workingOut": "\\(M_{\\text{new}} = 2 \\times M = 2 \\times 5 \\times 2^{-t/20}\\)"
+            "workingOut": "\\(M_{\\text{new}} = 2 \\times M = 2 \\times 5 \\times 2^{-\\frac{t}{20}}\\)"
           },
           {
             "explanation": "Simplify: \\(2 \\times 5 = 10\\).",
-            "workingOut": "\\(M = 10 \\times 2^{-t/20}\\)"
+            "workingOut": "\\(M = 10 \\times 2^{-\\frac{t}{20}}\\)"
           },
           {
-            "explanation": "The new equation is \\(M = 10 \\times 2^{-t/20}\\). The initial mass is now 10 grams instead of 5.",
-            "workingOut": "\\(M = 10 \\times 2^{-t/20}\\)"
+            "explanation": "The new equation is \\(M = 10 \\times 2^{-\\frac{t}{20}}\\). The initial mass is now 10 grams instead of 5.",
+            "workingOut": "\\(M = 10 \\times 2^{-\\frac{t}{20}}\\)"
           }
         ]
       },
       {
         "id": "y11a-5D-new-15c-ii",
         "type": "multiple_choice",
-        "question": "Using the new equation \\(M = 10 \\times 2^{-t/20}\\), what is the half-life of the doubled substance?",
+        "question": "Using the new equation \\(M = 10 \\times 2^{-\\frac{t}{20}}\\), what is the half-life of the doubled substance?",
         "opts": [
           "\\(10\\) years — it halved.",
           "\\(2.5\\) years — it quartered.",
@@ -8606,12 +8606,12 @@ export const CH5_QUESTIONS_Y11A = [
         "solution": "Set \\(M = 5\\): \\(5 = 10 \\times 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\). The half-life is unchanged at 20 years.",
         "solutionSteps": [
           {
-            "explanation": "For the new equation \\(M = 10 \\times 2^{-t/20}\\), the half-life is when \\(M\\) reaches half of 10, i.e., \\(M = 5\\).",
-            "workingOut": "\\(5 = 10 \\times 2^{-t/20}\\)"
+            "explanation": "For the new equation \\(M = 10 \\times 2^{-\\frac{t}{20}}\\), the half-life is when \\(M\\) reaches half of 10, i.e., \\(M = 5\\).",
+            "workingOut": "\\(5 = 10 \\times 2^{-\\frac{t}{20}}\\)"
           },
           {
-            "explanation": "Divide both sides by 10: \\(\\frac{1}{2} = 2^{-t/20}\\), so \\(2^{-1} = 2^{-t/20}\\), giving \\(t = 20\\).",
-            "workingOut": "\\(2^{-1} = 2^{-t/20} \\implies t = 20\\)"
+            "explanation": "Divide both sides by 10: \\(\\frac{1}{2} = 2^{-\\frac{t}{20}}\\), so \\(2^{-1} = 2^{-\\frac{t}{20}}\\), giving \\(t = 20\\).",
+            "workingOut": "\\(2^{-1} = 2^{-\\frac{t}{20}} \\implies t = 20\\)"
           },
           {
             "explanation": "The half-life is still 20 years — identical to the original. A vertical dilation (scaling the mass) does not affect the rate of decay.",
@@ -8867,12 +8867,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = \\frac{3}{x}\\\\) \\n2) \\\\(y = \\frac{3k^2}{x}\\\\)",
-    "a": 1,
+    "a": 2,
     "opts": [
-      "Vertical compression by 1/k^2, OR horizontal stretch by k^2.",
-      "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
-      "Vertical stretch by k^2, OR horizontal stretch by k^2.",
-      "Vertical stretch by k, OR horizontal stretch by k."
+      "Vertical stretch by \\\\(k^2\\\\), OR horizontal stretch by \\\\(k^2\\\\).",
+      "Vertical compression by \\\\(\\\\frac{1}{k^2}\\\\), OR horizontal stretch by \\\\(k^2\\\\).",
+      "Vertical stretch by \\\\(k^2\\\\), OR horizontal compression by \\\\(\\\\frac{1}{k^2}\\\\).",
+      "Vertical stretch by \\\\(k\\\\), OR horizontal stretch by \\\\(k\\\\)."
     ],
     "h": "You can group the \\\\(k^2\\\\) with the \\\\(y\\\\) or with the \\\\(x\\\\).",
     "s": "Transformation 1: \\\\(y = k^2(\\frac{3}{x})\\\\) represents a vertical stretch by a factor of \\\\(k^2\\\\).\\nTransformation 2: \\\\(y = \\frac{3}{x/k^2}\\\\) represents a horizontal stretch (or compression) by a factor of \\\\(\\frac{1}{k^2}\\\\).",
@@ -8892,10 +8892,10 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "isNew": true,
     "options": [
-      "Vertical compression by 1/k^2, OR horizontal stretch by k^2.",
-      "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
-      "Vertical stretch by k^2, OR horizontal stretch by k^2.",
-      "Vertical stretch by k, OR horizontal stretch by k."
+      "Vertical stretch by \\\\(k^2\\\\), OR horizontal stretch by \\\\(k^2\\\\).",
+      "Vertical compression by \\\\(\\\\frac{1}{k^2}\\\\), OR horizontal stretch by \\\\(k^2\\\\).",
+      "Vertical stretch by \\\\(k^2\\\\), OR horizontal compression by \\\\(\\\\frac{1}{k^2}\\\\).",
+      "Vertical stretch by \\\\(k\\\\), OR horizontal stretch by \\\\(k\\\\)."
     ],
     "question": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = \\frac{3}{x}\\\\) \\n2) \\\\(y = \\frac{3k^2}{x}\\\\)"
   },
