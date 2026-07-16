@@ -39,14 +39,42 @@ function plane(xmin, xmax, ymin, ymax, W = 320, H = 260) {
   return { sx, sy, W, H, axes };
 }
 
-function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 80) {
-  let d = '', pen = false;
+/**
+ * Sample a curve across [x0,x1]. Points outside the y-window are clipped to the
+ * edge (not dropped mid-segment) so arms run cleanly to the frame instead of
+ * ending in mid-air. Segments that leave and re-enter start a new subpath.
+ */
+function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 100) {
+  let d = '';
+  let pen = false;
+  let prev = null; // {x,y,inside}
   for (let i = 0; i <= n; i++) {
     const x = x0 + ((x1 - x0) * i) / n;
-    const y = fn(x);
-    if (!Number.isFinite(y) || y < ymin || y > ymax) { pen = false; continue; }
-    d += `${pen ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
-    pen = true;
+    let y = fn(x);
+    if (!Number.isFinite(y)) {
+      pen = false;
+      prev = null;
+      continue;
+    }
+    const inside = y >= ymin && y <= ymax;
+    const yDraw = Math.max(ymin, Math.min(ymax, y));
+    if (inside) {
+      if (!pen && prev && !prev.inside) {
+        // re-enter: draw from clipped edge of previous to this point
+        d += `M${sx(prev.x).toFixed(1)},${sy(Math.max(ymin, Math.min(ymax, prev.y))).toFixed(1)} `;
+        d += `L${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+      } else {
+        d += `${pen ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+      }
+      pen = true;
+    } else {
+      if (pen && prev && prev.inside) {
+        // leave: draw out to the clipped edge
+        d += `L${sx(x).toFixed(1)},${sy(yDraw).toFixed(1)} `;
+      }
+      pen = false;
+    }
+    prev = { x, y, inside };
   }
   return d.trim();
 }
@@ -75,21 +103,31 @@ function wrapSvg(body, W, H) {
 }
 
 function svgBaulko13ai() {
-  const xmin = -1.2, xmax = 2.3, ymin = -2.2, ymax = 1.3;
-  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
+  // Full view so both arms of the downward parabola and the line run to the
+  // frame edges (no mid-air cut-offs). f=2x(1-x) vertex (1/2,1/2); intersects
+  // g=x-1 at x=-1/2 and x=1.
+  const xmin = -1.4;
+  const xmax = 2.6;
+  const ymin = -2.8;
+  const ymax = 1.4;
+  const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax, 340, 280);
   const f = (x) => 2 * x - 2 * x * x;
   const g = (x) => x - 1;
   let body = axes;
-  body += `<path d="${samplePath(f, -0.4, 1.9, sx, sy, ymin, ymax)}" fill="none" stroke="#6366f1" stroke-width="2.4"/>`;
-  body += `<path d="${samplePath(g, xmin, xmax, sx, sy, ymin, ymax)}" fill="none" stroke="#22c55e" stroke-width="2.4"/>`;
-  body += mark(sx, sy, 0, 0, '(0,0)', '#6366f1', 6, 14);
-  body += mark(sx, sy, 1, 0, '(1,0)', '#6366f1', 8, 14);
-  body += mark(sx, sy, 0.5, 0.5, 'V(1/2,1/2)', '#ef4444', 8, -8);
+  // Draw across the full plot window so curves reach the border cleanly.
+  body += `<path d="${samplePath(f, xmin, xmax, sx, sy, ymin, ymax, 140)}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>`;
+  body += `<path d="${samplePath(g, xmin, xmax, sx, sy, ymin, ymax, 40)}" fill="none" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round"/>`;
+  // intercepts / vertex / intersections
+  body += mark(sx, sy, 0, 0, '(0,0)', '#6366f1', 8, 14);
+  body += mark(sx, sy, 1, 0, '(1,0)', '#6366f1', 10, 14);
+  body += mark(sx, sy, 0.5, 0.5, 'V(1/2, 1/2)', '#ef4444', 8, -10);
   body += mark(sx, sy, 0, -1, '(0,-1)', '#22c55e', 8, 14);
-  body += mark(sx, sy, -0.5, -1.5, '(-1/2,-3/2)', '#f59e0b', -58, -6);
+  body += mark(sx, sy, -0.5, -1.5, '(-1/2, -3/2)', '#f59e0b', -70, -6);
+  // second intersection is also (1,0) — mark with dual colour ring via larger note
+  body += mark(sx, sy, 1, 0, '', '#f59e0b');
   body += legend([
-    { color: '#6366f1', text: 'f=2x-2x^2' },
-    { color: '#22c55e', text: 'g=x-1' },
+    { color: '#6366f1', text: 'f(x)=2x-2x²' },
+    { color: '#22c55e', text: 'g(x)=x-1' },
   ]);
   return wrapSvg(body, W, H);
 }
