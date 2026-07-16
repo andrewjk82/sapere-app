@@ -12,6 +12,35 @@ import { parseSolutionSteps } from '../../utils/solutionSteps';
 // chip ("Step 1") followed by its body. A "Next step" pill reveals the
 // next; when all steps are revealed the pill turns into a completed
 // badge. New steps fade + slide in with a small spring.
+/** True only when graphData actually carries a drawable payload. */
+const hasDrawableGraph = (gd) => {
+  if (!gd || typeof gd !== 'object') return false;
+  return !!(
+    gd.svg
+    || gd.jsxGraph
+    || gd.geometry
+    || gd.diagramSvg
+    || gd.svgSnapshot
+    || gd.diagram
+    || gd.html
+  );
+};
+
+/**
+ * Root graphData is for the question stem (or a sketch model answer).
+ * Only attach it to a solution step when:
+ *  - the step does not already own a graph, AND
+ *  - this is the last step, AND
+ *  - the stem deliberately hides the graph (sketch/draw) so the model
+ *    answer still needs to appear somewhere.
+ * Period / illustration MCQs keep the graph on the stem only.
+ */
+const stemHidesGraph = (q) => {
+  if (!q) return false;
+  if (q.type === 'graph_sketch') return true;
+  return /^(sketch|draw)\b/i.test(String(q.question || q.text || '').trim());
+};
+
 const WorkedSolutionSteps = ({ question, graphData, compact = false }) => {
   const steps = useMemo(() => parseSolutionSteps(question), [question]);
   // steps is now an array of { explanation, workingOut }
@@ -181,7 +210,17 @@ const WorkedSolutionSteps = ({ question, graphData, compact = false }) => {
                     <div style={{ width: '100%', minWidth: 0 }}>
                       <MathView
                         content={step.explanation}
-                        graphData={step.graphData || (i === totalSteps - 1 ? graphData : undefined)}
+                        graphData={
+                          hasDrawableGraph(step.graphData)
+                            ? step.graphData
+                            : (
+                              i === totalSteps - 1
+                              && stemHidesGraph(question)
+                              && hasDrawableGraph(graphData)
+                                ? graphData
+                                : undefined
+                            )
+                        }
                         style={{
                           color: '#1e1b4b',
                           fontWeight: 500,

@@ -917,9 +917,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                 <MathView content={step.workingOut} style={{ fontSize: '0.95rem', color: '#1e1b4b' }} />
                               </div>
                             )}
-                            {/* Only step-owned graphs here — never fall back to root
-                                graphData (that caused the same diagram under stem + step + MODEL GRAPH). */}
-                            {step.graphData && (
+                            {/* Only step-owned graphs. MCQ illustration graphs stay on the stem. */}
+                            {step.graphData && (step.graphData.svg || step.graphData.jsxGraph || step.graphData.geometry || step.graphData.diagramSvg || step.graphData.svgSnapshot || step.graphData.diagram || step.graphData.html) && (
                               <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
                                 <MathView
                                   content=""
@@ -943,20 +942,31 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   </div>
                 )}
 
-                {/* Root model graph only when the stem deliberately hides it
-                    (sketch/draw) AND no solution step already embeds a graph.
-                    MCQ stem diagrams must not be duplicated here. */}
-                {q?.graphData
-                  && Array.isArray(q?.solutionSteps)
-                  && q.solutionSteps.length > 0
-                  && !q.solutionSteps.some((s) => s?.graphData)
-                  && (q?.type === 'graph_sketch'
-                    || /^(sketch|draw)\b/i.test(String(q?.question || '').trim())) && (
-                  <div style={{ padding: '16px 20px', borderRadius: '20px', background: '#fff', border: '1px solid #e0e7ff' }}>
-                    <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Model graph</div>
-                    <MathView content="" graphData={q.graphData} style={{ minHeight: (q.graphData?.geometry || q.graphData?.svg || q.graphData?.svgSnapshot || q.graphData?.diagramSvg || q.graphData?.jsxGraph) ? 'auto' : '240px' }} />
-                  </div>
-                )}
+                {/* MODEL GRAPH: only for sketch/draw prompts whose stem hides the
+                    answer graph and whose steps do not already embed one.
+                    Period/illustration MCQs (root graph on stem) never get this block. */}
+                {(() => {
+                  const stemIsSketch = q?.type === 'graph_sketch'
+                    || /^(sketch|draw)\b/i.test(String(q?.question || '').trim());
+                  const rootHasGraph = !!(q?.graphData && (
+                    q.graphData.svg || q.graphData.jsxGraph || q.graphData.geometry
+                    || q.graphData.diagramSvg || q.graphData.svgSnapshot
+                    || q.graphData.diagram || q.graphData.html
+                  ));
+                  const stepHasGraph = Array.isArray(q?.solutionSteps)
+                    && q.solutionSteps.some((s) => s?.graphData && (
+                      s.graphData.svg || s.graphData.jsxGraph || s.graphData.geometry
+                      || s.graphData.diagramSvg || s.graphData.svgSnapshot
+                      || s.graphData.diagram || s.graphData.html
+                    ));
+                  if (!stemIsSketch || !rootHasGraph || stepHasGraph) return null;
+                  return (
+                    <div style={{ padding: '16px 20px', borderRadius: '20px', background: '#fff', border: '1px solid #e0e7ff' }}>
+                      <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Model graph</div>
+                      <MathView content="" graphData={q.graphData} style={{ minHeight: 'auto' }} />
+                    </div>
+                  );
+                })()}
 
                 {/* Solution preview (if any) */}
                 {q?.solution && !(Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0) && (
