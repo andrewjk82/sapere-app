@@ -910,15 +910,35 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                 <MathView content={step.workingOut} style={{ fontSize: '0.95rem', color: '#1e1b4b' }} />
                               </div>
                             )}
-                            {step.graphData && (
+                            {(step.graphData || (si === q.solutionSteps.length - 1 && q.graphData)) && (
                               <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
-                                <MathView content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '240px' }} />
+                                <MathView
+                                  content=""
+                                  graphData={step.graphData || q.graphData}
+                                  style={{
+                                    minHeight: ((step.graphData || q.graphData)?.geometry
+                                      || (step.graphData || q.graphData)?.svg
+                                      || (step.graphData || q.graphData)?.svgSnapshot
+                                      || (step.graphData || q.graphData)?.diagramSvg)
+                                      ? 'auto'
+                                      : '240px',
+                                  }}
+                                />
                               </div>
                             )}
                           </div>
                         </div>
                       ))}
                     </div>
+                  </div>
+                )}
+
+                {/* Root model graph when steps exist but none embed graphData */}
+                {q?.graphData && Array.isArray(q?.solutionSteps) && q.solutionSteps.length > 0
+                  && !q.solutionSteps.some((s) => s?.graphData) && (
+                  <div style={{ padding: '16px 20px', borderRadius: '20px', background: '#fff', border: '1px solid #e0e7ff' }}>
+                    <div style={{ fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '8px' }}>Model graph</div>
+                    <MathView content="" graphData={q.graphData} style={{ minHeight: (q.graphData?.geometry || q.graphData?.svg || q.graphData?.svgSnapshot || q.graphData?.diagramSvg) ? 'auto' : '240px' }} />
                   </div>
                 )}
 

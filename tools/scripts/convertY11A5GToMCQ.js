@@ -346,34 +346,127 @@ const SEED_MCQ = [
 const SVG_STYLE =
   'display:block;margin:0 auto;background:#fafafa;border:1px solid #e2e8f0;border-radius:8px;';
 
+function plane(xmin, xmax, ymin, ymax, W = 300, H = 240) {
+  const padL = 36,
+    padR = 18,
+    padT = 22,
+    padB = 28;
+  const sx = (x) => padL + ((x - xmin) / (xmax - xmin)) * (W - padL - padR);
+  const sy = (y) => padT + ((ymax - y) / (ymax - ymin)) * (H - padT - padB);
+  let axesSvg = '';
+  if (ymin <= 0 && ymax >= 0) {
+    const oy = sy(0);
+    axesSvg += `<line x1="${padL}" y1="${oy.toFixed(1)}" x2="${W - padR}" y2="${oy.toFixed(1)}" stroke="#64748b" stroke-width="1.5"/>`;
+    axesSvg += `<text x="${W - padR - 4}" y="${(oy + 14).toFixed(1)}" font-size="12" fill="#64748b" font-weight="bold">x</text>`;
+  }
+  if (xmin <= 0 && xmax >= 0) {
+    const ox = sx(0);
+    axesSvg += `<line x1="${ox.toFixed(1)}" y1="${padT}" x2="${ox.toFixed(1)}" y2="${H - padB}" stroke="#64748b" stroke-width="1.5"/>`;
+    axesSvg += `<text x="${(ox + 6).toFixed(1)}" y="${padT + 4}" font-size="12" fill="#64748b" font-weight="bold">y</text>`;
+  }
+  return { sx, sy, padL, padR, padT, padB, W, H, axesSvg };
+}
+
 function parabolaSvg(vx, vy, label) {
-  const W = 300,
-    H = 240;
   const xmin = vx - 4,
     xmax = vx + 4,
     ymin = Math.min(vy - 2, -2),
     ymax = Math.max(vy + 8, 4);
-  const padL = 28,
-    padR = 18,
-    padT = 18,
-    padB = 24;
-  const sx = (x) => padL + ((x - xmin) / (xmax - xmin)) * (W - padL - padR);
-  const sy = (y) => padT + ((ymax - y) / (ymax - ymin)) * (H - padT - padB);
-  const ox = sx(0),
-    oy = sy(0);
+  const { sx, sy, W, H, axesSvg } = plane(xmin, xmax, ymin, ymax);
   let d = '';
-  for (let i = 0; i <= 40; i++) {
-    const x = xmin + ((xmax - xmin) * i) / 40;
+  for (let i = 0; i <= 50; i++) {
+    const x = xmin + ((xmax - xmin) * i) / 50;
     const y = (x - vx) * (x - vx) + vy;
     d += `${i === 0 ? 'M' : 'L'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
-  <line x1="${padL}" y1="${oy.toFixed(1)}" x2="${W - padR}" y2="${oy.toFixed(1)}" stroke="#64748b" stroke-width="1.5"/>
-  <line x1="${ox.toFixed(1)}" y1="${padT}" x2="${ox.toFixed(1)}" y2="${H - padB}" stroke="#64748b" stroke-width="1.5"/>
+  ${axesSvg}
   <path d="${d.trim()}" fill="none" stroke="#6366f1" stroke-width="2.5"/>
   <circle cx="${sx(vx).toFixed(1)}" cy="${sy(vy).toFixed(1)}" r="3.5" fill="#ef4444"/>
   <text x="${sx(vx) + 6}" y="${sy(vy) - 6}" font-size="11" fill="#ef4444" font-weight="bold">(${vx},${vy})</text>
   <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">${label}</text>
+</svg>`;
+}
+
+/** y = -(x+1)^3 — inflection (-1, 0), decreasing cubic */
+function cubicSvg() {
+  const xmin = -3.5,
+    xmax = 1.5,
+    ymin = -3.5,
+    ymax = 3.5;
+  const { sx, sy, W, H, axesSvg } = plane(xmin, xmax, ymin, ymax);
+  let d = '';
+  for (let i = 0; i <= 60; i++) {
+    const x = xmin + ((xmax - xmin) * i) / 60;
+    const y = -Math.pow(x + 1, 3);
+    if (y < ymin - 0.5 || y > ymax + 0.5) continue;
+    d += `${d ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(Math.max(ymin, Math.min(ymax, y))).toFixed(1)} `;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
+  ${axesSvg}
+  <path d="${d.trim()}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="${sx(-1).toFixed(1)}" cy="${sy(0).toFixed(1)}" r="3.5" fill="#ef4444"/>
+  <text x="${sx(-1) + 8}" y="${sy(0) - 8}" font-size="11" fill="#ef4444" font-weight="bold">(-1, 0)</text>
+  <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">y = -(x+1)³</text>
+</svg>`;
+}
+
+/** y = 1/(x-3)+4 with asymptotes */
+function hyperbolaSvg() {
+  const xmin = -1,
+    xmax = 8,
+    ymin = -1,
+    ymax = 9;
+  const { sx, sy, padL, padR, padT, padB, W, H, axesSvg } = plane(xmin, xmax, ymin, ymax);
+  const asx = sx(3),
+    asy = sy(4);
+  const branch = (x0, x1) => {
+    let d = '';
+    for (let i = 0; i <= 50; i++) {
+      const x = x0 + ((x1 - x0) * i) / 50;
+      if (Math.abs(x - 3) < 0.12) continue;
+      const y = 1 / (x - 3) + 4;
+      if (y < ymin - 1 || y > ymax + 1) continue;
+      d += `${d ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(Math.max(ymin, Math.min(ymax, y))).toFixed(1)} `;
+    }
+    return d.trim();
+  };
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
+  ${axesSvg}
+  <line x1="${asx.toFixed(1)}" y1="${padT}" x2="${asx.toFixed(1)}" y2="${H - padB}" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <line x1="${padL}" y1="${asy.toFixed(1)}" x2="${W - padR}" y2="${asy.toFixed(1)}" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <path d="${branch(xmin, 2.85)}" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  <path d="${branch(3.15, xmax)}" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  <text x="${asx + 4}" y="${padT + 12}" font-size="10" fill="#64748b">x=3</text>
+  <text x="${W - padR - 40}" y="${asy - 6}" font-size="10" fill="#64748b">y=4</text>
+  <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">y = 1/(x−3)+4</text>
+</svg>`;
+}
+
+/** y = sqrt(9-(x-2)^2) upper semicircle centre (2,0) r=3 */
+function semicircleSvg() {
+  const xmin = -2,
+    xmax = 6,
+    ymin = -1.5,
+    ymax = 4.5;
+  const { sx, sy, W, H, axesSvg } = plane(xmin, xmax, ymin, ymax);
+  let d = '';
+  for (let i = 0; i <= 60; i++) {
+    const t = Math.PI - (Math.PI * i) / 60;
+    const x = 2 + 3 * Math.cos(t);
+    const y = 3 * Math.sin(t);
+    d += `${i === 0 ? 'M' : 'L'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
+  }
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
+  ${axesSvg}
+  <path d="${d.trim()}" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  <circle cx="${sx(2).toFixed(1)}" cy="${sy(0).toFixed(1)}" r="3" fill="#ef4444"/>
+  <circle cx="${sx(-1).toFixed(1)}" cy="${sy(0).toFixed(1)}" r="3" fill="#f59e0b"/>
+  <circle cx="${sx(5).toFixed(1)}" cy="${sy(0).toFixed(1)}" r="3" fill="#f59e0b"/>
+  <circle cx="${sx(2).toFixed(1)}" cy="${sy(3).toFixed(1)}" r="3" fill="#10b981"/>
+  <text x="${sx(2) + 6}" y="${sy(0) + 14}" font-size="10" fill="#ef4444" font-weight="bold">(2,0)</text>
+  <text x="${sx(2) + 6}" y="${sy(3) - 6}" font-size="10" fill="#10b981" font-weight="bold">(2,3)</text>
+  <text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">y = √(9−(x−2)²)</text>
 </svg>`;
 }
 
@@ -404,16 +497,17 @@ const SEED_SKETCH = [
     answer: 'Cubic shifted 1 unit left and reflected in the \\(x\\)-axis.',
     solutionSteps: [
       step(
-        'Start from \\(y = x^3\\). Replacing \\(x\\) by \\(x + 1\\) shifts 1 unit left.',
+        'Start from \\(y = x^3\\). Replacing \\(x\\) by \\(x + 1\\) shifts the graph 1 unit to the left.',
         '\\(y = (x + 1)^3\\)'
       ),
       step(
-        'The leading minus reflects in the \\(x\\)-axis: increasing cubics become decreasing through the origin of the shifted axes.',
+        'The leading minus reflects the graph in the \\(x\\)-axis, so the cubic decreases through the shifted inflection point.',
         '\\(y = -(x + 1)^3\\)'
       ),
       step(
-        'The graph passes through \\((-1, 0)\\) and is a decreasing cubic. Sketch and label the inflection point.',
-        '\\(\\text{Inflection at } (-1, 0)\\)'
+        'The graph passes through the inflection point \\((-1, 0)\\). Sketch the decreasing cubic and label this point.',
+        '\\(\\text{Inflection at } (-1, 0)\\)',
+        { svg: cubicSvg() }
       ),
     ],
   }),
@@ -423,16 +517,17 @@ const SEED_SKETCH = [
     answer: 'Hyperbola with vertical asymptote \\(x = 3\\) and horizontal asymptote \\(y = 4\\).',
     solutionSteps: [
       step(
-        'Base graph \\(y = \\frac{1}{x}\\) has asymptotes \\(x = 0\\) and \\(y = 0\\).',
-        '\\(y = \\frac{1}{x}\\)'
+        'Start from \\(y = \\dfrac{1}{x}\\) with asymptotes \\(x = 0\\) and \\(y = 0\\).',
+        '\\(y = \\dfrac{1}{x}\\)'
       ),
       step(
-        'Replace \\(x\\) by \\(x - 3\\): vertical asymptote moves to \\(x = 3\\). Add 4: horizontal asymptote moves to \\(y = 4\\).',
+        'Replace \\(x\\) by \\(x - 3\\) (vertical asymptote \\(x = 3\\)), then add 4 (horizontal asymptote \\(y = 4\\)).',
         '\\(x = 3,\\quad y = 4\\)'
       ),
       step(
-        'Sketch both branches of the rectangular hyperbola about these asymptotes and label them.',
-        '\\(y = \\dfrac{1}{x-3} + 4\\)'
+        'Sketch both branches of the hyperbola about these asymptotes and label them clearly.',
+        '\\(y = \\dfrac{1}{x-3} + 4\\)',
+        { svg: hyperbolaSvg() }
       ),
     ],
   }),
@@ -451,7 +546,8 @@ const SEED_SKETCH = [
       ),
       step(
         'Sketch the upper semicircle from \\((-1, 0)\\) to \\((5, 0)\\) with top at \\((2, 3)\\).',
-        '\\(y = \\sqrt{9 - (x-2)^2}\\)'
+        '\\(y = \\sqrt{9 - (x-2)^2}\\)',
+        { svg: semicircleSvg() }
       ),
     ],
   }),
