@@ -126,25 +126,36 @@ function plane(xmin, xmax, ymin, ymax, W = 300, H = 240) {
   return { sx, sy, W, H, axes, padL, padR, padT, padB };
 }
 
-function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 50) {
+/**
+ * Sample a curve without clamping y into the box (clamping created fake flat
+ * "plateaus" at the top/bottom of parabolas). Points outside the y-window are
+ * skipped so the path just ends at the edge of the view.
+ */
+function samplePath(fn, x0, x1, sx, sy, ymin, ymax, n = 60) {
   let d = '';
+  let penDown = false;
   for (let i = 0; i <= n; i++) {
     const x = x0 + ((x1 - x0) * i) / n;
-    let y = fn(x);
-    if (!Number.isFinite(y)) continue;
-    y = Math.max(ymin, Math.min(ymax, y));
-    d += `${d ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
+    const y = fn(x);
+    if (!Number.isFinite(y) || y < ymin || y > ymax) {
+      penDown = false;
+      continue;
+    }
+    d += `${penDown ? 'L' : 'M'}${sx(x).toFixed(1)},${sy(y).toFixed(1)} `;
+    penDown = true;
   }
   return d.trim();
 }
 
 function absSvg(h, k, label) {
   const xmin = h - 4,
-    xmax = h + 4,
-    ymin = Math.min(k - 1, -1),
-    ymax = k + 6;
+    xmax = h + 4;
+  // Fit arms fully inside the box (no clamp plateaus).
+  const armY = Math.abs(xmin - h) + k;
+  const ymin = Math.min(k - 1, -1);
+  const ymax = Math.max(armY + 1, k + 2, 2);
   const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-  const d = `M${sx(xmin).toFixed(1)},${sy(Math.abs(xmin - h) + k).toFixed(1)} L${sx(h).toFixed(1)},${sy(k).toFixed(1)} L${sx(xmax).toFixed(1)},${sy(Math.abs(xmax - h) + k).toFixed(1)}`;
+  const d = `M${sx(xmin).toFixed(1)},${sy(armY).toFixed(1)} L${sx(h).toFixed(1)},${sy(k).toFixed(1)} L${sx(xmax).toFixed(1)},${sy(armY).toFixed(1)}`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">
   ${axes}
   <path d="${d}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linejoin="round"/>
@@ -155,18 +166,36 @@ function absSvg(h, k, label) {
 }
 
 function parabolaSvg(h, k, a = 1, label = '', marks = []) {
-  const xmin = h - 4,
-    xmax = h + 4;
-  const ymin = a > 0 ? k - 1 : k - 8;
-  const ymax = a > 0 ? k + 8 : k + 1;
+  // Choose x-window so the arms stay readable; auto-fit y from actual samples
+  // (plus intercept marks) so the curve never gets flattened by a tight ymax.
+  const half = 3.2;
+  const xmin = h - half;
+  const xmax = h + half;
+  const ys = [k, 0];
+  for (let i = 0; i <= 20; i++) {
+    const x = xmin + ((xmax - xmin) * i) / 20;
+    ys.push(a * (x - h) ** 2 + k);
+  }
+  for (const m of marks) ys.push(m.y);
+  let ymin = Math.min(...ys);
+  let ymax = Math.max(...ys);
+  const padY = Math.max(1, (ymax - ymin) * 0.12);
+  ymin -= padY;
+  ymax += padY;
+  // Keep x-axis in view when intercepts matter
+  if (ymin > -0.5) ymin = -0.5;
+  if (ymax < 0.5) ymax = 0.5;
+
   const { sx, sy, W, H, axes } = plane(xmin, xmax, ymin, ymax);
-  const d = samplePath((x) => a * (x - h) ** 2 + k, xmin, xmax, sx, sy, ymin, ymax);
-  let body = `${axes}<path d="${d}" fill="none" stroke="#6366f1" stroke-width="2.5"/>
+  const d = samplePath((x) => a * (x - h) ** 2 + k, xmin, xmax, sx, sy, ymin, ymax, 70);
+  let body = `${axes}<path d="${d}" fill="none" stroke="#6366f1" stroke-width="2.5" stroke-linecap="round"/>
   <circle cx="${sx(h).toFixed(1)}" cy="${sy(k).toFixed(1)}" r="3.5" fill="#ef4444"/>
   <text x="${sx(h) + 8}" y="${sy(k) - 8}" font-size="11" fill="#ef4444" font-weight="bold">(${h}, ${k})</text>`;
   for (const m of marks) {
     body += `<circle cx="${sx(m.x).toFixed(1)}" cy="${sy(m.y).toFixed(1)}" r="3" fill="${m.color || '#f59e0b'}"/>`;
-    if (m.label) body += `<text x="${sx(m.x) + 6}" y="${sy(m.y) - 6}" font-size="10" fill="${m.color || '#f59e0b'}" font-weight="bold">${m.label}</text>`;
+    if (m.label) {
+      body += `<text x="${sx(m.x) + 6}" y="${sy(m.y) - 6}" font-size="10" fill="${m.color || '#f59e0b'}" font-weight="bold">${m.label}</text>`;
+    }
   }
   if (label) body += `<text x="40" y="28" font-size="11" fill="#6366f1" font-weight="bold">${label}</text>`;
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" style="${SVG_STYLE}">${body}</svg>`;
