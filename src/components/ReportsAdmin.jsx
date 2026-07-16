@@ -38,6 +38,58 @@ import {
 const NON_CREDITABLE_SOURCES = new Set(['secret_note', 'topic_practice', 'exam_prep']);
 const isCreditable = (r) => !NON_CREDITABLE_SOURCES.has(r?.source);
 
+/**
+ * Which MCQ option indices are the correct answer.
+ *
+ * Bug this prevents: answer value "3" used to also match option *index* 3 (D)
+ * via `String(answer) === String(i)`, so A=3 and D=4 both lit green.
+ *
+ * Prefer option-text / value match first. Only fall back to 0-based index
+ * (or A–D letter) when no option text matches the stored answer.
+ */
+const optionText = (opt) => {
+  if (opt == null) return '';
+  if (typeof opt === 'string' || typeof opt === 'number') return String(opt);
+  return String(opt.text ?? opt.label ?? opt.value ?? '');
+};
+
+const resolveCorrectOptionIndices = (options, answer) => {
+  const list = Array.isArray(options) ? options : [];
+  if (list.length === 0 || answer === null || answer === undefined || answer === '') {
+    return new Set();
+  }
+  const ans = String(answer).trim();
+
+  // 1) Value match against option text (calc + most curriculum MCQs store answer value).
+  const valueHits = [];
+  list.forEach((opt, i) => {
+    const text = optionText(opt);
+    if (!text && text !== '0') return;
+    if (answersMatch(text, ans) || String(text) === ans) valueHits.push(i);
+  });
+  if (valueHits.length > 0) return new Set(valueHits);
+
+  // 2) Letter key A/B/C/D
+  if (/^[A-Da-d]$/.test(ans)) {
+    const idx = ans.toUpperCase().charCodeAt(0) - 65;
+    if (idx >= 0 && idx < list.length) return new Set([idx]);
+  }
+
+  // 3) Explicit 0-based index only when nothing matched by value.
+  //    Require integer form (not "3.0") and in-range.
+  if (/^\d+$/.test(ans)) {
+    const idx = Number(ans);
+    if (Number.isInteger(idx) && idx >= 0 && idx < list.length) {
+      return new Set([idx]);
+    }
+  }
+
+  return new Set();
+};
+
+const isMcqOptionCorrect = (opt, index, answer, options) =>
+  resolveCorrectOptionIndices(options, answer).has(index);
+
 /** Split "expr or expr" answers so each piece renders cleanly (avoids "1/torv"). */
 const formatAnswerParts = (raw) => {
   const s = String(raw ?? '').trim();
@@ -1008,8 +1060,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                   {Array.isArray(item.options) && item.options.length > 0 && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '14px' }}>
                       {item.options.map((opt, i) => {
-                        const text = typeof opt === 'string' ? opt : (opt?.text || String(opt));
-                        const isCorrect = String(item.correctAnswer) === String(i) || String(item.correctAnswer) === String(text);
+                        const text = optionText(opt);
+                        const isCorrect = isMcqOptionCorrect(opt, i, item.correctAnswer, item.options);
                         return (
                           <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: isCorrect ? '0 0 0 2px #10b981' : '0 0 0 1px #e2e8f0' }}>
                             <div style={{ width: '28px', height: '28px', borderRadius: '50%', flexShrink: 0, background: isCorrect ? '#10b981' : '#f1f5f9', color: isCorrect ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.85rem' }}>
@@ -1595,10 +1647,18 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                   {options.length > 0 && (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                       {options.map((opt, i) => {
-                        const text = typeof opt === 'string' ? opt : opt.text;
-                        const img = opt?.imageUrl || opt?.image || '';
-                        const isCorrect = String(q.answer) === String(i) || answersMatch(text, q.answer);
-                        const isChosen = String(studentAnswer) === String(text);
+                        const text = optionText(opt);
+                        const img = (opt && typeof opt === 'object')
+                          ? (opt.imageUrl || opt.image || '')
+                          : '';
+                        // Value-first match — never treat answer "3" as option index 3 (D).
+                        const isCorrect = isMcqOptionCorrect(opt, i, q.answer, options);
+                        const isChosen =
+                          String(studentAnswer) === String(text)
+                          || answersMatch(studentAnswer, text)
+                          || (Number.isInteger(Number(studentAnswer))
+                            && String(Number(studentAnswer)) === String(studentAnswer).trim()
+                            && Number(studentAnswer) === i);
                         const isWrong = isChosen && !isCorrect;
                         return (
                           <div key={i} style={{
