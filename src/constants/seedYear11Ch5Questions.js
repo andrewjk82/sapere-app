@@ -6196,25 +6196,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-6a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
-    "difficulty": "easy",
-    "q": "Using dilations, sketch the following three equations on the same set of axes. Clearly label each graph and describe how it was transformed from the first equation: \\n1) $y = x(6 + x)$ \\n2) $y = 3x(6 + x)$ \\n3) $y = \\frac{x}{2}(6 + \\frac{x}{2})$",
-    "a": "See solution steps.",
+    "type": "multipart",
+    "difficulty": "medium",
+    "q": "Using dilations, the following three equations are graphed on the same set of axes:\n1) \\(y = x(6 + x)\\)\n2) \\(y = 3x(6 + x)\\)\n3) \\(y = \\frac{x}{2}(6 + \\frac{x}{2})\\)",
+    "question": "Using dilations, the following three equations are graphed on the same set of axes:\n1) \\(y = x(6 + x)\\)\n2) \\(y = 3x(6 + x)\\)\n3) \\(y = \\frac{x}{2}(6 + \\frac{x}{2})\\)",
     "opts": [],
-    "h": "Compare equations 2 and 3 to the first equation $f(x) = x(6 + x)$.",
-    "s": "Equation 1 is $f(x) = x(6 + x)$, a parabola with x-intercepts at 0 and -6.\\nEquation 2 is $y = 3f(x)$. This is a vertical stretch by a factor of 3.\\nEquation 3 is $y = f(\\frac{x}{2})$. This is a horizontal stretch by a factor of 2. The new x-intercepts are 0 and -12.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Using dilations, sketch the following three equations on the same set of axes. Clearly label each graph and describe how it was transformed from the first equation: \\n1) \\(y = x(6 + x)\\) \\n2) \\(y = 3x(6 + x)\\) \\n3) \\(y = \\frac{x}{2}(6 + \\frac{x}{2})\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-6a-1",
+        "type": "multiple_choice",
+        "question": "Equation 1 is \\(y = x(6 + x)\\). What are the \\(x\\)-intercepts of this parabola?",
+        "opts": [
+          "\\(x = 0\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 6\\)",
+          "\\(x = 6\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 3\\)"
+        ],
+        "options": [
+          "\\(x = 0\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 6\\)",
+          "\\(x = 6\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 3\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Set \\(y = 0\\) and solve \\(x(6 + x) = 0\\).",
+        "solution": "Set \\(x(6 + x) = 0 \\implies x = 0\\) or \\(6 + x = 0 \\implies x = -6\\). The \\(x\\)-intercepts are 0 and \\(-6\\).",
+        "solutionSteps": [
+          {
+            "explanation": "To find the \\(x\\)-intercepts of a curve, we set \\(y = 0\\) and solve for \\(x\\).",
+            "workingOut": "\\(x(6 + x) = 0\\)"
+          },
+          {
+            "explanation": "Using the Null Factor Law, either the first factor is zero or the second factor is zero.",
+            "workingOut": "\\(x = 0 \\quad \\text{or} \\quad 6 + x = 0\\)"
+          },
+          {
+            "explanation": "Solving for \\(x\\) gives \\(x = 0\\) and \\(x = -6\\). These are the two intercepts where the parabola cuts the horizontal axis.",
+            "workingOut": "\\(x = 0, \\quad x = -6\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "Equation 1 is \\(f(x) = x(6 + x)\\), a parabola with x-intercepts at 0 and -6.\\nEquation 2 is \\(y = 3f(x)\\). This is a vertical stretch by a factor of 3.\\nEquation 3 is \\(y = f(\\frac{x}{2})\\). This is a horizontal stretch by a factor of 2. The new x-intercepts are 0 and -12."
+        "id": "y11a-5D-new-6a-2",
+        "type": "multiple_choice",
+        "question": "Equation 2 is \\(y = 3x(6 + x)\\). What transformation maps equation 1 to equation 2?",
+        "opts": [
+          "Vertical stretch by a factor of 3",
+          "Horizontal compression by a factor of \\(\\frac{1}{3}\\)",
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Horizontal stretch by a factor of 3"
+        ],
+        "options": [
+          "Vertical stretch by a factor of 3",
+          "Horizontal compression by a factor of \\(\\frac{1}{3}\\)",
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Horizontal stretch by a factor of 3"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "The original function \\(f(x)\\) has been multiplied by 3 on the outside.",
+        "solution": "Multiplying the whole function by 3 is a vertical dilation by factor 3: \\(y_{\\text{new}} = 3 \\cdot y_{\\text{old}}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Compare equation 2, \\(y = 3x(6 + x)\\), with equation 1, \\(y = f(x) = x(6 + x)\\). We see that the entire function has been multiplied by 3.",
+            "workingOut": "\\(y_{\\text{new}} = 3 \\times f(x)\\)"
+          },
+          {
+            "explanation": "Multiplying the entire function output by a constant \\(k\\) represents a vertical stretch by factor \\(k\\). Here, \\(k = 3\\).",
+            "workingOut": "\\(\\text{Vertical dilation by factor } 3\\)"
+          },
+          {
+            "explanation": "Every point \\((x, y)\\) on the original parabola becomes \\((x, 3y)\\). The parabola is stretched vertically, making it steeper.",
+            "workingOut": "\\((x, y) \\to (x, 3y)\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Equation 1 is \\(f(x) = x(6 + x)\\), a parabola with x-intercepts at 0 and -6.\\nEquation 2 is \\(y = 3f(x)\\). This is a vertical stretch by a factor of 3.\\nEquation 3 is \\(y = f(\\frac{x}{2})\\). This is a horizontal stretch by a factor of 2. The new x-intercepts are 0 and -12.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "Equation 1 is \\(f(x) = x(6 + x)\\), a parabola with x-intercepts at 0 and -6.\\nEquation 2 is \\(y = 3f(x)\\). This is a vertical stretch by a factor of 3.\\nEquation 3 is \\(y = f(\\frac{x}{2})\\). This is a horizontal stretch by a factor of 2. The new x-intercepts are 0 and -12."
+        "id": "y11a-5D-new-6a-3",
+        "type": "multiple_choice",
+        "question": "Equation 3 is \\(y = \\frac{x}{2}\\left(6 + \\frac{x}{2}\\right)\\). What transformation maps equation 1 to equation 3?",
+        "opts": [
+          "Horizontal stretch by a factor of 2",
+          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)",
+          "Vertical stretch by a factor of 2",
+          "Vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        ],
+        "options": [
+          "Horizontal stretch by a factor of 2",
+          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)",
+          "Vertical stretch by a factor of 2",
+          "Vertical compression by a factor of \\(\\frac{1}{2}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Every \\(x\\) in \\(f(x)\\) has been replaced by \\(\\frac{x}{2}\\).",
+        "solution": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) represents a horizontal dilation by a factor of 2 (a stretch).",
+        "solutionSteps": [
+          {
+            "explanation": "In equation 3, every instance of \\(x\\) in \\(f(x) = x(6+x)\\) is replaced by \\(\\frac{x}{2}\\).",
+            "workingOut": "\\(y = f\\!\\left(\\frac{x}{2}\\right)\\)"
+          },
+          {
+            "explanation": "Replacing \\(x\\) with \\(\\frac{x}{k}\\) represents a horizontal dilation by a factor of \\(k\\). Here, \\(k = 2\\), which is a horizontal stretch by 2.",
+            "workingOut": "\\(\\text{Horizontal stretch by factor } 2\\)"
+          },
+          {
+            "explanation": "Every point \\((x, y)\\) on the original parabola becomes \\((2x, y)\\). The new \\(x\\)-intercepts are \\(2 \\times 0 = 0\\) and \\(2 \\times (-6) = -12\\).",
+            "workingOut": "\\(\\text{Intercepts: } 0 \\text{ and } -12\\)"
+          }
+        ]
       }
     ]
   },
@@ -6429,25 +6524,85 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-7b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "**[The Order of Dilations]** Consider the same function $y = x(x + 4)$.\n**i)** The graph is stretched vertically by a factor of 2. Write down the equation of this new function and sketch it.\n**ii)** This new graph is then stretched horizontally by a factor of 3. Write down the final equation and sketch it.",
-    "a": "i) y = 2x(x+4). ii) y = 2x/3(x/3 + 4).",
+    "q": "**[The Order of Dilations]** Consider the same function \\(y = x(x + 4)\\).",
+    "question": "**[The Order of Dilations]** Consider the same function \\(y = x(x + 4)\\).",
     "opts": [],
-    "h": "Perform the dilations in the reverse order from the previous part.",
-    "s": "i) Multiply by 2. Equation: $y = 2x(x + 4)$.\\nii) Replace $x$ with $\\frac{x}{3}$. Final Equation: $y = 2(\\frac{x}{3})(\\frac{x}{3} + 4) = \\frac{2x^2}{9} + \\frac{8x}{3}$.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"**[The Order of Dilations]** Consider the same function \\(y = x(x + 4)\\).\n**i)** The graph is stretched vertically by a factor of 2. Write down the equation of this new function and sketch it.\n**ii)** This new graph is then stretched horizontally by a factor of 3. Write down the final equation and sketch it.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-7b-i",
+        "type": "multiple_choice",
+        "question": "The graph of \\(y = x(x + 4)\\) is stretched vertically by a factor of 2. Which equation describes this new function?",
+        "opts": [
+          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)",
+          "\\(y = x\\left(\\dfrac{x}{2} + 4\\right)\\)",
+          "\\(y = 2x(2x + 8)\\)",
+          "\\(y = x(x + 8)\\)"
+        ],
+        "options": [
+          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)",
+          "\\(y = x\\left(\\dfrac{x}{2} + 4\\right)\\)",
+          "\\(y = 2x(2x + 8)\\)",
+          "\\(y = x(x + 8)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Multiply the entire function output by 2.",
+        "solution": "Multiply by 2: \\(y = 2x(x+4) = 2x^2 + 8x\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A vertical stretch by factor 2 multiplies the entire right side of the equation by 2.",
+            "workingOut": "\\(y = 2 \\times [x(x + 4)]\\)"
+          },
+          {
+            "explanation": "Distribute and simplify: \\(y = 2x(x + 4) = 2x^2 + 8x\\).",
+            "workingOut": "\\(y = 2x^2 + 8x\\)"
+          },
+          {
+            "explanation": "The resulting parabola is stretched vertically. The intercepts at \\(x = 0\\) and \\(x = -4\\) are unchanged.",
+            "workingOut": "\\(y = 2x^2 + 8x\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "i) Multiply by 2. Equation: \\(y = 2x(x + 4)\\).\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). Final Equation: \\(y = 2(\\frac{x}{3})(\\frac{x}{3} + 4) = \\frac{2x^2}{9} + \\frac{8x}{3}\\)."
-      },
-      {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"i) Multiply by 2. Equation: \\(y = 2x(x + 4)\\).\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). Final Equation: \\(y = 2(\\frac{x}{3})(\\frac{x}{3} + 4) = \\frac{2x^2}{9} + \\frac{8x}{3}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "i) Multiply by 2. Equation: \\(y = 2x(x + 4)\\).\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). Final Equation: \\(y = 2(\\frac{x}{3})(\\frac{x}{3} + 4) = \\frac{2x^2}{9} + \\frac{8x}{3}\\)."
+        "id": "y11a-5D-new-7b-ii",
+        "type": "multiple_choice",
+        "question": "This new graph is then stretched horizontally by a factor of 3. What is the final equation?",
+        "opts": [
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
+          "\\(y = 6x^2 + 24x\\)",
+          "\\(y = 2x^2 + 24x\\)",
+          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)"
+        ],
+        "options": [
+          "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
+          "\\(y = 6x^2 + 24x\\)",
+          "\\(y = 2x^2 + 24x\\)",
+          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Replace every \\(x\\) in \\(y = 2x^2 + 8x\\) with \\(\\frac{x}{3}\\).",
+        "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(y = 2\\left(\\frac{x}{3}\\right)^2 + 8\\left(\\frac{x}{3}\right) = \\frac{2x^2}{9} + \\frac{8x}{3}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Stretching horizontally by factor 3 requires replacing every \\(x\\) in the current equation \\(y = 2x^2 + 8x\\) with \\(\\frac{x}{3}\\).",
+            "workingOut": "\\(y = 2\\!\\left(\\frac{x}{3}\\right)^2 + 8\\!\\left(\\frac{x}{3}\\right)\\)"
+          },
+          {
+            "explanation": "Square the first term: \\(\\left(\\frac{x}{3}\\right)^2 = \frac{x^2}{9}\\). Multiply by 2: \\(\\frac{2x^2}{9}\\).",
+            "workingOut": "\\(y = 2\\!\\left(\\frac{x^2}{9}\\right) + \\frac{8x}{3}\\)"
+          },
+          {
+            "explanation": "Combine the terms to get the final equation: \\(y = \\frac{2x^2}{9} + \\frac{8x}{3}\\). Note that this is exactly the same final equation obtained in the previous exercise where the horizontal stretch was performed first and the vertical stretch second. Dilation order (horizontal vs vertical) does not matter.",
+            "workingOut": "\\(y = \\frac{2x^2}{9} + \\frac{8x}{3}\\)"
+          }
+        ]
       }
     ]
   },
@@ -6486,25 +6641,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-8a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "**[Dilations and Symmetry]**\n**i)** Show algebraically that $y = x^3 - 4x$ is an odd function.\n**ii)** This function is stretched horizontally by a factor of 3. Write down the equation of this new function.\n**iii)** Is the new function still odd? Show your working.",
-    "a": "See solution steps.",
+    "q": "**[Dilations and Symmetry]** Consider the cubic function \\(y = x^3 - 4x\\).",
+    "question": "**[Dilations and Symmetry]** Consider the cubic function \\(y = x^3 - 4x\\).",
     "opts": [],
-    "h": "Substitute $-x$ into the equations to test for odd symmetry.",
-    "s": "i) Let $f(x) = x^3 - 4x$. $f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)$. Thus it is odd.\\nii) Replace $x$ with $\\frac{x}{3}$. $g(x) = (\\frac{x}{3})^3 - 4(\\frac{x}{3}) = \\frac{x^3}{27} - \\frac{4x}{3}$.\\niii) Test symmetry: $g(-x) = (\\frac{-x}{3})^3 - 4(\\frac{-x}{3}) = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)$. Yes, it is still odd.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"**[Dilations and Symmetry]**\n**i)** Show algebraically that \\(y = x^3 - 4x\\) is an odd function.\n**ii)** This function is stretched horizontally by a factor of 3. Write down the equation of this new function.\n**iii)** Is the new function still odd? Show your working.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-8a-i",
+        "type": "multiple_choice",
+        "question": "Which of the following shows the correct algebraic verification that \\(f(x) = x^3 - 4x\\) is an odd function?",
+        "opts": [
+          "\\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\)",
+          "\\(f(-x) = -x^3 - 4x = -f(x)\\)",
+          "\\(f(-x) = (-x)^3 - 4x = f(x)\\)",
+          "\\(f(-x) = f(x)\\) because the powers cancel out"
+        ],
+        "options": [
+          "\\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\)",
+          "\\(f(-x) = -x^3 - 4x = -f(x)\\)",
+          "\\(f(-x) = (-x)^3 - 4x = f(x)\\)",
+          "\\(f(-x) = f(x)\\) because the powers cancel out"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A function is odd if \\(f(-x) = -f(x)\\). Substitute \\(-x\\) for \\(x\\) and factor out \\(-1\\).",
+        "solution": "\\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -(x^3 - 4x) = -f(x)\\). Thus, the function is odd.",
+        "solutionSteps": [
+          {
+            "explanation": "To check if a function is odd, we find \\(f(-x)\\) and check if it equals \\(-f(x)\\). Replace \\(x\\) with \\(-x\\) in \\(f(x) = x^3 - 4x\\).",
+            "workingOut": "\\(f(-x) = (-x)^3 - 4(-x)\\)"
+          },
+          {
+            "explanation": "Simplify: \\((-x)^3 = -x^3\\) and \\(-4(-x) = +4x\\).",
+            "workingOut": "\\(f(-x) = -x^3 + 4x\\)"
+          },
+          {
+            "explanation": "Factor out \\(-1\\) from the expression: \\(-x^3 + 4x = -(x^3 - 4x) = -f(x)\\). Since \\(f(-x) = -f(x)\\), the function is odd.",
+            "workingOut": "\\(f(-x) = -f(x) \\implies \\text{odd function}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "i) Let \\(f(x) = x^3 - 4x\\). \\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\). Thus it is odd.\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(g(x) = (\\frac{x}{3})^3 - 4(\\frac{x}{3}) = \\frac{x^3}{27} - \\frac{4x}{3}\\).\\niii) Test symmetry: \\(g(-x) = (\\frac{-x}{3})^3 - 4(\\frac{-x}{3}) = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)\\). Yes, it is still odd."
+        "id": "y11a-5D-new-8a-ii",
+        "type": "multiple_choice",
+        "question": "This function \\(f(x) = x^3 - 4x\\) is stretched horizontally by a factor of 3. What is the equation of the new function, \\(g(x)\\)?",
+        "opts": [
+          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
+          "\\(g(x) = 27x^3 - 12x\\)",
+          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)",
+          "\\(g(x) = 3x^3 - 12x\\)"
+        ],
+        "options": [
+          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
+          "\\(g(x) = 27x^3 - 12x\\)",
+          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)",
+          "\\(g(x) = 3x^3 - 12x\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Replace every \\(x\\) with \\(\\frac{x}{3}\\).",
+        "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(g(x) = \\left(\\frac{x}{3}\right)^3 - 4\\left(\\frac{x}{3}\right) = \\frac{x^3}{27} - \\frac{4x}{3}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A horizontal stretch by a factor of 3 replaces \\(x\\) with \\(\\frac{x}{3}\\) inside the function.",
+            "workingOut": "\\(g(x) = \\left(\\frac{x}{3}\right)^3 - 4\\left(\\frac{x}{3}\right)\\)"
+          },
+          {
+            "explanation": "Evaluate the power: \\(\\left(\\frac{x}{3}\right)^3 = \\frac{x^3}{27}\\).",
+            "workingOut": "\\(g(x) = \\frac{x^3}{27} - \\frac{4x}{3}\\)"
+          },
+          {
+            "explanation": "The resulting equation for the stretched function is \\(g(x) = \\frac{x^3}{27} - \\frac{4x}{3}\\).",
+            "workingOut": "\\(g(x) = \\frac{x^3}{27} - \\frac{4x}{3}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"i) Let \\(f(x) = x^3 - 4x\\). \\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\). Thus it is odd.\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(g(x) = (\\frac{x}{3})^3 - 4(\\frac{x}{3}) = \\frac{x^3}{27} - \\frac{4x}{3}\\).\\niii) Test symmetry: \\(g(-x) = (\\frac{-x}{3})^3 - 4(\\frac{-x}{3}) = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)\\). Yes, it is still odd.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "i) Let \\(f(x) = x^3 - 4x\\). \\(f(-x) = (-x)^3 - 4(-x) = -x^3 + 4x = -f(x)\\). Thus it is odd.\\nii) Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(g(x) = (\\frac{x}{3})^3 - 4(\\frac{x}{3}) = \\frac{x^3}{27} - \\frac{4x}{3}\\).\\niii) Test symmetry: \\(g(-x) = (\\frac{-x}{3})^3 - 4(\\frac{-x}{3}) = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)\\). Yes, it is still odd."
+        "id": "y11a-5D-new-8a-iii",
+        "type": "multiple_choice",
+        "question": "Is the new function \\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\) still odd?",
+        "opts": [
+          "Yes, because \\(g(-x) = -g(x)\\)",
+          "No, because the horizontal dilation broke the symmetry",
+          "Yes, because \\(g(-x) = g(x)\\)",
+          "No, because odd functions cannot be stretched"
+        ],
+        "options": [
+          "Yes, because \\(g(-x) = -g(x)\\)",
+          "No, because the horizontal dilation broke the symmetry",
+          "Yes, because \\(g(-x) = g(x)\\)",
+          "No, because odd functions cannot be stretched"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Test if \\(g(-x) = -g(x)\\) by substituting \\(-x\\) into \\(g(x)\\).",
+        "solution": "\\(g(-x) = \\frac{(-x)^3}{27} - \\frac{4(-x)}{3} = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)\\). Yes, it is still odd.",
+        "solutionSteps": [
+          {
+            "explanation": "Let's check the symmetry of \\(g(x) = \\frac{x^3}{27} - \\frac{4x}{3}\\) by calculating \\(g(-x)\\).",
+            "workingOut": "\\(g(-x) = \\frac{(-x)^3}{27} - \\frac{4(-x)}{3}\\)"
+          },
+          {
+            "explanation": "Simplify the terms: \\(g(-x) = -\\frac{x^3}{27} + \\frac{4x}{3} = -\\left(\\frac{x^3}{27} - \\frac{4x}{3}\\right) = -g(x)\\).",
+            "workingOut": "\\(g(-x) = -g(x)\\)"
+          },
+          {
+            "explanation": "Since \\(g(-x) = -g(x)\\), the symmetry is preserved. A horizontal dilation of any odd function always results in another odd function.",
+            "workingOut": "\\(\\text{Answer: Yes, because } g(-x) = -g(x)\\)"
+          }
+        ]
       }
     ]
   },
@@ -6512,25 +6762,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-8b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "**[Dilations and Symmetry]**\n**i)** Show algebraically that $y = 9 - x^2$ is an even function.\n**ii)** This function is stretched vertically by a factor of 4. Write down the equation of this new function.\n**iii)** Is the new function still even? Show your working.",
-    "a": "See solution steps.",
+    "q": "**[Dilations and Symmetry]** Consider the quadratic function \\(y = 9 - x^2\\).",
+    "question": "**[Dilations and Symmetry]** Consider the quadratic function \\(y = 9 - x^2\\).",
     "opts": [],
-    "h": "Substitute $-x$ into the equations to test for even symmetry.",
-    "s": "i) Let $f(x) = 9 - x^2$. $f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)$. Thus it is even.\\nii) Multiply by 4. $h(x) = 4(9 - x^2) = 36 - 4x^2$.\\niii) Test symmetry: $h(-x) = 36 - 4(-x)^2 = 36 - 4x^2 = h(x)$. Yes, it is still even.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"**[Dilations and Symmetry]**\n**i)** Show algebraically that \\(y = 9 - x^2\\) is an even function.\n**ii)** This function is stretched vertically by a factor of 4. Write down the equation of this new function.\n**iii)** Is the new function still even? Show your working.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-8b-i",
+        "type": "multiple_choice",
+        "question": "Which of the following shows the correct algebraic verification that \\(f(x) = 9 - x^2\\) is an even function?",
+        "opts": [
+          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
+          "\\(f(-x) = -9 + x^2 = -f(x)\\)",
+          "\\(f(-x) = 9 - (-x) = 9 + x\\)",
+          "\\(f(-x) = 0\\) since it is symmetrical"
+        ],
+        "options": [
+          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
+          "\\(f(-x) = -9 + x^2 = -f(x)\\)",
+          "\\(f(-x) = 9 - (-x) = 9 + x\\)",
+          "\\(f(-x) = 0\\) since it is symmetrical"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A function is even if \\(f(-x) = f(x)\\). Substitute \\(-x\\) for \\(x\\) and simplify.",
+        "solution": "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\). Therefore, the function is even.",
+        "solutionSteps": [
+          {
+            "explanation": "To verify that a function is even, we calculate \\(f(-x)\\) and check if it is equal to the original function \\(f(x)\\).",
+            "workingOut": "\\(f(-x) = 9 - (-x)^2\\)"
+          },
+          {
+            "explanation": "Since squaring a negative number yields a positive result, \\((-x)^2 = x^2\\).",
+            "workingOut": "\\(f(-x) = 9 - x^2\\)"
+          },
+          {
+            "explanation": "Since \\(f(-x) = f(x)\\), the function is even. Geometrically, it is symmetrical about the \\(y\\)-axis.",
+            "workingOut": "\\(f(-x) = f(x) \\implies \\text{even function}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "i) Let \\(f(x) = 9 - x^2\\). \\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\). Thus it is even.\\nii) Multiply by 4. \\(h(x) = 4(9 - x^2) = 36 - 4x^2\\).\\niii) Test symmetry: \\(h(-x) = 36 - 4(-x)^2 = 36 - 4x^2 = h(x)\\). Yes, it is still even."
+        "id": "y11a-5D-new-8b-ii",
+        "type": "multiple_choice",
+        "question": "This function is stretched vertically by a factor of 4. What is the equation of the new function, \\(h(x)\\)?",
+        "opts": [
+          "\\(h(x) = 36 - 4x^2\\)",
+          "\\(h(x) = 9 - 4x^2\\)",
+          "\\(h(x) = 36 - x^2\\)",
+          "\\(h(x) = \\dfrac{9 - x^2}{4}\\)"
+        ],
+        "options": [
+          "\\(h(x) = 36 - 4x^2\\)",
+          "\\(h(x) = 9 - 4x^2\\)",
+          "\\(h(x) = 36 - x^2\\)",
+          "\\(h(x) = \\dfrac{9 - x^2}{4}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Multiply the entire expression \\(9 - x^2\\) by 4.",
+        "solution": "Multiply the function by 4: \\(h(x) = 4(9 - x^2) = 36 - 4x^2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A vertical stretch by factor 4 multiplies the entire function output by 4.",
+            "workingOut": "\\(h(x) = 4 \\times (9 - x^2)\\)"
+          },
+          {
+            "explanation": "Distribute the 4: \\(4 \\times 9 = 36\\) and \\(4 \\times (-x^2) = -4x^2\\).",
+            "workingOut": "\\(h(x) = 36 - 4x^2\\)"
+          },
+          {
+            "explanation": "The new equation is \\(h(x) = 36 - 4x^2\\). The y-intercept has moved from 9 to 36.",
+            "workingOut": "\\(h(x) = 36 - 4x^2\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"i) Let \\(f(x) = 9 - x^2\\). \\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\). Thus it is even.\\nii) Multiply by 4. \\(h(x) = 4(9 - x^2) = 36 - 4x^2\\).\\niii) Test symmetry: \\(h(-x) = 36 - 4(-x)^2 = 36 - 4x^2 = h(x)\\). Yes, it is still even.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "i) Let \\(f(x) = 9 - x^2\\). \\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\). Thus it is even.\\nii) Multiply by 4. \\(h(x) = 4(9 - x^2) = 36 - 4x^2\\).\\niii) Test symmetry: \\(h(-x) = 36 - 4(-x)^2 = 36 - 4x^2 = h(x)\\). Yes, it is still even."
+        "id": "y11a-5D-new-8b-iii",
+        "type": "multiple_choice",
+        "question": "Is the new function \\(h(x) = 36 - 4x^2\\) still even?",
+        "opts": [
+          "Yes, because \\(h(-x) = h(x)\\)",
+          "No, because the vertical stretch broke the symmetry",
+          "Yes, because \\(h(-x) = -h(x)\\)",
+          "No, because vertical dilations change the function type"
+        ],
+        "options": [
+          "Yes, because \\(h(-x) = h(x)\\)",
+          "No, because the vertical stretch broke the symmetry",
+          "Yes, because \\(h(-x) = -h(x)\\)",
+          "No, because vertical dilations change the function type"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Test if \\(h(-x) = h(x)\\) by substituting \\(-x\\) into \\(h(x)\\).",
+        "solution": "\\(h(-x) = 36 - 4(-x)^2 = 36 - 4x^2 = h(x)\\). Yes, it is still even.",
+        "solutionSteps": [
+          {
+            "explanation": "Let's check the symmetry of \\(h(x) = 36 - 4x^2\\) by calculating \\(h(-x)\\).",
+            "workingOut": "\\(h(-x) = 36 - 4(-x)^2\\)"
+          },
+          {
+            "explanation": "Since \\((-x)^2 = x^2\\), we get \\(36 - 4x^2 = h(x)\\).",
+            "workingOut": "\\(h(-x) = 36 - 4x^2 = h(x)\\)"
+          },
+          {
+            "explanation": "Since \\(h(-x) = h(x)\\), the function remains even. Dilations (horizontal or vertical) never change whether a function is even or odd.",
+            "workingOut": "\\(\\text{Answer: Yes, because } h(-x) = h(x)\\)"
+          }
+        ]
       }
     ]
   },
@@ -6569,25 +6914,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-9a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "Sketch the following group of three functions on the one set of axes: \\n1) $y = \\sqrt{9 + x}$ \\n2) $y = 3\\sqrt{9 + x}$ \\n3) $y = 3\\sqrt{9 + 3x}$",
-    "a": "See solution steps.",
+    "q": "The following group of three functions is graphed on the same set of axes:\n1) \\(y = \\sqrt{9 + x}\\)\n2) \\(y = 3\\sqrt{9 + x}\\)\n3) \\(y = 3\\sqrt{9 + 3x}\\)",
+    "question": "The following group of three functions is graphed on the same set of axes:\n1) \\(y = \\sqrt{9 + x}\\)\n2) \\(y = 3\\sqrt{9 + x}\\)\n3) \\(y = 3\\sqrt{9 + 3x}\\)",
     "opts": [],
-    "h": "The first graph is a square root curve shifted left by 9. The second is stretched vertically. The third is compressed horizontally.",
-    "s": "Equation 1 starts at $x = -9$. \\nEquation 2 is a vertical stretch of Equation 1 by a factor of 3. \\nEquation 3 replaces $x$ with $3x$, which is a horizontal compression by a factor of $1/3$, meaning it now starts at $x = -3$.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Sketch the following group of three functions on the one set of axes: \\n1) \\(y = \\sqrt{9 + x}\\) \\n2) \\(y = 3\\sqrt{9 + x}\\) \\n3) \\(y = 3\\sqrt{9 + 3x}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-9a-1",
+        "type": "multiple_choice",
+        "question": "What is the starting point (domain boundary) of the square root function \\(y = \\sqrt{9 + x}\\)?",
+        "opts": [
+          "\\((-9, 0)\\)",
+          "\\((9, 0)\\)",
+          "\\((0, 3)\\)",
+          "\\((0, -9)\\)"
+        ],
+        "options": [
+          "\\((-9, 0)\\)",
+          "\\((9, 0)\\)",
+          "\\((0, 3)\\)",
+          "\\((0, -9)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Set the term inside the square root to be greater than or equal to zero.",
+        "solution": "We need \\(9 + x \\ge 0 \\implies x \\ge -9\\). The starting point is at \\((-9, 0)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For a square root function \\(y = \\sqrt{f(x)}\\), the domain requires the expression inside the square root to be non-negative.",
+            "workingOut": "\\(9 + x \\ge 0\\)"
+          },
+          {
+            "explanation": "Subtract 9 from both sides: \\(x \\ge -9\\).",
+            "workingOut": "\\(x \\ge -9\\)"
+          },
+          {
+            "explanation": "At \\(x = -9\\), \\(y = \\sqrt{0} = 0\\). So the graph starts at the point \\((-9, 0)\\) and goes to the right.",
+            "workingOut": "\\(\\text{Starting point: } (-9, 0)\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "Equation 1 starts at \\(x = -9\\). \\nEquation 2 is a vertical stretch of Equation 1 by a factor of 3. \\nEquation 3 replaces \\(x\\) with \\(3x\\), which is a horizontal compression by a factor of \\(1/3\\), meaning it now starts at \\(x = -3\\)."
+        "id": "y11a-5D-new-9a-2",
+        "type": "multiple_choice",
+        "question": "What transformation maps function 1 to function 2: \\(y = 3\\sqrt{9 + x}\\)?",
+        "opts": [
+          "Vertical stretch by a factor of 3",
+          "Horizontal stretch by a factor of 3",
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Horizontal compression by a factor of \\(\\frac{1}{3}\\)"
+        ],
+        "options": [
+          "Vertical stretch by a factor of 3",
+          "Horizontal stretch by a factor of 3",
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Horizontal compression by a factor of \\(\\frac{1}{3}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "The output of function 1 is multiplied by 3.",
+        "solution": "Function 2 is \\(3 \\times \\text{Function 1}\\), which represents a vertical stretch by factor 3.",
+        "solutionSteps": [
+          {
+            "explanation": "Compare \\(y = 3\\sqrt{9 + x}\\) with \\(y = \\sqrt{9 + x}\\). The entire function is multiplied by 3.",
+            "workingOut": "\\(y_{\\text{new}} = 3 \\times f(x)\\)"
+          },
+          {
+            "explanation": "Multiplying by a constant greater than 1 vertically stretches the graph. Every y-coordinate is multiplied by 3.",
+            "workingOut": "\\(\\text{Vertical stretch by 3}\\)"
+          },
+          {
+            "explanation": "The starting point \\((-9, 0)\\) remains unchanged since \\(3 \\times 0 = 0\\). The curve rises three times faster.",
+            "workingOut": "\\(\\text{Starting point remains } (-9, 0)\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Equation 1 starts at \\(x = -9\\). \\nEquation 2 is a vertical stretch of Equation 1 by a factor of 3. \\nEquation 3 replaces \\(x\\) with \\(3x\\), which is a horizontal compression by a factor of \\(1/3\\), meaning it now starts at \\(x = -3\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "Equation 1 starts at \\(x = -9\\). \\nEquation 2 is a vertical stretch of Equation 1 by a factor of 3. \\nEquation 3 replaces \\(x\\) with \\(3x\\), which is a horizontal compression by a factor of \\(1/3\\), meaning it now starts at \\(x = -3\\)."
+        "id": "y11a-5D-new-9a-3",
+        "type": "multiple_choice",
+        "question": "What transformation maps function 2 to function 3: \\(y = 3\\sqrt{9 + 3x}\\), and what is its new starting point?",
+        "opts": [
+          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)",
+          "Horizontal stretch by 3; starts at \\((-27, 0)\\)",
+          "Vertical stretch by 3; starts at \\((-9, 0)\\)",
+          "Horizontal translation left by 3; starts at \\((-12, 0)\\)"
+        ],
+        "options": [
+          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)",
+          "Horizontal stretch by 3; starts at \\((-27, 0)\\)",
+          "Vertical stretch by 3; starts at \\((-9, 0)\\)",
+          "Horizontal translation left by 3; starts at \\((-12, 0)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Every \\(x\\) in \\(3\\sqrt{9 + x}\\) is replaced by \\(3x\\). Find the new domain boundary.",
+        "solution": "Replacing \\(x\\) with \\(3x\\) is a horizontal compression by \\(\\frac{1}{3}\\). The starting point is where \\(9 + 3x = 0 \\implies x = -3\\), which is \\((-3, 0)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Function 3 replaces the variable \\(x\\) in function 2 with \\(3x\\). Replacing \\(x\\) with \\(kx\\) is a horizontal dilation by \\(\\frac{1}{k}\\). Here \\(k = 3\\), so it is a horizontal compression by \\(\\frac{1}{3}\\).",
+            "workingOut": "\\(x \\to 3x: \\text{horizontal compression by } \\frac{1}{3}\\)"
+          },
+          {
+            "explanation": "To find the new starting point, set the term inside the square root to zero.",
+            "workingOut": "\\(9 + 3x = 0 \\implies 3x = -9 \\implies x = -3\\)"
+          },
+          {
+            "explanation": "At \\(x = -3\\), \\(y = 0\\). The new starting point is \\((-3, 0)\\). The graph has been compressed horizontally towards the y-axis.",
+            "workingOut": "\\(\\text{New starting point: } (-3, 0)\\)"
+          }
+        ]
       }
     ]
   },
@@ -6595,25 +7035,120 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-9b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "Sketch the following group of three functions on the one set of axes: \\n1) $y = 3^x$ \\n2) $y = 3^{-x}$ \\n3) $y = 4 \\times 3^{-x}$",
-    "a": "See solution steps.",
+    "q": "The following group of three functions is graphed on the same set of axes:\n1) \\(y = 3^x\\)\n2) \\(y = 3^{-x}\\)\n3) \\(y = 4 \\times 3^{-x}\\)",
+    "question": "The following group of three functions is graphed on the same set of axes:\n1) \\(y = 3^x\\)\n2) \\(y = 3^{-x}\\)\n3) \\(y = 4 \\times 3^{-x}\\)",
     "opts": [],
-    "h": "Equation 2 is a reflection across the y-axis. Equation 3 is a vertical stretch.",
-    "s": "Equation 1 is an exponential growth curve passing through $(0,1)$. \\nEquation 2 is a reflection of Equation 1 across the $y$-axis (exponential decay). \\nEquation 3 is a vertical stretch of Equation 2 by a factor of 4, meaning its $y$-intercept is now $(0, 4)$.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Sketch the following group of three functions on the one set of axes: \\n1) \\(y = 3^x\\) \\n2) \\(y = 3^{-x}\\) \\n3) \\(y = 4 \\times 3^{-x}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-9b-1",
+        "type": "multiple_choice",
+        "question": "Function 1 is \\(y = 3^x\\). What is its \\(y\\)-intercept?",
+        "opts": [
+          "\\((0, 1)\\)",
+          "\\((0, 3)\\)",
+          "\\((1, 3)\\)",
+          "\\((0, 0)\\)"
+        ],
+        "options": [
+          "\\((0, 1)\\)",
+          "\\((0, 3)\\)",
+          "\\((1, 3)\\)",
+          "\\((0, 0)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Set \\(x = 0\\) to find the \\(y\\)-intercept.",
+        "solution": "Substitute \\(x = 0\\): \\(y = 3^0 = 1\\). The \\(y\\)-intercept is \\((0, 1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "To find the \\(y\\)-intercept, we evaluate the function at \\(x = 0\\).",
+            "workingOut": "\\(y = 3^0\\)"
+          },
+          {
+            "explanation": "Recall that any non-zero base raised to the power of 0 is equal to 1.",
+            "workingOut": "\\(3^0 = 1\\)"
+          },
+          {
+            "explanation": "The \\(y\\)-intercept is the point \\((0, 1)\\).",
+            "workingOut": "\\(\\text{y-intercept: } (0, 1)\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "Equation 1 is an exponential growth curve passing through \\((0,1)\\). \\nEquation 2 is a reflection of Equation 1 across the \\(y\\)-axis (exponential decay). \\nEquation 3 is a vertical stretch of Equation 2 by a factor of 4, meaning its \\(y\\)-intercept is now \\((0, 4)\\)."
+        "id": "y11a-5D-new-9b-2",
+        "type": "multiple_choice",
+        "question": "What transformation maps function 1 to function 2: \\(y = 3^{-x}\\)?",
+        "opts": [
+          "Reflection in the \\(y\\)-axis",
+          "Reflection in the \\(x\\)-axis",
+          "Horizontal compression by a factor of \\(-1\\)",
+          "Rotation of 180 degrees"
+        ],
+        "options": [
+          "Reflection in the \\(y\\)-axis",
+          "Reflection in the \\(x\\)-axis",
+          "Horizontal compression by a factor of \\(-1\\)",
+          "Rotation of 180 degrees"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Replacing \\(x\\) with \\(-x\\) reflects the graph horizontally.",
+        "solution": "Replacing \\(x\\) with \\(-x\\) is a reflection across the vertical \\(y\\)-axis.",
+        "solutionSteps": [
+          {
+            "explanation": "Compare \\(y = 3^{-x}\\) with \\(y = 3^x\\). The input variable \\(x\\) has been replaced by \\(-x\\).",
+            "workingOut": "\\(x \\to -x\\)"
+          },
+          {
+            "explanation": "Replacing \\(x\\) with \\(-x\\) swaps left and right, which corresponds to a reflection across the \\(y\\)-axis.",
+            "workingOut": "\\(\\text{Reflection in the } y\\text{-axis}\\)"
+          },
+          {
+            "explanation": "The exponential growth curve becomes an exponential decay curve. The \\(y\\)-intercept remains \\((0, 1)\\).",
+            "workingOut": "\\(\\text{Growth } \\to \\text{ Decay}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Equation 1 is an exponential growth curve passing through \\((0,1)\\). \\nEquation 2 is a reflection of Equation 1 across the \\(y\\)-axis (exponential decay). \\nEquation 3 is a vertical stretch of Equation 2 by a factor of 4, meaning its \\(y\\)-intercept is now \\((0, 4)\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "Equation 1 is an exponential growth curve passing through \\((0,1)\\). \\nEquation 2 is a reflection of Equation 1 across the \\(y\\)-axis (exponential decay). \\nEquation 3 is a vertical stretch of Equation 2 by a factor of 4, meaning its \\(y\\)-intercept is now \\((0, 4)\\)."
+        "id": "y11a-5D-new-9b-3",
+        "type": "multiple_choice",
+        "question": "What transformation maps function 2 to function 3: \\(y = 4 \\times 3^{-x}\\), and what is its \\(y\\)-intercept?",
+        "opts": [
+          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)",
+          "Horizontal stretch by 4; y-intercept is \\((0, 1)\\)",
+          "Vertical stretch by 4; y-intercept is \\((0, 4^3)\\)",
+          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)"
+        ],
+        "options": [
+          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)",
+          "Horizontal stretch by 4; y-intercept is \\((0, 1)\\)",
+          "Vertical stretch by 4; y-intercept is \\((0, 4^3)\\)",
+          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "The whole function is multiplied by 4. Find the value at \\(x = 0\\).",
+        "solution": "Multiplying by 4 is a vertical stretch by factor 4. At \\(x = 0\\), \\(y = 4 \\times 3^0 = 4\\), so the y-intercept is \\((0, 4)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "In function 3, the entire expression \\(3^{-x}\\) is multiplied by 4. This is a vertical dilation by factor 4.",
+            "workingOut": "\\(y = 4 \\times f(x)\\)"
+          },
+          {
+            "explanation": "To find the new \\(y\\)-intercept, substitute \\(x = 0\\) into the new function.",
+            "workingOut": "\\(y = 4 \\times 3^{-0} = 4 \\times 1 = 4\\)"
+          },
+          {
+            "explanation": "The \\(y\\)-intercept is now \\((0, 4)\\). Every point on function 2 has its y-coordinate multiplied by 4.",
+            "workingOut": "\\(\\text{New y-intercept: } (0, 4)\\)"
+          }
+        ]
       }
     ]
   },
