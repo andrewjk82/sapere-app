@@ -767,14 +767,21 @@ ITEMS.push(
     topicId: 'y12a-2I',
     difficulty: 'medium',
     source: 'Abbotsleigh 2020',
-    q: 'River depth \\(D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c\\) has max 5 m and min 1 m. Amplitude \\(a\\)?',
+    q:
+      'Sophie models the depth of a river (in metres) by\n' +
+      '\\(D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c\\),\n' +
+      'where \\(t\\) is time in hours. The maximum depth is \\(5\\,\\text{m}\\) and the minimum depth is \\(1\\,\\text{m}\\).\n\n' +
+      'What is the amplitude \\(a\\)?',
     correct: '\\(a = 2\\)',
     distractors: ['\\(a = 4\\)', '\\(a = 3\\)', '\\(a = 1\\)'],
     a: nextA(),
     solutionSteps: [
-      step('Amplitude is half the difference of max and min.', '\\(a = \\dfrac{\\max - \\min}{2}\\)'),
-      step('\\(a = \\dfrac{5 - 1}{2} = 2\\).', '\\(a = 2\\)'),
-      step('So amplitude is 2 m.', '\\(a = 2\\)'),
+      step(
+        'For \\(D = a\\sin(\\ldots) + c\\), the amplitude is half the difference of maximum and minimum depth.',
+        '\\(a = \\dfrac{\\text{max} - \\text{min}}{2}\\)'
+      ),
+      step('Substitute max \\(5\\,\\text{m}\\) and min \\(1\\,\\text{m}\\).', '\\(a = \\dfrac{5 - 1}{2} = 2\\)'),
+      step('Therefore the amplitude is \\(a = 2\\) metres.', '\\(a = 2\\)'),
     ],
   }),
   mc({
@@ -782,14 +789,21 @@ ITEMS.push(
     topicId: 'y12a-2I',
     difficulty: 'medium',
     source: 'Abbotsleigh 2020',
-    q: 'Same model, max 5 m, min 1 m. Value of \\(c\\)?',
+    q:
+      'Sophie models the depth of a river (in metres) by\n' +
+      '\\(D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c\\),\n' +
+      'where \\(t\\) is time in hours. The maximum depth is \\(5\\,\\text{m}\\) and the minimum depth is \\(1\\,\\text{m}\\).\n\n' +
+      'What is the value of the constant \\(c\\)?',
     correct: '\\(c = 3\\)',
     distractors: ['\\(c = 2\\)', '\\(c = 4\\)', '\\(c = 5\\)'],
     a: nextA(),
     solutionSteps: [
-      step('Centre line is the average of max and min.', '\\(c = \\dfrac{\\max + \\min}{2}\\)'),
-      step('\\(c = \\dfrac{5 + 1}{2} = 3\\).', '\\(c = 3\\)'),
-      step('Mean depth is 3 m.', '\\(c = 3\\)'),
+      step(
+        'The constant \\(c\\) is the centre line (mean depth): the average of the maximum and minimum values.',
+        '\\(c = \\dfrac{\\text{max} + \\text{min}}{2}\\)'
+      ),
+      step('Using max \\(5\\,\\text{m}\\) and min \\(1\\,\\text{m}\\).', '\\(c = \\dfrac{5 + 1}{2} = 3\\)'),
+      step('So the mean depth is \\(c = 3\\) metres.', '\\(c = 3\\)'),
     ],
   }),
   mc({
@@ -797,14 +811,21 @@ ITEMS.push(
     topicId: 'y12a-2I',
     difficulty: 'medium',
     source: 'Abbotsleigh 2020',
-    q: 'Same model; period between peaks is 12 hours. Find \\(n\\).',
+    q:
+      'Sophie models the depth of a river (in metres) by\n' +
+      '\\(D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c\\),\n' +
+      'where \\(t\\) is time in hours.\n\n' +
+      'The time between successive maximum depths (the period) is exactly \\(12\\) hours. Find the value of \\(n\\).',
     correct: '\\(n = \\dfrac{\\pi}{6}\\)',
     distractors: ['\\(n = \\dfrac{\\pi}{12}\\)', '\\(n = \\dfrac{\\pi}{3}\\)', '\\(n = \\dfrac{2\\pi}{3}\\)'],
     a: nextA(),
     solutionSteps: [
-      step('Period \\(T = \\dfrac{2\\pi}{n} = 12\\).', '\\(\\dfrac{2\\pi}{n} = 12\\)'),
-      step('Solve: \\(n = \\dfrac{2\\pi}{12} = \\dfrac{\\pi}{6}\\).', '\\(n = \\dfrac{\\pi}{6}\\)'),
-      step('So \\(n = \\dfrac{\\pi}{6}\\).', '\\(n = \\dfrac{\\pi}{6}\\)'),
+      step(
+        'For \\(D = a\\sin(nt + \\phi) + c\\), the period is \\(T = \\dfrac{2\\pi}{|n|}\\). Here \\(T = 12\\) hours.',
+        '\\(\\dfrac{2\\pi}{n} = 12\\quad (n > 0)\\)'
+      ),
+      step('Solve for \\(n\\).', '\\(n = \\dfrac{2\\pi}{12} = \\dfrac{\\pi}{6}\\)'),
+      step('Therefore \\(n = \\dfrac{\\pi}{6}\\).', '\\(n = \\dfrac{\\pi}{6}\\)'),
     ],
   }),
   mc({
