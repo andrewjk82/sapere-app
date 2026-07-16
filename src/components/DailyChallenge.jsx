@@ -1668,6 +1668,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             score: questionsCorrect,
             total: displayTotal,
             hasWorkingOut,
+            modeBonusXp: modeBonus,
+            xpEarned,
             timestamp: now.toISOString(),
           }).catch((err) => console.warn('mode_review pointer failed (non-fatal):', err?.code || err));
         }

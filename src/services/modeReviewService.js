@@ -14,12 +14,21 @@ import {
   limit,
   orderBy,
   query,
+  runTransaction,
+  serverTimestamp,
   setDoc,
+  updateDoc,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import { getModeBonusXp, getChallengeMode } from '../constants/challengeModes';
+import { getEarnedXp } from '../utils/challengeUtils';
 
 const COLLECTION = 'mode_review';
 const LIST_LIMIT = 80;
+
+/** Default copy shown on the student penalty modal. */
+export const DEFAULT_MODE_BONUS_PENALTY_MESSAGE =
+  'Your teacher removed the Challenge / Extreme mode bonus for this session because your working out was incomplete or not done properly.\n\nFrom next week, write full working out on every question — not empty boards or quick dots only. Your base practice XP is kept; only the mode bonus was removed.';
 
 /** Stable pointer id so one student + day + type overwrites (no duplicates). */
 export const modeReviewDocId = (studentId, statCollection, statDocId) =>
@@ -39,6 +48,8 @@ export async function recordModeReviewSession({
   score,
   total,
   hasWorkingOut = false,
+  modeBonusXp = 0,
+  xpEarned = 0,
   timestamp,
 } = {}) {
   if (!studentId || !statCollection || !statDocId) return null;
@@ -56,12 +67,171 @@ export async function recordModeReviewSession({
     score: Number(score) || 0,
     total: Number(total) || 0,
     hasWorkingOut: Boolean(hasWorkingOut),
+    modeBonusXp: Math.max(0, Number(modeBonusXp) || 0),
+    xpEarned: Math.max(0, Number(xpEarned) || 0),
+    modeBonusRevoked: false,
     timestamp: timestamp || new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
 
   await setDoc(doc(db, COLLECTION, id), payload, { merge: true });
   return { id, ...payload };
+}
+
+/**
+ * Resolve how much mode bonus XP is still on this session (0 if already revoked).
+ */
+export function resolveModeBonusXp(pointer = {}, statData = null) {
+  if (pointer.modeBonusRevoked || statData?.modeBonusRevoked) return 0;
+  const fromStat = Number(statData?.modeBonusXp);
+  if (fromStat > 0) return fromStat;
+  const fromPtr = Number(pointer.modeBonusXp);
+  if (fromPtr > 0) return fromPtr;
+
+  // Recompute from score if older pointers lack modeBonusXp.
+  const modeId = pointer.challengeMode || statData?.challengeMode;
+  if (modeId !== 'challenge' && modeId !== 'extreme') return 0;
+  const score = Number(statData?.score ?? pointer.score) || 0;
+  const total = Number(statData?.total ?? pointer.total) || 0;
+  const type = (pointer.challengeType || statData?.challengeType) === 'calc' ? 'calc' : 'daily';
+  // hasCalculationTest unknown in review — use true (50 XP daily max); bonus % still matches.
+  const baseXp = getEarnedXp(score, total, type, true);
+  return getModeBonusXp(modeId, { abandoned: false, baseXp });
+}
+
+/**
+ * Teacher action: strip mode bonus XP from the student, zero it on the stat
+ * + mode_review pointer, and queue a student-facing penalty notice modal.
+ */
+export async function revokeModeBonus(pointer, {
+  message = DEFAULT_MODE_BONUS_PENALTY_MESSAGE,
+  teacherNote = '',
+} = {}) {
+  if (!pointer?.studentId || !pointer?.statCollection || !pointer?.statDocId) {
+    throw new Error('Missing session pointer');
+  }
+  if (pointer.modeBonusRevoked) {
+    throw new Error('Bonus already removed');
+  }
+
+  const { studentId, statCollection, statDocId } = pointer;
+  const pointerId = pointer.id || modeReviewDocId(studentId, statCollection, statDocId);
+  const userRef = doc(db, 'users', studentId);
+  const statRef = doc(db, 'users', studentId, statCollection, statDocId);
+  const pointerRef = doc(db, COLLECTION, pointerId);
+  const leaderboardRef = doc(db, 'leaderboard', studentId);
+
+  const result = await runTransaction(db, async (tx) => {
+    // Sequential reads required by Firestore transactions.
+    const userSnap = await tx.get(userRef);
+    const statSnap = await tx.get(statRef);
+    const pointerSnap = await tx.get(pointerRef);
+
+    const statData = statSnap.exists() ? statSnap.data() : null;
+    const ptrData = pointerSnap.exists() ? { id: pointerSnap.id, ...pointerSnap.data() } : pointer;
+    const merged = { ...ptrData, ...pointer };
+
+    if (merged.modeBonusRevoked || statData?.modeBonusRevoked) {
+      throw new Error('Bonus already removed');
+    }
+
+    const bonus = resolveModeBonusXp(merged, statData);
+    if (bonus <= 0) {
+      throw new Error('No mode bonus XP found on this session');
+    }
+
+    const userData = userSnap.exists() ? userSnap.data() : {};
+    const currentXP = Number(userData.totalXP) || 0;
+    const newXP = Math.max(0, currentXP - bonus);
+    const nowIso = new Date().toISOString();
+    const modeId = merged.challengeMode || statData?.challengeMode || 'challenge';
+    const modeLabel = getChallengeMode(modeId).label;
+    const challengeType = (merged.challengeType || statData?.challengeType) === 'calc' ? 'calc' : 'daily';
+    const typeLabel = challengeType === 'calc' ? 'Calculation' : 'Daily Practice';
+
+    const notice = {
+      amount: bonus,
+      challengeMode: modeId,
+      modeLabel,
+      challengeType,
+      typeLabel,
+      date: statDocId,
+      statCollection,
+      message: String(message || DEFAULT_MODE_BONUS_PENALTY_MESSAGE).trim(),
+      teacherNote: String(teacherNote || '').trim(),
+      studentName: merged.studentName || userData.name || userData.displayName || 'Student',
+      createdAt: nowIso,
+      xpBefore: currentXP,
+      xpAfter: newXP,
+    };
+
+    tx.set(userRef, {
+      totalXP: newXP,
+      modeBonusPenaltyNotice: notice,
+      lastActive: nowIso,
+    }, { merge: true });
+
+    tx.set(leaderboardRef, {
+      totalXP: newXP,
+      lastUpdated: serverTimestamp(),
+    }, { merge: true });
+
+    if (statSnap.exists()) {
+      const prevEarned = Number(statData.xpEarned);
+      const nextEarned = Number.isFinite(prevEarned)
+        ? Math.max(0, prevEarned - bonus)
+        : undefined;
+      tx.set(statRef, {
+        modeBonusXp: 0,
+        modeBonusRevoked: true,
+        modeBonusRevokedAt: nowIso,
+        modeBonusRevokedAmount: bonus,
+        ...(nextEarned !== undefined ? { xpEarned: nextEarned } : {}),
+      }, { merge: true });
+    }
+
+    tx.set(pointerRef, {
+      modeBonusXp: 0,
+      modeBonusRevoked: true,
+      modeBonusRevokedAt: nowIso,
+      modeBonusRevokedAmount: bonus,
+      updatedAt: nowIso,
+    }, { merge: true });
+
+    return { bonus, newXP, previousXP: currentXP, notice };
+  });
+
+  // Non-transactional notification (best-effort inbox entry).
+  try {
+    const notifRef = doc(collection(db, 'users', studentId, 'notifications'));
+    await setDoc(notifRef, {
+      type: 'mode_bonus_revoked',
+      title: 'Mode bonus removed',
+      body: `−${result.bonus} XP mode bonus · write full working out next time`,
+      message: result.notice.message,
+      read: false,
+      timestamp: serverTimestamp(),
+      metadata: {
+        type: 'mode_bonus_revoked',
+        amount: result.bonus,
+        date: statDocId,
+        challengeMode: pointer.challengeMode,
+        challengeType: pointer.challengeType,
+      },
+    });
+  } catch (err) {
+    console.warn('[modeReview] penalty notification failed (non-fatal):', err?.code || err);
+  }
+
+  return result;
+}
+
+/** Student dismisses the penalty modal after reading it. */
+export async function clearModeBonusPenaltyNotice(uid) {
+  if (!uid) return;
+  await updateDoc(doc(db, 'users', uid), {
+    modeBonusPenaltyNotice: null,
+  });
 }
 
 /**

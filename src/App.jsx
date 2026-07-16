@@ -89,6 +89,7 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import FlameBuddy from './components/FlameBuddy';
 import SecretNoteClearModal from './components/SecretNoteClearModal';
+import ModeBonusPenaltyModal from './components/ModeBonusPenaltyModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
 import { doc, getDoc, onSnapshot, query, collection, orderBy, limit, updateDoc, deleteField } from 'firebase/firestore';
@@ -1386,6 +1387,20 @@ function App() {
           isPreview={Boolean(snClearDesignPreview)}
           forcePayload={snClearDesignPreview}
           onForceDismiss={() => setSnClearDesignPreview(null)}
+        />
+      )}
+
+      {/* Teacher stripped Challenge/Extreme mode bonus — show once until dismissed. */}
+      {!isAdmin && user?.uid && !examInProgress && (
+        <ModeBonusPenaltyModal
+          uid={user.uid}
+          firstName={
+            (profile || sharedProfile)?.firstName
+            || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
+            || ''
+          }
+          notice={(profile || sharedProfile)?.modeBonusPenaltyNotice || null}
+          currentXP={Number((profile || sharedProfile)?.totalXP) || 0}
         />
       )}
 

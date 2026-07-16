@@ -1,15 +1,19 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Zap, Flame, BookOpen, Calculator, PenLine, RefreshCw, Filter, User,
+  Zap, Flame, BookOpen, Calculator, PenLine, RefreshCw, Filter, User, Ban,
 } from 'lucide-react';
 import {
   fetchModeReviewSessions,
   loadModeReviewDetail,
   loadModeReviewWorkingOut,
+  revokeModeBonus,
+  resolveModeBonusXp,
+  DEFAULT_MODE_BONUS_PENALTY_MESSAGE,
 } from '../services/modeReviewService';
 import { getChallengeMode } from '../constants/challengeModes';
 import ChallengeDetailModal from './studentDetail/ChallengeDetailModal';
+import { useToast } from '../context/ToastContext';
 
 const MODE_FILTERS = [
   { id: 'all', label: 'All modes' },
@@ -70,6 +74,7 @@ function ModeBadge({ modeId }) {
 }
 
 const ModeReviewPanel = ({ searchQuery = '' }) => {
+  const { showToast } = useToast();
   const [sessions, setSessions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -80,6 +85,9 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
   const [activePointer, setActivePointer] = useState(null);
   const [workingOutPreview, setWorkingOutPreview] = useState(null);
   const [reloadToken, setReloadToken] = useState(0);
+  const [revokeTarget, setRevokeTarget] = useState(null);
+  const [revokeMessage, setRevokeMessage] = useState(DEFAULT_MODE_BONUS_PENALTY_MESSAGE);
+  const [revoking, setRevoking] = useState(false);
 
   const load = useCallback(() => {
     setReloadToken((t) => t + 1);
@@ -190,6 +198,44 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
   const closeDetail = () => {
     setSelectedChallenge(null);
     setActivePointer(null);
+  };
+
+  const openRevoke = (session, e) => {
+    e?.stopPropagation?.();
+    if (session.modeBonusRevoked) return;
+    setRevokeMessage(DEFAULT_MODE_BONUS_PENALTY_MESSAGE);
+    setRevokeTarget(session);
+  };
+
+  const confirmRevoke = async () => {
+    if (!revokeTarget || revoking) return;
+    setRevoking(true);
+    try {
+      const result = await revokeModeBonus(revokeTarget, { message: revokeMessage });
+      setSessions((prev) =>
+        prev.map((s) =>
+          s.id === revokeTarget.id
+            ? {
+                ...s,
+                modeBonusXp: 0,
+                modeBonusRevoked: true,
+                modeBonusRevokedAmount: result.bonus,
+                modeBonusRevokedAt: new Date().toISOString(),
+              }
+            : s,
+        ),
+      );
+      showToast(
+        `Removed +${result.bonus} mode bonus XP from ${revokeTarget.studentName || 'student'}`,
+        'success',
+      );
+      setRevokeTarget(null);
+    } catch (err) {
+      console.warn('[ModeReview] revoke failed:', err);
+      showToast(err?.message || 'Could not remove bonus XP', 'error');
+    } finally {
+      setRevoking(false);
+    }
   };
 
   if (loading) {
@@ -336,109 +382,184 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
             const isCalc = s.challengeType === 'calc';
             const pct = s.total > 0 ? Math.round((100 * (s.score || 0)) / s.total) : null;
             const busy = openingId === s.id;
+            const bonus = resolveModeBonusXp(s);
+            const revoked = Boolean(s.modeBonusRevoked);
             return (
-              <motion.button
+              <motion.div
                 key={s.id}
-                type="button"
                 initial={{ opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: Math.min(i * 0.02, 0.2) }}
-                onClick={() => handleOpen(s)}
-                disabled={busy}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
                   gap: 14,
                   width: '100%',
-                  textAlign: 'left',
                   padding: '16px 18px',
                   borderRadius: 16,
-                  border: '1.5px solid #e2e8f0',
-                  background: '#fff',
-                  cursor: busy ? 'wait' : 'pointer',
+                  border: revoked ? '1.5px solid #fecaca' : '1.5px solid #e2e8f0',
+                  background: revoked ? '#fffbfb' : '#fff',
                   boxShadow: '0 2px 10px rgba(15,23,42,0.04)',
                   opacity: busy ? 0.7 : 1,
                 }}
               >
-                <div
+                <button
+                  type="button"
+                  onClick={() => handleOpen(s)}
+                  disabled={busy}
                   style={{
-                    width: 44,
-                    height: 44,
-                    borderRadius: 14,
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center',
-                    background: isCalc ? '#fffbeb' : '#eef2ff',
-                    color: isCalc ? '#b45309' : '#4338ca',
-                    flexShrink: 0,
+                    gap: 14,
+                    flex: 1,
+                    minWidth: 0,
+                    textAlign: 'left',
+                    border: 'none',
+                    background: 'transparent',
+                    padding: 0,
+                    cursor: busy ? 'wait' : 'pointer',
                   }}
                 >
-                  {isCalc ? <Calculator size={20} /> : <BookOpen size={20} />}
-                </div>
+                  <div
+                    style={{
+                      width: 44,
+                      height: 44,
+                      borderRadius: 14,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      background: isCalc ? '#fffbeb' : '#eef2ff',
+                      color: isCalc ? '#b45309' : '#4338ca',
+                      flexShrink: 0,
+                    }}
+                  >
+                    {isCalc ? <Calculator size={20} /> : <BookOpen size={20} />}
+                  </div>
 
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-                    <span style={{ fontWeight: 900, color: '#0f172a', fontSize: '0.98rem' }}>
-                      {s.studentName || 'Student'}
-                    </span>
-                    <ModeBadge modeId={s.challengeMode} />
-                    <span
-                      style={{
-                        padding: '2px 8px',
-                        borderRadius: 8,
-                        fontSize: '0.7rem',
-                        fontWeight: 800,
-                        color: isCalc ? '#b45309' : '#4338ca',
-                        background: isCalc ? '#fffbeb' : '#eef2ff',
-                      }}
-                    >
-                      {isCalc ? 'Calculation' : 'Daily Practice'}
-                    </span>
-                    {s.hasWorkingOut && (
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                      <span style={{ fontWeight: 900, color: '#0f172a', fontSize: '0.98rem' }}>
+                        {s.studentName || 'Student'}
+                      </span>
+                      <ModeBadge modeId={s.challengeMode} />
                       <span
-                        title="Has working-out sketches"
                         style={{
-                          display: 'inline-flex',
-                          alignItems: 'center',
-                          gap: 4,
-                          color: '#64748b',
-                          fontSize: '0.72rem',
-                          fontWeight: 700,
+                          padding: '2px 8px',
+                          borderRadius: 8,
+                          fontSize: '0.7rem',
+                          fontWeight: 800,
+                          color: isCalc ? '#b45309' : '#4338ca',
+                          background: isCalc ? '#fffbeb' : '#eef2ff',
                         }}
                       >
-                        <PenLine size={12} /> Sketch
+                        {isCalc ? 'Calculation' : 'Daily Practice'}
                       </span>
+                      {s.hasWorkingOut && (
+                        <span
+                          title="Has working-out sketches"
+                          style={{
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: 4,
+                            color: '#64748b',
+                            fontSize: '0.72rem',
+                            fontWeight: 700,
+                          }}
+                        >
+                          <PenLine size={12} /> Sketch
+                        </span>
+                      )}
+                      {revoked && (
+                        <span
+                          style={{
+                            padding: '2px 8px',
+                            borderRadius: 8,
+                            fontSize: '0.7rem',
+                            fontWeight: 800,
+                            color: '#b91c1c',
+                            background: '#fef2f2',
+                          }}
+                        >
+                          Bonus removed
+                          {s.modeBonusRevokedAmount ? ` (−${s.modeBonusRevokedAmount})` : ''}
+                        </span>
+                      )}
+                    </div>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 14px', color: '#94a3b8', fontSize: '0.8rem', fontWeight: 600 }}>
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+                        <User size={12} />
+                        {formatWhen(s.timestamp)}
+                      </span>
+                      <span style={{ fontFamily: 'ui-monospace, monospace', fontSize: '0.75rem' }}>
+                        {s.statDocId}
+                      </span>
+                      {!revoked && bonus > 0 && (
+                        <span style={{ color: '#d97706', fontWeight: 800 }}>
+                          +{bonus} mode bonus
+                        </span>
+                      )}
+                    </div>
+                  </div>
+
+                  <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                    <div style={{ fontWeight: 900, fontSize: '1.15rem', color: '#0f172a' }}>
+                      {s.score ?? 0}
+                      <span style={{ color: '#94a3b8', fontWeight: 700 }}>/{s.total ?? 0}</span>
+                    </div>
+                    {pct != null && (
+                      <div
+                        style={{
+                          fontSize: '0.75rem',
+                          fontWeight: 800,
+                          color: pct >= 80 ? '#16a34a' : pct >= 50 ? '#d97706' : '#dc2626',
+                        }}
+                      >
+                        {pct}%
+                      </div>
                     )}
                   </div>
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px 14px', color: '#94a3b8', fontSize: '0.8rem', fontWeight: 600 }}>
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-                      <User size={12} />
-                      {formatWhen(s.timestamp)}
-                    </span>
-                    <span style={{ fontFamily: 'ui-monospace, monospace', fontSize: '0.75rem' }}>
-                      {s.statDocId}
-                    </span>
-                  </div>
-                </div>
+                </button>
 
-                <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                  <div style={{ fontWeight: 900, fontSize: '1.15rem', color: '#0f172a' }}>
-                    {s.score ?? 0}
-                    <span style={{ color: '#94a3b8', fontWeight: 700 }}>/{s.total ?? 0}</span>
-                  </div>
-                  {pct != null && (
-                    <div
-                      style={{
-                        fontSize: '0.75rem',
-                        fontWeight: 800,
-                        color: pct >= 80 ? '#16a34a' : pct >= 50 ? '#d97706' : '#dc2626',
-                      }}
-                    >
-                      {pct}%
-                    </div>
-                  )}
-                </div>
-              </motion.button>
+                {!revoked ? (
+                  <button
+                    type="button"
+                    onClick={(e) => openRevoke(s, e)}
+                    title="Remove mode bonus XP"
+                    style={{
+                      flexShrink: 0,
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      gap: 6,
+                      padding: '10px 12px',
+                      borderRadius: 12,
+                      border: '1.5px solid #fecaca',
+                      background: '#fff1f2',
+                      color: '#be123c',
+                      fontWeight: 800,
+                      fontSize: '0.78rem',
+                      cursor: 'pointer',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    <Ban size={14} />
+                    Remove bonus
+                  </button>
+                ) : (
+                  <span
+                    style={{
+                      flexShrink: 0,
+                      padding: '10px 12px',
+                      borderRadius: 12,
+                      background: '#f1f5f9',
+                      color: '#94a3b8',
+                      fontWeight: 800,
+                      fontSize: '0.75rem',
+                    }}
+                  >
+                    Done
+                  </span>
+                )}
+              </motion.div>
             );
           })}
         </div>
@@ -475,6 +596,145 @@ const ModeReviewPanel = ({ searchQuery = '' }) => {
           />
         </div>
       )}
+
+      <AnimatePresence>
+        {revokeTarget && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 3000,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 20,
+              background: 'rgba(15,23,42,0.55)',
+              backdropFilter: 'blur(4px)',
+            }}
+            onClick={() => !revoking && setRevokeTarget(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.94, opacity: 0, y: 10 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.96, opacity: 0 }}
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                width: 'min(480px, 100%)',
+                background: '#fff',
+                borderRadius: 20,
+                padding: '24px 22px',
+                boxShadow: '0 24px 50px rgba(0,0,0,0.18)',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+                <div
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 12,
+                    background: '#fff1f2',
+                    color: '#be123c',
+                    display: 'grid',
+                    placeItems: 'center',
+                  }}
+                >
+                  <Ban size={18} />
+                </div>
+                <div>
+                  <h3 style={{ margin: 0, fontWeight: 900, color: '#0f172a', fontSize: '1.1rem' }}>
+                    Remove mode bonus
+                  </h3>
+                  <p style={{ margin: 0, color: '#64748b', fontWeight: 600, fontSize: '0.85rem' }}>
+                    {revokeTarget.studentName || 'Student'} · {revokeTarget.statDocId}
+                  </p>
+                </div>
+              </div>
+
+              <p style={{ margin: '0 0 12px', color: '#475569', fontWeight: 600, fontSize: '0.9rem', lineHeight: 1.45 }}>
+                Deducts the Challenge / Extreme bonus XP from their total XP and leaderboard.
+                Base score XP stays. They will see a modal next time they open the app.
+              </p>
+
+              <div
+                style={{
+                  marginBottom: 12,
+                  padding: '10px 12px',
+                  borderRadius: 12,
+                  background: '#fef2f2',
+                  color: '#9f1239',
+                  fontWeight: 900,
+                  fontSize: '0.95rem',
+                }}
+              >
+                About −{resolveModeBonusXp(revokeTarget) || revokeTarget.modeBonusXp || '?'} XP
+                (exact amount confirmed from their session record)
+              </div>
+
+              <label style={{ display: 'block', fontWeight: 800, fontSize: '0.78rem', color: '#64748b', marginBottom: 6 }}>
+                Message to student
+              </label>
+              <textarea
+                value={revokeMessage}
+                onChange={(e) => setRevokeMessage(e.target.value)}
+                rows={5}
+                style={{
+                  width: '100%',
+                  boxSizing: 'border-box',
+                  padding: 12,
+                  borderRadius: 12,
+                  border: '1.5px solid #e2e8f0',
+                  fontWeight: 600,
+                  fontSize: '0.88rem',
+                  color: '#1e293b',
+                  resize: 'vertical',
+                  marginBottom: 16,
+                  fontFamily: 'inherit',
+                  lineHeight: 1.45,
+                }}
+              />
+
+              <div style={{ display: 'flex', gap: 10, justifyContent: 'flex-end' }}>
+                <button
+                  type="button"
+                  disabled={revoking}
+                  onClick={() => setRevokeTarget(null)}
+                  style={{
+                    padding: '11px 16px',
+                    borderRadius: 12,
+                    border: '1.5px solid #e2e8f0',
+                    background: '#fff',
+                    color: '#64748b',
+                    fontWeight: 800,
+                    cursor: 'pointer',
+                  }}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  disabled={revoking}
+                  onClick={confirmRevoke}
+                  style={{
+                    padding: '11px 16px',
+                    borderRadius: 12,
+                    border: 'none',
+                    background: '#be123c',
+                    color: '#fff',
+                    fontWeight: 900,
+                    cursor: revoking ? 'wait' : 'pointer',
+                    opacity: revoking ? 0.75 : 1,
+                  }}
+                >
+                  {revoking ? 'Removing…' : 'Remove bonus XP'}
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
