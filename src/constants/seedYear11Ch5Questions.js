@@ -32,7 +32,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-1b",
@@ -67,7 +68,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-1c",
@@ -102,7 +104,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-1d",
@@ -137,7 +140,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-2a",
@@ -177,7 +181,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-2b",
@@ -212,7 +217,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-2c",
@@ -252,7 +258,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-2d",
@@ -287,7 +294,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-3a",
@@ -738,7 +746,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-8b",
@@ -790,7 +799,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-8c",
@@ -842,7 +852,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-8d",
@@ -894,7 +905,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-9a",
@@ -951,7 +963,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-9b",
@@ -1008,7 +1021,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-9c",
@@ -1065,7 +1079,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-10a",
@@ -1100,7 +1115,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-10b",
@@ -1135,7 +1151,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-10c",
@@ -1175,7 +1192,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-10d",
@@ -1210,7 +1228,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-11a",
@@ -2344,7 +2363,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5-19e",
@@ -9558,7 +9578,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1b",
@@ -9593,7 +9614,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1c",
@@ -9628,7 +9650,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1d",
@@ -9663,7 +9686,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1e",
@@ -9698,7 +9722,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1f",
@@ -9733,7 +9758,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1g",
@@ -9768,7 +9794,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-1h",
@@ -9803,7 +9830,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2a-i",
@@ -9844,7 +9872,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2a-ii",
@@ -9885,7 +9914,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2a-iii",
@@ -9926,7 +9956,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2a-iv",
@@ -9972,7 +10003,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2b-i",
@@ -10013,7 +10045,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2b-ii",
@@ -10054,7 +10087,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2b-iii",
@@ -10095,7 +10129,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2b-iv",
@@ -10141,7 +10176,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2c-i",
@@ -10182,7 +10218,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2c-ii",
@@ -10223,7 +10260,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2c-iii",
@@ -10264,7 +10302,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-2c-iv",
@@ -10310,7 +10349,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3a",
@@ -10362,7 +10402,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3b",
@@ -10414,7 +10455,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3c",
@@ -10471,7 +10513,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3d",
@@ -10528,7 +10571,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3e",
@@ -10585,7 +10629,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-3f",
@@ -10642,7 +10687,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4a",
@@ -10699,7 +10745,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4b",
@@ -10756,7 +10803,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4c",
@@ -10813,7 +10861,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4d",
@@ -10870,7 +10919,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4e",
@@ -10927,7 +10977,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4f",
@@ -10984,7 +11035,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4g",
@@ -11041,7 +11093,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-4h",
@@ -11098,7 +11151,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-5",
@@ -11263,7 +11317,8 @@ export const CH5_QUESTIONS_Y11A = [
         ]
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6a",
@@ -11304,7 +11359,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6b",
@@ -11345,7 +11401,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6c",
@@ -11386,7 +11443,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6d",
@@ -11427,7 +11485,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6e",
@@ -11468,7 +11527,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-6f",
@@ -11509,7 +11569,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7a",
@@ -11550,7 +11611,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7b",
@@ -11591,7 +11653,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7c",
@@ -11632,7 +11695,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7d",
@@ -11673,7 +11737,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7e",
@@ -11714,7 +11779,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-7f",
@@ -11755,7 +11821,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8a",
@@ -11790,7 +11857,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8b",
@@ -11830,7 +11898,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8c",
@@ -11865,7 +11934,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8d",
@@ -11900,7 +11970,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8e",
@@ -11935,7 +12006,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8f",
@@ -11970,7 +12042,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8g",
@@ -12005,7 +12078,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8h",
@@ -12045,7 +12119,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-8i",
@@ -12085,7 +12160,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-9a-i",
@@ -12120,7 +12196,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-9a-ii",
@@ -12160,7 +12237,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-9b-i",
@@ -12200,7 +12278,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-9b-ii",
@@ -12240,7 +12319,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10a",
@@ -12292,7 +12372,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-i",
@@ -12354,7 +12435,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-ii",
@@ -12416,7 +12498,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-iii",
@@ -12478,7 +12561,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-iv",
@@ -12540,7 +12624,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-v",
@@ -12602,7 +12687,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-10b-vi",
@@ -12664,7 +12750,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-11a-i",
@@ -12716,7 +12803,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-11a-ii",
@@ -12768,7 +12856,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-11b-i",
@@ -12825,7 +12914,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-11b-ii",
@@ -12866,7 +12956,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Dilation.",
-        "workingOut": "\\(\\text{Vertical compression by 1/3}\\)",
+        "workingOut": "\\(\\text{Vertical compression by }\\frac{1}{3}\\)",
         "graphData": null
       },
       {
@@ -12882,7 +12972,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-12a",
@@ -12944,7 +13035,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-12b",
@@ -13001,7 +13093,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-12c",
@@ -13058,7 +13151,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-13a",
@@ -13110,7 +13204,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-13b",
@@ -13167,7 +13262,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-13c",
@@ -13224,7 +13320,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-14a",
@@ -13281,7 +13378,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-14b",
@@ -13338,7 +13436,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-14c",
@@ -13379,7 +13478,7 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Transformations.",
-        "workingOut": "\\(\\text{Shift right 4, Vertical compress 1/2.}\\)",
+        "workingOut": "\\(\\text{Shift right 4, vertical compress by }\\frac{1}{2}\\)",
         "graphData": null
       },
       {
@@ -13395,7 +13494,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-15",
@@ -13576,7 +13676,8 @@ export const CH5_QUESTIONS_Y11A = [
         ]
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-16",
@@ -13669,7 +13770,8 @@ export const CH5_QUESTIONS_Y11A = [
         ]
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-17a",
@@ -13704,7 +13806,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-17b",
@@ -13761,7 +13864,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-17c",
@@ -13801,7 +13905,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-18",
@@ -13856,7 +13961,8 @@ export const CH5_QUESTIONS_Y11A = [
         "graphData": null
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-19a",
@@ -13913,7 +14019,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-19b",
@@ -13970,7 +14077,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-19c",
@@ -14027,7 +14135,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5E-new-19d",
@@ -14084,7 +14193,8 @@ export const CH5_QUESTIONS_Y11A = [
         }
       }
     ],
-    "isNew": true
+    "isNew": true,
+    "timeLimit": 60
   },
   {
     "id": "y11a-5F-new-1ai",
