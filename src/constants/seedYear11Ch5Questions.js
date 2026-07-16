@@ -16273,17 +16273,17 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Compute each composite separately on the domain x ≥ 0 where G is defined. F(G(x)) multiplies the square root by 9; G(F(x)) takes the square root of 9x.",
+        "explanation": "Compute each composite separately on the domain \\(x \\ge 0\\) where \\(G\\) is defined. \\(F(G(x))\\) multiplies the square root by 9; \\(G(F(x))\\) takes the square root of \\(9x\\).",
         "workingOut": "\\(F(x) = 9x,\\; G(x) = \\sqrt{x}\\)",
         "graphData": null
       },
       {
-        "explanation": "F(G(x)) = 9√x. G(F(x)) = √(9x) = √9 · √x = 3√x (for x ≥ 0). A common mistake is writing √(9x) = 9√x.",
+        "explanation": "\\(F(G(x)) = 9\\sqrt{x}\\). Also \\(G(F(x)) = \\sqrt{9x} = \\sqrt{9}\\cdot\\sqrt{x} = 3\\sqrt{x}\\) for \\(x \\ge 0\\). A common mistake is writing \\(\\sqrt{9x} = 9\\sqrt{x}\\).",
         "workingOut": "\\(F(G(x)) = 9\\sqrt{x},\\quad G(F(x)) = 3\\sqrt{x}\\)",
         "graphData": null
       },
       {
-        "explanation": "Then 3 · G(F(x)) = 3 · 3√x = 9√x = F(G(x)). The identity holds.",
+        "explanation": "Then \\(3\\cdot G(F(x)) = 3\\cdot 3\\sqrt{x} = 9\\sqrt{x} = F(G(x))\\). The identity holds.",
         "workingOut": "\\(F(G(x)) = 3\\,G(F(x))\\)",
         "graphData": null
       }
