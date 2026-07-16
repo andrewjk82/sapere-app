@@ -6985,25 +6985,190 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-13",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multipart",
     "difficulty": "medium",
-    "q": "Consider the hyperbola $y = \\frac{2}{x}$.\n**a)** The hyperbola is stretched horizontally by a factor of 3. Write down its equation.\n**b)** The original hyperbola is stretched vertically by a factor of 3. Write down its equation.\n**c)** What do you notice about the answers to parts **a** and **b**?\n**d)** Can these hyperbolae be achieved by a single enlargement from the origin?\n**e)** Briefly investigate whether there are any other functions that exhibit similar behaviour.",
-    "a": "See solution steps.",
+    "q": "Consider the hyperbola \\(y = \\frac{2}{x}\\).",
+    "question": "Consider the hyperbola \\(y = \\frac{2}{x}\\).",
     "opts": [],
-    "h": "Substitute the dilations carefully.",
-    "s": "**a)** Replace $x$ with $\\frac{x}{3}$. $y = \\frac{2}{x/3} = \\frac{6}{x}$.\\n**b)** Multiply the whole function by 3. $y = 3 \\times \\frac{2}{x} = \\frac{6}{x}$.\\n**c)** The equations are exactly the same.\\n**d)** Yes, an enlargement from the origin by a factor of $\\sqrt{3}$ replaces $x$ with $\\frac{x}{\\sqrt{3}}$ and $y$ with $\\frac{y}{\\sqrt{3}}$. Thus $\\frac{y}{\\sqrt{3}} = \\frac{2}{x/\\sqrt{3}} \\implies y = \\frac{6}{x}$.\\n**e)** Functions of the form $y = \\frac{A}{x^n}$ exhibit similar relationships between horizontal and vertical dilations.",
-    "solutionSteps": [
+    "options": [],
+    "a": null,
+    "answer": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Consider the hyperbola \\(y = \\frac{2}{x}\\).\n**a)** The hyperbola is stretched horizontally by a factor of 3. Write down its equation.\n**b)** The original hyperbola is stretched vertically by a factor of 3. Write down its equation.\n**c)** What do you notice about the answers to parts **a** and **b**?\n**d)** Can these hyperbolae be achieved by a single enlargement from the origin?\n**e)** Briefly investigate whether there are any other functions that exhibit similar behaviour.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
-        "workingOut": "\\(y = f(x)\\)"
+        "id": "y11a-5D-new-13a",
+        "type": "multiple_choice",
+        "question": "The hyperbola \\(y = \\frac{2}{x}\\) is stretched horizontally by a factor of 3. Which of the following is the equation of the new hyperbola?",
+        "opts": [
+          "\\(y = \\frac{6}{x}\\)",
+          "\\(y = \\frac{2}{3x}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2x}{3}\\)"
+        ],
+        "options": [
+          "\\(y = \\frac{6}{x}\\)",
+          "\\(y = \\frac{2}{3x}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2x}{3}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A horizontal stretch by a factor of 3 replaces \\(x\\) with \\(\\frac{x}{3}\\) inside the function.",
+        "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(y = \\frac{2}{x/3} = \\frac{2 \\times 3}{x} = \\frac{6}{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "We begin by recalling the rule for a horizontal dilation. A horizontal stretch by a factor of \\(k\\) replaces every \\(x\\) in the equation with \\(\\frac{x}{k}\\). Here, \\(k = 3\\), so we replace \\(x\\) with \\(\\frac{x}{3}\\) in the equation \\(y = \\frac{2}{x}\\).",
+            "workingOut": "\\(y = \\frac{2}{x} \\xrightarrow{\\text{horizontal stretch by 3}} y = \\frac{2}{x/3}\\)"
+          },
+          {
+            "explanation": "Next, we simplify the expression. Dividing by \\(\\frac{x}{3}\\) is the same as multiplying by \\(\\frac{3}{x}\\). So \\(y = \\frac{2}{x/3} = 2 \\times \\frac{3}{x} = \\frac{6}{x}\\).",
+            "workingOut": "\\(y = \\frac{2}{x/3} = 2 \\times \\frac{3}{x} = \\frac{6}{x}\\)"
+          },
+          {
+            "explanation": "Finally, the equation of the horizontally stretched hyperbola is \\(y = \\frac{6}{x}\\). Geometrically, this appears to be a 'wider' version of \\(y = \\frac{2}{x}\\) with the branches further from the axes.",
+            "workingOut": "\\(\\text{New equation: } y = \\frac{6}{x}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Next, we execute the required operations step-by-step. We apply the specific rules of dilation or translation, ensuring we do not confuse vertical transformations (external modifications) with horizontal transformations (internal modifications). A common mistake is applying the scale factor to the incorrect coordinate axis.",
-        "workingOut": "**a)** Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\).\\n**b)** Multiply the whole function by 3. \\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\).\\n**c)** The equations are exactly the same.\\n**d)** Yes, an enlargement from the origin by a factor of \\(\\sqrt{3}\\) replaces \\(x\\) with \\(\\frac{x}{\\sqrt{3}}\\) and \\(y\\) with \\(\\frac{y}{\\sqrt{3}}\\). Thus \\(\\frac{y}{\\sqrt{3}} = \\frac{2}{x/\\sqrt{3}} \\implies y = \\frac{6}{x}\\).\\n**e)** Functions of the form \\(y = \\frac{A}{x^n}\\) exhibit similar relationships between horizontal and vertical dilations."
+        "id": "y11a-5D-new-13b",
+        "type": "multiple_choice",
+        "question": "The original hyperbola \\(y = \\frac{2}{x}\\) is stretched vertically by a factor of 3. Which of the following is the equation of the new hyperbola?",
+        "opts": [
+          "\\(y = \\frac{6}{x}\\)",
+          "\\(y = \\frac{2}{3x}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2}{x-3}\\)"
+        ],
+        "options": [
+          "\\(y = \\frac{6}{x}\\)",
+          "\\(y = \\frac{2}{3x}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2}{x-3}\\)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "A vertical stretch by a factor of 3 multiplies the entire function output by 3.",
+        "solution": "Multiply the function by 3: \\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "A vertical dilation by a factor of \\(k\\) multiplies the entire function output by \\(k\\). Since \\(k = 3\\), we multiply the right-hand side by 3, keeping \\(x\\) unchanged. This stretches every \\(y\\)-value by a factor of 3.",
+            "workingOut": "\\(y = \\frac{2}{x} \\xrightarrow{\\text{vertical stretch by 3}} y = 3 \\times \\frac{2}{x}\\)"
+          },
+          {
+            "explanation": "We simplify by multiplying: \\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\).",
+            "workingOut": "\\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\)"
+          },
+          {
+            "explanation": "The equation of the vertically stretched hyperbola is \\(y = \\frac{6}{x}\\). Remarkably, this is identical to the result from part (a).",
+            "workingOut": "\\(\\text{New equation: } y = \\frac{6}{x}\\)"
+          }
+        ]
       },
       {
-        "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"**a)** Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\).\\n**b)** Multiply the whole function by 3. \\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\).\\n**c)** The equations are exactly the same.\\n**d)** Yes, an enlargement from the origin by a factor of \\(\\sqrt{3}\\) replaces \\(x\\) with \\(\\frac{x}{\\sqrt{3}}\\) and \\(y\\) with \\(\\frac{y}{\\sqrt{3}}\\). Thus \\(\\frac{y}{\\sqrt{3}} = \\frac{2}{x/\\sqrt{3}} \\implies y = \\frac{6}{x}\\).\\n**e)** Functions of the form \\(y = \\frac{A}{x^n}\\) exhibit similar relationships between horizontal and vertical dilations.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "**a)** Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\).\\n**b)** Multiply the whole function by 3. \\(y = 3 \\times \\frac{2}{x} = \\frac{6}{x}\\).\\n**c)** The equations are exactly the same.\\n**d)** Yes, an enlargement from the origin by a factor of \\(\\sqrt{3}\\) replaces \\(x\\) with \\(\\frac{x}{\\sqrt{3}}\\) and \\(y\\) with \\(\\frac{y}{\\sqrt{3}}\\). Thus \\(\\frac{y}{\\sqrt{3}} = \\frac{2}{x/\\sqrt{3}} \\implies y = \\frac{6}{x}\\).\\n**e)** Functions of the form \\(y = \\frac{A}{x^n}\\) exhibit similar relationships between horizontal and vertical dilations."
+        "id": "y11a-5D-new-13c",
+        "type": "multiple_choice",
+        "question": "What do you notice about the equations from parts (a) and (b)?",
+        "opts": [
+          "They are exactly the same equation.",
+          "They are different equations with different graphs.",
+          "Part (a) gives a wider graph; part (b) gives a taller graph.",
+          "The equations differ by a constant."
+        ],
+        "options": [
+          "They are exactly the same equation.",
+          "They are different equations with different graphs.",
+          "Part (a) gives a wider graph; part (b) gives a taller graph.",
+          "The equations differ by a constant."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Compare the two results: horizontal stretch by 3 gives \\(y = \\frac{6}{x}\\), vertical stretch by 3 also gives \\(y = \\frac{6}{x}\\).",
+        "solution": "Both a horizontal stretch by 3 and a vertical stretch by 3 produce the same equation \\(y = \\frac{6}{x}\\). The two transformations are indistinguishable on the hyperbola \\(y = \\frac{2}{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "In part (a), a horizontal stretch by 3 gave \\(y = \\frac{6}{x}\\). In part (b), a vertical stretch by 3 also gave \\(y = \\frac{6}{x}\\). This remarkable result means the two transformations produce identical graphs.",
+            "workingOut": "\\(\\text{Part (a): } y = \\frac{6}{x}, \\quad \\text{Part (b): } y = \\frac{6}{x}\\)"
+          },
+          {
+            "explanation": "This symmetry is a special property of the hyperbola \\(y = \\frac{A}{x}\\). Because the variable \\(x\\) appears in the denominator to the power 1, scaling the numerator by \\(k\\) has the exact same algebraic effect as replacing \\(x\\) with \\(\\frac{x}{k}\\).",
+            "workingOut": "\\(\\frac{A}{x/k} = \\frac{Ak}{x} = k \\cdot \\frac{A}{x}\\)"
+          },
+          {
+            "explanation": "Therefore, the two equations are exactly the same: \\(y = \\frac{6}{x}\\). The correct answer is that they are identical.",
+            "workingOut": "\\(\\text{Conclusion: both transformations give the same equation } y = \\frac{6}{x}\\)"
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-13d",
+        "type": "multiple_choice",
+        "question": "Can the hyperbola \\(y = \\frac{6}{x}\\) be obtained from \\(y = \\frac{2}{x}\\) by a single enlargement from the origin (applying the same scale factor \\(k\\) to both \\(x\\)- and \\(y\\)-axes)?",
+        "opts": [
+          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
+          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
+          "Yes — an enlargement by factor 3 achieves this.",
+          "No — you need two separate dilations for a hyperbola."
+        ],
+        "options": [
+          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
+          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
+          "Yes — an enlargement by factor 3 achieves this.",
+          "No — you need two separate dilations for a hyperbola."
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "An enlargement by factor \\(k\\) replaces \\(x \\to \\frac{x}{k}\\) and \\(y \\to \\frac{y}{k}\\) simultaneously.",
+        "solution": "An enlargement by \\(k\\) gives \\(\\frac{y}{k} = \\frac{2}{x/k}\\), so \\(y = \\frac{2k^2}{x}\\). Setting \\(\\frac{2k^2}{x} = \\frac{6}{x}\\) gives \\(k^2 = 3\\), so \\(k = \\sqrt{3}\\). Yes, an enlargement from the origin by \\(\\sqrt{3}\\) achieves this.",
+        "solutionSteps": [
+          {
+            "explanation": "An enlargement from the origin by scale factor \\(k\\) replaces every \\(x\\) with \\(\\frac{x}{k}\\) and every \\(y\\) with \\(\\frac{y}{k}\\) simultaneously. Applying this to \\(y = \\frac{2}{x}\\):",
+            "workingOut": "\\(\\frac{y}{k} = \\frac{2}{x/k} \\implies \\frac{y}{k} = \\frac{2k}{x} \\implies y = \\frac{2k^2}{x}\\)"
+          },
+          {
+            "explanation": "We need this to equal \\(\\frac{6}{x}\\). Setting \\(2k^2 = 6\\) gives \\(k^2 = 3\\), so \\(k = \\sqrt{3}\\).",
+            "workingOut": "\\(2k^2 = 6 \\implies k^2 = 3 \\implies k = \\sqrt{3}\\)"
+          },
+          {
+            "explanation": "Therefore, yes — a single enlargement from the origin with scale factor \\(k = \\sqrt{3}\\) maps \\(y = \\frac{2}{x}\\) to \\(y = \\frac{6}{x}\\). This confirms the hyperbola's special symmetry under simultaneous dilations.",
+            "workingOut": "\\(\\text{Enlargement factor: } k = \\sqrt{3} \\approx 1.73\\)"
+          }
+        ]
+      },
+      {
+        "id": "y11a-5D-new-13e",
+        "type": "multiple_choice",
+        "question": "Which family of functions has the same property as \\(y = \\frac{2}{x}\\) — where a horizontal dilation by \\(k\\) produces the same result as a vertical dilation by \\(k\\)?",
+        "opts": [
+          "\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
+          "\\(y = Ax^2\\) (parabolas through the origin)",
+          "\\(y = A \\sin(x)\\) (sinusoidal functions)",
+          "\\(y = Ax + B\\) (linear functions)"
+        ],
+        "options": [
+          "\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
+          "\\(y = Ax^2\\) (parabolas through the origin)",
+          "\\(y = A \\sin(x)\\) (sinusoidal functions)",
+          "\\(y = Ax + B\\) (linear functions)"
+        ],
+        "a": 0,
+        "answer": 0,
+        "hint": "Think about which functions have \\(x\\) in the denominator to the power 1, so that scaling \\(x\\) by \\(k\\) is algebraically equivalent to scaling \\(y\\) by \\(k\\).",
+        "solution": "Functions of the form \\(y = \\frac{A}{x}\\) satisfy this property. Replacing \\(x\\) with \\(\\frac{x}{k}\\) (horizontal stretch by \\(k\\)) gives \\(y = \\frac{Ak}{x}\\), which equals multiplying \\(y\\) by \\(k\\) (vertical stretch by \\(k\\)).",
+        "solutionSteps": [
+          {
+            "explanation": "For the property to hold, a horizontal stretch by \\(k\\) (replacing \\(x\\) with \\(\\frac{x}{k}\\)) must yield the same result as a vertical stretch by \\(k\\) (multiplying \\(y\\) by \\(k\\)). We test \\(y = \\frac{A}{x}\\):",
+            "workingOut": "\\(\\text{Horizontal stretch: } y = \\frac{A}{x/k} = \\frac{Ak}{x}\\)"
+          },
+          {
+            "explanation": "Now compare with the vertical stretch result: \\(y = k \\cdot \\frac{A}{x} = \\frac{Ak}{x}\\). Both give the same equation \\(y = \\frac{Ak}{x}\\).",
+            "workingOut": "\\(\\text{Vertical stretch: } y = k \\cdot \\frac{A}{x} = \\frac{Ak}{x} \\checkmark\\)"
+          },
+          {
+            "explanation": "This property holds for all functions of the form \\(y = \\frac{A}{x}\\). More generally, functions of the form \\(y = \\frac{A}{x^n}\\) satisfy a related property where a horizontal stretch by \\(k\\) equals a vertical stretch by \\(k^n\\).",
+            "workingOut": "\\(\\text{General family: } y = \\frac{A}{x} \\text{ satisfies: horizontal stretch by } k = \\text{vertical stretch by } k\\)"
+          }
+        ]
       }
     ]
   },
