@@ -413,10 +413,10 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
       text = text.replace(/,\s*,/g, ',');
       text = text.replace(/ {2,}/g, ' ');
 
-      // Render line breaks: real newlines AND the literal "\n" sequence that
-      // leaks into imported question/solution text become <br>. Only applied
-      // outside math blocks so KaTeX content is never corrupted.
-      text = text.replace(/\\n|\r\n|\r|\n/g, '<br>');
+      // Render line breaks: real newlines AND the literal "\n" newline escape.
+      // Do NOT match the start of TeX control words (\neq, \ne, \nu, \nabla, …)
+      // or "a \neq 0" becomes "a <br>eq 0" → "aeq0" on screen.
+      text = text.replace(/\r\n|\r|\n|\\n(?![a-zA-Z])/g, '<br>');
       parts2[i] = text;
     }
   }
