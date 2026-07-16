@@ -1603,16 +1603,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "A function $y = f(x)$ is transformed to $y = 3f(x)$. Describe the geometric transformation.",
-    "a": "0",
+    "q": "A function \\\\(y = f(x)\\\\) is transformed to \\\\(y = 3f(x)\\\\). Describe the geometric transformation.",
+    "a": 3,
     "opts": [
-      "Vertical dilation by a factor of $3$",
-      "Horizontal dilation by a factor of $3$",
-      "Vertical dilation by a factor of $\\frac{1}{3}$",
-      "Horizontal dilation by a factor of $\\frac{1}{3}$"
+      "Horizontal dilation by a factor of \\\\(\\frac{1}{3}\\\\)",
+      "Vertical dilation by a factor of \\\\(\\frac{1}{3}\\\\)",
+      "Horizontal dilation by a factor of \\\\(3\\\\)",
+      "Vertical dilation by a factor of \\\\(3\\\\)"
     ],
     "h": "Multiplying the entire function by a constant dilates it vertically.",
-    "s": "The $y$-values are multiplied by $3$. This is a vertical dilation by a factor of $3$.",
+    "s": "The \\\\(y\\\\)-values are multiplied by \\\\(3\\\\). This is a vertical dilation by a factor of \\\\(3\\\\).",
     "solutionSteps": [
       {
         "explanation": "We begin by analyzing the structure of the transformed function \\(y = 3f(x)\\). The original function is \\(y = f(x)\\), and the transformation involves multiplying the entire function output by a constant factor of 3. This indicates a vertical transformation because the multiplication is applied externally to the function's output values.",
@@ -1626,6 +1626,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we conclude that the transformation is a vertical stretch or vertical dilation by a factor of 3. Geometrically, this means the graph becomes steeper and is pulled away from the \\(x\\)-axis. Therefore, the correct option is a vertical dilation by a factor of 3.",
         "workingOut": "\\(\\text{Transformation: Vertical dilation by a factor of } 3\\)"
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal dilation by a factor of \\\\(\\frac{1}{3}\\\\)",
+      "Vertical dilation by a factor of \\\\(\\frac{1}{3}\\\\)",
+      "Horizontal dilation by a factor of \\\\(3\\\\)",
+      "Vertical dilation by a factor of \\\\(3\\\\)"
     ]
   },
   {
@@ -1634,16 +1641,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "A function $y = f(x)$ is transformed to $y = f(4x)$. Describe the geometric transformation.",
-    "a": "0",
+    "q": "A function \\\\(y = f(x)\\\\) is transformed to \\\\(y = f(4x)\\\\). Describe the geometric transformation.",
+    "a": 2,
     "opts": [
-      "Horizontal dilation by a factor of $\\frac{1}{4}$",
-      "Horizontal dilation by a factor of $4$",
-      "Vertical dilation by a factor of $\\frac{1}{4}$",
-      "Vertical dilation by a factor of $4$"
+      "Horizontal dilation by a factor of \\\\(4\\\\)",
+      "Vertical dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
+      "Horizontal dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
+      "Vertical dilation by a factor of \\\\(4\\\\)"
     ],
-    "h": "Multiplying $x$ by a constant $k$ dilates the graph horizontally by a factor of $1/k$.",
-    "s": "The transformation $x \\to 4x$ compresses the graph horizontally. The dilation factor is $\\frac{1}{4}$.",
+    "h": "Multiplying \\\\(x\\\\) by a constant \\\\(k\\\\) dilates the graph horizontally by a factor of \\\\(1/k\\\\).",
+    "s": "The transformation \\\\(x \\to 4x\\\\) compresses the graph horizontally. The dilation factor is \\\\(\\frac{1}{4}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We begin by analyzing the structure of the transformed function \\(y = f(4x)\\). The original function is \\(y = f(x)\\), and the transformation involves multiplying the independent variable \\(x\\) by a constant factor of 4 inside the function argument. This indicates a horizontal transformation because the modification is applied directly to the inputs.",
@@ -1657,6 +1664,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we conclude that the transformation is a horizontal compression or horizontal dilation by a factor of \\(\\frac{1}{4}\\). Geometrically, this squeezes the graph closer to the \\(y\\)-axis. Therefore, the correct option is a horizontal dilation by a factor of \\(\\frac{1}{4}\\).",
         "workingOut": "\\(\\text{Transformation: Horizontal dilation by a factor of } \\frac{1}{4}\\)"
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal dilation by a factor of \\\\(4\\\\)",
+      "Vertical dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
+      "Horizontal dilation by a factor of \\\\(\\frac{1}{4}\\\\)",
+      "Vertical dilation by a factor of \\\\(4\\\\)"
     ]
   },
   {
@@ -5549,13 +5563,18 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-1a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = x^2$ after it has been dilated **horizontally** by a factor of $\\frac{1}{3}$. Then, draw a sketch of the new image.",
-    "a": "y = 9x^2",
-    "opts": [],
-    "h": "For a horizontal dilation by a factor of $a$, replace $x$ with $\\frac{x}{a}$.",
-    "s": "Replace $x$ with $\\frac{x}{1/3} = 3x$. The new equation is $y = (3x)^2 = 9x^2$. The sketch is a much steeper parabola.",
+    "q": "Write down the new equation for the function \\\\(y = x^2\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{3}\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = 3x^2\\\\)",
+      "\\\\(y = \\\\frac{1}{9}x^2\\\\)",
+      "\\\\(y = 9x^2\\\\)",
+      "\\\\(y = \\\\frac{1}{3}x^2\\\\)"
+    ],
+    "h": "For a horizontal dilation by a factor of \\\\(a\\\\), replace \\\\(x\\\\) with \\\\(\\frac{x}{a}\\\\).",
+    "s": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{1/3} = 3x\\\\). The new equation is \\\\(y = (3x)^2 = 9x^2\\\\). The sketch is a much steeper parabola.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = x^2\\) after it has been dilated **horizontally** by a factor of \\(\\frac{1}{3}\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5569,19 +5588,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(x\\) with \\(\\frac{x}{1/3} = 3x\\). The new equation is \\(y = (3x)^2 = 9x^2\\). The sketch is a much steeper parabola.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(x\\) with \\(\\frac{x}{1/3} = 3x\\). The new equation is \\(y = (3x)^2 = 9x^2\\). The sketch is a much steeper parabola."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = 3x^2\\\\)",
+      "\\\\(y = \\\\frac{1}{9}x^2\\\\)",
+      "\\\\(y = 9x^2\\\\)",
+      "\\\\(y = \\\\frac{1}{3}x^2\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = 3^x$ after it has been dilated **vertically** by a factor of $4$. Then, draw a sketch of the new image.",
-    "a": "y = 4 * 3^x",
-    "opts": [],
-    "h": "For a vertical dilation by a factor of $k$, multiply the entire function by $k$.",
-    "s": "Multiply the function by 4. The new equation is $y = 4 \\times 3^x$. The sketch is the exponential curve shifted upwards multiplicatively, with a new y-intercept of 4.",
+    "q": "Write down the new equation for the function \\\\(y = 3^x\\\\) after it has been dilated **vertically** by a factor of \\\\(4\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = 3^{4x}\\\\)",
+      "\\\\(y = 3^{x/4}\\\\)",
+      "\\\\(y = 4 \\\\times 3^x\\\\)",
+      "\\\\(y = \\\\frac{1}{4} \\\\times 3^x\\\\)"
+    ],
+    "h": "For a vertical dilation by a factor of \\\\(k\\\\), multiply the entire function by \\\\(k\\\\).",
+    "s": "Multiply the function by 4. The new equation is \\\\(y = 4 \\times 3^x\\\\). The sketch is the exponential curve shifted upwards multiplicatively, with a new y-intercept of 4.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = 3^x\\) after it has been dilated **vertically** by a factor of \\(4\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5595,19 +5627,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Multiply the function by 4. The new equation is \\(y = 4 \\times 3^x\\). The sketch is the exponential curve shifted upwards multiplicatively, with a new y-intercept of 4.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Multiply the function by 4. The new equation is \\(y = 4 \\times 3^x\\). The sketch is the exponential curve shifted upwards multiplicatively, with a new y-intercept of 4."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = 3^{4x}\\\\)",
+      "\\\\(y = 3^{x/4}\\\\)",
+      "\\\\(y = 4 \\\\times 3^x\\\\)",
+      "\\\\(y = \\\\frac{1}{4} \\\\times 3^x\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1c",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = x^2 - 2$ after it has been dilated **vertically** by a factor of $3$. Then, draw a sketch of the new image.",
-    "a": "y = 3x^2 - 6",
-    "opts": [],
+    "q": "Write down the new equation for the function \\\\(y = x^2 - 2\\\\) after it has been dilated **vertically** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = 9x^2 - 2\\\\)",
+      "\\\\(y = 3x^2 - 2\\\\)",
+      "\\\\(y = 3x^2 - 6\\\\)",
+      "\\\\(y = \\\\frac{1}{3}x^2 - \\\\frac{2}{3}\\\\)"
+    ],
     "h": "Multiply the entire right-hand side by the vertical dilation factor.",
-    "s": "Multiply by 3. $y = 3(x^2 - 2) = 3x^2 - 6$. The parabola is steeper and its vertex is now at $(0, -6)$.",
+    "s": "Multiply by 3. \\\\(y = 3(x^2 - 2) = 3x^2 - 6\\\\). The parabola is steeper and its vertex is now at \\\\((0, -6)\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = x^2 - 2\\) after it has been dilated **vertically** by a factor of \\(3\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5621,19 +5666,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Multiply by 3. \\(y = 3(x^2 - 2) = 3x^2 - 6\\). The parabola is steeper and its vertex is now at \\((0, -6)\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Multiply by 3. \\(y = 3(x^2 - 2) = 3x^2 - 6\\). The parabola is steeper and its vertex is now at \\((0, -6)\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = 9x^2 - 2\\\\)",
+      "\\\\(y = 3x^2 - 2\\\\)",
+      "\\\\(y = 3x^2 - 6\\\\)",
+      "\\\\(y = \\\\frac{1}{3}x^2 - \\\\frac{2}{3}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1d",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = \\frac{2}{x}$ after it has been dilated **horizontally** by a factor of $3$. Then, draw a sketch of the new image.",
-    "a": "y = 6/x",
-    "opts": [],
-    "h": "Replace $x$ with $\\frac{x}{3}$.",
-    "s": "Replace $x$ with $\\frac{x}{3}$. $y = \\frac{2}{x/3} = \\frac{6}{x}$. The hyperbola is stretched further away from the origin.",
+    "q": "Write down the new equation for the function \\\\(y = \\frac{2}{x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(3\\\\). Then, draw a sketch of the new image.",
+    "a": 3,
+    "opts": [
+      "\\\\(y = \\\\frac{2}{x} + 3\\\\)",
+      "\\\\(y = \\\\frac{6}{3x}\\\\)",
+      "\\\\(y = \\\\frac{2}{3x}\\\\)",
+      "\\\\(y = \\\\frac{6}{x}\\\\)"
+    ],
+    "h": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{3}\\\\).",
+    "s": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{3}\\\\). \\\\(y = \\frac{2}{x/3} = \\frac{6}{x}\\\\). The hyperbola is stretched further away from the origin.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = \\frac{2}{x}\\) after it has been dilated **horizontally** by a factor of \\(3\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5647,19 +5705,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\). The hyperbola is stretched further away from the origin.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(x\\) with \\(\\frac{x}{3}\\). \\(y = \\frac{2}{x/3} = \\frac{6}{x}\\). The hyperbola is stretched further away from the origin."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = \\\\frac{2}{x} + 3\\\\)",
+      "\\\\(y = \\\\frac{6}{3x}\\\\)",
+      "\\\\(y = \\\\frac{2}{3x}\\\\)",
+      "\\\\(y = \\\\frac{6}{x}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1e",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the circle $x^2 + y^2 = 9$ after it has been dilated **vertically** by a factor of $\\frac{1}{2}$. Then, draw a sketch of the new image.",
-    "a": "x^2 + 4y^2 = 9 (an ellipse)",
-    "opts": [],
-    "h": "For a vertical dilation of $k$, replace $y$ with $\\frac{y}{k}$.",
-    "s": "Replace $y$ with $\\frac{y}{1/2} = 2y$. The equation becomes $x^2 + (2y)^2 = 9 \\implies x^2 + 4y^2 = 9$. This is an ellipse with x-intercepts $\\pm 3$ and y-intercepts $\\pm 1.5$.",
+    "q": "Write down the new equation for the circle \\\\(x^2 + y^2 = 9\\\\) after it has been dilated **vertically** by a factor of \\\\(\\frac{1}{2}\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(x^2 + \\\\frac{1}{4}y^2 = 9\\\\)",
+      "\\\\(x^2 + 2y^2 = 9\\\\)",
+      "\\\\(x^2 + 4y^2 = 9\\\\)",
+      "\\\\(4x^2 + y^2 = 9\\\\)"
+    ],
+    "h": "For a vertical dilation of \\\\(k\\\\), replace \\\\(y\\\\) with \\\\(\\frac{y}{k}\\\\).",
+    "s": "Replace \\\\(y\\\\) with \\\\(\\frac{y}{1/2} = 2y\\\\). The equation becomes \\\\(x^2 + (2y)^2 = 9 \\implies x^2 + 4y^2 = 9\\\\). This is an ellipse with x-intercepts \\\\(\\pm 3\\\\) and y-intercepts \\\\(\\pm 1.5\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the circle \\(x^2 + y^2 = 9\\) after it has been dilated **vertically** by a factor of \\(\\frac{1}{2}\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5673,19 +5744,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(y\\) with \\(\\frac{y}{1/2} = 2y\\). The equation becomes \\(x^2 + (2y)^2 = 9 \\implies x^2 + 4y^2 = 9\\). This is an ellipse with x-intercepts \\(\\pm 3\\) and y-intercepts \\(\\pm 1.5\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(y\\) with \\(\\frac{y}{1/2} = 2y\\). The equation becomes \\(x^2 + (2y)^2 = 9 \\implies x^2 + 4y^2 = 9\\). This is an ellipse with x-intercepts \\(\\pm 3\\) and y-intercepts \\(\\pm 1.5\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(x^2 + \\\\frac{1}{4}y^2 = 9\\\\)",
+      "\\\\(x^2 + 2y^2 = 9\\\\)",
+      "\\\\(x^2 + 4y^2 = 9\\\\)",
+      "\\\\(4x^2 + y^2 = 9\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1f",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = \\sqrt{2 - x}$ after it has been dilated **horizontally** by a factor of $-2$. Then, draw a sketch of the new image.",
-    "a": "y = \\sqrt{2 + x/2}",
-    "opts": [],
-    "h": "Replace $x$ with $\\frac{x}{-2}$.",
-    "s": "Replace $x$ with $-\\frac{x}{2}$. The new equation is $y = \\sqrt{2 - (-\\frac{x}{2})} = \\sqrt{2 + \\frac{x}{2}}$. The domain is now $x \\ge -4$, and the curve goes to the right.",
+    "q": "Write down the new equation for the function \\\\(y = \\sqrt{2 - x}\\\\) after it has been dilated **horizontally** by a factor of \\\\(-2\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = \\\\sqrt{2 - \\\\frac{x}{2}}\\\\)",
+      "\\\\(y = \\\\sqrt{2 - 2x}\\\\)",
+      "\\\\(y = \\\\sqrt{2 + \\\\frac{x}{2}}\\\\)",
+      "\\\\(y = \\\\sqrt{2 + 2x}\\\\)"
+    ],
+    "h": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{-2}\\\\).",
+    "s": "Replace \\\\(x\\\\) with \\\\(-\\frac{x}{2}\\\\). The new equation is \\\\(y = \\sqrt{2 - (-\\frac{x}{2})} = \\sqrt{2 + \\frac{x}{2}}\\\\). The domain is now \\\\(x \\ge -4\\\\), and the curve goes to the right.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = \\sqrt{2 - x}\\) after it has been dilated **horizontally** by a factor of \\(-2\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5699,19 +5783,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(x\\) with \\(-\\frac{x}{2}\\). The new equation is \\(y = \\sqrt{2 - (-\\frac{x}{2})} = \\sqrt{2 + \\frac{x}{2}}\\). The domain is now \\(x \\ge -4\\), and the curve goes to the right.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(x\\) with \\(-\\frac{x}{2}\\). The new equation is \\(y = \\sqrt{2 - (-\\frac{x}{2})} = \\sqrt{2 + \\frac{x}{2}}\\). The domain is now \\(x \\ge -4\\), and the curve goes to the right."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = \\\\sqrt{2 - \\\\frac{x}{2}}\\\\)",
+      "\\\\(y = \\\\sqrt{2 - 2x}\\\\)",
+      "\\\\(y = \\\\sqrt{2 + \\\\frac{x}{2}}\\\\)",
+      "\\\\(y = \\\\sqrt{2 + 2x}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1g",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the semi-circle $y = \\sqrt{16 - x^2}$ after it has been dilated **horizontally** by a factor of $\\frac{1}{4}$. Then, draw a sketch of the new image.",
-    "a": "y = \\sqrt{16 - 16x^2}",
-    "opts": [],
-    "h": "Replace $x$ with $\\frac{x}{1/4} = 4x$.",
-    "s": "Replace $x$ with $4x$. $y = \\sqrt{16 - (4x)^2} = \\sqrt{16 - 16x^2} = 4\\sqrt{1 - x^2}$. This is the upper half of an ellipse.",
+    "q": "Write down the new equation for the semi-circle \\\\(y = \\sqrt{16 - x^2}\\\\) after it has been dilated **horizontally** by a factor of \\\\(\\frac{1}{4}\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = \\\\sqrt{16 - \\\\frac{x^2}{16}}\\\\)",
+      "\\\\(y = \\\\frac{1}{4}\\\\sqrt{16 - x^2}\\\")",
+      "\\\\(y = \\\\sqrt{16 - 16x^2}\\\\)",
+      "\\\\(y = \\\\sqrt{16 - 4x^2}\\\\)"
+    ],
+    "h": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{1/4} = 4x\\\\).",
+    "s": "Replace \\\\(x\\\\) with \\\\(4x\\\\). \\\\(y = \\sqrt{16 - (4x)^2} = \\sqrt{16 - 16x^2} = 4\\sqrt{1 - x^2}\\\\). This is the upper half of an ellipse.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the semi-circle \\(y = \\sqrt{16 - x^2}\\) after it has been dilated **horizontally** by a factor of \\(\\frac{1}{4}\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5725,19 +5822,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(x\\) with \\(4x\\). \\(y = \\sqrt{16 - (4x)^2} = \\sqrt{16 - 16x^2} = 4\\sqrt{1 - x^2}\\). This is the upper half of an ellipse.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(x\\) with \\(4x\\). \\(y = \\sqrt{16 - (4x)^2} = \\sqrt{16 - 16x^2} = 4\\sqrt{1 - x^2}\\). This is the upper half of an ellipse."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = \\\\sqrt{16 - \\\\frac{x^2}{16}}\\\\)",
+      "\\\\(y = \\\\frac{1}{4}\\\\sqrt{16 - x^2}\\\")",
+      "\\\\(y = \\\\sqrt{16 - 16x^2}\\\\)",
+      "\\\\(y = \\\\sqrt{16 - 4x^2}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-1h",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Write down the new equation for the function $y = \\sqrt{x}$ after it has been dilated **vertically** by a factor of $-3$. Then, draw a sketch of the new image.",
-    "a": "y = -3\\sqrt{x}",
-    "opts": [],
-    "h": "Multiply the function by $-3$.",
-    "s": "Multiply by $-3$ to get $y = -3\\sqrt{x}$. The graph is stretched vertically by 3 and reflected across the x-axis.",
+    "q": "Write down the new equation for the function \\\\(y = \\sqrt{x}\\\\) after it has been dilated **vertically** by a factor of \\\\(-3\\\\). Then, draw a sketch of the new image.",
+    "a": 2,
+    "opts": [
+      "\\\\(y = \\\\sqrt{-3x}\\\\)",
+      "\\\\(y = 3\\\\sqrt{x}\\\")",
+      "\\\\(y = -3\\\\sqrt{x}\\\\)",
+      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)"
+    ],
+    "h": "Multiply the function by \\\\(-3\\\\).",
+    "s": "Multiply by \\\\(-3\\\\) to get \\\\(y = -3\\sqrt{x}\\\\). The graph is stretched vertically by 3 and reflected across the x-axis.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Write down the new equation for the function \\(y = \\sqrt{x}\\) after it has been dilated **vertically** by a factor of \\(-3\\). Then, draw a sketch of the new image.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5751,19 +5861,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Multiply by \\(-3\\) to get \\(y = -3\\sqrt{x}\\). The graph is stretched vertically by 3 and reflected across the x-axis.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Multiply by \\(-3\\) to get \\(y = -3\\sqrt{x}\\). The graph is stretched vertically by 3 and reflected across the x-axis."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = \\\\sqrt{-3x}\\\\)",
+      "\\\\(y = 3\\\\sqrt{x}\\\")",
+      "\\\\(y = -3\\\\sqrt{x}\\\\)",
+      "\\\\(y = \\\\sqrt{-\\\\frac{x}{3}}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2a-i",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = f(x)$ has zeroes at $x = -4, 2, 4$ and a $y$-intercept of $-2$. Write down the zeroes and $y$-intercept of the dilated function $y = f(2x)$, and sketch a possible graph.",
-    "a": "Zeroes: -2, 1, 2. y-intercept: -2.",
-    "opts": [],
-    "h": "$f(2x)$ is a horizontal compression by a factor of $\\frac{1}{2}$.",
-    "s": "Horizontal dilation by factor $1/2$ halves the x-coordinates of the zeroes: $x = -2, 1, 2$. The $y$-intercept is unchanged: $y = -2$.",
+    "q": "A function \\\\(y = f(x)\\\\) has zeroes at \\\\(x = -4, 2, 4\\\\) and a \\\\(y\\\\)-intercept of \\\\(-2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = f(2x)\\\\), and sketch a possible graph.",
+    "a": 2,
+    "opts": [
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)",
+      "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
+    ],
+    "h": "\\\\(f(2x)\\\\) is a horizontal compression by a factor of \\\\(\\frac{1}{2}\\\\).",
+    "s": "Horizontal dilation by factor \\\\(1/2\\\\) halves the x-coordinates of the zeroes: \\\\(x = -2, 1, 2\\\\). The \\\\(y\\\\)-intercept is unchanged: \\\\(y = -2\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = f(x)\\) has zeroes at \\(x = -4, 2, 4\\) and a \\(y\\)-intercept of \\(-2\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(y = f(2x)\\), and sketch a possible graph.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5777,19 +5900,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Horizontal dilation by factor \\(1/2\\) halves the x-coordinates of the zeroes: \\(x = -2, 1, 2\\). The \\(y\\)-intercept is unchanged: \\(y = -2\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Horizontal dilation by factor \\(1/2\\) halves the x-coordinates of the zeroes: \\(x = -2, 1, 2\\). The \\(y\\)-intercept is unchanged: \\(y = -2\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)",
+      "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2a-ii",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = f(x)$ has zeroes at $x = -4, 2, 4$ and a $y$-intercept of $-2$. Write down the zeroes and $y$-intercept of the dilated function $y = 2f(x)$, and sketch a possible graph.",
-    "a": "Zeroes: -4, 2, 4. y-intercept: -4.",
-    "opts": [],
-    "h": "$2f(x)$ is a vertical stretch by a factor of $2$.",
-    "s": "Vertical dilation by factor $2$ doubles the y-coordinates. Zeroes are unchanged: $x = -4, 2, 4$. The $y$-intercept doubles to $y = -4$.",
+    "q": "A function \\\\(y = f(x)\\\\) has zeroes at \\\\(x = -4, 2, 4\\\\) and a \\\\(y\\\\)-intercept of \\\\(-2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = 2f(x)\\\\), and sketch a possible graph.",
+    "a": 0,
+    "opts": [
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)",
+      "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
+    ],
+    "h": "\\\\(2f(x)\\\\) is a vertical stretch by a factor of \\\\(2\\\\).",
+    "s": "Vertical dilation by factor \\\\(2\\\\) doubles the y-coordinates. Zeroes are unchanged: \\\\(x = -4, 2, 4\\\\). The \\\\(y\\\\)-intercept doubles to \\\\(y = -4\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = f(x)\\) has zeroes at \\(x = -4, 2, 4\\) and a \\(y\\)-intercept of \\(-2\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(y = 2f(x)\\), and sketch a possible graph.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5803,19 +5939,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Vertical dilation by factor \\(2\\) doubles the y-coordinates. Zeroes are unchanged: \\(x = -4, 2, 4\\). The \\(y\\)-intercept doubles to \\(y = -4\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Vertical dilation by factor \\(2\\) doubles the y-coordinates. Zeroes are unchanged: \\(x = -4, 2, 4\\). The \\(y\\)-intercept doubles to \\(y = -4\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -4, 2, 4\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)",
+      "Zeroes: \\\\(x = -8, 4, 8\\\\); \\\\(y\\\\)-intercept: \\\\(-4\\\\)",
+      "Zeroes: \\\\(x = -2, 1, 2\\\\); \\\\(y\\\\)-intercept: \\\\(-2\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2b-i",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = P(x)$ has zeroes at $x = -2$ and $x = 0$. It has a local maximum at $(1, 2)$ and a local minimum at $(3, -1)$. Write down the zeroes, $y$-intercept, and coordinates of the turning points for $y = P\\left(\\frac{x}{2}\\right)$.",
-    "a": "Zeroes: -4, 0. y-int: 0. Max: (2, 2). Min: (6, -1).",
-    "opts": [],
+    "q": "A function \\\\(y = P(x)\\\\) has zeroes at \\\\(x = -2\\\\) and \\\\(x = 0\\\\). It has a local maximum at \\\\((1, 2)\\\\) and a local minimum at \\\\((3, -1)\\\\). Write down the zeroes, \\\\(y\\\\)-intercept, and coordinates of the turning points for \\\\(y = P\\left(\\frac{x}{2}\\right)\\\\).",
+    "a": 2,
+    "opts": [
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 2)\\\\); Min: \\\\((3, -1)\\\\)",
+      "Zeroes: \\\\(-1, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((0.5, 2)\\\\); Min: \\\\((1.5, -1)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 4)\\\\); Min: \\\\((6, -2)\\\\)"
+    ],
     "h": "This is a horizontal stretch by a factor of 2. All x-coordinates double.",
-    "s": "Horizontal dilation by factor 2 doubles all $x$-coordinates. Zeroes: $-4, 0$. Turning points: $(2, 2)$ and $(6, -1)$. The $y$-intercept remains $0$.",
+    "s": "Horizontal dilation by factor 2 doubles all \\\\(x\\\\)-coordinates. Zeroes: \\\\(-4, 0\\\\). Turning points: \\\\((2, 2)\\\\) and \\\\((6, -1)\\\\). The \\\\(y\\\\)-intercept remains \\\\(0\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = P(x)\\) has zeroes at \\(x = -2\\) and \\(x = 0\\). It has a local maximum at \\((1, 2)\\) and a local minimum at \\((3, -1)\\). Write down the zeroes, \\(y\\)-intercept, and coordinates of the turning points for \\(y = P\\left(\\frac{x}{2}\\right)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5829,19 +5978,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Horizontal dilation by factor 2 doubles all \\(x\\)-coordinates. Zeroes: \\(-4, 0\\). Turning points: \\((2, 2)\\) and \\((6, -1)\\). The \\(y\\)-intercept remains \\(0\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Horizontal dilation by factor 2 doubles all \\(x\\)-coordinates. Zeroes: \\(-4, 0\\). Turning points: \\((2, 2)\\) and \\((6, -1)\\). The \\(y\\)-intercept remains \\(0\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 2)\\\\); Min: \\\\((3, -1)\\\\)",
+      "Zeroes: \\\\(-1, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((0.5, 2)\\\\); Min: \\\\((1.5, -1)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 4)\\\\); Min: \\\\((6, -2)\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2b-ii",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = P(x)$ has zeroes at $x = -2$ and $x = 0$. It has a local maximum at $(1, 2)$ and a local minimum at $(3, -1)$. Write down the zeroes, $y$-intercept, and coordinates of the turning points for $y = \\frac{1}{2}P(x)$.",
-    "a": "Zeroes: -2, 0. y-int: 0. Max: (1, 1). Min: (3, -0.5).",
-    "opts": [],
-    "h": "This is a vertical compression by a factor of $\\frac{1}{2}$. All y-coordinates halve.",
-    "s": "Vertical dilation by factor $1/2$ halves all $y$-coordinates. Zeroes: $-2, 0$. Turning points: $(1, 1)$ and $(3, -0.5)$. The $y$-intercept remains $0$.",
+    "q": "A function \\\\(y = P(x)\\\\) has zeroes at \\\\(x = -2\\\\) and \\\\(x = 0\\\\). It has a local maximum at \\\\((1, 2)\\\\) and a local minimum at \\\\((3, -1)\\\\). Write down the zeroes, \\\\(y\\\\)-intercept, and coordinates of the turning points for \\\\(y = \\frac{1}{2}P(x)\\\\).",
+    "a": 3,
+    "opts": [
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((0.5, 1)\\\\); Min: \\\\((1.5, -0.5)\\\\)",
+      "Zeroes: \\\\(-1, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 1)\\\\); Min: \\\\((3, -0.5)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 1)\\\\); Min: \\\\((3, -0.5)\\\\)"
+    ],
+    "h": "This is a vertical compression by a factor of \\\\(\\frac{1}{2}\\\\). All y-coordinates halve.",
+    "s": "Vertical dilation by factor \\\\(1/2\\\\) halves all \\\\(y\\\\)-coordinates. Zeroes: \\\\(-2, 0\\\\). Turning points: \\\\((1, 1)\\\\) and \\\\((3, -0.5)\\\\). The \\\\(y\\\\)-intercept remains \\\\(0\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = P(x)\\) has zeroes at \\(x = -2\\) and \\(x = 0\\). It has a local maximum at \\((1, 2)\\) and a local minimum at \\((3, -1)\\). Write down the zeroes, \\(y\\)-intercept, and coordinates of the turning points for \\(y = \\frac{1}{2}P(x)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5855,19 +6017,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Vertical dilation by factor \\(1/2\\) halves all \\(y\\)-coordinates. Zeroes: \\(-2, 0\\). Turning points: \\((1, 1)\\) and \\((3, -0.5)\\). The \\(y\\)-intercept remains \\(0\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Vertical dilation by factor \\(1/2\\) halves all \\(y\\)-coordinates. Zeroes: \\(-2, 0\\). Turning points: \\((1, 1)\\) and \\((3, -0.5)\\). The \\(y\\)-intercept remains \\(0\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((0.5, 1)\\\\); Min: \\\\((1.5, -0.5)\\\\)",
+      "Zeroes: \\\\(-1, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 1)\\\\); Min: \\\\((3, -0.5)\\\\)",
+      "Zeroes: \\\\(-4, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((2, 2)\\\\); Min: \\\\((6, -1)\\\\)",
+      "Zeroes: \\\\(-2, 0\\\\); \\\\(y\\\\)-intercept: \\\\(0\\\\); Max: \\\\((1, 1)\\\\); Min: \\\\((3, -0.5)\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2c-i",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = h(x)$ has a zero at $x = 2$ and a $y$-intercept of $2$. Write down the zeroes and $y$-intercept of the dilated function $\\frac{y}{3} = h(x)$.",
-    "a": "Zero: 2. y-int: 6.",
-    "opts": [],
-    "h": "Rewrite as $y = 3h(x)$ to see it is a vertical stretch.",
-    "s": "$y = 3h(x)$ means all $y$-values are tripled. The zero remains at $x=2$. The $y$-intercept becomes $2 \\times 3 = 6$.",
+    "q": "A function \\\\(y = h(x)\\\\) has a zero at \\\\(x = 2\\\\) and a \\\\(y\\\\)-intercept of \\\\(2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(\\frac{y}{3} = h(x)\\\\).",
+    "a": 1,
+    "opts": [
+      "Zero: \\\\(x = \\\\frac{2}{3}\\\\); \\\\(y\\\\)-intercept: \\\\(\\\\frac{2}{3}\\\\)",
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)",
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(\\\\frac{2}{3}\\\\)"
+    ],
+    "h": "Rewrite as \\\\(y = 3h(x)\\\\) to see it is a vertical stretch.",
+    "s": "\\\\(y = 3h(x)\\\\) means all \\\\(y\\\\)-values are tripled. The zero remains at \\\\(x=2\\\\). The \\\\(y\\\\)-intercept becomes \\\\(2 \\times 3 = 6\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = h(x)\\) has a zero at \\(x = 2\\) and a \\(y\\)-intercept of \\(2\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(\\frac{y}{3} = h(x)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5881,19 +6056,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"\\(y = 3h(x)\\) means all \\(y\\)-values are tripled. The zero remains at \\(x=2\\). The \\(y\\)-intercept becomes \\(2 \\times 3 = 6\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "\\(y = 3h(x)\\) means all \\(y\\)-values are tripled. The zero remains at \\(x=2\\). The \\(y\\)-intercept becomes \\(2 \\times 3 = 6\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zero: \\\\(x = \\\\frac{2}{3}\\\\); \\\\(y\\\\)-intercept: \\\\(\\\\frac{2}{3}\\\\)",
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)",
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(\\\\frac{2}{3}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2c-ii",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = h(x)$ has a zero at $x = 2$ and a $y$-intercept of $2$. Write down the zeroes and $y$-intercept of the dilated function $y = h\\left(\\frac{x}{3}\\right)$.",
-    "a": "Zero: 6. y-int: 2.",
-    "opts": [],
+    "q": "A function \\\\(y = h(x)\\\\) has a zero at \\\\(x = 2\\\\) and a \\\\(y\\\\)-intercept of \\\\(2\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = h\\left(\\frac{x}{3}\\right)\\\\).",
+    "a": 1,
+    "opts": [
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = \\\\frac{2}{3}\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)"
+    ],
     "h": "This is a horizontal stretch by a factor of 3.",
-    "s": "Horizontal dilation by factor 3 triples the $x$-coordinates. The zero is at $x = 6$. The $y$-intercept is unchanged at $y = 2$.",
+    "s": "Horizontal dilation by factor 3 triples the \\\\(x\\\\)-coordinates. The zero is at \\\\(x = 6\\\\). The \\\\(y\\\\)-intercept is unchanged at \\\\(y = 2\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = h(x)\\) has a zero at \\(x = 2\\) and a \\(y\\)-intercept of \\(2\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(y = h\\left(\\frac{x}{3}\\right)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5907,19 +6095,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Horizontal dilation by factor 3 triples the \\(x\\)-coordinates. The zero is at \\(x = 6\\). The \\(y\\)-intercept is unchanged at \\(y = 2\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Horizontal dilation by factor 3 triples the \\(x\\)-coordinates. The zero is at \\(x = 6\\). The \\(y\\)-intercept is unchanged at \\(y = 2\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zero: \\\\(x = 2\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)",
+      "Zero: \\\\(x = 6\\\\); \\\\(y\\\\)-intercept: \\\\(6\\\\)",
+      "Zero: \\\\(x = \\\\frac{2}{3}\\\\); \\\\(y\\\\)-intercept: \\\\(2\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2d-i",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = g(x)$ is a semi-circle with zeroes at $x = -3, 3$ and a $y$-intercept of $3$. Write down the zeroes and $y$-intercept of the dilated function $3y = g(x)$.",
-    "a": "Zeroes: -3, 3. y-int: 1.",
-    "opts": [],
-    "h": "Rewrite as $y = \\frac{1}{3}g(x)$.",
-    "s": "$y = \\frac{1}{3}g(x)$ is a vertical compression. The $y$-values are divided by 3. Zeroes remain $x = -3, 3$. The $y$-intercept becomes $y = 1$.",
+    "q": "A function \\\\(y = g(x)\\\\) is a semi-circle with zeroes at \\\\(x = -3, 3\\\\) and a \\\\(y\\\\)-intercept of \\\\(3\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(3y = g(x)\\\\).",
+    "a": 0,
+    "opts": [
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -9, 9\\\\); \\\\(y\\\\)-intercept: \\\\(9\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)",
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(9\\\\)"
+    ],
+    "h": "Rewrite as \\\\(y = \\frac{1}{3}g(x)\\\\).",
+    "s": "\\\\(y = \\frac{1}{3}g(x)\\\\) is a vertical compression. The \\\\(y\\\\)-values are divided by 3. Zeroes remain \\\\(x = -3, 3\\\\). The \\\\(y\\\\)-intercept becomes \\\\(y = 1\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = g(x)\\) is a semi-circle with zeroes at \\(x = -3, 3\\) and a \\(y\\)-intercept of \\(3\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(3y = g(x)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5933,19 +6134,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"\\(y = \\frac{1}{3}g(x)\\) is a vertical compression. The \\(y\\)-values are divided by 3. Zeroes remain \\(x = -3, 3\\). The \\(y\\)-intercept becomes \\(y = 1\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "\\(y = \\frac{1}{3}g(x)\\) is a vertical compression. The \\(y\\)-values are divided by 3. Zeroes remain \\(x = -3, 3\\). The \\(y\\)-intercept becomes \\(y = 1\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -9, 9\\\\); \\\\(y\\\\)-intercept: \\\\(9\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)",
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(9\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-2d-ii",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "A function $y = g(x)$ is a semi-circle with zeroes at $x = -3, 3$ and a $y$-intercept of $3$. Write down the zeroes and $y$-intercept of the dilated function $y = g(3x)$.",
-    "a": "Zeroes: -1, 1. y-int: 3.",
-    "opts": [],
-    "h": "This is a horizontal compression by a factor of $\\frac{1}{3}$.",
-    "s": "Horizontal dilation by factor $\\frac{1}{3}$ divides the $x$-coordinates by 3. Zeroes are $x = -1, 1$. The $y$-intercept is unchanged at $y = 3$.",
+    "q": "A function \\\\(y = g(x)\\\\) is a semi-circle with zeroes at \\\\(x = -3, 3\\\\) and a \\\\(y\\\\)-intercept of \\\\(3\\\\). Write down the zeroes and \\\\(y\\\\)-intercept of the dilated function \\\\(y = g(3x)\\\\).",
+    "a": 3,
+    "opts": [
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -9, 9\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)"
+    ],
+    "h": "This is a horizontal compression by a factor of \\\\(\\frac{1}{3}\\\\).",
+    "s": "Horizontal dilation by factor \\\\(\\frac{1}{3}\\\\) divides the \\\\(x\\\\)-coordinates by 3. Zeroes are \\\\(x = -1, 1\\\\). The \\\\(y\\\\)-intercept is unchanged at \\\\(y = 3\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"A function \\(y = g(x)\\) is a semi-circle with zeroes at \\(x = -3, 3\\) and a \\(y\\)-intercept of \\(3\\). Write down the zeroes and \\(y\\)-intercept of the dilated function \\(y = g(3x)\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -5959,7 +6173,15 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Horizontal dilation by factor \\(\\frac{1}{3}\\) divides the \\(x\\)-coordinates by 3. Zeroes are \\(x = -1, 1\\). The \\(y\\)-intercept is unchanged at \\(y = 3\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Horizontal dilation by factor \\(\\frac{1}{3}\\) divides the \\(x\\)-coordinates by 3. Zeroes are \\(x = -1, 1\\). The \\(y\\)-intercept is unchanged at \\(y = 3\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "Zeroes: \\\\(x = -3, 3\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -9, 9\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(1\\\\)",
+      "Zeroes: \\\\(x = -1, 1\\\\); \\\\(y\\\\)-intercept: \\\\(3\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-3",
@@ -5980,18 +6202,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "A zero (\\(x\\)-intercept) of a function is unchanged by a _____ dilation.",
         "opts": [
-          "vertical",
-          "horizontal",
+          "neither",
           "both horizontal and vertical",
-          "neither"
+          "horizontal",
+          "vertical"
         ],
         "options": [
-          "vertical",
-          "horizontal",
+          "neither",
           "both horizontal and vertical",
-          "neither"
+          "horizontal",
+          "vertical"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "A zero has \\(y = 0\\). Which dilation keeps \\(y\\)-values the same?",
         "solution": "A vertical dilation multiplies all \\(y\\)-values by a constant. Since a zero has \\(y = 0\\), and \\(k \\times 0 = 0\\), the zero is unchanged. So a zero is unchanged by a vertical dilation.",
@@ -6015,18 +6237,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "The \\(y\\)-intercept (the value of \\(f(0)\\)) is unchanged by a _____ dilation.",
         "opts": [
-          "horizontal",
           "vertical",
-          "both horizontal and vertical",
-          "neither"
+          "neither",
+          "horizontal",
+          "both horizontal and vertical"
         ],
         "options": [
-          "horizontal",
           "vertical",
-          "both horizontal and vertical",
-          "neither"
+          "neither",
+          "horizontal",
+          "both horizontal and vertical"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "The \\(y\\)-intercept occurs at \\(x = 0\\). Which dilation keeps \\(x\\)-values the same?",
         "solution": "A horizontal dilation replaces \\(x\\) with \\(\\frac{x}{k}\\). At \\(x = 0\\): \\(\\frac{0}{k} = 0\\). So \\(f(0)\\) is unchanged. The \\(y\\)-intercept is unchanged by a horizontal dilation.",
@@ -6053,16 +6275,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the straight line $x + y = 3$. Identify the simple dilation that transforms this line into $\\frac{x}{4} + y = 3$.",
-    "a": "0",
+    "q": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilation that transforms this line into \\\\(\\frac{x}{4} + y = 3\\\\).",
+    "a": 1,
     "opts": [
+      "Vertical compression by a factor of 1/4.",
       "Horizontal stretch by a factor of 4.",
       "Horizontal compression by a factor of 1/4.",
-      "Vertical stretch by a factor of 4.",
-      "Vertical compression by a factor of 1/4."
+      "Vertical stretch by a factor of 4."
     ],
-    "h": "The term $x$ is replaced with $\\frac{x}{4}$. What dilation does this correspond to?",
-    "s": "Replacing $x$ with $\\frac{x}{a}$ corresponds to a horizontal stretch by a factor of $a$. Here $a=4$.",
+    "h": "The term \\\\(x\\\\) is replaced with \\\\(\\frac{x}{4}\\\\). What dilation does this correspond to?",
+    "s": "Replacing \\\\(x\\\\) with \\\\(\\frac{x}{a}\\\\) corresponds to a horizontal stretch by a factor of \\\\(a\\\\). Here \\\\(a=4\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Consider the straight line \\(x + y = 3\\). Identify the simple dilation that transforms this line into \\(\\frac{x}{4} + y = 3\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6076,6 +6298,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replacing \\(x\\) with \\(\\frac{x}{a}\\) corresponds to a horizontal stretch by a factor of \\(a\\). Here \\(a=4\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replacing \\(x\\) with \\(\\frac{x}{a}\\) corresponds to a horizontal stretch by a factor of \\(a\\). Here \\(a=4\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Vertical compression by a factor of 1/4.",
+      "Horizontal stretch by a factor of 4.",
+      "Horizontal compression by a factor of 1/4.",
+      "Vertical stretch by a factor of 4."
     ]
   },
   {
@@ -6084,16 +6313,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the straight line $x + y = 3$. Identify the simple dilations that transform this line into $\\frac{x}{4} + \\frac{y}{2} = 3$.",
-    "a": "0",
+    "q": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilations that transform this line into \\\\(\\frac{x}{4} + \\frac{y}{2} = 3\\\\).",
+    "a": 2,
     "opts": [
-      "Horizontal stretch by a factor of 4, and vertical stretch by a factor of 2.",
-      "Horizontal compression by 1/4, and vertical compression by 1/2.",
       "Horizontal stretch by 2, and vertical stretch by 4.",
+      "Horizontal compression by 1/4, and vertical compression by 1/2.",
+      "Horizontal stretch by a factor of 4, and vertical stretch by a factor of 2.",
       "Vertical stretch by a factor of 4 only."
     ],
-    "h": "Both $x$ and $y$ are being divided by factors.",
-    "s": "Replacing $x$ with $\\frac{x}{4}$ is a horizontal stretch by factor 4. Replacing $y$ with $\\frac{y}{2}$ is a vertical stretch by factor 2.",
+    "h": "Both \\\\(x\\\\) and \\\\(y\\\\) are being divided by factors.",
+    "s": "Replacing \\\\(x\\\\) with \\\\(\\frac{x}{4}\\\\) is a horizontal stretch by factor 4. Replacing \\\\(y\\\\) with \\\\(\\frac{y}{2}\\\\) is a vertical stretch by factor 2.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Consider the straight line \\(x + y = 3\\). Identify the simple dilations that transform this line into \\(\\frac{x}{4} + \\frac{y}{2} = 3\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6107,6 +6336,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replacing \\(x\\) with \\(\\frac{x}{4}\\) is a horizontal stretch by factor 4. Replacing \\(y\\) with \\(\\frac{y}{2}\\) is a vertical stretch by factor 2.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replacing \\(x\\) with \\(\\frac{x}{4}\\) is a horizontal stretch by factor 4. Replacing \\(y\\) with \\(\\frac{y}{2}\\) is a vertical stretch by factor 2."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal stretch by 2, and vertical stretch by 4.",
+      "Horizontal compression by 1/4, and vertical compression by 1/2.",
+      "Horizontal stretch by a factor of 4, and vertical stretch by a factor of 2.",
+      "Vertical stretch by a factor of 4 only."
     ]
   },
   {
@@ -6115,16 +6351,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Consider the straight line $x + y = 3$. Identify the simple dilation that transforms this line into $5x + y = 3$.",
-    "a": "0",
+    "q": "Consider the straight line \\\\(x + y = 3\\\\). Identify the simple dilation that transforms this line into \\\\(5x + y = 3\\\\).",
+    "a": 2,
     "opts": [
-      "Horizontal compression by a factor of 1/5.",
       "Horizontal stretch by a factor of 5.",
       "Vertical stretch by a factor of 5.",
+      "Horizontal compression by a factor of 1/5.",
       "Vertical compression by a factor of 1/5."
     ],
-    "h": "The term $x$ is replaced with $5x$, which is the same as $\\frac{x}{1/5}$.",
-    "s": "Replacing $x$ with $5x$ means the horizontal coordinates are multiplied by $\\frac{1}{5}$, representing a horizontal compression by a factor of $\\frac{1}{5}$.",
+    "h": "The term \\\\(x\\\\) is replaced with \\\\(5x\\\\), which is the same as \\\\(\\frac{x}{1/5}\\\\).",
+    "s": "Replacing \\\\(x\\\\) with \\\\(5x\\\\) means the horizontal coordinates are multiplied by \\\\(\\frac{1}{5}\\\\), representing a horizontal compression by a factor of \\\\(\\frac{1}{5}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Consider the straight line \\(x + y = 3\\). Identify the simple dilation that transforms this line into \\(5x + y = 3\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6138,19 +6374,31 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replacing \\(x\\) with \\(5x\\) means the horizontal coordinates are multiplied by \\(\\frac{1}{5}\\), representing a horizontal compression by a factor of \\(\\frac{1}{5}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replacing \\(x\\) with \\(5x\\) means the horizontal coordinates are multiplied by \\(\\frac{1}{5}\\), representing a horizontal compression by a factor of \\(\\frac{1}{5}\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal stretch by a factor of 5.",
+      "Vertical stretch by a factor of 5.",
+      "Horizontal compression by a factor of 1/5.",
+      "Vertical compression by a factor of 1/5."
     ]
   },
   {
     "id": "y11a-5D-new-5a",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "The circle $(x - 4)^2 + y^2 = 9$ is dilated from the origin by a factor of $\\frac{1}{2}$ in both the horizontal and vertical directions. Write down the new equation of the shape.",
-    "a": "(x - 2)^2 + y^2 = 9/4",
-    "opts": [],
-    "h": "Replace $x$ with $\\frac{x}{1/2} = 2x$ and $y$ with $2y$.",
-    "s": "Dilation from the origin by factor $1/2$ means replacing $x$ with $2x$ and $y$ with $2y$. \\n$(2x - 4)^2 + (2y)^2 = 9$ \\n$4(x - 2)^2 + 4y^2 = 9$ \\n$(x - 2)^2 + y^2 = \\frac{9}{4}$. \\nThe new shape is a circle centered at $(2, 0)$ with radius $1.5$.",
+    "q": "The circle \\\\((x - 4)^2 + y^2 = 9\\\\) is dilated from the origin by a factor of \\\\(\\frac{1}{2}\\\\) in both the horizontal and vertical directions. Write down the new equation of the shape.",
+    "a": 2,
+    "opts": [
+      "\\\\((x - 8)^2 + y^2 = 36\\\\)",
+      "\\\\((2x - 4)^2 + (2y)^2 = 9\\\\)",
+      "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{4}\\\\)",
+      "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{2}\\\\)"
+    ],
+    "h": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{1/2} = 2x\\\\) and \\\\(y\\\\) with \\\\(2y\\\\).",
+    "s": "Dilation from the origin by factor \\\\(1/2\\\\) means replacing \\\\(x\\\\) with \\\\(2x\\\\) and \\\\(y\\\\) with \\\\(2y\\\\). \\n\\\\((2x - 4)^2 + (2y)^2 = 9\\\\) \\n\\\\(4(x - 2)^2 + 4y^2 = 9\\\\) \\n\\\\((x - 2)^2 + y^2 = \\frac{9}{4}\\\\). \\nThe new shape is a circle centered at \\\\((2, 0)\\\\) with radius \\\\(1.5\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The circle \\((x - 4)^2 + y^2 = 9\\) is dilated from the origin by a factor of \\(\\frac{1}{2}\\) in both the horizontal and vertical directions. Write down the new equation of the shape.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6164,19 +6412,32 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Dilation from the origin by factor \\(1/2\\) means replacing \\(x\\) with \\(2x\\) and \\(y\\) with \\(2y\\). \\n\\((2x - 4)^2 + (2y)^2 = 9\\) \\n\\(4(x - 2)^2 + 4y^2 = 9\\) \\n\\((x - 2)^2 + y^2 = \\frac{9}{4}\\). \\nThe new shape is a circle centered at \\((2, 0)\\) with radius \\(1.5\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Dilation from the origin by factor \\(1/2\\) means replacing \\(x\\) with \\(2x\\) and \\(y\\) with \\(2y\\). \\n\\((2x - 4)^2 + (2y)^2 = 9\\) \\n\\(4(x - 2)^2 + 4y^2 = 9\\) \\n\\((x - 2)^2 + y^2 = \\frac{9}{4}\\). \\nThe new shape is a circle centered at \\((2, 0)\\) with radius \\(1.5\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\((x - 8)^2 + y^2 = 36\\\\)",
+      "\\\\((2x - 4)^2 + (2y)^2 = 9\\\\)",
+      "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{4}\\\\)",
+      "\\\\((x - 2)^2 + y^2 = \\\\frac{9}{2}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-5b",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "The hyperbola $y = \\frac{2}{x}$ is enlarged from the origin by a factor of $\\sqrt{5}$ in both directions. Write down the new equation of the hyperbola.",
-    "a": "y = 10/x",
-    "opts": [],
-    "h": "Replace $x$ with $\\frac{x}{\\sqrt{5}}$ and $y$ with $\\frac{y}{\\sqrt{5}}$.",
-    "s": "Replace $x$ and $y$: \\n$\\frac{y}{\\sqrt{5}} = \\frac{2}{\\frac{x}{\\sqrt{5}}}$ \\n$\\frac{y}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{x}$ \\nMultiply both sides by $\\sqrt{5}$: \\n$y = \\frac{10}{x}$.",
+    "q": "The hyperbola \\\\(y = \\frac{2}{x}\\\\) is enlarged from the origin by a factor of \\\\(\\sqrt{5}\\\\) in both directions. Write down the new equation of the hyperbola.",
+    "a": 1,
+    "opts": [
+      "\\\\(y = \\\\frac{5}{x}\\\\)",
+      "\\\\(y = \\\\frac{10}{x}\\\\)",
+      "\\\\(y = \\\\frac{2\\\\sqrt{5}}{x}\\\\)",
+      "\\\\(y = \\\\frac{2}{x}\\\\)"
+    ],
+    "h": "Replace \\\\(x\\\\) with \\\\(\\frac{x}{\\sqrt{5}}\\\\) and \\\\(y\\\\) with \\\\(\\frac{y}{\\sqrt{5}}\\\\).",
+    "s": "Replace \\\\(x\\\\) and \\\\(y\\\\): \\n\\\\(\\frac{y}{\\sqrt{5}} = \\frac{2}{\\frac{x}{\\sqrt{5}}}\\\\) \\n\\\\(\\frac{y}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{x}\\\\) \\nMultiply both sides by \\\\(\\sqrt{5}\\\\): \\n\\\\(y = \\frac{10}{x}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The hyperbola \\(y = \\frac{2}{x}\\) is enlarged from the origin by a factor of \\(\\sqrt{5}\\) in both directions. Write down the new equation of the hyperbola.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6190,7 +6451,15 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replace \\(x\\) and \\(y\\): \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2}{\\frac{x}{\\sqrt{5}}}\\) \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{x}\\) \\nMultiply both sides by \\(\\sqrt{5}\\): \\n\\(y = \\frac{10}{x}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replace \\(x\\) and \\(y\\): \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2}{\\frac{x}{\\sqrt{5}}}\\) \\n\\(\\frac{y}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{x}\\) \\nMultiply both sides by \\(\\sqrt{5}\\): \\n\\(y = \\frac{10}{x}\\)."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(y = \\\\frac{5}{x}\\\\)",
+      "\\\\(y = \\\\frac{10}{x}\\\\)",
+      "\\\\(y = \\\\frac{2\\\\sqrt{5}}{x}\\\\)",
+      "\\\\(y = \\\\frac{2}{x}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-6a",
@@ -6211,18 +6480,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Equation 1 is \\(y = x(6 + x)\\). What are the \\(x\\)-intercepts of this parabola?",
         "opts": [
-          "\\(x = 0\\) and \\(x = -6\\)",
-          "\\(x = 0\\) and \\(x = 6\\)",
+          "\\(x = 0\\) and \\(x = 3\\)",
           "\\(x = 6\\) and \\(x = -6\\)",
-          "\\(x = 0\\) and \\(x = 3\\)"
+          "\\(x = 0\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 6\\)"
         ],
         "options": [
-          "\\(x = 0\\) and \\(x = -6\\)",
-          "\\(x = 0\\) and \\(x = 6\\)",
+          "\\(x = 0\\) and \\(x = 3\\)",
           "\\(x = 6\\) and \\(x = -6\\)",
-          "\\(x = 0\\) and \\(x = 3\\)"
+          "\\(x = 0\\) and \\(x = -6\\)",
+          "\\(x = 0\\) and \\(x = 6\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "Set \\(y = 0\\) and solve \\(x(6 + x) = 0\\).",
         "solution": "Set \\(x(6 + x) = 0 \\implies x = 0\\) or \\(6 + x = 0 \\implies x = -6\\). The \\(x\\)-intercepts are 0 and \\(-6\\).",
@@ -6246,18 +6515,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Equation 2 is \\(y = 3x(6 + x)\\). What transformation maps equation 1 to equation 2?",
         "opts": [
+          "Horizontal stretch by a factor of 3",
           "Vertical stretch by a factor of 3",
           "Horizontal compression by a factor of \\(\\frac{1}{3}\\)",
-          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
-          "Horizontal stretch by a factor of 3"
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)"
         ],
         "options": [
+          "Horizontal stretch by a factor of 3",
           "Vertical stretch by a factor of 3",
           "Horizontal compression by a factor of \\(\\frac{1}{3}\\)",
-          "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
-          "Horizontal stretch by a factor of 3"
+          "Vertical compression by a factor of \\(\\frac{1}{3}\\)"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "The original function \\(f(x)\\) has been multiplied by 3 on the outside.",
         "solution": "Multiplying the whole function by 3 is a vertical dilation by factor 3: \\(y_{\\text{new}} = 3 \\cdot y_{\\text{old}}\\).",
@@ -6281,18 +6550,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Equation 3 is \\(y = \\frac{x}{2}\\left(6 + \\frac{x}{2}\\right)\\). What transformation maps equation 1 to equation 3?",
         "opts": [
+          "Vertical compression by a factor of \\(\\frac{1}{2}\\)",
           "Horizontal stretch by a factor of 2",
-          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)",
           "Vertical stretch by a factor of 2",
-          "Vertical compression by a factor of \\(\\frac{1}{2}\\)"
+          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)"
         ],
         "options": [
+          "Vertical compression by a factor of \\(\\frac{1}{2}\\)",
           "Horizontal stretch by a factor of 2",
-          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)",
           "Vertical stretch by a factor of 2",
-          "Vertical compression by a factor of \\(\\frac{1}{2}\\)"
+          "Horizontal compression by a factor of \\(\\frac{1}{2}\\)"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "Every \\(x\\) in \\(f(x)\\) has been replaced by \\(\\frac{x}{2}\\).",
         "solution": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) represents a horizontal dilation by a factor of 2 (a stretch).",
@@ -6333,14 +6602,14 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "Equation 1 is \\(x^2 + y^2 = 16\\). What shape does this describe?",
         "opts": [
           "A circle centred at the origin with radius 4",
-          "An ellipse with semi-axes 4 and 4",
           "A parabola",
+          "An ellipse with semi-axes 4 and 4",
           "A circle with radius 16"
         ],
         "options": [
           "A circle centred at the origin with radius 4",
-          "An ellipse with semi-axes 4 and 4",
           "A parabola",
+          "An ellipse with semi-axes 4 and 4",
           "A circle with radius 16"
         ],
         "a": 0,
@@ -6367,18 +6636,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Equation 2 is \\(\\left(\\frac{x}{2}\\right)^2 + \\left(\\frac{y}{4}\\right)^2 = 16\\). What transformation maps equation 1 to equation 2?",
         "opts": [
-          "Horizontal stretch by 2, vertical stretch by 4",
           "Horizontal compression by 2, vertical compression by 4",
+          "Horizontal stretch by 2, vertical stretch by 4",
           "Horizontal stretch by 4, vertical stretch by 2",
           "Translation of 2 right and 4 up"
         ],
         "options": [
-          "Horizontal stretch by 2, vertical stretch by 4",
           "Horizontal compression by 2, vertical compression by 4",
+          "Horizontal stretch by 2, vertical stretch by 4",
           "Horizontal stretch by 4, vertical stretch by 2",
           "Translation of 2 right and 4 up"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) is a horizontal dilation by factor 2.",
         "solution": "Replacing \\(x\\) with \\(\\frac{x}{2}\\) is a horizontal stretch by 2; replacing \\(y\\) with \\(\\frac{y}{4}\\) is a vertical stretch by 4.",
@@ -6402,18 +6671,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Equation 3 is \\((4x)^2 + (2y)^2 = 16\\). What transformation maps equation 1 to equation 3?",
         "opts": [
-          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
-          "Horizontal stretch by 4, vertical stretch by 2",
           "Horizontal compression by \\(\\frac{1}{2}\\), vertical stretch by 4",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
           "No transformation — same as equation 1"
         ],
         "options": [
-          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
-          "Horizontal stretch by 4, vertical stretch by 2",
           "Horizontal compression by \\(\\frac{1}{2}\\), vertical stretch by 4",
+          "Horizontal stretch by 4, vertical stretch by 2",
+          "Horizontal compression by \\(\\frac{1}{4}\\), vertical compression by \\(\\frac{1}{2}\\)",
           "No transformation — same as equation 1"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "Replacing \\(x\\) with \\(4x\\) is a horizontal dilation by factor \\(\\frac{1}{4}\\) (compression).",
         "solution": "Replacing \\(x\\) with \\(4x\\) is a horizontal compression by \\(\\frac{1}{4}\\); replacing \\(y\\) with \\(2y\\) is a vertical compression by \\(\\frac{1}{2}\\).",
@@ -6454,15 +6723,15 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "The graph of \\(y = x(x + 4)\\) is stretched horizontally by a factor of 3. Which equation describes the new function?",
         "opts": [
           "\\(y = \\dfrac{x}{3}\\!\\left(\\dfrac{x}{3} + 4\\right) = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\)",
-          "\\(y = 3x(3x + 4)\\)",
+          "\\(y = \\dfrac{1}{3}x(x + 4)\\)",
           "\\(y = x(x + 12)\\)",
-          "\\(y = \\dfrac{1}{3}x(x + 4)\\)"
+          "\\(y = 3x(3x + 4)\\)"
         ],
         "options": [
           "\\(y = \\dfrac{x}{3}\\!\\left(\\dfrac{x}{3} + 4\\right) = \\dfrac{x^2}{9} + \\dfrac{4x}{3}\\)",
-          "\\(y = 3x(3x + 4)\\)",
+          "\\(y = \\dfrac{1}{3}x(x + 4)\\)",
           "\\(y = x(x + 12)\\)",
-          "\\(y = \\dfrac{1}{3}x(x + 4)\\)"
+          "\\(y = 3x(3x + 4)\\)"
         ],
         "a": 0,
         "answer": 0,
@@ -6539,18 +6808,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "The graph of \\(y = x(x + 4)\\) is stretched vertically by a factor of 2. Which equation describes this new function?",
         "opts": [
-          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)",
           "\\(y = x\\left(\\dfrac{x}{2} + 4\\right)\\)",
           "\\(y = 2x(2x + 8)\\)",
-          "\\(y = x(x + 8)\\)"
+          "\\(y = x(x + 8)\\)",
+          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)"
         ],
         "options": [
-          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)",
           "\\(y = x\\left(\\dfrac{x}{2} + 4\\right)\\)",
           "\\(y = 2x(2x + 8)\\)",
-          "\\(y = x(x + 8)\\)"
+          "\\(y = x(x + 8)\\)",
+          "\\(y = 2x(x + 4) = 2x^2 + 8x\\)"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "Multiply the entire function output by 2.",
         "solution": "Multiply by 2: \\(y = 2x(x+4) = 2x^2 + 8x\\).",
@@ -6575,15 +6844,15 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "This new graph is then stretched horizontally by a factor of 3. What is the final equation?",
         "opts": [
           "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
-          "\\(y = 6x^2 + 24x\\)",
           "\\(y = 2x^2 + 24x\\)",
-          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)"
+          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)",
+          "\\(y = 6x^2 + 24x\\)"
         ],
         "options": [
           "\\(y = \\dfrac{2x^2}{9} + \\dfrac{8x}{3}\\)",
-          "\\(y = 6x^2 + 24x\\)",
           "\\(y = 2x^2 + 24x\\)",
-          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)"
+          "\\(y = \\dfrac{2x^2}{3} + \\dfrac{8x}{3}\\)",
+          "\\(y = 6x^2 + 24x\\)"
         ],
         "a": 0,
         "answer": 0,
@@ -6613,15 +6882,15 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Compare your final equations in the previous two questions. Does the order of applying a horizontal dilation and a vertical dilation change the final result?",
-    "a": "1",
+    "a": 3,
     "opts": [
+      "Only if one factor is a stretch and the other is a compression.",
       "Yes, the order completely changes the final equation.",
-      "No, the order does not matter.",
       "Only if the dilation factors are negative.",
-      "Only if one factor is a stretch and the other is a compression."
+      "No, the order does not matter."
     ],
-    "h": "Did the final equations $y = 2\\left[\\frac{x}{3}(\\frac{x}{3} + 4)\\right]$ match?",
-    "s": "Because horizontal dilations only affect the inputs ($x$) and vertical dilations only affect the outputs ($y$), they are independent of each other. The order does not matter.",
+    "h": "Did the final equations \\\\(y = 2\\left[\\frac{x}{3}(\\frac{x}{3} + 4)\\right]\\\\) match?",
+    "s": "Because horizontal dilations only affect the inputs (\\\\(x\\\\)) and vertical dilations only affect the outputs (\\\\(y\\\\)), they are independent of each other. The order does not matter.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Compare your final equations in the previous two questions. Does the order of applying a horizontal dilation and a vertical dilation change the final result?\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -6635,6 +6904,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Because horizontal dilations only affect the inputs (\\(x\\)) and vertical dilations only affect the outputs (\\(y\\)), they are independent of each other. The order does not matter.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Because horizontal dilations only affect the inputs (\\(x\\)) and vertical dilations only affect the outputs (\\(y\\)), they are independent of each other. The order does not matter."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Only if one factor is a stretch and the other is a compression.",
+      "Yes, the order completely changes the final equation.",
+      "Only if the dilation factors are negative.",
+      "No, the order does not matter."
     ]
   },
   {
@@ -6691,18 +6967,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "This function \\(f(x) = x^3 - 4x\\) is stretched horizontally by a factor of 3. What is the equation of the new function, \\(g(x)\\)?",
         "opts": [
-          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
           "\\(g(x) = 27x^3 - 12x\\)",
-          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)",
-          "\\(g(x) = 3x^3 - 12x\\)"
+          "\\(g(x) = 3x^3 - 12x\\)",
+          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
+          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)"
         ],
         "options": [
-          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
           "\\(g(x) = 27x^3 - 12x\\)",
-          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)",
-          "\\(g(x) = 3x^3 - 12x\\)"
+          "\\(g(x) = 3x^3 - 12x\\)",
+          "\\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\)",
+          "\\(g(x) = \\dfrac{x^3}{3} - 4x\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "Replace every \\(x\\) with \\(\\frac{x}{3}\\).",
         "solution": "Replace \\(x\\) with \\(\\frac{x}{3}\\): \\(g(x) = \\left(\\frac{x}{3}\right)^3 - 4\\left(\\frac{x}{3}\right) = \\frac{x^3}{27} - \\frac{4x}{3}\\).",
@@ -6726,18 +7002,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Is the new function \\(g(x) = \\dfrac{x^3}{27} - \\dfrac{4x}{3}\\) still odd?",
         "opts": [
-          "Yes, because \\(g(-x) = -g(x)\\)",
           "No, because the horizontal dilation broke the symmetry",
           "Yes, because \\(g(-x) = g(x)\\)",
-          "No, because odd functions cannot be stretched"
+          "No, because odd functions cannot be stretched",
+          "Yes, because \\(g(-x) = -g(x)\\)"
         ],
         "options": [
-          "Yes, because \\(g(-x) = -g(x)\\)",
           "No, because the horizontal dilation broke the symmetry",
           "Yes, because \\(g(-x) = g(x)\\)",
-          "No, because odd functions cannot be stretched"
+          "No, because odd functions cannot be stretched",
+          "Yes, because \\(g(-x) = -g(x)\\)"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "Test if \\(g(-x) = -g(x)\\) by substituting \\(-x\\) into \\(g(x)\\).",
         "solution": "\\(g(-x) = \\frac{(-x)^3}{27} - \\frac{4(-x)}{3} = -\\frac{x^3}{27} + \\frac{4x}{3} = -g(x)\\). Yes, it is still odd.",
@@ -6777,18 +7053,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Which of the following shows the correct algebraic verification that \\(f(x) = 9 - x^2\\) is an even function?",
         "opts": [
-          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
           "\\(f(-x) = -9 + x^2 = -f(x)\\)",
-          "\\(f(-x) = 9 - (-x) = 9 + x\\)",
-          "\\(f(-x) = 0\\) since it is symmetrical"
+          "\\(f(-x) = 0\\) since it is symmetrical",
+          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
+          "\\(f(-x) = 9 - (-x) = 9 + x\\)"
         ],
         "options": [
-          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
           "\\(f(-x) = -9 + x^2 = -f(x)\\)",
-          "\\(f(-x) = 9 - (-x) = 9 + x\\)",
-          "\\(f(-x) = 0\\) since it is symmetrical"
+          "\\(f(-x) = 0\\) since it is symmetrical",
+          "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\)",
+          "\\(f(-x) = 9 - (-x) = 9 + x\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "A function is even if \\(f(-x) = f(x)\\). Substitute \\(-x\\) for \\(x\\) and simplify.",
         "solution": "\\(f(-x) = 9 - (-x)^2 = 9 - x^2 = f(x)\\). Therefore, the function is even.",
@@ -6812,18 +7088,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "This function is stretched vertically by a factor of 4. What is the equation of the new function, \\(h(x)\\)?",
         "opts": [
-          "\\(h(x) = 36 - 4x^2\\)",
           "\\(h(x) = 9 - 4x^2\\)",
+          "\\(h(x) = 36 - 4x^2\\)",
           "\\(h(x) = 36 - x^2\\)",
           "\\(h(x) = \\dfrac{9 - x^2}{4}\\)"
         ],
         "options": [
-          "\\(h(x) = 36 - 4x^2\\)",
           "\\(h(x) = 9 - 4x^2\\)",
+          "\\(h(x) = 36 - 4x^2\\)",
           "\\(h(x) = 36 - x^2\\)",
           "\\(h(x) = \\dfrac{9 - x^2}{4}\\)"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "Multiply the entire expression \\(9 - x^2\\) by 4.",
         "solution": "Multiply the function by 4: \\(h(x) = 4(9 - x^2) = 36 - 4x^2\\).",
@@ -6886,12 +7162,12 @@ export const CH5_QUESTIONS_Y11A = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "q": "Based on the previous examples, what can you conclude about dilations and symmetry?",
-    "a": "0",
+    "a": 3,
     "opts": [
-      "Dilations preserve both even and odd symmetries.",
       "Dilations destroy all symmetries.",
+      "Vertical dilations preserve symmetry, but horizontal dilations do not.",
       "Horizontal dilations preserve symmetry, but vertical dilations do not.",
-      "Vertical dilations preserve symmetry, but horizontal dilations do not."
+      "Dilations preserve both even and odd symmetries."
     ],
     "h": "Did the odd function stay odd? Did the even function stay even?",
     "s": "Stretching a graph vertically or horizontally does not change its fundamental symmetry across the y-axis or about the origin. Thus, dilations preserve both even and odd symmetries.",
@@ -6908,6 +7184,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Stretching a graph vertically or horizontally does not change its fundamental symmetry across the y-axis or about the origin. Thus, dilations preserve both even and odd symmetries.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "\\(Stretching a graph vertically or horizontally does not change its fundamental symmetry across the y-axis or about the origin. Thus, dilations preserve both even and odd symmetries.\\)"
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Dilations destroy all symmetries.",
+      "Vertical dilations preserve symmetry, but horizontal dilations do not.",
+      "Horizontal dilations preserve symmetry, but vertical dilations do not.",
+      "Dilations preserve both even and odd symmetries."
     ]
   },
   {
@@ -6930,15 +7213,15 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "What is the starting point (domain boundary) of the square root function \\(y = \\sqrt{9 + x}\\)?",
         "opts": [
           "\\((-9, 0)\\)",
-          "\\((9, 0)\\)",
           "\\((0, 3)\\)",
-          "\\((0, -9)\\)"
+          "\\((0, -9)\\)",
+          "\\((9, 0)\\)"
         ],
         "options": [
           "\\((-9, 0)\\)",
-          "\\((9, 0)\\)",
           "\\((0, 3)\\)",
-          "\\((0, -9)\\)"
+          "\\((0, -9)\\)",
+          "\\((9, 0)\\)"
         ],
         "a": 0,
         "answer": 0,
@@ -6964,18 +7247,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What transformation maps function 1 to function 2: \\(y = 3\\sqrt{9 + x}\\)?",
         "opts": [
-          "Vertical stretch by a factor of 3",
           "Horizontal stretch by a factor of 3",
           "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Vertical stretch by a factor of 3",
           "Horizontal compression by a factor of \\(\\frac{1}{3}\\)"
         ],
         "options": [
-          "Vertical stretch by a factor of 3",
           "Horizontal stretch by a factor of 3",
           "Vertical compression by a factor of \\(\\frac{1}{3}\\)",
+          "Vertical stretch by a factor of 3",
           "Horizontal compression by a factor of \\(\\frac{1}{3}\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "The output of function 1 is multiplied by 3.",
         "solution": "Function 2 is \\(3 \\times \\text{Function 1}\\), which represents a vertical stretch by factor 3.",
@@ -6999,18 +7282,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What transformation maps function 2 to function 3: \\(y = 3\\sqrt{9 + 3x}\\), and what is its new starting point?",
         "opts": [
-          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)",
+          "Horizontal translation left by 3; starts at \\((-12, 0)\\)",
           "Horizontal stretch by 3; starts at \\((-27, 0)\\)",
           "Vertical stretch by 3; starts at \\((-9, 0)\\)",
-          "Horizontal translation left by 3; starts at \\((-12, 0)\\)"
+          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)"
         ],
         "options": [
-          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)",
+          "Horizontal translation left by 3; starts at \\((-12, 0)\\)",
           "Horizontal stretch by 3; starts at \\((-27, 0)\\)",
           "Vertical stretch by 3; starts at \\((-9, 0)\\)",
-          "Horizontal translation left by 3; starts at \\((-12, 0)\\)"
+          "Horizontal compression by \\(\\frac{1}{3}\\); starts at \\((-3, 0)\\)"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "Every \\(x\\) in \\(3\\sqrt{9 + x}\\) is replaced by \\(3x\\). Find the new domain boundary.",
         "solution": "Replacing \\(x\\) with \\(3x\\) is a horizontal compression by \\(\\frac{1}{3}\\). The starting point is where \\(9 + 3x = 0 \\implies x = -3\\), which is \\((-3, 0)\\).",
@@ -7050,18 +7333,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Function 1 is \\(y = 3^x\\). What is its \\(y\\)-intercept?",
         "opts": [
-          "\\((0, 1)\\)",
-          "\\((0, 3)\\)",
           "\\((1, 3)\\)",
-          "\\((0, 0)\\)"
+          "\\((0, 0)\\)",
+          "\\((0, 1)\\)",
+          "\\((0, 3)\\)"
         ],
         "options": [
-          "\\((0, 1)\\)",
-          "\\((0, 3)\\)",
           "\\((1, 3)\\)",
-          "\\((0, 0)\\)"
+          "\\((0, 0)\\)",
+          "\\((0, 1)\\)",
+          "\\((0, 3)\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "Set \\(x = 0\\) to find the \\(y\\)-intercept.",
         "solution": "Substitute \\(x = 0\\): \\(y = 3^0 = 1\\). The \\(y\\)-intercept is \\((0, 1)\\).",
@@ -7085,18 +7368,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What transformation maps function 1 to function 2: \\(y = 3^{-x}\\)?",
         "opts": [
-          "Reflection in the \\(y\\)-axis",
-          "Reflection in the \\(x\\)-axis",
+          "Rotation of 180 degrees",
           "Horizontal compression by a factor of \\(-1\\)",
-          "Rotation of 180 degrees"
+          "Reflection in the \\(y\\)-axis",
+          "Reflection in the \\(x\\)-axis"
         ],
         "options": [
-          "Reflection in the \\(y\\)-axis",
-          "Reflection in the \\(x\\)-axis",
+          "Rotation of 180 degrees",
           "Horizontal compression by a factor of \\(-1\\)",
-          "Rotation of 180 degrees"
+          "Reflection in the \\(y\\)-axis",
+          "Reflection in the \\(x\\)-axis"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "Replacing \\(x\\) with \\(-x\\) reflects the graph horizontally.",
         "solution": "Replacing \\(x\\) with \\(-x\\) is a reflection across the vertical \\(y\\)-axis.",
@@ -7120,18 +7403,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What transformation maps function 2 to function 3: \\(y = 4 \\times 3^{-x}\\), and what is its \\(y\\)-intercept?",
         "opts": [
-          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)",
           "Horizontal stretch by 4; y-intercept is \\((0, 1)\\)",
           "Vertical stretch by 4; y-intercept is \\((0, 4^3)\\)",
-          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)"
+          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)",
+          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)"
         ],
         "options": [
-          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)",
           "Horizontal stretch by 4; y-intercept is \\((0, 1)\\)",
           "Vertical stretch by 4; y-intercept is \\((0, 4^3)\\)",
-          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)"
+          "Vertical translation up by 4; y-intercept is \\((0, 5)\\)",
+          "Vertical stretch by 4; y-intercept is \\((0, 4)\\)"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "The whole function is multiplied by 4. Find the value at \\(x = 0\\).",
         "solution": "Multiplying by 4 is a vertical stretch by factor 4. At \\(x = 0\\), \\(y = 4 \\times 3^0 = 4\\), so the y-intercept is \\((0, 4)\\).",
@@ -7580,13 +7863,18 @@ export const CH5_QUESTIONS_Y11A = [
     "id": "y11a-5D-new-11c",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Give two possible interpretations of transforming $y = x^3$ to get the graph of $y = \\frac{1}{27}x^3$, then graph both functions on the same number plane.",
-    "a": "Horizontal stretch by 3, or vertical compression by 1/27.",
-    "opts": [],
-    "h": "Rewrite $\\frac{1}{27}x^3$ as a perfect cube.",
-    "s": "Interpretation 1: $y = (\\frac{x}{3})^3$. This is a horizontal stretch by a factor of 3.\\nInterpretation 2: $y = \\frac{1}{27}(x^3)$. This is a vertical compression by a factor of $\\frac{1}{27}$.",
+    "q": "Give two possible interpretations of transforming \\\\(y = x^3\\\\) to get the graph of \\\\(y = \\frac{1}{27}x^3\\\\), then graph both functions on the same number plane.",
+    "a": 2,
+    "opts": [
+      "\\\\(\\\\text{Horizontal compression by a factor of } \\\\frac{1}{27}\\\\), or \\\\(\\\\text{vertical stretch by a factor of } 3\\\\)",
+      "\\\\(\\\\text{Horizontal compression by a factor of } \\\\frac{1}{3}\\\\), or \\\\(\\\\text{vertical stretch by a factor of } 27\\\\)",
+      "\\\\(\\\\text{Horizontal stretch by a factor of } 3\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{27}\\\\)",
+      "\\\\(\\\\text{Horizontal stretch by a factor of } 27\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{3}\\\\)"
+    ],
+    "h": "Rewrite \\\\(\\frac{1}{27}x^3\\\\) as a perfect cube.",
+    "s": "Interpretation 1: \\\\(y = (\\frac{x}{3})^3\\\\). This is a horizontal stretch by a factor of 3.\\nInterpretation 2: \\\\(y = \\frac{1}{27}(x^3)\\\\). This is a vertical compression by a factor of \\\\(\\frac{1}{27}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Give two possible interpretations of transforming \\(y = x^3\\) to get the graph of \\(y = \\frac{1}{27}x^3\\), then graph both functions on the same number plane.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -7598,9 +7886,20 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Interpretation 1: \\(y = (\\frac{x}{3})^3\\). This is a horizontal stretch by a factor of 3.\\nInterpretation 2: \\(y = \\frac{1}{27}(x^3)\\). This is a vertical compression by a factor of \\(\\frac{1}{27}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
-        "workingOut": "Interpretation 1: \\(y = (\\frac{x}{3})^3\\). This is a horizontal stretch by a factor of 3.\\nInterpretation 2: \\(y = \\frac{1}{27}(x^3)\\). This is a vertical compression by a factor of \\(\\frac{1}{27}\\)."
+        "workingOut": "Interpretation 1: \\(y = (\\frac{x}{3})^3\\). This is a horizontal stretch by a factor of 3.\\nInterpretation 2: \\(y = \\frac{1}{27}(x^3)\\). This is a vertical compression by a factor of \\(\\frac{1}{27}\\).",
+        "graphData": {
+          "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <!-- Grid Lines -->\n  <path d=\"M 0,20 H 300 M 0,40 H 300 M 0,60 H 300 M 0,80 H 300 M 0,100 H 300 M 0,140 H 300 M 0,160 H 300 M 0,180 H 300 M 0,200 H 300 M 0,220 H 300\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <path d=\"M 20,0 V 240 M 40,0 V 240 M 60,0 V 240 M 80,0 V 240 M 100,0 V 240 M 120,0 V 240 M 160,0 V 240 M 180,0 V 240 M 200,0 V 240 M 220,0 V 240 M 240,0 V 240 M 260,0 V 240 M 280,0 V 240\" stroke=\"#f1f5f9\" stroke-width=\"1\" />\n  <!-- Axes -->\n  <line x1=\"10\" y1=\"120\" x2=\"290\" y2=\"120\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <line x1=\"140\" y1=\"10\" x2=\"140\" y2=\"230\" stroke=\"#64748b\" stroke-width=\"1.5\" />\n  <!-- Axes Labels -->\n  <text x=\"285\" y=\"135\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"125\" y=\"15\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <!-- Curve y = x^3 -->\n  <path d=\"M 100,220 C 120,180 130,120 140,120 C 150,120 160,60 180,20\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2\" />\n  <text x=\"185\" y=\"25\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = x³</text>\n  <!-- Curve y = 1/27 x^3 -->\n  <path d=\"M 20,220 C 80,180 110,120 140,120 C 170,120 200,60 260,20\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"4\" />\n  <text x=\"245\" y=\"35\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = 1/27 x³</text>\n</svg>"
+        }
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "\\\\(\\\\text{Horizontal compression by a factor of } \\\\frac{1}{27}\\\\), or \\\\(\\\\text{vertical stretch by a factor of } 3\\\\)",
+      "\\\\(\\\\text{Horizontal compression by a factor of } \\\\frac{1}{3}\\\\), or \\\\(\\\\text{vertical stretch by a factor of } 27\\\\)",
+      "\\\\(\\\\text{Horizontal stretch by a factor of } 3\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{27}\\\\)",
+      "\\\\(\\\\text{Horizontal stretch by a factor of } 27\\\\), or \\\\(\\\\text{vertical compression by a factor of } \\\\frac{1}{3}\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5D-new-12a",
@@ -7608,16 +7907,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n$y = x^2 - 4x$ and $y = 5x^2 - 20x$",
-    "a": "0",
+    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = x^2 - 4x\\\\) and \\\\(y = 5x^2 - 20x\\\\)",
+    "a": 0,
     "opts": [
       "Vertical stretch by a factor of 5.",
+      "Horizontal compression by a factor of 1/5.",
       "Horizontal stretch by a factor of 5.",
-      "Vertical compression by a factor of 1/5.",
-      "Horizontal compression by a factor of 1/5."
+      "Vertical compression by a factor of 1/5."
     ],
     "h": "Factor out the 5 from the second equation.",
-    "s": "The second equation is $y = 5(x^2 - 4x)$, which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5.",
+    "s": "The second equation is \\\\(y = 5(x^2 - 4x)\\\\), which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\(y = x^2 - 4x\\) and \\(y = 5x^2 - 20x\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -7631,6 +7930,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"The second equation is \\(y = 5(x^2 - 4x)\\), which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "The second equation is \\(y = 5(x^2 - 4x)\\), which is 5 times the first equation. This corresponds to a vertical stretch by a factor of 5."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Vertical stretch by a factor of 5.",
+      "Horizontal compression by a factor of 1/5.",
+      "Horizontal stretch by a factor of 5.",
+      "Vertical compression by a factor of 1/5."
     ]
   },
   {
@@ -7639,16 +7945,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n$y = \\frac{1}{x - 3}$ and $y = \\frac{1}{4x - 3}$",
-    "a": "0",
+    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x - 3}\\\\) and \\\\(y = \\frac{1}{4x - 3}\\\\)",
+    "a": 1,
     "opts": [
-      "Horizontal compression by a factor of 1/4.",
       "Horizontal stretch by a factor of 4.",
-      "Vertical compression by a factor of 1/4.",
-      "Vertical stretch by a factor of 4."
+      "Horizontal compression by a factor of 1/4.",
+      "Vertical stretch by a factor of 4.",
+      "Vertical compression by a factor of 1/4."
     ],
-    "h": "The $x$ in the first equation has been replaced by $4x$.",
-    "s": "Replacing $x$ with $4x$ (which is $x / 0.25$) means the graph is horizontally compressed by a factor of $\\frac{1}{4}$.",
+    "h": "The \\\\(x\\\\) in the first equation has been replaced by \\\\(4x\\\\).",
+    "s": "Replacing \\\\(x\\\\) with \\\\(4x\\\\) (which is \\\\(x / 0.25\\\\)) means the graph is horizontally compressed by a factor of \\\\(\\frac{1}{4}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\(y = \\frac{1}{x - 3}\\) and \\(y = \\frac{1}{4x - 3}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -7662,6 +7968,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replacing \\(x\\) with \\(4x\\) (which is \\(x / 0.25\\)) means the graph is horizontally compressed by a factor of \\(\\frac{1}{4}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replacing \\(x\\) with \\(4x\\) (which is \\(x / 0.25\\)) means the graph is horizontally compressed by a factor of \\(\\frac{1}{4}\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal stretch by a factor of 4.",
+      "Horizontal compression by a factor of 1/4.",
+      "Vertical stretch by a factor of 4.",
+      "Vertical compression by a factor of 1/4."
     ]
   },
   {
@@ -7670,16 +7983,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n$y = 4^x$ and $y = 4^{x/3}$",
-    "a": "0",
+    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = 4^x\\\\) and \\\\(y = 4^{x/3}\\\\)",
+    "a": 0,
     "opts": [
       "Horizontal stretch by a factor of 3.",
+      "Vertical compression by a factor of 1/3.",
       "Vertical stretch by a factor of 3.",
-      "Horizontal compression by a factor of 1/3.",
-      "Vertical compression by a factor of 1/3."
+      "Horizontal compression by a factor of 1/3."
     ],
-    "h": "The exponent $x$ has been replaced by $\\frac{x}{3}$.",
-    "s": "Replacing $x$ with $\\frac{x}{3}$ represents a horizontal stretch by a factor of 3.",
+    "h": "The exponent \\\\(x\\\\) has been replaced by \\\\(\\frac{x}{3}\\\\).",
+    "s": "Replacing \\\\(x\\\\) with \\\\(\\frac{x}{3}\\\\) represents a horizontal stretch by a factor of 3.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\(y = 4^x\\) and \\(y = 4^{x/3}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -7693,6 +8006,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Replacing \\(x\\) with \\(\\frac{x}{3}\\) represents a horizontal stretch by a factor of 3.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Replacing \\(x\\) with \\(\\frac{x}{3}\\) represents a horizontal stretch by a factor of 3."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Horizontal stretch by a factor of 3.",
+      "Vertical compression by a factor of 1/3.",
+      "Vertical stretch by a factor of 3.",
+      "Horizontal compression by a factor of 1/3."
     ]
   },
   {
@@ -7701,16 +8021,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n$y = \\frac{1}{x + 5}$ and $y = \\frac{6}{x + 5}$",
-    "a": "0",
+    "q": "Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\\\(y = \\frac{1}{x + 5}\\\\) and \\\\(y = \\frac{6}{x + 5}\\\\)",
+    "a": 2,
     "opts": [
-      "Vertical stretch by a factor of 6.",
-      "Horizontal stretch by a factor of 6.",
       "Vertical compression by a factor of 1/6.",
+      "Horizontal stretch by a factor of 6.",
+      "Vertical stretch by a factor of 6.",
       "Horizontal compression by a factor of 1/6."
     ],
     "h": "The entire right hand side has been multiplied by 6.",
-    "s": "The second equation is $6 \\times \\frac{1}{x+5}$, which represents a vertical stretch by a factor of 6.",
+    "s": "The second equation is \\\\(6 \\times \\frac{1}{x+5}\\\\), which represents a vertical stretch by a factor of 6.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Identify how the graph of the second equation can be obtained from the graph of the first by a suitable dilation: \\n\\(y = \\frac{1}{x + 5}\\) and \\(y = \\frac{6}{x + 5}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -7724,6 +8044,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"The second equation is \\(6 \\times \\frac{1}{x+5}\\), which represents a vertical stretch by a factor of 6.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "The second equation is \\(6 \\times \\frac{1}{x+5}\\), which represents a vertical stretch by a factor of 6."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Vertical compression by a factor of 1/6.",
+      "Horizontal stretch by a factor of 6.",
+      "Vertical stretch by a factor of 6.",
+      "Horizontal compression by a factor of 1/6."
     ]
   },
   {
@@ -7746,14 +8073,14 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "The hyperbola \\(y = \\frac{2}{x}\\) is stretched horizontally by a factor of 3. Which of the following is the equation of the new hyperbola?",
         "opts": [
           "\\(y = \\frac{6}{x}\\)",
-          "\\(y = \\frac{2}{3x}\\)",
           "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2}{3x}\\)",
           "\\(y = \\frac{2x}{3}\\)"
         ],
         "options": [
           "\\(y = \\frac{6}{x}\\)",
-          "\\(y = \\frac{2}{3x}\\)",
           "\\(y = \\frac{2}{x} + 3\\)",
+          "\\(y = \\frac{2}{3x}\\)",
           "\\(y = \\frac{2x}{3}\\)"
         ],
         "a": 0,
@@ -7782,14 +8109,14 @@ export const CH5_QUESTIONS_Y11A = [
         "opts": [
           "\\(y = \\frac{6}{x}\\)",
           "\\(y = \\frac{2}{3x}\\)",
-          "\\(y = \\frac{2}{x} + 3\\)",
-          "\\(y = \\frac{2}{x-3}\\)"
+          "\\(y = \\frac{2}{x-3}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)"
         ],
         "options": [
           "\\(y = \\frac{6}{x}\\)",
           "\\(y = \\frac{2}{3x}\\)",
-          "\\(y = \\frac{2}{x} + 3\\)",
-          "\\(y = \\frac{2}{x-3}\\)"
+          "\\(y = \\frac{2}{x-3}\\)",
+          "\\(y = \\frac{2}{x} + 3\\)"
         ],
         "a": 0,
         "answer": 0,
@@ -7815,18 +8142,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What do you notice about the equations from parts (a) and (b)?",
         "opts": [
-          "They are exactly the same equation.",
-          "They are different equations with different graphs.",
           "Part (a) gives a wider graph; part (b) gives a taller graph.",
-          "The equations differ by a constant."
+          "They are different equations with different graphs.",
+          "The equations differ by a constant.",
+          "They are exactly the same equation."
         ],
         "options": [
-          "They are exactly the same equation.",
-          "They are different equations with different graphs.",
           "Part (a) gives a wider graph; part (b) gives a taller graph.",
-          "The equations differ by a constant."
+          "They are different equations with different graphs.",
+          "The equations differ by a constant.",
+          "They are exactly the same equation."
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "Compare the two results: horizontal stretch by 3 gives \\(y = \\frac{6}{x}\\), vertical stretch by 3 also gives \\(y = \\frac{6}{x}\\).",
         "solution": "Both a horizontal stretch by 3 and a vertical stretch by 3 produce the same equation \\(y = \\frac{6}{x}\\). The two transformations are indistinguishable on the hyperbola \\(y = \\frac{2}{x}\\).",
@@ -7850,18 +8177,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Can the hyperbola \\(y = \\frac{6}{x}\\) be obtained from \\(y = \\frac{2}{x}\\) by a single enlargement from the origin (applying the same scale factor \\(k\\) to both \\(x\\)- and \\(y\\)-axes)?",
         "opts": [
-          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
-          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
           "Yes — an enlargement by factor 3 achieves this.",
+          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
+          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
           "No — you need two separate dilations for a hyperbola."
         ],
         "options": [
-          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
-          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
           "Yes — an enlargement by factor 3 achieves this.",
+          "No — an enlargement always changes the equation to \\(y = \\frac{2}{kx}\\).",
+          "Yes — an enlargement by factor \\(\\sqrt{3}\\) achieves this.",
           "No — you need two separate dilations for a hyperbola."
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "An enlargement by factor \\(k\\) replaces \\(x \\to \\frac{x}{k}\\) and \\(y \\to \\frac{y}{k}\\) simultaneously.",
         "solution": "An enlargement by \\(k\\) gives \\(\\frac{y}{k} = \\frac{2}{x/k}\\), so \\(y = \\frac{2k^2}{x}\\). Setting \\(\\frac{2k^2}{x} = \\frac{6}{x}\\) gives \\(k^2 = 3\\), so \\(k = \\sqrt{3}\\). Yes, an enlargement from the origin by \\(\\sqrt{3}\\) achieves this.",
@@ -7886,15 +8213,15 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "Which family of functions has the same property as \\(y = \\frac{2}{x}\\) — where a horizontal dilation by \\(k\\) produces the same result as a vertical dilation by \\(k\\)?",
         "opts": [
           "\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
-          "\\(y = Ax^2\\) (parabolas through the origin)",
+          "\\(y = Ax + B\\) (linear functions)",
           "\\(y = A \\sin(x)\\) (sinusoidal functions)",
-          "\\(y = Ax + B\\) (linear functions)"
+          "\\(y = Ax^2\\) (parabolas through the origin)"
         ],
         "options": [
           "\\(y = \\frac{A}{x}\\) (hyperbolas with horizontal asymptotes through the origin)",
-          "\\(y = Ax^2\\) (parabolas through the origin)",
+          "\\(y = Ax + B\\) (linear functions)",
           "\\(y = A \\sin(x)\\) (sinusoidal functions)",
-          "\\(y = Ax + B\\) (linear functions)"
+          "\\(y = Ax^2\\) (parabolas through the origin)"
         ],
         "a": 0,
         "answer": 0,
@@ -7936,18 +8263,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "The parabola \\(y = x^2\\) is dilated horizontally by a factor of \\(\\frac{1}{3}\\). Which is the new equation?",
         "opts": [
-          "\\(y = 9x^2\\)",
           "\\(y = \\frac{1}{9}x^2\\)",
           "\\(y = x^2 + \\frac{1}{3}\\)",
-          "\\(y = 3x^2\\)"
+          "\\(y = 3x^2\\)",
+          "\\(y = 9x^2\\)"
         ],
         "options": [
-          "\\(y = 9x^2\\)",
           "\\(y = \\frac{1}{9}x^2\\)",
           "\\(y = x^2 + \\frac{1}{3}\\)",
-          "\\(y = 3x^2\\)"
+          "\\(y = 3x^2\\)",
+          "\\(y = 9x^2\\)"
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "A horizontal dilation by \\(\\frac{1}{3}\\) replaces \\(x\\) with \\(\\frac{x}{1/3} = 3x\\).",
         "solution": "Horizontal dilation by \\(\\frac{1}{3}\\) replaces \\(x\\) with \\(3x\\): \\(y = (3x)^2 = 9x^2\\).",
@@ -7971,18 +8298,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "The original parabola \\(y = x^2\\) is dilated vertically by a factor of 9. Which is the new equation?",
         "opts": [
-          "\\(y = 9x^2\\)",
           "\\(y = x^2 + 9\\)",
-          "\\(y = (x+9)^2\\)",
-          "\\(y = \\frac{x^2}{9}\\)"
+          "\\(y = 9x^2\\)",
+          "\\(y = \\frac{x^2}{9}\\)",
+          "\\(y = (x+9)^2\\)"
         ],
         "options": [
-          "\\(y = 9x^2\\)",
           "\\(y = x^2 + 9\\)",
-          "\\(y = (x+9)^2\\)",
-          "\\(y = \\frac{x^2}{9}\\)"
+          "\\(y = 9x^2\\)",
+          "\\(y = \\frac{x^2}{9}\\)",
+          "\\(y = (x+9)^2\\)"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "A vertical dilation by factor 9 multiplies the whole function by 9.",
         "solution": "Multiply the function by 9: \\(y = 9x^2\\).",
@@ -8008,14 +8335,14 @@ export const CH5_QUESTIONS_Y11A = [
         "opts": [
           "They are exactly the same equation.",
           "They are different equations.",
-          "Part (a) is wider than part (b).",
-          "They have different intercepts."
+          "They have different intercepts.",
+          "Part (a) is wider than part (b)."
         ],
         "options": [
           "They are exactly the same equation.",
           "They are different equations.",
-          "Part (a) is wider than part (b).",
-          "They have different intercepts."
+          "They have different intercepts.",
+          "Part (a) is wider than part (b)."
         ],
         "a": 0,
         "answer": 0,
@@ -8076,18 +8403,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "For functions of the form \\(y = x^n\\), a horizontal dilation by \\(\\frac{1}{k}\\) is equivalent to a vertical dilation by which factor?",
         "opts": [
-          "\\(k^n\\)",
-          "\\(k\\)",
           "\\(\\frac{1}{k^n}\\)",
-          "\\(n^k\\)"
+          "\\(n^k\\)",
+          "\\(k^n\\)",
+          "\\(k\\)"
         ],
         "options": [
-          "\\(k^n\\)",
-          "\\(k\\)",
           "\\(\\frac{1}{k^n}\\)",
-          "\\(n^k\\)"
+          "\\(n^k\\)",
+          "\\(k^n\\)",
+          "\\(k\\)"
         ],
-        "a": 0,
+        "a": 2,
         "answer": 0,
         "hint": "If you replace \\(x\\) with \\(kx\\) in \\(y = x^n\\), what do you get?",
         "solution": "Replacing \\(x\\) with \\(kx\\): \\(y = (kx)^n = k^n x^n\\). This is a vertical stretch by \\(k^n\\). So a horizontal dilation by \\(\\frac{1}{k}\\) equals a vertical dilation by \\(k^n\\).",
@@ -8127,18 +8454,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "What is the initial mass (when \\(t = 0\\))?",
         "opts": [
-          "\\(5\\) grams",
           "\\(2\\) grams",
+          "\\(5\\) grams",
           "\\(20\\) grams",
           "\\(10\\) grams"
         ],
         "options": [
-          "\\(5\\) grams",
           "\\(2\\) grams",
+          "\\(5\\) grams",
           "\\(20\\) grams",
           "\\(10\\) grams"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "Substitute \\(t = 0\\) into the formula.",
         "solution": "At \\(t = 0\\): \\(M = 5 \\times 2^{0} = 5 \\times 1 = 5\\) grams.",
@@ -8163,15 +8490,15 @@ export const CH5_QUESTIONS_Y11A = [
         "question": "What is the half-life of the substance (the time for the mass to halve)?",
         "opts": [
           "\\(20\\) years",
+          "\\(40\\) years",
           "\\(5\\) years",
-          "\\(10\\) years",
-          "\\(40\\) years"
+          "\\(10\\) years"
         ],
         "options": [
           "\\(20\\) years",
+          "\\(40\\) years",
           "\\(5\\) years",
-          "\\(10\\) years",
-          "\\(40\\) years"
+          "\\(10\\) years"
         ],
         "a": 0,
         "answer": 0,
@@ -8197,18 +8524,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Suppose the initial mass is doubled. This corresponds to which dilation, and what is the new equation for \\(M\\)?",
         "opts": [
+          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
           "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
           "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
-          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
           "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
         ],
         "options": [
+          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
           "Vertical dilation by 2: \\(M = 10 \\times 2^{-t/20}\\)",
           "Horizontal dilation by 2: \\(M = 5 \\times 2^{-t/10}\\)",
-          "Vertical dilation by 2: \\(M = 5 \\times 2^{-2t/20}\\)",
           "Horizontal stretch by 2: \\(M = 5 \\times 2^{-t/40}\\)"
         ],
-        "a": 0,
+        "a": 1,
         "answer": 0,
         "hint": "Doubling every output value is a vertical dilation by factor 2.",
         "solution": "Doubling the mass at every time is a vertical dilation by 2, multiplying the function by 2. New equation: \\(M = 10 \\times 2^{-t/20}\\).",
@@ -8232,18 +8559,18 @@ export const CH5_QUESTIONS_Y11A = [
         "type": "multiple_choice",
         "question": "Using the new equation \\(M = 10 \\times 2^{-t/20}\\), what is the half-life of the doubled substance?",
         "opts": [
-          "\\(20\\) years — the same as before.",
           "\\(10\\) years — it halved.",
+          "\\(2.5\\) years — it quartered.",
           "\\(40\\) years — it doubled.",
-          "\\(2.5\\) years — it quartered."
+          "\\(20\\) years — the same as before."
         ],
         "options": [
-          "\\(20\\) years — the same as before.",
           "\\(10\\) years — it halved.",
+          "\\(2.5\\) years — it quartered.",
           "\\(40\\) years — it doubled.",
-          "\\(2.5\\) years — it quartered."
+          "\\(20\\) years — the same as before."
         ],
-        "a": 0,
+        "a": 3,
         "answer": 0,
         "hint": "Find \\(t\\) when \\(M = 5\\) (half of 10) in the new equation.",
         "solution": "Set \\(M = 5\\): \\(5 = 10 \\times 2^{-t/20} \\implies 2^{-1} = 2^{-t/20} \\implies t = 20\\). The half-life is unchanged at 20 years.",
@@ -8270,11 +8597,11 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "graph_sketch",
     "difficulty": "medium",
-    "q": "Show algebraically that the equation $y = mx$ of a straight line passing through the origin is unchanged by any enlargement with centre at the origin.",
+    "q": "Show algebraically that the equation \\\\(y = mx\\\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin.",
     "a": "Proof provided in solution steps.",
     "opts": [],
-    "h": "An enlargement by a factor of $k$ from the origin replaces $x$ with $x/k$ and $y$ with $y/k$.",
-    "s": "Let the enlargement factor be $k$. The transformation maps $(x,y) \\to (kx, ky)$. To find the new equation, we replace $x$ with $\\frac{x}{k}$ and $y$ with $\\frac{y}{k}$. \\nSubstituting these into $y = mx$: \\n$\\frac{y}{k} = m(\\frac{x}{k})$. \\nMultiplying both sides by $k$ gives: \\n$y = mx$. \\nThe equation remains completely unchanged.",
+    "h": "An enlargement by a factor of \\\\(k\\\\) from the origin replaces \\\\(x\\\\) with \\\\(x/k\\\\) and \\\\(y\\\\) with \\\\(y/k\\\\).",
+    "s": "Let the enlargement factor be \\\\(k\\\\). The transformation maps \\\\((x,y) \\to (kx, ky)\\\\). To find the new equation, we replace \\\\(x\\\\) with \\\\(\\frac{x}{k}\\\\) and \\\\(y\\\\) with \\\\(\\frac{y}{k}\\\\). \\nSubstituting these into \\\\(y = mx\\\\): \\n\\\\(\\frac{y}{k} = m(\\frac{x}{k})\\\\). \\nMultiplying both sides by \\\\(k\\\\) gives: \\n\\\\(y = mx\\\\). \\nThe equation remains completely unchanged.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Show algebraically that the equation \\(y = mx\\) of a straight line passing through the origin is unchanged by any enlargement with centre at the origin.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8288,7 +8615,8 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Let the enlargement factor be \\(k\\). The transformation maps \\((x,y) \\to (kx, ky)\\). To find the new equation, we replace \\(x\\) with \\(\\frac{x}{k}\\) and \\(y\\) with \\(\\frac{y}{k}\\). \\nSubstituting these into \\(y = mx\\): \\n\\(\\frac{y}{k} = m(\\frac{x}{k})\\). \\nMultiplying both sides by \\(k\\) gives: \\n\\(y = mx\\). \\nThe equation remains completely unchanged.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Let the enlargement factor be \\(k\\). The transformation maps \\((x,y) \\to (kx, ky)\\). To find the new equation, we replace \\(x\\) with \\(\\frac{x}{k}\\) and \\(y\\) with \\(\\frac{y}{k}\\). \\nSubstituting these into \\(y = mx\\): \\n\\(\\frac{y}{k} = m(\\frac{x}{k})\\). \\nMultiplying both sides by \\(k\\) gives: \\n\\(y = mx\\). \\nThe equation remains completely unchanged."
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-17a",
@@ -8296,16 +8624,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The unit circle $x^2 + y^2 = 1$ is transformed into an ellipse centered at the origin, with $x$-intercepts at $\\pm 5$ and $y$-intercepts at $\\pm 2$. Identify the correct equation of this transformed graph.",
-    "a": "0",
+    "q": "The unit circle \\\\(x^2 + y^2 = 1\\\\) is transformed into an ellipse centered at the origin, with \\\\(x\\\\)-intercepts at \\\\(\\pm 5\\\\) and \\\\(y\\\\)-intercepts at \\\\(\\pm 2\\\\). Identify the correct equation of this transformed graph.",
+    "a": 2,
     "opts": [
-      "(x/5)^2 + (y/2)^2 = 1",
+      "(2x)^2 + (5y)^2 = 1",
       "(x/2)^2 + (y/5)^2 = 1",
-      "(5x)^2 + (2y)^2 = 1",
-      "(2x)^2 + (5y)^2 = 1"
+      "(x/5)^2 + (y/2)^2 = 1",
+      "(5x)^2 + (2y)^2 = 1"
     ],
     "h": "This is a horizontal stretch by 5 and a vertical stretch by 2.",
-    "s": "A horizontal stretch by 5 replaces $x$ with $x/5$. A vertical stretch by 2 replaces $y$ with $y/2$. Therefore, the equation becomes $(\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1$.",
+    "s": "A horizontal stretch by 5 replaces \\\\(x\\\\) with \\\\(x/5\\\\). A vertical stretch by 2 replaces \\\\(y\\\\) with \\\\(y/2\\\\). Therefore, the equation becomes \\\\((\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The unit circle \\(x^2 + y^2 = 1\\) is transformed into an ellipse centered at the origin, with \\(x\\)-intercepts at \\(\\pm 5\\) and \\(y\\)-intercepts at \\(\\pm 2\\). Identify the correct equation of this transformed graph.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8319,6 +8647,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"A horizontal stretch by 5 replaces \\(x\\) with \\(x/5\\). A vertical stretch by 2 replaces \\(y\\) with \\(y/2\\). Therefore, the equation becomes \\((\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "A horizontal stretch by 5 replaces \\(x\\) with \\(x/5\\). A vertical stretch by 2 replaces \\(y\\) with \\(y/2\\). Therefore, the equation becomes \\((\\frac{x}{5})^2 + (\\frac{y}{2})^2 = 1\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "(2x)^2 + (5y)^2 = 1",
+      "(x/2)^2 + (y/5)^2 = 1",
+      "(x/5)^2 + (y/2)^2 = 1",
+      "(5x)^2 + (2y)^2 = 1"
     ]
   },
   {
@@ -8327,16 +8662,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The function $y = 4^x$ is transformed by dilations to pass through $(0, -3)$ and $(1, -12)$. Identify the correct equation of this transformed graph.",
-    "a": "0",
+    "q": "The function \\\\(y = 4^x\\\\) is transformed by dilations to pass through \\\\((0, -3)\\\\) and \\\\((1, -12)\\\\). Identify the correct equation of this transformed graph.",
+    "a": 0,
     "opts": [
       "y = -3(4^x)",
-      "y = 4^(-3x)",
       "y = -4^(3x)",
+      "y = 4^(-3x)",
       "y = 3(-4^x)"
     ],
-    "h": "The new $y$-intercept is -3, instead of 1. What vertical stretch achieves this?",
-    "s": "The original graph has a $y$-intercept of $1$. The new graph has a $y$-intercept of $-3$. This indicates a vertical stretch by a factor of $-3$. Thus, $y = -3(4^x)$. Checking the point $x=1$: $y = -3(4^1) = -12$, which perfectly matches.",
+    "h": "The new \\\\(y\\\\)-intercept is -3, instead of 1. What vertical stretch achieves this?",
+    "s": "The original graph has a \\\\(y\\\\)-intercept of \\\\(1\\\\). The new graph has a \\\\(y\\\\)-intercept of \\\\(-3\\\\). This indicates a vertical stretch by a factor of \\\\(-3\\\\). Thus, \\\\(y = -3(4^x)\\\\). Checking the point \\\\(x=1\\\\): \\\\(y = -3(4^1) = -12\\\\), which perfectly matches.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The function \\(y = 4^x\\) is transformed by dilations to pass through \\((0, -3)\\) and \\((1, -12)\\). Identify the correct equation of this transformed graph.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8350,6 +8685,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"The original graph has a \\(y\\)-intercept of \\(1\\). The new graph has a \\(y\\)-intercept of \\(-3\\). This indicates a vertical stretch by a factor of \\(-3\\). Thus, \\(y = -3(4^x)\\). Checking the point \\(x=1\\): \\(y = -3(4^1) = -12\\), which perfectly matches.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "The original graph has a \\(y\\)-intercept of \\(1\\). The new graph has a \\(y\\)-intercept of \\(-3\\). This indicates a vertical stretch by a factor of \\(-3\\). Thus, \\(y = -3(4^x)\\). Checking the point \\(x=1\\): \\(y = -3(4^1) = -12\\), which perfectly matches."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "y = -3(4^x)",
+      "y = -4^(3x)",
+      "y = 4^(-3x)",
+      "y = 3(-4^x)"
     ]
   },
   {
@@ -8358,16 +8700,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The function $y = x^2 - 9$ is transformed to have its $x$-intercepts at $\\pm 2$ while maintaining its vertex at $(0, -9)$. Identify the correct equation of this transformed graph.",
-    "a": "0",
+    "q": "The function \\\\(y = x^2 - 9\\\\) is transformed to have its \\\\(x\\\\)-intercepts at \\\\(\\pm 2\\\\) while maintaining its vertex at \\\\((0, -9)\\\\). Identify the correct equation of this transformed graph.",
+    "a": 2,
     "opts": [
-      "y = (3x/2)^2 - 9",
       "y = (2x/3)^2 - 9",
       "y = 4x^2 - 9",
+      "y = (3x/2)^2 - 9",
       "y = 9x^2 - 9"
     ],
-    "h": "The original $x$-intercepts are at $\\pm 3$. The new ones are at $\\pm 2$. What is the horizontal compression factor?",
-    "s": "The original $x$-intercepts of $y = x^2 - 9$ are $\\pm 3$. The new $x$-intercepts are $\\pm 2$. This represents a horizontal compression by a factor of $\\frac{2}{3}$. Therefore, we replace $x$ with $\\frac{x}{2/3} = \\frac{3x}{2}$. The equation is $y = (\\frac{3x}{2})^2 - 9$.",
+    "h": "The original \\\\(x\\\\)-intercepts are at \\\\(\\pm 3\\\\). The new ones are at \\\\(\\pm 2\\\\). What is the horizontal compression factor?",
+    "s": "The original \\\\(x\\\\)-intercepts of \\\\(y = x^2 - 9\\\\) are \\\\(\\pm 3\\\\). The new \\\\(x\\\\)-intercepts are \\\\(\\pm 2\\\\). This represents a horizontal compression by a factor of \\\\(\\frac{2}{3}\\\\). Therefore, we replace \\\\(x\\\\) with \\\\(\\frac{x}{2/3} = \\frac{3x}{2}\\\\). The equation is \\\\(y = (\\frac{3x}{2})^2 - 9\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The function \\(y = x^2 - 9\\) is transformed to have its \\(x\\)-intercepts at \\(\\pm 2\\) while maintaining its vertex at \\((0, -9)\\). Identify the correct equation of this transformed graph.\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8381,6 +8723,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"The original \\(x\\)-intercepts of \\(y = x^2 - 9\\) are \\(\\pm 3\\). The new \\(x\\)-intercepts are \\(\\pm 2\\). This represents a horizontal compression by a factor of \\(\\frac{2}{3}\\). Therefore, we replace \\(x\\) with \\(\\frac{x}{2/3} = \\frac{3x}{2}\\). The equation is \\(y = (\\frac{3x}{2})^2 - 9\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "The original \\(x\\)-intercepts of \\(y = x^2 - 9\\) are \\(\\pm 3\\). The new \\(x\\)-intercepts are \\(\\pm 2\\). This represents a horizontal compression by a factor of \\(\\frac{2}{3}\\). Therefore, we replace \\(x\\) with \\(\\frac{x}{2/3} = \\frac{3x}{2}\\). The equation is \\(y = (\\frac{3x}{2})^2 - 9\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "y = (2x/3)^2 - 9",
+      "y = 4x^2 - 9",
+      "y = (3x/2)^2 - 9",
+      "y = 9x^2 - 9"
     ]
   },
   {
@@ -8389,11 +8738,11 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "graph_sketch",
     "difficulty": "hard",
-    "q": "Explain the gradient-intercept formula $y = mx + b$ for a straight line in terms of a dilation of the line $y = x + b$.",
+    "q": "Explain the gradient-intercept formula \\\\(y = mx + b\\\\) for a straight line in terms of a dilation of the line \\\\(y = x + b\\\\).",
     "a": "See solution steps.",
     "opts": [],
-    "h": "How do you transform $x$ to get $mx$?",
-    "s": "The equation $y = x + b$ has a gradient of 1. By applying a horizontal dilation (compression) by a factor of $\\frac{1}{m}$, we replace $x$ with $\\frac{x}{1/m} = mx$. The equation becomes $y = mx + b$. Thus, any line $y=mx+b$ can be viewed as a horizontal stretch/compression of the line $y=x+b$.",
+    "h": "How do you transform \\\\(x\\\\) to get \\\\(mx\\\\)?",
+    "s": "The equation \\\\(y = x + b\\\\) has a gradient of 1. By applying a horizontal dilation (compression) by a factor of \\\\(\\frac{1}{m}\\\\), we replace \\\\(x\\\\) with \\\\(\\frac{x}{1/m} = mx\\\\). The equation becomes \\\\(y = mx + b\\\\). Thus, any line \\\\(y=mx+b\\\\) can be viewed as a horizontal stretch/compression of the line \\\\(y=x+b\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Explain the gradient-intercept formula \\(y = mx + b\\) for a straight line in terms of a dilation of the line \\(y = x + b\\).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8407,7 +8756,8 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"The equation \\(y = x + b\\) has a gradient of 1. By applying a horizontal dilation (compression) by a factor of \\(\\frac{1}{m}\\), we replace \\(x\\) with \\(\\frac{x}{1/m} = mx\\). The equation becomes \\(y = mx + b\\). Thus, any line \\(y=mx+b\\) can be viewed as a horizontal stretch/compression of the line \\(y=x+b\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "The equation \\(y = x + b\\) has a gradient of 1. By applying a horizontal dilation (compression) by a factor of \\(\\frac{1}{m}\\), we replace \\(x\\) with \\(\\frac{x}{1/m} = mx\\). The equation becomes \\(y = mx + b\\). Thus, any line \\(y=mx+b\\) can be viewed as a horizontal stretch/compression of the line \\(y=x+b\\)."
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-19a-i",
@@ -8415,16 +8765,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) $y = 4^x$ \\n2) $y = 4^{x+2}$",
-    "a": "0",
+    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = 4^x\\\\) \\n2) \\\\(y = 4^{x+2}\\\\)",
+    "a": 1,
     "opts": [
-      "Shift left by 2, OR vertical stretch by 16.",
       "Shift right by 2, OR vertical stretch by 4.",
+      "Shift left by 2, OR vertical stretch by 16.",
       "Shift left by 2, OR horizontal stretch by 2.",
       "Shift right by 2, OR vertical compression by 16."
     ],
-    "h": "Use index laws: $4^{x+2} = 4^x \\times 4^2$.",
-    "s": "Transformation 1: Replacing $x$ with $x+2$ is a horizontal translation to the left by 2 units.\\nTransformation 2: Since $4^{x+2} = 16 \\times 4^x$, it can also be viewed as a vertical stretch by a factor of 16.",
+    "h": "Use index laws: \\\\(4^{x+2} = 4^x \\times 4^2\\\\).",
+    "s": "Transformation 1: Replacing \\\\(x\\\\) with \\\\(x+2\\\\) is a horizontal translation to the left by 2 units.\\nTransformation 2: Since \\\\(4^{x+2} = 16 \\times 4^x\\\\), it can also be viewed as a vertical stretch by a factor of 16.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\(y = 4^x\\) \\n2) \\(y = 4^{x+2}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8438,6 +8788,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Transformation 1: Replacing \\(x\\) with \\(x+2\\) is a horizontal translation to the left by 2 units.\\nTransformation 2: Since \\(4^{x+2} = 16 \\times 4^x\\), it can also be viewed as a vertical stretch by a factor of 16.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Transformation 1: Replacing \\(x\\) with \\(x+2\\) is a horizontal translation to the left by 2 units.\\nTransformation 2: Since \\(4^{x+2} = 16 \\times 4^x\\), it can also be viewed as a vertical stretch by a factor of 16."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Shift right by 2, OR vertical stretch by 4.",
+      "Shift left by 2, OR vertical stretch by 16.",
+      "Shift left by 2, OR horizontal stretch by 2.",
+      "Shift right by 2, OR vertical compression by 16."
     ]
   },
   {
@@ -8446,16 +8803,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) $y = \\frac{3}{x}$ \\n2) $y = \\frac{3k^2}{x}$",
-    "a": "0",
+    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(y = \\frac{3}{x}\\\\) \\n2) \\\\(y = \\frac{3k^2}{x}\\\\)",
+    "a": 1,
     "opts": [
-      "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
-      "Vertical stretch by k, OR horizontal stretch by k.",
       "Vertical compression by 1/k^2, OR horizontal stretch by k^2.",
-      "Vertical stretch by k^2, OR horizontal stretch by k^2."
+      "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
+      "Vertical stretch by k^2, OR horizontal stretch by k^2.",
+      "Vertical stretch by k, OR horizontal stretch by k."
     ],
-    "h": "You can group the $k^2$ with the $y$ or with the $x$.",
-    "s": "Transformation 1: $y = k^2(\\frac{3}{x})$ represents a vertical stretch by a factor of $k^2$.\\nTransformation 2: $y = \\frac{3}{x/k^2}$ represents a horizontal stretch (or compression) by a factor of $\\frac{1}{k^2}$.",
+    "h": "You can group the \\\\(k^2\\\\) with the \\\\(y\\\\) or with the \\\\(x\\\\).",
+    "s": "Transformation 1: \\\\(y = k^2(\\frac{3}{x})\\\\) represents a vertical stretch by a factor of \\\\(k^2\\\\).\\nTransformation 2: \\\\(y = \\frac{3}{x/k^2}\\\\) represents a horizontal stretch (or compression) by a factor of \\\\(\\frac{1}{k^2}\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\(y = \\frac{3}{x}\\) \\n2) \\(y = \\frac{3k^2}{x}\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8469,6 +8826,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Transformation 1: \\(y = k^2(\\frac{3}{x})\\) represents a vertical stretch by a factor of \\(k^2\\).\\nTransformation 2: \\(y = \\frac{3}{x/k^2}\\) represents a horizontal stretch (or compression) by a factor of \\(\\frac{1}{k^2}\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Transformation 1: \\(y = k^2(\\frac{3}{x})\\) represents a vertical stretch by a factor of \\(k^2\\).\\nTransformation 2: \\(y = \\frac{3}{x/k^2}\\) represents a horizontal stretch (or compression) by a factor of \\(\\frac{1}{k^2}\\)."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Vertical compression by 1/k^2, OR horizontal stretch by k^2.",
+      "Vertical stretch by k^2, OR horizontal compression by 1/k^2.",
+      "Vertical stretch by k^2, OR horizontal stretch by k^2.",
+      "Vertical stretch by k, OR horizontal stretch by k."
     ]
   },
   {
@@ -8477,16 +8841,16 @@ export const CH5_QUESTIONS_Y11A = [
     "t": "Horizontal and Vertical Dilations",
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) $x^2 + (y-4)^2 = 1$ \\n2) $x^2 + (y+4)^2 = 1$",
-    "a": "0",
+    "q": "Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\\\(x^2 + (y-4)^2 = 1\\\\) \\n2) \\\\(x^2 + (y+4)^2 = 1\\\\)",
+    "a": 2,
     "opts": [
-      "Shift down by 8, OR reflection across the x-axis.",
       "Shift up by 8, OR reflection across the y-axis.",
-      "Shift down by 4, OR horizontal stretch by -1.",
-      "Shift up by 4, OR vertical stretch by -1."
+      "Shift up by 4, OR vertical stretch by -1.",
+      "Shift down by 8, OR reflection across the x-axis.",
+      "Shift down by 4, OR horizontal stretch by -1."
     ],
-    "h": "The center moves from $(0,4)$ to $(0,-4)$.",
-    "s": "Transformation 1: The center moves from $(0, 4)$ to $(0, -4)$, which is a vertical translation downwards by 8 units.\\nTransformation 2: Replacing $y$ with $-y$ yields $x^2 + (-y-4)^2 = 1 \\implies x^2 + (y+4)^2 = 1$, which represents a reflection across the $x$-axis.",
+    "h": "The center moves from \\\\((0,4)\\\\) to \\\\((0,-4)\\\\).",
+    "s": "Transformation 1: The center moves from \\\\((0, 4)\\\\) to \\\\((0, -4)\\\\), which is a vertical translation downwards by 8 units.\\nTransformation 2: Replacing \\\\(y\\\\) with \\\\(-y\\\\) yields \\\\(x^2 + (-y-4)^2 = 1 \\implies x^2 + (y+4)^2 = 1\\\\), which represents a reflection across the \\\\(x\\\\)-axis.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Suggest two simple and distinct transformations by which the second equation may be obtained from the first: \\n1) \\(x^2 + (y-4)^2 = 1\\) \\n2) \\(x^2 + (y+4)^2 = 1\\)\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8500,6 +8864,13 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Transformation 1: The center moves from \\((0, 4)\\) to \\((0, -4)\\), which is a vertical translation downwards by 8 units.\\nTransformation 2: Replacing \\(y\\) with \\(-y\\) yields \\(x^2 + (-y-4)^2 = 1 \\implies x^2 + (y+4)^2 = 1\\), which represents a reflection across the \\(x\\)-axis.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Transformation 1: The center moves from \\((0, 4)\\) to \\((0, -4)\\), which is a vertical translation downwards by 8 units.\\nTransformation 2: Replacing \\(y\\) with \\(-y\\) yields \\(x^2 + (-y-4)^2 = 1 \\implies x^2 + (y+4)^2 = 1\\), which represents a reflection across the \\(x\\)-axis."
       }
+    ],
+    "isNew": true,
+    "options": [
+      "Shift up by 8, OR reflection across the y-axis.",
+      "Shift up by 4, OR vertical stretch by -1.",
+      "Shift down by 8, OR reflection across the x-axis.",
+      "Shift down by 4, OR horizontal stretch by -1."
     ]
   },
   {
@@ -8511,8 +8882,8 @@ export const CH5_QUESTIONS_Y11A = [
     "q": "Investigate and provide another example of a combination of curves and transformations with similar ambiguity (where two distinct transformations yield the exact same result).",
     "a": "Various possible answers.",
     "opts": [],
-    "h": "Think about parabolas: $y = x^2$ transformed to $y = 4x^2$.",
-    "s": "Consider $y = x^2$ and $y = 9x^2$. This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of $\\frac{1}{3}$, since $y = (3x)^2 = 9x^2$.",
+    "h": "Think about parabolas: \\\\(y = x^2\\\\) transformed to \\\\(y = 4x^2\\\\).",
+    "s": "Consider \\\\(y = x^2\\\\) and \\\\(y = 9x^2\\\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\\\(\\frac{1}{3}\\\\), since \\\\(y = (3x)^2 = 9x^2\\\\).",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"Investigate and provide another example of a combination of curves and transformations with similar ambiguity (where two distinct transformations yield the exact same result).\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8526,19 +8897,25 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"Consider \\(y = x^2\\) and \\(y = 9x^2\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\(\\frac{1}{3}\\), since \\(y = (3x)^2 = 9x^2\\).\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "Consider \\(y = x^2\\) and \\(y = 9x^2\\). This can be viewed as:\\n1) A vertical stretch by a factor of 9.\\n2) A horizontal compression by a factor of \\(\\frac{1}{3}\\), since \\(y = (3x)^2 = 9x^2\\)."
       }
-    ]
+    ],
+    "isNew": true
   },
   {
     "id": "y11a-5D-new-20",
     "c": "5D",
     "t": "Horizontal and Vertical Dilations",
-    "type": "graph_sketch",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The parabola $y = x^2$ is stretched horizontally by a factor of $k$. Clearly, a subsequent horizontal stretch by a factor of $\\frac{1}{k}$ will restore the original parabola. What *vertical* stretch will produce a new parabola that appears identical to the original parabola $y = x^2$?",
-    "a": "A vertical stretch by a factor of k^2.",
-    "opts": [],
-    "h": "First, apply the horizontal stretch by $k$ to get the intermediate equation. Then, apply a vertical stretch factor $C$ such that the final equation simplifies back to $y = x^2$.",
-    "s": "A horizontal stretch by factor $k$ replaces $x$ with $\\frac{x}{k}$. The intermediate equation is $y = (\\frac{x}{k})^2 = \\frac{x^2}{k^2}$. \\nTo restore this back to $y = x^2$ using a vertical stretch (which multiplies the entire function by some factor $C$), we need: \\n$C \\times \\frac{x^2}{k^2} = x^2$. \\nThis gives $C = k^2$. \\nTherefore, a vertical stretch by a factor of $k^2$ will restore the original parabola.",
+    "q": "The parabola \\\\(y = x^2\\\\) is stretched horizontally by a factor of \\\\(k\\\\). Clearly, a subsequent horizontal stretch by a factor of \\\\(\\frac{1}{k}\\\\) will restore the original parabola. What *vertical* stretch will produce a new parabola that appears identical to the original parabola \\\\(y = x^2\\\\)?",
+    "a": 2,
+    "opts": [
+      "A vertical dilation by a factor of \\\\(k\\\\)",
+      "A vertical compression by a factor of \\\\(\\frac{1}{k^2}\\\\)",
+      "A vertical dilation by a factor of \\\\(k^2\\\\)",
+      "A vertical dilation by a factor of \\\\(2k\\\\)"
+    ],
+    "h": "First, apply the horizontal stretch by \\\\(k\\\\) to get the intermediate equation. Then, apply a vertical stretch factor \\\\(C\\\\) such that the final equation simplifies back to \\\\(y = x^2\\\\).",
+    "s": "A horizontal stretch by factor \\\\(k\\\\) replaces \\\\(x\\\\) with \\\\(\\frac{x}{k}\\\\). The intermediate equation is \\\\(y = (\\frac{x}{k})^2 = \\frac{x^2}{k^2}\\\\). \\nTo restore this back to \\\\(y = x^2\\\\) using a vertical stretch (which multiplies the entire function by some factor \\\\(C\\\\)), we need: \\n\\\\(C \\times \\frac{x^2}{k^2} = x^2\\\\). \\nThis gives \\\\(C = k^2\\\\). \\nTherefore, a vertical stretch by a factor of \\\\(k^2\\\\) will restore the original parabola.",
     "solutionSteps": [
       {
         "explanation": "We start by identifying the core mathematical concept presented in this dilation problem: \"The parabola \\(y = x^2\\) is stretched horizontally by a factor of \\(k\\). Clearly, a subsequent horizontal stretch by a factor of \\(\\frac{1}{k}\\) will restore the original parabola. What *vertical* stretch will produce a new parabola that appears identical to the original parabola \\(y = x^2\\)?\". Our initial strategy is to establish the algebraic relation between the input variable \\(x\\) and the output variable \\(y\\). This forms the baseline definition required for applying transformations.",
@@ -8552,7 +8929,15 @@ export const CH5_QUESTIONS_Y11A = [
         "explanation": "Finally, we verify our results by cross-referencing with the given solution: \"A horizontal stretch by factor \\(k\\) replaces \\(x\\) with \\(\\frac{x}{k}\\). The intermediate equation is \\(y = (\\frac{x}{k})^2 = \\frac{x^2}{k^2}\\). \\nTo restore this back to \\(y = x^2\\) using a vertical stretch (which multiplies the entire function by some factor \\(C\\)), we need: \\n\\(C \\times \\frac{x^2}{k^2} = x^2\\). \\nThis gives \\(C = k^2\\). \\nTherefore, a vertical stretch by a factor of \\(k^2\\) will restore the original parabola.\". We double-check the final coordinates or equations to ensure they match the required transformation properties. This completes the rigorous verification process.",
         "workingOut": "A horizontal stretch by factor \\(k\\) replaces \\(x\\) with \\(\\frac{x}{k}\\). The intermediate equation is \\(y = (\\frac{x}{k})^2 = \\frac{x^2}{k^2}\\). \\nTo restore this back to \\(y = x^2\\) using a vertical stretch (which multiplies the entire function by some factor \\(C\\)), we need: \\n\\(C \\times \\frac{x^2}{k^2} = x^2\\). \\nThis gives \\(C = k^2\\). \\nTherefore, a vertical stretch by a factor of \\(k^2\\) will restore the original parabola."
       }
-    ]
+    ],
+    "isNew": true,
+    "options": [
+      "A vertical dilation by a factor of \\\\(k\\\\)",
+      "A vertical compression by a factor of \\\\(\\frac{1}{k^2}\\\\)",
+      "A vertical dilation by a factor of \\\\(k^2\\\\)",
+      "A vertical dilation by a factor of \\\\(2k\\\\)"
+    ],
+    "answer": null
   },
   {
     "id": "y11a-5E-new-1a",
