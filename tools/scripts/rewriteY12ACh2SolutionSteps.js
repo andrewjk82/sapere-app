@@ -309,6 +309,19 @@ function parityOk(str) {
 }
 
 async function main() {
+  // This file's STEPS use plain-text math ("2 pi / (1/2)") which MathView's
+  // auto-fraction / currency heuristics mangle into red KaTeX errors.
+  // Canonical pedagogical steps with proper \(...\) live in enrichY12ACh2Steps.js.
+  // Force-run only with: ALLOW_PLAINTEXT_REWRITE=1 node tools/scripts/rewriteY12ACh2SolutionSteps.js
+  if (process.env.ALLOW_PLAINTEXT_REWRITE !== '1') {
+    console.error(
+      'Refusing to run: rewriteY12ACh2SolutionSteps.js writes plain-text math that breaks in MathView.\n' +
+        'Use:  node tools/scripts/enrichY12ACh2Steps.js\n' +
+        'Or set ALLOW_PLAINTEXT_REWRITE=1 to override (not recommended).'
+    );
+    process.exit(1);
+  }
+
   const ids = Object.keys(STEPS);
   console.log('Rewriting steps for', ids.length, 'MCQs');
   let written = 0;
