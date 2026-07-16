@@ -63,23 +63,35 @@ const resolveCorrectOptionIndices = (options, answer) => {
   // 1) Value match against option text (calc + most curriculum MCQs store answer value).
   const valueHits = [];
   list.forEach((opt, i) => {
-    const text = optionText(opt);
-    if (!text && text !== '0') return;
-    if (answersMatch(text, ans) || String(text) === ans) valueHits.push(i);
+    const text = optionText(opt).trim();
+    if (text === '') return;
+    if (answersMatch(text, ans) || text === ans) valueHits.push(i);
   });
   if (valueHits.length > 0) return new Set(valueHits);
 
-  // 2) Letter key A/B/C/D
+  // 2) Letter key A/B/C/D — only when that letter is NOT also an option *value*
+  //    (pattern questions use options "A"/"B", so "B" means the letter value).
   if (/^[A-Da-d]$/.test(ans)) {
-    const idx = ans.toUpperCase().charCodeAt(0) - 65;
-    if (idx >= 0 && idx < list.length) return new Set([idx]);
+    const letterAsValue = list.some((opt) => {
+      const t = optionText(opt).trim();
+      return t.toUpperCase() === ans.toUpperCase() || answersMatch(t, ans);
+    });
+    if (!letterAsValue) {
+      const idx = ans.toUpperCase().charCodeAt(0) - 65;
+      if (idx >= 0 && idx < list.length) return new Set([idx]);
+    }
   }
 
-  // 3) Explicit 0-based index only when nothing matched by value.
-  //    Require integer form (not "3.0") and in-range.
+  // 3) Explicit 0-based index ONLY when no option text could be that number.
+  //    Never treat answer "3" as index 3 when options are numeric values like
+  //    ["2","5","3","4"] — that double-lit C and D (the old report bug).
   if (/^\d+$/.test(ans)) {
     const idx = Number(ans);
-    if (Number.isInteger(idx) && idx >= 0 && idx < list.length) {
+    const looksLikeValue = list.some((opt) => {
+      const t = optionText(opt).trim();
+      return /^\d+(?:\.\d+)?$/.test(t) || answersMatch(t, ans);
+    });
+    if (!looksLikeValue && Number.isInteger(idx) && idx >= 0 && idx < list.length) {
       return new Set([idx]);
     }
   }

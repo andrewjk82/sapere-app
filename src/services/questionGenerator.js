@@ -501,11 +501,20 @@ const draw2DShapeSvgEx = (shapeName) => {
 
 const genBeforeAfter = (difficulty) => {
   const max = maxByDifficulty(difficulty, 30, 60, 100);
-  const offset = difficulty === 'hard' ? randomInt(1, 2) : 1;
-  const num = randomInt(offset + 1, max - offset);
+  // Always adjacent neighbour (±1). Hard mode used to pick offset 2 while the
+  // stem still said "before/after", so e.g. "before 47" was stored as 45.
+  const num = randomInt(2, max - 1);
   const before = Math.random() > 0.5;
-  const answer = before ? num - offset : num + offset;
-  return q('before_after', `What number comes ${before ? 'before' : 'after'} ${num}?`, getUniqueOptions(answer, [num, answer - 1, answer + 1], 0, max), answer, `${answer} comes ${before ? 'before' : 'after'} ${num} when counting.`, 15, `Think about the number right ${before ? 'left' : 'right'} of ${num} on a number line.`);
+  const answer = before ? num - 1 : num + 1;
+  return q(
+    'before_after',
+    `What number comes ${before ? 'before' : 'after'} ${num}?`,
+    getUniqueOptions(answer, [num, answer - 1, answer + 1, before ? num + 1 : num - 1], 0, max),
+    answer,
+    `${answer} comes ${before ? 'before' : 'after'} ${num} when counting.`,
+    15,
+    `Think about the number right ${before ? 'left' : 'right'} of ${num} on a number line.`,
+  );
 };
 
 const genSkipCounting = (difficulty) => {
@@ -758,9 +767,27 @@ const genMoneyChange = () => {
 const genRepeatingPattern = () => {
   const patterns = [['red', 'blue'], ['circle', 'square'], ['A', 'A', 'B'], ['A', 'B', 'B']];
   const unit = pick(patterns);
+  // Three full units; blank is the final item of the third unit.
   const sequence = [...unit, ...unit, ...unit];
-  const answer = sequence[sequence.length - unit.length];
-  return q('repeating_pattern', `What comes next? ${sequence.slice(0, -1).join(', ')}, ___`, wordOptions(answer, ['red', 'blue', 'circle', 'square', 'A', 'B']), answer, `The repeating rule is ${unit.join(', ')}.`, 25);
+  // Bug was: answer = sequence[length - unit.length] (start of last unit),
+  // so "A,B,B,A,B,B,A,B,___" stored A instead of the true next value B.
+  const answer = sequence[sequence.length - 1];
+  const shown = sequence.slice(0, -1);
+  // Prefer distractors from the same pattern family so A/B options aren't mixed
+  // with unrelated shape words when the unit is letters (and vice versa).
+  const pool = unit.every((t) => t === 'A' || t === 'B')
+    ? ['A', 'B', 'C', 'D']
+    : unit.every((t) => t === 'red' || t === 'blue')
+      ? ['red', 'blue', 'green', 'yellow']
+      : ['circle', 'square', 'triangle', 'star'];
+  return q(
+    'repeating_pattern',
+    `What comes next? ${shown.join(', ')}, ___`,
+    wordOptions(answer, pool),
+    answer,
+    `The repeating rule is ${unit.join(', ')}. Next is ${answer}.`,
+    25,
+  );
 };
 
 const genPatternMissing = () => {

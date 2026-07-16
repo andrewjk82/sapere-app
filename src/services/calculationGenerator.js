@@ -2698,9 +2698,17 @@ export const generateCalculationSet = (assignedTopics, count, year = 'Year 1', t
   for (let i = 0; i < count; i++) {
     const topic = pick(topicsToUse);
     const q = generateCalculationQuestion(topic, timeLimit);
+    // Always keep answer as the value string (never 0-based option index).
+    // Index-style answers double-highlight options in teacher report previews
+    // when the value happens to equal an index (e.g. answer "3" → options C+D).
+    q.answer = String(q.answer ?? '').trim();
     if (useMCQ && q.type !== 'multiple_choice') {
       const options = calcMCQOptions(q.answer);
       if (options.length === 4) {
+        // Guarantee the correct value is present after shuffle.
+        if (!options.some((o) => String(o).trim() === q.answer)) {
+          options[0] = q.answer;
+        }
         q.options = options;
         q.type = 'multiple_choice';
       }
