@@ -49,13 +49,22 @@ export const ProfileProvider = ({ children }) => {
     const ref = doc(db, 'users', user.uid);
     let unsub = () => {};
     let cancelled = false;
+    // Never leave the shell spinning forever if the first snapshot is delayed.
+    const safety = window.setTimeout(() => {
+      if (!cancelled) setProfileLoading(false);
+    }, 8000);
 
     // Keep realtime profile while visible; pause when tab hidden so overnight
     // background tabs do not re-bill every XP/field write.
+    let hasAttachedOnce = false;
     const attach = () => {
       unsub();
       unsub = () => {};
-      if (cancelled || document.visibilityState === 'hidden') return;
+      if (cancelled) return;
+      // Always attach at least once (even if tab starts hidden) so login can
+      // finish. After the first attach, pause while hidden to save reads.
+      if (document.visibilityState === 'hidden' && hasAttachedOnce) return;
+      hasAttachedOnce = true;
       unsub = onSnapshot(
         ref,
         (snap) => {
@@ -72,8 +81,11 @@ export const ProfileProvider = ({ children }) => {
     attach();
     const onVis = () => {
       if (document.visibilityState === 'hidden') {
-        unsub();
-        unsub = () => {};
+        // Keep first snapshot result; only drop the live listener after attach.
+        if (hasAttachedOnce) {
+          unsub();
+          unsub = () => {};
+        }
       } else {
         attach();
       }
@@ -81,6 +93,7 @@ export const ProfileProvider = ({ children }) => {
     document.addEventListener('visibilitychange', onVis);
     return () => {
       cancelled = true;
+      window.clearTimeout(safety);
       document.removeEventListener('visibilitychange', onVis);
       unsub();
     };

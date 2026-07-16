@@ -5,7 +5,9 @@ import {
 import { db, ADMIN_EMAIL, ADMIN_UID } from '../firebase/config';
 import { DEFAULT_DIFFICULTY_MIX, getQuestionBlueprint } from '../services/questionGenerator';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
-import { toDisplayText } from '../components/MathView';
+// Import pure util — not MathView.jsx — so challengeUtils never pulls the
+// full graph/diagram React tree into the auth/boot path.
+import { toDisplayText } from './mathPreprocess';
 import { localCache } from '../services/localCacheService';
 import {
   deriveBinaryMathAnswer,

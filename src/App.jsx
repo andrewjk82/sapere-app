@@ -1033,13 +1033,24 @@ function App() {
     if (!silent) setLoading(true);
 
     try {
-      const data = await studentService.getStudents(user.uid, isAdmin, { forceRefresh });
+      // Cap wait so a slow/hanging roster fetch never traps the whole shell.
+      const data = await Promise.race([
+        studentService.getStudents(user.uid, isAdmin, { forceRefresh }),
+        new Promise((_, reject) => {
+          window.setTimeout(() => reject(new Error('students-timeout')), 12000);
+        }),
+      ]);
       setStudents(data);
       setLoadError('');
     } catch (err) {
-      setStudents([]);
-      setLoadError('We couldn\'t load your students. Please try again.');
-      console.error(err);
+      if (err?.message === 'students-timeout') {
+        console.warn('[App] Student roster fetch timed out — opening shell without roster');
+        setLoadError('');
+      } else {
+        setStudents([]);
+        setLoadError('We couldn\'t load your students. Please try again.');
+        console.error(err);
+      }
     } finally {
       setLoading(false); // always clear — loading starts as true on mount
     }
@@ -1056,6 +1067,16 @@ function App() {
     // profileLoaded is included so non-admin students wait for profile before fetching.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user?.uid, isAdmin, profileLoaded]);
+
+  // Hard safety: if anything above stalls, never keep the full-page spinner forever.
+  useEffect(() => {
+    if (!loading) return undefined;
+    const t = window.setTimeout(() => {
+      console.warn('[App] Loading safety timeout — forcing shell open');
+      setLoading(false);
+    }, 10000);
+    return () => window.clearTimeout(t);
+  }, [loading]);
 
   const handleAddStudent = async () => {
     if (!newStudent.name || !newStudent.subject || !newStudent.email) {

@@ -120,6 +120,17 @@ export const AuthProvider = ({ children }) => {
     resendVerificationEmail
   };
 
+  // Safety: if onAuthStateChanged is delayed, still mount the app after 6s
+  // so users never see a permanent blank screen after sign-in.
+  useEffect(() => {
+    if (!loading) return undefined;
+    const t = window.setTimeout(() => {
+      console.warn('[Auth] auth loading safety timeout');
+      setLoading(false);
+    }, 6000);
+    return () => window.clearTimeout(t);
+  }, [loading]);
+
   return (
     <AuthContext.Provider value={value}>
       {!loading && children}
