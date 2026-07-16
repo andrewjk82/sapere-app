@@ -45,6 +45,7 @@ import {
   getModeBonusXp,
   getChallengeMode,
 } from '../constants/challengeModes';
+import { recordModeReviewSession } from '../services/modeReviewService';
 
 // Custom hooks
 import { useKeyboardActivity } from '../hooks/useKeyboardActivity';
@@ -1648,6 +1649,29 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         // saves are best-effort so large payloads never turn completion into a
         // false "Session Ended" state.
         await setDoc(ref, record, { merge: true });
+
+        // Mode Review index: Challenge / Extreme only (not Normal, not abandoned).
+        // One lightweight pointer per student+day+type — teachers open history by ID.
+        if (!isAbandoned && (modeId === 'challenge' || modeId === 'extreme')) {
+          const displayName = studentProfile?.name || studentProfile?.displayName ||
+            (studentProfile?.firstName
+              ? `${studentProfile.firstName} ${studentProfile.lastName || ''}`.trim()
+              : '') ||
+            user?.displayName || user?.email || 'Student';
+          recordModeReviewSession({
+            studentId: user.uid,
+            studentName: displayName,
+            challengeType,
+            challengeMode: modeId,
+            statCollection: statColName,
+            statDocId: today,
+            score: questionsCorrect,
+            total: displayTotal,
+            hasWorkingOut,
+            timestamp: now.toISOString(),
+          }).catch((err) => console.warn('mode_review pointer failed (non-fatal):', err?.code || err));
+        }
+
         // New stat → Dashboard week bar chart + insights are stale; drop caches
         // so the next Dashboard visit (or live listener) re-reads immediately.
         try {

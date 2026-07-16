@@ -111,6 +111,15 @@ service cloud.firestore {
       allow write: if isSignedIn();
     }
 
+    // Mode Review — lightweight Challenge/Extreme session pointers for teachers.
+    // Students write their own pointer after finish; admin lists and deep-links.
+    match /mode_review/{entryId} {
+      allow read: if isAdmin();
+      allow create, update: if isSignedIn()
+        && request.resource.data.studentId == request.auth.uid;
+      allow delete: if isAdmin();
+    }
+
     // User profiles and their subcollections
     match /users/{userId} {
       allow read: if isSignedIn();

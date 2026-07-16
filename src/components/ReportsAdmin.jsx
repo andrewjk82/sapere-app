@@ -7,7 +7,7 @@ import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { gradeSubmission } from '../services/gradingService';
 import { upsertRegisteredUserLeaderboard, upsertManualStudentLeaderboard } from '../services/leaderboardService';
 import { useToast } from '../context/ToastContext';
-import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search, Activity } from 'lucide-react';
+import { AlertCircle, CheckCircle, ExternalLink, X, BookOpen, Trash2, ClipboardCheck, MessageSquare, ArrowRight, User, Calendar, Award, Wrench, Search, Activity, Zap } from 'lucide-react';
 import QuestionBankModal from './QuestionBankModal';
 import AnnotationModal from './AnnotationModal';
 import MathView from './MathView';
@@ -16,6 +16,7 @@ import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
 import TrafficMonitorPanel from './TrafficMonitorPanel';
+import ModeReviewPanel from './ModeReviewPanel';
 
 // ── Report provenance ────────────────────────────────────────────────────────
 // Students file reports from several places. Only some of them correspond to a
@@ -276,7 +277,9 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
     fetchReports();
   }, [fetchReports]);
 
-  const loading = viewMode === 'traffic' ? false : (viewMode === 'reports' ? reportsLoading : gradingLoading);
+  const loading = (viewMode === 'traffic' || viewMode === 'mode_review')
+    ? false
+    : (viewMode === 'reports' ? reportsLoading : gradingLoading);
 
   const handleMarkResolved = async (reportId) => {
     try {
@@ -1357,6 +1360,12 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
             )}
           </button>
           <button 
+            onClick={() => handleSetViewMode('mode_review')}
+            style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'mode_review' ? 'white' : 'transparent', color: viewMode === 'mode_review' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'mode_review' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
+          >
+            <Zap size={18} /> Mode Review
+          </button>
+          <button 
             onClick={() => handleSetViewMode('traffic')}
             style={{ padding: '10px 20px', borderRadius: '14px', border: 'none', background: viewMode === 'traffic' ? 'white' : 'transparent', color: viewMode === 'traffic' ? '#6366f1' : '#64748b', fontWeight: 800, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', boxShadow: viewMode === 'traffic' ? '0 4px 12px rgba(0,0,0,0.05)' : 'none', transition: 'all 0.2s' }}
           >
@@ -1375,7 +1384,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         )}
       </div>
 
-      <div style={{ padding: '0 24px 40px', maxWidth: viewMode === 'traffic' ? '1200px' : '900px', transition: 'max-width 0.3s ease' }}>
+      <div style={{ padding: '0 24px 40px', maxWidth: (viewMode === 'traffic' || viewMode === 'mode_review') ? '1200px' : '900px', transition: 'max-width 0.3s ease' }}>
         {loading ? (
           <div style={{ textAlign: 'center', padding: '100px 0' }}>
             <div className="sapere-loader" style={{ margin: '0 auto 20px' }}></div>
@@ -1391,6 +1400,8 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
               renderReportsList()
             ) : viewMode === 'grading' ? (
               renderGradingQueue()
+            ) : viewMode === 'mode_review' ? (
+              <ModeReviewPanel searchQuery={searchQuery} />
             ) : (
               <TrafficMonitorPanel />
             )}
