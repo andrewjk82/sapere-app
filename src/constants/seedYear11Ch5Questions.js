@@ -11183,70 +11183,110 @@ export const CH5_QUESTIONS_Y11A = [
     "subQuestions": [
       {
         "id": "y11a-5E-new-5a",
-        "type": "teacher_review",
-        "question": "Copy and complete a table of values for both functions for integer values of \\(x\\) from \\(-2\\) to \\(4\\).",
-        "opts": [],
-        "options": [],
-        "a": "For \\(y = |x-2|\\): at \\(x = -2,-1,0,1,2,3,4\\) values are \\(4,3,2,1,0,1,2\\).\nFor \\(y = |x|-2\\): values are \\(0,-1,-2,-1,0,1,2\\).",
-        "answer": "For \\(y = |x-2|\\): at \\(x = -2,-1,0,1,2,3,4\\) values are \\(4,3,2,1,0,1,2\\).\nFor \\(y = |x|-2\\): values are \\(0,-1,-2,-1,0,1,2\\).",
+        "type": "multiple_choice",
+        "question": "For integer \\(x\\) from \\(-2\\) to \\(4\\), which option correctly lists the values of \\(y = |x - 2|\\) and then \\(y = |x| - 2\\)?",
+        "opts": [
+          "\\(|x-2|\\): \\(0,1,2,3,4,5,6\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)",
+          "\\(|x-2|\\): \\(4,3,2,1,0,1,2\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)",
+          "\\(|x-2|\\): \\(4,3,2,1,0,1,2\\); \\(|x|-2\\): \\(0,-1,-2,-1,0,1,2\\)",
+          "\\(|x-2|\\): \\(0,-1,-2,-1,0,1,2\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)"
+        ],
+        "options": [
+          "\\(|x-2|\\): \\(0,1,2,3,4,5,6\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)",
+          "\\(|x-2|\\): \\(4,3,2,1,0,1,2\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)",
+          "\\(|x-2|\\): \\(4,3,2,1,0,1,2\\); \\(|x|-2\\): \\(0,-1,-2,-1,0,1,2\\)",
+          "\\(|x-2|\\): \\(0,-1,-2,-1,0,1,2\\); \\(|x|-2\\): \\(4,3,2,1,0,1,2\\)"
+        ],
+        "a": 2,
+        "answer": 2,
         "solutionSteps": [
           {
-            "explanation": "List integer x-values from -2 to 4. For each x, evaluate both |x - 2| and |x| - 2 separately. Absolute value is applied only inside its own bars — do not subtract 2 before taking |x| for the second function.",
+            "explanation": "Evaluate each function separately at x = -2, -1, 0, 1, 2, 3, 4. For |x - 2|, measure distance from x to 2. For |x| - 2, take absolute value first, then subtract 2. A common mistake is treating |x| - 2 as |x - 2|.",
             "workingOut": "\\(x \\in \\{-2,-1,0,1,2,3,4\\}\\)",
             "graphData": null
           },
           {
-            "explanation": "Compute y = |x - 2|: distance from x to 2. At the vertex x = 2 the value is 0; values increase by 1 for each unit left or right.",
-            "workingOut": "\\(|x-2|:\\ 4,3,2,1,0,1,2\\)",
+            "explanation": "At these x-values, |x - 2| gives 4, 3, 2, 1, 0, 1, 2 because the vertex is at x = 2.",
+            "workingOut": "\\(|x-2| = 4,3,2,1,0,1,2\\)",
             "graphData": null
           },
           {
-            "explanation": "Compute y = |x| - 2: take |x| first, then subtract 2. At x = 0 you get -2 (the vertex of this graph). Final tables are ready for sketching in part (b).",
-            "workingOut": "\\(|x|-2:\\ 0,-1,-2,-1,0,1,2\\)",
+            "explanation": "|x| - 2 gives 0, -1, -2, -1, 0, 1, 2. The minimum -2 occurs at x = 0. Match the option with both lists correct.",
+            "workingOut": "\\(|x|-2 = 0,-1,-2,-1,0,1,2\\)",
             "graphData": null
           }
         ]
       },
       {
         "id": "y11a-5E-new-5b",
-        "type": "teacher_review",
-        "question": "Draw the graphs of the two functions on separate number planes, and observe the similarities and differences.",
-        "opts": [],
-        "options": [],
-        "a": "Both are V-shaped. \\(y = |x-2|\\) has vertex (2,0); \\(y = |x|-2\\) has vertex (0,-2). Same shape; different vertex positions.",
-        "answer": "Both are V-shaped. \\(y = |x-2|\\) has vertex (2,0); \\(y = |x|-2\\) has vertex (0,-2). Same shape; different vertex positions.",
+        "type": "multiple_choice",
+        "question": "Which statement best describes the graphs of \\(y = |x - 2|\\) and \\(y = |x| - 2\\)?",
+        "opts": [
+          "Both are V-shaped; vertices at \\((2,0)\\) and \\((0,-2)\\) respectively.",
+          "Both are V-shaped; vertices at \\((0,2)\\) and \\((-2,0)\\) respectively.",
+          "Both are straight lines through the origin.",
+          "One is a parabola and the other is a V-graph."
+        ],
+        "options": [
+          "Both are V-shaped; vertices at \\((2,0)\\) and \\((0,-2)\\) respectively.",
+          "Both are V-shaped; vertices at \\((0,2)\\) and \\((-2,0)\\) respectively.",
+          "Both are straight lines through the origin.",
+          "One is a parabola and the other is a V-graph."
+        ],
+        "a": 0,
+        "answer": 0,
         "solutionSteps": [
           {
-            "explanation": "Plot points from the table for each function. The graph of y = |x - 2| is a V with vertex at (2, 0). The graph of y = |x| - 2 is a V with vertex at (0, -2).",
-            "workingOut": "\\(\\text{Vertices: } (2,0)\\text{ and }(0,-2)\\)",
+            "explanation": "Absolute-value graphs of the form y = |x - h| + k are V-shaped with vertex (h, k). Identify each vertex from the equation.",
+            "workingOut": "\\(y = |x-h| + k \\Rightarrow \\text{vertex } (h,k)\\)",
             "graphData": null
           },
           {
-            "explanation": "Compare: both open upwards with slope ±1. The first is shifted right 2 from y = |x|; the second is shifted down 2. A common mistake is treating |x| - 2 as |x - 2|.",
-            "workingOut": "\\(\\text{Same shape, different translations}\\)",
+            "explanation": "y = |x - 2| has vertex (2, 0). y = |x| - 2 has vertex (0, -2). Both open upwards with slopes ±1.",
+            "workingOut": "\\(\\text{Vertices: } (2,0)\\text{ and }(0,-2)\\)",
             "graphData": {
               "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"128.0\" x2=\"282.0\" y2=\"128.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"129.6\" y1=\"18\" x2=\"129.6\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,-4.0 L 180.4,128.0 L 282.0,40.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <path d=\"M 28.0,84.0 L 129.6,172.0 L 282.0,40.0\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"2.5\" stroke-dasharray=\"5 3\" stroke-linejoin=\"round\"/>\n  <circle cx=\"180.4\" cy=\"128.0\" r=\"3.5\" fill=\"#6366f1\"/>\n  <circle cx=\"129.6\" cy=\"172.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"150\" y=\"28\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 2|</text>\n  <text x=\"150\" y=\"44\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = |x| − 2</text>\n</svg>"
             }
+          },
+          {
+            "explanation": "The correct description is both V-shaped with those two vertices. Swapping coordinates is a common error.",
+            "workingOut": "\\(\\text{Both V-shaped; vertices } (2,0)\\text{ and }(0,-2)\\)",
+            "graphData": null
           }
         ]
       },
       {
         "id": "y11a-5E-new-5c",
-        "type": "teacher_review",
-        "question": "Explain how each graph is obtained by shifting the basic graph \\(y = |x|\\).",
-        "opts": [],
-        "options": [],
-        "a": "\\(y = |x-2|\\) is \\(y = |x|\\) shifted 2 units right. \\(y = |x|-2\\) is \\(y = |x|\\) shifted 2 units down.",
-        "answer": "\\(y = |x-2|\\) is \\(y = |x|\\) shifted 2 units right. \\(y = |x|-2\\) is \\(y = |x|\\) shifted 2 units down.",
+        "type": "multiple_choice",
+        "question": "How is each graph obtained by shifting \\(y = |x|\\)?",
+        "opts": [
+          "\\(y = |x-2|\\) is shifted 2 units left; \\(y = |x|-2\\) is shifted 2 units up.",
+          "\\(y = |x-2|\\) is shifted 2 units right; \\(y = |x|-2\\) is shifted 2 units down.",
+          "\\(y = |x-2|\\) is shifted 2 units up; \\(y = |x|-2\\) is shifted 2 units right.",
+          "Both are shifted 2 units right."
+        ],
+        "options": [
+          "\\(y = |x-2|\\) is shifted 2 units left; \\(y = |x|-2\\) is shifted 2 units up.",
+          "\\(y = |x-2|\\) is shifted 2 units right; \\(y = |x|-2\\) is shifted 2 units down.",
+          "\\(y = |x-2|\\) is shifted 2 units up; \\(y = |x|-2\\) is shifted 2 units right.",
+          "Both are shifted 2 units right."
+        ],
+        "a": 1,
+        "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "Recall translations of y = |x|: replacing x by x - h shifts the graph h units right (h > 0). Adding k outside the absolute value shifts k units up.",
+            "explanation": "In y = |x - h| + k, positive h shifts right and positive k shifts up. Negative k shifts down.",
             "workingOut": "\\(y = |x - h| + k\\)",
             "graphData": null
           },
           {
-            "explanation": "For y = |x - 2|: h = 2, k = 0, so shift 2 units to the right. For y = |x| - 2: h = 0, k = -2, so shift 2 units down.",
+            "explanation": "y = |x - 2| means h = 2, k = 0: shift 2 right. y = |x| - 2 means h = 0, k = -2: shift 2 down. Reversing left/right is a frequent mistake.",
             "workingOut": "\\(|x-2|:\\ right\\ 2;\\quad |x|-2:\\ down\\ 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Select the option with right for |x - 2| and down for |x| - 2.",
+            "workingOut": "\\(\\text{Right 2 and down 2}\\)",
             "graphData": null
           }
         ]
@@ -13568,27 +13608,37 @@ export const CH5_QUESTIONS_Y11A = [
     "subQuestions": [
       {
         "id": "y11a-5E-new-15a",
-        "type": "teacher_review",
-        "question": "Sketch \\(y = |x - 4|\\) and \\(y = 2\\) on the same set of axes, clearly showing the points of intersection. Hence write down the solution of \\(|x - 4| = 2\\).",
-        "opts": [],
-        "options": [],
-        "a": "Intersections at \\((2, 2)\\) and \\((6, 2)\\). Solution: \\(x = 2\\) or \\(x = 6\\).",
-        "answer": "Intersections at \\((2, 2)\\) and \\((6, 2)\\). Solution: \\(x = 2\\) or \\(x = 6\\).",
+        "type": "multiple_choice",
+        "question": "The graphs of \\(y = |x - 4|\\) and \\(y = 2\\) intersect at which points, and what is the solution of \\(|x - 4| = 2\\)?",
+        "opts": [
+          "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) or \\(x = 6\\)",
+          "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) only",
+          "Intersections \\((4,2)\\) and \\((0,2)\\); solution \\(x = 4\\) or \\(x = 0\\)",
+          "No intersection; no solution"
+        ],
+        "options": [
+          "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) or \\(x = 6\\)",
+          "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) only",
+          "Intersections \\((4,2)\\) and \\((0,2)\\); solution \\(x = 4\\) or \\(x = 0\\)",
+          "No intersection; no solution"
+        ],
+        "a": 0,
+        "answer": 0,
         "solutionSteps": [
           {
-            "explanation": "Graph y = |x - 4| as a V with vertex (4, 0). Draw the horizontal line y = 2. Intersection x-coordinates solve |x - 4| = 2.",
-            "workingOut": "\\(y = |x-4|,\\quad y = 2\\)",
+            "explanation": "The equation |x - 4| = 2 is the x-coordinates where the V-graph y = |x - 4| meets the horizontal line y = 2. Split into two linear cases because 2 > 0.",
+            "workingOut": "\\(x - 4 = 2 \\quad \\text{or} \\quad x - 4 = -2\\)",
             "graphData": null
           },
           {
-            "explanation": "Solve algebraically to confirm: x - 4 = 2 or x - 4 = -2, so x = 6 or x = 2. Mark both intersection points on the sketch.",
-            "workingOut": "\\(x = 6 \\quad \\text{or} \\quad x = 2\\)",
+            "explanation": "x = 6 or x = 2. Intersection points are therefore (2, 2) and (6, 2). Check both on the model graph.",
+            "workingOut": "\\(x = 2 \\text{ or } x = 6\\)",
             "graphData": {
               "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"191.3\" x2=\"282.0\" y2=\"191.3\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"51.1\" y1=\"18\" x2=\"51.1\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,67.5 L 143.5,191.3 L 282.0,42.8\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <line x1=\"28\" y1=\"141.8\" x2=\"282.0\" y2=\"141.8\" stroke=\"#ef4444\" stroke-width=\"2\" stroke-dasharray=\"5 3\"/>\n  <circle cx=\"97.3\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <circle cx=\"189.6\" cy=\"141.8\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"103.27272727272727\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(2,2)</text>\n  <text x=\"195.63636363636363\" y=\"133.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">(6,2)</text>\n  <text x=\"160\" y=\"36\" font-size=\"10\" fill=\"#6366f1\" font-weight=\"bold\">y = |x − 4|</text>\n  <text x=\"200\" y=\"135.75\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">y = 2</text>\n</svg>"
             }
           },
           {
-            "explanation": "The solution of |x - 4| = 2 is therefore x = 2 or x = 6. Both points lie 2 units above the x-axis on the absolute-value graph.",
+            "explanation": "Both points satisfy the original equation. The complete solution is x = 2 or x = 6.",
             "workingOut": "\\(\\text{Solution: } x = 2 \\text{ or } x = 6\\)",
             "graphData": null
           }
@@ -13739,25 +13789,35 @@ export const CH5_QUESTIONS_Y11A = [
     "subQuestions": [
       {
         "id": "y11a-5E-new-16a",
-        "type": "teacher_review",
-        "question": "Use the result \\(f(x) = \\sqrt{x^2}\\) to help prove that the absolute value function is even.",
-        "opts": [],
-        "options": [],
-        "a": "Since \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\), \\(f\\) is even.",
-        "answer": "Since \\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\), \\(f\\) is even.",
+        "type": "multiple_choice",
+        "question": "Using \\(f(x) = \\sqrt{x^2}\\), which statement correctly proves that \\(f(x) = |x|\\) is even?",
+        "opts": [
+          "\\(f(-x) = \\sqrt{-x^2} = -\\sqrt{x^2} = -f(x)\\) for all real \\(x\\)",
+          "\\(f(-x) = -\\sqrt{x^2} = -f(x)\\), so \\(f\\) is odd",
+          "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\)",
+          "\\(f(-x) = f(x)\\) only when \\(x \\ge 0\\)"
+        ],
+        "options": [
+          "\\(f(-x) = \\sqrt{-x^2} = -\\sqrt{x^2} = -f(x)\\) for all real \\(x\\)",
+          "\\(f(-x) = -\\sqrt{x^2} = -f(x)\\), so \\(f\\) is odd",
+          "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\) for all real \\(x\\)",
+          "\\(f(-x) = f(x)\\) only when \\(x \\ge 0\\)"
+        ],
+        "a": 2,
+        "answer": 2,
         "solutionSteps": [
           {
-            "explanation": "A function is even if f(-x) = f(x) for every x in the domain. Use the identity |x| = √(x²), which is valid for all real x because √ returns the non-negative root.",
+            "explanation": "A function is even when f(-x) = f(x) for every real x. Use the identity |x| = square root of x squared, which is defined for all real x and returns a non-negative value.",
             "workingOut": "\\(f(x) = |x| = \\sqrt{x^2}\\)",
             "graphData": null
           },
           {
-            "explanation": "Replace x by -x: f(-x) = √((-x)²) = √(x²) because (-x)² = x². This equals f(x). A common slip is writing √((-x)²) = -√(x²).",
+            "explanation": "Replace x by -x: f(-x) = sqrt of (-x) squared. Since (-x) squared equals x squared, this simplifies to sqrt of x squared, which is f(x). Do not write sqrt of (-x) squared as negative sqrt of x squared.",
             "workingOut": "\\(f(-x) = \\sqrt{(-x)^2} = \\sqrt{x^2} = f(x)\\)",
             "graphData": null
           },
           {
-            "explanation": "Because f(-x) = f(x) for all real x, f is an even function. This is the required proof.",
+            "explanation": "Because f(-x) = f(x) for all real x, f is even. Choose the option that states this identity for all real x.",
             "workingOut": "\\(\\text{Hence } f \\text{ is even.}\\)",
             "graphData": null
           }
@@ -13765,24 +13825,39 @@ export const CH5_QUESTIONS_Y11A = [
       },
       {
         "id": "y11a-5E-new-16b",
-        "type": "teacher_review",
-        "question": "Why was this result obvious from the graph of \\(y = |x|\\)?",
-        "opts": [],
-        "options": [],
-        "a": "The graph is symmetric about the y-axis (mirror image left and right), which is the geometric definition of an even function.",
-        "answer": "The graph is symmetric about the y-axis (mirror image left and right), which is the geometric definition of an even function.",
+        "type": "multiple_choice",
+        "question": "Why is it obvious from the graph of \\(y = |x|\\) that the absolute value function is even?",
+        "opts": [
+          "The graph is symmetric about the \\(x\\)-axis.",
+          "The graph is symmetric about the \\(y\\)-axis (left–right mirror image).",
+          "The graph is rotationally symmetric by \\(90^\\circ\\) about the origin.",
+          "The graph is a straight line through the origin."
+        ],
+        "options": [
+          "The graph is symmetric about the \\(x\\)-axis.",
+          "The graph is symmetric about the \\(y\\)-axis (left–right mirror image).",
+          "The graph is rotationally symmetric by \\(90^\\circ\\) about the origin.",
+          "The graph is a straight line through the origin."
+        ],
+        "a": 1,
+        "answer": 1,
         "solutionSteps": [
           {
-            "explanation": "Even functions are symmetric in the y-axis: the left and right halves are mirror images. Look at y = |x|.",
-            "workingOut": "\\(\\text{Even } \\Leftrightarrow \\text{ reflection symmetry in } y\\text{-axis}\\)",
+            "explanation": "Even functions have reflection symmetry in the y-axis: the left and right halves are mirror images. Odd functions instead have rotational symmetry of 180 degrees about the origin.",
+            "workingOut": "\\(\\text{Even } \\Leftrightarrow \\text{y-axis reflection symmetry}\\)",
             "graphData": null
           },
           {
-            "explanation": "The V-shape of y = |x| is clearly mirrored across the y-axis, so the graph alone shows the function is even — matching the algebraic proof.",
-            "workingOut": "\\(\\text{Graph of } y = |x| \\text{ is y-axis symmetric}\\)",
+            "explanation": "The V-shaped graph of y = |x| is clearly a mirror image across the y-axis, so the function is even. Symmetry about the x-axis would mean reflecting upside-down, which does not apply here.",
+            "workingOut": "\\(\\text{y-axis symmetry of } y = |x|\\)",
             "graphData": {
-              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"183.0\" x2=\"282.0\" y2=\"183.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"155.0\" y1=\"18\" x2=\"155.0\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <text x=\"282.0\" y=\"197.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">x</text>\n  <text x=\"161.0\" y=\"22.0\" font-size=\"12\" fill=\"#64748b\" font-weight=\"bold\">y</text>\n  <path d=\"M 28.0,51.0 L 155.0,183.0 L 282.0,51.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = |x| (even: mirror in y-axis)</text>\n  <circle cx=\"155.0\" cy=\"183.0\" r=\"3.5\" fill=\"#ef4444\"/><text x=\"161.0\" y=\"177.0\" font-size=\"10\" fill=\"#ef4444\" font-weight=\"bold\">V(0,0)</text>\n</svg>"
+              "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\" style=\"display: block; margin: 0 auto; background: #fafafa; border: 1px solid #e2e8f0; border-radius: 8px;\">\n  <line x1=\"28\" y1=\"183.0\" x2=\"282.0\" y2=\"183.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <line x1=\"155.0\" y1=\"18\" x2=\"155.0\" y2=\"216.0\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n  <path d=\"M 28.0,18.0 L 155.0,183.0 L 282.0,18.0\" fill=\"none\" stroke=\"#6366f1\" stroke-width=\"2.5\" stroke-linejoin=\"round\"/>\n  <circle cx=\"155.0\" cy=\"183.0\" r=\"3.5\" fill=\"#ef4444\"/>\n  <text x=\"40\" y=\"28\" font-size=\"11\" fill=\"#6366f1\" font-weight=\"bold\">y = |x| (y-axis symmetry)</text>\n</svg>"
             }
+          },
+          {
+            "explanation": "Therefore the geometric reason is y-axis (left–right) symmetry.",
+            "workingOut": "\\(\\text{Answer: y-axis symmetry}\\)",
+            "graphData": null
           }
         ]
       }
