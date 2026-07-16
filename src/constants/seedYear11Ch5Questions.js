@@ -16662,17 +16662,17 @@ export const CH5_QUESTIONS_Y11A = [
     ],
     "solutionSteps": [
       {
-        "explanation": "Write g(f(x)) = √(f(x)) = √(-4 - |x|). The square root requires a non-negative argument.",
+        "explanation": "Write \\(g(f(x)) = \\sqrt{f(x)} = \\sqrt{-4 - |x|}\\). The square root requires a non-negative argument.",
         "workingOut": "\\(g(f(x)) = \\sqrt{-4 - |x|}\\)",
         "graphData": null
       },
       {
-        "explanation": "For every real x, |x| ≥ 0, so -4 - |x| ≤ -4 < 0. The inside is always strictly negative.",
+        "explanation": "For every real \\(x\\), \\(|x| \\ge 0\\), so \\(-4 - |x| \\le -4 < 0\\). The inside is always strictly negative.",
         "workingOut": "\\(-4 - |x| \\le -4 < 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Therefore no real x makes the radicand non-negative. The domain is empty and g(f(x)) is the empty function.",
+        "explanation": "Therefore no real \\(x\\) makes the radicand non-negative. The domain is empty and \\(g(f(x))\\) is the empty function.",
         "workingOut": "\\(\\text{Domain is empty}\\)",
         "graphData": null
       }

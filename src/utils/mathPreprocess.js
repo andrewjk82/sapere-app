@@ -115,7 +115,16 @@ const toDisplayText = (value, fallback = '', { currencyHtml = false } = {}) => {
   str = str.replace(/\\?\x0d(?=[a-zA-Z])/g, '\\r'); // Carriage Return (\r) -> \r (e.g. \right)
 
   // 1. Unicode → LaTeX symbol substitutions
+  // √ must keep its argument: bare "√" → "\sqrt" left "\sqrt(x)" which KaTeX
+  // renders as a red error (sqrt with no group, then literal "(x)").
+  // Prefer √(…), √{…}, √digit before a leftover bare √.
+  str = str.replace(/√\{/g, '\\sqrt{');
+  str = str.replace(/√\(([^()]*(?:\([^()]*\)[^()]*)*)\)/g, '\\sqrt{$1}');
+  str = str.replace(/√(\d+)/g, '\\sqrt{$1}');
+  str = str.replace(/√([a-zA-Z])/g, '\\sqrt{$1}');
   str = str.replace(/√/g, '\\sqrt');
+  // Same repair if data already has \sqrt(…) instead of \sqrt{…}
+  str = str.replace(/\\sqrt\(([^()]*(?:\([^()]*\)[^()]*)*)\)/g, '\\sqrt{$1}');
   str = str.replace(/π/g, '\\pi');
   str = str.replace(/θ/g, '\\theta');
   str = str.replace(/²/g, '^2');
