@@ -954,8 +954,10 @@ set('bbhs2020-24b', [
 ]);
 
 set('bbhs2020s-24a', [
-  S('Substitute: \\(y=\\ln((2.5)^2+1)=\\ln(6.25+1)=\\ln 7.25\\).', '\\ln 7.25'),
-  S('\\(\\ln 7.25\\approx 1.981\\) (3 d.p.).', '1.981'),
+  S('We need \\(y=\\ln(x^2+1)\\) at \\(x=2.5\\), to 3 decimal places.', 'y=\\ln((2.5)^2+1)'),
+  S('First compute the argument of the log: \\((2.5)^2+1=6.25+1=7.25\\).', '7.25'),
+  S('Now evaluate the natural logarithm: \\(\\ln 7.25\\).', '\\ln 7.25'),
+  S('Using a calculator, \\(\\ln 7.25\\approx 1.981146\\), which rounds to \\(1.981\\) (3 d.p.).', '1.981'),
 ]);
 
 set('bbhs2020s-24b', [
@@ -1030,10 +1032,18 @@ set('cra2023s-q22a', [
 ]);
 
 set('cra2023s-q22b', [
-  S('Concave-up rate graph ⇒ trapeziums overestimate the integral of rate (volume).', '\\text{overestimate}'),
+  S('The inflation (or flow) rate graph is concave up on the interval of interest.', '\\text{concave up}'),
   S(
-    'A volume-based safety cut-off keyed to that overestimate therefore activates earlier than the true volume would require.',
-    '\\text{cut-off triggers early}'
+    'For a concave-up graph, each chord of a trapezium lies above the curve, so the trapezoidal rule overestimates the integral of the rate.',
+    'V_{\\rm trap}>V_{\\rm true}'
+  ),
+  S(
+    'That integral of rate is a volume. An overestimated volume reaches a safety threshold before the true volume does.',
+    '\\text{estimated volume hits limit first}'
+  ),
+  S(
+    'Therefore a volume-based cut-off triggers early — the safe direction of error.',
+    '\\text{cut-off triggers early (safe)}'
   ),
 ]);
 
@@ -1145,10 +1155,15 @@ set('bbhs2020-17a', [
 
 set('bbhs2020s-17a', [
   S(
-    'Same reverse-chain formula with \\(a=3\\), \\(n=15\\): raise to the 16th power and divide by \\(a(n+1)=3\\times 16=48\\).',
+    'Use the reverse chain rule for a linear inside: \\(\\displaystyle\\int(ax+b)^n\\,dx=\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C\\) (\\(n\\neq-1\\)).',
+    '\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C'
+  ),
+  S('Here \\(a=3\\), \\(b=-2\\), \\(n=15\\). Raise the power by one: \\((3x-2)^{16}\\).', '(3x-2)^{16}'),
+  S('Denominator: \\(a(n+1)=3\\times 16=48\\).', '\\dfrac{(3x-2)^{16}}{48}+C'),
+  S(
+    'Differentiate to check: chain rule gives factor \\(16\\cdot 3=48\\), which cancels the 48 and restores \\((3x-2)^{15}\\).',
     '\\dfrac{(3x-2)^{16}}{48}+C'
   ),
-  S('Check by differentiating: chain rule brings down \\(16\\cdot 3=48\\), which cancels the denominator and restores \\((3x-2)^{15}\\).', '\\dfrac{(3x-2)^{16}}{48}+C'),
 ]);
 
 // ── main ─────────────────────────────────────────────────────────────
