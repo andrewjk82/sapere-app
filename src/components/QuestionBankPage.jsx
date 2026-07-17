@@ -27,6 +27,7 @@ import { useToast } from '../context/ToastContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
 import { answersMatch } from '../utils/answerMatching';
+import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
 
 // Split a long model-answer string into sentence-level lines for readability.
 // Careful to skip periods inside math delimiters \(...\) and $$...$$.
@@ -656,8 +657,15 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                         </div>
                         {sq.type === 'multiple_choice' ? (
                           <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
-                            {(sq.options || []).map((opt, oIdx) => {
-                              const isCorrectOpt = !Number.isNaN(Number(sq.answer)) && oIdx === Number(sq.answer);
+                            {(() => {
+                              // Shared resolver — "any number is an index" showed the
+                              // wrong option as Correct when the answer is a value.
+                              // Sub answers follow the parent's isManual contract.
+                              const sqCorrectIdx = resolveCorrectOptionIndex(
+                                { ...sq, isManual: q.isManual ?? true }, sq.options || [],
+                              );
+                              return (sq.options || []).map((opt, oIdx) => {
+                              const isCorrectOpt = oIdx === sqCorrectIdx;
                               return (
                                 <div key={oIdx} style={{ padding: '14px 22px', display: 'flex', alignItems: 'center', gap: '14px', border: `2px solid ${isCorrectOpt ? '#10b981' : 'transparent'}`, borderRadius: '100px', background: isCorrectOpt ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
                                   <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrectOpt ? '#10b981' : '#f1f5f9', color: isCorrectOpt ? '#fff' : '#64748b', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
@@ -667,7 +675,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                   {isCorrectOpt && <span style={{ fontSize: '0.7rem', fontWeight: 800, color: '#10b981', textTransform: 'uppercase', letterSpacing: '0.08em', flexShrink: 0 }}>Correct</span>}
                                 </div>
                               );
-                            })}
+                              });
+                            })()}
                           </div>
                         ) : (
                           <input type="text" placeholder="Type answer..." disabled style={{ width: '100%', padding: '12px 16px', borderRadius: '12px', border: '2px solid #f1f5f9', background: '#fff', fontWeight: 700, fontSize: '0.95rem' }} />
@@ -816,8 +825,10 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                     {(q.options || []).map((opt, i) => {
                       const optText = typeof opt === 'string' ? opt : opt.text;
-                      const correctIdx = Number(q.answer);
-                      const isCorrect = !Number.isNaN(correctIdx) && i === correctIdx;
+                      // Shared resolver — Number(q.answer) treated value answers
+                      // ("3" meaning three) as positions, marking the wrong
+                      // option Correct in the bank preview.
+                      const isCorrect = i === resolveCorrectOptionIndex(q, q.options || []);
                       return (
                         <div key={i} style={{ padding: '16px 28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '16px', border: `2px solid ${isCorrect ? '#10b981' : 'transparent'}`, borderRadius: '100px', background: isCorrect ? '#f0fdf4' : '#fff', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}>
                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%' }}>

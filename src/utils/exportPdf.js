@@ -8,6 +8,7 @@
  * This avoids heavy external libraries and leverages KaTeX which is already
  * loaded in the app for perfect math rendering.
  */
+import { resolveCorrectOptionIndex, resolveCorrectOptionText } from './mcOptionShuffle.js';
 
 /**
  * Strip double-backslashes that leak from JS string escaping into actual
@@ -130,12 +131,18 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
         `;
 
         if (showAnswers) {
+          const isSqMc = sq.type === 'multiple_choice' && sq.options;
+          // Shared resolver — Number(sqAnswer) treated value answers as
+          // positions, ticking the wrong option in the printed answer key.
+          // Sub answers follow the parent's isManual contract.
+          const sqForResolve = { ...sq, answer: sqAnswer, isManual: q.isManual ?? true };
+          const sqCorrectIdx = isSqMc ? resolveCorrectOptionIndex(sqForResolve, sq.options) : -1;
           // Sub-question MC options (answer version)
-          if (sq.type === 'multiple_choice' && sq.options) {
+          if (isSqMc) {
             questionsHtml += '<div class="options-grid">';
             sq.options.forEach((opt, oIdx) => {
               const optText = typeof opt === 'string' ? opt : opt.text || '';
-              const isCorrect = !isNaN(Number(sqAnswer)) && oIdx === Number(sqAnswer);
+              const isCorrect = oIdx === sqCorrectIdx;
               questionsHtml += `
                 <div class="option ${isCorrect ? 'correct' : ''}">
                   <span class="option-letter">${optLetter(oIdx)}.</span>
@@ -147,9 +154,13 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
             questionsHtml += '</div>';
           }
 
-          // Sub-question answer
-          if (sqAnswer !== '' && sqAnswer != null) {
-            questionsHtml += `<div class="answer-box"><strong>Answer:</strong> ${mathHtml(String(sqAnswer))}</div>`;
+          // Sub-question answer — for MC print the option TEXT, never the raw
+          // stored answer (usually a 0-based index: "Answer: 2").
+          const sqAnswerDisplay = isSqMc
+            ? resolveCorrectOptionText(sqForResolve, sq.options)
+            : String(sqAnswer);
+          if (sqAnswerDisplay !== '' && sqAnswerDisplay != null) {
+            questionsHtml += `<div class="answer-box"><strong>Answer:</strong> ${mathHtml(sqAnswerDisplay)}</div>`;
           }
 
           // Sub-question solution steps
@@ -183,12 +194,13 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
     const isMC = type === 'multiple_choice' || (!q.subQuestions?.length && (q.options || []).length > 0);
     if (isMC && q.options) {
       if (showAnswers) {
-        // Answer version: show options with correct marked
+        // Answer version: show options with correct marked. Shared resolver —
+        // Number(answer) read value answers ("3" meaning three) as positions.
+        const correctIdx = resolveCorrectOptionIndex(q, q.options);
         questionsHtml += '<div class="options-grid">';
         q.options.forEach((opt, i) => {
           const optText = typeof opt === 'string' ? opt : opt.text || '';
-          const correctIdx = Number(answer);
-          const isCorrect = !isNaN(correctIdx) && i === correctIdx;
+          const isCorrect = i === correctIdx;
           questionsHtml += `
             <div class="option ${isCorrect ? 'correct' : ''}">
               <span class="option-letter">${optLetter(i)}.</span>

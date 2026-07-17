@@ -1520,6 +1520,32 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       showToast("Please select the correct answer option.", 'warning');
       return;
     }
+    if (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx !== null) {
+      const chosen = (formData.options || [])[formData.answerIdx];
+      if (!chosen || ((chosen.text || '').trim() === '' && !chosen.imageUrl)) {
+        showToast('The option marked correct is empty — fill it in or mark a different option.', 'warning');
+        return;
+      }
+    }
+    // Sub-question MC answers used to skip validation entirely: an unmarked
+    // part saved answer '' (ungradeable — the student is wrong whatever they
+    // pick) with no warning anywhere.
+    if (hasSubQuestions && needsAnswer) {
+      for (let i = 0; i < formData.subQuestions.length; i++) {
+        const sq = formData.subQuestions[i];
+        if (sq.type !== 'multiple_choice') continue;
+        const label = `part (${String.fromCharCode(97 + i)})`;
+        if (sq.answerIdx == null) {
+          showToast(`Please select the correct answer option for ${label}.`, 'warning');
+          return;
+        }
+        const chosen = (sq.options || [])[sq.answerIdx];
+        if (!chosen || ((chosen.text || '').trim() === '' && !chosen.imageUrl)) {
+          showToast(`The option marked correct for ${label} is empty — fill it in or mark a different option.`, 'warning');
+          return;
+        }
+      }
+    }
     if (!hasSubQuestions && needsAnswer && formData.type === 'short_answer' && !formData.answer) {
       showToast("Please enter the correct answer.", 'warning');
       return;
@@ -1541,6 +1567,35 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         }
       }
 
+      // Drop empty option slots AND remap the correct-answer index through the
+      // same filter. The old code filtered options but kept answerIdx from the
+      // unfiltered 4-slot array — an empty slot BEFORE the correct option
+      // shifted every later option down one, so the saved index pointed at the
+      // wrong option: the teacher's own UI wrote a wrong answer key.
+      const packMcOptions = (options, answerIdx) => {
+        const kept = [];
+        const keptOriginalIdx = [];
+        (options || []).forEach((o, i) => {
+          if ((o?.text || '').trim() !== '' || o?.imageUrl) {
+            kept.push(o);
+            keptOriginalIdx.push(i);
+          }
+        });
+        if (kept.length === 0) {
+          // 빈 옵션만 있으면 빈 배열 대신 원본 유지 (options:[] 로 저장되면 다시 불러올 때 표시 안 됨)
+          return { options: options || [], answerIdx: answerIdx ?? null };
+        }
+        const remapped = answerIdx != null ? keptOriginalIdx.indexOf(answerIdx) : -1;
+        return { options: kept, answerIdx: remapped >= 0 ? remapped : null };
+      };
+      const mainMc = formData.type === 'multiple_choice'
+        ? packMcOptions(formData.options, formData.answerIdx)
+        : null;
+      if (mainMc && needsAnswer && !hasSubQuestions && mainMc.answerIdx === null) {
+        showToast('The option marked correct is empty — fill it in or mark a different option.', 'warning');
+        return;
+      }
+
       const payload = stripUndefined({
         chapterId: chapter.id,
         chapterTitle: chapter.title,
@@ -1553,18 +1608,12 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         difficulty: formData.difficulty,
         timeLimit: Number(formData.timeLimit),
         type: formData.type,
-        options: formData.type === 'multiple_choice'
-          ? (() => {
-              const filled = formData.options.filter(o => o.text.trim() !== '' || o.imageUrl !== '');
-              // 빈 옵션만 있으면 빈 배열 대신 원본 유지 (options:[] 로 저장되면 다시 불러올 때 표시 안 됨)
-              return filled.length > 0 ? filled : formData.options;
-            })()
-          : [],
+        options: mainMc ? mainMc.options : [],
         questionImage: formData.questionImage,
         // fill_blank: pipe-joined answers serve as a fallback for old grading
         // paths; the canonical source is the `blanks` array below.
         answer: formData.type === 'multiple_choice'
-          ? (formData.answerIdx != null ? formData.answerIdx.toString() : '')
+          ? (mainMc.answerIdx != null ? mainMc.answerIdx.toString() : '')
           : formData.type === 'fill_blank'
             ? (formData.blanks || []).map((b) => (b.answer || '').trim()).join(' | ')
             : formData.answer,
@@ -1574,18 +1623,19 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: formData.solution,
         solutionSteps: formData.solutionSteps.filter(s => s.explanation.trim() || s.workingOut.trim()),
         hint: formData.hint,
-        subQuestions: (formData.subQuestions || []).map(sq => ({
-          id: sq.id || '',
-          question: sq.question || '',
-          type: sq.type || 'short_answer',
-          options: sq.type === 'multiple_choice'
-            ? (sq.options || []).filter(o => (o?.text || '').trim() !== '' || o?.imageUrl)
-            : [],
-          answer: sq.type === 'multiple_choice' ? (sq.answerIdx?.toString() || '') : (sq.answer || ''),
-          solution: sq.solution || '',
-          solutionSteps: (sq.solutionSteps || []).filter(s => s.explanation.trim() || s.workingOut.trim()),
-          hint: sq.hint || ''
-        })),
+        subQuestions: (formData.subQuestions || []).map(sq => {
+          const sqMc = sq.type === 'multiple_choice' ? packMcOptions(sq.options, sq.answerIdx) : null;
+          return {
+            id: sq.id || '',
+            question: sq.question || '',
+            type: sq.type || 'short_answer',
+            options: sqMc ? sqMc.options : [],
+            answer: sqMc ? (sqMc.answerIdx != null ? String(sqMc.answerIdx) : '') : (sq.answer || ''),
+            solution: sq.solution || '',
+            solutionSteps: (sq.solutionSteps || []).filter(s => s.explanation.trim() || s.workingOut.trim()),
+            hint: sq.hint || ''
+          };
+        }),
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData,
         acceptedAnswers: (formData.acceptedAnswers || []).filter(Boolean),

@@ -53,6 +53,14 @@ const RULES = [
     re: /String\s*\(\s*[a-z][\w$]*\s*\)\s*===\s*String\s*\(\s*[A-Za-z_$][\w$]*\s*\.\s*answer\b/,
     msg: 'Decides correctness by comparing a display position to the seed answer. Use isDisplayedOptionCorrect(q, displayOptions, i) / gradeMcSelection().',
   },
+  {
+    id: 'number-answer-as-index',
+    // `const correctIdx = Number(q.answer)` / `oIdx === Number(sqAnswer)` —
+    // "any number is an index". A value answer ("3" meaning three) then marks
+    // the wrong option correct. Found in QuestionBankPage + exportPdf 2026-07.
+    re: /correct(Idx|Index|Mc|Option|Opt)\w*\s*=.*Number\s*\(\s*[\w$.]*answer|\b(?:i|oi|idx|oIdx|index|optIdx|displayIndex)\s*===?\s*Number\s*\(\s*[\w$.]*answer/i,
+    msg: 'Treats Number(answer) as an option index. A numeric answer may be the literal option value — use resolveCorrectOptionIndex(q, options) / resolveCorrectOptionText(q).',
+  },
 ];
 
 // A file that reorders MC options must delegate to the helper.
