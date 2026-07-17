@@ -37,6 +37,7 @@ import {
   recordResult,
   recordTwinResult,
   setMistakeTag,
+  markSecretNoteCaughtUp,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
@@ -421,6 +422,16 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const [twinPrep, setTwinPrep] = useState(null);
   const [tag, setTag] = useState(null);         // mistake tag chosen this card
   const [summary, setSummary] = useState({ graduated: 0, kept: 0, xp: 0 });
+
+  // Stamp "caught up today" the moment the due queue is cleared for this kind —
+  // either the student reviewed everything due ('done'), or nothing was due when
+  // they opened ('empty', whether the notebook is truly empty or only holds
+  // future-scheduled cards). Tomorrow's clear-bonus settlement reads this stamp,
+  // which is why a diligent student whose notes merely rescheduled still earns it.
+  useEffect(() => {
+    if (!uid) return;
+    if (phase === 'empty' || phase === 'done') markSecretNoteCaughtUp(kind, uid);
+  }, [phase, kind, uid]);
 
   // Clear-bonus is settled AFTER midnight for the previous day (not on empty).
   // Still safe to probe here — same-day empty notes are ineligible until tomorrow.

@@ -8,14 +8,20 @@
  *    notebook is still empty and award for YESTERDAY (once).
  *
  * Eligibility (important):
- *  - Empty notes alone are NOT enough — "didn't practice → 0 notes" must NOT award.
+ *  - "Caught up" for a kind = nothing was left DUE that day: the notebook is
+ *    empty (graduated everything), OR every remaining note was future-scheduled
+ *    and the student cleared their due queue (stamped via markSecretNoteCaughtUp).
+ *    This replaced a stricter "notebook empty" gate that never rewarded a
+ *    diligent student, because a manual note reschedules on the first correct
+ *    (needs 2-in-a-row to graduate) and so the notebook is never empty same-day.
+ *  - Being caught up alone is NOT enough — "didn't practice" must NOT award.
  *  - Daily bonus requires Daily Practice completed that day.
  *  - Calc bonus requires Basic Calculation completed that day.
  *  - Abandoned / never started → no bonus for that kind.
  *
  * Amounts:
- *  - Daily-only (calculationEnabled === false): +10 if daily notebook empty + daily done
- *  - With calculation: +5 if daily empty + daily done, +5 if calc empty + calc done
+ *  - Daily-only (calculationEnabled === false): +10 if daily caught up + daily done
+ *  - With calculation: +5 if daily caught up + daily done, +5 if calc caught up + calc done
  *
  * Traffic:
  *  - Note counts + activity stamps: localStorage (0 reads common path)
@@ -28,7 +34,15 @@ import {
   doc, getDoc, runTransaction, serverTimestamp,
 } from 'firebase/firestore';
 import { db } from '../firebase/config';
-import { getNoteCount } from '../utils/secretNote';
+import { getNoteCount, wasSecretNoteCaughtUp } from '../utils/secretNote';
+
+// "Caught up" for a kind on `awardDate` = the student had nothing left due that
+// day. True when the notebook is genuinely empty (graduated everything), OR the
+// day was stamped because the student cleared their due queue while notes stayed
+// future-scheduled. Empty is checked live (graduated notes stay gone); the
+// stamp carries the rescheduled-but-cleared case across the next-day settlement.
+const isCaughtUp = (kind, uid, awardDate) =>
+  getNoteCount(kind, uid) === 0 || wasSecretNoteCaughtUp(kind, uid, awardDate);
 
 /** Feature go-live (local date). Award days before this never get the bonus. */
 export const SECRET_NOTE_BONUS_START = '2026-07-14';
@@ -188,8 +202,8 @@ export function buildSecretNoteClearBonusPlan(uid, profile, done = {}, awardDate
   if (awardDate < SECRET_NOTE_BONUS_START) return null;
 
   const hasCalc = profile?.calculationEnabled !== false;
-  const dailyEmpty = getNoteCount('daily', uid) === 0;
-  const calcEmpty = getNoteCount('calc', uid) === 0;
+  const dailyEmpty = isCaughtUp('daily', uid, awardDate);
+  const calcEmpty = isCaughtUp('calc', uid, awardDate);
   const dailyDone = done.daily === true;
   const calcDone = done.calc === true;
 
@@ -300,14 +314,14 @@ export async function tryAwardSecretNoteClearBonus(uid, profile) {
   }
 
   const hasCalc = profile?.calculationEnabled !== false;
-  const dailyEmpty = getNoteCount('daily', uid) === 0;
-  const calcEmpty = getNoteCount('calc', uid) === 0;
+  const dailyEmpty = isCaughtUp('daily', uid, awardDate);
+  const calcEmpty = isCaughtUp('calc', uid, awardDate);
 
-  // Nothing empty → cannot award; zero network.
+  // Nothing caught up → cannot award; zero network.
   if (!hasCalc && !dailyEmpty) return { awarded: false, reason: 'ineligible' };
   if (hasCalc && !dailyEmpty && !calcEmpty) return { awarded: false, reason: 'ineligible' };
 
-  // Only resolve activity for kinds that are empty (and thus could claim).
+  // Only resolve activity for kinds that are caught up (and thus could claim).
   const done = await resolveActivityForDate(uid, awardDate, {
     needDaily: dailyEmpty,
     needCalc: hasCalc && calcEmpty,

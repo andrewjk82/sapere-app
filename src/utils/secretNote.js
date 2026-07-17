@@ -123,6 +123,33 @@ export function getNoteCount(kind, uid) {
   return read(kind, uid).length;
 }
 
+// ── "Caught up today" day-stamps (drive the clear bonus) ────────────────────
+// A note graduates only after 2 correct-in-a-row (manual); on the FIRST correct
+// it reschedules to a future day instead of leaving the notebook. So a diligent
+// student who reviews every DUE note still has a non-empty notebook — a bonus
+// gated on "notebook empty" would never reward them, and the bonus settles the
+// NEXT day when today's "0 due" state is already gone (rescheduled notes are due
+// again). We therefore stamp the local calendar day on which the student cleared
+// their due queue (nothing left due) per kind, and the clear bonus reads
+// yesterday's stamp instead of re-deriving an already-changed due state.
+const CAUGHT_UP_KEY = (uid, kind, dateKey) => `sapere:sn-caught-up:${uid || 'anon'}:${kind}:${dateKey}`;
+const localDay = () => new Date().toLocaleDateString('en-CA');
+
+export function markSecretNoteCaughtUp(kind, uid, dateKey = localDay()) {
+  if (!uid) return;
+  try { localStorage.setItem(CAUGHT_UP_KEY(uid, kind, dateKey), '1'); } catch { /* ignore */ }
+}
+
+export function clearSecretNoteCaughtUp(kind, uid, dateKey = localDay()) {
+  if (!uid) return;
+  try { localStorage.removeItem(CAUGHT_UP_KEY(uid, kind, dateKey)); } catch { /* ignore */ }
+}
+
+export function wasSecretNoteCaughtUp(kind, uid, dateKey) {
+  if (!uid || !dateKey) return false;
+  try { return localStorage.getItem(CAUGHT_UP_KEY(uid, kind, dateKey)) === '1'; } catch { return false; }
+}
+
 // Items whose nextReviewAt has arrived (forgetting-curve due today).
 export function getDueCount(kind, uid) {
   const now = Date.now();
@@ -160,7 +187,13 @@ export function addMistakes(kind, uid, wrongQuestions) {
     seen.add(String(questionId));
     added += 1;
   });
-  if (added) write(kind, uid, items);
+  if (added) {
+    write(kind, uid, items);
+    // A freshly-added mistake is due now, so the student is no longer "caught
+    // up" today — revoke today's stamp so the clear bonus isn't over-awarded
+    // when new due notes appear after they cleared the queue earlier.
+    clearSecretNoteCaughtUp(kind, uid);
+  }
   return added;
 }
 
