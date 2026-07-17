@@ -17,7 +17,8 @@
     "test:mc-guard": "node scripts/checkMcShuffleUsage.mjs",
     "test:mc": "npm run test:mc-shuffle && npm run test:mc-guard && npm run test:answer-displays",
     "test:answer-displays": "node --import ./scripts/extResolve.mjs scripts/testAnswerDisplays.mjs",
-    "audit:mc-seeds": "node --import ./scripts/extResolve.mjs scripts/auditMcSeedAnswers.mjs"
+    "audit:mc-seeds": "node --import ./scripts/extResolve.mjs scripts/auditMcSeedAnswers.mjs",
+    "audit:mc-key-vs-solution": "node --import ./scripts/extResolve.mjs scripts/auditMcKeyVsSolution.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

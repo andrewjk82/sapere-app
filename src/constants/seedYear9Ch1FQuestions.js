@@ -1020,7 +1020,7 @@ export const Y9_CH1F_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand and collect like terms: \\((5y-6)^2\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(5y^2-60y+36\\)",
   "\\(25y^2-30y+36\\)",

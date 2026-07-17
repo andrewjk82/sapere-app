@@ -18,7 +18,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 1,
     hint: 'Use the rectangle area formula: Area = length \\(\\times\\) width.',
     solution: 'The area is calculated as:\\n\\[A = 6 \\\\times 4 = 24\\\\text{ cm}^2\\]',
     graphData: {
@@ -74,7 +74,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(28\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 0,
     hint: 'Use the parallelogram area formula: Area = base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = 6 \\\\times 8 = 48\\\\text{ cm}^2\\]',
     graphData: {
@@ -133,7 +133,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 3,
     hint: 'Use the triangle area formula: Area = 0.5 \\(\\times\\) base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 8 \\\\times 6 = 24\\\\text{ cm}^2\\]',
     graphData: {
@@ -191,7 +191,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(20\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(11\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 1,
     hint: 'The height lies outside the triangle, but the formula remains Area = 0.5 \\(\\times\\) base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 6 \\\\times 5 = 15\\\\text{ cm}^2\\]',
     graphData: {
@@ -250,7 +250,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(36\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(56\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 0,
     hint: 'Use the trapezium area formula: Area = 0.5 \\(\\times (a + b) \\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times (5 + 9) \\\\times 4 = 7 \\\\times 4 = 28\\\\text{ m}^2\\]',
     graphData: {
@@ -310,7 +310,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(70\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(40\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: 1,
     hint: 'Use the trapezium area formula: Area = 0.5 \\(\\times (a + b) \\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times (6 + 8) \\\\times 5 = 7 \\\\times 5 = 35\\\\text{ cm}^2\\]',
     graphData: {
@@ -537,7 +537,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(15\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(7.5\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: 2,
     hint: 'Use the parallelogram area formula: Area = base \\(\\times\\) height.',
     solution: 'The area is calculated as:\\n\\[A = 5 \\\\times 3 = 15\\\\text{ cm}^2\\]',
     graphData: {
@@ -596,7 +596,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(48\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 2,
     hint: 'Use the formula: Area = 0.5 \\(\\times x \\times y\\), where x and y are the diagonal lengths.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 8 \\\\times 6 = 24\\\\text{ cm}^2\\]',
     graphData: {
@@ -654,7 +654,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(63\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 1,
     hint: 'Use the formula: Area = 0.5 \\(\\times x \\times y\\), where x and y are the diagonal lengths.',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 18 \\\\times 14 = 126\\\\text{ cm}^2\\]',
     graphData: {
@@ -712,7 +712,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(32\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(16\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 2,
     hint: 'Use the diagonal area formula: Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 4 \\\\times 16 = 32\\\\text{ m}^2\\]',
     graphData: {
@@ -770,7 +770,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(384\\text{ mm}^2\\)', imageUrl: '' },
       { text: '\\(40\\text{ mm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 0,
     hint: 'Use the diagonal area formula: Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 16 \\\\times 24 = 8 \\\\times 24 = 192\\\\text{ mm}^2\\]',
     graphData: {
@@ -828,7 +828,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(28\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(14\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 2,
     hint: 'Area = length \\(\\times\\) width.',
     solution: 'The area is calculated as:\\n\\[A = 4 \\\\times 7 = 28\\\\text{ m}^2\\]',
     graphData: null,
@@ -864,7 +864,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(64\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(32\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 2,
     hint: 'Area = side \\(\\times\\) side.',
     solution: 'The area is calculated as:\\n\\[A = 8 \\\\times 8 = 64\\\\text{ cm}^2\\]',
     graphData: null,
@@ -900,7 +900,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(100\\pi\\text{ m}^2\\)', imageUrl: '' },
       { text: '\\(25\\pi\\text{ m}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 3,
     hint: 'First find the radius: \\(r = d/2\\), then apply \\(A = \\pi r^2\\).',
     solution: 'The radius is \\(r = 10 \\\\div 2 = 5\\text{ m}\\).\\n\\nArea is:\\n\\[A = \\pi r^2 = \\pi \\\\times 5^2 = 25\\pi\\\\text{ m}^2\\]',
     graphData: null,
@@ -936,7 +936,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(13\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(10\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 1,
     hint: 'Area = 0.5 \\(\\times x \\times y\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times 8 \\\\times 5 = 20\\\\text{ cm}^2\\]',
     graphData: null,
@@ -1008,7 +1008,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(16\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(64\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 0,
     hint: 'A square is also a rhombus with equal diagonals: Area = 0.5 \\(\\times d^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times d^2 = \\\\frac{1}{2} \\\\times 8^2 = \\\\frac{1}{2} \\\\times 64 = 32\\\\text{ cm}^2\\]',
     graphData: null,
@@ -1161,7 +1161,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(18\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 3,
     hint: 'Apply Area = \\(\\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\pi r^2 = \\pi \\\\times 6^2 = 36\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1210,7 +1210,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 2,
     hint: 'A semicircle is half a circle: Area = 0.5 \\(\\times \\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{1}{2} \\\\times \\pi \\\\times 8^2 = \\\\frac{1}{2} \\\\times 64\\pi = 32\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1322,7 +1322,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(27\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(9\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 2,
     hint: 'Use the sector area formula: Area = \\(\\frac{\\theta}{360} \\times \\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{120}{360} \\\\times \\pi \\\\times 9^2 = \\\\frac{1}{3} \\\\times 81\\pi = 27\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1379,7 +1379,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(64\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(48\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 3,
     hint: 'Use the sector area formula: Area = \\(\\frac{\\theta}{360} \\times \\pi r^2\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{270}{360} \\\\times \\pi \\\\times 8^2 = \\\\frac{3}{4} \\\\times 64\\pi = 48\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1436,7 +1436,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(24\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(36\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 0,
     hint: 'Use the sector area formula with \\(\\theta = 30^\\circ\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{30}{360} \\\\times \\pi \\\\times 12^2 = \\\\frac{1}{12} \\\\times 144\\pi = 12\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1493,7 +1493,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(8\\pi\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(32\\pi\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 2,
     hint: 'Use the sector area formula with \\(\\theta = 45^\\circ\\).',
     solution: 'The area is calculated as:\\n\\[A = \\\\frac{45}{360} \\\\times \\pi \\\\times 8^2 = \\\\frac{1}{8} \\\\times 64\\pi = 8\\pi\\\\text{ cm}^2\\]',
     graphData: {
@@ -1914,7 +1914,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(270\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(210\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '3',
+    answer: 1,
     hint: 'Subtract the area of the inner rectangle cutout from the area of the outer bounding rectangle.',
     solution: 'Area of outer rectangle: 18 cm x 15 cm = 270 cm².\\nInner cutout dimensions: width = 10 cm (18 - 4 - 4), height = 10 cm.\\nInner cutout area = 10 cm x 10 cm = 100 cm².\\n\\nTotal area = 270 - 100 = 170 cm².',
     graphData: {
@@ -1982,7 +1982,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(24\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(33\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '1',
+    answer: 3,
     hint: 'Divide the shape into a rectangle of height 4 cm and a triangle of height 3 cm (7 - 4).',
     solution: 'Calculate the two component areas:\\n- Rectangle: 6 cm x 4 cm = 24 cm².\\n- Triangle: base = 6 cm, height = 3 cm (7 - 4). Area = 0.5 x 6 x 3 = 9 cm².\\n\\nTotal area = 24 + 9 = 33 cm².',
     graphData: {
@@ -2046,7 +2046,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(36.14\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(32.14\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '2',
+    answer: 3,
     hint: 'The semicircle diameter is 6 cm (so radius is 3 cm). Add the rectangle area (18) and the semicircle area (0.5 * pi * 3^2).',
     solution: 'Calculate both parts:\\n- Rectangle area: 6 cm x 3 cm = 18 cm².\\n- Semicircle area: radius = 3 cm. Area = 0.5 x pi x 3² = 4.5pi ≈ 14.137 cm².\\n\\nTotal area = 18 + 14.137 = 32.14 cm².',
     graphData: {
@@ -2239,7 +2239,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(264\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(192\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: 2,
     hint: 'Divide the shape horizontally or vertically into rectangles using the heights of the steps.',
     solution: 'Split the shape into two sections:\\n- Left rectangle: width = 12 cm, height = 12 cm. Area = 12 x 12 = 144 cm².\\n- Right rectangle: width = 12 cm (24 - 12), height = 10 cm (12 - 2). Area = 12 x 10 = 120 cm².\\n\\nTotal area = 144 + 120 = 264 cm².',
     graphData: {
@@ -2308,7 +2308,7 @@ export const Y9_CH16_QUESTIONS = [
       { text: '\\(158.27\\text{ cm}^2\\)', imageUrl: '' },
       { text: '\\(119.00\\text{ cm}^2\\)', imageUrl: '' }
     ],
-    answer: '0',
+    answer: 2,
     hint: 'Sum the areas of the rectangle, the semicircle (diameter 10 cm, radius 5 cm), and the bottom triangle (base 14 cm, height 5 cm).',
     solution: 'Calculate each section:\\n- Rectangle Area: 14 cm x 6 cm = 84 cm².\\n- Semicircle Area: radius = 5 cm. Area = 0.5 x pi x 5² = 12.5pi ≈ 39.27 cm².\\n- Triangle Area: base = 14 cm, height = 5 cm. Area = 0.5 x 14 x 5 = 35 cm².\\n\\nTotal area = 84 + 39.27 + 35 = 158.27 cm².',
     graphData: {

@@ -721,7 +721,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 3
   },
   {
     "id": "y7-1c-q3a2",
@@ -757,7 +757,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": 0
   },
   {
     "id": "y7-1c-q3b1",
@@ -861,7 +861,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1c-q3b4",
@@ -893,7 +893,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1c-q3c1",
@@ -961,7 +961,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 3
   },
   {
     "id": "y7-1c-q3d1",
@@ -997,7 +997,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1c-q3d2",
@@ -1033,7 +1033,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1c-q3e1",
@@ -1105,7 +1105,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "3"
+    "answer": 0
   },
   {
     "id": "y7-1c-q3e3",
@@ -1137,7 +1137,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1c-q3f1",
@@ -1173,7 +1173,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": 3
   },
   {
     "id": "y7-1c-q3f2",
@@ -1205,7 +1205,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1c-q3f3",
@@ -1241,7 +1241,7 @@ export const Y7_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": 3
   },
   {
     "id": "y7-1c-q4",
@@ -1587,7 +1587,7 @@ export const Y7_CH1C_QUESTIONS = [
         "id": "y7-1c-q10c",
         "type": "multiple_choice",
         "question": "c) Find the missing digit in the bottom-right box [C].",
-        "a": "0",
+        "a": 1,
         "solutionSteps": [
           {
             "explanation": "Units column: \\\\( 4 + 5 + C = 17 \\implies C = 8 \\\\).",
@@ -1605,7 +1605,7 @@ export const Y7_CH1C_QUESTIONS = [
         "id": "y7-1c-q10d",
         "type": "multiple_choice",
         "question": "d) Find the missing digit in the sum's thousands place [D].",
-        "a": "2",
+        "a": 3,
         "solutionSteps": [
           {
             "explanation": "Hundreds: \\\\( 2 + 8 + 6 + 4 = 20 \\\\), which carries over 2 to the thousands place.",

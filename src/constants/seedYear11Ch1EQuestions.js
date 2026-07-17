@@ -3480,7 +3480,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Apply formula with $a=2, b=-3, c=-4$.",
     "solution": "\\( -3 \\)",
@@ -5952,7 +5952,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Use Pythagoras' theorem and the given difference.",
     "solution": "\\( -5 \\text{ and } 6 \\)",
@@ -6184,7 +6184,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Set up sum and product equations, then form a quadratic.",
     "solution": "\\( -5 \\text{ and } 7 \\)",
@@ -6237,7 +6237,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "Find the discriminant of the resulting quadratic.",
     "solution": "\\( -3 \\)",
@@ -8098,7 +8098,7 @@ export const Y11_CH1E_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "Set up equations from the conditions and solve the quadratic.",
     "solution": "\\( -10 \\text{ and } 6 \\)",

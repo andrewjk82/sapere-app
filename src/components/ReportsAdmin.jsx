@@ -15,6 +15,7 @@ import InteractiveFractionGrid from './challenge/InteractiveFractionGrid';
 import WorkedSolutionSteps from './challenge/WorkedSolutionSteps';
 import { parseSolutionSteps } from '../utils/solutionSteps';
 import { answersMatch } from '../utils/answerMatching';
+import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
 import TrafficMonitorPanel from './TrafficMonitorPanel';
 import ModeReviewPanel from './ModeReviewPanel';
 import {
@@ -1713,8 +1714,14 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                         const img = (opt && typeof opt === 'object')
                           ? (opt.imageUrl || opt.image || '')
                           : '';
-                        // Value-first match — never treat answer "3" as option index 3 (D).
-                        const isCorrect = isMcqOptionCorrect(opt, i, q.answer, options);
+                        // Bank/seed docs (isManual) store the answer as a 0-based
+                        // INDEX by contract — the local value-first resolver
+                        // misreads answer "2" as the option whose text is "2"
+                        // (e.g. options [3/4, 2/3, 1/2, 2] keyed 2 → 1/2, not 2).
+                        // Non-manual docs keep value-first resolution.
+                        const isCorrect = q.isManual
+                          ? i === resolveCorrectOptionIndex(q, options)
+                          : isMcqOptionCorrect(opt, i, q.answer, options);
                         const isChosen = isMcqOptionChosen(i, studentAnswer, options);
                         const isWrong = isChosen && !isCorrect;
                         return (

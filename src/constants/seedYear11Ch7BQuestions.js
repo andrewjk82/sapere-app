@@ -7,7 +7,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of a line parallel to a line with gradient \\(3\\).",
-    "a": "3",
+    "a": 2,
     "h": "Parallel lines have the same gradient.",
     "s": "Since parallel lines have the same gradient, a line parallel to a line with gradient \\(3\\) also has a gradient of \\(3\\).",
     "solutionSteps": [
@@ -92,7 +92,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to a line with gradient \\(3\\).",
-    "a": "2",
+    "a": 3,
     "h": "Perpendicular lines have gradients that multiply to \\(-1\\): \\(m_1 \\times m_2 = -1\\).",
     "s": "Using \\(m_2 = -\\frac{1}{m_1}\\), we get \\(m_2 = -\\frac{1}{3}\\).",
     "solutionSteps": [
@@ -122,7 +122,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to a line with gradient \\(\\frac{2}{5}\\).",
-    "a": "0",
+    "a": 1,
     "h": "Find the negative reciprocal of \\(\\frac{2}{5}\\).",
     "s": "The negative reciprocal of \\(\\frac{2}{5}\\) is \\(-\\frac{5}{2}\\).",
     "solutionSteps": [
@@ -177,7 +177,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(2, 5)\\) and \\(B(6, 1)\\).",
-    "a": "0",
+    "a": 3,
     "h": "Substitute the coordinates into \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "s": "\\(m = \\frac{1 - (5)}{6 - (2)} = -1\\).",
     "solutionSteps": [
@@ -207,7 +207,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(6, 1)\\).",
-    "a": "1",
+    "a": 0,
     "h": "Find the negative reciprocal of the gradient of \\(AB\\), which is \\(-1\\).",
     "s": "Perpendicular gradient is \\(-\\frac{1}{-1} = 1\\).",
     "solutionSteps": [
@@ -232,7 +232,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-3, -8)\\) and \\(B(2, 2)\\).",
-    "a": "2",
+    "a": 0,
     "h": "Substitute the coordinates into \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "s": "\\(m = \\frac{2 - (-8)}{2 - (-3)} = 2\\).",
     "solutionSteps": [
@@ -262,7 +262,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-3, -8)\\) and \\(B(2, 2)\\).",
-    "a": "2",
+    "a": 3,
     "h": "Find the negative reciprocal of the gradient of \\(AB\\), which is \\(2\\).",
     "s": "Perpendicular gradient is \\(-\\frac{1}{2} = -1/2\\).",
     "solutionSteps": [
@@ -317,7 +317,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-4, -3)\\) and \\(B(4, 1)\\).",
-    "a": "0",
+    "a": 2,
     "h": "Find the negative reciprocal of the gradient of \\(AB\\), which is \\(1/2\\).",
     "s": "Perpendicular gradient is \\(-\\frac{1}{1/2} = -2\\).",
     "solutionSteps": [
@@ -342,7 +342,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(2, 5)\\) and \\(B(4, 4)\\).",
-    "a": "0",
+    "a": 3,
     "h": "Substitute the coordinates into \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "s": "\\(m = \\frac{4 - (5)}{4 - (2)} = -1/2\\).",
     "solutionSteps": [
@@ -372,7 +372,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(4, 4)\\).",
-    "a": "2",
+    "a": 0,
     "h": "Find the negative reciprocal of the gradient of \\(AB\\), which is \\(-1/2\\).",
     "s": "Perpendicular gradient is \\(-\\frac{1}{-1/2} = 2\\).",
     "solutionSteps": [
@@ -397,7 +397,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-2, -3)\\) and \\(B(2, 5)\\).",
-    "a": "2",
+    "a": 1,
     "h": "Substitute the coordinates into \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "s": "\\(m = \\frac{5 - (-3)}{2 - (-2)} = 2\\).",
     "solutionSteps": [
@@ -452,7 +452,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\frac{y_2 - y_1}{x_2 - x_1}\\) to find the gradient of the line segment \\(AB\\) for \\(A(-4, 6)\\) and \\(B(16, -9)\\).",
-    "a": "1",
+    "a": 3,
     "h": "Substitute the coordinates into \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "s": "\\(m = \\frac{-9 - (6)}{16 - (-4)} = -3/4\\).",
     "solutionSteps": [
@@ -482,7 +482,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-4, 6)\\) and \\(B(16, -9)\\).",
-    "a": "0",
+    "a": 3,
     "h": "Find the negative reciprocal of the gradient of \\(AB\\), which is \\(-3/4\\).",
     "s": "Perpendicular gradient is \\(-\\frac{1}{-3/4} = 4/3\\).",
     "solutionSteps": [
@@ -930,7 +930,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of inclination \\(45^{\\circ}\\) (correct to two decimal places where necessary).",
-    "a": "1",
+    "a": 0,
     "h": "Find \\(\\tan 45^{\\circ}\\).",
     "s": "\\(m = \\tan 45^{\\circ} \\approx 1\\).",
     "solutionSteps": [
@@ -990,7 +990,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(\\sqrt{3}\\).",
-    "a": "0",
+    "a": 1,
     "h": "Solve \\(\\alpha = \\tan^{-1}(\\sqrt{3})\\). Recall that the inclination angle satisfies \\(0^{\\circ} \\le \\alpha < 180^{\\circ}\\).",
     "s": "\\(\\alpha = \\tan^{-1}(\\sqrt{3}) \\approx 60°\\).",
     "solutionSteps": [
@@ -1020,7 +1020,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(-1\\).",
-    "a": "0",
+    "a": 1,
     "h": "Solve \\(\\alpha = \\tan^{-1}(-1)\\). Recall that the inclination angle satisfies \\(0^{\\circ} \\le \\alpha < 180^{\\circ}\\).",
     "s": "\\(\\alpha = \\tan^{-1}(-1) \\approx 135°\\).",
     "solutionSteps": [
@@ -1050,7 +1050,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(2\\).",
-    "a": "0",
+    "a": 1,
     "h": "Solve \\(\\alpha = \\tan^{-1}(2)\\). Recall that the inclination angle satisfies \\(0^{\\circ} \\le \\alpha < 180^{\\circ}\\).",
     "s": "\\(\\alpha = \\tan^{-1}(2) \\approx 63°\\).",
     "solutionSteps": [
@@ -1080,7 +1080,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree where necessary) of a line with gradient \\(1\\).",
-    "a": "0",
+    "a": 2,
     "h": "Solve \\(\\alpha = \\tan^{-1}(1)\\). Recall that the inclination angle satisfies \\(0^{\\circ} \\le \\alpha < 180^{\\circ}\\).",
     "s": "\\(\\alpha = \\tan^{-1}(1) \\approx 45°\\).",
     "solutionSteps": [
@@ -1562,7 +1562,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Calculate the area of the right-angled triangle with vertices P(3, -2), Q(4, 2), and R(0, 3).",
-    "a": "0",
+    "a": 3,
     "h": "Use the formula \\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}\\) using the enclosing side lengths.",
     "s": "\\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = 8.5\\).",
     "solutionSteps": [
@@ -1704,7 +1704,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The line segment \\(PQ\\) has gradient \\(-2\\). A second line passes through \\(A(-3, 5)\\) and \\(B(2, k)\\). Find \\(k\\) if \\(AB\\) is parallel to \\(PQ\\).",
-    "a": "0",
+    "a": 1,
     "h": "Set the gradient of AB equal to \\(-2\\) and solve for \\(k\\).",
     "s": "Gradient of \\(AB = \\frac{k-5}{2 - (-3)} = \\frac{k-5}{5}\\). Since \\(AB \\parallel PQ\\), \\(\\frac{k-5}{5} = -2 \\implies k - 5 = -10 \\implies k = -5\\).",
     "solutionSteps": [
@@ -1734,7 +1734,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The line segment \\(PQ\\) has gradient \\(-2\\). A second line passes through \\(A(-3, 5)\\) and \\(B(2, k)\\). Find \\(k\\) if \\(AB\\) is perpendicular to \\(PQ\\).",
-    "a": "0",
+    "a": 3,
     "h": "Set the gradient of AB equal to the negative reciprocal of \\(-2\\) (which is \\(\\frac{1}{2}\\)) and solve for \\(k\\).",
     "s": "Gradient of \\(AB = \\frac{k-5}{5}\\). Since \\(AB \\perp PQ\\), \\(\\frac{k-5}{5} = \\frac{1}{2} \\implies 2k - 10 = 5 \\implies 2k = 15 \\implies k = 7.5\\).",
     "solutionSteps": [
@@ -2185,7 +2185,7 @@ export const Y11_CH7B_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Given the points \\(X(-2, 0)\\), \\(Y(2, a)\\), and \\(Z(a, 3)\\), find \\(a\\) if \\(\\angle YXZ = 90^{\\circ}\\) (enter as a fraction, e.g. -8/7).",
-    "a": "0",
+    "a": 2,
     "h": "Since angle YXZ is 90 degrees, segment XY is perpendicular to XZ. Set the product of their gradients to -1 and solve for a.",
     "s": "\\(m_{XY} = \\frac{a - 0}{2 - (-2)} = \\frac{a}{4}\\).\n\\(m_{XZ} = \\frac{3 - 0}{a - (-2)} = \\frac{3}{a+2}\\).\nPerpendicular condition: \\(\\frac{a}{4} \\times \\frac{3}{a+2} = -1 \\implies 3a = -4(a+2) \\implies 3a = -4a - 8 \\implies 7a = -8 \\implies a = -\\frac{8}{7}\\).",
     "solutionSteps": [

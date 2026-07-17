@@ -132,7 +132,7 @@ export const Y7_CH1I_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": 3
   },
   {
     "id": "y7-1i-q2a",
@@ -377,7 +377,7 @@ export const Y7_CH1I_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1"
+    "answer": 2
   },
   {
     "id": "y7-1i-q3",
@@ -863,7 +863,7 @@ export const Y7_CH1I_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1i-q9b",
@@ -1133,7 +1133,7 @@ export const Y7_CH1I_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2"
+    "answer": 3
   },
   {
     "id": "y7-1i-q10c",

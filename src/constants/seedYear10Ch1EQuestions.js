@@ -71,7 +71,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assumes a depreciation rate of \\(25\\%\\) p.a. What is the percentage decrease in value over the six-year period? Correct to two decimal places. (Enter value only, e.g. 82.20%)",
-    "a": "0",
+    "a": 3,
     "solutionSteps": [
       {
         "explanation": "Use the compound depreciation formula \\(A = P(1-r)^n\\).",
@@ -586,7 +586,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at \\(20\\%\\) p.a. What is the total percentage reduction in value on the car over the 10-year period? Correct to two decimal places. (Enter value only, e.g. 89.26%)",
-    "a": "0",
+    "a": 2,
     "solutionSteps": [
       {
         "explanation": "Use back-calculation by dividing the current value by the depreciation factors.",
@@ -816,7 +816,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(12\\%\\) p.a. for 2 years.",
-    "a": "0",
+    "a": 1,
     "solutionSteps": [
       {
         "explanation": "Compute the compound depreciation multiplier and convert to a percentage reduction.",
@@ -838,7 +838,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(8\\%\\) p.a. for 3 years.",
-    "a": "0",
+    "a": 2,
     "solutionSteps": [
       {
         "explanation": "Compute the compound depreciation multiplier and convert to a percentage reduction.",
@@ -860,7 +860,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(5\\%\\) p.a. for 5 years.",
-    "a": "0",
+    "a": 1,
     "solutionSteps": [
       {
         "explanation": "Compute the compound depreciation multiplier and convert to a percentage reduction.",
@@ -882,7 +882,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(4\\%\\) p.a. for 6 years.",
-    "a": "0",
+    "a": 1,
     "solutionSteps": [
       {
         "explanation": "Compute the compound depreciation multiplier and convert to a percentage reduction.",
@@ -926,7 +926,7 @@ export const Y10_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an investment with a value that decreased at \\(1.8\\%\\) p.a. for 15 years.",
-    "a": "0",
+    "a": 2,
     "solutionSteps": [
       {
         "explanation": "Compute the compound depreciation multiplier and convert to a percentage reduction.",
@@ -1067,7 +1067,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 181000 \\) dollars and depreciates to a salvage value of \\( 55695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(22.1\\%\\)",
       "\\(18.9\\%\\)",
@@ -1291,7 +1291,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 22000 \\) liters of a chemical solution. Every year, \\( 6160 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(9.03\\%\\)",
       "\\(10.03\\%\\)",
@@ -1387,7 +1387,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 189000 \\) dollars and depreciates to a salvage value of \\( 79042 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(16.8\\%\\)",
       "\\(14.4\\%\\)",
@@ -2027,7 +2027,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 204000 \\) dollars and depreciates to a salvage value of \\( 66847 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(18.0\\%\\)",
       "\\(22.0\\%\\)",
@@ -2347,7 +2347,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 211000 \\) dollars and depreciates to a salvage value of \\( 93622 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(13.5\\%\\)",
       "\\(15.0\\%\\)",
@@ -2571,7 +2571,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 31000 \\) liters of a chemical solution. Every year, \\( 8680 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(9.03\\%\\)",
       "\\(10.53\\%\\)",
@@ -2891,7 +2891,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 19000 \\) liters of a chemical solution. Every year, \\( 5320 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(9.03\\%\\)",
       "\\(11.03\\%\\)",
@@ -2987,7 +2987,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 226000 \\) dollars and depreciates to a salvage value of \\( 78801 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(17.1\\%\\)",
       "\\(20.9\\%\\)",
@@ -3211,7 +3211,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 26000 \\) liters of a chemical solution. Every year, \\( 7280 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(9.03\\%\\)",
       "\\(11.03\\%\\)",
@@ -3307,7 +3307,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 233000 \\) dollars and depreciates to a salvage value of \\( 71695 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(23.1\\%\\)",
       "\\(18.9\\%\\)",
@@ -3531,7 +3531,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 33000 \\) liters of a chemical solution. Every year, \\( 9240 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(9.03\\%\\)",
       "\\(10.03\\%\\)",
@@ -3627,7 +3627,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "A commercial construction excavator is purchased for \\( 241000 \\) dollars and depreciates to a salvage value of \\( 100789 \\) dollars after \\( 5 \\) years of continuous operation. Assuming reducing balance depreciation compounded annually, find the annual depreciation rate, correct to one decimal place. (e.g. 14.2%)",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(17.6\\%\\)",
       "\\(14.4\\%\\)",
@@ -3851,7 +3851,7 @@ export const Y10_CH1E_QUESTIONS = [
     "timeLimit": 120,
     "t": "Compound depreciation",
     "question": "An industrial chemical reactor contains \\( 21000 \\) liters of a chemical solution. Every year, \\( 5880 \\) liters of the solution are drawn off and replaced with pure water. Find the remaining percentage concentration of the original chemical in the mixture after \\( 7 \\) cycles, correct to two decimal places. (e.g. 45.12%)",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(11.03\\%\\)",
       "\\(10.03\\%\\)",

@@ -353,7 +353,7 @@ export const Y9_CH1G_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Expand:\\n\\((5x-3)(5x+3)\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(25x^2+9\\)",
       "\\(5x^2-9\\)",

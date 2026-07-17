@@ -81,7 +81,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(7m - 4n\\) when \\(m = 2\\) and \\(n = -5\\).",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(-34\\)",
       "\\(34\\)",
@@ -165,7 +165,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(4x + 9y\\) when \\(x = 6\\) and \\(y = 5\\).",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(-69\\)",
       "\\(76\\)",
@@ -193,7 +193,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(4x + 9y\\) when \\(x = -6\\) and \\(y = 5\\).",
-    "a": "2",
+    "a": 3,
     "opts": [
       "\\(19\\)",
       "\\(23\\)",
@@ -221,7 +221,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(4x + 9y\\) when \\(x = 6\\) and \\(y = -5\\).",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(21\\)",
       "\\(-21\\)",
@@ -277,7 +277,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(p - 2q\\) when \\(p = 7\\) and \\(q = 2\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(4\\)",
       "\\(-3\\)",
@@ -305,7 +305,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(p - 2q\\) when \\(p = 7\\) and \\(q = -2\\).",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(-11\\)",
       "\\(10\\)",
@@ -333,7 +333,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(p - 2q\\) when \\(p = -7\\) and \\(q = 2\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(-10\\)",
       "\\(11\\)",
@@ -361,7 +361,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(p - 2q\\) when \\(p = -7\\) and \\(q = -2\\).",
-    "a": "2",
+    "a": 3,
     "opts": [
       "\\(-2\\)",
       "\\(-4\\)",
@@ -417,7 +417,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(a + 2b - 3c\\) when \\(a = 3\\), \\(b = -5\\) and \\(c = 2\\).",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(13\\)",
       "\\(-12\\)",
@@ -613,7 +613,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(2x - 3y\\) when \\(x = \\frac{2}{5}\\) and \\(y = -\\frac{1}{4}\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(\\frac{51}{20}\\)",
       "\\(-\\frac{31}{20}\\)",
@@ -641,7 +641,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Evaluate \\(2x - 3y\\) when \\(x = -\\frac{2}{3}\\) and \\(y = -\\frac{3}{4}\\).",
-    "a": "1",
+    "a": 2,
     "opts": [
       "\\(\\frac{23}{12}\\)",
       "\\(-\\frac{11}{12}\\)",
@@ -697,7 +697,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(a + 2b - 3c\\) when \\(a = 1.3\\), \\(b = -0.5\\) and \\(c = 1.2\\).",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(3.3\\)",
       "\\(-3.6\\)",
@@ -809,7 +809,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(p^2 - 2q\\) when \\(p = 7\\) and \\(q = -2\\).",
-    "a": "0",
+    "a": 3,
     "opts": [
       "\\(-53\\)",
       "\\(58\\)",
@@ -837,7 +837,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(p^2 - 2q\\) when \\(p = -7\\) and \\(q = 2\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(41\\)",
       "\\(-45\\)",
@@ -893,7 +893,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(p^2 - 2q\\) when \\(p = -\\frac{1}{3}\\) and \\(q = \\frac{5}{6}\\).",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(\\frac{14}{9}\\)",
       "\\(-\\frac{14}{9}\\)",
@@ -1033,7 +1033,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(2m(m - 3n)\\) when \\(m = -3\\) and \\(n = -2\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(-16\\)",
       "\\(18\\)",
@@ -1089,7 +1089,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(2m(m - 3n)\\) when \\(m = \\frac{1}{3}\\) and \\(n = \\frac{1}{2}\\).",
-    "a": "0",
+    "a": 2,
     "opts": [
       "\\(\\frac{7}{9}\\)",
       "\\(\\frac{2}{9}\\)",
@@ -1121,7 +1121,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(a(2b - c)\\) when \\(a = 3\\), \\(b = 2\\) and \\(c = 1\\).",
-    "a": "2",
+    "a": 3,
     "opts": [
       "\\(8\\)",
       "\\(10\\)",
@@ -1149,7 +1149,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(a(2b - c)\\) when \\(a = -2\\), \\(b = 3\\) and \\(c = -1\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(-13\\)",
       "\\(14\\)",
@@ -1345,7 +1345,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(\\frac{x+y}{3}\\) when \\(x = 6\\) and \\(y = -5\\).",
-    "a": "1",
+    "a": 2,
     "opts": [
       "\\(\\frac{4}{3}\\)",
       "\\(-\\frac{1}{3}\\)",
@@ -1369,7 +1369,7 @@ export const Y9_CH1_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Evaluate \\(\\frac{x+y}{3}\\) when \\(x = -6\\) and \\(y = -5\\).",
-    "a": "0",
+    "a": 1,
     "opts": [
       "\\(\\frac{11}{3}\\)",
       "\\(-\\frac{11}{3}\\)",

@@ -1349,7 +1349,7 @@ export const Y11_CH1F_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "Add $(b/2)^2 = 9$ to both sides.",
     "solution": "\\(x^2 + 6x + 9 = 14 \\Rightarrow (x+3)^2 = 14 \\Rightarrow x = -3 \\pm \\sqrt{14}\\)",

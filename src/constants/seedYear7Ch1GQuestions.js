@@ -1662,7 +1662,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1g-h16",
@@ -2102,7 +2102,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1g-h26",
@@ -2322,7 +2322,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1g-h31",
@@ -2542,7 +2542,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 3
   },
   {
     "id": "y7-1g-h36",
@@ -2982,7 +2982,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1g-h46",
@@ -3422,7 +3422,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 3
   },
   {
     "id": "y7-1g-h56",
@@ -3642,7 +3642,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1g-h61",
@@ -3862,7 +3862,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1g-h66",
@@ -4082,7 +4082,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1g-h71",
@@ -4742,7 +4742,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 1
   },
   {
     "id": "y7-1g-h86",
@@ -4962,7 +4962,7 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1g-h91",
@@ -5402,6 +5402,6 @@ export const Y7_CH1G_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   }
 ];

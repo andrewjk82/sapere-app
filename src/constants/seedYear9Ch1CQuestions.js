@@ -2547,7 +2547,7 @@ export const Y9_CH1C_QUESTIONS = [
                 "imageUrl": ""
             }
         ],
-        "answer": "1",
+        "answer": 2,
         "hint": "Set up the equation: \\\\(4m \\\times X = 16mn\\\\).",
         "solution": "4n",
         "solutionSteps": [

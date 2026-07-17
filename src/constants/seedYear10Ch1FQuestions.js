@@ -62,7 +62,7 @@ export const Y10_CH1F_QUESTIONS = [
     "timeLimit": 30,
     "t": "Revision",
     "question": "The sum of $9000 is borrowed for $5$ years and $2700 is paid in interest. Calculate the (per annum) rate of simple interest charged, as a percentage.",
-    "a": "0",
+    "a": 2,
     "solutionSteps": [
       {
         "explanation": "Use the simple interest formula \\(I = PRN\\).",

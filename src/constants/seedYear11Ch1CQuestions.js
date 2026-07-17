@@ -119,7 +119,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 1,
     "blanks": [],
     "hint": "Recognize the perfect square denominator.",
     "solution": "\\(\\frac{x-3}{(x-3)^2} = \\frac{1}{x-3}\\)",
@@ -334,7 +334,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{1}{12} \\times \\frac{12}{13} = \\frac{1}{13}",
@@ -424,7 +424,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "y",
@@ -562,7 +562,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "-\\frac{11}{10p}",
@@ -787,7 +787,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "Find common denominator (12).",
     "solution": "\\(\\frac{3a}{12} - \\frac{a}{12} = \\frac{2a}{12} = \\frac{a}{6}\\)",
@@ -1055,7 +1055,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{xy}{x+y}",
@@ -1141,7 +1141,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{u^2+v^2}{uv} \\times \\frac{uv}{u^2-v^2} = \\frac{u^2+v^2}{u^2-v^2}",
@@ -1184,7 +1184,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 3,
     "blanks": [],
     "hint": "Cancel out common factors.",
     "solution": "\\(\\frac{2a \\times 10b}{5b \\times a} = \\frac{20ab}{5ab} = 4\\)",
@@ -1351,7 +1351,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "Factor the numerator as a difference of cubes and the denominator as a difference of squares.",
     "solution": "\\frac{x^2 + 1x + 1}{x + 1}",
@@ -1581,7 +1581,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{2}{3} \\times \\frac{3}{4} = \\frac{2}{4} = \\frac{1}{2}",
@@ -1828,7 +1828,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 1,
     "blanks": [],
     "hint": "Multiply by reciprocal.",
     "solution": "\\(\\frac{3x}{4y} \\times \\frac{8y}{x} = \\frac{24xy}{4xy} = 6\\)",
@@ -2009,7 +2009,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 4,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{-3ab}{40} = -\\frac{3ab}{40}",
@@ -2553,7 +2553,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{a^2-1}{a} \\times \\frac{a}{a^2+1} = \\frac{a^2-1}{a^2+1}",
@@ -3699,7 +3699,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{9 \\times 14}{7 \\times 3} = 3 \\times 2 = 6",
@@ -3742,7 +3742,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 1,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "x",
@@ -4493,7 +4493,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 1,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "\\frac{1}{y} \\times \\frac{y}{y+3} = \\frac{1}{y+3}",
@@ -4670,7 +4670,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Simplify the algebraic fraction by factoring or finding a common denominator.",
     "solution": "-(x-4) \\text{ or } 4-x",
@@ -5125,7 +5125,7 @@ export const Y11_CH1C_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "Common denominator 6y.",
     "solution": "\\(\\frac{8x}{6y} + \\frac{3x}{6y} = \\frac{11x}{6y}\\)",

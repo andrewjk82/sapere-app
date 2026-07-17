@@ -4847,7 +4847,7 @@ export const Y7_CH1L_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1l-h55",

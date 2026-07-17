@@ -136,7 +136,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the y-intercept of the line \\(2x + 5y = 10\\).",
-    "a": "2",
+    "a": 1,
     "h": "To find the y-intercept, substitute x = 0 into the equation and solve for y.",
     "s": "Set \\(x = 0\\): 2(0) + 5y = 10 \\implies 5y = 10 \\implies y = 2",
     "solutionSteps": [
@@ -166,7 +166,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the x-intercept of the line \\(y = 3x - 9\\).",
-    "a": "3",
+    "a": 0,
     "h": "To find the x-intercept, substitute y = 0 into the equation and solve for x.",
     "s": "Set \\(y = 0\\): 0 = 3x - 9 \\implies 3x = 9 \\implies x = 3",
     "solutionSteps": [
@@ -256,7 +256,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the y-intercept of the line \\(x - 3y = 6\\).",
-    "a": "0",
+    "a": 1,
     "h": "To find the y-intercept, substitute x = 0 into the equation and solve for y.",
     "s": "Set \\(x = 0\\): 0 - 3y = 6 \\implies -3y = 6 \\implies y = -2",
     "solutionSteps": [
@@ -315,7 +315,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((3, 4)\\).",
-    "a": "0",
+    "a": 2,
     "h": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
     "s": "Since the x-coordinate of the point is \\(3\\), the equation of the vertical line is \\(x = 3\\).",
     "solutionSteps": [
@@ -375,7 +375,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((0, -2)\\).",
-    "a": "0",
+    "a": 3,
     "h": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
     "s": "Since the x-coordinate of the point is \\(0\\), the equation of the vertical line is \\(x = 0\\).",
     "solutionSteps": [
@@ -435,7 +435,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the vertical line through the point \\((4, 0)\\).",
-    "a": "0",
+    "a": 2,
     "h": "A vertical line has the equation x = c, where c is the constant x-coordinate of all points on the line.",
     "s": "Since the x-coordinate of the point is \\(4\\), the equation of the vertical line is \\(x = 4\\).",
     "solutionSteps": [
@@ -465,7 +465,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the equation of the horizontal line through the point \\((4, 0)\\).",
-    "a": "1",
+    "a": 3,
     "h": "A horizontal line has the equation y = c, where c is the constant y-coordinate of all points on the line.",
     "s": "Since the y-coordinate of the point is \\(0\\), the equation of the horizontal line is \\(y = 0\\).",
     "solutionSteps": [
@@ -495,7 +495,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = 3x - 5\\).",
-    "a": "3",
+    "a": 0,
     "h": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
     "s": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(3\\).",
     "solutionSteps": [
@@ -570,7 +570,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the y-intercept of the line \\(y = \\frac{1}{4}x - 2\\).",
-    "a": "1",
+    "a": 2,
     "h": "Compare the equation with the gradient-intercept form y = mx + b, where b is the y-intercept.",
     "s": "The constant term in the equation \\(y = mx + b\\) is the y-intercept, which is \\(-2\\).",
     "solutionSteps": [
@@ -595,7 +595,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = 5 - x\\).",
-    "a": "0",
+    "a": 1,
     "h": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
     "s": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(-1\\).",
     "solutionSteps": [
@@ -645,7 +645,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient of the line \\(y = -\\frac{3}{8}x\\).",
-    "a": "0",
+    "a": 2,
     "h": "Compare the equation with the gradient-intercept form y = mx + b, where m is the gradient.",
     "s": "The equation is in the form \\(y = mx + b\\). The coefficient of x is the gradient, which is \\(-3/8\\).",
     "solutionSteps": [
@@ -845,7 +845,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-intercept \\(-5\\) and gradient \\(0\\).",
-    "a": "0",
+    "a": 2,
     "h": "Substitute b = -5 and m equal to the given gradient into the equation y = mx + b.",
     "s": "Substituting \\(m = 0\\) and \\(b = -5\\) into \\(y = mx + b\\) gives \\(y=-5\\).",
     "solutionSteps": [
@@ -1065,7 +1065,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its gradient \\(m\\).",
-    "a": "1",
+    "a": 2,
     "h": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
     "s": "Rearranging gives y = -x + 3. The gradient is \\(-1\\).",
     "solutionSteps": [
@@ -1095,7 +1095,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "a": "3",
+    "a": 1,
     "h": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
     "s": "Rearranging gives y = -x + 3. The y-intercept is \\(3\\).",
     "solutionSteps": [
@@ -1155,7 +1155,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Solve the equation \\(x - 2y = 0\\) for \\(y\\), and hence write down its y-intercept \\(b\\).",
-    "a": "0",
+    "a": 1,
     "h": "Rearrange the equation to make y the subject, i.e., y = mx + b.",
     "s": "Rearranging gives 2y = x \\implies y = \\frac{1}{2}x. The y-intercept is \\(0\\).",
     "solutionSteps": [
@@ -1245,7 +1245,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = x + 5\\).",
-    "a": "1",
+    "a": 3,
     "h": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
     "s": "The gradient is \\(1\\).",
     "solutionSteps": [
@@ -1310,7 +1310,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = -x - 12\\).",
-    "a": "0",
+    "a": 3,
     "h": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
     "s": "The gradient is \\(-1\\).",
     "solutionSteps": [
@@ -1340,7 +1340,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = -x - 12\\).",
-    "a": "0",
+    "a": 3,
     "h": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
     "s": "Since \\(m = -1\\), we solve \\(\\tan \\alpha = -1\\) which gives \\(\\alpha \\approx 135°\\).",
     "solutionSteps": [
@@ -1375,7 +1375,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = 3x\\).",
-    "a": "3",
+    "a": 1,
     "h": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
     "s": "The gradient is \\(3\\).",
     "solutionSteps": [
@@ -1405,7 +1405,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclination \\(\\alpha\\) (correct to the nearest degree) of the line \\(y = 3x\\).",
-    "a": "0",
+    "a": 3,
     "h": "Find the gradient, then solve tan(alpha) = m for alpha where 0 <= alpha < 180 degrees.",
     "s": "Since \\(m = 3\\), we solve \\(\\tan \\alpha = 3\\) which gives \\(\\alpha \\approx 72°\\).",
     "solutionSteps": [
@@ -1440,7 +1440,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Write down the gradient \\(m\\) of the line \\(y = -\\frac{1}{2}x\\).",
-    "a": "0",
+    "a": 2,
     "h": "Rearrange the equation into y = mx + b if necessary and read the coefficient of x.",
     "s": "The gradient is \\(-1/2\\).",
     "solutionSteps": [
@@ -1592,7 +1592,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(0, 3)\\) and \\(B(3, 9)\\).",
-    "a": "2",
+    "a": 0,
     "h": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
     "s": "The gradient \\(m = \\frac{9 - 3}{3 - 0} = 2\\).",
     "solutionSteps": [
@@ -1662,7 +1662,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(0, 0)\\) and \\(B(1, -2)\\).",
-    "a": "0",
+    "a": 2,
     "h": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
     "s": "The gradient \\(m = \\frac{-2 - 0}{1 - 0} = -2\\).",
     "solutionSteps": [
@@ -1727,7 +1727,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient of the line through the pair of points \\(A(-6, -1)\\) and \\(B(0, -3)\\).",
-    "a": "0",
+    "a": 3,
     "h": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
     "s": "The gradient \\(m = \\frac{-3 - -1}{0 - -6} = -1/3\\).",
     "solutionSteps": [
@@ -2489,7 +2489,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is parallel to \\(\\ell_2\\) (enter as a fraction or decimal, e.g. -1/2).",
-    "a": "0",
+    "a": 3,
     "h": "Find gradients m1 and m2 of the two lines, equate them, and solve for k.",
     "s": "\\(m_1 = 2\\), \\(m_2 = -\\frac{1}{k}\\). Since they are parallel, \\(2 = -\\frac{1}{k} \\implies k = -\\frac{1}{2}\\).",
     "solutionSteps": [
@@ -2524,7 +2524,7 @@ export const Y11_CH7C_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\). Find the value of \\(k\\) if \\(\\ell_1\\) is perpendicular to \\(\\ell_2\\).",
-    "a": "2",
+    "a": 0,
     "h": "Find gradients m1 and m2, then solve the perpendicular condition m1 * m2 = -1.",
     "s": "\\(m_1 = 2\\), \\(m_2 = -\\frac{1}{k}\\). Since they are perpendicular, \\(2 \\times \\left(-\\frac{1}{k}\\right) = -1 \\implies -\\frac{2}{k} = -1 \\implies k = 2\\).",
     "solutionSteps": [

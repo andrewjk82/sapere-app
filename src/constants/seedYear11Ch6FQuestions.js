@@ -835,7 +835,7 @@ export const Y11_CH6F_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\tan \\theta}{\\sec \\theta}\\).",
-    "a": "sin \\theta",
+    "a": "\\sin \\theta",
     "h": "Convert both terms to sines and cosines.",
     "s": "We have \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\) and \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\). Thus, \\(\\frac{\\tan \\theta}{\\sec \\theta} = \\frac{\\sin \\theta / \\cos \\theta}{1/\\cos \\theta} = \\sin \\theta\\).",
     "solutionSteps": [

@@ -932,7 +932,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "",
     "solution": "(a - b)(x - y)",
@@ -973,7 +973,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": 3,
     "blanks": [],
     "hint": "",
     "solution": "x(4 - x)(4 + x)",
@@ -1935,7 +1935,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 1,
     "blanks": [],
     "hint": "",
     "solution": "p(x - y)",
@@ -2384,7 +2384,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 3,
     "blanks": [],
     "hint": "",
     "solution": "y(y - 1)(y + 1)",
@@ -4117,7 +4117,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "",
     "solution": "y^2(9 - y)",
@@ -4421,7 +4421,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "",
     "solution": "u(u - 1)(u - 5)",
@@ -4536,7 +4536,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "2",
+    "answer": 3,
     "blanks": [],
     "hint": "",
     "solution": "y(y - 36)",
@@ -5355,7 +5355,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "",
     "solution": "(6 - p)(x - y)",
@@ -6033,7 +6033,7 @@ export const Y11_CH1B_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 3,
     "blanks": [],
     "hint": "Factor by grouping in pairs.",
     "solution": "\\(x(y+2) + 3(y+2) = (x+3)(y+2)\\)",

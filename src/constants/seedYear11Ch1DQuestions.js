@@ -3212,7 +3212,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0",
+    "answer": 2,
     "blanks": [],
     "hint": "Find numbers that multiply to -15 and add to 2.",
     "solution": "\\((x+5)(x-3) = 0 \\Rightarrow x=-5, 3\\)",
@@ -5633,7 +5633,7 @@ export const Y11_CH1D_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "1",
+    "answer": 2,
     "blanks": [],
     "hint": "Factor out x.",
     "solution": "\\(x(x+9) = 0 \\Rightarrow x=0, -9\\)",

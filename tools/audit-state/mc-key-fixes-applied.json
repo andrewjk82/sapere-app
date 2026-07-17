@@ -1,0 +1,1138 @@
+{
+  "appliedIds": [
+    {
+      "id": "y9-1a-q3b",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(34\\)"
+    },
+    {
+      "id": "y9-1a-q4a",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(69\\)"
+    },
+    {
+      "id": "y9-1a-q4b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(21\\)"
+    },
+    {
+      "id": "y9-1a-q4c",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(-21\\)"
+    },
+    {
+      "id": "y9-1a-q5a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(3\\)"
+    },
+    {
+      "id": "y9-1a-q5b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(11\\)"
+    },
+    {
+      "id": "y9-1a-q5c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-11\\)"
+    },
+    {
+      "id": "y9-1a-q5d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-3\\)"
+    },
+    {
+      "id": "y9-1a-q6b",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(-13\\)"
+    },
+    {
+      "id": "y9-1a-q7c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(\\frac{31}{20}\\)"
+    },
+    {
+      "id": "y9-1a-q7d",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(\\frac{11}{12}\\)"
+    },
+    {
+      "id": "y9-1a-q8b",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(-3.3\\)"
+    },
+    {
+      "id": "y9-1a-q9b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(53\\)"
+    },
+    {
+      "id": "y9-1a-q9c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(45\\)"
+    },
+    {
+      "id": "y9-1a-q9e",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(-\\frac{14}{9}\\)"
+    },
+    {
+      "id": "y9-1a-q10d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-18\\)"
+    },
+    {
+      "id": "y9-1a-q10f",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(-\\frac{7}{9}\\)"
+    },
+    {
+      "id": "y9-1a-q11a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(9\\)"
+    },
+    {
+      "id": "y9-1a-q11b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-14\\)"
+    },
+    {
+      "id": "y9-1a-q12c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(\\frac{1}{3}\\)"
+    },
+    {
+      "id": "y9-1a-q12d",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(-\\frac{11}{3}\\)"
+    },
+    {
+      "id": "y9-1c-q5b-1",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\\\(4n\\\\)"
+    },
+    {
+      "id": "y9-1d-q1a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(6x+24\\)"
+    },
+    {
+      "id": "y9-1d-q1b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(3b+24\\)"
+    },
+    {
+      "id": "y9-1d-q1c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(5a+25\\)"
+    },
+    {
+      "id": "y9-1d-q4f",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-\\frac{a}{5}+\\frac{1}{3}\\)"
+    },
+    {
+      "id": "y9-1d-q5b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(y^2+6y\\)"
+    },
+    {
+      "id": "y9-1d-q5f",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(3n^2+8n\\)"
+    },
+    {
+      "id": "y9-1d-q6a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(6x^2+2xy\\)"
+    },
+    {
+      "id": "y9-1d-q7b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(6y+6\\)"
+    },
+    {
+      "id": "y9-1d-q7g",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(15x^2+12x\\)"
+    },
+    {
+      "id": "y9-1d-q8i",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(2a-28\\)"
+    },
+    {
+      "id": "y9-1d-q8j",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(b-15\\)"
+    },
+    {
+      "id": "y9-1d-q8q",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(12xy\\)"
+    },
+    {
+      "id": "y9-1d-q10g",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-1\\)"
+    },
+    {
+      "id": "y9-1e-q4n",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(-9p^2-6pq+8q^2\\)"
+    },
+    {
+      "id": "y9-1e-q4o",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-9p^2+18pq-8q^2\\)"
+    },
+    {
+      "id": "y9-1e-q8i",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(36x^2+12x+1\\)"
+    },
+    {
+      "id": "y9-1f-q4h",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(25y^2-60y+36\\)"
+    },
+    {
+      "id": "y9-1g-q2d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(25x^2-9\\)"
+    },
+    {
+      "id": "y11a-7b-q1ai",
+      "suggestedIndex": 2,
+      "suggestedOption": "3"
+    },
+    {
+      "id": "y11a-7b-q1bi",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1/3"
+    },
+    {
+      "id": "y11a-7b-q1bii",
+      "suggestedIndex": 1,
+      "suggestedOption": "-5/2"
+    },
+    {
+      "id": "y11a-7b-q2a-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1"
+    },
+    {
+      "id": "y11a-7b-q2a-perp",
+      "suggestedIndex": 0,
+      "suggestedOption": "1"
+    },
+    {
+      "id": "y11a-7b-q2b-grad",
+      "suggestedIndex": 0,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7b-q2b-perp",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1/2"
+    },
+    {
+      "id": "y11a-7b-q2c-perp",
+      "suggestedIndex": 2,
+      "suggestedOption": "-2"
+    },
+    {
+      "id": "y11a-7b-q2d-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1/2"
+    },
+    {
+      "id": "y11a-7b-q2d-perp",
+      "suggestedIndex": 0,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7b-q2e-grad",
+      "suggestedIndex": 1,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7b-q2f-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "-3/4"
+    },
+    {
+      "id": "y11a-7b-q2f-perp",
+      "suggestedIndex": 3,
+      "suggestedOption": "4/3"
+    },
+    {
+      "id": "y11a-7b-q6c",
+      "suggestedIndex": 0,
+      "suggestedOption": "1"
+    },
+    {
+      "id": "y11a-7b-q7a",
+      "suggestedIndex": 1,
+      "suggestedOption": "60°"
+    },
+    {
+      "id": "y11a-7b-q7b",
+      "suggestedIndex": 1,
+      "suggestedOption": "135°"
+    },
+    {
+      "id": "y11a-7b-q7c",
+      "suggestedIndex": 1,
+      "suggestedOption": "63°"
+    },
+    {
+      "id": "y11a-7b-q7d",
+      "suggestedIndex": 2,
+      "suggestedOption": "45°"
+    },
+    {
+      "id": "y11a-7b-q14a-area",
+      "suggestedIndex": 3,
+      "suggestedOption": "8.5"
+    },
+    {
+      "id": "y11a-7b-q16a",
+      "suggestedIndex": 1,
+      "suggestedOption": "-5"
+    },
+    {
+      "id": "y11a-7b-q16b",
+      "suggestedIndex": 3,
+      "suggestedOption": "7.5"
+    },
+    {
+      "id": "y11a-7b-q21",
+      "suggestedIndex": 2,
+      "suggestedOption": "-8/7"
+    },
+    {
+      "id": "y11a-7c-q2a-yint",
+      "suggestedIndex": 1,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7c-q2b-xint",
+      "suggestedIndex": 0,
+      "suggestedOption": "3"
+    },
+    {
+      "id": "y11a-7c-q2c-yint",
+      "suggestedIndex": 1,
+      "suggestedOption": "-2"
+    },
+    {
+      "id": "y11a-7c-q4a-vert",
+      "suggestedIndex": 2,
+      "suggestedOption": "x=3"
+    },
+    {
+      "id": "y11a-7c-q4b-vert",
+      "suggestedIndex": 3,
+      "suggestedOption": "x=0"
+    },
+    {
+      "id": "y11a-7c-q4c-vert",
+      "suggestedIndex": 2,
+      "suggestedOption": "x=4"
+    },
+    {
+      "id": "y11a-7c-q4c-horiz",
+      "suggestedIndex": 3,
+      "suggestedOption": "y=0"
+    },
+    {
+      "id": "y11a-7c-q5a-grad",
+      "suggestedIndex": 0,
+      "suggestedOption": "3"
+    },
+    {
+      "id": "y11a-7c-q5b-yint",
+      "suggestedIndex": 2,
+      "suggestedOption": "-2"
+    },
+    {
+      "id": "y11a-7c-q5c-grad",
+      "suggestedIndex": 1,
+      "suggestedOption": "-1"
+    },
+    {
+      "id": "y11a-7c-q5d-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-3/8"
+    },
+    {
+      "id": "y11a-7c-q7c",
+      "suggestedIndex": 2,
+      "suggestedOption": "y=-5"
+    },
+    {
+      "id": "y11a-7c-q9b-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-1"
+    },
+    {
+      "id": "y11a-7c-q9b-yint",
+      "suggestedIndex": 1,
+      "suggestedOption": "3"
+    },
+    {
+      "id": "y11a-7c-q9c-yint",
+      "suggestedIndex": 1,
+      "suggestedOption": "0"
+    },
+    {
+      "id": "y11a-7c-q10a-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "1"
+    },
+    {
+      "id": "y11a-7c-q10b-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1"
+    },
+    {
+      "id": "y11a-7c-q10b-angle",
+      "suggestedIndex": 3,
+      "suggestedOption": "135°"
+    },
+    {
+      "id": "y11a-7c-q10c-grad",
+      "suggestedIndex": 1,
+      "suggestedOption": "3"
+    },
+    {
+      "id": "y11a-7c-q10c-angle",
+      "suggestedIndex": 3,
+      "suggestedOption": "72°"
+    },
+    {
+      "id": "y11a-7c-q10d-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-1/2"
+    },
+    {
+      "id": "y11a-7c-q12a-grad",
+      "suggestedIndex": 0,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7c-q12b-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-2"
+    },
+    {
+      "id": "y11a-7c-q12c-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1/3"
+    },
+    {
+      "id": "y11a-7c-q19a",
+      "suggestedIndex": 3,
+      "suggestedOption": "-1/2"
+    },
+    {
+      "id": "y11a-7c-q19b",
+      "suggestedIndex": 0,
+      "suggestedOption": "2"
+    },
+    {
+      "id": "y11a-7d-q12b-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "4/3"
+    },
+    {
+      "id": "y11a-7d-q13a-grad",
+      "suggestedIndex": 3,
+      "suggestedOption": "1"
+    },
+    {
+      "id": "y11a-7d-q13b-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-\\sqrt{3}"
+    },
+    {
+      "id": "y11a-7d-q13d-grad",
+      "suggestedIndex": 2,
+      "suggestedOption": "-1/\\sqrt{3}"
+    },
+    {
+      "id": "y11a-7d-q17f",
+      "suggestedIndex": 3,
+      "suggestedOption": "12"
+    },
+    {
+      "id": "y11a-7d-q19",
+      "suggestedIndex": 1,
+      "suggestedOption": "4/3"
+    },
+    {
+      "id": "y11a-7d-q20a",
+      "suggestedIndex": 3,
+      "suggestedOption": "6"
+    },
+    {
+      "id": "y11a-7d-q20b",
+      "suggestedIndex": 2,
+      "suggestedOption": "-8/3"
+    },
+    {
+      "id": "y10-1e-q1d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(82.20\\%\\)"
+    },
+    {
+      "id": "y10-1e-q7d",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(89.26\\%\\)"
+    },
+    {
+      "id": "y10-1e-q11ai",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(22.6\\%\\)"
+    },
+    {
+      "id": "y10-1e-q11aii",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(22.1\\%\\)"
+    },
+    {
+      "id": "y10-1e-q11aiii",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(22.6\\%\\)"
+    },
+    {
+      "id": "y10-1e-q11aiv",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(21.7\\%\\)"
+    },
+    {
+      "id": "y10-1e-q11avi",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(23.9\\%\\)"
+    },
+    {
+      "id": "y10-1e-q17c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(21.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q17j",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1e-q18c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(16.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q20c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(20.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q21c",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(15.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q21j",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1e-q22j",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1e-q23c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(19.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q23j",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1e-q24c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(21.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q24j",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1e-q25c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(16.0\\%\\)"
+    },
+    {
+      "id": "y10-1e-q25j",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(10.03\\%\\)"
+    },
+    {
+      "id": "y10-1f-q3",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(6\\%\\)"
+    },
+    {
+      "id": "a5b110a09194ef9f32b7ca945fce8072",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(a^2 + 9b^2 + 4 - 6ab - 12b + 4a\\)"
+    },
+    {
+      "id": "245e902a1526b46902c28db65be1f7b0",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\((a - b)(x - y)\\)"
+    },
+    {
+      "id": "2477a957dcc2a66997e85d2b31fc7ac7",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(x(4 - x)(4 + x)\\)"
+    },
+    {
+      "id": "50abcefdcf3151598f0408b9b9c55072",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(p(x - y)\\)"
+    },
+    {
+      "id": "68a8ae8d6b31267e72c3448b560e19a2",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(y(y - 1)(y + 1)\\)"
+    },
+    {
+      "id": "a9efea66b393ef95c97bef67fe477478",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(y^2(9 - y)\\)"
+    },
+    {
+      "id": "b52066584dcbb001878eb3343f06517c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(u(u - 1)(u - 5)\\)"
+    },
+    {
+      "id": "b682ac771cee4dedf11703031423531a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(y(y - 36)\\)"
+    },
+    {
+      "id": "e380ebb5189a747163fc2a0a20d4081d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\((6 - p)(x - y)\\)"
+    },
+    {
+      "id": "fc8dec19e06a6c68dd086de82a571391",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\((x + 3)(y + 2)\\)"
+    },
+    {
+      "id": "06e68cf4ef3320dc4bc6402954e6014c",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(\\frac{1}{x - 3}\\)"
+    },
+    {
+      "id": "0ec206ef598ff1875f665ac2065bdc27",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(\\frac{1}{13}\\)"
+    },
+    {
+      "id": "10d03431b6878b9553ed3f830c175548",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(y\\)"
+    },
+    {
+      "id": "145d0a4ed5a1293e4b710006a9acdb00",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(-\\frac{11}{10p}\\)"
+    },
+    {
+      "id": "201b3a031620bf1918c7e7f8a910e625",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(\\frac{a}{6}\\)"
+    },
+    {
+      "id": "271ef8305c32ac7c907b7441623bc901",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(\\frac{xy}{x+y}\\)"
+    },
+    {
+      "id": "290a7764030ea36b050125ccfddb2f01",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(\\frac{u^2+v^2}{u^2-v^2}\\)"
+    },
+    {
+      "id": "2bb7a24c48a2b96eec39005f48ad9aba",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(4\\)"
+    },
+    {
+      "id": "2f1d162cffde74da05ded7871fc47d12",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\frac{x^2 + 1x + 1}{x + 1}"
+    },
+    {
+      "id": "4dd21138ee32590b76326bf454e3136f",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(6\\)"
+    },
+    {
+      "id": "5674d125c78a4047469582392ba22596",
+      "suggestedIndex": 4,
+      "suggestedOption": "\\(-\\frac{3ab}{40}\\)"
+    },
+    {
+      "id": "6e058e16ae409e8e813ba6034e3236b8",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(\\frac{a^2-1}{a^2+1}\\)"
+    },
+    {
+      "id": "b6cd300a4890a999396489551aba1fa7",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(6\\)"
+    },
+    {
+      "id": "b90a354ecd4776c953b7211bf11ff96a",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(x\\)"
+    },
+    {
+      "id": "e032be1daa298b2eb4e8949bd6b8f7d0",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(\\frac{1}{y+3}\\)"
+    },
+    {
+      "id": "e15ce42c70a572daa44ab59e614ce45b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(4-x\\)"
+    },
+    {
+      "id": "fd36bfe276ec56e4a2d9c1f5844079e4",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(\\frac{11x}{6y}\\)"
+    },
+    {
+      "id": "8aec26f0b3682bd67183edcd8c315e3c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\({-5, 3}\\)"
+    },
+    {
+      "id": "f1ba7b703062efab04fc6544c8a9e05f",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\({0, -9}\\)"
+    },
+    {
+      "id": "5878c05c22db987b971d2f66682b0855",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\( -3 \\)"
+    },
+    {
+      "id": "b201f4ae39eadf091befb338dfae20e2",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\( -5 \\text{ and } 6 \\)"
+    },
+    {
+      "id": "b760544a298899134a26e5a446274832",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\( -5 \\text{ and } 7 \\)"
+    },
+    {
+      "id": "b9cc75de9a324417de7b84cc812dce47",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\( -3 \\)"
+    },
+    {
+      "id": "ddb8f37fc0e4c5df214181e142d94a35",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\( -10 \\text{ and } 6 \\)"
+    },
+    {
+      "id": "8df9bc6027880306a76b3e5f623ec60c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(-3 \\pm \\sqrt{14}\\)"
+    },
+    {
+      "id": "y9-16a-q1a",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(24\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1b",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\(48\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(24\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1d",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(15\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1e",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\(28\\text{ m}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1f",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(35\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q1j",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(15\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q2a",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(24\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q2b",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(126\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q2c",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(32\\text{ m}^2\\)"
+    },
+    {
+      "id": "y9-16a-q2d",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\(192\\text{ mm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q3a",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(28\\text{ m}^2\\)"
+    },
+    {
+      "id": "y9-16a-q3b",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(64\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q3c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(25\\pi\\text{ m}^2\\)"
+    },
+    {
+      "id": "y9-16a-q3d",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(20\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q3f",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\(32\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6a",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(36\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6bi",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(32\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6biii",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(27\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6biv",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(48\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6bv",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\(12\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q6bvi",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(8\\pi\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q10b",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(170\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q10c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(33\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q10d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(32.14\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q10g",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(264\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y9-16a-q10h",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(158.27\\text{ cm}^2\\)"
+    },
+    {
+      "id": "y7-1b-h43",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\( 152 \\)"
+    },
+    {
+      "id": "y7-1c-q3a1",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\\\( 4 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3a2",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\\\( 3 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3b3",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\\\( 7 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3b4",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\\\( 9 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3c2",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\\\( 6 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3d1",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\\\( 8 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3d2",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\\\( 7 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3e2",
+      "suggestedIndex": 0,
+      "suggestedOption": "\\\\( 3 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3e3",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\\\( 7 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3f1",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\\\( 4 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3f2",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\\\( 5 \\\\)"
+    },
+    {
+      "id": "y7-1c-q3f3",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\\\( 1 \\\\)"
+    },
+    {
+      "id": "y7-1c-q10c",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\\\( 8 \\\\)"
+    },
+    {
+      "id": "y7-1c-q10d",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\\\( 2 \\\\)"
+    },
+    {
+      "id": "y7-1g-h15",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(32,000,000\\)"
+    },
+    {
+      "id": "y7-1g-h25",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(45,000\\)"
+    },
+    {
+      "id": "y7-1g-h30",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(5,150,000\\)"
+    },
+    {
+      "id": "y7-1g-h35",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(580,000\\)"
+    },
+    {
+      "id": "y7-1g-h45",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(710,000\\)"
+    },
+    {
+      "id": "y7-1g-h55",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(8,400,000\\)"
+    },
+    {
+      "id": "y7-1g-h60",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(90,500\\)"
+    },
+    {
+      "id": "y7-1g-h65",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(9,700\\)"
+    },
+    {
+      "id": "y7-1g-h70",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(1,035,000\\)"
+    },
+    {
+      "id": "y7-1g-h85",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(123,000\\)"
+    },
+    {
+      "id": "y7-1g-h90",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(12,950,000\\)"
+    },
+    {
+      "id": "y7-1g-h100",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(14,250\\)"
+    },
+    {
+      "id": "y7-1i-q1c",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(12\\)"
+    },
+    {
+      "id": "y7-1i-q2f",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(24\\)"
+    },
+    {
+      "id": "y7-1i-q9a",
+      "suggestedIndex": 1,
+      "suggestedOption": "\\(2\\)"
+    },
+    {
+      "id": "y7-1i-q10b",
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(8\\)"
+    },
+    {
+      "id": "y7-1l-h54",
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(150\\text{ milliliters}\\)"
+    },
+    {
+      "id": "y7-23j-q10",
+      "suggestedIndex": 2,
+      "suggestedOption": "3y + 12"
+    }
+  ],
+  "review": [
+    {
+      "id": "y12a-3i-q9c",
+      "topicId": "y12a-3I",
+      "a": "0",
+      "keyedIndex": 0,
+      "keyedOption": "A straight line crossing the x-axis at x = 3",
+      "solutionFinal": [
+        "3."
+      ],
+      "options": [
+        "A straight line crossing the x-axis at x = 3",
+        "A horizontal line at y = 3",
+        "Another parabola with vertex at x = 0",
+        "A straight line crossing the y-axis at y = 3"
+      ],
+      "suggestedIndex": 1,
+      "suggestedOption": "A horizontal line at y = 3"
+    },
+    {
+      "id": "03832022b0a22f0e935270f33b507588",
+      "topicId": "y11a-1A",
+      "a": "1",
+      "keyedIndex": 1,
+      "keyedOption": "\\(x^2 + y^2 + z^2\\)",
+      "solutionFinal": [
+        "x^2 + y^2 + z^2 - 2xy - 2yz + 2zx"
+      ],
+      "options": [
+        "\\(x^2 + y^2 + z^2 - 2xy + 2yz + 2zx\\)",
+        "\\(x^2 + y^2 + z^2\\)",
+        "\\(x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)",
+        "\\(x^2 - y^2 + z^2 - 2xy + 2yz - 2zx\\)"
+      ],
+      "suggestedIndex": 2,
+      "suggestedOption": "\\(x^2 + y^2 + z^2 - 2xy - 2yz + 2zx\\)"
+    },
+    {
+      "id": "419c41e35029d8f76b4ad1215416b685",
+      "topicId": "y11a-1A",
+      "a": "2",
+      "keyedIndex": 2,
+      "keyedOption": "\\(4a^2 + 4b^2 + c^2\\)",
+      "solutionFinal": [
+        "4a^2 + 4b^2 + c^2 + 8ab - 4bc - 4ca"
+      ],
+      "options": [
+        "\\(4a^2 - 4b^2 + c^2 - 8ab + 4bc - 4ca\\)",
+        "\\(4a^2 + 4b^2 + c^2 + 8ab - 4bc + 4ca\\)",
+        "\\(4a^2 + 4b^2 + c^2\\)",
+        "\\(4a^2 + 4b^2 + c^2 + 8ab - 4bc - 4ca\\)"
+      ],
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(4a^2 + 4b^2 + c^2 + 8ab - 4bc - 4ca\\)"
+    },
+    {
+      "id": "c8e33bec4228918577f2a979d38cc4aa",
+      "topicId": "y11a-1A",
+      "a": "1",
+      "keyedIndex": 1,
+      "keyedOption": "\\(9x^2 + 4y^2 + z^2\\)",
+      "solutionFinal": [
+        "9x^2 + 4y^2 + z^2 - 12xy + 4yz - 6zx"
+      ],
+      "options": [
+        "\\(9x^2 + 4y^2 + z^2 - 12xy - 4yz + 6zx\\)",
+        "\\(9x^2 + 4y^2 + z^2\\)",
+        "\\(9x^2 - 4y^2 + z^2 - 12xy + 4yz - 6zx\\)",
+        "\\(9x^2 + 4y^2 + z^2 - 12xy + 4yz - 6zx\\)"
+      ],
+      "suggestedIndex": 3,
+      "suggestedOption": "\\(9x^2 + 4y^2 + z^2 - 12xy + 4yz - 6zx\\)"
+    }
+  ]
+}

@@ -405,7 +405,7 @@ export const Y7_CH23J_QUESTIONS = [
         "imageUrl": ""
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-23j-q11a",

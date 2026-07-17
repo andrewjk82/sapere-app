@@ -652,7 +652,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "q": "Find the gradient of the line through the points \\(A(3, 5)\\) and \\(B(5, 11)\\).",
-    "a": "3",
+    "a": 1,
     "h": "Use the gradient formula m = (y2 - y1) / (x2 - x1).",
     "s": "The gradient is \\(m = \\frac{11 - 5}{5 - 3} = \\frac{6}{2} = 3\\).",
     "solutionSteps": [
@@ -1572,7 +1572,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "For the line \\(4x - 3y - 3 = 0\\): Put the equation into gradient-intercept form, and write down the gradient.",
-    "a": "2",
+    "a": 3,
     "h": "Rearrange the equation to make y the subject (y = mx + b).",
     "s": "The gradient is \\(4/3\\).",
     "solutionSteps": [
@@ -1762,7 +1762,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 45^{\\circ}\\) passing through \\(A(2, 0)\\).",
-    "a": "1",
+    "a": 3,
     "h": "Use the formula m = tan(alpha) to find the gradient.",
     "s": "The gradient is \\(1\\).",
     "solutionSteps": [
@@ -1817,7 +1817,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 120^{\\circ}\\) passing through \\(A(-2, 0)\\).",
-    "a": "0",
+    "a": 2,
     "h": "Use the formula m = tan(alpha) to find the gradient.",
     "s": "The gradient is \\(-\\sqrt{3}\\).",
     "solutionSteps": [
@@ -1937,7 +1937,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 150^{\\circ}\\) passing through \\(A(-3, -4)\\).",
-    "a": "0",
+    "a": 2,
     "h": "Use the formula m = tan(alpha) to find the gradient.",
     "s": "The gradient is \\(-1/\\sqrt{3}\\).",
     "solutionSteps": [
@@ -2454,7 +2454,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "q": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) be the angle between \\(AC\\) and the x-axis. Find the area of the triangle \\(ABC\\).",
-    "a": "0",
+    "a": 3,
     "h": "Use AC as the base and BD as the height. Calculate their lengths and apply Area = 0.5 * base * height.",
     "s": "\\(AC = \\sqrt{(5-1)^2 + (4-0)^2} = \\sqrt{32} = 4\\sqrt{2}\\).\n\\(BD = \\sqrt{(3-0)^2 + (2-5)^2} = \\sqrt{18} = 3\\sqrt{2}\\).\n\\(\\text{Area} = \\frac{1}{2} \\times 4\\sqrt{2} \\times 3\\sqrt{2} = 12\\)? Wait: \\(\\frac{1}{2} \\times 4\\sqrt{2} \\times 3\\sqrt{2} = 12\\). Let's check: \\(\\frac{1}{2} \\times 12 \\times 2 = 12\\)? No, \\(4 \\times 3 = 12\\), and \\(\\sqrt{2} \\times \\sqrt{2} = 2\\), so \\(1/2 \\times 12 \\times 2 = 12\\). Wait, why is the answer 6 in my head? Let's check: A(1, 0), B(0, 5), C(5, 4). Using shoelace formula: Area = 0.5 * | 1(5 - 4) + 0(4 - 0) + 5(0 - 5) | = 0.5 * | 1 + 0 - 25 | = 0.5 * 24 = 12. Correct! The area is 12.",
     "solutionSteps": [
@@ -2677,7 +2677,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Find the value of \\(k\\) if the lines \\(\\ell_1: x + 2y + 7 = 0\\), \\(\\ell_2: 3x + y - 4 = 0\\), and \\(\\ell_3: kx - y - 9 = 0\\) are concurrent (enter as a fraction, e.g. 4/3).",
-    "a": "0",
+    "a": 1,
     "h": "Solve the first two equations to find their intersection point, then substitute it into the third equation to solve for k.",
     "s": "Solving \\(\\ell_1\\) and \\(\\ell_2\\) gives \\((3, -5)\\). Substituting into \\(\\ell_3\\): \\(3k - (-5) - 9 = 0 \\implies 3k - 4 = 0 \\implies k = \\frac{4}{3}\\).",
     "solutionSteps": [
@@ -2712,7 +2712,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x + 3y + 5 = 0\\) and \\(\\ell_2: 4x + \\mu y + \\lambda = 0\\). Find the value of \\(\\mu\\) if \\(\\ell_1\\) is parallel to \\(\\ell_2\\).",
-    "a": "1",
+    "a": 3,
     "h": "Parallel lines have equal gradients. Equate the gradients and solve for mu.",
     "s": "\\(m_1 = -\\frac{2}{3}\\), \\(m_2 = -\\frac{4}{\\mu}\\). Thus \\(-\\frac{2}{3} = -\\frac{4}{\\mu} \\implies \\mu = 6\\).",
     "solutionSteps": [
@@ -2742,7 +2742,7 @@ export const Y11_CH7D_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 120,
     "q": "Consider the two lines \\(\\ell_1: 2x + 3y + 5 = 0\\) and \\(\\ell_2: 4x + \\mu y + \\lambda = 0\\). Find the value of \\(\\mu\\) if \\(\\ell_1\\) is perpendicular to \\(\\ell_2\\) (enter as a fraction, e.g. -8/3).",
-    "a": "0",
+    "a": 2,
     "h": "Perpendicular gradients multiply to -1. Set up the product equation and solve for mu.",
     "s": "\\(m_1 = -\\frac{2}{3}\\), \\(m_2 = -\\frac{4}{\\mu}\\). Perpendicular: \\(-\\frac{2}{3} \\times \\left(-\\frac{4}{\\mu}\\right) = -1 \\implies \\frac{8}{3\\mu} = -1 \\implies \\mu = -\\frac{8}{3}\\).",
     "solutionSteps": [

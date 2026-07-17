@@ -2910,7 +2910,7 @@ export const Y7_CH1B_QUESTIONS = [
         "graphData": null
       }
     ],
-    "answer": "0"
+    "answer": 2
   },
   {
     "id": "y7-1b-h44",

@@ -1773,7 +1773,7 @@ export const Y9_CH1E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Expand and collect like terms: \\((3p+4q)(2q-3p)\\).",
-    "a": "1",
+    "a": 2,
     "opts": [
       "\\(-9p^2+6pq+8q^2\\)",
       "\\(9p^2-6pq+8q^2\\)",
@@ -1807,7 +1807,7 @@ export const Y9_CH1E_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Expand and collect like terms: \\((3p-4q)(2q-3p)\\).",
-    "a": "1",
+    "a": 3,
     "opts": [
       "\\(-9p^2+18pq+8q^2\\)",
       "\\(9p^2+18pq-8q^2\\)",
@@ -3123,7 +3123,7 @@ export const Y9_CH1E_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Expand and collect like terms: \\((6x+1)(6x+1)\\).",
-    "a": "1",
+    "a": 2,
     "opts": [
       "\\(36x^2+6x+1\\)",
       "\\(36x^2+1\\)",

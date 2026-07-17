@@ -5,7 +5,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand the expression using the distributive law: \\(6(x+4)\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(x+24\\)",
   "\\(6x+10\\)",
@@ -34,7 +34,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand the expression using the distributive law: \\(3(b+8)\\).",
-  "a": "2",
+  "a": 3,
   "opts": [
   "\\(3b+11\\)",
   "\\(3b+8\\)",
@@ -63,7 +63,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand the expression using the distributive law: \\(5(a+5)\\).",
-  "a": "2",
+  "a": 3,
   "opts": [
   "\\(5a+10\\)",
   "\\(5a+5\\)",
@@ -1426,7 +1426,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand and simplify: \\(-\\frac{2}{5}(\\frac{a}{2}-\\frac{5}{6})\\).",
-  "a": "1",
+  "a": 3,
   "opts": [
   "\\(-\\frac{2a}{10}+\\frac{10}{30}\\)",
   "\\(\\frac{a}{5}+\\frac{1}{3}\\)",
@@ -1484,7 +1484,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand: \\(y(y+6)\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(y^2+6y^2\\)",
   "\\(2y+6\\)",
@@ -1600,7 +1600,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand: \\(n(3n+8)\\).",
-  "a": "1",
+  "a": 2,
   "opts": [
   "\\(4n+8\\)",
   "\\(3n^2+8\\)",
@@ -1890,7 +1890,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand the expression: \\(2x(3x+y)\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(6x^2+2x\\)",
   "\\(5x^2+2xy\\)",
@@ -2267,7 +2267,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "A student expanded the expression \\(6(y+1)\\) and obtained \\(6y+7\\). Identify the error and choose the correct expansion.",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(y+6\\)",
   "\\(6y+1\\)",
@@ -2412,7 +2412,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "A student expanded the expression \\(3x(5x+4)\\) and obtained \\(8x^2+12x\\). Identify the error and choose the correct expansion.",
-  "a": "0",
+  "a": 1,
   "opts": [
   "\\(15x^2+12\\)",
   "\\(15x^2+12x\\)",
@@ -2800,7 +2800,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand and collect like terms: \\(7(a-4)-5a\\).",
-  "a": "0",
+  "a": 1,
   "opts": [
   "\\(-2a-28\\)",
   "\\(2a-28\\)",
@@ -2834,7 +2834,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand and collect like terms: \\(3(b-5)-2b\\).",
-  "a": "0",
+  "a": 2,
   "opts": [
   "\\(-b-15\\)",
   "\\(5b-15\\)",
@@ -3072,7 +3072,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "easy",
   "timeLimit": 60,
   "question": "Expand and collect like terms: \\(3x(2x+4y)-6x^2\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(12xy-6x^2\\)",
   "\\(6x^2+12xy\\)",
@@ -3695,7 +3695,7 @@ export const Y9_CH1D_QUESTIONS = [
   "difficulty": "medium",
   "timeLimit": 90,
   "question": "Expand and collect like terms: \\(3(2y-3)-2(3y-4)\\).",
-  "a": "0",
+  "a": 3,
   "opts": [
   "\\(12y-17\\)",
   "\\(12y-1\\)",
