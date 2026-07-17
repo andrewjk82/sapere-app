@@ -372,7 +372,7 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     },
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The graphs of an even function $f(x)$ and an odd function $g(x)$ are shown on the same axes. Let $P = \\displaystyle\\int_{-1}^{-3} f(x)\\,dx$, $Q = \\displaystyle\\int_{-1}^{0} g(x)\\,dx$ and $R = \\displaystyle\\int_{1}^{3} \\bigl(f(x) - g(x)\\bigr)\\,dx$. Which of the following expressions equals $\\displaystyle\\int_{0}^{3} g(x)\\,dx$?",
+    "q": "The graphs of an even function $f$ and an odd function $g$ are shown. Define $P = \\displaystyle\\int_{-1}^{-3} f(x)\\,dx$, $Q = \\displaystyle\\int_{-1}^{0} g(x)\\,dx$ and $R = \\displaystyle\\int_{1}^{3}\\bigl(f(x)-g(x)\\bigr)\\,dx$. (Note: the limits of $P$ run from $-1$ down to $-3$, so they are reversed.) Which expression equals $\\displaystyle\\int_{0}^{3} g(x)\\,dx$?",
     "a": "3",
     "opts": [
       "$P + Q + R$",
@@ -380,27 +380,28 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
       "$-P + Q - R$",
       "$-P - Q - R$"
     ],
-    "h": "Use $f$ even ($\\int_{-b}^{-a} f = \\int_a^b f$), $g$ odd ($\\int_{-a}^{0} g = -\\int_0^a g$), and reversal of limits.",
+    "h": "Reverse limits of $P$ first. Use $f$ even and $g$ odd. Split $R$ and the target integral at $x=1$.",
     "s": "$P = -\\int_{-3}^{-1} f\\,dx = -\\int_1^3 f\\,dx$ (even), so $\\int_1^3 f\\,dx = -P$. $Q = -\\int_0^1 g\\,dx$ (odd), so $\\int_0^1 g\\,dx = -Q$. From $R = \\int_1^3 f - \\int_1^3 g$: $\\int_1^3 g\\,dx = -P - R$. Hence $\\int_0^3 g\\,dx = -Q + (-P - R) = -P - Q - R$.",
     "solutionSteps": [
       {
-        "explanation": "Handle \\(P\\): reverse the backwards limits (changing the sign), then use the even-function symmetry \\(\\int_{-3}^{-1} f\\,dx = \\int_{1}^{3} f\\,dx\\).",
-        "workingOut": "P = -\\int_{-3}^{-1} f\\,dx = -\\int_{1}^{3} f\\,dx \\implies \\int_1^3 f\\,dx = -P"
+        "explanation": "Reversed limits: \\(P = \\int_{-1}^{-3} f = -\\int_{-3}^{-1} f\\). Evenness gives \\(\\int_1^3 f = -P\\).",
+        "workingOut": "\\int_1^3 f\\,dx = -P"
       },
       {
-        "explanation": "Handle \\(Q\\) with the odd-function property: the integral over \\([-1, 0]\\) is the negative of the integral over \\([0, 1]\\).",
-        "workingOut": "Q = -\\int_0^1 g\\,dx \\implies \\int_0^1 g\\,dx = -Q"
+        "explanation": "Oddness: \\(Q = \\int_{-1}^{0} g = -\\int_0^1 g\\), so \\(\\int_0^1 g = -Q\\).",
+        "workingOut": "\\int_0^1 g\\,dx = -Q"
       },
       {
-        "explanation": "Split \\(R\\) by linearity and solve for \\(\\int_1^3 g\\,dx\\).",
-        "workingOut": "R = -P - \\int_1^3 g\\,dx \\implies \\int_1^3 g\\,dx = -P - R"
+        "explanation": "From \\(R = \\int_1^3 f - \\int_1^3 g\\) and \\(\\int_1^3 f = -P\\): \\(\\int_1^3 g = -P - R\\).",
+        "workingOut": "\\int_1^3 g\\,dx = -P - R"
       },
       {
-        "explanation": "Combine with the addition-of-intervals property.",
-        "workingOut": "\\int_0^3 g\\,dx = (-Q) + (-P - R) = -P - Q - R \\implies \\text{(D)}"
+        "explanation": "Target: \\(\\int_0^3 g = \\int_0^1 g + \\int_1^3 g = (-Q)+(-P-R)=-P-Q-R\\).",
+        "workingOut": "\\int_0^3 g\\,dx = -P - Q - R"
       }
     ]
   },
+
   {
     "id": "cra2023s-q11",
     "topicId": "y12a-9B",

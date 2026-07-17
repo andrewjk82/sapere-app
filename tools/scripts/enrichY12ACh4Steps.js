@@ -288,34 +288,44 @@ set('car2020s-q19', [
 
 set('cra2023-mc10', [
   S(
-    'Recall: for even \\(f\\), \\(\\int_{-a}^{-b} f = -\\int_b^a f\\) after reversing limits and using evenness. For odd \\(g\\), integrals over symmetric intervals flip sign in a predictable way.',
-    '\\text{even / odd properties}'
+    'Note carefully: the integral defining \\(A\\) has reversed limits (from \\(-2\\) down to \\(-4\\)). Reversing limits multiplies by \\(-1\\).',
+    'A = -\\displaystyle\\int_{-4}^{-2} f(x)\\,dx'
   ),
   S(
-    'Rewrite each of \\(A\\), \\(B\\), \\(C\\) so that all integrals run over positive intervals matching the diagram regions.',
-    'A,B,C \\to \\text{positive-side integrals}'
+    'Because \\(f\\) is even, \\(\\displaystyle\\int_{-4}^{-2} f = \\int_2^4 f\\), so \\(\\displaystyle\\int_2^4 f = -A\\).',
+    '\\displaystyle\\int_2^4 f(x)\\,dx = -A'
   ),
   S(
-    'After applying even/odd identities, the required combination of regions equals \\(-A-B-C\\).',
-    '-A-B-C'
+    'Because \\(g\\) is odd, \\(B = \\displaystyle\\int_{-2}^{0} g = -\\int_0^2 g\\), so \\(\\displaystyle\\int_0^2 g = -B\\).',
+    '\\displaystyle\\int_0^2 g(x)\\,dx = -B'
   ),
-  S('Hence the value of the expression on the diagram is \\(-A-B-C\\).', '\\(-A-B-C\\)'),
+  S(
+    'Split \\(C\\): \\(C = \\displaystyle\\int_2^4 f - \\int_2^4 g = -A - \\int_2^4 g\\), hence \\(\\displaystyle\\int_2^4 g = -A - C\\).',
+    '\\displaystyle\\int_2^4 g(x)\\,dx = -A - C'
+  ),
+  S(
+    'Split the target at \\(x=2\\): \\(\\displaystyle\\int_0^4 g = \\int_0^2 g + \\int_2^4 g = (-B)+(-A-C)=-A-B-C\\).',
+    '-A - B - C'
+  ),
 ]);
 
 set('cra2023s-mc10', [
   S(
-    'Use evenness of \\(f\\) and oddness of \\(g\\) to rewrite \\(P\\), \\(Q\\), \\(R\\) in terms of integrals over the positive \\(x\\)-axis regions shown.',
-    '\\text{even / odd}'
+    'Reversed limits: \\(P = \\displaystyle\\int_{-1}^{-3} f = -\\int_{-3}^{-1} f\\). Evenness gives \\(\\displaystyle\\int_1^3 f = -P\\).',
+    '\\displaystyle\\int_1^3 f(x)\\,dx = -P'
   ),
   S(
-    '\\(P=\\int_{-1}^{-3}f=-\\int_{-3}^{-1}f=-\\int_1^3 f\\) (even), so \\(\\int_1^3 f=-P\\).',
-    '\\(\\int_1^3 f = -P\\)'
+    'Oddness: \\(Q = \\displaystyle\\int_{-1}^{0} g = -\\int_0^1 g\\), so \\(\\displaystyle\\int_0^1 g = -Q\\).',
+    '\\displaystyle\\int_0^1 g(x)\\,dx = -Q'
   ),
   S(
-    'Similar identities for the odd function pieces give contributions \\(-Q\\) and \\(-R\\).',
-    '-Q,\\;-R'
+    'From \\(R = \\displaystyle\\int_1^3 f - \\int_1^3 g\\) and \\(\\int_1^3 f = -P\\): \\(\\displaystyle\\int_1^3 g = -P - R\\).',
+    '\\displaystyle\\int_1^3 g(x)\\,dx = -P - R'
   ),
-  S('The total is therefore \\(-P-Q-R\\).', '\\(-P-Q-R\\)'),
+  S(
+    'Target: \\(\\displaystyle\\int_0^3 g = \\int_0^1 g + \\int_1^3 g = (-Q)+(-P-R)=-P-Q-R\\).',
+    '-P - Q - R'
+  ),
 ]);
 
 // ═══════════════════════════════════════════════════════════════════════

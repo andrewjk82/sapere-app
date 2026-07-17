@@ -392,7 +392,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     },
     "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "The graphs of an even function $f(x)$ and an odd function $g(x)$ are shown on the same axes. Let $A = \\displaystyle\\int_{-2}^{-4} f(x)\\,dx$, $B = \\displaystyle\\int_{-2}^{0} g(x)\\,dx$ and $C = \\displaystyle\\int_{2}^{4} \\bigl(f(x) - g(x)\\bigr)\\,dx$. Which of the following expressions equals $\\displaystyle\\int_{0}^{4} g(x)\\,dx$?",
+    "q": "The graphs of an even function $f$ and an odd function $g$ are shown. Define $A = \\displaystyle\\int_{-2}^{-4} f(x)\\,dx$, $B = \\displaystyle\\int_{-2}^{0} g(x)\\,dx$ and $C = \\displaystyle\\int_{2}^{4}\\bigl(f(x)-g(x)\\bigr)\\,dx$. (Note: the limits of $A$ run from $-2$ down to $-4$, so they are reversed.) Which expression equals $\\displaystyle\\int_{0}^{4} g(x)\\,dx$?",
     "a": "3",
     "opts": [
       "$A + B + C$",
@@ -400,27 +400,32 @@ export const CRANBROOK_2023_QUESTIONS = [
       "$-A + B - C$",
       "$-A - B - C$"
     ],
-    "h": "Use $f$ even ($\\int_{-b}^{-a} f = \\int_a^b f$), $g$ odd ($\\int_{-a}^{0} g = -\\int_0^a g$), and reversal of limits.",
+    "h": "Reverse the limits of $A$ first. Use $f$ even ($\\int$ on $[-4,-2]$ equals $\\int$ on $[2,4]$) and $g$ odd ($\\int$ on $[-2,0]$ equals $-\\int$ on $[0,2]$). Split $C$ and the target integral at $x=2$.",
     "s": "Since $A = \\int_{-2}^{-4} f\\,dx = -\\int_{-4}^{-2} f\\,dx$ and $f$ is even, $\\int_{-4}^{-2} f = \\int_{2}^{4} f$, so $\\int_2^4 f\\,dx = -A$.\n\nSince $g$ is odd, $B = \\int_{-2}^{0} g\\,dx = -\\int_{0}^{2} g\\,dx$, so $\\int_0^2 g\\,dx = -B$.\n\nFrom $C = \\int_2^4 f\\,dx - \\int_2^4 g\\,dx$: $\\int_2^4 g\\,dx = -A - C$.\n\nTherefore $\\int_0^4 g\\,dx = \\int_0^2 g + \\int_2^4 g = -B + (-A - C) = -A - B - C$.",
     "solutionSteps": [
       {
-        "explanation": "Deal with \\(A\\) first. Its limits run backwards (from \\(-2\\) down to \\(-4\\)), so reverse them, which changes the sign. Then use the even-function property \\(\\int_{-4}^{-2} f\\,dx = \\int_{2}^{4} f\\,dx\\), since an even function has mirror symmetry about the \\(y\\)-axis.",
-        "workingOut": "A = -\\int_{-4}^{-2} f\\,dx = -\\int_{2}^{4} f\\,dx \\implies \\int_2^4 f\\,dx = -A"
+        "explanation": "Note carefully: the integral defining \\(A\\) has reversed limits (from \\(-2\\) down to \\(-4\\)). Reversing limits multiplies by \\(-1\\).",
+        "workingOut": "A = -\\int_{-4}^{-2} f\\,dx"
       },
       {
-        "explanation": "Deal with \\(B\\) using the odd-function property: the area pattern of an odd function on \\([-a, 0]\\) is the negative of that on \\([0, a]\\), so \\(\\int_{-2}^{0} g\\,dx = -\\int_{0}^{2} g\\,dx\\).",
-        "workingOut": "B = -\\int_0^2 g\\,dx \\implies \\int_0^2 g\\,dx = -B"
+        "explanation": "Because \\(f\\) is even, \\(\\int_{-4}^{-2} f = \\int_2^4 f\\), so \\(\\int_2^4 f = -A\\).",
+        "workingOut": "\\int_2^4 f\\,dx = -A"
       },
       {
-        "explanation": "Split \\(C\\) using the linearity of the definite integral, then solve for \\(\\int_2^4 g\\,dx\\) using the result from the first step.",
-        "workingOut": "C = \\int_2^4 f\\,dx - \\int_2^4 g\\,dx = -A - \\int_2^4 g\\,dx \\implies \\int_2^4 g\\,dx = -A - C"
+        "explanation": "Because \\(g\\) is odd, \\(B = \\int_{-2}^{0} g = -\\int_0^2 g\\), so \\(\\int_0^2 g = -B\\).",
+        "workingOut": "\\int_0^2 g\\,dx = -B"
       },
       {
-        "explanation": "Combine the pieces using the addition-of-intervals property \\(\\int_0^4 = \\int_0^2 + \\int_2^4\\).",
-        "workingOut": "\\int_0^4 g\\,dx = (-B) + (-A - C) = -A - B - C \\implies \\text{(D)}"
+        "explanation": "Split \\(C\\): \\(C = \\int_2^4 f - \\int_2^4 g = -A - \\int_2^4 g\\), hence \\(\\int_2^4 g = -A - C\\).",
+        "workingOut": "\\int_2^4 g\\,dx = -A - C"
+      },
+      {
+        "explanation": "Split the target at \\(x=2\\): \\(\\int_0^4 g = \\int_0^2 g + \\int_2^4 g = (-B)+(-A-C)=-A-B-C\\).",
+        "workingOut": "\\int_0^4 g\\,dx = -A - B - C"
       }
     ]
   },
+
   {
     "id": "cra2023-q11",
     "topicId": "y12a-9B",
