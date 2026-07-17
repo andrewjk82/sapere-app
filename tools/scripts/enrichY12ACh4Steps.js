@@ -288,42 +288,42 @@ set('car2020s-q19', [
 
 set('cra2023-mc10', [
   S(
-    'Note carefully: the integral defining \\(A\\) has reversed limits (from \\(-2\\) down to \\(-4\\)). Reversing limits multiplies by \\(-1\\).',
-    'A = -\\displaystyle\\int_{-4}^{-2} f(x)\\,dx'
+    'Limits of \\(A\\) run from \\(-2\\) down to \\(-4\\) (reversed), so \\(A=-\\displaystyle\\int_{-4}^{-2} f\\). The blue shade under \\(f\\) on \\([-4,-2]\\) is therefore \\(-A\\), not \\(A\\).',
+    'A = -\\displaystyle\\int_{-4}^{-2} f \\;\\Rightarrow\\; \\text{blue shade}=-A'
   ),
   S(
-    'Because \\(f\\) is even, \\(\\displaystyle\\int_{-4}^{-2} f = \\int_2^4 f\\), so \\(\\displaystyle\\int_2^4 f = -A\\).',
+    'Evenness of \\(f\\): blue shade also equals \\(\\displaystyle\\int_2^4 f\\). Hence \\(\\displaystyle\\int_2^4 f=-A\\).',
     '\\displaystyle\\int_2^4 f(x)\\,dx = -A'
   ),
   S(
-    'Because \\(g\\) is odd, \\(B = \\displaystyle\\int_{-2}^{0} g = -\\int_0^2 g\\), so \\(\\displaystyle\\int_0^2 g = -B\\).',
+    'Orange shade is exactly \\(B=\\displaystyle\\int_{-2}^{0} g\\). Oddness: \\(\\displaystyle\\int_0^2 g=-B\\).',
     '\\displaystyle\\int_0^2 g(x)\\,dx = -B'
   ),
   S(
-    'Split \\(C\\): \\(C = \\displaystyle\\int_2^4 f - \\int_2^4 g = -A - \\int_2^4 g\\), hence \\(\\displaystyle\\int_2^4 g = -A - C\\).',
+    'Green band is the region between the curves, so \\(C=\\displaystyle\\int_2^4(f-g)\\). Then \\(\\displaystyle\\int_2^4 g=-A-C\\).',
     '\\displaystyle\\int_2^4 g(x)\\,dx = -A - C'
   ),
   S(
-    'Split the target at \\(x=2\\): \\(\\displaystyle\\int_0^4 g = \\int_0^2 g + \\int_2^4 g = (-B)+(-A-C)=-A-B-C\\).',
+    'Hatched target: \\(\\displaystyle\\int_0^4 g=\\int_0^2 g+\\int_2^4 g=(-B)+(-A-C)=-A-B-C\\).',
     '-A - B - C'
   ),
 ]);
 
 set('cra2023s-mc10', [
   S(
-    'Reversed limits: \\(P = \\displaystyle\\int_{-1}^{-3} f = -\\int_{-3}^{-1} f\\). Evenness gives \\(\\displaystyle\\int_1^3 f = -P\\).',
+    'Reversed limits: blue shade under \\(f\\) on \\([-3,-1]\\) equals \\(-P\\), not \\(P\\). Evenness: \\(\\displaystyle\\int_1^3 f=-P\\).',
     '\\displaystyle\\int_1^3 f(x)\\,dx = -P'
   ),
   S(
-    'Oddness: \\(Q = \\displaystyle\\int_{-1}^{0} g = -\\int_0^1 g\\), so \\(\\displaystyle\\int_0^1 g = -Q\\).',
+    'Orange shade is \\(Q\\). Oddness: \\(\\displaystyle\\int_0^1 g=-Q\\).',
     '\\displaystyle\\int_0^1 g(x)\\,dx = -Q'
   ),
   S(
-    'From \\(R = \\displaystyle\\int_1^3 f - \\int_1^3 g\\) and \\(\\int_1^3 f = -P\\): \\(\\displaystyle\\int_1^3 g = -P - R\\).',
+    'Green band is \\(R=\\displaystyle\\int_1^3(f-g)\\), so \\(\\displaystyle\\int_1^3 g=-P-R\\).',
     '\\displaystyle\\int_1^3 g(x)\\,dx = -P - R'
   ),
   S(
-    'Target: \\(\\displaystyle\\int_0^3 g = \\int_0^1 g + \\int_1^3 g = (-Q)+(-P-R)=-P-Q-R\\).',
+    'Hatched target: \\(\\displaystyle\\int_0^3 g=(-Q)+(-P-R)=-P-Q-R\\).',
     '-P - Q - R'
   ),
 ]);
