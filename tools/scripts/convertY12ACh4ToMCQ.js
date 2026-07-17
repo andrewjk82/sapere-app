@@ -167,10 +167,34 @@ const PATCHES = {
       distractors: ['\\(6\\)', '\\(0\\)', '\\(-4\\)'],
       a: nextA(),
       solutionSteps: [
-        step('Signed area: quarter-disk radius 2 in Q1 contributes \\(+\\pi\\), then triangle/line and rectangle below the axis contribute negative areas, plus the lower quarter-disk.', '\\(\\text{signed area}\\)'),
-        step('Quarter-circle area above: \\(\\dfrac{1}{4}\\pi(2)^2 = \\pi\\). Line BC and horizontal CD lie below the axis; the final quarter-circle from D to E is also below.', '\\(\\pi\\) (above)'),
-        step('Combining the signed pieces (as on the exam figure) gives total integral \\(-6\\).', '\\(\\int_0^8 f = -6\\)'),
-        step('Negative total means net area below the axis exceeds area above.', '\\(-6\\)'),
+        step(
+          'A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative. Split the path into the four geometric pieces \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\).',
+          '\\(\\displaystyle\\int_0^8 f(x)\\,dx = [AB] + [BC] + [CD] + [DE]\\)'
+        ),
+        step(
+          'Piece \\(AB\\): quarter circle of radius \\(2\\) centred at the origin, from \\(A(0,2)\\) to \\(B(2,0)\\), entirely above the \\(x\\)-axis. Area of a full circle is \\(\\pi r^2\\), so a quarter is \\(\\tfrac14\\pi r^2\\).',
+          '\\([AB] = +\\dfrac{1}{4}\\pi(2)^2 = +\\dfrac{1}{4}\\pi\\cdot 4 = +\\pi\\)'
+        ),
+        step(
+          'Piece \\(BC\\): straight line from \\(B(2,0)\\) to \\(C(4,-2)\\), entirely below the \\(x\\)-axis. The region between this line and the \\(x\\)-axis is a right triangle with base \\(4-2=2\\) and height \\(2\\). Signed area is negative.',
+          '\\([BC] = -\\dfrac{1}{2}\\times 2\\times 2 = -2\\)'
+        ),
+        step(
+          'Piece \\(CD\\): horizontal segment from \\(C(4,-2)\\) to \\(D(6,-2)\\), so \\(y=-2\\) for \\(4\\le x\\le 6\\). This is a rectangle of width \\(6-4=2\\) and height \\(2\\), fully below the axis.',
+          '\\([CD] = -(2)\\times(2) = -4\\)'
+        ),
+        step(
+          'Piece \\(DE\\): quarter circle of radius \\(2\\) from \\(D(6,-2)\\) to \\(E(8,0)\\) (centre \\((8,-2)\\)), entirely below the \\(x\\)-axis. Same area magnitude as \\(AB\\), but signed negative.',
+          '\\([DE] = -\\dfrac{1}{4}\\pi(2)^2 = -\\pi\\)'
+        ),
+        step(
+          'Add the four signed areas. The \\(+\\pi\\) and \\(-\\pi\\) cancel, leaving the triangular and rectangular contributions.',
+          '\\(\\pi + (-2) + (-4) + (-\\pi) = \\pi - 2 - 4 - \\pi = -6\\)'
+        ),
+        step(
+          'Therefore \\(\\displaystyle\\int_0^8 f(x)\\,dx = -6\\). (Net area below the axis exceeds the area above.)',
+          '\\(-6\\)'
+        ),
       ],
     }),
   'dane2020s-q33a': () =>
@@ -184,10 +208,34 @@ const PATCHES = {
       distractors: ['\\(7\\)', '\\(-5\\)', '\\(0\\)'],
       a: nextA(),
       solutionSteps: [
-        step('Interpret the integral as net signed area under the piecewise graph.', '\\(\\text{signed area}\\)'),
-        step('Add positive quarter-circle area and subtract areas of the regions below the \\(x\\)-axis.', '\\(\\text{+ above, − below}\\)'),
-        step('With the given geometry the total is \\(-7\\).', '\\(\\int_0^8 f = -7\\)'),
-        step('Check sign: more area below than above ⇒ negative answer.', '\\(-7\\)'),
+        step(
+          'A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative. Split the path into the four geometric pieces \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\).',
+          '\\(\\displaystyle\\int_0^8 f(x)\\,dx = [AB] + [BC] + [CD] + [DE]\\)'
+        ),
+        step(
+          'Piece \\(AB\\): quarter circle of radius \\(2\\) centred at the origin, from \\(A(0,2)\\) to \\(B(2,0)\\), entirely above the \\(x\\)-axis. Area of a full circle is \\(\\pi r^2\\), so a quarter is \\(\\tfrac14\\pi r^2\\).',
+          '\\([AB] = +\\dfrac{1}{4}\\pi(2)^2 = +\\dfrac{1}{4}\\pi\\cdot 4 = +\\pi\\)'
+        ),
+        step(
+          'Piece \\(BC\\): straight line from \\(B(2,0)\\) to \\(C(3,-2)\\), entirely below the \\(x\\)-axis. The region between this line and the \\(x\\)-axis is a right triangle with base \\(3-2=1\\) and height \\(2\\). Signed area is negative.',
+          '\\([BC] = -\\dfrac{1}{2}\\times 1\\times 2 = -1\\)'
+        ),
+        step(
+          'Piece \\(CD\\): horizontal segment from \\(C(3,-2)\\) to \\(D(6,-2)\\), so \\(y=-2\\) for \\(3\\le x\\le 6\\). This is a rectangle of width \\(6-3=3\\) and height \\(2\\), fully below the axis.',
+          '\\([CD] = -(3)\\times(2) = -6\\)'
+        ),
+        step(
+          'Piece \\(DE\\): quarter circle of radius \\(2\\) from \\(D(6,-2)\\) to \\(E(8,0)\\) (centre \\((8,-2)\\)), entirely below the \\(x\\)-axis. Same area magnitude as \\(AB\\), but signed negative.',
+          '\\([DE] = -\\dfrac{1}{4}\\pi(2)^2 = -\\pi\\)'
+        ),
+        step(
+          'Add the four signed areas. The \\(+\\pi\\) and \\(-\\pi\\) cancel, leaving the triangular and rectangular contributions.',
+          '\\(\\pi + (-1) + (-6) + (-\\pi) = \\pi - 1 - 6 - \\pi = -7\\)'
+        ),
+        step(
+          'Therefore \\(\\displaystyle\\int_0^8 f(x)\\,dx = -7\\). (Net area below the axis exceeds the area above.)',
+          '\\(-7\\)'
+        ),
       ],
     }),
 

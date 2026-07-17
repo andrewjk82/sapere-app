@@ -1565,28 +1565,32 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "s": "Quarter circle $AB$ (above): $+\\frac{1}{4}\\pi(2)^2 = \\pi$. Triangle $BC$ (below, base $1$, height $2$): $-1$. Rectangle $CD$ (below, $3\\times 2$): $-6$. Quarter circle $DE$ (below): $-\\pi$. Total: $\\pi - 1 - 6 - \\pi = -7$.",
     "solutionSteps": [
       {
-        "explanation": "Break the signed area into four geometric pieces.",
-        "workingOut": "\\int_0^8 f\\,dx = [AB] + [BC] + [CD] + [DE]"
+        "explanation": "A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative. Split the path into the four geometric pieces \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\).",
+        "workingOut": "\\displaystyle\\int_0^8 f(x)\\,dx = [AB] + [BC] + [CD] + [DE]"
       },
       {
-        "explanation": "Quarter circle \\(AB\\), radius \\(2\\), above the axis.",
-        "workingOut": "[AB] = +\\tfrac{1}{4}\\pi(2)^2 = \\pi"
+        "explanation": "Piece \\(AB\\): quarter circle of radius \\(2\\) centred at the origin, from \\(A(0,2)\\) to \\(B(2,0)\\), entirely above the \\(x\\)-axis. Area of a full circle is \\(\\pi r^2\\), so a quarter is \\(\\tfrac14\\pi r^2\\).",
+        "workingOut": "[AB] = +\\dfrac{1}{4}\\pi(2)^2 = +\\dfrac{1}{4}\\pi\\cdot 4 = +\\pi"
       },
       {
-        "explanation": "Triangle \\(BC\\) below the axis: base \\(1\\), height \\(2\\).",
-        "workingOut": "[BC] = -\\tfrac{1}{2}(1)(2) = -1"
+        "explanation": "Piece \\(BC\\): straight line from \\(B(2,0)\\) to \\(C(3,-2)\\), entirely below the \\(x\\)-axis. The region between this line and the \\(x\\)-axis is a right triangle with base \\(3-2=1\\) and height \\(2\\). Signed area is negative.",
+        "workingOut": "[BC] = -\\dfrac{1}{2}\\times 1\\times 2 = -1"
       },
       {
-        "explanation": "Rectangle \\(CD\\) below the axis: width \\(3\\), height \\(2\\).",
-        "workingOut": "[CD] = -(3)(2) = -6"
+        "explanation": "Piece \\(CD\\): horizontal segment from \\(C(3,-2)\\) to \\(D(6,-2)\\), so \\(y=-2\\) for \\(3\\le x\\le 6\\). This is a rectangle of width \\(6-3=3\\) and height \\(2\\), fully below the axis.",
+        "workingOut": "[CD] = -(3)\\times(2) = -6"
       },
       {
-        "explanation": "Quarter circle \\(DE\\), radius \\(2\\), below the axis.",
-        "workingOut": "[DE] = -\\tfrac{1}{4}\\pi(2)^2 = -\\pi"
+        "explanation": "Piece \\(DE\\): quarter circle of radius \\(2\\) from \\(D(6,-2)\\) to \\(E(8,0)\\) (centre \\((8,-2)\\)), entirely below the \\(x\\)-axis. Same area magnitude as \\(AB\\), but signed negative.",
+        "workingOut": "[DE] = -\\dfrac{1}{4}\\pi(2)^2 = -\\pi"
       },
       {
-        "explanation": "Add the signed areas; the \\(\\pi\\) terms cancel.",
-        "workingOut": "\\pi - 1 - 6 - \\pi = -7"
+        "explanation": "Add the four signed areas. The \\(+\\pi\\) and \\(-\\pi\\) cancel, leaving the triangular and rectangular contributions.",
+        "workingOut": "\\pi + (-1) + (-6) + (-\\pi) = \\pi - 1 - 6 - \\pi = -7"
+      },
+      {
+        "explanation": "Therefore \\(\\displaystyle\\int_0^8 f(x)\\,dx = -7\\). (Net area below the axis exceeds the area above.)",
+        "workingOut": "-7"
       }
     ]
   },
