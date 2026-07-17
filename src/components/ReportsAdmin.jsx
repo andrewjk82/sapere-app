@@ -102,6 +102,56 @@ const resolveCorrectOptionIndices = (options, answer) => {
 const isMcqOptionCorrect = (opt, index, answer, options) =>
   resolveCorrectOptionIndices(options, answer).has(index);
 
+// Which option does the STUDENT's stored answer refer to?
+//
+// This is NOT the same resolution as the correct answer. `q.answer` is
+// normalised at write time to be the literal VALUE for auto-graded questions
+// (see DailyChallenge's correctQuestionAnswer), so resolveCorrectOptionIndices
+// is right to suppress an index reading whenever the option list looks
+// numeric. But `studentAnswer` on a report can come from screens that store
+// the raw DISPLAY INDEX the student clicked (TopicPracticeSession, ExamPrep,
+// HscTypePracticeSession all save `String(i)`/`i`, never option text) — for
+// those, an index reading is exactly right even when every option is a
+// number. Suppressing it the same way silently erases the "chosen" highlight
+// on any numeric-option question, which the audit shows is most of them.
+//
+// So: try a value/letter match first (works for the text-storing screens —
+// DailyChallenge, ChallengeQuizView, SecretNoteView). Only fall back to
+// treating the answer as a raw index when NO option's value matched it —
+// never in addition to one. That is what the old code got wrong: it OR'd the
+// index check onto the value check per-option, so a value match on option B
+// and a coincidental index match on option D (same numeral) both fired.
+const resolveChosenOptionIndices = (options, studentAnswer) => {
+  const list = Array.isArray(options) ? options : [];
+  if (list.length === 0 || studentAnswer === null || studentAnswer === undefined || studentAnswer === '') {
+    return new Set();
+  }
+  const ans = String(studentAnswer).trim();
+
+  const valueHits = [];
+  list.forEach((opt, i) => {
+    const text = optionText(opt).trim();
+    if (text === '') return;
+    if (answersMatch(text, ans) || text === ans) valueHits.push(i);
+  });
+  if (valueHits.length > 0) return new Set(valueHits);
+
+  if (/^[A-Da-d]$/.test(ans)) {
+    const idx = ans.toUpperCase().charCodeAt(0) - 65;
+    if (idx >= 0 && idx < list.length) return new Set([idx]);
+  }
+
+  if (/^\d+$/.test(ans)) {
+    const idx = Number(ans);
+    if (Number.isInteger(idx) && idx >= 0 && idx < list.length) return new Set([idx]);
+  }
+
+  return new Set();
+};
+
+const isMcqOptionChosen = (index, studentAnswer, options) =>
+  resolveChosenOptionIndices(options, studentAnswer).has(index);
+
 /** Split "expr or expr" answers so each piece renders cleanly (avoids "1/torv"). */
 const formatAnswerParts = (raw) => {
   const s = String(raw ?? '').trim();
@@ -1665,12 +1715,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                           : '';
                         // Value-first match — never treat answer "3" as option index 3 (D).
                         const isCorrect = isMcqOptionCorrect(opt, i, q.answer, options);
-                        const isChosen =
-                          String(studentAnswer) === String(text)
-                          || answersMatch(studentAnswer, text)
-                          || (Number.isInteger(Number(studentAnswer))
-                            && String(Number(studentAnswer)) === String(studentAnswer).trim()
-                            && Number(studentAnswer) === i);
+                        const isChosen = isMcqOptionChosen(i, studentAnswer, options);
                         const isWrong = isChosen && !isCorrect;
                         return (
                           <div key={i} style={{

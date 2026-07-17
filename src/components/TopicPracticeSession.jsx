@@ -373,9 +373,15 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const openReport = async () => {
     let sketchDataUrl = null;
     try { sketchDataUrl = await sketchRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
+    // MC answers live in state as the index into the DISPLAYED (shuffled)
+    // list. A raw index means nothing outside this attempt — ReportsAdmin
+    // has no way to know it isn't option text, and a numeral like "3" can
+    // collide with a different option's own index. Store option text, same
+    // as every other report source, so the review screen never has to guess.
+    const reportedAnswer = isMC ? optionTextAt(q?.options || [], userAnswer) : userAnswer;
     reportTargetRef.current = {
       ...q,
-      _studentAnswer: userAnswer,
+      _studentAnswer: reportedAnswer,
       _sketchDataUrl: sketchDataUrl,
     };
     setReportMessage('');

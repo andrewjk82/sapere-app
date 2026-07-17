@@ -350,7 +350,11 @@ const QuizView = ({
           onClick={async () => {
             let sketchDataUrl = null;
             try { sketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
-            onReport?.(q, draft, sketchDataUrl);
+            // `draft` is the index into the DISPLAYED (shuffled) list — meaningless
+            // outside this attempt, and a numeral can collide with another option's
+            // index. Report the option TEXT, like every other report source.
+            const reportedAnswer = q.type === 'multiple_choice' ? optionTextAt(q.options, draft) : draft;
+            onReport?.(q, reportedAnswer, sketchDataUrl);
           }}
           title="Report a problem with this question"
           style={{ width: '36px', height: '36px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 12px rgba(0,0,0,0.03)' }}
