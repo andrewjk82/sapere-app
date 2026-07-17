@@ -15,7 +15,8 @@
     "validate-seeds": "node --import ./scripts/extResolve.mjs scripts/validateSeeds.mjs",
     "test:mc-shuffle": "node scripts/testMcOptionShuffle.mjs",
     "test:mc-guard": "node scripts/checkMcShuffleUsage.mjs",
-    "test:mc": "npm run test:mc-shuffle && npm run test:mc-guard",
+    "test:mc": "npm run test:mc-shuffle && npm run test:mc-guard && npm run test:answer-displays",
+    "test:answer-displays": "node --import ./scripts/extResolve.mjs scripts/testAnswerDisplays.mjs",
     "audit:mc-seeds": "node --import ./scripts/extResolve.mjs scripts/auditMcSeedAnswers.mjs"
   },
   "dependencies": {

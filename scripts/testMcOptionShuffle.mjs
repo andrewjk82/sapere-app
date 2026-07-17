@@ -206,6 +206,31 @@ check('fuzz: grading always agrees with the green highlight', () => {
   }
 });
 
+// ── raw vs display text: both must grade identically ──
+check('mangled seed LaTeX: raw option text grades same as display text', () => {
+  // 182 real seeds contain "\\\f" in source — backslash + FORM FEED + "rac".
+  // toDisplayText heals it for display; grading must accept the raw form too
+  // (TopicPracticeSession passes raw stored text, ChallengeQuizView display text).
+  const mangled = '\\\\(\\' + '\f' + 'rac{1}{20a}\\\\)';
+  const q = {
+    type: 'multiple_choice',
+    isManual: true,
+    answer: '1',
+    options: [
+      { text: '\\\\(\\' + '\f' + 'rac{1}{9a^2}\\\\)', imageUrl: '' },
+      { text: mangled, imageUrl: '' },
+      { text: '\\\\(\\' + '\f' + 'rac{1}{20a^2}\\\\)', imageUrl: '' },
+    ],
+  };
+  const display = prepareShuffledMcOptions(q, { order: [2, 1, 0] });
+  const i = display.findIndex((o) => o.text === mangled);
+  assert.ok(i >= 0);
+  assert.equal(gradeMcSelection(q, display[i].text, i, display), true, 'raw text graded wrong');
+  assert.equal(isDisplayedOptionCorrect(q, display, i), true, 'highlight missing');
+  const j = (i + 1) % display.length;
+  assert.equal(gradeMcSelection(q, display[j].text, j, display), false, 'wrong option graded right');
+});
+
 check('permutation length and uniqueness', () => {
   const p = permutation(5, () => 0.5);
   assert.equal(p.length, 5);

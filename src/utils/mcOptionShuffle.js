@@ -177,6 +177,14 @@ export function gradeMcSelection(question, optionTextIn, optIdx, displayOptions)
   // reading exactly like the answer is correct, whichever copy they tapped.
   if (answersMatch(optionTextIn, correctText)) return true;
 
+  // Callers pass either the raw stored option text or its display form —
+  // both must grade identically. correctText is display-normalised
+  // (toDisplayText), and normalisation isn't a no-op: 182 seeds carry
+  // \\\f-mangled LaTeX ("\<FF>rac…") that toDisplayText heals, so the raw
+  // text only matches the answer AFTER the same healing.
+  const normalizedIn = optionText(optionTextIn);
+  if (normalizedIn !== optionTextIn && answersMatch(normalizedIn, correctText)) return true;
+
   // Not shuffled: a raw index answer still refers to the untouched list.
   if (!shuffled && optIdx != null && optIdx !== '') {
     if (isOptionIndexAnswer(question.answer ?? question.a, opts)) {
