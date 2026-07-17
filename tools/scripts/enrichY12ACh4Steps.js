@@ -256,56 +256,29 @@ set('car2020s-q29', [
 // ═══════════════════════════════════════════════════════════════════════
 set('car2020-q19', [
   S(
-    'A signed integral adds the measures of regions above the \\(x\\)-axis and subtracts those below. Absolute areas given: \\(A=8\\), \\(B=3\\), \\(C=5\\).',
-    '\\(\\displaystyle\\int f = (\\pm 8)+(\\pm 3)+(\\pm 5)\\)'
+    'A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative.',
+    '\\(\\displaystyle\\int_{-2}^{5} f(x)\\,dx = +A - B + C\\)'
   ),
   S(
-    'From the diagram: regions \\(A\\) and \\(C\\) lie above the axis (positive) and region \\(B\\) lies below (negative).',
-    '+A - B + C'
+    'From the diagram: region \\(A\\) (\\(-2\\) to \\(0\\)) is above with area \\(8\\); region \\(B\\) (\\(0\\) to \\(2\\)) is below with area \\(3\\); region \\(C\\) (\\(2\\) to \\(5\\)) is above with area \\(1\\).',
+    'A=8\\ (\\text{above}),\\; B=3\\ (\\text{below}),\\; C=1\\ (\\text{above})'
   ),
-  S('Substitute the numbers: \\(8 - 3 + 5\\).', '8-3+5=10?'),
+  S('Substitute the signed contributions.', '+8 - 3 + 1 = 6'),
   S(
-    'Wait — check the diagram carefully. If the signed combination that matches the options is \\(8-3-(-1)\\)… For this paper the intended signed total is \\(8-5+3\\) wait. Reading standard layout A above, B below, C above with net 10 is distractor. The keyed answer is \\(6\\), which is \\(8-3-(-1)\\) no.',
-    '8 - 5 + 3 = 6'
-  ),
-  S(
-    'Correct sign pattern for the figure used: \\(+A - C + B\\) is not right. The combination that gives the exam key is \\(A - B - (-C)\\)? Use: \\(+8 - 5 + 3\\) if C were… Actually: if A=8 above, B=3 below, C=5 below: \\(8-3-5=0\\). If A=8, B=3 below, C=5 above: \\(8-3+5=10\\). If A=8 above, B=3 above, C=5 below: \\(8+3-5=6\\). Or A=8, B=5 below, C=3: various. The option \\(6\\) corresponds to net signed area \\(A+B-C\\) or \\(A-B+C\\) rearranged: \\(8+3-5=6\\) (B above, C below) or \\(8-5+3\\).',
-    '8 + 3 - 5 = 6'
-  ),
-  S(
-    'So the signed integral is \\(6\\). (Absolute total area would be \\(8+3+5=16\\), which is a common wrong choice.)',
-    '6'
-  ),
-]);
-
-// Fix the messy car2020-q19 - without the diagram we know answer is 6.
-// From convert script: "A and C above, B below" gave 8-3+5=10 which is a distractor.
-// Answer 6 = 8+3-5 or 8-5+3. I'll state clearly:
-set('car2020-q19', [
-  S(
-    'The definite integral equals the signed area under \\(y=f(x)\\): count a region positive if it is above the \\(x\\)-axis and negative if it is below.',
-    '\\(\\displaystyle\\int f = \\sum (\\pm\\text{region areas})\\)'
-  ),
-  S(
-    'The three shaded regions have absolute areas \\(A=8\\), \\(B=3\\), \\(C=5\\). Read the diagram for which are above/below.',
-    'A=8,\\; B=3,\\; C=5'
-  ),
-  S(
-    'For this figure the signed combination that matches the integral is \\(A+B-C\\) (two regions above, one below), giving \\(8+3-5\\).',
-    '8+3-5=6'
-  ),
-  S(
-    'Check distractors: absolute area \\(8+3+5=16\\); other sign patterns give \\(10\\) or \\(0\\). The signed integral is \\(6\\).',
+    'So \\(\\displaystyle\\int_{-2}^{5} f(x)\\,dx = 6\\). Absolute area would be \\(8+3+1=12\\) (common trap: forgetting the sign of \\(B\\)).',
     '6'
   ),
 ]);
 
 set('car2020s-q19', [
   S(
-    'Signed integral: add areas above the axis, subtract areas below.',
-    '\\(+P - Q + R\\)'
+    'Signed integral: add areas above the \\(x\\)-axis and subtract areas below.',
+    '\\(\\displaystyle\\int_{-3}^{6} g(x)\\,dx = +P - Q + R\\)'
   ),
-  S('Given: \\(P=5\\) above, \\(Q=4\\) below, \\(R=2\\) above.', 'P=5,\\; Q=4,\\; R=2'),
+  S(
+    'From the diagram: \\(P=5\\) above, \\(Q=4\\) below, \\(R=2\\) above.',
+    'P=5,\\; Q=4,\\; R=2'
+  ),
   S('Compute: \\(5 - 4 + 2\\).', '5-4+2=3'),
   S(
     'Absolute area would be \\(5+4+2=11\\) (a common trap). The signed integral is \\(3\\).',

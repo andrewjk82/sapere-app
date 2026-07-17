@@ -665,26 +665,27 @@ export const CARINGBAH_2020_QUESTIONS = [
     "source": "Caringbah 2020 Trial Q19",
     "type": "short_answer",
     "difficulty": "medium",
-    "q": "The graph of the function $f$ is shown in the diagram. The shaded areas are bounded by $y = f(x)$ and the $x$-axis. The shaded area $A$ is $8$ square units, the shaded area $B$ is $3$ square units and the shaded area $C$ is $1$ square unit. Evaluate $\\displaystyle\\int_{-2}^{5} f(x)\\, dx$.",
+    "q": "The graph of the function $f$ is shown. The shaded areas bounded by $y = f(x)$ and the $x$-axis are: area $A = 8$ (above), area $B = 3$ (below), area $C = 1$ (above). Evaluate $\\displaystyle\\int_{-2}^{5} f(x)\\, dx$.",
     "a": "$6$",
     "opts": [],
     "h": "Use the signed area property: a definite integral equals the area above the $x$-axis minus the area below. Identify where $f$ is positive or negative.",
     "s": "Region $A$ (from $x=-2$ to $0$) is above the $x$-axis: contributes $+8$. Region $B$ (from $0$ to $2$) is below: contributes $-3$. Region $C$ (from $2$ to $5$) is above: contributes $+1$. Total: $\\int_{-2}^{5} f(x)\\,dx = 8 - 3 + 1 = 6$.",
     "solutionSteps": [
       {
-        "explanation": "Recall that a definite integral gives the signed area: regions where \\(f(x) > 0\\) (above the \\(x\\)-axis) contribute positively, and regions where \\(f(x) < 0\\) (below) contribute negatively.",
-        "workingOut": "\\int_{-2}^{5} f(x)\\,dx = (\\text{area above}) - (\\text{area below})"
-      },
-      {
-        "explanation": "Identify each shaded region: \\(A\\) is above the \\(x\\)-axis (positive contribution), \\(B\\) is below (negative), and \\(C\\) is above (positive).",
+        "explanation": "A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative.",
         "workingOut": "\\int_{-2}^{5} f(x)\\,dx = +A - B + C"
       },
       {
-        "explanation": "Substitute the given area values.",
-        "workingOut": "= 8 - 3 + 1 = 6"
+        "explanation": "From the diagram: region \\(A\\) (\\(-2\\) to \\(0\\)) is above with area \\(8\\); region \\(B\\) (\\(0\\) to \\(2\\)) is below with area \\(3\\); region \\(C\\) (\\(2\\) to \\(5\\)) is above with area \\(1\\).",
+        "workingOut": "A=8\\ (\\text{above}),\\; B=3\\ (\\text{below}),\\; C=1\\ (\\text{above})"
+      },
+      {
+        "explanation": "Substitute the signed contributions.",
+        "workingOut": "+8 - 3 + 1 = 6"
       }
     ]
   },
+
   {
     "id": "car2020-q20",
     "topicId": "y12a-4G",

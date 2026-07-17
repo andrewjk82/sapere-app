@@ -353,14 +353,17 @@ const PATCHES = {
       topicId: 'y12a-4C',
       difficulty: 'medium',
       source: 'Caringbah 2020',
-      q: 'The graph of \\(f\\) is shown with shaded areas bounded by \\(y=f(x)\\) and the \\(x\\)-axis: area A = 8, area B = 3, area C = 5 (see diagram for which are above/below). The signed integral of \\(f\\) over the full interval is:',
+      q: 'The graph of the function \\(f\\) is shown. Shaded areas: \\(A=8\\) above, \\(B=3\\) below, \\(C=1\\) above. Evaluate \\(\\displaystyle\\int_{-2}^{5} f(x)\\,dx\\).',
       correct: '\\(6\\)',
-      distractors: ['\\(16\\)', '\\(10\\)', '\\(0\\)'],
+      distractors: ['\\(12\\)', '\\(10\\)', '\\(4\\)'],
       a: nextA(),
       solutionSteps: [
-        step('A signed integral adds areas above the axis and subtracts areas below.', '\\(\\int = \\pm A \\pm B \\pm C\\)'),
-        step('Reading the diagram signs (A and C above, B below, or as marked) yields net \\(6\\).', '\\(6\\)'),
-        step('Absolute area would be \\(16\\); that is not the signed integral.', '\\(6\\)'),
+        step(
+          'Signed area: above positive, below negative. From the diagram \\(+A - B + C\\).',
+          '\\(\\displaystyle\\int_{-2}^{5} f = +A - B + C\\)'
+        ),
+        step('Substitute: \\(A=8\\) (above), \\(B=3\\) (below), \\(C=1\\) (above).', '+8 - 3 + 1'),
+        step('Compute: \\(8 - 3 + 1 = 6\\). Absolute area \\(12\\) is a common trap.', '\\(6\\)'),
       ],
     }),
   'car2020s-q19': () =>
@@ -369,12 +372,12 @@ const PATCHES = {
       topicId: 'y12a-4C',
       difficulty: 'medium',
       source: 'Caringbah 2020 similar',
-      q: 'Areas for \\(y=g(x)\\): \\(P=5\\) above, \\(Q=4\\) below, \\(R=2\\) above. Find the signed integral over all three regions.',
+      q: 'The graph of \\(g\\) is shown. Shaded areas: \\(P=5\\) above, \\(Q=4\\) below, \\(R=2\\) above. Evaluate \\(\\displaystyle\\int_{-3}^{6} g(x)\\,dx\\).',
       correct: '\\(3\\)',
       distractors: ['\\(11\\)', '\\(1\\)', '\\(7\\)'],
       a: nextA(),
       solutionSteps: [
-        step('Signed total: \\(+P - Q + R\\).', '\\(P-Q+R\\)'),
+        step('Signed total: \\(+P - Q + R\\).', '\\(+P - Q + R\\)'),
         step('\\(5 - 4 + 2 = 3\\).', '\\(3\\)'),
         step('Absolute area would be \\(11\\) — that is a different quantity.', '\\(3\\)'),
       ],
