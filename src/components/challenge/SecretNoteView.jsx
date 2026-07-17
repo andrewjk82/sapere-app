@@ -33,6 +33,8 @@ import {
   MISTAKE_TAGS,
   getDueNote,
   getNoteCount,
+  getNextDueAt,
+  nextReviewPhrase,
   generateTwin,
   recordResult,
   recordTwinResult,
@@ -716,14 +718,15 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   // Empty notebook — either nothing saved, or only future-scheduled reviews.
   if (phase === 'empty') {
     const scheduledOnly = savedTotal > 0;
+    const whenBack = nextReviewPhrase(getNextDueAt(kind, uid));
     return (
-      <NoteShell {...shellProps} subtitle={scheduledOnly ? `${savedTotal} saved · next review later` : '0 saved'}>
+      <NoteShell {...shellProps} subtitle={scheduledOnly ? `Caught up · ${savedTotal} come back ${whenBack}` : '0 saved'}>
         <div className="sn__card sn__center">
-          <div className="sn__big-emoji">{scheduledOnly ? '📅' : '🎉'}</div>
-          <h2 className="sn__h2">{scheduledOnly ? 'Nothing due right now' : 'Notebook is clear!'}</h2>
+          <div className="sn__big-emoji">{scheduledOnly ? '✅' : '🎉'}</div>
+          <h2 className="sn__h2">{scheduledOnly ? "You're all caught up!" : 'Notebook is clear!'}</h2>
           <p className="sn__muted">
             {scheduledOnly
-              ? `You still have ${savedTotal} note${savedTotal === 1 ? '' : 's'} saved for later spaced review. Come back when they're due.`
+              ? `Nothing to review right now. Your ${savedTotal} saved note${savedTotal === 1 ? '' : 's'} ${savedTotal === 1 ? 'is' : 'are'} spaced out to help you remember — ${savedTotal === 1 ? 'it comes' : 'they come'} back ${whenBack}.`
               : 'You have no mistakes saved for this test. Keep up the great work.'}
             {summary.xp > 0 ? ` Clear bonus: +${summary.xp} XP.` : ''}
           </p>

@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { getLesson } from '../../lessons/registry';
 import LessonPlayer from '../lessons/LessonPlayer';
+import { nextReviewPhrase } from '../../utils/secretNote';
 
 // ── Per-kind palette + glyph for the session cards ─────────
 const KIND = {
@@ -48,19 +49,23 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
   const m = KIND[kind];
   const total = note?.total || 0;
   const due = note?.due || 0;
-  // "ready to review" = due only. Future-scheduled cards stay saved but are
-  // not opened in this session — copy must not contradict the session queue.
+  // Three distinct states so students are never told "9 saved" and left to
+  // assume 9 are waiting to be done:
+  //   • due > 0        → there IS something to review now
+  //   • due 0, total>0 → caught up; the saved cards are scheduled for later
+  //   • total 0        → nothing saved
+  const caughtUp = due === 0 && total > 0;
   const sub = total === 0
     ? 'no notes yet'
     : due > 0
     ? (total > due
-      ? `${due} ready to review · ${total} saved`
+      ? `${due} ready now · ${total} saved`
       : `${due} question${due === 1 ? '' : 's'} ready to review`)
-    : `${total} saved · next review later`;
+    : `All caught up — ${total} come${total === 1 ? 's' : ''} back ${nextReviewPhrase(note?.nextDueAt)}`;
   return (
     <button
       type="button"
-      className={`cs__note-strip cs__note-strip--${kind}`}
+      className={`cs__note-strip cs__note-strip--${kind}${caughtUp ? ' cs__note-strip--rest' : ''}`}
       onClick={() => onOpen?.(kind)}
     >
       <span className="cs__note-badge" style={{ background: m.badge }}><BookLock size={17} /></span>
@@ -68,7 +73,15 @@ const SecretNoteStrip = ({ kind, note, onOpen }) => {
         <strong>Secret Note</strong>
         <span className="cs__note-sub">{sub}</span>
       </span>
-      <span className="cs__note-cta">Review <ArrowRight size={15} /></span>
+      {/* CTA must not say "Review" when nothing is due — that is exactly what
+          made students expect a review and find an empty screen. */}
+      <span className="cs__note-cta">
+        {due > 0
+          ? <>Review <ArrowRight size={15} /></>
+          : total > 0
+          ? <>Caught up <CheckCircle2 size={15} /></>
+          : <>Open <ArrowRight size={15} /></>}
+      </span>
     </button>
   );
 };

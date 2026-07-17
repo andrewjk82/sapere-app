@@ -156,6 +156,31 @@ export function getDueCount(kind, uid) {
   return read(kind, uid).filter((it) => isDue(it, now)).length;
 }
 
+// Earliest future review time among not-yet-due notes (ms), or null when every
+// note is already due / the notebook is empty. Lets the UI tell students WHEN
+// their saved-but-not-due cards come back, instead of a bare "9 saved".
+export function getNextDueAt(kind, uid) {
+  const now = Date.now();
+  let soonest = null;
+  read(kind, uid).forEach((it) => {
+    const at = it.nextReviewAt || 0;
+    if (at > now && (soonest === null || at < soonest)) soonest = at;
+  });
+  return soonest;
+}
+
+// Kid-friendly relative phrasing for when a scheduled review returns.
+// Compared by calendar day so a card due at 11pm tonight reads "tomorrow".
+export function nextReviewPhrase(nextDueAt) {
+  if (!nextDueAt) return 'later';
+  const startOfDay = (t) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+  const days = Math.round((startOfDay(nextDueAt) - startOfDay(Date.now())) / 86400000);
+  if (days <= 0) return 'soon';
+  if (days === 1) return 'tomorrow';
+  if (days <= 7) return `in ${days} days`;
+  return 'next week';
+}
+
 export function getTagCounts(kind, uid) {
   const counts = { mistake: 0, concept: 0, time: 0, comprehension: 0 };
   read(kind, uid).forEach((it) => {

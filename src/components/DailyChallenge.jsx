@@ -54,7 +54,7 @@ import { useChallengeStatus } from '../hooks/useChallengeStatus';
 import { useChallengeHistory } from '../hooks/useChallengeHistory';
 
 // Secret Notebook (local-only mistake review)
-import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount } from '../utils/secretNote';
+import { addMistakes, canGrade, getSyncSnapshot, getNoteCount, getDueCount, getNextDueAt } from '../utils/secretNote';
 import { markLocalChallengeCompleted } from '../services/secretNoteBonusService';
 
 // Answer matching (shared with ExamPrep)
@@ -2317,8 +2317,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   recentHistory={history.slice(0, 5)}
                   isMobile={isMobile}
                   secretNote={{
-                    daily: { total: getNoteCount('daily', user?.uid), due: getDueCount('daily', user?.uid) },
-                    calc: { total: getNoteCount('calc', user?.uid), due: getDueCount('calc', user?.uid) },
+                    daily: { total: getNoteCount('daily', user?.uid), due: getDueCount('daily', user?.uid), nextDueAt: getNextDueAt('daily', user?.uid) },
+                    calc: { total: getNoteCount('calc', user?.uid), due: getDueCount('calc', user?.uid), nextDueAt: getNextDueAt('calc', user?.uid) },
                   }}
                   onOpenSecretNote={(k) => { setSecretNoteKind(k); setStep('secretNote'); }}
                 />
