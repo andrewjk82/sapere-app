@@ -1534,33 +1534,47 @@ export const FORTST_2020_QUESTIONS = [
     "c": "5E",
     "t": "Applications of integration of e^x",
     "source": "Fort Street 2020 Trial Q14(c)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Find the exact shaded area between the two curves $y = 4e^{-x}$ and $y = e^x - 3$, from $x = 0$ to $x = \\ln 4$.",
-    "a": "$3\\ln 4 \\text{ units}^2$",
-    "opts": [],
-    "h": "Integrate (upper curve $-$ lower curve) $= (4e^{-x} - (e^x - 3))$ from $0$ to $\\ln 4$.",
-    "s": "$A = \\int_0^{\\ln 4}(4e^{-x} - e^x + 3)\\,dx = [-4e^{-x} - e^x + 3x]_0^{\\ln 4} = (-4\\cdot\\frac{1}{4} - 4 + 3\\ln 4) - (-4 - 1 + 0) = (-1 - 4 + 3\\ln 4) + 5 = 3\\ln 4$.",
+    "q": "Find the exact shaded area between the curves \\(y = 4e^{-x}\\) and \\(y = e^{x} - 3\\), from \\(x = 0\\) to \\(x = \\ln 4\\).",
+    "question": "Find the exact shaded area between the curves \\(y = 4e^{-x}\\) and \\(y = e^{x} - 3\\), from \\(x = 0\\) to \\(x = \\ln 4\\).",
+    "a": 2,
+    "answer": "2",
+    "opts": [
+      "\\(2\\ln 4\\)",
+      "\\(3\\ln 4 - 5\\)",
+      "\\(3\\ln 4\\)",
+      "\\(4\\ln 4\\)"
+    ],
+    "h": "Integrate (upper minus lower): \\(4e^{-x}-(e^{x}-3)\\) from \\(0\\) to \\(\\ln 4\\).",
+    "hint": "Integrate (upper minus lower): \\(4e^{-x}-(e^{x}-3)\\) from \\(0\\) to \\(\\ln 4\\).",
+    "s": "\\(A=\\int_{0}^{\\ln 4}(4e^{-x}-e^{x}+3)\\,dx=[-4e^{-x}-e^{x}+3x]_{0}^{\\ln 4}=3\\ln 4\\).",
+    "solution": "\\(A=\\int_{0}^{\\ln 4}(4e^{-x}-e^{x}+3)\\,dx=[-4e^{-x}-e^{x}+3x]_{0}^{\\ln 4}=3\\ln 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the area as the integral of the upper curve minus the lower curve over \\([0, ln 4]\\).",
-        "workingOut": "A = \\int_0^{\\ln 4}\\big(4e^{-x} - (e^x - 3)\\big)\\,dx"
+        "explanation": "On \\([0,\\ln 4]\\) the upper curve is \\(y=4e^{-x}\\) and the lower is \\(y=e^{x}-3\\). The shaded area is the definite integral of upper minus lower.",
+        "workingOut": "\\(A=\\int_{0}^{\\ln 4}\\big(4e^{-x}-(e^{x}-3)\\big)\\,dx=\\int_{0}^{\\ln 4}(4e^{-x}-e^{x}+3)\\,dx\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the primitive term by term.",
-        "workingOut": "= \\big[-4e^{-x} - e^x + 3x\\big]_0^{\\ln 4}"
+        "explanation": "Integrate term by term: \\(\\int 4e^{-x}\\,dx=-4e^{-x}\\), \\(\\int e^{x}\\,dx=e^{x}\\), and \\(\\int 3\\,dx=3x\\).",
+        "workingOut": "\\(A=\\big[-4e^{-x}-e^{x}+3x\\big]_{0}^{\\ln 4}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x = \\ln 4\\), using \\(e^{-\\ln 4} = \\frac{1}{4}\\) and \\(e^{\\ln 4} = 4\\).",
-        "workingOut": "= \\left(-4\\cdot\\tfrac{1}{4} - 4 + 3\\ln 4\\right) = (-1 - 4 + 3\\ln 4)"
+        "explanation": "At the upper limit \\(x=\\ln 4\\), use \\(e^{-\\ln 4}=\\dfrac{1}{4}\\) and \\(e^{\\ln 4}=4\\).",
+        "workingOut": "\\(-4e^{-\\ln 4}-e^{\\ln 4}+3\\ln 4=-4\\cdot\\dfrac{1}{4}-4+3\\ln 4=-1-4+3\\ln 4=-5+3\\ln 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x = 0\\) (\\(e^0 = 1\\)).",
-        "workingOut": "- (-4 - 1 + 0) = +5"
+        "explanation": "At the lower limit \\(x=0\\), use \\(e^{0}=1\\).",
+        "workingOut": "\\(-4e^{0}-e^{0}+3\\cdot 0=-4-1=-5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine to get the exact area.",
-        "workingOut": "A = -5 + 3\\ln 4 + 5 = 3\\ln 4 \\text{ units}^2"
+        "explanation": "Subtract lower from upper: \\((-5+3\\ln 4)-(-5)=3\\ln 4\\). The exact shaded area is \\(3\\ln 4\\) square units.",
+        "workingOut": "\\(A=3\\ln 4\\)",
+        "graphData": null
       }
     ]
   },

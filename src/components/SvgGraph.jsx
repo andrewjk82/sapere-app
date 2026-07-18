@@ -5,7 +5,8 @@
  * pure-SVG renderer that reads the same graphData.jsxGraph format.
  *
  * Supported element types parsed from `script`:
- *   functiongraph, curve, arrow, axis, point, text, line, segment
+ *   functiongraph, curve, arrow, axis, point, text, line, segment,
+ *   polygon (filled region), integral (shade under a functiongraph)
  *
  * Supported element types from `elements` array:
  *   point (with coords, name, color, label)
@@ -154,12 +155,18 @@ const SvgGraph = ({ data }) => {
         const board = {
           create: (type, parents, attrs = {}) => {
             const t = String(type).toLowerCase();
-            list.push({ src: 'script', type: t, parents: parents || [], attrs });
-            const mock = { _type: t, _explicit: true };
+            const entry = { src: 'script', type: t, parents: parents || [], attrs };
+            list.push(entry);
+            const mock = { _type: t, _explicit: true, _entry: entry };
             if (t === 'point' && Array.isArray(parents)) {
               mock.X = () => parents[0];
               mock.Y = () => parents[1];
               mock.coords = { usrCoords: [1, parents[0], parents[1]] };
+            }
+            if (t === 'functiongraph' || t === 'curve') {
+              mock._fn = typeof parents?.[0] === 'function' ? parents[0] : null;
+              mock._dMin = parents?.[1];
+              mock._dMax = parents?.[2];
             }
             return mock;
           },
@@ -194,6 +201,11 @@ const SvgGraph = ({ data }) => {
   const sPoints  = [];   // script points
   const sTexts   = [];   // script texts
   const ePoints  = [];   // element points
+  const polygons = [];   // filled regions
+  const integrals = [];  // shade under curve: parents [[a,b], curveRef]
+
+  // Resolve mock refs created in script (functiongraph returns mock object)
+  const mockCurves = [];
 
   items.forEach(it => {
     if (it.src === 'elements') { if (it.type === 'point') ePoints.push(it); return; }
@@ -203,6 +215,8 @@ const SvgGraph = ({ data }) => {
       case 'line': case 'segment':       lines.push(it);  break;
       case 'point':                      sPoints.push(it); break;
       case 'text':                       sTexts.push(it);  break;
+      case 'polygon':                    polygons.push(it); break;
+      case 'integral':                   integrals.push(it); break;
       default: break;
     }
   });
@@ -255,6 +269,48 @@ const SvgGraph = ({ data }) => {
       };
     }
     return null;
+  }).filter(Boolean);
+
+  /* ── Filled polygons: parents = [[x,y], ...] or array of point coords ── */
+  const polyPaths = polygons.map((p, idx) => {
+    const pts = (p.parents || []).map((pt) => {
+      if (Array.isArray(pt) && pt.length >= 2) return [pt[0], pt[1]];
+      if (pt && typeof pt.X === 'function') return [pt.X(), pt.Y()];
+      return null;
+    }).filter(Boolean);
+    if (pts.length < 3) return null;
+    const d = pts.map((pt, i) => `${i === 0 ? 'M' : 'L'}${toX(pt[0]).toFixed(1)},${toY(pt[1]).toFixed(1)}`).join(' ') + ' Z';
+    const fill = mapColor(p.attrs.fillColor || p.attrs.color || '#93c5fd');
+    const opacity = p.attrs.fillOpacity != null ? Number(p.attrs.fillOpacity) : 0.35;
+    return { d, fill, opacity, idx };
+  }).filter(Boolean);
+
+  /* ── Integral shade under a function: parents [[a,b], curveMock] ── */
+  const integralPaths = integrals.map((it, idx) => {
+    const lim = it.parents?.[0];
+    const curveRef = it.parents?.[1];
+    if (!Array.isArray(lim) || lim.length < 2) return null;
+    const a = Number(lim[0]);
+    const b = Number(lim[1]);
+    let fn = null;
+    if (curveRef && typeof curveRef._fn === 'function') fn = curveRef._fn;
+    else if (typeof curveRef === 'function') fn = curveRef;
+    else if (curves[0] && typeof curves[0].parents?.[0] === 'function') fn = curves[0].parents[0];
+    if (!fn || !Number.isFinite(a) || !Number.isFinite(b)) return null;
+    const N = 120;
+    const step = (b - a) / N;
+    let d = `M${toX(a).toFixed(1)},${toY(0).toFixed(1)}`;
+    for (let i = 0; i <= N; i++) {
+      const x = a + i * step;
+      let y = 0;
+      try { y = fn(x); } catch { y = 0; }
+      if (!Number.isFinite(y)) y = 0;
+      d += ` L${toX(x).toFixed(1)},${toY(y).toFixed(1)}`;
+    }
+    d += ` L${toX(b).toFixed(1)},${toY(0).toFixed(1)} Z`;
+    const fill = mapColor(it.attrs.fillColor || '#93c5fd');
+    const opacity = it.attrs.fillOpacity != null ? Number(it.attrs.fillOpacity) : 0.4;
+    return { d, fill, opacity, idx };
   }).filter(Boolean);
 
   /* ═══════════════════════════════════════════════════════════════════
@@ -351,6 +407,18 @@ const SvgGraph = ({ data }) => {
               strokeDasharray={ln.attrs.dash ? '6 3' : undefined} />
           );
         })}
+
+        {/* ── Shaded regions (under curves / polygons) — draw before strokes ── */}
+        {polyPaths.map((pp) => (
+          <path key={`poly${pp.idx}`} d={pp.d}
+            fill={pp.fill} fillOpacity={pp.opacity}
+            stroke="none" />
+        ))}
+        {integralPaths.map((ip) => (
+          <path key={`int${ip.idx}`} d={ip.d}
+            fill={ip.fill} fillOpacity={ip.opacity}
+            stroke="none" />
+        ))}
 
         {/* ── Curves (glow + gradient) ── */}
         {curvePaths.map(cp => (

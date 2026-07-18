@@ -1410,33 +1410,47 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "c": "5E",
     "t": "Applications of integration of e^x",
     "source": "Fort Street 2020 Trial Q14(c)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "Find the exact shaded area between $y = 6e^{-x}$ and $y = e^x - 1$, from $x = 0$ to $x = \\ln 3$.",
-    "a": "$2 + \\ln 3 \\text{ units}^2$",
-    "opts": [],
-    "h": "Integrate (upper $-$ lower) $= (6e^{-x} - (e^x - 1))$ from $0$ to $\\ln 3$.",
-    "s": "$A = \\int_0^{\\ln 3}(6e^{-x} - e^x + 1)\\,dx = [-6e^{-x} - e^x + x]_0^{\\ln 3} = (-2 - 3 + \\ln 3) - (-6 - 1 + 0) = -5 + \\ln 3 + 7 = 2 + \\ln 3$.",
+    "q": "Find the exact shaded area between the curves \\(y = 6e^{-x}\\) and \\(y = e^{x} - 1\\), from \\(x = 0\\) to \\(x = \\ln 3\\).",
+    "question": "Find the exact shaded area between the curves \\(y = 6e^{-x}\\) and \\(y = e^{x} - 1\\), from \\(x = 0\\) to \\(x = \\ln 3\\).",
+    "a": 1,
+    "answer": "1",
+    "opts": [
+      "\\(\\ln 3\\)",
+      "\\(2+\\ln 3\\)",
+      "\\(2-\\ln 3\\)",
+      "\\(3+\\ln 3\\)"
+    ],
+    "h": "Integrate (upper minus lower): \\(6e^{-x}-(e^{x}-1)\\) from \\(0\\) to \\(\\ln 3\\).",
+    "hint": "Integrate (upper minus lower): \\(6e^{-x}-(e^{x}-1)\\) from \\(0\\) to \\(\\ln 3\\).",
+    "s": "\\(A=\\int_{0}^{\\ln 3}(6e^{-x}-e^{x}+1)\\,dx=[-6e^{-x}-e^{x}+x]_{0}^{\\ln 3}=2+\\ln 3\\).",
+    "solution": "\\(A=\\int_{0}^{\\ln 3}(6e^{-x}-e^{x}+1)\\,dx=[-6e^{-x}-e^{x}+x]_{0}^{\\ln 3}=2+\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the area integral (upper minus lower).",
-        "workingOut": "A = \\int_0^{\\ln 3}\\big(6e^{-x} - (e^x - 1)\\big)\\,dx"
+        "explanation": "On \\([0,\\ln 3]\\) the upper curve is \\(y=6e^{-x}\\) and the lower is \\(y=e^{x}-1\\). Write the area as the integral of upper minus lower.",
+        "workingOut": "\\(A=\\int_{0}^{\\ln 3}\\big(6e^{-x}-(e^{x}-1)\\big)\\,dx=\\int_{0}^{\\ln 3}(6e^{-x}-e^{x}+1)\\,dx\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the primitive.",
-        "workingOut": "= \\big[-6e^{-x} - e^x + x\\big]_0^{\\ln 3}"
+        "explanation": "Integrate term by term: \\(\\int 6e^{-x}\\,dx=-6e^{-x}\\), \\(\\int e^{x}\\,dx=e^{x}\\), and \\(\\int 1\\,dx=x\\).",
+        "workingOut": "\\(A=\\big[-6e^{-x}-e^{x}+x\\big]_{0}^{\\ln 3}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x = \\ln 3\\) (\\(e^{-\\ln 3} = \\frac13\\), \\(e^{\\ln 3} = 3\\)).",
-        "workingOut": "= (-2 - 3 + \\ln 3)"
+        "explanation": "At \\(x=\\ln 3\\), use \\(e^{-\\ln 3}=\\dfrac{1}{3}\\) and \\(e^{\\ln 3}=3\\).",
+        "workingOut": "\\(-6e^{-\\ln 3}-e^{\\ln 3}+\\ln 3=-6\\cdot\\dfrac{1}{3}-3+\\ln 3=-2-3+\\ln 3=-5+\\ln 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(x = 0\\).",
-        "workingOut": "- (-6 - 1 + 0) = +7"
+        "explanation": "At \\(x=0\\), use \\(e^{0}=1\\).",
+        "workingOut": "\\(-6e^{0}-e^{0}+0=-6-1=-7\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine.",
-        "workingOut": "A = -5 + \\ln 3 + 7 = 2 + \\ln 3 \\text{ units}^2"
+        "explanation": "Subtract lower from upper: \\((-5+\\ln 3)-(-7)=2+\\ln 3\\). The exact shaded area is \\(2+\\ln 3\\) square units.",
+        "workingOut": "\\(A=2+\\ln 3\\)",
+        "graphData": null
       }
     ]
   },
