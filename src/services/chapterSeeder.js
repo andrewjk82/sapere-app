@@ -28,17 +28,24 @@ const rawOptionText = (opt) => (typeof opt === 'object' && opt !== null ? opt.te
 // into the AUTHORED option order or the option's own text. Returns -1 when it
 // refers to nothing — callers MUST treat that as broken and never fall back to
 // index 0. See mcAnswerErrors below.
+//
+// Text match wins over index. Seeds like a:"3" with opts:["4","3","-3","2"]
+// mean the VALUE three (gradient 3), not options[3]. Index-first used to map
+// those to the wrong key (y11a-7d-q6a marked "2" correct). Same rule as
+// isOptionIndexAnswer in mcOptionShuffle.js.
 const resolveSeedCorrectIndex = (rawOpts, rawCorrect) => {
-  let correct = rawCorrect;
-  if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
-    const idx = parseInt(correct, 10);
-    if (idx >= 0 && idx < rawOpts.length) {
-      correct = rawOptionText(rawOpts[idx]);
-    }
-  }
-  return rawOpts.findIndex(
-    (opt) => String(rawOptionText(opt)).trim() === String(correct).trim(),
+  if (rawCorrect === undefined || rawCorrect === null) return -1;
+  const s = String(rawCorrect).trim();
+  const exact = rawOpts.findIndex(
+    (opt) => String(rawOptionText(opt)).trim() === s,
   );
+  if (exact >= 0) return exact;
+  // Only treat as index when no option text equals the answer string.
+  if (/^\d+$/.test(s) || typeof rawCorrect === 'number') {
+    const idx = parseInt(s, 10);
+    if (Number.isInteger(idx) && idx >= 0 && idx < rawOpts.length) return idx;
+  }
+  return -1;
 };
 
 // Write-time ANSWER gate — the counterpart to the LaTeX gate above.
@@ -217,6 +224,15 @@ const mapSeedQuestion = (raw, chapter) => {
           question: sq.question || sq.q || '',
           options: sqOptions,
           answer: sqAnswer,
+          // Matches the parent doc's isManual: true (set unconditionally
+          // below). Without it, mcOptionShuffle's shared resolver treats a
+          // digit-shaped index answer as ambiguous whenever ANY option's own
+          // text also happens to read as that digit (e.g. answer index "0"
+          // colliding with an unrelated option literally reading "0"), and
+          // silently falls back to a text comparison that matches nothing —
+          // the sub becomes ungradeable. 33/332 real MC sub-questions hit
+          // this (audit:sub-mc-ambiguity, 2026-07-18).
+          isManual: true,
           solutionSteps: Array.isArray(sq.solutionSteps) ? sq.solutionSteps : [],
           graphData: sq.graphData || null,
         };

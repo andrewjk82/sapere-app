@@ -1,0 +1,435 @@
+{
+  "generatedAt": "2026-07-18T05:15:42.774Z",
+  "totalMcSubs": 332,
+  "affected": [
+    {
+      "file": "seedYear10Ch2CQuestions.js",
+      "parentId": "y10-2c-q16",
+      "subId": "y10-2c-q16b",
+      "correctIndex": 0,
+      "correctText": "\\(12+4\\sqrt{2}\\)",
+      "options": [
+        "\\(12+4\\sqrt{2}\\)",
+        "\\(\\sqrt{5}\\)",
+        "\\(3\\sqrt{5}\\)",
+        "\\(0\\)"
+      ]
+    },
+    {
+      "file": "seedYear10Ch2CQuestions.js",
+      "parentId": "y10-2c-q17",
+      "subId": "y10-2c-q17b",
+      "correctIndex": 0,
+      "correctText": "\\(29+12\\sqrt{5}\\)",
+      "options": [
+        "\\(29+12\\sqrt{5}\\)",
+        "\\(3\\sqrt{5}\\)",
+        "\\(\\sqrt{5}\\)",
+        "\\(0\\)"
+      ]
+    },
+    {
+      "file": "seedYear10Ch2FQuestions.js",
+      "parentId": "y10-2f-q17",
+      "subId": "y10-2f-q17a",
+      "correctIndex": 0,
+      "correctText": "\\(12+4\\sqrt{2}\\)",
+      "options": [
+        "\\(12+4\\sqrt{2}\\)",
+        "\\(0\\)",
+        "\\(3\\sqrt{5}\\)",
+        "\\(\\sqrt{5}\\)"
+      ]
+    },
+    {
+      "file": "seedYear10Ch2FQuestions.js",
+      "parentId": "y10-2f-q18",
+      "subId": "y10-2f-q18a",
+      "correctIndex": 0,
+      "correctText": "\\(\\frac{36-12\\sqrt{2}}{7}\\)",
+      "options": [
+        "\\(\\frac{36-12\\sqrt{2}}{7}\\)",
+        "\\(\\sqrt{5}\\)",
+        "\\(3\\sqrt{5}\\)",
+        "\\(0\\)"
+      ]
+    },
+    {
+      "file": "seedYear11Ch3EQuestions.js",
+      "parentId": "y11a-3e-q10",
+      "subId": "y11a-3e-q10c",
+      "correctIndex": 0,
+      "correctText": "a > 0",
+      "options": [
+        "a > 0",
+        "a < 0",
+        "a = 0",
+        "For all values of a"
+      ]
+    },
+    {
+      "file": "seedYear11Ch3HQuestions.js",
+      "parentId": "y11a-3h-q3",
+      "subId": "y11a-3h-q3c",
+      "correctIndex": 0,
+      "correctText": "\\( y = -x \\)",
+      "options": [
+        "\\( y = -x \\)",
+        "\\( y = 0 \\)",
+        "\\( x = 0 \\)",
+        "\\( y = 2x \\)"
+      ]
+    },
+    {
+      "file": "seedYear11Ch3JQuestions.js",
+      "parentId": "y11a-3j-q17",
+      "subId": "y11a-3j-q17d",
+      "correctIndex": 3,
+      "correctText": "1/3",
+      "options": [
+        "3",
+        "-3",
+        "0",
+        "1/3"
+      ]
+    },
+    {
+      "file": "seedYear11Ch3JQuestions.js",
+      "parentId": "y11a-3j-q17",
+      "subId": "y11a-3j-q17f",
+      "correctIndex": 2,
+      "correctText": "0",
+      "options": [
+        "2",
+        "-2",
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "file": "seedYear11Ch3JQuestions.js",
+      "parentId": "y11a-3j-q17",
+      "subId": "y11a-3j-q17j",
+      "correctIndex": 0,
+      "correctText": "6",
+      "options": [
+        "6",
+        "3",
+        "-2",
+        "0"
+      ]
+    },
+    {
+      "file": "seedYear11Ch5Questions.js",
+      "parentId": "y11a-5E-new-15",
+      "subId": "y11a-5E-new-15a",
+      "correctIndex": 0,
+      "correctText": "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) or \\(x = 6\\)",
+      "options": [
+        "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) or \\(x = 6\\)",
+        "Intersections \\((2,2)\\) and \\((6,2)\\); solution \\(x = 2\\) only",
+        "Intersections \\((4,2)\\) and \\((0,2)\\); solution \\(x = 4\\) or \\(x = 0\\)",
+        "No intersection; no solution"
+      ]
+    },
+    {
+      "file": "seedYear11Ch5Questions.js",
+      "parentId": "y11a-5E-new-15",
+      "subId": "y11a-5E-new-15b-ii",
+      "correctIndex": 1,
+      "correctText": "\\(x = 4\\) or \\(x = -1\\)",
+      "options": [
+        "\\(x = 4\\) only",
+        "\\(x = 4\\) or \\(x = -1\\)",
+        "\\(x = 1\\) or \\(x = -4\\)",
+        "No solution"
+      ]
+    },
+    {
+      "file": "seedYear11Ch5Questions.js",
+      "parentId": "y11a-5E-new-15",
+      "subId": "y11a-5E-new-15b-iv",
+      "correctIndex": 0,
+      "correctText": "\\(x = -2\\)",
+      "options": [
+        "\\(x = -2\\)",
+        "\\(x = 2\\)",
+        "\\(x = 0\\)",
+        "No solution"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q1",
+      "subId": "y11a-4d-q1a",
+      "correctIndex": 2,
+      "correctText": "4",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q1",
+      "subId": "y11a-4d-q1b",
+      "correctIndex": 1,
+      "correctText": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q2",
+      "subId": "y11a-4d-q2a",
+      "correctIndex": 1,
+      "correctText": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q3",
+      "subId": "y11a-4d-q3a",
+      "correctIndex": 2,
+      "correctText": "3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q3",
+      "subId": "y11a-4d-q3b",
+      "correctIndex": 2,
+      "correctText": "1",
+      "options": [
+        "-1",
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q3",
+      "subId": "y11a-4d-q3c",
+      "correctIndex": 1,
+      "correctText": "2",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q4",
+      "subId": "y11a-4d-q4a",
+      "correctIndex": 1,
+      "correctText": "1",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q4",
+      "subId": "y11a-4d-q4c",
+      "correctIndex": 2,
+      "correctText": "3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear11aCh4DQuestions.js",
+      "parentId": "y11a-4d-q5",
+      "subId": "y11a-4d-q5a",
+      "correctIndex": 2,
+      "correctText": "3",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q1",
+      "subId": "y12a-5c-q1a",
+      "correctIndex": 1,
+      "correctText": "\\(1\\)",
+      "options": [
+        "\\(0\\)",
+        "\\(1\\)",
+        "\\(e\\)",
+        "\\(2\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q3",
+      "subId": "y12a-5c-q3a",
+      "correctIndex": 1,
+      "correctText": "\\(-1\\)",
+      "options": [
+        "\\(1\\)",
+        "\\(-1\\)",
+        "\\(0\\)",
+        "\\(e\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q3",
+      "subId": "y12a-5c-q3b",
+      "correctIndex": 1,
+      "correctText": "\\(1\\)",
+      "options": [
+        "\\(-1\\)",
+        "\\(1\\)",
+        "\\(0\\)",
+        "\\(-e\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q3",
+      "subId": "y12a-5c-q3e",
+      "correctIndex": 1,
+      "correctText": "\\(\\dfrac{1}{2}\\)",
+      "options": [
+        "\\(1\\)",
+        "\\(\\dfrac{1}{2}\\)",
+        "\\(2\\)",
+        "\\(\\dfrac{1}{4}\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q4",
+      "subId": "y12a-5c-q4a",
+      "correctIndex": 1,
+      "correctText": "\\(2\\)",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(e\\)",
+        "\\(0\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q4",
+      "subId": "y12a-5c-q4c",
+      "correctIndex": 1,
+      "correctText": "\\(-2\\)",
+      "options": [
+        "\\(2\\)",
+        "\\(-2\\)",
+        "\\(-1\\)",
+        "\\(1\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q5",
+      "subId": "y12a-5c-q5a",
+      "correctIndex": 1,
+      "correctText": "\\(1\\)",
+      "options": [
+        "\\(0\\)",
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(-1\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q7",
+      "subId": "y12a-5c-q7c",
+      "correctIndex": 0,
+      "correctText": "\\(-2\\)",
+      "options": [
+        "\\(-2\\)",
+        "\\(2\\)",
+        "\\(0\\)",
+        "\\(-1\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q8",
+      "subId": "y12a-5c-q8c",
+      "correctIndex": 1,
+      "correctText": "\\(2\\)",
+      "options": [
+        "\\(1\\)",
+        "\\(2\\)",
+        "\\(4\\)",
+        "\\(\\dfrac{1}{2}\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q11",
+      "subId": "y12a-5c-q11c",
+      "correctIndex": 2,
+      "correctText": "\\(y=2\\)",
+      "options": [
+        "\\(y=0\\)",
+        "\\(y=1\\)",
+        "\\(y=2\\)",
+        "\\(x=2\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5CQuestions.js",
+      "parentId": "y12a-5c-q14",
+      "subId": "y12a-5c-q14d",
+      "correctIndex": 0,
+      "correctText": "\\((-1,-e^{-2})\\)",
+      "options": [
+        "\\((-1,-e^{-2})\\)",
+        "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\)",
+        "\\((0,0)\\)",
+        "\\((1,e^{2})\\)"
+      ]
+    },
+    {
+      "file": "seedYear12Ch5Questions.js",
+      "parentId": "y12a-5a-q12",
+      "subId": "y12a-5a-q12c",
+      "correctIndex": 1,
+      "correctText": "\\(-1\\)",
+      "options": [
+        "\\(-e\\)",
+        "\\(-1\\)",
+        "\\(0\\)",
+        "\\(1\\)"
+      ]
+    }
+  ]
+}
