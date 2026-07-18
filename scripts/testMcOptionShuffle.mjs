@@ -237,6 +237,18 @@ check('permutation length and uniqueness', () => {
   assert.equal(new Set(p).size, 5);
 });
 
+
+// ── Ch5 power notation: e^(7x) must match e^{7x} ──
+check('e^(7x) grades equal to e^{7x}', () => {
+  assert.equal(answersMatch('e^(7x)', 'e^{7x}'), true);
+  assert.equal(answersMatch('6e^(6x)', '6e^{6x}'), true);
+  assert.equal(answersMatch('e^(2x)-4', 'e^{2x}-4'), true);
+});
+check('outer-paren strip still works for (66.0) and or-forms', () => {
+  assert.equal(answersMatch('(66.0)', '66'), true);
+  assert.equal(answersMatch('66', '66 (or 66.0)'), true);
+});
+
 if (process.exitCode) {
   console.error('\nSome tests failed.');
 } else {

@@ -80,7 +80,9 @@ export const robustNormalize = (str, isAlgebraic = false) => {
     .replace(/⁰/g, '^0').replace(/¹/g, '^1').replace(/²/g, '^2').replace(/³/g, '^3')
     .replace(/⁴/g, '^4').replace(/⁵/g, '^5').replace(/⁶/g, '^6')
     .replace(/⁷/g, '^7').replace(/⁸/g, '^8').replace(/⁹/g, '^9')
+    // ASCII power e^(7x) and LaTeX e^{7x} must grade the same (Ch5 seeds).
     .replace(/\^\{([^{}]*)\}/g, '^$1')
+    .replace(/\^\(([^()]*)\)/g, '^$1')
     .replace(/[−–—]/g, '-')
     .replace(/\\cdot|\\times|×|·|⋅|∙|\*/g, '')
     .replace(/\\left|\\right/g, '')
@@ -184,9 +186,31 @@ export const stripLatexWrappers = (value) => {
 export const expandAnswerCandidates = (value) => {
   const stripped = stripLatexWrappers(value);
   if (!stripped) return [];
+  const stripOuterParens = (p) => {
+    let s = p.trim();
+    // Only peel balanced outer wrappers like "(66.0)" — never a trailing ")"
+    // from a power like e^(7x), which would become the broken "e^(7x".
+    while (s.length >= 2 && s[0] === '(' && s[s.length - 1] === ')') {
+      let depth = 0;
+      let balanced = true;
+      for (let i = 0; i < s.length; i += 1) {
+        if (s[i] === '(') depth += 1;
+        else if (s[i] === ')') {
+          depth -= 1;
+          if (depth === 0 && i < s.length - 1) {
+            balanced = false;
+            break;
+          }
+        }
+      }
+      if (!balanced || depth !== 0) break;
+      s = s.slice(1, -1).trim();
+    }
+    return s;
+  };
   const parts = stripped
     .split(/\s*\(?\s*or\s*\)?\s*/i)
-    .map((p) => p.replace(/^\(+|\)+$/g, '').trim())
+    .map((p) => stripOuterParens(p))
     .filter(Boolean);
   const out = [];
   const seen = new Set();

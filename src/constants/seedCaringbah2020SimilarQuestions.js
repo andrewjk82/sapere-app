@@ -410,22 +410,94 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "topicId": "y12a-5B",
     "c": "5B",
     "t": "Differentiation of e^x",
-    "source": "Caringbah 2020 Trial Q14",
-    "type": "short_answer",
+    "source": "Adapted from Caringbah 2020 Trial Q14",
+    "type": "subquestions",
     "difficulty": "medium",
-    "q": "Differentiate:\n\n(a) $y = x^3 e^x$\n\n(b) $f(x) = \\dfrac{e^x - 1}{3x}$",
-    "a": "(a) $y' = x^2 e^x(x+3)$\n\n(b) $f'(x) = \\dfrac{xe^x - e^x + 1}{3x^2}$",
+    "timeLimit": 180,
+    "question": "Differentiate each of the following functions.",
+    "q": "Differentiate each of the following functions.",
+    "a": "See parts (a) and (b).",
+    "answer": "See parts (a) and (b).",
+    "hint": "Part (a): product rule. Part (b): quotient rule.",
+    "h": "Part (a): product rule. Part (b): quotient rule.",
+    "solution": "See sub-question solutions.",
+    "s": "See sub-question solutions.",
+    "solutionSteps": [],
     "opts": [],
-    "h": "Use the product rule for (a) and the quotient rule for (b).",
-    "s": "(a) $y' = 3x^2 e^x + x^3 e^x = x^2 e^x(3+x)$.\n(b) $f'(x) = \\frac{3x \\cdot e^x - (e^x-1) \\cdot 3}{9x^2} = \\frac{3xe^x-3e^x+3}{9x^2} = \\frac{xe^x-e^x+1}{3x^2}$.",
-    "solutionSteps": [
+    "graphData": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "For (a), product rule with \\(u=x^3\\), \\(v=e^x\\).",
-        "workingOut": "y' = 3x^2 e^x + x^3 e^x = x^2 e^x(x+3)"
+        "id": "car2020s-q14a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "question": "Differentiate \\(y = x^{3} e^{x}\\).",
+        "opts": [
+          "\\(3x^{2} e^{x}\\)",
+          "\\(x^{2} e^{x}(x+3)\\)",
+          "\\(3x^{2} e^{x}+x^{3}\\)",
+          "\\(x^{3} e^{x}+3x^{2}\\)"
+        ],
+        "a": 1,
+        "hint": "Product rule with \\(u=x^{3}\\), \\(v=e^{x}\\). Factor \\(x^{2} e^{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Product form \\(y=x^{3}\\cdot e^{x}\\). Set \\(u=x^{3}\\), \\(v=e^{x}\\) for the product rule \\((uv)'=u'v+uv'\\).",
+            "workingOut": "\\(u=x^{3},\\quad v=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate: \\(u'=3x^{2}\\) and \\(v'=e^{x}\\).",
+            "workingOut": "\\(u'=3x^{2},\\quad v'=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Product rule: \\(y'=3x^{2} e^{x}+x^{3} e^{x}\\).",
+            "workingOut": "\\(y'=3x^{2} e^{x}+x^{3} e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor \\(x^{2} e^{x}\\): \\(y'=x^{2} e^{x}(3+x)=x^{2} e^{x}(x+3)\\).",
+            "workingOut": "\\(y'=x^{2} e^{x}(x+3)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "For (b), quotient rule with \\(u=e^x-1\\), \\(v=3x\\).",
-        "workingOut": "f'(x) = \\dfrac{3x \\cdot e^x - (e^x-1) \\cdot 3}{9x^2} = \\dfrac{xe^x - e^x + 1}{3x^2}"
+        "id": "car2020s-q14b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "question": "Differentiate \\(f(x)=\\dfrac{e^{x}-1}{3x}\\).",
+        "opts": [
+          "\\(\\dfrac{e^{x}}{3x}\\)",
+          "\\(\\dfrac{x e^{x}-e^{x}+1}{3x^{2}}\\)",
+          "\\(\\dfrac{3x e^{x}-(e^{x}-1)}{9x^{2}}\\)",
+          "\\(\\dfrac{e^{x}-1}{3x^{2}}\\)"
+        ],
+        "a": 1,
+        "hint": "Quotient rule with \\(u=e^{x}-1\\), \\(v=3x\\). Watch the sign when expanding \\(-(e^{x}-1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Quotient \\(f=\\dfrac{e^{x}-1}{3x}\\). Set \\(u=e^{x}-1\\), \\(v=3x\\).",
+            "workingOut": "\\(u=e^{x}-1,\\quad v=3x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate: \\(u'=e^{x}\\), \\(v'=3\\).",
+            "workingOut": "\\(u'=e^{x},\\quad v'=3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Quotient rule: \\(f'=\\dfrac{3x\\cdot e^{x}-(e^{x}-1)\\cdot 3}{(3x)^{2}}=\\dfrac{3x e^{x}-3e^{x}+3}{9x^{2}}\\).",
+            "workingOut": "\\(\\dfrac{3xe^{x}-3e^{x}+3}{9x^{2}}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Cancel a common factor of 3: numerator \\(x e^{x}-e^{x}+1\\), denominator \\(3x^{2}\\). So \\(f'(x)=\\dfrac{x e^{x}-e^{x}+1}{3x^{2}}\\).",
+            "workingOut": "\\(\\dfrac{xe^{x}-e^{x}+1}{3x^{2}}\\)",
+            "graphData": null
+          }
+        ]
       }
     ]
   },
@@ -1010,26 +1082,113 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "topicId": "y12a-5C",
     "c": "5C",
     "t": "Applications of differentiation",
-    "source": "Caringbah 2020 Trial Q37",
-    "type": "short_answer",
+    "source": "Similar to Caringbah 2020 Trial Q37",
+    "type": "subquestions",
     "difficulty": "hard",
-    "q": "At time $t$ years after purchase, the value $V$ of a laptop is given by $V = 1200e^{-0.4t}$.\n\n(a) Find the loss in value during the second year.\n\n(b) Find the year in which the laptop is losing value at a rate of $50 per year.",
+    "timeLimit": 240,
+    "q": "At time \\(t\\) years after purchase, the value \\(\\$V\\) of a laptop is given by\n\\( V = 1\\,200e^{-0.4t} \\).",
+    "question": "At time \\(t\\) years after purchase, the value \\(\\$V\\) of a laptop is given by\n\\( V = 1\\,200e^{-0.4t} \\).",
+    "a": "See parts (a) and (b).",
+    "answer": "See parts (a) and (b).",
+    "h": "For (a), loss during the second year is \\(V(1)-V(2)\\). For (b), set \\(\\left|\\dfrac{dV}{dt}\\right|=50\\) and solve for \\(t\\).",
+    "hint": "For (a), loss during the second year is \\(V(1)-V(2)\\). For (b), set \\(\\left|\\dfrac{dV}{dt}\\right|=50\\) and solve for \\(t\\).",
+    "s": "See sub-question solutions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "opts": [],
-    "h": "For (a), compute $V(1) - V(2)$. For (b), set $|dV/dt| = 50$.",
-    "s": "(a) $V(1)-V(2) = 1200e^{-0.4}-1200e^{-0.8} = 1200(e^{-0.4}-e^{-0.8}) \\approx 1200(0.6703-0.4493) \\approx \\$265$.\n(b) $|dV/dt|=480e^{-0.4t}=50 \\Rightarrow e^{-0.4t}=50/480=5/48 \\Rightarrow -0.4t=\\ln(5/48) \\Rightarrow t=\\frac{\\ln(48/5)}{0.4}=\\frac{\\ln 9.6}{0.4} \\approx \\frac{2.262}{0.4} \\approx 5.65$ years, so during the 6th year.",
-    "a": "(a) $\\approx \\$265$\n\n(b) During the $6$th year",
-    "solutionSteps": [
+    "graphData": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "For (a): Loss \\(= V(1) - V(2)\\).",
-        "workingOut": "= 1200(e^{-0.4} - e^{-0.8}) \\approx 1200(0.6703 - 0.4493) \\approx \\$265"
+        "id": "car2020s-q37a",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "question": "Find the loss in value of the laptop during the second year (from the start of year 2 to the end of year 2).",
+        "opts": [
+          "\\(\\$120\\)",
+          "\\(\\$200\\)",
+          "\\(\\$265\\) (approx.)",
+          "\\(\\$480\\) (approx.)"
+        ],
+        "a": 2,
+        "answer": "2",
+        "hint": "The second year runs from \\(t=1\\) to \\(t=2\\). Loss \\(= V(1)-V(2)\\).",
+        "solution": "Loss \\(= V(1)-V(2)=1\\,200\\bigl(e^{-0.4}-e^{-0.8}\\bigr)\\approx 1\\,200(0.6703-0.4493)\\approx \\$265\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The second year of ownership runs from the end of year 1 to the end of year 2, i.e. from \\(t=1\\) to \\(t=2\\). The loss in value is \\(V(1)-V(2)\\).",
+            "workingOut": "\\(\\text{Loss} = V(1) - V(2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute into \\(V = 1\\,200e^{-0.4t}\\):\n\\(V(1) = 1\\,200e^{-0.4}\\),\n\\(V(2) = 1\\,200e^{-0.8}\\).",
+            "workingOut": "\\(V(1)=1\\,200e^{-0.4},\\quad V(2)=1\\,200e^{-0.8}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out the constant 1 200:",
+            "workingOut": "\\(\\text{Loss} = 1\\,200\\bigl(e^{-0.4}-e^{-0.8}\\bigr)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Evaluate numerically (using \\(e^{-0.4}\\approx 0.6703\\) and \\(e^{-0.8}\\approx 0.4493\\)):",
+            "workingOut": "\\(1\\,200(0.6703 - 0.4493) = 1\\,200\\times 0.2210 \\approx 265\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the loss during the second year is approximately \\(\\$265\\).",
+            "workingOut": "\\(\\text{Loss} \\approx \\$265\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "For (b): \\(\\frac{dV}{dt} = -480e^{-0.4t}\\). Set \\(|\\frac{dV}{dt}|=50\\).",
-        "workingOut": "480e^{-0.4t}=50 \\implies e^{-0.4t}=\\dfrac{5}{48}"
-      },
-      {
-        "explanation": "Solve for \\(t\\).",
-        "workingOut": "t = \\dfrac{\\ln(48/5)}{0.4} \\approx 5.65 \\implies \\text{during the 6th year}"
+        "id": "car2020s-q37b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "question": "Find the year in which the laptop is losing value at a rate of \\(\\$50\\) per year.",
+        "opts": [
+          "During the 4th year",
+          "During the 6th year",
+          "During the 8th year",
+          "During the 10th year"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Differentiate \\(V\\), set \\(\\left|\\dfrac{dV}{dt}\\right|=50\\), solve for \\(t\\), then interpret which year that falls in.",
+        "solution": "\\(\\dfrac{dV}{dt}=-480e^{-0.4t}\\). Set \\(480e^{-0.4t}=50\\Rightarrow t=\\dfrac{\\ln(48/5)}{0.4}\\approx 5.65\\). So the rate is \\(\\$50\\) per year during the 6th year.",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\(V=1\\,200e^{-0.4t}\\) using the chain rule (factor \\(-0.4\\) from the exponent):",
+            "workingOut": "\\(\\dfrac{dV}{dt} = 1\\,200 \\cdot (-0.4)e^{-0.4t} = -480e^{-0.4t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The rate of loss is the magnitude \\(\\left|\\dfrac{dV}{dt}\\right|=480e^{-0.4t}\\). Set this equal to 50:",
+            "workingOut": "\\(480e^{-0.4t} = 50\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by 480:",
+            "workingOut": "\\(e^{-0.4t} = \\dfrac{50}{480} = \\dfrac{5}{48}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Take natural log of both sides:",
+            "workingOut": "\\(-0.4t = \\ln\\!\\left(\\dfrac{5}{48}\\right) = -\\ln\\!\\left(\\dfrac{48}{5}\\right)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve for \\(t\\):",
+            "workingOut": "\\(t = \\dfrac{\\ln(48/5)}{0.4} = \\dfrac{\\ln 9.6}{0.4} \\approx \\dfrac{2.262}{0.4} \\approx 5.65\\text{ years}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Since \\(5 < 5.65 < 6\\), this occurs between the end of year 5 and the end of year 6 — that is, during the 6th year of ownership.",
+            "workingOut": "\\(\\text{During the 6th year}\\)",
+            "graphData": null
+          }
+        ]
       }
     ]
   },

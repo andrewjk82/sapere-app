@@ -544,31 +544,49 @@ export const FORTST_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of e^x",
     "source": "Fort Street 2020 Trial Q2(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Differentiate $\\dfrac{e^{3x}}{x-1}$, simplifying your answer.",
-    "a": "$\\dfrac{e^{3x}(3x-4)}{(x-1)^2}$",
-    "opts": [],
-    "h": "Use the quotient rule with $u = e^{3x}$ ($u' = 3e^{3x}$) and $v = x-1$.",
-    "s": "$\\frac{dy}{dx} = \\frac{(x-1)(3e^{3x}) - e^{3x}(1)}{(x-1)^2} = \\frac{3xe^{3x} - 3e^{3x} - e^{3x}}{(x-1)^2} = \\frac{e^{3x}(3x-4)}{(x-1)^2}$.",
+    "q": "Differentiate \\(\\dfrac{e^{3x}}{x-1}\\), simplifying your answer.",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{3e^{3x}}{(x-1)^{2}}\\)",
+      "\\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\)",
+      "\\(\\dfrac{e^{3x}(3x-3)}{(x-1)^{2}}\\)",
+      "\\(\\dfrac{3e^{3x}(x-1)-e^{3x}}{x-1}\\)"
+    ],
+    "h": "Quotient \\(y=\\dfrac{e^{3x}}{x-1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x-1\\).",
+    "s": "\\(u=e^{3x},\\quad v=x-1\\) ; \\(u'=3e^{3x},\\quad v'=1\\) ; \\(\\dfrac{3e^{3x}(x-1)-e^{3x}}{(x-1)^{2}}\\) ; \\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\) ; \\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the quotient rule \\(\\frac{vu' - uv'}{v^2}\\) with \\(u = e^{3x}\\) and \\(v = x-1\\).",
-        "workingOut": "u = e^{3x}, \\; u' = 3e^{3x}; \\quad v = x-1, \\; v' = 1"
+        "explanation": "Quotient \\(y=\\dfrac{e^{3x}}{x-1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x-1\\).",
+        "workingOut": "\\(u=e^{3x},\\quad v=x-1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the quotient rule.",
-        "workingOut": "\\frac{dy}{dx} = \\frac{(x-1)(3e^{3x}) - e^{3x}(1)}{(x-1)^2}"
+        "explanation": "\\(u'=3e^{3x}\\), \\(v'=1\\).",
+        "workingOut": "\\(u'=3e^{3x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand the numerator.",
-        "workingOut": "= \\frac{3xe^{3x} - 3e^{3x} - e^{3x}}{(x-1)^2}"
+        "explanation": "\\(\\dfrac{3e^{3x}(x-1)-e^{3x}}{(x-1)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{3e^{3x}(x-1)-e^{3x}}{(x-1)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor \\(e^{3x}\\) from the numerator and simplify.",
-        "workingOut": "= \\frac{e^{3x}(3x - 4)}{(x-1)^2}"
+        "explanation": "Factor \\(e^{3x}\\): \\(e^{3x}\\bigl(3(x-1)-1\\bigr)=e^{3x}(3x-3-1)=e^{3x}(3x-4)\\).",
+        "workingOut": "\\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplified derivative: \\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "Differentiate \\(\\dfrac{e^{3x}}{x-1}\\), simplifying your answer.",
+    "answer": "1",
+    "hint": "Quotient \\(y=\\dfrac{e^{3x}}{x-1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x-1\\).",
+    "solution": "Quotient \\(y=\\dfrac{e^{3x}}{x-1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x-1\\). \\(u'=3e^{3x}\\), \\(v'=1\\). \\(\\dfrac{3e^{3x}(x-1)-e^{3x}}{(x-1)^{2}}\\). Factor \\(e^{3x}\\): \\(e^{3x}\\bigl(3(x-1)-1\\bigr)=e^{3x}(3x-3-1)=e^{3x}(3x-4)\\). Simplified derivative: \\(\\dfrac{e^{3x}(3x-4)}{(x-1)^{2}}\\)."
   },
   {
     "id": "fortst2020-q2b",

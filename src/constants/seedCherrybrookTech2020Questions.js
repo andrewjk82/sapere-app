@@ -863,39 +863,49 @@ export const CTHS_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of exponential functions",
     "source": "Cherrybrook Tech 2020 Trial Q23",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "If $y = \\dfrac{e^{3x}}{x+1}$, find $\\dfrac{dy}{dx}$.",
-    "a": "$\\dfrac{e^{3x}(3x+2)}{(x+1)^2}$",
-    "opts": [],
-    "h": "Use the quotient rule with $u = e^{3x}$ and $v = x+1$. Recall $\\frac{d}{dx}(e^{3x}) = 3e^{3x}$.",
-    "s": "$u = e^{3x}$, $u' = 3e^{3x}$; $v = x+1$, $v' = 1$. Quotient rule: $\\frac{3e^{3x}(x+1) - e^{3x}}{(x+1)^2} = \\frac{e^{3x}(3x+3-1)}{(x+1)^2} = \\frac{e^{3x}(3x+2)}{(x+1)^2}$.",
+    "q": "If \\(y=\\dfrac{e^{3x}}{x+1}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{3e^{3x}}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{e^{3x}(3x+3)}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{3e^{3x}(x+1)-e^{3x}}{x+1}\\)"
+    ],
+    "h": "Quotient form \\(y=\\dfrac{e^{3x}}{x+1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x+1\\).",
+    "s": "\\(u=e^{3x},\\quad v=x+1\\) ; \\(u'=3e^{3x},\\quad v'=1\\) ; \\(\\dfrac{3e^{3x}(x+1)-e^{3x}}{(x+1)^{2}}\\) ; \\(\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\) ; \\(\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the numerator and denominator for the quotient rule: \\(u = e^{3x}\\) and \\(v = x+1\\).",
-        "workingOut": "u = e^{3x}, quad v = x+1"
+        "explanation": "Quotient form \\(y=\\dfrac{e^{3x}}{x+1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x+1\\).",
+        "workingOut": "\\(u=e^{3x},\\quad v=x+1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate \\(u = e^{3x}\\) using the chain rule: multiply by the derivative of the exponent.",
-        "workingOut": "u' = 3e^{3x}"
+        "explanation": "Chain rule on the numerator: \\(u'=3e^{3x}\\). Denominator: \\(v'=1\\).",
+        "workingOut": "\\(u'=3e^{3x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate \\(v = x+1\\).",
-        "workingOut": "v' = 1"
+        "explanation": "Quotient rule: \\(\\dfrac{3e^{3x}(x+1)-e^{3x}\\cdot 1}{(x+1)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{3e^{3x}(x+1)-e^{3x}}{(x+1)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the quotient rule: \\(\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}\\).",
-        "workingOut": "\\frac{dy}{dx} = \\frac{3e^{3x}(x+1) - e^{3x} \\cdot 1}{(x+1)^2}"
+        "explanation": "Factor \\(e^{3x}\\): numerator \\(e^{3x}\\bigl(3(x+1)-1\\bigr)=e^{3x}(3x+3-1)=e^{3x}(3x+2)\\).",
+        "workingOut": "\\(\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor out \\(e^{3x}\\) from the numerator.",
-        "workingOut": "= \\frac{e^{3x}\\bigl[3(x+1) - 1\\bigr]}{(x+1)^2} = \\frac{e^{3x}(3x+3-1)}{(x+1)^2}"
-      },
-      {
-        "explanation": "Simplify the bracket in the numerator.",
-        "workingOut": "= \\frac{e^{3x}(3x+2)}{(x+1)^2}"
+        "explanation": "Therefore \\(\\dfrac{dy}{dx}=\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "If \\(y=\\dfrac{e^{3x}}{x+1}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "answer": "1",
+    "hint": "Quotient form \\(y=\\dfrac{e^{3x}}{x+1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x+1\\).",
+    "solution": "Quotient form \\(y=\\dfrac{e^{3x}}{x+1}\\). Use \\(\\dfrac{vu'-uv'}{v^{2}}\\) with \\(u=e^{3x}\\), \\(v=x+1\\). Chain rule on the numerator: \\(u'=3e^{3x}\\). Denominator: \\(v'=1\\). Quotient rule: \\(\\dfrac{3e^{3x}(x+1)-e^{3x}\\cdot 1}{(x+1)^{2}}\\). Factor \\(e^{3x}\\): numerator \\(e^{3x}\\bigl(3(x+1)-1\\bigr)=e^{3x}(3x+3-1)=e^{3x}(3x+2)\\). Therefore \\(\\dfrac{dy}{dx}=\\dfrac{e^{3x}(3x+2)}{(x+1)^{2}}\\)."
   },
   {
     "id": "cths2020-q24",

@@ -1204,31 +1204,49 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of e^x",
     "source": "Danebank 2020 Trial Q26",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "If $y = \\dfrac{e^x}{x+2}$, find $\\dfrac{dy}{dx}$.",
-    "a": "$\\dfrac{dy}{dx} = \\dfrac{(x+1)e^x}{(x+2)^2}$",
-    "opts": [],
-    "h": "Quotient rule with $u = e^x$, $v = x + 2$.",
-    "s": "$\\frac{dy}{dx} = \\frac{(x+2)e^x - e^x}{(x+2)^2} = \\frac{e^x(x+1)}{(x+2)^2}$.",
+    "q": "If \\(y=\\dfrac{e^{x}}{x+2}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{e^{x}}{(x+2)^{2}}\\)",
+      "\\(\\dfrac{(x+1)e^{x}}{(x+2)^{2}}\\)",
+      "\\(\\dfrac{(x+2)e^{x}-e^{x}}{(x+2)^{2}}\\)",
+      "\\(\\dfrac{e^{x}(x+2)}{(x+2)^{2}}\\)"
+    ],
+    "h": "Quotient \\(y=\\dfrac{e^{x}}{x+2}\\). Set \\(u=e^{x}\\), \\(v=x+2\\) for \\(\\dfrac{vu'-uv'}{v^{2}}\\).",
+    "s": "\\(u=e^{x},\\quad v=x+2\\) ; \\(u'=e^{x},\\quad v'=1\\) ; \\(\\dfrac{(x+2)e^{x}-e^{x}}{(x+2)^{2}}\\) ; \\(\\dfrac{e^{x}(x+1)}{(x+2)^{2}}\\) ; \\(\\dfrac{(x+1)e^{x}}{(x+2)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the quotient rule.",
-        "workingOut": "u = e^x, quad v = x + 2"
+        "explanation": "Quotient \\(y=\\dfrac{e^{x}}{x+2}\\). Set \\(u=e^{x}\\), \\(v=x+2\\) for \\(\\dfrac{vu'-uv'}{v^{2}}\\).",
+        "workingOut": "\\(u=e^{x},\\quad v=x+2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate numerator and denominator.",
-        "workingOut": "u' = e^x, quad v' = 1"
+        "explanation": "Differentiate: \\(u'=e^{x}\\), \\(v'=1\\).",
+        "workingOut": "\\(u'=e^{x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the quotient rule.",
-        "workingOut": "\\frac{dy}{dx} = \\frac{(x+2)e^x - e^x}{(x+2)^2}"
+        "explanation": "Substitute: \\(\\dfrac{(x+2)e^{x}-e^{x}}{(x+2)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{(x+2)e^{x}-e^{x}}{(x+2)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor \\(e^x\\) and simplify.",
-        "workingOut": "= \\frac{(x+1)e^x}{(x+2)^2}"
+        "explanation": "Factor \\(e^{x}\\) in the numerator: \\(e^{x}((x+2)-1)=e^{x}(x+1)\\).",
+        "workingOut": "\\(\\dfrac{e^{x}(x+1)}{(x+2)^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(\\dfrac{dy}{dx}=\\dfrac{(x+1)e^{x}}{(x+2)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{(x+1)e^{x}}{(x+2)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "If \\(y=\\dfrac{e^{x}}{x+2}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "answer": "1",
+    "hint": "Quotient \\(y=\\dfrac{e^{x}}{x+2}\\). Set \\(u=e^{x}\\), \\(v=x+2\\) for \\(\\dfrac{vu'-uv'}{v^{2}}\\).",
+    "solution": "Quotient \\(y=\\dfrac{e^{x}}{x+2}\\). Set \\(u=e^{x}\\), \\(v=x+2\\) for \\(\\dfrac{vu'-uv'}{v^{2}}\\). Differentiate: \\(u'=e^{x}\\), \\(v'=1\\). Substitute: \\(\\dfrac{(x+2)e^{x}-e^{x}}{(x+2)^{2}}\\). Factor \\(e^{x}\\) in the numerator: \\(e^{x}((x+2)-1)=e^{x}(x+1)\\). So \\(\\dfrac{dy}{dx}=\\dfrac{(x+1)e^{x}}{(x+2)^{2}}\\)."
   },
   {
     "id": "dane2020s-q27",
@@ -1720,31 +1738,45 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Danebank 2020 Trial Q36(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "At time $t$ years after purchase the value of a car is $V = 30\\,000\\,e^{-0.4t}$. Find the loss in value during the third year.",
-    "a": "$\\approx \\$4444.05$",
-    "opts": [],
-    "h": "The third year is $t = 2$ to $t = 3$; loss $= V(2) - V(3)$.",
-    "s": "Loss $= V(2) - V(3) = 30\\,000e^{-0.8} - 30\\,000e^{-1.2} = 30\\,000(e^{-0.8} - e^{-1.2}) \\approx \\$4444.05$.",
+    "q": "At time \\(t\\) years after purchase the value of a car is \\(V = 30\\,000e^{-0.4t}\\). Find the loss in value during the third year.",
+    "question": "At time \\(t\\) years after purchase the value of a car is \\(V = 30\\,000e^{-0.4t}\\). Find the loss in value during the third year.",
+    "a": 3,
+    "answer": "3",
+    "opts": ["\\(\\$2\\,000\\)","\\(\\$3\\,000\\)","\\(\\$3\\,620\\) (approx.)","\\(\\$4\\,444\\) (approx.)"],
+    "h": "The third year is from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
+    "s": "Loss \\(= V(2)-V(3)=30\\,000\\bigl(e^{-0.8}-e^{-1.2}\\bigr)\\approx \\$4\\,444\\).",
+    "solution": "Loss \\(= V(2)-V(3)=30\\,000\\bigl(e^{-0.8}-e^{-1.2}\\bigr)\\approx \\$4\\,444\\).",
     "solutionSteps": [
       {
-        "explanation": "The loss is the value at the start of the third year minus the value at its end.",
-        "workingOut": "\\text{Loss} = V(2) - V(3)"
+        "explanation": "The third year runs from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
+        "workingOut": "\\(\\text{Loss} = V(2) - V(3)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(V(2)\\).",
-        "workingOut": "V(2) = 30\\,000e^{-0.8}"
+        "explanation": "Substitute into \\(V=30\\,000e^{-0.4t}\\):\n\\(V(2)=30\\,000e^{-0.4\\cdot 2}=30\\,000e^{-0.8}\\),\n\\(V(3)=30\\,000e^{-0.4\\cdot 3}=30\\,000e^{-1.2}\\).",
+        "workingOut": "\\(V(2)=30\\,000e^{-0.8},\\quad V(3)=30\\,000e^{-1.2}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate \\(V(3)\\).",
-        "workingOut": "V(3) = 30\\,000e^{-1.2}"
+        "explanation": "Factor out 30 000:",
+        "workingOut": "\\(\\text{Loss} = 30\\,000\\bigl(e^{-0.8}-e^{-1.2}\\bigr)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract.",
-        "workingOut": "\\text{Loss} = 30\\,000(e^{-0.8} - e^{-1.2}) \\approx $4444.05"
+        "explanation": "Evaluate numerically (\\(e^{-0.8}\\approx 0.449329\\), \\(e^{-1.2}\\approx 0.301194\\)):",
+        "workingOut": "\\(30\\,000(0.449329 - 0.301194) = 30\\,000\\times 0.148135 \\approx 4\\,444.05\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore the loss during the third year is approximately \\(\\$4\\,444\\).",
+        "workingOut": "\\(\\text{Loss} \\approx \\$4\\,444\\)",
+        "graphData": null
       }
     ]
+  ,
+    "options": ["\\(\\$2\\,000\\)","\\(\\$3\\,000\\)","\\(\\$3\\,620\\) (approx.)","\\(\\$4\\,444\\) (approx.)"]
   },
   {
     "id": "dane2020s-q36b",
@@ -1752,35 +1784,50 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Danebank 2020 Trial Q36(b)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "For $V = 30\\,000\\,e^{-0.4t}$, find the year in which the car is losing value at a rate of $100 per year.",
-    "a": "During the $12^{\\text{th}}$ year ($t \\approx 11.97$)",
-    "opts": [],
-    "h": "Set $\\frac{dV}{dt} = -100$ and solve for $t$.",
-    "s": "$\\frac{dV}{dt} = -12\\,000e^{-0.4t}$. Set $= -100$: $e^{-0.4t} = \\frac{100}{12\\,000} = 0.008\\overline{3}$, so $-0.4t = \\ln 0.008\\overline{3}$, giving $t \\approx 11.97$ — during the $12^{\\text{th}}$ year.",
+    "q": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",
+    "question": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\"q": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",00\\) per year.",
+    "a": 0,
+    "answer": "0",
+    "opts": ["During the 12th year","During the 8th year","During the 10th year","During the 15th year"],
+    "h": "Differentiate \\(V\\), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\), solve for \\(t\\).",
+    "s": "\\(\\dfrac{dV}{dt}=-12\\,000e^{-0.4t}\\). Set \\(12\\,000e^{-0.4t}=100\\Rightarrow t\\approx 11.97\\). During the 12th year.",
+    "solution": "\\(\\dfrac{dV}{dt}=-12\\,000e^{-0.4t}\\). Set \\(12\\,000e^{-0.4t}=100\\Rightarrow t\\approx 11.97\\). During the 12th year.",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(V\\).",
-        "workingOut": "\\frac{dV}{dt} = -12\\,000e^{-0.4t}"
+        "explanation": "Differentiate \\(V=30\\,000e^{-0.4t}\\) (chain-rule factor \\(-0.4\\)):",
+        "workingOut": "\\(\\dfrac{dV}{dt} = 30\\,000\\cdot(-0.4)e^{-0.4t} = -12\\,000e^{-0.4t}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Set the rate equal to \\(-100\\).",
-        "workingOut": "-100 = -12\\,000e^{-0.4t}"
+        "explanation": "Rate of loss \\(=\\left|\\dfrac{dV}{dt}\\right|=12\\,000e^{-0.4t}\\). Set equal to 100:",
+        "workingOut": "\\(12\\,000e^{-0.4t} = 100\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for the exponential.",
-        "workingOut": "e^{-0.4t} = \\frac{100}{12\\,000} = 0.008\\overline{3}"
+        "explanation": "Divide both sides by 12 000:",
+        "workingOut": "\\(e^{-0.4t} = \\dfrac{100}{12\\,000} = \\dfrac{1}{120}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take logarithms and solve for \\(t\\).",
-        "workingOut": "t = \\frac{\\ln 0.008\\overline{3}}{-0.4} \\approx 11.97"
+        "explanation": "Take natural log:",
+        "workingOut": "\\(-0.4t = \\ln\\!\\left(\\dfrac{1}{120}\\right) = -\\ln 120\\)",
+        "graphData": null
       },
       {
-        "explanation": "Interpret: \\(11 < t < 12\\), so during the \\(12^{\\text{th}}\\) year.",
-        "workingOut": "\\text{during the } 12^{\\text{th}} \\text{ year}"
+        "explanation": "Solve for \\(t\\):",
+        "workingOut": "\\(t = \\dfrac{\\ln 120}{0.4} \\approx \\dfrac{4.7875}{0.4} \\approx 11.97\\text{ years}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(11 < 11.97 < 12\\), this falls during the 12th year of ownership.",
+        "workingOut": "\\(\\text{During the 12th year}\\)",
+        "graphData": null
       }
     ]
+  ,
+    "options": ["During the 12th year","During the 8th year","During the 10th year","During the 15th year"]
   },
   {
     "id": "dane2020s-q37",

@@ -826,25 +826,42 @@ export const BARKER_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of exponential functions",
     "source": "Barker 2020 Trial Q11(b)(i)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Differentiate $y = xe^{3x}$.",
-    "a": "$e^{3x}(3x + 1)$",
-    "opts": [],
-    "h": "Use the product rule with $u = x$ and $v = e^{3x}$.",
-    "s": "$u = x$, $v = e^{3x}$. $u\\prime = 1$, $v\\prime = 3e^{3x}$. $y\\prime = xe^{3x} \\cdot 3 + e^{3x} \\cdot 1 = e^{3x}(3x+1)$.",
+    "question": "Differentiate \\(y = x e^{3x}\\).",
+    "q": "Differentiate \\(y = x e^{3x}\\).",
+    "opts": [
+      "\\(3e^{3x}\\)",
+      "\\(e^{3x}+3x e^{3x}\\)",
+      "\\(e^{3x}(3x+1)\\)",
+      "\\(3x e^{3x}\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Product rule with \\(u=x\\) and \\(v=e^{3x}\\). Remember the chain-rule factor 3 on \\(e^{3x}\\).",
+    "h": "Product rule with \\(u=x\\) and \\(v=e^{3x}\\). Remember the chain-rule factor 3 on \\(e^{3x}\\).",
+    "solution": "Let \\(u=x\\), \\(v=e^{3x}\\). Then \\(u'=1\\), \\(v'=3e^{3x}\\). Product rule: \\(y'=u'v+uv'=e^{3x}+3x e^{3x}=e^{3x}(3x+1)\\).",
+    "s": "Let \\(u=x\\), \\(v=e^{3x}\\). Then \\(u'=1\\), \\(v'=3e^{3x}\\). Product rule: \\(y'=u'v+uv'=e^{3x}+3x e^{3x}=e^{3x}(3x+1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify \\(u = x\\), \\(v = e^{3x}\\) for the product rule.",
-        "workingOut": "u' = 1, quad v' = 3e^{3x}"
+        "explanation": "The function is a product of two factors of \\(x\\): \\(y=x\\cdot e^{3x}\\). Use the product rule \\((uv)'=u'v+uv'\\). Set \\(u=x\\) and \\(v=e^{3x}\\).",
+        "workingOut": "\\(u=x,\\quad v=e^{3x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply product rule: \\(u\\prime v + uv\\prime\\).",
-        "workingOut": "1 \\cdot e^{3x} + x \\cdot 3e^{3x}"
+        "explanation": "Differentiate each factor. For \\(u=x\\), clearly \\(u'=1\\). For \\(v=e^{3x}\\) use the chain rule: the exponent is \\(3x\\), so \\(v'=e^{3x}\\cdot 3=3e^{3x}\\).",
+        "workingOut": "\\(u'=1,\\quad v'=3e^{3x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factorise.",
-        "workingOut": "e^{3x}(1 + 3x) = e^{3x}(3x+1)"
+        "explanation": "Apply the product rule: \\(y'=u'v+uv'=1\\cdot e^{3x}+x\\cdot 3e^{3x}\\). Write both terms carefully — the second term is \\(3x e^{3x}\\), not \\(3e^{3x}\\) alone.",
+        "workingOut": "\\(y'=e^{3x}+3x e^{3x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor out the common factor \\(e^{3x}\\): \\(y'=e^{3x}(1+3x)=e^{3x}(3x+1)\\). This matches the factored form in the options. (The expanded form \\(e^{3x}+3x e^{3x}\\) is equivalent.)",
+        "workingOut": "\\(e^{3x}(3x+1)\\)",
+        "graphData": null
       }
     ]
   },
@@ -855,21 +872,42 @@ export const BARKER_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of exponential functions",
     "source": "Adapted from Barker 2020 Trial Q11(b)(i)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "q": "Differentiate $y = xe^{2x}$.",
-    "a": "$e^{2x}(2x + 1)$",
-    "opts": [],
-    "h": "Use the product rule with $u = x$, $v = e^{2x}$.",
-    "s": "$y\\prime = e^{2x} + 2xe^{2x} = e^{2x}(2x+1)$.",
+    "question": "Differentiate \\(y = x e^{2x}\\).",
+    "q": "Differentiate \\(y = x e^{2x}\\).",
+    "opts": [
+      "\\(2e^{2x}\\)",
+      "\\(e^{2x}(2x+1)\\)",
+      "\\(2x e^{2x}\\)",
+      "\\(e^{2x}+2x\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Product rule with \\(u=x\\), \\(v=e^{2x}\\). Chain rule on \\(e^{2x}\\) gives factor 2.",
+    "h": "Product rule with \\(u=x\\), \\(v=e^{2x}\\). Chain rule on \\(e^{2x}\\) gives factor 2.",
+    "solution": "\\(u=x\\), \\(v=e^{2x}\\); \\(u'=1\\), \\(v'=2e^{2x}\\). Then \\(y'=e^{2x}+2x e^{2x}=e^{2x}(2x+1)\\).",
+    "s": "\\(u=x\\), \\(v=e^{2x}\\); \\(u'=1\\), \\(v'=2e^{2x}\\). Then \\(y'=e^{2x}+2x e^{2x}=e^{2x}(2x+1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply product rule.",
-        "workingOut": "u' = 1, quad v' = 2e^{2x}"
+        "explanation": "Product of \\(x\\) and \\(e^{2x}\\). Set \\(u=x\\), \\(v=e^{2x}\\) for the product rule \\((uv)'=u'v+uv'\\).",
+        "workingOut": "\\(u=x,\\quad v=e^{2x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine.",
-        "workingOut": "e^{2x} + 2xe^{2x} = e^{2x}(2x+1)"
+        "explanation": "Differentiate each factor: \\(u'=1\\). For \\(v=e^{2x}\\), chain rule gives \\(v'=2e^{2x}\\).",
+        "workingOut": "\\(u'=1,\\quad v'=2e^{2x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Product rule: \\(y'=1\\cdot e^{2x}+x\\cdot 2e^{2x}=e^{2x}+2x e^{2x}\\).",
+        "workingOut": "\\(e^{2x}+2x e^{2x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor \\(e^{2x}\\): \\(y'=e^{2x}(1+2x)=e^{2x}(2x+1)\\).",
+        "workingOut": "\\(e^{2x}(2x+1)\\)",
+        "graphData": null
       }
     ]
   },
@@ -2154,22 +2192,27 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "q": "Due to overfishing, the number $N$ of a species of fish drops exponentially according to $\\dfrac{dN}{dt} = -kN$. Show that $N = Ae^{-kt}$ satisfies this equation.",
-    "a": "Differentiate $N = Ae^{-kt}$: $\\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -k(Ae^{-kt}) = -kN$. ✓",
+    "a": "Given \\(N = Ae^{-kt}\\).\n\\(\\text{LHS} = \\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}.\\)\n\\(\\text{RHS} = -kN = -k(Ae^{-kt}) = -kAe^{-kt}.\\)\n\\(\\text{LHS} = \\text{RHS}.\\)\nTherefore \\(N = Ae^{-kt}\\) satisfies \\(\\dfrac{dN}{dt} = -kN\\).",
+    "answer": "Given \\(N = Ae^{-kt}\\).\n\\(\\text{LHS} = \\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}.\\)\n\\(\\text{RHS} = -kN = -k(Ae^{-kt}) = -kAe^{-kt}.\\)\n\\(\\text{LHS} = \\text{RHS}.\\)\nTherefore \\(N = Ae^{-kt}\\) satisfies \\(\\dfrac{dN}{dt} = -kN\\).",
     "opts": [],
     "h": "Differentiate $N = Ae^{-kt}$ with respect to $t$ and show the result equals $-kN$.",
-    "s": "$\\dfrac{dN}{dt} = -kAe^{-kt} = -k(Ae^{-kt}) = -kN$. ✓",
+    "s": "Given \\(N = Ae^{-kt}\\). Differentiate: \\(\\dfrac{dN}{dt} = -kAe^{-kt} = -kN\\). Both sides of the DE match.",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(N = Ae^{-kt}\\) with respect to \\(t\\).",
-        "workingOut": "\\frac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}"
+        "explanation": "We must show that \\(N = Ae^{-kt}\\) satisfies the differential equation \\(\\dfrac{dN}{dt} = -kN\\). Start from the given expression for \\(N\\).",
+        "workingOut": "\\(N = Ae^{-kt}\\)"
       },
       {
-        "explanation": "Recognise \\(Ae^{-kt} = N\\).",
-        "workingOut": "-kAe^{-kt} = -kN"
+        "explanation": "Left-hand side: differentiate with respect to \\(t\\). The constant \\(A\\) multiplies the chain-rule factor \\(-k\\) from the exponent \\(-kt\\).",
+        "workingOut": "\\(\\text{LHS} = \\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}\\)"
       },
       {
-        "explanation": "Conclude that \\(N = Ae^{-kt}\\) satisfies \\(\\frac{dN}{dt} = -kN\\). ✓",
-        "workingOut": "\\frac{dN}{dt} = -kN \\checkmark"
+        "explanation": "Right-hand side: substitute \\(N = Ae^{-kt}\\) into \\(-kN\\).",
+        "workingOut": "\\(\\text{RHS} = -kN = -k(Ae^{-kt}) = -kAe^{-kt}\\)"
+      },
+      {
+        "explanation": "Both sides equal \\(-kAe^{-kt}\\). Therefore \\(\\text{LHS} = \\text{RHS}\\), and \\(N = Ae^{-kt}\\) satisfies the DE.",
+        "workingOut": "\\(\\text{LHS} = \\text{RHS} = -kN\\)"
       }
     ]
   },
@@ -2183,30 +2226,35 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "q": "In 1930 there were 25 000 fish ($t = 0$) and by 2020 there were only 2000 fish. Find the value of $A$ and show that $k \\approx 0.028$.",
-    "a": "$A = 25\\,000$. At $t = 90$: $2000 = 25000e^{-90k} \\Rightarrow e^{-90k} = 0.08 \\Rightarrow -90k = \\ln(0.08) \\approx -2.526 \\Rightarrow k \\approx 0.0281 \\approx 0.028$.",
+    "a": "At \\(t = 0\\): \\(N = A e^{0} = A = 25\\,000\\).\nSo \\(A = 25\\,000\\).\nFrom 1930 to 2020 is 90 years, so \\(t = 90\\) and \\(N = 2000\\):\n\\(2000 = 25\\,000\\,e^{-90k}\\)\n\\(e^{-90k} = \\dfrac{2000}{25\\,000} = 0.08\\)\n\\(-90k = \\ln(0.08)\\)\n\\(k = -\\dfrac{\\ln(0.08)}{90} = \\dfrac{-\\ln(0.08)}{90}\\)\n\\(\\ln(0.08) \\approx -2.5257\\), so \\(k \\approx \\dfrac{2.5257}{90} \\approx 0.02806 \\approx 0.028\\).",
+    "answer": "At \\(t = 0\\): \\(N = A e^{0} = A = 25\\,000\\).\nSo \\(A = 25\\,000\\).\nFrom 1930 to 2020 is 90 years, so \\(t = 90\\) and \\(N = 2000\\):\n\\(2000 = 25\\,000\\,e^{-90k}\\)\n\\(e^{-90k} = \\dfrac{2000}{25\\,000} = 0.08\\)\n\\(-90k = \\ln(0.08)\\)\n\\(k = -\\dfrac{\\ln(0.08)}{90} = \\dfrac{-\\ln(0.08)}{90}\\)\n\\(\\ln(0.08) \\approx -2.5257\\), so \\(k \\approx \\dfrac{2.5257}{90} \\approx 0.02806 \\approx 0.028\\).",
     "opts": [],
     "h": "At $t=0$, $N=25000$ gives $A$. At $t=90$ ($t$ measured in years from 1930), $N=2000$ gives $k$.",
-    "s": "At $t=0$: $N=A=25000$. At $t=90$: $2000=25000e^{-90k}$. $e^{-90k}=0.08$. $-90k=\\ln(0.08) \\approx -2.526$. $k \\approx 0.028$.",
+    "s": "At \\(t=0\\), \\(A=25000\\). At \\(t=90\\): \\(2000=25000e^{-90k}\\Rightarrow e^{-90k}=0.08\\Rightarrow k=-\\ln(0.08)/90\\approx 0.028\\).",
     "solutionSteps": [
       {
-        "explanation": "At \\(t=0\\), \\(N=25000\\), so \\(A=25000\\).",
-        "workingOut": "A = 25\\,000"
+        "explanation": "When \\(t=0\\), there were 25 000 fish. Substitute into \\(N=Ae^{-kt}\\):\n\\(N(0)=Ae^{0}=A=25\\,000\\).",
+        "workingOut": "\\(A = 25\\,000\\)"
       },
       {
-        "explanation": "2020 is 90 years after 1930, so \\(t=90\\), \\(N=2000\\).",
-        "workingOut": "2000 = 25000e^{-90k}"
+        "explanation": "From 1930 to 2020 is 90 years, so \\(t=90\\) and \\(N=2000\\). Substitute:",
+        "workingOut": "\\(2000 = 25\\,000\\,e^{-90k}\\)"
       },
       {
-        "explanation": "Divide both sides by 25000.",
-        "workingOut": "e^{-90k} = 0.08"
+        "explanation": "Divide both sides by 25 000:",
+        "workingOut": "\\(e^{-90k} = \\dfrac{2000}{25\\,000} = 0.08\\)"
       },
       {
-        "explanation": "Take natural log.",
-        "workingOut": "-90k = \\ln(0.08) \\approx -2.526"
+        "explanation": "Take the natural logarithm of both sides:",
+        "workingOut": "\\(-90k = \\ln(0.08)\\)"
       },
       {
-        "explanation": "Solve for \\(k\\).",
-        "workingOut": "k \\approx \\frac{2.526}{90} \\approx 0.028 \\checkmark"
+        "explanation": "Solve for \\(k\\). Note that \\(\\ln(0.08)\\approx -2.5257\\) (negative because \\(0.08<1\\)):",
+        "workingOut": "\\(k = -\\dfrac{\\ln(0.08)}{90} \\approx \\dfrac{2.5257}{90} \\approx 0.02806\\)"
+      },
+      {
+        "explanation": "Therefore \\(k \\approx 0.028\\) (to 3 decimal places), as required.",
+        "workingOut": "\\(k \\approx 0.028\\)"
       }
     ]
   },
@@ -2217,31 +2265,39 @@ export const BARKER_2020_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Barker 2020 Trial Q16(a)(iii)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "q": "This species of fish will be declared extinct in this bay when the number drops below 500. Using $N = 25000e^{-0.028t}$, in which year will this occur?",
-    "a": "Year 2070",
-    "opts": [],
-    "h": "Solve $25000e^{-0.028t} = 500$ for $t$, then add to 1930.",
-    "s": "$500 = 25000e^{-0.028t} \\Rightarrow e^{-0.028t} = 0.02 \\Rightarrow -0.028t = \\ln(0.02) \\approx -3.912 \\Rightarrow t \\approx 139.7 \\approx 140$ years. Year $= 1930 + 140 = 2070$.",
+    "a": 2,
+    "answer": "2",
+    "opts": ["2020","2050","2070","2100"],
+    "h": "Solve \\(25000e^{-0.028t}=500\\) for \\(t\\), then add to 1930.",
+    "s": "Set \\(N=500\\): \\(25\\,000e^{-0.028t}=500\\Rightarrow e^{-0.028t}=0.02\\). \\(t=-\\dfrac{\\ln(0.02)}{0.028}\\approx 139.7\\approx 140\\) years. Year \\(=1930+140=2070\\).",
+    "solution": "Set \\(N=500\\): \\(25\\,000e^{-0.028t}=500\\Rightarrow e^{-0.028t}=0.02\\). \\(t=-\\dfrac{\\ln(0.02)}{0.028}\\approx 139.7\\approx 140\\) years. Year \\(=1930+140=2070\\).",
     "solutionSteps": [
       {
-        "explanation": "Set \\(N = 500\\) and solve for \\(t\\).",
-        "workingOut": "25000e^{-0.028t} = 500 \\Rightarrow e^{-0.028t} = 0.02"
+        "explanation": "The fish are extinct when \\(N\\) drops below 500. Set \\(N=500\\) in \\(N=25\\,000e^{-0.028t}\\):",
+        "workingOut": "\\(25\\,000e^{-0.028t} = 500\\)"
       },
       {
-        "explanation": "Take natural log.",
-        "workingOut": "-0.028t = \\ln(0.02) \\approx -3.912"
+        "explanation": "Divide both sides by 25 000:",
+        "workingOut": "\\(e^{-0.028t} = \\dfrac{500}{25\\,000} = 0.02\\)"
       },
       {
-        "explanation": "Solve for \\(t\\).",
-        "workingOut": "t \\approx \\frac{3.912}{0.028} \\approx 140 \\text{ years}"
+        "explanation": "Take natural log of both sides:",
+        "workingOut": "\\(-0.028t = \\ln(0.02) \\approx -3.9120\\)"
       },
       {
-        "explanation": "Find the year.",
-        "workingOut": "1930 + 140 = 2070"
+        "explanation": "Solve for \\(t\\) (years after 1930):",
+        "workingOut": "\\(t = -\\dfrac{\\ln(0.02)}{0.028} \\approx \\dfrac{3.9120}{0.028} \\approx 139.7 \\approx 140\\)"
+      },
+      {
+        "explanation": "Add to the base year: \\(1930 + 140 = 2070\\). So the year is 2070.",
+        "workingOut": "\\(1930 + 140 = 2070\\)"
       }
     ]
+  ,
+    "options": ["2020","2050","2070","2100"]
   },
   {
     "id": "bar2020-q16aiiiv",
@@ -2250,27 +2306,35 @@ export const BARKER_2020_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Adapted from Barker 2020 Trial Q16(a)(iii)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "q": "A population decays according to $P = 10000e^{-0.05t}$ where $t$ is years from 2000. In which year will the population drop below 1000?",
-    "a": "Year 2046",
-    "opts": [],
-    "h": "Solve $10000e^{-0.05t} = 1000$ for $t$.",
-    "s": "$e^{-0.05t} = 0.1 \\Rightarrow -0.05t = \\ln(0.1) \\approx -2.303 \\Rightarrow t \\approx 46.1$. Year $= 2000 + 46 = 2046$.",
+    "a": 1,
+    "answer": "1",
+    "opts": ["2030","2046","2050","2060"],
+    "h": "Solve \\(10000e^{-0.05t}=1000\\) for \\(t\\), then add to 2000.",
+    "s": "Set \\(P=1000\\): \\(e^{-0.05t}=0.1\\Rightarrow t=-\\dfrac{\\ln(0.1)}{0.05}\\approx 46\\). Year \\(=2000+46=2046\\).",
+    "solution": "Set \\(P=1000\\): \\(e^{-0.05t}=0.1\\Rightarrow t=-\\dfrac{\\ln(0.1)}{0.05}\\approx 46\\). Year \\(=2000+46=2046\\).",
     "solutionSteps": [
       {
-        "explanation": "Set \\(P = 1000\\).",
-        "workingOut": "e^{-0.05t} = 0.1"
+        "explanation": "Set \\(P=1000\\) in \\(P=10\\,000e^{-0.05t}\\):",
+        "workingOut": "\\(10\\,000e^{-0.05t} = 1000\\)"
       },
       {
-        "explanation": "Take \\(\\ln\\).",
-        "workingOut": "t = \\frac{\\ln(0.1)}{-0.05} \\approx 46.1"
+        "explanation": "Simplify:",
+        "workingOut": "\\(e^{-0.05t} = 0.1\\)"
+      },
+      {
+        "explanation": "Take natural log and solve for \\(t\\):",
+        "workingOut": "\\(t = -\\dfrac{\\ln(0.1)}{0.05} \\approx \\dfrac{2.3026}{0.05} \\approx 46.05 \\approx 46\\)"
       },
       {
         "explanation": "Year \\(= 2000 + 46 = 2046\\).",
-        "workingOut": "2046"
+        "workingOut": "\\(2000 + 46 = 2046\\)"
       }
     ]
+  ,
+    "options": ["2030","2046","2050","2060"]
   },
   {
     "id": "bar2020-q16b",
@@ -2750,23 +2814,53 @@ export const BARKER_2020_QUESTIONS = [
     "source": "Barker 2020 Trial Q18(b)(ii)",
     "type": "teacher_review",
     "difficulty": "easy",
-    "q": "Sketch $y = f(x) = e^{-x} + 1$ on the number plane showing all important details.",
-    "a": "Key features: $y$-intercept at $(0,2)$; horizontal asymptote $y=1$; always above $y=1$; decreasing for all $x$; as $x\\to\\infty$, $y\\to 1^+$; as $x\\to-\\infty$, $y\\to\\infty$.",
+    "q": "Sketch \\(y = f(x) = e^{-x} + 1\\) on the number plane showing all important details.",
+    "a": "Key features: y-intercept (0, 2); horizontal asymptote y = 1; curve always above y = 1; strictly decreasing; as x → ∞, y → 1⁺; as x → −∞, y → ∞. See model sketch.",
     "opts": [],
-    "h": "Find the $y$-intercept, asymptote, and general shape.",
-    "s": "$f(0)=e^0+1=2$. Horizontal asymptote: $y=1$ (as $x\\to\\infty$). Curve is strictly decreasing. Passes through $(0,2)$.",
+    "h": "Mark the y-intercept, draw the horizontal asymptote y = 1 as a dashed line, then sketch the decreasing exponential shape that approaches the asymptote from above as x increases.",
+    "s": "f(0) = 2 so intercept (0, 2). As x → ∞, e^{-x} → 0 so y → 1 (horizontal asymptote). As x → −∞, e^{-x} → ∞ so y → ∞. f'(x) = −e^{-x} < 0, so strictly decreasing. Sketch: decreasing curve through (0, 2), above y = 1.",
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 320,
+        "boundingbox": [-3.5, 6.5, 4.5, -0.8],
+        "boardOptions": { "keepaspectratio": false, "showCopyright": false },
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.2,0],[4.2,0]], {strokeColor:'#0f172a', strokeWidth:1.5});\nboard.create('arrow', [[0,-0.5],[0,6.2]], {strokeColor:'#0f172a', strokeWidth:1.5});\nboard.create('text', [4.0, -0.35, 'x'], {fontSize:14});\nboard.create('text', [0.2, 6.0, 'y'], {fontSize:14});\n// horizontal asymptote y = 1\nboard.create('line', [[-3.2,1],[4.2,1]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:2, straightFirst:false, straightLast:false});\nboard.create('text', [3.2, 1.25, 'y = 1'], {fontSize:12, strokeColor:'#64748b'});\n// curve y = e^{-x} + 1\nboard.create('functiongraph', [function(x){ return Math.exp(-x) + 1; }, -3.0, 4.0], {strokeColor:'#1d4ed8', strokeWidth:2.5});\n// key points\nboard.create('point', [0, 2], {name:'(0, 2)', size:3, color:'#dc2626', fixed:true, label:{offset:[10,8], fontSize:12}});\nboard.create('point', [1, 1 + Math.exp(-1)], {name:'', size:2, color:'#1d4ed8', fixed:true});\nboard.create('point', [-1, 1 + Math.E], {name:'', size:2, color:'#1d4ed8', fixed:true});\nboard.create('text', [-2.6, 5.2, 'y = e^{-x} + 1'], {fontSize:12, strokeColor:'#1d4ed8'});\nboard.unsuspendUpdate();"
+      }
+    },
     "solutionSteps": [
       {
-        "explanation": "\\(y\\)-intercept: \\(f(0)=2\\).",
-        "workingOut": "(0, 2)"
+        "explanation": "Begin by listing what a full sketch must show: intercepts, asymptotes, and overall shape (increasing/decreasing, end behaviour). The given function is \\(f(x)=e^{-x}+1\\). This is the basic exponential \\(e^{x}\\) reflected in the \\(y\\)-axis (so the exponent becomes \\(-x\\)) and then translated up by 1. That strategy tells us the asymptote will be the line \\(y=1\\) rather than the \\(x\\)-axis, and the curve will decrease as \\(x\\) increases.",
+        "workingOut": "\\(f(x)=e^{-x}+1\\)",
+        "graphData": null
       },
       {
-        "explanation": "As \\(x\\to\\infty\\), \\(e^{-x}\\to 0\\), so \\(y\\to 1\\) (asymptote \\(y=1\\)).",
-        "workingOut": "y=1 \\text{ (horizontal asymptote)}"
+        "explanation": "Find the \\(y\\)-intercept by substituting \\(x=0\\). This is the point where the curve meets the vertical axis and is usually the first feature marked on a sketch. A common slip is to compute \\(e^{-0}\\) incorrectly — recall \\(e^{0}=1\\), so \\(f(0)=1+1=2\\).",
+        "workingOut": "\\(f(0)=e^{0}+1=1+1=2\\;\\Rightarrow\\;(0,2)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Curve is decreasing (reflected exponential), sketch accordingly.",
-        "workingOut": "\\text{Smooth decreasing curve above } y=1"
+        "explanation": "Determine the horizontal asymptote by considering end behaviour as \\(x\\to\\infty\\). Since \\(e^{-x}\\to 0\\), we get \\(f(x)\\to 1\\) from above. As \\(x\\to-\\infty\\), \\(e^{-x}\\to\\infty\\), so \\(f(x)\\to\\infty\\). Mark \\(y=1\\) as a dashed horizontal line — never draw the curve crossing that asymptote, because \\(e^{-x}>0\\) for all real \\(x\\).",
+        "workingOut": "\\(x\\to\\infty:\\; f(x)\\to 1^{+}\\quad(\\text{asymptote }y=1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Confirm the curve is strictly decreasing by differentiating: \\(f'(x)=-e^{-x}\\). For every real \\(x\\), \\(e^{-x}>0\\), so \\(f'(x)<0\\). That means as you move from left to right the graph falls, approaching the asymptote \\(y=1\\). Students sometimes sketch a rising exponential by forgetting the reflection (the minus in the exponent).",
+        "workingOut": "\\(f'(x)=-e^{-x}<0\\;\\Rightarrow\\;\\text{strictly decreasing}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Assemble the sketch: draw axes; draw the dashed asymptote \\(y=1\\); plot the intercept \\((0,2)\\); then draw a smooth decreasing curve that is always above \\(y=1\\), rises steeply as \\(x\\) becomes large and negative, and flattens toward the asymptote as \\(x\\) becomes large and positive. The model graph below shows the completed diagram with these features labelled.",
+        "workingOut": "\\text{Model sketch: intercept }(0,2),\\text{ asymptote }y=1,\\text{ decreasing curve}",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 320,
+            "boundingbox": [-3.5, 6.5, 4.5, -0.8],
+            "boardOptions": { "keepaspectratio": false, "showCopyright": false },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.2,0],[4.2,0]], {strokeColor:'#0f172a', strokeWidth:1.5});\nboard.create('arrow', [[0,-0.5],[0,6.2]], {strokeColor:'#0f172a', strokeWidth:1.5});\nboard.create('text', [4.0, -0.35, 'x'], {fontSize:14});\nboard.create('text', [0.2, 6.0, 'y'], {fontSize:14});\nboard.create('line', [[-3.2,1],[4.2,1]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:2, straightFirst:false, straightLast:false});\nboard.create('text', [3.2, 1.25, 'y = 1'], {fontSize:12, strokeColor:'#64748b'});\nboard.create('functiongraph', [function(x){ return Math.exp(-x) + 1; }, -3.0, 4.0], {strokeColor:'#1d4ed8', strokeWidth:2.5});\nboard.create('point', [0, 2], {name:'(0, 2)', size:3, color:'#dc2626', fixed:true, label:{offset:[10,8], fontSize:12}});\nboard.create('point', [1, 1 + Math.exp(-1)], {name:'', size:2, color:'#1d4ed8', fixed:true});\nboard.create('point', [-1, 1 + Math.E], {name:'', size:2, color:'#1d4ed8', fixed:true});\nboard.create('text', [-2.6, 5.2, 'y = e^{-x} + 1'], {fontSize:12, strokeColor:'#1d4ed8'});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ]
   },

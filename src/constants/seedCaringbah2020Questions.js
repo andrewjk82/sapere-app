@@ -487,33 +487,103 @@ export const CARINGBAH_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of e^x",
     "source": "Caringbah 2020 Trial Q14",
-    "type": "short_answer",
+    "type": "subquestions",
     "difficulty": "medium",
-    "q": "Differentiate:\n\n(a) $y = x^2 e^x$\n\n(b) $f(x) = \\dfrac{e^x + 1}{2x}$",
-    "a": "(a) $y' = xe^x(x+2)$\n\n(b) $f'(x) = \\dfrac{xe^x - e^x - 1}{2x^2}$",
+    "timeLimit": 180,
+    "question": "Differentiate each of the following functions.",
+    "q": "Differentiate each of the following functions.",
+    "a": "See parts (a) and (b).",
+    "answer": "See parts (a) and (b).",
+    "hint": "Part (a) is a product — use the product rule. Part (b) is a quotient — use the quotient rule.",
+    "h": "Part (a) is a product — use the product rule. Part (b) is a quotient — use the quotient rule.",
+    "solution": "See sub-question solutions.",
+    "s": "See sub-question solutions.",
+    "solutionSteps": [],
     "opts": [],
-    "h": "For (a) use the product rule. For (b) use the quotient rule.",
-    "s": "(a) Product rule: $y' = x^2 e^x + 2xe^x = xe^x(x+2)$.\n\n(b) Quotient rule: $f'(x) = \\frac{2x \\cdot e^x - (e^x+1) \\cdot 2}{(2x)^2} = \\frac{2xe^x - 2e^x - 2}{4x^2} = \\frac{xe^x - e^x - 1}{2x^2}$.",
-    "solutionSteps": [
+    "graphData": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "For part (a), apply the product rule \\(\\frac{d}{dx}[uv] = u'v + uv'\\) with \\(u = x^2\\) and \\(v = e^x\\).",
-        "workingOut": "y' = 2x \\cdot e^x + x^2 \\cdot e^x"
+        "id": "car2020-q14a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "question": "Differentiate \\(y = x^{2} e^{x}\\).",
+        "opts": [
+          "\\(2x e^{x}\\)",
+          "\\(x^{2} e^{x}+2x\\)",
+          "\\(x e^{x}(x+2)\\)",
+          "\\(2x e^{x}+x^{2}\\)"
+        ],
+        "a": 2,
+        "hint": "Product rule with \\(u=x^{2}\\) and \\(v=e^{x}\\). Then factor \\(x e^{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The function is a product: \\(y=x^{2}\\cdot e^{x}\\). Use the product rule \\((uv)'=u'v+uv'\\). Set \\(u=x^{2}\\) and \\(v=e^{x}\\).",
+            "workingOut": "\\(u=x^{2},\\quad v=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate each factor: power rule gives \\(u'=2x\\). The exponential is its own derivative, so \\(v'=e^{x}\\).",
+            "workingOut": "\\(u'=2x,\\quad v'=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Apply the product rule: \\(y'=u'v+uv'=(2x)\\cdot e^{x}+(x^{2})\\cdot e^{x}=2x e^{x}+x^{2} e^{x}\\).",
+            "workingOut": "\\(y'=2x e^{x}+x^{2} e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out the common factor \\(x e^{x}\\): first term \\(2x e^{x}=x e^{x}\\cdot 2\\); second term \\(x^{2} e^{x}=x e^{x}\\cdot x\\). So \\(y'=x e^{x}(2+x)\\).",
+            "workingOut": "\\(y'=x e^{x}(2+x)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Rewrite the bracket as \\(x+2\\). Therefore \\(y'=x e^{x}(x+2)\\).",
+            "workingOut": "\\(y'=x e^{x}(x+2)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Factorise by taking out the common factor \\(xe^x\\).",
-        "workingOut": "= xe^x(2 + x) = xe^x(x+2)"
-      },
-      {
-        "explanation": "For part (b), apply the quotient rule \\(\\frac{d}{dx}\\left[\\frac{u}{v}\\right] = \\frac{u'v - uv'}{v^2}\\) with \\(u = e^x+1\\) and \\(v = 2x\\).",
-        "workingOut": "f'(x) = \\dfrac{2x \\cdot e^x - (e^x+1) \\cdot 2}{(2x)^2}"
-      },
-      {
-        "explanation": "Expand the numerator and simplify.",
-        "workingOut": "= \\dfrac{2xe^x - 2e^x - 2}{4x^2}"
-      },
-      {
-        "explanation": "Cancel the common factor of \\(2\\) from numerator and denominator.",
-        "workingOut": "f'(x) = \\dfrac{xe^x - e^x - 1}{2x^2}"
+        "id": "car2020-q14b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "question": "Differentiate \\(f(x)=\\dfrac{e^{x}+1}{2x}\\).",
+        "opts": [
+          "\\(\\dfrac{e^{x}}{2x}\\)",
+          "\\(\\dfrac{x e^{x}-e^{x}-1}{2x^{2}}\\)",
+          "\\(\\dfrac{2x e^{x}-(e^{x}+1)}{4x^{2}}\\)",
+          "\\(\\dfrac{e^{x}-1}{2x^{2}}\\)"
+        ],
+        "a": 1,
+        "hint": "Quotient rule with \\(u=e^{x}+1\\) and \\(v=2x\\). Simplify the fraction carefully at the end.",
+        "solutionSteps": [
+          {
+            "explanation": "The function is a quotient: \\(f(x)=\\dfrac{e^{x}+1}{2x}\\). Use the quotient rule \\(\\dfrac{dy}{dx}=\\dfrac{v u'-u v'}{v^{2}}\\). Set numerator \\(u=e^{x}+1\\) and denominator \\(v=2x\\).",
+            "workingOut": "\\(u=e^{x}+1,\\quad v=2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate each piece: \\(u'=e^{x}\\) (the constant 1 vanishes). For the denominator, \\(v'=2\\).",
+            "workingOut": "\\(u'=e^{x},\\quad v'=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute into the quotient rule. The denominator is \\(v^{2}=(2x)^{2}=4x^{2}\\). The numerator is \\(v u'-u v'=2x\\cdot e^{x}-(e^{x}+1)\\cdot 2\\).",
+            "workingOut": "\\(f'(x)=\\dfrac{2x e^{x}-2(e^{x}+1)}{4x^{2}}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Expand the numerator: \\(2x e^{x}-2e^{x}-2\\). So \\(f'(x)=\\dfrac{2x e^{x}-2e^{x}-2}{4x^{2}}\\).",
+            "workingOut": "\\(\\dfrac{2xe^{x}-2e^{x}-2}{4x^{2}}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Cancel a common factor of 2 from every term in the numerator and from the denominator: numerator becomes \\(x e^{x}-e^{x}-1\\), denominator becomes \\(2x^{2}\\).",
+            "workingOut": "\\(f'(x)=\\dfrac{x e^{x}-e^{x}-1}{2x^{2}}\\)",
+            "graphData": null
+          }
+        ]
       }
     ]
   },
@@ -1260,37 +1330,112 @@ export const CARINGBAH_2020_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Caringbah 2020 Trial Q37",
-    "type": "short_answer",
+    "type": "subquestions",
     "difficulty": "hard",
-    "q": "At time $t$ years after it was purchased the value $V$ of a car is given by $V = 25\\,000e^{-0.5t}$.\n\n(a) Find the loss in value of the car during the third year.\n\n(b) Find the year in which the car is losing value at a rate of $100 per year.",
-    "a": "(a) $\\approx \\$3620$\n\n(b) During the $10$th year",
+    "timeLimit": 240,
+    "q": "At time \\(t\\) years after it was purchased, the value \\(\\$V\\) of a car is given by\n\\( V = 25\\,000e^{-0.5t} \\).",
+    "question": "At time \\(t\\) years after it was purchased, the value \\(\\$V\\) of a car is given by\n\\( V = 25\\,000e^{-0.5t} \\).",
+    "a": "See parts (a) and (b).",
+    "answer": "See parts (a) and (b).",
+    "h": "For (a), loss during the third year is \\(V(2)-V(3)\\). For (b), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\) and solve for \\(t\\).",
+    "hint": "For (a), loss during the third year is \\(V(2)-V(3)\\). For (b), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\) and solve for \\(t\\).",
+    "s": "See sub-question solutions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
     "opts": [],
-    "h": "For (a), compute $V(2) - V(3)$. For (b), set $|dV/dt| = 100$ and solve for $t$.",
-    "s": "(a) Loss $= V(2) - V(3) = 25000e^{-1} - 25000e^{-1.5} = 25000(e^{-1}-e^{-1.5}) \\approx \\$3620$.\n\n(b) $\\frac{dV}{dt} = -12500e^{-0.5t}$. Set $12500e^{-0.5t} = 100 \\Rightarrow e^{-0.5t} = \\frac{1}{125} \\Rightarrow -0.5t = -\\ln 125 \\Rightarrow t = 2\\ln 125 \\approx 9.66$ years, so during the 10th year.",
-    "solutionSteps": [
+    "graphData": null,
+    "isNew": true,
+    "subQuestions": [
       {
-        "explanation": "For (a): the loss during the third year is the value at the start of year 3 (\\(t=2\\)) minus the value at the end (\\(t=3\\)).",
-        "workingOut": "\\text{Loss} = V(2) - V(3) = 25000e^{-1} - 25000e^{-1.5}"
+        "id": "car2020-q37a",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "question": "Find the loss in value of the car during the third year (from the start of year 3 to the end of year 3).",
+        "opts": [
+          "\\(\\$2\\,500\\)",
+          "\\(\\$3\\,620\\) (approx.)",
+          "\\(\\$5\\,000\\)",
+          "\\(\\$9\\,200\\) (approx.)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "The third year runs from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
+        "solution": "Loss \\(= V(2)-V(3)=25\\,000\\bigl(e^{-1}-e^{-1.5}\\bigr)\\approx 25\\,000(0.3679-0.2231)\\approx \\$3\\,620\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The third year of ownership runs from the end of year 2 to the end of year 3, i.e. from \\(t=2\\) to \\(t=3\\). The loss in value is the fall in \\(V\\) over that interval: \\(V(2)-V(3)\\).",
+            "workingOut": "\\(\\text{Loss} = V(2) - V(3)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute into \\(V = 25\\,000e^{-0.5t}\\):\n\\(V(2) = 25\\,000e^{-0.5\\cdot 2} = 25\\,000e^{-1}\\),\n\\(V(3) = 25\\,000e^{-0.5\\cdot 3} = 25\\,000e^{-1.5}\\).",
+            "workingOut": "\\(V(2)=25\\,000e^{-1},\\quad V(3)=25\\,000e^{-1.5}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out the constant 25 000:",
+            "workingOut": "\\(\\text{Loss} = 25\\,000\\bigl(e^{-1}-e^{-1.5}\\bigr)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Evaluate numerically (using \\(e^{-1}\\approx 0.3679\\) and \\(e^{-1.5}\\approx 0.2231\\)):",
+            "workingOut": "\\(25\\,000(0.3679 - 0.2231) = 25\\,000\\times 0.1448 \\approx 3\\,620\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the loss during the third year is approximately \\(\\$3\\,620\\).",
+            "workingOut": "\\(\\text{Loss} \\approx \\$3\\,620\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Factor and evaluate numerically.",
-        "workingOut": "= 25000(e^{-1} - e^{-1.5}) \\approx 25000(0.3679 - 0.2231) \\approx $3620"
-      },
-      {
-        "explanation": "For (b): differentiate \\(V\\) with respect to \\(t\\) to find the rate of change.",
-        "workingOut": "\\dfrac{dV}{dt} = -12500e^{-0.5t}"
-      },
-      {
-        "explanation": "The rate of loss is \\(\\left|\\frac{dV}{dt}\\right| = 100\\). Set up the equation.",
-        "workingOut": "12500e^{-0.5t} = 100 \\implies e^{-0.5t} = \\dfrac{1}{125}"
-      },
-      {
-        "explanation": "Take the natural log of both sides and solve for \\(t\\).",
-        "workingOut": "-0.5t = -\\ln 125 \\implies t = 2\\ln 125 \\approx 9.66 \\text{ years}"
-      },
-      {
-        "explanation": "Since \\(t \\approx 9.66\\) years (between years 9 and 10), the car loses value at \\(100 per year during the 10th year.\\)",
-        "workingOut": "\\text{During the 10th year}"
+        "id": "car2020-q37b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "question": "Find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",
+        "opts": [
+          "During the 5th year",
+          "During the 8th year",
+          "During the 10th year",
+          "During the 12th year"
+        ],
+        "a": 2,
+        "answer": "2",
+        "hint": "Differentiate \\(V\\), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\), solve for \\(t\\), then interpret which year that falls in.",
+        "solution": "\\(\\dfrac{dV}{dt}=-12\\,500e^{-0.5t}\\). Set \\(12\\,500e^{-0.5t}=100\\Rightarrow t=2\\ln 125\\approx 9.66\\). So the rate is \\(\\$100\\) per year during the 10th year.",
+        "solutionSteps": [
+          {
+            "explanation": "The rate of change of value is the derivative. Differentiate \\(V=25\\,000e^{-0.5t}\\) using the chain rule (factor \\(-0.5\\) from the exponent):",
+            "workingOut": "\\(\\dfrac{dV}{dt} = 25\\,000 \\cdot (-0.5)e^{-0.5t} = -12\\,500e^{-0.5t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The car is losing value, so the rate of loss is the magnitude \\(\\left|\\dfrac{dV}{dt}\\right|=12\\,500e^{-0.5t}\\). Set this equal to 100:",
+            "workingOut": "\\(12\\,500e^{-0.5t} = 100\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by 12 500:",
+            "workingOut": "\\(e^{-0.5t} = \\dfrac{100}{12\\,500} = \\dfrac{1}{125}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Take natural log of both sides:",
+            "workingOut": "\\(-0.5t = \\ln\\!\\left(\\dfrac{1}{125}\\right) = -\\ln 125\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve for \\(t\\):",
+            "workingOut": "\\(t = \\dfrac{\\ln 125}{0.5} = 2\\ln 125 \\approx 2\\times 4.8283 \\approx 9.66\\text{ years}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Since \\(9 < 9.66 < 10\\), this occurs between the end of year 9 and the end of year 10 — that is, during the 10th year of ownership.",
+            "workingOut": "\\(\\text{During the 10th year}\\)",
+            "graphData": null
+          }
+        ]
       }
     ]
   },

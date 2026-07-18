@@ -715,15 +715,21 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                                       </div>
                                     )}
                                     {step.graphData && (
-                                      <div style={{ marginTop: '8px', borderRadius: '12px', overflow: 'hidden', border: '1px solid #e2e8f0' }}>
+                                      <div style={{
+                                        marginTop: '6px',
+                                        borderRadius: '12px',
+                                        overflow: 'hidden',
+                                        border: '1px solid #e2e8f0',
+                                        background: '#fafbfd',
+                                        display: 'flex',
+                                        justifyContent: 'center',
+                                        alignItems: 'center',
+                                        padding: '4px 0',
+                                      }}>
                                         <MathView
                                           content=""
                                           graphData={step.graphData}
-                                          style={{
-                                            minHeight: step.graphData?.jsxGraph?.height
-                                              ? `${step.graphData.jsxGraph.height}px`
-                                              : (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '240px'
-                                          }}
+                                          style={{ minHeight: 'auto', margin: 0, lineHeight: 0 }}
                                         />
                                       </div>
                                     )}

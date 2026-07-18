@@ -500,27 +500,49 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of e^x",
     "source": "Fort Street 2020 Trial Q2(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Differentiate $\\dfrac{e^{2x}}{x-2}$, simplifying your answer.",
-    "a": "$\\dfrac{e^{2x}(2x-5)}{(x-2)^2}$",
-    "opts": [],
-    "h": "Quotient rule with $u = e^{2x}$ ($u' = 2e^{2x}$), $v = x-2$.",
-    "s": "$\\frac{dy}{dx} = \\frac{(x-2)(2e^{2x}) - e^{2x}}{(x-2)^2} = \\frac{e^{2x}(2x - 4 - 1)}{(x-2)^2} = \\frac{e^{2x}(2x-5)}{(x-2)^2}$.",
+    "q": "Differentiate \\(\\dfrac{e^{2x}}{x-2}\\), simplifying your answer.",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{2e^{2x}}{(x-2)^{2}}\\)",
+      "\\(\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\)",
+      "\\(\\dfrac{e^{2x}(2x-4)}{(x-2)^{2}}\\)",
+      "\\(\\dfrac{2e^{2x}(x-2)-e^{2x}}{x-2}\\)"
+    ],
+    "h": "Quotient \\(y=\\dfrac{e^{2x}}{x-2}\\). Set \\(u=e^{2x}\\), \\(v=x-2\\).",
+    "s": "\\(u=e^{2x},\\quad v=x-2\\) ; \\(u'=2e^{2x},\\quad v'=1\\) ; \\(\\dfrac{2e^{2x}(x-2)-e^{2x}}{(x-2)^{2}}\\) ; \\(\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\) ; \\(\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Set up the quotient rule.",
-        "workingOut": "u = e^{2x}, \\; u' = 2e^{2x}; \\quad v = x-2, \\; v' = 1"
+        "explanation": "Quotient \\(y=\\dfrac{e^{2x}}{x-2}\\). Set \\(u=e^{2x}\\), \\(v=x-2\\).",
+        "workingOut": "\\(u=e^{2x},\\quad v=x-2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute.",
-        "workingOut": "\\frac{dy}{dx} = \\frac{(x-2)(2e^{2x}) - e^{2x}}{(x-2)^2}"
+        "explanation": "\\(u'=2e^{2x}\\), \\(v'=1\\).",
+        "workingOut": "\\(u'=2e^{2x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor \\(e^{2x}\\) and simplify the numerator.",
-        "workingOut": "= \\frac{e^{2x}(2x - 5)}{(x-2)^2}"
+        "explanation": "\\(\\dfrac{2e^{2x}(x-2)-e^{2x}}{(x-2)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{2e^{2x}(x-2)-e^{2x}}{(x-2)^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor: \\(e^{2x}(2x-4-1)=e^{2x}(2x-5)\\).",
+        "workingOut": "\\(\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(\\dfrac{dy}{dx}=\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "Differentiate \\(\\dfrac{e^{2x}}{x-2}\\), simplifying your answer.",
+    "answer": "1",
+    "hint": "Quotient \\(y=\\dfrac{e^{2x}}{x-2}\\). Set \\(u=e^{2x}\\), \\(v=x-2\\).",
+    "solution": "Quotient \\(y=\\dfrac{e^{2x}}{x-2}\\). Set \\(u=e^{2x}\\), \\(v=x-2\\). \\(u'=2e^{2x}\\), \\(v'=1\\). \\(\\dfrac{2e^{2x}(x-2)-e^{2x}}{(x-2)^{2}}\\). Factor: \\(e^{2x}(2x-4-1)=e^{2x}(2x-5)\\). So \\(\\dfrac{dy}{dx}=\\dfrac{e^{2x}(2x-5)}{(x-2)^{2}}\\)."
   },
   {
     "id": "fortst2020s-q2b",

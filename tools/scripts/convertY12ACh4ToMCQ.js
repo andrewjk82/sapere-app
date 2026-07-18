@@ -870,13 +870,14 @@ const PATCHES = {
       topicId: 'y12a-4H',
       difficulty: 'medium',
       source: 'Cranbrook 2023',
-      q: 'Flow rates at \\(t=0,1,2,3\\): \\(10, 3.68, 2.43, 1.77\\). Trapezoidal estimate of volume over \\([0,3]\\) is about:',
+      q: 'A deflated weather balloon is being inflated. The rate of air flow (volume per unit time) is modelled by \\(V=10e^{-\\sqrt{t}}\\), and the graph shows the flow rates at hourly intervals: \\((0,10)\\), \\((1,3.68)\\), \\((2,2.43)\\), \\((3,1.77)\\).\n\nUsing three applications of the trapezoidal rule, estimate the volume of air in the balloon at time \\(t=3\\).',
       correct: '\\(12.0\\) units³',
       distractors: ['\\(9.0\\) units³', '\\(15.0\\) units³', '\\(18.0\\) units³'],
       a: nextA(),
       solutionSteps: [
-        step('\\(h=1\\), four ordinates: \\(\\dfrac{1}{2}(y_0+2y_1+2y_2+y_3)\\).', '\\(\\frac{1}{2}(\\ldots)\\)'),
-        step('Compute sum with given values ≈ \\(12.0\\).', '\\(\\approx 12.0\\)'),
+        step('Volume \\(=\\int_0^3 V\\,dt\\). Three strips ⇒ \\(h=1\\).', '\\(h=1\\)'),
+        step('Trapezoidal: \\(\\dfrac{1}{2}[f_0+2f_1+2f_2+f_3]\\).', '\\(\\frac{1}{2}(\\ldots)\\)'),
+        step('Substitute rates: \\(\\dfrac{1}{2}[10+2(3.68)+2(2.43)+1.77]=\\dfrac{23.99}{2}\\approx 12.0\\).', '\\(\\approx 12.0\\)'),
       ],
     }),
   'cra2023-q22b': () =>
@@ -969,12 +970,13 @@ const PATCHES = {
       topicId: 'y12a-4H',
       difficulty: 'easy',
       source: 'Danebank 2020',
-      q: 'Two trapezoidal applications: heights \\(6,7,10\\) m spaced \\(6\\) m apart. Area ≈',
+      q: 'Use two applications of the trapezoidal rule to approximate the area of the figure below. The figure has heights \\(6\\) m, \\(7\\) m and \\(10\\) m at points spaced \\(6\\) m apart along the base.',
       correct: '\\(90\\text{ m}^2\\)',
       distractors: ['\\(69\\text{ m}^2\\)', '\\(84\\text{ m}^2\\)', '\\(100\\text{ m}^2\\)'],
       a: nextA(),
       solutionSteps: [
-        step('\\(\\dfrac{6}{2}(6+14+10)=90\\).', '\\(90\\)'),
+        step('Two strips, \\(h=6\\): \\(A\\approx\\dfrac{6}{2}(6+2\\cdot 7+10)\\).', '\\(\\dfrac{6}{2}(6+14+10)\\)'),
+        step('Compute: \\(3\\times 30=90\\).', '\\(90\\text{ m}^2\\)'),
       ],
     }),
   'dane2020s-q11': () =>

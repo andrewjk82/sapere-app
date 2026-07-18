@@ -118,7 +118,29 @@ const SvgGraph = ({ data }) => {
   /* ── Bounding box & transforms ── */
   const bbox = data.boundingbox || [-6, 6, 6, -6];
   const [xMin, yMax, xMax, yMin] = bbox;
-  const W = 340, H = 340, pad = 32;
+  // Size the canvas from the data aspect ratio so wide/short plots (e.g. bell
+  // curves) are not forced into a tall square with huge empty bands.
+  const bbW = Math.max(Math.abs(xMax - xMin), 1e-6);
+  const bbH = Math.max(Math.abs(yMax - yMin), 1e-6);
+  const aspect = bbW / bbH;
+  const explicitW = Number(data.width);
+  const explicitH = Number(data.height);
+  let W = Number.isFinite(explicitW) && explicitW > 0 ? explicitW : 340;
+  let H = Number.isFinite(explicitH) && explicitH > 0 ? explicitH : 340;
+  if (!(Number.isFinite(explicitW) && explicitW > 0 && Number.isFinite(explicitH) && explicitH > 0)) {
+    // Match canvas aspect to the data box so wide plots (bell curves, etc.)
+    // are not forced into a tall square with empty bands.
+    if (!(Number.isFinite(explicitW) && explicitW > 0)) W = 360;
+    if (!(Number.isFinite(explicitH) && explicitH > 0)) {
+      // Prefer data aspect; clamp only enough to keep labels usable.
+      const rawH = W / aspect;
+      H = Math.round(Math.min(260, Math.max(140, rawH)));
+    }
+    if (!(Number.isFinite(explicitW) && explicitW > 0) && aspect < 0.85) {
+      W = Math.round(Math.min(320, Math.max(160, H * aspect)));
+    }
+  }
+  const pad = 22;
 
   const toX = (x) => pad + ((x - xMin) / (xMax - xMin)) * (W - 2 * pad);
   const toY = (y) => pad + ((yMax - y) / (yMax - yMin)) * (H - 2 * pad);
@@ -224,7 +246,13 @@ const SvgGraph = ({ data }) => {
           prev = false;
         }
       }
-      return { d: d.trim(), grad: curveGradient(c.attrs.strokeColor), w: Math.min(c.attrs.strokeWidth || 2.5, 3), idx };
+      return {
+        d: d.trim(),
+        grad: curveGradient(c.attrs.strokeColor),
+        w: Math.min(c.attrs.strokeWidth || 2.5, 3),
+        dash: c.attrs.dash ? '6 4' : undefined,
+        idx,
+      };
     }
     return null;
   }).filter(Boolean);
@@ -233,9 +261,16 @@ const SvgGraph = ({ data }) => {
      Render
      ═══════════════════════════════════════════════════════════════════ */
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', margin: '16px 0' }}>
+    <div style={{ display: 'flex', justifyContent: 'center', margin: '4px 0', lineHeight: 0 }}>
       <svg width={W} height={H} viewBox={`0 0 ${W} ${H}`}
-        style={{ borderRadius: 16, background: C.bg, overflow: 'hidden' }}>
+        style={{
+          borderRadius: 12,
+          background: C.bg,
+          overflow: 'hidden',
+          maxWidth: '100%',
+          height: 'auto',
+          display: 'block',
+        }}>
 
         {/* ── Defs ── */}
         <defs>
@@ -322,9 +357,11 @@ const SvgGraph = ({ data }) => {
           <g key={`c${cp.idx}`}>
             <path d={cp.d} fill="none" stroke={cp.grad[1]}
               strokeWidth={cp.w * 3} strokeOpacity={0.12}
-              strokeLinecap="round" strokeLinejoin="round" />
+              strokeLinecap="round" strokeLinejoin="round"
+              strokeDasharray={cp.dash} />
             <path d={cp.d} fill="none" stroke={`url(#cg${uid}${cp.idx})`}
-              strokeWidth={cp.w} strokeLinecap="round" strokeLinejoin="round" />
+              strokeWidth={cp.w} strokeLinecap="round" strokeLinejoin="round"
+              strokeDasharray={cp.dash} />
           </g>
         ))}
 

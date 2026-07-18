@@ -29,20 +29,23 @@ import {
 
 const optText = (opt) => (typeof opt === 'object' && opt !== null ? opt.text : opt);
 
-/** chapterSeeder.js lines 101-121, verbatim minus the shuffle (order cannot
- *  change whether findIndex finds a match). */
+/** Mirrors chapterSeeder.resolveSeedCorrectIndex — text match first, then index. */
 const seederWouldResolve = (rawOpts, rawCorrect) => {
-  let correct = rawCorrect;
-  if (rawOpts.length > 0 && (typeof correct === 'number' || (typeof correct === 'string' && /^\d+$/.test(correct)))) {
-    const idx = parseInt(correct, 10);
-    if (idx >= 0 && idx < rawOpts.length) {
-      correct = optText(rawOpts[idx]);
+  if (rawCorrect === undefined || rawCorrect === null) {
+    return { correctIndex: -1, resolvedCorrect: rawCorrect };
+  }
+  const s = String(rawCorrect).trim();
+  const exact = rawOpts.findIndex((opt) => String(optText(opt)).trim() === s);
+  if (exact >= 0) {
+    return { correctIndex: exact, resolvedCorrect: optText(rawOpts[exact]) };
+  }
+  if (/^\d+$/.test(s) || typeof rawCorrect === 'number') {
+    const idx = parseInt(s, 10);
+    if (Number.isInteger(idx) && idx >= 0 && idx < rawOpts.length) {
+      return { correctIndex: idx, resolvedCorrect: optText(rawOpts[idx]) };
     }
   }
-  const correctIndex = rawOpts.findIndex(
-    (opt) => String(optText(opt)).trim() === String(correct).trim(),
-  );
-  return { correctIndex, resolvedCorrect: correct };
+  return { correctIndex: -1, resolvedCorrect: rawCorrect };
 };
 
 const findings = { wrongAnswer: [], ungradeable: [], duplicate: [], ambiguous: [] };

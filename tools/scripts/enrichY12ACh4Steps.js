@@ -499,7 +499,7 @@ set('car2020-q13', [
   ),
   S(
     'At \\(x=3\\): \\(-9+\\dfrac{9}{2}+18=\\dfrac{27}{2}\\). At \\(x=-2\\): \\(\\dfrac{8}{3}+2-12=-\\dfrac{22}{3}\\).',
-    '\\dfrac{27}{2}-\\Big(-\\dfrac{22}{3}\\)=\\dfrac{81}{6}+\\dfrac{44}{6}=\\dfrac{125}{6}'
+    '\\dfrac{27}{2}-\\Big(-\\dfrac{22}{3}\\Big)=\\dfrac{81}{6}+\\dfrac{44}{6}=\\dfrac{125}{6}'
   ),
   S('So \\(A=(3,0)\\) and the area is \\(\\dfrac{125}{6}\\).', 'A=(3,0),\\;\\text{area }=\\dfrac{125}{6}'),
 ]);
@@ -521,7 +521,7 @@ set(
     ),
     S(
       'At \\(x=4\\): \\(-\\dfrac{64}{3}+16+32=\\dfrac{80}{3}\\). At \\(x=-2\\): \\(\\dfrac{8}{3}+4-16=-\\dfrac{28}{3}\\).',
-      '\\dfrac{80}{3}-\\Big(-\\dfrac{28}{3}\\)=\\dfrac{108}{3}=36'
+      '\\dfrac{80}{3}-\\Big(-\\dfrac{28}{3}\\Big)=\\dfrac{108}{3}=36'
     ),
     S('So \\(B=(4,0)\\) and the area is \\(36\\).', 'B=(4,0),\\;\\text{area }=36'),
   ],
@@ -546,7 +546,7 @@ set('dane2020-q14b', [
   ),
   S(
     'At \\(x=3\\): \\(12-\\dfrac{9}{2}-3\\ln 3=\\dfrac{15}{2}-3\\ln 3\\). At \\(x=1\\): \\(4-\\dfrac{1}{2}-0=\\dfrac{7}{2}\\).',
-    '\\Big(\\dfrac{15}{2}-3\\ln 3\\)-\\dfrac{7}{2}=4-3\\ln 3'
+    '\\Big(\\dfrac{15}{2}-3\\ln 3\\Big)-\\dfrac{7}{2}=4-3\\ln 3'
   ),
   S('Area \\(=4-3\\ln 3\\) (exact).', '4-3\\ln 3'),
 ]);
@@ -640,7 +640,7 @@ set('bar2020-q14ciiv', [
   ),
   S(
     'Antiderivative: \\(-\\dfrac{x^3}{3}+\\dfrac{5x^2}{2}-4x\\). At \\(4\\): \\(-\\dfrac{64}{3}+40-16=\\dfrac{8}{3}\\). At \\(1\\): \\(-\\dfrac{1}{3}+\\dfrac{5}{2}-4=-\\dfrac{11}{6}\\).',
-    '\\dfrac{8}{3}-\\Big(-\\dfrac{11}{6}\\)=\\dfrac{16}{6}+\\dfrac{11}{6}=\\dfrac{27}{6}=\\dfrac{9}{2}'
+    '\\dfrac{8}{3}-\\Big(-\\dfrac{11}{6}\\Big)=\\dfrac{16}{6}+\\dfrac{11}{6}=\\dfrac{27}{6}=\\dfrac{9}{2}'
   ),
   S('Area \\(=\\dfrac{9}{2}\\).', '\\dfrac{9}{2}'),
 ]);
@@ -652,7 +652,7 @@ set('baulko2020-q16ci', [
   ),
   S(
     'Here \\(g(x)=-\\dfrac{2xe^{kx}}{k}\\) is the lower curve (negative for the given diagram), so',
-    'f-g = x^2e^{kx}-\\Big(-\\dfrac{2xe^{kx}}{k}\\)=x^2e^{kx}+\\dfrac{2xe^{kx}}{k}'
+    'f-g = x^2e^{kx}-\\Big(-\\dfrac{2xe^{kx}}{k}\\Big)=x^2e^{kx}+\\dfrac{2xe^{kx}}{k}'
   ),
   S(
     'The left bound on the diagram is \\(x=0\\), right bound \\(x=2\\).',
@@ -699,16 +699,24 @@ set('bbhs2020s-29b', [
 
 set('bbhs2020-mc10', [
   S(
-    'Identify the shaded pieces: between the curves where they overlap, and under \\(f\\) alone where \\(g\\) has already hit zero.',
-    '\\text{split the region}'
+    'Read the diagram carefully. The shaded region has two pieces: (i) the area between the curves \\(y=f(x)\\) and \\(y=g(x)\\) from their intersection at \\(x=b\\) to where \\(g\\) meets the axis at \\(x=c\\); (ii) the area under \\(f\\) alone from \\(x=c\\) to \\(x=d\\) (since \\(g(x)=0\\) for \\(x>c\\)).',
+    '\\text{shaded }=\\text{between }f,g\\text{ on }[b,c]\\;+\\;\\text{under }f\\text{ on }[c,d]'
   ),
   S(
-    'One efficient expression: total area under \\(f\\) from the left of the figure to \\(d\\), minus the area under \\(g\\) from \\(a\\) to \\(c\\) (removing the unshaded parts under \\(g\\)).',
-    '\\(\\displaystyle\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx\\)'
+    'Write each piece as an integral. On \\([b,c]\\) take upper minus lower; on \\([c,d]\\) integrate \\(f\\) down to the \\(x\\)-axis.',
+    'A=\\displaystyle\\int_b^c\\big(f(x)-g(x)\\big)\\,dx+\\int_c^d f(x)\\,dx'
   ),
   S(
-    'This matches the option that subtracts only the integral of \\(g\\) over \\([a,c]\\) from the integral of \\(f\\) over \\([0,d]\\).',
-    '\\(\\displaystyle\\int_0^d f - \\int_a^c g\\)'
+    'Expand the first integral and recombine the pieces under \\(f\\):',
+    'A=\\displaystyle\\int_b^c f-\\int_b^c g+\\int_c^d f=\\int_b^d f(x)\\,dx-\\int_b^c g(x)\\,dx'
+  ),
+  S(
+    'An equivalent construction that matches an option: take the whole area under \\(f\\) from the left of the figure (\\(x=0\\)) out to \\(x=d\\), then subtract the whole area under \\(g\\) from \\(x=a\\) to \\(x=c\\). Subtracting under \\(g\\) removes exactly the unshaded region that sits under \\(g\\), leaving only the shaded set.',
+    'A=\\displaystyle\\int_0^d f(x)\\,dx-\\int_a^c g(x)\\,dx'
+  ),
+  S(
+    'That is option D. Check the others fail: A and B integrate \\((f-g)\\) over intervals that include unshaded strips between the curves (wrong left endpoint / wrong range). C only runs up to \\(x=c\\), so it misses the strip under \\(f\\) on \\([c,d]\\), and it also includes an extra between-curve piece on \\([0,b]\\).',
+    '\\(\\displaystyle\\int_0^d f(x)\\,dx-\\int_a^c g(x)\\,dx\\)'
   ),
 ]);
 
@@ -830,20 +838,32 @@ set('abb2020-q15aiv', [
   ),
 ]);
 
-set('abb2020-q15av', [
-  S(
-    'Whether the trapezoidal estimate is high or low depends on concavity: chords sit above a concave-up graph and below a concave-down graph.',
-    '\\text{concavity} \\Rightarrow \\text{over/under}'
-  ),
-  S(
-    'For \\(y=e^{-x^2}\\), the inflection points are at \\(x=\\pm\\dfrac{1}{\\sqrt{2}}\\). Between those points the graph is concave down.',
-    'concave down on the interval'
-  ),
-  S(
-    'Therefore each trapezium (chord) lies under the curve, so the trapezoidal estimate underestimates the integral. The true integral is greater than the estimate.',
-    '\\text{true integral} > \\text{trap estimate}'
-  ),
-]);
+set(
+  'abb2020-q15av',
+  [
+    S(
+      'Whether a trapezoidal estimate is high or low depends on concavity: a chord sits above a concave-up graph (overestimate) and below a concave-down graph (underestimate).',
+      '\\text{concavity} \\Rightarrow \\text{over/under estimate}'
+    ),
+    S(
+      'For \\(y=e^{-x^2}\\), differentiate twice: \\(y\'=-2xe^{-x^2}\\) and \\(y\'\'=e^{-x^2}(4x^2-2)=2e^{-x^2}(2x^2-1)\\). Inflection points where \\(y\'\'=0\\):',
+      '2x^2-1=0 \\implies x=\\pm\\dfrac{1}{\\sqrt{2}}'
+    ),
+    S(
+      'On the open interval between the inflection points, \\(|x|<\\dfrac{1}{\\sqrt{2}}\\), so \\(2x^2-1<0\\). Since \\(e^{-x^2}>0\\), we have \\(y\'\'<0\\): the graph is concave down on the whole integration interval.',
+      'y\'\'<0 \\text{ on }\\left[-\\dfrac{1}{\\sqrt{2}},\\dfrac{1}{\\sqrt{2}}\\right]'
+    ),
+    S(
+      'Therefore each trapezium (chord) lies under the curve, so the trapezoidal rule underestimates the true integral. That is why the true value is greater than the three-point estimate.',
+      '\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx > \\text{trap. estimate}'
+    ),
+  ],
+  {
+    // Fix slash-style limits → proper fractions in the stem
+    question:
+      'Why is \\(\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx\\) greater than the trapezoidal estimate with those three points?',
+  }
+);
 
 set('bar2020-mc6', [
   S(
@@ -974,18 +994,37 @@ set('car2020s-q15', [
   S('Approximate area \\(=87.5\\,\\mathrm{m}^2\\).', '87.5\\text{ m}^2'),
 ]);
 
-set('cra2023-q22a', [
-  S(
-    'Volume is the integral of flow rate. Approximate with the trapezoidal rule, \\(h=1\\), four ordinates.',
-    'V\\approx\\dfrac{h}{2}(y_0+2y_1+2y_2+y_3)'
-  ),
-  S('Rates: \\(10,\\,3.68,\\,2.43,\\,1.77\\).', 'y_0=10,\\; y_1=3.68,\\; y_2=2.43,\\; y_3=1.77'),
-  S(
-    'Compute: \\(\\dfrac{1}{2}\\big(10+2\\cdot 3.68+2\\cdot 2.43+1.77\\big)=\\dfrac{1}{2}(10+7.36+4.86+1.77)=\\dfrac{1}{2}\\times 23.99\\approx 12.0\\).',
-    '12.0'
-  ),
-  S('Estimated volume \\(\\approx 12.0\\) cubic units.', '12.0'),
-]);
+set(
+  'cra2023-q22a',
+  [
+    S(
+      'The volume of air is the integral of the flow rate over time, so estimate \\(\\displaystyle\\int_0^3 V\\,dt\\) numerically. Three applications means three strips on \\([0,3]\\), so the strip width is \\(h=1\\).',
+      '\\text{Volume}=\\int_0^3 V\\,dt,\\quad h=\\dfrac{3-0}{3}=1'
+    ),
+    S(
+      'Trapezoidal rule for three strips: end ordinates once, interior ordinates twice.',
+      'V\\approx\\dfrac{h}{2}\\bigl[f_0+2f_1+2f_2+f_3\\bigr]'
+    ),
+    S(
+      'Substitute the given rates \\(f_0=10\\), \\(f_1=3.68\\), \\(f_2=2.43\\), \\(f_3=1.77\\).',
+      '\\approx\\dfrac{1}{2}\\bigl[10+2(3.68)+2(2.43)+1.77\\bigr]'
+    ),
+    S(
+      'Evaluate the bracket, then halve: \\(\\dfrac{1}{2}(10+7.36+4.86+1.77)=\\dfrac{23.99}{2}=11.995\\).',
+      '\\approx 12.0'
+    ),
+    S(
+      'So the estimated volume of air in the balloon at \\(t=3\\) is about \\(12.0\\) cubic units.',
+      '12.0\\text{ units}^3'
+    ),
+  ],
+  {
+    question:
+      'A deflated weather balloon is being inflated. The rate of air flow (volume per unit time) is modelled by \\(V=10e^{-\\sqrt{t}}\\), and the graph shows the flow rates at hourly intervals: \\((0,10)\\), \\((1,3.68)\\), \\((2,2.43)\\), \\((3,1.77)\\).\n\nUsing three applications of the trapezoidal rule, estimate the volume of air in the balloon at time \\(t=3\\).',
+    hint:
+      'Volume is the area under the rate curve: $\\displaystyle\\int_0^3 V\\,dt \\approx \\dfrac{h}{2}[f_0+2f_1+2f_2+f_3]$ with $h=1$.',
+  }
+);
 
 set('cra2023-q22b', [
   S(
@@ -1077,17 +1116,27 @@ set(
   }
 );
 
-set('dane2020-q11', [
-  S(
-    'Two trapezoidal applications: three heights \\(6,7,10\\) m, strip width \\(h=6\\) m.',
-    'A\\approx\\dfrac{h}{2}(y_0+2y_1+y_2)'
-  ),
-  S(
-    'Substitute: \\(\\dfrac{6}{2}(6+2\\cdot 7+10)=3(6+14+10)=3\\times 30=90\\).',
-    '90'
-  ),
-  S('Approximate area \\(=90\\,\\mathrm{m}^2\\).', '90\\text{ m}^2'),
-]);
+set(
+  'dane2020-q11',
+  [
+    S(
+      'Two applications means two strips and three heights. Strip width \\(h=6\\) m. Formula: \\(A\\approx\\dfrac{h}{2}(y_0+2y_1+y_2)\\).',
+      'A\\approx\\dfrac{6}{2}(6+2\\cdot 7+10)'
+    ),
+    S(
+      'Inside the brackets: \\(6+14+10=30\\). Then multiply by \\(3\\).',
+      '3\\times 30=90'
+    ),
+    S(
+      'Approximate area is \\(90\\) square metres.',
+      '90\\text{ m}^2'
+    ),
+  ],
+  {
+    question:
+      'Use two applications of the trapezoidal rule to approximate the area of the figure below. The figure has heights \\(6\\) m, \\(7\\) m and \\(10\\) m at points spaced \\(6\\) m apart along the base.',
+  }
+);
 
 set('dane2020s-q11', [
   S(
@@ -1150,9 +1199,15 @@ set('bbhs2020s-17a', [
 ]);
 
 // ── main ─────────────────────────────────────────────────────────────
+// Optional CLI filter: node enrichY12ACh4Steps.js car2020s-q13 car2020-q13
 async function main() {
-  const ids = Object.keys(PATCH);
-  console.log('Patches prepared:', ids.length);
+  const only = process.argv.slice(2).filter((a) => !a.startsWith('-'));
+  const ids = only.length ? only.filter((id) => PATCH[id]) : Object.keys(PATCH);
+  if (only.length) {
+    const missingPatch = only.filter((id) => !PATCH[id]);
+    if (missingPatch.length) console.log('no patch defined for:', missingPatch.join(', '));
+  }
+  console.log('Patches to apply:', ids.length, only.length ? `(filtered from ${Object.keys(PATCH).length})` : '');
 
   let ok = 0;
   let skip = 0;
@@ -1180,6 +1235,8 @@ async function main() {
     };
     if (patch.answer != null) payload.answer = String(patch.answer);
     if (patch.options) payload.options = patch.options;
+    if (patch.question != null) payload.question = patch.question;
+    if (patch.hint != null) payload.hint = patch.hint;
 
     await ref.set(payload, { merge: true });
     console.log(

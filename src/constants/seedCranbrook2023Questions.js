@@ -1066,33 +1066,38 @@ export const CRANBROOK_2023_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[0,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1.2],[0,11]], {strokeColor:'black'});\nboard.create('functiongraph', [function(t){ return 10*Math.exp(-Math.sqrt(t)); }, 0.0001, 3.6], {strokeColor:'blue',strokeWidth:2});\nvar pts=[[0,10],[1,3.68],[2,2.43],[3,1.77]];\nvar nm=['(0, 10)','(1, 3.68)','(2, 2.43)','(3, 1.77)'];\nvar off=[[8,8],[10,8],[10,8],[10,4]];\nfor(var i=0;i<pts.length;i++){ board.create('point', pts[i], {name:nm[i], size:2.5, color:'red', fixed:true, label:{offset:off[i], fontSize:11}}); }\nboard.create('text', [3.6, 0.4, 't'], {fontSize:14});\nboard.create('text', [0.25, 10.6, 'V'], {fontSize:14});\nboard.unsuspendUpdate();"
       }
     },
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "A deflated weather balloon is being inflated such that the rate of air flow is modelled by $V = 10e^{-\\sqrt{t}}$, with flow rates at hourly intervals: $(0, 10), (1, 3.68), (2, 2.43), (3, 1.77)$. Using three applications of the Trapezoidal rule, estimate the volume of air in the balloon at time $t = 3$.",
-    "a": "$\\approx 12.0$ units³",
-    "opts": [],
-    "h": "The volume is the area under the rate curve: $\\displaystyle\\int_0^3 V\\,dt \\approx \\dfrac{h}{2}\\bigl[f_0 + 2f_1 + 2f_2 + f_3\\bigr]$ with $h = 1$.",
+    "q": "A deflated weather balloon is being inflated. The rate of air flow (volume per unit time) is modelled by $V=10e^{-\\sqrt{t}}$, and the graph shows the flow rates at hourly intervals: $(0,10)$, $(1,3.68)$, $(2,2.43)$, $(3,1.77)$.\n\nUsing three applications of the trapezoidal rule, estimate the volume of air in the balloon at time $t=3$.",
+    "a": "1",
+    "opts": [
+      "$9.0$ units³",
+      "$12.0$ units³",
+      "$15.0$ units³",
+      "$18.0$ units³"
+    ],
+    "h": "Volume is the area under the rate curve: $\\displaystyle\\int_0^3 V\\,dt \\approx \\dfrac{h}{2}\\bigl[f_0 + 2f_1 + 2f_2 + f_3\\bigr]$ with $h = 1$.",
     "s": "Volume $\\approx \\dfrac{1}{2}\\bigl[10 + 2(3.68) + 2(2.43) + 1.77\\bigr] = \\dfrac{1}{2}\\bigl[10 + 7.36 + 4.86 + 1.77\\bigr] = \\dfrac{23.99}{2} \\approx 12.0$.",
     "solutionSteps": [
       {
-        "explanation": "Recognise that the volume of air is the integral of the flow rate over time, so we estimate \\(\\int_0^3 10e^{-\\sqrt{t}}\\,dt\\) numerically. With three applications (three strips) over \\([0, 3]\\), the strip width is \\(h = 1\\).",
-        "workingOut": "\\text{Volume} = \\int_0^3 V\\,dt, quad h = \\dfrac{3-0}{3} = 1"
+        "explanation": "The volume of air is the integral of the flow rate over time, so we estimate $\\displaystyle\\int_0^3 V\\,dt$ numerically. Three applications means three strips on $[0,3]$, so the strip width is $h=1$.",
+        "workingOut": "\\text{Volume}=\\int_0^3 V\\,dt,\\quad h=\\dfrac{3-0}{3}=1"
       },
       {
-        "explanation": "Write the trapezoidal rule for three strips: end ordinates are weighted once and interior ordinates twice.",
-        "workingOut": "\\int_0^3 V\\,dt \\approx \\dfrac{h}{2}\\bigl[f_0 + 2f_1 + 2f_2 + f_3\\bigr]"
+        "explanation": "Trapezoidal rule for three strips: end ordinates once, interior ordinates twice.",
+        "workingOut": "\\int_0^3 V\\,dt\\approx\\dfrac{h}{2}\\bigl[f_0+2f_1+2f_2+f_3\\bigr]"
       },
       {
-        "explanation": "Substitute the tabulated flow rates \\(f_0 = 10\\), \\(f_1 = 3.68\\), \\(f_2 = 2.43\\), \\(f_3 = 1.77\\).",
-        "workingOut": "\\approx \\dfrac{1}{2}\\bigl[10 + 2(3.68) + 2(2.43) + 1.77\\bigr]"
+        "explanation": "Substitute the given rates $f_0=10$, $f_1=3.68$, $f_2=2.43$, $f_3=1.77$.",
+        "workingOut": "\\approx\\dfrac{1}{2}\\bigl[10+2(3.68)+2(2.43)+1.77\\bigr]"
       },
       {
-        "explanation": "Evaluate the bracket and halve it.",
-        "workingOut": "= \\dfrac{1}{2}\\bigl[10 + 7.36 + 4.86 + 1.77\\bigr] = \\dfrac{23.99}{2} = 11.995"
+        "explanation": "Evaluate the bracket, then halve.",
+        "workingOut": "=\\dfrac{1}{2}\\bigl[10+7.36+4.86+1.77\\bigr]=\\dfrac{23.99}{2}=11.995"
       },
       {
-        "explanation": "State the estimated volume.",
-        "workingOut": "\\text{Volume} \\approx 12.0 \\text{ units}^3"
+        "explanation": "So the estimated volume of air in the balloon at $t=3$ is about $12.0$ cubic units.",
+        "workingOut": "\\text{Volume}\\approx 12.0\\text{ units}^3"
       }
     ]
   },

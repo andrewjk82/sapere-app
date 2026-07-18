@@ -379,11 +379,16 @@ export const DANEBANK_2020_QUESTIONS = [
     "c": "4H",
     "t": "The trapezoidal rule",
     "source": "Danebank 2020 Trial Q11",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "q": "Use two applications of the trapezoidal rule to find an approximation to the area of the figure below. The figure has heights $6$ m, $7$ m and $10$ m at points spaced $6$ m apart along the base.",
-    "a": "$90 \\text{ m}^2$",
-    "opts": [],
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "q": "Use two applications of the trapezoidal rule to approximate the area of the figure below. The figure has heights $6$ m, $7$ m and $10$ m at points spaced $6$ m apart along the base.",
+    "a": "3",
+    "opts": [
+      "$69\\text{ m}^2$",
+      "$84\\text{ m}^2$",
+      "$100\\text{ m}^2$",
+      "$90\\text{ m}^2$"
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 420,
@@ -397,27 +402,23 @@ export const DANEBANK_2020_QUESTIONS = [
         "boardOptions": {
           "keepaspectratio": false
         },
-        "script": "board.suspendUpdate();\nboard.create('segment', [[0,0],[12,0]], {strokeColor:'black'});\nboard.create('segment', [[0,0],[0,6]], {strokeColor:'black'});\nboard.create('segment', [[6,0],[6,7]], {strokeColor:'black', dash:2});\nboard.create('segment', [[12,0],[12,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 6 + (1/18)*x*x; }, 0, 12], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('text', [-1.6, 3, '6 m'], {fontSize:12});\nboard.create('text', [4.3, 3.5, '7 m'], {fontSize:12});\nboard.create('text', [12.4, 5, '10 m'], {fontSize:12});\nboard.create('text', [2.4, -1.6, '6 m'], {fontSize:12});\nboard.create('text', [8.4, -1.6, '6 m'], {fontSize:12});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('segment', [[0,0],[12,0]], {strokeColor:'#0f172a', strokeWidth:1.5});\nboard.create('segment', [[0,0],[0,6]], {strokeColor:'#334155', strokeWidth:1.5});\nboard.create('segment', [[6,0],[6,7]], {strokeColor:'#64748b', strokeWidth:1.5, dash:2});\nboard.create('segment', [[12,0],[12,10]], {strokeColor:'#334155', strokeWidth:1.5});\n// Curve through the three measured heights (0,6), (6,7), (12,10): y = 6 + x^2/36\nboard.create('functiongraph', [function(x){ return 6 + (x*x)/36; }, 0, 12], {strokeColor:'#1d4ed8', strokeWidth:2.5});\n// Trapezoid chords (what the rule uses)\nboard.create('segment', [[0,6],[6,7]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:1});\nboard.create('segment', [[6,7],[12,10]], {strokeColor:'#94a3b8', strokeWidth:1.5, dash:1});\nvar tops=[[0,6],[6,7],[12,10]];\nfor(var i=0;i<tops.length;i++){ board.create('point', tops[i], {name:'', size:2.5, color:'#dc2626', fixed:true}); }\nboard.create('text', [-1.7, 3, '6 m'], {fontSize:12});\nboard.create('text', [4.2, 3.5, '7 m'], {fontSize:12});\nboard.create('text', [12.4, 5, '10 m'], {fontSize:12});\nboard.create('text', [2.4, -1.6, '6 m'], {fontSize:12});\nboard.create('text', [8.4, -1.6, '6 m'], {fontSize:12});\nboard.unsuspendUpdate();"
       }
     },
-    "h": "Apply $A \\approx \\dfrac{h}{2}(f_0 + f_1)$ to each of the two strips (each $6$ m wide) and add.",
+    "h": "Apply $A \\approx \\dfrac{h}{2}(f_0 + f_1)$ to each of the two strips (each $6$ m wide) and add. Or one formula: $A\\approx\\dfrac{h}{2}(y_0+2y_1+y_2)$.",
     "s": "Each strip has width $h = 6$. First strip: $\\frac{6}{2}(6 + 7) = 39$. Second strip: $\\frac{6}{2}(7 + 10) = 51$. Total area $\\approx 39 + 51 = 90 \\text{ m}^2$.",
     "solutionSteps": [
       {
-        "explanation": "State the trapezoidal rule for a single strip of width \\(h\\): \\(A \\approx \\frac{h}{2}(\\text{left height} + \\text{right height})\\). Here each strip is \\(6\\) m wide.",
-        "workingOut": "A \\approx \\frac{h}{2}(f_0 + f_1), quad h = 6"
+        "explanation": "Two applications means two strips and three heights. Strip width \\(h=6\\) m. Formula: \\(A\\approx\\dfrac{h}{2}(y_0+2y_1+y_2)\\).",
+        "workingOut": "A\\approx\\dfrac{6}{2}(6+2\\cdot 7+10)"
       },
       {
-        "explanation": "Apply the rule to the first strip, between the \\(6\\) m and \\(7\\) m ordinates.",
-        "workingOut": "A_1 = \\frac{6}{2}(6 + 7) = 3 \\times 13 = 39"
+        "explanation": "Inside the brackets: \\(6+14+10=30\\). Then multiply by \\(3\\).",
+        "workingOut": "3\\times 30=90"
       },
       {
-        "explanation": "Apply the rule to the second strip, between the \\(7\\) m and \\(10\\) m ordinates.",
-        "workingOut": "A_2 = \\frac{6}{2}(7 + 10) = 3 \\times 17 = 51"
-      },
-      {
-        "explanation": "Add the two strip areas for the total approximation.",
-        "workingOut": "A \\approx 39 + 51 = 90 \\text{ m}^2"
+        "explanation": "Approximate area is \\(90\\) square metres.",
+        "workingOut": "90\\text{ m}^2"
       }
     ]
   },
@@ -1236,31 +1237,49 @@ export const DANEBANK_2020_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of e^x",
     "source": "Danebank 2020 Trial Q26",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "If $y = \\dfrac{e^x}{x+1}$, find $\\dfrac{dy}{dx}$.",
-    "a": "$\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}$",
-    "opts": [],
-    "h": "Apply the quotient rule with $u = e^x$ and $v = x + 1$.",
-    "s": "With $u = e^x$ ($u' = e^x$) and $v = x+1$ ($v' = 1$): $\\frac{dy}{dx} = \\frac{vu' - uv'}{v^2} = \\frac{(x+1)e^x - e^x}{(x+1)^2} = \\frac{xe^x}{(x+1)^2}$.",
+    "q": "If \\(y=\\dfrac{e^{x}}{x+1}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{e^{x}}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{xe^{x}}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{e^{x}(x+1)}{(x+1)^{2}}\\)",
+      "\\(\\dfrac{(x+1)e^{x}-e^{x}}{x+1}\\)"
+    ],
+    "h": "The function is a quotient \\(y=\\dfrac{e^{x}}{x+1}\\). Use the quotient rule \\(\\dfrac{dy}{dx}=\\dfrac{vu'-uv'}{v^{2}}\\). Se",
+    "s": "\\(u=e^{x},\\quad v=x+1\\) ; \\(u'=e^{x},\\quad v'=1\\) ; \\(\\dfrac{(x+1)e^{x}-e^{x}}{(x+1)^{2}}\\) ; \\(\\dfrac{e^{x}(x+1-1)}{(x+1)^{2}}\\) ; \\(\\dfrac{xe^{x}}{(x+1)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the quotient and set up the quotient rule \\(\\frac{dy}{dx} = \\frac{vu' - uv'}{v^2}\\).",
-        "workingOut": "u = e^x, quad v = x + 1"
+        "explanation": "The function is a quotient \\(y=\\dfrac{e^{x}}{x+1}\\). Use the quotient rule \\(\\dfrac{dy}{dx}=\\dfrac{vu'-uv'}{v^{2}}\\). Set numerator \\(u=e^{x}\\) and denominator \\(v=x+1\\).",
+        "workingOut": "\\(u=e^{x},\\quad v=x+1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate the numerator and denominator.",
-        "workingOut": "u' = e^x, quad v' = 1"
+        "explanation": "Differentiate each piece: \\(u'=e^{x}\\) (exponential is its own derivative). For the denominator, \\(v'=1\\).",
+        "workingOut": "\\(u'=e^{x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute into the quotient rule.",
-        "workingOut": "\\frac{dy}{dx} = \\frac{(x+1)e^x - e^x(1)}{(x+1)^2}"
+        "explanation": "Substitute into the quotient rule carefully: numerator is \\(v u'-u v'=(x+1)e^{x}-e^{x}\\cdot 1\\), denominator is \\((x+1)^{2}\\).",
+        "workingOut": "\\(\\dfrac{(x+1)e^{x}-e^{x}}{(x+1)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor \\(e^x\\) from the numerator and simplify.",
-        "workingOut": "= \\frac{e^x(x + 1 - 1)}{(x+1)^2} = \\frac{xe^x}{(x+1)^2}"
+        "explanation": "Factor \\(e^{x}\\) from the numerator: \\(e^{x}\\bigl((x+1)-1\\bigr)=e^{x}\\cdot x=xe^{x}\\).",
+        "workingOut": "\\(\\dfrac{e^{x}(x+1-1)}{(x+1)^{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify: \\(\\dfrac{dy}{dx}=\\dfrac{xe^{x}}{(x+1)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{xe^{x}}{(x+1)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "If \\(y=\\dfrac{e^{x}}{x+1}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "answer": "1",
+    "hint": "The function is a quotient \\(y=\\dfrac{e^{x}}{x+1}\\). Use the quotient rule \\(\\dfrac{dy}{dx}=\\dfrac{vu'-uv'}{v^{2}}\\). Se",
+    "solution": "The function is a quotient \\(y=\\dfrac{e^{x}}{x+1}\\). Use the quotient rule \\(\\dfrac{dy}{dx}=\\dfrac{vu'-uv'}{v^{2}}\\). Set numerator \\(u=e^{x}\\) and denominator \\(v=x+1\\). Differentiate each piece: \\(u'=e^{x}\\) (exponential is its own derivative). For the denominator, \\(v'=1\\). Substitute into the quotient rule carefully: numerator is \\(v u'-u v'=(x+1)e^{x}-e^{x}\\cdot 1\\), denominator is \\((x+1)^{2}\\). Factor \\(e^{x}\\) from the numerator: \\(e^{x}\\bigl((x+1)-1\\bigr)=e^{x}\\cdot x=xe^{x}\\). Simplify: \\(\\dfrac{dy}{dx}=\\dfrac{xe^{x}}{(x+1)^{2}}\\)."
   },
   {
     "id": "dane2020-q27",
@@ -1760,31 +1779,45 @@ export const DANEBANK_2020_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Danebank 2020 Trial Q36(a)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "At time $t$ years after purchase the value of a car is $V = 25\\,000\\,e^{-0.5t}$. Find the loss in value of the car during the third year.",
-    "a": "$3618.73",
-    "opts": [],
-    "h": "The third year runs from $t = 2$ to $t = 3$; the loss is $V(2) - V(3)$.",
-    "s": "Loss $= V(2) - V(3) = 25\\,000e^{-1} - 25\\,000e^{-1.5} = 9196.99 - 5578.25 = \\$3618.73$.",
+    "q": "At time \\(t\\) years after purchase the value of a car is \\(V = 25\\,000e^{-0.5t}\\). Find the loss in value of the car during the third year.",
+    "question": "At time \\(t\\) years after purchase the value of a car is \\(V = 25\\,000e^{-0.5t}\\). Find the loss in value of the car during the third year.",
+    "a": 1,
+    "answer": "1",
+    "opts": ["\\(\\$2\\,500\\)","\\(\\$3\\,619\\) (approx.)","\\(\\$5\\,000\\)","\\(\\$9\\,200\\) (approx.)"],
+    "h": "The third year runs from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
+    "s": "Loss \\(= V(2)-V(3)=25\\,000\\bigl(e^{-1}-e^{-1.5}\\bigr)\\approx \\$3\\,619\\).",
+    "solution": "Loss \\(= V(2)-V(3)=25\\,000\\bigl(e^{-1}-e^{-1.5}\\bigr)\\approx \\$3\\,619\\).",
     "solutionSteps": [
       {
-        "explanation": "The third year spans from \\(t = 2\\) to \\(t = 3\\). The loss in value is the value at the start minus the value at the end.",
-        "workingOut": "\\text{Loss} = V(2) - V(3)"
+        "explanation": "The third year of ownership runs from the end of year 2 to the end of year 3, i.e. from \\(t=2\\) to \\(t=3\\). The loss is the fall in value: \\(V(2)-V(3)\\).",
+        "workingOut": "\\(\\text{Loss} = V(2) - V(3)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the value at \\(t = 2\\).",
-        "workingOut": "V(2) = 25\\,000e^{-0.5(2)} = 25\\,000e^{-1}"
+        "explanation": "Substitute into \\(V=25\\,000e^{-0.5t}\\):\n\\(V(2)=25\\,000e^{-0.5\\cdot 2}=25\\,000e^{-1}\\),\n\\(V(3)=25\\,000e^{-0.5\\cdot 3}=25\\,000e^{-1.5}\\).",
+        "workingOut": "\\(V(2)=25\\,000e^{-1},\\quad V(3)=25\\,000e^{-1.5}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate the value at \\(t = 3\\).",
-        "workingOut": "V(3) = 25\\,000e^{-0.5(3)} = 25\\,000e^{-1.5}"
+        "explanation": "Factor out the constant:",
+        "workingOut": "\\(\\text{Loss} = 25\\,000\\bigl(e^{-1}-e^{-1.5}\\bigr)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract to find the loss.",
-        "workingOut": "\\text{Loss} = 25\\,000(e^{-1} - e^{-1.5}) \\approx $3618.73"
+        "explanation": "Evaluate numerically (\\(e^{-1}\\approx 0.367879\\), \\(e^{-1.5}\\approx 0.223130\\)):",
+        "workingOut": "\\(25\\,000(0.367879 - 0.223130) = 25\\,000\\times 0.144749 \\approx 3\\,618.73\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore the loss during the third year is approximately \\(\\$3\\,619\\) (or \\(\\$3\\,618.73\\) to the nearest cent).",
+        "workingOut": "\\(\\text{Loss} \\approx \\$3\\,619\\)",
+        "graphData": null
       }
     ]
+  ,
+    "options": ["\\(\\$2\\,500\\)","\\(\\$3\\,619\\) (approx.)","\\(\\$5\\,000\\)","\\(\\$9\\,200\\) (approx.)"]
   },
   {
     "id": "dane2020-q36b",
@@ -1792,39 +1825,50 @@ export const DANEBANK_2020_QUESTIONS = [
     "c": "5C",
     "t": "Applications of differentiation",
     "source": "Danebank 2020 Trial Q36(b)",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "q": "For $V = 25\\,000\\,e^{-0.5t}$, find the year in which the car is losing value at a rate of $100 per year.",
-    "a": "During the $10^{\\text{th}}$ year ($t \\approx 9.66$)",
-    "opts": [],
-    "h": "The rate of change is $\\frac{dV}{dt}$; set it equal to $-100$ (losing value) and solve for $t$.",
-    "s": "$\\frac{dV}{dt} = -12\\,500e^{-0.5t}$. Set $\\frac{dV}{dt} = -100$: $e^{-0.5t} = \\frac{100}{12\\,500} = 0.008$, so $-0.5t = \\ln 0.008$, giving $t \\approx 9.66$. This is during the $10^{\\text{th}}$ year.",
+    "q": "For \\(V = 25\\,000e^{-0.5t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",
+    "question": "For \\(V = 25\\,000e^{-0.5t}\\), find the year in which the car is losing value at a rate of \\(\\"q": "For \\(V = 25\\,000e^{-0.5t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",00\\) per year.",
+    "a": 2,
+    "answer": "2",
+    "opts": ["During the 5th year","During the 8th year","During the 10th year","During the 12th year"],
+    "h": "Differentiate \\(V\\), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\), solve for \\(t\\), then interpret the year.",
+    "s": "\\(\\dfrac{dV}{dt}=-12\\,500e^{-0.5t}\\). Set \\(12\\,500e^{-0.5t}=100\\Rightarrow t=2\\ln 125\\approx 9.66\\). During the 10th year.",
+    "solution": "\\(\\dfrac{dV}{dt}=-12\\,500e^{-0.5t}\\). Set \\(12\\,500e^{-0.5t}=100\\Rightarrow t=2\\ln 125\\approx 9.66\\). During the 10th year.",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(V\\) with respect to \\(t\\) to get the rate of change of value.",
-        "workingOut": "\\frac{dV}{dt} = 25\\,000 \\times (-0.5)e^{-0.5t} = -12\\,500e^{-0.5t}"
+        "explanation": "Differentiate \\(V=25\\,000e^{-0.5t}\\) using the chain rule (exponent contributes factor \\(-0.5\\)):",
+        "workingOut": "\\(\\dfrac{dV}{dt} = 25\\,000\\cdot(-0.5)e^{-0.5t} = -12\\,500e^{-0.5t}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Losing value at \\(100 per year means the rate is \\)-100\\(. Set up the equation.\\)",
-        "workingOut": "-100 = -12\\,500e^{-0.5t}"
+        "explanation": "The rate of loss is the magnitude \\(\\left|\\dfrac{dV}{dt}\\right|=12\\,500e^{-0.5t}\\). Set this equal to 100:",
+        "workingOut": "\\(12\\,500e^{-0.5t} = 100\\)",
+        "graphData": null
       },
       {
-        "explanation": "Divide both sides by \\(-12\\,500\\).",
-        "workingOut": "e^{-0.5t} = \\frac{100}{12\\,500} = 0.008"
+        "explanation": "Divide both sides by 12 500:",
+        "workingOut": "\\(e^{-0.5t} = \\dfrac{100}{12\\,500} = 0.008 = \\dfrac{1}{125}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take natural logarithms of both sides.",
-        "workingOut": "-0.5t = \\ln 0.008"
+        "explanation": "Take natural log of both sides:",
+        "workingOut": "\\(-0.5t = \\ln(0.008) = -\\ln 125\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for \\(t\\).",
-        "workingOut": "t = \\frac{\\ln 0.008}{-0.5} \\approx 9.66"
+        "explanation": "Solve for \\(t\\):",
+        "workingOut": "\\(t = \\dfrac{\\ln 125}{0.5} = 2\\ln 125 \\approx 2\\times 4.8283 \\approx 9.66\\text{ years}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Since \\(9 < t < 10\\), this occurs during the \\(10^{\\text{th}}\\) year.",
-        "workingOut": "\\text{during the } 10^{\\text{th}} \\text{ year}"
+        "explanation": "Since \\(9 < 9.66 < 10\\), this falls during the 10th year of ownership.",
+        "workingOut": "\\(\\text{During the 10th year}\\)",
+        "graphData": null
       }
     ]
+  ,
+    "options": ["During the 5th year","During the 8th year","During the 10th year","During the 12th year"]
   },
   {
     "id": "dane2020-q37",

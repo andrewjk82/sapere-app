@@ -1732,26 +1732,34 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "c": "4H",
     "t": "The trapezoidal rule",
     "source": "Abbotsleigh 2020 Trial Q15(a)(v)",
-    "type": "teacher_review",
-    "requiresManualGrading": true,
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Explain why Isabelle correctly knows $\\displaystyle\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx > \\dfrac{1}{\\sqrt{2}} + \\dfrac{1}{\\sqrt{2}\\,e}$.",
-    "a": "The curve $y = e^{-x^2}$ is concave up (convex) between the two inflection points at $x = \\pm\\frac{1}{\\sqrt{2}}$... wait — actually at the inflection points the concavity changes. Between the inflection points the curve is concave down. The trapezoidal rule underestimates when the curve is concave down, so the actual integral is greater than the trapezoidal approximation.",
-    "opts": [],
-    "h": "Determine the concavity of $y = e^{-x^2}$ between $x = -\\frac{1}{\\sqrt{2}}$ and $x = \\frac{1}{\\sqrt{2}}$. The trapezoidal rule underestimates for concave-down functions.",
-    "s": "Between the inflection points $\\pm\\frac{1}{\\sqrt{2}}$, the curve $y = e^{-x^2}$ is concave down ($y'' < 0$). For a concave-down function, trapezoids lie below the curve, so the trapezoidal approximation underestimates the true area. Hence the actual integral is strictly greater than the trapezoidal estimate.",
+    "q": "Why is $\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx$ greater than the trapezoidal estimate with those three points?",
+    "a": "2",
+    "opts": [
+      "The graph is concave up, so trapeziums overestimate",
+      "Trapezoidal rule always overestimates every integral",
+      "On this interval the graph is concave down, so trapeziums lie under the curve and underestimate the integral",
+      "The rule is exact for all exponential functions"
+    ],
+    "h": "Find where $y=e^{-x^2}$ changes concavity. On $\\left[-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right]$ check the sign of $y''$.",
+    "s": "Inflection at $x=\\pm\\frac{1}{\\sqrt{2}}$. Between them $y''<0$ (concave down), so trapeziums lie under the curve and underestimate the integral.",
     "solutionSteps": [
       {
-        "explanation": "For \\(-\\frac{1}{\\sqrt{2}} < x < \\frac{1}{\\sqrt{2}}\\), we have \\(x^2 < \\frac{1}{2}\\), so \\(x^2 - \\frac{1}{2} < 0\\). Since \\(e^{-x^2} > 0\\), the second derivative \\(y'' = 4e^{-x^2}(x^2-\\frac{1}{2}) < 0\\) throughout the interval.",
-        "workingOut": "x^2 < \\frac{1}{2} \\Rightarrow y'' < 0 \\text{ (concave down)}"
+        "explanation": "Whether a trapezoidal estimate is high or low depends on concavity: a chord sits above a concave-up graph (overestimate) and below a concave-down graph (underestimate).",
+        "workingOut": "\\text{concavity} \\Rightarrow \\text{over/under estimate}"
       },
       {
-        "explanation": "When a curve is concave down, the trapezoidal rule draws straight-line segments that lie entirely below the curve. This means the trapezoidal approximation underestimates the true area.",
-        "workingOut": "\\text{Concave down} \\Rightarrow \\text{trapezoids lie below curve}"
+        "explanation": "For \\(y=e^{-x^2}\\), differentiate twice: \\(y'=-2xe^{-x^2}\\) and \\(y''=e^{-x^2}(4x^2-2)=2e^{-x^2}(2x^2-1)\\). Inflection points where \\(y''=0\\):",
+        "workingOut": "2x^2-1=0 \\implies x=\\pm\\dfrac{1}{\\sqrt{2}}"
       },
       {
-        "explanation": "Therefore the actual integral is strictly greater than the trapezoidal estimate: \\(\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx > \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}\\).",
-        "workingOut": "\\int e^{-x^2}\\,dx > \\frac{1}{\\sqrt{2}} + \\frac{1}{\\sqrt{2}\\,e}"
+        "explanation": "On the open interval between the inflection points, \\(|x|<\\dfrac{1}{\\sqrt{2}}\\), so \\(2x^2-1<0\\). Since \\(e^{-x^2}>0\\), we have \\(y''<0\\): the graph is concave down on the whole integration interval.",
+        "workingOut": "y''<0 \\text{ on }\\left[-\\dfrac{1}{\\sqrt{2}},\\dfrac{1}{\\sqrt{2}}\\right]"
+      },
+      {
+        "explanation": "Therefore each trapezium (chord) lies under the curve, so the trapezoidal rule underestimates the true integral. That is why the true value is greater than the three-point estimate.",
+        "workingOut": "\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx > \\text{trap. estimate}"
       }
     ]
   },

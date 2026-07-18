@@ -1,550 +1,2394 @@
 export const Y12A_CH5C_QUESTIONS = [
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q1",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Consider the curve \\( y = e^{2x-2} \\):\na) Find the y-coordinate of the point \\( A \\) on the curve where \\( x = 1 \\).\nb) Find the derivative of \\( y = e^{2x-2} \\), and show that the gradient of the tangent at \\( A \\) is 2.\nc) Find the equation of the tangent at \\( A \\), and show that it passes through \\( (0, -1) \\).",
-    "a": "a) y = 1\nb) dy/dx = 2e^(2x-2), gradient at A = 2\nc) y = 2x - 1, passes through (0, -1)",
-    "solution": "a) Substitute \\( x = 1 \\) into \\( y = e^{2x-2} \\):\n\\( y = e^{2(1)-2} = e^0 = 1 \\). So point \\( A \\) is \\( (1, 1) \\).\n\nb) Differentiating using the chain rule:\n\\( \\frac{dy}{dx} = 2e^{2x-2} \\).\nAt \\( x = 1 \\), the gradient is:\n\\( m = 2e^{2(1)-2} = 2e^0 = 2 \\).\n\nc) The equation of the tangent at \\( A(1, 1) \\) with gradient \\( m = 2 \\) is:\n\\( y - 1 = 2(x - 1) \\implies y = 2x - 1 \\).\nTo check if it passes through \\( (0, -1) \\), substitute \\( x = 0 \\):\n\\( y = 2(0) - 1 = -1 \\). This is correct.",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = e^{2x-2} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Find the point first, then differentiate, then use point–gradient form for the tangent.",
+    "requiresManualGrading": false,
+    "subQuestions": [
       {
-        "explanation": "Find y-coordinate at x = 1",
-        "workingOut": "y = e^{2(1)-2} = e^0 = 1"
+        "id": "y12a-5c-q1a",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the y-coordinate of the point \\(A\\) on the curve where \\(x=1\\).",
+        "opts": [
+          "\\(0\\)",
+          "\\(1\\)",
+          "\\(e\\)",
+          "\\(2\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Substitute \\(x=1\\) into \\(y=e^{2x-2}\\).",
+        "solution": "At \\(x=1\\): \\(y=e^{2(1)-2}=e^{0}=1\\). So the y-coordinate is 1 (point \\(A(1,1)\\)).",
+        "solutionSteps": [
+          {
+            "explanation": "The curve is given by \\(y=e^{2x-2}\\). To find the y-coordinate of point \\(A\\) where \\(x=1\\), substitute this value into the equation.",
+            "workingOut": "\\(x=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Compute the exponent carefully: \\(2(1)-2=0\\). So \\(y=e^{0}\\).",
+            "workingOut": "\\(y=e^{0}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Recall that any non-zero number to the power 0 equals 1, so \\(e^{0}=1\\).",
+            "workingOut": "\\(y=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the y-coordinate of \\(A\\) is 1, and the point is \\(A(1,1)\\).",
+            "workingOut": "\\(A(1,1)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Differentiate the function",
-        "workingOut": "\\frac{dy}{dx} = 2e^{2x-2}"
+        "id": "y12a-5c-q1b",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the derivative of \\(y=e^{2x-2}\\), and the gradient of the tangent at \\(A\\) (where \\(x=1\\)).",
+        "opts": [
+          "\\(\\dfrac{dy}{dx}=2e^{2x-2},\\; m=2\\)",
+          "\\(\\dfrac{dy}{dx}=e^{2x-2},\\; m=1\\)",
+          "\\(\\dfrac{dy}{dx}=2e^{2x-2},\\; m=2e\\)",
+          "\\(\\dfrac{dy}{dx}=2e^{2x},\\; m=2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Chain rule: the exponent contributes a factor of 2. Then substitute \\(x=1\\).",
+        "solution": "Chain rule: \\(\\dfrac{dy}{dx}=2e^{2x-2}\\). At \\(A\\) where \\(x=1\\): \\(m=2e^{0}=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "We need \\(\\dfrac{dy}{dx}\\) for \\(y=e^{2x-2}\\). Use the chain rule: if \\(y=e^{u(x)}\\), then \\(y'=e^{u}u'\\).",
+            "workingOut": "\\(y=e^{u},\\; u=2x-2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate the exponent: \\(u'=\\dfrac{d}{dx}(2x-2)=2\\).",
+            "workingOut": "\\(u'=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Apply the chain rule: \\(y'=e^{2x-2}\\cdot 2=2e^{2x-2}\\).",
+            "workingOut": "\\(y'=2e^{2x-2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At point \\(A\\) where \\(x=1\\), the gradient is \\(m=2e^{2(1)-2}=2e^{0}=2\\cdot 1=2\\).",
+            "workingOut": "\\(m=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the derivative is \\(2e^{2x-2}\\) and the tangent at \\(A\\) has gradient 2.",
+            "workingOut": "\\(\\dfrac{dy}{dx}=2e^{2x-2},\\; m_A=2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find gradient at A",
-        "workingOut": "m = 2e^0 = 2"
-      },
-      {
-        "explanation": "Formulate tangent equation",
-        "workingOut": "y - 1 = 2(x - 1) \\implies y = 2x - 1"
-      },
-      {
-        "explanation": "Verify passing through (0, -1)",
-        "workingOut": "x=0 \\implies y = -1"
+        "id": "y12a-5c-q1c",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the equation of the tangent at \\(A\\). Which statement is correct?",
+        "opts": [
+          "\\(y=2x-1\\), and it passes through \\((0,-1)\\)",
+          "\\(y=2x+1\\), and it passes through \\((0,1)\\)",
+          "\\(y=x-1\\), and it passes through \\((0,-1)\\)",
+          "\\(y=2x-1\\), and it passes through \\((0,1)\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Point–gradient form with \\(A(1,1)\\) and gradient \\(m=2\\). Then check \\(x=0\\).",
+        "solution": "Using point–gradient: \\(y-1=2(x-1)\\Rightarrow y=2x-1\\). When \\(x=0\\), \\(y=-1\\), so it passes through \\((0,-1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "From parts (a) and (b) we know the point of contact is \\(A(1,1)\\) and the gradient is \\(m=2\\).",
+            "workingOut": "\\(A(1,1),\\; m=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Use the point–gradient form of a straight line: \\(y-y_1=m(x-x_1)\\).",
+            "workingOut": "\\(y-1=2(x-1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Expand the right-hand side: \\(y-1=2x-2\\).",
+            "workingOut": "\\(y-1=2x-2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Add 1 to both sides: \\(y=2x-1\\). This is the equation of the tangent at \\(A\\).",
+            "workingOut": "\\(y=2x-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "To check it passes through \\((0,-1)\\), substitute \\(x=0\\): \\(y=2(0)-1=-1\\). The point lies on the line.",
+            "workingOut": "\\(x=0\\Rightarrow y=-1\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "First find the coordinates of point A, then differentiate the curve to find the tangent gradient.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q2",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Consider the curve \\( y = e^{3x-3} \\):\na) Write down the coordinates of the point \\( R \\) on the curve where \\( x = 1 \\).\nb) Find \\( \\frac{dy}{dx} \\) and hence show that the gradient of the tangent at \\( R \\) is 3.\nc) What is the gradient of the normal at \\( R \\)?\nd) Hence find the equation of the normal at \\( R \\) in general form.",
-    "a": "a) R(1, 1)\nb) dy/dx = 3e^(3x-3), gradient = 3\nc) -1/3\nd) x + 3y - 4 = 0",
-    "solution": "a) At \\( x = 1 \\), \\( y = e^{3(1)-3} = e^0 = 1 \\). Coordinates are \\( R(1, 1) \\).\n\nb) Differentiating:\n\\( \\frac{dy}{dx} = 3e^{3x-3} \\).\nAt R \\( (x = 1) \\), the gradient of the tangent is \\( m_t = 3e^0 = 3 \\).\n\nc) The gradient of the normal is the negative reciprocal of the tangent gradient:\n\\( m_n = -\\frac{1}{m_t} = -\\frac{1}{3} \\).\n\nd) The equation of the normal at \\( R(1, 1) \\) is:\n\\( y - 1 = -\\frac{1}{3}(x - 1) \\implies 3(y - 1) = -(x - 1) \\implies 3y - 3 = -x + 1 \\implies x + 3y - 4 = 0 \\).",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = e^{3x-3} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Differentiate, then normal gradient is the negative reciprocal of the tangent gradient.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find point R coordinates",
-        "workingOut": "R(1, 1)"
+        "id": "y12a-5c-q2a",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Write down the coordinates of the point \\(R\\) on the curve where \\(x=1\\).",
+        "opts": [
+          "\\(R(1,0)\\)",
+          "\\(R(1,1)\\)",
+          "\\(R(1,e)\\)",
+          "\\(R(0,1)\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Substitute \\(x=1\\) into \\(y=e^{3x-3}\\).",
+        "solution": "At \\(x=1\\): \\(y=e^{3-3}=e^{0}=1\\). So \\(R(1,1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The curve is \\(y=e^{3x-3}\\). Point \\(R\\) is the point on the curve at \\(x=1\\).",
+            "workingOut": "\\(x=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute: \\(y=e^{3(1)-3}=e^{0}=1\\).",
+            "workingOut": "\\(y=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the coordinates are \\(R(1,1)\\).",
+            "workingOut": "\\(R(1,1)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find derivative and tangent gradient",
-        "workingOut": "\\frac{dy}{dx} = 3e^{3x-3} \\implies m_t = 3"
+        "id": "y12a-5c-q2b",
+        "difficulty": "easy",
+        "type": "teacher_review",
+        "question": "Find \\(\\dfrac{dy}{dx}\\) and hence show that the gradient of the tangent at \\(R\\) is 3.",
+        "a": "\\(\\dfrac{dy}{dx}=3e^{3x-3}\\). At \\(R\\): \\(m=3\\).",
+        "answer": "\\(\\dfrac{dy}{dx}=3e^{3x-3}\\). At \\(R\\): \\(m=3\\).",
+        "hint": "Chain rule with exponent factor 3.",
+        "solution": "Chain rule: \\(y'=3e^{3x-3}\\). At \\(x=1\\): \\(m=3e^{0}=3\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\(y=e^{3x-3}\\) using the chain rule with \\(u=3x-3\\).",
+            "workingOut": "\\(u=3x-3,\\; u'=3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Then \\(\\dfrac{dy}{dx}=e^{u}u'=3e^{3x-3}\\).",
+            "workingOut": "\\(y'=3e^{3x-3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(R\\) where \\(x=1\\): \\(m_t=3e^{3(1)-3}=3e^{0}=3\\).",
+            "workingOut": "\\(m_t=3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Hence the gradient of the tangent at \\(R\\) is 3.",
+            "workingOut": "\\(m_t=3\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find normal gradient",
-        "workingOut": "m_n = -\\frac{1}{3}"
+        "id": "y12a-5c-q2c",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "What is the gradient of the normal at \\(R\\)?",
+        "opts": [
+          "\\(3\\)",
+          "\\(-3\\)",
+          "\\(-\\dfrac{1}{3}\\)",
+          "\\(\\dfrac{1}{3}\\)"
+        ],
+        "a": 2,
+        "answer": "2",
+        "hint": "Normal gradient is the negative reciprocal of the tangent gradient.",
+        "solution": "Tangent gradient is 3, so normal gradient is \\(-\\dfrac{1}{3}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent gradient.",
+            "workingOut": "\\(m_n=-\\dfrac{1}{m_t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Since \\(m_t=3\\), we have \\(m_n=-\\dfrac{1}{3}\\).",
+            "workingOut": "\\(m_n=-\\dfrac{1}{3}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Formulate normal equation in general form",
-        "workingOut": "3(y-1) = -(x-1) \\implies x + 3y - 4 = 0"
+        "id": "y12a-5c-q2d",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Hence find the equation of the normal at \\(R\\) in general form.",
+        "opts": [
+          "\\(x+3y-4=0\\)",
+          "\\(3x+y-4=0\\)",
+          "\\(x-3y+2=0\\)",
+          "\\(x+3y+4=0\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use point–gradient with \\(R(1,1)\\) and \\(m=-\\dfrac{1}{3}\\), then clear denominators.",
+        "solution": "\\(y-1=-\\dfrac{1}{3}(x-1)\\Rightarrow 3(y-1)=-(x-1)\\Rightarrow x+3y-4=0\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The normal passes through \\(R(1,1)\\) with gradient \\(m_n=-\\dfrac{1}{3}\\).",
+            "workingOut": "\\(R(1,1),\\; m_n=-\\dfrac{1}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point–gradient form: \\(y-1=-\\dfrac{1}{3}(x-1)\\).",
+            "workingOut": "\\(y-1=-\\dfrac{1}{3}(x-1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Multiply through by 3: \\(3y-3=-(x-1)=-x+1\\).",
+            "workingOut": "\\(3y-3=-x+1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Rearrange all terms to one side: \\(x+3y-4=0\\).",
+            "workingOut": "\\(x+3y-4=0\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "The normal is perpendicular to the tangent, so its gradient is -1/m.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q3",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Consider the curve \\( y = e^{-x} \\) and point \\( P(0, 1) \\):\na) Find the gradient of the tangent to \\( y = e^{-x} \\) at the point \\( P \\).\nb) Write down the gradient of the normal at this point.\nc) Determine the equation of this normal.\nd) Find the x- and y-intercepts of the normal.\ne) Find the area of the triangle whose vertices lie at the intercepts and the origin.",
-    "a": "a) -1\nb) 1\nc) y = x + 1\nd) x-intercept: -1, y-intercept: 1\ne) 0.5",
-    "solution": "a) \\( \\frac{dy}{dx} = -e^{-x} \\). At \\( P(0, 1) \\), the gradient of the tangent is \\( m_t = -e^0 = -1 \\).\n\nb) The gradient of the normal is \\( m_n = -\\frac{1}{m_t} = -\\frac{1}{-1} = 1 \\).\n\nc) The equation of the normal at \\( (0, 1) \\) with gradient \\( 1 \\) is:\n\\( y - 1 = 1(x - 0) \\implies y = x + 1 \\).\n\nd) Intercepts:\n- y-intercept: let \\( x = 0 \\implies y = 1 \\), i.e., \\( (0, 1) \\).\n- x-intercept: let \\( y = 0 \\implies x = -1 \\), i.e., \\( (-1, 0) \\).\n\ne) The triangle vertices are \\( (0, 0) \\), \\( (0, 1) \\), and \\( (-1, 0) \\).\nThis is a right-angled triangle with base = 1 and height = 1.\n\\( \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 1 \\times 1 = 0.5 \\).",
-    "solutionSteps": [
+    "timeLimit": 200,
+    "question": "Consider the curve \\( y = e^{-x} \\) and the point \\( P(0,1) \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Normal gradient is the negative reciprocal. Triangle area uses intercepts as base and height.",
+    "requiresManualGrading": false,
+    "subQuestions": [
       {
-        "explanation": "Find tangent gradient",
-        "workingOut": "\\frac{dy}{dx} = -e^{-x} \\implies m_t = -1"
+        "id": "y12a-5c-q3a",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the gradient of the tangent to \\(y=e^{-x}\\) at \\(P\\).",
+        "opts": [
+          "\\(1\\)",
+          "\\(-1\\)",
+          "\\(0\\)",
+          "\\(e\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Differentiate and evaluate at \\(x=0\\).",
+        "solution": "\\(y'=-e^{-x}\\). At \\(x=0\\): \\(m_t=-1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\(y=e^{-x}\\) using the chain rule. The exponent is \\(u=-x\\), so \\(u'=-1\\).",
+            "workingOut": "\\(y'=-e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At point \\(P(0,1)\\) we have \\(x=0\\), so the tangent gradient is \\(m_t=-e^{0}=-1\\).",
+            "workingOut": "\\(m_t=-1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find normal gradient",
-        "workingOut": "m_n = 1"
+        "id": "y12a-5c-q3b",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Write down the gradient of the normal at this point.",
+        "opts": [
+          "\\(-1\\)",
+          "\\(1\\)",
+          "\\(0\\)",
+          "\\(-e\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Negative reciprocal of the tangent gradient.",
+        "solution": "\\(m_n=-1/(-1)=1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The normal gradient is the negative reciprocal of the tangent gradient.",
+            "workingOut": "\\(m_n=-\\dfrac{1}{m_t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "With \\(m_t=-1\\): \\(m_n=-\\dfrac{1}{-1}=1\\).",
+            "workingOut": "\\(m_n=1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Formulate normal equation",
-        "workingOut": "y = x + 1"
+        "id": "y12a-5c-q3c",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Determine the equation of this normal.",
+        "opts": [
+          "\\(y=x+1\\)",
+          "\\(y=-x+1\\)",
+          "\\(y=x-1\\)",
+          "\\(y=-x-1\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Point–gradient with \\(P(0,1)\\) and gradient 1.",
+        "solution": "\\(y-1=1(x-0)\\Rightarrow y=x+1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The normal passes through \\(P(0,1)\\) with gradient 1. Use point–gradient form.",
+            "workingOut": "\\(y-1=1(x-0)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Simplify: \\(y=x+1\\).",
+            "workingOut": "\\(y=x+1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find intercepts",
-        "workingOut": "x\\text{-intercept} = -1, \\; y\\text{-intercept} = 1"
+        "id": "y12a-5c-q3d",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the x- and y-intercepts of the normal.",
+        "opts": [
+          "\\(x\\text{-int }=-1,\\; y\\text{-int }=1\\)",
+          "\\(x\\text{-int }=1,\\; y\\text{-int }=-1\\)",
+          "\\(x\\text{-int }=0,\\; y\\text{-int }=1\\)",
+          "\\(x\\text{-int }=-1,\\; y\\text{-int }=-1\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Set \\(y=0\\) and \\(x=0\\) in \\(y=x+1\\).",
+        "solution": "y-int: \\(x=0\\Rightarrow y=1\\). x-int: \\(y=0\\Rightarrow x=-1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Y-intercept: set \\(x=0\\) in \\(y=x+1\\) to get \\(y=1\\). So the y-intercept is 1.",
+            "workingOut": "\\(y\\text{-int}=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "X-intercept: set \\(y=0\\): \\(0=x+1\\Rightarrow x=-1\\). So the x-intercept is \\(-1\\).",
+            "workingOut": "\\(x\\text{-int}=-1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Calculate triangle area",
-        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 1 \\times 1 = 0.5"
+        "id": "y12a-5c-q3e",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the area of the triangle whose vertices lie at the intercepts and the origin.",
+        "opts": [
+          "\\(1\\)",
+          "\\(\\dfrac{1}{2}\\)",
+          "\\(2\\)",
+          "\\(\\dfrac{1}{4}\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Right triangle with base 1 and height 1.",
+        "solution": "Vertices \\((0,0)\\), \\((-1,0)\\), \\((0,1)\\). Area \\(=\\dfrac{1}{2}\\times 1\\times 1=\\dfrac{1}{2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The triangle has vertices at the origin \\((0,0)\\), the x-intercept \\((-1,0)\\), and the y-intercept \\((0,1)\\).",
+            "workingOut": "\\((0,0),\\,(-1,0),\\,(0,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "This is a right-angled triangle with base 1 (along the x-axis) and height 1 (along the y-axis).",
+            "workingOut": "\\(base=1,\\; height=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Area \\(=\\dfrac{1}{2}\\times\\text{base}\\times\\text{height}=\\dfrac{1}{2}\\times 1\\times 1=\\dfrac{1}{2}\\).",
+            "workingOut": "\\(\\text{Area}=\\dfrac{1}{2}\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Find the normal equation first, then locate its intercepts on the x and y axes to find the base and height of the triangle.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q4",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Consider the point \\( B(0, 2) \\):\na) Find the gradient of the tangent to \\( y = 2e^x \\) at \\( B \\).\nb) Find the equation of this tangent, showing it meets the x-axis at \\( F(-1, 0) \\).\nc) Find the gradient of the tangent to \\( y = 2e^{-x} \\) at \\( B \\).\nd) Find the equation of this tangent, showing it meets the x-axis at \\( G(1, 0) \\).\ne) What sort of triangle is \\( \\triangle BFG \\), and what is its area?",
-    "a": "a) 2\nb) y = 2x + 2, meets x-axis at F(-1, 0)\nc) -2\nd) y = -2x + 2, meets x-axis at G(1, 0)\ne) Isosceles, area = 2",
-    "solution": "a) \\( y = 2e^x \\implies y' = 2e^x \\). At \\( x = 0 \\), gradient \\( m_1 = 2e^0 = 2 \\).\n\nb) Tangent equation: \\( y - 2 = 2(x - 0) \\implies y = 2x + 2 \\).\nFor the x-intercept, let \\( y = 0 \\implies 2x + 2 = 0 \\implies x = -1 \\). This gives \\( F(-1, 0) \\).\n\nc) \\( y = 2e^{-x} \\implies y' = -2e^{-x} \\). At \\( x = 0 \\), gradient \\( m_2 = -2e^0 = -2 \\).\n\nd) Tangent equation: \\( y - 2 = -2(x - 0) \\implies y = -2x + 2 \\).\nFor the x-intercept, let \\( y = 0 \\implies -2x + 2 = 0 \\implies x = 1 \\). This gives \\( G(1, 0) \\).\n\ne) The vertices of \\( \\triangle BFG \\) are \\( B(0, 2) \\), \\( F(-1, 0) \\), and \\( G(1, 0) \\).\n- Lengths: \\( BF = \\sqrt{(0 - (-1))^2 + (2 - 0)^2} = \\sqrt{5} \\).\n\\( BG = \\sqrt{(0 - 1)^2 + (2 - 0)^2} = \\sqrt{5} \\).\nSince \\( BF = BG \\), \\( \\triangle BFG \\) is an isosceles triangle.\n- Area: base \\( FG \\) has length \\( 1 - (-1) = 2 \\). The height is the y-coordinate of \\( B \\), which is \\( 2 \\).\n\\( \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 2 \\times 2 = 2 \\).",
-    "solutionSteps": [
+    "timeLimit": 220,
+    "question": "Consider the point \\( B(0,2) \\) on the curves \\(y=2e^{x}\\) and \\(y=2e^{-x}\\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Find each tangent, its x-intercept, then classify triangle BFG.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find first tangent gradient and equation",
-        "workingOut": "y' = 2e^x \\implies m_1 = 2 \\implies y = 2x + 2"
+        "id": "y12a-5c-q4a",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the gradient of the tangent to \\(y=2e^{x}\\) at \\(B\\).",
+        "opts": [
+          "\\(1\\)",
+          "\\(2\\)",
+          "\\(e\\)",
+          "\\(0\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Differentiate and evaluate at \\(x=0\\).",
+        "solution": "\\(y'=2e^{x}\\). At \\(x=0\\): \\(m=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For \\(y=2e^{x}\\), differentiate: \\(y'=2e^{x}\\).",
+            "workingOut": "\\(y'=2e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(B\\) where \\(x=0\\): \\(m_1=2e^{0}=2\\).",
+            "workingOut": "\\(m_1=2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Determine intercept F",
-        "workingOut": "y = 0 \\implies x = -1 \\implies F(-1, 0)"
+        "id": "y12a-5c-q4b",
+        "difficulty": "easy",
+        "type": "teacher_review",
+        "question": "Find the equation of this tangent, showing it meets the x-axis at \\(F(-1,0)\\).",
+        "a": "\\(y=2x+2\\). When \\(y=0\\): \\(x=-1\\). So \\(F(-1,0)\\).",
+        "answer": "\\(y=2x+2\\). When \\(y=0\\): \\(x=-1\\). So \\(F(-1,0)\\).",
+        "hint": "Point–gradient with \\(B(0,2)\\) and \\(m=2\\).",
+        "solution": "\\(y-2=2x\\Rightarrow y=2x+2\\). Set \\(y=0\\): \\(x=-1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Point \\(B(0,2)\\) with gradient 2. Point–gradient form: \\(y-2=2(x-0)\\).",
+            "workingOut": "\\(y-2=2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Simplify: \\(y=2x+2\\).",
+            "workingOut": "\\(y=2x+2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "X-intercept: set \\(y=0\\). Then \\(2x+2=0\\Rightarrow x=-1\\).",
+            "workingOut": "\\(x=-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the tangent meets the x-axis at \\(F(-1,0)\\).",
+            "workingOut": "\\(F(-1,0)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find second tangent gradient and equation",
-        "workingOut": "y' = -2e^{-x} \\implies m_2 = -2 \\implies y = -2x + 2"
+        "id": "y12a-5c-q4c",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the gradient of the tangent to \\(y=2e^{-x}\\) at \\(B\\).",
+        "opts": [
+          "\\(2\\)",
+          "\\(-2\\)",
+          "\\(-1\\)",
+          "\\(1\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Differentiate \\(2e^{-x}\\) and evaluate at \\(x=0\\).",
+        "solution": "\\(y'=-2e^{-x}\\). At \\(x=0\\): \\(m=-2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For \\(y=2e^{-x}\\), chain rule gives \\(y'=2e^{-x}\\cdot(-1)=-2e^{-x}\\).",
+            "workingOut": "\\(y'=-2e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(m_2=-2e^{0}=-2\\).",
+            "workingOut": "\\(m_2=-2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Determine intercept G",
-        "workingOut": "y = 0 \\implies x = 1 \\implies G(1, 0)"
+        "id": "y12a-5c-q4d",
+        "difficulty": "easy",
+        "type": "teacher_review",
+        "question": "Find the equation of this tangent, showing it meets the x-axis at \\(G(1,0)\\).",
+        "a": "\\(y=-2x+2\\). When \\(y=0\\): \\(x=1\\). So \\(G(1,0)\\).",
+        "answer": "\\(y=-2x+2\\). When \\(y=0\\): \\(x=1\\). So \\(G(1,0)\\).",
+        "hint": "Point–gradient with \\(B(0,2)\\) and \\(m=-2\\).",
+        "solution": "\\(y-2=-2x\\Rightarrow y=-2x+2\\). Set \\(y=0\\): \\(x=1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Point \\(B(0,2)\\) with gradient \\(-2\\): \\(y-2=-2(x-0)\\).",
+            "workingOut": "\\(y-2=-2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Simplify: \\(y=-2x+2\\).",
+            "workingOut": "\\(y=-2x+2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "X-intercept: \\(0=-2x+2\\Rightarrow x=1\\).",
+            "workingOut": "\\(x=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the tangent meets the x-axis at \\(G(1,0)\\).",
+            "workingOut": "\\(G(1,0)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Classify triangle and calculate area",
-        "workingOut": "BF = BG = \\sqrt{5} \\implies \\text{Isosceles}. \\; \\text{Area} = \\frac{1}{2} \\times 2 \\times 2 = 2"
+        "id": "y12a-5c-q4e",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "What sort of triangle is \\(\\triangle BFG\\), and what is its area?",
+        "opts": [
+          "\\(\\text{Equilateral, area }=2\\)",
+          "\\(\\text{Isosceles, area }=2\\)",
+          "\\(\\text{Right-angled, area }=1\\)",
+          "\\(\\text{Isosceles, area }=4\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Compare BF and BG; base FG = 2, height = 2.",
+        "solution": "\\(BF=BG=\\sqrt{5}\\) (isosceles). Area \\(=\\dfrac{1}{2}\\times 2\\times 2=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Vertices: \\(B(0,2)\\), \\(F(-1,0)\\), \\(G(1,0)\\).",
+            "workingOut": "\\(B,F,G\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Distance \\(BF=\\sqrt{(0-(-1))^{2}+(2-0)^{2}}=\\sqrt{5}\\) and similarly \\(BG=\\sqrt{5}\\). Equal sides ⇒ isosceles.",
+            "workingOut": "\\(BF=BG=\\sqrt{5}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Base \\(FG\\) has length \\(1-(-1)=2\\); height is the y-coordinate of \\(B\\), which is 2.",
+            "workingOut": "\\(base=2,\\; height=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Area \\(=\\dfrac{1}{2}\\times 2\\times 2=2\\). So \\(\\triangle BFG\\) is isosceles with area 2.",
+            "workingOut": "\\(\\text{Isosceles, area }=2\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Find both tangent equations using point-slope form. The distance between intercepts F and G along the x-axis is the base.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q5",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Consider the curve \\( y = 2x - e^x \\):\na) Find the gradient of the tangent to the curve at \\( x = 0 \\).\nb) Write down the equation of the tangent, and show that it passes through \\( (1, 0) \\).",
-    "a": "a) 1\nb) y = x - 1, passes through (1, 0)",
-    "solution": "a) Differentiating \\( y = 2x - e^x \\):\n\\( \\frac{dy}{dx} = 2 - e^x \\).\nAt \\( x = 0 \\), the gradient of the tangent is:\n\\( m = 2 - e^0 = 2 - 1 = 1 \\).\n\nb) At \\( x = 0 \\), the y-coordinate is:\n\\( y = 2(0) - e^0 = -1 \\). So the point is \\( (0, -1) \\).\nThe equation of the tangent is:\n\\( y - (-1) = 1(x - 0) \\implies y + 1 = x \\implies y = x - 1 \\).\nTo show it passes through \\( (1, 0) \\), substitute \\( x = 1 \\):\n\\( y = 1 - 1 = 0 \\), which is correct.",
-    "solutionSteps": [
+    "timeLimit": 150,
+    "question": "Consider the curve \\( y = 2x - e^{x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Differentiate, find the point at \\(x=0\\), then use point–gradient form.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Differentiate the function",
-        "workingOut": "\\frac{dy}{dx} = 2 - e^x"
+        "id": "y12a-5c-q5a",
+        "difficulty": "easy",
+        "type": "multiple_choice",
+        "question": "Find the gradient of the tangent to the curve at \\(x=0\\).",
+        "opts": [
+          "\\(0\\)",
+          "\\(1\\)",
+          "\\(2\\)",
+          "\\(-1\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Find \\(y'\\) and evaluate at \\(x=0\\).",
+        "solution": "\\(y'=2-e^{x}\\). At \\(x=0\\): \\(m=2-1=1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\(y=2x-e^{x}\\) term by term: \\(\\dfrac{d}{dx}(2x)=2\\) and \\(\\dfrac{d}{dx}e^{x}=e^{x}\\).",
+            "workingOut": "\\(y'=2-e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(m=2-e^{0}=2-1=1\\).",
+            "workingOut": "\\(m=1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Evaluate gradient at x = 0",
-        "workingOut": "m = 2 - 1 = 1"
-      },
-      {
-        "explanation": "Find point y-coordinate",
-        "workingOut": "y(0) = -1"
-      },
-      {
-        "explanation": "Determine tangent equation",
-        "workingOut": "y - (-1) = 1(x - 0) \\implies y = x - 1"
-      },
-      {
-        "explanation": "Verify point (1, 0)",
-        "workingOut": "x=1 \\implies y = 0"
+        "id": "y12a-5c-q5b",
+        "difficulty": "easy",
+        "type": "teacher_review",
+        "question": "Write down the equation of the tangent, and show that it passes through \\((1,0)\\).",
+        "a": "\\(y=x-1\\). At \\(x=1\\): \\(y=0\\).",
+        "answer": "\\(y=x-1\\). At \\(x=1\\): \\(y=0\\).",
+        "hint": "Point is \\((0,-1)\\) with gradient 1.",
+        "solution": "At \\(x=0\\): \\(y=-1\\). Tangent: \\(y+1=x\\Rightarrow y=x-1\\). When \\(x=1\\), \\(y=0\\).",
+        "solutionSteps": [
+          {
+            "explanation": "First find the point of contact at \\(x=0\\): \\(y=2(0)-e^{0}=-1\\). So the point is \\((0,-1)\\).",
+            "workingOut": "\\((0,-1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "With gradient \\(m=1\\) from part (a), point–gradient form gives \\(y-(-1)=1(x-0)\\).",
+            "workingOut": "\\(y+1=x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Simplify: \\(y=x-1\\).",
+            "workingOut": "\\(y=x-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Check \\((1,0)\\): when \\(x=1\\), \\(y=1-1=0\\). The tangent does pass through \\((1,0)\\).",
+            "workingOut": "\\(x=1\\Rightarrow y=0\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Differentiate the function to find gradient m, find the point of tangency (0, -1), then use y - y1 = m(x - x1).",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q6",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = 2x - e^x \\):\na) Find the first and second derivatives for the curve.\nb) Deduce that the curve is concave down for all values of \\( x \\).\nc) Find any stationary points, and determine their nature using the second derivative.",
-    "a": "a) y' = 2 - e^x, y'' = -e^x\nb) y'' < 0 for all x\nc) (ln 2, 2 ln 2 - 2), local maximum",
-    "solution": "a) Differentiating \\( y = 2x - e^x \\):\n\\( y' = 2 - e^x \\)\n\\( y'' = -e^x \\).\n\nb) Since \\( e^x > 0 \\) for all real \\( x \\), we have \\( y'' = -e^x < 0 \\) for all \\( x \\).\nBecause the second derivative is always negative, the curve is always concave down.\n\nc) Stationary points occur when \\( y' = 0 \\):\n\\( 2 - e^x = 0 \\implies e^x = 2 \\implies x = \\ln 2 \\).\nThe y-coordinate at \\( x = \\ln 2 \\) is:\n\\( y = 2\\ln 2 - e^{\\ln 2} = 2\\ln 2 - 2 \\).\nAt \\( x = \\ln 2 \\), \\( y'' = -2 < 0 \\), which confirms that \\( (\\ln 2, 2\\ln 2 - 2) \\) is a local maximum.",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = 2x - e^{x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Stationary points when \\(y'=0\\). Nature from sign of \\(y''\\).",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find first and second derivatives",
-        "workingOut": "y' = 2 - e^x, \\; y'' = -e^x"
+        "id": "y12a-5c-q6a",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the first and second derivatives of the curve.",
+        "opts": [
+          "\\(y'=2-e^{x},\\; y''=-e^{x}\\)",
+          "\\(y'=2+e^{x},\\; y''=e^{x}\\)",
+          "\\(y'=2-e^{x},\\; y''=e^{x}\\)",
+          "\\(y'=-e^{x},\\; y''=-e^{x}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Differentiate term by term twice.",
+        "solution": "\\(y'=2-e^{x}\\), \\(y''=-e^{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Starting from \\(y=2x-e^{x}\\), differentiate once: \\(y'=2-e^{x}\\).",
+            "workingOut": "\\(y'=2-e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again: the derivative of 2 is 0 and the derivative of \\(-e^{x}\\) is \\(-e^{x}\\).",
+            "workingOut": "\\(y''=-e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the first derivative is \\(2-e^{x}\\) and the second is \\(-e^{x}\\).",
+            "workingOut": "\\(y'=2-e^{x},\\; y''=-e^{x}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Analyse concavity from y''",
-        "workingOut": "-e^x < 0 \\implies \\text{always concave down}"
+        "id": "y12a-5c-q6b",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Deduce that the curve is concave down for all values of \\(x\\).",
+        "a": "\\(y''=-e^{x}<0\\) for all real \\(x\\), since \\(e^{x}>0\\).",
+        "answer": "\\(y''=-e^{x}<0\\) for all real \\(x\\), since \\(e^{x}>0\\).",
+        "hint": "Sign of \\(y''\\) determines concavity.",
+        "solution": "Since \\(e^{x}>0\\) always, \\(y''=-e^{x}<0\\) always, so always concave down.",
+        "solutionSteps": [
+          {
+            "explanation": "From part (a), \\(y''=-e^{x}\\).",
+            "workingOut": "\\(y''=-e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "For every real number \\(x\\), the exponential \\(e^{x}\\) is strictly positive. Therefore \\(-e^{x}\\) is strictly negative.",
+            "workingOut": "\\(e^{x}>0\\Rightarrow -e^{x}<0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Since \\(y''<0\\) for all \\(x\\), the curve is concave down everywhere.",
+            "workingOut": "\\(\\text{always concave down}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Solve for stationary points",
-        "workingOut": "2 - e^x = 0 \\implies x = \\ln 2"
-      },
-      {
-        "explanation": "Determine y-value and classify stationary point",
-        "workingOut": "y = 2\\ln 2 - 2. \\; y'' < 0 \\implies \\text{local maximum}"
+        "id": "y12a-5c-q6c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find any stationary points, and determine their nature.",
+        "opts": [
+          "\\((\\ln 2,\\; 2\\ln 2-2)\\), local maximum",
+          "\\((\\ln 2,\\; 2\\ln 2-2)\\), local minimum",
+          "\\((0,-1)\\), local maximum",
+          "\\((\\ln 2,\\; 0)\\), point of inflection"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Solve \\(y'=0\\), then check \\(y''\\).",
+        "solution": "\\(2-e^{x}=0\\Rightarrow x=\\ln 2\\), \\(y=2\\ln 2-2\\). \\(y''=-2<0\\): local max.",
+        "solutionSteps": [
+          {
+            "explanation": "Stationary points occur where \\(y'=0\\): \\(2-e^{x}=0\\Rightarrow e^{x}=2\\Rightarrow x=\\ln 2\\).",
+            "workingOut": "\\(x=\\ln 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The corresponding y-value is \\(y=2\\ln 2-e^{\\ln 2}=2\\ln 2-2\\).",
+            "workingOut": "\\(y=2\\ln 2-2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Second derivative test: \\(y''(\\ln 2)=-e^{\\ln 2}=-2<0\\), so the stationary point is a local maximum.",
+            "workingOut": "\\(\\text{local maximum}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Hence there is a local maximum at \\((\\ln 2,\\, 2\\ln 2-2)\\).",
+            "workingOut": "\\((\\ln 2,\\, 2\\ln 2-2)\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Stationary points occur when dy/dx = 0. Use the sign of d^2y/dx^2 to verify the nature (maximum if negative).",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q7",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = (2 - x)e^x \\):\na) Differentiate \\( y = (2 - x)e^x \\) using the product rule.\nb) Find the equation of the tangent at \\( x = 0 \\).\nc) Hence find the x-intercept of this tangent.",
-    "a": "a) y' = (1 - x)e^x\nb) y = x + 2\nc) -2",
-    "solution": "a) Let \\( u = 2 - x \\implies u' = -1 \\) and \\( v = e^x \\implies v' = e^x \\).\nUsing product rule:\n\\( y' = u'v + uv' = -1(e^x) + (2 - x)e^x = e^x(-1 + 2 - x) = (1 - x)e^x \\).\n\nb) At \\( x = 0 \\):\n- y-coordinate: \\( y = (2 - 0)e^0 = 2 \\). So point is \\( (0, 2) \\).\n- Gradient: \\( y' = (1 - 0)e^0 = 1 \\).\nTangent equation:\n\\( y - 2 = 1(x - 0) \\implies y = x + 2 \\).\n\nc) For the x-intercept of the tangent, set \\( y = 0 \\):\n\\( 0 = x + 2 \\implies x = -2 \\).\nSo the x-intercept is \\( -2 \\).",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = (2-x)e^{x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Use the product rule for the derivative.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Apply the product rule",
-        "workingOut": "y' = -e^x + (2-x)e^x"
+        "id": "y12a-5c-q7a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Differentiate \\(y=(2-x)e^{x}\\) using the product rule.",
+        "a": "\\(y'=(1-x)e^{x}\\)",
+        "answer": "\\(y'=(1-x)e^{x}\\)",
+        "hint": "Set \\(u=2-x\\), \\(v=e^{x}\\).",
+        "solution": "\\(u'=-1\\), \\(v'=e^{x}\\). \\(y'=-e^{x}+(2-x)e^{x}=(1-x)e^{x}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Write \\(y=(2-x)e^{x}\\) as a product \\(uv\\) with \\(u=2-x\\) and \\(v=e^{x}\\).",
+            "workingOut": "\\(u=2-x,\\; v=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Then \\(u'=-1\\) and \\(v'=e^{x}\\). The product rule says \\(y'=u'v+uv'\\).",
+            "workingOut": "\\(u'=-1,\\; v'=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Substitute: \\(y'=(-1)e^{x}+(2-x)e^{x}=e^{x}(-1+2-x)=(1-x)e^{x}\\).",
+            "workingOut": "\\(y'=(1-x)e^{x}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Simplify the derivative",
-        "workingOut": "y' = (1-x)e^x"
+        "id": "y12a-5c-q7b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the equation of the tangent at \\(x=0\\).",
+        "opts": [
+          "\\(y=x+2\\)",
+          "\\(y=2x+2\\)",
+          "\\(y=x-2\\)",
+          "\\(y=-x+2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Find the point and gradient at \\(x=0\\).",
+        "solution": "At \\(x=0\\): \\(y=2\\), \\(y'=1\\). Tangent: \\(y=x+2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "At \\(x=0\\): \\(y=(2-0)e^{0}=2\\) and \\(y'=(1-0)e^{0}=1\\). Point \\((0,2)\\), gradient 1.",
+            "workingOut": "\\((0,2),\\; m=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point–gradient form: \\(y-2=1(x-0)\\Rightarrow y=x+2\\).",
+            "workingOut": "\\(y=x+2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Evaluate point and gradient at x = 0",
-        "workingOut": "y(0) = 2, \\; y'(0) = 1"
-      },
-      {
-        "explanation": "Formulate tangent equation",
-        "workingOut": "y = x + 2"
-      },
-      {
-        "explanation": "Solve for x-intercept",
-        "workingOut": "y=0 \\implies x = -2"
+        "id": "y12a-5c-q7c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Hence find the x-intercept of this tangent.",
+        "opts": [
+          "\\(-2\\)",
+          "\\(2\\)",
+          "\\(0\\)",
+          "\\(-1\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Set \\(y=0\\) in the tangent equation.",
+        "solution": "\\(0=x+2\\Rightarrow x=-2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y=0\\) in the tangent equation \\(y=x+2\\).",
+            "workingOut": "\\(0=x+2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve: \\(x=-2\\). The x-intercept is \\(-2\\).",
+            "workingOut": "\\(x=-2\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Differentiate using the product rule. Find the tangent at (0, 2) and solve for y = 0 to get the x-intercept.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q8",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = (x + 2)e^{-x} \\):\na) Show that the equation of the tangent at \\( x = 0 \\) is \\( y = -x + 2 \\).\nb) Find the x-intercept and y-intercept of this tangent.\nc) Find the area of the triangle formed by these intercepts and the origin.",
-    "a": "a) y = -x + 2\nb) x-intercept: 2, y-intercept: 2\nc) 2",
-    "solution": "a) Differentiate using the product rule:\nLet \\( u = x + 2 \\implies u' = 1 \\), and \\( v = e^{-x} \\implies v' = -e^{-x} \\).\n\\( y' = 1 \\cdot e^{-x} + (x + 2)(-e^{-x}) = e^{-x}(1 - x - 2) = -(x + 1)e^{-x} \\).\nAt \\( x = 0 \\):\n- y-coordinate: \\( y = (0 + 2)e^0 = 2 \\).\n- Gradient: \\( y' = -(0 + 1)e^0 = -1 \\).\nTangent equation:\n\\( y - 2 = -1(x - 0) \\implies y = -x + 2 \\).\n\nb) Intercepts:\n- y-intercept: when \\( x = 0 \\implies y = 2 \\), i.e., \\( (0, 2) \\).\n- x-intercept: when \\( y = 0 \\implies x = 2 \\), i.e., \\( (2, 0) \\).\n\nc) The triangle vertices are \\( (0, 0) \\), \\( (2, 0) \\), and \\( (0, 2) \\).\n\\( \\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 2 \\times 2 = 2 \\).",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = (x+2)e^{-x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Product rule, then intercepts for triangle area.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Differentiate using product rule",
-        "workingOut": "y' = e^{-x} - (x+2)e^{-x} = -(x+1)e^{-x}"
+        "id": "y12a-5c-q8a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that the equation of the tangent at \\(x=0\\) is \\(y=-x+2\\).",
+        "a": "\\(y'=-(x+1)e^{-x}\\). At \\(x=0\\): \\(y=2\\), \\(m=-1\\). Tangent: \\(y=-x+2\\).",
+        "answer": "\\(y'=-(x+1)e^{-x}\\). At \\(x=0\\): \\(y=2\\), \\(m=-1\\). Tangent: \\(y=-x+2\\).",
+        "hint": "Product rule with \\(u=x+2\\), \\(v=e^{-x}\\).",
+        "solution": "\\(y'=e^{-x}-(x+2)e^{-x}=-(x+1)e^{-x}\\). At 0: point (0,2), m=-1. So y=-x+2.",
+        "solutionSteps": [
+          {
+            "explanation": "Let \\(u=x+2\\) and \\(v=e^{-x}\\). Then \\(u'=1\\) and \\(v'=-e^{-x}\\).",
+            "workingOut": "\\(u'=1,\\; v'=-e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Product rule: \\(y'=e^{-x}+(x+2)(-e^{-x})=e^{-x}(1-x-2)=-(x+1)e^{-x}\\).",
+            "workingOut": "\\(y'=-(x+1)e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(y=(0+2)e^{0}=2\\) and \\(y'=-(0+1)e^{0}=-1\\).",
+            "workingOut": "\\((0,2),\\; m=-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point–gradient: \\(y-2=-1(x-0)\\Rightarrow y=-x+2\\), as required.",
+            "workingOut": "\\(y=-x+2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Evaluate tangent equation at x = 0",
-        "workingOut": "y(0) = 2, \\; y'(0) = -1 \\implies y = -x + 2"
+        "id": "y12a-5c-q8b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the x-intercept and y-intercept of this tangent.",
+        "opts": [
+          "\\(x\\text{-int }=2,\\; y\\text{-int }=2\\)",
+          "\\(x\\text{-int }=-2,\\; y\\text{-int }=2\\)",
+          "\\(x\\text{-int }=2,\\; y\\text{-int }=-2\\)",
+          "\\(x\\text{-int }=1,\\; y\\text{-int }=2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Set \\(y=0\\) and \\(x=0\\) in \\(y=-x+2\\).",
+        "solution": "y-int 2; x-int: \\(0=-x+2\\Rightarrow x=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Y-intercept of \\(y=-x+2\\): set \\(x=0\\) to get \\(y=2\\).",
+            "workingOut": "\\(y\\text{-int}=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "X-intercept: set \\(y=0\\): \\(0=-x+2\\Rightarrow x=2\\).",
+            "workingOut": "\\(x\\text{-int}=2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find intercepts",
-        "workingOut": "x-int = 2, \\; y-int = 2"
-      },
-      {
-        "explanation": "Calculate area",
-        "workingOut": "\\text{Area} = \\frac{1}{2} \\times 2 \\times 2 = 2"
+        "id": "y12a-5c-q8c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the area of the triangle formed by these intercepts and the origin.",
+        "opts": [
+          "\\(1\\)",
+          "\\(2\\)",
+          "\\(4\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Right triangle with base 2 and height 2.",
+        "solution": "Area \\(=\\dfrac{1}{2}\\times 2\\times 2=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The intercepts with the axes give a right triangle with vertices \\((0,0)\\), \\((2,0)\\) and \\((0,2)\\).",
+            "workingOut": "\\(vertices\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Base = 2 and height = 2, so area \\(=\\dfrac{1}{2}\\times 2\\times 2=2\\).",
+            "workingOut": "\\(\\text{Area}=2\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Differentiate using the product rule to get the tangent slope. Find the intercepts to calculate the area.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q9",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = e^{2x-4} \\):\na) Find the first and second derivatives of the function.\nb) Explain why every tangent to the curve has a positive gradient, and why the curve is concave up at every point.\nc) Find the coordinates of the point on the curve where the gradient is 2.\nd) Find the gradients of the tangent and normal at the y-intercept.",
-    "a": "a) y' = 2e^(2x-4), y'' = 4e^(2x-4)\nb) y' > 0 and y'' > 0 for all x\nc) (2, 1)\nd) Tangent gradient: 2e^(-4), Normal gradient: -0.5e^4",
-    "solution": "a) Differentiating \\( y = e^{2x-4} \\):\n\\( y' = 2e^{2x-4} \\)\n\\( y'' = 4e^{2x-4} \\).\n\nb) Since \\( e^{2x-4} > 0 \\) for all real \\( x \\):\n- The gradient \\( y' = 2e^{2x-4} > 0 \\) is always positive, meaning every tangent has a positive gradient.\n- The second derivative \\( y'' = 4e^{2x-4} > 0 \\) is always positive, meaning the curve is concave up everywhere.\n\nc) Set the gradient equal to 2:\n\\( 2e^{2x-4} = 2 \\implies e^{2x-4} = 1 \\implies 2x - 4 = 0 \\implies x = 2 \\).\nAt \\( x = 2 \\), \\( y = e^{2(2)-4} = e^0 = 1 \\).\nSo the coordinates are \\( (2, 1) \\).\n\nd) The y-intercept is at \\( x = 0 \\):\n- Tangent gradient: \\( m_t = y'(0) = 2e^{-4} \\).\n- Normal gradient: \\( m_n = -\\frac{1}{m_t} = -\\frac{1}{2e^{-4}} = -\\frac{e^4}{2} = -0.5e^4 \\).",
-    "solutionSteps": [
+    "timeLimit": 200,
+    "question": "Consider the curve \\( y = e^{2x-4} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Chain rule for derivatives; normal gradient is negative reciprocal.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find first and second derivatives",
-        "workingOut": "y' = 2e^{2x-4}, \\; y'' = 4e^{2x-4}"
+        "id": "y12a-5c-q9a",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the first and second derivatives of the function.",
+        "opts": [
+          "\\(y'=2e^{2x-4},\\; y''=4e^{2x-4}\\)",
+          "\\(y'=e^{2x-4},\\; y''=2e^{2x-4}\\)",
+          "\\(y'=2e^{2x-4},\\; y''=2e^{2x-4}\\)",
+          "\\(y'=-2e^{2x-4},\\; y''=4e^{2x-4}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Chain rule twice; each time multiply by 2.",
+        "solution": "\\(y'=2e^{2x-4}\\), \\(y''=4e^{2x-4}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For \\(y=e^{2x-4}\\), chain rule with factor 2 from the exponent: \\(y'=2e^{2x-4}\\).",
+            "workingOut": "\\(y'=2e^{2x-4}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again (another factor of 2): \\(y''=4e^{2x-4}\\).",
+            "workingOut": "\\(y''=4e^{2x-4}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Analyse signs of derivatives",
-        "workingOut": "e^{2x-4} > 0 \\implies y' > 0 \\text{ and } y'' > 0"
+        "id": "y12a-5c-q9b",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Explain why every tangent to the curve has a positive gradient, and why the curve is concave up at every point.",
+        "a": "Since \\(e^{2x-4}>0\\) always: \\(y'=2e^{2x-4}>0\\) and \\(y''=4e^{2x-4}>0\\).",
+        "answer": "Since \\(e^{2x-4}>0\\) always: \\(y'=2e^{2x-4}>0\\) and \\(y''=4e^{2x-4}>0\\).",
+        "hint": "Use the signs of \\(y'\\) and \\(y''\\).",
+        "solution": "Exponential always positive ⇒ y' always positive (tangents slope up) and y'' always positive (concave up).",
+        "solutionSteps": [
+          {
+            "explanation": "The natural exponential is always positive, so \\(e^{2x-4}>0\\) for every real \\(x\\).",
+            "workingOut": "\\(e^{2x-4}>0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore \\(y'=2e^{2x-4}>0\\) always: every tangent has a positive gradient (the curve is always increasing).",
+            "workingOut": "\\(y'>0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Likewise \\(y''=4e^{2x-4}>0\\) always: the curve is concave up at every point.",
+            "workingOut": "\\(y''>0\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Solve for gradient = 2",
-        "workingOut": "2e^{2x-4} = 2 \\implies x = 2 \\implies y = 1"
+        "id": "y12a-5c-q9c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point on the curve where the gradient is 2.",
+        "opts": [
+          "\\((1,e^{-2})\\)",
+          "\\((2,1)\\)",
+          "\\((0,e^{-4})\\)",
+          "\\((2,e)\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Solve \\(2e^{2x-4}=2\\).",
+        "solution": "\\(e^{2x-4}=1\\Rightarrow 2x-4=0\\Rightarrow x=2\\), \\(y=1\\). Point \\((2,1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Set the gradient equal to 2: \\(2e^{2x-4}=2\\Rightarrow e^{2x-4}=1\\).",
+            "workingOut": "\\(e^{2x-4}=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Taking natural log: \\(2x-4=0\\Rightarrow x=2\\).",
+            "workingOut": "\\(x=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Then \\(y=e^{2(2)-4}=e^{0}=1\\). The point is \\((2,1)\\).",
+            "workingOut": "\\((2,1)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find gradients at x = 0",
-        "workingOut": "m_t = 2e^{-4}, \\; m_n = -0.5e^4"
+        "id": "y12a-5c-q9d",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the gradients of the tangent and normal at the y-intercept.",
+        "opts": [
+          "\\(m_t=2e^{-4},\\; m_n=-\\dfrac{e^{4}}{2}\\)",
+          "\\(m_t=2,\\; m_n=-\\dfrac{1}{2}\\)",
+          "\\(m_t=e^{-4},\\; m_n=-e^{4}\\)",
+          "\\(m_t=2e^{-4},\\; m_n=\\dfrac{e^{4}}{2}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Y-intercept is at \\(x=0\\). Normal is negative reciprocal.",
+        "solution": "\\(m_t=2e^{-4}\\), \\(m_n=-\\dfrac{1}{2e^{-4}}=-\\dfrac{e^{4}}{2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The y-intercept is at \\(x=0\\). Tangent gradient: \\(m_t=y'(0)=2e^{-4}\\).",
+            "workingOut": "\\(m_t=2e^{-4}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Normal gradient is the negative reciprocal: \\(m_n=-\\dfrac{1}{2e^{-4}}=-\\dfrac{e^{4}}{2}\\).",
+            "workingOut": "\\(m_n=-\\dfrac{e^{4}}{2}\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Substitute x = 0 to find gradients at the y-intercept. Normal gradient is -1/m.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q10",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = e^{-x^2} \\):\na) Find the derivative \\( \\frac{dy}{dx} \\).\nb) Find the equation of the normal to the curve at the point where \\( x = 1 \\).\nc) Determine the x-intercept of this normal.",
-    "a": "a) dy/dx = -2x*e^(-x^2)\nb) ex - 2y - e + 2e^(-1) = 0\nc) 1 - 2e^(-2)",
-    "solution": "a) Using the chain rule:\n\\( \\frac{dy}{dx} = -2x e^{-x^2} \\).\n\nb) At \\( x = 1 \\):\n- y-coordinate: \\( y = e^{-1^2} = e^{-1} \\). Point is \\( (1, e^{-1}) \\).\n- Tangent gradient: \\( m_t = -2(1)e^{-1} = -2e^{-1} \\).\n- Normal gradient: \\( m_n = -\\frac{1}{m_t} = -\\frac{1}{-2e^{-1}} = \\frac{e}{2} \\).\nEquation of the normal:\n\\( y - e^{-1} = \\frac{e}{2}(x - 1) \\implies 2(y - e^{-1}) = e(x - 1) \\implies 2y - 2e^{-1} = ex - e \\implies ex - 2y - e + 2e^{-1} = 0 \\).\n\nc) For the x-intercept, set \\( y = 0 \\):\n\\( ex - 0 - e + 2e^{-1} = 0 \\implies ex = e - 2e^{-1} \\implies x = 1 - 2e^{-2} \\).",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "Consider the curve \\( y = e^{-x^{2}} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Chain rule for the derivative; normal gradient is the negative reciprocal of the tangent gradient.",
+    "requiresManualGrading": false,
+    "subQuestions": [
       {
-        "explanation": "Differentiate the function using chain rule",
-        "workingOut": "\\frac{dy}{dx} = -2x e^{-x^2}"
+        "id": "y12a-5c-q10a",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the derivative \\(\\dfrac{dy}{dx}\\).",
+        "opts": [
+          "\\(-2x e^{-x^{2}}\\)",
+          "\\(2x e^{-x^{2}}\\)",
+          "\\(-e^{-x^{2}}\\)",
+          "\\(-2e^{-x^{2}}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Chain rule with inner function \\(u=-x^{2}\\).",
+        "solution": "Let \\(u=-x^{2}\\). Then \\(u'=-2x\\) and \\(y'=e^{u}u'=-2x e^{-x^{2}}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The function is \\(y=e^{-x^{2}}\\), a composite: outer exponential, inner \\(u=-x^{2}\\). Use the chain rule \\(y'=e^{u}u'\\).",
+            "workingOut": "\\(u=-x^{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate the inner function with the power rule: \\(u'=-2x\\).",
+            "workingOut": "\\(u'=-2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore \\(y'=e^{-x^{2}}\\cdot(-2x)=-2x e^{-x^{2}}\\).",
+            "workingOut": "\\(y'=-2x e^{-x^{2}}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Evaluate point and normal gradient at x = 1",
-        "workingOut": "y = e^{-1}, \\; m_t = -2e^{-1} \\implies m_n = \\frac{e}{2}"
+        "id": "y12a-5c-q10b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the equation of the normal to the curve at the point where \\(x=1\\).",
+        "opts": [
+          "\\(ex - 2y - e + 2e^{-1} = 0\\)",
+          "\\(ex + 2y - e + 2e^{-1} = 0\\)",
+          "\\(y - e^{-1} = -2e^{-1}(x - 1)\\)",
+          "\\(2ex - y - 2e + e^{-1} = 0\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "At \\(x=1\\): point \\((1,e^{-1})\\), tangent slope \\(-2e^{-1}\\), so normal slope is \\(\\dfrac{e}{2}\\).",
+        "solution": "Point \\((1,e^{-1})\\), \\(m_t=-2e^{-1}\\), \\(m_n=\\dfrac{e}{2}\\). Normal: \\(y-e^{-1}=\\dfrac{e}{2}(x-1)\\Rightarrow ex-2y-e+2e^{-1}=0\\).",
+        "solutionSteps": [
+          {
+            "explanation": "At \\(x=1\\), the y-coordinate on the curve is \\(y=e^{-1^{2}}=e^{-1}\\). The point of contact is \\((1,e^{-1})\\).",
+            "workingOut": "\\((1,e^{-1})\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The tangent gradient is \\(m_t=y'(1)=-2(1)e^{-1}=-2e^{-1}\\).",
+            "workingOut": "\\(m_t=-2e^{-1}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The normal gradient is the negative reciprocal: \\(m_n=-\\dfrac{1}{-2e^{-1}}=\\dfrac{e}{2}\\).",
+            "workingOut": "\\(m_n=\\dfrac{e}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point–gradient form of the normal line:",
+            "workingOut": "\\(y-e^{-1}=\\dfrac{e}{2}(x-1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Multiply through by 2: \\(2y-2e^{-1}=ex-e\\). Rearrange to general form: \\(ex-2y-e+2e^{-1}=0\\).",
+            "workingOut": "\\(ex-2y-e+2e^{-1}=0\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Formulate normal equation",
-        "workingOut": "y - e^{-1} = \\frac{e}{2}(x-1) \\implies ex - 2y - e + 2e^{-1} = 0"
-      },
-      {
-        "explanation": "Find x-intercept",
-        "workingOut": "y=0 \\implies ex = e - 2e^{-1} \\implies x = 1 - 2e^{-2}"
+        "id": "y12a-5c-q10c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Determine the x-intercept of this normal.",
+        "opts": [
+          "\\(1-2e^{-2}\\)",
+          "\\(1+2e^{-2}\\)",
+          "\\(e-2e^{-1}\\)",
+          "\\(1-2e^{-1}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Set \\(y=0\\) in \\(ex-2y-e+2e^{-1}=0\\).",
+        "solution": "Set \\(y=0\\): \\(ex-e+2e^{-1}=0\\Rightarrow ex=e-2e^{-1}\\Rightarrow x=1-2e^{-2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Start from the normal equation \\(ex-2y-e+2e^{-1}=0\\). For the x-intercept, set \\(y=0\\).",
+            "workingOut": "\\(ex-e+2e^{-1}=0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Solve for \\(x\\): \\(ex=e-2e^{-1}\\).",
+            "workingOut": "\\(ex=e-2e^{-1}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide by \\(e\\): \\(x=1-2e^{-1}\\cdot e^{-1}=1-2e^{-2}\\).",
+            "workingOut": "\\(x=1-2e^{-2}\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Find the tangent gradient at x = 1, get the normal gradient (negative reciprocal), write the normal equation, then find x when y = 0.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q11",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = 2 - 2e^{-x} \\):\na) Show that the equation of the tangent to the curve at the origin is \\( y = 2x \\).\nb) Deduce the equation of the normal at the origin without further use of calculus.\nc) What is the equation of the horizontal asymptote of this curve?\nd) Sketch the curve, showing the points \\( T \\) and \\( N \\) where the tangent and normal respectively cut the horizontal asymptote.",
-    "a": "a) y = 2x\nb) y = -0.5x\nc) y = 2\nd) Asymptotic to y = 2. Tangent intersects at T(1, 2), Normal intersects at N(-4, 2)",
-    "solution": "a) Origin is \\( (0, 0) \\).\n\\( \\frac{dy}{dx} = 2e^{-x} \\).\nAt \\( x = 0 \\), the tangent gradient is \\( m_t = 2e^0 = 2 \\).\nTangent equation: \\( y - 0 = 2(x - 0) \\implies y = 2x \\).\n\nb) The normal is perpendicular to the tangent at the origin. Since the tangent gradient is 2, the normal gradient is \\( m_n = -0.5 \\).\nNormal equation: \\( y = -0.5x \\).\n\nc) As \\( x \\to \\infty \\), \\( e^{-x} \\to 0 \\), so \\( y \\to 2 \\).\nThe horizontal asymptote is the line \\( y = 2 \\).\n\nd) Intersections with asymptote \\( y = 2 \\):\n- For tangent: \\( 2 = 2x \\implies x = 1 \\). Point \\( T \\) is \\( (1, 2) \\).\n- For normal: \\( 2 = -0.5x \\implies x = -4 \\). Point \\( N \\) is \\( (-4, 2) \\).",
-    "solutionSteps": [
+    "timeLimit": 200,
+    "question": "Consider the curve \\( y = 2-2e^{-x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Differentiate for the tangent; normal is perpendicular; asymptote as \\(x\\to\\infty\\).",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find tangent at origin",
-        "workingOut": "y' = 2e^{-x} \\implies y'(0) = 2 \\implies y = 2x"
+        "id": "y12a-5c-q11a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that the equation of the tangent to the curve at the origin is \\(y=2x\\).",
+        "a": "\\(y'=2e^{-x}\\). At origin: \\(m=2\\). Tangent: \\(y=2x\\).",
+        "answer": "\\(y'=2e^{-x}\\). At origin: \\(m=2\\). Tangent: \\(y=2x\\).",
+        "hint": "Origin is (0,0). Find y'(0).",
+        "solution": "y'=2e^{-x}. At x=0, m=2. Point (0,0): y=2x.",
+        "solutionSteps": [
+          {
+            "explanation": "The origin is the point \\((0,0)\\). Differentiate \\(y=2-2e^{-x}\\): \\(y'=2e^{-x}\\) (chain rule on the second term).",
+            "workingOut": "\\(y'=2e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\), the tangent gradient is \\(m_t=2e^{0}=2\\).",
+            "workingOut": "\\(m_t=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point–gradient form through the origin with gradient 2: \\(y-0=2(x-0)\\Rightarrow y=2x\\).",
+            "workingOut": "\\(y=2x\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Deduce normal at origin",
-        "workingOut": "m_n = -\\frac{1}{2} \\implies y = -0.5x"
+        "id": "y12a-5c-q11b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Deduce the equation of the normal at the origin without further use of calculus.",
+        "opts": [
+          "\\(y=-2x\\)",
+          "\\(y=-\\dfrac{1}{2}x\\)",
+          "\\(y=\\dfrac{1}{2}x\\)",
+          "\\(y=-x\\)"
+        ],
+        "a": 1,
+        "answer": "1",
+        "hint": "Negative reciprocal of tangent gradient 2.",
+        "solution": "\\(m_n=-\\dfrac{1}{2}\\), so \\(y=-\\dfrac{1}{2}x\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The normal is perpendicular to the tangent. With tangent gradient 2, the normal gradient is \\(-\\dfrac{1}{2}\\).",
+            "workingOut": "\\(m_n=-\\dfrac{1}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Through the origin: \\(y=-\\dfrac{1}{2}x\\).",
+            "workingOut": "\\(y=-\\dfrac{1}{2}x\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find horizontal asymptote",
-        "workingOut": "x \\to \\infty \\implies y \\to 2"
+        "id": "y12a-5c-q11c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "What is the equation of the horizontal asymptote of this curve?",
+        "opts": [
+          "\\(y=0\\)",
+          "\\(y=1\\)",
+          "\\(y=2\\)",
+          "\\(x=2\\)"
+        ],
+        "a": 2,
+        "answer": "2",
+        "hint": "Let \\(x\\to\\infty\\).",
+        "solution": "As \\(x\\to\\infty\\), \\(e^{-x}\\to 0\\), so \\(y\\to 2\\). Asymptote \\(y=2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "As \\(x\\to\\infty\\), the term \\(e^{-x}\\to 0\\), so \\(y=2-2e^{-x}\\to 2\\).",
+            "workingOut": "\\(y\\to 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the horizontal asymptote is the line \\(y=2\\).",
+            "workingOut": "\\(y=2\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find intersection points T and N",
-        "workingOut": "y=2 \\implies T(1, 2) \\text{ and } N(-4, 2)"
+        "id": "y12a-5c-q11d",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Sketch the curve, showing the points \\(T\\) and \\(N\\) where the tangent and normal respectively cut the horizontal asymptote.",
+        "a": "Asymptote y=2. Tangent meets it at T(1,2). Normal meets it at N(-4,2).",
+        "answer": "Asymptote y=2. Tangent meets it at T(1,2). Normal meets it at N(-4,2).",
+        "hint": "Solve y=2x and y=-x/2 with y=2.",
+        "solution": "2=2x ⇒ T(1,2). 2=-x/2 ⇒ N(-4,2). Curve rises from (0,0) toward y=2.",
+        "solutionSteps": [
+          {
+            "explanation": "The curve starts at the origin (when \\(x=0\\), \\(y=0\\)), increases, and approaches the asymptote \\(y=2\\) from below.",
+            "workingOut": "\\(y=2-2e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The tangent \\(y=2x\\) meets the asymptote where \\(2=2x\\Rightarrow x=1\\). Mark \\(T(1,2)\\).",
+            "workingOut": "\\(T(1,2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The normal \\(y=-\\dfrac{1}{2}x\\) meets the asymptote where \\(2=-\\dfrac{1}{2}x\\Rightarrow x=-4\\). Mark \\(N(-4,2)\\).",
+            "workingOut": "\\(N(-4,2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Sketch the curve with the asymptote, the tangent, the normal, and the points \\(T\\) and \\(N\\) labelled.",
+            "workingOut": "\\(T(1,2),\\; N(-4,2)\\)",
+            "graphData": {
+              "jsxGraph": {
+                "boundingbox": [
+                  -5,
+                  2.6,
+                  2.8,
+                  -0.6
+                ],
+                "width": 380,
+                "height": 170,
+                "axis": false,
+                "showCopyright": false,
+                "showNavigation": false,
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.8,0],[2.6,0]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('arrow', [[0,-0.5],[0,2.5]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('text', [2.45,-0.22], 'x', {fontSize:12, color:'#64748b'});\nboard.create('text', [-0.28,2.35], 'y', {fontSize:12, color:'#64748b'});\nboard.create('line', [[-4.8,2],[2.6,2]], {strokeColor:'#94a3b8', strokeWidth:1.3, dash:2, straightFirst:false, straightLast:false});\nboard.create('text', [2.0,2.18], 'y=2', {fontSize:10, color:'#64748b'});\nboard.create('functiongraph', [function(x){return 2-2*Math.exp(-x);}, -4.8, 2.5], {strokeColor:'#6366f1', strokeWidth:2.4});\nboard.create('line', [[0,0],[1.15,2.3]], {strokeColor:'#10b981', strokeWidth:1.8, straightFirst:false, straightLast:false});\nboard.create('line', [[0,0],[-4.3,2.15]], {strokeColor:'#f59e0b', strokeWidth:1.8, straightFirst:false, straightLast:false});\nboard.create('point', [0,0], {name:'O', size:2.5, fillColor:'#64748b', strokeColor:'#64748b', label:{offset:[6,-12]}});\nboard.create('point', [1,2], {name:'T', size:3.5, fillColor:'#10b981', strokeColor:'#10b981', label:{offset:[6,8]}});\nboard.create('point', [-4,2], {name:'N', size:3.5, fillColor:'#f59e0b', strokeColor:'#f59e0b', label:{offset:[-16,8]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "The horizontal asymptote is found by letting x go to positive infinity. Solve for the x values where the tangent and normal cross y = 2.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q12",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "General tangent properties of \\( y = e^x \\):\na) Show that the tangent to \\( y = e^x \\) at \\( T(t, e^t) \\) has gradient \\( e^t \\).\nb) Find the equation of the tangent at \\( x = t \\), and show that its x-intercept is \\( t - 1 \\).\nc) Explain geometrically what this means for any tangent to \\( y = e^x \\).",
-    "a": "a) dy/dx = e^x, value at t is e^t\nb) y = e^t * x + e^t * (1 - t), x-intercept = t - 1\nc) The tangent at any point x = t always intersects the x-axis exactly 1 unit to the left of the x-coordinate of the point of contact.",
-    "solution": "a) The derivative of \\( y = e^x \\) is \\( \\frac{dy}{dx} = e^x \\).\nAt \\( x = t \\), the gradient is \\( m = e^t \\).\n\nb) The equation of the tangent at \\( T(t, e^t) \\) is:\n\\( y - e^t = e^t(x - t) \\implies y = e^t x - t e^t + e^t \\implies y = e^t x + e^t(1 - t) \\).\nTo find the x-intercept, set \\( y = 0 \\):\n\\( e^t x + e^t(1 - t) = 0 \\implies e^t(x + 1 - t) = 0 \\).\nSince \\( e^t \\neq 0 \\):\n\\( x + 1 - t = 0 \\implies x = t - 1 \\).\nSo the x-intercept is \\( t - 1 \\).\n\nc) Geometrically, this means that for any point on the curve \\( y = e^x \\), if you draw a tangent line, it will always cross the x-axis exactly one unit to the left of that point's x-coordinate.",
-    "solutionSteps": [
+    "timeLimit": 180,
+    "question": "General tangent properties of \\( y = e^{x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Work with general point \\(T(t,e^{t})\\).",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find derivative and gradient at t",
-        "workingOut": "\\frac{dy}{dx} = e^x \\implies m = e^t"
+        "id": "y12a-5c-q12a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that the tangent to \\(y=e^{x}\\) at \\(T(t,e^{t})\\) has gradient \\(e^{t}\\).",
+        "a": "\\(\\dfrac{dy}{dx}=e^{x}\\). At \\(x=t\\): gradient \\(=e^{t}\\).",
+        "answer": "\\(\\dfrac{dy}{dx}=e^{x}\\). At \\(x=t\\): gradient \\(=e^{t}\\).",
+        "hint": "The derivative of \\(e^{x}\\) is itself.",
+        "solution": "y'=e^x, so at x=t the gradient is e^t.",
+        "solutionSteps": [
+          {
+            "explanation": "The derivative of \\(y=e^{x}\\) is \\(y'=e^{x}\\) (the exponential is its own derivative).",
+            "workingOut": "\\(y'=e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At the general point of contact \\(T(t,e^{t})\\), the gradient is obtained by substituting \\(x=t\\): \\(m=e^{t}\\).",
+            "workingOut": "\\(m=e^{t}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Derive tangent equation",
-        "workingOut": "y - e^t = e^t(x - t) \\implies y = e^t x + e^t(1 - t)"
+        "id": "y12a-5c-q12b",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Find the equation of the tangent at \\(x=t\\), and show that its x-intercept is \\(t-1\\).",
+        "a": "\\(y=e^{t}(x-t+1)\\). Setting y=0 gives x=t-1.",
+        "answer": "\\(y=e^{t}(x-t+1)\\). Setting y=0 gives x=t-1.",
+        "hint": "Point–gradient form, then set y=0.",
+        "solution": "y-e^t=e^t(x-t). Set y=0: e^t(x-t+1)=0 ⇒ x=t-1.",
+        "solutionSteps": [
+          {
+            "explanation": "Point–gradient form at \\(T(t,e^{t})\\) with gradient \\(e^{t}\\): \\(y-e^{t}=e^{t}(x-t)\\).",
+            "workingOut": "\\(y-e^{t}=e^{t}(x-t)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Expand: \\(y=e^{t}x-te^{t}+e^{t}=e^{t}x+e^{t}(1-t)\\).",
+            "workingOut": "\\(y=e^{t}(x-t+1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "For the x-intercept set \\(y=0\\): \\(e^{t}(x-t+1)=0\\). Since \\(e^{t}\\neq 0\\), we get \\(x=t-1\\).",
+            "workingOut": "\\(x=t-1\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Solve for x-intercept",
-        "workingOut": "0 = e^t(x - t + 1) \\implies x = t - 1"
+        "id": "y12a-5c-q12c",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Explain geometrically what this means for any tangent to \\(y=e^{x}\\).",
+        "a": "Any tangent at x=t meets the x-axis exactly 1 unit to the left of the point of contact.",
+        "answer": "Any tangent at x=t meets the x-axis exactly 1 unit to the left of the point of contact.",
+        "hint": "Compare the contact x-coordinate t with the intercept t-1.",
+        "solution": "The x-intercept is always 1 less than the x-coordinate of the point of tangency.",
+        "solutionSteps": [
+          {
+            "explanation": "The point of contact has x-coordinate \\(t\\), while the tangent meets the x-axis at \\(x=t-1\\).",
+            "workingOut": "\\(t\\text{ vs }t-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Geometrically, every tangent to \\(y=e^{x}\\) meets the x-axis exactly one unit to the left of the point of contact.",
+            "workingOut": "\\(\\text{1 unit to the left}\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Substitute the point (t, e^t) and slope e^t into the point-slope formula, then solve for y = 0.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q13",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = e^x \\) and its normal line at \\( x = t \\):\na) Find the equation of the normal at \\( x = t \\).\nb) Show that if this normal line passes through the origin \\( (0, 0) \\), then \\( t + e^{2t} = 0 \\).\nc) Explain why there is exactly one such point on the curve.",
-    "a": "a) y - e^t = -e^(-t)(x - t)\nb) Proof shown\nc) The function g(t) = t + e^(2t) is strictly increasing and goes from negative to positive, so it has exactly one root.",
-    "solution": "a) The gradient of the tangent at \\( x = t \\) is \\( e^t \\), so the gradient of the normal is \\( m_n = -e^{-t} \\).\nThe point of contact is \\( (t, e^t) \\).\nEquation of the normal:\n\\( y - e^t = -e^{-t}(x - t) \\).\n\nb) If this normal passes through \\( (0, 0) \\), substitute \\( x = 0 \\) and \\( y = 0 \\):\n\\( 0 - e^t = -e^{-t}(0 - t) \\implies -e^t = t e^{-t} \\).\nMultiply both sides by \\( e^t \\):\n\\( -e^{2t} = t \\implies t + e^{2t} = 0 \\).\n\nc) Let \\( g(t) = t + e^{2t} \\).\n- Differentiate \\( g(t) \\):\n\\( g'(t) = 1 + 2e^{2t} \\).\nSince \\( e^{2t} > 0 \\) for all \\( t \\), \\( g'(t) = 1 + 2e^{2t} > 0 \\) for all \\( t \\). This means \\( g(t) \\) is strictly increasing.\n- Limits: as \\( t \\to -\\infty \\), \\( g(t) \\to -\\infty \\), and as \\( t \\to \\infty \\), \\( g(t) \\to \\infty \\).\nBy the Intermediate Value Theorem, since \\( g(t) \\) is continuous and strictly increasing, it must cross 0 at exactly one value of \\( t \\). Thus, there is exactly one such point on the curve.",
-    "solutionSteps": [
+    "timeLimit": 200,
+    "question": "Consider the curve \\( y = e^{x} \\) and its normal line at \\( x = t \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Normal gradient is \\(-e^{-t}\\). Substitute the origin carefully for part (b).",
+    "requiresManualGrading": false,
+    "subQuestions": [
       {
-        "explanation": "Formulate the normal equation",
-        "workingOut": "y - e^t = -e^{-t}(x - t)"
+        "id": "y12a-5c-q13a",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the equation of the normal to \\(y=e^{x}\\) at \\(x=t\\).",
+        "opts": [
+          "\\(y - e^{t} = -e^{-t}(x - t)\\)",
+          "\\(y - e^{t} = e^{t}(x - t)\\)",
+          "\\(y - e^{t} = -e^{t}(x - t)\\)",
+          "\\(y - e^{t} = e^{-t}(x - t)\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Tangent slope is \\(e^{t}\\), so normal slope is \\(-e^{-t}\\). Point of contact is \\((t,e^{t})\\).",
+        "solution": "Tangent gradient at \\(x=t\\) is \\(e^{t}\\), so normal gradient is \\(-e^{-t}\\). Point–gradient form: \\(y-e^{t}=-e^{-t}(x-t)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "For \\(y=e^{x}\\), the tangent gradient at \\(x=t\\) is \\(e^{t}\\).",
+            "workingOut": "\\(m_t=e^{t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The normal gradient is the negative reciprocal: \\(m_n=-e^{-t}\\).",
+            "workingOut": "\\(m_n=-e^{-t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Point of contact \\((t,e^{t})\\). Point–gradient form: \\(y-e^{t}=-e^{-t}(x-t)\\).",
+            "workingOut": "\\(y-e^{t}=-e^{-t}(x-t)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Substitute origin coordinates",
-        "workingOut": "-e^t = t e^{-t} \\implies -e^{2t} = t \\implies t + e^{2t} = 0"
+        "id": "y12a-5c-q13b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "If this normal line passes through the origin \\((0,0)\\), which equation must be satisfied by \\(t\\)?",
+        "opts": [
+          "\\(t + e^{2t} = 0\\)",
+          "\\(t - e^{2t} = 0\\)",
+          "\\(t + e^{t} = 0\\)",
+          "\\(1 + e^{2t} = 0\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Substitute \\(x=0\\), \\(y=0\\) into the normal equation and simplify.",
+        "solution": "Substitute \\((0,0)\\) into \\(y-e^{t}=-e^{-t}(x-t)\\): \\(-e^{t}=-e^{-t}(-t)=t e^{-t}\\). Multiply by \\(e^{t}\\): \\(-e^{2t}=t\\), so \\(t+e^{2t}=0\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Substitute the origin \\((0,0)\\) into the normal equation \\(y-e^{t}=-e^{-t}(x-t)\\).",
+            "workingOut": "\\(0-e^{t}=-e^{-t}(0-t)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Simplify: \\(-e^{t}=t e^{-t}\\).",
+            "workingOut": "\\(-e^{t}=t e^{-t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Multiply both sides by \\(e^{t}\\): \\(-e^{2t}=t\\).",
+            "workingOut": "\\(-e^{2t}=t\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Rearrange to obtain \\(t+e^{2t}=0\\).",
+            "workingOut": "\\(t+e^{2t}=0\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Analyse monotonicity of function g(t)",
-        "workingOut": "g'(t) = 1 + 2e^{2t} > 0 \\implies \\text{strictly increasing, exactly one root}"
+        "id": "y12a-5c-q13c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Why is there exactly one value of \\(t\\) for which the normal passes through the origin?",
+        "opts": [
+          "\\(g(t)=t+e^{2t}\\) is strictly increasing and ranges from \\(-\\infty\\) to \\(\\infty\\), so it has exactly one root",
+          "\\(g(t)=t+e^{2t}\\) is always positive, so it has no roots",
+          "\\(g(t)=t+e^{2t}\\) is a quadratic with two real roots",
+          "\\(g(t)=t+e^{2t}\\) is periodic, so it has infinitely many roots"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Analyse \\(g(t)=t+e^{2t}\\) and its derivative \\(g'(t)\\).",
+        "solution": "Let \\(g(t)=t+e^{2t}\\). Then \\(g'(t)=1+2e^{2t}>0\\) for all \\(t\\) (strictly increasing). As \\(t\\to-\\infty\\), \\(g\\to-\\infty\\); as \\(t\\to\\infty\\), \\(g\\to\\infty\\). By the IVT there is exactly one root.",
+        "solutionSteps": [
+          {
+            "explanation": "Define \\(g(t)=t+e^{2t}\\). We must show \\(g(t)=0\\) has exactly one real root.",
+            "workingOut": "\\(g(t)=t+e^{2t}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate: \\(g'(t)=1+2e^{2t}\\). Since \\(e^{2t}>0\\) always, \\(g'(t)>0\\) always — \\(g\\) is strictly increasing.",
+            "workingOut": "\\(g'(t)>0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "As \\(t\\to-\\infty\\), \\(g\\to-\\infty\\); as \\(t\\to\\infty\\), \\(g\\to\\infty\\).",
+            "workingOut": "\\(g\\to\\pm\\infty\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "A continuous strictly increasing function ranging over all reals crosses zero exactly once. Hence exactly one such normal.",
+            "workingOut": "\\(\\text{exactly one }t\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "A function that is strictly increasing and ranges from negative to positive infinity crosses zero exactly once.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q14",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the curve \\( y = x e^{2x} \\):\na) Where is the function zero, positive, and negative?\nb) Find the first and second derivatives.\nc) Show that there is one stationary point, and determine its nature.\nd) Find the coordinates of the point of inflection.",
-    "a": "a) Zero at x = 0, positive for x > 0, negative for x < 0\nb) y' = (2x+1)e^(2x), y'' = (4x+4)e^(2x)\nc) (-0.5, -0.5/e), local minimum\nd) (-1, -e^(-2))",
-    "solution": "a) Since \\( e^{2x} > 0 \\) for all real \\( x \\), the sign of \\( y \\) is determined by \\( x \\):\n- \\( y = 0 \\) when \\( x = 0 \\).\n- \\( y > 0 \\) when \\( x > 0 \\).\n- \\( y < 0 \\) when \\( x < 0 \\).\n\nb) Differentiate using the product rule:\n\\( y' = 1 \\cdot e^{2x} + x(2e^{2x}) = (2x + 1)e^{2x} \\).\nDifferentiate again:\n\\( y'' = 2e^{2x} + (2x + 1)(2e^{2x}) = (4x + 4)e^{2x} \\).\n\nc) Stationary points occur when \\( y' = 0 \\):\n\\( 2x + 1 = 0 \\implies x = -0.5 \\).\nThe y-coordinate is \\( y = -0.5e^{-1} = -\\frac{1}{2e} \\).\nAt \\( x = -0.5 \\), \\( y'' = (4(-0.5) + 4)e^{-1} = 2e^{-1} > 0 \\), confirming it is a local minimum turning point.\n\nd) Inflection points occur when \\( y'' = 0 \\):\n\\( 4x + 4 = 0 \\implies x = -1 \\).\nThe coordinates are \\( (-1, -e^{-2}) \\). Since the concavity changes sign around \\( x = -1 \\) (from concave down to concave up), this is a point of inflection.",
-    "solutionSteps": [
+    "timeLimit": 220,
+    "question": "Consider the curve \\( y = x e^{2x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Product rule for derivatives; signs follow from e^{2x}>0.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Determine function signs",
-        "workingOut": "y = 0 \\implies x = 0, \\; y > 0 \\implies x > 0, \\; y < 0 \\implies x < 0"
+        "id": "y12a-5c-q14a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Where is the function zero, positive, and negative?",
+        "a": "Zero at x=0; positive for x>0; negative for x<0.",
+        "answer": "Zero at x=0; positive for x>0; negative for x<0.",
+        "hint": "Sign of y is the sign of x, since e^{2x}>0 always.",
+        "solution": "e^{2x}>0 always, so y has the sign of x. y=0 at x=0 only.",
+        "solutionSteps": [
+          {
+            "explanation": "Write \\(y=x e^{2x}\\). The factor \\(e^{2x}\\) is always positive for all real \\(x\\).",
+            "workingOut": "\\(e^{2x}>0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Therefore the sign of \\(y\\) is the same as the sign of \\(x\\): zero only at \\(x=0\\), positive for \\(x>0\\), negative for \\(x<0\\).",
+            "workingOut": "\\(sign(y)=sign(x)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find first and second derivatives",
-        "workingOut": "y' = (2x+1)e^{2x}, \\; y'' = (4x+4)e^{2x}"
+        "id": "y12a-5c-q14b",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the first and second derivatives.",
+        "opts": [
+          "\\(y'=(2x+1)e^{2x},\\; y''=(4x+4)e^{2x}\\)",
+          "\\(y'=(2x-1)e^{2x},\\; y''=(4x-4)e^{2x}\\)",
+          "\\(y'=2x e^{2x},\\; y''=4x e^{2x}\\)",
+          "\\(y'=(x+1)e^{2x},\\; y''=(x+2)e^{2x}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Product rule twice.",
+        "solution": "y'=(2x+1)e^{2x}, y''=4(x+1)e^{2x}=(4x+4)e^{2x}.",
+        "solutionSteps": [
+          {
+            "explanation": "Product rule with \\(u=x\\), \\(v=e^{2x}\\): \\(u'=1\\), \\(v'=2e^{2x}\\).",
+            "workingOut": "\\(u'=1,\\; v'=2e^{2x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Then \\(y'=e^{2x}+x\\cdot 2e^{2x}=(2x+1)e^{2x}\\).",
+            "workingOut": "\\(y'=(2x+1)e^{2x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again: \\(y''=2e^{2x}+(2x+1)\\cdot 2e^{2x}=(4x+4)e^{2x}\\).",
+            "workingOut": "\\(y''=(4x+4)e^{2x}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Solve for stationary points",
-        "workingOut": "2x + 1 = 0 \\implies x = -0.5 \\implies y = -\\frac{1}{2e}"
+        "id": "y12a-5c-q14c",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Show that there is one stationary point, and determine its nature.",
+        "opts": [
+          "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local minimum",
+          "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\), local maximum",
+          "\\((0,0)\\), local minimum",
+          "\\((-1,-e^{-2})\\), local minimum"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Solve y'=0; use y'' test.",
+        "solution": "2x+1=0 ⇒ x=-1/2, y=-1/(2e). y''(-1/2)>0 ⇒ local min.",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y'=0\\). Since \\(e^{2x}\\neq 0\\), we need \\(2x+1=0\\Rightarrow x=-\\dfrac{1}{2}\\). Only one stationary point.",
+            "workingOut": "\\(x=-\\dfrac{1}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Y-value: \\(y=\\left(-\\dfrac{1}{2}\\right)e^{-1}=-\\dfrac{1}{2e}\\).",
+            "workingOut": "\\(y=-\\dfrac{1}{2e}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Second derivative test: \\(y''\\!\\left(-\\dfrac{1}{2}\\right)=\\left(-2+4\\right)e^{-1}=2e^{-1}>0\\), so it is a local minimum.",
+            "workingOut": "\\(\\text{local minimum}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Check concavity and solve for inflection point",
-        "workingOut": "y''(-0.5) > 0 \\implies \\text{local min}. \\; y'' = 0 \\implies x = -1 \\implies (-1, -e^{-2})"
+        "id": "y12a-5c-q14d",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the coordinates of the point of inflection.",
+        "opts": [
+          "\\((-1,-e^{-2})\\)",
+          "\\((-\\dfrac{1}{2},-\\dfrac{1}{2e})\\)",
+          "\\((0,0)\\)",
+          "\\((1,e^{2})\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Solve y''=0.",
+        "solution": "4x+4=0 ⇒ x=-1, y=-e^{-2}. Point (-1,-e^{-2}).",
+        "solutionSteps": [
+          {
+            "explanation": "Inflection points require \\(y''=0\\). With \\(e^{2x}\\neq 0\\), solve \\(4x+4=0\\Rightarrow x=-1\\).",
+            "workingOut": "\\(x=-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Y-value: \\(y=(-1)e^{-2}=-e^{-2}\\). The inflection point is \\((-1,-e^{-2})\\).",
+            "workingOut": "\\((-1,-e^{-2})\\)",
+            "graphData": null
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Find y' and y'' using product rule. Inflection point requires d^2y/dx^2 = 0 with a change in concavity.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q15",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the function \\( y = e^{-\\frac{1}{2}x^2} \\):\na) Show that the function is even. When is it zero, positive, or negative?\nb) Show that \\( y' = -x e^{-\\frac{1}{2}x^2} \\) and \\( y'' = (x^2 - 1)e^{-\\frac{1}{2}x^2} \\).\nc) Show that this curve has a maximum turning point at its y-intercept.\nd) Find the two points of inflection.",
-    "a": "a) Even function because f(-x) = f(x). Always positive, never zero or negative.\nb) Proof shown\nc) (0, 1), maximum turning point\nd) (-1, e^(-0.5)) and (1, e^(-0.5))",
-    "solution": "a) Let \\( f(x) = e^{-\\frac{1}{2}x^2} \\). Then \\( f(-x) = e^{-\\frac{1}{2}(-x)^2} = e^{-\\frac{1}{2}x^2} = f(x) \\), so it is even.\nSince exponential functions are always positive, \\( y > 0 \\) for all \\( x \\) (it is never zero or negative).\n\nb) Differentiating using the chain rule:\n\\( y' = -x e^{-\\frac{1}{2}x^2} \\).\nDifferentiate again using the product rule:\n\\( y'' = -1 \\cdot e^{-\\frac{1}{2}x^2} + (-x)(-x e^{-\\frac{1}{2}x^2}) = e^{-\\frac{1}{2}x^2}(x^2 - 1) \\).\n\nc) Stationary points: \\( y' = 0 \\implies -x = 0 \\implies x = 0 \\).\nWhen \\( x = 0 \\), \\( y = e^0 = 1 \\).\nAt \\( x = 0 \\), \\( y'' = (0^2 - 1)e^0 = -1 < 0 \\), confirming that \\( (0, 1) \\) is a local maximum.\n\nd) Points of inflection: \\( y'' = 0 \\implies x^2 - 1 = 0 \\implies x = \\pm 1 \\).\nWhen \\( x = \\pm 1 \\), \\( y = e^{-0.5} = \\frac{1}{\\sqrt{e}} \\).\nSo the inflection points are \\( (-1, e^{-0.5}) \\) and \\( (1, e^{-0.5}) \\).",
-    "solutionSteps": [
+    "timeLimit": 220,
+    "question": "Consider the function \\( y = e^{-\\frac{1}{2}x^{2}} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Even function: f(-x)=f(x). Gaussian-type shape.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Show even function property",
-        "workingOut": "f(-x) = e^{-0.5(-x)^2} = f(x) \\implies \\text{even}"
+        "id": "y12a-5c-q15a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that the function is even. When is it zero, positive, or negative?",
+        "a": "f(-x)=f(x) (even). Always positive; never zero or negative.",
+        "answer": "f(-x)=f(x) (even). Always positive; never zero or negative.",
+        "hint": "Compare f(-x) and f(x). Exponential is always positive.",
+        "solution": "f(-x)=e^{-½x²}=f(x). e^{anything}>0 so y>0 always.",
+        "solutionSteps": [
+          {
+            "explanation": "Let \\(f(x)=e^{-\\frac{1}{2}x^{2}}\\). Then \\(f(-x)=e^{-\\frac{1}{2}(-x)^{2}}=e^{-\\frac{1}{2}x^{2}}=f(x)\\), so \\(f\\) is even.",
+            "workingOut": "\\(f(-x)=f(x)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "The exponential function is always positive, so \\(y>0\\) for all real \\(x\\). It is never zero or negative.",
+            "workingOut": "\\(y>0\\;\\forall x\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find derivatives",
-        "workingOut": "y' = -xe^{-0.5x^2}, \\; y'' = (x^2-1)e^{-0.5x^2}"
+        "id": "y12a-5c-q15b",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that \\(y'=-x e^{-\\frac{1}{2}x^{2}}\\) and \\(y''=(x^{2}-1)e^{-\\frac{1}{2}x^{2}}\\).",
+        "a": "Chain rule then product rule as required.",
+        "answer": "Chain rule then product rule as required.",
+        "hint": "Differentiate carefully with product/chain rules.",
+        "solution": "Chain: y'=-x e^{-½x²}. Product: y''=-e^{-½x²}+x²e^{-½x²}=(x²-1)e^{-½x²}.",
+        "solutionSteps": [
+          {
+            "explanation": "Chain rule with \\(u=-\\dfrac{1}{2}x^{2}\\): \\(u'=-x\\). Hence \\(y'=e^{u}u'=-x e^{-\\frac{1}{2}x^{2}}\\).",
+            "workingOut": "\\(y'=-x e^{-\\frac{1}{2}x^{2}}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again with the product rule on \\(-x\\cdot e^{-\\frac{1}{2}x^{2}}\\):",
+            "workingOut": "\\(y''=-e^{-\\frac{1}{2}x^{2}}+x^{2}e^{-\\frac{1}{2}x^{2}}=(x^{2}-1)e^{-\\frac{1}{2}x^{2}}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find and verify stationary point",
-        "workingOut": "y' = 0 \\implies x = 0 \\implies y = 1. \\; y''(0) = -1 < 0 \\implies \\text{maximum}"
+        "id": "y12a-5c-q15c",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that this curve has a maximum turning point at its y-intercept.",
+        "a": "y'=0 at x=0 only; y(0)=1; y''(0)=-1<0 ⇒ local max at (0,1).",
+        "answer": "y'=0 at x=0 only; y(0)=1; y''(0)=-1<0 ⇒ local max at (0,1).",
+        "hint": "Solve y'=0 and use second derivative test.",
+        "solution": "y'=0 ⇒ x=0, y=1. y''(0)=-1<0: maximum at y-intercept (0,1).",
+        "solutionSteps": [
+          {
+            "explanation": "Stationary points: \\(y'=0\\Rightarrow -x=0\\Rightarrow x=0\\) (since the exponential never vanishes).",
+            "workingOut": "\\(x=0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(y=e^{0}=1\\). The point is the y-intercept \\((0,1)\\).",
+            "workingOut": "\\((0,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Second derivative test: \\(y''(0)=(0-1)e^{0}=-1<0\\), confirming a local maximum.",
+            "workingOut": "\\(\\text{local maximum}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Solve for inflection points",
-        "workingOut": "x^2 - 1 = 0 \\implies x = \\pm 1 \\implies y = e^{-0.5}"
+        "id": "y12a-5c-q15d",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Find the two points of inflection.",
+        "opts": [
+          "\\((-1,e^{-1/2})\\) and \\((1,e^{-1/2})\\)",
+          "\\((-1,e^{-1})\\) and \\((1,e^{-1})\\)",
+          "\\((0,1)\\) only",
+          "\\((-2,e^{-2})\\) and \\((2,e^{-2})\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Solve y''=0: x²-1=0.",
+        "solution": "x=±1, y=e^{-1/2}. Points (±1, e^{-1/2}).",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y''=0\\): \\((x^{2}-1)e^{-\\frac{1}{2}x^{2}}=0\\Rightarrow x^{2}-1=0\\Rightarrow x=\\pm 1\\).",
+            "workingOut": "\\(x=\\pm 1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At both points, \\(y=e^{-\\frac{1}{2}}=e^{-1/2}\\). Inflection points: \\(\\bigl(\\pm 1,\\, e^{-1/2}\\bigr)\\).",
+            "workingOut": "\\((\\pm 1, e^{-1/2})\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Sketch: even bell-shaped curve, maximum at \\((0,1)\\), inflection points marked.",
+            "workingOut": "\\((\\pm 1, e^{-1/2})\\)",
+            "graphData": {
+              "jsxGraph": {
+                "boundingbox": [
+                  -3.2,
+                  1.25,
+                  3.2,
+                  -0.15
+                ],
+                "width": 380,
+                "height": 150,
+                "axis": false,
+                "showCopyright": false,
+                "showNavigation": false,
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[3,0]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('arrow', [[0,-0.1],[0,1.2]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('text', [2.85,-0.12], 'x', {fontSize:12, color:'#64748b'});\nboard.create('text', [-0.28,1.12], 'y', {fontSize:12, color:'#64748b'});\nboard.create('functiongraph', [function(x){return Math.exp(-0.5*x*x);}, -3, 3], {strokeColor:'#6366f1', strokeWidth:2.4});\nboard.create('point', [0,1], {name:'max', size:3.5, fillColor:'#f43f5e', strokeColor:'#f43f5e', label:{offset:[8,6]}});\nboard.create('point', [1, Math.exp(-0.5)], {name:'', size:3, fillColor:'#f59e0b', strokeColor:'#f59e0b'});\nboard.create('point', [-1, Math.exp(-0.5)], {name:'inflection', size:3, fillColor:'#f59e0b', strokeColor:'#f59e0b', label:{offset:[-52,6]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Verify even function by substituting -x for x. Inflection points occur where y'' = 0.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q16",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Consider the function \\( y = (1 - x)e^x \\):\na) Find the zero of the function and draw up a table of signs.\nb) Show that \\( y' = -x e^x \\) and \\( y'' = -(x + 1)e^x \\).\nc) Show that the curve has a maximum turning point at its y-intercept, and a point of inflection at \\( (-1, 2e^{-1}) \\).\nd) Sketch the curve and state its range.",
-    "a": "a) Zero at x = 1. Positive for x < 1, negative for x > 1.\nb) Proof shown.\nc) Max at (0, 1), Inflection at (-1, 2e^(-1)).\nd) Range: y <= 1",
-    "solution": "a) \\( y = (1 - x)e^x = 0 \\implies 1 - x = 0 \\implies x = 1 \\).\nSince \\( e^x > 0 \\):\n- For \\( x < 1 \\), \\( 1 - x > 0 \\implies y > 0 \\).\n- For \\( x > 1 \\), \\( 1 - x < 0 \\implies y < 0 \\).\n\nb) Differentiating using product rule:\n\\( y' = -1(e^x) + (1 - x)e^x = -x e^x \\).\nDifferentiate again:\n\\( y'' = -1(e^x) + (-x)e^x = -(x + 1)e^x \\).\n\nc) Stationary points: \\( y' = 0 \\implies -x = 0 \\implies x = 0 \\).\nWhen \\( x = 0 \\), \\( y = (1-0)e^0 = 1 \\). (y-intercept is \\( (0, 1) \\)).\nAt \\( x = 0 \\), \\( y'' = -(0 + 1)e^0 = -1 < 0 \\), so it is a local maximum.\nInflection points: \\( y'' = 0 \\implies x + 1 = 0 \\implies x = -1 \\).\nWhen \\( x = -1 \\), \\( y = (1 - (-1))e^{-1} = 2e^{-1} \\).\nSo the inflection point is \\( (-1, 2e^{-1}) \\).\n\nd) Since the local maximum is the absolute maximum and as \\( x \\to -\\infty \\), \\( y \\to 0 \\), and as \\( x \\to \\infty \\), \\( y \\to -\\infty \\):\nThe range of the function is \\( y \\leq 1 \\).",
-    "solutionSteps": [
+    "timeLimit": 220,
+    "question": "Consider the function \\( y = (1-x)e^{x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Product rule; maximum at y-intercept; range from absolute max.",
+    "requiresManualGrading": true,
+    "subQuestions": [
       {
-        "explanation": "Find zero and analyze signs",
-        "workingOut": "y = 0 \\implies x = 1"
+        "id": "y12a-5c-q16a",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Find the zero of the function and draw up a table of signs.",
+        "a": "Zero at x=1. y>0 for x<1; y<0 for x>1.",
+        "answer": "Zero at x=1. y>0 for x<1; y<0 for x>1.",
+        "hint": "Solve (1-x)e^x=0; e^x>0 always.",
+        "solution": "x=1 is the only zero. Sign of y = sign of (1-x).",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y=(1-x)e^{x}=0\\). Since \\(e^{x}\\neq 0\\), we need \\(1-x=0\\Rightarrow x=1\\).",
+            "workingOut": "\\(x=1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Because \\(e^{x}>0\\) always, the sign of \\(y\\) matches the sign of \\((1-x)\\): positive for \\(x<1\\), negative for \\(x>1\\).",
+            "workingOut": "\\(y>0\\ (x<1);\\ y<0\\ (x>1)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find derivatives",
-        "workingOut": "y' = -xe^x, \\; y'' = -(x+1)e^x"
+        "id": "y12a-5c-q16b",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that \\(y'=-x e^{x}\\) and \\(y''=-(x+1)e^{x}\\).",
+        "a": "Product rule twice.",
+        "answer": "Product rule twice.",
+        "hint": "u=1-x, v=e^x.",
+        "solution": "y'=-e^x+(1-x)e^x=-x e^x. y''=-e^x-x e^x=-(x+1)e^x.",
+        "solutionSteps": [
+          {
+            "explanation": "Product rule with \\(u=1-x\\), \\(v=e^{x}\\): \\(y'=-e^{x}+(1-x)e^{x}=-x e^{x}\\).",
+            "workingOut": "\\(y'=-x e^{x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again: \\(y''=-e^{x}-x e^{x}=-(x+1)e^{x}\\).",
+            "workingOut": "\\(y''=-(x+1)e^{x}\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Verify stationary and inflection points",
-        "workingOut": "y' = 0 \\implies x = 0. \\; y'' = 0 \\implies x = -1"
+        "id": "y12a-5c-q16c",
+        "difficulty": "medium",
+        "type": "teacher_review",
+        "question": "Show that the curve has a maximum turning point at its y-intercept, and a point of inflection at \\((-1,2e^{-1})\\).",
+        "a": "Max at (0,1); inflection at (-1, 2/e).",
+        "answer": "Max at (0,1); inflection at (-1, 2/e).",
+        "hint": "y'=0 at x=0; y''=0 at x=-1.",
+        "solution": "y'=0⇒x=0, y=1, y''=-1<0 max. y''=0⇒x=-1, y=2e^{-1}.",
+        "solutionSteps": [
+          {
+            "explanation": "Stationary: \\(y'=0\\Rightarrow -x=0\\Rightarrow x=0\\). Then \\(y=(1-0)e^{0}=1\\). Y-intercept is \\((0,1)\\).",
+            "workingOut": "\\((0,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Second derivative test: \\(y''(0)=-(0+1)e^{0}=-1<0\\) ⇒ local maximum at the y-intercept.",
+            "workingOut": "\\(\\text{local max}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Inflection: \\(y''=0\\Rightarrow x+1=0\\Rightarrow x=-1\\). Then \\(y=(1-(-1))e^{-1}=2e^{-1}\\).",
+            "workingOut": "\\((-1,2e^{-1})\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "State the range of the function",
-        "workingOut": "\\text{Maximum y-value is 1} \\implies y \\leq 1"
+        "id": "y12a-5c-q16d",
+        "difficulty": "medium",
+        "type": "multiple_choice",
+        "question": "Sketch the curve and state its range.",
+        "opts": [
+          "\\(y\\leq 1\\)",
+          "\\(y\\geq 1\\)",
+          "\\(y\\geq 0\\)",
+          "\\(y\\in\\mathbb{R}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Absolute maximum is 1; y→−∞ as x→∞.",
+        "solution": "Local max at (0,1) is absolute max. Range: y≤1.",
+        "solutionSteps": [
+          {
+            "explanation": "The absolute maximum value is 1 (at the y-intercept). As \\(x\\to\\infty\\), \\(y\\to-\\infty\\); as \\(x\\to-\\infty\\), \\(y\\to 0\\).",
+            "workingOut": "\\(y\\leq 1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Sketch: max at \\((0,1)\\), zero at \\((1,0)\\), inflection at \\((-1,2e^{-1})\\). Range: \\(y\\leq 1\\).",
+            "workingOut": "\\(y\\leq 1\\)",
+            "graphData": {
+              "jsxGraph": {
+                "boundingbox": [
+                  -3,
+                  1.8,
+                  2.5,
+                  -3.2
+                ],
+                "width": 360,
+                "height": 200,
+                "axis": false,
+                "showCopyright": false,
+                "showNavigation": false,
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.8,0],[2.3,0]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('arrow', [[0,-3],[0,1.7]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('text', [2.15,-0.2], 'x', {fontSize:12, color:'#64748b'});\nboard.create('text', [-0.28,1.55], 'y', {fontSize:12, color:'#64748b'});\nboard.create('functiongraph', [function(x){return (1-x)*Math.exp(x);}, -2.8, 2], {strokeColor:'#6366f1', strokeWidth:2.4});\nboard.create('point', [0,1], {name:'max', size:3.5, fillColor:'#f43f5e', strokeColor:'#f43f5e', label:{offset:[8,6]}});\nboard.create('point', [1,0], {name:'(1,0)', size:3, fillColor:'#10b981', strokeColor:'#10b981', label:{offset:[6,-12]}});\nboard.create('point', [-1, 2/Math.E], {name:'inflection', size:3, fillColor:'#f59e0b', strokeColor:'#f59e0b', label:{offset:[-48,8]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Determine the maximum value from the stationary point analysis, then determine the vertical limits to state the range.",
-    "graphData": null
+    ]
   },
   {
+    "topicId": "y12a-5C",
+    "c": "5C",
+    "t": "Applications of differentiation",
+    "graphData": null,
+    "isNew": true,
     "id": "y12a-5c-q17",
-    "type": "teacher_review",
+    "type": "subquestions",
     "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "Consider \\( y = \\cosh x = \\frac{e^x + e^{-x}}{2} \\):\na) Show that \\( y = \\cosh x \\) is an even function, and is always positive.\nb) Find \\( \\frac{dy}{dx} \\) and show that there is a stationary point at the y-intercept.\nc) Show that the function is always concave up.\nd) Sketch the curve.",
-    "a": "a) Even function since f(-x) = f(x). Positive because e^x > 0 and e^-x > 0.\nb) dy/dx = (e^x - e^(-x))/2. Stationary point at (0, 1).\nc) d^2y/dx^2 = cosh x > 0.\nd) U-shaped curve passing through (0,1).",
-    "solution": "a) Let \\( f(x) = \\frac{e^x + e^{-x}}{2} \\).\n\\( f(-x) = \\frac{e^{-x} + e^{-(-x)}}{2} = \\frac{e^{-x} + e^x}{2} = f(x) \\). Thus, it is even.\nSince \\( e^x > 0 \\) and \\( e^{-x} > 0 \\) for all real x, their sum is positive. Therefore, \\( y > 0 \\) always.\n\nb) Differentiating:\n\\( y' = \\frac{e^x - e^{-x}}{2} \\).\nStationary points occur when \\( y' = 0 \\implies e^x - e^{-x} = 0 \\implies e^{2x} = 1 \\implies x = 0 \\).\nThe y-intercept is at \\( x = 0 \\), giving the stationary point \\( (0, 1) \\).\n\nc) Differentiating again:\n\\( y'' = \\frac{e^x + e^{-x}}{2} = \\cosh x \\).\nSince \\( y = \\cosh x > 0 \\) for all x, \\( y'' > 0 \\) everywhere. Thus, the function is always concave up.\n\nd) The curve is a symmetric U-shape (catenary) passing through \\( (0, 1) \\) and opening upwards.",
-    "solutionSteps": [
+    "timeLimit": 220,
+    "question": "Consider \\( y = \\cosh x = \\dfrac{e^{x}+e^{-x}}{2} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Even function; \\(y'=\\sinh x\\); \\(y''=\\cosh x>0\\).",
+    "requiresManualGrading": false,
+    "subQuestions": [
       {
-        "explanation": "Show even function and positive properties",
-        "workingOut": "f(-x) = f(x) \\text{ and } e^x + e^{-x} > 0"
+        "id": "y12a-5c-q17a",
+        "difficulty": "hard",
+        "type": "multiple_choice",
+        "question": "Which statement about \\(y=\\cosh x=\\dfrac{e^{x}+e^{-x}}{2}\\) is correct?",
+        "opts": [
+          "\\(\\cosh x\\) is even and always positive",
+          "\\(\\cosh x\\) is odd and always positive",
+          "\\(\\cosh x\\) is even and can be negative",
+          "\\(\\cosh x\\) is odd and can be negative"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Check \\(f(-x)\\) and the sign of \\(e^{x}+e^{-x}\\).",
+        "solution": "\\(f(-x)=\\dfrac{e^{-x}+e^{x}}{2}=f(x)\\) (even). Since \\(e^{x}>0\\) and \\(e^{-x}>0\\), their average is always positive.",
+        "solutionSteps": [
+          {
+            "explanation": "Let \\(f(x)=\\dfrac{e^{x}+e^{-x}}{2}\\). Then \\(f(-x)=\\dfrac{e^{-x}+e^{x}}{2}=f(x)\\), so \\(\\cosh x\\) is even.",
+            "workingOut": "\\(\\cosh(-x)=\\cosh x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Both \\(e^{x}>0\\) and \\(e^{-x}>0\\) for all real \\(x\\), so their average is always positive: \\(\\cosh x>0\\).",
+            "workingOut": "\\(\\cosh x>0\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Find derivative and stationary point",
-        "workingOut": "y' = \\frac{e^x - e^{-x}}{2} = 0 \\implies x = 0 \\implies (0,1)"
+        "id": "y12a-5c-q17b",
+        "difficulty": "hard",
+        "type": "multiple_choice",
+        "question": "Find \\(\\dfrac{dy}{dx}\\) for \\(y=\\cosh x\\), and the stationary point at the y-intercept.",
+        "opts": [
+          "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}=\\sinh x\\); stationary point \\((0,1)\\)",
+          "\\(y'=\\dfrac{e^{x}+e^{-x}}{2}=\\cosh x\\); stationary point \\((0,1)\\)",
+          "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\); stationary point \\((1,0)\\)",
+          "\\(y'=e^{x}-e^{-x}\\); stationary point \\((0,1)\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Differentiate term by term. Set \\(y'=0\\) to find stationary points.",
+        "solution": "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}=\\sinh x\\). Set \\(y'=0\\): \\(e^{x}=e^{-x}\\Rightarrow x=0\\), \\(y=1\\). Stationary point \\((0,1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate term by term: \\(\\dfrac{d}{dx}\\!\\left(\\dfrac{e^{x}}{2}\\right)=\\dfrac{e^{x}}{2}\\) and \\(\\dfrac{d}{dx}\\!\\left(\\dfrac{e^{-x}}{2}\\right)=-\\dfrac{e^{-x}}{2}\\).",
+            "workingOut": "\\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "By definition this is \\(\\sinh x\\). So \\(y'=\\sinh x\\).",
+            "workingOut": "\\(y'=\\sinh x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set \\(y'=0\\): \\(e^{x}-e^{-x}=0\\Rightarrow e^{2x}=1\\Rightarrow x=0\\).",
+            "workingOut": "\\(x=0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(y=\\dfrac{1+1}{2}=1\\). Stationary point is the y-intercept \\((0,1)\\).",
+            "workingOut": "\\((0,1)\\)",
+            "graphData": null
+          }
+        ]
       },
       {
-        "explanation": "Deduce concavity from second derivative",
-        "workingOut": "y'' = \\cosh x > 0 \\implies \\text{always concave up}"
+        "id": "y12a-5c-q17c",
+        "difficulty": "hard",
+        "type": "multiple_choice",
+        "question": "Which statement correctly describes the concavity of \\(y=\\cosh x\\)?",
+        "opts": [
+          "\\(y''=\\cosh x>0\\) for all \\(x\\), so the curve is always concave up",
+          "\\(y''=\\sinh x\\), which changes sign, so concavity changes",
+          "\\(y''=-\\cosh x<0\\) for all \\(x\\), so always concave down",
+          "\\(y''=0\\) for all \\(x\\), so the curve is a straight line"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Differentiate \\(y'=\\sinh x\\) again. Recall that \\(\\cosh x>0\\) always.",
+        "solution": "\\(y''=\\dfrac{e^{x}+e^{-x}}{2}=\\cosh x>0\\) for all \\(x\\). Therefore the curve is always concave up.",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate \\(y'=\\dfrac{e^{x}-e^{-x}}{2}\\) again: \\(y''=\\dfrac{e^{x}+e^{-x}}{2}=\\cosh x\\).",
+            "workingOut": "\\(y''=\\cosh x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "From part (a), \\(\\cosh x>0\\) for all \\(x\\). Hence \\(y''>0\\) everywhere: the curve is always concave up.",
+            "workingOut": "\\(y''>0\\;\\forall x\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y12a-5c-q17d",
+        "difficulty": "hard",
+        "type": "multiple_choice",
+        "question": "Which description matches the sketch of \\(y=\\cosh x\\)?",
+        "opts": [
+          "Symmetric U-shape (catenary) with minimum at \\((0,1)\\), range \\(y\\geq 1\\)",
+          "S-shape through the origin, range all real \\(y\\)",
+          "Bell curve with maximum at \\((0,1)\\), range \\(0<y\\leq 1\\)",
+          "Straight line through \\((0,1)\\) with gradient 1"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Even, minimum at the y-intercept, always concave up.",
+        "solution": "Even symmetry, local (and absolute) minimum at \\((0,1)\\), always concave up: a catenary (U-shape) with range \\(y\\geq 1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Combining earlier results: even symmetry, absolute minimum at \\((0,1)\\), always concave up, range \\(y\\geq 1\\).",
+            "workingOut": "\\(y\\geq 1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Sketch the catenary (U-shape) through \\((0,1)\\), symmetric about the y-axis.",
+            "workingOut": "\\(y=\\cosh x\\)",
+            "graphData": {
+              "jsxGraph": {
+                "boundingbox": [
+                  -2.8,
+                  4.2,
+                  2.8,
+                  -0.3
+                ],
+                "width": 360,
+                "height": 180,
+                "axis": false,
+                "showCopyright": false,
+                "showNavigation": false,
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.6,0],[2.6,0]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('arrow', [[0,-0.2],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('text', [2.45,-0.18], 'x', {fontSize:12, color:'#64748b'});\nboard.create('text', [-0.28,3.85], 'y', {fontSize:12, color:'#64748b'});\nboard.create('functiongraph', [function(x){return 0.5*(Math.exp(x)+Math.exp(-x));}, -2.5, 2.5], {strokeColor:'#6366f1', strokeWidth:2.4});\nboard.create('point', [0,1], {name:'(0,1)', size:3.5, fillColor:'#f43f5e', strokeColor:'#f43f5e', label:{offset:[8,6]}});\nboard.create('text', [1.1, 2.0], 'y=cosh x', {fontSize:11, color:'#6366f1'});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
       }
-    ],
-    "t": "Applications of differentiation",
-    "hint": "Verify that the second derivative is the original function cosh x, which you proved is always positive.",
-    "graphData": null
+    ]
   },
   {
-    "id": "y12a-5c-q18",
-    "type": "teacher_review",
-    "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "Consider the curve \\( y = x^2 e^{-x} \\):\na) Show that \\( y' = x(2 - x)e^{-x} \\) and \\( y'' = (2 - 4x + x^2)e^{-x} \\).\nb) Show that the function has a minimum turning point at the origin and a maximum turning point at \\( (2, 4e^{-2}) \\).\nc) Show that \\( y'' = 0 \\) at \\( x = 2 - \\sqrt{2} \\) and \\( x = 2 + \\sqrt{2} \\), and show that there are inflection points at these values.\nd) Sketch the curve and state its range.",
-    "a": "a) Proof shown.\nb) Min at (0,0), Max at (2, 4e^(-2)).\nc) Proof shown.\nd) Range: y >= 0",
-    "solution": "a) Using the product rule on \\( y = x^2 e^{-x} \\):\n\\( y' = 2x e^{-x} + x^2(-e^{-x}) = (2x - x^2)e^{-x} = x(2 - x)e^{-x} \\).\n\nDifferentiate again:\n\\( y'' = (2 - 2x)e^{-x} + (2x - x^2)(-e^{-x}) = (2 - 2x - 2x + x^2)e^{-x} = (2 - 4x + x^2)e^{-x} \\).\n\nb) Stationary points: \\( y' = 0 \\implies x = 0 \\) or \\( x = 2 \\).\n- At \\( x = 0 \\): \\( y = 0 \\). Point is \\( (0, 0) \\).\n\\( y''(0) = (2 - 0)e^0 = 2 > 0 \\), so it is a minimum turning point.\n- At \\( x = 2 \\): \\( y = 4e^{-2} \\). Point is \\( (2, 4e^{-2}) \\).\n\\( y''(2) = (2 - 8 + 4)e^{-2} = -2e^{-2} < 0 \\), so it is a maximum turning point.\n\nc) Solve \\( y'' = 0 \\implies x^2 - 4x + 2 = 0 \\).\nUsing the quadratic formula:\n\\( x = \\frac{4 \\pm \\sqrt{(-4)^2 - 4(1)(2)}}{2} = \\frac{4 \\pm \\sqrt{8}}{2} = 2 \\pm \\sqrt{2} \\).\nSince \\( y'' \\) changes sign across these two roots, they represent points of inflection.\n\nd) The curve starts at \\( y \\to \\infty \\) as \\( x \\to -\\infty \\), goes down to a local minimum at \\( (0, 0) \\), rises to a local maximum at \\( (2, 4e^{-2}) \\), and decays asymptotically to \\( y = 0 \\) as \\( x \\to \\infty \\).\nSince \\( y \\geq 0 \\) for all real x, the range is \\( y \\geq 0 \\).",
-    "solutionSteps": [
-      {
-        "explanation": "Find derivatives using product rule",
-        "workingOut": "y' = x(2-x)e^{-x}, \\; y'' = (x^2-4x+2)e^{-x}"
-      },
-      {
-        "explanation": "Verify turning points",
-        "workingOut": "y'(0)=0, y''(0)>0 \\implies \\text{min}. \\; y'(2)=0, y''(2)<0 \\implies \\text{max}"
-      },
-      {
-        "explanation": "Solve for second derivative roots",
-        "workingOut": "x^2 - 4x + 2 = 0 \\implies x = 2 \\pm \\sqrt{2}"
-      },
-      {
-        "explanation": "Find the range of the function",
-        "workingOut": "y = x^2 e^{-x} \\geq 0 \\implies \\text{Range: } y \\geq 0"
-      }
-    ],
+    "topicId": "y12a-5C",
+    "c": "5C",
     "t": "Applications of differentiation",
-    "hint": "Substitute the stationary points into the second derivative to verify concavity. The absolute minimum is 0, so the range is all non-negative numbers.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "id": "y12a-5c-q18",
+    "type": "subquestions",
+    "difficulty": "hard",
+    "timeLimit": 240,
+    "question": "Consider the curve \\( y = x^{2} e^{-x} \\).",
+    "a": "See sub-questions.",
+    "answer": "See sub-questions.",
+    "solution": "See sub-question solutions.",
+    "solutionSteps": [],
+    "hint": "Product rule carefully; factor e^{-x}>0 when solving.",
+    "requiresManualGrading": true,
+    "subQuestions": [
+      {
+        "id": "y12a-5c-q18a",
+        "difficulty": "hard",
+        "type": "teacher_review",
+        "question": "Show that \\(y'=x(2-x)e^{-x}\\) and \\(y''=(x^{2}-4x+2)e^{-x}\\).",
+        "a": "Product rule twice as required.",
+        "answer": "Product rule twice as required.",
+        "hint": "u=x², v=e^{-x}.",
+        "solution": "y'=(2x-x²)e^{-x}=x(2-x)e^{-x}. y''=(x²-4x+2)e^{-x}.",
+        "solutionSteps": [
+          {
+            "explanation": "Product rule on \\(y=x^{2}e^{-x}\\) with \\(u=x^{2}\\), \\(v=e^{-x}\\): \\(u'=2x\\), \\(v'=-e^{-x}\\).",
+            "workingOut": "\\(u'=2x,\\; v'=-e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Then \\(y'=2x e^{-x}+x^{2}(-e^{-x})=(2x-x^{2})e^{-x}=x(2-x)e^{-x}\\).",
+            "workingOut": "\\(y'=x(2-x)e^{-x}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Differentiate again (product of \\((2x-x^{2})\\) and \\(e^{-x}\\)):",
+            "workingOut": "\\(y''=(2-2x)e^{-x}-(2x-x^{2})e^{-x}=(x^{2}-4x+2)e^{-x}\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y12a-5c-q18b",
+        "difficulty": "hard",
+        "type": "teacher_review",
+        "question": "Show that the function has a minimum turning point at the origin and a maximum turning point at \\((2,4e^{-2})\\).",
+        "a": "y'=0 at x=0,2. y''(0)>0 min; y''(2)<0 max.",
+        "answer": "y'=0 at x=0,2. y''(0)>0 min; y''(2)<0 max.",
+        "hint": "Second derivative test at each critical point.",
+        "solution": "At 0: y=0, y''=2>0 min. At 2: y=4e^{-2}, y''=-2e^{-2}<0 max.",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y'=0\\). Since \\(e^{-x}\\neq 0\\), either \\(x=0\\) or \\(x=2\\).",
+            "workingOut": "\\(x=0\\text{ or }x=2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=0\\): \\(y=0\\). And \\(y''(0)=(0-0+2)e^{0}=2>0\\) ⇒ local minimum at the origin.",
+            "workingOut": "\\(\\text{min at }(0,0)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "At \\(x=2\\): \\(y=4e^{-2}\\). And \\(y''(2)=(4-8+2)e^{-2}=-2e^{-2}<0\\) ⇒ local maximum at \\((2,4e^{-2})\\).",
+            "workingOut": "\\(\\text{max at }(2,4e^{-2})\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y12a-5c-q18c",
+        "difficulty": "hard",
+        "type": "teacher_review",
+        "question": "Show that \\(y''=0\\) at \\(x=2\\pm\\sqrt{2}\\), and that there are inflection points at these values.",
+        "a": "x²-4x+2=0 ⇒ x=2±√2. Sign of y'' changes at each root.",
+        "answer": "x²-4x+2=0 ⇒ x=2±√2. Sign of y'' changes at each root.",
+        "hint": "Quadratic formula; check concavity change.",
+        "solution": "Discriminant 8; roots 2±√2. y'' changes sign ⇒ inflection points.",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(y''=0\\): \\(x^{2}-4x+2=0\\) (since \\(e^{-x}\\neq 0\\)).",
+            "workingOut": "\\(x^{2}-4x+2=0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Quadratic formula: \\(x=\\dfrac{4\\pm\\sqrt{16-8}}{2}=\\dfrac{4\\pm\\sqrt{8}}{2}=2\\pm\\sqrt{2}\\).",
+            "workingOut": "\\(x=2\\pm\\sqrt{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "These are simple roots of \\(y''\\), so the sign of \\(y''\\) changes at each: both are points of inflection.",
+            "workingOut": "\\(\\text{inflection points}\\)",
+            "graphData": null
+          }
+        ]
+      },
+      {
+        "id": "y12a-5c-q18d",
+        "difficulty": "hard",
+        "type": "multiple_choice",
+        "question": "Sketch the curve and state its range.",
+        "opts": [
+          "\\(y\\geq 0\\)",
+          "\\(y\\leq 0\\)",
+          "\\(y\\geq 4e^{-2}\\)",
+          "\\(y\\in\\mathbb{R}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "x²≥0 and e^{-x}>0 always.",
+        "solution": "y=x²e^{-x}≥0 for all x. Range: y≥0.",
+        "solutionSteps": [
+          {
+            "explanation": "Since \\(x^{2}\\geq 0\\) and \\(e^{-x}>0\\) for all real \\(x\\), we have \\(y=x^{2}e^{-x}\\geq 0\\) always. The minimum value is 0.",
+            "workingOut": "\\(y\\geq 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Sketch: local min at origin, local max at \\((2,4e^{-2})\\), then decaying toward 0 as \\(x\\to\\infty\\). Range: \\(y\\geq 0\\).",
+            "workingOut": "\\(y\\geq 0\\)",
+            "graphData": {
+              "jsxGraph": {
+                "boundingbox": [
+                  -0.8,
+                  0.7,
+                  7.5,
+                  -0.15
+                ],
+                "width": 400,
+                "height": 150,
+                "axis": false,
+                "showCopyright": false,
+                "showNavigation": false,
+                "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.6,0],[7.3,0]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('arrow', [[0,-0.1],[0,0.65]], {strokeColor:'#94a3b8', strokeWidth:1.4});\nboard.create('text', [7.1,-0.08], 'x', {fontSize:12, color:'#64748b'});\nboard.create('text', [-0.25,0.6], 'y', {fontSize:12, color:'#64748b'});\nboard.create('functiongraph', [function(x){return x*x*Math.exp(-x);}, -0.5, 7.2], {strokeColor:'#6366f1', strokeWidth:2.4});\nboard.create('point', [0,0], {name:'min', size:3.5, fillColor:'#f43f5e', strokeColor:'#f43f5e', label:{offset:[8,6]}});\nboard.create('point', [2, 4*Math.exp(-2)], {name:'max', size:3.5, fillColor:'#10b981', strokeColor:'#10b981', label:{offset:[6,6]}});\nboard.unsuspendUpdate();"
+              }
+            }
+          }
+        ]
+      }
+    ]
   }
 ];

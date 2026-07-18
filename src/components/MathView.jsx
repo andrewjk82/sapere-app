@@ -219,6 +219,7 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     };
   }, [content, rawGraphData]);
 
+  const hasText = lines.some((l) => String(l || '').trim().length > 0);
   const combinedStyle = {
     fontFamily: '"Lora", "Georgia", "Times New Roman", serif',
     letterSpacing: '0',
@@ -226,36 +227,67 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
     fontWeight: 'inherit',
     ...style,
   };
+  // minHeight on empty text (graph-only MathView) left a tall blank band above
+  // the figure in solution steps. Keep layout props on the outer shell only.
+  const {
+    minHeight: outerMinHeight,
+    height: outerHeight,
+    maxHeight: outerMaxHeight,
+    width: outerWidth,
+    maxWidth: outerMaxWidth,
+    margin: outerMargin,
+    marginTop: outerMarginTop,
+    marginBottom: outerMarginBottom,
+    alignSelf: outerAlignSelf,
+    flex: outerFlex,
+    ...textStyle
+  } = combinedStyle;
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: outerMinHeight,
+      height: outerHeight,
+      maxHeight: outerMaxHeight,
+      width: outerWidth,
+      maxWidth: outerMaxWidth,
+      margin: outerMargin,
+      marginTop: outerMarginTop,
+      marginBottom: outerMarginBottom,
+      alignSelf: outerAlignSelf,
+      flex: outerFlex,
+    }}>
       {/* Question text first, then the figure — questions refer to the
           diagram as "below". */}
-      <div ref={containerRef} style={combinedStyle}>
-        {lines.map((line, idx) => {
-          const isSecondLine = idx === 1;
-          const hasDisplayMath = /\\+\[|\$\$/.test(String(line));
-          const isPureMath = /^\s*(?:\$\$|\\+\[|\$|\\+\()[\s\S]+?(?:\$\$|\\+\]|\$|\\+\))[\s,;:?.!]*$/.test(String(line).trim());
-          const isCentered = idx > 0 && (hasDisplayMath || isPureMath);
-          return (
-            <div
-              key={idx}
-              className={`math-view-line-${idx}`}
-              style={{
-                textAlign: isCentered ? 'center' : 'inherit',
-                width: '100%',
-                display: 'block',
-                marginTop: idx > 0 ? '8px' : '0px'
-              }}
-            />
-          );
-        })}
-      </div>
+      {hasText && (
+        <div ref={containerRef} style={textStyle}>
+          {lines.map((line, idx) => {
+            const isSecondLine = idx === 1;
+            const hasDisplayMath = /\\+\[|\$\$/.test(String(line));
+            const isPureMath = /^\s*(?:\$\$|\\+\[|\$|\\+\()[\s\S]+?(?:\$\$|\\+\]|\$|\\+\))[\s,;:?.!]*$/.test(String(line).trim());
+            const isCentered = idx > 0 && (hasDisplayMath || isPureMath);
+            return (
+              <div
+                key={idx}
+                className={`math-view-line-${idx}`}
+                style={{
+                  textAlign: isCentered ? 'center' : 'inherit',
+                  width: '100%',
+                  display: 'block',
+                  marginTop: idx > 0 ? '8px' : '0px'
+                }}
+              />
+            );
+          })}
+        </div>
+      )}
+      {!hasText && <div ref={containerRef} style={{ display: 'none' }} />}
       {diagramSvgSrc && !graphData?.geometry ? (
         <img
           src={diagramSvgSrc}
           alt="Diagram"
-          style={{ width: 'auto', maxHeight: '320px', objectFit: 'contain', marginTop: '16px', alignSelf: 'center', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+          style={{ width: 'auto', maxHeight: '320px', objectFit: 'contain', marginTop: hasText ? '12px' : '0', alignSelf: 'center', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
         />
       ) : (
         <>

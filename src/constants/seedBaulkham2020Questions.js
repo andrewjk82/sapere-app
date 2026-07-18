@@ -2495,19 +2495,45 @@ export const BAULKHAM_2020_QUESTIONS = [
     "source": "Baulkham Hills 2020 Trial Q16(c)(ii)",
     "type": "teacher_review",
     "difficulty": "medium",
-    "q": "For $f(x)=x^2e^{kx}$, show that $f'(x)=xe^{kx}(kx+2)$.",
-    "a": "Product rule: $f'=2xe^{kx}+x^2\\cdot ke^{kx}=xe^{kx}(2+kx)=xe^{kx}(kx+2)$. ✓",
+    "question": "For \\(f(x)=x^{2}e^{kx}\\), show that \\(f'(x)=xe^{kx}(kx+2)\\).",
+    "q": "For \\(f(x)=x^{2}e^{kx}\\), show that \\(f'(x)=xe^{kx}(kx+2)\\).",
+    "a": "Product rule: \\(f'=2xe^{kx}+x^{2}\\cdot ke^{kx}=xe^{kx}(2+kx)=xe^{kx}(kx+2)\\). ✓",
+    "answer": "Product rule: \\(f'=2xe^{kx}+x^{2}\\cdot ke^{kx}=xe^{kx}(2+kx)=xe^{kx}(kx+2)\\). ✓",
     "opts": [],
-    "h": "Use the product rule with $u=x^2$ and $v=e^{kx}$.",
-    "s": "$f'=2xe^{kx}+x^2\\cdot ke^{kx}=xe^{kx}(2+kx)$.",
+    "hint": "Use the product rule with \\(u=x^{2}\\) and \\(v=e^{kx}\\). Then factor \\(xe^{kx}\\) from both terms.",
+    "h": "Use the product rule with \\(u=x^{2}\\) and \\(v=e^{kx}\\). Then factor \\(xe^{kx}\\) from both terms.",
+    "solution": "Write \\(f=uv\\) with \\(u=x^{2}\\), \\(v=e^{kx}\\). Then \\(u'=2x\\) and \\(v'=ke^{kx}\\). Product rule gives \\(f'=2xe^{kx}+kx^{2}e^{kx}\\). Factor \\(xe^{kx}\\): \\(f'=xe^{kx}(2+kx)=xe^{kx}(kx+2)\\), as required.",
+    "s": "Write \\(f=uv\\) with \\(u=x^{2}\\), \\(v=e^{kx}\\). Then \\(u'=2x\\) and \\(v'=ke^{kx}\\). Product rule gives \\(f'=2xe^{kx}+kx^{2}e^{kx}\\). Factor \\(xe^{kx}\\): \\(f'=xe^{kx}(2+kx)=xe^{kx}(kx+2)\\), as required.",
     "solutionSteps": [
       {
-        "explanation": "Product rule: \\(u=x^2\\), \\(v=e^{kx}\\).",
-        "workingOut": "f'=2xe^{kx}+kx^2e^{kx}"
+        "explanation": "The function is a product of two factors of \\(x\\): \\(f(x)=x^{2}\\cdot e^{kx}\\). To differentiate a product, use the product rule \\((uv)'=u'v+uv'\\). Identify the two factors carefully.",
+        "workingOut": "\\(u=x^{2},\\quad v=e^{kx}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factorise.",
-        "workingOut": "=xe^{kx}(2+kx)=xe^{kx}(kx+2)\\checkmark"
+        "explanation": "Differentiate the first factor with the power rule: \\(\\dfrac{d}{dx}(x^{2})=2x\\).",
+        "workingOut": "\\(u'=2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Differentiate the second factor with the chain rule for exponentials: \\(\\dfrac{d}{dx}e^{kx}=e^{kx}\\cdot k=ke^{kx}\\). (The constant \\(k\\) is the derivative of the exponent \\(kx\\).)",
+        "workingOut": "\\(v'=ke^{kx}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the product rule: \\(f'=u'v+uv'=(2x)\\cdot e^{kx}+(x^{2})\\cdot(ke^{kx})\\). Write this as two separate terms before factorising.",
+        "workingOut": "\\(f'=2xe^{kx}+kx^{2}e^{kx}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both terms contain a common factor of \\(xe^{kx}\\). Factor it out: first term \\(2xe^{kx}=xe^{kx}\\cdot 2\\); second term \\(kx^{2}e^{kx}=xe^{kx}\\cdot(kx)\\).",
+        "workingOut": "\\(f'=xe^{kx}\\bigl(2+kx\\bigr)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Rewrite the bracket as \\(kx+2\\) (addition is commutative). Therefore \\(f'(x)=xe^{kx}(kx+2)\\), which is exactly what was required to show.",
+        "workingOut": "\\(f'(x)=xe^{kx}(kx+2)\\quad\\checkmark\\)",
+        "graphData": null
       }
     ]
   },

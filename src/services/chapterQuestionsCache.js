@@ -32,8 +32,8 @@ const IN_QUERY_LIMIT = 30;
 const KEEP_FIELDS = [
   'id', 'question', 'options', 'answer', 'type', 'topicId', 'chapterId',
   'examPaper', 'isActive', 'blanks', 'subQuestions', 'acceptedAnswers',
-  'hint', 'solution', 'solutionImage', 'questionImage', 'marks',
-  'difficulty', 'source', 'graphData',
+  'hint', 'solution', 'solutionSteps', 'solutionImage', 'questionImage', 'marks',
+  'difficulty', 'source', 'graphData', 'timeLimit', 'requiresManualGrading',
 ];
 
 const stripQuestion = (q) => {

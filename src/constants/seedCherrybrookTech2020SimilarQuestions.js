@@ -843,35 +843,49 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "c": "5B",
     "t": "Differentiation of exponential functions",
     "source": "Cherrybrook Tech 2020 Trial Q23",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "If $y = \\dfrac{e^{2x}}{x+3}$, find $\\dfrac{dy}{dx}$.",
-    "a": "$\\dfrac{e^{2x}(2x+5)}{(x+3)^2}$",
-    "opts": [],
-    "h": "Use the quotient rule with $u = e^{2x}$ and $v = x+3$.",
-    "s": "$u' = 2e^{2x}$, $v' = 1$. $\\frac{2e^{2x}(x+3)-e^{2x}}{(x+3)^2} = \\frac{e^{2x}(2x+6-1)}{(x+3)^2} = \\frac{e^{2x}(2x+5)}{(x+3)^2}$.",
+    "q": "If \\(y=\\dfrac{e^{2x}}{x+3}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "a": 1,
+    "opts": [
+      "\\(\\dfrac{2e^{2x}}{(x+3)^{2}}\\)",
+      "\\(\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\)",
+      "\\(\\dfrac{e^{2x}(2x+6)}{(x+3)^{2}}\\)",
+      "\\(\\dfrac{2e^{2x}(x+3)-e^{2x}}{x+3}\\)"
+    ],
+    "h": "Quotient \\(y=\\dfrac{e^{2x}}{x+3}\\). Set \\(u=e^{2x}\\), \\(v=x+3\\).",
+    "s": "\\(u=e^{2x},\\quad v=x+3\\) ; \\(u'=2e^{2x},\\quad v'=1\\) ; \\(\\dfrac{2e^{2x}(x+3)-e^{2x}}{(x+3)^{2}}\\) ; \\(\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\) ; \\(\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify \\(u = e^{2x}\\) and \\(v = x+3\\) for the quotient rule.",
-        "workingOut": "u = e^{2x}, quad v = x+3"
+        "explanation": "Quotient \\(y=\\dfrac{e^{2x}}{x+3}\\). Set \\(u=e^{2x}\\), \\(v=x+3\\).",
+        "workingOut": "\\(u=e^{2x},\\quad v=x+3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate \\(u\\) using the chain rule.",
-        "workingOut": "u' = 2e^{2x}"
+        "explanation": "\\(u'=2e^{2x}\\) (chain rule), \\(v'=1\\).",
+        "workingOut": "\\(u'=2e^{2x},\\quad v'=1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate \\(v\\).",
-        "workingOut": "v' = 1"
+        "explanation": "\\(\\dfrac{2e^{2x}(x+3)-e^{2x}}{(x+3)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{2e^{2x}(x+3)-e^{2x}}{(x+3)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the quotient rule.",
-        "workingOut": "\\frac{dy}{dx} = \\frac{2e^{2x}(x+3) - e^{2x}}{(x+3)^2}"
+        "explanation": "Factor \\(e^{2x}\\): \\(e^{2x}(2x+6-1)=e^{2x}(2x+5)\\).",
+        "workingOut": "\\(\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factor out \\(e^{2x}\\) from the numerator and simplify.",
-        "workingOut": "= \\frac{e^{2x}(2x+6-1)}{(x+3)^2} = \\frac{e^{2x}(2x+5)}{(x+3)^2}"
+        "explanation": "So \\(\\dfrac{dy}{dx}=\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\).",
+        "workingOut": "\\(\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "question": "If \\(y=\\dfrac{e^{2x}}{x+3}\\), find \\(\\dfrac{dy}{dx}\\).",
+    "answer": "1",
+    "hint": "Quotient \\(y=\\dfrac{e^{2x}}{x+3}\\). Set \\(u=e^{2x}\\), \\(v=x+3\\).",
+    "solution": "Quotient \\(y=\\dfrac{e^{2x}}{x+3}\\). Set \\(u=e^{2x}\\), \\(v=x+3\\). \\(u'=2e^{2x}\\) (chain rule), \\(v'=1\\). \\(\\dfrac{2e^{2x}(x+3)-e^{2x}}{(x+3)^{2}}\\). Factor \\(e^{2x}\\): \\(e^{2x}(2x+6-1)=e^{2x}(2x+5)\\). So \\(\\dfrac{dy}{dx}=\\dfrac{e^{2x}(2x+5)}{(x+3)^{2}}\\)."
   },
   {
     "id": "cths2020s-q24",

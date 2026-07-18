@@ -288,12 +288,28 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
       "$\\displaystyle\\int_0^b (f(x) - g(x))\\,dx + \\int_b^c (f(x) - g(x))\\,dx$",
       "$\\displaystyle\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx$"
     ],
-    "h": "Consider the total area under $f(x)$ from 0 to $d$, then subtract the area under $g(x)$ from $a$ to $c$ (which overlaps with the non-shaded region).",
-    "s": "The shaded region equals the area under $f(x)$ from 0 to $d$ minus the area under $g(x)$ from $a$ to $c$: $\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx$.",
+    "h": "Split the shaded region into (i) between the curves on $[b,c]$ and (ii) under $f$ on $[c,d]$. Alternatively: total area under $f$ from $0$ to $d$, minus area under $g$ from $a$ to $c$.",
+    "s": "Shaded $=\\int_b^c(f-g)\\,dx+\\int_c^d f\\,dx$. Equivalently, take all of under $f$ from $0$ to $d$ and subtract under $g$ from $a$ to $c$: $\\int_0^d f(x)\\,dx-\\int_a^c g(x)\\,dx$.",
     "solutionSteps": [
       {
-        "explanation": "The shaded area = (area under \\(f\\) from 0 to \\(d\\)) − (area under \\(g\\) from \\(a\\) to \\(c\\)).",
-        "workingOut": "\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx"
+        "explanation": "Read the diagram carefully. The shaded region has two pieces: (i) the area between the curves \\(y=f(x)\\) and \\(y=g(x)\\) from their intersection at \\(x=b\\) to where \\(g\\) meets the axis at \\(x=c\\); (ii) the area under \\(f\\) alone from \\(x=c\\) to \\(x=d\\) (since \\(g(x)=0\\) for \\(x>c\\)).",
+        "workingOut": "\\text{shaded }=\\text{between }f,g\\text{ on }[b,c]\\;+\\;\\text{under }f\\text{ on }[c,d]"
+      },
+      {
+        "explanation": "Write each piece as an integral. On \\([b,c]\\) take upper minus lower; on \\([c,d]\\) integrate \\(f\\) down to the \\(x\\)-axis.",
+        "workingOut": "A=\\displaystyle\\int_b^c\\big(f(x)-g(x)\\big)\\,dx+\\int_c^d f(x)\\,dx"
+      },
+      {
+        "explanation": "Expand the first integral and recombine the pieces under \\(f\\):",
+        "workingOut": "A=\\displaystyle\\int_b^c f-\\int_b^c g+\\int_c^d f=\\int_b^d f(x)\\,dx-\\int_b^c g(x)\\,dx"
+      },
+      {
+        "explanation": "An equivalent construction that matches an option: take the whole area under \\(f\\) from the left of the figure (\\(x=0\\)) out to \\(x=d\\), then subtract the whole area under \\(g\\) from \\(x=a\\) to \\(x=c\\). Subtracting under \\(g\\) removes exactly the unshaded region that sits under \\(g\\), leaving only the shaded set.",
+        "workingOut": "A=\\displaystyle\\int_0^d f(x)\\,dx-\\int_a^c g(x)\\,dx"
+      },
+      {
+        "explanation": "That is option D. Check the others fail: A and B integrate \\((f-g)\\) over intervals that include unshaded strips between the curves (wrong left endpoint / wrong range). C only runs up to \\(x=c\\), so it misses the strip under \\(f\\) on \\([c,d]\\), and it also includes an extra between-curve piece on \\([0,b]\\).",
+        "workingOut": "\\(\\displaystyle\\int_0^d f(x)\\,dx-\\int_a^c g(x)\\,dx\\)"
       }
     ]
   },

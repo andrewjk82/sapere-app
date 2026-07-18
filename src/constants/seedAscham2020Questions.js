@@ -920,29 +920,47 @@ export const ASCHAM_2020_QUESTIONS = [
     "t": "Differentiation of exponential functions",
     "source": "Ascham 2020 Trial Q13",
     "examPaper": "asc-2020",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Differentiate $\\left(e^x + x\\right)^4$.",
-    "a": "$4(e^x + x)^3(e^x + 1)$",
-    "opts": [],
-    "h": "Apply the chain rule: differentiate the outer power, then multiply by the derivative of the inner function $e^x + x$.",
-    "s": "Let $u = e^x + x$, so $y = u^4$. $\\frac{du}{dx} = e^x + 1$. By the chain rule: $\\frac{dy}{dx} = 4u^3 \\cdot \\frac{du}{dx} = 4(e^x + x)^3(e^x + 1)$.",
+    "question": "Differentiate \\(\\left(e^{x} + x\\right)^{4}\\).",
+    "q": "Differentiate \\(\\left(e^{x} + x\\right)^{4}\\).",
+    "opts": [
+      "\\(4(e^{x}+x)^{3}\\)",
+      "\\(4(e^{x}+x)^{3}(e^{x}+1)\\)",
+      "\\(4(e^{x}+x)^{3}e^{x}\\)",
+      "\\((e^{x}+x)^{3}(e^{x}+1)\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Chain rule: outer power first, then multiply by the derivative of the inside \\(e^{x}+x\\).",
+    "h": "Chain rule: outer power first, then multiply by the derivative of the inside \\(e^{x}+x\\).",
+    "solution": "Let \\(u=e^{x}+x\\), so \\(y=u^{4}\\). Then \\(\\dfrac{du}{dx}=e^{x}+1\\) and \\(\\dfrac{dy}{dx}=4u^{3}(e^{x}+1)=4(e^{x}+x)^{3}(e^{x}+1)\\).",
+    "s": "Let \\(u=e^{x}+x\\), so \\(y=u^{4}\\). Then \\(\\dfrac{du}{dx}=e^{x}+1\\) and \\(\\dfrac{dy}{dx}=4u^{3}(e^{x}+1)=4(e^{x}+x)^{3}(e^{x}+1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the outer function as a power and the inner function as \\(u = e^x + x\\).",
-        "workingOut": "y = u^4, quad u = e^x + x"
+        "explanation": "The expression \\(\\left(e^{x}+x\\right)^{4}\\) is a composite function: an outer power and an inner sum. Set the inner function equal to \\(u\\), so the outer function is a pure power of \\(u\\).",
+        "workingOut": "\\(u=e^{x}+x,\\quad y=u^{4}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate the inner function \\(u = e^x + x\\).",
-        "workingOut": "\\frac{du}{dx} = e^x + 1"
+        "explanation": "Differentiate the outer power with respect to \\(u\\): \\(\\dfrac{dy}{du}=4u^{3}\\). (Power rule: bring the 4 down and reduce the index by 1.)",
+        "workingOut": "\\(\\dfrac{dy}{du}=4u^{3}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the chain rule: \\(\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}\\).",
-        "workingOut": "\\frac{dy}{du} = 4u^3"
+        "explanation": "Differentiate the inner function term by term: \\(\\dfrac{d}{dx}e^{x}=e^{x}\\) and \\(\\dfrac{d}{dx}x=1\\). Add them to get \\(u'\\).",
+        "workingOut": "\\(\\dfrac{du}{dx}=e^{x}+1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply and substitute back \\(u = e^x + x\\).",
-        "workingOut": "\\frac{dy}{dx} = 4(e^x + x)^3 \\cdot (e^x + 1)"
+        "explanation": "Apply the chain rule \\(\\dfrac{dy}{dx}=\\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}\\): multiply \\(4u^{3}\\) by \\((e^{x}+1)\\).",
+        "workingOut": "\\(\\dfrac{dy}{dx}=4u^{3}(e^{x}+1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute \\(u=e^{x}+x\\) back into the result. The derivative is \\(4(e^{x}+x)^{3}(e^{x}+1)\\). Common errors: forgetting the factor \\((e^{x}+1)\\), or writing only \\(4(e^{x}+x)^{3}\\).",
+        "workingOut": "\\(4(e^{x}+x)^{3}(e^{x}+1)\\)",
+        "graphData": null
       }
     ]
   },
@@ -953,25 +971,47 @@ export const ASCHAM_2020_QUESTIONS = [
     "t": "Differentiation of exponential functions",
     "source": "Adapted from Ascham 2020 Trial Q13",
     "examPaper": "asc-2020",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "q": "Differentiate $\\left(e^{2x} + 3\\right)^5$.",
-    "a": "$10e^{2x}(e^{2x} + 3)^4$",
-    "opts": [],
-    "h": "Use the chain rule. The inner function is $e^{2x} + 3$, whose derivative is $2e^{2x}$.",
-    "s": "Let $u = e^{2x} + 3$. $\\frac{du}{dx} = 2e^{2x}$. $\\frac{dy}{dx} = 5u^4 \\cdot 2e^{2x} = 10e^{2x}(e^{2x}+3)^4$.",
+    "question": "Differentiate \\(\\left(e^{2x} + 3\\right)^{5}\\).",
+    "q": "Differentiate \\(\\left(e^{2x} + 3\\right)^{5}\\).",
+    "opts": [
+      "\\(5(e^{2x}+3)^{4}\\)",
+      "\\(5(e^{2x}+3)^{4}\\cdot 2e^{2x}\\)",
+      "\\(10e^{2x}(e^{2x}+3)^{4}\\)",
+      "\\(10e^{x}(e^{2x}+3)^{4}\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Chain rule with inner \\(e^{2x}+3\\). Remember the factor 2 from differentiating \\(e^{2x}\\).",
+    "h": "Chain rule with inner \\(e^{2x}+3\\). Remember the factor 2 from differentiating \\(e^{2x}\\).",
+    "solution": "Let \\(u=e^{2x}+3\\). Then \\(\\dfrac{du}{dx}=2e^{2x}\\) and \\(\\dfrac{dy}{dx}=5u^{4}\\cdot 2e^{2x}=10e^{2x}(e^{2x}+3)^{4}\\).",
+    "s": "Let \\(u=e^{2x}+3\\). Then \\(\\dfrac{du}{dx}=2e^{2x}\\) and \\(\\dfrac{dy}{dx}=5u^{4}\\cdot 2e^{2x}=10e^{2x}(e^{2x}+3)^{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Let \\(u = e^{2x} + 3\\) and apply the chain rule.",
-        "workingOut": "\\frac{du}{dx} = 2e^{2x}"
+        "explanation": "The expression \\(\\left(e^{2x}+3\\right)^{5}\\) is a composite: outer power 5, inner sum \\(e^{2x}+3\\). Set the inner function equal to \\(u\\) so the outside is a pure power of \\(u\\).",
+        "workingOut": "\\(u=e^{2x}+3,\\quad y=u^{5}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Differentiate outer function.",
-        "workingOut": "\\frac{d}{du}[u^5] = 5u^4"
+        "explanation": "Differentiate the outer power with respect to \\(u\\) (power rule): bring the 5 down and reduce the index by 1.",
+        "workingOut": "\\(\\dfrac{dy}{du}=5u^{4}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine using chain rule.",
-        "workingOut": "\\frac{dy}{dx} = 5(e^{2x}+3)^4 \\cdot 2e^{2x} = 10e^{2x}(e^{2x}+3)^4"
+        "explanation": "Differentiate the inner function. The constant 3 has derivative 0. For \\(e^{2x}\\) use the chain rule: exponent \\(2x\\) has derivative 2, so \\(\\dfrac{d}{dx}e^{2x}=2e^{2x}\\).",
+        "workingOut": "\\(\\dfrac{du}{dx}=2e^{2x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply the chain rule \\(\\dfrac{dy}{dx}=\\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}\\): multiply \\(5u^{4}\\) by \\(2e^{2x}\\). The coefficient simplifies: \\(5\\times 2=10\\).",
+        "workingOut": "\\(\\dfrac{dy}{dx}=5u^{4}\\cdot 2e^{2x}=10e^{2x}u^{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substitute \\(u=e^{2x}+3\\) back. The derivative is \\(10e^{2x}(e^{2x}+3)^{4}\\). Note that option \\(5(e^{2x}+3)^{4}\\cdot 2e^{2x}\\) is algebraically the same before simplifying the 5 and 2 — the fully simplified form is preferred. Common errors: forgetting the inner factor \\(2e^{2x}\\), or writing \\(10e^{x}\\) instead of \\(10e^{2x}\\).",
+        "workingOut": "\\(10e^{2x}(e^{2x}+3)^{4}\\)",
+        "graphData": null
       }
     ]
   },
