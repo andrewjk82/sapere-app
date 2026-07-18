@@ -91,6 +91,17 @@ const curveGradient = (raw) => {
   return solidGradient(raw);
 };
 
+/** Map a simple superscript body (digits/signs/letters) to unicode superscripts. */
+const toSuper = (body) => {
+  const map = {
+    '0': '⁰', '1': '¹', '2': '²', '3': '³', '4': '⁴',
+    '5': '⁵', '6': '⁶', '7': '⁷', '8': '⁸', '9': '⁹',
+    '+': '⁺', '-': '⁻', '−': '⁻', 'x': 'ˣ', 'y': 'ʸ', 'n': 'ⁿ',
+    'i': 'ⁱ', 'a': 'ᵃ', 'b': 'ᵇ', 'c': 'ᶜ', 'e': 'ᵉ',
+  };
+  return String(body).split('').map((ch) => map[ch] || ch).join('');
+};
+
 const formatLabel = (str) => {
   if (typeof str !== 'string') return str;
   return str
@@ -101,11 +112,15 @@ const formatLabel = (str) => {
     .replace(/\\gamma/g, 'γ')
     .replace(/\\theta/g, 'θ')
     .replace(/\\pi/g, 'π')
+    // ^{...} then bare ^token (e.g. e^x, e^{-x})
+    .replace(/\^\{([^}]+)\}/g, (_, body) => toSuper(body))
+    .replace(/\^(-?\d+)/g, (_, body) => toSuper(body))
+    .replace(/\^([A-Za-z])/g, (_, body) => toSuper(body))
     .replace(/\^2/g, '²')
     .replace(/\^3/g, '³')
     .replace(/\\sqrt/g, '√')
     .replace(/√\{([^}]+)\}/g, '√$1')
-    .replace(/\\/g, '') // remove trailing backslashes if any
+    .replace(/\\/g, '') // remove leftover backslashes
     .replace(/\$+/g, '');
 };
 
