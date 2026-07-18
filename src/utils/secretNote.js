@@ -49,7 +49,7 @@ function write(kind, uid, items) {
 }
 
 // Keep only what's needed to re-render & re-grade a question.
-function slimQuestion(q) {
+export function slimQuestion(q) {
   return {
     id: q.id || q.question || q.text,
     question: q.question || q.text || '',

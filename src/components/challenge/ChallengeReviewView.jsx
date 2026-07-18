@@ -47,6 +47,7 @@ const ChallengeReviewView = ({
   isTabletLayout = false,
   statColName = null,
   sessionId = null,
+  disableReport = false,
 }) => {
   const [idx, setIdx] = useState(() => Math.min(Math.max(0, startIdx), Math.max(0, questions.length - 1)));
   const padRef = useRef(null);
@@ -59,7 +60,7 @@ const ChallengeReviewView = ({
   const [reportedIdxs, setReportedIdxs] = useState(new Set()); // already submitted
 
   const handleReportSubmit = async () => {
-    if (!reportMessage.trim() || reportingIdx === null) return;
+    if (disableReport || !reportMessage.trim() || reportingIdx === null) return;
     setIsSubmittingReport(true);
     try {
       const reportQ = questions[reportingIdx] || {};
@@ -282,7 +283,9 @@ const ChallengeReviewView = ({
               <div style={{ fontSize: '0.68rem', fontWeight: 900, color: '#94a3b8', letterSpacing: '0.12em', textTransform: 'uppercase' }}>
                 Question
               </div>
-              {reportedIdxs.has(idx) ? (
+              {disableReport ? (
+                <span />
+              ) : reportedIdxs.has(idx) ? (
                 <span style={{ fontSize: '0.68rem', fontWeight: 800, color: '#10b981', background: '#f0fdf4', padding: '4px 10px', borderRadius: '999px' }}>
                   ✓ Reported
                 </span>

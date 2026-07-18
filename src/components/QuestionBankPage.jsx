@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck
+  ChevronLeft, ChevronRight, ArrowLeft, Clock, Lightbulb, Pencil, Plus, Trash2, DownloadCloud, FileDown, ClipboardCheck, Eye, Zap, BookLock
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
@@ -9,6 +9,7 @@ import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serv
 import MathView from './MathView';
 import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
+import QuestionPreviewModal from './challenge/QuestionPreviewModal';
 
 // Quick-insert buttons matching the student answer view.
 const QB_QUICK_INSERTS = [
@@ -68,6 +69,8 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [currentIdx, setCurrentIdx] = useState(0);
   const [showHint, setShowHint] = useState(false);
   const [editingQuestion, setEditingQuestion] = useState(null);
+  const [previewingQuestion, setPreviewingQuestion] = useState(null);
+  const [previewInitialTab, setPreviewInitialTab] = useState('daily');
   const [previewAnswer, setPreviewAnswer] = useState(''); // teacher can test-type like a student
   const qbMathRef = useRef(null);
   const [creatingNew, setCreatingNew] = useState(false);
@@ -516,6 +519,21 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                     ))}
                   </select>
                 </div>
+                {[
+                  { tab: 'daily', label: 'Daily', icon: Zap },
+                  { tab: 'review', label: 'Review', icon: Eye },
+                  { tab: 'secretNote', label: 'Note', icon: BookLock },
+                ].map(({ tab, label, icon: Icon }) => (
+                  <button
+                    key={tab}
+                    onClick={() => { setPreviewInitialTab(tab); setPreviewingQuestion(q); }}
+                    disabled={!q}
+                    title={`Preview: ${label} — exactly what students see`}
+                    style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 10px', borderRadius: '12px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.78rem', cursor: q ? 'pointer' : 'not-allowed', opacity: q ? 1 : 0.5, whiteSpace: 'nowrap' }}
+                  >
+                    <Icon size={13} /> {label}
+                  </button>
+                ))}
                 <button
                   onClick={() => setEditingQuestion(q)}
                   style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: '#eef2ff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}
@@ -1159,6 +1177,20 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               setCreatingNew(false);
               reload();
             }}
+          />
+        )}
+      </AnimatePresence>
+
+      {/* Teacher preview — mounts the real student Daily Challenge / Review /
+          Secret Note components for this question, no persistence. */}
+      <AnimatePresence>
+        {previewingQuestion && (
+          <QuestionPreviewModal
+            question={previewingQuestion}
+            chapter={chapter}
+            topic={topic}
+            initialTab={previewInitialTab}
+            onClose={() => setPreviewingQuestion(null)}
           />
         )}
       </AnimatePresence>

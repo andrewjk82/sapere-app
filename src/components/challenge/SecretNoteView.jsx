@@ -41,9 +41,25 @@ import {
   setMistakeTag,
   markSecretNoteCaughtUp,
   pruneUngradable,
+  canTwin,
+  slimQuestion,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
+
+// Build a preview-only queue straight from teacher-supplied questions — same
+// item shape as addMistakes() (secretNote.js) so rendering/grading paths
+// never notice the difference, but nothing here touches localStorage.
+const buildPreviewQueue = (questions) => (questions || []).map((q, i) => ({
+  question: { ...slimQuestion(q), id: q.id || q.question || q.text || `preview-${i}` },
+  addedAt: Date.now(),
+  sourceDate: new Date().toLocaleDateString('en-CA'),
+  stage: 0,
+  nextReviewAt: Date.now(),
+  correctStreak: 0,
+  twinPassed: false,
+  mistakeTag: null,
+}));
 
 // ── Grading helpers ────────────────────────────────────────────────────────
 // Normalise a maths answer for comparison: unicode superscripts → digits,
@@ -388,7 +404,8 @@ const NoteShell = ({ headerGradient, title, subtitle, showProgress, progressPct,
 );
 
 // ── Main component ─────────────────────────────────────────────────────────
-const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose, isMobile }) => {
+const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose, isMobile, previewQuestions }) => {
+  const isPreview = Boolean(previewQuestions?.length);
   const accent = kind === 'calc'
     ? { from: '#fbbf24', to: '#f59e0b', soft: '#fef3c7', text: '#b45309' }
     : { from: '#a78bfa', to: '#8b5cf6', soft: '#ede9fe', text: '#6d28d9' };
@@ -400,10 +417,17 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   // flashes on screen even for students who saved one before this fix shipped.
   // Session queue = items DUE now only (matches "N questions ready to review").
   // Future-scheduled cards stay in the notebook until nextReviewAt arrives.
-  const [queue, setQueue] = useState(() => { pruneUngradable(uid); return getDueNote(kind, uid); });
+  const [queue, setQueue] = useState(() => {
+    if (isPreview) return buildPreviewQueue(previewQuestions);
+    pruneUngradable(uid);
+    return getDueNote(kind, uid);
+  });
   const [idx, setIdx] = useState(0);
-  const [phase, setPhase] = useState(() => (getDueNote(kind, uid).length === 0 ? 'empty' : 'solve'));
-  const [savedTotal] = useState(() => getNoteCount(kind, uid));
+  const [phase, setPhase] = useState(() => {
+    if (isPreview) return queue.length === 0 ? 'empty' : 'solve';
+    return getDueNote(kind, uid).length === 0 ? 'empty' : 'solve';
+  });
+  const [savedTotal] = useState(() => (isPreview ? previewQuestions.length : getNoteCount(kind, uid)));
 
   // Blocklist: one getDoc on open (not a permanent App-level onSnapshot).
   // If server version changed, prune local notes and refresh the queue.
@@ -478,6 +502,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const [liveQueue, setLiveQueue] = useState(null);
 
   useEffect(() => {
+    if (isPreview) return undefined; // bank question is already fresh — no refetch needed
     if (queue.length > 0 && !liveQueue) {
       let isMounted = true;
       const fetchLive = async () => {
@@ -550,7 +575,12 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const submitOriginal = (textVal, optText) => {
     const val = optText != null ? optText : textVal;
     const correct = answersMatch(val, prep.correctText);
-    const status = recordResult(kind, uid, question.id, correct);
+    // Preview mode never touches localStorage — mirror recordResult()'s
+    // return values (graduated/needTwin/kept) purely locally so the twin
+    // flow and feedback copy still demo correctly.
+    const status = isPreview
+      ? (correct ? (canTwin(question) ? 'needTwin' : 'graduated') : 'kept')
+      : recordResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
     let xpAwarded = 0;
     if (SECRET_NOTE_AWARDS_XP && correct && kind !== 'exam_prep' && XP_PER_QUESTION > 0) {
@@ -566,7 +596,9 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     const val = optText != null ? optText : textVal;
     const correct = answersMatch(val, twinPrep.correctText);
     setTwinGraded(correct);
-    const status = recordTwinResult(kind, uid, question.id, correct);
+    const status = isPreview
+      ? (correct ? 'graduated' : 'kept')
+      : recordTwinResult(kind, uid, question.id, correct);
     if (status === 'graduated') setSummary((s) => ({ ...s, graduated: s.graduated + 1 }));
     setPhase('twinFeedback');
   };
@@ -617,7 +649,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
 
   const pickTag = (tagId) => {
     setTag(tagId);
-    setMistakeTag(kind, uid, question.id, tagId);
+    if (!isPreview) setMistakeTag(kind, uid, question.id, tagId);
   };
 
   const sendReview = async () => {
@@ -805,7 +837,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
             </div>
           ) : <span />}
           {/* Report a problem with this question (real question only, not twins) */}
-          {!isTwinPhase && (
+          {!isTwinPhase && !isPreview && (
             reportSentIds.includes(question?.id) ? (
               <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.72rem', fontWeight: 800, color: '#16a34a', flexShrink: 0 }}>
                 <CheckCircle2 size={13} /> Reported
@@ -984,7 +1016,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         </AnimatePresence>
 
         {/* Ask teacher */}
-        {!isTwinPhase && (
+        {!isTwinPhase && !isPreview && (
           reviewSentIds.includes(question?.id) ? (
             <div className="sn__review-sent">
               <CheckCircle2 size={15} /> Sent to your teacher
