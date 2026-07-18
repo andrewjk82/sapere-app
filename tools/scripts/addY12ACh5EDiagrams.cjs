@@ -12,38 +12,30 @@ const WRITE = process.argv.includes('--write');
 const PUSH = process.argv.includes('--push');
 const SEED = path.resolve(__dirname, '../../src/constants/seedYear12Ch5EQuestions.js');
 
-/** Build polygon points as JS source fragment for shaded region under fn from a to b. */
-function polyUnder(fnSrc, a, b, n = 40) {
-  // returns array literal string for use inside script
-  const pts = [];
-  for (let i = 0; i <= n; i++) {
-    const x = a + ((b - a) * i) / n;
-    pts.push(`fn(${x.toFixed(4)})`);
-  }
-  // We'll inline numeric sampling in script instead
-  return null;
+/**
+ * Flatten multiline board scripts safely.
+ * NEVER leave // comments when collapsing newlines — the rest of the file
+ * becomes a single-line comment and curves never draw (axes-only bug).
+ */
+function flattenScript(src) {
+  return String(src)
+    .split('\n')
+    .map((line) => line.replace(/\/\/.*$/, '').trim())
+    .filter(Boolean)
+    .join(' ');
 }
 
-/**
- * Region under min(e^x, e^{-x}) = e^{-|x|} above x-axis, |x| from 0..1 essentially
- * for q9: below both e^x and e^{-x}, above x-axis.
- * They meet x-axis only as x-> -inf for e^x; region in diagram typically from -1 to 1.
- * Intersection: e^x = e^{-x} => x=0. The lower envelope is e^{-|x|}.
- * Diagram usually shows from -1 to 1 (where the lower is still significant).
- */
 const GRAPH = {
-  // q9: y=e^x and y=e^{-x}, shade below both (above x-axis) for |x|≤1
   q9: {
     width: 360,
     height: 260,
     boundingbox: [-1.6, 2.4, 1.6, -0.35],
-    script: `
+    script: flattenScript(`
 board.suspendUpdate();
 board.create('arrow', [[-1.55,0],[1.55,0]], {strokeColor:'black', strokeWidth:1.4});
 board.create('arrow', [[0,-0.3],[0,2.3]], {strokeColor:'black', strokeWidth:1.4});
 board.create('text', [1.42, -0.18, 'x'], {fontSize:13});
 board.create('text', [0.08, 2.15, 'y'], {fontSize:13});
-// shaded region under lower envelope e^{-|x|} from -1 to 1
 var shade = [];
 for (var i = 0; i <= 50; i++) {
   var x = -1 + 2 * i / 50;
@@ -52,30 +44,28 @@ for (var i = 0; i <= 50; i++) {
 }
 shade.push([1, 0]);
 shade.push([-1, 0]);
-board.create('polygon', shade, {fillColor:'#93c5fd', fillOpacity:0.45, strokeWidth:0, borders: {strokeWidth:0}});
-var f1 = board.create('functiongraph', [function(x){ return Math.exp(x); }, -1.5, 1.2], {strokeColor:'#2563eb', strokeWidth:2.4});
-var f2 = board.create('functiongraph', [function(x){ return Math.exp(-x); }, -1.2, 1.5], {strokeColor:'#dc2626', strokeWidth:2.4});
+board.create('polygon', shade, {fillColor:'#93c5fd', fillOpacity:0.45, strokeWidth:0});
+board.create('functiongraph', [function(x){ return Math.exp(x); }, -1.5, 1.2], {strokeColor:'#2563eb', strokeWidth:2.4});
+board.create('functiongraph', [function(x){ return Math.exp(-x); }, -1.2, 1.5], {strokeColor:'#dc2626', strokeWidth:2.4});
 board.create('text', [0.55, 1.85, 'y=e^x'], {fontSize:12, color:'#2563eb'});
 board.create('text', [-1.05, 1.85, 'y=e^{-x}'], {fontSize:12, color:'#dc2626'});
 board.create('text', [0.15, 0.45, 'R'], {fontSize:14, color:'#1d4ed8', fontWeight:700});
 board.create('text', [1, -0.2, '1'], {fontSize:11});
 board.create('text', [-1, -0.2, '-1'], {fontSize:11});
 board.unsuspendUpdate();
-`.replace(/\n/g, ' '),
+`),
   },
 
-  // q10: y = e - e^{-x} and y = e - e^x, shade above x-axis under both, |x|≤1
   q10: {
     width: 360,
     height: 260,
     boundingbox: [-1.5, 3.2, 1.5, -0.4],
-    script: `
+    script: flattenScript(`
 board.suspendUpdate();
 board.create('arrow', [[-1.45,0],[1.45,0]], {strokeColor:'black', strokeWidth:1.4});
 board.create('arrow', [[0,-0.35],[0,3.05]], {strokeColor:'black', strokeWidth:1.4});
 board.create('text', [1.32, -0.2, 'x'], {fontSize:13});
 board.create('text', [0.08, 2.9, 'y'], {fontSize:13});
-// shade under lower envelope: for x>=0 lower is e-e^x; for x<0 lower is e-e^{-x}
 var shade = [];
 for (var i = 0; i <= 50; i++) {
   var x = -1 + 2 * i / 50;
@@ -94,21 +84,19 @@ board.create('text', [0.12, 0.7, 'R'], {fontSize:14, color:'#1d4ed8', fontWeight
 board.create('text', [1, -0.22, '1'], {fontSize:11});
 board.create('text', [-1, -0.22, '-1'], {fontSize:11});
 board.unsuspendUpdate();
-`.replace(/\n/g, ' '),
+`),
   },
 
-  // q11: y = e^x - e^{-x} = 2sinh x, from -3 to 3, shade absolute areas (above and below)
   q11: {
     width: 380,
     height: 260,
     boundingbox: [-3.6, 12, 3.6, -12],
-    script: `
+    script: flattenScript(`
 board.suspendUpdate();
 board.create('arrow', [[-3.5,0],[3.5,0]], {strokeColor:'black', strokeWidth:1.4});
 board.create('arrow', [[0,-11.5],[0,11.5]], {strokeColor:'black', strokeWidth:1.4});
 board.create('text', [3.25, -0.9, 'x'], {fontSize:13});
 board.create('text', [0.15, 10.8, 'y'], {fontSize:13});
-// shade |f| regions
 var up = [], dn = [];
 for (var i = 0; i <= 40; i++) {
   var x = 0 + 3 * i / 40;
@@ -133,7 +121,7 @@ board.create('text', [1.4, 8, 'y=e^x-e^{-x}'], {fontSize:12, color:'#7c3aed'});
 board.create('text', [3, -1.2, '3'], {fontSize:11});
 board.create('text', [-3, -1.2, '-3'], {fontSize:11});
 board.unsuspendUpdate();
-`.replace(/\n/g, ' '),
+`),
   },
 };
 
