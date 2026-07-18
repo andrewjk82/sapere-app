@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  X, CheckCircle2, XCircle, Lightbulb, ArrowRight, ChevronDown, ChevronUp,
-  Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock, Flag, PenLine,
+  X, CheckCircle2, XCircle, Lightbulb, ArrowRight, ChevronDown,
+  Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock, Flag,
 } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
@@ -463,20 +463,6 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const canvasRef = useRef(null);
   const solvePadRef = useRef(null);
   const mathInputRef = useRef(null);
-
-  // Below 1100px the CSS stacks the working-out pad BELOW the question card
-  // (the desktop side-by-side split needs more room). Stacked + always-open, a
-  // full sketch board dropped under every question pushed the "Next question"
-  // button out of view and confused students ("why is the sketch board at the
-  // bottom?"). On stacked layouts the pad is now collapsed behind a toggle.
-  const [vw, setVw] = useState(() => (typeof window === 'undefined' ? 1200 : window.innerWidth));
-  useEffect(() => {
-    const onResize = () => setVw(window.innerWidth);
-    window.addEventListener('resize', onResize);
-    return () => window.removeEventListener('resize', onResize);
-  }, []);
-  const padStacked = vw <= 1100;
-  const [padOpen, setPadOpen] = useState(false);
 
   const [liveQueue, setLiveQueue] = useState(null);
 
@@ -994,34 +980,15 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
       </div>
 
         {!isMobile && (
-          <div className={`sn__solve-pad${padStacked ? ' sn__solve-pad--stacked' : ''}`}>
-            {/* Stacked layouts (tablet) collapse the pad so it stops pushing the
-                Next button off-screen; desktop keeps it open beside the card. */}
-            {padStacked && (
-              <button
-                type="button"
-                className="sn__pad-toggle"
-                aria-expanded={padOpen}
-                onClick={() => setPadOpen((o) => !o)}
-              >
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
-                  <PenLine size={16} /> Working-out pad
-                </span>
-                {padOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-              </button>
-            )}
-            {/* Keep the board mounted (preserves the canvas) but hidden when
-                collapsed, so re-opening doesn't wipe the student's working. */}
-            <div className="sn__pad-body" style={{ display: (!padStacked || padOpen) ? 'flex' : 'none' }}>
-              <ChallengeSketchBoard
-                placement="side"
-                questionId={activeQ?.id}
-                questionType={activeQ?.type}
-                isSubmitted={false}
-                showSplitScreen
-                ref={solvePadRef}
-              />
-            </div>
+          <div className="sn__solve-pad">
+            <ChallengeSketchBoard
+              placement="side"
+              questionId={activeQ?.id}
+              questionType={activeQ?.type}
+              isSubmitted={false}
+              showSplitScreen
+              ref={solvePadRef}
+            />
           </div>
         )}
       </div>
@@ -1171,30 +1138,21 @@ const secretNoteStyles = `
   }
   .sn__solve-row { display: flex; gap: 20px; align-items: stretch; width: 100%; flex-wrap: nowrap; }
   .sn__solve-pad { flex: 1 1 340px; min-width: 300px; display: flex; }
-  /* Stacked (tablet): pad becomes a collapsible section under the card. */
-  .sn__solve-pad--stacked { flex-direction: column; gap: 10px; }
-  .sn__pad-toggle {
-    width: 100%; display: flex; align-items: center; justify-content: space-between;
-    gap: 8px; padding: 14px 18px; border-radius: 16px;
-    border: 1.5px dashed #ddd6fe; background: #faf5ff; color: #6d28d9;
-    font-weight: 800; font-size: 0.92rem; cursor: pointer;
-  }
-  .sn__pad-toggle:active { background: #f3ecff; }
-  .sn__solve-pad--stacked .sn__pad-body { min-height: 380px; }
-  .sn__pad-body { flex: 1; display: flex; min-width: 0; }
 
-  /* Desktop split only: constrained card with its own scroll so the side pad stays usable. */
-  @media (min-width: 1101px) {
+  /* Every non-phone width keeps the working-out pad on the RIGHT. The question
+     card gets its own scroll (bounded to the viewport) so a long solution never
+     pushes the Next button out of reach and the side pad stays in view. */
+  @media (min-width: 768px) {
     .sn__solve-row .sn__card {
       flex: 0 1 600px; max-width: 600px; min-width: 0;
       max-height: calc(100vh - 48px); overflow-y: auto;
       -webkit-overflow-scrolling: touch;
     }
   }
-  /* Mid tablets: still side-by-side when wide enough, but no inner scroll trap. */
+  /* Narrow tablets: shrink both columns so they still fit side by side. */
   @media (min-width: 768px) and (max-width: 1100px) {
-    .sn__solve-row .sn__card { flex: 0 1 420px; max-width: 420px; max-height: none; overflow: visible; }
-    .sn__solve-pad { flex: 1 1 300px; min-width: 280px; }
+    .sn__solve-row .sn__card { flex: 1 1 0; max-width: none; }
+    .sn__solve-pad { flex: 1 1 0; min-width: 260px; }
   }
 
   .sn__card {
@@ -1361,12 +1319,9 @@ const secretNoteStyles = `
     .sn__tags-row { grid-template-columns: 1fr; }
   }
 
-  @media (max-width: 1100px) {
-    .sn__body--wide:not(.sn__body--mobile) { max-width: 760px; }
-    .sn__solve-row { flex-direction: column; }
-    .sn__solve-row .sn__card { max-width: none; width: 100%; max-height: none; overflow: visible; }
-    .sn__solve-pad { min-width: 0; width: 100%; }
-  }
+  /* Phones (isMobile < 768) render no side pad and use the mobile shell, which
+     already stacks to a single column. Tablets (>= 768) always stay
+     side-by-side — the working-out pad must remain on the right. */
 
   .sn__ws { margin-top: 10px; background: #fff; border-radius: 18px; padding: 18px; border: 1px solid #e0e7ff; display: flex; flex-direction: column; gap: 14px; }
   .sn__ws-header { display: flex; align-items: center; gap: 10px; }
