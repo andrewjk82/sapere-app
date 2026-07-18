@@ -40,6 +40,7 @@ import {
   recordTwinResult,
   setMistakeTag,
   markSecretNoteCaughtUp,
+  pruneUngradable,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
@@ -74,7 +75,13 @@ const shuffle = (arr) => {
 // ("1" for 4−3), which collides with index 1 — treating it as an index marks
 // the wrong option correct (see Secret Note S5 screenshot: 4−3 marked as 3).
 const prepareQuestion = (q) => {
-  const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.type !== 'short_answer');
+  // `options` defaults to `[]` (not undefined) for every non-MC question at
+  // write time. Array.isArray([]) is true, so an empty array used to satisfy
+  // this check too — a teacher_review question with no real options then
+  // rendered as multiple-choice with ZERO option buttons and a submit button
+  // that could never be enabled (real report, 2026-07-18). Require an actual
+  // option to exist.
+  const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.options.length > 0 && q.type !== 'short_answer');
   // Seeds often store the key as `a` (option index) without `answer`.
   const rawKey = q.answer ?? q.a;
   if (isMC) {
@@ -387,9 +394,13 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     : { from: '#a78bfa', to: '#8b5cf6', soft: '#ede9fe', text: '#6d28d9' };
   const title = kind === 'calc' ? 'Secret Note · Calculation' : 'Secret Note · Daily';
 
+  // Drop already-stored notes that should never have been added (e.g.
+  // teacher_review questions with an empty options array — see canGrade() in
+  // secretNote.js) before computing the initial queue, so a broken note never
+  // flashes on screen even for students who saved one before this fix shipped.
   // Session queue = items DUE now only (matches "N questions ready to review").
   // Future-scheduled cards stay in the notebook until nextReviewAt arrives.
-  const [queue, setQueue] = useState(() => getDueNote(kind, uid));
+  const [queue, setQueue] = useState(() => { pruneUngradable(uid); return getDueNote(kind, uid); });
   const [idx, setIdx] = useState(0);
   const [phase, setPhase] = useState(() => (getDueNote(kind, uid).length === 0 ? 'empty' : 'solve'));
   const [savedTotal] = useState(() => getNoteCount(kind, uid));
@@ -811,9 +822,16 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           )}
         </div>
 
+        {/* graph_sketch: graphData is the answer being constructed — hide it
+            until feedback or the student sees the target before attempting it.
+            teacher_review: graphData is normally the GIVEN diagram the
+            question depends on (e.g. a figure to find the area of) — it must
+            render immediately, not only after submitting. Conflating the two
+            here previously hid required diagrams during solve (real report,
+            2026-07-18). */}
         <MathView
           content={activeQ?.question}
-          graphData={(activeQ?.type === 'graph_sketch' || activeQ?.type === 'teacher_review') ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
+          graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
           style={{ fontSize: '1.0rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
         />
 

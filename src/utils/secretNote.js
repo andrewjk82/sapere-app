@@ -73,10 +73,23 @@ function slimQuestion(q) {
 // Only multiple-choice / short-answer questions can be auto-graded locally.
 export function canGrade(q) {
   if (!q) return false;
-  if (q.type === 'graph_sketch') return false;
+  // Sketch/teacher-review questions need a human — chapterSeeder writes
+  // `requiresManualGrading: true` only when the question text matches a
+  // keyword regex (draw/sketch/construct/prove/...), so a plain worded
+  // teacher_review question (e.g. "find the perimeter and area of...") gets
+  // requiresManualGrading: false and slips past that check. Gate on TYPE too.
+  if (q.type === 'graph_sketch' || q.type === 'teacher_review') return false;
   if (Array.isArray(q.subQuestions) && q.subQuestions.length > 0) return false;
   if (q.requiresManualGrading) return false;
-  return q.type === 'short_answer' || q.type === 'multiple_choice' || Array.isArray(q.options);
+  // `options` defaults to `[]` (not undefined) for every non-MC question at
+  // write time — Array.isArray([]) is true, so this used to admit ANY
+  // question with an empty options array as "has MC options to grade". A
+  // teacher_review question with a required diagram (options: [], no `a`)
+  // then rendered as multiple-choice with ZERO option buttons: the submit
+  // button (disabled until an option is picked) could never be enabled, so
+  // the student was stuck and had to fall back to "Ask the teacher" —
+  // real report, 2026-07-18. Require at least one actual option.
+  return q.type === 'short_answer' || q.type === 'multiple_choice' || (Array.isArray(q.options) && q.options.length > 0);
 }
 
 // Procedural questions can spawn an instant "twin" with new numbers.
@@ -321,6 +334,26 @@ export function pruneBlocked(uid, blockedIds) {
       return true;
     });
     if (next.length !== items.length) write(kind, uid, next);
+  }
+  return removed;
+}
+
+// Self-healing cleanup for notes that were added before the canGrade() fix
+// above (2026-07-18): a teacher_review question with `options: []` used to
+// pass canGrade and get saved to Secret Note, then render as a zero-option
+// multiple-choice with no way to submit. Every device drops these silently on
+// next open — no server round-trip, no per-id blocklist entry needed (1252
+// teacher_review docs existed, most sharing this exact shape). Purely
+// additive to pruneBlocked; sweeps all notebooks the same way.
+export function pruneUngradable(uid) {
+  let removed = 0;
+  for (const kind of ALL_NOTE_KINDS) {
+    const items = read(kind, uid);
+    const next = items.filter((it) => canGrade(it.question));
+    if (next.length !== items.length) {
+      removed += items.length - next.length;
+      write(kind, uid, next);
+    }
   }
   return removed;
 }

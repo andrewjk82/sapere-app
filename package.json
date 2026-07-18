@@ -19,7 +19,9 @@
     "test:answer-displays": "node --import ./scripts/extResolve.mjs scripts/testAnswerDisplays.mjs",
     "audit:mc-seeds": "node --import ./scripts/extResolve.mjs scripts/auditMcSeedAnswers.mjs",
     "audit:mc-key-vs-solution": "node --import ./scripts/extResolve.mjs scripts/auditMcKeyVsSolution.mjs",
-    "test:secret-note-bonus": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteBonus.mjs"
+    "test:secret-note-bonus": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteBonus.mjs",
+    "test:secret-note-gradability": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteGradability.mjs",
+    "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",
