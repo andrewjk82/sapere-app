@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight } from 'lucide-react';
+import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight, PenLine } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
@@ -15,6 +15,12 @@ import {
 import InteractiveFractionGrid from './InteractiveFractionGrid';
 import { answersMatch } from '../../utils/answerMatching';
 import { isDisplayedOptionCorrect } from '../../utils/mcOptionShuffle';
+
+// A sub-question the teacher must check by hand — no machine-checkable
+// answer exists, so there is nothing to type and nothing to auto-grade.
+// Matches the same three-way check used for top-level questions elsewhere.
+const subNeedsTeacher = (sq) =>
+  sq?.type === 'teacher_review' || sq?.type === 'graph_sketch' || sq?.requiresManualGrading === true;
 
 // Quick-insert buttons for the MathLive editor (`#?` = cursor placeholder).
 const CHALLENGE_QUICK_INSERTS = [
@@ -427,7 +433,9 @@ const ChallengeQuizView = ({
 
           {currentQuestion?.subQuestions?.length > 0 ? (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-              {currentQuestion.subQuestions.map((sq, sIdx) => (
+              {currentQuestion.subQuestions.map((sq, sIdx) => {
+                const sqTeacher = subNeedsTeacher(sq);
+                return (
                 <div key={sq.id || sIdx} style={{ padding: '24px', borderRadius: '24px', background: 'white', border: '1px solid #e2e8f0', boxShadow: '0 4px 12px rgba(0,0,0,0.02)' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
                     <div style={{ width: '28px', height: '28px', borderRadius: '8px', background: '#6366f1', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '0.85rem', fontWeight: 900, flexShrink: 0 }}>
@@ -436,7 +444,15 @@ const ChallengeQuizView = ({
                     <MathView content={sq.question} graphData={sq.type === 'graph_sketch' ? (isFeedback ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e293b', fontSize: '1rem' }} />
                   </div>
 
-                  {sq.type === 'multiple_choice' ? (
+                  {sqTeacher ? (
+                    // No answer box — the student writes on the shared sketch
+                    // board instead. A text box here would sit unused or get
+                    // auto-graded against a full worked-solution string and
+                    // always come back "wrong".
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '13px 16px', borderRadius: '14px', background: '#f5f3ff', border: '1.5px dashed #ddd6fe', color: '#6d28d9', fontWeight: 700, fontSize: '0.9rem' }}>
+                      <PenLine size={16} style={{ flexShrink: 0 }} /> Write your answer on the sketch board
+                    </div>
+                  ) : sq.type === 'multiple_choice' ? (
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oIdx) => {
                         const isSelected = subAnswers[sq.id || sIdx] === (typeof opt === 'string' ? opt : opt.text);
@@ -508,12 +524,13 @@ const ChallengeQuizView = ({
                     </div>
                   )}
                 </div>
-              ))}
-              
+                );
+              })}
+
               {step !== 'feedback' && (
-                <button 
+                <button
                   onClick={() => handleAnswer(subAnswers)}
-                  disabled={Object.keys(subAnswers).length < currentQuestion.subQuestions.length}
+                  disabled={currentQuestion.subQuestions.some((sq, sIdx) => !subNeedsTeacher(sq) && subAnswers[sq.id || sIdx] === undefined)}
                   className="app-button app-button--primary"
                   style={{ padding: '20px', borderRadius: '24px', fontSize: '1.1rem', marginTop: '12px' }}
                 >

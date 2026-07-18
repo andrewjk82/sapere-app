@@ -21,7 +21,8 @@
     "audit:mc-key-vs-solution": "node --import ./scripts/extResolve.mjs scripts/auditMcKeyVsSolution.mjs",
     "test:secret-note-bonus": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteBonus.mjs",
     "test:secret-note-gradability": "node --import ./scripts/extResolve.mjs scripts/testSecretNoteGradability.mjs",
-    "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability"
+    "test:secret-note": "npm run test:secret-note-bonus && npm run test:secret-note-gradability",
+    "test:teacher-review-subs": "node --import ./scripts/extResolve.mjs scripts/testTeacherReviewSubQuestions.mjs"
   },
   "dependencies": {
     "@babel/generator": "^7.27.0",

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, Flag, ChevronLeft, ChevronRight,
-  Trophy, AlertTriangle, Check, Lightbulb, MessageSquare,
+  Trophy, AlertTriangle, Check, Lightbulb, MessageSquare, PenLine,
 } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
@@ -94,6 +94,13 @@ import {
   getOptionText,
   getChallengeBootMetaId,
 } from '../utils/challengeUtils';
+
+// A sub-question the teacher must check by hand — no machine-checkable
+// answer exists (ChallengeQuizView renders no input for these; the student
+// writes on the shared sketch board instead). Matches the same check used
+// for top-level questions (`isGraphSketch` below).
+const subNeedsTeacher = (sq) =>
+  sq?.type === 'teacher_review' || sq?.type === 'graph_sketch' || sq?.requiresManualGrading === true;
 
 const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const { user, isAdmin } = useAuth();
@@ -1046,18 +1053,34 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     } else if (currentQ?.subQuestions?.length > 0) {
       // Handle sub-questions
       const subResults = currentQ.subQuestions.map((sq, idx) => {
-        const userAnswer = (optionText && typeof optionText === 'object') ? optionText[sq.id || idx] : '';
-        return { id: sq.id || idx, correct: answersMatch(userAnswer, sq.answer), answer: userAnswer };
+        const key = sq.id || idx;
+        const userAnswer = (optionText && typeof optionText === 'object') ? optionText[key] : '';
+        // Teacher-review subs have no answer box (see ChallengeQuizView) and
+        // no machine-checkable answer — never auto-graded right/wrong, and
+        // excluded from the "all correct" / points denominator below, so a
+        // pending part can't permanently block the gradable parts from
+        // counting or being marked complete.
+        if (subNeedsTeacher(sq)) return { id: key, pending: true, answer: userAnswer };
+        // MC subs must go through the shared resolver, same as
+        // TopicPracticeSession's sub-grading — `sq.answer` is a 0-based INDEX
+        // string (chapterSeeder), but ChallengeQuizView stores the picked
+        // option's TEXT in subAnswers. Comparing text to an index string via
+        // answersMatch never matches, silently failing every MC sub.
+        const subCorrect = sq.type === 'multiple_choice'
+          ? gradeMcSelection(sq, userAnswer, null, sq.options || [])
+          : answersMatch(userAnswer, sq.answer);
+        return { id: key, correct: subCorrect, answer: userAnswer };
       });
-      
-      correct = subResults.every(r => r.correct);
-      const pointsEarned = subResults.filter(r => r.correct).length;
-      
+      const gradableResults = subResults.filter((r) => !r.pending);
+
+      correct = gradableResults.length === 0 || gradableResults.every(r => r.correct);
+      const pointsEarned = gradableResults.filter(r => r.correct).length;
+
       // Store sub-results in result object for history view
       currentQ.lastSubResults = subResults;
       currentQ.pointsEarned = pointsEarned;
-      currentQ.totalPoints = currentQ.subQuestions.length;
-      
+      currentQ.totalPoints = gradableResults.length;
+
       if (pointsEarned > 0) {
         setScore(prev => prev + pointsEarned);
       }
@@ -2023,9 +2046,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                       {qData.subQuestions?.length > 0 ? (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                           {qData.subQuestions.map((sq, sIdx) => {
+                            const sqTeacher = subNeedsTeacher(sq);
                             const sUserAnswer = userAnswer && typeof userAnswer === 'object' ? userAnswer[sq.id || sIdx] : '';
                             const sResult = result?.subResults?.[sIdx] || result?.subResults?.[sq.id];
-                            const sIsCorrect = typeof sResult?.correct === 'boolean'
+                            const sIsCorrect = sqTeacher
+                              ? null
+                              : typeof sResult?.correct === 'boolean'
                               ? sResult.correct
                               : gradeMcSelection(sq, sUserAnswer, null, sq.options || []);
 
@@ -2034,12 +2060,14 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                                 <div style={{ fontWeight: 700, marginBottom: '8px', color: '#334155' }}>
                                   ({String.fromCharCode(97 + sIdx)}) <MathView content={toDisplayText(sq.text || sq.question)} graphData={sq.graphData} />
                                 </div>
-                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: sIsCorrect ? '#10b981' : '#f43f5e', fontWeight: 700, flexWrap: 'wrap' }}>
-                                  {sIsCorrect ? <Check size={16} /> : <X size={16} />}
-                                  {sUserAnswer !== undefined && sUserAnswer !== null && sUserAnswer !== ''
-                                    ? <MathView content={String(sUserAnswer)} />
-                                    : <span>(No Answer)</span>}
-                                  {!sIsCorrect && (
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: sqTeacher ? '#6d28d9' : (sIsCorrect ? '#10b981' : '#f43f5e'), fontWeight: 700, flexWrap: 'wrap' }}>
+                                  {sqTeacher ? <PenLine size={16} /> : sIsCorrect ? <Check size={16} /> : <X size={16} />}
+                                  {sqTeacher
+                                    ? <span>Pending teacher review (answered on sketch board)</span>
+                                    : (sUserAnswer !== undefined && sUserAnswer !== null && sUserAnswer !== ''
+                                      ? <MathView content={String(sUserAnswer)} />
+                                      : <span>(No Answer)</span>)}
+                                  {!sqTeacher && !sIsCorrect && (
                                     <span style={{ display: 'flex', alignItems: 'center', gap: '4px', color: '#64748b', marginLeft: '8px' }}>
                                       Correct: <MathView content={String(sq.answer ?? '')} />
                                     </span>

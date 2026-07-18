@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft, CheckCircle2, XCircle, Zap, BookOpen,
   ChevronRight, Play, RotateCcw, Trophy,
-  Lightbulb, Check, X, Flag,
+  Lightbulb, Check, X, Flag, PenLine,
 } from 'lucide-react';
 import { db } from '../firebase/config';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
@@ -121,20 +121,33 @@ const QUICK_INSERTS = [
 
 const XP_PER_TOPIC = 15;
 
+// A sub-question the teacher must check by hand — no machine-checkable
+// answer exists, so there is nothing to type and nothing to auto-grade.
+// Matches the same three-way check used for top-level questions elsewhere
+// (DailyChallenge, ExamPrep): explicit type, or a seed-level manual flag.
+const subNeedsTeacher = (sq) =>
+  sq?.type === 'teacher_review' || sq?.type === 'graph_sketch' || sq?.requiresManualGrading === true;
+
 // ── Small helpers ────────────────────────────────────────────────────────────
 const gradeQuestion = (q, userAnswer) => {
   if (!q) return false;
   if (q.subQuestions?.length > 0) {
     const subs = q.subQuestions;
-    const correct = subs.filter((sq, i) => {
+    // Teacher-review subs have no answer box (see render below) and no
+    // machine-checkable answer — excluded from both the requirement and the
+    // grading loop. Mastery/completion depends only on the gradable subs.
+    const gradableIdx = subs.map((_, i) => i).filter((i) => !subNeedsTeacher(subs[i]));
+    if (gradableIdx.length === 0) return true;
+    const correctCount = gradableIdx.filter((i) => {
+      const sq = subs[i];
       const ua = userAnswer?.[sq.id ?? i] ?? '';
       if (sq.type === 'multiple_choice') {
         const opts = Array.isArray(sq.options) ? sq.options : [];
         return gradeMcSelection(sq, optionTextAt(opts, ua), ua, opts);
       }
       return answersMatch(String(ua), String(sq.answer ?? ''));
-    });
-    return correct.length === subs.length;
+    }).length;
+    return correctCount === gradableIdx.length;
   }
   if (!q.answer && q.answer !== 0) return false;
   if (q.type === 'multiple_choice' || (q.options?.length && q.type !== 'short_answer' && q.type !== 'fill_blank')) {
@@ -235,6 +248,11 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
   const isShort = q?.type === 'short_answer' || (!q?.options?.length && !q?.subQuestions?.length && !q?.blanks?.length && q?.type !== 'fill_blank');
   const isFill = q?.type === 'fill_blank';
   const hasSubs = q?.subQuestions?.length > 0;
+  // If every sub-question is teacher-review, none of them ever add a key to
+  // userAnswer (no input box exists for them) — the "at least one answer
+  // given" check below must not apply, or the button would be permanently
+  // disabled with no way to type anything.
+  const hasGradableSubs = hasSubs && q.subQuestions.some((sq) => !subNeedsTeacher(sq));
 
   // Init answer state when question changes
   useEffect(() => {
@@ -713,19 +731,33 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             {(q.subQuestions || []).map((sq, i) => {
               const key = sq.id ?? i;
               const val = userAnswer?.[key] ?? '';
-              const sqCorrect = submitted && (sq.type === 'multiple_choice'
+              const sqTeacher = subNeedsTeacher(sq);
+              // Teacher-review subs have no machine-checkable answer — never
+              // marked right/wrong, so the card border stays neutral rather
+              // than defaulting to "wrong" the moment the parent is submitted.
+              const sqCorrect = !sqTeacher && submitted && (sq.type === 'multiple_choice'
                 ? gradeMcSelection(sq, optionTextAt(sq.options || [], val), val, sq.options || [])
                 : answersMatch(String(val), String(sq.answer ?? '')));
-              const sqWrong = submitted && !sqCorrect;
+              const borderColor = sqTeacher
+                ? (submitted ? '#c4b5fd' : '#e2e8f0')
+                : (submitted ? (sqCorrect ? '#10b981' : '#f43f5e') : '#e2e8f0');
               return (
-                <div key={i} style={{ padding: '16px 18px', borderRadius: '14px', background: '#f8fafc', border: `2px solid ${submitted ? (sqCorrect ? '#10b981' : '#f43f5e') : '#e2e8f0'}` }}>
+                <div key={i} style={{ padding: '16px 18px', borderRadius: '14px', background: '#f8fafc', border: `2px solid ${borderColor}` }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '10px' }}>
                     <div style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#7c3aed', color: '#fff', display: 'grid', placeItems: 'center', fontSize: '0.8rem', fontWeight: 900, flexShrink: 0 }}>
                       {String.fromCharCode(97 + i)}
                     </div>
                     <MathView content={sq.question} graphData={sq.type === 'graph_sketch' ? (submitted ? sq.graphData : null) : sq.graphData} style={{ fontWeight: 700, color: '#1e1b4b', fontSize: '0.95rem' }} />
                   </div>
-                  {sq.type === 'multiple_choice' ? (
+                  {sqTeacher ? (
+                    // No answer box — the student writes on the shared sketch
+                    // pad below the question instead. A text box here would
+                    // either sit unused or get auto-graded against a full
+                    // worked-solution string and always come back "wrong".
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '11px 14px', borderRadius: '12px', background: '#f5f3ff', border: '1.5px dashed #ddd6fe', color: '#6d28d9', fontWeight: 700, fontSize: '0.88rem' }}>
+                      <PenLine size={15} style={{ flexShrink: 0 }} /> Write your answer on the sketch pad
+                    </div>
+                  ) : sq.type === 'multiple_choice' ? (
                     <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '12px' }}>
                       {(sq.options || []).map((opt, oi) => {
                         const optText = typeof opt === 'string' ? opt : opt.text;
@@ -764,9 +796,9 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
                     />
                   )}
                   {submitted && (
-                    <div style={{ marginTop: '8px', fontSize: '0.8rem', fontWeight: 800, color: sqCorrect ? '#10b981' : '#f43f5e' }}>
-                      {sqCorrect ? '✓ Correct' : `✗ Answer: `}
-                      {!sqCorrect && <MathView content={String(sq.answer ?? '')} style={{ display: 'inline', color: '#10b981' }} />}
+                    <div style={{ marginTop: '8px', fontSize: '0.8rem', fontWeight: 800, color: sqTeacher ? '#6d28d9' : (sqCorrect ? '#10b981' : '#f43f5e') }}>
+                      {sqTeacher ? 'Pending teacher review' : (sqCorrect ? '✓ Correct' : `✗ Answer: `)}
+                      {!sqTeacher && !sqCorrect && <MathView content={String(sq.answer ?? '')} style={{ display: 'inline', color: '#10b981' }} />}
                     </div>
                   )}
                 </div>
@@ -1049,7 +1081,7 @@ const TopicPracticeSession = ({ topic, chapter, profile, onBack }) => {
             onClick={handleSubmit}
             disabled={
               userAnswer === '' || userAnswer === null ||
-              (hasSubs && Object.values(userAnswer || {}).every((v) => !v)) ||
+              (hasGradableSubs && Object.values(userAnswer || {}).every((v) => !v)) ||
               (isFill && (userAnswer || []).every((v) => !v))
             }
             whileHover={{ scale: 1.01 }}
