@@ -1787,7 +1787,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "q": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",
-    "question": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\"q": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",00\\) per year.",
+    "question": "For \\(V = 30\\,000e^{-0.4t}\\), find the year in which the car is losing value at a rate of \\(\\$100\\) per year.",
     "a": 0,
     "answer": "0",
     "opts": ["During the 12th year","During the 8th year","During the 10th year","During the 15th year"],
