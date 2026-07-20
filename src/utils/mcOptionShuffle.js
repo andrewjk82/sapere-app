@@ -95,8 +95,14 @@ export function resolveCorrectOptionIndex(question, options = optionList(questio
 
 /**
  * Prepare a shuffled MC display for a question.
- * Mutates `question` with `_shuffledAnswer` + `_shuffledAnswerIndex`.
- * Returns the shuffled options array.
+ * Mutates `question` with `_shuffledAnswer` + `_shuffledAnswerIndex` +
+ * `_shuffledOrder`. Returns the shuffled options array.
+ *
+ * `_shuffledOrder` (the permutation itself) lets a later review screen
+ * reconstruct exactly which original option sat at a given display position
+ * — needed for options whose only content is a diagram (`graphData`, no
+ * text), where the picked option's *identity* can't be recovered from its
+ * (empty) display text alone.
  *
  * @param {object} question
  * @param {{ rng?: () => number, order?: number[] }} [opts]
@@ -107,6 +113,7 @@ export function prepareShuffledMcOptions(question, opts = {}) {
     if (question) {
       question._shuffledAnswer = undefined;
       question._shuffledAnswerIndex = undefined;
+      question._shuffledOrder = undefined;
     }
     return options;
   }
@@ -119,6 +126,7 @@ export function prepareShuffledMcOptions(question, opts = {}) {
 
   const shuffled = order.map((i) => options[i]);
   question._shuffledAnswer = correctText;
+  question._shuffledOrder = order;
   if (originalIdx >= 0) {
     const newIdx = order.indexOf(originalIdx);
     question._shuffledAnswerIndex = newIdx >= 0 ? newIdx : undefined;
@@ -147,6 +155,19 @@ export function isDisplayedOptionCorrect(question, displayOptions, displayIndex)
 
   const optText = optionText(displayOptions[displayIndex]);
   const shuffled = question._shuffledAnswer !== undefined && question._shuffledAnswer !== null;
+
+  // Diagram-only options (graphData, no text — e.g. number-line sketches)
+  // can never win `answersMatch`: it treats an empty string as "never
+  // correct" on either side, so a pure text comparison silently fails every
+  // option on a question like this, no matter which one is right. Fall back
+  // to the position already resolved at shuffle/answer-key time instead of
+  // asking a text comparison to answer a question about content that has no
+  // text at all.
+  if (!optText.trim()) {
+    if (shuffled) return question._shuffledAnswerIndex === displayIndex;
+    const correctIdx = resolveCorrectOptionIndex(question, displayOptions);
+    return correctIdx >= 0 && correctIdx === displayIndex;
+  }
 
   if (shuffled) {
     return answersMatch(optText, question._shuffledAnswer);
@@ -184,6 +205,16 @@ export function gradeMcSelection(question, optionTextIn, optIdx, displayOptions)
   // text only matches the answer AFTER the same healing.
   const normalizedIn = optionText(optionTextIn);
   if (normalizedIn !== optionTextIn && answersMatch(normalizedIn, correctText)) return true;
+
+  // Diagram-only pick (graphData, no text): a text comparison can only ever
+  // say "no" here (see isDisplayedOptionCorrect), so a student who tapped the
+  // objectively correct option would otherwise always be marked wrong. Fall
+  // back to the position resolved at shuffle/answer-key time.
+  if (!optionText(optionTextIn).trim() && optIdx != null && optIdx !== '') {
+    if (shuffled) return Number(optIdx) === question._shuffledAnswerIndex;
+    const correctIdx = resolveCorrectOptionIndex(question, opts);
+    return correctIdx >= 0 && Number(optIdx) === correctIdx;
+  }
 
   // Not shuffled: a raw index answer still refers to the untouched list.
   if (!shuffled && optIdx != null && optIdx !== '') {

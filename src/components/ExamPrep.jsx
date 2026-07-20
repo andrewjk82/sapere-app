@@ -11,7 +11,7 @@ import { useToast } from '../context/ToastContext';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import MathView from './MathView';
 import MathInput from './MathInput';
-import { MATH_SYMBOLS, notifyTeacherPendingReview } from '../utils/challengeUtils';
+import { MATH_SYMBOLS, notifyTeacherPendingReview, getOptionText, getOptionImage } from '../utils/challengeUtils';
 import { gradeQuestion } from '../utils/answerMatching';
 import {
   prepareShuffledMcOptions,
@@ -503,7 +503,9 @@ const QuizView = ({
   const answerArea = q.type === 'multiple_choice' ? (
     <div style={{ display: 'grid', gap: '10px' }}>
       {(q.options || []).map((opt, i) => {
-        const optText = typeof opt === 'string' ? opt : opt.text;
+        const optText = getOptionText(opt);
+        const optImage = getOptionImage(opt);
+        const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
         const selected = draft === i;
         const isCorrect = showFeedback && isDisplayedOptionCorrect(q, q.options || [], i);
         const isWrong = showFeedback && selected && !isCorrect;
@@ -517,7 +519,12 @@ const QuizView = ({
             <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: isCorrect ? '#10b981' : selected ? '#6366f1' : '#f1f5f9', color: isCorrect || selected ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 800, fontSize: '0.85rem', flexShrink: 0 }}>
               {String.fromCharCode(65 + i)}
             </div>
-            <MathView content={optText} style={{ flex: 1, fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <MathView content={optText} graphData={optGraphData} style={{ fontSize: '1rem', color: '#1e1b4b', fontWeight: 500 }} />
+              {!!optImage && (
+                <img src={optImage} alt={`Option ${String.fromCharCode(65 + i)}`} style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
+              )}
+            </div>
             {isCorrect && <CheckCircle2 size={20} color="#10b981" />}
             {isWrong && <XCircle size={20} color="#ef4444" />}
           </button>

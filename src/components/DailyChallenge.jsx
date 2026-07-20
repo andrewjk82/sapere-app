@@ -1257,6 +1257,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         generatorType: currentQ?.generatorType || currentQ?.type || 'manual',
         difficulty: currentQ?.difficulty || 'manual',
         selectedAnswer: isGraphSketch ? 'Pending Review' : optionText,
+        // Display-index of the picked option (plain MC only — null otherwise).
+        // Options whose only content is a diagram (graphData, no text) can't be
+        // identified from `selectedAnswer` alone once it's an empty string; the
+        // review screen combines this with the question's persisted
+        // `_shuffledOrder` to recover exactly which option was picked.
+        selectedOptionIdx: optIdx,
         correct,
         pointsEarned: pEarned,
         totalPoints: tPoints,

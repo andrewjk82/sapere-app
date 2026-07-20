@@ -10,9 +10,9 @@ import WorkedSolutionSteps from './WorkedSolutionSteps';
 import LessonPlayer from '../lessons/LessonPlayer';
 import { getLesson } from '../../lessons/registry';
 import InteractiveFractionGrid from './InteractiveFractionGrid';
-import { getOptions, getOptionText } from '../../utils/challengeUtils';
+import { getOptions, getOptionText, getOptionImage } from '../../utils/challengeUtils';
 import { answersMatch } from '../../utils/answerMatching';
-import { resolveCorrectOptionText } from '../../utils/mcOptionShuffle';
+import { resolveCorrectOptionText, resolveCorrectOptionIndex } from '../../utils/mcOptionShuffle';
 
 // Resolve the "correct answer" display text — handles MC index answers and
 // shuffled-option questions stored with `_shuffledAnswer`.
@@ -145,6 +145,29 @@ const ChallengeReviewView = ({
   const studentRaw = userAnswers[idx];
   const studentText = formatStudentAnswer(q, studentRaw);
   const correctText = useMemo(() => getCorrectAnswerText(q), [q]);
+
+  // Diagram-only MC options (graphData, no text — e.g. number-line sketches)
+  // can't be identified from `studentText`/`correctText` alone once those are
+  // empty strings. Reconstruct the actual option objects (with their
+  // graphData/imageUrl) from the persisted shuffle order + picked index, so
+  // "Your answer" / "Correct answer" can render the diagram instead of a
+  // blank line or "No answer recorded" the student actually got right.
+  const isPlainMc = q.type === 'multiple_choice' && !(q.subQuestions?.length > 0);
+  const mcOptions = useMemo(() => (isPlainMc ? getOptions(q) : []), [q, isPlainMc]);
+  const correctOptIdx = useMemo(
+    () => (isPlainMc ? resolveCorrectOptionIndex(q, mcOptions) : -1),
+    [q, isPlainMc, mcOptions],
+  );
+  const correctOption = correctOptIdx >= 0 ? mcOptions[correctOptIdx] : null;
+  const correctOptGraphData = (correctOption && typeof correctOption === 'object') ? correctOption.graphData : null;
+  const correctOptImage = correctOption ? getOptionImage(correctOption) : '';
+  const shuffleOrder = Array.isArray(q._shuffledOrder) ? q._shuffledOrder : mcOptions.map((_, i) => i);
+  const studentOptIdx = result?.selectedOptionIdx;
+  const studentOption = (isPlainMc && Number.isInteger(studentOptIdx) && studentOptIdx >= 0 && studentOptIdx < shuffleOrder.length)
+    ? mcOptions[shuffleOrder[studentOptIdx]]
+    : null;
+  const studentOptGraphData = (studentOption && typeof studentOption === 'object') ? studentOption.graphData : null;
+  const studentOptImage = studentOption ? getOptionImage(studentOption) : '';
 
   // Auto-wrap plain text in $...$ so MathView renders LaTeX properly.
   // Skip if the text already contains any LaTeX delimiters ($ \( \[).
@@ -400,13 +423,20 @@ const ChallengeReviewView = ({
                   )
                 ) : studentText ? (
                   <MathView content={wrapMath(studentText)} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
+                ) : (studentOptGraphData || studentOptImage) ? (
+                  <>
+                    <MathView content={getOptionText(studentOption)} graphData={studentOptGraphData} style={{ color: '#1e1b4b', fontWeight: 500, fontSize: '1.05rem' }} />
+                    {!!studentOptImage && (
+                      <img src={studentOptImage} alt="Your answer" style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
+                    )}
+                  </>
                 ) : (
                   <div style={{ color: '#64748b', fontStyle: 'italic', fontWeight: 600 }}>No answer recorded</div>
                 )}
               </div>
 
               {/* Correct answer (only when student got it wrong / different) */}
-              {!isCorrect && !isPending && (q.type === 'interactive_grid' ? q.answer : correctText) && (
+              {!isCorrect && !isPending && (q.type === 'interactive_grid' ? q.answer : (correctText || correctOptGraphData || correctOptImage)) && (
                 <div style={{ padding: '20px 22px', borderRadius: '20px', background: '#fff', border: '1px solid #dcfce7' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px' }}>
                     <CheckCircle2 size={20} color="#10b981" />
@@ -418,8 +448,15 @@ const ChallengeReviewView = ({
                     <div style={{ fontSize: '0.95rem', color: '#065f46', fontWeight: 800 }}>
                       Shade exactly {q.answer} panel{Number(q.answer) !== 1 ? 's' : ''}
                     </div>
-                  ) : (
+                  ) : correctText ? (
                     <MathView content={wrapMath(correctText)} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
+                  ) : (
+                    <>
+                      <MathView content={getOptionText(correctOption)} graphData={correctOptGraphData} style={{ color: '#065f46', fontWeight: 500, fontSize: '1.05rem' }} />
+                      {!!correctOptImage && (
+                        <img src={correctOptImage} alt="Correct answer" style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: '8px', display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9' }} />
+                      )}
+                    </>
                   )}
                 </div>
               )}
