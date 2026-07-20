@@ -745,6 +745,7 @@ const ChallengeQuizView = ({
               {displayOptions.map((opt, i) => {
                 const optText = getOptionText(opt);
                 const optImage = getOptionImage(opt);
+                const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
                 const isSelected = selectedOptionIdx === i;
 
                 let status = 'default';
@@ -754,7 +755,7 @@ const ChallengeQuizView = ({
                   else if (isSelected) status = 'wrong';
                 }
 
-                const hasImage = !!optImage;
+                const hasImage = !!optImage || !!optGraphData;
                 return (
                   <button
                     key={i}
@@ -788,10 +789,10 @@ const ChallengeQuizView = ({
                         {String.fromCharCode(65 + i)}
                       </div>
                       <div style={{ flex: 1, minWidth: 0 }}>
-                        {(!hasImage || (optText && optText !== String.fromCharCode(65 + i))) && (
-                          <MathView content={optText} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />
+                        {(!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) && (
+                          <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />
                         )}
-                        {hasImage && (
+                        {!!optImage && (
                           <img
                             src={optImage}
                             alt={`Option ${String.fromCharCode(65 + i)}`}
