@@ -475,6 +475,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   hint: liveData.hint,
                   graphData: liveData.graphData,
                   subQuestions: liveData.subQuestions,
+                  options: liveData.options,
                 };
               }
             } catch (err) {
