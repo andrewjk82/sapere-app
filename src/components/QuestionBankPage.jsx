@@ -489,7 +489,18 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
                 <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Question Bank</span>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {total}</div>
-                  {q?.id && <span style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', userSelect: 'all' }}>ID: {q.id}</span>}
+                  {q?.id && (
+                    <span
+                      onClick={() => {
+                        navigator.clipboard.writeText(q.id);
+                        showToast('Question ID copied', 'success');
+                      }}
+                      title="Click to copy ID"
+                      style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', userSelect: 'all', cursor: 'pointer' }}
+                    >
+                      ID: {q.id}
+                    </span>
+                  )}
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
