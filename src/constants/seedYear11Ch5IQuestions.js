@@ -1,766 +1,1208 @@
 export const Y11_CH5I_QUESTIONS = [
   {
     "id": "y11a-5i-q1a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Evaluate: $|7|$",
-    "a": "7",
-    "h": "The absolute value of a positive number is the number itself.",
-    "s": "$|7| = 7$.",
+    "question": "Evaluate: \\(|7|\\)",
+    "opts": [
+      "\\(-7\\)",
+      "\\(6\\)",
+      "\\(7\\)",
+      "\\(8\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "The absolute value of a positive number is the number itself.",
+    "solution": "\\(|7| = 7\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the absolute value of 7.",
-        "workingOut": "|7| = 7",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(|7| = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(7\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q1b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Evaluate: $|4 - 12|$",
-    "a": "8",
-    "h": "Evaluate the expression inside the absolute value first.",
-    "s": "$|4 - 12| = |-8| = 8$.",
+    "question": "Evaluate: \\(|4 - 12|\\)",
+    "opts": [
+      "\\(-8\\)",
+      "\\(7\\)",
+      "\\(8\\)",
+      "\\(9\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Evaluate the expression inside the absolute value first.",
+    "solution": "\\(|4 - 12| = |-8| = 8\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the subtraction inside the absolute value.",
-        "workingOut": "4 - 12 = -8",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(4 - 12 = -8\\)",
         "graphData": null
       },
       {
-        "explanation": "Take the absolute value of -8.",
-        "workingOut": "|-8| = 8",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(|-8| = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(8\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q1c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Evaluate: $|-3 - (-9)|$",
-    "a": "6",
-    "h": "Subtracting a negative number is equivalent to adding its positive counterpart.",
-    "s": "$|-3 - (-9)| = |-3 + 9| = |6| = 6$.",
+    "question": "Evaluate: \\(|-3 - (-9)|\\)",
+    "opts": [
+      "\\(-6\\)",
+      "\\(5\\)",
+      "\\(6\\)",
+      "\\(7\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Subtracting a negative number is equivalent to adding its positive counterpart.",
+    "solution": "\\(|-3 - (-9)| = |-3 + 9| = |6| = 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Simplify the signs inside the absolute value.",
-        "workingOut": "-3 - (-9) = -3 + 9",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(-3 - (-9) = -3 + 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the addition.",
-        "workingOut": "-3 + 9 = 6",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(-3 + 9 = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Take the absolute value of 6.",
-        "workingOut": "|6| = 6",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(|6| = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(6\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q1d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Evaluate: $|-4| - |-6|$",
-    "a": "-2",
-    "h": "Evaluate each absolute value first, then subtract.",
-    "s": "$|-4| - |-6| = 4 - 6 = -2$.",
+    "question": "Evaluate: \\(|-4| - |-6|\\)",
+    "opts": [
+      "\\(-1\\)",
+      "\\(-2\\)",
+      "\\(-3\\)",
+      "\\(2\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Evaluate each absolute value first, then subtract.",
+    "solution": "\\(|-4| - |-6| = 4 - 6 = -2\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the first absolute value.",
-        "workingOut": "|-4| = 4",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(|-4| = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the second absolute value.",
-        "workingOut": "|-6| = 6",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(|-6| = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Perform the subtraction.",
-        "workingOut": "4 - 6 = -2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(4 - 6 = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(-2\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q2a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Solve for $x$: $|4x| = 24$",
-    "a": "0",
+    "question": "Solve for \\(x\\): \\(|4x| = 24\\)",
     "opts": [
-      "$x = 6$ or $x = -6$",
-      "$x = 6$ only",
-      "$x = -6$ only",
+      "\\(x = 6\\) or \\(x = -6\\)",
+      "\\(\\(x = 6\\) only\\)",
+      "\\(\\(x = -6\\) only\\)",
       "No solution"
     ],
-    "h": "Set up two linear equations: one positive and one negative.",
-    "s": "$4x = 24 \\implies x = 6$. Or $4x = -24 \\implies x = -6$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Set up two linear equations: one positive and one negative.",
+    "solution": "\\(4x = 24 \\implies x = 6\\). Or \\(4x = -24 \\implies x = -6\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations for the absolute value equality.",
-        "workingOut": "4x = 24 \\quad \\text{or} \\quad 4x = -24",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(4x = 24 \\quad \\text{or} \\quad 4x = -24\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first equation.",
-        "workingOut": "x = 6",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second equation.",
-        "workingOut": "x = -6",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(x = -6\\)",
         "graphData": null
       },
       {
-        "explanation": "State the combined solution.",
-        "workingOut": "x = 6 \\text{ or } x = -6",
+        "explanation": "Final answer: x = 6\\) or \\(x = -6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 6\\) or \\(x = -6\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q2b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Solve for $x$: $|x - 3| = 5$",
-    "a": "0",
+    "question": "Solve for \\(x\\): \\(|x - 3| = 5\\)",
     "opts": [
-      "$x = 8$ or $x = -2$",
-      "$x = 8$ or $x = 2$",
-      "$x = -8$ or $x = 2$",
+      "\\(x = 8\\) or \\(x = -2\\)",
+      "\\(x = 8\\) or \\(x = 2\\)",
+      "\\(x = -8\\) or \\(x = 2\\)",
       "No solution"
     ],
-    "h": "Set up equations for $x - 3 = 5$ and $x - 3 = -5$.",
-    "s": "$x - 3 = 5 \\implies x = 8$. Or $x - 3 = -5 \\implies x = -2$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Set up equations for \\(x - 3 = 5\\) and \\(x - 3 = -5\\).",
+    "solution": "\\(x - 3 = 5 \\implies x = 8\\). Or \\(x - 3 = -5 \\implies x = -2\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the two equations.",
-        "workingOut": "x - 3 = 5 \\quad \\text{or} \\quad x - 3 = -5",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x - 3 = 5 \\quad \\text{or} \\quad x - 3 = -5\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first equation by adding 3.",
-        "workingOut": "x = 8",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second equation by adding 3.",
-        "workingOut": "x = -2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x = 8\\) or \\(x = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 8\\) or \\(x = -2\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q2c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Solve for $x$: $|3x - 4| = 11$",
-    "a": "0",
+    "question": "Solve for \\(x\\): \\(|3x - 4| = 11\\)",
     "opts": [
-      "$x = 5$ or $x = -\\frac{7}{3}$",
-      "$x = 5$ or $x = \\frac{7}{3}$",
-      "$x = -5$ or $x = \\frac{7}{3}$",
+      "\\(x = 5\\) or \\(x = -\\frac{7}{3}\\)",
+      "\\(x = 5\\) or \\(x = \\frac{7}{3}\\)",
+      "\\(x = -5\\) or \\(x = \\frac{7}{3}\\)",
       "No solution"
     ],
-    "h": "Solve $3x - 4 = 11$ and $3x - 4 = -11$.",
-    "s": "$3x - 4 = 11 \\implies 3x = 15 \\implies x = 5$. Or $3x - 4 = -11 \\implies 3x = -7 \\implies x = -\\frac{7}{3}$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Solve \\(3x - 4 = 11\\) and \\(3x - 4 = -11\\).",
+    "solution": "\\(3x - 4 = 11 \\implies 3x = 15 \\implies x = 5\\). Or \\(3x - 4 = -11 \\implies 3x = -7 \\implies x = -\\frac{7}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up two equations.",
-        "workingOut": "3x - 4 = 11 \\quad \\text{or} \\quad 3x - 4 = -11",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(3x - 4 = 11 \\quad \\text{or} \\quad 3x - 4 = -11\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first equation.",
-        "workingOut": "3x = 15 \\implies x = 5",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(3x = 15 \\implies x = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second equation.",
-        "workingOut": "3x = -7 \\implies x = -\\frac{7}{3}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(3x = -7 \\implies x = -\\frac{7}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x = 5\\) or \\(x = -\\frac{7}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 5\\) or \\(x = -\\frac{7}{3}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q2d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Solve for $x$: $|2x - 5| = 9$",
-    "a": "0",
+    "question": "Solve for \\(x\\): \\(|2x - 5| = 9\\)",
     "opts": [
-      "$x = 7$ or $x = -2$",
-      "$x = 7$ or $x = 2$",
-      "$x = -7$ or $x = 2$",
+      "\\(x = 7\\) or \\(x = -2\\)",
+      "\\(x = 7\\) or \\(x = 2\\)",
+      "\\(x = -7\\) or \\(x = 2\\)",
       "No solution"
     ],
-    "h": "Set up equations $2x - 5 = 9$ and $2x - 5 = -9$.",
-    "s": "$2x - 5 = 9 \\implies 2x = 14 \\implies x = 7$. Or $2x - 5 = -9 \\implies 2x = -4 \\implies x = -2$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Set up equations \\(2x - 5 = 9\\) and \\(2x - 5 = -9\\).",
+    "solution": "\\(2x - 5 = 9 \\implies 2x = 14 \\implies x = 7\\). Or \\(2x - 5 = -9 \\implies 2x = -4 \\implies x = -2\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the two equations.",
-        "workingOut": "2x - 5 = 9 \\quad \\text{or} \\quad 2x - 5 = -9",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(2x - 5 = 9 \\quad \\text{or} \\quad 2x - 5 = -9\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first equation.",
-        "workingOut": "2x = 14 \\implies x = 7",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(2x = 14 \\implies x = 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second equation.",
-        "workingOut": "2x = -4 \\implies x = -2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(2x = -4 \\implies x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x = 7\\) or \\(x = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 7\\) or \\(x = -2\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q3a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Explain how to shift the graph of $y = x^2$ to obtain the function $y = x^2 + 6$.",
-    "a": "0",
+    "question": "Explain how to shift the graph of \\(y = x^2\\) to obtain the function \\(y = x^2 + 6\\).",
     "opts": [
-      "Shift $6$ units upwards",
-      "Shift $6$ units downwards",
-      "Shift $6$ units right",
-      "Shift $6$ units left"
+      "Shift \\(6\\) units upwards",
+      "Shift \\(6\\) units downwards",
+      "Shift \\(6\\) units right",
+      "Shift \\(6\\) units left"
     ],
-    "h": "Adding a constant to the function shifts the graph vertically.",
-    "s": "The $+6$ term shifts the graph vertically upwards by 6 units.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Adding a constant to the function shifts the graph vertically.",
+    "solution": "The \\(+6\\) term shifts the graph vertically upwards by 6 units.",
     "solutionSteps": [
       {
-        "explanation": "Identify the translation constant.",
-        "workingOut": "c = +6",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(c = +6\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Shift upwards by 6 units}\\)",
         "graphData": null
       },
       {
-        "explanation": "Describe the vertical translation.",
-        "workingOut": "\\text{Shift upwards by 6 units}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift \\(6\\) units upwards",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift \\(6\\) units upwards. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift \\(6\\) units upwards",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q3b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Explain how to shift the graph of $y = x^2$ to obtain the function $y = x^2 - 3$.",
-    "a": "0",
+    "question": "Explain how to shift the graph of \\(y = x^2\\) to obtain the function \\(y = x^2 - 3\\).",
     "opts": [
-      "Shift $3$ units downwards",
-      "Shift $3$ units upwards",
-      "Shift $3$ units right",
-      "Shift $3$ units left"
+      "Shift \\(3\\) units downwards",
+      "Shift \\(3\\) units upwards",
+      "Shift \\(3\\) units right",
+      "Shift \\(3\\) units left"
     ],
-    "h": "Subtracting a constant shifts the graph vertically.",
-    "s": "The $-3$ term shifts the graph vertically downwards by 3 units.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Subtracting a constant shifts the graph vertically.",
+    "solution": "The \\(-3\\) term shifts the graph vertically downwards by 3 units.",
     "solutionSteps": [
       {
-        "explanation": "Identify the translation constant.",
-        "workingOut": "c = -3",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(c = -3\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Shift downwards by 3 units}\\)",
         "graphData": null
       },
       {
-        "explanation": "Describe the vertical translation.",
-        "workingOut": "\\text{Shift downwards by 3 units}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift \\(3\\) units downwards",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift \\(3\\) units downwards. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift \\(3\\) units downwards",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q3c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Explain how to shift the graph of $y = x^2$ to obtain the function $y = (x - 4)^2$.",
-    "a": "0",
+    "question": "Explain how to shift the graph of \\(y = x^2\\) to obtain the function \\(y = (x - 4)^2\\).",
     "opts": [
-      "Shift $4$ units right",
-      "Shift $4$ units left",
-      "Shift $4$ units upwards",
-      "Shift $4$ units downwards"
+      "Shift \\(4\\) units right",
+      "Shift \\(4\\) units left",
+      "Shift \\(4\\) units upwards",
+      "Shift \\(4\\) units downwards"
     ],
-    "h": "Subtracting a constant directly from $x$ shifts the graph horizontally.",
-    "s": "Replacing $x$ with $(x - 4)$ translates the graph horizontally to the right by 4 units.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Subtracting a constant directly from \\(x\\) shifts the graph horizontally.",
+    "solution": "Replacing \\(x\\) with \\((x - 4)\\) translates the graph horizontally to the right by 4 units.",
     "solutionSteps": [
       {
-        "explanation": "Identify the horizontal shift term.",
-        "workingOut": "x \\to x - 4",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x - 4\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Shift right by 4 units}\\)",
         "graphData": null
       },
       {
-        "explanation": "Describe the horizontal translation.",
-        "workingOut": "\\text{Shift right by 4 units}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift \\(4\\) units right",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift \\(4\\) units right. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift \\(4\\) units right",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q3d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Explain how to shift the graph of $y = x^2$ to obtain the function $y = (x + 5)^2 + 8$.",
-    "a": "0",
+    "question": "Explain how to shift the graph of \\(y = x^2\\) to obtain the function \\(y = (x + 5)^2 + 8\\).",
     "opts": [
-      "Shift $5$ units left and $8$ units upwards",
-      "Shift $5$ units right and $8$ units upwards",
-      "Shift $5$ units left and $8$ units downwards",
-      "Shift $5$ units right and $8$ units downwards"
+      "Shift \\(5\\) units left and \\(8\\) units upwards",
+      "Shift \\(5\\) units right and \\(8\\) units upwards",
+      "Shift \\(5\\) units left and \\(8\\) units downwards",
+      "Shift \\(5\\) units right and \\(8\\) units downwards"
     ],
-    "h": "Combine both horizontal and vertical shifts.",
-    "s": "Replacing $x$ with $(x + 5)$ shifts the graph 5 units left. Adding 8 shifts it 8 units up.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Combine both horizontal and vertical shifts.",
+    "solution": "Replacing \\(x\\) with \\((x + 5)\\) shifts the graph 5 units left. Adding 8 shifts it 8 units up.",
     "solutionSteps": [
       {
-        "explanation": "Identify the horizontal shift from \\((x + 5)\\).",
-        "workingOut": "\\text{Shift left by 5 units}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Shift left by 5 units}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Shift up by 8 units}\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the vertical shift from \\(+8\\).",
-        "workingOut": "\\text{Shift up by 8 units}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift \\(5\\) units left and \\(8\\) units upwards",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift \\(5\\) units left and \\(8\\) units upwards. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift \\(5\\) units left and \\(8\\) units upwards",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q4a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Write down the centre and radius of the circle: $x^2 + y^2 = 9$",
-    "a": "0",
+    "question": "Write down the centre and radius of the circle: \\(x^2 + y^2 = 9\\)",
     "opts": [
-      "Centre $(0,0)$, radius $3$",
-      "Centre $(0,0)$, radius $9$",
-      "Centre $(3,3)$, radius $9$",
-      "Centre $(0,0)$, radius $\\sqrt{3}$"
+      "Centre \\((0,0)\\), radius \\(3\\)",
+      "Centre \\((0,0)\\), radius \\(9\\)",
+      "Centre \\((3,3)\\), radius \\(9\\)",
+      "\\(Centre \\((0,0)\\), radius \\(\\sqrt{3}\\)\\)"
     ],
-    "h": "Compare to the standard form $x^2 + y^2 = r^2$.",
-    "s": "$r^2 = 9 \\implies r = 3$. The centre is at $(0,0)$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Compare to the standard form \\(x^2 + y^2 = r^2\\).",
+    "solution": "\\(r^2 = 9 \\implies r = 3\\). The centre is at \\((0,0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Compare to standard equation \\(x^2 + y^2 = r^2\\).",
-        "workingOut": "r^2 = 9",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(r^2 = 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for radius \\(r\\).",
-        "workingOut": "r = 3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(r = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "State centre and radius.",
-        "workingOut": "\\text{Centre: } (0,0), text{ Radius: } 3",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Centre: } (0,0), text{ Radius: } 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre \\((0,0)\\), radius \\(3\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre \\((0,0)\\), radius \\(3\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q4b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Write down the centre and radius of the circle: $(x + 3)^2 + y^2 = 16$",
-    "a": "0",
+    "question": "Write down the centre and radius of the circle: \\((x + 3)^2 + y^2 = 16\\)",
     "opts": [
-      "Centre $(-3,0)$, radius $4$",
-      "Centre $(3,0)$, radius $4$",
-      "Centre $(0,-3)$, radius $4$",
-      "Centre $(-3,0)$, radius $16$"
+      "Centre \\((-3,0)\\), radius \\(4\\)",
+      "Centre \\((3,0)\\), radius \\(4\\)",
+      "Centre \\((0,-3)\\), radius \\(4\\)",
+      "Centre \\((-3,0)\\), radius \\(16\\)"
     ],
-    "h": "Compare to $(x - h)^2 + (y - k)^2 = r^2$.",
-    "s": "$h = -3, k = 0$. $r^2 = 16 \\implies r = 4$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Compare to \\((x - h)^2 + (y - k)^2 = r^2\\).",
+    "solution": "\\(h = -3, k = 0\\). \\(r^2 = 16 \\implies r = 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Compare to standard circle formula.",
-        "workingOut": "(x - h)^2 + (y - k)^2 = r^2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\((x - h)^2 + (y - k)^2 = r^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify \\(h, k, r\\).",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
         "workingOut": "h = -3, quad k = 0, quad r^2 = 16",
         "graphData": null
       },
       {
-        "explanation": "Solve for radius.",
-        "workingOut": "r = 4",
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y11a-5i-q4c",
-    "c": "5I",
-    "t": "Revision",
-    "type": "multiple_choice",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "q": "Write down the centre and radius of the circle: $(x - 4)^2 + (y + 5)^2 = 7$",
-    "a": "0",
-    "opts": [
-      "Centre $(4,-5)$, radius $\\sqrt{7}$",
-      "Centre $(-4,5)$, radius $\\sqrt{7}$",
-      "Centre $(4,-5)$, radius $7$",
-      "Centre $(-4,5)$, radius $7$"
-    ],
-    "h": "Identify the transformations on $x$ and $y$.",
-    "s": "Centre is $(4,-5)$, and radius is $r = \\sqrt{7}$.",
-    "solutionSteps": [
-      {
-        "explanation": "Identify the centre from \\((x - 4)\\) and \\((y + 5)\\).",
-        "workingOut": "\\text{Centre: } (4, -5)",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(r = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Find the radius from the right-hand side.",
-        "workingOut": "r^2 = 7 \\implies r = \\sqrt{7}",
+        "explanation": "Final answer: Centre \\((-3,0)\\), radius \\(4\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre \\((-3,0)\\), radius \\(4\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
-    "id": "y11a-5i-q4d",
+    "id": "y11a-5i-q4c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Write down the centre and radius of the circle: $x^2 + (y - 5)^2 = 36$",
-    "a": "0",
+    "question": "Write down the centre and radius of the circle: \\((x - 4)^2 + (y + 5)^2 = 7\\)",
     "opts": [
-      "Centre $(0,5)$, radius $6$",
-      "Centre $(0,-5)$, radius $6$",
-      "Centre $(5,0)$, radius $6$",
-      "Centre $(0,5)$, radius $36$"
+      "\\(Centre \\((4,-5)\\), radius \\(\\sqrt{7}\\)\\)",
+      "\\(Centre \\((-4,5)\\), radius \\(\\sqrt{7}\\)\\)",
+      "Centre \\((4,-5)\\), radius \\(7\\)",
+      "Centre \\((-4,5)\\), radius \\(7\\)"
     ],
-    "h": "Compare to standard form.",
-    "s": "Centre is $(0,5)$ and $r^2 = 36 \\implies r = 6$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Identify the transformations on \\(x\\) and \\(y\\).",
+    "solution": "Centre is \\((4,-5)\\), and radius is \\(r = \\sqrt{7}\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify parameters.",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Centre: } (4, -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(r^2 = 7 \\implies r = \\sqrt{7}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(Centre \\((4,-5)\\), radius \\(\\sqrt{7}\\)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre \\((4,-5)\\), radius \\(\\sqrt{7}\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(Centre \\((4,-5)\\), radius \\(\\sqrt{7}\\)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y11a-5i-q4d",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "Write down the centre and radius of the circle: \\(x^2 + (y - 5)^2 = 36\\)",
+    "opts": [
+      "Centre \\((0,5)\\), radius \\(6\\)",
+      "Centre \\((0,-5)\\), radius \\(6\\)",
+      "Centre \\((5,0)\\), radius \\(6\\)",
+      "Centre \\((0,5)\\), radius \\(36\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Compare to standard form.",
+    "solution": "Centre is \\((0,5)\\) and \\(r^2 = 36 \\implies r = 6\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
         "workingOut": "h = 0, quad k = 5, quad r^2 = 36",
         "graphData": null
       },
       {
-        "explanation": "Solve for radius.",
-        "workingOut": "r = 6",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(r = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Centre \\((0,5)\\), radius \\(6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre \\((0,5)\\), radius \\(6\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre \\((0,5)\\), radius \\(6\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q5a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Find the function obtained when $y = x^3 - 4x + 2$ is reflected in the $y$-axis.",
-    "a": "0",
+    "question": "Find the function obtained when \\(y = x^3 - 4x + 2\\) is reflected in the \\(y\\)-axis.",
     "opts": [
-      "$y = -x^3 + 4x + 2$",
-      "$y = -x^3 - 4x + 2$",
-      "$y = x^3 - 4x - 2$",
-      "$y = -x^3 + 4x - 2$"
+      "\\(y = -x^3 + 4x + 2\\)",
+      "\\(y = -x^3 - 4x + 2\\)",
+      "\\(y = x^3 - 4x - 2\\)",
+      "\\(y = -x^3 + 4x - 2\\)"
     ],
-    "h": "To reflect in the $y$-axis, substitute $-x$ for $x$.",
-    "s": "$y = (-x)^3 - 4(-x) + 2 = -x^3 + 4x + 2$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "To reflect in the \\(y\\)-axis, substitute \\(-x\\) for \\(x\\).",
+    "solution": "\\(y = (-x)^3 - 4(-x) + 2 = -x^3 + 4x + 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\) in the equation.",
-        "workingOut": "y = (-x)^3 - 4(-x) + 2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = (-x)^3 - 4(-x) + 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the powers of negative numbers.",
-        "workingOut": "(-x)^3 = -x^3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((-x)^3 = -x^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the final simplified equation.",
-        "workingOut": "y = -x^3 + 4x + 2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = -x^3 + 4x + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -x^3 + 4x + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = -x^3 + 4x + 2\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q5b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Find the function obtained when $y = x^2 - 5x - 6$ is reflected in the $x$-axis.",
-    "a": "0",
+    "question": "Find the function obtained when \\(y = x^2 - 5x - 6\\) is reflected in the \\(x\\)-axis.",
     "opts": [
-      "$y = -x^2 + 5x + 6$",
-      "$y = -x^2 - 5x - 6$",
-      "$y = x^2 + 5x + 6$",
-      "$y = -x^2 + 5x - 6$"
+      "\\(y = -x^2 + 5x + 6\\)",
+      "\\(y = -x^2 - 5x - 6\\)",
+      "\\(y = x^2 + 5x + 6\\)",
+      "\\(y = -x^2 + 5x - 6\\)"
     ],
-    "h": "To reflect in the $x$-axis, negate the entire function: $y = -f(x)$.",
-    "s": "$y = -(x^2 - 5x - 6) = -x^2 + 5x + 6$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "To reflect in the \\(x\\)-axis, negate the entire function: \\(y = -f(x)\\).",
+    "solution": "\\(y = -(x^2 - 5x - 6) = -x^2 + 5x + 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Negate the right-hand side of the equation.",
-        "workingOut": "y = -(x^2 - 5x - 6)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = -(x^2 - 5x - 6)\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y = -x^2 + 5x + 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Distribute the negative sign.",
-        "workingOut": "y = -x^2 + 5x + 6",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = -x^2 + 5x + 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -x^2 + 5x + 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = -x^2 + 5x + 6\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q5c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Find the function obtained when $y = 3^x - x$ is rotated $180^{\\circ}$ about the origin.",
-    "a": "0",
+    "question": "Find the function obtained when \\(y = 3^x - x\\) is rotated \\(180^{\\circ}\\) about the origin.",
     "opts": [
-      "$y = -3^{-x} - x$",
-      "$y = -3^{-x} + x$",
-      "$y = 3^{-x} - x$",
-      "$y = -3^x + x$"
+      "\\(y = -3^{-x} - x\\)",
+      "\\(y = -3^{-x} + x\\)",
+      "\\(y = 3^{-x} - x\\)",
+      "\\(y = -3^x + x\\)"
     ],
-    "h": "Rotation of $180^{\\circ}$ about the origin corresponds to replacing $x$ with $-x$ and $y$ with $-y$.",
-    "s": "$-y = 3^{-x} - (-x) \\implies -y = 3^{-x} + x \\implies y = -3^{-x} - x$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Rotation of \\(180^{\\circ}\\) about the origin corresponds to replacing \\(x\\) with \\(-x\\) and \\(y\\) with \\(-y\\).",
+    "solution": "\\(-y = 3^{-x} - (-x) \\implies -y = 3^{-x} + x \\implies y = -3^{-x} - x\\).",
     "solutionSteps": [
       {
-        "explanation": "Replace \\(x\\) with \\(-x\\) and \\(y\\) with \\(-y\\).",
-        "workingOut": "-y = 3^{-x} - (-x)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(-y = 3^{-x} - (-x)\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the right-hand side.",
-        "workingOut": "-y = 3^{-x} + x",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(-y = 3^{-x} + x\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(y\\) by multiplying by -1.",
-        "workingOut": "y = -(3^{-x} + x) = -3^{-x} - x",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = -(3^{-x} + x) = -3^{-x} - x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -3^{-x} - x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = -3^{-x} - x\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q5d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Find the function obtained when $y = \\sqrt{16 - x^2}$ is reflected in the $y$-axis.",
-    "a": "0",
+    "question": "Find the function obtained when \\(y = \\sqrt{16 - x^2}\\) is reflected in the \\(y\\)-axis.",
     "opts": [
-      "$y = \\sqrt{16 - x^2}$",
-      "$y = -\\sqrt{16 - x^2}$",
-      "$y = \\sqrt{16 + x^2}$",
-      "$y = \\sqrt{x^2 - 16}$"
+      "\\(y = \\sqrt{16 - x^2}\\)",
+      "\\(y = -\\sqrt{16 - x^2}\\)",
+      "\\(y = \\sqrt{16 + x^2}\\)",
+      "\\(y = \\sqrt{x^2 - 16}\\)"
     ],
-    "h": "Substitute $-x$ for $x$. Recall that $(-x)^2 = x^2$.",
-    "s": "$y = \\sqrt{16 - (-x)^2} = \\sqrt{16 - x^2}$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Substitute \\(-x\\) for \\(x\\). Recall that \\((-x)^2 = x^2\\).",
+    "solution": "\\(y = \\sqrt{16 - (-x)^2} = \\sqrt{16 - x^2}\\).",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\).",
-        "workingOut": "y = \\sqrt{16 - (-x)^2}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = \\sqrt{16 - (-x)^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify \\((-x)^2\\).",
-        "workingOut": "(-x)^2 = x^2",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((-x)^2 = x^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Write the final equation.",
-        "workingOut": "y = \\sqrt{16 - x^2}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = \\sqrt{16 - x^2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = \\sqrt{16 - x^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = \\sqrt{16 - x^2}\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q6a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Classify the function $y = f(x)$ shown in the graph below as odd, even, or neither.",
-    "a": "0",
+    "question": "Classify the function \\(y = f(x)\\) shown in the graph below as odd, even, or neither.",
     "opts": [
-      "Odd",
-      "Even",
-      "Neither",
-      "Both"
+      "\\(Odd\\)",
+      "\\(Even\\)",
+      "\\(Neither\\)",
+      "\\(Both\\)"
     ],
-    "h": "Look at the symmetry of the graph about the origin.",
-    "s": "The graph has $180^{\\circ}$ rotational symmetry about the origin, which means $f(-x) = -f(x)$. Thus, it is an odd function.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Look at the symmetry of the graph about the origin.",
+    "solution": "The graph has \\(180^{\\circ}\\) rotational symmetry about the origin, which means \\(f(-x) = -f(x)\\). Thus, it is an odd function.",
     "solutionSteps": [
       {
-        "explanation": "Observe the rotational symmetry of the function. It maps onto itself when rotated \\(180^{\\circ}\\) around \\((0,0)\\).",
-        "workingOut": "f(-x) = -f(x) \\implies \\text{Odd}",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x/3; }, -3, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = -f(x) \\implies \\text{Odd}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(Odd\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Odd. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(Odd\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q6b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Classify the function $y = f(x)$ shown in the graph below as odd, even, or neither.",
-    "a": "0",
+    "question": "Classify the function \\(y = f(x)\\) shown in the graph below as odd, even, or neither.",
     "opts": [
-      "Neither",
-      "Odd",
-      "Even",
-      "Both"
+      "\\(Neither\\)",
+      "\\(Odd\\)",
+      "\\(Even\\)",
+      "\\(Both\\)"
     ],
-    "h": "Check if the graph is symmetric across the $y$-axis or about the origin.",
-    "s": "The graph is not symmetric about the $y$-axis nor the origin. Thus, it is neither.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Check if the graph is symmetric across the \\(y\\)-axis or about the origin.",
+    "solution": "The graph is not symmetric about the \\(y\\)-axis nor the origin. Thus, it is neither.",
     "solutionSteps": [
       {
-        "explanation": "Observe that the local maximum and local minimum are asymmetric, and it does not satisfy even or odd symmetry.",
-        "workingOut": "\\text{Neither}",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x*x*x - 2*x*x)/3; }, -2, 3.2], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Neither}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(Neither\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Neither. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(Neither\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q6c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Classify the function $y = f(x)$ shown in the graph below as odd, even, or neither.",
-    "a": "0",
+    "question": "Classify the function \\(y = f(x)\\) shown in the graph below as odd, even, or neither.",
     "opts": [
-      "Even",
-      "Odd",
-      "Neither",
-      "Both"
+      "\\(Even\\)",
+      "\\(Odd\\)",
+      "\\(Neither\\)",
+      "\\(Both\\)"
     ],
-    "h": "Observe the line of symmetry.",
-    "s": "The graph is symmetric across the $y$-axis, meaning $f(-x) = f(x)$. Thus, it is an even function.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Observe the line of symmetry.",
+    "solution": "The graph is symmetric across the \\(y\\)-axis, meaning \\(f(-x) = f(x)\\). Thus, it is an even function.",
     "solutionSteps": [
       {
-        "explanation": "The graph is symmetric with respect to reflection across the \\(y\\)-axis.",
-        "workingOut": "f(-x) = f(x) \\implies \\text{Even}",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/2 - 2; }, -3, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = f(x) \\implies \\text{Even}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(Even\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Even. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(Even\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q7a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "The diagram below shows the left branch ($x < 0$) of a function $y = f(x)$. Complete the graph in your workbook so that:\ni) $f(x)$ is odd.\nii) $f(x)$ is even.",
-    "a": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half. ii) Reflect the left branch across the y-axis for the right half.",
-    "h": "For an odd function, rotate the branch 180 degrees. For even, reflect it horizontally.",
-    "s": "Odd function: right half lies in quadrant 1 and goes upwards. Even function: right half lies in quadrant 4 and goes downwards.",
+    "question": "The diagram below shows the left branch (\\(x < 0\\)) of a function \\(y = f(x)\\). Complete the graph in your workbook so that:\ni) \\(f(x)\\) is odd.\nii) \\(f(x)\\) is even.",
+    "answer": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+    "hint": "For an odd function, rotate the branch 180 degrees. For even, reflect it horizontally.",
+    "solution": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "y = f(x). Complete the graph in your workbook so that:",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x/3; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "i) Reflect the left branch in the origin (rotate 180 degrees) for the right half.\nii) Reflect the left branch across the y-axis for the right half.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -777,60 +1219,58 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x/3; }, -3, 0], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "To make \\(f(x)\\) odd, rotate the left half by \\(180^{\\circ}\\) about the origin to get the right half.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x/3; }, -3, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      },
-      {
-        "explanation": "To make \\(f(x)\\) even, reflect the left half across the \\(y\\)-axis to get the right half.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x < 0 ? x*x*x/3 : -x*x*x/3; }, -3, 3], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q7b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "The diagram below shows the right branch ($x > 0$) of a function $y = g(x)$. Complete the graph in your workbook so that:\ni) $g(x)$ is odd.\nii) $g(x)$ is even.",
-    "a": "i) Rotate the right branch 180 degrees. ii) Reflect the right branch across the y-axis.",
-    "h": "Odd functions have point symmetry; even functions have line symmetry across the $y$-axis.",
-    "s": "Odd: left branch starts at the origin and goes downwards to the left. Even: left branch starts at the origin and goes upwards to the left.",
+    "question": "The diagram below shows the right branch (\\(x > 0\\)) of a function \\(y = g(x)\\). Complete the graph in your workbook so that:\ni) \\(g(x)\\) is odd.\nii) \\(g(x)\\) is even.",
+    "answer": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+    "hint": "Odd functions have point symmetry; even functions have line symmetry across the \\(y\\)-axis.",
+    "solution": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "y = g(x). Complete the graph in your workbook so that:",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/2; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "i) Rotate the right branch 180 degrees.\nii) Reflect the right branch across the y-axis.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -847,1262 +1287,1624 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/2; }, 0, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "i) For an odd function, rotate the right branch \\(180^{\\circ}\\) about the origin.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x < 0 ? -x*x/2 : x*x/2; }, -3, 3], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      },
-      {
-        "explanation": "ii) For an even function, reflect the right branch across the \\(y\\)-axis.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              4,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x/2; }, -3, 3], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q8a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |x| - 3$, indicating the vertex.",
-    "a": "V-shaped graph with vertex at (0, -3).",
-    "h": "Apply a vertical shift to the standard absolute value graph.",
-    "s": "The graph is a V-shape shifted 3 units down. The vertex is at $(0, -3)$.",
+    "question": "Sketch the graph of \\(y = |x| - 3\\), indicating the vertex.",
+    "answer": "V-shaped graph with vertex at (0, -3).",
+    "hint": "Apply a vertical shift to the standard absolute value graph.",
+    "solution": "V-shaped graph with vertex at (0, -3).",
     "solutionSteps": [
       {
-        "explanation": "Start with \\(y = |x|\\) which has a vertex at \\((0,0)\\).",
-        "workingOut": "y = |x| \\implies \\text{Vertex } (0,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |x| \\implies \\text{Vertex } (0,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Translate the graph vertically downwards by 3 units.",
-        "workingOut": "(0,0) \\to (0, -3)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0,0) \\to (0, -3)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the final curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              5,
-              5,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(x) - 3; }, -5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,-3], {name:'(0,-3)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "V-shaped graph with vertex at (0, -3).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: V-shaped graph with vertex at (0, -3).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "V-shaped graph with vertex at (0, -3).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q8b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |x - 4|$, indicating the vertex.",
-    "a": "V-shaped graph with vertex at (4, 0).",
-    "h": "Apply a horizontal shift to the standard absolute value graph.",
-    "s": "The graph is a V-shape shifted 4 units to the right. The vertex is at $(4, 0)$.",
+    "question": "Sketch the graph of \\(y = |x - 4|\\), indicating the vertex.",
+    "answer": "V-shaped graph with vertex at (4, 0).",
+    "hint": "Apply a horizontal shift to the standard absolute value graph.",
+    "solution": "V-shaped graph with vertex at (4, 0).",
     "solutionSteps": [
       {
-        "explanation": "Start with \\(y = |x|\\) which has a vertex at \\((0,0)\\).",
-        "workingOut": "y = |x| \\implies \\text{Vertex } (0,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |x| \\implies \\text{Vertex } (0,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Translate the graph horizontally right by 4 units.",
-        "workingOut": "(0,0) \\to (4, 0)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0,0) \\to (4, 0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the final curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -2,
-              8,
-              8,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(x - 4); }, -2, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [4,0], {name:'(4,0)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "V-shaped graph with vertex at (4, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: V-shaped graph with vertex at (4, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "V-shaped graph with vertex at (4, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q8c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |x + 3|$, indicating the vertex.",
-    "a": "V-shaped graph with vertex at (-3, 0).",
-    "h": "Apply a horizontal shift left.",
-    "s": "The graph is shifted 3 units left. The vertex is at $(-3, 0)$.",
+    "question": "Sketch the graph of \\(y = |x + 3|\\), indicating the vertex.",
+    "answer": "V-shaped graph with vertex at (-3, 0).",
+    "hint": "Apply a horizontal shift left.",
+    "solution": "V-shaped graph with vertex at (-3, 0).",
     "solutionSteps": [
       {
-        "explanation": "Start with \\(y = |x|\\) which has a vertex at \\((0,0)\\).",
-        "workingOut": "y = |x| \\implies \\text{Vertex } (0,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |x| \\implies \\text{Vertex } (0,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Translate the graph horizontally left by 3 units.",
-        "workingOut": "(0,0) \\to (-3, 0)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0,0) \\to (-3, 0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the final curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -8,
-              6,
-              2,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(x + 3); }, -8, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-3,0], {name:'(-3,0)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "V-shaped graph with vertex at (-3, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: V-shaped graph with vertex at (-3, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "V-shaped graph with vertex at (-3, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q8d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |x| + 4$, indicating the vertex.",
-    "a": "V-shaped graph with vertex at (0, 4).",
-    "h": "Apply a vertical shift upwards.",
-    "s": "The graph is shifted 4 units up. The vertex is at $(0, 4)$.",
+    "question": "Sketch the graph of \\(y = |x| + 4\\), indicating the vertex.",
+    "answer": "V-shaped graph with vertex at (0, 4).",
+    "hint": "Apply a vertical shift upwards.",
+    "solution": "V-shaped graph with vertex at (0, 4).",
     "solutionSteps": [
       {
-        "explanation": "Identify the base function and vertex.",
-        "workingOut": "y = |x| \\implies \\text{Vertex } (0,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |x| \\implies \\text{Vertex } (0,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply vertical shift up by 4.",
-        "workingOut": "(0,0) \\to (0, 4)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0,0) \\to (0, 4)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the final curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              10,
-              5,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(x) + 4; }, -5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,4], {name:'(0,4)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "V-shaped graph with vertex at (0, 4).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: V-shaped graph with vertex at (0, 4).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "V-shaped graph with vertex at (0, 4).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q9a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |2x + 6|$, showing the $x$-intercept and $y$-intercept.",
-    "a": "x-intercept at (-3, 0), y-intercept at (0, 6).",
-    "h": "Set $x = 0$ for $y$-intercept, and $y = 0$ for $x$-intercept.",
-    "s": "$y$-intercept is $|2(0) + 6| = 6$. $x$-intercept is $2x + 6 = 0 \\implies x = -3$.",
+    "question": "Sketch the graph of \\(y = |2x + 6|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+    "answer": "x-intercept at (-3, 0), y-intercept at (0, 6).",
+    "hint": "Set \\(x = 0\\) for \\(y\\)-intercept, and \\(y = 0\\) for \\(x\\)-intercept.",
+    "solution": "x-intercept at (-3, 0), y-intercept at (0, 6).",
     "solutionSteps": [
       {
-        "explanation": "Find the \\(y\\)-intercept by setting \\(x = 0\\).",
-        "workingOut": "y = |2(0) + 6| = 6",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |2(0) + 6| = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Find the \\(x\\)-intercept by setting \\(y = 0\\).",
-        "workingOut": "2x + 6 = 0 \\implies x = -3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(2x + 6 = 0 \\implies x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the graph passing through \\((-3, 0)\\) and \\((0, 6)\\).",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -6,
-              10,
-              2,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(2*x + 6); }, -6, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-3,0], {name:'(-3,0)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,6], {name:'(0,6)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "x-intercept at (-3, 0), y-intercept at (0, 6).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x-intercept at (-3, 0), y-intercept at (0, 6).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "x-intercept at (-3, 0), y-intercept at (0, 6).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q9b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = -|3x - 9|$, showing the $x$-intercept and $y$-intercept.",
-    "a": "x-intercept at (3, 0), y-intercept at (0, -9).",
-    "h": "Find intercepts and note the negative sign reflections.",
-    "s": "$y$-intercept: $-|3(0) - 9| = -9$. $x$-intercept: $3x - 9 = 0 \\implies x = 3$. The graph opens downwards.",
+    "question": "Sketch the graph of \\(y = -|3x - 9|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+    "answer": "x-intercept at (3, 0), y-intercept at (0, -9).",
+    "hint": "Find intercepts and note the negative sign reflections.",
+    "solution": "x-intercept at (3, 0), y-intercept at (0, -9).",
     "solutionSteps": [
       {
-        "explanation": "Find the \\(y\\)-intercept.",
-        "workingOut": "y = -|-9| = -9",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = -|-9| = -9\\)",
         "graphData": null
       },
       {
-        "explanation": "Find the \\(x\\)-intercept.",
-        "workingOut": "3x - 9 = 0 \\implies x = 3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(3x - 9 = 0 \\implies x = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the downward-opening V-graph.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -2,
-              2,
-              6,
-              -11
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-11],[0,2]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -Math.abs(3*x - 9); }, -2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,0], {name:'(3,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0,-9], {name:'(0,-9)', size:3, color:'red', label:{offset:[-25,8]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "x-intercept at (3, 0), y-intercept at (0, -9).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x-intercept at (3, 0), y-intercept at (0, -9).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "x-intercept at (3, 0), y-intercept at (0, -9).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q9c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the graph of $y = |3x + 10|$, showing the $x$-intercept and $y$-intercept.",
-    "a": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
-    "h": "Evaluate for intercepts.",
-    "s": "$y$-intercept: $10$. $x$-intercept: $3x = -10 \\implies x = -\\frac{10}{3}$.",
+    "question": "Sketch the graph of \\(y = |3x + 10|\\), showing the \\(x\\)-intercept and \\(y\\)-intercept.",
+    "answer": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
+    "hint": "Evaluate for intercepts.",
+    "solution": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
     "solutionSteps": [
       {
-        "explanation": "Find the \\(y\\)-intercept.",
-        "workingOut": "y = |0 + 10| = 10",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = |0 + 10| = 10\\)",
         "graphData": null
       },
       {
-        "explanation": "Find the \\(x\\)-intercept.",
-        "workingOut": "3x + 10 = 0 \\implies x = -\\frac{10}{3}",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(3x + 10 = 0 \\implies x = -\\frac{10}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the V-graph.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -6,
-              12,
-              2,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.abs(3*x + 10); }, -6, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-3.33,0], {name:'(-10/3,0)', size:3, color:'red', label:{offset:[-25,-10]}});\nboard.create('point', [0,10], {name:'(0,10)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x-intercept at (-10/3, 0), y-intercept at (0, 10).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "x-intercept at (-10/3, 0), y-intercept at (0, 10).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q10a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Solve the absolute value equation: $|4x| = 28$",
-    "a": "x = 7 or x = -7",
-    "h": "Divide by 4 first, then solve for the absolute value.",
-    "s": "$|x| = 7 \\implies x = 7$ or $x = -7$.",
+    "question": "Solve the absolute value equation: \\(|4x| = 28\\)",
+    "opts": [
+      "\\(-x = 7 or x = -7\\)",
+      "\\(x = 7 or x = +7\\)",
+      "\\(x = 7 or x = -7\\)",
+      "\\(x = 7 or x = -7 + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Divide by 4 first, then solve for the absolute value.",
+    "solution": "\\(|x| = 7 \\implies x = 7\\) or \\(x = -7\\).",
     "solutionSteps": [
       {
-        "explanation": "Isolate the absolute value by dividing both sides by 4.",
-        "workingOut": "|x| = 7",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(|x| = 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the absolute value relation.",
-        "workingOut": "x = 7 \\text{ or } x = -7",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x = 7 \\text{ or } x = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(x = 7 or x = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x = 7 or x = -7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 7 or x = -7\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q10b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Solve the absolute value equation: $|x + 6| = -3$",
-    "a": "0",
+    "question": "Solve the absolute value equation: \\(|x + 6| = -3\\)",
     "opts": [
       "No solution",
-      "$x = -9$ or $x = -3$",
-      "$x = 9$ or $x = 3$",
-      "$x = -3$ only"
+      "\\(x = -9\\) or \\(x = -3\\)",
+      "\\(x = 9\\) or \\(x = 3\\)",
+      "\\(\\(x = -3\\) only\\)"
     ],
-    "h": "Recall that absolute value represents distance and must be non-negative.",
-    "s": "Since $|x + 6| \\ge 0$, it can never equal the negative value $-3$. Hence, no solution exists.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall that absolute value represents distance and must be non-negative.",
+    "solution": "Since \\(|x + 6| \\ge 0\\), it can never equal the negative value \\(-3\\). Hence, no solution exists.",
     "solutionSteps": [
       {
-        "explanation": "Analyze the output value of the absolute function.",
-        "workingOut": "|x + 6| \\ge 0",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(|x + 6| \\ge 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Observe the contradiction.",
-        "workingOut": "\\ge 0 \\neq -3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\ge 0 \\neq -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Conclude that no solution exists.",
-        "workingOut": "\\text{No solution}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{No solution}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: No solution. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "No solution",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q10c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Solve the absolute value equation: $|3x + 5| = 14$",
-    "a": "x = 3 or x = -19/3",
-    "h": "Solve the positive and negative cases: $3x + 5 = 14$ and $3x + 5 = -14$.",
-    "s": "$3x + 5 = 14 \\implies 3x = 9 \\implies x = 3$. Or $3x + 5 = -14 \\implies 3x = -19 \\implies x = -\\frac{19}{3}$.",
+    "question": "Solve the absolute value equation: \\(|3x + 5| = 14\\)",
+    "opts": [
+      "\\(-x = 3 or x = -19/3\\)",
+      "\\(x = 3 or x = -19/3\\)",
+      "\\(x = 3 or x = -19/3 + 1\\)",
+      "\\(x = 4 or x = -19/4\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Solve the positive and negative cases: \\(3x + 5 = 14\\) and \\(3x + 5 = -14\\).",
+    "solution": "\\(3x + 5 = 14 \\implies 3x = 9 \\implies x = 3\\). Or \\(3x + 5 = -14 \\implies 3x = -19 \\implies x = -\\frac{19}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the two equations.",
-        "workingOut": "3x + 5 = 14 \\quad \\text{or} \\quad 3x + 5 = -14",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(3x + 5 = 14 \\quad \\text{or} \\quad 3x + 5 = -14\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the first equation.",
-        "workingOut": "3x = 9 \\implies x = 3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(3x = 9 \\implies x = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the second equation.",
-        "workingOut": "3x = -19 \\implies x = -\\frac{19}{3}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(3x = -19 \\implies x = -\\frac{19}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x = 3 or x = -19/3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(x = 3 or x = -19/3\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q10d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Solve the absolute value equation: $|5x + 3| = 0$",
-    "a": "-3/5",
-    "h": "An absolute value is zero if and only if the inner term is zero.",
-    "s": "$5x + 3 = 0 \\implies x = -\\frac{3}{5}$.",
+    "question": "Solve the absolute value equation: \\(|5x + 3| = 0\\)",
+    "opts": [
+      "\\(-3/5\\)",
+      "\\(-1.6\\)",
+      "\\(0.4\\)",
+      "\\(0.6\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "An absolute value is zero if and only if the inner term is zero.",
+    "solution": "\\(5x + 3 = 0 \\implies x = -\\frac{3}{5}\\).",
     "solutionSteps": [
       {
-        "explanation": "Set the expression inside equal to 0.",
-        "workingOut": "5x + 3 = 0",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(5x + 3 = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve for \\(x\\).",
-        "workingOut": "x = -\\frac{3}{5}",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x = -\\frac{3}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(-3/5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -3/5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(-3/5\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q11a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find $f(-x)$ for the function $f(x) = x + 5$, and then decide whether the function is odd, even, or neither.",
-    "a": "0",
+    "question": "Find \\(f(-x)\\) for the function \\(f(x) = x + 5\\), and then decide whether the function is odd, even, or neither.",
     "opts": [
-      "$f(-x) = -x + 5$, Neither",
-      "$f(-x) = -x - 5$, Odd",
-      "$f(-x) = x + 5$, Even",
-      "$f(-x) = -x + 5$, Odd"
+      "\\(\\(f(-x) = -x + 5\\), Neither\\)",
+      "\\(\\(f(-x) = -x - 5\\), Odd\\)",
+      "\\(\\(f(-x) = x + 5\\), Even\\)",
+      "\\(\\(f(-x) = -x + 5\\), Odd\\)"
     ],
-    "h": "Replace $x$ with $-x$ and check if $f(-x) = f(x)$ or $f(-x) = -f(x)$.",
-    "s": "$f(-x) = -x + 5$. Since this is neither $f(x)$ nor $-f(x) = -x - 5$, it is neither.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Replace \\(x\\) with \\(-x\\) and check if \\(f(-x) = f(x)\\) or \\(f(-x) = -f(x)\\).",
+    "solution": "\\(f(-x) = -x + 5\\). Since this is neither \\(f(x)\\) nor \\(-f(x) = -x - 5\\), it is neither.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\).",
-        "workingOut": "f(-x) = -x + 5",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = -x + 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare to \\(f(x)\\) and \\(-f(x)\\).",
-        "workingOut": "f(x) = x + 5 \\quad \\text{and} \\quad -f(x) = -x - 5",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(x) = x + 5 \\quad \\text{and} \\quad -f(x) = -x - 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Conclude the classification.",
-        "workingOut": "f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(f(-x) \\neq f(x) \\text{ and } f(-x) \\neq -f(x) \\implies \\text{Neither}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(f(-x) = -x + 5\\), Neither. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(\\(f(-x) = -x + 5\\), Neither\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q11b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find $f(-x)$ for the function $f(x) = 3x^2 - 7$, and then decide whether the function is odd, even, or neither.",
-    "a": "0",
+    "question": "Find \\(f(-x)\\) for the function \\(f(x) = 3x^2 - 7\\), and then decide whether the function is odd, even, or neither.",
     "opts": [
-      "$f(-x) = 3x^2 - 7$, Even",
-      "$f(-x) = -3x^2 - 7$, Odd",
-      "$f(-x) = 3x^2 - 7$, Neither",
-      "$f(-x) = -3x^2 + 7$, Odd"
+      "\\(\\(f(-x) = 3x^2 - 7\\), Even\\)",
+      "\\(\\(f(-x) = -3x^2 - 7\\), Odd\\)",
+      "\\(\\(f(-x) = 3x^2 - 7\\), Neither\\)",
+      "\\(\\(f(-x) = -3x^2 + 7\\), Odd\\)"
     ],
-    "h": "Substitute $-x$ and evaluate $(-x)^2$.",
-    "s": "$f(-x) = 3(-x)^2 - 7 = 3x^2 - 7 = f(x)$. Thus, it is even.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Substitute \\(-x\\) and evaluate \\((-x)^2\\).",
+    "solution": "\\(f(-x) = 3(-x)^2 - 7 = 3x^2 - 7 = f(x)\\). Thus, it is even.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\).",
-        "workingOut": "f(-x) = 3(-x)^2 - 7",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = 3(-x)^2 - 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate the power.",
-        "workingOut": "(-x)^2 = x^2 \\implies f(-x) = 3x^2 - 7",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((-x)^2 = x^2 \\implies f(-x) = 3x^2 - 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare to \\(f(x)\\).",
-        "workingOut": "f(-x) = f(x) \\implies \\text{Even}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(f(-x) = f(x) \\implies \\text{Even}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(f(-x) = 3x^2 - 7\\), Even. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(\\(f(-x) = 3x^2 - 7\\), Even\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q11c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find $f(-x)$ for the function $f(x) = \\frac{3}{x}$, and then decide whether the function is odd, even, or neither.",
-    "a": "0",
+    "question": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{3}{x}\\), and then decide whether the function is odd, even, or neither.",
     "opts": [
-      "$f(-x) = -\\frac{3}{x}$, Odd",
-      "$f(-x) = \\frac{3}{x}$, Even",
-      "$f(-x) = -\\frac{3}{x}$, Neither",
-      "$f(-x) = \\frac{3}{-x}$, Even"
+      "\\(\\(f(-x) = -\\frac{3}{x}\\), Odd\\)",
+      "\\(\\(f(-x) = \\frac{3}{x}\\), Even\\)",
+      "\\(\\(f(-x) = -\\frac{3}{x}\\), Neither\\)",
+      "\\(\\(f(-x) = \\frac{3}{-x}\\), Even\\)"
     ],
-    "h": "Evaluate $f(-x)$ and compare to $-f(x)$.",
-    "s": "$f(-x) = \\frac{3}{-x} = -\\frac{3}{x} = -f(x)$. Thus, odd.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Evaluate \\(f(-x)\\) and compare to \\(-f(x)\\).",
+    "solution": "\\(f(-x) = \\frac{3}{-x} = -\\frac{3}{x} = -f(x)\\). Thus, odd.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\).",
-        "workingOut": "f(-x) = \\frac{3}{-x}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = \\frac{3}{-x}\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the fraction sign.",
-        "workingOut": "f(-x) = -\\frac{3}{x}",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(-x) = -\\frac{3}{x}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare to \\(-f(x)\\).",
-        "workingOut": "f(-x) = -f(x) \\implies \\text{Odd}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(f(-x) = -f(x) \\implies \\text{Odd}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(f(-x) = -\\frac{3}{x}\\), Odd. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(\\(f(-x) = -\\frac{3}{x}\\), Odd\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q11d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find $f(-x)$ for the function $f(x) = \\frac{2x}{x^2 + 3}$, and then decide whether the function is odd, even, or neither.",
-    "a": "0",
+    "question": "Find \\(f(-x)\\) for the function \\(f(x) = \\frac{2x}{x^2 + 3}\\), and then decide whether the function is odd, even, or neither.",
     "opts": [
-      "$f(-x) = -\\frac{2x}{x^2 + 3}$, Odd",
-      "$f(-x) = \\frac{2x}{x^2 + 3}$, Even",
-      "$f(-x) = -\\frac{2x}{x^2 + 3}$, Neither",
-      "$f(-x) = \\frac{-2x}{x^2 - 3}$, Odd"
+      "\\(\\(f(-x) = -\\frac{2x}{x^2 + 3}\\), Odd\\)",
+      "\\(\\(f(-x) = \\frac{2x}{x^2 + 3}\\), Even\\)",
+      "\\(\\(f(-x) = -\\frac{2x}{x^2 + 3}\\), Neither\\)",
+      "\\(\\(f(-x) = \\frac{-2x}{x^2 - 3}\\), Odd\\)"
     ],
-    "h": "Replace every $x$ with $-x$ and simplify.",
-    "s": "$f(-x) = \\frac{2(-x)}{(-x)^2 + 3} = \\frac{-2x}{x^2 + 3} = -f(x)$. Thus, odd.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Replace every \\(x\\) with \\(-x\\) and simplify.",
+    "solution": "\\(f(-x) = \\frac{2(-x)}{(-x)^2 + 3} = \\frac{-2x}{x^2 + 3} = -f(x)\\). Thus, odd.",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(-x\\) for \\(x\\) in numerator and denominator.",
-        "workingOut": "f(-x) = \\frac{2(-x)}{(-x)^2 + 3}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(-x) = \\frac{2(-x)}{(-x)^2 + 3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify terms.",
-        "workingOut": "f(-x) = \\frac{-2x}{x^2 + 3}",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(-x) = \\frac{-2x}{x^2 + 3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Compare with \\(-f(x)\\).",
-        "workingOut": "f(-x) = -f(x) \\implies \\text{Odd}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(f(-x) = -f(x) \\implies \\text{Odd}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(f(-x) = -\\frac{2x}{x^2 + 3}\\), Odd. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(\\(f(-x) = -\\frac{2x}{x^2 + 3}\\), Odd\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q12a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square for $y = x^2 + 4x + 5$ and sketch the graph. Indicate the vertex and all intercepts.",
-    "a": "y = (x + 2)^2 + 1. Vertex (-2, 1), y-intercept (0, 5), x-intercepts: None.",
-    "h": "Add and subtract $(4/2)^2$ to complete the square.",
-    "s": "$y = (x^2 + 4x + 4) + 1 = (x + 2)^2 + 1$. Vertex is $(-2, 1)$. $y$-intercept is $5$. No $x$-intercepts.",
+    "question": "Complete the square for \\(y = x^2 + 4x + 5\\) and sketch the graph. Indicate the vertex and all intercepts.",
+    "answer": "y = (x + 2)^2 + 1.\nVertex (-2, 1), y-intercept (0, 5), x-intercepts: None.",
+    "hint": "Add and subtract \\((4/2)^2\\) to complete the square.",
+    "solution": "y = (x + 2)^2 + 1.\nVertex (-2, 1), y-intercept (0, 5), x-intercepts: None.",
     "solutionSteps": [
       {
-        "explanation": "Complete the square by adding and subtracting 4.",
-        "workingOut": "y = (x^2 + 4x + 4) - 4 + 5 = (x + 2)^2 + 1",
-        "graphData": null
-      },
-      {
-        "explanation": "Identify the vertex.",
-        "workingOut": "\\text{Vertex: } (-2, 1)",
-        "graphData": null
-      },
-      {
-        "explanation": "Find intercepts. Set \\(x = 0 \\implies y = 5\\). Set \\(y = 0 \\implies (x+2)^2 = -1 \\implies \\text{No real solution}.\\)",
-        "workingOut": "\\text{y-intercept: } (0, 5), quad \\text{x-intercepts: None}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the parabola.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = (x^2 + 4x + 4) - 4 + 5 = (x + 2)^2 + 1\\)",
         "graphData": {
           "jsxGraph": {
-            "width": 300,
-            "height": 300,
+            "width": 360,
+            "height": 260,
             "boundingbox": [
-              -6,
-              8,
-              2,
-              -1
+              -4,
+              4,
+              4,
+              -4
             ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x + 4*x + 5; }, -5, 1], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [-2,1], {name:'(-2,1)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,5], {name:'(0,5)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Vertex: } (-2, 1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{y-intercept: } (0, 5), quad \\text{x-intercepts: None}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = (x + 2)^2 + 1.\nVertex (-2, 1), y-intercept (0, 5), x-intercepts: None.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "y = (x + 2)^2 + 1.\nVertex (-2, 1), y-intercept (0, 5), x-intercepts: None.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q12b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square for $y = x^2 - 6x + 2$ and sketch the graph. Indicate the vertex and all intercepts.",
-    "a": "y = (x - 3)^2 - 7. Vertex (3, -7), y-intercept (0, 2), x-intercepts (3 +- sqrt(7), 0).",
-    "h": "Half of 6 squared is 9.",
-    "s": "$y = (x^2 - 6x + 9) - 7 = (x - 3)^2 - 7$. Vertex $(3, -7)$. $x$-intercepts: $3 \\pm \\sqrt{7}$. $y$-intercept: $2$.",
+    "question": "Complete the square for \\(y = x^2 - 6x + 2\\) and sketch the graph. Indicate the vertex and all intercepts.",
+    "answer": "y = (x - 3)^2 - 7.\nVertex (3, -7), y-intercept (0, 2), x-intercepts (3 +- sqrt(7), 0).",
+    "hint": "Half of 6 squared is 9.",
+    "solution": "y = (x - 3)^2 - 7.\nVertex (3, -7), y-intercept (0, 2), x-intercepts (3 +- sqrt(7), 0).",
     "solutionSteps": [
       {
-        "explanation": "Complete the square.",
-        "workingOut": "y = (x^2 - 6x + 9) - 9 + 2 = (x - 3)^2 - 7",
-        "graphData": null
-      },
-      {
-        "explanation": "Identify the vertex.",
-        "workingOut": "\\text{Vertex: } (3, -7)",
-        "graphData": null
-      },
-      {
-        "explanation": "Find intercepts.",
-        "workingOut": "\\text{y-intercept: } (0, 2) \\\\ \\text{x-intercepts: } (3 \\pm \\sqrt{7}, 0)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the parabola.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = (x^2 - 6x + 9) - 9 + 2 = (x - 3)^2 - 7\\)",
         "graphData": {
           "jsxGraph": {
-            "width": 300,
-            "height": 300,
+            "width": 360,
+            "height": 260,
             "boundingbox": [
-              -2,
+              -4,
               4,
-              8,
-              -9
+              4,
+              -4
             ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-9],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 6*x + 2; }, -1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,-7], {name:'(3,-7)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,2], {name:'(0,2)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [0.35,0], {name:'', size:3, color:'red'});\nboard.create('point', [5.65,0], {name:'', size:3, color:'red'});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Vertex: } (3, -7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{y-intercept: } (0, 2) \\\\ \\text{x-intercepts: } (3 \\pm \\sqrt{7}, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = (x - 3)^2 - 7.\nVertex (3, -7), y-intercept (0, 2), x-intercepts (3 +- sqrt(7), 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "y = (x - 3)^2 - 7.\nVertex (3, -7), y-intercept (0, 2), x-intercepts (3 +- sqrt(7), 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q12c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square for $y = 5 + 4x - x^2$ and sketch the graph. Indicate the vertex and all intercepts.",
-    "a": "y = -(x - 2)^2 + 9. Vertex (2, 9), y-intercept (0, 5), x-intercepts (-1, 0) and (5, 0).",
-    "h": "Factor out the negative sign first.",
-    "s": "$y = -(x^2 - 4x - 5) = -[(x - 2)^2 - 9] = -(x - 2)^2 + 9$. Vertex $(2, 9)$. Intercepts: $(0,5), (-1,0), (5,0)$.",
+    "question": "Complete the square for \\(y = 5 + 4x - x^2\\) and sketch the graph. Indicate the vertex and all intercepts.",
+    "answer": "y = -(x - 2)^2 + 9.\nVertex (2, 9), y-intercept (0, 5), x-intercepts (-1, 0) and (5, 0).",
+    "hint": "Factor out the negative sign first.",
+    "solution": "y = -(x - 2)^2 + 9.\nVertex (2, 9), y-intercept (0, 5), x-intercepts (-1, 0) and (5, 0).",
     "solutionSteps": [
       {
-        "explanation": "Factor out negative and complete the square.",
-        "workingOut": "y = -(x^2 - 4x) + 5 = -(x^2 - 4x + 4 - 4) + 5 = -(x - 2)^2 + 9",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = -(x^2 - 4x) + 5 = -(x^2 - 4x + 4 - 4) + 5 = -(x - 2)^2 + 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the vertex.",
-        "workingOut": "\\text{Vertex: } (2, 9)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Vertex: } (2, 9)\\)",
         "graphData": null
       },
       {
-        "explanation": "Find intercepts.",
-        "workingOut": "\\text{y-intercept: } (0, 5) \\\\ \\text{x-intercepts: } (-1, 0) \\text{ and } (5, 0)",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{y-intercept: } (0, 5) \\\\ \\text{x-intercepts: } (-1, 0) \\text{ and } (5, 0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the downward-opening parabola.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -3,
-              11,
-              7,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,11]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 5 + 4*x - x*x; }, -2, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [2,9], {name:'(2,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0,5], {name:'(0,5)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [-1,0], {name:'-1', size:3, color:'red', label:{offset:[-10,-10]}});\nboard.create('point', [5,0], {name:'5', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Final answer: y = -(x - 2)^2 + 9.\nVertex (2, 9), y-intercept (0, 5), x-intercepts (-1, 0) and (5, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "y = -(x - 2)^2 + 9.\nVertex (2, 9), y-intercept (0, 5), x-intercepts (-1, 0) and (5, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q12d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square for $y = x^2 - 2x - 3$ and sketch the graph. Indicate the vertex and all intercepts.",
-    "a": "y = (x - 1)^2 - 4. Vertex (1, -4), y-intercept (0, -3), x-intercepts (-1, 0) and (3, 0).",
-    "h": "Add and subtract 1.",
-    "s": "$y = (x^2 - 2x + 1) - 4 = (x - 1)^2 - 4$. Vertex $(1, -4)$. Intercepts: $(0,-3), (-1,0), (3,0)$.",
+    "question": "Complete the square for \\(y = x^2 - 2x - 3\\) and sketch the graph. Indicate the vertex and all intercepts.",
+    "answer": "y = (x - 1)^2 - 4.\nVertex (1, -4), y-intercept (0, -3), x-intercepts (-1, 0) and (3, 0).",
+    "hint": "Add and subtract 1.",
+    "solution": "y = (x - 1)^2 - 4.\nVertex (1, -4), y-intercept (0, -3), x-intercepts (-1, 0) and (3, 0).",
     "solutionSteps": [
       {
-        "explanation": "Complete the square.",
-        "workingOut": "y = (x^2 - 2x + 1) - 1 - 3 = (x - 1)^2 - 4",
-        "graphData": null
-      },
-      {
-        "explanation": "Identify the vertex.",
-        "workingOut": "\\text{Vertex: } (1, -4)",
-        "graphData": null
-      },
-      {
-        "explanation": "Find intercepts.",
-        "workingOut": "\\text{y-intercept: } (0, -3) \\\\ \\text{x-intercepts: } (-1, 0) \\text{ and } (3, 0)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the parabola.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = (x^2 - 2x + 1) - 1 - 3 = (x - 1)^2 - 4\\)",
         "graphData": {
           "jsxGraph": {
-            "width": 300,
-            "height": 300,
+            "width": 360,
+            "height": 260,
             "boundingbox": [
-              -3,
-              3,
-              5,
-              -6
+              -4,
+              4,
+              4,
+              -4
             ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 2*x - 3; }, -2, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [1,-4], {name:'(1,-4)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [0,-3], {name:'(0,-3)', size:3, color:'red', label:{offset:[-25,-10]}});\nboard.create('point', [-1,0], {name:'-1', size:3, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [3,0], {name:'3', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Vertex: } (1, -4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{y-intercept: } (0, -3) \\\\ \\text{x-intercepts: } (-1, 0) \\text{ and } (3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = (x - 1)^2 - 4.\nVertex (1, -4), y-intercept (0, -3), x-intercepts (-1, 0) and (3, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "y = (x - 1)^2 - 4.\nVertex (1, -4), y-intercept (0, -3), x-intercepts (-1, 0) and (3, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q13a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square to find the centre and radius of the circle: $x^2 + y^2 - 4y = 5$",
-    "a": "Centre (0,2), radius 3",
-    "h": "Add 4 to both sides of the equation.",
-    "s": "$x^2 + (y^2 - 4y + 4) = 5 + 4 \\implies x^2 + (y - 2)^2 = 9$. Centre is $(0,2)$ and radius is $3$.",
+    "question": "Complete the square to find the centre and radius of the circle: \\(x^2 + y^2 - 4y = 5\\)",
+    "opts": [
+      "Centre (0,2), radius 3",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Add 4 to both sides of the equation.",
+    "solution": "\\(x^2 + (y^2 - 4y + 4) = 5 + 4 \\implies x^2 + (y - 2)^2 = 9\\). Centre is \\((0,2)\\) and radius is \\(3\\).",
     "solutionSteps": [
       {
-        "explanation": "Complete the square for \\(y\\).",
-        "workingOut": "x^2 + (y^2 - 4y + 4) = 5 + 4",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x^2 + (y^2 - 4y + 4) = 5 + 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Write in standard circle form.",
-        "workingOut": "x^2 + (y - 2)^2 = 9",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x^2 + (y - 2)^2 = 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify centre and radius.",
-        "workingOut": "\\text{Centre: } (0, 2), quad r^2 = 9 \\implies \\text{Radius } r = 3",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Centre: } (0, 2), quad r^2 = 9 \\implies \\text{Radius } r = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre (0,2), radius 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre (0,2), radius 3",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q13b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square to find the centre and radius of the circle: $x^2 + 8x + y^2 + 12 = 0$",
-    "a": "Centre (-4,0), radius 2",
-    "h": "Move the constant to the right-hand side and add 16 to complete the square.",
-    "s": "$(x^2 + 8x + 16) + y^2 = -12 + 16 \\implies (x + 4)^2 + y^2 = 4$. Centre is $(-4,0)$, radius is $2$.",
+    "question": "Complete the square to find the centre and radius of the circle: \\(x^2 + 8x + y^2 + 12 = 0\\)",
+    "opts": [
+      "Centre (-4,0), radius 2",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Move the constant to the right-hand side and add 16 to complete the square.",
+    "solution": "\\((x^2 + 8x + 16) + y^2 = -12 + 16 \\implies (x + 4)^2 + y^2 = 4\\). Centre is \\((-4,0)\\), radius is \\(2\\).",
     "solutionSteps": [
       {
-        "explanation": "Move 12 to the right and add 16 to both sides.",
-        "workingOut": "(x^2 + 8x + 16) + y^2 = -12 + 16",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\((x^2 + 8x + 16) + y^2 = -12 + 16\\)",
         "graphData": null
       },
       {
-        "explanation": "Write in standard form.",
-        "workingOut": "(x + 4)^2 + y^2 = 4",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((x + 4)^2 + y^2 = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify parameters.",
-        "workingOut": "\\text{Centre: } (-4, 0), quad r^2 = 4 \\implies \\text{Radius } r = 2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Centre: } (-4, 0), quad r^2 = 4 \\implies \\text{Radius } r = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre (-4,0), radius 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre (-4,0), radius 2",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q13c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square to find the centre and radius of the circle: $x^2 - 6x + y^2 + 8y - 11 = 0$",
-    "a": "Centre (3,-4), radius 6",
-    "h": "Complete the squares for both $x$ and $y$. Add 9 and 16 to both sides.",
-    "s": "$(x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16 \\implies (x - 3)^2 + (y + 4)^2 = 36$. Centre is $(3,-4)$, radius is $6$.",
+    "question": "Complete the square to find the centre and radius of the circle: \\(x^2 - 6x + y^2 + 8y - 11 = 0\\)",
+    "opts": [
+      "Centre (3,-4), radius 6",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Complete the squares for both \\(x\\) and \\(y\\). Add 9 and 16 to both sides.",
+    "solution": "\\((x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16 \\implies (x - 3)^2 + (y + 4)^2 = 36\\). Centre is \\((3,-4)\\), radius is \\(6\\).",
     "solutionSteps": [
       {
-        "explanation": "Set up the double completion of squares.",
-        "workingOut": "(x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\((x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16\\)",
         "graphData": null
       },
       {
-        "explanation": "Simplify the squared brackets.",
-        "workingOut": "(x - 3)^2 + (y + 4)^2 = 36",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((x - 3)^2 + (y + 4)^2 = 36\\)",
         "graphData": null
       },
       {
-        "explanation": "Extract parameters.",
-        "workingOut": "\\text{Centre: } (3, -4), quad r^2 = 36 \\implies \\text{Radius } r = 6",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Centre: } (3, -4), quad r^2 = 36 \\implies \\text{Radius } r = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre (3,-4), radius 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre (3,-4), radius 6",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q13d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Complete the square to find the centre and radius of the circle: $x^2 + y^2 - 10x + 12y = 20$",
-    "a": "Centre (5,-6), radius 9",
-    "h": "Complete the square for $x^2 - 10x$ and $y^2 + 12y$.",
-    "s": "$(x^2 - 10x + 25) + (y^2 + 12y + 36) = 20 + 25 + 36 \\implies (x - 5)^2 + (y + 6)^2 = 81$. Centre $(5,-6)$, radius $9$.",
+    "question": "Complete the square to find the centre and radius of the circle: \\(x^2 + y^2 - 10x + 12y = 20\\)",
+    "opts": [
+      "Centre (5,-6), radius 9",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Complete the square for \\(x^2 - 10x\\) and \\(y^2 + 12y\\).",
+    "solution": "\\((x^2 - 10x + 25) + (y^2 + 12y + 36) = 20 + 25 + 36 \\implies (x - 5)^2 + (y + 6)^2 = 81\\). Centre \\((5,-6)\\), radius \\(9\\).",
     "solutionSteps": [
       {
-        "explanation": "Add 25 and 36 to both sides.",
-        "workingOut": "(x^2 - 10x + 25) + (y^2 + 12y + 36) = 20 + 25 + 36",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\((x^2 - 10x + 25) + (y^2 + 12y + 36) = 20 + 25 + 36\\)",
         "graphData": null
       },
       {
-        "explanation": "Write in standard form.",
-        "workingOut": "(x - 5)^2 + (y + 6)^2 = 81",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((x - 5)^2 + (y + 6)^2 = 81\\)",
         "graphData": null
       },
       {
-        "explanation": "Extract properties.",
-        "workingOut": "\\text{Centre: } (5, -6), quad r^2 = 81 \\implies \\text{Radius } r = 9",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Centre: } (5, -6), quad r^2 = 81 \\implies \\text{Radius } r = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Centre (5,-6), radius 9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Centre (5,-6), radius 9",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q14a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Write down the equation for $y = x^2$ after shifting right by $3$ units and upwards by $2$ units.",
-    "a": "0",
+    "question": "Write down the equation for \\(y = x^2\\) after shifting right by \\(3\\) units and upwards by \\(2\\) units.",
     "opts": [
-      "$y = (x - 3)^2 + 2$",
-      "$y = (x + 3)^2 + 2$",
-      "$y = (x - 3)^2 - 2$",
-      "$y = x^2 + 5$"
+      "\\(y = (x - 3)^2 + 2\\)",
+      "\\(y = (x + 3)^2 + 2\\)",
+      "\\(y = (x - 3)^2 - 2\\)",
+      "\\(y = x^2 + 5\\)"
     ],
-    "h": "Shift right replaces $x$ with $x-d$; shift up adds $c$ to the outside.",
-    "s": "$y = (x - 3)^2 + 2$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Shift right replaces \\(x\\) with \\(x-d\\); shift up adds \\(c\\) to the outside.",
+    "solution": "\\(y = (x - 3)^2 + 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal shift right by 3.",
-        "workingOut": "x \\to x - 3 \\implies y = (x - 3)^2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x - 3 \\implies y = (x - 3)^2\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y \\to y + 2 \\implies y = (x - 3)^2 + 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply vertical shift up by 2.",
-        "workingOut": "y \\to y + 2 \\implies y = (x - 3)^2 + 2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = (x - 3)^2 + 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = (x - 3)^2 + 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = (x - 3)^2 + 2\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q14b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Write down the equation for $y = \\frac{1}{x}$ after shifting left by $3$ units and downwards by $4$ units.",
-    "a": "0",
+    "question": "Write down the equation for \\(y = \\frac{1}{x}\\) after shifting left by \\(3\\) units and downwards by \\(4\\) units.",
     "opts": [
-      "$y = \\frac{1}{x + 3} - 4$",
-      "$y = \\frac{1}{x - 3} - 4$",
-      "$y = \\frac{1}{x + 3} + 4$",
-      "$y = \\frac{1}{x - 4} + 3$"
+      "\\(y = \\frac{1}{x + 3} - 4\\)",
+      "\\(y = \\frac{1}{x - 3} - 4\\)",
+      "\\(y = \\frac{1}{x + 3} + 4\\)",
+      "\\(y = \\frac{1}{x - 4} + 3\\)"
     ],
-    "h": "Shift left replaces $x$ with $x+3$; shift down subtracts 4.",
-    "s": "$y = \\frac{1}{x + 3} - 4$.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Shift left replaces \\(x\\) with \\(x+3\\); shift down subtracts 4.",
+    "solution": "\\(y = \\frac{1}{x + 3} - 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal shift left by 3.",
-        "workingOut": "x \\to x + 3 \\implies y = \\frac{1}{x + 3}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x + 3 \\implies y = \\frac{1}{x + 3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Apply vertical shift down by 4.",
-        "workingOut": "y = \\frac{1}{x + 3} - 4",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y = \\frac{1}{x + 3} - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = \\frac{1}{x + 3} - 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = \\frac{1}{x + 3} - 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(y = \\frac{1}{x + 3} - 4\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, evaluate $f(g(0))$.",
-    "a": "5",
-    "h": "Find $g(0)$ first, then substitute that result into $f(x)$.",
-    "s": "$g(0) = 2$. $f(2) = 4(2) - 3 = 5$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(f(g(0))\\).",
+    "opts": [
+      "\\(-5\\)",
+      "\\(4\\)",
+      "\\(5\\)",
+      "\\(6\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Find \\(g(0)\\) first, then substitute that result into \\(f(x)\\).",
+    "solution": "\\(g(0) = 2\\). \\(f(2) = 4(2) - 3 = 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(g(0)\\).",
-        "workingOut": "g(0) = 0^2 + 2 = 2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(g(0) = 0^2 + 2 = 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute 2 into \\(f(x)\\).",
-        "workingOut": "f(2) = 4(2) - 3 = 5",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(2) = 4(2) - 3 = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(5\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, evaluate $g(f(0))$.",
-    "a": "11",
-    "h": "Evaluate the inner function $f(0)$ first.",
-    "s": "$f(0) = -3$. $g(-3) = (-3)^2 + 2 = 11$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(g(f(0))\\).",
+    "opts": [
+      "\\(-11\\)",
+      "\\(10\\)",
+      "\\(11\\)",
+      "\\(12\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Evaluate the inner function \\(f(0)\\) first.",
+    "solution": "\\(f(0) = -3\\). \\(g(-3) = (-3)^2 + 2 = 11\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate the inner function \\(f(0)\\).",
-        "workingOut": "f(0) = 4(0) - 3 = -3",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(0) = 4(0) - 3 = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute -3 into \\(g(x)\\).",
-        "workingOut": "g(-3) = (-3)^2 + 2 = 11",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(g(-3) = (-3)^2 + 2 = 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 11. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(11\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, evaluate $f(g(4))$.",
-    "a": "69",
-    "h": "Evaluate $g(4)$ first.",
-    "s": "$g(4) = 4^2 + 2 = 18$. $f(18) = 4(18) - 3 = 69$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(f(g(4))\\).",
+    "opts": [
+      "\\(-69\\)",
+      "\\(68\\)",
+      "\\(69\\)",
+      "\\(70\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Evaluate \\(g(4)\\) first.",
+    "solution": "\\(g(4) = 4^2 + 2 = 18\\). \\(f(18) = 4(18) - 3 = 69\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\(g(4)\\).",
-        "workingOut": "g(4) = 16 + 2 = 18",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(g(4) = 16 + 2 = 18\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute 18 into \\(f(x)\\).",
-        "workingOut": "f(18) = 4(18) - 3 = 69",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(18) = 4(18) - 3 = 69\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(69\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 69. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(69\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, evaluate $g(f(4))$.",
-    "a": "171",
-    "h": "Evaluate $f(4)$ first.",
-    "s": "$f(4) = 4(4) - 3 = 13$. $g(13) = 13^2 + 2 = 171$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), evaluate \\(g(f(4))\\).",
+    "opts": [
+      "\\(-171\\)",
+      "\\(170\\)",
+      "\\(171\\)",
+      "\\(172\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Evaluate \\(f(4)\\) first.",
+    "solution": "\\(f(4) = 4(4) - 3 = 13\\). \\(g(13) = 13^2 + 2 = 171\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate \\(f(4)\\).",
-        "workingOut": "f(4) = 16 - 3 = 13",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(4) = 16 - 3 = 13\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute 13 into \\(g(x)\\).",
-        "workingOut": "g(13) = 13^2 + 2 = 171",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(g(13) = 13^2 + 2 = 171\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(171\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 171. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(171\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15e",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, find the expression for $f(g(a))$.",
-    "a": "4a^2 + 5",
-    "h": "Substitute the formula for $g(a)$ directly into $f(x)$.",
-    "s": "$f(g(a)) = 4(a^2 + 2) - 3 = 4a^2 + 8 - 3 = 4a^2 + 5$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), find the expression for \\(f(g(a))\\).",
+    "opts": [
+      "\\(-4a^2 + 5\\)",
+      "\\(4a^2 + 5\\)",
+      "\\(4a^2 + 5 + 1\\)",
+      "\\(4a^4 + 5\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Substitute the formula for \\(g(a)\\) directly into \\(f(x)\\).",
+    "solution": "\\(f(g(a)) = 4(a^2 + 2) - 3 = 4a^2 + 8 - 3 = 4a^2 + 5\\).",
     "solutionSteps": [
       {
-        "explanation": "State \\(g(a)\\).",
-        "workingOut": "g(a) = a^2 + 2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(g(a) = a^2 + 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute into \\(f(x)\\).",
-        "workingOut": "f(g(a)) = 4(a^2 + 2) - 3",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f(g(a)) = 4(a^2 + 2) - 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand and simplify.",
-        "workingOut": "4a^2 + 8 - 3 = 4a^2 + 5",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(4a^2 + 8 - 3 = 4a^2 + 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 4a^2 + 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(4a^2 + 5\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q15f",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Given $f(x) = 4x - 3$ and $g(x) = x^2 + 2$, find the expression for $g(f(a))$.",
-    "a": "16a^2 - 24a + 11",
-    "h": "Substitute the formula for $f(a)$ directly into $g(x)$.",
-    "s": "$g(f(a)) = (4a - 3)^2 + 2 = 16a^2 - 24a + 9 + 2 = 16a^2 - 24a + 11$.",
+    "question": "Given \\(f(x) = 4x - 3\\) and \\(g(x) = x^2 + 2\\), find the expression for \\(g(f(a))\\).",
+    "opts": [
+      "\\(-16a^2 - 24a + 11\\)",
+      "\\(16a^2 - 24a + 11\\)",
+      "\\(16a^2 - 24a + 11 + 1\\)",
+      "\\(16a^4 - 44a + 11\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "Substitute the formula for \\(f(a)\\) directly into \\(g(x)\\).",
+    "solution": "\\(g(f(a)) = (4a - 3)^2 + 2 = 16a^2 - 24a + 9 + 2 = 16a^2 - 24a + 11\\).",
     "solutionSteps": [
       {
-        "explanation": "State \\(f(a)\\).",
-        "workingOut": "f(a) = 4a - 3",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(a) = 4a - 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Substitute into \\(g(x)\\).",
-        "workingOut": "g(f(a)) = (4a - 3)^2 + 2",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(g(f(a)) = (4a - 3)^2 + 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Expand the perfect square and simplify.",
-        "workingOut": "16a^2 - 24a + 9 + 2 = 16a^2 - 24a + 11",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(16a^2 - 24a + 9 + 2 = 16a^2 - 24a + 11\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 16a^2 - 24a + 11. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(16a^2 - 24a + 11\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q16ai",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find the domain and range of the composite function $f(g(x))$ given $f(x) = x - 2$ and $g(x) = \\sqrt{x}$.",
-    "a": "Domain: x >= 0, Range: y >= -2",
-    "h": "Identify restrictions on the input $x$ of $g(x)$, and the outputs of the combined expression.",
-    "s": "$f(g(x)) = \\sqrt{x} - 2$. Domain is $x \\ge 0$ (from $\\sqrt{x}$). Since $\\sqrt{x} \\ge 0$, the range is $y \\ge -2$.",
+    "question": "Find the domain and range of the composite function \\(f(g(x))\\) given \\(f(x) = x - 2\\) and \\(g(x) = \\sqrt{x}\\).",
+    "answer": "Domain: x >= 0, Range: y >= -2",
+    "hint": "Identify restrictions on the input \\(x\\) of \\(g(x)\\), and the outputs of the combined expression.",
+    "solution": "Domain: x >= 0, Range: y >= -2",
     "solutionSteps": [
       {
-        "explanation": "Write down the composite function.",
-        "workingOut": "f(g(x)) = \\sqrt{x} - 2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(g(x)) = \\sqrt{x} - 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the domain constraints for \\(\\sqrt{x}\\).",
-        "workingOut": "\\text{Domain: } x \\ge 0",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Domain: } x \\ge 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the range by evaluating the outputs.",
-        "workingOut": "\\sqrt{x} \\ge 0 \\implies \\sqrt{x} - 2 \\ge -2 \\implies \\text{Range: } y \\ge -2",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\sqrt{x} \\ge 0 \\implies \\sqrt{x} - 2 \\ge -2 \\implies \\text{Range: } y \\ge -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: x >= 0, Range: y >= -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: x >= 0, Range: y >= -2",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q16aii",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find the domain and range of the composite function $g(f(x))$ given $f(x) = x - 2$ and $g(x) = \\sqrt{x}$.",
-    "a": "Domain: x >= 2, Range: y >= 0",
-    "h": "The input to the square root must be non-negative: $f(x) \\ge 0$.",
-    "s": "$g(f(x)) = \\sqrt{x - 2}$. Domain requires $x - 2 \\ge 0 \\implies x \\ge 2$. Range of the square root is $y \\ge 0$.",
+    "question": "Find the domain and range of the composite function \\(g(f(x))\\) given \\(f(x) = x - 2\\) and \\(g(x) = \\sqrt{x}\\).",
+    "answer": "Domain: x >= 2, Range: y >= 0",
+    "hint": "The input to the square root must be non-negative: \\(f(x) \\ge 0\\).",
+    "solution": "Domain: x >= 2, Range: y >= 0",
     "solutionSteps": [
       {
-        "explanation": "Write the composite function.",
-        "workingOut": "g(f(x)) = \\sqrt{x - 2}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(g(f(x)) = \\sqrt{x - 2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Solve the domain inequality.",
-        "workingOut": "x - 2 \\ge 0 \\implies x \\ge 2",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x - 2 \\ge 0 \\implies x \\ge 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify the range of the square root function.",
-        "workingOut": "\\text{Range: } y \\ge 0",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Range: } y \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: x >= 2, Range: y >= 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: x >= 2, Range: y >= 0",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q16bi",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find the domain and range of the composite function $f(g(x))$ given $f(x) = \\frac{2}{x}$ and $g(x) = x^2 + 3$.",
-    "a": "Domain: All real x, Range: 0 < y <= 2/3",
-    "h": "Evaluate the values that $g(x)$ can take, and how that affects the denominator of $f(x)$.",
-    "s": "$f(g(x)) = \\frac{2}{x^2 + 3}$. Since $x^2 + 3 \\ge 3$, the denominator is never zero, so Domain is all real $x$. Since $x^2 + 3 \\ge 3$, $0 < \\frac{2}{x^2 + 3} \\le \\frac{2}{3}$. Range: $0 < y \\le \\frac{2}{3}$.",
+    "question": "Find the domain and range of the composite function \\(f(g(x))\\) given \\(f(x) = \\frac{2}{x}\\) and \\(g(x) = x^2 + 3\\).",
+    "answer": "Domain: All real x, Range: 0 < y <= 2/3",
+    "hint": "Evaluate the values that \\(g(x)\\) can take, and how that affects the denominator of \\(f(x)\\).",
+    "solution": "Domain: All real x, Range: 0 < y <= 2/3",
     "solutionSteps": [
       {
-        "explanation": "Write the composite function.",
-        "workingOut": "f(g(x)) = \\frac{2}{x^2 + 3}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(g(x)) = \\frac{2}{x^2 + 3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine the domain (check if denominator can be zero).",
-        "workingOut": "x^2 + 3 \\ge 3 > 0 \\implies \\text{Domain: } x \\in \\mathbb{R}",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x^2 + 3 \\ge 3 > 0 \\implies \\text{Domain: } x \\in \\mathbb{R}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine range limits.",
-        "workingOut": "x^2 + 3 \\ge 3 \\implies \\frac{1}{x^2 + 3} \\le \\frac{1}{3} \\implies 0 < \\frac{2}{x^2 + 3} \\le \\frac{2}{3} \\implies \\text{Range: } 0 < y \\le \\frac{2}{3}",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(x^2 + 3 \\ge 3 \\implies \\frac{1}{x^2 + 3} \\le \\frac{1}{3} \\implies 0 < \\frac{2}{x^2 + 3} \\le \\frac{2}{3} \\implies \\text{Range: } 0 < y \\le \\frac{2}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: All real x, Range: 0 < y <= 2/3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: All real x, Range: 0 < y <= 2/3",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q16bii",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Find the domain and range of the composite function $g(f(x))$ given $f(x) = \\frac{2}{x}$ and $g(x) = x^2 + 3$.",
-    "a": "Domain: x != 0, Range: y > 3",
-    "h": "The inner function $f(x)$ is undefined at $x=0$. Analyze $g(u)$ for $u = 2/x \\neq 0$.",
-    "s": "$g(f(x)) = \\left(\\frac{2}{x}\\right)^2 + 3 = \\frac{4}{x^2} + 3$. Domain is $x \\neq 0$. Since $\\frac{4}{x^2} > 0$, Range is $y > 3$.",
+    "question": "Find the domain and range of the composite function \\(g(f(x))\\) given \\(f(x) = \\frac{2}{x}\\) and \\(g(x) = x^2 + 3\\).",
+    "answer": "Domain: x != 0, Range: y > 3",
+    "hint": "The inner function \\(f(x)\\) is undefined at \\(x=0\\). Analyze \\(g(u)\\) for \\(u = 2/x \\neq 0\\).",
+    "solution": "Domain: x != 0, Range: y > 3",
     "solutionSteps": [
       {
-        "explanation": "Write the composite function.",
-        "workingOut": "g(f(x)) = \\frac{4}{x^2} + 3",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(g(f(x)) = \\frac{4}{x^2} + 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Identify domain restrictions.",
-        "workingOut": "\\text{Domain: } x \\neq 0",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{Domain: } x \\neq 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Evaluate outputs for range.",
-        "workingOut": "\\frac{4}{x^2} > 0 \\implies \\frac{4}{x^2} + 3 > 3 \\implies \\text{Range: } y > 3",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{4}{x^2} > 0 \\implies \\frac{4}{x^2} + 3 > 3 \\implies \\text{Range: } y > 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: x != 0, Range: y > 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: x != 0, Range: y > 3",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f(x + 2)$.",
-    "a": "Shift the entire graph horizontal left by 2 units.",
-    "h": "Replacing $x$ with $x + 2$ translates the curve left.",
-    "s": "The graph is translated 2 units to the left.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(x + 2)\\).",
+    "answer": "Shift the entire graph horizontal left by 2 units.",
+    "hint": "Replacing \\(x\\) with \\(x + 2\\) translates the curve left.",
+    "solution": "Shift the entire graph horizontal left by 2 units.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x + 2 \\implies \\text{Shift left 2 units}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift the entire graph horizontal left by 2 units.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift the entire graph horizontal left by 2 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift the entire graph horizontal left by 2 units.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2119,45 +2921,58 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "Identify the translation: \\(f(x + 2)\\) means shifting the base function \\(f(x)\\) left by 2 units.",
-        "workingOut": "x \\to x + 2 \\implies \\text{Shift left 2 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the shifted curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              5,
-              5,
-              -3
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x+4)*(x+4)*(1-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f(x) + 2$.",
-    "a": "Shift the entire graph vertically upwards by 2 units.",
-    "h": "Adding 2 to the function translates the curve upwards.",
-    "s": "The graph is translated 2 units upwards.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(x) + 2\\).",
+    "answer": "Shift the entire graph vertically upwards by 2 units.",
+    "hint": "Adding 2 to the function translates the curve upwards.",
+    "solution": "Shift the entire graph vertically upwards by 2 units.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y \\to y + 2 \\implies \\text{Shift up 2 units}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift the entire graph vertically upwards by 2 units.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift the entire graph vertically upwards by 2 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift the entire graph vertically upwards by 2 units.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2174,45 +2989,58 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "Identify vertical translation.",
-        "workingOut": "y \\to y + 2 \\implies \\text{Shift up 2 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the shifted curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              7,
-              5,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,7]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 2.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f(x - 2)$.",
-    "a": "Shift the entire graph horizontally right by 2 units.",
-    "h": "Replacing $x$ with $x-2$ shifts right.",
-    "s": "The graph is translated 2 units to the right.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(x - 2)\\).",
+    "answer": "Shift the entire graph horizontally right by 2 units.",
+    "hint": "Replacing \\(x\\) with \\(x-2\\) shifts right.",
+    "solution": "Shift the entire graph horizontally right by 2 units.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x - 2 \\implies \\text{Shift right 2 units}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift the entire graph horizontally right by 2 units.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift the entire graph horizontally right by 2 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift the entire graph horizontally right by 2 units.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2229,45 +3057,58 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "Identify translation.",
-        "workingOut": "x \\to x - 2 \\implies \\text{Shift right 2 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the shifted curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              5,
-              5,
-              -3
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x)*(x)*(5-x) + 0.5; }, -5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f(x) - 2$.",
-    "a": "Shift the entire graph vertically downwards by 2 units.",
-    "h": "Subtracting 2 shifts the graph down.",
-    "s": "The graph is translated 2 units downwards.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(x) - 2\\).",
+    "answer": "Shift the entire graph vertically downwards by 2 units.",
+    "hint": "Subtracting 2 shifts the graph down.",
+    "solution": "Shift the entire graph vertically downwards by 2 units.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y \\to y - 2 \\implies \\text{Shift down 2 units}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Shift the entire graph vertically downwards by 2 units.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift the entire graph vertically downwards by 2 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift the entire graph vertically downwards by 2 units.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2284,45 +3125,58 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "Identify vertical translation.",
-        "workingOut": "y \\to y - 2 \\implies \\text{Shift down 2 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the shifted curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              4,
-              5,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) - 1.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17e",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f(-x)$.",
-    "a": "Reflect the entire graph across the y-axis.",
-    "h": "Replacing $x$ with $-x$ reflects the curve horizontally.",
-    "s": "The graph is reflected across the $y$-axis.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f(-x)\\).",
+    "answer": "Reflect the entire graph across the y-axis.",
+    "hint": "Replacing \\(x\\) with \\(-x\\) reflects the curve horizontally.",
+    "solution": "Reflect the entire graph across the y-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to -x \\implies \\text{Reflection in the y-axis}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Reflect the entire graph across the y-axis.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Reflect the entire graph across the y-axis.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Reflect the entire graph across the y-axis.",
+        "graphData": null
+      }
+    ],
     "graphData": {
       "jsxGraph": {
         "width": 300,
@@ -2339,1253 +3193,1346 @@ export const Y11_CH5I_QUESTIONS = [
         "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
     },
-    "solutionSteps": [
-      {
-        "explanation": "Identify the reflection.",
-        "workingOut": "x \\to -x \\implies \\text{Reflection in the y-axis}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the reflected curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              5,
-              5,
-              -3
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(-x+2)*(-x+2)*(3+x) + 0.5; }, -3.5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q17f",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = -f(x)$.",
-    "a": "Reflect the entire graph across the x-axis.",
-    "h": "Negating the function values reflects the curve vertically.",
-    "s": "The graph is reflected across the $x$-axis.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -3
-        ],
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
-      }
-    },
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = -f(x)\\).",
+    "answer": "Reflect the entire graph across the x-axis.",
+    "hint": "Negating the function values reflects the curve vertically.",
+    "solution": "Reflect the entire graph across the x-axis.",
     "solutionSteps": [
       {
-        "explanation": "Identify reflection.",
-        "workingOut": "y \\to -y \\implies \\text{Reflection in the x-axis}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the reflected curve.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y \\to -y \\implies \\text{Reflection in the x-axis}\\)",
         "graphData": {
           "jsxGraph": {
             "width": 300,
             "height": 300,
             "boundingbox": [
               -5,
-              3,
               5,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -(0.1*(x+2)*(x+2)*(3-x) + 0.5); }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "y11a-5i-q17g",
-    "c": "5I",
-    "t": "Revision",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = -f(-x)$.",
-    "a": "Rotate the entire graph 180 degrees about the origin.",
-    "h": "Perform both a horizontal and a vertical reflection.",
-    "s": "The graph is rotated $180^{\\circ}$ about the origin.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -3
-        ],
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
-      }
-    },
-    "solutionSteps": [
-      {
-        "explanation": "Identify double reflection.",
-        "workingOut": "x \\to -x \\text{ and } y \\to -y \\implies \\text{Rotation of } 180^{\\circ} \\text{ about origin}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the rotated curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              3,
               5,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,3]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -(0.1*(-x+2)*(-x+2)*(3+x) + 0.5); }, -3.5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "y11a-5i-q17h",
-    "c": "5I",
-    "t": "Revision",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = 3f(x)$.",
-    "a": "Stretch the entire graph vertically by a factor of 3.",
-    "h": "Multiply the y-coordinate of every point on the graph by 3.",
-    "s": "The graph is dilated vertically by a factor of 3.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -3
-        ],
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
-      }
-    },
-    "solutionSteps": [
-      {
-        "explanation": "Identify dilation.",
-        "workingOut": "y \\to 3y \\implies \\text{Vertical stretch by factor of 3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the vertically stretched curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              12,
-              5,
-              -2
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,12]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3 * (0.1*(x+2)*(x+2)*(3-x) + 0.5); }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "id": "y11a-5i-q17i",
-    "c": "5I",
-    "t": "Revision",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Use the given graph of $y = f(x)$ to sketch $y = f\\left(\\frac{1}{3}x\\right)$.",
-    "a": "Stretch the entire graph horizontally by a factor of 3.",
-    "h": "Multiply the x-coordinate of every point on the graph by 3.",
-    "s": "The graph is dilated horizontally by a factor of 3.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5,
-          5,
-          5,
-          -3
-        ],
-        "boardOptions": {
-          "keepaspectratio": true
-        },
-        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
-      }
-    },
-    "solutionSteps": [
-      {
-        "explanation": "Identify dilation.",
-        "workingOut": "x \\to \\frac{x}{3} \\implies \\text{Horizontal stretch by factor of 3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the horizontally stretched curve.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -15,
-              5,
-              15,
               -3
             ],
             "boardOptions": {
               "keepaspectratio": true
             },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-15,0],[15,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 0.1*(x/3+2)*(x/3+2)*(3-x/3) + 0.5; }, -15, 10.5], {strokeColor:'blue',strokeWidth:2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Reflect the entire graph across the x-axis.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Reflect the entire graph across the x-axis.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Reflect the entire graph across the x-axis.",
+        "graphData": null
       }
-    ]
-  },
-  {
-    "id": "y11a-5i-q18a",
-    "c": "5I",
-    "t": "Revision",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Identify how the graph of the second equation $y = \\frac{1}{9}x^2 - \\frac{4}{3}x$ can be obtained from the graph of the first equation $y = x^2 - 4x$ by a suitable dilation.",
-    "a": "0",
-    "opts": [
-      "Horizontal dilation by a factor of $3$ (stretch)",
-      "Horizontal dilation by a factor of $\\frac{1}{3}$ (compression)",
-      "Vertical dilation by a factor of $\\frac{1}{9}$ (compression)",
-      "Vertical dilation by a factor of $9$ (stretch)"
     ],
-    "h": "Substitute $x/3$ in place of $x$ in the first equation and simplify.",
-    "s": "Let $f(x) = x^2 - 4x$. Then $f(x/3) = (x/3)^2 - 4(x/3) = \\frac{1}{9}x^2 - \\frac{4}{3}x$. This is a horizontal stretch by a factor of 3.",
-    "solutionSteps": [
-      {
-        "explanation": "Define the first function.",
-        "workingOut": "f(x) = x^2 - 4x",
-        "graphData": null
-      },
-      {
-        "explanation": "Evaluate the replacement \\(x \\to \\frac{x}{3}\\).",
-        "workingOut": "f\\left(\\frac{x}{3}\\right) = \\left(\\frac{x}{3}\\right)^2 - 4\\left(\\frac{x}{3}\\right) = \\frac{1}{9}x^2 - \\frac{4}{3}x",
-        "graphData": null
-      },
-      {
-        "explanation": "Describe the transformation.",
-        "workingOut": "\\text{Horizontal dilation by a factor of 3}",
-        "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -3
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
+        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
       }
-    ]
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
-    "id": "y11a-5i-q18b",
-    "c": "5I",
-    "t": "Revision",
-    "type": "multiple_choice",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "q": "Identify how the graph of the second equation $y = \\frac{1}{3x - 9}$ can be obtained from the graph of the first equation $y = \\frac{1}{x - 3}$ by a suitable dilation.",
-    "a": "0",
-    "opts": [
-      "Horizontal dilation by a factor of $\\frac{1}{3}$ (compression)",
-      "Horizontal dilation by a factor of $3$ (stretch)",
-      "Vertical dilation by a factor of $\\frac{1}{3}$ (compression)",
-      "Vertical dilation by a factor of $3$ (stretch)"
-    ],
-    "h": "Express $3x-9$ in factored form: $3(x-3)$. Compare $f(3x)$ to $f(x)$.",
-    "s": "Let $f(x) = \\frac{1}{x-3}$. Then $f(3x) = \\frac{1}{3x-3}$? No, wait. The second function is $\\frac{1}{3x-9} = \\frac{1}{3(x-3)} = \\frac{1}{3} f(x)$. So it is a vertical compression by a factor of 1/3, OR a horizontal compression? No, wait! Replacing $x$ with $3x$ in $f(x)$ gives $f(3x) = \\frac{1}{3x-3}$, not $\\frac{1}{3x-9}$. But wait, $y = \\frac{1}{3x-9}$ is $\\frac{1}{3} f(x)$. This is a vertical dilation by 1/3! Let's check: is it a vertical dilation by 1/3 or horizontal dilation? Yes, it is a vertical dilation by factor of 1/3.",
-    "solutionSteps": [
-      {
-        "explanation": "Write the first function.",
-        "workingOut": "f(x) = \\frac{1}{x - 3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Factor the denominator of the second function.",
-        "workingOut": "y = \\frac{1}{3(x - 3)} = \\frac{1}{3} \\cdot \\frac{1}{x - 3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Recognise the vertical scaling.",
-        "workingOut": "y = \\frac{1}{3} f(x) \\implies \\text{Vertical compression by factor of } \\frac{1}{3}",
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y11a-5i-q19a",
+    "id": "y11a-5i-q17g",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes, showing all significant points: $y = 3x$, $y = 3x + 4$, $y = 3x - 3$.",
-    "a": "Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.",
-    "h": "These are parallel lines with different vertical shifts.",
-    "s": "The graph consists of three parallel lines with slope 3, shifted vertically.",
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = -f(-x)\\).",
+    "answer": "Rotate the entire graph 180 degrees about the origin.",
+    "hint": "Perform both a horizontal and a vertical reflection.",
+    "solution": "Rotate the entire graph 180 degrees about the origin.",
     "solutionSteps": [
       {
-        "explanation": "Note the slope is 3 for all lines, so they are parallel.",
-        "workingOut": "m = 3",
-        "graphData": null
-      },
-      {
-        "explanation": "Identify y-intercepts: \\(0, 4, -3\\).",
-        "workingOut": "\\text{y-intercepts: } (0,0), \\ (0,4), \\ (0,-3)",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the three lines.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to -x \\text{ and } y \\to -y \\implies \\text{Rotation of } 180^{\\circ} \\text{ about origin}\\)",
         "graphData": {
           "jsxGraph": {
             "width": 300,
             "height": 300,
             "boundingbox": [
               -5,
-              8,
               5,
-              -8
+              5,
+              -3
             ],
             "boardOptions": {
               "keepaspectratio": true
             },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-8],[0,8]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 3*x; }, -5, 5], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x + 4; }, -5, 5], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3*x - 3; }, -5, 5], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Rotate the entire graph 180 degrees about the origin.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Rotate the entire graph 180 degrees about the origin.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Rotate the entire graph 180 degrees about the origin.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -3
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
+        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-5i-q17h",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = 3f(x)\\).",
+    "answer": "Stretch the entire graph vertically by a factor of 3.",
+    "hint": "Multiply the y-coordinate of every point on the graph by 3.",
+    "solution": "Stretch the entire graph vertically by a factor of 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y \\to 3y \\implies \\text{Vertical stretch by factor of 3}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Stretch the entire graph vertically by a factor of 3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Stretch the entire graph vertically by a factor of 3.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Stretch the entire graph vertically by a factor of 3.",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -3
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
+        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-5i-q17i",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Use the given graph of \\(y = f(x)\\) to sketch \\(y = f\\left(\\frac{1}{3}x\\right)\\).",
+    "answer": "Stretch the entire graph horizontally by a factor of 3.",
+    "hint": "Multiply the x-coordinate of every point on the graph by 3.",
+    "solution": "Stretch the entire graph horizontally by a factor of 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to \\frac{x}{3} \\implies \\text{Horizontal stretch by factor of 3}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 300,
+            "height": 300,
+            "boundingbox": [
+              -5,
+              5,
+              5,
+              -3
+            ],
+            "boardOptions": {
+              "keepaspectratio": true
+            },
+            "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Stretch the entire graph horizontally by a factor of 3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Stretch the entire graph horizontally by a factor of 3.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Stretch the entire graph horizontally by a factor of 3.",
+        "graphData": null
+      }
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 300,
+        "height": 300,
+        "boundingbox": [
+          -5,
+          5,
+          5,
+          -3
+        ],
+        "boardOptions": {
+          "keepaspectratio": true
+        },
+        "script": "board.suspendUpdate();\\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\\nboard.create('functiongraph', [function(x){ return 0.1*(x+2)*(x+2)*(3-x) + 0.5; }, -5, 3.5], {strokeColor:'blue',strokeWidth:2});\\nboard.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-5i-q18a",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Identify how the graph of the second equation \\(y = \\frac{1}{9}x^2 - \\frac{4}{3}x\\) can be obtained from the graph of the first equation \\(y = x^2 - 4x\\) by a suitable dilation.",
+    "opts": [
+      "Horizontal dilation by a factor of \\(3\\) (stretch)",
+      "\\(Horizontal dilation by a factor of \\(\\frac{1}{3}\\) (compression)\\)",
+      "\\(Vertical dilation by a factor of \\(\\frac{1}{9}\\) (compression)\\)",
+      "Vertical dilation by a factor of \\(9\\) (stretch)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Substitute \\(x/3\\) in place of \\(x\\) in the first equation and simplify.",
+    "solution": "Let \\(f(x) = x^2 - 4x\\). Then \\(f(x/3) = (x/3)^2 - 4(x/3) = \\frac{1}{9}x^2 - \\frac{4}{3}x\\). This is a horizontal stretch by a factor of 3.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(x) = x^2 - 4x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(f\\left(\\frac{x}{3}\\right) = \\left(\\frac{x}{3}\\right)^2 - 4\\left(\\frac{x}{3}\\right) = \\frac{1}{9}x^2 - \\frac{4}{3}x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Horizontal dilation by a factor of 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Horizontal dilation by a factor of \\(3\\) (stretch). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Horizontal dilation by a factor of \\(3\\) (stretch)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y11a-5i-q18b",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Identify how the graph of the second equation \\(y = \\frac{1}{3x - 9}\\) can be obtained from the graph of the first equation \\(y = \\frac{1}{x - 3}\\) by a suitable dilation.",
+    "opts": [
+      "\\(Horizontal dilation by a factor of \\(\\frac{1}{3}\\) (compression)\\)",
+      "Horizontal dilation by a factor of \\(3\\) (stretch)",
+      "\\(Vertical dilation by a factor of \\(\\frac{1}{3}\\) (compression)\\)",
+      "Vertical dilation by a factor of \\(3\\) (stretch)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Express \\(3x-9\\) in factored form: \\(3(x-3)\\). Compare \\(f(3x)\\) to \\(f(x)\\).",
+    "solution": "Let \\(f(x) = \\frac{1}{x-3}\\). Then \\(f(3x) = \\frac{1}{3x-3}\\)? No, wait. The second function is \\(\\frac{1}{3x-9} = \\frac{1}{3(x-3)} = \\frac{1}{3} f(x)\\). So it is a vertical compression by a factor of 1/3, OR a horizontal compression? No, wait! Replacing \\(x\\) with \\(3x\\) in \\(f(x)\\) gives \\(f(3x) = \\frac{1}{3x-3}\\), not \\(\\frac{1}{3x-9}\\). But wait, \\(y = \\frac{1}{3x-9}\\) is \\(\\frac{1}{3} f(x)\\). This is a vertical dilation by 1/3! Let's check: is it a vertical dilation by 1/3 or horizontal dilation? Yes, it is a vertical dilation by factor of 1/3.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(f(x) = \\frac{1}{x - 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y = \\frac{1}{3(x - 3)} = \\frac{1}{3} \\cdot \\frac{1}{x - 3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = \\frac{1}{3} f(x) \\implies \\text{Vertical compression by factor of } \\frac{1}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Horizontal dilation by a factor of \\(\\frac{1}{3}\\) (compression). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(Horizontal dilation by a factor of \\(\\frac{1}{3}\\) (compression)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y11a-5i-q19a",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Sketch the set of graphs on a single pair of axes, showing all significant points: \\(y = 3x\\), \\(y = 3x + 4\\), \\(y = 3x - 3\\).",
+    "answer": "Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.",
+    "hint": "These are parallel lines with different vertical shifts.",
+    "solution": "Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(m = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\text{y-intercepts: } (0,0), \\ (0,4), \\ (0,-3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three parallel lines with gradient 3 and y-intercepts 0, 4, and -3.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = -\\frac{1}{3}x$, $y = -\\frac{1}{3}x + 2$, $y = -\\frac{1}{3}x - 3$.",
-    "a": "Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.",
-    "h": "Parallel lines with negative slope.",
-    "s": "Lines have slope -1/3, with y-intercepts at $0$, $2$, and $-3$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = -\\frac{1}{3}x\\), \\(y = -\\frac{1}{3}x + 2\\), \\(y = -\\frac{1}{3}x - 3\\).",
+    "answer": "Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.",
+    "hint": "Parallel lines with negative slope.",
+    "solution": "Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.",
     "solutionSteps": [
       {
-        "explanation": "Determine the slope.",
-        "workingOut": "m = -\\frac{1}{3}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(m = -\\frac{1}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Determine y-intercepts.",
-        "workingOut": "(0,0), \\ (0,2), \\ (0,-3)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0,0), \\ (0,2), \\ (0,-3)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the lines.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -8,
-              6,
-              8,
-              -6
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -x/3; }, -8, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x/3 + 2; }, -8, 8], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x/3 - 3; }, -8, 8], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three parallel lines with gradient -1/3 and y-intercepts 0, 2, and -3.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19c",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = x + 4$, $y = 4 - x$, $y = -x - 4$.",
-    "a": "Three lines forming a triangular region with vertices at intercepts.",
-    "h": "Find intercepts for each line.",
-    "s": "The lines are $y = x+4$, $y = -x+4$, and $y = -x-4$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = x + 4\\), \\(y = 4 - x\\), \\(y = -x - 4\\).",
+    "answer": "Three lines forming a triangular region with vertices at intercepts.",
+    "hint": "Find intercepts for each line.",
+    "solution": "Three lines forming a triangular region with vertices at intercepts.",
     "solutionSteps": [
       {
-        "explanation": "Find intercepts.",
-        "workingOut": "y = x+4 \\implies (0,4), (-4,0) \\\\ y = -x+4 \\implies (0,4), (4,0) \\\\ y = -x-4 \\implies (0,-4), (-4,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = x+4 \\implies (0,4), (-4,0) \\\\ y = -x+4 \\implies (0,4), (4,0) \\\\ y = -x-4 \\implies (0,-4), (-4,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the lines.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -6,
-              6,
-              6,
-              -6
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x + 4; }, -6, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 4 - x; }, -6, 6], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -x - 4; }, -6, 6], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three lines forming a triangular region with vertices at intercepts.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three lines forming a triangular region with vertices at intercepts.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three lines forming a triangular region with vertices at intercepts.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19d",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = (x - 3)^2 - 2$, $y = (x + 3)^2 - 2$, $y = -(x + 3)^2 + 2$.",
-    "a": "Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).",
-    "h": "Find the vertex for each parabola.",
-    "s": "Vertices are $(3, -2)$, $(-3, -2)$, and $(-3, 2)$ (which opens downwards).",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = (x - 3)^2 - 2\\), \\(y = (x + 3)^2 - 2\\), \\(y = -(x + 3)^2 + 2\\).",
+    "answer": "Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).",
+    "hint": "Find the vertex for each parabola.",
+    "solution": "Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).",
     "solutionSteps": [
       {
-        "explanation": "Identify vertices.",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
         "workingOut": "V_1 = (3, -2), quad V_2 = (-3, -2), quad V_3 = (-3, 2)",
         "graphData": null
       },
       {
-        "explanation": "Observe orientations: first two open upwards, the third opens downwards.",
-        "workingOut": "",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
         "graphData": null
       },
       {
-        "explanation": "Sketch the parabolas.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -7,
-              6,
-              7,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-7,0],[7,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x-3)*(x-3) - 2; }, -1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3) - 2; }, -7, 1], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -(x+3)*(x+3) + 2; }, -7, 1], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three parabolas with vertices at (3, -2), (-3, -2), and (-3, 2).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19e",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = x^2$, $y = (x + 3)^2$, $y = (x - 2)^2$.",
-    "a": "Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).",
-    "h": "These are horizontal shifts of the standard parabola $y = x^2$.",
-    "s": "Parabolas are shifted horizontally with vertices at $(0,0)$, $(-3,0)$, and $(2,0)$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = x^2\\), \\(y = (x + 3)^2\\), \\(y = (x - 2)^2\\).",
+    "answer": "Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).",
+    "hint": "These are horizontal shifts of the standard parabola \\(y = x^2\\).",
+    "solution": "Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).",
     "solutionSteps": [
       {
-        "explanation": "Identify vertices.",
-        "workingOut": "V_1 = (0,0), V_2 = (-3,0), V_3 = (2,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(V_1 = (0,0), V_2 = (-3,0), V_3 = (2,0)\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
         "graphData": null
       },
       {
-        "explanation": "Sketch the parabolas.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -6,
-              10,
-              5,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x; }, -3.1, 3.1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3); }, -6, 0.1], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2); }, -1.1, 5], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three congruent parabolas with vertices at (0, 0), (-3, 0), and (2, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19f",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $(x - 2)^2 + y^2 = 4$, $(x + 2)^2 + y^2 = 4$, $x^2 + (y - 2)^2 = 4$.",
-    "a": "Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).",
-    "h": "Identify the centre and radius of each circle.",
-    "s": "All circles have radius 2. Centres are at $(2, 0)$, $(-2, 0)$, and $(0, 2)$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\((x - 2)^2 + y^2 = 4\\), \\((x + 2)^2 + y^2 = 4\\), \\(x^2 + (y - 2)^2 = 4\\).",
+    "answer": "Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).",
+    "hint": "Identify the centre and radius of each circle.",
+    "solution": "Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).",
     "solutionSteps": [
       {
-        "explanation": "Find centres and radii.",
-        "workingOut": "C_1 = (2,0), r_1 = 2 \\\\ C_2 = (-2,0), r_2 = 2 \\\\ C_3 = (0,2), r_3 = 2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(C_1 = (2,0), r_1 = 2 \\\\ C_2 = (-2,0), r_2 = 2 \\\\ C_3 = (0,2), r_3 = 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the circles.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              5,
-              5,
-              -3
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,5]], {strokeColor:'black'});\nboard.create('circle', [[2,0], 2], {strokeColor:'blue', strokeWidth:2});\nboard.create('circle', [[-2,0], 2], {strokeColor:'green', strokeWidth:2});\nboard.create('circle', [[0,2], 2], {strokeColor:'red', strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three circles of radius 2 with centres at (2, 0), (-2, 0), and (0, 2).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19g",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = x^2 - 4$, $y = 4 - x^2$, $y = 9 - x^2$.",
-    "a": "Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).",
-    "h": "Find orientation and vertex for each.",
-    "s": "$y = x^2 - 4$ (opens up, vertex $(0,-4)$), $y = 4 - x^2$ (opens down, vertex $(0,4)$), $y = 9 - x^2$ (opens down, vertex $(0,9)$).",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = x^2 - 4\\), \\(y = 4 - x^2\\), \\(y = 9 - x^2\\).",
+    "answer": "Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).",
+    "hint": "Find orientation and vertex for each.",
+    "solution": "Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).",
     "solutionSteps": [
       {
-        "explanation": "Identify vertices and orientation.",
-        "workingOut": "V_1 = (0, -4) \\text{ (up)} \\\\ V_2 = (0, 4) \\text{ (down)} \\\\ V_3 = (0, 9) \\text{ (down)}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(V_1 = (0, -4) \\text{ (up)} \\\\ V_2 = (0, 4) \\text{ (down)} \\\\ V_3 = (0, 9) \\text{ (down)}\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -5,
-              10,
-              5,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x - 4; }, -3.5, 3.5], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 4 - x*x; }, -3.5, 3.5], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 9 - x*x; }, -4, 4], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three parabolas: one opening upwards with vertex (0, -4), two opening downwards with vertices (0, 4) and (0, 9).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19h",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = (x + 3)^2$, $y = (x + 3)^2 - 9$, $y = (x + 3)^2 + 2$.",
-    "a": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
-    "h": "All parabolas have their axis of symmetry at $x = -3$.",
-    "s": "Vertices are at $(-3, 0)$, $(-3, -9)$, and $(-3, 2)$. All open upwards.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = (x + 3)^2\\), \\(y = (x + 3)^2 - 9\\), \\(y = (x + 3)^2 + 2\\).",
+    "answer": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
+    "hint": "All parabolas have their axis of symmetry at \\(x = -3\\).",
+    "solution": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
     "solutionSteps": [
       {
-        "explanation": "Identify vertices.",
-        "workingOut": "V_1 = (-3, 0), V_2 = (-3, -9), V_3 = (-3, 2)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(V_1 = (-3, 0), V_2 = (-3, -9), V_3 = (-3, 2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -8,
-              6,
-              2,
-              -10
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-10],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3); }, -6, 0], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3) - 9; }, -7, 1], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x+3)*(x+3) + 2; }, -5, -1], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three parabolas shifted horizontally left by 3, with vertical positions at 0, -9, and 2.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19i",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = -|x|$, $y = -|x| + 2$, $y = -|x - 3|$.",
-    "a": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
-    "h": "Identify the shifts and note the negative sign reflecting them down.",
-    "s": "Vertices are $(0,0)$, $(0,2)$ and $(3,0)$. All open downwards.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = -|x|\\), \\(y = -|x| + 2\\), \\(y = -|x - 3|\\).",
+    "answer": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
+    "hint": "Identify the shifts and note the negative sign reflecting them down.",
+    "solution": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
     "solutionSteps": [
       {
-        "explanation": "Identify vertices and orientation.",
-        "workingOut": "V_1=(0,0) \\text{ (down)}, V_2=(0,2) \\text{ (down)}, V_3=(3,0) \\text{ (down)}",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(V_1=(0,0) \\text{ (down)}, V_2=(0,2) \\text{ (down)}, V_3=(3,0) \\text{ (down)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the V-graphs.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              4,
-              6,
-              -4
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return -Math.abs(x); }, -4, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -Math.abs(x) + 2; }, -4, 6], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -Math.abs(x - 3); }, -4, 6], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three downward-opening V-graphs with vertices at (0, 0), (0, 2), and (3, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19j",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = \\sqrt{x}$, $y = \\sqrt{x} + 2$, $y = \\sqrt{x + 2}$.",
-    "a": "Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).",
-    "h": "Evaluate the starting point (domain boundary) of each square root function.",
-    "s": "The curves start at $(0,0)$, $(0,2)$ and $(-2,0)$, curving upwards to the right.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = \\sqrt{x}\\), \\(y = \\sqrt{x} + 2\\), \\(y = \\sqrt{x + 2}\\).",
+    "answer": "Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).",
+    "hint": "Evaluate the starting point (domain boundary) of each square root function.",
+    "solution": "Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).",
     "solutionSteps": [
       {
-        "explanation": "Identify domain limits and start points.",
-        "workingOut": "y = \\sqrt{x} \\implies (0,0) \\\\ y = \\sqrt{x}+2 \\implies (0,2) \\\\ y = \\sqrt{x+2} \\implies (-2,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = \\sqrt{x} \\implies (0,0) \\\\ y = \\sqrt{x}+2 \\implies (0,2) \\\\ y = \\sqrt{x+2} \\implies (-2,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -3,
-              6,
-              6,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.sqrt(x); }, 0, 6], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.sqrt(x) + 2; }, 0, 6], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.sqrt(x + 2); }, -2, 6], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three half-parabolas starting at (0, 0), (0, 2), and (-2, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19k",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = 3^x$, $y = 3^x - 2$, $y = 3^{x - 1}$.",
-    "a": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
-    "h": "Identify horizontal asymptotes and y-intercepts.",
-    "s": "Asymptotes: $y = 0$, $y = -2$, and $y = 0$. $y$-intercepts: $(0,1)$, $(0,-1)$, and $(0, 1/3)$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = 3^x\\), \\(y = 3^x - 2\\), \\(y = 3^{x - 1}\\).",
+    "answer": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
+    "hint": "Identify horizontal asymptotes and y-intercepts.",
+    "solution": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
     "solutionSteps": [
       {
-        "explanation": "Find horizontal asymptotes.",
-        "workingOut": "\\text{Asymptotes: } y = 0, y = -2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Asymptotes: } y = 0, y = -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Find y-intercepts.",
-        "workingOut": "(0, 1), \\ (0, -1), \\ (0, 1/3)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0, 1), \\ (0, -1), \\ (0, 1/3)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              6,
-              3,
-              -3
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x); }, -4, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x) - 2; }, -4, 2], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.pow(3, x-1); }, -4, 2.5], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three exponential curves with horizontal asymptotes at y = 0, y = -2, and y = 0.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19l",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = \\frac{2}{x}$, $y = \\frac{2}{x - 3}$, $y = \\frac{2}{x + 2}$.",
-    "a": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
-    "h": "Find the vertical asymptote for each by setting the denominator to zero.",
-    "s": "Vertical asymptotes: $x = 0$, $x = 3$, and $x = -2$. Horizontal asymptote: $y = 0$ for all.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = \\frac{2}{x}\\), \\(y = \\frac{2}{x - 3}\\), \\(y = \\frac{2}{x + 2}\\).",
+    "answer": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
+    "hint": "Find the vertical asymptote for each by setting the denominator to zero.",
+    "solution": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
     "solutionSteps": [
       {
-        "explanation": "Identify asymptotes.",
-        "workingOut": "\\text{Vertical: } x = 0, x = 3, x = -2",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Vertical: } x = 0, x = 3, x = -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the hyperbolas.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -6,
-              6,
-              6,
-              -6
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6,0],[6,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\n// y = 2/x\nboard.create('functiongraph', [function(x){ return 2/x; }, -6, -0.1], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2/x; }, 0.1, 6], {strokeColor:'blue',strokeWidth:2});\n// y = 2/(x-3)\nboard.create('functiongraph', [function(x){ return 2/(x-3); }, -6, 2.9], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2/(x-3); }, 3.1, 6], {strokeColor:'green',strokeWidth:2});\n// y = 2/(x+2)\nboard.create('functiongraph', [function(x){ return 2/(x+2); }, -6, -2.1], {strokeColor:'red',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 2/(x+2); }, -1.9, 6], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three hyperbolas with vertical asymptotes at x = 0, x = 3, and x = -2.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19m",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = x^3$, $y = x^3 - 2$, $y = (x - 2)^3$.",
-    "a": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
-    "h": "Locate the inflection point for each cubic curve.",
-    "s": "Points of inflection: $(0,0)$, $(0,-2)$ and $(2,0)$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = x^3\\), \\(y = x^3 - 2\\), \\(y = (x - 2)^3\\).",
+    "answer": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
+    "hint": "Locate the inflection point for each cubic curve.",
+    "solution": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
     "solutionSteps": [
       {
-        "explanation": "Identify points of inflection.",
-        "workingOut": "P_1 = (0,0), P_2 = (0,-2), P_3 = (2,0)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(P_1 = (0,0), P_2 = (0,-2), P_3 = (2,0)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              6,
-              5,
-              -6
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-6],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return x*x*x; }, -2, 2], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return x*x*x - 2; }, -1.8, 2], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return (x-2)*(x-2)*(x-2); }, 0, 3.8], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three cubic curves with points of inflection at (0, 0), (0, -2), and (2, 0).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19n",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = x^4$, $y = (x - 2)^4$, $y = x^4 + 2$.",
-    "a": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
-    "h": "These curves behave like $y = x^2$ but are flatter near their minimum.",
-    "s": "Minima are at $(0,0)$, $(2,0)$, and $(0,2)$.",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = x^4\\), \\(y = (x - 2)^4\\), \\(y = x^4 + 2\\).",
+    "answer": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
+    "hint": "These curves behave like \\(y = x^2\\) but are flatter near their minimum.",
+    "solution": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
     "solutionSteps": [
       {
-        "explanation": "Identify the flat minimum points.",
-        "workingOut": "M_1 = (0,0), M_2 = (2,0), M_3 = (0,2)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(M_1 = (0,0), M_2 = (2,0), M_3 = (0,2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -3,
-              10,
-              5,
-              -1
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-1],[0,10]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(x, 4); }, -1.8, 1.8], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.pow(x-2, 4); }, 0.2, 3.8], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.pow(x, 4) + 2; }, -1.7, 1.7], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three flat-bottomed parabolas (quartic curves) with vertices/minima at (0, 0), (2, 0), and (0, 2).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19o",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = \\sqrt{x}$, $y = -\\sqrt{x}$, $y = 3 - \\sqrt{x}$.",
-    "a": "Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).",
-    "h": "Look at the reflections and vertical translations.",
-    "s": "Start points: $(0,0)$ (curving up), $(0,0)$ (curving down) and $(0,3)$ (curving down).",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = \\sqrt{x}\\), \\(y = -\\sqrt{x}\\), \\(y = 3 - \\sqrt{x}\\).",
+    "answer": "Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).",
+    "hint": "Look at the reflections and vertical translations.",
+    "solution": "Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).",
     "solutionSteps": [
       {
-        "explanation": "Analyze starting points and reflection directions.",
-        "workingOut": "y = \\sqrt{x} \\implies \\text{upward from } (0,0) \\\\ y = -\\sqrt{x} \\implies \\text{downward from } (0,0) \\\\ y = 3 - \\sqrt{x} \\implies \\text{downward from } (0,3)",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = \\sqrt{x} \\implies \\text{upward from } (0,0) \\\\ y = -\\sqrt{x} \\implies \\text{downward from } (0,0) \\\\ y = 3 - \\sqrt{x} \\implies \\text{downward from } (0,3)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -1,
-              5,
-              8,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,5]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.sqrt(x); }, 0, 8], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -Math.sqrt(x); }, 0, 8], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return 3 - Math.sqrt(x); }, 0, 8], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three half-parabolas starting at (0, 0), (0, 0) (curving downwards), and (0, 3) (curving downwards).",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q19p",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Sketch the set of graphs on a single pair of axes: $y = 3^{-x}$, $y = 3^{-x} - 3$, $y = -3^x + 3$.",
-    "a": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
-    "h": "Evaluate limits as $x \\to \\pm \\infty$ to find asymptotes.",
-    "s": "$y = 3^{-x}$ has asymptote $y=0$. $y = 3^{-x} - 3$ has asymptote $y=-3$. $y = -3^x + 3$ has asymptote $y=3$ (reflected).",
+    "question": "Sketch the set of graphs on a single pair of axes: \\(y = 3^{-x}\\), \\(y = 3^{-x} - 3\\), \\(y = -3^x + 3\\).",
+    "answer": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
+    "hint": "Evaluate limits as \\(x \\to \\pm \\infty\\) to find asymptotes.",
+    "solution": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
     "solutionSteps": [
       {
-        "explanation": "Find horizontal asymptotes.",
-        "workingOut": "\\text{Asymptotes: } y = 0, y = -3, y = 3",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Asymptotes: } y = 0, y = -3, y = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Find y-intercepts.",
-        "workingOut": "(0, 1), \\ (0, -2), \\ (0, 2)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\((0, 1), \\ (0, -2), \\ (0, 2)\\)",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curves.",
-        "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 300,
-            "height": 300,
-            "boundingbox": [
-              -4,
-              6,
-              4,
-              -5
-            ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,6]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return Math.pow(3, -x); }, -1.5, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return Math.pow(3, -x) - 3; }, -1.2, 4], {strokeColor:'green',strokeWidth:2});\nboard.create('functiongraph', [function(x){ return -Math.pow(3, x) + 3; }, -4, 1.2], {strokeColor:'red',strokeWidth:2});\nboard.unsuspendUpdate();"
-          }
-        }
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Three exponential curves with asymptotes at y = 0, y = -3, and y = 3.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q20",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Which of the following pairs of transformations commute (meaning the order in which they are applied does not matter)?",
-    "a": "0",
+    "question": "Which of the following pairs of transformations commute (meaning the order in which they are applied does not matter)?",
     "opts": [
-      "Reflection in the $y$-axis and reflection in the $x$-axis",
+      "Reflection in the \\(y\\)-axis and reflection in the \\(x\\)-axis",
       "Vertical reflection and vertical translation",
       "Horizontal translation and horizontal dilation",
       "Vertical translation and horizontal translation"
     ],
-    "h": "Evaluate the composite operations algebraically, e.g., $-f(-x)$ vs $-f(-x)$.",
-    "s": "Reflection in the $y$-axis followed by $x$-axis reflection yields $-f(-x)$. In the reverse order, it also yields $-f(-x)$. Hence, they commute.",
+    "a": 0,
+    "answer": "0",
+    "hint": "Evaluate the composite operations algebraically, e.g., \\(-f(-x)\\) vs \\(-f(-x)\\).",
+    "solution": "Reflection in the \\(y\\)-axis followed by \\(x\\)-axis reflection yields \\(-f(-x)\\). In the reverse order, it also yields \\(-f(-x)\\). Hence, they commute.",
     "solutionSteps": [
       {
-        "explanation": "Define the transformations and apply them sequentially.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(-f(-x) = -f(-x)\\)",
         "graphData": null
       },
       {
-        "explanation": "Case A: Reflections. \\(x \\to -x\\) and \\(y \\to -y\\) gives \\(-f(-x)\\) in both directions. They commute.",
-        "workingOut": "-f(-x) = -f(-x)",
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
         "graphData": null
       },
       {
-        "explanation": "Case B: Vertical reflection and translation. \\(-(f(x) + c) = -f(x) - c \\neq -f(x) + c\\). They do not commute.",
-        "workingOut": "",
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Reflection in the \\(y\\)-axis and reflection in the \\(x\\)-axis",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Reflection in the \\(y\\)-axis and reflection in the \\(x\\)-axis. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Reflection in the \\(y\\)-axis and reflection in the \\(x\\)-axis",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-5i-q21a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Identify the transformations applied to the standard function $y = x^2$ to obtain the graph of $y = 9 - x^2$, and sketch the curve.",
-    "a": "Reflect in the x-axis, then shift vertically upwards by 9 units.",
-    "h": "Determine the order of operations: negate $x^2$ first, then add 9.",
-    "s": "The standard parabola $y=x^2$ is reflected in the $x$-axis to get $y=-x^2$, and then translated 9 units upwards to get $y=9-x^2$.",
+    "question": "Identify the transformations applied to the standard function \\(y = x^2\\) to obtain the graph of \\(y = 9 - x^2\\), and sketch the curve.",
+    "answer": "Reflect in the x-axis, then shift vertically upwards by 9 units.",
+    "hint": "Determine the order of operations: negate \\(x^2\\) first, then add 9.",
+    "solution": "Reflect in the x-axis, then shift vertically upwards by 9 units.",
     "solutionSteps": [
       {
-        "explanation": "Identify first transformation (reflection).",
-        "workingOut": "y = x^2 \\to y = -x^2 \\implies \\text{Reflection in the x-axis}",
-        "graphData": null
-      },
-      {
-        "explanation": "Identify second transformation (translation).",
-        "workingOut": "y = -x^2 \\to y = -x^2 + 9 \\implies \\text{Shift up 9 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the final curve.",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(y = x^2 \\to y = -x^2 \\implies \\text{Reflection in the x-axis}\\)",
         "graphData": {
           "jsxGraph": {
-            "width": 300,
-            "height": 300,
+            "width": 360,
+            "height": 260,
             "boundingbox": [
-              -5,
-              11,
-              5,
-              -2
+              -4,
+              4,
+              4,
+              -4
             ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5,0],[5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2],[0,11]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return 9 - x*x; }, -4, 4], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [0,9], {name:'(0,9)', size:3, color:'red', label:{offset:[10,10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y = -x^2 \\to y = -x^2 + 9 \\implies \\text{Shift up 9 units}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "Reflect in the x-axis, then shift vertically upwards by 9 units.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Reflect in the x-axis, then shift vertically upwards by 9 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Reflect in the x-axis, then shift vertically upwards by 9 units.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-5i-q21b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Identify the transformations applied to $y = x^2$ to obtain the graph of $y = \\frac{1}{3}(x - 3)^2 - 2$, and sketch the curve.",
-    "a": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
-    "h": "Evaluate horizontal translation, vertical scaling, and vertical translation.",
-    "s": "Shift right by 3, compress vertically by a factor of 1/3, and translate 2 units down. Vertex is at $(3, -2)$.",
+    "question": "Identify the transformations applied to \\(y = x^2\\) to obtain the graph of \\(y = \\frac{1}{3}(x - 3)^2 - 2\\), and sketch the curve.",
+    "answer": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
+    "hint": "Evaluate horizontal translation, vertical scaling, and vertical translation.",
+    "solution": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
     "solutionSteps": [
       {
-        "explanation": "Apply horizontal translation.",
-        "workingOut": "x \\to x - 3 \\implies \\text{Shift right 3 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Apply vertical dilation.",
-        "workingOut": "y \\to \\frac{1}{3}y \\implies \\text{Vertical compression by factor of } \\frac{1}{3}",
-        "graphData": null
-      },
-      {
-        "explanation": "Apply vertical translation.",
-        "workingOut": "y \\to y - 2 \\implies \\text{Shift down 2 units}",
-        "graphData": null
-      },
-      {
-        "explanation": "Sketch the parabola with vertex \\((3, -2)\\).",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(x \\to x - 3 \\implies \\text{Shift right 3 units}\\)",
         "graphData": {
           "jsxGraph": {
-            "width": 300,
-            "height": 300,
+            "width": 360,
+            "height": 260,
             "boundingbox": [
-              -2,
+              -4,
               4,
-              8,
+              4,
               -4
             ],
-            "boardOptions": {
-              "keepaspectratio": true
-            },
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2,0],[8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,4]], {strokeColor:'black'});\nboard.create('functiongraph', [function(x){ return (x-3)*(x-3)/3 - 2; }, -1, 7], {strokeColor:'blue',strokeWidth:2});\nboard.create('point', [3,-2], {name:'(3,-2)', size:3, color:'red', label:{offset:[10,-10]}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y \\to \\frac{1}{3}y \\implies \\text{Vertical compression by factor of } \\frac{1}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y \\to y - 2 \\implies \\text{Shift down 2 units}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Shift right by 3 units, dilate vertically by factor of 1/3, then shift down by 2 units.",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
-    "id": "y11a-5i-q22",
+    "id": "y11a-5i-q22a",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Consider the piecewise function:\n$f(x) = \\begin{cases} x^2 & \\text{for } x \\le 0 \\\\ x^2 + 2 & \\text{for } x > 0 \\end{cases}$",
-    "a": "a) Discontinuous at x = 0. b) Domain: All real x, Range: (-inf, 0] U (2, inf).",
-    "h": "Evaluate the limits from the left and right at $x=0$.",
-    "s": "At $x=0$, left limit is 0, right limit is 2. Discontinuous.",
-    "subQuestions": [
+    "question": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 & \\text{for } x \\le 0 \\\\ x^2 + 2 & \\text{for } x > 0 \\end{cases}\\)\nIs the curve continuous at \\(x = 0\\)?",
+    "answer": "1",
+    "hint": "Compare \\(\\lim_{x \\to 0^-} f(x)\\) and \\(\\lim_{x \\to 0^+} f(x)\\).",
+    "solution": "1",
+    "solutionSteps": [
       {
-        "id": "y11a-5i-q22a",
-        "type": "multiple_choice",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Is the curve continuous at $x = 0$?",
-        "a": "1",
-        "opts": [
-          "Yes",
-          "No"
-        ],
-        "h": "Compare $\\lim_{x \\to 0^-} f(x)$ and $\\lim_{x \\to 0^+} f(x)$.",
-        "s": "Left limit is $0^2 = 0$. Right limit is $0^2 + 2 = 2$. Since $0 \\neq 2$, it is discontinuous.",
-        "solutionSteps": [
-          {
-            "explanation": "Evaluate limit from the left.",
-            "workingOut": "\\lim_{x \\to 0^-} x^2 = 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluate limit from the right.",
-            "workingOut": "\\lim_{x \\to 0^+} (x^2 + 2) = 2",
-            "graphData": null
-          },
-          {
-            "explanation": "Compare limits.",
-            "workingOut": "0 \\neq 2 \\implies \\text{Discontinuous}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\lim_{x \\to 0^-} x^2 = 0\\)",
+        "graphData": null
       },
       {
-        "id": "y11a-5i-q22b",
-        "type": "teacher_review",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Write down the domain and range of the function.",
-        "a": "Domain: All real x, Range: y >= 0",
-        "h": "Look at the outputs of each branch. Note that both $x^2 \\ge 0$ (for $x \\le 0$) and $x^2 + 2 > 2$ (for $x > 0$).",
-        "s": "Domain: $\\mathbb{R}$. Range: $y \\ge 0$ (since left branch covers $y \\ge 0$ and right branch covers $y > 2$).",
-        "solutionSteps": [
-          {
-            "explanation": "Evaluate the domain.",
-            "workingOut": "\\text{Domain: } x \\in \\mathbb{R}",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluate the range for $x \\le 0$.",
-            "workingOut": "y = x^2 \\ge 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Evaluate the range for $x > 0$.",
-            "workingOut": "y = x^2 + 2 > 2",
-            "graphData": null
-          },
-          {
-            "explanation": "State the combined range.",
-            "workingOut": "\\text{Range: } y \\ge 0",
-            "graphData": null
-          }
-        ]
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\lim_{x \\to 0^+} (x^2 + 2) = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(0 \\neq 2 \\implies \\text{Discontinuous}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
-    "id": "y11a-5i-q23",
+    "id": "y11a-5i-q22b",
+    "topicId": "y11a-5I",
     "c": "5I",
     "t": "Revision",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Consider the piecewise function:\n$f(x) = \\begin{cases} x^2 - 9 & \\text{for } x < 3 \\\\ x - 3 & \\text{for } x \\ge 3 \\end{cases}$",
-    "a": "a) Continuous at x = 3. b) Domain: All real x, Range: y >= -9.",
-    "h": "Evaluate the limits from both sides at $x = 3$.",
-    "s": "Left limit is $3^2 - 9 = 0$. Right limit is $3 - 3 = 0$. They match, so continuous.",
-    "subQuestions": [
+    "question": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 & \\text{for } x \\le 0 \\\\ x^2 + 2 & \\text{for } x > 0 \\end{cases}\\)\nWrite down the domain and range of the function.",
+    "answer": "Domain: All real x, Range: y >= 0",
+    "hint": "Look at the outputs of each branch. Note that both \\(x^2 \\ge 0\\) (for \\(x \\le 0\\)) and \\(x^2 + 2 > 2\\) (for \\(x > 0\\)).",
+    "solution": "Domain: All real x, Range: y >= 0",
+    "solutionSteps": [
       {
-        "id": "y11a-5i-q23a",
-        "type": "multiple_choice",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "Is the curve continuous at $x = 3$?",
-        "a": "0",
-        "opts": [
-          "Yes",
-          "No"
-        ],
-        "h": "Check if left limit and right limit are equal at $x = 3$.",
-        "s": "Left limit is $3^2 - 9 = 0$. Right limit is $3 - 3 = 0$. They are equal.",
-        "solutionSteps": [
-          {
-            "explanation": "Find left-hand limit.",
-            "workingOut": "\\lim_{x \\to 3^-} (x^2 - 9) = 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Find right-hand limit.",
-            "workingOut": "\\lim_{x \\to 3^+} (x - 3) = 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Compare values.",
-            "workingOut": "0 = 0 \\implies \\text{Continuous}",
-            "graphData": null
-          }
-        ]
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Domain: } x \\in \\mathbb{R}\\)",
+        "graphData": null
       },
       {
-        "id": "y11a-5i-q23b",
-        "type": "teacher_review",
-        "difficulty": "medium",
-        "timeLimit": 90,
-        "q": "What are the domain and range of the function?",
-        "a": "Domain: All real x, Range: y >= -9",
-        "h": "Evaluate range of $x^2 - 9$ on $x < 3$ and range of $x - 3$ on $x \\ge 3$.",
-        "s": "Domain: $\\mathbb{R}$. Range: $y \\ge -9$ (since the parabola has its vertex at $(0, -9)$ and goes up to $0$ at $x=3$, and the line starts at $(3,0)$ and goes up to $\\infty$).",
-        "solutionSteps": [
-          {
-            "explanation": "Determine the domain.",
-            "workingOut": "\\text{Domain: } x \\in \\mathbb{R}",
-            "graphData": null
-          },
-          {
-            "explanation": "Find the range of the left branch $x^2-9$ for $x < 3$.",
-            "workingOut": "x^2 \\ge 0 \\implies -9 \\le x^2 - 9 < 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Find the range of the right branch $x-3$ for $x \\ge 3$.",
-            "workingOut": "x \\ge 3 \\implies x - 3 \\ge 0",
-            "graphData": null
-          },
-          {
-            "explanation": "Combine the ranges.",
-            "workingOut": "\\text{Range: } y \\ge -9",
-            "graphData": null
-          }
-        ]
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(y = x^2 \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(y = x^2 + 2 > 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: All real x, Range: y >= 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: All real x, Range: y >= 0",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-5i-q23a",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 - 9 & \\text{for } x < 3 \\\\ x - 3 & \\text{for } x \\ge 3 \\end{cases}\\)\nIs the curve continuous at \\(x = 3\\)?",
+    "answer": "0",
+    "hint": "Check if left limit and right limit are equal at \\(x = 3\\).",
+    "solution": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\lim_{x \\to 3^-} (x^2 - 9) = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\lim_{x \\to 3^+} (x - 3) = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(0 = 0 \\implies \\text{Continuous}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-5i-q23b",
+    "topicId": "y11a-5I",
+    "c": "5I",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 90,
+    "question": "Consider the piecewise function:\n\\(f(x) = \\begin{cases} x^2 - 9 & \\text{for } x < 3 \\\\ x - 3 & \\text{for } x \\ge 3 \\end{cases}\\)\nWhat are the domain and range of the function?",
+    "answer": "Domain: All real x, Range: y >= -9",
+    "hint": "Evaluate range of \\(x^2 - 9\\) on \\(x < 3\\) and range of \\(x - 3\\) on \\(x \\ge 3\\).",
+    "solution": "Domain: All real x, Range: y >= -9",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Revision: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{Domain: } x \\in \\mathbb{R}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(x^2 \\ge 0 \\implies -9 \\le x^2 - 9 < 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(x \\ge 3 \\implies x - 3 \\ge 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Domain: All real x, Range: y >= -9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "Domain: All real x, Range: y >= -9",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   }
 ];

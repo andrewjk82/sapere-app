@@ -1,0 +1,767 @@
+[
+  {
+    "id": "y10-5a-q1a",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이 방정식은 이미 두 인수 y와 (y+4)의 곱으로 인수분해되어 있다. 영인수법칙(null factor law)에 의해, 두 수의 곱이 0이면 적어도 하나의 인수는 반드시 0이어야 한다.",
+            "workingOut": "\\(y(y + 4) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(y = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 y에 대해 푼다.",
+            "workingOut": "\\(y + 4 = 0 \\implies y = -4\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합치면 이 이차방정식의 완전한 해가 된다 — 포물선이 y축(가로축)과 만나는 두 지점을 의미한다.",
+            "workingOut": "\\(y = 0, \\ y = -4\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This equation is already factorised into two factors, y and (y + 4). By the null factor law, if a product of two factors equals zero, at least one of the factors must be zero.",
+            "workingOut": "\\(y(y + 4) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve.",
+            "workingOut": "\\(y = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for y.",
+            "workingOut": "\\(y + 4 = 0 \\implies y = -4\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions — together they are the complete solution set, representing the two points where the parabola crosses the y-axis (horizontal axis).",
+            "workingOut": "\\(y = 0, \\ y = -4\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1b",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 m과 (m-5)의 곱으로 인수분해되어 있다. 영인수법칙에 의해 적어도 하나의 인수가 0이어야 한다.",
+            "workingOut": "\\(m(m - 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓는다.",
+            "workingOut": "\\(m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(m - 5 = 0 \\implies m = 5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(m = 0, \\ m = 5\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, m and (m - 5). By the null factor law, at least one factor must equal zero.",
+            "workingOut": "\\(m(m - 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero.",
+            "workingOut": "\\(m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve.",
+            "workingOut": "\\(m - 5 = 0 \\implies m = 5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(m = 0, \\ m = 5\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1c",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 2p와 (p+6)의 곱으로 인수분해되어 있다. 계수 2는 0이 될 수 없으므로 무시하고, 나머지 두 인수에 영인수법칙을 적용한다.",
+            "workingOut": "\\(2p(p + 6) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수 p를 0으로 놓는다.",
+            "workingOut": "\\(p = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 p에 대해 푼다.",
+            "workingOut": "\\(p + 6 = 0 \\implies p = -6\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답을 완성한다.",
+            "workingOut": "\\(p = 0, \\ p = -6\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, 2p and (p + 6). The constant coefficient 2 can never be zero, so apply the null factor law to the remaining two factors.",
+            "workingOut": "\\(2p(p + 6) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor, p, equal to zero.",
+            "workingOut": "\\(p = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for p.",
+            "workingOut": "\\(p + 6 = 0 \\implies p = -6\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(p = 0, \\ p = -6\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1d",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (y-2)와 (y+7)의 곱으로 인수분해되어 있다. 영인수법칙에 의해 적어도 하나의 인수가 0이어야 한다.",
+            "workingOut": "\\((y - 2)(y + 7) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 푼다 — 부호에 주의한다.",
+            "workingOut": "\\(y - 2 = 0 \\implies y = 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(y + 7 = 0 \\implies y = -7\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(y = 2, \\ y = -7\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (y - 2) and (y + 7). By the null factor law, at least one factor must equal zero.",
+            "workingOut": "\\((y - 2)(y + 7) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve — watch the sign carefully.",
+            "workingOut": "\\(y - 2 = 0 \\implies y = 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve.",
+            "workingOut": "\\(y + 7 = 0 \\implies y = -7\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(y = 2, \\ y = -7\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1e",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (k+5)와 (k+8)의 곱으로 인수분해되어 있다. 영인수법칙을 적용한다.",
+            "workingOut": "\\((k + 5)(k + 8) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(k + 5 = 0 \\implies k = -5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(k + 8 = 0 \\implies k = -8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답을 완성한다 — 둘 다 음수임에 유의한다.",
+            "workingOut": "\\(k = -5, \\ k = -8\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (k + 5) and (k + 8). Apply the null factor law.",
+            "workingOut": "\\((k + 5)(k + 8) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve.",
+            "workingOut": "\\(k + 5 = 0 \\implies k = -5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve.",
+            "workingOut": "\\(k + 8 = 0 \\implies k = -8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer — note both are negative.",
+            "workingOut": "\\(k = -5, \\ k = -8\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1f",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (n-8)과 (n-3)의 곱으로 인수분해되어 있다. 영인수법칙을 적용한다.",
+            "workingOut": "\\((n - 8)(n - 3) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(n - 8 = 0 \\implies n = 8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(n - 3 = 0 \\implies n = 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(n = 8, \\ n = 3\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (n - 8) and (n - 3). Apply the null factor law.",
+            "workingOut": "\\((n - 8)(n - 3) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve.",
+            "workingOut": "\\(n - 8 = 0 \\implies n = 8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve.",
+            "workingOut": "\\(n - 3 = 0 \\implies n = 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(n = 8, \\ n = 3\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1g",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 3m과 (2m+5)의 곱으로 인수분해되어 있다. 계수 3은 0이 될 수 없으므로, m과 (2m+5)에 영인수법칙을 적용한다.",
+            "workingOut": "\\(3m(2m + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수 m을 0으로 놓는다.",
+            "workingOut": "\\(m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 m에 대해 푼다 — 양변을 2로 나누는 것을 잊지 않는다.",
+            "workingOut": "\\(2m + 5 = 0 \\implies m = -\\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답을 완성한다.",
+            "workingOut": "\\(m = 0, \\ m = -\\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, 3m and (2m + 5). The coefficient 3 can never be zero, so apply the null factor law to m and (2m + 5).",
+            "workingOut": "\\(3m(2m + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor, m, equal to zero.",
+            "workingOut": "\\(m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for m — remember to divide both sides by 2.",
+            "workingOut": "\\(2m + 5 = 0 \\implies m = -\\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(m = 0, \\ m = -\\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1h",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (5y+2)와 (2y-3)의 곱으로 인수분해되어 있다. 영인수법칙을 적용한다.",
+            "workingOut": "\\((5y + 2)(2y - 3) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 y에 대해 푼다.",
+            "workingOut": "\\(5y + 2 = 0 \\implies y = -\\frac{2}{5}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 y에 대해 푼다.",
+            "workingOut": "\\(2y - 3 = 0 \\implies y = \\frac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(y = -\\frac{2}{5}, \\ y = \\frac{3}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (5y + 2) and (2y - 3). Apply the null factor law.",
+            "workingOut": "\\((5y + 2)(2y - 3) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve for y.",
+            "workingOut": "\\(5y + 2 = 0 \\implies y = -\\frac{2}{5}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for y.",
+            "workingOut": "\\(2y - 3 = 0 \\implies y = \\frac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(y = -\\frac{2}{5}, \\ y = \\frac{3}{2}\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1i",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (3x+5)와 (x+2)의 곱으로 인수분해되어 있다. 영인수법칙을 적용한다.",
+            "workingOut": "\\((3x + 5)(x + 2) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 x에 대해 푼다.",
+            "workingOut": "\\(3x + 5 = 0 \\implies x = -\\frac{5}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 x에 대해 푼다.",
+            "workingOut": "\\(x + 2 = 0 \\implies x = -2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다 — 둘 다 음수임에 유의한다.",
+            "workingOut": "\\(x = -\\frac{5}{3}, \\ x = -2\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (3x + 5) and (x + 2). Apply the null factor law.",
+            "workingOut": "\\((3x + 5)(x + 2) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve for x.",
+            "workingOut": "\\(3x + 5 = 0 \\implies x = -\\frac{5}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for x.",
+            "workingOut": "\\(x + 2 = 0 \\implies x = -2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer — note both are negative.",
+            "workingOut": "\\(x = -\\frac{5}{3}, \\ x = -2\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1j",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 두 인수 (3k-4)와 (2k+5)의 곱으로 인수분해되어 있다. 영인수법칙을 적용한다.",
+            "workingOut": "\\((3k - 4)(2k + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 k에 대해 푼다.",
+            "workingOut": "\\(3k - 4 = 0 \\implies k = \\frac{4}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 k에 대해 푼다.",
+            "workingOut": "\\(2k + 5 = 0 \\implies k = -\\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(k = \\frac{4}{3}, \\ k = -\\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into two factors, (3k - 4) and (2k + 5). Apply the null factor law.",
+            "workingOut": "\\((3k - 4)(2k + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve for k.",
+            "workingOut": "\\(3k - 4 = 0 \\implies k = \\frac{4}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for k.",
+            "workingOut": "\\(2k + 5 = 0 \\implies k = -\\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(k = \\frac{4}{3}, \\ k = -\\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1k",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 세 인수 4, (3y-2), (y+5)의 곱으로 인수분해되어 있다. 상수 4는 0이 될 수 없으므로 무시하고 나머지 두 인수에 영인수법칙을 적용한다.",
+            "workingOut": "\\(4(3y - 2)(y + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 y에 대해 푼다.",
+            "workingOut": "\\(3y - 2 = 0 \\implies y = \\frac{2}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 y에 대해 푼다.",
+            "workingOut": "\\(y + 5 = 0 \\implies y = -5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(y = \\frac{2}{3}, \\ y = -5\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into three factors, 4, (3y - 2), and (y + 5). The constant 4 can never be zero, so apply the null factor law to the remaining two factors.",
+            "workingOut": "\\(4(3y - 2)(y + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve for y.",
+            "workingOut": "\\(3y - 2 = 0 \\implies y = \\frac{2}{3}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for y.",
+            "workingOut": "\\(y + 5 = 0 \\implies y = -5\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(y = \\frac{2}{3}, \\ y = -5\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q1l",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "이미 세 인수 5, (-2m+3), (-2m+5)의 곱으로 인수분해되어 있다. 상수 5는 0이 될 수 없으므로 무시하고 나머지 두 인수에 영인수법칙을 적용한다.",
+            "workingOut": "\\(5(-2m + 3)(-2m + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "첫 번째 인수를 0으로 놓고 m에 대해 푼다 — 음수 계수로 나눌 때 부호에 유의한다.",
+            "workingOut": "\\(-2m + 3 = 0 \\implies m = \\frac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 번째 인수를 0으로 놓고 m에 대해 푼다.",
+            "workingOut": "\\(-2m + 5 = 0 \\implies m = \\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(m = \\frac{3}{2}, \\ m = \\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This is already factorised into three factors, 5, (-2m + 3), and (-2m + 5). The constant 5 can never be zero, so apply the null factor law to the remaining two factors.",
+            "workingOut": "\\(5(-2m + 3)(-2m + 5) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the first factor equal to zero and solve for m — take care with the sign when dividing by a negative coefficient.",
+            "workingOut": "\\(-2m + 3 = 0 \\implies m = \\frac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Set the second factor equal to zero and solve for m.",
+            "workingOut": "\\(-2m + 5 = 0 \\implies m = \\frac{5}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(m = \\frac{3}{2}, \\ m = \\frac{5}{2}\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q2a",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "주어진 식은 인수분해가 안 된 형태다. 좌변에서 공통인수 y를 묶어내어 인수분해한다.",
+            "workingOut": "\\(y^2 - 6y = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "y를 공통인수로 묶어낸다.",
+            "workingOut": "\\(y(y - 6) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "영인수법칙에 의해 각 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(y = 0 \\quad \\text{or} \\quad y - 6 = 0 \\implies y = 6\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(y = 0, \\ y = 6\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This expression is not yet factorised. Factor out the common factor y from the left-hand side.",
+            "workingOut": "\\(y^2 - 6y = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out y.",
+            "workingOut": "\\(y(y - 6) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "By the null factor law, set each factor equal to zero and solve.",
+            "workingOut": "\\(y = 0 \\quad \\text{or} \\quad y - 6 = 0 \\implies y = 6\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(y = 0, \\ y = 6\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q2b",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "주어진 식은 인수분해가 안 된 형태다. 좌변에서 공통인수 m을 묶어낸다.",
+            "workingOut": "\\(m^2 + 8m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "m을 공통인수로 묶어낸다.",
+            "workingOut": "\\(m(m + 8) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "영인수법칙에 의해 각 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(m = 0 \\quad \\text{or} \\quad m + 8 = 0 \\implies m = -8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(m = 0, \\ m = -8\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This expression is not yet factorised. Factor out the common factor m from the left-hand side.",
+            "workingOut": "\\(m^2 + 8m = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out m.",
+            "workingOut": "\\(m(m + 8) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "By the null factor law, set each factor equal to zero and solve.",
+            "workingOut": "\\(m = 0 \\quad \\text{or} \\quad m + 8 = 0 \\implies m = -8\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(m = 0, \\ m = -8\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "y10-5a-q2c",
+    "changedFields": {
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "주어진 식은 인수분해가 안 된 형태다. 좌변에서 공통인수 k를 묶어낸다.",
+            "workingOut": "\\(k^2 + 9k = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "k를 공통인수로 묶어낸다.",
+            "workingOut": "\\(k(k + 9) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "영인수법칙에 의해 각 인수를 0으로 놓고 푼다.",
+            "workingOut": "\\(k = 0 \\quad \\text{or} \\quad k + 9 = 0 \\implies k = -9\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "두 해를 합쳐 최종 답으로 정리한다.",
+            "workingOut": "\\(k = 0, \\ k = -9\\)",
+            "graphData": null
+          }
+        ],
+        "new": [
+          {
+            "explanation": "This expression is not yet factorised. Factor out the common factor k from the left-hand side.",
+            "workingOut": "\\(k^2 + 9k = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Factor out k.",
+            "workingOut": "\\(k(k + 9) = 0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "By the null factor law, set each factor equal to zero and solve.",
+            "workingOut": "\\(k = 0 \\quad \\text{or} \\quad k + 9 = 0 \\implies k = -9\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Combine both solutions into the final answer.",
+            "workingOut": "\\(k = 0, \\ k = -9\\)",
+            "graphData": null
+          }
+        ]
+      }
+    }
+  }
+]

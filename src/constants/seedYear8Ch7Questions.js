@@ -1,1689 +1,4457 @@
 export const Y8_CH7A_QUESTIONS = [
   {
     "id": "y8-7a-q5a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{2}{4}$ as a percentage.",
-    "a": "50\\%",
-    "solution": "$\\frac{2}{4} \\times 100\\% = 50\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{2}{4}\\) as a percentage.",
+    "opts": [
+      "\\(-50\\%\\)",
+      "\\(50\\%\\)",
+      "\\(50\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{2}{4} \\times 100\\% = 50\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{2}{4} \\times 100\\% = 50\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{2}{4} \\times 100\\% = 50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 50\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(50\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{49}{50}$ as a percentage.",
-    "a": "98\\%",
-    "solution": "$\\frac{49}{50} \\times 100\\% = 98\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{49}{50}\\) as a percentage.",
+    "opts": [
+      "\\(-98\\%\\)",
+      "\\(98\\%\\)",
+      "\\(98\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{49}{50} \\times 100\\% = 98\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{49}{50} \\times 100\\% = 98\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{49}{50} \\times 100\\% = 98\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(98\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 98\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(98\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5c",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{4}{25}$ as a percentage.",
-    "a": "16\\%",
-    "solution": "$\\frac{4}{25} \\times 100\\% = 16\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{4}{25}\\) as a percentage.",
+    "opts": [
+      "\\(-16\\%\\)",
+      "\\(16\\%\\)",
+      "\\(16\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{4}{25} \\times 100\\% = 16\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{4}{25} \\times 100\\% = 16\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{4}{25} \\times 100\\% = 16\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(16\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 16\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(16\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5d",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{1}{20}$ as a percentage.",
-    "a": "5\\%",
-    "solution": "$\\frac{1}{20} \\times 100\\% = 5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{1}{20}\\) as a percentage.",
+    "opts": [
+      "\\(-5\\%\\)",
+      "\\(5\\%\\)",
+      "\\(5\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{1}{20} \\times 100\\% = 5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{1}{20} \\times 100\\% = 5\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{20} \\times 100\\% = 5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5e",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{3}{5}$ as a percentage.",
-    "a": "60\\%",
-    "solution": "$\\frac{3}{5} \\times 100\\% = 60\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{3}{5}\\) as a percentage.",
+    "opts": [
+      "\\(-60\\%\\)",
+      "\\(60\\%\\)",
+      "\\(60\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{3}{5} \\times 100\\% = 60\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{3}{5} \\times 100\\% = 60\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{3}{5} \\times 100\\% = 60\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(60\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 60\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(60\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5f",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{19}{25}$ as a percentage.",
-    "a": "76\\%",
-    "solution": "$\\frac{19}{25} \\times 100\\% = 76\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{19}{25}\\) as a percentage.",
+    "opts": [
+      "\\(-76\\%\\)",
+      "\\(76\\%\\)",
+      "\\(76\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{19}{25} \\times 100\\% = 76\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{19}{25} \\times 100\\% = 76\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{19}{25} \\times 100\\% = 76\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(76\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 76\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(76\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5g",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $1 \\frac{1}{4}$ as a percentage.",
-    "a": "125\\%",
-    "solution": "$1 \\frac{1}{4} \\times 100\\% = 125\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(1 \\frac{1}{4}\\) as a percentage.",
+    "opts": [
+      "\\(-125\\%\\)",
+      "\\(125\\%\\)",
+      "\\(125\\% + 1\\)",
+      "\\(135\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(1 \\frac{1}{4} \\times 100\\% = 125\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1 \\frac{1}{4} \\times 100\\% = 125\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1 \\frac{1}{4} \\times 100\\% = 125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 125\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(125\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5h",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{1}{40}$ as a percentage.",
-    "a": "2.5\\%",
-    "solution": "$\\frac{1}{40} \\times 100\\% = 2.5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{1}{40}\\) as a percentage.",
+    "opts": [
+      "\\(-2.5\\%\\)",
+      "\\(2.5\\%\\)",
+      "\\(2.5\\% + 1\\)",
+      "\\(3.5\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{1}{40} \\times 100\\% = 2.5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{1}{40} \\times 100\\% = 2.5\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{40} \\times 100\\% = 2.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2.5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2.5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5i",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $3 \\frac{17}{25}$ as a percentage.",
-    "a": "368\\%",
-    "solution": "$3 \\frac{17}{25} \\times 100\\% = 368\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(3 \\frac{17}{25}\\) as a percentage.",
+    "opts": [
+      "\\(-368\\%\\)",
+      "\\(368\\%\\)",
+      "\\(368\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(3 \\frac{17}{25} \\times 100\\% = 368\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$3 \\frac{17}{25} \\times 100\\% = 368\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(3 \\frac{17}{25} \\times 100\\% = 368\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(368\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 368\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(368\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5j",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{6}{5}$ as a percentage.",
-    "a": "120\\%",
-    "solution": "$\\frac{6}{5} \\times 100\\% = 120\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{6}{5}\\) as a percentage.",
+    "opts": [
+      "\\(-120\\%\\)",
+      "\\(120\\%\\)",
+      "\\(120\\% + 1\\)",
+      "\\(130\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{6}{5} \\times 100\\% = 120\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{6}{5} \\times 100\\% = 120\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{6}{5} \\times 100\\% = 120\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(120\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 120\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(120\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5k",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{10}{4}$ as a percentage.",
-    "a": "250\\%",
-    "solution": "$\\frac{10}{4} \\times 100\\% = 250\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{10}{4}\\) as a percentage.",
+    "opts": [
+      "\\(-250\\%\\)",
+      "\\(250\\%\\)",
+      "\\(250\\% + 1\\)",
+      "\\(350\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{10}{4} \\times 100\\% = 250\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{10}{4} \\times 100\\% = 250\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{10}{4} \\times 100\\% = 250\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(250\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 250\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(250\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5l",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{25}{20}$ as a percentage.",
-    "a": "125\\%",
-    "solution": "$\\frac{25}{20} \\times 100\\% = 125\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{25}{20}\\) as a percentage.",
+    "opts": [
+      "\\(-125\\%\\)",
+      "\\(125\\%\\)",
+      "\\(125\\% + 1\\)",
+      "\\(135\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{25}{20} \\times 100\\% = 125\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{25}{20} \\times 100\\% = 125\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{25}{20} \\times 100\\% = 125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 125\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(125\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5m",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{3}{40}$ as a percentage.",
-    "a": "7.5\\%",
-    "solution": "$\\frac{3}{40} \\times 100\\% = 7.5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{3}{40}\\) as a percentage.",
+    "opts": [
+      "\\(-7.5\\%\\)",
+      "\\(7.5\\%\\)",
+      "\\(7.5\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{3}{40} \\times 100\\% = 7.5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{3}{40} \\times 100\\% = 7.5\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{3}{40} \\times 100\\% = 7.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(7.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 7.5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(7.5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5n",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $2 \\frac{2}{5}$ as a percentage.",
-    "a": "240\\%",
-    "solution": "$2 \\frac{2}{5} \\times 100\\% = 240\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(2 \\frac{2}{5}\\) as a percentage.",
+    "opts": [
+      "\\(-240\\%\\)",
+      "\\(240\\%\\)",
+      "\\(240\\% + 1\\)",
+      "\\(340\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(2 \\frac{2}{5} \\times 100\\% = 240\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$2 \\frac{2}{5} \\times 100\\% = 240\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2 \\frac{2}{5} \\times 100\\% = 240\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(240\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 240\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(240\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q5o",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Express the fraction $\\frac{17}{40}$ as a percentage.",
-    "a": "42.5\\%",
-    "solution": "$\\frac{17}{40} \\times 100\\% = 42.5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Express the fraction \\(\\frac{17}{40}\\) as a percentage.",
+    "opts": [
+      "\\(-42.5\\%\\)",
+      "\\(42.5\\%\\)",
+      "\\(42.5\\% + 1\\)",
+      "\\(43.5\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the fraction by 100.",
+    "solution": "\\(\\frac{17}{40} \\times 100\\% = 42.5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$\\frac{17}{40} \\times 100\\% = 42.5\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{17}{40} \\times 100\\% = 42.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(42.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 42.5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(42.5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.65$ as a percentage.",
-    "a": "65\\%",
-    "solution": "$0.65 \\times 100\\% = 65\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.65\\) as a percentage.",
+    "opts": [
+      "\\(-65\\%\\)",
+      "\\(65\\%\\)",
+      "\\(65\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.65 \\times 100\\% = 65\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.65 \\times 100\\% = 65\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.65 \\times 100\\% = 65\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(65\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 65\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(65\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.23$ as a percentage.",
-    "a": "23\\%",
-    "solution": "$0.23 \\times 100\\% = 23\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.23\\) as a percentage.",
+    "opts": [
+      "\\(-23\\%\\)",
+      "\\(23\\%\\)",
+      "\\(23\\% + 1\\)",
+      "\\(33\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.23 \\times 100\\% = 23\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.23 \\times 100\\% = 23\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.23 \\times 100\\% = 23\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(23\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 23\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(23\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6c",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.75$ as a percentage.",
-    "a": "75\\%",
-    "solution": "$0.75 \\times 100\\% = 75\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.75\\) as a percentage.",
+    "opts": [
+      "\\(-75\\%\\)",
+      "\\(75\\%\\)",
+      "\\(75\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.75 \\times 100\\% = 75\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.75 \\times 100\\% = 75\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.75 \\times 100\\% = 75\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(75\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 75\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(75\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6d",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.5$ as a percentage.",
-    "a": "50\\%",
-    "solution": "$0.5 \\times 100\\% = 50\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.5\\) as a percentage.",
+    "opts": [
+      "\\(-50\\%\\)",
+      "\\(50\\%\\)",
+      "\\(50\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.5 \\times 100\\% = 50\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.5 \\times 100\\% = 50\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.5 \\times 100\\% = 50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 50\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(50\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6e",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.3$ as a percentage.",
-    "a": "30\\%",
-    "solution": "$0.3 \\times 100\\% = 30\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.3\\) as a percentage.",
+    "opts": [
+      "\\(-30\\%\\)",
+      "\\(30\\%\\)",
+      "\\(30\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.3 \\times 100\\% = 30\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.3 \\times 100\\% = 30\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.3 \\times 100\\% = 30\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(30\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 30\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(30\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6f",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.6$ as a percentage.",
-    "a": "60\\%",
-    "solution": "$0.6 \\times 100\\% = 60\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.6\\) as a percentage.",
+    "opts": [
+      "\\(-60\\%\\)",
+      "\\(60\\%\\)",
+      "\\(60\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.6 \\times 100\\% = 60\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.6 \\times 100\\% = 60\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.6 \\times 100\\% = 60\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(60\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 60\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(60\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6g",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $1.5$ as a percentage.",
-    "a": "150\\%",
-    "solution": "$1.5 \\times 100\\% = 150\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(1.5\\) as a percentage.",
+    "opts": [
+      "\\(-150\\%\\)",
+      "\\(150\\%\\)",
+      "\\(150\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(1.5 \\times 100\\% = 150\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1.5 \\times 100\\% = 150\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1.5 \\times 100\\% = 150\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(150\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 150\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(150\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6h",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $1.1$ as a percentage.",
-    "a": "110\\%",
-    "solution": "$1.1 \\times 100\\% = 110\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(1.1\\) as a percentage.",
+    "opts": [
+      "\\(-110\\%\\)",
+      "\\(110\\%\\)",
+      "\\(110\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(1.1 \\times 100\\% = 110\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1.1 \\times 100\\% = 110\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1.1 \\times 100\\% = 110\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(110\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 110\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(110\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6i",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $1.8$ as a percentage.",
-    "a": "180\\%",
-    "solution": "$1.8 \\times 100\\% = 180\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(1.8\\) as a percentage.",
+    "opts": [
+      "\\(-180\\%\\)",
+      "\\(180\\%\\)",
+      "\\(180\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(1.8 \\times 100\\% = 180\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1.8 \\times 100\\% = 180\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1.8 \\times 100\\% = 180\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(180\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 180\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(180\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6j",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $1$ as a percentage.",
-    "a": "100\\%",
-    "solution": "$1 \\times 100\\% = 100\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(1\\) as a percentage.",
+    "opts": [
+      "\\(-100\\%\\)",
+      "\\(100\\%\\)",
+      "\\(100\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(1 \\times 100\\% = 100\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1 \\times 100\\% = 100\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1 \\times 100\\% = 100\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(100\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 100\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(100\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6k",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.07$ as a percentage.",
-    "a": "7\\%",
-    "solution": "$0.07 \\times 100\\% = 7\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.07\\) as a percentage.",
+    "opts": [
+      "\\(-7\\%\\)",
+      "\\(7\\%\\)",
+      "\\(7\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.07 \\times 100\\% = 7\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.07 \\times 100\\% = 7\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.07 \\times 100\\% = 7\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(7\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 7\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(7\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6l",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $0.02$ as a percentage.",
-    "a": "2\\%",
-    "solution": "$0.02 \\times 100\\% = 2\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(0.02\\) as a percentage.",
+    "opts": [
+      "\\(-2\\%\\)",
+      "\\(2\\%\\)",
+      "\\(2\\% + 1\\)",
+      "\\(3\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(0.02 \\times 100\\% = 2\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$0.02 \\times 100\\% = 2\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.02 \\times 100\\% = 2\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6m",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $1.05$ as a percentage.",
-    "a": "105\\%",
-    "solution": "$1.05 \\times 100\\% = 105\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(1.05\\) as a percentage.",
+    "opts": [
+      "\\(-105\\%\\)",
+      "\\(105\\%\\)",
+      "\\(105\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(1.05 \\times 100\\% = 105\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$1.05 \\times 100\\% = 105\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1.05 \\times 100\\% = 105\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(105\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 105\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(105\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6n",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $4.09$ as a percentage.",
-    "a": "409\\%",
-    "solution": "$4.09 \\times 100\\% = 409\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(4.09\\) as a percentage.",
+    "opts": [
+      "\\(-409\\%\\)",
+      "\\(409\\%\\)",
+      "\\(409\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(4.09 \\times 100\\% = 409\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$4.09 \\times 100\\% = 409\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(4.09 \\times 100\\% = 409\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(409\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 409\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(409\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q6o",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "Write the decimal $7.03$ as a percentage.",
-    "a": "703\\%",
-    "solution": "$7.03 \\times 100\\% = 703\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Write the decimal \\(7.03\\) as a percentage.",
+    "opts": [
+      "\\(-703\\%\\)",
+      "\\(703\\%\\)",
+      "\\(703\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply the decimal by 100.",
+    "solution": "\\(7.03 \\times 100\\% = 703\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply by 100",
-        "workingOut": "$7.03 \\times 100\\% = 703\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(7.03 \\times 100\\% = 703\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(703\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 703\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(703\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $2 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{1}{40}",
-    "solution": "$2 \\frac{1}{2}\\% \\div 100 = \\frac{1}{40}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(2 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{1}{40}\\)",
+      "\\(\\frac{1}{40}\\)",
+      "\\(\\frac{1}{40} + 1\\)",
+      "\\(\\frac{40}{1}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(2 \\frac{1}{2}\\% \\div 100 = \\frac{1}{40}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$2 \\frac{1}{2} \\div 100 = \\frac{1}{40}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2 \\frac{1}{2} \\div 100 = \\frac{1}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{1}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{1}{40}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{1}{40}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $7 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{3}{40}",
-    "solution": "$7 \\frac{1}{2}\\% \\div 100 = \\frac{3}{40}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(7 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{3}{40}\\)",
+      "\\(\\frac{3}{40}\\)",
+      "\\(\\frac{3}{40} + 1\\)",
+      "\\(\\frac{40}{3}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(7 \\frac{1}{2}\\% \\div 100 = \\frac{3}{40}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$7 \\frac{1}{2} \\div 100 = \\frac{3}{40}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(7 \\frac{1}{2} \\div 100 = \\frac{3}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{3}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{3}{40}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{3}{40}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $8 \\frac{1}{4}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{33}{400}",
-    "solution": "$8 \\frac{1}{4}\\% \\div 100 = \\frac{33}{400}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(8 \\frac{1}{4}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{33}{400}\\)",
+      "\\(\\frac{33}{400}\\)",
+      "\\(\\frac{33}{400} + 1\\)",
+      "\\(\\frac{400}{33}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(8 \\frac{1}{4}\\% \\div 100 = \\frac{33}{400}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$8 \\frac{1}{4} \\div 100 = \\frac{33}{400}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(8 \\frac{1}{4} \\div 100 = \\frac{33}{400}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{33}{400}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{33}{400}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{33}{400}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $37 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{3}{8}",
-    "solution": "$37 \\frac{1}{2}\\% \\div 100 = \\frac{3}{8}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(37 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{3}{8}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{3}{8} + 1\\)",
+      "\\(\\frac{8}{3}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(37 \\frac{1}{2}\\% \\div 100 = \\frac{3}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$37 \\frac{1}{2} \\div 100 = \\frac{3}{8}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(37 \\frac{1}{2} \\div 100 = \\frac{3}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{3}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{3}{8}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{3}{8}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $12 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{1}{8}",
-    "solution": "$12 \\frac{1}{2}\\% \\div 100 = \\frac{1}{8}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(12 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{1}{8}\\)",
+      "\\(\\frac{1}{8}\\)",
+      "\\(\\frac{1}{8} + 1\\)",
+      "\\(\\frac{8}{1}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(12 \\frac{1}{2}\\% \\div 100 = \\frac{1}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$12 \\frac{1}{2} \\div 100 = \\frac{1}{8}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(12 \\frac{1}{2} \\div 100 = \\frac{1}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{1}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{1}{8}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{1}{8}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $67 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{27}{40}",
-    "solution": "$67 \\frac{1}{2}\\% \\div 100 = \\frac{27}{40}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(67 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{27}{40}\\)",
+      "\\(\\frac{27}{40}\\)",
+      "\\(\\frac{37}{40}\\)",
+      "\\(\\frac{40}{27}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(67 \\frac{1}{2}\\% \\div 100 = \\frac{27}{40}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$67 \\frac{1}{2} \\div 100 = \\frac{27}{40}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(67 \\frac{1}{2} \\div 100 = \\frac{27}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{27}{40}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{27}{40}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{27}{40}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7g",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $87 \\frac{1}{2}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{7}{8}",
-    "solution": "$87 \\frac{1}{2}\\% \\div 100 = \\frac{7}{8}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(87 \\frac{1}{2}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{7}{8}\\)",
+      "\\(\\frac{7}{8}\\)",
+      "\\(\\frac{7}{8} + 1\\)",
+      "\\(\\frac{8}{7}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(87 \\frac{1}{2}\\% \\div 100 = \\frac{7}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$87 \\frac{1}{2} \\div 100 = \\frac{7}{8}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(87 \\frac{1}{2} \\div 100 = \\frac{7}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{7}{8}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{7}{8}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{7}{8}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q7h",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Write the percentage $66 \\frac{2}{3}\\%$ as a fraction in simplest form.",
-    "a": "\\frac{2}{3}",
-    "solution": "$66 \\frac{2}{3}\\% \\div 100 = \\frac{2}{3}$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Write the percentage \\(66 \\frac{2}{3}\\%\\) as a fraction in simplest form.",
+    "opts": [
+      "\\(-\\frac{2}{3}\\)",
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{3}{3}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Divide the percentage by 100 and simplify.",
+    "solution": "\\(66 \\frac{2}{3}\\% \\div 100 = \\frac{2}{3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Divide by 100",
-        "workingOut": "$66 \\frac{2}{3} \\div 100 = \\frac{2}{3}$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(66 \\frac{2}{3} \\div 100 = \\frac{2}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\frac{2}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\frac{2}{3}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(\\frac{2}{3}\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express 30 cents out of a dollar as a percentage of the total.",
-    "a": "30\\%",
-    "solution": "$\\frac{30}{100} \\times 100\\% = 30\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express 30 cents out of a dollar as a percentage of the total.",
+    "opts": [
+      "\\(-30\\%\\)",
+      "\\(30\\%\\)",
+      "\\(30\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{30}{100} \\times 100\\% = 30\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{30}{100} \\times 100\\% = 30\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{30}{100} \\times 100\\% = 30\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(30\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 30\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(30\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express 250 m out of 1 km as a percentage of the total.",
-    "a": "25\\%",
-    "solution": "$\\frac{250}{1000} \\times 100\\% = 25\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express 250 m out of 1 km as a percentage of the total.",
+    "opts": [
+      "\\(-25\\%\\)",
+      "\\(25\\%\\)",
+      "\\(25\\% + 1\\)",
+      "\\(35\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{250}{1000} \\times 100\\% = 25\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{250}{1000} \\times 100\\% = 25\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{250}{1000} \\times 100\\% = 25\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(25\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 25\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(25\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express 160 women in a train carrying 200 people as a percentage of the total.",
-    "a": "80\\%",
-    "solution": "$\\frac{160}{200} \\times 100\\% = 80\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express 160 women in a train carrying 200 people as a percentage of the total.",
+    "opts": [
+      "\\(-80\\%\\)",
+      "\\(80\\%\\)",
+      "\\(80\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{160}{200} \\times 100\\% = 80\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{160}{200} \\times 100\\% = 80\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{160}{200} \\times 100\\% = 80\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(80\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 80\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(80\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express 16 teeth filled out of 24 as a percentage of the total.",
-    "a": "66 \\frac{2}{3}\\%",
-    "solution": "$\\frac{16}{24} \\times 100\\% = 66 \\frac{2}{3}\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express 16 teeth filled out of 24 as a percentage of the total.",
+    "opts": [
+      "\\(-66 \\frac{2}{3}\\%\\)",
+      "\\(66 \\frac{2}{3}\\%\\)",
+      "\\(66 \\frac{3}{2}\\%\\)",
+      "\\(66 \\frac{3}{3}\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{16}{24} \\times 100\\% = 66 \\frac{2}{3}\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{16}{24} \\times 100\\% = 66 \\frac{2}{3}\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{16}{24} \\times 100\\% = 66 \\frac{2}{3}\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(66 \\frac{2}{3}\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 66 \\frac{2}{3}\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(66 \\frac{2}{3}\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express $10 discount on a $200 jumper as a percentage of the total.",
-    "a": "5\\%",
-    "solution": "$\\frac{10}{200} \\times 100\\% = 5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express \\(10 discount on a \\)200 jumper as a percentage of the total.",
+    "opts": [
+      "\\(-5\\%\\)",
+      "\\(5\\%\\)",
+      "\\(5\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{10}{200} \\times 100\\% = 5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{10}{200} \\times 100\\% = 5\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{10}{200} \\times 100\\% = 5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q9f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Express 18 out of 45 people in a restaurant ordering pizza as a percentage of the total.",
-    "a": "40\\%",
-    "solution": "$\\frac{18}{45} \\times 100\\% = 40\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Express 18 out of 45 people in a restaurant ordering pizza as a percentage of the total.",
+    "opts": [
+      "\\(-40\\%\\)",
+      "\\(40\\%\\)",
+      "\\(40\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{18}{45} \\times 100\\% = 40\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Write as a fraction and calculate percentage",
-        "workingOut": "$\\frac{18}{45} \\times 100\\% = 40\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{18}{45} \\times 100\\% = 40\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(40\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 40\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(40\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 50\\% of 468.",
-    "a": "234",
-    "solution": "$50\\% \\times 468 = 234$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 50\\% of 468.",
+    "opts": [
+      "\\(-234\\)",
+      "\\(233\\)",
+      "\\(234\\)",
+      "\\(235\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(50\\% \\times 468 = 234\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$50\\% \\times 468 = 234$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(50\\% \\times 468 = 234\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(234\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 234. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(234\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 25\\% of 144.",
-    "a": "36",
-    "solution": "$25\\% \\times 144 = 36$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 25\\% of 144.",
+    "opts": [
+      "\\(-36\\)",
+      "\\(35\\)",
+      "\\(36\\)",
+      "\\(37\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(25\\% \\times 144 = 36\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$25\\% \\times 144 = 36$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(25\\% \\times 144 = 36\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(36\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 36. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(36\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 12 \\frac{1}{2}\\% of 1360.",
-    "a": "170",
-    "solution": "$12 \\frac{1}{2}\\% \\times 1360 = 170$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 12 \\frac{1}{2}\\% of 1360.",
+    "opts": [
+      "\\(-170\\)",
+      "\\(169\\)",
+      "\\(170\\)",
+      "\\(171\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(12 \\frac{1}{2}\\% \\times 1360 = 170\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$12 \\frac{1}{2}\\% \\times 1360 = 170$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(12 \\frac{1}{2}\\% \\times 1360 = 170\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(170\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 170. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(170\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 33 \\frac{1}{3}\\% of 8730.",
-    "a": "2910",
-    "solution": "$33 \\frac{1}{3}\\% \\times 8730 = 2910$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 33 \\frac{1}{3}\\% of 8730.",
+    "opts": [
+      "\\(-2910\\)",
+      "\\(2909\\)",
+      "\\(2910\\)",
+      "\\(2911\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(33 \\frac{1}{3}\\% \\times 8730 = 2910\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$33 \\frac{1}{3}\\% \\times 8730 = 2910$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(33 \\frac{1}{3}\\% \\times 8730 = 2910\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2910\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2910. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2910\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 20\\% of 500.",
-    "a": "100",
-    "solution": "$20\\% \\times 500 = 100$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 20\\% of 500.",
+    "opts": [
+      "\\(-100\\)",
+      "\\(100\\)",
+      "\\(101\\)",
+      "\\(99\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(20\\% \\times 500 = 100\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$20\\% \\times 500 = 100$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(20\\% \\times 500 = 100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 40\\% of 455.",
-    "a": "182",
-    "solution": "$40\\% \\times 455 = 182$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 40\\% of 455.",
+    "opts": [
+      "\\(-182\\)",
+      "\\(181\\)",
+      "\\(182\\)",
+      "\\(183\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(40\\% \\times 455 = 182\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$40\\% \\times 455 = 182$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(40\\% \\times 455 = 182\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(182\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 182. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(182\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10g",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 37 \\frac{1}{2}\\% of 192.",
-    "a": "72",
-    "solution": "$37 \\frac{1}{2}\\% \\times 192 = 72$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 37 \\frac{1}{2}\\% of 192.",
+    "opts": [
+      "\\(-72\\)",
+      "\\(71\\)",
+      "\\(72\\)",
+      "\\(73\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(37 \\frac{1}{2}\\% \\times 192 = 72\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$37 \\frac{1}{2}\\% \\times 192 = 72$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(37 \\frac{1}{2}\\% \\times 192 = 72\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(72\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 72. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(72\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10h",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 87 \\frac{1}{2}\\% of 960.",
-    "a": "840",
-    "solution": "$87 \\frac{1}{2}\\% \\times 960 = 840$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 87 \\frac{1}{2}\\% of 960.",
+    "opts": [
+      "\\(-840\\)",
+      "\\(839\\)",
+      "\\(840\\)",
+      "\\(841\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(87 \\frac{1}{2}\\% \\times 960 = 840\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$87 \\frac{1}{2}\\% \\times 960 = 840$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(87 \\frac{1}{2}\\% \\times 960 = 840\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(840\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 840. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(840\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q10i",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate 66 \\frac{2}{3}\\% of 525.",
-    "a": "350",
-    "solution": "$66 \\frac{2}{3}\\% \\times 525 = 350$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate 66 \\frac{2}{3}\\% of 525.",
+    "opts": [
+      "\\(-350\\)",
+      "\\(349\\)",
+      "\\(350\\)",
+      "\\(351\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(66 \\frac{2}{3}\\% \\times 525 = 350\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$66 \\frac{2}{3}\\% \\times 525 = 350$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(66 \\frac{2}{3}\\% \\times 525 = 350\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(350\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 350. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(350\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 20\\% of 100",
-    "a": "20",
-    "solution": "$20\\% \\times 100 = 20$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 20\\% of 100",
+    "opts": [
+      "\\(-20\\)",
+      "\\(19\\)",
+      "\\(20\\)",
+      "\\(21\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(20\\% \\times 100 = 20\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$20\\% \\times 100 = 20$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(20\\% \\times 100 = 20\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(20\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 20. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(20\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 20\\% of 200",
-    "a": "40",
-    "solution": "$20\\% \\times 200 = 40$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 20\\% of 200",
+    "opts": [
+      "\\(-40\\)",
+      "\\(39\\)",
+      "\\(40\\)",
+      "\\(41\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(20\\% \\times 200 = 40\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$20\\% \\times 200 = 40$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(20\\% \\times 200 = 40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(40\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 20\\% of 1000",
-    "a": "200",
-    "solution": "$20\\% \\times 1000 = 200$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 20\\% of 1000",
+    "opts": [
+      "\\(-200\\)",
+      "\\(199\\)",
+      "\\(200\\)",
+      "\\(201\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(20\\% \\times 1000 = 200\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$20\\% \\times 1000 = 200$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(20\\% \\times 1000 = 200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 200. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(200\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 50\\% of 300",
-    "a": "150",
-    "solution": "$50\\% \\times 300 = 150$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 50\\% of 300",
+    "opts": [
+      "\\(-150\\)",
+      "\\(149\\)",
+      "\\(150\\)",
+      "\\(151\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(50\\% \\times 300 = 150\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$50\\% \\times 300 = 150$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(50\\% \\times 300 = 150\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(150\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 150. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(150\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 5\\% of 30",
-    "a": "1.5",
-    "solution": "$5\\% \\times 30 = 1.5$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 5\\% of 30",
+    "opts": [
+      "\\(-1.5\\)",
+      "\\(0.5\\)",
+      "\\(1.5\\)",
+      "\\(2.5\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(5\\% \\times 30 = 1.5\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$5\\% \\times 30 = 1.5$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(5\\% \\times 30 = 1.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(1.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(1.5\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 15\\% of 300",
-    "a": "45",
-    "solution": "$15\\% \\times 300 = 45$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 15\\% of 300",
+    "opts": [
+      "\\(-45\\)",
+      "\\(44\\)",
+      "\\(45\\)",
+      "\\(46\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(15\\% \\times 300 = 45\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$15\\% \\times 300 = 45$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(15\\% \\times 300 = 45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(45\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11g",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 63\\% of 100",
-    "a": "63",
-    "solution": "$63\\% \\times 100 = 63$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 63\\% of 100",
+    "opts": [
+      "\\(-63\\)",
+      "\\(62\\)",
+      "\\(63\\)",
+      "\\(64\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(63\\% \\times 100 = 63\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$63\\% \\times 100 = 63$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(63\\% \\times 100 = 63\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(63\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 63. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(63\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11h",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 78\\% of 500",
-    "a": "390",
-    "solution": "$78\\% \\times 500 = 390$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 78\\% of 500",
+    "opts": [
+      "\\(-390\\)",
+      "\\(389\\)",
+      "\\(390\\)",
+      "\\(391\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(78\\% \\times 500 = 390\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$78\\% \\times 500 = 390$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(78\\% \\times 500 = 390\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(390\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 390. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(390\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11i",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 57\\% of 30",
-    "a": "17.1",
-    "solution": "$57\\% \\times 30 = 17.1$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 57\\% of 30",
+    "opts": [
+      "\\(-17.1\\)",
+      "\\(16.1\\)",
+      "\\(17.1\\)",
+      "\\(18.1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(57\\% \\times 30 = 17.1\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$57\\% \\times 30 = 17.1$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(57\\% \\times 30 = 17.1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(17.1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 17.1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(17.1\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11j",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 200\\% of 100",
-    "a": "200",
-    "solution": "$200\\% \\times 100 = 200$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 200\\% of 100",
+    "opts": [
+      "\\(-200\\)",
+      "\\(199\\)",
+      "\\(200\\)",
+      "\\(201\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(200\\% \\times 100 = 200\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$200\\% \\times 100 = 200$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(200\\% \\times 100 = 200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(200\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 200. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(200\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11k",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 200\\% of 118",
-    "a": "236",
-    "solution": "$200\\% \\times 118 = 236$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 200\\% of 118",
+    "opts": [
+      "\\(-236\\)",
+      "\\(235\\)",
+      "\\(236\\)",
+      "\\(237\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(200\\% \\times 118 = 236\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$200\\% \\times 118 = 236$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(200\\% \\times 118 = 236\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(236\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 236. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(236\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q11l",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Calculate: 200\\% of 3.5",
-    "a": "7",
-    "solution": "$200\\% \\times 3.5 = 7$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Calculate: 200\\% of 3.5",
+    "opts": [
+      "\\(-7\\)",
+      "\\(6\\)",
+      "\\(7\\)",
+      "\\(8\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(200\\% \\times 3.5 = 7\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$200\\% \\times 3.5 = 7$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(200\\% \\times 3.5 = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(7\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 10\\% of 340.",
-    "a": "34",
-    "solution": "$10\\% \\times 340 = 34$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 10\\% of 340.",
+    "opts": [
+      "\\(-34\\)",
+      "\\(33\\)",
+      "\\(34\\)",
+      "\\(35\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(10\\% \\times 340 = 34\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$10\\% \\times 340 = 34$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(10\\% \\times 340 = 34\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(34\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 34. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(34\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 30\\% of 340.",
-    "a": "102",
-    "solution": "$30\\% \\times 340 = 102$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 30\\% of 340.",
+    "opts": [
+      "\\(-102\\)",
+      "\\(101\\)",
+      "\\(102\\)",
+      "\\(103\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(30\\% \\times 340 = 102\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$30\\% \\times 340 = 102$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(30\\% \\times 340 = 102\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(102\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 102. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(102\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 70\\% of 340.",
-    "a": "238",
-    "solution": "$70\\% \\times 340 = 238$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 70\\% of 340.",
+    "opts": [
+      "\\(-238\\)",
+      "\\(237\\)",
+      "\\(238\\)",
+      "\\(239\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(70\\% \\times 340 = 238\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$70\\% \\times 340 = 238$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(70\\% \\times 340 = 238\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(238\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 238. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(238\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 5\\% of 340.",
-    "a": "17",
-    "solution": "$5\\% \\times 340 = 17$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 5\\% of 340.",
+    "opts": [
+      "\\(-17\\)",
+      "\\(16\\)",
+      "\\(17\\)",
+      "\\(18\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(5\\% \\times 340 = 17\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$5\\% \\times 340 = 17$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(5\\% \\times 340 = 17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 17. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(17\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 2 \\frac{1}{2}\\% of 340.",
-    "a": "8.5",
-    "solution": "$2 \\frac{1}{2}\\% \\times 340 = 8.5$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 2 \\frac{1}{2}\\% of 340.",
+    "opts": [
+      "\\(-8.5\\)",
+      "\\(7.5\\)",
+      "\\(8.5\\)",
+      "\\(9.5\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(2 \\frac{1}{2}\\% \\times 340 = 8.5\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$2 \\frac{1}{2}\\% \\times 340 = 8.5$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2 \\frac{1}{2}\\% \\times 340 = 8.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(8.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 8.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(8.5\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q12f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 7 \\frac{1}{2}\\% of 340.",
-    "a": "25.5",
-    "solution": "$7 \\frac{1}{2}\\% \\times 340 = 25.5$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 7 \\frac{1}{2}\\% of 340.",
+    "opts": [
+      "\\(-25.5\\)",
+      "\\(24.5\\)",
+      "\\(25.5\\)",
+      "\\(26.5\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(7 \\frac{1}{2}\\% \\times 340 = 25.5\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$7 \\frac{1}{2}\\% \\times 340 = 25.5$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(7 \\frac{1}{2}\\% \\times 340 = 25.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(25.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 25.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(25.5\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q13a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 25\\% of 320.",
-    "a": "80",
-    "solution": "$25\\% \\times 320 = 80$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 25\\% of 320.",
+    "opts": [
+      "\\(-80\\)",
+      "\\(79\\)",
+      "\\(80\\)",
+      "\\(81\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(25\\% \\times 320 = 80\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$25\\% \\times 320 = 80$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(25\\% \\times 320 = 80\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(80\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 80. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(80\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q13b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 75\\% of 320.",
-    "a": "240",
-    "solution": "$75\\% \\times 320 = 240$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 75\\% of 320.",
+    "opts": [
+      "\\(-240\\)",
+      "\\(239\\)",
+      "\\(240\\)",
+      "\\(241\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(75\\% \\times 320 = 240\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$75\\% \\times 320 = 240$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(75\\% \\times 320 = 240\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(240\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 240. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(240\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q13c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 12 \\frac{1}{2}\\% of 320.",
-    "a": "40",
-    "solution": "$12 \\frac{1}{2}\\% \\times 320 = 40$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 12 \\frac{1}{2}\\% of 320.",
+    "opts": [
+      "\\(-40\\)",
+      "\\(39\\)",
+      "\\(40\\)",
+      "\\(41\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(12 \\frac{1}{2}\\% \\times 320 = 40\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$12 \\frac{1}{2}\\% \\times 320 = 40$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(12 \\frac{1}{2}\\% \\times 320 = 40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(40\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 40. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(40\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q14a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 10\\% of 456.",
-    "a": "45.6",
-    "solution": "$10\\% \\times 456 = 45.6$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 10\\% of 456.",
+    "opts": [
+      "\\(-45.6\\)",
+      "\\(44.6\\)",
+      "\\(45.6\\)",
+      "\\(46.6\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(10\\% \\times 456 = 45.6\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$10\\% \\times 456 = 45.6$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(10\\% \\times 456 = 45.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(45.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 45.6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(45.6\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q14b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 30\\% of 456.",
-    "a": "136.8",
-    "solution": "$30\\% \\times 456 = 136.8$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 30\\% of 456.",
+    "opts": [
+      "\\(-136.8\\)",
+      "\\(135.8\\)",
+      "\\(136.8\\)",
+      "\\(137.8\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(30\\% \\times 456 = 136.8\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$30\\% \\times 456 = 136.8$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(30\\% \\times 456 = 136.8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(136.8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 136.8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(136.8\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q14c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 10\\% of 912.",
-    "a": "91.2",
-    "solution": "$10\\% \\times 912 = 91.2$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 10\\% of 912.",
+    "opts": [
+      "\\(-91.2\\)",
+      "\\(90.2\\)",
+      "\\(91.2\\)",
+      "\\(92.2\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(10\\% \\times 912 = 91.2\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$10\\% \\times 912 = 91.2$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(10\\% \\times 912 = 91.2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(91.2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 91.2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(91.2\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q14d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Find 5\\% of 912.",
-    "a": "45.6",
-    "solution": "$5\\% \\times 912 = 45.6$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find 5\\% of 912.",
+    "opts": [
+      "\\(-45.6\\)",
+      "\\(44.6\\)",
+      "\\(45.6\\)",
+      "\\(46.6\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert percentage to fraction or decimal and multiply.",
+    "solution": "\\(5\\% \\times 912 = 45.6\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply",
-        "workingOut": "$5\\% \\times 912 = 45.6$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(5\\% \\times 912 = 45.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(45.6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 45.6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(45.6\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q15a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use fractions to calculate: 20\\% of 48 m",
-    "a": "9.6 m",
-    "solution": "$\\frac{1}{5} \\times 48 = 9.6 m$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use fractions to calculate: 20\\% of 48 m",
+    "opts": [
+      "\\(-9.6 m\\)",
+      "\\(9.6 m\\)",
+      "\\(9.6 m + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to fraction and multiply.",
+    "solution": "\\(\\frac{1}{5} \\times 48 = 9.6 m\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as fraction",
-        "workingOut": "$\\frac{1}{5} \\times 48 = 9.6 m$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{5} \\times 48 = 9.6 m\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(9.6 m\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 9.6 m. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(9.6 m\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q15b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use fractions to calculate: 75\\% of 80 lollies",
-    "a": "60 lollies",
-    "solution": "$\\frac{3}{4} \\times 80 = 60 lollies$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use fractions to calculate: 75\\% of 80 lollies",
+    "opts": [
+      "\\(-60 lollies\\)",
+      "\\(60 lollies\\)",
+      "\\(60 lollies + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to fraction and multiply.",
+    "solution": "\\(\\frac{3}{4} \\times 80 = 60 lollies\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as fraction",
-        "workingOut": "$\\frac{3}{4} \\times 80 = 60 lollies$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{3}{4} \\times 80 = 60 lollies\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(60 lollies\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 60 lollies. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(60 lollies\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q15c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use fractions to calculate: 30\\% of 270 children",
-    "a": "81 children",
-    "solution": "$\\frac{3}{10} \\times 270 = 81 children$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use fractions to calculate: 30\\% of 270 children",
+    "opts": [
+      "\\(-81 children\\)",
+      "\\(81 children\\)",
+      "\\(81 children + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to fraction and multiply.",
+    "solution": "\\(\\frac{3}{10} \\times 270 = 81 children\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as fraction",
-        "workingOut": "$\\frac{3}{10} \\times 270 = 81 children$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{3}{10} \\times 270 = 81 children\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(81 children\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 81 children. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(81 children\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q16a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use decimals to find: 25\\% of 28 songs",
-    "a": "7 songs",
-    "solution": "$0.25 \\times 28 = 7 songs$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use decimals to find: 25\\% of 28 songs",
+    "opts": [
+      "\\(-7 songs\\)",
+      "\\(7 songs\\)",
+      "\\(7 songs + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to decimal and multiply.",
+    "solution": "\\(0.25 \\times 28 = 7 songs\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as decimal",
-        "workingOut": "$0.25 \\times 28 = 7 songs$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.25 \\times 28 = 7 songs\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(7 songs\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 7 songs. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(7 songs\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q16b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use decimals to find: 40\\% of 280 stories",
-    "a": "112 stories",
-    "solution": "$0.4 \\times 280 = 112 stories$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use decimals to find: 40\\% of 280 stories",
+    "opts": [
+      "\\(-112 stories\\)",
+      "\\(112 stories\\)",
+      "\\(112 stories + 1\\)",
+      "\\(113 stories\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to decimal and multiply.",
+    "solution": "\\(0.4 \\times 280 = 112 stories\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as decimal",
-        "workingOut": "$0.4 \\times 280 = 112 stories$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.4 \\times 280 = 112 stories\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(112 stories\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 112 stories. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(112 stories\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q16c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Use decimals to find: 15\\% of 160 students",
-    "a": "24 students",
-    "solution": "$0.15 \\times 160 = 24 students$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Use decimals to find: 15\\% of 160 students",
+    "opts": [
+      "\\(-24 students\\)",
+      "\\(24 students\\)",
+      "\\(24 students + 1\\)",
+      "\\(34 students\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert percentage to decimal and multiply.",
+    "solution": "\\(0.15 \\times 160 = 24 students\\)",
     "solutionSteps": [
       {
-        "explanation": "Multiply as decimal",
-        "workingOut": "$0.15 \\times 160 = 24 students$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.15 \\times 160 = 24 students\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(24 students\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 24 students. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(24 students\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q17",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "question": "Express $1.80 as a percentage of $5.00.",
-    "a": "36\\%",
-    "solution": "$\\frac{1.80}{5.00} \\times 100\\% = 36\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Express \\(1.80 as a percentage of \\)5.00.",
+    "opts": [
+      "\\(-36\\%\\)",
+      "\\(36\\%\\)",
+      "\\(36\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{1.80}{5.00} \\times 100\\% = 36\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate percentage",
-        "workingOut": "$\\frac{1.80}{5.00} \\times 100\\% = 36\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{1.80}{5.00} \\times 100\\% = 36\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(36\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 36\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(36\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q18",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "question": "Express $24.40 as a percentage of $30.50.",
-    "a": "80\\%",
-    "solution": "$\\frac{24.40}{30.50} \\times 100\\% = 80\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Express \\(24.40 as a percentage of \\)30.50.",
+    "opts": [
+      "\\(-80\\%\\)",
+      "\\(80\\%\\)",
+      "\\(80\\% + 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Write as a fraction and multiply by 100.",
+    "solution": "\\(\\frac{24.40}{30.50} \\times 100\\% = 80\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Calculate percentage",
-        "workingOut": "$\\frac{24.40}{30.50} \\times 100\\% = 80\\%$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\frac{24.40}{30.50} \\times 100\\% = 80\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(80\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 80\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(80\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q19",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "question": "Mike bought 72 stamps. He bought 27 more stamps than Carla. Express the number of stamps Carla bought as a percentage of Mike's.",
-    "a": "62.5\\%",
-    "solution": "Carla bought 45 stamps. $\\frac{45}{72} \\times 100\\% = 62.5\\%$",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Mike bought 72 stamps. He bought 27 more stamps than Carla. Express the number of stamps Carla bought as a percentage of Mike's.",
+    "opts": [
+      "\\(-62.5\\%\\)",
+      "\\(62.5\\%\\)",
+      "\\(62.5\\% + 1\\)",
+      "\\(63.5\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "First find out how many stamps Carla bought.",
+    "solution": "Carla bought 45 stamps. \\(\\frac{45}{72} \\times 100\\% = 62.5\\%\\)",
     "solutionSteps": [
       {
-        "explanation": "Find Carla's stamps",
-        "workingOut": "$72 - 27 = 45$"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(72 - 27 = 45\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate percentage",
-        "workingOut": "$\\frac{45}{72} \\times 100\\% = 62.5\\%$"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\frac{45}{72} \\times 100\\% = 62.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(62.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 62.5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(62.5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8a",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 50\\%?",
-    "a": "Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%",
-    "solution": "Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 50\\%?",
+    "opts": [
+      "\\(-Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%\\)",
+      "\\(Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%\\)",
+      "\\(Decimal: 0.5, Fraction: \\frac{1}{3}, Percentage: 50\\%\\)",
+      "\\(Decimal: 0.5, Fraction: \\frac{2}{1}, Percentage: 50\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.5 = \\frac{1}{2} = 50\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.5 = \\frac{1}{2} = 50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.5, Fraction: \\frac{1}{2}, Percentage: 50\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8b",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 25\\%?",
-    "a": "Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%",
-    "solution": "Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 25\\%?",
+    "opts": [
+      "\\(-Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%\\)",
+      "\\(Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%\\)",
+      "\\(Decimal: 0.25, Fraction: \\frac{4}{1}, Percentage: 25\\%\\)",
+      "\\(Decimal: 0.35, Fraction: \\frac{1}{4}, Percentage: 35\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.25 = \\frac{1}{4} = 25\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.25 = \\frac{1}{4} = 25\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.25, Fraction: \\frac{1}{4}, Percentage: 25\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8c",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 75\\%?",
-    "a": "Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%",
-    "solution": "Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 75\\%?",
+    "opts": [
+      "\\(-Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%\\)",
+      "\\(Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%\\)",
+      "\\(Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\% + 1\\)",
+      "\\(Decimal: 0.75, Fraction: \\frac{4}{3}, Percentage: 75\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.75 = \\frac{3}{4} = 75\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.75 = \\frac{3}{4} = 75\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.75, Fraction: \\frac{3}{4}, Percentage: 75\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8d",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 40\\%?",
-    "a": "Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%",
-    "solution": "Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 40\\%?",
+    "opts": [
+      "\\(-Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%\\)",
+      "\\(Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%\\)",
+      "\\(Decimal: 0.4, Fraction: \\frac{3}{5}, Percentage: 40\\%\\)",
+      "\\(Decimal: 0.4, Fraction: \\frac{5}{2}, Percentage: 40\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.4 = \\frac{2}{5} = 40\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.4 = \\frac{2}{5} = 40\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.4, Fraction: \\frac{2}{5}, Percentage: 40\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8e",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 100\\%?",
-    "a": "Decimal: 1, Fraction: 1, Percentage: 100\\%",
-    "solution": "Decimal: 1, Fraction: 1, Percentage: 100\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 100\\%?",
+    "opts": [
+      "Decimal: 1, Fraction: 1, Percentage: 100\\%",
+      "The opposite statement is true.",
+      "This is only true for acute angles.",
+      "This only holds when the triangle is isosceles."
+    ],
+    "a": 0,
+    "answer": "0",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 1, Fraction: 1, Percentage: 100\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "1 = 1 = 100\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1 = 1 = 100\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Decimal: 1, Fraction: 1, Percentage: 100\\%",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 1, Fraction: 1, Percentage: 100\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Decimal: 1, Fraction: 1, Percentage: 100\\%",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8f",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 36.7\\%?",
-    "a": "Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%",
-    "solution": "Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 36.7\\%?",
+    "opts": [
+      "\\(-Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%\\)",
+      "\\(Decimal: 0.367, Fraction: \\frac{1000}{367}, Percentage: 36.7\\%\\)",
+      "\\(Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%\\)",
+      "\\(Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\% + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.367 = \\frac{367}{1000} = 36.7\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.367 = \\frac{367}{1000} = 36.7\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.367, Fraction: \\frac{367}{1000}, Percentage: 36.7\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8g",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 29\\%?",
-    "a": "Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%",
-    "solution": "Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 29\\%?",
+    "opts": [
+      "\\(-Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%\\)",
+      "\\(Decimal: 0.29, Fraction: \\frac{100}{29}, Percentage: 29\\%\\)",
+      "\\(Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%\\)",
+      "\\(Decimal: 0.39, Fraction: \\frac{39}{100}, Percentage: 39\\%\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.29 = \\frac{29}{100} = 29\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.29 = \\frac{29}{100} = 29\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.29, Fraction: \\frac{29}{100}, Percentage: 29\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8h",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 40.3\\%?",
-    "a": "Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%",
-    "solution": "Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 40.3\\%?",
+    "opts": [
+      "\\(-Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%\\)",
+      "\\(Decimal: 0.403, Fraction: \\frac{1000}{403}, Percentage: 40.3\\%\\)",
+      "\\(Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%\\)",
+      "\\(Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\% + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.403 = \\frac{403}{1000} = 40.3\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.403 = \\frac{403}{1000} = 40.3\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.403, Fraction: \\frac{403}{1000}, Percentage: 40.3\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8i",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 37.5\\%?",
-    "a": "Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%",
-    "solution": "Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 37.5\\%?",
+    "opts": [
+      "\\(-Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%\\)",
+      "\\(Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%\\)",
+      "\\(Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\% + 1\\)",
+      "\\(Decimal: 0.375, Fraction: \\frac{8}{3}, Percentage: 37.5\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "0.375 = \\frac{3}{8} = 37.5\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0.375 = \\frac{3}{8} = 37.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 0.375, Fraction: \\frac{3}{8}, Percentage: 37.5\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8j",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 125\\%?",
-    "a": "Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%",
-    "solution": "Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 125\\%?",
+    "opts": [
+      "\\(-Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%\\)",
+      "\\(Decimal: 1.25, Fraction: \\frac{4}{5}, Percentage: 125\\%\\)",
+      "\\(Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%\\)",
+      "\\(Decimal: 1.35, Fraction: \\frac{5}{4}, Percentage: 135\\%\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "1.25 = \\frac{5}{4} = 125\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(1.25 = \\frac{5}{4} = 125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 1.25, Fraction: \\frac{5}{4}, Percentage: 125\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8k",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 275\\%?",
-    "a": "Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%",
-    "solution": "Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 275\\%?",
+    "opts": [
+      "\\(-Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%\\)",
+      "\\(Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%\\)",
+      "\\(Decimal: 2.75, Fraction: \\frac{4}{11}, Percentage: 275\\%\\)",
+      "\\(Decimal: 3.75, Fraction: \\frac{11}{4}, Percentage: 375\\%\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "2.75 = \\frac{11}{4} = 275\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2.75 = \\frac{11}{4} = 275\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(Decimal: 2.75, Fraction: \\frac{11}{4}, Percentage: 275\\%\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-7a-q8l",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 200\\%?",
-    "a": "Decimal: 2, Fraction: 2, Percentage: 200\\%",
-    "solution": "Decimal: 2, Fraction: 2, Percentage: 200\\%",
+    "topicId": "y8-7a",
+    "c": "7A",
     "t": "Percentages",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Convert between formats. What is the decimal, fraction, and percentage equivalent of 200\\%?",
+    "opts": [
+      "Decimal: 2, Fraction: 2, Percentage: 200\\%",
+      "The opposite statement is true.",
+      "This is only true for acute angles.",
+      "This only holds when the triangle is isosceles."
+    ],
+    "a": 0,
+    "answer": "0",
     "hint": "Convert to the missing forms.",
+    "solution": "Decimal: 2, Fraction: 2, Percentage: 200\\%",
     "solutionSteps": [
       {
-        "explanation": "Conversion",
-        "workingOut": "2 = 2 = 200\\%"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Percentages: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2 = 2 = 200\\%\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Decimal: 2, Fraction: 2, Percentage: 200\\%",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Decimal: 2, Fraction: 2, Percentage: 200\\%. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Decimal: 2, Fraction: 2, Percentage: 200\\%",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   }
 ];

@@ -1,0 +1,262 @@
+{
+  "stats": {
+    "scanned": 1037,
+    "converted": 268,
+    "enriched": 697,
+    "skipped": 72,
+    "errors": 0
+  },
+  "sample": [
+    {
+      "id": "Sb0t5lXUIAc1HEtGBBvx",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q1a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q1b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q1c",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q1d",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q2a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q2b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q2c",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q2d",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q3a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q4a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q5a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q5b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q6a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q6b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q7a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q7b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q8a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6a-q8b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q12a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q12b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q13",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q14a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q14b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q15a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q15b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q17",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q18",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q1e",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q20a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q20b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q6a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q6b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q7a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q7bi",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q7bii",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q7biii",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q8a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q8b",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6b-q9a",
+      "ch": "y7-6",
+      "wasMC": true
+    },
+    {
+      "id": "y7-6c-q1a",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1b",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1c",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1d",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1e",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1f",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1g",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q1h",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q2a",
+      "ch": "y7-6",
+      "wasMC": false
+    },
+    {
+      "id": "y7-6c-q2b",
+      "ch": "y7-6",
+      "wasMC": false
+    }
+  ],
+  "count": 965
+}

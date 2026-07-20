@@ -1,0 +1,1016 @@
+[
+  {
+    "id": "y9-4a-1a",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $15y = 15 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "y",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "y",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15y}{15} = y"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1b",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $30b = 15 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "2b",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "2b",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{30b}{15} = 2b"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1c",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $48xy = 12x \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4y",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "4y",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{48xy}{12x} = 4y"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1d",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $21pq = 7q \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "3p",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "3p",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{21pq}{7q} = 3p"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1e",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $z^2 = z \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "z",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "z",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{z^2}{z} = z"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1f",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $8x^2 = 4x \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "2x",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "2x",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{8x^2}{4x} = 2x"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1g",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $36m^2 = 9m \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4m",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "4m",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{36m^2}{9m} = 4m"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1h",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $-10n^2 = 2n \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-5n",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "-5n",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{-10n^2}{2n} = -5n"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1i",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $12p^2q = 3pq \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4p",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "4p",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{12p^2q}{3pq} = 4p"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1j",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $6a^2b = 3a \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "2ab",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "2ab",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{6a^2b}{3a} = 2ab"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1k",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $15u^2v = 5uv \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "3u",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "3u",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15u^2v}{5uv} = 3u"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-1l",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing term): $40x^2y^2 = 8xy \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "5xy",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "5xy",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{40x^2y^2}{8xy} = 5xy"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2a",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $15xy = 5x \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "3y",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "3y",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15xy}{5x} = 3y"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2b",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $15xy = 15 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "xy",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "xy",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15xy}{15} = xy"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2c",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $15xy = 3y \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "5x",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "5x",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15xy}{3y} = 5x"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2d",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $15xy = 5xy \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "3",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "3",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{15xy}{5xy} = 3"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2e",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $16b + 24 = 8 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "2b + 3",
+    "hint": "Divide both terms by the common factor.",
+    "solution": "2b + 3",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{16b + 24}{8} = 2b + 3"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2f",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $20q - 15 = 5 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4q - 3",
+    "hint": "Divide both terms by the common factor.",
+    "solution": "4q - 3",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{20q - 15}{5} = 4q - 3"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2g",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $24ab - 18b = 6 \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4ab - 3b",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "4ab - 3b",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{24ab - 18b}{6} = 4ab - 3b"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2h",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $24ab - 18b = 6b \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4a - 3",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "4a - 3",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{24ab - 18b}{6b} = 4a - 3"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2i",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $x^2 + 5x = (x + 5) \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "x",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "x",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{x^2 + 5x}{(x + 5)} = x"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2j",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $y^2 - 12y = y \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "y - 12",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "y - 12",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{y^2 - 12y}{y} = y - 12"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2k",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $8vw^2 - 24vw = 4w \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "2vw - 6v",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "2vw - 6v",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{8vw^2 - 24vw}{4w} = 2vw - 6v"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2l",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $8vw^2 - 24vw = vw \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "8w - 24",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "8w - 24",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{8vw^2 - 24vw}{vw} = 8w - 24"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2m",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $8vw^2 - 24vw = -4vw \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-2w + 6",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "-2w + 6",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{8vw^2 - 24vw}{-4vw} = -2w + 6"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  },
+  {
+    "id": "y9-4a-2n",
+    "chapterId": "y9-4",
+    "chapterTitle": "Chapter 4: Factorisation",
+    "topicId": "y9-4a",
+    "topicCode": "4A",
+    "topicTitle": "Factorisation using common factors",
+    "year": "Year 9",
+    "isManual": true,
+    "title": "Complete the factorisation (fi...",
+    "question": "Complete the factorisation (find the missing factor): $8vw^2 - 24vw = 8vw \\times \\dots$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "w - 3",
+    "hint": "Find the highest common factor (HCF) and pull it out.",
+    "solution": "w - 3",
+    "solutionSteps": [
+      {
+        "explanation": "Divide the original expression by the given factor.",
+        "workingOut": "\\frac{8vw^2 - 24vw}{8vw} = w - 3"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    },
+    "updatedAt": {
+      "_seconds": 1782855586,
+      "_nanoseconds": 371000000
+    }
+  }
+]

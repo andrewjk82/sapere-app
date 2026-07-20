@@ -1,0 +1,2451 @@
+[
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1ai",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(int e^x dx = e^x + C\\) to evaluate the definite integral. Then approximate it correct to two decimal places.\n\\(int_0^1 e^x dx\\)",
+    "a": "e - 1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1aii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(int e^x dx = e^x + C\\) to evaluate the definite integral. Then approximate it correct to two decimal places.\n\\(int_{-1}^0 e^x dx\\)",
+    "a": "1 - e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1aiii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(int e^x dx = e^x + C\\) to evaluate the definite integral. Then approximate it correct to two decimal places.\n\\(int_{-2}^0 e^x dx\\)",
+    "a": "1 - e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1aiv",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(int e^x dx = e^x + C\\) to evaluate the definite integral. Then approximate it correct to two decimal places.\n\\(int_{-3}^0 e^x dx\\)",
+    "a": "1 - e^{-3}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "The graph shows \\(y = e^x\\) from \\(x = -5\\) to \\(x = 1\\), with a scale of 10 divisions to 1 unit, so that 100 little squares equal 1 square unit.\nBy counting squares under the curve from \\(x = 0\\) to \\(x = 1\\), find an approximation to \\(int_0^1 e^x dx\\), and compare it with the approximation obtained in part a.",
+    "a": "Approximation by counting squares",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1ci",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Count squares to the left of the \\(y\\)-axis to obtain approximations to \\(int_{-1}^0 e^x dx\\)",
+    "a": "Approximation by counting squares",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1cii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Count squares to the left of the \\(y\\)-axis to obtain approximations to \\(int_{-2}^0 e^x dx\\)",
+    "a": "Approximation by counting squares",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1ciii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Count squares to the left of the \\(y\\)-axis to obtain approximations to \\(int_{-3}^0 e^x dx\\)",
+    "a": "Approximation by counting squares",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q1d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Continue counting squares to the left of \\(x = -3\\), and estimate the total area under the curve to the left of the \\(y\\)-axis.",
+    "a": "Approximation by counting squares",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q2a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between \\(y = e^x\\) and the \\(x\\)-axis for \\(-1 \\le x \\le 0\\).",
+    "a": "1 - e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q2b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between \\(y = e^x\\) and the \\(x\\)-axis for \\(1 \\le x \\le 3\\).",
+    "a": "e^3 - e",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q2c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between \\(y = e^x\\) and the \\(x\\)-axis for \\(-1 \\le x \\le 1\\).",
+    "a": "e - e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q2d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between \\(y = e^x\\) and the \\(x\\)-axis for \\(-2 \\le x \\le 1\\).",
+    "a": "e - e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3ai",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{2x}\\) and the \\(x\\)-axis from \\(x = 0\\) to \\(x = 3\\). Answer in exact form.",
+    "a": "\\frac{1}{2}(e^6 - 1)",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3aii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{2x}\\) and the \\(x\\)-axis from \\(x = -3\\) to \\(x = 0\\). Answer in exact form.",
+    "a": "\\frac{1}{2}(1 - e^{-6})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3bi",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{-x}\\) and the \\(x\\)-axis from \\(x = 0\\) to \\(x = 1\\). Answer in exact form.",
+    "a": "1 - e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3bii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{-x}\\) and the \\(x\\)-axis from \\(x = -1\\) to \\(x = 0\\). Answer in exact form.",
+    "a": "e - 1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3ci",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{\\frac{1}{3}x}\\) and the \\(x\\)-axis from \\(x = 0\\) to \\(x = 3\\). Answer in exact form.",
+    "a": "3(e - 1)",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q3cii",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the curve \\(y = e^{\\frac{1}{3}x}\\) and the \\(x\\)-axis from \\(x = -3\\) to \\(x = 0\\). Answer in exact form.",
+    "a": "3(1 - e^{-1})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{x+1}\\), for \\(0 \\le x \\le 2\\).",
+    "a": "e^3 - e",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{x+3}\\), for \\(-2 \\le x \\le 0\\).",
+    "a": "e^3 - e",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{2x-1}\\), for \\(0 \\le x \\le 1\\).",
+    "a": "\\frac{1}{2}(e - e^{-1})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{3x-5}\\), for \\(1 \\le x \\le 2\\).",
+    "a": "\\frac{1}{3}(e - e^{-2})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{-x+1}\\), for \\(-1 \\le x \\le 1\\).",
+    "a": "e^2 - 1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{-2x-1}\\), for \\(-2 \\le x \\le -1\\).",
+    "a": "\\frac{1}{2}(e^3 - e)",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{\\frac{1}{2}x+2}\\), for \\(0 \\le x \\le 3\\).",
+    "a": "2(e^{\\frac{7}{2}} - e^2)",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q4h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area between the \\(x\\)-axis and the given curve between the given \\(x\\)-values:\n\\(y = e^{\\frac{1}{2}x-1}\\), for \\(-2 \\le x \\le 2\\).",
+    "a": "2(1 - e^{-2})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q5a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area of the region bounded by the curve \\(y = e^x\\), the \\(x\\)-axis, the \\(y\\)-axis and the line \\(x = 2\\).",
+    "a": "e^2 - 1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q5b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area of the region bounded by the curve \\(y = e^{\\frac{1}{2}x}\\), the \\(x\\)-axis, and the lines \\(x = -1\\) and \\(x = 2\\).",
+    "a": "2(e - e^{-\\frac{1}{2}})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q5c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area of the region bounded by the curve \\(y = e^{-x}\\), the \\(x\\)-axis, the \\(y\\)-axis and the line \\(x = 1\\).",
+    "a": "1 - e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q5d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find the area of the region bounded by the curve \\(y = e^{-\\frac{1}{2}x}\\), the \\(x\\)-axis, and the lines \\(x = -1\\) and \\(x = 2\\).",
+    "a": "2(e^{\\frac{1}{2}} - e^{-1})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q6a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area between the curve \\(y = e^{-x} + 1\\) and the \\(x\\)-axis, from \\(x = 0\\) to \\(x = 2\\).",
+    "a": "3 - e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q6b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area between the curve \\(y = 1 - e^x\\) and the \\(x\\)-axis, from \\(x = -1\\) to \\(x = 0\\).",
+    "a": "e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q6c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area between the curve \\(y = e^x + e^{-x}\\) and the \\(x\\)-axis, from \\(x = -2\\) to \\(x = 2\\).",
+    "a": "2(e^2 - e^{-2})",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q6d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area between the curve \\(y = x^2 + e^x\\) and the \\(x\\)-axis, from \\(x = -3\\) to \\(x = 3\\).",
+    "a": "18 + e^3 - e^{-3}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area of the region bounded by the curve \\(y = e^{-x}\\) and the lines \\(x = 2\\) and \\(y = 1\\).",
+    "a": "1 + e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area of the region in the first quadrant bounded by the coordinate axes and the curve \\(y = e - e^x\\).",
+    "a": "1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area between the \\(x\\)-axis, the curve \\(y = e^x - 1\\) and the line \\(x = -1\\).",
+    "a": "e^{-1}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "What is the area bounded by \\(x = 2\\), \\(y = e^{-x} - 2\\), the \\(x\\)-axis and the \\(y\\)-axis?",
+    "a": "3 + e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area of the region bounded by the curve \\(y = e^{-x} - e\\) and the coordinate axes.",
+    "a": "1",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q7f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the area of the region bounded by the curve \\(y = 3 - e^{-x}\\), the \\(x\\)-axis, and the lines \\(x = -1\\) and \\(x = 2\\).",
+    "a": "9 - e + e^{-2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q8a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Sketch the curves \\(y = e^x\\) and \\(y = x + 1\\), and shade the region between them, from \\(x = 0\\) to \\(x = 1\\). Then write down the area of this region as an integral and evaluate it.",
+    "a": "e - \\frac{5}{2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q8b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Sketch the curves \\(y = e^x\\) and \\(y = 1 - x\\), and shade the region between them, from \\(x = 0\\) to \\(x = 1\\). Then write down the area of this region as an integral and evaluate it.",
+    "a": "e - \\frac{3}{2}",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q9",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "The diagram shows the region above the \\(x\\)-axis, below both \\(y = e^x\\) and \\(y = e^{-x}\\), between \\(x = -1\\) and \\(x = 1\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q10",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "The diagram shows the region above the \\(x\\)-axis, below both \\(y = e - e^{-x}\\) and \\(y = e - e^x\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q11",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "The diagram shows the region between the curve \\(y = e^x - e^{-x}\\), the \\(x\\)-axis and the lines \\(x = -3\\) and \\(x = 3\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q12",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "Consider the curves \\(y = x^2\\) and \\(y = e^{x+1}\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q13",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "Consider the curve \\(y = e^x\\) and the line \\(y = (e - 1)x + 1\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q14",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Sketch the region between the graphs of \\(y = e^x\\) and \\(y = x\\), between the \\(y\\)-axis and \\(x = 2\\), then find its area.",
+    "a": "e^2 - 3",
+    "hint": ""
+  },
+  {
+    "topic": "5E",
+    "id": "y12a-5e-q15",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "question": "In this question, give all approximations correct to four decimal places.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(log_e 12\\)",
+    "a": "2.485",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(log_e 0.2\\)",
+    "a": "-1.609",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(ln 9876\\)",
+    "a": "9.198",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(ln 0.000005\\)",
+    "a": "-12.21",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(log_e 60\\)",
+    "a": "4.094",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q1f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the calculator's \\(ln\\) button to approximate, correct to four significant figures:\n\\(log_e 0.05\\)",
+    "a": "-2.996",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(log_e e^4\\)",
+    "a": "4",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(log_e e^{-2}\\)",
+    "a": "-2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(log_e \\frac{1}{e^3}\\)",
+    "a": "-3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(log_e \\sqrt[3]{e}\\)",
+    "a": "\\frac{1}{3}",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(e^{ln 7}\\)",
+    "a": "7",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(e^{ln 0.02}\\)",
+    "a": "0.02",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(e^{ln 3}\\)",
+    "a": "3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q2h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the identities \\(log_e e^x = x\\) for all real \\(x\\), and \\(e^{log_e x} = x\\) for \\(x > 0\\), to simplify:\n\\(e^{ln e^2}\\)",
+    "a": "e^2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q3a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use your calculator to confirm that \\(log_e 1 = 0\\).",
+    "a": "Confirmed",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q3b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Write \\(1\\) as a power of \\(e\\), then use the identities in question 2 to explain why \\(log_e 1 = 0\\).",
+    "a": "1 = e^0, so log_e 1 = log_e e^0 = 0",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q3c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use your calculator to confirm that \\(log_e e = 1\\).",
+    "a": "Confirmed",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q3d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Write \\(e\\) as a power of \\(e\\), then use the identities in question 2 to explain why \\(log_e e = 1\\).",
+    "a": "e = e^1, so log_e e = log_e e^1 = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q4a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Convert the exponential statement to logarithm form:\n\\(x = e^5\\)",
+    "a": "\\log_e x = 5",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q4b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Convert the logarithmic statement to exponential form:\n\\(log_e x = -3\\)",
+    "a": "x = e^{-3}",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q4c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Convert the logarithmic statement to exponential form:\n\\(x = \\ln 15\\)",
+    "a": "e^x = 15",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q4d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Convert the exponential statement to logarithm form:\n\\(e^x = \\frac{1}{4}\\)",
+    "a": "x = \\ln \\frac{1}{4}",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q5a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the change-of-base formula to express the logarithm in terms of logarithms base \\(e\\). Then approximate it correct to four significant figures:\n\\(log_3 8\\)",
+    "a": "\\frac{ln 8}{ln 3} approx 1.893",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q5b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the change-of-base formula to express the logarithm in terms of logarithms base \\(e\\). Then approximate it correct to four significant figures:\n\\(log_{10} 30\\)",
+    "a": "\\frac{ln 30}{ln 10} approx 1.477",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q5c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the change-of-base formula to express the logarithm in terms of logarithms base \\(e\\). Then approximate it correct to four significant figures:\n\\(log_4 0.05\\)",
+    "a": "\\frac{ln 0.05}{ln 4} approx -2.161",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q6a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "What transformation maps \\(y = e^x\\) to \\(y = \\log_e x\\), and how can this transformation be used to find the gradient of \\(y = \\log_e x\\) at its \\(x\\)-intercept?",
+    "a": "Reflection in the line y = x. The gradient is the reciprocal of the gradient of y = e^x at its y-intercept, which is 1.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q6b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "What transformation maps \\(y = \\log_e x\\) to \\(y = \\log_e(-x)\\), and how can this transformation also be interpreted as a dilation?",
+    "a": "Reflection in the y-axis. It is equivalent to a dilation by a factor of -1 horizontally.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q6c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch \\(y = \\log_e x\\) and \\(y = \\log_e(-x)\\) on one set of axes.",
+    "a": "Sketch required.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q7a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e x\\), and describe the transformation:\n\\(y = \\log_e x + 2\\)",
+    "a": "Translation upwards by 2 units.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q7b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e x\\), and describe the transformation:\n\\(y = \\log_e(x - 3)\\)",
+    "a": "Translation right by 3 units.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q7c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e x\\), and describe the transformation:\n\\(y = \\log_e(2x)\\)",
+    "a": "Horizontal dilation by factor of 1/2.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q7d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e x\\), and describe the transformation:\n\\(y = 2 \\log_e x\\)",
+    "a": "Vertical dilation by factor of 2.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q8a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e(-x)\\), and describe the transformation:\n\\(y = \\log_e(-x) - 2\\)",
+    "a": "Translation downwards by 2 units.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q8b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e(-x)\\), and describe the transformation:\n\\(y = -\\log_e(-x)\\)",
+    "a": "Reflection in the x-axis.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q8c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Sketch the curve using a single transformation of \\(y = \\log_e(-x)\\), and describe the transformation:\n\\(y = 4 \\log_e(-x)\\)",
+    "a": "Vertical dilation by factor of 4.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q9",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "The graph drawn is a dilation of \\(y = \\log_e(-x)\\).\nDescribe the dilation, and write down the equation of the curve.",
+    "a": "Horizontal dilation by factor of 1/2. Equation: y = \\log_e(-2x)",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = 2^x\\) to solve \\(4^x - 10 \\times 2^x + 16 = 0\\).",
+    "a": "x = 1, x = 3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = 3^x\\) to solve \\(3^{2x} - 12 \\times 3^x + 27 = 0\\).",
+    "a": "x = 1, x = 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10ci",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(25^x - 30 \\times 5^x + 125 = 0\\)",
+    "a": "x = 1, x = 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10cii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(9^x - 12 \\times 3^x + 27 = 0\\)",
+    "a": "x = 1, x = 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10ciii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(3^{2x} - 2 \\times 3^x - 15 = 0\\)",
+    "a": "x = \\log_3 5",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10civ",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(7^{2x} - 6 \\times 7^x - 7 = 0\\)",
+    "a": "x = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10cv",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(2^{5x} = 4^{x+3}\\)",
+    "a": "x = 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q10cvi",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use similar substitutions, or none, to solve:\n\\(4^x - 5 \\times 2^{x+1} + 16 = 0\\)",
+    "a": "x = 1, x = 3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q11a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = e^x\\) or \\(u = e^{2x}\\) to reduce these equations to quadratics and solve them. Write your answers as logarithms base \\(e\\), unless they can be further simplified.\n\\(e^{2x} - 3e^x + 2 = 0\\)",
+    "a": "x = 0, x = \\ln 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q11b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = e^x\\) or \\(u = e^{2x}\\) to reduce these equations to quadratics and solve them. Write your answers as logarithms base \\(e\\), unless they can be further simplified.\n\\(e^{2x} + 2e^x - 8 = 0\\)",
+    "a": "x = \\ln 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q11c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = e^x\\) or \\(u = e^{2x}\\) to reduce these equations to quadratics and solve them. Write your answers as logarithms base \\(e\\), unless they can be further simplified.\n\\(e^{4x} - 5e^{2x} + 4 = 0\\)",
+    "a": "x = 0, x = \\ln 2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q11d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the substitution \\(u = e^x\\) or \\(u = e^{2x}\\) to reduce these equations to quadratics and solve them. Write your answers as logarithms base \\(e\\), unless they can be further simplified.\n\\(e^{4x} - 9e^{2x} = 0\\)",
+    "a": "x = \\ln 3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q12a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use a substitution, or none, to solve:\n\\((log_e x)^2 - 4log_e x + 3 = 0\\)",
+    "a": "x = e, x = e^3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q12b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use a substitution, or none, to solve:\n\\((log_e x)^2 = 4log_e x\\)",
+    "a": "x = 1, x = e^4",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13ai",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to simplify:\n\\(log_e e^3\\)",
+    "a": "3",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13aii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to simplify:\n\\(log_e(log_e e^e)\\)",
+    "a": "1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13aiii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to simplify:\n\\(log_e(log_e(log_e e^{e^e}))\\)",
+    "a": "1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13bi",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to express as a single logarithm:\n\\(ln 6 + ln 3\\)",
+    "a": "\\ln 18",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13bii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to express as a single logarithm:\n\\(ln 40 - log_e 8\\)",
+    "a": "\\ln 5",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q13biii",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the laws for logarithms to express as a single logarithm:\n\\(ln 15 - ln 5 + ln 2\\)",
+    "a": "\\ln 6",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q14a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use a substitution such as \\(u = 4^x\\) to solve the equation. Give the solution as a rational number, or approximate correct to three decimal places.\n\\(2^{4x} - 5 \\times 2^{2x} + 4 = 0\\)",
+    "a": "x = 0, x = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q14b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use a substitution such as \\(u = 4^x\\) to solve the equation. Give the solution as a rational number, or approximate correct to three decimal places.\n\\(100^x - 11 \\times 10^x + 10 = 0\\)",
+    "a": "x = 0, x = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q14c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use a substitution such as \\(u = 4^x\\) to solve the equation. Give the solution as a rational number, or approximate correct to three decimal places.\n\\(\\left(\\frac{1}{2}\\right)^{2x} - 5 \\times \\left(\\frac{1}{2}\\right)^x + 4 = 0\\)",
+    "a": "x = 0, x = -2",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q15a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use, and describe, a dilation of \\(y = \\log_e x\\) to sketch \\(y = \\log_e(3x)\\).",
+    "a": "Horizontal dilation by factor 1/3.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q15b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use, and describe, a subsequent translation to sketch \\(y = \\log_e 3(x - 2)\\).",
+    "a": "Translation right by 2 units.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q15c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use, and describe, a subsequent dilation to sketch \\(y = \\frac{1}{3} \\log_e 3(x - 2)\\).",
+    "a": "Vertical dilation by factor 1/3.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q15d",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use, and describe, a subsequent translation to sketch \\(y = \\frac{1}{3} \\log_e 3(x - 2) - 1\\).",
+    "a": "Translation downwards by 1 unit.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q16a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Interpret the transformation from \\(y = \\log_e x\\) to \\(y = \\log_e(4x)\\) as a dilation. Then interpret it as a translation.",
+    "a": "Horizontal dilation by factor 1/4. Translation upwards by \\ln 4.",
+    "hint": ""
+  },
+  {
+    "topic": "5F",
+    "id": "y12a-5f-q16b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Interpret the transformation from \\(y = \\log_e x\\) to \\(y = \\log_e x + 3\\) as a translation. Then interpret it as a dilation by writing 3 as \\(log_e e^3\\).",
+    "a": "Translation upwards by 3 units. Horizontal dilation by factor e^{-3}.",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(x + 5)\\)",
+    "a": "\\frac{1}{x + 5}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(x - 4)\\)",
+    "a": "\\frac{1}{x - 4}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(4x + 3)\\)",
+    "a": "\\frac{4}{4x + 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(3x - 2)\\)",
+    "a": "\\frac{3}{3x - 2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(-5x + 2)\\)",
+    "a": "\\frac{-5}{-5x + 2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(-2x + 5)\\)",
+    "a": "\\frac{-2}{-2x + 5}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\ln(-3x - 8)\\)",
+    "a": "\\frac{-3}{-3x - 8}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = 4 \\ln(3x + 5)\\)",
+    "a": "\\frac{12}{3x + 5}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q1i",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = 2 \\ln(5x - 3)\\)",
+    "a": "\\frac{10}{5x - 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = \\log_e 3x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = \\log_e 4x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = \\log_e 6x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = \\log_e 8x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 5 \\ln 2x\\)",
+    "a": "\\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 2 \\ln 3x\\)",
+    "a": "\\frac{2}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2g",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 6 \\ln 5x\\)",
+    "a": "\\frac{6}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q2h",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 7 \\ln 8x\\)",
+    "a": "\\frac{7}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(x + 2)\\)",
+    "a": "\\frac{1}{4}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(3x - 1)\\)",
+    "a": "\\frac{3}{5}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(4x - 5)\\)",
+    "a": "\\frac{4}{3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(2x + 3)\\)",
+    "a": "\\frac{2}{7}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = 3 \\ln(x + 1)\\)",
+    "a": "1",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q3f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = 4 \\ln(3x + 1)\\)",
+    "a": "\\frac{12}{7}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 3 + \\log_e x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 4 - \\log_e(x + 2)\\)",
+    "a": "-\\frac{1}{x + 2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 2x + 3 \\log_e x\\)",
+    "a": "2 + \\frac{3}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 3x^4 + 2 + 5 \\log_e x\\)",
+    "a": "12x^3 + \\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = \\ln(3x - 1) + 4x^2\\)",
+    "a": "\\frac{3}{3x - 1} + 8x",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q4f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Differentiate the function:\n\\(y = 2x^3 - 4x + 5 + \\ln(2x - 3)\\)",
+    "a": "6x^2 - 4 + \\frac{2}{2x - 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^4\\)",
+    "a": "\\frac{4}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^5\\)",
+    "a": "\\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{-4}\\)",
+    "a": "-\\frac{4}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{-5}\\)",
+    "a": "-\\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{\\frac{1}{3}}\\)",
+    "a": "\\frac{1}{3x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q5f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln \\sqrt{x + 2}\\)",
+    "a": "\\frac{1}{2(x + 2)}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = \\log_e \\frac{1}{4}x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = \\log_e \\frac{1}{5}x\\)",
+    "a": "\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = 4 \\log_e \\frac{1}{2}x\\)",
+    "a": "\\frac{4}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = -5 \\log_e \\frac{1}{3}x\\)",
+    "a": "-\\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = 2x + \\log_e \\frac{1}{4}x\\)",
+    "a": "2 + \\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q6f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function:\n\\(y = 5x^3 - \\log_e \\frac{1}{2}x\\)",
+    "a": "15x^2 - \\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q7a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(x^2 + 2)\\)",
+    "a": "\\frac{2x}{x^2 + 2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q7b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(3 - x^2)\\)",
+    "a": "-\\frac{2x}{3 - x^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q7c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(2 + e^x)\\)",
+    "a": "\\frac{e^x}{2 + e^x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\log_e(x^2 + 4x + 3)\\)",
+    "a": "\\frac{2x + 4}{x^2 + 4x + 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\log_e(2 + 3x^3)\\)",
+    "a": "\\frac{9x^2}{2 + 3x^3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\ln(e^x - 3)\\)",
+    "a": "\\frac{e^x}{e^x - 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(2x + 1 - \\ln(x^2 + 2x)\\)",
+    "a": "2 - \\frac{2x + 2}{x^2 + 2x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(2x^2 + \\ln(x^3 - 2x)\\)",
+    "a": "4x + \\frac{3x^2 - 2}{x^3 - 2x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q8f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(3x^3 - 4x^2 + \\ln(3x^2 - 2x + 1)\\)",
+    "a": "9x^2 - 8x + \\frac{6x - 2}{3x^2 - 2x + 1}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q9a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the gradient, and the angle of inclination correct to the nearest minute, of the tangent to \\(y = \\ln x\\) at the point where \\(x = 2\\). (Format: 'gradient, angle')",
+    "a": "1/2, 26^{\\circ}34'",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q9b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the gradient, and the angle of inclination correct to the nearest minute, of the tangent to \\(y = \\ln x\\) at the point where \\(x = 5\\). (Format: 'gradient, angle')",
+    "a": "1/5, 11^{\\circ}19'",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\(2x \\log_e x\\)",
+    "a": "2 \\log_e x + 2",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\(x \\log_e(3x + 1)\\)",
+    "a": "\\log_e(3x + 1) + \\frac{3x}{3x + 1}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\((3x + 2) \\log_e x\\)",
+    "a": "3 \\log_e x + \\frac{3x + 2}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\(x^5 \\log_e x\\)",
+    "a": "x^4(5 \\log_e x + 1)",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\((x + 4) \\log_e(x + 4)\\)",
+    "a": "\\log_e(x + 4) + 1",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\((x - 2) \\log_e(3x + 5)\\)",
+    "a": "\\log_e(3x + 5) + \\frac{3(x - 2)}{3x + 5}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\(e^{2x} \\log_e x\\)",
+    "a": "e^{2x} \\left(2 \\log_e x + \\frac{1}{x}\\right)",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q10h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the product rule:\n\\(e^{-2x} \\log_e x\\)",
+    "a": "e^{-2x} \\left(\\frac{1}{x} - 2 \\log_e x\\right)",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e 2x}{x}\\)",
+    "a": "\\frac{1 - \\log_e 2x}{x^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e x}{x^3}\\)",
+    "a": "\\frac{1 - 3 \\log_e x}{x^4}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{2x}{\\log_e x}\\)",
+    "a": "\\frac{2(\\log_e x - 1)}{(\\log_e x)^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{x^3}{\\log_e x}\\)",
+    "a": "\\frac{x^2(3 \\log_e x - 1)}{(\\log_e x)^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e x}{e^{2x}}\\)",
+    "a": "\\frac{\\frac{1}{x} - 2 \\log_e x}{e^{2x}}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q11f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate using the quotient rule:\n\\(y = \\frac{e^{2x}}{\\log_e x}\\)",
+    "a": "\\frac{e^{2x}(2 \\log_e x - \\frac{1}{x})}{(\\log_e x)^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e 4x^5\\)",
+    "a": "\\frac{5}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e 2x^3\\)",
+    "a": "\\frac{3}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\sqrt[4]{x}\\)",
+    "a": "\\frac{1}{4x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\sqrt[5]{x}\\)",
+    "a": "\\frac{1}{5x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\frac{4}{x}\\)",
+    "a": "-\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\frac{3}{4x}\\)",
+    "a": "-\\frac{1}{x}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\ln \\sqrt{3 - x}\\)",
+    "a": "-\\frac{1}{2(3 - x)}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q12h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\ln \\sqrt{4x + 3}\\)",
+    "a": "\\frac{2}{4x + 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q13a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e(x - 2)\\) at \\(x = 4\\). (Format: 'f'(x), f''(x)')",
+    "a": "1/2, -1/4",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q13b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e(3x + 1)\\) at \\(x = 0\\). (Format: 'f'(x), f''(x)')",
+    "a": "3, -9",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q13c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e x^3\\) at \\(x = 3\\). (Format: 'f'(x), f''(x)')",
+    "a": "1, -1/3",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q13d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = x^2 \\log_e x\\) at \\(x = e\\). (Format: 'f'(x), f''(x)')",
+    "a": "3e, 5",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = x \\log_e x - 2x\\)",
+    "a": "x = e^2",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = x^3 \\log_e x\\)",
+    "a": "x = e^{-1/3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{\\log_e x}{x^2}\\)",
+    "a": "x = e^{1/2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (\\log_e x)^3\\)",
+    "a": "x = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (\\log_e x)^5\\)",
+    "a": "x = 1",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{1}{2 + \\log_e x}\\)",
+    "a": "No values",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (3 \\log_e x - 2)^4\\)",
+    "a": "x = e^{2/3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{1}{(\\log_e x)^2}\\)",
+    "a": "No values",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q14i",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\log_e(2 \\log_e x)\\)",
+    "a": "No values",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q15a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the point(s) where the tangent to the curve is horizontal.\n\\(y = 2x \\ln x\\) (Format: '(x, y)')",
+    "a": "(e^{-1}, -2e^{-1})",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q15b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find the point(s) where the tangent to the curve is horizontal.\n\\(y = \\frac{2}{x} + \\ln x\\) (Format: '(x, y)')",
+    "a": "(2, 1 + \\ln 2)",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q16",
+    "type": "multi_part",
+    "difficulty": "hard",
+    "question": "Consider the function \\(y = \\frac{x}{2\\ln x}\\).",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e((x + 3)(x + 2))\\)",
+    "a": "\\frac{1}{x + 3} + \\frac{1}{x + 2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e((x + 4)(2x - 3))\\)",
+    "a": "\\frac{1}{x + 4} + \\frac{2}{2x - 3}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\ln \\frac{2 + x}{2 - x}\\)",
+    "a": "\\frac{4}{4 - x^2}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17d",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\ln \\frac{4x - 1}{x + 3}\\)",
+    "a": "\\frac{13}{(4x - 1)(x + 3)}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17e",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e \\frac{(x - 5)^2}{2x + 1}\\)",
+    "a": "\\frac{2}{x - 5} - \\frac{2}{2x + 1}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q17f",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e (x \\sqrt{x + 2})\\)",
+    "a": "\\frac{1}{x} + \\frac{1}{2(x + 2)}",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q18a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e 3^x\\)",
+    "a": "\\ln 3",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q18b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e e^{2x}\\)",
+    "a": "2",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q18c",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e x^{2x}\\)",
+    "a": "2 \\ln x + 2",
+    "hint": ""
+  },
+  {
+    "topic": "5G",
+    "id": "y12a-5g-q19",
+    "type": "multi_part",
+    "difficulty": "hard",
+    "question": "This result will be used in Section 5I.",
+    "hint": ""
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q2",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "question": "a) Find the gradient of the tangent to \\( y = 2 \\log_e x \\) at \\( Q(1, 0) \\).\nb) Hence find the equation of the tangent at \\( Q \\), and prove that it passes through \\( A(0, -2) \\).",
+    "a": "b) y = 2x - 2",
+    "hint": "The derivative of \\( a \\log_e x \\) is \\( \\frac{a}{x} \\)."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q3",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "question": "a) Find the gradient of the tangent to \\( y = \\log_e x \\) at \\( R(e^{-2}, -2) \\).\nb) Hence find the equation of the tangent at \\( R \\), and prove that it passes through \\( B(0, -3) \\).",
+    "a": "b) y = e^2 x - 3",
+    "hint": "Recall that \\( \\log_e e^{-2} = -2 \\)."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q4",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "question": "a) Find the gradient of the tangent to \\( y = 3 \\log_e x \\) at the point \\( A(1, 0) \\).\nb) Show that the gradient of the normal is \\( -\\frac{1}{3} \\).\nc) Hence find the equation of the normal at \\( A \\), and its \\( y \\)-intercept.",
+    "a": "c) y = -\\frac{1}{3}x + \\frac{1}{3}, y-intercept = \\frac{1}{3}",
+    "hint": "The gradient of the normal is the negative reciprocal of the tangent's gradient."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q6",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "question": "Consider the curve \\( y = \\log_e (4x - 3) \\).\na) Show that the point \\( P(1, 0) \\) lies on the curve.\nb) Find the gradients of the tangent and normal at \\( P \\).\nc) Find the equations of the tangent and normal at \\( P \\), and their \\( y \\)-intercepts.\nd) Find the area of the triangle formed by the tangent, the normal and the \\( y \\)-axis.",
+    "a": "d) \\frac{17}{8}",
+    "hint": "Use the chain rule for the derivative of \\( \\log_e (f(x)) \\)."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q7",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "question": "a) Find the gradient of the tangent to \\( y = \\ln x - \\frac{x}{3} + 1 \\) at \\( x = 1 \\).\nb) Write down the equation of the tangent, and show that it passes through the origin.",
+    "a": "b) y = \\frac{2}{3}x",
+    "hint": "Use derivative rules for natural logarithm and linear terms."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q8",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "question": "a) Find the equation of the tangent to \\( y = (3 - x) \\ln x \\) at \\( x = 3 \\).\nb) Hence find the \\( y \\)-intercept of the tangent.",
+    "a": "b) 3 \\ln 3",
+    "hint": "Use the product rule to differentiate."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q9",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "question": "a) Write down the domain of \\( y = 2 \\log_e x \\) and its derivative.\nb) Hence explain why the gradient of every tangent is positive.\nc) Explain also why the gradient of every normal is negative.\nd) Find \\( y'' \\) and show that it is always negative. What aspect of the curve does this describe?",
+    "a": "d) y'' = -\\frac{2}{x^2}, concave down",
+    "hint": "Think about the sign of x in the domain."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q12",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "question": "Consider the function \\( y = 2x - \\log_e x \\).\na) Write down the natural domain.\nb) Determine its first two derivatives.\nc) Show that the curve is concave up for all values of \\( x \\) in its domain.\nd) Find the minimum turning point.\ne) Sketch the curve and write down its range.",
+    "a": "e) Range: y \\ge 1 + \\ln 2",
+    "hint": "Domain restrictions come from the logarithmic term."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q15",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "question": "Consider the curve \\( y = 2x \\log_e x \\).\na) Write down the domain and \\( x \\)-intercept.\nb) Show that \\( y' = 2 + 2 \\log_e x \\) and find \\( y'' \\).\nc) Hence show there is one stationary point and determine its nature.\nd) Write down its range.",
+    "a": "d) y \\ge -\\frac{2}{e}",
+    "hint": "Use the product rule for differentiation."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q16",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "Consider the curve \\( y = 2x \\log_e x - 2x \\).\na) Write down the domain and \\( x \\)-intercept.\nb) Show that \\( y' = 2 \\log_e x \\) and find \\( y'' \\).\nc) Hence show that there is one stationary point and determine its nature.\nd) What does \\( y'' \\) tell you about the curve?\ne) Write down its range.",
+    "a": "e) y \\ge -2",
+    "hint": "Use the product rule."
+  },
+  {
+    "topic": "5H",
+    "id": "y12a-5h-q17",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "Consider the curve \\( y = \\log_e (4+x^2) \\).\na) Write down the domain.\nb) Is the curve even, odd or neither?\nc) Find where the function is zero, and explain what its sign is otherwise.\nd) Find \\( y' \\) and \\( y'' \\).\ne) Find the coordinates of the stationary point and determine its nature.\nf) Find the \\( x \\)-coordinates of the two points of inflection.",
+    "a": "f) x = \\pm 2",
+    "hint": "Use the chain rule and quotient rule."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q4a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\na) \\int_0^2 \\frac{dx}{x + 2}",
+    "a": "0.6931",
+    "hint": "Evaluate exactly first, then use a calculator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q4b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\nb) \\int_{-6}^{-4} \\frac{dx}{x + 3}",
+    "a": "-1.0986",
+    "hint": "Evaluate exactly first, then use a calculator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q4c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\nc) \\int_5^{10} \\frac{dx}{x - 3}",
+    "a": "1.2528",
+    "hint": "Evaluate exactly first, then use a calculator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q5a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral. Simplify your answer where possible.\n\na) \\int_1^{e^2} \\frac{dx}{x}",
+    "a": "2",
+    "hint": "Recall that $\\log_e (e^k) = k$."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q5b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral. Simplify your answer where possible.\n\nb) \\int_1^{e^3} \\frac{dx}{x}",
+    "a": "3",
+    "hint": "Recall that $\\log_e (e^k) = k$."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q5c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral. Simplify your answer where possible.\n\nc) \\int_1^{e^5} \\frac{dx}{x}",
+    "a": "5",
+    "hint": "Recall that $\\log_e (e^k) = k$."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q5d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Evaluate the definite integral. Simplify your answer where possible.\n\nd) \\int_{\\sqrt{e}}^{e^2} \\frac{dx}{x}",
+    "a": "\\frac{3}{2}",
+    "hint": "Recall that $\\log_e (e^k) = k$."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6a",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\na) \\frac{x + 2}{x}",
+    "a": "x + 2 \\log_e |x|",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6b",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nb) \\frac{x + 4}{3x}",
+    "a": "\\frac{1}{3} x + \\frac{4}{3} \\log_e |x|",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6c",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nc) \\frac{3 - x}{4x}",
+    "a": "\\frac{3}{4} \\log_e |x| - \\frac{1}{4} x",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6d",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nd) \\frac{1 - 6x}{5x}",
+    "a": "\\frac{1}{5} \\log_e |x| - \\frac{6}{5} x",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6e",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\ne) \\frac{4x^2 - 3x}{x^2}",
+    "a": "4x - 3 \\log_e |x|",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q6f",
+    "type": "short_answer",
+    "difficulty": "easy",
+    "question": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nf) \\frac{3x^2 + x - 5}{x}",
+    "a": "\\frac{3}{2} x^2 + x - 5 \\log_e |x|",
+    "hint": "Divide each term in the numerator by the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\na) \\int \\frac{2x}{x^2 - 4} dx",
+    "a": "\\log_e |x^2 - 4| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\nb) \\int \\frac{4x + 1}{2x^2 + x} dx",
+    "a": "\\log_e |2x^2 + x| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\nc) \\int \\frac{2x + 3}{x^2 + 3x - 2} dx",
+    "a": "\\log_e |x^2 + 3x - 2| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\nd) \\int \\frac{4 - 2x}{4x - x^2} dx",
+    "a": "\\log_e |4x - x^2| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7e",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\ne) \\int \\frac{2x + 4}{x^2 + 4x - 5} dx",
+    "a": "\\log_e |x^2 + 4x - 5| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7f",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\nf) \\int \\frac{8 - 2x}{8x - x^2} dx",
+    "a": "\\log_e |8x - x^2| + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7g",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\ng) \\( \\int \\frac{e^{2x}}{1 + e^{2x}} dx \\)",
+    "a": "\\frac{1}{2} \\log_e (1 + e^{2x}) + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7h",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\nh) \\( \\int \\frac{e^{-2x}}{1 + e^{-2x}} dx \\)",
+    "a": "-\\frac{1}{2} \\log_e (1 + e^{-2x}) + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q7i",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to integrate the expression:\n\ni) \\( \\int \\frac{e^x - e^{-x}}{e^x + e^{-x}} dx \\)",
+    "a": "\\log_e (e^x + e^{-x}) + C",
+    "hint": "Check if the numerator is a multiple of the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q8a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find $f(x)$, given that:\n\na) f'(x) = 1 + \\frac{3}{x} \\text{ and } f(1) = 2",
+    "a": "f(x) = x + 3 \\log_e |x| + 1",
+    "hint": "Integrate $f'(x)$ and use the initial condition to find C."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q8b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find $f(x)$, given that:\n\nb) f'(x) = 4x + \\frac{1}{2x} \\text{ and } f(1) = 3",
+    "a": "f(x) = 2x^2 + \\frac{1}{2} \\log_e |x| + 1",
+    "hint": "Integrate $f'(x)$ and use the initial condition to find C."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q8c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find $f(x)$, given that:\n\nc) f'(x) = 4 + \\frac{3}{3x - 1} \\text{ and } f(1) = 0",
+    "a": "f(x) = 4x + \\log_e |3x - 1| - 4",
+    "hint": "Integrate $f'(x)$ and use the initial condition to find C."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q8d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Find $f(x)$, given that:\n\nd) f'(x) = 3x^2 + \\frac{8}{2x + 1} \\text{ and } f(1) = 2 \\ln 3",
+    "a": "f(x) = x^3 + 4 \\log_e |2x + 1| - 1 - 2 \\ln 3",
+    "hint": "Integrate $f'(x)$ and use the initial condition to find C."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q9a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "a) Find $y$ as a function of $x$ if $y' = \\frac{1}{2x}$ and $y = 2$ when $x = e^4$.",
+    "a": "y = \\frac{1}{2} \\log_e x",
+    "hint": "Integrate to find y, then substitute the point to find C."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q9b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "b) The gradient of a curve is given by $y' = \\frac{3}{x + 2}$, and the curve passes through the point $(0, 2)$. What is the equation of this curve?",
+    "a": "y = 3 \\log_e(x + 2) + 2 - 3 \\log_e 2",
+    "hint": "Integrate the gradient function to find the curve's equation."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q9c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "c) Find $y(x)$, given that $y' = \\frac{2x + 4}{x^2 + 4x + 3}$ and $y = 1$ when $x = 1$. Hence evaluate $y(0)$.",
+    "a": "y(0) = 1 - \\log_e(8/3)",
+    "hint": "Use the $f'(x)/f(x)$ rule."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q10a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\na) \\int \\frac{1}{3x + b} dx",
+    "a": "\\frac{1}{3} \\log_e |3x + b| + C",
+    "hint": "Identify 'a' and 'b' in the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q10b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nb) \\int \\frac{1}{4x - k} dx",
+    "a": "\\frac{1}{4} \\log_e |4x - k| + C",
+    "hint": "Identify 'a' and 'b' in the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q10c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nc) \\int \\frac{1}{bx + 4} dx",
+    "a": "\\frac{1}{b} \\log_e |bx + 4| + C",
+    "hint": "Identify 'a' and 'b' in the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q10d",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nd) \\int \\frac{1}{nx - 3} dx",
+    "a": "\\frac{1}{n} \\log_e |nx - 3| + C",
+    "hint": "Identify 'a' and 'b' in the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q11a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use one of the log forms to find:\n\na) \\int \\frac{4x^3}{x^4 - 2} dx",
+    "a": "\\log_e |x^4 - 2| + C",
+    "hint": "Check the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q11b",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use one of the log forms to find:\n\nb) \\int \\frac{5x^4 + 2}{x^5 + 2x - 3} dx",
+    "a": "\\log_e |x^5 + 2x - 3| + C",
+    "hint": "Check the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q11c",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "Use one of the log forms to find:\n\nc) \\int \\frac{x^2 - 4x}{x^3 - 6x^2} dx",
+    "a": "\\frac{1}{3} \\log_e |x^3 - 6x^2| + C",
+    "hint": "Check the derivative of the denominator."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q12a",
+    "type": "short_answer",
+    "difficulty": "medium",
+    "question": "a) Given that the derivative of $f(x)$ is $\\frac{x^2 + 2x + 2}{x}$ and $f(1) = 2$, find $f(x)$.",
+    "a": "f(x) = \\frac{1}{2} x^2 + 2x + 2 \\log_e |x| - \\frac{1}{2}",
+    "hint": "Divide the numerator by x first."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q13",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Find $\\int_1^e \\left(x + \\frac{2}{x}\\right)^2 dx$.",
+    "a": "\\frac{1}{3} e^3 + 4 - \\frac{4}{e} - \\frac{1}{3}",
+    "hint": "Expand the bracket first."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q14",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "a) Differentiate $y = 2x \\log_e x - 2x$.\nb) Hence find $\\int \\log_e x dx$.",
+    "a": "b) x \\log_e x - x + C",
+    "hint": "Use the product rule for part a)."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q15",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "a) Show that the derivative of $y = 3x^2 \\log_e x - 1.5x^2$ is $y' = 6x \\log_e x$.\nb) Hence write down a primitive of $x \\log_e x$.\nc) Use this result to evaluate $\\int_e^{e^2} x \\log_e x dx$.",
+    "a": "c) \\frac{1}{4} e^4 (2 \\log_e (e^2) - 1) - \\frac{1}{4} e^2",
+    "hint": "Apply the fundamental theorem of calculus."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q16",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "a) Differentiate $(\\log_e x)^3$ using the chain rule.\nb) Hence determine $\\int \\frac{(\\log_e x)^2}{x} dx$.",
+    "a": "b) \\frac{1}{3} (\\log_e x)^3 + C",
+    "hint": "Reverse the chain rule result."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q17",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "Differentiate $\\ln(2 \\ln x)$ and hence determine the family of primitives of $\\frac{1}{x \\ln x}$.",
+    "a": "\\ln|\\ln x| + C",
+    "hint": "Use the chain rule twice."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q18",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "question": "Stella found the primitive of $\\frac{1}{4x}$ by taking out a factor of $\\frac{1}{4}$:\n$\\int \\frac{1}{4x} dx = \\frac{1}{4} \\int \\frac{1}{x} dx = \\frac{1}{4} \\log_e |x| + C_1$\n\nMagar used the standard form:\n$\\int \\frac{1}{4x} dx = \\frac{1}{4} \\log_e |4x| + C_2$\n\nExplain what is going on. Will this affect their result when finding a definite integral?",
+    "a": "C_2 = C_1 - \\frac{1}{4} \\log_e 4. No effect on definite integrals.",
+    "hint": "Use log laws to expand $\\log_e |4x|$."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q19a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Find the value of $a$ if $a$ is positive and $\\int_1^a \\frac{2}{x} dx = 6$.",
+    "a": "e^3",
+    "hint": "Evaluate the integral and solve for a."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q19b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Find the value of $a$ if $a$ is negative and $\\int_a^{-1} \\frac{1}{x} dx = -3$.",
+    "a": "-e^3",
+    "hint": "Evaluate the integral and solve for a."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q20a",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Although it is not required in this course, it can be shown that $\\int \\frac{1}{\\sqrt{x^2 + a^2}} dx = \\log_e(x + \\sqrt{x^2 + a^2}) + C$.\n\nUse this result to find $\\int_0^3 \\frac{1}{\\sqrt{x^2 + 16}} dx$.",
+    "a": "\\log_e 2",
+    "hint": "Identify 'a' and substitute the limits."
+  },
+  {
+    "topic": "5I",
+    "id": "y12a-5i-q20b",
+    "type": "short_answer",
+    "difficulty": "hard",
+    "question": "Use the result $\\int \\frac{1}{\\sqrt{x^2 - a^2}} dx = \\log_e|x + \\sqrt{x^2 - a^2}| + C$ to find $\\int_5^{13} \\frac{1}{\\sqrt{x^2 - 9}} dx$.",
+    "a": "\\log_e 3",
+    "hint": "Identify 'a' and substitute the limits."
+  }
+]

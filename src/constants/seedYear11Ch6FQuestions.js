@@ -1,1456 +1,2567 @@
 export const Y11_CH6F_QUESTIONS = [
   {
     "id": "y11a-6f-q1a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(\\sin 18^{\\circ} = \\cos 72^{\\circ}\\).",
-    "a": "0",
-    "opts": [
-      "True",
-      "False"
-    ],
-    "h": "Recall the complementary angle relationship: sin(x) = cos(90° - x).",
-    "s": "Since \\(\\sin(90^{\\circ} - x) = \\cos x\\), we have \\(\\sin 18^{\\circ} = \\cos(90^{\\circ} - 18^{\\circ}) = \\cos 72^{\\circ}\\). Therefore, the statement is True.",
+    "question": "True or False: \\(\\sin 18^{\\circ} = \\cos 72^{\\circ}\\).",
+    "answer": "0",
+    "hint": "Recall the complementary angle relationship: sin(x) = cos(90° - x).",
+    "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Apply the complementary angle identity \\(\\sin \\theta = \\cos(90^{\\circ} - \\theta)\\).",
-        "workingOut": "\\sin 18^{\\circ} = \\cos(90^{\\circ} - 18^{\\circ})"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin 18^{\\circ} = \\cos(90^{\\circ} - 18^{\\circ})\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the right-hand side.",
-        "workingOut": "\\cos(90^{\\circ} - 18^{\\circ}) = \\cos 72^{\\circ}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\cos(90^{\\circ} - 18^{\\circ}) = \\cos 72^{\\circ}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Thus, the equation holds true.",
-        "workingOut": "\\therefore \\text{True}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\therefore \\text{True}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q1b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(\\tan 65^{\\circ} = \\cot 25^{\\circ}\\).",
-    "a": "0",
-    "opts": [
-      "True",
-      "False"
-    ],
-    "h": "Recall cot(x) = tan(90° - x).",
-    "s": "Using complementary angles, \\(\\cot 25^{\\circ} = \\tan(90^{\\circ} - 25^{\\circ}) = \\tan 65^{\\circ}\\). Thus, the statement is True.",
+    "question": "True or False: \\(\\tan 65^{\\circ} = \\cot 25^{\\circ}\\).",
+    "answer": "0",
+    "hint": "Recall cot(x) = tan(90° - x).",
+    "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Apply the complementary identity for cotangent.",
-        "workingOut": "\\cot 25^{\\circ} = \\tan(90^{\\circ} - 25^{\\circ})"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cot 25^{\\circ} = \\tan(90^{\\circ} - 25^{\\circ})\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the expression.",
-        "workingOut": "\\tan(90^{\\circ} - 25^{\\circ}) = \\tan 65^{\\circ}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\tan(90^{\\circ} - 25^{\\circ}) = \\tan 65^{\\circ}\\)",
+        "graphData": null
       },
       {
-        "explanation": "The statement is true.",
-        "workingOut": "\\therefore \\text{True}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\therefore \\text{True}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q1c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(\\sec 8^{\\circ} = \\csc 82^{\\circ}\\).",
-    "a": "0",
-    "opts": [
-      "True",
-      "False"
-    ],
-    "h": "Recall csc(x) = sec(90° - x).",
-    "s": "By complementary identity, \\(\\csc 82^{\\circ} = \\sec(90^{\\circ} - 82^{\\circ}) = \\sec 8^{\\circ}\\). Thus, the statement is True.",
+    "question": "True or False: \\(\\sec 8^{\\circ} = \\csc 82^{\\circ}\\).",
+    "answer": "0",
+    "hint": "Recall csc(x) = sec(90° - x).",
+    "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Apply the complementary identity for cosecant.",
-        "workingOut": "\\csc 82^{\\circ} = \\sec(90^{\\circ} - 82^{\\circ})"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\csc 82^{\\circ} = \\sec(90^{\\circ} - 82^{\\circ})\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "\\sec 8^{\\circ}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\sec 8^{\\circ}\\)",
+        "graphData": null
       },
       {
-        "explanation": "The statement is true.",
-        "workingOut": "\\therefore \\text{True}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\therefore \\text{True}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q1d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(\\sin^2 27^{\\circ} + \\cos^2 27^{\\circ} = 1\\).",
-    "a": "0",
-    "opts": [
-      "True",
-      "False"
-    ],
-    "h": "Apply the Pythagorean identity.",
-    "s": "The Pythagorean identity states that \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\) for any angle \\(\\theta\\). Substituting \\(\\theta = 27^{\\circ}\\), the statement is True.",
+    "question": "True or False: \\(\\sin^2 27^{\\circ} + \\cos^2 27^{\\circ} = 1\\).",
+    "answer": "0",
+    "hint": "Apply the Pythagorean identity.",
+    "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Recall the Pythagorean identity.",
-        "workingOut": "\\sin^2 \\theta + \\cos^2 \\theta = 1"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Since this holds for any angle, it is true for \\(27^{\\circ}\\).",
-        "workingOut": "\\sin^2 27^{\\circ} + \\cos^2 27^{\\circ} = 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\sin^2 27^{\\circ} + \\cos^2 27^{\\circ} = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q1e",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "multiple_choice",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(1 + \\tan^2 50^{\\circ} = \\sec^2 50^{\\circ}\\).",
-    "a": "0",
-    "opts": [
-      "True",
-      "False"
-    ],
-    "h": "Recall the identity linking tangent and secant.",
-    "s": "The identity \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\) is true for all defined angles. Thus, substituting \\(50^{\\circ}\\) makes it True.",
+    "question": "True or False: \\(1 + \\tan^2 50^{\\circ} = \\sec^2 50^{\\circ}\\).",
+    "answer": "0",
+    "hint": "Recall the identity linking tangent and secant.",
+    "solution": "0",
     "solutionSteps": [
       {
-        "explanation": "Recall the Pythagorean identity for tangent and secant.",
-        "workingOut": "1 + \\tan^2 \\theta = \\sec^2 \\theta"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(\\theta = 50^{\\circ}\\).",
-        "workingOut": "1 + \\tan^2 50^{\\circ} = \\sec^2 50^{\\circ}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(1 + \\tan^2 50^{\\circ} = \\sec^2 50^{\\circ}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q1f",
+    "topicId": "y11a-6F",
+    "c": "6F",
+    "t": "Trigonometric identities",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "timeLimit": 60,
+    "question": "True or False: \\(\\csc^2 35^{\\circ} - 1 = \\cot^2 35^{\\circ}\\).",
+    "answer": "0",
+    "hint": "Recall the identity linking cosecant and cotangent.",
+    "solution": "0",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\csc^2 \\theta - 1 = \\cot^2 \\theta\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\csc^2 35^{\\circ} - 1 = \\cot^2 35^{\\circ}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(0\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y11a-6f-q2a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "True or False: \\(\\csc^2 35^{\\circ} - 1 = \\cot^2 35^{\\circ}\\).",
-    "a": "0",
+    "question": "Simplify: \\(\\frac{1}{\\cos \\theta}\\).",
     "opts": [
-      "True",
-      "False"
+      "\\(\\dfrac{12}{x + 2}\\)",
+      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(sec \\theta\\)",
+      "\\(sec \\theta + 1\\)"
     ],
-    "h": "Recall the identity linking cosecant and cotangent.",
-    "s": "Since \\(1 + \\cot^2 \\theta = \\csc^2 \\theta\\), rearranging gives \\(\\csc^2 \\theta - 1 = \\cot^2 \\theta\\). Substituting \\(35^{\\circ}\\) shows the statement is True.",
+    "a": 2,
+    "answer": "2",
+    "hint": "Which reciprocal identity represents 1/cos?",
+    "solution": "By definition, the reciprocal of cosine is secant. Therefore, \\(\\frac{1}{\\cos \\theta} = \\sec \\theta\\).",
     "solutionSteps": [
       {
-        "explanation": "Start with the identity \\(1 + \\cot^2 \\theta = \\csc^2 \\theta\\).",
-        "workingOut": ""
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{\\cos \\theta} = \\sec \\theta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange to solve for cotangent squared.",
-        "workingOut": "\\csc^2 \\theta - 1 = \\cot^2 \\theta"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(\\theta = 35^{\\circ}\\).",
-        "workingOut": "\\csc^2 35^{\\circ} - 1 = \\cot^2 35^{\\circ}"
-      }
-    ]
-  },
-  {
-    "id": "y11a-6f-q2a",
-    "c": "6F",
-    "t": "Trigonometric identities",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 60,
-    "q": "Simplify: \\(\\frac{1}{\\cos \\theta}\\).",
-    "a": "sec \\theta",
-    "h": "Which reciprocal identity represents 1/cos?",
-    "s": "By definition, the reciprocal of cosine is secant. Therefore, \\(\\frac{1}{\\cos \\theta} = \\sec \\theta\\).",
-    "solutionSteps": [
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(sec \\theta\\)",
+        "graphData": null
+      },
       {
-        "explanation": "Apply the reciprocal identity for secant.",
-        "workingOut": "\\frac{1}{\\cos \\theta} = \\sec \\theta"
+        "explanation": "Final answer: sec \\theta. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(sec \\theta\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q2b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\frac{1}{\\cot \\alpha}\\).",
-    "a": "tan \\alpha",
-    "h": "Which reciprocal identity represents 1/cot?",
-    "s": "By definition, the reciprocal of cotangent is tangent. Therefore, \\(\\frac{1}{\\cot \\alpha} = \\tan \\alpha\\).",
+    "question": "Simplify: \\(\\frac{1}{\\cot \\alpha}\\).",
+    "opts": [
+      "\\(\\dfrac{12}{x + 2}\\)",
+      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(tan \\alpha\\)",
+      "\\(tan \\alpha + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Which reciprocal identity represents 1/cot?",
+    "solution": "By definition, the reciprocal of cotangent is tangent. Therefore, \\(\\frac{1}{\\cot \\alpha} = \\tan \\alpha\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the reciprocal identity for tangent.",
-        "workingOut": "\\frac{1}{\\cot \\alpha} = \\tan \\alpha"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{\\cot \\alpha} = \\tan \\alpha\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(tan \\alpha\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: tan \\alpha. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(tan \\alpha\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q2c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\frac{sin x}{cos x}\\).",
-    "a": "tan x",
-    "h": "Recall the tangent quotient identity.",
-    "s": "By the quotient identity, \\(\\frac{\\sin x}{\\cos x} = \\tan x\\).",
+    "question": "Simplify: \\(\\frac{sin x}{cos x}\\).",
+    "opts": [
+      "tan x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall the tangent quotient identity.",
+    "solution": "By the quotient identity, \\(\\frac{\\sin x}{\\cos x} = \\tan x\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient identity for tangent.",
-        "workingOut": "\\frac{\\sin x}{\\cos x} = \\tan x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\sin x}{\\cos x} = \\tan x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "tan x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: tan x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "tan x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q2d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\frac{cos y}{sin y}\\).",
-    "a": "cot y",
-    "h": "Recall the cotangent quotient identity.",
-    "s": "By the quotient identity, \\(\\frac{\\cos y}{\\sin y} = \\cot y\\).",
+    "question": "Simplify: \\(\\frac{cos y}{sin y}\\).",
+    "opts": [
+      "cot y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall the cotangent quotient identity.",
+    "solution": "By the quotient identity, \\(\\frac{\\cos y}{\\sin y} = \\cot y\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient identity for cotangent.",
-        "workingOut": "\\frac{\\cos y}{\\sin y} = \\cot y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\cos y}{\\sin y} = \\cot y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cot y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cot y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cot y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q3a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\cos x \\sec x\\).",
-    "a": "1",
-    "h": "Recall sec(x) = 1/cos(x).",
-    "s": "Since \\(\\sec x = \\frac{1}{\\cos x}\\), we have \\(\\cos x \\sec x = \\cos x \\times \\frac{1}{\\cos x} = 1\\).",
+    "question": "Simplify: \\(\\cos x \\sec x\\).",
+    "answer": "1",
+    "hint": "Recall sec(x) = 1/cos(x).",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Substitute secant with its reciprocal definition.",
-        "workingOut": "\\cos x \\sec x = \\cos x \\left(\\frac{1}{\\cos x}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cos x \\sec x = \\cos x \\left(\\frac{1}{\\cos x}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the expression.",
-        "workingOut": "= 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q3b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\tan y \\cot y\\).",
-    "a": "1",
-    "h": "Recall cot(y) = 1/tan(y).",
-    "s": "Since \\(\\cot y = \\frac{1}{\\tan y}\\), we have \\(\\tan y \\cot y = \\tan y \\times \\frac{1}{\\tan y} = 1\\).",
+    "question": "Simplify: \\(\\tan y \\cot y\\).",
+    "answer": "1",
+    "hint": "Recall cot(y) = 1/tan(y).",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Substitute cotangent with its reciprocal definition.",
-        "workingOut": "\\tan y \\cot y = \\tan y \\left(\\frac{1}{\\tan y}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\tan y \\cot y = \\tan y \\left(\\frac{1}{\\tan y}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "= 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q3c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Simplify: \\(\\sin z \\csc z\\).",
-    "a": "1",
-    "h": "Recall csc(z) = 1/sin(z).",
-    "s": "Since \\(\\csc z = \\frac{1}{\\sin z}\\), we have \\(\\sin z \\csc z = \\sin z \\times \\frac{1}{\\sin z} = 1\\).",
+    "question": "Simplify: \\(\\sin z \\csc z\\).",
+    "answer": "1",
+    "hint": "Recall csc(z) = 1/sin(z).",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Substitute cosecant with its reciprocal.",
-        "workingOut": "\\sin z \\csc z = \\sin z \\left(\\frac{1}{\\sin z}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin z \\csc z = \\sin z \\left(\\frac{1}{\\sin z}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "= 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q4a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Prove: \\(\\tan x \\cos x = \\sin x\\).",
-    "a": "LHS = (sin x / cos x) * cos x = sin x = RHS",
-    "h": "Rewrite tangent in terms of sine and cosine.",
-    "s": "LHS: \\(\\tan x \\cos x = \\frac{\\sin x}{\\cos x} \\times \\cos x = \\sin x = \\text{RHS}\\).",
+    "question": "Prove: \\(\\tan x \\cos x = \\sin x\\).",
+    "answer": "LHS = (sin x / cos x) * cos x = sin x = RHS",
+    "hint": "Rewrite tangent in terms of sine and cosine.",
+    "solution": "LHS = (sin x / cos x) * cos x = sin x = RHS",
     "solutionSteps": [
       {
-        "explanation": "Start with LHS and express tangent as sine over cosine.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{\\sin x}{\\cos x}\\right) \\cos x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{\\sin x}{\\cos x}\\right) \\cos x\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the cosine terms.",
-        "workingOut": "= \\sin x"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\sin x\\)",
+        "graphData": null
       },
       {
-        "explanation": "LHS equals RHS.",
-        "workingOut": "= \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (sin x / cos x) * cos x = sin x = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (sin x / cos x) * cos x = sin x = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q4b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Prove: \\(\\cot y \\sin y = \\cos y\\).",
-    "a": "LHS = (cos y / sin y) * sin y = cos y = RHS",
-    "h": "Rewrite cotangent in terms of cosine and sine.",
-    "s": "LHS: \\(\\cot y \\sin y = \\frac{\\cos y}{\\sin y} \\times \\sin y = \\cos y = \\text{RHS}\\).",
+    "question": "Prove: \\(\\cot y \\sin y = \\cos y\\).",
+    "answer": "LHS = (cos y / sin y) * sin y = cos y = RHS",
+    "hint": "Rewrite cotangent in terms of cosine and sine.",
+    "solution": "LHS = (cos y / sin y) * sin y = cos y = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express cotangent on LHS in terms of cosine and sine.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{\\cos y}{\\sin y}\\right) \\sin y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{\\cos y}{\\sin y}\\right) \\sin y\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 260,
+            "boundingbox": [
+              -4,
+              4,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Simplify the sine terms.",
-        "workingOut": "= \\cos y"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\cos y\\)",
+        "graphData": null
       },
       {
-        "explanation": "Confirm LHS equals RHS.",
-        "workingOut": "= \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (cos y / sin y) * sin y = cos y = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (cos y / sin y) * sin y = cos y = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 260,
+        "boundingbox": [
+          -4,
+          4,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-4,0],[4,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-4],[0,4]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [3.4, -1.4, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 3.6, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return Math.cos(x); }, -3.9, 3.9], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.2, 2.5, 'y = cos x'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q4c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Prove: \\(\\sin \\theta \\sec \\theta = \\tan \\theta\\).",
-    "a": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
-    "h": "Rewrite secant in terms of cosine.",
-    "s": "LHS: \\(\\sin \\theta \\sec \\theta = \\sin \\theta \\times \\frac{1}{\\cos \\theta} = \\frac{\\sin \\theta}{\\cos \\theta} = \\tan \\theta = \\text{RHS}\\).",
+    "question": "Prove: \\(\\sin \\theta \\sec \\theta = \\tan \\theta\\).",
+    "answer": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
+    "hint": "Rewrite secant in terms of cosine.",
+    "solution": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express secant on LHS as one over cosine.",
-        "workingOut": "\\text{LHS} = \\sin \\theta \\left(\\frac{1}{\\cos \\theta}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sin \\theta \\left(\\frac{1}{\\cos \\theta}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine the terms.",
-        "workingOut": "= \\frac{\\sin \\theta}{\\cos \\theta}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\sin \\theta}{\\cos \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the tangent identity.",
-        "workingOut": "= \\tan \\theta = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\tan \\theta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q5a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use complementary identities to simplify: \\(\\cos(90^{\\circ} - x)\\).",
-    "a": "sin x",
-    "h": "Complement of cosine is sine.",
-    "s": "Using complementary identities, \\(\\cos(90^{\\circ} - x) = \\sin x\\).",
+    "question": "Use complementary identities to simplify: \\(\\cos(90^{\\circ} - x)\\).",
+    "opts": [
+      "sin x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Complement of cosine is sine.",
+    "solution": "Using complementary identities, \\(\\cos(90^{\\circ} - x) = \\sin x\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the identity: \\(\\cos(90^{\\circ} - \theta) = \\sin \theta\\).",
-        "workingOut": "\\cos(90^{\\circ} - x) = \\sin x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cos(90^{\\circ} - x) = \\sin x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sin x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sin x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sin x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q5b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use complementary identities to simplify: \\(\\csc(90^{\\circ} - y)\\).",
-    "a": "sec y",
-    "h": "Complement of cosecant is secant.",
-    "s": "Using complementary identities, \\(\\csc(90^{\\circ} - y) = \\sec y\\).",
+    "question": "Use complementary identities to simplify: \\(\\csc(90^{\\circ} - y)\\).",
+    "opts": [
+      "sec y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Complement of cosecant is secant.",
+    "solution": "Using complementary identities, \\(\\csc(90^{\\circ} - y) = \\sec y\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the identity: \\(\\csc(90^{\\circ} - \theta) = \\sec \theta\\).",
-        "workingOut": "\\csc(90^{\\circ} - y) = \\sec y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\csc(90^{\\circ} - y) = \\sec y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sec y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sec y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sec y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q5c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use complementary identities to simplify: \\(\\frac{1}{\\tan(90^{\\circ} - \\theta)}\\).",
-    "a": "tan \\theta",
-    "h": "Simplify the denominator first: tan(90° - \theta) = cot \theta.",
-    "s": "The denominator \\(\\tan(90^{\\circ} - \\theta) = \\cot \\theta\\). Thus, the expression becomes \\(\\frac{1}{\\cot \\theta} = \\tan \\theta\\).",
+    "question": "Use complementary identities to simplify: \\(\\frac{1}{\\tan(90^{\\circ} - \\theta)}\\).",
+    "opts": [
+      "\\(\\dfrac{12}{x + 2}\\)",
+      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(tan \\theta\\)",
+      "\\(tan \\theta + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Simplify the denominator first: tan(90° - \theta) = cot \theta.",
+    "solution": "The denominator \\(\\tan(90^{\\circ} - \\theta) = \\cot \\theta\\). Thus, the expression becomes \\(\\frac{1}{\\cot \\theta} = \\tan \\theta\\).",
     "solutionSteps": [
       {
-        "explanation": "Simplify the denominator using the complementary identity.",
-        "workingOut": "\\tan(90^{\\circ} - \\theta) = \\cot \\theta"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\tan(90^{\\circ} - \\theta) = \\cot \\theta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take the reciprocal of cotangent.",
-        "workingOut": "\\frac{1}{\\cot \\theta} = \\tan \\theta"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\frac{1}{\\cot \\theta} = \\tan \\theta\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(tan \\theta\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: tan \\theta. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(tan \\theta\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q5d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use complementary identities to simplify: \\(\\frac{\\sin(90^{\\circ} - z)}{\\cos(90^{\\circ} - z)}\\).",
-    "a": "cot z",
-    "h": "Simplify the numerator and denominator first.",
-    "s": "We have \\(\\sin(90^{\\circ} - z) = \\cos z\\) and \\(\\cos(90^{\\circ} - z) = \\sin z\\). Thus, the expression simplifies to \\(\\frac{\\cos z}{\\sin z} = \\cot z\\).",
+    "question": "Use complementary identities to simplify: \\(\\frac{\\sin(90^{\\circ} - z)}{\\cos(90^{\\circ} - z)}\\).",
+    "opts": [
+      "cot z",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Simplify the numerator and denominator first.",
+    "solution": "We have \\(\\sin(90^{\\circ} - z) = \\cos z\\) and \\(\\cos(90^{\\circ} - z) = \\sin z\\). Thus, the expression simplifies to \\(\\frac{\\cos z}{\\sin z} = \\cot z\\).",
     "solutionSteps": [
       {
-        "explanation": "Simplify numerator and denominator.",
-        "workingOut": "\\sin(90^{\\circ} - z) = \\cos z, quad \\cos(90^{\\circ} - z) = \\sin z"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin(90^{\\circ} - z) = \\cos z, quad \\cos(90^{\\circ} - z) = \\sin z\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the quotient identity.",
-        "workingOut": "\\frac{\\cos z}{\\sin z} = \\cot z"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\frac{\\cos z}{\\sin z} = \\cot z\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cot z",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cot z. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cot z",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q6a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(\\sin^2 \\theta + \\cos^2 \\theta\\).",
-    "a": "1",
-    "h": "This is the fundamental Pythagorean identity.",
-    "s": "By the fundamental Pythagorean identity, \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\).",
+    "question": "Use Pythagorean identities to simplify: \\(\\sin^2 \\theta + \\cos^2 \\theta\\).",
+    "answer": "1",
+    "hint": "This is the fundamental Pythagorean identity.",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Recall the core identity.",
-        "workingOut": "\\sin^2 \\theta + \\cos^2 \\theta = 1"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q6b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(1 - \\sin^2 y\\).",
-    "a": "cos^2 y",
-    "h": "Rearrange sin^2 y + cos^2 y = 1.",
-    "s": "From \\(\\sin^2 y + \\cos^2 y = 1\\), subtracting \\(\\sin^2 y\\) from both sides gives \\(1 - \\sin^2 y = \\cos^2 y\\).",
+    "question": "Use Pythagorean identities to simplify: \\(1 - \\sin^2 y\\).",
+    "opts": [
+      "cos^2 y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Rearrange sin^2 y + cos^2 y = 1.",
+    "solution": "From \\(\\sin^2 y + \\cos^2 y = 1\\), subtracting \\(\\sin^2 y\\) from both sides gives \\(1 - \\sin^2 y = \\cos^2 y\\).",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the identity \\(\\sin^2 y + \\cos^2 y = 1\\).",
-        "workingOut": "\\cos^2 y = 1 - \\sin^2 y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cos^2 y = 1 - \\sin^2 y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cos^2 y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cos^2 y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cos^2 y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q6c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(\\sec^2 z - 1\\).",
-    "a": "tan^2 z",
-    "h": "Rearrange 1 + tan^2 z = sec^2 z.",
-    "s": "Since \\(1 + \\tan^2 z = \\sec^2 z\\), subtracting \\(1\\) gives \\(\\sec^2 z - 1 = \\tan^2 z\\).",
+    "question": "Use Pythagorean identities to simplify: \\(\\sec^2 z - 1\\).",
+    "opts": [
+      "tan^2 z",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Rearrange 1 + tan^2 z = sec^2 z.",
+    "solution": "Since \\(1 + \\tan^2 z = \\sec^2 z\\), subtracting \\(1\\) gives \\(\\sec^2 z - 1 = \\tan^2 z\\).",
     "solutionSteps": [
       {
-        "explanation": "Start with \\(1 + \\tan^2 z = \\sec^2 z\\).",
-        "workingOut": ""
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\tan^2 z = \\sec^2 z - 1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract 1.",
-        "workingOut": "\\tan^2 z = \\sec^2 z - 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "tan^2 z",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: tan^2 z. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "tan^2 z",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q6d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(1 + \\tan^2 x\\).",
-    "a": "sec^2 x",
-    "h": "This is a direct Pythagorean identity.",
-    "s": "By the Pythagorean identity, \\(1 + \\tan^2 x = \\sec^2 x\\).",
+    "question": "Use Pythagorean identities to simplify: \\(1 + \\tan^2 x\\).",
+    "opts": [
+      "sec^2 x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "This is a direct Pythagorean identity.",
+    "solution": "By the Pythagorean identity, \\(1 + \\tan^2 x = \\sec^2 x\\).",
     "solutionSteps": [
       {
-        "explanation": "Recall the identity.",
-        "workingOut": "1 + \\tan^2 x = \\sec^2 x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(1 + \\tan^2 x = \\sec^2 x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sec^2 x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sec^2 x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sec^2 x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q7a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(1 - \\cos^2 x\\).",
-    "a": "sin^2 x",
-    "h": "Rearrange sin^2 x + cos^2 x = 1.",
-    "s": "From the identity \\(\\sin^2 x + \\cos^2 x = 1\\), subtracting \\(\\cos^2 x\\) yields \\(1 - \\cos^2 x = \\sin^2 x\\).",
+    "question": "Use Pythagorean identities to simplify: \\(1 - \\cos^2 x\\).",
+    "opts": [
+      "sin^2 x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Rearrange sin^2 x + cos^2 x = 1.",
+    "solution": "From the identity \\(\\sin^2 x + \\cos^2 x = 1\\), subtracting \\(\\cos^2 x\\) yields \\(1 - \\cos^2 x = \\sin^2 x\\).",
     "solutionSteps": [
       {
-        "explanation": "Rearrange \\(\\sin^2 x + \\cos^2 x = 1\\).",
-        "workingOut": "\\sin^2 x = 1 - \\cos^2 x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\sin^2 x = 1 - \\cos^2 x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sin^2 x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sin^2 x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sin^2 x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q7b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(1 + \\cot^2 y\\).",
-    "a": "csc^2 y",
-    "h": "This is a standard identity linking cotangent and cosecant.",
-    "s": "By Pythagorean identity, \\(1 + \\cot^2 y = \\csc^2 y\\).",
+    "question": "Use Pythagorean identities to simplify: \\(1 + \\cot^2 y\\).",
+    "opts": [
+      "csc^2 y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "This is a standard identity linking cotangent and cosecant.",
+    "solution": "By Pythagorean identity, \\(1 + \\cot^2 y = \\csc^2 y\\).",
     "solutionSteps": [
       {
-        "explanation": "Recall the standard identity.",
-        "workingOut": "1 + \\cot^2 y = \\csc^2 y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(1 + \\cot^2 y = \\csc^2 y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "csc^2 y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: csc^2 y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "csc^2 y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q7c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(\\csc^2 B - 1\\).",
-    "a": "cot^2 B",
-    "h": "Rearrange 1 + cot^2 B = csc^2 B.",
-    "s": "Since \\(1 + \\cot^2 B = \\csc^2 B\\), subtracting \\(1\\) yields \\(\\csc^2 B - 1 = \\cot^2 B\\).",
+    "question": "Use Pythagorean identities to simplify: \\(\\csc^2 B - 1\\).",
+    "opts": [
+      "cot^2 B",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Rearrange 1 + cot^2 B = csc^2 B.",
+    "solution": "Since \\(1 + \\cot^2 B = \\csc^2 B\\), subtracting \\(1\\) yields \\(\\csc^2 B - 1 = \\cot^2 B\\).",
     "solutionSteps": [
       {
-        "explanation": "Rearrange cotangent identity.",
-        "workingOut": "\\cot^2 B = \\csc^2 B - 1"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cot^2 B = \\csc^2 B - 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cot^2 B",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cot^2 B. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cot^2 B",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q7d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
-    "q": "Use Pythagorean identities to simplify: \\(\\csc^2 \\theta - \\cot^2 \\theta\\).",
-    "a": "1",
-    "h": "Rearrange 1 + cot^2 \\theta = csc^2 \\theta.",
-    "s": "Subtracting \\(\\cot^2 \\theta\\) from both sides of \\(1 + \\cot^2 \\theta = \\csc^2 \\theta\\) gives \\(\\csc^2 \\theta - \\cot^2 \\theta = 1\\).",
+    "question": "Use Pythagorean identities to simplify: \\(\\csc^2 \\theta - \\cot^2 \\theta\\).",
+    "answer": "1",
+    "hint": "Rearrange 1 + cot^2 \\theta = csc^2 \\theta.",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Start with identity.",
-        "workingOut": "1 + \\cot^2 \\theta = \\csc^2 \\theta"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(1 + \\cot^2 \\theta = \\csc^2 \\theta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Subtract cotangent squared from both sides.",
-        "workingOut": "\\csc^2 \\theta - \\cot^2 \\theta = 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(\\csc^2 \\theta - \\cot^2 \\theta = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q8a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{1}{\\csc^2 x}\\).",
-    "a": "sin^2 x",
-    "h": "Recall the reciprocal of cosecant.",
-    "s": "Since \\(\\sin x = \\frac{1}{\\csc x}\\), we have \\(\\frac{1}{\\csc^2 x} = \\sin^2 x\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{1}{\\csc^2 x}\\).",
+    "opts": [
+      "sin^2 x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall the reciprocal of cosecant.",
+    "solution": "Since \\(\\sin x = \\frac{1}{\\csc x}\\), we have \\(\\frac{1}{\\csc^2 x} = \\sin^2 x\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the reciprocal identity.",
-        "workingOut": "\\frac{1}{\\csc^2 x} = \\sin^2 x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{1}{\\csc^2 x} = \\sin^2 x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sin^2 x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sin^2 x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sin^2 x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q8b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cos^2 y}{\\sin^2 y}\\).",
-    "a": "cot^2 y",
-    "h": "Recall the ratio identity for cotangent.",
-    "s": "Since \\(\\frac{\\cos y}{\\sin y} = \\cot y\\), squaring both sides gives \\(\\frac{\\cos^2 y}{\\sin^2 y} = \\cot^2 y\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cos^2 y}{\\sin^2 y}\\).",
+    "opts": [
+      "cot^2 y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall the ratio identity for cotangent.",
+    "solution": "Since \\(\\frac{\\cos y}{\\sin y} = \\cot y\\), squaring both sides gives \\(\\frac{\\cos^2 y}{\\sin^2 y} = \\cot^2 y\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient identity.",
-        "workingOut": "\\frac{\\cos^2 y}{\\sin^2 y} = \\cot^2 y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\cos^2 y}{\\sin^2 y} = \\cot^2 y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cot^2 y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cot^2 y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cot^2 y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q8c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\sin^2 z}{\\cos^2 z}\\).",
-    "a": "tan^2 z",
-    "h": "Recall the ratio identity for tangent.",
-    "s": "Since \\(\\frac{\\sin z}{\\cos z} = \\tan z\\), squaring both sides gives \\(\\frac{\\sin^2 z}{\\cos^2 z} = \\tan^2 z\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\sin^2 z}{\\cos^2 z}\\).",
+    "opts": [
+      "tan^2 z",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall the ratio identity for tangent.",
+    "solution": "Since \\(\\frac{\\sin z}{\\cos z} = \\tan z\\), squaring both sides gives \\(\\frac{\\sin^2 z}{\\cos^2 z} = \\tan^2 z\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply the quotient identity.",
-        "workingOut": "\\frac{\\sin^2 z}{\\cos^2 z} = \\tan^2 z"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\sin^2 z}{\\cos^2 z} = \\tan^2 z\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "Apply the appropriate standard form",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "tan^2 z",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: tan^2 z. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "tan^2 z",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q8d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\cos^2 \\theta \\sec^2 \\theta\\).",
-    "a": "1",
-    "h": "Substitute secant with its reciprocal.",
-    "s": "We have \\(\\cos^2 \\theta \\sec^2 \\theta = \\cos^2 \\theta \\times \\frac{1}{\\cos^2 \\theta} = 1\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\cos^2 \\theta \\sec^2 \\theta\\).",
+    "answer": "1",
+    "hint": "Substitute secant with its reciprocal.",
+    "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Substitute secant squared.",
-        "workingOut": "\\cos^2 \\theta \\left(\\frac{1}{\\cos^2 \\theta}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\cos^2 \\theta \\left(\\frac{1}{\\cos^2 \\theta}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "= 1"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q9a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to prove: \\(\\sin \\theta \\sec \\theta = \\tan \\theta\\).",
-    "a": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
-    "h": "Rewrite secant as 1/cos.",
-    "s": "LHS: \\(\\sin \\theta \\sec \\theta = \\sin \\theta \\times \\frac{1}{\\cos \\theta} = \\frac{\\sin \\theta}{\\cos \\theta} = \\tan \\theta = \\text{RHS}\\).",
+    "question": "Use reciprocal and ratio identities to prove: \\(\\sin \\theta \\sec \\theta = \\tan \\theta\\).",
+    "answer": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
+    "hint": "Rewrite secant as 1/cos.",
+    "solution": "LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express secant as reciprocal of cosine.",
-        "workingOut": "\\text{LHS} = \\sin \\theta \\left(\\frac{1}{\\cos \\theta}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sin \\theta \\left(\\frac{1}{\\cos \\theta}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine terms and identify as tangent.",
-        "workingOut": "= \\frac{\\sin \\theta}{\\cos \\theta} = \\tan \\theta = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\sin \\theta}{\\cos \\theta} = \\tan \\theta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = sin \\theta * (1 / cos \\theta) = sin \\theta / cos \\theta = tan \\theta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q9b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to prove: \\(\\sec x \\sin x \\cot x = 1\\).",
-    "a": "LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS",
-    "h": "Express all functions in terms of sine and cosine.",
-    "s": "LHS: \\(\\sec x \\sin x \\cot x = \\frac{1}{\\cos x} \\times \\sin x \\times \\frac{\\cos x}{\\sin x} = 1 = \\text{RHS}\\).",
+    "question": "Use reciprocal and ratio identities to prove: \\(\\sec x \\sin x \\cot x = 1\\).",
+    "answer": "LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS",
+    "hint": "Express all functions in terms of sine and cosine.",
+    "solution": "LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Convert secant and cotangent to sines and cosines.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{1}{\\cos x}\\right) \\sin x \\left(\\frac{\\cos x}{\\sin x}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{1}{\\cos x}\\right) \\sin x \\left(\\frac{\\cos x}{\\sin x}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel out terms.",
-        "workingOut": "= 1 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (1/cos x) * sin x * (cos x / sin x) = 1 = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q9c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to prove: \\(\\cos y \\tan y \\csc y = 1\\).",
-    "a": "LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS",
-    "h": "Express all functions in terms of sine and cosine.",
-    "s": "LHS: \\(\\cos y \\tan y \\csc y = \\cos y \\times \\frac{\\sin y}{\\cos y} \\times \\frac{1}{\\sin y} = 1 = \\text{RHS}\\).",
+    "question": "Use reciprocal and ratio identities to prove: \\(\\cos y \\tan y \\csc y = 1\\).",
+    "answer": "LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS",
+    "hint": "Express all functions in terms of sine and cosine.",
+    "solution": "LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Convert tangent and cosecant to sines and cosines.",
-        "workingOut": "\\text{LHS} = \\cos y \\left(\\frac{\\sin y}{\\cos y}\\right) \\left(\\frac{1}{\\sin y}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\cos y \\left(\\frac{\\sin y}{\\cos y}\\right) \\left(\\frac{1}{\\sin y}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel terms.",
-        "workingOut": "= 1 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = cos y * (sin y / cos y) * (1 / sin y) = 1 = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q10a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{sin x}{\\csc x}\\).",
-    "a": "sin^2 x",
-    "h": "Recall csc(x) = 1/sin(x).",
-    "s": "We have \\(\\frac{\\sin x}{\\csc x} = \\frac{\\sin x}{1/\\sin x} = \\sin^2 x\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{sin x}{\\csc x}\\).",
+    "opts": [
+      "sin^2 x",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall csc(x) = 1/sin(x).",
+    "solution": "We have \\(\\frac{\\sin x}{\\csc x} = \\frac{\\sin x}{1/\\sin x} = \\sin^2 x\\).",
     "solutionSteps": [
       {
-        "explanation": "Write the denominator using its reciprocal identity.",
-        "workingOut": "\\frac{\\sin x}{1/\\sin x}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\sin x}{1/\\sin x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply by the reciprocal.",
-        "workingOut": "= \\sin^2 x"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\sin^2 x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "sin^2 x",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: sin^2 x. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "sin^2 x",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q10b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cos y}{\\sec y}\\).",
-    "a": "cos^2 y",
-    "h": "Recall sec(y) = 1/cos(y).",
-    "s": "We have \\(\\frac{\\cos y}{\\sec y} = \\frac{\\cos y}{1/\\cos y} = \\cos^2 y\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cos y}{\\sec y}\\).",
+    "opts": [
+      "cos^2 y",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Recall sec(y) = 1/cos(y).",
+    "solution": "We have \\(\\frac{\\cos y}{\\sec y} = \\frac{\\cos y}{1/\\cos y} = \\cos^2 y\\).",
     "solutionSteps": [
       {
-        "explanation": "Write the denominator using its reciprocal identity.",
-        "workingOut": "\\frac{\\cos y}{1/\\cos y}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\cos y}{1/\\cos y}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Multiply by the reciprocal.",
-        "workingOut": "= \\cos^2 y"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\cos^2 y\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cos^2 y",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cos^2 y. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cos^2 y",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q10c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cot z}{\\csc z}\\).",
-    "a": "cos z",
-    "h": "Convert both terms to sines and cosines.",
-    "s": "We have \\(\\cot z = \\frac{\\cos z}{\\sin z}\\) and \\(\\csc z = \\frac{1}{\\sin z}\\). Thus, \\(\\frac{\\cot z}{\\csc z} = \\frac{\\cos z / \\sin z}{1/\\sin z} = \\cos z\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\cot z}{\\csc z}\\).",
+    "opts": [
+      "cos z",
+      "The opposite of this statement is true.",
+      "This is true only when the function is linear.",
+      "This only holds for positive values of x."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Convert both terms to sines and cosines.",
+    "solution": "We have \\(\\cot z = \\frac{\\cos z}{\\sin z}\\) and \\(\\csc z = \\frac{1}{\\sin z}\\). Thus, \\(\\frac{\\cot z}{\\csc z} = \\frac{\\cos z / \\sin z}{1/\\sin z} = \\cos z\\).",
     "solutionSteps": [
       {
-        "explanation": "Convert cotangent and cosecant.",
-        "workingOut": "\\frac{\\cos z / \\sin z}{1/\\sin z}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\cos z / \\sin z}{1/\\sin z}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel the sine terms.",
-        "workingOut": "= \\cos z"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\cos z\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "cos z",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: cos z. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "cos z",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q10d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\tan \\theta}{\\sec \\theta}\\).",
-    "a": "\\sin \\theta",
-    "h": "Convert both terms to sines and cosines.",
-    "s": "We have \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\) and \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\). Thus, \\(\\frac{\\tan \\theta}{\\sec \\theta} = \\frac{\\sin \\theta / \\cos \\theta}{1/\\cos \\theta} = \\sin \\theta\\).",
+    "question": "Use reciprocal and ratio identities to simplify: \\(\\frac{\\tan \\theta}{\\sec \\theta}\\).",
+    "opts": [
+      "\\(-\\sin \\theta\\)",
+      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(\\sin \\theta\\)",
+      "\\(\\sin \\theta + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "Convert both terms to sines and cosines.",
+    "solution": "We have \\(\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}\\) and \\(\\sec \\theta = \\frac{1}{\\cos \\theta}\\). Thus, \\(\\frac{\\tan \\theta}{\\sec \\theta} = \\frac{\\sin \\theta / \\cos \\theta}{1/\\cos \\theta} = \\sin \\theta\\).",
     "solutionSteps": [
       {
-        "explanation": "Convert tangent and secant.",
-        "workingOut": "\\frac{\\sin \\theta / \\cos \\theta}{1/\\cos \\theta}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\frac{\\sin \\theta / \\cos \\theta}{1/\\cos \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel the cosine terms.",
-        "workingOut": "= \\sin \\theta"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\sin \\theta\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(\\sin \\theta\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\sin \\theta. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(\\sin \\theta\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y11a-6f-q11a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\((1 - \\cos x)(1 + \\cos x) = \\sin^2 x\\).",
-    "a": "LHS = 1 - cos^2 x = sin^2 x = RHS",
-    "h": "Expand the left-hand side first.",
-    "s": "LHS: \\((1 - \\cos x)(1 + \\cos x) = 1 - \\cos^2 x = \\sin^2 x = \\text{RHS}\\).",
+    "question": "Prove the identity: \\((1 - \\cos x)(1 + \\cos x) = \\sin^2 x\\).",
+    "answer": "LHS = 1 - cos^2 x = sin^2 x = RHS",
+    "hint": "Expand the left-hand side first.",
+    "solution": "LHS = 1 - cos^2 x = sin^2 x = RHS",
     "solutionSteps": [
       {
-        "explanation": "Expand the left-hand side as a difference of squares.",
-        "workingOut": "\\text{LHS} = 1 - \\cos^2 x"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = 1 - \\cos^2 x\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the Pythagorean identity \\(1 - \\cos^2 x = \\sin^2 x\\).",
-        "workingOut": "= \\sin^2 x = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\sin^2 x = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = 1 - cos^2 x = sin^2 x = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = 1 - cos^2 x = sin^2 x = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = 1 - cos^2 x = sin^2 x = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\((1 + \\tan^2 \\theta) \\cos^2 \\theta = 1\\).",
-    "a": "LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS",
-    "h": "Use the identity 1 + tan^2 \\theta = sec^2 \\theta.",
-    "s": "LHS: \\((1 + \\tan^2 \\theta) \\cos^2 \\theta = \\sec^2 \\theta \\cos^2 \\theta = 1 = \\text{RHS}\\).",
+    "question": "Prove the identity: \\((1 + \\tan^2 \\theta) \\cos^2 \\theta = 1\\).",
+    "answer": "LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS",
+    "hint": "Use the identity 1 + tan^2 \\theta = sec^2 \\theta.",
+    "solution": "LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Use the identity \\(1 + \\tan^2 \\theta = \\sec^2 \\theta\\).",
-        "workingOut": "\\text{LHS} = \\sec^2 \\theta \\cos^2 \\theta"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sec^2 \\theta \\cos^2 \\theta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Express secant squared as reciprocal of cosine squared.",
-        "workingOut": "= \\left(\\frac{1}{\\cos^2 \\theta}\\right) \\cos^2 \\theta = 1 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\left(\\frac{1}{\\cos^2 \\theta}\\right) \\cos^2 \\theta = 1 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = sec^2 \\theta * cos^2 \\theta = 1 = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\((\\sin y - \\cos y)^2 = 1 - 2 \\sin y \\cos y\\).",
-    "a": "LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS",
-    "h": "Expand the squared binomial.",
-    "s": "LHS: \\((\\sin y - \\cos y)^2 = \\sin^2 y - 2 \\sin y \\cos y + \\cos^2 y = (\\sin^2 y + \\cos^2 y) - 2 \\sin y \\cos y = 1 - 2 \\sin y \\cos y = \\text{RHS}\\).",
+    "question": "Prove the identity: \\((\\sin y - \\cos y)^2 = 1 - 2 \\sin y \\cos y\\).",
+    "answer": "LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS",
+    "hint": "Expand the squared binomial.",
+    "solution": "LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS",
     "solutionSteps": [
       {
-        "explanation": "Expand the square.",
-        "workingOut": "\\text{LHS} = \\sin^2 y - 2 \\sin y \\cos y + \\cos^2 y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sin^2 y - 2 \\sin y \\cos y + \\cos^2 y\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange and use the identity \\(\\sin^2 y + \\cos^2 y = 1\\).",
-        "workingOut": "= (\\sin^2 y + \\cos^2 y) - 2 \\sin y \\cos y = 1 - 2 \\sin y \\cos y = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= (\\sin^2 y + \\cos^2 y) - 2 \\sin y \\cos y = 1 - 2 \\sin y \\cos y = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = sin^2 y - 2 sin y cos y + cos^2 y = (sin^2 y + cos^2 y) - 2 sin y cos y = 1 - 2 sin y cos y = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\cos^2 \\alpha - \\sin^2 \\alpha = 2 \\cos^2 \\alpha - 1\\).",
-    "a": "LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS",
-    "h": "Use the identity sin^2 \\alpha = 1 - cos^2 \\alpha.",
-    "s": "LHS: \\(\\cos^2 \\alpha - \\sin^2 \\alpha = \\cos^2 \\alpha - (1 - \\cos^2 \\alpha) = 2 \\cos^2 \\alpha - 1 = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\cos^2 \\alpha - \\sin^2 \\alpha = 2 \\cos^2 \\alpha - 1\\).",
+    "answer": "LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS",
+    "hint": "Use the identity sin^2 \\alpha = 1 - cos^2 \\alpha.",
+    "solution": "LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(\\sin^2 \\alpha = 1 - \\cos^2 \\alpha\\).",
-        "workingOut": "\\text{LHS} = \\cos^2 \\alpha - (1 - \\cos^2 \\alpha)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\cos^2 \\alpha - (1 - \\cos^2 \\alpha)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the expression.",
-        "workingOut": "= \\cos^2 \\alpha - 1 + \\cos^2 \\alpha = 2 \\cos^2 \\alpha - 1 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\cos^2 \\alpha - 1 + \\cos^2 \\alpha = 2 \\cos^2 \\alpha - 1 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = cos^2 \\alpha - (1 - cos^2 \\alpha) = 2 cos^2 \\alpha - 1 = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11e",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\cot^2 z \\sin^2 z + \\tan^2 z \\cos^2 z = 1\\).",
-    "a": "LHS = (cos^2 z / sin^2 z) * sin^2 z + (sin^2 z / cos^2 z) * cos^2 z = cos^2 z + sin^2 z = 1 = RHS",
-    "h": "Express cotangent and tangent in terms of sine and cosine.",
-    "s": "LHS: \\(\\cot^2 z \\sin^2 z + \\tan^2 z \\cos^2 z = \\frac{\\cos^2 z}{\\sin^2 z} \\sin^2 z + \\frac{\\sin^2 z}{\\cos^2 z} \\cos^2 z = \\cos^2 z + \\sin^2 z = 1 = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\cot^2 z \\sin^2 z + \\tan^2 z \\cos^2 z = 1\\).",
+    "answer": "LHS = (cos^2 z / sin^2 z) * sin^2 z + (sin^2 z / cos^2 z) * cos^2 z = cos^2 z + sin^2 z = 1 = RHS",
+    "hint": "Express cotangent and tangent in terms of sine and cosine.",
+    "solution": "LHS = (cos^2 z / sin^2 z) * sin^2 z + (sin^2 z / cos^2 z) * cos^2 z = cos^2 z + sin^2 z = 1 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute cotangent and tangent with quotient identities.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{\\cos^2 z}{\\sin^2 z}\\right) \\sin^2 z + \\left(\\frac{\\sin^2 z}{\\cos^2 z}\\right) \\cos^2 z"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{\\cos^2 z}{\\sin^2 z}\\right) \\sin^2 z + \\left(\\frac{\\sin^2 z}{\\cos^2 z}\\right) \\cos^2 z\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the fractions.",
-        "workingOut": "= \\cos^2 z + \\sin^2 z"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\cos^2 z + \\sin^2 z\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the Pythagorean identity.",
-        "workingOut": "= 1 = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= 1 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (cos^2 z / sin^2 z) * sin^2 z + (sin^2 z / cos^2 z) * cos^2 z = cos^2 z + sin^2 z = 1 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (cos^2 z / sin^2 z) * sin^2 z + (sin^2 z / cos^2 z) * cos^2 z = cos^2 z + sin^2 z = 1 = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11f",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(4 \\cos^2 \\beta - 3 = 1 - 4 \\sin^2 \\beta\\).",
-    "a": "LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS",
-    "h": "Substitute cos^2 \\beta = 1 - sin^2 \\beta.",
-    "s": "LHS: \\(4 \\cos^2 \\beta - 3 = 4(1 - \\sin^2 \\beta) - 3 = 4 - 4 \\sin^2 \\beta - 3 = 1 - 4 \\sin^2 \\beta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(4 \\cos^2 \\beta - 3 = 1 - 4 \\sin^2 \\beta\\).",
+    "answer": "LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS",
+    "hint": "Substitute cos^2 \\beta = 1 - sin^2 \\beta.",
+    "solution": "LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(\\cos^2 \\beta = 1 - \\sin^2 \\beta\\) into the LHS.",
-        "workingOut": "\\text{LHS} = 4(1 - \\sin^2 \\beta) - 3"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = 4(1 - \\sin^2 \\beta) - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand and collect terms.",
-        "workingOut": "= 4 - 4 \\sin^2 \\beta - 3 = 1 - 4 \\sin^2 \\beta = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 4 - 4 \\sin^2 \\beta - 3 = 1 - 4 \\sin^2 \\beta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = 4(1 - sin^2 \\beta) - 3 = 4 - 4 sin^2 \\beta - 3 = 1 - 4 sin^2 \\beta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11g",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(3 \\tan^2 A - 2 = 3 \\sec^2 A - 5\\).",
-    "a": "LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS",
-    "h": "Use the identity tan^2 A = sec^2 A - 1.",
-    "s": "LHS: \\(3 \\tan^2 A - 2 = 3(\\sec^2 A - 1) - 2 = 3 \\sec^2 A - 3 - 2 = 3 \\sec^2 A - 5 = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(3 \\tan^2 A - 2 = 3 \\sec^2 A - 5\\).",
+    "answer": "LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS",
+    "hint": "Use the identity tan^2 A = sec^2 A - 1.",
+    "solution": "LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(\\tan^2 A = \\sec^2 A - 1\\) into the LHS.",
-        "workingOut": "\\text{LHS} = 3(\\sec^2 A - 1) - 2"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = 3(\\sec^2 A - 1) - 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand and simplify.",
-        "workingOut": "= 3 \\sec^2 A - 3 - 2 = 3 \\sec^2 A - 5 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 3 \\sec^2 A - 3 - 2 = 3 \\sec^2 A - 5 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = 3(sec^2 A - 1) - 2 = 3 sec^2 A - 3 - 2 = 3 sec^2 A - 5 = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11h",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(1 - \\cot^2 \\phi + \\csc^2 \\phi = 2\\).",
-    "a": "LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS",
-    "h": "Recall the identity csc^2 \\phi - cot^2 \\phi = 1.",
-    "s": "LHS: \\(1 - \\cot^2 \\phi + \\csc^2 \\phi = 1 + (\\csc^2 \\phi - \\cot^2 \\phi)\\). Since \\(\\csc^2 \\phi - \\cot^2 \\phi = 1\\), this is \\(1 + 1 = 2 = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(1 - \\cot^2 \\phi + \\csc^2 \\phi = 2\\).",
+    "answer": "LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS",
+    "hint": "Recall the identity csc^2 \\phi - cot^2 \\phi = 1.",
+    "solution": "LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS",
     "solutionSteps": [
       {
-        "explanation": "Rearrange the LHS.",
-        "workingOut": "\\text{LHS} = 1 + \\csc^2 \\phi - \\cot^2 \\phi"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = 1 + \\csc^2 \\phi - \\cot^2 \\phi\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the identity \\(\\csc^2 \\phi - \\cot^2 \\phi = 1\\).",
-        "workingOut": "= 1 + 1 = 2 = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1 + 1 = 2 = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = 1 + (csc^2 \\phi - cot^2 \\phi) = 1 + 1 = 2 = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11i",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\sin^4 x + \\sin^2 x \\cos^2 x = \\sin^2 x\\).",
-    "a": "LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS",
-    "h": "Factor out sin^2 x.",
-    "s": "LHS: \\(\\sin^4 x + \\sin^2 x \\cos^2 x = \\sin^2 x(\\sin^2 x + \\cos^2 x) = \\sin^2 x(1) = \\sin^2 x = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\sin^4 x + \\sin^2 x \\cos^2 x = \\sin^2 x\\).",
+    "answer": "LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS",
+    "hint": "Factor out sin^2 x.",
+    "solution": "LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS",
     "solutionSteps": [
       {
-        "explanation": "Factor out the common term \\(\\sin^2 x\\) from the LHS.",
-        "workingOut": "\\text{LHS} = \\sin^2 x (\\sin^2 x + \\cos^2 x)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sin^2 x (\\sin^2 x + \\cos^2 x)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the Pythagorean identity.",
-        "workingOut": "= \\sin^2 x (1) = \\sin^2 x = \\text{RHS}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\sin^2 x (1) = \\sin^2 x = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = sin^2 x (sin^2 x + cos^2 x) = sin^2 x (1) = sin^2 x = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q11j",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\tan y(\\csc^2 y - 1) = \\cot y\\).",
-    "a": "LHS = tan y * cot^2 y = 1 / cot y * cot^2 y = cot y = RHS",
-    "h": "Use the identity csc^2 y - 1 = cot^2 y.",
-    "s": "LHS: \\(\\tan y(\\csc^2 y - 1) = \\tan y \\cot^2 y\\). Since \\(\\tan y = \\frac{1}{\\cot y}\\), we have \\(\\frac{1}{\\cot y} \\cot^2 y = \\cot y = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\tan y(\\csc^2 y - 1) = \\cot y\\).",
+    "answer": "LHS = tan y * cot^2 y = 1 / cot y * cot^2 y = cot y = RHS",
+    "hint": "Use the identity csc^2 y - 1 = cot^2 y.",
+    "solution": "LHS = tan y * cot^2 y = 1 / cot y * cot^2 y = cot y = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute \\(\\csc^2 y - 1 = \\cot^2 y\\).",
-        "workingOut": "\\text{LHS} = \\tan y \\cot^2 y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\tan y \\cot^2 y\\)",
+        "graphData": null
       },
       {
-        "explanation": "Write tangent as one over cotangent.",
-        "workingOut": "= \\left(\\frac{1}{\\cot y}\\right) \\cot^2 y"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\left(\\frac{1}{\\cot y}\\right) \\cot^2 y\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify to obtain RHS.",
-        "workingOut": "= \\cot y = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\cot y = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = tan y * cot^2 y = 1 / cot y * cot^2 y = cot y = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = tan y * cot^2 y = 1 / cot y * cot^2 y = cot y = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\tan x \\csc x = \\sec x\\).",
-    "a": "LHS = (sin x / cos x) * (1 / sin x) = 1 / cos x = sec x = RHS",
-    "h": "Rewrite terms in sine and cosine.",
-    "s": "LHS: \\(\\tan x \\csc x = \\frac{\\sin x}{\\cos x} \\times \\frac{1}{\\sin x} = \\frac{1}{\\cos x} = \\sec x = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\tan x \\csc x = \\sec x\\).",
+    "answer": "LHS = (sin x / cos x) * (1 / sin x) = 1 / cos x = sec x = RHS",
+    "hint": "Rewrite terms in sine and cosine.",
+    "solution": "LHS = (sin x / cos x) * (1 / sin x) = 1 / cos x = sec x = RHS",
     "solutionSteps": [
       {
-        "explanation": "Convert tangent and cosecant to sines and cosines.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{\\sin x}{\\cos x}\\right) \\left(\\frac{1}{\\sin x}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{\\sin x}{\\cos x}\\right) \\left(\\frac{1}{\\sin x}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the expression.",
-        "workingOut": "= \\frac{1}{\\cos x}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{1}{\\cos x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the reciprocal identity.",
-        "workingOut": "= \\sec x = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\sec x = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (sin x / cos x) * (1 / sin x) = 1 / cos x = sec x = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (sin x / cos x) * (1 / sin x) = 1 / cos x = sec x = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\cot y \\sec y = \\csc y\\).",
-    "a": "LHS = (cos y / sin y) * (1 / cos y) = 1 / cos y = csc y = RHS",
-    "h": "Rewrite terms in sine and cosine.",
-    "s": "LHS: \\(\\cot y \\sec y = \\frac{\\cos y}{\\sin y} \\times \\frac{1}{\\cos y} = \\frac{1}{\\sin y} = \\csc y = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\cot y \\sec y = \\csc y\\).",
+    "answer": "LHS = (cos y / sin y) * (1 / cos y) = 1 / cos y = csc y = RHS",
+    "hint": "Rewrite terms in sine and cosine.",
+    "solution": "LHS = (cos y / sin y) * (1 / cos y) = 1 / cos y = csc y = RHS",
     "solutionSteps": [
       {
-        "explanation": "Convert cotangent and secant.",
-        "workingOut": "\\text{LHS} = \\left(\\frac{\\cos y}{\\sin y}\\right) \\left(\\frac{1}{\\cos y}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\left(\\frac{\\cos y}{\\sin y}\\right) \\left(\\frac{1}{\\cos y}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify.",
-        "workingOut": "= \\frac{1}{\\sin y}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{1}{\\sin y}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the reciprocal identity.",
-        "workingOut": "= \\csc y = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\csc y = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (cos y / sin y) * (1 / cos y) = 1 / cos y = csc y = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = (cos y / sin y) * (1 / cos y) = 1 / cos y = csc y = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\csc^2 \\theta + \\sec^2 \\theta = \\csc^2 \\theta \\sec^2 \\theta\\).",
-    "a": "LHS = 1/sin^2 \\theta + 1/cos^2 \\theta = (cos^2 \\theta + sin^2 \\theta)/(sin^2 \\theta * cos^2 \\theta) = 1/(sin^2 \\theta * cos^2 \\theta) = csc^2 \\theta * sec^2 \\theta = RHS",
-    "h": "Find a common denominator.",
-    "s": "LHS: \\(\\frac{1}{\\sin^2 \\theta} + \\frac{1}{\\cos^2 \\theta} = \\frac{\\cos^2 \\theta + \\sin^2 \\theta}{\\sin^2 \\theta \\cos^2 \\theta} = \\frac{1}{\\sin^2 \\theta \\cos^2 \\theta} = \\csc^2 \\theta \\sec^2 \\theta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\csc^2 \\theta + \\sec^2 \\theta = \\csc^2 \\theta \\sec^2 \\theta\\).",
+    "answer": "LHS = 1/sin^2 \\theta + 1/cos^2 \\theta = (cos^2 \\theta + sin^2 \\theta)/(sin^2 \\theta * cos^2 \\theta) = 1/(sin^2 \\theta * cos^2 \\theta) = csc^2 \\theta * sec^2 \\theta = RHS",
+    "hint": "Find a common denominator.",
+    "solution": "LHS = 1/sin^2 \\theta + 1/cos^2 \\theta = (cos^2 \\theta + sin^2 \\theta)/(sin^2 \\theta * cos^2 \\theta) = 1/(sin^2 \\theta * cos^2 \\theta) = csc^2 \\theta * sec^2 \\theta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Rewrite the LHS using sines and cosines.",
-        "workingOut": "\\text{LHS} = \\frac{1}{\\sin^2 \\theta} + \\frac{1}{\\cos^2 \\theta}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{1}{\\sin^2 \\theta} + \\frac{1}{\\cos^2 \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine the fractions using a common denominator.",
-        "workingOut": "= \\frac{\\cos^2 \\theta + \\sin^2 \\theta}{\\sin^2 \\theta \\cos^2 \\theta}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\cos^2 \\theta + \\sin^2 \\theta}{\\sin^2 \\theta \\cos^2 \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the Pythagorean identity in the numerator.",
-        "workingOut": "= \\frac{1}{\\sin^2 \\theta \\cos^2 \\theta}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{1}{\\sin^2 \\theta \\cos^2 \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Express as product of reciprocal functions.",
-        "workingOut": "= \\csc^2 \\theta \\sec^2 \\theta = \\text{RHS}"
+        "explanation": "Final answer: LHS = 1/sin^2 \\theta + 1/cos^2 \\theta = (cos^2 \\theta + sin^2 \\theta)/(sin^2 \\theta * cos^2 \\theta) = 1/(sin^2 \\theta * cos^2 \\theta) = csc^2 \\theta * sec^2 \\theta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = 1/sin^2 \\theta + 1/cos^2 \\theta = (cos^2 \\theta + sin^2 \\theta)/(sin^2 \\theta * cos^2 \\theta) = 1/(sin^2 \\theta * cos^2 \\theta) = csc^2 \\theta * sec^2 \\theta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\tan \\alpha + \\cot \\alpha = \\csc \\alpha \\sec \\alpha\\).",
-    "a": "LHS = sin \\alpha / cos \\alpha + cos \\alpha / sin \\alpha = (sin^2 \\alpha + cos^2 \\alpha)/(sin \\alpha * cos \\alpha) = 1/(sin \\alpha * cos \\alpha) = csc \\alpha * sec \\alpha = RHS",
-    "h": "Write in sine and cosine and find a common denominator.",
-    "s": "LHS: \\(\\frac{\\sin \\alpha}{\\cos \\alpha} + \\frac{\\cos \\alpha}{\\sin \\alpha} = \\frac{\\sin^2 \\alpha + \\cos^2 \\alpha}{\\sin \\alpha \\cos \\alpha} = \\frac{1}{\\sin \\alpha \\cos \\alpha} = \\csc \\alpha \\sec \\alpha = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\tan \\alpha + \\cot \\alpha = \\csc \\alpha \\sec \\alpha\\).",
+    "answer": "LHS = sin \\alpha / cos \\alpha + cos \\alpha / sin \\alpha = (sin^2 \\alpha + cos^2 \\alpha)/(sin \\alpha * cos \\alpha) = 1/(sin \\alpha * cos \\alpha) = csc \\alpha * sec \\alpha = RHS",
+    "hint": "Write in sine and cosine and find a common denominator.",
+    "solution": "LHS = sin \\alpha / cos \\alpha + cos \\alpha / sin \\alpha = (sin^2 \\alpha + cos^2 \\alpha)/(sin \\alpha * cos \\alpha) = 1/(sin \\alpha * cos \\alpha) = csc \\alpha * sec \\alpha = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express terms in sines and cosines.",
-        "workingOut": "\\text{LHS} = \\frac{\\sin \\alpha}{\\cos \\alpha} + \\frac{\\cos \\alpha}{\\sin \\alpha}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{\\sin \\alpha}{\\cos \\alpha} + \\frac{\\cos \\alpha}{\\sin \\alpha}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine using a common denominator.",
-        "workingOut": "= \\frac{\\sin^2 \\alpha + \\cos^2 \\alpha}{\\sin \\alpha \\cos \\alpha}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\sin^2 \\alpha + \\cos^2 \\alpha}{\\sin \\alpha \\cos \\alpha}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use Pythagorean identity and split the fraction.",
-        "workingOut": "= \\frac{1}{\\sin \\alpha \\cos \\alpha} = \\csc \\alpha \\sec \\alpha = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{1}{\\sin \\alpha \\cos \\alpha} = \\csc \\alpha \\sec \\alpha = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin \\alpha / cos \\alpha + cos \\alpha / sin \\alpha = (sin^2 \\alpha + cos^2 \\alpha)/(sin \\alpha * cos \\alpha) = 1/(sin \\alpha * cos \\alpha) = csc \\alpha * sec \\alpha = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = sin \\alpha / cos \\alpha + cos \\alpha / sin \\alpha = (sin^2 \\alpha + cos^2 \\alpha)/(sin \\alpha * cos \\alpha) = 1/(sin \\alpha * cos \\alpha) = csc \\alpha * sec \\alpha = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12e",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\csc \\beta - \\sin \\beta = \\cos \\beta \\cot \\beta\\).",
-    "a": "LHS = 1/sin \\beta - sin \\beta = (1 - sin^2 \\beta)/sin \\beta = cos^2 \\beta / sin \\beta = cos \\beta * (cos \\beta / sin \\beta) = cos \\beta * cot \\beta = RHS",
-    "h": "Express cosec as 1/sin.",
-    "s": "LHS: \\(\\frac{1}{\\sin \\beta} - \\sin \\beta = \\frac{1 - \\sin^2 \\beta}{\\sin \\beta} = \\frac{\\cos^2 \\beta}{\\sin \\beta} = \\cos \\beta \\left(\\frac{\\cos \\beta}{\\sin \\beta}\\right) = \\cos \\beta \\cot \\beta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\csc \\beta - \\sin \\beta = \\cos \\beta \\cot \\beta\\).",
+    "answer": "LHS = 1/sin \\beta - sin \\beta = (1 - sin^2 \\beta)/sin \\beta = cos^2 \\beta / sin \\beta = cos \\beta * (cos \\beta / sin \\beta) = cos \\beta * cot \\beta = RHS",
+    "hint": "Express cosec as 1/sin.",
+    "solution": "LHS = 1/sin \\beta - sin \\beta = (1 - sin^2 \\beta)/sin \\beta = cos^2 \\beta / sin \\beta = cos \\beta * (cos \\beta / sin \\beta) = cos \\beta * cot \\beta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express cosecant as reciprocal of sine.",
-        "workingOut": "\\text{LHS} = \\frac{1}{\\sin \\beta} - \\sin \\beta"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{1}{\\sin \\beta} - \\sin \\beta\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine terms over a single denominator.",
-        "workingOut": "= \\frac{1 - \\sin^2 \\beta}{\\sin \\beta}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{1 - \\sin^2 \\beta}{\\sin \\beta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use \\(1 - \\sin^2 \\beta = \\cos^2 \\beta\\).",
-        "workingOut": "= \\frac{\\cos^2 \\beta}{\\sin \\beta}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{\\cos^2 \\beta}{\\sin \\beta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange to isolate cotangent.",
-        "workingOut": "= \\cos \\beta \\left(\\frac{\\cos \\beta}{\\sin \\beta}\\right) = \\cos \\beta \\cot \\beta = \\text{RHS}"
+        "explanation": "Final answer: LHS = 1/sin \\beta - sin \\beta = (1 - sin^2 \\beta)/sin \\beta = cos^2 \\beta / sin \\beta = cos \\beta * (cos \\beta / sin \\beta) = cos \\beta * cot \\beta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = 1/sin \\beta - sin \\beta = (1 - sin^2 \\beta)/sin \\beta = cos^2 \\beta / sin \\beta = cos \\beta * (cos \\beta / sin \\beta) = cos \\beta * cot \\beta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q12f",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 90,
-    "q": "Prove the identity: \\(\\sec \\phi - \\cos \\phi = \\tan \\phi \\sin \\phi\\).",
-    "a": "LHS = 1/cos \\phi - cos \\phi = (1 - cos^2 \\phi)/cos \\phi = sin^2 \\phi / cos \\phi = (sin \\phi / cos \\phi) * sin \\phi = tan \\phi * sin \\phi = RHS",
-    "h": "Express sec as 1/cos.",
-    "s": "LHS: \\(\\frac{1}{\\cos \\phi} - \\cos \\phi = \\frac{1 - \\cos^2 \\phi}{\\cos \\phi} = \\frac{\\sin^2 \\phi}{\\cos \\phi} = \\left(\\frac{\\sin \\phi}{\\cos \\phi}\\right) \\sin \\phi = \\tan \\phi \\sin \\phi = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\sec \\phi - \\cos \\phi = \\tan \\phi \\sin \\phi\\).",
+    "answer": "LHS = 1/cos \\phi - cos \\phi = (1 - cos^2 \\phi)/cos \\phi = sin^2 \\phi / cos \\phi = (sin \\phi / cos \\phi) * sin \\phi = tan \\phi * sin \\phi = RHS",
+    "hint": "Express sec as 1/cos.",
+    "solution": "LHS = 1/cos \\phi - cos \\phi = (1 - cos^2 \\phi)/cos \\phi = sin^2 \\phi / cos \\phi = (sin \\phi / cos \\phi) * sin \\phi = tan \\phi * sin \\phi = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express secant as reciprocal of cosine.",
-        "workingOut": "\\text{LHS} = \\frac{1}{\\cos \\phi} - \\cos \\phi"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{1}{\\cos \\phi} - \\cos \\phi\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine terms over a single denominator.",
-        "workingOut": "= \\frac{1 - \\cos^2 \\phi}{\\cos \\phi}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{1 - \\cos^2 \\phi}{\\cos \\phi}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use \\(1 - \\cos^2 \\phi = \\sin^2 \\phi\\).",
-        "workingOut": "= \\frac{\\sin^2 \\phi}{\\cos \\phi}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{\\sin^2 \\phi}{\\cos \\phi}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Separate into tangent and sine.",
-        "workingOut": "= \\left(\\frac{\\sin \\phi}{\\cos \\phi}\\right) \\sin \\phi = \\tan \\phi \\sin \\phi = \\text{RHS}"
+        "explanation": "Final answer: LHS = 1/cos \\phi - cos \\phi = (1 - cos^2 \\phi)/cos \\phi = sin^2 \\phi / cos \\phi = (sin \\phi / cos \\phi) * sin \\phi = tan \\phi * sin \\phi = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = 1/cos \\phi - cos \\phi = (1 - cos^2 \\phi)/cos \\phi = sin^2 \\phi / cos \\phi = (sin \\phi / cos \\phi) * sin \\phi = tan \\phi * sin \\phi = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13a",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\cos x \\sin x \\sec^2 x = \\tan x\\).",
-    "a": "LHS = cos x * sin x * (1 / cos^2 x) = sin x / cos x = tan x = RHS",
-    "h": "Express secant squared in terms of cosine squared.",
-    "s": "LHS: \\(\\cos x \\sin x \\sec^2 x = \\cos x \\sin x \\left(\\frac{1}{\\cos^2 x}\\right) = \\frac{\\sin x}{\\cos x} = \\tan x = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\cos x \\sin x \\sec^2 x = \\tan x\\).",
+    "answer": "LHS = cos x * sin x * (1 / cos^2 x) = sin x / cos x = tan x = RHS",
+    "hint": "Express secant squared in terms of cosine squared.",
+    "solution": "LHS = cos x * sin x * (1 / cos^2 x) = sin x / cos x = tan x = RHS",
     "solutionSteps": [
       {
-        "explanation": "Rewrite secant squared using the reciprocal identity.",
-        "workingOut": "\\text{LHS} = \\cos x \\sin x \\left(\\frac{1}{\\cos^2 x}\\right)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\cos x \\sin x \\left(\\frac{1}{\\cos^2 x}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel the cosine terms.",
-        "workingOut": "= \\frac{\\sin x}{\\cos x}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\sin x}{\\cos x}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the quotient identity.",
-        "workingOut": "= \\tan x = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\tan x = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = cos x * sin x * (1 / cos^2 x) = sin x / cos x = tan x = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = cos x * sin x * (1 / cos^2 x) = sin x / cos x = tan x = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13b",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\((\\sin y + \\tan y) \\csc y = 1 + \\sec y\\).",
-    "a": "LHS = sin y * csc y + tan y * csc y = 1 + (sin y / cos y) * (1 / sin y) = 1 + 1 / cos y = 1 + sec y = RHS",
-    "h": "Distribute csc y first.",
-    "s": "LHS: \\(\\sin y \\csc y + \\tan y \\csc y = 1 + \\left(\\frac{\\sin y}{\\cos y}\\right)\\left(\\frac{1}{\\sin y}\\right) = 1 + \\frac{1}{\\cos y} = 1 + \\sec y = \\text{RHS}\\).",
+    "question": "Prove the identity: \\((\\sin y + \\tan y) \\csc y = 1 + \\sec y\\).",
+    "answer": "LHS = sin y * csc y + tan y * csc y = 1 + (sin y / cos y) * (1 / sin y) = 1 + 1 / cos y = 1 + sec y = RHS",
+    "hint": "Distribute csc y first.",
+    "solution": "LHS = sin y * csc y + tan y * csc y = 1 + (sin y / cos y) * (1 / sin y) = 1 + 1 / cos y = 1 + sec y = RHS",
     "solutionSteps": [
       {
-        "explanation": "Distribute cosecant to both terms inside the parentheses.",
-        "workingOut": "\\text{LHS} = \\sin y \\csc y + \\tan y \\csc y"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\sin y \\csc y + \\tan y \\csc y\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply reciprocal definitions and simplify.",
-        "workingOut": "= 1 + \\left(\\frac{\\sin y}{\\cos y}\\right) \\left(\\frac{1}{\\sin y}\\right)"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= 1 + \\left(\\frac{\\sin y}{\\cos y}\\right) \\left(\\frac{1}{\\sin y}\\right)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the fraction and use the secant reciprocal identity.",
-        "workingOut": "= 1 + \\frac{1}{\\cos y} = 1 + \\sec y = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= 1 + \\frac{1}{\\cos y} = 1 + \\sec y = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sin y * csc y + tan y * csc y = 1 + (sin y / cos y) * (1 / sin y) = 1 + 1 / cos y = 1 + sec y = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "LHS = sin y * csc y + tan y * csc y = 1 + (sin y / cos y) * (1 / sin y) = 1 + 1 / cos y = 1 + sec y = RHS",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13c",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\sin^4 \\theta - \\cos^4 \\theta = 1 - 2 \\cos^2 \\theta\\).",
-    "a": "LHS = (sin^2 \\theta - cos^2 \\theta)(sin^2 \\theta + cos^2 \\theta) = (sin^2 \\theta - cos^2 \\theta)(1) = (1 - cos^2 \\theta) - cos^2 \\theta = 1 - 2 cos^2 \\theta = RHS",
-    "h": "Factor LHS as a difference of squares.",
-    "s": "LHS: \\((\\sin^2 \\theta - \\cos^2 \\theta)(\\sin^2 \\theta + \\cos^2 \\theta) = (\\sin^2 \\theta - \\cos^2 \\theta)(1) = (1 - \\cos^2 \\theta) - \\cos^2 \\theta = 1 - 2 \\cos^2 \\theta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\sin^4 \\theta - \\cos^4 \\theta = 1 - 2 \\cos^2 \\theta\\).",
+    "answer": "LHS = (sin^2 \\theta - cos^2 \\theta)(sin^2 \\theta + cos^2 \\theta) = (sin^2 \\theta - cos^2 \\theta)(1) = (1 - cos^2 \\theta) - cos^2 \\theta = 1 - 2 cos^2 \\theta = RHS",
+    "hint": "Factor LHS as a difference of squares.",
+    "solution": "LHS = (sin^2 \\theta - cos^2 \\theta)(sin^2 \\theta + cos^2 \\theta) = (sin^2 \\theta - cos^2 \\theta)(1) = (1 - cos^2 \\theta) - cos^2 \\theta = 1 - 2 cos^2 \\theta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Factor LHS using difference of squares.",
-        "workingOut": "\\text{LHS} = (\\sin^2 \\theta - \\cos^2 \\theta)(\\sin^2 \\theta + \\cos^2 \\theta)"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = (\\sin^2 \\theta - \\cos^2 \\theta)(\\sin^2 \\theta + \\cos^2 \\theta)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use Pythagorean identity \\(\\sin^2 \\theta + \\cos^2 \\theta = 1\\).",
-        "workingOut": "= (\\sin^2 \\theta - \\cos^2 \\theta)(1)"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= (\\sin^2 \\theta - \\cos^2 \\theta)(1)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute \\(\\sin^2 \\theta = 1 - \\cos^2 \\theta\\).",
-        "workingOut": "= (1 - \\cos^2 \\theta) - \\cos^2 \\theta = 1 - 2 \\cos^2 \\theta = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= (1 - \\cos^2 \\theta) - \\cos^2 \\theta = 1 - 2 \\cos^2 \\theta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (sin^2 \\theta - cos^2 \\theta)(sin^2 \\theta + cos^2 \\theta) = (sin^2 \\theta - cos^2 \\theta)(1) = (1 - cos^2 \\theta) - cos^2 \\theta = 1 - 2 cos^2 \\theta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = (sin^2 \\theta - cos^2 \\theta)(sin^2 \\theta + cos^2 \\theta) = (sin^2 \\theta - cos^2 \\theta)(1) = (1 - cos^2 \\theta) - cos^2 \\theta = 1 - 2 cos^2 \\theta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13d",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\cos \\alpha + \\tan \\alpha \\sin \\alpha = \\sec \\alpha\\).",
-    "a": "LHS = cos \\alpha + (sin \\alpha / cos \\alpha) * sin \\alpha = cos \\alpha + sin^2 \\alpha / cos \\alpha = (cos^2 \\alpha + sin^2 \\alpha)/cos \\alpha = 1/cos \\alpha = sec \\alpha = RHS",
-    "h": "Express tangent in sine and cosine.",
-    "s": "LHS: \\(\\cos \\alpha + \\frac{\\sin^2 \\alpha}{\\cos \\alpha} = \\frac{\\cos^2 \\alpha + \\sin^2 \\alpha}{\\cos \\alpha} = \\frac{1}{\\cos \\alpha} = \\sec \\alpha = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\cos \\alpha + \\tan \\alpha \\sin \\alpha = \\sec \\alpha\\).",
+    "answer": "LHS = cos \\alpha + (sin \\alpha / cos \\alpha) * sin \\alpha = cos \\alpha + sin^2 \\alpha / cos \\alpha = (cos^2 \\alpha + sin^2 \\alpha)/cos \\alpha = 1/cos \\alpha = sec \\alpha = RHS",
+    "hint": "Express tangent in sine and cosine.",
+    "solution": "LHS = cos \\alpha + (sin \\alpha / cos \\alpha) * sin \\alpha = cos \\alpha + sin^2 \\alpha / cos \\alpha = (cos^2 \\alpha + sin^2 \\alpha)/cos \\alpha = 1/cos \\alpha = sec \\alpha = RHS",
     "solutionSteps": [
       {
-        "explanation": "Express tangent as sine over cosine.",
-        "workingOut": "\\text{LHS} = \\cos \\alpha + \\left(\\frac{\\sin \\alpha}{\\cos \\alpha}\\right) \\sin \\alpha"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\cos \\alpha + \\left(\\frac{\\sin \\alpha}{\\cos \\alpha}\\right) \\sin \\alpha\\)",
+        "graphData": null
       },
       {
-        "explanation": "Combine terms over a common denominator.",
-        "workingOut": "= \\frac{\\cos^2 \\alpha + \\sin^2 \\alpha}{\\cos \\alpha}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\cos^2 \\alpha + \\sin^2 \\alpha}{\\cos \\alpha}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute Pythagorean identity and take reciprocal.",
-        "workingOut": "= \\frac{1}{\\cos \\alpha} = \\sec \\alpha = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{1}{\\cos \\alpha} = \\sec \\alpha = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = cos \\alpha + (sin \\alpha / cos \\alpha) * sin \\alpha = cos \\alpha + sin^2 \\alpha / cos \\alpha = (cos^2 \\alpha + sin^2 \\alpha)/cos \\alpha = 1/cos \\alpha = sec \\alpha = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = cos \\alpha + (sin \\alpha / cos \\alpha) * sin \\alpha = cos \\alpha + sin^2 \\alpha / cos \\alpha = (cos^2 \\alpha + sin^2 \\alpha)/cos \\alpha = 1/cos \\alpha = sec \\alpha = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13e",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\frac{1 + \\tan^2 \\beta}{1 + \\cot^2 \\beta} = \\tan^2 \\beta\\).",
-    "a": "LHS = sec^2 \\beta / csc^2 \\beta = (1 / cos^2 \\beta) / (1 / sin^2 \\beta) = sin^2 \\beta / cos^2 \\beta = tan^2 \\beta = RHS",
-    "h": "Use Pythagorean identities for both numerator and denominator.",
-    "s": "LHS: \\(\\frac{\\sec^2 \\beta}{\\csc^2 \\beta} = \\frac{1/\\cos^2 \\beta}{1/\\sin^2 \\beta} = \\frac{\\sin^2 \\beta}{\\cos^2 \\beta} = \\tan^2 \\beta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\frac{1 + \\tan^2 \\beta}{1 + \\cot^2 \\beta} = \\tan^2 \\beta\\).",
+    "answer": "LHS = sec^2 \\beta / csc^2 \\beta = (1 / cos^2 \\beta) / (1 / sin^2 \\beta) = sin^2 \\beta / cos^2 \\beta = tan^2 \\beta = RHS",
+    "hint": "Use Pythagorean identities for both numerator and denominator.",
+    "solution": "LHS = sec^2 \\beta / csc^2 \\beta = (1 / cos^2 \\beta) / (1 / sin^2 \\beta) = sin^2 \\beta / cos^2 \\beta = tan^2 \\beta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Apply Pythagorean identities to numerator and denominator.",
-        "workingOut": "\\text{LHS} = \\frac{\\sec^2 \\beta}{\\csc^2 \\beta}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{\\sec^2 \\beta}{\\csc^2 \\beta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rewrite in terms of sines and cosines.",
-        "workingOut": "= \\frac{1/\\cos^2 \\beta}{1/\\sin^2 \\beta}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{1/\\cos^2 \\beta}{1/\\sin^2 \\beta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the fraction to get tangent squared.",
-        "workingOut": "= \\frac{\\sin^2 \\beta}{\\cos^2 \\beta} = \\tan^2 \\beta = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{\\sin^2 \\beta}{\\cos^2 \\beta} = \\tan^2 \\beta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = sec^2 \\beta / csc^2 \\beta = (1 / cos^2 \\beta) / (1 / sin^2 \\beta) = sin^2 \\beta / cos^2 \\beta = tan^2 \\beta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = sec^2 \\beta / csc^2 \\beta = (1 / cos^2 \\beta) / (1 / sin^2 \\beta) = sin^2 \\beta / cos^2 \\beta = tan^2 \\beta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13f",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\frac{1 + \\cot \\gamma}{1 + \\tan \\gamma} = \\cot \\gamma\\).",
-    "a": "LHS = (1 + 1/tan \\gamma)/(1 + tan \\gamma) = ((tan \\gamma + 1)/tan \\gamma)/(1 + tan \\gamma) = 1/tan \\gamma = cot \\gamma = RHS",
-    "h": "Express cotangent as 1/tan.",
-    "s": "LHS: \\(\\frac{1 + 1/\\tan \\gamma}{1 + \\tan \\gamma} = \\frac{\\frac{\\tan \\gamma + 1}{\\tan \\gamma}}{1 + \\tan \\gamma} = \\frac{1}{\\tan \\gamma} = \\cot \\gamma = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\frac{1 + \\cot \\gamma}{1 + \\tan \\gamma} = \\cot \\gamma\\).",
+    "answer": "LHS = (1 + 1/tan \\gamma)/(1 + tan \\gamma) = ((tan \\gamma + 1)/tan \\gamma)/(1 + tan \\gamma) = 1/tan \\gamma = cot \\gamma = RHS",
+    "hint": "Express cotangent as 1/tan.",
+    "solution": "LHS = (1 + 1/tan \\gamma)/(1 + tan \\gamma) = ((tan \\gamma + 1)/tan \\gamma)/(1 + tan \\gamma) = 1/tan \\gamma = cot \\gamma = RHS",
     "solutionSteps": [
       {
-        "explanation": "Substitute cotangent on LHS with one over tangent.",
-        "workingOut": "\\text{LHS} = \\frac{1 + 1/\\tan \\gamma}{1 + \\tan \\gamma}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{1 + 1/\\tan \\gamma}{1 + \\tan \\gamma}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the numerator fraction.",
-        "workingOut": "= \\frac{\\frac{\\tan \\gamma + 1}{\\tan \\gamma}}{1 + \\tan \\gamma}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{\\frac{\\tan \\gamma + 1}{\\tan \\gamma}}{1 + \\tan \\gamma}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Cancel the common factor \\(1 + \\tan \\gamma\\).",
-        "workingOut": "= \\frac{1}{\\tan \\gamma} = \\cot \\gamma = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{1}{\\tan \\gamma} = \\cot \\gamma = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = (1 + 1/tan \\gamma)/(1 + tan \\gamma) = ((tan \\gamma + 1)/tan \\gamma)/(1 + tan \\gamma) = 1/tan \\gamma = cot \\gamma = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = (1 + 1/tan \\gamma)/(1 + tan \\gamma) = ((tan \\gamma + 1)/tan \\gamma)/(1 + tan \\gamma) = 1/tan \\gamma = cot \\gamma = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13g",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\frac{1}{1 + \\cos \\phi} + \\frac{1}{1 - \\cos \\phi} = 2 \\csc^2 \\phi\\).",
-    "a": "LHS = ((1 - cos \\phi) + (1 + cos \\phi))/((1 + cos \\phi)(1 - cos \\phi)) = 2 / (1 - cos^2 \\phi) = 2 / sin^2 \\phi = 2 csc^2 \\phi = RHS",
-    "h": "Find a common denominator.",
-    "s": "LHS: \\(\\frac{(1 - \\cos \\phi) + (1 + \\cos \\phi)}{(1 + \\cos \\phi)(1 - \\cos \\phi)} = \\frac{2}{1 - \\cos^2 \\phi} = \\frac{2}{\\sin^2 \\phi} = 2 \\csc^2 \\phi = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\frac{1}{1 + \\cos \\phi} + \\frac{1}{1 - \\cos \\phi} = 2 \\csc^2 \\phi\\).",
+    "answer": "LHS = ((1 - cos \\phi) + (1 + cos \\phi))/((1 + cos \\phi)(1 - cos \\phi)) = 2 / (1 - cos^2 \\phi) = 2 / sin^2 \\phi = 2 csc^2 \\phi = RHS",
+    "hint": "Find a common denominator.",
+    "solution": "LHS = ((1 - cos \\phi) + (1 + cos \\phi))/((1 + cos \\phi)(1 - cos \\phi)) = 2 / (1 - cos^2 \\phi) = 2 / sin^2 \\phi = 2 csc^2 \\phi = RHS",
     "solutionSteps": [
       {
-        "explanation": "Find a common denominator to add the fractions.",
-        "workingOut": "\\text{LHS} = \\frac{(1 - \\cos \\phi) + (1 + \\cos \\phi)}{(1 + \\cos \\phi)(1 - \\cos \\phi)}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{(1 - \\cos \\phi) + (1 + \\cos \\phi)}{(1 + \\cos \\phi)(1 - \\cos \\phi)}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify the numerator and expand the denominator.",
-        "workingOut": "= \\frac{2}{1 - \\cos^2 \\phi}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{2}{1 - \\cos^2 \\phi}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the Pythagorean identity and rewrite as cosecant squared.",
-        "workingOut": "= \\frac{2}{\\sin^2 \\phi} = 2 \\csc^2 \\phi = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{2}{\\sin^2 \\phi} = 2 \\csc^2 \\phi = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = ((1 - cos \\phi) + (1 + cos \\phi))/((1 + cos \\phi)(1 - cos \\phi)) = 2 / (1 - cos^2 \\phi) = 2 / sin^2 \\phi = 2 csc^2 \\phi = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = ((1 - cos \\phi) + (1 + cos \\phi))/((1 + cos \\phi)(1 - cos \\phi)) = 2 / (1 - cos^2 \\phi) = 2 / sin^2 \\phi = 2 csc^2 \\phi = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y11a-6f-q13h",
+    "topicId": "y11a-6F",
     "c": "6F",
     "t": "Trigonometric identities",
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 120,
-    "q": "Prove the identity: \\(\\frac{1}{\\csc \\theta - \\cot \\theta} - \\frac{1}{\\csc \\theta + \\cot \\theta} = 2 \\cot \\theta\\).",
-    "a": "LHS = ((csc \\theta + cot \\theta) - (csc \\theta - cot \\theta))/(csc^2 \\theta - cot^2 \\theta) = 2 cot \\theta / 1 = 2 cot \\theta = RHS",
-    "h": "Find a common denominator and use csc^2 \\theta - cot^2 \\theta = 1.",
-    "s": "LHS: \\(\\frac{(\\csc \\theta + \\cot \\theta) - (\\csc \\theta - \\cot \\theta)}{(\\csc \\theta - \\cot \\theta)(\\csc \\theta + \\cot \\theta)} = \\frac{2 \\cot \\theta}{\\csc^2 \\theta - \\cot^2 \\theta} = \\frac{2 \\cot \\theta}{1} = 2 \\cot \\theta = \\text{RHS}\\).",
+    "question": "Prove the identity: \\(\\frac{1}{\\csc \\theta - \\cot \\theta} - \\frac{1}{\\csc \\theta + \\cot \\theta} = 2 \\cot \\theta\\).",
+    "answer": "LHS = ((csc \\theta + cot \\theta) - (csc \\theta - cot \\theta))/(csc^2 \\theta - cot^2 \\theta) = 2 cot \\theta / 1 = 2 cot \\theta = RHS",
+    "hint": "Find a common denominator and use csc^2 \\theta - cot^2 \\theta = 1.",
+    "solution": "LHS = ((csc \\theta + cot \\theta) - (csc \\theta - cot \\theta))/(csc^2 \\theta - cot^2 \\theta) = 2 cot \\theta / 1 = 2 cot \\theta = RHS",
     "solutionSteps": [
       {
-        "explanation": "Combine fractions using a common denominator.",
-        "workingOut": "\\text{LHS} = \\frac{(\\csc \\theta + \\cot \\theta) - (\\csc \\theta - \\cot \\theta)}{(\\csc \\theta - \\cot \\theta)(\\csc \\theta + \\cot \\theta)}"
+        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Trigonometric identities: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
+        "workingOut": "\\(\\text{LHS} = \\frac{(\\csc \\theta + \\cot \\theta) - (\\csc \\theta - \\cot \\theta)}{(\\csc \\theta - \\cot \\theta)(\\csc \\theta + \\cot \\theta)}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Simplify numerator and expand the denominator.",
-        "workingOut": "= \\frac{2 \\cot \\theta}{\\csc^2 \\theta - \\cot^2 \\theta}"
+        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
+        "workingOut": "\\(= \\frac{2 \\cot \\theta}{\\csc^2 \\theta - \\cot^2 \\theta}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply the identity \\(\\csc^2 \\theta - \\cot^2 \\theta = 1\\).",
-        "workingOut": "= \\frac{2 \\cot \\theta}{1} = 2 \\cot \\theta = \\text{RHS}"
+        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "workingOut": "\\(= \\frac{2 \\cot \\theta}{1} = 2 \\cot \\theta = \\text{RHS}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: LHS = ((csc \\theta + cot \\theta) - (csc \\theta - cot \\theta))/(csc^2 \\theta - cot^2 \\theta) = 2 cot \\theta / 1 = 2 cot \\theta = RHS. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "workingOut": "\\(LHS = ((csc \\theta + cot \\theta) - (csc \\theta - cot \\theta))/(csc^2 \\theta - cot^2 \\theta) = 2 cot \\theta / 1 = 2 cot \\theta = RHS\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   }
 ];

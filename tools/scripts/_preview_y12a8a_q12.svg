@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 220" width="520" height="220" role="img" aria-label="Silo and feed troughs diagram">
+  <rect width="520" height="220" fill="#ffffff"/>
+  <!-- ground line -->
+  <line x1="40" y1="150" x2="480" y2="150" stroke="#1e293b" stroke-width="2"/>
+  <!-- SILO -->
+  <rect x="50" y="55" width="44" height="95" fill="#f1f5f9" stroke="#0f172a" stroke-width="2"/>
+  <text x="72" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#0f172a">SILO</text>
+  <!-- trough helper: V shape -->
+  <!-- T1 -->
+  <path d="M198 150 L210 128 L222 150" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="210" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#0f172a">T1</text>
+  <!-- T2 -->
+  <path d="M298 150 L310 128 L322 150" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="310" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#0f172a">T2</text>
+  <!-- T3 -->
+  <path d="M398 150 L410 128 L422 150" fill="none" stroke="#0f172a" stroke-width="2" stroke-linejoin="round"/>
+  <text x="410" y="172" text-anchor="middle" font-family="Georgia, serif" font-size="13" font-weight="700" fill="#0f172a">T3</text>
+  <!-- dimension: silo right edge (94) to T1 (210) = 8 m -->
+  <line x1="94" y1="188" x2="210" y2="188" stroke="#334155" stroke-width="1.2"/>
+  <line x1="94" y1="182" x2="94" y2="194" stroke="#334155" stroke-width="1.2"/>
+  <line x1="210" y1="182" x2="210" y2="194" stroke="#334155" stroke-width="1.2"/>
+  <text x="152" y="206" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">8 m</text>
+  <!-- dimension: T1 to T2 = 4 m -->
+  <line x1="210" y1="188" x2="310" y2="188" stroke="#334155" stroke-width="1.2"/>
+  <line x1="310" y1="182" x2="310" y2="194" stroke="#334155" stroke-width="1.2"/>
+  <text x="260" y="206" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">4 m</text>
+  <!-- dimension: T2 to T3 = 4 m -->
+  <line x1="310" y1="188" x2="410" y2="188" stroke="#334155" stroke-width="1.2"/>
+  <line x1="410" y1="182" x2="410" y2="194" stroke="#334155" stroke-width="1.2"/>
+  <text x="360" y="206" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#0f172a">4 m</text>
+</svg>

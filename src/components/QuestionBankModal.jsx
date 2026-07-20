@@ -20,6 +20,7 @@ import {
 } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { geometryToSvgDataUrl } from '../utils/geometrySvg';
+import { resolveCorrectOptionIndex } from '../utils/mcOptionShuffle';
 import { syncQuestionIndexOnSave, removeQuestionFromIndex } from '../services/questionIndexService';
 import { applyCountDeltas, stampCountsVersion } from '../services/questionCountsService';
 
@@ -36,6 +37,204 @@ const stripUndefined = (value) => {
     );
   }
   return value;
+};
+
+const BeakerSvgEditor = ({ questionText, onChange }) => {
+  if (!questionText || !questionText.includes('<svg') || !questionText.includes('mL')) return null;
+
+  // Extract SVG contents
+  const waterMatch = questionText.match(/<path d="M\s*(\d+)\s*(\d+)\s*L\s*(\d+)\s*(\d+)\s*L\s*(\d+)\s*(\d+)\s*L\s*(\d+)\s*(\d+)\s*Z"\s*fill="#bae6fd"/);
+  if (!waterMatch) return null;
+  const currentWaterY = parseInt(waterMatch[2]);
+
+  const ellipseMatch = questionText.match(/<ellipse cx="(\d+)" cy="(\d+)" rx="([\d\.]+)" ry="(\d+)"/);
+  if (!ellipseMatch) return null;
+
+  const headMatch = questionText.match(/<path d="M\s*(\d+)\s*(\d+)\s*L\s*(\d+)\s*(\d+)\s*L\s*(\d+)\s*(\d+)\s*Z"\s*fill="#ef4444"/);
+  const lineMatch = questionText.match(/<line x1="(\d+)" y1="(\d+)" x2="(\d+)" y2="(\d+)" stroke="#ef4444"/);
+
+  if (!headMatch || !lineMatch) return null;
+
+  const currentArrowY = parseInt(lineMatch[2]);
+  const currentLineX1 = parseInt(lineMatch[1]);
+  const currentLineX2 = parseInt(lineMatch[3]);
+
+  const currentSide = (currentLineX1 < 100) ? 'left' : 'right';
+  const currentOffset = currentSide === 'left' ? currentLineX1 : (220 - currentLineX2);
+
+  // Detect beaker capacity & type
+  let type = '500'; // default
+  let maxML = 500;
+  let minML = 0;
+  let step = 10;
+
+  if (questionText.includes('600')) {
+    type = '600';
+    maxML = 600;
+    step = 10;
+  } else if (questionText.includes('30') && !questionText.includes('300')) {
+    type = '30';
+    maxML = 30;
+    step = 1;
+  }
+
+  // Convert Y to mL
+  const yToMl = (y) => {
+    if (type === '30') {
+      return Math.round(5 + (105 - y) / 3);
+    } else if (type === '600') {
+      return Math.round(100 + (122 - y) / 0.18);
+    } else {
+      return Math.round(100 + (102 - y) / 0.18);
+    }
+  };
+
+  // Convert mL to Y
+  const mlToY = (ml) => {
+    if (type === '30') {
+      return Math.round(105 - (ml - 5) * 3);
+    } else if (type === '600') {
+      return Math.round(122 - (ml - 100) * 0.18);
+    } else {
+      return Math.round(102 - (ml - 100) * 0.18);
+    }
+  };
+
+  const currentWaterML = Math.max(minML, Math.min(maxML, yToMl(currentWaterY)));
+  const currentArrowML = Math.max(minML, Math.min(maxML, yToMl(currentArrowY)));
+
+  const handleUpdate = (waterML, arrowML, side, offset) => {
+    const waterY = mlToY(waterML);
+    const arrowY = mlToY(arrowML);
+
+    const bottomY = parseInt(waterMatch[6]);
+    const topLeftX = 85;
+    const bottomLeftX = 95;
+    const slopeX = (bottomLeftX - topLeftX) / (bottomY - 25);
+    
+    const newWaterX1 = Math.round(topLeftX + (waterY - 25) * slopeX);
+    const newWaterX2 = Math.round(155 - (waterY - 25) * slopeX);
+    const newEllipseRx = (newWaterX2 - newWaterX1) / 2;
+
+    let newHeadPath = '';
+    let newLineX1 = 0;
+    let newLineX2 = 0;
+
+    if (side === 'left') {
+      const wallX = Math.round(topLeftX + (arrowY - 25) * slopeX);
+      const tipX = wallX - 3;
+      const headBaseX = tipX - 12;
+      newHeadPath = `M ${headBaseX} ${arrowY - 4} L ${tipX} ${arrowY} L ${headBaseX} ${arrowY + 4} Z`;
+      
+      newLineX1 = offset;
+      newLineX2 = headBaseX;
+    } else {
+      const tipX = 175;
+      const headBaseX = tipX + 12;
+      newHeadPath = `M ${headBaseX} ${arrowY - 4} L ${tipX} ${arrowY} L ${headBaseX} ${arrowY + 4} Z`;
+      
+      newLineX1 = headBaseX;
+      newLineX2 = 220 - offset;
+    }
+
+    let newSvg = questionText;
+    
+    const oldWaterPath = waterMatch[0];
+    const newWaterPath = `<path d="M ${newWaterX1} ${waterY} L ${newWaterX2} ${waterY} L 145 ${bottomY} L 95 ${bottomY} Z" fill="#bae6fd" opacity="0.8"`;
+    newSvg = newSvg.replace(oldWaterPath, newWaterPath);
+
+    const oldEllipse = ellipseMatch[0];
+    const newEllipse = `<ellipse cx="120" cy="${waterY}" rx="${newEllipseRx}" ry="4"`;
+    newSvg = newSvg.replace(oldEllipse, newEllipse);
+
+    const oldHeadPath = headMatch[0];
+    const newHead = `<path d="${newHeadPath}" fill="#ef4444"`;
+    newSvg = newSvg.replace(oldHeadPath, newHead);
+
+    const oldLine = lineMatch[0];
+    const newLine = `<line x1="${newLineX1}" y1="${arrowY}" x2="${newLineX2}" y2="${arrowY}" stroke="#ef4444"`;
+    newSvg = newSvg.replace(oldLine, newLine);
+
+    onChange(newSvg);
+  };
+
+  return (
+    <div style={{ marginTop: '12px', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', background: '#f8fafc' }}>
+      <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#475569', textTransform: 'uppercase', marginBottom: '12px' }}>
+        🔧 Interactive Beaker SVG Editor ({maxML} mL Type)
+      </div>
+      
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <div>
+          <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 700, color: '#64748b' }}>
+            <span>Water Level: <strong style={{ color: '#6366f1', fontSize: '0.85rem' }}>{currentWaterML} mL</strong></span>
+          </label>
+          <input 
+            type="range" 
+            min={minML} 
+            max={maxML} 
+            step={step}
+            value={currentWaterML} 
+            onChange={e => handleUpdate(parseInt(e.target.value), currentArrowML, currentSide, currentOffset)}
+            style={{ width: '100%', marginTop: '6px' }}
+          />
+        </div>
+
+        <div>
+          <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 700, color: '#64748b' }}>
+            <span>Indicator Arrow: <strong style={{ color: '#ef4444', fontSize: '0.85rem' }}>{currentArrowML} mL</strong></span>
+          </label>
+          <input 
+            type="range" 
+            min={minML} 
+            max={maxML} 
+            step={step}
+            value={currentArrowML} 
+            onChange={e => handleUpdate(currentWaterML, parseInt(e.target.value), currentSide, currentOffset)}
+            style={{ width: '100%', marginTop: '6px' }}
+          />
+        </div>
+
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '4px' }}>
+          <div>
+            <label style={{ display: 'block', fontSize: '0.75rem', fontWeight: 700, color: '#64748b', marginBottom: '6px' }}>Arrow Side</label>
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <label style={{ fontSize: '0.8rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer' }}>
+                <input 
+                  type="radio" 
+                  name="arrowSide" 
+                  checked={currentSide === 'left'} 
+                  onChange={() => handleUpdate(currentWaterML, currentArrowML, 'left', currentOffset)}
+                /> Left
+              </label>
+              <label style={{ fontSize: '0.8rem', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '4px', cursor: 'pointer' }}>
+                <input 
+                  type="radio" 
+                  name="arrowSide" 
+                  checked={currentSide === 'right'} 
+                  onChange={() => handleUpdate(currentWaterML, currentArrowML, 'right', currentOffset)}
+                /> Right
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', fontWeight: 700, color: '#64748b' }}>
+              <span>Arrow Length Offset: {currentOffset}px</span>
+            </label>
+            <input 
+              type="range" 
+              min="10" 
+              max="100" 
+              value={currentOffset} 
+              onChange={e => handleUpdate(currentWaterML, currentArrowML, currentSide, parseInt(e.target.value))}
+              style={{ width: '100%', marginTop: '6px' }}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const parseGraphData = (value) => {
@@ -1388,12 +1587,13 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         : q.graphData;
       
       if (q.type === 'multiple_choice') {
-        if (['0', '1', '2', '3'].includes(q.answer)) {
-          initialAnswerIdx = parseInt(q.answer);
-        } else {
-          initialAnswerIdx = (q.options || []).findIndex(opt => (typeof opt === 'string' ? opt : opt.text) === q.answer);
-          if (initialAnswerIdx === -1) initialAnswerIdx = null;
-        }
+        // Use the canonical index/value resolver (mcOptionShuffle.js) — a
+        // hand-rolled "answer in ['0'..'3'] means index" check here mis-marks
+        // any question whose answer is a value needing isManual disambiguation
+        // or LaTeX/whitespace-normalized text matching, silently unmarking the
+        // correct option when the teacher reopens it for editing.
+        const idx = resolveCorrectOptionIndex(q, q.options || []);
+        initialAnswerIdx = idx >= 0 ? idx : null;
       }
 
       setFormData({
@@ -1423,13 +1623,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         topicTitle: q.topicTitle || '',
         subQuestions: (q.subQuestions || []).map(sq => {
           const isMCQ = sq.type === 'multiple_choice';
-          const answerIdx = isMCQ && sq.answer !== undefined && sq.answer !== ''
-            ? parseInt(sq.answer, 10)
-            : (sq.answerIdx != null ? sq.answerIdx : null);
+          const sqIdx = isMCQ ? resolveCorrectOptionIndex(sq, sq.options || []) : -1;
           return {
             ...sq,
             answer: isMCQ ? '' : (sq.answer || sq.a || ''),
-            answerIdx: isMCQ ? (isNaN(answerIdx) ? null : answerIdx) : null,
+            answerIdx: isMCQ && sqIdx >= 0 ? sqIdx : null,
             solution: sq.solution || '',
             solutionSteps: (sq.solutionSteps || []).map(s =>
               typeof s === 'string'
@@ -1503,9 +1701,18 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
   };
 
   const handleSave = async () => {
-    // Teacher-graded questions don't need a machine-checkable answer — the
-    // teacher reads the student's response and assigns the mark. The `answer`
-    // field, if filled, is shown as a model answer for student reference.
+    // Teacher-graded FREE-RESPONSE questions don't need a machine-checkable
+    // answer — the teacher reads the student's response and assigns the
+    // mark. The `answer` field, if filled, is shown as a model answer for
+    // student reference. multiple_choice is different: it always has a
+    // fixed option list with exactly one correct option, independent of
+    // whether a teacher also wants to eyeball the response — so its answer
+    // is required even when requiresManualGrading is checked. Gating this on
+    // needsAnswer previously let a multiple_choice question saved with
+    // requiresManualGrading:true skip the check entirely and silently save
+    // answer:"" — 6 y7-12a angle questions were graded wrong for every
+    // student, however they answered, until an admin backfill fixed it
+    // (2026-07-20).
     const teacherGraded = formData.requiresManualGrading === true;
     const needsAnswer = !teacherGraded;
     const fillBlankOk = formData.type !== 'fill_blank'
@@ -1516,11 +1723,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       showToast("Question content is required.", 'warning');
       return;
     }
-    if (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx === null) {
+    if (!hasSubQuestions && formData.type === 'multiple_choice' && formData.answerIdx === null) {
       showToast("Please select the correct answer option.", 'warning');
       return;
     }
-    if (!hasSubQuestions && needsAnswer && formData.type === 'multiple_choice' && formData.answerIdx !== null) {
+    if (!hasSubQuestions && formData.type === 'multiple_choice' && formData.answerIdx !== null) {
       const chosen = (formData.options || [])[formData.answerIdx];
       if (!chosen || ((chosen.text || '').trim() === '' && !chosen.imageUrl)) {
         showToast('The option marked correct is empty — fill it in or mark a different option.', 'warning');
@@ -1530,7 +1737,7 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
     // Sub-question MC answers used to skip validation entirely: an unmarked
     // part saved answer '' (ungradeable — the student is wrong whatever they
     // pick) with no warning anywhere.
-    if (hasSubQuestions && needsAnswer) {
+    if (hasSubQuestions) {
       for (let i = 0; i < formData.subQuestions.length; i++) {
         const sq = formData.subQuestions[i];
         if (sq.type !== 'multiple_choice') continue;
@@ -1942,6 +2149,10 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                 <div style={{ marginTop: '12px' }}>
                   <span style={{ display: 'block', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8' }}>LIVE PREVIEW:</span>
                   <MathPreview content={formData.questionText} graphData={currentGraphData} />
+                  <BeakerSvgEditor 
+                    questionText={formData.questionText} 
+                    onChange={newText => setFormData({ ...formData, questionText: newText })} 
+                  />
                 </div>
               </div>
 

@@ -1,497 +1,1137 @@
 export const Y8_CH19A_QUESTIONS = [
   {
     "id": "y8-19a-q1a",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "The mean of the following data set is 60. Determine the median of this data set:\n\n`25, 58, 38, 31, 62, 146`",
-    "a": "48",
-    "solution": "1. To find the median, first sort the data set in ascending order:\n   `25, 31, 38, 58, 62, 146`\n2. Since there are 6 data points (an even number), the median is the average of the two middle values (3rd and 4th values):\n   $$\\text{Median} = \\frac{38 + 58}{2} = \\frac{96}{2} = 48$$",
+    "topicId": "y8-19a",
+    "c": "19A",
     "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The mean of the following data set is 60. Determine the median of this data set:\n\n`25, 58, 38, 31, 62, 146`",
+    "opts": [
+      "\\(-48\\)",
+      "\\(47\\)",
+      "\\(48\\)",
+      "\\(49\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Sort the numbers in ascending order, then find the average of the two middle numbers.",
+    "solution": "1. To find the median, first sort the data set in ascending order:\n   `25, 31, 38, 58, 62, 146`\n2. Since there are 6 data points (an even number), the median is the average of the two middle values (3rd and 4th values):\n   \\(\\text{Median} = \\frac{38 + 58}{2} = \\frac{96}{2} = 48\\)",
     "solutionSteps": [
       {
-        "explanation": "Sort the data set in ascending order.",
-        "workingOut": "25, 31, 38, 58, 62, 146"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(25, 31, 38, 58, 62, 146\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the two middle numbers (38 and 58) and calculate their average.",
-        "workingOut": "\\text{Median} = \\frac{38 + 58}{2} = 48"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Median} = \\frac{38 + 58}{2} = 48\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(48\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 48. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(48\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-19a-q1b",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "The mean of the following data set is 45. Determine the median of this data set:\n\n`43, 44, 45, 45, 46, 47`",
-    "a": "45",
-    "solution": "1. The data set is already sorted in ascending order:\n   `43, 44, 45, 45, 46, 47`\n2. Since there are 6 data points, the median is the average of the 3rd and 4th values:\n   $$\\text{Median} = \\frac{45 + 45}{2} = 45$$",
+    "topicId": "y8-19a",
+    "c": "19A",
     "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The mean of the following data set is 45. Determine the median of this data set:\n\n`43, 44, 45, 45, 46, 47`",
+    "opts": [
+      "\\(-45\\)",
+      "\\(44\\)",
+      "\\(45\\)",
+      "\\(46\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "The data is already sorted. Find the average of the two middle numbers.",
+    "solution": "1. The data set is already sorted in ascending order:\n   `43, 44, 45, 45, 46, 47`\n2. Since there are 6 data points, the median is the average of the 3rd and 4th values:\n   \\(\\text{Median} = \\frac{45 + 45}{2} = 45\\)",
     "solutionSteps": [
       {
-        "explanation": "Identify the two middle numbers (45 and 45) in the sorted set.",
-        "workingOut": "\\text{Middle numbers} = 45, 45"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\text{Middle numbers} = 45, 45\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate their average.",
-        "workingOut": "\\text{Median} = \\frac{45 + 45}{2} = 45"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Median} = \\frac{45 + 45}{2} = 45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(45\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 45. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(45\\)",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-19a-q1c",
-    "type": "short_answer",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
     "difficulty": "easy",
+    "timeLimit": 120,
     "question": "The mean of the following data set is 70. Determine the median of this data set:\n\n`0, 144, 82, 94, 98, 2`",
-    "a": "88",
-    "solution": "1. First, sort the data set in ascending order:\n   `0, 2, 82, 94, 98, 144`\n2. Since there are 6 data points, the median is the average of the 3rd and 4th values:\n   $$\\text{Median} = \\frac{82 + 94}{2} = \\frac{176}{2} = 88$$",
-    "t": "Comparing means and medians",
-    "hint": "Sort the numbers from smallest to largest, then find the middle point between the 3rd and 4th values.",
-    "solutionSteps": [
-      {
-        "explanation": "Sort the data set.",
-        "workingOut": "0, 2, 82, 94, 98, 144"
-      },
-      {
-        "explanation": "Average the middle two values (82 and 94).",
-        "workingOut": "\\text{Median} = \\frac{82 + 94}{2} = 88"
-      }
+    "opts": [
+      "\\(-88\\)",
+      "\\(87\\)",
+      "\\(88\\)",
+      "\\(89\\)"
     ],
-    "graphData": null
-  },
-  {
-    "id": "y8-19a-q2",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "question": "The weights of a group of students, in kilograms, are given below:\n\n`53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49`\n\nAnswer the questions below.",
-    "a": "See sub-questions for individual answers.",
-    "solution": "a) First, sort the 12 weights in ascending order:\n   `47, 47, 48, 48, 49, 51, 51, 52, 52, 52, 53, 55`\n   Since there are 12 values, the median is the average of the 6th (51) and 7th (51) values: $\\text{Median} = 51$.\nb) Sum of the data = $47\\times2 + 48\\times2 + 49 + 51\\times2 + 52\\times3 + 53 + 55 = 605$.\n   Mean = $\\frac{605}{12} = 50.4166\\dots \\approx 50.42$.",
-    "t": "Comparing means and medians",
-    "hint": "Sort the weights first to find the median, and sum all values and divide by 12 to find the mean.",
+    "a": 2,
+    "answer": "2",
+    "hint": "Sort the numbers from smallest to largest, then find the middle point between the 3rd and 4th values.",
+    "solution": "1. First, sort the data set in ascending order:\n   `0, 2, 82, 94, 98, 144`\n2. Since there are 6 data points, the median is the average of the 3rd and 4th values:\n   \\(\\text{Median} = \\frac{82 + 94}{2} = \\frac{176}{2} = 88\\)",
     "solutionSteps": [
       {
-        "explanation": "Sort the data set.",
-        "workingOut": "47, 47, 48, 48, 49, 51, 51, 52, 52, 52, 53, 55"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(0, 2, 82, 94, 98, 144\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine the median by averaging the 6th and 7th values.",
-        "workingOut": "\\text{Median} = \\frac{51 + 51}{2} = 51"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Median} = \\frac{82 + 94}{2} = 88\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the sum of all weights and divide by 12.",
-        "workingOut": "\\text{Mean} = \\frac{605}{12} \\approx 50.42"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(88\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 88. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(88\\)",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q2a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The weights of a group of students, in kilograms, are given below:\n\n`53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49`\n\nAnswer the questions below.\na) What is the median?",
+    "opts": [
+      "\\(-51\\)",
+      "\\(50\\)",
+      "\\(51\\)",
+      "\\(52\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(51\\).",
+    "solutionSteps": [
       {
-        "id": "y8-19a-q2a",
-        "type": "short_answer",
-        "question": "a) What is the median?",
-        "a": "51"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q2b",
-        "type": "short_answer",
-        "question": "b) Calculate the mean, correct to two decimal places.",
-        "a": "50.42"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(51\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 51. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(51\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q2b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The weights of a group of students, in kilograms, are given below:\n\n`53, 52, 51, 52, 48, 47, 51, 47, 55, 52, 48, 49`\n\nAnswer the questions below.\nb) Calculate the mean, correct to two decimal places.",
+    "opts": [
+      "\\(-50.42\\)",
+      "\\(49.42\\)",
+      "\\(50.42\\)",
+      "\\(51.42\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(50.42\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(50.42\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 50.42. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(50.42\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-19a-q3",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "question": "The mean price of bags of apples at different supermarkets was $6.40. The sum of the data was $96.00. How many bags of apples were included in the survey?",
-    "a": "15",
-    "solution": "1. The formula relating the mean, sum, and count $n$ is:\n   $$\\text{Mean} = \\frac{\\text{Sum}}{n}$$\n2. Substitute the given values into the formula:\n   $$6.40 = \\frac{96.00}{n}$$\n3. Solve for $n$:\n   $$n = \\frac{96.00}{6.40} = 15$$",
+    "topicId": "y8-19a",
+    "c": "19A",
     "t": "Comparing means and medians",
-    "hint": "Divide the total sum by the mean to find the number of entries.",
-    "solutionSteps": [
-      {
-        "explanation": "Set up the formula relating mean, sum, and count.",
-        "workingOut": "6.40 = \\frac{96.00}{n}"
-      },
-      {
-        "explanation": "Solve for \\(n\\).",
-        "workingOut": "n = \\frac{96.00}{6.40} = 15"
-      }
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "The mean price of bags of apples at different supermarkets was \\(6.40. The sum of the data was \\)96.00. How many bags of apples were included in the survey?",
+    "opts": [
+      "\\(-15\\)",
+      "\\(14\\)",
+      "\\(15\\)",
+      "\\(16\\)"
     ],
-    "graphData": null
-  },
-  {
-    "id": "y8-19a-q4",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "question": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n`$16, $8, $13, $49.50, $9.50, $13.50, $9, $11, $9.50, $10.50`\n\nAnswer the questions below.",
-    "a": "See sub-questions for individual answers.",
-    "solution": "a) Sort the 10 lunch costs in ascending order:\n   `8, 9, 9.50, 9.50, 10.50, 11, 13, 13.50, 16, 49.50`\n   The median is the average of the 5th (10.50) and 6th (11) values: $\\text{Median} = \\frac{10.50 + 11}{2} = 10.75$.\nb) Sum of the lunch costs = $8 + 9 + 9.50 + 9.50 + 10.50 + 11 + 13 + 13.50 + 16 + 49.50 = 149.50$.\n   Mean = $\\frac{149.50}{10} = 14.95$.\nc) The median ($10.75) is a better indicator of Sue's typical daily lunch spending. The mean ($14.95) is skewed upwards significantly by the outlier of $49.50, which is much higher than what she usually spends on any other day.",
-    "t": "Comparing means and medians",
-    "hint": "Sort the data to find the median, sum the values to compute the mean, and look for outliers to explain which measure is better.",
+    "a": 2,
+    "answer": "2",
+    "hint": "Divide the total sum by the mean to find the number of entries.",
+    "solution": "1. The formula relating the mean, sum, and count \\(n\\) is:\n   \\(\\text{Mean} = \\frac{\\text{Sum}}{n}\\)\n2. Substitute the given values into the formula:\n   \\(6.40 = \\frac{96.00}{n}\\)\n3. Solve for \\(n\\):\n   \\(n = \\frac{96.00}{6.40} = 15\\)",
     "solutionSteps": [
       {
-        "explanation": "Sort the data set.",
-        "workingOut": "8, 9, 9.50, 9.50, 10.50, 11, 13, 13.50, 16, 49.50"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(6.40 = \\frac{96.00}{n}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the median by averaging the 5th and 6th values.",
-        "workingOut": "\\text{Median} = \\frac{10.50 + 11}{2} = 10.75"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(n = \\frac{96.00}{6.40} = 15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the mean by dividing the sum of \\(149.50\\) by \\(10\\).",
-        "workingOut": "\\text{Mean} = \\frac{149.50}{10} = 14.95"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(15\\)",
+        "graphData": null
       },
       {
-        "explanation": "Identify the outlier (\\(49.50\\)) to justify why the median is the better indicator.",
-        "workingOut": "\\text{Outlier} = 49.50 \\implies \\text{Median is less affected}"
+        "explanation": "Final answer: 15. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(15\\)",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q4a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n`\\(16, \\)8, \\(13, \\)49.50, \\(9.50, \\)13.50, \\(9, \\)11, \\(9.50, \\)10.50`\n\nAnswer the questions below.\na) Calculate the median for these data (in dollars).",
+    "opts": [
+      "\\(-10.75\\)",
+      "\\(10.75\\)",
+      "\\(11.75\\)",
+      "\\(9.75\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(10.75\\).",
+    "solutionSteps": [
       {
-        "id": "y8-19a-q4a",
-        "type": "short_answer",
-        "question": "a) Calculate the median for these data (in dollars).",
-        "a": "10.75"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q4b",
-        "type": "short_answer",
-        "question": "b) Calculate the mean for these data (in dollars).",
-        "a": "14.95"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q4c",
-        "type": "teacher_review",
-        "question": "c) Compare the median and mean and comment on which is the better indicator of how much Sue usually spent on her daily lunch.",
-        "a": "The median ($10.75) is a better indicator of Sue's usual spending. The mean ($14.95) is skewed upwards by the outlier of $49.50, which is much higher than her other daily lunch costs."
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(10.75\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 10.75. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(10.75\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q4b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "question": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n`\\(16, \\)8, \\(13, \\)49.50, \\(9.50, \\)13.50, \\(9, \\)11, \\(9.50, \\)10.50`\n\nAnswer the questions below.\nb) Calculate the mean for these data (in dollars).",
+    "opts": [
+      "\\(-14.95\\)",
+      "\\(13.95\\)",
+      "\\(14.95\\)",
+      "\\(15.95\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(14.95\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(14.95\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 14.95. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(14.95\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q4c",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "teacher_review",
+    "difficulty": "easy",
+    "timeLimit": 180,
+    "question": "Sue spent the following amounts on her lunch each day over the course of two working weeks:\n\n`\\(16, \\)8, \\(13, \\)49.50, \\(9.50, \\)13.50, \\(9, \\)11, \\(9.50, \\)10.50`\n\nAnswer the questions below.\nc) Compare the median and mean and comment on which is the better indicator of how much Sue usually spent on her daily lunch.",
+    "answer": "The median (10.75) is a better indicator of Sue's usual spending.\nThe mean (\\(14.95) is skewed upwards by the outlier of \\)49.50, which is much higher than her other daily lunch costs.",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "The median (10.75) is a better indicator of Sue's usual spending.\nThe mean (\\(14.95) is skewed upwards by the outlier of \\)49.50, which is much higher than her other daily lunch costs.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "The median (10.75) is a better indicator of Sue's usual spending.\nThe mean (\\(14.95) is skewed upwards by the outlier of \\)49.50, which is much higher than her other daily lunch costs.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: The median (10.75) is a better indicator of Sue's usual spending.\nThe mean (\\(14.95) is skewed upwards by the outlier of \\)49.50, which is much higher than her other daily lunch costs.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "The median (10.75) is a better indicator of Sue's usual spending.\nThe mean (\\(14.95) is skewed upwards by the outlier of \\)49.50, which is much higher than her other daily lunch costs.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y8-19a-q5a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
     "type": "multiple_choice",
     "difficulty": "medium",
+    "timeLimit": 120,
     "question": "A list of data has 10 entries. Each entry is 2, 3 or 4. What must the list be if the average (mean) is 2?",
-    "a": "0",
     "opts": [
       "All ten entries must be 2",
       "Five entries are 2, five entries are 3",
       "Nine entries are 2, one entry is 4",
       "Eight entries are 2, two entries are 3"
     ],
-    "solution": "1. The minimum possible value for any entry in this list is 2.\n2. If the average (mean) of the 10 entries is equal to the minimum value (2), then no entry can be greater than 2.\n3. Therefore, all ten entries must be 2.",
-    "t": "Comparing means and medians",
+    "a": 0,
+    "answer": "0",
     "hint": "If the average is equal to the minimum possible value of the entries, think about what values the individual entries can take.",
+    "solution": "1. The minimum possible value for any entry in this list is 2.\n2. If the average (mean) of the 10 entries is equal to the minimum value (2), then no entry can be greater than 2.\n3. Therefore, all ten entries must be 2.",
     "solutionSteps": [
       {
-        "explanation": "Identify the minimum possible value of the data entries.",
-        "workingOut": "\\text{Minimum value} = 2"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\text{Minimum value} = 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Relate the minimum value to the given average.",
-        "workingOut": "\\text{Average} = 2 \\implies \\text{All entries must equal the minimum}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Average} = 2 \\implies \\text{All entries must equal the minimum}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "All ten entries must be 2",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: All ten entries must be 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "All ten entries must be 2",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-19a-q5b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
     "type": "multiple_choice",
     "difficulty": "medium",
+    "timeLimit": 120,
     "question": "A list of data has 10 entries. Each entry is 2, 3 or 4. What must the list be if the average (mean) is 3?",
-    "a": "0",
     "opts": [
       "The number of 2s must equal the number of 4s",
       "All ten entries must be 3",
       "The number of 2s must equal the number of 3s",
       "The number of 3s must equal the number of 4s"
     ],
-    "solution": "1. Let $x$ be the number of 2s, $y$ be the number of 3s, and $z$ be the number of 4s. The total number of entries is $x + y + z = 10$.\n2. The sum of the entries must be $10 \\times 3 = 30$, so:\n   $$2x + 3y + 4z = 30$$\n3. Substitute $y = 10 - x - z$ into the sum equation:\n   $$2x + 3(10 - x - z) + 4z = 30$$\n   $$2x + 30 - 3x - 3z + 4z = 30$$\n   $$30 - x + z = 30 \\implies x = z$$\n4. Therefore, the number of 2s ($x$) must equal the number of 4s ($z$).",
-    "t": "Comparing means and medians",
+    "a": 0,
+    "answer": "0",
     "hint": "Set up an equation for the sum of the entries. How do the numbers of values below the mean (2) and above the mean (4) balance out?",
+    "solution": "1. Let \\(x\\) be the number of 2s, \\(y\\) be the number of 3s, and \\(z\\) be the number of 4s. The total number of entries is \\(x + y + z = 10\\).\n2. The sum of the entries must be \\(10 \\times 3 = 30\\), so:\n   \\(2x + 3y + 4z = 30\\)\n3. Substitute \\(y = 10 - x - z\\) into the sum equation:\n   \\(2x + 3(10 - x - z) + 4z = 30\\)\n   \\(2x + 30 - 3x - 3z + 4z = 30\\)\n   \\(30 - x + z = 30 \\implies x = z\\)\n4. Therefore, the number of 2s (\\(x\\)) must equal the number of 4s (\\(z\\)).",
     "solutionSteps": [
       {
-        "explanation": "State the sum equation based on the average.",
-        "workingOut": "\\text{Sum} = 10 \\times 3 = 30"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\text{Sum} = 10 \\times 3 = 30\\)",
+        "graphData": null
       },
       {
-        "explanation": "Model the variables and solve.",
-        "workingOut": "2x + 3y + 4z = 30 \\implies 2x + 3(10 - x - z) + 4z = 30 \\implies x = z"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(2x + 3y + 4z = 30 \\implies 2x + 3(10 - x - z) + 4z = 30 \\implies x = z\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "The number of 2s must equal the number of 4s",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: The number of 2s must equal the number of 4s. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "The number of 2s must equal the number of 4s",
+        "graphData": null
       }
     ],
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y8-19a-q5c",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
     "type": "multiple_choice",
     "difficulty": "medium",
+    "timeLimit": 120,
     "question": "A list of data has 10 entries. Each entry is 2, 3 or 4. What must the list be if the average (mean) is 4?",
-    "a": "0",
     "opts": [
       "All ten entries must be 4",
       "Five entries are 3, five entries are 4",
       "Nine entries are 4, one entry is 2",
       "The number of 2s must equal the number of 4s"
     ],
-    "solution": "1. The maximum possible value for any entry in this list is 4.\n2. If the average (mean) of the 10 entries is equal to this maximum value (4), then no entry can be less than 4.\n3. Therefore, all ten entries must be 4.",
-    "t": "Comparing means and medians",
+    "a": 0,
+    "answer": "0",
     "hint": "If the average is equal to the maximum possible value of the entries, think about what values the individual entries can take.",
+    "solution": "1. The maximum possible value for any entry in this list is 4.\n2. If the average (mean) of the 10 entries is equal to this maximum value (4), then no entry can be less than 4.\n3. Therefore, all ten entries must be 4.",
     "solutionSteps": [
       {
-        "explanation": "Identify the maximum possible value of the data entries.",
-        "workingOut": "\\text{Maximum value} = 4"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\text{Maximum value} = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Relate the maximum value to the given average.",
-        "workingOut": "\\text{Average} = 4 \\implies \\text{All entries must equal the maximum}"
-      }
-    ],
-    "graphData": null
-  },
-  {
-    "id": "y8-19a-q6",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "question": "For the stem-and-leaf plot shown below, find the median and the mean of the data set.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```",
-    "a": "See sub-questions for individual answers.",
-    "solution": "1. List the 20 values represented in the plot:\n   `12, 12, 14, 16, 18, 22, 25, 31, 31, 32, 32, 33, 34, 36, 40, 42, 43, 45, 45, 47`\n2. Find the median (average of 10th and 11th values):\n   $$\\text{Median} = \\frac{32 + 32}{2} = 32$$\n3. Find the mean by summing all 20 values and dividing by 20:\n   $$\\text{Sum} = 600 \\implies \\text{Mean} = \\frac{600}{20} = 30$$",
-    "t": "Comparing means and medians",
-    "hint": "List all 20 values. The median is the average of the 10th and 11th numbers. Sum all values and divide by 20 to find the mean.",
-    "solutionSteps": [
-      {
-        "explanation": "List all 20 data points in order.",
-        "workingOut": "12, 12, 14, 16, 18, 22, 25, 31, 31, 32, 32, 33, 34, 36, 40, 42, 43, 45, 45, 47"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Average} = 4 \\implies \\text{All entries must equal the maximum}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the median (average of 10th and 11th values).",
-        "workingOut": "\\text{Median} = \\frac{32 + 32}{2} = 32"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "All ten entries must be 4",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the mean by dividing the sum (600) by the number of elements (20).",
-        "workingOut": "\\text{Mean} = \\frac{600}{20} = 30"
+        "explanation": "Final answer: All ten entries must be 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "All ten entries must be 4",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y8-19a-q6a",
-        "type": "short_answer",
-        "question": "a) Find the median.",
-        "a": "32"
-      },
-      {
-        "id": "y8-19a-q6b",
-        "type": "short_answer",
-        "question": "b) Calculate the mean.",
-        "a": "30"
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
-    "id": "y8-19a-q7",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "question": "The chest measurement in centimetres of 23 people is taken. The results are recorded in the stem-and-leaf plot shown below.\n\n```\n8 | 6 7\n9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nAnswer the questions below.",
-    "a": "See sub-questions for individual answers.",
-    "solution": "a) There are 23 measurements. The median is the 12th value, which is 100 cm.\nb) Sum of the 23 values = 2300. Mean = $\\frac{2300}{23} = 100$ cm.\nc) Exclude values less than 90 (86, 87) and greater than 110 (112, 112, 118). There are 18 remaining values.\n   - Sorted remaining values: `91, 91, 91, 92, 93, 94, 95, 97, 97, 100, 102, 103, 104, 105, 107, 107, 108, 108`\n   - New median (average of 9th and 10th values): $\\frac{97 + 100}{2} = 98.5$ cm.\n   - Sum of remaining values = $2300 - 515 = 1785$.\n   - New mean = $\\frac{1785}{18} = 99.1666\\dots \\approx 99.17$ cm.",
+    "id": "y8-19a-q6a",
+    "topicId": "y8-19a",
+    "c": "19A",
     "t": "Comparing means and medians",
-    "hint": "For a, find the 12th value. For b, sum and divide by 23. For c/d, remove the 5 extreme values, then recalculate.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For the stem-and-leaf plot shown below, find the median and the mean of the data set.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```\na) Find the median.",
+    "opts": [
+      "\\(-32\\)",
+      "\\(31\\)",
+      "\\(32\\)",
+      "\\(33\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(32\\).",
     "solutionSteps": [
       {
-        "explanation": "List all 23 values in order.",
-        "workingOut": "86, 87, 91, 91, 91, 92, 93, 94, 95, 97, 97, 100, 102, 103, 104, 105, 107, 107, 108, 108, 112, 112, 118"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
       },
       {
-        "explanation": "Find the median (12th value).",
-        "workingOut": "\\text{Median} = 100"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the mean of the 23 values.",
-        "workingOut": "\\text{Mean} = \\frac{2300}{23} = 100"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(32\\)",
+        "graphData": null
       },
       {
-        "explanation": "Filter out values \\(< 90\\) and \\(> 110\\). Find the new median of the 18 remaining values.",
-        "workingOut": "\\text{New Median} = \\frac{97 + 100}{2} = 98.5"
-      },
-      {
-        "explanation": "Calculate the new mean of the remaining 18 values.",
-        "workingOut": "\\text{New Mean} = \\frac{1785}{18} \\approx 99.17"
+        "explanation": "Final answer: 32. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(32\\)",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y8-19a-q7a",
-        "type": "short_answer",
-        "question": "a) Find the median chest measurement.",
-        "a": "100"
-      },
-      {
-        "id": "y8-19a-q7b",
-        "type": "short_answer",
-        "question": "b) Find the mean chest measurement.",
-        "a": "100"
-      },
-      {
-        "id": "y8-19a-q7c",
-        "type": "short_answer",
-        "question": "c) Find the new median chest measurement if readings less than 90 and greater than 110 are not included.",
-        "a": "98.5"
-      },
-      {
-        "id": "y8-19a-q7d",
-        "type": "short_answer",
-        "question": "d) Find the new mean chest measurement if readings less than 90 and greater than 110 are not included (correct to two decimal places).",
-        "a": "99.17"
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
-    "id": "y8-19a-q8",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "question": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.",
-    "a": "See sub-questions for individual answers.",
-    "solution": "a) Sort the 13 areas in ascending order:\n   `3.2, 3.3, 3.4, 4.2, 4.6, 6.2, 8.5, 10.0, 12.3, 20.2, 28.6, 29.4, 42.3`\n   - Median is the 7th value: $8.5$ hectares.\n   - Sum of the areas = $166.2$.\n   - Mean = $\\frac{166.2}{13} \\approx 12.78$ hectares.\nb) The median ($8.5$ hectares) is a better measure of centre for this data set. The mean ($12.78$ hectares) is pulled upwards by a few very large suburbs (such as 42.3, 29.4, and 28.6 hectares) which skew the distribution.",
+    "id": "y8-19a-q6b",
+    "topicId": "y8-19a",
+    "c": "19A",
     "t": "Comparing means and medians",
-    "hint": "Sort the data to identify the median, sum and divide by 13 to calculate the mean, and evaluate how extreme values affect the mean.",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For the stem-and-leaf plot shown below, find the median and the mean of the data set.\n\n```\n1 | 2 2 4 6 8\n2 | 2 5\n3 | 1 1 2 2 3 4 6\n4 | 0 2 3 5 5 7\n```\nb) Calculate the mean.",
+    "opts": [
+      "\\(-30\\)",
+      "\\(29\\)",
+      "\\(30\\)",
+      "\\(31\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(30\\).",
     "solutionSteps": [
       {
-        "explanation": "Sort the areas.",
-        "workingOut": "3.2, 3.3, 3.4, 4.2, 4.6, 6.2, 8.5, 10.0, 12.3, 20.2, 28.6, 29.4, 42.3"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
       },
       {
-        "explanation": "Identify the median (7th value).",
-        "workingOut": "\\text{Median} = 8.5"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the mean of the data set.",
-        "workingOut": "\\text{Mean} = \\frac{166.2}{13} \\approx 12.78"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(30\\)",
+        "graphData": null
       },
       {
-        "explanation": "Determine which measure of centre is better.",
-        "workingOut": "\\text{The outliers pull the mean up, so median is better.}"
+        "explanation": "Final answer: 30. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(30\\)",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q7a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The chest measurement in centimetres of 23 people is taken. The results are recorded in the stem-and-leaf plot shown below.\n\n```\n8 | 6 7\n9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nAnswer the questions below.\na) Find the median chest measurement.",
+    "opts": [
+      "\\(-100\\)",
+      "\\(100\\)",
+      "\\(101\\)",
+      "\\(99\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(100\\).",
+    "solutionSteps": [
       {
-        "id": "y8-19a-q8a",
-        "type": "short_answer",
-        "question": "a) Find the median area in hectares.",
-        "a": "8.5"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q8b",
-        "type": "short_answer",
-        "question": "b) Find the mean area in hectares (correct to two decimal places).",
-        "a": "12.78"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q8c",
-        "type": "teacher_review",
-        "question": "c) Which is a better measure of centre for this data set? Explain your answer.",
-        "a": "The median (8.5) is a better measure of centre. The mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers."
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q7b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The chest measurement in centimetres of 23 people is taken. The results are recorded in the stem-and-leaf plot shown below.\n\n```\n8 | 6 7\n9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nAnswer the questions below.\nb) Find the mean chest measurement.",
+    "opts": [
+      "\\(-100\\)",
+      "\\(100\\)",
+      "\\(101\\)",
+      "\\(99\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(100\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 100. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(100\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q7c",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The chest measurement in centimetres of 23 people is taken. The results are recorded in the stem-and-leaf plot shown below.\n\n```\n8 | 6 7\n9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nAnswer the questions below.\nc) Find the new median chest measurement if readings less than 90 and greater than 110 are not included.",
+    "opts": [
+      "\\(-98.5\\)",
+      "\\(97.5\\)",
+      "\\(98.5\\)",
+      "\\(99.5\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(98.5\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(98.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 98.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(98.5\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q7d",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The chest measurement in centimetres of 23 people is taken. The results are recorded in the stem-and-leaf plot shown below.\n\n```\n8 | 6 7\n9 | 1 1 1 2 3 4 5 7 7\n10 | 0 2 3 4 5 7 7 8 8\n11 | 2 2 8\n```\n\nAnswer the questions below.\nd) Find the new mean chest measurement if readings less than 90 and greater than 110 are not included (correct to two decimal places).",
+    "opts": [
+      "\\(-99.17\\)",
+      "\\(100.17\\)",
+      "\\(98.17\\)",
+      "\\(99.17\\)"
+    ],
+    "a": 3,
+    "answer": "3",
+    "hint": "",
+    "solution": "The correct answer is \\(99.17\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(99.17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 99.17. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(99.17\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q8a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.\na) Find the median area in hectares.",
+    "opts": [
+      "\\(-8.5\\)",
+      "\\(7.5\\)",
+      "\\(8.5\\)",
+      "\\(9.5\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(8.5\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(8.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 8.5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(8.5\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q8b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.\nb) Find the mean area in hectares (correct to two decimal places).",
+    "opts": [
+      "\\(-12.78\\)",
+      "\\(11.78\\)",
+      "\\(12.78\\)",
+      "\\(13.78\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(12.78\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(12.78\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 12.78. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(12.78\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q8c",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 180,
+    "question": "The following list gives the area in hectares of each of the suburbs of a city:\n\n`8.5, 3.2, 6.2, 20.2, 3.4, 42.3, 12.3, 28.6, 10.0, 3.3, 29.4, 4.2, 4.6`\n\nAnswer the questions below.\nc) Which is a better measure of centre for this data set? Explain your answer.",
+    "answer": "The median (8.5) is a better measure of centre.\nThe mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers.",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "The median (8.5) is a better measure of centre.\nThe mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "The median (8.5) is a better measure of centre.\nThe mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: The median (8.5) is a better measure of centre.\nThe mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "The median (8.5) is a better measure of centre.\nThe mean (12.78) is skewed upwards by the few very large suburbs (such as 42.3 and 29.4 hectares) which act as outliers.",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y8-19a-q9a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
     "type": "teacher_review",
     "difficulty": "medium",
+    "timeLimit": 180,
     "question": "Find the median and mean of the data represented in the stem-and-leaf plot below:\n\n```\n6 | 4 7\n7 | 1 2 3 4 7\n8 | 5 5 6 6 7\n9 | 2 2 2 4 4 5 5 5 6 6 8 8\n```",
-    "a": "Median = 89.5, Mean = 86",
-    "solution": "1. List the 24 values in order:\n   `64, 67, 71, 72, 73, 74, 77, 85, 85, 86, 86, 87, 92, 92, 92, 94, 94, 95, 95, 95, 96, 96, 98, 98`\n2. Find the median (average of 12th and 13th values):\n   $$\\text{Median} = \\frac{87 + 92}{2} = 89.5$$\n3. Find the mean by summing all values and dividing by 24:\n   $$\\text{Sum} = 2064 \\implies \\text{Mean} = \\frac{2064}{24} = 86$$",
-    "t": "Comparing means and medians",
+    "answer": "Median = 89.5, Mean = 86",
     "hint": "List all 24 numbers in order. Calculate the median using the 12th and 13th numbers, and the mean by dividing the total sum by 24.",
+    "solution": "Median = 89.5, Mean = 86",
     "solutionSteps": [
       {
-        "explanation": "List all 24 data points.",
-        "workingOut": "64, 67, 71, 72, 73, 74, 77, 85, 85, 86, 86, 87, 92, 92, 92, 94, 94, 95, 95, 95, 96, 96, 98, 98"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(64, 67, 71, 72, 73, 74, 77, 85, 85, 86, 86, 87, 92, 92, 92, 94, 94, 95, 95, 95, 96, 96, 98, 98\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the median by averaging 87 and 92.",
-        "workingOut": "\\text{Median} = \\frac{87 + 92}{2} = 89.5"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Median} = \\frac{87 + 92}{2} = 89.5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Calculate the mean by dividing the sum 2064 by 24.",
-        "workingOut": "\\text{Mean} = \\frac{2064}{24} = 86"
-      }
-    ],
-    "graphData": null
-  },
-  {
-    "id": "y8-19a-q9b",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "question": "Find the median and mean of the data represented in the stem-and-leaf plot below:\n\n```\n6 | 6\n7 | 6 8\n8 | 1 1 3 3 4 4 4 5 5 6 7 7 7 8\n9 | 0 0 1 1 2 8 8\n```",
-    "a": "Median = 85, Mean = 85.17",
-    "solution": "1. List the 24 values in order:\n   `66, 76, 78, 81, 81, 83, 83, 84, 84, 84, 85, 85, 85, 86, 87, 87, 87, 88, 90, 90, 91, 91, 92, 98, 98`\n2. Find the median (average of 12th and 13th values):\n   $$\\text{Median} = \\frac{85 + 85}{2} = 85$$\n3. Find the mean by summing all values and dividing by 24:\n   $$\\text{Sum} = 2044 \\implies \\text{Mean} = \\frac{2044}{24} = 85.1666\\dots \\approx 85.17$$",
-    "t": "Comparing means and medians",
-    "hint": "List all 24 numbers in order. Calculate the median using the 12th and 13th numbers, and the mean by dividing the total sum by 24.",
-    "solutionSteps": [
-      {
-        "explanation": "List all 24 data points.",
-        "workingOut": "66, 76, 78, 81, 81, 83, 83, 84, 84, 84, 85, 85, 85, 86, 87, 87, 87, 88, 90, 90, 91, 91, 92, 98, 98"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Mean} = \\frac{2064}{24} = 86\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the median by averaging the 12th and 13th values.",
-        "workingOut": "\\text{Median} = \\frac{85 + 85}{2} = 85"
-      },
-      {
-        "explanation": "Calculate the mean by dividing the sum 2044 by 24.",
-        "workingOut": "\\text{Mean} = \\frac{2044}{24} \\approx 85.17"
-      }
-    ],
-    "graphData": null
-  },
-  {
-    "id": "y8-19a-q10",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "question": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.",
-    "a": "See sub-questions for individual answers.",
-    "solution": "a) Stem-and-leaf plot:\n   ```\n   2 | 5 6 7 8 9 9\n   3 | 0 1 1 2 3 3 7 7 7 7 8 8\n   4 | 0 3\n   ```\nb) Sort the 20 values in ascending order:\n   `2.5, 2.6, 2.7, 2.8, 2.9, 2.9, 3.0, 3.1, 3.1, 3.2, 3.3, 3.3, 3.7, 3.7, 3.7, 3.7, 3.8, 3.8, 4.0, 4.3`\n   The median is the average of the 10th (3.2) and 11th (3.3) values: $\\text{Median} = \\frac{3.2 + 3.3}{2} = 3.25$ kg.\nc) Sum of the weights = $66.1$ kg. Mean = $\\frac{66.1}{20} = 3.305 \\approx 3.31$ kg.",
-    "t": "Comparing means and medians",
-    "hint": "Create the stem-and-leaf plot using the integer parts as stems. Sort the weights to find the median, and divide the sum by 20 to compute the mean.",
-    "solutionSteps": [
-      {
-        "explanation": "Group the numbers by their integer part (stems 2, 3, 4) and list leaves in ascending order.",
-        "workingOut": "\\text{Stems: 2, 3, 4}"
-      },
-      {
-        "explanation": "Identify the 10th and 11th values to find the median.",
-        "workingOut": "\\text{Median} = \\frac{3.2 + 3.3}{2} = 3.25"
-      },
-      {
-        "explanation": "Find the sum of all 20 values and divide by 20.",
-        "workingOut": "\\text{Mean} = \\frac{66.1}{20} = 3.305 \\approx 3.31"
+        "explanation": "Final answer: Median = 89.5, Mean = 86. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Median = 89.5, Mean = 86",
+        "graphData": null
       }
     ],
     "graphData": null,
-    "subQuestions": [
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y8-19a-q9b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 180,
+    "question": "Find the median and mean of the data represented in the stem-and-leaf plot below:\n\n```\n6 | 6\n7 | 6 8\n8 | 1 1 3 3 4 4 4 5 5 6 7 7 7 8\n9 | 0 0 1 1 2 8 8\n```",
+    "answer": "Median = 85, Mean = 85.17",
+    "hint": "List all 24 numbers in order. Calculate the median using the 12th and 13th numbers, and the mean by dividing the total sum by 24.",
+    "solution": "Median = 85, Mean = 85.17",
+    "solutionSteps": [
       {
-        "id": "y8-19a-q10a",
-        "type": "teacher_review",
-        "question": "a) Represent these data with a stem-and-leaf plot.",
-        "a": "2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(66, 76, 78, 81, 81, 83, 83, 84, 84, 84, 85, 85, 85, 86, 87, 87, 87, 88, 90, 90, 91, 91, 92, 98, 98\\)",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q10b",
-        "type": "short_answer",
-        "question": "b) Find the median value.",
-        "a": "3.25"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Median} = \\frac{85 + 85}{2} = 85\\)",
+        "graphData": null
       },
       {
-        "id": "y8-19a-q10c",
-        "type": "short_answer",
-        "question": "c) Find the mean value.",
-        "a": "3.31"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Mean} = \\frac{2044}{24} \\approx 85.17\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Median = 85, Mean = 85.17. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Median = 85, Mean = 85.17",
+        "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y8-19a-q10a",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 180,
+    "question": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.\na) Represent these data with a stem-and-leaf plot.",
+    "answer": "2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(2 | 5 6 7 8 9 9\n3 | 0 1 1 2 3 3 7 7 7 7 8 8\n4 | 0 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y8-19a-q10b",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.\nb) Find the median value.",
+    "opts": [
+      "\\(-3.25\\)",
+      "\\(2.25\\)",
+      "\\(3.25\\)",
+      "\\(4.25\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(3.25\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(3.25\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 3.25. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(3.25\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y8-19a-q10c",
+    "topicId": "y8-19a",
+    "c": "19A",
+    "t": "Comparing means and medians",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "The birth weights, in kilograms, of the first 20 babies born at a hospital in a selected month are as follows:\n\n`3.1, 2.9, 3.7, 2.9, 3.7, 3.8, 3.3, 4.0, 3.7, 4.3`\n`3.8, 2.8, 3.2, 3.1, 2.6, 2.7, 3.7, 2.5, 3.0, 3.3`\n\nAnswer the questions below.\nc) Find the mean value.",
+    "opts": [
+      "\\(-3.31\\)",
+      "\\(2.31\\)",
+      "\\(3.31\\)",
+      "\\(4.3100000000000005\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(3.31\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Comparing means and medians: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(3.31\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 3.31. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(3.31\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   }
 ];

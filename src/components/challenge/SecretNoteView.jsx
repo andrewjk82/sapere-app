@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   X, CheckCircle2, XCircle, Lightbulb, ArrowRight, ChevronDown,
-  Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock, Flag,
+  Sparkles, GraduationCap, MessageCircleQuestion, Send, BookLock,
 } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
@@ -482,14 +482,6 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     return undefined;
   }, [uid, studentProfile, phase]);
 
-  // Problem-report panel (flag a broken question)
-  const [reportOpen, setReportOpen] = useState(false);
-  const [reportMsg, setReportMsg] = useState('');
-  const [reportSending, setReportSending] = useState(false);
-  const [reportSentIds, setReportSentIds] = useState([]);
-  // 리포트 버튼 클릭 시점의 문제를 고정 — idx가 바뀌어도 올바른 문제를 가리킴
-  const [frozenReportQuestion, setFrozenReportQuestion] = useState(null);
-
   // Teacher-review panel
   const [reviewOpen, setReviewOpen] = useState(false);
   const [reviewMsg, setReviewMsg] = useState('');
@@ -698,55 +690,6 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     }
   };
 
-  // Lightweight "this question has a problem" report → same reports pipeline the
-  // teacher reviews (and can delete the question from, which purges it from
-  // everyone's Secret Note).
-  const sendReport = async () => {
-    // frozenReportQuestion: 버튼 클릭 시점에 고정된 문제 (idx 변경에 영향 없음)
-    const reportQ = frozenReportQuestion || question;
-    if (!reportQ || reportSending) return;
-    setReportSending(true);
-    try {
-      let reportSketchDataUrl = null;
-      try { reportSketchDataUrl = await canvasRef.current?.exportImage?.({ force: false }) || null; } catch { /* ignore */ }
-      await addDoc(collection(db, 'reports'), {
-        studentId: uid,
-        studentName: studentName || user?.displayName || user?.email || 'Student',
-        source: 'secret_note',
-        noteKind: kind,
-        questionId: reportQ.id || '',
-        studentAnswer: typeof answer === 'string' ? answer : (answer !== null && answer !== undefined ? JSON.stringify(answer) : ''),
-        sketchDataUrl: reportSketchDataUrl,
-        hasSketch: Boolean(reportSketchDataUrl),
-        questionData: {
-          id: reportQ.id || '',
-          question: reportQ.question || '',
-          answer: String(reportQ.answer ?? ''),
-          type: reportQ.type || '',
-          chapterTitle: reportQ.chapterTitle || '',
-          topicId: reportQ.topicId || '',
-          topicCode: reportQ.topicCode || '',
-          topicTitle: reportQ.topicTitle || '',
-          isManual: !!reportQ.isManual,
-          options: getOptions(reportQ).map((opt) =>
-            typeof opt === 'object' ? { text: String(opt.text || '') } : String(opt ?? ''),
-          ),
-        },
-        message: `⚠️ Problem report (Secret Note): ${reportMsg.trim() || 'This question looks wrong.'}`,
-        status: 'open',
-        createdAt: serverTimestamp(),
-      });
-      setReportSentIds((ids) => [...ids, reportQ.id]);
-      setFrozenReportQuestion(null);
-      setReportOpen(false);
-      setReportMsg('');
-    } catch (e) {
-      console.warn('secret note problem report failed:', e);
-    } finally {
-      setReportSending(false);
-    }
-  };
-
   // ── Render ───────────────────────────────────────────────────────────────
   const headerGradient = `linear-gradient(135deg, ${accent.from}, ${accent.to})`;
   const subtitle = phase === 'done' || phase === 'empty'
@@ -836,22 +779,6 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
               {activeQ.topicTitle || activeQ.chapterTitle}
             </div>
           ) : <span />}
-          {/* Report a problem with this question (real question only, not twins) */}
-          {!isTwinPhase && !isPreview && (
-            reportSentIds.includes(question?.id) ? (
-              <span style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontSize: '0.72rem', fontWeight: 800, color: '#16a34a', flexShrink: 0 }}>
-                <CheckCircle2 size={13} /> Reported
-              </span>
-            ) : (
-              <button
-                onClick={() => { setFrozenReportQuestion(question); setReportOpen(true); }}
-                title="Report a problem with this question"
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', flexShrink: 0, padding: '6px 11px', borderRadius: '10px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', fontSize: '0.72rem', fontWeight: 800, cursor: 'pointer' }}
-              >
-                <Flag size={13} /> Report
-              </button>
-            )
-          )}
         </div>
 
         {/* graph_sketch: graphData is the answer being constructed — hide it
@@ -1098,51 +1025,6 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         )}
       </AnimatePresence>
 
-      {/* Problem-report panel */}
-      <AnimatePresence>
-        {reportOpen && (
-          <>
-            <motion.div
-              className="sn__rv-backdrop"
-              initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-              onClick={() => !reportSending && setReportOpen(false)}
-            />
-            <motion.div
-              className="sn__rv"
-              initial={{ opacity: 0, x: '-50%', y: '-46%', scale: 0.96 }}
-              animate={{ opacity: 1, x: '-50%', y: '-50%', scale: 1 }}
-              exit={{ opacity: 0, x: '-50%', y: '-46%', scale: 0.96 }}
-            >
-              <div className="sn__rv-head" style={{ background: 'linear-gradient(135deg, #f87171, #e11d48)' }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}><Flag size={15} /> Report a problem</span>
-                <button onClick={() => !reportSending && setReportOpen(false)}><X size={16} /></button>
-              </div>
-              <div className="sn__rv-body">
-                <p className="sn__muted" style={{ margin: '0 0 10px' }}>
-                  Is something wrong with this question (e.g. the answer looks
-                  incorrect, or it doesn't make sense)? Tell your teacher — they
-                  can fix or remove it.
-                </p>
-                <textarea
-                  className="sn__rv-msg"
-                  placeholder="What's wrong with this question?"
-                  value={reportMsg}
-                  onChange={(e) => setReportMsg(e.target.value)}
-                  rows={3}
-                />
-                <button
-                  className="sn__btn sn__btn--primary"
-                  style={{ background: 'linear-gradient(135deg, #f87171, #e11d48)', width: '100%' }}
-                  disabled={reportSending}
-                  onClick={sendReport}
-                >
-                  {reportSending ? 'Sending...' : (<>Send report <Flag size={15} /></>)}
-                </button>
-              </div>
-            </motion.div>
-          </>
-        )}
-      </AnimatePresence>
     </NoteShell>
   );
 };

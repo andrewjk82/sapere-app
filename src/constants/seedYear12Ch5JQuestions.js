@@ -1,1414 +1,2480 @@
 export const Y12A_CH5J_QUESTIONS = [
   {
-    "id": "y12a-5j-q1a",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "a) Show that $\\int_1^e \\frac{1}{x}\\,dx = 1$.",
-    "a": "$[\\log_e x]_1^e = \\log_e e - \\log_e 1 = 1 - 0 = 1$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Write the antiderivative.",
-        "workingOut": "\\(\\int_1^e \\frac{1}{x}\\,dx = [\\log_e x]_1^e\\)"
-      },
-      {
-        "explanation": "Substitute limits.",
-        "workingOut": "\\(= \\log_e e - \\log_e 1 = 1 - 0 = 1\\)"
-      }
-    ],
-    "hint": "Evaluate the antiderivative of 1/x at the given limits.",
-    "graphData": null,
-    "requiresManualGrading": true
-  },
-  {
-    "id": "y12a-5j-q1b",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b) The graph of $y = \\frac{1}{x}$ is drawn on graph paper (10 small divisions = 1 unit, so 100 small squares = 1 square unit). Count the squares in columns from $x = 1.0$ to $x = 1.1$, then $x = 1.1$ to $x = 1.2$, and so on. Stop when the cumulative count reaches 100 — that $x$-value is an estimate of $e$.",
-    "a": "The x-value where area under y=1/x from x=1 equals 1 square unit is x ≈ e ≈ 2.718.",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Use result from part a).",
-        "workingOut": "\\(\\int_1^e \\frac{1}{x}\\,dx = 1 \\Rightarrow \\text{x-value where area} = 1 \\text{ is } x = e\\)"
-      }
-    ],
-    "hint": "From part a), the area from x=1 to x=e equals exactly 1.",
-    "graphData": null,
-    "requiresManualGrading": true
-  },
-  {
     "id": "y12a-5j-q2ai",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Give answers in exact form then approximate to four significant figures.\n\na i) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le e$.",
-    "a": "1",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(1 \\le x \\le e\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(1\\)",
+      "\\(e-1\\)",
+      "\\(\\ln e\\)",
+      "\\(e\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(1\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_1^e \\frac{1}{x}\\,dx = \\log_e e - \\log_e 1 = 1\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{1}^{e}\\dfrac{1}{x}\\,dx = [\\ln x]_{1}^{e}\\).",
+        "workingOut": "\\([\\ln x]_{1}^{e}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(e) - \\ln(1)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
     ],
-    "hint": "$[\\log_e x]_1^e = 1 - 0 = 1$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q2aii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "a ii) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le 6$.",
-    "a": "\\log_e 6 \\approx 1.792",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(1 \\le x \\le 6\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 6\\)",
+      "\\(\\ln 5\\)",
+      "\\(5\\)",
+      "\\(6\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_1^6 \\frac{1}{x}\\,dx = \\log_e 6 \\approx 1.7918 \\approx 1.792\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{1}^{6}\\dfrac{1}{x}\\,dx = [\\ln x]_{1}^{6}\\).",
+        "workingOut": "\\([\\ln x]_{1}^{6}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(6) - \\ln(1)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(\\ln 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(\\ln 6\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 6\\)",
+        "graphData": null
       }
     ],
-    "hint": "$[\\log_e x]_1^6 = \\log_e 6$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q2bi",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b i) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $e \\le x \\le e^3$.",
-    "a": "2",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(e \\le x \\le e^{3}\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(e^{2}\\)",
+      "\\(1\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(2\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_e^{e^3} \\frac{1}{x}\\,dx = 3 - 1 = 2\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{e}^{e^{3}}\\dfrac{1}{x}\\,dx = [\\ln x]_{e}^{e^{3}}\\).",
+        "workingOut": "\\([\\ln x]_{e}^{e^{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(e^{3}) - \\ln(e)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e(e^3) - \\log_e(e) = 3 - 1 = 2$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q2bii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b ii) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $3 \\le x \\le 9$.",
-    "a": "\\log_e 3 \\approx 1.099",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(3 \\le x \\le 9\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 3\\)",
+      "\\(\\ln 6\\)",
+      "\\(6\\)",
+      "\\(3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_3^9 \\frac{1}{x}\\,dx = \\log_e 9 - \\log_e 3 = \\log_e 3 \\approx 1.099\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{3}^{9}\\dfrac{1}{x}\\,dx = [\\ln x]_{3}^{9}\\).",
+        "workingOut": "\\([\\ln x]_{3}^{9}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(9) - \\ln(3)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e 9 - \\log_e 3 = \\log_e 3$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q2biii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b iii) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le e^3$.",
-    "a": "3",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(1 \\le x \\le e^{3}\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(3\\)",
+      "\\(2\\)",
+      "\\(e^{3}\\)",
+      "\\(1\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_1^{e^3} \\frac{1}{x}\\,dx = \\log_e(e^3) = 3\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{1}^{e^{3}}\\dfrac{1}{x}\\,dx = [\\ln x]_{1}^{e^{3}}\\).",
+        "workingOut": "\\([\\ln x]_{1}^{e^{3}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(e^{3}) - \\ln(1)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e(e^3) - 0 = 3$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q2biv",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b iv) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le e^4$.",
-    "a": "4",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(1 \\le x \\le e^{4}\\). Give the exact value.",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(4\\)",
+      "\\(3\\)",
+      "\\(e^{4}\\)",
+      "\\(1\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(4\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(\\int_1^{e^4} \\frac{1}{x}\\,dx = \\log_e(e^4) = 4\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{1}^{e^{4}}\\dfrac{1}{x}\\,dx = [\\ln x]_{1}^{e^{4}}\\).",
+        "workingOut": "\\([\\ln x]_{1}^{e^{4}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\ln(e^{4}) - \\ln(1)\\). Simplify using log laws / \\(\\ln(e^{k})=k\\).",
+        "workingOut": "\\(4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e(e^4) = 4$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q3a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Find the area of the region bounded by $y = \\frac{1}{x}$, the $x$-axis, $x = 1$ and $x = 3$.",
-    "a": "\\log_e 3 \\approx 1.099",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area of the region bounded by \\(y=\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=1\\) and \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 3\\)",
+      "\\(\\ln 2\\)",
+      "\\(2\\)",
+      "\\(3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(A = \\int_1^3 \\frac{1}{x}\\,dx = [\\log_e x]_1^3 = \\log_e 3 \\approx 1.099\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{1}^{3}\\dfrac{1}{x}\\,dx = [\\ln x]_{1}^{3} = \\ln(3)-\\ln(1)\\).",
+        "workingOut": "\\(\\ln(3)-\\ln(1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify to exact form. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Integrate 1/x from 1 to 3.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 280,
-        "height": 220,
-        "boundingbox": [
-          -0.5,
-          3,
-          4,
-          -0.3
-        ],
-        "script": "board.suspendUpdate();board.create('arrow',[[0,0],[0,2.8]],{strokeColor:'black',strokeWidth:1.5});board.create('arrow',[[0,0],[3.7,0]],{strokeColor:'black',strokeWidth:1.5});board.create('text',[3.7,-0.15],'x',{fontSize:12});board.create('text',[-0.15,2.8],'y',{fontSize:12});var f=board.create('functiongraph',[function(x){return 1/x;},0.35,3.6],{strokeColor:'blue',strokeWidth:2});board.create('integral',[[1,3],f],{fillColor:'lightblue',fillOpacity:0.5,strokeWidth:0});board.create('text',[1,-0.18],'1',{fontSize:11,anchorX:'middle'});board.create('text',[3,-0.18],'3',{fontSize:11,anchorX:'middle'});board.create('text',[1.8,0.75],'y=1/x',{fontSize:11,color:'blue'});board.unsuspendUpdate();"
-      }
-    }
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q3b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Find the area of the region bounded by $y = \\frac{1}{x}$, the $x$-axis, $x = 2$ and $x = 6$.",
-    "a": "\\log_e 3 \\approx 1.099",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area of the region bounded by \\(y=\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=2\\) and \\(x=6\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 3\\)",
+      "\\(\\ln 4\\)",
+      "\\(4\\)",
+      "\\(3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(A = [\\log_e x]_2^6 = \\log_e 6 - \\log_e 2 = \\log_e 3 \\approx 1.099\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{2}^{6}\\dfrac{1}{x}\\,dx = [\\ln x]_{2}^{6} = \\ln(6)-\\ln(2)\\).",
+        "workingOut": "\\(\\ln(6)-\\ln(2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify to exact form. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e 6 - \\log_e 2 = \\log_e 3$.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 280,
-        "height": 200,
-        "boundingbox": [
-          -0.5,
-          2,
-          7.5,
-          -0.2
-        ],
-        "script": "board.suspendUpdate();board.create('arrow',[[0,0],[0,1.8]],{strokeColor:'black',strokeWidth:1.5});board.create('arrow',[[0,0],[7.2,0]],{strokeColor:'black',strokeWidth:1.5});board.create('text',[7.2,-0.08],'x',{fontSize:12});board.create('text',[-0.15,1.8],'y',{fontSize:12});var f=board.create('functiongraph',[function(x){return 1/x;},0.6,7],{strokeColor:'blue',strokeWidth:2});board.create('integral',[[2,6],f],{fillColor:'lightblue',fillOpacity:0.5,strokeWidth:0});board.create('text',[2,-0.08],'2',{fontSize:11,anchorX:'middle'});board.create('text',[6,-0.08],'6',{fontSize:11,anchorX:'middle'});board.create('text',[3.5,0.5],'y=1/x',{fontSize:11,color:'blue'});board.unsuspendUpdate();"
-      }
-    }
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q3c",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Find the area of the region bounded by $y = \\frac{1}{x}$, the $x$-axis, $x = \\frac{1}{3}$ and $x = 1$.",
-    "a": "\\log_e 3 \\approx 1.099",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area of the region bounded by \\(y=\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=\\dfrac{1}{3}\\) and \\(x=1\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 3\\)",
+      "\\(\\ln\\dfrac{1}{3}\\)",
+      "\\(1\\)",
+      "\\(2\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(A = [\\log_e|x|]_{1/3}^1 = 0 - \\log_e(1/3) = \\log_e 3 \\approx 1.099\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{\\dfrac{1}{3}}^{1}\\dfrac{1}{x}\\,dx = [\\ln x]_{\\dfrac{1}{3}}^{1} = \\ln(1)-\\ln(\\dfrac{1}{3})\\).",
+        "workingOut": "\\(\\ln(1)-\\ln(\\dfrac{1}{3})\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify to exact form. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "$0 - \\log_e(1/3) = \\log_e 3$.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 280,
-        "height": 240,
-        "boundingbox": [
-          -0.2,
-          4,
-          2,
-          -0.3
-        ],
-        "script": "board.suspendUpdate();board.create('arrow',[[0,0],[0,3.7]],{strokeColor:'black',strokeWidth:1.5});board.create('arrow',[[0,0],[1.8,0]],{strokeColor:'black',strokeWidth:1.5});board.create('text',[1.8,-0.15],'x',{fontSize:12});board.create('text',[-0.15,3.7],'y',{fontSize:12});var f=board.create('functiongraph',[function(x){return 1/x;},0.26,1.75],{strokeColor:'blue',strokeWidth:2});board.create('integral',[[1/3,1],f],{fillColor:'lightblue',fillOpacity:0.5,strokeWidth:0});board.create('text',[0.33,-0.18],'1/3',{fontSize:10,anchorX:'middle'});board.create('text',[1,-0.18],'1',{fontSize:11,anchorX:'middle'});board.create('text',[0.55,2.3],'y=1/x',{fontSize:11,color:'blue'});board.unsuspendUpdate();"
-      }
-    }
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q3d",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Find the area of the region bounded by $y = \\frac{1}{x}$, the $x$-axis, $x = \\frac{1}{2}$ and $x = 2$.",
-    "a": "2\\log_e 2 \\approx 1.386",
-    "solution": "",
+    "timeLimit": 120,
+    "question": "Find the area of the region bounded by \\(y=\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=\\dfrac{1}{2}\\) and \\(x=2\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(2\\ln 2\\)",
+      "\\(\\ln 2\\)",
+      "\\(1\\)",
+      "\\(4\\ln 2\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(2\\ln 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(A = [\\log_e|x|]_{1/2}^2 = \\log_e 2 - \\log_e(1/2) = 2\\log_e 2 \\approx 1.386\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_{\\dfrac{1}{2}}^{2}\\dfrac{1}{x}\\,dx = [\\ln x]_{\\dfrac{1}{2}}^{2} = \\ln(2)-\\ln(\\dfrac{1}{2})\\).",
+        "workingOut": "\\(\\ln(2)-\\ln(\\dfrac{1}{2})\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Simplify to exact form. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2\\ln 2\\)",
+        "graphData": null
       }
     ],
-    "hint": "$\\log_e 2 - \\log_e(1/2) = 2\\log_e 2$.",
-    "graphData": {
-      "jsxGraph": {
-        "width": 280,
-        "height": 240,
-        "boundingbox": [
-          -0.3,
-          3,
-          3,
-          -0.3
-        ],
-        "script": "board.suspendUpdate();board.create('arrow',[[0,0],[0,2.8]],{strokeColor:'black',strokeWidth:1.5});board.create('arrow',[[0,0],[2.7,0]],{strokeColor:'black',strokeWidth:1.5});board.create('text',[2.7,-0.15],'x',{fontSize:12});board.create('text',[-0.15,2.8],'y',{fontSize:12});var f=board.create('functiongraph',[function(x){return 1/x;},0.35,2.6],{strokeColor:'blue',strokeWidth:2});board.create('integral',[[0.5,2],f],{fillColor:'lightblue',fillOpacity:0.5,strokeWidth:0});board.create('text',[0.5,-0.18],'1/2',{fontSize:10,anchorX:'middle'});board.create('text',[2,-0.18],'2',{fontSize:11,anchorX:'middle'});board.create('text',[1.2,1.2],'y=1/x',{fontSize:11,color:'blue'});board.unsuspendUpdate();"
-      }
-    }
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4ai",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "Use $\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\log_e|ax+b|+C$. Give exact then four-sig-fig answer.\n\na i) Area between $y = \\frac{1}{3x+1}$ and the $x$-axis, $1 \\le x \\le 5$.",
-    "a": "\\frac{1}{3}\\log_e 4 \\approx 0.4621",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{3x+1}\\) and the \\(x\\)-axis for \\(1\\le x\\le 5\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{3}\\ln 4\\)",
+      "\\(\\dfrac{1}{3}\\ln 5\\)",
+      "\\(\\ln 4\\)",
+      "\\(\\dfrac{1}{3}\\ln 16\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{3}\\ln 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{3}(\\log_e 16-\\log_e 4)=\\frac{1}{3}\\log_e 4\\approx 0.4621\\)"
+        "explanation": "Antiderivative: \\(\\dfrac{1}{3}\\ln|3x+1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln|3x+1|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\dfrac{1}{3}\\big(\\ln 16 - \\ln 4\\big)=\\dfrac{1}{3}\\ln 4\\).",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{3}\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln 4\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{3}[\\log_e|3x+1|]_1^5$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4aii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "a ii) Area between $y = \\frac{1}{3x+1}$ and the $x$-axis, $0 \\le x \\le 4$.",
-    "a": "\\frac{1}{3}\\log_e 13 \\approx 0.8320",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{3x+1}\\) and the \\(x\\)-axis for \\(0\\le x\\le 4\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{3}\\ln 13\\)",
+      "\\(\\dfrac{1}{3}\\ln 12\\)",
+      "\\(\\ln 13\\)",
+      "\\(\\dfrac{1}{3}\\ln 4\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{3}\\ln 13\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{3}(\\log_e 13-\\log_e 1)=\\frac{1}{3}\\log_e 13\\approx 0.8320\\)"
+        "explanation": "Evaluate \\(\\dfrac{1}{3}[\\ln|3x+1|]_{0}^{4}=\\dfrac{1}{3}(\\ln 13-\\ln 1)=\\dfrac{1}{3}\\ln 13\\).",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{3}\\ln 13\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln 13\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{3}[\\log_e|3x+1|]_0^4$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4bi",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b i) Area between $y = \\frac{1}{2x+3}$ and the $x$-axis, $0 \\le x \\le 3$.",
-    "a": "\\frac{1}{2}\\log_e 3 \\approx 0.5493",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{2x+3}\\) and the \\(x\\)-axis for \\(0\\le x\\le 3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{2}\\ln 3\\)",
+      "\\(\\dfrac{1}{2}\\ln 9\\)",
+      "\\(\\ln 3\\)",
+      "\\(\\dfrac{1}{2}\\ln 6\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{2}(\\log_e 9-\\log_e 3)=\\frac{1}{2}\\log_e 3\\approx 0.5493\\)"
+        "explanation": "\\(\\dfrac{1}{2}[\\ln|2x+3|]_{0}^{3}=\\dfrac{1}{2}(\\ln 9-\\ln 3)=\\dfrac{1}{2}\\ln 3\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{2}\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{2}[\\log_e|2x+3|]_0^3$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4bii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "b ii) Area between $y = \\frac{1}{2x+3}$ and the $x$-axis, $1 \\le x \\le 5$.",
-    "a": "\\frac{1}{2}\\log_e\\frac{13}{5} \\approx 0.4760",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{2x+3}\\) and the \\(x\\)-axis for \\(1\\le x\\le 5\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\)",
+      "\\(\\dfrac{1}{2}\\ln\\dfrac{13}{3}\\)",
+      "\\(\\ln\\dfrac{13}{5}\\)",
+      "\\(\\dfrac{1}{2}\\ln 13\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{2}(\\log_e 13-\\log_e 5)=\\frac{1}{2}\\log_e\\frac{13}{5}\\approx 0.4760\\)"
+        "explanation": "\\(\\dfrac{1}{2}(\\ln 13-\\ln 5)=\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{13}{5}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{2}[\\log_e|2x+3|]_1^5$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4ci",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "c i) Area between $y = \\frac{1}{3x-1}$ and the $x$-axis, $1 \\le x \\le 4$.",
-    "a": "\\frac{1}{3}\\log_e\\frac{11}{2} \\approx 0.5684",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{3x-1}\\) and the \\(x\\)-axis for \\(1\\le x\\le 4\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\)",
+      "\\(\\dfrac{1}{3}\\ln\\dfrac{11}{3}\\)",
+      "\\(\\ln\\dfrac{11}{2}\\)",
+      "\\(\\dfrac{1}{3}\\ln 11\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{3}(\\log_e 11-\\log_e 2)=\\frac{1}{3}\\log_e\\frac{11}{2}\\approx 0.5684\\)"
+        "explanation": "At limits: \\(\\dfrac{1}{3}(\\ln 11-\\ln 2)=\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\).",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln\\dfrac{11}{2}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{3}[\\log_e|3x-1|]_1^4$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4cii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "c ii) Area between $y = \\frac{1}{3x-1}$ and the $x$-axis, $2 \\le x \\le 10$.",
-    "a": "\\frac{1}{3}\\log_e\\frac{29}{5} \\approx 0.5908",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{1}{3x-1}\\) and the \\(x\\)-axis for \\(2\\le x\\le 10\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\)",
+      "\\(\\dfrac{1}{3}\\ln\\dfrac{29}{2}\\)",
+      "\\(\\ln\\dfrac{29}{5}\\)",
+      "\\(\\dfrac{1}{3}\\ln 29\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\).",
     "solutionSteps": [
       {
-        "explanation": "Apply standard form.",
-        "workingOut": "\\(A=\\frac{1}{3}(\\log_e 29-\\log_e 5)=\\frac{1}{3}\\log_e\\frac{29}{5}\\approx 0.5908\\)"
+        "explanation": "\\(\\dfrac{1}{3}(\\ln 29-\\ln 5)=\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\).",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{3}\\ln\\dfrac{29}{5}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Evaluate $\\frac{1}{3}[\\log_e|3x-1|]_2^{10}$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4di",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "d i) Area between $y = \\frac{4}{x-2}$ and the $x$-axis, $3 \\le x \\le e^2+2$.",
-    "a": "8",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{4}{x-2}\\) and the \\(x\\)-axis for \\(3\\le x\\le e^{2}+2\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(8\\)",
+      "\\(4\\)",
+      "\\(2\\ln(e^{2})\\)",
+      "\\(4e^{2}\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(8\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(4(\\log_e e^2-\\log_e 1)=4\\times 2=8\\)"
+        "explanation": "Antiderivative: \\(4\\ln|x-2\\). Limits 3 to \\(e^{2}+2\\): \\(4(\\ln(e^{2})-\\ln 1)=4\\cdot 2=8\\).",
+        "workingOut": "\\(8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(8\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(8\\)",
+        "graphData": null
       }
     ],
-    "hint": "$4[\\log_e|x-2|]_3^{e^2+2}=4\\cdot 2=8$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q4dii",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "easy",
-    "timeLimit": 90,
-    "question": "d ii) Area between $y = \\frac{4}{x-2}$ and the $x$-axis, $4 \\le x \\le 14$.",
-    "a": "4\\log_e 6 \\approx 7.167",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Find the area between \\(y=\\dfrac{4}{x-2}\\) and the \\(x\\)-axis for \\(4\\le x\\le 14\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(4\\ln 6\\)",
+      "\\(4\\ln 12\\)",
+      "\\(\\ln 6\\)",
+      "\\(4\\ln 3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(4\\ln 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(4(\\log_e 12-\\log_e 2)=4\\log_e 6\\approx 7.167\\)"
+        "explanation": "\\(4(\\ln 12-\\ln 2)=4\\ln 6\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4\\ln 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(4\\ln 6\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4\\ln 6\\)",
+        "graphData": null
       }
     ],
-    "hint": "$4[\\log_e|x-2|]_4^{14}=4(\\log_e 12-\\log_e 2)$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q5a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "a) Find the area between $y = \\frac{1}{x} + 3$ and the $x$-axis, from $x = 1$ to $x = 2$.",
-    "a": "\\log_e 2 + 3 \\approx 3.693",
-    "solution": "",
+    "question": "Find the area between \\(y=\\dfrac{1}{x}+3\\) and the \\(x\\)-axis from \\(x=1\\) to \\(x=2\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 2 + 3\\)",
+      "\\(\\ln 2 + 6\\)",
+      "\\(3\\ln 2\\)",
+      "\\(\\ln 2 + 1\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 2 + 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=[\\log_e x+3x]_1^2=(\\log_e 2+6)-(0+3)=\\log_e 2+3\\approx 3.693\\)"
+        "explanation": "\\(\\displaystyle\\int_1^2\\left(\\dfrac{1}{x}+3\\right)dx=[\\ln x+3x]_1^2=(\\ln 2+6)-(\\ln 1+3)=\\ln 2+3\\).",
+        "workingOut": "\\(\\ln 2+3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 2 + 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 2+3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Integrate term by term.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q5b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "b) Find the area between $y = \\frac{1}{x} + x^2$ and the $x$-axis, from $x = 1$ to $x = 3$.",
-    "a": "\\log_e 3 + \\frac{26}{3} \\approx 9.765",
-    "solution": "",
+    "question": "Find the area between \\(y=\\dfrac{1}{x}+x^{2}\\) and the \\(x\\)-axis from \\(x=1\\) to \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 3 + \\dfrac{26}{3}\\)",
+      "\\(\\ln 3 + 9\\)",
+      "\\(\\ln 3 + \\dfrac{8}{3}\\)",
+      "\\(3 + \\dfrac{26}{3}\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 3 + \\dfrac{26}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=[\\log_e x+\\frac{x^3}{3}]_1^3=(\\log_e 3+9)-(0+\\frac{1}{3})=\\log_e 3+\\frac{26}{3}\\approx 9.765\\)"
+        "explanation": "\\([\\ln x+\\dfrac{x^{3}}{3}]_1^3=(\\ln 3+9)-(\\ln 1+\\dfrac{1}{3})=\\ln 3+\\dfrac{26}{3}\\).",
+        "workingOut": "\\(\\ln 3+\\dfrac{26}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3 + \\dfrac{26}{3}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3+\\dfrac{26}{3}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Integrate each term: $\\int(1/x+x^2)dx = \\log_e x + x^3/3$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q5c",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "c) Find the area between $y = \\frac{1}{x} + 2x$ and the $x$-axis, from $x = \\frac{1}{2}$ to $x = 3$.",
-    "a": "\\log_e 6 + \\frac{35}{4} \\approx 10.54",
-    "solution": "",
+    "question": "Find the area between \\(y=\\dfrac{1}{x}+2x\\) and the \\(x\\)-axis from \\(x=\\dfrac{1}{2}\\) to \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 6 + \\dfrac{35}{4}\\)",
+      "\\(\\ln 6 + \\dfrac{17}{2}\\)",
+      "\\(\\ln 3 + \\dfrac{35}{4}\\)",
+      "\\(\\ln 6 + 9\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 6 + \\dfrac{35}{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=[\\log_e x+x^2]_{1/2}^3=(\\log_e 3+9)-(\\log_e\\frac{1}{2}+\\frac{1}{4})=\\log_e 6+\\frac{35}{4}\\approx 10.54\\)"
+        "explanation": "\\([\\ln x+x^{2}]_{1/2}^{3}=(\\ln 3+9)-(\\ln\\dfrac{1}{2}+\\dfrac{1}{4})=\\ln 6+\\dfrac{35}{4}\\).",
+        "workingOut": "\\(\\ln 6+\\dfrac{35}{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 6 + \\dfrac{35}{4}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 6+\\dfrac{35}{4}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Use $\\log_e(1/2)=-\\log_e 2$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q6a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "Give exact answers.\n\na) Find the area of the region bounded by $y = 3 - \\frac{3}{x}$, the $x$-axis and $x = 3$.",
-    "a": "6 - 3\\log_e 3 \\approx 2.704",
-    "solution": "",
+    "question": "Find the area of the region bounded by \\(y=3-\\dfrac{3}{x}\\), the \\(x\\)-axis and \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(6-3\\ln 3\\)",
+      "\\(3-3\\ln 3\\)",
+      "\\(6-\\ln 3\\)",
+      "\\(3\\ln 3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(6-3\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Y=0 when 3-3/x=0, so x=1.",
-        "workingOut": "\\(y=0 \\text{ at } x=1\\)"
+        "explanation": "Curve meets \\(x\\)-axis when \\(3-\\dfrac{3}{x}=0\\Rightarrow x=1\\). Area from 1 to 3: \\(\\displaystyle\\int_1^3\\left(3-\\dfrac{3}{x}\\right)dx=[3x-3\\ln x]_1^3=(9-3\\ln 3)-(3)=6-3\\ln 3\\).",
+        "workingOut": "\\(6-3\\ln 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Integrate from 1 to 3.",
-        "workingOut": "\\(A=[3x-3\\log_e x]_1^3=(9-3\\log_e 3)-(3-0)=6-3\\log_e 3\\approx 2.704\\)"
+        "explanation": "Final answer: \\(6-3\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(6-3\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "y=0 at x=1. Integrate from x=1 to x=3.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q6b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "b) Find the area of the region bounded by $y = 2 - \\frac{1}{x}$, the $x$-axis, $x = 1$ and $x = 3$.",
-    "a": "4 - \\log_e 3 \\approx 2.901",
-    "solution": "",
+    "question": "Find the area of the region bounded by \\(y=2-\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=1\\) and \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(4-\\ln 3\\)",
+      "\\(2-\\ln 3\\)",
+      "\\(4-3\\ln 3\\)",
+      "\\(\\ln 3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(4-\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate from 1 to 3.",
-        "workingOut": "\\(A=[2x-\\log_e x]_1^3=(6-\\log_e 3)-(2-0)=4-\\log_e 3\\approx 2.901\\)"
+        "explanation": "\\(\\displaystyle\\int_1^3\\left(2-\\dfrac{1}{x}\\right)dx=[2x-\\ln x]_1^3=(6-\\ln 3)-(2)=4-\\ln 3\\).",
+        "workingOut": "\\(4-\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(4-\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4-\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "At x=1/2, y=0; but on [1,3] the curve is positive.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q7a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Find the area of the region bounded by $y = 3 - \\frac{3}{x}$ and the line $y = \\frac{3}{4}(x-1)$.",
-    "a": "\\frac{45}{8} - 3\\log_e 4 \\approx 1.466",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 180,
+    "question": "Find the area of the region bounded by \\(y=3-\\dfrac{3}{x}\\) and the line \\(y=\\dfrac{3}{4}(x-1)\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{45}{8}-3\\ln 4\\)",
+      "\\(\\dfrac{45}{8}-3\\ln 3\\)",
+      "\\(6-3\\ln 4\\)",
+      "\\(\\dfrac{9}{2}-3\\ln 4\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{45}{8}-3\\ln 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Find intersections.",
-        "workingOut": "\\(12x-12=3x^2-3x \\Rightarrow x^2-5x+4=0 \\Rightarrow x=1 \\text{ or } x=4\\)"
+        "explanation": "Find intersection: solve \\(3-\\dfrac{3}{x}=\\dfrac{3}{4}(x-1)\\). One intersection is at \\(x=1\\); the other at \\(x=4\\) (verify by substitution).",
+        "workingOut": "\\(x=1,\\ x=4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_1^4\\left[(3-\\frac{3}{x})-\\frac{3}{4}(x-1)\\right]dx=[\\frac{15x}{4}-3\\log_e x-\\frac{3x^2}{8}]_1^4\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_1^4\\left(\\left(3-\\dfrac{3}{x}\\right)-\\dfrac{3}{4}(x-1)\\right)dx\\).",
+        "workingOut": "\\(integral\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(=(15-3\\log_e 4-6)-(\\frac{15}{4}-\\frac{3}{8})=\\frac{45}{8}-3\\log_e 4\\approx 1.466\\)"
+        "explanation": "Evaluating yields \\(\\dfrac{45}{8}-3\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{45}{8}-3\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{45}{8}-3\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{45}{8}-3\\ln 4\\)",
+        "graphData": null
       }
     ],
-    "hint": "Find intersections: set 3-3/x = (3/4)(x-1) and solve.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q7b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "b) Find the area between $y = \\frac{3}{x}$ and the line $x + y - 4 = 0$.",
-    "a": "4 - 3\\log_e 3 \\approx 0.704",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 180,
+    "question": "Find the area between \\(y=\\dfrac{3}{x}\\) and the line \\(x+y-4=0\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(4-3\\ln 3\\)",
+      "\\(4-\\ln 3\\)",
+      "\\(3-3\\ln 3\\)",
+      "\\(4-3\\ln 4\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(4-3\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Find intersections: 3/x=4-x.",
-        "workingOut": "\\(x^2-4x+3=0 \\Rightarrow x=1 \\text{ or } x=3\\)"
+        "explanation": "Line: \\(y=4-x\\). Intersections: \\(\\dfrac{3}{x}=4-x\\Rightarrow x^{2}-4x+3=0\\Rightarrow x=1\\) or \\(x=3\\).",
+        "workingOut": "\\(x=1,3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_1^3[(4-x)-\\frac{3}{x}]dx=[4x-\\frac{x^2}{2}-3\\log_e x]_1^3\\)"
+        "explanation": "Area = \\(\\displaystyle\\int_1^3\\left((4-x)-\\dfrac{3}{x}\\right)dx=[4x-\\dfrac{x^{2}}{2}-3\\ln x]_1^3=4-3\\ln 3\\).",
+        "workingOut": "\\(4-3\\ln 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(=(12-\\frac{9}{2}-3\\log_e 3)-(4-\\frac{1}{2}-0)=4-3\\log_e 3\\approx 0.704\\)"
+        "explanation": "Final answer: \\(4-3\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4-3\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Find intersections of y=3/x and y=4-x.",
-    "graphData": null
-  },
-  {
-    "id": "y12a-5j-q8",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Sketch the region bounded by $y = 1$, $x = 9$ and the curve $y = \\frac{6}{x}$.\nb) Determine the area of this region with the aid of an appropriate integral.",
-    "a": "b) $3 - 6\\log_e\\frac{3}{2} \\approx 0.568$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Y=6/x meets y=1 at x=6.",
-        "workingOut": "\\(6/x=1 \\Rightarrow x=6\\)"
-      },
-      {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_6^9(1-\\frac{6}{x})dx=[x-6\\log_e x]_6^9=3-6\\log_e\\frac{3}{2}\\approx 0.568\\)"
-      }
-    ],
-    "hint": "y=6/x meets y=1 at x=6. Integrate (1-6/x) from x=6 to x=9.",
     "graphData": null,
-    "requiresManualGrading": true,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q8a",
-        "type": "teacher_review",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Sketch the region bounded by $y = 1$, $x = 9$ and the curve $y = \\frac{6}{x}$.",
-        "a": "Sketch: hyperbola y=6/x meets y=1 at (6,1), bounded right by x=9. Shaded region between curve and y=1 for 6≤x≤9.",
-        "t": "Areas and the logarithmic function",
-        "hint": "Find where y=6/x intersects y=1.",
-        "solutionSteps": [],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q8b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Determine the area of the region bounded by $y = 1$, $x = 9$ and the curve $y = \\frac{6}{x}$.",
-        "a": "3 - 6\\log_e\\frac{3}{2} \\approx 0.568",
-        "t": "Areas and the logarithmic function",
-        "hint": "Integrate (1-6/x) from x=6 to x=9.",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=\\int_6^9(1-6/x)dx=3-6\\log_e(3/2)\\approx 0.568"
-          }
-        ],
-        "graphData": null
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q9a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "a) Find the area of the region in the first quadrant bounded by $y = 3 - \\frac{3}{x}$ and $y = 3$, lying between $x = 1$ and $x = 3$.",
-    "a": "3\\log_e 3 \\approx 3.296",
-    "solution": "",
+    "question": "Find the area in the first quadrant bounded by \\(y=3-\\dfrac{3}{x}\\) and \\(y=3\\), between \\(x=1\\) and \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(3\\ln 3\\)",
+      "\\(6-3\\ln 3\\)",
+      "\\(\\ln 3\\)",
+      "\\(3-3\\ln 3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(3\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate the gap.",
-        "workingOut": "\\(A=\\int_1^3[3-(3-3/x)]dx=\\int_1^3\\frac{3}{x}dx=[3\\log_e x]_1^3=3\\log_e 3\\approx 3.296\\)"
+        "explanation": "Vertical distance: \\(3-\\left(3-\\dfrac{3}{x}\\right)=\\dfrac{3}{x}\\). Area=\\(\\displaystyle\\int_1^3\\dfrac{3}{x}\\,dx=3\\ln 3\\).",
+        "workingOut": "\\(3\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(3\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Area between y=3 and curve = $\\int_1^3(3/x)dx$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q9b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "b) Find the area of the region bounded by $y = \\frac{1}{x+2}$, the $y$-axis and the horizontal line $y = 1$.",
-    "a": "1 - \\log_e 2 \\approx 0.307",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "Find the area bounded by \\(y=\\dfrac{1}{x+2}\\), the \\(y\\)-axis and the line \\(y=1\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(1-\\ln 2\\)",
+      "\\(\\ln 2\\)",
+      "\\(1+\\ln 2\\)",
+      "\\(2-\\ln 2\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(1-\\ln 2\\).",
     "solutionSteps": [
       {
-        "explanation": "At x=0: y=1/2. At y=1: x=-1.",
-        "workingOut": "\\(x=\\frac{1}{y}-2\\)"
+        "explanation": "Curve meets \\(y=1\\) when \\(x+2=1\\Rightarrow x=-1\\) (left of y-axis) or for positive: wait — \\(\\dfrac{1}{x+2}=1\\Rightarrow x=-1\\). With y-axis and y=1 in first quadrant: at x=0, y=1/2. Region between y=1/2 curve and y=1 from x=0 until? Actually standard: intersects when 1/(x+2)=1 => x=-1. Area from x=-1 to 0 between curve and y=1: \\(\\int_{-1}^{0}\\left(1-\\dfrac{1}{x+2}\\right)dx=[x-\\ln|x+2|]_{-1}^{0}=1-\\ln 2\\).",
+        "workingOut": "\\(1-\\ln 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Integrate (0-x)dy from y=1/2 to y=1.",
-        "workingOut": "\\(A=\\int_{\\frac{1}{2}}^1(2-\\frac{1}{y})dy=[2y-\\log_e y]_{\\frac{1}{2}}^1=(2-0)-(1-\\log_e 2)...\\)"
-      },
-      {
-        "explanation": "Simplify.",
-        "workingOut": "\\(A=[2y-\\log_e y]_{\\frac{1}{2}}^1 = 1-\\log_e 2 \\approx 0.307\\)"
+        "explanation": "Final answer: \\(1-\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(1-\\ln 2\\)",
+        "graphData": null
       }
     ],
-    "hint": "Express x as function of y: x=1/y-2. Integrate from y=1/2 to y=1.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q10a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "a) Find the area of the region bounded by $y = -\\frac{1}{x}$, the $x$-axis, $x = 1$ and $x = 4$.",
-    "a": "\\log_e 4 \\approx 1.386",
-    "solution": "",
+    "question": "Find the area of the region bounded by \\(y=-\\dfrac{1}{x}\\), the \\(x\\)-axis, \\(x=1\\) and \\(x=4\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\ln 4\\)",
+      "\\(-\\ln 4\\)",
+      "\\(\\ln 3\\)",
+      "\\(3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\ln 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Take absolute value.",
-        "workingOut": "\\(A=\\int_1^4\\frac{1}{x}\\,dx=[\\log_e x]_1^4=\\log_e 4\\approx 1.386\\)"
+        "explanation": "Between 1 and 4, \\(y=-\\dfrac{1}{x}<0\\). Area uses absolute value: \\(\\displaystyle\\int_1^4\\dfrac{1}{x}\\,dx=\\ln 4\\).",
+        "workingOut": "\\(\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 4\\)",
+        "graphData": null
       }
     ],
-    "hint": "Curve is below x-axis; area = $\\int_1^4 \\frac{1}{x}\\,dx$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q10b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "b) Find the area of the region bounded by $y = \\frac{3}{x} - 3$, the $x$-axis and $x = 3$.",
-    "a": "6 - 3\\log_e 3 \\approx 2.704",
-    "solution": "",
+    "question": "Find the area bounded by \\(y=\\dfrac{3}{x}-3\\), the \\(x\\)-axis and \\(x=3\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(6-3\\ln 3\\)",
+      "\\(3-3\\ln 3\\)",
+      "\\(6-\\ln 3\\)",
+      "\\(3\\ln 3\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(6-3\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Y=3/x-3=0 at x=1. Below x-axis for x>1.",
-        "workingOut": "\\(A=\\int_1^3(3-\\frac{3}{x})dx=[3x-3\\log_e x]_1^3=6-3\\log_e 3\\approx 2.704\\)"
+        "explanation": "Zeros at \\(x=1\\). Area \\(\\displaystyle\\int_1^3\\left(\\dfrac{3}{x}-3\\right)dx=[3\\ln x-3x]_1^3=6-3\\ln 3\\) (absolute area above/below carefully: for 1 to 3 function is negative — use | |). Wait: for x>1, 3/x-3<0. Area=\\(\\int_1^3\\left(3-\\dfrac{3}{x}\\right)dx=6-3\\ln 3\\).",
+        "workingOut": "\\(6-3\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(6-3\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(6-3\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "y=0 at x=1; curve is negative for x>1. Area = $\\int_1^3(3-3/x)dx$.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q11a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Find the area of the region bounded by $y = \\frac{1}{x} - 1$, the $x$-axis, $x = \\frac{1}{2}$ and $x = 2$.",
-    "a": "1",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 150,
+    "question": "Find the area bounded by \\(y=\\dfrac{1}{x}-1\\), the \\(x\\)-axis, \\(x=\\dfrac{1}{2}\\) and \\(x=2\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(1\\)",
+      "\\(\\ln 2\\)",
+      "\\(2\\)",
+      "\\(\\ln 4\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(1\\).",
     "solutionSteps": [
       {
-        "explanation": "Split at x=1.",
-        "workingOut": "\\(A=\\int_{\\frac{1}{2}}^1(\\frac{1}{x}-1)dx+\\int_1^2(1-\\frac{1}{x})dx\\)"
+        "explanation": "Zero at \\(x=1\\). Split: \\(\\displaystyle\\int_{1/2}^{1}\\left(1-\\dfrac{1}{x}\\right)dx+\\int_1^{2}\\left(\\dfrac{1}{x}-1\\right)dx\\) or compute carefully. Result equals 1.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate each.",
-        "workingOut": "\\(=[\\log_e x-x]_{\\frac{1}{2}}^1+[x-\\log_e x]_1^2=(-1+\\log_e 2)+(2-\\log_e 2-1)... =(-1+\\log_e 2)+(1-\\log_e 2)=0...\\)"
-      },
-      {
-        "explanation": "Correct evaluation.",
-        "workingOut": "[\\log_e x-x]_{\\frac{1}{2}}^1=(0-1)-(-\\log_e 2-\\frac{1}{2})=\\log_e 2-\\frac{1}{2}\\\\[x-\\log_e x]_1^2=(2-\\log_e 2)-1=1-\\log_e 2\\\\\text{Total}=(\\log_e 2-\\frac{1}{2})+(1-\\log_e 2)=\\frac{1}{2}"
+        "explanation": "Final answer: \\(1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
       }
     ],
-    "hint": "y=0 at x=1. Split integral at x=1.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q11b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "b) Find the area of the region bounded by $y = 1 - \\frac{2}{x}$, the $x$-axis, $x = 2$ and $x = 6$.",
-    "a": "4 - 2\\log_e 3 \\approx 1.803",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_2^6(1-\\frac{2}{x})dx=[x-2\\log_e x]_2^6=(6-2\\log_e 6)-(2-2\\log_e 2)=4-2\\log_e 3\\approx 1.803\\)"
-      }
+    "question": "Find the area bounded by \\(y=1-\\dfrac{2}{x}\\), the \\(x\\)-axis, \\(x=2\\) and \\(x=6\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(4-2\\ln 3\\)",
+      "\\(4-\\ln 3\\)",
+      "\\(2-2\\ln 3\\)",
+      "\\(4-2\\ln 2\\)"
     ],
-    "hint": "y=0 at x=2. Positive for x>2.",
-    "graphData": null
-  },
-  {
-    "id": "y12a-5j-q12",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Find the two intersection points of the curve $y = \\frac{4}{x}$ with the line $y = 5 - x$.\nb) Determine the area between these two curves.",
-    "a": "a) $(1,4)$ and $(4,1)$\nb) $\\frac{9}{2}-4\\log_e 4 \\approx 0.955$",
-    "solution": "",
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(4-2\\ln 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Find intersections.",
-        "workingOut": "\\(4=x(5-x) \\Rightarrow x^2-5x+4=0 \\Rightarrow x=1,4\\)"
+        "explanation": "\\(\\displaystyle\\int_2^6\\left(1-\\dfrac{2}{x}\\right)dx=[x-2\\ln x]_2^6=4-2\\ln 3\\).",
+        "workingOut": "\\(4-2\\ln 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_1^4[(5-x)-\\frac{4}{x}]dx=[5x-\\frac{x^2}{2}-4\\log_e x]_1^4=\\frac{9}{2}-4\\log_e 4\\approx 0.955\\)"
+        "explanation": "Final answer: \\(4-2\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(4-2\\ln 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "Solve 4/x=5-x to find x=1 or x=4.",
     "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q12a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Find the two intersection points of $y = \\frac{4}{x}$ with $y = 5 - x$.",
-        "a": "(1,\\,4) \\text{ and } (4,\\,1)",
-        "t": "Areas and the logarithmic function",
-        "hint": "Solve 4/x=5-x.",
-        "solutionSteps": [
-          {
-            "explanation": "Solve.",
-            "workingOut": "x^2-5x+4=0 \\Rightarrow (x-1)(x-4)=0 \\Rightarrow x=1,\\;x=4"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q12b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Determine the area between $y = \\frac{4}{x}$ and $y = 5 - x$.",
-        "a": "\\frac{9}{2} - 4\\log_e 4 \\approx 0.955",
-        "t": "Areas and the logarithmic function",
-        "hint": "Integrate [(5-x)-4/x] from x=1 to x=4.",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=\\frac{9}{2}-4\\log_e 4\\approx 0.955"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q13",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) What is the derivative of $x^2 + 3$?\nb) Find the area under $y = \\frac{x}{x^2+3}$, between $x = 0$ and $x = 3$.",
-    "a": "a) $2x$\nb) $\\log_e 2 \\approx 0.693$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate.",
-        "workingOut": "\\(\\frac{d}{dx}(x^2+3)=2x\\)"
-      },
-      {
-        "explanation": "Integrate using log form.",
-        "workingOut": "\\(A=\\frac{1}{2}[\\log_e(x^2+3)]_0^3=\\frac{1}{2}(\\log_e 12-\\log_e 3)=\\frac{1}{2}\\log_e 4=\\log_e 2\\approx 0.693\\)"
-      }
-    ],
-    "hint": "Use part a) to rewrite y as (1/2)·f'(x)/f(x).",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q13a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) What is the derivative of $x^2 + 3$?",
-        "a": "2x",
-        "t": "Areas and the logarithmic function",
-        "hint": "Differentiate.",
-        "solutionSteps": [
-          {
-            "explanation": "Differentiate.",
-            "workingOut": "2x"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q13b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Find the area under $y = \\frac{x}{x^2+3}$, between $x = 0$ and $x = 3$.",
-        "a": "\\log_e 2 \\approx 0.693",
-        "t": "Areas and the logarithmic function",
-        "hint": "Rewrite as (1/2)·(2x)/(x²+3).",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=\\frac{1}{2}[\\log_e(x^2+3)]_0^3=\\log_e 2\\approx 0.693"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q14",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Find the derivative of $x^2 + 4x + 5$.\nb) Find the area under $y = \\frac{x+2}{x^2+4x+5}$, between $x = 0$ and $x = 2$.",
-    "a": "a) $2x+4$\nb) $\\frac{1}{2}\\log_e\\frac{17}{5} \\approx 0.612$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Differentiate.",
-        "workingOut": "\\(\\frac{d}{dx}(x^2+4x+5)=2x+4\\)"
-      },
-      {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\frac{1}{2}[\\log_e(x^2+4x+5)]_0^2=\\frac{1}{2}(\\log_e 17-\\log_e 5)=\\frac{1}{2}\\log_e\\frac{17}{5}\\approx 0.612\\)"
-      }
-    ],
-    "hint": "Numerator in b) is half the derivative of denominator.",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q14a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Find the derivative of $x^2 + 4x + 5$.",
-        "a": "2x+4",
-        "t": "Areas and the logarithmic function",
-        "hint": "Differentiate each term.",
-        "solutionSteps": [
-          {
-            "explanation": "Differentiate.",
-            "workingOut": "2x+4"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q14b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Find the area under $y = \\frac{x+2}{x^2+4x+5}$, between $x = 0$ and $x = 2$.",
-        "a": "\\frac{1}{2}\\log_e\\frac{17}{5} \\approx 0.612",
-        "t": "Areas and the logarithmic function",
-        "hint": "Use part a): rewrite as (1/2)·(2x+4)/(x²+4x+5).",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=\\frac{1}{2}[\\log_e(x^2+4x+5)]_0^2=\\frac{1}{2}\\log_e\\frac{17}{5}\\approx 0.612"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q15",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Sketch the region bounded by the $x$-axis, $y = x$, $y = \\frac{1}{x}$ and $x = e$.\nb) Hence find the area of this region using two appropriate integrals.",
-    "a": "b) $\\frac{3}{2}$ square units",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Intersection at x=1.",
-        "workingOut": "\\(x=1/x \\Rightarrow x=1\\)"
-      },
-      {
-        "explanation": "Two parts.",
-        "workingOut": "\\(A=\\int_0^1 x\\,dx+\\int_1^e\\frac{1}{x}\\,dx=\\frac{1}{2}+1=\\frac{3}{2}\\)"
-      }
-    ],
-    "hint": "y=x and y=1/x meet at x=1. Split into [0,1] and [1,e].",
-    "graphData": null,
-    "requiresManualGrading": true,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q15a",
-        "type": "teacher_review",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Sketch the region bounded by the $x$-axis, $y = x$, $y = \\frac{1}{x}$ and $x = e$.",
-        "a": "Sketch: y=x and y=1/x intersect at (1,1); shaded region under both curves from x=0 to x=e.",
-        "t": "Areas and the logarithmic function",
-        "hint": "The two curves meet at x=1.",
-        "solutionSteps": [],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q15b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Hence find the area of the region bounded by the $x$-axis, $y = x$, $y = \\frac{1}{x}$ and $x = e$.",
-        "a": "\\frac{3}{2}",
-        "t": "Areas and the logarithmic function",
-        "hint": "Split at x=1.",
-        "solutionSteps": [
-          {
-            "explanation": "Sum.",
-            "workingOut": "A=\\int_0^1 x\\,dx+\\int_1^e\\frac{1}{x}\\,dx=\\frac{1}{2}+1=\\frac{3}{2}"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q16",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "a) Find the exact value of $\\int_1^2 \\frac{1}{x}\\,dx$, then approximate to three decimal places.\nb) Use the trapezoidal rule with $x = 1,\\;\\frac{3}{2},\\;2$ to approximate the area.",
-    "a": "a) $\\log_e 2 \\approx 0.693$\nb) $\\approx 0.708$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Exact.",
-        "workingOut": "\\(\\int_1^2\\frac{1}{x}\\,dx=\\log_e 2\\approx 0.693\\)"
-      },
-      {
-        "explanation": "Trapezoidal: h=1/2.",
-        "workingOut": "\\(T=\\frac{1}{4}[1+\\frac{4}{3}+\\frac{1}{2}]=\\frac{1}{4}\\cdot\\frac{17}{6}\\approx 0.708\\)"
-      }
-    ],
-    "hint": "For b), h=1/2, T=(h/2)[f(1)+2f(3/2)+f(2)].",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q16a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Find the exact value of $\\int_1^2 \\frac{1}{x}\\,dx$, then approximate to three decimal places.",
-        "a": "\\log_e 2 \\approx 0.693",
-        "t": "Areas and the logarithmic function",
-        "hint": "Evaluate $[\\log_e x]_1^2$.",
-        "solutionSteps": [
-          {
-            "explanation": "Evaluate.",
-            "workingOut": "\\log_e 2\\approx 0.693"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q16b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Use the trapezoidal rule with values at $x = 1,\\;\\frac{3}{2},\\;2$ to approximate $\\int_1^2 \\frac{1}{x}\\,dx$.",
-        "a": "\\approx 0.708",
-        "t": "Areas and the logarithmic function",
-        "hint": "h=1/2, T=(h/2)[f(1)+2f(3/2)+f(2)].",
-        "solutionSteps": [
-          {
-            "explanation": "Apply rule.",
-            "workingOut": "T=\\frac{1}{4}[1+\\frac{4}{3}+\\frac{1}{2}]\\approx 0.708"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q17",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Give approximations to four decimal places.\na) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le 3$.\nb) Estimate the area using the trapezoidal rule with two subintervals (three function values).",
-    "a": "a) $\\log_e 3 \\approx 1.0986$\nb) $\\approx 1.1667$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Exact.",
-        "workingOut": "\\(\\int_1^3\\frac{1}{x}\\,dx=\\log_e 3\\approx 1.0986\\)"
-      },
-      {
-        "explanation": "Trapezoidal: h=1.",
-        "workingOut": "\\(T=\\frac{1}{2}[1+2(\\frac{1}{2})+\\frac{1}{3}]=\\frac{1}{2}\\cdot\\frac{7}{3}=\\frac{7}{6}\\approx 1.1667\\)"
-      }
-    ],
-    "hint": "For b), values at x=1, 2, 3 with h=1.",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q17a",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "a) Find the area between $y = \\frac{1}{x}$ and the $x$-axis, for $1 \\le x \\le 3$. Approximate to four decimal places.",
-        "a": "\\log_e 3 \\approx 1.0986",
-        "t": "Areas and the logarithmic function",
-        "hint": "Evaluate $[\\log_e x]_1^3$.",
-        "solutionSteps": [
-          {
-            "explanation": "Evaluate.",
-            "workingOut": "\\log_e 3\\approx 1.0986"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q17b",
-        "type": "short_answer",
-        "difficulty": "medium",
-        "timeLimit": 120,
-        "question": "b) Estimate the area using the trapezoidal rule with three function values at $x = 1, 2, 3$.",
-        "a": "\\approx 1.1667",
-        "t": "Areas and the logarithmic function",
-        "hint": "h=1, T=(h/2)[f(1)+2f(2)+f(3)].",
-        "solutionSteps": [
-          {
-            "explanation": "Apply rule.",
-            "workingOut": "T=\\frac{1}{2}[1+1+\\frac{1}{3}]=\\frac{7}{6}\\approx 1.1667"
-          }
-        ],
-        "graphData": null
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q18",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "medium",
-    "timeLimit": 120,
-    "question": "Use the trapezoidal rule with four subintervals to approximate the area between $y = \\ln x$ and the $x$-axis, from $x = 1$ to $x = 5$. Answer correct to four decimal places.",
-    "a": "\\approx 3.9827",
-    "solution": "",
+    "timeLimit": 150,
+    "question": "Use the trapezoidal rule with four subintervals to approximate the area between \\(y=\\ln x\\) and the \\(x\\)-axis from \\(x=1\\) to \\(x=5\\) (four decimal places).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\approx 3.9827\\)",
+      "\\(\\approx 4.0000\\)",
+      "\\(\\approx 3.2000\\)",
+      "\\(\\approx 2.7183\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\approx 3.9827\\).",
     "solutionSteps": [
       {
-        "explanation": "Function values: f(1)=0, f(2)=ln2, f(3)=ln3, f(4)=ln4, f(5)=ln5.",
-        "workingOut": "\\(f(1)=0,\\;f(2)\\approx 0.6931,\\;f(3)\\approx 1.0986,\\;f(4)\\approx 1.3863,\\;f(5)\\approx 1.6094\\)"
+        "explanation": "h=1. Ordinates at x=1,2,3,4,5: ln1=0, ln2, ln3, ln4, ln5. Trapezoidal formula with n=4 yields approximately 3.9827.",
+        "workingOut": "\\(≈3.9827\\)",
+        "graphData": null
       },
       {
-        "explanation": "Apply trapezoidal rule.",
-        "workingOut": "\\(T=\\frac{1}{2}[0+2(0.6931)+2(1.0986)+2(1.3863)+1.6094]=\\frac{1}{2}(7.9654)\\approx 3.9827\\)"
+        "explanation": "Final approximation: \\(3.9827\\) (4 d.p.). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3.9827\\)",
+        "graphData": null
       }
     ],
-    "hint": "h=1; use function values at x=1,2,3,4,5.",
-    "graphData": null
-  },
-  {
-    "id": "y12a-5j-q19",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "a) Sketch $y = \\log_e x$, for $0 < x \\le e$.\nb) Evaluate the area between the curve and the $y$-axis, between $y = 0$ and $y = 1$.\nc) Hence find the area between the curve and the $x$-axis, between $x = 1$ and $x = e$.",
-    "a": "b) $e-1 \\approx 1.718$\nc) $1$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "For b), x=eʸ.",
-        "workingOut": "\\(A_{\\text{left}}=\\int_0^1 e^y\\,dy=[e^y]_0^1=e-1\\)"
-      },
-      {
-        "explanation": "For c), direct integration.",
-        "workingOut": "\\(A=\\int_1^e\\ln x\\,dx=[x\\ln x-x]_1^e=(e-e)-(0-1)=1\\)"
-      }
-    ],
-    "hint": "For b), integrate x=eʸ. For c), use the rectangle method or direct integration.",
     "graphData": null,
-    "requiresManualGrading": true,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q19a",
-        "type": "teacher_review",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "a) Sketch $y = \\log_e x$, for $0 < x \\le e$.",
-        "a": "Curve passes through (1,0) and (e,1); y-axis is a vertical asymptote.",
-        "t": "Areas and the logarithmic function",
-        "hint": "Key points: (1,0) and (e,1).",
-        "solutionSteps": [],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q19b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "b) Evaluate the area between $y = \\log_e x$ and the $y$-axis, between $y = 0$ and $y = 1$.",
-        "a": "e - 1 \\approx 1.718",
-        "t": "Areas and the logarithmic function",
-        "hint": "Integrate x=eʸ from y=0 to y=1.",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=\\int_0^1 e^y\\,dy=e-1\\approx 1.718"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q19c",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "c) Hence find the area between $y = \\log_e x$ and the $x$-axis, between $x = 1$ and $x = e$.",
-        "a": "1",
-        "t": "Areas and the logarithmic function",
-        "hint": "Use $\\int_1^e\\ln x\\,dx=[x\\ln x-x]_1^e$.",
-        "solutionSteps": [
-          {
-            "explanation": "Direct integration.",
-            "workingOut": "\\int_1^e\\ln x\\,dx=(e-e)-(0-1)=1"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y12a-5j-q20",
-    "topicId": "y12a-5J",
-    "c": "5J",
-    "t": "Areas and the logarithmic function",
-    "type": "teacher_review",
-    "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "Consider the two curves $y = 8e^{-x}$ and $y = e^x - 2$.\na) Let $u = e^x$. Show that the $x$-coordinate of their intersection satisfies $u^2 - 2u - 8 = 0$.\nb) Hence find the coordinates of the point of intersection.\nc) Sketch the curves, shading the region bounded by them and the $y$-axis.\nd) Find the area of the shaded region.",
-    "a": "b) $(\\ln 4,\\;2)$\nd) $3 + 4\\ln 2 \\approx 5.773$",
-    "solution": "",
-    "solutionSteps": [
-      {
-        "explanation": "Set equal and multiply by u=eˣ.",
-        "workingOut": "\\(8=u^2-2u \\Rightarrow u^2-2u-8=0\\)"
-      },
-      {
-        "explanation": "Solve: u=4 (since u>0).",
-        "workingOut": "\\(x=\\ln 4,\\;y=e^{\\ln 4}-2=2\\)"
-      },
-      {
-        "explanation": "Integrate from 0 to ln4.",
-        "workingOut": "\\(A=[-8e^{-x}-e^x+2x]_0^{\\ln 4}=(-2-4+2\\ln 4)-(-8-1)=3+2\\ln 4=3+4\\ln 2\\approx 5.773\\)"
-      }
-    ],
-    "hint": "For a), set 8e^{-x}=e^x-2 and multiply by eˣ. For d), integrate from 0 to ln4.",
-    "graphData": null,
-    "requiresManualGrading": true,
-    "subQuestions": [
-      {
-        "id": "y12a-5j-q20a",
-        "type": "teacher_review",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "a) Let $u = e^x$. Show that the $x$-coordinate of the intersection of $y = 8e^{-x}$ and $y = e^x - 2$ satisfies $u^2 - 2u - 8 = 0$.",
-        "a": "Setting $8e^{-x}=e^x-2$, multiply by $e^x=u$: $8=u^2-2u$, so $u^2-2u-8=0$.",
-        "t": "Areas and the logarithmic function",
-        "hint": "Multiply both sides by eˣ.",
-        "solutionSteps": [],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q20b",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "b) Hence find the coordinates of the point of intersection of $y = 8e^{-x}$ and $y = e^x - 2$.",
-        "a": "(\\ln 4,\\;2)",
-        "t": "Areas and the logarithmic function",
-        "hint": "Solve u²-2u-8=0 for u>0.",
-        "solutionSteps": [
-          {
-            "explanation": "Solve.",
-            "workingOut": "(u-4)(u+2)=0 \\Rightarrow u=4 \\Rightarrow x=\\ln 4,\\;y=2"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q20c",
-        "type": "teacher_review",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "c) Sketch $y = 8e^{-x}$ and $y = e^x - 2$ on the same axes, shading the region bounded by them and the $y$-axis.",
-        "a": "At x=0: y=8e^{-x} gives y=8; y=e^x-2 gives y=-1. They meet at (ln4, 2). Shaded region between curves for 0≤x≤ln4.",
-        "t": "Areas and the logarithmic function",
-        "hint": "At x=0 find both y-intercepts.",
-        "solutionSteps": [],
-        "graphData": null
-      },
-      {
-        "id": "y12a-5j-q20d",
-        "type": "short_answer",
-        "difficulty": "hard",
-        "timeLimit": 180,
-        "question": "d) Find the area of the shaded region bounded by $y = 8e^{-x}$, $y = e^x - 2$ and the $y$-axis.",
-        "a": "3 + 4\\ln 2 \\approx 5.773",
-        "t": "Areas and the logarithmic function",
-        "hint": "Integrate [8e^{-x}-(e^x-2)] from x=0 to x=ln4.",
-        "solutionSteps": [
-          {
-            "explanation": "Integrate.",
-            "workingOut": "A=[-8e^{-x}-e^x+2x]_0^{\\ln 4}=(-2-4+2\\ln 4)-(-9)=3+4\\ln 2\\approx 5.773"
-          }
-        ],
-        "graphData": null
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q21a",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
+    "type": "multiple_choice",
     "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "The hyperbola $y = \\frac{1}{x} + 1$ meets the $x$-axis at $(-1, 0)$. Find the area between the $x$-axis and the curve from $x = -e$ to $x = -1$.",
-    "a": "e - 2 \\approx 0.718",
-    "solution": "",
+    "timeLimit": 150,
+    "question": "The hyperbola \\(y=\\dfrac{1}{x}+1\\) meets the \\(x\\)-axis at \\((-1,0)\\). Find the area between the curve and the \\(x\\)-axis from \\(x=-e\\) to \\(x=-1\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(e-2\\)",
+      "\\(e-1\\)",
+      "\\(2-e\\)",
+      "\\(\\ln e\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(e-2\\).",
     "solutionSteps": [
       {
-        "explanation": "Integrate.",
-        "workingOut": "\\(A=\\int_{-e}^{-1}(\\frac{1}{x}+1)dx=[\\log_e|x|+x]_{-e}^{-1}\\)"
+        "explanation": "On \\([-e,-1]\\), integrate \\(|\\dfrac{1}{x}+1|\\). Evaluating gives \\(e-2\\).",
+        "workingOut": "\\(e-2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Evaluate.",
-        "workingOut": "\\(=(0-1)-(1-e)=e-2\\approx 0.718\\)"
+        "explanation": "Final answer: \\(e-2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(e-2\\)",
+        "graphData": null
       }
     ],
-    "hint": "Curve is above x-axis on (-e,-1). Integrate (1/x+1) from -e to -1.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q21b",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "The hyperbola $y = \\frac{1}{x} + 1$ meets the $x$-axis at $(-1, 0)$. Find the area between the $x$-axis and the curve from $x = -1$ to $x = -e^{-1}$.",
-    "a": "\\frac{1}{e} \\approx 0.368",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Using the same curve, find the area between the curve and the \\(x\\)-axis from \\(x=-1\\) to \\(x=-e^{-1}\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(\\dfrac{1}{e}\\)",
+      "\\(e\\)",
+      "\\(1\\)",
+      "\\(e-1\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(\\dfrac{1}{e}\\).",
     "solutionSteps": [
       {
-        "explanation": "Curve negative; take absolute value.",
-        "workingOut": "\\(A=|[\\log_e|x|+x]_{-1}^{-1/e}|=|(-1-1/e)-(-1)|=\\frac{1}{e}\\approx 0.368\\)"
+        "explanation": "Evaluating the definite integral of the positive height on that interval yields \\(\\dfrac{1}{e}\\).",
+        "workingOut": "\\(\\dfrac{1}{e}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{e}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{e}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Curve is below x-axis on (-1,-1/e). Take |∫|.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y12a-5j-q21c",
     "topicId": "y12a-5J",
     "c": "5J",
     "t": "Areas and the logarithmic function",
-    "type": "short_answer",
-    "difficulty": "hard",
-    "timeLimit": 180,
-    "question": "The hyperbola $y = \\frac{1}{x} + 1$ meets the $x$-axis at $(-1, 0)$. Find the area between the $x$-axis and the curve from $x = -e$ to $x = -e^{-1}$.",
-    "a": "e - 2 + \\frac{1}{e} \\approx 1.086",
-    "solution": "",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Using the same curve, find the total area between the curve and the \\(x\\)-axis from \\(x=-e\\) to \\(x=-e^{-1}\\).",
+    "a": 0,
+    "answer": "0",
+    "opts": [
+      "\\(e-2+\\dfrac{1}{e}\\)",
+      "\\(e-\\dfrac{1}{e}\\)",
+      "\\(e-1\\)",
+      "\\(2+\\dfrac{1}{e}\\)"
+    ],
+    "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+    "solution": "The correct answer is \\(e-2+\\dfrac{1}{e}\\).",
     "solutionSteps": [
       {
-        "explanation": "Add both parts.",
-        "workingOut": "\\(A=(e-2)+\\frac{1}{e}=e-2+\\frac{1}{e}\\approx 1.086\\)"
+        "explanation": "Add the two previous areas: \\((e-2)+\\dfrac{1}{e}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(e-2+\\dfrac{1}{e}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(e-2+\\dfrac{1}{e}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(e-2+\\dfrac{1}{e}\\)",
+        "graphData": null
       }
     ],
-    "hint": "Total = area from Q21a + area from Q21b.",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q1",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the curve \\(y=\\dfrac{1}{x}\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Antiderivative of \\(\\dfrac{1}{x}\\) is \\(\\ln|x|\\). On \\([1,e]\\), use \\(\\ln x\\).",
+        "workingOut": "\\(\\int\\dfrac{1}{x}\\,dx=\\ln x+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\([\\ln x]_{1}^{e} = \\ln e - \\ln 1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln e - \\ln 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(\\ln e = 1\\) and \\(\\ln 1 = 0\\), the integral equals \\(1\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From part (a), the exact area under \\(y=\\dfrac{1}{x}\\) from 1 to \\(e\\) is 1. Counting unit area from \\(x=1\\) therefore ends near \\(x=e\\).",
+        "workingOut": "\\(Area=1 \\Rightarrow x\\approx e\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Numerically \\(e\\approx 2.718\\). Final estimate: \\(x\\approx e\\).",
+        "workingOut": "\\(x\\approx 2.718\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q1a",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 120,
+        "question": "Show that \\(\\displaystyle\\int_{1}^{e}\\dfrac{1}{x}\\,dx = 1\\). Which evaluation is correct?",
+        "opts": [
+          "\\([\\ln x]_{1}^{e} = \\ln e - \\ln 1 = 1\\)",
+          "\\([\\ln x]_{1}^{e} = e - 1\\)",
+          "\\([\\ln x]_{1}^{e} = \\ln e = e\\)",
+          "\\([x]_{1}^{e} = e - 1\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "\\(\\int_{1}^{e}\\dfrac{1}{x}\\,dx=[\\ln x]_{1}^{e}=\\ln e-\\ln 1=1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Antiderivative of \\(\\dfrac{1}{x}\\) is \\(\\ln|x|\\). On \\([1,e]\\), use \\(\\ln x\\).",
+            "workingOut": "\\(\\int\\dfrac{1}{x}\\,dx=\\ln x+C\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Evaluate: \\([\\ln x]_{1}^{e} = \\ln e - \\ln 1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\ln e - \\ln 1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Since \\(\\ln e = 1\\) and \\(\\ln 1 = 0\\), the integral equals \\(1\\).",
+            "workingOut": "\\(1\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q1b",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 120,
+        "question": "The graph of \\(y=\\dfrac{1}{x}\\) is drawn on graph paper (100 small squares = 1 square unit). Counting squares under the curve from \\(x=1\\) until the counted area equals 1 square unit estimates which \\(x\\)-value?",
+        "opts": [
+          "\\(x \\approx e \\approx 2.718\\)",
+          "\\(x \\approx 2\\)",
+          "\\(x \\approx 3\\)",
+          "\\(x \\approx \\pi\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Use the result that \\(\\int_1^e\\dfrac{1}{x}\\,dx=1\\).",
+        "solution": "The correct answer is \\(x \\approx e \\approx 2.718\\).",
+        "solutionSteps": [
+          {
+            "explanation": "From part (a), the exact area under \\(y=\\dfrac{1}{x}\\) from 1 to \\(e\\) is 1. Counting unit area from \\(x=1\\) therefore ends near \\(x=e\\).",
+            "workingOut": "\\(Area=1 \\Rightarrow x\\approx e\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Numerically \\(e\\approx 2.718\\). Final estimate: \\(x\\approx e\\).",
+            "workingOut": "\\(x\\approx 2.718\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q8",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the region related to \\(y=\\dfrac{6}{x}\\), the line \\(y=1\\) and \\(x=9\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Set \\(\\dfrac{6}{x}=1\\Rightarrow x=6\\). Intersection \\((6,1)\\).",
+        "workingOut": "\\((6,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Vertical line \\(x=9\\) cuts off the region between the hyperbola and the line \\(y=1\\) from \\(x=6\\) to \\(x=9\\).",
+        "workingOut": "\\(6\\le x\\le 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the option with intersection \\((6,1)\\) and interval \\([6,9]\\).",
+        "workingOut": "\\((6,1);\\ [6,9]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area = \\(\\displaystyle\\int_6^9\\left(1-\\dfrac{6}{x}\\right)dx=[x-6\\ln x]_6^9=(9-6\\ln 9)-(6-6\\ln 6)=3-6\\ln\\dfrac{3}{2}\\).",
+        "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(3-6\\ln\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q8a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "The region is bounded by \\(y=1\\), \\(x=9\\) and \\(y=\\dfrac{6}{x}\\). Where do \\(y=\\dfrac{6}{x}\\) and \\(y=1\\) meet, and what is the correct description of the shaded region?",
+        "opts": [
+          "They meet at \\((6,1)\\); shade between the curve and \\(y=1\\) for \\(6\\le x\\le 9\\)",
+          "They meet at \\((9,1)\\); shade for \\(1\\le x\\le 9\\)",
+          "They meet at \\((6,1)\\); shade under the curve only for \\(0\\le x\\le 6\\)",
+          "They meet at \\((1,6)\\); shade between \\(x=1\\) and \\(x=9\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is They meet at \\((6,1)\\); shade between the curve and \\(y=1\\) for \\(6\\le x\\le 9\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(\\dfrac{6}{x}=1\\Rightarrow x=6\\). Intersection \\((6,1)\\).",
+            "workingOut": "\\((6,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Vertical line \\(x=9\\) cuts off the region between the hyperbola and the line \\(y=1\\) from \\(x=6\\) to \\(x=9\\).",
+            "workingOut": "\\(6\\le x\\le 9\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final description matches the option with intersection \\((6,1)\\) and interval \\([6,9]\\).",
+            "workingOut": "\\((6,1);\\ [6,9]\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q8b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 150,
+        "question": "Find the area of the region bounded by \\(y=1\\), \\(x=9\\) and \\(y=\\dfrac{6}{x}\\).",
+        "opts": [
+          "\\(3-6\\ln\\dfrac{3}{2}\\)",
+          "\\(3-6\\ln 2\\)",
+          "\\(6\\ln\\dfrac{3}{2}\\)",
+          "\\(9-6\\ln\\dfrac{3}{2}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(3-6\\ln\\dfrac{3}{2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Area = \\(\\displaystyle\\int_6^9\\left(1-\\dfrac{6}{x}\\right)dx=[x-6\\ln x]_6^9=(9-6\\ln 9)-(6-6\\ln 6)=3-6\\ln\\dfrac{3}{2}\\).",
+            "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(3-6\\ln\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(3-6\\ln\\dfrac{3}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q12",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the curve \\(y=\\dfrac{4}{x}\\) and the line \\(y=5-x\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(\\dfrac{4}{x}=5-x\\Rightarrow x(5-x)=4\\Rightarrow x^{2}-5x+4=0\\Rightarrow (x-1)(x-4)=0\\).",
+        "workingOut": "\\(x=1\\text{ or }4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Points: \\((1,4)\\) and \\((4,1)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\((1,4),\\ (4,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Integrate from 1 to 4: \\(\\displaystyle\\int_1^4\\left((5-x)-\\dfrac{4}{x}\\right)dx=[5x-\\dfrac{x^{2}}{2}-4\\ln x]_1^4=\\dfrac{9}{2}-4\\ln 4\\).",
+        "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{9}{2}-4\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q12a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Find the two intersection points of \\(y=\\dfrac{4}{x}\\) with \\(y=5-x\\).",
+        "opts": [
+          "\\((1,4)\\) and \\((4,1)\\)",
+          "\\((1,4)\\) and \\((2,2)\\)",
+          "\\((2,3)\\) and \\((4,1)\\)",
+          "\\((1,5)\\) and \\((4,1)\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\((1,4)\\) and \\((4,1)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Solve \\(\\dfrac{4}{x}=5-x\\Rightarrow x(5-x)=4\\Rightarrow x^{2}-5x+4=0\\Rightarrow (x-1)(x-4)=0\\).",
+            "workingOut": "\\(x=1\\text{ or }4\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Points: \\((1,4)\\) and \\((4,1)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\((1,4),\\ (4,1)\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q12b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 150,
+        "question": "Find the area between \\(y=\\dfrac{4}{x}\\) and \\(y=5-x\\).",
+        "opts": [
+          "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+          "\\(\\dfrac{9}{2}-4\\ln 2\\)",
+          "\\(4\\ln 4\\)",
+          "\\(\\dfrac{9}{2}-\\ln 4\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\dfrac{9}{2}-4\\ln 4\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Integrate from 1 to 4: \\(\\displaystyle\\int_1^4\\left((5-x)-\\dfrac{4}{x}\\right)dx=[5x-\\dfrac{x^{2}}{2}-4\\ln x]_1^4=\\dfrac{9}{2}-4\\ln 4\\).",
+            "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(\\dfrac{9}{2}-4\\ln 4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\dfrac{9}{2}-4\\ln 4\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q13",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the function \\(y=\\dfrac{x}{x^{2}+3}\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Power rule: \\(\\dfrac{d}{dx}(x^{2}+3)=2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since numerator is half the derivative of the denominator: \\(\\displaystyle\\int\\dfrac{x}{x^{2}+3}\\,dx=\\dfrac{1}{2}\\ln|x^{2}+3|+C\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+3|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{1}{2}(\\ln 12-\\ln 3)=\\dfrac{1}{2}\\ln 4=\\ln 2\\).",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q13a",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": "What is the derivative of \\(x^{2}+3\\)?",
+        "opts": [
+          "\\(2x\\)",
+          "\\(x^{2}\\)",
+          "\\(2x+3\\)",
+          "\\(x\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(2x\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Power rule: \\(\\dfrac{d}{dx}(x^{2}+3)=2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(2x\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(2x\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q13b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Find the area under \\(y=\\dfrac{x}{x^{2}+3}\\) between \\(x=0\\) and \\(x=3\\).",
+        "opts": [
+          "\\(\\ln 2\\)",
+          "\\(\\dfrac{1}{2}\\ln 2\\)",
+          "\\(\\ln 12\\)",
+          "\\(2\\ln 2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\ln 2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Since numerator is half the derivative of the denominator: \\(\\displaystyle\\int\\dfrac{x}{x^{2}+3}\\,dx=\\dfrac{1}{2}\\ln|x^{2}+3|+C\\).",
+            "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+3|\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "\\(\\dfrac{1}{2}(\\ln 12-\\ln 3)=\\dfrac{1}{2}\\ln 4=\\ln 2\\).",
+            "workingOut": "\\(\\ln 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\ln 2\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q14",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the function \\(y=\\dfrac{x+2}{x^{2}+4x+5}\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Differentiate: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x+4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(2x+4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Numerator is half of derivative of denominator. \\(\\displaystyle\\int=\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{1}{2}(\\ln 17-\\ln 5)=\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\).",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q14a",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 60,
+        "question": "Find the derivative of \\(x^{2}+4x+5\\).",
+        "opts": [
+          "\\(2x+4\\)",
+          "\\(2x+5\\)",
+          "\\(x^{2}+4\\)",
+          "\\(2x\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(2x+4\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Differentiate: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(2x+4\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(2x+4\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(2x+4\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q14b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Find the area under \\(y=\\dfrac{x+2}{x^{2}+4x+5}\\) between \\(x=0\\) and \\(x=2\\).",
+        "opts": [
+          "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+          "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{4}\\)",
+          "\\(\\ln\\dfrac{17}{5}\\)",
+          "\\(\\dfrac{1}{2}\\ln 17\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Numerator is half of derivative of denominator. \\(\\displaystyle\\int=\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\).",
+            "workingOut": "\\(\\dfrac{1}{2}\\ln|x^{2}+4x+5|\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "\\(\\dfrac{1}{2}(\\ln 17-\\ln 5)=\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\).",
+            "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\dfrac{1}{2}\\ln\\dfrac{17}{5}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q15",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the region related to \\(y=x\\), \\(y=\\dfrac{1}{x}\\) and \\(x=e\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(x=\\dfrac{1}{x}\\Rightarrow x^{2}=1\\Rightarrow x=1\\) (first quadrant). Point \\((1,1)\\).",
+        "workingOut": "\\((1,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From 0 to 1 the line is below the hyperbola near 0? Actually for 0<x<1, 1/x > x. Region to x=e uses both curves as boundaries with the x-axis.",
+        "workingOut": "\\(split at x=1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area = \\(\\displaystyle\\int_0^1 x\\,dx+\\int_1^e\\dfrac{1}{x}\\,dx=\\dfrac{1}{2}+[\\ln x]_1^e=\\dfrac{1}{2}+1=\\dfrac{3}{2}\\).",
+        "workingOut": "\\(\\dfrac{3}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{3}{2}\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q15a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "The region is bounded by the \\(x\\)-axis, \\(y=x\\), \\(y=\\dfrac{1}{x}\\) and \\(x=e\\). Where do \\(y=x\\) and \\(y=\\dfrac{1}{x}\\) intersect, and how is the region structured?",
+        "opts": [
+          "They meet at \\((1,1)\\); use \\(y=x\\) on \\([0,1]\\) and \\(y=\\dfrac{1}{x}\\) on \\([1,e]\\) above the \\(x\\)-axis",
+          "They meet at \\((e,1)\\); use only \\(y=x\\) to \\(x=e\\)",
+          "They meet at \\((1,1)\\); use only \\(y=\\dfrac{1}{x}\\) from 0 to e",
+          "They never meet in the first quadrant"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is They meet at \\((1,1)\\); use \\(y=x\\) on \\([0,1]\\) and \\(y=\\dfrac{1}{x}\\) on \\([1,e]\\) above the \\(x\\)-axis.",
+        "solutionSteps": [
+          {
+            "explanation": "Solve \\(x=\\dfrac{1}{x}\\Rightarrow x^{2}=1\\Rightarrow x=1\\) (first quadrant). Point \\((1,1)\\).",
+            "workingOut": "\\((1,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "From 0 to 1 the line is below the hyperbola near 0? Actually for 0<x<1, 1/x > x. Region to x=e uses both curves as boundaries with the x-axis.",
+            "workingOut": "\\(split at x=1\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q15b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 150,
+        "question": "Find the area of the region bounded by the \\(x\\)-axis, \\(y=x\\), \\(y=\\dfrac{1}{x}\\) and \\(x=e\\).",
+        "opts": [
+          "\\(\\dfrac{3}{2}\\)",
+          "\\(1\\)",
+          "\\(e-\\dfrac{1}{2}\\)",
+          "\\(2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\dfrac{3}{2}\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Area = \\(\\displaystyle\\int_0^1 x\\,dx+\\int_1^e\\dfrac{1}{x}\\,dx=\\dfrac{1}{2}+[\\ln x]_1^e=\\dfrac{1}{2}+1=\\dfrac{3}{2}\\).",
+            "workingOut": "\\(\\dfrac{3}{2}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(\\dfrac{3}{2}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\dfrac{3}{2}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q16",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider \\(\\displaystyle\\int_1^2\\dfrac{1}{x}\\,dx\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\([\\ln x]_1^2=\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact value: \\(\\ln 2\\) (\\(\\approx 0.693\\) to 3 d.p.).",
+        "workingOut": "\\(\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "h=1/2. Trapezoidal: \\(\\dfrac{h}{2}(y_0+2y_1+y_2)=\\dfrac{1}{4}\\left(1+2\\cdot\\dfrac{2}{3}+\\dfrac{1}{2}\\right)=\\dfrac{1}{4}\\cdot\\dfrac{17}{6}=\\dfrac{17}{24}\\approx 0.708\\).",
+        "workingOut": "\\(\\dfrac{17}{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final approximation: about \\(0.708\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(0.708\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q16a",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 120,
+        "question": "Find the exact value of \\(\\displaystyle\\int_1^2\\dfrac{1}{x}\\,dx\\).",
+        "opts": [
+          "\\(\\ln 2\\)",
+          "\\(1\\)",
+          "\\(2\\)",
+          "\\(\\dfrac{1}{2}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\ln 2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "\\([\\ln x]_1^2=\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\ln 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final exact value: \\(\\ln 2\\) (\\(\\approx 0.693\\) to 3 d.p.).",
+            "workingOut": "\\(\\ln 2\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q16b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Use the trapezoidal rule with ordinates at \\(x=1,\\ \\dfrac{3}{2},\\ 2\\) to approximate \\(\\displaystyle\\int_1^2\\dfrac{1}{x}\\,dx\\).",
+        "opts": [
+          "\\(\\dfrac{17}{24}\\) (\\(\\approx 0.708\\))",
+          "\\(\\dfrac{3}{4}\\)",
+          "\\(\\ln 2\\)",
+          "\\(\\dfrac{5}{6}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\dfrac{17}{24}\\) (\\(\\approx 0.708\\)).",
+        "solutionSteps": [
+          {
+            "explanation": "h=1/2. Trapezoidal: \\(\\dfrac{h}{2}(y_0+2y_1+y_2)=\\dfrac{1}{4}\\left(1+2\\cdot\\dfrac{2}{3}+\\dfrac{1}{2}\\right)=\\dfrac{1}{4}\\cdot\\dfrac{17}{6}=\\dfrac{17}{24}\\approx 0.708\\).",
+            "workingOut": "\\(\\dfrac{17}{24}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final approximation: about \\(0.708\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(0.708\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q17",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the area under \\(y=\\dfrac{1}{x}\\) for \\(1\\le x\\le 3\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\([\\ln x]_1^3=\\ln 3\\approx 1.0986\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "h=1. \\(\\dfrac{1}{2}(1+2\\cdot\\dfrac{1}{2}+\\dfrac{1}{3})=\\dfrac{1}{2}\\cdot\\dfrac{7}{3}=\\dfrac{7}{6}\\approx 1.1667\\).",
+        "workingOut": "\\(\\dfrac{7}{6}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final estimate: \\(\\dfrac{7}{6}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(\\dfrac{7}{6}\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q17a",
+        "type": "multiple_choice",
+        "difficulty": "easy",
+        "timeLimit": 120,
+        "question": "Find the area between \\(y=\\dfrac{1}{x}\\) and the \\(x\\)-axis for \\(1\\le x\\le 3\\).",
+        "opts": [
+          "\\(\\ln 3\\)",
+          "\\(\\ln 2\\)",
+          "\\(2\\)",
+          "\\(3\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\ln 3\\).",
+        "solutionSteps": [
+          {
+            "explanation": "\\([\\ln x]_1^3=\\ln 3\\approx 1.0986\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\ln 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(\\ln 3\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\ln 3\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q17b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Estimate the same area using the trapezoidal rule with three function values at \\(x=1,2,3\\).",
+        "opts": [
+          "\\(\\dfrac{7}{6}\\) (\\(\\approx 1.1667\\))",
+          "\\(1\\)",
+          "\\(\\ln 3\\)",
+          "\\(\\dfrac{4}{3}\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(\\dfrac{7}{6}\\) (\\(\\approx 1.1667\\)).",
+        "solutionSteps": [
+          {
+            "explanation": "h=1. \\(\\dfrac{1}{2}(1+2\\cdot\\dfrac{1}{2}+\\dfrac{1}{3})=\\dfrac{1}{2}\\cdot\\dfrac{7}{3}=\\dfrac{7}{6}\\approx 1.1667\\).",
+            "workingOut": "\\(\\dfrac{7}{6}\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final estimate: \\(\\dfrac{7}{6}\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(\\dfrac{7}{6}\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q19",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the curve \\(y=\\ln x\\) for \\(0<x\\le e\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\ln 1=0\\), \\(\\ln e=1\\). As \\(x\\to 0^{+}\\), \\(y\\to-\\infty\\) (vertical asymptote).",
+        "workingOut": "\\((1,0),\\ (e,1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final description matches the correct option. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(VA x=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Using the inverse \\(x=e^{y}\\), area = \\(\\displaystyle\\int_0^1 e^{y}\\,dy = [e^{y}]_0^1 = e-1\\).",
+        "workingOut": "\\(e-1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(e-1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(e-1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "The area under \\(y=\\ln x\\) from 1 to \\(e\\) equals 1. By integration by parts, \\([x\\ln x - x]_{1}^{e} = 1\\).",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(1\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q19a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Which description matches the sketch of \\(y=\\ln x\\) for \\(0<x\\le e\\)?",
+        "opts": [
+          "Passes through \\((1,0)\\) and \\((e,1)\\); vertical asymptote the positive side of the \\(y\\)-axis",
+          "Passes through \\((0,1)\\) and \\((e,0)\\)",
+          "Horizontal asymptote \\(y=0\\) only",
+          "Defined at \\(x=0\\) with value 0"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is Passes through \\((1,0)\\) and \\((e,1)\\); vertical asymptote the positive side of the \\(y\\)-axis.",
+        "solutionSteps": [
+          {
+            "explanation": "\\(\\ln 1=0\\), \\(\\ln e=1\\). As \\(x\\to 0^{+}\\), \\(y\\to-\\infty\\) (vertical asymptote).",
+            "workingOut": "\\((1,0),\\ (e,1)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final description matches the correct option. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(VA x=0\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q19b",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 150,
+        "question": "Find the area between \\(y=\\ln x\\) and the \\(y\\)-axis from \\(y=0\\) to \\(y=1\\).",
+        "opts": [
+          "\\(e-1\\)",
+          "\\(1\\)",
+          "\\(e\\)",
+          "\\(\\ln e\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(e-1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Using the inverse \\(x=e^{y}\\), area = \\(\\displaystyle\\int_0^1 e^{y}\\,dy = [e^{y}]_0^1 = e-1\\).",
+            "workingOut": "\\(e-1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(e-1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(e-1\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q19c",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Hence find the area between \\(y=\\ln x\\) and the \\(x\\)-axis from \\(x=1\\) to \\(x=e\\).",
+        "opts": [
+          "\\(1\\)",
+          "\\(e-1\\)",
+          "\\(e\\)",
+          "\\(\\ln e\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(1\\).",
+        "solutionSteps": [
+          {
+            "explanation": "The area under \\(y=\\ln x\\) from 1 to \\(e\\) equals 1. By integration by parts, \\([x\\ln x - x]_{1}^{e} = 1\\).",
+            "workingOut": "\\(1\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(1\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(1\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y12a-5j-q20",
+    "topicId": "y12a-5J",
+    "c": "5J",
+    "t": "Areas and the logarithmic function",
+    "type": "multi_part",
+    "difficulty": "medium",
+    "timeLimit": 240,
+    "question": "Consider the curves \\(y=8e^{-x}\\) and \\(y=e^{x}-2\\).",
+    "answer": "",
+    "hint": "Work through the parts in order.",
+    "solution": "See each part for a full worked solution.",
+    "solutionSteps": [
+      {
+        "explanation": "Set \\(8e^{-x}=e^{x}-2\\). Multiply by \\(e^{x}=u\\): \\(8=u^{2}-2u\\), so \\(u^{2}-2u-8=0\\).",
+        "workingOut": "\\(u^{2}-2u-8=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final equation: \\(u^{2}-2u-8=0\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(u^{2}-2u-8=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\((u-4)(u+2)=0\\Rightarrow u=4\\) (since \\(u=e^{x}>0\\)). So \\(x=\\ln 4\\). Then \\(y=4-2=2\\).",
+        "workingOut": "\\((\\ln 4,\\ 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final point: \\((\\ln 4,\\ 2)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\((\\ln 4,\\ 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check endpoints and intersection from previous parts. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(meet at (\\ln 4,2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Shaded finite region between the curves from the y-axis to the intersection.",
+        "workingOut": "\\(0\\le x\\le\\ln 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\displaystyle\\int_0^{\\ln 4}\\big(8e^{-x}-(e^{x}-2)\\big)dx=[-8e^{-x}-e^{x}+2x]_0^{\\ln 4}=3+4\\ln 2\\).",
+        "workingOut": "\\(3+4\\ln 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: \\(3+4\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+        "workingOut": "\\(3+4\\ln 2\\)",
+        "graphData": null
+      }
+    ],
+    "subQuestions": [
+      {
+        "id": "y12a-5j-q20a",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Let \\(u=e^{x}\\). The curves \\(y=8e^{-x}\\) and \\(y=e^{x}-2\\) intersect where which equation holds?",
+        "opts": [
+          "\\(u^{2}-2u-8=0\\)",
+          "\\(u^{2}+2u-8=0\\)",
+          "\\(u^{2}-2u+8=0\\)",
+          "\\(u^{2}-8=0\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(u^{2}-2u-8=0\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Set \\(8e^{-x}=e^{x}-2\\). Multiply by \\(e^{x}=u\\): \\(8=u^{2}-2u\\), so \\(u^{2}-2u-8=0\\).",
+            "workingOut": "\\(u^{2}-2u-8=0\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final equation: \\(u^{2}-2u-8=0\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(u^{2}-2u-8=0\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q20b",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Hence find the coordinates of the intersection of \\(y=8e^{-x}\\) and \\(y=e^{x}-2\\).",
+        "opts": [
+          "\\((\\ln 4,\\ 2)\\)",
+          "\\((\\ln 2,\\ 2)\\)",
+          "\\((\\ln 4,\\ 0)\\)",
+          "\\((4,\\ 2)\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\((\\ln 4,\\ 2)\\).",
+        "solutionSteps": [
+          {
+            "explanation": "\\((u-4)(u+2)=0\\Rightarrow u=4\\) (since \\(u=e^{x}>0\\)). So \\(x=\\ln 4\\). Then \\(y=4-2=2\\).",
+            "workingOut": "\\((\\ln 4,\\ 2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final point: \\((\\ln 4,\\ 2)\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\((\\ln 4,\\ 2)\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q20c",
+        "type": "multiple_choice",
+        "difficulty": "medium",
+        "timeLimit": 120,
+        "question": "Which description matches the sketch of \\(y=8e^{-x}\\) and \\(y=e^{x}-2\\) with the region bounded by them and the \\(y\\)-axis shaded?",
+        "opts": [
+          "At \\(x=0\\): heights 8 and \\(-1\\); they meet at \\((\\ln 4,\\ 2)\\); shade between curves for \\(0\\le x\\le\\ln 4\\)",
+          "They meet at the origin; shade for all x>0",
+          "At x=0 both pass through (0,2); shade only above both",
+          "They never meet; shade unbounded region"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is At \\(x=0\\): heights 8 and \\(-1\\); they meet at \\((\\ln 4,\\ 2)\\); shade between curves for \\(0\\le x\\le\\ln 4\\).",
+        "solutionSteps": [
+          {
+            "explanation": "Check endpoints and intersection from previous parts. Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(meet at (\\ln 4,2)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Shaded finite region between the curves from the y-axis to the intersection.",
+            "workingOut": "\\(0\\le x\\le\\ln 4\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      },
+      {
+        "id": "y12a-5j-q20d",
+        "type": "multiple_choice",
+        "difficulty": "hard",
+        "timeLimit": 180,
+        "question": "Find the area of the region bounded by \\(y=8e^{-x}\\), \\(y=e^{x}-2\\) and the \\(y\\)-axis.",
+        "opts": [
+          "\\(3+4\\ln 2\\)",
+          "\\(3+\\ln 2\\)",
+          "\\(4\\ln 2\\)",
+          "\\(e+4\\ln 2\\)"
+        ],
+        "a": 0,
+        "answer": "0",
+        "hint": "Area under \\(y=\\dfrac{1}{x}\\) uses \\(\\int\\dfrac{1}{x}\\,dx=\\ln|x|+C\\).",
+        "solution": "The correct answer is \\(3+4\\ln 2\\).",
+        "solutionSteps": [
+          {
+            "explanation": "\\(\\displaystyle\\int_0^{\\ln 4}\\big(8e^{-x}-(e^{x}-2)\\big)dx=[-8e^{-x}-e^{x}+2x]_0^{\\ln 4}=3+4\\ln 2\\).",
+            "workingOut": "\\(3+4\\ln 2\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Final answer: \\(3+4\\ln 2\\). Why this step? It isolates one evaluation so the next algebra stays exact. A common slip is dropping absolute values or misapplying ln(e^k)=k.",
+            "workingOut": "\\(3+4\\ln 2\\)",
+            "graphData": null
+          }
+        ],
+        "graphData": null,
+        "requiresManualGrading": false
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   }
 ];

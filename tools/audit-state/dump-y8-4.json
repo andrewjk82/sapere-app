@@ -1,0 +1,2136 @@
+[
+  {
+    "id": "y8-4a-q1a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "List the integers less than -1...",
+    "question": "List the integers less than $-10$ and greater than $-15$.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-14, -13, -12, -11",
+    "hint": "Think of the numbers between the two given limits on a number line.",
+    "solution": "The integers are -14, -13, -12, -11.",
+    "solutionSteps": [
+      {
+        "explanation": "List the numbers",
+        "workingOut": "-14, -13, -12, -11"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q1b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "List the integers greater than...",
+    "question": "List the integers greater than $-100$ and less than $-95$.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-99, -98, -97, -96",
+    "hint": "Think of the numbers between the two given limits on a number line.",
+    "solution": "The integers are -99, -98, -97, -96.",
+    "solutionSteps": [
+      {
+        "explanation": "List the numbers",
+        "workingOut": "-99, -98, -97, -96"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q1c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "List the integers less than 2 ...",
+    "question": "List the integers less than $2$ and greater than $-5$.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-4, -3, -2, -1, 0, 1",
+    "hint": "Think of the numbers between the two given limits on a number line.",
+    "solution": "The integers are -4, -3, -2, -1, 0, 1.",
+    "solutionSteps": [
+      {
+        "explanation": "List the numbers",
+        "workingOut": "-4, -3, -2, -1, 0, 1"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q1d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "List the integers greater than...",
+    "question": "List the integers greater than $-210$ and less than $-205$.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-209, -208, -207, -206",
+    "hint": "Think of the numbers between the two given limits on a number line.",
+    "solution": "The integers are -209, -208, -207, -206.",
+    "solutionSteps": [
+      {
+        "explanation": "List the numbers",
+        "workingOut": "-209, -208, -207, -206"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q2a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Draw a number line and mark th...",
+    "question": "Draw a number line and mark the numbers $-10$, $-5$, $0$ and $5$ on it.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "answer": "See worked solution.",
+    "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+    "solution": "Teacher to review the drawn number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw and mark",
+        "workingOut": "Number line correctly drawn with points marked."
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q2b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Draw a number line and mark th...",
+    "question": "Draw a number line and mark the numbers $-7$, $-2$, $3$ and $6$ on it.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "answer": "See worked solution.",
+    "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+    "solution": "Teacher to review the drawn number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw and mark",
+        "workingOut": "Number line correctly drawn with points marked."
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q2c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Draw a number line and mark th...",
+    "question": "Draw a number line and mark the integers less than $4$ and greater than $-4$ on it.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "answer": "See worked solution.",
+    "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+    "solution": "Teacher to review the drawn number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw and mark",
+        "workingOut": "Number line correctly drawn with points marked."
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q2d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Draw a number line and mark th...",
+    "question": "Draw a number line and mark the integers less than $2$ and greater than $-6$ on it.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": true,
+    "options": [],
+    "answer": "See worked solution.",
+    "hint": "Draw a straight line, mark zero, and place the integers at equal intervals.",
+    "solution": "Teacher to review the drawn number line.",
+    "solutionSteps": [
+      {
+        "explanation": "Draw and mark",
+        "workingOut": "Number line correctly drawn with points marked."
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q3",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "The sequence -20, -16, -12, .....",
+    "question": "The sequence $-20$, $-16$, $-12$, ... is 'going up by fours'. Find the next three terms.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-8, -4, 0",
+    "hint": "Add 4 repeatedly.",
+    "solution": "Add 4 to the previous term: $-12 + 4 = -8$, $-8 + 4 = -4$, $-4 + 4 = 0$.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate next terms",
+        "workingOut": "$-8, -4, 0$"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q4",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "The sequence 20, 15, 10, ... i...",
+    "question": "The sequence $20$, $15$, $10$, ... is 'going down by fives'. Find the next three terms.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "5, 0, -5",
+    "hint": "Subtract 5 repeatedly.",
+    "solution": "Subtract 5 from the previous term: $10 - 5 = 5$, $5 - 5 = 0$, $0 - 5 = -5$.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate next terms",
+        "workingOut": "$5, 0, -5$"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q5",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "The sequence -40, -32, -24, .....",
+    "question": "The sequence $-40$, $-32$, $-24$, ... is 'going up by eights'. Find the next four terms.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-16, -8, 0, 8",
+    "hint": "Add 8 repeatedly.",
+    "solution": "Add 8 to the previous term.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate next terms",
+        "workingOut": "$-16, -8, 0, 8$"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q6a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the reading for the ...",
+    "question": "Determine the reading for the thermometer shown below.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "10^\\circ\\text{C}",
+    "hint": "Look at the red level on the scale.",
+    "solution": "The reading is $10^\\circ\\text{C}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Read thermometer",
+        "workingOut": "10^\\circ\\text{C}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 150,
+        "height": 350,
+        "boundingbox": [
+          -25,
+          60,
+          25,
+          -70
+        ],
+        "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, 10], [1.5, 10], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q6b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the reading for the ...",
+    "question": "Determine the reading for the thermometer shown below.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-20^\\circ\\text{C}",
+    "hint": "Look at the red level on the scale.",
+    "solution": "The reading is $-20^\\circ\\text{C}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Read thermometer",
+        "workingOut": "-20^\\circ\\text{C}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 150,
+        "height": 350,
+        "boundingbox": [
+          -25,
+          60,
+          25,
+          -70
+        ],
+        "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, -20], [1.5, -20], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q6c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the reading for the ...",
+    "question": "Determine the reading for the thermometer shown below.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-12^\\circ\\text{C}",
+    "hint": "Look at the red level on the scale.",
+    "solution": "The reading is $-12^\\circ\\text{C}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Read thermometer",
+        "workingOut": "-12^\\circ\\text{C}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 150,
+        "height": 350,
+        "boundingbox": [
+          -25,
+          60,
+          25,
+          -70
+        ],
+        "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, -12], [1.5, -12], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q6d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the reading for the ...",
+    "question": "Determine the reading for the thermometer shown below.",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4^\\circ\\text{C}",
+    "hint": "Look at the red level on the scale.",
+    "solution": "The reading is $4^\\circ\\text{C}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Read thermometer",
+        "workingOut": "4^\\circ\\text{C}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": {
+      "jsxGraph": {
+        "width": 150,
+        "height": 350,
+        "boundingbox": [
+          -25,
+          60,
+          25,
+          -70
+        ],
+        "script": "\n        board.suspendUpdate();\n        var yOffset = -60;\n        board.create('circle', [[0, yOffset], 6], {fillColor: '#cc0000', strokeColor: '#cc0000'});\n        board.create('polygon', [[-2.5, 50], [2.5, 50], [2.5, yOffset+4], [-2.5, yOffset+4]], {fillColor: '#f8f9fa', strokeColor: '#475569', borders: {strokeWidth: 1}});\n        board.create('polygon', [[-1.5, 4], [1.5, 4], [1.5, yOffset+4], [-1.5, yOffset+4]], {fillColor: '#cc0000', strokeColor: '#cc0000', borders: {strokeWidth: 0}});\n        board.create('text', [0, 58, '°C'], {anchorX: 'middle', fontSize: 14});\n        for (var i = -60; i <= 50; i += 10) {\n          board.create('segment', [[2.5, i], [6, i]], {strokeColor: '#475569'});\n          board.create('text', [8, i, i.toString()], {anchorY: 'middle', fontSize: 12});\n        }\n        for (var i = -60; i <= 50; i += 2) {\n          if (i % 10 !== 0) board.create('segment', [[2.5, i], [4.5, i]], {strokeColor: '#475569', strokeWidth: 1});\n        }\n        board.unsuspendUpdate();\n      "
+      }
+    },
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $8$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-8",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $8$ is $-8$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-8"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-7$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "7",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-7$ is $7$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "7"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $42$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-42",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $42$ is $-42$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-42"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-12$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "12",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-12$ is $12$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "12"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7e",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-85$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "85",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-85$ is $85$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "85"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7f",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $93$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-93",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $93$ is $-93$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-93"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7g",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-567$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "567",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-567$ is $567$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "567"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7h",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $20000$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-20000",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $20000$ is $-20000$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-20000"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7i",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-4500$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "4500",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-4500$ is $4500$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "4500"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7j",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $8900$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-8900",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $8900$ is $-8900$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-8900"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7k",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $-67000$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "67000",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $-67000$ is $67000$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "67000"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4a-q7l",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Integers",
+    "topicId": "y8-4a",
+    "topicCode": "4A",
+    "topicTitle": "Integers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Determine the opposite of this...",
+    "question": "Determine the opposite of this integer: $84000$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-84000",
+    "hint": "Change the sign of the integer.",
+    "solution": "The opposite of $84000$ is $-84000$.",
+    "solutionSteps": [
+      {
+        "explanation": "Change sign",
+        "workingOut": "-84000"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830238,
+      "_nanoseconds": 2000000
+    }
+  },
+  {
+    "id": "y8-4h-q10",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "In a maths competition, Harry ...",
+    "question": "In a maths competition, Harry scored $30$. Each correct answer was worth $12$ marks. For each incorrect answer, $3$ marks were deducted. If Harry answered $5$ questions correctly, how many incorrect answers did he have?",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "10",
+    "hint": "Find how many marks he lost by comparing his actual score to the score he got from correct answers.",
+    "solution": "Marks from correct answers: $5 \\times 12 = 60$ marks. Let $x$ be the number of incorrect answers. Total score = $60 - 3x = 30$. $3x = 30$, so $x = 10$. Harry had 10 incorrect answers.",
+    "solutionSteps": [
+      {
+        "explanation": "Marks from correct answers",
+        "workingOut": "5 \\times 12 = 60"
+      },
+      {
+        "explanation": "Marks lost",
+        "workingOut": "60 - 30 = 30"
+      },
+      {
+        "explanation": "Number of incorrect answers",
+        "workingOut": "30 \\div 3 = 10"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n-18 + 26...",
+    "question": "Calculate:\n\n$-18 + 26$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "8",
+    "hint": "Adding a positive number moves to the right on the number line.",
+    "solution": "$-18 + 26 = 26 - 18 = 8$.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract 18 from 26",
+        "workingOut": "26 - 18 = 8"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n32 - (-54)...",
+    "question": "Calculate:\n\n$32 - (-54)$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "86",
+    "hint": "Subtracting a negative is the same as adding.",
+    "solution": "Subtracting a negative is the same as adding a positive: $32 + 54 = 86$.",
+    "solutionSteps": [
+      {
+        "explanation": "Convert double negative to positive",
+        "workingOut": "32 + 54"
+      },
+      {
+        "explanation": "Add",
+        "workingOut": "86"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n45 - 82 + 19...",
+    "question": "Calculate:\n\n$45 - 82 + 19$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-18",
+    "hint": "Calculate from left to right.",
+    "solution": "Work from left to right: $45 - 82 = -37$. Then $-37 + 19 = -18$.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract 82 from 45",
+        "workingOut": "45 - 82 = -37"
+      },
+      {
+        "explanation": "Add 19",
+        "workingOut": "-37 + 19 = -18"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n19 - 25 - 8...",
+    "question": "Calculate:\n\n$19 - 25 - 8$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-14",
+    "hint": "Calculate from left to right.",
+    "solution": "Work from left to right: $19 - 25 = -6$. Then $-6 - 8 = -14$.",
+    "solutionSteps": [
+      {
+        "explanation": "Subtract 25 from 19",
+        "workingOut": "19 - 25 = -6"
+      },
+      {
+        "explanation": "Subtract 8",
+        "workingOut": "-6 - 8 = -14"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1e",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n-315 - (-1240) + 7...",
+    "question": "Calculate:\n\n$-315 - (-1240) + 72$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "997",
+    "hint": "Convert subtracting a negative to addition first.",
+    "solution": "Convert subtracting a negative to adding: $-315 + 1240 + 72 = 925 + 72 = 997$.",
+    "solutionSteps": [
+      {
+        "explanation": "Convert double negative",
+        "workingOut": "-315 + 1240 + 72"
+      },
+      {
+        "explanation": "Add and subtract from left to right",
+        "workingOut": "925 + 72 = 997"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q1f",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n12 - (18 + (-35))...",
+    "question": "Calculate:\n\n$12 - (18 + (-35))$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "29",
+    "hint": "Calculate the expression inside the brackets first.",
+    "solution": "Evaluate the brackets first: $18 + (-35) = -17$. Then $12 - (-17) = 12 + 17 = 29$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate inside the brackets",
+        "workingOut": "18 - 35 = -17"
+      },
+      {
+        "explanation": "Subtract the result",
+        "workingOut": "12 - (-17) = 12 + 17 = 29"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n4 \\times (-7 + 12) ...",
+    "question": "Evaluate:\n\n$4 \\times (-7 + 12) - 8$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "12",
+    "hint": "Follow the order of operations (BODMAS/BIDMAS).",
+    "solution": "Brackets first: $-7 + 12 = 5$. Then multiply: $4 \\times 5 = 20$. Then subtract: $20 - 8 = 12$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate brackets",
+        "workingOut": "-7 + 12 = 5"
+      },
+      {
+        "explanation": "Multiply",
+        "workingOut": "4 \\times 5 = 20"
+      },
+      {
+        "explanation": "Subtract",
+        "workingOut": "20 - 8 = 12"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n-4 \\times -8 - 15...",
+    "question": "Evaluate:\n\n$-4 \\times -8 - 15$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "17",
+    "hint": "Multiply before subtracting.",
+    "solution": "Multiply first: $-4 \\times -8 = 32$. Then subtract: $32 - 15 = 17$.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply two negative numbers",
+        "workingOut": "-4 \\times -8 = 32"
+      },
+      {
+        "explanation": "Subtract",
+        "workingOut": "32 - 15 = 17"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n-28 \\div 4 + 7 \\tim...",
+    "question": "Evaluate:\n\n$-28 \\div 4 + 7 \\times -3$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-28",
+    "hint": "Do multiplication and division before addition.",
+    "solution": "Divide and multiply first: $-28 \\div 4 = -7$, and $7 \\times -3 = -21$. Then add: $-7 + (-21) = -28$.",
+    "solutionSteps": [
+      {
+        "explanation": "Divide",
+        "workingOut": "-28 \\div 4 = -7"
+      },
+      {
+        "explanation": "Multiply",
+        "workingOut": "7 \\times -3 = -21"
+      },
+      {
+        "explanation": "Add the results",
+        "workingOut": "-7 + (-21) = -28"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2d",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n-15 \\times (-3) - (...",
+    "question": "Evaluate:\n\n$-15 \\times (-3) - (-6 - 4) \\times 4$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "85",
+    "hint": "Evaluate brackets, then multiply, then subtract.",
+    "solution": "Brackets: $-6 - 4 = -10$. Multiply: $-15 \\times (-3) = 45$ and $-10 \\times 4 = -40$. Subtract: $45 - (-40) = 45 + 40 = 85$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate brackets",
+        "workingOut": "-6 - 4 = -10"
+      },
+      {
+        "explanation": "Multiply terms",
+        "workingOut": "-15 \\times (-3) = 45 \\text{ and } -10 \\times 4 = -40"
+      },
+      {
+        "explanation": "Subtract the results",
+        "workingOut": "45 - (-40) = 45 + 40 = 85"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2e",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n\\frac{-84 - 7 \\time...",
+    "question": "Evaluate:\n\n$\\frac{-84 - 7 \\times 6}{5 - (-4)}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-14",
+    "hint": "Evaluate the numerator and denominator separately.",
+    "solution": "Numerator: $-84 - 42 = -126$. Denominator: $5 + 4 = 9$. Fraction: $\\frac{-126}{9} = -14$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate numerator",
+        "workingOut": "-84 - 42 = -126"
+      },
+      {
+        "explanation": "Evaluate denominator",
+        "workingOut": "5 + 4 = 9"
+      },
+      {
+        "explanation": "Divide",
+        "workingOut": "\\frac{-126}{9} = -14"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2f",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n\\frac{25 \\times 6}{...",
+    "question": "Evaluate:\n\n$\\frac{25 \\times 6}{3} - \\frac{9 \\times (-10)}{5}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "68",
+    "hint": "Simplify each fraction first.",
+    "solution": "First fraction: $\\frac{150}{3} = 50$. Second fraction: $\\frac{-90}{5} = -18$. Subtract: $50 - (-18) = 50 + 18 = 68$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate first fraction",
+        "workingOut": "\\frac{150}{3} = 50"
+      },
+      {
+        "explanation": "Evaluate second fraction",
+        "workingOut": "\\frac{-90}{5} = -18"
+      },
+      {
+        "explanation": "Subtract",
+        "workingOut": "50 - (-18) = 50 + 18 = 68"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2g",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n-\\frac{5}{12} + \\fr...",
+    "question": "Evaluate:\n\n$-\\frac{5}{12} + \\frac{3}{7}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "\\frac{1}{84}",
+    "hint": "Find a common denominator.",
+    "solution": "Find a common denominator of 84. $-\\frac{35}{84} + \\frac{36}{84} = \\frac{1}{84}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Find common denominator",
+        "workingOut": "-\\frac{35}{84} + \\frac{36}{84}"
+      },
+      {
+        "explanation": "Add the numerators",
+        "workingOut": "\\frac{1}{84}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q2h",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Evaluate:\n\n\\frac{5}{14} \\times...",
+    "question": "Evaluate:\n\n$\\frac{5}{14} \\times \\left( -\\frac{7}{5} \\right) + \\frac{9}{4}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "\\frac{7}{4}",
+    "hint": "Multiply before adding.",
+    "solution": "Multiply first: $\\frac{5}{14} \\times -\\frac{7}{5} = -\\frac{35}{70} = -\\frac{1}{2}$. Then add: $-\\frac{1}{2} + \\frac{9}{4} = -\\frac{2}{4} + \\frac{9}{4} = \\frac{7}{4}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply fractions",
+        "workingOut": "\\frac{5}{14} \\times -\\frac{7}{5} = -\\frac{1}{2}"
+      },
+      {
+        "explanation": "Find common denominator to add",
+        "workingOut": "-\\frac{2}{4} + \\frac{9}{4} = \\frac{7}{4}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q3",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "The maximum temperature for Pe...",
+    "question": "The maximum temperature for Perisher today was $-6^\\circ\\text{C}$, while Mount Buller had a top temperature of $-18.5^\\circ\\text{C}$. How much warmer than Mount Buller was Perisher today?",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "12.5^\\circ\\text{C}",
+    "hint": "Subtract the lower temperature from the higher temperature.",
+    "solution": "Difference = $-6 - (-18.5) = -6 + 18.5 = 12.5^\\circ\\text{C}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up subtraction",
+        "workingOut": "-6 - (-18.5)"
+      },
+      {
+        "explanation": "Calculate difference",
+        "workingOut": "-6 + 18.5 = 12.5^\\circ\\text{C}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q4",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Plot these points on the Carte...",
+    "question": "Plot these points on the Cartesian plane. Once completed, compare your plot with the correct positions.\n\n$A(-5, 3), B(4, -8), C(7, 6), D(-6, 0)$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "teacher_review",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "Check your plot against the solution.",
+    "hint": "Remember that the first number is the x-coordinate (horizontal) and the second is the y-coordinate (vertical).",
+    "solution": "Point A is 5 units left and 3 units up. Point B is 4 units right and 8 units down. Point C is 7 units right and 6 units up. Point D is 6 units left on the x-axis.",
+    "solutionSteps": [
+      {
+        "explanation": "Plot A",
+        "workingOut": "(-5, 3) is in the top-left quadrant."
+      },
+      {
+        "explanation": "Plot B",
+        "workingOut": "(4, -8) is in the bottom-right quadrant."
+      },
+      {
+        "explanation": "Plot C",
+        "workingOut": "(7, 6) is in the top-right quadrant."
+      },
+      {
+        "explanation": "Plot D",
+        "workingOut": "(-6, 0) is on the left side of the x-axis."
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q5",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Points A, B and C have coordin...",
+    "question": "Points $A$, $B$ and $C$ have coordinates $(2, 0)$, $(5, 4)$ and $(8, 0)$ respectively. What is the area of the triangle $ABC$?",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "12",
+    "hint": "Find the length of the base and the perpendicular height.",
+    "solution": "The base of the triangle is on the x-axis from $x=2$ to $x=8$, so its length is $8 - 2 = 6$. The height of the triangle is the y-coordinate of point $B$, which is $4$. Area = $\\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times 4 = 12$.",
+    "solutionSteps": [
+      {
+        "explanation": "Find base length",
+        "workingOut": "8 - 2 = 6"
+      },
+      {
+        "explanation": "Find height",
+        "workingOut": "\\text{y-coordinate of } B = 4"
+      },
+      {
+        "explanation": "Calculate area",
+        "workingOut": "\\frac{1}{2} \\times 6 \\times 4 = 12"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q7a",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n3 \\frac{1}{3} - 5 ...",
+    "question": "Calculate:\n\n$3 \\frac{1}{3} - 5 \\frac{3}{4}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-2 \\frac{5}{12}",
+    "hint": "Convert to improper fractions first.",
+    "solution": "Convert to improper fractions: $\\frac{10}{3} - \\frac{23}{4}$. Find common denominator 12: $\\frac{40}{12} - \\frac{69}{12} = -\\frac{29}{12} = -2 \\frac{5}{12}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Improper fractions",
+        "workingOut": "\\frac{10}{3} - \\frac{23}{4}"
+      },
+      {
+        "explanation": "Common denominator",
+        "workingOut": "\\frac{40}{12} - \\frac{69}{12}"
+      },
+      {
+        "explanation": "Subtract",
+        "workingOut": "-\\frac{29}{12} = -2 \\frac{5}{12}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q7b",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n14.5 - (-9.6) \\tim...",
+    "question": "Calculate:\n\n$14.5 - (-9.6) \\times \\frac{3}{4}$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "21.7",
+    "hint": "Follow the order of operations.",
+    "solution": "Multiply first: $-9.6 \\times \\frac{3}{4} = -9.6 \\div 4 \\times 3 = -2.4 \\times 3 = -7.2$. Then subtract: $14.5 - (-7.2) = 14.5 + 7.2 = 21.7$.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply",
+        "workingOut": "-9.6 \\times 0.75 = -7.2"
+      },
+      {
+        "explanation": "Subtract",
+        "workingOut": "14.5 - (-7.2) = 14.5 + 7.2 = 21.7"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q7c",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Calculate:\n\n15 \\times \\frac{4}...",
+    "question": "Calculate:\n\n$15 \\times \\frac{4}{5} \\times \\left( - \\frac{5}{8} \\right)$",
+    "difficulty": "easy",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "-7 \\frac{1}{2}",
+    "hint": "Multiply from left to right.",
+    "solution": "Multiply first two terms: $15 \\times \\frac{4}{5} = 12$. Then multiply by the last term: $12 \\times \\left( -\\frac{5}{8} \\right) = -\\frac{60}{8} = -\\frac{15}{2} = -7 \\frac{1}{2}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Multiply first pair",
+        "workingOut": "15 \\times \\frac{4}{5} = 12"
+      },
+      {
+        "explanation": "Multiply by third term",
+        "workingOut": "12 \\times -\\frac{5}{8} = -\\frac{60}{8}"
+      },
+      {
+        "explanation": "Simplify",
+        "workingOut": "-\\frac{15}{2} = -7 \\frac{1}{2}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q8",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "Sam started the week with a de...",
+    "question": "Sam started the week with a debt of $420.75. He worked hard and earned $3500, but had $300 stolen. He won $95.50 in the lottery and had to pay an electricity bill of $250. After paying his debt and his electricity bill, how much did Sam have left?",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "$2624.75",
+    "hint": "Write an equation representing all his financial changes.",
+    "solution": "Calculate the net change to his balance:\nStart: $-420.75$\nEarned: $+3500$\nStolen: $-300$\nWon: $+95.50$\nPaid bill: $-250$\nTotal = $-420.75 + 3500 - 300 + 95.50 - 250 = 3595.50 - 970.75 = \\$2624.75$.",
+    "solutionSteps": [
+      {
+        "explanation": "Total income",
+        "workingOut": "3500 + 95.50 = 3595.50"
+      },
+      {
+        "explanation": "Total expenses and debt",
+        "workingOut": "420.75 + 300 + 250 = 970.75"
+      },
+      {
+        "explanation": "Calculate remaining balance",
+        "workingOut": "3595.50 - 970.75 = 2624.75"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  },
+  {
+    "id": "y8-4h-q9",
+    "chapterId": "y8-4",
+    "chapterTitle": "Chapter 4: Negative numbers",
+    "topicId": "y8-4h",
+    "topicCode": "4H",
+    "topicTitle": "Review of negative numbers",
+    "year": "Year 8",
+    "isManual": true,
+    "title": "A large mountain has its peak ...",
+    "question": "A large mountain has its peak at a height of $2510\\text{ metres}$ above sea level. Its base on the sea floor is $6845\\text{ metres}$ below sea level. What is the total height of the mountain from the sea floor to its summit?",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "type": "short_answer",
+    "requiresManualGrading": false,
+    "options": [],
+    "answer": "9355\\text{ m}",
+    "hint": "Subtract the negative height of the base from the height of the peak.",
+    "solution": "The total height is the difference between the peak and the base. $2510 - (-6845) = 2510 + 6845 = 9355\\text{ m}$.",
+    "solutionSteps": [
+      {
+        "explanation": "Set up subtraction",
+        "workingOut": "2510 - (-6845)"
+      },
+      {
+        "explanation": "Calculate total height",
+        "workingOut": "2510 + 6845 = 9355\\text{ m}"
+      }
+    ],
+    "questionImage": "",
+    "subQuestions": [],
+    "blanks": [],
+    "graphData": null,
+    "examPaper": "",
+    "createdAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    },
+    "updatedAt": {
+      "_seconds": 1782830237,
+      "_nanoseconds": 748000000
+    }
+  }
+]

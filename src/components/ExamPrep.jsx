@@ -435,7 +435,11 @@ const QuizView = ({
           </button>
         )}
       </div>
-      <MathView content={q.question} graphData={(q.type === 'graph_sketch' || q.type === 'teacher_review' || (q.requiresManualGrading && /(draw|sketch|construct)/i.test(q.question || ''))) ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '0.98rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
+      {/* graph_sketch: graphData is the answer being constructed — hide it
+          until feedback. teacher_review / other requiresManualGrading
+          questions: graphData is normally the GIVEN diagram the question
+          depends on and must render immediately, not only after submitting. */}
+      <MathView content={q.question} graphData={q.type === 'graph_sketch' ? (showFeedback ? q.graphData : null) : q.graphData} style={{ fontSize: '0.98rem', lineHeight: 1.75, color: '#1e1b4b', fontWeight: 500 }} />
 
       {/* Watch the lecture — shown when this topic has an authored lesson */}
       {lesson && (

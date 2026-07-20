@@ -1,0 +1,2070 @@
+[
+  {
+    "chapterId": "y10-4",
+    "topicId": "y10-4e",
+    "id": "N5YaS6PUOt6jn4MxAOg1",
+    "question": "Are lines $y=2x-1, y=x+3, y=-x+9$ concurrent?",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"Yes, at (4, 7)\"), but the math solution matches index 1 (\"No\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1a",
+    "id": "y10-1a-q18b_iii",
+    "question": "This question uses the income tax rates in the fictional nation of Plusionta. Th",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"14.22%\"), but the math solution matches index 2 (\"14.93%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1a",
+    "id": "y10-1a-q2h",
+    "question": "Express \\(160\\%\\) as a fraction in lowest terms.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"2\"), but the math solution matches index 1 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1a",
+    "id": "y10-1a-q3c",
+    "question": "Express \\(\\frac{3}{16}\\) as a percentage.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"18.75%\"), but the math solution matches index 1 (\"20.63%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1a",
+    "id": "y10-1a-q4e_percentage",
+    "question": "A quantity is given as \\(1.5\\). Find the corresponding percentage.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"150%\"), but the math solution matches index 1 (\"135%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1a",
+    "id": "y10-1a-q8c",
+    "question": "Find what percentage 36 hours is of 3 weeks, correct to two decimal places.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"7.14%\"), but the math solution matches index 1 (\"6.43%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1b",
+    "id": "y10-1b-q1c",
+    "question": "Increase 350 dollars by \\(8\\%\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"378\"), but the math solution matches index 2 (\"340\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1c",
+    "id": "y10-1c-high-q33",
+    "question": "A civil supervisor gets salary increases of \\( 5\\% \\) and \\( 7\\% \\). If the cost",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\(4.18\\%\\)\"), but the math solution matches index 1 (\"\\(4.30\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1c",
+    "id": "y10-1c-q11a",
+    "question": "Given the annual inflation rates: Years: 2005 (2.5%), 2006 (3.0%), 2007 (3.5%), ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"18.4%\"), but the math solution matches index 1 (\"20.2%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1c",
+    "id": "y10-1c-q11b",
+    "question": "Given the annual inflation rates: Years: 2005 (2.5%), 2006 (3.0%), 2007 (3.5%), ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"11.5%\"), but the math solution matches index 2 (\"10.3%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1c",
+    "id": "y10-1c-q4a",
+    "question": "Land rates in a shire have risen by \\(5\\%\\) every year for the last seven years.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"40.7%\"), but the math solution matches index 0 (\"42.7%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1c",
+    "id": "y10-1c-q6b",
+    "question": "Calculate the total percentage change (stating if it is an increase or decrease,",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"decrease of 36%\"), but the math solution matches index 0 (\"decrease of 29%\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q11ai",
+    "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an inve",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(23.7\\%\\)\"), but the math solution matches index 3 (\"\\(20.3\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q11aiii",
+    "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an inve",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(23.7\\%\\)\"), but the math solution matches index 3 (\"\\(20.3\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q11av",
+    "question": "Find the total percentage decrease, correct to the nearest \\(0.1\\%\\), in an inve",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(22.4\\%\\)\"), but the math solution matches index 2 (\"\\(20.2\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q17c",
+    "question": "A commercial construction excavator is purchased for \\( 181000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(22.1\\%\\)\"), but the math solution matches index 3 (\"\\(21.0\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q18c",
+    "question": "A commercial construction excavator is purchased for \\( 189000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(16.8\\%\\)\"), but the math solution matches index 3 (\"\\(16.0\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q1d",
+    "question": "A landlord purchased washing machines six years ago for 800000 dollars, and assu",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(86.31\\%\\)\"), but the math solution matches index 2 (\"\\(90.42\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q21c",
+    "question": "A commercial construction excavator is purchased for \\( 211000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(13.5\\%\\)\"), but the math solution matches index 1 (\"\\(15.0\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q23c",
+    "question": "A commercial construction excavator is purchased for \\( 226000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(17.1\\%\\)\"), but the math solution matches index 1 (\"\\(20.9\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q24c",
+    "question": "A commercial construction excavator is purchased for \\( 233000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(23.1\\%\\)\"), but the math solution matches index 2 (\"\\(21.0\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q25c",
+    "question": "A commercial construction excavator is purchased for \\( 241000 \\) dollars and de",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(17.6\\%\\)\"), but the math solution matches index 2 (\"\\(16.0\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q2a_pct",
+    "question": "A shop spent 400000 dollars installing security alarms. Find the percentage redu",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(62.28\\%\\)\"), but the math solution matches index 2 (\"\\(56.05\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q6taxis_pct",
+    "question": "Taxis depreciate at \\(45\\%\\) p.a., and other cars depreciate at \\(20\\%\\) p.a. Wh",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(97.23\\%\\)\"), but the math solution matches index 2 (\"\\(102.09\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q7d",
+    "question": "Mr Startit's 10-year-old car is worth 7200 dollars, and has been depreciating at",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(98.19\\%\\)\"), but the math solution matches index 3 (\"\\(80.33\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1e",
+    "id": "y10-1e-q9",
+    "question": "I take a sealed glass container and remove \\(50\\%\\) of the air. Then I remove \\(",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(1.40\\%\\)\"), but the math solution matches index 3 (\"\\(1.56\\%\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y10-1",
+    "topicId": "y10-1f",
+    "id": "y10-1f-high-q63",
+    "question": "Elena splits a capital budget of \\(\\$70000\\) into two separate venture funds. Fu",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\(\\$28000\\)\"), but the math solution matches index 1 (\"\\(\\$30000\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y7-10",
+    "topicId": "(unknown topic)",
+    "id": "EMdbKQ3O64vyeRkUNMQg",
+    "question": "Arrange the following integers in decreasing order (from largest to smallest):<b",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"60, 50, 35, -35, -41, -40, -50, -600\"), but the math solution matches index 0 (\"60, 50, 35, -35, -40, -41, -50, -600\")."
+    ]
+  },
+  {
+    "chapterId": "y10-2",
+    "topicId": "(unknown topic)",
+    "id": "j1nargV1hyKE1u6ltUH6",
+    "question": "The golden ratio is φ = $\\frac{\\sqrt{5} + 1}{2.}$. Find φ$^2$ in simplest form.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$\\frac{(3+\\sqrt5)}{2}$\"), but the math solution matches index 2 (\"$3+\\sqrt5$\")."
+    ]
+  },
+  {
+    "chapterId": "y7-15",
+    "topicId": "y7-15a",
+    "id": "PBZwvCliom7COu19Em3P",
+    "question": "Solve the equation mentally: $$24 - 3x = 0$$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$$x = 8$$\"), but the math solution matches index 1 (\"$$x = 24$$\")."
+    ]
+  },
+  {
+    "chapterId": "y7-15",
+    "topicId": "y7-15a",
+    "id": "oVRVa4IsueChizcAYhTE",
+    "question": "Solve the equation mentally: $$x + 4 = 12$$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$$x = 8$$\"), but the math solution matches index 3 (\"$$x = 12$$\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-2",
+    "topicId": "y11a-2G",
+    "id": "bbwvZDKtjrmIKqmJLoaZ",
+    "question": "Find $p$ and $q$ if $\\frac{\\sqrt{5}}{\\sqrt{5}-2} = p + q\\sqrt{5}$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$p=10, q=2$\"), but the math solution matches index 1 (\"$p=5, q=2$\")."
+    ]
+  },
+  {
+    "chapterId": "y7-14",
+    "topicId": "y7-14a",
+    "id": "h0RG6MoE4nWSsFQH7FCZ",
+    "question": "A quantity has a percentage representation of 85\\%. What are its equivalent repr",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$$0.85 \\text{ and } \\frac{17}{20}$$\"), but the math solution matches index 2 (\"$$0.85 \\text{ and } \\frac{85}{100}$$\")."
+    ]
+  },
+  {
+    "chapterId": "y7-16",
+    "topicId": "y7-16a",
+    "id": "nAmsRq6KwG9iEoOidqSa",
+    "question": "It is certain that an ice cube will melt when placed in boiling water. What is t",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$$1 \\text{ (or } 100\\%)$$\"), but the math solution matches index 1 (\"$$0$$\")."
+    ]
+  },
+  {
+    "chapterId": "y7-16",
+    "topicId": "y7-16a",
+    "id": "vacTTGVQ5Clqq4RFO4Js",
+    "question": "Which of the following scenarios describes an event with a probability of $$0$$ ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"Rolling a standard 6-sided die and getting a number greater than 6\"), but the math solution matches index 3 (\"Tomorrow being a weekday if today is Thursday\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q10a",
+    "question": "Find the natural domain of \\( f(x) = 5x \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\( x \\in \\mathbb{R}\\ (\\text{all real } x) \\)\"), but the math solution matches index 0 (\"\\( x \\geq 0 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q11b",
+    "question": "For the cubic function \\( y = \\frac{1}{4}(3x - x^3) \\):\n\n(i) Copy and complete t",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)\"), but the math solution matches index 0 (\"\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\geq 0 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q18j",
+    "question": "Find the range of the rational function \\( f(x) = \\frac{10x + 12}{14x - 10} \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"\\( y \\neq \\frac{10}{14} \\)\"), but the math solution matches index 3 (\"\\( y \\neq \\frac{12}{14} \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q19f",
+    "question": "A piecewise function is defined by:\n\n\\( f(x) = \\begin{cases} 7x + k, & x < 2 \\\\ ",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\( k = 32 \\)\"), but the math solution matches index 3 (\"\\( k = 31 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q1d",
+    "question": "Copy the sideways parabola opening to the left below. Draw a vertical line showi",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"No — a vertical line (e.g. \\( x = 1 \\)) crosses the parabola twice, at \\( y = 2 \\) and \\( y = -2 \\).\"), but the math solution matches index 0 (\"No — the parabola only exists for \\( x < 0 \\).\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q20h",
+    "question": "Consider the quadratic function \\( f(x) = 8(x - 24)^2 + 32 \\) defined on a restr",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\( d = 24 \\)\"), but the math solution matches index 1 (\"\\( d = 32 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q20i",
+    "question": "Consider the quadratic function \\( f(x) = 9(x - 27)^2 + 36 \\) defined on a restr",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"\\( d = 27 \\)\"), but the math solution matches index 3 (\"\\( d = 36 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q26a",
+    "question": "Find the range of the function \\( f(x) = 2 - \\sqrt{4 - x^2} \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( 0 \\leq y \\leq 2 \\)\"), but the math solution matches index 1 (\"\\( 1 \\leq y \\leq 3 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q26b",
+    "question": "Find the range of the function \\( f(x) = 4 - \\sqrt{9 - x^2} \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( 1 \\leq y \\leq 4 \\)\"), but the math solution matches index 0 (\"\\( -3 \\leq y \\leq 3 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q26c",
+    "question": "Find the range of the function \\( f(x) = 6 - \\sqrt{16 - x^2} \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( 2 \\leq y \\leq 6 \\)\"), but the math solution matches index 0 (\"\\( 3 \\leq y \\leq 7 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q26f",
+    "question": "Find the range of the function \\( f(x) = 12 - \\sqrt{49 - x^2} \\).",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\( 5 \\leq y \\leq 12 \\)\"), but the math solution matches index 3 (\"\\( 6 \\leq y \\leq 13 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q3c",
+    "question": "State the domain and range of the linear relation shown in the graph.",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)\"), but the math solution matches index 0 (\"\\( \\text{Domain: } x \\geq 0,\\ \\text{Range: all real } y \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q3f",
+    "question": "State the domain and range of the cubic function shown in the graph.",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\( \\text{Domain: all real } x,\\ \\text{Range: all real } y \\)\"), but the math solution matches index 0 (\"\\( \\text{Domain: all real } x,\\ \\text{Range: } y \\neq 0 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q7a",
+    "question": "A mapping diagram shows domain elements \\({-3, 3, -2, 2, 0}\\) mapping to range e",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"Yes, because each element in the domain maps to exactly one element in the range.\"), but the math solution matches index 2 (\"No, because 0 maps to 0.\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3B",
+    "id": "y11a-3b-q9d",
+    "question": "The vertical line at \\( x = 3 \\) is not a function. Write down the coordinates o",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( (3, 1) \\text{ and } (3, 2) \\)\"), but the math solution matches index 2 (\"\\( (3, 0) \\text{ and } (0, 3) \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3D",
+    "id": "y11a-3d-q1-4",
+    "question": "Determine the equation of the axis of symmetry for the parabola \\( y = (x - 2)(x",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( x = 3 \\)\"), but the math solution matches index 0 (\"\\( x = 2 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3D",
+    "id": "y11a-3d-q16a",
+    "question": "Factor the quadratic \\( f(x) = x^2 - 4x - 5 \\) and find the equation of its axis",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"\\( x = 2 \\)\"), but the math solution matches index 1 (\"\\( x = 5 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-3",
+    "topicId": "y11a-3D",
+    "id": "y11a-3d-q2-4",
+    "question": "Determine the equation of the axis of symmetry for the parabola \\( y = -x(x - 4)",
+    "origin": "seed",
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"\\( x = 2 \\)\"), but the math solution matches index 0 (\"\\( x = 4 \\)\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-5",
+    "topicId": "y11a-5E",
+    "id": "y11a-5E-new-8a",
+    "question": "Solve for $x$: $|5x| = 30$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"x = 6, -6\"), but the math solution matches index 1 (\"x = 6\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-5",
+    "topicId": "y11a-5E",
+    "id": "y11a-5E-new-9b-i",
+    "question": "Solve the equation $|4 - 5x| = 6$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"x = -2/5, 2\"), but the math solution matches index 2 (\"x = 2, -2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q14a-area",
+    "question": "Calculate the area of the right-angled triangle with vertices P(3, -2), Q(4, 2),",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-8.5\"), but the math solution matches index 3 (\"8.5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q16b",
+    "question": "The line segment \\(PQ\\) has gradient \\(-2\\). A second line passes through \\(A(-3",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-7.5\"), but the math solution matches index 3 (\"7.5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q1ai",
+    "question": "Write down the gradient of a line parallel to a line with gradient \\(3\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"2\"), but the math solution matches index 2 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q1bii",
+    "question": "Find the gradient of a line perpendicular to a line with gradient \\(\\frac{2}{5}\\",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"5/2\"), but the math solution matches index 2 (\"2/5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q1biii",
+    "question": "Find the gradient of a line perpendicular to a line with gradient \\(-2\\frac{1}{3",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"3/7\"), but the math solution matches index 3 (\"-7/3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q2a-perp",
+    "question": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(6, 1",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"1.5\"), but the math solution matches index 0 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q2d-perp",
+    "question": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(2, 5)\\) and \\(B(4, 4",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"3\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q2f-perp",
+    "question": "Find the gradient of a line perpendicular to \\(AB\\) for \\(A(-4, 6)\\) and \\(B(16,",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-4/3\"), but the math solution matches index 2 (\"-3/4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q6c",
+    "question": "Use the formula \\(m = \\tan \\alpha\\) to find the gradient of a line with angle of",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"1.5\"), but the math solution matches index 0 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q7a",
+    "question": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"60° + 1\"), but the math solution matches index 1 (\"60°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q7b",
+    "question": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"135° + 1\"), but the math solution matches index 1 (\"135°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q7c",
+    "question": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"63° - 1\"), but the math solution matches index 1 (\"63°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q7d",
+    "question": "Use the formula \\(\\tan \\alpha = m\\) to find the angle of inclination \\(\\alpha\\) ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"45° + 1\"), but the math solution matches index 2 (\"45°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q8b",
+    "question": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"equal to + 1\"), but the math solution matches index 1 (\"equal to\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7B",
+    "id": "y11a-7b-q8d",
+    "question": "By comparing the gradient to \\(1\\), determine if the angle of inclination of the",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"more than + 1\"), but the math solution matches index 2 (\"more than\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q10a-grad",
+    "question": "Write down the gradient \\(m\\) of the line \\(y = x + 5\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"1.5\"), but the math solution matches index 3 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q10b-angle",
+    "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclinati",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-135°\"), but the math solution matches index 3 (\"135°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q10c-angle",
+    "question": "Use the formula \\(\\text{gradient} = \\tan \\alpha\\) to find the angle of inclinati",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"72° - 1\"), but the math solution matches index 3 (\"72°\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q10c-grad",
+    "question": "Write down the gradient \\(m\\) of the line \\(y = 3x\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"-3\"), but the math solution matches index 1 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q12a-grad",
+    "question": "Find the gradient of the line through the pair of points \\(A(0, 3)\\) and \\(B(3, ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"-2\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q13a-par",
+    "question": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"-y=-3x+4\"), but the math solution matches index 3 (\"y=-3x+4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q13a-perp",
+    "question": "For the line \\(3x + y + 2 = 0\\), find the equation of a line passing through \\(A",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-y=1/3x+4\"), but the math solution matches index 1 (\"y=1/3x+4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q13b-par",
+    "question": "For the line \\(4x - 3y - 2 = 0\\), find the equation of a line passing through \\(",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-y=4/3x+4\"), but the math solution matches index 2 (\"y=4/3x+4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q13c-par",
+    "question": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=-2/5x+4\"), but the math solution matches index 3 (\"y=-2/5x+4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q13c-perp",
+    "question": "For the line \\(2x + 5y - 3 = 0\\), find the equation of a line passing through \\(",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=5/2x+4\"), but the math solution matches index 3 (\"y=5/2x+4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q19b",
+    "question": "Consider the two lines \\(\\ell_1: 2x - y + 5 = 0\\) and \\(\\ell_2: x + ky + c = 0\\)",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"3\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q2a-yint",
+    "question": "Find the y-intercept of the line \\(2x + 5y = 10\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"-2\"), but the math solution matches index 1 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q2b-xint",
+    "question": "Find the x-intercept of the line \\(y = 3x - 9\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"2\"), but the math solution matches index 0 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q4a-vert",
+    "question": "Write down the equation of the vertical line through the point \\((3, 4)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"x=3 + 1\"), but the math solution matches index 2 (\"x=3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q4b-vert",
+    "question": "Write down the equation of the vertical line through the point \\((0, -2)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"x=0 + 2\"), but the math solution matches index 3 (\"x=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q4c-horiz",
+    "question": "Write down the equation of the horizontal line through the point \\((4, 0)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"y=0 + 1\"), but the math solution matches index 3 (\"y=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q4c-vert",
+    "question": "Write down the equation of the vertical line through the point \\((4, 0)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"x=4 + 1\"), but the math solution matches index 2 (\"x=4\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q5a-grad",
+    "question": "Write down the gradient of the line \\(y = 3x - 5\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"-3\"), but the math solution matches index 0 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q5c-grad",
+    "question": "Write down the gradient of the line \\(y = 5 - x\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-1.5\"), but the math solution matches index 1 (\"-1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q6b",
+    "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gra",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=-4x-3/5\"), but the math solution matches index 2 (\"y=-4x-3/5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q6c",
+    "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with a gra",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-y=-4x\"), but the math solution matches index 3 (\"y=-4x\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q7b",
+    "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-int",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-y=-3/4x-5\"), but the math solution matches index 3 (\"y=-3/4x-5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q7c",
+    "question": "Use the formula \\(y = mx + b\\) to write down the equation of the line with y-int",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"y=-5 + 1\"), but the math solution matches index 2 (\"y=-5\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q9b-grad",
+    "question": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its gradien",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-1.5\"), but the math solution matches index 2 (\"-1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7C",
+    "id": "y11a-7c-q9b-yint",
+    "question": "Solve the equation \\(y + x - 3 = 0\\) for \\(y\\), and hence write down its y-inter",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"2\"), but the math solution matches index 1 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q12a-perp",
+    "question": "For the line \\(3x + y + 4 = 0\\): Find in gradient-intercept form the equation of",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=1/3x+17/3\"), but the math solution matches index 2 (\"y=1/3x+17/3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q12b-grad",
+    "question": "For the line \\(4x - 3y - 3 = 0\\): Put the equation into gradient-intercept form,",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"-4/3\"), but the math solution matches index 3 (\"4/3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q12b-perp",
+    "question": "For the line \\(4x - 3y - 3 = 0\\): Find in gradient-intercept form the equation o",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-y=-3/4x+7/2\"), but the math solution matches index 2 (\"y=-3/4x+7/2\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q12c-perp",
+    "question": "For the line \\(2x + 5y - 5 = 0\\): Find in gradient-intercept form the equation o",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=5/2x+10\"), but the math solution matches index 3 (\"y=5/2x+10\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q13a-grad",
+    "question": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 45^{\\circ}\\) pas",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"1.5\"), but the math solution matches index 3 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q13b-grad",
+    "question": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 120^{\\circ}\\) pa",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-\\sqrt{3} - 1\"), but the math solution matches index 2 (\"-\\sqrt{3}\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q13d-grad",
+    "question": "Find the gradient \\(m\\) of the line with inclination \\(\\alpha = 150^{\\circ}\\) pa",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"--1/\\sqrt{3}\"), but the math solution matches index 2 (\"-1/\\sqrt{3}\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q14a-i",
+    "question": "Determine, in general form, the equation of the vertical line (i) sketched throu",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"x-4=0 + 1\"), but the math solution matches index 1 (\"x-4=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q14a-ii",
+    "question": "Determine, in general form, the equation of the horizontal line (ii) sketched th",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"y+2=0 + 1\"), but the math solution matches index 1 (\"y+2=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q14c-i",
+    "question": "Determine, in general form, the equation of the line (i) passing through the y-i",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"x-y+5=0 + 1\"), but the math solution matches index 3 (\"x-y+5=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q17f",
+    "question": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) b",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"-12\"), but the math solution matches index 3 (\"12\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q17g",
+    "question": "The three points A(1, 0), B(0, 5), and C(5, 4) form a triangle. Let \\(\\theta\\) b",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-6, -1\"), but the math solution matches index 2 (\"6, -1\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q2a",
+    "question": "Use point-gradient form \\(y - y_1 = m(x - x_1)\\) to find the equation of the lin",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"5x-y+21=0 + 1\"), but the math solution matches index 2 (\"5x-y+21=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q4c",
+    "question": "Find, in general form, the equation of the line through the point \\((0, 0)\\) wit",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"4x+y=0 + 1\"), but the math solution matches index 3 (\"4x+y=0\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q5a",
+    "question": "Find, in gradient-intercept form, the equation of the line through the point \\((",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"y=3x-3 + 1\"), but the math solution matches index 2 (\"y=3x-3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q5b",
+    "question": "Find, in gradient-intercept form, the equation of the line through the point \\((",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"-y=-1/3x+7\"), but the math solution matches index 3 (\"y=-1/3x+7\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q5c",
+    "question": "Find, in gradient-intercept form, the equation of the line through the point \\((",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"-y=1/4x-7\"), but the math solution matches index 2 (\"y=1/4x-7\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q7a-grad",
+    "question": "Find the gradient of the line through the pair of points \\(A(2, 3)\\) and \\(B(4, ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"1\"), but the math solution matches index 0 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y11a-7",
+    "topicId": "y11a-7D",
+    "id": "y11a-7d-q7f-grad",
+    "question": "Find the gradient of the line through the pair of points \\(A(0, -4)\\) and \\(B(4,",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"0.5\"), but the math solution matches index 0 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y12a-3",
+    "topicId": "y12a-3I",
+    "id": "y12a-3i-q9b",
+    "question": "A rising line passing through the origin with slope 1.5, \\( y = 1.5x \\), is show",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"A constant horizontal line at y = 1.5\"), but the math solution matches index 1 (\"A constant horizontal line at y = 0\")."
+    ]
+  },
+  {
+    "chapterId": "y12a-3",
+    "topicId": "y12a-3I",
+    "id": "y12a-3i-q9c",
+    "question": "A parabola with vertex at \\( x = 3 \\), \\( y = (x-3)^2 \\), is graphed below. Sele",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"A straight line crossing the x-axis at x = 3\"), but the math solution matches index 2 (\"Another parabola with vertex at x = 0\")."
+    ]
+  },
+  {
+    "chapterId": "y12a-3",
+    "topicId": "y12a-3I",
+    "id": "y12a-3i-q9d",
+    "question": "A cubic curve with turning points at \\( x = -2 \\) and \\( x = 2 \\), \\( y = 0.1(12",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"A concave down parabola crossing the x-axis at x = -2 and x = 2\"), but the math solution matches index 2 (\"A straight line crossing the x-axis at x = 0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q11a",
+    "question": "Evaluate \\(a(2b - c)\\) when \\(a = 3\\), \\(b = 2\\) and \\(c = 1\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"\\(-9\\)\"), but the math solution matches index 3 (\"\\(9\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q40",
+    "question": "The concentration of a drug in a patient's bloodstream after several hours is \\(",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(1.29\\)\"), but the math solution matches index 2 (\"\\(1.2\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q49",
+    "question": "The radius of a stable circular orbit is \\(r = \\frac{h^2}{G M}\\). Evaluate \\(r\\)",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(9.82\\)\"), but the math solution matches index 2 (\"\\(10.12\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q4a",
+    "question": "Evaluate \\(4x + 9y\\) when \\(x = 6\\) and \\(y = 5\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-69\\)\"), but the math solution matches index 2 (\"\\(69\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q5a",
+    "question": "Evaluate \\(p - 2q\\) when \\(p = 7\\) and \\(q = 2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(-3\\)\"), but the math solution matches index 0 (\"\\(4\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q5b",
+    "question": "Evaluate \\(p - 2q\\) when \\(p = 7\\) and \\(q = -2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-11\\)\"), but the math solution matches index 1 (\"\\(10\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q9b",
+    "question": "Evaluate \\(p^2 - 2q\\) when \\(p = 7\\) and \\(q = -2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-53\\)\"), but the math solution matches index 3 (\"\\(53\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1a",
+    "id": "y9-1a-q9c",
+    "question": "Evaluate \\(p^2 - 2q\\) when \\(p = -7\\) and \\(q = 2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(-45\\)\"), but the math solution matches index 0 (\"\\(41\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1b",
+    "id": "y9-1b-q112-84",
+    "question": "A fiber-optic network routing node monitors signal attenuation across channels. ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(-6.5 y^2 x^3 z\\)\"), but the math solution matches index 0 (\"\\(18 x^2 y^3 z\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1b",
+    "id": "y9-1b-q112-92",
+    "question": "A logistics shipping port optimizes container stacking throughput. This analysis",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(-6.5 y^2 x^3 z\\)\"), but the math solution matches index 0 (\"\\(18 x^2 y^3 z\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1b",
+    "id": "y9-1b-q112-96",
+    "question": "A vertical hydroponic farm measures nutrient concentrations in reservoir tanks. ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(-6.5 y^2 x^3 z\\)\"), but the math solution matches index 0 (\"\\(18 x^2 y^3 z\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1c",
+    "id": "y9-1c-q5b-1",
+    "question": "In an algebraic wall, the term in each box is obtained by multiplying the two te",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\\\(4mn\\\\)\"), but the math solution matches index 0 (\"\\\\(4n^2\\\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1d",
+    "id": "y9-1d-q10g",
+    "question": "Expand and collect like terms: \\(3(2y-3)-2(3y-4)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(12y-17\\)\"), but the math solution matches index 2 (\"\\(1\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1d",
+    "id": "y9-1d-q5b",
+    "question": "Expand: \\(y(y+6)\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(y^2+6y^2\\)\"), but the math solution matches index 2 (\"\\(y^2+6\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1d",
+    "id": "y9-1d-q8i",
+    "question": "Expand and collect like terms: \\(7(a-4)-5a\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-2a-28\\)\"), but the math solution matches index 1 (\"\\(2a-28\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1d",
+    "id": "y9-1d-q8j",
+    "question": "Expand and collect like terms: \\(3(b-5)-2b\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-b-15\\)\"), but the math solution matches index 2 (\"\\(b-15\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1d",
+    "id": "y9-1d-q8q",
+    "question": "Expand and collect like terms: \\(3x(2x+4y)-6x^2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(12xy-6x^2\\)\"), but the math solution matches index 3 (\"\\(12xy\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1e",
+    "id": "y9-1e-q6g",
+    "question": "Fill in the missing binomial expression: \\((2x+1)(......) = 6x^2-x-2\\).",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"\\(3x-2\\)\"), but the math solution matches index 3 (\"\\(3x-1\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1f",
+    "id": "y9-1f-q7",
+    "question": "A student wrote the following on the board:\n\\(7 + 3 = 10\\)\nSquaring both sides:\n",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\text{The step going from } (7+3)^2 \\text{ to } 7^2+3^2 \\text{, because } (a+b)^2 \\neq a^2+b^2.\\)\"), but the math solution matches index 1 (\"\\(\\text{The first step } 7+3=10 \\text{ is incorrect.}\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q15e",
+    "question": "Find the value of \\(\\frac{2ab}{a+b}\\) when \\(a = \\\\frac{3}{5}\\) and \\(b = \\\\frac",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\\\frac{12}{19}\\)\"), but the math solution matches index 3 (\"\\(\\\\frac{10}{19}\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q2d",
+    "question": "Evaluate the algebraic expression:\\n\\(2m^3 - 3n^2\\)\\n\\nwhen \\(m = \\\\frac{1}{2}\\)",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-\\\\frac{35}{4}\\)\"), but the math solution matches index 3 (\"\\(-9\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q3a",
+    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = 2\\) a",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\\\frac{5}{3}\\)\"), but the math solution matches index 1 (\"\\(15\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q3c",
+    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = \\\\sqr",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\\\frac{1}{3}\\)\"), but the math solution matches index 1 (\"\\(1\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q3d",
+    "question": "Evaluate the algebraic expression:\\n\\(\\frac{3x^2 + y}{y^2}\\)\\n\\nwhen \\(x = \\\\sqr",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\\\frac{13}{4}\\)\"), but the math solution matches index 2 (\"\\(3\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q4a",
+    "question": "Evaluate the algebraic expression:\\n\\(a - 3b + 2c\\)\\n\\nwhen \\(a = \\\\frac{1}{2},\\",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-\\\\frac{1}{6}\\)\"), but the math solution matches index 3 (\"\\(0\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q5b",
+    "question": "Evaluate the algebraic expression:\\n\\(\\frac{p^3 - 3q^2}{p^2}\\)\\n\\nwhen \\(p = \\\\f",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(-\\\\frac{728}{3}\\)\"), but the math solution matches index 1 (\"\\(-243\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-1",
+    "topicId": "y9-1h",
+    "id": "y9-1h-q7d",
+    "question": "Simplify the algebraic expression by collecting like terms:\\n\\(\\\\frac{3x^2y}{4} ",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"\\(\\\\frac{5p}{q^3}\\)\"), but the math solution matches index 1 (\"\\(0\\)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-7",
+    "topicId": "(unknown topic)",
+    "id": "y9-7a-8e",
+    "question": "Find $θ$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"$θ = 40°$\"), but the math solution matches index 0 (\"$θ = 50°$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-10e",
+    "question": "Complete the equation: $y^{8} \\times ... = y^{10}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$y^{2}$\"), but the math solution matches index 2 (\"$y^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-10g",
+    "question": "Complete the equation: $a^{6} \\times ... = a^{10}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$a^{4}$\"), but the math solution matches index 2 (\"$a^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-10l",
+    "question": "Complete the equation: $b^{6} \\div ... = b^{4}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$b^{2}$\"), but the math solution matches index 1 (\"$b^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-11c",
+    "question": "Simplify the expression: $\\frac{7x^{5}}{2x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$3.5x^{3}$\"), but the math solution matches index 3 (\"$3.5x^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-11d",
+    "question": "Simplify the expression: $\\frac{12x^{4}}{2x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$6x^{2}$\"), but the math solution matches index 2 (\"$10x^{2}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-11f",
+    "question": "Simplify the expression: $\\frac{4x^{5}}{2x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$2x^{3}$\"), but the math solution matches index 3 (\"$2x^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-12a",
+    "question": "Simplify: $(7p)^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"7\"), but the math solution matches index 0 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-12b",
+    "question": "Simplify: $2b^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"0\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-12c",
+    "question": "Simplify: $(7n)^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 1 (\"7\"), but the math solution matches index 0 (\"1\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-12d",
+    "question": "Simplify: $9b^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"9\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13b",
+    "question": "Simplify: $3x^0 + 3m^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"6\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13c",
+    "question": "Simplify: $3n^0 + 3n^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"6\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13d",
+    "question": "Simplify: $4p^0 + 5q^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"9\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13e",
+    "question": "Simplify: $2p^0 + 5a^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"7\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13f",
+    "question": "Simplify: $2q^0 + 5a^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"7\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13g",
+    "question": "Simplify: $4p^0 + 3m^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"7\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13h",
+    "question": "Simplify: $4b^0 + 2a^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"6\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13k",
+    "question": "Simplify: $2b^0 + 2x^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"4\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-13l",
+    "question": "Simplify: $2q^0 + 4n^0$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"6\"), but the math solution matches index 2 (\"0\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-15f",
+    "question": "Simplify: $(n^{2})^{2} \\times (n^{2})^{2}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$n^{8}$\"), but the math solution matches index 1 (\"$n^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16a",
+    "question": "Complete using index law 3: $(m^{3})^{...} = m^{6}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"9\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16b",
+    "question": "Complete using index law 3: $(a^{5})^{...} = a^{10}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 2 (\"15\"), but the math solution matches index 0 (\"2\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16c",
+    "question": "Complete using index law 3: $(n^{5})^{...} = n^{25}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"5\"), but the math solution matches index 1 (\"20\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16d",
+    "question": "Complete using index law 3: $(x^{5})^{...} = x^{25}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"5\"), but the math solution matches index 1 (\"20\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16f",
+    "question": "Complete using index law 3: $(n^{5})^{...} = n^{15}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"1\"), but the math solution matches index 0 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-16i",
+    "question": "Complete using index law 3: $(n^{3})^{...} = n^{9}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 3 (\"1\"), but the math solution matches index 0 (\"3\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-1a",
+    "question": "State the base and index of $5^{2}$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"Base: 5, Index: 2\"), but the math solution matches index 2 (\"Base: 5, Index: 10\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-3d",
+    "question": "Evaluate $4^{4}$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"256\"), but the math solution matches index 2 (\"1024\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-3f",
+    "question": "Evaluate $2^{3} \\times 2^{3}$.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"64\"), but the math solution matches index 2 (\"4096\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-4f",
+    "question": "Express $90$ as a product of powers of prime numbers.",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$2 \\times 3^{2} \\times 5$\"), but the math solution matches index 3 (\"$90$ (already prime)\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-5a",
+    "question": "Simplify, leaving the answer as a power or a product of powers: $n^{5} \\times n^",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$n^{7}$\"), but the math solution matches index 1 (\"$n^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-7h",
+    "question": "Simplify, leaving the answer as a power or a product of powers: $p^{6} \\div p^{4",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$p^{2}$\"), but the math solution matches index 1 (\"$p^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-8c",
+    "question": "Simplify: $\\frac{16a^{5}b^{5}}{2a^{2}b^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$8a^{3}b^{3}$\"), but the math solution matches index 3 (\"$8a^{10}b^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-8d",
+    "question": "Simplify: $\\frac{14x^{4}y^{5}}{2x^{3}y^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$7x^{1}y^{3}$\"), but the math solution matches index 3 (\"$7x^{12}y^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-8e",
+    "question": "Simplify: $\\frac{10a^{5}b^{7}}{2a^{2}b^{3}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$5a^{3}b^{4}$\"), but the math solution matches index 1 (\"$5a^{7}b^{10}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-8g",
+    "question": "Simplify: $\\frac{12a^{7}b^{5}}{2a^{2}b^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$6a^{5}b^{3}$\"), but the math solution matches index 2 (\"$10a^{5}b^{3}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-8h",
+    "question": "Simplify: $\\frac{16x^{5}y^{5}}{2x^{2}y^{4}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$8x^{3}y^{1}$\"), but the math solution matches index 3 (\"$8x^{10}y^{20}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9a",
+    "question": "Simplify: $\\frac{x^{4}y^{3}}{xy} \\times \\frac{x^{3}y^{2}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{4}$\"), but the math solution matches index 3 (\"$x^{10}y^{6}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9b",
+    "question": "Simplify: $\\frac{x^{3}y^{3}}{xy} \\times \\frac{x^{4}y^{2}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{4}$\"), but the math solution matches index 3 (\"$x^{10}y^{6}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9c",
+    "question": "Simplify: $\\frac{x^{4}y^{5}}{xy} \\times \\frac{x^{3}y^{4}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{8}$\"), but the math solution matches index 2 (\"$x^{12}y^{20}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9e",
+    "question": "Simplify: $\\frac{x^{5}y^{4}}{xy} \\times \\frac{x^{2}y^{2}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{5}$\"), but the math solution matches index 2 (\"$x^{10}y^{8}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9g",
+    "question": "Simplify: $\\frac{x^{5}y^{4}}{xy} \\times \\frac{x^{2}y^{4}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{7}$\"), but the math solution matches index 2 (\"$x^{10}y^{16}$\")."
+    ]
+  },
+  {
+    "chapterId": "y9-8",
+    "topicId": "y9-8a",
+    "id": "y9-8a-9h",
+    "question": "Simplify: $\\frac{x^{5}y^{5}}{xy} \\times \\frac{x^{2}y^{4}}{x^{2}}$",
+    "origin": null,
+    "isActive": true,
+    "errors": [
+      "Answer index mismatch. Marked as 0 (\"$x^{4}y^{8}$\"), but the math solution matches index 2 (\"$x^{10}y^{20}$\")."
+    ]
+  }
+]

@@ -1,0 +1,600 @@
+[
+  {
+    "id": "y12a-5g-q1a",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(x + 5)\\)",
+    "a": "\\frac{1}{x + 5}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1b",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(x - 4)\\)",
+    "a": "\\frac{1}{x - 4}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1c",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(4x + 3)\\)",
+    "a": "\\frac{4}{4x + 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1d",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(3x - 2)\\)",
+    "a": "\\frac{3}{3x - 2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1e",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(-5x + 2)\\)",
+    "a": "\\frac{-5}{-5x + 2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1f",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\log_e(-2x + 5)\\)",
+    "a": "\\frac{-2}{-2x + 5}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1g",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = \\ln(-3x - 8)\\)",
+    "a": "\\frac{-3}{-3x - 8}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1h",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = 4 \\ln(3x + 5)\\)",
+    "a": "\\frac{12}{3x + 5}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q1i",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e(ax + b) = \\frac{a}{ax + b}\\) to differentiate:\n\\(y = 2 \\ln(5x - 3)\\)",
+    "a": "\\frac{10}{5x - 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2a",
+    "q": "Differentiate the function:\n\\(y = \\log_e 3x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2b",
+    "q": "Differentiate the function:\n\\(y = \\log_e 4x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2c",
+    "q": "Differentiate the function:\n\\(y = \\log_e 6x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2d",
+    "q": "Differentiate the function:\n\\(y = \\log_e 8x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2e",
+    "q": "Differentiate the function:\n\\(y = 5 \\ln 2x\\)",
+    "a": "\\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2f",
+    "q": "Differentiate the function:\n\\(y = 2 \\ln 3x\\)",
+    "a": "\\frac{2}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2g",
+    "q": "Differentiate the function:\n\\(y = 6 \\ln 5x\\)",
+    "a": "\\frac{6}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q2h",
+    "q": "Differentiate the function:\n\\(y = 7 \\ln 8x\\)",
+    "a": "\\frac{7}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3a",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(x + 2)\\)",
+    "a": "\\frac{1}{4}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3b",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(3x - 1)\\)",
+    "a": "\\frac{3}{5}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3c",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(4x - 5)\\)",
+    "a": "\\frac{4}{3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3d",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = \\log_e(2x + 3)\\)",
+    "a": "\\frac{2}{7}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3e",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = 3 \\ln(x + 1)\\)",
+    "a": "1",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q3f",
+    "q": "Find \\(\\frac{dy}{dx}\\) for the function. Then evaluate \\(\\frac{dy}{dx}\\) at \\(x = 2\\).\n\\(y = 4 \\ln(3x + 1)\\)",
+    "a": "\\frac{12}{7}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4a",
+    "q": "Differentiate the function:\n\\(y = 3 + \\log_e x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4b",
+    "q": "Differentiate the function:\n\\(y = 4 - \\log_e(x + 2)\\)",
+    "a": "-\\frac{1}{x + 2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4c",
+    "q": "Differentiate the function:\n\\(y = 2x + 3 \\log_e x\\)",
+    "a": "2 + \\frac{3}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4d",
+    "q": "Differentiate the function:\n\\(y = 3x^4 + 2 + 5 \\log_e x\\)",
+    "a": "12x^3 + \\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4e",
+    "q": "Differentiate the function:\n\\(y = \\ln(3x - 1) + 4x^2\\)",
+    "a": "\\frac{3}{3x - 1} + 8x",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q4f",
+    "q": "Differentiate the function:\n\\(y = 2x^3 - 4x + 5 + \\ln(2x - 3)\\)",
+    "a": "6x^2 - 4 + \\frac{2}{2x - 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5a",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^4\\)",
+    "a": "\\frac{4}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5b",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^5\\)",
+    "a": "\\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5c",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{-4}\\)",
+    "a": "-\\frac{4}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5d",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{-5}\\)",
+    "a": "-\\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5e",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln x^{\\frac{1}{3}}\\)",
+    "a": "\\frac{1}{3x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q5f",
+    "q": "Use the log laws to simplify the function, then differentiate it:\n\\(y = \\ln \\sqrt{x + 2}\\)",
+    "a": "\\frac{1}{2(x + 2)}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6a",
+    "q": "Differentiate the function:\n\\(y = \\log_e \\frac{1}{4}x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6b",
+    "q": "Differentiate the function:\n\\(y = \\log_e \\frac{1}{5}x\\)",
+    "a": "\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6c",
+    "q": "Differentiate the function:\n\\(y = 4 \\log_e \\frac{1}{2}x\\)",
+    "a": "\\frac{4}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6d",
+    "q": "Differentiate the function:\n\\(y = -5 \\log_e \\frac{1}{3}x\\)",
+    "a": "-\\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6e",
+    "q": "Differentiate the function:\n\\(y = 2x + \\log_e \\frac{1}{4}x\\)",
+    "a": "2 + \\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q6f",
+    "q": "Differentiate the function:\n\\(y = 5x^3 - \\log_e \\frac{1}{2}x\\)",
+    "a": "15x^2 - \\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q7a",
+    "q": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(x^2 + 2)\\)",
+    "a": "\\frac{2x}{x^2 + 2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q7b",
+    "q": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(3 - x^2)\\)",
+    "a": "-\\frac{2x}{3 - x^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q7c",
+    "q": "Use the full setting-out of the chain rule to differentiate:\n\\(\\ln(2 + e^x)\\)",
+    "a": "\\frac{e^x}{2 + e^x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8a",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\log_e(x^2 + 4x + 3)\\)",
+    "a": "\\frac{2x + 4}{x^2 + 4x + 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8b",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\log_e(2 + 3x^3)\\)",
+    "a": "\\frac{9x^2}{2 + 3x^3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8c",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(\\ln(e^x - 3)\\)",
+    "a": "\\frac{e^x}{e^x - 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8d",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(2x + 1 - \\ln(x^2 + 2x)\\)",
+    "a": "2 - \\frac{2x + 2}{x^2 + 2x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8e",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(2x^2 + \\ln(x^3 - 2x)\\)",
+    "a": "4x + \\frac{3x^2 - 2}{x^3 - 2x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q8f",
+    "q": "Use the standard form \\(\\frac{d}{dx} \\log_e u = \\frac{u'}{u}\\) to differentiate:\n\\(3x^3 - 4x^2 + \\ln(3x^2 - 2x + 1)\\)",
+    "a": "9x^2 - 8x + \\frac{6x - 2}{3x^2 - 2x + 1}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q9a",
+    "q": "Find the gradient, and the angle of inclination correct to the nearest minute, of the tangent to \\(y = \\ln x\\) at the point where \\(x = 2\\). (Format: 'gradient, angle')",
+    "a": "1/2, 26^{\\circ}34'",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q9b",
+    "q": "Find the gradient, and the angle of inclination correct to the nearest minute, of the tangent to \\(y = \\ln x\\) at the point where \\(x = 5\\). (Format: 'gradient, angle')",
+    "a": "1/5, 11^{\\circ}19'",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10a",
+    "q": "Differentiate using the product rule:\n\\(2x \\log_e x\\)",
+    "a": "2 \\log_e x + 2",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10b",
+    "q": "Differentiate using the product rule:\n\\(x \\log_e(3x + 1)\\)",
+    "a": "\\log_e(3x + 1) + \\frac{3x}{3x + 1}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10c",
+    "q": "Differentiate using the product rule:\n\\((3x + 2) \\log_e x\\)",
+    "a": "3 \\log_e x + \\frac{3x + 2}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10d",
+    "q": "Differentiate using the product rule:\n\\(x^5 \\log_e x\\)",
+    "a": "x^4(5 \\log_e x + 1)",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10e",
+    "q": "Differentiate using the product rule:\n\\((x + 4) \\log_e(x + 4)\\)",
+    "a": "\\log_e(x + 4) + 1",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10f",
+    "q": "Differentiate using the product rule:\n\\((x - 2) \\log_e(3x + 5)\\)",
+    "a": "\\log_e(3x + 5) + \\frac{3(x - 2)}{3x + 5}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10g",
+    "q": "Differentiate using the product rule:\n\\(e^{2x} \\log_e x\\)",
+    "a": "e^{2x} \\left(2 \\log_e x + \\frac{1}{x}\\right)",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q10h",
+    "q": "Differentiate using the product rule:\n\\(e^{-2x} \\log_e x\\)",
+    "a": "e^{-2x} \\left(\\frac{1}{x} - 2 \\log_e x\\right)",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11a",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e 2x}{x}\\)",
+    "a": "\\frac{1 - \\log_e 2x}{x^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11b",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e x}{x^3}\\)",
+    "a": "\\frac{1 - 3 \\log_e x}{x^4}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11c",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{2x}{\\log_e x}\\)",
+    "a": "\\frac{2(\\log_e x - 1)}{(\\log_e x)^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11d",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{x^3}{\\log_e x}\\)",
+    "a": "\\frac{x^2(3 \\log_e x - 1)}{(\\log_e x)^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11e",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{\\log_e x}{e^{2x}}\\)",
+    "a": "\\frac{\\frac{1}{x} - 2 \\log_e x}{e^{2x}}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q11f",
+    "q": "Differentiate using the quotient rule:\n\\(y = \\frac{e^{2x}}{\\log_e x}\\)",
+    "a": "\\frac{e^{2x}(2 \\log_e x - \\frac{1}{x})}{(\\log_e x)^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12a",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e 4x^5\\)",
+    "a": "\\frac{5}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12b",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e 2x^3\\)",
+    "a": "\\frac{3}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12c",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\sqrt[4]{x}\\)",
+    "a": "\\frac{1}{4x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12d",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\sqrt[5]{x}\\)",
+    "a": "\\frac{1}{5x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12e",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\frac{4}{x}\\)",
+    "a": "-\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12f",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\log_e \\frac{3}{4x}\\)",
+    "a": "-\\frac{1}{x}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12g",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\ln \\sqrt{3 - x}\\)",
+    "a": "-\\frac{1}{2(3 - x)}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q12h",
+    "q": "Use the log laws to simplify each function, then differentiate it:\n\\(y = \\ln \\sqrt{4x + 3}\\)",
+    "a": "\\frac{2}{4x + 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q13a",
+    "q": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e(x - 2)\\) at \\(x = 4\\). (Format: 'f'(x), f''(x)')",
+    "a": "1/2, -1/4",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q13b",
+    "q": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e(3x + 1)\\) at \\(x = 0\\). (Format: 'f'(x), f''(x)')",
+    "a": "3, -9",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q13c",
+    "q": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = \\log_e x^3\\) at \\(x = 3\\). (Format: 'f'(x), f''(x)')",
+    "a": "1, -1/3",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q13d",
+    "q": "Find the first and second derivatives of the function, then evaluate both derivatives at the value given.\n\\(f(x) = x^2 \\log_e x\\) at \\(x = e\\). (Format: 'f'(x), f''(x)')",
+    "a": "3e, 5",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14a",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = x \\log_e x - 2x\\)",
+    "a": "x = e^2",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14b",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = x^3 \\log_e x\\)",
+    "a": "x = e^{-1/3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14c",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{\\log_e x}{x^2}\\)",
+    "a": "x = e^{1/2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14d",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (\\log_e x)^3\\)",
+    "a": "x = 1",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14e",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (\\log_e x)^5\\)",
+    "a": "x = 1",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14f",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{1}{2 + \\log_e x}\\)",
+    "a": "No values",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14g",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = (3 \\log_e x - 2)^4\\)",
+    "a": "x = e^{2/3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14h",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\frac{1}{(\\log_e x)^2}\\)",
+    "a": "No values",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q14i",
+    "q": "Differentiate the function, then find any values of \\(x\\) for which the derivative is zero.\n\\(y = \\log_e(2 \\log_e x)\\)",
+    "a": "No values",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q15a",
+    "q": "Find the point(s) where the tangent to the curve is horizontal.\n\\(y = 2x \\ln x\\) (Format: '(x, y)')",
+    "a": "(e^{-1}, -2e^{-1})",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q15b",
+    "q": "Find the point(s) where the tangent to the curve is horizontal.\n\\(y = \\frac{2}{x} + \\ln x\\) (Format: '(x, y)')",
+    "a": "(2, 1 + \\ln 2)",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q16",
+    "q": "Consider the function \\(y = \\frac{x}{2\\ln x}\\).",
+    "type": "multi_part"
+  },
+  {
+    "id": "y12a-5g-q17a",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e((x + 3)(x + 2))\\)",
+    "a": "\\frac{1}{x + 3} + \\frac{1}{x + 2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q17b",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e((x + 4)(2x - 3))\\)",
+    "a": "\\frac{1}{x + 4} + \\frac{2}{2x - 3}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q17c",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\ln \\frac{2 + x}{2 - x}\\)",
+    "a": "\\frac{4}{4 - x^2}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q17d",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\ln \\frac{4x - 1}{x + 3}\\)",
+    "a": "\\frac{13}{(4x - 1)(x + 3)}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q17e",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e \\frac{(x - 5)^2}{2x + 1}\\)",
+    "a": "\\frac{2}{x - 5} - \\frac{2}{2x + 1}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q17f",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e (x \\sqrt{x + 2})\\)",
+    "a": "\\frac{1}{x} + \\frac{1}{2(x + 2)}",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q18a",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e 3^x\\)",
+    "a": "\\ln 3",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q18b",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e e^{2x}\\)",
+    "a": "2",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q18c",
+    "q": "Use the log laws to simplify the function, then differentiate it.\n\\(y = \\log_e x^{2x}\\)",
+    "a": "2 \\ln x + 2",
+    "type": "short_answer"
+  },
+  {
+    "id": "y12a-5g-q19",
+    "q": "This result will be used in Section 5I.",
+    "type": "multi_part"
+  }
+]

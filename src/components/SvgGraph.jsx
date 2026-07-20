@@ -102,8 +102,139 @@ const toSuper = (body) => {
   return String(body).split('').map((ch) => map[ch] || ch).join('');
 };
 
+/** Common vulgar fractions for axis/point labels (SVG text cannot render KaTeX). */
+const VULGAR = {
+  '1/2': '½',
+  '1/3': '⅓',
+  '2/3': '⅔',
+  '1/4': '¼',
+  '3/4': '¾',
+  '1/5': '⅕',
+  '2/5': '⅖',
+  '3/5': '⅗',
+  '4/5': '⅘',
+  '1/6': '⅙',
+  '5/6': '⅚',
+  '1/8': '⅛',
+  '3/8': '⅜',
+  '5/8': '⅝',
+  '7/8': '⅞',
+};
+
+const toVulgarFraction = (num, den, neg = false) => {
+  const key = `${num}/${den}`;
+  const body = VULGAR[key] || `${num}/${den}`;
+  // Unicode minus looks better next to vulgar fractions than ASCII hyphen
+  return (neg ? '−' : '') + body;
+};
+
+/**
+ * Detect labels that should render as a stacked fraction (exam style \frac{\pi}{6}).
+ * Returns { neg, num, den } in display characters, or null.
+ * Parsed in PIXEL space so the bar spacing matches KaTeX, not graph y-units.
+ */
+const parseStackedFraction = (raw) => {
+  if (typeof raw !== 'string') return null;
+  let s = raw.trim()
+    .replace(/\\\(|\\\)|\\\[|\\\]/g, '')
+    .replace(/\\pi/gi, 'π')
+    .replace(/\$/g, '')
+    .trim();
+  // Normalize vulgar×π back to π/n so we always stack as π over n
+  const vulgarToDen = {
+    '½': '2', '⅓': '3', '¼': '4', '⅕': '5', '⅙': '6', '⅛': '8',
+    '⅔': '3', '¾': '4', '⅖': '5', '⅗': '5', '⅘': '5', '⅚': '6',
+  };
+  s = s.replace(/(-?)([½⅓¼⅕⅙⅛⅔¾⅖⅗⅘⅚])π/g, (_, sign, v) => {
+    const den = vulgarToDen[v];
+    if (!den) return _;
+    // ⅔π means 2π/3
+    if (v === '⅔') return `${sign}2π/3`;
+    if (v === '¾') return `${sign}3π/4`;
+    return `${sign}π/${den}`;
+  });
+  // \frac{\pi}{6} / \dfrac{3\pi}{2} / broken \rac{\pi}{2}
+  let m = s.match(/^(-?)\\?[bd]?frac\{(-?)(\d*)π\}\{(\d+)\}$/i)
+    || s.match(/^(-?)\\?rac\{(-?)(\d*)π\}\{(\d+)\}$/i);
+  if (m) {
+    const neg = m[1] === '-' || m[2] === '-';
+    const coef = m[3] === '' ? '' : m[3];
+    return { neg, num: coef === '' || coef === '1' ? 'π' : `${coef}π`, den: m[4] };
+  }
+  // π/6, -π/2, 3π/2, 2π/3
+  m = s.match(/^(-?)(\d*)π\/(\d+)$/);
+  if (m) {
+    const neg = m[1] === '-';
+    const coef = m[2];
+    return { neg, num: !coef || coef === '1' ? 'π' : `${coef}π`, den: m[3] };
+  }
+  // plain 1/2, -3/4 (digits only) — stack too
+  m = s.match(/^(-?)(\d+)\/(\d+)$/);
+  if (m) {
+    return { neg: m[1] === '-', num: m[2], den: m[3] };
+  }
+  return null;
+};
+
+/** Compact KaTeX-like stacked fraction in screen pixels. */
+const StackedFracLabel = ({ x, y, neg, num, den, color, fontSize = 12 }) => {
+  const fs = fontSize;
+  // Width of bar ≈ max glyph width; π is wide
+  const barW = Math.max(fs * (String(num).includes('π') ? 0.95 : 0.75), 9);
+  return (
+    <g transform={`translate(${x}, ${y})`} style={{ pointerEvents: 'none' }}>
+      {neg && (
+        <text
+          x={-barW / 2 - 3}
+          y={fs * 0.2}
+          textAnchor="end"
+          fill={color}
+          fontSize={fs}
+          fontWeight={600}
+          fontFamily={FONT}
+        >
+          −
+        </text>
+      )}
+      <text
+        x={0}
+        y={-fs * 0.42}
+        textAnchor="middle"
+        fill={color}
+        fontSize={fs}
+        fontWeight={600}
+        fontFamily={FONT}
+      >
+        {num}
+      </text>
+      <line
+        x1={-barW / 2}
+        y1={fs * 0.02}
+        x2={barW / 2}
+        y2={fs * 0.02}
+        stroke={color}
+        strokeWidth={1.2}
+        strokeLinecap="round"
+      />
+      <text
+        x={0}
+        y={fs * 0.95}
+        textAnchor="middle"
+        fill={color}
+        fontSize={fs}
+        fontWeight={600}
+        fontFamily={FONT}
+      >
+        {den}
+      </text>
+    </g>
+  );
+};
+
 const formatLabel = (str) => {
   if (typeof str !== 'string') return str;
+  // If the whole label is a stackable fraction, leave raw for StackedFracLabel
+  if (parseStackedFraction(str)) return str;
   return str
     .replace(/\^\\circ/g, '°')
     .replace(/\\circ/g, '°')
@@ -112,6 +243,18 @@ const formatLabel = (str) => {
     .replace(/\\gamma/g, 'γ')
     .replace(/\\theta/g, 'θ')
     .replace(/\\pi/g, 'π')
+    // Strip math delimiters early so inner tokens convert cleanly
+    .replace(/\\\(|\\\)|\\\[|\\\]/g, '')
+    // LaTeX fractions with digit num/den: \frac{1}{2}, \dfrac{-1}{2}
+    .replace(/-?\\[bd]?frac\{-?(\d+)\}\{(\d+)\}/g, (m, a, b) =>
+      toVulgarFraction(a, b, /^-|\\-/.test(m) || m.includes('{-'))
+    )
+    // Plain ASCII fractions: -1/2, 1/2 (inline, not full-label stack)
+    .replace(/(^|[^0-9π])(-?)(\d+)\/(\d+)(?![0-9])/g, (_, pre, sign, a, b) =>
+      pre + toVulgarFraction(a, b, sign === '-')
+    )
+    // ASCII hyphen before π / vulgar fractions
+    .replace(/-(?=[½⅓⅔¼¾⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞π\d])/g, '−')
     // ^{...} then bare ^token (e.g. e^x, e^{-x})
     .replace(/\^\{([^}]+)\}/g, (_, body) => toSuper(body))
     .replace(/\^(-?\d+)/g, (_, body) => toSuper(body))
@@ -120,8 +263,11 @@ const formatLabel = (str) => {
     .replace(/\^3/g, '³')
     .replace(/\\sqrt/g, '√')
     .replace(/√\{([^}]+)\}/g, '√$1')
+    .replace(/\\ln\b/g, 'ln')
+    .replace(/\\log\b/g, 'log')
     .replace(/\\/g, '') // remove leftover backslashes
-    .replace(/\$+/g, '');
+    .replace(/\$+/g, '')
+    .replace(/[{}]/g, '');
 };
 
 
@@ -168,20 +314,43 @@ const SvgGraph = ({ data }) => {
     // 1. Execute script with a mock board
       if (typeof data.script === 'string' && data.script.trim()) {
         const board = {
-          create: (type, parents, attrs = {}) => {
+          // Support both JSXGraph styles:
+          //   create('text', [x, y, 'label'], attrs)
+          //   create('text', [x, y], 'label', attrs)   ← common in our seeds
+          create: (type, parents, attrs = {}, maybeAttrs) => {
             const t = String(type).toLowerCase();
-            const entry = { src: 'script', type: t, parents: parents || [], attrs };
+            let p = Array.isArray(parents) ? parents.slice() : parents || [];
+            let a = attrs;
+            if (
+              (t === 'text' || t === 'point') &&
+              typeof attrs === 'string' &&
+              Array.isArray(p)
+            ) {
+              // create('text', [x,y], 'label', {…}) or create('point', [x,y], 'name', {…})
+              if (t === 'text' && p.length === 2) {
+                p = [p[0], p[1], attrs];
+              } else if (t === 'point' && p.length >= 2) {
+                a = { ...(typeof maybeAttrs === 'object' && maybeAttrs ? maybeAttrs : {}), name: attrs };
+                // keep parents as [x,y]
+              }
+              if (t === 'text') {
+                a = typeof maybeAttrs === 'object' && maybeAttrs ? maybeAttrs : {};
+              }
+            } else if (typeof attrs !== 'object' || attrs === null) {
+              a = {};
+            }
+            const entry = { src: 'script', type: t, parents: p || [], attrs: a || {} };
             list.push(entry);
             const mock = { _type: t, _explicit: true, _entry: entry };
-            if (t === 'point' && Array.isArray(parents)) {
-              mock.X = () => parents[0];
-              mock.Y = () => parents[1];
-              mock.coords = { usrCoords: [1, parents[0], parents[1]] };
+            if (t === 'point' && Array.isArray(p)) {
+              mock.X = () => p[0];
+              mock.Y = () => p[1];
+              mock.coords = { usrCoords: [1, p[0], p[1]] };
             }
             if (t === 'functiongraph' || t === 'curve') {
-              mock._fn = typeof parents?.[0] === 'function' ? parents[0] : null;
-              mock._dMin = parents?.[1];
-              mock._dMax = parents?.[2];
+              mock._fn = typeof p?.[0] === 'function' ? p[0] : null;
+              mock._dMin = p?.[1];
+              mock._dMax = p?.[2];
             }
             return mock;
           },
@@ -249,6 +418,9 @@ const SvgGraph = ({ data }) => {
   const hasY = arrows.some(isYAxis);
   const dy = yMax - yMin;
   const showLabels = data.showAxisLabels !== false && dy >= 3;
+  // Explicit showGrid wins; otherwise only draw grid when axes are present
+  // (function plots). Geometry-only diagrams (segments, no arrows) stay clean.
+  const showGrid = data.showGrid != null ? !!data.showGrid : (hasX || hasY);
 
   /* ── Curve paths ── */
   const curvePaths = curves.map((c, idx) => {
@@ -364,11 +536,11 @@ const SvgGraph = ({ data }) => {
         </defs>
 
         {/* ── Grid ── */}
-        {range(Math.ceil(xMin), Math.floor(xMax)).map(x => (
+        {showGrid && range(Math.ceil(xMin), Math.floor(xMax)).map(x => (
           <line key={`gx${x}`} x1={toX(x)} y1={pad} x2={toX(x)} y2={H - pad}
             stroke={x === 0 ? C.gridMajor : C.grid} strokeWidth={0.8} />
         ))}
-        {range(Math.ceil(yMin), Math.floor(yMax)).map(y => (
+        {showGrid && range(Math.ceil(yMin), Math.floor(yMax)).map(y => (
           <line key={`gy${y}`} x1={pad} y1={toY(y)} x2={W - pad} y2={toY(y)}
             stroke={y === 0 ? C.gridMajor : C.grid} strokeWidth={0.8} />
         ))}
@@ -451,12 +623,37 @@ const SvgGraph = ({ data }) => {
         {/* ── Script texts ── */}
         {sTexts.map((t, i) => {
           const p = t.parents;
-          if (!p || p.length < 3) return null;
+          // Prefer parents [x,y,label]; fall back to attrs.text / attrs.name
+          const label =
+            (p && p.length >= 3 && p[2] != null && p[2] !== '')
+              ? String(p[2])
+              : (t.attrs?.text ?? t.attrs?.name ?? '');
+          if (!p || p.length < 2 || !label) return null;
+          const color = mapColor(t.attrs.strokeColor || t.attrs.color || t.attrs.fillColor);
+          const fontSize = t.attrs.fontSize || 12;
+          const sx = toX(p[0]);
+          const sy = toY(p[1]);
+          // Stacked exam-style fraction (π over 6), tight pixel spacing like KaTeX
+          const stacked = parseStackedFraction(String(label));
+          if (stacked) {
+            return (
+              <StackedFracLabel
+                key={`st${i}`}
+                x={sx}
+                y={sy}
+                neg={stacked.neg}
+                num={stacked.num}
+                den={stacked.den}
+                color={color}
+                fontSize={fontSize}
+              />
+            );
+          }
           return (
-            <text key={`st${i}`} x={toX(p[0])} y={toY(p[1])}
-              fill={mapColor(t.attrs.strokeColor || t.attrs.color)}
-              fontSize={t.attrs.fontSize || 12} fontWeight={t.attrs.fontWeight || 500}
-              fontFamily={FONT}>{formatLabel(String(p[2]))}</text>
+            <text key={`st${i}`} x={sx} y={sy}
+              fill={color}
+              fontSize={fontSize} fontWeight={t.attrs.fontWeight || 500}
+              fontFamily={FONT}>{formatLabel(String(label))}</text>
           );
         })}
 

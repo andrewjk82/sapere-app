@@ -1,33 +1,43 @@
 export const Y10_CH12A_QUESTIONS = [
   {
     "id": "y10-12a-q1a",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "7.42",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-7.42\\)",
+      "\\(6.42\\)",
+      "\\(7.42\\)",
+      "\\(8.42\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(7.42\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(32^{\\circ}\\)) and a side length (\\(14\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 32^\\circ"
+        "workingOut": "\\(\\theta = 32^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\sin(32^\\circ) = \\frac{x}{14}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(32^\\circ) = \\frac{x}{14}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 14 \\times \\sin(32^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 7.42"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 14 \\times \\sin(32^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -88,37 +98,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q1b",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "36.93",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-36.93\\)",
+      "\\(35.93\\)",
+      "\\(36.93\\)",
+      "\\(37.93\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(36.93\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(72^{\\circ}\\)) and a side length (\\(12\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 72^\\circ"
+        "workingOut": "\\(\\theta = 72^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\tan(72^\\circ) = \\frac{x}{12}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(72^\\circ) = \\frac{x}{12}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 12 \\times \\tan(72^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 36.93"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 12 \\times \\tan(72^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -179,37 +201,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q1c",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "3.15",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-3.15\\)",
+      "\\(2.15\\)",
+      "\\(3.15\\)",
+      "\\(4.15\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(3.15\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(5\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 51^\\circ"
+        "workingOut": "\\(\\theta = 51^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\cos(51^\\circ) = \\frac{x}{5}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(51^\\circ) = \\frac{x}{5}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 5 \\times \\cos(51^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 3.15"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 5 \\times \\cos(51^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -270,37 +304,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q1d",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "2.20",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-2.2\\)",
+      "\\(1.2000000000000002\\)",
+      "\\(2.20\\)",
+      "\\(3.2\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(2.20\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(16^{\\circ}\\)) and a side length (\\(8\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 16^\\circ"
+        "workingOut": "\\(\\theta = 16^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\sin(16^\\circ) = \\frac{x}{8}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(16^\\circ) = \\frac{x}{8}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 8 \\times \\sin(16^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 2.20"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 8 \\times \\sin(16^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -361,37 +407,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q1e",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "3.27",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-3.27\\)",
+      "\\(2.27\\)",
+      "\\(3.27\\)",
+      "\\(4.27\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(3.27\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(47^{\\circ}\\)) and a side length (\\(4.8\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 47^\\circ"
+        "workingOut": "\\(\\theta = 47^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\cos(47^\\circ) = \\frac{x}{4.8}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(47^\\circ) = \\frac{x}{4.8}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 4.8 \\times \\cos(47^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 3.27"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 4.8 \\times \\cos(47^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -452,37 +510,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q1f",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "21.15",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-21.15\\)",
+      "\\(20.15\\)",
+      "\\(21.15\\)",
+      "\\(22.15\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(21.15\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(40^{\\circ}\\)) and a side length (\\(16.2\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 40^\\circ"
+        "workingOut": "\\(\\theta = 40^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\cos(40^\\circ) = \\frac{16.2}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(40^\\circ) = \\frac{16.2}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{16.2}{\\cos(40^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 21.15"
+        "workingOut": "\\(x = \\frac{16.2}{\\cos(40^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -543,37 +613,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q2a",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "14.97",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-14.97\\)",
+      "\\(13.97\\)",
+      "\\(14.97\\)",
+      "\\(15.97\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(14.97\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(10^{\\circ}\\)) and a side length (\\(2.6\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 10^\\circ"
+        "workingOut": "\\(\\theta = 10^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\sin(10^\\circ) = \\frac{2.6}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(10^\\circ) = \\frac{2.6}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{2.6}{\\sin(10^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 14.97"
+        "workingOut": "\\(x = \\frac{2.6}{\\sin(10^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -634,37 +716,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q2b",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "5.67",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-5.67\\)",
+      "\\(4.67\\)",
+      "\\(5.67\\)",
+      "\\(6.67\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(5.67\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(7\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 51^\\circ"
+        "workingOut": "\\(\\theta = 51^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\tan(51^\\circ) = \\frac{7}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(51^\\circ) = \\frac{7}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{7}{\\tan(51^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 5.67"
+        "workingOut": "\\(x = \\frac{7}{\\tan(51^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -725,37 +819,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q2c",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "11.75",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-11.75\\)",
+      "\\(10.75\\)",
+      "\\(11.75\\)",
+      "\\(12.75\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(11.75\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(40^{\\circ}\\)) and a side length (\\(9\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 40^\\circ"
+        "workingOut": "\\(\\theta = 40^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\cos(40^\\circ) = \\frac{9}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(40^\\circ) = \\frac{9}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{9}{\\cos(40^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 11.75"
+        "workingOut": "\\(x = \\frac{9}{\\cos(40^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -816,37 +922,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q2d",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral, correct to two decimal places.",
-    "a": "4.34",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-4.34\\)",
+      "\\(3.34\\)",
+      "\\(4.34\\)",
+      "\\(5.34\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA to set up an equation.",
+    "solution": "The correct answer is \\(4.34\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(71^{\\circ}\\)) and a side length (\\(12.6\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 71^\\circ"
+        "workingOut": "\\(\\theta = 71^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\tan(71^\\circ) = \\frac{12.6}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(71^\\circ) = \\frac{12.6}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{12.6}{\\tan(71^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 4.34"
+        "workingOut": "\\(x = \\frac{12.6}{\\tan(71^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -907,37 +1025,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3a",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "25.4",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-25.4\\)",
+      "\\(24.4\\)",
+      "\\(25.4\\)",
+      "\\(26.4\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(25.4\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(6\\) and \\(14\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 6, 14"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 6, 14\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                12.65,
+                0
+              ],
+              "C": [
+                0,
+                6
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "B",
+                  "C"
+                ],
+                "text": "14 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "6 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "right": true
+              },
+              {
+                "at": "B",
+                "label": "\\theta"
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{6}{14}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{6}{14}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{6}{14}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 25.4^\\circ"
+        "explanation": "Final answer: 25.4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(25.4\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -998,37 +1186,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3b",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "33.7",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-33.7\\)",
+      "\\(32.7\\)",
+      "\\(33.7\\)",
+      "\\(34.7\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(33.7\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(5\\) and \\(9\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 5, 9"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 5, 9\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                0,
+                5
+              ],
+              "C": [
+                7.48,
+                5
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "5 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "9 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "label": "\\theta"
+              },
+              {
+                "at": "B",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{5}{9}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{5}{9}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5}{9}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 33.7^\\circ"
+        "explanation": "Final answer: 33.7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(33.7\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1089,37 +1347,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3c",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "60.3",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-60.3\\)",
+      "\\(59.3\\)",
+      "\\(60.3\\)",
+      "\\(61.3\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(60.3\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(14\\) and \\(8\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 14, 8"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 14, 8\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                8
+              ],
+              "B": [
+                14,
+                8
+              ],
+              "C": [
+                14,
+                0
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "14 cm"
+              },
+              {
+                "between": [
+                  "B",
+                  "C"
+                ],
+                "text": "8 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "B",
+                "right": true
+              },
+              {
+                "at": "C",
+                "label": "\\theta"
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\tan(\\theta) = \\frac{14}{8}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{14}{8}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\tan^{-1}\\left(\\frac{14}{8}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 60.3^\\circ"
+        "explanation": "Final answer: 60.3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(60.3\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1180,37 +1508,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3d",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "19.1",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-19.1\\)",
+      "\\(18.1\\)",
+      "\\(19.1\\)",
+      "\\(20.1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(19.1\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(3.8\\) and \\(11.6\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 3.8, 11.6"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 3.8, 11.6\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                11.6,
+                0
+              ],
+              "C": [
+                8.01,
+                1.24
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "11.6 cm"
+              },
+              {
+                "between": [
+                  "B",
+                  "C"
+                ],
+                "text": "3.8 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "B",
+                "label": "\\theta"
+              },
+              {
+                "at": "C",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{3.8}{11.6}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{3.8}{11.6}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{3.8}{11.6}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 19.1^\\circ"
+        "explanation": "Final answer: 19.1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(19.1\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1271,37 +1669,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3e",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "39.6",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-39.6\\)",
+      "\\(38.6\\)",
+      "\\(39.6\\)",
+      "\\(40.6\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(39.6\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(5.1\\) and \\(8\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 5.1, 8"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 5.1, 8\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                8,
+                0
+              ],
+              "C": [
+                3.25,
+                3.93
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "8 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "5.1 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "B",
+                "label": "\\theta"
+              },
+              {
+                "at": "C",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{5.1}{8}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{5.1}{8}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{5.1}{8}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 39.6^\\circ"
+        "explanation": "Final answer: 39.6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(39.6\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1362,37 +1830,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q3f",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of \\theta, correct to one decimal place.",
-    "a": "70.8",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-70.8\\)",
+      "\\(69.8\\)",
+      "\\(70.8\\)",
+      "\\(71.8\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use inverse trigonometric functions.",
+    "solution": "The correct answer is \\(70.8\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(13.2\\) and \\(4.6\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 13.2, 4.6"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 13.2, 4.6\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                13.2,
+                0
+              ],
+              "C": [
+                0,
+                4.6
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "13.2 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "4.6 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "right": true
+              },
+              {
+                "at": "C",
+                "label": "\\theta"
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\tan(\\theta) = \\frac{13.2}{4.6}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{13.2}{4.6}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\tan^{-1}\\left(\\frac{13.2}{4.6}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 70.8^\\circ"
+        "explanation": "Final answer: 70.8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(70.8\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1453,37 +1991,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4a",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "7.90",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-7.9\\)",
+      "\\(6.9\\)",
+      "\\(7.90\\)",
+      "\\(8.9\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(7.90\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(26^{\\circ}\\)) and a side length (\\(16.2\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 26^\\circ"
+        "workingOut": "\\(\\theta = 26^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\tan(26^\\circ) = \\frac{x}{16.2}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(26^\\circ) = \\frac{x}{16.2}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 16.2 \\times \\tan(26^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 7.90"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 16.2 \\times \\tan(26^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1544,37 +2094,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4b",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "44.9",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-44.9\\)",
+      "\\(43.9\\)",
+      "\\(44.9\\)",
+      "\\(45.9\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(44.9\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(12\\) and \\(17\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 12, 17"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 12, 17\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                0,
+                12.04
+              ],
+              "C": [
+                12,
+                12.04
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "B",
+                  "C"
+                ],
+                "text": "12 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "17 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "label": "\\theta"
+              },
+              {
+                "at": "B",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{12}{17}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{12}{17}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{12}{17}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 44.9^\\circ"
+        "explanation": "Final answer: 44.9. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(44.9\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1635,37 +2255,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4c",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "8.08",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-8.08\\)",
+      "\\(7.08\\)",
+      "\\(8.08\\)",
+      "\\(9.08\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(8.08\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(62^{\\circ}\\)) and a side length (\\(15.2\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 62^\\circ"
+        "workingOut": "\\(\\theta = 62^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\tan(62^\\circ) = \\frac{15.2}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(62^\\circ) = \\frac{15.2}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{15.2}{\\tan(62^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 8.08"
+        "workingOut": "\\(x = \\frac{15.2}{\\tan(62^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1726,37 +2358,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4d",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "2.26",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-2.26\\)",
+      "\\(1.2599999999999998\\)",
+      "\\(2.26\\)",
+      "\\(3.26\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(2.26\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(74^{\\circ}\\)) and a side length (\\(8.2\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 74^\\circ"
+        "workingOut": "\\(\\theta = 74^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\cos(74^\\circ) = \\frac{x}{8.2}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(74^\\circ) = \\frac{x}{8.2}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 8.2 \\times \\cos(74^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 2.26"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 8.2 \\times \\cos(74^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1817,37 +2461,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4e",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "57.8",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-57.8\\)",
+      "\\(56.8\\)",
+      "\\(57.8\\)",
+      "\\(58.8\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(57.8\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(8\\) and \\(15\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 8, 15"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 8, 15\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                15,
+                0
+              ],
+              "C": [
+                4.27,
+                -6.77
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "15 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "8 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "label": "\\theta"
+              },
+              {
+                "at": "C",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\cos(\\theta) = \\frac{8}{15}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{8}{15}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\cos^{-1}\\left(\\frac{8}{15}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 57.8^\\circ"
+        "explanation": "Final answer: 57.8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(57.8\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1908,37 +2622,107 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4f",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "52.1",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-52.1\\)",
+      "\\(51.1\\)",
+      "\\(52.1\\)",
+      "\\(53.1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(52.1\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify the given information: we know two side lengths (\\(15\\) and \\(19\\)) and need to find the unknown angle \\(\\theta\\).",
-        "workingOut": "\\mathrm{Sides:\\ } 15, 19"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(\\mathrm{Sides:\\ } 15, 19\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                19,
+                0
+              ],
+              "C": [
+                11.84,
+                9.22
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "19 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "15 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "label": "\\theta"
+              },
+              {
+                "at": "C",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the position of the sides relative to \\(\\theta\\), we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known side lengths into the equation.",
-        "workingOut": "\\sin(\\theta) = \\frac{15}{19}"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{15}{19}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the inverse trigonometric function to solve for \\(\\theta\\).",
-        "workingOut": "\\theta = \\sin^{-1}\\left(\\frac{15}{19}\\right)"
-      },
-      {
-        "explanation": "Calculate the angle and round to one decimal place as requested.",
-        "workingOut": "\\therefore \\theta \\approx 52.1^\\circ"
+        "explanation": "Final answer: 52.1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(52.1\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -1999,37 +2783,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4g",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "10.15",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-10.15\\)",
+      "\\(10.15\\)",
+      "\\(11.15\\)",
+      "\\(9.15\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(10.15\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(80^{\\circ}\\)) and a side length (\\(10\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 80^\\circ"
+        "workingOut": "\\(\\theta = 80^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine.",
-        "workingOut": "\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Sine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\sin(80^\\circ) = \\frac{10}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\sin(80^\\circ) = \\frac{10}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{10}{\\sin(80^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 10.15"
+        "workingOut": "\\(x = \\frac{10}{\\sin(80^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2090,37 +2886,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4h",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "10.63",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-10.63\\)",
+      "\\(10.63\\)",
+      "\\(11.63\\)",
+      "\\(9.63\\)"
+    ],
+    "a": 1,
+    "answer": "1",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(10.63\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(36^{\\circ}\\)) and a side length (\\(8.6\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 36^\\circ"
+        "workingOut": "\\(\\theta = 36^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine.",
-        "workingOut": "\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Cosine. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(\\theta) = \\frac{\\mathrm{Adjacent}}{\\mathrm{Hypotenuse}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator.",
-        "workingOut": "\\cos(36^\\circ) = \\frac{8.6}{x}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\cos(36^\\circ) = \\frac{8.6}{x}\\)",
+        "graphData": null
       },
       {
         "explanation": "Rearrange the equation to isolate \\(x\\). Multiply both sides by \\(x\\), then divide by the trigonometric function.",
-        "workingOut": "x = \\frac{8.6}{\\cos(36^\\circ)}"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 10.63"
+        "workingOut": "\\(x = \\frac{8.6}{\\cos(36^\\circ)}\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2181,37 +2989,49 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q4i",
-    "type": "short_answer",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Calculate the value of the pronumeral. Give side lengths correct to two decimal places and angles correct to one decimal place.",
-    "a": "9.39",
-    "t": "Review of the basic trigonometric ratios",
+    "opts": [
+      "\\(-9.39\\)",
+      "\\(10.39\\)",
+      "\\(8.39\\)",
+      "\\(9.39\\)"
+    ],
+    "a": 3,
+    "answer": "3",
     "hint": "Use SOH CAH TOA.",
+    "solution": "The correct answer is \\(9.39\\).",
     "solutionSteps": [
       {
         "explanation": "Identify the given information: we know an angle (\\(51^{\\circ}\\)) and a side length (\\(7.6\\)), and we need to find the unknown side.",
-        "workingOut": "\\theta = 51^\\circ"
+        "workingOut": "\\(\\theta = 51^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent.",
-        "workingOut": "\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}"
+        "explanation": "Choose the correct trigonometric ratio. Based on the sides relative to the angle, we use Tangent. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(\\theta) = \\frac{\\mathrm{Opposite}}{\\mathrm{Adjacent}}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator.",
-        "workingOut": "\\tan(51^\\circ) = \\frac{x}{7.6}"
+        "explanation": "Substitute the known values into the equation. Let \\(x\\) be the unknown side in the numerator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(\\tan(51^\\circ) = \\frac{x}{7.6}\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator.",
-        "workingOut": "x = 7.6 \\times \\tan(51^\\circ)"
-      },
-      {
-        "explanation": "Calculate the result and round to two decimal places.",
-        "workingOut": "\\therefore x \\approx 9.39"
+        "explanation": "Rearrange the equation to isolate \\(x\\) by multiplying both sides by the denominator. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or mis-copied value, so re-check before continuing.",
+        "workingOut": "\\(x = 7.6 \\times \\tan(51^\\circ)\\)",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2272,33 +3092,93 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-12a-q5a",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Sides: 4.67 cm, 2.52 cm. Angle: 50°",
-    "t": "Review of the basic trigonometric ratios",
+    "answer": "Sides: 4.67 cm, 2.52 cm.\nAngle: 50°",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
+    "solution": "Sides: 4.67 cm, 2.52 cm.\nAngle: 50°",
     "solutionSteps": [
       {
-        "explanation": "First, find the third angle. The sum of angles in a right-angled triangle is \\(180^\\circ\\).",
-        "workingOut": "180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(180^\\circ - 90^\\circ - 40^\\circ = 50^\\circ\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                0,
+                3
+              ],
+              "C": [
+                2.52,
+                3
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "3 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "A",
+                "label": "40°"
+              },
+              {
+                "at": "B",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Use the Cosine ratio to find the hypotenuse. We know the adjacent side is \\(3\\) cm.",
-        "workingOut": "\\cos(40^\\circ) = \\frac{3}{h} \\implies h = \\frac{3}{\\cos(40^\\circ)} \\approx 4.67"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\cos(40^\\circ) = \\frac{3}{h} \\implies h = \\frac{3}{\\cos(40^\\circ)} \\approx 4.67\\)",
+        "graphData": null
       },
       {
-        "explanation": "Use the Tangent ratio to find the opposite side.",
-        "workingOut": "\\tan(40^\\circ) = \\frac{o}{3} \\implies o = 3 \\tan(40^\\circ) \\approx 2.52"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\tan(40^\\circ) = \\frac{o}{3} \\implies o = 3 \\tan(40^\\circ) \\approx 2.52\\)",
+        "graphData": null
       },
       {
-        "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Sides:}\\ 4.67\\mathrm{cm}, 2.52\\mathrm{cm}.\\ \\mathrm{Angle:}\\ 50^\\circ"
+        "explanation": "Final answer: Sides: 4.67 cm, 2.52 cm.\nAngle: 50°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Sides: 4.67 cm, 2.52 cm.\nAngle: 50°",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2352,33 +3232,96 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-12a-q5b",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Side: 6.97 cm. Angles: 40.7°, 49.3°",
-    "t": "Review of the basic trigonometric ratios",
+    "answer": "Side: 6.97 cm.\nAngles: 40.7°, 49.3°",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
+    "solution": "Side: 6.97 cm.\nAngles: 40.7°, 49.3°",
     "solutionSteps": [
       {
-        "explanation": "Use Pythagoras' theorem (\\(a^2 + b^2 = c^2\\)) to find the missing side, as two sides are given.",
-        "workingOut": "x^2 + 6^2 = 9.2^2 \\implies x = \\sqrt{9.2^2 - 6^2} \\approx 6.97"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(x^2 + 6^2 = 9.2^2 \\implies x = \\sqrt{9.2^2 - 6^2} \\approx 6.97\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                6
+              ],
+              "B": [
+                0,
+                0
+              ],
+              "C": [
+                6.97,
+                0
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "A",
+                  "B"
+                ],
+                "text": "6 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "9.2 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "B",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Use the Sine ratio to find one of the missing angles. The opposite side is \\(6\\) cm and the hypotenuse is \\(9.2\\) cm.",
-        "workingOut": "\\sin(\\alpha) = \\frac{6}{9.2} \\implies \\alpha = \\sin^{-1}\\left(\\frac{6}{9.2}\\right) \\approx 40.7^\\circ"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\sin(\\alpha) = \\frac{6}{9.2} \\implies \\alpha = \\sin^{-1}\\left(\\frac{6}{9.2}\\right) \\approx 40.7^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the last angle by subtracting the known angles from \\(180^\\circ\\).",
-        "workingOut": "180^\\circ - 90^\\circ - 40.7^\\circ = 49.3^\\circ"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(180^\\circ - 90^\\circ - 40.7^\\circ = 49.3^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Side:}\\ 6.97\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 40.7^\\circ, 49.3^\\circ"
+        "explanation": "Final answer: Side: 6.97 cm.\nAngles: 40.7°, 49.3°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Side: 6.97 cm.\nAngles: 40.7°, 49.3°",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2435,33 +3378,96 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-12a-q5c",
+    "topicId": "y10-12a",
+    "c": "12A",
+    "t": "Review of the basic trigonometric ratios",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 60,
     "question": "Find all unknown sides, correct to two decimal places, and all unknown angles, correct to one decimal place.",
-    "a": "Side: 9.78 cm. Angles: 30.8°, 59.2°",
-    "t": "Review of the basic trigonometric ratios",
+    "answer": "Side: 9.78 cm.\nAngles: 30.8°, 59.2°",
     "hint": "Use Pythagoras' theorem and trigonometry to find all missing values.",
+    "solution": "Side: 9.78 cm.\nAngles: 30.8°, 59.2°",
     "solutionSteps": [
       {
-        "explanation": "Use Pythagoras' theorem to find the hypotenuse since the two shorter sides are given.",
-        "workingOut": "h = \\sqrt{5^2 + 8.4^2} = \\sqrt{25 + 70.56} = \\sqrt{95.56} \\approx 9.78"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of the basic trigonometric ratios: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(h = \\sqrt{5^2 + 8.4^2} = \\sqrt{25 + 70.56} = \\sqrt{95.56} \\approx 9.78\\)",
+        "graphData": {
+          "geometry": {
+            "width": 300,
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                9.78,
+                0
+              ],
+              "C": [
+                2.56,
+                4.29
+              ]
+            },
+            "segments": [
+              {
+                "from": "A",
+                "to": "B"
+              },
+              {
+                "from": "B",
+                "to": "C"
+              },
+              {
+                "from": "C",
+                "to": "A"
+              }
+            ],
+            "sideLabels": [
+              {
+                "between": [
+                  "B",
+                  "C"
+                ],
+                "text": "8.4 cm"
+              },
+              {
+                "between": [
+                  "C",
+                  "A"
+                ],
+                "text": "5 cm"
+              }
+            ],
+            "angles": [
+              {
+                "at": "C",
+                "right": true
+              }
+            ]
+          }
+        }
       },
       {
-        "explanation": "Use the Tangent ratio to find one of the angles.",
-        "workingOut": "\\tan(\\alpha) = \\frac{5}{8.4} \\implies \\alpha = \\tan^{-1}\\left(\\frac{5}{8.4}\\right) \\approx 30.8^\\circ"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\tan(\\alpha) = \\frac{5}{8.4} \\implies \\alpha = \\tan^{-1}\\left(\\frac{5}{8.4}\\right) \\approx 30.8^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "Find the last angle by subtracting the known angles from \\(180^\\circ\\).",
-        "workingOut": "180^\\circ - 90^\\circ - 30.8^\\circ = 59.2^\\circ"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(180^\\circ - 90^\\circ - 30.8^\\circ = 59.2^\\circ\\)",
+        "graphData": null
       },
       {
-        "explanation": "State all the missing values rounded correctly.",
-        "workingOut": "\\mathrm{Side:}\\ 9.78\\mathrm{cm}.\\ \\mathrm{Angles:}\\ 30.8^\\circ, 59.2^\\circ"
+        "explanation": "Final answer: Side: 9.78 cm.\nAngles: 30.8°, 59.2°. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Side: 9.78 cm.\nAngles: 30.8°, 59.2°",
+        "graphData": null
       }
     ],
     "graphData": {
@@ -2518,6 +3524,8 @@ export const Y10_CH12A_QUESTIONS = [
           }
         ]
       }
-    }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   }
 ];

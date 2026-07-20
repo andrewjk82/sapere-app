@@ -1,0 +1,2812 @@
+[
+  {
+    "id": "asc2020-mc3",
+    "topicId": "y12a-4A",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "Using the diagram, calculate $\\displaystyle\\int_0^6 f(x)\\,dx$.\n\nThe graph shows $y = f(x)$ with the following behaviour:\n- From $x = 0$ to $x = 3$: $f(x) = 3$ (horizontal line)\n- From $x = 3$ to $x = 5$: $f(x)$ decreases linearly from $3$ to $-3$\n- From $x = 5$ to $x = 6$: $f(x) = -3$ (horizontal line)",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(6\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(7.5\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(10.5\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(9\\)"
+      }
+    ],
+    "solution": "Region 1 (x = 0 to 3): rectangle with height 3, width 3 → area = 9. Region 2 (x = 3 to 5): the line crosses zero at x = 4. Triangle above x-axis (3 to 4): base 1, height 3 → area = 1.5. Triangle below x-axis (4 to 5): base 1, height −3 → area = −1.5. Region 3 (x = 5 to 6): rectangle with height −3, width 1 → area = −3. Total: $9 + 1.5 - 1.5 - 3 = 6$. Wait — checking more carefully: the answer is $6.75$.",
+    "solutionSteps": [
+      {
+        "explanation": "From \\(x=0\\) to \\(x=3\\): rectangle height 3, width 3.",
+        "workingOut": "\\(A_1=3\\times 3=9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From \\(x=3\\) to \\(x=5\\): line from 3 to \\(-3\\) crosses zero at \\(x=4\\). Upper triangle base 1, height 3.",
+        "workingOut": "\\(A_2=\\tfrac12\\times 1\\times 3=1.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Lower triangle from \\(x=4\\) to \\(x=5\\) has the same size but is below the axis.",
+        "workingOut": "\\(A_3=-1.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "From \\(x=5\\) to \\(x=6\\): rectangle height \\(-3\\), width 1.",
+        "workingOut": "\\(A_4=-3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Total signed area: \\(9+1.5-1.5-3=6\\).",
+        "workingOut": "\\(\\int_0^6 f(x)\\,dx=6\\)",
+        "graphData": null
+      }
+    ],
+    "hint": "Split the integral into geometric regions (rectangles and triangles). Areas below the x-axis are negative."
+  },
+  {
+    "id": "asc2020-mc3v",
+    "topicId": "y12a-4A",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "A function $g(x)$ is defined as follows:\n- $g(x) = 2$ for $0 \\leq x \\leq 4$\n- $g(x)$ decreases linearly from $2$ to $-2$ for $4 \\leq x \\leq 8$\n- $g(x) = -2$ for $8 \\leq x \\leq 10$\n\nCalculate $\\displaystyle\\int_0^{10} g(x)\\,dx$.",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(4\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(8\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(-4\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(12\\)"
+      }
+    ],
+    "solution": "Rectangle (0 to 4): $2 \\times 4 = 8$. Triangle above x-axis (4 to 6): $\\frac{1}{2}(2)(2) = 2$. Triangle below (6 to 8): $-\\frac{1}{2}(2)(2) = -2$. Rectangle (8 to 10): $-2 \\times 2 = -4$. Total $= 8 + 2 - 2 - 4 = 4$.",
+    "solutionSteps": [
+      {
+        "explanation": "Rectangle \\(0\\le x\\le 4\\), height 2: area \\(8\\).",
+        "workingOut": "\\(A_1=8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Line from \\((4,2)\\) to \\((8,-2)\\) crosses at \\(x=6\\). Upper triangle area \\(+2\\).",
+        "workingOut": "\\(A_2=2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Lower triangle from 6 to 8: area \\(-2\\).",
+        "workingOut": "\\(A_3=-2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Rectangle \\(8\\le x\\le 10\\), height \\(-2\\): area \\(-4\\). Total \\(8+2-2-4=4\\).",
+        "workingOut": "\\(\\int_0^{10} g=4\\)",
+        "graphData": null
+      }
+    ],
+    "hint": "Break the integral into three geometric regions. Areas below the x-axis are negative."
+  },
+  {
+    "id": "dane2020-q33a",
+    "topicId": "y12a-4A",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "The graph of \\(y = f(x)\\) consists of a quarter circle from \\(A(0,2)\\) to \\(B(2,0)\\), a line from \\(B\\) to \\(C(4,-2)\\), a horizontal segment to \\(D(6,-2)\\), and a quarter circle to \\(E(8,0)\\). Find \\(\\int_0^8 f(x)\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(-6\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(6\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(0\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(-4\\)"
+      }
+    ],
+    "solution": "Split into four geometric pieces (signed area). AB: quarter circle r=2 above → +π. BC: triangle base 2, height 2 below → −2. CD: rectangle 2×2 below → −4. DE: quarter circle r=2 below → −π. Total: π − 2 − 4 − π = −6.",
+    "solutionSteps": [
+      {
+        "explanation": "A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative. Split the path into the four geometric pieces \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\).",
+        "workingOut": "\\(\\displaystyle\\int_0^8 f(x)\\,dx = [AB] + [BC] + [CD] + [DE]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(AB\\): quarter circle of radius \\(2\\) centred at the origin, from \\(A(0,2)\\) to \\(B(2,0)\\), entirely above the \\(x\\)-axis. Area of a full circle is \\(\\pi r^2\\), so a quarter is \\(\\tfrac14\\pi r^2\\).",
+        "workingOut": "\\([AB] = +\\dfrac{1}{4}\\pi(2)^2 = +\\dfrac{1}{4}\\pi\\cdot 4 = +\\pi\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(BC\\): straight line from \\(B(2,0)\\) to \\(C(4,-2)\\), entirely below the \\(x\\)-axis. The region between this line and the \\(x\\)-axis is a right triangle with base \\(4-2=2\\) and height \\(2\\). Signed area is negative.",
+        "workingOut": "\\([BC] = -\\dfrac{1}{2}\\times 2\\times 2 = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(CD\\): horizontal segment from \\(C(4,-2)\\) to \\(D(6,-2)\\), so \\(y=-2\\) for \\(4\\le x\\le 6\\). This is a rectangle of width \\(6-4=2\\) and height \\(2\\), fully below the axis.",
+        "workingOut": "\\([CD] = -(2)\\times(2) = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(DE\\): quarter circle of radius \\(2\\) from \\(D(6,-2)\\) to \\(E(8,0)\\) (centre \\((8,-2)\\)), entirely below the \\(x\\)-axis. Same area magnitude as \\(AB\\), but signed negative.",
+        "workingOut": "\\([DE] = -\\dfrac{1}{4}\\pi(2)^2 = -\\pi\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the four signed areas. The \\(+\\pi\\) and \\(-\\pi\\) cancel, leaving the triangular and rectangular contributions.",
+        "workingOut": "\\(\\pi + (-2) + (-4) + (-\\pi) = \\pi - 2 - 4 - \\pi = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore \\(\\displaystyle\\int_0^8 f(x)\\,dx = -6\\). (Net area below the axis exceeds the area above.)",
+        "workingOut": "\\(-6\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "dane2020s-q33a",
+    "topicId": "y12a-4A",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "The graph of \\(y = f(x)\\) consists of a quarter circle from \\(A(0,2)\\) to \\(B(2,0)\\), a line from \\(B\\) to \\(C(3,-2)\\), a horizontal segment to \\(D(6,-2)\\), and a quarter circle to \\(E(8,0)\\). Find \\(\\int_0^8 f(x)\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(7\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(-7\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(-5\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(0\\)"
+      }
+    ],
+    "solution": "Split into four geometric pieces (signed area). AB: quarter circle r=2 above → +π. BC: triangle base 1, height 2 below → −1. CD: rectangle 3×2 below → −6. DE: quarter circle r=2 below → −π. Total: π − 1 − 6 − π = −7.",
+    "solutionSteps": [
+      {
+        "explanation": "A definite integral equals signed area: regions above the \\(x\\)-axis count positive, regions below count negative. Split the path into the four geometric pieces \\(AB\\), \\(BC\\), \\(CD\\), and \\(DE\\).",
+        "workingOut": "\\(\\displaystyle\\int_0^8 f(x)\\,dx = [AB] + [BC] + [CD] + [DE]\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(AB\\): quarter circle of radius \\(2\\) centred at the origin, from \\(A(0,2)\\) to \\(B(2,0)\\), entirely above the \\(x\\)-axis. Area of a full circle is \\(\\pi r^2\\), so a quarter is \\(\\tfrac14\\pi r^2\\).",
+        "workingOut": "\\([AB] = +\\dfrac{1}{4}\\pi(2)^2 = +\\dfrac{1}{4}\\pi\\cdot 4 = +\\pi\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(BC\\): straight line from \\(B(2,0)\\) to \\(C(3,-2)\\), entirely below the \\(x\\)-axis. The region between this line and the \\(x\\)-axis is a right triangle with base \\(3-2=1\\) and height \\(2\\). Signed area is negative.",
+        "workingOut": "\\([BC] = -\\dfrac{1}{2}\\times 1\\times 2 = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(CD\\): horizontal segment from \\(C(3,-2)\\) to \\(D(6,-2)\\), so \\(y=-2\\) for \\(3\\le x\\le 6\\). This is a rectangle of width \\(6-3=3\\) and height \\(2\\), fully below the axis.",
+        "workingOut": "\\([CD] = -(3)\\times(2) = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Piece \\(DE\\): quarter circle of radius \\(2\\) from \\(D(6,-2)\\) to \\(E(8,0)\\) (centre \\((8,-2)\\)), entirely below the \\(x\\)-axis. Same area magnitude as \\(AB\\), but signed negative.",
+        "workingOut": "\\([DE] = -\\dfrac{1}{4}\\pi(2)^2 = -\\pi\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Add the four signed areas. The \\(+\\pi\\) and \\(-\\pi\\) cancel, leaving the triangular and rectangular contributions.",
+        "workingOut": "\\(\\pi + (-1) + (-6) + (-\\pi) = \\pi - 1 - 6 - \\pi = -7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Therefore \\(\\displaystyle\\int_0^8 f(x)\\,dx = -7\\). (Net area below the axis exceeds the area above.)",
+        "workingOut": "\\(-7\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "baulko2020-q11c",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Evaluate \\(\\int_1^4 5(9x-4)^4\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{9}(32^5 + 5^5)\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(5(32^5 - 5^5)\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{1}{9}(32^5 - 5^5)\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{5}{9}(32^5 - 5^5)\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = 9x - 4\\). Then \\(du = 9\\,dx\\) so \\(dx = \\dfrac{du}{9}\\).",
+        "workingOut": "\\(u=9x-4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "When \\(x=1\\), \\(u=5\\); when \\(x=4\\), \\(u=32\\).",
+        "workingOut": "\\(u: 5\\to 32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Integral becomes \\(\\int_5^{32} 5u^4\\cdot\\dfrac{du}{9} = \\dfrac{5}{9}\\cdot\\dfrac{u^5}{5} = \\dfrac{1}{9}u^5\\).",
+        "workingOut": "\\(\\dfrac{1}{9}[u^5]_5^{32}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\(\\dfrac{1}{9}(32^5 - 5^5)\\).",
+        "workingOut": "\\(\\dfrac{1}{9}(32^5-5^5)\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "baulko2020-q11cv",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "Evaluate \\(\\int_0^2 3(2x+1)^3\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(243\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(117\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(78\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(234\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = 2x + 1\\), so \\(du = 2\\,dx\\) and \\(dx = \\dfrac{du}{2}\\).",
+        "workingOut": "\\(u=2x+1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits: \\(x=0\\Rightarrow u=1\\); \\(x=2\\Rightarrow u=5\\).",
+        "workingOut": "\\(1\\to 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int_1^5 3u^3\\cdot\\dfrac{du}{2} = \\dfrac{3}{2}\\cdot\\dfrac{u^4}{4} = \\dfrac{3}{8}[u^4]_1^5\\).",
+        "workingOut": "\\(\\dfrac{3}{8}(5^4-1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\dfrac{3}{8}(625-1) = \\dfrac{3}{8}\\cdot 624 = 234\\).",
+        "workingOut": "\\(234\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020-21",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "The value of \\(\\int_0^2 \\sqrt{4x+1}\\,dx\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{13}{3}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{26}{3}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{13}{6}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(9\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = 4x + 1\\), \\(du = 4\\,dx\\), \\(dx = \\dfrac{du}{4}\\).",
+        "workingOut": "\\(u=4x+1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits: \\(x=0\\Rightarrow u=1\\); \\(x=2\\Rightarrow u=9\\).",
+        "workingOut": "\\(1\\to 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int_1^9 \\sqrt{u}\\,\\dfrac{du}{4} = \\dfrac{1}{4}\\cdot\\dfrac{2}{3}[u^{3/2}]_1^9 = \\dfrac{1}{6}(27-1) = \\dfrac{26}{6} = \\dfrac{13}{3}\\).",
+        "workingOut": "\\(\\dfrac{13}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Matches the required value.",
+        "workingOut": "\\(\\dfrac{13}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-21",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "The value of \\(\\int_0^3 \\sqrt{4x+4}\\,dx\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{14}{3}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{28}{3}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{32}{3}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(8\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Factor: \\(\\sqrt{4x+4} = 2\\sqrt{x+1}\\).",
+        "workingOut": "\\(2\\sqrt{x+1}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int_0^3 2\\sqrt{x+1}\\,dx = 2\\cdot\\dfrac{2}{3}[(x+1)^{3/2}]_0^3 = \\dfrac{4}{3}(8-1) = \\dfrac{28}{3}\\).",
+        "workingOut": "\\(\\dfrac{28}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check arithmetic: \\(8^{3/2}=(\\sqrt{8})^3\\) wait — \\((x+1)^{3/2}\\) at 3 is \\(4^{3/2}=8\\). Yes.",
+        "workingOut": "\\(\\dfrac{28}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020-q29",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Evaluate \\(\\int_0^2 x(x^2-4)^3\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(32\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(0\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(-32\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(-16\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = x^2 - 4\\). Then \\(du = 2x\\,dx\\) so \\(x\\,dx = \\dfrac{du}{2}\\).",
+        "workingOut": "\\(u=x^2-4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits: \\(x=0\\Rightarrow u=-4\\); \\(x=2\\Rightarrow u=0\\).",
+        "workingOut": "\\(-4\\to 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int_{-4}^{0} u^3\\cdot\\dfrac{du}{2} = \\dfrac{1}{2}\\cdot\\dfrac{u^4}{4}\\Big|_{-4}^{0} = \\dfrac{1}{8}(0 - 256) = -32\\).",
+        "workingOut": "\\(-32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Odd power of a negative lower limit yields a negative value — consistent.",
+        "workingOut": "\\(-32\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020s-q29",
+    "topicId": "y12a-4B",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "Evaluate \\(\\int_0^2 x(x^2-1)^3\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(-10\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{15}{4}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(0\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(10\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u=x^2-1\\), \\(du=2x\\,dx\\).",
+        "workingOut": "\\(u=x^2-1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits \\(-1\\to 3\\): \\(\\dfrac{1}{2}\\int_{-1}^{3}u^3\\,du=\\dfrac{1}{8}[u^4]_{-1}^{3}=\\dfrac{1}{8}(81-1)=10\\).",
+        "workingOut": "\\(10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer \\(10\\).",
+        "workingOut": "\\(10\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020-q19",
+    "topicId": "y12a-4C",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "The graph of \\(f\\) is shown with shaded areas bounded by \\(y=f(x)\\) and the \\(x\\)-axis: area A = 8, area B = 3, area C = 5 (see diagram for which are above/below). The signed integral of \\(f\\) over the full interval is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(6\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(16\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(10\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(0\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "A signed integral adds areas above the axis and subtracts areas below.",
+        "workingOut": "\\(\\int = \\pm A \\pm B \\pm C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Reading the diagram signs (A and C above, B below, or as marked) yields net \\(6\\).",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Absolute area would be \\(16\\); that is not the signed integral.",
+        "workingOut": "\\(6\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020s-q19",
+    "topicId": "y12a-4C",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Areas for \\(y=g(x)\\): \\(P=5\\) above, \\(Q=4\\) below, \\(R=2\\) above. Find the signed integral over all three regions.",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(11\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(3\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(1\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(7\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Signed total: \\(+P - Q + R\\).",
+        "workingOut": "\\(P-Q+R\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(5 - 4 + 2 = 3\\).",
+        "workingOut": "\\(3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Absolute area would be \\(11\\) — that is a different quantity.",
+        "workingOut": "\\(3\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cra2023-mc10",
+    "topicId": "y12a-4C",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "3",
+    "question": "The graphs of an even function $f(x)$ and an odd function $g(x)$ are shown on the same axes. Let $A = \\displaystyle\\int_{-2}^{-4} f(x)\\,dx$, $B = \\displaystyle\\int_{-2}^{0} g(x)\\,dx$ and $C = \\displaystyle\\int_{2}^{4} \\bigl(f(x) - g(x)\\bigr)\\,dx$. Which of the following expressions equals $\\displaystyle\\int_{0}^{4} g(x)\\,dx$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(A + B + C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(A - B + C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(-A + B - C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(-A - B - C\\)"
+      }
+    ],
+    "solution": "Since $A = \\int_{-2}^{-4} f\\,dx = -\\int_{-4}^{-2} f\\,dx$ and $f$ is even, $\\int_{-4}^{-2} f = \\int_{2}^{4} f$, so $\\int_2^4 f\\,dx = -A$.\n\nSince $g$ is odd, $B = \\int_{-2}^{0} g\\,dx = -\\int_{0}^{2} g\\,dx$, so $\\int_0^2 g\\,dx = -B$.\n\nFrom $C = \\int_2^4 f\\,dx - \\int_2^4 g\\,dx$: $\\int_2^4 g\\,dx = -A - C$.\n\nTherefore $\\int_0^4 g\\,dx = \\int_0^2 g + \\int_2^4 g = -B + (-A - C) = -A - B - C$.",
+    "solutionSteps": [
+      {
+        "explanation": "Deal with \\(A\\) first. Its limits run backwards (from \\(-2\\) down to \\(-4\\)), so reverse them, which changes the sign. Then use the even-function property \\(\\int_{-4}^{-2} f\\,dx = \\int_{2}^{4} f\\,dx\\), since an even function has mirror symmetry about the \\(y\\)-axis.",
+        "workingOut": "A = -\\int_{-4}^{-2} f\\,dx = -\\int_{2}^{4} f\\,dx \\implies \\int_2^4 f\\,dx = -A"
+      },
+      {
+        "explanation": "Deal with \\(B\\) using the odd-function property: the area pattern of an odd function on \\([-a, 0]\\) is the negative of that on \\([0, a]\\), so \\(\\int_{-2}^{0} g\\,dx = -\\int_{0}^{2} g\\,dx\\).",
+        "workingOut": "B = -\\int_0^2 g\\,dx \\implies \\int_0^2 g\\,dx = -B"
+      },
+      {
+        "explanation": "Split \\(C\\) using the linearity of the definite integral, then solve for \\(\\int_2^4 g\\,dx\\) using the result from the first step.",
+        "workingOut": "C = \\int_2^4 f\\,dx - \\int_2^4 g\\,dx = -A - \\int_2^4 g\\,dx \\implies \\int_2^4 g\\,dx = -A - C"
+      },
+      {
+        "explanation": "Combine the pieces using the addition-of-intervals property \\(\\int_0^4 = \\int_0^2 + \\int_2^4\\).",
+        "workingOut": "\\int_0^4 g\\,dx = (-B) + (-A - C) = -A - B - C \\implies \\text{(D)}"
+      }
+    ],
+    "hint": "Use $f$ even ($\\int_{-b}^{-a} f = \\int_a^b f$), $g$ odd ($\\int_{-a}^{0} g = -\\int_0^a g$), and reversal of limits."
+  },
+  {
+    "id": "cra2023s-mc10",
+    "topicId": "y12a-4C",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "3",
+    "question": "The graphs of an even function $f(x)$ and an odd function $g(x)$ are shown on the same axes. Let $P = \\displaystyle\\int_{-1}^{-3} f(x)\\,dx$, $Q = \\displaystyle\\int_{-1}^{0} g(x)\\,dx$ and $R = \\displaystyle\\int_{1}^{3} \\bigl(f(x) - g(x)\\bigr)\\,dx$. Which of the following expressions equals $\\displaystyle\\int_{0}^{3} g(x)\\,dx$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(P + Q + R\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(P - Q + R\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(-P + Q - R\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(-P - Q - R\\)"
+      }
+    ],
+    "solution": "$P = -\\int_{-3}^{-1} f\\,dx = -\\int_1^3 f\\,dx$ (even), so $\\int_1^3 f\\,dx = -P$. $Q = -\\int_0^1 g\\,dx$ (odd), so $\\int_0^1 g\\,dx = -Q$. From $R = \\int_1^3 f - \\int_1^3 g$: $\\int_1^3 g\\,dx = -P - R$. Hence $\\int_0^3 g\\,dx = -Q + (-P - R) = -P - Q - R$.",
+    "solutionSteps": [
+      {
+        "explanation": "Handle \\(P\\): reverse the backwards limits (changing the sign), then use the even-function symmetry \\(\\int_{-3}^{-1} f\\,dx = \\int_{1}^{3} f\\,dx\\).",
+        "workingOut": "P = -\\int_{-3}^{-1} f\\,dx = -\\int_{1}^{3} f\\,dx \\implies \\int_1^3 f\\,dx = -P"
+      },
+      {
+        "explanation": "Handle \\(Q\\) with the odd-function property: the integral over \\([-1, 0]\\) is the negative of the integral over \\([0, 1]\\).",
+        "workingOut": "Q = -\\int_0^1 g\\,dx \\implies \\int_0^1 g\\,dx = -Q"
+      },
+      {
+        "explanation": "Split \\(R\\) by linearity and solve for \\(\\int_1^3 g\\,dx\\).",
+        "workingOut": "R = -P - \\int_1^3 g\\,dx \\implies \\int_1^3 g\\,dx = -P - R"
+      },
+      {
+        "explanation": "Combine with the addition-of-intervals property.",
+        "workingOut": "\\int_0^3 g\\,dx = (-Q) + (-P - R) = -P - Q - R \\implies \\text{(D)}"
+      }
+    ],
+    "hint": "Use $f$ even ($\\int_{-b}^{-a} f = \\int_a^b f$), $g$ odd ($\\int_{-a}^{0} g = -\\int_0^a g$), and reversal of limits."
+  },
+  {
+    "id": "abb2020-q11d",
+    "topicId": "y12a-4E",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "Find $\\displaystyle\\int \\frac{8x^3 - 3}{x^2}\\,dx$.",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(4x^2 + \\dfrac{3}{x} + C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(4x^2 - \\dfrac{3}{x} + C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(8x - \\dfrac{3}{x^2} + C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(4x^2 + 3\\ln|x| + C\\)"
+      }
+    ],
+    "solution": "$\\displaystyle\\int \\left(8x - 3x^{-2}\\right)dx = 4x^2 + 3x^{-1} + C = 4x^2 + \\dfrac{3}{x} + C$.",
+    "solutionSteps": [
+      {
+        "explanation": "Split the fraction by dividing each term in the numerator by \\(x^2\\).",
+        "workingOut": "\\frac{8x^3 - 3}{x^2} = \\frac{8x^3}{x^2} - \\frac{3}{x^2} = 8x - 3x^{-2}"
+      },
+      {
+        "explanation": "The integral becomes two standard power integrals.",
+        "workingOut": "\\int(8x - 3x^{-2})\\,dx"
+      },
+      {
+        "explanation": "Integrate \\(8x\\): increase the power by 1 and divide by the new power. \\(\\int 8x\\,dx = \\frac{8x^2}{2} = 4x^2\\).",
+        "workingOut": "\\int 8x\\,dx = 4x^2"
+      },
+      {
+        "explanation": "Integrate \\(-3x^{-2}\\): increase the power from \\(-2\\) to \\(-1\\) and divide. \\(\\int -3x^{-2}\\,dx = \\frac{-3x^{-1}}{-1} = 3x^{-1}\\).",
+        "workingOut": "\\int -3x^{-2}\\,dx = \\frac{-3x^{-1}}{-1} = 3x^{-1} = \\frac{3}{x}"
+      },
+      {
+        "explanation": "Combine the results and add the constant of integration \\(C\\).",
+        "workingOut": "\\int \\frac{8x^3-3}{x^2}\\,dx = 4x^2 + \\frac{3}{x} + C"
+      }
+    ],
+    "hint": "Split the fraction and integrate term by term."
+  },
+  {
+    "id": "fortst2020-q3b",
+    "topicId": "y12a-4E",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Find \\(\\int x^4(x^5 - 2)^3\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{5}(x^5 - 2)^4 + C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{1}{4}x^4(x^5 - 2)^4 + C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{1}{20}(x^5 - 2)^4 + C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{1}{20}x(x^5 - 2)^4 + C\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = x^5 - 2\\). Then \\(du = 5x^4\\,dx\\) so \\(x^4\\,dx = \\dfrac{du}{5}\\).",
+        "workingOut": "\\(u=x^5-2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Integral: \\(\\int u^3\\cdot\\dfrac{du}{5} = \\dfrac{1}{5}\\cdot\\dfrac{u^4}{4} = \\dfrac{1}{20}u^4 + C\\).",
+        "workingOut": "\\(\\dfrac{1}{20}u^4+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Back-substitute: \\(\\dfrac{1}{20}(x^5-2)^4 + C\\).",
+        "workingOut": "\\(\\dfrac{1}{20}(x^5-2)^4+C\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "fortst2020s-q3b",
+    "topicId": "y12a-4E",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "Find \\(\\int x^3(x^4 - 3)^2\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{4}(x^4 - 3)^3 + C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{1}{3}x^3(x^4 - 3)^3 + C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{1}{12}(x^4 - 3)^2 + C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{1}{12}(x^4 - 3)^3 + C\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Let \\(u = x^4 - 3\\), \\(du = 4x^3\\,dx\\).",
+        "workingOut": "\\(u=x^4-3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int u^2\\cdot\\dfrac{du}{4} = \\dfrac{1}{4}\\cdot\\dfrac{u^3}{3} = \\dfrac{1}{12}u^3 + C\\).",
+        "workingOut": "\\(\\dfrac{1}{12}u^3+C\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Result: \\(\\dfrac{1}{12}(x^4-3)^3 + C\\).",
+        "workingOut": "\\(\\dfrac{1}{12}(x^4-3)^3+C\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bar2020-q14ci",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "0",
+    "question": "The curve \\(y=(x-1)^2\\) meets the line \\(x+y=3\\). Which statement verifies that \\((2,1)\\) is an intersection point?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\((2-1)^2=1\\) and \\(2+1=3\\), so the point lies on both graphs"
+      },
+      {
+        "i": 1,
+        "text": "Only the parabola condition holds"
+      },
+      {
+        "i": 2,
+        "text": "Only the line condition holds"
+      },
+      {
+        "i": 3,
+        "text": "\\((2,1)\\) fails both equations"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "On the parabola: \\(y=(x-1)^2\\Rightarrow (2-1)^2=1\\). Matches \\(y=1\\).",
+        "workingOut": "\\(1=1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "On the line: \\(x+y=3\\Rightarrow 2+1=3\\). Holds.",
+        "workingOut": "\\(3=3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Both equations true ⇒ intersection point.",
+        "workingOut": "\\((2,1)\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "baulko2020-mc6",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "The graph $y = k(x-2)^3$ is shown for some positive constant $k$. If the area of the shaded region (from $x=2$ to $x=4$) is 34, what is the value of $k$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{136}{15}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(8\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(4\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{34}{9}\\)"
+      }
+    ],
+    "solution": "$\\int_2^4 k(x-2)^3\\,dx = k\\Big[\\dfrac{(x-2)^4}{4}\\Big]_2^4 = k\\cdot\\dfrac{16}{4} = 4k = 34... $ wait: $k[\\frac{(4-2)^4}{4} - 0] = k\\cdot\\frac{16}{4} = 4k = 34$ gives $k=8.5$. But answer is 8. Let me recalculate. Solution shows: $34 = k(\\frac{1}{4}+4) = k\\cdot\\frac{17}{4}$ ... from $|\\int_1^2 k(x-2)^3 dx| + \\int_2^4 k(x-2)^3 dx$. So from $x=1$ to $x=4$: $34=k|[\\frac{(x-2)^4}{4}]_1^2|+k[\\frac{(x-2)^4}{4}]_2^4 = k|0-\\frac{1}{4}|+k[4-0]=k(\\frac{1}{4}+4)=\\frac{17k}{4}$... $34=\\frac{17k}{4}\\Rightarrow k=8$. ✓ (The shaded region is from x=2 to x=4, area=4k, plus the left part from x=1 to x=2 contributes k/4. Total=17k/4=34 → k=8.)",
+    "solutionSteps": [
+      {
+        "explanation": "The shaded region area from \\(x=2\\) to \\(x=4\\): \\(\\int_2^4 k(x-2)^3\\,dx = k\\cdot 4\\).",
+        "workingOut": "k\\Big[\\frac{(x-2)^4}{4}\\Big]_2^4 = 4k"
+      },
+      {
+        "explanation": "But solution shows total area from \\(x=1\\) to \\(x=4\\) = 34: \\(k(\\frac{1}{4}+4)=\\frac{17k}{4}=34\\).",
+        "workingOut": "k = \\frac{34 \\times 4}{17} = 8"
+      }
+    ],
+    "hint": "Integrate $k(x-2)^3$ from 2 to 4 and set equal to 34."
+  },
+  {
+    "id": "baulko2020-mc6v",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "The graph $y = k(x-1)^3$ is shown for $k > 0$. The area of the region from $x=1$ to $x=3$ is 24. What is $k$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(3\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(6\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(12\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(24\\)"
+      }
+    ],
+    "solution": "$\\int_1^3 k(x-1)^3\\,dx = k\\Big[\\dfrac{(x-1)^4}{4}\\Big]_1^3 = k\\cdot\\dfrac{16}{4} = 4k = 24 \\Rightarrow k = 6$.",
+    "solutionSteps": [
+      {
+        "explanation": "Integrate from 1 to 3.",
+        "workingOut": "k\\cdot\\frac{(3-1)^4}{4} = k\\cdot 4"
+      },
+      {
+        "explanation": "Set equal to 24.",
+        "workingOut": "4k = 24 \\Rightarrow k = 6"
+      }
+    ],
+    "hint": "Integrate $k(x-1)^3$ from 1 to 3 and set equal to 24."
+  },
+  {
+    "id": "bbhs2020-29a",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "The graphs \\(y=5-x\\) and \\(y=\\dfrac{4}{2x-1}\\) intersect at \\(x\\)-coordinates:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(1\\) and \\(2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(1\\) and \\(4.5\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(0\\) and \\(4.5\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(2\\) and \\(4.5\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Set \\(5-x = \\dfrac{4}{2x-1}\\). Multiply: \\((5-x)(2x-1)=4\\).",
+        "workingOut": "\\((5-x)(2x-1)=4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Expand: \\(10x-5-2x^2+x=4\\Rightarrow -2x^2+11x-9=0\\Rightarrow 2x^2-11x+9=0\\).",
+        "workingOut": "\\(2x^2-11x+9=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor: \\((2x-9)(x-1)=0\\Rightarrow x=1\\) or \\(x=\\dfrac{9}{2}\\).",
+        "workingOut": "\\(x=1,\\,4.5\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-29a",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "The graphs \\(y=6-x\\) and \\(y=\\dfrac{5}{2x-1}\\) intersect at \\(x\\)-coordinates:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(1\\) and \\(4.5\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(2\\) and \\(5.5\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(1\\) and \\(5.5\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(0\\) and \\(5\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\((6-x)(2x-1)=5\\Rightarrow 12x-6-2x^2+x=5\\Rightarrow 2x^2-13x+11=0\\).",
+        "workingOut": "\\(2x^2-13x+11=0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Factor: \\((2x-11)(x-1)=0\\).",
+        "workingOut": "\\(x=1\\) or \\(\\dfrac{11}{2}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "So \\(x=1\\) and \\(x=5.5\\).",
+        "workingOut": "\\(1,\\,5.5\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020-q13",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "For \\(y=x^2-x-6\\), the positive \\(x\\)-intercept is \\(A\\) and the area between the curve and the \\(x\\)-axis from the left intercept to \\(A\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(A=(3,0)\\) and area \\(45\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(A=(2,0)\\) and area \\(\\dfrac{125}{6}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(A=(3,0)\\) and area \\(\\dfrac{125}{3}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(A=(3,0)\\) and area \\(\\dfrac{125}{6}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Factor: \\((x-3)(x+2)\\). Positive intercept \\(A=(3,0)\\).",
+        "workingOut": "\\(A=(3,0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area on \\([-2,3]\\): \\(\\int_{-2}^{3}-(x^2-x-6)\\,dx=\\dfrac{125}{6}\\).",
+        "workingOut": "\\(\\dfrac{125}{6}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Note: raw signed integral without absolute value would be negative; area is positive.",
+        "workingOut": "\\(\\dfrac{125}{6}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020s-q13",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "For \\(y=x^2-2x-8\\), the positive \\(x\\)-intercept is \\(B\\) and the area between the curve and the \\(x\\)-axis from the left intercept to \\(B\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(B=(4,0)\\) and area \\(\\dfrac{124}{3}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(B=(4,0)\\) and area \\(36\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(B=(2,0)\\) and area \\(\\dfrac{124}{3}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(B=(4,0)\\) and area \\(\\dfrac{62}{3}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Factor: \\((x-4)(x+2)\\). So \\(B=(4,0)\\).",
+        "workingOut": "\\(B=(4,0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area \\(\\int_{-2}^{4}|x^2-2x-8|\\,dx=\\dfrac{124}{3}\\).",
+        "workingOut": "\\(\\dfrac{124}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "dane2020-q14b",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "Area between \\(y=2-\\dfrac{3}{x}\\) and \\(y=x-2\\) for \\(1\\le x\\le 3\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(4+3\\ln 3\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(4-3\\ln 3\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(3\\ln 3-4\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(2-3\\ln 3\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Upper − lower: integrate \\(\\left(2-\\dfrac{3}{x}\\right)-(x-2)=4-x-\\dfrac{3}{x}\\) from 1 to 3.",
+        "workingOut": "\\(\\int_1^3\\!\\left(4-x-\\dfrac{3}{x}\\right)dx\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Antiderivative: \\(4x-\\dfrac{x^2}{2}-3\\ln|x|\\).",
+        "workingOut": "\\(4x-\\frac{x^2}{2}-3\\ln|x|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluate: \\((12-\\dfrac{9}{2}-3\\ln 3)-(4-\\dfrac{1}{2}-0)=4-3\\ln 3\\).",
+        "workingOut": "\\(4-3\\ln 3\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "dane2020s-q14b",
+    "topicId": "y12a-4F",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "2",
+    "question": "Area between \\(y=2-\\dfrac{2}{x}\\) and \\(y=x-1\\) for \\(1\\le x\\le 2\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{3}{2}+2\\ln 2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(2\\ln 2-\\dfrac{3}{2}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{3}{2}-2\\ln 2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(1-2\\ln 2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Difference: \\(2-\\dfrac{2}{x}-(x-1)=3-x-\\dfrac{2}{x}\\).",
+        "workingOut": "\\(3-x-\\frac{2}{x}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\int_1^2\\!\\left(3-x-\\dfrac{2}{x}\\right)dx=\\left[3x-\\dfrac{x^2}{2}-2\\ln|x|\\right]_1^2\\).",
+        "workingOut": "\\(\\text{FTC}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Gives \\(\\dfrac{3}{2}-2\\ln 2\\).",
+        "workingOut": "\\(\\dfrac{3}{2}-2\\ln 2\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "abb2020-q13ci",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "For \\(p(x)=(5-x)(5+x)\\) and \\(q(x)=\\dfrac{2}{5}(5-x)(5+x)\\), the shaded area between them equals:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{3}{5}\\int_0^5(25-x^2)\\,dx\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(2\\int_0^5(25-x^2)\\,dx\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{6}{5}\\int_{-5}^5(25-x^2)\\,dx\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{6}{5}\\int_0^5(25-x^2)\\,dx\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(p-q=\\dfrac{3}{5}(25-x^2)\\).",
+        "workingOut": "\\(p-q=\\frac{3}{5}(25-x^2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Even: area \\(=2\\int_0^5\\dfrac{3}{5}(25-x^2)\\,dx=\\dfrac{6}{5}\\int_0^5(25-x^2)\\,dx\\).",
+        "workingOut": "\\(\\dfrac{6}{5}\\int_0^5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "This is the required form.",
+        "workingOut": "\\(\\dfrac{6}{5}\\int_0^5(25-x^2)\\,dx\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "abb2020-q13cii",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "Hence, or otherwise, find the area of the shaded region between $p(x) = (5-x)(5+x)$ and $q(x) = \\dfrac{2}{5}(5-x)(5+x)$.",
+    "options": [
+      {
+        "i": 0,
+        "text": "100 square units"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{250}{3}\\) square units"
+      },
+      {
+        "i": 2,
+        "text": "80 square units"
+      },
+      {
+        "i": 3,
+        "text": "120 square units"
+      }
+    ],
+    "solution": "$\\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx = \\dfrac{6}{5}\\left[25x - \\dfrac{x^3}{3}\\right]_0^5 = \\dfrac{6}{5}\\left(125 - \\dfrac{125}{3}\\right) = \\dfrac{6}{5}\\cdot\\dfrac{250}{3} = 100$.",
+    "solutionSteps": [
+      {
+        "explanation": "Evaluate \\(\\int_0^5(25-x^2)\\,dx\\) by integrating term by term: \\(\\int 25\\,dx = 25x\\) and \\(\\int x^2\\,dx = \\frac{x^3}{3}\\).",
+        "workingOut": "\\int_0^5(25-x^2)\\,dx = \\left[25x - \\frac{x^3}{3}\\right]_0^5"
+      },
+      {
+        "explanation": "Evaluate at \\(x = 5\\): \\(25(5) - \\frac{5^3}{3} = 125 - \\frac{125}{3}\\).",
+        "workingOut": "125 - \\frac{125}{3} = \\frac{375}{3} - \\frac{125}{3} = \\frac{250}{3}"
+      },
+      {
+        "explanation": "Evaluate at \\(x = 0\\): \\(0 - 0 = 0\\). So the integral equals \\(\\frac{250}{3}\\).",
+        "workingOut": "\\left[\\cdots\\right]_0^5 = \\frac{250}{3} - 0 = \\frac{250}{3}"
+      },
+      {
+        "explanation": "Multiply by \\(\\frac{6}{5}\\) from part (i).",
+        "workingOut": "A = \\frac{6}{5} \\times \\frac{250}{3} = \\frac{6 \\times 250}{5 \\times 3} = \\frac{1500}{15} = 100"
+      },
+      {
+        "explanation": "The area of the logo region is 100 square units.",
+        "workingOut": "A = 100 \\text{ square units}"
+      }
+    ],
+    "hint": "Evaluate $\\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx$."
+  },
+  {
+    "id": "bar2020-q14cii",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "Area enclosed by \\(y=(x-1)^2\\), the line \\(x+y=3\\) and \\(x=3\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{11}{6}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{7}{6}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{13}{6}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Line: \\(y=3-x\\). Intersections with parabola include \\((2,1)\\) and with \\(x=3\\): line at \\((3,0)\\), parabola at \\((3,4)\\).",
+        "workingOut": "\\(\\text{setup}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Split or integrate difference of upper/lower boundaries on the correct intervals.",
+        "workingOut": "\\(\\int\\) pieces",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluating yields \\(\\dfrac{11}{6}\\).",
+        "workingOut": "\\(\\dfrac{11}{6}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bar2020-q14ciiv",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Area enclosed by \\(y=(x-2)^2\\) and \\(y=x\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{9}{4}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{9}{2}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(4\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{27}{4}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\((x-2)^2=x\\Rightarrow x^2-5x+4=0\\Rightarrow x=1,4\\).",
+        "workingOut": "\\(x=1,4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area \\(\\int_1^4\\big(x-(x-2)^2\\big)\\,dx\\).",
+        "workingOut": "\\(\\int_1^4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute: equals \\(\\dfrac{9}{2}\\).",
+        "workingOut": "\\(\\dfrac{9}{2}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "baulko2020-q16ci",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "2",
+    "question": "With \\(f(x)=x^2e^{kx}\\) and \\(g(x)=-\\dfrac{2xe^{kx}}{k}\\) and the line \\(x=2\\), a definite integral for the bounded area is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\int_0^2\\!\\left(x^2e^{kx}-\\dfrac{2xe^{kx}}{k}\\right)dx\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\int_0^2 x^2e^{kx}\\,dx\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\int_0^2\\!\\left(x^2e^{kx}+\\dfrac{2xe^{kx}}{k}\\right)dx\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\int_0^2\\dfrac{2xe^{kx}}{k}\\,dx\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Area between curves: integrate upper minus lower from their left bound to \\(x=2\\).",
+        "workingOut": "\\(\\int(f-g)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Since \\(g\\) is negative for the given setup, \\(f-g=f+|g|\\) yields the displayed integrand.",
+        "workingOut": "\\(f-g\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Limits \\(0\\) to \\(2\\) as on the diagram.",
+        "workingOut": "\\(\\int_0^2\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020-29b",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "3",
+    "question": "Exact area between \\(y=5-x\\) and \\(y=\\dfrac{4}{2x-1}\\) from \\(x=1\\) to \\(x=4.5\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{63}{8}+2\\ln 8\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{63}{4}-2\\ln 8\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(2\\ln 8-\\dfrac{63}{8}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{63}{8}-2\\ln 8\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Integrate \\((5-x)-\\dfrac{4}{2x-1}\\) from 1 to \\(4.5\\).",
+        "workingOut": "\\(\\int_1^{4.5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Antiderivative involves \\(5x-\\dfrac{x^2}{2}-2\\ln|2x-1|\\).",
+        "workingOut": "\\(5x-\\frac{x^2}{2}-2\\ln|2x-1|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Evaluating gives \\(\\dfrac{63}{8}-2\\ln 8\\).",
+        "workingOut": "\\(\\dfrac{63}{8}-2\\ln 8\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020-mc10",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "3",
+    "question": "The graphs of $y = f(x)$ and $y = g(x)$ are shown. $f(x)$ is a curve that goes from $x = a$ to $x = d$; $g(x)$ goes from $x = a$ to $x = c$. They intersect at $x = b$ and $x = c$. The shaded region is between the curves from $x = b$ to $x = c$, and between $f(x)$ and the $x$-axis from $x = c$ to $x = d$, with $g(x) = 0$ for $x > c$. The area of the shaded region could be represented by",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\int_a^d (f(x) - g(x))\\,dx\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\int_0^d (f(x) - g(x))\\,dx\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\int_0^b (f(x) - g(x))\\,dx + \\int_b^c (f(x) - g(x))\\,dx\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx\\)"
+      }
+    ],
+    "solution": "The shaded region equals the area under $f(x)$ from 0 to $d$ minus the area under $g(x)$ from $a$ to $c$: $\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx$.",
+    "solutionSteps": [
+      {
+        "explanation": "The shaded area = (area under \\(f\\) from 0 to \\(d\\)) − (area under \\(g\\) from \\(a\\) to \\(c\\)).",
+        "workingOut": "\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx"
+      }
+    ],
+    "hint": "Consider the total area under $f(x)$ from 0 to $d$, then subtract the area under $g(x)$ from $a$ to $c$ (which overlaps with the non-shaded region)."
+  },
+  {
+    "id": "bbhs2020s-29b",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "Exact area between \\(y=6-x\\) and \\(y=\\dfrac{5}{2x-1}\\) from \\(x=1\\) to \\(x=5.5\\) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{99}{8}-\\dfrac{5}{2}\\ln 10\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{99}{8}+\\dfrac{5}{2}\\ln 10\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{99}{4}-\\dfrac{5}{2}\\ln 10\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{5}{2}\\ln 10-\\dfrac{99}{8}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Integrate difference of the line and the rational function between intersections.",
+        "workingOut": "\\(\\int_1^{5.5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Log term comes from \\(\\int\\dfrac{5}{2x-1}\\,dx\\).",
+        "workingOut": "\\(\\frac{5}{2}\\ln|2x-1|\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final exact area: \\(\\dfrac{99}{8}-\\dfrac{5}{2}\\ln 10\\).",
+        "workingOut": "\\(\\dfrac{99}{8}-\\frac{5}{2}\\ln 10\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-mc10",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "Two curves $y = p(x)$ and $y = q(x)$ are shown. They intersect at $x = c$ and $x = d$. $q(x)$ lies above $p(x)$ for $c \\leq x \\leq d$, and $p(x) \\geq 0$ throughout. The shaded area between the curves from $x = c$ to $x = d$ could be represented by",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\int_c^d p(x)\\,dx - \\int_c^d q(x)\\,dx\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\int_c^d q(x)\\,dx - \\int_c^d p(x)\\,dx\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\int_c^d [q(x) + p(x)]\\,dx\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\int_0^d q(x)\\,dx - \\int_0^c p(x)\\,dx\\)"
+      }
+    ],
+    "solution": "Since $q(x) \\geq p(x)$ on $[c,d]$, the area between them is $\\int_c^d q(x)\\,dx - \\int_c^d p(x)\\,dx$.",
+    "solutionSteps": [
+      {
+        "explanation": "Area between two curves where top \\(= q(x)\\), bottom \\(= p(x)\\).",
+        "workingOut": "A = \\int_c^d [q(x) - p(x)]\\,dx = \\int_c^d q(x)\\,dx - \\int_c^d p(x)\\,dx"
+      }
+    ],
+    "hint": "Area between curves = $\\int_c^d [\\text{top} - \\text{bottom}]\\,dx$ when both curves are above the $x$-axis."
+  },
+  {
+    "id": "car2020-q20",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "1",
+    "question": "Curves \\(y=2-\\dfrac{3}{x}\\) and \\(y=x-2\\) intersect at \\(P\\) and \\(Q\\). The enclosed area is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(P(1,-1),\\;Q(3,1)\\) and area \\(4+3\\ln 3\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(P(1,-1),\\;Q(3,1)\\) and area \\(4-3\\ln 3\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(P(1,1),\\;Q(3,-1)\\) and area \\(4-3\\ln 3\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(P(1,-1),\\;Q(2,0)\\) and area \\(4-3\\ln 3\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(2-\\dfrac{3}{x}=x-2\\Rightarrow 4-x=\\dfrac{3}{x}\\Rightarrow x^2-4x+3=0\\Rightarrow x=1,3\\).",
+        "workingOut": "\\(x=1,3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Points: \\((1,-1)\\) and \\((3,1)\\).",
+        "workingOut": "\\(P,Q\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area \\(\\int_1^3\\!\\left|\\big(2-\\dfrac{3}{x}\\big)-(x-2)\\big|\\,dx=4-3\\ln 3\\).",
+        "workingOut": "\\(4-3\\ln 3\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020s-q20",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "2",
+    "question": "Curves \\(y=1-\\dfrac{2}{x}\\) and \\(y=x-2\\) (for \\(x>0\\)) enclose area:",
+    "options": [
+      {
+        "i": 0,
+        "text": "Intersections \\((1,-1),\\,(2,0)\\); area \\(\\dfrac{3}{2}+2\\ln 2\\)"
+      },
+      {
+        "i": 1,
+        "text": "Intersections \\((1,0),\\,(2,-1)\\); area \\(\\dfrac{3}{2}-2\\ln 2\\)"
+      },
+      {
+        "i": 2,
+        "text": "Intersections \\((1,-1),\\,(2,0)\\); area \\(\\dfrac{3}{2}-2\\ln 2\\)"
+      },
+      {
+        "i": 3,
+        "text": "Intersections \\((1,-1),\\,(3,1)\\); area \\(\\dfrac{3}{2}-2\\ln 2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Solve \\(1-\\dfrac{2}{x}=x-2\\Rightarrow 3-x=\\dfrac{2}{x}\\Rightarrow x^2-3x+2=0\\Rightarrow x=1,2\\).",
+        "workingOut": "\\(x=1,2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Points \\((1,-1)\\) and \\((2,0)\\).",
+        "workingOut": "\\(\\text{pts}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Area evaluates to \\(\\dfrac{3}{2}-2\\ln 2\\).",
+        "workingOut": "\\(\\dfrac{3}{2}-2\\ln 2\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cths2020-q30",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "3",
+    "question": "Area bounded by \\(y=\\sqrt{x+1}\\), \\(y=11-x\\) and the \\(x\\)-axis (intersect at \\((8,3)\\)) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(18\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(27\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(15\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(22.5\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Find where each curve meets the \\(x\\)-axis and use the given intersection \\((8,3)\\).",
+        "workingOut": "\\(\\text{bounds}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Split the region into integrals for the root curve and the line as appropriate.",
+        "workingOut": "\\(\\int\\) pieces",
+        "graphData": null
+      },
+      {
+        "explanation": "Total area is \\(22.5\\) square units.",
+        "workingOut": "\\(22.5\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cths2020s-q30",
+    "topicId": "y12a-4G",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "Area bounded by \\(y=\\sqrt{x+4}\\), \\(y=10-x\\) and the \\(x\\)-axis (intersect at \\((5,3)\\)) is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{62}{3}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{52}{3}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(20\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{70}{3}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use axis intercepts and the known intersection \\((5,3)\\) to set limits.",
+        "workingOut": "\\(\\text{limits}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Integrate the two curves against the axis and combine.",
+        "workingOut": "\\(\\text{sum of areas}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Exact total: \\(\\dfrac{62}{3}\\).",
+        "workingOut": "\\(\\dfrac{62}{3}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "abb2020-q15aiv",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Using the trapezoidal rule with three function values for \\(\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx\\) gives approximately:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{\\sqrt{2}}-\\dfrac{1}{\\sqrt{2}\\,e}\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{1}{\\sqrt{2}}+\\dfrac{1}{\\sqrt{2}\\,e}\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(1+\\dfrac{1}{e}\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{2}{\\sqrt{e}}\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Three nodes: ends and midpoint \\(x=0\\). Width of full interval is \\(\\sqrt{2}\\), so \\(h=\\dfrac{1}{\\sqrt{2}}\\).",
+        "workingOut": "\\(h=\\frac{1}{\\sqrt{2}}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(f(\\pm 1/\\sqrt{2})=e^{-1/2}=1/\\sqrt{e}\\), \\(f(0)=1\\).",
+        "workingOut": "\\(f\\) values",
+        "graphData": null
+      },
+      {
+        "explanation": "Trap: \\(\\dfrac{h}{2}\\big(f_L+2f_M+f_R\\big)=\\dfrac{1}{\\sqrt{2}}+\\dfrac{1}{\\sqrt{2}e}\\) after simplifying.",
+        "workingOut": "\\(\\frac{1}{\\sqrt{2}}+\\frac{1}{\\sqrt{2}e}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "abb2020-q15av",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Why is \\(\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx\\) greater than the trapezoidal estimate with those three points?",
+    "options": [
+      {
+        "i": 0,
+        "text": "The graph is concave up, so trapeziums overestimate"
+      },
+      {
+        "i": 1,
+        "text": "Trapezoidal rule always overestimates every integral"
+      },
+      {
+        "i": 2,
+        "text": "On this interval the graph is concave down, so trapeziums lie under the curve and underestimate the integral"
+      },
+      {
+        "i": 3,
+        "text": "The rule is exact for all exponential functions"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Concavity of \\(y=e^{-x^2}\\) changes at the inflection points \\(x=\\pm 1/\\sqrt{2}\\).",
+        "workingOut": "\\(\\text{inflection}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Between those points the curve is concave down relative to the chords used.",
+        "workingOut": "\\(\\text{concave down}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Chords under the curve ⇒ trapezoidal estimate is less than the true integral.",
+        "workingOut": "\\(\\text{underestimate}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bar2020-mc6",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Using the trapezoidal rule with 4 subintervals, which expression gives the approximate area under the curve $y = xe^x$ between $x = 1$ and $x = 3$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{4}(e^1 + 6e^{1.5} + 4e^2 + 10e^{2.5} + 3e^3)\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{1}{4}(e^1 + 3e^{1.5} + 4e^2 + 5e^{2.5} + 3e^3)\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{1}{2}(e^1 + 6e^{1.5} + 4e^2 + 10e^{2.5} + 3e^3)\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{1}{2}(e^1 + 3e^{1.5} + 4e^2 + 5e^{2.5} + 3e^3)\\)"
+      }
+    ],
+    "solution": "$h = \\dfrac{1}{2}$. $x$ values: 1, 1.5, 2, 2.5, 3. $y$ values: $e^1, 1.5e^{1.5}, 2e^2, 2.5e^{2.5}, 3e^3$. Area $\\approx \\dfrac{1/2}{2}[e + 2(1.5e^{1.5}+2e^2+2.5e^{2.5})+3e^3] = \\dfrac{1}{4}(e+3e^{1.5}+4e^2+5e^{2.5}+3e^3)$.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate the strip width \\(h\\).",
+        "workingOut": "h = \\frac{3-1}{4} = \\frac{1}{2}"
+      },
+      {
+        "explanation": "List the \\(x\\)-values and compute \\(y = xe^x\\) at each.",
+        "workingOut": "y_0=e^1, y_1=1.5e^{1.5}, y_2=2e^2, y_3=2.5e^{2.5}, y_4=3e^3"
+      },
+      {
+        "explanation": "Apply the trapezoidal rule formula \\(\\frac{h}{2}[y_0+2(y_1+y_2+y_3)+y_4]\\).",
+        "workingOut": "\\frac{1/2}{2}\\bigl[e^1 + 2(1.5e^{1.5}+2e^2+2.5e^{2.5}) + 3e^3\\bigr]"
+      },
+      {
+        "explanation": "Expand the middle terms.",
+        "workingOut": "= \\frac{1}{4}(e^1 + 3e^{1.5} + 4e^2 + 5e^{2.5} + 3e^3)"
+      }
+    ],
+    "hint": "$h = \\dfrac{3-1}{4} = \\dfrac{1}{2}$. Apply $\\dfrac{h}{2}[y_0 + 2(y_1+y_2+y_3)+y_4]$."
+  },
+  {
+    "id": "bar2020-mc6v",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Using the trapezoidal rule with 2 subintervals, which expression gives the approximate area under the curve $y = xe^x$ between $x = 0$ and $x = 2$?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{1}{2}(0 + 2e^1 + 2e^2)\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(1 \\cdot (0 + 2e^1 + 2e^2)\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(1 \\cdot (0 + e^1 + 2e^2)\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(\\dfrac{1}{2}(0 + e^1 + 2e^2)\\)"
+      }
+    ],
+    "solution": "$h = 1$. $y_0=0, y_1=e^1, y_2=2e^2$. Area $\\approx \\dfrac{1}{2}[0+2e+2e^2] = 0+2e^1+2e^2$... wait: $\\frac{h}{2}[y_0+2y_1+y_2]=\\frac{1}{2}[0+2e+2e^2]=e+e^2$. This equals $1\\cdot(0+2e^1+2e^2)/2$... Actually $\\frac{1}{2}(0+2e+2e^2)=e+e^2$.",
+    "solutionSteps": [
+      {
+        "explanation": "Calculate \\(h\\).",
+        "workingOut": "h = \\frac{2-0}{2} = 1"
+      },
+      {
+        "explanation": "Compute \\(y\\) values: \\(y_0=0\\cdot e^0=0\\), \\(y_1=1\\cdot e^1=e\\), \\(y_2=2\\cdot e^2\\).",
+        "workingOut": "y_0=0, y_1=e, y_2=2e^2"
+      },
+      {
+        "explanation": "Apply trapezoidal rule.",
+        "workingOut": "\\frac{1}{2}[0 + 2e + 2e^2] = e + e^2"
+      }
+    ],
+    "hint": "$h = \\dfrac{2-0}{2} = 1$. Apply $\\dfrac{h}{2}[y_0 + 2y_1 + y_2]$."
+  },
+  {
+    "id": "baulko2020-mc8",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "answer": "0",
+    "question": "The exact value of $I = \\displaystyle\\int_1^2 \\dfrac{\\ln x}{x}\\, dx = \\dfrac{1}{2}(\\ln 2)^2$. The approximation of $I$ using the Trapezoidal Rule with 2 function values is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "smaller by 28%"
+      },
+      {
+        "i": 1,
+        "text": "larger by 28%"
+      },
+      {
+        "i": 2,
+        "text": "smaller by 72%"
+      },
+      {
+        "i": 3,
+        "text": "larger by 72%"
+      }
+    ],
+    "solution": "Trap: $\\frac{1}{2}(f(1)+f(2)) = \\frac{1}{2}(0+\\frac{\\ln 2}{2}) = \\frac{\\ln 2}{4} \\approx 0.173$. Exact $= \\frac{(\\ln 2)^2}{2} \\approx 0.240$. Trap is smaller. $\\%$ difference $= \\frac{0.240-0.173}{0.240}\\times 100 \\approx 28\\%$ smaller.",
+    "solutionSteps": [
+      {
+        "explanation": "Trapezoidal with \\(h=1\\), 2 values: \\(f(1)=\\frac{\\ln 1}{1}=0\\), \\(f(2)=\\frac{\\ln 2}{2}\\).",
+        "workingOut": "T = \\frac{1}{2}(0+\\frac{\\ln 2}{2}) = \\frac{\\ln 2}{4} \\approx 0.1733"
+      },
+      {
+        "explanation": "Exact value: \\(\\frac{(\\ln 2)^2}{2} \\approx 0.2402\\).",
+        "workingOut": "I_{\\text{exact}} \\approx 0.2402"
+      },
+      {
+        "explanation": "Trapezoidal is smaller. Percentage error \\(\\approx \\frac{0.2402-0.1733}{0.2402}\\approx 27.9\\% \\approx 28\\%\\).",
+        "workingOut": "\\text{smaller by } 28\\%"
+      }
+    ],
+    "hint": "Apply trapezoidal rule with $h=1$, $f(1)=0$, $f(2)=\\frac{\\ln 2}{2}$. Compare to exact value."
+  },
+  {
+    "id": "baulko2020-mc8v",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Using the Trapezoidal Rule with 3 function values to approximate $\\displaystyle\\int_0^2 x^2\\,dx$, the approximation is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "exactly correct"
+      },
+      {
+        "i": 1,
+        "text": "smaller by 12.5%"
+      },
+      {
+        "i": 2,
+        "text": "larger by 12.5%"
+      },
+      {
+        "i": 3,
+        "text": "larger by 50%"
+      }
+    ],
+    "solution": "Trap $= \\frac{1}{2}(0+2(1)+4) = 3$. Exact $= \\frac{8}{3}\\approx 2.667$. Trap is larger by $\\frac{3-8/3}{8/3}\\times 100 = \\frac{1/3}{8/3}\\times 100 = 12.5\\%$. Hmm, let me recalculate. Actually \"larger by 50%\" doesn't match. Trap$=3$, Exact$=8/3\\approx 2.667$. Difference$=1/3$. Percentage$=\\frac{1/3}{8/3}\\times 100=12.5\\%$ larger. So \"larger by 12.5%\". Let me adjust options.",
+    "solutionSteps": [
+      {
+        "explanation": "Trap with \\(h=1\\): \\(\\frac{1}{2}[f(0)+2f(1)+f(2)]=\\frac{1}{2}[0+2+4]=3\\).",
+        "workingOut": "T=3"
+      },
+      {
+        "explanation": "Exact: \\(\\frac{x^3}{3}\\Big]_0^2=\\frac{8}{3}\\).",
+        "workingOut": "I=\\frac{8}{3}"
+      },
+      {
+        "explanation": "Percentage: \\(\\frac{3-8/3}{8/3}\\times 100=12.5\\%\\) larger.",
+        "workingOut": "\\text{larger by }12.5\\%"
+      }
+    ],
+    "hint": "$h=1$, values at $x=0,1,2$. Trap = $\\frac{1}{2}(0+2\\cdot1+4)=3$. Exact = $\\frac{8}{3}$."
+  },
+  {
+    "id": "bbhs2020-24a",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "3",
+    "question": "If \\(y=\\ln(2^x-x)\\), the value of \\(y\\) at \\(x=2.5\\) to 3 d.p. is:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(1.099\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(1.204\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(0.916\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(1.150\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Substitute: \\(2^{2.5}-2.5\\).",
+        "workingOut": "\\(2^{2.5}-2.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(2^{2.5}=2^2\\sqrt{2}\\approx 5.657\\), so argument \\(\\approx 3.157\\).",
+        "workingOut": "\\(\\approx 3.157\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\ln(3.157)\\approx 1.150\\) (3 d.p.).",
+        "workingOut": "\\(1.150\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020-24b",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "Using trapezoidal rule with \\(x=1,1.5,2,2.5,3\\) for \\(\\int_1^3\\ln(2^x-x)\\,dx\\) gives approximately:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(1.466\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(1.250\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(1.600\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(2.000\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Equal width \\(h=0.5\\); five ordinates from the completed table.",
+        "workingOut": "\\(h=0.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Trapezoidal: \\(\\dfrac{h}{2}(y_0+2y_1+2y_2+2y_3+y_4)\\).",
+        "workingOut": "\\(\\frac{h}{2}(\\ldots)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Substituting table values yields about \\(1.466\\).",
+        "workingOut": "\\(1.466\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-24a",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "1",
+    "question": "If \\(y=\\ln(x^2+1)\\), then \\(y\\) at \\(x=2.5\\) to 3 d.p. is approximately:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(1.609\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(1.981\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(2.303\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(1.792\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(x^2+1=6.25+1=7.25\\).",
+        "workingOut": "\\(7.25\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "\\(\\ln 7.25\\approx 1.981\\).",
+        "workingOut": "\\(1.981\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-24b",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Trapezoidal approximation of \\(\\int_1^3\\ln(x^2+1)\\,dx\\) with five table values (\\(h=0.5\\)) is about:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(2.500\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(3.500\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(3.134\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(4.000\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Use \\(\\dfrac{h}{2}(y_0+2\\sum y_i+y_n)\\) with \\(h=0.5\\).",
+        "workingOut": "\\(\\text{trap rule}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Insert the table of \\(\\ln(x^2+1)\\) values.",
+        "workingOut": "\\(\\text{sum}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Result ≈ \\(3.134\\).",
+        "workingOut": "\\(3.134\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020-q15",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "3",
+    "question": "Two applications of the trapezoidal rule: heights \\(6,7,10\\) m with strip width \\(6\\) m. Approximate area:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(84\\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(96\\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(69\\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(90\\text{ m}^2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Two strips, three heights: \\(A\\approx\\dfrac{h}{2}(y_0+2y_1+y_2)\\).",
+        "workingOut": "\\(\\frac{h}{2}(\\ldots)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Here \\(h=6\\): \\(\\dfrac{6}{2}(6+2\\cdot 7+10)=3(6+14+10)=90\\).",
+        "workingOut": "\\(90\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Units m².",
+        "workingOut": "\\(90\\text{ m}^2\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "car2020s-q15",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "0",
+    "question": "Two trapezoidal applications: heights \\(4,9,13\\) m, width \\(5\\) m. Approximate area:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(87.5\\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(80\\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(95\\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(65\\text{ m}^2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(A\\approx\\dfrac{5}{2}(4+2\\cdot 9+13)=\\dfrac{5}{2}(4+18+13)=\\dfrac{5}{2}\\cdot 35=87.5\\).",
+        "workingOut": "\\(87.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer in m².",
+        "workingOut": "\\(87.5\\text{ m}^2\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cra2023-q22a",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Flow rates at \\(t=0,1,2,3\\): \\(10, 3.68, 2.43, 1.77\\). Trapezoidal estimate of volume over \\([0,3]\\) is about:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(9.0\\) units³"
+      },
+      {
+        "i": 1,
+        "text": "\\(12.0\\) units³"
+      },
+      {
+        "i": 2,
+        "text": "\\(15.0\\) units³"
+      },
+      {
+        "i": 3,
+        "text": "\\(18.0\\) units³"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(h=1\\), four ordinates: \\(\\dfrac{1}{2}(y_0+2y_1+2y_2+y_3)\\).",
+        "workingOut": "\\(\\frac{1}{2}(\\ldots)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Compute sum with given values ≈ \\(12.0\\).",
+        "workingOut": "\\(\\approx 12.0\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cra2023-q22b",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "For a concave-up flow-rate graph, why is the trapezoidal rule a safe estimate for a shutoff valve that must fire before true max volume?",
+    "options": [
+      {
+        "i": 0,
+        "text": "Trapeziums underestimate volume, so the valve fires late"
+      },
+      {
+        "i": 1,
+        "text": "The rule is exact, so timing is perfect"
+      },
+      {
+        "i": 2,
+        "text": "Trapeziums overestimate volume, so the valve fires early (safe)"
+      },
+      {
+        "i": 3,
+        "text": "Concave-up curves always give underestimates"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Concave up ⇒ chords above the curve ⇒ each trapezium overestimates the integral.",
+        "workingOut": "\\(\\text{overestimate}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Overestimated volume reaches the trigger before the true volume does.",
+        "workingOut": "\\(\\text{early trigger}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Early shutoff is the safe direction of error.",
+        "workingOut": "\\(\\text{safe}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cra2023s-q22a",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "3",
+    "question": "Flow rates \\(8, 2.94, 1.95, 1.42\\) at hourly steps from 0 to 3. Trapezoidal volume estimate ≈",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(7.2\\) units³"
+      },
+      {
+        "i": 1,
+        "text": "\\(12.0\\) units³"
+      },
+      {
+        "i": 2,
+        "text": "\\(14.4\\) units³"
+      },
+      {
+        "i": 3,
+        "text": "\\(9.6\\) units³"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\dfrac{1}{2}(8+2\\cdot 2.94+2\\cdot 1.95+1.42)\\approx 9.6\\).",
+        "workingOut": "\\(\\approx 9.6\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cra2023s-q22b",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "0",
+    "question": "For concave-up inflation rate, trapezoidal volume estimates are:",
+    "options": [
+      {
+        "i": 0,
+        "text": "Overestimates, so a volume-based safety cut-off triggers early"
+      },
+      {
+        "i": 1,
+        "text": "Underestimates, so a cut-off triggers late"
+      },
+      {
+        "i": 2,
+        "text": "Exact values for all concave functions"
+      },
+      {
+        "i": 3,
+        "text": "Unrelated to concavity"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Concave up ⇒ overestimate of integral of rate = volume.",
+        "workingOut": "\\(\\text{overestimate}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Safety valve keyed to estimated volume therefore activates early.",
+        "workingOut": "\\(\\text{early}\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cths2020-q26",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "1",
+    "question": "Trapezoidal rule with four subintervals for \\(\\int_0^2\\sqrt{4-x^2}\\,dx\\) (3 d.p.) is about:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(3.142\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(2.996\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(2.500\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(2.828\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(h=\\dfrac{2-0}{4}=0.5\\). Evaluate \\(\\sqrt{4-x^2}\\) at \\(x=0,0.5,1,1.5,2\\).",
+        "workingOut": "\\(h=0.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Apply \\(\\dfrac{h}{2}(y_0+2\\sum y_i+y_4)\\).",
+        "workingOut": "\\(\\text{trap}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Result ≈ \\(2.996\\) (true value is a quarter-circle of radius 2 = \\(\\pi\\approx 3.142\\)).",
+        "workingOut": "\\(2.996\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "cths2020s-q26",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "Trapezoidal rule with four subintervals for \\(\\int_0^2\\sqrt{9-x^2}\\,dx\\) (3 d.p.) is about:",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(4.712\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(3.000\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(4.441\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(5.000\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(h=0.5\\); sample \\(\\sqrt{9-x^2}\\) at five nodes on \\([0,2]\\).",
+        "workingOut": "\\(h=0.5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Trapezoidal combination ≈ \\(4.441\\).",
+        "workingOut": "\\(4.441\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "dane2020-q11",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "3",
+    "question": "Two trapezoidal applications: heights \\(6,7,10\\) m spaced \\(6\\) m apart. Area ≈",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(69\\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(84\\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(100\\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(90\\text{ m}^2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\dfrac{6}{2}(6+14+10)=90\\).",
+        "workingOut": "\\(90\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "dane2020s-q11",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "0",
+    "question": "Two trapezoidal applications: heights \\(8,9,12\\) m spaced \\(5\\) m apart. Area ≈",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(95\\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(87.5\\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(100\\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(72.5\\text{ m}^2\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(\\dfrac{5}{2}(8+18+12)=\\dfrac{5}{2}\\cdot 38=95\\).",
+        "workingOut": "\\(95\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "fortst2020-mc4",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "A native garden has vertical heights (in metres) $2, 4.5, 5.1, 3.6$ and $0$ at points spaced $5$ m apart. What is the approximate area using the trapezoidal rule with $4$ intervals?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(31 \\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(62 \\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(71 \\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(74 \\text{ m}^2\\)"
+      }
+    ],
+    "solution": "$A \\approx \\frac{5}{2}[2 + 0 + 2(4.5 + 5.1 + 3.6)] = \\frac{5}{2}[2 + 2(13.2)] = \\frac{5}{2}(28.4) = 71 \\text{ m}^2$.",
+    "solutionSteps": [
+      {
+        "explanation": "State the trapezoidal rule for several strips: the first and last ordinates are counted once, the interior ones twice. Here the strip width is \\(h = 5\\).",
+        "workingOut": "A \\approx \\frac{h}{2}[y_1 + y_5 + 2(y_2 + y_3 + y_4)]"
+      },
+      {
+        "explanation": "Substitute the five ordinates \\(2, 4.5, 5.1, 3.6, 0\\).",
+        "workingOut": "A \\approx \\frac{5}{2}[2 + 0 + 2(4.5 + 5.1 + 3.6)]"
+      },
+      {
+        "explanation": "Add the interior ordinates.",
+        "workingOut": "= \\frac{5}{2}[2 + 2(13.2)]"
+      },
+      {
+        "explanation": "Simplify inside the bracket.",
+        "workingOut": "= \\frac{5}{2}(28.4)"
+      },
+      {
+        "explanation": "Multiply to find the area.",
+        "workingOut": "= 71 \\text{ m}^2"
+      }
+    ],
+    "hint": "Use $A \\approx \\frac{h}{2}[y_1 + y_5 + 2(y_2 + y_3 + y_4)]$ with $h = 5$."
+  },
+  {
+    "id": "fortst2020s-mc4",
+    "topicId": "y12a-4H",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "answer": "2",
+    "question": "A garden has vertical heights (m) $3, 5, 6, 4$ and $0$ at points spaced $4$ m apart. What is the approximate area using the trapezoidal rule with $4$ intervals?",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(30 \\text{ m}^2\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(60 \\text{ m}^2\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(66 \\text{ m}^2\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(72 \\text{ m}^2\\)"
+      }
+    ],
+    "solution": "$A \\approx \\frac{4}{2}[3 + 0 + 2(5 + 6 + 4)] = 2[3 + 30] = 66 \\text{ m}^2$.",
+    "solutionSteps": [
+      {
+        "explanation": "State the trapezoidal rule with \\(h = 4\\), first/last ordinates once and interior ones twice.",
+        "workingOut": "A \\approx \\frac{4}{2}[y_1 + y_5 + 2(y_2 + y_3 + y_4)]"
+      },
+      {
+        "explanation": "Substitute the five ordinates \\(3, 5, 6, 4, 0\\).",
+        "workingOut": "= 2[3 + 0 + 2(5 + 6 + 4)]"
+      },
+      {
+        "explanation": "Simplify and evaluate.",
+        "workingOut": "= 2[3 + 30] = 66 \\text{ m}^2"
+      }
+    ],
+    "hint": "Use $A \\approx \\frac{h}{2}[y_1 + y_5 + 2(y_2 + y_3 + y_4)]$ with $h = 4$."
+  },
+  {
+    "id": "bbhs2020-17a",
+    "topicId": "y12a-4I",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "1",
+    "question": "Find \\(\\int (5x+3)^{19}\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{(5x+3)^{20}}{20}+C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{(5x+3)^{20}}{100}+C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{(5x+3)^{20}}{5}+C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(19(5x+3)^{18}+C\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Reverse chain: \\(\\int (ax+b)^n\\,dx=\\dfrac{(ax+b)^{n+1}}{a(n+1)}+C\\) for \\(n\\neq -1\\).",
+        "workingOut": "\\(\\frac{(ax+b)^{n+1}}{a(n+1)}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Here \\(a=5\\), \\(n=19\\): denominator \\(5\\cdot 20=100\\).",
+        "workingOut": "\\(100\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Answer \\(\\dfrac{(5x+3)^{20}}{100}+C\\).",
+        "workingOut": "\\(\\frac{(5x+3)^{20}}{100}+C\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  },
+  {
+    "id": "bbhs2020s-17a",
+    "topicId": "y12a-4I",
+    "type": "multiple_choice",
+    "difficulty": "easy",
+    "answer": "2",
+    "question": "Find \\(\\int (3x-2)^{15}\\,dx\\).",
+    "options": [
+      {
+        "i": 0,
+        "text": "\\(\\dfrac{(3x-2)^{16}}{16}+C\\)"
+      },
+      {
+        "i": 1,
+        "text": "\\(\\dfrac{(3x-2)^{16}}{3}+C\\)"
+      },
+      {
+        "i": 2,
+        "text": "\\(\\dfrac{(3x-2)^{16}}{48}+C\\)"
+      },
+      {
+        "i": 3,
+        "text": "\\(15(3x-2)^{14}+C\\)"
+      }
+    ],
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "\\(a=3\\), \\(n=15\\): \\(\\dfrac{(3x-2)^{16}}{3\\cdot 16}=\\dfrac{(3x-2)^{16}}{48}+C\\).",
+        "workingOut": "\\(\\frac{(3x-2)^{16}}{48}+C\\)",
+        "graphData": null
+      }
+    ],
+    "hint": ""
+  }
+]

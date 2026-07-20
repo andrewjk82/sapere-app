@@ -415,9 +415,14 @@ const ChallengeQuizView = ({
                 </span>
               )}
             </div>
+            {/* graph_sketch: graphData is the answer being constructed — hide it
+                until feedback. teacher_review / other requiresManualGrading
+                questions: graphData is normally the GIVEN diagram the question
+                depends on and must render immediately, not only after
+                submitting — do not lump them in with graph_sketch. */}
             <MathView
               content={currentQuestion?.question}
-              graphData={(currentQuestion?.type === 'graph_sketch' || (currentQuestion?.requiresManualGrading && /(draw|sketch|construct)/i.test(currentQuestion?.question || ''))) ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
+              graphData={currentQuestion?.type === 'graph_sketch' ? (isFeedback ? currentQuestion?.graphData : null) : currentQuestion?.graphData}
               style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7, margin: 0 }}
             />
 

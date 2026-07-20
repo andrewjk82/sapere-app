@@ -1,0 +1,23 @@
+[
+  {
+    "id": "38PInmr3psGdNl8YI52m",
+    "chapterId": "y7-4",
+    "topicId": "y7-4a",
+    "changedFields": {
+      "options": {
+        "old": [
+          "$\\frac{1}{2}$",
+          "$\\frac{1}{2}$",
+          "$\\frac{2}{5}$",
+          "$\\frac{4}{2}$"
+        ],
+        "new": [
+          "$\\frac{1}{2}$",
+          "$\\frac{2}{4}$",
+          "$\\frac{2}{5}$",
+          "$\\frac{4}{2}$"
+        ]
+      }
+    }
+  }
+]

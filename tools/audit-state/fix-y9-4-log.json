@@ -1,0 +1,1354 @@
+[
+  {
+    "id": "y9-4a-1a",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(15y\\)",
+          "\\(y\\)",
+          "\\(-y\\)",
+          "\\(225y\\)"
+        ]
+      },
+      "answer": {
+        "old": "y",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15y}{15} = y"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15y = 15 \\times \\dots\\) and need to find the missing factor. Since 15 is already factored out, we find the remaining factor by dividing the original expression by 15.",
+            "workingOut": "\\(15y = 15 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by 15 to isolate the missing factor. Dividing a term by its own numerical coefficient leaves just the variable part.",
+            "workingOut": "\\(\\frac{15y}{15} = y\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(y\\). We can check this is correct by multiplying \\(15 \\times y\\) back together and confirming it equals the original expression \\(15y\\).",
+            "workingOut": "\\(15 \\times y = 15y\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1b",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(b\\)",
+          "\\(30b\\)",
+          "\\(-2b\\)",
+          "\\(2b\\)"
+        ]
+      },
+      "answer": {
+        "old": "2b",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{30b}{15} = 2b"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(30b = 15 \\times \\dots\\) and need to find the missing factor. Since 15 has already been factored out, we divide the original expression by 15 to find what remains.",
+            "workingOut": "\\(30b = 15 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by 15. Note the divisor is 15 (the factor already given), not 30 (the original coefficient) — a common mistake is dividing by the wrong number.",
+            "workingOut": "\\(\\frac{30b}{15} = 2b\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(2b\\). Checking by multiplying \\(15 \\times 2b\\) confirms it equals the original expression \\(30b\\).",
+            "workingOut": "\\(15 \\times 2b = 30b\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1c",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4xy\\)",
+          "\\(48y\\)",
+          "\\(-4y\\)",
+          "\\(4y\\)"
+        ]
+      },
+      "answer": {
+        "old": "4y",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{48xy}{12x} = 4y"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(48xy = 12x \\times \\dots\\) and need to find the missing factor. Since \\(12x\\) has been factored out, we divide the original expression by \\(12x\\), dividing coefficients and cancelling the shared variable \\(x\\).",
+            "workingOut": "\\(48xy = 12x \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(12x\\). The coefficients divide as \\(48 \\div 12 = 4\\), and the \\(x\\) in the numerator cancels completely with the \\(x\\) in \\(12x\\), leaving only \\(y\\).",
+            "workingOut": "\\(\\frac{48xy}{12x} = 4y\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4y\\). Checking by multiplying \\(12x \\times 4y\\) confirms it equals the original expression \\(48xy\\).",
+            "workingOut": "\\(12x \\times 4y = 48xy\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1d",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(3pq\\)",
+          "\\(21p\\)",
+          "\\(-3p\\)",
+          "\\(3p\\)"
+        ]
+      },
+      "answer": {
+        "old": "3p",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{21pq}{7q} = 3p"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(21pq = 7q \\times \\dots\\) and need to find the missing factor. Since \\(7q\\) has been factored out, we divide the original expression by \\(7q\\), dividing coefficients and cancelling the shared variable \\(q\\).",
+            "workingOut": "\\(21pq = 7q \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(7q\\). The coefficients divide as \\(21 \\div 7 = 3\\), and the \\(q\\) cancels completely, leaving only \\(p\\).",
+            "workingOut": "\\(\\frac{21pq}{7q} = 3p\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(3p\\). Checking by multiplying \\(7q \\times 3p\\) confirms it equals the original expression \\(21pq\\).",
+            "workingOut": "\\(7q \\times 3p = 21pq\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1e",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(z\\)",
+          "\\(z^2\\)",
+          "\\(-z\\)",
+          "\\(z^3\\)"
+        ]
+      },
+      "answer": {
+        "old": "z",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{z^2}{z} = z"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(z^2 = z \\times \\dots\\) and need to find the missing factor. Since one factor of \\(z\\) has been taken out, we divide the original expression by \\(z\\), which reduces the power by one.",
+            "workingOut": "\\(z^2 = z \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(z\\). Using the index law \\(z^2 \\div z = z^{2-1} = z^1\\), the power reduces from 2 to 1.",
+            "workingOut": "\\(\\frac{z^2}{z} = z\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(z\\). Checking by multiplying \\(z \\times z\\) confirms it equals the original expression \\(z^2\\).",
+            "workingOut": "\\(z \\times z = z^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1f",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(2x^2\\)",
+          "\\(2x\\)",
+          "\\(8x\\)",
+          "\\(-2x\\)"
+        ]
+      },
+      "answer": {
+        "old": "2x",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{8x^2}{4x} = 2x"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(8x^2 = 4x \\times \\dots\\) and need to find the missing factor. Since \\(4x\\) has been factored out, we divide the original expression by \\(4x\\), dividing coefficients and reducing the power of \\(x\\) by one.",
+            "workingOut": "\\(8x^2 = 4x \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(4x\\). The coefficients divide as \\(8 \\div 4 = 2\\), and by the index law \\(x^2 \\div x = x^1\\), the power of \\(x\\) reduces from 2 to 1.",
+            "workingOut": "\\(\\frac{8x^2}{4x} = 2x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(2x\\). Checking by multiplying \\(4x \\times 2x\\) confirms it equals the original expression \\(8x^2\\).",
+            "workingOut": "\\(4x \\times 2x = 8x^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1g",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4m^2\\)",
+          "\\(-4m\\)",
+          "\\(4m\\)",
+          "\\(36m\\)"
+        ]
+      },
+      "answer": {
+        "old": "4m",
+        "new": 2
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{36m^2}{9m} = 4m"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(36m^2 = 9m \\times \\dots\\) and need to find the missing factor. Since \\(9m\\) has been factored out, we divide the original expression by \\(9m\\), dividing coefficients and reducing the power of \\(m\\) by one.",
+            "workingOut": "\\(36m^2 = 9m \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(9m\\). The coefficients divide as \\(36 \\div 9 = 4\\), and by the index law \\(m^2 \\div m = m^1\\), the power reduces from 2 to 1.",
+            "workingOut": "\\(\\frac{36m^2}{9m} = 4m\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4m\\). Checking by multiplying \\(9m \\times 4m\\) confirms it equals the original expression \\(36m^2\\).",
+            "workingOut": "\\(9m \\times 4m = 36m^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1h",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(-5n\\)",
+          "\\(5n\\)",
+          "\\(-5n^2\\)",
+          "\\(-10n\\)"
+        ]
+      },
+      "answer": {
+        "old": "-5n",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{-10n^2}{2n} = -5n"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(-10n^2 = 2n \\times \\dots\\) and need to find the missing factor. Since \\(2n\\) has been factored out, we divide the original expression by \\(2n\\), keeping careful track of the negative sign.",
+            "workingOut": "\\(-10n^2 = 2n \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(2n\\). The coefficients divide as \\(-10 \\div 2 = -5\\) (the negative sign stays with the coefficient), and \\(n^2 \\div n = n\\).",
+            "workingOut": "\\(\\frac{-10n^2}{2n} = -5n\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(-5n\\). Checking by multiplying \\(2n \\times (-5n)\\) confirms it equals the original expression \\(-10n^2\\).",
+            "workingOut": "\\(2n \\times (-5n) = -10n^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1i",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4p^2\\)",
+          "\\(4p\\)",
+          "\\(4pq\\)",
+          "\\(-4p\\)"
+        ]
+      },
+      "answer": {
+        "old": "4p",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{12p^2q}{3pq} = 4p"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(12p^2q = 3pq \\times \\dots\\) and need to find the missing factor. Since \\(3pq\\) has been factored out, we divide the original expression by \\(3pq\\), dividing coefficients and cancelling each shared variable.",
+            "workingOut": "\\(12p^2q = 3pq \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(3pq\\). The coefficients divide as \\(12 \\div 3 = 4\\), \\(p^2 \\div p = p\\), and \\(q\\) cancels completely since it appears to the same power in both.",
+            "workingOut": "\\(\\frac{12p^2q}{3pq} = 4p\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4p\\). Checking by multiplying \\(3pq \\times 4p\\) confirms it equals the original expression \\(12p^2q\\).",
+            "workingOut": "\\(3pq \\times 4p = 12p^2q\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1j",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(2a^2b\\)",
+          "\\(6ab\\)",
+          "\\(-2ab\\)",
+          "\\(2ab\\)"
+        ]
+      },
+      "answer": {
+        "old": "2ab",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{6a^2b}{3a} = 2ab"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(6a^2b = 3a \\times \\dots\\) and need to find the missing factor. Since \\(3a\\) has been factored out, we divide the original expression by \\(3a\\), dividing coefficients and reducing the power of \\(a\\) by one.",
+            "workingOut": "\\(6a^2b = 3a \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(3a\\). The coefficients divide as \\(6 \\div 3 = 2\\), \\(a^2 \\div a = a\\), and \\(b\\) is unaffected since it was not part of the given factor.",
+            "workingOut": "\\(\\frac{6a^2b}{3a} = 2ab\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(2ab\\). Checking by multiplying \\(3a \\times 2ab\\) confirms it equals the original expression \\(6a^2b\\).",
+            "workingOut": "\\(3a \\times 2ab = 6a^2b\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1k",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(3u\\)",
+          "\\(3uv\\)",
+          "\\(3u^2\\)",
+          "\\(-3u\\)"
+        ]
+      },
+      "answer": {
+        "old": "3u",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15u^2v}{5uv} = 3u"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15u^2v = 5uv \\times \\dots\\) and need to find the missing factor. Since \\(5uv\\) has been factored out, we divide the original expression by \\(5uv\\), dividing coefficients and cancelling each shared variable.",
+            "workingOut": "\\(15u^2v = 5uv \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(5uv\\). The coefficients divide as \\(15 \\div 5 = 3\\), \\(u^2 \\div u = u\\), and \\(v\\) cancels completely since it appears to the same power in both.",
+            "workingOut": "\\(\\frac{15u^2v}{5uv} = 3u\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(3u\\). Checking by multiplying \\(5uv \\times 3u\\) confirms it equals the original expression \\(15u^2v\\).",
+            "workingOut": "\\(5uv \\times 3u = 15u^2v\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-1l",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(5x^2y\\)",
+          "\\(40xy\\)",
+          "\\(5xy\\)",
+          "\\(-5xy\\)"
+        ]
+      },
+      "answer": {
+        "old": "5xy",
+        "new": 2
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{40x^2y^2}{8xy} = 5xy"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(40x^2y^2 = 8xy \\times \\dots\\) and need to find the missing factor. Since \\(8xy\\) has been factored out, we divide the original expression by \\(8xy\\), dividing coefficients and reducing the power of each variable by one.",
+            "workingOut": "\\(40x^2y^2 = 8xy \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(8xy\\). The coefficients divide as \\(40 \\div 8 = 5\\), and by the index law \\(x^2 \\div x = x\\) and \\(y^2 \\div y = y\\).",
+            "workingOut": "\\(\\frac{40x^2y^2}{8xy} = 5xy\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(5xy\\). Checking by multiplying \\(8xy \\times 5xy\\) confirms it equals the original expression \\(40x^2y^2\\).",
+            "workingOut": "\\(8xy \\times 5xy = 40x^2y^2\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2a",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(3xy\\)",
+          "\\(3y\\)",
+          "\\(15y\\)",
+          "\\(-3y\\)"
+        ]
+      },
+      "answer": {
+        "old": "3y",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15xy}{5x} = 3y"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15xy = 5x \\times \\dots\\) and need to find the missing factor. Since \\(5x\\) has been factored out, we divide the original expression by \\(5x\\), dividing coefficients and cancelling the shared variable \\(x\\).",
+            "workingOut": "\\(15xy = 5x \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(5x\\). The coefficients divide as \\(15 \\div 5 = 3\\), and the \\(x\\) cancels completely, leaving only \\(y\\).",
+            "workingOut": "\\(\\frac{15xy}{5x} = 3y\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(3y\\). Checking by multiplying \\(5x \\times 3y\\) confirms it equals the original expression \\(15xy\\).",
+            "workingOut": "\\(5x \\times 3y = 15xy\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2b",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(15xy\\)",
+          "\\(x\\)",
+          "\\(225xy\\)",
+          "\\(xy\\)"
+        ]
+      },
+      "answer": {
+        "old": "xy",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15xy}{15} = xy"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15xy = 15 \\times \\dots\\) and need to find the missing factor. Since the numerical coefficient 15 has already been factored out, we divide the original expression by 15 to find the remaining variable part.",
+            "workingOut": "\\(15xy = 15 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by 15. Dividing the term by its own numerical coefficient leaves both variables \\(x\\) and \\(y\\) untouched.",
+            "workingOut": "\\(\\frac{15xy}{15} = xy\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(xy\\). Checking by multiplying \\(15 \\times xy\\) confirms it equals the original expression \\(15xy\\).",
+            "workingOut": "\\(15 \\times xy = 15xy\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2c",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(5x\\)",
+          "\\(5xy\\)",
+          "\\(15x\\)",
+          "\\(-5x\\)"
+        ]
+      },
+      "answer": {
+        "old": "5x",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15xy}{3y} = 5x"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15xy = 3y \\times \\dots\\) and need to find the missing factor. Since \\(3y\\) has been factored out, we divide the original expression by \\(3y\\), dividing coefficients and cancelling the shared variable \\(y\\).",
+            "workingOut": "\\(15xy = 3y \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(3y\\). The coefficients divide as \\(15 \\div 3 = 5\\), and the \\(y\\) cancels completely, leaving only \\(x\\).",
+            "workingOut": "\\(\\frac{15xy}{3y} = 5x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(5x\\). Checking by multiplying \\(3y \\times 5x\\) confirms it equals the original expression \\(15xy\\).",
+            "workingOut": "\\(3y \\times 5x = 15xy\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2d",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(3xy\\)",
+          "\\(5\\)",
+          "\\(3\\)",
+          "\\(-3\\)"
+        ]
+      },
+      "answer": {
+        "old": "3",
+        "new": 2
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{15xy}{5xy} = 3"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(15xy = 5xy \\times \\dots\\) and need to find the missing factor. Since \\(5xy\\) has already been factored out — matching both variables in the original expression — we divide the original expression by \\(5xy\\).",
+            "workingOut": "\\(15xy = 5xy \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both sides by \\(5xy\\). Both the \\(x\\) and \\(y\\) cancel completely since they match exactly, leaving only the coefficient division \\(15 \\div 5 = 3\\).",
+            "workingOut": "\\(\\frac{15xy}{5xy} = 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(3\\), a constant with no variables left. Checking by multiplying \\(5xy \\times 3\\) confirms it equals the original expression \\(15xy\\).",
+            "workingOut": "\\(5xy \\times 3 = 15xy\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2e",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(2b + 24\\)",
+          "\\(2b + 3\\)",
+          "\\(2b - 3\\)",
+          "\\(4b + 6\\)"
+        ]
+      },
+      "answer": {
+        "old": "2b + 3",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{16b + 24}{8} = 2b + 3"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(16b + 24 = 8 \\times \\dots\\) and need to find the missing factor. Since 8 is the highest common factor of 16 and 24, we divide every term of the expression by 8.",
+            "workingOut": "\\(16b + 24 = 8 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms of the expression by 8 separately — this is essential, as forgetting to divide one of the two terms is a common mistake.",
+            "workingOut": "\\(\\frac{16b}{8} + \\frac{24}{8} = 2b + 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(2b + 3\\). Checking by expanding \\(8(2b + 3)\\) back out confirms it equals the original expression \\(16b + 24\\).",
+            "workingOut": "\\(8(2b + 3) = 16b + 24\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2f",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4q - 15\\)",
+          "\\(4q + 3\\)",
+          "\\(20q - 3\\)",
+          "\\(4q - 3\\)"
+        ]
+      },
+      "answer": {
+        "old": "4q - 3",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{20q - 15}{5} = 4q - 3"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(20q - 15 = 5 \\times \\dots\\) and need to find the missing factor. Since 5 is the highest common factor of 20 and 15, we divide every term of the expression by 5.",
+            "workingOut": "\\(20q - 15 = 5 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms of the expression by 5 separately, keeping the subtraction sign in place — dividing only one term or losing the sign are common mistakes.",
+            "workingOut": "\\(\\frac{20q}{5} - \\frac{15}{5} = 4q - 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4q - 3\\). Checking by expanding \\(5(4q - 3)\\) back out confirms it equals the original expression \\(20q - 15\\).",
+            "workingOut": "\\(5(4q - 3) = 20q - 15\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2g",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4ab - 3b\\)",
+          "\\(4ab - 18b\\)",
+          "\\(4ab + 3b\\)",
+          "\\(24ab - 3b\\)"
+        ]
+      },
+      "answer": {
+        "old": "4ab - 3b",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{24ab - 18b}{6} = 4ab - 3b"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(24ab - 18b = 6 \\times \\dots\\) and need to find the missing factor. Since 6 is the highest common factor of 24 and 18, we divide every term of the expression by 6.",
+            "workingOut": "\\(24ab - 18b = 6 \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms of the expression by 6 separately, keeping the subtraction sign in place.",
+            "workingOut": "\\(\\frac{24ab}{6} - \\frac{18b}{6} = 4ab - 3b\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4ab - 3b\\). Checking by expanding \\(6(4ab - 3b)\\) back out confirms it equals the original expression \\(24ab - 18b\\).",
+            "workingOut": "\\(6(4ab - 3b) = 24ab - 18b\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2h",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(4ab - 3\\)",
+          "\\(4a + 3\\)",
+          "\\(4a - 3\\)",
+          "\\(4a - 18\\)"
+        ]
+      },
+      "answer": {
+        "old": "4a - 3",
+        "new": 2
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{24ab - 18b}{6b} = 4a - 3"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(24ab - 18b = 6b \\times \\dots\\) and need to find the missing factor. Since \\(6b\\) is the highest common factor of \\(24ab\\) and \\(18b\\), we divide every term of the expression by \\(6b\\).",
+            "workingOut": "\\(24ab - 18b = 6b \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms of the expression by \\(6b\\) separately. In the first term the \\(b\\) cancels completely (leaving \\(4a\\)), and in the second term \\(18b \\div 6b = 3\\).",
+            "workingOut": "\\(\\frac{24ab}{6b} - \\frac{18b}{6b} = 4a - 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(4a - 3\\). Checking by expanding \\(6b(4a - 3)\\) back out confirms it equals the original expression \\(24ab - 18b\\).",
+            "workingOut": "\\(6b(4a - 3) = 24ab - 18b\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2i",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(x + 5\\)",
+          "\\(x\\)",
+          "\\(-x\\)",
+          "\\(x^2\\)"
+        ]
+      },
+      "answer": {
+        "old": "x",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{x^2 + 5x}{(x + 5)} = x"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(x^2 + 5x = (x + 5) \\times \\dots\\) and need to find the missing factor. Notice that \\(x\\) is a common factor of both terms, so \\(x^2 + 5x = x(x + 5)\\).",
+            "workingOut": "\\(x^2 + 5x = x(x + 5)\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Comparing \\(x(x + 5)\\) with the given form \\((x + 5) \\times \\dots\\), the missing factor must be the other factor, \\(x\\), since the \\((x+5)\\) part is already accounted for.",
+            "workingOut": "\\((x + 5) \\times \\dots = x(x + 5) \\implies \\dots = x\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(x\\). Checking by expanding \\((x + 5) \\times x\\) back out confirms it equals the original expression \\(x^2 + 5x\\).",
+            "workingOut": "\\((x + 5) \\times x = x^2 + 5x\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2j",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(y + 12\\)",
+          "\\(y^2 - 12\\)",
+          "\\(-y + 12\\)",
+          "\\(y - 12\\)"
+        ]
+      },
+      "answer": {
+        "old": "y - 12",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{y^2 - 12y}{y} = y - 12"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(y^2 - 12y = y \\times \\dots\\) and need to find the missing factor. Since \\(y\\) has been factored out, we divide the original expression by \\(y\\), term by term.",
+            "workingOut": "\\(y^2 - 12y = y \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms of the expression by \\(y\\) separately. By the index law \\(y^2 \\div y = y\\), and \\(12y \\div y = 12\\), keeping the subtraction sign.",
+            "workingOut": "\\(\\frac{y^2}{y} - \\frac{12y}{y} = y - 12\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(y - 12\\). Checking by expanding \\(y(y - 12)\\) back out confirms it equals the original expression \\(y^2 - 12y\\).",
+            "workingOut": "\\(y(y - 12) = y^2 - 12y\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2k",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(2vw - 6v\\)",
+          "\\(2vw + 6v\\)",
+          "\\(2vw - 6vw\\)",
+          "\\(2vw^2 - 6v\\)"
+        ]
+      },
+      "answer": {
+        "old": "2vw - 6v",
+        "new": 0
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{8vw^2 - 24vw}{4w} = 2vw - 6v"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(8vw^2 - 24vw = 4w \\times \\dots\\) and need to find the missing factor. Since \\(4w\\) has been factored out, we divide the original expression by \\(4w\\), term by term.",
+            "workingOut": "\\(8vw^2 - 24vw = 4w \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms by \\(4w\\) separately. In the first term, \\(8vw^2 \\div 4w = 2vw\\) (coefficients \\(8 \\div 4 = 2\\), and \\(w^2 \\div w = w\\)); in the second term, \\(24vw \\div 4w = 6v\\), keeping the subtraction sign.",
+            "workingOut": "\\(\\frac{8vw^2}{4w} - \\frac{24vw}{4w} = 2vw - 6v\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(2vw - 6v\\). Checking by expanding \\(4w(2vw - 6v)\\) back out confirms it equals the original expression \\(8vw^2 - 24vw\\).",
+            "workingOut": "\\(4w(2vw - 6v) = 8vw^2 - 24vw\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2l",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(8w + 24\\)",
+          "\\(8w - 24v\\)",
+          "\\(8w - 24\\)",
+          "\\(8w^2 - 24\\)"
+        ]
+      },
+      "answer": {
+        "old": "8w - 24",
+        "new": 2
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{8vw^2 - 24vw}{vw} = 8w - 24"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(8vw^2 - 24vw = vw \\times \\dots\\) and need to find the missing factor. Since \\(vw\\) has been factored out, we divide the original expression by \\(vw\\), term by term.",
+            "workingOut": "\\(8vw^2 - 24vw = vw \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms by \\(vw\\) separately. In the first term, \\(v\\) cancels completely and \\(w^2 \\div w = w\\), leaving \\(8w\\); in the second term, \\(v\\) and \\(w\\) both cancel completely, leaving \\(24\\), keeping the subtraction sign.",
+            "workingOut": "\\(\\frac{8vw^2}{vw} - \\frac{24vw}{vw} = 8w - 24\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(8w - 24\\). Checking by expanding \\(vw(8w - 24)\\) back out confirms it equals the original expression \\(8vw^2 - 24vw\\).",
+            "workingOut": "\\(vw(8w - 24) = 8vw^2 - 24vw\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2m",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(2w - 6\\)",
+          "\\(-2w + 6\\)",
+          "\\(2w + 6\\)",
+          "\\(-2w - 6\\)"
+        ]
+      },
+      "answer": {
+        "old": "-2w + 6",
+        "new": 1
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{8vw^2 - 24vw}{-4vw} = -2w + 6"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(8vw^2 - 24vw = -4vw \\times \\dots\\) and need to find the missing factor. Since \\(-4vw\\) has been factored out (a negative divisor), we divide the original expression by \\(-4vw\\), watching the signs carefully.",
+            "workingOut": "\\(8vw^2 - 24vw = -4vw \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms by \\(-4vw\\) separately. Dividing a positive term by a negative divisor flips its sign: \\(8vw^2 \\div (-4vw) = -2w\\); dividing a negative term by a negative divisor gives a positive result: \\(-24vw \\div (-4vw) = 6\\).",
+            "workingOut": "\\(\\frac{8vw^2}{-4vw} - \\frac{24vw}{-4vw} = -2w + 6\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(-2w + 6\\). Checking by expanding \\(-4vw(-2w + 6)\\) back out confirms it equals the original expression \\(8vw^2 - 24vw\\).",
+            "workingOut": "\\(-4vw(-2w + 6) = 8vw^2 - 24vw\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  },
+  {
+    "id": "y9-4a-2n",
+    "chapterId": "y9-4",
+    "topicId": "y9-4a",
+    "changedFields": {
+      "type": {
+        "old": "short_answer",
+        "new": "multiple_choice"
+      },
+      "options": {
+        "old": [],
+        "new": [
+          "\\(w + 3\\)",
+          "\\(vw - 3\\)",
+          "\\(-w + 3\\)",
+          "\\(w - 3\\)"
+        ]
+      },
+      "answer": {
+        "old": "w - 3",
+        "new": 3
+      },
+      "solutionSteps": {
+        "old": [
+          {
+            "explanation": "Divide the original expression by the given factor.",
+            "workingOut": "\\frac{8vw^2 - 24vw}{8vw} = w - 3"
+          }
+        ],
+        "new": [
+          {
+            "explanation": "We are given \\(8vw^2 - 24vw = 8vw \\times \\dots\\) and need to find the missing factor. Since \\(8vw\\) has been factored out, we divide the original expression by \\(8vw\\), term by term.",
+            "workingOut": "\\(8vw^2 - 24vw = 8vw \\times \\dots\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "Divide both terms by \\(8vw\\) separately. In the first term, the coefficients cancel (\\(8 \\div 8 = 1\\)), \\(v\\) cancels completely, and \\(w^2 \\div w = w\\), leaving \\(w\\); in the second term, everything cancels except \\(24 \\div 8 = 3\\), keeping the subtraction sign.",
+            "workingOut": "\\(\\frac{8vw^2}{8vw} - \\frac{24vw}{8vw} = w - 3\\)",
+            "graphData": null
+          },
+          {
+            "explanation": "So the missing factor is \\(w - 3\\). Checking by expanding \\(8vw(w - 3)\\) back out confirms it equals the original expression \\(8vw^2 - 24vw\\).",
+            "workingOut": "\\(8vw(w - 3) = 8vw^2 - 24vw\\)",
+            "graphData": null
+          }
+        ]
+      },
+      "isNew": {
+        "new": true
+      }
+    }
+  }
+]

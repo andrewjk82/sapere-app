@@ -1,0 +1,296 @@
+{
+  "y1-number": {
+    "count": 1,
+    "year": null,
+    "chapterTitle": "Number",
+    "topicSample": {
+      "topicId": "",
+      "topicCode": "",
+      "topicTitle": ""
+    }
+  },
+  "y11a-11": {
+    "count": 96,
+    "year": "Year 11",
+    "chapterTitle": "Chapter 11: Radian measure of angles",
+    "topicSample": {
+      "topicId": "y11a-11A",
+      "topicCode": "11A",
+      "topicTitle": "Radian measure of angle size"
+    }
+  },
+  "y11a-12": {
+    "count": 19,
+    "year": "Year 11",
+    "chapterTitle": "Chapter 12: Probability",
+    "topicSample": {
+      "topicId": "y11a-12A",
+      "topicCode": "12A",
+      "topicTitle": "Sets and Venn diagrams"
+    }
+  },
+  "y11a-8": {
+    "count": 130,
+    "year": "Year 11",
+    "chapterTitle": "Chapter 8: Exponential and logarithmic functions",
+    "topicSample": {
+      "topicId": "y11a-8A",
+      "topicCode": "8A",
+      "topicTitle": "Indices"
+    }
+  },
+  "y11a-9": {
+    "count": 16,
+    "year": "Year 11",
+    "chapterTitle": "Chapter 9: Differentiation",
+    "topicSample": {
+      "topicId": "y11a-9A",
+      "topicCode": "9A",
+      "topicTitle": "Tangents and the derivative"
+    }
+  },
+  "y12a-10": {
+    "count": 9,
+    "year": "Year 12",
+    "chapterTitle": "Ascham 2020 HSC Trial",
+    "topicSample": {
+      "topicId": "y12a-10C",
+      "topicCode": "10C",
+      "topicTitle": "Mean and variance of a distribution"
+    }
+  },
+  "y12a-2": {
+    "count": 2,
+    "year": "Year 12",
+    "chapterTitle": "Ascham 2020 HSC Trial",
+    "topicSample": {
+      "topicId": "y12a-2F",
+      "topicCode": "2F",
+      "topicTitle": "Review of translations and reflections"
+    }
+  },
+  "y12a-9": {
+    "count": 2,
+    "year": "Year 12",
+    "chapterTitle": "Ascham 2020 HSC Trial",
+    "topicSample": {
+      "topicId": "y12a-9D",
+      "topicCode": "9D",
+      "topicTitle": "Bivariate data"
+    }
+  },
+  "y6-ar": {
+    "count": 34,
+    "year": "Year 6",
+    "chapterTitle": "Chapter 4: Additive Relations (B)",
+    "topicSample": {
+      "topicId": "y6-ar-2",
+      "topicCode": "MA3-AR-01",
+      "topicTitle": "Add and subtract decimals"
+    }
+  },
+  "y6-frac": {
+    "count": 21,
+    "year": "Year 6",
+    "chapterTitle": "Chapter 2: Fractions",
+    "topicSample": {
+      "topicId": "y6-frac-1",
+      "topicCode": "FRAC1",
+      "topicTitle": "Basic Fractions"
+    }
+  },
+  "y6-mr": {
+    "count": 46,
+    "year": "Year 6",
+    "chapterTitle": "Chapter 5: Multiplicative Relations (B)",
+    "topicSample": {
+      "topicId": "y6-mr-2",
+      "topicCode": "MA3-MR-01",
+      "topicTitle": "Multiply and divide decimals"
+    }
+  },
+  "y6-rn": {
+    "count": 92,
+    "year": null,
+    "chapterTitle": "Chapter 3: Represents Numbers (B)",
+    "topicSample": {
+      "topicId": "y6-rn-2",
+      "topicCode": "MA3-RN-01",
+      "topicTitle": "Fractions, decimals, percentages"
+    }
+  },
+  "y6-wn": {
+    "count": 239,
+    "year": "Year 6",
+    "chapterTitle": "Chapter 1: Whole Numbers (Y6)",
+    "topicSample": {
+      "topicId": "y6-wn-1",
+      "topicCode": "WN1",
+      "topicTitle": "Word Problems and Averages"
+    }
+  },
+  "y7-10": {
+    "count": 72,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 10: Integers",
+    "topicSample": {
+      "topicId": "y7-10a",
+      "topicCode": "10A",
+      "topicTitle": "Negative integers"
+    }
+  },
+  "y7-11": {
+    "count": 77,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 11: Linear equations",
+    "topicSample": {
+      "topicId": "y7-11a",
+      "topicCode": "11A",
+      "topicTitle": "Substitution with integers"
+    }
+  },
+  "y7-12": {
+    "count": 59,
+    "year": "Year 7",
+    "chapterTitle": "Triangles and constructions",
+    "topicSample": {
+      "topicId": "y7-12a",
+      "topicCode": "12A",
+      "topicTitle": "Angles in triangles"
+    }
+  },
+  "y7-13": {
+    "count": 67,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 13: Negative fractions and decimals",
+    "topicSample": {
+      "topicId": "y7-13a",
+      "topicCode": "13A",
+      "topicTitle": "Addition and subtraction of negative fractions"
+    }
+  },
+  "y7-14": {
+    "count": 80,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 14: Percentages and Ratios",
+    "topicSample": {
+      "topicId": "y7-14a",
+      "topicCode": "14A",
+      "topicTitle": "Percentages, fractions and decimals"
+    }
+  },
+  "y7-15": {
+    "count": 36,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 15: Equations",
+    "topicSample": {
+      "topicId": "y7-15a",
+      "topicCode": "15A",
+      "topicTitle": "An introduction to equations"
+    }
+  },
+  "y7-16": {
+    "count": 8,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 16: Probability",
+    "topicSample": {
+      "topicId": "y7-16a",
+      "topicCode": "16A",
+      "topicTitle": "An introduction to probability"
+    }
+  },
+  "y7-17": {
+    "count": 12,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 17: Transformations and Symmetry",
+    "topicSample": {
+      "topicId": "y7-17a",
+      "topicCode": "17A",
+      "topicTitle": "Translations"
+    }
+  },
+  "y7-18": {
+    "count": 4,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 18: Statistics and Graphs",
+    "topicSample": {
+      "topicId": "y7-18a",
+      "topicCode": "18A",
+      "topicTitle": "Reading tables"
+    }
+  },
+  "y7-19": {
+    "count": 9,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 19: Numerical Data",
+    "topicSample": {
+      "topicId": "y7-19a",
+      "topicCode": "19A",
+      "topicTitle": "Data and dot plots"
+    }
+  },
+  "y7-20": {
+    "count": 12,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 20: Three-dimensional solids",
+    "topicSample": {
+      "topicId": "y7-20a",
+      "topicCode": "20A",
+      "topicTitle": "Polyhedra"
+    }
+  },
+  "y7-22": {
+    "count": 7,
+    "year": null,
+    "chapterTitle": "Sets and Venn diagrams",
+    "topicSample": {
+      "topicId": "y7-22a",
+      "topicCode": "22A",
+      "topicTitle": "Describing and naming sets"
+    }
+  },
+  "y7-4": {
+    "count": 153,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 4: Fractions",
+    "topicSample": {
+      "topicId": "y7-4h",
+      "topicCode": "4H",
+      "topicTitle": "Multiplication of fractions"
+    }
+  },
+  "y7-5": {
+    "count": 52,
+    "year": "Year 7",
+    "chapterTitle": null,
+    "topicSample": {
+      "topicId": "y7-5a",
+      "topicCode": "5A",
+      "topicTitle": "Multiplication of fractions"
+    }
+  },
+  "y7-7": {
+    "count": 173,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 7: Decimals",
+    "topicSample": {
+      "topicId": "y7-7b",
+      "topicCode": "7B",
+      "topicTitle": "Converting decimals to fractions and fractions to decimals"
+    }
+  },
+  "y7-8": {
+    "count": 106,
+    "year": "Year 7",
+    "chapterTitle": "Chapter 8: Measurement",
+    "topicSample": {
+      "topicId": "y7-8a",
+      "topicCode": "8A",
+      "topicTitle": "Units of measurement"
+    }
+  },
+  "y9-2": {
+    "count": 37,
+    "sample": "id-not-found"
+  }
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": "y12a-5i-q1a",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\na) \\int \\frac{3}{x} dx",
+    "a": "3 \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q1b",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\nb) \\int \\frac{7}{x} dx",
+    "a": "7 \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q1c",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\nc) \\int \\frac{1}{3x} dx",
+    "a": "\\frac{1}{3} \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q1d",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\nd) \\int \\frac{1}{5x} dx",
+    "a": "\\frac{1}{5} \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q1e",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\ne) \\int \\frac{3}{4x} dx",
+    "a": "\\frac{3}{4} \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q1f",
+    "q": "First rewrite the integral using the result $\\int \\frac{k}{x} dx = k \\int \\frac{1}{x} dx$. Then find the indefinite integral:\n\nf) \\int \\frac{5}{3x} dx",
+    "a": "\\frac{5}{3} \\log_e |x| + C"
+  },
+  {
+    "id": "y12a-5i-q2a",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\na) \\int \\frac{1}{3x + 2} dx",
+    "a": "\\frac{1}{3} \\log_e |3x + 2| + C"
+  },
+  {
+    "id": "y12a-5i-q2b",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\nb) \\int \\frac{1}{4x - 1} dx",
+    "a": "\\frac{1}{4} \\log_e |4x - 1| + C"
+  },
+  {
+    "id": "y12a-5i-q2c",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\nc) \\int \\frac{5}{2x + 3} dx",
+    "a": "\\frac{5}{2} \\log_e |2x + 3| + C"
+  },
+  {
+    "id": "y12a-5i-q2d",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\nd) \\int \\frac{14}{7x + 2} dx",
+    "a": "2 \\log_e |7x + 2| + C"
+  },
+  {
+    "id": "y12a-5i-q2e",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\ne) \\int \\frac{3}{5x + 2} dx",
+    "a": "\\frac{3}{5} \\log_e |5x + 2| + C"
+  },
+  {
+    "id": "y12a-5i-q2f",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\nf) \\int \\frac{dx}{4 - x}",
+    "a": "- \\log_e |4 - x| + C"
+  },
+  {
+    "id": "y12a-5i-q2g",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\ng) \\int \\frac{dx}{5 - 3x}",
+    "a": "-\\frac{1}{3} \\log_e |5 - 3x| + C"
+  },
+  {
+    "id": "y12a-5i-q2h",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\nh) \\int \\frac{3 dx}{2x - 5}",
+    "a": "\\frac{3}{2} \\log_e |2x - 5| + C"
+  },
+  {
+    "id": "y12a-5i-q2i",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find the indefinite integral:\n\ni) \\int \\frac{10 dx}{1 - 2x}",
+    "a": "-5 \\log_e |1 - 2x| + C"
+  },
+  {
+    "id": "y12a-5i-q3a",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\na) \\int_1^4 \\frac{1}{x} dx",
+    "a": "\\log_e 4"
+  },
+  {
+    "id": "y12a-5i-q3b",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nb) \\int_1^5 \\frac{1}{x} dx",
+    "a": "\\log_e 5"
+  },
+  {
+    "id": "y12a-5i-q3c",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nc) \\int_{-4}^{-2} \\frac{1}{x} dx",
+    "a": "\\log_e 2"
+  },
+  {
+    "id": "y12a-5i-q3d",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nd) \\int_{-6}^{-2} \\frac{1}{x} dx",
+    "a": "-\\log_e 3"
+  },
+  {
+    "id": "y12a-5i-q3e",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\ne) \\int_1^3 \\frac{dx}{4x}",
+    "a": "\\frac{1}{4} \\log_e 3"
+  },
+  {
+    "id": "y12a-5i-q3f",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nf) \\int_{-10}^{-2} \\frac{dx}{3x}",
+    "a": "-\\frac{1}{3} \\log_e 5"
+  },
+  {
+    "id": "y12a-5i-q4a",
+    "q": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\na) \\int_0^2 \\frac{dx}{x + 2}",
+    "a": "0.6931"
+  },
+  {
+    "id": "y12a-5i-q4b",
+    "q": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\nb) \\int_{-6}^{-4} \\frac{dx}{x + 3}",
+    "a": "-1.0986"
+  },
+  {
+    "id": "y12a-5i-q4c",
+    "q": "Evaluate the definite integral, then use your calculator to approximate it correct to four significant figures.\n\nc) \\int_5^{10} \\frac{dx}{x - 3}",
+    "a": "1.2528"
+  },
+  {
+    "id": "y12a-5i-q5a",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\na) \\int_1^{e^2} \\frac{dx}{x}",
+    "a": "2"
+  },
+  {
+    "id": "y12a-5i-q5b",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nb) \\int_1^{e^3} \\frac{dx}{x}",
+    "a": "3"
+  },
+  {
+    "id": "y12a-5i-q5c",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nc) \\int_1^{e^5} \\frac{dx}{x}",
+    "a": "5"
+  },
+  {
+    "id": "y12a-5i-q5d",
+    "q": "Evaluate the definite integral. Simplify your answer where possible.\n\nd) \\int_{\\sqrt{e}}^{e^2} \\frac{dx}{x}",
+    "a": "\\frac{3}{2}"
+  },
+  {
+    "id": "y12a-5i-q6a",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\na) \\frac{x + 2}{x}",
+    "a": "x + 2 \\log_e |x|"
+  },
+  {
+    "id": "y12a-5i-q6b",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nb) \\frac{x + 4}{3x}",
+    "a": "\\frac{1}{3} x + \\frac{4}{3} \\log_e |x|"
+  },
+  {
+    "id": "y12a-5i-q6c",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nc) \\frac{3 - x}{4x}",
+    "a": "\\frac{3}{4} \\log_e |x| - \\frac{1}{4} x"
+  },
+  {
+    "id": "y12a-5i-q6d",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nd) \\frac{1 - 6x}{5x}",
+    "a": "\\frac{1}{5} \\log_e |x| - \\frac{6}{5} x"
+  },
+  {
+    "id": "y12a-5i-q6e",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\ne) \\frac{4x^2 - 3x}{x^2}",
+    "a": "4x - 3 \\log_e |x|"
+  },
+  {
+    "id": "y12a-5i-q6f",
+    "q": "Find a primitive of this function by first writing it as separate fractions. (Exclude + C)\n\nf) \\frac{3x^2 + x - 5}{x}",
+    "a": "\\frac{3}{2} x^2 + x - 5 \\log_e |x|"
+  },
+  {
+    "id": "y12a-5i-q7a",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\na) \\int \\frac{2x}{x^2 - 4} dx",
+    "a": "\\log_e |x^2 - 4| + C"
+  },
+  {
+    "id": "y12a-5i-q7b",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\nb) \\int \\frac{4x + 1}{2x^2 + x} dx",
+    "a": "\\log_e |2x^2 + x| + C"
+  },
+  {
+    "id": "y12a-5i-q7c",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\nc) \\int \\frac{2x + 3}{x^2 + 3x - 2} dx",
+    "a": "\\log_e |x^2 + 3x - 2| + C"
+  },
+  {
+    "id": "y12a-5i-q7d",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\nd) \\int \\frac{4 - 2x}{4x - x^2} dx",
+    "a": "\\log_e |4x - x^2| + C"
+  },
+  {
+    "id": "y12a-5i-q7e",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\ne) \\int \\frac{2x + 4}{x^2 + 4x - 5} dx",
+    "a": "\\log_e |x^2 + 4x - 5| + C"
+  },
+  {
+    "id": "y12a-5i-q7f",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\nf) \\int \\frac{8 - 2x}{8x - x^2} dx",
+    "a": "\\log_e |8x - x^2| + C"
+  },
+  {
+    "id": "y12a-5i-q7g",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\ng) \\( \\int \\frac{e^{2x}}{1 + e^{2x}} dx \\)",
+    "a": "\\frac{1}{2} \\log_e (1 + e^{2x}) + C"
+  },
+  {
+    "id": "y12a-5i-q7h",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\nh) \\( \\int \\frac{e^{-2x}}{1 + e^{-2x}} dx \\)",
+    "a": "-\\frac{1}{2} \\log_e (1 + e^{-2x}) + C"
+  },
+  {
+    "id": "y12a-5i-q7i",
+    "q": "Use the result $\\int \\frac{f'(x)}{f(x)} dx = \\log_e |f(x)| + C$ to \\integrate the expression:\n\ni) \\( \\int \\frac{e^x - e^{-x}}{e^x + e^{-x}} dx \\)",
+    "a": "\\log_e (e^x + e^{-x}) + C"
+  },
+  {
+    "id": "y12a-5i-q8a",
+    "q": "Find $f(x)$, given that:\n\na) f'(x) = 1 + \\frac{3}{x} \\text{ and } f(1) = 2",
+    "a": "f(x) = x + 3 \\log_e |x| + 1"
+  },
+  {
+    "id": "y12a-5i-q8b",
+    "q": "Find $f(x)$, given that:\n\nb) f'(x) = 4x + \\frac{1}{2x} \\text{ and } f(1) = 3",
+    "a": "f(x) = 2x^2 + \\frac{1}{2} \\log_e |x| + 1"
+  },
+  {
+    "id": "y12a-5i-q8c",
+    "q": "Find $f(x)$, given that:\n\nc) f'(x) = 4 + \\frac{3}{3x - 1} \\text{ and } f(1) = 0",
+    "a": "f(x) = 4x + \\log_e |3x - 1| - 4"
+  },
+  {
+    "id": "y12a-5i-q8d",
+    "q": "Find $f(x)$, given that:\n\nd) f'(x) = 3x^2 + \\frac{8}{2x + 1} \\text{ and } f(1) = 2 \\ln 3",
+    "a": "f(x) = x^3 + 4 \\log_e |2x + 1| - 1 - 2 \\ln 3"
+  },
+  {
+    "id": "y12a-5i-q9a",
+    "q": "a) Find $y$ as a function of $x$ if $y' = \\frac{1}{2x}$ and $y = 2$ when $x = e^4$.",
+    "a": "y = \\frac{1}{2} \\log_e x"
+  },
+  {
+    "id": "y12a-5i-q9b",
+    "q": "b) The gradient of a curve is given by $y' = \\frac{3}{x + 2}$, and the curve passes through the point $(0, 2)$. What is the equation of this curve?",
+    "a": "y = 3 \\log_e(x + 2) + 2 - 3 \\log_e 2"
+  },
+  {
+    "id": "y12a-5i-q9c",
+    "q": "c) Find $y(x)$, given that $y' = \\frac{2x + 4}{x^2 + 4x + 3}$ and $y = 1$ when $x = 1$. Hence evaluate $y(0)$.",
+    "a": "y(0) = 1 - \\log_e(8/3)"
+  },
+  {
+    "id": "y12a-5i-q10a",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\na) \\int \\frac{1}{3x + b} dx",
+    "a": "\\frac{1}{3} \\log_e |3x + b| + C"
+  },
+  {
+    "id": "y12a-5i-q10b",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nb) \\int \\frac{1}{4x - k} dx",
+    "a": "\\frac{1}{4} \\log_e |4x - k| + C"
+  },
+  {
+    "id": "y12a-5i-q10c",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nc) \\int \\frac{1}{bx + 4} dx",
+    "a": "\\frac{1}{b} \\log_e |bx + 4| + C"
+  },
+  {
+    "id": "y12a-5i-q10d",
+    "q": "Use the standard form $\\int \\frac{1}{ax + b} dx = \\frac{1}{a} \\log_e |ax + b| + C$ to find these integrals:\n\nd) \\int \\frac{1}{nx - 3} dx",
+    "a": "\\frac{1}{n} \\log_e |nx - 3| + C"
+  },
+  {
+    "id": "y12a-5i-q11a",
+    "q": "Use one of the log forms to find:\n\na) \\int \\frac{4x^3}{x^4 - 2} dx",
+    "a": "\\log_e |x^4 - 2| + C"
+  },
+  {
+    "id": "y12a-5i-q11b",
+    "q": "Use one of the log forms to find:\n\nb) \\int \\frac{5x^4 + 2}{x^5 + 2x - 3} dx",
+    "a": "\\log_e |x^5 + 2x - 3| + C"
+  },
+  {
+    "id": "y12a-5i-q11c",
+    "q": "Use one of the log forms to find:\n\nc) \\int \\frac{x^2 - 4x}{x^3 - 6x^2} dx",
+    "a": "\\frac{1}{3} \\log_e |x^3 - 6x^2| + C"
+  },
+  {
+    "id": "y12a-5i-q12a",
+    "q": "a) Given that the derivative of $f(x)$ is $\\frac{x^2 + 2x + 2}{x}$ and $f(1) = 2$, find $f(x)$.",
+    "a": "f(x) = \\frac{1}{2} x^2 + 2x + 2 \\log_e |x| - \\frac{1}{2}"
+  },
+  {
+    "id": "y12a-5i-q13",
+    "q": "Find $\\int_1^e \\left(x + \\frac{2}{x}\\right)^2 dx$.",
+    "a": "\\frac{1}{3} e^3 + 4 - \\frac{4}{e} - \\frac{1}{3}"
+  },
+  {
+    "id": "y12a-5i-q14",
+    "q": "a) Differentiate $y = 2x \\log_e x - 2x$.\nb) Hence find $\\int \\log_e x dx$.",
+    "a": "b) x \\log_e x - x + C"
+  },
+  {
+    "id": "y12a-5i-q15",
+    "q": "a) Show that the derivative of $y = 3x^2 \\log_e x - 1.5x^2$ is $y' = 6x \\log_e x$.\nb) Hence write down a primitive of $x \\log_e x$.\nc) Use this result to evaluate $\\int_e^{e^2} x \\log_e x dx$.",
+    "a": "c) \\frac{1}{4} e^4 (2 \\log_e (e^2) - 1) - \\frac{1}{4} e^2"
+  },
+  {
+    "id": "y12a-5i-q16",
+    "q": "a) Differentiate $(\\log_e x)^3$ using the chain rule.\nb) Hence determine $\\int \\frac{(\\log_e x)^2}{x} dx$.",
+    "a": "b) \\frac{1}{3} (\\log_e x)^3 + C"
+  },
+  {
+    "id": "y12a-5i-q17",
+    "q": "Differentiate $\\ln(2 \\ln x)$ and hence determine the family of primitives of $\\frac{1}{x \\ln x}$.",
+    "a": "\\ln|\\ln x| + C"
+  },
+  {
+    "id": "y12a-5i-q18",
+    "q": "Stella found the primitive of $\\frac{1}{4x}$ by taking out a factor of $\\frac{1}{4}$:\n$\\int \\frac{1}{4x} dx = \\frac{1}{4} \\int \\frac{1}{x} dx = \\frac{1}{4} \\log_e |x| + C_1$\n\nMagar used the standard form:\n$\\int \\frac{1}{4x} dx = \\frac{1}{4} \\log_e |4x| + C_2$\n\nExplain what is going on. Will this affect their result when finding a definite integral?",
+    "a": "C_2 = C_1 - \\frac{1}{4} \\log_e 4. No effect on definite integrals."
+  },
+  {
+    "id": "y12a-5i-q19a",
+    "q": "Find the value of $a$ if $a$ is positive and $\\int_1^a \\frac{2}{x} dx = 6$.",
+    "a": "e^3"
+  },
+  {
+    "id": "y12a-5i-q19b",
+    "q": "Find the value of $a$ if $a$ is negative and $\\int_a^{-1} \\frac{1}{x} dx = -3$.",
+    "a": "-e^3"
+  },
+  {
+    "id": "y12a-5i-q20a",
+    "q": "Although it is not required in this course, it can be shown that $\\int \\frac{1}{\\sqrt{x^2 + a^2}} dx = \\log_e(x + \\sqrt{x^2 + a^2}) + C$.\n\nUse this result to find $\\int_0^3 \\frac{1}{\\sqrt{x^2 + 16}} dx$.",
+    "a": "\\log_e 2"
+  },
+  {
+    "id": "y12a-5i-q20b",
+    "q": "Use the result $\\int \\frac{1}{\\sqrt{x^2 - a^2}} dx = \\log_e|x + \\sqrt{x^2 - a^2}| + C$ to find $\\int_5^{13} \\frac{1}{\\sqrt{x^2 - 9}} dx$.",
+    "a": "\\log_e 3"
+  }
+]

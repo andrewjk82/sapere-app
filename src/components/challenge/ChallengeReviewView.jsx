@@ -313,13 +313,12 @@ const ChallengeReviewView = ({
                 {[q.topicCode, q.topicTitle || q.chapterTitle].filter(Boolean).join(' · ')}
               </div>
             )}
+            {/* Review is always shown post-completion (no pre-feedback state
+                here), so graphData is never the "answer to conceal" — always
+                render it, including for graph_sketch/teacher_review. */}
             <MathView
               content={q.question}
-              graphData={
-                (q.type === 'graph_sketch' || q.type === 'teacher_review' || q.requiresManualGrading)
-                  ? null
-                  : q.graphData
-              }
+              graphData={q.graphData}
               style={{ fontSize: '0.98rem', fontWeight: 500, color: '#1e1b4b', lineHeight: 1.7 }}
             />
             {q.questionImage && (

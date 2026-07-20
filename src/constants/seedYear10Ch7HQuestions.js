@@ -1,1005 +1,1929 @@
 export const Y10_CH7H_QUESTIONS = [
   {
     "id": "y10-7h-q1a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the \\( x \\)-intercepts of the graph for the equation \\( y = x^2 + 5x + 4 \\).",
-    "a": "-1, -4",
-    "solution": "",
+    "opts": [
+      "\\(-1, -4\\)",
+      "\\(-1, -4 + 1\\)",
+      "\\(1, -4\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-1, -4\\).",
     "solutionSteps": [
       {
-        "explanation": "Set y to 0",
-        "workingOut": "x^2 + 5x + 4 = 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(x^2 + 5x + 4 = 0\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(x + 1)(x + 4) = 0"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x + 1)(x + 4) = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x",
-        "workingOut": "x = -1 \\text{ or } x = -4"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = -1 \\text{ or } x = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -1, -4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-1, -4\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q1b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the \\( x \\)-intercepts of the graph for the equation \\( y = 3x^2 - 10x - 8 \\).",
-    "a": "-2/3, 4",
-    "solution": "",
+    "opts": [
+      "\\(-2/3, 4\\)",
+      "\\(-1.0588235294117647\\)",
+      "\\(0.058823529411764705\\)",
+      "\\(0.9411764705882353\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-2/3, 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Set y to 0",
-        "workingOut": "3x^2 - 10x - 8 = 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(3x^2 - 10x - 8 = 0\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(3x + 2)(x - 4) = 0"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((3x + 2)(x - 4) = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x",
-        "workingOut": "x = -\\frac{2}{3} \\text{ or } x = 4"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = -\\frac{2}{3} \\text{ or } x = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -2/3, 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-2/3, 4\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q1c",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the \\( x \\)-intercepts of the graph for the equation \\( y = (x + 5)^2 - 4 \\).",
-    "a": "-3, -7",
-    "solution": "",
+    "opts": [
+      "\\(-3, -7\\)",
+      "\\(-3, -7 + 1\\)",
+      "\\(3, -7\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-3, -7\\).",
     "solutionSteps": [
       {
-        "explanation": "Set y to 0",
-        "workingOut": "(x + 5)^2 - 4 = 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\((x + 5)^2 - 4 = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange",
-        "workingOut": "(x + 5)^2 = 4"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x + 5)^2 = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take square root",
-        "workingOut": "x + 5 = \\pm 2"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x + 5 = \\pm 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x",
-        "workingOut": "x = -3 \\text{ or } x = -7"
+        "explanation": "Final answer: -3, -7. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-3, -7\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q1d",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the \\( x \\)-intercepts of the graph for the equation \\( y = 2(x - 3)^2 - 8 \\).",
-    "a": "1, 5",
-    "solution": "",
+    "opts": [
+      "\\(-15\\)",
+      "\\(14\\)",
+      "\\(1, 5\\)",
+      "\\(16\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(1, 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Set y to 0",
-        "workingOut": "2(x - 3)^2 - 8 = 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2(x - 3)^2 - 8 = 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Rearrange",
-        "workingOut": "(x - 3)^2 = 4"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x - 3)^2 = 4\\)",
+        "graphData": null
       },
       {
-        "explanation": "Take square root",
-        "workingOut": "x - 3 = \\pm 2"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x - 3 = \\pm 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Solve for x",
-        "workingOut": "x = 1 \\text{ or } x = 5"
+        "explanation": "Final answer: 1, 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(1, 5\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q2a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Express the equation \\( y = x^2 + 8x + 5 \\) in the form \\( y = a(x - h)^2 + k \\), and hence state the coordinates of the vertex.",
-    "a": "(-4, -11)",
-    "solution": "",
+    "opts": [
+      "\\((-4, -11)\\)",
+      "\\((-4, -11) + 1\\)",
+      "\\(\\dfrac{12}{5}\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((-4, -11)\\).",
     "solutionSteps": [
       {
-        "explanation": "Complete the square",
-        "workingOut": "y = (x^2 + 8x + 16) - 16 + 5"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = (x^2 + 8x + 16) - 16 + 5\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "y = (x + 4)^2 - 11"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = (x + 4)^2 - 11\\)",
+        "graphData": null
       },
       {
-        "explanation": "State vertex",
-        "workingOut": "(-4, -11)"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((-4, -11)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (-4, -11). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((-4, -11)\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q2b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Express the equation \\( y = x^2 - 6x + 4 \\) in the form \\( y = a(x - h)^2 + k \\), and hence state the coordinates of the vertex.",
-    "a": "(3, -5)",
-    "solution": "",
+    "opts": [
+      "\\((3, -5)\\)",
+      "\\((3, -5) + 1\\)",
+      "\\(\\dfrac{12}{5}\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((3, -5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Complete the square",
-        "workingOut": "y = (x^2 - 6x + 9) - 9 + 4"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = (x^2 - 6x + 9) - 9 + 4\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Simplify",
-        "workingOut": "y = (x - 3)^2 - 5"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = (x - 3)^2 - 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "State vertex",
-        "workingOut": "(3, -5)"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((3, -5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (3, -5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((3, -5)\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q2c",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Express the equation \\( y = 2x^2 + 8x + 3 \\) in the form \\( y = a(x - h)^2 + k \\), and hence state the coordinates of the vertex.",
-    "a": "(-2, -5)",
-    "solution": "",
+    "opts": [
+      "\\((-2, -5)\\)",
+      "\\((-2, -5) + 1\\)",
+      "\\((-3, -5)\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((-2, -5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Factor out 2",
-        "workingOut": "y = 2(x^2 + 4x) + 3"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = 2(x^2 + 4x) + 3\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Complete the square",
-        "workingOut": "y = 2(x^2 + 4x + 4 - 4) + 3"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 2(x^2 + 4x + 4 - 4) + 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand and simplify",
-        "workingOut": "y = 2(x + 2)^2 - 8 + 3 = 2(x + 2)^2 - 5"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2(x + 2)^2 - 8 + 3 = 2(x + 2)^2 - 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "State vertex",
-        "workingOut": "(-2, -5)"
+        "explanation": "Final answer: (-2, -5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((-2, -5)\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q2d",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Express the equation \\( y = 3x^2 + 12x + 5 \\) in the form \\( y = a(x - h)^2 + k \\), and hence state the coordinates of the vertex.",
-    "a": "(-2, -7)",
-    "solution": "",
+    "opts": [
+      "\\((-2, -7)\\)",
+      "\\((-2, -7) + 1\\)",
+      "\\((-3, -7)\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((-2, -7)\\).",
     "solutionSteps": [
       {
-        "explanation": "Factor out 3",
-        "workingOut": "y = 3(x^2 + 4x) + 5"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = 3(x^2 + 4x) + 5\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Complete the square",
-        "workingOut": "y = 3(x^2 + 4x + 4 - 4) + 5"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 3(x^2 + 4x + 4 - 4) + 5\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand and simplify",
-        "workingOut": "y = 3(x + 2)^2 - 12 + 5 = 3(x + 2)^2 - 7"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 3(x + 2)^2 - 12 + 5 = 3(x + 2)^2 - 7\\)",
+        "graphData": null
       },
       {
-        "explanation": "State vertex",
-        "workingOut": "(-2, -7)"
+        "explanation": "Final answer: (-2, -7). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((-2, -7)\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q3a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "A parabola has \\( x \\)-intercepts \\( -2 \\) and \\( 5 \\), and \\( y \\)-intercept \\( 10 \\). Find the equation of the parabola.",
-    "a": "y = -x^2 + 3x + 10",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = -x^2 + 3x + 10\\)",
+      "\\(y = -x^2 + 3x + 10 + 1\\)",
+      "\\(y = -x^3 + 3x + 10\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = -x^2 + 3x + 10\\).",
     "solutionSteps": [
       {
-        "explanation": "Use intercept form",
-        "workingOut": "y = a(x + 2)(x - 5)"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = a(x + 2)(x - 5)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute y-intercept (0, 10)",
-        "workingOut": "10 = a(2)(-5) = -10a \\Rightarrow a = -1"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(10 = a(2)(-5) = -10a \\Rightarrow a = -1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand",
-        "workingOut": "y = -(x^2 - 3x - 10) = -x^2 + 3x + 10"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -(x^2 - 3x - 10) = -x^2 + 3x + 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -x^2 + 3x + 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -x^2 + 3x + 10\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q3b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "A parabola has \\( x \\)-intercepts \\( 2 \\) and \\( 6 \\), and passes through the point \\( (1, 10) \\). Find the equation of the parabola.",
-    "a": "y = 2x^2 - 16x + 24",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = 2x^2 - 16x + 24\\)",
+      "\\(y = 2x^2 - 16x + 24 + 1\\)",
+      "\\(y = 3x^3 - 16x + 34\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = 2x^2 - 16x + 24\\).",
     "solutionSteps": [
       {
-        "explanation": "Use intercept form",
-        "workingOut": "y = a(x - 2)(x - 6)"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = a(x - 2)(x - 6)\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute point (1, 10)",
-        "workingOut": "10 = a(1 - 2)(1 - 6) = 5a \\Rightarrow a = 2"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(10 = a(1 - 2)(1 - 6) = 5a \\Rightarrow a = 2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand",
-        "workingOut": "y = 2(x^2 - 8x + 12) = 2x^2 - 16x + 24"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2(x^2 - 8x + 12) = 2x^2 - 16x + 24\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2x^2 - 16x + 24. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2x^2 - 16x + 24\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q4a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "A parabola has vertex \\( (4, -3) \\) and \\( y \\)-intercept \\( 13 \\). Find the equation of the parabola.",
-    "a": "y = x^2 - 8x + 13",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = x^2 - 8x + 13\\)",
+      "\\(y = x^2 - 8x + 13 + 1\\)",
+      "\\(y = x^3 - 8x + 13\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = x^2 - 8x + 13\\).",
     "solutionSteps": [
       {
-        "explanation": "Use vertex form",
-        "workingOut": "y = a(x - 4)^2 - 3"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = a(x - 4)^2 - 3\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute y-intercept (0, 13)",
-        "workingOut": "13 = 16a - 3 \\Rightarrow a = 1"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(13 = 16a - 3 \\Rightarrow a = 1\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand",
-        "workingOut": "y = x^2 - 8x + 13"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = x^2 - 8x + 13\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = x^2 - 8x + 13. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = x^2 - 8x + 13\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q4b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "A parabola has vertex \\( (3, 6) \\) and passes through the point \\( (1, -2) \\). Find the equation of the parabola.",
-    "a": "y = -2x^2 + 12x - 12",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = -2x^2 + 12x - 12\\)",
+      "\\(y = -2x^2 + 12x - 12 + 1\\)",
+      "\\(y = -3x^3 + 13x - 13\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = -2x^2 + 12x - 12\\).",
     "solutionSteps": [
       {
-        "explanation": "Use vertex form",
-        "workingOut": "y = a(x - 3)^2 + 6"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = a(x - 3)^2 + 6\\)",
+        "graphData": null
       },
       {
-        "explanation": "Substitute point (1, -2)",
-        "workingOut": "-2 = 4a + 6 \\Rightarrow a = -2"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(-2 = 4a + 6 \\Rightarrow a = -2\\)",
+        "graphData": null
       },
       {
-        "explanation": "Expand",
-        "workingOut": "y = -2x^2 + 12x - 12"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -2x^2 + 12x - 12\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -2x^2 + 12x - 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -2x^2 + 12x - 12\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q5a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Write the equation of the parabola obtained when the graph of \\( y = x^2 \\) is stretched by a factor of 2 from the \\( x \\)-axis and translated 3 units to the right.",
-    "a": "y = 2(x - 3)^2",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = 2(x - 3)^2\\)",
+      "\\(y = 2(x - 3)^2 + 1\\)",
+      "\\(y = 3(x - 3)^3\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = 2(x - 3)^2\\).",
     "solutionSteps": [
       {
-        "explanation": "Stretch by factor of 2",
-        "workingOut": "y = 2x^2"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = 2x^2\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Translate 3 units right",
-        "workingOut": "y = 2(x - 3)^2"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 2(x - 3)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 2(x - 3)^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = 2(x - 3)^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = 2(x - 3)^2\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q5b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Write the equation of the parabola obtained when the graph of \\( y = x^2 \\) is reflected in the \\( x \\)-axis and then translated 2 units to the left and 4 units up.",
-    "a": "y = -(x + 2)^2 + 4",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = -(x + 2)^2 + 4\\)",
+      "\\(y = -(x + 2)^2 + 4 + 1\\)",
+      "\\(y = -(x + 3)^3 + 4\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = -(x + 2)^2 + 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Reflect in x-axis",
-        "workingOut": "y = -x^2"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = -x^2\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
       },
       {
-        "explanation": "Translate 2 units left and 4 units up",
-        "workingOut": "y = -(x + 2)^2 + 4"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = -(x + 2)^2 + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = -(x + 2)^2 + 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = -(x + 2)^2 + 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = -(x + 2)^2 + 4\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q5c",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Write the equation of the parabola obtained when the graph of \\( y = x^2 \\) is translated 4 units to the right and 5 units down.",
-    "a": "y = (x - 4)^2 - 5",
-    "solution": "",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(y = (x - 4)^2 - 5\\)",
+      "\\(y = (x - 4)^2 - 5 + 1\\)",
+      "\\(y = (x - 4)^3 - 5\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(y = (x - 4)^2 - 5\\).",
     "solutionSteps": [
       {
-        "explanation": "Translate 4 units right and 5 units down",
-        "workingOut": "y = (x - 4)^2 - 5"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = (x - 4)^2 - 5\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = (x - 4)^2 - 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: y = (x - 4)^2 - 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(y = (x - 4)^2 - 5\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q6a",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = x^2 - 4x + 3 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (2, -1), y-intercept: (0, 3), x-intercept(s): (1, 0), (3, 0), Axis of symmetry: x = 2",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (2, -1), x-intercept(s): 1, 3, y-intercept: (0, 3), Axis of symmetry: x = 2",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
         "graphData": {
           "jsxGraph": {
-            "width": 400,
-            "height": 400,
+            "width": 360,
+            "height": 280,
             "boundingbox": [
-              -2,
-              7,
-              7,
-              -4
+              -5,
+              8,
+              5,
+              -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x - 4*x + 3;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[2,0],[2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[2.3,0.5,'x = 2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[2,-1],{name:'V(2, -1)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,3],{name:'(0, 3)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[1,0],{name:'(1, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-7h-q6b",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = -x^2 - 2x + 8 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (-1, 9), y-intercept: (0, 8), x-intercept(s): (-4, 0), (2, 0), Axis of symmetry: x = -1",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (-1, 9), x-intercept(s): -4, 2, y-intercept: (0, 8), Axis of symmetry: x = -1",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
         "graphData": {
           "jsxGraph": {
-            "width": 400,
-            "height": 400,
+            "width": 360,
+            "height": 280,
             "boundingbox": [
-              -7,
-              13,
+              -5,
+              8,
               5,
-              -3
+              -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return -x*x - 2*x + 8;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-1,0],[-1,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-0.7,3.6,'x = -1'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-1,9],{name:'V(-1, 9)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,8],fontsize:13}});\nboard.create('point',[0,8],{name:'(0, 8)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-4,0],{name:'(-4, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-7h-q6c",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = 9 - x^2 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (0, 9), y-intercept: (0, 9), x-intercept(s): (-3, 0), (3, 0), Axis of symmetry: x = 0",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (0, 9), x-intercept(s): -3, 3, y-intercept: (0, 9), Axis of symmetry: x = 0",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
         "graphData": {
           "jsxGraph": {
-            "width": 400,
-            "height": 400,
+            "width": 360,
+            "height": 280,
             "boundingbox": [
-              -6,
-              13,
-              6,
-              -3
+              -5,
+              8,
+              5,
+              -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return 9 - x*x;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[0,0],[0,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[0.3,3.6,'x = 0'],{color:'#dc2626',fontSize:13});\nboard.create('point',[0,9],{name:'V(0, 9)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,8],fontsize:13}});\nboard.create('point',[0,9],{name:'(0, 9)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-3,0],{name:'(-3, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": {
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
+        ],
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+      }
+    },
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-7h-q6d",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = (x + 2)^2 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (-2, 0), y-intercept: (0, 4), x-intercept(s): (-2, 0), Axis of symmetry: x = -2",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (-2, 0), x-intercept(s): -2, y-intercept: (0, 4), Axis of symmetry: x = -2",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
         "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 400,
-            "height": 400,
-            "boundingbox": [
-              -7,
-              12,
-              4,
-              -2
-            ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return (x+2)*(x+2);};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-2,0],[-2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-1.7,1,'x = -2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-2,0],{name:'V(-2, 0)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,4],{name:'(0, 4)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-2,0],{name:'(-2, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-7h-q6e",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = (x - 2)^2 - 9 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (2, -9), y-intercept: (0, -5), x-intercept(s): (-1, 0), (5, 0), Axis of symmetry: x = 2",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (2, -9), x-intercept(s): -1, 5, y-intercept: (0, -5), Axis of symmetry: x = 2",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
         "workingOut": "",
-        "graphData": {
-          "jsxGraph": {
-            "width": 400,
-            "height": 400,
-            "boundingbox": [
-              -4,
-              6,
-              8,
-              -12
-            ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return (x-2)*(x-2) - 9;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[2,0],[2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[2.3,-3.5,'x = 2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[2,-9],{name:'V(2, -9)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-5],{name:'(0, -5)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-1,0],{name:'(-1, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[5,0],{name:'(5, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
-          }
-        }
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
     "id": "y10-7h-q6f",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Sketch the graph of \\( y = x^2 - 4 \\), labelling the vertex, axis of symmetry and the intercepts.",
-    "a": "",
-    "solution": "Vertex: (0, -4), y-intercept: (0, -4), x-intercept(s): (-2, 0), (2, 0), Axis of symmetry: x = 0",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
     "solutionSteps": [
       {
-        "explanation": "Key features: Vertex (0, -4), x-intercept(s): -2, 2, y-intercept: (0, -4), Axis of symmetry: x = 0",
-        "workingOut": "",
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
         "graphData": {
           "jsxGraph": {
-            "width": 400,
-            "height": 400,
+            "width": 360,
+            "height": 280,
             "boundingbox": [
               -5,
-              6,
+              8,
               5,
-              -7
+              -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x - 4;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[0,0],[0,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[0.3,-1,'x = 0'],{color:'#dc2626',fontSize:13});\nboard.create('point',[0,-4],{name:'V(0, -4)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-4],{name:'(0, -4)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-2,0],{name:'(-2, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[2,0],{name:'(2, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
         }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
-  },
-  {
-    "id": "y10-7h-q7",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "For the graph with equation \\( y = 2x^2 - 4x - 6 \\), find the coordinates of the:",
-    "a": "",
-    "solution": "",
-    "solutionSteps": [],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null,
-    "subQuestions": [
-      {
-        "id": "y10-7h-q7a",
-        "type": "short_answer",
-        "question": "a) vertex",
-        "a": "(1, -8)",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Factor out 2",
-            "workingOut": "y = 2(x^2 - 2x) - 6"
-          },
-          {
-            "explanation": "Complete the square",
-            "workingOut": "y = 2(x - 1)^2 - 8"
-          },
-          {
-            "explanation": "State vertex",
-            "workingOut": "(1, -8)"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y10-7h-q7b",
-        "type": "short_answer",
-        "question": "b) \\( x \\)-intercepts",
-        "a": "-1, 3",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Set y to 0",
-            "workingOut": "2x^2 - 4x - 6 = 0"
-          },
-          {
-            "explanation": "Divide by 2",
-            "workingOut": "x^2 - 2x - 3 = 0"
-          },
-          {
-            "explanation": "Factorise",
-            "workingOut": "(x - 3)(x + 1) = 0 \\Rightarrow x = 3, -1"
-          }
-        ],
-        "graphData": null
-      }
-    ]
-  },
-  {
-    "id": "y10-7h-q8",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "A gardener is planning to establish a vegetable garden. The garden will have a wooden border and two wooden dividers to form three partitions. Thirty-two metres of timber is used for the border and the dividers. Let \\( x \\) m be the length of the dividers and two of the sides of the garden.",
-    "a": "",
-    "solution": "",
-    "solutionSteps": [],
-    "hint": "",
-    "t": "Revision",
     "graphData": {
-      "geometry": {
-        "width": 300,
-        "points": {
-          "A": [
-            0,
-            0
-          ],
-          "B": [
-            20,
-            0
-          ],
-          "C": [
-            20,
-            10
-          ],
-          "D": [
-            0,
-            10
-          ],
-          "E": [
-            6.6,
-            0
-          ],
-          "F": [
-            6.6,
-            10
-          ],
-          "G": [
-            13.3,
-            0
-          ],
-          "H": [
-            13.3,
-            10
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A"
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          }
+      "jsxGraph": {
+        "width": 360,
+        "height": 280,
+        "boundingbox": [
+          -5,
+          8,
+          5,
+          -2
         ],
-        "sideLabels": [
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "x m"
-          }
-        ]
+        "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
       }
     },
-    "subQuestions": [
-      {
-        "id": "y10-7h-q8a",
-        "type": "short_answer",
-        "question": "a) Express the other side length of the garden in terms of \\( x \\).",
-        "a": "16 - 2x",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "4 vertical sides + 2 horizontal sides",
-            "workingOut": "4x + 2y = 32"
-          },
-          {
-            "explanation": "Solve for y",
-            "workingOut": "y = 16 - 2x"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y10-7h-q8b",
-        "type": "short_answer",
-        "question": "b) Let \\( A \\) m\\(^2\\) be the area of the garden. Write an equation for \\( A \\) in terms of \\( x \\).",
-        "a": "A = 16x - 2x^2",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Area = length × width",
-            "workingOut": "A = x(16 - 2x) = 16x - 2x^2"
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y10-7h-q8c",
-        "type": "short_answer",
-        "question": "c) Find the length and width in order for the area to be a maximum.",
-        "a": "length 8 m, width 4 m",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Complete the square",
-            "workingOut": "A = -2(x - 4)^2 + 32"
-          },
-          {
-            "explanation": "Max at x = 4",
-            "workingOut": "\\text{Width } x = 4 \\text{ m}"
-          },
-          {
-            "explanation": "Find length",
-            "workingOut": "y = 16 - 2(4) = 8 \\text{ m}"
-          }
-        ],
-        "graphData": null
-      }
-    ]
+    "isNew": true,
+    "requiresManualGrading": true
   },
   {
-    "id": "y10-7h-q9",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Consider the quadratic equation \\( y = x^2 + 4x - 5 \\).",
-    "a": "",
-    "solution": "",
-    "solutionSteps": [],
-    "hint": "",
+    "id": "y10-7h-q7a",
+    "topicId": "y10-7h",
+    "c": "7H",
     "t": "Revision",
-    "graphData": null,
-    "subQuestions": [
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For the graph with equation \\( y = 2x^2 - 4x - 6 \\), find the coordinates of the:\na) vertex",
+    "opts": [
+      "\\((1, -8)\\)",
+      "\\((1, -8) + 1\\)",
+      "\\(\\dfrac{12}{5}\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((1, -8)\\).",
+    "solutionSteps": [
       {
-        "id": "y10-7h-q9a",
-        "type": "short_answer",
-        "question": "a) By expressing the equation in the form \\( y = a(x - h)^2 + k \\), find the turning point.",
-        "a": "(-2, -9)",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Complete the square",
-            "workingOut": "y = (x + 2)^2 - 9"
-          },
-          {
-            "explanation": "State turning point",
-            "workingOut": "(-2, -9)"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = 2(x^2 - 2x) - 6\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
-        ],
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 2(x - 1)^2 - 8\\)",
         "graphData": null
       },
       {
-        "id": "y10-7h-q9b",
-        "type": "short_answer",
-        "question": "b) Find the points of intersection with the axes.",
-        "a": "(0, -5), (-5, 0), (1, 0)",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "y-intercept (x=0)",
-            "workingOut": "y = -5 \\Rightarrow (0, -5)"
-          },
-          {
-            "explanation": "x-intercepts (y=0)",
-            "workingOut": "(x + 5)(x - 1) = 0 \\Rightarrow x = -5, 1"
-          }
-        ],
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((1, -8)\\)",
         "graphData": null
       },
       {
-        "id": "y10-7h-q9c",
-        "type": "teacher_review",
-        "question": "c) Sketch the graph, marking on your sketch the points found in a and b.",
-        "a": "",
-        "solution": "Sketch: vertex (-2, -9), x-intercepts (-5, 0) and (1, 0), y-intercept (0, -5), axis of symmetry x = -2",
-        "solutionSteps": [
-          {
-            "explanation": "Key features: Vertex (-2, -9), x-intercepts: (-5, 0) and (1, 0), y-intercept: (0, -5), Axis of symmetry: x = -2",
-            "workingOut": "",
-            "graphData": {
-              "jsxGraph": {
-                "width": 400,
-                "height": 400,
-                "boundingbox": [
-                  -8,
-                  6,
-                  5,
-                  -13
-                ],
-                "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return x*x + 4*x - 5;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[-2,0],[-2,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[-1.7,-3.5,'x = -2'],{color:'#dc2626',fontSize:13});\nboard.create('point',[-2,-9],{name:'V(-2, -9)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-5],{name:'(0, -5)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-5,0],{name:'(-5, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[1,0],{name:'(1, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
-              }
-            }
-          }
-        ],
-        "graphData": null
-      },
-      {
-        "id": "y10-7h-q9d",
-        "type": "short_answer",
-        "question": "d) Solve \\( x^2 + 4x - 5 \\le 0 \\) for \\( x \\).",
-        "a": "-5 \\le x \\le 1",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Parabola is below/on x-axis between the intercepts",
-            "workingOut": "-5 \\le x \\le 1"
-          }
-        ],
+        "explanation": "Final answer: (1, -8). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((1, -8)\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
-    "id": "y10-7h-q10",
-    "type": "short_answer",
-    "difficulty": "medium",
-    "timeLimit": 90,
-    "question": "Consider the quadratic equation \\( y = 2x^2 - 4x - 6 \\).",
-    "a": "",
-    "solution": "",
-    "solutionSteps": [],
-    "hint": "",
+    "id": "y10-7h-q7b",
+    "topicId": "y10-7h",
+    "c": "7H",
     "t": "Revision",
-    "graphData": null,
-    "subQuestions": [
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "For the graph with equation \\( y = 2x^2 - 4x - 6 \\), find the coordinates of the:\nb) \\( x \\)-intercepts",
+    "opts": [
+      "\\(-12\\)",
+      "\\(-1, 3\\)",
+      "\\(-14\\)",
+      "\\(13\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(-1, 3\\).",
+    "solutionSteps": [
       {
-        "id": "y10-7h-q10a",
-        "type": "teacher_review",
-        "question": "a) Sketch the graph, labelling clearly the coordinates of the turning point and the points of intersection with the axes.",
-        "a": "",
-        "solution": "Sketch: vertex (1, -8), x-intercepts (-1, 0) and (3, 0), y-intercept (0, -6), axis of symmetry x = 1",
-        "solutionSteps": [
-          {
-            "explanation": "Key features: Vertex (1, -8), x-intercepts: (-1, 0) and (3, 0), y-intercept: (0, -6), Axis of symmetry: x = 1",
-            "workingOut": "",
-            "graphData": {
-              "jsxGraph": {
-                "width": 400,
-                "height": 400,
-                "boundingbox": [
-                  -4,
-                  6,
-                  7,
-                  -12
-                ],
-                "script": "board.suspendUpdate();\nboard.create('axis',[[0,0],[1,0]],{ticks:{drawLabels:true}});\nboard.create('axis',[[0,0],[0,1]],{ticks:{drawLabels:true}});\nvar f=function(x){return 2*x*x - 4*x - 6;};\nboard.create('functiongraph',[f],{strokeColor:'#2563eb',strokeWidth:2.5});\nboard.create('line',[[1,0],[1,1]],{strokeColor:'#dc2626',strokeWidth:1.5,dash:2,straightFirst:true,straightLast:true,fixed:true});\nboard.create('text',[1.3,-3,'x = 1'],{color:'#dc2626',fontSize:13});\nboard.create('point',[1,-8],{name:'V(1, -8)',size:5,color:'#dc2626',fixed:true,label: {autoPosition: false, offset:[8,-16],fontsize:13}});\nboard.create('point',[0,-6],{name:'(0, -6)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[10,0],fontsize:13}});\nboard.create('point',[-1,0],{name:'(-1, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.create('point',[3,0],{name:'(3, 0)',size:4,color:'#2563eb',fixed:true,label: {autoPosition: false, offset:[5,10],fontsize:13}});\nboard.unsuspendUpdate();"
-              }
-            }
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(2x^2 - 4x - 6 = 0\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
           }
-        ],
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x^2 - 2x - 3 = 0\\)",
         "graphData": null
       },
       {
-        "id": "y10-7h-q10b",
-        "type": "short_answer",
-        "question": "b) Solve \\( 2x^2 - 4x - 6 < 0 \\) for \\( x \\).",
-        "a": "-1 < x < 3",
-        "solution": "",
-        "solutionSteps": [
-          {
-            "explanation": "Parabola is strictly below x-axis between the intercepts",
-            "workingOut": "-1 < x < 3"
-          }
-        ],
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((x - 3)(x + 1) = 0 \\Rightarrow x = 3, -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -1, 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-1, 3\\)",
         "graphData": null
       }
-    ]
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q8a",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "A gardener is planning to establish a vegetable garden. The garden will have a wooden border and two wooden dividers to form three partitions. Thirty-two metres of timber is used for the border and the dividers. Let \\( x \\) m be the length of the dividers and two of the sides of the garden.\na) Express the other side length of the garden in terms of \\( x \\).",
+    "opts": [
+      "\\(-16 - 2x\\)",
+      "\\(16 - 2x\\)",
+      "\\(16 - 2x + 1\\)",
+      "\\(16 - 3x\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(16 - 2x\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(4x + 2y = 32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 16 - 2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(16 - 2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: 16 - 2x. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(16 - 2x\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q8b",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "A gardener is planning to establish a vegetable garden. The garden will have a wooden border and two wooden dividers to form three partitions. Thirty-two metres of timber is used for the border and the dividers. Let \\( x \\) m be the length of the dividers and two of the sides of the garden.\nb) Let \\( A \\) m\\(^2\\) be the area of the garden. Write an equation for \\( A \\) in terms of \\( x \\).",
+    "opts": [
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(A = 16x - 2x^2\\)",
+      "\\(A = 16x - 2x^2 + 1\\)",
+      "\\(A = 16x - 3x^3\\)"
+    ],
+    "a": 1,
+    "answer": "1",
+    "hint": "",
+    "solution": "The correct answer is \\(A = 16x - 2x^2\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(A = x(16 - 2x) = 16x - 2x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(A = 16x - 2x^2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: A = 16x - 2x^2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(A = 16x - 2x^2\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q8c",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "A gardener is planning to establish a vegetable garden. The garden will have a wooden border and two wooden dividers to form three partitions. Thirty-two metres of timber is used for the border and the dividers. Let \\( x \\) m be the length of the dividers and two of the sides of the garden.\nc) Find the length and width in order for the area to be a maximum.",
+    "opts": [
+      "length 8 m, width 4 m",
+      "The opposite statement is true.",
+      "This is only true for acute angles.",
+      "This only holds when the triangle is isosceles."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is length 8 m, width 4 m.",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(A = -2(x - 4)^2 + 32\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Width } x = 4 \\text{ m}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(y = 16 - 2(4) = 8 \\text{ m}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: length 8 m, width 4 m. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "length 8 m, width 4 m",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q9a",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Consider the quadratic equation \\( y = x^2 + 4x - 5 \\).\na) By expressing the equation in the form \\( y = a(x - h)^2 + k \\), find the turning point.",
+    "opts": [
+      "\\((-2, -9)\\)",
+      "\\((-2, -9) + 1\\)",
+      "\\((-3, -9)\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((-2, -9)\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = (x + 2)^2 - 9\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((-2, -9)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((-2, -9)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (-2, -9). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((-2, -9)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q9b",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Consider the quadratic equation \\( y = x^2 + 4x - 5 \\).\nb) Find the points of intersection with the axes.",
+    "opts": [
+      "\\((0, -5), (-5, 0), (1, 0)\\)",
+      "\\((0, -5), (-5, 0), (1, 0) + 1\\)",
+      "\\(\\dfrac{12}{5}\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\((0, -5), (-5, 0), (1, 0)\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(y = -5 \\Rightarrow (0, -5)\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x + 5)(x - 1) = 0 \\Rightarrow x = -5, 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\((0, -5), (-5, 0), (1, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: (0, -5), (-5, 0), (1, 0). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\((0, -5), (-5, 0), (1, 0)\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q9c",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 180,
+    "question": "Consider the quadratic equation \\( y = x^2 + 4x - 5 \\).\nc) Sketch the graph, marking on your sketch the points found in a and b.",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y10-7h-q9d",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Consider the quadratic equation \\( y = x^2 + 4x - 5 \\).\nd) Solve \\( x^2 + 4x - 5 \\le 0 \\) for \\( x \\).",
+    "opts": [
+      "\\(-5 \\le x \\le 1\\)",
+      "\\(-5 \\le x \\le 1 + 1\\)",
+      "\\(5 \\le x \\le 1\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-5 \\le x \\le 1\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(-5 \\le x \\le 1\\)",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-5 \\le x \\le 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -5 \\le x \\le 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-5 \\le x \\le 1\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "y10-7h-q10a",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "teacher_review",
+    "difficulty": "medium",
+    "timeLimit": 180,
+    "question": "Consider the quadratic equation \\( y = 2x^2 - 4x - 6 \\).\na) Sketch the graph, labelling clearly the coordinates of the turning point and the points of intersection with the axes.",
+    "answer": "",
+    "hint": "Write a full structured solution for the teacher to mark.",
+    "solution": "",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "Identify given data",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: . Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": true
+  },
+  {
+    "id": "y10-7h-q10b",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
+    "difficulty": "medium",
+    "timeLimit": 120,
+    "question": "Consider the quadratic equation \\( y = 2x^2 - 4x - 6 \\).\nb) Solve \\( 2x^2 - 4x - 6 < 0 \\) for \\( x \\).",
+    "opts": [
+      "\\(-1 < x < 3\\)",
+      "\\(-1 < x < 3 + 1\\)",
+      "\\(1 < x < 3\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-1 < x < 3\\).",
+    "solutionSteps": [
+      {
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "-1 < x < 3",
+        "graphData": {
+          "jsxGraph": {
+            "width": 360,
+            "height": 280,
+            "boundingbox": [
+              -5,
+              8,
+              5,
+              -2
+            ],
+            "script": "board.suspendUpdate(); board.create('arrow', [[-5,0],[5,0]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('arrow', [[0,-2],[0,8]], {strokeColor:'#94a3b8', strokeWidth:1.5}); board.create('text', [4.4, -0.7, 'x'], {fontSize:13, color:'#64748b'}); board.create('text', [0.12, 7.2, 'y'], {fontSize:13, color:'#64748b'}); board.create('functiongraph', [function(x){ return x*x; }, -4.2, 4.2], {strokeColor:'#6366f1', strokeWidth:2.6}); board.create('text', [1.6, 5.5, 'y = x²'], {fontSize:12, color:'#4f46e5'}); board.unsuspendUpdate();"
+          }
+        }
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "State the rule",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(-1 < x < 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -1 < x < 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-1 < x < 3\\)",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q11a",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve for \\( x \\): \\( x^2 + 2x < 15 \\)",
-    "a": "-5 < x < 3",
-    "solution": "",
+    "opts": [
+      "\\(-5 < x < 3\\)",
+      "\\(-5 < x < 3 + 1\\)",
+      "\\(5 < x < 3\\)",
+      "\\(\\dfrac{13}{6}\\)"
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "",
+    "solution": "The correct answer is \\(-5 < x < 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Rearrange",
-        "workingOut": "x^2 + 2x - 15 < 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(x^2 + 2x - 15 < 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(x + 5)(x - 3) < 0"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "(x + 5)(x - 3) < 0",
+        "graphData": null
       },
       {
-        "explanation": "State solution",
-        "workingOut": "-5 < x < 3"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "-5 < x < 3",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: -5 < x < 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(-5 < x < 3\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q11b",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve for \\( x \\): \\( x^2 + 4x \\ge -3 \\)",
-    "a": "x \\le -3 \\text{ or } x \\ge -1",
-    "solution": "",
+    "opts": [
+      "\\(-x \\le -3 \\text{ or } x \\ge -1\\)",
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(x \\le -3 \\text{ or } x \\ge -1\\)",
+      "\\(x \\le -3 \\text{ or } x \\ge -1 + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(x \\le -3 \\text{ or } x \\ge -1\\).",
     "solutionSteps": [
       {
-        "explanation": "Rearrange",
-        "workingOut": "x^2 + 4x + 3 \\ge 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(x^2 + 4x + 3 \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(x + 3)(x + 1) \\ge 0"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x + 3)(x + 1) \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "State solution",
-        "workingOut": "x \\le -3 \\text{ or } x \\ge -1"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x \\le -3 \\text{ or } x \\ge -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x \\le -3 \\text{ or } x \\ge -1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(x \\le -3 \\text{ or } x \\ge -1\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   },
   {
     "id": "y10-7h-q11c",
-    "type": "short_answer",
+    "topicId": "y10-7h",
+    "c": "7H",
+    "t": "Revision",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Solve for \\( x \\): \\( -x^2 + 2x + 24 \\le 0 \\)",
-    "a": "x \\le -4 \\text{ or } x \\ge 6",
-    "solution": "",
+    "opts": [
+      "\\(-x \\le -4 \\text{ or } x \\ge 6\\)",
+      "\\(\\dfrac{13}{6}\\)",
+      "\\(x \\le -4 \\text{ or } x \\ge 6\\)",
+      "\\(x \\le -4 \\text{ or } x \\ge 6 + 1\\)"
+    ],
+    "a": 2,
+    "answer": "2",
+    "hint": "",
+    "solution": "The correct answer is \\(x \\le -4 \\text{ or } x \\ge 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Multiply by -1 (flip inequality)",
-        "workingOut": "x^2 - 2x - 24 \\ge 0"
+        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Revision: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
+        "workingOut": "\\(x^2 - 2x - 24 \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "Factorise",
-        "workingOut": "(x - 6)(x + 4) \\ge 0"
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\((x - 6)(x + 4) \\ge 0\\)",
+        "graphData": null
       },
       {
-        "explanation": "State solution",
-        "workingOut": "x \\le -4 \\text{ or } x \\ge 6"
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x \\le -4 \\text{ or } x \\ge 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: x \\le -4 \\text{ or } x \\ge 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "\\(x \\le -4 \\text{ or } x \\ge 6\\)",
+        "graphData": null
       }
     ],
-    "hint": "",
-    "t": "Revision",
-    "graphData": null
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
   }
 ];

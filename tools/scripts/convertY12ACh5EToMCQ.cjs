@@ -626,7 +626,7 @@ function mainBuild() {
           q: 'In the second quadrant between the curves and the \\(y\\)-axis, which is true?',
           c: 'For \\(-1\\le x\\le 0\\), \\(e^{x+1}\\ge x^{2}\\)',
           d: [
-            'For \\(-1\\le x\\le 0\\), \\(x^{2}\\ge e^{x+1}\\)',
+            'On [-1, 0], the parabola is above the exponential',
             'The curves do not meet the \\(y\\)-axis',
             'The region has zero area',
           ],
