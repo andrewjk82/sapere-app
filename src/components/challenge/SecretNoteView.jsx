@@ -30,6 +30,11 @@ const SN_QUICK_INSERTS = [
 ];
 import { answersMatch } from '../../utils/answerMatching';
 import {
+  prepareShuffledMcOptions,
+  isDisplayedOptionCorrect,
+  gradeMcSelection,
+} from '../../utils/mcOptionShuffle';
+import {
   MISTAKE_TAGS,
   getDueNote,
   getNoteCount,
@@ -76,20 +81,12 @@ const norm = (s) => String(s ?? '')
   .replace(/\s+/g, '')
   .toLowerCase();
 
-const shuffle = (arr) => {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-};
-
 // Resolve the correct-answer TEXT and (for MC) a freshly shuffled option list.
-// IMPORTANT: only treat numeric keys as option *indices* for isManual seed
-// questions. Calculation / generator MCQs store the real answer value
-// ("1" for 4−3), which collides with index 1 — treating it as an index marks
-// the wrong option correct (see Secret Note S5 screenshot: 4−3 marked as 3).
+// Shuffling + answer resolution goes through the shared mcOptionShuffle
+// helpers — a hand-rolled shuffle here previously re-derived the "index vs
+// value" and diagram-only-option logic those helpers already got right,
+// and drifted out of sync with fixes made to Daily Challenge (see
+// prepareShuffledMcOptions in src/utils/mcOptionShuffle.js).
 const prepareQuestion = (q) => {
   // `options` defaults to `[]` (not undefined) for every non-MC question at
   // write time. Array.isArray([]) is true, so an empty array used to satisfy
@@ -101,15 +98,8 @@ const prepareQuestion = (q) => {
   // Seeds often store the key as `a` (option index) without `answer`.
   const rawKey = q.answer ?? q.a;
   if (isMC) {
-    const opts = getOptions(q);
-    let correctText = String(rawKey ?? '');
-    if (q.isManual && rawKey !== undefined && rawKey !== null) {
-      const idx = parseInt(String(rawKey), 10);
-      if (!Number.isNaN(idx) && opts[idx] !== undefined) {
-        correctText = getOptionText(opts[idx]);
-      }
-    }
-    return { mode: 'mc', options: shuffle(opts), correctText };
+    const shuffledOptions = prepareShuffledMcOptions(q);
+    return { mode: 'mc', options: shuffledOptions, correctText: q._shuffledAnswer ?? '' };
   }
   return { mode: 'text', options: [], correctText: String(rawKey ?? '') };
 };
@@ -564,9 +554,13 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     }
   };
 
-  const submitOriginal = (textVal, optText) => {
+  const submitOriginal = (textVal, optText, optIdx) => {
     const val = optText != null ? optText : textVal;
-    const correct = answersMatch(val, prep.correctText);
+    // Diagram-only MC options (graphData, no text) can't win a text
+    // comparison — gradeMcSelection falls back to the shuffled index.
+    const correct = optText != null
+      ? gradeMcSelection(question, val, optIdx, prep.options)
+      : answersMatch(val, prep.correctText);
     // Preview mode never touches localStorage — mirror recordResult()'s
     // return values (graduated/needTwin/kept) purely locally so the twin
     // flow and feedback copy still demo correctly.
@@ -584,9 +578,11 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
     setPhase('feedback');
   };
 
-  const submitTwin = (textVal, optText) => {
+  const submitTwin = (textVal, optText, optIdx) => {
     const val = optText != null ? optText : textVal;
-    const correct = answersMatch(val, twinPrep.correctText);
+    const correct = optText != null
+      ? gradeMcSelection(twin, val, optIdx, twinPrep.options)
+      : answersMatch(val, twinPrep.correctText);
     setTwinGraded(correct);
     const status = isPreview
       ? (correct ? 'graduated' : 'kept')
@@ -804,10 +800,14 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           <div className="sn__opts">
             {activePrep.options.map((opt, i) => {
               const optText = getOptionText(opt);
+              const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
               const isSel = selectedIdx === i;
               let status = 'default';
               if (isFeedback) {
-                if (answersMatch(optText, activePrep.correctText)) status = 'correct';
+                // Shared helper — never mark two options from a stale
+                // pre-shuffle index, and falls back to shuffled position
+                // for diagram-only (graphData, no text) options.
+                if (isDisplayedOptionCorrect(activeQ, activePrep.options, i)) status = 'correct';
                 else if (isSel) status = 'wrong';
               }
               return (
@@ -818,7 +818,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                   className={`sn__opt sn__opt--${status}${isSel && !isFeedback ? ' sn__opt--sel' : ''}`}
                 >
                   <span className="sn__opt-letter">{String.fromCharCode(65 + i)}</span>
-                  <MathView content={optText} style={{ fontWeight: 700, flex: 1 }} />
+                  <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 700, flex: 1 }} />
                   {status === 'correct' && <CheckCircle2 size={20} style={{ color: '#16a34a' }} />}
                   {status === 'wrong' && <XCircle size={20} style={{ color: '#ef4444' }} />}
                 </button>
@@ -866,7 +866,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                 const optText = activePrep?.mode === 'mc'
                   ? getOptionText(activePrep.options[selectedIdx])
                   : null;
-                isTwinPhase ? submitTwin(answer, optText) : submitOriginal(answer, optText);
+                isTwinPhase ? submitTwin(answer, optText, selectedIdx) : submitOriginal(answer, optText, selectedIdx);
               }}
             >
               Check answer
@@ -901,7 +901,10 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                     Review only — Secret Note does not award XP. Keep practising Daily Challenge for points.
                   </div>
                 )}
-                {!feedbackCorrect && (
+                {/* MC already highlights the correct option green above —
+                    this text line is only needed for free-text answers, and
+                    would print nothing for diagram-only (graphData) options. */}
+                {!feedbackCorrect && activePrep?.mode !== 'mc' && (
                   <div className="sn__fb-answer">
                     Correct answer: <MathView content={activePrep.correctText} style={{ display: 'inline', fontWeight: 800 }} />
                   </div>
