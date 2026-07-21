@@ -7,7 +7,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain of the function $f(x) = \\sqrt{1 - x^2}$?",
     "opts": [
       "\\((0, 1)\\)",
       "\\([0, 1]\\)",
@@ -16,7 +16,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The expression under the square root must be $\\geq 0$. Solve $1 - x^2 \\geq 0$.",
     "solution": "The correct answer is \\([-1, 1]\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the angle of inclination of the line $\\sqrt{3}x - y + 2\\sqrt{3} = 0$ with respect to the positive $x$-axis?",
     "opts": [
       "\\(30°\\)",
       "\\(60°\\)",
@@ -61,7 +61,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rearrange to $y = mx + c$ form, then use $\\tan\\theta = m$.",
     "solution": "The correct answer is \\(60°\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following is equal to $\\dfrac{\\log_3 32}{\\log_3 2}$?",
     "opts": [
       "\\(\\log_3 30\\)",
       "\\(\\log_3 16\\)",
@@ -106,7 +106,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the change of base formula: $\\dfrac{\\log_3 32}{\\log_3 2} = \\log_2 32$.",
     "solution": "The correct answer is \\(5\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "John works in a cake shop, and based on sales over two weeks, he conducted a survey of the five most popular cakes. What type of data is this?",
     "opts": [
       "Categorical nominal",
       "Categorical ordinal",
@@ -151,7 +151,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Types of cakes are names/labels with no natural ordering.",
     "solution": "The correct answer is Categorical nominal.",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A graph shows the cost and income lines for producing boxes of chocolates. The cost line starts at about $5 (fixed cost) and has a gentler slope; the income line starts at 0 with a steeper slope. They intersect at the break-even point. How many boxes need to be sold to break even?",
     "opts": [
       "\\(5\\)",
       "\\(4\\)",
@@ -196,7 +196,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The break-even point is where the cost and income lines intersect.",
     "solution": "The correct answer is \\(3\\).",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The time taken to travel between two regional cities is approximately normally distributed with a mean of 85 minutes and a standard deviation of 4 minutes. The percentage of travel times that are between 81 minutes and 93 minutes is closest to",
     "opts": [
       "\\(68\\%\\)",
       "\\(70.5\\%\\)",
@@ -241,7 +241,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "81 is 1 SD below the mean; 93 is 2 SD above the mean. Use the 68-95-99.7 rule.",
     "solution": "The correct answer is \\(81.5\\%\\).",
     "solutionSteps": [
       {
@@ -277,7 +277,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A Pareto chart shows orders received by a business over five months: Apr (25), May (9), Mar (8), Feb (5), Jan (3). Total orders = 50. The cumulative percentage line reaches about 68% after April. What percentage of orders were received in May?",
     "opts": [
       "\\(69\\%\\)",
       "\\(45\\%\\)",
@@ -286,7 +286,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find May's percentage directly: $\\frac{9}{50} \\times 100$. Or read the cumulative percentage line: 68% after April, 86% after May, so May = 86% − 68% = 18%.",
     "solution": "The correct answer is \\(18\\%\\).",
     "solutionSteps": [
       {
@@ -322,7 +322,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A graph shows the curve $y = f(x)$ with a point $P(a, f(a))$ in the first quadrant. At $P$ the curve is decreasing and concave down. Which statement is true?",
     "opts": [
       "\\(f'(a) < 0, f''(a) < 0\\)",
       "\\(f'(a) > 0, f''(a) > 0\\)",
@@ -331,7 +331,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Decreasing means $f'(a) < 0$. Concave down means $f''(a) < 0$.",
     "solution": "The correct answer is \\(f'(a) < 0, f''(a) < 0\\).",
     "solutionSteps": [
       {
@@ -367,7 +367,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A box contains five red marbles and four blue marbles. Stella selects three marbles at random, without replacing them. The probability that at least one of the marbles that Stella selects is red is",
     "opts": [
       "\\(\\dfrac{5}{9}\\)",
       "\\(\\dfrac{20}{21}\\)",
@@ -376,7 +376,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the complement: $P(\\text{at least one red}) = 1 - P(\\text{no red})$.",
     "solution": "The correct answer is \\(\\dfrac{20}{21}\\).",
     "solutionSteps": [
       {
@@ -412,7 +412,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graphs of $y = f(x)$ and $y = g(x)$ are shown. $f(x)$ is a curve that goes from $x = a$ to $x = d$; $g(x)$ goes from $x = a$ to $x = c$. They intersect at $x = b$ and $x = c$. The shaded region is between the curves from $x = b$ to $x = c$, and between $f(x)$ and the $x$-axis from $x = c$ to $x = d$, with $g(x) = 0$ for $x > c$. The area of the shaded region could be represented by",
     "opts": [
       "\\(\\displaystyle\\int_a^d (f(x) - g(x))\\,dx\\)",
       "\\(\\displaystyle\\int_0^d (f(x) - g(x))\\,dx\\)",
@@ -421,7 +421,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Split the shaded region into (i) between the curves on $[b,c]$ and (ii) under $f$ on $[c,d]$. Alternatively: total area under $f$ from $0$ to $d$, minus area under $g$ from $a$ to $c$.",
     "solution": "The correct answer is \\(\\displaystyle\\int_0^d f(x)\\,dx - \\int_a^c g(x)\\,dx\\).",
     "solutionSteps": [
       {
@@ -457,7 +457,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a triangle, the sides are 8, 10 and 7. Show that $\\cos A = \\dfrac{23}{32}$, where $A$ is the angle opposite the side of length 7.",
     "opts": [
       "\\(-\\cos A = \\dfrac{8^2 + 10^2 - 7^2}{2 \\times 8 \\times 10} = \\dfrac{64 + 100 - 49}{160} = \\dfrac{115}{160} = \\dfrac{23}{32}\\)",
       "\\(\\cos A = \\dfrac{8^2 + 10^2 - 7^2}{2 \\times 8 \\times 10} = \\dfrac{64 + 100 - 49}{160} = \\dfrac{115}{160} = \\dfrac{23}{32}\\)",
@@ -466,7 +466,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the cosine rule: $c^2 = a^2 + b^2 - 2ab\\cos C$.",
     "solution": "The correct answer is \\(\\cos A = \\dfrac{8^2 + 10^2 - 7^2}{2 \\times 8 \\times 10} = \\dfrac{64 + 100 - 49}{160} = \\dfrac{115}{160} = \\dfrac{23}{32}\\).",
     "solutionSteps": [
       {
@@ -502,7 +502,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the result from part (a) that $\\cos A = \\dfrac{23}{32}$ in a triangle with two sides 8 and 10, find the exact area of the triangle.",
     "opts": [
       "\\(\\dfrac{15\\sqrt{55}}{4}\\) units²",
       "\\(\\dfrac{15\\sqrt{55}}{4}\\) units² + 1",
@@ -511,7 +511,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $\\sin A$ using $\\sin^2 A + \\cos^2 A = 1$, then use Area $= \\frac{1}{2}ab\\sin C$.",
     "solution": "The correct answer is \\(\\dfrac{15\\sqrt{55}}{4}\\) units².",
     "solutionSteps": [
       {
@@ -547,7 +547,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the first term is 18 and the sum of the first 20 terms is 1310. Show that the 20th term is 113.",
     "opts": [
       "\\(-S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
       "\\(S_{20} = \\frac{1}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\)",
@@ -556,7 +556,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $S_n = \\frac{n}{2}(a + l)$ where $l$ is the last term.",
     "solution": "The correct answer is \\(S_{20} = \\frac{20}{2}(18 + l) = 1310 \\Rightarrow 18 + l = 131 \\Rightarrow l = 113\\).",
     "solutionSteps": [
       {
@@ -592,7 +592,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the first term is 18 and the 20th term is 113. Find the common difference.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -601,7 +601,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $T_n = a + (n-1)d$.",
     "solution": "The correct answer is \\(d = 5\\).",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series with first term 18 and common difference 5, find the sum of the first 35 terms.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(S_{35} = 3605\\)",
@@ -646,7 +646,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $S_n = \\frac{n}{2}(2a + (n-1)d)$.",
     "solution": "The correct answer is \\(S_{35} = 3605\\).",
     "solutionSteps": [
       {
@@ -682,7 +682,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given the graph of $f(x) = |ax + b|$, the graph has its vertex at $(2.5, 0)$ and $y$-intercept at $(0, 5)$. What are the values of $a$ and $b$?",
     "opts": [
       "\\(a = 2,\\ b = -5\\)",
       "\\(a = -2,\\ b = 5\\)",
@@ -691,7 +691,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The vertex is at the $x$-intercept where $ax + b = 0$. Use the $y$-intercept to find $|b|$, then check which sign for $b$ is consistent.",
     "solution": "The correct answer is \\(a = 2,\\ b = -5\\).",
     "solutionSteps": [
       {
@@ -727,7 +727,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = |2x - 5|$, solve $f(x) \\geq 3$.",
     "opts": [
       "\\(x \\le 1\\) or \\(x \\ge 4\\)",
       "\\(1 \\le x \\le 4\\)",
@@ -736,7 +736,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Solve $|2x - 5| \\geq 3$ by considering two cases: $2x - 5 \\geq 3$ or $2x - 5 \\leq -3$.",
     "solution": "The correct answer is \\(x \\le 1\\) or \\(x \\ge 4\\).",
     "solutionSteps": [
       {
@@ -772,7 +772,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\tan^3\\!\\left(\\dfrac{x}{4}\\right)$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\)",
@@ -781,7 +781,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the chain rule twice: differentiate the outer power, then $\\tan$, then the inner function.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{3}{4}\\sec^2\\!\\left(\\dfrac{x}{4}\\right)\\tan^2\\!\\left(\\dfrac{x}{4}\\right)\\).",
     "solutionSteps": [
       {
@@ -817,7 +817,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\dfrac{e^{3x} - 5}{x + 1}$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\)",
@@ -826,7 +826,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the quotient rule: $\\frac{d}{dx}\\left(\\frac{u}{v}\\right) = \\frac{v u' - u v'}{v^2}$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{3xe^{3x} + 2e^{3x} + 5}{(x+1)^2}\\).",
     "solutionSteps": [
       {
@@ -862,7 +862,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the limiting sum of the geometric series $750, -300, 120, -48, ldots$?",
     "opts": [
       "\\(-S_\\infty = \\dfrac{3750}{7}\\)",
       "\\(S_\\infty = \\dfrac{3750}{7}\\)",
@@ -871,7 +871,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find the common ratio $r = T_2/T_1$. Then $S_\\infty = \\frac{a}{1-r}$ (valid when $|r| < 1$).",
     "solution": "The correct answer is \\(S_\\infty = \\dfrac{3750}{7}\\).",
     "solutionSteps": [
       {
@@ -907,7 +907,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The first four terms of a geometric sequence are $48, m, n$ and $750$. Find the values of $m$ and $n$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(m = 120,\\ n = 300\\)",
@@ -916,7 +916,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $ar^3 = 750$ with $a = 48$ to find $r$, then find $m$ and $n$.",
     "solution": "The correct answer is \\(m = 120,\\ n = 300\\).",
     "solutionSteps": [
       {
@@ -952,7 +952,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the primitive function: $\\displaystyle\\int (5x + 3)^{19}\\,dx$.",
     "opts": [
       "\\(-\\dfrac{(5x+3)^{20}}{100} + C\\)",
       "\\(\\dfrac{(5x+3)^{20}}{100}\\)",
@@ -961,7 +961,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the reverse chain rule: $\\int (ax+b)^n dx = \\frac{(ax+b)^{n+1}}{a(n+1)} + C$.",
     "solution": "The correct answer is \\(\\dfrac{(5x+3)^{20}}{100} + C\\).",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the primitive function: $\\displaystyle\\int \\left(2x^3 + \\dfrac{1}{3x+1}\\right)dx$.",
     "opts": [
       "\\(-\\dfrac{x^4}{2} + \\dfrac{1}{3}\\ln|3x+1| + C\\)",
       "\\(\\dfrac{x^4}{2} + \\dfrac{1}{3}\\ln|3x+1| + C\\)",
@@ -1006,7 +1006,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate term by term. For $\\frac{1}{3x+1}$, use $\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\ln|ax+b| + C$.",
     "solution": "The correct answer is \\(\\dfrac{x^4}{2} + \\dfrac{1}{3}\\ln|3x+1| + C\\).",
     "solutionSteps": [
       {
@@ -1042,7 +1042,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the primitive function: $\\displaystyle\\int \\left(\\sin 10x - \\dfrac{2}{e^{5x}}\\right)dx$.",
     "opts": [
       "\\(--\\dfrac{1}{10}\\cos 10x + \\dfrac{2}{5e^{5x}} + C\\)",
       "\\(-\\dfrac{1}{10}\\cos 10x + \\dfrac{2}{5e^{5x}} + C\\)",
@@ -1051,7 +1051,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\int \\sin(ax)\\,dx = -\\frac{1}{a}\\cos(ax) + C$. Write $\\frac{2}{e^{5x}} = 2e^{-5x}$ then integrate.",
     "solution": "The correct answer is \\(-\\dfrac{1}{10}\\cos 10x + \\dfrac{2}{5e^{5x}} + C\\).",
     "solutionSteps": [
       {
@@ -1087,7 +1087,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that $\\dfrac{d}{dx}(e^{2x}\\cos x) = e^{2x}(2\\cos x - \\sin x)$.",
     "opts": [
       "-By the product rule: \\(\\frac{d}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\).",
       "By the product rule: \\(\\frac{1}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\).",
@@ -1096,7 +1096,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Apply the product rule with $u = e^{2x}$ and $v = \\cos x$.",
     "solution": "The correct answer is By the product rule: \\(\\frac{d}{dx}(e^{2x}\\cos x) = 2e^{2x}\\cos x - e^{2x}\\sin x = e^{2x}(2\\cos x - \\sin x)\\)..",
     "solutionSteps": [
       {
@@ -1132,7 +1132,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the equation of the tangent to the curve $y = e^{2x}\\cos x$ at the point where $x = 0$.",
     "opts": [
       "The opposite of this statement is true.",
       "This is true only when the function is linear.",
@@ -1141,7 +1141,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Substitute $x = 0$ into the derivative (found in part a) to get the gradient, and into $y$ to get the $y$-coordinate.",
     "solution": "The correct answer is y = 2x + 1\\), or equivalently \\(2x - y + 1 = 0.",
     "solutionSteps": [
       {
@@ -1177,7 +1177,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Jesse plans to invest $7500 per year for 8 years in an annuity. His investment will earn interest at the rate of 6% per annum. Using the PVA table (factor for $N=8$, $r=6\\%$ is 6.2098), calculate the present value of his annuity.",
     "opts": [
       "\\(-46\\,573.50\\)",
       "\\(46\\,573.50\\)",
@@ -1186,7 +1186,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Present Value = Payment × PVA factor.",
     "solution": "The correct answer is \\(46\\,573.50\\).",
     "solutionSteps": [
       {
@@ -1222,7 +1222,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Shaon takes out a loan of $12\\,000$ to buy a car. This loan is to be repaid over 5 years at an interest rate of 8% per year. Using the PVA table (factor for $N=5$, $r=8\\%$ is 3.9927), find his yearly repayments.",
     "opts": [
       "\\(-3005.49\\)",
       "\\(3004.49\\)",
@@ -1231,7 +1231,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$\\text{PVA} = M \\times \\text{PVA factor} \\Rightarrow M = \\frac{\\text{PVA}}{\\text{factor}}$.",
     "solution": "The correct answer is \\(3005.49\\).",
     "solutionSteps": [
       {
@@ -1267,7 +1267,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The curve $y = f(x)$ passes through the point $(-1, 2)$ and $f'(x) = 4x^3 - 3$. Find $f(x)$.",
     "opts": [
       "\\(f(x) = x^4 + 3x + 2\\)",
       "\\(f(x) = x^4 - 3x - 2\\)",
@@ -1276,7 +1276,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $f'(x)$ to get $f(x) = x^4 - 3x + C$, then substitute the given point to find $C$.",
     "solution": "The correct answer is \\(f(x) = x^4 - 3x - 2\\).",
     "solutionSteps": [
       {
@@ -1312,7 +1312,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that $\\displaystyle\\int_0^2 \\sqrt{4x+1}\\,dx = \\dfrac{13}{3}$.",
     "opts": [
       "\\(-\\left[\\frac{(4x+1)^{3/2}}{6}\\right]_0^2 = \\frac{27}{6} - \\frac{1}{6} = \\frac{26}{6} = \\frac{13}{3}\\)",
       "\\(\\left[\\frac{(4x+1)^{3/2}}{6}\\right]_0^2 = \\frac{27}{6} - \\frac{1}{6} = \\frac{26}{6} = \\frac{13}{3}\\)",
@@ -1321,7 +1321,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Write $\\sqrt{4x+1} = (4x+1)^{1/2}$ and use the reverse chain rule to integrate.",
     "solution": "The correct answer is \\(\\left[\\frac{(4x+1)^{3/2}}{6}\\right]_0^2 = \\frac{27}{6} - \\frac{1}{6} = \\frac{26}{6} = \\frac{13}{3}\\).",
     "solutionSteps": [
       {
@@ -1357,7 +1357,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $4\\cos^2 x - 3 = 0$ for $-\\pi \\leq x \\leq \\pi$.",
     "opts": [
       "\\(-x = -\\dfrac{5\\pi}{6},\\ -\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\)",
       "\\(x = -\\dfrac{5\\pi}{6},\\ -\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\)",
@@ -1366,7 +1366,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rearrange to $\\cos^2 x = \\frac{3}{4}$, so $\\cos x = \\pm\\frac{\\sqrt{3}}{2}$. Find all solutions in the given domain.",
     "solution": "The correct answer is \\(x = -\\dfrac{5\\pi}{6},\\ -\\dfrac{\\pi}{6},\\ \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -1402,7 +1402,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A discrete random variable $X$ has the probability distribution:\n\n| $X = x$ | 20 | 21 | 22 | 23 |\n|---|---|---|---|---|\n| $P(x)$ | 0.24 | 0.2 | $m$ | 0.4 |\n\nBy finding the value of $m$, calculate the expected value and the variance of $X$.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1411,7 +1411,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "All probabilities must sum to 1. Then $E(X) = \\sum x P(x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is m = 0.16\\); \\(E(X) = 21.72\\); \\(\\text{Var}(X) = 1.4816.",
     "solutionSteps": [
       {
@@ -1447,7 +1447,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $y = \\log_e(2^x - x)$, complete the table by finding the missing value of $y$ at $x = 2.5$ to 3 decimal places.\n\n| $x$ | 1 | 1.5 | 2 | 2.5 | 3 |\n|---|---|---|---|---|---|\n| $y$ | 0 | 0.284 | 0.693 | ? | 1.609 |",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1456,7 +1456,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Substitute $x = 2.5$ into $y = \\ln(2^{2.5} - 2.5)$.",
     "solution": "The correct answer is \\(y = 1.150\\).",
     "solutionSteps": [
       {
@@ -1492,7 +1492,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use the trapezoidal rule with all values from the table ($x = 1, 1.5, 2, 2.5, 3$) to find an approximation for $\\displaystyle\\int_1^3 \\log_e(2^x - x)\\,dx$.",
     "opts": [
       "\\(\\approx 1.466\\)",
       "\\(\\approx 1.466 + 1\\)",
@@ -1501,7 +1501,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "$T \\approx \\frac{h}{2}[y_0 + 2(y_1 + y_2 + y_3) + y_4]$ with $h = 0.5$.",
     "solution": "The correct answer is \\(\\approx 1.466\\).",
     "solutionSteps": [
       {
@@ -1537,7 +1537,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A scatterplot of fertiliser amount ($x$ grams) vs tomato yield ($y$ kg) for 8 plants shows a clear upward linear trend with $R^2 = 0.9453$. Use the scatterplot to describe the association between yield and fertiliser in terms of strength and direction.",
     "opts": [
       "Strong, positive, linear association.",
       "The opposite of this statement is true.",
@@ -1546,7 +1546,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Consider the direction of the trend and how closely the points follow a line.",
     "solution": "The correct answer is Strong, positive, linear association..",
     "solutionSteps": [
       {
@@ -1582,7 +1582,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the tomato fertiliser data, determine the equation of the least-squares regression line. Round values to 2 significant figures. (Data: $x$: 1.0, 1.0, 1.5, 2.0, 2.5, 2.8, 3.0, 3.5; $y$: 3.9, 4.0, 4.4, 5.8, 6.6, 6.8, 7.0, 7.1)",
     "opts": [
       "\\(y \\approx 1.4x + 2.6\\)",
       "\\(y \\approx 1.4x + 2.6 + 1\\)",
@@ -1591,7 +1591,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use a calculator in statistics mode to find the regression coefficients $A$ (intercept) and $B$ (gradient), rounded to 2 significant figures.",
     "solution": "The correct answer is \\(y \\approx 1.4x + 2.6\\).",
     "solutionSteps": [
       {
@@ -1627,7 +1627,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A plant with 2.2 grams of fertiliser was not recorded by accident. Calculate the predicted yield for this plant using the regression line $y = 1.4x + 2.6$.",
     "opts": [
       "\\(y \\approx 5.68\\) kg",
       "\\(y \\approx 5.68\\) kg + 1",
@@ -1636,7 +1636,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $x = 2.2$ into the regression equation.",
     "solution": "The correct answer is \\(y \\approx 5.68\\) kg.",
     "solutionSteps": [
       {
@@ -1672,7 +1672,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Explain why you should not extrapolate from this data to find the yield for high rates of fertiliser usage.",
     "opts": [
       "The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly.",
       "The opposite of this statement is true.",
@@ -1681,7 +1681,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Extrapolation assumes the trend continues beyond the data range, which may not be valid.",
     "solution": "The correct answer is The linear relationship may not hold beyond the observed range of the data. High doses of fertiliser could damage the plants, so the yield may plateau or decrease rather than continue to rise linearly..",
     "solutionSteps": [
       {
@@ -1717,7 +1717,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the curve $y = 3x - x^3 - 1$ for $-3 \\leq x \\leq 2$. Find the stationary points and determine their nature.",
     "opts": [
       "Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\).",
       "The opposite of this statement is true.",
@@ -1726,7 +1726,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $y' = 0$ to find stationary points. Use $y''$ to classify them.",
     "solution": "The correct answer is Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\)..",
     "solutionSteps": [
       {
@@ -1762,7 +1762,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the curve $y = 3x - x^3 - 1$, find the point of inflection.",
     "opts": [
       "\\((0, +1)\\)",
       "\\((0, -1)\\)",
@@ -1771,7 +1771,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $y'' = 0$ and verify a change in concavity.",
     "solution": "The correct answer is \\((0, -1)\\).",
     "solutionSteps": [
       {
@@ -1807,7 +1807,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the maximum value of $y = 3x - x^3 - 1$ for $-3 \\leq x \\leq 2$?",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1816,7 +1816,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Evaluate $y$ at the stationary points and at the endpoints $x = -3$ and $x = 2$, then find the greatest value.",
     "solution": "The correct answer is \\(y = 17\\).",
     "solutionSteps": [
       {
@@ -1852,7 +1852,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Chocolate consumption per person per day is normally distributed with mean 68.95 g and standard deviation 18.45 g. Above what chocolate consumption rate does 2.5% of this population lie?",
     "opts": [
       "\\(105.85\\) grams",
       "\\(105.85\\) grams + 1",
@@ -1861,7 +1861,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "2.5% in the upper tail corresponds to 2 standard deviations above the mean.",
     "solution": "The correct answer is \\(105.85\\) grams.",
     "solutionSteps": [
       {
@@ -1897,7 +1897,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "With mean 68.95 g and SD 18.45 g, Rahul consumed 50.5 g of chocolate in one day. What percentage of this population has a chocolate consumption rate more than Rahul's?",
     "opts": [
       "\\(83\\%\\)",
       "\\(84\\\\)",
@@ -1906,7 +1906,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find the $z$-score for 50.5 g, then determine the percentage above that value.",
     "solution": "The correct answer is \\(84\\%\\).",
     "solutionSteps": [
       {
@@ -1942,7 +1942,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Ben takes a sample of people from this population (mean 68.95 g, SD 18.45 g) and finds that 6 of them consumed less than 13.6 g per day. If Ben's sample has the same distribution as this population, what is Ben's sample size?",
     "opts": [
       "\\(-4000\\)",
       "\\(3999\\)",
@@ -1951,7 +1951,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find the $z$-score for 13.6 g; this gives the proportion below that value. Then set up: proportion × sample size = 6.",
     "solution": "The correct answer is \\(4000\\).",
     "solutionSteps": [
       {
@@ -1987,7 +1987,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The time (minutes) a customer queues has PDF $f(x) = k(64 - x^2)$ for $0 \\leq x \\leq 8$, and 0 otherwise. Show that $k = \\dfrac{3}{1024}$.",
     "opts": [
       "\\(-\\int_0^8 k(64-x^2)\\,dx = k\\left[64x - \\frac{x^3}{3}\\right]_0^8 = k \\cdot \\frac{1024}{3} = 1 \\Rightarrow k = \\frac{3}{1024}\\)",
       "\\(\\int_0^8 k(64-x^2)\\,dx = k\\left[64x - \\frac{1}{3}\\right]_0^8 = k \\cdot \\frac{1024}{3} = 1 \\Rightarrow k = \\frac{3}{1024}\\)",
@@ -1996,7 +1996,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For a valid PDF, $\\int_{-\\infty}^{\\infty} f(x)\\,dx = 1$.",
     "solution": "The correct answer is \\(\\int_0^8 k(64-x^2)\\,dx = k\\left[64x - \\frac{x^3}{3}\\right]_0^8 = k \\cdot \\frac{1024}{3} = 1 \\Rightarrow k = \\frac{3}{1024}\\).",
     "solutionSteps": [
       {
@@ -2032,7 +2032,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the PDF $f(x) = \\dfrac{3}{1024}(64 - x^2)$ for $0 \\leq x \\leq 8$, find the cumulative distribution function $F(x)$.",
     "opts": [
       "\\(-F(x) = \\begin{cases} 0 & x < 0 \\\\ \\dfrac{3x}{16} - \\dfrac{x^3}{1024} & 0 \\leq x \\leq 8 \\\\ 1 & x > 8 \\end{cases}\\)",
       "\\(F(x) = \\begin{cases} 0 & x < 0 \\\\ \\dfrac{3x}{16} - \\dfrac{x^3}{1024} & 0 \\leq x \\leq 8 \\\\ 1 & x > 8 \\end{cases}\\)",
@@ -2041,7 +2041,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$F(x) = \\int_0^x f(t)\\,dt$ for $0 \\leq x \\leq 8$.",
     "solution": "The correct answer is \\(F(x) = \\begin{cases} 0 & x < 0 \\\\ \\dfrac{3x}{16} - \\dfrac{x^3}{1024} & 0 \\leq x \\leq 8 \\\\ 1 & x > 8 \\end{cases}\\).",
     "solutionSteps": [
       {
@@ -2077,7 +2077,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $F(x) = \\dfrac{3x}{16} - \\dfrac{x^3}{1024}$, find the probability that a customer will queue for longer than 5 minutes. Round to 4 significant figures.",
     "opts": [
       "\\(-0.1846\\)",
       "\\(-0.8154\\)",
@@ -2086,7 +2086,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$P(X > 5) = 1 - F(5)$.",
     "solution": "The correct answer is \\(0.1846\\).",
     "solutionSteps": [
       {
@@ -2122,7 +2122,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graphs of $y = 5 - x$ and $y = \\dfrac{4}{2x-1}$ intersect at points $A$ and $B$. Show that the $x$-coordinates of $A$ and $B$ are 1 and 4.5 respectively.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2131,7 +2131,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set the two expressions equal and solve the resulting quadratic.",
     "solution": "The correct answer is Solving \\(5-x = \\frac{4}{2x-1}\\) gives \\((5-x)(2x-1) = 4 \\Rightarrow 2x^2 - 11x + 9 = 0 \\Rightarrow (2x-9)(x-1) = 0 \\Rightarrow x = 1\\) or \\(x = 4.5\\)..",
     "solutionSteps": [
       {
@@ -2167,7 +2167,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact area of the region bounded by $y = 5 - x$ and $y = \\dfrac{4}{2x-1}$ between $x = 1$ and $x = 4.5$.",
     "opts": [
       "-\\(\\dfrac{63}{8} - 2\\ln 8\\) units²",
       "\\(\\dfrac{63}{8} - 2\\ln 8\\) units²",
@@ -2176,7 +2176,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Area $= \\int_1^{4.5}\\left[(5-x) - \\frac{4}{2x-1}\\right]dx$. Integrate each term separately.",
     "solution": "The correct answer is \\(\\dfrac{63}{8} - 2\\ln 8\\) units².",
     "solutionSteps": [
       {
@@ -2212,7 +2212,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A gardener plants roses in rows: the first row has 24, the second row has 29, and each succeeding row has 5 more than the previous row. Calculate the number of rose plants in the 8th row.",
     "opts": [
       "\\(-59\\)",
       "\\(58\\)",
@@ -2221,7 +2221,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "This is an AP with $a = 24$, $d = 5$. Use $T_n = a + (n-1)d$.",
     "solution": "The correct answer is \\(59\\).",
     "solutionSteps": [
       {
@@ -2257,7 +2257,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the rose garden (first row 24, common difference 5), which row would be the first to contain more than 150 rose plants?",
     "opts": [
       "The 27th row.",
       "The opposite of this statement is true.",
@@ -2266,7 +2266,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Solve $24 + (n-1) \\times 5 > 150$ for the smallest integer $n$.",
     "solution": "The correct answer is The 27th row..",
     "solutionSteps": [
       {
@@ -2302,7 +2302,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The gardener planted 2895 rose plants altogether (same AP: first row 24, $d = 5$). How many rows were planted?",
     "opts": [
       "\\(30\\) rows",
       "\\(30\\) rows + 1",
@@ -2311,7 +2311,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $S_n = \\frac{n}{2}(2a + (n-1)d) = 2895$ and solve the resulting quadratic.",
     "solution": "The correct answer is \\(30\\) rows.",
     "solutionSteps": [
       {
@@ -2347,7 +2347,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle moves in a straight line with velocity $v = 2 - 4\\cos 2t$ m/s for $0 \\leq t \\leq 2\\pi$. Find the initial velocity.",
     "opts": [
       "\\(v = +2\\) m/s",
       "\\(v = -2\\) m/s",
@@ -2356,7 +2356,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute $t = 0$.",
     "solution": "The correct answer is \\(v = -2\\) m/s.",
     "solutionSteps": [
       {
@@ -2392,7 +2392,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = 2 - 4\\cos 2t$, find all times when the particle is at rest for $0 \\leq t \\leq 2\\pi$.",
     "opts": [
       "\\(-t = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)",
       "\\(t = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\)",
@@ -2401,7 +2401,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $v = 0$ and solve $\\cos 2t = \\frac{1}{2}$.",
     "solution": "The correct answer is \\(t = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{7\\pi}{6},\\ \\dfrac{11\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -2437,7 +2437,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = 2 - 4\\cos 2t$, find the acceleration when $t = \\dfrac{\\pi}{2}$.",
     "opts": [
       "\\(0\\) m/s²",
       "\\(0\\) m/s² + 1",
@@ -2446,7 +2446,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $v$ to get acceleration, then substitute $t = \\pi/2$.",
     "solution": "The correct answer is \\(0\\) m/s².",
     "solutionSteps": [
       {
@@ -2482,7 +2482,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = 2 - 4\\cos 2t$ and initial displacement 3 m to the right of the origin, find the exact displacement when $t = \\pi$.",
     "opts": [
       "\\(x = 2\\pi + 3\\) metres",
       "\\(x = 2\\pi + 3\\) metres + 1",
@@ -2491,7 +2491,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Integrate $v$ to get $x(t)$, apply the initial condition $x(0) = 3$, then substitute $t = \\pi$.",
     "solution": "The correct answer is \\(x = 2\\pi + 3\\) metres.",
     "solutionSteps": [
       {
@@ -2527,7 +2527,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A window is a rectangle of width $2r$ and height $h$, surmounted by a semicircle of radius $r$. The perimeter is $16\\pi$ metres. Show that $h = 8\\pi - r - \\dfrac{1}{2}\\pi r$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2536,7 +2536,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The perimeter consists of: two vertical sides ($2h$), the base ($2r$), and the semicircle ($\\pi r$).",
     "solution": "The correct answer is Perimeter \\(= 2h + 2r + \\pi r = 16\\pi\\), so \\(2h = 16\\pi - 2r - \\pi r\\), giving \\(h = 8\\pi - r - \\frac{1}{2}\\pi r\\)..",
     "solutionSteps": [
       {
@@ -2572,7 +2572,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $h = 8\\pi - r - \\dfrac{\\pi r}{2}$, show that the area $A$ of the window is $A = 16\\pi r - 2r^2 - \\dfrac{1}{2}\\pi r^2$.",
     "opts": [
       "\\(-A = 2rh + \\frac{1}{2}\\pi r^2 = 2r(8\\pi - r - \\frac{\\pi r}{2}) + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\pi r^2 + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\frac{\\pi r^2}{2}\\)",
       "\\(A = 2rh + \\frac{1}{2}\\pi r^2 = 2r(8\\pi - r - \\frac{\\pi r}{2}) + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\pi r^2 + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\frac{\\pi r^2}{2}\\)",
@@ -2581,7 +2581,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Area = rectangle area + semicircle area $= 2rh + \\frac{1}{2}\\pi r^2$.",
     "solution": "The correct answer is \\(A = 2rh + \\frac{1}{2}\\pi r^2 = 2r(8\\pi - r - \\frac{\\pi r}{2}) + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\pi r^2 + \\frac{\\pi r^2}{2} = 16\\pi r - 2r^2 - \\frac{\\pi r^2}{2}\\).",
     "solutionSteps": [
       {
@@ -2617,7 +2617,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $A = 16\\pi r - 2r^2 - \\dfrac{\\pi r^2}{2}$, find the exact radius $r$ for which the area is a maximum.",
     "opts": [
       "\\(-r = \\dfrac{16\\pi}{4 + \\pi}\\)",
       "\\(r = \\dfrac{16\\pi}{4 + \\pi}\\)",
@@ -2626,7 +2626,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Differentiate $A$ with respect to $r$, set $\\frac{dA}{dr} = 0$, and verify it is a maximum.",
     "solution": "The correct answer is \\(r = \\dfrac{16\\pi}{4 + \\pi}\\).",
     "solutionSteps": [
       {
@@ -2662,7 +2662,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the maximum area of the window (to 1 decimal place), given $r = \\dfrac{16\\pi}{4 + \\pi}$.",
     "opts": [
       "\\(176.9\\) m²",
       "\\(176.9\\) m² + 1",
@@ -2671,7 +2671,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $r = \\frac{16\\pi}{4+\\pi}$ into $A = 16\\pi r - 2r^2 - \\frac{\\pi r^2}{2}$.",
     "solution": "The correct answer is \\(176.9\\) m².",
     "solutionSteps": [
       {

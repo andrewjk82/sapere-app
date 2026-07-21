@@ -7,7 +7,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For what values of $x$ is the curve $f(x) = 3x^3 + x^2$ concave down?",
     "opts": [
       "\\(x < -\\dfrac{1}{9}\\)",
       "\\(x > -\\dfrac{1}{9}\\)",
@@ -16,7 +16,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $f''(x)$ and set it less than zero to find where the curve is concave down.",
     "solution": "The correct answer is \\(x < -\\dfrac{1}{9}\\).",
     "solutionSteps": [
       {
@@ -47,7 +47,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain of the function $f(x) = \\sqrt{x} + \\dfrac{1}{\\sqrt{5-x}}$?",
     "opts": [
       "\\((0, 5)\\)",
       "\\([0, 5)\\)",
@@ -56,7 +56,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "For $\\sqrt{x}$ we need $x \\geq 0$; for $\\frac{1}{\\sqrt{5-x}}$ we need $5-x > 0$. Combine both restrictions.",
     "solution": "The correct answer is \\([0, 5)\\).",
     "solutionSteps": [
       {
@@ -87,7 +87,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two events, $C$ and $D$, are independent, and $P(C)$ and $P(D)$ are both non-zero.\n\nWhich of the following expressions gives the probability that event $C$ occurs and then event $D$ also occurs?",
     "opts": [
       "\\(P(D|C)\\)",
       "\\(P(C|D)\\)",
@@ -96,7 +96,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For independent events, knowing $C$ occurred does not affect the probability of $D$. Use the multiplication rule for independent events.",
     "solution": "The correct answer is \\(P(C)P(D)\\).",
     "solutionSteps": [
       {
@@ -132,7 +132,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The variance of a discrete random variable $X$ is $\\text{Var}(X) = 3.5$.\n\nCalculate $\\text{Var}(4X - 2)$.",
     "opts": [
       "\\(12\\)",
       "\\(14\\)",
@@ -141,7 +141,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the rule $\\text{Var}(aX + b) = a^2 \\cdot \\text{Var}(X)$. Adding a constant does not change variance.",
     "solution": "The correct answer is \\(56\\).",
     "solutionSteps": [
       {
@@ -177,7 +177,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is $f'(x)$ if $f(x) = 4x^3(3-x)^2$?",
     "opts": [
       "\\(12x^2(3-x)(5x-9)\\)",
       "\\(4x^2(3-x)(5x-9)\\)",
@@ -186,7 +186,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Apply the product rule with $u = 4x^3$ and $v = (3-x)^2$. Factor the result carefully.",
     "solution": "The correct answer is \\(4x^2(3-x)(9-5x)\\).",
     "solutionSteps": [
       {
@@ -222,7 +222,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which type of relation is shown below?\n\nSet $P = {a, b, c, d}$ maps to set $Q = {1, 2, 3}$ with: $a \\to 1$, $b \\to 2$, $c \\to 2$, $d \\to 3$.",
     "opts": [
       "\\(One-to-one\\)",
       "\\(One-to-many\\)",
@@ -231,7 +231,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Check if multiple inputs share the same output.",
     "solution": "The correct answer is \\(Many-to-one\\).",
     "solutionSteps": [
       {
@@ -262,7 +262,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following best represents the graph of $g(x) = 3\\cos\\!\\left(\\dfrac{x}{3} + \\dfrac{\\pi}{4}\\right)$?",
     "opts": [
       "\\(Graph (A): amplitude 3, period \\(6\\pi\\), shifted left by \\(\\dfrac{3\\pi}{4}\\)\\)",
       "\\(Graph (B): amplitude 3, period \\(6\\pi\\), no phase shift\\)",
@@ -271,7 +271,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Identify amplitude, period $= \\frac{2\\pi}{|b|}$, and phase shift $= -\\frac{c}{b}$ from $g(x) = a\\cos(bx+c)$.",
     "solution": "The correct answer is \\(Graph (A): amplitude 3, period \\(6\\pi\\), shifted left by \\(\\dfrac{3\\pi}{4}\\)\\).",
     "solutionSteps": [
       {
@@ -302,7 +302,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $\\ln 3 + \\ln 9 + \\ln 27 + \\cdots + \\ln 3^{2n}$?",
     "opts": [
       "\\(n^2 \\ln 3\\)",
       "\\(n(n+1)\\ln 3\\)",
@@ -311,7 +311,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use log laws to write each term as a multiple of $\\ln 3$, then sum the arithmetic series.",
     "solution": "The correct answer is \\(n(2n+1)\\ln 3\\).",
     "solutionSteps": [
       {
@@ -347,7 +347,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the equation of the function $f(x)$ whose graph has undergone transformations in the following order?\n- Translated right 3 units\n- Horizontally dilated by a factor of 2\n- Translated up 5 units",
     "opts": [
       "\\(f\\!\\left(\\dfrac{x}{2} - 3\\right) + 5\\)",
       "\\(f(2(x-3)) + 5\\)",
@@ -356,7 +356,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Apply transformations to the input in order: translate right 3 (replace $x$ with $x-3$), then dilate horizontally by 2 (replace $x$ with $x/2$), then translate up 5.",
     "solution": "The correct answer is \\(f\\!\\left(\\dfrac{x}{2} - 3\\right) + 5\\).",
     "solutionSteps": [
       {
@@ -392,7 +392,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = g(x)$ has a local maximum at $x = P$, a local minimum at $x = R$, and a point of inflection at $x = Q$ between them, where $P < Q < R < 0$.\n\nOver what domain is $g'(x) < 0$ and $g''(x) < 0$?",
     "opts": [
       "\\((-\\infty, P)\\)",
       "\\((P, Q)\\)",
@@ -401,7 +401,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$g'(x) < 0$ where the function is decreasing. $g''(x) < 0$ where the function is concave down. Find where both hold simultaneously.",
     "solution": "The correct answer is \\((P, Q)\\).",
     "solutionSteps": [
       {
@@ -437,7 +437,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A geometric sequence has a first term of $\\dfrac{1}{27}$ and the 7th term of the sequence is $729$. What is the common ratio?",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(r = \\pm 3\\)",
@@ -446,7 +446,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the formula $T_n = ar^{n-1}$ with $a = \\frac{1}{27}$, $T_7 = 729$, and $n = 7$.",
     "solution": "The correct answer is \\(r = \\pm 3\\).",
     "solutionSteps": [
       {
@@ -477,7 +477,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact value of $\\displaystyle\\int_{\\pi/6}^{\\pi/4} \\cos x\\, dx$.",
     "opts": [
       "\\(-\\dfrac{\\sqrt{2} - 1}{2}\\)",
       "\\(\\dfrac{\\sqrt{2} - 1}{2}\\)",
@@ -486,7 +486,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The antiderivative of $\\cos x$ is $\\sin x$. Evaluate at the limits $\\frac{\\pi}{4}$ and $\\frac{\\pi}{6}$.",
     "solution": "The correct answer is \\(\\dfrac{\\sqrt{2} - 1}{2}\\).",
     "solutionSteps": [
       {
@@ -522,7 +522,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Three towns, $P$, $Q$ and $R$ form a triangle. Town $P$ is 60 km from Town $Q$ and Town $R$ is 30 km from Town $P$.\n\nThe bearing of Town $Q$ from Town $P$ is $120°$. The bearing of Town $R$ from Town $P$ is $250°$.\n\nFind the distance between Town $Q$ and Town $R$, to the nearest kilometre.",
     "opts": [
       "\\(QR \\approx 76\\) km",
       "\\(QR \\approx 76\\) km + 1",
@@ -531,7 +531,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find angle $\\angle QPR = 250° - 120° = 130°$, then apply the cosine rule.",
     "solution": "The correct answer is \\(QR \\approx 76\\) km.",
     "solutionSteps": [
       {
@@ -567,7 +567,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\dfrac{d}{dx}\\left(x^2 \\tan 3x\\right)$.",
     "opts": [
       "\\(-x(2\\tan 3x + 3x\\sec^2 3x)\\)",
       "\\(x(2\\sin 3x + 3x\\sec^2 3x)\\)",
@@ -576,7 +576,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the product rule with $u = x^2$ and $v = \\tan 3x$. Recall $\\frac{d}{dx}(\\tan kx) = k\\sec^2 kx$.",
     "solution": "The correct answer is \\(x(2\\tan 3x + 3x\\sec^2 3x)\\).",
     "solutionSteps": [
       {
@@ -612,7 +612,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = -(x+2)(x-1)^3$, showing the intercepts.",
     "answer": "Curve with \\(x\\)-intercepts at \\(x = -2\\) (single root, crosses) and \\(x = 1\\) (triple root, inflection crossing).\n\\(y\\)-intercept at \\(y = 2\\).\nNegative leading coefficient — curve falls to \\(-\\infty\\) for large \\(|x|\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Curve with \\(x\\)-intercepts at \\(x = -2\\) (single root, crosses) and \\(x = 1\\) (triple root, inflection crossing).\n\\(y\\)-intercept at \\(y = 2\\).\nNegative leading coefficient — curve falls to \\(-\\infty\\) for large \\(|x|\\).",
@@ -650,7 +650,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $\\cos\\theta = \\dfrac{3}{8}$ and $270° \\leq \\theta \\leq 360°$, find the exact value of $\\sin\\theta$.",
     "opts": [
       "\\(-\\sin\\theta = -\\dfrac{\\sqrt{55}}{8}\\)",
       "\\(\\sin\\theta = +\\dfrac{\\sqrt{55}}{8}\\)",
@@ -659,7 +659,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $\\sin^2\\theta + \\cos^2\\theta = 1$. Determine the sign of $\\sin\\theta$ from the given quadrant (4th).",
     "solution": "The correct answer is \\(\\sin\\theta = -\\dfrac{\\sqrt{55}}{8}\\).",
     "solutionSteps": [
       {
@@ -695,7 +695,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that $(\\cot x + \\csc x)^2 = \\dfrac{1 + \\cos x}{1 - \\cos x}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -704,7 +704,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Express $\\cot x$ and $\\csc x$ in terms of $\\sin x$ and $\\cos x$, combine over a common denominator, then use $1-\\cos^2 x = (1-\\cos x)(1+\\cos x)$.",
     "solution": "The correct answer is Proof: write \\(\\cot x = \\frac{\\cos x}{\\sin x}\\), \\(\\csc x = \\frac{1}{\\sin x}\\), then use \\(\\sin^2 x = 1-\\cos^2 x\\)..",
     "solutionSteps": [
       {
@@ -740,7 +740,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\cos^2\\beta - 5\\cos\\beta - 3 = 0$ for $0 \\leq \\beta \\leq \\pi$.",
     "opts": [
       "\\(-\\beta = \\dfrac{2\\pi}{3}\\)",
       "\\(\\beta = \\dfrac{2\\pi}{3}\\)",
@@ -749,7 +749,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $u = \\cos\\beta$ and solve the quadratic. Reject solutions outside $[-1,1]$.",
     "solution": "The correct answer is \\(\\beta = \\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -785,7 +785,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the functions $f(x) = e^x$ and $g(x) = \\ln(x-5)$.\n\n(a) Find the composite function $f(g(x))$.\n\n(b) Find in interval notation the range of the composite function.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -794,7 +794,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Substitute $g(x)$ into $f$ and simplify using $e^{\\ln u} = u$. The domain of $g$ restricts $x > 5$.",
     "solution": "The correct answer is (a) \\(f(g(x)) = x - 5\\)\n(b) \\((0, +\\infty)\\).",
     "solutionSteps": [
       {
@@ -830,7 +830,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A curve with the equation $y = f(x)$ has $\\dfrac{dy}{dx} = x^2 + 4x - 5$.\n\n(a) The point $Q(3, 10)$ lies on the curve. Find the equation of $y$.\n\n(b) Find the equation of the normal to the curve at point $Q$, giving your answer in general form.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -839,7 +839,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate $\\frac{dy}{dx}$, use the point $Q(3,10)$ to find $C$. Then find the tangent gradient at $x=3$ and take the negative reciprocal for the normal.",
     "solution": "The correct answer is (a) \\(y = \\dfrac{x^3}{3} + 2x^2 - 5x + 4\\)\n(b) \\(x + 16y - 163 = 0\\).",
     "solutionSteps": [
       {
@@ -913,7 +913,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = \\cos x$ is shown.\n\n(a) Explain why the equation $\\cos x = 1 - \\dfrac{x}{5}$ has three solutions.\n\n(b) Use the graph to approximate the largest solution to the equation $\\cos x = 1 - \\dfrac{x}{5}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -922,7 +922,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Draw $y = 1 - \\frac{x}{5}$ (slope $-\\frac{1}{5}$, $y$-intercept 1) on the same axes as $y = \\cos x$ and count intersections.",
     "solution": "The correct answer is (a) The line \\(y = 1 - \\frac{x}{5}\\) intersects \\(y = \\cos x\\) exactly three times.\n(b) \\(x \\approx 6.5\\).",
     "solutionSteps": [
       {
@@ -1079,7 +1079,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "(a) Show that the derivative of $\\ln\\!\\left(\\dfrac{5+x}{5-x}\\right)$ is $\\dfrac{10}{25-x^2}$.\n\n(b) Hence or otherwise find $\\displaystyle\\int \\dfrac{1}{25-x^2}\\, dx$.",
     "opts": [
       "(a) Proof shown.\n(b) \\(\\dfrac{1}{10}\\ln\\!\\left|\\dfrac{5+x}{5-x}\\right| + C\\)",
       "(a) Proof shown.\n(b) \\(\\frac{10}{1}\\ln\\!\\left|\\dfrac{5+x}{5-x}\\right| + C\\)",
@@ -1088,7 +1088,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): split the log using $\\ln(A/B)=\\ln A-\\ln B$, differentiate, and combine. For (b): reverse the result.",
     "solution": "The correct answer is (a) Proof shown.\n(b) \\(\\dfrac{1}{10}\\ln\\!\\left|\\dfrac{5+x}{5-x}\\right| + C\\).",
     "solutionSteps": [
       {
@@ -1124,7 +1124,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use the Trapezoidal rule, with four sub-intervals, to estimate the value of $\\displaystyle\\int_0^2 \\sqrt{9-x^2}\\, dx$, correct to 3 decimal places.",
     "opts": [
       "\\(\\approx 4.441\\)",
       "\\(\\approx 4.441 + 1\\)",
@@ -1133,7 +1133,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "With 4 sub-intervals over $[0,2]$, $h=0.5$. Evaluate $f(x) = \\sqrt{9-x^2}$ at $x=0, 0.5, 1, 1.5, 2$ and apply the trapezoid formula.",
     "solution": "The correct answer is \\(\\approx 4.441\\).",
     "solutionSteps": [
       {
@@ -1169,7 +1169,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The probability density function for the continuous random variable $Y$ is given by:\n$$f(y) = \\begin{cases} |2-y| & 0 \\leq y \\leq 4 \\\\ 0 & \\text{otherwise} \\end{cases}$$\nFind $P(Y \\leq 3)$.",
     "opts": [
       "\\(-P(Y \\leq 3) = \\dfrac{3}{4}\\)",
       "\\(P(Y \\leq 3) = \\dfrac{3}{4}\\)",
@@ -1178,7 +1178,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Split $|2-y|$ into $(2-y)$ for $y \\leq 2$ and $(y-2)$ for $y > 2$. Integrate on $[0,2]$ and $[2,3]$ and add.",
     "solution": "The correct answer is \\(P(Y \\leq 3) = \\dfrac{3}{4}\\).",
     "solutionSteps": [
       {
@@ -1214,7 +1214,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A juice company fills bottles using a machine. The volume poured is normally distributed, with a mean of 500 mL and a standard deviation of 15 mL.\n\n(a) A bottle has a $z$-score of $-1.4$. How many mL below the mean is this bottle?\n\n(b) At least $97.5\\%$ of bottles must contain more liquid than shown on the label. What is the largest label value the company should use?",
     "opts": [
       "\\((a) 21 mL below the mean\n(b) 470 mL\\)",
       "\\((a) 21 mL below the mean\n(b) 470 mL + 1\\)",
@@ -1223,7 +1223,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): distance $= |z|\\sigma$. For (b): 97.5% above means 2.5% below, so $z=-2$.",
     "solution": "The correct answer is \\((a) 21 mL below the mean\n(b) 470 mL\\).",
     "solutionSteps": [
       {
@@ -1259,7 +1259,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "At the beginning of flu season, 20% of the people in a large population are infected with the flu virus.\n\n(a) Two people are selected at random. Find the probability that both of them have the virus.\n\n(b) Four people are selected at random. Find the probability that at least one of them has the virus. Give your answer to 3 decimal places.\n\n(c) What is the smallest number of people a health researcher would need to test to have a greater than 95% chance that at least one tested person has the virus?",
     "opts": [
       "\\(\\dfrac{7}{3}\\)",
       "(a) \\(0.04\\)\n(b) \\(\\approx 0.590\\)\n(c) \\(14\\) people",
@@ -1268,7 +1268,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "For (a): $(0.2)^2$. For (b): $1-(0.8)^4$. For (c): solve $1-(0.8)^n > 0.95$.",
     "solution": "The correct answer is (a) \\(0.04\\)\n(b) \\(\\approx 0.590\\)\n(c) \\(14\\) people.",
     "solutionSteps": [
       {
@@ -1304,7 +1304,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The functions $y = \\sqrt{x+4}$ and $y = 10-x$ are sketched. They intersect at $(5, 3)$.\n\nCalculate the area bounded by the curves $y = \\sqrt{x+4}$ and $y = 10-x$ and the $x$-axis.",
     "opts": [
       "-\\approx 20.\\overline{6}\\) square units \\(= \\frac{62}{3}",
       "\\approx 20.\\overline{6}\\) square units \\(= \\frac{1}{3}",
@@ -1313,7 +1313,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Split at $x=5$: integrate $\\sqrt{x+4}$ from $x=-4$ to $x=5$, then integrate $10-x$ from $x=5$ to $x=10$.",
     "solution": "The correct answer is \\approx 20.\\overline{6}\\) square units \\(= \\frac{62}{3}.",
     "solutionSteps": [
       {
@@ -1349,7 +1349,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value(s) of $k$ given that $k$, $4k$ and $k^2 + 15$ are consecutive terms of a geometric sequence.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1358,7 +1358,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "For a GP: $\\frac{4k}{k} = \\frac{k^2+15}{4k}$. Cross-multiply to form a quadratic.",
     "solution": "The correct answer is k = 1\\) or \\(k = 15.",
     "solutionSteps": [
       {
@@ -1394,7 +1394,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A probability density function is defined as $f(x) = ke^{-2x}$ in the domain $[0, 4]$.\n\n(a) Show that $k = \\dfrac{2}{1-e^{-8}}$, correct to four decimal places ($k \\approx 2.0007$).\n\n(b) Find the median value of the probability density function, correct to three decimal places.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1403,7 +1403,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): $\\int_0^4 ke^{-2x}dx=1$. For (b): solve $\\int_0^m ke^{-2x}dx=0.5$.",
     "solution": "The correct answer is (a) \\(k = \\dfrac{2}{1-e^{-8}} \\approx 2.0007\\)\n(b) Median \\(\\approx 0.347\\).",
     "solutionSteps": [
       {
@@ -1439,7 +1439,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A spinner is biased as shown in the probability distribution below.\n\n| $x$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| $P(X=x)$ | 0.2 | 0.15 | 0.08 | $b$ | 0.12 | 0.10 |\n\n(a) Explain why $b = 0.35$.\n(b) Find $P(1 < X \\leq 4)$.\n(c) Find $P(X \\leq 4 \\mid X > 1)$.\n(d) Find the expected value of $X$.\n(e) Find $E(3X+2)$.\n(f) Find the variance of $X$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1448,7 +1448,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): $\\sum P=1$. For (c): $P(X\\leq4|X>1)=\\frac{P(1<X\\leq4)}{P(X>1)}$. For (d)–(f): use standard formulas.",
     "solution": "The correct answer is (a) All probabilities sum to 1\n(b) \\(0.58\\)\n(c) \\(\\frac{58}{80} = \\frac{29}{40}\\)\n(d) \\(E(X) \\approx 3.50\\)\n(e) \\(E(3X+2) \\approx 12.50\\)\n(f) \\(\\text{Var}(X) \\approx 3.09\\).",
     "solutionSteps": [
       {
@@ -1484,7 +1484,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Mia conducted a survey about hours of study per week and exam score:\n\n| Hours ($h$) | 2 | 8 | 5 | 1 | 10 | 14 |\n|---|---|---|---|---|---|---|\n| Score ($S$) | 42 | 71 | 58 | 35 | 83 | 92 |\n\n(a) Find Pearson's correlation coefficient $r$ to 2 decimal places. Describe the type and strength of the correlation.\n\n(b) Find the equation of the least-squares regression line in the form $S = Bh + A$ where $A$ and $B$ are integers.\n\n(c) Use your equation to estimate the score for a student who studies 12 hours per week.\n\n(d) Justify why the equation cannot be used for students studying more than 14 hours or fewer than 1 hour per week.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1493,7 +1493,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Enter data into calculator. For (d): the model is only valid for the observed range $[1,14]$.",
     "solution": "The correct answer is (a) \\(r \\approx 0.99\\), very strong positive correlation\n(b) \\(S = 4h + 32\\)\n(c) \\(80\\)\n(d) Extrapolation outside the data range is unreliable..",
     "solutionSteps": [
       {
@@ -1529,7 +1529,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A tank is being emptied. The quantity of water, $W$ litres, remaining at time $t$ minutes is:\n$$W(t) = 1250(20-t)^2, quad 0 \\leq t \\leq 20$$\n\n(a) At what rate (in litres/min) is water being removed at time $t$?\n\n(b) How long will it take to remove at least half the water? Answer to the nearest minute.\n\n(c) At what time does the rate of flow reach 12.5 kL/minute?\n\n(d) Describe how the amount of water remaining changes as the tank empties. Mention how the rate itself changes.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1538,7 +1538,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Differentiate $W(t)$ and take $-W'(t)$ for the removal rate. For (b): set $W(t) = \\frac{1}{2}W(0)$.",
     "solution": "The correct answer is (a) \\(2500(20-t)\\) L/min\n(b) \\(6\\) minutes\n(c) \\(t = 15\\) min\n(d) The water decreases at a decreasing rate..",
     "solutionSteps": [
       {
@@ -1574,7 +1574,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A 120 centimetre length of wire is cut into two pieces at point $P$, where $x$ is the length of one piece.\n\n(a) The piece of length $x$ cm forms an equilateral triangle and the other forms a circle. Show that the total area is:\n$$A = \\dfrac{\\sqrt{3}\\,x^2}{36} + \\dfrac{(120-x)^2}{4\\pi}$$\n\n(b) At what length should $x$ be cut to minimise the total area? Give your answer to the nearest centimetre.",
     "opts": [
       "(a) Proof shown.\n(b) \\(x \\approx 57\\) cm",
       "(a) Proof shown.\n(b) \\(x \\approx 57\\) cm + 1",
@@ -1583,7 +1583,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): equilateral triangle with perimeter $x$ has side $\\frac{x}{3}$, area $= \\frac{\\sqrt{3}}{4}(\\frac{x}{3})^2$. Circle circumference $= 120-x$, so $r=\\frac{120-x}{2\\pi}$.",
     "solution": "The correct answer is (a) Proof shown.\n(b) \\(x \\approx 57\\) cm.",
     "solutionSteps": [
       {

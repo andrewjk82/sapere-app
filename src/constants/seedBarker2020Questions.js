@@ -7,7 +7,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the derivative of $\\ln(\\cos x)$?",
     "opts": [
       "\\(-\\sec x\\)",
       "\\(-\\tan x\\)",
@@ -16,7 +16,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the chain rule: differentiate $\\ln(u)$ then $\\cos x$.",
     "solution": "The correct answer is \\(-\\tan x\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the derivative of $\\ln(\\sin x)$?",
     "opts": [
       "\\(\\tan x\\)",
       "\\(\\cot x\\)",
@@ -61,7 +61,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the chain rule: differentiate $\\ln(u)$ then $\\sin x$.",
     "solution": "The correct answer is \\(\\cot x\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The mean of a set of 10 scores is 14. Another two scores are included and the new mean is 16. What is the mean of the two additional scores?",
     "opts": [
       "\\(4\\)",
       "\\(16\\)",
@@ -106,7 +106,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find the total of all 12 scores, subtract the original total.",
     "solution": "The correct answer is \\(26\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The mean of a set of 8 scores is 12. Another two scores are included and the new mean is 15. What is the mean of the two additional scores?",
     "opts": [
       "\\(3\\)",
       "\\(15\\)",
@@ -151,7 +151,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find the total of all 10 scores, subtract the original total.",
     "solution": "The correct answer is \\(27\\).",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the greatest value of the function $f(x) = -2\\cos x + 3$?",
     "opts": [
       "\\(1\\)",
       "\\(3\\)",
@@ -196,7 +196,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The greatest value of $-\\cos x$ is $1$, occurring when $\\cos x = -1$.",
     "solution": "The correct answer is \\(5\\).",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the greatest value of the function $f(x) = -3\\sin x + 2$?",
     "opts": [
       "\\(-1\\)",
       "\\(2\\)",
@@ -241,7 +241,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The greatest value of $-\\sin x$ is $1$, occurring when $\\sin x = -1$.",
     "solution": "The correct answer is \\(5\\).",
     "solutionSteps": [
       {
@@ -277,7 +277,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Staff at a large department store prepared a Pareto chart of customer complaints over one month. The categories were: Retailer (~47), Opening Times (~30), Parking (~23), Toilets (~15), Other (~7). Approximately what percentage of complaints were about Opening Times?",
     "opts": [
       "\\(12%\\)",
       "\\(25%\\)",
@@ -286,7 +286,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Estimate Opening Times count from the chart and divide by the total.",
     "solution": "The correct answer is \\(25%\\).",
     "solutionSteps": [
       {
@@ -322,7 +322,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A Pareto chart of 200 customer complaints shows: Product Quality (80), Staff Service (50), Wait Time (40), Cleanliness (20), Other (10). Approximately what percentage of complaints were about Staff Service?",
     "opts": [
       "\\(10%\\)",
       "\\(25%\\)",
@@ -331,7 +331,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Divide Staff Service count by the total.",
     "solution": "The correct answer is \\(25%\\).",
     "solutionSteps": [
       {
@@ -367,7 +367,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $f(x) = x^2 - 5x + 1$ is reflected about the $y$-axis. What is the equation of the new function?",
     "opts": [
       "\\(f(x) = x^2 + 5x + 1\\)",
       "\\(f(x) = x^2 + 5x - 1\\)",
@@ -376,7 +376,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Reflection about the $y$-axis replaces $x$ with $-x$.",
     "solution": "The correct answer is \\(f(x) = x^2 + 5x + 1\\).",
     "solutionSteps": [
       {
@@ -412,7 +412,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $f(x) = x^2 - 3x + 4$ is reflected about the $y$-axis. What is the equation of the new function?",
     "opts": [
       "\\(f(x) = x^2 + 3x + 4\\)",
       "\\(f(x) = x^2 + 3x - 4\\)",
@@ -421,7 +421,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Replace $x$ with $-x$ throughout.",
     "solution": "The correct answer is \\(f(x) = x^2 + 3x + 4\\).",
     "solutionSteps": [
       {
@@ -457,7 +457,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the trapezoidal rule with 4 subintervals, which expression gives the approximate area under the curve $y = xe^x$ between $x = 1$ and $x = 3$?",
     "opts": [
       "\\(\\dfrac{1}{4}(e^1 + 6e^{1.5} + 4e^2 + 10e^{2.5} + 3e^3)\\)",
       "\\(\\dfrac{1}{4}(e^1 + 3e^{1.5} + 4e^2 + 5e^{2.5} + 3e^3)\\)",
@@ -466,7 +466,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$h = \\dfrac{3-1}{4} = \\dfrac{1}{2}$. Apply $\\dfrac{h}{2}[y_0 + 2(y_1+y_2+y_3)+y_4]$.",
     "solution": "The correct answer is \\(\\dfrac{1}{4}(e^1 + 3e^{1.5} + 4e^2 + 5e^{2.5} + 3e^3)\\).",
     "solutionSteps": [
       {
@@ -502,7 +502,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the trapezoidal rule with 2 subintervals, which expression gives the approximate area under the curve $y = xe^x$ between $x = 0$ and $x = 2$?",
     "opts": [
       "\\(\\dfrac{1}{2}(0 + 2e^1 + 2e^2)\\)",
       "\\(1 \\cdot (0 + 2e^1 + 2e^2)\\)",
@@ -511,7 +511,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$h = \\dfrac{2-0}{2} = 1$. Apply $\\dfrac{h}{2}[y_0 + 2y_1 + y_2]$.",
     "solution": "The correct answer is \\(1 \\cdot (0 + 2e^1 + 2e^2)\\).",
     "solutionSteps": [
       {
@@ -547,7 +547,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a Year 12 drama class of 26 students, all students do either music or art or both. 11 do music. 5 do both music and art. What is the probability that a randomly chosen student does music and art, given they do art?",
     "opts": [
       "\\(\\dfrac{5}{26}\\)",
       "\\(\\dfrac{1}{4}\\)",
@@ -556,7 +556,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find the number who do art, then use $P(M \\cap A | A) = \\dfrac{n(M \\cap A)}{n(A)}$.",
     "solution": "The correct answer is \\(\\dfrac{1}{4}\\).",
     "solutionSteps": [
       {
@@ -592,7 +592,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a class of 30 students, all students play sport or study music or both. 18 play sport. 8 do both. What is the probability that a randomly chosen student plays sport and studies music, given they study music?",
     "opts": [
       "\\(\\dfrac{8}{30}\\)",
       "\\(\\dfrac{2}{5}\\)",
@@ -601,7 +601,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find total music students, then apply conditional probability.",
     "solution": "The correct answer is \\(\\dfrac{2}{5}\\).",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A graph shows the velocity $v$ of a particle moving in a straight line as a function of time $t$. The positive direction is to the right. At $t = t_1$, the graph is below the $x$-axis and has a positive gradient. Which statement describes the motion when $t = t_1$?",
     "opts": [
       "The velocity is positive, and the acceleration is positive",
       "The velocity is negative, and the acceleration is positive",
@@ -646,7 +646,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Velocity is the $y$-value on the graph; acceleration is the gradient of the velocity graph.",
     "solution": "The correct answer is The velocity is negative, and the acceleration is positive.",
     "solutionSteps": [
       {
@@ -682,7 +682,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A $v$-$t$ graph is above the $x$-axis and has a negative gradient at $t = t_2$. Which statement is correct?",
     "opts": [
       "The velocity is positive, and the acceleration is negative",
       "The velocity is negative, and the acceleration is negative",
@@ -691,7 +691,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "$v > 0$ (above $x$-axis); gradient negative means $a < 0$.",
     "solution": "The correct answer is The velocity is positive, and the acceleration is negative.",
     "solutionSteps": [
       {
@@ -727,7 +727,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The first three terms of a geometric series are $\\dfrac{1}{x} + \\dfrac{1}{x^2} + \\dfrac{1}{x^3} + \\ldots$. If the series has a limiting sum, which of the following is true?",
     "opts": [
       "\\(x < -1\\) or \\(x > 1\\)",
       "\\(-1 < x < 1\\)",
@@ -736,7 +736,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The common ratio is $r = \\dfrac{1}{x}$. A limiting sum requires $|r| < 1$.",
     "solution": "The correct answer is \\(x < -1\\) or \\(x > 1\\).",
     "solutionSteps": [
       {
@@ -772,7 +772,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The series $1 + \\dfrac{2}{x} + \\dfrac{4}{x^2} + \\ldots$ has a common ratio of $\\dfrac{2}{x}$. For what values of $x$ does the series have a limiting sum?",
     "opts": [
       "\\(x < -2\\) or \\(x > 2\\)",
       "\\(-2 < x < 2\\)",
@@ -781,7 +781,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Limiting sum requires $\\left|\\dfrac{2}{x}\\right| < 1$.",
     "solution": "The correct answer is \\(x < -2\\) or \\(x > 2\\).",
     "solutionSteps": [
       {
@@ -817,7 +817,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $y = f(x)$ has a turning point at $(6, 2)$. It is transformed to $y = 3f(-2x + 4) + 2$. Where is the new turning point?",
     "opts": [
       "\\((-1, 8)\\)",
       "\\((-7, 8)\\)",
@@ -826,7 +826,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For the $x$-coordinate: solve $-2x + 4 = 6$. For $y$: apply the $y$-transformation to the original $y$-value.",
     "solution": "The correct answer is \\((-1, 8)\\).",
     "solutionSteps": [
       {
@@ -862,7 +862,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $y = f(x)$ has a turning point at $(4, 3)$. It is transformed to $y = 2f(-x + 1) + 5$. Where is the new turning point?",
     "opts": [
       "\\((-3, 11)\\)",
       "\\((5, 11)\\)",
@@ -871,7 +871,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Solve $-x + 1 = 4$ for the new $x$. Apply the $y$-transformation to $y = 3$.",
     "solution": "The correct answer is \\((-3, 11)\\).",
     "solutionSteps": [
       {
@@ -907,7 +907,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $(3x + 4)^5$.",
     "opts": [
       "\\(-15(3x + 4)^4\\)",
       "\\(15(3x + 4)^4\\)",
@@ -916,7 +916,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the chain rule: bring the power down, reduce by 1, then multiply by the derivative of the inner function.",
     "solution": "The correct answer is \\(15(3x + 4)^4\\).",
     "solutionSteps": [
       {
@@ -952,7 +952,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $(5x - 2)^4$.",
     "opts": [
       "\\(-20(5x - 2)^3\\)",
       "\\(20(5x - 2)^3\\)",
@@ -961,7 +961,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Bring the power down, reduce by 1, multiply by the derivative of the inside.",
     "solution": "The correct answer is \\(20(5x - 2)^3\\).",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\dfrac{\\tan x}{x}$.",
     "opts": [
       "\\(-\\dfrac{x\\sec^2 x - \\tan x}{x^2}\\)",
       "\\(\\dfrac{x\\sec^2 x - \\tan x}{x^2}\\)",
@@ -1006,7 +1006,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the quotient rule: $\\left(\\dfrac{u}{v}\\right)\\prime = \\dfrac{u\\prime v - uv\\prime}{v^2}$.",
     "solution": "The correct answer is \\(\\dfrac{x\\sec^2 x - \\tan x}{x^2}\\).",
     "solutionSteps": [
       {
@@ -1042,7 +1042,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\dfrac{\\sin x}{x}$.",
     "opts": [
       "\\(-\\dfrac{x\\cos x - \\sin x}{x^2}\\)",
       "\\(\\dfrac{x\\cos x - \\sin x}{x^2}\\)",
@@ -1051,7 +1051,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the quotient rule with $u = \\sin x$, $v = x$.",
     "solution": "The correct answer is \\(\\dfrac{x\\cos x - \\sin x}{x^2}\\).",
     "solutionSteps": [
       {
@@ -1186,7 +1186,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Factor out 3 from $e^{3x}(3+9x)$ to get $3e^{3x}(3x+1)$. Recognise this as $3 \\cdot \\dfrac{d}{dx}[xe^{3x}]$.",
     "solution": "Factor: \\(e^{3x}(3+9x)=3e^{3x}(3x+1)=3\\dfrac{d}{dx}[xe^{3x}]\\). Hence \\(\\int_{0}^{2}=3[xe^{3x}]_{0}^{2}=3(2e^{6}-0)=6e^{6}\\).",
     "solutionSteps": [
       {
@@ -1231,7 +1231,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Factor so you can use the given derivative as the antiderivative.",
     "solution": "\\(e^{2x}(2+4x)=2e^{2x}(2x+1)=2\\dfrac{d}{dx}[xe^{2x}]\\). So \\(\\int_{0}^{1}=2[xe^{2x}]_{0}^{1}=2(e^{2}-0)=2e^{2}\\).",
     "solutionSteps": [
       {
@@ -1267,7 +1267,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "A balloon drifts 100 km from point $A$ to point $B$ on a bearing of 28°. At point $B$ the balloon changes direction and drifts 50 km to point $C$ on a bearing of 114°. Draw a diagram showing the above information.",
     "answer": "Diagram should show: North arrows at \\(A\\) and \\(B\\); \\(AB = 100\\) km at bearing 28°; \\(BC = 50\\) km at bearing 114°; angle \\(ABC\\) labelled.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Diagram should show: North arrows at \\(A\\) and \\(B\\); \\(AB = 100\\) km at bearing 28°; \\(BC = 50\\) km at bearing 114°; angle \\(ABC\\) labelled.",
@@ -1305,7 +1305,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that the distance from point $A$ to point $C$ is 115 km to the nearest kilometre.",
     "answer": "The angle at \\(B\\) between \\(BA\\) and \\(BC\\) is \\(180° - 28° + 114° - 180° = 86°\\)...\n(using co-interior/alternate angles: \\(\\angle ABC = 180° - 28° + 114° = 266°\\)...\nthe interior angle is \\(360° - 266° = 94°\\)).\nUsing cosine rule: \\(AC^2 = 100^2 + 50^2 - 2(100)(50)\\cos(94°) \\approx 10000 + 2500 + 697 \\approx 13197\\), so \\(AC \\approx 114.88 \\approx 115\\) km.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "The angle at \\(B\\) between \\(BA\\) and \\(BC\\) is \\(180° - 28° + 114° - 180° = 86°\\)...\n(using co-interior/alternate angles: \\(\\angle ABC = 180° - 28° + 114° = 266°\\)...\nthe interior angle is \\(360° - 266° = 94°\\)).\nUsing cosine rule: \\(AC^2 = 100^2 + 50^2 - 2(100)(50)\\cos(94°) \\approx 10000 + 2500 + 697 \\approx 13197\\), so \\(AC \\approx 114.88 \\approx 115\\) km.",
@@ -1343,7 +1343,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the bearing of point $A$ from point $C$. Give your answer to the nearest degree.",
     "opts": [
       "\\(-234°\\)",
       "\\(234°\\)",
@@ -1352,7 +1352,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the sine rule to find $\\angle BCA$, then work out the bearing.",
     "solution": "The correct answer is \\(234°\\).",
     "solutionSteps": [
       {
@@ -1388,7 +1388,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A boat travels 80 km from $P$ to $Q$ on a bearing of 040°. It then travels 60 km from $Q$ to $R$ on a bearing of 130°. Find the distance $PR$ to the nearest kilometre.",
     "opts": [
       "\\(100\\) km",
       "\\(100\\) km + 1",
@@ -1397,7 +1397,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find the angle at $Q$ using the bearings, then apply the cosine rule.",
     "solution": "The correct answer is \\(100\\) km.",
     "solutionSteps": [
       {
@@ -1433,7 +1433,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int 3^x\\, dx$.",
     "opts": [
       "\\(-\\dfrac{3^x}{\\ln 3} + C\\)",
       "\\(\\dfrac{3^x}{\\ln 3} + C\\)",
@@ -1442,7 +1442,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\displaystyle\\int a^x\\,dx = \\dfrac{a^x}{\\ln a} + C$.",
     "solution": "The correct answer is \\(\\dfrac{3^x}{\\ln 3} + C\\).",
     "solutionSteps": [
       {
@@ -1478,7 +1478,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int 5^x\\, dx$.",
     "opts": [
       "\\(-\\dfrac{5^x}{\\ln 5} + C\\)",
       "\\(\\dfrac{5^x}{\\ln 5} + C\\)",
@@ -1487,7 +1487,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the rule $\\displaystyle\\int a^x\\,dx = \\dfrac{a^x}{\\ln a} + C$.",
     "solution": "The correct answer is \\(\\dfrac{5^x}{\\ln 5} + C\\).",
     "solutionSteps": [
       {
@@ -1523,7 +1523,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int \\dfrac{x}{x^2 + 3}\\, dx$.",
     "opts": [
       "\\(-\\dfrac{1}{2}\\ln(x^2 + 3) + C\\)",
       "\\(\\dfrac{1}{2}\\ln(x^2 + 3) + C\\)",
@@ -1532,7 +1532,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The numerator is (almost) the derivative of the denominator. Use the $\\displaystyle\\int \\dfrac{f\\prime(x)}{f(x)}\\,dx = \\ln|f(x)|$ rule.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln(x^2 + 3) + C\\).",
     "solutionSteps": [
       {
@@ -1568,7 +1568,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int \\dfrac{x}{x^2 + 5}\\, dx$.",
     "opts": [
       "\\(-\\dfrac{1}{2}\\ln(x^2 + 5) + C\\)",
       "\\(\\dfrac{1}{2}\\ln(x^2 + 5) + C\\)",
@@ -1577,7 +1577,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Numerator is half the derivative of the denominator.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln(x^2 + 5) + C\\).",
     "solutionSteps": [
       {
@@ -1613,7 +1613,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_0^{\\pi/2} \\sin\\dfrac{x}{2}\\, dx$.",
     "opts": [
       "\\(-2 - \\sqrt{2}\\)",
       "\\(2 - \\sqrt{2}\\)",
@@ -1622,7 +1622,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\displaystyle\\int \\sin(ax)\\,dx = -\\dfrac{1}{a}\\cos(ax) + C$.",
     "solution": "The correct answer is \\(2 - \\sqrt{2}\\).",
     "solutionSteps": [
       {
@@ -1658,7 +1658,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_0^{\\pi} \\sin\\dfrac{x}{2}\\, dx$.",
     "opts": [
       "\\(-2\\)",
       "\\(1\\)",
@@ -1667,7 +1667,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Antiderivative of $\\sin(x/2)$ is $-2\\cos(x/2)$.",
     "solution": "The correct answer is \\(2\\).",
     "solutionSteps": [
       {
@@ -1703,7 +1703,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "During a storm, water flows into a 7000 litre tank at a rate of $\\dfrac{dV}{dt}$ litres per minute, where $\\dfrac{dV}{dt} = 120 + 26t - t^2$ and $t$ is the time in minutes since the storm began. At what times is the tank filling at twice the initial rate?",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1712,7 +1712,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find the initial rate (at $t=0$), double it, then solve for $t$.",
     "solution": "The correct answer is \\(t = 6\\) minutes and \\(t = 20\\) minutes.",
     "solutionSteps": [
       {
@@ -1748,7 +1748,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Water flows into a tank at a rate $\\dfrac{dV}{dt} = 80 + 18t - t^2$ litres per minute. At what times is the tank filling at twice the initial rate?",
     "opts": [
       "\\(\\dfrac{7}{3}\\)",
       "\\(t = 4\\) minutes and \\(t = 14\\) minutes",
@@ -1757,7 +1757,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Initial rate is at $t=0$. Set rate $= 2 \\times$ initial rate and solve the quadratic.",
     "solution": "The correct answer is \\(t = 4\\) minutes and \\(t = 14\\) minutes.",
     "solutionSteps": [
       {
@@ -1793,7 +1793,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Initially the tank contains 1500 litres of water. When the storm finishes 30 minutes after it began, the tank is overflowing. How many litres of water have been lost?",
     "opts": [
       "\\(-800 litres\\)",
       "\\(800 litres\\)",
@@ -1802,7 +1802,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $\\dfrac{dV}{dt}$ from 0 to 30 to find the total inflow, add the initial amount, then subtract tank capacity.",
     "solution": "The correct answer is \\(800 litres\\).",
     "solutionSteps": [
       {
@@ -1838,7 +1838,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A tank holds 5000 litres and initially contains 1000 litres. Water flows in at $\\dfrac{dV}{dt} = 80 + 18t - t^2$ L/min for 20 minutes. How many litres overflow?",
     "opts": [
       "\\(-1800 litres\\)",
       "\\(1800 litres\\)",
@@ -1847,7 +1847,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate the rate over 30 minutes, add the initial 500 litres, subtract the 5000 L capacity.",
     "solution": "The correct answer is \\(1800 litres\\).",
     "solutionSteps": [
       {
@@ -1883,7 +1883,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A scatterplot shows Push-ups ($P$) vs Sit-ups ($S$) for 10 students with data points roughly: (5,15), (10,25), (15,25), (20,25), (25,35), (30,50), (35,45), (40,50), (45,50), (50,60). Calculate the correlation coefficient correct to 2 decimal places and comment on the strength and direction.",
     "opts": [
       "\\(r \\approx 0.96\\); strong positive correlation",
       "\\(r \\approx 0.96\\); strong positive correlation + 1",
@@ -1892,7 +1892,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Enter the data into your calculator and use the statistics function to find $r$.",
     "solution": "The correct answer is \\(r \\approx 0.96\\); strong positive correlation.",
     "solutionSteps": [
       {
@@ -1928,7 +1928,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A scatterplot of study hours ($H$) vs test score ($T$) for 8 students shows a strong upward trend. The correlation coefficient is calculated as $r = 0.91$. Comment on the strength and direction of the correlation.",
     "opts": [
       "Strong positive correlation",
       "The opposite of this statement is true.",
@@ -1937,7 +1937,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Consider both the magnitude ($|r|$ close to 1 means strong) and sign (positive = positive direction).",
     "solution": "The correct answer is Strong positive correlation.",
     "solutionSteps": [
       {
@@ -1973,7 +1973,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Determine the equation of the least-squares regression line for the push-ups ($P$) and sit-ups ($S$) data, expressing $P$ in terms of $S$.",
     "opts": [
       "\\(P = 0.95S + 12\\)",
       "\\(P = 0.95S + 12 + 1\\)",
@@ -1982,7 +1982,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use your calculator's linear regression function. The line is $P = bS + a$.",
     "solution": "The correct answer is \\(P = 0.95S + 12\\).",
     "solutionSteps": [
       {
@@ -2018,7 +2018,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A least-squares regression line for height ($H$ cm) vs arm span ($A$ cm) is found to have gradient $1.02$ and $y$-intercept $-3.5$. Write the regression equation.",
     "opts": [
       "\\(A = 1.02H + 3.5\\)",
       "\\(A = 1.02H - 3.5\\)",
@@ -2027,7 +2027,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute the gradient and intercept into $y = mx + c$.",
     "solution": "The correct answer is \\(A = 1.02H - 3.5\\).",
     "solutionSteps": [
       {
@@ -2063,7 +2063,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the regression line $P = 0.95S + 12$, predict the number of sit-ups a person can do if they can do 100 push-ups.",
     "opts": [
       "\\(-93 sit-ups\\)",
       "\\(93 sit-ups\\)",
@@ -2072,7 +2072,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute $P = 100$ into the equation and solve for $S$.",
     "solution": "The correct answer is \\(93 sit-ups\\).",
     "solutionSteps": [
       {
@@ -2108,7 +2108,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the regression line $A = 1.02H - 3.5$, predict the arm span of a person who is 170 cm tall.",
     "opts": [
       "\\(169.9\\) cm",
       "\\(169.9\\) cm + 1",
@@ -2117,7 +2117,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $H = 170$ into the equation.",
     "solution": "The correct answer is \\(169.9\\) cm.",
     "solutionSteps": [
       {
@@ -2153,7 +2153,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "An infinite geometric series has a first term of 8 and a limiting sum of 12. Calculate the common ratio.",
     "opts": [
       "\\(-r = \\dfrac{1}{3}\\)",
       "\\(r = \\dfrac{1}{3}\\)",
@@ -2162,7 +2162,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $S_\\infty = \\dfrac{a}{1-r}$ and solve for $r$.",
     "solution": "The correct answer is \\(r = \\dfrac{1}{3}\\).",
     "solutionSteps": [
       {
@@ -2198,7 +2198,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "An infinite geometric series has a first term of 10 and a limiting sum of 25. Calculate the common ratio.",
     "opts": [
       "\\(-r = \\dfrac{3}{5}\\)",
       "\\(r = \\dfrac{3}{5}\\)",
@@ -2207,7 +2207,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $S_\\infty = \\dfrac{a}{1-r}$ and solve for $r$.",
     "solution": "The correct answer is \\(r = \\dfrac{3}{5}\\).",
     "solutionSteps": [
       {
@@ -2243,7 +2243,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence, for the geometric series with first term 8 and common ratio $\\dfrac{1}{3}$, calculate the sum of the first three terms.",
     "opts": [
       "\\(-11.555555555555555\\)",
       "\\(10.555555555555555\\)",
@@ -2252,7 +2252,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $S_n = \\dfrac{a(r^n - 1)}{r - 1}$ with $n = 3$, or simply add the first three terms.",
     "solution": "The correct answer is \\(\\dfrac{104}{9}\\).",
     "solutionSteps": [
       {
@@ -2288,7 +2288,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For a geometric series with first term 10 and common ratio $\\dfrac{3}{5}$, calculate the sum of the first four terms.",
     "opts": [
       "\\(-21.76\\)",
       "\\(20.76\\)",
@@ -2297,7 +2297,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Add the first four terms: $10 + 6 + 3.6 + 2.16$.",
     "solution": "The correct answer is \\(21.76\\).",
     "solutionSteps": [
       {
@@ -2333,7 +2333,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the sum of the first 16 terms is 288 and the sixth term is 8. Find the first term and the common difference.",
     "opts": [
       "a = +12\\), \\(d = 4",
       "a = -12\\), \\(d = 4",
@@ -2342,7 +2342,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $T_6 = a + 5d$ and $S_{16} = \\dfrac{16}{2}(2a + 15d)$. Solve simultaneously.",
     "solution": "The correct answer is a = -12\\), \\(d = 4.",
     "solutionSteps": [
       {
@@ -2378,7 +2378,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the sum of the first 10 terms is 95 and the fourth term is 14. Find the first term and the common difference.",
     "opts": [
       "a = 23\\), \\(d = +3",
       "a = 23\\), \\(d = -3",
@@ -2387,7 +2387,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $T_4 = a+3d$ and $S_{10} = \\dfrac{10}{2}(2a+9d)$. Solve simultaneously.",
     "solution": "The correct answer is a = 23\\), \\(d = -3.",
     "solutionSteps": [
       {
@@ -2423,7 +2423,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Jenna saves for a holiday by contributing $500 every six months into an annuity that pays interest at 9% p.a., compounded every six months. Using the future value interest factor table provided (factor for 4.5%, 6 periods = 6.7169), determine how much she will have in 3 years.",
     "opts": [
       "\\(-3358.45\\)",
       "\\(3357.45\\)",
@@ -2432,7 +2432,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Rate per period = 9% ÷ 2 = 4.5%. Periods = 3 × 2 = 6. Future value = contribution × factor.",
     "solution": "The correct answer is \\(3358.45\\).",
     "solutionSteps": [
       {
@@ -2468,7 +2468,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Marcus contributes $400 every six months into an annuity at 9% p.a. compounded every six months. Using the factor for 4.5%, 4 periods = 4.2782, find the value of his investment after 2 years.",
     "opts": [
       "\\(-1711.28\\)",
       "\\(1710.28\\)",
@@ -2477,7 +2477,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Periods = 2 × 2 = 4. FV = contribution × factor.",
     "solution": "The correct answer is \\(1711.28\\).",
     "solutionSteps": [
       {
@@ -2513,7 +2513,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Toby needs $5000 in 3 years using the same annuity (4.5% per 6 months, factor = 6.7169). How much more than Jenna must he contribute every six months?",
     "opts": [
       "\\(-244.39\\)",
       "\\(243.39\\)",
@@ -2522,7 +2522,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find Toby's required contribution per period using $FV = R \\times \\text{factor}$, then subtract Jenna's \\$500.",
     "solution": "The correct answer is \\(244.39\\).",
     "solutionSteps": [
       {
@@ -2558,7 +2558,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Sophia wants $3000 in 2 years using an annuity at 4.5% per 6 months (factor for 4 periods = 4.2782). How much must she contribute every 6 months?",
     "opts": [
       "\\(-701.29\\)",
       "\\(700.29\\)",
@@ -2567,7 +2567,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Rearrange $FV = R \\times \\text{factor}$ to find $R$.",
     "solution": "The correct answer is \\(701.29\\).",
     "solutionSteps": [
       {
@@ -2603,7 +2603,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "On the axes provided, sketch the function $f(x) = 2\\sin 2x + 1$ in the domain $-\\pi \\leq x \\leq \\pi$. (You do not need to show $x$-intercepts.)",
     "answer": "Amplitude = 2, period = \\(\\pi\\), vertical shift up 1.\nKey points: max = 3 at \\(x = \\pi/4\\) and \\(x=-3\\pi/4\\); min = \\(-1\\) at \\(x = -\\pi/4\\) and \\(x = 3\\pi/4\\); \\(y\\)-intercept at \\((0,1)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Amplitude = 2, period = \\(\\pi\\), vertical shift up 1.\nKey points: max = 3 at \\(x = \\pi/4\\) and \\(x=-3\\pi/4\\); min = \\(-1\\) at \\(x = -\\pi/4\\) and \\(x = 3\\pi/4\\); \\(y\\)-intercept at \\((0,1)\\).",
@@ -2641,7 +2641,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "The curve $y = (x-1)^2$ intersects the line $x + y = 3$ at points $A$ and $B$. Verify that the coordinates of $A$ are $(2, 1)$.",
     "answer": "Substitute \\(x=2\\): \\((2-1)^2 = 1\\) ✓ and \\(2+1=3\\) ✓.\nSo \\((2,1)\\) lies on both curves.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Substitute \\(x=2\\): \\((2-1)^2 = 1\\) ✓ and \\(2+1=3\\) ✓.\nSo \\((2,1)\\) lies on both curves.",
@@ -2679,7 +2679,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the shaded area enclosed by the curve $y = (x-1)^2$ and the lines $x + y = 3$ and $x = 3$.",
     "opts": [
       "-\\(\\dfrac{11}{6}\\) units²",
       "\\(\\dfrac{11}{6}\\) units²",
@@ -2688,7 +2688,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate (top curve) $-$ (bottom curve) from $x=2$ to $x=3$. Top is the line $y=3-x$, bottom is the parabola $y=(x-1)^2$.",
     "solution": "The correct answer is \\(\\dfrac{11}{6}\\) units².",
     "solutionSteps": [
       {
@@ -2724,7 +2724,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the area enclosed by the curve $y = (x-2)^2$ and the line $y = x$.",
     "opts": [
       "-\\(\\dfrac{9}{2}\\) units²",
       "\\(\\dfrac{9}{2}\\) units²",
@@ -2733,7 +2733,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find the intersection points first, then integrate (top $-$ bottom).",
     "solution": "The correct answer is \\(\\dfrac{9}{2}\\) units².",
     "solutionSteps": [
       {
@@ -2769,7 +2769,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $f(x) = 3x^4 - 8x^3 + 6$. Find the coordinates of the stationary points of $y = f(x)$ and determine their nature.",
     "opts": [
       "Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\)",
       "The opposite of this statement is true.",
@@ -2778,7 +2778,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $f'(x)$, set equal to zero, then use $f''(x)$ to determine the nature.",
     "solution": "The correct answer is Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\).",
     "solutionSteps": [
       {
@@ -2814,7 +2814,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $f(x) = 2x^4 - 8x^3 + 5$. Find the coordinates of the stationary points and determine their nature.",
     "opts": [
       "Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\)",
       "The opposite of this statement is true.",
@@ -2823,7 +2823,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $f'(x)$, factorise, then use the second derivative test.",
     "solution": "The correct answer is Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\).",
     "solutionSteps": [
       {
@@ -2859,7 +2859,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Hence, sketch the graph of $y = f(x) = 3x^4 - 8x^3 + 6$ showing all stationary points.",
     "answer": "Graph shows: \\(y\\)-intercept at \\((0,6)\\) (horizontal POI); minimum at \\((2,-10)\\); curve rises steeply for large \\(|x|\\); no \\(x\\)-intercepts visible between 0 and 2.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Graph shows: \\(y\\)-intercept at \\((0,6)\\) (horizontal POI); minimum at \\((2,-10)\\); curve rises steeply for large \\(|x|\\); no \\(x\\)-intercepts visible between 0 and 2.",
@@ -2897,7 +2897,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the probability distribution below where $E(X) = 3.34$:\n\n| $x$ | 1 | 3 | $a$ | 6 |\n|---|---|---|---|---|\n| $p(x)$ | 0.4 | 0.12 | 0.3 | $b$ |\n\nEvaluate $a$ and $b$.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -2906,7 +2906,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $\\sum p(x) = 1$ to find $b$, then $E(X) = \\sum x \\cdot p(x) = 3.34$ to find $a$.",
     "solution": "The correct answer is a = 5\\), \\(b = 0.18.",
     "solutionSteps": [
       {
@@ -2942,7 +2942,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the probability distribution below where $E(X) = 2.8$:\n\n| $x$ | 1 | $a$ | 4 | 6 |\n|---|---|---|---|---|\n| $p(x)$ | 0.3 | 0.4 | 0.2 | $b$ |\n\nEvaluate $a$ and $b$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "a = 2\\), \\(b = 0.1",
@@ -2951,7 +2951,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\sum p(x)=1$ first, then $E(X)=2.8$.",
     "solution": "The correct answer is a = 2\\), \\(b = 0.1.",
     "solutionSteps": [
       {
@@ -2987,7 +2987,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the distribution with $x \\in \\{1, 3, 5, 6\\}$, $p(x) \\in \\{0.4, 0.12, 0.3, 0.18\\}$ and $E(X) = 3.34$, evaluate the Variance.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(\\text{Var}(X) \\approx 4.30\\)",
@@ -2996,7 +2996,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is \\(\\text{Var}(X) \\approx 4.30\\).",
     "solutionSteps": [
       {
@@ -3032,7 +3032,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A discrete random variable $X$ has the distribution $P(X=1)=0.3$, $P(X=2)=0.4$, $P(X=4)=0.2$, $P(X=6)=0.1$. Find the variance of $X$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(\\text{Var}(X) = 2.45\\)",
@@ -3041,7 +3041,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$E(X) = \\sum xp(x)$, then $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is \\(\\text{Var}(X) = 2.45\\).",
     "solutionSteps": [
       {
@@ -3077,7 +3077,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "Due to overfishing, the number $N$ of a species of fish drops exponentially according to $\\dfrac{dN}{dt} = -kN$. Show that $N = Ae^{-kt}$ satisfies this equation.",
     "answer": "Given \\(N = Ae^{-kt}\\).\n\\(\\text{LHS} = \\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}.\\)\n\\(\\text{RHS} = -kN = -k(Ae^{-kt}) = -kAe^{-kt}.\\)\n\\(\\text{LHS} = \\text{RHS}.\\)\nTherefore \\(N = Ae^{-kt}\\) satisfies \\(\\dfrac{dN}{dt} = -kN\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Given \\(N = Ae^{-kt}\\).\n\\(\\text{LHS} = \\dfrac{dN}{dt} = A \\cdot (-k)e^{-kt} = -kAe^{-kt}.\\)\n\\(\\text{RHS} = -kN = -k(Ae^{-kt}) = -kAe^{-kt}.\\)\n\\(\\text{LHS} = \\text{RHS}.\\)\nTherefore \\(N = Ae^{-kt}\\) satisfies \\(\\dfrac{dN}{dt} = -kN\\).",
@@ -3110,7 +3110,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "In 1930 there were 25 000 fish ($t = 0$) and by 2020 there were only 2000 fish. Find the value of $A$ and show that $k \\approx 0.028$.",
     "answer": "At \\(t = 0\\): \\(N = A e^{0} = A = 25\\,000\\).\nSo \\(A = 25\\,000\\).\nFrom 1930 to 2020 is 90 years, so \\(t = 90\\) and \\(N = 2000\\):\n\\(2000 = 25\\,000\\,e^{-90k}\\)\n\\(e^{-90k} = \\dfrac{2000}{25\\,000} = 0.08\\)\n\\(-90k = \\ln(0.08)\\)\n\\(k = -\\dfrac{\\ln(0.08)}{90} = \\dfrac{-\\ln(0.08)}{90}\\)\n\\(\\ln(0.08) \\approx -2.5257\\), so \\(k \\approx \\dfrac{2.5257}{90} \\approx 0.02806 \\approx 0.028\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "At \\(t = 0\\): \\(N = A e^{0} = A = 25\\,000\\).\nSo \\(A = 25\\,000\\).\nFrom 1930 to 2020 is 90 years, so \\(t = 90\\) and \\(N = 2000\\):\n\\(2000 = 25\\,000\\,e^{-90k}\\)\n\\(e^{-90k} = \\dfrac{2000}{25\\,000} = 0.08\\)\n\\(-90k = \\ln(0.08)\\)\n\\(k = -\\dfrac{\\ln(0.08)}{90} = \\dfrac{-\\ln(0.08)}{90}\\)\n\\(\\ln(0.08) \\approx -2.5257\\), so \\(k \\approx \\dfrac{2.5257}{90} \\approx 0.02806 \\approx 0.028\\).",
@@ -3148,7 +3148,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "This species of fish will be declared extinct in this bay when the number drops below 500. Using $N = 25000e^{-0.028t}$, in which year will this occur?",
     "opts": [
       "\\(2020\\)",
       "\\(2050\\)",
@@ -3157,7 +3157,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Solve \\(25000e^{-0.028t}=500\\) for \\(t\\), then add to 1930.",
     "solution": "Set \\(N=500\\): \\(25\\,000e^{-0.028t}=500\\Rightarrow e^{-0.028t}=0.02\\). \\(t=-\\dfrac{\\ln(0.02)}{0.028}\\approx 139.7\\approx 140\\) years. Year \\(=1930+140=2070\\).",
     "solutionSteps": [
       {
@@ -3193,7 +3193,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A population decays according to $P = 10000e^{-0.05t}$ where $t$ is years from 2000. In which year will the population drop below 1000?",
     "opts": [
       "\\(2030\\)",
       "\\(2046\\)",
@@ -3202,7 +3202,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Solve \\(10000e^{-0.05t}=1000\\) for \\(t\\), then add to 2000.",
     "solution": "Set \\(P=1000\\): \\(e^{-0.05t}=0.1\\Rightarrow t=-\\dfrac{\\ln(0.1)}{0.05}\\approx 46\\). Year \\(=2000+46=2046\\).",
     "solutionSteps": [
       {
@@ -3238,7 +3238,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The angle of a sector in a circle of radius 6 cm is 40°. Find the exact length of arc $AB$.",
     "opts": [
       "-\\(\\dfrac{4\\pi}{3}\\) cm",
       "\\(\\dfrac{4\\pi}{3}\\) cm",
@@ -3247,7 +3247,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Convert 40° to radians, then use $l = r\\theta$.",
     "solution": "The correct answer is \\(\\dfrac{4\\pi}{3}\\) cm.",
     "solutionSteps": [
       {
@@ -3283,7 +3283,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A sector has radius 9 cm and angle 60°. Find the exact arc length.",
     "opts": [
       "\\(3\\pi\\) cm",
       "\\(3\\pi\\) cm + 1",
@@ -3292,7 +3292,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Convert 60° to radians ($= \\pi/3$), then $l = r\\theta$.",
     "solution": "The correct answer is \\(3\\pi\\) cm.",
     "solutionSteps": [
       {
@@ -3328,7 +3328,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\cos^2 x - \\cos x = 1$ for $0 \\leq x \\leq 2\\pi$.",
     "opts": [
       "\\(-x = 0,\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ 2\\pi\\)",
       "\\(x = 0,\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ 2\\pi\\)",
@@ -3337,7 +3337,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rearrange to $2\\cos^2 x - \\cos x - 1 = 0$ and treat as a quadratic in $\\cos x$.",
     "solution": "The correct answer is \\(x = 0,\\ \\dfrac{2\\pi}{3},\\ \\dfrac{4\\pi}{3},\\ 2\\pi\\).",
     "solutionSteps": [
       {
@@ -3373,7 +3373,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\sin^2 x + \\sin x - 1 = 0$ for $0 \\leq x \\leq 2\\pi$.",
     "opts": [
       "\\(-x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}\\)",
       "\\(x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}\\)",
@@ -3382,7 +3382,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Factorise as a quadratic in $\\sin x$.",
     "solution": "The correct answer is \\(x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}\\).",
     "solutionSteps": [
       {
@@ -3418,7 +3418,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $f(x) = |x|$ is transformed and the new equation is of the form $y = kf(x+b)+c$. The graph of the new function has its vertex at $(2, 1)$, opens downward, and has a \"width\" twice that of $y=|x|$ (i.e. gradient $\\pm\\frac{1}{2}$). What are the values of $k$, $b$ and $c$?",
     "opts": [
       "\\(k = -\\dfrac{1}{2}\\), \\(b = -2\\), \\(c = 1\\)",
       "\\(k = -\\dfrac{1}{2}\\), \\(b = 2\\), \\(c = 1\\)",
@@ -3427,7 +3427,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The vertex of $y=k|x+b|+c$ is at $(-b,c)$. Flipped (downward) means $k<0$. The gradient magnitude gives $|k|$.",
     "solution": "The correct answer is \\(k = -\\dfrac{1}{2}\\), \\(b = -2\\), \\(c = 1\\).",
     "solutionSteps": [
       {
@@ -3463,7 +3463,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A transformed absolute value function has equation $y = kf(x+b)+c$ where $f(x)=|x|$. Its vertex is at $(-1, 3)$, it opens upward, and its gradient is $\\pm 2$. Find $k$, $b$, and $c$.",
     "opts": [
       "\\(k = 2\\), \\(b = 1\\), \\(c = 3\\)",
       "\\(k = -2\\), \\(b = 1\\), \\(c = 3\\)",
@@ -3472,7 +3472,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Vertex at $(-b,c)=(-1,3)$. Upward means $k>0$. Gradient $=2$ means $|k|=2$.",
     "solution": "The correct answer is \\(k = 2\\), \\(b = 1\\), \\(c = 3\\).",
     "solutionSteps": [
       {
@@ -3508,7 +3508,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "When Josephine started a new job, \\$450 was deposited into her superannuation fund at the beginning of each month. The money was invested at 0.5% per month, compounded monthly. Let $P$ be the value of the investment after 300 months. Show that $P = \\$313\\,406.52$.",
     "answer": "\\(A_1 = 450(1.005)^{300}\\), \\(A_2 = 450(1.005)^{299}\\), …, \\(A_{300} = 450(1.005)^1\\).\nSum (GP, \\(a=1.005\\), \\(r=1.005\\), \\(n=300\\)): \\(P = 450 \\times \\dfrac{1.005(1.005^{300}-1)}{0.005} \\approx 450 \\times 696.45 \\approx \\\\)313\\,406.52.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(A_1 = 450(1.005)^{300}\\), \\(A_2 = 450(1.005)^{299}\\), …, \\(A_{300} = 450(1.005)^1\\).\nSum (GP, \\(a=1.005\\), \\(r=1.005\\), \\(n=300\\)): \\(P = 450 \\times \\dfrac{1.005(1.005^{300}-1)}{0.005} \\approx 450 \\times 696.45 \\approx \\\\)313\\,406.52.",
@@ -3546,7 +3546,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "After retiring, Josephine withdraws \\$2500 from the account at the end of each month, with no further deposits. The account earns 0.5% per month. Let $A_n$ be the amount after $n$ months of retirement. Show that $A_n = (P - 500\\,000) \\times 1.005^n + 500\\,000$.",
     "answer": "\\(A_1 = P(1.005)-2500\\).\n\\(A_2 = A_1(1.005)-2500 = P(1.005)^2-2500(1.005+1)\\).\nBy induction: \\(A_n = P(1.005)^n - 2500\\cdot\\dfrac{1.005^n-1}{0.005} = P(1.005)^n - 500000(1.005^n-1) = (P-500000)(1.005)^n + 500000\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(A_1 = P(1.005)-2500\\).\n\\(A_2 = A_1(1.005)-2500 = P(1.005)^2-2500(1.005+1)\\).\nBy induction: \\(A_n = P(1.005)^n - 2500\\cdot\\dfrac{1.005^n-1}{0.005} = P(1.005)^n - 500000(1.005^n-1) = (P-500000)(1.005)^n + 500000\\).",
@@ -3584,7 +3584,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $A_n = (P-500\\,000)\\times 1.005^n + 500\\,000$ with $P = 313\\,406.52$, for how many months after retirement will there be money left in the account?",
     "opts": [
       "\\(-197 months\\)",
       "\\(197 months\\)",
@@ -3593,7 +3593,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $A_n = 0$ and solve for $n$.",
     "solution": "The correct answer is \\(197 months\\).",
     "solutionSteps": [
       {
@@ -3629,7 +3629,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A retiree has $200\\,000 in an account earning 0.4% per month. They withdraw $1500 at the end of each month. How many complete months until the account is empty?",
     "opts": [
       "\\(-169 months\\)",
       "\\(169 months\\)",
@@ -3638,7 +3638,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $A_n = 0$ where $A_n = 200000(1.004)^n - 1500\\cdot\\dfrac{1.004^n-1}{0.004}$.",
     "solution": "The correct answer is \\(169 months\\).",
     "solutionSteps": [
       {
@@ -3674,7 +3674,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle moves in a straight line with velocity $v = 3e^t + 6e^{-t}$ m/s. It begins at the Origin $O$ ($t=0$, $x=0$). Find the displacement function $x$ at time $t$ seconds.",
     "opts": [
       "\\(x = 3e^t + 6e^{+t} - 3\\)",
       "\\(x = 3e^t - 6e^{-(-t)} + 3\\)",
@@ -3683,7 +3683,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate $v$ with respect to $t$ and apply the initial condition $x(0) = 0$.",
     "solution": "The correct answer is \\(x = 3e^t - 6e^{-t} + 3\\).",
     "solutionSteps": [
       {
@@ -3719,7 +3719,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle has velocity $v = 2e^t + 4e^{-t}$ m/s and starts at the origin. Find its displacement function.",
     "opts": [
       "\\(x = 2e^t + 4e^{+t} - 2\\)",
       "\\(x = 2e^t - 4e^{-(-t)} + 2\\)",
@@ -3728,7 +3728,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate $v$ and use $x(0)=0$ to find the constant.",
     "solution": "The correct answer is \\(x = 2e^t - 4e^{-t} + 2\\).",
     "solutionSteps": [
       {
@@ -3764,7 +3764,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact time when the particle (with $x = 3e^t - 6e^{-t} + 3$) is at $x = 10$ metres.",
     "opts": [
       "\\(t = \\ln 3\\) seconds",
       "\\(t = \\ln 3\\) seconds + 1",
@@ -3773,7 +3773,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $x=10$, multiply through by $e^t$ to get a quadratic in $e^t$.",
     "solution": "The correct answer is \\(t = \\ln 3\\) seconds.",
     "solutionSteps": [
       {
@@ -3809,7 +3809,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact time when the particle with $x = 2e^t - 4e^{-t} + 2$ is at $x = 4$ metres.",
     "opts": [
       "\\(t = \\ln 2\\) seconds",
       "\\(t = \\ln 2\\) seconds + 1",
@@ -3818,7 +3818,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $x=8$, multiply by $e^t$ to get a quadratic in $e^t$.",
     "solution": "The correct answer is \\(t = \\ln 2\\) seconds.",
     "solutionSteps": [
       {
@@ -3854,7 +3854,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $y = e^x$ is reflected about the $y$-axis and moved up by 1 unit to give the function $f(x)$. Write down the equation of $f(x)$.",
     "opts": [
       "\\(f(x) = e^{+x} - 1\\)",
       "\\(f(x) = e^{-(-x)} + 1\\)",
@@ -3863,7 +3863,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Reflecting $e^x$ about the $y$-axis gives $e^{-x}$. Moving up 1 unit adds 1.",
     "solution": "The correct answer is \\(f(x) = e^{-x} + 1\\).",
     "solutionSteps": [
       {
@@ -3899,7 +3899,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch \\(y = f(x) = e^{-x} + 1\\) on the number plane showing all important details.",
     "answer": "Key features: y-intercept (0, 2); horizontal asymptote y = 1; curve always above y = 1; strictly decreasing; as x → ∞, y → 1⁺; as x → −∞, y → ∞.\nSee model sketch.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Key features: y-intercept (0, 2); horizontal asymptote y = 1; curve always above y = 1; strictly decreasing; as x → ∞, y → 1⁺; as x → −∞, y → ∞.\nSee model sketch.",
@@ -3974,7 +3974,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the function $g(x) = \\ln x$. Determine the composite function $f(g(x))$, indicating its domain and range.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3983,7 +3983,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Substitute $g(x) = \\ln x$ into $f(x) = e^{-x}+1$. Then find the domain (where $\\ln x$ is defined) and resulting range.",
     "solution": "The correct answer is f(g(x)) = \\dfrac{1}{x} + 1\\); domain: \\(x > 0\\); range: \\(y > 1.",
     "solutionSteps": [
       {
@@ -4019,7 +4019,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $f(x) = e^x + 2$ and $g(x) = \\ln x$. Find $f(g(x))$, its domain, and its range.",
     "opts": [
       "f(g(x)) = x + 2\\); domain: \\(x > 0\\); range: \\(y > 2",
       "The opposite of this statement is true.",
@@ -4028,7 +4028,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "$e^{\\ln x} = x$. Find domain from $g(x)$ and range from the resulting function.",
     "solution": "The correct answer is f(g(x)) = x + 2\\); domain: \\(x > 0\\); range: \\(y > 2.",
     "solutionSteps": [
       {
@@ -4064,7 +4064,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A student tosses two regular six-sided dice. Find the probability that their sum is greater than 7 AND an even number.",
     "opts": [
       "\\(-0.25\\)",
       "\\(-0.75\\)",
@@ -4073,7 +4073,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "List all outcomes (out of 36) where the sum is both $> 7$ and even (i.e. sum $= 8, 10, 12$).",
     "solution": "The correct answer is \\(\\dfrac{1}{4}\\).",
     "solutionSteps": [
       {
@@ -4109,7 +4109,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two dice are rolled. Find the probability that their sum is greater than 8 and odd.",
     "opts": [
       "\\(-0.16666666666666666\\)",
       "\\(-0.8333333333333334\\)",
@@ -4118,7 +4118,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Odd sums $> 8$: sum $= 9$ or 11.",
     "solution": "The correct answer is \\(\\dfrac{1}{6}\\).",
     "solutionSteps": [
       {
@@ -4154,7 +4154,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the probability that the sum of two dice is greater than 7 and even, given that at least one of the numbers is even.",
     "opts": [
       "\\(-0.2222222222222222\\)",
       "\\(-0.7777777777777778\\)",
@@ -4163,7 +4163,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find $P(\\text{at least one even})$ and then how many of the 9 favourable outcomes have at least one even die.",
     "solution": "The correct answer is \\(\\dfrac{6}{27}\\).",
     "solutionSteps": [
       {
@@ -4199,7 +4199,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two dice are rolled. Find the probability that the sum is greater than 7 and even, given that both numbers are even.",
     "opts": [
       "\\(-0.33333333333333337\\)",
       "\\(-0.6666666666666666\\)",
@@ -4208,7 +4208,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Both even: 9 outcomes. Of those, find even sum $>7$.",
     "solution": "The correct answer is \\(\\dfrac{2}{3}\\).",
     "solutionSteps": [
       {
@@ -4244,7 +4244,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A wire frame has parts $AB$, $BC$, $CD$, $ED$, $AE$, $BD$ where $AB=ED=2$ cm, $BC=a$ cm ($a>0$), and $\\angle CBD = \\theta$. In right-angled triangles within the frame: find $BD$ and $CD$ in terms of $a$ and $\\theta$.",
     "opts": [
       "BD = a-\\cos\\theta\\), \\(CD = a-\\sin\\theta",
       "BD = a\\cos\\theta\\), \\(CD = a\\sin\\theta",
@@ -4253,7 +4253,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "In triangle $BCD$: $\\cos\\theta = BD/BC$ and $\\sin\\theta = CD/BC$.",
     "solution": "The correct answer is BD = a\\cos\\theta\\), \\(CD = a\\sin\\theta.",
     "solutionSteps": [
       {
@@ -4289,7 +4289,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the total length $L$ of the wire frame in terms of $a$ and $\\theta$. (The 6 parts are $AB$, $BC$, $CD$, $ED$, $AE$, $BD$.)",
     "opts": [
       "\\(L = 4 + 2a-\\cos\\theta + a-\\sin\\theta + a\\)",
       "\\(L = 4 + 2a\\cos\\theta + a\\sin\\theta + a\\)",
@@ -4298,7 +4298,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$AB = ED = 2$, $AE = BD = a\\cos\\theta$, $BC = a$, $CD = a\\sin\\theta$. Sum all six parts.",
     "solution": "The correct answer is \\(L = 4 + 2a\\cos\\theta + a\\sin\\theta + a\\).",
     "solutionSteps": [
       {
@@ -4334,7 +4334,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $a = 3\\sqrt{5}$, find the exact maximum possible length of wire in the frame.",
     "opts": [
       "\\(19 + 3\\sqrt{5}\\) cm",
       "\\(19 + 3\\sqrt{5}\\) cm + 1",
@@ -4343,7 +4343,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $a=3\\sqrt{5}$ into $L$, differentiate with respect to $\\theta$, set $L'=0$, verify maximum.",
     "solution": "The correct answer is \\(19 + 3\\sqrt{5}\\) cm.",
     "solutionSteps": [
       {
@@ -4379,7 +4379,7 @@ export const BARKER_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A length $L = 5\\sin\\theta + 12\\cos\\theta$ is to be maximised for $0 < \\theta < \\dfrac{\\pi}{2}$. Find the maximum value of $L$.",
     "opts": [
       "\\(-13\\)",
       "\\(12\\)",
@@ -4388,7 +4388,7 @@ export const BARKER_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $R\\sin(\\theta+\\phi)$ form, or differentiate and set $L'=0$.",
     "solution": "The correct answer is \\(13\\).",
     "solutionSteps": [
       {

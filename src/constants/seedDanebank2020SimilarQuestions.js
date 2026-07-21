@@ -7,7 +7,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the gradient of the line $\\dfrac{x}{4} + \\dfrac{y}{3} = 1$?",
     "opts": [
       "\\(-\\dfrac{4}{3}\\)",
       "\\(-\\dfrac{3}{4}\\)",
@@ -16,7 +16,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rearrange into $y = mx + b$; the coefficient of $x$ is the gradient.",
     "solution": "The correct answer is \\(-\\dfrac{3}{4}\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the expression for $\\dfrac{dy}{dx}$ if $y = \\dfrac{1}{x^3}$?",
     "opts": [
       "\\(-\\dfrac{3}{x^4}\\)",
       "\\(-\\dfrac{1}{x^2}\\)",
@@ -61,7 +61,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Rewrite $\\dfrac{1}{x^3}$ as $x^{-3}$ and apply the power rule.",
     "solution": "The correct answer is \\(-\\dfrac{3}{x^4}\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $c$ for which the circle $(x-2)^2 + (y-5)^2 = c$ touches the $x$-axis?",
     "opts": [
       "\\(5\\)",
       "\\(10\\)",
@@ -106,7 +106,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The radius must equal the distance from the centre to the $x$-axis.",
     "solution": "The correct answer is \\(25\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain of the function $f(x) = \\sqrt{x} + \\dfrac{1}{\\sqrt{3-x}}$?",
     "opts": [
       "\\((0, 3)\\)",
       "\\([0, 3)\\)",
@@ -151,7 +151,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\sqrt{x}$ needs $x \\geq 0$; $\\dfrac{1}{\\sqrt{3-x}}$ needs $3 - x > 0$.",
     "solution": "The correct answer is \\([0, 3)\\).",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The $5^{\\text{th}}$ term of an arithmetic sequence is $23$ and the $9^{\\text{th}}$ term is $43$. Find the first term $a$ and the common difference $d$.",
     "opts": [
       "a = 3\\) and \\(d = 5",
       "a = 5\\) and \\(d = 3",
@@ -196,7 +196,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $T_n = a + (n-1)d$ to write two equations and subtract.",
     "solution": "The correct answer is a = 3\\) and \\(d = 5.",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = f(x)$ is shown. $x = A$ and $x = C$ are stationary points, and $x = B$ is a point of inflection. For $B < x < C$, which statement is true?",
     "opts": [
       "f'(x) < 0\\) and \\(f''(x) > 0",
       "f'(x) < 0\\) and \\(f''(x) < 0",
@@ -241,7 +241,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Between the inflection $B$ and the minimum $C$, decide if the curve is rising or falling and how it bends.",
     "solution": "The correct answer is f'(x) < 0\\) and \\(f''(x) > 0.",
     "solutionSteps": [
       {
@@ -307,7 +307,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which one of the following is the set of all solutions to $3x^2 - 7x + 2 \\geq 0$?",
     "opts": [
       "\\(\\left[\\dfrac{1}{3}, 2\\right]\\)",
       "\\(\\left(\\dfrac{1}{3}, 2\\right)\\)",
@@ -316,7 +316,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Factorise; for \"$\\geq 0$\" with an upward parabola the solution is outside (and at) the roots.",
     "solution": "The correct answer is \\(\\left(-\\infty, dfrac{1}{3}\\right] \\cup [2, infty)\\).",
     "solutionSteps": [
       {
@@ -352,7 +352,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the change in amplitude and period when $f(x) = \\tfrac{1}{2}\\sin 6x$ is transformed into $g(x) = \\sin 3x$?",
     "opts": [
       "The amplitude is halved and the period is halved.",
       "The amplitude is halved and the period is doubled.",
@@ -361,7 +361,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Compare amplitudes (front coefficient) and periods ($\\frac{2\\pi}{b}$).",
     "solution": "The correct answer is The amplitude is doubled and the period is doubled..",
     "solutionSteps": [
       {
@@ -397,7 +397,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For an ungrouped data set with no outliers, the largest possible range is how many times the interquartile range?",
     "opts": [
       "\\(\\(2\\) times\\)",
       "\\(\\(3\\) times\\)",
@@ -406,7 +406,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Each whisker extends at most $1.5\\times\\text{IQR}$; the box spans $1\\times\\text{IQR}$.",
     "solution": "The correct answer is \\(\\(4\\) times\\).",
     "solutionSteps": [
       {
@@ -442,7 +442,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $\\displaystyle\\int_1^2 3^{-x}\\,dx$?",
     "opts": [
       "\\(\\dfrac{2}{9\\ln 3}\\)",
       "\\(\\dfrac{1}{9\\ln 3}\\)",
@@ -451,7 +451,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The primitive of $3^{-x}$ is $\\dfrac{3^{-x}}{-\\ln 3}$.",
     "solution": "The correct answer is \\(\\dfrac{2}{9\\ln 3}\\).",
     "solutionSteps": [
       {
@@ -487,7 +487,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use two applications of the trapezoidal rule to approximate the area of the figure, which has heights $8$ m, $9$ m and $12$ m at points spaced $5$ m apart along the base.",
     "opts": [
       "\\(-95 \\text{ m}^2\\)",
       "\\(95 \\text{ m}^2\\)",
@@ -496,7 +496,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply $A \\approx \\dfrac{h}{2}(f_0 + f_1)$ to each $5$ m strip and add.",
     "solution": "The correct answer is \\(95 \\text{ m}^2\\).",
     "solutionSteps": [
       {
@@ -562,7 +562,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Mia found the radius of sector $OAB$ (area $\\dfrac{49\\pi}{8}$, arc length $\\dfrac{7\\pi}{4}$) using: $(1)\\ \\tfrac{1}{2}r^2\\theta = \\tfrac{49\\pi}{8}$, $(2)\\ r\\theta = \\tfrac{7\\pi}{4}$, $(3)\\ \\tfrac{1}{2}r = \\tfrac{7}{2}$. What operation did Mia perform on $(1)$ and $(2)$ to get $(3)$?",
     "opts": [
       "She divided equation \\((1)\\) by equation \\((2)\\).",
       "The opposite of this statement is true.",
@@ -571,7 +571,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "See how $\\theta$ cancels between $(1)$, $(2)$ and $(3)$.",
     "solution": "The correct answer is She divided equation \\((1)\\) by equation \\((2)\\)..",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the equations from part (a), with $r = 7$ units, what is the value of $\\theta$ for sector $OAB$ (arc length $\\dfrac{7\\pi}{4}$)?",
     "opts": [
       "\\(-\\theta = \\dfrac{\\pi}{4}\\)",
       "\\(\\theta = \\dfrac{\\pi}{4}\\)",
@@ -646,7 +646,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute $r = 7$ into $r\\theta = \\dfrac{7\\pi}{4}$.",
     "solution": "The correct answer is \\(\\theta = \\dfrac{\\pi}{4}\\).",
     "solutionSteps": [
       {
@@ -682,7 +682,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$ABC$ is a triangular field with $AB = BC = 6$ km. The bearing of $B$ from $A$ is $125°$ and the bearing of $C$ from $B$ is $035°$. Show that $\\angle ABC = 90°$.",
     "opts": [
       "\\(\\angle ABC = 90°\\)",
       "\\(\\angle ABC = 90° + 1\\)",
@@ -691,7 +691,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use alternate angles on the parallel north lines for the $125°$ bearing.",
     "solution": "The correct answer is \\(\\angle ABC = 90°\\).",
     "solutionSteps": [
       {
@@ -823,7 +823,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the field $ABC$ with $AB = BC = 6$ km and $\\angle ABC = 90°$, find the area of the field correct to the nearest square kilometre.",
     "opts": [
       "\\(-18 \\text{ km}^2\\)",
       "\\(18 \\text{ km}^2\\)",
@@ -832,7 +832,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $A = \\dfrac{1}{2}ac\\sin B$ with the included angle $90°$.",
     "solution": "The correct answer is \\(18 \\text{ km}^2\\).",
     "solutionSteps": [
       {
@@ -868,7 +868,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The curves $y = 2 - \\dfrac{2}{x}$ and $y = x - 1$ (for $x \\geq 0$) meet at $P$ and $Q$. Find the $x$-coordinates of $P$ and $Q$.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -877,7 +877,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set the expressions equal and multiply by $x$ to form a quadratic.",
     "solution": "The correct answer is \\(x = 1\\) (at \\(P\\)) and \\(x = 2\\) (at \\(Q\\)).",
     "solutionSteps": [
       {
@@ -943,7 +943,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find, in simplest exact form, the area of the region between $y = 2 - \\dfrac{2}{x}$ and $y = x - 1$ (between $x = 1$ and $x = 2$).",
     "opts": [
       "\\(-\\dfrac{3}{2} - 2\\ln 2 \\text{ units}^2\\)",
       "\\(\\dfrac{3}{2} - 2\\ln 2 \\text{ units}^2\\)",
@@ -952,7 +952,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate (upper $-$ lower) from $1$ to $2$; the hyperbola is on top here.",
     "solution": "The correct answer is \\(\\dfrac{3}{2} - 2\\ln 2 \\text{ units}^2\\).",
     "solutionSteps": [
       {
@@ -988,7 +988,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve the equation $|2\\cos x + 1| = 1$ for $0 \\leq x \\leq \\pi$.",
     "opts": [
       "-x = \\dfrac{\\pi}{2}\\) or \\(x = \\pi",
       "x = \\dfrac{\\pi}{2}\\) or \\(x = \\pi",
@@ -997,7 +997,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Split $|A| = 1$ into $A = 1$ and $A = -1$, then solve each.",
     "solution": "The correct answer is x = \\dfrac{\\pi}{2}\\) or \\(x = \\pi.",
     "solutionSteps": [
       {
@@ -1033,7 +1033,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$A(1, 12)$, $B(-3, 4)$ and $C(7, 0)$ are three points. $D$ is the midpoint of $AB$ and $E$ is the midpoint of $AC$. Show that $DE$ is parallel to $BC$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1042,7 +1042,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find $D$ and $E$ with the midpoint formula, then compare gradients.",
     "solution": "The correct answer is \\(m_{DE} = m_{BC} = -\\dfrac{2}{5}\\), so \\(DE \\parallel BC\\)..",
     "solutionSteps": [
       {
@@ -1078,7 +1078,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$250$ people took a lie detector test. Of those lying, $120$ tested positive and $30$ negative; of those not lying, $10$ tested positive and $90$ negative. Find the probability that a person who was lying tested positive.",
     "opts": [
       "\\(-0.19999999999999996\\)",
       "\\(-0.8\\)",
@@ -1087,7 +1087,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Restrict to the people who were lying, then find the fraction testing positive.",
     "solution": "The correct answer is \\(\\dfrac{4}{5}\\).",
     "solutionSteps": [
       {
@@ -1123,7 +1123,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the same data ($250$ people: lying $120$ pos / $30$ neg; not lying $10$ pos / $90$ neg), find the probability that the test was inaccurate.",
     "opts": [
       "\\(-0.16\\)",
       "\\(-0.84\\)",
@@ -1132,7 +1132,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Inaccurate = (lying and negative) or (not lying and positive); add those counts over $250$.",
     "solution": "The correct answer is \\(\\dfrac{4}{25}\\).",
     "solutionSteps": [
       {
@@ -1168,7 +1168,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find, in general form, the equation of the normal to the curve $y = \\sqrt{x}$ at the point where $x = 9$.",
     "opts": [
       "\\(-6x + y - 57 = 0\\)",
       "\\(6x + y - 57 = 0\\)",
@@ -1177,7 +1177,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Tangent gradient is $\\dfrac{1}{2\\sqrt{x}}$ at $x = 9$; the normal gradient is its negative reciprocal.",
     "solution": "The correct answer is \\(6x + y - 57 = 0\\).",
     "solutionSteps": [
       {
@@ -1213,7 +1213,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that $\\log_x 3 = \\dfrac{1}{\\log_3 x}$.",
     "opts": [
       "-By change of base, \\(\\log_x 3 = \\dfrac{\\log_3 3}{\\log_3 x} = \\dfrac{1}{\\log_3 x}\\).",
       "By change of base, \\(\\log_x 3 = \\dfrac{\\log_3 3}{\\log_3 x} = \\dfrac{1}{\\log_3 x}\\).",
@@ -1222,7 +1222,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the change-of-base rule in base $3$.",
     "solution": "The correct answer is By change of base, \\(\\log_x 3 = \\dfrac{\\log_3 3}{\\log_3 x} = \\dfrac{1}{\\log_3 x}\\)..",
     "solutionSteps": [
       {
@@ -1258,7 +1258,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve the equation $\\log_3 x = 9\\log_x 3$.",
     "opts": [
       "-x = 27\\) or \\(x = \\dfrac{1}{27}",
       "x = 27\\) or \\(x = \\dfrac{1}{27}",
@@ -1267,7 +1267,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use part (a) to replace $\\log_x 3$, then let $u = \\log_3 x$.",
     "solution": "The correct answer is x = 27\\) or \\(x = \\dfrac{1}{27}.",
     "solutionSteps": [
       {
@@ -1303,7 +1303,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $f'(x) = 6x^2 - 4x + 3$ and $f(1) = 8$, find an expression for $f(x)$.",
     "opts": [
       "\\(f(x) = 2x^3 + 2x^2 - 3x - 5\\)",
       "\\(f(x) = 2x^3 - 2x^2 + 3x + 5\\)",
@@ -1312,7 +1312,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $f'(x)$, then use $f(1) = 8$ to find $C$.",
     "solution": "The correct answer is \\(f(x) = 2x^3 - 2x^2 + 3x + 5\\).",
     "solutionSteps": [
       {
@@ -1348,7 +1348,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider $f(x) = 8x^3 - 3x^4$. Find the stationary points on $y = f(x)$ and determine their nature.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1357,7 +1357,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Solve $f'(x) = 0$, then classify with $f''(x)$ or a sign table.",
     "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point..",
     "solutionSteps": [
       {
@@ -1393,7 +1393,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $f(x) = 8x^3 - 3x^4$, showing the stationary points and the intercepts on the axes.",
     "answer": "Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\(\\left(\\tfrac{8}{3},0\\right)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum at \\((2,16)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\(\\left(\\tfrac{8}{3},0\\right)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum at \\((2,16)\\).",
@@ -1431,7 +1431,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A discrete random variable $X$ has $P(X{=}1)=0.25$, $P(X{=}2)=0.4$, $P(X{=}3)=a$, $P(X{=}4)=b$, and mean $2.2$. Find two equations in $a$ and $b$.",
     "opts": [
       "a + b = 0.35\\) and \\(3a + 4b = 1.15",
       "The opposite of this statement is true.",
@@ -1440,7 +1440,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Probabilities sum to $1$; and $\\sum x\\,P(x) = 2.2$.",
     "solution": "The correct answer is a + b = 0.35\\) and \\(3a + 4b = 1.15.",
     "solutionSteps": [
       {
@@ -1476,7 +1476,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the values of $a$ and $b$ (where $a + b = 0.35$ and $3a + 4b = 1.15$).",
     "opts": [
       "a = 0.25\\) and \\(b = 0.10",
       "The opposite of this statement is true.",
@@ -1485,7 +1485,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Multiply the first equation by $3$ and subtract from the second.",
     "solution": "The correct answer is a = 0.25\\) and \\(b = 0.10.",
     "solutionSteps": [
       {
@@ -1521,7 +1521,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $y = x\\cos 3x$, find $\\dfrac{dy}{dx}$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\cos 3x - 3x\\sin 3x\\)",
       "\\(\\dfrac{dy}{dx} = \\cos 3x - 3x\\sin 3x\\)",
@@ -1530,7 +1530,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Product rule with $u = x$, $v = \\cos 3x$; $\\frac{d}{dx}\\cos 3x = -3\\sin 3x$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\cos 3x - 3x\\sin 3x\\).",
     "solutionSteps": [
       {
@@ -1566,7 +1566,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider $f(x) = e^x$ and $g(x) = \\ln(x - 3)$. Find the composite function $f(g(x))$.",
     "opts": [
       "\\(f(g(x)) = x + 3\\)",
       "\\(f(g(x)) = x - 3\\)",
@@ -1575,7 +1575,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute $g$ into $f$; $e^{\\ln A} = A$.",
     "solution": "The correct answer is \\(f(g(x)) = x - 3\\).",
     "solutionSteps": [
       {
@@ -1611,7 +1611,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find, in interval notation, the range of the composite function $f(g(x)) = x - 3$ (where $g(x) = \\ln(x-3)$).",
     "opts": [
       "\\((0, \\infty)\\)",
       "\\((0, \\infty) + 1\\)",
@@ -1620,7 +1620,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The domain restriction from $g$ is $x > 3$; apply it before finding the range.",
     "solution": "The correct answer is \\((0, \\infty)\\).",
     "solutionSteps": [
       {
@@ -1656,7 +1656,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For a class of students, the English marks $x$ and Science marks $y$ have a strong upward linear trend. A calculator gives the correlation coefficient as approximately $0.9$. Describe the nature of the correlation.",
     "opts": [
       "A strong positive correlation.",
       "The opposite of this statement is true.",
@@ -1665,7 +1665,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Interpret $r$ near $+1$.",
     "solution": "The correct answer is A strong positive correlation..",
     "solutionSteps": [
       {
@@ -1701,7 +1701,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The least-squares regression line of Science mark $y$ on English mark $x$ is $y = 0.72x + 18$. Estimate the Science mark of a student whose English mark is $83$.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1710,7 +1710,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Substitute $x = 83$ into the regression equation.",
     "solution": "The correct answer is Estimated Science mark \\(\\approx 78\\).",
     "solutionSteps": [
       {
@@ -1791,7 +1791,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int \\cos 2x - \\sin 3x\\ dx$.",
     "opts": [
       "\\(-\\dfrac{1}{2}\\sin 2x + \\dfrac{1}{3}\\cos 3x + C\\)",
       "\\(\\dfrac{1}{2}\\sin 2x + \\dfrac{1}{3}\\cos 3x + C\\)",
@@ -1800,7 +1800,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\int \\cos 2x\\,dx = \\frac{1}{2}\\sin 2x$ and $\\int -\\sin 3x\\,dx = \\frac{1}{3}\\cos 3x$.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\sin 2x + \\dfrac{1}{3}\\cos 3x + C\\).",
     "solutionSteps": [
       {
@@ -1836,7 +1836,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find, in simplest form, the limiting sum of the series $\\cos^2 x + \\cos^4 x + \\cos^6 x + \\cdots$ for $0 < x < \\dfrac{\\pi}{2}$.",
     "opts": [
       "\\(\\cot^2 x\\)",
       "\\(\\cot^2 x + 1\\)",
@@ -1845,7 +1845,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Geometric with $a = \\cos^2 x$, $r = \\cos^2 x$; use $1 - \\cos^2 x = \\sin^2 x$.",
     "solution": "The correct answer is \\(\\cot^2 x\\).",
     "solutionSteps": [
       {
@@ -1881,7 +1881,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A closed metal crate of fixed volume $36\\text{ m}^3$ is a rectangular prism with length $3x$ m, width $x$ m and height $h$ m. Show that the surface area is $A = 6x^2 + \\dfrac{96}{x}$.",
     "opts": [
       "\\(-A = 6x^2 + \\dfrac{96}{x}\\)",
       "\\(A = 6x^2 + \\dfrac{96}{x}\\)",
@@ -1890,7 +1890,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Write surface area in terms of $x$ and $h$, then use $V = 3x^2h = 36$ to eliminate $h$.",
     "solution": "The correct answer is \\(A = 6x^2 + \\dfrac{96}{x}\\).",
     "solutionSteps": [
       {
@@ -1956,7 +1956,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the minimum area of metal required for the crate, where $A = 6x^2 + \\dfrac{96}{x}$.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1965,7 +1965,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Differentiate, set $A' = 0$, confirm with $A''$, then evaluate $A$.",
     "solution": "The correct answer is \\(72 \\text{ m}^2\\) (at \\(x = 2\\) m).",
     "solutionSteps": [
       {
@@ -2001,7 +2001,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $f(x) = x^2$ is transformed into a new function whose graph is a downward parabola with vertex $(2, -4)$ passing through $(0, -8)$. Find the equation in the form $g(x) = k\\,f(x + b) + c$.",
     "opts": [
       "\\(g(x) = +f(x + 2) + 4\\)",
       "\\(g(x) = -f(x - 2) - 4\\)",
@@ -2010,7 +2010,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The vertex shift gives $b$ and $c$; substitute $(0, -8)$ to find $k$.",
     "solution": "The correct answer is \\(g(x) = -f(x - 2) - 4\\).",
     "solutionSteps": [
       {
@@ -2076,7 +2076,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\sin(3\\theta) = \\sqrt{3}$ for $0 \\leq \\theta \\leq \\pi$.",
     "opts": [
       "\\(-\\theta = \\dfrac{\\pi}{9}, \\dfrac{2\\pi}{9}, \\dfrac{7\\pi}{9}, \\dfrac{8\\pi}{9}\\)",
       "\\(\\theta = \\dfrac{\\pi}{9}, \\dfrac{2\\pi}{9}, \\dfrac{7\\pi}{9}, \\dfrac{8\\pi}{9}\\)",
@@ -2085,7 +2085,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Expand to $0 \\leq 3\\theta \\leq 3\\pi$; solve for $3\\theta$ first.",
     "solution": "The correct answer is \\(\\theta = \\dfrac{\\pi}{9}, \\dfrac{2\\pi}{9}, \\dfrac{7\\pi}{9}, \\dfrac{8\\pi}{9}\\).",
     "solutionSteps": [
       {
@@ -2121,7 +2121,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "On the same diagram, draw the graphs of $y = \\cos \\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.",
     "answer": "A cosine wave (amplitude \\(1\\), period \\(2\\)) together with an inverted-V graph with apex \\((0,1)\\) and \\(x\\)-intercepts \\((\\pm 1, 0)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "A cosine wave (amplitude \\(1\\), period \\(2\\)) together with an inverted-V graph with apex \\((0,1)\\) and \\(x\\)-intercepts \\((\\pm 1, 0)\\).",
@@ -2159,7 +2159,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the number of solutions of $\\cos \\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "opts": [
       "\\(5\\) solutions",
       "\\(5\\) solutions + 1",
@@ -2168,7 +2168,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Count the intersections; for $|x| > 2$ the line is below $-1$, where cosine cannot reach.",
     "solution": "The correct answer is \\(5\\) solutions.",
     "solutionSteps": [
       {
@@ -2204,7 +2204,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = f(x)$ consists of a quarter circle $AB$ (from $A(0,2)$ to $B(2,0)$), a straight segment $BC$ (to $C(3,-2)$), a horizontal segment $CD$ (to $D(6,-2)$) and a quarter circle $DE$ (to $E(8,0)$). Evaluate $\\displaystyle\\int_0^8 f(x)\\,dx$.",
     "opts": [
       "\\(-6\\)",
       "\\(-7\\)",
@@ -2213,7 +2213,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Split into the four pieces; below-axis areas are negative. Use circle, triangle and rectangle areas.",
     "solution": "The correct answer is \\(-7\\).",
     "solutionSteps": [
       {
@@ -2279,7 +2279,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the graph of $y = f(x)$ in Q33, for what values of $x$ in $0 < x < 8$ is the function NOT differentiable?",
     "opts": [
       "-x = 2\\) and \\(x = 3",
       "The opposite of this statement is true.",
@@ -2288,7 +2288,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "A function is not differentiable at sharp corners.",
     "solution": "The correct answer is x = 2\\) and \\(x = 3.",
     "solutionSteps": [
       {
@@ -2324,7 +2324,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using a future-value factor of $6.3081$ for $n = 6$ periods at $2\\%$, an annuity has contributions of $1500 at the end of each half-year for $3$ years at $4\\%$ p.a. compounding half-yearly. Calculate the final amount immediately after the last contribution.",
     "opts": [
       "\\(-9462.15\\)",
       "\\(9461.15\\)",
@@ -2333,7 +2333,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Per period: $2\\%$, $6$ periods. Multiply the contribution by the factor.",
     "solution": "The correct answer is \\(9462.15\\).",
     "solutionSteps": [
       {
@@ -2369,7 +2369,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Calculate the single lump sum needed at the start to reach the same final amount ($9462.15) after $3$ years at $4\\%$ p.a. compounding half-yearly.",
     "opts": [
       "\\(-8402.11\\)",
       "\\(8401.11\\)",
@@ -2378,7 +2378,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $A = P(1+r)^n$ with $A = 9462.15$, $r = 0.02$, $n = 6$.",
     "solution": "The correct answer is \\(8402.11\\).",
     "solutionSteps": [
       {
@@ -2414,7 +2414,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $y = 2\\tan^2 x$, find the values of the constants $a$ and $b$ such that $\\dfrac{d^2y}{dx^2} = ay^2 + by + 4$.",
     "opts": [
       "a = 3\\) and \\(b = 8",
       "The opposite of this statement is true.",
@@ -2423,7 +2423,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate twice, write in powers of $\\tan x$ using $\\sec^2 x = 1 + \\tan^2 x$, then express in terms of $y = 2\\tan^2 x$.",
     "solution": "The correct answer is a = 3\\) and \\(b = 8.",
     "solutionSteps": [
       {
@@ -2468,7 +2468,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The third year is from \\(t=2\\) to \\(t=3\\). Loss \\(= V(2)-V(3)\\).",
     "solution": "Loss \\(= V(2)-V(3)=30\\,000\\bigl(e^{-0.8}-e^{-1.2}\\bigr)\\approx \\$4\\,444\\).",
     "solutionSteps": [
       {
@@ -2513,7 +2513,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate \\(V\\), set \\(\\left|\\dfrac{dV}{dt}\\right|=100\\), solve for \\(t\\).",
     "solution": "\\(\\dfrac{dV}{dt}=-12\\,000e^{-0.4t}\\). Set \\(12\\,000e^{-0.4t}=100\\Rightarrow t\\approx 11.97\\). During the 12th year.",
     "solutionSteps": [
       {
@@ -2549,7 +2549,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Bianca retires with $800,000 earning $6\\%$ p.a. compounded monthly. She withdraws $5000 at the end of each month, with $A_n = 800\\,000(1.005)^n - 5000{1 + 1.005 + \\cdots + (1.005)^{n-1}}$. Find, to the nearest month, the time for the fund to halve.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -2558,7 +2558,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Sum the geometric bracket, set $A_n = 400\\,000$, solve for $n$ with logarithms.",
     "solution": "The correct answer is \\(n \\approx 220\\) months (\\(\\approx 18\\) years \\(4\\) months).",
     "solutionSteps": [
       {
@@ -2594,7 +2594,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle moves in a straight line with acceleration $a = 6t - 18$. Initially it is at rest at the origin $O$. Find expressions for the velocity $v$ and displacement $x$ in terms of $t$.",
     "opts": [
       "The opposite of this statement is true.",
       "This is true only when the function is linear.",
@@ -2603,7 +2603,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate $a$ for $v$ (use $v=0$ at $t=0$), then $v$ for $x$ (use $x=0$ at $t=0$).",
     "solution": "The correct answer is v = 3t^2 - 18t\\) and \\(x = t^3 - 9t^2.",
     "solutionSteps": [
       {
@@ -2639,7 +2639,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the particle with $v = 3t^2 - 18t$ and $x = t^3 - 9t^2$, find when and where the particle is next at rest.",
     "opts": [
       "At \\(t = 6\\) s, at \\(x = -108\\) m (108 m to the left of \\(O\\))",
       "The opposite of this statement is true.",
@@ -2648,7 +2648,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $v = 0$; take the non-zero time and substitute into $x$.",
     "solution": "The correct answer is At \\(t = 6\\) s, at \\(x = -108\\) m (108 m to the left of \\(O\\)).",
     "solutionSteps": [
       {
@@ -2684,7 +2684,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The curve is $y = \\dfrac{e^x - e^{-x}}{e^x + e^{-x}}$. Show that the region bounded by the curve, the $x$-axis and the line $x = k$ ($k > 0$) has area $\\ln\\!\\left(\\dfrac{e^k + e^{-k}}{2}\\right)$.",
     "opts": [
       "Area \\(= \\ln\\!\\left(\\dfrac{e^k + e^{-k+1}}{2}\\right)\\)",
       "Area \\(= \\ln\\!\\left(\\dfrac{e^k + e^{-k}}{2}\\right)\\)",
@@ -2693,7 +2693,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The integrand has the form $\\frac{f'(x)}{f(x)}$ with $f(x) = e^x + e^{-x}$.",
     "solution": "The correct answer is Area \\(= \\ln\\!\\left(\\dfrac{e^k + e^{-k}}{2}\\right)\\).",
     "solutionSteps": [
       {
@@ -2759,7 +2759,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find, in simplest exact form, the value of $k$ such that the shaded region has area $2$ units squared (where the area is $\\ln\\!\\left(\\dfrac{e^k + e^{-k}}{2}\\right)$).",
     "opts": [
       "\\(k = \\ln\\!\\left(e^2 + \\sqrt{e^4 - 1}\\right)\\)",
       "\\(k = \\ln\\!\\left(e^2 - \\sqrt{e^4 + 1}\\right)\\)",
@@ -2768,7 +2768,7 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set the area to $2$, exponentiate, let $u = e^k$ to form a quadratic, and reject the root with $k < 0$.",
     "solution": "The correct answer is \\(k = \\ln\\!\\left(e^2 + \\sqrt{e^4 - 1}\\right)\\).",
     "solutionSteps": [
       {

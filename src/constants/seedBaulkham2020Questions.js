@@ -7,7 +7,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which expression is equal to $\\displaystyle\\int \\tan^2 x\\, dx$?",
     "opts": [
       "\\(\\dfrac{\\tan^3 x}{3} + C\\)",
       "\\(\\tan x - x + C\\)",
@@ -16,7 +16,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the identity $\\tan^2 x = \\sec^2 x - 1$.",
     "solution": "The correct answer is \\(\\tan x - x + C\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which expression is equal to $\\displaystyle\\int \\sec^2 x - 1\\, dx$?",
     "opts": [
       "\\(\\sec^2 x - x + C\\)",
       "\\(\\tan x - x + C\\)",
@@ -61,7 +61,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $\\sec^2 x$ and $1$ separately.",
     "solution": "The correct answer is \\(\\tan x - x + C\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$\\dfrac{d}{dx}\\log_e\\dfrac{4x^2-9}{2x-3}$ is equal to which of the following?",
     "opts": [
       "\\(\\dfrac{6}{2x-3}\\)",
       "\\(\\dfrac{2}{2x+3}\\)",
@@ -106,7 +106,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Factorise $4x^2-9 = (2x-3)(2x+3)$ first, then simplify $\\log_e$ before differentiating.",
     "solution": "The correct answer is \\(\\dfrac{2}{2x+3}\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$\\dfrac{d}{dx}\\log_e\\dfrac{9x^2-4}{3x-2}$ is equal to which of the following?",
     "opts": [
       "\\(\\dfrac{9}{3x-2}\\)",
       "\\(\\dfrac{3}{3x+2}\\)",
@@ -151,7 +151,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Factorise $9x^2-4=(3x-2)(3x+2)$ and simplify before differentiating.",
     "solution": "The correct answer is \\(\\dfrac{3}{3x+2}\\).",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following could be a primitive for $f'(x) = \\dfrac{x}{e^{x^2}-8}$?",
     "opts": [
       "\\(-\\dfrac{1}{2}(e^{x^2}-8)+8\\)",
       "\\(\\dfrac{1}{2}\\ln(e^{x^2}-8)+8\\)",
@@ -196,7 +196,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Rewrite $\\dfrac{x}{e^{x^2}-8} = xe^{-x^2} \\cdot \\dfrac{1}{1-8e^{-x^2}}$... or note $\\dfrac{x}{e^{x^2}-8} = -\\dfrac{x}{8-e^{x^2}} = \\dfrac{1}{2}\\cdot\\dfrac{-2x}{8-e^{x^2}}$... actually write as $xe^{-(x^2)}\\cdot\\frac{1}{1-8e^{-x^2}}$. Simplest: differentiate each option and check.",
     "solution": "The correct answer is \\(-\\dfrac{1}{2}(e^{8-x^2})-8\\).",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following is a primitive of $f'(x) = \\dfrac{x}{x^2+3}$?",
     "opts": [
       "\\(\\ln(x^2+3) + C\\)",
       "\\(\\dfrac{1}{2}\\ln(x^2+3) + C\\)",
@@ -241,7 +241,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The numerator is half the derivative of the denominator.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\ln(x^2+3) + C\\).",
     "solutionSteps": [
       {
@@ -277,7 +277,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the curve shown (a decreasing, concave up curve with a horizontal asymptote), which inequalities are correct?",
     "opts": [
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\)",
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} < 0\\)",
@@ -286,7 +286,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Decreasing curve → $dy/dx < 0$. Concave up (curve bends upward) → $d^2y/dx^2 > 0$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} < 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\).",
     "solutionSteps": [
       {
@@ -322,7 +322,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A curve is increasing and concave down. Which inequalities are correct?",
     "opts": [
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\)",
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} < 0\\)",
@@ -331,7 +331,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Increasing → $dy/dx > 0$. Concave down → $d^2y/dx^2 < 0$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} < 0\\).",
     "solutionSteps": [
       {
@@ -367,7 +367,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Results for a test are given as $z$-scores. Angela gained a $z$-score of 3. The test has a mean of 55 and standard deviation of 6. What was Angela's actual mark?",
     "opts": [
       "\\(58\\)",
       "\\(73\\)",
@@ -376,7 +376,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $x = \\mu + z\\sigma$.",
     "solution": "The correct answer is \\(73\\).",
     "solutionSteps": [
       {
@@ -412,7 +412,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A student scored a $z$-score of $-2$ in a test with mean 70 and standard deviation 8. What was their actual mark?",
     "opts": [
       "\\(54\\)",
       "\\(62\\)",
@@ -421,7 +421,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $x = \\mu + z\\sigma$.",
     "solution": "The correct answer is \\(54\\).",
     "solutionSteps": [
       {
@@ -457,7 +457,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph $y = k(x-2)^3$ is shown for some positive constant $k$. If the area of the shaded region (from $x=2$ to $x=4$) is 34, what is the value of $k$?",
     "opts": [
       "\\(\\dfrac{136}{15}\\)",
       "\\(8\\)",
@@ -466,7 +466,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $k(x-2)^3$ from 2 to 4 and set equal to 34.",
     "solution": "The correct answer is \\(8\\).",
     "solutionSteps": [
       {
@@ -502,7 +502,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph $y = k(x-1)^3$ is shown for $k > 0$. The area of the region from $x=1$ to $x=3$ is 24. What is $k$?",
     "opts": [
       "\\(3\\)",
       "\\(6\\)",
@@ -511,7 +511,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $k(x-1)^3$ from 1 to 3 and set equal to 24.",
     "solution": "The correct answer is \\(6\\).",
     "solutionSteps": [
       {
@@ -547,7 +547,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The time $T$ in seconds that divers can hold their breath is normally distributed with $\\mu = 120$ and $\\text{Var}(T) = 400$. In what range of time would you expect to find the middle 95%?",
     "opts": [
       "\\(100 \\leq x \\leq 140\\)",
       "\\(80 \\leq x \\leq 160\\)",
@@ -556,7 +556,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\sigma = \\sqrt{400} = 20$. Middle 95% is within $\\mu \\pm 2\\sigma$.",
     "solution": "The correct answer is \\(80 \\leq x \\leq 160\\).",
     "solutionSteps": [
       {
@@ -592,7 +592,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Heights of students are normally distributed with $\\mu = 165$ cm and $\\text{Var} = 25$. In what range would you expect the middle 68%?",
     "opts": [
       "\\(155 \\leq x \\leq 175\\)",
       "\\(160 \\leq x \\leq 170\\)",
@@ -601,7 +601,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "$\\sigma=5$. Middle 68% is within $\\mu \\pm 1\\sigma$.",
     "solution": "The correct answer is \\(160 \\leq x \\leq 170\\).",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The exact value of $I = \\displaystyle\\int_1^2 \\dfrac{\\ln x}{x}\\, dx = \\dfrac{1}{2}(\\ln 2)^2$. The approximation of $I$ using the Trapezoidal Rule with 2 function values is:",
     "opts": [
       "smaller by 28%",
       "larger by 28%",
@@ -646,7 +646,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Apply trapezoidal rule with $h=1$, $f(1)=0$, $f(2)=\\frac{\\ln 2}{2}$. Compare to exact value.",
     "solution": "The correct answer is smaller by 28%.",
     "solutionSteps": [
       {
@@ -682,7 +682,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the Trapezoidal Rule with 3 function values to approximate $\\displaystyle\\int_0^2 x^2\\,dx$, the approximation is:",
     "opts": [
       "exactly correct",
       "smaller by 12.5%",
@@ -691,7 +691,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$h=1$, values at $x=0,1,2$. Trap = $\\frac{1}{2}(0+2\\cdot1+4)=3$. Exact = $\\frac{8}{3}$.",
     "solution": "The correct answer is larger by 12.5%.",
     "solutionSteps": [
       {
@@ -727,7 +727,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = \\dfrac{x}{x^2-5}$, which of the following statements is true?",
     "opts": [
       "\\(\\(f(x)\\) is even and one-to-one\\)",
       "\\(\\(f(x)\\) is even and many-to-one\\)",
@@ -736,7 +736,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Check $f(-x)$: if $f(-x)=-f(x)$ it's odd. Use horizontal line test for one-to-one vs many-to-one.",
     "solution": "The correct answer is \\(\\(f(x)\\) is odd and many-to-one\\).",
     "solutionSteps": [
       {
@@ -772,7 +772,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = x^2 - 3$, which of the following statements is true?",
     "opts": [
       "\\(\\(f(x)\\) is odd and one-to-one\\)",
       "\\(\\(f(x)\\) is even and one-to-one\\)",
@@ -781,7 +781,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "$f(-x)=(-x)^2-3=x^2-3=f(x)$ → even. Parabola fails horizontal line test → many-to-one.",
     "solution": "The correct answer is \\(\\(f(x)\\) is even and many-to-one\\).",
     "solutionSteps": [
       {
@@ -817,7 +817,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The amount $M$ of medicine in the blood after $t$ hours is $M = 9t^2 - t^3$ for $0 \\leq t \\leq 9$. When is the amount of medicine increasing most rapidly?",
     "opts": [
       "\\(t = 0\\)",
       "\\(t = 9\\)",
@@ -826,7 +826,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find when $\\dfrac{dM}{dt}$ is maximised. Differentiate $M$ to get the rate, then differentiate again and set to zero.",
     "solution": "The correct answer is \\(t = 3\\).",
     "solutionSteps": [
       {
@@ -862,7 +862,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The population $P$ of bacteria after $t$ hours is $P = 6t^2 - t^3$ for $0 \\leq t \\leq 6$. When is the population growing most rapidly?",
     "opts": [
       "\\(t = 0\\)",
       "\\(t = 2\\)",
@@ -871,7 +871,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find when $\\dfrac{dP}{dt}$ is maximised.",
     "solution": "The correct answer is \\(t = 2\\).",
     "solutionSteps": [
       {
@@ -907,7 +907,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = (4x-5)(4x+5)$.",
     "opts": [
       "\\(-32x\\)",
       "\\(32x\\)",
@@ -916,7 +916,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Expand first: $(4x-5)(4x+5) = 16x^2 - 25$, then differentiate.",
     "solution": "The correct answer is \\(32x\\).",
     "solutionSteps": [
       {
@@ -952,7 +952,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = (3x-2)(3x+2)$.",
     "opts": [
       "\\(-18x\\)",
       "\\(18x\\)",
@@ -961,7 +961,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Expand: $(3x-2)(3x+2) = 9x^2-4$.",
     "solution": "The correct answer is \\(18x\\).",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\sin^2 x$.",
     "opts": [
       "\\(-\\sin 2x\\)",
       "\\(\\sin 2x\\)",
@@ -1006,7 +1006,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the chain rule: $y=(\\sin x)^2$. Or use the double angle identity first.",
     "solution": "The correct answer is \\(\\sin 2x\\).",
     "solutionSteps": [
       {
@@ -1042,7 +1042,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\cos^2 x$.",
     "opts": [
       "\\(--\\sin 2x\\)",
       "\\(-\\sin 2x\\)",
@@ -1051,7 +1051,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Chain rule: $\\dfrac{d}{dx}\\cos^2 x = 2\\cos x \\cdot (-\\sin x)$.",
     "solution": "The correct answer is \\(-\\sin 2x\\).",
     "solutionSteps": [
       {
@@ -1087,7 +1087,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the third term is 5 and the tenth term is 26. Find the sum of the first 14 terms.",
     "opts": [
       "\\(-259\\)",
       "\\(258\\)",
@@ -1096,7 +1096,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set up two equations: $T_3 = a+2d = 5$ and $T_{10} = a+9d = 26$, solve for $a$ and $d$, then use $S_n$.",
     "solution": "The correct answer is \\(259\\).",
     "solutionSteps": [
       {
@@ -1132,7 +1132,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the second term is 7 and the eighth term is 25. Find the sum of the first 12 terms.",
     "opts": [
       "\\(-246\\)",
       "\\(245\\)",
@@ -1141,7 +1141,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $T_2=a+d=7$ and $T_8=a+7d=25$. Solve, then find $S_{12}$.",
     "solution": "The correct answer is \\(246\\).",
     "solutionSteps": [
       {
@@ -1177,7 +1177,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_1^4 5(9x-4)^4\\, dx$.",
     "opts": [
       "\\(-\\dfrac{1}{9}(32^5 - 5^5)\\)",
       "\\(\\dfrac{1}{9}(32^5 - 5^5)\\)",
@@ -1186,7 +1186,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use reverse chain rule: $\\int(9x-4)^4 dx = \\dfrac{(9x-4)^5}{5\\times 9}$.",
     "solution": "The correct answer is \\(\\dfrac{1}{9}(32^5 - 5^5)\\).",
     "solutionSteps": [
       {
@@ -1222,7 +1222,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_0^2 3(2x+1)^3\\, dx$.",
     "opts": [
       "\\(-\\dfrac{3}{8}(5^4-1) = 234\\)",
       "\\(\\dfrac{3}{8}(5^4-1) = 234\\)",
@@ -1231,7 +1231,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Antiderivative of $(2x+1)^3$ is $\\dfrac{(2x+1)^4}{8}$.",
     "solution": "The correct answer is \\(\\dfrac{3}{8}(5^4-1) = 234\\).",
     "solutionSteps": [
       {
@@ -1267,7 +1267,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve the equation $e^{2x} + 3e^x - 10 = 0$.",
     "opts": [
       "\\(-x = \\ln 2\\)",
       "\\(x = \\ln 2\\)",
@@ -1276,7 +1276,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $m = e^x$. The equation becomes a quadratic in $m$.",
     "solution": "The correct answer is \\(x = \\ln 2\\).",
     "solutionSteps": [
       {
@@ -1312,7 +1312,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $e^{2x} - 5e^x + 6 = 0$.",
     "opts": [
       "-x = \\ln 2\\) or \\(x = \\ln 3",
       "x = \\ln 2\\) or \\(x = \\ln 3",
@@ -1321,7 +1321,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $m=e^x$. Factorise the resulting quadratic.",
     "solution": "The correct answer is x = \\ln 2\\) or \\(x = \\ln 3.",
     "solutionSteps": [
       {
@@ -1357,7 +1357,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that $\\dfrac{d}{dx}(\\sec^2 x) = 2\\tan x\\sec^2 x$.",
     "answer": "\\(\\sec^2 x = (\\cos x)^{-2}\\).\n\\(\\frac{d}{dx}(\\cos x)^{-2} = -2(\\cos x)^{-3}\\cdot(-\\sin x) = \\frac{2\\sin x}{\\cos^3 x} = 2\\cdot\\frac{\\sin x}{\\cos x}\\cdot\\frac{1}{\\cos^2 x} = 2\\tan x\\sec^2 x\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(\\sec^2 x = (\\cos x)^{-2}\\).\n\\(\\frac{d}{dx}(\\cos x)^{-2} = -2(\\cos x)^{-3}\\cdot(-\\sin x) = \\frac{2\\sin x}{\\cos^3 x} = 2\\cdot\\frac{\\sin x}{\\cos x}\\cdot\\frac{1}{\\cos^2 x} = 2\\tan x\\sec^2 x\\).",
@@ -1395,7 +1395,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find $\\displaystyle\\int \\tan x\\sec^2 x\\, dx$.",
     "opts": [
       "\\(-\\dfrac{1}{2}\\sec^2 x + C\\)",
       "\\(\\dfrac{1}{2}\\sec^2 x + C\\)",
@@ -1404,7 +1404,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "From part (i): $\\frac{d}{dx}(\\sec^2 x) = 2\\tan x\\sec^2 x$, so $\\tan x\\sec^2 x = \\frac{1}{2}\\frac{d}{dx}(\\sec^2 x)$.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\sec^2 x + C\\).",
     "solutionSteps": [
       {
@@ -1440,7 +1440,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given that $\\dfrac{d}{dx}(\\sin^2 x) = \\sin 2x$, find $\\displaystyle\\int \\sin 2x\\, dx$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1449,7 +1449,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Since $\\sin 2x = \\frac{d}{dx}(\\sin^2 x)$, integrate both sides.",
     "solution": "The correct answer is \\(\\sin^2 x + C\\) (or equivalently \\(-\\dfrac{1}{2}\\cos 2x + C\\)).",
     "solutionSteps": [
       {
@@ -1485,7 +1485,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Given $f(x) = \\begin{cases}6x-6x^2 & 0 \\leq x \\leq 1 \\\\ 0 & \\text{otherwise}\\end{cases}$, show that $f(x)$ represents a probability density function.",
     "answer": "Need: \\(f(x)\\geq 0\\) on \\([0,1]\\) and \\(\\int_0^1 f(x)\\,dx=1\\).\n\\(f(x)=6x(1-x)\\geq 0\\) for \\(0\\leq x\\leq 1\\).\n\\(\\int_0^1(6x-6x^2)\\,dx=[3x^2-2x^3]_0^1=3-2=1\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Need: \\(f(x)\\geq 0\\) on \\([0,1]\\) and \\(\\int_0^1 f(x)\\,dx=1\\).\n\\(f(x)=6x(1-x)\\geq 0\\) for \\(0\\leq x\\leq 1\\).\n\\(\\int_0^1(6x-6x^2)\\,dx=[3x^2-2x^3]_0^1=3-2=1\\).\n✓",
@@ -1523,7 +1523,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the mode of the probability density function $f(x) = 6x - 6x^2$ for $0 \\leq x \\leq 1$.",
     "opts": [
       "\\(-x = \\dfrac{1}{2}\\)",
       "\\(x = \\dfrac{1}{2}\\)",
@@ -1532,7 +1532,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The mode is where $f(x)$ is maximum. Set $f'(x)=0$.",
     "solution": "The correct answer is \\(x = \\dfrac{1}{2}\\).",
     "solutionSteps": [
       {
@@ -1568,7 +1568,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the mode of the probability density function $f(x) = 12x^2(1-x)$ for $0 \\leq x \\leq 1$.",
     "opts": [
       "\\(-x = \\dfrac{2}{3}\\)",
       "\\(x = \\dfrac{2}{3}\\)",
@@ -1577,7 +1577,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $f'(x)=0$ and check it's a maximum.",
     "solution": "The correct answer is \\(x = \\dfrac{2}{3}\\).",
     "solutionSteps": [
       {
@@ -1613,7 +1613,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value(s) of $b$ such that $y = 2x + b$ is a tangent to the parabola $y = 2x^2 + 6x - 5$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(b = +7\\)",
@@ -1622,7 +1622,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Since the line is a tangent, the gradient of the parabola equals 2 at the point of contact. Find the $x$-coordinate, then substitute.",
     "solution": "The correct answer is \\(b = -7\\).",
     "solutionSteps": [
       {
@@ -1658,7 +1658,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value of $b$ such that $y = 4x + b$ is a tangent to $y = x^2 + 2x + 3$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(b = 2\\)",
@@ -1667,7 +1667,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set the gradient equal: $y'=2x+2=4 \\Rightarrow x=1$. Substitute back.",
     "solution": "The correct answer is \\(b = 2\\).",
     "solutionSteps": [
       {
@@ -1703,7 +1703,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Angela guesses three questions in a multiple choice test with 4 options per question. Find the probability that she gets only one correct answer.",
     "opts": [
       "\\(-0.421875\\)",
       "\\(-0.578125\\)",
@@ -1712,7 +1712,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$P(\\text{correct})=\\frac{1}{4}$, $P(\\text{wrong})=\\frac{3}{4}$. Exactly one correct out of three.",
     "solution": "The correct answer is \\(\\dfrac{27}{64}\\).",
     "solutionSteps": [
       {
@@ -1748,7 +1748,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Angela guesses three questions in a multiple choice test with 4 options per question. Find the probability that she gets at least one correct answer.",
     "opts": [
       "\\(-0.421875\\)",
       "\\(-0.578125\\)",
@@ -1757,7 +1757,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$P(\\text{at least one}) = 1 - P(\\text{none correct})$.",
     "solution": "The correct answer is \\(\\dfrac{37}{64}\\).",
     "solutionSteps": [
       {
@@ -1793,7 +1793,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A student guesses 4 questions in a true/false test. Find the probability of getting at least one correct.",
     "opts": [
       "\\(-0.0625\\)",
       "\\(-0.9375\\)",
@@ -1802,7 +1802,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$P(\\text{correct})=\\frac{1}{2}$. Use complement.",
     "solution": "The correct answer is \\(\\dfrac{15}{16}\\).",
     "solutionSteps": [
       {
@@ -1838,7 +1838,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the hyperbola obtained by shifting $y = \\dfrac{1}{x-1}$ horizontally 3 units to the right and 1 unit down.",
     "answer": "New equation: \\(y=\\dfrac{1}{x-4}-1\\).\nVertical asymptote: \\(x=4\\).\nHorizontal asymptote: \\(y=-1\\).\n\\(y\\)-intercept: \\((0,-\\frac{5}{4})\\).\n\\(x\\)-intercept: \\((5,0)\\).\nSketch both branches with correct asymptotes.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "New equation: \\(y=\\dfrac{1}{x-4}-1\\).\nVertical asymptote: \\(x=4\\).\nHorizontal asymptote: \\(y=-1\\).\n\\(y\\)-intercept: \\((0,-\\frac{5}{4})\\).\n\\(x\\)-intercept: \\((5,0)\\).\nSketch both branches with correct asymptotes.",
@@ -1876,7 +1876,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "State the equation of the shifted hyperbola from Q12(c)(i) ($y=\\frac{1}{x-1}$ shifted 3 right and 1 down). Find all intercepts with the axes.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1885,7 +1885,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For $y$-int set $x=0$; for $x$-int set $y=0$.",
     "solution": "The correct answer is y=\\dfrac{1}{x-4}-1\\); \\(y\\)-intercept: \\(\\left(0,-\\dfrac{5}{4}\\right)\\); \\(x\\)-intercept: \\((5,0).",
     "solutionSteps": [
       {
@@ -1921,7 +1921,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$y=\\dfrac{1}{x}$ is shifted 2 units left and 3 units up. State the new equation and find all intercepts.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1930,7 +1930,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "New equation: $y=\\frac{1}{x+2}+3$. Set $x=0$ and $y=0$ separately.",
     "solution": "The correct answer is y=\\dfrac{1}{x+2}+3\\); \\(y\\)-intercept: \\(\\left(0,\\dfrac{7}{2}\\right)\\); \\(x\\)-intercept: \\(\\left(-\\dfrac{7}{3},0\\right).",
     "solutionSteps": [
       {
@@ -1966,7 +1966,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider $f(x) = \\begin{cases}x^2-1 & x \\leq 1\\\\ 4-x^2 & x > 1\\end{cases}$. Find $f(1)$.",
     "opts": [
       "\\(-1\\)",
       "\\(0\\)",
@@ -1975,7 +1975,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Since $x=1$ satisfies $x\\leq 1$, use the first piece.",
     "solution": "The correct answer is \\(0\\).",
     "solutionSteps": [
       {
@@ -2011,7 +2011,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $f(x) = \\begin{cases}x^2-1 & x \\leq 1\\\\ 4-x^2 & x > 1\\end{cases}$, find all $x$ such that $f(x) = 0$.",
     "opts": [
       "\\(-x = -1,\\ 1,\\ 2\\)",
       "\\(x = -1,\\ 1,\\ 2\\)",
@@ -2020,7 +2020,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Solve $x^2-1=0$ for $x\\leq 1$, and $4-x^2=0$ for $x>1$.",
     "solution": "The correct answer is \\(x = -1,\\ 1,\\ 2\\).",
     "solutionSteps": [
       {
@@ -2056,7 +2056,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the piecewise function $f(x) = \\begin{cases}x^2-1 & x \\leq 1\\\\ 4-x^2 & x > 1\\end{cases}$, showing all intercepts.",
     "answer": "Left piece: parabola \\(y=x^2-1\\) for \\(x\\leq1\\); \\(x\\)-intercepts at \\(x=\\pm1\\); \\(y\\)-intercept at \\((0,-1)\\); passes through \\((1,0)\\) (filled dot).\nRight piece: inverted parabola \\(y=4-x^2\\) for \\(x>1\\); at \\(x=1^+\\): \\(y=3\\) (open dot); \\(x\\)-intercept at \\(x=2\\); decreasing for \\(x>1\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Left piece: parabola \\(y=x^2-1\\) for \\(x\\leq1\\); \\(x\\)-intercepts at \\(x=\\pm1\\); \\(y\\)-intercept at \\((0,-1)\\); passes through \\((1,0)\\) (filled dot).\nRight piece: inverted parabola \\(y=4-x^2\\) for \\(x>1\\); at \\(x=1^+\\): \\(y=3\\) (open dot); \\(x\\)-intercept at \\(x=2\\); decreasing for \\(x>1\\).",
@@ -2094,7 +2094,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $g(x) = \\begin{cases}x+2 & x < 0 \\\\ x^2+1 & x \\geq 0\\end{cases}$, find all $x$ such that $g(x) = 2$.",
     "opts": [
       "\\(-x = 1\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -2103,7 +2103,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Solve each piece subject to its domain restriction.",
     "solution": "The correct answer is \\(x = 1\\).",
     "solutionSteps": [
       {
@@ -2139,7 +2139,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graphs of $f(x) = 2x - 2x^2$ and $g(x) = x - 1$ on the same number plane.",
     "answer": "\\(f(x)=2x(1-x)\\): parabola opening down, \\(x\\)-intercepts 0 and 1, vertex at \\((\\frac{1}{2},\\frac{1}{2})\\).\n\\(g(x)\\): line with gradient 1, \\(y\\)-intercept \\(-1\\).\nIntersection points at \\(x=-\\frac{1}{2}\\) and \\(x=1\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(f(x)=2x(1-x)\\): parabola opening down, \\(x\\)-intercepts 0 and 1, vertex at \\((\\frac{1}{2},\\frac{1}{2})\\).\n\\(g(x)\\): line with gradient 1, \\(y\\)-intercept \\(-1\\).\nIntersection points at \\(x=-\\frac{1}{2}\\) and \\(x=1\\).",
@@ -2177,7 +2177,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve the inequality $x - 1 < 2x - 2x^2$.",
     "opts": [
       "\\(--\\dfrac{1}{2} < x < 1\\)",
       "\\(-\\dfrac{1}{2} < x < 1\\)",
@@ -2186,7 +2186,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rearrange to $0 < x + 1 - 2x^2$, then find where the parabola is above the line.",
     "solution": "The correct answer is \\(-\\dfrac{1}{2} < x < 1\\).",
     "solutionSteps": [
       {
@@ -2222,7 +2222,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $3x - 2 < 4x - x^2$.",
     "opts": [
       "\\(-1 < x < 2\\)",
       "\\(-1 < x < 2 + 1\\)",
@@ -2231,7 +2231,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Rearrange to a quadratic inequality.",
     "solution": "The correct answer is \\(-1 < x < 2\\).",
     "solutionSteps": [
       {
@@ -2267,7 +2267,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A tower $OT$ of height $h$ m stands at $O$. A surveyor at point $P$ (due east of $O$) sees the top at elevation 30°. Express the length $OP$ in terms of $h$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(OP = h\\sqrt{3}\\)",
@@ -2276,7 +2276,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "In right triangle $OTP$: $\\tan 30° = \\dfrac{h}{OP}$.",
     "solution": "The correct answer is \\(OP = h\\sqrt{3}\\).",
     "solutionSteps": [
       {
@@ -2312,7 +2312,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "The surveyor walks 100 m from $P$ to point $B$ on bearing 150° from $O$. Angle of elevation from $B$ is 45°. Show that $(100)^2 = h^2 + \\dfrac{h^2}{\\tan^2 30°} - \\dfrac{h^2}{\\tan 30°}$.",
     "answer": "\\(OB=h/\\tan45°=h\\).\n\\(OP=h\\sqrt{3}\\).\n\\(\\angle BOP=60°\\) (from bearing 150° and \\(P\\) east of \\(O\\)).\nCosine rule: \\(BP^2=OB^2+OP^2-2\\cdot OB\\cdot OP\\cos60°=h^2+3h^2-2h\\cdot h\\sqrt{3}\\cdot\\frac{1}{2}=h^2+3h^2-h^2\\sqrt{3}=h^2(4-\\sqrt{3})\\).\nHmm that gives \\(100^2=h^2(4-\\sqrt{3})\\).\nBut question shows \\(h^2+h^2/\\tan^2 30°-h^2/\\tan30°\\).\nSince \\(1/\\tan30°=\\sqrt{3}\\): \\(h^2+h^2\\cdot3-h^2\\cdot\\sqrt{3}=h^2(1+3-\\sqrt{3})=h^2(4-\\sqrt{3})\\).\nAnd \\(h^2/\\tan^230°=h^2/\\tan30°\\cdot1/\\tan30°=h^2\\cdot3\\)...\nwait \\(1/\\tan^230°=1/(1/\\sqrt{3})^2=3\\).\nAnd \\(h^2/\\tan30°=h^2\\sqrt{3}\\).\nSo \\(h^2+3h^2-h^2\\sqrt{3}=h^2(4-\\sqrt{3})=100^2\\).\nThe expression matches.\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(OB=h/\\tan45°=h\\).\n\\(OP=h\\sqrt{3}\\).\n\\(\\angle BOP=60°\\) (from bearing 150° and \\(P\\) east of \\(O\\)).\nCosine rule: \\(BP^2=OB^2+OP^2-2\\cdot OB\\cdot OP\\cos60°=h^2+3h^2-2h\\cdot h\\sqrt{3}\\cdot\\frac{1}{2}=h^2+3h^2-h^2\\sqrt{3}=h^2(4-\\sqrt{3})\\).\nHmm that gives \\(100^2=h^2(4-\\sqrt{3})\\).\nBut question shows \\(h^2+h^2/\\tan^2 30°-h^2/\\tan30°\\).\nSince \\(1/\\tan30°=\\sqrt{3}\\): \\(h^2+h^2\\cdot3-h^2\\cdot\\sqrt{3}=h^2(1+3-\\sqrt{3})=h^2(4-\\sqrt{3})\\).\nAnd \\(h^2/\\tan^230°=h^2/\\tan30°\\cdot1/\\tan30°=h^2\\cdot3\\)...\nwait \\(1/\\tan^230°=1/(1/\\sqrt{3})^2=3\\).\nAnd \\(h^2/\\tan30°=h^2\\sqrt{3}\\).\nSo \\(h^2+3h^2-h^2\\sqrt{3}=h^2(4-\\sqrt{3})=100^2\\).\nThe expression matches.\n✓",
@@ -2350,7 +2350,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the height $h$ of the tower correct to 1 decimal place.",
     "opts": [
       "\\(h \\approx 66.4\\) m",
       "\\(h \\approx 66.4\\) m + 1",
@@ -2359,7 +2359,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "From $100^2 = h^2(4-\\sqrt{3})$, solve for $h$.",
     "solution": "The correct answer is \\(h \\approx 66.4\\) m.",
     "solutionSteps": [
       {
@@ -2395,7 +2395,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A flagpole of height $h$ m stands at $O$. A person at $P$ sees the top at 45° elevation with $OP = 80$ m. Find $h$.",
     "opts": [
       "\\(h = 80\\) m",
       "\\(h = 80\\) m + 1",
@@ -2404,7 +2404,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "$\\tan 45°=h/OP$.",
     "solution": "The correct answer is \\(h = 80\\) m.",
     "solutionSteps": [
       {
@@ -2440,7 +2440,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Waist measurements (cm): 72, 67, 85, 96, 80, 90, 98, 105. Weights (kg): 58, 50, 72, 85, 70, 79, 82, 84. Calculate the correlation coefficient $r$ correct to 3 decimal places and describe the strength of the relationship.",
     "opts": [
       "\\(r \\approx 0.959\\); strong positive correlation",
       "\\(r \\approx 0.959\\); strong positive correlation + 1",
@@ -2449,7 +2449,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Enter data into calculator and use the linear regression function.",
     "solution": "The correct answer is \\(r \\approx 0.959\\); strong positive correlation.",
     "solutionSteps": [
       {
@@ -2485,7 +2485,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the equation of the Least-Squares Regression Line for the waist/weight data.",
     "opts": [
       "\\(y = +8.237 - 0.932x\\)",
       "\\(y = -8.237 + 0.932x\\)",
@@ -2494,7 +2494,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use calculator's linear regression function with waist as $x$ and weight as $y$.",
     "solution": "The correct answer is \\(y = -8.237 + 0.932x\\).",
     "solutionSteps": [
       {
@@ -2530,7 +2530,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A regression line for shoe size ($x$) vs height in cm ($y$) is $y = 130 + 4x$. Predict the height of someone with shoe size 10.",
     "opts": [
       "\\(170\\) cm",
       "\\(170\\) cm + 1",
@@ -2539,7 +2539,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $x=10$ into the regression equation.",
     "solution": "The correct answer is \\(170\\) cm.",
     "solutionSteps": [
       {
@@ -2615,7 +2615,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find any stationary points of $f(x) = \\ln(x^2+1)$ and determine their nature.",
     "opts": [
       "Minimum turning point at \\((0, 0)\\)",
       "The opposite of this statement is true.",
@@ -2624,7 +2624,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $f'(x)=\\dfrac{2x}{x^2+1}=0$.",
     "solution": "The correct answer is Minimum turning point at \\((0, 0)\\).",
     "solutionSteps": [
       {
@@ -2660,7 +2660,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find any points of inflection of $f(x) = \\ln(x^2+1)$.",
     "opts": [
       "(1, \\ln 2)\\) and \\((+1, \\ln 2)",
       "(1, \\ln 2)\\) and \\((-1, \\ln 2)",
@@ -2669,7 +2669,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $f''(x)=0$ and verify concavity changes.",
     "solution": "The correct answer is (1, \\ln 2)\\) and \\((-1, \\ln 2).",
     "solutionSteps": [
       {
@@ -2705,7 +2705,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $f(x) = \\ln(x^2+1)$ showing all features from parts (ii) and (iii).",
     "answer": "Even function (symmetric about \\(y\\)-axis).\nMinimum at \\((0,0)\\).\nPoints of inflection at \\((\\pm1,\\ln2)\\).\nCurve increases for \\(x>0\\), decreases for \\(x<0\\).\nNo \\(x\\)-intercepts other than origin.\nConcave up for \\(|x|<1\\), concave down for \\(|x|>1\\).\n\\(y\\to\\infty\\) as \\(x\\to\\pm\\infty\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Even function (symmetric about \\(y\\)-axis).\nMinimum at \\((0,0)\\).\nPoints of inflection at \\((\\pm1,\\ln2)\\).\nCurve increases for \\(x>0\\), decreases for \\(x<0\\).\nNo \\(x\\)-intercepts other than origin.\nConcave up for \\(|x|<1\\), concave down for \\(|x|>1\\).\n\\(y\\to\\infty\\) as \\(x\\to\\pm\\infty\\).",
@@ -2743,7 +2743,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find any stationary points and points of inflection of $f(x) = xe^{-x}$.",
     "opts": [
       "Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
       "The opposite of this statement is true.",
@@ -2752,7 +2752,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate using product rule: $f'=e^{-x}-xe^{-x}=e^{-x}(1-x)$.",
     "solution": "The correct answer is Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\).",
     "solutionSteps": [
       {
@@ -2788,7 +2788,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "Prove the identity $(1+\\tan x)^2 = 2\\tan x + \\sec^2 x$.",
     "answer": "LHS \\(= 1+2\\tan x+\\tan^2 x\\).\nUse \\(1+\\tan^2 x=\\sec^2 x\\): \\(= \\sec^2 x+2\\tan x =\\) RHS.\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "LHS \\(= 1+2\\tan x+\\tan^2 x\\).\nUse \\(1+\\tan^2 x=\\sec^2 x\\): \\(= \\sec^2 x+2\\tan x =\\) RHS.\n✓",
@@ -2826,7 +2826,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the area bounded by $y=(1+\\tan x)^2$ and the $x$-axis between $-\\dfrac{\\pi}{4}\\leq x\\leq\\dfrac{\\pi}{4}$.",
     "opts": [
       "\\(2\\) square units",
       "\\(2\\) square units + 1",
@@ -2835,7 +2835,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use part (i): $(1+\\tan x)^2=2\\tan x+\\sec^2 x$. Integrate from $-\\pi/4$ to $\\pi/4$.",
     "solution": "The correct answer is \\(2\\) square units.",
     "solutionSteps": [
       {
@@ -2871,7 +2871,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int_0^{\\pi/4}\\sec^2 x\\, dx$.",
     "opts": [
       "\\(-1\\)",
       "\\(0\\)",
@@ -2880,7 +2880,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Antiderivative of $\\sec^2 x$ is $\\tan x$.",
     "solution": "The correct answer is \\(1\\).",
     "solutionSteps": [
       {
@@ -2916,7 +2916,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $y = 2\\sin\\left(2x-\\dfrac{\\pi}{3}\\right)$, state the amplitude and period.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -2925,7 +2925,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Amplitude $= |A|$; period $= \\dfrac{2\\pi}{n}$ where $n$ is the coefficient of $x$.",
     "solution": "The correct answer is Amplitude \\(= 2\\); period \\(= \\pi\\).",
     "solutionSteps": [
       {
@@ -2961,7 +2961,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact values of all intercepts of $y = 2\\sin\\left(2x-\\dfrac{\\pi}{3}\\right)$ with the axes for $0 \\leq x \\leq \\pi$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2970,7 +2970,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "At $x=0$: find $y$. For $x$-ints: solve $\\sin(2x-\\pi/3)=0$.",
     "solution": "The correct answer is y\\)-intercept: \\((0,-\\sqrt{3})\\); \\(x\\)-intercepts: \\(\\left(\\dfrac{\\pi}{6},0\\right)\\) and \\(\\left(\\dfrac{2\\pi}{3},0\\right).",
     "solutionSteps": [
       {
@@ -3006,7 +3006,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch $y = 2\\sin\\left(2x-\\dfrac{\\pi}{3}\\right)$ for $0\\leq x\\leq\\pi$, showing intercepts, global max and min.",
     "answer": "Period \\(\\pi\\), amplitude 2.\n\\(y\\)-int \\((0,-\\sqrt{3})\\).\n\\(x\\)-ints \\((\\pi/6,0)\\) and \\((2\\pi/3,0)\\).\nGlobal max at \\((5\\pi/12,2)\\); global min at \\((11\\pi/12,-2)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Period \\(\\pi\\), amplitude 2.\n\\(y\\)-int \\((0,-\\sqrt{3})\\).\n\\(x\\)-ints \\((\\pi/6,0)\\) and \\((2\\pi/3,0)\\).\nGlobal max at \\((5\\pi/12,2)\\); global min at \\((11\\pi/12,-2)\\).",
@@ -3044,7 +3044,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $y = 3\\sin(2x)$, state the amplitude and period, and find the $x$-intercepts for $0\\leq x\\leq\\pi$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3053,7 +3053,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Amplitude $=|A|$, period $=2\\pi/n$. $x$-ints when $\\sin(2x)=0$.",
     "solution": "The correct answer is Amplitude \\(=3\\); period \\(=\\pi\\); \\(x\\)-intercepts at \\(x=0,\\dfrac{\\pi}{2},\\pi\\).",
     "solutionSteps": [
       {
@@ -3089,7 +3089,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A bag has 3 red and 4 black balls. Two balls are drawn without replacement. Let $X$ = number of black balls. Fill in the distribution table and find $E(X)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3098,7 +3098,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "$P(X=0)=\\frac{3}{7}\\cdot\\frac{2}{6}$, $P(X=1)=2\\cdot\\frac{4}{7}\\cdot\\frac{3}{6}$, $P(X=2)=\\frac{4}{7}\\cdot\\frac{3}{6}$.",
     "solution": "The correct answer is P(X=0)=\\dfrac{1}{7}\\), \\(P(X=1)=\\dfrac{4}{7}\\), \\(P(X=2)=\\dfrac{2}{7}\\); \\(E(X)=\\dfrac{8}{7}.",
     "solutionSteps": [
       {
@@ -3134,7 +3134,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the black ball distribution ($P(X=0)=\\frac{1}{7}$, $P(X=1)=\\frac{4}{7}$, $P(X=2)=\\frac{2}{7}$, $E(X)=\\frac{8}{7}$), find $E(X^2)$, $\\text{Var}(X)$, and $\\sigma$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3143,7 +3143,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "$E(X^2)=\\sum x^2p(x)$; $\\text{Var}(X)=E(X^2)-[E(X)]^2$.",
     "solution": "The correct answer is E(X^2)=\\dfrac{12}{7}\\); \\(\\text{Var}(X)=\\dfrac{20}{49}\\); \\(\\sigma\\approx 0.638.",
     "solutionSteps": [
       {
@@ -3179,7 +3179,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A bag has 2 red and 3 blue balls. Two drawn without replacement. Let $X$=blue balls drawn. Find $E(X)$ and $\\text{Var}(X)$.",
     "opts": [
       "-E(X)=\\dfrac{6}{5}\\); \\(\\text{Var}(X)=\\dfrac{9}{25}",
       "E(X)=\\dfrac{6}{5}\\); \\(\\text{Var}(X)=\\dfrac{9}{25}",
@@ -3188,7 +3188,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find $P(X=0,1,2)$ then compute $E(X)$ and $\\text{Var}(X)$.",
     "solution": "The correct answer is E(X)=\\dfrac{6}{5}\\); \\(\\text{Var}(X)=\\dfrac{9}{25}.",
     "solutionSteps": [
       {
@@ -3224,7 +3224,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The velocity of a particle is $v = 5(1+e^{-t})$ m/s. Find the initial velocity.",
     "opts": [
       "\\(10\\) m/s",
       "\\(10\\) m/s + 1",
@@ -3233,7 +3233,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $t=0$.",
     "solution": "The correct answer is \\(10\\) m/s.",
     "solutionSteps": [
       {
@@ -3269,7 +3269,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = 5(1+e^{-t})$, is the particle ever stationary? Justify your answer.",
     "opts": [
       "No. \\(v=0\\) requires \\(e^{-t}=-1\\), which has no real solution since \\(e^{-t}>0\\) always.",
       "The opposite of this statement is true.",
@@ -3278,7 +3278,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $v=0$ and check if a solution exists.",
     "solution": "The correct answer is No. \\(v=0\\) requires \\(e^{-t}=-1\\), which has no real solution since \\(e^{-t}>0\\) always..",
     "solutionSteps": [
       {
@@ -3314,7 +3314,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $v = 5(1+e^{-t})$ for $t\\geq 0$.",
     "answer": "\\(v\\)-intercept at \\((0,10)\\).\nAs \\(t\\to\\infty\\), \\(v\\to 5\\) (horizontal asymptote \\(v=5\\)).\nStrictly decreasing, always above \\(v=5\\).\nSmooth exponential decay shape.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(v\\)-intercept at \\((0,10)\\).\nAs \\(t\\to\\infty\\), \\(v\\to 5\\) (horizontal asymptote \\(v=5\\)).\nStrictly decreasing, always above \\(v=5\\).\nSmooth exponential decay shape.",
@@ -3352,7 +3352,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the total distance travelled by the particle with $v=5(1+e^{-t})$ in the first 5 seconds.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3361,7 +3361,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Since $v>0$ always, distance $=\\int_0^5 v\\,dt$.",
     "solution": "The correct answer is \\(30-5e^{-5}\\) m \\(\\approx 29.97\\) m.",
     "solutionSteps": [
       {
@@ -3397,7 +3397,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle has velocity $v=3(1+e^{-2t})$ m/s. Find the distance travelled in the first 2 seconds.",
     "opts": [
       "-\\(6 + \\dfrac{3}{2}(1-e^{-4})\\) m",
       "\\(6 + \\dfrac{3}{2}(1-e^{-4})\\) m",
@@ -3406,7 +3406,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $v$ from 0 to 2.",
     "solution": "The correct answer is \\(6 + \\dfrac{3}{2}(1-e^{-4})\\) m.",
     "solutionSteps": [
       {
@@ -3500,7 +3500,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that the coordinates of $P$ are $\\left(\\dfrac{2+m}{2m},\\, dfrac{2+m}{2}\\right)$.",
     "answer": "Gradient of tangent at \\(P\\): \\(y'=\\frac{2}{2x-1}=m\\) → \\(2x-1=\\frac{2}{m}\\) → \\(x=\\frac{1}{m}+\\frac{1}{2}=\\frac{2+m}{2m}\\).\n\\(y\\)-coordinate: \\(y=mx=m\\cdot\\frac{2+m}{2m}=\\frac{2+m}{2}\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Gradient of tangent at \\(P\\): \\(y'=\\frac{2}{2x-1}=m\\) → \\(2x-1=\\frac{2}{m}\\) → \\(x=\\frac{1}{m}+\\frac{1}{2}=\\frac{2+m}{2m}\\).\n\\(y\\)-coordinate: \\(y=mx=m\\cdot\\frac{2+m}{2m}=\\frac{2+m}{2}\\).\n✓",
@@ -3538,7 +3538,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Hence show that $2+m = \\ln\\left(\\dfrac{4}{m^2}\\right)$.",
     "answer": "\\(P\\) lies on \\(y=\\ln(2x-1)\\): \\(\\frac{2+m}{2}=\\ln\\left(2\\cdot\\frac{2+m}{2m}-1\\right)=\\ln\\left(\\frac{2+m}{m}-1\\right)=\\ln\\left(\\frac{2+m-m}{m}\\right)=\\ln\\left(\\frac{2}{m}\\right)\\).\nSo \\(\\frac{2+m}{2}=\\ln\\frac{2}{m}=\\ln2-\\ln m\\).\nThen \\(2+m=2\\ln\\frac{2}{m}=\\ln\\frac{4}{m^2}\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(P\\) lies on \\(y=\\ln(2x-1)\\): \\(\\frac{2+m}{2}=\\ln\\left(2\\cdot\\frac{2+m}{2m}-1\\right)=\\ln\\left(\\frac{2+m}{m}-1\\right)=\\ln\\left(\\frac{2+m-m}{m}\\right)=\\ln\\left(\\frac{2}{m}\\right)\\).\nSo \\(\\frac{2+m}{2}=\\ln\\frac{2}{m}=\\ln2-\\ln m\\).\nThen \\(2+m=2\\ln\\frac{2}{m}=\\ln\\frac{4}{m^2}\\).\n✓",
@@ -3576,7 +3576,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = \\begin{cases}2e^{-2x} & x\\geq 0\\\\ 0&\\text{otherwise}\\end{cases}$, find the cumulative distribution function $F(x)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3585,7 +3585,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "$F(x)=\\int_0^x 2e^{-2t}\\,dt$.",
     "solution": "The correct answer is F(x) = 1 - e^{-2x}\\) for \\(x\\geq 0\\); \\(F(x)=0\\) for \\(x<0.",
     "solutionSteps": [
       {
@@ -3621,7 +3621,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the median of the distribution with CDF $F(x)=1-e^{-2x}$.",
     "opts": [
       "\\(\\frac{1}{2}\\)",
       "\\(-\\dfrac{\\ln 2}{2}\\)",
@@ -3630,7 +3630,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set $F(m)=\\frac{1}{2}$ and solve for $m$.",
     "solution": "The correct answer is \\(\\dfrac{\\ln 2}{2}\\).",
     "solutionSteps": [
       {
@@ -3666,7 +3666,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A continuous distribution has CDF $F(x)=1-e^{-3x}$ for $x\\geq0$. Find the median.",
     "opts": [
       "\\(\\frac{1}{3}\\)",
       "\\(-\\dfrac{\\ln 2}{3}\\)",
@@ -3675,7 +3675,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set $F(m)=\\frac{1}{2}$.",
     "solution": "The correct answer is \\(\\dfrac{\\ln 2}{3}\\).",
     "solutionSteps": [
       {
@@ -3711,7 +3711,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Michelle borrows \\$450\\,000 at 6% p.a. reducible monthly (0.5% per month). Monthly repayment is \\$$M$. Show that after 2 repayments: $A_2 = 450\\,000(1.005)^2 - M(1.005) - M$.",
     "answer": "\\(A_1=450000(1.005)-M\\).\n\\(A_2=A_1(1.005)-M=450000(1.005)^2-M(1.005)-M\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(A_1=450000(1.005)-M\\).\n\\(A_2=A_1(1.005)-M=450000(1.005)^2-M(1.005)-M\\).\n✓",
@@ -3749,7 +3749,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that $A_n = 450\\,000(1.005)^n - M\\dfrac{(1.005)^n-1}{0.005}$.",
     "answer": "Pattern: \\(A_n=450000(1.005)^n-M[(1.005)^{n-1}+\\cdots+1]\\).\nGP sum \\(=\\dfrac{(1.005)^n-1}{0.005}\\).\nSo \\(A_n=450000(1.005)^n-M\\dfrac{(1.005)^n-1}{0.005}\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Pattern: \\(A_n=450000(1.005)^n-M[(1.005)^{n-1}+\\cdots+1]\\).\nGP sum \\(=\\dfrac{(1.005)^n-1}{0.005}\\).\nSo \\(A_n=450000(1.005)^n-M\\dfrac{(1.005)^n-1}{0.005}\\).\n✓",
@@ -3787,7 +3787,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Calculate the amount of each monthly repayment $M$ for the \\$450\\,000 loan at 0.5% per month over 25 years (300 months).",
     "opts": [
       "\\(M \\approx \\\\)2899.36",
       "\\(M \\approx \\\\)2899.36 + 1",
@@ -3796,7 +3796,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $A_{300}=0$ in the formula and solve for $M$.",
     "solution": "The correct answer is \\(M \\approx \\\\)2899.36.",
     "solutionSteps": [
       {
@@ -3832,7 +3832,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A \\$300\\,000 loan is taken at 6% p.a. reducible monthly over 20 years (240 months). Find the monthly repayment $M$.",
     "opts": [
       "\\(M \\approx \\\\)2149.29",
       "\\(M \\approx \\\\)2149.29 + 1",
@@ -3841,7 +3841,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "$M=\\dfrac{300000\\times(1.005)^{240}\\times0.005}{(1.005)^{240}-1}$.",
     "solution": "The correct answer is \\(M \\approx \\\\)2149.29.",
     "solutionSteps": [
       {
@@ -3877,7 +3877,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "An isosceles triangle $\\triangle ABC$ is inscribed in a unit circle centred at $O$. $M$ is the midpoint of $BC$, $\\angle BAC=\\theta$ and $\\angle BOM=\\theta$. Show that the area of $\\triangle ABC$ is $A=\\sin\\theta(1+\\cos\\theta)$.",
     "answer": "From \\(\\triangle OBM\\): \\(\\sin\\theta=BM\\) (radius=1), so \\(BC=2\\sin\\theta\\).\n\\(\\cos\\theta=OM\\).\nHeight \\(AM=AO+OM=1+\\cos\\theta\\).\nArea \\(=\\frac{1}{2}\\times BC\\times AM=\\frac{1}{2}\\times2\\sin\\theta\\times(1+\\cos\\theta)=\\sin\\theta(1+\\cos\\theta)\\).\n✓",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "From \\(\\triangle OBM\\): \\(\\sin\\theta=BM\\) (radius=1), so \\(BC=2\\sin\\theta\\).\n\\(\\cos\\theta=OM\\).\nHeight \\(AM=AO+OM=1+\\cos\\theta\\).\nArea \\(=\\frac{1}{2}\\times BC\\times AM=\\frac{1}{2}\\times2\\sin\\theta\\times(1+\\cos\\theta)=\\sin\\theta(1+\\cos\\theta)\\).\n✓",
@@ -3915,7 +3915,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Hence prove that the area of isosceles triangle $\\triangle ABC$ is maximum when it is equilateral.",
     "answer": "\\(A'=\\cos\\theta(1+\\cos\\theta)+\\sin\\theta(-\\sin\\theta)=\\cos\\theta+\\cos^2\\theta-\\sin^2\\theta=\\cos\\theta+\\cos2\\theta\\).\nSet \\(A'=0\\): \\(\\cos\\theta+2\\cos^2\\theta-1=0\\Rightarrow(2\\cos\\theta-1)(\\cos\\theta+1)=0\\Rightarrow\\cos\\theta=\\frac{1}{2}\\Rightarrow\\theta=\\pi/3\\).\nAt \\(\\theta=\\pi/3\\): \\(A''<0\\) (maximum).\nWhen \\(\\theta=\\pi/3\\): \\(\\angle BAC=60°\\) and since \\(AB=AC\\) (isosceles), \\(\\angle ABC=\\angle ACB=60°\\), so \\(\\triangle ABC\\) is equilateral.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(A'=\\cos\\theta(1+\\cos\\theta)+\\sin\\theta(-\\sin\\theta)=\\cos\\theta+\\cos^2\\theta-\\sin^2\\theta=\\cos\\theta+\\cos2\\theta\\).\nSet \\(A'=0\\): \\(\\cos\\theta+2\\cos^2\\theta-1=0\\Rightarrow(2\\cos\\theta-1)(\\cos\\theta+1)=0\\Rightarrow\\cos\\theta=\\frac{1}{2}\\Rightarrow\\theta=\\pi/3\\).\nAt \\(\\theta=\\pi/3\\): \\(A''<0\\) (maximum).\nWhen \\(\\theta=\\pi/3\\): \\(\\angle BAC=60°\\) and since \\(AB=AC\\) (isosceles), \\(\\angle ABC=\\angle ACB=60°\\), so \\(\\triangle ABC\\) is equilateral.",
@@ -3953,7 +3953,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graphs $f(x)=x^2e^{kx}$ and $g(x)=-\\dfrac{2xe^{kx}}{k}$ bound a region with the line $x=2$. Write a definite integral for the area $A$.",
     "opts": [
       "\\(A = \\displaystyle\\int_0^2 \\left(x^2e^{-(kx)} + \\dfrac{2xe^{kx}}{k}\\right)dx\\)",
       "\\(A = \\displaystyle\\int_0^2 \\left(x^2e^{kx+1} + \\dfrac{2xe^{kx}}{k}\\right)dx\\)",
@@ -3962,7 +3962,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "From the graph, $f(x)>g(x)$ for $0<x\\leq2$. $A=\\int_0^2[f(x)-g(x)]\\,dx$.",
     "solution": "The correct answer is \\(A = \\displaystyle\\int_0^2 \\left(x^2e^{kx} + \\dfrac{2xe^{kx}}{k}\\right)dx\\).",
     "solutionSteps": [
       {
@@ -4055,7 +4055,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "From (i): $A=\\frac{1}{k}\\int_0^2 xe^{kx}(kx+2)\\,dx = \\frac{1}{k}\\int_0^2 f'(x)\\,dx = \\frac{1}{k}[f(x)]_0^2$. Set $=\\frac{16}{k}$.",
     "solution": "From (i)–(ii): \\(A=\\dfrac{1}{k}[x^{2}e^{kx}]_{0}^{2}=\\dfrac{4e^{2k}}{k}\\). Set \\(\\dfrac{4e^{2k}}{k}=\\dfrac{16}{k}\\Rightarrow 4e^{2k}=16\\Rightarrow e^{2k}=4\\Rightarrow k=\\ln 2\\).",
     "solutionSteps": [
       {
@@ -4100,7 +4100,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $k=1$ into the formula.",
     "solution": "When \\(k=1\\): \\(\\dfrac{e^{1}-1}{1^{2}}-\\dfrac{1}{1}=e-1-1=e-2\\).",
     "solutionSteps": [
       {

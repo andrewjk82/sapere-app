@@ -7,7 +7,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For what values of $x$ is the curve $f(x) = 2x^3 + x^2$ concave down?",
     "opts": [
       "\\(x < -\\dfrac{1}{6}\\)",
       "\\(x > -\\dfrac{1}{6}\\)",
@@ -16,7 +16,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $f''(x)$ and set it less than zero to find where the curve is concave down.",
     "solution": "The correct answer is \\(x < -\\dfrac{1}{6}\\).",
     "solutionSteps": [
       {
@@ -47,7 +47,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain of the function $f(x) = \\sqrt{x} + \\dfrac{1}{\\sqrt{2-x}}$?",
     "opts": [
       "\\((0, 2)\\)",
       "\\([0, 2)\\)",
@@ -56,7 +56,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "For $\\sqrt{x}$ we need $x \\geq 0$; for $\\frac{1}{\\sqrt{2-x}}$ we need $2-x > 0$. Combine both restrictions.",
     "solution": "The correct answer is \\([0, 2)\\).",
     "solutionSteps": [
       {
@@ -87,7 +87,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two events, $A$ and $B$, are independent, and $P(A)$ and $P(B)$ are both non-zero.\n\nWhich of the following expressions gives the probability that event $A$ occurs and then event $B$ also occurs?",
     "opts": [
       "\\(P(B|A)\\)",
       "\\(P(A|B)\\)",
@@ -96,7 +96,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For independent events, knowing $A$ occurred does not affect the probability of $B$. Use the multiplication rule for independent events.",
     "solution": "The correct answer is \\(P(A)P(B)\\).",
     "solutionSteps": [
       {
@@ -132,7 +132,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The variance of a discrete random variable $X$ is $\\text{Var}(X) = 2.6$.\n\nCalculate $\\text{Var}(3X - 1)$.",
     "opts": [
       "\\(6.8\\)",
       "\\(7.8\\)",
@@ -141,7 +141,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the rule $\\text{Var}(aX + b) = a^2 \\cdot \\text{Var}(X)$. Note that adding a constant does not change variance.",
     "solution": "The correct answer is \\(23.4\\).",
     "solutionSteps": [
       {
@@ -177,7 +177,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is $f'(x)$ if $f(x) = 3x^4(4-x)^3$?",
     "opts": [
       "\\(12x^3(4-x)^2(7x-16)\\)",
       "\\(12x^3(4-x)^2(16-7x)\\)",
@@ -186,7 +186,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Apply the product rule with $u = 3x^4$ and $v = (4-x)^3$. Factor the result carefully.",
     "solution": "The correct answer is \\(3x^3(4-x)^2(16-7x)\\).",
     "solutionSteps": [
       {
@@ -222,7 +222,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which type of relation is shown below?\n\nSet $X = {1, 2, 3, 4}$ maps to set $Y = {D, B, C}$ with: $1 \\to D$, $2 \\to B$, $3 \\to B$, $4 \\to C$.",
     "opts": [
       "\\(One-to-one\\)",
       "\\(One-to-many\\)",
@@ -231,7 +231,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Check: does each input map to one output (function)? Do multiple inputs share the same output?",
     "solution": "The correct answer is \\(Many-to-one\\).",
     "solutionSteps": [
       {
@@ -262,7 +262,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following best represents the graph of $g(x) = 2\\cos\\!\\left(\\dfrac{x}{2} + \\dfrac{\\pi}{3}\\right)$?",
     "opts": [
       "\\(Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\)\\)",
       "\\(Graph (B): amplitude 2, period \\(4\\pi\\), no phase shift\\)",
@@ -271,7 +271,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Identify amplitude $= |a|$, period $= \\frac{2\\pi}{|b|}$, and phase shift $= -\\frac{c}{b}$ from $g(x) = a\\cos(bx+c)$.",
     "solution": "The correct answer is \\(Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\)\\).",
     "solutionSteps": [
       {
@@ -302,7 +302,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $\\ln 2 + \\ln 4 + \\ln 8 + \\cdots + \\ln 2^{2n}$?",
     "opts": [
       "\\(n^2 \\ln 2\\)",
       "\\(n(n+1)\\ln 2\\)",
@@ -311,7 +311,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use log laws to write each term as a multiple of $\\ln 2$, then sum the resulting arithmetic series.",
     "solution": "The correct answer is \\(n(2n+1)\\ln 2\\).",
     "solutionSteps": [
       {
@@ -347,7 +347,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the equation of the function $f(x)$ whose graph has undergone transformations in the following order?\n- Translated left 2 units\n- Horizontally dilated by a factor of 3\n- Translated down 4 units",
     "opts": [
       "\\(f\\!\\left(\\dfrac{x}{3} + 2\\right) - 4\\)",
       "\\(f(3(x+2)) - 4\\)",
@@ -356,7 +356,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Apply transformations to the input $x$ in order: first translate, then dilate. Translating left by 2 replaces $x$ with $x+2$; dilating horizontally by 3 replaces $x$ with $x/3$.",
     "solution": "The correct answer is \\(f\\!\\left(\\dfrac{x}{3} + 2\\right) - 4\\).",
     "solutionSteps": [
       {
@@ -387,7 +387,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = f(x)$ is shown below. $x = A$ and $x = C$ are stationary points, and $x = B$ is a point of inflection.\n\nFrom the graph: $A < B < C < 0$, the curve has a local maximum at $A$, decreases to a local minimum at $C$, with $B$ between them, and then increases after $C$.\n\nOver what domain is $f'(x) < 0$ and $f''(x) > 0$?",
     "opts": [
       "\\((-\\infty, A)\\)",
       "\\((A, B)\\)",
@@ -396,7 +396,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "$f'(x) < 0$ where the function is decreasing. $f''(x) > 0$ where the function is concave up. Find the interval where both hold simultaneously.",
     "solution": "The correct answer is \\((B, C)\\).",
     "solutionSteps": [
       {
@@ -427,7 +427,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A geometric sequence has a first term of $\\dfrac{1}{8}$ and the 9th term of the sequence is $8192$. What is the common ratio?",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -436,7 +436,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the formula $T_n = ar^{n-1}$ with $a = \\frac{1}{8}$, $T_9 = 8192$, and $n = 9$.",
     "solution": "The correct answer is \\(r = \\pm 4\\).",
     "solutionSteps": [
       {
@@ -472,7 +472,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact value of $\\displaystyle\\int_{\\pi/4}^{\\pi/3} \\cos x\\, dx$.",
     "opts": [
       "\\(-\\dfrac{\\sqrt{3} - \\sqrt{2}}{2}\\)",
       "\\(\\dfrac{\\sqrt{3} - \\sqrt{2}}{2}\\)",
@@ -481,7 +481,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The antiderivative of $\\cos x$ is $\\sin x$. Evaluate $[\\sin x]$ at the limits $\\frac{\\pi}{3}$ and $\\frac{\\pi}{4}$.",
     "solution": "The correct answer is \\(\\dfrac{\\sqrt{3} - \\sqrt{2}}{2}\\).",
     "solutionSteps": [
       {
@@ -512,7 +512,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Three towns, $A$, $B$ and $C$ form a triangle. Town $A$ is 80 km from Town $B$ and Town $C$ is 40 km from Town $A$.\n\nThe bearing of Town $B$ from Town $A$ is $130°$. The bearing of Town $C$ from Town $A$ is $240°$.\n\nFind the distance between Town $B$ and Town $C$, to the nearest kilometre.",
     "opts": [
       "\\(BC \\approx 101\\) km",
       "\\(BC \\approx 101\\) km + 1",
@@ -521,7 +521,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find the angle $\\angle BAC$ between the two bearings, then apply the cosine rule: $BC^2 = AB^2 + AC^2 - 2 \\cdot AB \\cdot AC \\cdot \\cos(\\angle BAC)$.",
     "solution": "The correct answer is \\(BC \\approx 101\\) km.",
     "solutionSteps": [
       {
@@ -552,7 +552,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\dfrac{d}{dx}\\left(x^3 \\tan 2x\\right)$.",
     "opts": [
       "\\(-x^2(3\\tan 2x + 2x\\sec^2 2x)\\)",
       "\\(x(3\\tan 2x + 2x\\sec 2x)\\)",
@@ -561,7 +561,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the product rule with $u = x^3$ and $v = \\tan 2x$. Recall $\\frac{d}{dx}(\\tan kx) = k\\sec^2 kx$.",
     "solution": "The correct answer is \\(x^2(3\\tan 2x + 2x\\sec^2 2x)\\).",
     "solutionSteps": [
       {
@@ -597,7 +597,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = -(x+1)(x-2)^3$, showing the intercepts.",
     "answer": "Curve with \\(x\\)-intercepts at \\(x = -1\\) (single root, crosses axis) and \\(x = 2\\) (triple root, inflection at axis).\n\\(y\\)-intercept at \\(y = 8\\).\nCurve goes from top-left to bottom-right (negative leading coefficient).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Curve with \\(x\\)-intercepts at \\(x = -1\\) (single root, crosses axis) and \\(x = 2\\) (triple root, inflection at axis).\n\\(y\\)-intercept at \\(y = 8\\).\nCurve goes from top-left to bottom-right (negative leading coefficient).",
@@ -630,7 +630,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $\\cos\\theta = \\dfrac{2}{7}$ and $270° \\leq \\theta \\leq 360°$, find the exact value of $\\sin\\theta$.",
     "opts": [
       "\\(-\\sin\\theta = -\\dfrac{3\\sqrt{5}}{7}\\)",
       "\\(\\sin\\theta = -\\dfrac{3\\sqrt{5}}{7}\\)",
@@ -639,7 +639,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$. Determine the sign of $\\sin\\theta$ from the given quadrant.",
     "solution": "The correct answer is \\(\\sin\\theta = -\\dfrac{3\\sqrt{5}}{7}\\).",
     "solutionSteps": [
       {
@@ -675,7 +675,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that $(\\tan x + \\sec x)^2 = \\dfrac{1 + \\sin x}{1 - \\sin x}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -684,7 +684,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Expand the LHS by writing $\\tan x$ and $\\sec x$ in terms of $\\sin x$ and $\\cos x$, then use $\\cos^2 x = 1-\\sin^2 x = (1-\\sin x)(1+\\sin x)$ to simplify.",
     "solution": "The correct answer is Proof: expand LHS using \\(\\tan x = \\frac{\\sin x}{\\cos x}\\), \\(\\sec x = \\frac{1}{\\cos x}\\), and \\(\\cos^2 x = 1-\\sin^2 x\\)..",
     "solutionSteps": [
       {
@@ -715,7 +715,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\cos^2\\alpha - 3\\cos\\alpha - 2 = 0$ for $0 \\leq \\alpha \\leq \\pi$.",
     "opts": [
       "\\(-\\alpha = \\dfrac{2\\pi}{3}\\)",
       "\\(\\alpha = \\dfrac{2\\pi}{3}\\)",
@@ -724,7 +724,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $u = \\cos\\alpha$ and solve the resulting quadratic. Reject solutions outside $[-1, 1]$ and use the quadrant to find the angle.",
     "solution": "The correct answer is \\(\\alpha = \\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -755,7 +755,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the functions $f(x) = e^x$ and $g(x) = \\ln(x-2)$.\n\n(a) Find the composite function $f(g(x))$.\n\n(b) Find in interval notation the range of the composite function.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -764,7 +764,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): substitute $g(x)$ into $f$, then simplify using $e^{\\ln u} = u$. For (b): the domain of $g$ restricts $x$, and this determines the range of $f(g(x))$.",
     "solution": "The correct answer is (a) \\(f(g(x)) = x - 2\\)\n(b) \\((0, +\\infty)\\).",
     "solutionSteps": [
       {
@@ -795,7 +795,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A curve with the equation $y = f(x)$, has $\\dfrac{dy}{dx} = x^3 + 2x - 7$.\n\n(a) The point $P(2, 4)$ lies on the curve. Find the equation of $y$.\n\n(b) Find the equation of the normal to the curve at point $P$, giving your answer in general form.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -804,7 +804,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): integrate $\\frac{dy}{dx}$ then use the point $P(2,4)$ to find $C$. For (b): find the gradient of the tangent at $P$, then the normal gradient is $-1/m$.",
     "solution": "The correct answer is (a) \\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\)\n(b) \\(x + 5y - 22 = 0\\).",
     "solutionSteps": [
       {
@@ -873,7 +873,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = \\sin x$ is shown.\n\n(a) Explain why the equation $\\sin x = 1 - \\dfrac{x}{4}$ has three solutions.\n\n(b) Use the graph to approximate the largest solution to the equation $\\sin x = 1 - \\dfrac{x}{4}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -882,7 +882,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): draw $y = 1 - \\frac{x}{4}$ (a line with $y$-intercept 1 and slope $-\\frac{1}{4}$) on the same axes as $y = \\sin x$ and count intersections. For (b): read off the largest $x$-coordinate of intersection.",
     "solution": "The correct answer is (a) The line \\(y = 1 - \\frac{x}{4}\\) intersects the curve \\(y = \\sin x\\) exactly three times.\n(b) \\(x \\approx 5.8\\).",
     "solutionSteps": [
       {
@@ -1034,7 +1034,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "(a) Show that the derivative of $\\ln\\!\\left(\\dfrac{3+x}{3-x}\\right)$ is $\\dfrac{6}{9-x^2}$.\n\n(b) Hence or otherwise find $\\displaystyle\\int \\dfrac{1}{9-x^2}\\, dx$.",
     "opts": [
       "(a) Proof shown.\n(b) \\(\\dfrac{1}{6}\\ln\\!\\left|\\dfrac{3+x}{3-x}\\right| + C\\)",
       "(a) Proof shown.\n(b) \\(\\frac{1}{6}\\ln\\!\\left|\\dfrac{3+x}{3-x}\\right| + C\\)",
@@ -1043,7 +1043,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): use $\\ln(A/B) = \\ln A - \\ln B$, then differentiate using $\\frac{d}{dx}\\ln(ax+b) = \\frac{a}{ax+b}$. For (b): reverse the result from (a).",
     "solution": "The correct answer is (a) Proof shown.\n(b) \\(\\dfrac{1}{6}\\ln\\!\\left|\\dfrac{3+x}{3-x}\\right| + C\\).",
     "solutionSteps": [
       {
@@ -1074,7 +1074,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use the Trapezoidal rule, with four sub-intervals, to estimate the value of $\\displaystyle\\int_0^2 \\sqrt{4-x^2}\\, dx$, correct to 3 decimal places.",
     "opts": [
       "\\(\\approx 2.996\\)",
       "\\(\\approx 2.996 + 1\\)",
@@ -1083,7 +1083,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "With 4 sub-intervals over $[0,2]$, the width is $h = 0.5$. Evaluate $f(x) = \\sqrt{4-x^2}$ at $x = 0, 0.5, 1, 1.5, 2$ then apply the trapezoid formula.",
     "solution": "The correct answer is \\(\\approx 2.996\\).",
     "solutionSteps": [
       {
@@ -1119,7 +1119,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The probability density function for the continuous random variable $X$ is given by:\n$$f(x) = \\begin{cases} |1-x| & 0 \\leq x \\leq 2 \\\\ 0 & \\text{otherwise} \\end{cases}$$\nFind $P(X \\leq 1.5)$.",
     "opts": [
       "\\(-P(X \\leq 1.5) = \\dfrac{5}{8}\\)",
       "\\(P(X \\leq 1.5) = \\dfrac{5}{8}\\)",
@@ -1128,7 +1128,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Split $|1-x|$ into cases: $(1-x)$ for $x \\leq 1$ and $(x-1)$ for $x > 1$. Integrate separately on $[0,1]$ and $[1, 1.5]$.",
     "solution": "The correct answer is \\(P(X \\leq 1.5) = \\dfrac{5}{8}\\).",
     "solutionSteps": [
       {
@@ -1164,7 +1164,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A soft drink company produces a bottled drink. The amount of liquid poured into each bottle by the bottling machine is normally distributed, with a mean of 300 mL and a standard deviation of 10 mL.\n\n(a) A bottle has a $z$-score of $-1.2$. How many mL below the mean is this bottle?\n\n(b) In order to comply with local regulations, at least $97.5\\%$ of bottles must contain more liquid than indicated on the label. What is the largest amount of millilitres the bottle's label should show in order to comply with the regulations?",
     "opts": [
       "\\((a) 12 mL below the mean\n(b) 280 mL\\)",
       "\\((a) 12 mL below the mean\n(b) 280 mL + 1\\)",
@@ -1173,7 +1173,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): use $x = \\mu + z\\sigma$. For (b): 97.5% above the label means 2.5% are below, which corresponds to $z = -2$ (since 95% lie within 2 standard deviations).",
     "solution": "The correct answer is \\((a) 12 mL below the mean\n(b) 280 mL\\).",
     "solutionSteps": [
       {
@@ -1204,7 +1204,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "It is known at the beginning of winter in a large population, 15% of the people in the population will be infected with a particular virus.\n\n(a) Two people are selected at random, find the probability that both of them have the virus.\n\n(b) Four people are selected at random, find the probability that at least one of them has the virus. Give your answer to 3 decimal places.\n\n(c) What is the smallest number of people a drug company would need to test to have a greater than 95% chance that at least one of the tested people had the virus?",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1213,7 +1213,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "For (a): multiply probabilities for independent selections. For (b): use complement $P(\\text{at least one}) = 1 - P(\\text{none})$. For (c): solve the inequality $1-(0.85)^n > 0.95$.",
     "solution": "The correct answer is (a) \\(0.0225\\)\n(b) \\(\\approx 0.478\\)\n(c) \\(19\\) people.",
     "solutionSteps": [
       {
@@ -1249,7 +1249,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The functions $y = \\sqrt{x+1}$ and $y = 11-x$ are sketched below. They intersect at $(8, 3)$.\n\nCalculate the area bounded by the curves $y = \\sqrt{x+1}$ and $y = 11-x$ and the $x$-axis.",
     "opts": [
       "\\(22.5\\) square units",
       "\\(22.5\\) square units + 1",
@@ -1258,7 +1258,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Split the area into two parts at the intersection point $x=8$: integrate $\\sqrt{x+1}$ from $x=-1$ to $x=8$, then integrate $11-x$ from $x=8$ to $x=11$ (where it meets the $x$-axis).",
     "solution": "The correct answer is \\(22.5\\) square units.",
     "solutionSteps": [
       {
@@ -1294,7 +1294,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value(s) of $m$ given that $m$, $3m$ and $m^2 + 20$ are consecutive terms of a geometric sequence.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1303,7 +1303,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "In a geometric sequence, the ratio between consecutive terms is constant: $\\frac{3m}{m} = \\frac{m^2+20}{3m}$. Cross-multiply to form a quadratic equation.",
     "solution": "The correct answer is m = 4\\) or \\(m = 5.",
     "solutionSteps": [
       {
@@ -1339,7 +1339,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A probability density function is defined as $f(x) = ke^{-x}$ in the domain $[0, 3]$.\n\n(a) Show that $k = 1.0524$, correct to four decimal places.\n\n(b) Hence, find the median value of the probability density function, correct to three decimal places.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1348,7 +1348,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): use $\\int_0^3 ke^{-x}dx = 1$ to solve for $k$. For (b): solve $\\int_0^m ke^{-x}dx = 0.5$ for $m$.",
     "solution": "The correct answer is (a) \\(k = \\dfrac{1}{1-e^{-3}} \\approx 1.0524\\)\n(b) Median \\(\\approx 0.645\\).",
     "solutionSteps": [
       {
@@ -1384,7 +1384,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A six-sided die is biased as shown in the probability distribution below.\n\n| $x$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| $P(X=x)$ | 0.1 | 0.25 | 0.05 | $a$ | 0.17 | 0.13 |\n\n(a) Explain why $a = 0.3$.\n(b) Find $P(2 < X \\leq 4)$.\n(c) Find $P(X \\leq 4 \\mid X > 2)$.\n(d) Find the expected value of $X$.\n(e) Find $E(4X+1)$.\n(f) Find the variance of $X$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1393,7 +1393,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): use $\\sum P = 1$. For (c): use conditional probability formula. For (d)-(f): use $E(X) = \\sum x p_x$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is (a) All probabilities sum to 1\n(b) \\(0.35\\)\n(c) \\(\\dfrac{7}{13}\\)\n(d) \\(E(X) = 3.58\\)\n(e) \\(E(4X+1) = 15.32\\)\n(f) \\(\\text{Var}(X) \\approx 2.4636\\).",
     "solutionSteps": [
       {
@@ -1424,7 +1424,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Max conducted a survey about age and weekly wage:\n\n| Age ($x$) | 18 | 45 | 28 | 15 | 32 | 68 |\n|---|---|---|---|---|---|---|\n| Wage (\\$/week) ($W$) | 715 | 2350 | 1530 | 438 | 1690 | 1320 |\n\n(a) Using your calculator, find (r) Pearson's correlation coefficient correct to 2 decimal places and describe the type and strength of correlation.\n\n(b) Using your calculator, find the equation of the least-squares regression line in the form $W = Bx + A$ where $A$ and $B$ are integers.\n\n(c) Use your equation to estimate the earnings of a 50 year-old worker.\n\n(d) Justify why the equation from part (b) cannot be used to make valid estimates for ages greater than 68 and less than 15 years.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1433,7 +1433,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Enter data into calculator for (a) and (b). For (d): the regression model is only valid within the range of collected data.",
     "solution": "The correct answer is (a) \\(r \\approx 0.53\\), moderate positive correlation\n(b) \\(W = 18x + 706\\)\n(c) 1606\n(d) Extrapolation beyond the data range is unreliable..",
     "solutionSteps": [
       {
@@ -1464,7 +1464,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A swimming pool is to be emptied for maintenance. The quantity of water, $Q$ in litres, remaining in the pool at a time, $t$ minutes, is given by:\n$$Q(t) = 2000(25-t)^2, quad 0 \\leq t \\leq 25$$\n\n(a) At what rate (in litres/min) is the water being removed at any time $t$?\n\n(b) How long will it take to remove at least half of the water from the pool? Answer to the nearest minute.\n\n(c) At what time does the rate of flow of water from the pool reach 20 kL/minute?\n\n(d) Describe how the amount of water remaining in the pool changes as the pool empties. Mention how the rate itself changes in your answer.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1473,7 +1473,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a): differentiate $Q(t)$ and note the rate of removal is $-Q'(t)$. For (b): find when $Q(t) = \\frac{1}{2}Q(0)$. For (c): set $-Q'(t) = 20000$.",
     "solution": "The correct answer is (a) \\(4000(25-t)\\) L/min\n(b) 8 minutes\n(c) \\(t = 20\\) min\n(d) The water decreases at a decreasing rate (the rate of removal slows down as the pool empties)..",
     "solutionSteps": [
       {
@@ -1509,7 +1509,7 @@ export const CTHS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A 100 centimetre length of wire is cut into two pieces at point P, where $x$ is the length of one of the two pieces of wire.\n\n(a) The piece that is length $x$ cm is used to form a circle and the other is used to form a square. Show that the total area of the circle and square can be given by:\n$$A = \\dfrac{x^2}{4\\pi} + \\dfrac{(100-x)^2}{16}$$\n\n(b) At what length should $x$ be cut to minimise the total area of the circle and square? Give your answer to the nearest centimetre.",
     "opts": [
       "(a) Proof shown.\n(b) \\(x \\approx 44\\) cm",
       "(a) Proof shown.\n(b) \\(x \\approx 44\\) cm + 1",
@@ -1518,7 +1518,7 @@ export const CTHS_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a): circumference of circle $= x$, so $r = \\frac{x}{2\\pi}$; area $= \\pi r^2 = \\frac{x^2}{4\\pi}$. Square side $= \\frac{100-x}{4}$; area $= \\frac{(100-x)^2}{16}$. For (b): differentiate $A$, set $A'=0$.",
     "solution": "The correct answer is (a) Proof shown.\n(b) \\(x \\approx 44\\) cm.",
     "solutionSteps": [
       {

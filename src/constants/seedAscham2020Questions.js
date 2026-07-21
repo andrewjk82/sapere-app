@@ -7,7 +7,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What type of relation is shown in the graph below?\n\nThe graph shows a V-shaped curve (similar to $y = |x|$) that is symmetric about the y-axis with vertex near the origin.",
     "opts": [
       "\\(One-to-one\\)",
       "\\(One-to-many\\)",
@@ -16,7 +16,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Ask: can two different $x$-values give the same $y$-value? And can one $x$-value give multiple $y$-values?",
     "solution": "The correct answer is \\(Many-to-one\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = x^2 - 4$ is a parabola opening upward. What type of relation is this?",
     "opts": [
       "\\(One-to-one\\)",
       "\\(One-to-many\\)",
@@ -61,7 +61,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Check whether multiple $x$-values can give the same $y$-value, and whether each $x$ gives only one $y$.",
     "solution": "The correct answer is \\(Many-to-one\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the gradient of the normal to the tangent line $x - 2y + 1 = 0$?",
     "opts": [
       "\\(-\\dfrac{1}{2}\\)",
       "\\(\\dfrac{1}{2}\\)",
@@ -106,7 +106,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "First rearrange the line to find its gradient. The normal is perpendicular to this line, so multiply gradients to get $-1$.",
     "solution": "The correct answer is \\(-2\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the gradient of the normal to the tangent line $3x + y - 5 = 0$?",
     "opts": [
       "\\(-3\\)",
       "\\(3\\)",
@@ -151,7 +151,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Rearrange the line to find its gradient, then use $m_{\\text{normal}} = -\\frac{1}{m_{\\text{tangent}}}$.",
     "solution": "The correct answer is \\(\\dfrac{1}{3}\\).",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the diagram, calculate $\\displaystyle\\int_0^6 f(x)\\,dx$.\n\nThe graph shows $y = f(x)$ with the following behaviour:\n- From $x = 0$ to $x = 3$: $f(x) = 3$ (horizontal line)\n- From $x = 3$ to $x = 5$: $f(x)$ decreases linearly from $3$ to $-3$\n- From $x = 5$ to $x = 6$: $f(x) = -3$ (horizontal line)",
     "opts": [
       "\\(6.75\\)",
       "\\(7.5\\)",
@@ -196,7 +196,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Split the integral into geometric regions (rectangles and triangles). Areas below the x-axis are negative.",
     "solution": "The correct answer is \\(6.75\\).",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A function $g(x)$ is defined as follows:\n- $g(x) = 2$ for $0 \\leq x \\leq 4$\n- $g(x)$ decreases linearly from $2$ to $-2$ for $4 \\leq x \\leq 8$\n- $g(x) = -2$ for $8 \\leq x \\leq 10$\n\nCalculate $\\displaystyle\\int_0^{10} g(x)\\,dx$.",
     "opts": [
       "\\(4\\)",
       "\\(8\\)",
@@ -241,7 +241,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Break the integral into three geometric regions. Areas below the x-axis are negative.",
     "solution": "The correct answer is \\(4\\).",
     "solutionSteps": [
       {
@@ -277,7 +277,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A set of data has a lower quartile of $22$ and an upper quartile of $32$. What is the maximum possible range for this set of data if there are no outliers?",
     "opts": [
       "\\(7\\)",
       "\\(10\\)",
@@ -286,7 +286,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the outlier fences: lower fence $= Q_1 - 1.5 \\times IQR$ and upper fence $= Q_3 + 1.5 \\times IQR$. The maximum range is upper fence minus lower fence.",
     "solution": "The correct answer is \\(47\\).",
     "solutionSteps": [
       {
@@ -322,7 +322,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A set of data has a lower quartile of $15$ and an upper quartile of $27$. Assuming there are no outliers, what is the maximum possible value in the data set?",
     "opts": [
       "\\(27\\)",
       "\\(33\\)",
@@ -331,7 +331,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Calculate the IQR, then apply the upper fence formula $Q_3 + 1.5 \\times IQR$.",
     "solution": "The correct answer is \\(45\\).",
     "solutionSteps": [
       {
@@ -367,7 +367,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Ascham School collected data on the reasons given by students for being late to school. The Pareto chart shows the data collected. The total number of students surveyed is 200.\n\nThe bars (from left to right) show approximately: Public transport delays (77), Traffic (35), Sport training (30), Appointment (25), Music lesson (21), Overslept (10), Weather (5).\n\nApproximately what percentage of students gave the reasons 'Traffic' or 'Sport training'?",
     "opts": [
       "\\(23\\%\\)",
       "\\(33\\%\\)",
@@ -376,7 +376,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Add the counts for Traffic and Sport training, then divide by the total and multiply by 100.",
     "solution": "The correct answer is \\(33\\%\\).",
     "solutionSteps": [
       {
@@ -412,7 +412,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A survey of 300 students found the following reasons for arriving late: Bus delays (120), Traffic (60), Overslept (45), Appointment (40), Other (35).\n\nApproximately what percentage of students gave either 'Overslept' or 'Appointment' as their reason?",
     "opts": [
       "\\(15\\%\\)",
       "\\(28\\%\\)",
@@ -421,7 +421,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Add the counts for Overslept and Appointment, then divide by 300 and multiply by 100.",
     "solution": "The correct answer is \\(28\\%\\).",
     "solutionSteps": [
       {
@@ -457,7 +457,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following is a discrete probability distribution?\n\n(A) $x$: 1, 2, 3, 4 — $P(X=x)$: 0.23, 0.16, 0.35, 0.25\n\n(B) $x$: 1, 2, 3, 4 — $P(X=x)$: 0.27, 0.61, −0.31, 0.43\n\n(C) $x$: 1, 2, 3, 4 — $P(X=x)$: 0.14, 0.32, 0.48, 0.07\n\n(D) $x$: 1, 2, 3, 4 — $P(X=x)$: 0.19, 0.29, 0.25, 0.27",
     "opts": [
       "\\((A) \\(P(X=x)\\): 0.23, 0.16, 0.35, 0.25\\)",
       "\\((B) \\(P(X=x)\\): 0.27, 0.61, −0.31, 0.43\\)",
@@ -466,7 +466,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "A valid probability distribution requires: all probabilities $\\geq 0$, and all probabilities sum to exactly 1.",
     "solution": "The correct answer is \\((A) \\(P(X=x)\\): 0.23, 0.16, 0.35, 0.25\\).",
     "solutionSteps": [
       {
@@ -502,7 +502,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following tables represents a valid discrete probability distribution for a random variable $X$?\n\n(A) $P(X=x)$: 0.3, 0.3, 0.3, 0.3\n\n(B) $P(X=x)$: 0.1, 0.4, 0.3, 0.2\n\n(C) $P(X=x)$: 0.5, 0.5, 0.5, 0.5\n\n(D) $P(X=x)$: 0.2, 0.3, −0.1, 0.6",
     "opts": [
       "\\((A) \\(P(X=x)\\): 0.3, 0.3, 0.3, 0.3\\)",
       "\\((B) \\(P(X=x)\\): 0.1, 0.4, 0.3, 0.2\\)",
@@ -511,7 +511,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "All probabilities must be non-negative and sum to exactly 1.",
     "solution": "The correct answer is \\((B) \\(P(X=x)\\): 0.1, 0.4, 0.3, 0.2\\).",
     "solutionSteps": [
       {
@@ -547,7 +547,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use the graph of $y = 3 - 2x - x^2$ and the line $y = 3$ to solve the inequality $3 - 2x - x^2 < 3$.",
     "opts": [
       "\\(x < 0\\)",
       "\\(-2 < x < 0\\)",
@@ -556,7 +556,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Rewrite as $3 - 2x - x^2 - 3 < 0$, which simplifies to $-2x - x^2 < 0$. Factor and find where the parabola is below $y = 3$.",
     "solution": "The correct answer is \\(x < -2\\) or \\(x > 0\\).",
     "solutionSteps": [
       {
@@ -592,7 +592,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve the inequality $5 - 4x - x^2 < 5$.",
     "opts": [
       "\\(-4 < x < 0\\)",
       "\\(x < -4\\) or \\(x > 0\\)",
@@ -601,7 +601,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Subtract 5 from both sides, then factorise the resulting expression.",
     "solution": "The correct answer is \\(x < -4\\) or \\(x > 0\\).",
     "solutionSteps": [
       {
@@ -637,7 +637,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Percy hopes to have $\\\\$25\\\\,000$ in 4 years to buy a car. He opens an account today which pays interest of 4% p.a., compounded every 6 months. Using the compound interest table, which expression calculates the minimum single sum that Percy needs to invest today to ensure he reaches his savings goal?\n\nNote: 4% p.a. compounded every 6 months means 2% per period, and 4 years = 8 periods. The compounded value of $1 at 2% over 8 periods is 1.1717.",
     "opts": [
       "\\(25000 \\times 1.3686\\)",
       "\\(25000 \\div 1.3686\\)",
@@ -646,7 +646,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "To find the present value (amount to invest now), divide the future value by the compound interest factor.",
     "solution": "The correct answer is \\(25000 \\times 1.3686\\).",
     "solutionSteps": [
       {
@@ -682,7 +682,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Mia wants to have $18,000 in 3 years time. Her bank account pays 6% p.a. interest, compounded quarterly. If the compounded value of $1 at 1.5% over 12 periods is 1.1956, which expression gives the amount she must invest today?",
     "opts": [
       "\\(18000 \\times 1.1956\\)",
       "\\(18000 \\div 1.1956\\)",
@@ -691,7 +691,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Present value = future value ÷ compound factor.",
     "solution": "The correct answer is \\(18000 \\div 1.1956\\).",
     "solutionSteps": [
       {
@@ -727,7 +727,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "There will be 90 000 students sitting an examination. If their examination results form a normal distribution, how many students would be expected to score a result higher than 1 standard deviation below the mean?",
     "opts": [
       "\\(14\\,400\\)",
       "\\(14\\,535\\)",
@@ -736,7 +736,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "In a normal distribution, approximately 84.13% of data lies above 1 standard deviation below the mean (i.e. above $\\mu - \\sigma$).",
     "solution": "The correct answer is \\(75\\,465\\).",
     "solutionSteps": [
       {
@@ -772,7 +772,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a school of 2 000 students, test scores are normally distributed. How many students are expected to score within 1 standard deviation of the mean?",
     "opts": [
       "\\(680\\)",
       "\\(950\\)",
@@ -781,7 +781,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Approximately 68% of data in a normal distribution lies within 1 standard deviation of the mean.",
     "solution": "The correct answer is \\(1\\,360\\).",
     "solutionSteps": [
       {
@@ -817,7 +817,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the cumulative distribution function:\n$$F(x) = \\begin{cases} 0 & , quad (-\\infty, 0) \\\\ \\sin\\!\\left(\\dfrac{x}{2}\\right) & , quad [0, b] \\\\ 1 & , quad (b, infty) \\end{cases}$$\nFind $b$.",
     "opts": [
       "\\(b = \\dfrac{\\pi}{2}\\)",
       "\\(b = \\pi\\)",
@@ -826,7 +826,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "A CDF must equal 1 at the upper boundary. Set $\\sin\\!\\left(\\frac{b}{2}\\right) = 1$ and solve for $b$.",
     "solution": "The correct answer is \\(b = \\pi\\).",
     "solutionSteps": [
       {
@@ -862,7 +862,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A continuous random variable $X$ has cumulative distribution function:\n$$F(x) = \\begin{cases} 0 & x < 0 \\\\ \\sin(x) & 0 \\leq x \\leq c \\\\ 1 & x > c \\end{cases}$$\nFind the value of $c$.",
     "opts": [
       "\\(c = \\dfrac{\\pi}{4}\\)",
       "\\(c = \\dfrac{\\pi}{2}\\)",
@@ -871,7 +871,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $F(c) = 1$ and solve $\\sin(c) = 1$.",
     "solution": "The correct answer is \\(c = \\dfrac{\\pi}{2}\\).",
     "solutionSteps": [
       {
@@ -907,7 +907,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $|5 - 2x| = 3$.",
     "opts": [
       "\\(x = 1\\) or \\(x = 4\\)",
       "\\(x = -1\\) or \\(x = 4\\)",
@@ -916,7 +916,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Split into two cases: $5 - 2x = 3$ and $5 - 2x = -3$.",
     "solution": "The correct answer is \\(x = 1\\) or \\(x = 4\\).",
     "solutionSteps": [
       {
@@ -952,7 +952,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $|3x - 7| = 5$.",
     "opts": [
       "\\(x = 4\\) or \\(x = \\dfrac{2}{3}\\)",
       "\\(x = -4\\) or \\(x = \\dfrac{2}{3}\\)",
@@ -961,7 +961,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Split into two cases: $3x - 7 = 5$ and $3x - 7 = -5$.",
     "solution": "The correct answer is \\(x = 4\\) or \\(x = \\dfrac{2}{3}\\).",
     "solutionSteps": [
       {
@@ -997,7 +997,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a bag there are 6 red marbles (R) and 12 green marbles (G). Two marbles are selected at random without replacement.\n\nComplete the probability tree and calculate the probability of selecting two marbles of different colours.",
     "opts": [
       "\\(-0.47058823529411764\\)",
       "\\(-0.5294117647058824\\)",
@@ -1006,7 +1006,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find $P(\\text{RG}) + P(\\text{GR})$ using conditional probability on each branch.",
     "solution": "The correct answer is \\(\\dfrac{8}{17}\\).",
     "solutionSteps": [
       {
@@ -1042,7 +1042,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A box contains 4 blue balls and 8 yellow balls. Two balls are drawn without replacement. Calculate the probability that the two balls drawn are different colours.",
     "opts": [
       "\\(-0.48484848484848486\\)",
       "\\(-0.5151515151515151\\)",
@@ -1051,7 +1051,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Calculate $P(\\text{BY}) + P(\\text{YB})$ using a probability tree.",
     "solution": "The correct answer is \\(\\dfrac{16}{33}\\).",
     "solutionSteps": [
       {
@@ -1187,7 +1187,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = \\dfrac{x}{\\ln x}$, solve $f'(x) = 0$ in the domain $x > 0, x \\neq 1$.",
     "opts": [
       "\\(-x = e\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1196,7 +1196,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the quotient rule to find $f'(x)$, then set the numerator equal to zero.",
     "solution": "The correct answer is \\(x = e\\).",
     "solutionSteps": [
       {
@@ -1232,7 +1232,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $g(x) = x^2 \\ln x$ for $x > 0$, solve $g'(x) = 0$.",
     "opts": [
       "\\(-x = \\dfrac{1}{\\sqrt{e}}\\)",
       "\\(x = \\dfrac{1}{\\sqrt{e}}\\)",
@@ -1241,7 +1241,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the product rule to differentiate, then set equal to zero and solve.",
     "solution": "The correct answer is \\(x = \\dfrac{1}{\\sqrt{e}}\\).",
     "solutionSteps": [
       {
@@ -1277,7 +1277,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A sector of angle $\\dfrac{2\\pi}{3}$ is cut out of a circular piece of paper of radius $10$ cm and removed. The cut edges of the remaining paper are brought together to shape the paper into a cone. Find the exact circumference of the circular base of the cone.",
     "opts": [
       "-\\(\\dfrac{40\\pi}{3}\\) cm",
       "\\(\\dfrac{40\\pi}{3}\\) cm",
@@ -1286,7 +1286,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The circumference of the cone's base equals the arc length of the remaining sector. The remaining angle is $2\\pi - \\frac{2\\pi}{3} = \\frac{4\\pi}{3}$.",
     "solution": "The correct answer is \\(\\dfrac{40\\pi}{3}\\) cm.",
     "solutionSteps": [
       {
@@ -1322,7 +1322,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A sector of angle $\\dfrac{\\pi}{2}$ is removed from a circular piece of cardboard of radius $12$ cm. The remaining piece is formed into a cone. Find the exact circumference of the base of the cone.",
     "opts": [
       "\\(18\\pi\\) cm",
       "\\(18\\pi\\) cm + 1",
@@ -1331,7 +1331,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The remaining angle is $2\\pi - \\frac{\\pi}{2} = \\frac{3\\pi}{2}$. Use arc length $= r\\theta$.",
     "solution": "The correct answer is \\(18\\pi\\) cm.",
     "solutionSteps": [
       {
@@ -1457,7 +1457,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Ben starts a small business making candles. He spends $120 on equipment and it costs $8 to make each candle. He sells each candle for $14.\n\n(a) Write equations for cost $C$ and income $I$ for $x$ candles.\n\n(b) Find the number of candles Ben must sell to break even.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1466,7 +1466,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set $C = I$ to find the break-even point.",
     "solution": "The correct answer is \\(C = 120 + 8x\\),  \\(I = 14x\\);  break-even at \\(x = 20\\) candles.",
     "solutionSteps": [
       {
@@ -1592,7 +1592,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A dataset has $\\bar{x} = 4.2$, $\\bar{y} = 8.6$, and a least squares regression slope of $b = -1.5$.\n\n(a) Find the equation of the least squares regression line.\n\n(b) Predict the value of $y$ when $x = 5$.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1601,7 +1601,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $a = \\bar{y} - b\\bar{x}$ to find the intercept, then substitute $x = 5$.",
     "solution": "The correct answer is (a) \\(\\hat{y} = -1.5x + 14.9\\) (b) \\(\\hat{y} = 7.4\\).",
     "solutionSteps": [
       {
@@ -1727,7 +1727,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two ships leave a port $P$. Ship $A$ sails 800 km on a bearing of $050°$ and ship $B$ sails 600 km on a bearing of $110°$. Find the distance between the two ships, correct to the nearest kilometre.",
     "opts": [
       "\\(\\approx 783\\) km",
       "\\(\\approx 783\\) km + 1",
@@ -1736,7 +1736,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The angle between the two bearings is $110° - 50° = 60°$. Apply the cosine rule.",
     "solution": "The correct answer is \\(\\approx 783\\) km.",
     "solutionSteps": [
       {
@@ -1772,7 +1772,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the functions $f(x)$ and $g(x)$ whose graphs are displayed below.\n\n$f(x)$ is a U-shaped parabola with vertex near $(1, 0)$ and the point $(-1, 3)$ visible. $g(x)$ is a straight line with positive gradient passing through the origin.\n\nFind the value of $g(f(-2))$.",
     "opts": [
       "\\(g(f(+2)) = 3\\)",
       "\\(g(f(-2)) = 3\\)",
@@ -1781,7 +1781,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "First read $f(-2)$ from the graph of $f$, then evaluate $g$ at that value.",
     "solution": "The correct answer is \\(g(f(-2)) = 3\\).",
     "solutionSteps": [
       {
@@ -1817,7 +1817,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Given $f(x) = x^2 + 1$ and $g(x) = 2x - 3$, find the value of $g(f(-2))$.",
     "opts": [
       "\\(-7\\)",
       "\\(6\\)",
@@ -1826,7 +1826,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "First find $f(-2)$, then substitute that result into $g$.",
     "solution": "The correct answer is \\(7\\).",
     "solutionSteps": [
       {
@@ -1862,7 +1862,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\sqrt{x}\\,(1-2x)^5$.",
     "opts": [
       "\\(-\\dfrac{(1-2x)^4(1-22x)}{2\\sqrt{x}}\\)",
       "\\(\\dfrac{(1-2x)^4(1-22x)}{2\\sqrt{x}}\\)",
@@ -1871,7 +1871,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the product rule with $u = x^{1/2}$ and $v = (1-2x)^5$. Remember to use the chain rule on $v$.",
     "solution": "The correct answer is \\(\\dfrac{(1-2x)^4(1-22x)}{2\\sqrt{x}}\\).",
     "solutionSteps": [
       {
@@ -1907,7 +1907,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\sqrt{x}\\,(3-x)^4$.",
     "opts": [
       "\\(-\\dfrac{(3-x)^3(3-9x)}{2\\sqrt{x}}\\)",
       "\\(\\dfrac{(3-x)^3(3-9x)}{2\\sqrt{x}}\\)",
@@ -1916,7 +1916,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the product rule with $u = x^{1/2}$ and $v = (3-x)^4$. Use the chain rule on $v$.",
     "solution": "The correct answer is \\(\\dfrac{(3-x)^3(3-9x)}{2\\sqrt{x}}\\).",
     "solutionSteps": [
       {
@@ -1952,7 +1952,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\sin 2x + \\sqrt{3} = 0$ in the domain $[0, 2\\pi]$.",
     "opts": [
       "\\(-x = \\dfrac{2\\pi}{3},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{5\\pi}{3},\\; \\dfrac{11\\pi}{6}\\)",
       "\\(x = \\dfrac{2\\pi}{3},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{5\\pi}{3},\\; \\dfrac{11\\pi}{6}\\)",
@@ -1961,7 +1961,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Isolate $\\sin 2x$, then let $u = 2x$ and solve in $[0, 4\\pi]$ before halving.",
     "solution": "The correct answer is \\(x = \\dfrac{2\\pi}{3},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{5\\pi}{3},\\; \\dfrac{11\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -1997,7 +1997,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $2\\cos 2x - 1 = 0$ in the domain $[0, 2\\pi]$.",
     "opts": [
       "\\(-x = \\dfrac{\\pi}{6},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{7\\pi}{6},\\; \\dfrac{11\\pi}{6}\\)",
       "\\(x = \\dfrac{\\pi}{6},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{7\\pi}{6},\\; \\dfrac{11\\pi}{6}\\)",
@@ -2006,7 +2006,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Isolate $\\cos 2x = \\frac{1}{2}$. Let $u = 2x \\in [0, 4\\pi]$ and solve.",
     "solution": "The correct answer is \\(x = \\dfrac{\\pi}{6},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{7\\pi}{6},\\; \\dfrac{11\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -2118,7 +2118,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A graph of $y = f(x)$ passes through the point $(2, 5)$. Which point will the graph of $y = f(2x - 1)$ pass through?",
     "opts": [
       "\\(\\left(\\dfrac{3}{2},\\; 5\\right)\\)",
       "\\((5,\\; 5)\\)",
@@ -2127,7 +2127,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set the argument $2x - 1 = 2$ and solve for $x$. The $y$-value stays the same.",
     "solution": "The correct answer is \\(\\left(\\dfrac{3}{2},\\; 5\\right)\\).",
     "solutionSteps": [
       {
@@ -2163,7 +2163,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value(s) of $k$, where $k \\neq 0$, given that $x^2 + 8kx + k = 0$ has two equal roots.",
     "opts": [
       "\\(-k = \\dfrac{1}{16}\\)",
       "\\(k = \\dfrac{1}{16}\\)",
@@ -2172,7 +2172,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "For equal roots, the discriminant $\\Delta = b^2 - 4ac = 0$. Substitute $a=1$, $b=8k$, $c=k$.",
     "solution": "The correct answer is \\(k = \\dfrac{1}{16}\\).",
     "solutionSteps": [
       {
@@ -2208,7 +2208,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value(s) of $m$, where $m \\neq 0$, given that $x^2 + 6mx + 4m = 0$ has two equal roots.",
     "opts": [
       "\\(-m = \\dfrac{4}{9}\\)",
       "\\(m = \\dfrac{4}{9}\\)",
@@ -2217,7 +2217,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $\\Delta = (6m)^2 - 4(4m) = 0$ and solve for $m$.",
     "solution": "The correct answer is \\(m = \\dfrac{4}{9}\\).",
     "solutionSteps": [
       {
@@ -2381,7 +2381,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the function $y = x^4 - 8x^2 + 3$, find all stationary points and determine their nature.",
     "opts": [
       "Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\)",
       "The opposite of this statement is true.",
@@ -2390,7 +2390,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $y'$, set it to zero, then use the second derivative test.",
     "solution": "The correct answer is Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\).",
     "solutionSteps": [
       {
@@ -2426,7 +2426,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the region bounded by $y = 1$, $x = 4$ and the curve $y = \\dfrac{2}{x}$.\n\nDetermine the exact area of the shaded region.",
     "opts": [
       "\\(-2\\ln 2 - 2\\)",
       "\\(2\\ln 2 + 2\\)",
@@ -2435,7 +2435,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find where $y = \\frac{2}{x}$ and $y = 1$ intersect. Then integrate the vertical distance between the curves.",
     "solution": "The correct answer is \\(2\\ln 2 - 2\\).",
     "solutionSteps": [
       {
@@ -2471,7 +2471,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact area enclosed between the curve $y = \\dfrac{3}{x}$, the line $y = 1$, and the line $x = 9$.",
     "opts": [
       "\\(-3\\ln 3 - 6\\)",
       "\\(3\\ln 3 + 6\\)",
@@ -2480,7 +2480,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find where $y = \\frac{3}{x}$ meets $y = 1$, then integrate the difference.",
     "solution": "The correct answer is \\(3\\ln 3 - 6\\).",
     "solutionSteps": [
       {
@@ -2516,7 +2516,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph below corresponds to a trigonometric function $f(x) = k\\cos(x + b)$. The graph has amplitude 2, with a minimum at $x = 0$ and a maximum at $x = \\pi$.\n\nFind one pair of possible values for $k$ and $b$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2525,7 +2525,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The amplitude gives $|k|$. Use a known point (e.g. the minimum or maximum) to find $b$.",
     "solution": "The correct answer is \\(k = 2,\\; b = \\pi\\) (or equivalently \\(k = -2,\\; b = 0\\)).",
     "solutionSteps": [
       {
@@ -2556,7 +2556,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A trigonometric function of the form $f(x) = k\\sin(x + b)$ has amplitude 3 and reaches its maximum at $x = \\dfrac{\\pi}{4}$. Find one pair of possible values for $k$ and $b$.",
     "opts": [
       "\\(-k = 3,\\; b = \\dfrac{\\pi}{4}\\)",
       "\\(k = 3,\\; b = \\dfrac{\\pi}{4}\\)",
@@ -2565,7 +2565,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The amplitude gives $|k| = 3$. Maximum of sine occurs when argument $= \\frac{\\pi}{2}$, so set $x + b = \\frac{\\pi}{2}$ at $x = \\frac{\\pi}{4}$.",
     "solution": "The correct answer is \\(k = 3,\\; b = \\dfrac{\\pi}{4}\\).",
     "solutionSteps": [
       {
@@ -2601,7 +2601,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $3^{x^2}$.",
     "opts": [
       "\\(-2x\\ln 3 \\cdot 3^{x^2}\\)",
       "\\(2x\\ln 3 \\cdot 3^{x^2}\\)",
@@ -2610,7 +2610,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the formula $\\frac{d}{dx}[a^u] = a^u \\ln(a) \\cdot u'$, where $a = 3$ and $u = x^2$.",
     "solution": "The correct answer is \\(2x\\ln 3 \\cdot 3^{x^2}\\).",
     "solutionSteps": [
       {
@@ -2646,7 +2646,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $5^{3x}$.",
     "opts": [
       "\\(-3\\ln 5 \\cdot 5^{3x}\\)",
       "\\(3\\ln 5 \\cdot 5^{3x}\\)",
@@ -2655,7 +2655,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\frac{d}{dx}[a^u] = a^u \\ln(a) \\cdot u'$ with $a = 5$ and $u = 3x$.",
     "solution": "The correct answer is \\(3\\ln 5 \\cdot 5^{3x}\\).",
     "solutionSteps": [
       {
@@ -2826,7 +2826,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A random variable $X$ has the following probability distribution:\n\n| $x$ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| $P(X=x)$ | 0.2 | 0.3 | 0.4 | 0.1 |\n\n(a) Find $E(X)$ and $\\text{Var}(X)$.\n\n(b) If an employee earns a base salary of $500 plus $80 per unit of $X$, find the expected weekly salary.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -2835,7 +2835,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $E(X) = \\sum xP(x)$, $\\text{Var}(X) = E(X^2) - [E(X)]^2$, and $E(500 + 80X) = 500 + 80E(X)$.",
     "solution": "The correct answer is (a) \\(E(X) = 1.4\\), \\(\\text{Var}(X) = 0.84\\). (b) Expected salary = 612..",
     "solutionSteps": [
       {
@@ -2871,7 +2871,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Determine the exact area bounded by the curves $y = \\sqrt{3}\\cos x$, $y = \\sin x$ and the $x$-axis from $x = 0$ to $x = \\dfrac{\\pi}{2}$.",
     "opts": [
       "\\(-3 - \\sqrt{3}\\)",
       "\\(3 - \\sqrt{3}\\)",
@@ -2880,7 +2880,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find where the curves intersect. Split the integral at the intersection point, integrating whichever curve is on top in each sub-interval.",
     "solution": "The correct answer is \\(3 - \\sqrt{3}\\).",
     "solutionSteps": [
       {
@@ -2916,7 +2916,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact area enclosed between $y = \\cos x$ and $y = \\sin x$ for $0 \\leq x \\leq \\dfrac{\\pi}{2}$.",
     "opts": [
       "\\(-2\\sqrt{2} - 2\\)",
       "\\(2\\sqrt{2} - 2\\)",
@@ -2925,7 +2925,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find the intersection point, then integrate $|\\cos x - \\sin x|$ by splitting at that point.",
     "solution": "The correct answer is \\(2\\sqrt{2} - 2\\).",
     "solutionSteps": [
       {
@@ -3134,7 +3134,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A fish population starts at 500. It grows by 8% per year but 60 fish are harvested at the end of each year.\n\n(a) Show that after 2 years the population is $T_2 = 500(1.08)^2 - 60(1.08+1)$.\n\n(b) Find a formula for $T_n$.\n\n(c) During what year does the population fall below zero?",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3143,7 +3143,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Follow the same structure as the drop-bear problem. Sum the geometric series for accumulated harvests.",
     "solution": "The correct answer is (b) \\(T_n = 750 - 250(1.08)^n\\) (c) During year \\(n = 10\\) from the start (approximately).",
     "solutionSteps": [
       {
@@ -3307,7 +3307,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A continuous random variable $X$ has PDF:\n$$f(x) = \\begin{cases} kx(4-x), & 0 \\leq x \\leq 4 \\\\ 0, & \\text{otherwise} \\end{cases}$$\n\n(a) Find $k$.\n\n(b) Find $P(X > 3)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3316,7 +3316,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate over $[0,4]$ and set to 1 for part (a). For (b), integrate $f$ from 3 to 4.",
     "solution": "The correct answer is (a) \\(k = \\dfrac{3}{32}\\) (b) \\(P(X > 3) = \\dfrac{5}{32}\\).",
     "solutionSteps": [
       {
@@ -3435,7 +3435,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A shape has area $A = 20(2\\theta + \\sin\\theta)$ cm², where $\\theta$ is measured in radians and $0 < \\theta < \\pi$.\n\nFind the value of $\\theta$ that maximises the area.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3444,7 +3444,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Differentiate and set $\\frac{dA}{d\\theta} = 0$. Check if solutions exist in $(0, pi)$.",
     "solution": "The correct answer is \\(\\theta = \\pi\\) (as \\(\\frac{dA}{d\\theta} = 20(2 + \\cos\\theta) > 0\\) for all \\(\\theta \\in (0,\\pi)\\), so \\(A\\) is increasing — maximum at the boundary \\(\\theta = \\pi\\)).",
     "solutionSteps": [
       {
@@ -3608,7 +3608,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The heights of students at a school are normally distributed with mean 165 cm and standard deviation 8 cm. Students taller than a certain height are selected for the basketball team. If the top 5% are selected, find the minimum height to be selected.",
     "opts": [
       "Approximately \\(178.2\\) cm",
       "The opposite of this statement is true.",
@@ -3617,7 +3617,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $z$ such that $P(Z > z) = 0.05$, i.e. $P(Z < z) = 0.95$. Then convert to raw score.",
     "solution": "The correct answer is Approximately \\(178.2\\) cm.",
     "solutionSteps": [
       {
@@ -3871,7 +3871,7 @@ export const ASCHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Water flows into a tank at a rate given by $\\dfrac{dV}{dt} = 0.5\\cos\\dfrac{\\pi t}{20}$ kL/min. The tank is empty at $t = 0$.\n\n(a) Find the first time $t > 0$ when the flow rate is zero.\n\n(b) Find $V(t)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -3880,7 +3880,7 @@ export const ASCHAM_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set $\\cos(\\pi t/20) = 0$ for part (a). Integrate and apply $V(0) = 0$ for part (b).",
     "solution": "The correct answer is (a) \\(t = 10\\) min (b) \\(V = \\dfrac{10}{\\pi}\\sin\\dfrac{\\pi t}{20}\\).",
     "solutionSteps": [
       {

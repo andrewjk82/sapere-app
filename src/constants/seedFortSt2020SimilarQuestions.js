@@ -7,7 +7,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The fourth term of an arithmetic series is $40$ and the seventh term is $19$. What is the common difference?",
     "opts": [
       "\\(-7\\)",
       "\\(7\\)",
@@ -16,7 +16,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Write $T_4$ and $T_7$ using $T_n = a + (n-1)d$ and subtract.",
     "solution": "The correct answer is \\(-7\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $f(x) = 2x^{7/2}$ is reflected in the $x$-axis, then translated $2$ units right and $5$ units down. The equation of the transformed function is:",
     "opts": [
       "\\(y = 2(-x-2)^{7/2} - 5\\)",
       "\\(y = -2(x-2)^{7/2} - 5\\)",
@@ -61,7 +61,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Reflect ($y \\to -y$), replace $x \\to x-2$, then subtract $5$.",
     "solution": "The correct answer is \\(y = -2(x-2)^{7/2} - 5\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the solution to $\\cos 2x = \\dfrac{\\sqrt{3}}{2}$ in the domain $[-\\pi, pi]$?",
     "opts": [
       "\\(x = \\dfrac{\\pi}{6}, dfrac{5\\pi}{6}, dfrac{-5\\pi}{6}, dfrac{-\\pi}{6}\\)",
       "\\(x = \\dfrac{\\pi}{12}, dfrac{11\\pi}{12}, dfrac{-11\\pi}{12}, dfrac{-\\pi}{12}\\)",
@@ -106,7 +106,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $u = 2x$, $-2\\pi \\le u \\le 2\\pi$; reference angle $\\frac{\\pi}{6}$.",
     "solution": "The correct answer is \\(x = \\dfrac{\\pi}{12}, dfrac{11\\pi}{12}, dfrac{-11\\pi}{12}, dfrac{-\\pi}{12}\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A garden has vertical heights (m) $3, 5, 6, 4$ and $0$ at points spaced $4$ m apart. What is the approximate area using the trapezoidal rule with $4$ intervals?",
     "opts": [
       "\\(30 \\text{ m}^2\\)",
       "\\(60 \\text{ m}^2\\)",
@@ -151,7 +151,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $A \\approx \\frac{h}{2}[y_1 + y_5 + 2(y_2 + y_3 + y_4)]$ with $h = 4$.",
     "solution": "The correct answer is \\(66 \\text{ m}^2\\).",
     "solutionSteps": [
       {
@@ -217,7 +217,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain and range of the function $y = \\dfrac{1}{\\sqrt{x - 4}}$?",
     "opts": [
       "Domain: \\([4, infty)\\), Range: \\((0, infty)\\)",
       "Domain: \\((4, infty)\\), Range: \\((0, infty)\\)",
@@ -226,7 +226,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The square root in the denominator needs $x - 4 > 0$ strictly.",
     "solution": "The correct answer is Domain: \\((4, infty)\\), Range: \\((0, infty)\\).",
     "solutionSteps": [
       {
@@ -262,7 +262,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "At what angle is the line $y = \\sqrt{3}\\,x$ inclined to the positive side of the $x$-axis?",
     "opts": [
       "\\(30°\\)",
       "\\(60°\\)",
@@ -271,7 +271,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\tan\\theta = m$; a positive gradient gives an acute angle.",
     "solution": "The correct answer is \\(60°\\).",
     "solutionSteps": [
       {
@@ -307,7 +307,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram shows a sketch of the gradient function $y = f'(x)$. Which statement about $y = f(x)$ is true?",
     "opts": [
       "A minimum turning point at \\(x = 3\\)",
       "A horizontal point of inflexion at \\(x = -1\\)",
@@ -316,7 +316,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "A double root of $f'$ (touch) gives a horizontal point of inflexion of $f$; a simple root (cross) gives a turning point.",
     "solution": "The correct answer is A horizontal point of inflexion at \\(x = 3\\).",
     "solutionSteps": [
       {
@@ -382,7 +382,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$AOB$ is a sector of a circle, centre $O$ and radius $4$ cm, with area $4\\pi \\text{ cm}^2$. What is the arc length of the sector, in centimetres?",
     "opts": [
       "\\(\\pi\\)",
       "\\(2\\pi\\)",
@@ -391,7 +391,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Find $\\theta$ from $A = \\frac{1}{2}r^2\\theta$, then $\\ell = r\\theta$.",
     "solution": "The correct answer is \\(2\\pi\\).",
     "solutionSteps": [
       {
@@ -457,7 +457,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A discrete random variable $X$ has $P(X{=}0)=a$, $P(X{=}1)=2a$, $P(X{=}2)=4a$, $P(X{=}3)=8a$. The expected value of $X$ is:",
     "opts": [
       "\\(\\dfrac{1}{15}\\)",
       "\\(2\\)",
@@ -466,7 +466,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find $a$ from $\\sum P = 1$, then compute $E(X) = \\sum x\\,P(x)$.",
     "solution": "The correct answer is \\(\\dfrac{34}{15}\\).",
     "solutionSteps": [
       {
@@ -502,7 +502,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $f'(x) = 3x^2 - 9$, which of the following could represent $y = f(x)$? (Option B is a positive cubic with a local maximum then a local minimum.)",
     "opts": [
       "An upward parabola (Option A)",
       "A positive cubic with a max then a min (Option B)",
@@ -511,7 +511,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate: $f(x) = x^3 - 9x + C$, a cubic with two turning points.",
     "solution": "The correct answer is A positive cubic with a max then a min (Option B).",
     "solutionSteps": [
       {
@@ -547,7 +547,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "From $A$, Mia rows $1200$ m on a bearing of $060°$ to $B$, then turns onto a bearing of $130°$ for $1.8$ km to $C$, then returns to $A$. What is the size of $\\angle ABC$?",
     "opts": [
       "\\(\\angle ABC = 110°\\)",
       "\\(\\angle ABC = 110° + 1\\)",
@@ -556,7 +556,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The back-bearing of $A$ from $B$ is $060° + 180°$. Subtract the bearing of $C$ from $B$.",
     "solution": "The correct answer is \\(\\angle ABC = 110°\\).",
     "solutionSteps": [
       {
@@ -688,7 +688,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Calculate $AC$ ($AB = 1200$ m, $BC = 1800$ m, $\\angle ABC = 110°$). Answer to the nearest metre.",
     "opts": [
       "\\(AC \\approx 2481\\) m",
       "\\(AC \\approx 2481\\) m + 1",
@@ -697,7 +697,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Apply the cosine rule with the included angle $110°$.",
     "solution": "The correct answer is \\(AC \\approx 2481\\) m.",
     "solutionSteps": [
       {
@@ -778,7 +778,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\cot x\\sin x$, simplifying your answer.",
     "opts": [
       "\\(--\\sin x\\)",
       "\\(-\\sin x\\)",
@@ -787,7 +787,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Simplify first: $\\cot x\\sin x = \\dfrac{\\cos x}{\\sin x}\\cdot\\sin x = \\cos x$.",
     "solution": "The correct answer is \\(-\\sin x\\).",
     "solutionSteps": [
       {
@@ -823,7 +823,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $\\log_3(x^2 + 5)$.",
     "opts": [
       "\\(-\\dfrac{2x}{(\\ln 3)(x^2 + 5)}\\)",
       "\\(\\dfrac{2x}{(\\ln 3)(x^2 + 5)}\\)",
@@ -832,7 +832,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\frac{d}{dx}\\log_a u = \\frac{u'}{(\\ln a)\\,u}$.",
     "solution": "The correct answer is \\(\\dfrac{2x}{(\\ln 3)(x^2 + 5)}\\).",
     "solutionSteps": [
       {
@@ -868,7 +868,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int \\cos\\!\\left(\\dfrac{x}{4}\\right) dx$.",
     "opts": [
       "\\(-4\\sin\\!\\left(\\dfrac{x}{4}\\right) + C\\)",
       "\\(4\\sin\\!\\left(\\dfrac{x}{4}\\right) + C\\)",
@@ -877,7 +877,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The primitive of $\\cos(ax)$ is $\\frac{1}{a}\\sin(ax)$, with $a = \\frac{1}{4}$.",
     "solution": "The correct answer is \\(4\\sin\\!\\left(\\dfrac{x}{4}\\right) + C\\).",
     "solutionSteps": [
       {
@@ -913,7 +913,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int x^3(x^4 - 3)^2\\,dx$.",
     "opts": [
       "\\(-\\dfrac{1}{12}(x^4 - 3)^3 + C\\)",
       "\\(\\dfrac{1}{12}(x^4 - 3)^3 + C\\)",
@@ -922,7 +922,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Reverse chain rule: derivative of $x^4 - 3$ is $4x^3$.",
     "solution": "The correct answer is \\(\\dfrac{1}{12}(x^4 - 3)^3 + C\\).",
     "solutionSteps": [
       {
@@ -958,7 +958,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate exactly $\\displaystyle\\int_0^1 \\dfrac{x-1}{x^2 - 2x + 5}\\,dx$, simplifying your answer fully.",
     "opts": [
       "\\(-\\ln\\!\\left(\\dfrac{2}{\\sqrt{5}}\\right)\\)",
       "\\(\\ln\\!\\left(\\dfrac{2}{\\sqrt{5}}\\right)\\)",
@@ -967,7 +967,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The derivative of the denominator is $2x - 2 = 2(x-1)$; use $\\int\\frac{f'}{f} = \\ln f$.",
     "solution": "The correct answer is \\(\\ln\\!\\left(\\dfrac{2}{\\sqrt{5}}\\right)\\).",
     "solutionSteps": [
       {
@@ -1003,7 +1003,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For what values of $k$ does $3x^2 - 4x + (2k - 7) = 0$ have real roots?",
     "opts": [
       "\\(-k \\leq \\dfrac{25}{6}\\)",
       "\\(k \\leq \\dfrac{25}{6}\\)",
@@ -1012,7 +1012,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Real roots require $\\Delta = b^2 - 4ac \\geq 0$.",
     "solution": "The correct answer is \\(k \\leq \\dfrac{25}{6}\\).",
     "solutionSteps": [
       {
@@ -1048,7 +1048,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = 3 - \\dfrac{6}{x-2}$, showing all intercepts and asymptotes.",
     "answer": "Hyperbola with vertical asymptote \\(x = 2\\), horizontal asymptote \\(y = 3\\), \\(x\\)-intercept \\((4, 0)\\) and \\(y\\)-intercept \\((0, 6)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Hyperbola with vertical asymptote \\(x = 2\\), horizontal asymptote \\(y = 3\\), \\(x\\)-intercept \\((4, 0)\\) and \\(y\\)-intercept \\((0, 6)\\).",
@@ -1086,7 +1086,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Two box-and-whisker plots show fish lengths (cm): Riverside (median $\\approx 8$, symmetric, range $\\approx 7$) and Lakeside (median $\\approx 5$, positively skewed, range $\\approx 17$). Compare and contrast the two data sets by shape/skewness, location and spread.",
     "opts": [
       "\\(\\dfrac{7}{3}\\)",
       "\\(\\dfrac{12}{x + 2}\\)",
@@ -1095,7 +1095,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Comment on shape/skew, medians (location), and range/IQR (spread), interpreting in context.",
     "solution": "The correct answer is Riverside is symmetric with a higher median (\\(\\approx 8\\) vs \\(\\approx 5\\)) and smaller spread; Lakeside is positively skewed with a much larger range, so its lengths are more spread out and less consistent..",
     "solutionSteps": [
       {
@@ -1161,7 +1161,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the equation of the normal to the curve $y = \\ln\\!\\left(\\dfrac{4x-3}{x}\\right)$ at the point where $x = 1$.",
     "opts": [
       "\\(-x + 3y - 1 = 0\\)",
       "\\(x + 3y - 1 = 0\\)",
@@ -1170,7 +1170,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use log laws: $y = \\ln(4x-3) - \\ln x$, differentiate, evaluate at $x = 1$, take the negative reciprocal.",
     "solution": "The correct answer is \\(x + 3y - 1 = 0\\).",
     "solutionSteps": [
       {
@@ -1206,7 +1206,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A circle is given by $x^2 + y^2 - 6x + 8y = -9$. Find the centre and radius.",
     "opts": [
       "Centre \\((3, -4)\\), radius \\(4\\)",
       "The opposite of this statement is true.",
@@ -1215,7 +1215,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Complete the square in $x$ and $y$.",
     "solution": "The correct answer is Centre \\((3, -4)\\), radius \\(4\\).",
     "solutionSteps": [
       {
@@ -1251,7 +1251,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $f(x) = (x+3)(x-1)^3$. Find the $x$- and $y$-intercepts of $y = f(x)$.",
     "opts": [
       "The opposite of this statement is true.",
       "This is true only when the function is linear.",
@@ -1260,7 +1260,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set $y = 0$ for $x$-intercepts; set $x = 0$ for the $y$-intercept.",
     "solution": "The correct answer is x\\)-intercepts \\((-3, 0)\\) and \\((1, 0)\\); \\(y\\)-intercept \\((0, -3).",
     "solutionSteps": [
       {
@@ -1296,7 +1296,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $f(x) = (x+3)(x-1)^3$, show that $f'(x) = 4(x-1)^2(x+2)$ and $f''(x) = 12(x-1)(x+1)$.",
     "opts": [
       "f'(x) = 4(x-1)^2(x+2)\\) and \\(f''(x) = 12(x-1)(x+1)",
       "The opposite of this statement is true.",
@@ -1305,7 +1305,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Product rule, then factor out $(x-1)^2$; differentiate again for $f''$.",
     "solution": "The correct answer is f'(x) = 4(x-1)^2(x+2)\\) and \\(f''(x) = 12(x-1)(x+1).",
     "solutionSteps": [
       {
@@ -1341,7 +1341,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $f(x) = (x+3)(x-1)^3$ (with $f'(x) = 4(x-1)^2(x+2)$, $f''(x) = 12(x-1)(x+1)$), find the stationary points and determine their nature.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1350,7 +1350,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Solve $f'(x) = 0$, then test with $f''$ (and a sign table where $f'' = 0$).",
     "solution": "The correct answer is \\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion..",
     "solutionSteps": [
       {
@@ -1386,7 +1386,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $f(x) = (x+3)(x-1)^3$ (with $f''(x) = 12(x-1)(x+1)$), find all points of inflection.",
     "opts": [
       "Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\)",
       "The opposite of this statement is true.",
@@ -1395,7 +1395,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $f''(x) = 0$ and confirm a concavity change at each.",
     "solution": "The correct answer is Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\).",
     "solutionSteps": [
       {
@@ -1431,7 +1431,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = f(x) = (x+3)(x-1)^3$, showing the intercepts, the minimum and the points of inflection.",
     "answer": "Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).",
@@ -1469,7 +1469,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "State, in order, the transformations to obtain $y = f\\!\\left(2\\left(x - \\dfrac{1}{4}\\right)\\right)$ from $y = f(x)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1478,7 +1478,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The \"$2$\" is a horizontal dilation by $\\frac12$; the \"$-\\frac14$\" is a translation right; apply the dilation first.",
     "solution": "The correct answer is Horizontal dilation by a factor of \\(\\dfrac{1}{2}\\), then horizontal translation \\(\\dfrac{1}{4}\\) unit right..",
     "solutionSteps": [
       {
@@ -1514,7 +1514,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch $y = f\\!\\left(2\\left(x - \\dfrac{1}{4}\\right)\\right)$, showing the $x$-intercepts, stationary points and inflection points.",
     "answer": "Part (e) dilated horizontally by \\(\\frac12\\) and shifted \\(\\frac14\\) right: \\(x\\)-intercepts \\(\\left(-\\frac{5}{4},0\\right)\\) and \\(\\left(\\frac{3}{4},0\\right)\\), minimum \\(\\left(-\\frac{3}{4},-27\\right)\\), inflections \\(\\left(-\\frac{1}{4},-16\\right)\\) and \\(\\left(\\frac{3}{4},0\\right)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Part (e) dilated horizontally by \\(\\frac12\\) and shifted \\(\\frac14\\) right: \\(x\\)-intercepts \\(\\left(-\\frac{5}{4},0\\right)\\) and \\(\\left(\\frac{3}{4},0\\right)\\), minimum \\(\\left(-\\frac{3}{4},-27\\right)\\), inflections \\(\\left(-\\frac{1}{4},-16\\right)\\) and \\(\\left(\\frac{3}{4},0\\right)\\).",
@@ -1552,7 +1552,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A jacaranda was $60$ cm tall when planted. In the first year it grew $40$ cm, and each year's growth is $80\\%$ of the previous year's. What was the total growth after $3$ years?",
     "opts": [
       "\\(97.6\\) cm",
       "\\(97.6\\) cm + 1",
@@ -1561,7 +1561,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Growths form a GP $40, 40(0.8), 40(0.8)^2$.",
     "solution": "The correct answer is \\(97.6\\) cm.",
     "solutionSteps": [
       {
@@ -1597,7 +1597,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Assuming the jacaranda ($60$ cm at planting, growths $40, 40(0.8), dots$) maintains this pattern, explain why it will never reach a height of $3$ metres.",
     "opts": [
       "Limiting growth \\(200\\) cm, so maximum height \\(60 + 200 = 260\\) cm \\(< 300\\) cm.",
       "The opposite of this statement is true.",
@@ -1606,7 +1606,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find the limiting sum of the growth GP, then add the initial height.",
     "solution": "The correct answer is Limiting growth \\(200\\) cm, so maximum height \\(60 + 200 = 260\\) cm \\(< 300\\) cm..",
     "solutionSteps": [
       {
@@ -1642,7 +1642,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "In which year will the jacaranda ($60$ cm at planting, growths $40, 40(0.8), dots$) reach a height of $2.5$ metres?",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1651,7 +1651,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "It needs to grow $250 - 60 = 190$ cm. Set $S_n = 190$ and solve.",
     "solution": "The correct answer is During the \\(14^{\\text{th}}\\) year.",
     "solutionSteps": [
       {
@@ -1687,7 +1687,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A concentration is $C = C_0 e^{-kt}$ (kL/ha, $t$ in years). It is $8$ kL/ha at $t = 0$ and $3$ kL/ha at $t = 1$. Show that $C_0 = 8$ and $k = -\\ln\\!\\left(\\dfrac{3}{8}\\right)$.",
     "opts": [
       "-C_0 = 8\\) and \\(k = -\\ln\\!\\left(\\dfrac{3}{8}\\right)",
       "C_0 = 8\\) and \\(k = -\\ln\\!\\left(\\dfrac{3}{8}\\right)",
@@ -1696,7 +1696,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Substitute $t = 0$ then $t = 1$.",
     "solution": "The correct answer is C_0 = 8\\) and \\(k = -\\ln\\!\\left(\\dfrac{3}{8}\\right).",
     "solutionSteps": [
       {
@@ -1732,7 +1732,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The paddock is safe once the concentration falls below $0.5$ kL/ha, where $C = 8e^{-kt}$ and $k = -\\ln\\!\\left(\\dfrac{3}{8}\\right)$. How long, to the nearest month, must the farmer wait?",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1741,7 +1741,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set $C = 0.5$ and solve $t = \\dfrac{\\ln(1/16)}{\\ln(3/8)}$.",
     "solution": "The correct answer is \\(\\approx 2\\) years \\(10\\) months.",
     "solutionSteps": [
       {
@@ -1777,7 +1777,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Bo and Cara take turns throwing darts; first to hit the bullseye wins. Bo (first) hits with probability $\\frac{1}{20}$, Cara with $\\frac{1}{25}$. Draw a tree diagram for the first four throws (Bo, Cara, Bo, Cara), noting the game stops once a bullseye is hit.",
     "answer": "A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "A tree where each throw branches Win (W)/Lose (W'); play continues only on the \"lose\" branches: Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\), Bo \\(\\frac{1}{20}\\), Cara \\(\\frac{1}{25}\\).",
@@ -1815,7 +1815,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Bo (first, $P = \\frac{1}{20}$) and Cara ($P = \\frac{1}{25}$) throw in turn. What is the probability that Bo wins on his first or second throw?",
     "opts": [
       "\\(-0.0956\\)",
       "\\(-0.9044\\)",
@@ -1824,7 +1824,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Bo wins on throw 1 with $\\frac{1}{20}$; on throw 2 both must miss first, then Bo hits.",
     "solution": "The correct answer is \\(\\dfrac{239}{2500}\\).",
     "solutionSteps": [
       {
@@ -1860,7 +1860,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Bo (first, $P = \\frac{1}{20}$) and Cara ($P = \\frac{1}{25}$) throw in turn until someone hits. What is the probability that Bo eventually wins?",
     "opts": [
       "\\(-0.43181818181818177\\)",
       "\\(-0.5681818181818182\\)",
@@ -1869,7 +1869,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Bo can win on throw $1, 2, 3, dots$; geometric series with ratio $r = \\frac{19}{20}\\cdot\\frac{24}{25}$.",
     "solution": "The correct answer is \\(\\dfrac{25}{44}\\).",
     "solutionSteps": [
       {
@@ -1905,7 +1905,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram shows $y = 6e^{-x}$ and $y = e^x - 1$. Show that the curves intersect when $e^{2x} - e^x - 6 = 0$.",
     "opts": [
       "\\(e^{-(2x)} - e^x - 6 = 0\\)",
       "\\(e^{2x+1} - e^x - 6 = 0\\)",
@@ -1914,7 +1914,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set the expressions equal and multiply by $e^x$.",
     "solution": "The correct answer is \\(e^{2x} - e^x - 6 = 0\\).",
     "solutionSteps": [
       {
@@ -1980,7 +1980,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence show that the $x$-coordinate of the point $P$ is $x = \\ln 3$ (using $e^{2x} - e^x - 6 = 0$).",
     "opts": [
       "\\(-x = \\ln 3\\)",
       "\\(x = \\ln 3\\)",
@@ -1989,7 +1989,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Let $u = e^x$; reject the negative root.",
     "solution": "The correct answer is \\(x = \\ln 3\\).",
     "solutionSteps": [
       {
@@ -2077,7 +2077,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The velocity–time graph of a particle ($0 \\le t \\le 8$) is a sine-shaped curve with a maximum at $t = 2$ and a minimum at $t = 6$. State the times at which the acceleration is zero.",
     "opts": [
       "t = 2\\) and \\(t = 6",
       "The opposite of this statement is true.",
@@ -2086,7 +2086,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Acceleration is the gradient of the $v$–$t$ graph; zero at the turning points.",
     "solution": "The correct answer is t = 2\\) and \\(t = 6.",
     "solutionSteps": [
       {
@@ -2152,7 +2152,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the same velocity–time graph (max at $t=2$, min at $t=6$, zeros at $t=0,4,8$), state the times at which the speed is increasing.",
     "opts": [
       "-0 < t < 2\\) and \\(4 < t < 6",
       "0 < t < 2\\) and \\(4 < t < 6",
@@ -2161,7 +2161,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Speed increases when $v$ and $a$ have the same sign.",
     "solution": "The correct answer is 0 < t < 2\\) and \\(4 < t < 6.",
     "solutionSteps": [
       {
@@ -2197,7 +2197,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle has velocity $v = \\dfrac{6}{1+t} - t$ m/s ($t \\ge 0$). Find the acceleration when $t = 0$.",
     "opts": [
       "\\(-7 \\text{ m/s}^2\\)",
       "\\(-7 \\text{ m/s}^2 + 1\\)",
@@ -2206,7 +2206,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $\\frac{6}{1+t} = 6(1+t)^{-1}$, then substitute $t = 0$.",
     "solution": "The correct answer is \\(-7 \\text{ m/s}^2\\).",
     "solutionSteps": [
       {
@@ -2242,7 +2242,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = \\dfrac{6}{1+t} - t$, if the particle is initially at the origin, find the displacement $x$ as a function of $t$.",
     "opts": [
       "\\(-x = 6\\ln(1+t) - \\dfrac{t^2}{2}\\)",
       "\\(x = 6\\ln(1+t) - \\dfrac{t^2}{2}\\)",
@@ -2251,7 +2251,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $v$; use $x = 0$ at $t = 0$.",
     "solution": "The correct answer is \\(x = 6\\ln(1+t) - \\dfrac{t^2}{2}\\).",
     "solutionSteps": [
       {
@@ -2287,7 +2287,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $v = \\dfrac{6}{1+t} - t$ ($t \\ge 0$), when is the particle stationary?",
     "opts": [
       "\\(t = 2\\) seconds",
       "\\(t = 2\\) seconds + 1",
@@ -2296,7 +2296,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $v = 0$, multiply by $(1+t)$, solve and reject negative $t$.",
     "solution": "The correct answer is \\(t = 2\\) seconds.",
     "solutionSteps": [
       {
@@ -2332,7 +2332,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $x = 6\\ln(1+t) - \\dfrac{t^2}{2}$ (stationary at $t = 2$), how far does the particle travel in the first $3$ seconds? Give your answer to three significant figures.",
     "opts": [
       "\\(\\approx 5.37\\) m",
       "\\(\\approx 5.37\\) m + 1",
@@ -2341,7 +2341,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The particle turns at $t = 2$. Find $x(0), x(2), x(3)$ and add the leg distances.",
     "solution": "The correct answer is \\(\\approx 5.37\\) m.",
     "solutionSteps": [
       {
@@ -2377,7 +2377,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A tank holds water $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ litres ($0 \\le t \\le 70$). What volume remains after $10$ minutes?",
     "opts": [
       "\\(\\(3600\\) litres\\)",
       "\\(\\(4200\\) litres\\)",
@@ -2386,7 +2386,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $t = 10$.",
     "solution": "The correct answer is \\(\\(3600\\) litres\\).",
     "solutionSteps": [
       {
@@ -2422,7 +2422,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), how long until the tank is half full (to the nearest minute)?",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -2431,7 +2431,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Set $V = 2450$, take square roots (both signs), reject the root outside $[0, 70]$.",
     "solution": "The correct answer is \\(\\approx 21\\) minutes (\\(t \\approx 20.5\\)).",
     "solutionSteps": [
       {
@@ -2467,7 +2467,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$, at what rate does the water drain after $14$ minutes?",
     "opts": [
       "\\(112\\) L/min (draining)",
       "\\(112\\) L/min (draining) + 1",
@@ -2476,7 +2476,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate using the chain rule, then substitute $t = 14$.",
     "solution": "The correct answer is \\(112\\) L/min (draining).",
     "solutionSteps": [
       {
@@ -2512,7 +2512,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $V = 4900\\left(1 - \\dfrac{t}{70}\\right)^2$ ($0 \\le t \\le 70$), at what time does the water drain at its fastest rate?",
     "opts": [
       "At \\(t = 0\\) (rate \\(140\\) L/min)",
       "The opposite of this statement is true.",
@@ -2521,7 +2521,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The drain rate $\\left|\\frac{dV}{dt}\\right| = 140\\left(1 - \\frac{t}{70}\\right)$ is largest at the smallest $t$.",
     "solution": "The correct answer is At \\(t = 0\\) (rate \\(140\\) L/min).",
     "solutionSteps": [
       {
@@ -2557,7 +2557,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The average monthly temperature is $T = 8\\sin(nx + 1) + 15$. What are the maximum and minimum average monthly temperatures?",
     "opts": [
       "Maximum \\(23°\\), minimum \\(7°\\)",
       "The opposite of this statement is true.",
@@ -2566,7 +2566,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $\\sin = 1$ for the max and $\\sin = -1$ for the min.",
     "solution": "The correct answer is Maximum \\(23°\\), minimum \\(7°\\).",
     "solutionSteps": [
       {
@@ -2602,7 +2602,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $T = 8\\sin(nx + 1) + 15$, the period is $12$. Determine $n$ correct to $2$ decimal places.",
     "opts": [
       "\\(-n = \\dfrac{\\pi}{6} \\approx 0.52\\)",
       "\\(n = \\dfrac{\\pi}{6} \\approx 0.52\\)",
@@ -2611,7 +2611,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Period $= \\frac{2\\pi}{n} = 12$.",
     "solution": "The correct answer is \\(n = \\dfrac{\\pi}{6} \\approx 0.52\\).",
     "solutionSteps": [
       {
@@ -2647,7 +2647,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $T = 8\\sin\\!\\left(\\dfrac{\\pi}{6}x + 1\\right) + 15$ ($x =$ month), which month has the lowest average temperature?",
     "opts": [
       "July (month \\(7\\))",
       "The opposite of this statement is true.",
@@ -2656,7 +2656,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Minimum when the argument equals $\\frac{3\\pi}{2}$.",
     "solution": "The correct answer is July (month \\(7\\)).",
     "solutionSteps": [
       {
@@ -2692,7 +2692,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Graph the function $T = 8\\sin\\!\\left(\\dfrac{\\pi}{6}x + 1\\right) + 15$ for $1 \\le x \\le 12$.",
     "answer": "A sine curve over one period, starting near \\((1, 23)\\), falling to a minimum \\(\\approx (7, 7)\\), and rising back toward \\((12, \\approx 22)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "A sine curve over one period, starting near \\((1, 23)\\), falling to a minimum \\(\\approx (7, 7)\\), and rising back toward \\((12, \\approx 22)\\).",
@@ -2730,7 +2730,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A boy travels home $H$ to school $S$ ($8$ km apart) via $H \\to B \\to C \\to S$: walks $HB$, skates $BC$, walks $CS$. The canal is $1.5$ km below the $HS$ line; $\\angle AHB = \\angle DSC = \\theta$. Walking speed $5$ km/h, skating $15$ km/h. Show the time is $T = \\dfrac{3}{5\\cos\\theta} + \\dfrac{8}{15} - \\dfrac{\\tan\\theta}{5}$.",
     "opts": [
       "\\(-T = \\dfrac{3}{5\\cos\\theta} + \\dfrac{8}{15} - \\dfrac{\\tan\\theta}{5}\\)",
       "\\(T = \\dfrac{3}{5\\cos\\theta} + \\dfrac{8}{15} - \\dfrac{\\tan\\theta}{5}\\)",
@@ -2739,7 +2739,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "In right triangle $AHB$, $HB = \\frac{1.5}{\\cos\\theta}$ and $AB = 1.5\\tan\\theta$. Walked $= 2HB$, skated $= 8 - 2(1.5\\tan\\theta)$; time $=$ distance$/$speed.",
     "solution": "The correct answer is \\(T = \\dfrac{3}{5\\cos\\theta} + \\dfrac{8}{15} - \\dfrac{\\tan\\theta}{5}\\).",
     "solutionSteps": [
       {
@@ -2805,7 +2805,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $T = \\dfrac{3}{5\\cos\\theta} + \\dfrac{8}{15} - \\dfrac{\\tan\\theta}{5}$, find, to the nearest minute, the value of $\\theta$ that minimises the travel time.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(\\theta \\approx 19°28'\\)",
@@ -2814,7 +2814,7 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Differentiate, set $\\frac{dT}{d\\theta} = 0$, and solve $\\sin\\theta = \\frac{1}{3}$.",
     "solution": "The correct answer is \\(\\theta \\approx 19°28'\\).",
     "solutionSteps": [
       {

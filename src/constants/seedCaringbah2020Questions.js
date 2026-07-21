@@ -7,7 +7,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $\\cos\\theta = -\\dfrac{12}{13}$ and $180° \\leq \\theta \\leq 360°$, then $\\cot\\theta =$",
     "opts": [
       "\\(-\\dfrac{5}{12}\\)",
       "\\(-\\dfrac{12}{5}\\)",
@@ -16,7 +16,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the Pythagorean identity to find $\\sin\\theta$, then recall $\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}$. Determine the sign using the quadrant.",
     "solution": "The correct answer is \\(\\dfrac{12}{5}\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What are the asymptotes of the graph of $y = \\dfrac{1}{x^2 - 9}$?",
     "opts": [
       "\\(x = \\pm 3\\)",
       "\\(x = \\pm 9\\)",
@@ -61,7 +61,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Vertical asymptotes occur where the denominator equals zero. Factorise $x^2 - 9$ to find these values.",
     "solution": "The correct answer is \\(x = \\pm 3\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the function $f(x) = \\dfrac{x^3}{3} - 5x^2 + 2x + 10$, the gradient is $-14$ at two points. What are the values of the $x$-coordinates at these points?",
     "opts": [
       "\\(-8, 2\\)",
       "\\(8, 2\\)",
@@ -106,7 +106,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Differentiate $f(x)$, set $f'(x) = -14$, then solve the resulting quadratic equation.",
     "solution": "The correct answer is \\(8, 2\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the domain of the function $f(x) = \\sqrt{x} + \\dfrac{1}{\\sqrt{2-x}}$?",
     "opts": [
       "\\((0, 2)\\)",
       "\\([0, 2)\\)",
@@ -151,7 +151,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "For $\\sqrt{x}$ we need $x \\geq 0$. For $\\frac{1}{\\sqrt{2-x}}$ we need $2-x > 0$. Combine both conditions.",
     "solution": "The correct answer is \\([0, 2)\\).",
     "solutionSteps": [
       {
@@ -182,7 +182,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "If the $z$ scores on an examination are normally distributed and $P(z \\leq N) = 0.6$ for some number $N$, what is the value of $P(-N \\leq z \\leq N)$?",
     "opts": [
       "\\(0.1\\)",
       "\\(0.3\\)",
@@ -191,7 +191,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "By symmetry of the standard normal, $P(z \\leq -N) = 1 - P(z \\leq N)$. Then use $P(-N \\leq z \\leq N) = P(z \\leq N) - P(z \\leq -N)$.",
     "solution": "The correct answer is \\(0.2\\).",
     "solutionSteps": [
       {
@@ -222,7 +222,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the change in amplitude and period when the function $f(x) = \\dfrac{1}{2}\\sin 4x$ is transformed into $g(x) = \\sin 2x$?",
     "opts": [
       "The amplitude is halved and the period is halved",
       "The amplitude is halved and the period is doubled",
@@ -231,7 +231,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Compare the amplitudes (the coefficients) and periods ($2\\pi$ divided by the coefficient of $x$) of both functions.",
     "solution": "The correct answer is The amplitude is doubled and the period is doubled.",
     "solutionSteps": [
       {
@@ -262,7 +262,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which statement is true for an ungrouped data set with no outliers?",
     "opts": [
       "The largest possible range is 2 times the IQR",
       "The largest possible range is 3 times the IQR",
@@ -271,7 +271,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "With no outliers, the minimum and maximum lie within $1.5 \\times \\text{IQR}$ of the lower and upper quartiles. Use this to express the range in terms of the IQR.",
     "solution": "The correct answer is The largest possible range is 4 times the IQR.",
     "solutionSteps": [
       {
@@ -307,7 +307,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which line is perpendicular to $3x + 4y + 7 = 0$?",
     "opts": [
       "\\(4x + 3y - 7 = 0\\)",
       "\\(3x - 4y + 7 = 0\\)",
@@ -316,7 +316,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find the gradient of the given line, then the perpendicular gradient is its negative reciprocal. Check which option has that gradient.",
     "solution": "The correct answer is \\(8x - 6y - 7 = 0\\).",
     "solutionSteps": [
       {
@@ -347,7 +347,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the derivative of $3^{4x+5}$?",
     "opts": [
       "\\(\\ln 3 \\times 4 \\times 3^{4x+5}\\)",
       "\\((4x+5) \\times 3^{4x+5}\\)",
@@ -356,7 +356,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use the rule: $\\frac{d}{dx}[a^{f(x)}] = \\ln a \\cdot f'(x) \\cdot a^{f(x)}$.",
     "solution": "The correct answer is \\(\\ln 3 \\times 4 \\times 3^{4x+5}\\).",
     "solutionSteps": [
       {
@@ -392,7 +392,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $\\ln 2 + \\ln 4 + \\ln 8 + \\cdots + \\ln 2^{2n}$?",
     "opts": [
       "\\(n^2 \\ln 2\\)",
       "\\(n(n+1)\\ln 2\\)",
@@ -401,7 +401,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Rewrite each term as a multiple of $\\ln 2$, then identify the arithmetic series $1 + 2 + 3 + \\cdots + 2n$ and use the sum formula.",
     "solution": "The correct answer is \\(n(2n+1)\\ln 2\\).",
     "solutionSteps": [
       {
@@ -432,7 +432,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the values of $a$ and $b$ (in simplified form) such that $\\dfrac{3}{4 - \\sqrt{2}} = a + \\sqrt{b}$.",
     "opts": [
       "\\(-a = \\dfrac{6}{7},\\ b = \\dfrac{9}{98}\\)",
       "\\(a = \\dfrac{6}{7},\\ b = \\dfrac{9}{98}\\)",
@@ -441,7 +441,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Rationalise the denominator by multiplying by $\\frac{4+\\sqrt{2}}{4+\\sqrt{2}}$, then match the rational and irrational parts.",
     "solution": "The correct answer is \\(a = \\dfrac{6}{7},\\ b = \\dfrac{9}{98}\\).",
     "solutionSteps": [
       {
@@ -477,7 +477,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value of $\\theta$, correct to the nearest minute, in a triangle with sides $16$, $12$, and $20$, where $\\theta$ is the angle opposite the side of length $12$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(\\theta = 36°52'\\)",
@@ -486,7 +486,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the cosine rule: $\\cos\\theta = \\frac{a^2 + b^2 - c^2}{2ab}$ where $c$ is the side opposite $\\theta$.",
     "solution": "The correct answer is \\(\\theta = 36°52'\\).",
     "solutionSteps": [
       {
@@ -522,7 +522,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram below shows the graph of $y = x^2 - x - 6$. Point $A$ is where the curve crosses the $x$-axis between $x = 0$ and $x = 6$.\n\n(a) What is the coordinate of $A$?\n\n(b) Find the area bounded by the $x$-axis and the curve $y = x^2 - x - 6$ for the interval $0 \\leq x \\leq 6$.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -531,7 +531,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "For (a), solve $x^2 - x - 6 = 0$. For (b), the curve is below the $x$-axis on $[0,3]$ and above on $[3,6]$, so split the integral and take the absolute value of each part.",
     "solution": "The correct answer is (a) \\(A = (3,\\ 0)\\)\n\n(b) \\(45\\) square units.",
     "solutionSteps": [
       {
@@ -679,7 +679,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Use two applications of the trapezoidal rule to find an approximation to the area given in the diagram. The three parallel heights are $6$ m, $7$ m, and $10$ m, and each strip has width $6$ m.",
     "opts": [
       "\\(-90 \\text{ m}^2\\)",
       "\\(90 \\text{ m}^2\\)",
@@ -688,7 +688,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the trapezoidal rule: $A \\approx \\frac{h}{2}(y_0 + 2y_1 + y_2)$ where $h$ is the common width and $y_0, y_1, y_2$ are the three heights.",
     "solution": "The correct answer is \\(90 \\text{ m}^2\\).",
     "solutionSteps": [
       {
@@ -724,7 +724,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "$ABC$ is a triangular airfield with $AB = BC = 6.4$ km. The bearing of $B$ from $A$ is $140°$ and the bearing of $C$ from $B$ is $032°$.\n\n(a) Show that $\\angle ABC = 72°$.\n\n(b) Find the area of the airfield, correct to the nearest square kilometre.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -733,7 +733,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), use the property that alternate angles on parallel north lines are equal. For (b), use the area formula $A = \\frac{1}{2}ab\\sin C$.",
     "solution": "The correct answer is (a) \\(\\angle ABC = \\angle ABN + \\angle NBC = 40° + 32° = 72°\\)\n\n(b) \\(\\approx 19 \\text{ km}^2\\).",
     "solutionSteps": [
       {
@@ -769,7 +769,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $|2\\cos x - 1| = 1$ for $0 \\leq x \\leq \\pi$.",
     "opts": [
       "\\(-x = 0,\\ \\dfrac{\\pi}{2}\\)",
       "\\(x = 0,\\ \\dfrac{\\pi}{2}\\)",
@@ -778,7 +778,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Remove the absolute value by considering two cases: $2\\cos x - 1 = 1$ and $2\\cos x - 1 = -1$.",
     "solution": "The correct answer is \\(x = 0,\\ \\dfrac{\\pi}{2}\\).",
     "solutionSteps": [
       {
@@ -814,7 +814,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the curve $y = 2x^3 - 9x^2 + 12x$.\n\n(a) Find the coordinates of the stationary points and determine their nature.\n\n(b) Show that a point of inflection occurs at $x = \\dfrac{3}{2}$.\n\n(c) Sketch the graph $y = 2x^3 - 9x^2 + 12x$, indicating clearly all important features.",
     "opts": [
       "(a) Local maximum at \\((1, 5)\\), local minimum at \\((2, 4)\\).\n\n(b) \\(y'' = 12x - 18 = 0 \\Rightarrow x = \\frac{3}{2}\\), and \\(y''\\) changes sign, confirming an inflection point.\n\n(c) See sketch.",
       "The opposite of this statement is true.",
@@ -823,7 +823,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate to find $y'$, set $y' = 0$ for stationary points. Use $y''$ to determine nature. For inflection, set $y'' = 0$ and check sign change.",
     "solution": "The correct answer is (a) Local maximum at \\((1, 5)\\), local minimum at \\((2, 4)\\).\n\n(b) \\(y'' = 12x - 18 = 0 \\Rightarrow x = \\frac{3}{2}\\), and \\(y''\\) changes sign, confirming an inflection point.\n\n(c) See sketch..",
     "solutionSteps": [
       {
@@ -859,7 +859,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of the function $f$ is shown. The shaded areas bounded by $y = f(x)$ and the $x$-axis are: area $A = 8$ (above), area $B = 3$ (below), area $C = 1$ (above). Evaluate $\\displaystyle\\int_{-2}^{5} f(x)\\, dx$.",
     "opts": [
       "\\(-6\\)",
       "\\(5\\)",
@@ -868,7 +868,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the signed area property: a definite integral equals the area above the $x$-axis minus the area below. Identify where $f$ is positive or negative.",
     "solution": "The correct answer is \\(6\\).",
     "solutionSteps": [
       {
@@ -904,7 +904,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram shows the curves $y = 2 - \\dfrac{3}{x}$ and $y = x - 2$ for $x \\geq 0$.\n\n(a) Find the coordinates of the two points $P$ and $Q$ where the two curves intersect.\n\n(b) Hence, find in simplest form, the area of the shaded region contained between the two curves.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -913,7 +913,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), equate the two expressions and solve. For (b), integrate the top curve minus the bottom curve between the intersection points.",
     "solution": "The correct answer is (a) \\(P(1,\\ -1)\\) and \\(Q(3,\\ 1)\\)\n\n(b) \\((4 - 3\\ln 3)\\) square units.",
     "solutionSteps": [
       {
@@ -944,7 +944,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "(a) Show that $\\log_x 2 = \\dfrac{1}{\\log_2 x}$.\n\n(b) Solve the equation $\\log_2 x = 4\\log_x 2$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -953,7 +953,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), apply the change of base rule with base 2. For (b), substitute the result from (a) to create a quadratic in $\\log_2 x$.",
     "solution": "The correct answer is (a) Change of base proof.\n\n(b) \\(x = 4\\) or \\(x = \\dfrac{1}{4}\\).",
     "solutionSteps": [
       {
@@ -989,7 +989,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The completion times for the Oztown triathlon race were normally distributed with mean $60$ minutes and standard deviation $5$ minutes. Using the empirical rule, find Ozzie's completion time if he finished ahead of $84\\%$ of competitors.",
     "opts": [
       "\\(55\\) minutes",
       "\\(55\\) minutes + 1",
@@ -998,7 +998,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Finishing ahead of $84\\%$ means $84\\%$ had a longer time than Ozzie. By the empirical rule, $50\\% + 34\\% = 84\\%$ of values lie above $\\mu - \\sigma$.",
     "solution": "The correct answer is \\(55\\) minutes.",
     "solutionSteps": [
       {
@@ -1034,7 +1034,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The discrete random variable $X$ has a mean of $2$ and probability distribution:\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $p(x)$ | $0.3$ | $0.45$ | $a$ | $b$ |\n\n(a) Show that the two equations in terms of $a$ and $b$ are $a + b = 0.25$ and $3a + 4b = 0.8$.\n\n(b) Hence find the values of $a$ and $b$.",
     "opts": [
       "(a) Shown using sum+to+one and mean conditions.\n\n(b) \\(a = 0.2,\\ b = 0.05\\)",
       "(a) Shown using sum-to-one and mean conditions.\n\n(b) \\(a = 0.2,\\ b = 0.05\\)",
@@ -1043,7 +1043,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the two conditions: (1) all probabilities sum to 1, and (2) $E(X) = \\sum x \\cdot p(x) = 2$.",
     "solution": "The correct answer is (a) Shown using sum-to-one and mean conditions.\n\n(b) \\(a = 0.2,\\ b = 0.05\\).",
     "solutionSteps": [
       {
@@ -1079,7 +1079,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the functions $f(x) = e^x$ and $g(x) = \\ln(x-2)$.\n\n(a) Find the composite function $f(g(x))$.\n\n(b) Find the interval notation for the range of the composite function.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1088,7 +1088,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), substitute $g(x)$ into $f$. Note that the domain of $g$ restricts the overall domain. For (b), determine what values $x - 2$ takes when $x > 2$.",
     "solution": "The correct answer is (a) \\(f(g(x)) = x - 2\\), for \\(x > 2\\)\n\n(b) \\((0,\\ +\\infty)\\).",
     "solutionSteps": [
       {
@@ -1124,7 +1124,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $y = x\\sin 2x$, find $\\dfrac{dy}{dx}$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
       "\\(\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\)",
@@ -1133,7 +1133,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the product rule with $u = x$ and $v = \\sin 2x$. Remember the chain rule when differentiating $\\sin 2x$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = 2x\\cos 2x + \\sin 2x\\).",
     "solutionSteps": [
       {
@@ -1169,7 +1169,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The table below shows the English marks ($x$) and Mathematics marks ($y$) for a class of 12 students (A–L). Only the English mark is available for student $L$ ($x = 80$).\n\n(a) Calculate the correlation coefficient between $x$ and $y$ for students $A$ to $K$. Describe the nature of the correlation.\n\n(b) Find the equation of the least squares regression line of $y$ on $x$ for students $A$ to $K$. Estimate the Mathematics mark of student $L$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1178,7 +1178,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use a calculator in statistics mode. Describe the sign and strength of $r$. Substitute $x = 80$ into the regression line to predict $L$'s mark.",
     "solution": "The correct answer is (a) \\(r \\approx 0.9\\); strong positive correlation.\n\n(b) \\(y = 18 + 0.72x\\); student \\(L\\)'s estimated mark \\(\\approx 76\\)..",
     "solutionSteps": [
       {
@@ -1214,7 +1214,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $y = \\dfrac{e^x}{x+1}$, find $\\dfrac{dy}{dx}$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}\\)",
@@ -1223,7 +1223,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the quotient rule with $u = e^x$ and $v = x+1$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{xe^x}{(x+1)^2}\\).",
     "solutionSteps": [
       {
@@ -1259,7 +1259,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int \\tan^2 x\\, dx$.",
     "opts": [
       "\\(\\sin x - x + C\\)",
       "\\(\\tan x - x\\)",
@@ -1268,7 +1268,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the Pythagorean identity $\\tan^2 x = \\sec^2 x - 1$ to rewrite the integrand in a form that can be integrated directly.",
     "solution": "The correct answer is \\(\\tan x - x + C\\).",
     "solutionSteps": [
       {
@@ -1304,7 +1304,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_0^2 x(x^2-4)^3\\, dx$.",
     "opts": [
       "\\(-31\\)",
       "\\(-32\\)",
@@ -1313,7 +1313,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the reverse chain rule (substitution). Let $u = x^2 - 4$ so that $du = 2x\\,dx$.",
     "solution": "The correct answer is \\(-32\\).",
     "solutionSteps": [
       {
@@ -1349,7 +1349,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A metal crate of fixed volume $9\\text{ m}^3$ is to be made in the shape of a rectangular prism with length $2x$ metres, width $x$ metres and height $h$ metres.\n\n(a) Show that the area $A\\text{ m}^2$ of metal required is given by $A = 4x^2 + \\dfrac{27}{x}$.\n\n(b) Hence find the minimum area of metal required.",
     "opts": [
       "(a) Shown.\n\n(b) \\(27\\text{ m}^2\\)",
       "(a) Shown.\n\n(b) \\(27\\text{ m}^2\\) + 1",
@@ -1358,7 +1358,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a), express $h$ from the volume constraint, then substitute into the total surface area formula. For (b), find $dA/dx = 0$ and verify it is a minimum.",
     "solution": "The correct answer is (a) Shown.\n\n(b) \\(27\\text{ m}^2\\).",
     "solutionSteps": [
       {
@@ -1394,7 +1394,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "At time $t$ hours after $12\\!:\\!00$ am, the height ($h$ metres) of the deck of a boat above the level of the jetty is given by $h = 2\\cos\\!\\left(\\dfrac{4\\pi}{25}t\\right) + 1$. Find, correct to the nearest minute, the first time after $12\\!:\\!00$ am when the deck of the boat is level with the jetty.",
     "opts": [
       "\\(4\\!:\\!10\\) am",
       "\\(4\\!:\\!10\\) am + 1",
@@ -1403,7 +1403,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $h = 0$ and solve $\\cos\\!\\left(\\frac{4\\pi}{25}t\\right) = -\\frac{1}{2}$. Find the smallest positive $t$ and convert to hours and minutes.",
     "solution": "The correct answer is \\(4\\!:\\!10\\) am.",
     "solutionSteps": [
       {
@@ -1439,7 +1439,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The function $f(x) = x^2$ is transformed into a new function whose graph is shown in the diagram. The graph has vertex at $(-1, -3)$ and $y$-intercept at $(0, -5)$. Find the equation of the new function in the form $g(x) = kf(x+b) + c$ for some constants $k$, $b$ and $c$.",
     "opts": [
       "\\(g(x) = +2(x-1)^2 + 3\\)",
       "\\(g(x) = -2(x+1)^2 - 3\\)",
@@ -1448,7 +1448,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The vertex is at $(-1,-3)$, giving $b=1$ and $c=-3$. Use the $y$-intercept to find $k$.",
     "solution": "The correct answer is \\(g(x) = -2(x+1)^2 - 3\\).",
     "solutionSteps": [
       {
@@ -1484,7 +1484,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "(a) On the number plane, draw the graphs of $y = \\cos\\pi x$ and $y = 1 - |x|$ for $-3 \\leq x \\leq 3$.\n\n(b) Hence find the number of solutions of the equation $\\cos\\pi x = 1 - |x|$ in the domain $(-\\infty, infty)$.",
     "opts": [
       "(a) See sketches.\n\n(b) \\(5\\) solutions",
       "The opposite of this statement is true.",
@@ -1493,7 +1493,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a), $y = \\cos\\pi x$ has period $2$ and amplitude $1$. $y = 1-|x|$ is a V-shape with vertex at $(0,1)$. For (b), count all intersection points over all real $x$.",
     "solution": "The correct answer is (a) See sketches.\n\n(b) \\(5\\) solutions.",
     "solutionSteps": [
       {
@@ -1524,7 +1524,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $y = \\tan^2 x$, find the values of the constants $a$ and $b$ such that $\\dfrac{d^2y}{dx^2} = ay^2 + by + 2$.",
     "opts": [
       "\\(\\dfrac{12}{x + 2}\\)",
       "\\(\\dfrac{13}{x + 3}\\)",
@@ -1533,7 +1533,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find $y'$ and $y''$, then substitute $y = \\tan^2 x$ to express $y''$ in terms of $y$.",
     "solution": "The correct answer is \\(a = 6,\\ b = 8\\).",
     "solutionSteps": [
       {
@@ -1569,7 +1569,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The continuous random variable $X$ has probability density function $f(x) = \\dfrac{1}{2}\\sin x$ for $0 \\leq x \\leq \\pi$.\n\n(a) Find the cumulative distribution function (CDF).\n\n(b) Find the first quartile of the distribution.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1578,7 +1578,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), integrate $f(x)$ from $0$ to $x$. For (b), set $F(x) = 0.25$ and solve.",
     "solution": "The correct answer is (a) \\(F(x) = \\dfrac{1}{2}(1 - \\cos x)\\)\n\n(b) \\(x = \\dfrac{\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -1614,7 +1614,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "(a) Differentiate $x\\log_e x$.\n\n(b) Hence or otherwise, evaluate (in exact form), $\\displaystyle\\int_1^2 \\log_e x\\, dx$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1623,7 +1623,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "For (a), use the product rule. For (b), use the result from (a) to reverse-engineer the antiderivative of $\\ln x$.",
     "solution": "The correct answer is (a) \\(1 + \\log_e x\\)\n\n(b) \\(2\\ln 2 - 1\\).",
     "solutionSteps": [
       {
@@ -1739,7 +1739,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The first term of a geometric series is $16$ and the fourth term is $\\dfrac{1}{4}$.\n\n(a) Find the common ratio.\n\n(b) Find the limiting sum of the series.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1748,7 +1748,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use $T_4 = ar^3$ to find $r$. The limiting sum exists when $|r| < 1$: $S_\\infty = \\frac{a}{1-r}$.",
     "solution": "The correct answer is (a) \\(r = \\dfrac{1}{4}\\)\n\n(b) \\(S_\\infty = \\dfrac{64}{3} = 21\\dfrac{1}{3}\\).",
     "solutionSteps": [
       {
@@ -1784,7 +1784,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle is moving in a straight line. At time $t$ seconds it has a displacement $x$ metres from a fixed point $O$ on the line, velocity $v$ ms$^{-1}$, and acceleration $a$ ms$^{-2}$ given by $a = 6t - 12$. Initially, the particle is at rest at $O$.\n\n(a) Find expressions for $v$ and $x$ in terms of $t$.\n\n(b) Find when and where the particle is next at rest.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1793,7 +1793,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate $a$ to get $v$, then integrate $v$ to get $x$. Use initial conditions to find constants. For (b), set $v = 0$ and solve, excluding $t = 0$.",
     "solution": "The correct answer is (a) \\(v = 3t^2 - 12t\\),\\ \\(x = t^3 - 6t^2\\)\n\n(b) Next at rest at \\(t = 4\\) s, position \\(x = -32\\) m (32 m to the left of \\(O\\)).",
     "solutionSteps": [
       {
@@ -1829,7 +1829,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram shows the graph of the curve $y = \\dfrac{e^x - e^{-x}}{e^x + e^{-x}}$.\n\n(a) Show that the shaded region bounded by the curve, the $x$-axis and the line $x = k$, where $k > 0$, has area $\\ln\\!\\left(\\dfrac{e^k + e^{-k}}{2}\\right)$.\n\n(b) Find, in simplest exact form, the value of $k$ such that the shaded region has area $1$ square unit.",
     "opts": [
       "(a) Shown by integrating and simplifying.\n\n(b) \\(k = \\ln\\!\\left(e + \\sqrt{e^2 - 1}\\right)\\)",
       "(a) Shown by integrating and simplifying.\n\n(b) \\(k = \\ln\\!\\left(e + \\sqrt{e^4 - 1}\\right)\\)",
@@ -1838,7 +1838,7 @@ export const CARINGBAH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For (a), integrate the function and note the antiderivative of $\\frac{u'}{u}$ is $\\ln|u|$. For (b), set the area equal to 1 and solve using a quadratic substitution.",
     "solution": "The correct answer is (a) Shown by integrating and simplifying.\n\n(b) \\(k = \\ln\\!\\left(e + \\sqrt{e^2 - 1}\\right)\\).",
     "solutionSteps": [
       {

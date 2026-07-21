@@ -7,7 +7,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following sets of ordered pairs represents a one-to-many relationship?\n\n(A) $(1,1), (1,2), (2,3), (3,4)$\n\n(B) $(1,1), (2,2), (3,2), (4,3)$\n\n(C) $(1,1), (2,2), (3,3), (4,4)$\n\n(D) $(1,1), (1,2), (2,3), (3,3)$",
     "opts": [
       "\\((1,1), (1,2), (2,3), (3,4)\\)",
       "\\((1,1), (2,2), (3,2), (4,3)\\)",
@@ -16,7 +16,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "One-to-many means one $x$-value maps to more than one $y$-value, while every $y$-value comes from only one $x$-value.",
     "solution": "The correct answer is \\((1,1), (1,2), (2,3), (3,4)\\).",
     "solutionSteps": [
       {
@@ -47,7 +47,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The height and weight of a group of students is shown on a scatterplot, with weight (kg) on the horizontal axis and height (cm) on the vertical axis. Student A is plotted above and to the left of Student B. Which of the following statements is true?",
     "opts": [
       "Student A is taller and weighs more than Student B.",
       "Student A is taller and weighs less than Student B.",
@@ -56,7 +56,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Read each axis separately: the vertical axis is height, the horizontal axis is weight.",
     "solution": "The correct answer is Student A is taller and weighs less than Student B..",
     "solutionSteps": [
       {
@@ -107,7 +107,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a mathematics examination, 25% of students scored less than 40 marks, 75% of students scored less than 86 marks and the highest mark was 96. Given that the distribution is symmetrical with no outliers, what is the lowest mark and the median of this data set?",
     "opts": [
       "Lowest mark \\(= 30\\), Median \\(= 63\\)",
       "Lowest mark \\(= 30\\), Median \\(= 68\\)",
@@ -116,7 +116,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For a symmetrical distribution the median is midway between $Q_1$ and $Q_3$, and the minimum is as far below the median as the maximum is above it.",
     "solution": "The correct answer is Lowest mark \\(= 30\\), Median \\(= 63\\).",
     "solutionSteps": [
       {
@@ -152,7 +152,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In an arithmetic series, the sum of the first three terms is 21 and the sum of the first four terms is 36. What is the sum of the first five terms of this series?",
     "opts": [
       "\\(15\\)",
       "\\(51\\)",
@@ -161,7 +161,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $S_n = \\dfrac{n}{2}(2a + (n-1)d)$ to set up two simultaneous equations in $a$ and $d$.",
     "solution": "The correct answer is \\(55\\).",
     "solutionSteps": [
       {
@@ -192,7 +192,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $f(x) = \\sqrt{x}$ and $g(x) = \\dfrac{1}{x-1}$. What is the domain and range valid for both $f(g(x))$ and $g(f(x))$?",
     "opts": [
       "\\(Domain: \\([-1, 1]\\), Range \\((-\\infty, infty)\\)\\)",
       "\\(Domain: \\((0, infty)\\), Range \\((-\\infty, 0) \\cup (0, infty)\\)\\)",
@@ -201,7 +201,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Find the domain and range of each composite separately, then take the values common to both.",
     "solution": "The correct answer is Domain: \\((1, infty)\\), Range \\((0, infty)\\).",
     "solutionSteps": [
       {
@@ -242,7 +242,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The limiting sum of a geometric series is $\\dfrac{10}{9}$ and the sum of its first three terms is $\\dfrac{26}{25}$. What is the common ratio of this series?",
     "opts": [
       "\\(1.39\\)",
       "\\(1.25\\)",
@@ -251,7 +251,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use $S_3 = S_\\infty(1 - r^3)$, which follows from $S_n = \\dfrac{a(1-r^n)}{1-r}$ and $S_\\infty = \\dfrac{a}{1-r}$.",
     "solution": "The correct answer is \\(0.40\\).",
     "solutionSteps": [
       {
@@ -282,7 +282,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In a bag of $n$ coloured discs, exactly 7 are red. Two discs are selected at random, without replacement. The probability that both discs are red is $\\dfrac{21}{55}$. Which quadratic equation could be used to find the value of $n$?",
     "opts": [
       "\\(n^2 + n + 110 = 0\\)",
       "\\(n^2 - n - 110 = 0\\)",
@@ -291,7 +291,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "P(both red) without replacement is $\\dfrac{7}{n} \\times \\dfrac{6}{n-1}$.",
     "solution": "The correct answer is \\(n^2 - n - 110 = 0\\).",
     "solutionSteps": [
       {
@@ -327,7 +327,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle is moving in a straight line such that its displacement $x$ metres at time $t$ seconds from the origin is given by $x = k\\cos(at + b)$, where $a$, $b$ and $k$ are constants. The particle is stationary when $t = \\dfrac{5\\pi}{12}, dfrac{11\\pi}{12}, dfrac{17\\pi}{12}, ldots$ The initial acceleration of the particle is $6\\sqrt{3}\\ \\text{ms}^{-2}$. What could be the values of $a$, $b$ and $k$?",
     "opts": [
       "\\(a = 4, b = -\\dfrac{5\\pi}{6}, k = 3\\)",
       "\\(a = 2, b = -\\dfrac{5\\pi}{6}, k = -3\\)",
@@ -336,7 +336,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Stationary times are $\\dfrac{\\pi}{a}$ apart. Then test the initial acceleration $\\ddot{x}(0) = -ka^2\\cos b$ against $6\\sqrt{3}$.",
     "solution": "The correct answer is \\(a = 2, b = \\dfrac{\\pi}{6}, k = -3\\).",
     "solutionSteps": [
       {
@@ -372,7 +372,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the equation $\\left(\\sin\\theta - \\dfrac{\\sqrt{2}}{2}\\right)\\left(\\tan\\theta - \\dfrac{\\sqrt{3}}{3}\\right) = 0$. How many solutions are there in the interval $0 \\leq \\theta \\leq \\pi$?",
     "opts": [
       "\\(4\\)",
       "\\(3\\)",
@@ -381,7 +381,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the null factor law: solve $\\sin\\theta = \\dfrac{\\sqrt{2}}{2}$ and $\\tan\\theta = \\dfrac{\\sqrt{3}}{3}$ separately on $[0, pi]$.",
     "solution": "The correct answer is \\(3\\).",
     "solutionSteps": [
       {
@@ -417,7 +417,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graphs of an even function $f$ and an odd function $g$ are shown. Define $A = \\displaystyle\\int_{-2}^{-4} f(x)\\,dx$, $B = \\displaystyle\\int_{-2}^{0} g(x)\\,dx$ and $C = \\displaystyle\\int_{2}^{4}\\bigl(f(x)-g(x)\\bigr)\\,dx$. (Note: the limits of $A$ run from $-2$ down to $-4$, so they are reversed.) Which expression equals $\\displaystyle\\int_{0}^{4} g(x)\\,dx$?",
     "opts": [
       "\\(A + B + C\\)",
       "\\(A - B + C\\)",
@@ -426,7 +426,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Reverse the limits of $A$ first. Use $f$ even ($\\int$ on $[-4,-2]$ equals $\\int$ on $[2,4]$) and $g$ odd ($\\int$ on $[-2,0]$ equals $-\\int$ on $[0,2]$). Split $C$ and the target integral at $x=2$.",
     "solution": "The correct answer is \\(-A - B - C\\).",
     "solutionSteps": [
       {
@@ -482,7 +482,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A company records the type of issues for IT support over a period of time. The frequencies shown in the Pareto chart are: Internet Speed 144, Printer Error 118, Forgotten Password 64, Missing Files 54, Slow Computer 26, Other 17. What percentage of issues were due to \"Printer Error\" or \"Forgotten Password\"? Answer to the nearest whole percent.",
     "opts": [
       "\\(42\\%\\)",
       "\\(43\\\\)",
@@ -491,7 +491,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Add the two relevant frequencies and divide by the total of all frequencies.",
     "solution": "The correct answer is \\(43\\%\\).",
     "solutionSteps": [
       {
@@ -537,7 +537,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the equation of the normal to the curve $y = x^3 - 2x$ at the point $(-1, 1)$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(y = +x\\)",
@@ -546,7 +546,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The normal is perpendicular to the tangent: its gradient is the negative reciprocal of $\\dfrac{dy}{dx}$ at the point.",
     "solution": "The correct answer is \\(y = -x\\).",
     "solutionSteps": [
       {
@@ -587,7 +587,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The time it takes to complete a task varies inversely with the number of people assigned. It takes 5 people to complete a task in 4 hours. Find the amount of time it would take 8 people to complete the same task.",
     "opts": [
       "\\(2.5\\) hours",
       "\\(2.5\\) hours + 1",
@@ -596,7 +596,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Inverse variation means $t = \\dfrac{k}{n}$ for a constant $k$. Find $k$ first.",
     "solution": "The correct answer is \\(2.5\\) hours.",
     "solutionSteps": [
       {
@@ -632,7 +632,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\dfrac{dy}{dx}$, given $y = (\\ln x)^2$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\dfrac{2\\ln x}{x}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{2\\ln x}{x}\\)",
@@ -641,7 +641,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the chain rule with outer function $u^2$ and inner function $u = \\ln x$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{2\\ln x}{x}\\).",
     "solutionSteps": [
       {
@@ -672,7 +672,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence or otherwise, find $\\displaystyle\\int_1^e \\dfrac{\\ln(x^2)}{2x}\\,dx$.",
     "opts": [
       "\\(-0.5\\)",
       "\\(\\dfrac{1}{2}\\)",
@@ -681,7 +681,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Simplify $\\ln(x^2) = 2\\ln x$ first, then use part (a): the integrand becomes $\\dfrac{\\ln x}{x}$, which is half the derivative of $(\\ln x)^2$.",
     "solution": "The correct answer is \\(\\dfrac{1}{2}\\).",
     "solutionSteps": [
       {
@@ -712,7 +712,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of the primitive function of $f(x) = \\tan^2 x$ crosses the $x$-axis at $x = \\dfrac{\\pi}{3}$. Find the primitive function, leaving all values in exact form.",
     "opts": [
       "\\(-F(x) = \\tan x - x + \\dfrac{\\pi}{3} - \\sqrt{3}\\)",
       "\\(F(x) = \\tan x - x + \\dfrac{\\pi}{3} - \\sqrt{3}\\)",
@@ -721,7 +721,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the Pythagorean identity $\\tan^2 x = \\sec^2 x - 1$ to integrate, then use $F\\!\\left(\\dfrac{\\pi}{3}\\right) = 0$ to find the constant.",
     "solution": "The correct answer is \\(F(x) = \\tan x - x + \\dfrac{\\pi}{3} - \\sqrt{3}\\).",
     "solutionSteps": [
       {
@@ -752,7 +752,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the function $f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$. Is $f(x)$ even, odd, or neither?",
     "opts": [
       "\\(Even\\)",
       "\\(Odd\\)",
@@ -761,7 +761,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Expand $\\sin\\!\\left(\\dfrac{x}{2} - \\dfrac{\\pi}{2}\\right)$ with the compound angle formula, or check $f(-x) = f(x)$ directly.",
     "solution": "The correct answer is \\(Even\\).",
     "solutionSteps": [
       {
@@ -797,7 +797,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence, or otherwise, find the area bounded by the curve $y = f(x) = -\\sin\\!\\left(\\dfrac{1}{2}(x - \\pi)\\right)$ and the $x$-axis in the interval $[-\\pi, pi]$.",
     "opts": [
       "\\(4\\) square units",
       "\\(4\\) square units + 1",
@@ -806,7 +806,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "From part (a), $f(x) = \\cos\\dfrac{x}{2}$, which is non-negative on $[-\\pi, pi]$. Use the even symmetry to double the integral over $[0, pi]$.",
     "solution": "The correct answer is \\(4\\) square units.",
     "solutionSteps": [
       {
@@ -837,7 +837,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Jason buys a ticket in a lottery, where the first prize is $10,000. Tickets cost $20 each, and the prize distribution is: $P(X=0) = 0.75$, $P(X=20) = m$, $P(X=100) = 0.03$, $P(X=500) = 0.002$, $P(X=5000) = 0.001$, $P(X=10\\,000) = 0.0001$. Find the value of $m$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(m = 0.2169\\)",
@@ -846,7 +846,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The probabilities in a discrete distribution must sum to 1.",
     "solution": "The correct answer is \\(m = 0.2169\\).",
     "solutionSteps": [
       {
@@ -882,7 +882,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using the lottery distribution with $m = 0.2169$ (prizes 0, 20, 100, 500, 5000, 10000 with probabilities 0.75, 0.2169, 0.03, 0.002, 0.001, 0.0001) and a ticket price of $20, show that Jason is expected to lose $5.66 every time he plays this lottery.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -891,7 +891,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Compute $E(X) = \\sum x \\cdot P(X=x)$, then compare with the \\$20 ticket price.",
     "solution": "The correct answer is \\(E(X) = 14.338\\), so expected loss \\(= 20 - 14.338 = 5.662 \\approx \\\\)5.66.",
     "solutionSteps": [
       {
@@ -922,7 +922,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the variance of the lottery prize distribution (prizes 0, 20, 100, 500, 5000, 10000 with probabilities 0.75, 0.2169, 0.03, 0.002, 0.001, 0.0001), given $E(X) = 14.338$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\(\\text{Var}(X) \\approx 35681.18\\)",
@@ -931,7 +931,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is \\(\\text{Var}(X) \\approx 35681.18\\).",
     "solutionSteps": [
       {
@@ -967,7 +967,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Ben is cooking a pizza. The temperature of the pizza oven is modelled by $T = 175 - 150 \\times (0.9)^{0.2t}$, where $T$ is the temperature of the oven (°C) at a time $t$ minutes since the oven was switched on. What was the initial temperature of the oven?",
     "opts": [
       "\\(25°\\)C",
       "\\(25°\\)C + 1",
@@ -976,7 +976,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $t = 0$ into the model.",
     "solution": "The correct answer is \\(25°\\)C.",
     "solutionSteps": [
       {
@@ -1012,7 +1012,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the oven model $T = 175 - 150 \\times (0.9)^{0.2t}$, calculate the average rate at which the temperature changes per minute from $t = 25$ to $t = 75$, correct to two decimal places.",
     "opts": [
       "\\(\\approx 1.15\\) °C per minute",
       "\\(\\approx 1.15\\) °C per minute + 1",
@@ -1021,7 +1021,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Average rate of change $= \\dfrac{T(75) - T(25)}{75 - 25}$.",
     "solution": "The correct answer is \\(\\approx 1.15\\) °C per minute.",
     "solutionSteps": [
       {
@@ -1057,7 +1057,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the oven model $T = 175 - 150 \\times (0.9)^{0.2t}$: Ben can place the pizza in the oven when the instantaneous rate of change of temperature is less than or equal to $1°$C per minute. Given that Ben turned the oven on at 10:30 am, find the earliest time that Ben can place the pizza in the oven, correct to the nearest minute.",
     "opts": [
       "\\(-11:25 am (about 55 minutes after switch-on)\\)",
       "\\(11:25 am (about 55 minutes after switch-on)\\)",
@@ -1066,7 +1066,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Differentiate using $\\dfrac{d}{dt}a^{kt} = k\\ln a \\cdot a^{kt}$, set $\\dfrac{dT}{dt} \\leq 1$ and solve for $t$ with logarithms.",
     "solution": "The correct answer is \\(11:25 am (about 55 minutes after switch-on)\\).",
     "solutionSteps": [
       {
@@ -1107,7 +1107,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A group of students were surveyed on the type of pets they own. The incomplete two-way table shows: Dog & Cat $= A$, Dog & No Cat $= 32$, No Dog & Cat $= 45$, No Dog & No Cat $= 35$. Given that a student owns a dog, the probability that they also own a cat is 60%. Find the probability that a student chosen at random owns both a cat and a dog.",
     "opts": [
       "\\(-\\dfrac{48}{160} = \\dfrac{3}{10}\\)",
       "\\(\\dfrac{48}{160} = \\dfrac{3}{10}\\)",
@@ -1116,7 +1116,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $P(\\text{Cat} \\mid \\text{Dog}) = \\dfrac{A}{A + 32} = 0.6$ to find $A$ first.",
     "solution": "The correct answer is \\(\\dfrac{48}{160} = \\dfrac{3}{10}\\).",
     "solutionSteps": [
       {
@@ -1152,7 +1152,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The relative level of a noise compared to a reference level is calculated by $R = 20\\log_{10}\\!\\left(\\dfrac{N}{N_0}\\right)$, where $R$ is the relative noise level in decibels (dB), $N$ is the level of a noise and $N_0$ is the maximum noise level permitted. The relative noise level at a construction site when operating machinery was found to be 8 dB higher than the maximum noise level permitted. Show that the level of noise produced by the machinery was approximately 2.5 times greater than the maximum noise level permitted.",
     "opts": [
       "\\(-\\dfrac{N}{N_0} = 10^{0.4} \\approx 2.51 \\approx 2.5\\)",
       "\\(\\dfrac{N}{N_0} = 10^{0.4} \\approx 2.51 \\approx 2.5\\)",
@@ -1161,7 +1161,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $R = 8$ and solve for the ratio $\\dfrac{N}{N_0}$ by converting the logarithmic equation to index form.",
     "solution": "The correct answer is \\(\\dfrac{N}{N_0} = 10^{0.4} \\approx 2.51 \\approx 2.5\\).",
     "solutionSteps": [
       {
@@ -1197,7 +1197,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Ivy has plotted the income she received each week for the past five weeks: $(1, 200), (2, 100), (3, 300), (4, 300), (5, 400)$, where the first coordinate is the week number $n$ and the second is the amount in dollars. Over the same five weeks, Ivy's expenses, which were originally $200 per week, increase by $20 each week. Write the equation of the least-squares regression line for Ivy's income, and determine the equation of Ivy's expenses.",
     "opts": [
       "Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\)",
       "The opposite of this statement is true.",
@@ -1206,7 +1206,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For the regression line compute $b = \\dfrac{\\sum xy - n\\bar{x}\\bar{y}}{\\sum x^2 - n\\bar{x}^2}$ and $a = \\bar{y} - b\\bar{x}$. The expenses form an arithmetic (linear) pattern.",
     "solution": "The correct answer is Income \\(= 60n + 80\\); Expenses \\(= 20n + 180\\).",
     "solutionSteps": [
       {
@@ -1272,7 +1272,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A deflated weather balloon is being inflated. The rate of air flow (volume per unit time) is modelled by $V=10e^{-\\sqrt{t}}$, and the graph shows the flow rates at hourly intervals: $(0,10)$, $(1,3.68)$, $(2,2.43)$, $(3,1.77)$.\n\nUsing three applications of the trapezoidal rule, estimate the volume of air in the balloon at time $t=3$.",
     "opts": [
       "\\(\\(9.0\\) units³\\)",
       "\\(\\(12.0\\) units³\\)",
@@ -1281,7 +1281,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Volume is the area under the rate curve: $\\displaystyle\\int_0^3 V\\,dt \\approx \\dfrac{h}{2}\\bigl[f_0 + 2f_1 + 2f_2 + f_3\\bigr]$ with $h = 1$.",
     "solution": "The correct answer is \\(\\(12.0\\) units³\\).",
     "solutionSteps": [
       {
@@ -1327,7 +1327,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A safety shutoff valve is programmed to be activated before the balloon reaches its maximum volume, after which the balloon will burst. The flow-rate curve $V = 10e^{-\\sqrt{t}}$ is concave up. By referring to the graph, or otherwise, explain why the Trapezoidal rule is a valid method of estimation in this context.",
     "opts": [
       "Because the curve is concave up, each trapezium lies above the curve, so the rule overestimates the true volume. An overestimate triggers the safety valve early — before the true maximum volume is reached — so the balloon will not burst.",
       "The opposite of this statement is true.",
@@ -1336,7 +1336,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Consider whether the trapezoidal rule over- or under-estimates for a concave-up curve, and whether an overestimate is safe here.",
     "solution": "The correct answer is Because the curve is concave up, each trapezium lies above the curve, so the rule overestimates the true volume. An overestimate triggers the safety valve early — before the true maximum volume is reached — so the balloon will not burst..",
     "solutionSteps": [
       {
@@ -1382,7 +1382,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A closed water tank in the shape of a half-cylinder with diameter $2r$ metres and length $h$ metres is made from sheet metal. The surface area of the tank is $A$ m² and the volume is $V$ m³, where $V = \\dfrac{1}{2}\\pi r^2 h$. Show that $A = \\pi r^2 + \\dfrac{2V}{\\pi}\\left(\\dfrac{2 + \\pi}{r}\\right)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1391,7 +1391,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The closed half-cylinder has two semicircular ends, a curved half-cylindrical surface, and a flat rectangular top. Express $h$ in terms of $V$ and substitute.",
     "solution": "The correct answer is \\(A = \\pi r^2 + \\pi rh + 2rh\\); substituting \\(h = \\dfrac{2V}{\\pi r^2}\\) gives \\(A = \\pi r^2 + \\dfrac{2V}{\\pi}\\left(\\dfrac{2+\\pi}{r}\\right)\\)..",
     "solutionSteps": [
       {
@@ -1427,7 +1427,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the half-cylinder tank with $A = \\pi r^2 + \\dfrac{2V}{\\pi}\\left(\\dfrac{2 + \\pi}{r}\\right)$ (where $V$ is a fixed constant), show that the amount of sheet metal used is minimised when $r = \\sqrt[3]{\\dfrac{V(2 + \\pi)}{\\pi^2}}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1436,7 +1436,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Differentiate $A(r) = \\pi r^2 + \\dfrac{2V(2+\\pi)}{\\pi}r^{-1}$ with respect to $r$, set the derivative to zero, and verify with the second derivative.",
     "solution": "The correct answer is Setting \\(\\dfrac{dA}{dr} = 0\\) gives \\(r^3 = \\dfrac{V(2+\\pi)}{\\pi^2}\\), and \\(\\dfrac{d^2A}{dr^2} > 0\\) confirms a minimum..",
     "solutionSteps": [
       {
@@ -1467,7 +1467,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence find the length $h$ of the half-cylinder tank that minimises the sheet metal, given that the volume of the tank is 10 cubic metres. Answer correct to two decimal places.",
     "opts": [
       "\\(h \\approx 2.12\\) m",
       "\\(h \\approx 2.12\\) m + 1",
@@ -1476,7 +1476,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $V = 10$ into $r = \\sqrt[3]{\\dfrac{V(2+\\pi)}{\\pi^2}}$, then use $h = \\dfrac{2V}{\\pi r^2}$.",
     "solution": "The correct answer is \\(h \\approx 2.12\\) m.",
     "solutionSteps": [
       {
@@ -1512,7 +1512,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Michael installs a vertical radio mast on level ground at $M$. Two pegs are installed on the ground at $A$ and $B$ on bearings of 045° and 120° respectively from $M$. The distance from $A$ to $M$ is 100 m and the area of the triangle $AMB$ is 10 432 m². Find the distance between the base of the mast, $M$, and the peg at $B$.",
     "opts": [
       "\\(MB = 216\\) m",
       "\\(MB = 216\\) m + 1",
@@ -1521,7 +1521,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The angle $\\angle AMB$ is the difference of the bearings. Use the area formula $\\text{Area} = \\dfrac{1}{2}ab\\sin C$.",
     "solution": "The correct answer is \\(MB = 216\\) m.",
     "solutionSteps": [
       {
@@ -1677,7 +1677,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Supporting wires are connected from each peg ($A$ and $B$) to the top of the mast at $T$, where $MA = 100$ m, $MB = 216$ m, and the mast $MT$ is vertical with height $x$ m. By considering triangle $AMT$ and triangle $BMT$, find the height of the mast, given that the total length of the supporting wires is 380 m.",
     "opts": [
       "\\(x \\approx 100.5\\) m",
       "\\(x \\approx 100.5\\) m + 1",
@@ -1686,7 +1686,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "By Pythagoras, $TA = \\sqrt{x^2 + 100^2}$ and $TB = \\sqrt{x^2 + 216^2}$. Set $TA + TB = 380$ and solve.",
     "solution": "The correct answer is \\(x \\approx 100.5\\) m.",
     "solutionSteps": [
       {
@@ -1782,7 +1782,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Consider the function $f(x) = (x+1)^2$. The following transformations are applied to the graph of $y = f(x)$ in the order shown: (1) horizontal translation right by 4 units; (2) horizontal dilation by a factor of $\\dfrac{4}{3}$; (3) vertical dilation by a factor of $\\dfrac{1}{3}$; (4) vertical translation down by 3 units; (5) reflection in the $x$-axis. Find the equation of the transformed function, and state the vertex and the axis intercepts.",
     "answer": "\\(y = 3 - \\dfrac{3}{16}(x-4)^2\\); vertex \\((4, 3)\\); intercepts \\((0, 0)\\) and \\((8, 0)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(y = 3 - \\dfrac{3}{16}(x-4)^2\\); vertex \\((4, 3)\\); intercepts \\((0, 0)\\) and \\((8, 0)\\).",
@@ -1850,7 +1850,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle is moving along the $x$-axis so that its position, in metres, at time $t$ seconds is given by $x = 2\\ln(t^2 + 3) - t$. Determine the times when the particle is at rest.",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1859,7 +1859,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "The particle is at rest when $v = \\dfrac{dx}{dt} = 0$. Differentiate and solve.",
     "solution": "The correct answer is \\(t = 1\\) s and \\(t = 3\\) s.",
     "solutionSteps": [
       {
@@ -1890,7 +1890,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the particle with position $x = 2\\ln(t^2 + 3) - t$, find the distance travelled by the particle in the first second. Leave your answer in the form involving $\\ln\\!\\left(\\dfrac{a}{b}\\right)$ with integers $a, b$.",
     "opts": [
       "-Distance \\(= 1 - \\ln\\!\\left(\\dfrac{16}{9}\\right) \\approx 0.42\\) m",
       "Distance \\(= 1 - \\ln\\!\\left(\\dfrac{16}{9}\\right) \\approx 0.42\\) m",
@@ -1899,7 +1899,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Check the sign of $v$ on $(0, 1)$: the particle does not change direction before $t = 1$, so distance $= |x(1) - x(0)|$.",
     "solution": "The correct answer is Distance \\(= 1 - \\ln\\!\\left(\\dfrac{16}{9}\\right) \\approx 0.42\\) m.",
     "solutionSteps": [
       {
@@ -1935,7 +1935,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the particle with position $x = 2\\ln(t^2 + 3) - t$ (for $t \\geq 0$), find the maximum velocity of the particle.",
     "opts": [
       "v_{\\max} = \\dfrac{2\\sqrt{3}}{3} + 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}",
       "v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}",
@@ -1944,7 +1944,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Maximise $v(t) = \\dfrac{4t}{t^2+3} - 1$ by setting the acceleration $\\dfrac{dv}{dt} = 0$.",
     "solution": "The correct answer is v_{\\max} = \\dfrac{2\\sqrt{3}}{3} - 1 \\approx 0.15\\) m/s, at \\(t = \\sqrt{3}.",
     "solutionSteps": [
       {
@@ -1980,7 +1980,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the function $f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$. By showing that $f'(x) = 3\\left(1 - \\dfrac{x}{4}\\right)^2(1 - x)$, find any stationary points and determine their nature.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1989,7 +1989,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Use the product rule with $u = 3x$ and $v = \\left(1 - \\dfrac{x}{4}\\right)^3$, then factor out the common $\\left(1-\\dfrac{x}{4}\\right)^2$.",
     "solution": "The correct answer is Local maximum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); horizontal point of inflection at \\((4, 1)\\)..",
     "solutionSteps": [
       {
@@ -2030,7 +2030,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$, explain why the graph of $y = f(x)$ must cross the $x$-axis at least once between $x = 5$ and $x = 6$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2039,7 +2039,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Evaluate $f(5)$ and $f(6)$ and apply the sign-change argument for a continuous function.",
     "solution": "The correct answer is \\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=5\\) and \\(x=6\\)..",
     "solutionSteps": [
       {
@@ -2075,7 +2075,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$ in the interval $[0, 6]$, showing the stationary points, the $y$-intercept and the approximate location of the $x$-intercept.",
     "answer": "Curve starts at \\((0, 1)\\), rises to the local maximum \\(\\left(1, \\dfrac{145}{64}\\right)\\), falls through the horizontal point of inflection \\((4, 1)\\), continues falling and crosses the \\(x\\)-axis between \\(x = 5\\) and \\(x = 6\\), ending at \\(\\left(6, -\\dfrac{5}{4}\\right)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Curve starts at \\((0, 1)\\), rises to the local maximum \\(\\left(1, \\dfrac{145}{64}\\right)\\), falls through the horizontal point of inflection \\((4, 1)\\), continues falling and crosses the \\(x\\)-axis between \\(x = 5\\) and \\(x = 6\\), ending at \\(\\left(6, -\\dfrac{5}{4}\\right)\\).",
@@ -2128,7 +2128,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A continuous random variable $X$ has probability density function $f(x) = e^{-\\frac{1}{2}x}$ for $0 \\leq x \\leq \\ln 4$, and $f(x) = 0$ otherwise. Verify that $f(x)$ is a probability density function.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2137,7 +2137,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Check both conditions: $f(x) \\geq 0$ on its domain, and the total integral equals 1. Note $e^{-\\frac{1}{2}\\ln 4} = \\dfrac{1}{2}$.",
     "solution": "The correct answer is \\(f(x) \\geq 0\\) everywhere, and \\(\\displaystyle\\int_0^{\\ln 4} e^{-x/2}\\,dx = 1\\), so \\(f\\) is a valid pdf..",
     "solutionSteps": [
       {
@@ -2178,7 +2178,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the pdf $f(x) = e^{-\\frac{1}{2}x}$ on $0 \\leq x \\leq \\ln 4$, find the cumulative distribution function $F(x)$ of $X$ for $-\\infty < x < \\infty$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2187,7 +2187,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "$F(x) = \\displaystyle\\int_0^x f(t)\\,dt$ on the support; it is 0 before the support and 1 after.",
     "solution": "The correct answer is \\(F(x) = 0\\) for \\(x < 0\\); \\(F(x) = 2 - 2e^{-x/2}\\) for \\(0 \\leq x \\leq \\ln 4\\); \\(F(x) = 1\\) for \\(x > \\ln 4\\)..",
     "solutionSteps": [
       {
@@ -2223,7 +2223,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the distribution with CDF $F(x) = 2 - 2e^{-x/2}$ on $0 \\leq x \\leq \\ln 4$, find in simplest exact form the median of $X$.",
     "opts": [
       "\\(-m = 2\\ln\\!\\left(\\dfrac{4}{3}\\right) = \\ln\\!\\left(\\dfrac{16}{9}\\right)\\)",
       "\\(m = 2\\ln\\!\\left(\\dfrac{4}{3}\\right) = \\ln\\!\\left(\\dfrac{16}{9}\\right)\\)",
@@ -2232,7 +2232,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The median $m$ satisfies $F(m) = \\dfrac{1}{2}$.",
     "solution": "The correct answer is \\(m = 2\\ln\\!\\left(\\dfrac{4}{3}\\right) = \\ln\\!\\left(\\dfrac{16}{9}\\right)\\).",
     "solutionSteps": [
       {
@@ -2263,7 +2263,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "The diagram shows the graphs of $y = 2\\cos x$ and $y = \\cot x$ for $0 \\leq x \\leq 2\\pi$. Write down the periods of each of the functions $y = 2\\cos(x)$ and $y = \\cot(x)$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2272,7 +2272,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Vertical dilation does not change the period. Cotangent repeats every $\\pi$, like tangent.",
     "solution": "The correct answer is Period of \\(2\\cos x\\) is \\(2\\pi\\); period of \\(\\cot x\\) is \\(\\pi\\)..",
     "solutionSteps": [
       {
@@ -2338,7 +2338,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Show that the $x$-coordinates of the points of intersection of $y = 2\\cos x$ and $y = \\cot x$ are the solutions of the equation $\\cos x\\,(2\\sin x - 1) = 0$ for $0 \\leq x \\leq 2\\pi$, then solve this equation.",
     "opts": [
       "\\(-x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}\\)",
       "\\(x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}\\)",
@@ -2347,7 +2347,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Set $2\\cos x = \\dfrac{\\cos x}{\\sin x}$, multiply both sides by $\\sin x$, and bring everything to one side before factoring.",
     "solution": "The correct answer is \\(x = \\dfrac{\\pi}{6}, \\dfrac{\\pi}{2}, \\dfrac{5\\pi}{6}, \\dfrac{3\\pi}{2}\\).",
     "solutionSteps": [
       {
@@ -2398,7 +2398,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find in simplest exact form the total area of the bounded region enclosed by the curves $y = 2\\cos x$ and $y = \\cot x$ for $0 < x < \\pi$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2407,7 +2407,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The curves intersect at $x = \\dfrac{\\pi}{6}, dfrac{\\pi}{2}, dfrac{5\\pi}{6}$. Determine which curve is on top in each strip, integrate $2\\cos x - \\cot x$ accordingly. Note $\\int \\cot x\\,dx = \\ln|\\sin x|$.",
     "solution": "The correct answer is \\(2 - \\ln 4\\) square units (i.e. \\(2 - 2\\ln 2\\)).",
     "solutionSteps": [
       {
@@ -2453,7 +2453,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The time taken, $t$ minutes, for a machine to produce car parts is modelled by a continuous random variable with pdf $f(t) = k(t-1)^2$ for $1 \\leq t \\leq 2$, $f(t) = k\\left(2 - \\dfrac{t}{2}\\right)$ for $2 \\leq t \\leq 4$, and $f(t) = 0$ otherwise. Show that the value of $k$ is $\\dfrac{3}{4}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -2462,7 +2462,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "The total probability must equal 1: integrate both pieces and add.",
     "solution": "The correct answer is \\(\\dfrac{k}{3} + k = \\dfrac{4k}{3} = 1\\) gives \\(k = \\dfrac{3}{4}\\)..",
     "solutionSteps": [
       {
@@ -2498,7 +2498,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the production-time distribution with $k = \\dfrac{3}{4}$, let $F(t)$ be the cumulative distribution function, where $F(2.16) = 0.3652$. Find the least amount of time taken to produce 88% of the parts.",
     "opts": [
       "\\(t = 3.2\\) minutes",
       "\\(t = 3.2\\) minutes + 1",
@@ -2507,7 +2507,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For $2 \\leq t \\leq 4$, build $F(t) = F(2) + \\displaystyle\\int_2^t \\dfrac{3}{4}\\left(2 - \\dfrac{s}{2}\\right)ds$ and solve $F(t) = 0.88$.",
     "solution": "The correct answer is \\(t = 3.2\\) minutes.",
     "solutionSteps": [
       {
@@ -2543,7 +2543,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A heater converts electrical power, measured in watts, into heat such that the heat produced is given by $h(x) = (f(x))^2$. The heater is plugged into a faulty socket which outputs $x = g(t)$ watts at time $t$ seconds. The power output at time $t = 1$ is 3 watts and is increasing at a rate of 4 watts per second. By considering $h'(x)$ and using the fact that $\\dfrac{d}{dt}f(g(t)) = f'(g(t)) \\times g'(t)$, find the rate of change of the heat produced at time $t = 1$, given that $f(3) = 5$ and $f'(3) = 2$.",
     "opts": [
       "\\(80\\) watts per second",
       "\\(80\\) watts per second + 1",
@@ -2552,7 +2552,7 @@ export const CRANBROOK_2023_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The heat as a function of time is $H(t) = (f(g(t)))^2$. Differentiate with the chain rule: $H'(t) = 2f(g(t)) \\cdot f'(g(t)) \\cdot g'(t)$.",
     "solution": "The correct answer is \\(80\\) watts per second.",
     "solutionSteps": [
       {

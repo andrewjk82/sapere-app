@@ -7,7 +7,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "What are the solutions to the equation $\\sin x = \\dfrac{\\sqrt{3}}{2}$, for $0 \\leq x \\leq 2\\pi$?",
     "opts": [
       "\\(x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6}\\)",
       "\\(x = \\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\)",
@@ -16,7 +16,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Recall the exact value $\\sin 60° = \\frac{\\sqrt{3}}{2}$. Since sine is positive, the angle lies in the first and second quadrants.",
     "solution": "The correct answer is \\(x = \\dfrac{\\pi}{3},\\ \\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A scatterplot shows points that trend downward from left to right, but the spread around the trend line is moderate. How would you describe the correlation between the quantities $x$ and $y$?",
     "opts": [
       "A moderate negative correlation",
       "A moderate positive correlation",
@@ -61,7 +61,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Check the direction (positive/negative) and strength (weak/moderate/strong) of the trend.",
     "solution": "The correct answer is A moderate negative correlation.",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For what values of $x$ is the curve $f(x) = 2x^3 + x^2$ concave down?",
     "opts": [
       "\\(x < -\\dfrac{1}{6}\\)",
       "\\(x > 6\\)",
@@ -106,7 +106,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find $f''(x)$ and set it less than zero.",
     "solution": "The correct answer is \\(x < -\\dfrac{1}{6}\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the period of the curve $y = -3\\cos\\!\\left(2x - \\dfrac{\\pi}{4}\\right)$?",
     "opts": [
       "\\(3\\)",
       "\\(\\pi\\)",
@@ -151,7 +151,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Period $= \\dfrac{2\\pi}{b}$ where $b$ is the coefficient of $x$.",
     "solution": "The correct answer is \\(\\pi\\).",
     "solutionSteps": [
       {
@@ -182,7 +182,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which one of the following is the set of all solutions to $2x^2 - 5x + 2 \\geq 0$?",
     "opts": [
       "\\(\\left[\\dfrac{1}{2}, 2\\right]\\)",
       "\\(\\left(\\dfrac{1}{2}, 2\\right)\\)",
@@ -191,7 +191,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Factor the quadratic and use a sign diagram. The parabola opens upward, so it is $\\geq 0$ outside the roots.",
     "solution": "The correct answer is \\(\\left(-\\infty,\\ \\dfrac{1}{2}\\right] \\cup [2, \\infty)\\).",
     "solutionSteps": [
       {
@@ -222,7 +222,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "What is the value of $f'(x)$ if $f(x) = 3x^4(4-x)^3$?",
     "opts": [
       "\\(3x^3(4-x)^2(7x-16)\\)",
       "\\(3x^3(4-x)^2(16-7x)\\)",
@@ -231,7 +231,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Apply the product rule: $(uv)' = u'v + uv'$ with $u = 3x^4$ and $v = (4-x)^3$.",
     "solution": "The correct answer is \\(3x^3(4-x)^2(16-7x)\\).",
     "solutionSteps": [
       {
@@ -267,7 +267,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = f(x)$ has a stationary point at $(2, -3)$. Which of the following is a stationary point of $y = -f\\!\\left(\\dfrac{x}{2}\\right) - 5$?",
     "opts": [
       "\\((4, 2)\\)",
       "\\((4,\\ -2)\\)",
@@ -276,7 +276,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "If $f$ has a stationary point at $(2, -3)$, apply the transformations one step at a time: horizontal dilation $\\times 2$ (replace $x \\to \\frac{x}{2}$), then reflect in $x$-axis, then shift down by 5.",
     "solution": "The correct answer is \\((4,\\ -2)\\).",
     "solutionSteps": [
       {
@@ -317,7 +317,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For the series $2\\pi,\\ \\pi,\\ \\dfrac{\\pi}{2},\\ \\ldots$, calculate the exact value of the sum of the first 6 terms.",
     "opts": [
       "\\(\\dfrac{63\\pi}{16}\\)",
       "\\(\\dfrac{7\\pi}{2}\\)",
@@ -326,7 +326,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Identify $a$ and $r$, then use $S_n = \\dfrac{a(1-r^n)}{1-r}$.",
     "solution": "The correct answer is \\(\\dfrac{63\\pi}{16}\\).",
     "solutionSteps": [
       {
@@ -362,7 +362,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Consider the region bounded by the $x$-axis, the $y$-axis, the line $y = 3$, and the curve $y = \\ln(x-1)$. The exact value of the area of this region is:",
     "opts": [
       "\\(e^3 - 1\\)",
       "\\(e^3 + 2\\)",
@@ -371,7 +371,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Express $x$ as a function of $y$ and integrate with respect to $y$ from $y=0$ to $y=3$.",
     "solution": "The correct answer is \\(e^3 + 2\\).",
     "solutionSteps": [
       {
@@ -407,7 +407,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A lie detector was used on 200 suspects. Of the 165 accurate tests, 95 were true statements. What is the probability that a person selected at random, given that their test was accurate, made a true statement?",
     "opts": [
       "\\(\\dfrac{95}{105}\\)",
       "\\(\\dfrac{95}{200}\\)",
@@ -416,7 +416,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use conditional probability: $P(\\text{true} \\mid \\text{accurate}) = \\dfrac{P(\\text{true AND accurate})}{P(\\text{accurate})}$.",
     "solution": "The correct answer is \\(\\dfrac{95}{165}\\).",
     "solutionSteps": [
       {
@@ -452,7 +452,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find a primitive of $\\dfrac{1}{5x+1}$.",
     "opts": [
       "\\(\\dfrac{1}{5}\\ln|5x+1| + C\\)",
       "\\(5\\ln|5x+1| + C\\)",
@@ -461,7 +461,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use the standard form $\\displaystyle\\int \\frac{1}{ax+b}\\,dx = \\frac{1}{a}\\ln|ax+b| + C$.",
     "solution": "The correct answer is \\(\\dfrac{1}{5}\\ln|5x+1| + C\\).",
     "solutionSteps": [
       {
@@ -492,7 +492,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A boxplot shows the heights of Year 11 students. The median is at 160 cm and the minimum is at 150 cm. What percentage of Year 11 students have a height below 160 cm?",
     "opts": [
       "\\(50%\\)",
       "\\(25%\\)",
@@ -501,7 +501,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The median divides a dataset in half.",
     "solution": "The correct answer is \\(50%\\).",
     "solutionSteps": [
       {
@@ -537,7 +537,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "From a boxplot, 25% of Year 11 students are taller than 175 cm, and 35% of Year 12 students are taller than 175 cm. The number of students taller than 175 cm is the same for both year groups. If Year 11 has 140 students, how many students are in Year 12?",
     "opts": [
       "\\(100\\)",
       "\\(140\\)",
@@ -546,7 +546,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find the number of Year 11 students above 175 cm, then use that to find the total for Year 12.",
     "solution": "The correct answer is \\(100\\).",
     "solutionSteps": [
       {
@@ -577,7 +577,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the common ratio of a geometric series with a first term of $\\sqrt{2}$ and a limiting sum of $\\dfrac{3\\sqrt{2}}{2}$.",
     "opts": [
       "\\(r = \\dfrac{1}{3}\\)",
       "\\(r = \\dfrac{2}{3}\\)",
@@ -586,7 +586,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $S_\\infty = \\dfrac{a}{1-r}$ and solve for $r$.",
     "solution": "The correct answer is \\(r = \\dfrac{1}{3}\\).",
     "solutionSteps": [
       {
@@ -622,7 +622,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find $\\displaystyle\\int \\frac{8x^3 - 3}{x^2}\\,dx$.",
     "opts": [
       "\\(4x^2 + \\dfrac{3}{x} + C\\)",
       "\\(4x^2 - \\dfrac{3}{x} + C\\)",
@@ -631,7 +631,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Split the fraction and integrate term by term.",
     "solution": "The correct answer is \\(4x^2 + \\dfrac{3}{x} + C\\).",
     "solutionSteps": [
       {
@@ -667,7 +667,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Find $\\dfrac{d^2y}{dx^2}$.",
     "opts": [
       "\\(3x^2 + 2\\)",
       "\\(3x^2 + 2x\\)",
@@ -676,7 +676,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $\\dfrac{dy}{dx}$ with respect to $x$.",
     "solution": "The correct answer is \\(3x^2 + 2\\).",
     "solutionSteps": [
       {
@@ -712,7 +712,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that $\\dfrac{d^2y}{dx^2} \\geq 2$ for all values of $x$, given that $\\dfrac{dy}{dx} = x^3 + 2x - 7$.",
     "answer": "Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Since \\(3x^2 \\geq 0\\) for all \\(x\\), we have \\(d^2y/dx^2 = 3x^2 + 2 \\geq 0 + 2 = 2\\).",
@@ -750,7 +750,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A curve has $\\dfrac{dy}{dx} = x^3 + 2x - 7$ and passes through the point $P(2, 4)$. Find $y$ in terms of $x$.",
     "opts": [
       "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\)",
       "\\(y = \\dfrac{x^4}{4} + x^2 - 7x + 4\\)",
@@ -759,7 +759,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Integrate to find $y$, then substitute the point $P(2,4)$ to find the constant.",
     "solution": "The correct answer is \\(y = \\dfrac{x^4}{4} + x^2 - 7x + 10\\).",
     "solutionSteps": [
       {
@@ -795,7 +795,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find an equation for the normal to the curve at $P(2, 4)$, given $\\dfrac{dy}{dx} = x^3 + 2x - 7$. Write your answer in the form $ax + by + c = 0$ where $a$, $b$ and $c$ are integers.",
     "opts": [
       "\\(x + 5y - 22 = 0\\)",
       "\\(5x - y - 6 = 0\\)",
@@ -804,7 +804,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Find the gradient of the tangent at $P$, then the gradient of the normal is its negative reciprocal.",
     "solution": "The correct answer is \\(x + 5y - 22 = 0\\).",
     "solutionSteps": [
       {
@@ -840,7 +840,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $h(x) = (x-2)(x^2+1)$. Find where the graph of $y = h(x)$ cuts the $x$-axis and the $y$-axis.",
     "opts": [
       "x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)",
       "x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, 2)",
@@ -849,7 +849,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "For the $x$-intercept, set $h(x) = 0$. For the $y$-intercept, evaluate $h(0)$.",
     "solution": "The correct answer is x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2).",
     "solutionSteps": [
       {
@@ -885,7 +885,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the coordinates of the stationary points on the curve $y = h(x) = (x-2)(x^2+1)$ and determine their nature.",
     "opts": [
       "\\(Local max at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local min at \\((1,\\ -2)\\)\\)",
       "\\(Local min at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local max at \\((1,\\ -2)\\)\\)",
@@ -894,7 +894,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Expand $h(x)$, find $h'(x)$, set equal to zero, then use the second derivative to determine nature.",
     "solution": "The correct answer is \\(Local max at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local min at \\((1,\\ -2)\\)\\).",
     "solutionSteps": [
       {
@@ -930,7 +930,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Sketch the graph of $y = h(x) = (x-2)(x^2+1)$, showing stationary points and axes intercepts.",
     "answer": "Sketch showing: \\(x\\)-intercept at \\((2, 0)\\), \\(y\\)-intercept at \\((0, -2)\\), local max at \\((\\frac{1}{3}, -\\frac{50}{27})\\), local min at \\((1, -2)\\).\nCubic shape rising to the right.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Sketch showing: \\(x\\)-intercept at \\((2, 0)\\), \\(y\\)-intercept at \\((0, -2)\\), local max at \\((\\frac{1}{3}, -\\frac{50}{27})\\), local min at \\((1, -2)\\).\nCubic shape rising to the right.",
@@ -968,7 +968,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "If $\\tan\\theta = \\dfrac{4}{5}$ and $\\theta$ is acute, find the exact value of $\\sin\\theta$.",
     "opts": [
       "\\(\\dfrac{4}{\\sqrt{41}}\\)",
       "\\(\\dfrac{5}{\\sqrt{41}}\\)",
@@ -977,7 +977,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Draw a right-angled triangle with opposite = 4, adjacent = 5. Find the hypotenuse using Pythagoras.",
     "solution": "The correct answer is \\(\\dfrac{4}{\\sqrt{41}}\\).",
     "solutionSteps": [
       {
@@ -1008,7 +1008,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Terry makes face masks. A graph shows cost $C$ and revenue $R$ as straight lines. The lines intersect at $x = 200$. How many face masks must Terry sell to break even?",
     "opts": [
       "\\(200\\)",
       "\\(100\\)",
@@ -1017,7 +1017,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Break-even occurs where cost equals revenue, i.e., at the intersection point.",
     "solution": "The correct answer is \\(200\\).",
     "solutionSteps": [
       {
@@ -1053,7 +1053,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "From the cost–revenue graph for face masks: the cost line passes through $(0, 2000)$ and $(200, 4000)$; the revenue line passes through the origin and $(200, 4000)$. By forming equations for $C$ and $R$, determine how many face masks need to be sold to earn a profit of $1500.",
     "opts": [
       "\\(350 face masks\\)",
       "\\(300 face masks\\)",
@@ -1062,7 +1062,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Form linear equations for $C$ and $R$. Profit = $R - C$, then set equal to 1500.",
     "solution": "The correct answer is \\(350 face masks\\).",
     "solutionSteps": [
       {
@@ -1098,7 +1098,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact value of $\\displaystyle\\int_0^{\\pi/6} \\sec^2 2x\\,dx$.",
     "opts": [
       "\\(\\dfrac{\\sqrt{3}}{2}\\)",
       "\\(\\dfrac{\\sqrt{3}}{4}\\)",
@@ -1107,7 +1107,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $\\displaystyle\\int \\sec^2(ax)\\,dx = \\dfrac{1}{a}\\tan(ax) + C$.",
     "solution": "The correct answer is \\(\\dfrac{\\sqrt{3}}{2}\\).",
     "solutionSteps": [
       {
@@ -1143,7 +1143,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\ln(3x^2 + 1)$ with respect to $x$.",
     "opts": [
       "\\(\\dfrac{6x}{3x^2+1}\\)",
       "\\(\\dfrac{6x^2}{3x^2+1}\\)",
@@ -1152,7 +1152,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use the chain rule: $\\dfrac{d}{dx}\\ln f(x) = \\dfrac{f'(x)}{f(x)}$.",
     "solution": "The correct answer is \\(\\dfrac{6x}{3x^2+1}\\).",
     "solutionSteps": [
       {
@@ -1188,7 +1188,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = \\dfrac{\\sin x}{x^2}$ with respect to $x$.",
     "opts": [
       "\\(\\dfrac{x\\cos x - 2\\sin x}{x^3}\\)",
       "\\(\\dfrac{x\\cos x + 2\\sin x}{x^3}\\)",
@@ -1197,7 +1197,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Apply the quotient rule: $\\left(\\dfrac{u}{v}\\right)' = \\dfrac{u'v - uv'}{v^2}$.",
     "solution": "The correct answer is \\(\\dfrac{x\\cos x - 2\\sin x}{x^3}\\).",
     "solutionSteps": [
       {
@@ -1228,7 +1228,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Tess is creating a logo from the region between $p(x) = (5-x)(5+x)$ and $q(x) = \\dfrac{2}{5}(5-x)(5+x)$. Show that the area $A$ of the shaded region is given by $A = \\dfrac{6}{5}\\displaystyle\\int_0^5 (25 - x^2)\\,dx$.",
     "answer": "Subtract the two functions: \\(p(x) - q(x) = (5-x)(5+x) - \\frac{2}{5}(5-x)(5+x) = \\frac{3}{5}(25-x^2)\\).\nBy symmetry about the \\(y\\)-axis: \\(A = 2\\int_0^5 \\frac{3}{5}(25-x^2)\\,dx = \\frac{6}{5}\\int_0^5(25-x^2)\\,dx\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Subtract the two functions: \\(p(x) - q(x) = (5-x)(5+x) - \\frac{2}{5}(5-x)(5+x) = \\frac{3}{5}(25-x^2)\\).\nBy symmetry about the \\(y\\)-axis: \\(A = 2\\int_0^5 \\frac{3}{5}(25-x^2)\\,dx = \\frac{6}{5}\\int_0^5(25-x^2)\\,dx\\).",
@@ -1261,7 +1261,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Hence, or otherwise, find the area of the shaded region between $p(x) = (5-x)(5+x)$ and $q(x) = \\dfrac{2}{5}(5-x)(5+x)$.",
     "opts": [
       "\\(100 square units\\)",
       "\\(\\(\\dfrac{250}{3}\\) square units\\)",
@@ -1270,7 +1270,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Evaluate $\\dfrac{6}{5}\\displaystyle\\int_0^5(25-x^2)\\,dx$.",
     "solution": "The correct answer is \\(100 square units\\).",
     "solutionSteps": [
       {
@@ -1306,7 +1306,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "For events $A$ and $B$ from a sample space, $P(A \\mid B) = \\dfrac{3}{4}$ and $P(B) = \\dfrac{1}{7}$. Calculate $P(A \\cap B)$.",
     "opts": [
       "\\(\\dfrac{3}{28}\\)",
       "\\(\\dfrac{3}{4}\\)",
@@ -1315,7 +1315,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use $P(A \\cap B) = P(A \\mid B) \\times P(B)$.",
     "solution": "The correct answer is \\(\\dfrac{3}{28}\\).",
     "solutionSteps": [
       {
@@ -1351,7 +1351,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Charlotte recorded the height $H$ (metres) of a tree at years $t = 1, 2, 3, 4, 6, 7, 8, 9$ since planting, getting values $0.7, 1.4, 2.4, 3.5, 6.6, 7.9, 8.7, 9.5$. What is the correlation coefficient for this data (correct to 4 decimal places)?",
     "opts": [
       "\\(r \\approx 0.9936\\)",
       "\\(r \\approx 0.9814\\)",
@@ -1360,7 +1360,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use technology (calculator or software) to compute Pearson's correlation coefficient.",
     "solution": "The correct answer is \\(r \\approx 0.9936\\).",
     "solutionSteps": [
       {
@@ -1391,7 +1391,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the equation of the least-squares line of best fit for the tree height data, where $H = A + Bt$. Give $A$ and $B$ correct to 2 decimal places.",
     "opts": [
       "\\(H = -0.94 + 1.17t\\)",
       "\\(H = 0.94 + 1.17t\\)",
@@ -1400,7 +1400,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use a calculator to perform linear regression on the data.",
     "solution": "The correct answer is \\(H = -0.94 + 1.17t\\).",
     "solutionSteps": [
       {
@@ -1431,7 +1431,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $H = -0.94 + 1.17t$, approximately how many years will it take the tree to reach a height of 20 metres? Answer correct to 1 decimal place.",
     "opts": [
       "\\(17.9 years\\)",
       "\\(15.2 years\\)",
@@ -1440,7 +1440,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $H = 20$ and solve for $t$.",
     "solution": "The correct answer is \\(17.9 years\\).",
     "solutionSteps": [
       {
@@ -1476,7 +1476,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "easy",
     "timeLimit": 180,
-    "question": "",
+    "question": "What is the limitation of using the linear model $H = -0.94 + 1.17t$ to predict tree height?",
     "answer": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "As \\(t\\) increases, tree growth may not continue in a linear fashion (e.g., growth slows as the tree matures), so the model is unreliable for long-term extrapolation.",
@@ -1514,7 +1514,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The probability that Chloe gets a concert booking on any given weekend is 65%. What is the probability that she gets at least one booking over two consecutive weekends?",
     "opts": [
       "\\(0.8775\\)",
       "\\(0.6500\\)",
@@ -1523,7 +1523,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use the complement: $P(\\text{at least one}) = 1 - P(\\text{no bookings})$.",
     "solution": "The correct answer is \\(0.8775\\).",
     "solutionSteps": [
       {
@@ -1559,7 +1559,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the centre and radius of the circle $x^2 + y^2 - 4x + 6y = 12$.",
     "opts": [
       "Centre \\((2, -3)\\), radius \\(5\\)",
       "Centre \\((-2, 3)\\), radius \\(5\\)",
@@ -1568,7 +1568,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Complete the square in both $x$ and $y$.",
     "solution": "The correct answer is Centre \\((2, -3)\\), radius \\(5\\).",
     "solutionSteps": [
       {
@@ -1604,7 +1604,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The score $X$ for a biased spinner has $P(X=2) = \\dfrac{1}{12}$, $P(X=4) = \\dfrac{1}{3}$, $P(X=6) = p$. Find $p$, then calculate $E(X)$ and $\\text{Var}(X)$.",
     "opts": [
       "\\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)",
       "\\(p = \\dfrac{5}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\)",
@@ -1613,7 +1613,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "All probabilities must sum to 1. Use $E(X) = \\sum x \\cdot P(X=x)$ and $\\text{Var}(X) = E(X^2) - [E(X)]^2$.",
     "solution": "The correct answer is \\(p = \\dfrac{7}{12}\\),\\ \\(E(X) = 5\\),\\ \\(\\text{Var}(X) = \\dfrac{5}{3}\\).",
     "solutionSteps": [
       {
@@ -1649,7 +1649,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle has displacement $x = t^2 - 4\\ln_e(t-1) + 5$ for $t > 1$ (metres, seconds). Find the exact displacement when $t = 4$.",
     "opts": [
       "\\(\\(21 - 4\\ln 3\\) metres\\)",
       "\\(\\(21 - 4\\ln 4\\) metres\\)",
@@ -1658,7 +1658,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Substitute $t = 4$ directly into the displacement equation.",
     "solution": "The correct answer is \\(\\(21 - 4\\ln 3\\) metres\\).",
     "solutionSteps": [
       {
@@ -1694,7 +1694,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $x = t^2 - 4\\ln_e(t-1) + 5$ ($t > 1$), find an expression for the velocity and hence find when the particle comes to rest.",
     "opts": [
       "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\)",
       "\\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 3\\) s\\)",
@@ -1703,7 +1703,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $x$ with respect to $t$ to get velocity. Set $v = 0$.",
     "solution": "The correct answer is \\(\\(v = 2t - \\dfrac{4}{t-1}\\); particle comes to rest at \\(t = 2\\) s\\).",
     "solutionSteps": [
       {
@@ -1739,7 +1739,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that the acceleration remains positive for $t > 1$ given $x = t^2 - 4\\ln_e(t-1) + 5$.",
     "answer": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(a = 2 + \\dfrac{4}{(t-1)^2}\\).\nSince \\((t-1)^2 > 0\\) for all \\(t \\neq 1\\), we have \\(a > 2 > 0\\) for all \\(t > 1\\).",
@@ -1772,7 +1772,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the exact distance travelled by the particle between when it comes to rest ($t = 2$ s) and $t = 4$ s, given $x = t^2 - 4\\ln_e(t-1) + 5$.",
     "opts": [
       "\\(\\(12 - 4\\ln 3\\) metres\\)",
       "\\(\\(12 + 4\\ln 3\\) metres\\)",
@@ -1781,7 +1781,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Evaluate $x(4) - x(2)$. Since acceleration is always positive, the particle does not change direction, so distance equals displacement change.",
     "solution": "The correct answer is \\(\\(12 - 4\\ln 3\\) metres\\).",
     "solutionSteps": [
       {
@@ -1817,7 +1817,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "For the function $y = e^{-x^2}$, show that $\\dfrac{d^2y}{dx^2} = 4e^{-x^2}\\!\\left(x^2 - \\dfrac{1}{2}\\right)$.",
     "answer": "\\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(y' = -2xe^{-x^2}\\).\n\\(y'' = -2e^{-x^2} + (-2x)(-2x)e^{-x^2} = e^{-x^2}(-2 + 4x^2) = 4e^{-x^2}(x^2 - \\frac{1}{2})\\).",
@@ -1855,7 +1855,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the coordinates of the two points of inflection on the curve $y = e^{-x^2}$.",
     "opts": [
       "\\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\)",
       "\\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{1/2}\\right)\\)",
@@ -1864,7 +1864,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $d^2y/dx^2 = 0$. Since $e^{-x^2} \\neq 0$, you need $x^2 - \\frac{1}{2} = 0$.",
     "solution": "The correct answer is \\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
     "solutionSteps": [
       {
@@ -1905,7 +1905,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Explain why a formula given on the Reference Sheet cannot be used to evaluate $\\displaystyle\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx$.",
     "answer": "The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "The integrand \\(e^{-x^2}\\) cannot be expressed as \\(e^{ax+b}\\) (since the exponent \\(-x^2\\) is not linear).\nNo standard antiderivative formula on the Reference Sheet covers \\(\\int e^{-x^2}\\,dx\\).",
@@ -1943,7 +1943,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show how Isabelle used the Trapezoidal Rule with three function values to determine $\\displaystyle\\int_{-1/\\sqrt{2}}^{1/\\sqrt{2}} e^{-x^2}\\,dx \\approx \\dfrac{1}{\\sqrt{2}} + \\dfrac{1}{\\sqrt{2}\\,e}$.",
     "answer": "Three values at \\(x = -\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}\\): \\(f(B) = e^{-1/2} = \\frac{1}{\\sqrt{e}}\\), \\(f(0) = 1\\), \\(f(C) = e^{-1/2}\\).\nWidth \\(h = \\frac{1}{\\sqrt{2}}\\).\nTrap rule: \\(\\frac{h}{2}[f(B)+2f(0)+f(C)] = \\frac{1}{2\\sqrt{2}}\\left[\\frac{1}{\\sqrt{e}} + 2 + \\frac{1}{\\sqrt{e}}\\right] = \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}e^{1/2}} + \\frac{1}{\\sqrt{2}}\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Three values at \\(x = -\\frac{1}{\\sqrt{2}}, 0, \\frac{1}{\\sqrt{2}}\\): \\(f(B) = e^{-1/2} = \\frac{1}{\\sqrt{e}}\\), \\(f(0) = 1\\), \\(f(C) = e^{-1/2}\\).\nWidth \\(h = \\frac{1}{\\sqrt{2}}\\).\nTrap rule: \\(\\frac{h}{2}[f(B)+2f(0)+f(C)] = \\frac{1}{2\\sqrt{2}}\\left[\\frac{1}{\\sqrt{e}} + 2 + \\frac{1}{\\sqrt{e}}\\right] = \\frac{1}{2\\sqrt{2}} \\cdot \\frac{2}{\\sqrt{e}} + \\frac{1}{\\sqrt{2}} = \\frac{1}{\\sqrt{2}e^{1/2}} + \\frac{1}{\\sqrt{2}}\\).",
@@ -1981,7 +1981,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Why is $\\displaystyle\\int_{-\\frac{1}{\\sqrt{2}}}^{\\frac{1}{\\sqrt{2}}} e^{-x^2}\\,dx$ greater than the trapezoidal estimate with those three points?",
     "opts": [
       "The graph is concave up, so trapeziums overestimate",
       "Trapezoidal rule always overestimates every integral",
@@ -1990,7 +1990,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Find where $y=e^{-x^2}$ changes concavity. On $\\left[-\\frac{1}{\\sqrt{2}},\\frac{1}{\\sqrt{2}}\\right]$ check the sign of $y''$.",
     "solution": "The correct answer is On this interval the graph is concave down, so trapeziums lie under the curve and underestimate the integral.",
     "solutionSteps": [
       {
@@ -2026,7 +2026,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "How many solutions does the equation $3\\sin x = \\dfrac{x^2}{5} - 3$ have? (Draw the graphs of $y = 3\\sin x$ and $y = \\dfrac{x^2}{5} - 3$ to determine the answer.)",
     "opts": [
       "\\(4 solutions\\)",
       "\\(2 solutions\\)",
@@ -2035,7 +2035,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Plot $y = 3\\sin x$ (amplitude 3, period $2\\pi$) and $y = \\frac{x^2}{5} - 3$ (upward parabola with vertex at $(0, -3)$). Count intersection points.",
     "solution": "The correct answer is \\(4 solutions\\).",
     "solutionSteps": [
       {
@@ -2071,7 +2071,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that $\\dfrac{\\sec\\theta - 1}{\\sec\\theta + 1} = \\cosec\\theta - \\cot\\theta$.",
     "answer": "LHS: substitute \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), multiply numerator and denominator by \\(\\cos\\theta\\): \\(\\frac{1-\\cos\\theta}{1+\\cos\\theta}\\).\nMultiply by \\(\\frac{(1+\\cos\\theta)}{(1+\\cos\\theta)}\\) ...\nor use the standard method: multiply top and bottom by \\((\\sec\\theta - 1)\\) and use Pythagorean identity.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "LHS: substitute \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), multiply numerator and denominator by \\(\\cos\\theta\\): \\(\\frac{1-\\cos\\theta}{1+\\cos\\theta}\\).\nMultiply by \\(\\frac{(1+\\cos\\theta)}{(1+\\cos\\theta)}\\) ...\nor use the standard method: multiply top and bottom by \\((\\sec\\theta - 1)\\) and use Pythagorean identity.",
@@ -2114,7 +2114,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "A cylindrical tank fits into an isosceles triangular roof. The triangle has two sides of length 10 m and a base of 16 m. Show that the height of the roof is 6 metres.",
     "answer": "Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "Using Pythagoras: height \\(= \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = \\sqrt{36} = 6\\) m.",
@@ -2152,7 +2152,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
-    "question": "",
+    "question": "A cylinder of radius $r$ m and height $h$ m fits inside a triangular roof of height 6 m and base 16 m. Show that $h = \\dfrac{3}{4}(8 - r)$.",
     "answer": "By similar triangles: the portion above the cylinder has height \\((6 - h)\\) and half-width \\(r\\).\nThe full triangle has height 6 and half-width 8.\nSo \\(\\frac{6-h}{r} = \\frac{6}{8} = \\frac{3}{4}\\).\nThus \\(6 - h = \\frac{3r}{4} \\Rightarrow h = 6 - \\frac{3r}{4} = \\frac{3}{4}(8-r)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "By similar triangles: the portion above the cylinder has height \\((6 - h)\\) and half-width \\(r\\).\nThe full triangle has height 6 and half-width 8.\nSo \\(\\frac{6-h}{r} = \\frac{6}{8} = \\frac{3}{4}\\).\nThus \\(6 - h = \\frac{3r}{4} \\Rightarrow h = 6 - \\frac{3r}{4} = \\frac{3}{4}(8-r)\\).",
@@ -2185,7 +2185,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "teacher_review",
     "difficulty": "medium",
     "timeLimit": 180,
-    "question": "",
+    "question": "Show that the volume of the cylindrical tank can be expressed as $V = \\dfrac{3\\pi}{4}(8r^2 - r^3)$.",
     "answer": "\\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "\\(V = \\pi r^2 h = \\pi r^2 \\cdot \\frac{3}{4}(8-r) = \\frac{3\\pi}{4}(8r^2 - r^3)\\).",
@@ -2223,7 +2223,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the value of $r$ that gives the cylindrical tank its greatest volume, and calculate that volume correct to the nearest cubic metre, given $V = \\dfrac{3\\pi}{4}(8r^2 - r^3)$.",
     "opts": [
       "\\(\\(r = \\dfrac{16}{3}\\) m; \\(V_{\\max} = \\dfrac{512\\pi}{9} \\approx 179\\) m³\\)",
       "\\(\\(r = \\dfrac{8}{3}\\) m; \\(V_{\\max} \\approx 89\\) m³\\)",
@@ -2232,7 +2232,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $V$ with respect to $r$, set equal to zero, and verify it is a maximum.",
     "solution": "The correct answer is \\(\\(r = \\dfrac{16}{3}\\) m; \\(V_{\\max} = \\dfrac{512\\pi}{9} \\approx 179\\) m³\\).",
     "solutionSteps": [
       {
@@ -2263,7 +2263,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "Sophie models river depth by $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$ where the maximum depth is 5 m and the minimum is 1 m. What is the amplitude $a$?",
     "opts": [
       "\\(a = 2\\)",
       "\\(a = 4\\)",
@@ -2272,7 +2272,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Amplitude $= \\dfrac{\\text{max} - \\text{min}}{2}$.",
     "solution": "The correct answer is \\(a = 2\\).",
     "solutionSteps": [
       {
@@ -2308,7 +2308,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 120,
-    "question": "",
+    "question": "In Sophie's river depth model $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$, with max depth 5 m and min depth 1 m, find the value of $c$.",
     "opts": [
       "\\(c = 3\\)",
       "\\(c = 2\\)",
@@ -2317,7 +2317,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "The centre (midline) of the sinusoidal function is $c = \\dfrac{\\text{max} + \\text{min}}{2}$.",
     "solution": "The correct answer is \\(c = 3\\).",
     "solutionSteps": [
       {
@@ -2353,7 +2353,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "In Sophie's river depth model $D = a\\sin\\!\\left(nt + \\dfrac{\\pi}{3}\\right) + c$, the period between successive peaks is exactly 12 hours. Find the value of $n$.",
     "opts": [
       "\\(n = \\dfrac{\\pi}{6}\\)",
       "\\(n = \\dfrac{\\pi}{12}\\)",
@@ -2362,7 +2362,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Period $= \\dfrac{2\\pi}{n}$. Set this equal to 12.",
     "solution": "The correct answer is \\(n = \\dfrac{\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -2398,7 +2398,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Sophie's model is $D = 2\\sin\\!\\left(\\dfrac{\\pi}{6}t + \\dfrac{\\pi}{3}\\right) + 3$. She starts recording when $D = 4.73$ m. How long does she wait until the depth first reaches 1 m?",
     "opts": [
       "\\(7 hours\\)",
       "\\(5 hours\\)",
@@ -2407,7 +2407,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $D = 1$ and solve for $t$. Recall at $t = 0$ the depth starts near its peak (4.73 m), so $t$ must be positive.",
     "solution": "The correct answer is \\(7 hours\\).",
     "solutionSteps": [
       {
@@ -2438,7 +2438,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "For $D = 2\\sin\\!\\left(\\dfrac{\\pi}{6}t + \\dfrac{\\pi}{3}\\right) + 3$, find when the greatest rate of drop in depth occurs and what that rate is. Answer correct to 2 decimal places.",
     "opts": [
       "\\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\)",
       "\\(At \\(t = 2\\) h; rate \\(\\approx -1.05\\) m/h\\)",
@@ -2447,7 +2447,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Differentiate $D$ with respect to $t$ to get the rate $\\dot{D}$, then minimise $\\dot{D}$ (find its most negative value).",
     "solution": "The correct answer is \\(At \\(t = 4\\) h; rate \\(= -\\dfrac{\\pi}{3} \\approx -1.05\\) m/h\\).",
     "solutionSteps": [
       {

@@ -7,7 +7,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Eight friends, including Mia and Kaito, sit in a row of 8 chairs. In how many ways can they sit if Mia and Kaito must NOT sit next to each other?",
     "opts": [
       "\\(5040\\)",
       "\\(10080\\)",
@@ -16,7 +16,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Count all arrangements, then subtract those where Mia and Kaito ARE adjacent.",
     "solution": "The correct answer is \\(30240\\).",
     "solutionSteps": [
       {
@@ -52,7 +52,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The region bounded by the curve $x^2 + (y+2)^2 = 9$ and the lines $y = -5$ and $y = 1$ is rotated about the $y$-axis. Which integral gives the volume?\n\n(A) $\\pi \\displaystyle\\int_{-5}^{1} (9 + (y+2)^2)\\, dy$\n\n(B) $\\pi \\displaystyle\\int_{-5}^{1} (9 - (y-2)^2)\\, dy$\n\n(C) $\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy$\n\n(D) $\\pi \\displaystyle\\int_{-5}^{1} (9 + (y-2)^2)\\, dy$",
     "opts": [
       "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 + (y+2)^2)\\, dy\\)",
       "\\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y-2)^2)\\, dy\\)",
@@ -61,7 +61,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Rearrange the circle equation to express $x^2$ in terms of $y$, then use $V = \\pi\\int x^2\\, dy$.",
     "solution": "The correct answer is \\(\\pi \\displaystyle\\int_{-5}^{1} (9 - (y+2)^2)\\, dy\\).",
     "solutionSteps": [
       {
@@ -97,7 +97,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The polynomial $Q(x) = -5x^3 + bx^2 + cx + d$ has roots $\\beta$, $-\\beta$, and $3$. What is the value of $b$?",
     "opts": [
       "\\(b = -15\\)",
       "\\(b = 5\\)",
@@ -106,7 +106,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use Vieta's formulas: sum of roots $= -b_2/a$ where $b_2$ is the coefficient of $x^2$.",
     "solution": "The correct answer is \\(b = 15\\).",
     "solutionSteps": [
       {
@@ -142,7 +142,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $\\mathbf{u} = 3\\mathbf{i} + 5\\mathbf{j}$ and $\\mathbf{v} = 2\\mathbf{i} + 0\\mathbf{j}$. What is $\\mathbf{u} \\cdot \\mathbf{v}$?",
     "opts": [
       "\\(0\\)",
       "\\(6\\)",
@@ -151,7 +151,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "The dot product $\\mathbf{u} \\cdot \\mathbf{v} = u_1 v_1 + u_2 v_2$.",
     "solution": "The correct answer is \\(6\\).",
     "solutionSteps": [
       {
@@ -187,7 +187,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The polynomial $P(x) = 3x^4 - x^3 + px + q$ has a double root at $x = \\beta$. Which of the following must be true?\n\n(A) $P(\\beta) \\neq 0$\n\n(B) $P'(\\beta) = 0$\n\n(C) $P''(\\beta) \\neq 0$\n\n(D) $P'''(\\beta) = 0$",
     "opts": [
       "\\(P(\\beta) \\neq 0\\)",
       "\\(P'(\\beta) = 0\\)",
@@ -196,7 +196,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "A double root means $(x-\\beta)^2$ divides $P(x)$, so both $P(\\beta)=0$ and $P'(\\beta)=0$.",
     "solution": "The correct answer is \\(P'(\\beta) = 0\\).",
     "solutionSteps": [
       {
@@ -232,7 +232,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $P$ and $Q$ be acute angles such that $\\tan P = \\dfrac{5}{12}$ and $\\tan Q = \\dfrac{1}{5}$. Find $\\tan(P + Q)$.",
     "opts": [
       "\\(\\dfrac{6}{60}\\)",
       "\\(\\dfrac{73}{55}\\)",
@@ -241,7 +241,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the addition formula: $\\tan(P+Q) = \\dfrac{\\tan P + \\tan Q}{1 - \\tan P \\tan Q}$.",
     "solution": "The correct answer is \\(\\dfrac{37}{55}\\).",
     "solutionSteps": [
       {
@@ -277,7 +277,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A slope field has horizontal tangents along $y = 3x$ and vertical tangents along $y = -x$. Which differential equation matches this slope field?\n\n(A) $\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}$\n\n(B) $\\dfrac{dy}{dx} = \\dfrac{3x - y}{y + x}$\n\n(C) $\\dfrac{dy}{dx} = \\dfrac{y + x}{y - 3x}$\n\n(D) $\\dfrac{dy}{dx} = \\dfrac{3x + y}{y - x}$",
     "opts": [
       "\\(\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}\\)",
       "\\(\\dfrac{dy}{dx} = \\dfrac{3x - y}{y + x}\\)",
@@ -286,7 +286,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Horizontal tangents → numerator $= 0$; vertical tangents → denominator $= 0$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\dfrac{y - 3x}{y + x}\\).",
     "solutionSteps": [
       {
@@ -322,7 +322,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Four forces $\\mathbf{G}_1$, $\\mathbf{G}_2$, $\\mathbf{G}_3$, and $\\mathbf{G}_4$ act on a particle in equilibrium. If $|\\mathbf{G}_4| = 5$, which must be true?\n\n(A) $|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5$\n\n(B) $|\\mathbf{G}_1| + |\\mathbf{G}_2| + |\\mathbf{G}_3| = 5$\n\n(C) $\\mathbf{G}_1 \\cdot \\mathbf{G}_4 = 0$\n\n(D) $|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4| = 5$",
     "opts": [
       "\\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5\\)",
       "\\(|\\mathbf{G}_1| + |\\mathbf{G}_2| + |\\mathbf{G}_3| = 5\\)",
@@ -331,7 +331,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Equilibrium: $\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3 + \\mathbf{G}_4 = \\mathbf{0}$.",
     "solution": "The correct answer is \\(|\\mathbf{G}_1 + \\mathbf{G}_2 + \\mathbf{G}_3| = 5\\).",
     "solutionSteps": [
       {
@@ -367,7 +367,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Which of the following could be the graph of $y = \\dfrac{1}{g(x)}$ where $g(x)$ is a quadratic with a negative leading coefficient and two distinct real roots?",
     "opts": [
       "A curve with one vertical asymptote",
       "A curve with two vertical asymptotes, middle section below the \\(x\\)-axis",
@@ -376,7 +376,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "A downward-opening quadratic is positive between its roots, so $1/g(x)$ is positive between the roots.",
     "solution": "The correct answer is A curve with one vertical asymptote.",
     "solutionSteps": [
       {
@@ -407,7 +407,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "The graph of $y = \\sin^{-1}\\!\\left(\\dfrac{x-4}{2}\\right)$ is obtained from the graph of $y = \\sin^{-1}(x)$ by which transformation?",
     "opts": [
       "Translation \\(4\\) right then compress by factor \\(2\\)",
       "Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right",
@@ -416,7 +416,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Write $\\dfrac{x-4}{2} = \\dfrac{1}{2}(x-4)$. Apply dilation first, then translation.",
     "solution": "The correct answer is Horizontal dilation by factor \\(2\\), then translation \\(4\\) units to the right.",
     "solutionSteps": [
       {
@@ -452,7 +452,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $\\cos\\theta + \\sqrt{3}\\sin\\theta = 1$ for $0 \\leq \\theta \\leq \\pi$.",
     "opts": [
       "\\(-\\theta = 0,\\, \\dfrac{2\\pi}{3}\\)",
       "\\(\\theta = 0,\\, \\dfrac{2\\pi}{3}\\)",
@@ -461,7 +461,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Write in auxiliary angle form $R\\cos(\\theta - \\phi)$. Find $R$ and $\\phi$, then solve.",
     "solution": "The correct answer is \\(\\theta = 0,\\, \\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -497,7 +497,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "A concert venue needs to seat 3518 audience members in sections that hold at most 45 people each. What is the minimum number of sections required?",
     "opts": [
       "\\(79\\) sections",
       "\\(79\\) sections + 1",
@@ -506,7 +506,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Divide the total by capacity and round up.",
     "solution": "The correct answer is \\(79\\) sections.",
     "solutionSteps": [
       {
@@ -542,7 +542,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Differentiate $y = x\\sin^{-1}(3x)$ with respect to $x$.",
     "opts": [
       "\\(-\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
       "\\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\)",
@@ -551,7 +551,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the product rule. Recall $\\dfrac{d}{dx}[\\sin^{-1}(u)] = \\dfrac{u'}{\\sqrt{1-u^2}}$.",
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} = \\sin^{-1}(3x) + \\dfrac{3x}{\\sqrt{1 - 9x^2}}\\).",
     "solutionSteps": [
       {
@@ -587,7 +587,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Let $\\overrightarrow{OA} = \\mathbf{p}$ and $\\overrightarrow{OB} = \\mathbf{q}$. Express $\\overrightarrow{BA}$ and $\\overrightarrow{AC}$ in terms of $\\mathbf{p}$ and $\\mathbf{q}$, where $C$ is defined so that $\\overrightarrow{OC} = \\mathbf{p} + \\mathbf{q}$.",
     "opts": [
       "\\(\\dfrac{13}{x + 3}\\)",
       "\\overrightarrow{BA} = \\mathbf{p} + \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}",
@@ -596,7 +596,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use vector subtraction: $\\overrightarrow{BA} = \\overrightarrow{OA} - \\overrightarrow{OB}$.",
     "solution": "The correct answer is \\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}\\), \\(\\overrightarrow{AC} = \\mathbf{q}.",
     "solutionSteps": [
       {
@@ -632,7 +632,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $\\overrightarrow{BA} = \\mathbf{p} - \\mathbf{q}$ and $\\overrightarrow{AC} = \\mathbf{q}$, show that the midpoint $N$ of $BC$ is equidistant from $B$, $A$, and $C$ if and only if $|\\mathbf{p}| = |\\mathbf{q}|$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -641,7 +641,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Show $\\angle BAC = 90°$ by computing $\\overrightarrow{AB} \\cdot \\overrightarrow{AC} = 0 \\iff |\\mathbf{p}|=|\\mathbf{q}|$.",
     "solution": "The correct answer is \\(\\overrightarrow{BA} \\cdot \\overrightarrow{AC} = (\\mathbf{p}-\\mathbf{q})\\cdot\\mathbf{q} = |\\mathbf{p}|\\cdot|\\mathbf{q}|\\cos\\theta - |\\mathbf{q}|^2\\)... For right angle at \\(A\\): use full dot product argument..",
     "solutionSteps": [
       {
@@ -677,7 +677,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the inverse function of $f(x) = \\sqrt{3 - \\cos^2 x}$ for a suitable restricted domain. State the domain and range of $f^{-1}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -686,7 +686,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Restrict domain to $[0, pi/2]$. Swap $x$ and $y$ and solve for $y$.",
     "solution": "The correct answer is f^{-1}(x) = \\arccos\\!\\left(\\sqrt{3-x^2}\\right)\\), domain \\([\\sqrt{2}, \\sqrt{3}]\\), range \\([0, \\pi/2].",
     "solutionSteps": [
       {
@@ -722,7 +722,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_0^{\\pi/4} \\sin^4\\theta \\cos^2\\theta\\, d\\theta$.",
     "opts": [
       "\\(-\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\)",
       "\\(\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\)",
@@ -731,7 +731,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use double angle identities to reduce the powers, then integrate term by term.",
     "solution": "The correct answer is \\(\\dfrac{\\pi}{32} - \\dfrac{1}{16}\\).",
     "solutionSteps": [
       {
@@ -767,7 +767,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $\\dfrac{dy}{dx} = y^2(3\\cos x - 1)$ given $y = 2$ when $x = 0$.",
     "opts": [
       "\\(-y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)",
       "\\(y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\)",
@@ -776,7 +776,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Separate variables: $\\dfrac{dy}{y^2} = (3\\cos x - 1)\\, dx$. Integrate both sides.",
     "solution": "The correct answer is \\(y = \\dfrac{1}{3\\sin x - x + \\frac{1}{2}} = \\dfrac{2}{6\\sin x - 2x + 1}\\).",
     "solutionSteps": [
       {
@@ -812,7 +812,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A particle is projected from the origin with velocity $\\mathbf{v}_0 = 4\\mathbf{i} + 2\\mathbf{j}$ m/s. A constant force gives acceleration $\\mathbf{a} = 2\\mathbf{i} - 3\\mathbf{j}$ m/s². Find the velocity and speed when the particle has travelled $60$ m horizontally.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -821,7 +821,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Integrate acceleration to get velocity and position. Set horizontal displacement $= 60$ to find $t$.",
     "solution": "The correct answer is Velocity: \\((4+2t)\\mathbf{i}+(2-3t)\\mathbf{j}\\) at the time when \\(4t + t^2 = 60\\)..",
     "solutionSteps": [
       {
@@ -857,7 +857,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Solve $\\dfrac{dy}{dx} = \\dfrac{10e^{3x}}{1 + e^{6x}}$ given that $y = \\pi$ when $x = 0$.",
     "opts": [
       "\\(-y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)",
       "\\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\)",
@@ -866,7 +866,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use substitution $u = e^{3x}$. The integral becomes $\\int \\dfrac{du}{1+u^2} = \\arctan(u)$.",
     "solution": "The correct answer is \\(y = \\dfrac{10}{3}\\arctan(e^{3x}) + \\pi - \\dfrac{5\\pi}{6}\\).",
     "solutionSteps": [
       {
@@ -902,7 +902,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "How many triangles can be formed by joining vertices of a regular 12-sided polygon (dodecagon), given that no three vertices are collinear?",
     "opts": [
       "\\(\\binom{12}{3} = 220\\) triangles",
       "\\(\\binom{12}{3} = 220\\) triangles + 1",
@@ -911,7 +911,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Choose any 3 of the 12 vertices to form a triangle.",
     "solution": "The correct answer is \\(\\binom{12}{3} = 220\\) triangles.",
     "solutionSteps": [
       {
@@ -947,7 +947,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "The temperature $T$ (°C) of a hot drink satisfies $\\dfrac{dT}{dt} = -k(T - 18)$. Initially $T = 88°$C and after $5$ minutes $T = 43°$C. Show that $T = 18 + 70e^{-kt}$ and find $k$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -956,7 +956,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Separate variables and use the two initial conditions.",
     "solution": "The correct answer is T = 18 + 70e^{-kt}\\) where \\(k = \\dfrac{1}{5}\\ln 2 \\approx 0.1386\\) min\\(^{-1}.",
     "solutionSteps": [
       {
@@ -992,7 +992,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $T = 18 + 70e^{-kt}$ with $k = \\dfrac{\\ln 2}{5}$, how many additional minutes after the 5-minute mark does it take for the drink to cool to $22°$C?",
     "opts": [
       "\\(\\dfrac{8}{4}\\)",
       "\\(\\dfrac{7}{3}\\)",
@@ -1001,7 +1001,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Set $T = 22$ and solve for $t$, then subtract 5.",
     "solution": "The correct answer is Approximately \\(19.55\\) additional minutes (total \\(\\approx 24.55\\) min from start).",
     "solutionSteps": [
       {
@@ -1037,7 +1037,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "",
+    "question": "Express $\\cos t + \\sqrt{3}\\sin t$ in the form $R\\cos(t - \\phi)$ where $R > 0$ and $0 \\leq \\phi \\leq \\pi/2$.",
     "opts": [
       "\\(-2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)",
       "\\(2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\)",
@@ -1046,7 +1046,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Expand $R\\cos(t-\\phi)$ and match coefficients: $R\\cos\\phi = 1$ and $R\\sin\\phi = \\sqrt{3}$.",
     "solution": "The correct answer is \\(2\\cos\\!\\left(t - \\dfrac{\\pi}{3}\\right)\\).",
     "solutionSteps": [
       {
@@ -1082,7 +1082,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $\\cos t + \\sqrt{3}\\sin t = 2\\cos(t-\\pi/3)$, find all values of $t$ in $[0, 4\\pi]$ for which $\\cos t + \\sqrt{3}\\sin t \\geq \\sqrt{3}$.",
     "opts": [
       "\\(\\dfrac{9}{5}\\)",
       "\\(\\dfrac{8}{4}\\)",
@@ -1091,7 +1091,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 3,
     "answer": "3",
-    "hint": "",
+    "hint": "Inequality becomes $2\\cos(t-\\pi/3) \\geq \\sqrt{3}$, i.e. $\\cos(u) \\geq \\sqrt{3}/2$.",
     "solution": "The correct answer is \\(t \\in \\left[0, \\dfrac{\\pi}{6}\\right] \\cup \\left[\\dfrac{11\\pi}{6}, 2\\pi\\right] \\cup\\) (corresponding in \\([2\\pi,4\\pi]\\)).",
     "solutionSteps": [
       {
@@ -1127,7 +1127,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the $x$-intercepts of $y = \\sin x + \\sin 2x$ in $[-\\pi, pi]$.",
     "opts": [
       "\\(-x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\)",
       "\\(x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\)",
@@ -1136,7 +1136,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $\\sin 2x = 2\\sin x\\cos x$ to factor: $\\sin x(1 + 2\\cos x) = 0$.",
     "solution": "The correct answer is \\(x = 0, \\pm\\pi, \\pm\\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
@@ -1172,7 +1172,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the area enclosed by $y = \\sin x + \\sin 2x$ and the $x$-axis for $x \\in [0, 2\\pi/3]$.",
     "opts": [
       "-\\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}",
       "\\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}",
@@ -1181,7 +1181,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Integrate $\\sin x + \\sin 2x$ from $0$ to $2\\pi/3$ (the function is positive there).",
     "solution": "The correct answer is \\dfrac{3}{4} + \\dfrac{3\\sqrt{3}}{4} - \\dfrac{\\sqrt{3}}{4} \\cdot ...\\)... exact answer: \\(\\dfrac{3}{4}.",
     "solutionSteps": [
       {
@@ -1217,7 +1217,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Evaluate $\\displaystyle\\int_1^4 \\ln(2x)\\, dx$.",
     "opts": [
       "\\(-4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\)",
       "\\(4\\ln 8 + 3 + \\ln 2 = 4\\ln 8 + \\ln 2 + 3 = 11\\ln 2 + 3\\)",
@@ -1226,7 +1226,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Write $\\ln(2x) = \\ln 2 + \\ln x$ or use integration by parts with $u = \\ln(2x)$.",
     "solution": "The correct answer is \\(4\\ln 8 - 3 - \\ln 2 = 4\\ln 8 - \\ln 2 - 3 = 11\\ln 2 - 3\\).",
     "solutionSteps": [
       {
@@ -1262,7 +1262,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Find the volume of the solid formed when the region bounded by $y = x^{1/2}$, $x = 9$, and the $x$-axis is rotated about the $y$-axis. Give the exact answer in terms of $\\pi$.",
     "opts": [
       "\\(\\frac{1}{5}\\)",
       "\\(-\\dfrac{324\\pi}{5}\\)",
@@ -1271,7 +1271,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
-    "hint": "",
+    "hint": "Use the shell method: $V = 2\\pi\\displaystyle\\int_0^9 x\\cdot\\sqrt{x}\\,dx = 2\\pi\\int_0^9 x^{3/2}\\,dx$.",
     "solution": "The correct answer is \\(\\dfrac{324\\pi}{5}\\).",
     "solutionSteps": [
       {
@@ -1307,7 +1307,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A projectile is launched from the origin at $60°$ to the horizontal with initial speed $20$ m/s and $g = 10$ m/s². Show that the trajectory equation is $y = \\sqrt{3}x - \\dfrac{x^2}{20}$.",
     "opts": [
       "-The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).",
       "The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\).",
@@ -1316,7 +1316,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use $y = x\\tan\\alpha - \\dfrac{gx^2}{2V^2\\cos^2\\alpha}$ with $\\alpha=60°$, $V=20$, $g=10$.",
     "solution": "The correct answer is The trajectory \\(y = x\\tan 60° - \\dfrac{gx^2}{2V^2\\cos^2 60°} = \\sqrt{3}x - \\dfrac{10x^2}{2(400)(1/4)} = \\sqrt{3}x - \\dfrac{x^2}{20}\\)..",
     "solutionSteps": [
       {
@@ -1352,7 +1352,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "Using $y = \\sqrt{3}x - x^2/20$, find the horizontal range of the projectile.",
     "opts": [
       "\\(20\\sqrt{3}\\) m",
       "\\(20\\sqrt{3}\\) m + 1",
@@ -1361,7 +1361,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Set $y = 0$ and solve for the positive $x$.",
     "solution": "The correct answer is \\(20\\sqrt{3}\\) m.",
     "solutionSteps": [
       {
@@ -1397,7 +1397,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "",
+    "question": "A second projectile is launched from the same point with the same speed $V = 20$ m/s but at $30°$. Find its horizontal range.",
     "opts": [
       "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges)",
       "\\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges) + 1",
@@ -1406,7 +1406,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
-    "hint": "",
+    "hint": "Use the range formula $R = V^2\\sin 2\\alpha/g$. Note $\\sin(2 \\times 30°) = \\sin 60° = \\sqrt{3}/2$.",
     "solution": "The correct answer is \\(20\\sqrt{3}\\) m (same range — complementary angles give equal ranges).",
     "solutionSteps": [
       {
