@@ -2040,8 +2040,26 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
               ) : (
 	                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
 	                  {questions.map((q, idx) => (
-                    <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: `1px solid ${q.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`, background: q.requiresManualGrading ? '#fffbeb' : '#f8fafc', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div style={{ flex: 1, paddingRight: '20px' }}>
+                    <div key={q.id} style={{ padding: '20px', borderRadius: '16px', border: `1px solid ${q.requiresManualGrading ? '#fcd34d' : '#e2e8f0'}`, background: q.requiresManualGrading ? '#fffbeb' : '#f8fafc', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                      {/* Time limit buttons + Action buttons */}
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+                        <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+                          {[{ label: '30s', value: 30 }, { label: '1m 30s', value: 90 }, { label: '2min', value: 120 }, { label: '3min', value: 180 }, { label: '5min', value: 300 }].map(({ label, value }) => (
+                            <button key={value} type="button" onClick={() => {/* Handle time limit change */}}
+                              style={{ padding: '8px 14px', borderRadius: '10px', border: `1px solid ${Number(q.timeLimit) === value ? '#6366f1' : '#e2e8f0'}`, background: Number(q.timeLimit) === value ? '#6366f1' : '#fff', color: Number(q.timeLimit) === value ? '#fff' : '#1e293b', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', transition: 'all 0.15s' }}>
+                              {label}
+                            </button>
+                          ))}
+                        </div>
+                        <div style={{ display: 'flex', gap: '8px' }}>
+                          <button onClick={() => setPreviewQuestion(q)} style={{ padding: '8px', borderRadius: '8px', background: 'white', border: '1px solid #cbd5e1', color: '#6366f1', cursor: 'pointer' }} title="Preview Student View"><Eye size={16} /></button>
+                          <button onClick={() => handleOpenForm(q)} style={{ padding: '8px', borderRadius: '8px', background: 'white', border: '1px solid #cbd5e1', color: '#475569', cursor: 'pointer' }}><Edit2 size={16} /></button>
+                          <button onClick={() => handleDelete(q.id)} style={{ padding: '8px', borderRadius: '8px', background: '#fff1f2', border: 'none', color: '#f43f5e', cursor: 'pointer' }}><Trash2 size={16} /></button>
+                        </div>
+                      </div>
+
+                      {/* Question content */}
+                      <div style={{ flex: 1 }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px', flexWrap: 'wrap' }}>
                           <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#6366f1', textTransform: 'uppercase' }}>
                             {q.title || `Question ${idx + 1}`} • {q.difficulty}
