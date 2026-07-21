@@ -2,7 +2,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc1",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "14E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -47,7 +47,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc2",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -92,7 +92,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc3",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "11D",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -137,7 +137,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc4",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "8C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -182,7 +182,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc5",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "11D",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -227,7 +227,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc6",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "16B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -272,7 +272,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc7",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "13B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -317,7 +317,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc8",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "8F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -362,7 +362,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc9",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "6C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -402,7 +402,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-mc10",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "6F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -447,7 +447,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11a",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "11C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -492,7 +492,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11bi",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "14E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -537,7 +537,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11c",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12A",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -582,7 +582,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11di",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "8C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -627,7 +627,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11dii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "8F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -672,7 +672,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q11e",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "6F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -717,7 +717,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q12a",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -762,7 +762,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q12b",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "13C",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -807,7 +807,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q12c",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "10A",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -852,7 +852,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q12d",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "13E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -897,7 +897,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13a",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "14E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -942,7 +942,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13bi",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "13E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -987,7 +987,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13bii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "13E",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1032,7 +1032,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13ci",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "11B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "medium",
@@ -1077,7 +1077,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13cii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "11B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1122,7 +1122,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13di",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12D",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1167,7 +1167,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q13dii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12D",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1212,7 +1212,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q14a",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "5J",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1257,7 +1257,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q14b",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "12F",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1302,7 +1302,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q14ci",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "10B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1347,7 +1347,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q14cii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "10B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
@@ -1392,7 +1392,7 @@ export const ABB_2020_EXT1_SIMILAR_QUESTIONS = [
   {
     "id": "abb2020e1s-q14ciii",
     "topicId": "y12e1-exam",
-    "c": "EXAM",
+    "c": "10B",
     "t": "Abbotsleigh 2020 Trial Exam (Extension 1)",
     "type": "multiple_choice",
     "difficulty": "hard",
