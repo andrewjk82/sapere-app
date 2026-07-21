@@ -17,26 +17,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the function to write it in the form \\(f(x) = mx + b\\)**\nExpand the brackets of \\(f(x) = \\frac{3}{5}(x + 7)\\):\n\\(f(x) = \\frac{3}{5} \\times x + \\frac{3}{5} \\times 7\\)\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}\\)\nThis is now in the form \\(f(x) = mx + b\\), where \\(m = \\frac{3}{5}\\) and \\(b = \\frac{21}{5}\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) is:\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = \\frac{3}{5}\\), the derived function is:\n\\(f'(x) = \\frac{3}{5}\\)\n\n**Step 4: Combine the results**\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}\\)",
+    "solution": "**Step 1:** The stem gives a template function and a swapped version. Work with the swapped function \\(f(x) = \\frac{3}{5}(x + 7)\\). Goal: rewrite it as \\(f(x) = mx + b\\), then read off the derivative.\n\\(f(x) = \\frac{3}{5}(x + 7)\\)\n\n**Step 2:** Expand the brackets by distributing the coefficient \\(\\frac{3}{5}\\) onto each term inside.\n\\(f(x) = \\frac{3}{5} \\cdot x + \\frac{3}{5} \\cdot 7\\)\n\n**Step 3:** Simplify the constant term: \\(\\frac{3}{5} \\times 7 = \\frac{21}{5}\\). The function is now in gradient–intercept form with gradient \\(m = \\frac{3}{5}\\) and intercept \\(b = \\frac{21}{5}\\).\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}\\)\n\n**Step 4:** For any linear function \\(f(x) = mx + b\\), the derivative is the constant gradient: \\(f'(x) = m\\). Here \\(m = \\frac{3}{5}\\).\n\\(f'(x) = \\frac{3}{5}\\)\n\n**Step 5:** Combine both results. This matches option 0 exactly.\n\\(f(x) = \\frac{3}{5}x + \\frac{21}{5},\\; f'(x) = \\frac{3}{5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "The stem gives a template function and a swapped version. Work with the swapped function \\(f(x) = \\frac{3}{5}(x + 7)\\). Goal: rewrite it as \\(f(x) = mx + b\\), then read off the derivative.",
+        "workingOut": "\\(f(x) = \\frac{3}{5}(x + 7)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the brackets by distributing the coefficient \\(\\frac{3}{5}\\) onto each term inside.",
+        "workingOut": "\\(f(x) = \\frac{3}{5} \\cdot x + \\frac{3}{5} \\cdot 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}\\)",
+        "explanation": "Simplify the constant term: \\(\\frac{3}{5} \\times 7 = \\frac{21}{5}\\). The function is now in gradient–intercept form with gradient \\(m = \\frac{3}{5}\\) and intercept \\(b = \\frac{21}{5}\\).",
+        "workingOut": "\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = \\frac{3}{5}x + \\frac{21}{5}, \\, f'(x) = \\frac{3}{5}\\)",
+        "explanation": "For any linear function \\(f(x) = mx + b\\), the derivative is the constant gradient: \\(f'(x) = m\\). Here \\(m = \\frac{3}{5}\\).",
+        "workingOut": "\\(f'(x) = \\frac{3}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine both results. This matches option 0 exactly.",
+        "workingOut": "\\(f(x) = \\frac{3}{5}x + \\frac{21}{5},\\; f'(x) = \\frac{3}{5}\\)",
         "graphData": null
       }
     ],
@@ -62,26 +67,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form \\(f(x) = mx + b\\)**\nRearrange the terms of \\(f(x) = 9 - 6x\\):\n\\(f(x) = -6x + 9\\)\nwhere \\(m = -6\\) and \\(b = 9\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) represents the constant gradient of the line:\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = -6\\), the derived function is:\n\\(f'(x) = -6\\)\n\n**Step 4: Combine the results**\n\\(f(x) = -6x + 9, \\, f'(x) = -6\\)",
+    "solution": "**Step 1:** Use the swapped function \\(f(x) = 9 - 6x\\). Rewrite it so the \\(x\\)-term comes first, matching the standard form \\(f(x) = mx + b\\).\n\\(f(x) = 9 - 6x\\)\n\n**Step 2:** Commutativity of addition lets us reorder the terms: write the multiple of \\(x\\) before the constant.\n\\(f(x) = -6x + 9\\)\n\n**Step 3:** Identify the gradient and intercept: the coefficient of \\(x\\) is \\(m = -6\\) and the constant term is \\(b = 9\\).\n\\(m = -6,\\; b = 9\\)\n\n**Step 4:** Differentiate a linear function by taking its gradient. The derivative of \\(mx + b\\) is the constant \\(m\\).\n\\(f'(x) = -6\\)\n\n**Step 5:** State the expanded form and its derivative together.\n\\(f(x) = -6x + 9,\\; f'(x) = -6\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped function \\(f(x) = 9 - 6x\\). Rewrite it so the \\(x\\)-term comes first, matching the standard form \\(f(x) = mx + b\\).",
+        "workingOut": "\\(f(x) = 9 - 6x\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Commutativity of addition lets us reorder the terms: write the multiple of \\(x\\) before the constant.",
+        "workingOut": "\\(f(x) = -6x + 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = -6x + 9, \\, f'(x) = -6\\)",
+        "explanation": "Identify the gradient and intercept: the coefficient of \\(x\\) is \\(m = -6\\) and the constant term is \\(b = 9\\).",
+        "workingOut": "\\(m = -6,\\; b = 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = -6x + 9, \\, f'(x) = -6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = -6x + 9, \\, f'(x) = -6\\)",
+        "explanation": "Differentiate a linear function by taking its gradient. The derivative of \\(mx + b\\) is the constant \\(m\\).",
+        "workingOut": "\\(f'(x) = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the expanded form and its derivative together.",
+        "workingOut": "\\(f(x) = -6x + 9,\\; f'(x) = -6\\)",
         "graphData": null
       }
     ],
@@ -107,26 +117,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form \\(f(x) = mx + b\\)**\nThe given function is already in this form:\n\\(f(x) = 4x + 7\\)\nwhere \\(m = 4\\) and \\(b = 7\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) represents the gradient of the function at any point \\(x\\):\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = 4\\), the derived function is:\n\\(f'(x) = 4\\)\n\n**Step 4: Combine the results**\n\\(f(x) = 4x + 7, \\, f'(x) = 4\\)",
+    "solution": "**Step 1:** Use the swapped function \\(f(x) = 4x + 7\\). It is already written in the form \\(f(x) = mx + b\\).\n\\(f(x) = 4x + 7\\)\n\n**Step 2:** Read the parameters directly: the coefficient of \\(x\\) is the gradient, and the constant term is the intercept.\n\\(m = 4,\\; b = 7\\)\n\n**Step 3:** By the differentiation rule for linear functions, \\(\\dfrac{d}{dx}(mx + b) = m\\). The intercept does not affect the derivative.\n\\(f'(x) = m = 4\\)\n\n**Step 4:** Interpret geometrically: the graph is a straight line of constant slope 4, so the tangent gradient is 4 at every point.\n\\(f'(x) = 4\\)\n\n**Step 5:** Final answer: the linear form and its constant derivative.\n\\(f(x) = 4x + 7,\\; f'(x) = 4\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped function \\(f(x) = 4x + 7\\). It is already written in the form \\(f(x) = mx + b\\).",
+        "workingOut": "\\(f(x) = 4x + 7\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Read the parameters directly: the coefficient of \\(x\\) is the gradient, and the constant term is the intercept.",
+        "workingOut": "\\(m = 4,\\; b = 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = 4x + 7, \\, f'(x) = 4\\)",
+        "explanation": "By the differentiation rule for linear functions, \\(\\dfrac{d}{dx}(mx + b) = m\\). The intercept does not affect the derivative.",
+        "workingOut": "\\(f'(x) = m = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = 4x + 7, \\, f'(x) = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = 4x + 7, \\, f'(x) = 4\\)",
+        "explanation": "Interpret geometrically: the graph is a straight line of constant slope 4, so the tangent gradient is 4 at every point.",
+        "workingOut": "\\(f'(x) = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: the linear form and its constant derivative.",
+        "workingOut": "\\(f(x) = 4x + 7,\\; f'(x) = 4\\)",
         "graphData": null
       }
     ],
@@ -152,26 +167,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Combine the fractions under a common denominator**\nSince both parts share the common denominator \\(c\\), we can sum their numerators directly:\n\\(f(x) = \\frac{(a - bx) + (a + bx)}{c}\\)\n\n**Step 2: Simplify the numerator**\nGroup the constant variables and the coefficients of \\(x\\):\n\\(f(x) = \\frac{(a + a) + (-bx + bx)}{c}\\)\nObserve that \\(-bx\\) and \\(+bx\\) cancel out completely:\n\\(f(x) = \\frac{2a}{c}\\)\nThis function \\(f(x) = \\frac{2a}{c}\\) is a constant function with respect to \\(x\\).\n\n**Step 3: Determine the derivative \\(f'(x)\\)**\nSince \\(f(x) = \\frac{2a}{c}\\) does not contain the variable \\(x\\), it is a horizontal flat line. The rate of change of any constant function with respect to \\(x\\) is always zero:\n\\(f'(x) = 0\\)\n\n**Step 4: Combine the results**\n\\(f(x) = \\frac{2a}{c}, \\, f'(x) = 0\\)",
+    "solution": "**Step 1:** Use the swapped expression \\(f(x) = \\dfrac{a - bx}{c} + \\dfrac{a + bx}{c}\\). Both fractions share denominator \\(c\\), so combine the numerators.\n\\(f(x) = \\dfrac{(a - bx) + (a + bx)}{c}\\)\n\n**Step 2:** Expand the numerator carefully, grouping constant terms and coefficients of \\(x\\).\n\\(f(x) = \\dfrac{a - bx + a + bx}{c} = \\dfrac{(a + a) + (-bx + bx)}{c}\\)\n\n**Step 3:** The linear terms cancel: \\(-bx + bx = 0\\). Only the constant remains: \\(a + a = 2a\\). So \\(f\\) does not depend on \\(x\\).\n\\(f(x) = \\dfrac{2a}{c}\\)\n\n**Step 4:** A constant function has zero rate of change. Differentiating with respect to \\(x\\) therefore gives zero (the graph is a horizontal line).\n\\(f'(x) = 0\\)\n\n**Step 5:** Combine the simplified function and its derivative.\n\\(f(x) = \\dfrac{2a}{c},\\; f'(x) = 0\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped expression \\(f(x) = \\dfrac{a - bx}{c} + \\dfrac{a + bx}{c}\\). Both fractions share denominator \\(c\\), so combine the numerators.",
+        "workingOut": "\\(f(x) = \\dfrac{(a - bx) + (a + bx)}{c}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the numerator carefully, grouping constant terms and coefficients of \\(x\\).",
+        "workingOut": "\\(f(x) = \\dfrac{a - bx + a + bx}{c} = \\dfrac{(a + a) + (-bx + bx)}{c}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = \\frac{2a}{c}, \\, f'(x) = 0\\)",
+        "explanation": "The linear terms cancel: \\(-bx + bx = 0\\). Only the constant remains: \\(a + a = 2a\\). So \\(f\\) does not depend on \\(x\\).",
+        "workingOut": "\\(f(x) = \\dfrac{2a}{c}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = \\frac{2a}{c}, \\, f'(x) = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = \\frac{2a}{c}, \\, f'(x) = 0\\)",
+        "explanation": "A constant function has zero rate of change. Differentiating with respect to \\(x\\) therefore gives zero (the graph is a horizontal line).",
+        "workingOut": "\\(f'(x) = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the simplified function and its derivative.",
+        "workingOut": "\\(f(x) = \\dfrac{2a}{c},\\; f'(x) = 0\\)",
         "graphData": null
       }
     ],
@@ -197,26 +217,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form \\(f(x) = mx + b\\)**\nThe given function is already in this form:\n\\(f(x) = \\frac{1}{5}x - 3\\)\nwhere \\(m = \\frac{1}{5}\\) and \\(b = -3\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) is:\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = \\frac{1}{5}\\), the derived function is:\n\\(f'(x) = \\frac{1}{5}\\)\n\n**Step 4: Combine the results**\n\\(f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}\\)",
+    "solution": "**Step 1:** Use the swapped function \\(f(x) = \\frac{1}{5}x - 3\\). It is already in gradient–intercept form \\(mx + b\\).\n\\(f(x) = \\frac{1}{5}x - 3\\)\n\n**Step 2:** Identify the parameters: the coefficient of \\(x\\) is the gradient and the constant is the intercept.\n\\(m = \\frac{1}{5},\\; b = -3\\)\n\n**Step 3:** Apply the linear differentiation rule: the derivative equals the gradient coefficient only; the constant term differentiates to zero.\n\\(f'(x) = m = \\frac{1}{5}\\)\n\n**Step 4:** Check a common error: the derivative is not \\(-3\\) (that is the intercept) and not \\(\\frac{1}{5}x\\) (that would still involve \\(x\\)).\n\\(f'(x) = \\frac{1}{5}\\)\n\n**Step 5:** State both results together.\n\\(f(x) = \\frac{1}{5}x - 3,\\; f'(x) = \\frac{1}{5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped function \\(f(x) = \\frac{1}{5}x - 3\\). It is already in gradient–intercept form \\(mx + b\\).",
+        "workingOut": "\\(f(x) = \\frac{1}{5}x - 3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Identify the parameters: the coefficient of \\(x\\) is the gradient and the constant is the intercept.",
+        "workingOut": "\\(m = \\frac{1}{5},\\; b = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}\\)",
+        "explanation": "Apply the linear differentiation rule: the derivative equals the gradient coefficient only; the constant term differentiates to zero.",
+        "workingOut": "\\(f'(x) = m = \\frac{1}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = \\frac{1}{5}x - 3, \\, f'(x) = \\frac{1}{5}\\)",
+        "explanation": "Check a common error: the derivative is not \\(-3\\) (that is the intercept) and not \\(\\frac{1}{5}x\\) (that would still involve \\(x\\)).",
+        "workingOut": "\\(f'(x) = \\frac{1}{5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State both results together.",
+        "workingOut": "\\(f(x) = \\frac{1}{5}x - 3,\\; f'(x) = \\frac{1}{5}\\)",
         "graphData": null
       }
     ],
@@ -242,26 +267,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form \\(f(x) = mx + b\\)**\nThe given function is:\n\\(f(x) = px + q\\)\nComparing this with \\(f(x) = mx + b\\), the gradient parameter is \\(m = p\\) and the y-intercept parameter is \\(b = q\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative is simply the coefficient of \\(x\\):\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince \\(m = p\\), the derived function is:\n\\(f'(x) = p\\)\n\n**Step 4: Combine the results**\n\\(f(x) = px + q, \\, f'(x) = p\\)",
+    "solution": "**Step 1:** Use the swapped general linear function \\(f(x) = px + q\\). Compare it with the standard form \\(f(x) = mx + b\\).\n\\(f(x) = px + q\\)\n\n**Step 2:** Match coefficients: the gradient parameter is the coefficient of \\(x\\), and the intercept parameter is the constant term.\n\\(m = p,\\; b = q\\)\n\n**Step 3:** Differentiate: for \\(f(x) = mx + b\\) we always have \\(f'(x) = m\\). Substituting \\(m = p\\) gives a constant derivative.\n\\(f'(x) = p\\)\n\n**Step 4:** Note that the intercept \\(q\\) does not appear in the derivative. Only the slope coefficient survives differentiation.\n\\(\\dfrac{d}{dx}(px + q) = p\\)\n\n**Step 5:** Final answer: the function stays \\(px + q\\) and its derivative is the constant \\(p\\).\n\\(f(x) = px + q,\\; f'(x) = p\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped general linear function \\(f(x) = px + q\\). Compare it with the standard form \\(f(x) = mx + b\\).",
+        "workingOut": "\\(f(x) = px + q\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Match coefficients: the gradient parameter is the coefficient of \\(x\\), and the intercept parameter is the constant term.",
+        "workingOut": "\\(m = p,\\; b = q\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = px + q, \\, f'(x) = p\\)",
+        "explanation": "Differentiate: for \\(f(x) = mx + b\\) we always have \\(f'(x) = m\\). Substituting \\(m = p\\) gives a constant derivative.",
+        "workingOut": "\\(f'(x) = p\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = px + q, \\, f'(x) = p. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = px + q, \\, f'(x) = p\\)",
+        "explanation": "Note that the intercept \\(q\\) does not appear in the derivative. Only the slope coefficient survives differentiation.",
+        "workingOut": "\\(\\dfrac{d}{dx}(px + q) = p\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: the function stays \\(px + q\\) and its derivative is the constant \\(p\\).",
+        "workingOut": "\\(f(x) = px + q,\\; f'(x) = p\\)",
         "graphData": null
       }
     ],
@@ -287,26 +317,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Simplify the constant expression to write it in the form \\(f(x) = mx + b\\)**\nFind a common denominator for the fractions \\(\\frac{2}{5}\\) and \\(\\frac{3}{4}\\):\n\\(f(x) = \\frac{2 \\times 4}{5 \\times 4} + \\frac{3 \\times 5}{4 \\times 5}\\)\n\\(f(x) = \\frac{8}{20} + \\frac{15}{20} = \\frac{23}{20}\\)\nThis constant function can be represented with an explicit \\(x\\) term as:\n\\(f(x) = 0x + \\frac{23}{20}\\)\nwhere \\(m = 0\\) and \\(b = \\frac{23}{20}\\).\n\n**Step 2: Recall the derivative of a constant function**\nSince the function is a constant value and does not change with respect to \\(x\\), its rate of change (gradient) is always \\(0\\):\n\\(f'(x) = 0\\)\n\n**Step 3: State the derivative**\nSince \\(m = 0\\), the derived function is:\n\\(f'(x) = 0\\)\n\n**Step 4: Combine the results**\n\\(f(x) = \\frac{23}{20}, \\, f'(x) = 0\\)",
+    "solution": "**Step 1:** Use the swapped constant expression \\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\). First combine the two fractions into a single constant value.\n\\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\)\n\n**Step 2:** The LCD of 5 and 4 is 20. Rewrite each fraction over 20.\n\\(\\frac{2}{5} = \\frac{8}{20},\\quad \\frac{3}{4} = \\frac{15}{20}\\)\n\n**Step 3:** Add the numerators: \\(8 + 15 = 23\\). So the function is the constant \\(\\frac{23}{20}\\). In the form \\(mx + b\\) this is \\(0 \\cdot x + \\frac{23}{20}\\).\n\\(f(x) = \\frac{23}{20} = 0x + \\frac{23}{20}\\)\n\n**Step 4:** A constant function has gradient zero everywhere, because its graph is a horizontal line. Hence the derivative is identically zero.\n\\(f'(x) = 0\\)\n\n**Step 5:** Combine the simplified constant value and its derivative.\n\\(f(x) = \\frac{23}{20},\\; f'(x) = 0\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped constant expression \\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\). First combine the two fractions into a single constant value.",
+        "workingOut": "\\(f(x) = \\frac{2}{5} + \\frac{3}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "The LCD of 5 and 4 is 20. Rewrite each fraction over 20.",
+        "workingOut": "\\(\\frac{2}{5} = \\frac{8}{20},\\quad \\frac{3}{4} = \\frac{15}{20}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = \\frac{23}{20}, \\, f'(x) = 0\\)",
+        "explanation": "Add the numerators: \\(8 + 15 = 23\\). So the function is the constant \\(\\frac{23}{20}\\). In the form \\(mx + b\\) this is \\(0 \\cdot x + \\frac{23}{20}\\).",
+        "workingOut": "\\(f(x) = \\frac{23}{20} = 0x + \\frac{23}{20}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = \\frac{23}{20}, \\, f'(x) = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = \\frac{23}{20}, \\, f'(x) = 0\\)",
+        "explanation": "A constant function has gradient zero everywhere, because its graph is a horizontal line. Hence the derivative is identically zero.",
+        "workingOut": "\\(f'(x) = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Combine the simplified constant value and its derivative.",
+        "workingOut": "\\(f(x) = \\frac{23}{20},\\; f'(x) = 0\\)",
         "graphData": null
       }
     ],
@@ -332,26 +367,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Rewrite the function using a negative index**\nExpress the function \\(f(x) = \\frac{2}{x}\\) with an exponent:\n\\(f(x) = 2x^{-1}\\)\n\n**Step 2: Differentiate the function using the power rule**\nMultiply the coefficient by the exponent, and decrease the exponent by \\(1\\):\n\\(f'(x) = 2 \\times (-1)x^{-1 - 1}\\)\n\\(f'(x) = -2x^{-2}\\)\n\n**Step 3: Convert the derivative back to fraction form**\n\\(f'(x) = -\\frac{2}{x^2}\\)\n\n**Step 4: Evaluate the gradient of the tangent at \\(x = -1\\)**\nSubstitute \\(x = -1\\) into the derived function:\n\\(f'(-1) = -\\frac{2}{(-1)^2}\\)\nSince \\((-1)^2 = 1\\):\n\\(f'(-1) = -\\frac{2}{1} = -2\\)\n\n**Step 5: Formulate the final statement**\n\\(f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2\\)",
+    "solution": "**Step 1:** Use the swapped rational function \\(f(x) = \\frac{2}{x}\\). Rewrite with a negative index so the power rule applies.\n\\(f(x) = 2x^{-1}\\)\n\n**Step 2:** Differentiate using the power rule: bring the exponent down as a multiplier and reduce the exponent by 1. Coefficient 2 is kept.\n\\(f'(x) = 2 \\cdot (-1) x^{-1-1} = -2x^{-2}\\)\n\n**Step 3:** Rewrite the derivative in fractional form for readability.\n\\(f'(x) = -\\frac{2}{x^{2}}\\)\n\n**Step 4:** The gradient of the tangent at a point equals the derivative evaluated there. Substitute \\(x = -1\\). Note that \\((-1)^{2} = 1\\).\n\\(f'(-1) = -\\frac{2}{(-1)^{2}} = -\\frac{2}{1} = -2\\)\n\n**Step 5:** State the derived function and the tangent gradient at \\(x = -1\\).\n\\(f'(x) = -\\frac{2}{x^{2}}\\text{ and gradient at }x=-1\\text{ is }-2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped rational function \\(f(x) = \\frac{2}{x}\\). Rewrite with a negative index so the power rule applies.",
+        "workingOut": "\\(f(x) = 2x^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Differentiate using the power rule: bring the exponent down as a multiplier and reduce the exponent by 1. Coefficient 2 is kept.",
+        "workingOut": "\\(f'(x) = 2 \\cdot (-1) x^{-1-1} = -2x^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2\\)",
+        "explanation": "Rewrite the derivative in fractional form for readability.",
+        "workingOut": "\\(f'(x) = -\\frac{2}{x^{2}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f'(x) = -\\frac{2}{x^2} \\text{ and the gradient of the tangent at } x = -1 \\text{ is } -2\\)",
+        "explanation": "The gradient of the tangent at a point equals the derivative evaluated there. Substitute \\(x = -1\\). Note that \\((-1)^{2} = 1\\).",
+        "workingOut": "\\(f'(-1) = -\\frac{2}{(-1)^{2}} = -\\frac{2}{1} = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the derived function and the tangent gradient at \\(x = -1\\).",
+        "workingOut": "\\(f'(x) = -\\frac{2}{x^{2}}\\text{ and gradient at }x=-1\\text{ is }-2\\)",
         "graphData": null
       }
     ],
@@ -377,26 +417,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand and rearrange the function into the form \\(f(x) = mx + b\\)**\nSplit the fraction \\(f(x) = \\frac{7 - 4x}{3}\\) into two separate terms:\n\\(f(x) = \\frac{7}{3} - \\frac{4x}{3}\\)\nRearrange to place the \\(x\\) term first:\n\\(f(x) = -\\frac{4}{3}x + \\frac{7}{3}\\)\nThis is in the form \\(f(x) = mx + b\\), where \\(m = -\\frac{4}{3}\\) and \\(b = \\frac{7}{3}\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) is:\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = -\\frac{4}{3}\\), the derived function is:\n\\(f'(x) = -\\frac{4}{3}\\)\n\n**Step 4: Combine the results**\n\\(f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}\\)",
+    "solution": "**Step 1:** Use the swapped function \\(f(x) = \\dfrac{7 - 4x}{3}\\). Split the single fraction into two separate terms.\n\\(f(x) = \\dfrac{7}{3} - \\dfrac{4x}{3}\\)\n\n**Step 2:** Rewrite so the multiple of \\(x\\) appears first, matching \\(f(x) = mx + b\\).\n\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3}\\)\n\n**Step 3:** Read off the gradient and intercept from this standard form.\n\\(m = -\\dfrac{4}{3},\\; b = \\dfrac{7}{3}\\)\n\n**Step 4:** Differentiate: for a linear function the derivative is the constant gradient coefficient.\n\\(f'(x) = -\\dfrac{4}{3}\\)\n\n**Step 5:** Final combined statement of the linear form and its derivative.\n\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3},\\; f'(x) = -\\dfrac{4}{3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped function \\(f(x) = \\dfrac{7 - 4x}{3}\\). Split the single fraction into two separate terms.",
+        "workingOut": "\\(f(x) = \\dfrac{7}{3} - \\dfrac{4x}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite so the multiple of \\(x\\) appears first, matching \\(f(x) = mx + b\\).",
+        "workingOut": "\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}\\)",
+        "explanation": "Read off the gradient and intercept from this standard form.",
+        "workingOut": "\\(m = -\\dfrac{4}{3},\\; b = \\dfrac{7}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = -\\frac{4}{3}x + \\frac{7}{3}, \\, f'(x) = -\\frac{4}{3}\\)",
+        "explanation": "Differentiate: for a linear function the derivative is the constant gradient coefficient.",
+        "workingOut": "\\(f'(x) = -\\dfrac{4}{3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final combined statement of the linear form and its derivative.",
+        "workingOut": "\\(f(x) = -\\dfrac{4}{3}x + \\dfrac{7}{3},\\; f'(x) = -\\dfrac{4}{3}\\)",
         "graphData": null
       }
     ],
@@ -422,26 +467,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Sketch and analyze the function**\nThe function \\(f(x) = 9 - x^2\\) represents a parabola opening downwards with its vertex at \\((0, 9)\\).\n\n**Step 2: Differentiate the function algebraically**\nUsing the basic derivative rules:\n- The derivative of a constant \\(9\\) is \\(0\\).\n- The derivative of \\(-x^2\\) is \\(-2x\\) (by the power rule).\n\nTherefore, the derived function is:\n\\(f'(x) = -2x\\)\n\n**Step 3: Evaluate the derivative at \\(x = 2\\)**\nSubstitute \\(x = 2\\) into the derived function to find the exact rate of change (slope of the tangent line):\n\\(f'(2) = -2(2) = -4\\)\n\n**Step 4: Conceptual check using drawing/tangents**\nAt \\(x = 2\\), the curve \\(f(x) = 9 - x^2\\) is decreasing. A tangent drawn at the point \\((2, 5)\\) goes down steeply. The slope of this tangent line is exactly \\(-4\\).\n\n**Step 5: Formulate the final statement**\n\\(f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4\\)",
+    "solution": "**Step 1:** Use the swapped quadratic \\(f(x) = 9 - x^{2}\\). This is a downward-opening parabola with vertex at \\((0, 9)\\).\n\\(f(x) = 9 - x^{2}\\)\n\n**Step 2:** Differentiate term by term. The derivative of the constant 9 is 0. For the power term use \\(\\dfrac{d}{dx}(x^{n}) = nx^{n-1}\\) on \\(-x^{2}\\).\n\\(f'(x) = 0 - 2x = -2x\\)\n\n**Step 3:** The gradient of the tangent at a specific point is the derivative evaluated at that \\(x\\)-value. Substitute \\(x = 2\\).\n\\(f'(2) = -2(2) = -4\\)\n\n**Step 4:** Check geometrically: at \\(x = 2\\), the point on the curve is \\((2, 9 - 4) = (2, 5)\\). The curve is decreasing there, so a negative slope of \\(-4\\) is consistent.\n\\(f(2) = 5,\\; \\text{tangent slope } = -4\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 2\\).\n\\(f'(x) = -2x\\text{ and gradient at }x=2\\text{ is }-4\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped quadratic \\(f(x) = 9 - x^{2}\\). This is a downward-opening parabola with vertex at \\((0, 9)\\).",
+        "workingOut": "\\(f(x) = 9 - x^{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Differentiate term by term. The derivative of the constant 9 is 0. For the power term use \\(\\dfrac{d}{dx}(x^{n}) = nx^{n-1}\\) on \\(-x^{2}\\).",
+        "workingOut": "\\(f'(x) = 0 - 2x = -2x\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4\\)",
+        "explanation": "The gradient of the tangent at a specific point is the derivative evaluated at that \\(x\\)-value. Substitute \\(x = 2\\).",
+        "workingOut": "\\(f'(2) = -2(2) = -4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f'(x) = -2x \\text{ and the gradient of the tangent at } x = 2 \\text{ is } -4\\)",
+        "explanation": "Check geometrically: at \\(x = 2\\), the point on the curve is \\((2, 9 - 4) = (2, 5)\\). The curve is decreasing there, so a negative slope of \\(-4\\) is consistent.",
+        "workingOut": "\\(f(2) = 5,\\; \\text{tangent slope } = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the derived function and the exact tangent gradient at \\(x = 2\\).",
+        "workingOut": "\\(f'(x) = -2x\\text{ and gradient at }x=2\\text{ is }-4\\)",
         "graphData": null
       }
     ],
@@ -467,26 +517,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand both squared terms**\nExpand \\((x+4)^2\\):\n\\((x+4)^2 = x^2 + 8x + 16\\)\n\nExpand \\((x-4)^2\\):\n\\((x-4)^2 = x^2 - 8x + 16\\)\n\n**Step 2: Subtract the second expanded expression from the first**\n\\(f(x) = (x^2 + 8x + 16) - (x^2 - 8x + 16)\\)\nDistribute the negative sign carefully:\n\\(f(x) = x^2 + 8x + 16 - x^2 + 8x - 16\\)\n\n**Step 3: Collect like terms**\nObserve that the quadratic term \\(x^2\\) and constant term \\(16\\) cancel out:\n\\(f(x) = (x^2 - x^2) + (8x + 8x) + (16 - 16)\\)\n\\(f(x) = 16x\\)\nThis is in the linear form \\(f(x) = mx + b\\), where \\(m = 16\\) and \\(b = 0\\).\n\n**Step 4: Differentiate to find \\(f'(x)\\)**\nSince \\(f(x) = 16x\\), its rate of change (gradient) is constant at all points:\n\\(f'(x) = 16\\)\n\n**Step 5: State the final result**\n\\(f(x) = 16x, \\, f'(x) = 16\\)",
+    "solution": "**Step 1:** Use the swapped expression \\(f(x) = (x + 4)^{2} - (x - 4)^{2}\\). Expand each squared binomial with \\((a \\pm b)^{2} = a^{2} \\pm 2ab + b^{2}\\).\n\\((x+4)^{2} = x^{2} + 8x + 16,\\quad (x-4)^{2} = x^{2} - 8x + 16\\)\n\n**Step 2:** Subtract the second expansion from the first. Distribute the minus sign carefully across every term of the second bracket.\n\\(f(x) = (x^{2} + 8x + 16) - (x^{2} - 8x + 16)\\)\n\n**Step 3:** Remove brackets: the minus flips the signs of \\(-8x\\) and \\(+16\\).\n\\(f(x) = x^{2} + 8x + 16 - x^{2} + 8x - 16\\)\n\n**Step 4:** Collect like terms. The \\(x^{2}\\) terms cancel and the constants cancel, leaving only the linear term.\n\\(f(x) = (8x + 8x) = 16x\\)\n\n**Step 5:** Now \\(f(x) = 16x\\) is linear with gradient 16. Differentiate: \\(f'(x) = 16\\).\n\\(f(x) = 16x,\\; f'(x) = 16\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped expression \\(f(x) = (x + 4)^{2} - (x - 4)^{2}\\). Expand each squared binomial with \\((a \\pm b)^{2} = a^{2} \\pm 2ab + b^{2}\\).",
+        "workingOut": "\\((x+4)^{2} = x^{2} + 8x + 16,\\quad (x-4)^{2} = x^{2} - 8x + 16\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Subtract the second expansion from the first. Distribute the minus sign carefully across every term of the second bracket.",
+        "workingOut": "\\(f(x) = (x^{2} + 8x + 16) - (x^{2} - 8x + 16)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = 16x, \\, f'(x) = 16\\)",
+        "explanation": "Remove brackets: the minus flips the signs of \\(-8x\\) and \\(+16\\).",
+        "workingOut": "\\(f(x) = x^{2} + 8x + 16 - x^{2} + 8x - 16\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = 16x, \\, f'(x) = 16. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = 16x, \\, f'(x) = 16\\)",
+        "explanation": "Collect like terms. The \\(x^{2}\\) terms cancel and the constants cancel, leaving only the linear term.",
+        "workingOut": "\\(f(x) = (8x + 8x) = 16x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Now \\(f(x) = 16x\\) is linear with gradient 16. Differentiate: \\(f'(x) = 16\\).",
+        "workingOut": "\\(f(x) = 16x,\\; f'(x) = 16\\)",
         "graphData": null
       }
     ],
@@ -512,26 +567,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the derivative rule for general exponential functions**\nFor any exponential base \\(a > 0\\):\n\\(\\frac{d}{dx}\\left(a^x\\right) = a^x \\ln(a)\\)\nwhere \\(\\ln\\) is the natural logarithm (base \\(e\\)).\n\n**Step 2: Apply the rule to \\(f(x) = 3^x\\)**\nHere, the base is \\(a = 3\\). Therefore:\n\\(f'(x) = 3^x \\ln(3)\\)\n\n**Step 3: Evaluate the gradient of the tangent line at \\(x = 1\\)**\nSubstitute \\(x = 1\\) into the derived function:\n\\(f'(1) = 3^1 \\ln(3) = 3\\ln(3)\\)\n\n**Step 4: Formulate the final statement**\n\\(f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3)\\)",
+    "solution": "**Step 1:** Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \\neq 1\\).\n\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)\n\n**Step 2:** Here the base is \\(a = 3\\). Substitute into the rule to obtain the derived function. The natural logarithm of the base appears as a constant factor.\n\\(f'(x) = 3^{x}\\ln 3\\)\n\n**Step 3:** The tangent gradient at a point is the derivative evaluated there. Substitute \\(x = 1\\).\n\\(f'(1) = 3^{1}\\ln 3 = 3\\ln 3\\)\n\n**Step 4:** Leave the answer exact: do not replace \\(\\ln 3\\) by a decimal approximation unless asked. Note that the gradient is not simply 3 (that would omit the log factor).\n\\(f'(1) = 3\\ln 3\\)\n\n**Step 5:** State the derived function and the exact tangent gradient at \\(x = 1\\).\n\\(f'(x) = 3^{x}\\ln 3\\text{ and gradient at }x=1\\text{ is }3\\ln 3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped exponential \\(f(x) = 3^{x}\\). Recall the standard derivative rule for a constant base \\(a > 0\\), \\(a \\neq 1\\).",
+        "workingOut": "\\(\\dfrac{d}{dx}\\bigl(a^{x}\\bigr) = a^{x}\\ln a\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Here the base is \\(a = 3\\). Substitute into the rule to obtain the derived function. The natural logarithm of the base appears as a constant factor.",
+        "workingOut": "\\(f'(x) = 3^{x}\\ln 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3)\\)",
+        "explanation": "The tangent gradient at a point is the derivative evaluated there. Substitute \\(x = 1\\).",
+        "workingOut": "\\(f'(1) = 3^{1}\\ln 3 = 3\\ln 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f'(x) = 3^x \\ln(3) \\text{ and the gradient of the tangent at } x = 1 \\text{ is } 3\\ln(3)\\)",
+        "explanation": "Leave the answer exact: do not replace \\(\\ln 3\\) by a decimal approximation unless asked. Note that the gradient is not simply 3 (that would omit the log factor).",
+        "workingOut": "\\(f'(1) = 3\\ln 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "State the derived function and the exact tangent gradient at \\(x = 1\\).",
+        "workingOut": "\\(f'(x) = 3^{x}\\ln 3\\text{ and gradient at }x=1\\text{ is }3\\ln 3\\)",
         "graphData": null
       }
     ],
@@ -557,26 +617,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write the function in the form \\(f(x) = mx + b\\)**\nThe constant function \\(f(x) = -8\\) can be written with an explicit \\(x\\) term as:\n\\(f(x) = 0x - 8\\)\nwhere \\(m = 0\\) and \\(b = -8\\).\n\n**Step 2: Recall the derivative of a constant function**\nThe graph of \\(f(x) = -8\\) is a horizontal line. The gradient of any horizontal line is always \\(0\\):\n\\(f'(x) = 0\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = 0\\), the derived function is:\n\\(f'(x) = 0\\)\n\n**Step 4: Combine the results**\n\\(f(x) = -8, \\, f'(x) = 0\\)",
+    "solution": "**Step 1:** Use the swapped constant function \\(f(x) = -8\\). Write it in the form \\(mx + b\\) by making the coefficient of \\(x\\) explicit.\n\\(f(x) = -8 = 0x - 8\\)\n\n**Step 2:** Identify the gradient and intercept parameters from this writing.\n\\(m = 0,\\; b = -8\\)\n\n**Step 3:** Geometrically, \\(y = -8\\) is a horizontal line. Every horizontal line has slope zero at every point.\n\\(f'(x) = 0\\)\n\n**Step 4:** Algebraically the same result follows: the derivative of any constant is zero, so the intercept value \\(-8\\) does not appear in \\(f'(x)\\).\n\\(\\dfrac{d}{dx}(-8) = 0\\)\n\n**Step 5:** Final answer: the constant function and its zero derivative.\n\\(f(x) = -8,\\; f'(x) = 0\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped constant function \\(f(x) = -8\\). Write it in the form \\(mx + b\\) by making the coefficient of \\(x\\) explicit.",
+        "workingOut": "\\(f(x) = -8 = 0x - 8\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Identify the gradient and intercept parameters from this writing.",
+        "workingOut": "\\(m = 0,\\; b = -8\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = -8, \\, f'(x) = 0\\)",
+        "explanation": "Geometrically, \\(y = -8\\) is a horizontal line. Every horizontal line has slope zero at every point.",
+        "workingOut": "\\(f'(x) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = -8, \\, f'(x) = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = -8, \\, f'(x) = 0\\)",
+        "explanation": "Algebraically the same result follows: the derivative of any constant is zero, so the intercept value \\(-8\\) does not appear in \\(f'(x)\\).",
+        "workingOut": "\\(\\dfrac{d}{dx}(-8) = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: the constant function and its zero derivative.",
+        "workingOut": "\\(f(x) = -8,\\; f'(x) = 0\\)",
         "graphData": null
       }
     ],
@@ -602,26 +667,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 2,
     "answer": "2",
     "hint": "An odd function is symmetric about the origin.",
-    "solution": "1. **g(x) is odd**: The graph must have rotational symmetry of 180° about the origin. Graph B and D are even, so they are eliminated.\n2. **g(5) = 0**: The curve passes through the x-axis at x = 5.\n3. **g'(2) = 0**: The curve has a stationary point at x = 2.\n4. **g'(x) > 0 for x > 2**: The curve must be increasing for x > 2. In Graph A, after x=2, the curve goes downwards (\\( g'(x) < 0 \\)\\(). In Graph C, after x=2, the curve goes upwards (\\)\\( g'(x) > 0 \\)).\n\nTherefore, Graph C is correct.",
+    "solution": "**Step 1:** Condition 1: \\(g\\) is an odd function, so its graph has 180° rotational symmetry about the origin: \\(g(-x) = -g(x)\\). Eliminate any graphs that look even (mirror symmetry in the \\(y\\)-axis) or lack origin symmetry.\n\\(g(-x) = -g(x)\\quad\\text{(odd)}\\)\n\n**Step 2:** Condition 2: \\(g(5) = 0\\) means the curve crosses the \\(x\\)-axis at \\(x = 5\\). Keep only graphs that pass through the point \\((5, 0)\\).\n\\(g(5) = 0\\)\n\n**Step 3:** Condition 3: \\(g'(2) = 0\\) means the tangent is horizontal at \\(x = 2\\) — a stationary point (turning point or horizontal inflection) on the curve at that abscissa.\n\\(g'(2) = 0\\)\n\n**Step 4:** Condition 4: \\(g'(x) > 0\\) for all \\(x > 2\\) means the function is strictly increasing to the right of \\(x = 2\\). Discard any remaining graph that falls after \\(x = 2\\).\n\\(g'(x) > 0\\text{ for }x > 2\\)\n\n**Step 5:** Only Graph C satisfies all four conditions simultaneously (odd symmetry, root at 5, stationary at 2, and increasing for \\(x > 2\\)). The correct option is C, which is index 2.\n\\(\\text{Answer: } C\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y = g(x) ?\\)",
+        "explanation": "Condition 1: \\(g\\) is an odd function, so its graph has 180° rotational symmetry about the origin: \\(g(-x) = -g(x)\\). Eliminate any graphs that look even (mirror symmetry in the \\(y\\)-axis) or lack origin symmetry.",
+        "workingOut": "\\(g(-x) = -g(x)\\quad\\text{(odd)}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Condition 2: \\(g(5) = 0\\) means the curve crosses the \\(x\\)-axis at \\(x = 5\\). Keep only graphs that pass through the point \\((5, 0)\\).",
+        "workingOut": "\\(g(5) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(C\\)",
+        "explanation": "Condition 3: \\(g'(2) = 0\\) means the tangent is horizontal at \\(x = 2\\) — a stationary point (turning point or horizontal inflection) on the curve at that abscissa.",
+        "workingOut": "\\(g'(2) = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: C. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(C\\)",
+        "explanation": "Condition 4: \\(g'(x) > 0\\) for all \\(x > 2\\) means the function is strictly increasing to the right of \\(x = 2\\). Discard any remaining graph that falls after \\(x = 2\\).",
+        "workingOut": "\\(g'(x) > 0\\text{ for }x > 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Only Graph C satisfies all four conditions simultaneously (odd symmetry, root at 5, stationary at 2, and increasing for \\(x > 2\\)). The correct option is C, which is index 2.",
+        "workingOut": "\\(\\text{Answer: } C\\)",
         "graphData": null
       }
     ],
@@ -647,26 +717,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the function to write it in the form \\(f(x) = mx + b\\)**\nMultiply the term \\(\\frac{3}{4}\\) inside the brackets of \\(f(x) = \\frac{3}{4}(5 - \\frac{2}{3}x)\\):\n\\(f(x) = \\frac{3}{4} \\times 5 - \\frac{3}{4} \\times \\frac{2}{3}x\\)\n\\(f(x) = \\frac{15}{4} - \\frac{6}{12}x\\)\nSimplify the fraction \\(\\frac{6}{12}\\) to \\(\\frac{1}{2}\\):\n\\(f(x) = \\frac{15}{4} - \\frac{1}{2}x\\)\nRearrange to place the \\(x\\) term first:\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}\\)\nwhere \\(m = -\\frac{1}{2}\\) and \\(b = \\frac{15}{4}\\).\n\n**Step 2: Recall the definition of the derivative for linear functions**\nFor any linear function of the form \\(f(x) = mx + b\\), the derivative \\(f'(x)\\) is:\n\\(f'(x) = m\\)\n\n**Step 3: State the derivative**\nSince the gradient \\(m = -\\frac{1}{2}\\), the derived function is:\n\\(f'(x) = -\\frac{1}{2}\\)\n\n**Step 4: Combine the results**\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}\\)",
+    "solution": "**Step 1:** Use the swapped function \\(f(x) = \\frac{3}{4}\\bigl(5 - \\frac{2}{3}x\\bigr)\\). Expand by distributing \\(\\frac{3}{4}\\) across both terms inside the brackets.\n\\(f(x) = \\frac{3}{4} \\cdot 5 - \\frac{3}{4} \\cdot \\frac{2}{3}x\\)\n\n**Step 2:** Compute each product separately. First the constant term: \\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\).\n\\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\)\n\n**Step 3:** Next the coefficient of \\(x\\): \\(\\frac{3}{4} \\times \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}\\). So the second term is \\(-\\frac{1}{2}x\\).\n\\(f(x) = \\frac{15}{4} - \\frac{1}{2}x\\)\n\n**Step 4:** Reorder into the standard form \\(mx + b\\) with the gradient term first. Then \\(m = -\\frac{1}{2}\\) and \\(b = \\frac{15}{4}\\).\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}\\)\n\n**Step 5:** Differentiate the linear form: the derivative is the constant gradient \\(m\\).\n\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4},\\; f'(x) = -\\frac{1}{2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped function \\(f(x) = \\frac{3}{4}\\bigl(5 - \\frac{2}{3}x\\bigr)\\). Expand by distributing \\(\\frac{3}{4}\\) across both terms inside the brackets.",
+        "workingOut": "\\(f(x) = \\frac{3}{4} \\cdot 5 - \\frac{3}{4} \\cdot \\frac{2}{3}x\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Compute each product separately. First the constant term: \\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\).",
+        "workingOut": "\\(\\frac{3}{4} \\times 5 = \\frac{15}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}\\)",
+        "explanation": "Next the coefficient of \\(x\\): \\(\\frac{3}{4} \\times \\frac{2}{3} = \\frac{6}{12} = \\frac{1}{2}\\). So the second term is \\(-\\frac{1}{2}x\\).",
+        "workingOut": "\\(f(x) = \\frac{15}{4} - \\frac{1}{2}x\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}, \\, f'(x) = -\\frac{1}{2}\\)",
+        "explanation": "Reorder into the standard form \\(mx + b\\) with the gradient term first. Then \\(m = -\\frac{1}{2}\\) and \\(b = \\frac{15}{4}\\).",
+        "workingOut": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Differentiate the linear form: the derivative is the constant gradient \\(m\\).",
+        "workingOut": "\\(f(x) = -\\frac{1}{2}x + \\frac{15}{4},\\; f'(x) = -\\frac{1}{2}\\)",
         "graphData": null
       }
     ],
@@ -692,26 +767,31 @@ export const Y11_CH9A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Group the expression under a single denominator**\nSince both fractions share a common denominator of \\(3\\), we can combine them:\n\\(f(x) = \\frac{(5 + 7x) - (2 - 4x)}{3}\\)\n\n**Step 2: Expand and simplify the numerator**\nCarefully distribute the negative sign through the second bracket:\n\\(f(x) = \\frac{5 + 7x - 2 + 4x}{3}\\)\nCombine the like terms (constants and \\(x\\) coefficients):\n\\(f(x) = \\frac{(5 - 2) + (7x + 4x)}{3}\\)\n\\(f(x) = \\frac{3 + 11x}{3}\\)\n\n**Step 3: Write in standard form \\(f(x) = mx + b\\)**\nSplit the fraction into linear components:\n\\(f(x) = \\frac{11}{3}x + \\frac{3}{3}\\)\n\\(f(x) = \\frac{11}{3}x + 1\\)\nHere, the gradient is \\(m = \\frac{11}{3}\\) and the y-intercept is \\(b = 1\\).\n\n**Step 4: Differentiate to find \\(f'(x)\\)**\nUsing the derivative rule for linear functions \\(f(x) = mx + b\\):\n\\(f'(x) = m = \\frac{11}{3}\\)\n\n**Step 5: Combine the results**\n\\(f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}\\)",
+    "solution": "**Step 1:** Use the swapped compound expression \\(f(x) = \\dfrac{5 + 7x}{3} - \\dfrac{2 - 4x}{3}\\). Both fractions share denominator 3, so combine over a single fraction.\n\\(f(x) = \\dfrac{(5 + 7x) - (2 - 4x)}{3}\\)\n\n**Step 2:** Expand the numerator by distributing the minus sign through the second bracket. Watch the sign change on \\(-4x\\).\n\\(f(x) = \\dfrac{5 + 7x - 2 + 4x}{3}\\)\n\n**Step 3:** Collect like terms in the numerator: constants \\(5 - 2 = 3\\) and coefficients of \\(x\\) give \\(7x + 4x = 11x\\).\n\\(f(x) = \\dfrac{3 + 11x}{3}\\)\n\n**Step 4:** Split the fraction into two terms and simplify the constant: \\(\\frac{3}{3} = 1\\). This yields gradient–intercept form.\n\\(f(x) = \\frac{11}{3}x + 1\\)\n\n**Step 5:** Differentiate the linear function: the derivative equals the gradient coefficient \\(\\frac{11}{3}\\).\n\\(f(x) = \\frac{11}{3}x + 1,\\; f'(x) = \\frac{11}{3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Tangents and the derivative: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the swapped compound expression \\(f(x) = \\dfrac{5 + 7x}{3} - \\dfrac{2 - 4x}{3}\\). Both fractions share denominator 3, so combine over a single fraction.",
+        "workingOut": "\\(f(x) = \\dfrac{(5 + 7x) - (2 - 4x)}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the numerator by distributing the minus sign through the second bracket. Watch the sign change on \\(-4x\\).",
+        "workingOut": "\\(f(x) = \\dfrac{5 + 7x - 2 + 4x}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}\\)",
+        "explanation": "Collect like terms in the numerator: constants \\(5 - 2 = 3\\) and coefficients of \\(x\\) give \\(7x + 4x = 11x\\).",
+        "workingOut": "\\(f(x) = \\dfrac{3 + 11x}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(x) = \\frac{11}{3}x + 1, \\, f'(x) = \\frac{11}{3}\\)",
+        "explanation": "Split the fraction into two terms and simplify the constant: \\(\\frac{3}{3} = 1\\). This yields gradient–intercept form.",
+        "workingOut": "\\(f(x) = \\frac{11}{3}x + 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Differentiate the linear function: the derivative equals the gradient coefficient \\(\\frac{11}{3}\\).",
+        "workingOut": "\\(f(x) = \\frac{11}{3}x + 1,\\; f'(x) = \\frac{11}{3}\\)",
         "graphData": null
       }
     ],

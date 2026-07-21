@@ -88,20 +88,30 @@ const norm = (s) => String(s ?? '')
 // and drifted out of sync with fixes made to Daily Challenge (see
 // prepareShuffledMcOptions in src/utils/mcOptionShuffle.js).
 const prepareQuestion = (q) => {
-  // `options` defaults to `[]` (not undefined) for every non-MC question at
-  // write time. Array.isArray([]) is true, so an empty array used to satisfy
-  // this check too — a teacher_review question with no real options then
-  // rendered as multiple-choice with ZERO option buttons and a submit button
-  // that could never be enabled (real report, 2026-07-18). Require an actual
-  // option to exist.
+  const hasSubs = Array.isArray(q.subQuestions) && q.subQuestions.length > 0;
+
+  // Multi-part questions: prepare each subQuestion
+  if (hasSubs) {
+    const subPrepped = q.subQuestions.map((sq) => {
+      const isMC = sq.type === 'multiple_choice' || (Array.isArray(sq.options) && sq.options.length > 0 && sq.type !== 'short_answer');
+      const rawKey = sq.answer ?? sq.a;
+      if (isMC) {
+        const shuffledOptions = prepareShuffledMcOptions(sq);
+        return { id: sq.id ?? sq.text, mode: 'mc', options: shuffledOptions, correctText: sq._shuffledAnswer ?? '' };
+      }
+      return { id: sq.id ?? sq.text, mode: 'text', options: [], correctText: String(rawKey ?? '') };
+    });
+    return { hasSubs: true, subQuestions: subPrepped };
+  }
+
+  // Single-answer question
   const isMC = q.type === 'multiple_choice' || (Array.isArray(q.options) && q.options.length > 0 && q.type !== 'short_answer');
-  // Seeds often store the key as `a` (option index) without `answer`.
   const rawKey = q.answer ?? q.a;
   if (isMC) {
     const shuffledOptions = prepareShuffledMcOptions(q);
-    return { mode: 'mc', options: shuffledOptions, correctText: q._shuffledAnswer ?? '' };
+    return { hasSubs: false, mode: 'mc', options: shuffledOptions, correctText: q._shuffledAnswer ?? '' };
   }
-  return { mode: 'text', options: [], correctText: String(rawKey ?? '') };
+  return { hasSubs: false, mode: 'text', options: [], correctText: String(rawKey ?? '') };
 };
 
 // ── Parse a hint string into ordered steps ────────────────────────────────
@@ -529,7 +539,10 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const prep = useMemo(() => (question ? prepareQuestion(question) : null), [question]);
 
   const activeQ = phase === 'twinSolve' || phase === 'twinFeedback' ? twin : question;
-  const activePrep = phase === 'twinSolve' || phase === 'twinFeedback' ? twinPrep : prep;
+  const activePrep = useMemo(
+    () => phase === 'twinSolve' || phase === 'twinFeedback' ? twinPrep : prep,
+    [phase, twinPrep, prep]
+  );
   const isFeedback = phase === 'feedback' || phase === 'twinFeedback';
 
   // ── Actions ──────────────────────────────────────────────────────────────
@@ -555,15 +568,28 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   };
 
   const submitOriginal = (textVal, optText, optIdx) => {
-    const val = optText != null ? optText : textVal;
-    // Diagram-only MC options (graphData, no text) can't win a text
-    // comparison — gradeMcSelection falls back to the shuffled index.
-    const correct = optText != null
-      ? gradeMcSelection(question, val, optIdx, prep.options)
-      : answersMatch(val, prep.correctText);
-    // Preview mode never touches localStorage — mirror recordResult()'s
-    // return values (graduated/needTwin/kept) purely locally so the twin
-    // flow and feedback copy still demo correctly.
+    const hasSubs = prep?.hasSubs;
+    let correct = true;
+
+    if (hasSubs) {
+      // Multi-part: all subQuestions must be correct
+      correct = prep.subQuestions.every((subPrep, i) => {
+        const subAnswer = answer?.[subPrep.id] ?? '';
+        if (!subAnswer) return false;
+        if (subPrep.mode === 'mc') {
+          const chosenOptIdx = answer?.[`${subPrep.id}__idx`];
+          return gradeMcSelection(activeQ.subQuestions[i], subAnswer, chosenOptIdx, subPrep.options);
+        }
+        return answersMatch(subAnswer, subPrep.correctText);
+      });
+    } else {
+      // Single-answer
+      const val = optText != null ? optText : textVal;
+      correct = optText != null
+        ? gradeMcSelection(question, val, optIdx, prep.options)
+        : answersMatch(val, prep.correctText);
+    }
+
     const status = isPreview
       ? (correct ? (canTwin(question) ? 'needTwin' : 'graduated') : 'kept')
       : recordResult(kind, uid, question.id, correct);
@@ -604,7 +630,7 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
   const advance = () => {
     // Tally non-graduated as kept (only once, at original feedback resolve).
     const next = idx + 1;
-    setAnswer('');
+    setAnswer(''); // Will be initialized based on next question type
     setSelectedIdx(null);
     setGraded(null);
     setTwinGraded(null);
@@ -784,19 +810,87 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
             render immediately, not only after submitting. Conflating the two
             here previously hid required diagrams during solve (real report,
             2026-07-18). */}
-        <MathView
-          content={activeQ?.question}
-          graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
-          style={{ fontSize: '1.0rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
-        />
+        {!activePrep?.hasSubs && (
+          <MathView
+            content={activeQ?.question}
+            graphData={activeQ?.type === 'graph_sketch' ? (isFeedback ? activeQ?.graphData : null) : activeQ?.graphData}
+            style={{ fontSize: '1.0rem', fontWeight: 600, color: '#1e1b4b', lineHeight: 1.6 }}
+          />
+        )}
 
         {/* Step-by-step hint — always shown (not hidden in feedback) */}
-        {!isFeedback && (
+        {!isFeedback && !activePrep?.hasSubs && (
           <StepwiseHint hint={activeQ?.hint} accent={accent} />
         )}
 
-        {/* Answer inputs */}
-        {activePrep?.mode === 'mc' ? (
+        {/* Multi-part questions: render each subQuestion */}
+        {activePrep?.hasSubs && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            {activeQ.subQuestions?.map((sq, idx) => {
+              const subPrep = activePrep.subQuestions[idx];
+              const subAnswer = answer?.[subPrep.id] ?? '';
+              return (
+                <div key={sq.id ?? idx} style={{ padding: '16px', background: '#f8fafc', borderRadius: '14px', border: '1px solid #e2e8f0' }}>
+                  <div style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '12px' }}>
+                    <span style={{ width: '26px', height: '26px', borderRadius: '8px', background: '#eef2ff', color: '#4f46e5', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.82rem', flexShrink: 0 }}>
+                      {String.fromCharCode(97 + idx)}
+                    </span>
+                    <MathView content={sq.question || sq.text || ''} graphData={sq.graphData} style={{ fontSize: '0.98rem', fontWeight: 700, color: '#1e1b4b', lineHeight: 1.5, flex: 1 }} />
+                  </div>
+
+                  {/* Answer section */}
+                  {isFeedback ? (
+                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                      <div style={{ padding: '12px 14px', borderRadius: '12px', background: '#eef2ff', border: '1px solid #c7d2fe' }}>
+                        <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#4f46e5', marginBottom: '6px' }}>Student's Answer</div>
+                        <MathView content={subAnswer || 'No answer recorded'} style={{ color: '#312e81', fontWeight: 700, fontSize: '0.9rem' }} />
+                      </div>
+                      <div style={{ padding: '12px 14px', borderRadius: '12px', background: '#f0fdf4', border: '1px solid #bbf7d0' }}>
+                        <div style={{ fontSize: '0.62rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#15803d', marginBottom: '6px' }}>Correct Answer</div>
+                        <MathView content={subPrep.correctText} style={{ color: '#166534', fontWeight: 700, fontSize: '0.9rem' }} />
+                      </div>
+                    </div>
+                  ) : subPrep.mode === 'mc' ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                      {subPrep.options.map((opt, i) => {
+                        const optText = getOptionText(opt);
+                        const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
+                        const isSel = answer?.[`${subPrep.id}__idx`] === i;
+                        return (
+                          <button
+                            key={i}
+                            disabled={isFeedback}
+                            onClick={() => { if (!isFeedback) setAnswer((prev) => ({ ...prev, [subPrep.id]: optText, [`${subPrep.id}__idx`]: i })); }}
+                            style={{
+                              display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', borderRadius: '12px',
+                              background: isSel ? '#f5f3ff' : '#fff', border: isSel ? '2px solid #8b5cf6' : '1px solid #e2e8f0',
+                              cursor: isFeedback ? 'default' : 'pointer', transition: 'all 0.15s',
+                            }}
+                          >
+                            <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: isSel ? '#8b5cf6' : '#f1f5f9', color: isSel ? '#fff' : '#64748b', display: 'grid', placeItems: 'center', fontWeight: 900, fontSize: '0.8rem', flexShrink: 0 }}>
+                              {String.fromCharCode(65 + i)}
+                            </div>
+                            <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 600, flex: 1 }} />
+                          </button>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <MathInput
+                      value={subAnswer}
+                      onChange={(latex) => { if (!isFeedback) setAnswer((prev) => ({ ...prev, [subPrep.id]: latex })); }}
+                      readOnly={isFeedback}
+                      placeholder={`Part ${String.fromCharCode(97 + idx)}…`}
+                    />
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Answer inputs for single-answer questions */}
+        {!activePrep?.hasSubs && activePrep?.mode === 'mc' ? (
           <div className="sn__opts">
             {activePrep.options.map((opt, i) => {
               const optText = getOptionText(opt);
@@ -845,9 +939,9 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
             )}
             <MathInput
               ref={mathInputRef}
-              value={answer}
+              value={typeof answer === 'string' ? answer : ''}
               onChange={(latex) => { if (!isFeedback) setAnswer(latex); }}
-              onEnter={() => { if (answer.trim() && !isFeedback) { isTwinPhase ? submitTwin(answer) : submitOriginal(answer); } }}
+              onEnter={() => { if (typeof answer === 'string' && answer.trim() && !isFeedback) { isTwinPhase ? submitTwin(answer) : submitOriginal(answer); } }}
               readOnly={isFeedback}
               placeholder="Type your answer…"
               autoFocus
@@ -858,19 +952,41 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         {/* Submit + Skip */}
         {!isFeedback && (
           <>
-            <button
-              className="sn__btn sn__btn--primary"
-              style={{ background: headerGradient }}
-              disabled={activePrep?.mode === 'mc' ? selectedIdx == null : !answer.trim()}
-              onClick={() => {
-                const optText = activePrep?.mode === 'mc'
-                  ? getOptionText(activePrep.options[selectedIdx])
-                  : null;
-                isTwinPhase ? submitTwin(answer, optText, selectedIdx) : submitOriginal(answer, optText, selectedIdx);
-              }}
-            >
-              Check answer
-            </button>
+            {(() => {
+              let isDisabled = true;
+              if (activePrep?.hasSubs) {
+                // Multi-part: all parts must be answered
+                isDisabled = !activePrep.subQuestions.every((subPrep) => {
+                  const subAnswer = answer?.[subPrep.id];
+                  if (subPrep.mode === 'mc') return answer?.[`${subPrep.id}__idx`] != null;
+                  return subAnswer?.trim();
+                });
+              } else if (activePrep?.mode === 'mc') {
+                isDisabled = selectedIdx == null;
+              } else {
+                isDisabled = typeof answer !== 'string' || !answer.trim();
+              }
+
+              return (
+                <button
+                  className="sn__btn sn__btn--primary"
+                  style={{ background: headerGradient }}
+                  disabled={isDisabled}
+                  onClick={() => {
+                    if (activePrep?.hasSubs) {
+                      isTwinPhase ? submitTwin(answer) : submitOriginal(answer);
+                    } else {
+                      const optText = activePrep?.mode === 'mc'
+                        ? getOptionText(activePrep.options[selectedIdx])
+                        : null;
+                      isTwinPhase ? submitTwin(answer, optText, selectedIdx) : submitOriginal(answer, optText, selectedIdx);
+                    }
+                  }}
+                >
+                  Check answer
+                </button>
+              );
+            })()}
             {/* Skip — move on without answering. The question stays in the
                 notebook (no grading recorded) so it comes back next time. */}
             <button className="sn__skip" onClick={advance}>
@@ -883,34 +999,97 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
         <AnimatePresence>
           {isFeedback && (
             <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}>
-              <div className={`sn__fb ${feedbackCorrect ? 'sn__fb--ok' : 'sn__fb--no'}`}>
-                <div className="sn__fb-head">
-                  {feedbackCorrect
-                    ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
-                    : <XCircle size={20} style={{ color: '#ef4444' }} />}
-                  <span>
-                    {feedbackCorrect
-                      ? (phase === 'feedback' && graded?.xpAwarded > 0
-                        ? `Correct! +${graded.xpAwarded} XP`
-                        : 'Correct!')
-                      : 'Not quite'}
-                  </span>
-                </div>
-                {feedbackCorrect && phase === 'feedback' && kind !== 'exam_prep' && !(graded?.xpAwarded > 0) && (
-                  <div className="sn__fb-answer" style={{ color: '#64748b', fontWeight: 600 }}>
-                    Review only — Secret Note does not award XP. Keep practising Daily Challenge for points.
+              {(() => {
+                // For multi-part, show overall feedback + each part's correctness
+                if (activePrep?.hasSubs) {
+                  return (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                      <div className={`sn__fb ${feedbackCorrect ? 'sn__fb--ok' : 'sn__fb--no'}`}>
+                        <div className="sn__fb-head">
+                          {feedbackCorrect
+                            ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
+                            : <XCircle size={20} style={{ color: '#ef4444' }} />}
+                          <span>
+                            {feedbackCorrect
+                              ? (phase === 'feedback' && graded?.xpAwarded > 0
+                                ? `All correct! +${graded.xpAwarded} XP`
+                                : 'All correct!')
+                              : 'Not all parts correct'}
+                          </span>
+                        </div>
+                        {feedbackCorrect && phase === 'feedback' && kind !== 'exam_prep' && !(graded?.xpAwarded > 0) && (
+                          <div className="sn__fb-answer" style={{ color: '#64748b', fontWeight: 600 }}>
+                            Review only — Secret Note does not award XP. Keep practising Daily Challenge for points.
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Each part's feedback */}
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        {activeQ.subQuestions?.map((sq, idx) => {
+                          const subPrep = activePrep.subQuestions[idx];
+                          const subAnswer = answer?.[subPrep.id] ?? '';
+                          const subCorrect = subPrep.mode === 'mc'
+                            ? gradeMcSelection(sq, subAnswer, answer?.[`${subPrep.id}__idx`], subPrep.options)
+                            : answersMatch(subAnswer, subPrep.correctText);
+
+                          return (
+                            <div key={sq.id ?? idx} style={{ padding: '12px', background: subCorrect ? '#f0fdf4' : '#fef2f2', borderRadius: '12px', border: `1px solid ${subCorrect ? '#bbf7d0' : '#fee2e2'}` }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                {subCorrect ? <CheckCircle2 size={16} style={{ color: '#16a34a' }} /> : <XCircle size={16} style={{ color: '#ef4444' }} />}
+                                <span style={{ fontSize: '0.82rem', fontWeight: 800, color: subCorrect ? '#166534' : '#b91c1c' }}>
+                                  Part {String.fromCharCode(97 + idx)}
+                                </span>
+                              </div>
+                              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', fontSize: '0.85rem' }}>
+                                <div>
+                                  <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b', marginBottom: '4px' }}>Your answer</div>
+                                  <MathView content={subAnswer || '—'} style={{ fontWeight: 600 }} />
+                                </div>
+                                <div>
+                                  <div style={{ fontSize: '0.7rem', fontWeight: 700, color: '#64748b', marginBottom: '4px' }}>Correct</div>
+                                  <MathView content={subPrep.correctText} style={{ fontWeight: 600, color: '#166534' }} />
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <WorkedSolution question={activeQ} />
+                    </div>
+                  );
+                }
+
+                // Single-answer feedback
+                return (
+                  <div className={`sn__fb ${feedbackCorrect ? 'sn__fb--ok' : 'sn__fb--no'}`}>
+                    <div className="sn__fb-head">
+                      {feedbackCorrect
+                        ? <CheckCircle2 size={20} style={{ color: '#16a34a' }} />
+                        : <XCircle size={20} style={{ color: '#ef4444' }} />}
+                      <span>
+                        {feedbackCorrect
+                          ? (phase === 'feedback' && graded?.xpAwarded > 0
+                            ? `Correct! +${graded.xpAwarded} XP`
+                            : 'Correct!')
+                          : 'Not quite'}
+                      </span>
+                    </div>
+                    {feedbackCorrect && phase === 'feedback' && kind !== 'exam_prep' && !(graded?.xpAwarded > 0) && (
+                      <div className="sn__fb-answer" style={{ color: '#64748b', fontWeight: 600 }}>
+                        Review only — Secret Note does not award XP. Keep practising Daily Challenge for points.
+                      </div>
+                    )}
+                    {!feedbackCorrect && activePrep?.mode !== 'mc' && (
+                      <div className="sn__fb-answer">
+                        Correct answer: <MathView content={activePrep.correctText} style={{ display: 'inline', fontWeight: 800 }} />
+                      </div>
+                    )}
+                    <WorkedSolution question={activeQ} />
                   </div>
-                )}
-                {/* MC already highlights the correct option green above —
-                    this text line is only needed for free-text answers, and
-                    would print nothing for diagram-only (graphData) options. */}
-                {!feedbackCorrect && activePrep?.mode !== 'mc' && (
-                  <div className="sn__fb-answer">
-                    Correct answer: <MathView content={activePrep.correctText} style={{ display: 'inline', fontWeight: 800 }} />
-                  </div>
-                )}
-                <WorkedSolution question={activeQ} />
-              </div>
+                );
+              })()}
 
               {/* Mistake tag — only on the original question feedback */}
               {phase === 'feedback' && (

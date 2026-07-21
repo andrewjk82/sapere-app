@@ -17,25 +17,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\((2st)^5\\):\n\\(= 32s^5t^5\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Apply the power-of-a-product law: each factor inside the brackets is raised to the same power.\n\\((ab)^n = a^n b^n\\)\n\n**Step 2:** Write \\((2st)^5\\) as the product of each factor to the power 5.\n\\((2st)^5 = 2^5 \\cdot s^5 \\cdot t^5\\)\n\n**Step 3:** Evaluate the numerical power: \\(2^5 = 32\\).\n\\(2^5 = 32\\)\n\n**Step 4:** Combine the numerical and algebraic parts to obtain the expanded form.\n\\(32s^5t^5\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Apply the power-of-a-product law: each factor inside the brackets is raised to the same power.",
+        "workingOut": "\\((ab)^n = a^n b^n\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Write \\((2st)^5\\) as the product of each factor to the power 5.",
+        "workingOut": "\\((2st)^5 = 2^5 \\cdot s^5 \\cdot t^5\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(32s^5t^5\\)",
+        "explanation": "Evaluate the numerical power: \\(2^5 = 32\\).",
+        "workingOut": "\\(2^5 = 32\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 32s^5t^5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Combine the numerical and algebraic parts to obtain the expanded form.",
         "workingOut": "\\(32s^5t^5\\)",
         "graphData": null
       }
@@ -62,25 +62,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of \\(-1\\) represents taking the reciprocal of the fraction:\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 2: Convert decimal base if applicable**\n\\(0.25 = \\frac{1}{4}\\)\n\n**Step 3: Calculate the reciprocal**\n\\(\\text{Reciprocal of } \\frac{8}{15} \\text{ is } \\frac{15}{8}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A negative index of \\(-1\\) means take the reciprocal of the base.\n\\(a^{-1} = \\frac{1}{a}\\)\n\n**Step 2:** For a fraction, the reciprocal swaps numerator and denominator.\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 3:** Apply the rule to \\(\\frac{8}{15}\\): swap 8 and 15.\n\\(\\left(\\frac{8}{15}\\right)^{-1} = \\frac{15}{8}\\)\n\n**Step 4:** The fraction is already in simplest form, so this is the final answer.\n\\(\\frac{15}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A negative index of \\(-1\\) means take the reciprocal of the base.",
+        "workingOut": "\\(a^{-1} = \\frac{1}{a}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "For a fraction, the reciprocal swaps numerator and denominator.",
+        "workingOut": "\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{15}{8}\\)",
+        "explanation": "Apply the rule to \\(\\frac{8}{15}\\): swap 8 and 15.",
+        "workingOut": "\\(\\left(\\frac{8}{15}\\right)^{-1} = \\frac{15}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{15}{8}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "The fraction is already in simplest form, so this is the final answer.",
         "workingOut": "\\(\\frac{15}{8}\\)",
         "graphData": null
       }
@@ -107,25 +107,30 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of base \\(3\\)**\n- For the left-hand side:\n\\(\\frac{1}{3} = 3^{-1} \\implies \\left(\\frac{1}{3}\\right)^{y+2} = (3^{-1})^{y+2} = 3^{-y-2}\\)\n- For the right-hand side:\n\\(\\frac{1}{81} = \\frac{1}{3^4} = 3^{-4} \\implies \\left(\\frac{1}{81}\\right)^{y-1} = (3^{-4})^{y-1} = 3^{-4(y-1)} = 3^{-4y+4}\\)\n\n**Step 2: Equate the powers**\n\\(3^{-y-2} = 3^{-4y+4}\\)\nSince the bases are identical, their exponents must be equal:\n\\(-y - 2 = -4y + 4\\)\n\n**Step 3: Solve for \\(y\\)**\nAdd \\(4y\\) to both sides:\n\\(-y + 4y - 2 = 4\\)\n\\(3y - 2 = 4\\)\n\\(3y = 4 + 2\\)\n\\(3y = 6\\)\n\\(y = 2\\)\n\nThus, the solution is **\\(y = 2\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite both bases as powers of 3 so the exponents can be compared.\n\\(\\frac{1}{3} = 3^{-1},\\quad \\frac{1}{81} = 3^{-4}\\)\n\n**Step 2:** Raise each side using the power-of-a-power law.\n\\((3^{-1})^{y+2} = 3^{-y-2},\\quad (3^{-4})^{y-1} = 3^{-4y+4}\\)\n\n**Step 3:** Equal bases imply equal exponents. Set the indices equal and collect like terms.\n\\(-y - 2 = -4y + 4\\)\n\n**Step 4:** Add \\(4y\\) to both sides, then add 2, and divide by 3.\n\\(3y = 6 \\implies y = 2\\)\n\n**Step 5:** Check: both sides become \\(3^{-4}\\) when \\(y = 2\\).\n\\(y = 2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite both bases as powers of 3 so the exponents can be compared.",
+        "workingOut": "\\(\\frac{1}{3} = 3^{-1},\\quad \\frac{1}{81} = 3^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Raise each side using the power-of-a-power law.",
+        "workingOut": "\\((3^{-1})^{y+2} = 3^{-y-2},\\quad (3^{-4})^{y-1} = 3^{-4y+4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = 2\\)",
+        "explanation": "Equal bases imply equal exponents. Set the indices equal and collect like terms.",
+        "workingOut": "\\(-y - 2 = -4y + 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y = 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Add \\(4y\\) to both sides, then add 2, and divide by 3.",
+        "workingOut": "\\(3y = 6 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Check: both sides become \\(3^{-4}\\) when \\(y = 2\\).",
         "workingOut": "\\(y = 2\\)",
         "graphData": null
       }
@@ -152,25 +157,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the negative index law**\nFor any non-zero variable \\(c\\):\n\\(c^{-n} = \\frac{1}{c^n}\\)\n\n**Step 2: Apply the law to the expression**\n\\(c^{-3} = \\frac{1}{c^3}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{c^3}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Recall the negative-index law: a negative power is the reciprocal of the positive power.\n\\(c^{-n} = \\frac{1}{c^n}\\)\n\n**Step 2:** Here the exponent is \\(-3\\), so the positive power is 3.\n\\(n = 3\\)\n\n**Step 3:** Rewrite using the reciprocal form.\n\\(c^{-3} = \\frac{1}{c^3}\\)\n\n**Step 4:** The expression has no remaining negative indices or brackets.\n\\(\\frac{1}{c^3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Recall the negative-index law: a negative power is the reciprocal of the positive power.",
+        "workingOut": "\\(c^{-n} = \\frac{1}{c^n}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Here the exponent is \\(-3\\), so the positive power is 3.",
+        "workingOut": "\\(n = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{c^3}\\)",
+        "explanation": "Rewrite using the reciprocal form.",
+        "workingOut": "\\(c^{-3} = \\frac{1}{c^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{c^3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "The expression has no remaining negative indices or brackets.",
         "workingOut": "\\(\\frac{1}{c^3}\\)",
         "graphData": null
       }
@@ -197,25 +202,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Simplify the first term using the power of a power law**\n\\((5^b)^4 = 5^{b \\times 4} = 5^{4b}\\)\n\n**Step 2: Divide terms using the division law**\nSubtract the exponents:\n\\(5^{4b} \\div 5^6 = 5^{4b-6}\\)\n\nThus, the simplified form is **\\(5^{4b-6}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** First simplify the power of a power using \\((a^m)^n = a^{mn}\\).\n\\((5^b)^4 = 5^{4b}\\)\n\n**Step 2:** Rewrite the division as a quotient of powers with the same base.\n\\(5^{4b} \\div 5^6 = \\frac{5^{4b}}{5^6}\\)\n\n**Step 3:** Apply the quotient law: subtract the exponents.\n\\(\\frac{5^{4b}}{5^6} = 5^{4b-6}\\)\n\n**Step 4:** The expression is already a single power of 5.\n\\(5^{4b-6}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "First simplify the power of a power using \\((a^m)^n = a^{mn}\\).",
+        "workingOut": "\\((5^b)^4 = 5^{4b}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the division as a quotient of powers with the same base.",
+        "workingOut": "\\(5^{4b} \\div 5^6 = \\frac{5^{4b}}{5^6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(5^{4b-6}\\)",
+        "explanation": "Apply the quotient law: subtract the exponents.",
+        "workingOut": "\\(\\frac{5^{4b}}{5^6} = 5^{4b-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{4b-6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "The expression is already a single power of 5.",
         "workingOut": "\\(5^{4b-6}\\)",
         "graphData": null
       }
@@ -242,25 +247,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express \\(64\\) as a power of base \\(2\\)**\nObserve that:\n\\(64 = 2^6\\)\nTherefore, the expression is:\n\\(2^6 \\times 2^w\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(2^6 \\times 2^w = 2^{w+6}\\)\n\nThus, the single power representation is **\\(2^{w+6}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express the constant as a power of the same base 2.\n\\(64 = 2^6\\)\n\n**Step 2:** Substitute into the product.\n\\(64 \\times 2^w = 2^6 \\times 2^w\\)\n\n**Step 3:** Apply the product law: add the exponents when bases match.\n\\(2^6 \\times 2^w = 2^{6+w}\\)\n\n**Step 4:** Write the single power in standard order.\n\\(2^{w+6}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express the constant as a power of the same base 2.",
+        "workingOut": "\\(64 = 2^6\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute into the product.",
+        "workingOut": "\\(64 \\times 2^w = 2^6 \\times 2^w\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2^{w+6}\\)",
+        "explanation": "Apply the product law: add the exponents when bases match.",
+        "workingOut": "\\(2^6 \\times 2^w = 2^{6+w}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2^{w+6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Write the single power in standard order.",
         "workingOut": "\\(2^{w+6}\\)",
         "graphData": null
       }
@@ -287,25 +292,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nOnly the variable \\(c\\) is raised to the power of \\(-2\\). The coefficient \\(5\\) is unaffected:\n\\(5c^{-2} = 5 \\times c^{-2}\\)\n\n**Step 2: Apply the negative index law**\n\\(c^{-2} = \\frac{1}{c^2}\\)\nTherefore:\n\\(5c^{-2} = \\frac{5}{c^2}\\)\n\nThus, the simplified expression is **\\(\\frac{5}{c^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Only the factor with a negative index is rewritten as a reciprocal; the coefficient 5 stays in the numerator.\n\\(a \\cdot b^{-n} = \\frac{a}{b^n}\\)\n\n**Step 2:** Identify the negative power on \\(c\\).\n\\(c^{-2} = \\frac{1}{c^2}\\)\n\n**Step 3:** Multiply by the coefficient 5.\n\\(5c^{-2} = 5 \\cdot \\frac{1}{c^2}\\)\n\n**Step 4:** Write as a single fraction.\n\\(\\frac{5}{c^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Only the factor with a negative index is rewritten as a reciprocal; the coefficient 5 stays in the numerator.",
+        "workingOut": "\\(a \\cdot b^{-n} = \\frac{a}{b^n}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Identify the negative power on \\(c\\).",
+        "workingOut": "\\(c^{-2} = \\frac{1}{c^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{5}{c^2}\\)",
+        "explanation": "Multiply by the coefficient 5.",
+        "workingOut": "\\(5c^{-2} = 5 \\cdot \\frac{1}{c^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{5}{c^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Write as a single fraction.",
         "workingOut": "\\(\\frac{5}{c^2}\\)",
         "graphData": null
       }
@@ -332,25 +337,30 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write down the volume formula and variables**\n\\(V = \\frac{4}{3}\\pi r^3\\)\n\\(r = 1.5 \\times 10^{-15}\\text{ m}\\)\n\n**Step 2: Cube the radius value**\n\\(r^3 = (1.5 \\times 10^{-15})^3 = (1.5)^3 \\times (10^{-15})^3\\)\n\\((1.5)^3 = 3.375\\)\n\\((10^{-15})^3 = 10^{-45}\\)\nTherefore:\n\\(r^3 = 3.375 \\times 10^{-45}\\text{ m}^3\\)\n\n**Step 3: Calculate the volume \\(V\\)**\n\\(V = \\frac{4}{3} \\times \\pi \\times 3.375 \\times 10^{-45}\\)\n\\(V = \\left(\\frac{4 \\times 3.375}{3}\\right) \\times \\pi \\times 10^{-45}\\)\n\\(V = \\left(\\frac{13.5}{3}\\right) \\times \\pi \\times 10^{-45}\\)\n\\(V = 4.5\\pi \\times 10^{-45}\\text{ m}^3\\)\n\n**Step 4: Convert to decimal and proper scientific notation**\nUsing \\(\\pi \\approx 3.14159\\):\n\\(V \\approx 4.5 \\times 3.14159265 \\times 10^{-45}\\)\n\\(V \\approx 14.137 \\times 10^{-45}\\)\n\\(V \\approx 1.4137 \\times 10^1 \\times 10^{-45} = 1.41 \\times 10^{-44}\\text{ m}^3\\)\n\nThus, the approximate volume is **\\(1.41 \\times 10^{-44}\\text{ m}^3\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Use the sphere volume formula with the given radius.\n\\(V = \\frac{4}{3}\\pi r^3,\\quad r = 1.5 \\times 10^{-15}\\)\n\n**Step 2:** Cube the radius: cube the coefficient and multiply the powers of 10.\n\\(r^3 = (1.5)^3 \\times (10^{-15})^3 = 3.375 \\times 10^{-45}\\)\n\n**Step 3:** Multiply by \\(\\frac{4}{3}\\pi\\). Use \\(\\pi \\approx 3.14\\).\n\\(V = \\frac{4}{3}\\pi \\times 3.375 \\times 10^{-45}\\)\n\n**Step 4:** Compute \\(\\frac{4}{3} \\times 3.14 \\times 3.375 \\approx 14.13\\), then adjust scientific notation.\n\\(V \\approx 1.413 \\times 10^{-44}\\)\n\n**Step 5:** Round to 2 decimal places in scientific notation as required.\n\\(1.41 \\times 10^{-44}\\text{ m}^3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the sphere volume formula with the given radius.",
+        "workingOut": "\\(V = \\frac{4}{3}\\pi r^3,\\quad r = 1.5 \\times 10^{-15}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Cube the radius: cube the coefficient and multiply the powers of 10.",
+        "workingOut": "\\(r^3 = (1.5)^3 \\times (10^{-15})^3 = 3.375 \\times 10^{-45}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1.41 \\times 10^{-44}\\text{ m}^3\\)",
+        "explanation": "Multiply by \\(\\frac{4}{3}\\pi\\). Use \\(\\pi \\approx 3.14\\).",
+        "workingOut": "\\(V = \\frac{4}{3}\\pi \\times 3.375 \\times 10^{-45}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1.41 \\times 10^{-44}\\text{ m}^3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Compute \\(\\frac{4}{3} \\times 3.14 \\times 3.375 \\approx 14.13\\), then adjust scientific notation.",
+        "workingOut": "\\(V \\approx 1.413 \\times 10^{-44}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Round to 2 decimal places in scientific notation as required.",
         "workingOut": "\\(1.41 \\times 10^{-44}\\text{ m}^3\\)",
         "graphData": null
       }
@@ -377,25 +387,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the power of a power index law**\nWhen raising an index term to another power, multiply their exponents:\n\\((a^m)^n = a^{m \\times n}\\)\n\n**Step 2: Apply the law to the expression**\n\\((7^{3y})^4 = 7^{3y \\times 4} = 7^{12y}\\)\n\nThus, the simplified form is **\\(7^{12y}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Use the power-of-a-power law: multiply the exponents.\n\\((a^m)^n = a^{mn}\\)\n\n**Step 2:** Identify the inner exponent \\(3y\\) and outer exponent 4.\n\\(m = 3y,\\; n = 4\\)\n\n**Step 3:** Multiply the exponents.\n\\((7^{3y})^4 = 7^{3y \\cdot 4} = 7^{12y}\\)\n\n**Step 4:** The simplified form is a single power of 7.\n\\(7^{12y}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use the power-of-a-power law: multiply the exponents.",
+        "workingOut": "\\((a^m)^n = a^{mn}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Identify the inner exponent \\(3y\\) and outer exponent 4.",
+        "workingOut": "\\(m = 3y,\\; n = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(7^{12y}\\)",
+        "explanation": "Multiply the exponents.",
+        "workingOut": "\\((7^{3y})^4 = 7^{3y \\cdot 4} = 7^{12y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 7^{12y}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "The simplified form is a single power of 7.",
         "workingOut": "\\(7^{12y}\\)",
         "graphData": null
       }
@@ -422,25 +432,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the coefficient**\n\\(-\\frac{11}{v} = -11 \\times \\frac{1}{v}\\)\n\n**Step 2: Convert using the negative index law**\n\\(\\frac{1}{v} = v^{-1}\\)\nTherefore:\n\\(-\\frac{11}{v} = -11v^{-1}\\)\n\nThus, the expression in index form is **\\(-11v^{-1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A reciprocal of a variable can be written with a negative index.\n\\(\\frac{1}{v} = v^{-1}\\)\n\n**Step 2:** Rewrite the fraction using this law, keeping the coefficient \\(-11\\).\n\\(-\\frac{11}{v} = -11 \\cdot \\frac{1}{v}\\)\n\n**Step 3:** Replace the reciprocal with a negative index.\n\\(-11 \\cdot v^{-1} = -11v^{-1}\\)\n\n**Step 4:** This is the required index form.\n\\(-11v^{-1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A reciprocal of a variable can be written with a negative index.",
+        "workingOut": "\\(\\frac{1}{v} = v^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the fraction using this law, keeping the coefficient \\(-11\\).",
+        "workingOut": "\\(-\\frac{11}{v} = -11 \\cdot \\frac{1}{v}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-11v^{-1}\\)",
+        "explanation": "Replace the reciprocal with a negative index.",
+        "workingOut": "\\(-11 \\cdot v^{-1} = -11v^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -11v^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "This is the required index form.",
         "workingOut": "\\(-11v^{-1}\\)",
         "graphData": null
       }
@@ -467,25 +477,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative index law**\n\\(x^{-2} = \\frac{1}{x^2}\\)\nTherefore:\n\\(\\frac{1}{x^2} = \\frac{25}{36}\\)\n\n**Step 2: Take the reciprocal of both sides**\n\\(x^2 = \\frac{36}{25}\\)\n\n**Step 3: Solve for \\(x\\) by taking the square root**\n\\(x = \\pm \\sqrt{\\frac{36}{25}} = \\pm \\frac{6}{5}\\)\n\n**Step 4: Select the positive solution**\n\\(x = \\frac{6}{5}\\)\n\nThus, the positive solution is **\\(x = \\frac{6}{5}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite the negative index as a reciprocal of a square.\n\\(x^{-2} = \\frac{1}{x^2}\\)\n\n**Step 2:** Set the reciprocal equal to the given fraction and invert both sides.\n\\(\\frac{1}{x^2} = \\frac{25}{36} \\implies x^2 = \\frac{36}{25}\\)\n\n**Step 3:** Take square roots of both sides.\n\\(x = \\pm\\frac{6}{5}\\)\n\n**Step 4:** The question asks for the positive solution only.\n\\(x = \\frac{6}{5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite the negative index as a reciprocal of a square.",
+        "workingOut": "\\(x^{-2} = \\frac{1}{x^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Set the reciprocal equal to the given fraction and invert both sides.",
+        "workingOut": "\\(\\frac{1}{x^2} = \\frac{25}{36} \\implies x^2 = \\frac{36}{25}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x = \\frac{6}{5}\\)",
+        "explanation": "Take square roots of both sides.",
+        "workingOut": "\\(x = \\pm\\frac{6}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = \\frac{6}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "The question asks for the positive solution only.",
         "workingOut": "\\(x = \\frac{6}{5}\\)",
         "graphData": null
       }
@@ -512,25 +522,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n\\(a^m \\div a^n = a^{m - n}\\)\n\n**Step 2: Subtract indices**\nFor \\(5^9 \\div 5^4\\):\n\\(5^{9 - 4} = 5^5\\)\n\n**Step 3: State final form**\n\\(5^5\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Same bases under division: subtract the exponents.\n\\(\\frac{a^m}{a^n} = a^{m-n}\\)\n\n**Step 2:** Identify the exponents 9 and 4.\n\\(5^9 \\div 5^4 = 5^{9-4}\\)\n\n**Step 3:** Subtract the exponents.\n\\(5^{9-4} = 5^5\\)\n\n**Step 4:** Leave the answer in index form as required.\n\\(5^5\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Same bases under division: subtract the exponents.",
+        "workingOut": "\\(\\frac{a^m}{a^n} = a^{m-n}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Identify the exponents 9 and 4.",
+        "workingOut": "\\(5^9 \\div 5^4 = 5^{9-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(5^5\\)",
+        "explanation": "Subtract the exponents.",
+        "workingOut": "\\(5^{9-4} = 5^5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave the answer in index form as required.",
         "workingOut": "\\(5^5\\)",
         "graphData": null
       }
@@ -557,26 +567,26 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of the same base**\nObserve that the left-hand base is \\(3\\). We can express \\(243\\) as a power of \\(3\\):\n\\(243 = 3^5 \\implies \\frac{1}{243} = 3^{-5}\\)\n\n**Step 2: Equate the powers**\n\\(3^{3u+1} = 3^{-5}\\)\nSince the bases are identical, their exponents must be equal:\n\\(3u + 1 = -5\\)\n\n**Step 3: Solve for \\(u\\)**\n\\(3u = -5 - 1\\)\n\\(3u = -6\\)\n\\(u = \\frac{-6}{3} = -2\\)\n\nThus, the solution is **\\(u = -2\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express the right-hand side as a power of 3.\n\\(243 = 3^5 \\implies \\frac{1}{243} = 3^{-5}\\)\n\n**Step 2:** Rewrite the equation with equal bases.\n\\(3^{3u+1} = 3^{-5}\\)\n\n**Step 3:** Equate the exponents.\n\\(3u + 1 = -5\\)\n\n**Step 4:** Subtract 1 and divide by 3.\n\\(3u = -6 \\implies u = -2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express the right-hand side as a power of 3.",
+        "workingOut": "\\(243 = 3^5 \\implies \\frac{1}{243} = 3^{-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation with equal bases.",
+        "workingOut": "\\(3^{3u+1} = 3^{-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(u = -2\\)",
+        "explanation": "Equate the exponents.",
+        "workingOut": "\\(3u + 1 = -5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: u = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(u = -2\\)",
+        "explanation": "Subtract 1 and divide by 3.",
+        "workingOut": "\\(3u = -6 \\implies u = -2\\)",
         "graphData": null
       }
     ],
@@ -602,26 +612,26 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of base \\(4\\)**\n- For the left-hand side: \\(\\frac{1}{4} = 4^{-1} \\implies \\left(\\frac{1}{4}\\right)^{v+2} = (4^{-1})^{v+2} = 4^{-(v+2)} = 4^{-v-2}\\)\n- For the right-hand side: \\(64 = 4^3\\)\n\n**Step 2: Equate the powers**\n\\(4^{-v-2} = 4^3\\)\nSince the bases are identical, their exponents must be equal:\n\\(-v - 2 = 3\\)\n\n**Step 3: Solve for \\(v\\)**\n\\(-v = 3 + 2\\)\n\\(-v = 5\\)\n\\(v = -5\\)\n\nThus, the solution is **\\(v = -5\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write every number as a power of 2 (or of 4).\n\\(\\frac{1}{4} = 4^{-1} = 2^{-2},\\quad 64 = 2^6 = 4^3\\)\n\n**Step 2:** Using base 4: left side becomes \\(4^{-(v+2)}\\) and right side is \\(4^3\\).\n\\(4^{-(v+2)} = 4^3\\)\n\n**Step 3:** Equate exponents.\n\\(-(v+2) = 3 \\implies -v - 2 = 3\\)\n\n**Step 4:** Solve for \\(v\\): add 2, then multiply by \\(-1\\).\n\\(-v = 5 \\implies v = -5\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write every number as a power of 2 (or of 4).",
+        "workingOut": "\\(\\frac{1}{4} = 4^{-1} = 2^{-2},\\quad 64 = 2^6 = 4^3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Using base 4: left side becomes \\(4^{-(v+2)}\\) and right side is \\(4^3\\).",
+        "workingOut": "\\(4^{-(v+2)} = 4^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(v = -5\\)",
+        "explanation": "Equate exponents.",
+        "workingOut": "\\(-(v+2) = 3 \\implies -v - 2 = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: v = -5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(v = -5\\)",
+        "explanation": "Solve for \\(v\\): add 2, then multiply by \\(-1\\).",
+        "workingOut": "\\(-v = 5 \\implies v = -5\\)",
         "graphData": null
       }
     ],
@@ -647,26 +657,26 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Simplify the numeric coefficient fraction**\n\\(\\frac{27}{18} = \\frac{3}{2}\\)\n\n**Step 2: Divide variable bases by subtracting exponents**\n- For base \\(x\\): \\(x^{-3} \\div x^2 = x^{-3-2} = x^{-5}\\)\n- For base \\(y\\): \\(y^5 \\div y^{-4} = y^{5 - (-4)} = y^{5+4} = y^9\\)\n\n**Step 3: Combine and rewrite without negative indices**\n\\(\\frac{3}{2} \\times x^{-5} \\times y^9 = \\frac{3y^9}{2x^5}\\)\n\nThus, the simplified expression is **\\(\\frac{3y^9}{2x^5}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Separate coefficients and like variables, then apply quotient laws.\n\\(\\frac{27x^{-3}y^5}{18x^2y^{-4}}\\)\n\n**Step 2:** Simplify the coefficient fraction.\n\\(\\frac{27}{18} = \\frac{3}{2}\\)\n\n**Step 3:** For \\(x\\): subtract exponents. For \\(y\\): subtract exponents (including negatives).\n\\(x^{-3-2} = x^{-5},\\quad y^{5-(-4)} = y^9\\)\n\n**Step 4:** Rewrite negative powers as fractions so no negative indices remain.\n\\(\\frac{3}{2} \\cdot \\frac{1}{x^5} \\cdot y^9 = \\frac{3y^9}{2x^5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Separate coefficients and like variables, then apply quotient laws.",
+        "workingOut": "\\(\\frac{27x^{-3}y^5}{18x^2y^{-4}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the coefficient fraction.",
+        "workingOut": "\\(\\frac{27}{18} = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{3y^9}{2x^5}\\)",
+        "explanation": "For \\(x\\): subtract exponents. For \\(y\\): subtract exponents (including negatives).",
+        "workingOut": "\\(x^{-3-2} = x^{-5},\\quad y^{5-(-4)} = y^9\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{3y^9}{2x^5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\frac{3y^9}{2x^5}\\)",
+        "explanation": "Rewrite negative powers as fractions so no negative indices remain.",
+        "workingOut": "\\(\\frac{3}{2} \\cdot \\frac{1}{x^5} \\cdot y^9 = \\frac{3y^9}{2x^5}\\)",
         "graphData": null
       }
     ],
@@ -692,25 +702,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the volume of the rock in \\(\\text{mm}^3\\)**\nFrom our conversion, \\(1\\text{ km}^3 = 10^{18}\\text{ mm}^3\\). Therefore:\n\\(\\text{Volume of the rock} = 3\\text{ km}^3 = 3 \\times 10^{18}\\text{ mm}^3\\)\n\n**Step 2: Calculate the number of grains**\nDivide the total volume of the rock by the volume of a single grain (\\(2\\text{ mm}^3\\)):\n\\(\\text{Number of grains} = \\frac{3 \\times 10^{18}\\text{ mm}^3}{2\\text{ mm}^3}\\)\n\\(\\text{Number of grains} = 1.5 \\times 10^{18}\\)\n\nThus, the approximate number of sandstone grains is **\\(1.5 \\times 10^{18}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the rock volume from cubic kilometres to cubic millimetres.\n\\(1\\text{ km}^3 = 10^{18}\\text{ mm}^3\\)\n\n**Step 2:** Scale by the given volume of 3 km³.\n\\(3\\text{ km}^3 = 3 \\times 10^{18}\\text{ mm}^3\\)\n\n**Step 3:** Each grain has volume \\(2\\text{ mm}^3\\). Divide total volume by grain volume.\n\\(\\frac{3 \\times 10^{18}}{2} = 1.5 \\times 10^{18}\\)\n\n**Step 4:** Express the approximate number of grains in scientific notation.\n\\(1.5 \\times 10^{18}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the rock volume from cubic kilometres to cubic millimetres.",
+        "workingOut": "\\(1\\text{ km}^3 = 10^{18}\\text{ mm}^3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Scale by the given volume of 3 km³.",
+        "workingOut": "\\(3\\text{ km}^3 = 3 \\times 10^{18}\\text{ mm}^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1.5 \\times 10^{18}\\)",
+        "explanation": "Each grain has volume \\(2\\text{ mm}^3\\). Divide total volume by grain volume.",
+        "workingOut": "\\(\\frac{3 \\times 10^{18}}{2} = 1.5 \\times 10^{18}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1.5 \\times 10^{18}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Express the approximate number of grains in scientific notation.",
         "workingOut": "\\(1.5 \\times 10^{18}\\)",
         "graphData": null
       }
@@ -737,25 +747,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(1\\frac{2}{5} = \\frac{1 \\times 5 + 2}{5} = \\frac{7}{5}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(\\left(1\\frac{2}{5}\\right)^{-1} = \\left(\\frac{7}{5}\\right)^{-1} = \\frac{5}{7}\\)\n\nThus, the simplified value is **\\(\\frac{5}{7}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the mixed numeral to an improper fraction first.\n\\(1\\frac{2}{5} = \\frac{5}{5} + \\frac{2}{5} = \\frac{7}{5}\\)\n\n**Step 2:** A power of \\(-1\\) means take the reciprocal.\n\\(\\left(\\frac{7}{5}\\right)^{-1} = \\frac{5}{7}\\)\n\n**Step 3:** No further simplification is needed.\n\\(\\frac{5}{7}\\)\n\n**Step 4:** Final simplified value.\n\\(\\frac{5}{7}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the mixed numeral to an improper fraction first.",
+        "workingOut": "\\(1\\frac{2}{5} = \\frac{5}{5} + \\frac{2}{5} = \\frac{7}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "A power of \\(-1\\) means take the reciprocal.",
+        "workingOut": "\\(\\left(\\frac{7}{5}\\right)^{-1} = \\frac{5}{7}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No further simplification is needed.",
         "workingOut": "\\(\\frac{5}{7}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{5}{7}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final simplified value.",
         "workingOut": "\\(\\frac{5}{7}\\)",
         "graphData": null
       }
@@ -782,25 +792,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the coefficient**\n\\(\\frac{10}{w^6} = 10 \\times \\frac{1}{w^6}\\)\n\n**Step 2: Convert using the negative index law**\n\\(\\frac{1}{w^6} = w^{-6}\\)\nTherefore:\n\\(\\frac{10}{w^6} = 10w^{-6}\\)\n\nThus, the expression in index form is **\\(10w^{-6}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the denominator power using a negative index.\n\\(\\frac{1}{w^6} = w^{-6}\\)\n\n**Step 2:** Keep the coefficient 10 in front.\n\\(\\frac{10}{w^6} = 10 \\cdot w^{-6}\\)\n\n**Step 3:** Write in compact index form.\n\\(10w^{-6}\\)\n\n**Step 4:** This matches the required form.\n\\(10w^{-6}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the denominator power using a negative index.",
+        "workingOut": "\\(\\frac{1}{w^6} = w^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Keep the coefficient 10 in front.",
+        "workingOut": "\\(\\frac{10}{w^6} = 10 \\cdot w^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Write in compact index form.",
         "workingOut": "\\(10w^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 10w^{-6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "This matches the required form.",
         "workingOut": "\\(10w^{-6}\\)",
         "graphData": null
       }
@@ -827,25 +837,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n\\(a^m \\times a^n = a^{m + n}\\)\n\n**Step 2: Add indices**\nFor \\(5^3 \\times 5^{-8}\\):\n\\(5^{3 + (-8)} = 5^{-5}\\)\n\n**Step 3: State final form**\n\\(5^{-5}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Product of powers with the same base: add the exponents.\n\\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2:** Add 3 and \\(-8\\).\n\\(5^3 \\times 5^{-8} = 5^{3+(-8)}\\)\n\n**Step 3:** Simplify the exponent.\n\\(5^{-5}\\)\n\n**Step 4:** Leave in index form as required.\n\\(5^{-5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Product of powers with the same base: add the exponents.",
+        "workingOut": "\\(a^m \\times a^n = a^{m+n}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Add 3 and \\(-8\\).",
+        "workingOut": "\\(5^3 \\times 5^{-8} = 5^{3+(-8)}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplify the exponent.",
         "workingOut": "\\(5^{-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{-5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form as required.",
         "workingOut": "\\(5^{-5}\\)",
         "graphData": null
       }
@@ -872,25 +882,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(3^x = 243\\):\n\\(3^5 = 243\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = 5\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express 243 as a power of 3 by repeated multiplication.\n\\(3^1=3,\\; 3^2=9,\\; 3^3=27,\\; 3^4=81,\\; 3^5=243\\)\n\n**Step 2:** Rewrite the equation with equal bases.\n\\(3^x = 3^5\\)\n\n**Step 3:** Equal bases imply equal exponents.\n\\(x = 5\\)\n\n**Step 4:** Verify: \\(3^5 = 243\\).\n\\(x = 5\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express 243 as a power of 3 by repeated multiplication.",
+        "workingOut": "\\(3^1=3,\\; 3^2=9,\\; 3^3=27,\\; 3^4=81,\\; 3^5=243\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation with equal bases.",
+        "workingOut": "\\(3^x = 3^5\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equal bases imply equal exponents.",
         "workingOut": "\\(x = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = 5. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify: \\(3^5 = 243\\).",
         "workingOut": "\\(x = 5\\)",
         "graphData": null
       }
@@ -917,25 +927,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\(\\left(\\frac{4x}{3y}\\right)^3\\):\n\\(= \\frac{64x^3}{27y^3}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A quotient raised to a power applies the power to numerator and denominator.\n\\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2:** Raise each factor to the power 3.\n\\(\\left(\\frac{4x}{3y}\\right)^3 = \\frac{(4x)^3}{(3y)^3}\\)\n\n**Step 3:** Expand using the product law inside each part.\n\\(\\frac{4^3 x^3}{3^3 y^3} = \\frac{64x^3}{27y^3}\\)\n\n**Step 4:** Fully expanded form.\n\\(\\frac{64x^3}{27y^3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A quotient raised to a power applies the power to numerator and denominator.",
+        "workingOut": "\\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Raise each factor to the power 3.",
+        "workingOut": "\\(\\left(\\frac{4x}{3y}\\right)^3 = \\frac{(4x)^3}{(3y)^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{64x^3}{27y^3}\\)",
+        "explanation": "Expand using the product law inside each part.",
+        "workingOut": "\\(\\frac{4^3 x^3}{3^3 y^3} = \\frac{64x^3}{27y^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{64x^3}{27y^3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Fully expanded form.",
         "workingOut": "\\(\\frac{64x^3}{27y^3}\\)",
         "graphData": null
       }
@@ -962,25 +972,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(0.04 = \\frac{4}{100} = \\frac{1}{25}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(0.04^{-2} = \\left(\\frac{1}{25}\\right)^{-2} = (25)^2 = 625\\)\n\nThus, the simplified value is **\\(625\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the decimal to a fraction.\n\\(0.04 = \\frac{4}{100} = \\frac{1}{25}\\)\n\n**Step 2:** Apply the negative index: reciprocal then raise to power 2.\n\\(0.04^{-2} = \\left(\\frac{1}{25}\\right)^{-2} = 25^2\\)\n\n**Step 3:** Evaluate the square.\n\\(25^2 = 625\\)\n\n**Step 4:** Final simplified value.\n\\(625\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the decimal to a fraction.",
+        "workingOut": "\\(0.04 = \\frac{4}{100} = \\frac{1}{25}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Apply the negative index: reciprocal then raise to power 2.",
+        "workingOut": "\\(0.04^{-2} = \\left(\\frac{1}{25}\\right)^{-2} = 25^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(625\\)",
+        "explanation": "Evaluate the square.",
+        "workingOut": "\\(25^2 = 625\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 625. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final simplified value.",
         "workingOut": "\\(625\\)",
         "graphData": null
       }
@@ -1007,25 +1017,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of \\(-1\\) represents taking the reciprocal of the fraction:\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 2: Convert decimal base if applicable**\n\\(0.25 = \\frac{1}{4}\\)\n\n**Step 3: Calculate the reciprocal**\n\\(\\text{Reciprocal of } \\frac{3}{5} \\text{ is } \\frac{5}{3}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A power of \\(-1\\) takes the reciprocal of the fraction.\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 2:** Swap numerator and denominator.\n\\(\\left(\\frac{3}{5}\\right)^{-1} = \\frac{5}{3}\\)\n\n**Step 3:** The fraction is already simplified.\n\\(\\frac{5}{3}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{5}{3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A power of \\(-1\\) takes the reciprocal of the fraction.",
+        "workingOut": "\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Swap numerator and denominator.",
+        "workingOut": "\\(\\left(\\frac{3}{5}\\right)^{-1} = \\frac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "The fraction is already simplified.",
         "workingOut": "\\(\\frac{5}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{5}{3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{5}{3}\\)",
         "graphData": null
       }
@@ -1052,25 +1062,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\n**Step 2: Evaluate the positive power**\nFor \\(\\left(\\frac{3}{4}\\right)^{-2}\\):\n\\(= \\text{Reciprocal squared/cubed} = \\frac{16}{9}\\)\n\n**Step 3: State final value**\n\\(\\frac{16}{9}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index: take reciprocal and raise to the positive power.\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\n**Step 2:** Reciprocal of \\(\\frac{3}{4}\\) is \\(\\frac{4}{3}\\).\n\\(\\left(\\frac{3}{4}\\right)^{-2} = \\left(\\frac{4}{3}\\right)^2\\)\n\n**Step 3:** Square numerator and denominator.\n\\(\\frac{4^2}{3^2} = \\frac{16}{9}\\)\n\n**Step 4:** Final simplified fraction.\n\\(\\frac{16}{9}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index: take reciprocal and raise to the positive power.",
+        "workingOut": "\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Reciprocal of \\(\\frac{3}{4}\\) is \\(\\frac{4}{3}\\).",
+        "workingOut": "\\(\\left(\\frac{3}{4}\\right)^{-2} = \\left(\\frac{4}{3}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{16}{9}\\)",
+        "explanation": "Square numerator and denominator.",
+        "workingOut": "\\(\\frac{4^2}{3^2} = \\frac{16}{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{16}{9}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final simplified fraction.",
         "workingOut": "\\(\\frac{16}{9}\\)",
         "graphData": null
       }
@@ -1097,25 +1107,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n\\(5^3 = 5 \\times 5 \\times 5\\)\n\n**Step 2: State the final value**\n\\(125\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the power as repeated multiplication.\n\\(5^3 = 5 \\times 5 \\times 5\\)\n\n**Step 2:** Multiply the first two factors.\n\\(5 \\times 5 = 25\\)\n\n**Step 3:** Multiply by the remaining 5.\n\\(25 \\times 5 = 125\\)\n\n**Step 4:** Final value.\n\\(125\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the power as repeated multiplication.",
+        "workingOut": "\\(5^3 = 5 \\times 5 \\times 5\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply the first two factors.",
+        "workingOut": "\\(5 \\times 5 = 25\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(125\\)",
+        "explanation": "Multiply by the remaining 5.",
+        "workingOut": "\\(25 \\times 5 = 125\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 125. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(125\\)",
         "graphData": null
       }
@@ -1142,25 +1152,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of the same base**\nThe left-hand base is \\(5\\). Rewrite the right-hand side using the negative index law:\n\\(\\frac{1}{5} = 5^{-1}\\)\n\n**Step 2: Equate the powers**\n\\(5^{6-w} = 5^{-1}\\)\nSince the bases are identical, their exponents must be equal:\n\\(6 - w = -1\\)\n\n**Step 3: Solve for \\(w\\)**\n\\(-w = -1 - 6\\)\n\\(-w = -7\\)\n\\(w = 7\\)\n\nThus, the solution is **\\(w = 7\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the right-hand side as a power of 5.\n\\(\\frac{1}{5} = 5^{-1}\\)\n\n**Step 2:** Equal bases: equate the exponents.\n\\(5^{6-w} = 5^{-1} \\implies 6 - w = -1\\)\n\n**Step 3:** Solve for \\(w\\): subtract 6, then multiply by \\(-1\\).\n\\(-w = -7 \\implies w = 7\\)\n\n**Step 4:** Check: when \\(w = 7\\), left side is \\(5^{-1}\\).\n\\(w = 7\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the right-hand side as a power of 5.",
+        "workingOut": "\\(\\frac{1}{5} = 5^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Equal bases: equate the exponents.",
+        "workingOut": "\\(5^{6-w} = 5^{-1} \\implies 6 - w = -1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(w = 7\\)",
+        "explanation": "Solve for \\(w\\): subtract 6, then multiply by \\(-1\\).",
+        "workingOut": "\\(-w = -7 \\implies w = 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: w = 7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Check: when \\(w = 7\\), left side is \\(5^{-1}\\).",
         "workingOut": "\\(w = 7\\)",
         "graphData": null
       }
@@ -1187,25 +1197,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: \\((a^m)^n = a^{m \\times n}\\)\n- Product: \\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2: Evaluate**\nFor \\((c^{-3})^4\\):\n\\(c^{-3 \\times 4} = c^{-12}\\)\n\n**Step 3: State final form**\n\\(c^{-12}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power of a power: multiply the exponents.\n\\((a^m)^n = a^{mn}\\)\n\n**Step 2:** Multiply \\(-3\\) by 4.\n\\((c^{-3})^4 = c^{-3 \\times 4}\\)\n\n**Step 3:** Simplify the exponent.\n\\(c^{-12}\\)\n\n**Step 4:** Leave in index form.\n\\(c^{-12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power of a power: multiply the exponents.",
+        "workingOut": "\\((a^m)^n = a^{mn}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply \\(-3\\) by 4.",
+        "workingOut": "\\((c^{-3})^4 = c^{-3 \\times 4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplify the exponent.",
         "workingOut": "\\(c^{-12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: c^{-12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
         "workingOut": "\\(c^{-12}\\)",
         "graphData": null
       }
@@ -1232,25 +1242,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nBecause the base is inside brackets, the entire term \\(5y\\) is raised to the power of \\(-1\\):\n\\((5y)^{-1} = \\frac{1}{(5y)^1}\\)\n\n**Step 2: Simplify the denominator**\n\\(\\frac{1}{(5y)^1} = \\frac{1}{5y}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{5y}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A power of \\(-1\\) on a product is the reciprocal of the whole product.\n\\((ab)^{-1} = \\frac{1}{ab}\\)\n\n**Step 2:** Apply to \\(5y\\).\n\\((5y)^{-1} = \\frac{1}{5y}\\)\n\n**Step 3:** No further simplification needed.\n\\(\\frac{1}{5y}\\)\n\n**Step 4:** Final form without negative indices.\n\\(\\frac{1}{5y}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A power of \\(-1\\) on a product is the reciprocal of the whole product.",
+        "workingOut": "\\((ab)^{-1} = \\frac{1}{ab}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Apply to \\(5y\\).",
+        "workingOut": "\\((5y)^{-1} = \\frac{1}{5y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No further simplification needed.",
         "workingOut": "\\(\\frac{1}{5y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{5y}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final form without negative indices.",
         "workingOut": "\\(\\frac{1}{5y}\\)",
         "graphData": null
       }
@@ -1277,25 +1287,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express \\(9\\) as a power of base \\(3\\)**\n\\(9 = 3^2\\)\nTherefore, the expression is:\n\\(3^2 \\times 3^y\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(3^2 \\times 3^y = 3^{y+2}\\)\n\nThus, the single power representation is **\\(3^{y+2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 9 as a power of 3.\n\\(9 = 3^2\\)\n\n**Step 2:** Substitute into the product.\n\\(9 \\times 3^y = 3^2 \\times 3^y\\)\n\n**Step 3:** Add the exponents.\n\\(3^{2+y} = 3^{y+2}\\)\n\n**Step 4:** Single power of 3.\n\\(3^{y+2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 9 as a power of 3.",
+        "workingOut": "\\(9 = 3^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute into the product.",
+        "workingOut": "\\(9 \\times 3^y = 3^2 \\times 3^y\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3^{y+2}\\)",
+        "explanation": "Add the exponents.",
+        "workingOut": "\\(3^{2+y} = 3^{y+2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3^{y+2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power of 3.",
         "workingOut": "\\(3^{y+2}\\)",
         "graphData": null
       }
@@ -1322,25 +1332,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\((4x)^2\\):\n\\(= 16x^2\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power of a product: raise each factor to the power.\n\\((ab)^n = a^n b^n\\)\n\n**Step 2:** Apply to 4 and \\(x\\).\n\\((4x)^2 = 4^2 \\cdot x^2\\)\n\n**Step 3:** Evaluate \\(4^2\\).\n\\(16x^2\\)\n\n**Step 4:** Expanded form.\n\\(16x^2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power of a product: raise each factor to the power.",
+        "workingOut": "\\((ab)^n = a^n b^n\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Apply to 4 and \\(x\\).",
+        "workingOut": "\\((4x)^2 = 4^2 \\cdot x^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Evaluate \\(4^2\\).",
         "workingOut": "\\(16x^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 16x^2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Expanded form.",
         "workingOut": "\\(16x^2\\)",
         "graphData": null
       }
@@ -1367,25 +1377,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n\\(\\left(\\frac{2}{5}\\right)^4 = \\frac{2^4}{5^4} = \\frac{16}{625}\\)\n\n**Step 2: State the final value**\n\\(\\frac{16}{625}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise numerator and denominator each to the power 4.\n\\(\\left(\\frac{2}{5}\\right)^4 = \\frac{2^4}{5^4}\\)\n\n**Step 2:** Compute \\(2^4\\).\n\\(2^4 = 16\\)\n\n**Step 3:** Compute \\(5^4 = 625\\).\n\\(5^4 = 625\\)\n\n**Step 4:** Write the simplified fraction.\n\\(\\frac{16}{625}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise numerator and denominator each to the power 4.",
+        "workingOut": "\\(\\left(\\frac{2}{5}\\right)^4 = \\frac{2^4}{5^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Compute \\(2^4\\).",
+        "workingOut": "\\(2^4 = 16\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{16}{625}\\)",
+        "explanation": "Compute \\(5^4 = 625\\).",
+        "workingOut": "\\(5^4 = 625\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{16}{625}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Write the simplified fraction.",
         "workingOut": "\\(\\frac{16}{625}\\)",
         "graphData": null
       }
@@ -1412,25 +1422,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the fraction factor**\n\\(-\\frac{1}{8y} = -\\frac{1}{8} \\times \\frac{1}{y}\\)\n\n**Step 2: Apply the negative index law to \\(\\frac{1}{y}\\)**\n\\(\\frac{1}{y} = y^{-1}\\)\nTherefore:\n\\(-\\frac{1}{8y} = -\\frac{1}{8}y^{-1}\\)\n\nThus, the expression in index form is **\\(-\\frac{1}{8}y^{-1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the reciprocal of \\(y\\) with a negative index; leave the constant as a coefficient.\n\\(\\frac{1}{y} = y^{-1}\\)\n\n**Step 2:** Factor the constant coefficient carefully.\n\\(-\\frac{1}{8y} = -\\frac{1}{8} \\cdot \\frac{1}{y}\\)\n\n**Step 3:** Replace \\(\\frac{1}{y}\\) with \\(y^{-1}\\).\n\\(-\\frac{1}{8}y^{-1}\\)\n\n**Step 4:** Index form as required.\n\\(-\\frac{1}{8}y^{-1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the reciprocal of \\(y\\) with a negative index; leave the constant as a coefficient.",
+        "workingOut": "\\(\\frac{1}{y} = y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Factor the constant coefficient carefully.",
+        "workingOut": "\\(-\\frac{1}{8y} = -\\frac{1}{8} \\cdot \\frac{1}{y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Replace \\(\\frac{1}{y}\\) with \\(y^{-1}\\).",
         "workingOut": "\\(-\\frac{1}{8}y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -\\frac{1}{8}y^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Index form as required.",
         "workingOut": "\\(-\\frac{1}{8}y^{-1}\\)",
         "graphData": null
       }
@@ -1457,25 +1467,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(0.125 = \\frac{125}{1000} = \\frac{1}{8}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(0.125^{-1} = \\left(\\frac{1}{8}\\right)^{-1} = 8\\)\n\nThus, the simplified value is **\\(8\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the decimal to a fraction.\n\\(0.125 = \\frac{125}{1000} = \\frac{1}{8}\\)\n\n**Step 2:** A power of \\(-1\\) takes the reciprocal.\n\\(0.125^{-1} = \\left(\\frac{1}{8}\\right)^{-1} = 8\\)\n\n**Step 3:** Alternatively: \\(0.125 = \\frac{1}{8}\\) so reciprocal is 8.\n\\(8\\)\n\n**Step 4:** Final value.\n\\(8\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the decimal to a fraction.",
+        "workingOut": "\\(0.125 = \\frac{125}{1000} = \\frac{1}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "A power of \\(-1\\) takes the reciprocal.",
+        "workingOut": "\\(0.125^{-1} = \\left(\\frac{1}{8}\\right)^{-1} = 8\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Alternatively: \\(0.125 = \\frac{1}{8}\\) so reciprocal is 8.",
         "workingOut": "\\(8\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(8\\)",
         "graphData": null
       }
@@ -1502,25 +1512,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the right-hand side using the base \\(\\frac{4}{3}\\)**\nObserve that:\n\\(\\frac{27}{64} = \\frac{3^3}{4^3} = \\left(\\frac{3}{4}\\right)^3\\)\nSince \\(\\frac{3}{4}\\) is the reciprocal of \\(\\frac{4}{3}\\):\n\\(\\left(\\frac{3}{4}\\right)^3 = \\left(\\left(\\frac{4}{3}\right)^{-1}\\right)^3 = \\left(\\frac{4}{3}\right)^{-3}\\)\n\n**Step 2: Equate the powers**\n\\(\\left(\\frac{4}{3}\\right)^x = \\left(\\frac{4}{3}\\right)^{-3}\\)\nBy comparing exponents, we get:\n\\(x = -3\\)\n\nThus, the solution is **\\(x = -3\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Notice that \\(\\frac{27}{64} = \\left(\\frac{3}{4}\\right)^3 = \\left(\\frac{4}{3}\\right)^{-3}\\).\n\\(\\frac{27}{64} = \\left(\\frac{4}{3}\\right)^{-3}\\)\n\n**Step 2:** Rewrite the equation with matching bases.\n\\(\\left(\\frac{4}{3}\\right)^x = \\left(\\frac{4}{3}\\right)^{-3}\\)\n\n**Step 3:** Equal bases imply equal exponents.\n\\(x = -3\\)\n\n**Step 4:** Verify by substituting back.\n\\(x = -3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Notice that \\(\\frac{27}{64} = \\left(\\frac{3}{4}\\right)^3 = \\left(\\frac{4}{3}\\right)^{-3}\\).",
+        "workingOut": "\\(\\frac{27}{64} = \\left(\\frac{4}{3}\\right)^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation with matching bases.",
+        "workingOut": "\\(\\left(\\frac{4}{3}\\right)^x = \\left(\\frac{4}{3}\\right)^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equal bases imply equal exponents.",
         "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify by substituting back.",
         "workingOut": "\\(x = -3\\)",
         "graphData": null
       }
@@ -1547,25 +1557,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express \\(81\\) as a power of base \\(3\\)**\nObserve that:\n\\(81 = 3 \\times 3 \\times 3 \\times 3 = 3^4\\)\nTherefore, the expression is:\n\\(3^4 \\times 3^z\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(3^4 \\times 3^z = 3^{z+4}\\)\n\nThus, the single power representation is **\\(3^{z+4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 81 as a power of 3.\n\\(81 = 3^4\\)\n\n**Step 2:** Substitute.\n\\(81 \\times 3^z = 3^4 \\times 3^z\\)\n\n**Step 3:** Add exponents.\n\\(3^{4+z} = 3^{z+4}\\)\n\n**Step 4:** Single power.\n\\(3^{z+4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 81 as a power of 3.",
+        "workingOut": "\\(81 = 3^4\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute.",
+        "workingOut": "\\(81 \\times 3^z = 3^4 \\times 3^z\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3^{z+4}\\)",
+        "explanation": "Add exponents.",
+        "workingOut": "\\(3^{4+z} = 3^{z+4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3^{z+4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power.",
         "workingOut": "\\(3^{z+4}\\)",
         "graphData": null
       }
@@ -1592,25 +1602,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(\\left(\\frac{1}{5}\\right)^x = 25\\):\n\\(5^{-x} = 5^2\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = -2\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write both sides as powers of 5.\n\\(\\frac{1}{5} = 5^{-1},\\quad 25 = 5^2\\)\n\n**Step 2:** Left side: \\((5^{-1})^x = 5^{-x}\\).\n\\(5^{-x} = 5^2\\)\n\n**Step 3:** Equate exponents.\n\\(-x = 2 \\implies x = -2\\)\n\n**Step 4:** Check: \\(\\left(\\frac{1}{5}\\right)^{-2} = 25\\).\n\\(x = -2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write both sides as powers of 5.",
+        "workingOut": "\\(\\frac{1}{5} = 5^{-1},\\quad 25 = 5^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Left side: \\((5^{-1})^x = 5^{-x}\\).",
+        "workingOut": "\\(5^{-x} = 5^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x = -2\\)",
+        "explanation": "Equate exponents.",
+        "workingOut": "\\(-x = 2 \\implies x = -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Check: \\(\\left(\\frac{1}{5}\\right)^{-2} = 25\\).",
         "workingOut": "\\(x = -2\\)",
         "graphData": null
       }
@@ -1637,25 +1647,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the negative sign**\n\\(-\\frac{1}{a^3} = -1 \\times \\frac{1}{a^3}\\)\n\n**Step 2: Apply the negative index law**\n\\(\\frac{1}{a^3} = a^{-3}\\)\nTherefore:\n\\(-\\frac{1}{a^3} = -a^{-3}\\)\n\nThus, the expression in index form is **\\(-a^{-3}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index converts a reciprocal power into index form.\n\\(\\frac{1}{a^3} = a^{-3}\\)\n\n**Step 2:** Keep the leading negative sign.\n\\(-\\frac{1}{a^3} = -a^{-3}\\)\n\n**Step 3:** This is the required index form.\n\\(-a^{-3}\\)\n\n**Step 4:** Final answer.\n\\(-a^{-3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index converts a reciprocal power into index form.",
+        "workingOut": "\\(\\frac{1}{a^3} = a^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Keep the leading negative sign.",
+        "workingOut": "\\(-\\frac{1}{a^3} = -a^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "This is the required index form.",
         "workingOut": "\\(-a^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -a^{-3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(-a^{-3}\\)",
         "graphData": null
       }
@@ -1682,25 +1692,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the negative index law**\nFor any non-zero number \\(a\\):\n\\(a^{-n} = \\frac{1}{a^n}\\)\n\n**Step 2: Apply the law to the expression**\n\\(12^{-1} = \\frac{1}{12^1} = \\frac{1}{12}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{12}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal.\n\\(a^{-1} = \\frac{1}{a}\\)\n\n**Step 2:** Apply to 12.\n\\(12^{-1} = \\frac{1}{12}\\)\n\n**Step 3:** No further simplification.\n\\(\\frac{1}{12}\\)\n\n**Step 4:** Final fraction form.\n\\(\\frac{1}{12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal.",
+        "workingOut": "\\(a^{-1} = \\frac{1}{a}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Apply to 12.",
+        "workingOut": "\\(12^{-1} = \\frac{1}{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No further simplification.",
         "workingOut": "\\(\\frac{1}{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final fraction form.",
         "workingOut": "\\(\\frac{1}{12}\\)",
         "graphData": null
       }
@@ -1727,25 +1737,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Write down the density formula and variables**\n\\(\\text{Density} = \\frac{\\text{mass}}{\\text{volume}}\\)\n\\(\\text{Mass} = 2.5 \\times 10^{-27}\\text{ kg}\\)\n\\(\\text{Volume} = 1.4137 \\times 10^{-44}\\text{ m}^3\\)\n\n**Step 2: Calculate the division in scientific notation**\n\\(\\text{Density} = \\frac{2.5 \\times 10^{-27}}{1.4137 \\times 10^{-44}}\\)\n\\(\\text{Density} = \\left(\\frac{2.5}{1.4137}\\right) \\times 10^{-27 - (-44)}\\)\nObserve that:\n\\(\\frac{2.5}{1.4137} \\approx 1.7684\\)\n\\(10^{-27 + 44} = 10^{17}\\)\nTherefore:\n\\(\\text{Density} \\approx 1.7684 \\times 10^{17}\\text{ kg/m}^3\\)\n\n**Step 3: Round to 2 decimal places**\n\\(\\text{Density} \\approx 1.77 \\times 10^{17}\\text{ kg/m}^3\\)\n\nThus, the approximate density is **\\(1.77 \\times 10^{17}\\text{ kg/m}^3\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Use density = mass / volume with the given scientific-notation values.\n\\(\\rho = \\frac{m}{V} = \\frac{2.5 \\times 10^{-27}}{1.4137 \\times 10^{-44}}\\)\n\n**Step 2:** Divide the coefficients and subtract the powers of 10.\n\\(\\frac{2.5}{1.4137} \\approx 1.768\\)\n\n**Step 3:** Exponent arithmetic: \\(-27 - (-44) = 17\\).\n\\(1.768 \\times 10^{17}\\)\n\n**Step 4:** Round to 2 decimal places in scientific notation.\n\\(1.77 \\times 10^{17}\\text{ kg/m}^3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Use density = mass / volume with the given scientific-notation values.",
+        "workingOut": "\\(\\rho = \\frac{m}{V} = \\frac{2.5 \\times 10^{-27}}{1.4137 \\times 10^{-44}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Divide the coefficients and subtract the powers of 10.",
+        "workingOut": "\\(\\frac{2.5}{1.4137} \\approx 1.768\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1.77 \\times 10^{17}\\text{ kg/m}^3\\)",
+        "explanation": "Exponent arithmetic: \\(-27 - (-44) = 17\\).",
+        "workingOut": "\\(1.768 \\times 10^{17}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1.77 \\times 10^{17}\\text{ kg/m}^3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Round to 2 decimal places in scientific notation.",
         "workingOut": "\\(1.77 \\times 10^{17}\\text{ kg/m}^3\\)",
         "graphData": null
       }
@@ -1772,25 +1782,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nOnly the variable \\(y\\) is raised to the power of \\(-4\\). The coefficient \\(6\\) is unaffected:\n\\(6y^{-4} = 6 \\times y^{-4}\\)\n\n**Step 2: Apply the negative index law**\n\\(y^{-4} = \\frac{1}{y^4}\\)\nTherefore:\n\\(6y^{-4} = \\frac{6}{y^4}\\)\n\nThus, the simplified expression is **\\(\\frac{6}{y^4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Only \\(y\\) has a negative index; the coefficient 6 stays in the numerator.\n\\(6y^{-4} = 6 \\cdot \\frac{1}{y^4}\\)\n\n**Step 2:** Combine into a single fraction.\n\\(\\frac{6}{y^4}\\)\n\n**Step 3:** No remaining negative indices.\n\\(\\frac{6}{y^4}\\)\n\n**Step 4:** Final form.\n\\(\\frac{6}{y^4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Only \\(y\\) has a negative index; the coefficient 6 stays in the numerator.",
+        "workingOut": "\\(6y^{-4} = 6 \\cdot \\frac{1}{y^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Combine into a single fraction.",
         "workingOut": "\\(\\frac{6}{y^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{6}{y^4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No remaining negative indices.",
+        "workingOut": "\\(\\frac{6}{y^4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final form.",
         "workingOut": "\\(\\frac{6}{y^4}\\)",
         "graphData": null
       }
@@ -1817,25 +1827,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nOnly the variable \\(w\\) is raised to the power of \\(-1\\). The coefficient \\(-6\\) remains unchanged:\n\\(-6w^{-1} = -6 \\times w^{-1}\\)\n\n**Step 2: Apply the negative index law**\n\\(w^{-1} = \\frac{1}{w}\\)\nTherefore:\n\\(-6w^{-1} = -6 \\times \\frac{1}{w} = -\\frac{6}{w}\\)\n\nThus, the simplified expression is **\\(-\\frac{6}{w}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite the negative index as a reciprocal, keeping the coefficient and sign.\n\\(-6w^{-1} = -6 \\cdot \\frac{1}{w}\\)\n\n**Step 2:** Write as a single fraction.\n\\(-\\frac{6}{w}\\)\n\n**Step 3:** No remaining negative indices or brackets.\n\\(-\\frac{6}{w}\\)\n\n**Step 4:** Final form.\n\\(-\\frac{6}{w}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite the negative index as a reciprocal, keeping the coefficient and sign.",
+        "workingOut": "\\(-6w^{-1} = -6 \\cdot \\frac{1}{w}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Write as a single fraction.",
         "workingOut": "\\(-\\frac{6}{w}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -\\frac{6}{w}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No remaining negative indices or brackets.",
+        "workingOut": "\\(-\\frac{6}{w}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final form.",
         "workingOut": "\\(-\\frac{6}{w}\\)",
         "graphData": null
       }
@@ -1862,25 +1872,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n\\(\\left(\\frac{3}{4}\\right)^3 = \\frac{3^3}{4^3} = \\frac{27}{64}\\)\n\n**Step 2: State the final value**\n\\(\\frac{27}{64}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise numerator and denominator to the third power.\n\\(\\left(\\frac{3}{4}\\right)^3 = \\frac{3^3}{4^3}\\)\n\n**Step 2:** Compute \\(3^3 = 27\\).\n\\(3^3 = 27\\)\n\n**Step 3:** Compute \\(4^3 = 64\\).\n\\(4^3 = 64\\)\n\n**Step 4:** Write the fraction.\n\\(\\frac{27}{64}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise numerator and denominator to the third power.",
+        "workingOut": "\\(\\left(\\frac{3}{4}\\right)^3 = \\frac{3^3}{4^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Compute \\(3^3 = 27\\).",
+        "workingOut": "\\(3^3 = 27\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{27}{64}\\)",
+        "explanation": "Compute \\(4^3 = 64\\).",
+        "workingOut": "\\(4^3 = 64\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{27}{64}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Write the fraction.",
         "workingOut": "\\(\\frac{27}{64}\\)",
         "graphData": null
       }
@@ -1907,25 +1917,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert addition into multiplication**\nObserve that there are three identical terms being added together:\n\\(3^y + 3^y + 3^y = 3 \\times 3^y\\)\n\n**Step 2: Apply the multiplication index law**\nRewrite \\(3\\) as \\(3^1\\):\n\\(3^1 \\times 3^y = 3^{y+1}\\)\n\nThus, the single power representation is **\\(3^{y+1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Three identical terms can be factored: sum is 3 times one term.\n\\(3^y + 3^y + 3^y = 3 \\cdot 3^y\\)\n\n**Step 2:** Write the coefficient 3 as a power of 3.\n\\(3 = 3^1\\)\n\n**Step 3:** Product of powers with the same base: add exponents.\n\\(3^1 \\cdot 3^y = 3^{1+y}\\)\n\n**Step 4:** Single power form.\n\\(3^{y+1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Three identical terms can be factored: sum is 3 times one term.",
+        "workingOut": "\\(3^y + 3^y + 3^y = 3 \\cdot 3^y\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Write the coefficient 3 as a power of 3.",
+        "workingOut": "\\(3 = 3^1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3^{y+1}\\)",
+        "explanation": "Product of powers with the same base: add exponents.",
+        "workingOut": "\\(3^1 \\cdot 3^y = 3^{1+y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3^{y+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power form.",
         "workingOut": "\\(3^{y+1}\\)",
         "graphData": null
       }
@@ -1952,25 +1962,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the exponent of the second term**\nAny term without a visible exponent has an implicit exponent of \\(1\\):\n\\(6 = 6^1\\)\nTherefore:\n\\(6^z \\times 6 = 6^z \\times 6^1\\)\n\n**Step 2: Apply the multiplication index law**\n\\(6^z \\times 6^1 = 6^{z+1}\\)\n\nThus, the simplified form is **\\(6^{z+1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the lone factor 6 as a power of 6.\n\\(6 = 6^1\\)\n\n**Step 2:** Product with the same base.\n\\(6^z \\times 6^1\\)\n\n**Step 3:** Add the exponents.\n\\(6^{z+1}\\)\n\n**Step 4:** Index form as required.\n\\(6^{z+1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the lone factor 6 as a power of 6.",
+        "workingOut": "\\(6 = 6^1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Product with the same base.",
+        "workingOut": "\\(6^z \\times 6^1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add the exponents.",
         "workingOut": "\\(6^{z+1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 6^{z+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Index form as required.",
         "workingOut": "\\(6^{z+1}\\)",
         "graphData": null
       }
@@ -1997,25 +2007,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Group like bases together**\n\\(a^3b^2 \\times a^5b^4 = (a^3 \\times a^5) \\times (b^2 \\times b^4)\\)\n\n**Step 2: Apply the multiplication index law to each base**\nAdd the exponents:\n- For base \\(a\\): \\(a^{3+5} = a^8\\)\n- For base \\(b\\): \\(b^{2+4} = b^6\\)\n\nTherefore:\n\\(a^8b^6\\)\n\nThus, the simplified expression is **\\(a^8b^6\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Group like bases and add their exponents.\n\\(a^3 \\times a^5 = a^{8},\\quad b^2 \\times b^4 = b^{6}\\)\n\n**Step 2:** Combine the results.\n\\(a^8 b^6\\)\n\n**Step 3:** No negative indices appear.\n\\(a^8b^6\\)\n\n**Step 4:** Final simplified product.\n\\(a^8b^6\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Group like bases and add their exponents.",
+        "workingOut": "\\(a^3 \\times a^5 = a^{8},\\quad b^2 \\times b^4 = b^{6}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Combine the results.",
+        "workingOut": "\\(a^8 b^6\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No negative indices appear.",
         "workingOut": "\\(a^8b^6\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: a^8b^6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final simplified product.",
         "workingOut": "\\(a^8b^6\\)",
         "graphData": null
       }
@@ -2042,25 +2052,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Multiply the numeric coefficients**\n\\(4 \\times 6 = 24\\)\n\n**Step 2: Group and simplify variable bases**\n- For base \\(m\\): \\(m^1 \\times m^3 = m^{1+3} = m^4\\)\n- For base \\(y\\): \\(y^{-3} \\times y^2 = y^{-3+2} = y^{-1}\\)\n\n**Step 3: Combine and rewrite without negative indices**\n\\(24 \\times m^4 \\times y^{-1} = 24m^4y^{-1} = \\frac{24m^4}{y}\\)\n\nThus, the simplified expression is **\\(\\frac{24m^4}{y}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Multiply coefficients first.\n\\(4 \\times 6 = 24\\)\n\n**Step 2:** Add exponents for \\(m\\) and for \\(y\\).\n\\(m^{1+3} = m^4,\\quad y^{-3+2} = y^{-1}\\)\n\n**Step 3:** Combine: \\(24m^4 y^{-1}\\).\n\\(24m^4 y^{-1}\\)\n\n**Step 4:** Rewrite the negative index as a fraction.\n\\(\\frac{24m^4}{y}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Multiply coefficients first.",
+        "workingOut": "\\(4 \\times 6 = 24\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Add exponents for \\(m\\) and for \\(y\\).",
+        "workingOut": "\\(m^{1+3} = m^4,\\quad y^{-3+2} = y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{24m^4}{y}\\)",
+        "explanation": "Combine: \\(24m^4 y^{-1}\\).",
+        "workingOut": "\\(24m^4 y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{24m^4}{y}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Rewrite the negative index as a fraction.",
         "workingOut": "\\(\\frac{24m^4}{y}\\)",
         "graphData": null
       }
@@ -2087,25 +2097,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of the same base**\nObserve that the left-hand base is \\(2\\). We can write \\(128\\) as a power of \\(2\\):\n\\(128 = 2^7\\)\n\n**Step 2: Equate the powers**\n\\(2^{3z-5} = 2^7\\)\nSince the bases are identical, their exponents must be equal:\n\\(3z - 5 = 7\\)\n\n**Step 3: Solve for \\(z\\)**\n\\(3z = 7 + 5\\)\n\\(3z = 12\\)\n\\(z = \\frac{12}{3} = 4\\)\n\nThus, the solution is **\\(z = 4\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express 128 as a power of 2.\n\\(128 = 2^7\\)\n\n**Step 2:** Equal bases: equate exponents.\n\\(3z - 5 = 7\\)\n\n**Step 3:** Add 5 to both sides.\n\\(3z = 12\\)\n\n**Step 4:** Divide by 3.\n\\(z = 4\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express 128 as a power of 2.",
+        "workingOut": "\\(128 = 2^7\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Equal bases: equate exponents.",
+        "workingOut": "\\(3z - 5 = 7\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(z = 4\\)",
+        "explanation": "Add 5 to both sides.",
+        "workingOut": "\\(3z = 12\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: z = 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Divide by 3.",
         "workingOut": "\\(z = 4\\)",
         "graphData": null
       }
@@ -2132,25 +2142,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: \\((a^m)^n = a^{m \\times n}\\)\n- Product: \\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2: Evaluate**\nFor \\((y^6)^4\\):\n\\(y^{6 \\times 4} = y^{24}\\)\n\n**Step 3: State final form**\n\\(y^{24}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power of a power: multiply exponents.\n\\((y^6)^4 = y^{6 \\times 4}\\)\n\n**Step 2:** Multiply 6 by 4.\n\\(y^{24}\\)\n\n**Step 3:** Leave in index form.\n\\(y^{24}\\)\n\n**Step 4:** Final answer.\n\\(y^{24}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power of a power: multiply exponents.",
+        "workingOut": "\\((y^6)^4 = y^{6 \\times 4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Multiply 6 by 4.",
         "workingOut": "\\(y^{24}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y^{24}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
+        "workingOut": "\\(y^{24}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(y^{24}\\)",
         "graphData": null
       }
@@ -2177,26 +2187,26 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the first term**\n\\((3p^{-3}q^2)^{-2} = 3^{-2} \\times (p^{-3})^{-2} \\times (q^2)^{-2} = \\frac{1}{9}p^6q^{-4}\\)\n\n**Step 2: Expand the second term**\n\\((3pq^{-2})^3 = 3^3 \\times p^3 \\times (q^{-2})^3 = 27p^3q^{-6}\\)\n\n**Step 3: Multiply the expanded terms**\n\\(\\left(\\frac{1}{9}p^6q^{-4}\\right) \\times (27p^3q^{-6}) = \\left(\\frac{1}{9} \\times 27\\right) \\times (p^6 \\times p^3) \\times (q^{-4} \\times q^{-6})\\)\n\\(= 3 \\times p^{6+3} \\times q^{-4-6}\\)\n\\(= 3p^9q^{-10}\\)\n\n**Step 4: Rewrite without negative indices**\n\\(3p^9q^{-10} = \\frac{3p^9}{q^{10}}\\)\n\nThus, the simplified expression is **\\(\\frac{3p^9}{q^{10}}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the first factor using power of a product and power of a power.\n\\((3p^{-3}q^2)^{-2} = 3^{-2}p^{6}q^{-4} = \\frac{1}{9}p^6q^{-4}\\)\n\n**Step 2:** Expand the second factor.\n\\((3pq^{-2})^3 = 27p^3q^{-6}\\)\n\n**Step 3:** Multiply coefficients and add exponents for each variable.\n\\(\\frac{1}{9} \\times 27 = 3,\\quad p^{6+3} = p^9,\\quad q^{-4-6} = q^{-10}\\)\n\n**Step 4:** Rewrite without negative indices.\n\\(3p^9 q^{-10} = \\frac{3p^9}{q^{10}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the first factor using power of a product and power of a power.",
+        "workingOut": "\\((3p^{-3}q^2)^{-2} = 3^{-2}p^{6}q^{-4} = \\frac{1}{9}p^6q^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the second factor.",
+        "workingOut": "\\((3pq^{-2})^3 = 27p^3q^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{3p^9}{q^{10}}\\)",
+        "explanation": "Multiply coefficients and add exponents for each variable.",
+        "workingOut": "\\(\\frac{1}{9} \\times 27 = 3,\\quad p^{6+3} = p^9,\\quad q^{-4-6} = q^{-10}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{3p^9}{q^{10}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\frac{3p^9}{q^{10}}\\)",
+        "explanation": "Rewrite without negative indices.",
+        "workingOut": "\\(3p^9 q^{-10} = \\frac{3p^9}{q^{10}}\\)",
         "graphData": null
       }
     ],
@@ -2222,25 +2232,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the right-hand side using the base \\(\\frac{6}{7}\\)**\nObserve that \\(\\frac{7}{6}\\) is the reciprocal of \\(\\frac{6}{7}\\):\n\\(\\frac{7}{6} = \\left(\\frac{6}{7}\\right)^{-1}\\)\n\n**Step 2: Equate the powers**\n\\(\\left(\\frac{6}{7}\\right)^x = \\left(\\frac{6}{7}\\right)^{-1}\\)\nBy comparing exponents, we get:\n\\(x = -1\\)\n\nThus, the solution is **\\(x = -1\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Note that \\(\\frac{7}{6} = \\left(\\frac{6}{7}\\right)^{-1}\\).\n\\(\\frac{7}{6} = \\left(\\frac{6}{7}\\right)^{-1}\\)\n\n**Step 2:** Rewrite the equation with equal bases.\n\\(\\left(\\frac{6}{7}\\right)^x = \\left(\\frac{6}{7}\\right)^{-1}\\)\n\n**Step 3:** Equate the exponents.\n\\(x = -1\\)\n\n**Step 4:** Verify by reciprocal rule.\n\\(x = -1\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Note that \\(\\frac{7}{6} = \\left(\\frac{6}{7}\\right)^{-1}\\).",
+        "workingOut": "\\(\\frac{7}{6} = \\left(\\frac{6}{7}\\right)^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation with equal bases.",
+        "workingOut": "\\(\\left(\\frac{6}{7}\\right)^x = \\left(\\frac{6}{7}\\right)^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equate the exponents.",
         "workingOut": "\\(x = -1\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify by reciprocal rule.",
         "workingOut": "\\(x = -1\\)",
         "graphData": null
       }
@@ -2267,25 +2277,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nOnly the variable \\(z\\) is raised to the power of \\(-1\\). The coefficient \\(8\\) is not affected:\n\\(8z^{-1} = 8 \\times z^{-1}\\)\n\n**Step 2: Apply the negative index law**\n\\(z^{-1} = \\frac{1}{z}\\)\nTherefore:\n\\(8z^{-1} = 8 \\times \\frac{1}{z} = \\frac{8}{z}\\)\n\nThus, the simplified expression is **\\(\\frac{8}{z}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite the negative index as a reciprocal.\n\\(z^{-1} = \\frac{1}{z}\\)\n\n**Step 2:** Multiply by 8.\n\\(8z^{-1} = \\frac{8}{z}\\)\n\n**Step 3:** No remaining negative indices.\n\\(\\frac{8}{z}\\)\n\n**Step 4:** Final form.\n\\(\\frac{8}{z}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite the negative index as a reciprocal.",
+        "workingOut": "\\(z^{-1} = \\frac{1}{z}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply by 8.",
+        "workingOut": "\\(8z^{-1} = \\frac{8}{z}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No remaining negative indices.",
         "workingOut": "\\(\\frac{8}{z}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{8}{z}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final form.",
         "workingOut": "\\(\\frac{8}{z}\\)",
         "graphData": null
       }
@@ -2312,25 +2322,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n\\(a^m \\div a^n = a^{m - n}\\)\n\n**Step 2: Subtract indices**\nFor \\(3^6 \\div 3^{-6}\\):\n\\(3^{6 - (-6)} = 3^{6 + 6} = 3^{12}\\)\n\n**Step 3: State final form**\n\\(3^{12}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Quotient law: subtract exponents.\n\\(\\frac{3^6}{3^{-6}} = 3^{6-(-6)}\\)\n\n**Step 2:** Subtracting a negative adds.\n\\(3^{6+6} = 3^{12}\\)\n\n**Step 3:** Leave in index form.\n\\(3^{12}\\)\n\n**Step 4:** Final answer.\n\\(3^{12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Quotient law: subtract exponents.",
+        "workingOut": "\\(\\frac{3^6}{3^{-6}} = 3^{6-(-6)}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Subtracting a negative adds.",
+        "workingOut": "\\(3^{6+6} = 3^{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Leave in index form.",
         "workingOut": "\\(3^{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3^{12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(3^{12}\\)",
         "graphData": null
       }
@@ -2357,25 +2367,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(3\\frac{1}{2} = \\frac{3 \\times 2 + 1}{2} = \\frac{7}{2}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(\\left(3\\frac{1}{2}\\right)^{-1} = \\left(\\frac{7}{2}\\right)^{-1} = \\frac{2}{7}\\)\n\nThus, the simplified value is **\\(\\frac{2}{7}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the mixed number to an improper fraction.\n\\(3\\frac{1}{2} = \\frac{7}{2}\\)\n\n**Step 2:** Take the reciprocal for the power \\(-1\\).\n\\(\\left(\\frac{7}{2}\\right)^{-1} = \\frac{2}{7}\\)\n\n**Step 3:** Already simplified.\n\\(\\frac{2}{7}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{2}{7}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the mixed number to an improper fraction.",
+        "workingOut": "\\(3\\frac{1}{2} = \\frac{7}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take the reciprocal for the power \\(-1\\).",
+        "workingOut": "\\(\\left(\\frac{7}{2}\\right)^{-1} = \\frac{2}{7}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Already simplified.",
         "workingOut": "\\(\\frac{2}{7}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{2}{7}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{2}{7}\\)",
         "graphData": null
       }
@@ -2402,25 +2412,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the fraction coefficient as a power of base \\(2\\)**\nObserve that:\n\\(16 = 2^4 \\implies \\frac{1}{16} = \\frac{1}{2^4} = 2^{-4}\\)\n\nThe expression becomes:\n\\(2^{-4} \\times 2^w\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(2^{-4} \\times 2^w = 2^{-4+w} = 2^{w-4}\\)\n\nThus, the single power representation is **\\(2^{w-4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write \\(\\frac{1}{16}\\) as a power of 2.\n\\(\\frac{1}{16} = 2^{-4}\\)\n\n**Step 2:** Substitute into the product.\n\\(2^{-4} \\times 2^w\\)\n\n**Step 3:** Add the exponents.\n\\(2^{w-4}\\)\n\n**Step 4:** Single power of 2.\n\\(2^{w-4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write \\(\\frac{1}{16}\\) as a power of 2.",
+        "workingOut": "\\(\\frac{1}{16} = 2^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute into the product.",
+        "workingOut": "\\(2^{-4} \\times 2^w\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add the exponents.",
         "workingOut": "\\(2^{w-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2^{w-4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power of 2.",
         "workingOut": "\\(2^{w-4}\\)",
         "graphData": null
       }
@@ -2447,25 +2457,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the coefficient**\n\\(\\frac{15}{c^2} = 15 \\times \\frac{1}{c^2}\\)\n\n**Step 2: Convert using the negative index law**\n\\(\\frac{1}{c^2} = c^{-2}\\)\nTherefore:\n\\(\\frac{15}{c^2} = 15c^{-2}\\)\n\nThus, the expression in index form is **\\(15c^{-2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the reciprocal power with a negative index.\n\\(\\frac{1}{c^2} = c^{-2}\\)\n\n**Step 2:** Keep coefficient 15.\n\\(\\frac{15}{c^2} = 15c^{-2}\\)\n\n**Step 3:** Index form complete.\n\\(15c^{-2}\\)\n\n**Step 4:** Final answer.\n\\(15c^{-2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the reciprocal power with a negative index.",
+        "workingOut": "\\(\\frac{1}{c^2} = c^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Keep coefficient 15.",
+        "workingOut": "\\(\\frac{15}{c^2} = 15c^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form complete.",
         "workingOut": "\\(15c^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 15c^{-2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(15c^{-2}\\)",
         "graphData": null
       }
@@ -2492,25 +2502,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(1\\frac{1}{2} = \\frac{1 \\times 2 + 1}{2} = \\frac{3}{2}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\\(\\left(\\frac{3}{2}\right)^{-2} = \\left(\\frac{2}{3}\\right)^2 = \\frac{2^2}{3^2} = \\frac{4}{9}\\)\n\nThus, the simplified value is **\\(\\frac{4}{9}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert mixed numeral to improper fraction.\n\\(1\\frac{1}{2} = \\frac{3}{2}\\)\n\n**Step 2:** Negative power: reciprocal then square.\n\\(\\left(\\frac{3}{2}\\right)^{-2} = \\left(\\frac{2}{3}\\right)^2\\)\n\n**Step 3:** Square numerator and denominator.\n\\(\\frac{4}{9}\\)\n\n**Step 4:** Final value.\n\\(\\frac{4}{9}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert mixed numeral to improper fraction.",
+        "workingOut": "\\(1\\frac{1}{2} = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Negative power: reciprocal then square.",
+        "workingOut": "\\(\\left(\\frac{3}{2}\\right)^{-2} = \\left(\\frac{2}{3}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Square numerator and denominator.",
         "workingOut": "\\(\\frac{4}{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{4}{9}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{4}{9}\\)",
         "graphData": null
       }
@@ -2537,25 +2547,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(5^x = \\frac{1}{5}\\):\n\\(5^{-1} = \\frac{1}{5}\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = -1\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the right-hand side as a power of 5.\n\\(\\frac{1}{5} = 5^{-1}\\)\n\n**Step 2:** Equal bases: equate exponents.\n\\(5^x = 5^{-1}\\)\n\n**Step 3:** Therefore the exponents are equal.\n\\(x = -1\\)\n\n**Step 4:** Verify: \\(5^{-1} = \\frac{1}{5}\\).\n\\(x = -1\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the right-hand side as a power of 5.",
+        "workingOut": "\\(\\frac{1}{5} = 5^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Equal bases: equate exponents.",
+        "workingOut": "\\(5^x = 5^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Therefore the exponents are equal.",
         "workingOut": "\\(x = -1\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify: \\(5^{-1} = \\frac{1}{5}\\).",
         "workingOut": "\\(x = -1\\)",
         "graphData": null
       }
@@ -2582,25 +2592,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Group like bases together**\n\\(p^{-6}q^4 \\times p^2q^{-1} = (p^{-6} \\times p^2) \\times (q^4 \\times q^{-1})\\)\n\n**Step 2: Apply the multiplication law**\nAdd exponents:\n- For base \\(p\\): \\(p^{-6 + 2} = p^{-4}\\)\n- For base \\(q\\): \\(q^{4 + (-1)} = q^3\\)\n\n**Step 3: Express without negative indices**\n\\(p^{-4}q^3 = \\frac{q^3}{p^4}\\)\n\nThus, the simplified expression is **\\(\\frac{q^3}{p^4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Add exponents for each base separately.\n\\(p^{-6+2} = p^{-4},\\quad q^{4+(-1)} = q^{3}\\)\n\n**Step 2:** Combine the factors.\n\\(p^{-4}q^{3}\\)\n\n**Step 3:** Rewrite the negative power of \\(p\\) as a fraction.\n\\(\\frac{q^3}{p^4}\\)\n\n**Step 4:** No remaining negative indices.\n\\(\\frac{q^3}{p^4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Add exponents for each base separately.",
+        "workingOut": "\\(p^{-6+2} = p^{-4},\\quad q^{4+(-1)} = q^{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Combine the factors.",
+        "workingOut": "\\(p^{-4}q^{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Rewrite the negative power of \\(p\\) as a fraction.",
         "workingOut": "\\(\\frac{q^3}{p^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{q^3}{p^4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No remaining negative indices.",
         "workingOut": "\\(\\frac{q^3}{p^4}\\)",
         "graphData": null
       }
@@ -2627,25 +2637,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the perfect square expansion formula**\nRecall that:\n\\((a - b)^2 = a^2 - 2ab + b^2\\)\n\n**Step 2: Substitute \\(a = z\\) and \\(b = z^{-1}\\) into the formula**\n\\((z - z^{-1})^2 = z^2 - 2(z)(z^{-1}) + (z^{-1})^2\\)\n\n**Step 3: Simplify the terms using index laws**\n- For the middle term: \\(-2(z^1 \\times z^{-1}) = -2(z^0) = -2\\)\n- For the third term: \\((z^{-1})^2 = z^{-2} = \\frac{1}{z^2}\\)\n\nTherefore, the expanded expression is:\n\\(z^2 - 2 + \\frac{1}{z^2}\\)\n\nThus, the simplified expression is **\\(z^2 - 2 + \\frac{1}{z^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the square using \\((a-b)^2 = a^2 - 2ab + b^2\\).\n\\((z - z^{-1})^2 = z^2 - 2z\\cdot z^{-1} + (z^{-1})^2\\)\n\n**Step 2:** Simplify the middle term: \\(z \\cdot z^{-1} = 1\\).\n\\(z^2 - 2 + z^{-2}\\)\n\n**Step 3:** Rewrite \\(z^{-2}\\) without a negative index.\n\\(z^2 - 2 + \\frac{1}{z^2}\\)\n\n**Step 4:** Fully expanded form.\n\\(z^2 - 2 + \\frac{1}{z^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the square using \\((a-b)^2 = a^2 - 2ab + b^2\\).",
+        "workingOut": "\\((z - z^{-1})^2 = z^2 - 2z\\cdot z^{-1} + (z^{-1})^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the middle term: \\(z \\cdot z^{-1} = 1\\).",
+        "workingOut": "\\(z^2 - 2 + z^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Rewrite \\(z^{-2}\\) without a negative index.",
         "workingOut": "\\(z^2 - 2 + \\frac{1}{z^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: z^2 - 2 + \\frac{1}{z^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Fully expanded form.",
         "workingOut": "\\(z^2 - 2 + \\frac{1}{z^2}\\)",
         "graphData": null
       }
@@ -2672,25 +2682,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the power of a product index law**\n\\((ab)^n = a^n b^n\\)\nApply to each base inside the brackets:\n\\((u^3v^{-4})^4 = (u^3)^4 \\times (v^{-4})^4\\)\n\n**Step 2: Multiply the exponents**\n- For base \\(u\\): \\(u^{3 \\times 4} = u^{12}\\)\n- For base \\(v\\): \\(v^{-4 \\times 4} = v^{-16}\\)\n\n**Step 3: Rewrite without negative indices**\n\\(u^{12}v^{-16} = \\frac{u^{12}}{v^{16}}\\)\n\nThus, the simplified expression is **\\(\\frac{u^{12}}{v^{16}}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise each factor to the power 4.\n\\((u^3v^{-4})^4 = u^{12} v^{-16}\\)\n\n**Step 2:** Rewrite the negative power of \\(v\\) as a reciprocal.\n\\(u^{12} \\cdot \\frac{1}{v^{16}}\\)\n\n**Step 3:** Write as a single fraction.\n\\(\\frac{u^{12}}{v^{16}}\\)\n\n**Step 4:** Final form without negative indices.\n\\(\\frac{u^{12}}{v^{16}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise each factor to the power 4.",
+        "workingOut": "\\((u^3v^{-4})^4 = u^{12} v^{-16}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the negative power of \\(v\\) as a reciprocal.",
+        "workingOut": "\\(u^{12} \\cdot \\frac{1}{v^{16}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Write as a single fraction.",
         "workingOut": "\\(\\frac{u^{12}}{v^{16}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{u^{12}}{v^{16}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final form without negative indices.",
         "workingOut": "\\(\\frac{u^{12}}{v^{16}}\\)",
         "graphData": null
       }
@@ -2717,25 +2727,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of \\(-1\\) represents taking the reciprocal of the fraction:\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 2: Convert decimal base if applicable**\n\\(0.25 = \\frac{1}{4}\\)\n\n**Step 3: Calculate the reciprocal**\n\\(\\text{Reciprocal of } \\frac{1}{6} \\text{ is } 6\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power \\(-1\\) means reciprocal.\n\\(\\left(\\frac{1}{6}\\right)^{-1} = 6\\)\n\n**Step 2:** Alternatively: swap numerator and denominator.\n\\(\\frac{6}{1} = 6\\)\n\n**Step 3:** Simplified value.\n\\(6\\)\n\n**Step 4:** Final answer.\n\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power \\(-1\\) means reciprocal.",
+        "workingOut": "\\(\\left(\\frac{1}{6}\\right)^{-1} = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Alternatively: swap numerator and denominator.",
+        "workingOut": "\\(\\frac{6}{1} = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplified value.",
         "workingOut": "\\(6\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(6\\)",
         "graphData": null
       }
@@ -2762,25 +2772,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: \\(a^0 = 1\\)\n- Negative index: \\(a^{-n} = \\frac{1}{a^n}\\)\n\n**Step 2: Evaluate the expression**\n\\(8^0 = \\text{Any non-zero base raised to the power of } 0 \\text{ is } 1.\\)\n\n**Step 3: State final value**\n\\(1\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number raised to the power 0 equals 1.\n\\(a^0 = 1\\ (a \\neq 0)\\)\n\n**Step 2:** Here the base is 8, which is non-zero.\n\\(8^0 = 1\\)\n\n**Step 3:** No further calculation needed.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Any non-zero number raised to the power 0 equals 1.",
+        "workingOut": "\\(a^0 = 1\\ (a \\neq 0)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Here the base is 8, which is non-zero.",
+        "workingOut": "\\(8^0 = 1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No further calculation needed.",
         "workingOut": "\\(1\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(1\\)",
         "graphData": null
       }
@@ -2807,25 +2817,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\((5xyz)^3\\):\n\\(= 125x^3y^3z^3\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise every factor inside to the power 3.\n\\((5xyz)^3 = 5^3 x^3 y^3 z^3\\)\n\n**Step 2:** Evaluate \\(5^3 = 125\\).\n\\(125x^3y^3z^3\\)\n\n**Step 3:** All factors expanded.\n\\(125x^3y^3z^3\\)\n\n**Step 4:** Final expanded form.\n\\(125x^3y^3z^3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise every factor inside to the power 3.",
+        "workingOut": "\\((5xyz)^3 = 5^3 x^3 y^3 z^3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Evaluate \\(5^3 = 125\\).",
         "workingOut": "\\(125x^3y^3z^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 125x^3y^3z^3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "All factors expanded.",
+        "workingOut": "\\(125x^3y^3z^3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final expanded form.",
         "workingOut": "\\(125x^3y^3z^3\\)",
         "graphData": null
       }
@@ -2852,25 +2862,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the fraction factor**\n\\(-\\frac{1}{9z^3} = -\\frac{1}{9} \\times \\frac{1}{z^3}\\)\n\n**Step 2: Apply the negative index law to \\(\\frac{1}{z^3}\\)**\n\\(\\frac{1}{z^3} = z^{-3}\\)\nTherefore:\n\\(-\\frac{1}{9z^3} = -\\frac{1}{9}z^{-3}\\)\n\nThus, the expression in index form is **\\(-\\frac{1}{9}z^{-3}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Separate the constant coefficient from the variable power.\n\\(-\\frac{1}{9z^3} = -\\frac{1}{9} \\cdot \\frac{1}{z^3}\\)\n\n**Step 2:** Write \\(\\frac{1}{z^3}\\) with a negative index.\n\\(-\\frac{1}{9}z^{-3}\\)\n\n**Step 3:** Index form as required.\n\\(-\\frac{1}{9}z^{-3}\\)\n\n**Step 4:** Final answer.\n\\(-\\frac{1}{9}z^{-3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Separate the constant coefficient from the variable power.",
+        "workingOut": "\\(-\\frac{1}{9z^3} = -\\frac{1}{9} \\cdot \\frac{1}{z^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Write \\(\\frac{1}{z^3}\\) with a negative index.",
         "workingOut": "\\(-\\frac{1}{9}z^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -\\frac{1}{9}z^{-3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Index form as required.",
+        "workingOut": "\\(-\\frac{1}{9}z^{-3}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(-\\frac{1}{9}z^{-3}\\)",
         "graphData": null
       }
@@ -2897,25 +2907,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the first term with a visible exponent**\n\\(7 = 7^1\\)\nTherefore, the expression is:\n\\(7^1 \\times 7^z\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(7^1 \\times 7^z = 7^{z+1}\\)\n\nThus, the single power representation is **\\(7^{z+1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 7 as \\(7^1\\).\n\\(7 = 7^1\\)\n\n**Step 2:** Product of powers with the same base.\n\\(7^1 \\times 7^z\\)\n\n**Step 3:** Add exponents.\n\\(7^{z+1}\\)\n\n**Step 4:** Single power.\n\\(7^{z+1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 7 as \\(7^1\\).",
+        "workingOut": "\\(7 = 7^1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Product of powers with the same base.",
+        "workingOut": "\\(7^1 \\times 7^z\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add exponents.",
         "workingOut": "\\(7^{z+1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 7^{z+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power.",
         "workingOut": "\\(7^{z+1}\\)",
         "graphData": null
       }
@@ -2942,25 +2952,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Calculate each power of 3**\n- \\(3^0 = 1\\) (Any non-zero number to power \\(0\\) is \\(1\\))\n- \\(3^1 = 3\\)\n- \\(3^2 = 3 \\times 3 = 9\\)\n- \\(3^3 = 3 \\times 3 \\times 3 = 27\\)\n- \\(3^4 = 27 \\times 3 = 81\\)\n- \\(3^5 = 81 \\times 3 = 243\\)\n\n**Step 2: Arrange the list**\nThe correct sequence is:\n\\(1, \\ 3, \\ 9, \\ 27, \\ 81, \\ 243\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Start with the zero power: any non-zero base to the power 0 is 1.\n\\(3^0 = 1\\)\n\n**Step 2:** Compute successive powers by multiplying by 3 each time.\n\\(3^1 = 3,\\; 3^2 = 9,\\; 3^3 = 27\\)\n\n**Step 3:** Continue to \\(3^4\\) and \\(3^5\\).\n\\(3^4 = 81,\\; 3^5 = 243\\)\n\n**Step 4:** List the full sequence from \\(3^0\\) to \\(3^5\\).\n\\(1, 3, 9, 27, 81, 243\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Start with the zero power: any non-zero base to the power 0 is 1.",
+        "workingOut": "\\(3^0 = 1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Compute successive powers by multiplying by 3 each time.",
+        "workingOut": "\\(3^1 = 3,\\; 3^2 = 9,\\; 3^3 = 27\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(1, 3, 9, 27, 81, 243\\)",
+        "explanation": "Continue to \\(3^4\\) and \\(3^5\\).",
+        "workingOut": "\\(3^4 = 81,\\; 3^5 = 243\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1, 3, 9, 27, 81, 243. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "List the full sequence from \\(3^0\\) to \\(3^5\\).",
         "workingOut": "\\(1, 3, 9, 27, 81, 243\\)",
         "graphData": null
       }
@@ -2987,25 +2997,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative index law**\n\\(x^{-2} = \\frac{1}{x^2}\\)\nTherefore:\n\\(\\frac{1}{x^2} = \\frac{1}{9}\\)\n\n**Step 2: Take the reciprocal of both sides**\n\\(x^2 = 9\\)\n\n**Step 3: Solve for \\(x\\)**\n\\(x = \\pm \\sqrt{9} = \\pm 3\\)\n\n**Step 4: Select the positive solution**\n\\(x = 3\\)\n\nThus, the positive solution is **\\(x = 3\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite the negative index as a reciprocal square.\n\\(x^{-2} = \\frac{1}{x^2} = \\frac{1}{9}\\)\n\n**Step 2:** Take reciprocals of both sides.\n\\(x^2 = 9\\)\n\n**Step 3:** Take square roots.\n\\(x = \\pm 3\\)\n\n**Step 4:** Select the positive solution only.\n\\(x = 3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite the negative index as a reciprocal square.",
+        "workingOut": "\\(x^{-2} = \\frac{1}{x^2} = \\frac{1}{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take reciprocals of both sides.",
+        "workingOut": "\\(x^2 = 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x = 3\\)",
+        "explanation": "Take square roots.",
+        "workingOut": "\\(x = \\pm 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Select the positive solution only.",
         "workingOut": "\\(x = 3\\)",
         "graphData": null
       }
@@ -3032,25 +3042,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(1\\frac{1}{3} = \\frac{1 \\times 3 + 1}{3} = \\frac{4}{3}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(\\left(1\\frac{1}{3}\\right)^{-1} = \\left(\\frac{4}{3}\\right)^{-1} = \\frac{3}{4}\\)\n\nThus, the simplified value is **\\(\\frac{3}{4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert mixed numeral to improper fraction.\n\\(1\\frac{1}{3} = \\frac{4}{3}\\)\n\n**Step 2:** Take the reciprocal.\n\\(\\left(\\frac{4}{3}\\right)^{-1} = \\frac{3}{4}\\)\n\n**Step 3:** Already simplified.\n\\(\\frac{3}{4}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{3}{4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert mixed numeral to improper fraction.",
+        "workingOut": "\\(1\\frac{1}{3} = \\frac{4}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take the reciprocal.",
+        "workingOut": "\\(\\left(\\frac{4}{3}\\right)^{-1} = \\frac{3}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Already simplified.",
         "workingOut": "\\(\\frac{3}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{3}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{3}{4}\\)",
         "graphData": null
       }
@@ -3077,25 +3087,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides of the equation in terms of the same base**\nObserve that the left-hand base is \\(6\\). We can write \\(36\\) as a power of \\(6\\):\n\\(36 = 6^2\\)\n\n**Step 2: Equate the powers**\n\\(6^{y+4} = 6^2\\)\nSince the bases are identical, their exponents must be equal:\n\\(y + 4 = 2\\)\n\n**Step 3: Solve for \\(y\\)**\n\\(y = 2 - 4\\)\n\\(y = -2\\)\n\nThus, the solution is **\\(y = -2\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 36 as a power of 6.\n\\(36 = 6^2\\)\n\n**Step 2:** Equal bases: equate exponents.\n\\(y + 4 = 2\\)\n\n**Step 3:** Subtract 4 from both sides.\n\\(y = -2\\)\n\n**Step 4:** Check: \\(6^{2} = 36\\).\n\\(y = -2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 36 as a power of 6.",
+        "workingOut": "\\(36 = 6^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Equal bases: equate exponents.",
+        "workingOut": "\\(y + 4 = 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Subtract 4 from both sides.",
         "workingOut": "\\(y = -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Check: \\(6^{2} = 36\\).",
         "workingOut": "\\(y = -2\\)",
         "graphData": null
       }
@@ -3122,25 +3132,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the conversion factor from kilometres to millimetres**\n\\(1\\text{ km} = 1000\\text{ m} = 10^3\\text{ m}\\)\n\\(1\\text{ m} = 1000\\text{ mm} = 10^3\\text{ mm}\\)\nTherefore:\n\\(1\\text{ km} = 10^3 \\times 10^3\\text{ mm} = 10^6\\text{ mm}\\)\n\n**Step 2: Cube both sides to find the cubic conversion**\n\\(1\\text{ km}^3 = (10^6\\text{ mm})^3\\)\nApply the index law \\((a^m)^n = a^{m \\times n}\\):\n\\(1\\text{ km}^3 = 10^{6 \\times 3}\\text{ mm}^3 = 10^{18}\\text{ mm}^3\\)\n\nThus, there are **\\(10^{18}\\text{ mm}^3\\)** in a cubic kilometre.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert length first: \\(1\\text{ km} = 10^6\\text{ mm}\\).\n\\(1\\text{ km} = 10^6\\text{ mm}\\)\n\n**Step 2:** Cube both sides to convert volumes.\n\\(1\\text{ km}^3 = (10^6)^3\\text{ mm}^3\\)\n\n**Step 3:** Multiply the exponents: \\(6 \\times 3 = 18\\).\n\\((10^6)^3 = 10^{18}\\)\n\n**Step 4:** So one cubic kilometre equals \\(10^{18}\\) cubic millimetres.\n\\(10^{18}\\text{ mm}^3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert length first: \\(1\\text{ km} = 10^6\\text{ mm}\\).",
+        "workingOut": "\\(1\\text{ km} = 10^6\\text{ mm}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Cube both sides to convert volumes.",
+        "workingOut": "\\(1\\text{ km}^3 = (10^6)^3\\text{ mm}^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(10^{18}\\text{ mm}^3\\)",
+        "explanation": "Multiply the exponents: \\(6 \\times 3 = 18\\).",
+        "workingOut": "\\((10^6)^3 = 10^{18}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 10^{18}\\text{ mm}^3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "So one cubic kilometre equals \\(10^{18}\\) cubic millimetres.",
         "workingOut": "\\(10^{18}\\text{ mm}^3\\)",
         "graphData": null
       }
@@ -3167,25 +3177,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: \\((a^m)^n = a^{m \\times n}\\)\n- Product: \\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2: Evaluate**\nFor \\((x^{-3})^{-4}\\):\n\\(x^{-3 \\times (-4)} = x^{12}\\)\n\n**Step 3: State final form**\n\\(x^{12}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power of a power: multiply the exponents.\n\\((x^{-3})^{-4} = x^{(-3)\\times(-4)}\\)\n\n**Step 2:** Negative times negative is positive.\n\\(x^{12}\\)\n\n**Step 3:** Leave in index form.\n\\(x^{12}\\)\n\n**Step 4:** Final answer.\n\\(x^{12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power of a power: multiply the exponents.",
+        "workingOut": "\\((x^{-3})^{-4} = x^{(-3)\\times(-4)}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Negative times negative is positive.",
         "workingOut": "\\(x^{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x^{12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
+        "workingOut": "\\(x^{12}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(x^{12}\\)",
         "graphData": null
       }
@@ -3212,25 +3222,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(1.5 = \\frac{15}{10} = \\frac{3}{2}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{3}{2}\\right)^{-2} = \\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}\\)\n\nThus, the simplified value is **\\(\\frac{4}{9}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert the decimal to a fraction.\n\\(1.5 = \\frac{3}{2}\\)\n\n**Step 2:** Negative power: reciprocal then square.\n\\(\\left(\\frac{3}{2}\\right)^{-2} = \\left(\\frac{2}{3}\\right)^2\\)\n\n**Step 3:** Square both parts.\n\\(\\frac{4}{9}\\)\n\n**Step 4:** Final value.\n\\(\\frac{4}{9}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert the decimal to a fraction.",
+        "workingOut": "\\(1.5 = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Negative power: reciprocal then square.",
+        "workingOut": "\\(\\left(\\frac{3}{2}\\right)^{-2} = \\left(\\frac{2}{3}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Square both parts.",
         "workingOut": "\\(\\frac{4}{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{4}{9}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{4}{9}\\)",
         "graphData": null
       }
@@ -3257,25 +3267,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the multiplication index law**\nAdd the exponents:\n\\(8^{3a} \\times 8^{-5a} = 8^{3a + (-5a)} = 8^{-2a}\\)\n\n**Step 2: Rewrite the expression without negative indices**\n\\(8^{-2a} = \\frac{1}{8^{2a}}\\)\n\nThus, the simplified form is **\\(\\frac{1}{8^{2a}}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Product of powers with the same base: add exponents.\n\\(8^{3a} \\times 8^{-5a} = 8^{3a-5a}\\)\n\n**Step 2:** Simplify the exponent.\n\\(8^{-2a}\\)\n\n**Step 3:** Rewrite without a negative index.\n\\(8^{-2a} = \\frac{1}{8^{2a}}\\)\n\n**Step 4:** Final form.\n\\(\\frac{1}{8^{2a}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Product of powers with the same base: add exponents.",
+        "workingOut": "\\(8^{3a} \\times 8^{-5a} = 8^{3a-5a}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the exponent.",
+        "workingOut": "\\(8^{-2a}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{8^{2a}}\\)",
+        "explanation": "Rewrite without a negative index.",
+        "workingOut": "\\(8^{-2a} = \\frac{1}{8^{2a}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{8^{2a}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final form.",
         "workingOut": "\\(\\frac{1}{8^{2a}}\\)",
         "graphData": null
       }
@@ -3302,25 +3312,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand the decade intervals**\nThe years correspond to the following number of decades passed since 1970 (\\(d\\)):\n- **1980**: \\(1\\) decade passed\n- **1990**: \\(2\\) decades passed\n- **2000**: \\(3\\) decades passed\n- **2010**: \\(4\\) decades passed\n- **2020**: \\(5\\) decades passed\n\n**Step 2: State the population scaling formula**\nSince the population increases by a factor of \\(2\\) every decade, the increase factor after \\(d\\) decades is:\n\\(\\text{Factor} = 2^d\\)\n\n**Step 3: Calculate the factors for each decade**\n- **1980 (\\(d=1\\))**: \\(2^1 = 2\\)\n- **1990 (\\(d=2\\))**: \\(2^2 = 4\\)\n- **2000 (\\(d=3\\))**: \\(2^3 = 8\\)\n- **2010 (\\(d=4\\))**: \\(2^4 = 16\\)\n- **2020 (\\(d=5\\))**: \\(2^5 = 32\\)\n\n**Step 4: Combine the results**\nThe population increase factors are:\n\\(2, \\ 4, \\ 8, \\ 16, \\ 32\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Population doubles every decade, so each decade multiplies by a factor of 2.\n\\(\\text{factor after } n \\text{ decades} = 2^n\\)\n\n**Step 2:** From 1970 to 1980 is 1 decade; to 1990 is 2 decades.\n\\(2^1 = 2,\\; 2^2 = 4\\)\n\n**Step 3:** Continue: 2000 (3 decades), 2010 (4), 2020 (5).\n\\(2^3 = 8,\\; 2^4 = 16,\\; 2^5 = 32\\)\n\n**Step 4:** List the factors in order for those five years.\n\\(2, 4, 8, 16, 32\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Population doubles every decade, so each decade multiplies by a factor of 2.",
+        "workingOut": "\\(\\text{factor after } n \\text{ decades} = 2^n\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "From 1970 to 1980 is 1 decade; to 1990 is 2 decades.",
+        "workingOut": "\\(2^1 = 2,\\; 2^2 = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2, 4, 8, 16, 32\\)",
+        "explanation": "Continue: 2000 (3 decades), 2010 (4), 2020 (5).",
+        "workingOut": "\\(2^3 = 8,\\; 2^4 = 16,\\; 2^5 = 32\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2, 4, 8, 16, 32. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "List the factors in order for those five years.",
         "workingOut": "\\(2, 4, 8, 16, 32\\)",
         "graphData": null
       }
@@ -3347,25 +3357,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: \\(a^0 = 1\\)\n- Negative index: \\(a^{-n} = \\frac{1}{a^n}\\)\n\n**Step 2: Evaluate the expression**\n\\(4^{-2} = \\frac{1}{4^2} = \\frac{1}{16}\\)\n\n**Step 3: State final value**\n\\(\\frac{1}{16}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal of the positive power.\n\\(4^{-2} = \\frac{1}{4^2}\\)\n\n**Step 2:** Evaluate \\(4^2 = 16\\).\n\\(\\frac{1}{16}\\)\n\n**Step 3:** Simplified fraction.\n\\(\\frac{1}{16}\\)\n\n**Step 4:** Final value.\n\\(\\frac{1}{16}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal of the positive power.",
+        "workingOut": "\\(4^{-2} = \\frac{1}{4^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Evaluate \\(4^2 = 16\\).",
         "workingOut": "\\(\\frac{1}{16}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{16}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplified fraction.",
+        "workingOut": "\\(\\frac{1}{16}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{1}{16}\\)",
         "graphData": null
       }
@@ -3392,25 +3402,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the coefficient**\n\\(-\\frac{8}{b} = -8 \\times \\frac{1}{b}\\)\n\n**Step 2: Convert the fraction using the negative index law**\n\\(\\frac{1}{b} = b^{-1}\\)\nTherefore:\n\\(-\\frac{8}{b} = -8b^{-1}\\)\n\nThus, the expression in index form is **\\(-8b^{-1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write \\(\\frac{1}{b}\\) as \\(b^{-1}\\).\n\\(\\frac{1}{b} = b^{-1}\\)\n\n**Step 2:** Include the coefficient \\(-8\\).\n\\(-\\frac{8}{b} = -8b^{-1}\\)\n\n**Step 3:** Index form complete.\n\\(-8b^{-1}\\)\n\n**Step 4:** Final answer.\n\\(-8b^{-1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write \\(\\frac{1}{b}\\) as \\(b^{-1}\\).",
+        "workingOut": "\\(\\frac{1}{b} = b^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Include the coefficient \\(-8\\).",
+        "workingOut": "\\(-\\frac{8}{b} = -8b^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form complete.",
         "workingOut": "\\(-8b^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -8b^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(-8b^{-1}\\)",
         "graphData": null
       }
@@ -3429,34 +3439,34 @@ export const Y11_CH8A_QUESTIONS = [
     "timeLimit": 120,
     "question": "The population of Silverlake was \\(5000\\) in 1970 and has been doubling every decade. In which decade did the population first pass \\(1,000,000\\)?",
     "opts": [
-      "\\(\\\text{2040 to 2050}\\)",
-      "\\(\\\text{2020 to 2030}\\)",
-      "\\(\\\text{2050 to 2060}\\)",
-      "\\(\\\text{2030 to 2040}\\)"
+      "\\(\\text{2040 to 2050}\\)",
+      "\\(\\text{2020 to 2030}\\)",
+      "\\(\\text{2050 to 2060}\\)",
+      "\\(\\text{2030 to 2040}\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Formulate the population model**\nLet \\(d\\) be the number of decades since 1970. The population after \\(d\\) decades is given by:\n\\(P(d) = 5000 \\times 2^d\\)\n\n**Step 2: Set up the inequality**\nWe want to find when the population exceeds \\(1,000,000\\):\n\\(5000 \\times 2^d > 1,000,000\\)\n\n**Step 3: Simplify the inequality**\nDivide both sides by \\(5000\\):\n\\(2^d > \\frac{1,000,000}{5000}\\)\n\\(2^d > 200\\)\n\n**Step 4: Determine the smallest integer \\(d\\)**\nLet's calculate powers of \\(2\\):\n- \\(2^6 = 64\\)\n- \\(2^7 = 128\\)\n- \\(2^8 = 256\\) (This is the first power of \\(2\\) greater than \\(200\\))\n\nThus, \\(d = 8\\) decades.\n\n**Step 5: Convert decades to calendar years**\n\\(8\\) decades after 1970 corresponds to:\n\\(1970 + 80 = 2050\\)\n\nSo, the population exceeds \\(1,000,000\\) at the end of the 8th decade, which means it first passes \\(1,000,000\\) during the decade **2040 to 2050**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Population doubles each decade starting from 5000 in 1970.\n\\(P = 5000 \\times 2^n\\) after \\(n\\) decades\n\n**Step 2:** Find the smallest \\(n\\) with \\(5000 \\times 2^n > 1\\,000\\,000\\).\n\\(2^n > 200 \\implies n \\ge 8\\) since \\(2^7 = 128\\) and \\(2^8 = 256\\)\n\n**Step 3:** Check: after 7 decades (2040): \\(5000 \\times 128 = 640\\,000\\) (still under 1 million).\n\\(P_{2040} = 640\\,000\\)\n\n**Step 4:** After 8 decades (2050): \\(5000 \\times 256 = 1\\,280\\,000\\) first exceeds 1 million during 2040–2050.\n\\(\\text{2040 to 2050}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Population doubles each decade starting from 5000 in 1970.",
+        "workingOut": "\\(P = 5000 \\times 2^n\\) after \\(n\\) decades",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Find the smallest \\(n\\) with \\(5000 \\times 2^n > 1\\,000\\,000\\).",
+        "workingOut": "\\(2^n > 200 \\implies n \\ge 8\\) since \\(2^7 = 128\\) and \\(2^8 = 256\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\\text{2040 to 2050}\\)",
+        "explanation": "Check: after 7 decades (2040): \\(5000 \\times 128 = 640\\,000\\) (still under 1 million).",
+        "workingOut": "\\(P_{2040} = 640\\,000\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\\text{2040 to 2050}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\\text{2040 to 2050}\\)",
+        "explanation": "After 8 decades (2050): \\(5000 \\times 256 = 1\\,280\\,000\\) first exceeds 1 million during 2040–2050.",
+        "workingOut": "\\(\\text{2040 to 2050}\\)",
         "graphData": null
       }
     ],
@@ -3482,25 +3492,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(15^x = 1\\):\n\\(15^0 = 1\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = 0\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero base to the power 0 equals 1.\n\\(a^0 = 1\\)\n\n**Step 2:** Therefore \\(15^x = 1\\) when the exponent is 0.\n\\(x = 0\\)\n\n**Step 3:** Verify: \\(15^0 = 1\\).\n\\(x = 0\\)\n\n**Step 4:** Final solution.\n\\(x = 0\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Any non-zero base to the power 0 equals 1.",
+        "workingOut": "\\(a^0 = 1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Therefore \\(15^x = 1\\) when the exponent is 0.",
         "workingOut": "\\(x = 0\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify: \\(15^0 = 1\\).",
+        "workingOut": "\\(x = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final solution.",
         "workingOut": "\\(x = 0\\)",
         "graphData": null
       }
@@ -3527,25 +3537,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n\\(a^m \\times a^n = a^{m + n}\\)\n\n**Step 2: Add indices**\nFor \\(6^5 \\times 6 \\times 6^{-5}\\):\n\\(6^{5 + 1 - 5} = 6^1 = 6\\)\n\n**Step 3: State final form**\n\\(6\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the middle 6 as \\(6^1\\) and combine all three factors.\n\\(6^5 \\times 6^1 \\times 6^{-5}\\)\n\n**Step 2:** Add all exponents.\n\\(6^{5+1+(-5)} = 6^{1}\\)\n\n**Step 3:** Simplify.\n\\(6^1 = 6\\)\n\n**Step 4:** Leave in index form if preferred, but 6 is already simplest index form of \\(6^1\\).\n\\(6\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the middle 6 as \\(6^1\\) and combine all three factors.",
+        "workingOut": "\\(6^5 \\times 6^1 \\times 6^{-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Add all exponents.",
+        "workingOut": "\\(6^{5+1+(-5)} = 6^{1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(6\\)",
+        "explanation": "Simplify.",
+        "workingOut": "\\(6^1 = 6\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 6. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form if preferred, but 6 is already simplest index form of \\(6^1\\).",
         "workingOut": "\\(6\\)",
         "graphData": null
       }
@@ -3572,25 +3582,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the reciprocal index rule**\nA negative exponent of \\(-1\\) represents taking the reciprocal of the fraction:\n\\(\\left(\\frac{a}{b}\\right)^{-1} = \\frac{b}{a}\\)\n\n**Step 2: Convert decimal base if applicable**\n\\(0.25 = \\frac{1}{4}\\)\n\n**Step 3: Calculate the reciprocal**\n\\(\\text{Reciprocal of } \\frac{1}{4} \\text{ is } 4\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert 0.25 to a fraction.\n\\(0.25 = \\frac{1}{4}\\)\n\n**Step 2:** Take the reciprocal.\n\\(\\left(\\frac{1}{4}\\right)^{-1} = 4\\)\n\n**Step 3:** Simplified value.\n\\(4\\)\n\n**Step 4:** Final answer.\n\\(4\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert 0.25 to a fraction.",
+        "workingOut": "\\(0.25 = \\frac{1}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take the reciprocal.",
+        "workingOut": "\\(\\left(\\frac{1}{4}\\right)^{-1} = 4\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplified value.",
         "workingOut": "\\(4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(4\\)",
         "graphData": null
       }
@@ -3617,25 +3627,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n\\(a^m \\times a^n = a^{m + n}\\)\n\n**Step 2: Add indices**\nFor \\(b^9 \\times b^6\\):\n\\(b^{9+6} = b^{15}\\)\n\n**Step 3: State final form**\n\\(b^{15}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Product of powers with the same base: add exponents.\n\\(b^9 \\times b^6 = b^{9+6}\\)\n\n**Step 2:** Add 9 and 6.\n\\(b^{15}\\)\n\n**Step 3:** Leave in index form.\n\\(b^{15}\\)\n\n**Step 4:** Final answer.\n\\(b^{15}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Product of powers with the same base: add exponents.",
+        "workingOut": "\\(b^9 \\times b^6 = b^{9+6}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add 9 and 6.",
         "workingOut": "\\(b^{15}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: b^{15}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
+        "workingOut": "\\(b^{15}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(b^{15}\\)",
         "graphData": null
       }
@@ -3662,25 +3672,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Factor out the common term \\(2^y\\)**\nObserve that there are two identical terms being added together:\n\\(2^y + 2^y = 2 \\times 2^y\\)\n\n**Step 2: Apply the multiplication index law**\nRewrite \\(2\\) as \\(2^1\\):\n\\(2^1 \\times 2^y = 2^{1+y} = 2^{y+1}\\)\n\nThus, the single power representation is **\\(2^{y+1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Two identical terms sum to twice one term.\n\\(2^y + 2^y = 2 \\cdot 2^y\\)\n\n**Step 2:** Write 2 as \\(2^1\\).\n\\(2^1 \\cdot 2^y\\)\n\n**Step 3:** Add the exponents.\n\\(2^{y+1}\\)\n\n**Step 4:** Single power of 2.\n\\(2^{y+1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Two identical terms sum to twice one term.",
+        "workingOut": "\\(2^y + 2^y = 2 \\cdot 2^y\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Write 2 as \\(2^1\\).",
+        "workingOut": "\\(2^1 \\cdot 2^y\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add the exponents.",
         "workingOut": "\\(2^{y+1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2^{y+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power of 2.",
         "workingOut": "\\(2^{y+1}\\)",
         "graphData": null
       }
@@ -3707,25 +3717,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(1.5 = \\frac{15}{10} = \\frac{3}{2}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3 = \\frac{8}{27}\\)\n\nThus, the simplified value is **\\(\\frac{8}{27}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert 1.5 to a fraction.\n\\(1.5 = \\frac{3}{2}\\)\n\n**Step 2:** Negative power: reciprocal then cube.\n\\(\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3\\)\n\n**Step 3:** Cube numerator and denominator.\n\\(\\frac{8}{27}\\)\n\n**Step 4:** Final value.\n\\(\\frac{8}{27}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert 1.5 to a fraction.",
+        "workingOut": "\\(1.5 = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Negative power: reciprocal then cube.",
+        "workingOut": "\\(\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Cube numerator and denominator.",
         "workingOut": "\\(\\frac{8}{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{8}{27}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{8}{27}\\)",
         "graphData": null
       }
@@ -3752,25 +3762,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the right-hand side using the base \\(\\frac{4}{9}\\)**\nObserve that:\n\\(16 = 4^2 \\quad \\text{and} \\quad 81 = 9^2\\)\nTherefore:\n\\(\\frac{16}{81} = \\frac{4^2}{9^2} = \\left(\\frac{4}{9}\\right)^2\\)\n\n**Step 2: Equate the powers**\n\\(\\left(\\frac{4}{9}\\right)^x = \\left(\\frac{4}{9}\\right)^2\\)\nBy comparing exponents, we get:\n\\(x = 2\\)\n\nThus, the solution is **\\(x = 2\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express both sides with related bases. Note \\(\\frac{16}{81} = \\left(\\frac{4}{9}\\right)^2\\).\n\\(\\frac{16}{81} = \\frac{4^2}{9^2} = \\left(\\frac{4}{9}\\right)^2\\)\n\n**Step 2:** Rewrite the equation.\n\\(\\left(\\frac{4}{9}\\right)^x = \\left(\\frac{4}{9}\\right)^2\\)\n\n**Step 3:** Equate exponents.\n\\(x = 2\\)\n\n**Step 4:** Verified by direct substitution.\n\\(x = 2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express both sides with related bases. Note \\(\\frac{16}{81} = \\left(\\frac{4}{9}\\right)^2\\).",
+        "workingOut": "\\(\\frac{16}{81} = \\frac{4^2}{9^2} = \\left(\\frac{4}{9}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation.",
+        "workingOut": "\\(\\left(\\frac{4}{9}\\right)^x = \\left(\\frac{4}{9}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equate exponents.",
         "workingOut": "\\(x = 2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verified by direct substitution.",
         "workingOut": "\\(x = 2\\)",
         "graphData": null
       }
@@ -3797,25 +3807,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the fraction as a power with a negative index**\nRecall that:\n\\(\\frac{1}{a} = a^{-1}\\)\nTherefore:\n\\(\\frac{1}{5} = 5^{-1}\\)\n\nThe expression becomes:\n\\(5^{-1} \\times 5^z\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(5^{-1} \\times 5^z = 5^{-1+z} = 5^{z-1}\\)\n\nThus, the single power representation is **\\(5^{z-1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write \\(\\frac{1}{5}\\) as a power of 5.\n\\(\\frac{1}{5} = 5^{-1}\\)\n\n**Step 2:** Product of powers of 5.\n\\(5^{-1} \\times 5^z\\)\n\n**Step 3:** Add the exponents.\n\\(5^{z-1}\\)\n\n**Step 4:** Single power.\n\\(5^{z-1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write \\(\\frac{1}{5}\\) as a power of 5.",
+        "workingOut": "\\(\\frac{1}{5} = 5^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Product of powers of 5.",
+        "workingOut": "\\(5^{-1} \\times 5^z\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add the exponents.",
         "workingOut": "\\(5^{z-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{z-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power.",
         "workingOut": "\\(5^{z-1}\\)",
         "graphData": null
       }
@@ -3842,25 +3852,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the right-hand side using the base \\(\\frac{2}{7}\\)**\nObserve that:\n\\(\\frac{49}{4} = \\frac{7^2}{2^2} = \\left(\\frac{7}{2}\\right)^2\\)\nSince \\(\\frac{7}{2}\\) is the reciprocal of \\(\\frac{2}{7}\\):\n\\(\\left(\\frac{7}{2}\\right)^2 = \\left(\\left(\\frac{2}{7}\right)^{-1}\\right)^2 = \\left(\\frac{2}{7}\\right)^{-2}\\)\n\n**Step 2: Equate the powers**\n\\(\\left(\\frac{2}{7}\\right)^x = \\left(\\frac{2}{7}\\right)^{-2}\\)\nBy comparing exponents, we get:\n\\(x = -2\\)\n\nThus, the solution is **\\(x = -2\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Note that \\(\\frac{49}{4} = \\left(\\frac{7}{2}\\right)^2 = \\left(\\frac{2}{7}\\right)^{-2}\\).\n\\(\\frac{49}{4} = \\left(\\frac{2}{7}\\right)^{-2}\\)\n\n**Step 2:** Rewrite with equal bases.\n\\(\\left(\\frac{2}{7}\\right)^x = \\left(\\frac{2}{7}\\right)^{-2}\\)\n\n**Step 3:** Equate exponents.\n\\(x = -2\\)\n\n**Step 4:** Final solution.\n\\(x = -2\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Note that \\(\\frac{49}{4} = \\left(\\frac{7}{2}\\right)^2 = \\left(\\frac{2}{7}\\right)^{-2}\\).",
+        "workingOut": "\\(\\frac{49}{4} = \\left(\\frac{2}{7}\\right)^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite with equal bases.",
+        "workingOut": "\\(\\left(\\frac{2}{7}\\right)^x = \\left(\\frac{2}{7}\\right)^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equate exponents.",
         "workingOut": "\\(x = -2\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final solution.",
         "workingOut": "\\(x = -2\\)",
         "graphData": null
       }
@@ -3887,25 +3897,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the first term**\n\\((3xy^3)^4 = 3^4 \\times x^4 \\times (y^3)^4 = 81x^4y^{12}\\)\n\n**Step 2: Expand the second term**\n\\((3x^{-2}y^2)^2 = 3^2 \\times (x^{-2})^2 \\times (y^2)^2 = 9x^{-4}y^4\\)\n\n**Step 3: Divide the expanded terms (subtract exponents)**\n\\(\\frac{81x^4y^{12}}{9x^{-4}y^4} = \\left(\\frac{81}{9}\\right) \\times x^{4 - (-4)} \\times y^{12 - 4}\\)\n\\(= 9 \\times x^{4+4} \\times y^8\\)\n\\(= 9x^8y^8\\)\n\nThus, the simplified expression is **\\(9x^8y^8\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the numerator using power of a product.\n\\((3xy^3)^4 = 81 x^4 y^{12}\\)\n\n**Step 2:** Expand the denominator.\n\\((3x^{-2}y^2)^2 = 9 x^{-4} y^{4}\\)\n\n**Step 3:** Divide: coefficients and exponents separately.\n\\(\\frac{81}{9} = 9,\\quad x^{4-(-4)} = x^8,\\quad y^{12-4} = y^8\\)\n\n**Step 4:** Simplified product.\n\\(9x^8y^8\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the numerator using power of a product.",
+        "workingOut": "\\((3xy^3)^4 = 81 x^4 y^{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the denominator.",
+        "workingOut": "\\((3x^{-2}y^2)^2 = 9 x^{-4} y^{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(9x^8y^8\\)",
+        "explanation": "Divide: coefficients and exponents separately.",
+        "workingOut": "\\(\\frac{81}{9} = 9,\\quad x^{4-(-4)} = x^8,\\quad y^{12-4} = y^8\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 9x^8y^8. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplified product.",
         "workingOut": "\\(9x^8y^8\\)",
         "graphData": null
       }
@@ -3932,25 +3942,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\(\\left(\\frac{2}{y}\\right)^4\\):\n\\(= \\frac{16}{y^4}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise numerator and denominator to the power 4.\n\\(\\left(\\frac{2}{y}\\right)^4 = \\frac{2^4}{y^4}\\)\n\n**Step 2:** Evaluate \\(2^4 = 16\\).\n\\(\\frac{16}{y^4}\\)\n\n**Step 3:** Expanded form.\n\\(\\frac{16}{y^4}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{16}{y^4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise numerator and denominator to the power 4.",
+        "workingOut": "\\(\\left(\\frac{2}{y}\\right)^4 = \\frac{2^4}{y^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Evaluate \\(2^4 = 16\\).",
         "workingOut": "\\(\\frac{16}{y^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{16}{y^4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Expanded form.",
+        "workingOut": "\\(\\frac{16}{y^4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{16}{y^4}\\)",
         "graphData": null
       }
@@ -3977,25 +3987,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Simplify each term using the power of a power law**\n- \\((4^a)^3 = 4^{a \\times 3} = 4^{3a}\\)\n- \\((4^{3a})^2 = 4^{3a \\times 2} = 4^{6a}\\)\n\n**Step 2: Multiply the simplified terms using the multiplication law**\nAdd the exponents:\n\\(4^{3a} \\times 4^{6a} = 4^{3a + 6a} = 4^{9a}\\)\n\nThus, the simplified form is **\\(4^{9a}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Simplify each power-of-a-power first.\n\\((4^a)^3 = 4^{3a},\\quad (4^{3a})^2 = 4^{6a}\\)\n\n**Step 2:** Multiply the powers of 4 by adding exponents.\n\\(4^{3a} \\times 4^{6a} = 4^{9a}\\)\n\n**Step 3:** Single power form.\n\\(4^{9a}\\)\n\n**Step 4:** Final answer.\n\\(4^{9a}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Simplify each power-of-a-power first.",
+        "workingOut": "\\((4^a)^3 = 4^{3a},\\quad (4^{3a})^2 = 4^{6a}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Multiply the powers of 4 by adding exponents.",
+        "workingOut": "\\(4^{3a} \\times 4^{6a} = 4^{9a}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Single power form.",
         "workingOut": "\\(4^{9a}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4^{9a}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(4^{9a}\\)",
         "graphData": null
       }
@@ -4022,25 +4032,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(4^x = \\frac{1}{64}\\):\n\\(4^{-3} = \\frac{1}{64}\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = -3\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write both sides as powers of 4 (or of 2).\n\\(64 = 4^3 \\implies \\frac{1}{64} = 4^{-3}\\)\n\n**Step 2:** Equal bases.\n\\(4^x = 4^{-3}\\)\n\n**Step 3:** Equate exponents.\n\\(x = -3\\)\n\n**Step 4:** Verify: \\(4^{-3} = \\frac{1}{64}\\).\n\\(x = -3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write both sides as powers of 4 (or of 2).",
+        "workingOut": "\\(64 = 4^3 \\implies \\frac{1}{64} = 4^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Equal bases.",
+        "workingOut": "\\(4^x = 4^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equate exponents.",
         "workingOut": "\\(x = -3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = -3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify: \\(4^{-3} = \\frac{1}{64}\\).",
         "workingOut": "\\(x = -3\\)",
         "graphData": null
       }
@@ -4067,25 +4077,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the index law for multiplication**\nWhen multiplying terms with the same base, add their exponents:\n\\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2: Apply the law to the expression**\n\\(5^y \\times 5^4 = 5^{y+4}\\)\n\nThus, the simplified form is **\\(5^{y+4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Product of powers with the same base: add exponents.\n\\(5^y \\times 5^4 = 5^{y+4}\\)\n\n**Step 2:** Index form as required.\n\\(5^{y+4}\\)\n\n**Step 3:** No further simplification.\n\\(5^{y+4}\\)\n\n**Step 4:** Final answer.\n\\(5^{y+4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Product of powers with the same base: add exponents.",
+        "workingOut": "\\(5^y \\times 5^4 = 5^{y+4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form as required.",
         "workingOut": "\\(5^{y+4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{y+4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No further simplification.",
+        "workingOut": "\\(5^{y+4}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(5^{y+4}\\)",
         "graphData": null
       }
@@ -4112,25 +4122,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the first bracketed term**\n\\((2a^3b^2)^4 = 2^4 \\times (a^3)^4 \\times (b^2)^4 = 16a^{12}b^8\\)\n\n**Step 2: Expand the second bracketed term**\n\\((ab^3)^3 = a^3 \\times (b^3)^3 = a^3b^9\\)\n\n**Step 3: Multiply the two expanded terms**\n\\(16a^{12}b^8 \\times a^3b^9 = 16 \\times (a^{12} \\times a^3) \\times (b^8 \\times b^9)\\)\nAdd exponents for like bases:\n- For base \\(a\\): \\(12 + 3 = 15\\)\n- For base \\(b\\): \\(8 + 9 = 17\\)\nTherefore:\n\\(16a^{15}b^{17}\\)\n\nThus, the simplified expression is **\\(16a^{15}b^{17}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the first factor.\n\\((2a^3b^2)^4 = 16 a^{12} b^{8}\\)\n\n**Step 2:** Expand the second factor.\n\\((ab^3)^3 = a^3 b^{9}\\)\n\n**Step 3:** Multiply: coefficients and add exponents.\n\\(16a^{12+3}b^{8+9} = 16a^{15}b^{17}\\)\n\n**Step 4:** No negative indices.\n\\(16a^{15}b^{17}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the first factor.",
+        "workingOut": "\\((2a^3b^2)^4 = 16 a^{12} b^{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the second factor.",
+        "workingOut": "\\((ab^3)^3 = a^3 b^{9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(16a^{15}b^{17}\\)",
+        "explanation": "Multiply: coefficients and add exponents.",
+        "workingOut": "\\(16a^{12+3}b^{8+9} = 16a^{15}b^{17}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 16a^{15}b^{17}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No negative indices.",
         "workingOut": "\\(16a^{15}b^{17}\\)",
         "graphData": null
       }
@@ -4157,25 +4167,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply index laws**\n- Power of a Power: \\((a^m)^n = a^{m \\times n}\\)\n- Product: \\(a^m \\times a^n = a^{m+n}\\)\n\n**Step 2: Evaluate**\nFor \\(b^{-3} \\times b^{-3} \\times b^{-3}\\):\n\\(b^{-3 + (-3) + (-3)} = b^{-9}\\)\n\n**Step 3: State final form**\n\\(b^{-9}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Three factors with the same base: add the exponents.\n\\(b^{-3} \\times b^{-3} \\times b^{-3} = b^{-3-3-3}\\)\n\n**Step 2:** Sum of exponents.\n\\(b^{-9}\\)\n\n**Step 3:** Leave in index form.\n\\(b^{-9}\\)\n\n**Step 4:** Final answer.\n\\(b^{-9}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Three factors with the same base: add the exponents.",
+        "workingOut": "\\(b^{-3} \\times b^{-3} \\times b^{-3} = b^{-3-3-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Sum of exponents.",
         "workingOut": "\\(b^{-9}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: b^{-9}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
+        "workingOut": "\\(b^{-9}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(b^{-9}\\)",
         "graphData": null
       }
@@ -4202,25 +4212,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the first term**\n\\((6a^3b^{-3})^3 = 6^3 \\times (a^3)^3 \\times (b^{-3})^3 = 216a^9b^{-9}\\)\n\n**Step 2: Expand the second term**\n\\((3a^{-2}b^2)^2 = 3^2 \\times (a^{-2})^2 \\times (b^2)^2 = 9a^{-4}b^4\\)\n\n**Step 3: Divide the expanded terms (subtract exponents)**\n\\(\\frac{216a^9b^{-9}}{9a^{-4}b^4} = \\left(\\frac{216}{9}\\right) \\times a^{9 - (-4)} \\times b^{-9 - 4}\\)\n\\(= 24 \\times a^{9+4} \\times b^{-13}\\)\n\\(= 24a^{13}b^{-13}\\)\n\n**Step 4: Rewrite without negative indices**\n\\(24a^{13}b^{-13} = \\frac{24a^{13}}{b^{13}}\\)\n\nThus, the simplified expression is **\\(\\frac{24a^{13}}{b^{13}}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand the numerator.\n\\((6a^3b^{-3})^3 = 216 a^{9} b^{-9}\\)\n\n**Step 2:** Expand the denominator.\n\\((3a^{-2}b^2)^2 = 9 a^{-4} b^{4}\\)\n\n**Step 3:** Divide coefficients and subtract exponents.\n\\(\\frac{216}{9} = 24,\\quad a^{9-(-4)} = a^{13},\\quad b^{-9-4} = b^{-13}\\)\n\n**Step 4:** Rewrite without negative indices.\n\\(\\frac{24a^{13}}{b^{13}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand the numerator.",
+        "workingOut": "\\((6a^3b^{-3})^3 = 216 a^{9} b^{-9}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the denominator.",
+        "workingOut": "\\((3a^{-2}b^2)^2 = 9 a^{-4} b^{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{24a^{13}}{b^{13}}\\)",
+        "explanation": "Divide coefficients and subtract exponents.",
+        "workingOut": "\\(\\frac{216}{9} = 24,\\quad a^{9-(-4)} = a^{13},\\quad b^{-9-4} = b^{-13}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{24a^{13}}{b^{13}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Rewrite without negative indices.",
         "workingOut": "\\(\\frac{24a^{13}}{b^{13}}\\)",
         "graphData": null
       }
@@ -4247,25 +4257,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(1.25 = \\frac{125}{100} = \\frac{5}{4}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(1.25^{-1} = \\left(\\frac{5}{4}\\right)^{-1} = \\frac{4}{5}\\)\n\nThus, the simplified value is **\\(\\frac{4}{5}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert 1.25 to a fraction.\n\\(1.25 = \\frac{5}{4}\\)\n\n**Step 2:** Take the reciprocal.\n\\(\\left(\\frac{5}{4}\\right)^{-1} = \\frac{4}{5}\\)\n\n**Step 3:** Already simplified.\n\\(\\frac{4}{5}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{4}{5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert 1.25 to a fraction.",
+        "workingOut": "\\(1.25 = \\frac{5}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take the reciprocal.",
+        "workingOut": "\\(\\left(\\frac{5}{4}\\right)^{-1} = \\frac{4}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Already simplified.",
         "workingOut": "\\(\\frac{4}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{4}{5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{4}{5}\\)",
         "graphData": null
       }
@@ -4292,25 +4302,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: \\(a^0 = 1\\)\n- Negative index: \\(a^{-n} = \\frac{1}{a^n}\\)\n\n**Step 2: Evaluate the expression**\n\\(10^{-3} = \\frac{1}{10^3} = \\frac{1}{1000} = 0.001\\)\n\n**Step 3: State final value**\n\\(0.001\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal of a positive power.\n\\(10^{-3} = \\frac{1}{10^3}\\)\n\n**Step 2:** Evaluate \\(10^3 = 1000\\).\n\\(\\frac{1}{1000}\\)\n\n**Step 3:** As a decimal.\n\\(0.001\\)\n\n**Step 4:** Final value.\n\\(0.001\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal of a positive power.",
+        "workingOut": "\\(10^{-3} = \\frac{1}{10^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Evaluate \\(10^3 = 1000\\).",
+        "workingOut": "\\(\\frac{1}{1000}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "As a decimal.",
         "workingOut": "\\(0.001\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 0.001. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(0.001\\)",
         "graphData": null
       }
@@ -4337,25 +4347,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express \\(16\\) as a power of \\(2\\)**\n\\(16 = 2^4\\)\n\n**Step 2: Substitute this into the expression**\n\\(16^3 = (2^4)^3\\)\n\n**Step 3: Apply the index law for power of a power**\nMultiply the indices: \\((a^m)^n = a^{m \\times n}\\)\n\\(16^3 = 2^{4 \\times 3} = 2^{12}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express 16 as a power of 2.\n\\(16 = 2^4\\)\n\n**Step 2:** Substitute into \\(16^3\\).\n\\(16^3 = (2^4)^3\\)\n\n**Step 3:** Power of a power: multiply exponents.\n\\((2^4)^3 = 2^{12}\\)\n\n**Step 4:** Power of base 2.\n\\(2^{12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express 16 as a power of 2.",
+        "workingOut": "\\(16 = 2^4\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute into \\(16^3\\).",
+        "workingOut": "\\(16^3 = (2^4)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(2^{12}\\)",
+        "explanation": "Power of a power: multiply exponents.",
+        "workingOut": "\\((2^4)^3 = 2^{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2^{12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Power of base 2.",
         "workingOut": "\\(2^{12}\\)",
         "graphData": null
       }
@@ -4382,25 +4392,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the power of a power index law**\nMultiply the exponents:\n\\((3^{2z})^{-4} = 3^{2z \\times (-4)} = 3^{-8z}\\)\n\n**Step 2: Rewrite the expression without negative indices**\n\\(3^{-8z} = \\frac{1}{3^{8z}}\\)\n\nThus, the simplified form is **\\(\\frac{1}{3^{8z}}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Power of a power: multiply exponents.\n\\((3^{2z})^{-4} = 3^{2z \\cdot (-4)} = 3^{-8z}\\)\n\n**Step 2:** Rewrite without a negative index.\n\\(3^{-8z} = \\frac{1}{3^{8z}}\\)\n\n**Step 3:** Fraction form as required.\n\\(\\frac{1}{3^{8z}}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{1}{3^{8z}}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Power of a power: multiply exponents.",
+        "workingOut": "\\((3^{2z})^{-4} = 3^{2z \\cdot (-4)} = 3^{-8z}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite without a negative index.",
+        "workingOut": "\\(3^{-8z} = \\frac{1}{3^{8z}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Fraction form as required.",
         "workingOut": "\\(\\frac{1}{3^{8z}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{3^{8z}}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{1}{3^{8z}}\\)",
         "graphData": null
       }
@@ -4427,25 +4437,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law to each component**\n\\((4x^{-3}y^2)^{-1} = 4^{-1} \\times (x^{-3})^{-1} \\times (y^2)^{-1}\\)\n\n**Step 2: Simplify exponents by multiplying**\n- For coefficient: \\(4^{-1} = \\frac{1}{4}\\)\n- For base \\(x\\): \\(x^{-3 \\times (-1)} = x^3\\)\n- For base \\(y\\): \\(y^{2 \\times (-1)} = y^{-2}\\)\n\n**Step 3: Combine and write without negative indices**\n\\(\\frac{1}{4} \\times x^3 \\times y^{-2} = \\frac{x^3}{4y^2}\\)\n\nThus, the simplified expression is **\\(\\frac{x^3}{4y^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A power of \\(-1\\) takes the reciprocal of the whole product.\n\\((4x^{-3}y^2)^{-1} = \\frac{1}{4x^{-3}y^2}\\)\n\n**Step 2:** Alternatively apply power to each factor: \\(4^{-1} x^{3} y^{-2}\\).\n\\(\\frac{1}{4} \\cdot x^{3} \\cdot y^{-2}\\)\n\n**Step 3:** Rewrite the remaining negative index on \\(y\\).\n\\(\\frac{x^3}{4y^2}\\)\n\n**Step 4:** Final form without negative indices.\n\\(\\frac{x^3}{4y^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A power of \\(-1\\) takes the reciprocal of the whole product.",
+        "workingOut": "\\((4x^{-3}y^2)^{-1} = \\frac{1}{4x^{-3}y^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Alternatively apply power to each factor: \\(4^{-1} x^{3} y^{-2}\\).",
+        "workingOut": "\\(\\frac{1}{4} \\cdot x^{3} \\cdot y^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Rewrite the remaining negative index on \\(y\\).",
         "workingOut": "\\(\\frac{x^3}{4y^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{x^3}{4y^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final form without negative indices.",
         "workingOut": "\\(\\frac{x^3}{4y^2}\\)",
         "graphData": null
       }
@@ -4472,25 +4482,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express the first term with a visible exponent**\n\\(5 = 5^1\\)\nTherefore, the expression is:\n\\(5^1 \\times 5^y\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(5^1 \\times 5^y = 5^{1+y} = 5^{y+1}\\)\n\nThus, the single power representation is **\\(5^{y+1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 5 as \\(5^1\\).\n\\(5 = 5^1\\)\n\n**Step 2:** Product of powers of 5.\n\\(5^1 \\times 5^y\\)\n\n**Step 3:** Add exponents.\n\\(5^{y+1}\\)\n\n**Step 4:** Single power.\n\\(5^{y+1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 5 as \\(5^1\\).",
+        "workingOut": "\\(5 = 5^1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Product of powers of 5.",
+        "workingOut": "\\(5^1 \\times 5^y\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add exponents.",
         "workingOut": "\\(5^{y+1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{y+1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power.",
         "workingOut": "\\(5^{y+1}\\)",
         "graphData": null
       }
@@ -4517,25 +4527,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\n**Step 2: Evaluate the positive power**\nFor \\(\\left(\\frac{1}{3}\\right)^{-2}\\):\n\\(= \\text{Reciprocal squared/cubed} = 9\\)\n\n**Step 3: State final value**\n\\(9\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative power: reciprocal then square.\n\\(\\left(\\frac{1}{3}\\right)^{-2} = 3^2\\)\n\n**Step 2:** Evaluate the square.\n\\(3^2 = 9\\)\n\n**Step 3:** Simplified value.\n\\(9\\)\n\n**Step 4:** Final answer.\n\\(9\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative power: reciprocal then square.",
+        "workingOut": "\\(\\left(\\frac{1}{3}\\right)^{-2} = 3^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Evaluate the square.",
+        "workingOut": "\\(3^2 = 9\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplified value.",
         "workingOut": "\\(9\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 9. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(9\\)",
         "graphData": null
       }
@@ -4562,25 +4572,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their exponents:\n\\(a^m \\div a^n = a^{m-n}\\)\n\n**Step 2: Apply the law to the expression**\n\\(4^{3b} \\div 4^5 = 4^{3b-5}\\)\n\nThus, the simplified form is **\\(4^{3b-5}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Quotient of powers with the same base: subtract exponents.\n\\(\\frac{4^{3b}}{4^5} = 4^{3b-5}\\)\n\n**Step 2:** Leave in index form.\n\\(4^{3b-5}\\)\n\n**Step 3:** No further simplification needed.\n\\(4^{3b-5}\\)\n\n**Step 4:** Final answer.\n\\(4^{3b-5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Quotient of powers with the same base: subtract exponents.",
+        "workingOut": "\\(\\frac{4^{3b}}{4^5} = 4^{3b-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Leave in index form.",
         "workingOut": "\\(4^{3b-5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4^{3b-5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No further simplification needed.",
+        "workingOut": "\\(4^{3b-5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(4^{3b-5}\\)",
         "graphData": null
       }
@@ -4607,25 +4617,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\n**Step 2: Evaluate the positive power**\nFor \\(\\left(\\frac{4}{9}\\right)^0\\):\n\\(\\text{Any non-zero base to the power of } 0 \\text{ is } 1\\)\n\n**Step 3: State final value**\n\\(1\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Any non-zero number to the power 0 equals 1.\n\\(a^0 = 1\\ (a \\neq 0)\\)\n\n**Step 2:** The base \\(\\frac{4}{9}\\) is non-zero.\n\\(\\left(\\frac{4}{9}\\right)^0 = 1\\)\n\n**Step 3:** No further calculation.\n\\(1\\)\n\n**Step 4:** Final value.\n\\(1\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Any non-zero number to the power 0 equals 1.",
+        "workingOut": "\\(a^0 = 1\\ (a \\neq 0)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "The base \\(\\frac{4}{9}\\) is non-zero.",
+        "workingOut": "\\(\\left(\\frac{4}{9}\\right)^0 = 1\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No further calculation.",
         "workingOut": "\\(1\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 1. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(1\\)",
         "graphData": null
       }
@@ -4652,25 +4662,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand negative / zero index rules**\n- Zero index: \\(a^0 = 1\\)\n- Negative index: \\(a^{-n} = \\frac{1}{a^n}\\)\n\n**Step 2: Evaluate the expression**\n\\(2^{-4} = \\frac{1}{2^4} = \\frac{1}{16}\\)\n\n**Step 3: State final value**\n\\(\\frac{1}{16}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal of the positive power.\n\\(2^{-4} = \\frac{1}{2^4}\\)\n\n**Step 2:** Evaluate \\(2^4 = 16\\).\n\\(\\frac{1}{16}\\)\n\n**Step 3:** Simplified fraction.\n\\(\\frac{1}{16}\\)\n\n**Step 4:** Final value.\n\\(\\frac{1}{16}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal of the positive power.",
+        "workingOut": "\\(2^{-4} = \\frac{1}{2^4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Evaluate \\(2^4 = 16\\).",
         "workingOut": "\\(\\frac{1}{16}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{16}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplified fraction.",
+        "workingOut": "\\(\\frac{1}{16}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{1}{16}\\)",
         "graphData": null
       }
@@ -4697,25 +4707,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the negative index law**\nFor any non-zero variable \\(y\\):\n\\(y^{-n} = \\frac{1}{y^n}\\)\n\n**Step 2: Apply the law to the expression**\n\\(y^{-1} = \\frac{1}{y^1} = \\frac{1}{y}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{y}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal.\n\\(y^{-1} = \\frac{1}{y}\\)\n\n**Step 2:** No brackets or remaining negative indices.\n\\(\\frac{1}{y}\\)\n\n**Step 3:** Simplified form.\n\\(\\frac{1}{y}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{1}{y}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal.",
+        "workingOut": "\\(y^{-1} = \\frac{1}{y}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No brackets or remaining negative indices.",
         "workingOut": "\\(\\frac{1}{y}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{y}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplified form.",
+        "workingOut": "\\(\\frac{1}{y}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{1}{y}\\)",
         "graphData": null
       }
@@ -4742,25 +4752,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express \\(625\\) as a power of base \\(5\\)**\nObserve that:\n\\(625 = 5^4\\)\nTherefore, the expression is:\n\\(5^4 \\times 5^y\\)\n\n**Step 2: Apply the multiplication index law**\nAdd the exponents of like bases:\n\\(5^4 \\times 5^y = 5^{y+4}\\)\n\nThus, the single power representation is **\\(5^{y+4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write 625 as a power of 5.\n\\(625 = 5^4\\)\n\n**Step 2:** Substitute into the product.\n\\(5^4 \\times 5^y\\)\n\n**Step 3:** Add the exponents.\n\\(5^{y+4}\\)\n\n**Step 4:** Single power of 5.\n\\(5^{y+4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write 625 as a power of 5.",
+        "workingOut": "\\(625 = 5^4\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Substitute into the product.",
+        "workingOut": "\\(5^4 \\times 5^y\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Add the exponents.",
         "workingOut": "\\(5^{y+4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5^{y+4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Single power of 5.",
         "workingOut": "\\(5^{y+4}\\)",
         "graphData": null
       }
@@ -4787,25 +4797,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the negative sign**\n\\(-\\frac{1}{z^4} = -1 \\times \\frac{1}{z^4}\\)\n\n**Step 2: Apply the negative index law**\n\\(\\frac{1}{z^4} = z^{-4}\\)\nTherefore:\n\\(-\\frac{1}{z^4} = -z^{-4}\\)\n\nThus, the expression in index form is **\\(-z^{-4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the reciprocal power with a negative index.\n\\(\\frac{1}{z^4} = z^{-4}\\)\n\n**Step 2:** Keep the leading negative sign.\n\\(-\\frac{1}{z^4} = -z^{-4}\\)\n\n**Step 3:** Index form complete.\n\\(-z^{-4}\\)\n\n**Step 4:** Final answer.\n\\(-z^{-4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the reciprocal power with a negative index.",
+        "workingOut": "\\(\\frac{1}{z^4} = z^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Keep the leading negative sign.",
+        "workingOut": "\\(-\\frac{1}{z^4} = -z^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form complete.",
         "workingOut": "\\(-z^{-4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -z^{-4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(-z^{-4}\\)",
         "graphData": null
       }
@@ -4832,25 +4842,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(1\\frac{1}{4} = \\frac{1 \\times 4 + 1}{4} = \\frac{5}{4}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\\(\\left(\\frac{5}{4}\right)^{-2} = \\left(\\frac{4}{5}\\right)^2 = \\frac{4^2}{5^2} = \\frac{16}{25}\\)\n\nThus, the simplified value is **\\(\\frac{16}{25}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert mixed numeral to improper fraction.\n\\(1\\frac{1}{4} = \\frac{5}{4}\\)\n\n**Step 2:** Negative power: reciprocal then square.\n\\(\\left(\\frac{5}{4}\\right)^{-2} = \\left(\\frac{4}{5}\\right)^2\\)\n\n**Step 3:** Square both parts.\n\\(\\frac{16}{25}\\)\n\n**Step 4:** Final value.\n\\(\\frac{16}{25}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert mixed numeral to improper fraction.",
+        "workingOut": "\\(1\\frac{1}{4} = \\frac{5}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Negative power: reciprocal then square.",
+        "workingOut": "\\(\\left(\\frac{5}{4}\\right)^{-2} = \\left(\\frac{4}{5}\\right)^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Square both parts.",
         "workingOut": "\\(\\frac{16}{25}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{16}{25}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{16}{25}\\)",
         "graphData": null
       }
@@ -4877,25 +4887,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative index law**\n\\(x^{-3} = \\frac{1}{x^3}\\)\nTherefore:\n\\(\\frac{1}{x^3} = 64\\)\n\n**Step 2: Take the reciprocal of both sides**\n\\(x^3 = \\frac{1}{64}\\)\n\n**Step 3: Solve for \\(x\\) using cube root**\n\\(x = \\sqrt[3]{\\frac{1}{64}} = \\frac{\\sqrt[3]{1}}{\\sqrt[3]{64}} = \\frac{1}{4}\\)\n\nThus, the solution is **\\(x = \\frac{1}{4}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Rewrite the negative index as a reciprocal cube.\n\\(x^{-3} = \\frac{1}{x^3} = 64\\)\n\n**Step 2:** Take reciprocals: \\(x^3 = \\frac{1}{64}\\).\n\\(x^3 = \\frac{1}{64}\\)\n\n**Step 3:** Take cube roots: \\(x = \\frac{1}{4}\\) since \\(4^3 = 64\\).\n\\(x = \\frac{1}{4}\\)\n\n**Step 4:** Check: \\(\\left(\\frac{1}{4}\\right)^{-3} = 4^3 = 64\\).\n\\(x = \\frac{1}{4}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Rewrite the negative index as a reciprocal cube.",
+        "workingOut": "\\(x^{-3} = \\frac{1}{x^3} = 64\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take reciprocals: \\(x^3 = \\frac{1}{64}\\).",
+        "workingOut": "\\(x^3 = \\frac{1}{64}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Take cube roots: \\(x = \\frac{1}{4}\\) since \\(4^3 = 64\\).",
         "workingOut": "\\(x = \\frac{1}{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = \\frac{1}{4}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Check: \\(\\left(\\frac{1}{4}\\right)^{-3} = 4^3 = 64\\).",
         "workingOut": "\\(x = \\frac{1}{4}\\)",
         "graphData": null
       }
@@ -4922,25 +4932,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Set up the formula for the number of particles**\n\\(\\text{Number of particles} = \\frac{\\text{Total mass}}{\\text{Mass of one particle}}\\)\n\n**Step 2: Substitute the given values**\n\\(\\text{Number of particles} = \\frac{1\\text{ kg}}{2.5 \\times 10^{-27}\\text{ kg}}\\)\n\n**Step 3: Calculate the division in scientific notation**\n\\(\\text{Number of particles} = \\frac{1}{2.5} \\times \\frac{1}{10^{-27}}\\)\nObserve that:\n\\(\\frac{1}{2.5} = 0.4\\)\n\\(\\frac{1}{10^{-27}} = 10^{27}\\)\nTherefore:\n\\(\\text{Number of particles} = 0.4 \\times 10^{27}\\)\n\n**Step 4: Convert to proper scientific notation**\n\\(0.4 \\times 10^{27} = 4 \\times 10^{-1} \\times 10^{27} = 4 \\times 10^{26}\\)\n\nThus, there are approximately **\\(4 \\times 10^{26}\\)** baryons in \\(1\\text{ kg}\\).",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Number of baryons = total mass divided by mass of one baryon.\n\\(N = \\frac{1}{2.5 \\times 10^{-27}}\\)\n\n**Step 2:** Rewrite 1 as scientific notation and divide.\n\\(N = \\frac{1 \\times 10^{0}}{2.5 \\times 10^{-27}}\\)\n\n**Step 3:** Divide coefficients and subtract exponents.\n\\(\\frac{1}{2.5} = 0.4,\\quad 0 - (-27) = 27 \\implies 0.4 \\times 10^{27}\\)\n\n**Step 4:** Normalise scientific notation: \\(0.4 \\times 10^{27} = 4 \\times 10^{26}\\).\n\\(4 \\times 10^{26}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Number of baryons = total mass divided by mass of one baryon.",
+        "workingOut": "\\(N = \\frac{1}{2.5 \\times 10^{-27}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite 1 as scientific notation and divide.",
+        "workingOut": "\\(N = \\frac{1 \\times 10^{0}}{2.5 \\times 10^{-27}}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(4 \\times 10^{26}\\)",
+        "explanation": "Divide coefficients and subtract exponents.",
+        "workingOut": "\\(\\frac{1}{2.5} = 0.4,\\quad 0 - (-27) = 27 \\implies 0.4 \\times 10^{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4 \\times 10^{26}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Normalise scientific notation: \\(0.4 \\times 10^{27} = 4 \\times 10^{26}\\).",
         "workingOut": "\\(4 \\times 10^{26}\\)",
         "graphData": null
       }
@@ -4967,25 +4977,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Separate the coefficient**\n\\(\\frac{9}{u^3} = 9 \\times \\frac{1}{u^3}\\)\n\n**Step 2: Convert using the negative index law**\n\\(\\frac{1}{u^3} = u^{-3}\\)\nTherefore:\n\\(\\frac{9}{u^3} = 9u^{-3}\\)\n\nThus, the expression in index form is **\\(9u^{-3}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write reciprocal power with negative index.\n\\(\\frac{1}{u^3} = u^{-3}\\)\n\n**Step 2:** Keep coefficient 9.\n\\(\\frac{9}{u^3} = 9u^{-3}\\)\n\n**Step 3:** Index form complete.\n\\(9u^{-3}\\)\n\n**Step 4:** Final answer.\n\\(9u^{-3}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write reciprocal power with negative index.",
+        "workingOut": "\\(\\frac{1}{u^3} = u^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Keep coefficient 9.",
+        "workingOut": "\\(\\frac{9}{u^3} = 9u^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form complete.",
         "workingOut": "\\(9u^{-3}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 9u^{-3}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(9u^{-3}\\)",
         "graphData": null
       }
@@ -5012,25 +5022,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\n**Step 2: Evaluate the positive power**\nFor \\(\\left(\\frac{2}{3}\\right)^{-3}\\):\n\\(= \\text{Reciprocal squared/cubed} = \\frac{27}{8}\\)\n\n**Step 3: State final value**\n\\(\\frac{27}{8}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative power: reciprocal then raise to 3.\n\\(\\left(\\frac{2}{3}\\right)^{-3} = \\left(\\frac{3}{2}\\right)^3\\)\n\n**Step 2:** Cube numerator and denominator.\n\\(\\frac{3^3}{2^3} = \\frac{27}{8}\\)\n\n**Step 3:** Simplified fraction.\n\\(\\frac{27}{8}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{27}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative power: reciprocal then raise to 3.",
+        "workingOut": "\\(\\left(\\frac{2}{3}\\right)^{-3} = \\left(\\frac{3}{2}\\right)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Cube numerator and denominator.",
+        "workingOut": "\\(\\frac{3^3}{2^3} = \\frac{27}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplified fraction.",
         "workingOut": "\\(\\frac{27}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{27}{8}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{27}{8}\\)",
         "graphData": null
       }
@@ -5057,25 +5067,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Express both sides with the same base**\nFor \\(4^x = 64\\):\n\\(4^3 = 64\\)\n\n**Step 2: Equate indices**\nBy matching exponents:\n\\(x = 3\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Express 64 as a power of 4.\n\\(4^1 = 4,\\; 4^2 = 16,\\; 4^3 = 64\\)\n\n**Step 2:** Rewrite the equation.\n\\(4^x = 4^3\\)\n\n**Step 3:** Equate exponents.\n\\(x = 3\\)\n\n**Step 4:** Verify: \\(4^3 = 64\\).\n\\(x = 3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Express 64 as a power of 4.",
+        "workingOut": "\\(4^1 = 4,\\; 4^2 = 16,\\; 4^3 = 64\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Rewrite the equation.",
+        "workingOut": "\\(4^x = 4^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Equate exponents.",
         "workingOut": "\\(x = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = 3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Verify: \\(4^3 = 64\\).",
         "workingOut": "\\(x = 3\\)",
         "graphData": null
       }
@@ -5102,25 +5112,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Take the square root of both sides**\n\\(x^2 = \\frac{49}{144}\\)\n\\(x = \\pm \\sqrt{\\frac{49}{144}}\\)\n\n**Step 2: Calculate the square root**\n\\(x = \\pm \\frac{\\sqrt{49}}{\\sqrt{144}} = \\pm \\frac{7}{12}\\)\n\n**Step 3: Select the positive solution**\nSince the question asks for the positive solution, we have:\n\\(x = \\frac{7}{12}\\)\n\nThus, the positive solution is **\\(x = \\frac{7}{12}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Take square roots of both sides.\n\\(x = \\pm\\sqrt{\\frac{49}{144}}\\)\n\n**Step 2:** Square root of a fraction is the ratio of square roots.\n\\(x = \\pm\\frac{7}{12}\\)\n\n**Step 3:** The question asks for the positive solution only.\n\\(x = \\frac{7}{12}\\)\n\n**Step 4:** Final positive root.\n\\(x = \\frac{7}{12}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Take square roots of both sides.",
+        "workingOut": "\\(x = \\pm\\sqrt{\\frac{49}{144}}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Square root of a fraction is the ratio of square roots.",
+        "workingOut": "\\(x = \\pm\\frac{7}{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "The question asks for the positive solution only.",
         "workingOut": "\\(x = \\frac{7}{12}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x = \\frac{7}{12}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final positive root.",
         "workingOut": "\\(x = \\frac{7}{12}\\)",
         "graphData": null
       }
@@ -5147,25 +5157,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the perfect square expansion formula**\nRecall that:\n\\((a + b)^2 = a^2 + 2ab + b^2\\)\n\n**Step 2: Substitute \\(a = y\\) and \\(b = y^{-1}\\) into the formula**\n\\((y + y^{-1})^2 = y^2 + 2(y)(y^{-1}) + (y^{-1})^2\\)\n\n**Step 3: Simplify the terms using index laws**\n- For the middle term: \\(2(y^1 \\times y^{-1}) = 2(y^{1-1}) = 2(y^0) = 2(1) = 2\\)\n- For the third term: \\((y^{-1})^2 = y^{-2} = \\frac{1}{y^2}\\)\n\nTherefore, the expanded expression is:\n\\(y^2 + 2 + \\frac{1}{y^2}\\)\n\nThus, the simplified expression is **\\(y^2 + 2 + \\frac{1}{y^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand using \\((a+b)^2 = a^2 + 2ab + b^2\\).\n\\((y + y^{-1})^2 = y^2 + 2y\\cdot y^{-1} + (y^{-1})^2\\)\n\n**Step 2:** Simplify the middle term: \\(y \\cdot y^{-1} = 1\\).\n\\(y^2 + 2 + y^{-2}\\)\n\n**Step 3:** Rewrite \\(y^{-2}\\) without a negative index.\n\\(y^2 + 2 + \\frac{1}{y^2}\\)\n\n**Step 4:** Fully expanded form.\n\\(y^2 + 2 + \\frac{1}{y^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand using \\((a+b)^2 = a^2 + 2ab + b^2\\).",
+        "workingOut": "\\((y + y^{-1})^2 = y^2 + 2y\\cdot y^{-1} + (y^{-1})^2\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the middle term: \\(y \\cdot y^{-1} = 1\\).",
+        "workingOut": "\\(y^2 + 2 + y^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Rewrite \\(y^{-2}\\) without a negative index.",
         "workingOut": "\\(y^2 + 2 + \\frac{1}{y^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y^2 + 2 + \\frac{1}{y^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Fully expanded form.",
         "workingOut": "\\(y^2 + 2 + \\frac{1}{y^2}\\)",
         "graphData": null
       }
@@ -5192,25 +5202,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the decimal to a simplified fraction**\n\\(1.6 = \\frac{16}{10} = \\frac{8}{5}\\)\n\n**Step 2: Apply the negative index exponent \\(-1\\) (reciprocal)**\n\\(1.6^{-1} = \\left(\\frac{8}{5}\\right)^{-1} = \\frac{5}{8}\\)\n\nThus, the simplified value is **\\(\\frac{5}{8}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert 1.6 to a fraction.\n\\(1.6 = \\frac{16}{10} = \\frac{8}{5}\\)\n\n**Step 2:** Take the reciprocal.\n\\(\\left(\\frac{8}{5}\\right)^{-1} = \\frac{5}{8}\\)\n\n**Step 3:** Already simplified.\n\\(\\frac{5}{8}\\)\n\n**Step 4:** Final answer.\n\\(\\frac{5}{8}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert 1.6 to a fraction.",
+        "workingOut": "\\(1.6 = \\frac{16}{10} = \\frac{8}{5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Take the reciprocal.",
+        "workingOut": "\\(\\left(\\frac{8}{5}\\right)^{-1} = \\frac{5}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Already simplified.",
         "workingOut": "\\(\\frac{5}{8}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{5}{8}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(\\frac{5}{8}\\)",
         "graphData": null
       }
@@ -5237,25 +5247,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the multiplication index law**\nWhen multiplying terms with the same base, add their indices:\n\\(a^m \\times a^n = a^{m + n}\\)\n\n**Step 2: Add indices**\nFor \\(y^{12} \\times y^{-8}\\):\n\\(y^{12 + (-8)} = y^4\\)\n\n**Step 3: State final form**\n\\(y^4\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Product of powers with the same base: add exponents.\n\\(y^{12} \\times y^{-8} = y^{12-8}\\)\n\n**Step 2:** Simplify the exponent.\n\\(y^{4}\\)\n\n**Step 3:** Leave in index form.\n\\(y^4\\)\n\n**Step 4:** Final answer.\n\\(y^4\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Product of powers with the same base: add exponents.",
+        "workingOut": "\\(y^{12} \\times y^{-8} = y^{12-8}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the exponent.",
+        "workingOut": "\\(y^{4}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Leave in index form.",
         "workingOut": "\\(y^4\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y^4. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final answer.",
         "workingOut": "\\(y^4\\)",
         "graphData": null
       }
@@ -5282,25 +5292,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n\\(a^m \\div a^n = a^{m - n}\\)\n\n**Step 2: Subtract indices**\nFor \\(y^{12} \\div y^{-3}\\):\n\\(y^{12 - (-3)} = y^{12 + 3} = y^{15}\\)\n\n**Step 3: State final form**\n\\(y^{15}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Quotient law: subtract the exponents.\n\\(\\frac{y^{12}}{y^{-3}} = y^{12-(-3)}\\)\n\n**Step 2:** Subtracting a negative adds.\n\\(y^{15}\\)\n\n**Step 3:** Leave in index form.\n\\(y^{15}\\)\n\n**Step 4:** Final answer.\n\\(y^{15}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Quotient law: subtract the exponents.",
+        "workingOut": "\\(\\frac{y^{12}}{y^{-3}} = y^{12-(-3)}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Subtracting a negative adds.",
         "workingOut": "\\(y^{15}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y^{15}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
+        "workingOut": "\\(y^{15}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(y^{15}\\)",
         "graphData": null
       }
@@ -5327,25 +5337,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Recall the negative index law**\nFor any base \\(a\\):\n\\(\\frac{1}{a^n} = a^{-n}\\)\n\n**Step 2: Apply the law to the fraction**\n\\(\\frac{1}{y} = \\frac{1}{y^1} = y^{-1}\\)\n\nThus, the expression in index form is **\\(y^{-1}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** A reciprocal is written with index \\(-1\\).\n\\(\\frac{1}{y} = y^{-1}\\)\n\n**Step 2:** Index form as required.\n\\(y^{-1}\\)\n\n**Step 3:** No coefficient needed.\n\\(y^{-1}\\)\n\n**Step 4:** Final answer.\n\\(y^{-1}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "A reciprocal is written with index \\(-1\\).",
+        "workingOut": "\\(\\frac{1}{y} = y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Index form as required.",
         "workingOut": "\\(y^{-1}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: y^{-1}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No coefficient needed.",
+        "workingOut": "\\(y^{-1}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(y^{-1}\\)",
         "graphData": null
       }
@@ -5372,25 +5382,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Divide the numeric coefficients**\n\\(\\frac{45}{9} = 5\\)\n\n**Step 2: Divide variable bases using the division law (subtract exponents)**\n- For base \\(p\\): \\(p^3 \\div p^1 = p^{3-1} = p^2\\)\n- For base \\(q\\): \\(q^5 \\div q^7 = q^{5-7} = q^{-2}\\)\n\n**Step 3: Combine and rewrite without negative indices**\n\\(5 \\times p^2 \\times q^{-2} = 5p^2q^{-2} = \\frac{5p^2}{q^2}\\)\n\nThus, the simplified expression is **\\(\\frac{5p^2}{q^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Simplify the coefficient first.\n\\(\\frac{45}{9} = 5\\)\n\n**Step 2:** Subtract exponents for \\(p\\) and for \\(q\\).\n\\(p^{3-1} = p^2,\\quad q^{5-7} = q^{-2}\\)\n\n**Step 3:** Combine: \\(5p^2 q^{-2}\\).\n\\(5p^2 q^{-2}\\)\n\n**Step 4:** Rewrite without negative indices.\n\\(\\frac{5p^2}{q^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Simplify the coefficient first.",
+        "workingOut": "\\(\\frac{45}{9} = 5\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Subtract exponents for \\(p\\) and for \\(q\\).",
+        "workingOut": "\\(p^{3-1} = p^2,\\quad q^{5-7} = q^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{5p^2}{q^2}\\)",
+        "explanation": "Combine: \\(5p^2 q^{-2}\\).",
+        "workingOut": "\\(5p^2 q^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{5p^2}{q^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Rewrite without negative indices.",
         "workingOut": "\\(\\frac{5p^2}{q^2}\\)",
         "graphData": null
       }
@@ -5417,25 +5427,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert all dimensions to kilometres**\n- Length \\(= 4\\text{ km}\\)\n- Width \\(= 3\\text{ km}\\)\n- Height \\(= 250\\text{ m} = \\frac{250}{1000}\\text{ km} = 0.25\\text{ km}\\)\n\n**Step 2: Calculate the volume using the rectangular prism formula**\n\\(V = \\text{Length} \\times \\text{Width} \\times \\text{Height}\\)\n\\(V = 4 \\times 3 \\times 0.25\\)\n\\(V = 12 \\times 0.25 = 3\\text{ km}^3\\)\n\nThus, the approximate volume of the rock is **\\(3\\text{ km}^3\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert all dimensions to kilometres for consistent units.\n\\(250\\text{ m} = 0.25\\text{ km}\\)\n\n**Step 2:** Volume of a rectangular block is length × width × height.\n\\(V = 4 \\times 3 \\times 0.25\\)\n\n**Step 3:** Multiply step by step.\n\\(4 \\times 3 = 12,\\quad 12 \\times 0.25 = 3\\)\n\n**Step 4:** Approximate volume of the rock.\n\\(3\\text{ km}^3\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert all dimensions to kilometres for consistent units.",
+        "workingOut": "\\(250\\text{ m} = 0.25\\text{ km}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Volume of a rectangular block is length × width × height.",
+        "workingOut": "\\(V = 4 \\times 3 \\times 0.25\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(3\\text{ km}^3\\)",
+        "explanation": "Multiply step by step.",
+        "workingOut": "\\(4 \\times 3 = 12,\\quad 12 \\times 0.25 = 3\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3\\text{ km}^3. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Approximate volume of the rock.",
         "workingOut": "\\(3\\text{ km}^3\\)",
         "graphData": null
       }
@@ -5462,25 +5472,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State the division index law**\nWhen dividing terms with the same base, subtract their indices:\n\\(a^m \\div a^n = a^{m - n}\\)\n\n**Step 2: Subtract indices**\nFor \\(z \\div z^{15}\\):\n\\(z^{1 - 15} = z^{-14}\\)\n\n**Step 3: State final form**\n\\(z^{-14}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Write the lone \\(z\\) as \\(z^1\\).\n\\(z = z^1\\)\n\n**Step 2:** Quotient law: subtract exponents.\n\\(\\frac{z^1}{z^{15}} = z^{1-15}\\)\n\n**Step 3:** Simplify the exponent.\n\\(z^{-14}\\)\n\n**Step 4:** Leave in index form.\n\\(z^{-14}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Write the lone \\(z\\) as \\(z^1\\).",
+        "workingOut": "\\(z = z^1\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Quotient law: subtract exponents.",
+        "workingOut": "\\(\\frac{z^1}{z^{15}} = z^{1-15}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Simplify the exponent.",
         "workingOut": "\\(z^{-14}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: z^{-14}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Leave in index form.",
         "workingOut": "\\(z^{-14}\\)",
         "graphData": null
       }
@@ -5507,25 +5517,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Convert the mixed numeral to an improper fraction**\n\\(1\\frac{1}{2} = \\frac{1 \\times 2 + 1}{2} = \\frac{3}{2}\\)\n\n**Step 2: Apply the negative exponent law for fractions**\n\\(\\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n\\)\n\\(\\left(\\frac{3}{2}\right)^{-3} = \\left(\\frac{2}{3}\\right)^3 = \\frac{2^3}{3^3} = \\frac{8}{27}\\)\n\nThus, the simplified value is **\\(\\frac{8}{27}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Convert mixed numeral to improper fraction.\n\\(1\\frac{1}{2} = \\frac{3}{2}\\)\n\n**Step 2:** Negative power: reciprocal then cube.\n\\(\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3\\)\n\n**Step 3:** Cube both parts.\n\\(\\frac{8}{27}\\)\n\n**Step 4:** Final value.\n\\(\\frac{8}{27}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Convert mixed numeral to improper fraction.",
+        "workingOut": "\\(1\\frac{1}{2} = \\frac{3}{2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Negative power: reciprocal then cube.",
+        "workingOut": "\\(\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Cube both parts.",
         "workingOut": "\\(\\frac{8}{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{8}{27}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(\\frac{8}{27}\\)",
         "graphData": null
       }
@@ -5552,25 +5562,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Identify the base of the negative exponent**\nThe entire term \\(4b\\) inside the brackets is raised to the power of \\(-2\\):\n\\((4b)^{-2} = \\frac{1}{(4b)^2}\\)\n\n**Step 2: Expand the denominator**\nApply the power index law \\((xy)^n = x^n y^n\\):\n\\((4b)^2 = 4^2 \\times b^2 = 16b^2\\)\nTherefore:\n\\((4b)^{-2} = \\frac{1}{16b^2}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{16b^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise each factor to the power \\(-2\\), or take reciprocal of the square.\n\\((4b)^{-2} = \\frac{1}{(4b)^2}\\)\n\n**Step 2:** Expand the denominator.\n\\((4b)^2 = 16b^2\\)\n\n**Step 3:** Write as a fraction.\n\\(\\frac{1}{16b^2}\\)\n\n**Step 4:** No remaining negative indices or brackets.\n\\(\\frac{1}{16b^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise each factor to the power \\(-2\\), or take reciprocal of the square.",
+        "workingOut": "\\((4b)^{-2} = \\frac{1}{(4b)^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Expand the denominator.",
+        "workingOut": "\\((4b)^2 = 16b^2\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Write as a fraction.",
         "workingOut": "\\(\\frac{1}{16b^2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{16b^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "No remaining negative indices or brackets.",
         "workingOut": "\\(\\frac{1}{16b^2}\\)",
         "graphData": null
       }
@@ -5597,25 +5607,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Multiply numeric coefficients**\n\\(\\frac{1}{24} \\times 8 = \\frac{8}{24} = \\frac{1}{3}\\)\n\n**Step 2: Multiply variable bases using the multiplication law**\n- For base \\(u\\): \\(u^{-3} \\times u^1 = u^{-3+1} = u^{-2}\\)\n- For base \\(v\\): \\(v^4 \\times v^{-6} = v^{4 + (-6)} = v^{-2}\\)\n\n**Step 3: Combine and express without negative indices**\n\\(\\frac{1}{3} \\times u^{-2} \\times v^{-2} = \\frac{1}{3u^2v^2}\\)\n\nThus, the simplified expression is **\\(\\frac{1}{3u^2v^2}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Multiply coefficients first.\n\\(\\frac{1}{24} \\times 8 = \\frac{8}{24} = \\frac{1}{3}\\)\n\n**Step 2:** Add exponents for \\(u\\) and for \\(v\\).\n\\(u^{-3+1} = u^{-2},\\quad v^{4+(-6)} = v^{-2}\\)\n\n**Step 3:** Combine: \\(\\frac{1}{3}u^{-2}v^{-2}\\).\n\\(\\frac{1}{3}u^{-2}v^{-2}\\)\n\n**Step 4:** Rewrite without negative indices.\n\\(\\frac{1}{3u^2v^2}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Multiply coefficients first.",
+        "workingOut": "\\(\\frac{1}{24} \\times 8 = \\frac{8}{24} = \\frac{1}{3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Add exponents for \\(u\\) and for \\(v\\).",
+        "workingOut": "\\(u^{-3+1} = u^{-2},\\quad v^{4+(-6)} = v^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{3u^2v^2}\\)",
+        "explanation": "Combine: \\(\\frac{1}{3}u^{-2}v^{-2}\\).",
+        "workingOut": "\\(\\frac{1}{3}u^{-2}v^{-2}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{1}{3u^2v^2}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Rewrite without negative indices.",
         "workingOut": "\\(\\frac{1}{3u^2v^2}\\)",
         "graphData": null
       }
@@ -5642,25 +5652,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Expand the expression**\n\\(3^4 = 3 \\times 3 \\times 3 \\times 3\\)\n\n**Step 2: State the final value**\n\\(81\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand as repeated multiplication.\n\\(3^4 = 3 \\times 3 \\times 3 \\times 3\\)\n\n**Step 2:** First multiply: \\(3 \\times 3 = 9\\).\n\\(9 \\times 3 = 27\\)\n\n**Step 3:** Multiply by the last 3.\n\\(27 \\times 3 = 81\\)\n\n**Step 4:** Final value.\n\\(81\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand as repeated multiplication.",
+        "workingOut": "\\(3^4 = 3 \\times 3 \\times 3 \\times 3\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "First multiply: \\(3 \\times 3 = 9\\).",
+        "workingOut": "\\(9 \\times 3 = 27\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(81\\)",
+        "explanation": "Multiply by the last 3.",
+        "workingOut": "\\(27 \\times 3 = 81\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 81. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Final value.",
         "workingOut": "\\(81\\)",
         "graphData": null
       }
@@ -5687,25 +5697,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Apply the perfect square expansion formula**\nRecall that:\n\\((a - b)^2 = a^2 - 2ab + b^2\\)\n\n**Step 2: Substitute \\(a = x^3\\) and \\(b = x^{-3}\\) into the formula**\n\\((x^3 - x^{-3})^2 = (x^3)^2 - 2(x^3)(x^{-3}) + (x^{-3})^2\\)\n\n**Step 3: Simplify the terms using index laws**\n- For the first term: \\((x^3)^2 = x^{3 \\times 2} = x^6\\)\n- For the middle term: \\(-2(x^3 \\times x^{-3}) = -2(x^{3-3}) = -2(x^0) = -2\\)\n- For the third term: \\((x^{-3})^2 = x^{-6} = \\frac{1}{x^6}\\)\n\nTherefore, the expanded expression is:\n\\(x^6 - 2 + \\frac{1}{x^6}\\)\n\nThus, the simplified expression is **\\(x^6 - 2 + \\frac{1}{x^6}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Expand using \\((a-b)^2 = a^2 - 2ab + b^2\\).\n\\((x^3 - x^{-3})^2 = x^6 - 2x^3\\cdot x^{-3} + x^{-6}\\)\n\n**Step 2:** Simplify the middle term: \\(x^3 \\cdot x^{-3} = 1\\).\n\\(x^6 - 2 + x^{-6}\\)\n\n**Step 3:** Rewrite \\(x^{-6}\\) without a negative index.\n\\(x^6 - 2 + \\frac{1}{x^6}\\)\n\n**Step 4:** Fully expanded form.\n\\(x^6 - 2 + \\frac{1}{x^6}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Expand using \\((a-b)^2 = a^2 - 2ab + b^2\\).",
+        "workingOut": "\\((x^3 - x^{-3})^2 = x^6 - 2x^3\\cdot x^{-3} + x^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
+        "explanation": "Simplify the middle term: \\(x^3 \\cdot x^{-3} = 1\\).",
+        "workingOut": "\\(x^6 - 2 + x^{-6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Rewrite \\(x^{-6}\\) without a negative index.",
         "workingOut": "\\(x^6 - 2 + \\frac{1}{x^6}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: x^6 - 2 + \\frac{1}{x^6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Fully expanded form.",
         "workingOut": "\\(x^6 - 2 + \\frac{1}{x^6}\\)",
         "graphData": null
       }
@@ -5732,25 +5742,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: State bracket expansion law**\n- Product raised to a power: \\((ab)^n = a^n b^n\\)\n- Quotient raised to a power: \\(\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}\\)\n\n**Step 2: Expand each component**\nFor \\(\\left(\\frac{5a}{3}\\right)^3\\):\n\\(= \\frac{125a^3}{27}\\)",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Raise numerator and denominator each to the power 3.\n\\(\\left(\\frac{5a}{3}\\right)^3 = \\frac{(5a)^3}{3^3}\\)\n\n**Step 2:** Expand the numerator: \\((5a)^3 = 125a^3\\).\n\\(\\frac{125a^3}{27}\\)\n\n**Step 3:** Denominator: \\(3^3 = 27\\).\n\\(\\frac{125a^3}{27}\\)\n\n**Step 4:** Final expanded form.\n\\(\\frac{125a^3}{27}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Raise numerator and denominator each to the power 3.",
+        "workingOut": "\\(\\left(\\frac{5a}{3}\\right)^3 = \\frac{(5a)^3}{3^3}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "Expand the numerator: \\((5a)^3 = 125a^3\\).",
         "workingOut": "\\(\\frac{125a^3}{27}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\frac{125a^3}{27}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Denominator: \\(3^3 = 27\\).",
+        "workingOut": "\\(\\frac{125a^3}{27}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final expanded form.",
         "workingOut": "\\(\\frac{125a^3}{27}\\)",
         "graphData": null
       }
@@ -5777,25 +5787,25 @@ export const Y11_CH8A_QUESTIONS = [
     "a": 0,
     "answer": "0",
     "hint": "",
-    "solution": "### Step-by-Step Solution\n\n**Step 1: Understand the position of the negative sign**\nThe negative sign is a coefficient of \\(-1\\) and is not affected by the exponent:\n\\(-b^{-5} = -1 \\times b^{-5}\\)\n\n**Step 2: Apply the negative index law to \\(b^{-5}\\)**\n\\(b^{-5} = \\frac{1}{b^5}\\)\nTherefore:\n\\(-b^{-5} = -\\frac{1}{b^5}\\)\n\nThus, the simplified expression is **\\(-\\frac{1}{b^5}\\)**.",
+    "solution": "### Step-by-Step Solution\n\n**Step 1:** Negative index means reciprocal of the positive power; keep the leading minus sign.\n\\(-b^{-5} = -\\frac{1}{b^5}\\)\n\n**Step 2:** No remaining negative indices or brackets.\n\\(-\\frac{1}{b^5}\\)\n\n**Step 3:** Simplified fraction form.\n\\(-\\frac{1}{b^5}\\)\n\n**Step 4:** Final answer.\n\\(-\\frac{1}{b^5}\\)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Indices: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "Given data",
+        "explanation": "Negative index means reciprocal of the positive power; keep the leading minus sign.",
+        "workingOut": "\\(-b^{-5} = -\\frac{1}{b^5}\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "Apply the appropriate standard form",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
+        "explanation": "No remaining negative indices or brackets.",
         "workingOut": "\\(-\\frac{1}{b^5}\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -\\frac{1}{b^5}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
+        "explanation": "Simplified fraction form.",
+        "workingOut": "\\(-\\frac{1}{b^5}\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer.",
         "workingOut": "\\(-\\frac{1}{b^5}\\)",
         "graphData": null
       }

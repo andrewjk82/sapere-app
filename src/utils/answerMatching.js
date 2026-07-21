@@ -217,8 +217,16 @@ export const expandAnswerCandidates = (value) => {
     }
     return s;
   };
+  // \b word boundaries are required: without them "or" also matches inside
+  // ordinary words ("Horizontal", "forty-two", "before", "proportion"),
+  // splitting a single option into two fragments (e.g. "Horizontal dilation…"
+  // -> "H" + "izontal dilation…"). Two unrelated options that both start
+  // with the same letter before an embedded "or" then both reduce to that
+  // one-letter fragment and grade as matching each other — a wrong option
+  // silently grades correct (728 seed option/answer strings affected;
+  // caught via abb2020e1s-mc10, 2026-07-21).
   const parts = stripped
-    .split(/\s*\(?\s*or\s*\)?\s*/i)
+    .split(/\s*\(?\s*\bor\b\s*\)?\s*/i)
     .map((p) => stripOuterParens(p))
     .filter(Boolean);
   const out = [];
