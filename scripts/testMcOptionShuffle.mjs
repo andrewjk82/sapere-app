@@ -249,6 +249,31 @@ check('outer-paren strip still works for (66.0) and or-forms', () => {
   assert.equal(answersMatch('66', '66 (or 66.0)'), true);
 });
 
+// ── \text{} set-notation collision (2026-07-21 report: minah, Ch12A Sets) ──
+// \text{...} inside \(...\) is also used for literal set/list content, not
+// only units. Deleting its content wholesale collapsed distinct MC options
+// ("A∪B={a,c,l,n,r,u,y}, A∩B={y}" vs "A∪B={y}, A∩B={a,c,l,n,r,u,y}" vs
+// "A∪B={a,c,l,n,r,u}, A∩B={y}") to the same normalised string, so 3 of 4
+// options graded/highlighted as correct together. Units must still strip.
+check('\\text{} set-notation options never cross-match; units still strip', () => {
+  const union = '\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)';
+  const swapped = '\\(A \\cup B = \\{\\text{y}\\}\\) and \\(A \\cap B = \\{\\text{a, c, l, n, r, u, y}\\}\\)';
+  const shortUnion = '\\(A \\cup B = \\{\\text{a, c, l, n, r, u}\\}\\) and \\(A \\cap B = \\{\\text{y}\\}\\)';
+  const empty = '\\(A \\cup B = \\{\\text{a, c, l, n, r, u, y}\\}\\) and \\(A \\cap B = \\emptyset\\)';
+  assert.equal(answersMatch(union, swapped), false);
+  assert.equal(answersMatch(union, shortUnion), false);
+  assert.equal(answersMatch(union, empty), false);
+  assert.equal(answersMatch(union, union), true); // identical text still matches itself
+  assert.equal(answersMatch('9355\\text{ m}', '9355'), true); // unit stripping unaffected
+  assert.equal(answersMatch('5\\text{ min}', '5'), true);
+});
+
+// ── numeric comma-list answers still compare order-independently ──
+check('numeric comma lists still match unordered ("225, 15" == "15, 225")', () => {
+  assert.equal(answersMatch('225, 15', '15, 225'), true);
+  assert.equal(answersMatch('1, 1', '1, 1'), true);
+});
+
 if (process.exitCode) {
   console.error('\nSome tests failed.');
 } else {

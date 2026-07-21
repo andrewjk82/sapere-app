@@ -8,8 +8,15 @@
 // "9355\text{ m}" matches "9355" and "15m" matches "15".
 const stripUnits = (s, isAlgebraic = false) =>
   s
-    // LaTeX \text{ m }, \text{metres}, etc.
-    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    // LaTeX \text{ m }, \text{metres}, etc. — but only when the content is
+    // actually unit-like (short, letters/°/%// only). \text{} is also used
+    // to render literal set/list content in math mode (e.g. MC option
+    // "\{\text{a, c, l, n, r, u, y}\}"); blindly deleting that content
+    // instead of just the wrapper collapsed several distinct MC options to
+    // the same empty string, making unrelated options grade/highlight as
+    // correct together (2026-07-21 report). Anything that isn't unit-like
+    // gets unwrapped (content kept) rather than deleted.
+    .replace(/\\text\s*\{([^{}]*)\}/g, (_, inner) => (/^[a-z°%/]{0,15}$/i.test(inner.trim()) ? '' : inner))
     // Standalone unit words / abbreviations at the end or after a digit
     // Order matters: longer words first to avoid partial matches
     .replace(/\b(kilometres?|meters?|metres?|centimetres?|centimeters?|millimetres?|millimeters?|kilograms?|grams?|litres?|liters?|millilitres?|milliliters?|seconds?|minutes?|hours?|units?|cm²|m²|km²|cm³|m³)\b/gi, '')
@@ -28,8 +35,10 @@ export const robustNormalize = (str, isAlgebraic = false) => {
   if (!str) return '';
   let s = stripUnits(String(str), isAlgebraic)
     .toLowerCase()
-    // Strip units before other processing
-    .replace(/\\text\s*\{[^{}]*\}/g, '')
+    // stripUnits already decided what to delete vs keep for \text{...};
+    // anything left here just needs its wrapper removed, not its content
+    // (see stripUnits comment — deleting unconditionally here undid that).
+    .replace(/\\text\s*\{([^{}]*)\}/g, '$1')
     .replace(/\\%/g, '%')
     // Temperature / degree units: make "12.5", "12.5°c", "12.5^\circ\text{c}",
     // "12.5 celsius" all compare equal (and likewise for angles "60°" == "60").
@@ -333,9 +342,22 @@ const answersMatchOne = (studentAnswer, expectedAnswer, isAlgebraic = false) => 
   if (sStr === eStr) return true;
 
   // If the answer is a list of comma-separated items, compare as sets/lists
-  // Ensure it's not a coordinate/interval like (1, 2) or [3, 4]
-  const isListLike = (str) =>
-    str.includes(',') && !str.startsWith('(') && !str.endsWith(')') && !str.startsWith('[') && !str.endsWith(']');
+  // ("3, 5, 7" == "5, 3, 7"). Ensure it's not a coordinate/interval like
+  // (1, 2) or [3, 4], AND require every comma-separated piece to look like a
+  // single simple token (a number/fraction or a short algebraic/set item) —
+  // not a clause. Without this, a full MC option sentence that happens to
+  // contain a comma-separated set (e.g. "A ∪ B = {a, c, l, n, r, u, y} and
+  // A ∩ B = {y}") gets chopped into single-letter fragments and cross-matches
+  // an unrelated option sharing the same letters, lighting up several wrong
+  // options as "correct" (2026-07-21 report: 3 of 4 options on a Sets/Venn
+  // question all graded/highlighted as correct).
+  const isSimpleListItem = (s) => /^-?\d+(?:\.\d+)?(?:\/\d+)?$/.test(s) || /^-?[a-zA-Z](?:\^-?\d+)?$/.test(s);
+  const isListLike = (str) => {
+    if (!str.includes(',')) return false;
+    if (str.startsWith('(') || str.endsWith(')') || str.startsWith('[') || str.endsWith(']')) return false;
+    const parts = str.split(/\s*,\s*/).map((x) => x.trim()).filter(Boolean);
+    return parts.length > 1 && parts.every(isSimpleListItem);
+  };
 
   if (isListLike(eStr) || isListLike(sStr)) {
     const sParts = sStr.split(/\s*,\s*/).map((x) => x.trim()).filter(Boolean);
