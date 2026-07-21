@@ -70,6 +70,7 @@ import ChallengePerformanceHero from "./studentDetail/ChallengePerformanceHero";
 import CollapsibleSection from "./studentDetail/CollapsibleSection";
 import SecretNotebookPanel from "./studentDetail/SecretNotebookPanel";
 import ExamPrepPanel from "./studentDetail/ExamPrepPanel";
+import HscPastPaperPanel from "./studentDetail/HscPastPaperPanel";
 import EditStudentModal from "./studentDetail/EditStudentModal";
 import ScheduleModal from "./studentDetail/ScheduleModal";
 import StudentHeaderCard from "./studentDetail/StudentHeaderCard";
@@ -135,6 +136,8 @@ const curriculumSyncFields = [
   "showHscGraph",
   "examPrepEnabled",
   "examPrepSelection",
+  "hscPastPaperEnabled",
+  "hscPastPaperCount",
   "term1ExamDate",
   "term2ExamDate",
   "term3ExamDate",
@@ -366,6 +369,8 @@ const StudentDetail = ({ studentId, onBack }) => {
     calculationEnabled: true,
     showHscGraph: false,
     examPrepEnabled: false,
+    hscPastPaperEnabled: false,
+    hscPastPaperCount: 3,
     schoolSubjectRank: "",
     internalRank: "",
     internalTotal: "",
@@ -464,6 +469,8 @@ const StudentDetail = ({ studentId, onBack }) => {
         showHscGraph: data.showHscGraph === true,
         examPrepEnabled: data.examPrepEnabled === true,
         examPrepSelection: data.examPrepSelection || { years: [], chapters: [] },
+        hscPastPaperEnabled: data.hscPastPaperEnabled === true,
+        hscPastPaperCount: data.hscPastPaperCount || 3,
         schoolSubjectRank: data.schoolSubjectRank || "",
         internalRank: data.internalRank || "",
         internalTotal: data.internalTotal || "",
@@ -2031,6 +2038,19 @@ const StudentDetail = ({ studentId, onBack }) => {
                 onUpdateSetting={handleUpdateCurriculumSetting}
               />
 
+            </CollapsibleSection>
+
+            <CollapsibleSection
+              title="HSC past paper questions"
+              summary={student.hscPastPaperEnabled === true ? `+${student.hscPastPaperCount || 3} questions per Daily Challenge` : 'Disabled'}
+              badge={student.hscPastPaperEnabled === true ? 'On' : 'Off'}
+              badgeTone={student.hscPastPaperEnabled === true ? 'green' : 'amber'}
+            >
+              <HscPastPaperPanel
+                styles={{ ...styles, card: {} }}
+                student={student}
+                onUpdateSetting={handleUpdateCurriculumSetting}
+              />
             </CollapsibleSection>
           </div>
         );

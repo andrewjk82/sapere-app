@@ -213,6 +213,7 @@ const slimQuestion = (data) => {
   blanks: Array.isArray(data.blanks) ? data.blanks : [],
   requiresManualGrading: data.requiresManualGrading === true,
   isManual: data.isManual !== false,
+  examPaper: data.examPaper || "",
 };
 };
 
@@ -587,6 +588,39 @@ const hashGeneratedQuestion = (question) => {
   return `gen-${(h >>> 0).toString(36)}`;
 };
 
+const HSC_PAST_PAPER_POOL_REF = doc(db, "sync_meta", "hsc_past_paper_pool");
+
+// Teacher opt-in add-on: draws from a flat pool of every exam:* chapter's
+// question ids (rebuildHscPastPaperPool.mjs), independent of the student's
+// curriculum chapter assignment. Reuses the same global seen-tracking as the
+// main draw so a student doesn't keep re-seeing the same trial-paper question.
+const fetchHscPastPaperQuestions = async (uid, count, excludeIds = new Set()) => {
+  try {
+    const poolSnap = await getDoc(HSC_PAST_PAPER_POOL_REF);
+    if (!poolSnap.exists()) return [];
+    const allIds = poolSnap.data().ids || [];
+    if (allIds.length === 0) return [];
+
+    const recentlySeen = await fetchRecentlySeenQuestionIds(uid);
+    let candidates = allIds.filter((id) => !excludeIds.has(String(id)) && !recentlySeen.has(String(id)));
+    if (candidates.length === 0) {
+      // Whole pool seen — recycle (still respects this draw's own excludeIds).
+      candidates = allIds.filter((id) => !excludeIds.has(String(id)));
+    }
+    const picked = shuffle(candidates).slice(0, count);
+    if (picked.length === 0) return [];
+
+    const docs = await fetchQuestionsByIds(picked);
+    return docs
+      .filter((d) => d && d.isActive !== false)
+      .map(slimQuestion)
+      .map(correctQuestionAnswer);
+  } catch (err) {
+    console.warn("fetchHscPastPaperQuestions failed (non-critical):", err?.code || err);
+    return [];
+  }
+};
+
 const buildQuestionsForStudent = async (studentProfile, questionCount, uid, membershipVersion) => {
   const { ensurePracticePool, selectDailyQuestions, pickExtraPoolIds } = await import("./practicePoolService");
 
@@ -694,17 +728,32 @@ const buildQuestionsForStudent = async (studentProfile, questionCount, uid, memb
     }
   }
 
+  // ── HSC past-paper add-on (teacher-controlled, additive to questionCount) ──
+  // These questions live under exam:* chapters, which aren't part of any
+  // student's curriculum chapter set, so they never reach the draw above.
+  // sync_meta/hsc_past_paper_pool is a flat union of ids across every exam:*
+  // chapter (see rebuildHscPastPaperPool.mjs) — no per-question topic mapping
+  // needed, unlike the main chapter-based pool.
+  let hscPastPaperCount = 0;
+  const hscCount = Number(studentProfile?.hscPastPaperCount || 0);
+  if (studentProfile?.hscPastPaperEnabled === true && hscCount > 0) {
+    const hscQuestions = await fetchHscPastPaperQuestions(uid, hscCount, usedIds);
+    questions.push(...hscQuestions);
+    hscPastPaperCount = hscQuestions.length;
+  }
+
   return {
-    questions,
+    questions: shuffle(questions),
     source: {
       years: targets.assignedYears,
       courses: targets.assignedCourses,
       chapters: Object.keys(chapterBreakdown),
       assignedChapters: targets.assignedChapters,
       assignedTopics: targets.assignedTopics,
-      manualQuestionCount: questions.length - generatedCount,
+      manualQuestionCount: questions.length - generatedCount - hscPastPaperCount,
       generatedQuestionCount: generatedCount,
       poolTopUpCount,
+      hscPastPaperCount,
     },
   };
 };
