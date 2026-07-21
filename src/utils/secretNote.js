@@ -129,7 +129,25 @@ export function getNote(kind, uid) {
  */
 export function getDueNote(kind, uid) {
   const now = Date.now();
-  return shuffleInPlace(read(kind, uid).filter((it) => isDue(it, now)));
+  const items = read(kind, uid);
+
+  // Migrate old notes that may lack graphData field (from before graphData support).
+  const migrated = items.map((it) => {
+    if (it.question && !('graphData' in it.question)) {
+      return {
+        ...it,
+        question: { ...it.question, graphData: null },
+      };
+    }
+    return it;
+  });
+
+  // Write back if any migration occurred.
+  if (migrated.some((it, i) => it !== items[i])) {
+    write(kind, uid, migrated);
+  }
+
+  return shuffleInPlace(migrated.filter((it) => isDue(it, now)));
 }
 
 export function getNoteCount(kind, uid) {

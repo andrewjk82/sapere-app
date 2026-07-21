@@ -1158,8 +1158,10 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
 
               {(() => {
                 const renderStudentPane = () => {
-                  const validImages = (item.answerImages || []).filter((url) => url && url.length > 100);
-                  const singleImage = item.answerImage && item.answerImage.length > 100 ? item.answerImage : null;
+                  // Filter out only truly empty URLs; accept any non-empty URL (data URLs may vary in length)
+                  const validImages = (item.answerImages || []).filter((url) => url && String(url).trim().length > 0);
+                  const singleImage = (item.answerImage && String(item.answerImage).trim().length > 0) ? item.answerImage : null;
+                  const isSketchQuestion = item.type === 'graph_sketch' || item.type === 'teacher_review' || (item.requiresManualGrading && /(draw|sketch|construct)/i.test(item.questionText || ''));
                   const GRID_BG = {
                     background: 'linear-gradient(to right, #e2e8f0 1px, transparent 1px), linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)',
                     backgroundSize: '20px 20px',
@@ -1196,6 +1198,20 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
                           </div>
                         )}
                       </>
+                    );
+                  }
+
+                  // For sketch questions with "Graph Submitted" text but no image,
+                  // show a message that the drawing exists but is pending display
+                  if (isSketchQuestion && item.answerText === 'Graph Submitted') {
+                    return (
+                      <div style={{ padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', margin: 'auto', color: '#6366f1', minHeight: '200px' }}>
+                        <div style={{ fontSize: '2.4rem', marginBottom: '12px' }}>✏️</div>
+                        <p style={{ margin: '0 0 8px', fontWeight: 700, fontSize: '1rem', color: '#1e1b4b' }}>Graph Drawing Submitted</p>
+                        <p style={{ margin: 0, fontSize: '0.9rem', color: '#64748b', textAlign: 'center', lineHeight: 1.5 }}>
+                          Student drawing is pending display. Check back or refresh if the image doesn't appear.
+                        </p>
+                      </div>
                     );
                   }
 
