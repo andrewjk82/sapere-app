@@ -484,80 +484,97 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         ) : (
           <>
             {/* Challenge-style header */}
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-              <div>
-                <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Question Bank</span>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {total}</div>
-                  {q?.id && (
-                    <span
-                      onClick={() => {
-                        navigator.clipboard.writeText(q.id);
-                        showToast('Question ID copied', 'success');
-                      }}
-                      title="Click to copy ID"
-                      style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', userSelect: 'all', cursor: 'pointer' }}
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
+                <div>
+                  <span style={{ fontSize: '0.75rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.1em' }}>Question Bank</span>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div style={{ fontSize: '1.1rem', fontWeight: 900, color: '#1e1b4b' }}>Question {currentIdx + 1} of {total}</div>
+                    {q?.id && (
+                      <span
+                        onClick={() => {
+                          navigator.clipboard.writeText(q.id);
+                          showToast('Question ID copied', 'success');
+                        }}
+                        title="Click to copy ID"
+                        style={{ fontSize: '0.65rem', fontWeight: 700, color: '#94a3b8', background: '#f1f5f9', borderRadius: '6px', padding: '2px 7px', fontFamily: 'monospace', userSelect: 'all', cursor: 'pointer' }}
+                      >
+                        ID: {q.id}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
+                  {[
+                    { tab: 'daily', label: 'Daily', icon: Zap },
+                    { tab: 'review', label: 'Review', icon: Eye },
+                    { tab: 'secretNote', label: 'Note', icon: BookLock },
+                  ].map(({ tab, label, icon: Icon }) => (
+                    <button
+                      key={tab}
+                      onClick={() => { setPreviewInitialTab(tab); setPreviewingQuestion(q); }}
+                      disabled={!q}
+                      title={`Preview: ${label} — exactly what students see`}
+                      style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 10px', borderRadius: '12px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.78rem', cursor: q ? 'pointer' : 'not-allowed', opacity: q ? 1 : 0.5, whiteSpace: 'nowrap' }}
                     >
-                      ID: {q.id}
-                    </span>
-                  )}
+                      <Icon size={13} /> {label}
+                    </button>
+                  ))}
+                  <button
+                    onClick={() => setEditingQuestion(q)}
+                    style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: '#eef2ff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}
+                  >
+                    <Pencil size={14} /> Edit
+                  </button>
+                  <button
+                    onClick={handleDelete}
+                    title="Delete"
+                    style={{ padding: '8px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                  >
+                    <Trash2 size={14} />
+                  </button>
                 </div>
               </div>
-              <div style={{ display: 'flex', gap: '8px', alignItems: 'center' }}>
-                <div style={{ fontSize: '0.8rem', fontWeight: 800, color: '#64748b', background: '#fff', padding: '2px 8px', borderRadius: '10px', boxShadow: '0 4px 12px rgba(0,0,0,0.03)', display: 'flex', alignItems: 'center', gap: '4px', border: '1px solid #e2e8f0' }}>
-                  <Clock size={14} />
-                  <select
-                    value={q?.timeLimit || 120}
-                    onChange={async (e) => {
-                      const newTime = Number(e.target.value);
-                      if (!q?.id) return;
-                      try {
-                        await updateDoc(doc(db, 'questions', q.id), { timeLimit: newTime });
-                        setLoadedQuestions(prev => ({
-                          ...prev,
-                          [q.id]: { ...prev[q.id], timeLimit: newTime }
-                        }));
-                        showToast(`Time limit updated to ${newTime}s`, 'success');
-                      } catch (err) {
-                        console.error('Failed to update time limit:', err);
-                        showToast('Failed to update time limit in Firestore', 'error');
-                      }
-                    }}
-                    style={{ border: 'none', background: 'transparent', fontWeight: 800, color: '#475569', fontSize: '0.8rem', cursor: 'pointer', paddingRight: '4px', outline: 'none' }}
-                  >
-                    {[30, 45, 60, 90, 120, 180, 240, 300].map(sec => (
-                      <option key={sec} value={sec}>{sec}s</option>
-                    ))}
-                  </select>
-                </div>
-                {[
-                  { tab: 'daily', label: 'Daily', icon: Zap },
-                  { tab: 'review', label: 'Review', icon: Eye },
-                  { tab: 'secretNote', label: 'Note', icon: BookLock },
-                ].map(({ tab, label, icon: Icon }) => (
-                  <button
-                    key={tab}
-                    onClick={() => { setPreviewInitialTab(tab); setPreviewingQuestion(q); }}
-                    disabled={!q}
-                    title={`Preview: ${label} — exactly what students see`}
-                    style={{ display: 'flex', alignItems: 'center', gap: '5px', padding: '8px 10px', borderRadius: '12px', border: '1px solid #ddd6fe', background: '#f5f3ff', color: '#6d28d9', fontWeight: 800, fontSize: '0.78rem', cursor: q ? 'pointer' : 'not-allowed', opacity: q ? 1 : 0.5, whiteSpace: 'nowrap' }}
-                  >
-                    <Icon size={13} /> {label}
-                  </button>
-                ))}
-                <button
-                  onClick={() => setEditingQuestion(q)}
-                  style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '8px 14px', borderRadius: '12px', border: '1px solid #e0e7ff', background: '#eef2ff', color: '#4f46e5', fontWeight: 800, cursor: 'pointer' }}
-                >
-                  <Pencil size={14} /> Edit
-                </button>
-                <button
-                  onClick={handleDelete}
-                  title="Delete"
-                  style={{ padding: '8px', borderRadius: '12px', border: '1px solid #fee2e2', background: '#fff1f2', color: '#e11d48', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
-                >
-                  <Trash2 size={14} />
-                </button>
+
+              {/* Time limit — button group instead of dropdown */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
+                <Clock size={14} style={{ color: '#64748b', flexShrink: 0 }} />
+                {[30, 45, 60, 90, 120, 180, 240, 300].map((sec) => {
+                  const isActive = (q?.timeLimit || 120) === sec;
+                  return (
+                    <button
+                      key={sec}
+                      type="button"
+                      disabled={!q?.id}
+                      onClick={async () => {
+                        if (!q?.id) return;
+                        try {
+                          await updateDoc(doc(db, 'questions', q.id), { timeLimit: sec });
+                          setLoadedQuestions(prev => ({
+                            ...prev,
+                            [q.id]: { ...prev[q.id], timeLimit: sec }
+                          }));
+                          showToast(`Time limit updated to ${sec}s`, 'success');
+                        } catch (err) {
+                          console.error('Failed to update time limit:', err);
+                          showToast('Failed to update time limit in Firestore', 'error');
+                        }
+                      }}
+                      style={{
+                        padding: '6px 12px', borderRadius: '10px',
+                        border: `1px solid ${isActive ? '#6366f1' : '#e2e8f0'}`,
+                        background: isActive ? '#6366f1' : '#fff',
+                        color: isActive ? '#fff' : '#475569',
+                        fontWeight: 800, fontSize: '0.78rem',
+                        cursor: q?.id ? 'pointer' : 'not-allowed',
+                        opacity: q?.id ? 1 : 0.5,
+                        transition: 'all 0.15s',
+                      }}
+                    >
+                      {sec}s
+                    </button>
+                  );
+                })}
               </div>
             </div>
 
