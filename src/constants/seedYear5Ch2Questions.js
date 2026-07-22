@@ -2772,7 +2772,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "solutionSteps": [
       {
         "explanation": "Align the numbers vertically by place value.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 4\\,213 \\\\ 283 \\\\ 12\\,546 \\\\ 48 \\\\ 5\\,819 \\\\ +\\quad 364 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 4\\,213 \\\\ 283 \\\\ 12\\,546 \\\\ 48 \\\\ 5\\,819 \\\\ +\\ 364 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2816,7 +2816,7 @@ export const Y5_CH2_QUESTIONS_AR1 = [
     "solutionSteps": [
       {
         "explanation": "Align the numbers vertically by place value.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 21\\,582 \\\\ 482 \\\\ 24 \\\\ 6 \\\\ 1\\,235 \\\\ +\\quad 6\\,128 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 21\\,582 \\\\ 482 \\\\ 24 \\\\ 6 \\\\ 1\\,235 \\\\ +\\quad 6\\,128 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {

@@ -659,7 +659,7 @@ export const Y12A_CH3E_QUESTIONS = [
       },
       {
         "explanation": "Construct a slope table around \\( x = 0 \\) to identify the nature.",
-        "workingOut": "\\begin{array}{c|ccc} x & -1 & 0 & 1 \\\\ \\hline f'(x) & 4/64 > 0 & 0 & -4/64 < 0 \\\\ \\text{Slope} & / & - & \\backslash \\end{array} \\implies \\text{local maximum at } (0, -2/9)"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & -1 & 0 & 1 \\\\ \\hline f'(x) & 4/64 > 0 & 0 & -4/64 < 0 \\\\ \\text{Slope} & / & - & \\backslash \\end{array} \\implies \\text{local maximum at } (0, -2/9)\\)"
       },
       {
         "explanation": "Check if the function is even: \\( f(-x) = f(x) \\).",

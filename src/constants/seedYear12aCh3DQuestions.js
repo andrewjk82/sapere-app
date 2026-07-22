@@ -655,7 +655,7 @@ export const Y12A_CH3D_QUESTIONS = [
       },
       {
         "explanation": "Analyze signs of \\( y' \\) in a slope table.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & 36 & 0 & 12 & 0 & -108 \\\\ \\text{Slope} & / & - & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & 36 & 0 & 12 & 0 & -108 \\\\ \\text{Slope} & / & - & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Identify points of inflection where \\( y'' = 0 \\) and check for a concavity change.",

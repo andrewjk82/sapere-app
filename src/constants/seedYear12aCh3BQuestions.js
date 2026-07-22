@@ -253,7 +253,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set up a table of test values of slopes around \\( x = 3 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & 2 & 3 & 4 \\\\ \\hline y' & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & 2 & 3 & 4 \\\\ \\hline y' & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "Determine the nature: since the slope changes from negative to zero to positive, it is a minimum turning point.",
@@ -297,7 +297,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Test slopes around \\( x = 1 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & 0 & 1 & 2 \\\\ \\hline y' & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & 0 & 1 & 2 \\\\ \\hline y' & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Since the slope changes from positive to zero to negative, it is a maximum turning point.",
@@ -341,7 +341,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Construct the slope table.",
-        "workingOut": "\\begin{array}{c|ccc} x & -5 & -4 & -3 \\\\ \\hline y' & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & -5 & -4 & -3 \\\\ \\hline y' & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "Identify the nature of the turning point.",
@@ -385,7 +385,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Analyze slopes around \\( x = -2 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & -3 & -2 & -1 \\\\ \\hline y' & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & -3 & -2 & -1 \\\\ \\hline y' & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Confirm it is a local maximum turning point.",
@@ -425,7 +425,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Analyze \\( f'(x) \\) around \\( x = 1 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & 0.9 & 1 & 1.1 \\\\ \\hline f'(x) & -0.2 & 0 & 0.2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & 0.9 & 1 & 1.1 \\\\ \\hline f'(x) & -0.2 & 0 & 0.2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "Conclude the nature based on signs.",
@@ -452,7 +452,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Analyze \\( f'(x) \\) around \\( x = 1 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & 0.9 & 1 & 1.1 \\\\ \\hline f'(x) & 0.2 & 0 & -0.2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & 0.9 & 1 & 1.1 \\\\ \\hline f'(x) & 0.2 & 0 & -0.2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Determine the nature.",
@@ -533,7 +533,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Create slope test table around \\( x = -3 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & -4 & -3 & -2 \\\\ \\hline dy/dx & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & -4 & -3 & -2 \\\\ \\hline dy/dx & -2 & 0 & 2 \\\\ \\text{Slope} & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "Find axes intercepts.",
@@ -573,7 +573,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Create slope test table around \\( x = -3 \\).",
-        "workingOut": "\\begin{array}{c|ccc} x & -4 & -3 & -2 \\\\ \\hline dy/dx & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccc} x & -4 & -3 & -2 \\\\ \\hline dy/dx & 2 & 0 & -2 \\\\ \\text{Slope} & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Find axes intercepts.",
@@ -636,7 +636,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Test slopes using a derivative sign table.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & 12 & 0 & -6 & 0 & 18 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 2 & 3 \\\\ \\hline y' & 12 & 0 & -6 & 0 & 18 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
       }
     ],
     "graphData": {
@@ -695,7 +695,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Perform the test of slopes.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -4 & -3 & 0 & 3 & 4 \\\\ \\hline y' & -21 & 0 & 27 & 0 & -21 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -4 & -3 & 0 & 3 & 4 \\\\ \\hline y' & -21 & 0 & 27 & 0 & -21 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}\\)"
       }
     ],
     "graphData": {
@@ -735,7 +735,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Use a slope table to determine natures.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 2 & 3 \\\\ \\hline y' & 24 & 0 & -12 & 0 & 24 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 2 & 3 \\\\ \\hline y' & 24 & 0 & -12 & 0 & 24 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "Determine the type of each point based on the slopes.",
@@ -779,7 +779,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Construct slope table.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -4 & -3 & -2 & -1 & 0 \\\\ \\hline y' & 9 & 0 & -3 & 0 & 9 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -4 & -3 & -2 & -1 & 0 \\\\ \\hline y' & 9 & 0 & -3 & 0 & 9 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
       },
       {
         "explanation": "State point types.",
@@ -823,7 +823,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Analyze derivative sign changes around the stationary values.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 3 & 4 \\\\ \\hline y' & 32 & 0 & 16 & 0 & -128 \\\\ \\text{Slope} & / & - & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 3 & 4 \\\\ \\hline y' & 32 & 0 & 16 & 0 & -128 \\\\ \\text{Slope} & / & - & / & - & \\backslash \\end{array}\\)"
       },
       {
         "explanation": "Deduce natures: slope is rising on both sides of x=0; slope changes from rising to falling around x=3.",
@@ -867,7 +867,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Evaluate the slopes around the critical coordinates.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -0.5 & 0 & 0.5 & 1 & 1.5 \\\\ \\hline y' & -13.5 & 0 & 1.5 & 0 & 4.5 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -0.5 & 0 & 0.5 & 1 & 1.5 \\\\ \\hline y' & -13.5 & 0 & 1.5 & 0 & 4.5 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}\\)"
       },
       {
         "explanation": "Conclude nature based on the slope patterns.",
@@ -930,7 +930,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Complete gradient table.",
-        "workingOut": "\\begin{array}{c|ccccc} x & 0 & 3/4 & 1 & 3 & 4 \\\\ \\hline y' & -27 & 0 & 4 & 0 & 13 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & 0 & 3/4 & 1 & 3 & 4 \\\\ \\hline y' & -27 & 0 & 4 & 0 & 13 \\\\ \\text{Slope} & \\backslash & - & / & - & / \\end{array}\\)"
       }
     ],
     "graphData": {
@@ -989,7 +989,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Analyze signs of the gradient in adjacent intervals.",
-        "workingOut": "\\begin{array}{c|ccccccc} x & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline dy/dx & -28 & 0 & 20 & 0 & -16 & 0 & 112 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccccc} x & -1 & 0 & 1 & 3 & 4 & 6 & 7 \\\\ \\hline dy/dx & -28 & 0 & 20 & 0 & -16 & 0 & 112 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash & - & / \\end{array}\\)"
       }
     ],
     "graphData": {
@@ -1048,7 +1048,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Set up a table of slopes.",
-        "workingOut": "\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 3 & 4 \\\\ \\hline y' & 24 & 0 & -12 & 0 & 24 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -1 & 0 & 1 & 3 & 4 \\\\ \\hline y' & 24 & 0 & -12 & 0 & 24 \\\\ \\text{Slope} & / & - & \\backslash & - & / \\end{array}\\)"
       }
     ],
     "graphData": {
@@ -1404,7 +1404,7 @@ export const Y12A_CH3B_QUESTIONS = [
       },
       {
         "explanation": "Evaluate the nature using test values of \\( f'(x) \\).",
-        "workingOut": "\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline f'(x) & -0.48 & 0 & 4 & 0 & -0.48 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|ccccc} x & -2 & -1 & 0 & 1 & 2 \\\\ \\hline f'(x) & -0.48 & 0 & 4 & 0 & -0.48 \\\\ \\text{Slope} & \\backslash & - & / & - & \\backslash \\end{array}\\)"
       }
     ],
     "graphData": {

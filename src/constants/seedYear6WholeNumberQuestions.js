@@ -463,7 +463,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Locate the digit \\(3\\) in the place value chart.",
-        "workingOut": "\\begin{array}{c|c|c|c|c} \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 2 & 7 & \\mathbf{3} & 1 & 8 \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|c|c|c|c} \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 2 & 7 & \\mathbf{3} & 1 & 8 \\end{array}\\)"
       },
       {
         "explanation": "Since \\(3\\) is in the Hundreds column, multiply the digit by 100.",
@@ -521,7 +521,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Add these numbers together, noting the zero placeholders.",
-        "workingOut": "\\begin{array}{r l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}"
+        "workingOut": "\\(\\begin{array}{r l} 6,000,000 & \\\\ 72,000 & \\\\ + \\quad \\quad \\quad 5 & \\\\ \\hline \\mathbf{6,072,005} & \\end{array}\\)"
       }
     ]
   },
@@ -571,7 +571,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Align digits to their corresponding columns.",
-        "workingOut": "\\begin{array}{c|c|c|c|c|c} \\text{H.Th} & \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 3 & \\mathbf{9} & 5 & 0 & 7 & 2 \\end{array}"
+        "workingOut": "\\(\\begin{array}{c|c|c|c|c|c} \\text{H.Th} & \\text{T.Th} & \\text{Th} & \\text{H} & \\text{T} & \\text{U} \\\\ \\hline 3 & \\mathbf{9} & 5 & 0 & 7 & 2 \\end{array}\\)"
       },
       {
         "explanation": "Multiply the digit \\(9\\) by its place value factor (\\(10,000\\)).",
@@ -880,11 +880,11 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Align numbers vertically by place value.",
-        "workingOut": "\\begin{array}{r l} 85,314 & \\\\ - \\quad 67,429 & \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r l} 85,314 & \\\\ - \\quad 67,429 & \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Subtract column-by-column starting from units, borrowing from the next left columns where necessary.",
-        "workingOut": "\\begin{array}{rccccc} & 7 & 14 & 12 & 10 & 14 \\\\ & \\cancel{8} & \\cancel{5} & \\cancel{3} & \\cancel{1} & \\cancel{4} \\\\ - & 6 & 7 & 4 & 2 & 9 \\\\ \\hline & 1 & 7 & 8 & 8 & 5 \\end{array}"
+        "workingOut": "\\(\\begin{array}{rccccc} & 7 & 14 & 12 & 10 & 14 \\\\ & \\cancel{8} & \\cancel{5} & \\cancel{3} & \\cancel{1} & \\cancel{4} \\\\ - & 6 & 7 & 4 & 2 & 9 \\\\ \\hline & 1 & 7 & 8 & 8 & 5 \\end{array}\\)"
       }
     ]
   },
@@ -919,7 +919,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Sum the three partial products.",
-        "workingOut": "\\begin{array}{r l} 18,760 & \\\\ 140,700 & \\\\ + \\quad 234,500 & \\\\ \\hline \\mathbf{393,960} & \\end{array}"
+        "workingOut": "\\(\\begin{array}{r l} 18,760 & \\\\ 140,700 & \\\\ + \\quad 234,500 & \\\\ \\hline \\mathbf{393,960} & \\end{array}\\)"
       }
     ]
   },
@@ -942,7 +942,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Perform long division step-by-step.",
-        "workingOut": "\\begin{array}{r|l} \\mathbf{698} & \\text{quotient} \\\\ 25 \\overline{) 17,459} & \\\\ -150 & (25 \\times 6) \\\\ \\hline 245 & \\\\ -225 & (25 \\times 9) \\\\ \\hline 209 & \\\\ -200 & (25 \\times 8) \\\\ \\hline \\mathbf{9} & \\text{remainder} \\end{array}"
+        "workingOut": "\\(\\begin{array}{r|l} \\mathbf{698} & \\text{quotient} \\\\ 25 \\overline{) 17,459} & \\\\ -150 & (25 \\times 6) \\\\ \\hline 245 & \\\\ -225 & (25 \\times 9) \\\\ \\hline 209 & \\\\ -200 & (25 \\times 8) \\\\ \\hline \\mathbf{9} & \\text{remainder} \\end{array}\\)"
       }
     ]
   },
@@ -965,7 +965,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Align the digits vertically.",
-        "workingOut": "\\begin{array}{r l} 2146 & \\\\ 824 & \\\\ 513 & \\\\ 27 & \\\\ + \\quad \\quad 9 & \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r l} 2146 & \\\\ 824 & \\\\ 513 & \\\\ 27 & \\\\ + \\quad \\quad 9 & \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column (\\(6+4+3+7+9 = 29\\)), write \\(9\\), carry \\(2\\). Add the tens column (\\(2 \\text{ carried} + 4 + 2 + 1 + 2 = 11\\)), write \\(1\\), carry \\(1\\). Add the hundreds column (\\(1 \\text{ carried} + 1 + 8 + 5 = 15\\)), write \\(5\\), carry \\(1\\). Add the thousands column (\\(1 \\text{ carried} + 2 = 3\\)).",
@@ -992,7 +992,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Show the regrouping (borrowing) of \\(8,000\\).",
-        "workingOut": "\\begin{array}{rccc} 7 & 9 & 9 & 10 \\\\ \\cancel{8} & \\cancel{0} & \\cancel{0} & \\cancel{0} \\\\ - \\quad 2 & 4 & 7 & 8 \\\\ hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{rccc} 7 & 9 & 9 & 10 \\\\ \\cancel{8} & \\cancel{0} & \\cancel{0} & \\cancel{0} \\\\ - \\quad 2 & 4 & 7 & 8 \\\\ hline \\end{array}\\)"
       },
       {
         "explanation": "Perform the column subtractions.",
@@ -1027,7 +1027,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
       },
       {
         "explanation": "Sum the two partial products.",
-        "workingOut": "\\begin{array}{r l} 1,404 & \\\\ + \\quad 2,340 & \\\\ \\hline \\mathbf{3,744} & \\end{array}"
+        "workingOut": "\\(\\begin{array}{r l} 1,404 & \\\\ + \\quad 2,340 & \\\\ \\hline \\mathbf{3,744} & \\end{array}\\)"
       }
     ]
   },
@@ -2355,7 +2355,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the addition by aligning the place values.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 46 \\\\ +\\quad 33 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2396,7 +2396,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical column addition.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 68 \\\\ +\\quad 25 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2437,7 +2437,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical column addition.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 83 \\\\ +\\quad 54 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2478,7 +2478,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical column subtraction.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 47 \\\\ -\\quad 24 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2519,7 +2519,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical column subtraction.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 58 \\\\ -\\quad 15 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -2560,7 +2560,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up the vertical column subtraction.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 64 \\\\ -\\quad 18 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -3726,7 +3726,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up column addition.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 349 \\\\ +\\quad 62 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -3767,7 +3767,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up column addition.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 423 \\\\ +\\quad 54 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -3803,7 +3803,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Set up column addition.",
-        "workingOut": "\\begin{array}{r@{\\quad}l} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}",
+        "workingOut": "\\(\\begin{array}{r} 742 \\\\ +\\quad 339 \\\\ \\hline \\end{array}\\)",
         "graphData": null
       },
       {
@@ -6077,7 +6077,7 @@ export const WHOLE_NUMBER_QUESTIONS_Y6 = [
     "solutionSteps": [
       {
         "explanation": "Align numbers vertically by their place values.",
-        "workingOut": "\\\\(\\begin{array}{r@{\\quad}l} & 80796 \\\\ & 7482 \\\\ & 895 \\\\ & 431 \\\\ + & 16 \\\\ \\hline \\end{array}\\\\)"
+        "workingOut": "\\\\(\\begin{array}{rl} & 80796 \\\\ & 7482 \\\\ & 895 \\\\ & 431 \\\\ + & 16 \\\\ \\hline \\end{array}\\\\)"
       },
       {
         "explanation": "Add column by column starting from the ones place, carrying over where needed.",

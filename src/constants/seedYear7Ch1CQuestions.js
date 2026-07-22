@@ -8,7 +8,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c} & 5 & 1 & 4 \\\\ + & 3 & 6 & 2 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c} & 5 & 1 & 4 \\\\ + & 3 & 6 & 2 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column: \\\\( 4 + 2 = 6 \\\\).",
@@ -56,7 +56,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c} & 3 & 4 & 6 \\\\ + & 4 & 2 & 8 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c} & 3 & 4 & 6 \\\\ + & 4 & 2 & 8 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column: \\\\( 6 + 8 = 14 \\\\). Write down 4 and carry over 1 to the tens column.",
@@ -104,7 +104,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c} & 2 & 0 & 7 \\\\ + & 6 & 5 & 8 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c} & 2 & 0 & 7 \\\\ + & 6 & 5 & 8 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column: \\\\( 7 + 8 = 15 \\\\). Write down 5 and carry over 1 to the tens column.",
@@ -152,7 +152,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c} & 5 & 7 & 9 \\\\ + & 8 & 4 & 2 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c} & 5 & 7 & 9 \\\\ + & 8 & 4 & 2 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column: \\\\( 9 + 2 = 11 \\\\). Write down 1 and carry over 1 to the tens column.",
@@ -200,7 +200,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c} & 8 & 6 & 4 \\\\ + & 3 & 8 & 7 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c} & 8 & 6 & 4 \\\\ + & 3 & 8 & 7 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units column: \\\\( 4 + 7 = 11 \\\\). Write down 1 and carry over 1.",
@@ -244,7 +244,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Write the numbers vertically aligning the place values.",
-        "workingOut": "\\begin{array}{r c c c c} & 3 & 2 & 0 & 8 \\\\ + & & 8 & 9 & 7 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c c} & 3 & 2 & 0 & 8 \\\\ + & & 8 & 9 & 7 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Add the units: \\\\( 8 + 7 = 15 \\\\). Write 5, carry 1.",
@@ -452,7 +452,7 @@ export const Y7_CH1C_QUESTIONS = [
     "solutionSteps": [
       {
         "explanation": "Align the numbers vertically by place value.",
-        "workingOut": "\\begin{array}{r c c c c} & & & 4 & 6 \\\\ & & 2 & 3 & 8 \\\\ + & 1 & 5 & 8 & 4 \\\\ \\hline \\end{array}"
+        "workingOut": "\\(\\begin{array}{r c c c c} & & & 4 & 6 \\\\ & & 2 & 3 & 8 \\\\ + & 1 & 5 & 8 & 4 \\\\ \\hline \\end{array}\\)"
       },
       {
         "explanation": "Units column: \\\\( 6 + 8 + 4 = 18 \\\\). Write 8, carry 1.",
