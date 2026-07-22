@@ -768,6 +768,11 @@ export const createDailyAssignment = async ({
   questionCount,
   generatedBy = "system",
   forceVersion = Date.now(),
+  // Caller may already have a fresh sync_meta/questions read (e.g.
+  // fetchOrCreateDailyAssignment fetches it to check staleness) — skip the
+  // redundant re-read on the hot "first request of the day" path, where every
+  // extra sequential round trip eats into the 20s client timeout budget.
+  syncData: presetSyncData = null,
 }) => {
   if (!uid) throw new Error("Daily assignment requires a user id.");
   const resolvedQuestionCount = Math.max(1, Math.min(50, Number(questionCount || studentProfile?.dailyQuestionCount || 10)));
@@ -776,8 +781,11 @@ export const createDailyAssignment = async ({
   // assignment to detect future content edits; `membershipVersion` (add/delete)
   // feeds the practice_pool signature so the pool rebuilds ONLY when the set of
   // question IDs changed — not on every content edit.
-  const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
-  const syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
+  let syncData = presetSyncData;
+  if (!syncData) {
+    const syncMetaSnap = await getDoc(doc(db, "sync_meta", "questions")).catch(() => null);
+    syncData = syncMetaSnap?.exists() ? syncMetaSnap.data() : {};
+  }
   const questionsVersion = syncData.version || 0;
   const membershipVersion = syncData.membershipVersion ?? questionsVersion;
 
@@ -966,13 +974,15 @@ export const fetchOrCreateDailyAssignment = async ({
     return cacheValue;
   }
 
-  // Fallback to synchronous generation
+  // Fallback to synchronous generation — pass along the sync_meta read we
+  // already did above so createDailyAssignment doesn't re-fetch it.
   return createDailyAssignment({
     uid,
     studentProfile,
     dateKey,
     questionCount: expectedQuestionCount,
     generatedBy: assignmentSnap.exists() ? "profile-change" : "missing-assignment",
+    syncData,
   });
 };
 

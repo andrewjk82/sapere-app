@@ -705,6 +705,12 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
       // Timeout guard: a Firestore write inside fetchOrCreateDailyAssignment
       // (new-assignment create / prep stamp) only resolves on backend ack, so a
       // stalled connection could hang here forever. Surface an error instead.
+      // 12s was too tight for a first-of-the-day generation (pool read + select
+      // + fetch + up to 4 top-up rounds, all sequential round trips) under
+      // normal evening-peak latency — real, legitimate requests were losing
+      // the race and surfacing as "Assignment load timed out" for students who
+      // weren't actually stuck. 20s keeps the crash-safety guard but stops
+      // penalising slow-but-succeeding requests.
       const assignment = await Promise.race([
         fetchOrCreateDailyAssignment({
           uid: user?.uid,
@@ -712,7 +718,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           dateKey: today,
           questionCount: qCount,
         }),
-        new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 12000)),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('Assignment load timed out')), 20000)),
       ]);
       const rawQs = (assignment.questions || []).map(correctQuestionAnswer);
       if (rawQs.length === 0) throw new Error('No daily assignment questions were generated.');
@@ -1854,7 +1860,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
               correct: Boolean(r?.correct),
             }))
             .filter((r) => r.id && r.chapterId);
-          updatePoolAfterQuiz(user.uid, poolResults).catch(() => {});
+          // Awaited (not fire-and-forget) — otherwise closing the tab right
+          // after finishing can cut this write off before it lands, leaving
+          // just-answered questions marked "undone" so they resurface later.
+          await updatePoolAfterQuiz(user.uid, poolResults);
         }
 
         // Auto Mode: record per-group results so the weekly evaluation can

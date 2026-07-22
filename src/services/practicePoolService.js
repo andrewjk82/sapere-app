@@ -29,6 +29,7 @@ import {
   doc,
   getDoc,
   setDoc,
+  runTransaction,
   serverTimestamp,
 } from '../firebase/firestoreWrapper';
 import { db } from '../firebase/config';
@@ -143,77 +144,85 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
  *
  * Returns: { selectedIds: string[], chapterBreakdown: { [chapterId]: string[] }, poolData }
  */
+// undone 계산 — chapter_pools 스냅샷에서 ids - done
+const getUndone = (pools) => {
+  const result = {};
+  Object.entries(pools || {}).forEach(([cid, cp]) => {
+    const doneSet = new Set(cp.done || []);
+    result[cid] = (cp.ids || []).filter((id) => !doneSet.has(id));
+  });
+  return result;
+};
+
 export const selectDailyQuestions = async (uid, questionCount) => {
   // Use in-memory cache if available — ensurePracticePool already read/wrote
-  // the pool doc in this call chain, so a second getDoc is redundant.
+  // the pool doc in this call chain, so a second getDoc is redundant. Only
+  // used to find the chapter id list; the reset check below always reads the
+  // LIVE document inside a transaction (see comment there).
   const cachedEntry = _poolCache.get(uid);
-  let data = cachedEntry?.data || null;
-
-  if (!data) {
+  let seed = cachedEntry?.data || null;
+  if (!seed) {
     const snap = await getDoc(poolRef(uid));
     if (!snap.exists()) throw new Error('Practice pool not initialized. Call ensurePracticePool first.');
-    data = snap.data();
-    if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
+    seed = snap.data();
   }
-
-  let chapter_pools = data.chapter_pools || {};
-  const chapter_accuracy = data.chapter_accuracy || {};
-  const chapterIds = Object.keys(chapter_pools);
-
+  const chapterIds = Object.keys(seed.chapter_pools || {});
   if (chapterIds.length === 0) throw new Error('No chapters in practice pool.');
 
-  // undone 계산
-  const getUndone = (pools) => {
-    const result = {};
-    Object.entries(pools).forEach(([cid, cp]) => {
-      const doneSet = new Set(cp.done || []);
-      result[cid] = (cp.ids || []).filter((id) => !doneSet.has(id));
-    });
-    return result;
-  };
+  // 챕터별 개별 리셋 + 전체 리셋을 하나의 트랜잭션으로 처리.
+  // 반드시 라이브 문서를 읽어서 판단해야 한다 — 캐시/이전 getDoc 스냅샷을
+  // 기준으로 setDoc(merge:false)를 쓰면, 방금 updatePoolAfterQuiz가 커밋한
+  // done[] 갱신을 통째로 덮어써서 지워버릴 수 있다 (리셋 대상이 아닌 챕터까지
+  // 포함해서). 2026-07 Riel 학생 리포트 — 소진되지 않은 챕터(y6-frac, y6-ar)의
+  // 개별 문제가 며칠 간격으로 재출제된 사고의 원인 중 하나.
+  const ref = poolRef(uid);
+  const resolved = await runTransaction(db, async (transaction) => {
+    const snap = await transaction.get(ref);
+    const live = snap.exists() ? snap.data() : seed;
+    let chapter_pools = live.chapter_pools || {};
+    let undoneMap = getUndone(chapter_pools);
 
-  let undoneMap = getUndone(chapter_pools);
-
-  // 챕터별 개별 리셋: undone이 0인 챕터는 그 챕터만 done 초기화.
-  // 이렇게 해야 Ch7처럼 문제가 많은 챕터에 deficit이 몰리지 않고
-  // 각 챕터가 독립적으로 순환한다.
-  const perChapterReset = {};
-  chapterIds.forEach((cid) => {
-    if (undoneMap[cid].length === 0 && (chapter_pools[cid].ids || []).length > 0) {
-      perChapterReset[cid] = { ...chapter_pools[cid], done: [] };
-    }
-  });
-  if (Object.keys(perChapterReset).length > 0) {
-    const resetPools = { ...chapter_pools, ...perChapterReset };
-    const updatedData = { ...data, chapter_pools: resetPools, updatedAt: serverTimestamp() };
-    await setDoc(poolRef(uid), updatedData, { merge: false });
-    chapter_pools = resetPools;
-    data = updatedData;
-    undoneMap = getUndone(chapter_pools);
-    // 캐시도 반드시 갱신 — 안 하면 updatePoolAfterQuiz가 stale 캐시로 리셋을 덮어씀
-    if (data.curriculumSignature) setCached(uid, data.curriculumSignature, data);
-  }
-
-  let totalUndone = Object.values(undoneMap).reduce((s, arr) => s + arr.length, 0);
-
-  // 전체 소진 (챕터 자체에 문제가 아예 없는 경우 등 극단적 케이스) → 전체 리셋
-  if (totalUndone < questionCount) {
-    const resetPools = {};
+    // 챕터별 개별 리셋: undone이 0인 챕터는 그 챕터만 done 초기화.
+    // 이렇게 해야 Ch7처럼 문제가 많은 챕터에 deficit이 몰리지 않고
+    // 각 챕터가 독립적으로 순환한다.
+    const perChapterReset = {};
     chapterIds.forEach((cid) => {
-      resetPools[cid] = { ...chapter_pools[cid], done: [] };
+      if ((undoneMap[cid] || []).length === 0 && (chapter_pools[cid]?.ids || []).length > 0) {
+        perChapterReset[cid] = { ...chapter_pools[cid], done: [] };
+      }
     });
-    const updatedData = {
-      ...data,
-      chapter_pools: resetPools,
-      cycle: (data.cycle || 0) + 1,
-      updatedAt: serverTimestamp(),
-    };
-    await setDoc(poolRef(uid), updatedData, { merge: false });
-    chapter_pools = resetPools;
-    data = updatedData;
-    undoneMap = getUndone(chapter_pools);
-    totalUndone = Object.values(undoneMap).reduce((s, arr) => s + arr.length, 0);
-  }
+    let cycle = live.cycle || 0;
+    let changed = false;
+    if (Object.keys(perChapterReset).length > 0) {
+      chapter_pools = { ...chapter_pools, ...perChapterReset };
+      undoneMap = getUndone(chapter_pools);
+      changed = true;
+    }
+
+    // 전체 소진 (챕터 자체에 문제가 아예 없는 경우 등 극단적 케이스) → 전체 리셋
+    const totalUndone = Object.values(undoneMap).reduce((s, arr) => s + arr.length, 0);
+    if (totalUndone < questionCount) {
+      const resetPools = {};
+      chapterIds.forEach((cid) => {
+        resetPools[cid] = { ...chapter_pools[cid], done: [] };
+      });
+      chapter_pools = resetPools;
+      cycle += 1;
+      changed = true;
+    }
+
+    if (!changed) return live;
+    const next = { ...live, chapter_pools, cycle, updatedAt: serverTimestamp() };
+    transaction.set(ref, next);
+    return next;
+  });
+
+  const chapter_pools = resolved.chapter_pools || {};
+  const chapter_accuracy = resolved.chapter_accuracy || {};
+  if (resolved.curriculumSignature) setCached(uid, resolved.curriculumSignature, resolved);
+
+  const undoneMap = getUndone(chapter_pools);
+  const totalUndone = Object.values(undoneMap).reduce((s, arr) => s + arr.length, 0);
 
   // 실제로 꺼낼 수 있는 수 (풀 자체가 questionCount보다 작은 극단적 경우 대비)
   const actualCount = Math.min(questionCount, totalUndone);
@@ -297,7 +306,7 @@ export const selectDailyQuestions = async (uid, questionCount) => {
   return {
     selectedIds: shuffle(allSelected),
     chapterBreakdown,
-    poolData: data,
+    poolData: resolved,
   };
 };
 
@@ -358,21 +367,8 @@ export const updatePoolAfterQuiz = async (uid, results) => {
   if (!uid || !Array.isArray(results) || results.length === 0) return;
 
   try {
-    // Use in-memory cache when available — avoids a redundant Firestore read
-    // immediately after a quiz (ensurePracticePool already read this doc).
-    let data;
-    const cachedEntry = _poolCache.get(uid);
-    if (cachedEntry?.data) {
-      data = cachedEntry.data;
-    } else {
-      const snap = await getDoc(poolRef(uid));
-      if (!snap.exists()) return;
-      data = snap.data();
-    }
-    const chapter_pools = JSON.parse(JSON.stringify(data.chapter_pools || {}));
-    const chapter_accuracy = JSON.parse(JSON.stringify(data.chapter_accuracy || {}));
-
-    // 챕터별 그룹핑
+    // 챕터별 그룹핑 (라이브 문서 읽기 전에 미리 계산 — 트랜잭션 콜백은 충돌 시
+    // 재시도될 수 있으므로 순수 계산이어야 한다)
     const byChapter = {};
     results.forEach(({ id, chapterId, correct }) => {
       if (!id || !chapterId) return;
@@ -381,27 +377,43 @@ export const updatePoolAfterQuiz = async (uid, results) => {
       byChapter[chapterId].total += 1;
       if (correct) byChapter[chapterId].correct += 1;
     });
+    if (Object.keys(byChapter).length === 0) return;
 
-    Object.entries(byChapter).forEach(([cid, { ids, correct, total }]) => {
-      // done 업데이트
-      if (chapter_pools[cid]) {
-        const doneSet = new Set(chapter_pools[cid].done || []);
-        ids.forEach((id) => doneSet.add(id));
-        chapter_pools[cid] = { ...chapter_pools[cid], done: [...doneSet] };
-      }
-      // 정확도 누적
-      const prev = chapter_accuracy[cid] || { correct: 0, total: 0 };
-      chapter_accuracy[cid] = {
-        correct: prev.correct + correct,
-        total: prev.total + total,
-      };
+    // 트랜잭션으로 라이브 문서를 읽고 커밋 — getDoc/setDoc(merge:false) 조합은
+    // 같은 문서를 쓰는 selectDailyQuestions의 챕터 리셋과 경합하면 방금 추가한
+    // done[]이 통째로 유실될 수 있었다 (finishQuiz에서 이 호출을 await 없이
+    // fire-and-forget으로 날리던 것과 겹쳐 실제로 발생 — 2026-07 Riel 학생 리포트).
+    const ref = poolRef(uid);
+    const updated = await runTransaction(db, async (transaction) => {
+      const snap = await transaction.get(ref);
+      if (!snap.exists()) return null;
+      const data = snap.data();
+      const chapter_pools = JSON.parse(JSON.stringify(data.chapter_pools || {}));
+      const chapter_accuracy = JSON.parse(JSON.stringify(data.chapter_accuracy || {}));
+
+      Object.entries(byChapter).forEach(([cid, { ids, correct, total }]) => {
+        // done 업데이트
+        if (chapter_pools[cid]) {
+          const doneSet = new Set(chapter_pools[cid].done || []);
+          ids.forEach((id) => doneSet.add(id));
+          chapter_pools[cid] = { ...chapter_pools[cid], done: [...doneSet] };
+        }
+        // 정확도 누적
+        const prev = chapter_accuracy[cid] || { correct: 0, total: 0 };
+        chapter_accuracy[cid] = {
+          correct: prev.correct + correct,
+          total: prev.total + total,
+        };
+      });
+
+      const next = { ...data, chapter_pools, chapter_accuracy, updatedAt: serverTimestamp() };
+      transaction.set(ref, next);
+      return next;
     });
 
-    const updated = { ...data, chapter_pools, chapter_accuracy, updatedAt: serverTimestamp() };
-    await setDoc(poolRef(uid), updated, { merge: false });
     // Update cache in-place so the next selectDailyQuestions call uses fresh
     // data without an extra Firestore read.
-    setCached(uid, updated.curriculumSignature, updated);
+    if (updated?.curriculumSignature) setCached(uid, updated.curriculumSignature, updated);
   } catch (err) {
     // non-critical: 실패해도 퀴즈 경험에 영향 없음
     console.warn('updatePoolAfterQuiz failed (non-critical):', err?.code || err);
