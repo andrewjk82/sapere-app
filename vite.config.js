@@ -30,6 +30,17 @@ export default defineConfig({
       // Excluding them from the client bundle prevents build errors and
       // keeps the bundle size small.
       external: ['firebase-admin', 'nodemailer', 'jsdom'],
+      output: {
+        manualChunks(id) {
+          if (id.includes('src/constants/seed')) {
+            const match = id.match(/seed(Year\d+[^/.]+)/i);
+            if (match) {
+              return `seeds-${match[1].toLowerCase()}`;
+            }
+            return 'seeds-misc';
+          }
+        }
+      }
     },
   },
 })
