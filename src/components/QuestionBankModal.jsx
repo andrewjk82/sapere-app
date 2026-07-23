@@ -1614,8 +1614,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         solution: q.solution || '',
         solutionSteps: (q.solutionSteps || []).map(s =>
           typeof s === 'string'
-            ? { explanation: s, workingOut: '', graphData: null }
-            : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null }
+            ? { explanation: s, workingOut: '', graphData: null, graphDataStr: '' }
+            : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null, graphDataStr: s.graphData ? stringifyGraphData(s.graphData) : '' }
         ),
         hint: q.hint || '',
         topicId: q.topicId || '',
@@ -1631,8 +1631,8 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             solution: sq.solution || '',
             solutionSteps: (sq.solutionSteps || []).map(s =>
               typeof s === 'string'
-                ? { explanation: s, workingOut: '', graphData: null }
-                : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null }
+                ? { explanation: s, workingOut: '', graphData: null, graphDataStr: '' }
+                : { explanation: s.explanation || '', workingOut: s.workingOut || '', graphData: s.graphData || null, graphDataStr: s.graphData ? stringifyGraphData(s.graphData) : '' }
             ),
             options: (sq.options && sq.options.length > 0)
               ? sq.options.map(o => typeof o === 'string' ? { text: o, imageUrl: '' } : { text: o.text || '', imageUrl: o.imageUrl || '' })
@@ -2618,6 +2618,27 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                               <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '320px' }} />
                             </div>
                           )}
+                          <details style={{ marginTop: '10px' }}>
+                            <summary style={{ cursor: 'pointer', color: '#6366f1', fontWeight: 800, fontSize: '0.78rem' }}>
+                              Edit Graph Data (JSON)
+                            </summary>
+                            <textarea
+                              rows={8}
+                              value={step.graphDataStr || ''}
+                              onChange={e => {
+                                const val = e.target.value;
+                                const next = [...formData.solutionSteps];
+                                let parsed = step.graphData;
+                                try {
+                                  parsed = val.trim() ? JSON.parse(val) : null;
+                                } catch (err) {}
+                                next[sIdx] = { ...next[sIdx], graphDataStr: val, graphData: parsed };
+                                setFormData({ ...formData, solutionSteps: next });
+                              }}
+                              style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }}
+                              placeholder='{ "svg": "<svg>...</svg>" }'
+                            />
+                          </details>
                         </div>
                       </div>
                     </div>
@@ -2846,6 +2867,29 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                                 <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '300px' }} />
                               </div>
                             )}
+                            <details style={{ marginTop: '10px' }}>
+                              <summary style={{ cursor: 'pointer', color: '#6366f1', fontWeight: 800, fontSize: '0.78rem' }}>
+                                Edit Graph Data (JSON)
+                              </summary>
+                              <textarea
+                                rows={8}
+                                value={step.graphDataStr || ''}
+                                onChange={e => {
+                                  const val = e.target.value;
+                                  const nextSubs = [...formData.subQuestions];
+                                  const nextSteps = [...nextSubs[sqIdx].solutionSteps];
+                                  let parsed = step.graphData;
+                                  try {
+                                    parsed = val.trim() ? JSON.parse(val) : null;
+                                  } catch (err) {}
+                                  nextSteps[sIdx] = { ...nextSteps[sIdx], graphDataStr: val, graphData: parsed };
+                                  nextSubs[sqIdx].solutionSteps = nextSteps;
+                                  setFormData({ ...formData, subQuestions: nextSubs });
+                                }}
+                                style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }}
+                                placeholder='{ "svg": "<svg>...</svg>" }'
+                              />
+                            </details>
                           </div>
                         </div>
                       </div>
