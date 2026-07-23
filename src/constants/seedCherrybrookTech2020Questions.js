@@ -275,18 +275,16 @@ export const CTHS_2020_QUESTIONS = [
     "solution": "The correct answer is Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Compare the given function \\(g(x) = 2\\cos\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) with the standard trigonometric form \\(g(x) = a\\cos(bx + c)\\).\n\nFirst, rewrite \\(\\frac{x}{2}\\) as \\(\\frac{1}{2}x\\) to easily identify the coefficient \\(b\\). Then, match the corresponding parts of the equations to extract the values for \\(a\\), \\(b\\), and \\(c\\).",
+        "explanation": "In the standard trigonometric function \\(g(x) = a\\cos(bx + c)\\):\n- **Amplitude** is given by \\(|a|\\). It represents the maximum vertical stretch from the center axis.\n- **Period** is calculated using \\(\\frac{2\\pi}{|b|}\\). It represents the length of one complete wave cycle.\n- **Phase shift** (horizontal shift) is calculated using \\(-\\frac{c}{b}\\).\n\nBy comparing our given function \\(g(x) = 2\\cos\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) with the standard form, we can extract \\(a\\), \\(b\\), and \\(c\\). Note that \\(\\frac{x}{2}\\) is exactly the same as \\(\\frac{1}{2}x\\).",
         "workingOut": "$$\\begin{aligned}\ng(x) &= a\\cos(bx + c) \\\\\ng(x) &= 2\\cos\\left(\\frac{1}{2}x + \\frac{\\pi}{3}\\right) \\\\\n\\\\\na &= 2 \\\\\nb &= \\frac{1}{2} \\\\\nc &= \\frac{\\pi}{3}\n\\end{aligned}$$"
       },
       {
-        "explanation": "The phase shift is \\(-\\frac{c}{b} = -\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\\), meaning the graph is shifted left by \\(\\frac{2\\pi}{3}\\).",
-        "workingOut": "\\(\\text{Phase shift} = -\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\\)",
-        "graphData": null
+        "explanation": "Now, substitute the extracted values of \\(a\\), \\(b\\), and \\(c\\) into our formulas to find the specific properties of this graph:\n- **Amplitude:** \\(|2| = 2\\)\n- **Period:** \\(\\frac{2\\pi}{1/2} = 4\\pi\\)\n- **Phase shift:** \\(-\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\\) (Since it is negative, the graph is shifted to the left by \\(\\frac{2\\pi}{3}\\)).",
+        "workingOut": "$$\\begin{aligned}\n\\text{Amplitude} &= 2 \\\\\n\\text{Period} &= \\frac{2\\pi}{1/2} = 4\\pi \\\\\n\\text{Phase shift} &= -\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\n\\end{aligned}$$"
       },
       {
-        "explanation": "Select the graph with amplitude 2, period \\(4\\pi\\), and a leftward phase shift of \\(\\frac{2\\pi}{3}\\). This matches Graph (A).",
-        "workingOut": "\\(\\text{Answer: Graph (A)}\\)",
-        "graphData": null
+        "explanation": "Finally, check the given options for the graph that matches all three calculated properties: an amplitude of 2, a period of \\(4\\pi\\), and a leftward phase shift of \\(\\frac{2\\pi}{3}\\).\n\nThis perfectly matches Graph (A).",
+        "workingOut": "\\(\\text{Answer: Graph (A)}\\)"
       }
     ],
     "graphData": null,
