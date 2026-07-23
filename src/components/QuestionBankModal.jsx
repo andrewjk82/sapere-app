@@ -1827,8 +1827,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         blanks: formData.type === 'fill_blank'
           ? (formData.blanks || []).map((b) => ({ label: b.label || '', answer: b.answer || '' }))
           : [],
-        solution: formData.solution,
-        solutionSteps: formData.solutionSteps.filter(s => s.explanation.trim() || s.workingOut.trim()),
+        solutionSteps: formData.solutionSteps
+          .filter(s => s.explanation.trim() || s.workingOut.trim() || s.graphData)
+          .map(({ graphDataStr, ...s }) => s),
         hint: formData.hint,
         subQuestions: (formData.subQuestions || []).map(sq => {
           const sqMc = sq.type === 'multiple_choice' ? packMcOptions(sq.options, sq.answerIdx) : null;
@@ -1839,7 +1840,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
             options: sqMc ? sqMc.options : [],
             answer: sqMc ? (sqMc.answerIdx != null ? String(sqMc.answerIdx) : '') : (sq.answer || ''),
             solution: sq.solution || '',
-            solutionSteps: (sq.solutionSteps || []).filter(s => s.explanation.trim() || s.workingOut.trim()),
+            solutionSteps: (sq.solutionSteps || [])
+              .filter(s => s.explanation.trim() || s.workingOut.trim() || s.graphData)
+              .map(({ graphDataStr, ...s }) => s),
             hint: sq.hint || ''
           };
         }),
@@ -2610,35 +2613,39 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                               <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                             </div>
                           )}
+                          <div>
+                            <label style={{ display: 'block', marginTop: '10px', marginBottom: '6px', fontSize: '0.7rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>
+                              Step Diagram / Graph (SVG Code or JSON)
+                            </label>
+                            <textarea
+                              rows={3}
+                              value={step.graphDataStr || (step.graphData ? (typeof step.graphData === 'string' ? step.graphData : JSON.stringify(step.graphData, null, 2)) : '')}
+                              onChange={e => {
+                                const val = e.target.value;
+                                const next = [...formData.solutionSteps];
+                                let parsed = null;
+                                if (val.trim()) {
+                                  if (val.trim().startsWith('<svg')) {
+                                    parsed = { svg: val.trim() };
+                                  } else {
+                                    try { parsed = JSON.parse(val); } catch (err) { parsed = { svg: val }; }
+                                  }
+                                }
+                                next[sIdx] = { ...next[sIdx], graphDataStr: val, graphData: parsed };
+                                setFormData({ ...formData, solutionSteps: next });
+                              }}
+                              style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.85rem', fontFamily: 'monospace', resize: 'vertical', background: '#fff' }}
+                              placeholder='Paste <svg>...</svg> code or { "svg": "..." } JSON here'
+                            />
+                          </div>
                           {step.graphData && (
                             <div style={{ marginTop: '10px' }}>
                               <div style={{ fontSize: '0.65rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '6px' }}>
                                 📊 Graph Preview (solution graph)
                               </div>
-                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '320px' }} />
+                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '150px' }} />
                             </div>
                           )}
-                          <details style={{ marginTop: '10px' }}>
-                            <summary style={{ cursor: 'pointer', color: '#6366f1', fontWeight: 800, fontSize: '0.78rem' }}>
-                              Edit Graph Data (JSON)
-                            </summary>
-                            <textarea
-                              rows={8}
-                              value={step.graphDataStr || ''}
-                              onChange={e => {
-                                const val = e.target.value;
-                                const next = [...formData.solutionSteps];
-                                let parsed = step.graphData;
-                                try {
-                                  parsed = val.trim() ? JSON.parse(val) : null;
-                                } catch (err) {}
-                                next[sIdx] = { ...next[sIdx], graphDataStr: val, graphData: parsed };
-                                setFormData({ ...formData, solutionSteps: next });
-                              }}
-                              style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }}
-                              placeholder='{ "svg": "<svg>...</svg>" }'
-                            />
-                          </details>
                         </div>
                       </div>
                     </div>
@@ -2859,37 +2866,41 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
                                 <MathPreview content={/\$|\\\(|\\\[/.test(step.workingOut) ? step.workingOut : `$${step.workingOut}$`} />
                               </div>
                             )}
-                            {step.graphData && (
-                              <div style={{ marginTop: '8px' }}>
-                                <div style={{ fontSize: '0.62rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '5px' }}>
-                                  📊 Graph Preview (solution graph)
-                                </div>
-                                <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '300px' }} />
+                          <div>
+                            <label style={{ display: 'block', marginTop: '8px', marginBottom: '4px', fontSize: '0.68rem', fontWeight: 800, color: '#94a3b8', textTransform: 'uppercase' }}>
+                              Step Diagram / Graph (SVG Code or JSON)
+                            </label>
+                            <textarea
+                              rows={3}
+                              value={step.graphDataStr || (step.graphData ? (typeof step.graphData === 'string' ? step.graphData : JSON.stringify(step.graphData, null, 2)) : '')}
+                              onChange={e => {
+                                const val = e.target.value;
+                                const nextSubs = [...formData.subQuestions];
+                                const nextSteps = [...nextSubs[sqIdx].solutionSteps];
+                                let parsed = null;
+                                if (val.trim()) {
+                                  if (val.trim().startsWith('<svg')) {
+                                    parsed = { svg: val.trim() };
+                                  } else {
+                                    try { parsed = JSON.parse(val); } catch (err) { parsed = { svg: val }; }
+                                  }
+                                }
+                                nextSteps[sIdx] = { ...nextSteps[sIdx], graphDataStr: val, graphData: parsed };
+                                nextSubs[sqIdx].solutionSteps = nextSteps;
+                                setFormData({ ...formData, subQuestions: nextSubs });
+                              }}
+                              style={{ width: '100%', padding: '10px 12px', borderRadius: '10px', border: '1px solid #ddd6fe', outline: 'none', fontWeight: 600, fontSize: '0.85rem', fontFamily: 'monospace', resize: 'vertical', background: '#fff' }}
+                              placeholder='Paste <svg>...</svg> code or { "svg": "..." } JSON here'
+                            />
+                          </div>
+                          {step.graphData && (
+                            <div style={{ marginTop: '8px' }}>
+                              <div style={{ fontSize: '0.62rem', fontWeight: 900, color: '#a78bfa', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '5px' }}>
+                                📊 Graph Preview (solution graph)
                               </div>
-                            )}
-                            <details style={{ marginTop: '10px' }}>
-                              <summary style={{ cursor: 'pointer', color: '#6366f1', fontWeight: 800, fontSize: '0.78rem' }}>
-                                Edit Graph Data (JSON)
-                              </summary>
-                              <textarea
-                                rows={8}
-                                value={step.graphDataStr || ''}
-                                onChange={e => {
-                                  const val = e.target.value;
-                                  const nextSubs = [...formData.subQuestions];
-                                  const nextSteps = [...nextSubs[sqIdx].solutionSteps];
-                                  let parsed = step.graphData;
-                                  try {
-                                    parsed = val.trim() ? JSON.parse(val) : null;
-                                  } catch (err) {}
-                                  nextSteps[sIdx] = { ...nextSteps[sIdx], graphDataStr: val, graphData: parsed };
-                                  nextSubs[sqIdx].solutionSteps = nextSteps;
-                                  setFormData({ ...formData, subQuestions: nextSubs });
-                                }}
-                                style={{ width: '100%', marginTop: '8px', padding: '16px', borderRadius: '16px', border: '1px solid #e2e8f0', outline: 'none', fontWeight: 500, fontSize: '0.85rem', fontFamily: 'monospace', background: '#f8fafc', resize: 'vertical' }}
-                                placeholder='{ "svg": "<svg>...</svg>" }'
-                              />
-                            </details>
+                              <MathPreview content="" graphData={step.graphData} style={{ minHeight: (step.graphData?.geometry || step.graphData?.svg || step.graphData?.svgSnapshot || step.graphData?.diagramSvg) ? 'auto' : '150px' }} />
+                            </div>
+                          )}
                           </div>
                         </div>
                       </div>
