@@ -80,6 +80,44 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
   const [pdfWithAnswers, setPdfWithAnswers] = useState(true);
   const [pdfReadingTime, setPdfReadingTime] = useState(5);
   const [pdfWorkingTime, setPdfWorkingTime] = useState(60);
+  const [searchQuery, setSearchQuery] = useState('');
+
+  const handleSearchSubmit = async () => {
+    const trimmed = searchQuery.trim();
+    if (!trimmed) return;
+
+    // 1. Search locally in the loaded/visible list
+    const visibleIds = questionIds.filter(id => !deadIds.has(id));
+    const localIdx = visibleIds.findIndex(id => id.toLowerCase().includes(trimmed.toLowerCase()));
+    if (localIdx !== -1) {
+      setCurrentIdx(localIdx);
+      showToast('Found question in current list!', 'success');
+      setSearchQuery('');
+      return;
+    }
+
+    // 2. Search globally in Firestore
+    setLoading(true);
+    try {
+      const docRef = doc(db, 'questions', trimmed);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists() && docSnap.data().isActive !== false) {
+        const qData = { id: docSnap.id, ...docSnap.data() };
+        setLoadedQuestions(prev => ({ ...prev, [trimmed]: qData }));
+        setQuestionIds(prev => [trimmed, ...prev.filter(id => id !== trimmed)]);
+        setCurrentIdx(0);
+        showToast('Question found and loaded globally!', 'success');
+        setSearchQuery('');
+      } else {
+        showToast('Question ID not found in database', 'error');
+      }
+    } catch (err) {
+      console.error('Global question search failed:', err);
+      showToast('Search failed: ' + err.message, 'error');
+    } finally {
+      setLoading(false);
+    }
+  };
 
   const handleSyncAll = async () => {
     if (!import.meta.env.DEV) {
@@ -466,6 +504,26 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
               <Plus size={16} /> New
             </button>
           </div>
+        </div>
+
+        {/* Search Bar */}
+        <div style={{ display: 'flex', gap: '8px', background: '#fff', padding: '8px 12px', borderRadius: '16px', border: '1px solid #e2e8f0', boxShadow: '0 1px 3px rgba(0,0,0,0.05)' }}>
+          <input
+            type="text"
+            placeholder="Search Question by ID (e.g. cths2020-mc7)..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') handleSearchSubmit();
+            }}
+            style={{ flex: 1, padding: '10px 14px', borderRadius: '12px', border: '1px solid #cbd5e1', background: '#f8fafc', fontSize: '0.9rem', color: '#1e293b', fontWeight: 500, outline: 'none' }}
+          />
+          <button
+            onClick={handleSearchSubmit}
+            style={{ padding: '10px 20px', borderRadius: '12px', border: 'none', background: '#6366f1', color: '#fff', fontWeight: 800, cursor: 'pointer', boxShadow: '0 4px 10px rgba(99,102,241,0.15)' }}
+          >
+            Search
+          </button>
         </div>
 
         {loading ? (
