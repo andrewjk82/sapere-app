@@ -851,62 +851,6 @@ const buildInQuizSpeech = (firstName, seedBase, session = {}) => {
 };
 
 /**
- * Live tip right after a single answer submit when the sketch pad was thin.
- * FlameBuddy bubble — not inline quiz UI.
- */
-const buildLiveSketchSpeech = (firstName, seedBase, opts = {}) => {
-  const n = firstName || '';
-  const hey = n ? `Hey ${n}` : 'Hey';
-  const inkLevel = opts.inkLevel === 'light' ? 'light' : 'empty';
-  const correct = opts.correct === true;
-  const q = Math.max(0, Number(opts.questionIndex) || 0);
-  let lines;
-  if (inkLevel === 'light') {
-    lines = [
-      {
-        msg: `${hey} — I only saw a few marks on the pad.`,
-        sub: 'Dots are a start. Try writing the full steps next time, not just a quick flick.',
-      },
-      {
-        msg: `Sketch pad was a little shy${n ? `, ${n}` : ''}.`,
-        sub: 'One more line of working out goes a long way — numbers, arrows, the path.',
-      },
-    ];
-  } else if (correct) {
-    lines = [
-      {
-        msg: `${hey}! Nice answer — the pad was empty though.`,
-        sub: 'Even when you know it, jot a line of working out. It locks the method in.',
-      },
-      {
-        msg: `Correct${n ? `, ${n}` : ''}! Next one: write on the board first.`,
-        sub: "Don't only pick the answer — show the steps beside it.",
-      },
-    ];
-  } else {
-    lines = [
-      {
-        msg: `${hey}, the sketch board was blank.`,
-        sub: 'Writing the steps first often catches small mistakes before you submit.',
-      },
-      {
-        msg: `Empty pad that time${n ? `, ${n}` : ''}.`,
-        sub: 'Try numbers on the side, not just the option tap. Working out is where learning sticks.',
-      },
-    ];
-  }
-  const line = pickLine(lines, `${seedBase}-live-sketch-${inkLevel}-${correct ? 1 : 0}-q${q}`, firstName);
-  return {
-    mood: correct ? 'hint' : 'thinking',
-    eyebrow: inkLevel === 'light' ? 'A bit more ink' : 'Sketch tip',
-    msg: line.msg,
-    sub: line.sub,
-    cta: null,
-    key: `live-sketch-${seedBase}-${inkLevel}-${correct ? 'ok' : 'no'}-q${q}`,
-  };
-};
-
-/**
  * Score-based post-result coaching. Ends by nudging Review for missed questions.
  *
  * Working-out ladder (ink level from stroke path length — no OCR/AI):
@@ -1683,8 +1627,6 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const voiceAudioRef = useRef(null);
   // Post-quiz score coaching (takes priority while active).
   const [resultCoach, setResultCoach] = useState(null); // { score, total, challengeType, until, id }
-  // Live tip after each answer when sketch pad was empty/light (FlameBuddy speech).
-  const [liveSketchTip, setLiveSketchTip] = useState(null); // { inkLevel, correct, questionIndex, until, id }
   // Active Daily/Calc quiz: hold briefing; coach working-out → mid-timer hint text.
   const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint, hintText }
   // Full-screen UI overlays (e.g. mode select) that embed their own FlameBuddy.
@@ -1986,7 +1928,6 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       });
       try { localCache.remove(`flame-buddy-perf-v1-${uid}`); } catch { /* ignore */ }
       setRecentPerf([]);
-      setLiveSketchTip(null); // session wrap-up replaces mid-quiz tips
       setQuizSession(null);
       setResultCoach({
         score,
@@ -2003,27 +1944,6 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
         workingOutSkipStreak,
         until: Date.now() + 50_000,
         id: `${Date.now()}-${score}-${total}-wo${weakWorkingOutCount}`,
-      });
-      setBubbleOpen(true);
-      setDismissedKey('');
-    };
-    // Per-answer sketch tip while the student is still in the quiz.
-    const onSketchSubmit = (e) => {
-      if (e.detail?.uid && e.detail.uid !== uid) return;
-      const raw = e.detail?.inkLevel;
-      // Real working out → clear any prior "empty pad" nag.
-      if (raw === 'substantial') {
-        setLiveSketchTip(null);
-        return;
-      }
-      const inkLevel = raw === 'light' ? 'light' : 'empty';
-      if (inkLevel !== 'empty' && inkLevel !== 'light') return;
-      setLiveSketchTip({
-        inkLevel,
-        correct: e.detail?.correct === true,
-        questionIndex: Number(e.detail?.questionIndex) || 0,
-        until: Date.now() + 8_000,
-        id: `${Date.now()}-q${e.detail?.questionIndex ?? 0}-${inkLevel}`,
       });
       setBubbleOpen(true);
       setDismissedKey('');
@@ -2071,13 +1991,11 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     };
     window.addEventListener('sapere:daily-practice-completed', onDone);
     window.addEventListener('sapere:challenge-result', onResult);
-    window.addEventListener('sapere:sketch-submit-tip', onSketchSubmit);
     window.addEventListener('sapere:quiz-session', onQuizSession);
     window.addEventListener('sapere:ui-overlay', onUiOverlay);
     return () => {
       window.removeEventListener('sapere:daily-practice-completed', onDone);
       window.removeEventListener('sapere:challenge-result', onResult);
-      window.removeEventListener('sapere:sketch-submit-tip', onSketchSubmit);
       window.removeEventListener('sapere:quiz-session', onQuizSession);
       window.removeEventListener('sapere:ui-overlay', onUiOverlay);
     };
@@ -2098,14 +2016,6 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     const t = setTimeout(() => setResultCoach(null), ms);
     return () => clearTimeout(t);
   }, [resultCoach?.until, resultCoach?.id]);
-
-  // Clear live per-answer sketch tip after its short window.
-  useEffect(() => {
-    if (!liveSketchTip?.until) return undefined;
-    const ms = Math.max(0, liveSketchTip.until - Date.now());
-    const t = setTimeout(() => setLiveSketchTip(null), ms);
-    return () => clearTimeout(t);
-  }, [liveSketchTip?.until, liveSketchTip?.id]);
 
   const dueNotes = useMemo(() => {
     if (!uid) return 0;
@@ -2145,15 +2055,6 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
           workingOutSkipStreak: resultCoach.workingOutSkipStreak,
         },
       );
-    }
-
-    // Mid-quiz: empty / light sketch pad after a single submit → FlameBuddy talks.
-    if (liveSketchTip) {
-      return buildLiveSketchSpeech(firstName, `${seedBase}-${liveSketchTip.id || 'ls'}`, {
-        inkLevel: liveSketchTip.inkLevel,
-        correct: liveSketchTip.correct,
-        questionIndex: liveSketchTip.questionIndex,
-      });
     }
 
     // Active quiz: hold pre-practice briefing; working-out first, then mid-timer hint.
@@ -2260,7 +2161,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
       cta: { label: 'Start sprint', tab: 'Challenge' },
       key: `calc-${today}-${stage}-${slot}-${speechEpoch}`,
     };
-  }, [cheerUntil, resultCoach, liveSketchTip, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch, examPrepSnap, profile?.examPrepEnabled]);
+  }, [cheerUntil, resultCoach, quizSession, tasks, calcEnabled, dueNotes, stage, today, activeTab, nextSession, uid, firstName, recentPerf, unreadFeedback, hour, speechEpoch, examPrepSnap, profile?.examPrepEnabled]);
 
   // Auto-open bubble when situation key changes (new day / tab / urgency / complete).
   // Challenge tab is allowed — that is where the performance briefing lives.

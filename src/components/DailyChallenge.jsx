@@ -587,21 +587,8 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     setupQuestion(combinedQs[0], 0);
     if (setIsLocked) setIsLocked(true);
     setLoading(false);
-    // FlameBuddy: hold pre-practice briefing; coach working-out during the quiz.
-    try {
-      const q0 = combinedQs?.[0];
-      window.dispatchEvent(new CustomEvent('sapere:quiz-session', {
-        detail: {
-          uid: user?.uid,
-          phase: 'start',
-          challengeType,
-          questionIndex: 0,
-          hasHint: Boolean(String(q0?.hint || '').trim()),
-          hintText: String(q0?.hint || '').trim(),
-          timeLimit: Number(q0?.timeLimit) || 30,
-        },
-      }));
-    } catch { /* ignore */ }
+    // FlameBuddy: setupQuestion() above already dispatched phase 'question' for Q0,
+    // which is the working-out reminder. No separate quiz-start briefing.
   };
 
   const startCalculationQuiz = async (modeId = 'normal') => {
@@ -1289,22 +1276,6 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     setStep('feedback');
     // Brief pastel flash on the quiz view to give an instant emotional cue.
     setFlash(isGraphSketch ? 'pending' : (correct ? 'correct' : 'wrong'));
-
-    // FlameBuddy speaks when the working-out pad was empty / only light marks.
-    // (Not graph_sketch "pending review" — those boards are the answer itself.)
-    if (showSplitScreen && !isGraphSketch && user?.uid && inkLevel) {
-      try {
-        window.dispatchEvent(new CustomEvent('sapere:sketch-submit-tip', {
-          detail: {
-            uid: user.uid,
-            inkLevel,
-            correct: Boolean(correct),
-            questionIndex: currentIdx,
-            challengeType,
-          },
-        }));
-      } catch { /* ignore */ }
-    }
 
     // Auto-advance after 3 seconds for ALL outcomes — feedback is intentionally
     // minimal now (just correct/wrong + countdown). The detailed worked
