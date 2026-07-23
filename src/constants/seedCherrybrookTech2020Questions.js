@@ -264,19 +264,19 @@ export const CTHS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Which of the following best represents the graph of $g(x) = 2\\cos\\!\\left(\\dfrac{x}{2} + \\dfrac{\\pi}{3}\\right)$?",
     "opts": [
-      "\\(Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\)\\)",
-      "\\(Graph (B): amplitude 2, period \\(4\\pi\\), no phase shift\\)",
-      "\\(Graph (C): amplitude 2, period \\(\\pi\\), with phase shift\\)",
-      "\\(Graph (D): amplitude 2, period \\(\\pi\\), no phase shift\\)"
+      "Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\)",
+      "Graph (B): amplitude 2, period \\(4\\pi\\), no phase shift",
+      "Graph (C): amplitude 2, period \\(\\pi\\), with phase shift",
+      "Graph (D): amplitude 2, period \\(\\pi\\), no phase shift"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Identify amplitude $= |a|$, period $= \\frac{2\\pi}{|b|}$, and phase shift $= -\\frac{c}{b}$ from $g(x) = a\\cos(bx+c)$.",
-    "solution": "The correct answer is \\(Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\)\\).",
+    "solution": "The correct answer is Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
         "explanation": "Write \\(g(x) = 2\\cos\\!\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) in standard form \\(a\\cos(bx + c)\\). Identify \\(a = 2\\), \\(b = \\frac{1}{2}\\), \\(c = \\frac{\\pi}{3}\\).",
-        "workingOut": "\\(a = 2, quad b = \\tfrac{1}{2}, quad c = \\tfrac{\\pi}{3}\\)",
+        "workingOut": "\\(a = 2, \\\\quad b = \\\\tfrac{1}{2}, \\\\quad c = \\\\tfrac{\\\\pi}{3}\\)",
         "graphData": null
       },
       {
