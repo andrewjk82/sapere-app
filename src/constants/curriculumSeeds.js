@@ -100,6 +100,7 @@ import { Y9_CH5G_QUESTIONS } from './seedYear9Ch5GQuestions.js';
 import { Y9_CH5H_QUESTIONS } from './seedYear9Ch5HQuestions.js';
 import { Y9_CH5I_QUESTIONS } from './seedYear9Ch5IQuestions.js';
 import { Y9_CH6A_QUESTIONS } from './seedYear9Ch6Questions.js';
+import { Y9_CH6B_QUESTIONS } from './seedYear9Ch6BQuestions.js';
 import { Y9_CH7A_QUESTIONS } from './seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from './seedYear9Ch8Questions.js';
 import { Y9_CH11_QUESTIONS } from './seedYear9Ch11Questions.js';
@@ -1221,6 +1222,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5h', topicCode: '5H', topicTitle: 'Solving linear inequalities', year: 'Year 9', seed: Y9_CH5H_QUESTIONS, label: 'Y9 Ch5 · Solving linear inequalities' },
   { chapterId: 'y9-5', chapterTitle: 'Chapter 5: Linear equations and inequalities', topicId: 'y9-5i', topicCode: '5I', topicTitle: 'Revision', year: 'Year 9', seed: Y9_CH5I_QUESTIONS, label: 'Y9 Ch5 · Revision' },
   { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6a', topicCode: '6A', topicTitle: 'Formulas', year: 'Year 9', seed: Y9_CH6A_QUESTIONS, label: 'Y9 Ch6 · Formulas' },
+  { chapterId: 'y9-6', chapterTitle: 'Chapter 6: Formulas', topicId: 'y9-6b', topicCode: '6B', topicTitle: 'Changing the subject of a formula', year: 'Year 9', seed: Y9_CH6B_QUESTIONS, label: 'Y9 Ch6 · Changing the subject of a formula' },
   { chapterId: 'y9-7', chapterTitle: 'Chapter 7: Congruence and special quadrilaterals', topicId: 'y9-7a', topicCode: '7A', topicTitle: 'Review of angles', year: 'Year 9', seed: Y9_CH7A_QUESTIONS, label: 'Y9 Ch7 · Angles' },
   { chapterId: 'y9-8', chapterTitle: 'Chapter 8: Index laws', topicId: 'y9-8a', topicCode: '8A', topicTitle: 'Index laws', year: 'Year 9', seed: Y9_CH8A_QUESTIONS, label: 'Y9 Ch8 · Index laws' },
   { chapterId: 'y9-11', chapterTitle: 'Chapter 11: Coordinate geometry', topicId: 'y9-11a', topicCode: '11A', topicTitle: 'Distance between two points', year: 'Year 9', seed: Y9_CH11_QUESTIONS, label: 'Y9 Ch11 · Distance between two points' },
@@ -1364,6 +1366,7 @@ export {
   Y9_CH4A_QUESTIONS,
   Y9_CH5A_QUESTIONS,
   Y9_CH6A_QUESTIONS,
+  Y9_CH6B_QUESTIONS,
   Y9_CH7A_QUESTIONS,
   Y9_CH8A_QUESTIONS,
   Y10_CH3A_QUESTIONS,
