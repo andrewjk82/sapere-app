@@ -275,9 +275,8 @@ export const CTHS_2020_QUESTIONS = [
     "solution": "The correct answer is Graph (A): amplitude 2, period \\(4\\pi\\), shifted left by \\(\\dfrac{2\\pi}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Write \\(g(x) = 2\\cos\\!\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) in standard form \\(a\\cos(bx + c)\\). Identify \\(a = 2\\), \\(b = \\frac{1}{2}\\), \\(c = \\frac{\\pi}{3}\\).",
-        "workingOut": "\\(a = 2, \\\\quad b = \\\\tfrac{1}{2}, \\\\quad c = \\\\tfrac{\\\\pi}{3}\\)",
-        "graphData": null
+        "explanation": "Compare the given function \\(g(x) = 2\\cos\\left(\\frac{x}{2} + \\frac{\\pi}{3}\\right)\\) with the standard trigonometric form \\(g(x) = a\\cos(bx + c)\\).\n\nFirst, rewrite \\(\\frac{x}{2}\\) as \\(\\frac{1}{2}x\\) to easily identify the coefficient \\(b\\). Then, match the corresponding parts of the equations to extract the values for \\(a\\), \\(b\\), and \\(c\\).",
+        "workingOut": "\\begin{aligned}\ng(x) &= a\\cos(bx + c) \\\\\ng(x) &= 2\\cos\\left(\\frac{1}{2}x + \\frac{\\pi}{3}\\right) \\\\\n\\\\\na &= 2 \\\\\nb &= \\frac{1}{2} \\\\\nc &= \\frac{\\pi}{3}\n\\end{aligned}"
       },
       {
         "explanation": "The phase shift is \\(-\\frac{c}{b} = -\\frac{\\pi/3}{1/2} = -\\frac{2\\pi}{3}\\), meaning the graph is shifted left by \\(\\frac{2\\pi}{3}\\).",
