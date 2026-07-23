@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp } from 'firebase/firestore';
+import { collection, query, orderBy, getDocs, doc, updateDoc, deleteDoc, getDoc, limit, setDoc, arrayUnion, increment, runTransaction, serverTimestamp, getDocFromServer } from 'firebase/firestore';
 import { db } from '../firebase/config';
 import { useAdminFeed } from '../context/AdminFeedContext';
 import { removeQuestionFromIndex } from '../services/questionIndexService';
@@ -282,7 +282,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       const next = {};
       await Promise.all(ids.map(async (qid) => {
         try {
-          const snap = await getDoc(doc(db, 'questions', qid));
+          const snap = await getDocFromServer(doc(db, 'questions', qid));
           if (snap.exists()) next[qid] = snap.data();
         } catch { /* non-fatal */ }
       }));
@@ -367,7 +367,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
       const liveById = {};
       await Promise.all(idsToFetch.map(async (qid) => {
         try {
-          const snap = await getDoc(doc(db, 'questions', qid));
+          const snap = await getDocFromServer(doc(db, 'questions', qid));
           if (snap.exists()) liveById[qid] = snap.data();
         } catch { /* non-fatal — report still renders its parent prompt */ }
       }));
@@ -445,7 +445,7 @@ const ReportsAdmin = ({ initialViewMode = 'reports', setInitialViewMode }) => {
         .catch((err) => console.warn('Could not fetch reported answer attempt:', err))
         .finally(() => setPreviewAttemptLoading(false));
 
-      const questionSnap = await getDoc(doc(db, 'questions', questionId));
+      const questionSnap = await getDocFromServer(doc(db, 'questions', questionId));
       if (questionSnap.exists()) {
         setPreviewQuestion({ id: questionSnap.id, ...questionSnap.data() });
       }

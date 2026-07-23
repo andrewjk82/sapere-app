@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp, getDocFromServer, getDocsFromServer } from 'firebase/firestore';
 import MathView from './MathView';
 import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
@@ -100,7 +100,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     setLoading(true);
     try {
       const docRef = doc(db, 'questions', trimmed);
-      const docSnap = await getDoc(docRef);
+      const docSnap = await getDocFromServer(docRef);
       if (docSnap.exists() && docSnap.data().isActive !== false) {
         const qData = { id: docSnap.id, ...docSnap.data() };
         setLoadedQuestions(prev => ({ ...prev, [trimmed]: qData }));
