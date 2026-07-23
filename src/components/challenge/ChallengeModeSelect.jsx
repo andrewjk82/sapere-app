@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X, Clock, Zap, ArrowRight, Swords, Shield, Flame } from 'lucide-react';
@@ -106,6 +106,13 @@ export default function ChallengeModeSelect({
   // Bumps on each pick so select FX (sparks / fire) can re-fire.
   const [fxTick, setFxTick] = useState(0);
 
+  // Keep the latest onCancel without making it an effect dependency — an inline
+  // arrow prop from the parent gets a new identity on every parent re-render,
+  // which was re-firing the reset-on-open effect below and silently reverting
+  // the student's mode pick back to 'normal' while the modal sat open.
+  const onCancelRef = useRef(onCancel);
+  useEffect(() => { onCancelRef.current = onCancel; }, [onCancel]);
+
   useEffect(() => {
     if (!open) return undefined;
     setSelected('normal');
@@ -118,7 +125,7 @@ export default function ChallengeModeSelect({
       }));
     } catch { /* ignore */ }
     const onKey = (e) => {
-      if (e.key === 'Escape') onCancel?.();
+      if (e.key === 'Escape') onCancelRef.current?.();
     };
     window.addEventListener('keydown', onKey);
     return () => {
@@ -129,7 +136,7 @@ export default function ChallengeModeSelect({
         }));
       } catch { /* ignore */ }
     };
-  }, [open, onCancel]);
+  }, [open]);
 
   const activeId = hovered || selected;
   const activeMode = getChallengeMode(activeId);

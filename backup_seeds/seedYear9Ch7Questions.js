@@ -477,7 +477,14 @@ export const Y9_CH7A_QUESTIONS = [
   },
   {
     "id": "y9-7a-q2c",
-    "type": "short_answer",
+    "type": "multiple_choice",
+    "options": [
+      { "text": "\\(12.5^\\circ\\)" },
+      { "text": "\\(22.5^\\circ\\)" },
+      { "text": "\\(30^\\circ\\)" },
+      { "text": "\\(45^\\circ\\)" }
+    ],
+    "answer": 1,
     "difficulty": "easy",
     "question": "Find the angle marked with the pronumeral $\\alpha$, giving reasons.",
     "a": "16^\\circ",
