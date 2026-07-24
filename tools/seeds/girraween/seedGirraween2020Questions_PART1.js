@@ -366,7 +366,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     s: 'Using the chain rule for $y = e^{\\sqrt{x}}$: the derivative of the outer function is $e^{\\sqrt{x}}$, and the derivative of the inner function $\\sqrt{x}$ is $\\frac{1}{2\\sqrt{x}}$. Therefore, $\\frac{dy}{dx} = e^{\\sqrt{x}} \\cdot \\frac{1}{2\\sqrt{x}} = \\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$. The correct answer is $\\frac{e^{\\sqrt{x}}}{2\\sqrt{x}}$.',
     solutionSteps: [
       {
-        explanation: 'We have $y = e^{\\sqrt{x}}$, which is a composite function (a function within a function). To differentiate this, we must use the chain rule: if $y = f(g(x))$, then $\\frac{dy}{dx} = f\\'(g(x)) \\cdot g\\'(x)$. Here, the outer function is $e^u$ and the inner function is $u = \\sqrt{x}$.',
+        explanation: "We have $y = e^{\\sqrt{x}}$, which is a composite function (a function within a function). To differentiate this, we must use the chain rule: if $y = f(g(x))$, then $\\frac{dy}{dx} = f'(g(x)) \\cdot g'(x)$. Here, the outer function is $e^u$ and the inner function is $u = \\sqrt{x}$.",
         workingOut: 'y = e^{\\sqrt{x}} \\quad \\text{Let } u = \\sqrt{x} \\quad \\text{Then } y = e^u'
       },
       {

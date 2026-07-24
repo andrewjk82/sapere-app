@@ -1429,7 +1429,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing midpoint \\(M\\) for row a.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **a**.",
     "opts": [
       "\\((4, 7)\\)",
       "\\((4, 8)\\)",
@@ -1442,24 +1442,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((4, 8)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{2+6}{2}, \\frac{5+11}{2}\\right) = (4, 8)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(2, 5), \\; B(6, 11) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((4, 8)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{2 + 6}{2} = 4 \\\\\\\\ y_M &= \\frac{5 + 11}{2} = 8 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (4, 8). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((4, 8)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(4, 8) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              0,
+              13,
+              8,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[0, 0], [8, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 3], [0, 13]], {strokeColor: 'black'});\nboard.create('point', [2, 5], {name:'A(2, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [6, 11], {name:'B(6, 11)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [4, 8], {name:'M(4, 8)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[2, 5], [6, 11]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1492,7 +1508,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(A\\) for row b.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **b**.",
     "opts": [
       "\\((12, 14)\\)",
       "\\((12, 15)\\)",
@@ -1505,24 +1521,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((12, 15)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(A = 2(8, 10) - (4, 5) = (16, 20) - (4, 5) = (12, 15)\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ B(4, 5), \\; M(8, 10) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{x_1 + 4}{2} = 8, \\quad \\frac{y_1 + 5}{2} = 10 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((12, 15)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates.",
+        "workingOut": "$$ \\begin{aligned} \\frac{x_1 + 4}{2} &= 8 \\implies x_1 + 4 = 16 \\implies x_1 = 12 \\\\\\\\ \\frac{y_1 + 5}{2} &= 10 \\implies y_1 + 5 = 20 \\implies y_1 = 15 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (12, 15). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((12, 15)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of point \\(A\\).",
+        "workingOut": "$$ A(12, 15) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              2,
+              17,
+              14,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[2, 0], [14, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 3], [0, 17]], {strokeColor: 'black'});\nboard.create('point', [12, 15], {name:'A(12, 15)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [4, 5], {name:'B(4, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [8, 10], {name:'M(8, 10)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[12, 15], [4, 5]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1555,7 +1587,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(B\\) for row c.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **c**.",
     "opts": [
       "\\((6, 0)\\)",
       "\\((6, 1)\\)",
@@ -1568,24 +1600,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((6, 1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(B = 2(2, -2) - (-2, -5) = (4, -4) - (-2, -5) = (6, 1)\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(-2, -5), \\; M(2, -2) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{-2 + x_2}{2} = 2, \\quad \\frac{-5 + y_2}{2} = -2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((6, 1)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates.",
+        "workingOut": "$$ \\begin{aligned} \\frac{-2 + x_2}{2} &= 2 \\implies -2 + x_2 = 4 \\implies x_2 = 6 \\\\\\\\ \\frac{-5 + y_2}{2} &= -2 \\implies -5 + y_2 = -4 \\implies y_2 = 1 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (6, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((6, 1)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of point \\(B\\).",
+        "workingOut": "$$ B(6, 1) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -4,
+              3,
+              8,
+              -7
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [8, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -7], [0, 3]], {strokeColor: 'black'});\nboard.create('point', [-2, -5], {name:'A(-2, -5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [6, 1], {name:'B(6, 1)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, -2], {name:'M(2, -2)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-2, -5], [6, 1]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1618,7 +1666,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing midpoint \\(M\\) for row d.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **d**.",
     "opts": [
       "\\((4.6, 3.75)\\)",
       "\\((5.6, 3.75)\\)",
@@ -1631,24 +1679,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((4.6, 3.75)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{1.5+7.7}{2}, \\frac{5.3+2.2}{2}\\right) = (4.6, 3.75)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(1.5, 5.3), \\; B(7.7, 2.2) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((4.6, 3.75)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{1.5 + 7.7}{2} = 4.6 \\\\\\\\ y_M &= \\frac{5.3 + 2.2}{2} = 3.75 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (4.6, 3.75). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((4.6, 3.75)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(4.6, 3.75) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -0.5,
+              7.3,
+              9.7,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-0.5, 0], [9.7, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 0.20000000000000018], [0, 7.3]], {strokeColor: 'black'});\nboard.create('point', [1.5, 5.3], {name:'A(1.5, 5.3)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [7.7, 2.2], {name:'B(7.7, 2.2)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [4.6, 3.75], {name:'M(4.6, 3.75)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[1.5, 5.3], [7.7, 2.2]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1681,7 +1745,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(A\\) for row e.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **e**.",
     "opts": [
       "\\((4.5, 0.1)\\)",
       "\\((3.5, -0.9)\\)",
@@ -1694,24 +1758,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((3.5, 0.1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(A = 2(0.5, -1.5) - (-2.5, -3.1) = (1, -3) - (-2.5, -3.1) = (3.5, 0.1)\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ B(-2.5, -3.1), \\; M(0.5, -1.5) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{x_1 + -2.5}{2} = 0.5, \\quad \\frac{y_1 + -3.1}{2} = -1.5 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3.5, 0.1)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates.",
+        "workingOut": "$$ \\begin{aligned} \\frac{x_1 + -2.5}{2} &= 0.5 \\implies x_1 + -2.5 = 1 \\implies x_1 = 3.5 \\\\\\\\ \\frac{y_1 + -3.1}{2} &= -1.5 \\implies y_1 + -3.1 = -3 \\implies y_1 = 0.10000000000000009 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3.5, 0.1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3.5, 0.1)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of point \\(A\\).",
+        "workingOut": "$$ A(3.5, 0.10000000000000009) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -4.5,
+              2.1,
+              5.5,
+              -5.1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [5.5, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -5.1], [0, 2.1]], {strokeColor: 'black'});\nboard.create('point', [3.5, 0.10000000000000009], {name:'A(3.5, 0.10000000000000009)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-2.5, -3.1], {name:'B(-2.5, -3.1)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [0.5, -1.5], {name:'M(0.5, -1.5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[3.5, 0.10000000000000009], [-2.5, -3.1]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1744,7 +1824,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(B\\) for row f.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **f**.",
     "opts": [
       "\\((5.8, 3)\\)",
       "\\((4.8, 2)\\)",
@@ -1757,24 +1837,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((4.8, 3)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(B = 2(0, 4) - (-4.8, 5) = (0, 8) - (-4.8, 5) = (4.8, 3)\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(-4.8, 5), \\; M(0, 4) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{-4.8 + x_2}{2} = 0, \\quad \\frac{5 + y_2}{2} = 4 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((4.8, 3)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates.",
+        "workingOut": "$$ \\begin{aligned} \\frac{-4.8 + x_2}{2} &= 0 \\implies -4.8 + x_2 = 0 \\implies x_2 = 4.8 \\\\\\\\ \\frac{5 + y_2}{2} &= 4 \\implies 5 + y_2 = 8 \\implies y_2 = 3 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (4.8, 3). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((4.8, 3)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of point \\(B\\).",
+        "workingOut": "$$ B(4.8, 3) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -6.8,
+              7,
+              6.8,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.8, 0], [6.8, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 1], [0, 7]], {strokeColor: 'black'});\nboard.create('point', [-4.8, 5], {name:'A(-4.8, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [4.8, 3], {name:'B(4.8, 3)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [0, 4], {name:'M(0, 4)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-4.8, 5], [4.8, 3]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
