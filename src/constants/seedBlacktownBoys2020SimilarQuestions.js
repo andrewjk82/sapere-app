@@ -322,7 +322,7 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "A graph shows the curve $y = f(x)$ with a point $Q(b, f(b))$ in the first quadrant. At $Q$ the curve is increasing and concave up. Which statement is true?",
+    "question": "A graph shows the curve \\(y = f(x)\\) with a point \\(Q(b, f(b))\\) in the first quadrant. At \\(Q\\) the curve is increasing and concave up. Which statement is true?<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 300 300\" width=\"100%\" style=\"max-width:300px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"250\" x2=\"280\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"270\" y=\"240\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"60\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"35\" y=\"265\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"50.0,250.0 56.0,249.9 62.0,249.5 68.0,248.9 74.0,248.0 80.0,246.9 86.0,245.5 92.0,243.9 98.0,242.0 104.0,239.9 110.0,237.5 116.0,234.9 122.0,232.0 128.0,228.9 134.0,225.5 140.0,221.9 146.0,218.0 152.0,213.9 158.0,209.5 164.0,204.9 170.0,200.0 176.0,194.9 182.0,189.5 188.0,183.9 194.0,178.0 200.0,171.9 206.0,165.5 212.0,158.9 218.0,152.0 224.0,144.9 230.0,137.5 236.0,129.9 242.0,122.0 248.0,113.9 254.0,105.5 260.0,96.9 266.0,88.0 272.0,78.9\" />\n  \n  <!-- Point Q -->\n  <circle cx=\"170\" cy=\"200\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"180\" y=\"205\" fill=\"#dc2626\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">Q(b, f(b))</text>\n</svg>\n</div>\n",
     "opts": [
       "\\(f'(b) < 0, f''(b) < 0\\)",
       "\\(f'(b) > 0, f''(b) > 0\\)",
@@ -335,24 +335,16 @@ export const BLACKTOWN_BOYS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(f'(b) > 0, f''(b) > 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "f'(b) > 0",
-        "graphData": null
+        "explanation": "Step 1: First, analyze the 'increasing' condition at point \\(Q\\). If a function is increasing, its graph is sloping upwards from left to right. This means the gradient (first derivative) is positive.",
+        "workingOut": "$$ \\text{Increasing} \\implies f'(b) > 0 $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "f''(b) > 0",
-        "graphData": null
+        "explanation": "Step 2: Next, analyze the 'concave up' condition at point \\(Q\\). If a curve is concave up, it bends upwards like a smile (\\(\\smile\\)). This means the rate of change of the gradient (second derivative) is positive.",
+        "workingOut": "$$ \\text{Concave up} \\implies f''(b) > 0 $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(b) > 0, f''(b) > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: f'(b) > 0, f''(b) > 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f'(b) > 0, f''(b) > 0\\)",
-        "graphData": null
+        "explanation": "Step 3: Combine both mathematical conditions.",
+        "workingOut": "$$ \\therefore f'(b) > 0 \\text{ and } f''(b) > 0 $$"
       }
     ],
     "graphData": null,
