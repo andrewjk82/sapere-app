@@ -1663,11 +1663,11 @@ export const Y9_CH11C_QUESTIONS = [
     "topicId": "y9-11c",
     "c": "11C",
     "t": "The gradient of a line",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "A line passes through the point \\((1, 4)\\) and has gradient 4. Find the \\(x\\)-coordinate of the point on the line when \\(y = 0\\).",
-    "answer": "0",
+    "answer": "2",
     "hint": "Set \\(y = 0\\) in the line's equation \\(y = 4x\\) and solve for \\(x\\).",
     "solution": "0",
     "solutionSteps": [
@@ -1710,7 +1710,32 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\\\(-2\\\\)",
+      "\\\\(-1\\\\)",
+      "\\\\(0\\\\)",
+      "\\\\(1\\\\)"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "\\\\(-2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q5d",
