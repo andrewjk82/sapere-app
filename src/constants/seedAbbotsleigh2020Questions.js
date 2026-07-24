@@ -915,7 +915,7 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "topicId": "y12a-exam",
     "c": "3E",
     "t": "Systematic curve sketching with the derivative",
-    "type": "short_answer",
+    "type": "teacher_review",
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "Sketch the graph of $y = h(x) = (x-2)(x^2+1)$, showing stationary points and axes intercepts.",
