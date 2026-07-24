@@ -89,7 +89,10 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
         explanation: 'Take the square root of both sides.',
         workingOut: 'QR = \\sqrt{40.856} \\approx 6.4 \\text{ cm}'
       }
-    ]
+    ],
+    graphData: {
+      svg: '<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg"><defs><style>.vertex { fill: #6366f1; r: 7; }.vertex-label { font-size: 16px; font-weight: 700; fill: #6366f1; }.side-label { font-size: 14px; font-weight: 600; fill: #1e293b; }.angle-label { font-size: 13px; fill: #ef4444; font-weight: 600; }.side-line { stroke: #6366f1; stroke-width: 3; fill: none; }.angle-arc { stroke: #ef4444; stroke-width: 2; fill: none; }.info-text { font-size: 12px; fill: #64748b; }.formula { font-size: 13px; fill: #1e293b; font-weight: 600; }</style></defs><rect width="600" height="500" fill="#ffffff"/><text x="300" y="25" class="vertex-label" text-anchor="middle" font-size="18">Triangle PQR: Cosine Rule</text><circle cx="120" cy="150" class="vertex"/><text x="100" y="140" class="vertex-label">P</text><circle cx="450" cy="350" class="vertex"/><text x="465" y="365" class="vertex-label">Q</text><circle cx="450" cy="150" class="vertex"/><text x="465" y="140" class="vertex-label">R</text><line x1="120" y1="150" x2="450" y2="150" class="side-line"/><line x1="120" y1="150" x2="450" y2="350" class="side-line"/><line x1="450" y1="150" x2="450" y2="350" class="side-line"/><text x="285" y="130" class="side-label">PR = 5 cm</text><text x="250" y="265" class="side-label">PQ = 8 cm</text><text x="475" y="255" class="side-label" fill="#ef4444">QR = ?</text><path d="M 160 150 A 40 40 0 0 1 140 184" class="angle-arc"/><text x="155" y="180" class="angle-label">53°</text><rect x="30" y="410" width="540" height="75" fill="#f1f5f9" rx="8"/><text x="50" y="435" class="formula">Given: PQ = 8 cm,  PR = 5 cm,  ∠QPR = 53°</text><text x="50" y="460" class="formula">Find: QR (the side opposite to angle P)</text><text x="50" y="480" class="formula" fill="#ef4444">Use Cosine Rule: a² = b² + c² − 2bc cos(A)</text></svg>'
+    }
   },
 
   // ============================================================
