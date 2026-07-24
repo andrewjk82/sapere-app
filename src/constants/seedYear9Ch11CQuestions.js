@@ -1792,40 +1792,58 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table of values for the following lines given a point and gradient.\na) Complete the table for the line passing through \\((0, 0)\\) with gradient 3. Find the missing values in order: \\(y\\) when \\(x = -2\\), \\(x\\) when \\(y = -3\\), \\(y\\) when \\(x = 1\\), and \\(x\\) when \\(y = 9\\). Format: [val1], [val2], [val3], [val4]",
     "opts": [
-      "\\(-6, -1, 3, 3\\)",
-      "\\(-6, -1, 3, 3 + 1\\)",
-      "\\(6, -1, 3, 3\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\\\(-6, 1, -3, 3\\\\)",
+      "\\\\(6, -1, 3, -3\\\\)",
+      "\\\\(-6, -1, 3, 3\\\\)",
+      "\\\\(6, 1, 3, 3\\\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\(-6, -1, 3, 3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(-6, -1, 3, 3\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Substitute the known point and gradient to find the equation of the line.",
+        "workingOut": "The equation of the line simplifies to:\n$$ y = 3x $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-6, -1, 3, 3\\)",
+        "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
+        "workingOut": "$y$ when $x = -2$: $y = 3(-2) = -6$\\n\\n$x$ when $y = -3$: $-3 = 3x \\implies x = -1$\\n\\n$y$ when $x = 1$: $y = 3(1) = 3$\\n\\n$x$ when $y = 9$: $9 = 3x \\implies x = 3$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -6, -1, 3, 3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-6, -1, 3, 3\\)",
+        "explanation": "Step 4: Combine the missing values in order to form the final answer.",
+        "workingOut": "$$ -6, -1, 3, 3 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-6, 1, -3, 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6, -1, 3, -3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-6, -1, 3, 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6, 1, 3, 3\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q6b",
@@ -1837,10 +1855,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table of values for the following lines given a point and gradient.\nb) Complete the table for the line passing through \\((0, 2)\\) with gradient \\(\\frac{3}{5}\\). Find the missing values: \\(x\\) when \\(y = -4\\), \\(y\\) when \\(x = -5\\), \\(y\\) when \\(x = 5\\), and \\(x\\) when \\(y = 8\\). Format: [val1], [val2], [val3], [val4]",
     "opts": [
-      "\\(-10, -1, 5, 10\\)",
-      "\\(-10, -1, 5, 10 + 1\\)",
-      "\\(10, -1, 5, 10\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\\\(-10, -1, 5, 10\\\\)",
+      "\\\\(10, 1, 5, -10\\\\)",
+      "\\\\(-10, 1, -5, 10\\\\)",
+      "\\\\(10, -1, 5, -10\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1848,29 +1866,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(-10, -1, 5, 10\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(-10, -1, 5, 10\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Substitute the known point and gradient to find the equation of the line.",
+        "workingOut": "The equation of the line simplifies to:\n$$ y = \\frac{3}{5}x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-10, -1, 5, 10\\)",
+        "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
+        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{3}{5}x + 2 \\implies -6 = \\frac{3}{5}x \\implies x = -10$\\n\\n$y$ when $x = -5$: $y = \\frac{3}{5}(-5) + 2 = -3 + 2 = -1$\\n\\n$y$ when $x = 5$: $y = \\frac{3}{5}(5) + 2 = 3 + 2 = 5$\\n\\n$x$ when $y = 8$: $8 = \\frac{3}{5}x + 2 \\implies 6 = \\frac{3}{5}x \\implies x = 10$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -10, -1, 5, 10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-10, -1, 5, 10\\)",
+        "explanation": "Step 4: Combine the missing values in order to form the final answer.",
+        "workingOut": "$$ -10, -1, 5, 10 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-10, -1, 5, 10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10, 1, 5, -10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-10, 1, -5, 10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10, -1, 5, -10\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q6c",
@@ -1882,10 +1918,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table of values for the following lines given a point and gradient.\nc) Complete the table for the line passing through \\((0, 3)\\) with gradient \\(\\frac{1}{2}\\). Find the missing values: \\(x\\) when \\(y = -4\\), \\(y\\) when \\(x = -4\\), and \\(x\\) when \\(y = 6\\). Format: [val1], [val2], [val3]",
     "opts": [
-      "\\(-1415\\)",
-      "\\(-14, 1, 6\\)",
-      "\\(-1417\\)",
-      "\\(1416\\)"
+      "\\\\(14, -1, -6\\\\)",
+      "\\\\(-14, 1, 6\\\\)",
+      "\\\\(-7, 1, 3\\\\)",
+      "\\\\(-14, -1, 6\\\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1893,29 +1929,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(-14, 1, 6\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(-14, 1, 6\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Substitute the known point and gradient to find the equation of the line.",
+        "workingOut": "The equation of the line simplifies to:\n$$ y = \\frac{1}{2}x + 3 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-14, 1, 6\\)",
+        "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
+        "workingOut": "$x$ when $y = -4$: $-4 = \\frac{1}{2}x + 3 \\implies -7 = \\frac{1}{2}x \\implies x = -14$\\n\\n$y$ when $x = -4$: $y = \\frac{1}{2}(-4) + 3 = -2 + 3 = 1$\\n\\n$x$ when $y = 6$: $6 = \\frac{1}{2}x + 3 \\implies 3 = \\frac{1}{2}x \\implies x = 6$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -14, 1, 6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-14, 1, 6\\)",
+        "explanation": "Step 4: Combine the missing values in order to form the final answer.",
+        "workingOut": "$$ -14, 1, 6 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(14, -1, -6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-14, 1, 6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-7, 1, 3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-14, -1, 6\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q6d",
@@ -1927,40 +1981,58 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table of values for the following lines given a point and gradient.\nd) Complete the table for the line passing through \\((2, -3)\\) with gradient \\(-3\\). Find the missing values: \\(x\\) when \\(y = 9\\), \\(y\\) when \\(x = -1\\), \\(x\\) when \\(y = 3\\), and \\(y\\) when \\(x = 1\\). Format: [val1], [val2], [val3], [val4]",
     "opts": [
-      "\\(-2599\\)",
-      "\\(-2, 6, 0, 0\\)",
-      "\\(-2601\\)",
-      "\\(2600\\)"
+      "\\\\(-2, 6, 0, 0\\\\)",
+      "\\\\(2, -6, 0, 0\\\\)",
+      "\\\\(-2, 6, 1, 1\\\\)",
+      "\\\\(2, 6, 0, 1\\\\)"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(-2, 6, 0, 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(-2, 6, 0, 0\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Substitute the known point and gradient to find the equation of the line.",
+        "workingOut": "The equation of the line simplifies to:\n$$ y = -3x + 3 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-2, 6, 0, 0\\)",
+        "explanation": "Step 3: For each given value in the table, substitute it into the equation to find the missing coordinate.",
+        "workingOut": "$x$ when $y = 9$: $9 = -3x + 3 \\implies 6 = -3x \\implies x = -2$\\n\\n$y$ when $x = -1$: $y = -3(-1) + 3 = 3 + 3 = 6$\\n\\n$x$ when $y = 3$: $3 = -3x + 3 \\implies 0 = -3x \\implies x = 0$\\n\\n$y$ when $x = 1$: $y = -3(1) + 3 = -3 + 3 = 0$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -2, 6, 0, 0. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-2, 6, 0, 0\\)",
+        "explanation": "Step 4: Combine the missing values in order to form the final answer.",
+        "workingOut": "$$ -2, 6, 0, 0 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-2, 6, 0, 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2, -6, 0, 0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-2, 6, 1, 1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2, 6, 0, 1\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7a",
