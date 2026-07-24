@@ -1719,35 +1719,27 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider the curve $y = 3x - x^3 - 1$ for $-3 \\leq x \\leq 2$. Find the stationary points and determine their nature.",
     "opts": [
-      "Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\).",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Local maximum at \\((1, 1)\\); local minimum at \\((-1, -3)\\)",
+      "Local minimum at \\((1, 1)\\); local maximum at \\((-1, -3)\\)",
+      "Local maximum at \\((1, 3)\\); local minimum at \\((-1, -5)\\)",
+      "Local minimum at \\((1, 3)\\); local maximum at \\((-1, -5)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Set $y' = 0$ to find stationary points. Use $y''$ to classify them.",
-    "solution": "The correct answer is Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\)..",
+    "solution": "The correct answer is Local maximum at \\((1, 1)\\); local minimum at \\((-1, -3)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y' = 3 - 3x^2 = 0 \\Rightarrow x = \\pm 1\\)",
-        "graphData": null
+        "explanation": "Step 1: Find the first derivative \\(y'\\) and set it equal to zero to find the \\(x\\)-coordinates of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} y &= 3x - x^3 - 1 \\\\\\\\ y' &= 3 - 3x^2 \\\\\\\\ 3 - 3x^2 &= 0 \\implies 3(1 - x^2) = 0 \\implies x^2 = 1 \\implies x = \\pm 1 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x=1: y = 3(1) - 1 - 1 = 1; \\quad x=-1: y = -3 + 1 - 1 = -3\\)",
-        "graphData": null
+        "explanation": "Step 2: Substitute \\(x = 1\\) and \\(x = -1\\) into the original function to find the corresponding \\(y\\)-coordinates.",
+        "workingOut": "$$ \\begin{aligned} \\text{For } x = 1: &\\quad y = 3(1) - (1)^3 - 1 = 3 - 1 - 1 = 1 \\implies \\text{Point at } (1, 1) \\\\\\\\ \\text{For } x = -1: &\\quad y = 3(-1) - (-1)^3 - 1 = -3 + 1 - 1 = -3 \\implies \\text{Point at } (-1, -3) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x=1: y'' = -6 < 0 \\text{ (max)}; \\quad x=-1: y'' = 6 > 0 \\text{ (min)}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Maximum turning point at \\((1, 1)\\); minimum turning point at \\((-1, -3)\\).",
-        "graphData": null
+        "explanation": "Step 3: Find the second derivative \\(y''\\) and use it to determine the nature of each stationary point.",
+        "workingOut": "$$ \\begin{aligned} y'' &= -6x \\\\\\\\ \\text{At } x = 1: &\\quad y'' = -6(1) = -6 < 0 \\implies \\text{Local Maximum at } (1, 1) \\\\\\\\ \\text{At } x = -1: &\\quad y'' = -6(-1) = 6 > 0 \\implies \\text{Local Minimum at } (-1, -3) \\end{aligned} $$"
       }
     ],
     "graphData": null,
