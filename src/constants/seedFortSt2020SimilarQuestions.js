@@ -1437,24 +1437,46 @@ export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
     "solution": "Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((-3,0),(1,0),(0,-3),(-2,-27)\\text{ min}\\)",
+        "explanation": "Step 1: To sketch \\(f(x) = (x+3)(x-1)^3\\), we first find the stationary points by setting \\(f'(x) = 0\\).",
+        "workingOut": "$$ \\begin{aligned} f'(x) &= 1(x-1)^3 + (x+3)\\cdot 3(x-1)^2 = (x-1)^2 [x - 1 + 3x + 9] \\\\\\\\ &= 4(x-1)^2 (x+2) = 0 \\implies x = 1, \\; x = -2 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x \\to \\pm\\infty \\Rightarrow f(x) \\to +\\infty\\)",
+        "explanation": "Step 2: Find the points of inflection by setting \\(f''(x) = 0\\).",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= 4 [ 2(x-1)(x+2) + (x-1)^2(1) ] = 4(x-1) [ 2x + 4 + x - 1 ] \\\\\\\\ &= 12(x-1)(x+1) = 0 \\implies x = 1, \\; x = -1 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).",
+        "explanation": "Step 3: Classify the stationary point at \\(x = -2\\) and find its coordinates.",
+        "workingOut": "$$ \\begin{aligned} f''(-2) &= 12(-3)(-1) = 36 > 0 \\implies \\text{Local Minimum} \\\\\\\\ f(-2) &= (-2+3)(-2-1)^3 = -27 \\implies \\text{Min at } (-2, -27) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Positive quartic through \\((-3,0)\\) and \\((1,0)\\), \\(y\\)-intercept \\((0,-3)\\), minimum \\((-2,-27)\\), inflections \\((-1,-16)\\) and a horizontal one at \\((1,0)\\).",
+        "explanation": "Step 4: Check concavity around the points \\(x=-1\\) and \\(x=1\\). Since \\(f''(x) = 12(x-1)(x+1)\\) changes sign at both points, they are both points of inflection. Evaluate their coordinates.",
+        "workingOut": "$$ \\begin{aligned} f(-1) &= (2)(-8) = -16 \\implies \\text{POI at } (-1, -16) \\\\\\\\ f(1) &= 0 \\implies \\text{Horizontal POI at } (1, 0) \\end{aligned} $$",
         "graphData": null
+      },
+      {
+        "explanation": "Step 5: Find the intercepts and end behaviour.",
+        "workingOut": "$$ \\begin{aligned} x\\text{-intercepts: } f(x) = 0 &\\implies x = -3, \\; x = 1 \\\\\\\\ y\\text{-intercept: } f(0) &\\implies y = (3)(-1)^3 = -3 \\\\\\\\ \\text{End behaviour: Leading term } x^4 &\\implies f(x) \\to +\\infty \\text{ as } x \\to \\pm\\infty \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: Combine all features to sketch the graph of \\(y = f(x)\\).",
+        "workingOut": "$$ \\text{Graph of } y = (x+3)(x-1)^3 $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -4,
+              10,
+              2.5,
+              -35
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5,0],[2,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-32],[0,8]], {strokeColor:'black'});\nvar f=function(x){ return (x+3)*Math.pow(x-1, 3); };\nboard.create('functiongraph', [f, -3.2, 1.6], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-3, 0], {name:'(-3,0)', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [1, 0], {name:'(1,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, -3], {name:'(0,-3)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [-2, -27], {name:'Min(-2,-27)', size:2, color:'purple', label:{offset:[10,-10]}});\nboard.create('point', [-1, -16], {name:'POI(-1,-16)', size:2, color:'green', label:{offset:[10,0]}});\nboard.create('point', [1, 0], {name:'POI', size:0, fixed:true, label:{offset:[10,-15]}});\nboard.create('text', [1.8, -1.5, 'x'], {fontSize:13});\nboard.create('text', [0.2, 6, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,

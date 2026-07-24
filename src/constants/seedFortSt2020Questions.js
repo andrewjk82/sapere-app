@@ -1417,24 +1417,46 @@ export const FORT_STREET_2020_QUESTIONS = [
     "solution": "Quartic through \\((-2,0)\\) and \\((2,0)\\), \\(y\\)-intercept \\((0,-16)\\), minimum at \\((-1,-27)\\), points of inflection \\((0,-16)\\) and a horizontal one at \\((2,0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((-2,0),(2,0),(0,-16),(-1,-27)\\text{ min},(2,0)\\text{ horiz. POI}\\)",
+        "explanation": "Step 1: To sketch \\(f(x) = (x+2)(x-2)^3\\), we synthesize the results from the previous parts. First, recall the stationary points.",
+        "workingOut": "$$ f'(x) = 4(x-2)^2(x+1) = 0 \\implies \\text{Min at } (-1, -27) \\text{ and Horizontal POI at } (2, 0) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x \\to \\pm\\infty \\Rightarrow f(x) \\to +\\infty\\)",
+        "explanation": "Step 2: Recall the points of inflection by setting \\(f''(x) = 0\\).",
+        "workingOut": "$$ f''(x) = 12x(x-2) = 0 \\implies \\text{POI at } (0, -16) \\text{ and } (2, 0) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Quartic through \\((-2,0)\\) and \\((2,0)\\), \\(y\\)-intercept \\((0,-16)\\), minimum at \\((-1,-27)\\), points of inflection \\((0,-16)\\) and a horizontal one at \\((2,0)\\).",
+        "explanation": "Step 3: Find the intercepts on the axes.",
+        "workingOut": "$$ \\begin{aligned} x\\text{-intercepts: } f(x) = 0 &\\implies x = -2, \\; x = 2 \\\\\\\\ y\\text{-intercept: } f(0) &\\implies y = (2)(-8) = -16 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Quartic through \\((-2,0)\\) and \\((2,0)\\), \\(y\\)-intercept \\((0,-16)\\), minimum at \\((-1,-27)\\), points of inflection \\((0,-16)\\) and a horizontal one at \\((2,0)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Quartic through \\((-2,0)\\) and \\((2,0)\\), \\(y\\)-intercept \\((0,-16)\\), minimum at \\((-1,-27)\\), points of inflection \\((0,-16)\\) and a horizontal one at \\((2,0)\\).",
+        "explanation": "Step 4: Check the end behaviour. The leading term of \\((x)(x^3)\\) is \\(x^4\\), which means the curve goes to \\(+\\infty\\) on both sides.",
+        "workingOut": "$$ \\text{As } x \\to \\pm\\infty, \\; f(x) \\to +\\infty $$",
         "graphData": null
+      },
+      {
+        "explanation": "Step 5: Combine all features to sketch the graph.",
+        "workingOut": "Plot the intercepts \\((-2,0)\\), \\((2,0)\\), \\((0,-16)\\), the minimum at \\((-1,-27)\\), and the points of inflection at \\((0,-16)\\) and \\((2,0)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: The final sketch of \\(y = f(x)\\) is shown below.",
+        "workingOut": "$$ \\text{Graph of } y = (x+2)(x-2)^3 $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              10,
+              3.5,
+              -35
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5,0],[3,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-32],[0,8]], {strokeColor:'black'});\nvar f=function(x){ return (x+2)*Math.pow(x-2, 3); };\nboard.create('functiongraph', [f, -2.2, 2.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-2, 0], {name:'(-2,0)', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, 0], {name:'(2,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, -16], {name:'(0,-16)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [-1, -27], {name:'Min(-1,-27)', size:2, color:'purple', label:{offset:[10,-10]}});\nboard.create('point', [0, -16], {name:'POI', size:0, fixed:true, label:{offset:[-30,-10]}});\nboard.create('point', [2, 0], {name:'POI', size:0, fixed:true, label:{offset:[10,-15]}});\nboard.create('text', [2.8, -1.5, 'x'], {fontSize:13});\nboard.create('text', [0.2, 6, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
