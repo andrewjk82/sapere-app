@@ -635,27 +635,61 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solution": "Curve with \\(x\\)-intercepts at \\(x = -2\\) (single root, crosses) and \\(x = 1\\) (triple root, inflection crossing).\n\\(y\\)-intercept at \\(y = 2\\).\nNegative leading coefficient — curve falls to \\(-\\infty\\) for large \\(|x|\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cherrybrook Tech 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x = -2 \\text{ (mult. 1)}, quad x = 1 \\text{ (mult. 3)}\\)",
+        "explanation": "Step 1: Find the first derivative \\(y'\\) using the product rule to locate the stationary points (turning points and horizontal POIs).",
+        "workingOut": "$$ \\begin{aligned} y' &= -\\left[ 1 \\cdot (x-1)^3 + (x+2) \\cdot 3(x-1)^2 \\right] \\\\\\\\ &= -(x-1)^2 \\left[ (x-1) + 3(x+2) \\right] \\\\\\\\ &= -(x-1)^2 (4x + 5) \\\\\\\\ y' &= 0 \\implies x = 1 \\text{ or } x = -\\dfrac{5}{4} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x=-2:\\text{ crosses};\\quad x=1:\\text{ inflection crossing}\\)",
+        "explanation": "Step 2: Find the second derivative \\(y''\\) to classify the stationary points and find possible points of inflection.",
+        "workingOut": "$$ \\begin{aligned} y'' &= -\\left[ 2(x-1)(4x+5) + (x-1)^2 \\cdot 4 \\right] \\\\\\\\ &= -2(x-1) \\left[ (4x+5) + 2(x-1) \\right] \\\\\\\\ &= -2(x-1)(6x + 3) = -6(x-1)(2x+1) \\\\\\\\ y'' &= 0 \\implies x = 1 \\text{ or } x = -\\dfrac{1}{2} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y = -(2)(-1)^3 = -(2)(-1) = 2\\)",
+        "explanation": "Step 3: Classify the stationary point at \\(x = -\\dfrac{5}{4}\\) using the second derivative.",
+        "workingOut": "$$ y''\\left(-\\dfrac{5}{4}\\right) = -6\\left(-\\dfrac{9}{4}\\right)\\left(-\\dfrac{3}{2}\\right) < 0 \\implies \\text{Local Maximum at } \\left(-\\dfrac{5}{4}, 8.54\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Curve with \\(x\\)-intercepts at \\(x = -2\\) (single root, crosses) and \\(x = 1\\) (triple root, inflection crossing).\n\\(y\\)-intercept at \\(y = 2\\).\nNegative leading coefficient — curve falls to \\(-\\infty\\) for large \\(|x|\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(Curve with \\(x\\)-intercepts at \\(x = -2\\) (single root, crosses) and \\(x = 1\\) (triple root, inflection crossing).\n\\(y\\)-intercept at \\(y = 2\\).\nNegative leading coefficient — curve falls to \\(-\\infty\\) for large \\(|x|\\).\\)",
+        "explanation": "Step 4: Classify \\(x = 1\\). Since \\(y'(1) = 0\\) and \\(y''(1) = 0\\), check for a change in concavity using test points around \\(x=1\\).",
+        "workingOut": "$$ \\begin{aligned} y''(0) &= -6(-1)(1) = 6 > 0 \\quad (\\text{Concave up}) \\\\\\\\ y''(2) &= -6(1)(5) = -30 < 0 \\quad (\\text{Concave down}) \\end{aligned} $$ \n Since concavity changes, \\((1, 0)\\) is a horizontal point of inflection.",
         "graphData": null
+      },
+      {
+        "explanation": "Step 5: Check the other possible POI at \\(x = -1/2\\) using test points \\(x=-1\\) and \\(x=0\\).",
+        "workingOut": "$$ \\begin{aligned} y''(-1) &= -6(-2)(-1) = -12 < 0 \\quad (\\text{Concave down}) \\\\\\\\ y''(0) &= 6 > 0 \\quad (\\text{Concave up}) \\end{aligned} $$ \n Concavity changes, so there is a non-horizontal point of inflection at \\(x = -1/2\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: Finally, calculate the \\(x\\) and \\(y\\) intercepts to complete the sketch.",
+        "workingOut": "$$ \\begin{aligned} x\\text{-intercepts: } y=0 &\\implies x = -2, \\; x = 1 \\\\\\\\ y\\text{-intercept: } x=0 &\\implies y = -(2)(-1)^3 = 2 \\end{aligned} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -3.5,
+              10,
+              3,
+              -3
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[2.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.5],[0,9.5]], {strokeColor:'black'});\nvar f=function(x){ return -(x+2)*Math.pow(x-1, 3); };\nboard.create('functiongraph', [f, -2.5, 1.8], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-2, 0], {name:'-2', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [1, 0], {name:'1', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 2], {name:'2', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [2.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 300,
+        "boundingbox": [
+          -3.5,
+          10,
+          3,
+          -3
+        ],
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[2.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.5],[0,9.5]], {strokeColor:'black'});\nvar f=function(x){ return -(x+2)*Math.pow(x-1, 3); };\nboard.create('functiongraph', [f, -2.5, 1.8], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-2, 0], {name:'-2', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [1, 0], {name:'1', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 2], {name:'2', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [2.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
