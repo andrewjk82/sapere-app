@@ -411,45 +411,49 @@ export const Y9_CH11C_QUESTIONS = [
     "topicId": "y9-11c",
     "c": "11C",
     "t": "The gradient of a line",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
-    "answer": "1",
+    "answer": "3",
     "hint": "Identify the \\(x\\)-intercept and \\(y\\)-intercept on the graph.",
     "solution": "1",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((-3, 0) \\text{ and } (0, 3)\\)",
+        "explanation": "Step 1: Identify the coordinates of two points on the line.",
+        "workingOut": "From the graph, we can see the $x$-intercept is $(-3, 0)$ and the $y$-intercept is $(0, 3)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{3 - 0}{0 - (-3)} = \\frac{3}{3} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = 1 $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 300,
+            "height": 300,
             "boundingbox": [
               -5,
               5,
               2,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [1, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1], [0, 4]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [0.8, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 3.8, 'y'], {fontSize: 12});\nboard.create('text', [0.2, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-3, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('line', [[-3, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', label: {offset: [-15, -15]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', label: {offset: [-40, 0]}});\nboard.create('segment', [[-3, 0], [0, 0]], {strokeColor: 'green', dash: 2, name: 'Run=3', withLabel: true});\nboard.create('segment', [[0, 0], [0, 3]], {strokeColor: 'orange', dash: 2, name: 'Rise=3', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{3 - 0}{0 - (-3)} = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 1. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(1\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -466,7 +470,32 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\\\(-1\\\\)",
+      "\\\\(-\\\\frac{1}{3}\\\\)",
+      "\\\\(\\\\frac{1}{3}\\\\)",
+      "\\\\(1\\\\)"
+    ],
+    "a": 3,
+    "options": [
+      {
+        "text": "\\\\(-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2c",
