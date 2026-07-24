@@ -2429,10 +2429,10 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(2, 5)\\), \\(B(2, 11)\\) and \\(C(a, 7)\\). The area of \\(\\Delta ABC\\) is 15. Find the possible values of \\(a\\).",
     "opts": [
-      "None of the above",
-      "\\(7 or -3\\)",
-      "Cannot be determined",
-      "Not enough information"
+      "\\(5 \\text{ or } -1\\)",
+      "\\(7 \\text{ or } -3\\)",
+      "\\(7 \\text{ or } 3\\)",
+      "\\(-7 \\text{ or } 3\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2440,24 +2440,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "1. The vertices \\(A(2, 5)\\) and \\(B(2, 11)\\) lie on the vertical line \\(x = 2\\). The base length \\(AB\\) is:\n   \\(AB = |11 - 5| = 6\\).\n2. The height of \\(\\Delta ABC\\) is the perpendicular horizontal distance from \\(C(a, 7)\\) to the line \\(x = 2\\), which is:\n   \\(h = |a - 2|\\).\n3. Using the area formula:\n   \\(\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 6 \\times |a - 2| = 3|a - 2|\\).\n4. Given the area is 15:\n   \\(3|a - 2| = 15 \\implies |a - 2| = 5\\).\n5. Solve the absolute value equation:\n   \\(a - 2 = 5 \\implies a = 7\\)\n   \\(a - 2 = -5 \\implies a = -3\\).\nSo the possible values of \\(a\\) are \\(7\\) or \\(-3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(AB = 11 - 5 = 6\\)",
+        "explanation": "Step 1: Identify that side \\(AB\\) is vertical.",
+        "workingOut": "The vertices \\(A(2, 5)\\) and \\(B(2, 11)\\) lie on the vertical line \\(x = 2\\). Therefore, the base length is \\(AB = |11 - 5| = 6\\).",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(h = |a - 2|\\)",
+        "explanation": "Step 2: Determine the height of the triangle \\(\\Delta ABC\\).",
+        "workingOut": "The height of the triangle is the perpendicular distance from \\(C(a, 7)\\) to the line \\(x = 2\\), which is given by \\(h = |a - 2|\\).",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\frac{1}{2} \\times 6 \\times |a - 2| = 15 \\implies 3|a - 2| = 15\\)",
+        "explanation": "Step 3: Use the area formula to set up an equation.",
+        "workingOut": "$$ \\begin{aligned} \\text{Area} &= \\frac{1}{2} \\times \\text{base} \\times \\text{height} \\\\\\\\ 15 &= \\frac{1}{2} \\times 6 \\times |a - 2| \\\\\\\\ 15 &= 3|a - 2| \\implies |a - 2| = 5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 7 or -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(7 or -3\\)",
-        "graphData": null
+        "explanation": "Step 4: Solve the absolute value equation for \\(a\\).",
+        "workingOut": "$$ \\begin{aligned} a - 2 &= 5 \\implies a = 7 \\\\\\\\ a - 2 &= -5 \\implies a = -3 \\end{aligned} $$ \nTherefore, the possible values are \\(7 \\text{ or } -3\\).",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -5,
+              13,
+              10,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [10, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 13]], {strokeColor: 'black'});\nboard.create('point', [2, 5], {name:'A(2, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, 11], {name:'B(2, 11)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[2, 5], [2, 11]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [7, 7], {name:'C1(7, 7)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [-3, 7], {name:'C2(-3, 7)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('polygon', [[2, 5], [2, 11], [7, 7]], {fillColor: 'rgba(0,0,255,0.1)', borders:{strokeColor:'blue', dash: 2}});\nboard.create('polygon', [[2, 5], [2, 11], [-3, 7]], {fillColor: 'rgba(255,0,0,0.1)', borders:{strokeColor:'red', dash: 2}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -2465,19 +2481,19 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "None of the above",
+        "text": "\\(5 \\text{ or } -1\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7 or -3\\)",
+        "text": "\\(7 \\text{ or } -3\\)",
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
+        "text": "\\(7 \\text{ or } 3\\)",
         "imageUrl": ""
       },
       {
-        "text": "Not enough information",
+        "text": "\\(-7 \\text{ or } 3\\)",
         "imageUrl": ""
       }
     ]
