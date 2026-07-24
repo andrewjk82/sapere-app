@@ -9,10 +9,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the interval \\(AB\\) with endpoints \\(A(5, 4)\\) and \\(B(1, 1)\\).",
     "opts": [
-      "\\(-0.25\\)",
-      "\\(-0.75\\)",
-      "\\(3/4\\)",
-      "\\(1.75\\)"
+      "\\\\(-\\\\frac{4}{3}\\\\)",
+      "\\\\(\\\\frac{4}{3}\\\\)",
+      "\\\\(\\\\frac{3}{4}\\\\)",
+      "\\\\(-\\\\frac{3}{4}\\\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -20,29 +20,63 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "Using the gradient formula:\n\\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)\nSubstituting the coordinates \\(A(5, 4)\\) and \\(B(1, 1)\\):\n\\(m = \\frac{1 - 4}{1 - 5} = \\frac{-3}{-4} = \\frac{3}{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(x_1, y_1) = (5, 4), quad B(x_2, y_2) = (1, 1)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (5, 4)$ and $(x_2, y_2) = (1, 1)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{1 - 4}{1 - 5}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(m = \\frac{-3}{-4} = \\frac{3}{4}\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{1 - (4)}{1 - (5)} = \\frac{-3}{-4} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 3/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(3/4\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = \\frac{3}{4} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              6,
+              7,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [5, 4], {name:'(5, 4)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [1, 1], {name:'(1, 1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[5, 4], [1, 1]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[5, 4], [1, 4]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[1, 4], [1, 1]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q1b",
@@ -92,10 +126,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the interval \\(AB\\) with endpoints \\(A(-2, 8)\\) and \\(B(5, -6)\\).",
     "opts": [
-      "\\(-1\\)",
-      "\\(-2\\)",
-      "\\(-3\\)",
-      "\\(2\\)"
+      "\\\\(2\\\\)",
+      "\\\\(-2\\\\)",
+      "\\\\(-\\\\frac{1}{2}\\\\)",
+      "\\\\(\\\\frac{1}{2}\\\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -103,29 +137,63 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "Using the gradient formula:\n\\(m = \\frac{-6 - 8}{5 - (-2)} = \\frac{-14}{7} = -2\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-6 - 8}{5 - (-2)}\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (-2, 8)$ and $(x_2, y_2) = (5, -6)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{-14}{7} = -2\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-2\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-6 - (8)}{5 - (-2)} = \\frac{-14}{7} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-2\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -2 $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -4,
+              10,
+              7,
+              -8
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [-2, 8], {name:'(-2, 8)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [5, -6], {name:'(5, -6)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[-2, 8], [5, -6]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[-2, 8], [5, 8]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[5, 8], [5, -6]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q1d",
@@ -137,10 +205,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the interval \\(AB\\) with endpoints \\(A(1, 4)\\) and \\(B(-5, 6)\\).",
     "opts": [
-      "\\(-1/3\\)",
-      "\\(-1.3333333333333333\\)",
-      "\\(0.3333333333333333\\)",
-      "\\(0.6666666666666667\\)"
+      "\\\\(-\\\\frac{1}{3}\\\\)",
+      "\\\\(\\\\frac{1}{3}\\\\)",
+      "\\\\(-3\\\\)",
+      "\\\\(3\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -148,29 +216,63 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "Using the gradient formula:\n\\(m = \\frac{6 - 4}{-5 - 1} = \\frac{2}{-6} = -\\frac{1}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{6 - 4}{-5 - 1}\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (1, 4)$ and $(x_2, y_2) = (-5, 6)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{2}{-6} = -\\frac{1}{3}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-1/3\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{6 - (4)}{-5 - (1)} = \\frac{2}{-6} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -1/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-1/3\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -\\frac{1}{3} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -7,
+              8,
+              3,
+              2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [1, 4], {name:'(1, 4)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [-5, 6], {name:'(-5, 6)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[1, 4], [-5, 6]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[1, 4], [-5, 4]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[-5, 4], [-5, 6]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2a",
@@ -182,47 +284,51 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
     "opts": [
-      "\\(-4\\)",
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(5\\)"
+      "\\\\(\\\\frac{1}{4}\\\\)",
+      "\\\\(-4\\\\)",
+      "\\\\(-\\\\frac{1}{4}\\\\)",
+      "\\\\(4\\\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "Find the coordinates of two points on the line, then calculate the gradient.",
     "solution": "Observe from the graph that the line passes through \\((0, 0)\\) and \\((1, 4)\\).\nUsing the gradient formula:\n\\(m = \\frac{4 - 0}{1 - 0} = 4\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((0, 0) \\text{ and } (1, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (0, 0)$ and $(x_2, y_2) = (1, 4)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{4 - (0)}{1 - (0)} = \\frac{4}{1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = 4 $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
               -2,
               6,
-              4,
+              3,
               -2
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [1, 4]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [1, 4], {size: 3, color: 'red', name: '(1, 4)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [0, 0], {name:'(0, 0)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [1, 4], {name:'(1, 4)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[0, 0], [1, 4]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[0, 0], [1, 0]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[1, 0], [1, 4]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{4 - 0}{1 - 0} = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(4\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -239,7 +345,25 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2b",
@@ -313,10 +437,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
     "opts": [
-      "\\(-2\\)",
-      "\\(-3\\)",
-      "\\(-4\\)",
-      "\\(3\\)"
+      "\\\\(3\\\\)",
+      "\\\\(-3\\\\)",
+      "\\\\(-\\\\frac{1}{3}\\\\)",
+      "\\\\(\\\\frac{1}{3}\\\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -324,36 +448,40 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The line passes through \\((0, 0)\\) and \\((2, -6)\\).\nGradient:\n\\(m = \\frac{-6 - 0}{2 - 0} = -3\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((0, 0) \\text{ and } (2, -6)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (0, 0)$ and $(x_2, y_2) = (2, -6)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-6 - (0)}{2 - (0)} = \\frac{-6}{2} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -3 $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
-              -1,
+              -2,
               2,
               4,
               -8
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, 0.3, '0'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [0, 0], {name:'(0, 0)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [2, -6], {name:'(2, -6)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[0, 0], [2, 0]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[2, 0], [2, -6]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{-6 - 0}{2 - 0} = -3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-3\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -370,7 +498,25 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2d",
@@ -382,10 +528,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
     "opts": [
-      "\\(-1/3\\)",
-      "\\(-1.3333333333333333\\)",
-      "\\(0.3333333333333333\\)",
-      "\\(0.6666666666666667\\)"
+      "\\\\(-\\\\frac{1}{3}\\\\)",
+      "\\\\(3\\\\)",
+      "\\\\(\\\\frac{1}{3}\\\\)",
+      "\\\\(-3\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -393,36 +539,40 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The line passes through \\((-6, 0)\\) and \\((0, -2)\\).\nGradient:\n\\(m = \\frac{-2 - 0}{0 - (-6)} = \\frac{-2}{6} = -\\frac{1}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((-6, 0) \\text{ and } (0, -2)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (-6, 0)$ and $(x_2, y_2) = (0, -2)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-2 - (0)}{0 - (-6)} = \\frac{-2}{6} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -\\frac{1}{3} $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
               -8,
               2,
               2,
               -4
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-7.5, 0], [1.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -3.5], [0, 1.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [1.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 1.3, 'y'], {fontSize: 12});\nboard.create('text', [0.2, 0.2, '0'], {fontSize: 12});\nboard.create('line', [[-6, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [-6, 0], {name:'(-6, 0)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [0, -2], {name:'(0, -2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[-6, 0], [0, -2]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[-6, 0], [0, 0]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[0, 0], [0, -2]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{-2 - 0}{0 - (-6)} = -\\frac{1}{3}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-1/3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -1/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-1/3\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -439,7 +589,25 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-3\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2e",
@@ -451,47 +619,51 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
     "opts": [
-      "\\(-0.25\\)",
-      "\\(-0.75\\)",
-      "\\(3/4\\)",
-      "\\(1.75\\)"
+      "\\\\(\\\\frac{3}{4}\\\\)",
+      "\\\\(\\\\frac{4}{3}\\\\)",
+      "\\\\(-\\\\frac{4}{3}\\\\)",
+      "\\\\(-\\\\frac{3}{4}\\\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "Identify the coordinates of the two marked points on the line.",
     "solution": "The line passes through \\((-1, 2)\\) and \\((3, 5)\\).\nGradient:\n\\(m = \\frac{5 - 2}{3 - (-1)} = \\frac{3}{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((-1, 2) \\text{ and } (3, 5)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (-1, 2)$ and $(x_2, y_2) = (3, 5)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{5 - (2)}{3 - (-1)} = \\frac{3}{4} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = \\frac{3}{4} $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
               -3,
               7,
               5,
-              -2
+              0
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2.5, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -1.5], [0, 6.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 6.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-1, 2], [3, 5]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-1, 2], {size: 3, color: 'red', name: '(-1, 2)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [3, 5], {size: 3, color: 'red', name: '(3, 5)', withLabel: true, label: {autoPosition: false, offset: [5, -5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [-1, 2], {name:'(-1, 2)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [3, 5], {name:'(3, 5)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[-1, 2], [3, 5]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[-1, 2], [3, 2]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[3, 2], [3, 5]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{5 - 2}{3 - (-1)} = \\frac{3}{4}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(3/4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: 3/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(3/4\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -508,7 +680,25 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q2f",
@@ -520,47 +710,51 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line shown in the graph.",
     "opts": [
-      "\\(-0.25\\)",
-      "\\(-5/4\\)",
-      "\\(-2.25\\)",
-      "\\(1.25\\)"
+      "\\\\(\\\\frac{5}{4}\\\\)",
+      "\\\\(\\\\frac{4}{5}\\\\)",
+      "\\\\(-\\\\frac{5}{4}\\\\)",
+      "\\\\(-\\\\frac{4}{5}\\\\)"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 2,
+    "answer": "2",
     "hint": "Identify the coordinates of the two marked points on the line.",
     "solution": "The line passes through \\((-2, 4)\\) and \\((2, -1)\\).\nGradient:\n\\(m = \\frac{-1 - 4}{2 - (-2)} = \\frac{-5}{4} = -\\frac{5}{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((-2, 4) \\text{ and } (2, -1)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (-2, 4)$ and $(x_2, y_2) = (2, -1)$.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-1 - (4)}{2 - (-2)} = \\frac{-5}{4} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -\\frac{5}{4} $$",
         "graphData": {
           "jsxGraph": {
-            "width": 250,
-            "height": 250,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
               -4,
               6,
               4,
               -3
             ],
-            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3.5, 0], [3.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -2.5], [0, 5.5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.3, -0.3, 'x'], {fontSize: 12});\nboard.create('text', [-0.3, 5.3, 'y'], {fontSize: 12});\nboard.create('text', [-0.3, -0.3, '0'], {fontSize: 12});\nboard.create('line', [[-2, 4], [2, -1]], {strokeColor: 'blue', strokeWidth: 1.5});\nboard.create('point', [-2, 4], {size: 3, color: 'red', name: '(-2, 4)', withLabel: true, label: {autoPosition: false, offset: [-15, 10]}});\nboard.create('point', [2, -1], {size: 3, color: 'red', name: '(2, -1)', withLabel: true, label: {autoPosition: false, offset: [5, 5]}});\nboard.unsuspendUpdate();"
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [-2, 4], {name:'(-2, 4)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [2, -1], {name:'(2, -1)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[-2, 4], [2, -1]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[-2, 4], [2, 4]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[2, 4], [2, -1]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{-1 - 4}{2 - (-2)} = -\\frac{5}{4}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-5/4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: -5/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-5/4\\)",
-        "graphData": null
       }
     ],
     "graphData": {
@@ -577,7 +771,25 @@ export const Y9_CH11C_QUESTIONS = [
       }
     },
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(\\\\frac{5}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{4}{5}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{5}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{4}{5}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q3a",
@@ -589,40 +801,74 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line passing through \\((0, 0)\\) and \\((8, -2)\\).",
     "opts": [
-      "\\(-1/4\\)",
-      "\\(-1.25\\)",
-      "\\(0.25\\)",
-      "\\(0.75\\)"
+      "\\\\(-4\\\\)",
+      "\\\\(-\\\\frac{1}{4}\\\\)",
+      "\\\\(\\\\frac{1}{4}\\\\)",
+      "\\\\(4\\\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Use \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\).",
     "solution": "Using the gradient formula:\n\\(m = \\frac{-2 - 0}{8 - 0} = -\\frac{2}{8} = -\\frac{1}{4}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-2 - 0}{8 - 0}\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (0, 0)$ and $(x_2, y_2) = (8, -2)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = -\\frac{2}{8} = -\\frac{1}{4}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-1/4\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-2 - (0)}{8 - (0)} = \\frac{-2}{8} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -1/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-1/4\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = -\\frac{1}{4} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -2,
+              2,
+              10,
+              -4
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [0, 0], {name:'(0, 0)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [8, -2], {name:'(8, -2)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[0, 0], [8, -2]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[0, 0], [8, 0]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[8, 0], [8, -2]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q3b",
@@ -634,40 +880,74 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the gradient of the line passing through \\((0, 0)\\) and \\((-3, -4)\\).",
     "opts": [
-      "\\(-1.3333333333333333\\)",
-      "\\(0.33333333333333326\\)",
-      "\\(4/3\\)",
-      "\\(2.333333333333333\\)"
+      "\\\\(-\\\\frac{3}{4}\\\\)",
+      "\\\\(\\\\frac{3}{4}\\\\)",
+      "\\\\(-\\\\frac{4}{3}\\\\)",
+      "\\\\(\\\\frac{4}{3}\\\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "Use \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\). Divide negative by negative.",
     "solution": "Using the gradient formula:\n\\(m = \\frac{-4 - 0}{-3 - 0} = \\frac{-4}{-3} = \\frac{4}{3}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{-4 - 0}{-3 - 0}\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (0, 0)$ and $(x_2, y_2) = (-3, -4)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{4}{3}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(4/3\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{-4 - (0)}{-3 - (0)} = \\frac{-4}{-3} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4/3. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(4/3\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = \\frac{4}{3} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -5,
+              2,
+              2,
+              -6
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [0, 0], {name:'(0, 0)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [-3, -4], {name:'(-3, -4)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[0, 0], [-3, -4]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[0, 0], [-3, 0]], {strokeColor: 'green', dash: 2, name: 'Run', withLabel: true});\nboard.create('segment', [[-3, 0], [-3, -4]], {strokeColor: 'orange', dash: 2, name: 'Rise', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{3}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{4}{3}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q3c",
