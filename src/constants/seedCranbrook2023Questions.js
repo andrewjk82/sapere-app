@@ -2032,34 +2032,34 @@ export const CRANBROOK_2023_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$, explain why the graph of $y = f(x)$ must cross the $x$-axis at least once between $x = 5$ and $x = 6$.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=5\\) and \\(x=6\\)."
+      "\\(f(5) = -\\dfrac{15}{64} < 0\\) and \\(f(6) = \\dfrac{9}{4} > 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
+      "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = \\dfrac{5}{4} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
+      "\\(f(5) = -\\dfrac{49}{64} < 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
+      "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
     ],
     "a": 3,
     "answer": "3",
     "hint": "Evaluate $f(5)$ and $f(6)$ and apply the sign-change argument for a continuous function.",
-    "solution": "The correct answer is \\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=5\\) and \\(x=6\\)..",
+    "solution": "The correct answer is \\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cranbrook 2023 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f(5) = 15\\left(-\\dfrac{1}{4}\\right)^3 + 1 = -\\dfrac{15}{64} + 1 = \\dfrac{49}{64} > 0\\)",
+        "explanation": "Step 1: To show that a curve crosses the \\(x\\)-axis between two points, we must evaluate the function at those points and check for a change in sign.",
+        "workingOut": "$$ \\text{We need to find } f(5) \\text{ and } f(6). $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f(6) = 18\\left(-\\dfrac{1}{2}\\right)^3 + 1 = -\\dfrac{9}{4} + 1 = -\\dfrac{5}{4} < 0\\)",
+        "explanation": "Step 2: Substitute \\(x = 5\\) into the given function.",
+        "workingOut": "$$ \\begin{aligned} f(5) &= 3(5)\\left(1 - \\dfrac{5}{4}\\right)^3 + 1 \\\\\\\\ &= 15\\left(-\\dfrac{1}{4}\\right)^3 + 1 \\\\\\\\ &= 15\\left(-\\dfrac{1}{64}\\right) + 1 \\\\\\\\ &= -\\dfrac{15}{64} + \\dfrac{64}{64} = \\dfrac{49}{64} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f \\text{ continuous}, \\; f(5) > 0, \\; f(6) < 0 \\implies \\exists\\, c \\in (5,6): f(c) = 0 \\quad \\blacksquare\\)",
+        "explanation": "Step 3: Substitute \\(x = 6\\) into the given function.",
+        "workingOut": "$$ \\begin{aligned} f(6) &= 3(6)\\left(1 - \\dfrac{6}{4}\\right)^3 + 1 \\\\\\\\ &= 18\\left(1 - \\dfrac{3}{2}\\right)^3 + 1 \\\\\\\\ &= 18\\left(-\\dfrac{1}{2}\\right)^3 + 1 \\\\\\\\ &= 18\\left(-\\dfrac{1}{8}\\right) + 1 \\\\\\\\ &= -\\dfrac{9}{4} + \\dfrac{4}{4} = -\\dfrac{5}{4} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=5\\) and \\(x=6\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f(5) = \\dfrac{49}{64} > 0\\) and \\(f(6) = -\\dfrac{5}{4} < 0\\); since \\(f\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=5\\) and \\(x=6\\).",
+        "explanation": "Step 4: Use the Intermediate Value Theorem. Since polynomials are continuous everywhere and the function values have opposite signs, there must be a root.",
+        "workingOut": "$$ \\text{Since } f(x) \\text{ is continuous, and } f(5) > 0, f(6) < 0, \\text{ the graph must cross the } x\\text{-axis between } x=5 \\text{ and } x=6. $$",
         "graphData": null
       }
     ],
