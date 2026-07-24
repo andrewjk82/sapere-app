@@ -617,22 +617,51 @@ export const CTHS_2020_QUESTIONS = [
     "solution": "Curve with \\(x\\)-intercepts at \\(x = -1\\) (single root, crosses axis) and \\(x = 2\\) (triple root, inflection at axis).\n\\(y\\)-intercept at \\(y = 8\\).\nCurve goes from top-left to bottom-right (negative leading coefficient).",
     "solutionSteps": [
       {
-        "explanation": "Determine the behaviour at each intercept. A root of odd multiplicity 1 means the curve crosses the \\(x\\)-axis at \\(x=-1\\). A root of odd multiplicity 3 means the curve crosses with an inflection (flat) at \\(x=2\\).",
-        "workingOut": "\\(x=-1: \\text{crosses}\\quad x=2: \\text{inflection crossing}\\)",
+        "explanation": "Step 1: Find the \\(x\\)-intercepts by setting \\(y = 0\\). The roots and their multiplicities determine the curve's behaviour at the axis.",
+        "workingOut": "$$ \\begin{aligned} -(x+1)(x-2)^3 &= 0 \\\\\\\\ x &= -1 \\quad (\\text{multiplicity 1, crosses axis}) \\\\\\\\ x &= 2 \\quad (\\text{multiplicity 3, horizontal point of inflection}) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Determine the end behaviour from the leading term. Expanding: \\(-(x+1)(x-2)^3 \\approx -x^4\\) for large \\(|x|\\).",
-        "workingOut": "\\(\\text{As } x \\to \\pm\\infty,\\; y \\to -\\infty\\)",
+        "explanation": "Step 2: Find the \\(y\\)-intercept by setting \\(x = 0\\).",
+        "workingOut": "$$ y = -(0+1)(0-2)^3 = -(1)(-8) = 8 $$",
         "graphData": null
       },
       {
-        "explanation": "Sketch the curve: starts from bottom-left, rises through \\((-1, 0)\\), peaks somewhere between \\(-1\\) and \\(2\\), passes through \\((0, 8)\\), inflects through \\((2, 0)\\), then falls to bottom-right.",
-        "workingOut": "\\text{Sketch with } (-1,0),\\; (0,8),\\; (2,0)",
+        "explanation": "Step 3: Determine the end behaviour by looking at the leading term of the polynomial.",
+        "workingOut": "$$ \\text{Leading term: } -x \\cdot x^3 = -x^4 \\\\\\\\ \\text{As } x \\to \\pm\\infty, \\; y \\to -\\infty $$",
         "graphData": null
+      },
+      {
+        "explanation": "Step 4: Sketch the curve using the intercepts and end behaviour. The curve rises from the bottom left, crosses at \\(x=-1\\), passes through \\(y=8\\), reaches a local maximum, and then inflects horizontally through \\(x=2\\) before falling to the bottom right.",
+        "workingOut": "$$ \\text{Draw the graph passing through } (-1, 0), (0, 8), \\text{ and inflecting at } (2, 0). $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -3,
+              10,
+              4,
+              -4
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'black'});\nvar f=function(x){ return -(x+1)*Math.pow(x-2, 3); };\nboard.create('functiongraph', [f, -2.5, 3.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-1, 0], {name:'-1', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, 0], {name:'2', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 8], {name:'8', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [3.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9.5, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 300,
+        "boundingbox": [
+          -3,
+          10,
+          4,
+          -4
+        ],
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'black'});\nvar f=function(x){ return -(x+1)*Math.pow(x-2, 3); };\nboard.create('functiongraph', [f, -2.5, 3.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-1, 0], {name:'-1', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, 0], {name:'2', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 8], {name:'8', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [3.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9.5, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
