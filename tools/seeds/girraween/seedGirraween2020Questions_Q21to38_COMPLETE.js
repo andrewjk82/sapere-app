@@ -240,7 +240,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Using the sketch from part (a), solve $|x - 1| = 2x + 4$.',
-    a: '1',
+    a: '0',
     opts: [
       '$x = -1$',
       '$x = -1$ and $x = 2$',

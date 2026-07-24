@@ -22,7 +22,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       '$2x - 8y + 16 = 0$'
     ],
     h: 'At $x = 8$, find $y = \\sqrt{16} = 4$. The point is $(8, 4)$. Find the gradient from the derivative.',
-    s: '$\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}$. At $x = 8$: gradient $= \\frac{1}\\sqrt{16}} = \\frac{1}{4}$. Equation: $y - 4 = \\frac{1}{4}(x - 8)$, which simplifies to $x - 8y + 16 = 0$.',
+    s: '$\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}$. At $x = 8$: gradient $= \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$. Equation: $y - 4 = \\frac{1}{4}(x - 8)$, which simplifies to $x - 8y + 16 = 0$.',
     solutionSteps: [
       {
         explanation: 'To find the equation of a tangent line at a point, we need: (1) the coordinates of the point of tangency, and (2) the gradient at that point. First, find the $y$-coordinate when $x = 8$.',
