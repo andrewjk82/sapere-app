@@ -1982,39 +1982,39 @@ export const CRANBROOK_2023_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider the function $f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$. By showing that $f'(x) = 3\\left(1 - \\dfrac{x}{4}\\right)^2(1 - x)$, find any stationary points and determine their nature.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
+      "Local minimum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); local maximum at \\((4, 1)\\).",
+      "Local maximum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); local minimum at \\((4, 1)\\).",
+      "Local minimum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); horizontal point of inflection at \\((4, 1)\\).",
       "Local maximum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); horizontal point of inflection at \\((4, 1)\\)."
     ],
     "a": 3,
     "answer": "3",
     "hint": "Use the product rule with $u = 3x$ and $v = \\left(1 - \\dfrac{x}{4}\\right)^3$, then factor out the common $\\left(1-\\dfrac{x}{4}\\right)^2$.",
-    "solution": "The correct answer is Local maximum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); horizontal point of inflection at \\((4, 1)\\)..",
+    "solution": "The correct answer is Local maximum at \\(\\left(1, \\dfrac{145}{64}\\right)\\); horizontal point of inflection at \\((4, 1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Differentiate using the product rule with \\(u = 3x\\) and \\(v = \\left(1-\\dfrac{x}{4}\\right)^3\\). The chain rule gives \\(v' = 3\\left(1-\\dfrac{x}{4}\\right)^2 \\times \\left(-\\dfrac{1}{4}\\right)\\).",
-        "workingOut": "\\(f'(x) = 3\\left(1-\\dfrac{x}{4}\\right)^3 + 3x \\times 3\\left(1-\\dfrac{x}{4}\\right)^2\\left(-\\dfrac{1}{4}\\right)\\)",
+        "explanation": "Step 1: Differentiate using the product rule with \\(u = 3x\\) and \\(v = \\left(1-\\dfrac{x}{4}\\right)^3\\).",
+        "workingOut": "$$ f'(x) = 3\\left(1-\\dfrac{x}{4}\\right)^3 + 3x \\cdot 3\\left(1-\\dfrac{x}{4}\\right)^2\\left(-\\dfrac{1}{4}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Factor out the common factor \\(3\\left(1-\\dfrac{x}{4}\\right)^2\\) and simplify the bracket. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(f'(x) = 3\\left(1-\\dfrac{x}{4}\\right)^2\\left[1 - \\dfrac{x}{4} - \\dfrac{3x}{4}\\right] = 3\\left(1-\\dfrac{x}{4}\\right)^2(1 - x) \\quad \\checkmark\\)",
+        "explanation": "Step 2: Factor out the common factor \\(3\\left(1-\\dfrac{x}{4}\\right)^2\\) and simplify the expression.",
+        "workingOut": "$$ f'(x) = 3\\left(1-\\dfrac{x}{4}\\right)^2\\left[ \\left(1 - \\dfrac{x}{4}\\right) - \\dfrac{3x}{4} \\right] = 3\\left(1-\\dfrac{x}{4}\\right)^2(1 - x) $$",
         "graphData": null
       },
       {
-        "explanation": "Find the stationary points by setting \\(f'(x) = 0\\): either the squared factor vanishes or \\((1-x)\\) vanishes.",
-        "workingOut": "\\(x = 4 \\;(\\text{double}) \\quad \\text{or} \\quad x = 1\\)",
+        "explanation": "Step 3: Find the stationary points by setting \\(f'(x) = 0\\).",
+        "workingOut": "$$ 3\\left(1-\\dfrac{x}{4}\\right)^2(1 - x) = 0 \\implies x = 4 \\text{ (double root)} \\quad \\text{or} \\quad x = 1 $$",
         "graphData": null
       },
       {
-        "explanation": "Classify \\(x = 1\\) with a sign test of \\(f'\\): the squared factor is always non-negative, so the sign follows \\((1-x)\\). For \\(x < 1\\), \\(f' > 0\\); for \\(1 < x < 4\\), \\(f' < 0\\). The gradient changes from positive to negative, so \\(x=1\\) is a local maximum. Evaluate \\(f(1)\\).",
-        "workingOut": "\\(f(1) = 3(1)\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{64} + 1 = \\dfrac{145}{64} \\implies \\text{local max } \\left(1, dfrac{145}{64}\\right)\\)",
+        "explanation": "Step 4: Classify \\(x = 1\\) using a sign test. Since the squared factor is always non-negative, the sign of \\(f'(x)\\) follows \\((1-x)\\). For \\(x < 1\\), \\(f' > 0\\); for \\(1 < x < 4\\), \\(f' < 0\\). Thus, the gradient changes from positive to negative, making it a local maximum.",
+        "workingOut": "$$ f(1) = 3(1)\\left(1 - \\dfrac{1}{4}\\right)^3 + 1 = 3\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{64} + 1 = \\dfrac{145}{64} \\implies \\text{Local max at } \\left(1, \\dfrac{145}{64}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Classify \\(x = 4\\): because the factor \\(\\left(1-\\dfrac{x}{4}\\right)^2\\) is squared, \\(f'\\) does not change sign there (\\(f' < 0\\) on both sides). A stationary point with no sign change is a horizontal point of inflection. Evaluate \\(f(4)\\).",
-        "workingOut": "\\(f(4) = 3(4)(0)^3 + 1 = 1 \\implies \\text{horizontal point of inflection } (4, 1)\\)",
+        "explanation": "Step 5: Classify \\(x = 4\\). Since \\(\\left(1-\\dfrac{x}{4}\\right)^2\\) does not change sign across \\(x = 4\\), the derivative \\(f'(x)\\) remains negative on both sides. A stationary point with no sign change is a horizontal point of inflection.",
+        "workingOut": "$$ f(4) = 3(4)\\left(1 - \\dfrac{4}{4}\\right)^3 + 1 = 0 + 1 = 1 \\implies \\text{Horizontal point of inflection at } (4, 1) $$",
         "graphData": null
       }
     ],
