@@ -665,11 +665,11 @@ export const CTHS_2020_QUESTIONS = [
         "height": 300,
         "boundingbox": [
           -3,
-          10,
+          11,
           4,
           -4
         ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'black'});\nvar f=function(x){ return -(x+1)*Math.pow(x-2, 3); };\nboard.create('functiongraph', [f, -2.5, 3.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-1, 0], {name:'-1', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, 0], {name:'2', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 8], {name:'8', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [3.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9.5, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-3,0],[4,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-4],[0,10]], {strokeColor:'black'});\nvar f=function(x){ return -(x+1)*Math.pow(x-2, 3); };\nboard.create('functiongraph', [f, -2.5, 3.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-1, 0], {name:'-1', size:2, color:'red', label:{offset:[-10,10]}});\nboard.create('point', [2, 0], {name:'2', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [0, 8], {name:'8', size:2, color:'red', label:{offset:[10,5]}});\nboard.create('text', [3.6, -0.4, 'x'], {fontSize:13});\nboard.create('text', [0.15, 9.5, 'y'], {fontSize:13});\nboard.create('point', [-0.25, 8.54], {name:'Max', size:2, color:'purple', label:{offset:[-10,15]}});\nboard.unsuspendUpdate();"
       }
     },
     "isNew": true,
