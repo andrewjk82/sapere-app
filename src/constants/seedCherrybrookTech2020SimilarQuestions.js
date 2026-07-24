@@ -402,7 +402,7 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "The graph of $y = g(x)$ has a local maximum at $x = P$, a local minimum at $x = R$, and a point of inflection at $x = Q$ between them, where $P < Q < R < 0$.\n\nOver what domain is $g'(x) < 0$ and $g''(x) < 0$?",
+    "question": "The graph of $y = g(x)$ is shown below. The coordinates $x = P$ and $x = R$ denote a local maximum and a local minimum respectively, and $x = Q$ denotes a point of inflection. Over what domain is $g'(x) < 0$ and $g''(x) < 0$?",
     "opts": [
       "\\((-\\infty, P)\\)",
       "\\((P, Q)\\)",
@@ -415,27 +415,34 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\((P, Q)\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify where \\(g'(x) < 0\\): the function is decreasing from the local maximum at \\(P\\) to the local minimum at \\(R\\).",
-        "workingOut": "\\(g'(x) < 0 \\text{ on } (P, R)\\)",
+        "explanation": "Step 1: First, identify the condition for the first derivative, \\(g'(x) < 0\\). This means the curve must be strictly decreasing. Based on the graph, the function decreases from the local maximum at \\(P\\) down to the local minimum at \\(R\\).",
+        "workingOut": "$$ \\text{For } g'(x) < 0, \\quad x \\in (P, R) $$",
         "graphData": null
       },
       {
-        "explanation": "Identify where \\(g''(x) < 0\\): the function is concave down. The point of inflection is at \\(Q\\), so concavity changes there. The function is concave down on \\((-\\infty, Q)\\).",
-        "workingOut": "\\(g''(x) < 0 \\text{ on } (-\\infty, Q)\\)",
+        "explanation": "Step 2: Identify the condition for the second derivative, \\(g''(x) < 0\\). This signifies that the curve must be concave down (shaped like an upside-down bowl). The point \\(Q\\) is the point of inflection (POI). To the left of \\(Q\\), the curve is concave down.",
+        "workingOut": "$$ \\text{For } g''(x) < 0, \\quad x \\in (-\\infty, Q) $$",
         "graphData": null
       },
       {
-        "explanation": "Find the intersection of \\((P, R)\\) and \\((-\\infty, Q)\\). Since \\(P < Q < R\\), the overlap is \\((P, Q)\\).",
-        "workingOut": "\\((P, R) \\cap (-\\infty, Q) = (P, Q)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "The domain where \\(g'(x) < 0\\) (decreasing) and \\(g''(x) < 0\\) (concave down) both hold is \\((P, Q)\\).",
-        "workingOut": "\\(\\text{Answer: } (P, Q)\\)",
+        "explanation": "Step 3: To satisfy both conditions simultaneously, calculate the intersection of the two domains from Step 1 and Step 2. Given the order \\(P < Q < R\\), the overlapping region is strictly between \\(P\\) and \\(Q\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Required Domain} &= (P, R) \\cap (-\\infty, Q) \\\\\\\\ &= (P, Q) \\end{aligned} $$",
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 300,
+        "boundingbox": [
+          -5.5,
+          4,
+          1,
+          -3
+        ],
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5.5,0],[0.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-2.5],[0,3.5]], {strokeColor:'black'});\nvar f=function(x){ return (1/3)*x*x*x + 2.5*x*x + 4*x; };\nboard.create('functiongraph', [f, -5.5, 0.5], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [-4, 0], {name:'P', size:0, fixed:true, label:{offset:[-4,15]}});\nboard.create('point', [-2.5, 0], {name:'Q', size:0, fixed:true, label:{offset:[-4,-15]}});\nboard.create('point', [-1, 0], {name:'R', size:0, fixed:true, label:{offset:[-4,-15]}});\nboard.create('segment', [[-4,0], [-4, f(-4)]], {strokeColor:'gray', dash:2});\nboard.create('segment', [[-2.5,0], [-2.5, f(-2.5)]], {strokeColor:'gray', dash:2});\nboard.create('segment', [[-1,0], [-1, f(-1)]], {strokeColor:'gray', dash:2});\nboard.create('point', [-4, f(-4)], {name:'', size:2, color:'black', fixed:true});\nboard.create('point', [-2.5, f(-2.5)], {name:'', size:2, color:'black', fixed:true});\nboard.create('point', [-1, f(-1)], {name:'', size:2, color:'black', fixed:true});\nboard.create('text', [0.5, -0.3, 'x'], {fontSize:13});\nboard.create('text', [0.15, 3.2, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "isNew": true,
     "requiresManualGrading": false
   },
