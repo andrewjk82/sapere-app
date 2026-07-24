@@ -2508,35 +2508,51 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(0, 0)\\), \\(B(0, 8)\\) and \\(C(12, 8)\\). Let \\(M\\), \\(N\\) and \\(P\\) be the midpoints of sides \\(AB\\), \\(BC\\) and \\(CA\\) respectively. Complete the following tasks.\nFind the coordinates of \\(M\\), \\(N\\) and \\(P\\). Format: M(x, y), N(x, y), P(x, y)",
     "opts": [
+      "\\(M(4, 0), N(6, 8), P(6, 4)\\)",
+      "\\(M(0, 4), N(8, 6), P(4, 6)\\)",
       "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
-      "Cannot be determined",
-      "None of the above",
-      "Not enough information"
+      "\\(M(0, 4), N(6, 4), P(6, 8)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\(M(0, 4), N(6, 8), P(6, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M(0, 4), \\quad N(6, 8), \\quad P(6, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the vertices.",
+        "workingOut": "\\(A(0, 0)\\), \\(B(0, 8)\\), \\(C(12, 8)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Step 3: Calculate the midpoint for each side.",
+        "workingOut": "$$ \\begin{aligned} M_{AB} &= \\left(\\frac{0 + 0}{2}, \\frac{0 + 8}{2}\\right) = (0, 4) \\\\\\\\ N_{BC} &= \\left(\\frac{0 + 12}{2}, \\frac{8 + 8}{2}\\right) = (6, 8) \\\\\\\\ P_{CA} &= \\left(\\frac{12 + 0}{2}, \\frac{8 + 0}{2}\\right) = (6, 4) \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: State the final coordinates.",
         "workingOut": "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: M(0, 4), N(6, 8), P(6, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -3,
+              11,
+              14,
+              -3
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2, 0], [14, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 10]], {strokeColor: 'black'});\nlet pA = board.create('point', [0, 0], {name:'A(0, 0)', size:3, color:'red', label:{offset:[-15,-15]}});\nlet pB = board.create('point', [0, 8], {name:'B(0, 8)', size:3, color:'red', label:{offset:[-15,10]}});\nlet pC = board.create('point', [12, 8], {name:'C(12, 8)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('polygon', [pA, pB, pC], {fillColor:'rgba(255,0,0,0.1)', borders:{strokeColor:'red', strokeWidth:2}});\n\nboard.create('point', [0, 4], {name:'M(0, 4)', size:3, color:'green', label:{offset:[-35,0]}});\nboard.create('point', [6, 8], {name:'N(6, 8)', size:3, color:'green', label:{offset:[0,15]}});\nboard.create('point', [6, 4], {name:'P(6, 4)', size:3, color:'green', label:{offset:[5,-15]}});\nboard.create('polygon', [[0,4], [6,8], [6,4]], {fillColor:'rgba(0,255,0,0.2)', borders:{strokeColor:'green', dash:2}});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -2544,19 +2560,19 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
+        "text": "\\(M(4, 0), N(6, 8), P(6, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(M(0, 4), N(8, 6), P(4, 6)\\)",
+        "imageUrl": ""
+      },
+      {
         "text": "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
-        "imageUrl": ""
-      },
-      {
-        "text": "None of the above",
-        "imageUrl": ""
-      },
-      {
-        "text": "Not enough information",
+        "text": "\\(M(0, 4), N(6, 4), P(6, 8)\\)",
         "imageUrl": ""
       }
     ]
@@ -2571,10 +2587,10 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(0, 0)\\), \\(B(0, 8)\\) and \\(C(12, 8)\\). Let \\(M\\), \\(N\\) and \\(P\\) be the midpoints of sides \\(AB\\), \\(BC\\) and \\(CA\\) respectively. Complete the following tasks.\nFind the coordinates of the midpoints of the sides of \\(\\Delta MNP\\). Format: (x, y), (x, y), (x, y)",
     "opts": [
-      "Not enough information",
+      "\\((3, 6), (6, 4), (3, 4)\\)",
       "\\((3, 6), (6, 6), (3, 4)\\)",
-      "Cannot be determined",
-      "None of the above"
+      "\\((3, 4), (6, 6), (3, 6)\\)",
+      "\\((6, 3), (6, 6), (4, 3)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2582,24 +2598,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((3, 6), (6, 6), (3, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((3, 6), \\quad (6, 6), \\quad (3, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the vertices of \\(\\Delta MNP\\) (from the previous part).",
+        "workingOut": "\\(M(0, 4)\\), \\(N(6, 8)\\), \\(P(6, 4)\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( \\text{Midpoint} = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Step 3: Calculate the midpoint for each side of \\(\\Delta MNP\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Midpoint of } MN &= \\left(\\frac{0 + 6}{2}, \\frac{4 + 8}{2}\\right) = (3, 6) \\\\\\\\ \\text{Midpoint of } NP &= \\left(\\frac{6 + 6}{2}, \\frac{8 + 4}{2}\\right) = (6, 6) \\\\\\\\ \\text{Midpoint of } PM &= \\left(\\frac{6 + 0}{2}, \\frac{4 + 4}{2}\\right) = (3, 4) \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: State the final coordinates of the midpoints.",
         "workingOut": "\\((3, 6), (6, 6), (3, 4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: (3, 6), (6, 6), (3, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, 6), (6, 6), (3, 4)\\)",
-        "graphData": null
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -3,
+              11,
+              14,
+              -3
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2, 0], [14, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 10]], {strokeColor: 'black'});\n\nboard.create('polygon', [[0,0], [0,8], [12,8]], {fillColor:'transparent', borders:{strokeColor:'gray', dash:1}});\n\nlet pM = board.create('point', [0, 4], {name:'M(0, 4)', size:3, color:'green', label:{offset:[-35,0]}});\nlet pN = board.create('point', [6, 8], {name:'N(6, 8)', size:3, color:'green', label:{offset:[0,10]}});\nlet pP = board.create('point', [6, 4], {name:'P(6, 4)', size:3, color:'green', label:{offset:[10,-10]}});\nboard.create('polygon', [pM, pN, pP], {fillColor:'rgba(0,255,0,0.1)', borders:{strokeColor:'green', strokeWidth:2}});\n\nboard.create('point', [3, 6], {name:'(3, 6)', size:3, color:'blue', label:{offset:[-30,10]}});\nboard.create('point', [6, 6], {name:'(6, 6)', size:3, color:'blue', label:{offset:[10,0]}});\nboard.create('point', [3, 4], {name:'(3, 4)', size:3, color:'blue', label:{offset:[-10,-15]}});\nboard.create('polygon', [[3,6], [6,6], [3,4]], {fillColor:'rgba(0,0,255,0.2)', borders:{strokeColor:'blue', dash:2}});\n\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -2607,7 +2639,7 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "Not enough information",
+        "text": "\\((3, 6), (6, 4), (3, 4)\\)",
         "imageUrl": ""
       },
       {
@@ -2615,11 +2647,11 @@ export const Y9_CH11B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
+        "text": "\\((3, 4), (6, 6), (3, 6)\\)",
         "imageUrl": ""
       },
       {
-        "text": "None of the above",
+        "text": "\\((6, 3), (6, 6), (4, 3)\\)",
         "imageUrl": ""
       }
     ]
