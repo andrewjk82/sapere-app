@@ -1756,10 +1756,10 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "For the curve $y = 3x - x^3 - 1$, find the point of inflection.",
     "opts": [
-      "\\((0, +1)\\)",
+      "\\((0, 1)\\)",
       "\\((0, -1)\\)",
-      "\\((0, -1) + 1\\)",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\((1, 1)\\)",
+      "\\((-1, -3)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1767,24 +1767,24 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\((0, -1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(-6x = 0 \\Rightarrow x = 0, quad y = -1\\)",
-        "graphData": null
+        "explanation": "Step 1: Find the first and second derivatives of the function.",
+        "workingOut": "$$ \\begin{aligned} y &= 3x - x^3 - 1 \\\\\\\\ y' &= 3 - 3x^2 \\\\\\\\ y'' &= -6x \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x < 0: y'' > 0 \\text{ (concave up)}; \\quad x > 0: y'' < 0 \\text{ (concave down)}\\)",
-        "graphData": null
+        "explanation": "Step 2: Set the second derivative to zero to find the possible point of inflection.",
+        "workingOut": "$$ -6x = 0 \\implies x = 0 $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Point of inflection at } (0, -1)\\)",
-        "graphData": null
+        "explanation": "Step 3: Substitute \\(x = 0\\) back into the original equation to find the \\(y\\)-coordinate.",
+        "workingOut": "$$ y(0) = 3(0) - (0)^3 - 1 = -1 \\implies \\text{Point is } (0, -1) $$"
       },
       {
-        "explanation": "Final answer: (0, -1). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\((0, -1)\\)",
-        "graphData": null
+        "explanation": "Step 4: Verify that the concavity changes at \\(x = 0\\) by testing values on either side.",
+        "workingOut": "$$ \\begin{aligned} \\text{For } x = -1: &\\quad y'' = -6(-1) = 6 > 0 \\quad (\\text{Concave up}) \\\\\\\\ \\text{For } x = 1: &\\quad y'' = -6(1) = -6 < 0 \\quad (\\text{Concave down}) \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 5: Since the concavity changes, it is a valid point of inflection.",
+        "workingOut": "$$ \\therefore \\text{Point of inflection is } (0, -1) $$"
       }
     ],
     "graphData": null,
@@ -1801,10 +1801,10 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "What is the maximum value of $y = 3x - x^3 - 1$ for $-3 \\leq x \\leq 2$?",
     "opts": [
-      "\\(\\dfrac{12}{x + 2}\\)",
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(y = 1\\)",
+      "\\(y = -3\\)",
       "\\(y = 17\\)",
-      "\\(y = 17 + 1\\)"
+      "\\(y = -1\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -1812,24 +1812,20 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(y = 17\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y(-3) = 3(-3) - (-3)^3 - 1 = -9 + 27 - 1 = 17\\)",
-        "graphData": null
+        "explanation": "Step 1: To find the global maximum on a closed interval, we must check the \\(y\\)-values at the stationary points and at the endpoints of the domain.",
+        "workingOut": "$$ \\text{Stationary points are } x = 1 \\text{ and } x = -1 \\quad (\\text{from part a}) $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y(-3) = 17, y(-1) = -3, y(1) = 1, y(2) = -3\\)",
-        "graphData": null
+        "explanation": "Step 2: Evaluate the function at the stationary points.",
+        "workingOut": "$$ \\begin{aligned} \\text{At } x = 1: &\\quad y(1) = 3(1) - (1)^3 - 1 = 1 \\\\\\\\ \\text{At } x = -1: &\\quad y(-1) = 3(-1) - (-1)^3 - 1 = -3 \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Maximum} = 17\\)",
-        "graphData": null
+        "explanation": "Step 3: Evaluate the function at the endpoints of the domain \\(-3 \\leq x \\leq 2\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{At } x = -3: &\\quad y(-3) = 3(-3) - (-3)^3 - 1 = -9 + 27 - 1 = 17 \\\\\\\\ \\text{At } x = 2: &\\quad y(2) = 3(2) - (2)^3 - 1 = 6 - 8 - 1 = -3 \\end{aligned} $$"
       },
       {
-        "explanation": "Final answer: y = 17. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(y = 17\\)",
-        "graphData": null
+        "explanation": "Step 4: Compare all the \\(y\\)-values to find the greatest one.",
+        "workingOut": "$$ \\begin{aligned} \\text{Values are: } & 1, -3, 17, -3 \\\\\\\\ \\text{Maximum value is } & 17 \\end{aligned} $$"
       }
     ],
     "graphData": null,
