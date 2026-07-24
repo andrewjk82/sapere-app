@@ -181,6 +181,12 @@ const Curriculum = () => {
   };
 
   const [selectedTopicForBank, setSelectedTopicForBank] = useState(null);
+  // Global question-ID search (any question, any chapter) — set on Enter in
+  // the header search box. A synthetic 'search:' chapter id tells
+  // QuestionBankPage to run one bounded documentId() prefix-range query
+  // instead of reading a chapter's question_index, so this never scans the
+  // full questions collection no matter how many chapters exist.
+  const [selectedGlobalSearch, setSelectedGlobalSearch] = useState(null);
   const [previewLesson, setPreviewLesson] = useState(null);
   const [questionCounts, setQuestionCounts] = useState({});
   // Live "questions changed" signal. Any add/delete path bumps
@@ -2713,6 +2719,20 @@ const Curriculum = () => {
     );
   }
 
+  // Global question-ID search: synthetic 'search:' chapter, no topic.
+  // QuestionBankPage runs a single bounded documentId() prefix-range query
+  // for this — every question whose id starts with the typed string, from
+  // any chapter/topic — instead of a full collection scan.
+  if (selectedGlobalSearch) {
+    return (
+      <QuestionBankPage
+        chapter={{ id: `search:${selectedGlobalSearch}`, title: `Search: "${selectedGlobalSearch}"`, searchPrefix: selectedGlobalSearch }}
+        topic={null}
+        onBack={() => setSelectedGlobalSearch(null)}
+      />
+    );
+  }
+
   // Student-facing Practice by Type full page (triggered from HSC journey button)
   if (showPracticeByType) {
     return (
@@ -2880,10 +2900,18 @@ const Curriculum = () => {
                     {(searchOpen || searchQuery) && (
                       <input
                         type="text"
-                        placeholder="Search chapters..."
+                        placeholder="Search chapters, or press Enter for a question ID..."
                         value={searchQuery}
                         autoFocus
                         onChange={(e) => setSearchQuery(e.target.value)}
+                        onKeyDown={(e) => {
+                          if (e.key !== 'Enter') return;
+                          const trimmed = searchQuery.trim();
+                          if (!trimmed) return;
+                          setSelectedGlobalSearch(trimmed);
+                          setSearchQuery('');
+                          setSearchOpen(false);
+                        }}
                         onBlur={() => !searchQuery && setSearchOpen(false)}
                       />
                     )}

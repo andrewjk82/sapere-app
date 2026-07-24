@@ -126,7 +126,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         query(
           collection(db, 'questions'),
           where(documentId(), '>=', trimmed),
-          where(documentId(), '<', trimmed + ''),
+          where(documentId(), '<', trimmed + String.fromCharCode(0xf8ff)),
         )
       );
       const activeDocs = prefixSnap.docs.filter(d => d.data().isActive !== false);
@@ -248,9 +248,30 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     try {
       const isTypeChapter = chapter.id?.startsWith('type:');
       const isExamChapter = chapter.id?.startsWith('exam:');
+      const isSearchChapter = chapter.id?.startsWith('search:');
       let ids = [];
 
-      if (isTypeChapter) {
+      if (isSearchChapter) {
+        // Global ID-prefix search, any chapter/topic — ONE bounded
+        // documentId() range query, never a full collection scan.
+        const prefix = chapter.searchPrefix || chapter.id.replace('search:', '');
+        const snap = await getDocsFromServer(
+          query(
+            collection(db, 'questions'),
+            where(documentId(), '>=', prefix),
+            where(documentId(), '<', prefix + String.fromCharCode(0xf8ff)),
+          )
+        );
+        const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
+        docs.sort((a, b) => String(a.id).localeCompare(String(b.id)));
+        const fetched = {};
+        docs.forEach(q => { fetched[q.id] = q; });
+        setLoadedQuestions(prev => ({ ...prev, ...fetched }));
+        ids = docs.map(q => q.id);
+        if (ids.length === 0) {
+          showToast(`No questions found with ID starting "${prefix}"`, 'error');
+        }
+      } else if (isTypeChapter) {
         const typeSlug = chapter.typeSlug || chapter.id.replace('type:', '');
         const indexDoc = await getDoc(doc(db, 'question_type_index', typeSlug));
         ids = indexDoc.exists() ? (indexDoc.data().ids || []) : [];
