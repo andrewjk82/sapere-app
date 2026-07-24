@@ -1399,27 +1399,61 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "solution": "Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\(\\left(\\tfrac{8}{3},0\\right)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum at \\((2,16)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Danebank 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x^3(8 - 3x) = 0 \\Rightarrow x = 0,\\ \\tfrac{8}{3}\\)",
+        "explanation": "Step 1: Differentiate \\(f(x)\\) to find the first derivative \\(f'(x)\\). Set it to \\(0\\) to locate the stationary points.",
+        "workingOut": "$$ \\begin{aligned} f'(x) &= 24x^2 - 12x^3 \\\\\\\\ 12x^2(2 - x) &= 0 \\implies x = 0 \\text{ or } x = 2 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\((0,0)\\text{ POI}, quad (2,16)\\text{ max}\\)",
+        "explanation": "Step 2: Differentiate again to find the second derivative \\(f''(x)\\). This helps classify the stationary points and identify potential points of inflection (POI).",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= 48x - 36x^2 \\\\\\\\ 12x(4 - 3x) &= 0 \\implies x = 0 \\text{ or } x = \\dfrac{4}{3} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x \\to \\pm\\infty \\Rightarrow f(x) \\to -\\infty\\)",
+        "explanation": "Step 3: Classify the stationary point at \\(x = 2\\) using the second derivative test, and calculate its \\(y\\)-coordinate.",
+        "workingOut": "$$ f''(2) = 12(2)(4 - 6) = -48 < 0 \\implies \\text{Local Maximum} \\\\\\\\ f(2) = 8(2)^3 - 3(2)^4 = 64 - 48 = 16 \\implies \\text{Max at } (2, 16) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\(\\left(\\tfrac{8}{3},0\\right)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum at \\((2,16)\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\(\\left(\\tfrac{8}{3},0\\right)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum at \\((2,16)\\).\\)",
+        "explanation": "Step 4: Classify the stationary point at \\(x = 0\\). Since \\(f'(0) = 0\\) and \\(f''(0) = 0\\), we check for a change in concavity using test points.",
+        "workingOut": "$$ \\begin{aligned} f''(-1) &= 12(-1)(4 + 3) = -84 < 0 \\quad (\\text{Concave down}) \\\\\\\\ f''(1) &= 12(1)(4 - 3) = 12 > 0 \\quad (\\text{Concave up}) \\end{aligned} $$ \n Since concavity changes, \\((0,0)\\) is a horizontal point of inflection.",
         "graphData": null
+      },
+      {
+        "explanation": "Step 5: Verify the other potential POI at \\(x = 4/3\\). We check concavity around \\(x = 4/3\\).",
+        "workingOut": "$$ \\begin{aligned} f''(1) &= 12 > 0 \\quad (\\text{Concave up}) \\\\\\\\ f''(2) &= -48 < 0 \\quad (\\text{Concave down}) \\end{aligned} $$ \n Concavity changes, so \\(x = 4/3\\) is a non-horizontal POI. \\(f(4/3) = 256/27 \\approx 9.48\\), so the POI is at \\((4/3, 256/27)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: Finally, find the \\(x\\) and \\(y\\) intercepts to complete the sketch.",
+        "workingOut": "$$ \\begin{aligned} y\\text{-intercept: } x=0 &\\implies y = 0 \\\\\\\\ x\\text{-intercepts: } 8x^3 - 3x^4 &= 0 \\implies x^3(8-3x) = 0 \\implies x = 0, \\; x = \\dfrac{8}{3} \\end{aligned} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -1.5,
+              20,
+              4,
+              -5
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.2,0],[3.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,18]], {strokeColor:'black'});\nvar f=function(x){ return 8*Math.pow(x, 3) - 3*Math.pow(x, 4); };\nboard.create('functiongraph', [f, -0.9, 3.1], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:2, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [8/3, 0], {name:'(8/3,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [2, 16], {name:'Max(2, 16)', size:2, color:'purple', label:{offset:[-40,15]}});\nboard.create('point', [4/3, 256/27], {name:'POI(4/3, 256/27)', size:2, color:'green', label:{offset:[10,-15]}});\nboard.create('text', [3.3, -1.2, 'x'], {fontSize:13});\nboard.create('text', [0.2, 17, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 300,
+        "boundingbox": [
+          -1.5,
+          20,
+          4,
+          -5
+        ],
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.2,0],[3.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-3],[0,18]], {strokeColor:'black'});\nvar f=function(x){ return 8*Math.pow(x, 3) - 3*Math.pow(x, 4); };\nboard.create('functiongraph', [f, -0.9, 3.1], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:2, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [8/3, 0], {name:'(8/3,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [2, 16], {name:'Max(2, 16)', size:2, color:'purple', label:{offset:[-40,15]}});\nboard.create('point', [4/3, 256/27], {name:'POI(4/3, 256/27)', size:2, color:'green', label:{offset:[10,-15]}});\nboard.create('text', [3.3, -1.2, 'x'], {fontSize:13});\nboard.create('text', [0.2, 17, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
