@@ -2375,35 +2375,31 @@ export const ASCHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "For the function $y = x^4 - 8x^2 + 3$, find all stationary points and determine their nature.",
     "opts": [
-      "Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Local maximum at \\((0, 3)\\); local minima at \\((2, -13)\\) and \\((-2, -13)\\)",
+      "Local minimum at \\((0, 3)\\); local maxima at \\((2, -13)\\) and \\((-2, -13)\\)",
+      "Local maximum at \\((0, 3)\\); local minima at \\((2, 19)\\) and \\((-2, 19)\\)",
+      "Local minimum at \\((0, 3)\\) only"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Find $y'$, set it to zero, then use the second derivative test.",
-    "solution": "The correct answer is Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\).",
+    "solution": "The correct answer is Local maximum at \\((0, 3)\\); local minima at \\((2, -13)\\) and \\((-2, -13)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y' = 4x^3 - 16x = 4x(x-2)(x+2) = 0 \\Rightarrow x = 0,\\, pm 2\\)",
-        "graphData": null
+        "explanation": "Step 1: To find the stationary points, we first find the derivative \\(y'\\) and set it to zero.",
+        "workingOut": "$$ \\begin{aligned} y &= x^4 - 8x^2 + 3 \\\\\\\\ y' &= 4x^3 - 16x \\\\\\\\ 4x(x^2 - 4) &= 0 \\implies x = 0 \\text{ or } x = \\pm 2 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y(0) = 3, quad y(\\pm 2) = 16 - 32 + 3 = -13\\)",
-        "graphData": null
+        "explanation": "Step 2: Substitute these \\(x\\)-values back into the original function \\(y\\) to find the corresponding \\(y\\)-coordinates of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} y(0) &= 0^4 - 8(0)^2 + 3 = 3 \\implies (0, 3) \\\\\\\\ y(2) &= 2^4 - 8(2)^2 + 3 = 16 - 32 + 3 = -13 \\implies (2, -13) \\\\\\\\ y(-2) &= (-2)^4 - 8(-2)^2 + 3 = 16 - 32 + 3 = -13 \\implies (-2, -13) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y'' = 12x^2 - 16 \\Rightarrow y''(0) = -16 < 0 \\text{ (max)}, quad y''(\\pm 2) = 32 > 0 \\text{ (min)}\\)",
-        "graphData": null
+        "explanation": "Step 3: Find the second derivative \\(y''\\) to determine the nature of each stationary point.",
+        "workingOut": "y'' = \\frac{d}{dx}(4x^3 - 16x) = 12x^2 - 16"
       },
       {
-        "explanation": "Final answer: Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Local maximum at \\((0,\\, 3)\\); local minima at \\((2,\\, -13)\\) and \\((-2,\\, -13)\\)",
-        "graphData": null
+        "explanation": "Step 4: Evaluate \\(y''\\) at each \\(x\\)-value to determine whether it is a local maximum or minimum.",
+        "workingOut": "$$ \\begin{aligned} y''(0) &= -16 < 0 \\implies \\text{Local Maximum at } (0, 3) \\\\\\\\ y''(2) &= 12(2)^2 - 16 = 32 > 0 \\implies \\text{Local Minimum at } (2, -13) \\\\\\\\ y''(-2) &= 12(-2)^2 - 16 = 32 > 0 \\implies \\text{Local Minimum at } (-2, -13) \\end{aligned} $$"
       }
     ],
     "graphData": null,
