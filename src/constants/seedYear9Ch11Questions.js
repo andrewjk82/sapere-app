@@ -9,7 +9,7 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((1, 4)\\) and \\((7, 4)\\).",
     "opts": [
-      "\\(-6\\)",
+      "\\(4\\)",
       "\\(5\\)",
       "\\(6\\)",
       "\\(7\\)"
@@ -70,7 +70,7 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((6, 2)\\) and \\((-2, 2)\\).",
     "opts": [
-      "\\(-8\\)",
+      "\\(6\\)",
       "\\(7\\)",
       "\\(8\\)",
       "\\(9\\)"
@@ -131,12 +131,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-3, 1)\\) and \\((-3, 11)\\).",
     "opts": [
-      "\\(-10\\)",
+      "\\(8\\)",
+      "\\(9\\)",
       "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)"
+      "\\(11\\)"
     ],
-    "a": 1,
+    "a": 2,
     "answer": "1",
     "hint": "Notice that the \\(x\\)-coordinates are identical. Subtract the smaller \\(y\\)-coordinate from the larger one.",
     "solution": "Since the \\(x\\)-coordinates are the same, the distance is the absolute difference of the \\(y\\)-coordinates: \\(|11 - 1| = 10\\).",
@@ -192,10 +192,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-1, -6)\\) and \\((-1, 7)\\).",
     "opts": [
-      "\\(-13\\)",
-      "\\(12\\)",
+      "\\(9\\)",
+      "\\(11\\)",
       "\\(13\\)",
-      "\\(14\\)"
+      "\\(15\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -253,12 +253,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((1, 2)\\) and \\((7, 10)\\).",
     "opts": [
-      "\\(-10\\)",
+      "\\(8\\)",
+      "\\(9\\)",
       "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)"
+      "\\(11\\)"
     ],
-    "a": 1,
+    "a": 2,
     "answer": "1",
     "hint": "Apply the distance formula: \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\).",
     "solution": "Using the distance formula: \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(7 - 1)^2 + (10 - 2)^2} = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\).",
@@ -314,7 +314,7 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((2, 6)\\) and \\((5, 2)\\).",
     "opts": [
-      "\\(-5\\)",
+      "\\(3\\)",
       "\\(4\\)",
       "\\(5\\)",
       "\\(6\\)"
@@ -375,10 +375,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-2, 1)\\) and \\((3, 13)\\).",
     "opts": [
-      "\\(-13\\)",
-      "\\(12\\)",
+      "\\(9\\)",
+      "\\(11\\)",
       "\\(13\\)",
-      "\\(14\\)"
+      "\\(15\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -436,10 +436,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-3, -5)\\) and \\((5, 10)\\).",
     "opts": [
-      "\\(-17\\)",
-      "\\(16\\)",
+      "\\(13\\)",
+      "\\(15\\)",
       "\\(17\\)",
-      "\\(18\\)"
+      "\\(19\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -497,10 +497,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-2, -4)\\) and \\((0, -2)\\).",
     "opts": [
-      "\\(-2\\sqrt{2}\\)",
-      "\\(2\\sqrt{2}\\)",
-      "\\(2\\sqrt{2} + 1\\)",
-      "\\(3\\sqrt{3}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -558,12 +558,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-4, 2)\\) and \\((2, -1)\\).",
     "opts": [
-      "\\(-3\\sqrt{5}\\)",
-      "\\(3\\sqrt{5}\\)",
-      "\\(3\\sqrt{5} + 1\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
-    "a": 1,
+    "a": 2,
     "answer": "1",
     "hint": "Express the resulting surd in its simplest form: \\(\\sqrt{45} = \\sqrt{9 \\times 5}\\).",
     "solution": "Using the distance formula: \\(d = \\sqrt{(2 - (-4))^2 + (-1 - 2)^2} = \\sqrt{6^2 + (-3)^2} = \\sqrt{36 + 9} = \\sqrt{45} = 3\\sqrt{5}\\).",
@@ -619,10 +619,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((1, -2)\\) and \\((5, -4)\\).",
     "opts": [
-      "\\(-2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5} + 1\\)",
-      "\\(3\\sqrt{5}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -680,10 +680,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-5, -2)\\) and \\((1, 0)\\).",
     "opts": [
-      "\\(-2\\sqrt{10}\\)",
-      "\\(2\\sqrt{10}\\)",
-      "\\(2\\sqrt{10} + 1\\)",
-      "\\(3\\sqrt{10}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1100,10 +1100,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(AB\\).",
     "opts": [
-      "\\(-13\\)",
-      "\\(12\\)",
+      "\\(9\\)",
+      "\\(11\\)",
       "\\(13\\)",
-      "\\(14\\)"
+      "\\(15\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -1161,10 +1161,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(BC\\).",
     "opts": [
-      "\\(-13\\)",
-      "\\(12\\)",
+      "\\(9\\)",
+      "\\(11\\)",
       "\\(13\\)",
-      "\\(14\\)"
+      "\\(15\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -1222,12 +1222,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(AC\\).",
     "opts": [
-      "\\(-10\\)",
+      "\\(8\\)",
+      "\\(9\\)",
       "\\(10\\)",
-      "\\(11\\)",
-      "\\(9\\)"
+      "\\(11\\)"
     ],
-    "a": 1,
+    "a": 2,
     "answer": "1",
     "hint": "Observe the \\(y\\)-coordinates of both points to determine if they lie on a straight horizontal line.",
     "solution": "Since both points \\(A\\) and \\(C\\) lie on the \\(x\\)-axis, the distance is simply the difference of their \\(x\\)-coordinates: \\(|10 - 0| = 10\\).",
@@ -1344,10 +1344,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PQ\\).",
     "opts": [
-      "\\(-2\\sqrt{10}\\)",
-      "\\(2\\sqrt{10}\\)",
-      "\\(2\\sqrt{10} + 1\\)",
-      "\\(3\\sqrt{10}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1405,10 +1405,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PR\\).",
     "opts": [
-      "\\(-2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5} + 1\\)",
-      "\\(3\\sqrt{5}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1466,10 +1466,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(QR\\).",
     "opts": [
-      "\\(-2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5} + 1\\)",
-      "\\(3\\sqrt{5}\\)"
+      "\\(1\\)",
+      "\\(2\\)",
+      "\\(3\\)",
+      "\\(4\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1696,10 +1696,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Calculate the perimeter of \\(\\Delta PQR\\) with vertices \\(P(1, 2)\\), \\(Q(4, 2)\\) and \\(R(4, 6)\\).",
     "opts": [
-      "\\(-12\\)",
-      "\\(11\\)",
+      "\\(8\\)",
+      "\\(10\\)",
       "\\(12\\)",
-      "\\(13\\)"
+      "\\(14\\)"
     ],
     "a": 2,
     "answer": "2",
