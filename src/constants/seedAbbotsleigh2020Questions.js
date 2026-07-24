@@ -1852,29 +1852,24 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solution": "The correct answer is \\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
     "solutionSteps": [
       {
-        "explanation": "Points of inflection occur where \\(y'' = 0\\) (and the concavity changes). From part (i), \\(y'' = 4e^{-x^2}\\!(x^2 - \\frac{1}{2})\\).",
-        "workingOut": "\\(4e^{-x^2}\\!\\left(x^2 - \\frac{1}{2}\\right) = 0\\)",
-        "graphData": null
+        "explanation": "Step 1: To find the points of inflection, we first need to find the second derivative \\(y''\\). Let's start by finding the first derivative using the chain rule.",
+        "workingOut": "$$ \\begin{aligned} y &= e^{-x^2} \\\\\\\\ y' &= -2xe^{-x^2} \\end{aligned} $$"
       },
       {
-        "explanation": "Since \\(e^{-x^2} > 0\\) for all \\(x\\), we only need to solve \\(x^2 - \\frac{1}{2} = 0\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(x^2 = \\frac{1}{2} \\Rightarrow x = \\pm\\frac{1}{\\sqrt{2}}\\)",
-        "graphData": null
+        "explanation": "Step 2: Now, find the second derivative by applying the product rule and chain rule to \\(y'\\).",
+        "workingOut": "$$ \\begin{aligned} y'' &= \\frac{d}{dx}(-2x) \\cdot e^{-x^2} + (-2x) \\cdot \\frac{d}{dx}(e^{-x^2}) \\\\\\\\ &= -2e^{-x^2} + (-2x)(-2xe^{-x^2}) \\\\\\\\ &= -2e^{-x^2} + 4x^2e^{-x^2} \\\\\\\\ &= 2e^{-x^2}(2x^2 - 1) \\end{aligned} $$"
       },
       {
-        "explanation": "Find the \\(y\\)-coordinate at each point by substituting into \\(y = e^{-x^2}\\): \\(y = e^{-(1/\\sqrt{2})^2} = e^{-1/2}\\).",
-        "workingOut": "\\(y = e^{-1/2} = \\frac{1}{\\sqrt{e}}\\)",
-        "graphData": null
+        "explanation": "Step 3: Set \\(y'' = 0\\) to find the possible points of inflection. Since the exponential function \\(e^{-x^2}\\) is strictly positive and never zero, we only need to solve the quadratic part.",
+        "workingOut": "$$ \\begin{aligned} 2x^2 - 1 &= 0 \\\\\\\\ x^2 &= \\frac{1}{2} \\implies x = \\pm \\frac{1}{\\sqrt{2}} \\end{aligned} $$"
       },
       {
-        "explanation": "Verify the concavity changes at each point (left of \\(-\\frac{1}{\\sqrt{2}}\\): concave up; between: concave down; right of \\(\\frac{1}{\\sqrt{2}}\\): concave up), confirming these are true inflection points.",
-        "workingOut": "\\(\\left(\\pm\\dfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\)",
-        "graphData": null
+        "explanation": "Step 4: Substitute these \\(x\\)-values back into the original equation \\(y = e^{-x^2}\\) to find the corresponding \\(y\\)-coordinates.",
+        "workingOut": "$$ y = e^{-\\left(\\pm \\frac{1}{\\sqrt{2}}\\right)^2} = e^{-\\frac{1}{2}} = \\frac{1}{\\sqrt{e}} $$"
       },
       {
-        "explanation": "The two points of inflection are at \\(\\left(-\\frac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\) and \\(\\left(\\frac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\).",
-        "workingOut": "\\(\\left(\\pm\\tfrac{1}{\\sqrt{2}}, e^{-1/2}\\right)\\)",
-        "graphData": null
+        "explanation": "Step 5: A quick test of intervals (e.g., \\(x=0\\) and \\(x=\\pm 1\\)) confirms that \\(y''\\) changes sign across these points. Therefore, both points are true points of inflection.",
+        "workingOut": "$$ \\text{Points of inflection: } \\left(\\pm \\frac{1}{\\sqrt{2}}, e^{-1/2}\\right) $$"
       }
     ],
     "graphData": null,
