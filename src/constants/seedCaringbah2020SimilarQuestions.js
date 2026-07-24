@@ -810,43 +810,133 @@ export const CARINGBAH_2020_SIMILAR_QUESTIONS = [
     "requiresManualGrading": false
   },
   {
-    "id": "car2020s-q18",
+    "id": "car2020s-q18a",
     "topicId": "y12a-exam",
     "c": "3B",
     "t": "Stationary points and turning points",
     "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
-    "question": "Consider the curve $y = 2x^3 - 3x^2 - 12x + 5$.\n\n(a) Find the coordinates of the stationary points and determine their nature.\n\n(b) Show that a point of inflection occurs at $x = \\dfrac{1}{2}$.\n\n(c) Sketch the graph, indicating all important features.",
+    "question": "Consider the curve \\(y = 2x^3 - 3x^2 - 12x + 5\\). Find the coordinates of the stationary points and determine their nature.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "(a) Local maximum at \\((-1, 12)\\), local minimum at \\((2, -15)\\).\n\n(b) \\(y'' = 12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\\), with sign change confirming inflection."
+      "Local maximum at \\((-1, 12)\\); local minimum at \\((2, -15)\\)",
+      "Local minimum at \\((-1, 12)\\); local maximum at \\((2, -15)\\)",
+      "Local maximum at \\((-2, 1)\\); local minimum at \\((1, -8)\\)",
+      "Local minimum at \\((-2, 1)\\); local maximum at \\((1, -8)\\)"
     ],
-    "a": 3,
-    "answer": "3",
-    "hint": "Set $y' = 0$ to find stationary points. Use $y''$ to determine nature and find inflection.",
-    "solution": "The correct answer is (a) Local maximum at \\((-1, 12)\\), local minimum at \\((2, -15)\\).\n\n(b) \\(y'' = 12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\\), with sign change confirming inflection..",
+    "a": 0,
+    "answer": "0",
+    "hint": "Find \\(y'\\) and set it to zero. Use \\(y''\\) to classify.",
+    "solution": "The correct answer is Local maximum at \\((-1, 12)\\); local minimum at \\((2, -15)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Caringbah 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(y' = 6x^2 - 6x - 12 = 6(x-2)(x+1) = 0 \\implies x = 2 \\text{ or } x = -1\\)",
+        "explanation": "Step 1: Differentiate the function to find the first derivative \\(y'\\).",
+        "workingOut": "$$ y' = 6x^2 - 6x - 12 $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y(-1) = -2-3+12+5 = 12 \\quad y(2) = 16-12-24+5 = -15\\)",
+        "explanation": "Step 2: Set \\(y' = 0\\) to find the \\(x\\)-coordinates of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} 6x^2 - 6x - 12 &= 0 \\\\\\\\ 6(x^2 - x - 2) &= 0 \\\\\\\\ (x - 2)(x + 1) &= 0 \\implies x = 2, x = -1 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(y''(-1) = -18 < 0 \\implies \\text{max}; \\quad y''(2) = 18 > 0 \\implies \\text{min}\\)",
+        "explanation": "Step 3: Find the corresponding \\(y\\)-coordinates by substituting \\(x = -1\\) and \\(x = 2\\) into the original equation.",
+        "workingOut": "$$ \\begin{aligned} \\text{For } x = -1: &\\quad y = 2(-1)^3 - 3(-1)^2 - 12(-1) + 5 = 12 \\implies (-1, 12) \\\\\\\\ \\text{For } x = 2: &\\quad y = 2(2)^3 - 3(2)^2 - 12(2) + 5 = -15 \\implies (2, -15) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (a) Local maximum at \\((-1, 12)\\), local minimum at \\((2, -15)\\).\n\n(b) \\(y'' = 12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\\), with sign change confirming inflection.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "(a) Local maximum at \\((-1, 12)\\), local minimum at \\((2, -15)\\).\n\n(b) \\(y'' = 12x - 6 = 0 \\Rightarrow x = \\frac{1}{2}\\), with sign change confirming inflection.",
+        "explanation": "Step 4: Find the second derivative \\(y''\\) and use it to determine the nature of each stationary point.",
+        "workingOut": "$$ \\begin{aligned} y'' &= 12x - 6 \\\\\\\\ \\text{At } x = -1: &\\quad y'' = 12(-1) - 6 = -18 < 0 \\implies \\text{Local Maximum at } (-1, 12) \\\\\\\\ \\text{At } x = 2: &\\quad y'' = 12(2) - 6 = 18 > 0 \\implies \\text{Local Minimum at } (2, -15) \\end{aligned} $$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "car2020s-q18b",
+    "topicId": "y12a-exam",
+    "c": "3B",
+    "t": "Stationary points and turning points",
+    "type": "multiple_choice",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Consider the curve \\(y = 2x^3 - 3x^2 - 12x + 5\\). Which of the following is true about its point of inflection?",
+    "opts": [
+      "It occurs at \\(x = \\frac{1}{2}\\) because \\(y'' = 0\\) and concavity changes.",
+      "It occurs at \\(x = 1\\) because \\(y' = 0\\) and gradient changes.",
+      "It occurs at \\(x = -1\\) because \\(y'' = 0\\) and concavity changes.",
+      "There is no point of inflection."
+    ],
+    "a": 0,
+    "answer": "0",
+    "hint": "Set \\(y'' = 0\\) and verify that the sign of \\(y''\\) changes.",
+    "solution": "The correct answer is It occurs at \\(x = \\frac{1}{2}\\) because \\(y'' = 0\\) and concavity changes.",
+    "solutionSteps": [
+      {
+        "explanation": "Step 1: Set the second derivative \\(y''\\) to zero to find the possible point of inflection.",
+        "workingOut": "$$ \\begin{aligned} y'' &= 12x - 6 \\\\\\\\ 12x - 6 &= 0 \\implies 12x = 6 \\implies x = \\frac{1}{2} \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: Find the corresponding \\(y\\)-coordinate by substituting \\(x = \\frac{1}{2}\\) into the original equation.",
+        "workingOut": "$$ \\text{For } x = \\frac{1}{2}: \\quad y = 2\\left(\\frac{1}{2}\\right)^3 - 3\\left(\\frac{1}{2}\\right)^2 - 12\\left(\\frac{1}{2}\\right) + 5 = -1.5 \\implies \\left(\\frac{1}{2}, -1.5\\right) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Verify that the concavity actually changes at \\(x = \\frac{1}{2}\\) by testing \\(y''\\) on either side.",
+        "workingOut": "$$ \\begin{aligned} \\text{Test } x = 0: &\\quad y''(0) = -6 < 0 \\quad (\\text{Concave down}) \\\\\\\\ \\text{Test } x = 1: &\\quad y''(1) = 6 > 0 \\quad (\\text{Concave up}) \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Conclude that a change in concavity confirms a point of inflection.",
+        "workingOut": "$$ \\text{Since concavity changes, there is a true point of inflection at } \\left(\\frac{1}{2}, -1.5\\right). $$",
+        "graphData": null
+      }
+    ],
+    "graphData": null,
+    "isNew": true,
+    "requiresManualGrading": false
+  },
+  {
+    "id": "car2020s-q18c",
+    "topicId": "y12a-exam",
+    "c": "3B",
+    "t": "Stationary points and turning points",
+    "type": "teacher_review",
+    "difficulty": "hard",
+    "timeLimit": 120,
+    "question": "Consider the curve \\(y = 2x^3 - 3x^2 - 12x + 5\\). Sketch the graph, indicating clearly all important features.",
+    "opts": [],
+    "a": 0,
+    "answer": "See the solution for the full sketch.",
+    "hint": "Combine the stationary points, point of inflection, and y-intercept to draw the curve.",
+    "solution": "The curve has a local maximum at \\((-1, 12)\\), a point of inflection at \\((0.5, -1.5)\\), and a local minimum at \\((2, -15)\\).<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"210\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"185\" y=\"165\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"50.0,240.0 56.0,216.8 62.0,195.6 68.0,176.5 74.0,159.3 80.0,144.0 86.0,130.5 92.0,118.7 98.0,108.6 104.0,100.0 110.0,93.0 116.0,87.4 122.0,83.2 128.0,80.3 134.0,78.6 140.0,78.0 146.0,78.5 152.0,80.1 158.0,82.5 164.0,85.9 170.0,90.0 176.0,94.8 182.0,100.3 188.0,106.4 194.0,113.0 200.0,120.0 206.0,127.4 212.0,135.0 218.0,142.9 224.0,150.9 230.0,159.0 236.0,167.1 242.0,175.1 248.0,183.0 254.0,190.6 260.0,198.0 266.0,205.0 272.0,211.6 278.0,217.7 284.0,223.2 290.0,228.0 296.0,232.1 302.0,235.5 308.0,237.9 314.0,239.5 320.0,240.0 326.0,239.4 332.0,237.7 338.0,234.8 344.0,230.6 350.0,225.0 356.0,218.0 362.0,209.4 368.0,199.3 374.0,187.5 380.0,174.0 386.0,158.7 392.0,141.5 398.0,122.4 404.0,101.2\" />\n  \n  <!-- Points -->\n  <circle cx=\"140\" cy=\"78\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"130\" y=\"65\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(-1, 12)</text>\n  \n  <circle cx=\"320\" cy=\"240\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"325\" y=\"255\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(2, -15)</text>\n  \n  <circle cx=\"230\" cy=\"159\" r=\"4\" fill=\"#059669\" />\n  <text x=\"240\" y=\"150\" fill=\"#059669\" font-size=\"12\" font-family=\"sans-serif\">POI (0.5, -1.5)</text>\n</svg>\n</div>\n",
+    "solutionSteps": [
+      {
+        "explanation": "Step 1: Identify the \\(y\\)-intercept.",
+        "workingOut": "$$ \\text{When } x = 0, \\quad y = 2(0)^3 - 3(0)^2 - 12(0) + 5 = 5 \\implies (0, 5) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: Use the stationary points from part (a).",
+        "workingOut": "$$ \\text{Local max at } (-1, 12) \\text{ and local min at } (2, -15) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Use the point of inflection from part (b).",
+        "workingOut": "$$ \\text{Point of inflection at } (0.5, -1.5) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Analyze end behavior. As \\(x \\to \\infty\\), \\(y \\to \\infty\\). As \\(x \\to -\\infty\\), \\(y \\to -\\infty\\).",
+        "workingOut": "$$ \\text{End behavior: cubic with positive leading coefficient} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Sketch the graph smoothly connecting these features.",
+        "workingOut": "\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"380\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"200\" y1=\"20\" x2=\"200\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"210\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"185\" y=\"165\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"50.0,240.0 56.0,216.8 62.0,195.6 68.0,176.5 74.0,159.3 80.0,144.0 86.0,130.5 92.0,118.7 98.0,108.6 104.0,100.0 110.0,93.0 116.0,87.4 122.0,83.2 128.0,80.3 134.0,78.6 140.0,78.0 146.0,78.5 152.0,80.1 158.0,82.5 164.0,85.9 170.0,90.0 176.0,94.8 182.0,100.3 188.0,106.4 194.0,113.0 200.0,120.0 206.0,127.4 212.0,135.0 218.0,142.9 224.0,150.9 230.0,159.0 236.0,167.1 242.0,175.1 248.0,183.0 254.0,190.6 260.0,198.0 266.0,205.0 272.0,211.6 278.0,217.7 284.0,223.2 290.0,228.0 296.0,232.1 302.0,235.5 308.0,237.9 314.0,239.5 320.0,240.0 326.0,239.4 332.0,237.7 338.0,234.8 344.0,230.6 350.0,225.0 356.0,218.0 362.0,209.4 368.0,199.3 374.0,187.5 380.0,174.0 386.0,158.7 392.0,141.5 398.0,122.4 404.0,101.2\" />\n  \n  <!-- Points -->\n  <circle cx=\"140\" cy=\"78\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"130\" y=\"65\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(-1, 12)</text>\n  \n  <circle cx=\"320\" cy=\"240\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"325\" y=\"255\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">(2, -15)</text>\n  \n  <circle cx=\"230\" cy=\"159\" r=\"4\" fill=\"#059669\" />\n  <text x=\"240\" y=\"150\" fill=\"#059669\" font-size=\"12\" font-family=\"sans-serif\">POI (0.5, -1.5)</text>\n</svg>\n</div>\n",
         "graphData": null
       }
     ],
