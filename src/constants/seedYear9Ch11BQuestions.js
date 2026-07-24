@@ -1916,24 +1916,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((3, 3)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{1+5}{2}, \\frac{2+4}{2}\\right) = (3, 3)\\)",
+        "explanation": "Step 1: Identify the coordinates of the endpoints for interval \\(AB\\).",
+        "workingOut": "$$ A(1, 2), \\; B(5, 4) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3, 3)\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ M = \\left(\\frac{1 + 5}{2}, \\frac{2 + 4}{2}\\right) = \\left(\\frac{6}{2}, \\frac{6}{2}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3, 3). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, 3)\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify to find the final coordinates of \\(M\\).",
+        "workingOut": "$$ M(3, 3) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              6,
+              9,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate(); board.create('point', [1, 2], {name:'A(1,2)', size:3, color:'red', label:{offset:[-20,10]}}); board.create('point', [5, 4], {name:'B(5,4)', size:3, color:'red', label:{offset:[10,10]}}); board.create('point', [3, 3], {name:'M(3,3)', size:3, color:'blue', label:{offset:[-10,15]}}); board.create('segment', [[1,2], [5,4]], {strokeColor: 'blue', dash: 2}); board.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1979,24 +1995,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((4, 1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(N = \\left(\\frac{1+7}{2}, \\frac{2+0}{2}\\right) = (4, 1)\\)",
+        "explanation": "Step 1: Identify the coordinates of the endpoints for interval \\(AC\\).",
+        "workingOut": "$$ A(1, 2), \\; C(7, 0) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( N = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((4, 1)\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ N = \\left(\\frac{1 + 7}{2}, \\frac{2 + 0}{2}\\right) = \\left(\\frac{8}{2}, \\frac{2}{2}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (4, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((4, 1)\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify to find the final coordinates of \\(N\\).",
+        "workingOut": "$$ N(4, 1) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              6,
+              9,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate(); board.create('point', [1, 2], {name:'A(1,2)', size:3, color:'red', label:{offset:[-20,10]}}); board.create('point', [7, 0], {name:'C(7,0)', size:3, color:'red', label:{offset:[10,10]}}); board.create('point', [4, 1], {name:'N(4,1)', size:3, color:'blue', label:{offset:[5,15]}}); board.create('segment', [[1,2], [7,0]], {strokeColor: 'blue', dash: 2}); board.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -2042,23 +2074,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\(2\\sqrt{5}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(BC = \\sqrt{(7-5)^2 + (0-4)^2} = \\sqrt{20} = 2\\sqrt{5}\\)",
+        "explanation": "Step 1: Identify the coordinates of points \\(B\\) and \\(C\\).",
+        "workingOut": "$$ B(5, 4), \\; C(7, 0) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the distance formula.",
+        "workingOut": "\\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(2\\sqrt{5}\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ BC = \\sqrt{(7 - 5)^2 + (0 - 4)^2} = \\sqrt{2^2 + (-4)^2} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2\\sqrt{5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(2\\sqrt{5}\\)",
+        "explanation": "Step 4: Simplify the expression.",
+        "workingOut": "$$ BC = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5} $$",
         "graphData": null
       }
     ],
@@ -2105,23 +2137,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\(\\sqrt{5}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(MN = \\sqrt{(4-3)^2 + (1-3)^2} = \\sqrt{5}\\)",
+        "explanation": "Step 1: Identify the coordinates of midpoints \\(M\\) and \\(N\\) from previous parts.",
+        "workingOut": "$$ M(3, 3), \\; N(4, 1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the distance formula.",
+        "workingOut": "\\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\sqrt{5}\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ MN = \\sqrt{(4 - 3)^2 + (1 - 3)^2} = \\sqrt{1^2 + (-2)^2} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\sqrt{5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(\\sqrt{5}\\)",
+        "explanation": "Step 4: Simplify the expression.",
+        "workingOut": "$$ MN = \\sqrt{1 + 4} = \\sqrt{5} $$",
         "graphData": null
       }
     ],
@@ -2310,23 +2342,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((3, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{1+5}{2}, \\frac{7+1}{2}\\right) = (3, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the endpoints for diagonal \\(PR\\).",
+        "workingOut": "$$ P(1, 7), \\; R(5, 1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3, 4)\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ M = \\left(\\frac{1 + 5}{2}, \\frac{7 + 1}{2}\\right) = \\left(\\frac{6}{2}, \\frac{8}{2}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, 4)\\)",
+        "explanation": "Step 4: Simplify to find the midpoint.",
+        "workingOut": "$$ (3, 4) $$",
         "graphData": null
       }
     ],
@@ -2373,23 +2405,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((3, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{0+6}{2}, \\frac{2+6}{2}\\right) = (3, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the endpoints for diagonal \\(SQ\\).",
+        "workingOut": "$$ S(0, 2), \\; Q(6, 6) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3, 4)\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ M = \\left(\\frac{0 + 6}{2}, \\frac{2 + 6}{2}\\right) = \\left(\\frac{6}{2}, \\frac{8}{2}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, 4)\\)",
+        "explanation": "Step 4: Simplify to find the midpoint.",
+        "workingOut": "$$ (3, 4) $$",
         "graphData": null
       }
     ],
@@ -2425,34 +2457,34 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The parallelogram \\(PQRS\\) has vertices \\(P(1, 7)\\), \\(Q(6, 6)\\), \\(R(5, 1)\\) and \\(S(0, 2)\\). Complete the following tasks.\nWhat well-known property of a parallelogram does this demonstrate?",
     "opts": [
-      "Diagonals bisect each other",
-      "Not enough information",
-      "None of the above",
-      "Cannot be determined"
+      "Diagonals are perpendicular.",
+      "Diagonals are equal in length.",
+      "Diagonals do not intersect.",
+      "Diagonals bisect each other."
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "",
     "solution": "The correct answer is Diagonals bisect each other.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\text{The diagonals of a parallelogram bisect each other.}\\)",
+        "explanation": "Step 1: Compare the midpoints of the two diagonals \\(PR\\) and \\(SQ\\).",
+        "workingOut": "From the previous parts, the midpoint of \\(PR\\) is \\((3, 4)\\) and the midpoint of \\(SQ\\) is \\((3, 4)\\).",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Relate the mathematical result to geometric properties.",
+        "workingOut": "Since both diagonals have the exact same midpoint, they intersect at their mutual halfway point.",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Diagonals bisect each other",
+        "explanation": "Step 3: Define this property.",
+        "workingOut": "When two line segments intersect at their midpoints, we say they bisect each other.",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Diagonals bisect each other. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Diagonals bisect each other",
+        "explanation": "Step 4: Conclude.",
+        "workingOut": "This demonstrates the well-known property that the diagonals of a parallelogram bisect each other.",
         "graphData": null
       }
     ],
@@ -2461,19 +2493,19 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "Diagonals bisect each other",
+        "text": "Diagonals are perpendicular.",
         "imageUrl": ""
       },
       {
-        "text": "Not enough information",
+        "text": "Diagonals are equal in length.",
         "imageUrl": ""
       },
       {
-        "text": "None of the above",
+        "text": "Diagonals do not intersect.",
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
+        "text": "Diagonals bisect each other.",
         "imageUrl": ""
       }
     ]
@@ -2483,76 +2515,126 @@ export const Y9_CH11B_QUESTIONS = [
     "topicId": "y9-11b",
     "c": "11B",
     "t": "The midpoint of an interval",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Use the midpoint formula to find the coordinates of three more points that lie on the line passing through the points \\((0, 0)\\) and \\((4, 6)\\).",
-    "answer": "(2, 3), (1, 1.5), (3, 4.5)",
+    "answer": "2",
     "hint": "Find the midpoint of the endpoints. Then, find the midpoints of the resulting segments.",
     "solution": "(2, 3), (1, 1.5), (3, 4.5)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M_1 = \\left(\\frac{0+4}{2}, frac{0+6}{2}\\right) = (2, 3)\\)",
+        "explanation": "Step 1: Find the first midpoint between the original points \\((0, 0)\\) and \\((4, 6)\\).",
+        "workingOut": "$$ M_1 = \\left(\\frac{0+4}{2}, \\frac{0+6}{2}\\right) = (2, 3) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M_2 = \\left(\\frac{0+2}{2}, frac{0+3}{2}\\right) = (1, 1.5)\\)",
+        "explanation": "Step 2: Find a second point by taking the midpoint of \\((0, 0)\\) and \\((2, 3)\\).",
+        "workingOut": "$$ M_2 = \\left(\\frac{0+2}{2}, \\frac{0+3}{2}\\right) = (1, 1.5) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(M_3 = \\left(\\frac{2+4}{2}, frac{3+6}{2}\\right) = (3, 4.5)\\)",
+        "explanation": "Step 3: Find a third point by taking the midpoint of \\((2, 3)\\) and \\((4, 6)\\).",
+        "workingOut": "$$ M_3 = \\left(\\frac{2+4}{2}, \\frac{3+6}{2}\\right) = (3, 4.5) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (2, 3), (1, 1.5), (3, 4.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((2, 3), (1, 1.5), (3, 4.5)\\)",
+        "explanation": "Step 4: List the three new points that lie on the line.",
+        "workingOut": "$$ (2, 3), (1, 1.5), (3, 4.5) $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\((1, 3), (2, 4), (3, 5)\\)",
+      "None of the above",
+      "\\((2, 3), (1, 1.5), (3, 4.5)\\)",
+      "\\((-1, -1.5), (5, 7.5), (6, 9)\\)"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "\\((1, 3), (2, 4), (3, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2, 3), (1, 1.5), (3, 4.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-1, -1.5), (5, 7.5), (6, 9)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q7",
     "topicId": "y9-11b",
     "c": "11B",
     "t": "The midpoint of an interval",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Find the coordinates of three more points that lie on the line passing through the points \\((-2, -3)\\) and \\((2, 5)\\).",
-    "answer": "(0, 1), (-1, -1), (1, 3)",
+    "answer": "1",
     "hint": "Calculate successive midpoints between endpoints and previous midpoints.",
     "solution": "(0, 1), (-1, -1), (1, 3)",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M_1 = \\left(\\frac{-2+2}{2}, frac{-3+5}{2}\\right) = (0, 1)\\)",
+        "explanation": "Step 1: Find the first midpoint between the original points \\((-2, -3)\\) and \\((2, 5)\\).",
+        "workingOut": "$$ M_1 = \\left(\\frac{-2+2}{2}, \\frac{-3+5}{2}\\right) = (0, 1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M_2 = \\left(\\frac{-2+0}{2}, frac{-3+1}{2}\\right) = (-1, -1)\\)",
+        "explanation": "Step 2: Find a second point by taking the midpoint of \\((-2, -3)\\) and \\((0, 1)\\).",
+        "workingOut": "$$ M_2 = \\left(\\frac{-2+0}{2}, \\frac{-3+1}{2}\\right) = (-1, -1) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(M_3 = \\left(\\frac{0+2}{2}, frac{1+5}{2}\\right) = (1, 3)\\)",
+        "explanation": "Step 3: Find a third point by taking the midpoint of \\((0, 1)\\) and \\((2, 5)\\).",
+        "workingOut": "$$ M_3 = \\left(\\frac{0+2}{2}, \\frac{1+5}{2}\\right) = (1, 3) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (0, 1), (-1, -1), (1, 3). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((0, 1), (-1, -1), (1, 3)\\)",
+        "explanation": "Step 4: List the three new points that lie on the line.",
+        "workingOut": "$$ (0, 1), (-1, -1), (1, 3) $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\((0, 1), (1, 1.5), (-1, 0.5)\\)",
+      "\\((0, 1), (-1, -1), (1, 3)\\)",
+      "None of the above",
+      "\\((0, 1), (-1, 0), (1, 2)\\)"
+    ],
+    "a": 1,
+    "options": [
+      {
+        "text": "\\((0, 1), (1, 1.5), (-1, 0.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0, 1), (-1, -1), (1, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0, 1), (-1, 0), (1, 2)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q8a",
@@ -2575,23 +2657,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\((0.5, 2.5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-3+4}{2}, \\frac{2+3}{2}\\right) = (0.5, 2.5)\\)",
+        "explanation": "Step 1: Identify coordinates for \\(A\\) and \\(C\\).",
+        "workingOut": "$$ A(-3, 2), \\; C(4, 3) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((0.5, 2.5)\\)",
+        "explanation": "Step 3: Substitute and compute.",
+        "workingOut": "$$ M = \\left(\\frac{-3 + 4}{2}, \\frac{2 + 3}{2}\\right) = \\left(\\frac{1}{2}, \\frac{5}{2}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (0.5, 2.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((0.5, 2.5)\\)",
+        "explanation": "Step 4: Final coordinates.",
+        "workingOut": "$$ (0.5, 2.5) $$",
         "graphData": null
       }
     ],
@@ -2638,23 +2720,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\(5\\sqrt{2}/2\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(BM = \\sqrt{(0.5 - (-2))^2 + (2.5 - 5)^2} = \\sqrt{12.5} = \\frac{5\\sqrt{2}}{2}\\)",
+        "explanation": "Step 1: Identify coordinates for \\(B\\) and \\(M\\).",
+        "workingOut": "$$ B(-2, 5), \\; M(0.5, 2.5) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the distance formula.",
+        "workingOut": "\\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(5\\sqrt{2}/2\\)",
+        "explanation": "Step 3: Substitute the coordinates.",
+        "workingOut": "$$ BM = \\sqrt{(0.5 - (-2))^2 + (2.5 - 5)^2} = \\sqrt{2.5^2 + (-2.5)^2} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5\\sqrt{2}/2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(5\\sqrt{2}/2\\)",
+        "explanation": "Step 4: Simplify.",
+        "workingOut": "$$ BM = \\sqrt{6.25 + 6.25} = \\sqrt{12.5} = \\frac{5\\sqrt{2}}{2} $$",
         "graphData": null
       }
     ],
@@ -2685,38 +2767,63 @@ export const Y9_CH11B_QUESTIONS = [
     "topicId": "y9-11b",
     "c": "11B",
     "t": "The midpoint of an interval",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(-3, 2)\\), \\(B(-2, 5)\\) and \\(C(4, 3)\\). Complete the following tasks.\nShow that \\(M\\) is equidistant from \\(A\\), \\(B\\) and \\(C\\).",
-    "answer": "AM = BM = CM = \\sqrt{12.5}",
+    "answer": "2",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "AM = BM = CM = \\sqrt{12.5}",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(AM = CM = \\sqrt{3.5^2 + 0.5^2} = \\sqrt{12.5}, \\quad BM = \\sqrt{12.5}\\)",
+        "explanation": "Step 1: Recall the coordinates.",
+        "workingOut": "$$ A(-3, 2), \\; B(-2, 5), \\; C(4, 3), \\; M(0.5, 2.5) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(AM = BM = CM = \\sqrt{12.5}\\)",
+        "explanation": "Step 2: Calculate \\(AM\\).",
+        "workingOut": "$$ AM = \\sqrt{(0.5 - (-3))^2 + (2.5 - 2)^2} = \\sqrt{3.5^2 + 0.5^2} = \\sqrt{12.25 + 0.25} = \\sqrt{12.5} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(AM = BM = CM = \\sqrt{12.5}\\)",
+        "explanation": "Step 3: Calculate \\(CM\\).",
+        "workingOut": "$$ CM = \\sqrt{(0.5 - 4)^2 + (2.5 - 3)^2} = \\sqrt{(-3.5)^2 + (-0.5)^2} = \\sqrt{12.25 + 0.25} = \\sqrt{12.5} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: AM = BM = CM = \\sqrt{12.5}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(AM = BM = CM = \\sqrt{12.5}\\)",
+        "explanation": "Step 4: Compare lengths.",
+        "workingOut": "From earlier, \\(BM = \\sqrt{12.5}\\). Thus, \\(AM = BM = CM = \\sqrt{12.5}\\).",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "None of the above",
+      "\\(AM = BM = CM = 5\\)",
+      "\\(AM = BM = CM = \\sqrt{12.5}\\)",
+      "\\(AM = BM = CM = 12.5\\)"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(AM = BM = CM = 5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(AM = BM = CM = \\sqrt{12.5}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(AM = BM = CM = 12.5\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q9a",
@@ -2728,10 +2835,10 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). Complete the following tasks.\nFind the coordinates of the midpoints \\(M\\) and \\(N\\) of sides \\(AB\\) and \\(BC\\) respectively. Format: M(x, y), N(x, y)",
     "opts": [
-      "Not enough information",
+      "None of the above",
       "\\(M(2, 5), N(5, 5)\\)",
-      "Cannot be determined",
-      "None of the above"
+      "\\(M(5, 2), N(5, 5)\\)",
+      "\\(M(2, 5), N(3, 5)\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2739,23 +2846,23 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\(M(2, 5), N(5, 5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = (2, 5), \\quad N = (5, 5)\\)",
+        "explanation": "Step 1: Identify coordinates.",
+        "workingOut": "$$ A(1, 2), \\; B(3, 8), \\; C(7, 2) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Find \\(M\\), midpoint of \\(AB\\).",
+        "workingOut": "$$ M = \\left(\\frac{1+3}{2}, \\frac{2+8}{2}\\right) = \\left(\\frac{4}{2}, \\frac{10}{2}\\right) = (2, 5) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(M(2, 5), N(5, 5)\\)",
+        "explanation": "Step 3: Find \\(N\\), midpoint of \\(BC\\).",
+        "workingOut": "$$ N = \\left(\\frac{3+7}{2}, \\frac{8+2}{2}\\right) = \\left(\\frac{10}{2}, \\frac{10}{2}\\right) = (5, 5) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: M(2, 5), N(5, 5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(M(2, 5), N(5, 5)\\)",
+        "explanation": "Step 4: State final answer.",
+        "workingOut": "$$ M(2, 5), \\; N(5, 5) $$",
         "graphData": null
       }
     ],
@@ -2764,7 +2871,7 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "Not enough information",
+        "text": "None of the above",
         "imageUrl": ""
       },
       {
@@ -2772,11 +2879,11 @@ export const Y9_CH11B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
+        "text": "\\(M(5, 2), N(5, 5)\\)",
         "imageUrl": ""
       },
       {
-        "text": "None of the above",
+        "text": "\\(M(2, 5), N(3, 5)\\)",
         "imageUrl": ""
       }
     ]
@@ -2786,38 +2893,63 @@ export const Y9_CH11B_QUESTIONS = [
     "topicId": "y9-11b",
     "c": "11B",
     "t": "The midpoint of an interval",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). Complete the following tasks.\nShow that \\(BC = 2MP\\) and \\(AB = 2PN\\).",
-    "answer": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
+    "answer": "2",
     "hint": "Write a full structured solution for the teacher to mark.",
     "solution": "BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(BC = \\sqrt{52} = 2\\sqrt{13}, \\quad MP = \\sqrt{13} \\implies BC = 2MP\\)",
+        "explanation": "Step 1: Find \\(P\\), midpoint of \\(AC\\).",
+        "workingOut": "$$ P = \\left(\\frac{1+7}{2}, \\frac{2+2}{2}\\right) = (4, 2) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(AB = \\sqrt{40} = 2\\sqrt{10}, \\quad PN = \\sqrt{10} \\implies AB = 2PN\\)",
+        "explanation": "Step 2: Calculate lengths \\(BC\\) and \\(MP\\).",
+        "workingOut": "$$ \\begin{aligned} BC &= \\sqrt{(7-3)^2 + (2-8)^2} = \\sqrt{16 + 36} = \\sqrt{52} = 2\\sqrt{13} \\\\\\\\ MP &= \\sqrt{(4-2)^2 + (2-5)^2} = \\sqrt{4 + 9} = \\sqrt{13} \\end{aligned} $$ \nThus \\(BC = 2MP\\).",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}\\)",
+        "explanation": "Step 3: Calculate lengths \\(AB\\) and \\(PN\\).",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{(3-1)^2 + (8-2)^2} = \\sqrt{4 + 36} = \\sqrt{40} = 2\\sqrt{10} \\\\\\\\ PN &= \\sqrt{(5-4)^2 + (5-2)^2} = \\sqrt{1 + 9} = \\sqrt{10} \\end{aligned} $$ \nThus \\(AB = 2PN\\).",
         "graphData": null
       },
       {
-        "explanation": "Final answer: BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(BC = 2\\sqrt{13}, MP = \\sqrt{13}; AB = 2\\sqrt{10}, PN = \\sqrt{10}\\)",
+        "explanation": "Step 4: Conclude.",
+        "workingOut": "We have shown that \\(BC = 2MP\\) and \\(AB = 2PN\\), satisfying the Midpoint Theorem.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "Cannot be determined",
+      "None of the above",
+      "\\(BC = 2\\sqrt{13}, MP = \\sqrt{13}; \\; AB = 2\\sqrt{10}, PN = \\sqrt{10}\\)",
+      "Not enough information"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(BC = 2\\sqrt{13}, MP = \\sqrt{13}; \\; AB = 2\\sqrt{10}, PN = \\sqrt{10}\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q10",
