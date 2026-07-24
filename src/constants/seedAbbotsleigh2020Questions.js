@@ -875,35 +875,35 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the coordinates of the stationary points on the curve $y = h(x) = (x-2)(x^2+1)$ and determine their nature.",
     "opts": [
-      "\\(Local max at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local min at \\((1,\\ -2)\\)\\)",
-      "\\(Local min at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local max at \\((1,\\ -2)\\)\\)",
-      "\\(Local max at \\(\\left(\\dfrac{1}{3},\\ \\dfrac{50}{27}\\right)\\) and local min at \\((1, 2)\\)\\)",
-      "\\(Stationary points at \\(x = \\dfrac{1}{3}\\) and \\(x = 1\\), both are inflection points\\)"
+      "Local max at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local min at \\((1, -2)\\)",
+      "Local min at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local max at \\((1, -2)\\)",
+      "Local max at \\(\\left(\\frac{1}{3}, \\frac{50}{27}\\right)\\) and local min at \\((1, 2)\\)",
+      "Stationary points at \\(x = \\frac{1}{3}\\) and \\(x = 1\\), both are inflection points"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Expand $h(x)$, find $h'(x)$, set equal to zero, then use the second derivative to determine nature.",
-    "solution": "The correct answer is \\(Local max at \\(\\left(\\dfrac{1}{3},\\ -\\dfrac{50}{27}\\right)\\) and local min at \\((1,\\ -2)\\)\\).",
+    "solution": "The correct answer is Local max at \\(\\left(\\frac{1}{3}, -\\frac{50}{27}\\right)\\) and local min at \\((1, -2)\\).",
     "solutionSteps": [
       {
-        "explanation": "Expand \\(h(x) = (x-2)(x^2+1)\\) by distributing: \\(x(x^2+1) - 2(x^2+1) = x^3 + x - 2x^2 - 2\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(h(x) = x^3 - 2x^2 + x - 2\\)",
-        "graphData": null
+        "explanation": "To find the stationary points, we first need to find the derivative \\(h'(x)\\). Expanding the original function makes it much easier to differentiate.",
+        "workingOut": "$$ \\begin{aligned} h(x) &= (x - 2)(x^2 + 1) \\\\\\\\ &= x^3 - 2x^2 + x - 2 \\\\\\\\ h'(x) &= 3x^2 - 4x + 1 \\end{aligned} $$"
       },
       {
-        "explanation": "Set \\(h'(x) = 0\\) and factorise. Find two numbers that multiply to \\(3 \\times 1 = 3\\) and add to \\(-4\\): these are \\(-3\\) and \\(-1\\).",
-        "workingOut": "\\(3x^2 - 4x + 1 = (3x-1)(x-1) = 0 \\Rightarrow x = \\frac{1}{3} \\text{ or } x = 1\\)",
-        "graphData": null
+        "explanation": "Next, we set \\(h'(x) = 0\\) to find the \\(x\\)-coordinates of the stationary points. We can factorise the quadratic equation to solve for \\(x\\).",
+        "workingOut": "$$ \\begin{aligned} 3x^2 - 4x + 1 &= 0 \\\\\\\\ (3x - 1)(x - 1) &= 0 \\\\\\\\ x &= \\frac{1}{3} \\text{ or } x = 1 \\end{aligned} $$"
       },
       {
-        "explanation": "At \\(x = \\frac{1}{3}\\): \\(h''(\\frac{1}{3}) = 6(\\frac{1}{3}) - 4 = 2 - 4 = -2 < 0\\) → local maximum. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(h''\\!\\left(\\tfrac{1}{3}\\right) = -2 < 0 \\Rightarrow \\text{local maximum}\\)",
-        "graphData": null
+        "explanation": "Now we determine the nature of each stationary point using the second derivative test. First, find \\(h''(x)\\).",
+        "workingOut": "h''(x) = 6x - 4"
       },
       {
-        "explanation": "Calculate the \\(y\\)-coordinates: \\(h\\!(\\frac{1}{3}) = (\\frac{1}{3}-2)((\\frac{1}{3})^2+1) = (-\\frac{5}{3})(\\frac{10}{9}) = -\\frac{50}{27}\\). And \\(h(1) = (1-2)(1+1) = (-1)(2) = -2\\).",
-        "workingOut": "\\(h\\!\\left(\\tfrac{1}{3}\\right) = -\\tfrac{50}{27} \\qquad h(1) = -2\\)",
-        "graphData": null
+        "explanation": "Test \\(x = \\frac{1}{3}\\): The second derivative is negative, indicating a local maximum. Substitute \\(x = \\frac{1}{3}\\) back into the original function \\(h(x)\\) to find the \\(y\\)-coordinate.",
+        "workingOut": "$$ \\begin{aligned} h''\\left(\\frac{1}{3}\\right) &= 6\\left(\\frac{1}{3}\\right) - 4 = -2 < 0 \\implies \\text{Local Maximum} \\\\\\\\ h\\left(\\frac{1}{3}\\right) &= \\left(\\frac{1}{3} - 2\\right)\\left(\\left(\\frac{1}{3}\\right)^2 + 1\\right) = \\left(-\\frac{5}{3}\\right)\\left(\\frac{10}{9}\\right) = -\\frac{50}{27} \\end{aligned} $$"
+      },
+      {
+        "explanation": "Test \\(x = 1\\): The second derivative is positive, indicating a local minimum. Substitute \\(x = 1\\) into \\(h(x)\\) to find its \\(y\\)-coordinate.",
+        "workingOut": "$$ \\begin{aligned} h''(1) &= 6(1) - 4 = 2 > 0 \\implies \\text{Local Minimum} \\\\\\\\ h(1) &= (1 - 2)(1^2 + 1) = (-1)(2) = -2 \\end{aligned} $$"
       }
     ],
     "graphData": null,
