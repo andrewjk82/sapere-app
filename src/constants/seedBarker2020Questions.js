@@ -2771,35 +2771,35 @@ export const BARKER_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Let $f(x) = 3x^4 - 8x^3 + 6$. Find the coordinates of the stationary points of $y = f(x)$ and determine their nature.",
     "opts": [
-      "Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Horizontal point of inflection at \\((0, 6)\\); local minimum at \\((2, -10)\\)",
+      "Local maximum at \\((0, 6)\\); local minimum at \\((2, -10)\\)",
+      "Local minimum at \\((0, 6)\\); local maximum at \\((2, -10)\\)",
+      "Horizontal point of inflection at \\((0, 6)\\); local maximum at \\((2, -10)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Find $f'(x)$, set equal to zero, then use $f''(x)$ to determine the nature.",
-    "solution": "The correct answer is Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\).",
+    "solution": "The correct answer is Horizontal point of inflection at \\((0, 6)\\); local minimum at \\((2, -10)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x) = 12x^3 - 24x^2 = 12x^2(x-2)\\)",
-        "graphData": null
+        "explanation": "Step 1: To find the stationary points, find the first derivative \\(f'(x)\\) and set it to zero.",
+        "workingOut": "$$ \\begin{aligned} f(x) &= 3x^4 - 8x^3 + 6 \\\\\\\\ f'(x) &= 12x^3 - 24x^2 \\\\\\\\ 12x^2(x - 2) &= 0 \\implies x = 0 \\text{ or } x = 2 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(12x^2(x-2)=0 \\Rightarrow x=0 \\text{ or } x=2\\)",
-        "graphData": null
+        "explanation": "Step 2: Substitute these \\(x\\)-values back into \\(f(x)\\) to find the corresponding \\(y\\)-coordinates.",
+        "workingOut": "$$ \\begin{aligned} f(0) &= 3(0)^4 - 8(0)^3 + 6 = 6 \\implies (0, 6) \\\\\\\\ f(2) &= 3(2)^4 - 8(2)^3 + 6 = 3(16) - 8(8) + 6 = 48 - 64 + 6 = -10 \\implies (2, -10) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f''(x) = 36x^2-48x;\\quad f''(0)=0, quad f''(2)=48>0\\)",
-        "graphData": null
+        "explanation": "Step 3: Find the second derivative \\(f''(x)\\) to test the nature of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(12x^3 - 24x^2) = 36x^2 - 48x \\\\\\\\ x = 2: \\quad f''(2) &= 36(2)^2 - 48(2) = 144 - 96 = 48 > 0 \\implies \\text{Local Minimum at } (2, -10) \\end{aligned} $$"
       },
       {
-        "explanation": "Final answer: Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Horizontal point of inflection at \\((0, 6)\\); minimum at \\((2, -10)\\)",
-        "graphData": null
+        "explanation": "Step 4: At \\(x = 0\\), the second derivative is \\(f''(0) = 0\\), so the test is inconclusive. We must use the first derivative test to check the gradient around \\(x = 0\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Test } x = -1: \\quad f'(-1) &= 12(-1)^3 - 24(-1)^2 = -12 - 24 = -36 < 0 \\\\\\\\ \\text{Test } x = 1: \\quad f'(1) &= 12(1)^3 - 24(1)^2 = 12 - 24 = -12 < 0 \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 5: Since the gradient is negative on both sides of \\(x = 0\\), it does not change sign. Therefore, \\((0, 6)\\) is a horizontal point of inflection.",
+        "workingOut": "$$ \\therefore \\text{Horizontal point of inflection at } (0, 6) \\text{ and local minimum at } (2, -10) $$"
       }
     ],
     "graphData": null,
