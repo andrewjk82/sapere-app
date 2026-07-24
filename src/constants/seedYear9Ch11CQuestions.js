@@ -1747,10 +1747,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "A line passes through the point \\((1, 4)\\) and has gradient 4. Find the \\(y\\)-coordinate of the point on the line when \\(x = -2\\).",
     "opts": [
-      "\\(-7\\)",
-      "\\(-8\\)",
-      "\\(-9\\)",
-      "\\(8\\)"
+      "\\\\(-7\\\\)",
+      "\\\\(-8\\\\)",
+      "\\\\(-9\\\\)",
+      "\\\\(-10\\\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -1758,29 +1758,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "1. The line's equation is \\(y = 4x\\).\n2. Substitute \\(x = -2\\):\n   \\(y = 4(-2) = -8\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(y = 4x\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ m = \\frac{y - y_1}{x - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 4(-2) = -8\\)",
+        "explanation": "Step 2: Substitute the known point and gradient.",
+        "workingOut": "Substitute $(x_1, y_1) = (1, 4)$ and $m = 4$:\\n$$ \\frac{y - 4}{x - 1} = 4 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-8\\)",
+        "explanation": "Step 3: Substitute the given $x$-coordinate.",
+        "workingOut": "Substitute $x = -2$:\\n$$ \\frac{y - 4}{-2 - 1} = 4 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -8. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-8\\)",
+        "explanation": "Step 4: Solve for $y$.",
+        "workingOut": "$$ \\begin{aligned} \\frac{y - 4}{-3} &= 4 \\\\ y - 4 &= -12 \\\\ y &= -8 \\end{aligned} $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-8\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-9\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-10\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q6a",
@@ -2039,7 +2057,7 @@ export const Y9_CH11C_QUESTIONS = [
     "topicId": "y9-11c",
     "c": "11C",
     "t": "The gradient of a line",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\na) Find the missing Gradient for row a.",
@@ -2048,29 +2066,54 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "2",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{4 - 0}{0 - (-2)} = 2\\)",
+        "explanation": "Step 1: Identify the coordinates of the intercepts.",
+        "workingOut": "The $x$-intercept is $(-2, 0)$ and the $y$-intercept is $(0, 4)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Step 3: Substitute the coordinates.",
+        "workingOut": "$$ m = \\frac{4 - 0}{0 - (-2)} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(2\\)",
+        "explanation": "Step 4: Simplify to find the gradient.",
+        "workingOut": "$$ m = \\frac{4}{2} = 2 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\\\(-2\\\\)",
+      "\\\\(-\\\\frac{1}{2}\\\\)",
+      "\\\\(2\\\\)",
+      "\\\\(\\\\frac{1}{2}\\\\)"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "\\\\(-2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7b",
@@ -2082,10 +2125,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\nb) Find the missing y-intercept for row b.",
     "opts": [
-      "\\(-12\\)",
-      "\\(11\\)",
-      "\\(12\\)",
-      "\\(13\\)"
+      "\\\\(-12\\\\)",
+      "\\\\(8\\\\)",
+      "\\\\(12\\\\)",
+      "\\\\(16\\\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -2093,29 +2136,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(12\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(y = 4(x + 3) \\implies y = 4x + 12\\)",
+        "explanation": "Step 1: Identify the given information.",
+        "workingOut": "The $x$-intercept is $-3$ (so the point is $(-3, 0)$), and the gradient is $m = 4$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(12\\)",
+        "explanation": "Step 3: Substitute the known point and gradient.",
+        "workingOut": "$$ y - 0 = 4(x - (-3)) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 12. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(12\\)",
+        "explanation": "Step 4: Expand to find the $y$-intercept (the constant term).",
+        "workingOut": "$$ y = 4(x + 3) \\implies y = 4x + 12 $$\\nSo, the $y$-intercept is $12$.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(8\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(12\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(16\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7c",
@@ -2127,10 +2188,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\nc) Find the missing x-intercept for row c.",
     "opts": [
-      "\\(-10\\)",
-      "\\(-11\\)",
-      "\\(-9\\)",
-      "\\(10\\)"
+      "\\\\(-10\\\\)",
+      "\\\\(-5\\\\)",
+      "\\\\(5\\\\)",
+      "\\\\(10\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2138,29 +2199,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(-10\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(0 = \\frac{1}{2}x + 5 \\implies x = -10\\)",
+        "explanation": "Step 1: Identify the given information.",
+        "workingOut": "The $y$-intercept is $5$ (so $c = 5$), and the gradient is $m = \\frac{1}{2}$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Write the equation of the line in $y = mx + c$ form.",
+        "workingOut": "$$ y = \\frac{1}{2}x + 5 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-10\\)",
+        "explanation": "Step 3: Set $y = 0$ to find the $x$-intercept.",
+        "workingOut": "$$ 0 = \\frac{1}{2}x + 5 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -10. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-10\\)",
+        "explanation": "Step 4: Solve for $x$.",
+        "workingOut": "$$ -5 = \\frac{1}{2}x \\implies x = -10 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7d",
@@ -2172,40 +2251,58 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\nd) Find the missing x-intercept for row d.",
     "opts": [
-      "\\(-4\\)",
-      "\\(3\\)",
-      "\\(4\\)",
-      "\\(5\\)"
+      "\\\\(-4\\\\)",
+      "\\\\(-3\\\\)",
+      "\\\\(3\\\\)",
+      "\\\\(4\\\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "",
     "solution": "The correct answer is \\(4\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(0 = \\frac{3}{4}x - 3 \\implies x = 4\\)",
+        "explanation": "Step 1: Identify the given information.",
+        "workingOut": "The $y$-intercept is $-3$ (so $c = -3$), and the gradient is $m = \\frac{3}{4}$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Write the equation of the line in $y = mx + c$ form.",
+        "workingOut": "$$ y = \\frac{3}{4}x - 3 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(4\\)",
+        "explanation": "Step 3: Set $y = 0$ to find the $x$-intercept.",
+        "workingOut": "$$ 0 = \\frac{3}{4}x - 3 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(4\\)",
+        "explanation": "Step 4: Solve for $x$.",
+        "workingOut": "$$ 3 = \\frac{3}{4}x \\implies x = 4 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(3\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7e",
@@ -2217,10 +2314,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\ne) Find the missing y-intercept for row e.",
     "opts": [
-      "\\(-5\\)",
-      "\\(-6\\)",
-      "\\(-7\\)",
-      "\\(6\\)"
+      "\\\\(-7\\\\)",
+      "\\\\(-6\\\\)",
+      "\\\\(6\\\\)",
+      "\\\\(7\\\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -2228,29 +2325,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(-6\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(y = -1(x + 6) \\implies y = -x - 6\\)",
+        "explanation": "Step 1: Identify the given information.",
+        "workingOut": "The $x$-intercept is $-6$ (so the point is $(-6, 0)$), and the gradient is $m = -1$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-6\\)",
+        "explanation": "Step 3: Substitute the known point and gradient.",
+        "workingOut": "$$ y - 0 = -1(x - (-6)) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -6. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-6\\)",
+        "explanation": "Step 4: Expand to find the $y$-intercept.",
+        "workingOut": "$$ y = -1(x + 6) \\implies y = -x - 6 $$\\nSo, the $y$-intercept is $-6$.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-7\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(6\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(7\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7f",
@@ -2262,10 +2377,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\nf) Find the missing x-intercept for row f.",
     "opts": [
-      "\\(-5\\)",
-      "\\(4\\)",
-      "\\(5\\)",
-      "\\(6\\)"
+      "\\\\(-10\\\\)",
+      "\\\\(-5\\\\)",
+      "\\\\(5\\\\)",
+      "\\\\(10\\\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -2273,29 +2388,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(5\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(0 = -2x + 10 \\implies x = 5\\)",
+        "explanation": "Step 1: Identify the given information.",
+        "workingOut": "The $y$-intercept is $10$ (so $c = 10$), and the gradient is $m = -2$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Write the equation of the line in $y = mx + c$ form.",
+        "workingOut": "$$ y = -2x + 10 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(5\\)",
+        "explanation": "Step 3: Set $y = 0$ to find the $x$-intercept.",
+        "workingOut": "$$ 0 = -2x + 10 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 5. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(5\\)",
+        "explanation": "Step 4: Solve for $x$.",
+        "workingOut": "$$ 2x = 10 \\implies x = 5 $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-10\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(5\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(10\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q7g",
@@ -2307,10 +2440,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "Complete the table relating x-intercepts, y-intercepts, and gradients of straight lines.\ng) Find the missing Gradient for row g.",
     "opts": [
-      "\\(-1/4\\)",
-      "\\(-1.25\\)",
-      "\\(0.25\\)",
-      "\\(0.75\\)"
+      "\\\\(-\\\\frac{1}{4}\\\\)",
+      "\\\\(\\\\frac{1}{4}\\\\)",
+      "\\\\(-4\\\\)",
+      "\\\\(4\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2318,29 +2451,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "The correct answer is \\(-1/4\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(m = \\frac{2 - 0}{0 - 8} = -\\frac{1}{4}\\)",
+        "explanation": "Step 1: Identify the coordinates of the intercepts.",
+        "workingOut": "The $x$-intercept is $(8, 0)$ and the $y$-intercept is $(0, 2)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(-1/4\\)",
+        "explanation": "Step 3: Substitute the coordinates.",
+        "workingOut": "$$ m = \\frac{2 - 0}{0 - 8} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -1/4. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-1/4\\)",
+        "explanation": "Step 4: Simplify to find the gradient.",
+        "workingOut": "$$ m = \\frac{2}{-8} = -\\frac{1}{4} $$",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{4}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-4\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(4\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q8a",
@@ -2352,40 +2503,58 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "A line passes through the point \\(A(3, 8)\\) and has gradient 2. Find where the line crosses the \\(x\\)-axis and the \\(y\\)-axis.\na) Find the coordinates of the point where the line crosses the \\(x\\)-axis.",
     "opts": [
-      "\\((-1, 0)\\)",
-      "\\((-1, 0) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\\\((1, 0)\\\\)",
+      "\\\\((-1, 0)\\\\)",
+      "\\\\((0, -1)\\\\)",
+      "\\\\((0, 1)\\\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((-1, 0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(0 = 2x + 2 \\implies x = -1 \\implies (-1, 0)\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Find the equation of the line.",
+        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((-1, 0)\\)",
+        "explanation": "Step 3: Set $y = 0$ to find the $x$-intercept.",
+        "workingOut": "$$ 0 = 2x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-1, 0). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-1, 0)\\)",
+        "explanation": "Step 4: Solve for $x$ and state the coordinate.",
+        "workingOut": "$$ -2 = 2x \\implies x = -1 $$\\nSo, the $x$-intercept is $(-1, 0)$.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\((1, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-1, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((0, -1)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((0, 1)\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q8b",
@@ -2397,40 +2566,58 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "A line passes through the point \\(A(3, 8)\\) and has gradient 2. Find where the line crosses the \\(x\\)-axis and the \\(y\\)-axis.\nb) Find the coordinates of the point where the line crosses the \\(y\\)-axis.",
     "opts": [
-      "\\((0, 2)\\)",
-      "\\((0, 2) + 1\\)",
-      "\\((0, 3)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\\\((0, -2)\\\\)",
+      "\\\\((-2, 0)\\\\)",
+      "\\\\((0, 2)\\\\)",
+      "\\\\((2, 0)\\\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\((0, 2)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(y = 2(0) + 2 = 2 \\implies (0, 2)\\)",
+        "explanation": "Step 1: Write down the point-gradient formula.",
+        "workingOut": "$$ y - y_1 = m(x - x_1) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Find the equation of the line.",
+        "workingOut": "Substitute $(3, 8)$ and $m = 2$:\\n$$ y - 8 = 2(x - 3) \\implies y - 8 = 2x - 6 \\implies y = 2x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((0, 2)\\)",
+        "explanation": "Step 3: Identify the $y$-intercept from the equation $y = mx + c$.",
+        "workingOut": "The constant term $c$ is $2$.",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (0, 2). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((0, 2)\\)",
+        "explanation": "Step 4: State the coordinate of the $y$-intercept.",
+        "workingOut": "The $y$-intercept is $(0, 2)$.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\((0, -2)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-2, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((0, 2)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((2, 0)\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q9",
@@ -2442,10 +2629,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 90,
     "question": "A line passes through the point \\((3, 11)\\) and crosses the \\(y\\)-axis at the point \\((0, 5)\\). At what point does it cross the \\(x\\)-axis?",
     "opts": [
-      "\\((-2.5, 0)\\)",
-      "\\((-2.5, 0) + 1\\)",
-      "\\((-3.5, 0)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\\\((-2.5, 0)\\\\)",
+      "\\\\((2.5, 0)\\\\)",
+      "\\\\((-5, 0)\\\\)",
+      "\\\\((5, 0)\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2453,29 +2640,47 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "1. The \\(y\\)-intercept is \\((0, 5)\\), so \\(c = 5\\) in \\(y = mx + c\\).\n2. Substitute the point \\((3, 11)\\) to find the gradient \\(m\\):\n   \\(11 = m(3) + 5 \\implies 3m = 6 \\implies m = 2\\).\n   So, the line's equation is \\(y = 2x + 5\\).\n3. Find the \\(x\\)-intercept by setting \\(y = 0\\):\n   \\(0 = 2x + 5 \\implies 2x = -5 \\implies x = -2.5\\).\nTherefore, the line crosses the \\(x\\)-axis at the point \\((-2.5, 0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(c = 5\\)",
+        "explanation": "Step 1: Identify the $y$-intercept.",
+        "workingOut": "The line crosses the $y$-axis at $(0, 5)$, so $c = 5$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(11 = 3m + 5 \\implies 3m = 6 \\implies m = 2\\)",
+        "explanation": "Step 2: Find the gradient of the line.",
+        "workingOut": "Using points $(3, 11)$ and $(0, 5)$:\\n$$ m = \\frac{11 - 5}{3 - 0} = \\frac{6}{3} = 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y = 2x + 5\\)",
+        "explanation": "Step 3: Write the equation of the line and set $y = 0$ for the $x$-intercept.",
+        "workingOut": "$$ y = 2x + 5 $$\\n$$ 0 = 2x + 5 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-2.5, 0). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-2.5, 0)\\)",
+        "explanation": "Step 4: Solve for $x$ and state the coordinate.",
+        "workingOut": "$$ -5 = 2x \\implies x = -2.5 $$\\nThe $x$-intercept is $(-2.5, 0)$.",
         "graphData": null
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\((-2.5, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((2.5, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((-5, 0)\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\((5, 0)\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q10",
