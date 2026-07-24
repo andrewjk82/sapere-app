@@ -15,6 +15,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (1, 4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 1)\\) passing through \\((1, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 1)\\) passing through \\((1, 4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -33,41 +48,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 1], [1, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 4], {size: 3, color: 'red', name: '(1, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (1, 4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 1)\\) passing through \\((1, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 1)\\) passing through \\((1, 4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.5,
-          6.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 1], [1, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 4], {size: 3, color: 'red', name: '(1, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -87,6 +70,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (1, 5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 3)\\) passing through \\((1, 5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 3)\\) passing through \\((1, 5)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -105,41 +103,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 3], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (1, 5)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 3)\\) passing through \\((1, 5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 3)\\) passing through \\((1, 5)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5,
-          6.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.5, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 3], [1, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 5], {size: 3, color: 'red', name: '(1, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -159,6 +125,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (1, -1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, -3)\\) passing through \\((1, -1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, -3)\\) passing through \\((1, -1)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -177,41 +158,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [1, -1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -1], {size: 3, color: 'red', name: '(1, -1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (1, -1)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, -3)\\) passing through \\((1, -1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, -3)\\) passing through \\((1, -1)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.5,
-          6.5,
-          5,
-          -6.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4.5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.2, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, -3], [1, -1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -1], {size: 3, color: 'red', name: '(1, -1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -231,6 +180,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (1, 7)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 4)\\) passing through \\((1, 7)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 4)\\) passing through \\((1, 7)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -249,41 +213,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.333333333333333, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 7\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (1, 7)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 4)\\) passing through \\((1, 7)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 4)\\) passing through \\((1, 7)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.833333333333333,
-          7.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.333333333333333, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 7]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 7], {size: 3, color: 'red', name: '(1, 7)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -303,6 +235,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 5) \\text{ and } (1, 2)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 5)\\) passing through \\((1, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 5)\\) passing through \\((1, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -321,41 +268,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4.666666666666667, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 8]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.366666666666667, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 2], {size: 3, color: 'red', name: '(1, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 5) \\text{ and } (1, 2)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 5)\\) passing through \\((1, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 5)\\) passing through \\((1, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.5,
-          8.5,
-          5.166666666666667,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4.666666666666667, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 8]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.366666666666667, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 5], [1, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 2], {size: 3, color: 'red', name: '(1, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -375,6 +290,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (1, 3)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 4)\\) passing through \\((1, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 4)\\) passing through \\((1, 3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -393,41 +323,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 3], {size: 3, color: 'red', name: '(1, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (1, 3)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 4)\\) passing through \\((1, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 4)\\) passing through \\((1, 3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.5,
-          7.5,
-          7.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 4], [1, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 3], {size: 3, color: 'red', name: '(1, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -447,6 +345,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 2.3333333333333335\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (1, 2.3333333333333335)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 2)\\) passing through \\((1, 2.3333333333333335)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 2)\\) passing through \\((1, 2.3333333333333335)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -465,41 +378,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 2.3333333333333335]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 2.3333333333333335], {size: 3, color: 'red', name: '(1, 2.3333333333333335)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 2.3333333333333335\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (1, 2.3333333333333335)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 2)\\) passing through \\((1, 2.3333333333333335)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 2)\\) passing through \\((1, 2.3333333333333335)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -9.5,
-          6.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, 2.3333333333333335]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 2.3333333333333335], {size: 3, color: 'red', name: '(1, 2.3333333333333335)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -519,6 +400,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = 1.75\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (1, 1.75)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 1)\\) passing through \\((1, 1.75)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 1)\\) passing through \\((1, 1.75)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -537,41 +433,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.333333333333333, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 1], [1, 1.75]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 1.75], {size: 3, color: 'red', name: '(1, 1.75)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = 1.75\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (1, 1.75)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 1)\\) passing through \\((1, 1.75)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 1)\\) passing through \\((1, 1.75)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.833333333333333,
-          6.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4.333333333333333, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 1], [1, 1.75]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, 1.75], {size: 3, color: 'red', name: '(1, 1.75)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -591,6 +455,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 1 \\implies y = -1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (1, -1)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with y-intercept at \\((0, 2)\\) passing through \\((1, -1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with y-intercept at \\((0, 2)\\) passing through \\((1, -1)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -609,41 +488,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, -1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -1], {size: 3, color: 'red', name: '(1, -1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 1 \\implies y = -1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (1, -1)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with y-intercept at \\((0, 2)\\) passing through \\((1, -1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with y-intercept at \\((0, 2)\\) passing through \\((1, -1)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -4.5,
-          6.5,
-          4.5,
-          -4.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -4], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [3.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 2], [1, -1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.create('point', [1, -1], {size: 3, color: 'red', name: '(1, -1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -663,6 +510,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 2 \\implies y = 10\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -681,41 +543,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -13], [0, 13]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 12.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 10], {size: 3, color: 'red', name: '(2, 10)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 2 \\implies y = 10\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 10)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          13.5,
-          6.5,
-          -13.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -13], [0, 13]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 12.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 10], {size: 3, color: 'red', name: '(2, 10)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -735,6 +565,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 2 \\implies y = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -753,41 +598,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 6], {size: 3, color: 'red', name: '(2, 6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 2 \\implies y = 6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 6)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          9.5,
-          6.5,
-          -9.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 6], {size: 3, color: 'red', name: '(2, 6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -807,6 +620,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 2 \\implies y = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -825,41 +653,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -11], [0, 11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 10.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 8], {size: 3, color: 'red', name: '(2, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 2 \\implies y = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, 8)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          11.5,
-          6.5,
-          -11.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -11], [0, 11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 10.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, 8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, 8], {size: 3, color: 'red', name: '(2, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -879,6 +675,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 12 \\implies y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -897,41 +708,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 4], {size: 3, color: 'red', name: '(12, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 12 \\implies y = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -15.5,
-          7.5,
-          15.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 4], {size: 3, color: 'red', name: '(12, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -951,6 +730,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 2 \\implies y = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -969,41 +763,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 2 \\implies y = -6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          9.5,
-          6.5,
-          -9.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1023,6 +785,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 2 \\implies y = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1041,41 +818,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -4], {size: 3, color: 'red', name: '(2, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 2 \\implies y = -4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          7.5,
-          6.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -4], {size: 3, color: 'red', name: '(2, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1095,6 +840,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = -\\frac{1}{3}x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 12 \\implies y = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, -4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1113,41 +873,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, -4], {size: 3, color: 'red', name: '(12, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 12 \\implies y = -4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, -4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -15.5,
-          7.5,
-          15.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, -4], {size: 3, color: 'red', name: '(12, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1167,6 +895,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = -3x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 2 \\implies y = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1185,41 +928,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 2 \\implies y = -6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -6)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          9.5,
-          6.5,
-          -9.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -9], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -6], {size: 3, color: 'red', name: '(2, -6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1239,6 +950,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = \\frac{2}{3}x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 12 \\implies y = 8\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 8)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 8)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1257,41 +983,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -11], [0, 11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 10.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 8], {size: 3, color: 'red', name: '(12, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 12 \\implies y = 8\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 8)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 8)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -15.5,
-          11.5,
-          15.5,
-          -11.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -11], [0, 11]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 10.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 8]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 8], {size: 3, color: 'red', name: '(12, 8)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1311,6 +1005,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = -2x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 2 \\implies y = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1329,41 +1038,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -4], {size: 3, color: 'red', name: '(2, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 2 \\implies y = -4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((2, -4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          7.5,
-          6.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [2, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [2, -4], {size: 3, color: 'red', name: '(2, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1383,6 +1060,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = \\frac{3}{4}x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 12 \\implies y = 9\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 9)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 9)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1401,41 +1093,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -12], [0, 12]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 11.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 9], {size: 3, color: 'red', name: '(12, 9)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 12 \\implies y = 9\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 9)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 9)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -15.5,
-          12.5,
-          15.5,
-          -12.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -12], [0, 12]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 11.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 9]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 9], {size: 3, color: 'red', name: '(12, 9)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1455,6 +1115,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = 3x\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(x = 0 \\implies y = 0\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(x = 12 \\implies y = 36\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 36)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 36)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1473,41 +1148,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -39], [0, 39]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 38.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 36]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 36], {size: 3, color: 'red', name: '(12, 36)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x = 0 \\implies y = 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(x = 12 \\implies y = 36\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line passing through the origin \\((0, 0)\\) and \\((12, 36)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line passing through the origin \\((0, 0)\\) and \\((12, 36)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -15.5,
-          39.5,
-          15.5,
-          -39.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-15, 0], [15, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -39], [0, 39]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [14.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 38.7, 'y'], {fontSize: 12});\nboard.create('line', [[0, 0], [12, 36]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 0], {size: 3, color: 'red', name: '(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-15, -15]}});\nboard.create('point', [12, 36], {size: 3, color: 'red', name: '(12, 36)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1527,6 +1170,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 6) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 6)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1545,41 +1203,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, 6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 6) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 6)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 6)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          9.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 9]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 8.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 6]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 6], {size: 3, color: 'red', name: '(0, 6)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1599,6 +1225,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (4, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((4, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((4, 0)\\) and y-intercept at \\((0, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1617,41 +1258,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[4, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(4, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 4\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (4, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((4, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((4, 0)\\) and y-intercept at \\((0, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          7.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[4, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [4, 0], {size: 3, color: 'red', name: '(4, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1671,6 +1280,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (5, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((5, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((5, 0)\\) and y-intercept at \\((0, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1689,41 +1313,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [8, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[5, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [5, 0], {size: 3, color: 'red', name: '(5, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 5\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (5, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((5, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((5, 0)\\) and y-intercept at \\((0, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          8.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [8, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [7.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[5, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [5, 0], {size: 3, color: 'red', name: '(5, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1743,6 +1335,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1761,41 +1368,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          6.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1815,6 +1390,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 1)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1833,41 +1423,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 1) \\text{ and } (3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 1)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 1)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          6.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, 1]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 1], {size: 3, color: 'red', name: '(0, 1)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1887,6 +1445,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1905,41 +1478,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 4) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, 4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          7.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -1959,6 +1500,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -1977,41 +1533,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          6.5,
-          -6.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2031,6 +1555,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2049,41 +1588,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2103,6 +1610,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 1\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -4) \\text{ and } (1, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((1, 0)\\) and y-intercept at \\((0, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((1, 0)\\) and y-intercept at \\((0, -4)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2121,41 +1643,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[1, 0], [0, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -4], {size: 3, color: 'red', name: '(0, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 1\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -4) \\text{ and } (1, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((1, 0)\\) and y-intercept at \\((0, -4)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((1, 0)\\) and y-intercept at \\((0, -4)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          5.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[1, 0], [0, -4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [1, 0], {size: 3, color: 'red', name: '(1, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -4], {size: 3, color: 'red', name: '(0, -4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2175,6 +1665,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (6, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((6, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((6, 0)\\) and y-intercept at \\((0, -2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2193,41 +1698,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [9, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [8.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[6, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [6, 0], {size: 3, color: 'red', name: '(6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (6, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((6, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((6, 0)\\) and y-intercept at \\((0, -2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          9.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [9, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [8.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[6, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [6, 0], {size: 3, color: 'red', name: '(6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2247,6 +1720,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2265,41 +1753,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          5.5,
-          -6.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2319,6 +1775,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2337,41 +1808,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -2) \\text{ and } (3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, -2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          6.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, -2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -2], {size: 3, color: 'red', name: '(0, -2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2391,6 +1830,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (-6, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((-6, 0)\\) and y-intercept at \\((0, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((-6, 0)\\) and y-intercept at \\((0, 3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2409,41 +1863,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[-6, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = -6\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 3) \\text{ and } (-6, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((-6, 0)\\) and y-intercept at \\((0, 3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((-6, 0)\\) and y-intercept at \\((0, 3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -9.5,
-          6.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 6]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 5.7, 'y'], {fontSize: 12});\nboard.create('line', [[-6, 0], [0, 3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 3], {size: 3, color: 'red', name: '(0, 3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2463,6 +1885,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (-3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((-3, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((-3, 0)\\) and y-intercept at \\((0, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2481,41 +1918,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[-3, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = -3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (-3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((-3, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((-3, 0)\\) and y-intercept at \\((0, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -6.5,
-          5.5,
-          5.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[-3, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2535,6 +1940,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2553,41 +1973,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 3\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((3, 0)\\) and y-intercept at \\((0, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          6.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [6, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[3, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [3, 0], {size: 3, color: 'red', name: '(3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2607,6 +1995,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -5) \\text{ and } (2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -5)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2625,41 +2028,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -8], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -5) \\text{ and } (2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -5)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2, 0)\\) and y-intercept at \\((0, -5)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          5.5,
-          -8.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -8], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [4.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2, 0], [0, -5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2, 0], {size: 3, color: 'red', name: '(2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -5], {size: 3, color: 'red', name: '(0, -5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2679,6 +2050,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 2.7\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (2.7, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((2.7, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((2.7, 0)\\) and y-intercept at \\((0, -3)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2697,41 +2083,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5.666666666666666, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.366666666666666, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2.6666666666666665, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2.6666666666666665, 0], {size: 3, color: 'red', name: '(2.7, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 2.7\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, -3) \\text{ and } (2.7, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((2.7, 0)\\) and y-intercept at \\((0, -3)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((2.7, 0)\\) and y-intercept at \\((0, -3)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          6.166666666666666,
-          -6.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [5.666666666666666, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -6], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [5.366666666666666, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[2.6666666666666665, 0], [0, -3]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [2.6666666666666665, 0], {size: 3, color: 'red', name: '(2.7, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, -3], {size: 3, color: 'red', name: '(0, -3)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2751,6 +2105,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = 0 \\implies y = 2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(y = 0 \\implies x = 15\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (15, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Line with x-intercept at \\((15, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Line with x-intercept at \\((15, 0)\\) and y-intercept at \\((0, 2)\\).",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2769,41 +2138,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [18, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [17.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[15, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [15, 0], {size: 3, color: 'red', name: '(15, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y = 0 \\implies x = 15\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Line passes through } (0, 2) \\text{ and } (15, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Line with x-intercept at \\((15, 0)\\) and y-intercept at \\((0, 2)\\).. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Line with x-intercept at \\((15, 0)\\) and y-intercept at \\((0, 2)\\).",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -5.5,
-          5.5,
-          18.5,
-          -5.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [18, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -5], [0, 5]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [17.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 4.7, 'y'], {fontSize: 12});\nboard.create('line', [[15, 0], [0, 2]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [15, 0], {size: 3, color: 'red', name: '(15, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.create('point', [0, 2], {size: 3, color: 'red', name: '(0, 2)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2823,6 +2160,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (0, 4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Horizontal line at y = 4.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Horizontal line at y = 4.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Horizontal line at y = 4.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2841,41 +2193,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 4], [10, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (0, 4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Horizontal line at y = 4.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Horizontal line at y = 4.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Horizontal line at y = 4.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -7.5,
-          7.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 4], [10, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2895,6 +2215,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = -2\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (-2, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Vertical line at x = -2.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Vertical line at x = -2.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Vertical line at x = -2.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2913,41 +2248,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-2, -10], [-2, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(-2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (-2, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Vertical line at x = -2.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Vertical line at x = -2.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Vertical line at x = -2.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -7.5,
-          7.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-2, -10], [-2, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-2, 0], {size: 3, color: 'red', name: '(-2, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -2967,6 +2270,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = -3\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (-3, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Vertical line at x = -3.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Vertical line at x = -3.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Vertical line at x = -3.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -2985,41 +2303,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-3, -10], [-3, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (-3, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Vertical line at x = -3.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Vertical line at x = -3.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Vertical line at x = -3.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -7.5,
-          7.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-3, -10], [-3, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-3, 0], {size: 3, color: 'red', name: '(-3, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -3039,6 +2325,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = 4\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (0, 4)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Horizontal line at y = 4.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Horizontal line at y = 4.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Horizontal line at y = 4.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -3057,41 +2358,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 4], [10, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (0, 4)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Horizontal line at y = 4.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Horizontal line at y = 4.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Horizontal line at y = 4.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -7.5,
-          7.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 4], [10, 4]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 4], {size: 3, color: 'red', name: '(0, 4)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -3111,6 +2380,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(y = 5\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (0, 5)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Horizontal line at y = 5.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Horizontal line at y = 5.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Horizontal line at y = 5.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -3129,41 +2413,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 8]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 5], [10, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (0, 5)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Horizontal line at y = 5.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Horizontal line at y = 5.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Horizontal line at y = 5.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -7.5,
-          8.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 8]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 7.7, 'y'], {fontSize: 12});\nboard.create('line', [[-10, 5], [10, 5]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [0, 5], {size: 3, color: 'red', name: '(0, 5)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
@@ -3183,6 +2435,21 @@ export const Y9_CH11E_QUESTIONS = [
       {
         "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Sketching linear graphs: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
         "workingOut": "\\(x = -6\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "workingOut": "\\(\\text{Line passes through } (-6, 0)\\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "workingOut": "Vertical line at x = -6.",
+        "graphData": null
+      },
+      {
+        "explanation": "Final answer: Vertical line at x = -6.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
+        "workingOut": "Vertical line at x = -6.",
         "graphData": {
           "jsxGraph": {
             "width": 300,
@@ -3201,41 +2468,9 @@ export const Y9_CH11E_QUESTIONS = [
             "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-6, -10], [-6, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(\\text{Line passes through } (-6, 0)\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Vertical line at x = -6.",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: Vertical line at x = -6.. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Vertical line at x = -6.",
-        "graphData": null
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 300,
-        "height": 300,
-        "boundingbox": [
-          -9.5,
-          7.5,
-          7.5,
-          -7.5
-        ],
-        "showConstructionPoints": true,
-        "boardOptions": {
-          "axis": true,
-          "grid": true
-        },
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-9, 0], [7, 0]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('arrow', [[0, -7], [0, 7]], {strokeColor: 'black', strokeWidth: 1});\nboard.create('text', [6.7, -0.5, 'x'], {fontSize: 12});\nboard.create('text', [-0.5, 6.7, 'y'], {fontSize: 12});\nboard.create('line', [[-6, -10], [-6, 10]], {strokeColor: 'blue', strokeWidth: 2});\nboard.create('point', [-6, 0], {size: 3, color: 'red', name: '(-6, 0)', withLabel: true, label: {autoPosition: false, offset: [5, 10]}});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   }
