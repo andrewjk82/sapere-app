@@ -1346,22 +1346,61 @@ export const DANEBANK_2020_QUESTIONS = [
     "solution": "Curve with \\(x\\)-intercepts at \\((0,0)\\) and \\((4,0)\\), a horizontal point of inflection at \\((0,0)\\), and a maximum turning point at \\((3,27)\\).",
     "solutionSteps": [
       {
-        "explanation": "Find the \\(x\\)-intercepts by factorising \\(f(x) = 4x^3 - x^4 = x^3(4 - x)\\) and setting it to zero. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(x^3(4 - x) = 0 \\Rightarrow x = 0, 4\\)",
+        "explanation": "Step 1: Differentiate \\(f(x)\\) to find the first derivative \\(f'(x)\\). Set it to \\(0\\) to locate the stationary points (turning points or horizontal points of inflection).",
+        "workingOut": "$$ \\begin{aligned} f'(x) &= 12x^2 - 4x^3 \\\\\\\\ 4x^2(3 - x) &= 0 \\implies x = 0 \\text{ or } x = 3 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Recall the key features from part (a): a horizontal point of inflection at \\((0,0)\\) and a maximum at \\((3,27)\\).",
-        "workingOut": "\\((0,0)\\text{ horizontal POI}, quad (3,27)\\text{ max}\\)",
+        "explanation": "Step 2: Differentiate again to find the second derivative \\(f''(x)\\). This helps classify the stationary points and identify potential points of inflection (POI).",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= 24x - 12x^2 \\\\\\\\ 12x(2 - x) &= 0 \\implies x = 0 \\text{ or } x = 2 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Note the end behaviour: the leading term \\(-x^4\\) dominates, so \\(f(x) \\to -\\infty\\) as \\(x \\to \\pm\\infty\\).",
-        "workingOut": "\\(x \\to \\pm\\infty \\Rightarrow f(x) \\to -\\infty\\)",
+        "explanation": "Step 3: Classify the stationary point at \\(x = 3\\) using the second derivative test, and calculate its \\(y\\)-coordinate.",
+        "workingOut": "$$ f''(3) = 12(3)(2 - 3) = -36 < 0 \\implies \\text{Local Maximum} \\\\\\\\ f(3) = 4(3)^3 - (3)^4 = 108 - 81 = 27 \\implies \\text{Max at } (3, 27) $$",
         "graphData": null
+      },
+      {
+        "explanation": "Step 4: Classify the stationary point at \\(x = 0\\). Since \\(f'(0) = 0\\) and \\(f''(0) = 0\\), we check for a change in concavity using test points.",
+        "workingOut": "$$ \\begin{aligned} f''(-1) &= 12(-1)(3) = -36 < 0 \\quad (\\text{Concave down}) \\\\\\\\ f''(1) &= 12(1)(1) = 12 > 0 \\quad (\\text{Concave up}) \\end{aligned} $$ \n Since concavity changes, \\((0,0)\\) is a horizontal point of inflection.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Verify the other potential POI at \\(x = 2\\). We check concavity around \\(x=2\\).",
+        "workingOut": "$$ \\begin{aligned} f''(1) &= 12 > 0 \\quad (\\text{Concave up}) \\\\\\\\ f''(3) &= -36 < 0 \\quad (\\text{Concave down}) \\end{aligned} $$ \n Concavity changes, so \\(x=2\\) is a non-horizontal POI. \\(f(2) = 4(8) - 16 = 16\\), so the POI is at \\((2, 16)\\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: Finally, find the \\(x\\) and \\(y\\) intercepts to complete the sketch.",
+        "workingOut": "$$ \\begin{aligned} y\\text{-intercept: } x=0 &\\implies y = 0 \\\\\\\\ x\\text{-intercepts: } 4x^3 - x^4 &= 0 \\implies x^3(4-x) = 0 \\implies x = 0, \\; x = 4 \\end{aligned} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 300,
+            "boundingbox": [
+              -2,
+              35,
+              5,
+              -10
+            ],
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0],[4.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,33]], {strokeColor:'black'});\nvar f=function(x){ return 4*Math.pow(x, 3) - Math.pow(x, 4); };\nboard.create('functiongraph', [f, -1.2, 4.2], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:2, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [4, 0], {name:'(4,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [3, 27], {name:'Max(3, 27)', size:2, color:'purple', label:{offset:[-30,15]}});\nboard.create('point', [2, 16], {name:'POI(2, 16)', size:2, color:'green', label:{offset:[10,-15]}});\nboard.create('text', [4.5, -2, 'x'], {fontSize:13});\nboard.create('text', [0.3, 31, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
-    "graphData": null,
+    "graphData": {
+      "jsxGraph": {
+        "width": 400,
+        "height": 300,
+        "boundingbox": [
+          -2,
+          35,
+          5,
+          -10
+        ],
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0],[4.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,33]], {strokeColor:'black'});\nvar f=function(x){ return 4*Math.pow(x, 3) - Math.pow(x, 4); };\nboard.create('functiongraph', [f, -1.2, 4.2], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:2, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [4, 0], {name:'(4,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [3, 27], {name:'Max(3, 27)', size:2, color:'purple', label:{offset:[-30,15]}});\nboard.create('point', [2, 16], {name:'POI(2, 16)', size:2, color:'green', label:{offset:[10,-15]}});\nboard.create('text', [4.5, -2, 'x'], {fontSize:13});\nboard.create('text', [0.3, 31, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
+      }
+    },
     "isNew": true,
     "requiresManualGrading": true
   },
