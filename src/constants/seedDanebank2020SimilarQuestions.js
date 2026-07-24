@@ -1350,34 +1350,39 @@ export const DANEBANK_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider $f(x) = 8x^3 - 3x^4$. Find the stationary points on $y = f(x)$ and determine their nature.",
     "opts": [
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point.",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\((0, 0)\\) is a minimum turning point; \\((2, 16)\\) is a maximum turning point.",
+      "\\((0, 0)\\) is a maximum turning point; \\((2, 16)\\) is a horizontal point of inflection.",
+      "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a minimum turning point.",
+      "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point."
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "Solve $f'(x) = 0$, then classify with $f''(x)$ or a sign table.",
-    "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point..",
+    "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Danebank 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x) = 24x^2 - 12x^3 = 12x^2(2 - x)\\)",
+        "explanation": "Step 1: Differentiate \\(f(x)\\) to find the first derivative \\(f'(x)\\).",
+        "workingOut": "$$ f'(x) = 24x^2 - 12x^3 $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x = 0 \\text{ or } x = 2\\)",
+        "explanation": "Step 2: Set \\(f'(x) = 0\\) and factorise to find the stationary points.",
+        "workingOut": "$$ 12x^2(2 - x) = 0 \\implies x = 0 \\text{ (double root)} \\quad \\text{or} \\quad x = 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "f(0) = 0, quad f(2) = 64 - 48 = 16",
+        "explanation": "Step 3: Find the \\(y\\)-coordinates for these stationary points.",
+        "workingOut": "$$ \\begin{aligned} f(0) &= 8(0)^3 - 3(0)^4 = 0 \\implies (0, 0) \\\\\\\\ f(2) &= 8(2)^3 - 3(2)^4 = 64 - 48 = 16 \\implies (2, 16) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\((0, 0)\\) is a horizontal point of inflection; \\((2, 16)\\) is a maximum turning point.",
+        "explanation": "Step 4: Use the second derivative to determine the nature of the turning point at \\(x = 2\\).",
+        "workingOut": "$$ f''(x) = 48x - 36x^2 \\implies f''(2) = 96 - 144 = -48 < 0 \\implies \\text{Maximum at } (2, 16) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Test \\(x = 0\\). Since \\(f''(0) = 0\\), we use a first derivative sign test. \\(f'(x)\\) is positive on both sides of \\(x = 0\\), so there is no sign change.",
+        "workingOut": "$$ \\text{Since } f'(x) \\text{ does not change sign, } (0, 0) \\text{ is a horizontal point of inflection.} $$",
         "graphData": null
       }
     ],

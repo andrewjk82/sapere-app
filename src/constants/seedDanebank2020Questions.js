@@ -1297,29 +1297,39 @@ export const DANEBANK_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider the function $f(x) = 4x^3 - x^4$. Find the stationary points on the curve $y = f(x)$ and determine their nature.",
     "opts": [
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point.",
-      "\\(\\dfrac{13}{x + 3}\\)"
+      "\\((0, 0)\\) is a minimum turning point; \\((3, 27)\\) is a maximum turning point.",
+      "\\((0, 0)\\) is a maximum turning point; \\((3, 27)\\) is a horizontal point of inflection.",
+      "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a minimum turning point.",
+      "\\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point."
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "Solve $f'(x) = 0$, then use $f''(x)$ (or a sign table) to classify each stationary point.",
-    "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point..",
+    "solution": "The correct answer is \\((0, 0)\\) is a horizontal point of inflection; \\((3, 27)\\) is a maximum turning point.",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(f(x) = 4x^3 - x^4\\) and factorise to find where the gradient is zero. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(f'(x) = 12x^2 - 4x^3 = 4x^2(3 - x)\\)",
+        "explanation": "Step 1: Differentiate \\(f(x)\\) to find the first derivative \\(f'(x)\\).",
+        "workingOut": "$$ f'(x) = 12x^2 - 4x^3 $$",
         "graphData": null
       },
       {
-        "explanation": "At \\(x = 0\\), \\(f''(0) = 0\\), so the test is inconclusive. A sign table of \\(f'\\) around \\(x = 0\\) shows \\(f'>0\\) on both sides (\\(f'(-1) = 16\\), \\(f'(1) = 8\\)), so the gradient does not change sign — a horizontal point of inflection.",
-        "workingOut": "\\((0, 0): \\text{ horizontal point of inflection}\\)",
+        "explanation": "Step 2: Set \\(f'(x) = 0\\) and factorise to find the stationary points.",
+        "workingOut": "$$ 4x^2(3 - x) = 0 \\implies x = 0 \\text{ (double root)} \\quad \\text{or} \\quad x = 3 $$",
         "graphData": null
       },
       {
-        "explanation": "At \\(x = 3\\), \\(f''(3) = 72 - 108 = -36 < 0\\), indicating concave down, so this is a maximum. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\((3, 27): \\text{ maximum turning point}\\)",
+        "explanation": "Step 3: Find the \\(y\\)-coordinates for these stationary points.",
+        "workingOut": "$$ \\begin{aligned} f(0) &= 4(0)^3 - (0)^4 = 0 \\implies (0, 0) \\\\\\\\ f(3) &= 4(3)^3 - (3)^4 = 108 - 81 = 27 \\implies (3, 27) \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Use the second derivative to determine the nature of the turning point at \\(x = 3\\).",
+        "workingOut": "$$ f''(x) = 24x - 12x^2 \\implies f''(3) = 72 - 108 = -36 < 0 \\implies \\text{Maximum at } (3, 27) $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Test \\(x = 0\\). Since \\(f''(0) = 0\\), we use a first derivative sign test. \\(f'(x)\\) is positive on both sides of \\(x = 0\\), so there is no sign change.",
+        "workingOut": "$$ \\text{Since } f'(x) \\text{ does not change sign, } (0, 0) \\text{ is a horizontal point of inflection.} $$",
         "graphData": null
       }
     ],

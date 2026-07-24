@@ -1,4 +1,4 @@
-export const FORTST_2020_SIMILAR_QUESTIONS = [
+export const FORT_STREET_2020_SIMILAR_QUESTIONS = [
   {
     "id": "fortst2020s-mc1",
     "topicId": "y12a-exam-fortst",
@@ -1343,34 +1343,34 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $f(x) = (x+3)(x-1)^3$ (with $f'(x) = 4(x-1)^2(x+2)$, $f''(x) = 12(x-1)(x+1)$), find the stationary points and determine their nature.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
+      "\\((-2, -27)\\) is a maximum; \\((1, 0)\\) is a horizontal point of inflexion.",
+      "\\((-2, -27)\\) is a horizontal point of inflexion; \\((1, 0)\\) is a minimum.",
+      "\\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a maximum.",
       "\\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion."
     ],
     "a": 3,
     "answer": "3",
     "hint": "Solve $f'(x) = 0$, then test with $f''$ (and a sign table where $f'' = 0$).",
-    "solution": "The correct answer is \\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion..",
+    "solution": "The correct answer is \\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(4(x-1)^2(x+2) = 0 \\Rightarrow x = -2, \\; 1\\)",
+        "explanation": "Step 1: Set \\(f'(x) = 0\\) to find the \\(x\\)-coordinates of the stationary points.",
+        "workingOut": "$$ 4(x-1)^2(x+2) = 0 \\implies x = 1 \\quad \\text{or} \\quad x = -2 $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f(-2) = (1)(-3)^3 = -27; \\quad f(1) = 0\\)",
+        "explanation": "Step 2: Find the corresponding \\(y\\)-coordinates by substituting into \\(f(x)\\).",
+        "workingOut": "$$ \\begin{aligned} f(-2) &= (-2+3)(-2-1)^3 = 1(-27) = -27 \\implies (-2, -27) \\\\\\\\ f(1) &= (1+3)(1-1)^3 = 0 \\implies (1, 0) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f''(-2) = 12(-3)(-1) = 36 > 0 \\Rightarrow \\text{min}\\)",
+        "explanation": "Step 3: Use the given second derivative \\(f''(x) = 12(x-1)(x+1)\\) to classify \\(x = -2\\).",
+        "workingOut": "$$ f''(-2) = 12(-2-1)(-2+1) = 12(-3)(-1) = 36 > 0 \\implies \\text{Minimum turning point at } (-2, -27) $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion.. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\((-2, -27)\\) is a minimum; \\((1, 0)\\) is a horizontal point of inflexion.",
+        "explanation": "Step 4: Classify \\(x = 1\\). Since \\(f''(1) = 0\\), use the first derivative test. The squared factor \\((x-1)^2\\) means \\(f'(x)\\) does not change sign across \\(x = 1\\).",
+        "workingOut": "$$ \\text{Since } f'(x) \\text{ does not change sign, } (1, 0) \\text{ is a horizontal point of inflexion.} $$",
         "graphData": null
       }
     ],
@@ -1388,34 +1388,34 @@ export const FORTST_2020_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $f(x) = (x+3)(x-1)^3$ (with $f''(x) = 12(x-1)(x+1)$), find all points of inflection.",
     "opts": [
-      "Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\) only.",
+      "Points of inflection at \\((-1, 0)\\) and \\((1, -16)\\).",
+      "Point of inflection at \\((1, 0)\\) only.",
+      "Points of inflection at \\((-3, 0)\\) and \\((1, 0)\\)."
     ],
     "a": 0,
     "answer": "0",
     "hint": "Set $f''(x) = 0$ and confirm a concavity change at each.",
-    "solution": "The correct answer is Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\).",
+    "solution": "The correct answer is Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\) only.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Fort Street 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(12(x-1)(x+1) = 0 \\Rightarrow x = 1, \\; -1\\)",
+        "explanation": "Step 1: Set the second derivative \\(f''(x) = 0\\) to find possible points of inflection.",
+        "workingOut": "$$ 12(x-1)(x+1) = 0 \\implies x = 1 \\quad \\text{or} \\quad x = -1 $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f(-1) = (2)(-2)^3 = -16 \\Rightarrow (-1, -16)\\)",
+        "explanation": "Step 2: Check for a change in concavity around \\(x = 1\\) and \\(x = -1\\) using test points.",
+        "workingOut": "$$ \\begin{aligned} f''(-2) &= 36 > 0 \\quad (\\text{Concave up}) \\\\\\\\ f''(0) &= -12 < 0 \\quad (\\text{Concave down}) \\\\\\\\ f''(2) &= 36 > 0 \\quad (\\text{Concave up}) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\((-1, -16) \\text{ and } (1, 0)\\)",
+        "explanation": "Step 3: Since concavity changes across both \\(x = -1\\) and \\(x = 1\\), they are both true points of inflection. Find their \\(y\\)-coordinates.",
+        "workingOut": "$$ \\begin{aligned} f(-1) &= (-1+3)(-1-1)^3 = 2(-8) = -16 \\implies (-1, -16) \\\\\\\\ f(1) &= (1+3)(1-1)^3 = 0 \\implies (1, 0) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Points of inflection at \\((-1, -16)\\) and \\((1, 0)\\)",
+        "explanation": "Step 4: State the final coordinates of the points of inflection.",
+        "workingOut": "$$ \\text{Points of inflection at } (-1, -16) \\text{ and } (1, 0). $$",
         "graphData": null
       }
     ],

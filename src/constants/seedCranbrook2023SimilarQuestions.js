@@ -2112,34 +2112,34 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "For $g(x) = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1$, explain why the graph of $y = g(x)$ must cross the $x$-axis at least once between $x = 4$ and $x = 5$.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
-      "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=4\\) and \\(x=5\\)."
+      "\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
+      "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = \\dfrac{53}{27} > 0\\); since the derivative changes sign, it must cross the \\(x\\)-axis.",
+      "\\(g(4) = -\\dfrac{19}{27} < 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since the second derivative is zero, it must cross the \\(x\\)-axis.",
+      "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis."
     ],
     "a": 3,
     "answer": "3",
     "hint": "Evaluate $g(4)$ and $g(5)$ and apply the sign-change argument for a continuous function.",
-    "solution": "The correct answer is \\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=4\\) and \\(x=5\\)..",
+    "solution": "The correct answer is \\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Cranbrook 2023 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(g(4) = 8\\left(-\\dfrac{1}{3}\\right)^3 + 1 = \\dfrac{19}{27} > 0\\)",
+        "explanation": "Step 1: To show that a curve crosses the \\(x\\)-axis between two points, evaluate the function at those points and check for a change in sign.",
+        "workingOut": "$$ \\text{Find } g(4) \\text{ and } g(5). $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(g(5) = 10\\left(-\\dfrac{2}{3}\\right)^3 + 1 = -\\dfrac{53}{27} < 0\\)",
+        "explanation": "Step 2: Substitute \\(x = 4\\) into the given function.",
+        "workingOut": "$$ g(4) = 2(4)\\left(1 - \\dfrac{4}{3}\\right)^3 + 1 = 8\\left(-\\dfrac{1}{3}\\right)^3 + 1 = 8\\left(-\\dfrac{1}{27}\\right) + 1 = \\dfrac{19}{27} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(g \\text{ continuous}, \\; g(4) > 0, \\; g(5) < 0 \\implies \\exists\\, c \\in (4,5): g(c) = 0 \\quad \\blacksquare\\)",
+        "explanation": "Step 3: Substitute \\(x = 5\\) into the given function.",
+        "workingOut": "$$ g(5) = 2(5)\\left(1 - \\dfrac{5}{3}\\right)^3 + 1 = 10\\left(-\\dfrac{2}{3}\\right)^3 + 1 = 10\\left(-\\dfrac{8}{27}\\right) + 1 = -\\dfrac{53}{27} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: \\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=4\\) and \\(x=5\\).. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(g(4) = \\dfrac{19}{27} > 0\\) and \\(g(5) = -\\dfrac{53}{27} < 0\\); since \\(g\\) is continuous and changes sign, it must cross the \\(x\\)-axis between \\(x=4\\) and \\(x=5\\).",
+        "explanation": "Step 4: Use the Intermediate Value Theorem. Since polynomials are continuous everywhere and the function values have opposite signs, there must be a root.",
+        "workingOut": "$$ \\text{Since } g(x) \\text{ is continuous, and } g(4) > 0, g(5) < 0, \\text{ the graph crosses the } x\\text{-axis between } x=4 \\text{ and } x=5. $$",
         "graphData": null
       }
     ],
