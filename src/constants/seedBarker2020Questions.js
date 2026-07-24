@@ -2787,11 +2787,11 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Substitute these \\(x\\)-values back into \\(f(x)\\) to find the corresponding \\(y\\)-coordinates.",
-        "workingOut": "$$ \\begin{aligned} f(0) &= 3(0)^4 - 8(0)^3 + 6 = 6 \\implies (0, 6) \\\\\\\\ f(2) &= 3(2)^4 - 8(2)^3 + 6 = 3(16) - 8(8) + 6 = 48 - 64 + 6 = -10 \\implies (2, -10) \\end{aligned} $$"
+        "workingOut": "$$ \\begin{aligned} f(0) &= 3(0)^4 - 8(0)^3 + 6 = 6 \\implies (0, 6) \\\\\\\\ f(2) &= 3(2)^4 - 8(2)^3 + 6 \\\\\\\\ &= 3(16) - 8(8) + 6 \\\\\\\\ &= 48 - 64 + 6 = -10 \\implies (2, -10) \\end{aligned} $$"
       },
       {
         "explanation": "Step 3: Find the second derivative \\(f''(x)\\) to test the nature of the stationary points.",
-        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(12x^3 - 24x^2) = 36x^2 - 48x \\\\\\\\ x = 2: \\quad f''(2) &= 36(2)^2 - 48(2) = 144 - 96 = 48 > 0 \\implies \\text{Local Minimum at } (2, -10) \\end{aligned} $$"
+        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(12x^3 - 24x^2) = 36x^2 - 48x \\\\\\\\ \\text{At } x = 2: \\quad f''(2) &= 36(2)^2 - 48(2) \\\\\\\\ &= 144 - 96 = 48 > 0 \\\\\\\\ &\\implies \\text{Local Minimum at } (2, -10) \\end{aligned} $$"
       },
       {
         "explanation": "Step 4: At \\(x = 0\\), the second derivative is \\(f''(0) = 0\\), so the test is inconclusive. We must use the first derivative test to check the gradient around \\(x = 0\\).",
@@ -2832,11 +2832,11 @@ export const BARKER_2020_QUESTIONS = [
       },
       {
         "explanation": "Step 2: Substitute these \\(x\\)-values back into \\(f(x)\\) to find the corresponding \\(y\\)-coordinates.",
-        "workingOut": "$$ \\begin{aligned} f(0) &= 2(0)^4 - 8(0)^3 + 5 = 5 \\implies (0, 5) \\\\\\\\ f(3) &= 2(3)^4 - 8(3)^3 + 5 = 2(81) - 8(27) + 5 = 162 - 216 + 5 = -49 \\implies (3, -49) \\end{aligned} $$"
+        "workingOut": "$$ \\begin{aligned} f(0) &= 2(0)^4 - 8(0)^3 + 5 = 5 \\implies (0, 5) \\\\\\\\ f(3) &= 2(3)^4 - 8(3)^3 + 5 \\\\\\\\ &= 2(81) - 8(27) + 5 \\\\\\\\ &= 162 - 216 + 5 = -49 \\implies (3, -49) \\end{aligned} $$"
       },
       {
         "explanation": "Step 3: Find the second derivative \\(f''(x)\\) to determine the nature of the stationary points.",
-        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(8x^3 - 24x^2) = 24x^2 - 48x \\\\\\\\ x = 3: \\quad f''(3) &= 24(3)^2 - 48(3) = 216 - 144 = 72 > 0 \\implies \\text{Local Minimum at } (3, -49) \\end{aligned} $$"
+        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(8x^3 - 24x^2) = 24x^2 - 48x \\\\\\\\ \\text{At } x = 3: \\quad f''(3) &= 24(3)^2 - 48(3) \\\\\\\\ &= 216 - 144 = 72 > 0 \\\\\\\\ &\\implies \\text{Local Minimum at } (3, -49) \\end{aligned} $$"
       },
       {
         "explanation": "Step 4: At \\(x = 0\\), the second derivative is \\(f''(0) = 0\\). Since the second derivative test is inconclusive, we use the first derivative test around \\(x = 0\\).",
