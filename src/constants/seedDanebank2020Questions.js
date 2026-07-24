@@ -234,19 +234,19 @@ export const DANEBANK_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "The graph of $y = f(x)$ is shown. $x = A$ and $x = C$ are stationary points, and $x = B$ is a point of inflection. For $A < x < B$, which statement is true?",
     "opts": [
-      "f'(x) < 0\\) and \\(f''(x) > 0",
-      "f'(x) < 0\\) and \\(f''(x) < 0",
-      "f'(x) > 0\\) and \\(f''(x) > 0",
-      "f'(x) > 0\\) and \\(f''(x) < 0"
+      "\\(f'(x) < 0\\) and \\(f''(x) > 0\\)",
+      "\\(f'(x) < 0\\) and \\(f''(x) < 0\\)",
+      "\\(f'(x) > 0\\) and \\(f''(x) > 0\\)",
+      "\\(f'(x) > 0\\) and \\(f''(x) < 0\\)"
     ],
     "a": 1,
     "answer": "1",
     "hint": "Between the maximum at $A$ and the inflection at $B$, decide if the curve is rising or falling, and whether it bends up or down.",
-    "solution": "The correct answer is f'(x) < 0\\) and \\(f''(x) < 0.",
+    "solution": "The correct answer is \\(f'(x) < 0\\) and \\(f''(x) < 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Danebank 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x) < 0 \\quad (\\text{curve decreasing})\\)",
+        "explanation": "Step 1: Determine the sign of the first derivative \\(f'(x)\\). Between \\(A\\) (local maximum) and \\(B\\) (point of inflection), the curve is strictly decreasing. Therefore, \\(f'(x) < 0\\).",
+        "workingOut": "$$ f'(x) < 0 \\text{ for } x \\in (A, B) $$",
         "graphData": {
           "jsxGraph": {
             "width": 420,
@@ -265,18 +265,13 @@ export const DANEBANK_2020_QUESTIONS = [
         }
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f''(x) < 0 \\quad (\\text{concave down})\\)",
+        "explanation": "Step 2: Determine the sign of the second derivative \\(f''(x)\\). Between \\(A\\) and \\(B\\), the curve forms the top half of a downward bend, which means it is concave down. Therefore, \\(f''(x) < 0\\).",
+        "workingOut": "$$ f''(x) < 0 \\text{ for } x \\in (A, B) $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(x) < 0 \\text{ and } f''(x) < 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: f'(x) < 0\\) and \\(f''(x) < 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "f'(x) < 0\\) and \\(f''(x) < 0",
+        "explanation": "Step 3: Combine both conditions to find the correct statement.",
+        "workingOut": "$$ \\text{Both } f'(x) < 0 \\text{ and } f''(x) < 0 \\text{ are true.} $$",
         "graphData": null
       }
     ],
