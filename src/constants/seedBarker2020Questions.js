@@ -2816,35 +2816,35 @@ export const BARKER_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Let $f(x) = 2x^4 - 8x^3 + 5$. Find the coordinates of the stationary points and determine their nature.",
     "opts": [
-      "Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Horizontal point of inflection at \\((0, 5)\\); local minimum at \\((3, -49)\\)",
+      "Local maximum at \\((0, 5)\\); local minimum at \\((3, -49)\\)",
+      "Local minimum at \\((0, 5)\\); local maximum at \\((3, -49)\\)",
+      "Horizontal point of inflection at \\((0, 5)\\); local maximum at \\((3, -49)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Find $f'(x)$, factorise, then use the second derivative test.",
-    "solution": "The correct answer is Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\).",
+    "solution": "The correct answer is Horizontal point of inflection at \\((0, 5)\\); local minimum at \\((3, -49)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Barker 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x)=8x^3-24x^2=8x^2(x-3)\\)",
-        "graphData": null
+        "explanation": "Step 1: Find the first derivative \\(f'(x)\\) and set it to zero to find the \\(x\\)-coordinates of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} f(x) &= 2x^4 - 8x^3 + 5 \\\\\\\\ f'(x) &= 8x^3 - 24x^2 \\\\\\\\ 8x^2(x - 3) &= 0 \\implies x = 0 \\text{ or } x = 3 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "x=0, quad x=3",
-        "graphData": null
+        "explanation": "Step 2: Substitute these \\(x\\)-values back into \\(f(x)\\) to find the corresponding \\(y\\)-coordinates.",
+        "workingOut": "$$ \\begin{aligned} f(0) &= 2(0)^4 - 8(0)^3 + 5 = 5 \\implies (0, 5) \\\\\\\\ f(3) &= 2(3)^4 - 8(3)^3 + 5 = 2(81) - 8(27) + 5 = 162 - 216 + 5 = -49 \\implies (3, -49) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Horizontal POI at }(0,5)\\)",
-        "graphData": null
+        "explanation": "Step 3: Find the second derivative \\(f''(x)\\) to determine the nature of the stationary points.",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{d}{dx}(8x^3 - 24x^2) = 24x^2 - 48x \\\\\\\\ x = 3: \\quad f''(3) &= 24(3)^2 - 48(3) = 216 - 144 = 72 > 0 \\implies \\text{Local Minimum at } (3, -49) \\end{aligned} $$"
       },
       {
-        "explanation": "Final answer: Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Horizontal point of inflection at \\((0, 5)\\); minimum at \\((3, -49)\\)",
-        "graphData": null
+        "explanation": "Step 4: At \\(x = 0\\), the second derivative is \\(f''(0) = 0\\). Since the second derivative test is inconclusive, we use the first derivative test around \\(x = 0\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Test } x = -1: \\quad f'(-1) &= 8(-1)^3 - 24(-1)^2 = -8 - 24 = -32 < 0 \\\\\\\\ \\text{Test } x = 1: \\quad f'(1) &= 8(1)^3 - 24(1)^2 = 8 - 24 = -16 < 0 \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 5: The gradient is negative on both sides of \\(x = 0\\), meaning the function continues to decrease. Therefore, \\((0, 5)\\) is a horizontal point of inflection.",
+        "workingOut": "$$ \\therefore \\text{Horizontal point of inflection at } (0, 5) \\text{ and local minimum at } (3, -49) $$"
       }
     ],
     "graphData": null,
@@ -2865,16 +2865,24 @@ export const BARKER_2020_QUESTIONS = [
     "solution": "A sketch of \\(y = f(x)\\) showing a horizontal point of inflection at \\((0, 6)\\) and a local minimum at \\((2, -10)\\). The curve decreases for \\(x < 2\\) and increases for \\(x > 2\\).<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#333\" stroke-width=\"2\" />\n  <line x1=\"140\" y1=\"20\" x2=\"140\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" />\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"210\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"150\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"125\" y=\"235\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"56.0,11.6 59.5,32.7 63.0,51.7 66.5,68.7 70.0,84.0 73.5,97.6 77.0,109.6 80.5,120.2 84.0,129.4 87.5,137.4 91.0,144.3 94.5,150.1 98.0,155.1 101.5,159.2 105.0,162.5 108.5,165.2 112.0,167.3 115.5,168.9 119.0,170.1 122.5,170.9 126.0,171.4 129.5,171.8 133.0,171.9 136.5,172.0 140.0,172.0 143.5,172.0 147.0,172.1 150.5,172.2 154.0,172.5 157.5,172.9 161.0,173.5 164.5,174.4 168.0,175.5 171.5,176.8 175.0,178.5 178.5,180.5 182.0,182.7 185.5,185.3 189.0,188.2 192.5,191.4 196.0,194.9 199.5,198.8 203.0,202.9 206.5,207.3 210.0,212.0 213.5,216.9 217.0,222.0 220.5,227.4 224.0,232.8 227.5,238.4 231.0,244.1 234.5,249.7 238.0,255.4 241.5,261.0 245.0,266.5 248.5,271.8 252.0,276.9 255.5,281.6 259.0,286.0 262.5,289.9 266.0,293.3 269.5,296.1 273.0,298.2 276.5,299.5 280.0,300.0 283.5,299.5 287.0,297.9 290.5,295.2 294.0,291.3 297.5,285.9 301.0,279.1 304.5,270.6 308.0,260.5 311.5,248.5 315.0,234.5 318.5,218.4 322.0,200.1 325.5,179.4 329.0,156.3 332.5,130.4 336.0,101.8 339.5,70.1 343.0,35.4\" />\n  \n  <!-- Horizontal POI (0, 6) -->\n  <circle cx=\"140\" cy=\"172\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"75\" y=\"165\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">POI (0, 6)</text>\n\n  <!-- Local Min (2, -10) -->\n  <circle cx=\"280\" cy=\"296\" r=\"4\" fill=\"#dc2626\" /> <!-- Note: (2,-10) maps to Y=300 exactly. Let's adjust slightly for text -->\n  <text x=\"285\" y=\"285\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Min (2, -10)</text>\n</svg>\n</div>\n",
     "solutionSteps": [
       {
-        "explanation": "Step 1: From part (a)(i), gather the critical points we found. We have a horizontal point of inflection at \\((0, 6)\\) and a local minimum at \\((2, -10)\\).",
+        "explanation": "Step 1: To sketch the graph, we first need to locate the stationary points by finding \\(f'(x)\\) and setting it to zero.",
+        "workingOut": "$$ \\begin{aligned} f(x) &= 3x^4 - 8x^3 + 6 \\\\\\\\ f'(x) &= 12x^3 - 24x^2 \\\\\\\\ 12x^2(x - 2) &= 0 \\implies x = 0 \\text{ or } x = 2 \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 2: Find the \\(y\\)-coordinates of these points by substituting the \\(x\\)-values back into \\(f(x)\\).",
+        "workingOut": "$$ \\begin{aligned} f(0) &= 3(0)^4 - 8(0)^3 + 6 = 6 \\implies (0, 6) \\\\\\\\ f(2) &= 3(2)^4 - 8(2)^3 + 6 = -10 \\implies (2, -10) \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 3: Determine the nature of each stationary point using the first or second derivative. At \\(x = 2\\), \\(f''(2) = 48 > 0\\), so it is a local minimum. At \\(x = 0\\), the gradient is negative on both sides (e.g., \\(f'(-1) = -36\\) and \\(f'(1) = -12\\)), meaning it is a horizontal point of inflection.",
         "workingOut": "$$ \\text{Stationary points: } (0, 6) \\text{ (Horizontal POI) and } (2, -10) \\text{ (Local Minimum)} $$"
       },
       {
-        "explanation": "Step 2: Determine the behavior of the curve as \\(x \\to \\pm\\infty\\). Since the leading term is \\(3x^4\\) (which has an even power and positive coefficient), the curve will go to \\(+\\infty\\) on both sides.",
+        "explanation": "Step 4: Determine the end behavior of the curve. Since the highest power term is \\(3x^4\\), as \\(x\\) becomes very large (positive or negative), \\(y\\) approaches positive infinity.",
         "workingOut": "$$ f(x) \\to +\\infty \\text{ as } x \\to \\pm\\infty $$"
       },
       {
-        "explanation": "Step 3: Plot the points \\((0, 6)\\) and \\((2, -10)\\) on a Cartesian plane. The curve comes down from the left, flattens out temporarily at \\((0, 6)\\) but continues downwards, reaches the minimum at \\((2, -10)\\), and then rises steeply to the right.",
-        "workingOut": "\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#333\" stroke-width=\"2\" />\n  <line x1=\"140\" y1=\"20\" x2=\"140\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" />\n  \n  <!-- Labels -->\n  <text x=\"370\" y=\"210\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"150\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"125\" y=\"235\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"56.0,11.6 59.5,32.7 63.0,51.7 66.5,68.7 70.0,84.0 73.5,97.6 77.0,109.6 80.5,120.2 84.0,129.4 87.5,137.4 91.0,144.3 94.5,150.1 98.0,155.1 101.5,159.2 105.0,162.5 108.5,165.2 112.0,167.3 115.5,168.9 119.0,170.1 122.5,170.9 126.0,171.4 129.5,171.8 133.0,171.9 136.5,172.0 140.0,172.0 143.5,172.0 147.0,172.1 150.5,172.2 154.0,172.5 157.5,172.9 161.0,173.5 164.5,174.4 168.0,175.5 171.5,176.8 175.0,178.5 178.5,180.5 182.0,182.7 185.5,185.3 189.0,188.2 192.5,191.4 196.0,194.9 199.5,198.8 203.0,202.9 206.5,207.3 210.0,212.0 213.5,216.9 217.0,222.0 220.5,227.4 224.0,232.8 227.5,238.4 231.0,244.1 234.5,249.7 238.0,255.4 241.5,261.0 245.0,266.5 248.5,271.8 252.0,276.9 255.5,281.6 259.0,286.0 262.5,289.9 266.0,293.3 269.5,296.1 273.0,298.2 276.5,299.5 280.0,300.0 283.5,299.5 287.0,297.9 290.5,295.2 294.0,291.3 297.5,285.9 301.0,279.1 304.5,270.6 308.0,260.5 311.5,248.5 315.0,234.5 318.5,218.4 322.0,200.1 325.5,179.4 329.0,156.3 332.5,130.4 336.0,101.8 339.5,70.1 343.0,35.4\" />\n  \n  <!-- Horizontal POI (0, 6) -->\n  <circle cx=\"140\" cy=\"172\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"75\" y=\"165\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">POI (0, 6)</text>\n\n  <!-- Local Min (2, -10) -->\n  <circle cx=\"280\" cy=\"296\" r=\"4\" fill=\"#dc2626\" /> <!-- Note: (2,-10) maps to Y=300 exactly. Let's adjust slightly for text -->\n  <text x=\"285\" y=\"285\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Min (2, -10)</text>\n</svg>\n</div>\n"
+        "explanation": "Step 5: Plot the points \\((0, 6)\\) and \\((2, -10)\\) on a Cartesian plane. The curve descends from the left, briefly flattens at \\((0, 6)\\) without turning, continues down to the minimum at \\((2, -10)\\), and then rises steeply to the right.",
+        "workingOut": "\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 400 300\" width=\"100%\" style=\"max-width:400px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <line x1=\"20\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#333\" stroke-width=\"2\" />\n  <line x1=\"140\" y1=\"20\" x2=\"140\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" />\n  <text x=\"370\" y=\"210\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"150\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"125\" y=\"235\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"56.0,11.6 59.5,32.7 63.0,51.7 66.5,68.7 70.0,84.0 73.5,97.6 77.0,109.6 80.5,120.2 84.0,129.4 87.5,137.4 91.0,144.3 94.5,150.1 98.0,155.1 101.5,159.2 105.0,162.5 108.5,165.2 112.0,167.3 115.5,168.9 119.0,170.1 122.5,170.9 126.0,171.4 129.5,171.8 133.0,171.9 136.5,172.0 140.0,172.0 143.5,172.0 147.0,172.1 150.5,172.2 154.0,172.5 157.5,172.9 161.0,173.5 164.5,174.4 168.0,175.5 171.5,176.8 175.0,178.5 178.5,180.5 182.0,182.7 185.5,185.3 189.0,188.2 192.5,191.4 196.0,194.9 199.5,198.8 203.0,202.9 206.5,207.3 210.0,212.0 213.5,216.9 217.0,222.0 220.5,227.4 224.0,232.8 227.5,238.4 231.0,244.1 234.5,249.7 238.0,255.4 241.5,261.0 245.0,266.5 248.5,271.8 252.0,276.9 255.5,281.6 259.0,286.0 262.5,289.9 266.0,293.3 269.5,296.1 273.0,298.2 276.5,299.5 280.0,300.0 283.5,299.5 287.0,297.9 290.5,295.2 294.0,291.3 297.5,285.9 301.0,279.1 304.5,270.6 308.0,260.5 311.5,248.5 315.0,234.5 318.5,218.4 322.0,200.1 325.5,179.4 329.0,156.3 332.5,130.4 336.0,101.8 339.5,70.1 343.0,35.4\" />\n  <circle cx=\"140\" cy=\"172\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"75\" y=\"165\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">POI (0, 6)</text>\n  <circle cx=\"280\" cy=\"296\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"285\" y=\"285\" fill=\"#dc2626\" font-size=\"12\" font-family=\"sans-serif\">Min (2, -10)</text>\n</svg>\n</div>\n"
       }
     ],
     "graphData": null,
