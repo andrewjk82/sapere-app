@@ -110,24 +110,16 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "solution": "The correct answer is \\(x < -\\dfrac{1}{6}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x) = 6x^2 + 2x\\)",
-        "graphData": null
+        "explanation": "To determine where a curve is concave down, we need to find its second derivative and set it to be strictly less than zero: \\(f''(x) < 0\\). First, let's find the first derivative \\(f'(x)\\).",
+        "workingOut": "f'(x) = \\frac{d}{dx}(2x^3 + x^2) = 6x^2 + 2x"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f''(x) = 12x + 2\\)",
-        "graphData": null
+        "explanation": "Next, find the second derivative \\(f''(x)\\) by differentiating the first derivative.",
+        "workingOut": "f''(x) = \\frac{d}{dx}(6x^2 + 2x) = 12x + 2"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f''(x) < 0 \\Rightarrow 12x + 2 < 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: x < -\\dfrac{1}{6}. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(x < -\\dfrac{1}{6}\\)",
-        "graphData": null
+        "explanation": "Finally, set the second derivative to be less than zero and solve for \\(x\\) to find the interval where the curve is concave down.",
+        "workingOut": "$$ \\begin{aligned} 12x + 2 &< 0 \\\\\\\\ 12x &< -2 \\\\\\\\ x &< -\\frac{1}{6} \\end{aligned} $$"
       }
     ],
     "graphData": null,
