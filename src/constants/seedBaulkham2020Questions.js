@@ -277,7 +277,7 @@ export const BAULKHAM_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "For the curve shown (a decreasing, concave up curve with a horizontal asymptote), which inequalities are correct?",
+    "question": "For the curve shown, which inequalities are correct?<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 300 200\" width=\"100%\" style=\"max-width:300px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"150\" x2=\"280\" y2=\"150\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"180\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"270\" y=\"140\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"60\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"35\" y=\"165\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"30.0,0.8 35.0,15.0 40.0,27.9 45.0,39.5 50.0,50.0 55.0,59.5 60.0,68.1 65.0,75.9 70.0,83.0 75.0,89.3 80.0,95.1 85.0,100.3 90.0,105.1 95.0,109.3 100.0,113.2 105.0,116.7 110.0,119.9 115.0,122.7 120.0,125.3 125.0,127.7 130.0,129.8 135.0,131.7 140.0,133.5 145.0,135.0 150.0,136.5 155.0,137.8 160.0,138.9 165.0,140.0 170.0,140.9 175.0,141.8 180.0,142.6 185.0,143.3 190.0,143.9 195.0,144.5 200.0,145.0 205.0,145.5 210.0,145.9 215.0,146.3 220.0,146.7 225.0,147.0 230.0,147.3 235.0,147.5 240.0,147.8 245.0,148.0 250.0,148.2\" />\n</svg>\n</div>\n",
     "opts": [
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\)",
       "\\(\\dfrac{dy}{dx} > 0\\) and \\(\\dfrac{d^2y}{dx^2} < 0\\)",
@@ -290,24 +290,16 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(\\dfrac{dy}{dx} < 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\frac{dy}{dx} < 0\\)",
-        "graphData": null
+        "explanation": "Step 1: First, observe the overall direction of the curve. As \\(x\\) increases (moving from left to right), the \\(y\\)-values are getting smaller. This means the function is strictly decreasing.",
+        "workingOut": "$$ \\text{Decreasing function} \\implies \\frac{dy}{dx} < 0 $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\frac{d^2y}{dx^2} > 0\\)",
-        "graphData": null
+        "explanation": "Step 2: Next, observe the shape (curvature) of the graph. The curve is bending upwards, similar to the shape of a cup (\\(\\cup\\)). A curve that bends upwards like this is called \"concave up\".",
+        "workingOut": "$$ \\text{Concave up} \\implies \\frac{d^2y}{dx^2} > 0 $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\dfrac{dy}{dx} < 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: \\dfrac{dy}{dx} < 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(\\dfrac{dy}{dx} < 0\\) and \\(\\dfrac{d^2y}{dx^2} > 0\\)",
-        "graphData": null
+        "explanation": "Step 3: Combine both observations. The curve must satisfy both conditions simultaneously.",
+        "workingOut": "$$ \\therefore \\frac{dy}{dx} < 0 \\text{ and } \\frac{d^2y}{dx^2} > 0 $$"
       }
     ],
     "graphData": null,
