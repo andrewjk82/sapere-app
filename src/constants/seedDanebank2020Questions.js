@@ -1388,19 +1388,7 @@ export const DANEBANK_2020_QUESTIONS = [
         }
       }
     ],
-    "graphData": {
-      "jsxGraph": {
-        "width": 400,
-        "height": 300,
-        "boundingbox": [
-          -2,
-          35,
-          5,
-          -10
-        ],
-        "script": "board.suspendUpdate();\nboard.create('arrow', [[-1.5,0],[4.8,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-5],[0,33]], {strokeColor:'black'});\nvar f=function(x){ return 4*Math.pow(x, 3) - Math.pow(x, 4); };\nboard.create('functiongraph', [f, -1.2, 4.2], {strokeColor:'#1d4ed8',strokeWidth:2});\nboard.create('point', [0, 0], {name:'(0,0)', size:2, color:'red', label:{offset:[10,-10]}});\nboard.create('point', [4, 0], {name:'(4,0)', size:2, color:'red', label:{offset:[10,10]}});\nboard.create('point', [3, 27], {name:'Max(3, 27)', size:2, color:'purple', label:{offset:[-30,15]}});\nboard.create('point', [2, 16], {name:'POI(2, 16)', size:2, color:'green', label:{offset:[10,-15]}});\nboard.create('text', [4.5, -2, 'x'], {fontSize:13});\nboard.create('text', [0.3, 31, 'y'], {fontSize:13});\nboard.unsuspendUpdate();"
-      }
-    },
+    "graphData": null,
     "isNew": true,
     "requiresManualGrading": true
   },
