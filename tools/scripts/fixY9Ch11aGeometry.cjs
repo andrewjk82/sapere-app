@@ -97,7 +97,7 @@ for (let i = 0; i < qOrig.length; i++) {
       },
       {
         explanation: "Step 4: Calculate the squares and find the final distance.",
-        workingOut: `$$ d = ${dist.str}${Number.isInteger(dist.d) ? ` = ${dist.d}` : ''} $$`,
+        workingOut: `$$ d = ${dist.str}${Number.isInteger(dist.d) ? ` = ${dist.d}` : ''} \\text{ units} $$`,
         graphData: null
       }
     ];
@@ -124,7 +124,7 @@ for (let i = 0; i < qOrig.length; i++) {
       for (let k = j+1; k < pts.length; k++) {
         const d = formatDist(pts[j], pts[k]);
         const name = (pts[j].label && pts[k].label) ? `${pts[j].label}${pts[k].label}` : `\\text{Distance}`;
-        calcOut.push(`${name} &= ${d.str}${Number.isInteger(d.d) ? ` = ${d.d}` : ''}`);
+        calcOut.push(`${name} &= ${d.str}${Number.isInteger(d.d) ? ` = ${d.d}` : ''} \\text{ units}`);
       }
     }
     

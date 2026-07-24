@@ -36,7 +36,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 $$",
+        "workingOut": "$$ d = \\sqrt{6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -97,7 +97,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{-8^2 + 0^2} = \\sqrt{64 + 0} = \\sqrt{64} = 8 $$",
+        "workingOut": "$$ d = \\sqrt{-8^2 + 0^2} = \\sqrt{64 + 0} = \\sqrt{64} = 8 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -158,7 +158,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{0^2 + 10^2} = \\sqrt{0 + 100} = \\sqrt{100} = 10 $$",
+        "workingOut": "$$ d = \\sqrt{0^2 + 10^2} = \\sqrt{0 + 100} = \\sqrt{100} = 10 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -219,7 +219,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{0^2 + 13^2} = \\sqrt{0 + 169} = \\sqrt{169} = 13 $$",
+        "workingOut": "$$ d = \\sqrt{0^2 + 13^2} = \\sqrt{0 + 169} = \\sqrt{169} = 13 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -280,7 +280,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10 $$",
+        "workingOut": "$$ d = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -341,7 +341,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 $$",
+        "workingOut": "$$ d = \\sqrt{3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -402,7 +402,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 $$",
+        "workingOut": "$$ d = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -463,7 +463,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17 $$",
+        "workingOut": "$$ d = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17 \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -524,7 +524,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} $$",
+        "workingOut": "$$ d = \\sqrt{2^2 + 2^2} = \\sqrt{4 + 4} = \\sqrt{8} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -585,7 +585,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{6^2 + -3^2} = \\sqrt{36 + 9} = \\sqrt{45} $$",
+        "workingOut": "$$ d = \\sqrt{6^2 + -3^2} = \\sqrt{36 + 9} = \\sqrt{45} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -646,7 +646,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} $$",
+        "workingOut": "$$ d = \\sqrt{4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -707,7 +707,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} $$",
+        "workingOut": "$$ d = \\sqrt{6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -768,7 +768,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{-3^2 + -2^2} = \\sqrt{9 + 4} = \\sqrt{13} $$",
+        "workingOut": "$$ d = \\sqrt{-3^2 + -2^2} = \\sqrt{9 + 4} = \\sqrt{13} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -829,7 +829,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{4^2 + -7^2} = \\sqrt{16 + 49} = \\sqrt{65} $$",
+        "workingOut": "$$ d = \\sqrt{4^2 + -7^2} = \\sqrt{16 + 49} = \\sqrt{65} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -890,7 +890,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{1^2 + -5^2} = \\sqrt{1 + 25} = \\sqrt{26} $$",
+        "workingOut": "$$ d = \\sqrt{1^2 + -5^2} = \\sqrt{1 + 25} = \\sqrt{26} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -951,7 +951,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 4: Calculate the squares and find the final distance.",
-        "workingOut": "$$ d = \\sqrt{3^2 + 5^2} = \\sqrt{9 + 25} = \\sqrt{34} $$",
+        "workingOut": "$$ d = \\sqrt{3^2 + 5^2} = \\sqrt{9 + 25} = \\sqrt{34} \\text{ units} $$",
         "graphData": {
           "jsxGraph": {
             "width": 400,
@@ -1007,7 +1007,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} MN &= \\sqrt{3^2 + -10^2} = \\sqrt{9 + 100} = \\sqrt{109} \\\\\\\\ MP &= \\sqrt{-5^2 + -7^2} = \\sqrt{25 + 49} = \\sqrt{74} \\\\\\\\ NP &= \\sqrt{-8^2 + 3^2} = \\sqrt{64 + 9} = \\sqrt{73} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} MN &= \\sqrt{3^2 + -10^2} = \\sqrt{9 + 100} = \\sqrt{109} \\text{ units} \\\\\\\\ MP &= \\sqrt{-5^2 + -7^2} = \\sqrt{25 + 49} = \\sqrt{74} \\text{ units} \\\\\\\\ NP &= \\sqrt{-8^2 + 3^2} = \\sqrt{64 + 9} = \\sqrt{73} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1061,7 +1061,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ AC &= \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5 \\\\\\\\ BC &= \\sqrt{7^2 + 7^2} = \\sqrt{49 + 49} = \\sqrt{98} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ AC &= \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ BC &= \\sqrt{7^2 + 7^2} = \\sqrt{49 + 49} = \\sqrt{98} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1122,7 +1122,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\text{ units} \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1183,7 +1183,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\text{ units} \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1244,7 +1244,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\text{ units} \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1305,7 +1305,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\\\\\\\ AC &= \\sqrt{10^2 + 0^2} = \\sqrt{100 + 0} = \\sqrt{100} = 10 \\text{ units} \\\\\\\\ BC &= \\sqrt{5^2 + -12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1366,7 +1366,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\text{ units} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\text{ units} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1427,7 +1427,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\text{ units} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\text{ units} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1488,7 +1488,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\text{ units} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\text{ units} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1549,7 +1549,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{-6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} \\text{ units} \\\\\\\\ PR &= \\sqrt{-4^2 + -2^2} = \\sqrt{16 + 4} = \\sqrt{20} \\text{ units} \\\\\\\\ QR &= \\sqrt{2^2 + -4^2} = \\sqrt{4 + 16} = \\sqrt{20} \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1603,7 +1603,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ AC &= \\sqrt{3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ BC &= \\sqrt{6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ AC &= \\sqrt{3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ BC &= \\sqrt{6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1657,7 +1657,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ AC &= \\sqrt{-5^2 + 10^2} = \\sqrt{25 + 100} = \\sqrt{125} \\\\\\\\ BC &= \\sqrt{-8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ AC &= \\sqrt{-5^2 + 10^2} = \\sqrt{25 + 100} = \\sqrt{125} \\text{ units} \\\\\\\\ BC &= \\sqrt{-8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1718,7 +1718,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{3^2 + 0^2} = \\sqrt{9 + 0} = \\sqrt{9} = 3 \\\\\\\\ PR &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ QR &= \\sqrt{0^2 + 4^2} = \\sqrt{0 + 16} = \\sqrt{16} = 4 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} PQ &= \\sqrt{3^2 + 0^2} = \\sqrt{9 + 0} = \\sqrt{9} = 3 \\text{ units} \\\\\\\\ PR &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ QR &= \\sqrt{0^2 + 4^2} = \\sqrt{0 + 16} = \\sqrt{16} = 4 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
@@ -1772,7 +1772,7 @@ export const Y9_CH11_QUESTIONS = [
       },
       {
         "explanation": "Step 3: Substitute the coordinates and calculate the lengths.",
-        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ AC &= \\sqrt{0^2 + 8^2} = \\sqrt{0 + 64} = \\sqrt{64} = 8 \\\\\\\\ AD &= \\sqrt{-3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ BC &= \\sqrt{-3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\\\\\\\ BD &= \\sqrt{-6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 \\\\\\\\ CD &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\end{aligned} $$",
+        "workingOut": "$$ \\begin{aligned} AB &= \\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ AC &= \\sqrt{0^2 + 8^2} = \\sqrt{0 + 64} = \\sqrt{64} = 8 \\text{ units} \\\\\\\\ AD &= \\sqrt{-3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ BC &= \\sqrt{-3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\\\\\\\ BD &= \\sqrt{-6^2 + 0^2} = \\sqrt{36 + 0} = \\sqrt{36} = 6 \\text{ units} \\\\\\\\ CD &= \\sqrt{-3^2 + -4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\text{ units} \\end{aligned} $$",
         "graphData": null
       },
       {
