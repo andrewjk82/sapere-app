@@ -2076,9 +2076,9 @@ export const CRANBROOK_2023_QUESTIONS = [
     "difficulty": "hard",
     "timeLimit": 180,
     "question": "Sketch the graph of $y = f(x) = 3x\\left(1 - \\dfrac{x}{4}\\right)^3 + 1$ in the interval $[0, 6]$, showing the stationary points, the $y$-intercept and the approximate location of the $x$-intercept.",
-    "answer": "Curve starts at \\((0, 1)\\), rises to the local maximum \\(\\left(1, \\dfrac{145}{64}\\right)\\), falls through the horizontal point of inflection \\((4, 1)\\), continues falling and crosses the \\(x\\)-axis between \\(x = 5\\) and \\(x = 6\\), ending at \\(\\left(6, -\\dfrac{5}{4}\\right)\\).",
+    "answer": "Curve starts at (0, 1), rises to the local maximum (1, 145/64), falls through the horizontal point of inflection (4, 1), continues falling and crosses the x-axis between x = 5 and x = 6, ending at (6, -5/4).",
     "hint": "Write a full structured solution for the teacher to mark.",
-    "solution": "Curve starts at \\((0, 1)\\), rises to the local maximum \\(\\left(1, \\dfrac{145}{64}\\right)\\), falls through the horizontal point of inflection \\((4, 1)\\), continues falling and crosses the \\(x\\)-axis between \\(x = 5\\) and \\(x = 6\\), ending at \\(\\left(6, -\\dfrac{5}{4}\\right)\\).",
+    "solution": "Curve starts at (0, 1), rises to the local maximum (1, 145/64), falls through the horizontal point of inflection (4, 1), continues falling and crosses the x-axis between x = 5 and x = 6, ending at (6, -5/4).",
     "solutionSteps": [
       {
         "explanation": "Mark the stationary points found in part (a): the local maximum at \\(\\left(1, dfrac{145}{64}\\right) \\approx (1, 2.27)\\) and the horizontal point of inflection at \\((4, 1)\\), where the tangent is horizontal but the curve keeps decreasing through it.",
