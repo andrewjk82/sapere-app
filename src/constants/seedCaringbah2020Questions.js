@@ -946,7 +946,7 @@ export const CARINGBAH_2020_QUESTIONS = [
         ],
         "graphData": null,
         "isNew": true,
-        "requiresManualGrading": false
+        "requiresManualGrading": true
       }
     ],
     "isNew": true,
