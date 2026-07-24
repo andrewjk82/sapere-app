@@ -8,7 +8,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc1s',
-    topicId: 'y11a-3B',
+    topicId: 'y12a-exam-girr',
     c: '3B',
     t: 'Functions, relations, and graphs',
     source: 'Girraween 2020 Trial Q1 (Similar)',
@@ -49,7 +49,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc2s',
-    topicId: 'y12a-7B',
+    topicId: 'y12a-exam-girr',
     c: '7B',
     t: 'Velocity and acceleration as derivatives',
     source: 'Girraween 2020 Trial Q2 (Similar)',
@@ -90,7 +90,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc3s',
-    topicId: 'y11a-12G',
+    topicId: 'y12a-exam-girr',
     c: '12G',
     t: 'Conditional probability',
     source: 'Girraween 2020 Trial Q3 (Similar)',
@@ -131,7 +131,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc4s',
-    topicId: 'y11a-2B',
+    topicId: 'y12a-exam-girr',
     c: '2B',
     t: 'Surds and their arithmetic',
     source: 'Girraween 2020 Trial Q4 (Similar)',
@@ -172,7 +172,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc5s',
-    topicId: 'y11a-4E',
+    topicId: 'y12a-exam-girr',
     c: '4E',
     t: 'The absolute value function',
     source: 'Girraween 2020 Trial Q5 (Similar)',
@@ -213,7 +213,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc6s',
-    topicId: 'y12a-5A',
+    topicId: 'y12a-exam-girr',
     c: '5A',
     t: 'Review of exponential functions base e',
     source: 'Girraween 2020 Trial Q6 (Similar)',
@@ -254,7 +254,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc7s',
-    topicId: 'y12a-6D',
+    topicId: 'y12a-exam-girr',
     c: '6D',
     t: 'Integrating the trig functions',
     source: 'Girraween 2020 Trial Q7 (Similar)',
@@ -295,7 +295,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc8s',
-    topicId: 'y11a-7C',
+    topicId: 'y12a-exam-girr',
     c: '7C',
     t: 'Equations of lines',
     source: 'Girraween 2020 Trial Q8 (Similar)',
@@ -336,7 +336,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc9s',
-    topicId: 'y12a-5B',
+    topicId: 'y12a-exam-girr',
     c: '5B',
     t: 'Differentiation of $e^x$',
     source: 'Girraween 2020 Trial Q9 (Similar)',
@@ -377,7 +377,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
   // ============================================================
   {
     id: 'girr2020-mc10s',
-    topicId: 'y12a-9A',
+    topicId: 'y12a-exam-girr',
     c: '9A',
     t: 'The language of statistics',
     source: 'Girraween 2020 Trial Q10 (Similar)',

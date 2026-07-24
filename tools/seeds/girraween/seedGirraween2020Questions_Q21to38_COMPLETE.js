@@ -9,7 +9,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc21',
-    topicId: 'y11a-3G',
+    topicId: 'y12a-exam-girr',
     c: '3G',
     t: 'The circle',
     source: 'Girraween 2020 Trial Q21',
@@ -62,7 +62,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc22',
-    topicId: 'y11a-9B',
+    topicId: 'y12a-exam-girr',
     c: '9B',
     t: 'Differentiation from first principles',
     source: 'Girraween 2020 Trial Q22',
@@ -115,7 +115,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc23',
-    topicId: 'y12a-4E',
+    topicId: 'y12a-exam-girr',
     c: '4E',
     t: 'Integrating to find a function',
     source: 'Girraween 2020 Trial Q23',
@@ -168,7 +168,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc24',
-    topicId: 'y11a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Domain and range',
     source: 'Girraween 2020 Trial Q24',
@@ -217,7 +217,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc25a',
-    topicId: 'y11a-4A',
+    topicId: 'y12a-exam-girr',
     c: '4A',
     t: 'Graphs of functions',
     source: 'Girraween 2020 Trial Q25a',
@@ -233,7 +233,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // ============================================================
   {
     id: 'girr2020-mc25b',
-    topicId: 'y11a-4A',
+    topicId: 'y12a-exam-girr',
     c: '4A',
     t: 'Absolute value equations',
     source: 'Girraween 2020 Trial Q25b',
@@ -274,7 +274,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc26a',
-    topicId: 'y12a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Differentiation of $e^x$ and related functions',
     source: 'Girraween 2020 Trial Q26a',
@@ -312,7 +312,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc26b',
-    topicId: 'y12a-4E',
+    topicId: 'y12a-exam-girr',
     c: '4E',
     t: 'Integration techniques',
     source: 'Girraween 2020 Trial Q26b',
@@ -352,7 +352,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc27',
-    topicId: 'y11a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Transformation of functions',
     source: 'Girraween 2020 Trial Q27',
@@ -372,7 +372,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   // Q28-Q38: Basic structures (ready for full expansion)
   {
     id: 'girr2020-mc28a',
-    topicId: 'y11a-6B',
+    topicId: 'y12a-exam-girr',
     c: '6B',
     t: 'Angles of elevation and depression',
     source: 'Girraween 2020 Trial Q28a',
@@ -385,7 +385,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc28b',
-    topicId: 'y11a-6B',
+    topicId: 'y12a-exam-girr',
     c: '6B',
     t: 'Trigonometric calculations',
     source: 'Girraween 2020 Trial Q28b',
@@ -403,7 +403,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc29a',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Using derivatives to sketch curves',
     source: 'Girraween 2020 Trial Q29a',
@@ -421,7 +421,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc29b',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Maximum and minimum values',
     source: 'Girraween 2020 Trial Q29b',
@@ -439,7 +439,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc29c',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Integration and area',
     source: 'Girraween 2020 Trial Q29c',
@@ -457,7 +457,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
 
   {
     id: 'girr2020-mc29d',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q29d',
@@ -469,20 +469,20 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   },
 
   // Q30-Q38: Remaining questions in simplified format for completion
-  {id: 'girr2020-mc30a', topicId: 'y12a-5A', c: '5A', t: 'Exponential models', source: 'Girraween 2020 Trial Q30a', type: 'multiple_choice', difficulty: 'easy', q: 'What is the length at birth ($t=0$)?', a: '2', opts: ['$0.4$ m', '$0.5$ m', '$0.6$ m', '$1.0$ m']},
-  {id: 'girr2020-mc30b', topicId: 'y12a-5A', c: '5A', t: 'Solving exponential equations', source: 'Girraween 2020 Trial Q30b', type: 'multiple_choice', difficulty: 'medium', q: 'If $L = 4.45$ when $t = 3$, find $k$.', a: '2', opts: ['$0.50$', '$0.55$', '$0.60$', '$0.65$']},
-  {id: 'girr2020-mc30c', topicId: 'y12a-5A', c: '5A', t: 'Limiting values', source: 'Girraween 2020 Trial Q30c', type: 'multiple_choice', difficulty: 'easy', q: 'Find the limiting length.', a: '1', opts: ['$4.6$ m', '$5.2$ m', '$10$ m', '$\\infty$']},
-  {id: 'girr2020-mc31', topicId: 'y12a-3A', c: '3A', t: 'Increasing functions', source: 'Girraween 2020 Trial Q31', type: 'multiple_choice', difficulty: 'medium', q: 'Find values of $k$ for increasing function.', a: '3', opts: ['$k > 0$', '$k > 1$', '$k > 2$', '$k \\geq 3$']},
-  {id: 'girr2020-mc32', topicId: 'y11a-2D', c: '2D', t: 'Rationalising surds', source: 'Girraween 2020 Trial Q32', type: 'multiple_choice', difficulty: 'easy', q: 'Find integers $a, b$ such that $\\frac{1}{\\sqrt{5}-2} = a + b\\sqrt{5}$.', a: '1', opts: ['$a=2, b=1$', '$a=2, b=1$', '$a=-2, b=1$', '$a=-2, b=-1$']},
-  {id: 'girr2020-mc33', topicId: 'y12a-3G', c: '3G', t: 'Optimisation problems', source: 'Girraween 2020 Trial Q33', type: 'multiple_choice', difficulty: 'hard', q: 'Minimize combined area of square and circle from 28m wire.', a: '1', opts: ['Square: 10m, Circle: 18m', 'Square: $\\frac{112}{\\pi+4}$m, Circle: $28-\\frac{112}{\\pi+4}$m', 'Square: 8m, Circle: 20m', 'Square: 12m, Circle: 16m']},
-  {id: 'girr2020-mc34a', topicId: 'y12a-7B', c: '7B', t: 'Kinematics', source: 'Girraween 2020 Trial Q34a', type: 'multiple_choice', difficulty: 'medium', q: 'When does car stop? $x = t^2(2 - \\frac{t}{3})$', a: '2', opts: ['$t=2$', '$t=3$', '$t=4$', '$t=6$']},
-  {id: 'girr2020-mc34b', topicId: 'y12a-7B', c: '7B', t: 'Distance calculations', source: 'Girraween 2020 Trial Q34b', type: 'multiple_choice', difficulty: 'medium', q: 'Find distance P to Q.', a: '2', opts: ['$16$ m', '$\\frac{25}{2}$ m', '$\\frac{32}{3}$ m', '$18$ m']},
-  {id: 'girr2020-mc35a', topicId: 'y12a-1C', c: '1C', t: 'Quadratic equations', source: 'Girraween 2020 Trial Q35', type: 'multiple_choice', difficulty: 'hard', q: 'Q35: Part of multi-step quadratic problem', a: '0', opts: ['See full exam']},
-  {id: 'girr2020-mc36a', topicId: 'y12a-8A', c: '8A', t: 'Arithmetic sequences', source: 'Girraween 2020 Trial Q36', type: 'multiple_choice', difficulty: 'hard', q: 'Q36: Sequence problem', a: '0', opts: ['See full exam']},
-  {id: 'girr2020-mc37a', topicId: 'y11a-6A', c: '6A', t: 'Trigonometric equations', source: 'Girraween 2020 Trial Q37a', type: 'multiple_choice', difficulty: 'hard', q: 'Q37a: Trig transformation', a: '0', opts: ['See full exam']},
-  {id: 'girr2020-mc37b', topicId: 'y11a-6A', c: '6A', t: 'Graph sketching', source: 'Girraween 2020 Trial Q37b', type: 'teacher_review', difficulty: 'hard', q: 'Sketch trig transformation. **(Teacher)**', a: 'sketch', opts: ['Sketch']},
-  {id: 'girr2020-mc38a', topicId: 'y12a-4C', c: '4C', t: 'Numerical integration', source: 'Girraween 2020 Trial Q38a', type: 'multiple_choice', difficulty: 'hard', q: 'Q38a: Trapezoidal rule', a: '0', opts: ['See full exam']},
-  {id: 'girr2020-mc38b', topicId: 'y12a-4C', c: '4C', t: 'Integration analysis', source: 'Girraween 2020 Trial Q38b', type: 'teacher_review', difficulty: 'hard', q: 'Compare methods. **(Teacher)**', a: 'analysis', opts: ['Analysis']}
+  {id: 'girr2020-mc30a', topicId: 'y12a-exam-girr', c: '5A', t: 'Exponential models', source: 'Girraween 2020 Trial Q30a', type: 'multiple_choice', difficulty: 'easy', q: 'What is the length at birth ($t=0$)?', a: '2', opts: ['$0.4$ m', '$0.5$ m', '$0.6$ m', '$1.0$ m']},
+  {id: 'girr2020-mc30b', topicId: 'y12a-exam-girr', c: '5A', t: 'Solving exponential equations', source: 'Girraween 2020 Trial Q30b', type: 'multiple_choice', difficulty: 'medium', q: 'If $L = 4.45$ when $t = 3$, find $k$.', a: '2', opts: ['$0.50$', '$0.55$', '$0.60$', '$0.65$']},
+  {id: 'girr2020-mc30c', topicId: 'y12a-exam-girr', c: '5A', t: 'Limiting values', source: 'Girraween 2020 Trial Q30c', type: 'multiple_choice', difficulty: 'easy', q: 'Find the limiting length.', a: '1', opts: ['$4.6$ m', '$5.2$ m', '$10$ m', '$\\infty$']},
+  {id: 'girr2020-mc31', topicId: 'y12a-exam-girr', c: '3A', t: 'Increasing functions', source: 'Girraween 2020 Trial Q31', type: 'multiple_choice', difficulty: 'medium', q: 'Find values of $k$ for increasing function.', a: '3', opts: ['$k > 0$', '$k > 1$', '$k > 2$', '$k \\geq 3$']},
+  {id: 'girr2020-mc32', topicId: 'y12a-exam-girr', c: '2D', t: 'Rationalising surds', source: 'Girraween 2020 Trial Q32', type: 'multiple_choice', difficulty: 'easy', q: 'Find integers $a, b$ such that $\\frac{1}{\\sqrt{5}-2} = a + b\\sqrt{5}$.', a: '1', opts: ['$a=2, b=1$', '$a=2, b=1$', '$a=-2, b=1$', '$a=-2, b=-1$']},
+  {id: 'girr2020-mc33', topicId: 'y12a-exam-girr', c: '3G', t: 'Optimisation problems', source: 'Girraween 2020 Trial Q33', type: 'multiple_choice', difficulty: 'hard', q: 'Minimize combined area of square and circle from 28m wire.', a: '1', opts: ['Square: 10m, Circle: 18m', 'Square: $\\frac{112}{\\pi+4}$m, Circle: $28-\\frac{112}{\\pi+4}$m', 'Square: 8m, Circle: 20m', 'Square: 12m, Circle: 16m']},
+  {id: 'girr2020-mc34a', topicId: 'y12a-exam-girr', c: '7B', t: 'Kinematics', source: 'Girraween 2020 Trial Q34a', type: 'multiple_choice', difficulty: 'medium', q: 'When does car stop? $x = t^2(2 - \\frac{t}{3})$', a: '2', opts: ['$t=2$', '$t=3$', '$t=4$', '$t=6$']},
+  {id: 'girr2020-mc34b', topicId: 'y12a-exam-girr', c: '7B', t: 'Distance calculations', source: 'Girraween 2020 Trial Q34b', type: 'multiple_choice', difficulty: 'medium', q: 'Find distance P to Q.', a: '2', opts: ['$16$ m', '$\\frac{25}{2}$ m', '$\\frac{32}{3}$ m', '$18$ m']},
+  {id: 'girr2020-mc35a', topicId: 'y12a-exam-girr', c: '1C', t: 'Quadratic equations', source: 'Girraween 2020 Trial Q35', type: 'multiple_choice', difficulty: 'hard', q: 'Q35: Part of multi-step quadratic problem', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc36a', topicId: 'y12a-exam-girr', c: '8A', t: 'Arithmetic sequences', source: 'Girraween 2020 Trial Q36', type: 'multiple_choice', difficulty: 'hard', q: 'Q36: Sequence problem', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc37a', topicId: 'y12a-exam-girr', c: '6A', t: 'Trigonometric equations', source: 'Girraween 2020 Trial Q37a', type: 'multiple_choice', difficulty: 'hard', q: 'Q37a: Trig transformation', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc37b', topicId: 'y12a-exam-girr', c: '6A', t: 'Graph sketching', source: 'Girraween 2020 Trial Q37b', type: 'teacher_review', difficulty: 'hard', q: 'Sketch trig transformation. **(Teacher)**', a: 'sketch', opts: ['Sketch']},
+  {id: 'girr2020-mc38a', topicId: 'y12a-exam-girr', c: '4C', t: 'Numerical integration', source: 'Girraween 2020 Trial Q38a', type: 'multiple_choice', difficulty: 'hard', q: 'Q38a: Trapezoidal rule', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc38b', topicId: 'y12a-exam-girr', c: '4C', t: 'Integration analysis', source: 'Girraween 2020 Trial Q38b', type: 'teacher_review', difficulty: 'hard', q: 'Compare methods. **(Teacher)**', a: 'analysis', opts: ['Analysis']}
 ];
 
 export default GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE;

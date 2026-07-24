@@ -4,7 +4,7 @@
 export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
   {
     id: 'girr2020-mc21s',
-    topicId: 'y11a-3G',
+    topicId: 'y12a-exam-girr',
     c: '3G',
     t: 'The circle',
     source: 'Girraween 2020 Trial Q21 (Similar)',
@@ -23,7 +23,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc22s',
-    topicId: 'y11a-9B',
+    topicId: 'y12a-exam-girr',
     c: '9B',
     t: 'Differentiation from first principles',
     source: 'Girraween 2020 Trial Q22 (Similar)',
@@ -42,7 +42,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc23s',
-    topicId: 'y12a-4E',
+    topicId: 'y12a-exam-girr',
     c: '4E',
     t: 'Integrating to find a function',
     source: 'Girraween 2020 Trial Q23 (Similar)',
@@ -61,7 +61,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc24s',
-    topicId: 'y11a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Domain and range',
     source: 'Girraween 2020 Trial Q24 (Similar)',
@@ -80,7 +80,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc25as',
-    topicId: 'y11a-4A',
+    topicId: 'y12a-exam-girr',
     c: '4A',
     t: 'Graphs of functions',
     source: 'Girraween 2020 Trial Q25a (Similar)',
@@ -93,7 +93,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc25bs',
-    topicId: 'y11a-4A',
+    topicId: 'y12a-exam-girr',
     c: '4A',
     t: 'Absolute value equations',
     source: 'Girraween 2020 Trial Q25b (Similar)',
@@ -112,7 +112,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc26as',
-    topicId: 'y12a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Product rule for differentiation',
     source: 'Girraween 2020 Trial Q26a (Similar)',
@@ -131,7 +131,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc26bs',
-    topicId: 'y12a-4E',
+    topicId: 'y12a-exam-girr',
     c: '4E',
     t: 'Integration techniques',
     source: 'Girraween 2020 Trial Q26b (Similar)',
@@ -150,7 +150,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc27s',
-    topicId: 'y11a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Transformation of functions',
     source: 'Girraween 2020 Trial Q27 (Similar)',
@@ -169,7 +169,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc28as',
-    topicId: 'y11a-6B',
+    topicId: 'y12a-exam-girr',
     c: '6B',
     t: 'Angles of elevation and depression',
     source: 'Girraween 2020 Trial Q28a (Similar)',
@@ -182,7 +182,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc28bs',
-    topicId: 'y11a-6B',
+    topicId: 'y12a-exam-girr',
     c: '6B',
     t: 'Trigonometric calculations',
     source: 'Girraween 2020 Trial Q28b (Similar)',
@@ -201,7 +201,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc29as',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Using derivatives to sketch curves',
     source: 'Girraween 2020 Trial Q29a (Similar)',
@@ -220,7 +220,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc29bs',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Maximum and minimum values',
     source: 'Girraween 2020 Trial Q29b (Similar)',
@@ -239,7 +239,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc29cs',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Integration and area',
     source: 'Girraween 2020 Trial Q29c (Similar)',
@@ -258,7 +258,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc29ds',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q29d (Similar)',
@@ -271,7 +271,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc30as',
-    topicId: 'y12a-5A',
+    topicId: 'y12a-exam-girr',
     c: '5A',
     t: 'Exponential models',
     source: 'Girraween 2020 Trial Q30a (Similar)',
@@ -290,7 +290,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc30bs',
-    topicId: 'y12a-5A',
+    topicId: 'y12a-exam-girr',
     c: '5A',
     t: 'Solving exponential equations',
     source: 'Girraween 2020 Trial Q30b (Similar)',
@@ -309,7 +309,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc30cs',
-    topicId: 'y12a-5A',
+    topicId: 'y12a-exam-girr',
     c: '5A',
     t: 'Limiting values',
     source: 'Girraween 2020 Trial Q30c (Similar)',
@@ -328,7 +328,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc31s',
-    topicId: 'y12a-3A',
+    topicId: 'y12a-exam-girr',
     c: '3A',
     t: 'Increasing and decreasing functions',
     source: 'Girraween 2020 Trial Q31 (Similar)',
@@ -347,7 +347,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc32s',
-    topicId: 'y11a-2D',
+    topicId: 'y12a-exam-girr',
     c: '2D',
     t: 'Rationalising surds',
     source: 'Girraween 2020 Trial Q32 (Similar)',
@@ -366,7 +366,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc33s',
-    topicId: 'y12a-3G',
+    topicId: 'y12a-exam-girr',
     c: '3G',
     t: 'Optimisation problems',
     source: 'Girraween 2020 Trial Q33 (Similar)',
@@ -385,7 +385,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc34as',
-    topicId: 'y12a-7B',
+    topicId: 'y12a-exam-girr',
     c: '7B',
     t: 'Kinematics',
     source: 'Girraween 2020 Trial Q34a (Similar)',
@@ -404,7 +404,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc34bs',
-    topicId: 'y12a-7B',
+    topicId: 'y12a-exam-girr',
     c: '7B',
     t: 'Distance calculations',
     source: 'Girraween 2020 Trial Q34b (Similar)',
@@ -424,7 +424,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
   // Q35-Q38 use generic placeholders since these are complex multi-part problems
   {
     id: 'girr2020-mc35as',
-    topicId: 'y12a-1C',
+    topicId: 'y12a-exam-girr',
     c: '1C',
     t: 'Quadratic equations',
     source: 'Girraween 2020 Trial Q35a (Similar)',
@@ -437,7 +437,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc36as',
-    topicId: 'y12a-8A',
+    topicId: 'y12a-exam-girr',
     c: '8A',
     t: 'Arithmetic sequences',
     source: 'Girraween 2020 Trial Q36a (Similar)',
@@ -450,7 +450,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc37as',
-    topicId: 'y11a-6A',
+    topicId: 'y12a-exam-girr',
     c: '6A',
     t: 'Trigonometric equations',
     source: 'Girraween 2020 Trial Q37a (Similar)',
@@ -463,7 +463,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc37bs',
-    topicId: 'y11a-6A',
+    topicId: 'y12a-exam-girr',
     c: '6A',
     t: 'Graph sketching',
     source: 'Girraween 2020 Trial Q37b (Similar)',
@@ -476,7 +476,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc38as',
-    topicId: 'y12a-4C',
+    topicId: 'y12a-exam-girr',
     c: '4C',
     t: 'Numerical integration',
     source: 'Girraween 2020 Trial Q38a (Similar)',
@@ -489,7 +489,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART3 = [
 
   {
     id: 'girr2020-mc38bs',
-    topicId: 'y12a-4C',
+    topicId: 'y12a-exam-girr',
     c: '4C',
     t: 'Integration techniques',
     source: 'Girraween 2020 Trial Q38b (Similar)',

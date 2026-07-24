@@ -4,7 +4,7 @@
 export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
   {
     id: 'girr2020-mc11',
-    topicId: 'y12a-5C',
+    topicId: 'y12a-exam-girr',
     c: '5C',
     t: 'The derivative as a rate of change',
     source: 'Girraween 2020 Trial Q11',
@@ -46,7 +46,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc12',
-    topicId: 'y12a-2B',
+    topicId: 'y12a-exam-girr',
     c: '2B',
     t: 'The cosine rule',
     source: 'Girraween 2020 Trial Q12',
@@ -88,7 +88,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc13',
-    topicId: 'y11a-12D',
+    topicId: 'y12a-exam-girr',
     c: '12D',
     t: 'Permutations and combinations',
     source: 'Girraween 2020 Trial Q13',
@@ -130,7 +130,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc14a',
-    topicId: 'y12a-3C',
+    topicId: 'y12a-exam-girr',
     c: '3C',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q14a',
@@ -168,7 +168,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc14b',
-    topicId: 'y12a-3C',
+    topicId: 'y12a-exam-girr',
     c: '3C',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q14b',
@@ -183,7 +183,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc15a',
-    topicId: 'y12a-1A',
+    topicId: 'y12a-exam-girr',
     c: '1A',
     t: 'Simultaneous equations',
     source: 'Girraween 2020 Trial Q15a',
@@ -213,7 +213,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc15b',
-    topicId: 'y12a-1A',
+    topicId: 'y12a-exam-girr',
     c: '1A',
     t: 'Simultaneous equations',
     source: 'Girraween 2020 Trial Q15b',
@@ -251,7 +251,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc16',
-    topicId: 'y12a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Differentiation of $e^x$ and related functions',
     source: 'Girraween 2020 Trial Q16',
@@ -281,15 +281,15 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
         workingOut: 'u = \\cos 2x \\quad \\frac{du}{dx} = -\\sin 2x \\cdot 2 = -2\\sin 2x'
       },
       {
-        explanation: 'Using the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = e^{\\cos 2x} \\cdot (-2\\sin 2x) = -2\\sin(2x) e^{\\cos 2x}$.',
-        workingOut: '\\frac{dy}{dx} = e^{\\cos 2x} \\cdot (-2\\sin 2x) = -2\\sin(2x) e^{\\cos 2x}'
+        explanation: 'Using the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx} = e^{\\cos 2x} \\cdot (-2\\sin 2x)$, which gives the final derivative.',
+        workingOut: '\\frac{dy}{dx} = -2\\sin(2x) e^{\\cos 2x}'
       }
     ]
   },
 
   {
     id: 'girr2020-mc17',
-    topicId: 'y11a-5B',
+    topicId: 'y12a-exam-girr',
     c: '5B',
     t: 'Composition of functions',
     source: 'Girraween 2020 Trial Q17',
@@ -327,7 +327,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc18a',
-    topicId: 'y11a-8E',
+    topicId: 'y12a-exam-girr',
     c: '8E',
     t: 'Sector, arc and segment',
     source: 'Girraween 2020 Trial Q18a',
@@ -365,7 +365,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc18b',
-    topicId: 'y11a-8E',
+    topicId: 'y12a-exam-girr',
     c: '8E',
     t: 'Sector, arc and segment',
     source: 'Girraween 2020 Trial Q18b',
@@ -403,7 +403,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc19a',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19a',
@@ -441,7 +441,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc19b',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19b',
@@ -479,7 +479,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc19c',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19c',
@@ -517,7 +517,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
 
   {
     id: 'girr2020-mc20',
-    topicId: 'y12a-6D',
+    topicId: 'y12a-exam-girr',
     c: '6D',
     t: 'Differentiating trigonometric functions',
     source: 'Girraween 2020 Trial Q20',

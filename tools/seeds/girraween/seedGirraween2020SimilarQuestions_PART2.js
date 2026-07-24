@@ -7,14 +7,14 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc11s',
-    topicId: 'y12a-5C',
+    topicId: 'y12a-exam-girr',
     c: '5C',
     t: 'The derivative as a rate of change',
     source: 'Girraween 2020 Trial Q11 (Similar)',
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find the equation of the tangent to $y = \\sqrt{2x}$ at the point where $x = 8$.',
-    a: '1',
+    a: '0',
     opts: [
       '$x - 4y + 8 = 0$',
       '$x - 8y + 16 = 0$',
@@ -22,7 +22,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       '$2x - 8y + 16 = 0$'
     ],
     h: 'At $x = 8$, find $y = \\sqrt{16} = 4$. The point is $(8, 4)$. Find the gradient from the derivative.',
-    s: '$\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}$. At $x = 8$: gradient $= \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$. Equation: $y - 4 = \\frac{1}{4}(x - 8)$, which simplifies to $x - 8y + 16 = 0$.',
+    s: '$\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}$. At $x = 8$: gradient $= \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$. Equation: $y - 4 = \\frac{1}{4}(x - 8)$, which simplifies to $x - 4y + 8 = 0$.',
     solutionSteps: [
       {
         explanation: 'To find the equation of a tangent line at a point, we need: (1) the coordinates of the point of tangency, and (2) the gradient at that point. First, find the $y$-coordinate when $x = 8$.',
@@ -30,15 +30,15 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       },
       {
         explanation: 'Find the derivative: $y = \\sqrt{2x} = (2x)^{1/2}$. Using the chain rule: $\\frac{dy}{dx} = \\frac{1}{2}(2x)^{-1/2} \\cdot 2 = \\frac{1}{\\sqrt{2x}}$.',
-        workingOut: '\\frac{dy}{dx} = \\frac{1}{2\\sqrt{2x}}'
+        workingOut: '\\frac{dy}{dx} = \\frac{1}{\\sqrt{2x}}'
       },
       {
-        explanation: 'At $x = 8$, the gradient is: $\\frac{dy}{dx}\\bigg|_{x=8} = \\frac{1}{2\\sqrt{16}} = \\frac{1}{2 \\cdot 4} = \\frac{1}{8}$.',
-        workingOut: '\\text{Gradient at } x = 8: \\quad m = \\frac{1}{8}'
+        explanation: 'At $x = 8$, the gradient is: $\\frac{dy}{dx}\\bigg|_{x=8} = \\frac{1}{\\sqrt{16}} = \\frac{1}{4}$.',
+        workingOut: '\\text{Gradient at } x = 8: \\quad m = \\frac{1}{4}'
       },
       {
-        explanation: 'Using point-slope form with $(8, 4)$ and $m = \\frac{1}{8}$: $y - 4 = \\frac{1}{8}(x - 8)$. Multiply by 8: $8y - 32 = x - 8$, giving $x - 8y + 24 = 0$... Wait, let me recalculate. $8y - 32 = x - 8$ means $x - 8y + 32 - 8 = 0$, so $x - 8y + 24 = 0$. But the answer option is $x - 8y + 16 = 0$. Let me verify using the derivative more carefully.',
-        workingOut: 'y - 4 = \\frac{1}{8}(x - 8) \\quad \\Rightarrow \\quad 8(y-4) = x - 8 \\quad \\Rightarrow \\quad x - 8y + 24 = 0'
+        explanation: 'Using point-slope form with $(8, 4)$ and $m = \\frac{1}{4}$: $y - 4 = \\frac{1}{4}(x - 8)$. Multiply both sides by 4: $4y - 16 = x - 8$, giving $x - 4y + 8 = 0$.',
+        workingOut: 'y - 4 = \\frac{1}{4}(x - 8) \\quad \\Rightarrow \\quad 4(y-4) = x - 8 \\quad \\Rightarrow \\quad x - 4y + 8 = 0'
       }
     ]
   },
@@ -48,7 +48,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc12s',
-    topicId: 'y12a-2B',
+    topicId: 'y12a-exam-girr',
     c: '2B',
     t: 'The cosine rule',
     source: 'Girraween 2020 Trial Q12 (Similar)',
@@ -70,7 +70,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc13s',
-    topicId: 'y11a-12D',
+    topicId: 'y12a-exam-girr',
     c: '12D',
     t: 'Permutations and combinations',
     source: 'Girraween 2020 Trial Q13 (Similar)',
@@ -92,7 +92,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc14as',
-    topicId: 'y12a-3C',
+    topicId: 'y12a-exam-girr',
     c: '3C',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q14a (Similar)',
@@ -114,7 +114,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc14bs',
-    topicId: 'y12a-3C',
+    topicId: 'y12a-exam-girr',
     c: '3C',
     t: 'Curve sketching',
     source: 'Girraween 2020 Trial Q14b (Similar)',
@@ -130,7 +130,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc15as',
-    topicId: 'y12a-1A',
+    topicId: 'y12a-exam-girr',
     c: '1A',
     t: 'Simultaneous equations',
     source: 'Girraween 2020 Trial Q15a (Similar)',
@@ -152,7 +152,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc15bs',
-    topicId: 'y12a-1A',
+    topicId: 'y12a-exam-girr',
     c: '1A',
     t: 'Simultaneous equations',
     source: 'Girraween 2020 Trial Q15b (Similar)',
@@ -174,7 +174,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc16s',
-    topicId: 'y12a-5D',
+    topicId: 'y12a-exam-girr',
     c: '5D',
     t: 'Differentiation of $e^x$ and related functions',
     source: 'Girraween 2020 Trial Q16 (Similar)',
@@ -196,7 +196,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc17s',
-    topicId: 'y11a-5B',
+    topicId: 'y12a-exam-girr',
     c: '5B',
     t: 'Composition of functions',
     source: 'Girraween 2020 Trial Q17 (Similar)',
@@ -218,7 +218,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc18as',
-    topicId: 'y11a-8E',
+    topicId: 'y12a-exam-girr',
     c: '8E',
     t: 'Sector, arc and segment',
     source: 'Girraween 2020 Trial Q18a (Similar)',
@@ -240,7 +240,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc18bs',
-    topicId: 'y11a-8E',
+    topicId: 'y12a-exam-girr',
     c: '8E',
     t: 'Sector, arc and segment',
     source: 'Girraween 2020 Trial Q18b (Similar)',
@@ -262,7 +262,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc19as',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19a (Similar)',
@@ -284,7 +284,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc19bs',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19b (Similar)',
@@ -306,7 +306,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc19cs',
-    topicId: 'y12a-10B',
+    topicId: 'y12a-exam-girr',
     c: '10B',
     t: 'Discrete random variables',
     source: 'Girraween 2020 Trial Q19c (Similar)',
@@ -328,7 +328,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
   // ============================================================
   {
     id: 'girr2020-mc20s',
-    topicId: 'y12a-6D',
+    topicId: 'y12a-exam-girr',
     c: '6D',
     t: 'Differentiating trigonometric functions',
     source: 'Girraween 2020 Trial Q20 (Similar)',
