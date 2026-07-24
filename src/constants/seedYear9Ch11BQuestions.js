@@ -9,13 +9,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((1, 4)\\) and \\((9, 4)\\).",
     "opts": [
-      "\\((5, 4)\\)",
-      "\\((5, 4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((4, 5)\\)",
+      "\\((5, 3)\\)",
+      "\\((6, 4)\\)",
+      "\\((5, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "Use the midpoint formula: average the \\(x\\)-coordinates and average the \\(y\\)-coordinates.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)\\)\nHere, \\(M = \\left(\\frac{1 + 9}{2}, \\frac{4 + 4}{2}\\right) = \\left(\\frac{10}{2}, \\frac{8}{2}\\right) = (5, 4)\\).",
     "solutionSteps": [
@@ -42,7 +42,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1b",
@@ -54,13 +72,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((6, 5)\\) and \\((-2, 5)\\).",
     "opts": [
-      "\\((2, 5)\\)",
-      "\\((2, 5) + 1\\)",
+      "\\((5, 2)\\)",
       "\\((3, 5)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((2, 5)\\)",
+      "\\((2, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "Apply the midpoint formula: \\(M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)\\).",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{6 + (-2)}{2}, \\frac{5 + 5}{2}\\right) = \\left(\\frac{4}{2}, \\frac{10}{2}\\right) = (2, 5)\\).",
     "solutionSteps": [
@@ -87,7 +105,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((5, 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1c",
@@ -99,13 +135,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-3, 1)\\) and \\((-3, 11)\\).",
     "opts": [
+      "\\((-2, 6)\\)",
+      "\\((-3, 5)\\)",
       "\\((-3, 6)\\)",
-      "\\((-3, 6) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((6, -3)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "Observe that the \\(x\\)-coordinate remains \\(-3\\). Average the \\(y\\)-coordinates.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-3 + (-3)}{2}, \\frac{1 + 11}{2}\\right) = \\left(\\frac{-6}{2}, \\frac{12}{2}\\right) = (-3, 6)\\).",
     "solutionSteps": [
@@ -132,7 +168,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-2, 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3, 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, -3)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1d",
@@ -144,13 +198,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-4, -6)\\) and \\((-4, 9)\\).",
     "opts": [
+      "\\((-3, 1.5)\\)",
       "\\((-4, 1.5)\\)",
-      "\\((-4, 1.5) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-4, 0.5)\\)",
+      "\\((1.5, -4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Average the \\(x\\)-coordinates and \\(y\\)-coordinates. The \\(y\\)-coordinate will be a decimal.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-4 + (-4)}{2}, \\frac{-6 + 9}{2}\\right) = \\left(\\frac{-8}{2}, \\frac{3}{2}\\right) = (-4, 1.5)\\).",
     "solutionSteps": [
@@ -177,7 +231,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-3, 1.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-4, 1.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-4, 0.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1.5, -4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1e",
@@ -189,13 +261,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((1, 2)\\) and \\((7, 10)\\).",
     "opts": [
-      "\\((4, 6)\\)",
-      "\\((4, 6) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((5, 6)\\)",
+      "\\((4, 5)\\)",
+      "\\((6, 4)\\)",
+      "\\((4, 6)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "Add the respective \\(x\\) and \\(y\\) coordinates, then divide by 2.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{1 + 7}{2}, \\frac{2 + 10}{2}\\right) = \\left(\\frac{8}{2}, \\frac{12}{2}\\right) = (4, 6)\\).",
     "solutionSteps": [
@@ -222,7 +294,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((5, 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 6)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1f",
@@ -234,13 +324,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((4, 8)\\) and \\((7, 4)\\).",
     "opts": [
-      "\\((5.5, 6)\\)",
-      "\\((5.5, 6) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((6, 5.5)\\)",
+      "\\((5.5, 5)\\)",
+      "\\((6.5, 6)\\)",
+      "\\((5.5, 6)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "Use the midpoint formula. Be prepared for a decimal in the \\(x\\)-coordinate.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{4 + 7}{2}, \\frac{8 + 4}{2}\\right) = \\left(\\frac{11}{2}, \\frac{12}{2}\\right) = (5.5, 6)\\).",
     "solutionSteps": [
@@ -267,7 +357,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((6, 5.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5.5, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6.5, 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5.5, 6)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1g",
@@ -279,13 +387,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-3, 0)\\) and \\((2, 10)\\).",
     "opts": [
-      "\\((-0.5, 5)\\)",
-      "\\((-0.5, 5) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-0.5, 4)\\)",
+      "\\((5, -0.5)\\)",
+      "\\((0.5, 5)\\)",
+      "\\((-0.5, 5)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "Apply the midpoint formula, watch the negative signs.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-3 + 2}{2}, \\frac{0 + 10}{2}\\right) = \\left(\\frac{-1}{2}, \\frac{10}{2}\\right) = (-0.5, 5)\\).",
     "solutionSteps": [
@@ -312,7 +420,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-0.5, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, -0.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0.5, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-0.5, 5)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1h",
@@ -324,13 +450,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-1, -5)\\) and \\((7, 10)\\).",
     "opts": [
+      "\\((4, 2.5)\\)",
       "\\((3, 2.5)\\)",
-      "\\((3, 2.5) + 1\\)",
-      "\\((3, 3.5)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((2.5, 3)\\)",
+      "\\((3, 1.5)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Average both sets of coordinates.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-1 + 7}{2}, \\frac{-5 + 10}{2}\\right) = \\left(\\frac{6}{2}, \\frac{5}{2}\\right) = (3, 2.5)\\).",
     "solutionSteps": [
@@ -357,7 +483,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 2.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 2.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2.5, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 1.5)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1i",
@@ -370,9 +514,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-2, -4)\\) and \\((2, -2)\\).",
     "opts": [
       "\\((0, -3)\\)",
-      "\\((0, -3) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((0, -4)\\)",
+      "\\((1, -3)\\)",
+      "\\((-3, 0)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -402,7 +546,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((0, -3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0, -4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, -3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3, 0)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1j",
@@ -414,13 +576,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-5, 5)\\) and \\((5, 0)\\).",
     "opts": [
+      "\\((0, 1.5)\\)",
+      "\\((1, 2.5)\\)",
       "\\((0, 2.5)\\)",
-      "\\((0, 2.5) + 1\\)",
-      "\\((0, 3.5)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((2.5, 0)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "Apply the formula: add and divide by 2.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-5 + 5}{2}, \\frac{5 + 0}{2}\\right) = \\left(\\frac{0}{2}, \\frac{5}{2}\\right) = (0, 2.5)\\).",
     "solutionSteps": [
@@ -447,7 +609,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((0, 1.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 2.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0, 2.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2.5, 0)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1k",
@@ -459,13 +639,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((1, -2)\\) and \\((5, -6)\\).",
     "opts": [
+      "\\((3, -5)\\)",
       "\\((3, -4)\\)",
-      "\\((3, -4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-4, 3)\\)",
+      "\\((4, -4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Average \\(x\\) coordinates and \\(y\\) coordinates.",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{1 + 5}{2}, \\frac{-2 + (-6)}{2}\\right) = \\left(\\frac{6}{2}, \\frac{-8}{2}\\right) = (3, -4)\\).",
     "solutionSteps": [
@@ -492,7 +672,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((3, -5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, -4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-4, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, -4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q1l",
@@ -504,13 +702,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the coordinates of the midpoint of the interval \\(AB\\) with endpoints \\((-8, -5)\\) and \\((0, -3)\\).",
     "opts": [
+      "\\((-4, -5)\\)",
       "\\((-4, -4)\\)",
-      "\\((-4, -4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-3, -4)\\)",
+      "\\((-5, -3)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Use \\(M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}\\right)\\).",
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-8 + 0}{2}, \\frac{-5 + (-3)}{2}\\right) = \\left(\\frac{-8}{2}, \\frac{-8}{2}\\right) = (-4, -4)\\).",
     "solutionSteps": [
@@ -537,7 +735,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-4, -5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-4, -4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-3, -4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-5, -3)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2a",
@@ -549,13 +765,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(2, 5)\\) and \\(M(9, 5)\\).",
     "opts": [
+      "\\((5, 16)\\)",
+      "\\((17, 5)\\)",
       "\\((16, 5)\\)",
-      "\\((16, 5) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((16, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "Use the rearranged midpoint formula: \\(B = 2M - A\\).",
     "solution": "Since \\(M\\) is the midpoint of \\(AB\\), we have:\n\\(x_M = \\frac{x_A + x_B}{2} \\implies x_B = 2x_M - x_A\\)\n\\(y_M = \\frac{y_A + y_B}{2} \\implies y_B = 2y_M - y_A\\)\nSubstituting the values:\n\\(x_B = 2(9) - 2 = 18 - 2 = 16\\)\n\\(y_B = 2(5) - 5 = 10 - 5 = 5\\)\nSo, \\(B\\) has coordinates \\((16, 5)\\).",
     "solutionSteps": [
@@ -582,7 +798,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((5, 16)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((17, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((16, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((16, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2b",
@@ -594,13 +828,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(3, 4)\\) and \\(M(-8, 4)\\).",
     "opts": [
+      "\\((-19, 3)\\)",
       "\\((-19, 4)\\)",
-      "\\((-19, 4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((4, -19)\\)",
+      "\\((-18, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Multiply \\(M\\)'s coordinates by 2 and subtract \\(A\\)'s coordinates.",
     "solution": "Using the formula \\(B = 2M - A\\):\n\\(x_B = 2(-8) - 3 = -16 - 3 = -19\\)\n\\(y_B = 2(4) - 4 = 8 - 4 = 4\\)\nSo, \\(B\\) has coordinates \\((-19, 4)\\).",
     "solutionSteps": [
@@ -627,7 +861,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-19, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-19, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, -19)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-18, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2c",
@@ -640,9 +892,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(-2, 5)\\) and \\(M(-4, 3)\\).",
     "opts": [
       "\\((-6, 1)\\)",
-      "\\((-6, 1) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-5, 1)\\)",
+      "\\((1, -6)\\)",
+      "\\((-6, 0)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -672,7 +924,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-6, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-5, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, -6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-6, 0)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2d",
@@ -684,13 +954,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(3, -5)\\) and \\(M(2, 7)\\).",
     "opts": [
-      "\\((1, 19)\\)",
-      "\\((1, 19) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((19, 1)\\)",
+      "\\((2, 19)\\)",
+      "\\((1, 18)\\)",
+      "\\((1, 19)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 3,
+    "answer": "3",
     "hint": "Use \\(B = 2M - A\\). Note the double negative: \\(14 - (-5) = 14 + 5\\).",
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(2) - 3 = 4 - 3 = 1\\)\n\\(y_B = 2(7) - (-5) = 14 + 5 = 19\\)\nSo, \\(B\\) has coordinates \\((1, 19)\\).",
     "solutionSteps": [
@@ -717,7 +987,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((19, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2, 19)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 18)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 19)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2e",
@@ -730,9 +1018,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(4, -2)\\) and \\(M(-3, 8)\\).",
     "opts": [
       "\\((-10, 18)\\)",
-      "\\((-10, 18) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-9, 18)\\)",
+      "\\((18, -10)\\)",
+      "\\((-10, 17)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -762,7 +1050,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-10, 18)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-9, 18)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((18, -10)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-10, 17)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q2f",
@@ -774,13 +1080,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 30,
     "question": "The point \\(M\\) is the midpoint of the interval \\(AB\\). Find the coordinates of \\(B\\) given that \\(A(6, -5)\\) and \\(M(-3, -3)\\).",
     "opts": [
+      "\\((-1, -12)\\)",
       "\\((-12, -1)\\)",
-      "\\((-12, -1) + 1\\)",
-      "\\((-13, -1)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((-11, -1)\\)",
+      "\\((-12, -2)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Subtract \\(A\\) from twice \\(M\\).",
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(-3) - 6 = -6 - 6 = -12\\)\n\\(y_B = 2(-3) - (-5) = -6 + 5 = -1\\)\nSo, \\(B\\) has coordinates \\((-12, -1)\\).",
     "solutionSteps": [
@@ -807,7 +1113,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((-1, -12)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-12, -1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-11, -1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((-12, -2)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3a",
@@ -819,13 +1143,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing midpoint \\(M\\) for row a.",
     "opts": [
+      "\\((4, 7)\\)",
       "\\((4, 8)\\)",
-      "\\((4, 8) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((5, 8)\\)",
+      "\\((8, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((4, 8)\\).",
     "solutionSteps": [
@@ -852,7 +1176,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 7)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, 8)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((8, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3b",
@@ -864,13 +1206,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(A\\) for row b.",
     "opts": [
+      "\\((12, 14)\\)",
       "\\((12, 15)\\)",
-      "\\((12, 15) + 1\\)",
       "\\((13, 15)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((15, 12)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((12, 15)\\).",
     "solutionSteps": [
@@ -897,7 +1239,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((12, 14)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((12, 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((13, 15)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((15, 12)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3c",
@@ -909,13 +1269,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(B\\) for row c.",
     "opts": [
+      "\\((6, 0)\\)",
       "\\((6, 1)\\)",
-      "\\((6, 1) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((1, 6)\\)",
+      "\\((7, 1)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((6, 1)\\).",
     "solutionSteps": [
@@ -942,7 +1302,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((6, 0)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((6, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 6)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((7, 1)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3d",
@@ -955,9 +1333,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing midpoint \\(M\\) for row d.",
     "opts": [
       "\\((4.6, 3.75)\\)",
-      "\\((4.6, 3.75) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((5.6, 3.75)\\)",
+      "\\((4.6, 2.75)\\)",
+      "\\((3.75, 4.6)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -987,7 +1365,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4.6, 3.75)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5.6, 3.75)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4.6, 2.75)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3.75, 4.6)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3e",
@@ -999,13 +1395,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(A\\) for row e.",
     "opts": [
+      "\\((4.5, 0.1)\\)",
+      "\\((3.5, -0.9)\\)",
       "\\((3.5, 0.1)\\)",
-      "\\((3.5, 0.1) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((0.1, 3.5)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\((3.5, 0.1)\\).",
     "solutionSteps": [
@@ -1032,7 +1428,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4.5, 0.1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3.5, -0.9)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3.5, 0.1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0.1, 3.5)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q3f",
@@ -1044,13 +1458,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Fill in the missing entries in the table below, where <em>M</em> is the midpoint of the interval <em>AB</em>.<br>\n<div class=\"my-6 overflow-x-auto rounded-xl border border-slate-200 shadow-sm\">\n  <table class=\"w-full text-sm border-collapse bg-white\">\n    <thead>\n      <tr class=\"bg-slate-50 text-slate-700 font-semibold border-b border-slate-200\">\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Row</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(A\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Point \\(B\\)</th>\n        <th class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">Midpoint \\(M\\)</th>\n      </tr>\n    </thead>\n    <tbody class=\"text-slate-800\">\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>a</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((6, 11)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>b</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((4, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((8, 10)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>c</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2, -5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((2, -2)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>d</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((1.5, 5.3)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((7.7, 2.2)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>e</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-2.5, -3.1)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0.5, -1.5)\\)</td>\n      </tr>\n      <tr class=\"border-b border-slate-200 last:border-b-0 hover:bg-slate-50/50 transition-colors\">\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-medium bg-slate-50/30\"><strong>f</strong></td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((-4.8, 5)\\)</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0 font-semibold text-indigo-600\">?</td>\n        <td class=\"px-4 py-3 text-center border-r border-slate-200 last:border-r-0\">\\((0, 4)\\)</td>\n      </tr>\n    </tbody>\n  </table>\n</div>\nFind the missing point \\(B\\) for row f.",
     "opts": [
+      "\\((5.8, 3)\\)",
+      "\\((4.8, 2)\\)",
       "\\((4.8, 3)\\)",
-      "\\((4.8, 3) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((3, 4.8)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\((4.8, 3)\\).",
     "solutionSteps": [
@@ -1077,7 +1491,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((5.8, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4.8, 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4.8, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 4.8)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4a",
@@ -1090,9 +1522,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nFind the coordinates of \\(M\\).",
     "opts": [
       "\\((3, 3)\\)",
-      "\\((3, 3) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((3, 2)\\)",
+      "\\((4, 3)\\)",
+      "\\((2, 4)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1122,7 +1554,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((3, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 2)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((2, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4b",
@@ -1135,9 +1585,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nFind the coordinates of \\(N\\).",
     "opts": [
       "\\((4, 1)\\)",
-      "\\((4, 1) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((1, 4)\\)",
+      "\\((4, 0)\\)",
+      "\\((5, 1)\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -1167,7 +1617,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 1)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 0)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((5, 1)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4c",
@@ -1179,13 +1647,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nCalculate the distance \\(BC\\).",
     "opts": [
-      "\\(-2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5}\\)",
-      "\\(2\\sqrt{5} + 1\\)",
-      "\\(3\\sqrt{5}\\)"
+      "Cannot be determined",
+      "Not enough information",
+      "None of the above",
+      "\\(2\\sqrt{5}\\)"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 3,
+    "answer": "3",
     "hint": "",
     "solution": "The correct answer is \\(2\\sqrt{5}\\).",
     "solutionSteps": [
@@ -1212,7 +1680,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(2\\sqrt{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4d",
@@ -1224,13 +1710,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nCalculate the distance \\(MN\\).",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
-      "\\(\\sqrt{5}\\)",
-      "\\(\\sqrt{5} + 1\\)"
+      "Cannot be determined",
+      "None of the above",
+      "Not enough information",
+      "\\(\\sqrt{5}\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 3,
+    "answer": "3",
     "hint": "",
     "solution": "The correct answer is \\(\\sqrt{5}\\).",
     "solutionSteps": [
@@ -1257,7 +1743,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(\\sqrt{5}\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4e",
@@ -1269,13 +1773,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nCompare the distance \\(BC\\) with the distance \\(MN\\).",
     "opts": [
-      "\\(\\dfrac{13}{6}\\)",
       "\\(BC = 2MN\\)",
-      "\\(BC = 2MN + 1\\)",
-      "\\(BC = 3MN\\)"
+      "None of the above",
+      "Cannot be determined",
+      "Not enough information"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(BC = 2MN\\).",
     "solutionSteps": [
@@ -1302,7 +1806,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(BC = 2MN\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q4f",
@@ -1314,13 +1836,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nWhat is the relation between \\(\\Delta ABC\\) and \\(\\Delta AMN\\)?",
     "opts": [
+      "Cannot be determined",
       "Similar triangles",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "Not enough information",
+      "None of the above"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is Similar triangles.",
     "solutionSteps": [
@@ -1347,7 +1869,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "Similar triangles",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q5a",
@@ -1359,13 +1899,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The parallelogram \\(PQRS\\) has vertices \\(P(1, 7)\\), \\(Q(6, 6)\\), \\(R(5, 1)\\) and \\(S(0, 2)\\). Complete the following tasks.\nFind the coordinates of the midpoint of the diagonal \\(PR\\).",
     "opts": [
+      "\\((4, 3)\\)",
+      "\\((3, 3)\\)",
       "\\((3, 4)\\)",
-      "\\((3, 4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((4, 4)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\((3, 4)\\).",
     "solutionSteps": [
@@ -1392,7 +1932,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 4)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q5b",
@@ -1404,13 +1962,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The parallelogram \\(PQRS\\) has vertices \\(P(1, 7)\\), \\(Q(6, 6)\\), \\(R(5, 1)\\) and \\(S(0, 2)\\). Complete the following tasks.\nFind the coordinates of the midpoint of the diagonal \\(SQ\\).",
     "opts": [
+      "\\((4, 4)\\)",
+      "\\((3, 3)\\)",
       "\\((3, 4)\\)",
-      "\\((3, 4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((4, 3)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 2,
+    "answer": "2",
     "hint": "",
     "solution": "The correct answer is \\((3, 4)\\).",
     "solutionSteps": [
@@ -1437,7 +1995,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((4, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 3)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((4, 3)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q5c",
@@ -1450,9 +2026,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "The parallelogram \\(PQRS\\) has vertices \\(P(1, 7)\\), \\(Q(6, 6)\\), \\(R(5, 1)\\) and \\(S(0, 2)\\). Complete the following tasks.\nWhat well-known property of a parallelogram does this demonstrate?",
     "opts": [
       "Diagonals bisect each other",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "Not enough information",
+      "None of the above",
+      "Cannot be determined"
     ],
     "a": 0,
     "answer": "0",
@@ -1482,7 +2058,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Diagonals bisect each other",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q6",
@@ -1570,13 +2164,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(-3, 2)\\), \\(B(-2, 5)\\) and \\(C(4, 3)\\). Complete the following tasks.\nFind the coordinates of \\(M\\), the midpoint of \\(AC\\).",
     "opts": [
+      "\\((2.5, 0.5)\\)",
       "\\((0.5, 2.5)\\)",
-      "\\((0.5, 2.5) + 1\\)",
-      "\\((0.5, 3.5)\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "\\((0.5, 1.5)\\)",
+      "\\((1.5, 2.5)\\)"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((0.5, 2.5)\\).",
     "solutionSteps": [
@@ -1603,7 +2197,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\((2.5, 0.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0.5, 2.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((0.5, 1.5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((1.5, 2.5)\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q8b",
@@ -1615,13 +2227,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(-3, 2)\\), \\(B(-2, 5)\\) and \\(C(4, 3)\\). Complete the following tasks.\nFind the distance \\(BM\\).",
     "opts": [
-      "\\(-5\\sqrt{2}/2\\)",
       "\\(5\\sqrt{2}/2\\)",
-      "\\(5\\sqrt{2}/2 + 1\\)",
-      "\\(5\\sqrt{3}/3\\)"
+      "Not enough information",
+      "None of the above",
+      "Cannot be determined"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(5\\sqrt{2}/2\\).",
     "solutionSteps": [
@@ -1648,7 +2260,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(5\\sqrt{2}/2\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q8c",
@@ -1698,10 +2328,10 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "The triangle \\(ABC\\) has vertices \\(A(1, 2)\\), \\(B(3, 8)\\) and \\(C(7, 2)\\). Complete the following tasks.\nFind the coordinates of the midpoints \\(M\\) and \\(N\\) of sides \\(AB\\) and \\(BC\\) respectively. Format: M(x, y), N(x, y)",
     "opts": [
-      "\\(\\dfrac{13}{6}\\)",
+      "Not enough information",
       "\\(M(2, 5), N(5, 5)\\)",
-      "\\(M(2, 5), N(5, 5) + 1\\)",
-      "\\(M(3, 5), N(5, 5)\\)"
+      "Cannot be determined",
+      "None of the above"
     ],
     "a": 1,
     "answer": "1",
@@ -1731,7 +2361,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(M(2, 5), N(5, 5)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q9b",
@@ -1781,10 +2429,10 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(2, 5)\\), \\(B(2, 11)\\) and \\(C(a, 7)\\). The area of \\(\\Delta ABC\\) is 15. Find the possible values of \\(a\\).",
     "opts": [
-      "\\(-7 or -3\\)",
+      "None of the above",
       "\\(7 or -3\\)",
-      "\\(7 or -3 + 1\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "Cannot be determined",
+      "Not enough information"
     ],
     "a": 1,
     "answer": "1",
@@ -1814,7 +2462,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(7 or -3\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q11a",
@@ -1826,13 +2492,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(0, 0)\\), \\(B(0, 8)\\) and \\(C(12, 8)\\). Let \\(M\\), \\(N\\) and \\(P\\) be the midpoints of sides \\(AB\\), \\(BC\\) and \\(CA\\) respectively. Complete the following tasks.\nFind the coordinates of \\(M\\), \\(N\\) and \\(P\\). Format: M(x, y), N(x, y), P(x, y)",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
       "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
-      "\\(M(0, 4), N(6, 8), P(6, 4) + 1\\)"
+      "Cannot be determined",
+      "None of the above",
+      "Not enough information"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is \\(M(0, 4), N(6, 8), P(6, 4)\\).",
     "solutionSteps": [
@@ -1859,7 +2525,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\(M(0, 4), N(6, 8), P(6, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      },
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q11b",
@@ -1871,13 +2555,13 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 120,
     "question": "The triangle \\(ABC\\) has vertices \\(A(0, 0)\\), \\(B(0, 8)\\) and \\(C(12, 8)\\). Let \\(M\\), \\(N\\) and \\(P\\) be the midpoints of sides \\(AB\\), \\(BC\\) and \\(CA\\) respectively. Complete the following tasks.\nFind the coordinates of the midpoints of the sides of \\(\\Delta MNP\\). Format: (x, y), (x, y), (x, y)",
     "opts": [
+      "Not enough information",
       "\\((3, 6), (6, 6), (3, 4)\\)",
-      "\\((3, 6), (6, 6), (3, 4) + 1\\)",
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)"
+      "Cannot be determined",
+      "None of the above"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "",
     "solution": "The correct answer is \\((3, 6), (6, 6), (3, 4)\\).",
     "solutionSteps": [
@@ -1904,7 +2588,25 @@ export const Y9_CH11B_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "Not enough information",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\((3, 6), (6, 6), (3, 4)\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "Cannot be determined",
+        "imageUrl": ""
+      },
+      {
+        "text": "None of the above",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11b-q12",
