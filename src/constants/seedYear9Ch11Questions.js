@@ -1283,13 +1283,13 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), identify the type of triangle \\(ABC\\).",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
-      "\\(Isosceles\\)",
-      "Isosceles + 1"
+      "Scalene",
+      "Isosceles",
+      "Equilateral",
+      "Right-angled"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1",
     "hint": "Recall the definitions of scalene, isosceles, and equilateral triangles using the side lengths calculated.",
     "solution": "We calculated the side lengths to be \\(AB = 13\\), \\(BC = 13\\), and \\(AC = 10\\). Since two side lengths are equal (\\(AB = BC\\)), the triangle is isosceles.",
     "solutionSteps": [
@@ -1527,13 +1527,13 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), identify the type of triangle \\(PQR\\).",
     "opts": [
+      "Scalene",
       "Right-angled isosceles",
-      "The opposite statement is true.",
-      "This is only true for acute angles.",
-      "This only holds when the triangle is isosceles."
+      "Equilateral",
+      "Isosceles but not right-angled"
     ],
-    "a": 0,
-    "answer": "0",
+    "a": 1,
+    "answer": "1",
     "hint": "Examine side lengths to check for equal sides and check if they satisfy Pythagoras' theorem.",
     "solution": "We have \\(PQ = \\sqrt{40}\\), \\(PR = \\sqrt{20}\\), and \\(QR = \\sqrt{20}\\):\n1. Since \\(PR = QR\\), the triangle is isosceles.\n2. Since \\(PR^2 + QR^2 = 20 + 20 = 40 = PQ^2\\), it satisfies Pythagoras' theorem and is right-angled at \\(R\\).\nTherefore, the triangle is a right-angled isosceles triangle.",
     "solutionSteps": [
