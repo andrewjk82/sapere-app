@@ -266,7 +266,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
       '$\\frac{dy}{dx} = -e^{\\cos 2x} \\sin(2x)$'
     ],
     h: 'Use the chain rule. The outer function is $e^u$, the inner is $u = \\cos 2x$.',
-    s: 'Using chain rule: $\\frac{dy}{dx} = e^{\\cos 2x} \\cdot \\frac{d}{dx}(\\cos 2x) = e^{\\cos 2x} \\cdot (-\\sin 2x) \\cdot 2 = -2\\sin(2x) e^{\\cos 2x}$.',
+    s: 'Apply chain rule where the outer function is $e^u$ and inner is $\\cos 2x$. This gives $\\frac{dy}{dx} = e^{\\cos 2x} \\cdot (-\\sin 2x) \\cdot 2 = -2\\sin(2x) e^{\\cos 2x}$.',
     solutionSteps: [
       {
         explanation: 'We have $y = e^{\\cos 2x}$, a composite function where the outer function is $e^u$ and the inner function is $u = \\cos 2x$. We apply the chain rule: $\\frac{dy}{dx} = \\frac{dy}{du} \\cdot \\frac{du}{dx}$.',
