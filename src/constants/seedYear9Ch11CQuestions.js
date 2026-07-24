@@ -1408,11 +1408,11 @@ export const Y9_CH11C_QUESTIONS = [
     "topicId": "y9-11c",
     "c": "11C",
     "t": "The gradient of a line",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "A line passes through the point \\((-2, 7)\\) and has gradient \\(-1\\). Find the \\(y\\)-coordinate of the point on the line when \\(x = 5\\).",
-    "answer": "0",
+    "answer": "2",
     "hint": "Find the equation of the line, keeping double negatives in mind: \\(x - (-2) = x + 2\\).",
     "solution": "0",
     "solutionSteps": [
@@ -1455,7 +1455,32 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\\\(-1\\\\)",
+      "\\\\(-2\\\\)",
+      "\\\\(0\\\\)",
+      "\\\\(1\\\\)"
+    ],
+    "a": 2,
+    "options": [
+      {
+        "text": "\\\\(-1\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(0\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(1\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q5a",
