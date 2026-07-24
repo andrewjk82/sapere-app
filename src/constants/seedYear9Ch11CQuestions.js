@@ -92,24 +92,40 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "2",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(-3, 5), quad B(0, 11)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (-3, 5)$ and $(x_2, y_2) = (0, 11)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{11 - 5}{0 - (-3)}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(m = \\frac{6}{3} = 2\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{11 - 5}{0 - (-3)} = \\frac{6}{3} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 2. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(2\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = 2 $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -5,
+              13,
+              3,
+              3
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [-3, 5], {name:'A(-3, 5)', size:3, color:'red', label:{offset:[-40,-10]}});\nboard.create('point', [0, 11], {name:'B(0, 11)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[-3, 5], [0, 11]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[-3, 5], [0, 5]], {strokeColor: 'green', dash: 2, name: 'Run=3', withLabel: true});\nboard.create('segment', [[0, 5], [0, 11]], {strokeColor: 'orange', dash: 2, name: 'Rise=6', withLabel: true});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
