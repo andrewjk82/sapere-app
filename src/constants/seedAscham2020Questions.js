@@ -1504,13 +1504,13 @@ export const ASCHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "(a) Determine Pearson's correlation coefficient for this data correct to 3 decimal places.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
-      "\\(r \\approx +0.980\\)",
+      "\\(r \\approx 0.980\\)",
       "\\(r \\approx -0.980\\)",
-      "\\(r \\approx -0.980 + 1\\)"
+      "\\(r \\approx 0.890\\)",
+      "\\(r \\approx -0.890\\)"
     ],
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1",
     "hint": "Enter the data pairs into a calculator and use the correlation function.",
     "solution": "The correct answer is \\(r \\approx -0.980\\).",
     "solutionSteps": [
@@ -1541,10 +1541,10 @@ export const ASCHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "(b) Find the least squares regression line for this data. Round values to 3 significant figures.",
     "opts": [
-      "\\(\\hat{y} = +1.07x - 9.63\\)",
+      "\\(\\hat{y} = 1.07x - 9.63\\)",
       "\\(\\hat{y} = -1.07x + 9.63\\)",
-      "\\(\\hat{y} = -1.07x + 9.63 + 1\\)",
-      "\\(\\hat{y} = -1.07x + 9.64\\)"
+      "\\(\\hat{y} = 1.07x + 9.63\\)",
+      "\\(\\hat{y} = -1.07x - 9.63\\)"
     ],
     "a": 1,
     "answer": "1",
