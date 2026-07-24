@@ -5,7 +5,7 @@ import {
 } from 'lucide-react';
 import { exportQuestionsPdf } from '../utils/exportPdf';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp, getDocFromServer, getDocsFromServer } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp, getDocFromServer, getDocsFromServer, documentId } from 'firebase/firestore';
 import MathView from './MathView';
 import MathInput from './MathInput';
 import QuestionBankModal from './QuestionBankModal';
@@ -86,12 +86,19 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     const trimmed = searchQuery.trim();
     if (!trimmed) return;
 
-    // 1. Search locally in the loaded/visible list
+    // 1. Search locally in the loaded/visible list — ALL substring matches,
+    // not just the first, so a prefix like "girr2020" jumps to every
+    // question from that paper already loaded in this topic.
     const visibleIds = questionIds.filter(id => !deadIds.has(id));
-    const localIdx = visibleIds.findIndex(id => id.toLowerCase().includes(trimmed.toLowerCase()));
-    if (localIdx !== -1) {
-      setCurrentIdx(localIdx);
-      showToast('Found question in current list!', 'success');
+    const localMatches = visibleIds.filter(id => id.toLowerCase().includes(trimmed.toLowerCase()));
+    if (localMatches.length > 0) {
+      setCurrentIdx(visibleIds.indexOf(localMatches[0]));
+      showToast(
+        localMatches.length === 1
+          ? 'Found question in current list!'
+          : `Found ${localMatches.length} matching questions in current list!`,
+        'success'
+      );
       setSearchQuery('');
       return;
     }
@@ -99,6 +106,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
     // 2. Search globally in Firestore
     setLoading(true);
     try {
+      // Exact ID match first (fast single-doc read).
       const docRef = doc(db, 'questions', trimmed);
       const docSnap = await getDocFromServer(docRef);
       if (docSnap.exists() && docSnap.data().isActive !== false) {
@@ -107,6 +115,29 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         setQuestionIds(prev => [trimmed, ...prev.filter(id => id !== trimmed)]);
         setCurrentIdx(0);
         showToast('Question found and loaded globally!', 'success');
+        setSearchQuery('');
+        return;
+      }
+
+      // No exact match — treat the query as an ID prefix (e.g. "girr2020"
+      // matches every "girr2020-mc1", "girr2020-mc16", "girr2020-mc16s" ...)
+      // and load every doc whose id starts with it.
+      const prefixSnap = await getDocsFromServer(
+        query(
+          collection(db, 'questions'),
+          where(documentId(), '>=', trimmed),
+          where(documentId(), '<', trimmed + ''),
+        )
+      );
+      const activeDocs = prefixSnap.docs.filter(d => d.data().isActive !== false);
+      if (activeDocs.length > 0) {
+        const newIds = activeDocs.map(d => d.id).sort();
+        const newLoaded = {};
+        activeDocs.forEach(d => { newLoaded[d.id] = { id: d.id, ...d.data() }; });
+        setLoadedQuestions(prev => ({ ...prev, ...newLoaded }));
+        setQuestionIds(prev => [...newIds, ...prev.filter(id => !newIds.includes(id))]);
+        setCurrentIdx(0);
+        showToast(`Found ${activeDocs.length} matching question${activeDocs.length === 1 ? '' : 's'}!`, 'success');
         setSearchQuery('');
       } else {
         showToast('Question ID not found in database', 'error');
