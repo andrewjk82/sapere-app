@@ -9,12 +9,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((1, 4)\\) and \\((7, 4)\\).",
     "opts": [
-      "\\(4\\)",
       "\\(5\\)",
       "\\(6\\)",
-      "\\(7\\)"
+      "\\(7\\)",
+      "\\(4\\)"
     ],
-    "a": 2,
+    "a": 1,
     "answer": "2",
     "hint": "Notice that the \\(y\\)-coordinates are identical. Subtract the smaller \\(x\\)-coordinate from the larger one.",
     "solution": "Since the \\(y\\)-coordinates are the same, the distance is simply the absolute difference of the \\(x\\)-coordinates: \\(|7 - 1| = 6\\).",
@@ -70,12 +70,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((6, 2)\\) and \\((-2, 2)\\).",
     "opts": [
-      "\\(6\\)",
-      "\\(7\\)",
       "\\(8\\)",
-      "\\(9\\)"
+      "\\(9\\)",
+      "\\(6\\)",
+      "\\(7\\)"
     ],
-    "a": 2,
+    "a": 0,
     "answer": "2",
     "hint": "Subtract the smaller \\(x\\)-coordinate from the larger \\(x\\)-coordinate.",
     "solution": "Since the \\(y\\)-coordinates are the same, the distance is the absolute difference of the \\(x\\)-coordinates: \\(|6 - (-2)| = 8\\).",
@@ -131,12 +131,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-3, 1)\\) and \\((-3, 11)\\).",
     "opts": [
-      "\\(8\\)",
       "\\(9\\)",
-      "\\(10\\)",
-      "\\(11\\)"
+      "\\(11\\)",
+      "\\(8\\)",
+      "\\(10\\)"
     ],
-    "a": 2,
+    "a": 3,
     "answer": "1",
     "hint": "Notice that the \\(x\\)-coordinates are identical. Subtract the smaller \\(y\\)-coordinate from the larger one.",
     "solution": "Since the \\(x\\)-coordinates are the same, the distance is the absolute difference of the \\(y\\)-coordinates: \\(|11 - 1| = 10\\).",
@@ -192,12 +192,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-1, -6)\\) and \\((-1, 7)\\).",
     "opts": [
-      "\\(9\\)",
+      "\\(15\\)",
       "\\(11\\)",
-      "\\(13\\)",
-      "\\(15\\)"
+      "\\(9\\)",
+      "\\(13\\)"
     ],
-    "a": 2,
+    "a": 3,
     "answer": "2",
     "hint": "Subtract the smaller \\(y\\)-coordinate from the larger \\(y\\)-coordinate.",
     "solution": "Since the \\(x\\)-coordinates are the same, the distance is the absolute difference of the \\(y\\)-coordinates: \\(|7 - (-6)| = 13\\).",
@@ -254,11 +254,11 @@ export const Y9_CH11_QUESTIONS = [
     "question": "Find the distance between the points \\((1, 2)\\) and \\((7, 10)\\).",
     "opts": [
       "\\(8\\)",
-      "\\(9\\)",
       "\\(10\\)",
-      "\\(11\\)"
+      "\\(11\\)",
+      "\\(9\\)"
     ],
-    "a": 2,
+    "a": 1,
     "answer": "1",
     "hint": "Apply the distance formula: \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\).",
     "solution": "Using the distance formula: \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} = \\sqrt{(7 - 1)^2 + (10 - 2)^2} = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\).",
@@ -375,12 +375,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-2, 1)\\) and \\((3, 13)\\).",
     "opts": [
-      "\\(9\\)",
       "\\(11\\)",
-      "\\(13\\)",
-      "\\(15\\)"
+      "\\(9\\)",
+      "\\(15\\)",
+      "\\(13\\)"
     ],
-    "a": 2,
+    "a": 3,
     "answer": "2",
     "hint": "Be careful with double negatives: \\(3 - (-2) = 3 + 2 = 5\\).",
     "solution": "Using the distance formula: \\(d = \\sqrt{(3 - (-2))^2 + (13 - 1)^2} = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13\\).",
@@ -437,11 +437,11 @@ export const Y9_CH11_QUESTIONS = [
     "question": "Find the distance between the points \\((-3, -5)\\) and \\((5, 10)\\).",
     "opts": [
       "\\(13\\)",
-      "\\(15\\)",
       "\\(17\\)",
+      "\\(15\\)",
       "\\(19\\)"
     ],
-    "a": 2,
+    "a": 1,
     "answer": "2",
     "hint": "Use \\(d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}\\) and simplify double negatives.",
     "solution": "Using the distance formula: \\(d = \\sqrt{(5 - (-3))^2 + (10 - (-5))^2} = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17\\).",
@@ -497,12 +497,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-2, -4)\\) and \\((0, -2)\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(2\\sqrt{2}\\)",
+      "\\(3\\sqrt{2}\\)",
+      "\\(4\\sqrt{2}\\)",
+      "\\(\\sqrt{2}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "answer": "1",
     "hint": "Express the resulting surd in its simplest form.",
     "solution": "Using the distance formula: \\(d = \\sqrt{(0 - (-2))^2 + (-2 - (-4))^2} = \\sqrt{2^2 + 2^2} = \\sqrt{8} = 2\\sqrt{2}\\).",
@@ -558,10 +558,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-4, 2)\\) and \\((2, -1)\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(4\\sqrt{5}\\)",
+      "\\(2\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(5\\sqrt{5}\\)"
     ],
     "a": 2,
     "answer": "1",
@@ -619,12 +619,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((1, -2)\\) and \\((5, -4)\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(2\\sqrt{5}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "answer": "1",
     "hint": "Apply the distance formula and simplify the surd.",
     "solution": "Using the distance formula: \\(d = \\sqrt{(5 - 1)^2 + (-4 - (-2))^2} = \\sqrt{4^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}\\).",
@@ -680,12 +680,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "Find the distance between the points \\((-5, -2)\\) and \\((1, 0)\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(3\\sqrt{10}\\)",
+      "\\(4\\sqrt{10}\\)",
+      "\\(\\sqrt{10}\\)",
+      "\\(2\\sqrt{10}\\)"
     ],
-    "a": 1,
+    "a": 3,
     "answer": "1",
     "hint": "Apply the distance formula and simplify the surd.",
     "solution": "Using the distance formula: \\(d = \\sqrt{(1 - (-5))^2 + (0 - (-2))^2} = \\sqrt{6^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} = 2\\sqrt{10}\\).",
@@ -741,12 +741,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "How far is the point \\((3, 2)\\) from the origin?",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
       "\\(\\sqrt{13}\\)",
-      "\\(\\sqrt{13} + 1\\)"
+      "\\(\\sqrt{14}\\)",
+      "\\(\\sqrt{16}\\)",
+      "\\(\\sqrt{15}\\)"
     ],
-    "a": 2,
+    "a": 0,
     "answer": "2",
     "hint": "Use \\(d = \\sqrt{x^2 + y^2}\\) where \\(x = 3\\) and \\(y = 2\\).",
     "solution": "The origin has coordinates \\((0, 0)\\). The distance to the origin is given by \\(d = \\sqrt{x^2 + y^2} = \\sqrt{3^2 + 2^2} = \\sqrt{9 + 4} = \\sqrt{13}\\).",
@@ -802,12 +802,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "How far is the point \\((-4, 7)\\) from the origin?",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
+      "\\(\\sqrt{66}\\)",
       "\\(\\sqrt{65}\\)",
-      "\\(\\sqrt{65} + 1\\)"
+      "\\(\\sqrt{68}\\)",
+      "\\(\\sqrt{67}\\)"
     ],
-    "a": 2,
+    "a": 1,
     "answer": "2",
     "hint": "Use \\(d = \\sqrt{x^2 + y^2}\\). Note that squaring a negative number results in a positive number.",
     "solution": "The distance from the origin is \\(d = \\sqrt{(-4)^2 + 7^2} = \\sqrt{16 + 49} = \\sqrt{65}\\).",
@@ -863,10 +863,10 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "How far is the point \\((-1, 5)\\) from the origin?",
     "opts": [
-      "\\(\\dfrac{13}{6}\\)",
+      "\\(\\sqrt{29}\\)",
       "\\(\\sqrt{26}\\)",
-      "\\(\\sqrt{26} + 1\\)",
-      "\\(\\sqrt{36}\\)"
+      "\\(\\sqrt{27}\\)",
+      "\\(\\sqrt{28}\\)"
     ],
     "a": 1,
     "answer": "1",
@@ -924,12 +924,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 30,
     "question": "How far is the point \\((-3, -5)\\) from the origin?",
     "opts": [
-      "\\(\\dfrac{12}{5}\\)",
-      "\\(\\dfrac{13}{6}\\)",
       "\\(\\sqrt{34}\\)",
-      "\\(\\sqrt{34} + 1\\)"
+      "\\(\\sqrt{35}\\)",
+      "\\(\\sqrt{36}\\)",
+      "\\(\\sqrt{37}\\)"
     ],
-    "a": 2,
+    "a": 0,
     "answer": "2",
     "hint": "Use \\(d = \\sqrt{x^2 + y^2}\\) and calculate the squares of both numbers.",
     "solution": "The distance from the origin is \\(d = \\sqrt{(-3)^2 + (-5)^2} = \\sqrt{9 + 25} = \\sqrt{34}\\).",
@@ -1101,9 +1101,9 @@ export const Y9_CH11_QUESTIONS = [
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(AB\\).",
     "opts": [
       "\\(9\\)",
-      "\\(11\\)",
+      "\\(15\\)",
       "\\(13\\)",
-      "\\(15\\)"
+      "\\(11\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -1161,12 +1161,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(BC\\).",
     "opts": [
-      "\\(9\\)",
+      "\\(15\\)",
       "\\(11\\)",
-      "\\(13\\)",
-      "\\(15\\)"
+      "\\(9\\)",
+      "\\(13\\)"
     ],
-    "a": 2,
+    "a": 3,
     "answer": "2",
     "hint": "Apply the distance formula to coordinates \\(B(5, 12)\\) and \\(C(10, 0)\\).",
     "solution": "Use the distance formula for points \\(B(5,12)\\) and \\(C(10,0)\\):\n\\(BC = \\sqrt{(10 - 5)^2 + (0 - 12)^2} = \\sqrt{5^2 + (-12)^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13\\).",
@@ -1222,12 +1222,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given the three points \\(A(0, 0)\\), \\(B(5, 12)\\) and \\(C(10, 0)\\), calculate the distance \\(AC\\).",
     "opts": [
-      "\\(8\\)",
-      "\\(9\\)",
       "\\(10\\)",
-      "\\(11\\)"
+      "\\(9\\)",
+      "\\(11\\)",
+      "\\(8\\)"
     ],
-    "a": 2,
+    "a": 0,
     "answer": "1",
     "hint": "Observe the \\(y\\)-coordinates of both points to determine if they lie on a straight horizontal line.",
     "solution": "Since both points \\(A\\) and \\(C\\) lie on the \\(x\\)-axis, the distance is simply the difference of their \\(x\\)-coordinates: \\(|10 - 0| = 10\\).",
@@ -1344,12 +1344,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PQ\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(3\\sqrt{10}\\)",
+      "\\(\\sqrt{10}\\)",
+      "\\(2\\sqrt{10}\\)",
+      "\\(4\\sqrt{10}\\)"
     ],
-    "a": 1,
+    "a": 2,
     "answer": "1",
     "hint": "Use the distance formula and write the resulting surd in simplest form.",
     "solution": "Using the distance formula: \\(PQ = \\sqrt{(-6 - 0)^2 + (1 - (-1))^2} = \\sqrt{(-6)^2 + 2^2} = \\sqrt{36 + 4} = \\sqrt{40} = 2\\sqrt{10}\\).",
@@ -1405,12 +1405,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(PR\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(2\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)",
+      "\\(\\sqrt{5}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "answer": "1",
     "hint": "Use the distance formula and write the resulting surd in simplest form.",
     "solution": "Using the distance formula: \\(PR = \\sqrt{(-4 - 0)^2 + (-3 - (-1))^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}\\).",
@@ -1466,12 +1466,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Given \\(\\Delta PQR\\) with vertices \\(P(0, -1)\\), \\(Q(-6, 1)\\) and \\(R(-4, -3)\\), calculate the distance \\(QR\\).",
     "opts": [
-      "\\(1\\)",
-      "\\(2\\)",
-      "\\(3\\)",
-      "\\(4\\)"
+      "\\(2\\sqrt{5}\\)",
+      "\\(3\\sqrt{5}\\)",
+      "\\(\\sqrt{5}\\)",
+      "\\(4\\sqrt{5}\\)"
     ],
-    "a": 1,
+    "a": 0,
     "answer": "1",
     "hint": "Use the distance formula and write the resulting surd in simplest form.",
     "solution": "Using the distance formula: \\(QR = \\sqrt{(-4 - (-6))^2 + (-3 - 1)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5}\\).",
@@ -1696,12 +1696,12 @@ export const Y9_CH11_QUESTIONS = [
     "timeLimit": 90,
     "question": "Calculate the perimeter of \\(\\Delta PQR\\) with vertices \\(P(1, 2)\\), \\(Q(4, 2)\\) and \\(R(4, 6)\\).",
     "opts": [
-      "\\(8\\)",
-      "\\(10\\)",
       "\\(12\\)",
-      "\\(14\\)"
+      "\\(10\\)",
+      "\\(14\\)",
+      "\\(8\\)"
     ],
-    "a": 2,
+    "a": 0,
     "answer": "2",
     "hint": "Find all three side lengths (PQ, QR, PR) and add them together.",
     "solution": "Calculate the lengths of the three sides:\n- \\(PQ = |4 - 1| = 3\\) (horizontal distance)\n- \\(QR = |6 - 2| = 4\\) (vertical distance)\n- \\(PR = \\sqrt{(4-1)^2 + (6-2)^2} = \\sqrt{3^2 + 4^2} = 5\\)\nPerimeter = \\(3 + 4 + 5 = 12\\).",
