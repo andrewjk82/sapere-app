@@ -67,31 +67,27 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     solutionSteps: [
       {
         explanation: 'Identify the known and unknown sides. We know two sides (PQ = 8 cm, PR = 5 cm) and the angle between them (∠QPR = 53°). We need to find the side opposite to this angle, which is QR. This is a classic setup for the cosine rule.',
-        workingOut: '\\text{Given:} \\quad PQ = 8 \\text{ cm}, \\; PR = 5 \\text{ cm}, \\; \\angle QPR = 53°'
+        workingOut: 'PQ = 8 \\text{ cm}, \\; PR = 5 \\text{ cm}, \\; \\angle QPR = 53°'
       },
       {
-        explanation: 'The cosine rule states that for any triangle with sides $a$, $b$, $c$ and angle $A$ opposite to side $a$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$. In our case, QR is the side opposite to angle P, so we apply the rule with $a = QR$, $b = PQ = 8$, $c = PR = 5$, and $A = 53°$.',
-        workingOut: 'QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos(\\angle QPR)'
+        explanation: 'The cosine rule states that for any triangle with sides $a$, $b$, $c$ and angle $A$ opposite to side $a$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$. In our case, QR is the side opposite to angle P.',
+        workingOut: 'QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos(P)'
       },
       {
-        explanation: 'Substitute the known values into the cosine rule formula. Calculate $PQ^2 = 8^2 = 64$ and $PR^2 = 5^2 = 25$.',
-        workingOut: 'QR^2 = 8^2 + 5^2 - 2(8)(5)\\cos(53°) = 64 + 25 - 80\\cos(53°)'
+        explanation: 'Substitute the known values. Calculate $PQ^2 = 8^2 = 64$ and $PR^2 = 5^2 = 25$.',
+        workingOut: 'QR^2 = 64 + 25 - 2(8)(5)\\cos(53°) = 89 - 80\\cos(53°)'
       },
       {
-        explanation: 'Calculate the value of $\\cos(53°)$. Using a calculator, $\\cos(53°) \\approx 0.6018$. Then multiply: $80 \\times 0.6018 \\approx 48.144$.',
-        workingOut: '\\cos(53°) \\approx 0.6018 \\quad \\Rightarrow \\quad 80 \\times 0.6018 \\approx 48.144'
+        explanation: 'Calculate the value of $\\cos(53°) \\approx 0.6018$. Then $80 \\times 0.6018 \\approx 48.144$.',
+        workingOut: '80 \\times 0.6018 \\approx 48.144'
       },
       {
-        explanation: 'Substitute this value back into the equation: $QR^2 = 64 + 25 - 48.144$.',
-        workingOut: 'QR^2 = 64 + 25 - 48.144 = 89 - 48.144 = 40.856'
+        explanation: 'Substitute back into the equation.',
+        workingOut: 'QR^2 = 89 - 48.144 = 40.856'
       },
       {
-        explanation: 'Take the square root of both sides to find QR. Since $\\sqrt{40.856} \\approx 6.392$, round to 1 decimal place as required by the problem.',
-        workingOut: 'QR = \\sqrt{40.856} \\approx 6.392 \\approx 6.4 \\text{ cm}'
-      },
-      {
-        explanation: 'Compare our calculated value with the given options. The closest match is 6.5 cm (option B). This accounts for rounding variations and calculator precision.',
-        workingOut: '\\text{Answer: } QR \\approx 6.5 \\text{ cm (Option B)}'
+        explanation: 'Take the square root of both sides.',
+        workingOut: 'QR = \\sqrt{40.856} \\approx 6.4 \\text{ cm}'
       }
     ]
   },
@@ -115,7 +111,38 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       '$60; \\frac{2}{5}$',
       '$120; \\frac{2}{5}$'
     ],
-    h: 'PAPER has 5 letters with 2 As. Arrangements = $\\frac{5!}{2!}$. For starting with P, arrange the remaining 4 letters (with 2 As).'
+    h: 'PAPER has 5 letters with 2 As. Arrangements = $\\frac{5!}{2!}$. For starting with P, arrange the remaining 4 letters (with 2 As).',
+    s: 'The word PAPER has 5 letters: P, A, P, E, R. Two of these letters are the same (two Ps). The total number of arrangements is $\\frac{5!}{2!} = \\frac{120}{2} = 60$. For arrangements starting with P: fix one P at the start, leaving 4 letters (P, A, E, R) with one duplicate A and one duplicate P already placed. Arrange the remaining 4 letters: A, P, E, R (no more duplicates), which is $4! = 24$. So the probability is $\\frac{24}{60} = \\frac{2}{5}$.',
+    solutionSteps: [
+      {
+        explanation: 'Count the total letters in PAPER: P, A, P, E, R. There are 5 letters total, but the letter P appears twice (repeated letter).',
+        workingOut: '\\text{PAPER has 5 letters with P appearing 2 times}'
+      },
+      {
+        explanation: 'When we have repeated letters, the formula for permutations is: Number of arrangements = $\\frac{n!}{n_1! \\cdot n_2! \\cdots}$, where $n$ is the total number of letters and $n_i$ is the frequency of each repeated letter.',
+        workingOut: '\\text{Arrangements} = \\frac{n!}{\\text{(product of factorials of repetitions)}}'
+      },
+      {
+        explanation: 'Apply the formula with 5 letters and 2 Ps: Total arrangements = $\\frac{5!}{2!}$.',
+        workingOut: '\\text{Total} = \\frac{5!}{2!} = \\frac{120}{2} = 60'
+      },
+      {
+        explanation: 'For arrangements starting with P: fix one P at the beginning. This leaves 4 remaining positions to fill with the letters: A, P, E, R (one of each, since we used one P already).',
+        workingOut: '\\text{After fixing P at position 1: arrange A, P, E, R in 4 positions}'
+      },
+      {
+        explanation: 'Since the remaining 4 letters are all distinct, the number of ways to arrange them is simply $4!$.',
+        workingOut: '\\text{Arrangements starting with P} = 4! = 24'
+      },
+      {
+        explanation: 'The probability of randomly selecting an arrangement that starts with P is the ratio of favorable outcomes to total outcomes.',
+        workingOut: 'P(\\text{starts with P}) = \\frac{\\text{arrangements starting with P}}{\\text{total arrangements}} = \\frac{24}{60}'
+      },
+      {
+        explanation: 'Simplify the fraction by dividing both numerator and denominator by their GCD (12).',
+        workingOut: '\\frac{24}{60} = \\frac{24 \\div 12}{60 \\div 12} = \\frac{2}{5}'
+      }
+    ]
   },
 
   // ============================================================
