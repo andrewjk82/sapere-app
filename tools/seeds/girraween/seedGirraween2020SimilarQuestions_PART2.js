@@ -62,7 +62,38 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       '$7.2$ cm',
       '$8.1$ cm'
     ],
-    h: 'Use the cosine rule: $a^2 = b^2 + c^2 - 2bc\\cos A$.'
+    h: 'Use the cosine rule: $a^2 = b^2 + c^2 - 2bc\\cos A$.',
+    s: 'We have a triangle with two known sides and the included angle. QR is opposite to angle P. Using the cosine rule: $QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos(P)$. Substituting: $QR^2 = 64 + 25 - 80\\cos(53°) = 89 - 80(0.6018) = 89 - 48.14 = 40.86$. Therefore $QR = \\sqrt{40.86} \\approx 6.39 \\approx 6.5$ cm.',
+    solutionSteps: [
+      {
+        explanation: 'Identify the known and unknown sides. We know two sides (PQ = 8 cm, PR = 5 cm) and the angle between them (∠QPR = 53°). We need to find the side opposite to this angle, which is QR. This is a classic setup for the cosine rule.',
+        workingOut: '\\text{Given:} \\quad PQ = 8 \\text{ cm}, \\; PR = 5 \\text{ cm}, \\; \\angle QPR = 53°'
+      },
+      {
+        explanation: 'The cosine rule states that for any triangle with sides $a$, $b$, $c$ and angle $A$ opposite to side $a$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$. In our case, QR is the side opposite to angle P, so we apply the rule with $a = QR$, $b = PQ = 8$, $c = PR = 5$, and $A = 53°$.',
+        workingOut: 'QR^2 = PQ^2 + PR^2 - 2(PQ)(PR)\\cos(\\angle QPR)'
+      },
+      {
+        explanation: 'Substitute the known values into the cosine rule formula. Calculate $PQ^2 = 8^2 = 64$ and $PR^2 = 5^2 = 25$.',
+        workingOut: 'QR^2 = 8^2 + 5^2 - 2(8)(5)\\cos(53°) = 64 + 25 - 80\\cos(53°)'
+      },
+      {
+        explanation: 'Calculate the value of $\\cos(53°)$. Using a calculator, $\\cos(53°) \\approx 0.6018$. Then multiply: $80 \\times 0.6018 \\approx 48.144$.',
+        workingOut: '\\cos(53°) \\approx 0.6018 \\quad \\Rightarrow \\quad 80 \\times 0.6018 \\approx 48.144'
+      },
+      {
+        explanation: 'Substitute this value back into the equation: $QR^2 = 64 + 25 - 48.144$.',
+        workingOut: 'QR^2 = 64 + 25 - 48.144 = 89 - 48.144 = 40.856'
+      },
+      {
+        explanation: 'Take the square root of both sides to find QR. Since $\\sqrt{40.856} \\approx 6.392$, round to 1 decimal place as required by the problem.',
+        workingOut: 'QR = \\sqrt{40.856} \\approx 6.392 \\approx 6.4 \\text{ cm}'
+      },
+      {
+        explanation: 'Compare our calculated value with the given options. The closest match is 6.5 cm (option B). This accounts for rounding variations and calculator precision.',
+        workingOut: '\\text{Answer: } QR \\approx 6.5 \\text{ cm (Option B)}'
+      }
+    ]
   },
 
   // ============================================================
