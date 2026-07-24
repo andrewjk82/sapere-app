@@ -1817,6 +1817,7 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "a": 2,
     "answer": "2",
+    "isManual": false,
     "hint": "",
     "solution": "The correct answer is \\(-6, -1, 3, 3\\).",
     "solutionSteps": [
@@ -1880,6 +1881,7 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
+    "isManual": false,
     "hint": "",
     "solution": "The correct answer is \\(-10, -1, 5, 10\\).",
     "solutionSteps": [
@@ -1943,6 +1945,7 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
+    "isManual": false,
     "hint": "",
     "solution": "The correct answer is \\(-14, 1, 6\\).",
     "solutionSteps": [
@@ -2006,6 +2009,7 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "a": 0,
     "answer": "0",
+    "isManual": false,
     "hint": "",
     "solution": "The correct answer is \\(-2, 6, 0, 0\\).",
     "solutionSteps": [
