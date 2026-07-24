@@ -2661,71 +2661,94 @@ export const Y9_CH11B_QUESTIONS = [
     "topicId": "y9-11b",
     "c": "11B",
     "t": "The midpoint of an interval",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "hard",
     "timeLimit": 120,
     "question": "The quadrilateral \\(ABCD\\) has vertices \\(A(0, 0)\\), \\(B(4, 8)\\), \\(C(12, 10)\\) and \\(D(2, 6)\\). \\(M\\), \\(N\\), \\(O\\) and \\(P\\) are the midpoints of the sides \\(AB\\), \\(BC\\), \\(CD\\) and \\(DA\\) respectively. Find the lengths of the sides of quadrilateral \\(MNOP\\) and describe this quadrilateral.",
-    "answer": "MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}; Parallelogram",
+    "answer": "3",
     "hint": "Use the midpoint formula to find the four vertices \\(M, N, O, P\\). Then find the distance between adjacent points and check if opposite sides are equal.",
     "solution": "MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}; Parallelogram",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "M(2, 4), quad N(8, 9), quad O(7, 8), quad P(1, 3)",
+        "explanation": "Step 1: Find the coordinates of the midpoints M, N, O, P.",
+        "workingOut": "Using the midpoint formula \\( \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\):\n- \\(M\\) (midpoint of \\(AB\\)): \\( \\left(\\frac{0+4}{2}, \\frac{0+8}{2}\\right) = (2, 4) \\)\n- \\(N\\) (midpoint of \\(BC\\)): \\( \\left(\\frac{4+12}{2}, \\frac{8+10}{2}\\right) = (8, 9) \\)\n- \\(O\\) (midpoint of \\(CD\\)): \\( \\left(\\frac{12+2}{2}, \\frac{10+6}{2}\\right) = (7, 8) \\)\n- \\(P\\) (midpoint of \\(DA\\)): \\( \\left(\\frac{2+0}{2}, \\frac{6+0}{2}\\right) = (1, 3) \\)",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 2: Calculate the lengths of the opposite sides \\(MN\\) and \\(OP\\).",
+        "workingOut": "Using the distance formula \\( d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\):\n$$ \\begin{aligned} MN &= \\sqrt{(8 - 2)^2 + (9 - 4)^2} = \\sqrt{6^2 + 5^2} = \\sqrt{36 + 25} = \\sqrt{61} \\\\\\\\ OP &= \\sqrt{(1 - 7)^2 + (3 - 8)^2} = \\sqrt{(-6)^2 + (-5)^2} = \\sqrt{36 + 25} = \\sqrt{61} \\end{aligned} $$\nThus, \\( MN = OP = \\sqrt{61} \\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 3: Calculate the lengths of the opposite sides \\(NO\\) and \\(PM\\).",
+        "workingOut": "$$ \\begin{aligned} NO &= \\sqrt{(7 - 8)^2 + (8 - 9)^2} = \\sqrt{(-1)^2 + (-1)^2} = \\sqrt{1 + 1} = \\sqrt{2} \\\\\\\\ PM &= \\sqrt{(2 - 1)^2 + (4 - 3)^2} = \\sqrt{1^2 + 1^2} = \\sqrt{1 + 1} = \\sqrt{2} \\end{aligned} $$\nThus, \\( NO = PM = \\sqrt{2} \\).",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Describe the quadrilateral.",
+        "workingOut": "Since the opposite sides of the quadrilateral \\(MNOP\\) are equal in length (\\(MN = OP\\) and \\(NO = PM\\)), the quadrilateral is a **parallelogram**.",
         "graphData": {
           "jsxGraph": {
-            "width": 350,
-            "height": 300,
+            "width": 400,
+            "height": 400,
             "boundingbox": [
-              -2,
-              12,
-              14,
-              -2
+              -3,
+              13,
+              15,
+              -3
             ],
-            "showConstructionPoints": true,
             "boardOptions": {
-              "axis": true,
+              "axis": false,
               "grid": true
             },
-            "script": "board.suspendUpdate();\nvar pA = board.create('point', [0, 0], {size: 3, color: 'black', name: 'A(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nvar pB = board.create('point', [4, 8], {size: 3, color: 'black', name: 'B(4, 8)', withLabel: true, label: {autoPosition: false, offset: [5, 15]}});\nvar pC = board.create('point', [12, 10], {size: 3, color: 'black', name: 'C(12, 10)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nvar pD = board.create('point', [2, 6], {size: 3, color: 'black', name: 'D(2, 6)', withLabel: true, label: {autoPosition: false, offset: [-25, 15]}});\nvar pM = board.create('point', [2, 4], {size: 3, color: 'blue', name: 'M(2, 4)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nvar pN = board.create('point', [8, 9], {size: 3, color: 'blue', name: 'N(8, 9)', withLabel: true, label: {autoPosition: false, offset: [5, 15]}});\nvar pO = board.create('point', [7, 8], {size: 3, color: 'blue', name: 'O(7, 8)', withLabel: true, label: {autoPosition: false, offset: [5, -15]}});\nvar pP = board.create('point', [1, 3], {size: 3, color: 'blue', name: 'P(1, 3)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.create('polygon', [pM, pN, pO, pP], {fillColor: '#bfdbfe', fillOpacity: 0.3, borders: {strokeColor: 'blue', strokeWidth: 2}});\nboard.unsuspendUpdate();"
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-2, 0], [14, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 12]], {strokeColor: 'black'});\nlet pA = board.create('point', [0, 0], {name:'A', size:2, color:'gray'});\nlet pB = board.create('point', [4, 8], {name:'B', size:2, color:'gray'});\nlet pC = board.create('point', [12, 10], {name:'C', size:2, color:'gray'});\nlet pD = board.create('point', [2, 6], {name:'D', size:2, color:'gray'});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor:'rgba(255,0,0,0.05)', borders:{strokeColor:'gray', strokeWidth:1, dash:2}});\n\nlet pM = board.create('point', [2, 4], {name:'M(2, 4)', size:3, color:'blue', label:{offset:[-35,0]}});\nlet pN = board.create('point', [8, 9], {name:'N(8, 9)', size:3, color:'blue', label:{offset:[0,15]}});\nlet pO = board.create('point', [7, 8], {name:'O(7, 8)', size:3, color:'blue', label:{offset:[10,-10]}});\nlet pP = board.create('point', [1, 3], {name:'P(1, 3)', size:3, color:'blue', label:{offset:[-35,-5]}});\nboard.create('polygon', [pM, pN, pO, pP], {fillColor:'rgba(0,0,255,0.2)', borders:{strokeColor:'blue', strokeWidth:2}});\nboard.unsuspendUpdate();"
           }
         }
-      },
-      {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(MN = \\sqrt{6^2 + 5^2} = \\sqrt{61}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(NO = \\sqrt{(-1)^2 + (-1)^2} = \\sqrt{2}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}; Parallelogram. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}; Parallelogram\\)",
-        "graphData": null
       }
     ],
     "graphData": {
       "jsxGraph": {
-        "width": 350,
-        "height": 300,
+        "width": 400,
+        "height": 400,
         "boundingbox": [
-          -2,
-          12,
-          14,
-          -2
+          -3,
+          13,
+          15,
+          -3
         ],
-        "showConstructionPoints": true,
         "boardOptions": {
-          "axis": true,
+          "axis": false,
           "grid": true
         },
-        "script": "board.suspendUpdate();\nvar pA = board.create('point', [0, 0], {size: 3, color: 'black', name: 'A(0, 0)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nvar pB = board.create('point', [4, 8], {size: 3, color: 'black', name: 'B(4, 8)', withLabel: true, label: {autoPosition: false, offset: [5, 15]}});\nvar pC = board.create('point', [12, 10], {size: 3, color: 'black', name: 'C(12, 10)', withLabel: true, label: {autoPosition: false, offset: [10, 5]}});\nvar pD = board.create('point', [2, 6], {size: 3, color: 'black', name: 'D(2, 6)', withLabel: true, label: {autoPosition: false, offset: [-25, 15]}});\nvar pM = board.create('point', [2, 4], {size: 3, color: 'blue', name: 'M(2, 4)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nvar pN = board.create('point', [8, 9], {size: 3, color: 'blue', name: 'N(8, 9)', withLabel: true, label: {autoPosition: false, offset: [5, 15]}});\nvar pO = board.create('point', [7, 8], {size: 3, color: 'blue', name: 'O(7, 8)', withLabel: true, label: {autoPosition: false, offset: [5, -15]}});\nvar pP = board.create('point', [1, 3], {size: 3, color: 'blue', name: 'P(1, 3)', withLabel: true, label: {autoPosition: false, offset: [-20, -15]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.create('polygon', [pM, pN, pO, pP], {fillColor: '#bfdbfe', fillOpacity: 0.3, borders: {strokeColor: 'blue', strokeWidth: 2}});\nboard.unsuspendUpdate();"
+        "script": "board.suspendUpdate();\nboard.create('arrow', [[-2, 0], [14, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 12]], {strokeColor: 'black'});\nlet pA = board.create('point', [0, 0], {name:'A(0, 0)', size:3, color:'red', label:{offset:[-20,-10]}});\nlet pB = board.create('point', [4, 8], {name:'B(4, 8)', size:3, color:'red', label:{offset:[-20,10]}});\nlet pC = board.create('point', [12, 10], {name:'C(12, 10)', size:3, color:'red', label:{offset:[10,10]}});\nlet pD = board.create('point', [2, 6], {name:'D(2, 6)', size:3, color:'red', label:{offset:[-20,-10]}});\nboard.create('polygon', [pA, pB, pC, pD], {fillColor:'rgba(255,0,0,0.05)', borders:{strokeColor:'red', strokeWidth:2}});\nboard.unsuspendUpdate();"
       }
     },
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\(MN = OP = \\sqrt{53}, NO = PM = \\sqrt{5}\\); Parallelogram",
+      "\\(MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}\\); Rectangle",
+      "\\(MN = OP = 61, NO = PM = 2\\); Parallelogram",
+      "\\(MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}\\); Parallelogram"
+    ],
+    "a": 3,
+    "options": [
+      {
+        "text": "\\(MN = OP = \\sqrt{53}, NO = PM = \\sqrt{5}\\); Parallelogram",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}\\); Rectangle",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(MN = OP = 61, NO = PM = 2\\); Parallelogram",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(MN = OP = \\sqrt{61}, NO = PM = \\sqrt{2}\\); Parallelogram",
+        "imageUrl": ""
+      }
+    ]
   }
 ];
