@@ -20,24 +20,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)\\)\nHere, \\(M = \\left(\\frac{1 + 9}{2}, \\frac{4 + 4}{2}\\right) = \\left(\\frac{10}{2}, \\frac{8}{2}\\right) = (5, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(1, 4), quad B(9, 4)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(1, 4), \\; B(9, 4) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x_M = \\frac{1 + 9}{2} = 5\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y_M = \\frac{4 + 4}{2} = 4\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{1 + 9}{2} = 5 \\\\\\\\ y_M &= \\frac{4 + 4}{2} = 4 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (5, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((5, 4)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(5, 4) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              6,
+              11,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [11, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 2], [0, 6]], {strokeColor: 'black'});\nboard.create('point', [1, 4], {name:'A(1, 4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [9, 4], {name:'B(9, 4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [5, 4], {name:'M(5, 4)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[1, 4], [9, 4]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -83,24 +99,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{6 + (-2)}{2}, \\frac{5 + 5}{2}\\right) = \\left(\\frac{4}{2}, \\frac{10}{2}\\right) = (2, 5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(6, 5), quad B(-2, 5)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(6, 5), \\; B(-2, 5) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x_M = \\frac{6 + (-2)}{2} = 2\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y_M = \\frac{5 + 5}{2} = 5\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{6 + -2}{2} = 2 \\\\\\\\ y_M &= \\frac{5 + 5}{2} = 5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (2, 5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((2, 5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(2, 5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -4,
+              7,
+              8,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [8, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 3], [0, 7]], {strokeColor: 'black'});\nboard.create('point', [6, 5], {name:'A(6, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-2, 5], {name:'B(-2, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, 5], {name:'M(2, 5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[6, 5], [-2, 5]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -146,24 +178,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-3 + (-3)}{2}, \\frac{1 + 11}{2}\\right) = \\left(\\frac{-6}{2}, \\frac{12}{2}\\right) = (-3, 6)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(-3, 1), quad B(-3, 11)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-3, 1), \\; B(-3, 11) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x_M = \\frac{-3 + (-3)}{2} = -3\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y_M = \\frac{1 + 11}{2} = 6\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-3 + -3}{2} = -3 \\\\\\\\ y_M &= \\frac{1 + 11}{2} = 6 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-3, 6). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-3, 6)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(-3, 6) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -5,
+              13,
+              -1,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [-1, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -1], [0, 13]], {strokeColor: 'black'});\nboard.create('point', [-3, 1], {name:'A(-3, 1)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-3, 11], {name:'B(-3, 11)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-3, 6], {name:'M(-3, 6)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-3, 1], [-3, 11]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -209,24 +257,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-4 + (-4)}{2}, \\frac{-6 + 9}{2}\\right) = \\left(\\frac{-8}{2}, \\frac{3}{2}\\right) = (-4, 1.5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(-4, -6), quad B(-4, 9)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-4, -6), \\; B(-4, 9) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x_M = \\frac{-4 + (-4)}{2} = -4\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y_M = \\frac{-6 + 9}{2} = 1.5\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-4 + -4}{2} = -4 \\\\\\\\ y_M &= \\frac{-6 + 9}{2} = 1.5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-4, 1.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-4, 1.5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(-4, 1.5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -6,
+              11,
+              -2,
+              -8
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6, 0], [-2, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -8], [0, 11]], {strokeColor: 'black'});\nboard.create('point', [-4, -6], {name:'A(-4, -6)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-4, 9], {name:'B(-4, 9)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-4, 1.5], {name:'M(-4, 1.5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-4, -6], [-4, 9]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -272,24 +336,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{1 + 7}{2}, \\frac{2 + 10}{2}\\right) = \\left(\\frac{8}{2}, \\frac{12}{2}\\right) = (4, 6)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{1 + 7}{2}, frac{2 + 10}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(1, 2), \\; B(7, 10) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (4, 6)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((4, 6)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{1 + 7}{2} = 4 \\\\\\\\ y_M &= \\frac{2 + 10}{2} = 6 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (4, 6). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((4, 6)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(4, 6) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              12,
+              9,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [9, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 0], [0, 12]], {strokeColor: 'black'});\nboard.create('point', [1, 2], {name:'A(1, 2)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [7, 10], {name:'B(7, 10)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [4, 6], {name:'M(4, 6)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[1, 2], [7, 10]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -335,24 +415,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{4 + 7}{2}, \\frac{8 + 4}{2}\\right) = \\left(\\frac{11}{2}, \\frac{12}{2}\\right) = (5.5, 6)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{4 + 7}{2}, frac{8 + 4}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(4, 8), \\; B(7, 4) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (5.5, 6)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((5.5, 6)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{4 + 7}{2} = 5.5 \\\\\\\\ y_M &= \\frac{8 + 4}{2} = 6 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (5.5, 6). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((5.5, 6)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(5.5, 6) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              2,
+              10,
+              9,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[2, 0], [9, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 2], [0, 10]], {strokeColor: 'black'});\nboard.create('point', [4, 8], {name:'A(4, 8)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [7, 4], {name:'B(7, 4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [5.5, 6], {name:'M(5.5, 6)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[4, 8], [7, 4]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -398,24 +494,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-3 + 2}{2}, \\frac{0 + 10}{2}\\right) = \\left(\\frac{-1}{2}, \\frac{10}{2}\\right) = (-0.5, 5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-3 + 2}{2}, frac{0 + 10}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-3, 0), \\; B(2, 10) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (-0.5, 5)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((-0.5, 5)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-3 + 2}{2} = -0.5 \\\\\\\\ y_M &= \\frac{0 + 10}{2} = 5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-0.5, 5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-0.5, 5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(-0.5, 5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -5,
+              12,
+              4,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-5, 0], [4, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 12]], {strokeColor: 'black'});\nboard.create('point', [-3, 0], {name:'A(-3, 0)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, 10], {name:'B(2, 10)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-0.5, 5], {name:'M(-0.5, 5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-3, 0], [2, 10]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -461,24 +573,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-1 + 7}{2}, \\frac{-5 + 10}{2}\\right) = \\left(\\frac{6}{2}, \\frac{5}{2}\\right) = (3, 2.5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-1 + 7}{2}, frac{-5 + 10}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-1, -5), \\; B(7, 10) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (3, 2.5)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3, 2.5)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-1 + 7}{2} = 3 \\\\\\\\ y_M &= \\frac{-5 + 10}{2} = 2.5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3, 2.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, 2.5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(3, 2.5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -3,
+              12,
+              9,
+              -7
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-3, 0], [9, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -7], [0, 12]], {strokeColor: 'black'});\nboard.create('point', [-1, -5], {name:'A(-1, -5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [7, 10], {name:'B(7, 10)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [3, 2.5], {name:'M(3, 2.5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-1, -5], [7, 10]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -524,24 +652,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-2 + 2}{2}, \\frac{-4 + (-2)}{2}\\right) = \\left(\\frac{0}{2}, \\frac{-6}{2}\\right) = (0, -3)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-2 + 2}{2}, frac{-4 + (-2)}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-2, -4), \\; B(2, -2) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (0, -3)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((0, -3)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-2 + 2}{2} = 0 \\\\\\\\ y_M &= \\frac{-4 + -2}{2} = -3 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (0, -3). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((0, -3)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(0, -3) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -4,
+              1,
+              4,
+              -6
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-4, 0], [4, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -6], [0, 0]], {strokeColor: 'black'});\nboard.create('point', [-2, -4], {name:'A(-2, -4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, -2], {name:'B(2, -2)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [0, -3], {name:'M(0, -3)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-2, -4], [2, -2]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -587,24 +731,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-5 + 5}{2}, \\frac{5 + 0}{2}\\right) = \\left(\\frac{0}{2}, \\frac{5}{2}\\right) = (0, 2.5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-5 + 5}{2}, frac{5 + 0}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-5, 5), \\; B(5, 0) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (0, 2.5)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((0, 2.5)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-5 + 5}{2} = 0 \\\\\\\\ y_M &= \\frac{5 + 0}{2} = 2.5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (0, 2.5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((0, 2.5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(0, 2.5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -7,
+              7,
+              7,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-7, 0], [7, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -2], [0, 7]], {strokeColor: 'black'});\nboard.create('point', [-5, 5], {name:'A(-5, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [5, 0], {name:'B(5, 0)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [0, 2.5], {name:'M(0, 2.5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-5, 5], [5, 0]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -650,24 +810,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{1 + 5}{2}, \\frac{-2 + (-6)}{2}\\right) = \\left(\\frac{6}{2}, \\frac{-8}{2}\\right) = (3, -4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{1 + 5}{2}, frac{-2 + (-6)}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(1, -2), \\; B(5, -6) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (3, -4)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((3, -4)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{1 + 5}{2} = 3 \\\\\\\\ y_M &= \\frac{-2 + -6}{2} = -4 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (3, -4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((3, -4)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(3, -4) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              1,
+              7,
+              -8
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [7, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -8], [0, 0]], {strokeColor: 'black'});\nboard.create('point', [1, -2], {name:'A(1, -2)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [5, -6], {name:'B(5, -6)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [3, -4], {name:'M(3, -4)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[1, -2], [5, -6]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -713,24 +889,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the midpoint formula:\n\\(M = \\left(\\frac{-8 + 0}{2}, \\frac{-5 + (-3)}{2}\\right) = \\left(\\frac{-8}{2}, \\frac{-8}{2}\\right) = (-4, -4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(M = \\left(\\frac{-8 + 0}{2}, frac{-5 + (-3)}{2}\\right)\\)",
+        "explanation": "Step 1: Identify the coordinates of the given endpoints.",
+        "workingOut": "$$ A(-8, -5), \\; B(0, -3) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(M = (-4, -4)\\)",
+        "explanation": "Step 2: State the midpoint formula.",
+        "workingOut": "\\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\((-4, -4)\\)",
+        "explanation": "Step 3: Substitute the coordinates and calculate.",
+        "workingOut": "$$ \\begin{aligned} x_M &= \\frac{-8 + 0}{2} = -4 \\\\\\\\ y_M &= \\frac{-5 + -3}{2} = -4 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-4, -4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-4, -4)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the midpoint \\(M\\).",
+        "workingOut": "$$ M(-4, -4) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -10,
+              1,
+              2,
+              -7
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-10, 0], [2, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -7], [0, -1]], {strokeColor: 'black'});\nboard.create('point', [-8, -5], {name:'A(-8, -5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [0, -3], {name:'B(0, -3)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-4, -4], {name:'M(-4, -4)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('segment', [[-8, -5], [0, -3]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -776,24 +968,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Since \\(M\\) is the midpoint of \\(AB\\), we have:\n\\(x_M = \\frac{x_A + x_B}{2} \\implies x_B = 2x_M - x_A\\)\n\\(y_M = \\frac{y_A + y_B}{2} \\implies y_B = 2y_M - y_A\\)\nSubstituting the values:\n\\(x_B = 2(9) - 2 = 18 - 2 = 16\\)\n\\(y_B = 2(5) - 5 = 10 - 5 = 5\\)\nSo, \\(B\\) has coordinates \\((16, 5)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "A(2, 5), quad M(9, 5)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(2, 5), \\; M(9, 5) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(x_B = 2(9) - 2 = 16\\)",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{2 + x_2}{2} = 9, \\quad \\frac{5 + y_2}{2} = 5 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(y_B = 2(5) - 5 = 5\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{2 + x_2}{2} &= 9 \\implies 2 + x_2 = 18 \\implies x_2 = 16 \\\\\\\\ \\frac{5 + y_2}{2} &= 5 \\implies 5 + y_2 = 10 \\implies y_2 = 5 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (16, 5). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((16, 5)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(16, 5) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              0,
+              7,
+              18,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[0, 0], [18, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 3], [0, 7]], {strokeColor: 'black'});\nboard.create('point', [2, 5], {name:'A(2, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [9, 5], {name:'M(9, 5)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [16, 5], {name:'B(16, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[2, 5], [16, 5]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -839,24 +1047,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using the formula \\(B = 2M - A\\):\n\\(x_B = 2(-8) - 3 = -16 - 3 = -19\\)\n\\(y_B = 2(4) - 4 = 8 - 4 = 4\\)\nSo, \\(B\\) has coordinates \\((-19, 4)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(B = 2(-8, 4) - (3, 4)\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(3, 4), \\; M(-8, 4) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "x_B = -16 - 3 = -19, quad y_B = 8 - 4 = 4",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{3 + x_2}{2} = -8, \\quad \\frac{4 + y_2}{2} = 4 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(B(-19, 4)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{3 + x_2}{2} &= -8 \\implies 3 + x_2 = -16 \\implies x_2 = -19 \\\\\\\\ \\frac{4 + y_2}{2} &= 4 \\implies 4 + y_2 = 8 \\implies y_2 = 4 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-19, 4). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-19, 4)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(-19, 4) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -21,
+              6,
+              5,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-21, 0], [5, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, 2], [0, 6]], {strokeColor: 'black'});\nboard.create('point', [3, 4], {name:'A(3, 4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-8, 4], {name:'M(-8, 4)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [-19, 4], {name:'B(-19, 4)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[3, 4], [-19, 4]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -902,24 +1126,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(-4) - (-2) = -8 + 2 = -6\\)\n\\(y_B = 2(3) - 5 = 6 - 5 = 1\\)\nSo, \\(B\\) has coordinates \\((-6, 1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(x_B = 2(-4) - (-2) = -6\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(-2, 5), \\; M(-4, 3) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y_B = 2(3) - 5 = 1\\)",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{-2 + x_2}{2} = -4, \\quad \\frac{5 + y_2}{2} = 3 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(B(-6, 1)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{-2 + x_2}{2} &= -4 \\implies -2 + x_2 = -8 \\implies x_2 = -6 \\\\\\\\ \\frac{5 + y_2}{2} &= 3 \\implies 5 + y_2 = 6 \\implies y_2 = 1 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-6, 1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-6, 1)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(-6, 1) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -8,
+              7,
+              0,
+              -1
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-8, 0], [0, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -1], [0, 7]], {strokeColor: 'black'});\nboard.create('point', [-2, 5], {name:'A(-2, 5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-4, 3], {name:'M(-4, 3)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [-6, 1], {name:'B(-6, 1)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[-2, 5], [-6, 1]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -965,24 +1205,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(2) - 3 = 4 - 3 = 1\\)\n\\(y_B = 2(7) - (-5) = 14 + 5 = 19\\)\nSo, \\(B\\) has coordinates \\((1, 19)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(x_B = 2(2) - 3 = 1\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(3, -5), \\; M(2, 7) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y_B = 2(7) - (-5) = 19\\)",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{3 + x_2}{2} = 2, \\quad \\frac{-5 + y_2}{2} = 7 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(B(1, 19)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{3 + x_2}{2} &= 2 \\implies 3 + x_2 = 4 \\implies x_2 = 1 \\\\\\\\ \\frac{-5 + y_2}{2} &= 7 \\implies -5 + y_2 = 14 \\implies y_2 = 19 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (1, 19). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((1, 19)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(1, 19) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              21,
+              5,
+              -7
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-1, 0], [5, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -7], [0, 21]], {strokeColor: 'black'});\nboard.create('point', [3, -5], {name:'A(3, -5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [2, 7], {name:'M(2, 7)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [1, 19], {name:'B(1, 19)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[3, -5], [1, 19]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1028,24 +1284,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(-3) - 4 = -6 - 4 = -10\\)\n\\(y_B = 2(8) - (-2) = 16 + 2 = 18\\)\nSo, \\(B\\) has coordinates \\((-10, 18)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(x_B = 2(-3) - 4 = -10\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(4, -2), \\; M(-3, 8) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y_B = 2(8) - (-2) = 18\\)",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{4 + x_2}{2} = -3, \\quad \\frac{-2 + y_2}{2} = 8 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(B(-10, 18)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{4 + x_2}{2} &= -3 \\implies 4 + x_2 = -6 \\implies x_2 = -10 \\\\\\\\ \\frac{-2 + y_2}{2} &= 8 \\implies -2 + y_2 = 16 \\implies y_2 = 18 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-10, 18). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-10, 18)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(-10, 18) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -12,
+              20,
+              6,
+              -4
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-12, 0], [6, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -4], [0, 20]], {strokeColor: 'black'});\nboard.create('point', [4, -2], {name:'A(4, -2)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-3, 8], {name:'M(-3, 8)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [-10, 18], {name:'B(-10, 18)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[4, -2], [-10, 18]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -1091,24 +1363,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "Using \\(B = 2M - A\\):\n\\(x_B = 2(-3) - 6 = -6 - 6 = -12\\)\n\\(y_B = 2(-3) - (-5) = -6 + 5 = -1\\)\nSo, \\(B\\) has coordinates \\((-12, -1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(x_B = 2(-3) - 6 = -12\\)",
+        "explanation": "Step 1: Identify the coordinates of the known endpoint and the midpoint.",
+        "workingOut": "$$ A(6, -5), \\; M(-3, -3) $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(y_B = 2(-3) - (-5) = -1\\)",
+        "explanation": "Step 2: Set up equations using the midpoint formula \\( M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) \\).",
+        "workingOut": "$$ \\frac{6 + x_2}{2} = -3, \\quad \\frac{-5 + y_2}{2} = -3 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(B(-12, -1)\\)",
+        "explanation": "Step 3: Solve for the unknown coordinates \\(x_2\\) and \\(y_2\\).",
+        "workingOut": "$$ \\begin{aligned} \\frac{6 + x_2}{2} &= -3 \\implies 6 + x_2 = -6 \\implies x_2 = -12 \\\\\\\\ \\frac{-5 + y_2}{2} &= -3 \\implies -5 + y_2 = -6 \\implies y_2 = -1 \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: (-12, -1). Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\((-12, -1)\\)",
-        "graphData": null
+        "explanation": "Step 4: State the final coordinates of the unknown endpoint \\(B\\).",
+        "workingOut": "$$ B(-12, -1) $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -14,
+              1,
+              8,
+              -7
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-14, 0], [8, 0]], {strokeColor: 'black'});\nboard.create('arrow', [[0, -7], [0, 1]], {strokeColor: 'black'});\nboard.create('point', [6, -5], {name:'A(6, -5)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('point', [-3, -3], {name:'M(-3, -3)', size:3, color:'green', label:{offset:[5,10]}});\nboard.create('point', [-12, -1], {name:'B(-12, -1)', size:3, color:'red', label:{offset:[5,10]}});\nboard.create('segment', [[6, -5], [-12, -1]], {strokeColor: 'blue', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
