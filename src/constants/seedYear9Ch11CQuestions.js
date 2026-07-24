@@ -83,11 +83,11 @@ export const Y9_CH11C_QUESTIONS = [
     "topicId": "y9-11c",
     "c": "11C",
     "t": "The gradient of a line",
-    "type": "teacher_review",
+    "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
     "question": "Find the gradient of the interval \\(AB\\) with endpoints \\(A(-3, 5)\\) and \\(B(0, 11)\\).",
-    "answer": "2",
+    "answer": "3",
     "hint": "Recall \\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\). Be careful with double negatives.",
     "solution": "2",
     "solutionSteps": [
@@ -130,7 +130,32 @@ export const Y9_CH11C_QUESTIONS = [
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": true
+    "requiresManualGrading": false,
+    "opts": [
+      "\\\\(-2\\\\)",
+      "\\\\(-\\\\frac{1}{2}\\\\)",
+      "\\\\(\\\\frac{1}{2}\\\\)",
+      "\\\\(2\\\\)"
+    ],
+    "a": 3,
+    "options": [
+      {
+        "text": "\\\\(-2\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{1}{2}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(2\\\\)",
+        "imageUrl": ""
+      }
+    ]
   },
   {
     "id": "y9-11c-q1c",
