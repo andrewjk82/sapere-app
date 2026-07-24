@@ -2158,9 +2158,9 @@ export const Y9_CH11B_QUESTIONS = [
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nCompare the distance \\(BC\\) with the distance \\(MN\\).",
     "opts": [
       "\\(BC = 2MN\\)",
-      "None of the above",
-      "Cannot be determined",
-      "Not enough information"
+      "\\(BC = MN\\)",
+      "\\(BC = \\frac{1}{2}MN\\)",
+      "\\(BC = 3MN\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2168,24 +2168,40 @@ export const Y9_CH11B_QUESTIONS = [
     "solution": "The correct answer is \\(BC = 2MN\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(BC = 2 \\times MN\\)",
+        "explanation": "Step 1: Find the coordinates of midpoints \\(M\\) and \\(N\\).",
+        "workingOut": "$$ \\begin{aligned} M &= \\left(\\frac{1+5}{2}, \\frac{2+4}{2}\\right) = (3, 3) \\\\\\\\ N &= \\left(\\frac{1+7}{2}, \\frac{2+0}{2}\\right) = (4, 1) \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Calculate the length of \\(BC\\) using the distance formula.",
+        "workingOut": "$$ BC = \\sqrt{(7-5)^2 + (0-4)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\sqrt{20} = 2\\sqrt{5} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(BC = 2MN\\)",
+        "explanation": "Step 3: Calculate the length of \\(MN\\) using the distance formula.",
+        "workingOut": "$$ MN = \\sqrt{(4-3)^2 + (1-3)^2} = \\sqrt{1^2 + (-2)^2} = \\sqrt{1 + 4} = \\sqrt{5} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: BC = 2MN. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(BC = 2MN\\)",
-        "graphData": null
+        "explanation": "Step 4: Compare \\(BC\\) and \\(MN\\).",
+        "workingOut": "Since \\(BC = 2\\sqrt{5}\\) and \\(MN = \\sqrt{5}\\), we have \\(BC = 2MN\\). This is a general property of triangles: the segment connecting the midpoints of two sides is half the length of the third side.",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -1,
+              6,
+              9,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [1, 2], {name:'A(1,2)', size:3, color:'red', label:{offset:[-20,10]}});\nboard.create('point', [5, 4], {name:'B(5,4)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('point', [7, 0], {name:'C(7,0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('point', [3, 3], {name:'M(3,3)', size:3, color:'blue', label:{offset:[-10,15]}});\nboard.create('point', [4, 1], {name:'N(4,1)', size:3, color:'blue', label:{offset:[-10,-15]}});\nboard.create('polygon', [[1,2], [5,4], [7,0]], {fillColor: 'none', borders: {strokeColor: 'black', strokeWidth: 1.5}});\nboard.create('segment', [[3,3], [4,1]], {strokeColor: 'blue', strokeWidth: 2, dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
@@ -2197,15 +2213,15 @@ export const Y9_CH11B_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "None of the above",
+        "text": "\\(BC = MN\\)",
         "imageUrl": ""
       },
       {
-        "text": "Cannot be determined",
+        "text": "\\(BC = \\frac{1}{2}MN\\)",
         "imageUrl": ""
       },
       {
-        "text": "Not enough information",
+        "text": "\\(BC = 3MN\\)",
         "imageUrl": ""
       }
     ]
@@ -2220,34 +2236,34 @@ export const Y9_CH11B_QUESTIONS = [
     "timeLimit": 90,
     "question": "Consider the three points \\(A(1, 2)\\), \\(B(5, 4)\\) and \\(C(7, 0)\\). Let \\(M\\) and \\(N\\) be the midpoints of \\(AB\\) and \\(AC\\) respectively. Answer the following questions.\nWhat is the relation between \\(\\Delta ABC\\) and \\(\\Delta AMN\\)?",
     "opts": [
-      "Cannot be determined",
-      "Similar triangles",
-      "Not enough information",
-      "None of the above"
+      "Both have a gradient of \\(-2\\)",
+      "Both have a gradient of \\(2\\)",
+      "Both have a gradient of \\(\\frac{1}{2}\\)",
+      "Both have a gradient of \\(-\\frac{1}{2}\\)"
     ],
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "0",
     "hint": "",
     "solution": "The correct answer is Similar triangles.",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The midpoint of an interval: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(\\Delta ABC \\sim \\Delta AMN \\quad \\text{(SAS similarity, scale factor 2)}\\)",
+        "explanation": "Step 1: Recall the condition for two lines to be parallel.",
+        "workingOut": "Two lines are parallel if and only if they have the same gradient (slope), $m_1 = m_2$. The gradient formula is $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "State the rule",
+        "explanation": "Step 2: Calculate the gradient of \\(BC\\).",
+        "workingOut": "Using $B(5, 4)$ and $C(7, 0)$:\n$$ m_{BC} = \\frac{0 - 4}{7 - 5} = \\frac{-4}{2} = -2 $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "Similar triangles",
+        "explanation": "Step 3: Calculate the gradient of \\(MN\\).",
+        "workingOut": "Using $M(3, 3)$ and $N(4, 1)$ (found previously):\n$$ m_{MN} = \\frac{1 - 3}{4 - 3} = \\frac{-2}{1} = -2 $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: Similar triangles. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "Similar triangles",
+        "explanation": "Step 4: Conclude.",
+        "workingOut": "Since both $BC$ and $MN$ have the same gradient of $-2$, the intervals are parallel.",
         "graphData": null
       }
     ],
@@ -2256,19 +2272,19 @@ export const Y9_CH11B_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "Cannot be determined",
+        "text": "Both have a gradient of \\(-2\\)",
         "imageUrl": ""
       },
       {
-        "text": "Similar triangles",
+        "text": "Both have a gradient of \\(2\\)",
         "imageUrl": ""
       },
       {
-        "text": "Not enough information",
+        "text": "Both have a gradient of \\(\\frac{1}{2}\\)",
         "imageUrl": ""
       },
       {
-        "text": "None of the above",
+        "text": "Both have a gradient of \\(-\\frac{1}{2}\\)",
         "imageUrl": ""
       }
     ]
