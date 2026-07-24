@@ -20,18 +20,28 @@ export const CTHS_2020_SIMILAR_QUESTIONS = [
     "solution": "The correct answer is \\(x < -\\dfrac{1}{9}\\).",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(f(x) = 3x^3 + x^2\\) once to find the first derivative using the power rule. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(f'(x) = 9x^2 + 2x\\)",
+        "explanation": "Step 1: To perform a full calculus analysis of the curve \\(f(x) = 3x^3 + x^2\\), we first find the first derivative to identify any turning points (stationary points).",
+        "workingOut": "$$ \\begin{aligned} f'(x) &= 9x^2 + 2x \\\\\\\\ 9x^2 + 2x &= 0 \\\\\\\\ x(9x + 2) &= 0 \\implies x = 0 \\text{ or } x = -\\dfrac{2}{9} \\end{aligned} $$",
         "graphData": null
       },
       {
-        "explanation": "Differentiate again to find the second derivative \\(f''(x)\\), which measures the concavity of the curve.",
-        "workingOut": "\\(f''(x) = 18x + 2\\)",
+        "explanation": "Step 2: Next, find the second derivative \\(f''(x)\\). This will allow us to classify the turning points as maximum or minimum, find any points of inflection (POI), and determine the concavity.",
+        "workingOut": "$$ f''(x) = 18x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Verify by testing \\(x = -1\\): \\(f''(-1) = 18(-1)+2 = -16 < 0\\) ✓ (concave down). And \\(x = 0\\): \\(f''(0) = 2 > 0\\) (concave up) ✓.",
-        "workingOut": "\\(f''(-1) = -16 < 0 \\checkmark\\)",
+        "explanation": "Step 3: Classify the turning points using the second derivative.",
+        "workingOut": "$$ \\begin{aligned} \\text{At } x = 0, \\; f''(0) &= 18(0) + 2 = 2 > 0 \\implies \\text{Local Minimum} \\\\\\\\ \\text{At } x = -\\dfrac{2}{9}, \\; f''\\left(-\\dfrac{2}{9}\\right) &= 18\\left(-\\dfrac{2}{9}\\right) + 2 = -2 < 0 \\implies \\text{Local Maximum} \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Find the point of inflection by setting \\(f''(x) = 0\\). A point of inflection occurs where concavity changes.",
+        "workingOut": "$$ \\begin{aligned} 18x + 2 &= 0 \\\\\\\\ 18x &= -2 \\implies x = -\\dfrac{1}{9} \\text{ (Point of Inflection)} \\end{aligned} $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Finally, answer the specific question: For what values of \\(x\\) is the curve concave down? A curve is concave down when \\(f''(x) < 0\\).",
+        "workingOut": "$$ \\begin{aligned} f''(x) &< 0 \\\\\\\\ 18x + 2 &< 0 \\\\\\\\ 18x &< -2 \\implies x < -\\dfrac{1}{9} \\end{aligned} $$",
         "graphData": null
       }
     ],
