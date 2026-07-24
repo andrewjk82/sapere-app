@@ -2063,10 +2063,10 @@ export const Y9_CH11C_QUESTIONS = [
     "timeLimit": 120,
     "question": "A line passes through \\((0, p)\\) and \\((q, 0)\\). Find the gradient of the line.",
     "opts": [
-      "\\(-p/q\\)",
-      "\\(-p/q + 1\\)",
-      "\\(\\dfrac{13}{6}\\)",
-      "\\(p/q\\)"
+      "\\\\(-\\\\frac{p}{q}\\\\)",
+      "\\\\(\\\\frac{p}{q}\\\\)",
+      "\\\\(-\\\\frac{q}{p}\\\\)",
+      "\\\\(\\\\frac{q}{p}\\\\)"
     ],
     "a": 0,
     "answer": "0",
@@ -2074,28 +2074,62 @@ export const Y9_CH11C_QUESTIONS = [
     "solution": "Using the gradient formula with endpoints \\((x_1, y_1) = (0, p)\\) and \\((x_2, y_2) = (q, 0)\\):\n\\(m = \\frac{y_2 - y_1}{x_2 - x_1}\\)\n\\(m = \\frac{0 - p}{q - 0} = \\frac{-p}{q} = -\\frac{p}{q}\\).\nSo the gradient is \\(-\\frac{p}{q}\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for The gradient of a line: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\((0, p) \\quad \\text{and} \\quad (q, 0)\\)",
+        "explanation": "Step 1: Identify the coordinates of the two points.",
+        "workingOut": "Let $(x_1, y_1) = (0, p)$ and $(x_2, y_2) = (q, 0)$.",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
-        "workingOut": "\\(m = \\frac{0 - p}{q - 0}\\)",
+        "explanation": "Step 2: State the formula for the gradient \\(m\\).",
+        "workingOut": "$$ m = \\frac{Rise}{Run} = \\frac{y_2 - y_1}{x_2 - x_1} $$",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
-        "workingOut": "\\(m = -\\frac{p}{q}\\)",
+        "explanation": "Step 3: Substitute the coordinates into the formula.",
+        "workingOut": "$$ m = \\frac{0 - p}{q - 0} $$",
         "graphData": null
       },
       {
-        "explanation": "Final answer: -p/q. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(-p/q\\)",
-        "graphData": null
+        "explanation": "Step 4: Simplify the fraction to find the final gradient.",
+        "workingOut": "$$ m = \\frac{-p}{q} = -\\frac{p}{q} $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 400,
+            "height": 400,
+            "boundingbox": [
+              -2,
+              6,
+              6,
+              -2
+            ],
+            "boardOptions": {
+              "axis": true,
+              "grid": true
+            },
+            "script": "board.suspendUpdate();\nboard.create('point', [0, 4], {name:'(0, p)', size:3, color:'red', label:{offset:[-35,10]}});\nboard.create('point', [4, 0], {name:'(q, 0)', size:3, color:'red', label:{offset:[10,10]}});\nboard.create('line', [[0, 4], [4, 0]], {strokeColor: 'blue', straightFirst: true, straightLast: true});\nboard.create('segment', [[0, 4], [4, 4]], {strokeColor: 'green', dash: 2});\nboard.create('segment', [[4, 4], [4, 0]], {strokeColor: 'orange', dash: 2});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": null,
     "isNew": true,
-    "requiresManualGrading": false
+    "requiresManualGrading": false,
+    "options": [
+      {
+        "text": "\\\\(-\\\\frac{p}{q}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{p}{q}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(-\\\\frac{q}{p}\\\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\\\(\\\\frac{q}{p}\\\\)",
+        "imageUrl": ""
+      }
+    ]
   }
 ];
