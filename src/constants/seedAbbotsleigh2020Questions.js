@@ -2204,30 +2204,31 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the value of $r$ that gives the cylindrical tank its greatest volume, and calculate that volume correct to the nearest cubic metre, given $V = \\dfrac{3\\pi}{4}(8r^2 - r^3)$.",
     "opts": [
-      "\\(\\(r = \\dfrac{16}{3}\\) m; \\(V_{\\max} = \\dfrac{512\\pi}{9} \\approx 179\\) m³\\)",
-      "\\(\\(r = \\dfrac{8}{3}\\) m; \\(V_{\\max} \\approx 89\\) m³\\)",
-      "\\(\\(r = 4\\) m; \\(V_{\\max} \\approx 151\\) m³\\)",
-      "\\(\\(r = \\dfrac{16}{3}\\) m; \\(V_{\\max} \\approx 90\\) m³\\)"
+      "\\(r = \\frac{16}{3}\\) m; \\(V_{\\max} = \\frac{512\\pi}{9} \\approx 179\\) m³",
+      "\\(r = \\frac{8}{3}\\) m; \\(V_{\\max} \\approx 89\\) m³",
+      "\\(r = 4\\) m; \\(V_{\\max} \\approx 151\\) m³",
+      "\\(r = \\frac{16}{3}\\) m; \\(V_{\\max} \\approx 90\\) m³"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Differentiate $V$ with respect to $r$, set equal to zero, and verify it is a maximum.",
-    "solution": "The correct answer is \\(\\(r = \\dfrac{16}{3}\\) m; \\(V_{\\max} = \\dfrac{512\\pi}{9} \\approx 179\\) m³\\).",
+    "solution": "The correct answer is \\(r = \\frac{16}{3}\\) m; \\(V_{\\max} = \\frac{512\\pi}{9} \\approx 179\\) m³.",
     "solutionSteps": [
       {
-        "explanation": "Since \\(r > 0\\) (the cylinder has positive radius) and \\(r < 8\\) (must fit in the triangle), use \\(r = \\frac{16}{3} \\approx 5.33\\) m.",
-        "workingOut": "\\(r = \\frac{16}{3} \\text{ m}\\)",
-        "graphData": null
+        "explanation": "Step 1: To find the greatest volume, we need to maximize \\(V\\). First, find the first derivative of the volume with respect to the radius \\(r\\).",
+        "workingOut": "$$ \\begin{aligned} V &= \\frac{3\\pi}{4}(8r^2 - r^3) \\\\\\\\ \\frac{dV}{dr} &= \\frac{3\\pi}{4}(16r - 3r^2) \\end{aligned} $$"
       },
       {
-        "explanation": "Verify this is a maximum using the second derivative: \\(\\frac{d^2V}{dr^2} = \\frac{3\\pi}{4}(16 - 6r)\\). At \\(r = \\frac{16}{3}\\): \\(16 - 6 \\cdot \\frac{16}{3} = 16 - 32 = -16 < 0\\) ✓.",
-        "workingOut": "\\(\\frac{d^2V}{dr^2}\\bigg|_{16/3} = \\frac{3\\pi}{4}(-16) < 0 \\checkmark \\text{ (maximum)}\\)",
-        "graphData": null
+        "explanation": "Step 2: Set the derivative equal to zero to find the stationary points. We can factor and solve for \\(r\\). Note that the radius \\(r\\) must be greater than zero.",
+        "workingOut": "$$ \\begin{aligned} \\frac{3\\pi}{4}(16r - 3r^2) &= 0 \\\\\\\\ r(16 - 3r) &= 0 \\implies r = 0 \\text{ or } r = \\frac{16}{3} \\\\\\\\ \\therefore r &= \\frac{16}{3} \\text{ m (since } r > 0) \\end{aligned} $$"
       },
       {
-        "explanation": "Calculate the maximum volume. First find \\(h\\): \\(h = \\frac{3}{4}(8 - \\frac{16}{3}) = \\frac{3}{4} \\cdot \\frac{8}{3} = 2\\) m.",
-        "workingOut": "\\(h = \\frac{3}{4}\\!\\left(8 - \\frac{16}{3}\\right) = \\frac{3}{4} \\cdot \\frac{8}{3} = 2 \\text{ m}\\)",
-        "graphData": null
+        "explanation": "Step 3: Verify that \\(r = \\frac{16}{3}\\) gives a maximum volume by checking the second derivative. If \\(\\frac{d^2V}{dr^2} < 0\\), it is a local maximum.",
+        "workingOut": "$$ \\begin{aligned} \\frac{d^2V}{dr^2} &= \\frac{3\\pi}{4}(16 - 6r) \\\\\\\\ \\left. \\frac{d^2V}{dr^2} \\right|_{r=\\frac{16}{3}} &= \\frac{3\\pi}{4}\\left(16 - 6\\left(\\frac{16}{3}\\right)\\right) \\\\\\\\ &= \\frac{3\\pi}{4}(16 - 32) = -12\\pi < 0 \\implies \\text{Maximum} \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 4: Calculate the maximum volume by substituting \\(r = \\frac{16}{3}\\) back into the original volume formula, and evaluate it to the nearest cubic metre.",
+        "workingOut": "$$ \\begin{aligned} V_{\\max} &= \\frac{3\\pi}{4}\\left(8\\left(\\frac{16}{3}\\right)^2 - \\left(\\frac{16}{3}\\right)^3\\right) \\\\\\\\ &= \\frac{3\\pi}{4}\\left(\\frac{2048}{9} - \\frac{4096}{27}\\right) = \\frac{3\\pi}{4}\\left(\\frac{6144 - 4096}{27}\\right) \\\\\\\\ &= \\frac{3\\pi}{4}\\left(\\frac{2048}{27}\\right) = \\frac{512\\pi}{9} \\approx 178.72 \\approx 179 \\text{ m}^3 \\end{aligned} $$"
       }
     ],
     "graphData": null,
