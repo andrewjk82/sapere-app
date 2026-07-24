@@ -20,18 +20,23 @@ export const CTHS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(x < -\\dfrac{1}{6}\\).",
     "solutionSteps": [
       {
-        "explanation": "Differentiate \\(f(x) = 2x^3 + x^2\\) once to find the first derivative using the power rule, bringing the power down and reducing the exponent by 1 for each term.",
-        "workingOut": "\\(f'(x) = 6x^2 + 2x\\)",
+        "explanation": "Step 1: Differentiate \\(f(x)\\) using the power rule to find the first derivative \\(f'(x)\\).",
+        "workingOut": "$$ f'(x) = 6x^2 + 2x $$",
         "graphData": null
       },
       {
-        "explanation": "Differentiate again to find the second derivative \\(f''(x)\\), which measures the concavity of the curve.",
-        "workingOut": "\\(f''(x) = 12x + 2\\)",
+        "explanation": "Step 2: Differentiate again to find the second derivative \\(f''(x)\\).",
+        "workingOut": "$$ f''(x) = 12x + 2 $$",
         "graphData": null
       },
       {
-        "explanation": "Verify by testing \\(x = -1\\): \\(f''(-1) = 12(-1)+2 = -10 < 0\\) ✓ (concave down). And \\(x = 0\\): \\(f''(0) = 2 > 0\\) (concave up) ✓.",
-        "workingOut": "\\(f''(-1) = -10 < 0 \\checkmark\\)",
+        "explanation": "Step 3: A curve is concave down when its second derivative is strictly less than zero. Set up the inequality.",
+        "workingOut": "$$ f''(x) < 0 \\implies 12x + 2 < 0 $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 4: Solve the inequality for \\(x\\).",
+        "workingOut": "$$ \\begin{aligned} 12x &< -2 \\\\\\\\ x &< -\\dfrac{2}{12} \\\\\\\\ x &< -\\dfrac{1}{6} \\end{aligned} $$",
         "graphData": null
       }
     ],
