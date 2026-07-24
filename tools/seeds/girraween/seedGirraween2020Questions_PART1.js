@@ -15,7 +15,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The diagram shows a relation between two sets A and B. Domain: {A₁, A₂, A₃, A₄, A₅}. Codomain: {B₁, B₂, B₃, B₄, B₅, B₆}. Mappings: A₁ → B₂, A₂ → B₂, A₃ → B₄, A₄ → B₅, A₅ → B₆. What type of relation is shown?',
-    a: 'D',
+    a: '3',
     opts: [
       'One-to-one',
       'One-to-many',
@@ -57,7 +57,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The graph shows the velocity of a particle, $v$ metres per second, as a function of time, $t$ seconds. A curve showing velocity vs time with a maximum peak at approximately $t = 6$. When is the acceleration of the particle equal to zero?',
-    a: 'C',
+    a: '2',
     opts: [
       '$t = 0$',
       '$t = 10$',
@@ -99,7 +99,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'For events $A$ and $B$, $P(A|B) = \\frac{2}{5}$ and $P(B|A) = \\frac{1}{3}$. Let $P(A \\cap B) = p$. What is the value of $P(A)$?',
-    a: 'A',
+    a: '0',
     opts: [
       '$3p$',
       '$p$',
@@ -141,7 +141,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: '$(\\sqrt{3} - 1)(2\\sqrt{3} + 5)$ simplifies to:',
-    a: 'C',
+    a: '2',
     opts: [
       '$11 + 7\\sqrt{3}$',
       '$11 + 3\\sqrt{3}$',
@@ -183,7 +183,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'What are the values of $x$ for which $|4x - 3| = 7$?',
-    a: 'A',
+    a: '0',
     opts: [
       '$x = 2\\frac{1}{2}$ and $x = -1$',
       '$x = 2\\frac{1}{2}$ and $x = 1$',
@@ -225,7 +225,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The population $N$ of a town, after $t$ years, is given by the formula $N = N_0 e^{0.04t}$, where $N_0$ is the initial population. Which expression represents the number of years it takes until the town has doubled its population?',
-    a: 'D',
+    a: '3',
     opts: [
       '$\\frac{2\\log100}{5}$',
       '$4\\log_e 2$',
@@ -271,7 +271,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: '$$\\int \\tan^2 x \\, dx =$$',
-    a: 'C',
+    a: '2',
     opts: [
       '$\\sec^2 x + c$',
       '$2\\tan x + c$',
@@ -313,7 +313,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'Let $M$ be the midpoint of $(-1, 4)$ and $(5, 8)$. Then, the equation of line through $M$ with gradient $-\\frac{1}{2}$ is:',
-    a: 'B',
+    a: '1',
     opts: [
       '$x + 2y - 10 = 0$',
       '$x + 2y - 14 = 0$',
@@ -355,7 +355,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given the function $y = e^{\\sqrt{x}}$, which expression is equal to $\\frac{dy}{dx}$?',
-    a: 'C',
+    a: '2',
     opts: [
       '$e^{\\sqrt{x}}$',
       '$\\frac{e^{\\sqrt{x}}}{x}$',
@@ -397,7 +397,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'A company collected data on the reasons for given by 200 factory workers for arriving late. The pareto chart shows the data collected. What percentage of workers gave the reason \"Traffic congestion\"?',
-    a: 'D',
+    a: '3',
     opts: [
       '$60\\%$',
       '$75\\%$',

@@ -16,7 +16,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'A circle is given by the equation $x^2 + y^2 - 6x + 2y = 6$. Find the centre and radius of the circle.',
-    a: 'B',
+    a: '1',
     opts: [
       'Centre $(3, -1)$, radius $2$',
       'Centre $(3, -1)$, radius $4$',
@@ -69,7 +69,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $f(x) = x^2 - 6x + 8$, differentiate $f(x)$ using first principles.',
-    a: 'C',
+    a: '2',
     opts: [
       '$f\'(x) = 2x - 5$',
       '$f\'(x) = 2x - 4$',
@@ -122,7 +122,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The gradient function of a curve $y = f(x)$ is given by $f\'(x) = 4x - 5$. The curve passes through the point $(2, 3)$. Find the equation of the curve.',
-    a: 'B',
+    a: '1',
     opts: [
       '$f(x) = 2x^2 - 5x + 1$',
       '$f(x) = 2x^2 - 5x + 5$',
@@ -175,7 +175,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The graph of a function $f(x)$ is shown. Use interval notation to state the domain and range of $f(x)$.',
-    a: 'B',
+    a: '1',
     opts: [
       'Domain: $(-\\infty, \\infty)$, Range: $[0, \\infty)$',
       'Domain: $(-\\infty, -1] \\cup [1, \\infty)$, Range: $[-\\pi/2, 0) \\cup (0, \\pi/2]$',
@@ -240,7 +240,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Using the sketch from part (a), solve $|x - 1| = 2x + 4$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$x = -1$',
       '$x = -1$ and $x = 2$',
@@ -281,7 +281,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Differentiate $y = xe^{3x}$.',
-    a: 'C',
+    a: '2',
     opts: [
       '$y\' = e^{3x}$',
       '$y\' = 3xe^{3x}$',
@@ -319,7 +319,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Hence find the exact value of $\\int_0^2 e^{3x}(3 + 9x) dx$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$e^6 - 1$',
       '$3e^6 - 3$',
@@ -359,7 +359,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The function $f(x) = |x|$ is transformed and the equation of the new function is of the form $y = kf(x + b) + c$. The graph of the new function is shown.',
-    a: 'C',
+    a: '2',
     opts: [
       '$k = 1, b = 1, c = 2$',
       '$k = 2, b = -1, c = 2$',
@@ -392,7 +392,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Hence, find the value of $h$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$h \\approx 400$ m',
       '$h \\approx 507$ m',
@@ -410,7 +410,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'For what values of $x$ is $f(x)$ increasing?',
-    a: 'B',
+    a: '1',
     opts: [
       '$0 \\leq x < 1$',
       '$0 \\leq x < 2$',
@@ -428,7 +428,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'What is the maximum value of $f(x)$?',
-    a: 'B',
+    a: '1',
     opts: [
       '$f(x)_{max} = 2$',
       '$f(x)_{max} = 4$',
@@ -446,7 +446,7 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find the value of $f(6)$.',
-    a: 'C',
+    a: '2',
     opts: [
       '$f(6) = 0$',
       '$f(6) = 2$',
@@ -469,19 +469,19 @@ export const GIRRAWEEN_2020_Q21_TO_Q38_COMPLETE = [
   },
 
   // Q30-Q38: Remaining questions in simplified format for completion
-  {id: 'girr2020-mc30a', topicId: 'y12a-5A', c: '5A', t: 'Exponential models', source: 'Girraween 2020 Trial Q30a', type: 'multiple_choice', difficulty: 'easy', q: 'What is the length at birth ($t=0$)?', a: 'C', opts: ['$0.4$ m', '$0.5$ m', '$0.6$ m', '$1.0$ m']},
-  {id: 'girr2020-mc30b', topicId: 'y12a-5A', c: '5A', t: 'Solving exponential equations', source: 'Girraween 2020 Trial Q30b', type: 'multiple_choice', difficulty: 'medium', q: 'If $L = 4.45$ when $t = 3$, find $k$.', a: 'C', opts: ['$0.50$', '$0.55$', '$0.60$', '$0.65$']},
-  {id: 'girr2020-mc30c', topicId: 'y12a-5A', c: '5A', t: 'Limiting values', source: 'Girraween 2020 Trial Q30c', type: 'multiple_choice', difficulty: 'easy', q: 'Find the limiting length.', a: 'B', opts: ['$4.6$ m', '$5.2$ m', '$10$ m', '$\\infty$']},
-  {id: 'girr2020-mc31', topicId: 'y12a-3A', c: '3A', t: 'Increasing functions', source: 'Girraween 2020 Trial Q31', type: 'multiple_choice', difficulty: 'medium', q: 'Find values of $k$ for increasing function.', a: 'D', opts: ['$k > 0$', '$k > 1$', '$k > 2$', '$k \\geq 3$']},
-  {id: 'girr2020-mc32', topicId: 'y11a-2D', c: '2D', t: 'Rationalising surds', source: 'Girraween 2020 Trial Q32', type: 'multiple_choice', difficulty: 'easy', q: 'Find integers $a, b$ such that $\\frac{1}{\\sqrt{5}-2} = a + b\\sqrt{5}$.', a: 'B', opts: ['$a=2, b=1$', '$a=2, b=1$', '$a=-2, b=1$', '$a=-2, b=-1$']},
-  {id: 'girr2020-mc33', topicId: 'y12a-3G', c: '3G', t: 'Optimisation problems', source: 'Girraween 2020 Trial Q33', type: 'multiple_choice', difficulty: 'hard', q: 'Minimize combined area of square and circle from 28m wire.', a: 'B', opts: ['Square: 10m, Circle: 18m', 'Square: $\\frac{112}{\\pi+4}$m, Circle: $28-\\frac{112}{\\pi+4}$m', 'Square: 8m, Circle: 20m', 'Square: 12m, Circle: 16m']},
-  {id: 'girr2020-mc34a', topicId: 'y12a-7B', c: '7B', t: 'Kinematics', source: 'Girraween 2020 Trial Q34a', type: 'multiple_choice', difficulty: 'medium', q: 'When does car stop? $x = t^2(2 - \\frac{t}{3})$', a: 'C', opts: ['$t=2$', '$t=3$', '$t=4$', '$t=6$']},
-  {id: 'girr2020-mc34b', topicId: 'y12a-7B', c: '7B', t: 'Distance calculations', source: 'Girraween 2020 Trial Q34b', type: 'multiple_choice', difficulty: 'medium', q: 'Find distance P to Q.', a: 'C', opts: ['$16$ m', '$\\frac{25}{2}$ m', '$\\frac{32}{3}$ m', '$18$ m']},
-  {id: 'girr2020-mc35a', topicId: 'y12a-1C', c: '1C', t: 'Quadratic equations', source: 'Girraween 2020 Trial Q35', type: 'multiple_choice', difficulty: 'hard', q: 'Q35: Part of multi-step quadratic problem', a: 'A', opts: ['See full exam']},
-  {id: 'girr2020-mc36a', topicId: 'y12a-8A', c: '8A', t: 'Arithmetic sequences', source: 'Girraween 2020 Trial Q36', type: 'multiple_choice', difficulty: 'hard', q: 'Q36: Sequence problem', a: 'A', opts: ['See full exam']},
-  {id: 'girr2020-mc37a', topicId: 'y11a-6A', c: '6A', t: 'Trigonometric equations', source: 'Girraween 2020 Trial Q37a', type: 'multiple_choice', difficulty: 'hard', q: 'Q37a: Trig transformation', a: 'A', opts: ['See full exam']},
+  {id: 'girr2020-mc30a', topicId: 'y12a-5A', c: '5A', t: 'Exponential models', source: 'Girraween 2020 Trial Q30a', type: 'multiple_choice', difficulty: 'easy', q: 'What is the length at birth ($t=0$)?', a: '2', opts: ['$0.4$ m', '$0.5$ m', '$0.6$ m', '$1.0$ m']},
+  {id: 'girr2020-mc30b', topicId: 'y12a-5A', c: '5A', t: 'Solving exponential equations', source: 'Girraween 2020 Trial Q30b', type: 'multiple_choice', difficulty: 'medium', q: 'If $L = 4.45$ when $t = 3$, find $k$.', a: '2', opts: ['$0.50$', '$0.55$', '$0.60$', '$0.65$']},
+  {id: 'girr2020-mc30c', topicId: 'y12a-5A', c: '5A', t: 'Limiting values', source: 'Girraween 2020 Trial Q30c', type: 'multiple_choice', difficulty: 'easy', q: 'Find the limiting length.', a: '1', opts: ['$4.6$ m', '$5.2$ m', '$10$ m', '$\\infty$']},
+  {id: 'girr2020-mc31', topicId: 'y12a-3A', c: '3A', t: 'Increasing functions', source: 'Girraween 2020 Trial Q31', type: 'multiple_choice', difficulty: 'medium', q: 'Find values of $k$ for increasing function.', a: '3', opts: ['$k > 0$', '$k > 1$', '$k > 2$', '$k \\geq 3$']},
+  {id: 'girr2020-mc32', topicId: 'y11a-2D', c: '2D', t: 'Rationalising surds', source: 'Girraween 2020 Trial Q32', type: 'multiple_choice', difficulty: 'easy', q: 'Find integers $a, b$ such that $\\frac{1}{\\sqrt{5}-2} = a + b\\sqrt{5}$.', a: '1', opts: ['$a=2, b=1$', '$a=2, b=1$', '$a=-2, b=1$', '$a=-2, b=-1$']},
+  {id: 'girr2020-mc33', topicId: 'y12a-3G', c: '3G', t: 'Optimisation problems', source: 'Girraween 2020 Trial Q33', type: 'multiple_choice', difficulty: 'hard', q: 'Minimize combined area of square and circle from 28m wire.', a: '1', opts: ['Square: 10m, Circle: 18m', 'Square: $\\frac{112}{\\pi+4}$m, Circle: $28-\\frac{112}{\\pi+4}$m', 'Square: 8m, Circle: 20m', 'Square: 12m, Circle: 16m']},
+  {id: 'girr2020-mc34a', topicId: 'y12a-7B', c: '7B', t: 'Kinematics', source: 'Girraween 2020 Trial Q34a', type: 'multiple_choice', difficulty: 'medium', q: 'When does car stop? $x = t^2(2 - \\frac{t}{3})$', a: '2', opts: ['$t=2$', '$t=3$', '$t=4$', '$t=6$']},
+  {id: 'girr2020-mc34b', topicId: 'y12a-7B', c: '7B', t: 'Distance calculations', source: 'Girraween 2020 Trial Q34b', type: 'multiple_choice', difficulty: 'medium', q: 'Find distance P to Q.', a: '2', opts: ['$16$ m', '$\\frac{25}{2}$ m', '$\\frac{32}{3}$ m', '$18$ m']},
+  {id: 'girr2020-mc35a', topicId: 'y12a-1C', c: '1C', t: 'Quadratic equations', source: 'Girraween 2020 Trial Q35', type: 'multiple_choice', difficulty: 'hard', q: 'Q35: Part of multi-step quadratic problem', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc36a', topicId: 'y12a-8A', c: '8A', t: 'Arithmetic sequences', source: 'Girraween 2020 Trial Q36', type: 'multiple_choice', difficulty: 'hard', q: 'Q36: Sequence problem', a: '0', opts: ['See full exam']},
+  {id: 'girr2020-mc37a', topicId: 'y11a-6A', c: '6A', t: 'Trigonometric equations', source: 'Girraween 2020 Trial Q37a', type: 'multiple_choice', difficulty: 'hard', q: 'Q37a: Trig transformation', a: '0', opts: ['See full exam']},
   {id: 'girr2020-mc37b', topicId: 'y11a-6A', c: '6A', t: 'Graph sketching', source: 'Girraween 2020 Trial Q37b', type: 'teacher_review', difficulty: 'hard', q: 'Sketch trig transformation. **(Teacher)**', a: 'sketch', opts: ['Sketch']},
-  {id: 'girr2020-mc38a', topicId: 'y12a-4C', c: '4C', t: 'Numerical integration', source: 'Girraween 2020 Trial Q38a', type: 'multiple_choice', difficulty: 'hard', q: 'Q38a: Trapezoidal rule', a: 'A', opts: ['See full exam']},
+  {id: 'girr2020-mc38a', topicId: 'y12a-4C', c: '4C', t: 'Numerical integration', source: 'Girraween 2020 Trial Q38a', type: 'multiple_choice', difficulty: 'hard', q: 'Q38a: Trapezoidal rule', a: '0', opts: ['See full exam']},
   {id: 'girr2020-mc38b', topicId: 'y12a-4C', c: '4C', t: 'Integration analysis', source: 'Girraween 2020 Trial Q38b', type: 'teacher_review', difficulty: 'hard', q: 'Compare methods. **(Teacher)**', a: 'analysis', opts: ['Analysis']}
 ];
 

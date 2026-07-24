@@ -14,7 +14,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find the equation of the tangent to $y = \\sqrt{2x}$ at the point where $x = 8$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$x - 4y + 8 = 0$',
       '$x - 8y + 16 = 0$',
@@ -55,7 +55,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'In triangle PQR: $PQ = 8$ cm, $PR = 5$ cm, $\\angle QPR = 53°$. Find QR to 1 decimal place.',
-    a: 'B',
+    a: '1',
     opts: [
       '$5.8$ cm',
       '$6.5$ cm',
@@ -77,7 +77,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The number of arrangements of the letters in the word PAPER is ____. If randomly selected, the probability of an arrangement starting with P is ____.',
-    a: 'A',
+    a: '0',
     opts: [
       '$60; \\frac{1}{5}$',
       '$120; \\frac{1}{5}$',
@@ -99,7 +99,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'For $f(x) = x^3 - 6x^2 + 12x$, find the $x$-coordinate of the stationary point.',
-    a: 'B',
+    a: '1',
     opts: [
       '$x = 0$',
       '$x = 2$',
@@ -137,7 +137,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'Two items cost £15 total. One item costs 3 times the other. Write an equation in terms of $x$ and $y$.',
-    a: 'A',
+    a: '0',
     opts: [
       '$x + y = 15$ and $x = 3y$',
       '$x + y = 15$ and $y = 3x$',
@@ -159,7 +159,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'Solve the system: $x + y = 15$ and $x = 3y$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$x = 10, y = 5$',
       '$x = 11.25, y = 3.75$',
@@ -181,7 +181,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Differentiate $y = e^{-2x} \\sin x$.',
-    a: 'C',
+    a: '2',
     opts: [
       '$\\frac{dy}{dx} = e^{-2x} \\cos x$',
       '$\\frac{dy}{dx} = e^{-2x}(\\cos x - 2\\sin x)$',
@@ -203,7 +203,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $f(x) = 2x - 1$ and $g(x) = x^2 + 3$, find $f(g(x))$.',
-    a: 'A',
+    a: '0',
     opts: [
       '$2x^2 + 5$',
       '$2x^2 - 1$',
@@ -225,7 +225,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'A sector has arc length $5\\pi$ cm and angle $\\theta = 0.8$ radians. Show that $r \\geq 6$ when $0.8$ is the angle.',
-    a: 'B',
+    a: '1',
     opts: [
       '$r \\geq 5$',
       '$r \\geq 6.25$',
@@ -247,7 +247,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find the area of the sector when $r = 5$ and $\\theta = 1.6$ radians.',
-    a: 'C',
+    a: '2',
     opts: [
       '$6$ square units',
       '$7.5$ square units',
@@ -269,7 +269,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Check if the distribution is valid: $P(Y=0)=0.15, P(Y=1)=0.25, P(Y=2)=0.35, P(Y=3)=0.25$.',
-    a: 'A',
+    a: '0',
     opts: [
       'Valid: sum = 1.0',
       'Not valid: sum > 1.0',
@@ -291,7 +291,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find $E(Y)$ using the distribution from part (a).',
-    a: 'B',
+    a: '1',
     opts: [
       '$E(Y) = 1.5$',
       '$E(Y) = 1.7$',
@@ -313,7 +313,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find $P(Y \\leq 1)$ from part (a).',
-    a: 'A',
+    a: '0',
     opts: [
       '$P(Y \\leq 1) = 0.40$',
       '$P(Y \\leq 1) = 0.50$',
@@ -335,7 +335,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $y = \\cos^2(3x)$, find $\\frac{dy}{dx}$. What is the coefficient of the leading term?',
-    a: 'C',
+    a: '2',
     opts: [
       '$m = -3$',
       '$m = -2$',

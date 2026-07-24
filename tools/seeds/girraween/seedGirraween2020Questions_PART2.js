@@ -11,7 +11,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The equation of the tangent to the curve $y = \\sqrt{x}$ at the point $x = 9$ is:',
-    a: 'B',
+    a: '1',
     opts: [
       '$x - 3y + 9 = 0$',
       '$x - 6y + 9 = 0$',
@@ -53,7 +53,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'In triangle ABC, $AB = 9$ cm, $AC = 7$ cm, and $\\angle BAC = 47°$. Find the length of BC to 1 decimal place.',
-    a: 'B',
+    a: '1',
     opts: [
       '$6.2$ cm',
       '$6.6$ cm',
@@ -95,7 +95,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'The number of arrangements of the letters in the word MATHS is ____. If the letters are randomly selected from these arrangements, the probability that an arrangement starts with M is ____.',
-    a: 'A',
+    a: '0',
     opts: [
       '$120; \\frac{1}{5}$',
       '$120; \\frac{1}{4}$',
@@ -137,7 +137,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'For the function $f(x) = x^3 - 3x^2 + 3x$, find the $x$-coordinate of the stationary point.',
-    a: 'B',
+    a: '1',
     opts: [
       '$x = 0$',
       '$x = 1$',
@@ -190,7 +190,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'A shop sells two types of food: type A and type B. Two portions of type A and one portion of type B cost 6 pounds. Write down a linear equation.',
-    a: 'A',
+    a: '0',
     opts: [
       '$2A + B = 6$',
       '$A + 2B = 6$',
@@ -220,7 +220,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'If a second equation is $A + B = 4$, solve the system to find the cost of each food type.',
-    a: 'C',
+    a: '2',
     opts: [
       '$A = 1, B = 3$',
       '$A = 3, B = 1$',
@@ -258,7 +258,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Differentiate $y = e^{\\cos 2x}$.',
-    a: 'C',
+    a: '2',
     opts: [
       '$\\frac{dy}{dx} = e^{\\cos 2x}$',
       '$\\frac{dy}{dx} = 2\\sin(2x) e^{\\cos 2x}$',
@@ -296,7 +296,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $f(x) = x^2 + 2x$ and $g(x) = x + 1$, find $f(g(x))$.',
-    a: 'D',
+    a: '3',
     opts: [
       '$x^2 + 4x + 3$',
       '$x^2 + 2x + 1$',
@@ -334,7 +334,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'A sector of a circle has radius $r$ and arc length $l$. If the arc length is $2\\pi$ and the angle is $\\theta$ radians, show that $r \\geq \\frac{5}{3}$ when $\\theta = 1.2$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$r \\geq 2.5$',
       '$r \\geq \\frac{5}{3}$',
@@ -372,7 +372,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find the area of the sector when $r = 4$ and $\\theta = 1.2$ radians.',
-    a: 'C',
+    a: '2',
     opts: [
       '$7.2$',
       '$8.0$',
@@ -410,7 +410,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'A discrete random variable $X$ has probability distribution with $P(X = 0) = 0.1$, $P(X = 1) = 0.2$, $P(X = 2) = 0.3$, $P(X = 3) = 0.2$, and $P(X = 4) = 0.2$. Verify this is a valid probability distribution and find $P(X = 5)$ if one is missing.',
-    a: 'C',
+    a: '2',
     opts: [
       '$0.05$',
       '$0.10$',
@@ -448,7 +448,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Using the distribution from Q19a, find the expected value (mean) $E(X)$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$E(X) = 1.8$',
       '$E(X) = 2.0$',
@@ -486,7 +486,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Find $P(X < E(X))$ using the distribution from Q19a.',
-    a: 'C',
+    a: '2',
     opts: [
       '$P(X < 2.2) = 0.4$',
       '$P(X < 2.2) = 0.5$',
@@ -524,7 +524,7 @@ export const GIRRAWEEN_2020_QUESTIONS_PART2 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $y = \\sin^2(2x + 1)$, find $\\frac{dy}{dx}$. What is the coefficient of the leading term?',
-    a: 'A',
+    a: '0',
     opts: [
       '$m = 4$',
       '$m = 2$',

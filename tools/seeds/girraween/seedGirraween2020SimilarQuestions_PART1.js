@@ -15,7 +15,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The diagram shows a relation between sets P and Q. Domain: {P₁, P₂, P₃, P₄, P₆}. Codomain: {Q₁, Q₂, Q₃, Q₄, Q₅}. Mappings: P₁ → Q₁, P₂ → Q₃, P₃ → Q₃, P₄ → Q₄, P₆ → Q₅. What type of relation is shown?',
-    a: 'D',
+    a: '3',
     opts: [
       'One-to-one',
       'One-to-many',
@@ -56,7 +56,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The graph shows velocity $v$ (m/s) versus time $t$ (s). The curve has a maximum at $t = 8$ seconds. When is the acceleration equal to zero?',
-    a: 'B',
+    a: '1',
     opts: [
       '$t = 2$',
       '$t = 8$',
@@ -97,7 +97,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'For events $M$ and $N$: $P(M|N) = \\frac{3}{7}$ and $P(N|M) = \\frac{2}{5}$. Given $P(M \\cap N) = q$, find $P(M)$.',
-    a: 'B',
+    a: '1',
     opts: [
       '$P(M) = \\frac{2q}{5}$',
       '$P(M) = \\frac{5q}{2}$',
@@ -138,7 +138,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: '$(2\\sqrt{2} - 3)(\\sqrt{2} + 4)$ simplifies to:',
-    a: 'A',
+    a: '0',
     opts: [
       '$-7 + 5\\sqrt{2}$',
       '$-7 + 8\\sqrt{2}$',
@@ -179,7 +179,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'Solve $|3x + 2| = 8$.',
-    a: 'A',
+    a: '0',
     opts: [
       '$x = 2$ and $x = -\\frac{10}{3}$',
       '$x = 2$ and $x = \\frac{10}{3}$',
@@ -220,7 +220,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'A bacterial colony has population $P(t) = P_0 e^{0.05t}$ where $t$ is time in hours. How long does it take for the population to triple?',
-    a: 'C',
+    a: '2',
     opts: [
       '$20\\log_e 3$',
       '$15\\log_e 3$',
@@ -261,7 +261,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: '$$\\int \\cot^2 x \\, dx = $$',
-    a: 'B',
+    a: '1',
     opts: [
       '$\\csc^2 x + c$',
       '$-\\cot x - x + c$',
@@ -302,7 +302,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'The midpoint of $(3, 5)$ and $(9, -1)$ is $N$. Find the equation of the line through $N$ with gradient $\\frac{1}{3}$.',
-    a: 'C',
+    a: '2',
     opts: [
       '$x - 3y + 3 = 0$',
       '$3x - y - 15 = 0$',
@@ -343,7 +343,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'medium',
     q: 'Given $y = e^{\\sin x}$, find $\\frac{dy}{dx}$.',
-    a: 'A',
+    a: '0',
     opts: [
       '$\\cos x \\cdot e^{\\sin x}$',
       '$\\sin x \\cdot e^{\\cos x}$',
@@ -384,7 +384,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART1 = [
     type: 'multiple_choice',
     difficulty: 'easy',
     q: 'A survey of 250 drivers identified reasons for speeding. A Pareto chart shows 75 drivers speeding due to \"Time pressure\". What percentage is this?',
-    a: 'C',
+    a: '2',
     opts: [
       '$20\\%$',
       '$25\\%$',
