@@ -1515,24 +1515,16 @@ export const ASCHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(r \\approx -0.980\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Ascham 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\bar{x} = 3.61, \\quad \\bar{y} = 5.76\\)",
-        "graphData": null
+        "explanation": "To find Pearson's correlation coefficient (\\(r\\)) using a Casio fx-82AU PLUS calculator, first set it to the correct statistical mode for bivariate (two-variable) data.\n\n1. Press **MODE**, then select **2 (STAT)**.\n2. Select **2 (A+BX)** for linear regression.",
+        "workingOut": "$$\\text{MODE} \\rightarrow 2: \\text{STAT} \\rightarrow 2: A+BX$$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(r \\approx -0.980\\)",
-        "graphData": null
+        "explanation": "Next, input your data into the table that appears on the screen.\n\n1. Enter all the \\(x\\)-values in the left column, pressing **=** after each number.\n2. Use the arrow keys to move to the top of the \\(y\\)-column.\n3. Enter the corresponding \\(y\\)-values, pressing **=** after each one.\n4. Once all data is entered, press **AC**. (Don't worry, your data is saved in the calculator's memory!)",
+        "workingOut": "$$\\text{Enter data} \\rightarrow \\text{Press AC}$$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(|r| = 0.980 \\Rightarrow \\text{strong negative}\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: r \\approx -0.980. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(r \\approx -0.980\\)",
-        "graphData": null
+        "explanation": "Finally, retrieve the correlation coefficient \\(r\\) from the regression menu.\n\n1. Press **SHIFT** and then **1 (STAT)**.\n2. Select **5 (Reg)** for regression variables.\n3. Select **3 (r)** for Pearson's correlation coefficient.\n4. Press **=** to calculate the value.\n\nRounding to 3 decimal places, you should get \\(-0.980\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{SHIFT} \\rightarrow 1 \\rightarrow 5:\\text{Reg} \\rightarrow 3:r \\rightarrow = \\\\\\\\ r \\approx -0.980 \\end{aligned} $$"
       }
     ],
     "graphData": null,
@@ -4150,5 +4142,3 @@ export const ASCHAM_2020_QUESTIONS = [
     "isNew": true
   }
 ];
-
-export default ASCHAM_2020_QUESTIONS;
