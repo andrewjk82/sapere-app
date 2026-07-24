@@ -2062,39 +2062,39 @@ export const CRANBROOK_2023_SIMILAR_QUESTIONS = [
     "timeLimit": 120,
     "question": "Consider the function $g(x) = 2x\\left(1 - \\dfrac{x}{3}\\right)^3 + 1$. By showing that $g'(x) = 2\\left(1 - \\dfrac{x}{3}\\right)^2\\left(1 - \\dfrac{4x}{3}\\right)$, find any stationary points and determine their nature.",
     "opts": [
-      "\\(\\dfrac{9}{5}\\)",
-      "\\(\\dfrac{8}{4}\\)",
-      "\\(\\dfrac{7}{3}\\)",
+      "Local minimum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); local maximum at \\((3, 1)\\).",
+      "Local maximum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); local minimum at \\((3, 1)\\).",
+      "Local minimum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); horizontal point of inflection at \\((3, 1)\\).",
       "Local maximum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); horizontal point of inflection at \\((3, 1)\\)."
     ],
     "a": 3,
     "answer": "3",
     "hint": "Use the product rule with $u = 2x$ and $v = \\left(1 - \\dfrac{x}{3}\\right)^3$, then factor out $\\left(1-\\dfrac{x}{3}\\right)^2$.",
-    "solution": "The correct answer is Local maximum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); horizontal point of inflection at \\((3, 1)\\)..",
+    "solution": "The correct answer is Local maximum at \\(\\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right)\\); horizontal point of inflection at \\((3, 1)\\).",
     "solutionSteps": [
       {
-        "explanation": "Differentiate with the product rule: \\(u = 2x\\), \\(v = \\left(1-\\dfrac{x}{3}\\right)^3\\), where the chain rule gives \\(v' = 3\\left(1-\\dfrac{x}{3}\\right)^2\\left(-\\dfrac{1}{3}\\right)\\).",
-        "workingOut": "\\(g'(x) = 2\\left(1-\\dfrac{x}{3}\\right)^3 - 2x\\left(1-\\dfrac{x}{3}\\right)^2\\)",
+        "explanation": "Step 1: Differentiate using the product rule with \\(u = 2x\\) and \\(v = \\left(1-\\dfrac{x}{3}\\right)^3\\).",
+        "workingOut": "$$ g'(x) = 2\\left(1-\\dfrac{x}{3}\\right)^3 + 2x \\cdot 3\\left(1-\\dfrac{x}{3}\\right)^2\\left(-\\dfrac{1}{3}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Factor out the common \\(2\\left(1-\\dfrac{x}{3}\\right)^2\\) and simplify the remaining bracket. Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(g'(x) = 2\\left(1-\\dfrac{x}{3}\\right)^2\\left[1 - \\dfrac{x}{3} - x\\right] = 2\\left(1-\\dfrac{x}{3}\\right)^2\\left(1 - \\dfrac{4x}{3}\\right) \\quad \\checkmark\\)",
+        "explanation": "Step 2: Factor out the common factor \\(2\\left(1-\\dfrac{x}{3}\\right)^2\\) and simplify the expression.",
+        "workingOut": "$$ g'(x) = 2\\left(1-\\dfrac{x}{3}\\right)^2\\left[ \\left(1 - \\dfrac{x}{3}\\right) - x \\right] = 2\\left(1-\\dfrac{x}{3}\\right)^2\\left(1 - \\dfrac{4x}{3}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Set \\(g'(x) = 0\\): the squared factor gives \\(x = 3\\) (a repeated zero), and the linear factor gives \\(x = \\dfrac{3}{4}\\).",
-        "workingOut": "\\(x = 3 \\;(\\text{double}) \\quad \\text{or} \\quad x = \\dfrac{3}{4}\\)",
+        "explanation": "Step 3: Find the stationary points by setting \\(g'(x) = 0\\).",
+        "workingOut": "$$ 2\\left(1-\\dfrac{x}{3}\\right)^2\\left(1 - \\dfrac{4x}{3}\\right) = 0 \\implies x = 3 \\text{ (double root)} \\quad \\text{or} \\quad x = \\dfrac{3}{4} $$",
         "graphData": null
       },
       {
-        "explanation": "Classify \\(x = \\dfrac{3}{4}\\) with a sign test: the sign of \\(g'\\) follows \\(\\left(1 - \\dfrac{4x}{3}\\right)\\), which is positive before and negative after — a local maximum. Evaluate \\(g\\left(\\dfrac{3}{4}\\right)\\).",
-        "workingOut": "\\(g\\left(\\dfrac{3}{4}\\right) = \\dfrac{3}{2}\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{128} + 1 = \\dfrac{209}{128}\\)",
+        "explanation": "Step 4: Classify \\(x = \\dfrac{3}{4}\\) using a sign test. Since the squared factor is always non-negative, the sign of \\(g'(x)\\) follows \\(\\left(1-\\dfrac{4x}{3}\\right)\\). For \\(x < \\dfrac{3}{4}\\), \\(g' > 0\\); for \\(\\dfrac{3}{4} < x < 3\\), \\(g' < 0\\). Thus, the gradient changes from positive to negative, making it a local maximum.",
+        "workingOut": "$$ g\\left(\\dfrac{3}{4}\\right) = 2\\left(\\dfrac{3}{4}\\right)\\left(1 - \\dfrac{3/4}{3}\\right)^3 + 1 = \\dfrac{3}{2}\\left(\\dfrac{3}{4}\\right)^3 + 1 = \\dfrac{81}{128} + 1 = \\dfrac{209}{128} \\implies \\text{Local max at } \\left(\\dfrac{3}{4}, \\dfrac{209}{128}\\right) $$",
         "graphData": null
       },
       {
-        "explanation": "Classify \\(x = 3\\): the squared factor means \\(g'\\) does not change sign (\\(g' < 0\\) on both sides), so it is a horizontal point of inflection at \\((3, 1)\\).",
-        "workingOut": "\\(g(3) = 2(3)(0)^3 + 1 = 1 \\implies \\text{horizontal POI } (3, 1)\\)",
+        "explanation": "Step 5: Classify \\(x = 3\\). Since \\(\\left(1-\\dfrac{x}{3}\\right)^2\\) does not change sign across \\(x = 3\\), the derivative \\(g'(x)\\) remains negative on both sides. A stationary point with no sign change is a horizontal point of inflection.",
+        "workingOut": "$$ g(3) = 2(3)\\left(1 - \\dfrac{3}{3}\\right)^3 + 1 = 0 + 1 = 1 \\implies \\text{Horizontal point of inflection at } (3, 1) $$",
         "graphData": null
       }
     ],
