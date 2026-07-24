@@ -42,13 +42,30 @@ async function verifyAdmin(req) {
 }
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
+  if (req.method !== 'POST' && req.method !== 'GET') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  const user = await verifyAdmin(req);
-  if (!user) {
-    return res.status(401).json({ error: 'Unauthorized - admin token required' });
+  // Check for admin token OR secret key (for deployment)
+  const token = (req.headers.authorization || '').replace('Bearer ', '').trim();
+  const secretKey = req.headers['x-seed-secret'] || req.query.secret;
+  const deploySecret = process.env.SEED_SECRET_KEY;
+
+  let isAuthorized = false;
+
+  // Try auth token first
+  if (token) {
+    const user = await verifyAdmin(req);
+    if (user) isAuthorized = true;
+  }
+
+  // Try secret key (for automated deployment)
+  if (!isAuthorized && secretKey && deploySecret && secretKey === deploySecret) {
+    isAuthorized = true;
+  }
+
+  if (!isAuthorized) {
+    return res.status(401).json({ error: 'Unauthorized - admin token or valid secret key required' });
   }
 
   try {
