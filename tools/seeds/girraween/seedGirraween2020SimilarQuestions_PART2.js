@@ -67,7 +67,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     solutionSteps: [
       {
         explanation: 'Identify the known and unknown sides. We know two sides (PQ = 8 cm, PR = 5 cm) and the angle between them (∠QPR = 53°). We need to find the side opposite to this angle, which is QR. This is a classic setup for the cosine rule.',
-        workingOut: 'PQ = 8 \\text{ cm}, \\; PR = 5 \\text{ cm}, \\; \\angle QPR = 53°'
+        workingOut: 'PQ = 8\\text{ cm}, PR = 5\\text{ cm}, \\angle QPR = 53^\\circ'
       },
       {
         explanation: 'The cosine rule states that for any triangle with sides $a$, $b$, $c$ and angle $A$ opposite to side $a$: $a^2 = b^2 + c^2 - 2bc\\cos(A)$. In our case, QR is the side opposite to angle P.',
@@ -78,7 +78,7 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
         workingOut: 'QR^2 = 64 + 25 - 2(8)(5)\\cos(53°) = 89 - 80\\cos(53°)'
       },
       {
-        explanation: 'Calculate the value of $\\cos(53°) \\approx 0.6018$. Then $80 \\times 0.6018 \\approx 48.144$.',
+        explanation: 'Calculate the value of $\\cos(53^\\circ) \\approx 0.6018$. Then $80 \\times 0.6018 \\approx 48.144$.',
         workingOut: '80 \\times 0.6018 \\approx 48.144'
       },
       {
@@ -87,12 +87,10 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       },
       {
         explanation: 'Take the square root of both sides.',
-        workingOut: 'QR = \\sqrt{40.856} \\approx 6.4 \\text{ cm}'
+        workingOut: 'QR = \\sqrt{40.856} \\approx 6.4\\text{ cm}'
       }
     ],
-    graphData: {
-      svg: '<svg viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg"><defs><style>.vertex { fill: #6366f1; r: 7; }.vertex-label { font-size: 16px; font-weight: 700; fill: #6366f1; }.side-label { font-size: 14px; font-weight: 600; fill: #1e293b; }.angle-label { font-size: 13px; fill: #ef4444; font-weight: 600; }.side-line { stroke: #6366f1; stroke-width: 3; fill: none; }.angle-arc { stroke: #ef4444; stroke-width: 2; fill: none; }.info-text { font-size: 12px; fill: #64748b; }.formula { font-size: 13px; fill: #1e293b; font-weight: 600; }</style></defs><rect width="600" height="500" fill="#ffffff"/><text x="300" y="25" class="vertex-label" text-anchor="middle" font-size="18">Triangle PQR: Cosine Rule</text><circle cx="120" cy="150" class="vertex"/><text x="100" y="140" class="vertex-label">P</text><circle cx="450" cy="350" class="vertex"/><text x="465" y="365" class="vertex-label">Q</text><circle cx="450" cy="150" class="vertex"/><text x="465" y="140" class="vertex-label">R</text><line x1="120" y1="150" x2="450" y2="150" class="side-line"/><line x1="120" y1="150" x2="450" y2="350" class="side-line"/><line x1="450" y1="150" x2="450" y2="350" class="side-line"/><text x="285" y="130" class="side-label">PR = 5 cm</text><text x="250" y="265" class="side-label">PQ = 8 cm</text><text x="475" y="255" class="side-label" fill="#ef4444">QR = ?</text><path d="M 160 150 A 40 40 0 0 1 140 184" class="angle-arc"/><text x="155" y="180" class="angle-label">53°</text><rect x="30" y="410" width="540" height="75" fill="#f1f5f9" rx="8"/><text x="50" y="435" class="formula">Given: PQ = 8 cm,  PR = 5 cm,  ∠QPR = 53°</text><text x="50" y="460" class="formula">Find: QR (the side opposite to angle P)</text><text x="50" y="480" class="formula" fill="#ef4444">Use Cosine Rule: a² = b² + c² − 2bc cos(A)</text></svg>'
-    }
+    graphData: null
   },
 
   // ============================================================
@@ -119,19 +117,19 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
     solutionSteps: [
       {
         explanation: 'Count the total letters in PAPER: P, A, P, E, R. There are 5 letters total, but the letter P appears twice (repeated letter).',
-        workingOut: '\\text{PAPER has 5 letters with P appearing 2 times}'
+        workingOut: 'n = 5, \\; n_P = 2'
       },
       {
         explanation: 'When we have repeated letters, the formula for permutations is: Number of arrangements = $\\frac{n!}{n_1! \\cdot n_2! \\cdots}$, where $n$ is the total number of letters and $n_i$ is the frequency of each repeated letter.',
-        workingOut: '\\text{Arrangements} = \\frac{n!}{\\text{(product of factorials of repetitions)}}'
+        workingOut: '\\text{Arrangements} = \\frac{n!}{n_1! \\cdot n_2! \\cdots}'
       },
       {
         explanation: 'Apply the formula with 5 letters and 2 Ps: Total arrangements = $\\frac{5!}{2!}$.',
-        workingOut: '\\text{Total} = \\frac{5!}{2!} = \\frac{120}{2} = 60'
+        workingOut: '\\text{Total} = \\frac{5!}{2!} = 60'
       },
       {
         explanation: 'For arrangements starting with P: fix one P at the beginning. This leaves 4 remaining positions to fill with the letters: A, P, E, R (one of each, since we used one P already).',
-        workingOut: '\\text{After fixing P at position 1: arrange A, P, E, R in 4 positions}'
+        workingOut: 'n_{\\text{remaining}} = 4'
       },
       {
         explanation: 'Since the remaining 4 letters are all distinct, the number of ways to arrange them is simply $4!$.',
@@ -139,11 +137,11 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       },
       {
         explanation: 'The probability of randomly selecting an arrangement that starts with P is the ratio of favorable outcomes to total outcomes.',
-        workingOut: 'P(\\text{starts with P}) = \\frac{\\text{arrangements starting with P}}{\\text{total arrangements}} = \\frac{24}{60}'
+        workingOut: 'P(\\text{starts with P}) = \\frac{24}{60}'
       },
       {
         explanation: 'Simplify the fraction by dividing both numerator and denominator by their GCD (12).',
-        workingOut: '\\frac{24}{60} = \\frac{24 \\div 12}{60 \\div 12} = \\frac{2}{5}'
+        workingOut: '\\frac{24}{60} = \\frac{2}{5}'
       }
     ]
   },
@@ -167,7 +165,34 @@ export const GIRRAWEEN_2020_SIMILAR_QUESTIONS_PART2 = [
       '$x = 3$',
       '$x = 4$'
     ],
-    h: 'Find $f\'(x)$ and set it equal to zero.'
+    h: 'Find $f\'(x)$ and set it equal to zero.',
+    s: 'Stationary points occur where the derivative equals zero. Find $f\'(x)$: $f\'(x) = 3x^2 - 12x + 12$. Set $f\'(x) = 0$: $3x^2 - 12x + 12 = 0$. Divide by 3: $x^2 - 4x + 4 = 0$. Factor: $(x - 2)^2 = 0$. Therefore, $x = 2$ is the stationary point.',
+    solutionSteps: [
+      {
+        explanation: 'A stationary point (or critical point) occurs where the first derivative of the function equals zero. At these points, the gradient of the curve is zero, meaning the tangent line is horizontal. To find stationary points, we need to find $f\'(x)$ and solve $f\'(x) = 0$.',
+        workingOut: '\\text{Stationary points occur where } f\'(x) = 0'
+      },
+      {
+        explanation: 'Find the first derivative of $f(x) = x^3 - 6x^2 + 12x$ using the power rule. The power rule states that $\\frac{d}{dx}(x^n) = nx^{n-1}$.',
+        workingOut: 'f\'(x) = 3x^2 - 12x + 12'
+      },
+      {
+        explanation: 'Set the derivative equal to zero to find stationary points. This gives us the equation $3x^2 - 12x + 12 = 0$.',
+        workingOut: '3x^2 - 12x + 12 = 0'
+      },
+      {
+        explanation: 'Simplify the equation by dividing all terms by 3 (the common factor). This gives us a simpler quadratic equation to solve.',
+        workingOut: 'x^2 - 4x + 4 = 0'
+      },
+      {
+        explanation: 'Factor the quadratic. Notice that $x^2 - 4x + 4$ is a perfect square trinomial: $(x - 2)^2 = 0$. This means we have a repeated root at $x = 2$.',
+        workingOut: '(x - 2)^2 = 0'
+      },
+      {
+        explanation: 'Solve the equation. Since $(x - 2)^2 = 0$, we have $x - 2 = 0$, which gives $x = 2$. This is the $x$-coordinate of the stationary point.',
+        workingOut: 'x = 2'
+      }
+    ]
   },
 
   // ============================================================
