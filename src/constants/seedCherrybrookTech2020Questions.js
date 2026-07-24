@@ -402,18 +402,18 @@ export const CTHS_2020_QUESTIONS = [
     "solution": "The correct answer is \\((B, C)\\).",
     "solutionSteps": [
       {
-        "explanation": "Identify where \\(f'(x) < 0\\): the function is decreasing. From the graph, \\(f\\) decreases from the local maximum at \\(A\\) to the local minimum at \\(C\\), so \\(f'(x) < 0\\) on \\((A, C)\\).",
-        "workingOut": "\\(f'(x) < 0 \\text{ on } (A, C)\\)",
+        "explanation": "Step 1: The condition \\(f'(x) < 0\\) means that the gradient of the curve is negative, so the function is strictly decreasing. From the graph, the curve decreases from the local maximum at \\(A\\) down to the local minimum at \\(C\\).",
+        "workingOut": "$$ \\text{For } f'(x) < 0, \\quad x \\in (A, C) $$",
         "graphData": null
       },
       {
-        "explanation": "Identify where \\(f''(x) > 0\\): the function is concave up. \\(B\\) is the point of inflection, so concavity changes at \\(B\\). From the graph, the curve is concave up after \\(B\\) (transitioning from the decreasing-concave-down phase to the decreasing-concave-up phase).",
-        "workingOut": "\\(f''(x) > 0 \\text{ on } (B, infty)\\)",
+        "explanation": "Step 2: The condition \\(f''(x) > 0\\) means that the curve is concave up (shaped like a cup). The point \\(B\\) is the point of inflection where concavity changes. From the graph, the curve is concave up everywhere to the right of \\(B\\).",
+        "workingOut": "$$ \\text{For } f''(x) > 0, \\quad x \\in (B, \\infty) $$",
         "graphData": null
       },
       {
-        "explanation": "The domain where both \\(f'(x) < 0\\) (decreasing) and \\(f''(x) > 0\\) (concave up) hold is \\((B, C)\\).",
-        "workingOut": "\\(\\text{Answer: } (B, C)\\)",
+        "explanation": "Step 3: To satisfy both conditions simultaneously, we must find the intersection of the two domains found in Step 1 and Step 2. Since \\(A < B < C\\), the overlapping interval is between \\(B\\) and \\(C\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Required Domain} &= (A, C) \\cap (B, \\infty) \\\\\\\\ &= (B, C) \\end{aligned} $$",
         "graphData": null
       }
     ],
