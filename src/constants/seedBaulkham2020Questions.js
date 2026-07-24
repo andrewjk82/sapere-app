@@ -1599,10 +1599,10 @@ export const BAULKHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the value(s) of $b$ such that $y = 2x + b$ is a tangent to the parabola $y = 2x^2 + 6x - 5$.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
-      "\\(b = +7\\)",
+      "\\(b = -11\\)",
+      "\\(b = 7\\)",
       "\\(b = -7\\)",
-      "\\(b = -7 + 1\\)"
+      "\\(b = -3\\)"
     ],
     "a": 2,
     "answer": "2",
@@ -1610,24 +1610,16 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(b = -7\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(4x+6=2 \\Rightarrow x=-1\\)",
-        "graphData": null
+        "explanation": "Step 1: The tangent line \\(y = 2x + b\\) has a gradient of \\(2\\). Find the derivative of the parabola and set it equal to \\(2\\) to find the \\(x\\)-coordinate of the point of contact.",
+        "workingOut": "$$ \\begin{aligned} y &= 2x^2 + 6x - 5 \\\\\\\\ \\frac{dy}{dx} &= 4x + 6 \\\\\\\\ 4x + 6 &= 2 \\implies 4x = -4 \\implies x = -1 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(y=2(1)+6(-1)-5=-9\\)",
-        "graphData": null
+        "explanation": "Step 2: Find the \\(y\\)-coordinate of the point of contact on the parabola by substituting \\(x = -1\\).",
+        "workingOut": "$$ \\begin{aligned} y &= 2(-1)^2 + 6(-1) - 5 \\\\\\\\ &= 2(1) - 6 - 5 = -9 \\\\\\\\ &\\implies \\text{Point of contact is } (-1, -9) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(-9=-2+b \\Rightarrow b=-7\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: b = -7. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(b = -7\\)",
-        "graphData": null
+        "explanation": "Step 3: The tangent line must pass through this point of contact. Substitute \\((-1, -9)\\) into the line's equation to find \\(b\\).",
+        "workingOut": "$$ \\begin{aligned} y &= 2x + b \\\\\\\\ -9 &= 2(-1) + b \\\\\\\\ -9 &= -2 + b \\implies b = -7 \\end{aligned} $$"
       }
     ],
     "graphData": null,
@@ -1644,9 +1636,9 @@ export const BAULKHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find the value of $b$ such that $y = 4x + b$ is a tangent to $y = x^2 + 2x + 3$.",
     "opts": [
-      "\\(\\dfrac{13}{x + 3}\\)",
+      "\\(b = -2\\)",
       "\\(b = 2\\)",
-      "\\(b = 2 + 1\\)",
+      "\\(b = 6\\)",
       "\\(b = 4\\)"
     ],
     "a": 1,
@@ -1655,24 +1647,16 @@ export const BAULKHAM_2020_QUESTIONS = [
     "solution": "The correct answer is \\(b = 2\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(x=1\\)",
-        "graphData": null
+        "explanation": "Step 1: The tangent line \\(y = 4x + b\\) has a gradient of \\(4\\). Find the derivative of the parabola and set it equal to \\(4\\) to find the \\(x\\)-coordinate of the point of contact.",
+        "workingOut": "$$ \\begin{aligned} y &= x^2 + 2x + 3 \\\\\\\\ \\frac{dy}{dx} &= 2x + 2 \\\\\\\\ 2x + 2 &= 4 \\implies 2x = 2 \\implies x = 1 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(6=4+b \\Rightarrow b=2\\)",
-        "graphData": null
+        "explanation": "Step 2: Find the \\(y\\)-coordinate of the point of contact on the parabola by substituting \\(x = 1\\).",
+        "workingOut": "$$ \\begin{aligned} y &= (1)^2 + 2(1) + 3 \\\\\\\\ &= 1 + 2 + 3 = 6 \\\\\\\\ &\\implies \\text{Point of contact is } (1, 6) \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(b = 2\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: b = 2. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(b = 2\\)",
-        "graphData": null
+        "explanation": "Step 3: The tangent line must pass through this point of contact. Substitute \\((1, 6)\\) into the line's equation to find \\(b\\).",
+        "workingOut": "$$ \\begin{aligned} y &= 4x + b \\\\\\\\ 6 &= 4(1) + b \\\\\\\\ 6 &= 4 + b \\implies b = 2 \\end{aligned} $$"
       }
     ],
     "graphData": null,
@@ -2601,35 +2585,31 @@ export const BAULKHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find any stationary points of $f(x) = \\ln(x^2+1)$ and determine their nature.",
     "opts": [
-      "Minimum turning point at \\((0, 0)\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Local minimum at \\((0, 0)\\)",
+      "Local maximum at \\((0, 0)\\)",
+      "Horizontal point of inflection at \\((0, 0)\\)",
+      "Local minimum at \\((1, \\ln 2)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Set $f'(x)=\\dfrac{2x}{x^2+1}=0$.",
-    "solution": "The correct answer is Minimum turning point at \\((0, 0)\\).",
+    "solution": "The correct answer is Local minimum at \\((0, 0)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(f'(x)=\\frac{2x}{x^2+1}=0\\Rightarrow x=0\\)",
-        "graphData": null
+        "explanation": "Step 1: Find the first derivative \\(f'(x)\\) using the chain rule and set it equal to zero to find stationary points.",
+        "workingOut": "$$ \\begin{aligned} f(x) &= \\ln(x^2+1) \\\\\\\\ f'(x) &= \\frac{1}{x^2+1} \\cdot 2x = \\frac{2x}{x^2+1} \\\\\\\\ \\frac{2x}{x^2+1} &= 0 \\implies 2x = 0 \\implies x = 0 \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\((0,0)\\)",
-        "graphData": null
+        "explanation": "Step 2: Find the \\(y\\)-coordinate by substituting \\(x = 0\\) back into the original function.",
+        "workingOut": "$$ f(0) = \\ln(0^2+1) = \\ln(1) = 0 \\implies \\text{Stationary point at } (0, 0) $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{Minimum at }(0,0)\\)",
-        "graphData": null
+        "explanation": "Step 3: Determine the nature of the stationary point using the first derivative test.",
+        "workingOut": "$$ \\begin{aligned} \\text{For } x < 0: &\\quad f'(x) = \\frac{2x}{x^2+1} < 0 \\quad (\\text{Decreasing}) \\\\\\\\ \\text{For } x > 0: &\\quad f'(x) = \\frac{2x}{x^2+1} > 0 \\quad (\\text{Increasing}) \\\\\\\\ \\end{aligned} $$"
       },
       {
-        "explanation": "Final answer: Minimum turning point at \\((0, 0)\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Minimum turning point at \\((0, 0)\\)",
-        "graphData": null
+        "explanation": "Step 4: Since the gradient changes from negative to positive, \\((0,0)\\) is a local minimum.",
+        "workingOut": "$$ \\therefore \\text{Local minimum at } (0,0) $$"
       }
     ],
     "graphData": null,
@@ -2646,35 +2626,35 @@ export const BAULKHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find any points of inflection of $f(x) = \\ln(x^2+1)$.",
     "opts": [
-      "(1, \\ln 2)\\) and \\((+1, \\ln 2)",
-      "(1, \\ln 2)\\) and \\((-1, \\ln 2)",
-      "(1, \\ln 4)\\) and \\((-1, \\ln 4)",
-      "(1, \\log 2)\\) and \\((-1, \\log 2)"
+      "\\((1, \\ln 2)\\) and \\((-1, \\ln 2)\\)",
+      "\\((1, \\ln 2)\\) and \\((0, 0)\\)",
+      "\\((2, \\ln 5)\\) and \\((-2, \\ln 5)\\)",
+      "\\((1, \\log 2)\\) and \\((-1, \\log 2)\\)"
     ],
     "a": 1,
     "answer": "1",
     "hint": "Set $f''(x)=0$ and verify concavity changes.",
-    "solution": "The correct answer is (1, \\ln 2)\\) and \\((-1, \\ln 2).",
+    "solution": "The correct answer is \\((1, \\ln 2)\\) and \\((-1, \\ln 2)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\frac{2-2x^2}{(x^2+1)^2}=0\\Rightarrow x=\\pm1\\)",
-        "graphData": null
+        "explanation": "Step 1: To find points of inflection, we need the second derivative \\(f''(x)\\). Differentiate \\(f'(x) = \\frac{2x}{x^2+1}\\) using the quotient rule.",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= \\frac{v u' - u v'}{v^2} \\\\\\\\ &= \\frac{(x^2+1)(2) - (2x)(2x)}{(x^2+1)^2} \\\\\\\\ &= \\frac{2x^2 + 2 - 4x^2}{(x^2+1)^2} = \\frac{2 - 2x^2}{(x^2+1)^2} \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(f(\\pm1)=\\ln(1+1)=\\ln 2\\)",
-        "graphData": null
+        "explanation": "Step 2: Set \\(f''(x) = 0\\) to find the possible points of inflection.",
+        "workingOut": "$$ \\begin{aligned} \\frac{2 - 2x^2}{(x^2+1)^2} &= 0 \\\\\\\\ 2 - 2x^2 &= 0 \\implies x^2 = 1 \\implies x = \\pm 1 \\end{aligned} $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(\\text{POI at }(1, ln2)\\text{ and }(-1, ln2)\\)",
-        "graphData": null
+        "explanation": "Step 3: Find the corresponding \\(y\\)-coordinates by substituting \\(x = \\pm 1\\) into the original function \\(f(x)\\).",
+        "workingOut": "$$ f(\\pm 1) = \\ln((\\pm 1)^2+1) = \\ln(2) \\implies (1, \\ln 2) \\text{ and } (-1, \\ln 2) $$"
       },
       {
-        "explanation": "Final answer: (1, \\ln 2)\\) and \\((-1, \\ln 2). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "(1, \\ln 2)\\) and \\((-1, \\ln 2)",
-        "graphData": null
+        "explanation": "Step 4: Verify that a change in concavity occurs across \\(x = \\pm 1\\) by testing values of \\(x\\) in \\(f''(x)\\).",
+        "workingOut": "$$ \\begin{aligned} \\text{Test } x = 0: &\\quad f''(0) = \\frac{2}{1} = 2 > 0 \\quad (\\text{Concave up}) \\\\\\\\ \\text{Test } x = 2: &\\quad f''(2) = \\frac{2 - 8}{(5)^2} = -\\frac{6}{25} < 0 \\quad (\\text{Concave down}) \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 5: Since \\(f''(x)\\) changes sign, these are true points of inflection.",
+        "workingOut": "$$ \\therefore \\text{Points of inflection at } (1, \\ln 2) \\text{ and } (-1, \\ln 2) $$"
       }
     ],
     "graphData": null,
