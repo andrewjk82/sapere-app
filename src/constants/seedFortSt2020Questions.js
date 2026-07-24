@@ -320,19 +320,49 @@ export const FORT_STREET_2020_QUESTIONS = [
     "solution": "The correct answer is A horizontal point of inflexion at \\(x = -4\\).",
     "solutionSteps": [
       {
-        "explanation": "Stationary points of \\(f\\) occur where \\(f'(x) = 0\\), i.e. at \\(x = -4\\) and \\(x = 2\\). Why this step? It isolates one clear idea so the next calculation is reliable. What rule applies is shown in the working. A common student slip here is a sign error or swapping upper and lower limits, so re-check those before continuing.",
-        "workingOut": "\\(f'(x) = 0 \\text{ at } x = -4, \\; 2\\)",
+        "explanation": "Step 1: The stationary points of \\(f(x)\\) occur where the first derivative \\(f'(x) = 0\\). From the given graph of \\(f'(x)\\), the \\(x\\)-intercepts are \\(x = -4\\) and \\(x = 2\\).",
+        "workingOut": "$$ f'(x) = 0 \\implies x = -4, \\; x = 2 $$",
         "graphData": null
       },
       {
-        "explanation": "At \\(x = -4\\) the gradient function touches the \\(x\\)-axis (a double root), so \\(f'\\) does not change sign. A stationary point where \\(f'\\) keeps the same sign is a horizontal point of inflexion.",
-        "workingOut": "\\(x = -4: \\text{ touch} \\Rightarrow \\text{horizontal inflexion}\\)",
+        "explanation": "Step 2: To classify these stationary points, we analyse the sign of the second derivative \\(f''(x)\\), which corresponds to the gradient of the \\(f'(x)\\) graph.",
+        "workingOut": "$$ f''(x) = \\frac{d}{dx}[f'(x)] \\quad (\\text{gradient of the drawn curve}) $$",
         "graphData": null
       },
       {
-        "explanation": "At \\(x = 2\\) the gradient function crosses the axis, so \\(f'\\) changes sign — this is a turning point (not an inflexion).",
-        "workingOut": "\\(x = 2: \\text{ cross} \\Rightarrow \\text{turning point}\\)",
+        "explanation": "Step 3: Classify the stationary point at \\(x = 2\\). The graph of \\(f'(x)\\) is decreasing as it crosses the \\(x\\)-axis at \\(x=2\\), meaning its gradient \\(f''(2)\\) is negative.",
+        "workingOut": "$$ f''(2) < 0 \\implies \\text{Local Maximum at } x = 2 $$",
         "graphData": null
+      },
+      {
+        "explanation": "Step 4: Classify the stationary point at \\(x = -4\\). The graph of \\(f'(x)\\) touches the \\(x\\)-axis and turns around, meaning \\(f''(-4) = 0\\). We must check the concavity (the sign of \\(f''(x)\\)) around \\(x = -4\\).",
+        "workingOut": "$$ \\text{At } x = -4, \\; f''(-4) = 0 $$",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 5: Check concavity around \\(x = -4\\). Before \\(x=-4\\), \\(f'(x)\\) is increasing (so \\(f''(x) > 0\\)). After \\(x=-4\\), \\(f'(x)\\) is decreasing (so \\(f''(x) < 0\\)).",
+        "workingOut": "$$ \\begin{aligned} x < -4 &\\implies f''(x) > 0 \\quad (\\text{Concave up}) \\\\\\\\ x > -4 &\\implies f''(x) < 0 \\quad (\\text{Concave down}) \\end{aligned} $$ \n Since concavity changes, \\(x = -4\\) is a horizontal point of inflexion.",
+        "graphData": null
+      },
+      {
+        "explanation": "Step 6: We can also see that \\(f'(x)\\) has a maximum at \\(x = 0\\). Since \\(f''(0) = 0\\) and \\(f''\\) changes sign from positive to negative, \\(x = 0\\) is another (non-horizontal) point of inflexion. The full shape of \\(f(x)\\) is sketched below.",
+        "workingOut": "$$ \\text{Answer: A horizontal point of inflexion at } x = -4. $$",
+        "graphData": {
+          "jsxGraph": {
+            "width": 440,
+            "height": 300,
+            "boundingbox": [
+              -7,
+              15,
+              5,
+              -20
+            ],
+            "boardOptions": {
+              "keepaspectratio": false
+            },
+            "script": "board.suspendUpdate();\nboard.create('arrow', [[-6.5,0],[4.5,0]], {strokeColor:'black'});\nboard.create('arrow', [[0,-18],[0,13]], {strokeColor:'black'});\nvar f=function(x){ return -0.055*Math.pow(x,4) - 0.44*Math.pow(x,3) + 7.04*x; };\nboard.create('functiongraph', [f, -6, 3.5], {strokeColor:'#e11d48',strokeWidth:2});\nboard.create('point', [2, f(2)], {name:'Max', size:2, color:'purple', label:{offset:[10,10]}});\nboard.create('point', [-4, f(-4)], {name:'Horiz. POI', size:2, color:'red', label:{offset:[-60,-15]}});\nboard.create('point', [0, 0], {name:'POI', size:2, color:'green', label:{offset:[10,-10]}});\nboard.create('text', [3.9, -1, 'x'], {fontSize:13});\nboard.create('text', [0.3, 12, 'y'], {fontSize:13});\nboard.create('text', [1.5, -15, 'y = f(x)'], {fontSize:13, strokeColor:'#e11d48'});\nboard.unsuspendUpdate();"
+          }
+        }
       }
     ],
     "graphData": {
