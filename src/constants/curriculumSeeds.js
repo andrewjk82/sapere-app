@@ -305,6 +305,7 @@ import { Y5_CH2_QUESTIONS_AR1, Y5_CH2_QUESTIONS_AR2 } from './seedYear5Ch2Questi
 import { Y5_CH3_QUESTIONS_MR1, Y5_CH3_QUESTIONS_MR2, Y5_CH3_QUESTIONS_MR3, Y5_CH3_QUESTIONS_MR4, Y5_CH3_QUESTIONS_MR6 } from './seedYear5Ch3Questions.js';
 import { Y5_CH4_QUESTIONS } from './seedYear5Ch4Questions.js';
 import { Y5_CH5_QUESTIONS } from './seedYear5Ch5Questions.js';
+import { GIRRAWEEN_2020_ALL_QUESTIONS } from '../../tools/seeds/girraween/index.js';
 
 
 export const CHAPTER_SEED_REGISTRY = [
@@ -1340,6 +1341,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'exam:dane-2020', badgeLabel: 'Y12 EXAM', examPaper: 'dane-2020', chapterTitle: 'Danebank 2020 HSC Trial', topicId: 'y12a-exam-dane', topicCode: 'EXAM', topicTitle: 'Danebank 2020 Trial Exam', year: 'Year 12', seed: [...DANEBANK_2020_QUESTIONS, ...DANEBANK_2020_SIMILAR_QUESTIONS], label: 'Y12 · Danebank 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:fortst-2020', badgeLabel: 'Y12 EXAM', examPaper: 'fortst-2020', chapterTitle: 'Fort Street 2020 HSC Trial', topicId: 'y12a-exam-fortst', topicCode: 'EXAM', topicTitle: 'Fort Street 2020 Trial Exam', year: 'Year 12', seed: [...FORTST_2020_QUESTIONS, ...FORTST_2020_SIMILAR_QUESTIONS], label: 'Y12 · Fort Street 2020 HSC Trial (Advanced)' },
   { chapterId: 'exam:cths-2020', badgeLabel: 'Y12 EXAM', examPaper: 'cths-2020', chapterTitle: 'Cherrybrook Tech 2020 HSC Trial', topicId: 'y12a-exam', topicCode: 'EXAM', topicTitle: 'Cherrybrook Tech 2020 Trial Exam', year: 'Year 12', seed: [...CTHS_2020_QUESTIONS, ...CTHS_2020_SIMILAR_QUESTIONS], label: 'Y12 · Cherrybrook Tech 2020 HSC Trial (Advanced)' },
+  { chapterId: 'exam:girr-2020', badgeLabel: 'Y12 EXAM', examPaper: 'girraween-2020', chapterTitle: 'Girraween 2020 HSC Trial', topicId: 'y12a-exam-girr', topicCode: 'EXAM', topicTitle: 'Girraween 2020 Trial Exam', year: 'Year 12', seed: GIRRAWEEN_2020_ALL_QUESTIONS, label: 'Y12 · Girraween 2020 HSC Trial (Advanced)' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5A', topicCode: '5A', topicTitle: 'Review of exponential functions base e', year: 'Year 12', seed: Y12A_CH5A_QUESTIONS, label: 'Y12 Ch5 · 5A Review of exponential functions base e' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5B', topicCode: '5B', topicTitle: 'Differentiation of exponential functions', year: 'Year 12', seed: Y12A_CH5B_QUESTIONS, label: 'Y12 Ch5 · 5B Differentiation of exponential functions' },
   { chapterId: 'y12a-5', chapterTitle: 'Chapter 5: The exponential and logarithmic functions', topicId: 'y12a-5C', topicCode: '5C', topicTitle: 'Applications of differentiation', year: 'Year 12', seed: Y12A_CH5C_QUESTIONS, label: 'Y12 Ch5 · 5C Applications of differentiation' },

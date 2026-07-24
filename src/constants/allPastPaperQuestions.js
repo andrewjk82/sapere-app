@@ -16,6 +16,7 @@ import { CTHS_2020_SIMILAR_QUESTIONS }   from './seedCherrybrookTech2020SimilarQ
 import { CRANBROOK_2023_QUESTIONS }      from './seedCranbrook2023Questions.js';
 import { DANEBANK_2020_QUESTIONS }       from './seedDanebank2020Questions.js';
 import { FORTST_2020_QUESTIONS }         from './seedFortSt2020Questions.js';
+import { GIRRAWEEN_2020_ALL_QUESTIONS }  from '../../tools/seeds/girraween/index.js';
 
 // ─── Add new past paper imports above this line ───────────────────────────────
 
@@ -31,5 +32,6 @@ export const ALL_PAST_PAPER_QUESTIONS = [
   ...CRANBROOK_2023_QUESTIONS,
   ...DANEBANK_2020_QUESTIONS,
   ...FORTST_2020_QUESTIONS,
+  ...GIRRAWEEN_2020_ALL_QUESTIONS,
   // ─── Add new past paper arrays above this line ────────────────────────────
 ];
