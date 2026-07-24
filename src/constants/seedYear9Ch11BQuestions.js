@@ -1429,7 +1429,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **a**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row a.",
     "opts": [
       "\\((4, 7)\\)",
       "\\((4, 8)\\)",
@@ -1508,7 +1508,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **b**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row b.",
     "opts": [
       "\\((12, 14)\\)",
       "\\((12, 15)\\)",
@@ -1587,7 +1587,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **c**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row c.",
     "opts": [
       "\\((6, 0)\\)",
       "\\((6, 1)\\)",
@@ -1666,7 +1666,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **d**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row d.",
     "opts": [
       "\\((4.6, 3.75)\\)",
       "\\((5.6, 3.75)\\)",
@@ -1745,7 +1745,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **e**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row e.",
     "opts": [
       "\\((4.5, 0.1)\\)",
       "\\((3.5, -0.9)\\)",
@@ -1824,7 +1824,7 @@ export const Y9_CH11B_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 90,
-    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| **a** | \\((2, 5)\\) | \\((6, 11)\\) | **?** |\n| **b** | **?** | \\((4, 5)\\) | \\((8, 10)\\) |\n| **c** | \\((-2, -5)\\) | **?** | \\((2, -2)\\) |\n| **d** | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | **?** |\n| **e** | **?** | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| **f** | \\((-4.8, 5)\\) | **?** | \\((0, 4)\\) |\n\nFind the missing point for row **f**.",
+    "question": "Fill in the missing entries in the table below, where \\(M\\) is the midpoint of the interval \\(AB\\).\n\n| Row | Point \\(A\\) | Point \\(B\\) | Midpoint \\(M\\) |\n| :---: | :---: | :---: | :---: |\n| a | \\((2, 5)\\) | \\((6, 11)\\) | ? |\n| b | ? | \\((4, 5)\\) | \\((8, 10)\\) |\n| c | \\((-2, -5)\\) | ? | \\((2, -2)\\) |\n| d | \\((1.5, 5.3)\\) | \\((7.7, 2.2)\\) | ? |\n| e | ? | \\((-2.5, -3.1)\\) | \\((0.5, -1.5)\\) |\n| f | \\((-4.8, 5)\\) | ? | \\((0, 4)\\) |\n\nFind the missing point for row f.",
     "opts": [
       "\\((5.8, 3)\\)",
       "\\((4.8, 2)\\)",
