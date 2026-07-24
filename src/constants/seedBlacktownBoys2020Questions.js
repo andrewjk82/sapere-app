@@ -322,7 +322,7 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "medium",
     "timeLimit": 120,
-    "question": "A graph shows the curve $y = f(x)$ with a point $P(a, f(a))$ in the first quadrant. At $P$ the curve is decreasing and concave down. Which statement is true?",
+    "question": "A graph shows the curve \\(y = f(x)\\) with a point \\(P(a, f(a))\\) in the first quadrant. At \\(P\\) the curve is decreasing and concave down. Which statement is true?<br/>\n<div style=\"display:flex; justify-content:center; margin: 16px 0;\">\n<svg viewBox=\"0 0 300 300\" width=\"100%\" style=\"max-width:300px; background-color:white; border:1px solid #ccc; border-radius:8px;\">\n  <!-- Axes -->\n  <line x1=\"20\" y1=\"250\" x2=\"280\" y2=\"250\" stroke=\"#333\" stroke-width=\"2\" /> <!-- x-axis -->\n  <line x1=\"50\" y1=\"20\" x2=\"50\" y2=\"280\" stroke=\"#333\" stroke-width=\"2\" /> <!-- y-axis -->\n  \n  <!-- Labels -->\n  <text x=\"270\" y=\"240\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">x</text>\n  <text x=\"60\" y=\"30\" fill=\"#333\" font-size=\"14\" font-family=\"sans-serif\">y</text>\n  <text x=\"35\" y=\"265\" fill=\"#333\" font-size=\"12\" font-family=\"sans-serif\">O</text>\n\n  <!-- Curve -->\n  <polyline fill=\"none\" stroke=\"#2563eb\" stroke-width=\"3\" points=\"50.0,50.0 56.0,50.2 62.0,50.8 68.0,51.8 74.0,53.2 80.0,55.0 86.0,57.2 92.0,59.8 98.0,62.8 104.0,66.2 110.0,70.0 116.0,74.2 122.0,78.8 128.0,83.8 134.0,89.2 140.0,95.0 146.0,101.2 152.0,107.8 158.0,114.8 164.0,122.2 170.0,130.0 176.0,138.2 182.0,146.8 188.0,155.8 194.0,165.2 200.0,175.0 206.0,185.2 212.0,195.8 218.0,206.8 224.0,218.2 230.0,230.0 236.0,242.2\" />\n  \n  <!-- Point P -->\n  <circle cx=\"170\" cy=\"130\" r=\"4\" fill=\"#dc2626\" />\n  <text x=\"180\" y=\"125\" fill=\"#dc2626\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\">P(a, f(a))</text>\n</svg>\n</div>\n",
     "opts": [
       "\\(f'(a) < 0, f''(a) < 0\\)",
       "\\(f'(a) > 0, f''(a) > 0\\)",
@@ -335,24 +335,16 @@ export const BLACKTOWN_BOYS_2020_QUESTIONS = [
     "solution": "The correct answer is \\(f'(a) < 0, f''(a) < 0\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Blacktown Boys 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "f'(a) < 0",
-        "graphData": null
+        "explanation": "Step 1: First, analyze the 'decreasing' condition at point \\(P\\). If a function is decreasing, its graph is sloping downwards from left to right. This means the gradient (first derivative) is negative.",
+        "workingOut": "$$ \\text{Decreasing} \\implies f'(a) < 0 $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "f''(a) < 0",
-        "graphData": null
+        "explanation": "Step 2: Next, analyze the 'concave down' condition at point \\(P\\). If a curve is concave down, it bends downwards like a frown (\\(\\frown\\)). This means the rate of change of the gradient (second derivative) is negative.",
+        "workingOut": "$$ \\text{Concave down} \\implies f''(a) < 0 $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(f'(a) < 0, f''(a) < 0\\)",
-        "graphData": null
-      },
-      {
-        "explanation": "Final answer: f'(a) < 0, f''(a) < 0. Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "\\(f'(a) < 0, f''(a) < 0\\)",
-        "graphData": null
+        "explanation": "Step 3: Combine both mathematical conditions.",
+        "workingOut": "$$ \\therefore f'(a) < 0 \\text{ and } f''(a) < 0 $$"
       }
     ],
     "graphData": null,
