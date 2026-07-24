@@ -842,35 +842,31 @@ export const ABBOTSLEIGH_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Let $h(x) = (x-2)(x^2+1)$. Find where the graph of $y = h(x)$ cuts the $x$-axis and the $y$-axis.",
     "opts": [
-      "x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)",
-      "x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, 2)",
-      "x\\)-intercept: \\((-2, 0)\\); \\(y\\)-intercept: \\((0, -2)",
+      "\\(x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)\\)",
+      "\\(x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, 2)\\)",
+      "\\(x\\)-intercept: \\((-2, 0)\\); \\(y\\)-intercept: \\((0, -2)\\)",
       "\\(x\\)-intercepts: \\((2, 0)\\) and \\((\\pm i, 0)\\); \\(y\\)-intercept: \\((0, -2)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "For the $x$-intercept, set $h(x) = 0$. For the $y$-intercept, evaluate $h(0)$.",
-    "solution": "The correct answer is x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2).",
+    "solution": "The correct answer is \\(x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Abbotsleigh 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\((x-2)(x^2+1) = 0\\)",
-        "graphData": null
+        "explanation": "To find the \\(y\\)-intercept, we substitute \\(x = 0\\) into the function \\(h(x)\\).",
+        "workingOut": "h(0) = (0 - 2)(0^2 + 1) = (-2)(1) = -2"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(x - 2 = 0 \\Rightarrow x = 2 \\qquad x^2 + 1 = 0 \\text{ — no real solutions}\\)",
-        "graphData": null
+        "explanation": "This means the graph cuts the \\(y\\)-axis at the point \\((0, -2)\\). Next, to find the \\(x\\)-intercepts, we set \\(h(x) = 0\\).",
+        "workingOut": "(x - 2)(x^2 + 1) = 0"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "\\(x\\text{-intercept: } (2, 0)\\)",
-        "graphData": null
+        "explanation": "Using the Null Factor Law, we set each factor equal to zero. The first factor gives \\(x = 2\\).",
+        "workingOut": "x - 2 = 0 \\implies x = 2"
       },
       {
-        "explanation": "Final answer: x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "x\\)-intercept: \\((2, 0)\\); \\(y\\)-intercept: \\((0, -2)",
-        "graphData": null
+        "explanation": "For the second factor, \\(x^2 + 1 = 0\\) has no real solutions because the square of any real number is always non-negative. Therefore, there is only one \\(x\\)-intercept at \\((2, 0)\\).",
+        "workingOut": "x^2 + 1 = 0 \\implies \\text{No real solutions}"
       }
     ],
     "graphData": null,
