@@ -2713,35 +2713,39 @@ export const BAULKHAM_2020_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find any stationary points and points of inflection of $f(x) = xe^{-x}$.",
     "opts": [
-      "Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
-      "The opposite of this statement is true.",
-      "This is true only when the function is linear.",
-      "This only holds for positive values of x."
+      "Local maximum at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
+      "Local minimum at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
+      "Local maximum at \\((1, e^{-1})\\); point of inflection at \\((0, 0)\\)",
+      "Local minimum at \\((1, e^{-1})\\); point of inflection at \\((-2, -2e^2)\\)"
     ],
     "a": 0,
     "answer": "0",
     "hint": "Differentiate using product rule: $f'=e^{-x}-xe^{-x}=e^{-x}(1-x)$.",
-    "solution": "The correct answer is Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\).",
+    "solution": "The correct answer is Local maximum at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known quantities, the unknown, and any constraints (domain, positive length, exact form required). Strategy for Baulkham Hills 2020 Trial Exam: translate the request into a standard calculus or finance procedure before calculating, so every later step has a clear purpose.",
-        "workingOut": "\\(\\text{Max at }(1,e^{-1})\\)",
-        "graphData": null
+        "explanation": "Step 1: Use the product rule to find the first derivative \\(f'(x)\\) and set it to zero to locate the stationary point.",
+        "workingOut": "$$ \\begin{aligned} f(x) &= x e^{-x} \\\\\\\\ f'(x) &= (1)(e^{-x}) + (x)(-e^{-x}) = e^{-x}(1-x) \\\\\\\\ e^{-x}(1-x) &= 0 \\implies x = 1 \\quad (\\text{since } e^{-x} > 0 \\text{ for all } x) \\end{aligned} $$"
       },
       {
-        "explanation": "What rule or formula applies? Identify the relevant differentiation/integration/series/finance formula for this stem. Why apply it now? It converts the worded task into an equation or antiderivative you can evaluate. A common mistake is using the wrong standard form (for example confusing d/dx sin x with cos of a composite without the chain factor, or mixing simple and compound interest).",
-        "workingOut": "\\(\\text{POI at }(2,2e^{-2})\\)",
-        "graphData": null
+        "explanation": "Step 2: Find the \\(y\\)-coordinate of the stationary point.",
+        "workingOut": "$$ f(1) = 1 \\cdot e^{-1} = e^{-1} \\implies \\text{Stationary point at } (1, e^{-1}) $$"
       },
       {
-        "explanation": "Carry out the algebra carefully: expand, differentiate or integrate term by term, substitute limits or parameters, and simplify. Check signs, chain-rule factors, and whether +C is required for indefinite integrals. This intermediate expression feeds the final simplified answer.",
-        "workingOut": "Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
-        "graphData": null
+        "explanation": "Step 3: Find the second derivative \\(f''(x)\\) using the product rule to determine the nature of the stationary point.",
+        "workingOut": "$$ \\begin{aligned} f''(x) &= (-e^{-x})(1-x) + (e^{-x})(-1) \\\\\\\\ &= -e^{-x} + x e^{-x} - e^{-x} = e^{-x}(x-2) \\\\\\\\ f''(1) &= e^{-1}(1-2) = -e^{-1} < 0 \\implies \\text{Local maximum at } (1, e^{-1}) \\end{aligned} $$"
       },
       {
-        "explanation": "Final answer: Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\). Interpret it in context (gradient, area, amount of money, exact value) and confirm it matches one option exactly. If two roots appeared, discard any that violate the domain or problem conditions.",
-        "workingOut": "Stationary point (maximum) at \\((1, e^{-1})\\); point of inflection at \\((2, 2e^{-2})\\)",
-        "graphData": null
+        "explanation": "Step 4: Set the second derivative to zero to find the possible point of inflection.",
+        "workingOut": "$$ \\begin{aligned} e^{-x}(x-2) &= 0 \\implies x = 2 \\\\\\\\ f(2) &= 2e^{-2} \\implies \\text{Possible POI at } (2, 2e^{-2}) \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 5: Verify that the concavity changes at \\(x = 2\\) by testing values on either side.",
+        "workingOut": "$$ \\begin{aligned} \\text{Test } x = 1: &\\quad f''(1) = -e^{-1} < 0 \\quad (\\text{Concave down}) \\\\\\\\ \\text{Test } x = 3: &\\quad f''(3) = e^{-3}(3-2) = e^{-3} > 0 \\quad (\\text{Concave up}) \\end{aligned} $$"
+      },
+      {
+        "explanation": "Step 6: Since \\(f''(x)\\) changes sign, \\((2, 2e^{-2})\\) is a true point of inflection.",
+        "workingOut": "$$ \\therefore \\text{Local maximum at } (1, e^{-1}) \\text{ and POI at } (2, 2e^{-2}) $$"
       }
     ],
     "graphData": null,
