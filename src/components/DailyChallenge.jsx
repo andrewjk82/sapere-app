@@ -2329,7 +2329,7 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                     history.filter(s => s.statCollection !== 'calc_stats' && s.challengeType !== 'calc'),
                     history.filter(s => s.statCollection === 'calc_stats' || s.challengeType === 'calc')
                   ) : null}
-                  recentHistory={history.slice(0, 5)}
+                  recentHistory={history}
                   isMobile={isMobile}
                   secretNote={{
                     daily: { total: getNoteCount('daily', user?.uid), due: getDueCount('daily', user?.uid), nextDueAt: getNextDueAt('daily', user?.uid) },
