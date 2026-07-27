@@ -127,6 +127,10 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   const [flash, setFlash] = useState(null);
   const [countdown, setCountdown] = useState(0);
   const [questionStartTime, setQuestionStartTime] = useState(null);
+  // Duration (seconds) the countdown effect should run for from questionStartTime.
+  // Normally the question's full (mode-scaled) timeLimit, but on draft-resume this
+  // must be the fast-forwarded remaining time — see resumeDurationRef usage below.
+  const resumeDurationRef = useRef(null);
 
   // ── Quiz session metadata ──
   const [challengeType, setChallengeType] = useState('daily');
@@ -875,7 +879,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
   useEffect(() => {
     if (step !== 'quiz' || !questionStartTime) return;
 
-    const timeLimit = (questions[currentIdx]?.timeLimit || 30) * 1000;
+    // Use the fast-forwarded remaining duration on draft-resume (if set); otherwise
+    // this is a fresh question and the full mode-scaled timeLimit applies.
+    const overrideSeconds = resumeDurationRef.current;
+    resumeDurationRef.current = null;
+    const timeLimit = (overrideSeconds != null ? overrideSeconds : (questions[currentIdx]?.timeLimit || 30)) * 1000;
     const endTime = questionStartTime + timeLimit;
 
     const timer = setInterval(() => {
@@ -1823,7 +1831,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
         // --- Local State Updates ---
 
         // Update practice pool: mark shown questions as done, accumulate accuracy.
-        if (challengeType === 'daily' && !isAbandoned) {
+        // Runs even when isAbandoned — an abandoned/timed-out session still
+        // ASSIGNED and displayed these questions to the student, so they must
+        // count as "seen" regardless of whether the attempt earned credit.
+        // Gating this on !isAbandoned used to mean any close-tab/all-expired
+        // finish left every one of that day's questions (including ones the
+        // student had genuinely already answered) marked "undone" — the very
+        // next day's prepareNextDailyAssignment would then draw from a pool
+        // that had no idea they'd just been shown, and could reselect the
+        // exact same questions again. Repeated abandons compound this into
+        // the same problem recurring for several days in a row.
+        if (challengeType === 'daily') {
           const poolResults = currentAnswerResults
             .map((r, i) => ({
               id: questions[i]?.id,
@@ -2283,6 +2301,14 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
                   setShuffledOptions(d.shuffledOptions || []);
                   setSubAnswers(d.subAnswers || {});
                   setTimeLeft(d.timeLeft);
+                  // The per-question countdown effect only runs once questionStartTime
+                  // is set (normally done by setupQuestion() on a fresh start / next
+                  // question). This resume path skipped that, so questionStartTime
+                  // stayed null and the countdown effect's early-return left the timer
+                  // frozen at d.timeLeft forever — no pressure at all, most noticeable
+                  // in Extreme mode where the whole point is a short clock.
+                  resumeDurationRef.current = d.timeLeft;
+                  setQuestionStartTime(Date.now());
                   quizStartTimeRef.current = Date.now();
                   setStep('quiz');
                   if (setIsLocked) setIsLocked(true);
