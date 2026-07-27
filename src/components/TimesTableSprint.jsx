@@ -20,7 +20,7 @@ import './sprint/sprint.css';
  * locked during a run (setIsLocked) so a student cannot navigate away
  * mid-sprint and leave a half-finished timer behind.
  */
-const TimesTableSprint = ({ onBack, setIsLocked }) => {
+const TimesTableSprint = ({ onBack, setIsLocked, onQuizActiveChange }) => {
   const { user, isAdmin } = useAuth();
   const { profile } = useProfile();
   const uid = user?.uid;
@@ -66,6 +66,13 @@ const TimesTableSprint = ({ onBack, setIsLocked }) => {
   }, [uid, weekId, isAdmin]);
 
   useEffect(() => () => setIsLocked?.(false), [setIsLocked]);
+
+  // Hide the floating FlameBuddy coach while a timed run is on screen — same
+  // "hidden during active quiz" contract App.jsx already uses for exam mode.
+  useEffect(() => {
+    onQuizActiveChange?.(step === 'quiz');
+    return () => onQuizActiveChange?.(false);
+  }, [step, onQuizActiveChange]);
 
   const handleStart = useCallback(() => {
     setQuestions(generateSprintQuestions(profile?.year));

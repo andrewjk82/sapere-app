@@ -353,6 +353,7 @@ function App() {
   const isLockedRef = useRef(false);
   useEffect(() => { isLockedRef.current = isLocked; }, [isLocked]);
   const [examInProgress, setExamInProgress] = useState(false);
+  const [sprintQuizInProgress, setSprintQuizInProgress] = useState(false);
   
   useEffect(() => {
     try {
@@ -1298,6 +1299,7 @@ function App() {
             key={`sprint-${user?.uid}`}
             onBack={() => handleTabChange('Dashboard')}
             setIsLocked={setIsLocked}
+            onQuizActiveChange={setSprintQuizInProgress}
           />
         );
       case 'Feedback':
@@ -1402,15 +1404,16 @@ function App() {
       </div>
 
       {/* Floating flame coach — students only.
-          Only fully hide during exam (quiz lock used to unmount/remount and
-          leave the avatar stuck invisible). Keep mounted otherwise. */}
+          Only fully hide during exam or a Times Table Sprint run (quiz lock
+          used to unmount/remount and leave the avatar stuck invisible).
+          Keep mounted otherwise. */}
       {!isAdmin && user?.uid && (
         <FlameBuddy
           uid={user.uid}
           profile={profile || sharedProfile}
           activeTab={activeTab}
           setActiveTab={handleTabChange}
-          hidden={!!examInProgress}
+          hidden={!!examInProgress || !!sprintQuizInProgress}
         />
       )}
 
