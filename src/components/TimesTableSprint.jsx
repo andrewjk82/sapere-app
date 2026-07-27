@@ -8,7 +8,7 @@ import SprintQuizView from './sprint/SprintQuizView';
 import SprintResultView from './sprint/SprintResultView';
 import {
   generateSprintQuestions, subscribeSprintMeta, readCachedSprintMeta,
-  fetchMySprintResult, fetchSprintRank, submitSprintRun,
+  fetchMySprintResult, fetchSprintRank, submitSprintRun, markSprintIntroSeen,
 } from '../services/timesTableSprintService';
 import { getSprintWeekId, getMsUntilWeeklyReset } from '../utils/sprintWeek';
 import './sprint/sprint.css';
@@ -66,6 +66,10 @@ const TimesTableSprint = ({ onBack, setIsLocked, onQuizActiveChange }) => {
   }, [uid, weekId, isAdmin]);
 
   useEffect(() => () => setIsLocked?.(false), [setIsLocked]);
+
+  // Clears the dashboard card's "New" badge the first time the page opens —
+  // not once a run finishes, since just looking at it counts as "found it".
+  useEffect(() => { if (!isAdmin) markSprintIntroSeen(uid); }, [uid, isAdmin]);
 
   // Hide the floating FlameBuddy coach while a timed run is on screen — same
   // "hidden during active quiz" contract App.jsx already uses for exam mode.

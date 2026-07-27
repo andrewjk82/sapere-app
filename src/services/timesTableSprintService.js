@@ -60,6 +60,20 @@ const writeCachedMyBest = (weekId, userId, bestTimeMs, attemptsCount) => {
   localCache.set(myBestKeyFor(weekId, userId), { bestTimeMs, attemptsCount });
 };
 
+// "New" badge on the dashboard card — a one-time introduction, not a weekly
+// thing, so it's keyed by uid only and never reset by the week rolling over.
+const introSeenKeyFor = (userId) => `ttsprint:introSeen:${userId}`;
+
+export const hasSeenSprintIntro = (userId) => {
+  if (!userId) return true; // no student yet → don't flash "New" at nobody
+  return Boolean(localCache.get(introSeenKeyFor(userId)));
+};
+
+export const markSprintIntroSeen = (userId) => {
+  if (!userId) return;
+  localCache.set(introSeenKeyFor(userId), true);
+};
+
 // ── Questions ──────────────────────────────────────────────────────────────
 
 /**

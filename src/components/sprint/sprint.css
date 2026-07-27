@@ -598,6 +598,30 @@
   opacity: 0.55;
 }
 
+/* ── "New" badge — dashboard card only, until the student opens it once ── */
+.tts-badge-new {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 2;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #ff1744;
+  color: #fff;
+  font-family: var(--spr-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  box-shadow: 0 0 0 3px var(--spr-track), 0 0 14px rgba(255, 23, 68, 0.85);
+  animation: tts-badge-pulse 1.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes tts-badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+}
+
 /* ── Staggered reveal (module-wide) ─────────────────────────────────────── */
 @keyframes tts-rise {
   from { opacity: 0; transform: translateY(16px); }
@@ -614,7 +638,8 @@
   .tts-flap__face--flip,
   .tts-flap__face--enter,
   .tts-answer--wrong,
-  .tts-quiz__flash {
+  .tts-quiz__flash,
+  .tts-badge-new {
     animation: none !important;
   }
   .tts-flap__face--flip { transform: none; }
