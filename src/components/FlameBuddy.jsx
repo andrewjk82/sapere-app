@@ -1116,6 +1116,19 @@ const buildResultSpeech = (score, total, firstName, seedBase, challengeType = 'd
   };
 };
 
+// Manual "Hide" button — stashes a wake-up timestamp so the flame stays
+// gone across remounts/tab switches for the rest of the 10-minute window.
+const FLAME_HIDE_MS = 10 * 60 * 1000;
+const FLAME_HIDE_KEY = (uid) => `sapere:flame-hide-until-${uid || 'anon'}`;
+
+const readFlameHideUntil = (uid) => {
+  try {
+    return Math.max(0, Number(localStorage.getItem(FLAME_HIDE_KEY(uid))) || 0);
+  } catch {
+    return 0;
+  }
+};
+
 const WORKING_OUT_STREAK_KEY = (uid) => `flame-wo-skip-streak-v1-${uid || 'anon'}`;
 
 const readWorkingOutSkipStreak = (uid) => {
@@ -1437,7 +1450,7 @@ function useTypewriter(msg, sub, active, msPerChar = 15) {
   return { msgOut, subOut, done, fullMsgLen: fullMsg.length, fullSubLen: fullSub.length };
 }
 
-function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'idle' }) {
+function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, onHide, mood = 'idle' }) {
   const { msgOut, subOut, done, fullMsgLen, fullSubLen } = useTypewriter(msg, sub, true, 14);
   const typingMsg = !done && msgOut.length < fullMsgLen;
   const typingSub = !done && !typingMsg && Boolean(stripMdBold(sub));
@@ -1468,6 +1481,11 @@ function BubbleTypewriter({ eyebrow, msg, sub, cta, onCta, onDismiss, mood = 'id
           <button type="button" className="fb-bubble__dismiss" onClick={onDismiss}>
             Got it
           </button>
+          {onHide && (
+            <button type="button" className="fb-bubble__hide" onClick={onHide} title="Hide for 10 minutes">
+              Hide
+            </button>
+          )}
         </div>
       )}
     </div>
@@ -1631,6 +1649,10 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
   const [quizSession, setQuizSession] = useState(null); // { active, mode, challengeType, questionIndex, hasHint, hintText }
   // Full-screen UI overlays (e.g. mode select) that embed their own FlameBuddy.
   const [overlayHide, setOverlayHide] = useState(false);
+  // Manual "Hide" tap: timestamp until which the flame stays off-screen,
+  // plus a derived boolean flag (kept out of render's Date.now() checks).
+  const [manualHideUntil, setManualHideUntil] = useState(0);
+  const [manuallyHidden, setManuallyHidden] = useState(false);
   // Entrance phase: hidden → enter (pop) → ready.
   // Never park on an invisible "pre" frame — cancelled rAFs left the avatar
   // stuck at opacity 0. Remounts / already-seen sessions go straight to ready.
@@ -2017,6 +2039,33 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
     return () => clearTimeout(t);
   }, [resultCoach?.until, resultCoach?.id]);
 
+  // Re-sync manual hide state per student.
+  useEffect(() => {
+    setManualHideUntil(readFlameHideUntil(uid));
+  }, [uid]);
+
+  // Derive the hidden flag + auto un-hide once the window ends.
+  useEffect(() => {
+    const ms = manualHideUntil - Date.now();
+    if (ms <= 0) {
+      setManuallyHidden(false);
+      return undefined;
+    }
+    setManuallyHidden(true);
+    const t = setTimeout(() => {
+      setManualHideUntil(0);
+      setManuallyHidden(false);
+    }, ms);
+    return () => clearTimeout(t);
+  }, [manualHideUntil]);
+
+  const handleFlameHide = useCallback(() => {
+    const until = Date.now() + FLAME_HIDE_MS;
+    try { localStorage.setItem(FLAME_HIDE_KEY(uid), String(until)); } catch { /* ignore */ }
+    setManualHideUntil(until);
+    setBubbleOpen(false);
+  }, [uid]);
+
   const dueNotes = useMemo(() => {
     if (!uid) return 0;
     try {
@@ -2178,7 +2227,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
 
   // Soft-hide during exam / quiz lock / mode-select overlay: stay mounted so
   // entrance state is kept, but don't cover the fullscreen UI.
-  if (hidden || overlayHide) return null;
+  if (hidden || overlayHide || manuallyHidden) return null;
 
   const showBubble = bubbleOpen && dismissedKey !== situation.key;
   const phaseClass = phase === 'enter' ? 'fb-root--enter' : 'fb-root--ready';
@@ -2229,6 +2278,7 @@ export default function FlameBuddy({ uid, profile, activeTab, setActiveTab, hidd
             // Don't re-open the same result speech after dismiss.
             if (situation.key?.startsWith('result-')) setResultCoach(null);
           }}
+          onHide={handleFlameHide}
         />
       )}
 

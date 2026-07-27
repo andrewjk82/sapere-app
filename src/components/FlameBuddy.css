@@ -280,6 +280,24 @@
   color: #64748b;
 }
 
+.fb-bubble__hide {
+  pointer-events: auto;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  background: transparent;
+  color: #94a3b8;
+  font-weight: 700;
+  font-size: 0.72rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 999px;
+  margin-left: auto;
+}
+
+.fb-bubble__hide:hover {
+  color: #64748b;
+  border-color: rgba(100, 116, 139, 0.5);
+}
+
 .fb-stage {
   pointer-events: auto;
   height: 84px; /* ~70% of 120 */
