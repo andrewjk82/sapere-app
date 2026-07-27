@@ -79,6 +79,7 @@ import Library from './components/Library';
 const StudentList = lazyWithReload(() => import('./components/StudentList'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
+const TimesTableSprint = lazyWithReload(() => import('./components/TimesTableSprint'));
 const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
@@ -1289,6 +1290,14 @@ function App() {
             onBack={handleChallengeBack}
             setIsLocked={setIsLocked}
             onOpenFeedback={() => handleTabChange('Feedback')}
+          />
+        );
+      case 'TimesTableSprint':
+        return (
+          <TimesTableSprint
+            key={`sprint-${user?.uid}`}
+            onBack={() => handleTabChange('Dashboard')}
+            setIsLocked={setIsLocked}
           />
         );
       case 'Feedback':

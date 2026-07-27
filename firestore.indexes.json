@@ -23,6 +23,23 @@
         { "fieldPath": "type", "order": "ASCENDING" },
         { "fieldPath": "timestamp", "order": "DESCENDING" }
       ]
+    },
+    {
+      "collectionGroup": "sessions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "date", "order": "ASCENDING" },
+        { "fieldPath": "startTime", "order": "ASCENDING" },
+        { "fieldPath": "reminderSent", "order": "ASCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "timestable_sprint_results",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "weekId", "order": "ASCENDING" },
+        { "fieldPath": "bestTimeMs", "order": "ASCENDING" }
+      ]
     }
   ],
   "fieldOverrides": []

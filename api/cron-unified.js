@@ -3,6 +3,7 @@ import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
 import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail, genericEmail } from './_lib/emailTemplates.js';
 import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './_lib/examPrepReport.js';
+import { settleSprintWeek } from './_lib/timesTableSprintSettlement.js';
 
 // Emails sent per hourly run — the queue carries the rest to the next hour,
 // spreading the load (avoids email throttling).
@@ -520,6 +521,22 @@ export default async function handler(req, res) {
       logs.push(`[D+1] Cleanup error: ${e.message}`);
     }
     } // end D+1 cleanup 2 AM gate
+
+    // ══════════════════════════════════════════════════════════════════════
+    // PART 6: Weekly Times Table Sprint settlement
+    // Mondays 00:30–06:00 Sydney, i.e. the first hourly pings after the week
+    // rolls over. The wide window means a single missed ping cannot drop a
+    // week's payouts; `awardedUids` on the settlement doc makes the extra
+    // runs no-ops. Once status is 'complete' each later run costs 1 read.
+    // ══════════════════════════════════════════════════════════════════════
+    if (sydDow === 1 && sydTotalMin >= 30 && sydTotalMin <= 360) {
+      try {
+        const sprint = await settleSprintWeek(db, admin, { now: nowUTC });
+        logs.push(...sprint.logs);
+      } catch (e) {
+        logs.push(`[Sprint] Settlement error: ${e.message}`);
+      }
+    }
 
     // ── Log Execution to system_logs for Dashboard visibility ────────────
     await db.collection('system_logs').add({

@@ -236,9 +236,40 @@ service cloud.firestore {
       allow read: if isSignedIn();
       // Allow user to write their own entry, or admin to write any entry
       // For manual students (id starts with 'manual-'), we allow tutors to manage them
-      allow write: if isAdmin() 
+      allow write: if isAdmin()
         || (isSignedIn() && request.auth.uid == entryId)
         || (isSignedIn() && entryId[0:7] == "manual-");
+    }
+
+    // ── Weekly Times Table Sprint ────────────────────────────────────────
+    // One doc per student per week, id `{weekId}_{uid}`. Everyone can read
+    // (it is a public leaderboard); a student may only write their own row.
+    match /timestable_sprint_results/{docId} {
+      allow read: if isSignedIn();
+      allow create, update: if isAdmin()
+        || (isSignedIn() && request.resource.data.userId == request.auth.uid);
+      allow delete: if isAdmin();
+    }
+
+    // Append-only attempt log, kept for auditing a suspicious time.
+    match /timestable_sprint_attempts/{docId} {
+      allow read: if isAdmin()
+        || (isSignedIn() && resource.data.userId == request.auth.uid);
+      allow create: if isSignedIn() && request.resource.data.userId == request.auth.uid;
+      allow update, delete: if isAdmin();
+    }
+
+    // Cached top-5 doc every client listens to. Signed-in writable like
+    // sync_meta: XP settlement never reads this doc, it re-derives ranks from
+    // the result docs, so a forged meta could only distort a display.
+    match /timestable_sprint_meta/{weekId} {
+      allow read, write: if isSignedIn();
+    }
+
+    // Written only by the cron settlement job (admin SDK bypasses rules).
+    match /timestable_sprint_settlement/{weekId} {
+      allow read: if isSignedIn();
+      allow write: if false;
     }
   }
 }

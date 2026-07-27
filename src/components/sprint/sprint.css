@@ -1,0 +1,413 @@
+/* Times Table Sprint — weekly speed competition.
+   Plain global CSS to match the rest of the app (no Tailwind/CSS modules). */
+
+.tts-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Shared card ─────────────────────────────────────────────────────────── */
+.tts-card {
+  background: #fff;
+  border: 1px solid #f1f5f9;
+  border-radius: 28px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  padding: 24px;
+}
+
+.tts-eyebrow {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #94a3b8;
+  margin: 0 0 6px;
+}
+
+.tts-hero {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  color: #fff;
+  border: none;
+  box-shadow: 0 20px 45px rgba(239, 68, 68, 0.28);
+  position: relative;
+  overflow: hidden;
+}
+
+.tts-hero .tts-eyebrow { color: rgba(255, 255, 255, 0.75); }
+
+.tts-hero__icon {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  opacity: 0.14;
+  pointer-events: none;
+}
+
+.tts-time-big {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.tts-stat-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.tts-stat {
+  flex: 1 1 120px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 16px;
+  padding: 10px 14px;
+}
+
+/* The hero IS a .tts-card, so this must exclude it — otherwise the light
+   tile background wins and the hero's white text becomes invisible. */
+.tts-card:not(.tts-hero) .tts-stat {
+  background: #f8fafc;
+}
+
+.tts-stat__label {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.75;
+  display: block;
+}
+
+.tts-stat__value {
+  font-size: 1.25rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.tts-btn {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 18px 24px;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+  font-family: inherit;
+}
+
+.tts-btn:active { transform: scale(0.98); }
+
+.tts-btn--primary {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.32);
+}
+
+.tts-btn--ghost {
+  background: #f1f5f9;
+  color: #475569;
+  box-shadow: none;
+}
+
+/* ── Quiz ────────────────────────────────────────────────────────────────── */
+.tts-quiz {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+}
+
+.tts-quiz__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tts-progress {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.tts-progress__fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.tts-clock {
+  font-size: 1.35rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  color: #6366f1;
+  /* Fixed width so the ticking milliseconds never reflow the layout. */
+  min-width: 6.5ch;
+  text-align: right;
+}
+
+.tts-question {
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #eef2ff, #faf5ff);
+  border: 1px solid #e0e7ff;
+}
+
+.tts-question__text {
+  font-size: clamp(2.4rem, 12vw, 3.6rem);
+  font-weight: 900;
+  color: #1e293b;
+  letter-spacing: -0.02em;
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.tts-answer {
+  margin-top: 14px;
+  height: 64px;
+  border-radius: 18px;
+  background: #fff;
+  border: 3px solid #c7d2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  color: #4338ca;
+  font-variant-numeric: tabular-nums;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.tts-answer--empty { color: #cbd5e1; }
+
+.tts-answer--wrong {
+  border-color: #fca5a5;
+  background: #fef2f2;
+  color: #dc2626;
+  animation: tts-shake 0.32s ease;
+}
+
+@keyframes tts-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+
+.tts-penalty {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #dc2626;
+  pointer-events: none;
+}
+
+/* ── Keypad ──────────────────────────────────────────────────────────────── */
+.tts-keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tts-key {
+  height: 64px;
+  border-radius: 18px;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #1e293b;
+  cursor: pointer;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 #e2e8f0;
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.12s ease;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  user-select: none;
+}
+
+.tts-key:active {
+  transform: translateY(3px);
+  box-shadow: none;
+  background: #f8fafc;
+}
+
+.tts-key--action {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.tts-key--submit {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 3px 0 #4338ca;
+  font-size: 1.05rem;
+}
+
+.tts-key--submit:disabled {
+  background: #cbd5e1;
+  box-shadow: 0 3px 0 #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ── Leaderboard ─────────────────────────────────────────────────────────── */
+.tts-board {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tts-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid transparent;
+}
+
+.tts-row--me {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.tts-row--1 { background: linear-gradient(135deg, #fef3c7, #fde68a); }
+.tts-row--2 { background: linear-gradient(135deg, #f1f5f9, #e2e8f0); }
+.tts-row--3 { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
+
+.tts-row__rank {
+  width: 30px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: #64748b;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.tts-row__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e2e8f0;
+  flex-shrink: 0;
+}
+
+.tts-row__name {
+  flex: 1;
+  font-weight: 700;
+  color: #1e293b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tts-row__time {
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+  color: #4338ca;
+  flex-shrink: 0;
+}
+
+.tts-row__xp {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #b45309;
+  flex-shrink: 0;
+}
+
+.tts-empty {
+  text-align: center;
+  color: #94a3b8;
+  font-weight: 600;
+  padding: 24px 12px;
+}
+
+/* ── Result ──────────────────────────────────────────────────────────────── */
+.tts-result {
+  text-align: center;
+}
+
+.tts-rank-delta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 1rem;
+  font-weight: 900;
+  padding: 8px 16px;
+  border-radius: 999px;
+}
+
+.tts-rank-delta--up { background: #dcfce7; color: #15803d; }
+.tts-rank-delta--down { background: #fee2e2; color: #b91c1c; }
+.tts-rank-delta--same { background: #f1f5f9; color: #64748b; }
+
+/* Staggered result reveal.
+   These are CSS animations rather than framer-motion `delay` transitions on
+   purpose: a delayed JS-timer animation can be dropped outright if the tab is
+   not visible when it should fire, leaving essential content stuck at
+   opacity 0 forever. The browser always settles a CSS animation to its
+   final keyframe, so the worst case here is the student misses the flourish,
+   never the result. */
+@keyframes tts-rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes tts-pop {
+  0% { opacity: 0; transform: scale(0.6); }
+  70% { opacity: 1; transform: scale(1.12); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes tts-fade-back {
+  from { opacity: 1; }
+  to { opacity: 0.45; }
+}
+
+.tts-reveal { animation: tts-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
+.tts-reveal--1 { animation-delay: 0.1s; }
+.tts-reveal--2 { animation-delay: 0.25s; }
+
+.tts-rank-number {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #4338ca;
+  line-height: 1;
+  animation: tts-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s backwards;
+}
+
+.tts-rank-previous {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #cbd5e1;
+  animation: tts-fade-back 0.4s ease 0.55s forwards;
+}
+
+.tts-rank-delta-wrap { animation: tts-rise 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.7s backwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .tts-reveal,
+  .tts-rank-number,
+  .tts-rank-previous,
+  .tts-rank-delta-wrap { animation: none; }
+}

@@ -22,6 +22,7 @@ import { normalizeSubjectLabel } from '../utils/subjectLabels';
 import { seedLeaderboardFromExistingData } from '../services/leaderboardService';
 import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
+import SprintDashboardCard from './sprint/SprintDashboardCard';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -554,6 +555,11 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
                   })}
                 </div>
               </div>
+              {/* Weekly Times Table Sprint — leader's time + reset countdown */}
+              <SprintDashboardCard
+                uid={user?.uid}
+                onClick={() => setActiveTab?.('TimesTableSprint')}
+              />
             </div>
           </div>
         )}
