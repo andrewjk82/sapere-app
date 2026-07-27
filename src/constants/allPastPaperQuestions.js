@@ -15,7 +15,7 @@ import { CTHS_2020_QUESTIONS }           from './seedCherrybrookTech2020Question
 import { CTHS_2020_SIMILAR_QUESTIONS }   from './seedCherrybrookTech2020SimilarQuestions.js';
 import { CRANBROOK_2023_QUESTIONS }      from './seedCranbrook2023Questions.js';
 import { DANEBANK_2020_QUESTIONS }       from './seedDanebank2020Questions.js';
-import { FORTST_2020_QUESTIONS }         from './seedFortSt2020Questions.js';
+import { FORT_STREET_2020_QUESTIONS as FORTST_2020_QUESTIONS } from './seedFortSt2020Questions.js';
 import { GIRRAWEEN_2020_ALL_QUESTIONS }  from '../../tools/seeds/girraween/index.js';
 
 // ─── Add new past paper imports above this line ───────────────────────────────
