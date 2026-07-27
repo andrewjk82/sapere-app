@@ -1,5 +1,25 @@
-/* Times Table Sprint — weekly speed competition.
-   Plain global CSS to match the rest of the app (no Tailwind/CSS modules). */
+/* Times Table Sprint — "instrument on the track" design language.
+   Two real objects anchor every choice here: a race-timing clock (dark
+   panel, glowing LED-style mono digits) and an airport split-flap board
+   (mechanical tile flip for the rank reveal). Leaderboard rows stay on a
+   light "infield" surface so names/times read easily for kids; only the
+   timing instrument itself goes dark. */
+
+:root {
+  --spr-track: #14151f;
+  --spr-track-2: #1d1f2e;
+  --spr-line: rgba(255, 255, 255, 0.06);
+  --spr-ember: #ff4d4f;
+  --spr-ember-dim: #c23c3d;
+  --spr-flare: #ffb020;
+  --spr-lime: #c8ff4d;
+  --spr-lime-dim: rgba(200, 255, 77, 0.55);
+  --spr-gold: #ffd666;
+  --spr-silver: #c9d0dc;
+  --spr-bronze: #e2915b;
+  --spr-display: 'Bebas Neue', 'Outfit', sans-serif;
+  --spr-mono: 'JetBrains Mono', 'SFMono-Regular', ui-monospace, monospace;
+}
 
 .tts-shell {
   max-width: 720px;
@@ -7,7 +27,7 @@
   width: 100%;
 }
 
-/* ── Shared card ─────────────────────────────────────────────────────────── */
+/* ── Cards (light "infield" surfaces) ───────────────────────────────────── */
 .tts-card {
   background: #fff;
   border: 1px solid #f1f5f9;
@@ -26,68 +46,148 @@
   margin: 0 0 6px;
 }
 
-.tts-hero {
-  background: linear-gradient(135deg, #f59e0b, #ef4444);
-  color: #fff;
-  border: none;
-  box-shadow: 0 20px 45px rgba(239, 68, 68, 0.28);
+/* ── The instrument: dark timing panel, shared by hero + strip + card ──── */
+.tts-instrument {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(160deg, var(--spr-track-2), var(--spr-track));
+  color: #f5f3ff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 20px 45px rgba(10, 10, 20, 0.35);
 }
 
-.tts-hero .tts-eyebrow { color: rgba(255, 255, 255, 0.75); }
-
-.tts-hero__icon {
+.tts-instrument::before {
+  content: '';
   position: absolute;
-  top: -20px;
-  right: -20px;
-  opacity: 0.14;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    -35deg, var(--spr-line) 0, var(--spr-line) 1px, transparent 1px, transparent 22px
+  );
   pointer-events: none;
 }
 
-.tts-time-big {
-  font-size: 3rem;
-  font-weight: 900;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-  letter-spacing: -0.02em;
+.tts-instrument--hero {
+  border-radius: 28px;
+  padding: 26px 24px 0;
+}
+
+.tts-instrument--strip {
+  border-radius: 18px;
+}
+
+.tts-instrument--card {
+  border-radius: 28px;
+}
+
+/* Track-meet signage watermark — replaces the generic giant translucent
+   lucide icon with something that belongs to this specific subject. */
+.tts-watermark {
+  position: absolute;
+  top: 2px;
+  right: -6px;
   margin: 0;
+  font-family: var(--spr-display);
+  font-size: 3.4rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: rgba(200, 255, 77, 0.1);
+  transform: rotate(-6deg);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
 }
 
-.tts-stat-row {
+.tts-hero-title {
+  position: relative;
+  font-family: var(--spr-display);
+  font-size: 1.1rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--spr-lime);
+  margin: 0 0 2px;
+}
+
+.tts-hero-sub {
+  position: relative;
+  margin: 4px 0 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: rgba(245, 243, 255, 0.72);
+}
+
+/* ── LED / mono readouts ─────────────────────────────────────────────────
+   Reserved for anything reporting a timed measurement: the running clock,
+   the hero's best time, XP figures. Glow only applies on the dark
+   instrument surface — on light leaderboard rows the mono face carries the
+   "instrument" language without the glow, so it doesn't compete for
+   attention against names kids need to read quickly. */
+.tts-led {
+  font-family: var(--spr-mono);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.tts-led--glow {
+  color: var(--spr-lime);
+  text-shadow: 0 0 1px rgba(200, 255, 77, 0.9), 0 0 18px var(--spr-lime-dim);
+  animation: tts-glow-pulse 2.8s ease-in-out infinite;
+}
+
+.tts-led--xl {
+  position: relative;
+  display: block;
+  font-size: clamp(2.5rem, 11vw, 3.4rem);
+  line-height: 1;
+  margin: 6px 0 0;
+}
+
+.tts-led--strip {
+  font-size: 1.3rem;
+}
+
+@keyframes tts-glow-pulse {
+  0%, 100% { text-shadow: 0 0 1px rgba(200, 255, 77, 0.9), 0 0 16px var(--spr-lime-dim); }
+  50% { text-shadow: 0 0 1px rgba(200, 255, 77, 0.95), 0 0 26px var(--spr-lime-dim); }
+}
+
+/* ── Console strip: instrument-panel readouts, not SaaS stat pills ─────── */
+.tts-console {
+  position: relative;
   display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
   margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.tts-stat {
-  flex: 1 1 120px;
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 16px;
-  padding: 10px 14px;
+.tts-console__cell {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px 14px;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* The hero IS a .tts-card, so this must exclude it — otherwise the light
-   tile background wins and the hero's white text becomes invisible. */
-.tts-card:not(.tts-hero) .tts-stat {
-  background: #f8fafc;
-}
+.tts-console__cell:last-child { border-right: none; }
 
-.tts-stat__label {
+.tts-console__label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.6rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.75;
-  display: block;
+  color: rgba(245, 243, 255, 0.5);
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.tts-stat__value {
-  font-size: 1.25rem;
-  font-weight: 900;
+.tts-console__value {
+  font-family: var(--spr-mono);
   font-variant-numeric: tabular-nums;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #f5f3ff;
 }
 
 /* ── Buttons ─────────────────────────────────────────────────────────────── */
@@ -106,9 +206,9 @@
 .tts-btn:active { transform: scale(0.98); }
 
 .tts-btn--primary {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, var(--spr-ember), var(--spr-flare));
   color: #fff;
-  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.32);
+  box-shadow: 0 12px 28px rgba(255, 77, 79, 0.32);
 }
 
 .tts-btn--ghost {
@@ -121,40 +221,87 @@
 .tts-quiz {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 14px;
   min-height: 0;
 }
 
-.tts-quiz__bar {
+.tts-quiz__strip {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  gap: 14px;
+  border-radius: 20px;
+  padding: 12px 18px;
 }
 
-.tts-progress {
-  flex: 1;
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 999px;
-  overflow: hidden;
+/* A wrong answer pulses the strip once. This is a fire-and-forget CSS
+   animation keyed by wrongFlash — not JS state + setTimeout — so there is
+   no risk of a stuck flash if a render is skipped or interrupted. */
+.tts-quiz__flash {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  animation: tts-flash-pulse 0.5s ease-out forwards;
 }
 
-.tts-progress__fill {
-  height: 100%;
-  background: linear-gradient(90deg, #6366f1, #8b5cf6);
-  border-radius: 999px;
-  transition: width 0.25s ease;
+@keyframes tts-flash-pulse {
+  0% { box-shadow: inset 0 0 0 2px var(--spr-ember), 0 0 26px rgba(255, 77, 79, 0.5); }
+  100% { box-shadow: inset 0 0 0 2px transparent, 0 0 0 rgba(255, 77, 79, 0); }
 }
 
-.tts-clock {
-  font-size: 1.35rem;
-  font-weight: 900;
+.tts-quiz__count {
+  position: relative;
+  font-family: var(--spr-mono);
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
-  color: #6366f1;
-  /* Fixed width so the ticking milliseconds never reflow the layout. */
+  color: rgba(245, 243, 255, 0.65);
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.tts-quiz__clock {
+  position: relative;
+  margin-left: auto;
   min-width: 6.5ch;
   text-align: right;
+}
+
+/* "Lane" progress: a dashed track line with a runner marker at the lead
+   edge, instead of a plain filled bar. */
+.tts-track {
+  position: relative;
+  height: 10px;
+  border-radius: 999px;
+  background:
+    repeating-linear-gradient(90deg, #cbd5e1 0 6px, transparent 6px 12px),
+    #eef2f7;
+}
+
+.tts-track--on-dark {
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.22) 0 6px, transparent 6px 12px),
+    rgba(255, 255, 255, 0.08);
+}
+
+.tts-track__fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--spr-ember), var(--spr-flare));
+  transition: width 0.3s ease;
+}
+
+.tts-track__runner {
+  position: absolute;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid var(--spr-ember);
+  box-shadow: 0 2px 8px rgba(255, 77, 79, 0.45);
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease;
 }
 
 .tts-question {
@@ -166,10 +313,11 @@
 }
 
 .tts-question__text {
-  font-size: clamp(2.4rem, 12vw, 3.6rem);
-  font-weight: 900;
+  font-family: var(--spr-mono);
+  font-size: clamp(2.3rem, 11vw, 3.4rem);
+  font-weight: 800;
   color: #1e293b;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   margin: 0;
   font-variant-numeric: tabular-nums;
 }
@@ -183,8 +331,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2.2rem;
-  font-weight: 900;
+  font-family: var(--spr-mono);
+  font-size: 2.1rem;
+  font-weight: 800;
   color: #4338ca;
   font-variant-numeric: tabular-nums;
   transition: border-color 0.15s ease, background 0.15s ease;
@@ -193,9 +342,9 @@
 .tts-answer--empty { color: #cbd5e1; }
 
 .tts-answer--wrong {
-  border-color: #fca5a5;
+  border-color: var(--spr-ember);
   background: #fef2f2;
-  color: #dc2626;
+  color: var(--spr-ember-dim);
   animation: tts-shake 0.32s ease;
 }
 
@@ -210,13 +359,14 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  font-family: var(--spr-mono);
   font-size: 1.4rem;
-  font-weight: 900;
-  color: #dc2626;
+  font-weight: 800;
+  color: var(--spr-ember-dim);
   pointer-events: none;
 }
 
-/* ── Keypad ──────────────────────────────────────────────────────────────── */
+/* ── Keypad — chunky arcade buttons, not flat SaaS keys ─────────────────── */
 .tts-keypad {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -224,19 +374,20 @@
 }
 
 .tts-key {
+  position: relative;
   height: 64px;
-  border-radius: 18px;
-  border: 1px solid #e2e8f0;
-  background: #fff;
+  border-radius: 16px;
+  border: 1px solid #dde3ef;
+  background: linear-gradient(180deg, #ffffff, #f4f6fb);
+  font-family: var(--spr-mono);
   font-size: 1.6rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #1e293b;
   cursor: pointer;
-  font-family: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 3px 0 #e2e8f0;
+  box-shadow: 0 4px 0 #cbd3e1, 0 6px 12px rgba(15, 23, 42, 0.08);
   transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.12s ease;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
@@ -244,27 +395,30 @@
 }
 
 .tts-key:active {
-  transform: translateY(3px);
-  box-shadow: none;
-  background: #f8fafc;
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #cbd3e1;
+  background: #eef1f7;
 }
 
 .tts-key--action {
-  background: #f1f5f9;
+  background: linear-gradient(180deg, #f8fafc, #eef1f7);
   color: #64748b;
+  box-shadow: 0 4px 0 #cbd3e1;
 }
 
 .tts-key--submit {
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(160deg, var(--spr-ember), #e0393b);
   color: #fff;
   border-color: transparent;
-  box-shadow: 0 3px 0 #4338ca;
+  box-shadow: 0 4px 0 #a92628;
+  font-family: inherit;
   font-size: 1.05rem;
+  letter-spacing: 0.02em;
 }
 
 .tts-key--submit:disabled {
   background: #cbd5e1;
-  box-shadow: 0 3px 0 #94a3b8;
+  box-shadow: 0 4px 0 #94a3b8;
   cursor: not-allowed;
 }
 
@@ -279,33 +433,41 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 14px;
-  border-radius: 18px;
+  padding: 8px 14px 8px 10px;
+  border-radius: 16px;
   background: #f8fafc;
-  border: 1px solid transparent;
+  border-left: 4px solid transparent;
 }
 
-.tts-row--me {
-  background: #eef2ff;
-  border-color: #c7d2fe;
-}
+.tts-row--me { background: #eef2ff; }
 
-.tts-row--1 { background: linear-gradient(135deg, #fef3c7, #fde68a); }
-.tts-row--2 { background: linear-gradient(135deg, #f1f5f9, #e2e8f0); }
-.tts-row--3 { background: linear-gradient(135deg, #ffedd5, #fed7aa); }
+.tts-row--1 { background: #fffaf0; border-left-color: var(--spr-gold); }
+.tts-row--2 { background: #f8fafc; border-left-color: var(--spr-silver); }
+.tts-row--3 { background: #fff8f3; border-left-color: var(--spr-bronze); }
 
-.tts-row__rank {
-  width: 30px;
-  font-size: 1.05rem;
-  font-weight: 900;
+/* Lane badge — a real track lane number, not a decorative circle. */
+.tts-lane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  font-family: var(--spr-mono);
+  font-weight: 800;
+  font-size: 0.95rem;
   color: #64748b;
-  text-align: center;
+  background: #e9edf5;
   flex-shrink: 0;
 }
 
+.tts-lane--1 { background: linear-gradient(160deg, var(--spr-gold), #f5a623); color: #5c3d00; }
+.tts-lane--2 { background: linear-gradient(160deg, #eef1f7, var(--spr-silver)); color: #33404f; }
+.tts-lane--3 { background: linear-gradient(160deg, #f2a878, var(--spr-bronze)); color: #4a2a0f; }
+
 .tts-row__avatar {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   object-fit: cover;
   background: #e2e8f0;
@@ -314,6 +476,7 @@
 
 .tts-row__name {
   flex: 1;
+  min-width: 0;
   font-weight: 700;
   color: #1e293b;
   overflow: hidden;
@@ -322,14 +485,15 @@
 }
 
 .tts-row__time {
-  font-weight: 900;
+  font-family: var(--spr-mono);
+  font-weight: 700;
   font-variant-numeric: tabular-nums;
   color: #4338ca;
   flex-shrink: 0;
 }
 
 .tts-row__xp {
-  font-size: 0.65rem;
+  font-size: 0.62rem;
   font-weight: 800;
   color: #b45309;
   flex-shrink: 0;
@@ -342,10 +506,14 @@
   padding: 24px 12px;
 }
 
-/* ── Result ──────────────────────────────────────────────────────────────── */
-.tts-result {
-  text-align: center;
+/* Names need the room more than the XP figure does on a phone-width row —
+   the payout is already spelled out in "How it works" above. */
+@media (max-width: 420px) {
+  .tts-row__xp { display: none; }
 }
+
+/* ── Result ──────────────────────────────────────────────────────────────── */
+.tts-result { text-align: center; }
 
 .tts-rank-delta {
   display: inline-flex;
@@ -357,57 +525,103 @@
   border-radius: 999px;
 }
 
-.tts-rank-delta--up { background: #dcfce7; color: #15803d; }
-.tts-rank-delta--down { background: #fee2e2; color: #b91c1c; }
+.tts-rank-delta--up { background: rgba(200, 255, 77, 0.16); color: #5c7a12; }
+.tts-rank-delta--down { background: rgba(255, 77, 79, 0.12); color: #b91c1c; }
 .tts-rank-delta--same { background: #f1f5f9; color: #64748b; }
 
-/* Staggered result reveal.
-   These are CSS animations rather than framer-motion `delay` transitions on
-   purpose: a delayed JS-timer animation can be dropped outright if the tab is
-   not visible when it should fire, leaving essential content stuck at
-   opacity 0 forever. The browser always settles a CSS animation to its
-   final keyframe, so the worst case here is the student misses the flourish,
-   never the result. */
+/* ── Split-flap rank board (signature) ──────────────────────────────────── */
+.tts-flap-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  perspective: 400px;
+}
+
+.tts-flap {
+  position: relative;
+  width: 46px;
+  height: 62px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #23263a, #14151f);
+  box-shadow: 0 6px 14px rgba(10, 10, 20, 0.35), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.tts-flap__seam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06);
+  z-index: 2;
+}
+
+.tts-flap__face {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--spr-mono);
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--spr-lime);
+  text-shadow: 0 0 10px var(--spr-lime-dim);
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.tts-flap__face--flip {
+  z-index: 3;
+  animation: tts-flap-turn 0.42s cubic-bezier(0.5, 0, 0.4, 1) forwards;
+}
+
+@keyframes tts-flap-turn {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(-180deg); }
+}
+
+.tts-flap__face--enter {
+  opacity: 0;
+  animation: tts-flap-fade-in 0.3s ease 0.15s forwards;
+}
+
+@keyframes tts-flap-fade-in {
+  to { opacity: 1; }
+}
+
+.tts-flap-hash {
+  color: var(--spr-lime);
+  opacity: 0.55;
+}
+
+/* ── Staggered reveal (module-wide) ─────────────────────────────────────── */
 @keyframes tts-rise {
   from { opacity: 0; transform: translateY(16px); }
   to { opacity: 1; transform: none; }
-}
-
-@keyframes tts-pop {
-  0% { opacity: 0; transform: scale(0.6); }
-  70% { opacity: 1; transform: scale(1.12); }
-  100% { opacity: 1; transform: scale(1); }
-}
-
-@keyframes tts-fade-back {
-  from { opacity: 1; }
-  to { opacity: 0.45; }
 }
 
 .tts-reveal { animation: tts-rise 0.45s cubic-bezier(0.22, 1, 0.36, 1) backwards; }
 .tts-reveal--1 { animation-delay: 0.1s; }
 .tts-reveal--2 { animation-delay: 0.25s; }
 
-.tts-rank-number {
-  font-size: 3rem;
-  font-weight: 900;
-  color: #4338ca;
-  line-height: 1;
-  animation: tts-pop 0.55s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s backwards;
-}
-
-.tts-rank-previous {
-  font-size: 1.6rem;
-  font-weight: 900;
-  color: #cbd5e1;
-  animation: tts-fade-back 0.4s ease 0.55s forwards;
-}
-
-.tts-rank-delta-wrap { animation: tts-rise 0.4s cubic-bezier(0.22, 1, 0.36, 1) 0.7s backwards; }
-
 @media (prefers-reduced-motion: reduce) {
   .tts-reveal,
-  .tts-rank-number,
-  .tts-rank-previous,
-  .tts-rank-delta-wrap { animation: none; }
+  .tts-led--glow,
+  .tts-flap__face--flip,
+  .tts-flap__face--enter,
+  .tts-answer--wrong,
+  .tts-quiz__flash {
+    animation: none !important;
+  }
+  .tts-flap__face--flip { transform: none; }
+  .tts-flap__face--enter { opacity: 1; }
+  .tts-quiz__flash { display: none; }
+  .tts-track__runner,
+  .tts-track__fill {
+    transition: none;
+  }
 }

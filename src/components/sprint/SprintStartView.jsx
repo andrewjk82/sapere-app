@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timer, Crown, Hourglass } from 'lucide-react';
+import { Crown, Hourglass, Flame } from 'lucide-react';
 import SprintLeaderboard from './SprintLeaderboard';
 import { formatSprintTime, formatResetCountdown } from '../../utils/sprintWeek';
 import {
@@ -14,38 +14,37 @@ const SprintStartView = ({
 
   return (
     <div className="tts-shell" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <div className="tts-card tts-hero tts-reveal">
-        <div className="tts-hero__icon"><Timer size={140} /></div>
-        <label className="tts-eyebrow">Times Table Sprint</label>
-        <p className="tts-time-big">
+      <div className="tts-instrument tts-instrument--hero tts-reveal">
+        <p className="tts-watermark" aria-hidden="true">SPRINT</p>
+        <h3 className="tts-hero-title">Times Table Sprint</h3>
+        <p className="tts-led tts-led--glow tts-led--xl">
           {practiceOnly
             ? (leader ? formatSprintTime(leader.bestTimeMs) : '--.---')
             : (Number.isFinite(myBestTimeMs) ? formatSprintTime(myBestTimeMs) : '--.---')}
         </p>
-        <p style={{ margin: '6px 0 0', fontWeight: 700, fontSize: '0.9rem', opacity: 0.9 }}>
+        <p className="tts-hero-sub">
           {practiceOnly
             ? (leader ? `Leading this week: ${leader.name}` : 'No student times yet this week')
             : Number.isFinite(myBestTimeMs)
-              ? `Your best this week${myRank ? ` · rank #${myRank}` : ''}`
+              ? `Your best this week${myRank ? ` · lane #${myRank}` : ''}`
               : 'No time yet this week'}
         </p>
-        <div className="tts-stat-row">
+
+        <div className="tts-console">
           {!practiceOnly && (
-            <div className="tts-stat">
-              <span className="tts-stat__label"><Crown size={11} style={{ verticalAlign: '-1px' }} /> Leader</span>
-              <span className="tts-stat__value">
-                {leader ? formatSprintTime(leader.bestTimeMs) : '—'}
-              </span>
+            <div className="tts-console__cell">
+              <span className="tts-console__label"><Crown size={11} /> Leader</span>
+              <span className="tts-console__value">{leader ? formatSprintTime(leader.bestTimeMs) : '—'}</span>
             </div>
           )}
-          <div className="tts-stat">
-            <span className="tts-stat__label"><Hourglass size={11} style={{ verticalAlign: '-1px' }} /> Resets in</span>
-            <span className="tts-stat__value">{formatResetCountdown(msUntilReset)}</span>
+          <div className="tts-console__cell">
+            <span className="tts-console__label"><Hourglass size={11} /> Resets in</span>
+            <span className="tts-console__value">{formatResetCountdown(msUntilReset)}</span>
           </div>
-          <div className="tts-stat">
-            <span className="tts-stat__label">{practiceOnly ? 'Playing' : 'Your tries'}</span>
-            <span className="tts-stat__value">
-              {practiceOnly ? `${top5.length ? `${top5.length}+` : '0'}` : (attemptsCount || 0)}
+          <div className="tts-console__cell">
+            <span className="tts-console__label"><Flame size={11} /> {practiceOnly ? 'Playing' : 'Your tries'}</span>
+            <span className="tts-console__value">
+              {practiceOnly ? (top5.length ? `${top5.length}+` : '0') : (attemptsCount || 0)}
             </span>
           </div>
         </div>

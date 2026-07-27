@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Timer, Crown } from 'lucide-react';
+import { Crown } from 'lucide-react';
 import { formatSprintTime, formatResetCountdown, getSprintWeekId, getMsUntilWeeklyReset } from '../../utils/sprintWeek';
 import {
   subscribeSprintMeta, readCachedSprintMeta, readCachedMyBest,
 } from '../../services/timesTableSprintService';
+import './sprint.css';
 
 const liftHover = {
   onMouseEnter: (e) => { e.currentTarget.style.transform = 'translateY(-3px)'; },
@@ -12,7 +13,9 @@ const liftHover = {
 
 /**
  * Dashboard entry point for the weekly sprint: the time to beat and how long
- * is left to beat it.
+ * is left to beat it. Styled as the same dark timing instrument as the rest
+ * of the feature — deliberately moodier than the bright routine-task cards
+ * around it, since this one is the competitive event, not a daily habit.
  *
  * Cost is one realtime listener on `timestable_sprint_meta/{weekId}` — a
  * single small doc that only changes when the top 5 changes. The student's
@@ -40,19 +43,14 @@ const SprintDashboardCard = ({ uid, onClick }) => {
       data-press
       {...liftHover}
       onClick={onClick}
+      className="tts-instrument tts-instrument--card"
       style={{
         flex: '0 0 auto',
         height: 156,
         minHeight: 156,
         maxHeight: 156,
         boxSizing: 'border-box',
-        background: 'linear-gradient(135deg, #f59e0b, #ef4444)',
-        borderRadius: '28px',
-        padding: '16px 24px',
-        color: 'white',
-        boxShadow: '0 15px 35px rgba(239,68,68,0.25)',
-        position: 'relative',
-        overflow: 'hidden',
+        padding: '14px 20px',
         cursor: 'pointer',
         display: 'flex',
         flexDirection: 'column',
@@ -60,28 +58,26 @@ const SprintDashboardCard = ({ uid, onClick }) => {
         transition: 'transform 0.2s, box-shadow 0.2s',
       }}
     >
-      <div style={{ position: 'absolute', top: '-15px', right: '-15px', opacity: 0.12 }}>
-        <Timer size={120} />
-      </div>
+      <p className="tts-watermark" style={{ fontSize: '2.3rem', right: '-4px' }} aria-hidden="true">SPRINT</p>
 
-      <label style={{ display: 'block', fontSize: '0.65rem', fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.12em', color: 'rgba(255,255,255,0.7)', marginBottom: '4px' }}>
+      <label className="tts-eyebrow" style={{ position: 'relative', color: 'rgba(245,243,255,0.5)', marginBottom: '2px' }}>
         Times Table Sprint
       </label>
 
-      <div style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
-        <Crown size={18} style={{ flexShrink: 0, alignSelf: 'center' }} />
-        <h4 style={{ margin: 0, fontSize: '1.7rem', fontWeight: 900, color: 'white', fontVariantNumeric: 'tabular-nums', lineHeight: 1.1 }}>
+      <div style={{ position: 'relative', display: 'flex', alignItems: 'baseline', gap: '8px' }}>
+        <Crown size={16} style={{ flexShrink: 0, alignSelf: 'center', color: 'var(--spr-lime)' }} />
+        <span className="tts-led tts-led--glow" style={{ fontSize: '1.65rem' }}>
           {leader ? formatSprintTime(leader.bestTimeMs) : '--.---'}
-        </h4>
-        <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(255,255,255,0.85)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+        </span>
+        <span style={{ fontSize: '0.75rem', fontWeight: 700, color: 'rgba(245,243,255,0.75)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
           {leader ? (iAmLeader ? "that's you!" : leader.name) : 'no times yet'}
         </span>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px', fontSize: '0.8rem', fontWeight: 700, color: 'rgba(255,255,255,0.9)', flexWrap: 'wrap' }}>
+      <div style={{ position: 'relative', display: 'flex', alignItems: 'center', gap: '10px', marginTop: '8px', fontSize: '0.78rem', fontWeight: 700, color: 'rgba(245,243,255,0.8)', flexWrap: 'wrap' }}>
         <span>Resets in {formatResetCountdown(msLeft)}</span>
         {myBest && (
-          <span style={{ background: 'rgba(255,255,255,0.2)', borderRadius: '999px', padding: '2px 10px', fontVariantNumeric: 'tabular-nums' }}>
+          <span className="tts-led" style={{ background: 'rgba(255,255,255,0.1)', borderRadius: '999px', padding: '2px 10px', fontSize: '0.78rem', color: '#f5f3ff' }}>
             You {formatSprintTime(Number(myBest.bestTimeMs))}
           </span>
         )}

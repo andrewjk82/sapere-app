@@ -16,7 +16,7 @@ const SprintQuizView = ({ questions, onFinish }) => {
   const [index, setIndex] = useState(0);
   const [entry, setEntry] = useState('');
   const [display, setDisplay] = useState(0);
-  const [wrongFlash, setWrongFlash] = useState(0); // bumped per mistake, keys the animation
+  const [wrongFlash, setWrongFlash] = useState(0); // bumped per mistake, keys both the badge and the strip pulse
 
   // The handlers below are the single source of truth for entry/index; the
   // matching state exists only to re-render. Refs are written in handlers and
@@ -99,14 +99,16 @@ const SprintQuizView = ({ questions, onFinish }) => {
 
   return (
     <div className="tts-quiz">
-      <div className="tts-quiz__bar">
-        <span style={{ fontWeight: 800, color: '#64748b', fontVariantNumeric: 'tabular-nums' }}>
-          {index + 1}/{questions.length}
-        </span>
-        <div className="tts-progress">
-          <div className="tts-progress__fill" style={{ width: `${progressPct}%` }} />
+      <div className="tts-instrument tts-instrument--strip tts-quiz__strip">
+        {wrongFlash > 0 && <span key={wrongFlash} className="tts-quiz__flash" aria-hidden="true" />}
+        <span className="tts-quiz__count">{index + 1}/{questions.length}</span>
+        <div className="tts-track tts-track--on-dark" style={{ flex: 1 }}>
+          <div className="tts-track__fill" style={{ width: `${progressPct}%` }} />
+          <div className="tts-track__runner" style={{ left: `${progressPct}%` }} />
         </div>
-        <span className="tts-clock">{formatSprintTime(display)}</span>
+        <span className="tts-led tts-led--glow tts-led--strip tts-quiz__clock">
+          {formatSprintTime(display)}
+        </span>
       </div>
 
       <div className="tts-question" style={{ position: 'relative' }}>

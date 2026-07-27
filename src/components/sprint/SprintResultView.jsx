@@ -1,11 +1,12 @@
 import React from 'react';
-import { ArrowUp, ArrowDown, Minus, Zap } from 'lucide-react';
+import { ArrowUp, ArrowDown, Minus } from 'lucide-react';
 import SprintLeaderboard from './SprintLeaderboard';
+import SplitFlapRank from './SplitFlapRank';
 import { formatSprintTime } from '../../utils/sprintWeek';
 
 /**
  * Post-run summary. The headline is the rank movement — that is the part
- * students come back for — so it animates in from the previous rank.
+ * students come back for — so it gets the split-flap board treatment.
  */
 const SprintResultView = ({
   timeMs, wrongCount, improved, bestTimeMs, previousBestMs,
@@ -17,36 +18,36 @@ const SprintResultView = ({
 
   return (
     <div className="tts-shell tts-result" style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
-      <div className="tts-card tts-hero tts-reveal">
-        <div className="tts-hero__icon"><Zap size={130} /></div>
-        <label className="tts-eyebrow">
+      <div className="tts-instrument tts-instrument--hero tts-reveal">
+        <p className="tts-watermark" aria-hidden="true">FINISH</p>
+        <h3 className="tts-hero-title">
           {practiceOnly ? 'Practice run' : improved ? 'New personal best!' : 'Your time'}
-        </label>
-        <p className="tts-time-big">{formatSprintTime(timeMs)}</p>
-        <div className="tts-stat-row">
-          <div className="tts-stat">
-            <span className="tts-stat__label">Mistakes</span>
-            <span className="tts-stat__value">
+        </h3>
+        <p className="tts-led tts-led--glow tts-led--xl">{formatSprintTime(timeMs)}</p>
+
+        <div className="tts-console">
+          <div className="tts-console__cell">
+            <span className="tts-console__label">Mistakes</span>
+            <span className="tts-console__value">
               {wrongCount}
-              {wrongCount > 0 && (
-                <span style={{ fontSize: '0.7rem', opacity: 0.8 }}> (+{wrongCount * 3}s)</span>
-              )}
+              {wrongCount > 0 && <span style={{ fontSize: '0.65rem', opacity: 0.8 }}> (+{wrongCount * 3}s)</span>}
             </span>
           </div>
           {!practiceOnly && (
-            <div className="tts-stat">
-              <span className="tts-stat__label">Week's best</span>
-              <span className="tts-stat__value">{formatSprintTime(bestTimeMs)}</span>
+            <div className="tts-console__cell">
+              <span className="tts-console__label">Week's best</span>
+              <span className="tts-console__value">{formatSprintTime(bestTimeMs)}</span>
             </div>
           )}
         </div>
+
         {practiceOnly && (
-          <p style={{ margin: '12px 0 0', fontWeight: 700, fontSize: '0.85rem', opacity: 0.9 }}>
+          <p className="tts-hero-sub" style={{ padding: '12px 0 18px' }}>
             Teacher practice — this time is not saved and does not enter the leaderboard.
           </p>
         )}
         {!practiceOnly && !improved && Number.isFinite(previousBestMs) && (
-          <p style={{ margin: '12px 0 0', fontWeight: 700, fontSize: '0.85rem', opacity: 0.9 }}>
+          <p className="tts-hero-sub" style={{ padding: '12px 0 18px' }}>
             {formatSprintTime(timeMs - previousBestMs)} off your best — try again!
           </p>
         )}
@@ -55,13 +56,8 @@ const SprintResultView = ({
       {Number.isFinite(rankAfter) && (
         <div className="tts-card tts-reveal tts-reveal--1">
           <label className="tts-eyebrow">Your rank</label>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
-            {hasBoth && delta !== 0 && (
-              <span className="tts-rank-previous">{rankBefore}</span>
-            )}
-            <span className="tts-rank-number">#{rankAfter}</span>
-          </div>
-          <div className="tts-rank-delta-wrap" style={{ marginTop: 12 }}>
+          <SplitFlapRank from={hasBoth ? rankBefore : null} to={rankAfter} />
+          <div style={{ marginTop: 14 }}>
             <span className={`tts-rank-delta tts-rank-delta--${direction}`}>
               {direction === 'up' && <><ArrowUp size={18} /> Up {delta} place{delta === 1 ? '' : 's'}</>}
               {direction === 'down' && <><ArrowDown size={18} /> Down {-delta} place{-delta === 1 ? '' : 's'}</>}
