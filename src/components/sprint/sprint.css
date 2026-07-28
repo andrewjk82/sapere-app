@@ -58,15 +58,35 @@
   height: 88px !important;
 }
 .tts-coach-bubble {
+  --tts-glow: rgba(255, 140, 50, 0.35);
+  --tts-glow-soft: rgba(255, 180, 80, 0.2);
+  --tts-ring: rgba(255, 150, 60, 0.28);
   flex: 1;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 16px 16px 16px 6px;
-  padding: 12px 16px;
-  font-size: 0.9rem;
+  position: relative;
+  isolation: isolate;
+  background: #fff;
+  border-radius: 18px 18px 18px 6px;
+  padding: 14px 18px;
+  font-size: 0.92rem;
   line-height: 1.6;
   font-weight: 600;
   color: #334155;
+  box-shadow:
+    0 0 0 1px var(--tts-ring),
+    0 10px 26px rgba(15, 23, 42, 0.08),
+    0 0 22px var(--tts-glow-soft);
+}
+.tts-coach-bubble::after {
+  content: '';
+  position: absolute;
+  left: 26px;
+  bottom: -7px;
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  transform: rotate(45deg);
+  box-shadow: -2px 2px 0 0 var(--tts-ring);
+  border-radius: 2px;
 }
 .tts-coach-name {
   display: block;
@@ -74,7 +94,7 @@
   font-weight: 800;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #818cf8;
+  color: #ea9c1f;
   margin-bottom: 4px;
 }
 

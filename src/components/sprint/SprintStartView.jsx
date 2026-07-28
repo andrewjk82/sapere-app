@@ -67,7 +67,7 @@ const SprintStartView = ({
 
       <div className="tts-card tts-coach">
         <div className="tts-coach-avatar">
-          <FlameBuddyAvatar mood="cheer" />
+          <FlameBuddyAvatar mood="idle" />
         </div>
         <div className="tts-coach-bubble">
           <span className="tts-coach-name">Flame Buddy</span>
