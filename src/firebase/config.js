@@ -1,6 +1,11 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
-import { getFirestore, enableIndexedDbPersistence } from "firebase/firestore";
+import {
+  getFirestore,
+  initializeFirestore,
+  persistentLocalCache,
+  persistentMultipleTabManager,
+} from "firebase/firestore";
 import { getMessaging, getToken, isSupported, onMessage } from "firebase/messaging";
 
 const firebaseConfig = {
@@ -16,18 +21,22 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 export const googleProvider = new GoogleAuthProvider();
-export const db = getFirestore(app);
 
-
-if (typeof window !== 'undefined') {
-  enableIndexedDbPersistence(db).catch((err) => {
-    if (err.code === 'failed-precondition') {
-      console.warn('Firestore persistence failed-precondition (multiple tabs open)');
-    } else if (err.code === 'unimplemented') {
-      console.warn('Firestore persistence unimplemented (browser not supported)');
-    }
+// Multi-tab-aware persistent cache — replaces the old single-tab
+// enableIndexedDbPersistence(), which left every extra tab/PWA instance
+// stuck fighting for the IndexedDB lock (failed-precondition) instead of
+// sharing the cache. That lock contention was hanging plain getDocs()
+// calls (e.g. the leaderboard rank fetch) on the second open.
+let firestoreDb;
+try {
+  firestoreDb = initializeFirestore(app, {
+    localCache: persistentLocalCache({ tabManager: persistentMultipleTabManager() }),
   });
+} catch (err) {
+  console.warn('Firestore persistent cache unavailable, falling back to memory cache:', err?.code || err?.message);
+  firestoreDb = getFirestore(app);
 }
+export const db = firestoreDb;
 
 const VAPID_KEY = 'BKWJEPa-4K08Rcrta2QX7iYT1PBpDUlgdsUXRLpBcA6ClzltUlu-yzWm427sezrUXfnI1Wz1ux6zF_ihgZ3Zuco';
 

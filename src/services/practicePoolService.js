@@ -28,7 +28,6 @@
 import {
   doc,
   getDoc,
-  setDoc,
   runTransaction,
   serverTimestamp,
 } from '../firebase/firestoreWrapper';
@@ -87,7 +86,8 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     return existing;
   }
 
-  // 재빌드: 할당 챕터의 question_index 읽기
+  // 재빌드: 할당 챕터의 question_index 읽기 (트랜잭션 밖 — 이 문서들은 이 학생의
+  // 퀴즈 흐름과 동시에 쓰이지 않으므로 일반 read로 충분)
   let targets;
   try {
     targets = buildDailyTargets(studentProfile);
@@ -95,8 +95,6 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     throw new Error('No valid curriculum targets found for this student.');
   }
   const chapterIds = Array.from(targets.targetChapterIds);
-  const prevPools = existing?.chapter_pools || {};
-  const prevAccuracy = existing?.chapter_accuracy || {};
 
   // Re-read indexes for assigned chapters; preserve done[] for IDs still active.
   const indexResults = await Promise.all(
@@ -106,27 +104,44 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     }),
   );
 
-  const chapter_pools = {};
-  indexResults.forEach(({ chapterId, ids }) => {
-    const prev = prevPools[chapterId] || {};
-    const prevDoneSet = new Set(prev.done || []);
-    // 여전히 active인 ID만 done으로 유지
-    const done = ids.filter((id) => prevDoneSet.has(id));
-    chapter_pools[chapterId] = { ids, done };
+  // 재빌드 자체(read-modify-write)는 반드시 트랜잭션으로 — 위의 getDoc은 stale할
+  // 수 있고, 그 스냅샷 기준으로 setDoc(merge:false)를 쓰면 방금 selectDailyQuestions
+  // 리셋이나 updatePoolAfterQuiz가 커밋한 done[]을 통째로 덮어써 지워버릴 수 있다.
+  // 이 문서를 건드리는 다른 두 경로(selectDailyQuestions, updatePoolAfterQuiz)는
+  // 이미 트랜잭션인데 이 리빌드 경로만 평범한 getDoc+setDoc이었던 게 원인 —
+  // membershipVersion이 자주 bump되는 환경(시드 편집이 잦음)에서 완료 직후 재빌드가
+  // 겹치면 방금 done 처리된 문제가 다시 undone으로 보여 며칠 뒤 재출제됐다
+  // (2026-07-25, y9-4/y9-7 등 소진되지 않은 챕터에서 실제 확인).
+  const ref = poolRef(uid);
+  const newPool = await runTransaction(db, async (transaction) => {
+    const liveSnap = await transaction.get(ref);
+    const live = liveSnap.exists() ? liveSnap.data() : null;
+
+    // 트랜잭션 시작 전에 이미 같은 시그니처로 재빌드됐다면 (동시 호출) 그대로 사용.
+    if (live && live.curriculumSignature === newSignature) return live;
+
+    const prevPools = live?.chapter_pools || {};
+    const prevAccuracy = live?.chapter_accuracy || {};
+    const chapter_pools = {};
+    indexResults.forEach(({ chapterId, ids }) => {
+      const prev = prevPools[chapterId] || {};
+      const prevDoneSet = new Set(prev.done || []);
+      // 여전히 active인 ID만 done으로 유지
+      const done = ids.filter((id) => prevDoneSet.has(id));
+      chapter_pools[chapterId] = { ids, done };
+    });
+
+    const next = {
+      curriculumSignature: newSignature,
+      cycle: live?.cycle || 0,
+      chapter_pools,
+      chapter_accuracy: prevAccuracy,
+      updatedAt: serverTimestamp(),
+    };
+    transaction.set(ref, next);
+    return next;
   });
 
-  const newPool = {
-    curriculumSignature: newSignature,
-    cycle: existing?.cycle || 0,
-    chapter_pools,
-    chapter_accuracy: prevAccuracy,
-    updatedAt: serverTimestamp(),
-  };
-
-  // If nothing structural changed (same chapters + same id sets) only the
-  // signature stamp needs updating — still one write, but avoids churning
-  // clients that compare pool contents. Always write signature for mv bumps.
-  await setDoc(poolRef(uid), newPool, { merge: false });
   setCached(uid, newSignature, newPool);
   return newPool;
 };
