@@ -1,6 +1,8 @@
 import React from 'react';
 import { Crown, Hourglass, Flame } from 'lucide-react';
 import SprintLeaderboard from './SprintLeaderboard';
+import { FlameBuddyAvatar } from '../FlameBuddy';
+import '../FlameBuddy.css';
 import { formatSprintTime, formatResetCountdown } from '../../utils/sprintWeek';
 import {
   SPRINT_QUESTION_COUNT, WRONG_ANSWER_PENALTY_MS, getFactorRangeForYear,
@@ -63,14 +65,17 @@ const SprintStartView = ({
         Start sprint
       </button>
 
-      <div className="tts-card">
-        <label className="tts-eyebrow">How it works</label>
-        <ul style={{ margin: 0, paddingLeft: 20, color: '#475569', fontWeight: 600, lineHeight: 1.9, fontSize: '0.9rem' }}>
-          <li>{SPRINT_QUESTION_COUNT} different questions, {min}× to {max}× tables.</li>
-          <li>A wrong answer adds {WRONG_ANSWER_PENALTY_MS / 1000} seconds and moves on.</li>
-          <li>Play as many times as you like — the fastest time counts.</li>
-          <li>XP is paid out when the week resets: 100 / 50 / 20 for the top three, 5 for everyone who plays.</li>
-        </ul>
+      <div className="tts-card tts-coach">
+        <div className="tts-coach-avatar">
+          <FlameBuddyAvatar mood="cheer" />
+        </div>
+        <div className="tts-coach-bubble">
+          <span className="tts-coach-name">Flame Buddy</span>
+          Here's the deal — {SPRINT_QUESTION_COUNT} questions, {min}× to {max}× tables.
+          Get one wrong and it just adds {WRONG_ANSWER_PENALTY_MS / 1000} seconds and moves on, no big drama.
+          Run it as many times as you like — only your fastest time counts.
+          When the week resets, the top three pocket 100 / 50 / 20 XP, and everyone who had a go still gets 5.
+        </div>
       </div>
 
       <div className="tts-card">
