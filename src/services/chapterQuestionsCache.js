@@ -7,8 +7,20 @@
  * Traffic model (P1):
  *   - Topic practice: 1 topic-index read + N question docs (topic size only)
  *   - Full chapter:   1 chapter-index read + N question docs (when needed)
- *   - Cache hit:      0 reads (after 1 session version check)
+ *   - Cache hit:      0 reads (after 1 session version check per chapter)
  *   - Prefetch:       at most 1 chapter, skipped if already cached
+ *
+ * Cache freshness is keyed per-chapter off that chapter's OWN
+ * question_index/{chapterId}.updatedAt, not the global sync_meta/questions
+ * version. A single global version made ANY content edit anywhere in the
+ * bank invalidate EVERY chapter's cache for EVERY student — harmless most of
+ * the time, but a real incident on 2026-07-28 when edits landed during the
+ * after-school login peak: every freshly-opened tab re-downloaded every
+ * chapter it had cached, all at once. Scoping the check to the one chapter
+ * that actually changed keeps a normal edit from ever affecting students
+ * looking at unrelated chapters. Exam papers (no question_index by
+ * chapterId) and chapters that predate the index still fall back to the old
+ * global version — same behavior as before for that minority of cases.
  */
 
 import {
@@ -78,22 +90,63 @@ export const getConfirmedMembershipVersion = async (forceRefresh = false) => {
   return v;
 };
 
+/** Per-chapter version, memoized in sessionStorage so a chapter is only ever
+ * checked against Firestore once per tab session (same cost shape as the old
+ * single global check, just scoped to the chapter actually being opened). */
+const chapterVersionSessionKey = (chapterId) => `sapere:qcache:cv:${chapterId}`;
+
+const getSessionChapterVersion = (chapterId) => {
+  try {
+    const raw = sessionStorage.getItem(chapterVersionSessionKey(chapterId));
+    return raw == null ? null : Number(raw);
+  } catch {
+    return null;
+  }
+};
+
+const setSessionChapterVersion = (chapterId, v) => {
+  try { sessionStorage.setItem(chapterVersionSessionKey(chapterId), String(v)); } catch { /* private mode */ }
+};
+
+/**
+ * Resolve the freshness key for one chapter, plus its index (ids) when one
+ * exists so callers don't re-read the same doc a second time on a miss.
+ * Exam papers and not-yet-indexed chapters fall back to the old global gate.
+ */
+const resolveChapterVersion = async (chapterId) => {
+  const isExam = chapterId?.startsWith('exam:');
+  if (isExam) {
+    return { version: await getConfirmedMembershipVersion(), index: null };
+  }
+
+  const sessionVersion = getSessionChapterVersion(chapterId);
+  if (sessionVersion != null) return { version: sessionVersion, index: null };
+
+  const index = await readChapterIndex(chapterId);
+  trackRead(1, `question_index:${chapterId}`);
+  const version = index?.ids?.length
+    ? (index.updatedAtMs || await getConfirmedMembershipVersion())
+    : await getConfirmedMembershipVersion(); // no index yet — legacy fallback
+  setSessionChapterVersion(chapterId, version);
+  return { version, index };
+};
+
 const readCacheEntry = (key, confirmedVersion) => {
   try {
     const raw = localStorage.getItem(key);
     if (!raw) return null;
     const entry = JSON.parse(raw);
     if (!Array.isArray(entry?.questions)) return null;
-    if (confirmedVersion > 0 && entry.membershipVersion !== confirmedVersion) return null;
+    if (confirmedVersion > 0 && entry.chapterVersion !== confirmedVersion) return null;
     return entry.questions;
   } catch {
     return null;
   }
 };
 
-const writeCacheEntry = (key, questions, membershipVersion) => {
+const writeCacheEntry = (key, questions, chapterVersion) => {
   try {
-    const entry = { questions: questions.map(stripQuestion), membershipVersion, savedAt: Date.now() };
+    const entry = { questions: questions.map(stripQuestion), chapterVersion, savedAt: Date.now() };
     localStorage.setItem(key, JSON.stringify(entry));
   } catch {
     /* localStorage full */
@@ -118,14 +171,18 @@ const fetchQuestionsByIds = async (ids, trackTag) => {
   return docs.filter((q) => q.isActive !== false);
 };
 
-/** Full chapter via question_index (preferred) or legacy chapterId query. */
-const fetchChapterFromFirestore = async (chapterId) => {
+/**
+ * Full chapter via question_index (preferred) or legacy chapterId query.
+ * `knownIndex` lets callers that already resolved the chapter's version (and
+ * so already hold its index doc) skip re-reading it here.
+ */
+const fetchChapterFromFirestore = async (chapterId, knownIndex = undefined) => {
   const isExam = chapterId?.startsWith('exam:');
   if (!isExam) {
     try {
-      const index = await readChapterIndex(chapterId);
+      const index = knownIndex !== undefined ? knownIndex : await readChapterIndex(chapterId);
       if (index?.ids?.length) {
-        trackRead(1, `question_index:${chapterId}`);
+        if (knownIndex === undefined) trackRead(1, `question_index:${chapterId}`);
         return fetchQuestionsByIds(index.ids, `questions_by_id:${chapterId}`);
       }
     } catch {
@@ -178,13 +235,13 @@ const fetchTopicFromFirestore = async (chapterId, topicId) => {
  * Full chapter questions (cached). Prefer getTopicQuestions for practice.
  */
 export const getChapterQuestions = async (uid, chapterId) => {
-  const remoteVersion = await getConfirmedMembershipVersion();
+  const { version, index } = await resolveChapterVersion(chapterId);
   const key = cacheKey(uid || 'anon', chapterId);
-  const cached = readCacheEntry(key, remoteVersion);
+  const cached = readCacheEntry(key, version);
   if (cached) return cached;
 
-  const questions = await fetchChapterFromFirestore(chapterId);
-  writeCacheEntry(key, questions, remoteVersion);
+  const questions = await fetchChapterFromFirestore(chapterId, index);
+  writeCacheEntry(key, questions, version);
   return questions;
 };
 
@@ -194,21 +251,21 @@ export const getChapterQuestions = async (uid, chapterId) => {
 export const getTopicQuestions = async (uid, chapterId, topicId) => {
   if (!topicId) return getChapterQuestions(uid, chapterId);
 
-  const remoteVersion = await getConfirmedMembershipVersion();
+  const { version } = await resolveChapterVersion(chapterId);
   const key = topicCacheKey(uid || 'anon', chapterId, topicId);
-  const cached = readCacheEntry(key, remoteVersion);
+  const cached = readCacheEntry(key, version);
   if (cached) return cached;
 
   // Reuse full-chapter cache if present (filter free).
-  const chapterCached = readCacheEntry(cacheKey(uid || 'anon', chapterId), remoteVersion);
+  const chapterCached = readCacheEntry(cacheKey(uid || 'anon', chapterId), version);
   if (chapterCached) {
     const filtered = chapterCached.filter((q) => String(q.topicId || '') === String(topicId));
-    writeCacheEntry(key, filtered, remoteVersion);
+    writeCacheEntry(key, filtered, version);
     return filtered;
   }
 
   const questions = await fetchTopicFromFirestore(chapterId, topicId);
-  writeCacheEntry(key, questions, remoteVersion);
+  writeCacheEntry(key, questions, version);
   return questions;
 };
 
@@ -218,14 +275,16 @@ export const getTopicQuestions = async (uid, chapterId, topicId) => {
  */
 export const prefetchChapterQuestions = async (uid, chapterIds) => {
   if (!uid || !chapterIds?.length) return;
-  const remoteVersion = await getConfirmedMembershipVersion();
-  const first = chapterIds.find((chapterId) => !readCacheEntry(cacheKey(uid, chapterId), remoteVersion));
-  if (!first) return;
-  try {
-    const questions = await fetchChapterFromFirestore(first);
-    writeCacheEntry(cacheKey(uid, first), questions, remoteVersion);
-  } catch {
-    /* non-fatal */
+  for (const chapterId of chapterIds) {
+    const { version, index } = await resolveChapterVersion(chapterId);
+    if (readCacheEntry(cacheKey(uid, chapterId), version)) continue;
+    try {
+      const questions = await fetchChapterFromFirestore(chapterId, index);
+      writeCacheEntry(cacheKey(uid, chapterId), questions, version);
+    } catch {
+      /* non-fatal */
+    }
+    return; // only the first uncached chapter — same "no fan-out" contract as before
   }
 };
 
@@ -242,6 +301,14 @@ export const invalidateAllChapterCaches = (uid) => {
       if (key && prefixes.some((p) => key.startsWith(p))) toRemove.push(key);
     }
     toRemove.forEach((k) => localStorage.removeItem(k));
+  } catch { /* ignore */ }
+  try {
+    const toRemove = [];
+    for (let i = 0; i < sessionStorage.length; i++) {
+      const key = sessionStorage.key(i);
+      if (key?.startsWith('sapere:qcache:cv:')) toRemove.push(key);
+    }
+    toRemove.forEach((k) => sessionStorage.removeItem(k));
   } catch { /* ignore */ }
   try { sessionStorage.removeItem(SESSION_VERSION_KEY); } catch { /* ignore */ }
 };

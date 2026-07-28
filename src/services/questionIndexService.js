@@ -44,14 +44,22 @@ const indexRef = (chapterId) => doc(db, INDEX_COLLECTION, chapterId);
 const metaRef = () => doc(db, INDEX_COLLECTION, META_DOC_ID);
 const questionsVersionRef = () => doc(db, 'sync_meta', 'questions');
 
-/** Read a chapter's index. Returns { ids: string[] } or null when absent. */
+/**
+ * Read a chapter's index. Returns { ids: string[], updatedAtMs: number } or
+ * null when absent. `updatedAtMs` is this ONE chapter's own last-write time —
+ * chapterQuestionsCache keys cache freshness off it instead of the global
+ * sync_meta/questions.version, so editing one chapter doesn't invalidate
+ * every other chapter's cache for every student at once.
+ */
 export const readChapterIndex = async (chapterId) => {
   if (!chapterId) return null;
   try {
     const snap = await getDoc(indexRef(chapterId));
     if (!snap.exists()) return null;
-    const ids = snap.data().ids;
-    return Array.isArray(ids) ? { ids: ids.map(String) } : null;
+    const data = snap.data();
+    const ids = data.ids;
+    const updatedAtMs = data.updatedAt?.toMillis?.() || 0;
+    return Array.isArray(ids) ? { ids: ids.map(String), updatedAtMs } : null;
   } catch {
     return null; // permission/network — caller falls back to legacy query
   }
