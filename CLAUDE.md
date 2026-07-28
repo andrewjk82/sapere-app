@@ -83,12 +83,22 @@ locally-cached copy of *that one chapter* is stale (see 2026-07-28 incident
 below). Skipping this after a content-only script leaves students looking at
 their old cached copy until something else happens to touch that chapter.
 
-**Never write an unfiltered `db.collection('questions').get()` in a one-off
-script.** No `where()` means a full 23k+-doc scan billed as 23k+ reads. Scope
-to `where('chapterId', '==', ...)` or `where('topicId', '==', ...)`, or point-read
-specific ids. 2026-07-28 incident: three one-off scripts (`fix_global_negative_distractors.cjs`,
-`cleanup_bad_distractors.cjs`, `fix_dummy_fractions.cjs`) full-scanned the
-collection during a single morning session — ~70K+ reads from 3 script runs alone.
+**Never write an unfiltered `db.collection('questions').get()`.** No `where()`
+means a full 23k+-doc scan billed as 23k+ reads. Scope to
+`where('chapterId', '==', ...)` / `where('topicId', '==', ...)`, or point-read
+specific ids with `.doc(id)`. 2026-07-28 incident: three one-off scripts
+(`fix_global_negative_distractors.cjs`, `cleanup_bad_distractors.cjs`,
+`fix_dummy_fractions.cjs`) full-scanned the collection in a single morning —
+~70K+ reads from three lines. Every other script that session was scoped
+correctly, so this is a one-character mistake, not a knowledge gap.
+
+Enforced by a repo guard — `npm run test:question-scan-guard` — which fails the
+build on any NEW unfiltered read (admin-SDK chains and client
+`getDocs(collection(db, 'questions'))` alike). Scoping calls (`.where`, `.doc`,
+`.limit`, `.count`, `.select`) satisfy it. 13 pre-existing one-off scripts are
+quarantined in that guard's `LEGACY_FILES`; **never re-run one of those
+unscoped, and never add to that list to silence new code** — allowlist a
+genuine full rebuild via `ALLOWED_FILES` with a comment instead.
 
 Other standing rules for question-writing scripts:
 
