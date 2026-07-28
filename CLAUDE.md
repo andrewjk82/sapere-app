@@ -67,12 +67,52 @@ missing ones (missing → readers fall back to a full query; sparse → question
 vanish). 2026-07-06 incident: `migrateY5Ch5Questions.js` re-uploaded 4 topics
 without rebuilding the index and the Question Bank showed 1 of 23 questions.
 
+**Content-only edit (no add/delete/rename — just fixing text/options/SVG/steps
+on existing docs)?** `rebuildQuestionIndexes.js` still works but rescans the
+whole `questions` collection (23k+ docs = 23k+ reads) just to touch a handful
+of chapters. Use the cheap alternative instead:
+
+```js
+import { touchChapterIndex } from './_lib/touchChapterIndex.js';
+await touchChapterIndex(db, 'y10-8'); // once per chapter your script edited
+```
+
+This only bumps that chapter's `question_index/{chapterId}.updatedAt` — the
+exact field `chapterQuestionsCache.js` checks to decide whether a student's
+locally-cached copy of *that one chapter* is stale (see 2026-07-28 incident
+below). Skipping this after a content-only script leaves students looking at
+their old cached copy until something else happens to touch that chapter.
+
+**Never write an unfiltered `db.collection('questions').get()` in a one-off
+script.** No `where()` means a full 23k+-doc scan billed as 23k+ reads. Scope
+to `where('chapterId', '==', ...)` or `where('topicId', '==', ...)`, or point-read
+specific ids. 2026-07-28 incident: three one-off scripts (`fix_global_negative_distractors.cjs`,
+`cleanup_bad_distractors.cjs`, `fix_dummy_fractions.cjs`) full-scanned the
+collection during a single morning session — ~70K+ reads from 3 script runs alone.
+
 Other standing rules for question-writing scripts:
 
 - Never overwrite or delete docs with `origin: 'teacher'` (teacher edits win).
 - New questions must be counted via `questionCountsService` semantics —
   `rebuildQuestionIndexes.js` handles this for you.
 - Deploy is Vercel (`https://sapere-app.vercel.app/`) — never `firebase deploy`.
+
+## Question cache invalidation is per-chapter, not global (2026-07-28 incident)
+
+`chapterQuestionsCache.js` used to gate every student's cached chapter against
+one global `sync_meta/questions.version` — any content edit anywhere in the
+bank invalidated every chapter's cache for every student. `LearningPath.jsx`
+additionally force-refreshed that version on every mount and eagerly wiped a
+student's entire local cache the moment it moved. An edit landing at the
+after-school login peak made every freshly-opened session redownload every
+cached chapter at once — the traffic spike that started this investigation.
+
+Fixed: cache freshness is now keyed off `question_index/{chapterId}.updatedAt`
+(that one chapter's own last-write time), and the eager whole-cache wipe in
+`LearningPath.jsx` is gone. **Do not reintroduce a single global
+version/timestamp as the freshness key for chapter/topic question caches** —
+scope any future cache-invalidation signal to the chapter (or narrower) it
+actually belongs to.
 
 ## Admin scripts: never full-scan `daily_stats` / `calc_stats`
 
