@@ -99,11 +99,14 @@ export const getCurriculumSignature = (studentProfile = {}, membershipVersion) =
   const config = studentProfile.dailyPracticeConfig || {};
   const cfgYears = (Array.isArray(config.years) ? config.years : []).map(normalizeYearLabel).filter(Boolean).sort();
   const cfgChapters = (Array.isArray(config.chapters) ? config.chapters : []).slice().sort();
-  // Include membershipVersion (bumps only on add/delete/seed) so that a changed
-  // set of question IDs triggers a practice_pool rebuild — but content-only
-  // edits (which don't change membershipVersion) do NOT.
-  const mv = membershipVersion != null ? Number(membershipVersion) : undefined;
-  return JSON.stringify({ years, courses, cfgYears, cfgChapters, ...(mv ? { mv } : {}) });
+  // membershipVersion is accepted for backwards compatibility but deliberately
+  // NOT part of the signature any more. It is a single GLOBAL counter, so
+  // folding it in here meant one chapter's edit changed every student's
+  // signature and rebuilt every practice_pool. practicePoolService now compares
+  // the student's own chapters against their question_index docs instead, which
+  // is both precise and strictly fresher (2026-07-29 incident).
+  void membershipVersion;
+  return JSON.stringify({ years, courses, cfgYears, cfgChapters });
 };
 
 const getOptions = (question) => {
@@ -910,9 +913,35 @@ export const fetchOrCreateDailyAssignment = async ({
     const assignmentMv = assignment.membershipVersion != null
       ? Number(assignment.membershipVersion) || 0
       : (Number(assignment.questionsVersion) || 0);
-    const membershipStale = !isLocked
+    let membershipStale = !isLocked
       && latestMembershipVersion > 0
       && latestMembershipVersion > assignmentMv;
+
+    // The global counter only says "something in the bank changed" — not that
+    // it was one of THIS student's chapters. Confirm against their own
+    // question_index docs before regenerating: regeneration re-picks questions,
+    // so a bump caused by an unrelated chapter used to silently swap out the
+    // questions of every student's open assignment (and cost a pool rebuild +
+    // question refetch each). Verified: false alarms are the common case —
+    // one chapter edit bumps the counter for all 34 students.
+    if (membershipStale && hasQuestions && countMatches && signatureMatches) {
+      try {
+        const { poolMembershipChanged } = await import("./practicePoolService");
+        membershipStale = await poolMembershipChanged(uid, studentProfile, latestMembershipVersion);
+        if (!membershipStale) {
+          // Record the version we cleared so later sessions skip this check.
+          setDoc(
+            doc(db, "users", uid, "daily_assignments", dateKey),
+            { membershipVersion: latestMembershipVersion },
+            { merge: true },
+          ).catch(() => {});
+          assignment.membershipVersion = latestMembershipVersion;
+        }
+      } catch (err) {
+        // Verification failed → keep the old, conservative behaviour (regenerate).
+        console.warn("membership verification failed, regenerating:", err?.code || err);
+      }
+    }
 
     if (isLocked || (hasQuestions && countMatches && signatureMatches && !membershipStale)) {
       const value = { ...assignment, savedAt: Date.now() };

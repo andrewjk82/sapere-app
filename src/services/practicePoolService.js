@@ -60,6 +60,37 @@ const shuffle = (arr) => {
   return a;
 };
 
+// 마지막 reconcile 결과 — "전역 membershipVersion이 올랐을 때 이 학생의 챕터가
+// 실제로 바뀌었는가". dailyAssignmentService가 과제 재생성 여부를 판단할 때 읽는다.
+const _membershipChanged = new Map(); // uid → boolean
+
+/** 챕터별 ID 집합 비교 (순서 무시). */
+const sameIdSet = (a = [], b = []) => {
+  if (a.length !== b.length) return false;
+  const setB = new Set(b.map(String));
+  return a.every((id) => setB.has(String(id)));
+};
+
+/**
+ * 배정 챕터들의 question_index를 읽어온다. (챕터당 1 read)
+ * 전역 카운터가 움직였을 때만 호출된다 — 평소 경로에는 영향 없음.
+ */
+const readTargetIndexes = async (chapterIds) => Promise.all(
+  chapterIds.map(async (chapterId) => {
+    const index = await readChapterIndex(chapterId);
+    return { chapterId, ids: index?.ids?.map(String) || [] };
+  }),
+);
+
+/**
+ * 전역 membershipVersion이 올랐을 때, 이 학생의 챕터 구성이 실제로 바뀌었는지.
+ * ensurePracticePool이 방금 계산해 둔 값을 그대로 돌려준다 (추가 read 없음).
+ */
+export const poolMembershipChanged = async (uid, studentProfile, membershipVersion) => {
+  await ensurePracticePool(uid, studentProfile, membershipVersion);
+  return _membershipChanged.get(uid) === true;
+};
+
 // ─── init / refresh pool ────────────────────────────────────────────────────
 
 /**
@@ -71,23 +102,25 @@ const shuffle = (arr) => {
 export const ensurePracticePool = async (uid, studentProfile, membershipVersion) => {
   if (!uid) throw new Error('uid required');
 
-  const newSignature = getCurriculumSignature(studentProfile, membershipVersion);
+  // 시그니처는 선생님이 정하는 범위(학년·챕터·dailyPracticeConfig)만 반영한다.
+  // 전역 membershipVersion은 일부러 제외 — 그건 "문제은행 어딘가가 바뀌었다"는
+  // 뜻일 뿐 "이 학생의 챕터가 바뀌었다"는 뜻이 아닌데, 시그니처에 섞으면 무관한
+  // 챕터 한 곳만 편집해도 전원의 풀이 재빌드된다. 대신 아래에서 실제 인덱스와
+  // 대조해 확인한다 (2026-07-29: 외부 스크립트가 워딩 몇 개 고치면서 전역
+  // membershipVersion을 찍어 전원 재빌드가 걸린 사례).
+  const newSignature = getCurriculumSignature(studentProfile);
+  const mv = Number(membershipVersion) || 0;
 
-  // 세션 캐시 히트 → Firestore read 없음
+  // 세션 캐시 히트 + 전역 버전도 그대로 → Firestore read 없음
   const cached = getCached(uid, newSignature);
-  if (cached) return cached;
+  if (cached && Number(cached.membershipVersion || 0) === mv) {
+    _membershipChanged.set(uid, false);
+    return cached;
+  }
 
   const snap = await getDoc(poolRef(uid));
   const existing = snap.exists() ? snap.data() : null;
 
-  // 시그니처 일치 → 캐시 저장 후 반환
-  if (existing && existing.curriculumSignature === newSignature) {
-    setCached(uid, newSignature, existing);
-    return existing;
-  }
-
-  // 재빌드: 할당 챕터의 question_index 읽기 (트랜잭션 밖 — 이 문서들은 이 학생의
-  // 퀴즈 흐름과 동시에 쓰이지 않으므로 일반 read로 충분)
   let targets;
   try {
     targets = buildDailyTargets(studentProfile);
@@ -96,13 +129,56 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
   }
   const chapterIds = Array.from(targets.targetChapterIds);
 
-  // Re-read indexes for assigned chapters; preserve done[] for IDs still active.
-  const indexResults = await Promise.all(
-    chapterIds.map(async (chapterId) => {
-      const index = await readChapterIndex(chapterId);
-      return { chapterId, ids: index?.ids?.map(String) || [] };
-    }),
-  );
+  if (existing && existing.curriculumSignature === newSignature) {
+    // 배정 범위는 그대로. 전역 버전까지 같으면 확인할 것도 없다 (read 0).
+    if (Number(existing.membershipVersion || 0) === mv) {
+      _membershipChanged.set(uid, false);
+      setCached(uid, newSignature, existing);
+      return existing;
+    }
+
+    // 전역 버전만 움직였다 → 이 학생 챕터가 진짜 바뀌었는지 인덱스로 확인.
+    // (챕터당 1 read, 전역 bump 직후 세션에서만 발생)
+    const observed = await readTargetIndexes(chapterIds);
+    const prevPools = existing.chapter_pools || {};
+    const unchanged = observed.length === Object.keys(prevPools).length
+      && observed.every(({ chapterId, ids }) => sameIdSet(ids, prevPools[chapterId]?.ids || []));
+
+    if (unchanged) {
+      // 이 학생과 무관한 편집이었다. chapter_pools/done[]은 손대지 않고
+      // 확인한 전역 버전만 기록해 다음 세션에서 재확인하지 않게 한다.
+      _membershipChanged.set(uid, false);
+      const merged = { ...existing, membershipVersion: mv };
+      setCached(uid, newSignature, merged);
+      try {
+        await runTransaction(db, async (transaction) => {
+          const liveSnap = await transaction.get(poolRef(uid));
+          if (!liveSnap.exists()) return;
+          transaction.set(poolRef(uid), { membershipVersion: mv }, { merge: true });
+        });
+      } catch (err) {
+        // 기록 실패는 치명적이지 않다 — 다음 세션에 다시 확인할 뿐이다.
+        console.warn('practice pool membership stamp failed (non-critical):', err?.code || err);
+      }
+      return merged;
+    }
+
+    // 실제로 바뀌었다 → 아래 재빌드 경로로 진행 (done[]은 보존된다).
+    _membershipChanged.set(uid, true);
+    return rebuildPool({ uid, newSignature, mv, indexResults: observed });
+  }
+
+  // 배정 범위 자체가 바뀌었거나 풀이 아예 없음 → 전체 재빌드.
+  _membershipChanged.set(uid, true);
+  const indexResults = await readTargetIndexes(chapterIds);
+  return rebuildPool({ uid, newSignature, mv, indexResults });
+};
+
+/**
+ * chapter_pools를 indexResults 기준으로 다시 만든다. done[]은 아직 존재하는
+ * ID에 한해 보존된다.
+ */
+const rebuildPool = async ({ uid, newSignature, mv, indexResults }) => {
 
   // 재빌드 자체(read-modify-write)는 반드시 트랜잭션으로 — 위의 getDoc은 stale할
   // 수 있고, 그 스냅샷 기준으로 setDoc(merge:false)를 쓰면 방금 selectDailyQuestions
@@ -117,8 +193,13 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
     const liveSnap = await transaction.get(ref);
     const live = liveSnap.exists() ? liveSnap.data() : null;
 
-    // 트랜잭션 시작 전에 이미 같은 시그니처로 재빌드됐다면 (동시 호출) 그대로 사용.
-    if (live && live.curriculumSignature === newSignature) return live;
+    // 동시 호출이 이미 같은 시그니처 AND 같은 전역 버전으로 재빌드해 뒀다면 그대로 사용.
+    // 시그니처만 비교하면 안 된다 — 배정 범위가 그대로인 채 문제 추가/삭제만
+    // 일어난 경우(시그니처 동일, membershipVersion만 상승)에 이 가드가 재빌드를
+    // 통째로 건너뛰어 새 문제가 풀에 영영 들어오지 않는다.
+    if (live
+      && live.curriculumSignature === newSignature
+      && Number(live.membershipVersion || 0) === mv) return live;
 
     const prevPools = live?.chapter_pools || {};
     const prevAccuracy = live?.chapter_accuracy || {};
@@ -133,6 +214,7 @@ export const ensurePracticePool = async (uid, studentProfile, membershipVersion)
 
     const next = {
       curriculumSignature: newSignature,
+      membershipVersion: mv,
       cycle: live?.cycle || 0,
       chapter_pools,
       chapter_accuracy: prevAccuracy,
