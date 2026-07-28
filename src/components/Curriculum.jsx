@@ -14,6 +14,7 @@ import { useToast } from '../context/ToastContext';
 import { hasLesson, getLesson } from '../lessons/registry';
 import LessonPlayer from './lessons/LessonPlayer';
 import { migrateCurriculumToFirestore } from '../constants/migrateCurriculum';
+import { rebuildChapterIndex } from '../services/questionIndexService';
 import { CURRICULUM_DATA } from '../constants/curriculumData';
 import { ALGEBRA_QUESTIONS_Y11A } from '../constants/seedQuestions.js';
 import { SURDS_QUESTIONS_Y11A } from '../constants/seedSurdsQuestions.js';
@@ -724,11 +725,13 @@ const Curriculum = () => {
       const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp } = await import('firebase/firestore');
       const collRef = collection(db, 'questions');
       
-      // 1. Clear existing for chapter y11a-2
+      // 1. Clear existing for chapter y11a-2 — EXCEPT teacher-authored docs.
+      // Standing rule: teacher edits win and must never be wiped by a reseed
+      // (2026-07-05 y9-16d incident lost 17 edits to exactly this pattern).
       const q = query(collRef, where('chapterId', '==', 'y11a-2'));
       const snap = await getDocs(q);
       const batch = writeBatch(db);
-      snap.docs.forEach(d => batch.delete(d.ref));
+      snap.docs.forEach(d => { if (d.data().origin !== 'teacher') batch.delete(d.ref); });
       await batch.commit();
 
       // 2. Add new surds questions
@@ -759,15 +762,15 @@ const Curriculum = () => {
         });
       });
       await addBatch.commit();
-      // Bump sync_meta + question_index/_meta so ensureQuestionIndexFresh sees no mismatch
-      try {
-        const { setDoc: sd, doc: d2, serverTimestamp: st2 } = await import('firebase/firestore');
-        const v2 = Date.now();
-        await Promise.all([
-          sd(d2(db, 'sync_meta', 'questions'), { version: v2, updatedAt: st2() }, { merge: true }),
-          sd(d2(db, 'question_index', '_meta'), { builtVersion: v2, updatedAt: st2() }, { merge: true }),
-        ]);
-      } catch (e) { console.warn('sync_meta bump failed:', e); }
+      // Rebuild this chapter's index from actual DB state. Every question above
+      // got a BRAND NEW random doc id, so question_index/y11a-2 was left holding
+      // only the ids we just deleted — and readers trust an existing index doc
+      // completely, so the whole chapter went invisible. Worse, this used to
+      // stamp _meta.builtVersion = version, which is precisely what tells
+      // ensureQuestionIndexFresh "indexes are current" and suppressed the
+      // rebuild that would have repaired it. rebuildChapterIndex re-derives the
+      // ids, and stamps the versions itself.
+      await rebuildChapterIndex('y11a-2');
       try {
         const { getCountFromServer: gcfs, query: q2, collection: col2, where: w2 } = await import('firebase/firestore');
         const snap2 = await gcfs(q2(col2(db, 'questions'), w2('chapterId', '==', 'y11a-2')));
@@ -876,6 +879,9 @@ const Curriculum = () => {
       });
       
       await addBatch.commit();
+      // Re-derive the chapter index from actual state: seeding changes which
+      // ids exist, and a stale index silently hides questions from readers.
+      await rebuildChapterIndex('y6-wn');
       showToast(`Successfully updated ${WHOLE_NUMBER_QUESTIONS_Y6.length} Whole Number questions and synced curriculum!`, 'success');
       
       // Update cache locally
@@ -983,6 +989,7 @@ const Curriculum = () => {
       });
       
       await addBatch.commit();
+      await rebuildChapterIndex('y6-frac');
       showToast(`Successfully updated ${FRACTION_QUESTIONS_Y6.length} Fraction questions and synced curriculum!`, 'success');
       
       // Update cache locally
@@ -1094,8 +1101,7 @@ const Curriculum = () => {
       
       await addBatch.commit();
       
-      // 3. Rebuild indexes
-      const { rebuildChapterIndex } = await import('../services/questionIndexService');
+      // 3. Rebuild indexes (rebuildChapterIndex is imported at module scope)
       await rebuildChapterIndex('y6-rn');
       await rebuildChapterIndex('y6-ar');
       await rebuildChapterIndex('y6-mr');
@@ -1122,7 +1128,7 @@ const Curriculum = () => {
     if (!window.confirm("This will replace all existing questions for Year 11 Advanced Chapter 5 with the latest questions. Continue?")) return;
     setIsMigrating(true);
     try {
-      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp, setDoc, getCountFromServer } = await import('firebase/firestore');
+      const { collection, query, where, getDocs, writeBatch, doc, serverTimestamp, getCountFromServer } = await import('firebase/firestore');
 
       const collRef = collection(db, 'questions');
       const addBatch = writeBatch(db);
@@ -1165,14 +1171,11 @@ const Curriculum = () => {
       
       await addBatch.commit();
 
-      // Bump sync_meta + question_index/_meta so ensureQuestionIndexFresh sees no mismatch
-      try {
-        const v2 = Date.now();
-        await Promise.all([
-          setDoc(doc(db, 'sync_meta', 'questions'), { version: v2, updatedAt: serverTimestamp() }, { merge: true }),
-          setDoc(doc(db, 'question_index', '_meta'), { builtVersion: v2, updatedAt: serverTimestamp() }, { merge: true }),
-        ]);
-      } catch (e) { console.warn('sync_meta bump failed:', e); }
+      // Add the newly seeded ids to this chapter's index. Stamping
+      // _meta.builtVersion here instead only told ensureQuestionIndexFresh the
+      // indexes were current, so the new questions stayed missing from
+      // question_index/y11a-5 and were invisible to every reader that trusts it.
+      await rebuildChapterIndex('y11a-5');
       try {
         const chapSnap = await getCountFromServer(query(collection(db, 'questions'), where('chapterId', '==', 'y11a-5')));
         const count = chapSnap.data().count || 0;
@@ -1248,6 +1251,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-2');
       showToast(`Successfully seeded ${Y9_CH2A_QUESTIONS.length} Year 9 Ch2A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1407,6 +1411,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-3');
       showToast(`Successfully seeded ${Y9_CH3A_QUESTIONS.length} Year 9 Ch3A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1472,6 +1477,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-3');
       showToast(`Successfully seeded ${Y9_CH3B_QUESTIONS.length} Year 9 Ch3B questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1534,6 +1540,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y10-3');
       showToast(`Successfully seeded ${Y10_CH3A_QUESTIONS.length} Year 10 Ch3A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1596,6 +1603,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y10-3');
       showToast(`Successfully seeded ${Y10_CH3B_QUESTIONS.length} Year 10 Ch3B questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1658,6 +1666,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y10-3');
       showToast(`Successfully seeded ${Y10_CH3C_QUESTIONS.length} Year 10 Ch3C questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1721,6 +1730,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-4');
       showToast(`Successfully seeded ${Y9_CH4A_QUESTIONS.length} Year 9 Ch4A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1784,6 +1794,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-5');
       showToast(`Successfully seeded ${Y9_CH5A_QUESTIONS.length} Year 9 Ch5A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1847,6 +1858,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-6');
       showToast(`Successfully seeded ${Y9_CH6A_QUESTIONS.length} Year 9 Ch6A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1916,6 +1928,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-7');
       showToast(`Successfully seeded ${Y9_CH7A_QUESTIONS.length} Year 9 Ch7A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
@@ -1974,6 +1987,7 @@ const Curriculum = () => {
         }, { merge: true });
       });
       await addBatch.commit();
+      await rebuildChapterIndex('y9-8');
       showToast(`Successfully appended ${Y9_CH8A_QUESTIONS.length} Year 9 Ch8A questions!`, 'success');
 
       if (typeof window !== 'undefined') {
