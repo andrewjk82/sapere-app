@@ -18,9 +18,22 @@
  * after-school login peak: every freshly-opened tab re-downloaded every
  * chapter it had cached, all at once. Scoping the check to the one chapter
  * that actually changed keeps a normal edit from ever affecting students
- * looking at unrelated chapters. Exam papers (no question_index by
- * chapterId) and chapters that predate the index still fall back to the old
- * global version — same behavior as before for that minority of cases.
+ * looking at unrelated chapters.
+ *
+ * Coverage, measured 2026-07-28: all 97 curriculum chapters that actually
+ * hold questions (20,772 of them) have a question_index doc, so the
+ * per-chapter key covers every chapter a student can open.
+ *
+ * Exam papers (`exam:` ids) deliberately stay on the global key. Index docs
+ * DO exist for them (197, ~5k ids), but the exam fetch path queries by
+ * `examPaper` rather than reading that index, and exam content arrives
+ * through separate seeding tooling whose index-touching behavior is not
+ * verified — keying exam caches off an updatedAt that might never move would
+ * risk freezing stale exam content, the exact failure this file's own
+ * per-chapter switch caused for seeds (fixed in 24a0a11). The blast radius
+ * of leaving them global is small: 4 of 36 users have examPrepEnabled.
+ * Verify the seeding path bumps `question_index/exam:*.updatedAt` before
+ * moving exams onto the per-chapter key.
  */
 
 import {
