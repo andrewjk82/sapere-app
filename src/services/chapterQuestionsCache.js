@@ -109,9 +109,17 @@ const setSessionChapterVersion = (chapterId, v) => {
 };
 
 /**
- * Resolve the freshness key for one chapter, plus its index (ids) when one
- * exists so callers don't re-read the same doc a second time on a miss.
+ * Resolve the freshness key for one chapter, plus its index (ids) when we
+ * happened to read it, so callers don't re-read the same doc on a miss.
  * Exam papers and not-yet-indexed chapters fall back to the old global gate.
+ *
+ * `index` is deliberately three-valued and callers must preserve that:
+ *   undefined → we did NOT look (caller must read the index itself)
+ *   null      → we looked, this chapter has no index doc (legacy query path)
+ *   object    → the index, already paid for
+ * Collapsing "didn't look" into null sends an indexed chapter down the
+ * legacy full-chapter query, which is exactly the read amplification this
+ * module exists to avoid.
  */
 const resolveChapterVersion = async (chapterId) => {
   const isExam = chapterId?.startsWith('exam:');
@@ -120,7 +128,7 @@ const resolveChapterVersion = async (chapterId) => {
   }
 
   const sessionVersion = getSessionChapterVersion(chapterId);
-  if (sessionVersion != null) return { version: sessionVersion, index: null };
+  if (sessionVersion != null) return { version: sessionVersion, index: undefined };
 
   const index = await readChapterIndex(chapterId);
   trackRead(1, `question_index:${chapterId}`);

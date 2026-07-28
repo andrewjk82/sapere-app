@@ -171,6 +171,25 @@ export const applySeedToIndexes = async ({ added = {}, removed = {}, version }) 
   await stampVersions(version, membershipChanged, { indexIncomplete });
 };
 
+/**
+ * Content-only edit (question text/options/steps changed, membership did not).
+ *
+ * Bumps each affected chapter's `question_index/{chapterId}.updatedAt` — the
+ * per-chapter freshness key chapterQuestionsCache gates student caches on —
+ * plus the global version for chapters that have no index doc yet and still
+ * fall back to it. Without the per-chapter touch, a content-only edit is
+ * INVISIBLE to every student holding a cached copy of that chapter: the
+ * global version moves but their chapter's key doesn't, so the stale copy
+ * never expires. Membership is deliberately NOT bumped — practice pools
+ * don't need to rebuild when only wording changed.
+ */
+export const touchChapterContentVersion = async (chapterIds, version) => {
+  const unique = [...new Set((chapterIds || []).map(String).filter(Boolean))];
+  // updateIndexIfExists supplies updatedAt; never creates a missing doc.
+  await Promise.all(unique.map((chapterId) => updateIndexIfExists(chapterId, {})));
+  await stampVersions(version, false);
+};
+
 /** Incremental: a question was created or (re)activated in a chapter. */
 export const addQuestionToIndex = async (chapterId, questionId, version) => {
   if (!chapterId || !questionId) return;

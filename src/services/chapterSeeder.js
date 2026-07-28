@@ -1,7 +1,7 @@
 import { db } from '../firebase/config';
 import { collection, writeBatch, doc, getDoc, setDoc, serverTimestamp, query, where, getDocs, getDocsFromServer, documentId } from 'firebase/firestore';
 import { recountIds } from './questionCountsService';
-import { applySeedToIndexes } from './questionIndexService';
+import { applySeedToIndexes, touchChapterContentVersion } from './questionIndexService';
 import { validateSeedQuestion } from '../utils/latexValidate';
 import { answersMatch } from '../utils/answerMatching';
 
@@ -474,15 +474,24 @@ export const seedChapterQuestions = async (chapter, storedQHashes = {}) => {
       console.warn('question_counts recount after seed failed (non-fatal):', err);
     }
   } else if (toWrite.length > 0) {
-    // Content-only edits: bump version so students see updated content, but
-    // do NOT bump membershipVersion -- practice pools don't need to rebuild.
+    // Content-only edits: bump each affected chapter's question_index.updatedAt
+    // (the per-chapter key student caches are gated on) plus the global version
+    // for chapters with no index doc. Bumping ONLY the global version here left
+    // students on indexed chapters serving their stale cached copy forever —
+    // their chapter's freshness key never moved. membershipVersion stays put:
+    // practice pools don't need to rebuild when only wording changed.
     try {
-      await setDoc(doc(db, 'sync_meta', 'questions'), {
-        version: seedVersion,
-        updatedAt: serverTimestamp(),
-      }, { merge: true });
+      await touchChapterContentVersion([...affectedChapterIds], seedVersion);
     } catch (err) {
-      console.warn('sync_meta version bump failed (non-fatal):', err);
+      console.warn('content version bump failed (non-fatal):', err);
+      try {
+        await setDoc(doc(db, 'sync_meta', 'questions'), {
+          version: seedVersion,
+          updatedAt: serverTimestamp(),
+        }, { merge: true });
+      } catch (err2) {
+        console.warn('sync_meta version bump failed (non-fatal):', err2);
+      }
     }
   }
 
