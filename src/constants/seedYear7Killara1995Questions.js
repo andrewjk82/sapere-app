@@ -500,6 +500,461 @@ export const Y7_KILLARA_1995_QUESTIONS = [
         workingOut: 'A sphere has no flat faces or bases. It is NOT a prism.'
       }
     ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 1: WHOLE NUMBERS (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-1-killara-q10',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Whole numbers',
+    question: 'Which Roman numeral has a value of 1000?',
+    options: ['M', 'D', 'C', 'L'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Recall the values of the main Roman numeral symbols.',
+        workingOut: 'M = 1000, D = 500, C = 100, L = 50'
+      },
+      {
+        explanation: 'The symbol worth 1000 is M.',
+        workingOut: 'Answer: M'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q11',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Whole numbers',
+    question: 'Which Roman numeral has a value of 500?',
+    options: ['D', 'L', 'C', 'M'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Recall the values of the main Roman numeral symbols.',
+        workingOut: 'D = 500, L = 50, C = 100, M = 1000'
+      },
+      {
+        explanation: 'The symbol worth 500 is D.',
+        workingOut: 'Answer: D'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q12',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Whole numbers',
+    question: 'Which sum is equal to \\( 9 \\times 6 \\)?',
+    options: [
+      '9 + 9 + 9 + 9 + 9 + 9',
+      '9 + 9 + 9 + 9 + 9',
+      '9 + 9 + 9 + 9 + 9 + 9 + 9',
+      '6 + 6 + 6 + 6'
+    ],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Multiplication is repeated addition: \\( 9 \\times 6 \\) means 9 added 6 times.',
+        workingOut: '9 + 9 + 9 + 9 + 9 + 9 (six lots of 9)'
+      },
+      {
+        explanation: 'Check the total.',
+        workingOut: '9 \\times 6 = 54, and 9 + 9 + 9 + 9 + 9 + 9 = 54 ✓'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q13',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Whole numbers',
+    question: 'What is \\( 34 \\times 7 \\)?',
+    options: ['238', '234', '242', '224'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Split 34 into 30 + 4 and multiply each part by 7.',
+        workingOut: '30 \\times 7 = 210, \\quad 4 \\times 7 = 28'
+      },
+      {
+        explanation: 'Add the two parts together.',
+        workingOut: '210 + 28 = 238'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q14',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Place value',
+    question: 'Which expanded form correctly represents 4708?',
+    options: [
+      '\\( 4 \\times 1000 + 7 \\times 100 + 0 \\times 10 + 8 \\times 1 \\)',
+      '\\( 4 \\times 1000 + 7 \\times 100 + 8 \\times 10 + 0 \\times 1 \\)',
+      '\\( 4 \\times 1000 + 0 \\times 100 + 7 \\times 10 + 8 \\times 1 \\)',
+      '\\( 4 \\times 100 + 7 \\times 10 + 0 \\times 10 + 8 \\times 1 \\)'
+    ],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Break 4708 into its place values: thousands, hundreds, tens, units.',
+        workingOut: '4708 = 4 \\text{ thousands} + 7 \\text{ hundreds} + 0 \\text{ tens} + 8 \\text{ units}'
+      },
+      {
+        explanation: 'Write this as an expanded multiplication sum.',
+        workingOut: '4 \\times 1000 + 7 \\times 100 + 0 \\times 10 + 8 \\times 1'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q15',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Place value',
+    question: 'A base-10 model shows 4 flats (worth 100 each), 3 rods (worth 10 each) and 6 units (worth 1 each). What number does it represent?',
+    options: ['436', '463', '346', '634'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Multiply each block type by its value and add.',
+        workingOut: '4 \\times 100 = 400, \\quad 3 \\times 10 = 30, \\quad 6 \\times 1 = 6'
+      },
+      {
+        explanation: 'Add the totals together.',
+        workingOut: '400 + 30 + 6 = 436'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-1-killara-q16',
+    type: 'multiple_choice',
+    difficulty: 'hard',
+    timeLimit: 120,
+    t: 'Whole numbers',
+    question: 'Estimate \\( \\sqrt{5500} \\) to the nearest whole number.',
+    options: ['74', '70', '78', '66'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Find two perfect squares that 5500 sits between.',
+        workingOut: '74^2 = 5476, \\quad 75^2 = 5625'
+      },
+      {
+        explanation: '5500 is much closer to 5476 than 5625.',
+        workingOut: '\\sqrt{5500} \\approx 74'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 4: FRACTIONS (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-4-killara-q5',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Fractions',
+    question: 'What is \\( 84 \\times \\frac{1}{4} \\)?',
+    options: ['21', '20', '24', '28'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Multiplying by \\( \\frac{1}{4} \\) is the same as dividing by 4.',
+        workingOut: '84 \\div 4 = 21'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-4-killara-q6',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Fractions',
+    question: 'A cake is cut into 6 equal slices and an identical second cake is also cut into 6 slices. Mia eats 2 slices from the first cake and 3 slices from the second. What fraction of a whole cake, in total, did Mia eat?',
+    options: ['\\( \\frac{5}{6} \\)', '\\( \\frac{2}{3} \\)', '\\( \\frac{1}{2} \\)', '\\( \\frac{5}{12} \\)'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Both cakes are cut into the same number of slices, so the fractions have the same denominator.',
+        workingOut: '\\( \\frac{2}{6} + \\frac{3}{6} \\)'
+      },
+      {
+        explanation: 'Add the numerators, keeping the denominator the same.',
+        workingOut: '\\( \\frac{2}{6} + \\frac{3}{6} = \\frac{5}{6} \\)'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-4-killara-q7',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Fractions',
+    question: 'Arrange \\( \\frac{1}{3}, \\frac{1}{10}, \\frac{1}{4} \\) in ascending order.',
+    options: [
+      '\\( \\frac{1}{10}, \\frac{1}{4}, \\frac{1}{3} \\)',
+      '\\( \\frac{1}{3}, \\frac{1}{4}, \\frac{1}{10} \\)',
+      '\\( \\frac{1}{4}, \\frac{1}{10}, \\frac{1}{3} \\)',
+      '\\( \\frac{1}{10}, \\frac{1}{3}, \\frac{1}{4} \\)'
+    ],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'When the numerator is 1, a larger denominator means a smaller fraction.',
+        workingOut: 'Denominators: 10 > 4 > 3, so fractions from smallest to largest: \\( \\frac{1}{10} < \\frac{1}{4} < \\frac{1}{3} \\)'
+      },
+      {
+        explanation: 'Write in ascending (smallest to largest) order.',
+        workingOut: '\\( \\frac{1}{10}, \\frac{1}{4}, \\frac{1}{3} \\)'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 7: DECIMALS (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-7-killara-q4',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Decimals',
+    question: 'Is \\( \\frac{1}{3} = 0.3 \\) true or false?',
+    options: ['False — \\( \\frac{1}{3} = 0.\\overline{3} \\)', 'True', 'False — \\( \\frac{1}{3} = 0.03 \\)', 'False — \\( \\frac{1}{3} = 3.0 \\)'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Divide 1 by 3 to convert the fraction to a decimal.',
+        workingOut: '1 \\div 3 = 0.3333\\ldots = 0.\\overline{3}'
+      },
+      {
+        explanation: 'Compare to the given decimal.',
+        workingOut: '0.3 \\ne 0.\\overline{3}, so the statement is FALSE.'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-7-killara-q5',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Decimals',
+    question: 'On a number line, point P is exactly halfway between 4.2 and 4.6. What value does point P represent?',
+    options: ['4.4', '4.3', '4.5', '4.35'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Find the midpoint by averaging the two endpoint values.',
+        workingOut: '(4.2 + 4.6) \\div 2 = 8.8 \\div 2'
+      },
+      {
+        explanation: 'Calculate the result.',
+        workingOut: '8.8 \\div 2 = 4.4'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-7-killara-q6',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Decimals',
+    question: 'A shop sells pens for \\$2.35 each. What is the cost of 6 pens?',
+    options: ['\\$14.10', '\\$13.10', '\\$14.70', '\\$12.10'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Multiply the price per pen by the number of pens.',
+        workingOut: '2.35 \\times 6'
+      },
+      {
+        explanation: 'Multiply as whole numbers then place the decimal point: \\( 235 \\times 6 = 1410 \\)',
+        workingOut: '2.35 \\times 6 = \\$14.10'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 14: PERCENTAGES AND RATIOS (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-14-killara-q3',
+    type: 'multiple_choice',
+    difficulty: 'medium',
+    timeLimit: 120,
+    t: 'Percentages and ratios',
+    question: 'Write 44% as a fraction in simplest form.',
+    options: ['\\( \\frac{11}{25} \\)', '\\( \\frac{9}{20} \\)', '\\( \\frac{12}{25} \\)', '\\( \\frac{7}{25} \\)'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Write the percentage as a fraction out of 100.',
+        workingOut: '44\\% = \\frac{44}{100}'
+      },
+      {
+        explanation: 'Simplify by dividing top and bottom by their highest common factor, 4.',
+        workingOut: '\\frac{44 \\div 4}{100 \\div 4} = \\frac{11}{25}'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 5: INTRODUCTION TO GEOMETRY (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-5-killara-q1',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'An introduction to geometry',
+    question: 'Which of the following is NOT an octagon (an 8-sided shape)?',
+    options: ['Heptagon', 'Regular octagon', 'Stop-sign shape', 'Concave octagon'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'An octagon must have exactly 8 sides.',
+        workingOut: 'Regular octagon, stop-sign shape and concave octagon all have 8 sides.'
+      },
+      {
+        explanation: 'A heptagon has 7 sides, not 8.',
+        workingOut: 'Heptagon is NOT an octagon.'
+      }
+    ]
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // CHAPTER 20: POLYHEDRA AND 3D SHAPES (additional coverage)
+  // ─────────────────────────────────────────────────────────────────
+
+  {
+    id: 'y7-20-killara-q3',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Polyhedra and three-dimensional drawing',
+    question: 'A solid has one square base and four triangular faces meeting at a single point. What is this shape called?',
+    options: ['Square pyramid', 'Cone', 'Tetrahedron', 'Cube'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'A square base with triangular faces meeting at an apex is a pyramid.',
+        workingOut: 'Since the base is a square, this is a square pyramid.'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-20-killara-q4',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Polyhedra and three-dimensional drawing',
+    question: 'A solid is formed by cutting a sphere exactly in half. What is this shape called?',
+    options: ['Hemisphere', 'Sphere', 'Cylinder', 'Cone'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: '"Hemi-" means half, so half of a sphere is a hemisphere.',
+        workingOut: 'Answer: Hemisphere'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-20-killara-q5',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Polyhedra and three-dimensional drawing',
+    question: 'A solid has one circular base and a curved surface that narrows to a single point. What is this shape called?',
+    options: ['Cone', 'Cylinder', 'Pyramid', 'Sphere'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'One circular base plus a curved surface meeting at a point (apex) describes a cone.',
+        workingOut: 'A cylinder has two circular bases, so this must be a cone.'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-20-killara-q6',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Polyhedra and three-dimensional drawing',
+    question: 'A solid has two parallel triangular bases connected by three rectangular faces. What is this shape called?',
+    options: ['Triangular prism', 'Triangular pyramid', 'Rectangular prism', 'Tetrahedron'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Two parallel congruent bases connected by rectangles is the definition of a prism.',
+        workingOut: 'Since the bases are triangles, this is a triangular prism.'
+      }
+    ]
+  },
+
+  {
+    id: 'y7-20-killara-q7',
+    type: 'multiple_choice',
+    difficulty: 'easy',
+    timeLimit: 90,
+    t: 'Polyhedra and three-dimensional drawing',
+    question: 'A solid has six identical square faces. What is this shape called?',
+    options: ['Cube', 'Rectangular prism', 'Square pyramid', 'Octahedron'],
+    answer: '0',
+    requiresManualGrading: false,
+    solutionSteps: [
+      {
+        explanation: 'Six identical (congruent) square faces is the definition of a cube.',
+        workingOut: 'A rectangular prism has rectangular faces that are not all identical squares.'
+      }
+    ]
   }
 ];
 
