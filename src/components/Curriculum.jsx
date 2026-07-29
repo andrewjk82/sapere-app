@@ -3412,7 +3412,18 @@ const Curriculum = () => {
                                             </span>
                                             <span className="sync-card-title">{entry.chapterTitle}</span>
                                           </div>
-                                          <div className="sync-card-actions">
+                                          <div className="sync-card-actions" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                                            {count && (
+                                              <button
+                                                onClick={() => setSelectedTopicForBank({
+                                                  chapter: { id: entry.chapterId, examPaper: entry.examPaper, title: entry.chapterTitle },
+                                                  topic: null,
+                                                })}
+                                                className="sync-btn primary-grad"
+                                              >
+                                                👁️ View
+                                              </button>
+                                            )}
                                             {count
                                               ? <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#10b981' }}>✓ Done</span>
                                               : <button onClick={() => handleSeedChapter(entry)} disabled={isMigrating} className="sync-btn warning">🌱 Seed</button>
