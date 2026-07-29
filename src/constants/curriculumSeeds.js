@@ -210,6 +210,7 @@ import { Y7_CH2G_QUESTIONS } from './seedYear7Ch2GQuestions.js';
 import { Y7_CH2H_QUESTIONS } from './seedYear7Ch2HQuestions.js';
 import { Y7_CH2I_QUESTIONS } from './seedYear7Ch2IQuestions.js';
 import { Y7_CH2J_QUESTIONS } from './seedYear7Ch2JQuestions.js';
+import { Y7_CH4I_QUESTIONS } from './seedYear7Ch4IQuestions.js';
 import { Y7_CH6A_QUESTIONS } from './seedYear7Ch6AQuestions.js';
 import { Y7_CH6B_QUESTIONS } from './seedYear7Ch6BQuestions.js';
 import { Y7_CH6C_QUESTIONS } from './seedYear7Ch6CQuestions.js';
@@ -217,6 +218,7 @@ import { Y7_CH6D_QUESTIONS } from './seedYear7Ch6DQuestions.js';
 import { Y7_CH1D_QUESTIONS } from './seedYear7Ch1DQuestions.js';
 import { Y7_CH1E_QUESTIONS } from './seedYear7Ch1EQuestions.js';
 import { Y7_CH1F_QUESTIONS } from './seedYear7Ch1FQuestions.js';
+import { Y7_KILLARA_1995_QUESTIONS, Y7_KILLARA_1995_SIMILAR } from './seedYear7Killara1995Questions.js';
 import { Y10_CH1_QUESTIONS } from './seedYear10Ch1Questions.js';
 import { Y10_CH1B_QUESTIONS } from './seedYear10Ch1BQuestions.js';
 import { Y10_CH1C_QUESTIONS } from './seedYear10Ch1CQuestions.js';
@@ -1314,7 +1316,8 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3f', topicCode: '3F', topicTitle: 'Multiplying algebraic terms', year: 'Year 7', seed: Y7_CH3F_QUESTIONS, label: 'Y7 Ch3 · Multiplying algebraic terms' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3g', topicCode: '3G', topicTitle: 'Describing arrays, areas and number patterns', year: 'Year 7', seed: Y7_CH3G_QUESTIONS, label: 'Y7 Ch3 · Describing arrays, areas and number patterns' },
   { chapterId: 'y7-3', chapterTitle: 'Chapter 3: An introduction to algebra', topicId: 'y7-3h', topicCode: '3H', topicTitle: 'Chapter review', year: 'Year 7', seed: Y7_CH3H_QUESTIONS, label: 'Y7 Ch3 · Chapter review' },
-  { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6a', topicCode: '6A', topicTitle: 'Division in algebra', year: 'Year 7', seed: Y7_CH6A_QUESTIONS, label: 'Y7 Ch6 · 6A Division in algebra' },
+    { chapterId: 'y7-4', chapterTitle: 'Chapter 4: Fractions', topicId: 'y7-4i', topicCode: '4I', topicTitle: 'Division of fractions', year: 'Year 7', seed: Y7_CH4I_QUESTIONS, label: 'Y7 Ch4 · Division of fractions' },
+{ chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6a', topicCode: '6A', topicTitle: 'Division in algebra', year: 'Year 7', seed: Y7_CH6A_QUESTIONS, label: 'Y7 Ch6 · 6A Division in algebra' },
   { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6b', topicCode: '6B', topicTitle: 'Multiplication and division in algebra', year: 'Year 7', seed: Y7_CH6B_QUESTIONS, label: 'Y7 Ch6 · 6B Multiplication and division in algebra' },
   { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6c', topicCode: '6C', topicTitle: 'Dividing and cancelling', year: 'Year 7', seed: Y7_CH6C_QUESTIONS, label: 'Y7 Ch6 · 6C Dividing and cancelling' },
   { chapterId: 'y7-6', chapterTitle: 'Chapter 6: Algebra with fractions', topicId: 'y7-6d', topicCode: '6D', topicTitle: 'Revision', year: 'Year 7', seed: Y7_CH6D_QUESTIONS, label: 'Y7 Ch6 · 6D Revision' },
@@ -1327,6 +1330,7 @@ export const CHAPTER_SEED_REGISTRY = [
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23h', topicCode: '23H', topicTitle: 'Multiplying, dividing and expanding', year: 'Year 7', seed: Y7_CH23H_QUESTIONS, label: 'Y7 Ch23 · Multiplying, dividing and expanding' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23i', topicCode: '23I', topicTitle: 'Applying algebra', year: 'Year 7', seed: Y7_CH23I_QUESTIONS, label: 'Y7 Ch23 · Applying algebra' },
   { chapterId: 'y7-23', chapterTitle: 'Chapter 23: Algebra', topicId: 'y7-23j', topicCode: '23J', topicTitle: 'Problem solving with algebra', year: 'Year 7', seed: Y7_CH23J_QUESTIONS, label: 'Y7 Ch23 · Problem solving with algebra' },
+  { chapterId: 'exam:killara-1995', badgeLabel: 'Y7 EXAM', examPaper: 'killara-1995', chapterTitle: 'Killara High School 1995 Year 7 Half-Yearly', topicId: 'y7-exam-killara', topicCode: 'EXAM', topicTitle: 'Killara 1995 Half-Yearly Exam', year: 'Year 7', seed: [...Y7_KILLARA_1995_QUESTIONS, ...Y7_KILLARA_1995_SIMILAR], label: 'Y7 · Killara 1995 Year 7 Half-Yearly Exam' },
   { chapterId: 'y10-5', chapterTitle: 'Chapter 5: Quadratic equations', topicId: 'y10-5a', topicCode: '5A', topicTitle: 'Solution of quadratic equations', year: 'Year 10', seed: Y10_CH5A_QUESTIONS, label: 'Y10 Ch5 · Solution of quadratic equations' },
   { chapterId: 'y10-6', chapterTitle: 'Chapter 6: Surface area and volume', topicId: 'y10-6a', topicCode: '6A', topicTitle: 'Review of prisms and cylinders', year: 'Year 10', seed: Y10_CH6_QUESTIONS, label: 'Y10 Ch6 · Review of prisms and cylinders' },
   // ── HSC Trial Exam Papers (multi-topic — each question carries its own topicId) ──
@@ -1362,6 +1366,9 @@ export {
   WHOLE_NUMBER_QUESTIONS_Y6,
   FRACTION_QUESTIONS_Y6,
   CH5_QUESTIONS_Y11A,
+  Y7_CH4I_QUESTIONS,
+  Y7_KILLARA_1995_QUESTIONS,
+  Y7_KILLARA_1995_SIMILAR,
   Y9_CH2A_QUESTIONS,
   Y9_CH3A_QUESTIONS,
   Y9_CH3B_QUESTIONS,
