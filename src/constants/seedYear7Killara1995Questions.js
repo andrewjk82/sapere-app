@@ -144,7 +144,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
     timeLimit: 120,
     t: 'Order of operations',
     question: 'Simplify \\( 85 \\times (102 + 8) \\)',
-    options: ['9350', '8870', '9350', '9175'],
+    options: ['9350', '8870', '8500', '9175'],
     answer: '0',
     requiresManualGrading: false,
     solutionSteps: [
