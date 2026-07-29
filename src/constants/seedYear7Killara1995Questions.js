@@ -11,7 +11,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Whole numbers',
@@ -42,7 +42,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Place value',
@@ -73,7 +73,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q3',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Whole numbers',
@@ -91,7 +91,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q4',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Place value',
@@ -117,7 +117,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q5',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'hard',
     timeLimit: 120,
     t: 'Order of operations',
@@ -139,7 +139,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q6',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'hard',
     timeLimit: 120,
     t: 'Order of operations',
@@ -165,7 +165,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q7',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Whole numbers',
@@ -187,7 +187,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q8',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Whole numbers',
@@ -209,7 +209,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q9',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Whole numbers',
@@ -235,7 +235,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Fractions',
@@ -262,7 +262,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Fractions',
@@ -293,7 +293,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Decimals',
@@ -315,7 +315,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Decimals',
@@ -341,7 +341,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-14-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Percentages and ratios',
@@ -363,7 +363,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q3',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Fractions',
@@ -386,7 +386,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q4',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Fractions',
@@ -409,7 +409,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q3',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Decimals',
@@ -427,7 +427,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-14-killara-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Percentages and ratios',
@@ -445,7 +445,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-17-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Transformations and symmetry',
@@ -463,7 +463,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Polyhedra and three-dimensional drawing',
@@ -481,7 +481,7 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
     t: 'Polyhedra and three-dimensional drawing',
@@ -507,7 +507,7 @@ export const Y7_KILLARA_1995_SIMILAR = [
   // Variant questions with similar difficulty
   {
     id: 'y7-1-killara-var-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Whole numbers',
@@ -530,7 +530,7 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-1-killara-var-q2',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Place value',
@@ -553,7 +553,7 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-4-killara-var-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Fractions',
@@ -576,7 +576,7 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-7-killara-var-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Decimals',
@@ -594,7 +594,7 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-14-killara-var-q1',
-    type: 'mc',
+    type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Percentages and ratios',
