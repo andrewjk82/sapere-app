@@ -141,6 +141,31 @@ const Curriculum = () => {
       .catch((e) => console.warn('Seed registry load failed:', e));
     return () => { cancelled = true; };
   }, [isAdmin]);
+  // Exam-paper "seeded?" status can't rely on questionCounts[entry.topicId] alone —
+  // papers whose questions carry each their OWN real granular topicId (so they
+  // blend into normal per-topic practice) never populate a count under the
+  // registry's placeholder topicId. One cheap getCountFromServer per exam paper
+  // (admin-only, runs once when the registry loads) is the reliable signal.
+  const [examPaperCounts, setExamPaperCounts] = useState({});
+  useEffect(() => {
+    if (!isAdmin || seedRegistry.length === 0) return undefined;
+    let cancelled = false;
+    const examPapers = [...new Set(
+      seedRegistry.filter((e) => e.chapterId?.startsWith('exam:') && e.examPaper).map((e) => e.examPaper)
+    )];
+    (async () => {
+      const entries = await Promise.all(examPapers.map(async (ep) => {
+        try {
+          const snap = await getCountFromServer(query(collection(db, 'questions'), where('examPaper', '==', ep)));
+          return [ep, snap.data().count];
+        } catch (e) {
+          return [ep, 0];
+        }
+      }));
+      if (!cancelled) setExamPaperCounts(Object.fromEntries(entries));
+    })();
+    return () => { cancelled = true; };
+  }, [isAdmin, seedRegistry]);
   const [selectedYear, setSelectedYear] = useState('Year 11');
   const [selectedCourse, setSelectedCourse] = useState('Advanced');
   const [searchQuery, setSearchQuery] = useState('');
@@ -3379,7 +3404,7 @@ const Curriculum = () => {
 
                           return ppYears.map((year) => {
                             const entries = ppByYear[year];
-                            const doneCount = entries.filter(e => questionCounts[e.topicId]).length;
+                            const doneCount = entries.filter(e => (e.examPaper && examPaperCounts[e.examPaper]) || questionCounts[e.topicId]).length;
                             const isOpen = sq ? true : (expandedSeedYears[`pp-${year}`] ?? false);
 
                             return (
@@ -3403,7 +3428,7 @@ const Curriculum = () => {
                                 {isOpen && (
                                   <div className="admin-sync-grid" style={{ padding: '16px' }}>
                                     {entries.map(entry => {
-                                      const count = questionCounts[entry.topicId];
+                                      const count = (entry.examPaper && examPaperCounts[entry.examPaper]) || questionCounts[entry.topicId];
                                       return (
                                         <div className="sync-card" key={entry.chapterId} style={{ opacity: count ? 0.45 : 1 }}>
                                           <div className="sync-card-info">
