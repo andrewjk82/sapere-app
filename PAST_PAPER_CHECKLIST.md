@@ -18,7 +18,34 @@
 
 ---
 
-## 1. topicId/chapterId는 반드시 "진짜" 커리큘럼 토픽으로 매핑
+## 1. 원본 그대로 넣지 말 것 — 문제마다 "변형(variant)" 버전도 추가
+
+PDF에 있는 문제를 **똑같이 베껴 넣지 말 것.** 원본 문항마다 숫자/이름/맥락을 바꾼
+변형 버전을 하나 더 만들어서 같이 추가한다 (원본 학생과 다른 학생이 풀 때 문제
+은행이 마르지 않도록).
+
+**바꿔야 하는 것:**
+- 숫자/값 (예: `85 × (102 + 8)` → `75 × (96 + 4)`처럼 다른 숫자)
+- 사람 이름 (Tom → Mia, Jerry → Kaito 등)
+- 맥락/소재 (피자 → 케이크, 펜 가격 → 공책 가격 등)
+
+**바꾸면 안 되는 것:** 같은 스킬, 같은 문제 구조, 같은 난이도. 정답 위치를 일부러
+섞을 필요는 없음 — 모든 화면이 표시 시점에 자동으로 셔플하므로
+(`src/utils/mcOptionShuffle.js`), 시드 단계에서 정답을 항상 index 0에 둬도 무방
+(CLAUDE.md 참고: "seed-time 셔플 금지").
+
+**구현 방식 — 두 가지 컨벤션이 존재:**
+- 이번 Killara 방식: 같은 파일의 두 번째 export, id에 `-var-qN` 접미사
+  (`Y7_KILLARA_1995_SIMILAR`, id: `y7-1-killara-var-q1`)
+- HSC(`PAST_PAPER_PROMPT.md`) 방식: 별도 파일 `seed[School][Year]SimilarQuestions.js`,
+  export `[SCHOOLNAME]_[YEAR]_SIMILAR_QUESTIONS`, id에 `s-` 접미사
+
+어느 쪽이든 상관없지만, **한 시험지 안에서는 하나의 컨벤션으로 통일**할 것.
+변형 문제도 원본과 **동일한 `chapterId`/`topicId`/`topicCode`**를 가져야 함 (2번 참고).
+
+---
+
+## 2. topicId/chapterId는 반드시 "진짜" 커리큘럼 토픽으로 매핑
 
 **절대 하나의 placeholder topicId(예: `y7-exam-killara`, `y12a-exam`)만 쓰고
 끝내지 말 것.** 그렇게 하면 Past Paper 단독 화면에서만 보이고, 학생이 평소
@@ -53,7 +80,7 @@ Firestore에 쓸 때도 이 값을 그대로 `chapterId`/`topicId`/`topicCode`/`
 
 ---
 
-## 2. `type` 필드는 반드시 `'multiple_choice'` — `'mc'` 아님
+## 3. `type` 필드는 반드시 `'multiple_choice'` — `'mc'` 아님
 
 ```js
 type: 'multiple_choice',   // ✅
@@ -69,7 +96,7 @@ type: 'mc',                // ❌ 절대 금지
 
 ---
 
-## 3. `examPaper` 필드 필수
+## 4. `examPaper` 필드 필수
 
 레지스트리 엔트리(`curriculumSeeds.js`의 `CHAPTER_SEED_REGISTRY`)에
 `examPaper: 'school-year'`를 설정하고, **각 question 문서에도 동일한 값**을
@@ -79,7 +106,7 @@ type: 'mc',                // ❌ 절대 금지
 
 ---
 
-## 4. 옵션 중복 금지
+## 5. 옵션 중복 금지
 
 같은 질문 안에서 **정답 텍스트가 오답으로도 등장하면 안 됨** (예:
 `options: ['9350', '8870', '9350', '9175']` — 인덱스 0과 2가 동일). 이러면 MC
@@ -106,7 +133,7 @@ console.log('Total:', all.length, '| dup options:', bad, '| dup ids:', dupIds);
 
 ---
 
-## 5. LaTeX: `$`(달러 기호)는 반드시 `\( ... \)` 안에서만
+## 6. LaTeX: `$`(달러 기호)는 반드시 `\( ... \)` 안에서만
 
 ```js
 question: 'A shop sells pens for \\( \\$2.35 \\) each.',   // ✅
@@ -121,7 +148,7 @@ KaTeX는 `\$`를 **수식 모드(`\( ... \)`) 안에서만** 리터럴 달러 �
 
 ---
 
-## 6. Firestore 업로드 (Admin UI 시딩 대신 직접 업로드할 때)
+## 7. Firestore 업로드 (Admin UI 시딩 대신 직접 업로드할 때)
 
 Firebase 로그인은 이미 되어 있음 (`firebase login`) — Admin SDK가 기본
 credential을 못 찾으면 CLI 로그인 캐시를 명시적으로 넘겨줄 것:
@@ -143,7 +170,7 @@ const db = admin.firestore();
 
 ---
 
-## 7. 인덱스 재구축 — add면 full rebuild, 내용 수정이면 touch만
+## 8. 인덱스 재구축 — add면 full rebuild, 내용 수정이면 touch만
 
 **질문을 추가/삭제/rename** 했으면 (문서 개수·소속이 바뀜):
 ```bash
@@ -166,18 +193,18 @@ topicId를 바꾸는 등 **소속이 바뀌는 수정**은 "내용 수정"이 �
 
 ---
 
-## 8. 배포 전 필수 체크
+## 9. 배포 전 필수 체크
 
 1. `npm run build` 로컬 빌드 통과 확인 (깜빡한 seed 파일 import 하나가 Vercel
    프로덕션 빌드 전체를 깨뜨린 사고가 있었음).
-2. 위 4번 검증 스크립트로 중복 ID/옵션 없음 확인.
+2. 위 5번 검증 스크립트로 중복 ID/옵션 없음 확인.
 3. Firestore에서 `examPaper` 쿼리로 전체 문항 수가 예상과 일치하는지 확인.
 4. `git add` → 의미 있는 커밋 메시지 → `git push origin main` (Vercel 자동 배포,
    `firebase deploy` 절대 금지).
 
 ---
 
-## 9. Past Papers 관리자 화면에서 확인하는 법
+## 10. Past Papers 관리자 화면에서 확인하는 법
 
 Curriculum 페이지 → 우측 상단 레이어 아이콘(Admin tools) → "Questions Seeding"
 탭 → "Past Papers" 서브탭 → 해당 학년 펼치기 → 카드의 **"👁️ View"** 버튼
@@ -189,9 +216,10 @@ Year 11/12 상단 네비게이션의 "Past Paper" 메가탭(Standard/Advanced/Ex
 
 ---
 
-## 10. 요약 체크리스트 (복붙용)
+## 11. 요약 체크리스트 (복붙용)
 
 - [ ] PDF 전체 문항 수 확인, 100% 변환 (일부만 하지 않기)
+- [ ] 문제마다 숫자/이름/맥락 바꾼 변형(variant) 버전도 추가
 - [ ] `type: 'multiple_choice'` (절대 `'mc'` 아님)
 - [ ] 각 문제에 실제 `chapterId`/`topicId`/`topicCode` (curriculumData.js 기준, placeholder 금지)
 - [ ] `examPaper` 필드 (레지스트리 + 각 문서)
