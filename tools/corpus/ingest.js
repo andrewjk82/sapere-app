@@ -119,7 +119,7 @@ async function main() {
   db.exec('BEGIN');
   try {
     for (const raw of questions) {
-      const { valid, errors } = validateQuestion(raw, { idsInBatch });
+      const { valid, errors } = validateQuestion(raw, { idsInBatch, source });
       const typeCode = raw.typeCode || raw.questionType || null;
       const typeId = typeCode ? upsertQuestionType(db, raw.topicId, typeCode, raw.typeLabel) : null;
 

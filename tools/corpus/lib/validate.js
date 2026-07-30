@@ -58,8 +58,13 @@ function checkSubQuestions(raw) {
  * Validate one raw question object (seed dialect — see chapterSeeder.js /
  * PAST_PAPER_CHECKLIST.md schema). Returns { valid, errors } where errors is
  * an array of { field, tex, error }.
+ *
+ * `source: 'generated'` enforces CLAUDE.md's "corpus-generated questions:
+ * multiple_choice only" rule — 'original'/'existing' rows are historical/
+ * reference content and legitimately contain other types, so the check is
+ * scoped to freshly-generated candidates only.
  */
-export function validateQuestion(raw, { idsInBatch } = {}) {
+export function validateQuestion(raw, { idsInBatch, source } = {}) {
   const errors = [];
 
   if (!raw || typeof raw !== 'object') {
@@ -77,6 +82,12 @@ export function validateQuestion(raw, { idsInBatch } = {}) {
     errors.push({ field: 'type', tex: '', error: 'Missing type.' });
   } else if (raw.type === 'mc') {
     errors.push({ field: 'type', tex: 'mc', error: "type must be 'multiple_choice', not 'mc' (see CLAUDE.md)." });
+  } else if (source === 'generated' && raw.type !== 'multiple_choice') {
+    errors.push({
+      field: 'type',
+      tex: raw.type,
+      error: `Corpus-generated questions must be type 'multiple_choice' — got '${raw.type}'. Non-MC skills (show that/prove/draw/construct) are excluded from generation entirely (see CLAUDE.md).`,
+    });
   }
 
   errors.push(...validateSeedQuestion(raw, renderToString));

@@ -48,6 +48,24 @@ const db = admin.firestore();
 
 ---
 
+## 2.5. 모든 문제는 반드시 객관식(multiple_choice)만 — 예외 없음 (2026-07-30)
+
+**코퍼스에서 생성하는 문제는 예외 없이 전부 `type: 'multiple_choice'`.**
+`short_answer`/`teacher_review`/`fill_blank` 등 다른 타입은 절대 만들지 않는다
+— 매번 사용자가 말할 필요 없이 항상 적용되는 규칙.
+
+실무적으로 이건 **"show that", "prove", "draw", "construct", "justify",
+"explain why"** 류의 서술형/증명/작도 스킬은 **코퍼스 생성 대상에서 아예
+제외**한다는 뜻이다. 그런 스킬은 객관식으로 억지로 우겨넣지 말고, 해당
+문제/스킬 자체를 스킵할 것 (예: "요청한 토픽에 증명형 문항이 섞여 있으면
+그 부분만 빼고 나머지를 객관식으로 채운다" 또는 사용자에게 확인).
+
+기존에 만든 문제 중 이 규칙 이전에 생성된 short_answer 문제가 있다면(예:
+2026-07-30 y11s-2 10문제 중 5개), 그건 그대로 두고 사용자가 명시적으로
+바꿔달라고 할 때만 손댈 것 — 규칙은 **앞으로 생성하는 문제부터** 적용.
+
+---
+
 ## 3. 문제 스키마 (일반 챕터 문제 — exam paper 아님)
 
 ```js
@@ -128,7 +146,8 @@ Firestore에서 `chapterId`/`topicId` 쿼리로 새 문제 수 확인 → git co
 - [ ] 대상 chapterId/topicId의 기존 문제들 조회 (scoped query, full scan 금지)
 - [ ] 난이도 분포·스타일 파악, `origin: 'teacher'` 문서는 참고만 하고 건드리지 않음
 - [ ] 요청한 개수를 난이도별로 분배해서 **완전히 새로운 시나리오**로 작성 (복사 금지)
-- [ ] `type: 'multiple_choice'`, 옵션 중복 없음, 기존 id와 안 겹치는 새 id
+- [ ] **전부 `type: 'multiple_choice'`만** — show that/prove/draw/construct류는 스킵
+- [ ] 옵션 중복 없음, 기존 id와 안 겹치는 새 id
 - [ ] `$` 등은 `\( \)` 안에
 - [ ] Firestore 업로드 → 해당 챕터 `rebuildQuestionIndexes.js` full rebuild
 - [ ] `npm run build` 통과 → git commit & push

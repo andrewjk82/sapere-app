@@ -44,6 +44,22 @@ answers are now skipped + reported like bad LaTeX. Audit the seed files (local,
 npm run audit:mc-seeds
 ```
 
+## Corpus-generated questions: multiple_choice only, no exceptions (2026-07-30)
+
+When generating new questions from the local corpus (`tools/corpus/`, see
+`QUESTION_BANK_EXPANSION.md`), **every question must be `type:
+'multiple_choice'`.** Never generate `short_answer`, `teacher_review`, or
+`fill_blank` questions this way — standing rule, applies automatically,
+never needs to be repeated.
+
+In practice this means skipping any skill that only makes sense as an
+open-ended prompt — "show that", "prove", "draw", "construct", "justify",
+"explain why". Don't force those into a multiple-choice shape; drop that
+skill from the batch (or ask if the requested topic is mostly such skills).
+
+Pre-2026-07-30 generated questions with other types are grandfathered in —
+only touch them if the user explicitly asks.
+
 ## Admin-SDK scripts that write to `questions` (tools/scripts/*)
 
 The client keeps four denormalized docs in sync incrementally; admin scripts
