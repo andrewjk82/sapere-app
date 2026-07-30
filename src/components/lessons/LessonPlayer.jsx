@@ -2226,15 +2226,20 @@ const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quic
 // than a sentence. When showRatios is on, it also prints sin/cos/tan alongside
 // the changing side lengths, so students can watch the ratio stay put while
 // the sides themselves visibly grow.
-const SimilarTrianglesDemo = ({ width = 420, height = 250, showRatios = false }) => {
+const SimilarTrianglesDemo = ({ width = 420, height = 250, ratioMode = 'none' }) => {
   const [k, setK] = useState(1.6);
   const unit = 22;
-  const ox = width - 90, oy = height - 40; // right-angle vertex — fixed anchor
+  // R is the right-angle vertex AND the fixed anchor: both legs (R–T along
+  // the adjacent direction, R–P along the opposite direction) hang off it, so
+  // scaling k stretches both legs from the same fixed corner and the
+  // hypotenuse T–P is what visibly grows. This is what makes R genuinely the
+  // 90° vertex (previously the marker and the right angle disagreed).
+  const ox = width - 100, oy = height - 40;
   const adj0 = 4, opp0 = 3, hyp0 = 5; // a 3-4-5 triangle for clean numbers
   const refT = [ox - adj0 * unit, oy];
-  const refP = [ox - adj0 * unit, oy - opp0 * unit];
+  const refP = [ox, oy - opp0 * unit];
   const T = [ox - adj0 * unit * k, oy];
-  const P = [ox - adj0 * unit * k, oy - opp0 * unit * k];
+  const P = [ox, oy - opp0 * unit * k];
   const trans = { transition: 'cx 0.35s ease, cy 0.35s ease, x1 0.35s ease, y1 0.35s ease, x2 0.35s ease, y2 0.35s ease, x 0.35s ease, y 0.35s ease' };
   const sinT = opp0 / hyp0, cosT = adj0 / hyp0, tanT = opp0 / adj0; // constant — the whole point
   return (
@@ -2252,13 +2257,19 @@ const SimilarTrianglesDemo = ({ width = 420, height = 250, showRatios = false })
         <text x={T[0] - 6} y={T[1] + 20} fontSize="13" fontWeight="800" fill="#7c3aed" textAnchor="middle"
           style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...trans }}>θ</text>
         <text x={(ox + T[0]) / 2} y={oy + 32} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="middle" style={trans}>{`adj = ${(adj0 * k).toFixed(1)}`}</text>
-        <text x={T[0] - 12} y={(T[1] + P[1]) / 2} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="end" style={trans}>{`opp = ${(opp0 * k).toFixed(1)}`}</text>
-        <text x={(ox + P[0]) / 2 + 10} y={(oy + P[1]) / 2 - 6} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="start" style={trans}>{`hyp = ${(hyp0 * k).toFixed(1)}`}</text>
+        <text x={ox - 12} y={(oy + P[1]) / 2} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="end" style={trans}>{`opp = ${(opp0 * k).toFixed(1)}`}</text>
+        <text x={(T[0] + P[0]) / 2 - 8} y={(T[1] + P[1]) / 2 - 6} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="end" style={trans}>{`hyp = ${(hyp0 * k).toFixed(1)}`}</text>
       </svg>
       <div style={{ fontSize: '0.92rem', fontWeight: 800, color: '#7c3aed' }}>scale factor k = {k.toFixed(1)}×</div>
       <input type="range" min={0.5} max={2.5} step={0.1} value={k} onChange={(e) => setK(Number(e.target.value))}
         style={{ width: Math.min(280, width - 20), accentColor: '#7c3aed' }} />
-      {showRatios && (
+      {ratioMode === 'sides' && (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4, fontSize: '0.86rem', fontWeight: 700, color: '#1e293b' }}>
+          <span>{`adj/${adj0} = opp/${opp0} = hyp/${hyp0} = ${k.toFixed(1)}`}</span>
+          <span style={{ color: '#059669' }}>every side scales by the same ratio, k</span>
+        </div>
+      )}
+      {ratioMode === 'trig' && (
         <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.86rem', fontWeight: 700, color: '#1e293b' }}>
           <span>sin θ = {sinT.toFixed(2)}</span>
           <span>cos θ = {cosT.toFixed(2)}</span>

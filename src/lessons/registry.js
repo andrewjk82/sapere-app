@@ -953,10 +953,10 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `<b>Similarity</b> lets us define a trig function as the <b>ratio</b> of two sides. Two figures are <b>congruent</b> if one can be obtained from the other by translations, rotations and reflections; they are <b>similar</b> if enlargements are allowed too. In similar figures, <b>matching angles are equal</b> and <b>matching sides are in ratio</b>. <b>Drag the slider</b> — the triangle grows, but its shape (and every angle) never changes.`,
-      speech: `Similarity is what lets us define a trig function as the ratio of two sides. Two figures are congruent if one can be obtained from the other by translations, rotations and reflections. They are similar if enlargements are allowed as well. In similar figures, matching angles are equal, and matching sides are in ratio. Drag the slider — the triangle grows, but its shape, and every angle, never changes.`,
+      narration: `<b>Similarity</b> lets us define a trig function as the <b>ratio</b> of two sides. Two figures are <b>congruent</b> if one can be obtained from the other by translations, rotations and reflections; they are <b>similar</b> if enlargements are allowed too. In similar figures, <b>matching angles are equal</b> and <b>matching sides are in ratio</b>. <b>Drag the slider</b> — the triangle grows, but its shape (and every angle) never changes, and every side grows by the <b>same</b> ratio k.`,
+      speech: `Similarity is what lets us define a trig function as the ratio of two sides. Two figures are congruent if one can be obtained from the other by translations, rotations and reflections. They are similar if enlargements are allowed as well. In similar figures, matching angles are equal, and matching sides are in ratio. Drag the slider — the triangle grows, but its shape, and every angle, never changes, and every side grows by the same ratio, k.`,
       board: [
-        { type: 'similarTriangles', showRatios: false },
+        { type: 'similarTriangles', ratioMode: 'sides' },
         { type: 'math', content: `$$\\text{similar figures:}\\quad \\text{angles equal},\\;\\; \\text{sides in ratio}$$`, emphasis: true },
       ],
     },
@@ -973,7 +973,7 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       narration: `Any two right-angled triangles with an angle θ are <b>similar</b> (AA similarity), so these ratios are the <b>same whatever the size of the triangle</b>. That is what makes them functions of θ alone — watch the sides grow below, but sin θ, cos θ and tan θ never move.`,
       speech: `Any two right angled triangles with an angle theta are similar, by the A A similarity test. So these ratios are the same, whatever the size of the triangle. That is what makes them functions of theta alone. Watch the sides grow below, but sine theta, cosine theta and tangent theta never move.`,
       board: [
-        { type: 'similarTriangles', showRatios: true },
+        { type: 'similarTriangles', ratioMode: 'trig' },
         { type: 'math', content: `$$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}} \\qquad \\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}} \\qquad \\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$$`, emphasis: true },
       ],
     },

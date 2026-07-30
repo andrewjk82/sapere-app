@@ -17,7 +17,7 @@ const VOICE = 'bf_emma'; // British female, teacher-like
 
 // To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y11a-6A', steps: buildRightTriangleTrigLesson({ audioBase: '/lessons/audio/y11a-6A' }).steps, only: [2, 4, 5, 6, 7, 8] },
+  { id: 'y11a-6A', steps: buildRightTriangleTrigLesson({ audioBase: '/lessons/audio/y11a-6A' }).steps, only: [2] },
 ];
 
 const main = async () => {
