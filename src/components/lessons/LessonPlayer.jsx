@@ -44,6 +44,13 @@ const renderNarration = (html, glossary) => {
 // ── Board primitives ───────────────────────────────────────────────────────
 const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
+// Steps that need the student to tap/answer something before moving on —
+// auto-play must PAUSE here rather than racing past on its usual timer.
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression'];
+const isInteractiveStep = (step) => (step?.board || []).some(
+  (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
+);
+
 const PlaceValueTable = ({ columns }) => (
   <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', fontFamily: FONT }}>
     {columns.map((c, i) => (
@@ -2311,8 +2318,16 @@ const LessonPlayer = ({ lesson, onClose }) => {
     const myToken = tokenRef.current;
     stopAudio();
     clearAdvance();
-    const proceed = () => { if (autoRef.current && tokenRef.current === myToken) advTimer.current = setTimeout(nextOrStop, 650); };
-    const fixedDelay = () => { if (autoRef.current) advTimer.current = setTimeout(nextOrStop, 3600); };
+    const proceed = () => {
+      if (!autoRef.current || tokenRef.current !== myToken) return;
+      if (isInteractiveStep(stepObj)) { setAuto(false); return; }
+      advTimer.current = setTimeout(nextOrStop, 650);
+    };
+    const fixedDelay = () => {
+      if (!autoRef.current) return;
+      if (isInteractiveStep(stepObj)) { setAuto(false); return; }
+      advTimer.current = setTimeout(nextOrStop, 3600);
+    };
 
     if (!voiceRef.current) { setSpeaking(false); fixedDelay(); return; }
 
