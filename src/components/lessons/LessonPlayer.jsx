@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2281,6 +2281,55 @@ const SimilarTrianglesDemo = ({ width = 420, height = 250, ratioMode = 'none' })
   );
 };
 
+// ── Reciprocal ratio highlighter ────────────────────────────────────────────
+// One triangle, three tabs — cosec/sec/cot. Tapping a tab highlights the TWO
+// sides that function actually uses in that function's own colour, greys out
+// the unused third side, and shows the matching formula — so "hyp and opp"
+// etc. is something students see change, not just read.
+const ReciprocalRatioDemo = ({ width = 340, height = 260 }) => {
+  const [fn, setFn] = useState('cosec');
+  const pad = 46;
+  const A = [pad, height - pad]; // θ vertex, bottom-left
+  const B = [width - pad, height - pad]; // right-angle vertex, bottom-right
+  const C = [width - pad, pad]; // top vertex
+  const COLORS = { cosec: '#db2777', sec: '#0891b2', cot: '#ea580c' };
+  const SIDES = { cosec: ['hyp', 'opp'], sec: ['hyp', 'adj'], cot: ['adj', 'opp'] };
+  const FORMULA = {
+    cosec: '\\operatorname{cosec}\\theta = \\dfrac{\\text{hyp}}{\\text{opp}}',
+    sec: '\\sec\\theta = \\dfrac{\\text{hyp}}{\\text{adj}}',
+    cot: '\\cot\\theta = \\dfrac{\\text{adj}}{\\text{opp}}',
+  };
+  const active = COLORS[fn];
+  const used = (side) => SIDES[fn].includes(side);
+  const trans = { transition: 'stroke 0.3s ease, stroke-width 0.3s ease, opacity 0.3s ease' };
+  const sideStyle = (side) => ({ stroke: used(side) ? active : '#cbd5e1', strokeWidth: used(side) ? 4 : 2.4, ...trans });
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
+        <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} style={sideStyle('adj')} />
+        <line x1={B[0]} y1={B[1]} x2={C[0]} y2={C[1]} style={sideStyle('opp')} />
+        <line x1={C[0]} y1={C[1]} x2={A[0]} y2={A[1]} style={sideStyle('hyp')} />
+        <polyline points={`${B[0] - 10},${B[1]} ${B[0] - 10},${B[1] - 10} ${B[0]},${B[1] - 10}`} fill="none" stroke="#7c3aed" strokeWidth="1.6" />
+        <text x={A[0] - 6} y={A[1] + 6} fontSize="13" fontWeight="700" fill="#1e293b" textAnchor="end">θ</text>
+        <text x={B[0] + 4} y={B[1] + 6} fontSize="11.5" fontWeight="700" fill="#1e293b" textAnchor="start">90°</text>
+        <text x={(A[0] + B[0]) / 2} y={B[1] + 20} fontSize="13" fontWeight="800" textAnchor="middle" style={{ fill: used('adj') ? active : '#94a3b8', ...trans }}>adj</text>
+        <text x={B[0] + 14} y={(B[1] + C[1]) / 2} fontSize="13" fontWeight="800" textAnchor="start" style={{ fill: used('opp') ? active : '#94a3b8', ...trans }}>opp</text>
+        <text x={(A[0] + C[0]) / 2 - 14} y={(A[1] + C[1]) / 2 - 8} fontSize="13" fontWeight="800" textAnchor="end" style={{ fill: used('hyp') ? active : '#94a3b8', ...trans }}>hyp</text>
+      </svg>
+      <div style={{ display: 'flex', gap: 8 }}>
+        {['cosec', 'sec', 'cot'].map((f) => (
+          <button key={f} onClick={() => setFn(f)}
+            style={{ padding: '7px 15px', borderRadius: 999, border: `2px solid ${COLORS[f]}`, background: fn === f ? COLORS[f] : '#fff', color: fn === f ? '#fff' : COLORS[f], fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.85rem' }}>
+            {f === 'cosec' ? 'cosec θ' : f === 'sec' ? 'sec θ' : 'cot θ'}
+          </button>
+        ))}
+      </div>
+      <MathView content={`$$${FORMULA[fn]}$$`} style={{ fontSize: '1.2rem', fontWeight: 800, color: active }} />
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2362,6 +2411,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'compassBearing') inner = <CompassBearingDiagram {...item} />;
   else if (item.type === 'angleCircle') inner = <AngleCircle {...item} />;
   else if (item.type === 'similarTriangles') inner = <SimilarTrianglesDemo {...item} />;
+  else if (item.type === 'reciprocalRatio') inner = <ReciprocalRatioDemo {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };

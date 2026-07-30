@@ -978,12 +978,9 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `Each of these has a <b>reciprocal</b> function: <b>cosecant</b>, <b>secant</b> and <b>cotangent</b> — just hyp and opp, hyp and adj, adj and opp, flipped the other way up.`,
-      speech: `Each of these has a reciprocal function. Cosecant, secant, and cotangent — the same pairs of sides, hyp and opp, hyp and adj, adj and opp, just flipped the other way up.`,
-      board: [
-        triangle([[0, 0], [4, 0], [4, 3]], ['adj', 'opp', 'hyp'], ['θ', '90°', '']),
-        { type: 'math', content: `$$\\operatorname{cosec}\\theta = \\dfrac{\\text{hyp}}{\\text{opp}} \\qquad \\sec\\theta = \\dfrac{\\text{hyp}}{\\text{adj}} \\qquad \\cot\\theta = \\dfrac{\\text{adj}}{\\text{opp}}$$`, emphasis: true },
-      ],
+      narration: `Each of these has a <b>reciprocal</b> function: <b>cosecant</b>, <b>secant</b> and <b>cotangent</b>. <b>Tap each button</b> below — the two sides it uses light up, so you can see which pair belongs to which function.`,
+      speech: `Each of these has a reciprocal function. Cosecant, secant, and cotangent. Tap each button below — the two sides it uses light up, so you can see which pair belongs to which function.`,
+      board: [{ type: 'reciprocalRatio' }],
     },
     {
       narration: `Calculators only have <b>sin, cos and tan</b> buttons — no cosec, sec or cot button. So instead of hunting for one, just use the <b>reciprocal</b>: $\\operatorname{cosec}\\theta = \\dfrac{1}{\\sin\\theta}$, $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$, $\\cot\\theta = \\dfrac{1}{\\tan\\theta}$.`,
