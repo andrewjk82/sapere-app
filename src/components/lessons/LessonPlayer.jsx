@@ -112,7 +112,11 @@ const Tracer = ({ fn, from, to, dur = 2600, label, approach, sx, sy, x0, y0, yMi
 };
 
 // Dedicated right-triangle SVG — auto-computes all label positions from geometry.
-const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height = 260 }) => {
+// `quiz` (optional): { prompt, correctIndex (0=bottom,1=right,2=hyp), explanation }
+// makes the three sides clickable — students tap the side being asked about
+// and get instant colour feedback, no separate diagram needed.
+const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height = 260, quiz }) => {
+  const [selected, setSelected] = useState(null);
   const pad = 48;
   const [A, B, C] = verts; // A=bottom-left (acute), B=bottom-right (right angle), C=top-right (acute)
 
@@ -152,26 +156,53 @@ const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height =
   const rm = 10;
   const rmPts = `${pB[0] - rm},${pB[1]} ${pB[0] - rm},${pB[1] - rm} ${pB[0]},${pB[1] - rm}`;
   const polyPts = [pA, pB, pC].map(([x, y]) => `${x},${y}`).join(' ');
+  const sidePairs = [[pA, pB], [pB, pC], [pC, pA]]; // bottom, right, hypotenuse — matches sideLabels order
 
-  return (
+  const svg = (
     <svg width={width} height={height} style={{ display: 'block', margin: '0 auto', overflow: 'visible' }}>
       <motion.polygon points={polyPts} fill="rgba(124,58,237,0.07)" stroke="#7c3aed" strokeWidth="3" strokeLinejoin="round"
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
       <motion.polyline points={rmPts} fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinejoin="round"
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} />
+      {quiz && sidePairs.map(([P1, P2], i) => {
+        const state = selected === i ? (i === quiz.correctIndex ? 'correct' : 'wrong') : 'idle';
+        const stroke = state === 'correct' ? '#22c55e' : state === 'wrong' ? '#ef4444' : '#7c3aed';
+        return (
+          <motion.line key={'hit' + i} x1={P1[0]} y1={P1[1]} x2={P2[0]} y2={P2[1]}
+            stroke={stroke} strokeWidth={state === 'idle' ? 14 : 9} strokeLinecap="round"
+            initial={false} animate={{ opacity: state === 'idle' ? 0.001 : 0.4 }}
+            onClick={() => setSelected(i)} style={{ cursor: 'pointer' }} />
+        );
+      })}
       {[[sAB, sideLabels[0]], [sBC, sideLabels[1]], [sCA, sideLabels[2]]].map(([pos, label], i) => (
         <motion.text key={'s' + i} x={pos[0]} y={pos[1]} textAnchor="middle" dominantBaseline="middle"
-          fontSize="15" fontWeight="800" fill="#7c3aed"
-          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          fontSize="15" fontWeight="800" fill="#7c3aed" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, pointerEvents: 'none' }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.55 + i * 0.1 }}>{label}</motion.text>
       ))}
       {[[aPos, angleLabels[0]], [bPos, angleLabels[1]], [cPos, angleLabels[2]]].map(([pos, label], i) => (
         <motion.text key={'a' + i} x={pos[0]} y={pos[1]} textAnchor="middle" dominantBaseline="middle"
-          fontSize="13" fontWeight="700" fill="#1e1b4b"
-          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+          fontSize="13" fontWeight="700" fill="#1e1b4b" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, pointerEvents: 'none' }}
           initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.85 + i * 0.1 }}>{label}</motion.text>
       ))}
     </svg>
+  );
+
+  if (!quiz) return svg;
+  const answered = selected != null;
+  const isCorrect = answered && selected === quiz.correctIndex;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, fontFamily: FONT }}>
+      {svg}
+      <div style={{ fontSize: '0.86rem', fontWeight: 700, color: '#475569', textAlign: 'center', maxWidth: 320 }}>{quiz.prompt}</div>
+      <AnimatePresence>
+        {answered && (
+          <motion.div initial={{ opacity: 0, y: -4 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+            style={{ fontSize: '0.84rem', fontWeight: 800, color: isCorrect ? '#15803d' : '#b45309', textAlign: 'center', maxWidth: 320 }}>
+            {isCorrect ? '✓ Correct! ' : '✗ Not that one — try another side. '}{(!isCorrect || quiz.explanation) && quiz.explanation}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 
@@ -1968,6 +1999,147 @@ const PercentGrid = ({ count = 50, color = '#7c3aed', label, cellSize = 25, gap 
   );
 };
 
+// ── Checkpoint quiz ──────────────────────────────────────────────────────────
+// A generic multiple-choice "quick check" — students tap an option, get instant
+// colour feedback + a short explanation, and can retry. Option/prompt text may
+// contain inline `$…$` math (rendered via MathView). Reusable across any lesson.
+const Checkpoint = ({ prompt, options = [], explanation = '' }) => {
+  const [selected, setSelected] = useState(null);
+  const isCorrect = selected != null && !!options[selected]?.correct;
+  return (
+    <div style={{ fontFamily: FONT, width: '100%', maxWidth: 560, margin: '0 auto', display: 'flex', flexDirection: 'column', gap: 14 }}>
+      <div style={{ display: 'flex', justifyContent: 'center' }}>
+        <span style={{ fontSize: '0.68rem', fontWeight: 900, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#7c3aed', background: '#f5f3ff', padding: '4px 12px', borderRadius: 999 }}>
+          Quick check
+        </span>
+      </div>
+      <MathView content={prompt} style={{ fontSize: '1.02rem', fontWeight: 700, color: '#1e1b4b', textAlign: 'center' }} />
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, justifyContent: 'center' }}>
+        {options.map((opt, i) => {
+          const chosen = selected === i;
+          const revealCorrect = selected != null && !chosen && opt.correct;
+          const bg = chosen ? (opt.correct ? '#dcfce7' : '#fee2e2') : revealCorrect ? '#f0fdf4' : '#f8fafc';
+          const border = chosen ? (opt.correct ? '#22c55e' : '#ef4444') : revealCorrect ? '#86efac' : '#e2e8f0';
+          const color = chosen ? (opt.correct ? '#15803d' : '#b91c1c') : '#1e293b';
+          return (
+            <motion.button key={i} whileTap={{ scale: 0.94 }} onClick={() => setSelected(i)}
+              style={{ padding: '10px 18px', borderRadius: 14, border: `2px solid ${border}`, background: bg, color, fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.9rem' }}>
+              <MathView content={opt.text} style={{ fontSize: '0.9rem', fontWeight: 800, color: 'inherit' }} />
+            </motion.button>
+          );
+        })}
+      </div>
+      <AnimatePresence>
+        {selected != null && (
+          <motion.div initial={{ opacity: 0, y: -6 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }}
+            style={{ textAlign: 'center', fontSize: '0.85rem', fontWeight: 700, color: isCorrect ? '#15803d' : '#b45309' }}>
+            {isCorrect ? '✓ Correct! ' : '✗ Not quite — try another option. '}{explanation}
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+// ── Elevation / depression diagram ──────────────────────────────────────────
+// Click-toggle between the two matching textbook diagrams: an observer sighting
+// UP to an object above the horizontal (elevation) vs sighting DOWN from a
+// height to an object below it (depression). Same shape, mirrored, so the
+// toggle visibly shows how the horizontal line is what both angles are
+// measured from.
+const ElevationDepressionDiagram = ({ width = 420, height = 260 }) => {
+  const [mode, setMode] = useState('elevation');
+  const isElev = mode === 'elevation';
+  // Elevation: observer bottom-left, horizontal line right, sight line up-right to object.
+  // Depression: observer top-left (on a height), horizontal line right, sight line down-right to object.
+  const obs = isElev ? [70, height - 50] : [70, 50];
+  const obj = isElev ? [width - 70, 60] : [width - 70, height - 60];
+  const horizEnd = [width - 40, obs[1]];
+  const arcR = 34;
+  const angleDeg = isElev ? 38 : 32;
+  const sign = isElev ? -1 : 1;
+  const arcEnd = [obs[0] + arcR * Math.cos((angleDeg * Math.PI) / 180), obs[1] + sign * arcR * Math.sin((angleDeg * Math.PI) / 180)];
+  const largeArc = 0, sweep = isElev ? 0 : 1;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 8 }}>
+        {['elevation', 'depression'].map((m) => (
+          <button key={m} onClick={() => setMode(m)}
+            style={{ padding: '6px 16px', borderRadius: 999, border: '2px solid #7c3aed', background: mode === m ? '#7c3aed' : '#fff', color: mode === m ? '#fff' : '#7c3aed', fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.8rem', textTransform: 'capitalize' }}>
+            angle of {m}
+          </button>
+        ))}
+      </div>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <motion.line x1={obs[0]} y1={obs[1]} x2={horizEnd[0]} y2={horizEnd[1]} stroke="#94a3b8" strokeWidth="1.6" strokeDasharray="5 4"
+          initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} />
+        <motion.line key={mode + '-sight'} x1={obs[0]} y1={obs[1]} x2={obj[0]} y2={obj[1]} stroke="#7c3aed" strokeWidth="2.4"
+          initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.5 }} />
+        <path d={`M ${obs[0] + arcR} ${obs[1]} A ${arcR} ${arcR} 0 ${largeArc} ${sweep} ${arcEnd[0]} ${arcEnd[1]}`} fill="none" stroke="#f59e0b" strokeWidth="2" />
+        <text x={obs[0] + arcR + 8} y={obs[1] + sign * (arcR - 4)} fontSize="13" fontWeight="800" fill="#b45309" style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}>{angleDeg}°</text>
+        <circle cx={obs[0]} cy={obs[1]} r="5" fill="#1e1b4b" />
+        <circle cx={obj[0]} cy={obj[1]} r="5" fill="#7c3aed" />
+        <text x={obs[0]} y={obs[1] + (isElev ? 22 : -12)} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#1e293b">Observer</text>
+        <text x={obj[0]} y={obj[1] + (isElev ? -12 : 22)} textAnchor="middle" fontSize="12.5" fontWeight="700" fill="#1e293b">{isElev ? 'Sun' : 'Boat'}</text>
+      </svg>
+      <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#475569', textAlign: 'center', maxWidth: 340 }}>
+        {isElev
+          ? 'The angle of elevation is measured UP from the horizontal to an object above it.'
+          : 'The angle of depression is measured DOWN from the horizontal to an object below it.'}
+      </div>
+    </div>
+  );
+};
+
+// ── Compass bearing diagram ─────────────────────────────────────────────────
+// A compass rose with one or more rays; click-toggle relabels every ray between
+// compass notation (e.g. "S45°W") and true-bearing notation (e.g. "225°T") —
+// same physical direction, two ways of writing it.
+const CompassBearingDiagram = ({ rays = [], width = 300, height = 300 }) => {
+  const [mode, setMode] = useState('compass');
+  const cx = width / 2, cy = height / 2, R = Math.min(width, height) / 2 - 46;
+  const toXY = (deg) => {
+    const rad = (deg * Math.PI) / 180;
+    return [cx + R * Math.sin(rad), cy - R * Math.cos(rad)];
+  };
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 8 }}>
+        {[['compass', 'Compass bearing'], ['true', 'True bearing']].map(([m, l]) => (
+          <button key={m} onClick={() => setMode(m)}
+            style={{ padding: '6px 14px', borderRadius: 999, border: '2px solid #7c3aed', background: mode === m ? '#7c3aed' : '#fff', color: mode === m ? '#fff' : '#7c3aed', fontWeight: 800, cursor: 'pointer', fontFamily: FONT, fontSize: '0.76rem' }}>
+            {l}
+          </button>
+        ))}
+      </div>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <line x1={cx} y1={16} x2={cx} y2={height - 16} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+        <line x1={16} y1={cy} x2={width - 16} y2={cy} stroke="#cbd5e1" strokeWidth="1.4" strokeDasharray="4 4" />
+        <text x={cx} y={13} textAnchor="middle" fontSize="13" fontWeight="800" fill="#475569">N</text>
+        <text x={cx} y={height - 4} textAnchor="middle" fontSize="13" fontWeight="800" fill="#475569">S</text>
+        <text x={width - 6} y={cy + 4} textAnchor="end" fontSize="13" fontWeight="800" fill="#475569">E</text>
+        <text x={6} y={cy + 4} textAnchor="start" fontSize="13" fontWeight="800" fill="#475569">W</text>
+        <circle cx={cx} cy={cy} r="4" fill="#1e1b4b" />
+        {rays.map((r, i) => {
+          const [x, y] = toXY(r.deg);
+          const label = mode === 'compass' ? r.compassLabel : r.trueLabel;
+          const col = r.color || '#7c3aed';
+          return (
+            <g key={i}>
+              <motion.line x1={cx} y1={cy} x2={x} y2={y} stroke={col} strokeWidth="2.4"
+                initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 0.55, delay: 0.15 * i }} />
+              <circle cx={x} cy={y} r="4" fill={col} />
+              <motion.text key={mode + i} x={x + (x > cx ? 8 : -8)} y={y + (y > cy ? 15 : -8)} textAnchor={x > cx ? 'start' : 'end'}
+                fontSize="12.5" fontWeight="800" fill={col} style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4 }}
+                initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.25 }}>{label}</motion.text>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2044,6 +2216,9 @@ const BoardItem = ({ item }) => {
     </div>
   );
   else if (item.type === 'text') inner = <div style={{ fontSize: '0.95rem', fontWeight: 600, color: '#475569', textAlign: 'center', fontFamily: FONT }}>{item.content}</div>;
+  else if (item.type === 'checkpoint') inner = <Checkpoint {...item} />;
+  else if (item.type === 'elevationDepression') inner = <ElevationDepressionDiagram {...item} />;
+  else if (item.type === 'compassBearing') inner = <CompassBearingDiagram {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };

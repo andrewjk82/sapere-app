@@ -927,6 +927,335 @@ export const buildTrigEquationsLesson = ({ audioBase = null } = {}) => {
   return { emoji: '🧭', title: 'Solving trigonometric equations', steps, glossary };
 };
 
+// ── Lesson: Year 11 Advanced · 6A · Trigonometry with right-angled triangles ─
+export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
+  // verts: [A, B, C] where B is the right-angle vertex (bottom-right).
+  // sideLabels: [bottom, right, hypotenuse]. angleLabels: [A, B=90°, C].
+  const triangle = (verts, sideLabels, angleLabels) => ({
+    type: 'triangle', verts, sideLabels, angleLabels, width: 300, height: 260,
+  });
+
+  const steps = [
+    {
+      narration: `The trigonometry of triangles rests on <b>two</b> foundations: <b>Pythagoras' theorem</b> and <b>similarity</b>.`,
+      speech: `The trigonometry of triangles rests on two foundations. Pythagoras' theorem, and similarity.`,
+      board: [{ type: 'math', content: `$$\\text{Pythagoras' theorem} \\;+\\; \\text{similarity} \\;\\longrightarrow\\; \\text{trigonometry}$$` }],
+    },
+    {
+      narration: `<b>Pythagoras' theorem:</b> the square on the <b>hypotenuse</b> of a right-angled triangle is the sum of the squares on the other two sides.`,
+      speech: `Pythagoras' theorem says the square on the hypotenuse of a right angled triangle is the sum of the squares on the other two sides.`,
+      board: [
+        triangle([[0, 0], [4, 0], [4, 3]], ['b', 'a', 'c'], ['', '90°', '']),
+        { type: 'math', content: `$$c^{2} = a^{2} + b^{2}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Similarity</b> lets us define a trig function as the <b>ratio</b> of two sides. Two figures are <b>congruent</b> if one can be obtained from the other by translations, rotations and reflections; they are <b>similar</b> if enlargements are allowed too. In similar figures, <b>matching angles are equal</b> and <b>matching sides are in ratio</b>.`,
+      speech: `Similarity is what lets us define a trig function as the ratio of two sides. Two figures are congruent if one can be obtained from the other by translations, rotations and reflections. They are similar if enlargements are allowed as well. In similar figures, matching angles are equal, and matching sides are in ratio.`,
+      board: [{ type: 'math', content: `$$\\text{similar figures:}\\quad \\text{angles equal},\\;\\; \\text{sides in ratio}$$`, emphasis: true }],
+    },
+    {
+      narration: `Let <b>θ</b> be any acute angle. In a right-angled triangle with angle θ, label the sides: <b>hyp</b> — the hypotenuse (opposite the right angle); <b>opp</b> — opposite θ; <b>adj</b> — the third side, adjacent to θ. <b>Tap a side</b> below to try it yourself.`,
+      speech: `Let theta be any acute angle. In a right angled triangle with angle theta, label the sides. Hyp is the hypotenuse, opposite the right angle. Opp is the side opposite theta. And adj is the third side, adjacent to theta but not the hypotenuse.`,
+      board: [{
+        type: 'triangle', verts: [[0, 0], [4, 0], [4, 3]], sideLabels: ['adj', 'opp', 'hyp'], angleLabels: ['θ', '90°', ''],
+        width: 300, height: 260,
+        quiz: { prompt: 'Tap the side that is opposite θ.', correctIndex: 1, explanation: 'The side facing θ (not touching it) is the "opp" side — here, the vertical side on the right.' },
+      }],
+    },
+    {
+      narration: `Any two right-angled triangles with an angle θ are <b>similar</b> (AA similarity), so these ratios are the <b>same whatever the size of the triangle</b>. That is what makes them functions of θ alone.`,
+      speech: `Any two right angled triangles with an angle theta are similar, by the A A similarity test. So these ratios are the same, whatever the size of the triangle. That is what makes them functions of theta alone.`,
+      board: [{ type: 'math', content: `$$\\sin\\theta = \\dfrac{\\text{opp}}{\\text{hyp}} \\qquad \\cos\\theta = \\dfrac{\\text{adj}}{\\text{hyp}} \\qquad \\tan\\theta = \\dfrac{\\text{opp}}{\\text{adj}}$$`, emphasis: true }],
+    },
+    {
+      narration: `Each of these has a <b>reciprocal</b> function: <b>cosecant</b>, <b>secant</b> and <b>cotangent</b>.`,
+      speech: `Each of these has a reciprocal function. Cosecant, secant, and cotangent.`,
+      board: [{ type: 'math', content: `$$\\operatorname{cosec}\\theta = \\dfrac{\\text{hyp}}{\\text{opp}} \\qquad \\sec\\theta = \\dfrac{\\text{hyp}}{\\text{adj}} \\qquad \\cot\\theta = \\dfrac{\\text{adj}}{\\text{opp}}$$`, emphasis: true }],
+    },
+    {
+      narration: `In practice, the reciprocal functions can mostly be <b>avoided</b>, since $\\operatorname{cosec}\\theta = \\dfrac{1}{\\sin\\theta}$, $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$, $\\cot\\theta = \\dfrac{1}{\\tan\\theta}$.`,
+      speech: `In practice, the reciprocal functions can mostly be avoided, since cosecant theta equals 1 over sine theta, secant theta equals 1 over cosine theta, and cotangent theta equals 1 over tangent theta.`,
+      board: [{ type: 'math', content: `$$\\operatorname{cosec}\\theta = \\dfrac{1}{\\sin\\theta} \\qquad \\sec\\theta = \\dfrac{1}{\\cos\\theta} \\qquad \\cot\\theta = \\dfrac{1}{\\tan\\theta}$$`, emphasis: true }],
+    },
+    {
+      narration: `The values of the trig functions at <b>30°, 45° and 60°</b> can be found <b>exactly</b>, using half a square and half an equilateral triangle. Half a square of side 1 gives a <b>45°–45°–90°</b> triangle with hypotenuse √2.`,
+      speech: `The values of the trig functions at 30 degrees, 45 degrees and 60 degrees can be found exactly, using half a square and half an equilateral triangle. Half a square of side 1 gives a 45, 45, 90 triangle, with hypotenuse root 2.`,
+      board: [triangle([[0, 0], [1, 0], [1, 1]], ['1', '1', '√2'], ['45°', '90°', '45°'])],
+    },
+    {
+      narration: `Half an equilateral triangle of side 2, split by dropping an altitude, gives a <b>30°–60°–90°</b> triangle with sides 1, √3 and 2.`,
+      speech: `Half an equilateral triangle of side 2, split by dropping an altitude, gives a 30, 60, 90 triangle, with sides 1, root 3, and 2.`,
+      board: [triangle([[0, 0], [1, 0], [1, Math.sqrt(3)]], ['1', '√3', '2'], ['60°', '90°', '30°'])],
+    },
+    {
+      narration: `Applying the ratio definitions to these two triangles gives the table of <b>exact values</b>. Learn these by heart.`,
+      speech: `Applying the ratio definitions to these two triangles gives the table of exact values. Learn these by heart.`,
+      board: [{ type: 'valueTable', rows: [
+        ['θ', '30°', '45°', '60°'],
+        ['\\sin\\theta', '\\frac{1}{2}', '\\frac{1}{\\sqrt2}', '\\frac{\\sqrt3}{2}'],
+        ['\\cos\\theta', '\\frac{\\sqrt3}{2}', '\\frac{1}{\\sqrt2}', '\\frac{1}{2}'],
+        ['\\tan\\theta', '\\frac{1}{\\sqrt3}', '1', '\\sqrt3'],
+      ] }],
+    },
+    {
+      narration: `Quick check before moving on.`,
+      speech: `Here's a quick check before moving on.`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{What is } \\tan 60°?$$`,
+        options: [
+          { text: '$\\frac{1}{2}$', correct: false },
+          { text: '$\\sqrt3$', correct: true },
+          { text: '$\\frac{1}{\\sqrt3}$', correct: false },
+          { text: '$\\frac{\\sqrt3}{2}$', correct: false },
+        ],
+        explanation: 'From the 30–60–90 triangle (sides 1, √3, 2), tan 60° = opp/adj = √3/1 = √3.',
+      }],
+    },
+    {
+      narration: `For <b>other</b> angles, use a calculator — first check it is in <b>degrees mode</b>. Make sure you can enter and convert <b>degrees, minutes and seconds</b> (a °′″ or DMS key): $\\sin 53°47' \\approx 0.8068$, and if $\\sin\\theta = \\tfrac58$ then $\\theta \\approx 38°41'$.`,
+      speech: `For other angles, use a calculator, but first check it is in degrees mode. Make sure you can enter and convert degrees, minutes and seconds, using a D M S key. Sine of 53 degrees 47 minutes is about 0.8068. And if sine theta equals five eighths, then theta is about 38 degrees 41 minutes.`,
+      board: [{ type: 'math', content: `$$\\sin 53°47' \\approx 0.8068 \\qquad \\sin\\theta = \\tfrac{5}{8} \\Rightarrow \\theta \\approx 38°41'$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>To find an unknown side:</b> write $\\dfrac{\\text{unknown side}}{\\text{known side}} = \\ldots$ with the unknown at top left, then complete the right side with sin, cos or tan (or a reciprocal).`,
+      speech: `To find an unknown side, start by writing, unknown side over known side equals dot dot dot, with the unknown placed at top left. Then complete the right hand side with sine, cosine or tangent, or a reciprocal of one of these.`,
+      board: [{ type: 'math', content: `$$\\dfrac{\\text{unknown side}}{\\text{known side}} = \\sin\\theta,\\ \\cos\\theta,\\ \\tan\\theta,\\ \\text{or a reciprocal}$$` }],
+    },
+    {
+      narration: `<b>Example.</b> Find x, given the hypotenuse 5 and angle 60°. Since x is <b>opposite</b> 60° and 5 is the <b>hypotenuse</b>: $\\dfrac{x}{5} = \\sin 60°$, so $x = 5\\sin 60° = \\dfrac{5\\sqrt3}{2}$.`,
+      speech: `Example. Find x, given the hypotenuse 5 and the angle 60 degrees. Since x is opposite 60 degrees and 5 is the hypotenuse, x over 5 equals sine 60 degrees. So x equals 5 sine 60 degrees, which is 5 root 3 over 2.`,
+      board: [
+        triangle([[0, 0], [2.5, 0], [2.5, 4.33]], ['', '5', 'x'], ['60°', '90°', '']),
+        { type: 'math', content: `$$\\dfrac{x}{5} = \\sin 60° \\;\\Rightarrow\\; x = 5\\sin 60° = \\dfrac{5\\sqrt3}{2}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Your turn.</b> Same triangle shape, hypotenuse 8, angle 30° — which equation finds the side <b>opposite</b> 30°?`,
+      speech: `Your turn. Same triangle shape, hypotenuse 8, angle 30 degrees. Which equation finds the side opposite 30 degrees?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{Hypotenuse } 8,\\ \\theta = 30°.\\ \\text{Find the opposite side } x.$$`,
+        options: [
+          { text: '$x = 8\\sin 30°$', correct: true },
+          { text: '$x = 8\\cos 30°$', correct: false },
+          { text: '$x = \\dfrac{8}{\\sin 30°}$', correct: false },
+          { text: '$x = 8\\tan 30°$', correct: false },
+        ],
+        explanation: 'x is opposite θ and 8 is the hypotenuse, so opp/hyp = sin θ gives x/8 = sin 30°, i.e. x = 8 sin 30°.',
+      }],
+    },
+    {
+      narration: `<b>Finding an unknown angle</b> works from the known sides: figure out which of cos θ, sin θ or tan θ uses <b>those two</b> sides, then take the inverse function.`,
+      speech: `Finding an unknown angle works from the two known sides. Work out which of cosine theta, sine theta or tangent theta uses those two sides, then take the inverse function.`,
+      board: [{ type: 'math', content: `$$\\text{known sides} \\;\\longrightarrow\\; \\cos\\theta,\\ \\sin\\theta,\\ \\text{or}\\ \\tan\\theta \\;\\longrightarrow\\; \\theta$$` }],
+    },
+    {
+      narration: `<b>Example.</b> Find θ, given the opposite side 12 and the adjacent side 7. Both given sides are opposite and adjacent, so use tan: $\\tan\\theta = \\dfrac{12}{7}$, giving $\\theta \\approx 59°45'$.`,
+      speech: `Example. Find theta, given the opposite side 12 and the adjacent side 7. Both given sides are opposite and adjacent, so use tangent. Tan theta equals 12 over 7, giving theta is about 59 degrees 45 minutes.`,
+      board: [
+        triangle([[0, 0], [3.5, 0], [3.5, 6]], ['12', '7', ''], ['', '90°', 'θ']),
+        { type: 'math', content: `$$\\tan\\theta = \\dfrac{12}{7} \\;\\Rightarrow\\; \\theta \\approx 59°45'$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `<b>Your turn.</b> A right-angled triangle has opposite side 8 and adjacent side 6 — which ratio finds θ?`,
+      speech: `Your turn. A right angled triangle has opposite side 8 and adjacent side 6. Which ratio finds theta?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{opposite} = 8,\\ \\text{adjacent} = 6.\\ \\text{Find } \\theta.$$`,
+        options: [
+          { text: '$\\tan\\theta = \\frac{8}{6}$', correct: true },
+          { text: '$\\sin\\theta = \\frac{8}{6}$', correct: false },
+          { text: '$\\cos\\theta = \\frac{6}{8}$', correct: false },
+          { text: '$\\tan\\theta = \\frac{6}{8}$', correct: false },
+        ],
+        explanation: 'Only opposite and adjacent are known (no hypotenuse), so use tan θ = opp/adj = 8/6.',
+      }],
+    },
+    {
+      narration: `<b>Recap:</b> $\\sin\\theta = \\tfrac{\\text{opp}}{\\text{hyp}}$, $\\cos\\theta = \\tfrac{\\text{adj}}{\\text{hyp}}$, $\\tan\\theta = \\tfrac{\\text{opp}}{\\text{adj}}$; the reciprocals cosec, sec, cot; the exact values at 30°, 45°, 60°; and use the unknown-over-known method for sides, or the inverse function for angles.`,
+      speech: `Recap. Sine theta equals opposite over hypotenuse. Cosine theta equals adjacent over hypotenuse. Tangent theta equals opposite over adjacent. Remember the reciprocals, cosecant, secant and cotangent. Remember the exact values at 30, 45 and 60 degrees. And use the unknown over known method to find a side, or the inverse function to find an angle.`,
+      board: [{ type: 'math', content: `$$\\sin\\theta=\\dfrac{\\text{opp}}{\\text{hyp}} \\quad \\cos\\theta=\\dfrac{\\text{adj}}{\\text{hyp}} \\quad \\tan\\theta=\\dfrac{\\text{opp}}{\\text{adj}}$$` }],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  const glossary = {
+    ...BASE_GLOSSARY,
+    'hypotenuse': 'The longest side of a right-angled triangle — the side opposite the right angle.',
+    'opposite side': 'The side of a right-angled triangle facing the angle θ being used.',
+    'adjacent side': 'The side of a right-angled triangle next to angle θ, that is not the hypotenuse.',
+    'similar': 'Two figures where matching angles are equal and matching sides are in the same ratio — enlargements of each other.',
+    'congruent': 'Two figures that are identical in shape and size — one is obtained from the other by translations, rotations and reflections only.',
+    'cosecant': 'The reciprocal of sine: cosec θ = hyp/opp = 1/sin θ.',
+    'secant': 'The reciprocal of cosine: sec θ = hyp/adj = 1/cos θ.',
+    'cotangent': 'The reciprocal of tangent: cot θ = adj/opp = 1/tan θ.',
+    'exact values': 'The trig values at 30°, 45° and 60° written as exact surds (like √3/2), found from the two special triangles rather than a calculator.',
+  };
+  return { emoji: '🔺', title: 'Trigonometry with right-angled triangles', steps, glossary };
+};
+
+// ── Lesson: Year 11 Advanced · 6B · Problems involving right-angled triangles
+export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
+  const triangle = (verts, sideLabels, angleLabels, quiz) => ({
+    type: 'triangle', verts, sideLabels, angleLabels, width: 300, height: 260, ...(quiz ? { quiz } : {}),
+  });
+  // Plain path diagram (no axes) for the compass-bearing example — reuses the
+  // generic graph primitive's lines/points/texts, same trick as the radian
+  // lesson's angle diagrams.
+  const bearingPathDiagram = () => ({
+    type: 'graph', showAxes: false, width: 360, height: 300,
+    xMin: -40, xMax: 300, yMin: -30, yMax: 130,
+    lines: [
+      { from: [0, 0], to: [0, 86.6], color: '#94a3b8', dashed: true },
+      { from: [0, 86.6], to: [50, 0], color: '#7c3aed', delay: 0.3 },
+      { from: [50, 0], to: [250, 0], color: '#10b981', delay: 0.6 },
+      { from: [0, 86.6], to: [250, 0], color: '#f59e0b', dashed: true, delay: 0.9 },
+    ],
+    points: [{ x: 0, y: 86.6 }, { x: 0, y: 0 }, { x: 50, y: 0 }, { x: 250, y: 0 }],
+    texts: [
+      { x: 0, y: 100, text: 'A', color: '#1e1b4b', size: 13 },
+      { x: -14, y: -6, text: 'P', color: '#1e1b4b', size: 13 },
+      { x: 50, y: -12, text: 'B', color: '#1e1b4b', size: 13 },
+      { x: 250, y: -12, text: 'C', color: '#1e1b4b', size: 13 },
+      { x: 25, y: 50, text: '30°', color: '#7c3aed', size: 12 },
+      { x: 25, y: 55, text: '100 km', color: '#7c3aed', size: 11 },
+      { x: 145, y: -12, text: '200 km', color: '#10b981', size: 11 },
+    ],
+  });
+
+  const steps = [
+    {
+      narration: `Trigonometry developed in the ancient world to solve <b>practical</b> problems with right-angled triangles — typically involving <b>compass bearings</b> and <b>angles of elevation or depression</b>.`,
+      speech: `Trigonometry developed in the ancient world to solve practical problems with right angled triangles, typically involving compass bearings and angles of elevation or depression.`,
+      board: [{ type: 'math', content: `$$\\text{elevation / depression} \\qquad \\text{compass \\& true bearings}$$` }],
+    },
+    {
+      narration: `<b>Angles of elevation and depression</b> are always measured from the <b>horizontal</b>, and are always <b>acute</b> angles. Tap the buttons to switch between the two.`,
+      speech: `Angles of elevation and depression are always measured from the horizontal, and are always acute angles. Tap the buttons to switch between the two.`,
+      board: [{ type: 'elevationDepression' }],
+    },
+    {
+      narration: `Quick check — the angle of depression from a lighthouse to a boat is 20°. By <b>alternate angles</b> (the horizontal at each end is parallel), what is the angle of elevation from the boat to the lighthouse?`,
+      speech: `Quick check. The angle of depression from a lighthouse to a boat is 20 degrees. By alternate angles, since the horizontal at each end is parallel, what is the angle of elevation from the boat to the lighthouse?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{Angle of depression} = 20°.\\ \\text{Angle of elevation} = \\;?$$`,
+        options: [
+          { text: '20°', correct: true },
+          { text: '70°', correct: false },
+          { text: '160°', correct: false },
+          { text: '10°', correct: false },
+        ],
+        explanation: 'The horizontal at the lighthouse and the horizontal at the boat are parallel, so alternate angles are equal — the two angles are always the same size.',
+      }],
+    },
+    {
+      narration: `<b>Example.</b> From a plane flying at 9000 m, a church is seen at an angle of depression of 35°. <b>a</b> Find the distance along the ground. <b>b</b> Find the line-of-sight distance.`,
+      speech: `Example. From a plane flying at 9000 metres, a church is seen at an angle of depression of 35 degrees. Part a, find the distance along the ground. Part b, find the line of sight distance.`,
+      board: [triangle([[0, 0], [4.6, 0], [4.6, 3.2]], ['GC', '9000 m', 'PC'], ['35°', '90°', '55°'],
+        { prompt: 'Tap the side that is opposite the 55° angle.', correctIndex: 0, explanation: 'The side facing an angle (not touching it) is opposite it — here that\'s the ground distance GC, facing the 55° angle at the plane.' })],
+    },
+    {
+      narration: `<b>a</b> GC is <b>opposite</b> 55° and 9000 is <b>adjacent</b> to it: $\\dfrac{GC}{9000} = \\tan 55°$, so $GC = 9000\\tan 55° \\approx 12\\,900$ m.`,
+      speech: `Part a. GC is opposite 55 degrees, and 9000 is adjacent to it. GC over 9000 equals tan 55 degrees. So GC equals 9000 tan 55 degrees, which is about 12 thousand 900 metres.`,
+      board: [{ type: 'math', content: `$$\\dfrac{GC}{9000} = \\tan 55° \\;\\Rightarrow\\; GC = 9000\\tan 55° \\approx 12\\,900\\text{ m}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>b</b> PC is the <b>hypotenuse</b> and 9000 is adjacent to 55°: $\\dfrac{PC}{9000} = \\dfrac{1}{\\cos 55°}$, so $PC = \\dfrac{9000}{\\cos 55°} \\approx 15\\,700$ m.`,
+      speech: `Part b. PC is the hypotenuse, and 9000 is adjacent to 55 degrees. PC over 9000 equals 1 over cos 55 degrees. So PC equals 9000 over cos 55 degrees, which is about 15 thousand 700 metres.`,
+      board: [{ type: 'math', content: `$$\\dfrac{PC}{9000} = \\dfrac{1}{\\cos 55°} \\;\\Rightarrow\\; PC = \\dfrac{9000}{\\cos 55°} \\approx 15\\,700\\text{ m}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Example.</b> A walker on level ground is 1 km from the base of a 300 m vertical cliff. <b>a</b> Find the angle of elevation of the top, to the nearest minute. <b>b</b> Find the line-of-sight distance to the top, to the nearest metre.`,
+      speech: `Example. A walker on level ground is 1 kilometre from the base of a 300 metre vertical cliff. Part a, find the angle of elevation of the top, to the nearest minute. Part b, find the line of sight distance to the top, to the nearest metre.`,
+      board: [triangle([[0, 0], [3.3, 0], [3.3, 1], ], ['1000 m', '300 m', 'CW'], ['θ', '90°', ''])],
+    },
+    {
+      narration: `You know the <b>opposite</b> (300) and <b>adjacent</b> (1000) sides only — which ratio finds θ directly, without needing Pythagoras first?`,
+      speech: `You know the opposite, 300, and adjacent, 1000, sides only. Which ratio finds theta directly, without needing Pythagoras first?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{opposite}=300,\\ \\text{adjacent}=1000.\\ \\text{Find } \\theta \\text{ directly.}$$`,
+        options: [
+          { text: '$\\tan\\theta = \\frac{300}{1000}$', correct: true },
+          { text: '$\\sin\\theta = \\frac{300}{1044}$', correct: false },
+          { text: '$\\cos\\theta = \\frac{1000}{1044}$', correct: false },
+          { text: '$\\tan\\theta = \\frac{1000}{300}$', correct: false },
+        ],
+        explanation: 'Only opposite and adjacent are given, so tan θ = opp/adj works immediately — sin and cos both need the hypotenuse, which requires Pythagoras first.',
+      }],
+    },
+    {
+      narration: `<b>a</b> $\\tan\\theta = \\dfrac{300}{1000} = \\dfrac{3}{10}$, so $\\theta \\approx 16°42'$. <b>b</b> By Pythagoras, $CW^{2} = 1000^{2} + 300^{2} = 1\\,090\\,000$, so $CW \\approx 1044$ m.`,
+      speech: `Part a. Tan theta equals 300 over 1000, which is 3 over 10. So theta is about 16 degrees 42 minutes. Part b. By Pythagoras' theorem, C W squared equals 1000 squared plus 300 squared, equals 1 million 90 thousand. So C W is about 1044 metres.`,
+      board: [{ type: 'math', content: `$$\\tan\\theta = \\dfrac{3}{10} \\Rightarrow \\theta \\approx 16°42' \\qquad CW^{2} = 1000^{2}+300^{2} \\Rightarrow CW \\approx 1044\\text{ m}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Compass bearings</b> are based on north, south, east and west — any other direction is the deviation from north or south, towards east or west. <b>True bearings</b> are measured <b>clockwise from north</b>, always written with <b>three digits</b>. Tap to switch between the two for the same four directions.`,
+      speech: `Compass bearings are based on north, south, east and west. Any other direction is specified by the deviation from north or south, towards east or west. True bearings are measured clockwise from north, not anticlockwise as in the coordinate plane, and are always written with three digits, even for angles less than 100 degrees. Tap to switch between the two for the same four directions.`,
+      board: [{
+        type: 'compassBearing',
+        rays: [
+          { deg: -20, compassLabel: 'N20°W', trueLabel: '340°T', color: '#7c3aed' },
+          { deg: 30, compassLabel: 'N30°E', trueLabel: '030°T', color: '#059669' },
+          { deg: 110, compassLabel: 'S70°E', trueLabel: '110°T', color: '#f59e0b' },
+          { deg: 225, compassLabel: 'S45°W', trueLabel: '225°T', color: '#ef4444' },
+        ],
+      }],
+    },
+    {
+      narration: `Quick check — write the compass bearing <b>S30°E</b> as a true bearing.`,
+      speech: `Quick check. Write the compass bearing, south 30 degrees east, as a true bearing.`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{S30°E as a true bearing} = \\;?$$`,
+        options: [
+          { text: '150°T', correct: true },
+          { text: '030°T', correct: false },
+          { text: '210°T', correct: false },
+          { text: '330°T', correct: false },
+        ],
+        explanation: 'S30°E starts at south (180°T) and turns 30° towards east, i.e. back towards north, so it is 180° − 30° = 150°T.',
+      }],
+    },
+    {
+      narration: `<b>Example.</b> A plane flies at 400 km/h from A to B in the direction S30°E for 15 minutes, then turns to fly due east for 30 minutes to C. <b>a</b> Find how far south and east of A the point B is. <b>b</b> Find the true bearing of C from A.`,
+      speech: `Example. A plane flies at 400 kilometres per hour, from A to B in the direction south 30 east, for 15 minutes. It then turns sharply to fly due east for 30 minutes, to C. Part a, find how far south and east of A the point B is. Part b, find the true bearing of C from A, correct to the nearest degree.`,
+      board: [bearingPathDiagram()],
+    },
+    {
+      narration: `<b>a</b> In 15 minutes (¼ hour) at 400 km/h, AB = 100 km; in 30 minutes, BC = 200 km. In △PAB: $\\dfrac{PB}{100} = \\sin 30°$, so $PB = 50$ km (east); and $AP = 100\\cos 30° = 50\\sqrt3$ km (south).`,
+      speech: `Part a. In 15 minutes, one quarter of an hour, at 400 kilometres per hour, A B is 100 kilometres. In 30 minutes, B C is 200 kilometres. In triangle P A B, P B over 100 equals sine 30 degrees, so P B equals 50 kilometres, which is how far east. And A P equals 100 cosine 30 degrees, equals 50 root 3 kilometres, which is how far south.`,
+      board: [{ type: 'math', content: `$$PB = 100\\sin 30° = 50\\text{ km} \\qquad AP = 100\\cos 30° = 50\\sqrt3\\text{ km}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>b</b> Using opposite over adjacent in △PAC: $\\tan\\angle PAC = \\dfrac{PC}{AP} = \\dfrac{50+200}{50\\sqrt3} = \\dfrac{5}{\\sqrt3}$, so $\\angle PAC \\approx 71°$. Since AP points due south from A, the true bearing of C from A is about $180° - 71° = 109°$T.`,
+      speech: `Part b. Using opposite over adjacent in triangle P A C, tan of angle P A C equals P C over A P, equals, 50 plus 200, over 50 root 3, equals 5 over root 3. So angle P A C is about 71 degrees. Since A P points due south from A, the true bearing of C from A is about 180 degrees minus 71 degrees, which is 109 degrees T.`,
+      board: [{ type: 'math', content: `$$\\tan\\angle PAC = \\dfrac{250}{50\\sqrt3} = \\dfrac{5}{\\sqrt3} \\Rightarrow \\angle PAC \\approx 71° \\;\\Rightarrow\\; \\text{bearing} \\approx 109°\\text{T}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Recap:</b> elevation and depression angles are always from the <b>horizontal</b>, and equal each other by alternate angles; compass bearings (N/S then E/W) and true bearings (clockwise from north, 3 digits) describe the <b>same</b> direction two ways; and every problem still reduces to a right-angled triangle solved with sin, cos or tan.`,
+      speech: `Recap. Angles of elevation and depression are always measured from the horizontal, and are equal to each other by alternate angles. Compass bearings, north or south then east or west, and true bearings, clockwise from north with three digits, describe the same direction in two different ways. And every one of these problems still reduces to a right angled triangle, solved with sine, cosine or tangent.`,
+      board: [{ type: 'math', content: `$$\\text{elevation} = \\text{depression (alternate angles)} \\qquad \\text{S}\\theta°\\text{E} \\;=\\; (180°-\\theta°)\\text{T}$$` }],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  const glossary = {
+    ...BASE_GLOSSARY,
+    'angle of elevation': 'The angle measured upward from the horizontal to an object above the observer.',
+    'angle of depression': 'The angle measured downward from the horizontal to an object below the observer.',
+    'alternate angles': 'Equal angles formed on opposite sides of a line crossing two parallel lines — used to show the elevation and depression angle between two points are equal.',
+    'compass bearing': 'A direction written as a deviation from north or south towards east or west, e.g. S45°W.',
+    'true bearing': 'A direction measured clockwise from north, always written with three digits, e.g. 225°T.',
+    'line of sight': 'The straight distance directly between an observer and the object being viewed — the hypotenuse of the right-angled triangle.',
+  };
+  return { emoji: '🗺️', title: 'Problems involving right-angled triangles', steps, glossary };
+};
+
 // ── Lesson: Year 7 · 20A · Polyhedra ────────────────────────────────────────
 export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
   const V = '#7c3aed';   // visible edge colour (purple)
@@ -2345,6 +2674,12 @@ export const LESSONS = {
 
   // Year 7 · 1A · The number line.
   'y7-1a': { ...buildNumberLineLesson({ audioBase: '/lessons/audio/y7-1a' }), topicId: 'y7-1a' },
+
+  // Year 11 Advanced · 6A · Trigonometry with right-angled triangles.
+  'y11a-6A': { ...buildRightTriangleTrigLesson({ audioBase: '/lessons/audio/y11a-6A' }), topicId: 'y11a-6A' },
+
+  // Year 11 Advanced · 6B · Problems involving right-angled triangles.
+  'y11a-6B': { ...buildRightTriangleProblemsLesson({ audioBase: '/lessons/audio/y11a-6B' }), topicId: 'y11a-6B' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;
