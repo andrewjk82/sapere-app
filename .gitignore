@@ -36,3 +36,8 @@ scratch/
 /test_regex*.js
 /scratch/
 .env*
+
+# Local question corpus DB — holds original copyrighted past-paper text for
+# style/difficulty reference only. Never commit, never upload to Firebase.
+# See tools/corpus/README.md.
+/tools/corpus/data/

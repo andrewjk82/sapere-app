@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Question Corpus Viewer (local only)</title>
+<link rel="stylesheet" href="/vendor/katex/katex.min.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Question Corpus <span class="local-badge">LOCAL ONLY — never deployed</span></h1>
+    <div id="summary" class="summary"></div>
+  </header>
+
+  <nav class="tabbar">
+    <button id="tabBrowse" class="tab-btn active">Browse Corpus</button>
+    <button id="tabNew" class="tab-btn">New Questions</button>
+  </nav>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <input id="topicSearch" type="text" placeholder="Filter topics...">
+      <div id="topicList" class="topic-list"></div>
+    </aside>
+
+    <main class="content">
+      <p id="newQuestionsHint" class="new-questions-hint" hidden>
+        Newly ingested questions land here first — <b>Add to corpus</b> to make them
+        show up in Browse (and count as reference for future generation), or
+        <b>Reject</b> to delete them outright. Nothing here is deployed to Firestore.
+      </p>
+      <div class="filters">
+        <select id="fYear">
+          <option value="">All years</option>
+        </select>
+        <select id="fSource">
+          <option value="">All sources</option>
+          <option value="original">original (past-paper reference)</option>
+          <option value="existing">existing (already live)</option>
+          <option value="generated">generated (candidate)</option>
+        </select>
+        <select id="fDifficulty">
+          <option value="">All difficulties</option>
+          <option value="easy">easy</option>
+          <option value="medium">medium</option>
+          <option value="hard">hard</option>
+        </select>
+        <select id="fType">
+          <option value="">All types</option>
+        </select>
+        <select id="fValidation">
+          <option value="">All validation</option>
+          <option value="passed">passed</option>
+          <option value="failed">failed</option>
+        </select>
+        <select id="fDeploy">
+          <option value="">All deploy status</option>
+          <option value="none">not deployed</option>
+          <option value="approved">approved</option>
+          <option value="deployed">deployed</option>
+        </select>
+        <input id="fSearch" type="text" placeholder="Search question text...">
+      </div>
+
+      <div class="split">
+        <div id="questionList" class="question-list"></div>
+        <div id="questionDetail" class="question-detail">
+          <p class="empty-hint">Select a question to preview it (rendered exactly as students would see it).</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="/vendor/katex/katex.min.js"></script>
+  <script src="/vendor/katex/contrib/auto-render.min.js"></script>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

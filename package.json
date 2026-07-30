@@ -6,6 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "corpus:viewer": "node --no-warnings tools/corpus/server.js",
+    "corpus:ingest": "node --no-warnings tools/corpus/ingest.js",
+    "corpus:deploy": "node --no-warnings tools/corpus/deploy.js",
+    "corpus:ingest-all": "node --no-warnings tools/corpus/ingestAllExisting.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "get-inputs": "node scratch/read_last_user_input.js",

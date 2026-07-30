@@ -341,14 +341,18 @@ const HscTypePracticeSession = ({ type, profile, initialStats, onBack }) => {
         if (!indexSnap.exists()) {
           const qSnap = await getDocs(query(collection(db, 'questions'), where('questionType', '==', type.slug)));
           if (cancelled) return;
-          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() }))).slice(0, 15).map(shuffleOptions);
+          // isActive is filtered client-side, not in the query — a doc with no
+          // isActive field at all (the common case for pre-existing questions)
+          // must still count as active, and Firestore's `!=` filters exclude
+          // docs missing the field entirely. Same pattern as chapterQuestionsCache.js.
+          qs = shuffleArray(qSnap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false)).slice(0, 15).map(shuffleOptions);
         } else {
           const { ids = [] } = indexSnap.data();
           if (cancelled) return;
           const sample = shuffleArray(ids).slice(0, 12);
           const fetched = await Promise.all(sample.map(id => getDoc(doc(db, 'questions', id))));
           if (cancelled) return;
-          qs = fetched.filter(s => s.exists()).map(s => shuffleOptions({ id: s.id, ...s.data() }));
+          qs = fetched.filter(s => s.exists()).map(s => ({ id: s.id, ...s.data() })).filter(q => q.isActive !== false).map(shuffleOptions);
         }
         setQueue(qs);
         setTotalQuestions(qs.length);

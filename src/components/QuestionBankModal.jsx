@@ -1849,11 +1849,18 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         requiresManualGrading: formData.requiresManualGrading || false,
         graphData,
         acceptedAnswers: (formData.acceptedAnswers || []).filter(Boolean),
-        isActive: true,
         updatedAt: serverTimestamp()
+        // isActive is intentionally NOT set here — see the create/edit
+        // branches below. A brand-new question must start invisible to
+        // students (isActive:false, reviewStatus:'pending') until a teacher
+        // approves it in the Pending Review tab; editing an EXISTING question
+        // must never touch its current isActive value (updateDoc only
+        // changes fields present in the payload, so omitting it here leaves
+        // whatever's already on the doc untouched).
       });
 
       let savedQuestionId = editingQuestion;
+      let isNewPending = false;
       if (editingQuestion) {
         // Mark as teacher-edited so the chapter seeder never overwrites this
         // question with the seed file content on future deploys.
@@ -1863,7 +1870,13 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
           await updateDoc(doc(db, 'questions', editingQuestion), editPayload);
         } catch (err) {
           if (err.code === 'not-found') {
+            // The doc doesn't exist — this IS a new creation (just via the
+            // edit-recovery path), so it gets the same pending gate as any
+            // other new question.
             savePayload.createdAt = serverTimestamp();
+            savePayload.isActive = false;
+            savePayload.reviewStatus = 'pending';
+            isNewPending = true;
             await setDoc(doc(db, 'questions', editingQuestion), savePayload);
           } else {
             throw err;
@@ -1875,6 +1888,9 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
         // chapter seeder's clear step never deletes them when re-seeding a
         // topic that this question shares with a seed file.
         payload.origin = 'teacher';
+        payload.isActive = false;
+        payload.reviewStatus = 'pending';
+        isNewPending = true;
         const newRef = await addDoc(collection(db, 'questions'), payload);
         savedQuestionId = newRef.id;
       }
@@ -1883,16 +1899,23 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       // `membershipVersion` bumps ONLY when the set of question IDs changes
       // (add / delete) — it drives practice_pool rebuilds. A content-only edit
       // leaves membershipVersion untouched (merge:true preserves it), so we
-      // avoid rebuilding every student's pool for a typo fix.
+      // avoid rebuilding every student's pool for a typo fix. A new PENDING
+      // question isn't part of that set yet either — it doesn't exist from
+      // the students' side until approved, so it skips the membership bump
+      // (and the count/index updates below) until PendingReviewPanel approves it.
       await setDoc(doc(db, 'sync_meta', 'questions'), {
         version: bankVersion,
-        ...(editingQuestion ? {} : { membershipVersion: bankVersion }),
+        ...(editingQuestion || isNewPending ? {} : { membershipVersion: bankVersion }),
         updatedAt: serverTimestamp(),
       }, { merge: true });
-      // Keep the aggregate counts doc in step: new question → +1 per id;
-      // edit → counts unchanged, just stamp the version so admin clients
-      // keep trusting the doc instead of rebuilding all counts.
-      if (!editingQuestion) {
+      // Keep the aggregate counts doc in step: new (already-visible) question
+      // → +1 per id; edit → counts unchanged, just stamp the version so admin
+      // clients keep trusting the doc instead of rebuilding all counts. A new
+      // PENDING question isn't counted until approval (it isn't really "in"
+      // the bank yet from anyone's perspective but the teacher reviewing it).
+      if (isNewPending) {
+        stampCountsVersion(bankVersion);
+      } else if (!editingQuestion) {
         applyCountDeltas({
           ...(payload.chapterId ? { [payload.chapterId]: 1 } : {}),
           ...(payload.topicId ? { [payload.topicId]: 1 } : {}),
@@ -1900,8 +1923,11 @@ const QuestionBankModal = ({ chapter, onClose, directEditQuestion }) => {
       } else {
         stampCountsVersion(bankVersion);
       }
-      // Keep the per-chapter random-sampling index in sync (non-fatal).
-      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, prevChapterId: editingQuestionChapterId || undefined, isActive: true, version: bankVersion })
+      // Keep the per-chapter random-sampling index in sync (non-fatal). A
+      // pending question must NOT be added to the index yet — isActive:false
+      // here correctly keeps it out (arrayRemove is a harmless no-op since it
+      // was never in there).
+      syncQuestionIndexOnSave({ questionId: savedQuestionId, chapterId, prevChapterId: editingQuestionChapterId || undefined, isActive: !isNewPending, version: bankVersion })
         .catch((err) => console.warn('question index sync failed:', err?.code || err));
 
       questionBankSessionCache.delete(`questions:${chapterId}`);

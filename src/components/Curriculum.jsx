@@ -34,6 +34,7 @@ import { Y9_CH6A_QUESTIONS } from '../constants/seedYear9Ch6Questions.js';
 import { Y9_CH7A_QUESTIONS } from '../constants/seedYear9Ch7Questions.js';
 import { Y9_CH8A_QUESTIONS } from '../constants/seedYear9Ch8Questions.js';
 import QuestionBankModal from './QuestionBankModal';
+import PendingReviewPanel from './PendingReviewPanel';
 import QuestionBankPage from './QuestionBankPage';
 import LearningPath from './LearningPath';
 import HscJourney from './HscJourney';
@@ -249,6 +250,24 @@ const Curriculum = () => {
   const [searchOpen, setSearchOpen] = useState(false);
   const [hscRecords, setHscRecords] = useState([]);
   const [hscModalOpen, setHscModalOpen] = useState(false);
+
+  // Pending-review badge count for the admin tab button. Refetches whenever
+  // the tab is opened so approvals/rejections made in PendingReviewPanel are
+  // reflected without needing a page reload.
+  const [pendingReviewCount, setPendingReviewCount] = useState(0);
+  useEffect(() => {
+    if (!isAdmin || !showAdminTools) return undefined;
+    let cancelled = false;
+    (async () => {
+      try {
+        const snap = await getCountFromServer(query(collection(db, 'questions'), where('reviewStatus', '==', 'pending')));
+        if (!cancelled) setPendingReviewCount(snap.data().count);
+      } catch (e) {
+        if (!cancelled) setPendingReviewCount(0);
+      }
+    })();
+    return () => { cancelled = true; };
+  }, [isAdmin, showAdminTools, adminActiveTab]);
 
   // Past Paper question types (loaded once when Past Paper tab is selected)
   const [questionTypes, setQuestionTypes] = useState([]);
@@ -3054,7 +3073,13 @@ const Curriculum = () => {
                     >
                       Questions Seeding
                     </button>
-                    <button 
+                    <button
+                      className={`admin-tab-btn ${adminActiveTab === 'pending_review' ? 'active' : ''}`}
+                      onClick={() => setAdminActiveTab('pending_review')}
+                    >
+                      Pending Review{pendingReviewCount > 0 ? ` (${pendingReviewCount})` : ''}
+                    </button>
+                    <button
                       className={`admin-tab-btn ${adminActiveTab === 'utils' ? 'active' : ''}`}
                       onClick={() => setAdminActiveTab('utils')}
                     >
@@ -3466,6 +3491,8 @@ const Curriculum = () => {
                       </div>
                     );
                   })()}
+
+                  {adminActiveTab === 'pending_review' && <PendingReviewPanel />}
 
                   {adminActiveTab === 'utils' && (
                     <div className="admin-sync-grid">

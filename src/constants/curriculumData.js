@@ -2207,7 +2207,16 @@ export const CURRICULUM_DATA = {
   'Year 11': {
     'Standard': [
       { id: 'y11s-1', title: 'Algebra: Formulae & Equations', modules: 12 },
-      { id: 'y11s-2', title: 'Measurement: Applications', modules: 10 },
+      {
+        id: 'y11s-2',
+        title: 'Measurement: Applications',
+        modules: 10,
+        topics: [
+          { id: 'y11s-2a', code: '2A', title: 'Area of composite shapes' },
+          { id: 'y11s-2b', code: '2B', title: 'Surface area of solids' },
+          { id: 'y11s-2c', code: '2C', title: 'Volume of solids' }
+        ]
+      },
       { id: 'y11s-3', title: 'Financial Maths: Interest', modules: 8 }
     ],
     'Advanced': [
