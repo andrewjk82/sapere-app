@@ -1,10 +1,26 @@
 import { useState, useEffect } from 'react';
+import { AnimatePresence } from 'framer-motion';
 import { db } from '../firebase/config';
-import { collection, query, where, getDocs, doc, updateDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, doc, getDoc, updateDoc, serverTimestamp } from 'firebase/firestore';
 import { useToast } from '../context/ToastContext';
 import { syncQuestionIndexOnSave } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
 import QuestionPreviewCard from './QuestionPreviewCard';
+import QuestionBankModal from './QuestionBankModal';
+
+// QuestionBankModal expects a real curriculum `chapter` ({id, title, topics})
+// so its topic dropdown works — a pending question only carries its own
+// chapterId/topicId/topicCode/topicTitle, not the full chapter object, so
+// this synthesizes a minimal one-topic stand-in. Good enough to fix wording/
+// numbers/answer in place; reassigning to a different chapter isn't
+// supported from here (use the real Question Bank editor for that).
+function synthesizeChapter(q) {
+  return {
+    id: q.chapterId,
+    title: q.chapterTitle || q.chapterId,
+    topics: [{ id: q.topicId, code: q.topicCode, title: q.topicTitle || q.t }],
+  };
+}
 
 // New-question review queue: any question created going forward — whether
 // typed directly into the Question Bank editor (QuestionBankModal.jsx) or
@@ -25,6 +41,7 @@ const PendingReviewPanel = () => {
   const [items, setItems] = useState([]);
   const [busyId, setBusyId] = useState(null);
   const [expandedId, setExpandedId] = useState(null);
+  const [editingQuestion, setEditingQuestion] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
@@ -98,6 +115,25 @@ const PendingReviewPanel = () => {
     }
   };
 
+  // QuestionBankModal saves straight to Firestore itself — it never touches
+  // isActive/reviewStatus on an edit (see QuestionBankModal.jsx's handleSave),
+  // so the question stays pending after a content fix. Re-fetch just this one
+  // doc afterwards so the card reflects the edit without a full list reload.
+  const handleEditClose = async () => {
+    const id = editingQuestion?.id;
+    setEditingQuestion(null);
+    if (!id) return;
+    try {
+      const snap = await getDoc(doc(db, 'questions', id));
+      if (snap.exists()) {
+        const updated = { id: snap.id, ...snap.data() };
+        setItems((prev) => prev.map((it) => (it.id === id ? updated : it)));
+      }
+    } catch (err) {
+      console.warn('Failed to refresh edited question:', err);
+    }
+  };
+
   if (loading) {
     return <div style={{ padding: '32px', textAlign: 'center', color: '#64748b' }}>Loading pending questions…</div>;
   }
@@ -130,6 +166,13 @@ const PendingReviewPanel = () => {
                 {(q.question || '').replace(/\\\(|\\\)|\$/g, '').slice(0, 90)}
               </span>
               <button
+                onClick={(e) => { e.stopPropagation(); setEditingQuestion(q); }}
+                disabled={busyId === q.id}
+                style={{ padding: '6px 14px', borderRadius: '8px', border: '1px solid #c7d2fe', background: '#eef2ff', color: '#4338ca', fontWeight: 700, cursor: 'pointer', fontSize: '12px' }}
+              >
+                Edit
+              </button>
+              <button
                 onClick={(e) => { e.stopPropagation(); approve(q); }}
                 disabled={busyId === q.id}
                 style={{ padding: '6px 14px', borderRadius: '8px', border: 'none', background: '#166534', color: '#dcfce7', fontWeight: 700, cursor: 'pointer', fontSize: '12px' }}
@@ -153,6 +196,16 @@ const PendingReviewPanel = () => {
           </div>
         );
       })}
+
+      <AnimatePresence>
+        {editingQuestion && (
+          <QuestionBankModal
+            chapter={synthesizeChapter(editingQuestion)}
+            directEditQuestion={editingQuestion}
+            onClose={handleEditClose}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 };
