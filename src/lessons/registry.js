@@ -939,7 +939,10 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
     {
       narration: `The trigonometry of triangles rests on <b>two</b> foundations: <b>Pythagoras' theorem</b> and <b>similarity</b>.`,
       speech: `The trigonometry of triangles rests on two foundations. Pythagoras' theorem, and similarity.`,
-      board: [{ type: 'math', content: `$$\\text{Pythagoras' theorem} \\;+\\; \\text{similarity} \\;\\longrightarrow\\; \\text{trigonometry}$$` }],
+      board: [
+        triangle([[0, 0], [4, 0], [4, 3]], ['b', 'a', 'c'], ['', '90°', '']),
+        { type: 'math', content: `$$\\text{Pythagoras' theorem} \\;+\\; \\text{similarity} \\;\\longrightarrow\\; \\text{trigonometry}$$` },
+      ],
     },
     {
       narration: `<b>Pythagoras' theorem:</b> the square on the <b>hypotenuse</b> of a right-angled triangle is the sum of the squares on the other two sides.`,
