@@ -265,6 +265,14 @@ Curriculum 페이지 → 우측 상단 레이어 아이콘(Admin tools) → "Que
 Year 11/12 상단 네비게이션의 "Past Paper" 메가탭(Standard/Advanced/Ext1/Ext2
 필터)은 **HSC 전용**이며 여기엔 절대 뜨지 않는다 — 다른 기능이니 혼동하지 말 것.
 
+**3번(세부 토픽 매핑)을 그대로 따르면 이 화면의 "Seed/Done" 표시가 항상 "0"으로
+나올 수 있음** — `questionCounts[entry.topicId]`는 문서들이 **레지스트리의
+placeholder topicId를 공유할 때만** 값이 채워지는데, 각 문제를 실제 세부
+topicId로 따로 매핑하면 그 placeholder topicId를 가진 문서가 하나도 없어져서
+카운트가 영원히 0으로 보임. `Curriculum.jsx`에 이미 고쳐놓은
+`examPaperCounts`(examPaper 기준 `getCountFromServer`)가 이 문제를 해결하니,
+이 로직을 지우거나 우회하지 말 것.
+
 ---
 
 ## 12. 요약 체크리스트 (복붙용)
