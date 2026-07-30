@@ -60,6 +60,34 @@ skill from the batch (or ask if the requested topic is mostly such skills).
 Pre-2026-07-30 generated questions with other types are grandfathered in —
 only touch them if the user explicitly asks.
 
+## Corpus-generated geometry/mensuration questions need an SVG diagram (2026-07-30)
+
+Any corpus-generated question involving a shape or solid (composite area,
+prism/cylinder/cone/sphere surface area or volume, coordinate geometry,
+angle/trig diagrams — anything a diagram would clarify) must include a
+hand-authored SVG, not just a text description. Standing rule, applies
+automatically, never needs to be repeated. Pure algebra/equations/stats
+questions don't need one.
+
+Put it in `graphData.svg` (or `.diagramSvg`) as a raw `<svg>...</svg>`
+string — `MathView.jsx` renders anything starting with `<svg` as-is via
+`encodeSvgDataUrl()` (pure encode, no parsing/validation), so no other
+tooling is required. Do NOT use `graphData.geometry` (`GeometryFigure` —
+no solid/3D primitives) or `graphData.jsxGraph` (`GeometryRenderer` — has a
+known non-square-boundingbox clipping bug, 2026-07-28). There is no
+SVG-generator tool; hand-write the `<path>`/`<line>`/`<circle>`/`<text>`
+coordinates per question, matching existing style: non-square `viewBox`
+sized to the real shape (never force a fixed square canvas — that's what
+clips), `width="100%" height="auto"`, visible faces filled `#dbeafe`/
+`#fef3c7`/`#e0e7ff` at 0.4–0.75 opacity with `#475569` 2px solid edges,
+hidden edges `#94a3b8`/`#64748b` 1.2–1.5px dashed (`4 3`), labels in
+`system-ui` 11–13px weight 600 `#1e293b`. See `QUESTION_BANK_EXPANSION.md`
+§2.6 for the full convention and a worked example
+(`src/constants/seedYear9Ch16BQuestions.js`).
+
+Pre-2026-07-30 generated questions without a diagram are grandfathered in —
+only add one if the user explicitly asks.
+
 ## Admin-SDK scripts that write to `questions` (tools/scripts/*)
 
 The client keeps four denormalized docs in sync incrementally; admin scripts

@@ -66,6 +66,67 @@ const db = admin.firestore();
 
 ---
 
+## 2.6. 도형/입체 문제는 반드시 SVG 그림 포함 (2026-07-30)
+
+**넓이·겉넓이·부피 등 도형/입체가 등장하는 문제는 텍스트 설명만으로 끝내지
+말고 실제 SVG 그림을 그려서 넣는다.** 학생이 글만 읽고 도형을 상상하게
+만들지 않는다 — 매번 사용자가 말할 필요 없이 항상 적용되는 규칙.
+
+대상: 합성 도형 넓이, 각기둥/원기둥/각뿔/원뿔/구 겉넓이·부피, 좌표기하의
+도형, 삼각비/각도 문제 등 **그림이 있으면 이해가 쉬워지는 모든 문제**.
+순수 대수/방정식/통계처럼 그림이 필요 없는 문제는 대상 아님.
+
+### 넣는 방법 — `graphData.svg` (또는 `.diagramSvg`) 에 손으로 그린 raw SVG
+
+```js
+{
+  id: '...',
+  // ...
+  graphData: {
+    svg: `<svg viewBox="0 0 320 230" width="100%" height="auto"
+      style="max-width:440px;display:block;margin:1rem auto;background-color:#f8fafc;border-radius:16px;border:1px solid #e2e8f0;padding:0.5rem;"
+      xmlns="http://www.w3.org/2000/svg">
+      <!-- shape paths/lines + dimension labels -->
+    </svg>`,
+  },
+}
+```
+
+이 문자열은 `MathView.jsx`가 `<svg`로 시작하면 그대로 data URI로 인코딩해
+`<img>`로 렌더링한다 (`src/utils/geometrySvg.js`의 `encodeSvgDataUrl` —
+파싱/검증 없이 순수 인코딩만). **다른 두 경로는 이 용도에 안 맞음:**
+- `graphData.geometry` (`GeometryFigure` 컴포넌트) — 선언적 스키마라 각기둥
+  전개도/원기둥/원뿔/구 같은 입체 전용 primitive가 없음.
+- `graphData.jsxGraph` (`SvgGraph`/`GeometryRenderer`) — 좌표평면 함수 그래프용.
+  **`GeometryRenderer`는 정사각 아님 boundingbox에서 긴 축이 잘리는 기존
+  버그가 있음** (2026-07-28 발견) — 이 경로는 아예 쓰지 말 것.
+
+### 스타일 컨벤션 (기존 시드 파일들과 시각적으로 맞출 것)
+
+- `viewBox`는 실제 도형 비율에 맞는 **정사각 아닌 값** (예: `0 0 320 230`),
+  SVG 자체에 `width="100%" height="auto"` — 고정 정사각 크기로 절대 강제하지
+  말 것 (긴 축 잘림 방지).
+- 보이는 면: `#dbeafe`/`#fef3c7`/`#e0e7ff` 중 opacity 0.4~0.75 채우기 +
+  `#475569` 2px 실선 테두리.
+- 숨은 모서리: `#94a3b8`/`#64748b`, 1.2~1.5px, `stroke-dasharray="4 3"`.
+- 라벨: `font-family="system-ui,-apple-system,sans-serif"`, 11~13px,
+  `font-weight="600"`, `fill="#1e293b"`.
+- 카드 배경: `background-color:#f8fafc` (또는 `#fff`), `border-radius:16px`,
+  `border:1px solid #e2e8f0`.
+- 실제 예시는 `src/constants/seedYear9Ch16BQuestions.js`의 `graphData.svg`
+  참고 (정육면체 겉넓이 문제).
+
+**직접 손으로 SVG를 그릴 것** — 이 도형을 텍스트 설명에서 자동 생성해주는
+스크립트/도구는 없음 (`tools/scripts/fixY9Ch16b*.cjs` 부류가 전부 문제 하나당
+하나씩 손으로 작성한 것). 좌표를 직접 계산해서 `<path>`/`<line>`/`<circle>`/
+`<text>`로 작성.
+
+기존에 만든 문제 중 이 규칙 이전에 생성된 도형 없는 문제가 있다면(예:
+2026-07-30 y11s-2 10문제 전부), 그건 사용자가 명시적으로 그림 추가해달라고
+할 때만 손댈 것 — 규칙은 **앞으로 생성하는 문제부터** 적용.
+
+---
+
 ## 3. 문제 스키마 (일반 챕터 문제 — exam paper 아님)
 
 ```js
@@ -147,6 +208,7 @@ Firestore에서 `chapterId`/`topicId` 쿼리로 새 문제 수 확인 → git co
 - [ ] 난이도 분포·스타일 파악, `origin: 'teacher'` 문서는 참고만 하고 건드리지 않음
 - [ ] 요청한 개수를 난이도별로 분배해서 **완전히 새로운 시나리오**로 작성 (복사 금지)
 - [ ] **전부 `type: 'multiple_choice'`만** — show that/prove/draw/construct류는 스킵
+- [ ] **도형/입체가 등장하면 `graphData.svg`에 손으로 그린 SVG 포함** (2.6절 스타일 컨벤션대로)
 - [ ] 옵션 중복 없음, 기존 id와 안 겹치는 새 id
 - [ ] `$` 등은 `\( \)` 안에
 - [ ] Firestore 업로드 → 해당 챕터 `rebuildQuestionIndexes.js` full rebuild
