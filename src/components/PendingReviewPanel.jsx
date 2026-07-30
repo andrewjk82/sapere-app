@@ -4,7 +4,7 @@ import { collection, query, where, getDocs, doc, updateDoc, serverTimestamp } fr
 import { useToast } from '../context/ToastContext';
 import { syncQuestionIndexOnSave } from '../services/questionIndexService';
 import { applyCountDeltas } from '../services/questionCountsService';
-import MathView from './MathView';
+import QuestionPreviewCard from './QuestionPreviewCard';
 
 // New-question review queue: any question created going forward — whether
 // typed directly into the Question Bank editor (QuestionBankModal.jsx) or
@@ -14,6 +14,11 @@ import MathView from './MathView';
 // here is a bulk/unscoped read (reviewStatus=='pending' is a filtered query,
 // per CLAUDE.md's question-collection-scan guard) and nothing here touches
 // the local corpus tool at all.
+//
+// Each question renders via QuestionPreviewCard — the SAME badge/options/
+// solution-steps layout as the existing Question Bank admin view — so a
+// teacher sees a pending question exactly the way they already know how to
+// read a question, not a bespoke simplified rendering.
 const PendingReviewPanel = () => {
   const { showToast } = useToast();
   const [loading, setLoading] = useState(true);
@@ -107,14 +112,13 @@ const PendingReviewPanel = () => {
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', padding: '16px' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '16px', maxWidth: '820px', margin: '0 auto' }}>
       {items.map((q) => {
         const isExpanded = expandedId === q.id;
-        const answerIdx = parseInt(q.answer, 10);
         return (
-          <div key={q.id} style={{ border: '1px solid #e2e8f0', borderRadius: '12px', background: '#fff', overflow: 'hidden' }}>
+          <div key={q.id} style={{ border: '1px solid #e2e8f0', borderRadius: '20px', background: '#fff', overflow: 'hidden' }}>
             <div
-              style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 16px', cursor: 'pointer', flexWrap: 'wrap' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '14px 20px', cursor: 'pointer', flexWrap: 'wrap' }}
               onClick={() => setExpandedId(isExpanded ? null : q.id)}
             >
               <span style={{ fontSize: '11px', fontWeight: 700, padding: '2px 8px', borderRadius: '4px', background: q.origin === 'seed' ? '#ede9fe' : '#dbeafe', color: q.origin === 'seed' ? '#5b21b6' : '#1e40af' }}>
@@ -142,57 +146,8 @@ const PendingReviewPanel = () => {
             </div>
 
             {isExpanded && (
-              <div style={{ padding: '16px', borderTop: '1px solid #f1f5f9', background: '#f8fafc' }}>
-                <MathView content={q.question} graphData={q.graphData} style={{ fontSize: '15px', marginBottom: '14px' }} />
-
-                {Array.isArray(q.options) && q.options.length > 0 && (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', marginBottom: '14px' }}>
-                    {q.options.map((opt, i) => {
-                      const text = typeof opt === 'object' && opt !== null ? opt.text : opt;
-                      const isCorrect = i === answerIdx;
-                      return (
-                        <div
-                          key={i}
-                          style={{
-                            padding: '8px 12px',
-                            borderRadius: '8px',
-                            border: isCorrect ? '1.5px solid #16a34a' : '1px solid #e2e8f0',
-                            background: isCorrect ? '#f0fdf4' : '#fff',
-                          }}
-                        >
-                          <span style={{ color: '#94a3b8', fontSize: '12px', marginRight: '8px' }}>{String.fromCharCode(65 + i)}</span>
-                          <MathView content={text} style={{ display: 'inline' }} />
-                        </div>
-                      );
-                    })}
-                  </div>
-                )}
-
-                {Array.isArray(q.solutionSteps) && q.solutionSteps.length > 0 && (
-                  <div>
-                    <div style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: '#64748b', marginBottom: '6px' }}>Solution steps</div>
-                    {q.solutionSteps.map((step, i) => (
-                      <div key={i} style={{ padding: '6px 0', borderTop: i > 0 ? '1px dashed #e2e8f0' : 'none' }}>
-                        <MathView content={step.explanation} style={{ fontSize: '13px', color: '#475569', marginBottom: '2px' }} />
-                        <MathView content={step.workingOut} style={{ fontSize: '14px' }} />
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {Array.isArray(q.subQuestions) && q.subQuestions.length > 0 && (
-                  <div>
-                    <div style={{ fontSize: '11px', fontWeight: 700, textTransform: 'uppercase', color: '#64748b', margin: '10px 0 6px' }}>
-                      Sub-questions ({q.subQuestions.length})
-                    </div>
-                    {q.subQuestions.map((sq, i) => (
-                      <div key={sq.id || i} style={{ border: '1px solid #e2e8f0', borderRadius: '8px', padding: '10px 12px', marginBottom: '8px', background: '#fff' }}>
-                        <div style={{ fontSize: '11px', color: '#94a3b8', marginBottom: '4px' }}>({String.fromCharCode(97 + i)}) {sq.id || ''}</div>
-                        <MathView content={sq.question} style={{ fontSize: '14px' }} />
-                      </div>
-                    ))}
-                  </div>
-                )}
+              <div style={{ padding: '20px', borderTop: '1px solid #f1f5f9', background: '#f8fafc' }}>
+                <QuestionPreviewCard question={q} />
               </div>
             )}
           </div>
