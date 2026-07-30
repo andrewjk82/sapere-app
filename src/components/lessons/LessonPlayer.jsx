@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2219,6 +2219,57 @@ const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quic
   );
 };
 
+// ── Similar triangles demo ──────────────────────────────────────────────────
+// A faint fixed "reference" right triangle plus a live one the student grows
+// or shrinks with a slider — the shape (and every angle) never changes, only
+// its size, making "similar = same angles, sides in ratio" a felt thing rather
+// than a sentence. When showRatios is on, it also prints sin/cos/tan alongside
+// the changing side lengths, so students can watch the ratio stay put while
+// the sides themselves visibly grow.
+const SimilarTrianglesDemo = ({ width = 420, height = 250, showRatios = false }) => {
+  const [k, setK] = useState(1.6);
+  const unit = 22;
+  const ox = width - 90, oy = height - 40; // right-angle vertex — fixed anchor
+  const adj0 = 4, opp0 = 3, hyp0 = 5; // a 3-4-5 triangle for clean numbers
+  const refT = [ox - adj0 * unit, oy];
+  const refP = [ox - adj0 * unit, oy - opp0 * unit];
+  const T = [ox - adj0 * unit * k, oy];
+  const P = [ox - adj0 * unit * k, oy - opp0 * unit * k];
+  const trans = { transition: 'cx 0.35s ease, cy 0.35s ease, x1 0.35s ease, y1 0.35s ease, x2 0.35s ease, y2 0.35s ease, x 0.35s ease, y 0.35s ease' };
+  const sinT = opp0 / hyp0, cosT = adj0 / hyp0, tanT = opp0 / adj0; // constant — the whole point
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <polygon points={`${ox},${oy} ${refT[0]},${refT[1]} ${refP[0]},${refP[1]}`} fill="rgba(124,58,237,0.06)" stroke="#c4b5fd" strokeWidth="1.6" strokeDasharray="5 4" />
+        <text x={(ox + refT[0]) / 2} y={oy + 16} fontSize="10.5" fontWeight="700" fill="#a78bfa" textAnchor="middle">reference (k = 1)</text>
+        <line x1={ox} y1={oy} x2={T[0]} y2={T[1]} stroke="#7c3aed" strokeWidth="2.6" style={trans} />
+        <line x1={T[0]} y1={T[1]} x2={P[0]} y2={P[1]} stroke="#7c3aed" strokeWidth="2.6" style={trans} />
+        <line x1={P[0]} y1={P[1]} x2={ox} y2={oy} stroke="#7c3aed" strokeWidth="2.6" style={trans} />
+        <polyline points={`${ox - 10},${oy} ${ox - 10},${oy - 10} ${ox},${oy - 10}`} fill="none" stroke="#7c3aed" strokeWidth="1.6" />
+        <circle cx={ox} cy={oy} r="4" fill="#7c3aed" style={trans} />
+        <circle cx={T[0]} cy={T[1]} r="4" fill="#7c3aed" style={trans} />
+        <circle cx={P[0]} cy={P[1]} r="4" fill="#7c3aed" style={trans} />
+        <text x={T[0] - 6} y={T[1] + 20} fontSize="13" fontWeight="800" fill="#7c3aed" textAnchor="middle"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...trans }}>θ</text>
+        <text x={(ox + T[0]) / 2} y={oy + 32} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="middle" style={trans}>{`adj = ${(adj0 * k).toFixed(1)}`}</text>
+        <text x={T[0] - 12} y={(T[1] + P[1]) / 2} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="end" style={trans}>{`opp = ${(opp0 * k).toFixed(1)}`}</text>
+        <text x={(ox + P[0]) / 2 + 10} y={(oy + P[1]) / 2 - 6} fontSize="12" fontWeight="700" fill="#1e293b" textAnchor="start" style={trans}>{`hyp = ${(hyp0 * k).toFixed(1)}`}</text>
+      </svg>
+      <div style={{ fontSize: '0.92rem', fontWeight: 800, color: '#7c3aed' }}>scale factor k = {k.toFixed(1)}×</div>
+      <input type="range" min={0.5} max={2.5} step={0.1} value={k} onChange={(e) => setK(Number(e.target.value))}
+        style={{ width: Math.min(280, width - 20), accentColor: '#7c3aed' }} />
+      {showRatios && (
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.86rem', fontWeight: 700, color: '#1e293b' }}>
+          <span>sin θ = {sinT.toFixed(2)}</span>
+          <span>cos θ = {cosT.toFixed(2)}</span>
+          <span>tan θ = {tanT.toFixed(2)}</span>
+          <span style={{ color: '#059669' }}>— unchanged as k varies!</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2299,6 +2350,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'elevationDepression') inner = <ElevationDepressionDiagram {...item} />;
   else if (item.type === 'compassBearing') inner = <CompassBearingDiagram {...item} />;
   else if (item.type === 'angleCircle') inner = <AngleCircle {...item} />;
+  else if (item.type === 'similarTriangles') inner = <SimilarTrianglesDemo {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };
