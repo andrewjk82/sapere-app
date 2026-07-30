@@ -11,6 +11,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q1',
+    chapterId: 'y7-4',
+    topicId: 'y7-4h',
+    topicCode: '4H',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -42,6 +45,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q2',
+    chapterId: 'y7-7',
+    topicId: 'y7-7a',
+    topicCode: '7A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -73,6 +79,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q3',
+    chapterId: 'y7-1',
+    topicId: 'y7-1e',
+    topicCode: '1E',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -91,6 +100,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q4',
+    chapterId: 'y7-1',
+    topicId: 'y7-1g',
+    topicCode: '1G',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -117,6 +129,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q5',
+    chapterId: 'y7-1',
+    topicId: 'y7-1l',
+    topicCode: '1L',
     type: 'multiple_choice',
     difficulty: 'hard',
     timeLimit: 120,
@@ -139,6 +154,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q6',
+    chapterId: 'y7-1',
+    topicId: 'y7-1f',
+    topicCode: '1F',
     type: 'multiple_choice',
     difficulty: 'hard',
     timeLimit: 120,
@@ -165,6 +183,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q7',
+    chapterId: 'y7-2',
+    topicId: 'y7-2g',
+    topicCode: '2G',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -187,6 +208,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q8',
+    chapterId: 'y7-1',
+    topicId: 'y7-1d',
+    topicCode: '1D',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -209,6 +233,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q9',
+    chapterId: 'y7-1',
+    topicId: 'y7-1m',
+    topicCode: '1M',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -235,6 +262,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q1',
+    chapterId: 'y7-4',
+    topicId: 'y7-4c',
+    topicCode: '4C',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -262,6 +292,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q2',
+    chapterId: 'y7-4',
+    topicId: 'y7-4b',
+    topicCode: '4B',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -293,6 +326,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q1',
+    chapterId: 'y7-7',
+    topicId: 'y7-7a',
+    topicCode: '7A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -315,6 +351,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q2',
+    chapterId: 'y7-7',
+    topicId: 'y7-7d',
+    topicCode: '7D',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -341,6 +380,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-14-killara-q1',
+    chapterId: 'y7-14',
+    topicId: 'y7-14a',
+    topicCode: '14A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -363,6 +405,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q3',
+    chapterId: 'y7-4',
+    topicId: 'y7-4b',
+    topicCode: '4B',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -386,6 +431,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q4',
+    chapterId: 'y7-4',
+    topicId: 'y7-4e',
+    topicCode: '4E',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -409,6 +457,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q3',
+    chapterId: 'y7-7',
+    topicId: 'y7-7d',
+    topicCode: '7D',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -427,6 +478,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-14-killara-q2',
+    chapterId: 'y7-14',
+    topicId: 'y7-14a',
+    topicCode: '14A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -445,6 +499,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-17-killara-q1',
+    chapterId: 'y7-17',
+    topicId: 'y7-17f',
+    topicCode: '17F',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -463,6 +520,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q1',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -481,6 +541,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q2',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -508,6 +571,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q10',
+    chapterId: 'y7-1',
+    topicId: 'y7-1m',
+    topicCode: '1M',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -530,6 +596,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q11',
+    chapterId: 'y7-1',
+    topicId: 'y7-1m',
+    topicCode: '1M',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -552,6 +621,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q12',
+    chapterId: 'y7-1',
+    topicId: 'y7-1e',
+    topicCode: '1E',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -579,6 +651,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q13',
+    chapterId: 'y7-1',
+    topicId: 'y7-1e',
+    topicCode: '1E',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -601,6 +676,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q14',
+    chapterId: 'y7-1',
+    topicId: 'y7-1g',
+    topicCode: '1G',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -628,6 +706,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q15',
+    chapterId: 'y7-1',
+    topicId: 'y7-1g',
+    topicCode: '1G',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -650,6 +731,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-1-killara-q16',
+    chapterId: 'y7-2',
+    topicId: 'y7-2g',
+    topicCode: '2G',
     type: 'multiple_choice',
     difficulty: 'hard',
     timeLimit: 120,
@@ -676,6 +760,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q5',
+    chapterId: 'y7-4',
+    topicId: 'y7-4h',
+    topicCode: '4H',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -694,6 +781,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q6',
+    chapterId: 'y7-4',
+    topicId: 'y7-4e',
+    topicCode: '4E',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -716,6 +806,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-4-killara-q7',
+    chapterId: 'y7-4',
+    topicId: 'y7-4d',
+    topicCode: '4D',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -747,6 +840,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q4',
+    chapterId: 'y7-7',
+    topicId: 'y7-7b',
+    topicCode: '7B',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -769,6 +865,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q5',
+    chapterId: 'y7-7',
+    topicId: 'y7-7a',
+    topicCode: '7A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -791,6 +890,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-7-killara-q6',
+    chapterId: 'y7-7',
+    topicId: 'y7-7e',
+    topicCode: '7E',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -817,6 +919,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-14-killara-q3',
+    chapterId: 'y7-14',
+    topicId: 'y7-14a',
+    topicCode: '14A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -843,6 +948,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-5-killara-q1',
+    chapterId: 'y7-17',
+    topicId: 'y7-17g',
+    topicCode: '17G',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -869,6 +977,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q3',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -887,6 +998,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q4',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -905,6 +1019,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q5',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -923,6 +1040,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q6',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -941,6 +1061,9 @@ export const Y7_KILLARA_1995_QUESTIONS = [
 
   {
     id: 'y7-20-killara-q7',
+    chapterId: 'y7-20',
+    topicId: 'y7-20a',
+    topicCode: '20A',
     type: 'multiple_choice',
     difficulty: 'easy',
     timeLimit: 90,
@@ -962,6 +1085,9 @@ export const Y7_KILLARA_1995_SIMILAR = [
   // Variant questions with similar difficulty
   {
     id: 'y7-1-killara-var-q1',
+    chapterId: 'y7-4',
+    topicId: 'y7-4h',
+    topicCode: '4H',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -985,6 +1111,9 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-1-killara-var-q2',
+    chapterId: 'y7-7',
+    topicId: 'y7-7a',
+    topicCode: '7A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -1008,6 +1137,9 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-4-killara-var-q1',
+    chapterId: 'y7-4',
+    topicId: 'y7-4c',
+    topicCode: '4C',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -1031,6 +1163,9 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-7-killara-var-q1',
+    chapterId: 'y7-7',
+    topicId: 'y7-7d',
+    topicCode: '7D',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
@@ -1049,6 +1184,9 @@ export const Y7_KILLARA_1995_SIMILAR = [
 
   {
     id: 'y7-14-killara-var-q1',
+    chapterId: 'y7-14',
+    topicId: 'y7-14a',
+    topicCode: '14A',
     type: 'multiple_choice',
     difficulty: 'medium',
     timeLimit: 120,
