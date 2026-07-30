@@ -897,18 +897,18 @@ export const Y7_KILLARA_1995_QUESTIONS = [
     difficulty: 'medium',
     timeLimit: 120,
     t: 'Decimals',
-    question: 'A shop sells pens for \\$2.35 each. What is the cost of 6 pens?',
-    options: ['\\$14.10', '\\$13.10', '\\$14.70', '\\$12.10'],
+    question: 'A shop sells pens for \\( \\$2.35 \\) each. What is the cost of 6 pens?',
+    options: ['\\( \\$14.10 \\)', '\\( \\$13.10 \\)', '\\( \\$14.70 \\)', '\\( \\$12.10 \\)'],
     answer: '0',
     requiresManualGrading: false,
     solutionSteps: [
       {
         explanation: 'Multiply the price per pen by the number of pens.',
-        workingOut: '2.35 \\times 6'
+        workingOut: '\\( 2.35 \\times 6 \\)'
       },
       {
         explanation: 'Multiply as whole numbers then place the decimal point: \\( 235 \\times 6 = 1410 \\)',
-        workingOut: '2.35 \\times 6 = \\$14.10'
+        workingOut: '\\( 2.35 \\times 6 = \\$14.10 \\)'
       }
     ]
   },
