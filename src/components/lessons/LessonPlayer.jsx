@@ -51,6 +51,17 @@ const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
 
+// Minimum time a step must stay on screen during auto-play, estimated from how
+// long it takes to read/hear its narration (~2.3 words/sec) — a floor, not a
+// target. Guards against advancing "before the lecture is even done": if the
+// narration audio errors, is blocked by the browser's autoplay policy, or a
+// step's audio file is mismatched/short, auto-play still won't cut away
+// before a student could plausibly have finished it.
+const minDwellMs = (step) => {
+  const words = (step?.speech || step?.narration || '').trim().split(/\s+/).filter(Boolean).length;
+  return Math.min(16000, Math.max(3200, Math.round((words / 2.3) * 1000)));
+};
+
 const PlaceValueTable = ({ columns }) => (
   <div style={{ display: 'flex', gap: '10px', justifyContent: 'center', flexWrap: 'wrap', fontFamily: FONT }}>
     {columns.map((c, i) => (
@@ -2380,15 +2391,22 @@ const LessonPlayer = ({ lesson, onClose }) => {
     const myToken = tokenRef.current;
     stopAudio();
     clearAdvance();
+    const stepStart = Date.now();
+    const minMs = minDwellMs(stepObj);
+    // However narration ends (audio finished, errored, blocked by the
+    // browser's autoplay policy, or simply absent), never advance sooner
+    // than minMs after the step first appeared.
     const proceed = () => {
       if (!autoRef.current || tokenRef.current !== myToken) return;
       if (isInteractiveStep(stepObj)) { setAuto(false); return; }
-      advTimer.current = setTimeout(nextOrStop, 650);
+      const remaining = minMs - (Date.now() - stepStart);
+      advTimer.current = setTimeout(nextOrStop, Math.max(650, remaining));
     };
     const fixedDelay = () => {
       if (!autoRef.current) return;
       if (isInteractiveStep(stepObj)) { setAuto(false); return; }
-      advTimer.current = setTimeout(nextOrStop, 3600);
+      const remaining = minMs - (Date.now() - stepStart);
+      advTimer.current = setTimeout(nextOrStop, Math.max(3600, remaining));
     };
 
     if (!voiceRef.current) { setSpeaking(false); fixedDelay(); return; }
