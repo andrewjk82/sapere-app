@@ -1256,6 +1256,197 @@ export const buildRightTriangleProblemsLesson = ({ audioBase = null } = {}) => {
   return { emoji: '🗺️', title: 'Problems involving right-angled triangles', steps, glossary };
 };
 
+// ── Lesson: Year 11 Advanced · 6C · Trigonometric functions of a general angle
+export const buildGeneralAngleTrigLesson = ({ audioBase = null } = {}) => {
+  const D2R = Math.PI / 180;
+  const sinDeg = (x) => Math.sin(x * D2R);
+  const cosDeg = (x) => Math.cos(x * D2R);
+  const tanDeg = (x) => Math.tan(x * D2R);
+
+  const steps = [
+    {
+      narration: `The definitions in Section <b>6A</b> only work for <b>acute</b> angles. This section extends them to <b>any</b> angle — negative, obtuse, reflex, or bigger than 360° — using a <b>circle</b> in the coordinate plane.`,
+      speech: `The definitions in section 6A only work for acute angles. This section extends them to any angle, negative, obtuse, reflex, or bigger than 360 degrees, using a circle in the coordinate plane.`,
+      board: [{ type: 'math', content: `$$\\text{acute angles only} \\;\\longrightarrow\\; \\text{ANY angle}$$` }],
+    },
+    {
+      narration: `Every angle θ is associated with a <b>ray</b> from the origin. The positive x-axis is the ray for 0°. For other angles, <b>rotate anticlockwise</b> through θ — or, if θ is negative, rotate <b>clockwise</b>. <b>Drag the slider</b> (or tap a quick angle) to build the ray for any θ yourself.`,
+      speech: `Every angle theta is associated with a ray from the origin. The positive x axis is the ray for 0 degrees. For other angles, rotate anticlockwise through theta. If theta is negative, rotate clockwise instead. Drag the slider, or tap a quick angle, to build the ray for any theta yourself.`,
+      board: [{ type: 'angleCircle', initialDeg: 40, showRatios: false }],
+    },
+    {
+      narration: `Notice one ray corresponds to <b>infinitely many</b> angles, all differing by multiples of 360°: …, −320°, 40°, 400°, 760°, … all give the <b>same ray</b>. Try it — set the slider to 40°, then 400°.`,
+      speech: `Notice that one ray corresponds to infinitely many angles, all differing by multiples of 360 degrees. Negative 320 degrees, 40 degrees, 400 degrees, 760 degrees, all give the same ray. Try it. Set the slider to 40 degrees, then to 400 degrees.`,
+      board: [{ type: 'math', content: `$$\\ldots,\\ -320°,\\ 40°,\\ 400°,\\ 760°,\\ \\ldots \\;\\longrightarrow\\; \\text{the same ray}$$`, emphasis: true }],
+    },
+    {
+      narration: `Quick check — which of these angles shares the <b>same ray</b> as 50°?`,
+      speech: `Quick check. Which of these angles shares the same ray as 50 degrees?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{Same ray as } 50°?$$`,
+        options: [
+          { text: '410°', correct: true },
+          { text: '−50°', correct: false },
+          { text: '130°', correct: false },
+          { text: '230°', correct: false },
+        ],
+        explanation: '410° = 50° + 360°, exactly one full turn more — the same ray. The others land on a different ray.',
+      }],
+    },
+    {
+      narration: `Now the <b>definition</b>. Draw a circle of any radius r centred at O. Let the ray for θ meet the circle at <b>P(x, y)</b>. Then: $\\sin\\theta = \\dfrac{y}{r}$, $\\cos\\theta = \\dfrac{x}{r}$, $\\tan\\theta = \\dfrac{y}{x}$. Drag θ and watch the values update live.`,
+      speech: `Now the definition. Draw a circle of any radius r, centred at the origin O. Let the ray for theta meet the circle at the point P, x y. Then sine theta equals y over r, cosine theta equals x over r, and tangent theta equals y over x. Drag theta and watch the values update live.`,
+      board: [
+        { type: 'angleCircle', initialDeg: 130, showRatios: true },
+        { type: 'math', content: `$$\\sin\\theta=\\dfrac{y}{r} \\quad \\cos\\theta=\\dfrac{x}{r} \\quad \\tan\\theta=\\dfrac{y}{x}$$`, emphasis: true },
+      ],
+    },
+    {
+      narration: `The reciprocals follow the same pattern: $\\operatorname{cosec}\\theta = \\dfrac{r}{y}$, $\\sec\\theta = \\dfrac{r}{x}$, $\\cot\\theta = \\dfrac{x}{y}$.`,
+      speech: `The reciprocals follow the same pattern. Cosecant theta equals r over y. Secant theta equals r over x. Cotangent theta equals x over y.`,
+      board: [{ type: 'math', content: `$$\\operatorname{cosec}\\theta = \\dfrac{r}{y} \\qquad \\sec\\theta = \\dfrac{r}{x} \\qquad \\cot\\theta = \\dfrac{x}{y}$$`, emphasis: true }],
+    },
+    {
+      narration: `<b>Agreement with the old definition:</b> for an acute θ, drop a perpendicular from P to the x-axis at M. Then hyp = OP = r, opp = PM = y, adj = OM = x — so the two definitions always agree. Replace hyp↔r, opp↔y, adj↔x.`,
+      speech: `Agreement with the old definition. For an acute theta, drop a perpendicular from P to the x axis at M. Then the hypotenuse, O P, equals r. The opposite side, P M, equals y. And the adjacent side, O M, equals x. So the two definitions always agree — just replace hyp with r, opp with y, and adj with x.`,
+      board: [{
+        type: 'triangle', verts: [[0, 0], [4, 0], [4, 3]], sideLabels: ['x (adj)', 'y (opp)', 'r (hyp)'], angleLabels: ['θ', '90°', ''],
+        width: 300, height: 260,
+      }],
+    },
+    {
+      narration: `<b>Boundary angles</b> — multiples of 90° — sit exactly on the axes. Set the slider to 90°, 180° and 270° and watch P land exactly on an axis each time.`,
+      speech: `Boundary angles, the multiples of 90 degrees, sit exactly on the axes. Set the slider to 90 degrees, 180 degrees, and 270 degrees, and watch P land exactly on an axis each time.`,
+      board: [{ type: 'angleCircle', initialDeg: 90, showRatios: true, quickAngles: [0, 90, 180, 270, 360] }],
+    },
+    {
+      narration: `Reading off (x, y, r) at each boundary angle gives this table. Learn it, or rebuild it from the diagram whenever you need it.`,
+      speech: `Reading off x, y and r at each boundary angle gives this table. Learn it, or rebuild it from the diagram whenever you need it.`,
+      board: [{ type: 'valueTable', rows: [
+        ['θ', '0°', '90°', '180°', '270°'],
+        ['\\sin\\theta', '0', '1', '0', '-1'],
+        ['\\cos\\theta', '1', '0', '-1', '0'],
+        ['\\tan\\theta', '0', '\\text{undefined}', '0', '\\text{undefined}'],
+      ] }],
+    },
+    {
+      narration: `Quick check — what is $\\tan 90°$?`,
+      speech: `Quick check. What is tan 90 degrees?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\tan 90° = \\;?$$`,
+        options: [
+          { text: 'undefined', correct: true },
+          { text: '0', correct: false },
+          { text: '1', correct: false },
+          { text: '−1', correct: false },
+        ],
+        explanation: 'At 90°, x = 0. tan θ = y/x, and dividing by 0 is undefined.',
+      }],
+    },
+    {
+      narration: `<b>Warning:</b> $\\cot\\theta = \\dfrac{1}{\\tan\\theta}$ is true <b>everywhere except at boundary angles</b>. At θ = 0°, tan θ = 0 and cot θ is undefined; at θ = 90°, tan θ is undefined and cot θ = 0. Zero has no reciprocal, and infinity isn't a number either.`,
+      speech: `A warning. Cotangent theta equals 1 over tangent theta is true everywhere except at boundary angles. At theta equals 0 degrees, tan theta equals 0 and cot theta is undefined. At theta equals 90 degrees, tan theta is undefined and cot theta equals 0. Zero has no reciprocal, and infinity is not a number either.`,
+      board: [{ type: 'math', content: `$$\\theta=0°:\\ \\tan\\theta=0,\\ \\cot\\theta\\ \\text{undefined} \\qquad \\theta=90°:\\ \\tan\\theta\\ \\text{undefined},\\ \\cot\\theta=0$$` }],
+    },
+    {
+      narration: `<b>Domains:</b> sin θ and cos θ are defined for <b>every</b> angle. tan θ and sec θ are undefined wherever x = 0 (the boundary angles 90°, 270°, …). cot θ and cosec θ are undefined wherever y = 0 (the boundary angles 0°, 180°, …).`,
+      speech: `Domains. Sine theta and cosine theta are defined for every angle. Tangent theta and secant theta are undefined wherever x equals 0, at the boundary angles 90, 270, and so on. Cotangent theta and cosecant theta are undefined wherever y equals 0, at the boundary angles 0, 180, and so on.`,
+      board: [{ type: 'math', content: `$$\\tan\\theta,\\sec\\theta:\\ \\theta\\neq \\ldots,90°,270°,\\ldots \\qquad \\cot\\theta,\\operatorname{cosec}\\theta:\\ \\theta\\neq \\ldots,0°,180°,\\ldots$$` }],
+    },
+    {
+      narration: `Quick check — at θ = 180°, y = 0. Which function is <b>undefined</b> there?`,
+      speech: `Quick check. At theta equals 180 degrees, y equals 0. Which function is undefined there?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\theta = 180°,\\ y=0.\\ \\text{Which function is undefined?}$$`,
+        options: [
+          { text: '$\\cot\\theta$', correct: true },
+          { text: '$\\tan\\theta$', correct: false },
+          { text: '$\\sin\\theta$', correct: false },
+          { text: '$\\cos\\theta$', correct: false },
+        ],
+        explanation: 'cot θ = x/y, and y = 0 here, so cot 180° is undefined. tan θ = y/x = 0/(−r) = 0, which is defined.',
+      }],
+    },
+    {
+      narration: `Watch the dot sweep along <b>y = sin x</b> as x runs from −360° to 360°. It rises to a maximum of <b>1</b>, falls to a minimum of <b>−1</b>, and repeats — the graph is <b>periodic</b>.`,
+      speech: `Watch the dot sweep along y equals sine x, as x runs from negative 360 degrees to 360 degrees. It rises to a maximum of 1, falls to a minimum of negative 1, and repeats. The graph is periodic.`,
+      board: [{
+        type: 'graph', xMin: -360, xMax: 360, yMin: -1.4, yMax: 1.4, width: 480, height: 280,
+        curves: [{ fn: sinDeg }],
+        traces: [{ fn: sinDeg, from: -360, to: 360, dur: 4500, label: 'y = sin x', yMin: -1.4, yMax: 1.4 }],
+      }],
+    },
+    {
+      narration: `Now <b>y = cos x</b> — the same wave shape, just <b>shifted</b> so it starts at its maximum when x = 0.`,
+      speech: `Now y equals cosine x. The same wave shape, just shifted so it starts at its maximum when x equals 0.`,
+      board: [{
+        type: 'graph', xMin: -360, xMax: 360, yMin: -1.4, yMax: 1.4, width: 480, height: 280,
+        curves: [{ fn: cosDeg }],
+        traces: [{ fn: cosDeg, from: -360, to: 360, dur: 4500, label: 'y = cos x', yMin: -1.4, yMax: 1.4 }],
+      }],
+    },
+    {
+      narration: `Quick check — sin x and cos x each rise 1 unit above and fall 1 unit below their mean position. What is this called?`,
+      speech: `Quick check. Sine x and cosine x each rise 1 unit above, and fall 1 unit below, their mean position. What is this called?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{Height of the wave above/below the mean position} = \\;?$$`,
+        options: [
+          { text: 'amplitude', correct: true },
+          { text: 'period', correct: false },
+          { text: 'domain', correct: false },
+          { text: 'asymptote', correct: false },
+        ],
+        explanation: 'Amplitude is how far a wave rises/falls from its mean position. Period is how far along x it takes to repeat.',
+      }],
+    },
+    {
+      narration: `<b>y = tan x</b> is different: it has <b>vertical asymptotes</b> at every boundary angle where x = 0 (…, −90°, 90°, 270°, …), and no maximum or minimum — it shoots to ±∞ near each asymptote.`,
+      speech: `y equals tangent x is different. It has vertical asymptotes at every boundary angle where x equals 0: negative 90, 90, 270, and so on. It has no maximum or minimum. It shoots towards positive or negative infinity near each asymptote.`,
+      board: [{
+        type: 'graph', xMin: -270, xMax: 270, yMin: -4, yMax: 4, width: 480, height: 280,
+        curves: [{ fn: tanDeg }],
+        asymptotes: [{ type: 'v', x: -90, color: '#ef4444' }, { type: 'v', x: 90, color: '#ef4444' }, { type: 'v', x: -270, color: '#ef4444' }, { type: 'v', x: 270, color: '#ef4444' }],
+      }],
+    },
+    {
+      narration: `<b>Your turn to discover something.</b> Looking at the tan x graph, one repeating "branch" runs from one asymptote to the next. What do you think the <b>period</b> of tan x is?`,
+      speech: `Your turn to discover something. Looking at the tan x graph, one repeating branch runs from one asymptote to the next. What do you think the period of tan x is?`,
+      board: [{
+        type: 'checkpoint',
+        prompt: `$$\\text{Period of } y=\\tan x = \\;?$$`,
+        options: [
+          { text: '360°', correct: false },
+          { text: '180°', correct: true },
+          { text: '90°', correct: false },
+          { text: '270°', correct: false },
+        ],
+        explanation: 'Consecutive asymptotes are 180° apart (e.g. −90° to 90°), and the branch between them repeats identically every 180° — half the period of sin and cos.',
+      }],
+    },
+    {
+      narration: `<b>Recap:</b> for a general angle θ, put P(x, y) on a circle of radius r: $\\sin\\theta=\\tfrac{y}{r}$, $\\cos\\theta=\\tfrac{x}{r}$, $\\tan\\theta=\\tfrac{y}{x}$. sin and cos are defined everywhere and have <b>period 360°, amplitude 1</b>; tan and sec break down where x = 0; cot and cosec break down where y = 0; and tan has <b>period 180°</b>.`,
+      speech: `Recap. For a general angle theta, put the point P, x y, on a circle of radius r. Sine theta equals y over r. Cosine theta equals x over r. Tangent theta equals y over x. Sine and cosine are defined everywhere, and have period 360 degrees and amplitude 1. Tangent and secant break down where x equals 0. Cotangent and cosecant break down where y equals 0. And tangent has period 180 degrees.`,
+      board: [{ type: 'math', content: `$$\\sin\\theta=\\dfrac{y}{r} \\quad \\cos\\theta=\\dfrac{x}{r} \\quad \\tan\\theta=\\dfrac{y}{x} \\qquad \\text{period}(\\sin,\\cos)=360° \\quad \\text{period}(\\tan)=180°$$` }],
+    },
+  ];
+
+  if (audioBase) steps.forEach((s, i) => { s.audioUrl = `${audioBase}/step-${i}.mp3`; });
+  const glossary = {
+    ...BASE_GLOSSARY,
+    'boundary angle': 'A multiple of 90° (…, −90°, 0°, 90°, 180°, 270°, 360°, …) — the angles lying exactly on the axes.',
+    'periodic': 'A function whose graph consists of one small piece repeated infinitely — like sin x, cos x and tan x.',
+    'period': 'The length of the smallest repeating piece of a periodic graph — 360° for sin x and cos x, 180° for tan x.',
+    'amplitude': 'How far a wave graph rises above (and falls below) its mean position — 1 for both sin x and cos x.',
+    'domain': 'The complete set of angles θ for which a trig function is defined.',
+    'general angle': 'Any angle at all — negative, obtuse, reflex, or greater than 360° — defined using a ray and a circle rather than a triangle.',
+  };
+  return { emoji: '🌀', title: 'Trigonometric functions of a general angle', steps, glossary };
+};
+
 // ── Lesson: Year 7 · 20A · Polyhedra ────────────────────────────────────────
 export const buildPolyhedraLesson = ({ audioBase = null } = {}) => {
   const V = '#7c3aed';   // visible edge colour (purple)
@@ -2680,6 +2871,9 @@ export const LESSONS = {
 
   // Year 11 Advanced · 6B · Problems involving right-angled triangles.
   'y11a-6B': { ...buildRightTriangleProblemsLesson({ audioBase: '/lessons/audio/y11a-6B' }), topicId: 'y11a-6B' },
+
+  // Year 11 Advanced · 6C · Trigonometric functions of a general angle.
+  'y11a-6C': { ...buildGeneralAngleTrigLesson({ audioBase: '/lessons/audio/y11a-6C' }), topicId: 'y11a-6C' },
 };
 
 export const getLesson = (topicId) => (topicId && LESSONS[topicId]) || null;

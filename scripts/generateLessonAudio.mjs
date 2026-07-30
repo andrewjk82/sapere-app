@@ -6,7 +6,7 @@
  * Usage:  node scripts/generateLessonAudio.mjs
  */
 import { KokoroTTS } from 'kokoro-js';
-import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson, buildPolyhedraLesson, buildNumberLineLesson, buildClockBasicsLesson, buildClockQuartersLesson, buildClockPreciseLesson, buildTranslationsLesson, buildPercentagesLesson, buildOneQuantityAsPercentLesson, buildPercentOfQuantityLesson, buildRatiosLesson, buildRatioProblemsLesson, buildRightTriangleTrigLesson, buildRightTriangleProblemsLesson } from '../src/lessons/registry.js';
+import { buildPlaceValueLesson, buildAsymptotesLesson, buildPowersCubicsCirclesLesson, buildRadianLesson, buildTrigEquationsLesson, buildPolyhedraLesson, buildNumberLineLesson, buildClockBasicsLesson, buildClockQuartersLesson, buildClockPreciseLesson, buildTranslationsLesson, buildPercentagesLesson, buildOneQuantityAsPercentLesson, buildPercentOfQuantityLesson, buildRatiosLesson, buildRatioProblemsLesson, buildRightTriangleTrigLesson, buildRightTriangleProblemsLesson, buildGeneralAngleTrigLesson } from '../src/lessons/registry.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execSync } from 'node:child_process';
@@ -15,8 +15,7 @@ const VOICE = 'bf_emma'; // British female, teacher-like
 
 // To regenerate only one lesson, comment out the others.
 const JOBS = [
-  { id: 'y11a-6A', steps: buildRightTriangleTrigLesson({ audioBase: '/lessons/audio/y11a-6A' }).steps },
-  { id: 'y11a-6B', steps: buildRightTriangleProblemsLesson({ audioBase: '/lessons/audio/y11a-6B' }).steps },
+  { id: 'y11a-6C', steps: buildGeneralAngleTrigLesson({ audioBase: '/lessons/audio/y11a-6C' }).steps },
 ];
 
 const main = async () => {

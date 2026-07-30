@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2147,6 +2147,67 @@ const CompassBearingDiagram = ({ rays = [], width = 300, height = 300 }) => {
   );
 };
 
+// ── Angle circle — the general-angle definition, live and draggable ────────
+// A circle of radius r with a ray to P(x, y); students drag the slider (or tap
+// a quick-angle chip) to sweep θ through any value, positive or negative, past
+// 360° — and watch sin θ = y/r, cos θ = x/r, tan θ = y/x update live. This is
+// the one diagram behind the whole "general angle" idea, made touchable.
+const AngleCircle = ({ width = 320, height = 320, r = 100, initialDeg = 40, quickAngles = [0, 30, 90, 180, 270, 360, -90], showRatios = true }) => {
+  const [deg, setDeg] = useState(initialDeg);
+  const cx = width / 2, cy = height / 2;
+  const rad = (deg * Math.PI) / 180;
+  const x = r * Math.cos(rad), y = r * Math.sin(rad);
+  const px = cx + x, py = cy - y;
+  const arSteps = 28;
+  const ar = r * 0.32;
+  const arcPts = Array.from({ length: arSteps + 1 }, (_, i) => {
+    const t = (deg * i) / arSteps;
+    const tr = (t * Math.PI) / 180;
+    return [cx + ar * Math.cos(tr), cy - ar * Math.sin(tr)];
+  });
+  const arcD = arcPts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p[0].toFixed(1)} ${p[1].toFixed(1)}`).join(' ');
+  const sinT = y / r, cosT = x / r, tanT = Math.abs(cosT) < 0.001 ? null : y / x;
+  const transStyle = { transition: 'cx 0.35s ease, cy 0.35s ease, x2 0.35s ease, y2 0.35s ease' };
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
+      <svg width={width} height={height} style={{ display: 'block' }}>
+        <circle cx={cx} cy={cy} r={r} fill="none" stroke="#ddd6fe" strokeWidth="1.6" />
+        <line x1={cx - r - 20} y1={cy} x2={cx + r + 20} y2={cy} stroke="#94a3b8" strokeWidth="1.4" />
+        <line x1={cx} y1={cy - r - 20} x2={cx} y2={cy + r + 20} stroke="#94a3b8" strokeWidth="1.4" />
+        <text x={cx + r + 22} y={cy + 4} fontSize="12" fontStyle="italic" fill="#64748b">x</text>
+        <text x={cx + 6} y={cy - r - 22} fontSize="12" fontStyle="italic" fill="#64748b">y</text>
+        <line x1={px} y1={py} x2={px} y2={cy} stroke="#94a3b8" strokeDasharray="4 3" strokeWidth="1.3" style={transStyle} />
+        <line x1={px} y1={py} x2={cx} y2={py} stroke="#94a3b8" strokeDasharray="4 3" strokeWidth="1.3" style={transStyle} />
+        <path d={arcD} fill="none" stroke="#f59e0b" strokeWidth="2" />
+        <line x1={cx} y1={cy} x2={px} y2={py} stroke="#7c3aed" strokeWidth="2.6" style={transStyle} />
+        <circle cx={px} cy={py} r="6" fill="#7c3aed" stroke="#fff" strokeWidth="2" style={transStyle} />
+        <circle cx={cx} cy={cy} r="3.5" fill="#1e1b4b" />
+        <text x={cx - 14} y={cy + 16} fontSize="12" fontWeight="700" fill="#1e1b4b">O</text>
+        <text x={px + (x >= 0 ? 10 : -34)} y={py + (y >= 0 ? -8 : 20)} fontSize="12.5" fontWeight="800" fill="#7c3aed"
+          style={{ paintOrder: 'stroke', stroke: '#fff', strokeWidth: 4, ...transStyle }}>P(x, y)</text>
+      </svg>
+      <div style={{ fontSize: '0.95rem', fontWeight: 800, color: '#7c3aed' }}>θ = {Math.round(deg)}°</div>
+      <input type="range" min={-360} max={720} step={1} value={deg} onChange={(e) => setDeg(Number(e.target.value))}
+        style={{ width: Math.min(280, width - 20), accentColor: '#7c3aed' }} />
+      <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', justifyContent: 'center', maxWidth: width }}>
+        {quickAngles.map((a) => (
+          <button key={a} onClick={() => setDeg(a)}
+            style={{ padding: '4px 11px', borderRadius: 999, border: `1.5px solid ${deg === a ? '#7c3aed' : '#e2e8f0'}`, background: deg === a ? '#7c3aed' : '#fff', color: deg === a ? '#fff' : '#475569', fontWeight: 700, fontSize: '0.74rem', cursor: 'pointer', fontFamily: FONT }}>
+            {a}°
+          </button>
+        ))}
+      </div>
+      {showRatios && (
+        <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap', justifyContent: 'center', fontSize: '0.86rem', fontWeight: 700, color: '#1e293b' }}>
+          <span>sin θ = {sinT.toFixed(2)}</span>
+          <span>cos θ = {cosT.toFixed(2)}</span>
+          <span>tan θ = {tanT == null ? 'undefined' : tanT.toFixed(2)}</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2226,6 +2287,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'checkpoint') inner = <Checkpoint {...item} />;
   else if (item.type === 'elevationDepression') inner = <ElevationDepressionDiagram {...item} />;
   else if (item.type === 'compassBearing') inner = <CompassBearingDiagram {...item} />;
+  else if (item.type === 'angleCircle') inner = <AngleCircle {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };
