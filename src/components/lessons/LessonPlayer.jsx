@@ -2412,9 +2412,9 @@ const ExactValuesExplorer = () => {
   })() : null;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, fontFamily: FONT }}>
-      <div style={{ display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'wrap' }}>
-        <SpecialTriangle verts={[[0, 0], [1, 0], [1, 1]]} sideLabels={['1', '1', '√2']} angleLabels={['45°', '90°', '45°']} width={440} height={400} highlightedSides={tri45Highlight} />
-        <SpecialTriangle verts={[[0, 0], [1, 0], [1, Math.sqrt(3)]]} sideLabels={['1', '√3', '2']} angleLabels={['60°', '90°', '30°']} width={440} height={400} highlightedSides={tri30_60Highlight} />
+      <div style={{ display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'nowrap', overflowX: 'auto' }}>
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, 1]]} sideLabels={['1', '1', '√2']} angleLabels={['45°', '90°', '45°']} width={308} height={280} highlightedSides={tri45Highlight} />
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, Math.sqrt(3)]]} sideLabels={['1', '√3', '2']} angleLabels={['60°', '90°', '30°']} width={308} height={280} highlightedSides={tri30_60Highlight} />
       </div>
       <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#7c3aed', textAlign: 'center' }}>
         Work each value out from the triangles above, then tap a cell to check yourself.
