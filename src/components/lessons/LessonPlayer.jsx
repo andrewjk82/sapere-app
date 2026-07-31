@@ -2465,7 +2465,7 @@ const itemVariants = {
 
 const BoardItem = ({ item }) => {
   let inner = null;
-  if (item.type === 'row') inner = <div style={{ display: 'flex', gap: 20, flexWrap: 'wrap', justifyContent: 'center', alignItems: 'flex-start' }}>{(item.items || []).map((sub, i) => <BoardItem key={i} item={sub} />)}</div>;
+  if (item.type === 'row') inner = <div style={{ display: 'flex', gap: 20, flexWrap: 'nowrap', overflowX: 'auto', justifyContent: 'center', alignItems: 'flex-start' }}>{(item.items || []).map((sub, i) => <BoardItem key={i} item={sub} />)}</div>;
   else if (item.type === 'placeValueTable') inner = <PlaceValueTable columns={item.columns} />;
   else if (item.type === 'triangle') inner = <SpecialTriangle {...item} />;
   else if (item.type === 'graph') inner = <div style={{ display: 'flex', justifyContent: 'center' }}><FunctionGraph {...item} /></div>;
