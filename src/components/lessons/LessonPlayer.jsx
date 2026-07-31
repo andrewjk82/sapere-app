@@ -46,7 +46,7 @@ const fmt = (n) => n.toLocaleString('en-US').replace(/,/g, ' ');
 
 // Steps that need the student to tap/answer something before moving on —
 // auto-play must PAUSE here rather than racing past on its usual timer.
-const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio'];
+const INTERACTIVE_BOARD_TYPES = ['checkpoint', 'compassBearing', 'elevationDepression', 'angleCircle', 'similarTriangles', 'reciprocalRatio', 'exactValuesExplorer'];
 const isInteractiveStep = (step) => (step?.board || []).some(
   (b) => INTERACTIVE_BOARD_TYPES.includes(b.type) || (b.type === 'triangle' && b.quiz),
 );
@@ -2330,6 +2330,71 @@ const ReciprocalRatioDemo = ({ width = 340, height = 260 }) => {
   );
 };
 
+// ── Exact-values explorer ────────────────────────────────────────────────────
+// The two special triangles, plus a table where every cell starts hidden — tap
+// one to test yourself (derive it from the triangles above) before checking.
+// A "Reveal all" escape hatch for when a student just wants to see the table.
+const EXACT_VALUE_CELLS = {
+  sin: { label: '\\sin\\theta', 30: '\\frac{1}{2}', 45: '\\frac{1}{\\sqrt2}', 60: '\\frac{\\sqrt3}{2}' },
+  cos: { label: '\\cos\\theta', 30: '\\frac{\\sqrt3}{2}', 45: '\\frac{1}{\\sqrt2}', 60: '\\frac{1}{2}' },
+  tan: { label: '\\tan\\theta', 30: '\\frac{1}{\\sqrt3}', 45: '1', 60: '\\sqrt3' },
+};
+const ExactValuesExplorer = () => {
+  const [revealed, setRevealed] = useState(new Set());
+  const angles = [30, 45, 60];
+  const fns = ['sin', 'cos', 'tan'];
+  const toggle = (key) => setRevealed((prev) => {
+    const next = new Set(prev);
+    next.has(key) ? next.delete(key) : next.add(key);
+    return next;
+  });
+  const allShown = revealed.size === fns.length * angles.length;
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, fontFamily: FONT }}>
+      <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, 1]]} sideLabels={['1', '1', '√2']} angleLabels={['45°', '90°', '45°']} width={160} height={150} />
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, Math.sqrt(3)]]} sideLabels={['1', '√3', '2']} angleLabels={['60°', '90°', '30°']} width={160} height={150} />
+      </div>
+      <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#7c3aed', textAlign: 'center' }}>
+        Work each value out from the triangles above, then tap a cell to check yourself.
+      </div>
+      <div style={{ display: 'flex', justifyContent: 'center', overflowX: 'auto' }}>
+        <table style={{ borderCollapse: 'separate', borderSpacing: 0, borderRadius: 14, overflow: 'hidden', boxShadow: '0 6px 20px rgba(124,58,237,0.08)' }}>
+          <tbody>
+            <tr>
+              <td style={{ padding: '9px 16px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)' }}><MathView content="$\\theta$" style={{ color: '#fff', fontWeight: 800 }} /></td>
+              {angles.map((a) => (
+                <td key={a} style={{ padding: '9px 16px', textAlign: 'center', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)', color: '#fff', fontWeight: 800 }}>{a}°</td>
+              ))}
+            </tr>
+            {fns.map((fn) => (
+              <tr key={fn}>
+                <td style={{ padding: '9px 16px', background: 'linear-gradient(135deg,#a78bfa,#7c3aed)' }}><MathView content={`$${EXACT_VALUE_CELLS[fn].label}$`} style={{ color: '#fff', fontWeight: 800 }} /></td>
+                {angles.map((a) => {
+                  const key = `${fn}-${a}`;
+                  const shown = revealed.has(key);
+                  return (
+                    <td key={a} onClick={() => toggle(key)}
+                      style={{ padding: '9px 16px', textAlign: 'center', cursor: 'pointer', borderBottom: '1px solid #ece9fb', borderRight: '1px solid #ece9fb', background: shown ? '#f5f3ff' : '#fff', minWidth: 60 }}>
+                      {shown
+                        ? <MathView content={`$${EXACT_VALUE_CELLS[fn][a]}$`} style={{ fontWeight: 700, color: '#1e1b4b' }} />
+                        : <span style={{ color: '#c4b5fd', fontWeight: 800, fontSize: '1.1rem' }}>?</span>}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <button onClick={() => setRevealed(allShown ? new Set() : new Set(fns.flatMap((fn) => angles.map((a) => `${fn}-${a}`))))}
+        style={{ background: 'none', border: 'none', color: '#7c3aed', fontWeight: 700, fontSize: '0.8rem', cursor: 'pointer', textDecoration: 'underline' }}>
+        {allShown ? 'Hide all' : 'Reveal all'}
+      </button>
+    </div>
+  );
+};
+
 // Each board item animates in, with a stagger handled by the parent.
 const itemVariants = {
   hidden: { opacity: 0, y: 16 },
@@ -2412,6 +2477,7 @@ const BoardItem = ({ item }) => {
   else if (item.type === 'angleCircle') inner = <AngleCircle {...item} />;
   else if (item.type === 'similarTriangles') inner = <SimilarTrianglesDemo {...item} />;
   else if (item.type === 'reciprocalRatio') inner = <ReciprocalRatioDemo {...item} />;
+  else if (item.type === 'exactValuesExplorer') inner = <ExactValuesExplorer {...item} />;
   else return null;
   return <motion.div variants={itemVariants}>{inner}</motion.div>;
 };

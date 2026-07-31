@@ -991,18 +991,18 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       ],
     },
     {
-      narration: `The values of the trig functions at <b>30°, 45° and 60°</b> can be found <b>exactly</b>, using half a square and half an equilateral triangle. Half a <b>square of side 1</b>, cut along its diagonal, gives a <b>45°–45°–90°</b> triangle with hypotenuse √2 — the faint dashed half is the part we discard.`,
-      speech: `The values of the trig functions at 30 degrees, 45 degrees and 60 degrees can be found exactly, using half a square and half an equilateral triangle. Half a square of side 1, cut along its diagonal, gives a 45, 45, 90 triangle, with hypotenuse root 2. The faint dashed half is the part we discard.`,
+      narration: `The values of the trig functions at <b>30°, 45° and 60°</b> can be found <b>exactly</b>, using half a square and half an equilateral triangle. Half a <b>square of side 1</b>, cut along its diagonal, gives a <b>45°–45°–90°</b> triangle with hypotenuse √2. Half an <b>equilateral triangle of side 2</b>, split by dropping an altitude, gives a <b>30°–60°–90°</b> triangle with sides 1, √3 and 2 — in both, watch the kept triangle draw itself while the faint dashed half is the part we discard.`,
+      speech: `The values of the trig functions at 30 degrees, 45 degrees and 60 degrees can be found exactly, using half a square and half an equilateral triangle. Half a square of side 1, cut along its diagonal, gives a 45, 45, 90 triangle, with hypotenuse root 2. Half an equilateral triangle of side 2, split by dropping an altitude, gives a 30, 60, 90 triangle, with sides 1, root 3, and 2. In both, watch the kept triangle draw itself, while the faint dashed half is the part we discard.`,
       board: [{
-        type: 'graph', showAxes: false, width: 300, height: 300,
+        type: 'graph', showAxes: false, width: 260, height: 260,
         xMin: -0.35, xMax: 1.35, yMin: -0.35, yMax: 1.35,
-        polygons: [{ vertices: [[0, 0], [1, 0], [1, 1]], color: 'rgba(124,58,237,0.10)', delay: 0.7 }],
+        polygons: [{ vertices: [[0, 0], [1, 0], [1, 1]], color: 'rgba(124,58,237,0.10)', delay: 1.1 }],
         lines: [
           { from: [0, 0], to: [0, 1], color: '#ddd6fe', dashed: true, delay: 0.1 },
           { from: [0, 1], to: [1, 1], color: '#ddd6fe', dashed: true, delay: 0.1 },
-          { from: [0, 0], to: [1, 0], color: '#7c3aed', delay: 0.35 },
-          { from: [1, 0], to: [1, 1], color: '#7c3aed', delay: 0.5 },
-          { from: [0, 0], to: [1, 1], color: '#7c3aed', delay: 0.65 },
+          { from: [0, 0], to: [1, 0], color: '#7c3aed', delay: 0.5 },
+          { from: [1, 0], to: [1, 1], color: '#7c3aed', delay: 0.7 },
+          { from: [0, 0], to: [1, 1], color: '#7c3aed', delay: 0.9 },
         ],
         points: [{ x: 0, y: 0 }, { x: 1, y: 0 }, { x: 1, y: 1 }, { x: 0, y: 1 }],
         texts: [
@@ -1013,21 +1013,16 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
           { x: 0.83, y: 0.11, text: '90°', color: '#1e293b', size: 12 },
           { x: 0.86, y: 0.84, text: '45°', color: '#1e293b', size: 12 },
         ],
-      }],
-    },
-    {
-      narration: `Half an <b>equilateral triangle of side 2</b>, split by dropping an altitude, gives a <b>30°–60°–90°</b> triangle with sides 1, √3 and 2 — again, the faint dashed half is discarded.`,
-      speech: `Half an equilateral triangle of side 2, split by dropping an altitude, gives a 30, 60, 90 triangle, with sides 1, root 3, and 2. Again, the faint dashed half is discarded.`,
-      board: [{
-        type: 'graph', showAxes: false, width: 320, height: 320,
+      }, {
+        type: 'graph', showAxes: false, width: 260, height: 260,
         xMin: -1.3, xMax: 1.3, yMin: -0.3, yMax: 2.3,
-        polygons: [{ vertices: [[0, 1.732], [0, 0], [1, 0]], color: 'rgba(124,58,237,0.10)', delay: 0.7 }],
+        polygons: [{ vertices: [[0, 1.732], [0, 0], [1, 0]], color: 'rgba(124,58,237,0.10)', delay: 2.5 }],
         lines: [
-          { from: [0, 1.732], to: [-1, 0], color: '#ddd6fe', dashed: true, delay: 0.1 },
-          { from: [-1, 0], to: [0, 0], color: '#ddd6fe', dashed: true, delay: 0.1 },
-          { from: [0, 0], to: [1, 0], color: '#7c3aed', delay: 0.35 },
-          { from: [0, 1.732], to: [0, 0], color: '#7c3aed', delay: 0.5 },
-          { from: [0, 1.732], to: [1, 0], color: '#7c3aed', delay: 0.65 },
+          { from: [0, 1.732], to: [-1, 0], color: '#ddd6fe', dashed: true, delay: 1.5 },
+          { from: [-1, 0], to: [0, 0], color: '#ddd6fe', dashed: true, delay: 1.5 },
+          { from: [0, 0], to: [1, 0], color: '#7c3aed', delay: 1.9 },
+          { from: [0, 1.732], to: [0, 0], color: '#7c3aed', delay: 2.1 },
+          { from: [0, 1.732], to: [1, 0], color: '#7c3aed', delay: 2.3 },
         ],
         points: [{ x: 0, y: 1.732 }, { x: -1, y: 0 }, { x: 0, y: 0 }, { x: 1, y: 0 }],
         texts: [
@@ -1041,14 +1036,9 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
       }],
     },
     {
-      narration: `Applying the ratio definitions to these two triangles gives the table of <b>exact values</b>. Learn these by heart.`,
-      speech: `Applying the ratio definitions to these two triangles gives the table of exact values. Learn these by heart.`,
-      board: [{ type: 'valueTable', rows: [
-        ['θ', '30°', '45°', '60°'],
-        ['\\sin\\theta', '\\frac{1}{2}', '\\frac{1}{\\sqrt2}', '\\frac{\\sqrt3}{2}'],
-        ['\\cos\\theta', '\\frac{\\sqrt3}{2}', '\\frac{1}{\\sqrt2}', '\\frac{1}{2}'],
-        ['\\tan\\theta', '\\frac{1}{\\sqrt3}', '1', '\\sqrt3'],
-      ] }],
+      narration: `Applying the ratio definitions to these two triangles gives the table of <b>exact values</b>. Learn these by heart — <b>tap each cell</b> to test yourself before checking.`,
+      speech: `Applying the ratio definitions to these two triangles gives the table of exact values. Learn these by heart — tap each cell to test yourself before checking.`,
+      board: [{ type: 'exactValuesExplorer' }],
     },
     {
       narration: `Quick check before moving on.`,
