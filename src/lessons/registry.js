@@ -993,8 +993,8 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
     {
       narration: `The values of the trig functions at <b>30°, 45° and 60°</b> can be found <b>exactly</b>, using half a square and half an equilateral triangle. Half a <b>square of side 1</b>, cut along its diagonal, gives a <b>45°–45°–90°</b> triangle with hypotenuse √2. Half an <b>equilateral triangle of side 2</b>, split by dropping an altitude, gives a <b>30°–60°–90°</b> triangle with sides 1, √3 and 2 — in both, watch the kept triangle draw itself while the faint dashed half is the part we discard.`,
       speech: `The values of the trig functions at 30 degrees, 45 degrees and 60 degrees can be found exactly, using half a square and half an equilateral triangle. Half a square of side 1, cut along its diagonal, gives a 45, 45, 90 triangle, with hypotenuse root 2. Half an equilateral triangle of side 2, split by dropping an altitude, gives a 30, 60, 90 triangle, with sides 1, root 3, and 2. In both, watch the kept triangle draw itself, while the faint dashed half is the part we discard.`,
-      board: [{
-        type: 'graph', showAxes: false, width: 260, height: 260,
+      board: [{ type: 'row', items: [{
+        type: 'graph', showAxes: false, width: 220, height: 220,
         xMin: -0.35, xMax: 1.35, yMin: -0.35, yMax: 1.35,
         polygons: [{ vertices: [[0, 0], [1, 0], [1, 1]], color: 'rgba(124,58,237,0.10)', delay: 1.1 }],
         lines: [
@@ -1006,15 +1006,15 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
         ],
         points: [{ x: 0, y: 0 }, { x: 1, y: 0 }, { x: 1, y: 1 }, { x: 0, y: 1 }],
         texts: [
-          { x: 0.5, y: -0.12, text: '1', color: '#7c3aed', size: 13 },
-          { x: 1.14, y: 0.5, text: '1', color: '#7c3aed', size: 13 },
-          { x: 0.36, y: 0.62, text: '√2', color: '#7c3aed', size: 13 },
-          { x: 0.1, y: 0.11, text: '45°', color: '#1e293b', size: 12 },
-          { x: 0.83, y: 0.11, text: '90°', color: '#1e293b', size: 12 },
-          { x: 0.86, y: 0.84, text: '45°', color: '#1e293b', size: 12 },
+          { x: 0.5, y: -0.14, text: '1', color: '#7c3aed', size: 13 },
+          { x: 1.17, y: 0.5, text: '1', color: '#7c3aed', size: 13 },
+          { x: 0.34, y: 0.64, text: '√2', color: '#7c3aed', size: 13 },
+          { x: 0.13, y: 0.14, text: '45°', color: '#1e293b', size: 12 },
+          { x: 0.8, y: 0.14, text: '90°', color: '#1e293b', size: 12 },
+          { x: 0.82, y: 0.8, text: '45°', color: '#1e293b', size: 12 },
         ],
       }, {
-        type: 'graph', showAxes: false, width: 260, height: 260,
+        type: 'graph', showAxes: false, width: 220, height: 220,
         xMin: -1.3, xMax: 1.3, yMin: -0.3, yMax: 2.3,
         polygons: [{ vertices: [[0, 1.732], [0, 0], [1, 0]], color: 'rgba(124,58,237,0.10)', delay: 2.5 }],
         lines: [
@@ -1026,14 +1026,14 @@ export const buildRightTriangleTrigLesson = ({ audioBase = null } = {}) => {
         ],
         points: [{ x: 0, y: 1.732 }, { x: -1, y: 0 }, { x: 0, y: 0 }, { x: 1, y: 0 }],
         texts: [
-          { x: 0.5, y: -0.13, text: '1', color: '#7c3aed', size: 13 },
-          { x: -0.16, y: 0.87, text: '√3', color: '#7c3aed', size: 13 },
-          { x: 0.66, y: 0.98, text: '2', color: '#7c3aed', size: 13 },
-          { x: 0.82, y: 0.11, text: '60°', color: '#1e293b', size: 12 },
-          { x: 0.12, y: 0.11, text: '90°', color: '#1e293b', size: 12 },
-          { x: 0.1, y: 1.56, text: '30°', color: '#1e293b', size: 12 },
+          { x: 0.5, y: -0.16, text: '1', color: '#7c3aed', size: 13 },
+          { x: -0.2, y: 0.87, text: '√3', color: '#7c3aed', size: 13 },
+          { x: 0.68, y: 0.98, text: '2', color: '#7c3aed', size: 13 },
+          { x: 0.78, y: 0.14, text: '60°', color: '#1e293b', size: 12 },
+          { x: 0.16, y: 0.14, text: '90°', color: '#1e293b', size: 12 },
+          { x: 0.28, y: 1.58, text: '30°', color: '#1e293b', size: 12 },
         ],
-      }],
+      }] }],
     },
     {
       narration: `Applying the ratio definitions to these two triangles gives the table of <b>exact values</b>. Learn these by heart — <b>tap each cell</b> to test yourself before checking.`,
