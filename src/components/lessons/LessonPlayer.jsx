@@ -133,7 +133,8 @@ const Tracer = ({ fn, from, to, dur = 2600, label, approach, sx, sy, x0, y0, yMi
 // `quiz` (optional): { prompt, correctIndex (0=bottom,1=right,2=hyp), explanation }
 // makes the three sides clickable — students tap the side being asked about
 // and get instant colour feedback, no separate diagram needed.
-const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height = 260, quiz }) => {
+// `highlightedSides` (optional): array of side indices to highlight in red
+const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height = 260, quiz, highlightedSides }) => {
   const [selected, setSelected] = useState(null);
   const pad = 48;
   const [A, B, C] = verts; // A=bottom-left (acute), B=bottom-right (right angle), C=top-right (acute)
@@ -182,14 +183,15 @@ const SpecialTriangle = ({ verts, sideLabels, angleLabels, width = 300, height =
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }} />
       <motion.polyline points={rmPts} fill="none" stroke="#7c3aed" strokeWidth="2" strokeLinejoin="round"
         initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }} />
-      {quiz && sidePairs.map(([P1, P2], i) => {
-        const state = selected === i ? (i === quiz.correctIndex ? 'correct' : 'wrong') : 'idle';
-        const stroke = state === 'correct' ? '#22c55e' : state === 'wrong' ? '#ef4444' : '#7c3aed';
+      {(quiz || highlightedSides) && sidePairs.map(([P1, P2], i) => {
+        const state = selected === i ? (i === quiz?.correctIndex ? 'correct' : 'wrong') : 'idle';
+        const isHighlighted = highlightedSides?.includes(i);
+        const stroke = state === 'correct' ? '#22c55e' : state === 'wrong' ? '#ef4444' : (isHighlighted ? '#ef4444' : '#7c3aed');
         return (
           <motion.line key={'hit' + i} x1={P1[0]} y1={P1[1]} x2={P2[0]} y2={P2[1]}
-            stroke={stroke} strokeWidth={state === 'idle' ? 14 : 9} strokeLinecap="round"
-            initial={false} animate={{ opacity: state === 'idle' ? 0.001 : 0.4 }}
-            onClick={() => setSelected(i)} style={{ cursor: 'pointer' }} />
+            stroke={stroke} strokeWidth={state === 'idle' && !isHighlighted ? 14 : 9} strokeLinecap="round"
+            initial={false} animate={{ opacity: (state === 'idle' && !isHighlighted) ? 0.001 : 0.4 }}
+            onClick={() => quiz && setSelected(i)} style={{ cursor: quiz ? 'pointer' : 'default' }} />
         );
       })}
       {[[sAB, sideLabels[0]], [sBC, sideLabels[1]], [sCA, sideLabels[2]]].map(([pos, label], i) => (
@@ -2341,19 +2343,78 @@ const EXACT_VALUE_CELLS = {
 };
 const ExactValuesExplorer = () => {
   const [revealed, setRevealed] = useState(new Set());
+  const [highlighted, setHighlighted] = useState(null); // "fn-angle" string
   const angles = [30, 45, 60];
   const fns = ['sin', 'cos', 'tan'];
-  const toggle = (key) => setRevealed((prev) => {
-    const next = new Set(prev);
-    next.has(key) ? next.delete(key) : next.add(key);
-    return next;
-  });
+
+  // Map fn-angle combo to which sides are used in each triangle (0=bottom, 1=right, 2=hyp)
+  const getSidesForCell = (fn, angle) => {
+    // For 45-45-90 triangle: sides are [1, 1, √2] for bottom, right, hyp at both 45° angles
+    // For 30-60-90 triangle:
+    //   at 30° (vertex C): adj=√3(right), opp=1(bottom), hyp=2
+    //   at 60° (vertex A): adj=1(bottom), opp=√3(right), hyp=2
+
+    if (angle === 45) {
+      // 45-45-90 triangle, using either 45° angle (same sides both ways)
+      const adjIndex = 0, oppIndex = 1, hypIndex = 2;
+      if (fn === 'sin') return [oppIndex, hypIndex]; // opp/hyp = 1/√2
+      if (fn === 'cos') return [adjIndex, hypIndex]; // adj/hyp = 1/√2
+      if (fn === 'tan') return [oppIndex, adjIndex]; // opp/adj = 1/1
+    }
+
+    if (angle === 30) {
+      // 30-60-90 triangle at 30° (vertex C): adj=√3, opp=1, hyp=2
+      const adjIndex = 1, oppIndex = 0, hypIndex = 2;
+      if (fn === 'sin') return [oppIndex, hypIndex]; // opp/hyp = 1/2
+      if (fn === 'cos') return [adjIndex, hypIndex]; // adj/hyp = √3/2
+      if (fn === 'tan') return [oppIndex, adjIndex]; // opp/adj = 1/√3
+    }
+
+    if (angle === 60) {
+      // 30-60-90 triangle at 60° (vertex A): adj=1, opp=√3, hyp=2
+      const adjIndex = 0, oppIndex = 1, hypIndex = 2;
+      if (fn === 'sin') return [oppIndex, hypIndex]; // opp/hyp = √3/2
+      if (fn === 'cos') return [adjIndex, hypIndex]; // adj/hyp = 1/2
+      if (fn === 'tan') return [oppIndex, adjIndex]; // opp/adj = √3/1
+    }
+    return [];
+  };
+
+  // Determine which triangle to highlight based on angle
+  const getTriangleHighlight = (fn, angle) => {
+    if (angle === 45) return { tri45: getSidesForCell(fn, angle), tri30_60: null };
+    if (angle === 30 || angle === 60) return { tri45: null, tri30_60: getSidesForCell(fn, angle) };
+  };
+
+  const toggle = (fn, angle) => {
+    const key = `${fn}-${angle}`;
+    if (highlighted === key) {
+      setHighlighted(null);
+    } else {
+      setHighlighted(key);
+    }
+    setRevealed((prev) => {
+      const next = new Set(prev);
+      next.has(key) ? next.delete(key) : next.add(key);
+      return next;
+    });
+  };
   const allShown = revealed.size === fns.length * angles.length;
+
+  const tri45Highlight = highlighted ? (() => {
+    const [fn, angle] = highlighted.split('-');
+    return getTriangleHighlight(fn, parseInt(angle)).tri45;
+  })() : null;
+
+  const tri30_60Highlight = highlighted ? (() => {
+    const [fn, angle] = highlighted.split('-');
+    return getTriangleHighlight(fn, parseInt(angle)).tri30_60;
+  })() : null;
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 14, fontFamily: FONT }}>
-      <div style={{ display: 'flex', gap: 24, justifyContent: 'center', flexWrap: 'wrap' }}>
-        <SpecialTriangle verts={[[0, 0], [1, 0], [1, 1]]} sideLabels={['1', '1', '√2']} angleLabels={['45°', '90°', '45°']} width={160} height={150} />
-        <SpecialTriangle verts={[[0, 0], [1, 0], [1, Math.sqrt(3)]]} sideLabels={['1', '√3', '2']} angleLabels={['60°', '90°', '30°']} width={160} height={150} />
+      <div style={{ display: 'flex', gap: 32, justifyContent: 'center', flexWrap: 'wrap' }}>
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, 1]]} sideLabels={['1', '1', '√2']} angleLabels={['45°', '90°', '45°']} width={440} height={400} highlightedSides={tri45Highlight} />
+        <SpecialTriangle verts={[[0, 0], [1, 0], [1, Math.sqrt(3)]]} sideLabels={['1', '√3', '2']} angleLabels={['60°', '90°', '30°']} width={440} height={400} highlightedSides={tri30_60Highlight} />
       </div>
       <div style={{ fontSize: '0.8rem', fontWeight: 700, color: '#7c3aed', textAlign: 'center' }}>
         Work each value out from the triangles above, then tap a cell to check yourself.
@@ -2373,9 +2434,10 @@ const ExactValuesExplorer = () => {
                 {angles.map((a) => {
                   const key = `${fn}-${a}`;
                   const shown = revealed.has(key);
+                  const isHighlighted = highlighted === key;
                   return (
-                    <td key={a} onClick={() => toggle(key)}
-                      style={{ padding: '9px 16px', textAlign: 'center', cursor: 'pointer', borderBottom: '1px solid #ece9fb', borderRight: '1px solid #ece9fb', background: shown ? '#f5f3ff' : '#fff', minWidth: 60 }}>
+                    <td key={a} onClick={() => toggle(fn, a)}
+                      style={{ padding: '9px 16px', textAlign: 'center', cursor: 'pointer', borderBottom: '1px solid #ece9fb', borderRight: '1px solid #ece9fb', background: isHighlighted ? '#fee2e2' : (shown ? '#f5f3ff' : '#fff'), minWidth: 60, transition: 'background 0.2s' }}>
                       {shown
                         ? <MathView content={`$${EXACT_VALUE_CELLS[fn][a]}$`} style={{ fontWeight: 700, color: '#1e1b4b' }} />
                         : <span style={{ color: '#c4b5fd', fontWeight: 800, fontSize: '1.1rem' }}>?</span>}
