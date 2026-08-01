@@ -278,7 +278,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
       } else if (isExamChapter) {
         const examPaperKey = chapter.examPaper || chapter.id?.replace('exam:', '');
         // For exam chapters, we query and filter IDs
-        const snap = await getDocs(
+        const snap = await getDocsFromServer(
           query(collection(db, 'questions'), where('examPaper', '==', examPaperKey))
         );
         const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
@@ -289,12 +289,12 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         ids = docs.map(q => q.id);
       } else {
         // Regular chapter: fetch IDs from question_index
-        const indexDoc = await getDoc(doc(db, 'question_index', chapter.id));
+        const indexDoc = await getDocFromServer(doc(db, 'question_index', chapter.id));
         if (indexDoc.exists()) {
           ids = indexDoc.data().ids || [];
         } else {
           // Fallback projection query (if index is not ready yet)
-          const snap = await getDocs(
+          const snap = await getDocsFromServer(
             query(collection(db, 'questions'), where('chapterId', '==', chapter.id))
           );
           const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
@@ -314,7 +314,7 @@ const QuestionBankPage = ({ chapter, topic, onBack }) => {
         // topic in its id.
         if (topic?.id) {
           const prefixIds = ids.filter(id => id.startsWith(topic.id) || id.toLowerCase().includes(topic.id.toLowerCase()));
-          const snap = await getDocs(
+          const snap = await getDocsFromServer(
             query(collection(db, 'questions'), where('topicId', '==', topic.id))
           );
           const docs = snap.docs.map(d => ({ id: d.id, ...d.data() })).filter(q => q.isActive !== false);
