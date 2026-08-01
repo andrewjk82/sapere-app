@@ -1,7 +1,7 @@
 import admin from 'firebase-admin';
 import nodemailer from 'nodemailer';
 import { getWeekRangeSydney, gatherStudentWeek, renderWeeklyReportBody, buildEmailShell } from './_lib/weeklyReport.js';
-import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail, genericEmail } from './_lib/emailTemplates.js';
+import { classReminderEmail, dailyWrapupEmail, adminSummaryEmail, genericEmail, onlineStudySessionEmail } from './_lib/emailTemplates.js';
 import { buildProfile, examPrepD1StudentEmail, examPrepD1TeacherEmail } from './_lib/examPrepReport.js';
 import { settleSprintWeek } from './_lib/timesTableSprintSettlement.js';
 
@@ -291,6 +291,53 @@ export default async function handler(req, res) {
       if (d1Sent > 0) logs.push(`[D-1] ${d1Sent} D-1 report(s) sent.`);
     } catch (e) {
       logs.push(`[D-1] Error: ${e.message}`);
+    }
+
+    // ══════════════════════════════════════════════════════════════════════
+    // PART 1.6: Online Study Session (nightly 8:30–10:30 PM Zoom room)
+    // Admin toggles this on and sets the Zoom link via Settings →
+    // system_config/onlineStudySession { enabled, zoomLink }. At 8:30 PM
+    // Sydney every student gets an email + push with the link; the dashboard
+    // card (read directly from that same doc) is what shows/hides it 8:30–10:30.
+    // Window is wide (8:30–9:30) so a late-arriving hourly ping still catches
+    // it; `lastSentDate` on the config doc dedupes so it only fires once/day.
+    // ══════════════════════════════════════════════════════════════════════
+    if (sydTotalMin >= 1230 && sydTotalMin < 1290) {
+      try {
+        const sessionConfigRef = db.collection('system_config').doc('onlineStudySession');
+        const sessionConfigSnap = await sessionConfigRef.get();
+        const sessionConfig = sessionConfigSnap.exists ? sessionConfigSnap.data() : null;
+
+        if (sessionConfig?.enabled && sessionConfig?.zoomLink && sessionConfig?.lastSentDate !== todayStr) {
+          const usersSnap = await db.collection('users').get();
+          const studentDocs = usersSnap.docs.filter((d) => isStudentProfile(d.data()));
+
+          let sentCount = 0;
+          for (const studentDoc of studentDocs) {
+            const student = studentDoc.data();
+            const studentName = student.name || student.displayName ||
+              `${student.firstName || ''} ${student.lastName || ''}`.trim() || 'there';
+            const { subject, html } = onlineStudySessionEmail({
+              name: studentName,
+              zoomLink: sessionConfig.zoomLink,
+              startLabel: '8:30 PM',
+              endLabel: '10:30 PM',
+            });
+            const pushBody = `Tonight's study room is open — join by 10:30 PM.`;
+            const result = await sendNotification(
+              db, transporter,
+              { studentId: studentDoc.id, studentEmail: student.email, studentName },
+              'online_study_session', subject, pushBody, html,
+            );
+            if (result.emailSent || result.pushSent) sentCount += 1;
+          }
+
+          await sessionConfigRef.set({ lastSentDate: todayStr }, { merge: true });
+          logs.push(`[Online Study Session] Notified ${sentCount}/${studentDocs.length} students.`);
+        }
+      } catch (e) {
+        logs.push(`[Online Study Session] Error: ${e.message}`);
+      }
     }
 
     // ══════════════════════════════════════════════════════════════════════

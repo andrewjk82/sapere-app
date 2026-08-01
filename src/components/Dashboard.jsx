@@ -23,6 +23,7 @@ import { seedLeaderboardFromExistingData } from '../services/leaderboardService'
 import JourneyMapSnapshot from './JourneyMapSnapshot';
 import MedalShelf from './MedalShelf';
 import SprintDashboardCard from './sprint/SprintDashboardCard';
+import OnlineStudySessionCard from './OnlineStudySessionCard';
 
 // 카드에 마우스를 올리면 살짝 떠오르는 hover 효과 (Journey Map 카드와 동일한 느낌).
 const liftHover = {
@@ -563,6 +564,8 @@ const Dashboard = ({ students, onAddStudent, onRefreshStudents, onSelectStudent,
             </div>
           </div>
         )}
+
+        {!isAdmin && <OnlineStudySessionCard />}
 
         {!isAdmin && profile?.examPrepEnabled === true && (() => {
           // D-Day is only useful for students whose teacher has enabled Exam

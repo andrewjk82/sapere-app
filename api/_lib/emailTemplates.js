@@ -131,6 +131,29 @@ export function classReminderEmail({ name = 'there', subjectLabel = 'your class'
 }
 
 /* ──────────────────────────────────────────────────────────────────────────
+   1a · Online study session — nightly 8:30–10:30 PM Zoom room is open
+   ────────────────────────────────────────────────────────────────────────── */
+export function onlineStudySessionEmail({ name = 'there', zoomLink = '', startLabel = '8:30 PM', endLabel = '10:30 PM' }) {
+  const first = esc(String(name).split(' ')[0]);
+  const inner = `
+    <div style="background:linear-gradient(135deg,#312e81,#4338ca);padding:30px 32px;">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.75);">Online study session · now open</div>
+      <div style="font-family:'Outfit',sans-serif;font-size:23px;font-weight:800;color:#fff;margin-top:6px;">Tonight's study room is ready</div>
+    </div>
+    <div style="padding:30px 32px;">
+      <p style="margin:0 0 6px;font-size:15px;font-weight:700;color:#1e1b4b;">Hi ${first},</p>
+      <p style="margin:0 0 20px;font-size:14px;line-height:1.6;color:#6d6a85;">
+        The nightly study room is open from ${esc(startLabel)} to ${esc(endLabel)}. Join whenever you're ready.
+      </p>
+      ${button('Join Zoom room', zoomLink || APP_URL, '#4338ca')}
+    </div>`;
+  return {
+    subject: `Study room is open — join by ${endLabel}`,
+    html: emailShell(`Tonight's study room is open ${startLabel}–${endLabel}.`, inner),
+  };
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
    1b · Evening wrap-up — the existing 6 PM reminder, restyled
    ────────────────────────────────────────────────────────────────────────── */
 export function dailyWrapupEmail({ name = 'there', hasUnfinishedTasks = false, challengeDone = false, calcEnabled = false, calcDone = false, tomorrowClasses = [] }) {

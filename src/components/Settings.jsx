@@ -41,6 +41,8 @@ const Settings = () => {
   });
   const [uploading, setUploading] = useState(false);
   const [cloudVersion, setCloudVersion] = useState(null);
+  const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '' });
+  const [studySessionSaving, setStudySessionSaving] = useState(false);
   const fileInputRef = useRef(null);
 
   const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
@@ -76,6 +78,35 @@ const Settings = () => {
       if (snap.exists()) setCloudVersion(snap.data().version);
     }).catch(() => {});
   }, [isAdmin]);
+
+  useEffect(() => {
+    if (!isAdmin) return;
+    getDoc(doc(db, 'system_config', 'onlineStudySession')).then((snap) => {
+      if (snap.exists()) {
+        const data = snap.data();
+        setStudySession({ enabled: !!data.enabled, zoomLink: data.zoomLink || '' });
+      }
+    }).catch(() => {});
+  }, [isAdmin]);
+
+  const handleSaveStudySession = async () => {
+    if (!isAdmin) return;
+    try {
+      setStudySessionSaving(true);
+      await setDoc(doc(db, 'system_config', 'onlineStudySession'), {
+        enabled: studySession.enabled,
+        zoomLink: studySession.zoomLink.trim(),
+        updatedAt: new Date().toISOString(),
+        updatedBy: user.email,
+      }, { merge: true });
+      showToast('Online study session settings saved!', 'success');
+    } catch (e) {
+      showToast('Failed to save online study session settings.', 'error');
+      console.error(e);
+    } finally {
+      setStudySessionSaving(false);
+    }
+  };
 
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
@@ -692,6 +723,47 @@ const Settings = () => {
                   }}
                 >
                   {loading ? 'Broadcasting...' : 'Broadcast App Update'}
+                </button>
+              </div>
+
+              <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid #fee2e2' }}>
+                <h4 style={{ margin: '0 0 8px', fontSize: '0.9rem', fontWeight: 800, color: '#991b1b' }}>Online Study Session</h4>
+                <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '14px' }}>
+                  When enabled, every student gets an email + push notification at 8:30 PM with this Zoom link,
+                  and a "join now" card appears on their dashboard from 8:30 PM to 10:30 PM.
+                </p>
+                <label style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 700, color: '#1e1b4b' }}>
+                  <input
+                    type="checkbox"
+                    checked={studySession.enabled}
+                    onChange={(e) => setStudySession((s) => ({ ...s, enabled: e.target.checked }))}
+                    style={{ width: '16px', height: '16px' }}
+                  />
+                  Enable nightly study session (8:30–10:30 PM)
+                </label>
+                <input
+                  type="url"
+                  placeholder="https://zoom.us/j/..."
+                  value={studySession.zoomLink}
+                  onChange={(e) => setStudySession((s) => ({ ...s, zoomLink: e.target.value }))}
+                  style={{ width: '100%', padding: '12px 14px', borderRadius: '12px', border: '1px solid #e2e8f0', fontSize: '0.85rem', marginBottom: '12px', boxSizing: 'border-box' }}
+                />
+                <button
+                  className="app-button"
+                  onClick={handleSaveStudySession}
+                  disabled={studySessionSaving}
+                  style={{
+                    width: '100%',
+                    backgroundColor: '#991b1b',
+                    color: '#fff',
+                    border: 'none',
+                    padding: '14px',
+                    borderRadius: '16px',
+                    fontWeight: 800,
+                    cursor: 'pointer'
+                  }}
+                >
+                  {studySessionSaving ? 'Saving...' : 'Save Study Session Settings'}
                 </button>
               </div>
             </section>
