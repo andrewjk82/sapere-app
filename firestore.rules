@@ -158,6 +158,12 @@ service cloud.firestore {
         }
       }
 
+      // Archived (pre-delete) daily/calc challenge attempts, written when a
+      // teacher resets a student's challenge from StudentDetail.jsx.
+      match /reset_archive/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /chapterProgress/{progressId} {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
@@ -270,6 +276,12 @@ service cloud.firestore {
     match /timestable_sprint_settlement/{weekId} {
       allow read: if isSignedIn();
       allow write: if false;
+    }
+
+    // Traffic tracking logs — anyone can write (append), admin can read
+    match /traffic_logs/{logId} {
+      allow create: if true;
+      allow read, update, delete: if isAdmin();
     }
   }
 }
