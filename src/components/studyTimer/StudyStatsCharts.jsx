@@ -5,9 +5,14 @@ import { db } from '../../firebase/config';
 import { localCache } from '../../services/localCacheService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
+import { nowMs } from '../../utils/timeUtils';
 
 const RANGE_DAYS = { Daily: 1, Weekly: 7, Monthly: 30 };
 const BAR_COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#22c55e', '#0ea5e9', '#ef4444'];
+// "Today" keeps changing all day as the stopwatch flushes — a same-day cache
+// can otherwise go stale for the rest of the day (only bumped in-session by
+// refreshEpoch, which resets on every reload/new tab). Short TTL instead.
+const CACHE_TTL_MS = 2 * 60 * 1000;
 
 const dateStrFor = (offsetDaysAgo) => {
   const d = new Date();
@@ -42,7 +47,8 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
       const cacheKey = `studytimer:stats-v1:${uid}:${range}`;
       const allowCache = refreshEpoch === 0;
       const cached = allowCache ? localCache.get(cacheKey) : null;
-      if (cached?.date === today && Array.isArray(cached.days) && cached.days.length === count) {
+      const cacheFresh = cached && (nowMs() - (Number(cached.cachedAt) || 0)) < CACHE_TTL_MS;
+      if (cacheFresh && cached?.date === today && Array.isArray(cached.days) && cached.days.length === count) {
         if (!cancelled) setDays(cached.days);
         return;
       }
@@ -65,7 +71,7 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
       });
       setDays(nextDays);
       setLoading(false);
-      localCache.set(cacheKey, { date: today, days: nextDays });
+      localCache.set(cacheKey, { date: today, cachedAt: nowMs(), days: nextDays });
     })().catch((e) => { console.warn('[studytime] stats fetch failed:', e?.code || e); if (!cancelled) setLoading(false); });
 
     return () => { cancelled = true; };
