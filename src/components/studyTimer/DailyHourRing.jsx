@@ -2,23 +2,18 @@ import { motion } from 'framer-motion';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 
-const SIZE = 240;
-const R_OUTER = SIZE / 2 - 6;
-const R_INNER = R_OUTER - 42;
-const CX = SIZE / 2;
-const CY = SIZE / 2;
 const GAP_DEG = 1.2;
 
-const polarToCartesian = (r, angleDeg) => {
+const polarToCartesian = (cx, cy, r, angleDeg) => {
   const rad = ((angleDeg - 90) * Math.PI) / 180;
-  return { x: CX + r * Math.cos(rad), y: CY + r * Math.sin(rad) };
+  return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
 };
 
-const wedgePath = (rOuter, rInner, startAngle, endAngle) => {
-  const startOuter = polarToCartesian(rOuter, endAngle);
-  const endOuter = polarToCartesian(rOuter, startAngle);
-  const startInner = polarToCartesian(rInner, endAngle);
-  const endInner = polarToCartesian(rInner, startAngle);
+const wedgePath = (cx, cy, rOuter, rInner, startAngle, endAngle) => {
+  const startOuter = polarToCartesian(cx, cy, rOuter, endAngle);
+  const endOuter = polarToCartesian(cx, cy, rOuter, startAngle);
+  const startInner = polarToCartesian(cx, cy, rInner, endAngle);
+  const endInner = polarToCartesian(cx, cy, rInner, startAngle);
   return [
     'M', startOuter.x, startOuter.y,
     'A', rOuter, rOuter, 0, 0, 0, endOuter.x, endOuter.y,
@@ -43,15 +38,21 @@ const formatDuration = (sec) => {
 };
 
 /**
- * 24-hour "when did I study" ring for the Study Timer's Daily view. Each of
- * the 24 hour wedges is colored by whichever subject had the most time in
- * that hour (subjectColors — same palette as the stopwatch's chips/ring),
- * with opacity scaled by how much of that hour was actually studied.
- * Reads `day.byHour` = { hour(0-23): { subjectKey: seconds } }, written by
- * the stopwatch's flush path (see splitSecondsIntoHourBuckets).
+ * 24-hour "when did I study" ring. Each of the 24 hour wedges is colored by
+ * whichever subject had the most time in that hour (subjectColors — same
+ * palette as the stopwatch's chips/ring), with opacity scaled by how much
+ * of that hour was actually studied. Reads `day.byHour` =
+ * { hour(0-23): { subjectKey: seconds } }, written by the stopwatch's flush
+ * path (see splitSecondsIntoHourBuckets). `size` lets the Weekly view pack
+ * seven of these side by side; tick labels + center total hide below 140px.
  */
-const DailyHourRing = ({ day, subjectColors = {} }) => {
+const DailyHourRing = ({ day, subjectColors = {}, size = 240 }) => {
   const byHour = day?.byHour || {};
+  const compact = size < 140;
+  const rOuter = size / 2 - (compact ? 3 : 6);
+  const rInner = rOuter - (compact ? size * 0.16 : 42);
+  const cx = size / 2;
+  const cy = size / 2;
 
   const hours = Array.from({ length: 24 }, (_, h) => {
     const subjectsAtHour = byHour[h] || {};
@@ -67,9 +68,9 @@ const DailyHourRing = ({ day, subjectColors = {} }) => {
   });
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 20 }}>
-      <div style={{ position: 'relative', width: SIZE, height: SIZE }}>
-        <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6 }}>
+      <div style={{ position: 'relative', width: size, height: size }}>
+        <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
           {hours.map((h, i) => {
             const startAngle = h.hour * 15 + GAP_DEG / 2;
             const endAngle = h.hour * 15 + 15 - GAP_DEG / 2;
@@ -78,22 +79,22 @@ const DailyHourRing = ({ day, subjectColors = {} }) => {
             return (
               <motion.path
                 key={h.hour}
-                d={wedgePath(R_OUTER, R_INNER, startAngle, endAngle)}
+                d={wedgePath(cx, cy, rOuter, rInner, startAngle, endAngle)}
                 fill={color}
                 initial={{ opacity: 0 }}
                 animate={{ opacity }}
                 transition={{ duration: 0.4, delay: i * 0.012, ease: 'easeOut' }}
               >
                 <title>
-                  {formatHour12(h.hour)}–{formatHour12((h.hour + 1) % 24)}
+                  {day?.label ? `${day.label} · ` : ''}{formatHour12(h.hour)}–{formatHour12((h.hour + 1) % 24)}
                   {h.totalSec > 0 ? ` · ${normalizeSubjectLabel(h.subject)} · ${formatDuration(h.totalSec)}` : ' · no study'}
                 </title>
               </motion.path>
             );
           })}
-          {/* Hour tick labels at 12, 3, 6, 9 o'clock */}
-          {[0, 6, 12, 18].map((h) => {
-            const pos = polarToCartesian(R_OUTER + 16, h * 15);
+          {/* Hour tick labels at 12, 3, 6, 9 o'clock — skipped when compact */}
+          {!compact && [0, 6, 12, 18].map((h) => {
+            const pos = polarToCartesian(cx, cy, rOuter + 16, h * 15);
             return (
               <text key={h} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle" fontSize="10" fontWeight="800" fill="#94a3b8">
                 {formatHour12(h)}
@@ -101,15 +102,25 @@ const DailyHourRing = ({ day, subjectColors = {} }) => {
             );
           })}
         </svg>
-        <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
-          <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>
-            {formatDuration(day?.totalSec || 0)}
-          </span>
-          <span style={{ fontSize: '0.66rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginTop: 2 }}>
-            {day?.label || 'Today'}
-          </span>
-        </div>
+        {!compact && (
+          <div style={{ position: 'absolute', inset: 0, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.6rem', fontWeight: 900, color: '#0f172a' }}>
+              {formatDuration(day?.totalSec || 0)}
+            </span>
+            <span style={{ fontSize: '0.66rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#94a3b8', marginTop: 2 }}>
+              {day?.label || 'Today'}
+            </span>
+          </div>
+        )}
       </div>
+      {compact && (
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: '0.68rem', fontWeight: 900, color: (day?.totalSec || 0) > 0 ? '#1e1b4b' : '#cbd5e1' }}>
+            {formatDuration(day?.totalSec || 0)}
+          </div>
+          <div style={{ fontSize: '0.6rem', fontWeight: 800, color: '#94a3b8' }}>{day?.label}</div>
+        </div>
+      )}
     </div>
   );
 };

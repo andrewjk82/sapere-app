@@ -123,9 +123,17 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
         <div style={{ height: 160, display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 700, fontSize: '0.85rem' }}>Loading…</div>
       ) : (
         <>
-          {range === 'Daily' ? (
+          {range === 'Daily' && (
             <DailyHourRing day={days[0]} subjectColors={subjectColors} />
-          ) : (
+          )}
+          {range === 'Weekly' && (
+            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 20 }}>
+              {days.map((d) => (
+                <DailyHourRing key={d.dateStr} day={d} subjectColors={subjectColors} size={92} />
+              ))}
+            </div>
+          )}
+          {range === 'Monthly' && (
             <DailyBarChart days={days} subjectOrder={subjectTotals.map((t) => t.subject)} subjectColors={subjectColors} />
           )}
           <SubjectBreakdown subjectTotals={subjectTotals} grandTotalSec={grandTotalSec} subjectColors={subjectColors} />
