@@ -177,9 +177,16 @@ export const fetchMyTotal = async (uid) => {
  * batch — then, only if the new all-time total could plausibly change the
  * leaderboard, recomputes and (if changed) republishes the top 10.
  *
+ * `priorTotalSec` — the caller's last known all-time total (from a
+ * previous call's return value). When given, the new total is computed
+ * locally (`priorTotalSec + deltaSec`) instead of re-reading the totals
+ * doc we just wrote — a stopwatch session that flushes every 5 minutes
+ * would otherwise cost one extra read per flush for no reason. Omit only
+ * for the first flush of a session, when the caller doesn't know it yet.
+ *
  * @returns {{ totalSec: number, meta: object|null }}
  */
-export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, hourBreakdown = null, currentMeta = null }) => {
+export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, hourBreakdown = null, priorTotalSec = null, currentMeta = null }) => {
   if (!uid || !dateStr || !subject || !Number.isFinite(deltaSec) || deltaSec <= 0) {
     return { totalSec: null, meta: currentMeta };
   }
@@ -212,8 +219,13 @@ export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avata
   await batch.commit();
   trackWrite(2, 'studytime_flush');
 
-  const myTotalDoc = await fetchMyTotal(uid);
-  const totalSec = Number(myTotalDoc?.totalSec) || 0;
+  let totalSec;
+  if (Number.isFinite(priorTotalSec)) {
+    totalSec = priorTotalSec + deltaSec;
+  } else {
+    const myTotalDoc = await fetchMyTotal(uid);
+    totalSec = Number(myTotalDoc?.totalSec) || 0;
+  }
 
   let meta = currentMeta;
   if (couldChangeTop10(currentMeta, uid, totalSec)) {

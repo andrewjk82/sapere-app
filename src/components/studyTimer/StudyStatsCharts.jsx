@@ -10,9 +10,10 @@ import DailyHourRing from './DailyHourRing';
 
 const RANGE_DAYS = { Daily: 1, Weekly: 7, Monthly: 30 };
 const BAR_COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#22c55e', '#0ea5e9', '#ef4444'];
-// "Today" keeps changing all day as the stopwatch flushes — a same-day cache
-// can otherwise go stale for the rest of the day (only bumped in-session by
-// refreshEpoch, which resets on every reload/new tab). Short TTL instead.
+// "Today" keeps changing all day as the stopwatch flushes. Same-tab flushes
+// are patched straight into `days` for free (see the lastFlush effect
+// below); this TTL only guards a *different* tab/reload picking up a
+// same-day cache written before any studying happened.
 const CACHE_TTL_MS = 2 * 60 * 1000;
 
 const dateStrFor = (offsetDaysAgo) => {
@@ -33,9 +34,9 @@ const shortLabelFor = (offsetDaysAgo) => {
  * studyTimeService.js) — bounded point-reads by doc id, cached per calendar
  * day/range, no separate stats collection and no extra writes.
  */
-const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
+const StudyStatsCharts = ({ uid, lastFlush = null, subjectColors = {} }) => {
   const [range, setRange] = useState('Weekly');
-  const [days, setDays] = useState([]); // [{ dateStr, label, totalSec, bySubject }]
+  const [days, setDays] = useState([]); // [{ dateStr, label, totalSec, bySubject, byHour }]
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -46,8 +47,7 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
       const count = RANGE_DAYS[range];
       const today = dateStrFor(0);
       const cacheKey = `studytimer:stats-v1:${uid}:${range}`;
-      const allowCache = refreshEpoch === 0;
-      const cached = allowCache ? localCache.get(cacheKey) : null;
+      const cached = localCache.get(cacheKey);
       const cacheFresh = cached && (nowMs() - (Number(cached.cachedAt) || 0)) < CACHE_TTL_MS;
       if (cacheFresh && cached?.date === today && Array.isArray(cached.days) && cached.days.length === count) {
         if (!cancelled) setDays(cached.days);
@@ -77,7 +77,36 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
     })().catch((e) => { console.warn('[studytime] stats fetch failed:', e?.code || e); if (!cancelled) setLoading(false); });
 
     return () => { cancelled = true; };
-  }, [uid, range, refreshEpoch]);
+  }, [uid, range]);
+
+  // A flush from the stopwatch already tells us exactly what changed
+  // (subject, delta, hour breakdown) — patch it straight into `days`
+  // instead of re-fetching the whole range from Firestore on every
+  // 5-minute heartbeat. Only a genuine mount/range-switch (above) reads.
+  useEffect(() => {
+    if (!lastFlush?.dateStr || !Number.isFinite(lastFlush?.deltaSec)) return;
+    queueMicrotask(() => setDays((prev) => {
+      const idx = prev.findIndex((d) => d.dateStr === lastFlush.dateStr);
+      if (idx === -1) return prev;
+      const day = prev[idx];
+      const subjectKey = lastFlush.subject;
+      const nextBySubject = { ...day.bySubject, [subjectKey]: (Number(day.bySubject[subjectKey]) || 0) + lastFlush.deltaSec };
+      const nextByHour = { ...day.byHour };
+      if (lastFlush.hourBreakdown) {
+        Object.entries(lastFlush.hourBreakdown).forEach(([hour, sec]) => {
+          nextByHour[hour] = { ...(nextByHour[hour] || {}), [subjectKey]: (Number(nextByHour[hour]?.[subjectKey]) || 0) + Number(sec) };
+        });
+      }
+      const nextDays = [...prev];
+      nextDays[idx] = { ...day, totalSec: day.totalSec + lastFlush.deltaSec, bySubject: nextBySubject, byHour: nextByHour };
+      if (uid) {
+        const cacheKey = `studytimer:stats-v1:${uid}:${range}`;
+        localCache.set(cacheKey, { date: dateStrFor(0), cachedAt: nowMs(), days: nextDays });
+      }
+      return nextDays;
+    }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lastFlush]);
 
   const subjectTotals = useMemo(() => {
     const totals = {};

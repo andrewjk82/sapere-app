@@ -64,6 +64,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const flushedSecRef = useRef(0); // how much of the total has already reached Firestore
   const metaRef = useRef(null);
   const flushingRef = useRef(false);
+  const myTotalSecRef = useRef(null); // last known all-time total; avoids a re-read on every flush
 
   const persistLocal = (nextSubject, nextPhase) => {
     try {
@@ -95,13 +96,16 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     // "what time of day" ring; see splitSecondsIntoHourBuckets.
     const end = nowMs();
     const hourBreakdown = splitSecondsIntoHourBuckets(end - delta * 1000, end);
+    const dateStr = todayStr();
     try {
-      const { meta } = await flushStudySession({
-        uid, dateStr: todayStr(), subject, deltaSec: delta, avatarUrl, hourBreakdown, currentMeta: metaRef.current,
+      const { meta, totalSec } = await flushStudySession({
+        uid, dateStr, subject, deltaSec: delta, avatarUrl, hourBreakdown,
+        priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
       });
       metaRef.current = meta;
+      myTotalSecRef.current = totalSec;
       flushedSecRef.current = total;
-      onFlushed?.();
+      onFlushed?.({ totalSec, subject, dateStr, deltaSec: delta, hourBreakdown });
     } catch (e) {
       console.warn('[studytime] flush failed:', e?.code || e);
     } finally {
@@ -140,10 +144,15 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
         // Only the still-running portion has a known wall-clock window; the
         // already-banked (paused) portion is skipped for hour attribution.
         const hourBreakdown = runningPortion > 0 ? splitSecondsIntoHourBuckets(end - runningPortion * 1000, end) : null;
+        const resumeDateStr = todayStr();
         flushStudySession({
-          uid, dateStr: todayStr(), subject: savedSubject, deltaSec: staleTotalSec,
-          avatarUrl, hourBreakdown, currentMeta: metaRef.current,
-        }).then(({ meta }) => { metaRef.current = meta; onFlushed?.(); }).catch(() => {});
+          uid, dateStr: resumeDateStr, subject: savedSubject, deltaSec: staleTotalSec,
+          avatarUrl, hourBreakdown, priorTotalSec: myTotalSecRef.current, currentMeta: metaRef.current,
+        }).then(({ meta, totalSec }) => {
+          metaRef.current = meta;
+          myTotalSecRef.current = totalSec;
+          onFlushed?.({ totalSec, subject: savedSubject, dateStr: resumeDateStr, deltaSec: staleTotalSec, hourBreakdown });
+        }).catch(() => {});
       }
     } catch { /* ignore */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps

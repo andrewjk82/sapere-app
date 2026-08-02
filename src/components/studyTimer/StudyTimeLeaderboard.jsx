@@ -15,12 +15,18 @@ const formatTotal = (sec) => {
 /**
  * Top 10 by cumulative study time — icon + rank only, no names. Right-side
  * panel on the Study Timer page. Subscribes to a single meta doc
- * (studyTimeService.subscribeStudyTimeMeta); own rank is fetched once per
- * mount/refresh (a single count-aggregation query), never polled.
+ * (studyTimeService.subscribeStudyTimeMeta).
+ *
+ * `myTotalSec` comes from the stopwatch's own flush return value (via
+ * StudyTimerPage) — free, no extra read. This component only reads
+ * Firestore itself for two cheap, infrequent things: seeding the total
+ * once on mount if no flush has happened yet this session, and a
+ * count-aggregation for "my rank" when outside the top 10 and the total
+ * actually changes (not polled).
  */
-const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
+const StudyTimeLeaderboard = ({ uid, profile, myTotalSec = null, lastFlush = null }) => {
   const [meta, setMeta] = useState({ top10: [] });
-  const [myTotalSec, setMyTotalSec] = useState(null);
+  const [seededTotalSec, setSeededTotalSec] = useState(null);
   const [myRank, setMyRank] = useState(null);
 
   useEffect(() => {
@@ -28,24 +34,28 @@ const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
     return unsub;
   }, []);
 
+  // One-time seed so the panel shows something before the student's first
+  // flush this session (e.g. they open the page but haven't studied yet).
   useEffect(() => {
-    if (!uid) return undefined;
+    if (!uid || Number.isFinite(myTotalSec)) return undefined;
     let cancelled = false;
-    fetchMyTotal(uid).then((data) => {
-      if (cancelled) return;
-      const total = Number(data?.totalSec) || 0;
-      setMyTotalSec(total);
-      const top10 = meta.top10 || [];
-      if (!top10.some((e) => e.uid === uid) && total > 0) {
-        fetchOwnRank(total).then((rank) => { if (!cancelled) setMyRank(rank); });
-      }
-    });
+    fetchMyTotal(uid).then((data) => { if (!cancelled) setSeededTotalSec(Number(data?.totalSec) || 0); });
     return () => { cancelled = true; };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [uid, refreshEpoch]);
+  }, [uid]);
 
+  const effectiveTotalSec = Number.isFinite(myTotalSec) ? myTotalSec : seededTotalSec;
   const top10 = meta.top10 || [];
   const inTop10 = top10.some((e) => e.uid === uid);
+
+  // Refresh rank only when the total actually moved (a real flush) or the
+  // podium reshuffled — never polled.
+  useEffect(() => {
+    if (inTop10 || !Number.isFinite(effectiveTotalSec) || effectiveTotalSec <= 0) return undefined;
+    let cancelled = false;
+    fetchOwnRank(effectiveTotalSec).then((rank) => { if (!cancelled) setMyRank(rank); });
+    return () => { cancelled = true; };
+  }, [effectiveTotalSec, inTop10, lastFlush]);
 
   return (
     <div style={{ borderRadius: 32, background: 'linear-gradient(180deg, #1e1b4b, #312e81)', padding: '22px 20px', color: '#fff', boxShadow: '0 20px 50px rgba(49,46,129,0.28)' }}>
@@ -84,14 +94,14 @@ const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
           <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.6)', fontWeight: 600 }}>No study time logged yet. Be the first!</p>
         )}
 
-        {!inTop10 && myTotalSec > 0 && (
+        {!inTop10 && effectiveTotalSec > 0 && (
           <>
             <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', padding: '4px 0' }}>• • •</p>
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, background: 'rgba(255,255,255,0.14)' }}>
               <RankBadge rank={myRank} />
               <img src={buildAvatarUrl(profile, uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
               <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: 'rgba(255,255,255,0.85)' }}>
-                {formatTotal(myTotalSec)}
+                {formatTotal(effectiveTotalSec)}
               </span>
             </div>
           </>

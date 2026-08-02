@@ -20,7 +20,13 @@ const StudyTimerPage = () => {
   const { profile } = useProfile();
   const { showToast } = useToast();
   const [isMobile] = useState(window.innerWidth < 768);
-  const [refreshEpoch, setRefreshEpoch] = useState(0);
+  const [myTotalSec, setMyTotalSec] = useState(null);
+  const [lastFlush, setLastFlush] = useState(null); // { totalSec, subject, dateStr, deltaSec, hourBreakdown }
+
+  const handleFlushed = (info) => {
+    if (Number.isFinite(info?.totalSec)) setMyTotalSec(info.totalSec);
+    setLastFlush(info || null);
+  };
 
   const subjects = useMemo(() => {
     const assigned = Array.isArray(profile?.assignedCourse)
@@ -113,11 +119,11 @@ const StudyTimerPage = () => {
             onSetSubjectColor={handleSetSubjectColor}
             onAddSubject={handleAddSubject}
             onRemoveSubject={handleRemoveSubject}
-            onFlushed={() => setRefreshEpoch((n) => n + 1)}
+            onFlushed={handleFlushed}
           />
-          <StudyStatsCharts uid={user?.uid} refreshEpoch={refreshEpoch} subjectColors={subjectColors} />
+          <StudyStatsCharts uid={user?.uid} lastFlush={lastFlush} subjectColors={subjectColors} />
         </div>
-        <StudyTimeLeaderboard uid={user?.uid} profile={profile} refreshEpoch={refreshEpoch} />
+        <StudyTimeLeaderboard uid={user?.uid} profile={profile} myTotalSec={myTotalSec} lastFlush={lastFlush} />
       </div>
     </motion.div>
   );
