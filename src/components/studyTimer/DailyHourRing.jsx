@@ -23,6 +23,12 @@ const wedgePath = (cx, cy, rOuter, rInner, startAngle, endAngle) => {
   ].join(' ');
 };
 
+// Real 12-hour clock-face position: 12 at top, 3 right, 6 bottom, 9 left.
+// Each 30° hour mark is split into two 15° wedges — AM in the first half,
+// PM in the second — so all 24 hours still get a distinct slice, but 4pm
+// lands where "4" actually sits on a clock, not a quarter-turn off.
+const angleForHour = (h) => (h % 12) * 30 + (h < 12 ? 0 : 15);
+
 const formatHour12 = (h) => {
   const period = h < 12 ? 'AM' : 'PM';
   const display = h % 12 === 0 ? 12 : h % 12;
@@ -72,8 +78,9 @@ const DailyHourRing = ({ day, subjectColors = {}, size = 240 }) => {
       <div style={{ position: 'relative', width: size, height: size }}>
         <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
           {hours.map((h, i) => {
-            const startAngle = h.hour * 15 + GAP_DEG / 2;
-            const endAngle = h.hour * 15 + 15 - GAP_DEG / 2;
+            const base = angleForHour(h.hour);
+            const startAngle = base + GAP_DEG / 2;
+            const endAngle = base + 15 - GAP_DEG / 2;
             const color = h.subject ? (subjectColors[h.subject] || DEFAULT_SUBJECT_COLOR) : '#f1f0f8';
             const opacity = h.totalSec > 0 ? 0.35 + h.occupancy * 0.65 : 1;
             return (
@@ -92,12 +99,12 @@ const DailyHourRing = ({ day, subjectColors = {}, size = 240 }) => {
               </motion.path>
             );
           })}
-          {/* Hour tick labels at 12, 3, 6, 9 o'clock — skipped when compact */}
-          {!compact && [0, 6, 12, 18].map((h) => {
-            const pos = polarToCartesian(cx, cy, rOuter + 16, h * 15);
+          {/* Clock-face tick labels at 12, 3, 6, 9 o'clock — skipped when compact */}
+          {!compact && [{ label: '12', deg: 0 }, { label: '3', deg: 90 }, { label: '6', deg: 180 }, { label: '9', deg: 270 }].map(({ label, deg }) => {
+            const pos = polarToCartesian(cx, cy, rOuter + 16, deg);
             return (
-              <text key={h} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle" fontSize="10" fontWeight="800" fill="#94a3b8">
-                {formatHour12(h)}
+              <text key={label} x={pos.x} y={pos.y} textAnchor="middle" dominantBaseline="middle" fontSize="10" fontWeight="800" fill="#94a3b8">
+                {label}
               </text>
             );
           })}
