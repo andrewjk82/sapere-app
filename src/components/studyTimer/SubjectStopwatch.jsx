@@ -55,6 +55,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const [colorPickerFor, setColorPickerFor] = useState(null);
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
+  const [focusMode, setFocusMode] = useState(false);
 
   // The visible clock counts continuously from Start to Stop/subject-switch
   // (surviving pauses and periodic Firestore flushes) — only Stop or a
@@ -188,6 +189,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     runningSinceRef.current = nowMs();
     setPhase('running');
     persistLocal(subject, 'running');
+    setFocusMode(true);
   };
 
   const handlePause = () => {
@@ -237,6 +239,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const activeColor = colorFor(subject);
 
   return (
+    <>
     <div style={{
       borderRadius: 32, padding: '32px 28px', background: '#fff',
       border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.08)', position: 'relative', overflow: 'visible',
@@ -399,6 +402,37 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
         </div>
       </div>
     </div>
+
+    <AnimatePresence>
+      {focusMode && (
+        <motion.div
+          role="button"
+          tabIndex={0}
+          aria-label="Exit full-screen timer"
+          onClick={() => setFocusMode(false)}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          style={{
+            position: 'fixed', inset: 0, zIndex: 1000, background: '#000',
+            display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
+            cursor: 'pointer', userSelect: 'none',
+          }}
+        >
+          <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 'clamp(3rem, 14vw, 7rem)', fontWeight: 900, color: '#fff', letterSpacing: '-0.02em' }}>
+            {formatElapsed(displayElapsedSec)}
+          </span>
+          <span style={{ fontSize: '0.85rem', fontWeight: 800, letterSpacing: '0.12em', textTransform: 'uppercase', color: activeColor, marginTop: 12 }}>
+            {normalizeSubjectLabel(subject)}{phase === 'paused' ? ' · Paused' : ''}
+          </span>
+          <span style={{ fontSize: '0.7rem', fontWeight: 600, color: 'rgba(255,255,255,0.35)', marginTop: 28 }}>
+            Tap anywhere to exit
+          </span>
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </>
   );
 };
 
