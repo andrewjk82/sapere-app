@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { doc, setDoc, arrayUnion } from 'firebase/firestore';
+import { doc, setDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useProfile } from '../../context/ProfileContext';
@@ -26,9 +26,11 @@ const StudyTimerPage = () => {
       ? profile.assignedCourse
       : [profile?.assignedCourse].filter(Boolean);
     const custom = Array.isArray(profile?.customStudySubjects) ? profile.customStudySubjects : [];
-    const list = [...assigned, ...custom].filter(Boolean);
-    if (!list.includes('General Study')) list.push('General Study');
-    return [...new Set(list)];
+    const hidden = new Set(Array.isArray(profile?.hiddenStudySubjects) ? profile.hiddenStudySubjects : []);
+    const list = [...new Set([...assigned, ...custom].filter(Boolean))].filter((s) => !hidden.has(s));
+    if (!hidden.has('General Study') && !list.includes('General Study')) list.push('General Study');
+    // Never end up with zero chips — if the student hid everything, fall back.
+    return list.length > 0 ? list : ['General Study'];
   }, [profile]);
 
   const handleAddSubject = async (name) => {
@@ -39,10 +41,27 @@ const StudyTimerPage = () => {
       return;
     }
     try {
-      await setDoc(doc(db, 'users', user.uid), { customStudySubjects: arrayUnion(trimmed) }, { merge: true });
+      await setDoc(doc(db, 'users', user.uid), {
+        customStudySubjects: arrayUnion(trimmed),
+        hiddenStudySubjects: arrayRemove(trimmed), // re-adding a previously-hidden name un-hides it
+      }, { merge: true });
     } catch (e) {
       console.warn('[studytime] add subject failed:', e?.code || e);
       showToast?.('Could not add that subject — try again.', 'error');
+    }
+  };
+
+  const handleRemoveSubject = async (name) => {
+    if (!name || !user?.uid) return;
+    if (subjects.length <= 1) {
+      showToast?.("You need at least one subject — add another before removing this one.", 'info');
+      return;
+    }
+    try {
+      await setDoc(doc(db, 'users', user.uid), { hiddenStudySubjects: arrayUnion(name) }, { merge: true });
+    } catch (e) {
+      console.warn('[studytime] remove subject failed:', e?.code || e);
+      showToast?.('Could not remove that subject — try again.', 'error');
     }
   };
 
@@ -62,6 +81,7 @@ const StudyTimerPage = () => {
             profile={profile}
             subjects={subjects}
             onAddSubject={handleAddSubject}
+            onRemoveSubject={handleRemoveSubject}
             onFlushed={() => setRefreshEpoch((n) => n + 1)}
           />
           <StudyStatsCharts uid={user?.uid} refreshEpoch={refreshEpoch} />

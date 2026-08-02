@@ -38,7 +38,7 @@ const RING_C = 2 * Math.PI * RING_R;
  * the render body — `displayElapsedSec` is the one piece of render state,
  * advanced by the ticking effect.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onFlushed }) => {
+const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubject, onFlushed }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
   const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
   const subjectOptions = useMemo(
@@ -49,6 +49,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onFlushed }) =
   const [subject, setSubject] = useState(subjectOptions[0]);
   const [addingSubject, setAddingSubject] = useState(false);
   const [newSubjectName, setNewSubjectName] = useState('');
+  const [hoveredSubject, setHoveredSubject] = useState(null);
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
 
@@ -202,6 +203,16 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onFlushed }) =
     setAddingSubject(false);
   }
 
+  async function handleRemoveSubjectClick(name, e) {
+    e.stopPropagation();
+    if (subjectOptions.length <= 1) return;
+    if (name === subject) {
+      const fallback = subjectOptions.find((s) => s !== name) || 'General Study';
+      await handleSubjectChange(fallback);
+    }
+    onRemoveSubject?.(name);
+  }
+
   const ringProgress = (displayElapsedSec % 3600) / 3600; // one full ring per hour, purely decorative
   const dashOffset = RING_C * (1 - ringProgress);
   const isRunning = phase === 'running';
@@ -215,19 +226,39 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onFlushed }) =
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 }}>
         {subjectOptions.map((s) => (
-          <button
+          <div
             key={s}
-            type="button"
-            onClick={() => handleSubjectChange(s)}
-            style={{
-              padding: '8px 16px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.25)',
-              background: s === subject ? '#fff' : 'rgba(255,255,255,0.08)',
-              color: s === subject ? '#312e81' : 'rgba(255,255,255,0.85)',
-              fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer', transition: 'all .2s',
-            }}
+            style={{ position: 'relative' }}
+            onMouseEnter={() => setHoveredSubject(s)}
+            onMouseLeave={() => setHoveredSubject((cur) => (cur === s ? null : cur))}
           >
-            {normalizeSubjectLabel(s)}
-          </button>
+            <button
+              type="button"
+              onClick={() => handleSubjectChange(s)}
+              style={{
+                padding: '8px 16px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.25)',
+                background: s === subject ? '#fff' : 'rgba(255,255,255,0.08)',
+                color: s === subject ? '#312e81' : 'rgba(255,255,255,0.85)',
+                fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer', transition: 'all .2s',
+              }}
+            >
+              {normalizeSubjectLabel(s)}
+            </button>
+            {hoveredSubject === s && subjectOptions.length > 1 && (
+              <button
+                type="button"
+                onClick={(e) => handleRemoveSubjectClick(s, e)}
+                aria-label={`Remove ${normalizeSubjectLabel(s)}`}
+                style={{
+                  position: 'absolute', top: -7, right: -7, width: 20, height: 20, borderRadius: '50%',
+                  border: '2px solid #312e81', background: '#ef4444', color: '#fff',
+                  display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
+                }}
+              >
+                <X size={11} strokeWidth={3} />
+              </button>
+            )}
+          </div>
         ))}
 
         {addingSubject ? (
