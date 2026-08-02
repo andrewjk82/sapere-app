@@ -5,6 +5,7 @@ import { flushStudySession } from '../../services/studyTimeService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
 import { nowMs } from '../../utils/timeUtils';
+import AddSubjectModal from './AddSubjectModal';
 
 const HEARTBEAT_MS = 5 * 60 * 1000; // flush a running session every 5 min
 const RESUME_CAP_SEC = 3 * 60 * 60; // ignore >3h of "stale" localStorage time (laptop was asleep)
@@ -47,8 +48,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
   );
 
   const [subject, setSubject] = useState(subjectOptions[0]);
-  const [addingSubject, setAddingSubject] = useState(false);
-  const [newSubjectName, setNewSubjectName] = useState('');
+  const [addModalOpen, setAddModalOpen] = useState(false);
   const [hoveredSubject, setHoveredSubject] = useState(null);
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
@@ -194,13 +194,9 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
     }
   }
 
-  async function handleAddSubjectSubmit() {
-    const trimmed = newSubjectName.trim();
-    if (!trimmed) { setAddingSubject(false); return; }
-    await onAddSubject?.(trimmed);
-    await handleSubjectChange(trimmed);
-    setNewSubjectName('');
-    setAddingSubject(false);
+  async function handlePickSubject(name) {
+    await onAddSubject?.(name);
+    await handleSubjectChange(name);
   }
 
   async function handleRemoveSubjectClick(name, e) {
@@ -261,42 +257,26 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
           </div>
         ))}
 
-        {addingSubject ? (
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.1)', borderRadius: 999, padding: '4px 6px 4px 14px', border: '1px solid rgba(255,255,255,0.3)' }}>
-            <input
-              autoFocus
-              value={newSubjectName}
-              onChange={(e) => setNewSubjectName(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter') handleAddSubjectSubmit();
-                if (e.key === 'Escape') { setAddingSubject(false); setNewSubjectName(''); }
-              }}
-              placeholder="Subject name"
-              maxLength={40}
-              style={{ background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontWeight: 700, fontSize: '0.78rem', width: 110 }}
-            />
-            <button type="button" onClick={handleAddSubjectSubmit} style={{ width: 22, height: 22, borderRadius: '50%', border: 'none', background: '#22c55e', color: '#fff', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0 }}>
-              <Plus size={14} />
-            </button>
-            <button type="button" onClick={() => { setAddingSubject(false); setNewSubjectName(''); }} style={{ width: 22, height: 22, borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0 }}>
-              <X size={14} />
-            </button>
-          </div>
-        ) : (
-          <button
-            type="button"
-            onClick={() => setAddingSubject(true)}
-            aria-label="Add subject"
-            style={{
-              width: 34, height: 34, borderRadius: '50%', display: 'grid', placeItems: 'center',
-              border: '1px dashed rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.06)',
-              color: 'rgba(255,255,255,0.85)', cursor: 'pointer',
-            }}
-          >
-            <Plus size={16} />
-          </button>
-        )}
+        <button
+          type="button"
+          onClick={() => setAddModalOpen(true)}
+          aria-label="Add subject"
+          style={{
+            width: 34, height: 34, borderRadius: '50%', display: 'grid', placeItems: 'center',
+            border: '1px dashed rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.06)',
+            color: 'rgba(255,255,255,0.85)', cursor: 'pointer',
+          }}
+        >
+          <Plus size={16} />
+        </button>
       </div>
+
+      <AddSubjectModal
+        open={addModalOpen}
+        existingSubjects={subjectOptions}
+        onClose={() => setAddModalOpen(false)}
+        onPick={handlePickSubject}
+      />
 
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
         <div style={{ position: 'relative', width: RING_SIZE, height: RING_SIZE }}>
