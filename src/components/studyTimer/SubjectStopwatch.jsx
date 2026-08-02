@@ -5,6 +5,7 @@ import { flushStudySession } from '../../services/studyTimeService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
 import { nowMs } from '../../utils/timeUtils';
+import { SUBJECT_COLOR_PALETTE, DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import AddSubjectModal from './AddSubjectModal';
 
 const HEARTBEAT_MS = 5 * 60 * 1000; // flush a running session every 5 min
@@ -39,17 +40,19 @@ const RING_C = 2 * Math.PI * RING_R;
  * the render body — `displayElapsedSec` is the one piece of render state,
  * advanced by the ticking effect.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubject, onFlushed }) => {
+const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
   const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
   const subjectOptions = useMemo(
     () => (subjects && subjects.length > 0 ? subjects : ['General Study']),
     [subjects],
   );
+  const colorFor = (s) => subjectColors[s] || DEFAULT_SUBJECT_COLOR;
 
   const [subject, setSubject] = useState(subjectOptions[0]);
   const [addModalOpen, setAddModalOpen] = useState(false);
   const [hoveredSubject, setHoveredSubject] = useState(null);
+  const [colorPickerFor, setColorPickerFor] = useState(null);
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
 
@@ -212,50 +215,96 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
   const ringProgress = (displayElapsedSec % 3600) / 3600; // one full ring per hour, purely decorative
   const dashOffset = RING_C * (1 - ringProgress);
   const isRunning = phase === 'running';
+  const activeColor = colorFor(subject);
 
   return (
     <div style={{
-      borderRadius: 32, padding: '32px 28px', background: 'linear-gradient(135deg, #1e1b4b, #312e81 55%, #4338ca)',
-      color: '#fff', boxShadow: '0 24px 60px rgba(67,56,202,0.28)', position: 'relative', overflow: 'hidden',
+      borderRadius: 32, padding: '32px 28px', background: '#fff',
+      border: '1px solid #eceaf6', boxShadow: '0 12px 30px rgba(99,102,241,0.08)', position: 'relative', overflow: 'visible',
     }}>
-      <div style={{ position: 'absolute', top: -40, right: -40, width: 160, height: 160, borderRadius: '50%', background: 'rgba(255,255,255,0.06)' }} />
-
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, marginBottom: 24 }}>
-        {subjectOptions.map((s) => (
-          <div
-            key={s}
-            style={{ position: 'relative' }}
-            onMouseEnter={() => setHoveredSubject(s)}
-            onMouseLeave={() => setHoveredSubject((cur) => (cur === s ? null : cur))}
-          >
-            <button
-              type="button"
-              onClick={() => handleSubjectChange(s)}
-              style={{
-                padding: '8px 16px', borderRadius: 999, border: '1px solid rgba(255,255,255,0.25)',
-                background: s === subject ? '#fff' : 'rgba(255,255,255,0.08)',
-                color: s === subject ? '#312e81' : 'rgba(255,255,255,0.85)',
-                fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer', transition: 'all .2s',
-              }}
+        {subjectOptions.map((s) => {
+          const c = colorFor(s);
+          const selected = s === subject;
+          return (
+            <div
+              key={s}
+              style={{ position: 'relative' }}
+              onMouseEnter={() => setHoveredSubject(s)}
+              onMouseLeave={() => setHoveredSubject((cur) => (cur === s ? null : cur))}
             >
-              {normalizeSubjectLabel(s)}
-            </button>
-            {hoveredSubject === s && subjectOptions.length > 1 && (
               <button
                 type="button"
-                onClick={(e) => handleRemoveSubjectClick(s, e)}
-                aria-label={`Remove ${normalizeSubjectLabel(s)}`}
+                onClick={() => handleSubjectChange(s)}
                 style={{
-                  position: 'absolute', top: -7, right: -7, width: 20, height: 20, borderRadius: '50%',
-                  border: '2px solid #312e81', background: '#ef4444', color: '#fff',
-                  display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
+                  display: 'inline-flex', alignItems: 'center', gap: 8, padding: '7px 16px 7px 10px', borderRadius: 999,
+                  border: selected ? `1px solid ${c}` : '1px solid #e2e8f0',
+                  background: selected ? c : '#f8fafc',
+                  color: selected ? '#fff' : '#334155',
+                  fontWeight: 800, fontSize: '0.78rem', cursor: 'pointer', transition: 'all .2s',
                 }}
               >
-                <X size={11} strokeWidth={3} />
+                <span
+                  role="button"
+                  tabIndex={0}
+                  aria-label={`Change color for ${normalizeSubjectLabel(s)}`}
+                  onClick={(e) => { e.stopPropagation(); setColorPickerFor((cur) => (cur === s ? null : s)); }}
+                  style={{
+                    width: 14, height: 14, borderRadius: '50%', background: selected ? '#fff' : c,
+                    border: selected ? `2px solid ${c}` : '2px solid rgba(255,255,255,0.8)',
+                    boxShadow: '0 0 0 1px rgba(0,0,0,0.06)', flexShrink: 0, cursor: 'pointer',
+                  }}
+                />
+                {normalizeSubjectLabel(s)}
               </button>
-            )}
-          </div>
-        ))}
+
+              {hoveredSubject === s && subjectOptions.length > 1 && (
+                <button
+                  type="button"
+                  onClick={(e) => handleRemoveSubjectClick(s, e)}
+                  aria-label={`Remove ${normalizeSubjectLabel(s)}`}
+                  style={{
+                    position: 'absolute', top: -7, right: -7, width: 20, height: 20, borderRadius: '50%',
+                    border: '2px solid #fff', background: '#ef4444', color: '#fff',
+                    display: 'grid', placeItems: 'center', cursor: 'pointer', padding: 0,
+                    boxShadow: '0 2px 6px rgba(0,0,0,0.2)',
+                  }}
+                >
+                  <X size={11} strokeWidth={3} />
+                </button>
+              )}
+
+              <AnimatePresence>
+                {colorPickerFor === s && (
+                  <motion.div
+                    initial={{ opacity: 0, y: -6, scale: 0.96 }}
+                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: -6, scale: 0.96 }}
+                    transition={{ duration: 0.15 }}
+                    style={{
+                      position: 'absolute', top: 'calc(100% + 8px)', left: 0, zIndex: 20,
+                      background: '#fff', borderRadius: 16, padding: 10, boxShadow: '0 16px 40px rgba(30,27,75,0.25)',
+                      border: '1px solid #eceaf6', display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: 6,
+                    }}
+                  >
+                    {SUBJECT_COLOR_PALETTE.map((paletteColor) => (
+                      <button
+                        key={paletteColor}
+                        type="button"
+                        onClick={(e) => { e.stopPropagation(); onSetSubjectColor?.(s, paletteColor); setColorPickerFor(null); }}
+                        aria-label={`Set color ${paletteColor}`}
+                        style={{
+                          width: 22, height: 22, borderRadius: '50%', background: paletteColor, cursor: 'pointer',
+                          border: paletteColor === c ? '2px solid #1e1b4b' : '2px solid transparent', padding: 0,
+                        }}
+                      />
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
+          );
+        })}
 
         <button
           type="button"
@@ -263,8 +312,8 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
           aria-label="Add subject"
           style={{
             width: 34, height: 34, borderRadius: '50%', display: 'grid', placeItems: 'center',
-            border: '1px dashed rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.06)',
-            color: 'rgba(255,255,255,0.85)', cursor: 'pointer',
+            border: '1px dashed #cbd5e1', background: '#f8fafc',
+            color: '#64748b', cursor: 'pointer',
           }}
         >
           <Plus size={16} />
@@ -281,9 +330,9 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
         <div style={{ position: 'relative', width: RING_SIZE, height: RING_SIZE }}>
           <svg width={RING_SIZE} height={RING_SIZE} style={{ transform: 'rotate(-90deg)' }}>
-            <circle cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke="rgba(255,255,255,0.12)" strokeWidth={RING_STROKE} />
+            <circle cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke="#f1f0f8" strokeWidth={RING_STROKE} />
             <motion.circle
-              cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke="#a5b4fc" strokeWidth={RING_STROKE}
+              cx={RING_SIZE / 2} cy={RING_SIZE / 2} r={RING_R} fill="none" stroke={activeColor} strokeWidth={RING_STROKE}
               strokeLinecap="round" strokeDasharray={RING_C}
               animate={{ strokeDashoffset: dashOffset }}
               transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -297,14 +346,14 @@ const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onRemoveSubjec
                   initial={{ scale: 0.9, opacity: 0.5 }}
                   animate={{ scale: [0.9, 1.15, 0.9], opacity: [0.5, 0.15, 0.5] }}
                   transition={{ duration: 2.2, repeat: Infinity, ease: 'easeInOut' }}
-                  style={{ position: 'absolute', width: RING_SIZE - 30, height: RING_SIZE - 30, borderRadius: '50%', background: 'radial-gradient(circle, rgba(165,180,252,0.35), transparent 70%)' }}
+                  style={{ position: 'absolute', width: RING_SIZE - 30, height: RING_SIZE - 30, borderRadius: '50%', background: `radial-gradient(circle, ${activeColor}45, transparent 70%)` }}
                 />
               )}
             </AnimatePresence>
-            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '2rem', fontWeight: 900, letterSpacing: '-0.02em', zIndex: 1 }}>
+            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '2rem', fontWeight: 900, letterSpacing: '-0.02em', zIndex: 1, color: '#0f172a' }}>
               {formatElapsed(displayElapsedSec)}
             </span>
-            <span style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.6)', marginTop: 4, zIndex: 1 }}>
+            <span style={{ fontSize: '0.7rem', fontWeight: 800, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#64748b', marginTop: 4, zIndex: 1 }}>
               {normalizeSubjectLabel(subject)}{phase === 'paused' ? ' · Paused' : ''}
             </span>
           </div>

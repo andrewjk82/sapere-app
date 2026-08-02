@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { doc, setDoc, arrayUnion, arrayRemove } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useProfile } from '../../context/ProfileContext';
 import { useToast } from '../../context/ToastContext';
+import { randomSubjectColor } from '../../utils/subjectColors';
 import SubjectStopwatch from './SubjectStopwatch';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
@@ -32,6 +33,34 @@ const StudyTimerPage = () => {
     // Never end up with zero chips — if the student hid everything, fall back.
     return list.length > 0 ? list : ['General Study'];
   }, [profile]);
+
+  const subjectColors = profile?.studySubjectColors || {};
+  const assigningColorRef = useRef(new Set());
+  const lastAssignedColorRef = useRef(null);
+
+  const handleSetSubjectColor = async (subjectName, color) => {
+    if (!user?.uid) return;
+    try {
+      await setDoc(doc(db, 'users', user.uid), { studySubjectColors: { [subjectName]: color } }, { merge: true });
+    } catch (e) {
+      console.warn('[studytime] color save failed:', e?.code || e);
+      showToast?.('Could not save that color — try again.', 'error');
+    }
+  };
+
+  // First time a subject shows up with no saved color, hand it a random one
+  // from the palette — a single small merge write, then the live profile
+  // listener carries it back down (no local/optimistic state needed).
+  useEffect(() => {
+    subjects.forEach((s) => {
+      if (subjectColors[s] || assigningColorRef.current.has(s)) return;
+      assigningColorRef.current.add(s);
+      const color = randomSubjectColor(lastAssignedColorRef.current);
+      lastAssignedColorRef.current = color;
+      handleSetSubjectColor(s, color).finally(() => assigningColorRef.current.delete(s));
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [subjects, subjectColors, user?.uid]);
 
   const handleAddSubject = async (name) => {
     const trimmed = name.trim();
@@ -80,6 +109,8 @@ const StudyTimerPage = () => {
             uid={user?.uid}
             profile={profile}
             subjects={subjects}
+            subjectColors={subjectColors}
+            onSetSubjectColor={handleSetSubjectColor}
             onAddSubject={handleAddSubject}
             onRemoveSubject={handleRemoveSubject}
             onFlushed={() => setRefreshEpoch((n) => n + 1)}
