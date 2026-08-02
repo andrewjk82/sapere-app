@@ -6,6 +6,7 @@ import { localCache } from '../../services/localCacheService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import { nowMs } from '../../utils/timeUtils';
+import DailyHourRing from './DailyHourRing';
 
 const RANGE_DAYS = { Daily: 1, Weekly: 7, Monthly: 30 };
 const BAR_COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#22c55e', '#0ea5e9', '#ef4444'];
@@ -67,6 +68,7 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
           label: shortLabelFor(offset),
           totalSec: Number(data.studyTimeTotalSec) || 0,
           bySubject: data.studyTimeBySubject && typeof data.studyTimeBySubject === 'object' ? data.studyTimeBySubject : {},
+          byHour: data.studyTimeByHour && typeof data.studyTimeByHour === 'object' ? data.studyTimeByHour : {},
         };
       });
       setDays(nextDays);
@@ -121,7 +123,11 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
         <div style={{ height: 160, display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 700, fontSize: '0.85rem' }}>Loading…</div>
       ) : (
         <>
-          <DailyBarChart days={days} subjectOrder={subjectTotals.map((t) => t.subject)} subjectColors={subjectColors} />
+          {range === 'Daily' ? (
+            <DailyHourRing day={days[0]} subjectColors={subjectColors} />
+          ) : (
+            <DailyBarChart days={days} subjectOrder={subjectTotals.map((t) => t.subject)} subjectColors={subjectColors} />
+          )}
           <SubjectBreakdown subjectTotals={subjectTotals} grandTotalSec={grandTotalSec} subjectColors={subjectColors} />
         </>
       )}

@@ -179,7 +179,7 @@ export const fetchMyTotal = async (uid) => {
  *
  * @returns {{ totalSec: number, meta: object|null }}
  */
-export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, currentMeta = null }) => {
+export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avatarUrl, hourBreakdown = null, currentMeta = null }) => {
   if (!uid || !dateStr || !subject || !Number.isFinite(deltaSec) || deltaSec <= 0) {
     return { totalSec: null, meta: currentMeta };
   }
@@ -188,10 +188,20 @@ export const flushStudySession = async ({ uid, dateStr, subject, deltaSec, avata
   const totalsRef = doc(db, TOTALS_COLLECTION, uid);
   const subjectKey = String(subject).replace(/[.$/[\]#]/g, '_');
 
+  // Optional "what time of day" breakdown — { hour(0-23): seconds } — used
+  // by the Study Timer's 24-hour ring. Approximate (see splitSecondsIntoHourBuckets).
+  const studyTimeByHour = {};
+  if (hourBreakdown) {
+    Object.entries(hourBreakdown).forEach(([hour, sec]) => {
+      if (Number(sec) > 0) studyTimeByHour[hour] = { [subjectKey]: increment(Number(sec)) };
+    });
+  }
+
   const batch = writeBatch(db);
   batch.set(dailyStatsRef, {
     studyTimeBySubject: { [subjectKey]: increment(deltaSec) },
     studyTimeTotalSec: increment(deltaSec),
+    ...(Object.keys(studyTimeByHour).length > 0 ? { studyTimeByHour } : {}),
   }, { merge: true });
   batch.set(totalsRef, {
     uid,

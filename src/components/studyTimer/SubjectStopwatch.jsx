@@ -4,7 +4,7 @@ import { Play, Pause, Square, Plus, X } from 'lucide-react';
 import { flushStudySession } from '../../services/studyTimeService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
-import { nowMs } from '../../utils/timeUtils';
+import { nowMs, splitSecondsIntoHourBuckets } from '../../utils/timeUtils';
 import { SUBJECT_COLOR_PALETTE, DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 import AddSubjectModal from './AddSubjectModal';
 
@@ -91,9 +91,13 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     const delta = total - flushedSecRef.current;
     if (delta <= 0 || flushingRef.current) return;
     flushingRef.current = true;
+    // Approximate wall-clock window for this delta — good enough for the
+    // "what time of day" ring; see splitSecondsIntoHourBuckets.
+    const end = nowMs();
+    const hourBreakdown = splitSecondsIntoHourBuckets(end - delta * 1000, end);
     try {
       const { meta } = await flushStudySession({
-        uid, dateStr: todayStr(), subject, deltaSec: delta, avatarUrl, currentMeta: metaRef.current,
+        uid, dateStr: todayStr(), subject, deltaSec: delta, avatarUrl, hourBreakdown, currentMeta: metaRef.current,
       });
       metaRef.current = meta;
       flushedSecRef.current = total;
@@ -125,14 +129,20 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
       if (!raw) return;
       const saved = JSON.parse(raw);
       const savedSubject = subjectOptions.includes(saved?.subject) ? saved.subject : subjectOptions[0];
-      let staleTotalSec = Math.max(0, Math.floor(saved?.bankedSec) || 0);
+      const bankedPortion = Math.max(0, Math.floor(saved?.bankedSec) || 0);
+      let runningPortion = 0;
+      const end = nowMs();
       if (saved?.phase === 'running' && saved?.runningSince) {
-        staleTotalSec += Math.min(RESUME_CAP_SEC, Math.max(0, Math.floor((nowMs() - saved.runningSince) / 1000)));
+        runningPortion = Math.min(RESUME_CAP_SEC, Math.max(0, Math.floor((end - saved.runningSince) / 1000)));
       }
+      const staleTotalSec = bankedPortion + runningPortion;
       if (staleTotalSec > 0) {
+        // Only the still-running portion has a known wall-clock window; the
+        // already-banked (paused) portion is skipped for hour attribution.
+        const hourBreakdown = runningPortion > 0 ? splitSecondsIntoHourBuckets(end - runningPortion * 1000, end) : null;
         flushStudySession({
           uid, dateStr: todayStr(), subject: savedSubject, deltaSec: staleTotalSec,
-          avatarUrl, currentMeta: metaRef.current,
+          avatarUrl, hourBreakdown, currentMeta: metaRef.current,
         }).then(({ meta }) => { metaRef.current = meta; onFlushed?.(); }).catch(() => {});
       }
     } catch { /* ignore */ }
