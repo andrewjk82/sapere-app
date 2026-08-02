@@ -4,6 +4,14 @@ import { Crown } from 'lucide-react';
 import { subscribeStudyTimeMeta, fetchOwnRank, fetchMyTotal } from '../../services/studyTimeService';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
 
+const formatTotal = (sec) => {
+  const totalMin = Math.round((Number(sec) || 0) / 60);
+  const h = Math.floor(totalMin / 60);
+  const m = totalMin % 60;
+  if (h === 0) return `${m}m`;
+  return m === 0 ? `${h}h` : `${h}h ${m}m`;
+};
+
 /**
  * Top 10 by cumulative study time — icon + rank only, no names. Right-side
  * panel on the Study Timer page. Subscribes to a single meta doc
@@ -65,6 +73,9 @@ const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
             >
               <RankBadge rank={i + 1} />
               <img src={entry.avatarUrl || buildAvatarUrl(null, entry.uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
+              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: 'rgba(255,255,255,0.85)' }}>
+                {formatTotal(entry.totalSec)}
+              </span>
             </motion.div>
           ))}
         </AnimatePresence>
@@ -79,6 +90,9 @@ const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
             <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, background: 'rgba(255,255,255,0.14)' }}>
               <RankBadge rank={myRank} />
               <img src={buildAvatarUrl(profile, uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
+              <span style={{ marginLeft: 'auto', fontSize: '0.76rem', fontWeight: 800, color: 'rgba(255,255,255,0.85)' }}>
+                {formatTotal(myTotalSec)}
+              </span>
             </div>
           </>
         )}
