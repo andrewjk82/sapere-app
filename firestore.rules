@@ -278,6 +278,22 @@ service cloud.firestore {
       allow write: if false;
     }
 
+    // ── Study Timer (cumulative study-time leaderboard) ──────────────────
+    // One doc per student, id == uid, holding a running total only — no
+    // name field is ever stored (leaderboard is icon+rank only).
+    match /study_time_totals/{uid} {
+      allow read: if isSignedIn();
+      allow create, update: if isAdmin() || (isSignedIn() && request.auth.uid == uid);
+      allow delete: if isAdmin();
+    }
+
+    // Cached top-10 doc every client listens to. Signed-in writable like
+    // timestable_sprint_meta — a forged doc could only distort a display,
+    // since totals themselves live in study_time_totals.
+    match /study_time_leaderboard/{docId} {
+      allow read, write: if isSignedIn();
+    }
+
     // Traffic tracking logs — anyone can write (append), admin can read
     match /traffic_logs/{logId} {
       allow create: if true;

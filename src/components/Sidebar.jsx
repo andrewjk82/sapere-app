@@ -14,6 +14,7 @@ import {
   GraduationCap,
   FileText,
   Timer,
+  Clock,
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAuth } from '../context/AuthContext';
@@ -110,6 +111,10 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
             Visible to the teacher too — admin runs are a practice mode and are
             never recorded (see TimesTableSprint). */}
         <SidebarItem icon={Timer} label="Times Table" active={activeTab === 'TimesTableSprint'} onClick={() => setActiveTab('TimesTableSprint')} disabled={isLocked && activeTab !== 'TimesTableSprint'} />
+
+        {!isAdmin && (
+          <SidebarItem icon={Clock} label="Study Timer" active={activeTab === 'StudyTimer'} onClick={() => setActiveTab('StudyTimer')} disabled={isLocked} />
+        )}
 
         {!isAdmin && profile?.examPrepEnabled === true && (
           <SidebarItem icon={GraduationCap} label="Exam Prep" active={activeTab === 'ExamPrep'} onClick={() => setActiveTab('ExamPrep')} disabled={isLocked} />

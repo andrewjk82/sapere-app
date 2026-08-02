@@ -80,6 +80,7 @@ const StudentList = lazyWithReload(() => import('./components/StudentList'));
 const Curriculum = lazyWithReload(() => import('./components/Curriculum'));
 const DailyChallenge = lazyWithReload(() => import('./components/DailyChallenge'));
 const TimesTableSprint = lazyWithReload(() => import('./components/TimesTableSprint'));
+const StudyTimerPage = lazyWithReload(() => import('./components/studyTimer/StudyTimerPage'));
 const Settings = lazyWithReload(() => import('./components/Settings'));
 const StudentDetail = lazyWithReload(() => import('./components/StudentDetail'));
 const ReportsAdmin = lazyWithReload(() => import('./components/ReportsAdmin'));
@@ -1302,6 +1303,8 @@ function App() {
             onQuizActiveChange={setSprintQuizInProgress}
           />
         );
+      case 'StudyTimer':
+        return <StudyTimerPage key={`studytimer-${user?.uid}`} />;
       case 'Feedback':
         return <Feedback setActiveTab={handleTabChange} />;
       case 'Curriculum':

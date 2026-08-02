@@ -1,0 +1,101 @@
+import { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { Crown } from 'lucide-react';
+import { subscribeStudyTimeMeta, fetchOwnRank, fetchMyTotal } from '../../services/studyTimeService';
+import { buildAvatarUrl } from '../../utils/avatarUtils';
+
+/**
+ * Top 10 by cumulative study time — icon + rank only, no names. Right-side
+ * panel on the Study Timer page. Subscribes to a single meta doc
+ * (studyTimeService.subscribeStudyTimeMeta); own rank is fetched once per
+ * mount/refresh (a single count-aggregation query), never polled.
+ */
+const StudyTimeLeaderboard = ({ uid, profile, refreshEpoch = 0 }) => {
+  const [meta, setMeta] = useState({ top10: [] });
+  const [myTotalSec, setMyTotalSec] = useState(null);
+  const [myRank, setMyRank] = useState(null);
+
+  useEffect(() => {
+    const unsub = subscribeStudyTimeMeta(setMeta);
+    return unsub;
+  }, []);
+
+  useEffect(() => {
+    if (!uid) return undefined;
+    let cancelled = false;
+    fetchMyTotal(uid).then((data) => {
+      if (cancelled) return;
+      const total = Number(data?.totalSec) || 0;
+      setMyTotalSec(total);
+      const top10 = meta.top10 || [];
+      if (!top10.some((e) => e.uid === uid) && total > 0) {
+        fetchOwnRank(total).then((rank) => { if (!cancelled) setMyRank(rank); });
+      }
+    });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [uid, refreshEpoch]);
+
+  const top10 = meta.top10 || [];
+  const inTop10 = top10.some((e) => e.uid === uid);
+
+  return (
+    <div style={{ borderRadius: 32, background: 'linear-gradient(180deg, #1e1b4b, #312e81)', padding: '22px 20px', color: '#fff', boxShadow: '0 20px 50px rgba(49,46,129,0.28)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 16 }}>
+        <Crown size={18} color="#fbbf24" />
+        <span style={{ fontSize: '0.72rem', fontWeight: 900, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'rgba(255,255,255,0.75)' }}>
+          Study Time Leaders
+        </span>
+      </div>
+
+      <div>
+        <AnimatePresence initial={false}>
+          {top10.map((entry, i) => (
+            <motion.div
+              key={entry.uid}
+              layout
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ type: 'spring', damping: 26, stiffness: 220 }}
+              style={{
+                display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, marginBottom: 4,
+                background: entry.uid === uid ? 'rgba(255,255,255,0.14)' : 'transparent',
+              }}
+            >
+              <RankBadge rank={i + 1} />
+              <img src={entry.avatarUrl || buildAvatarUrl(null, entry.uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
+            </motion.div>
+          ))}
+        </AnimatePresence>
+
+        {top10.length === 0 && (
+          <p style={{ fontSize: '0.78rem', color: 'rgba(255,255,255,0.6)', fontWeight: 600 }}>No study time logged yet. Be the first!</p>
+        )}
+
+        {!inTop10 && myTotalSec > 0 && (
+          <>
+            <p style={{ textAlign: 'center', fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', padding: '4px 0' }}>• • •</p>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '8px 10px', borderRadius: 14, background: 'rgba(255,255,255,0.14)' }}>
+              <RankBadge rank={myRank} />
+              <img src={buildAvatarUrl(profile, uid)} alt="" style={{ width: 30, height: 30, borderRadius: '50%', background: '#fff', flexShrink: 0 }} />
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const RankBadge = ({ rank }) => (
+  <span style={{
+    width: 24, height: 24, borderRadius: '50%', display: 'grid', placeItems: 'center', flexShrink: 0,
+    fontSize: '0.72rem', fontWeight: 900,
+    background: rank === 1 ? '#fbbf24' : rank === 2 ? '#cbd5e1' : rank === 3 ? '#d97706' : 'rgba(255,255,255,0.12)',
+    color: rank && rank <= 3 ? '#1e1b4b' : 'rgba(255,255,255,0.8)',
+  }}>
+    {rank ?? '–'}
+  </span>
+);
+
+export default StudyTimeLeaderboard;
