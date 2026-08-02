@@ -4,6 +4,7 @@ import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import { localCache } from '../../services/localCacheService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
+import { DEFAULT_SUBJECT_COLOR } from '../../utils/subjectColors';
 
 const RANGE_DAYS = { Daily: 1, Weekly: 7, Monthly: 30 };
 const BAR_COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#f59e0b', '#22c55e', '#0ea5e9', '#ef4444'];
@@ -26,7 +27,7 @@ const shortLabelFor = (offsetDaysAgo) => {
  * studyTimeService.js) — bounded point-reads by doc id, cached per calendar
  * day/range, no separate stats collection and no extra writes.
  */
-const StudyStatsCharts = ({ uid, refreshEpoch = 0 }) => {
+const StudyStatsCharts = ({ uid, refreshEpoch = 0, subjectColors = {} }) => {
   const [range, setRange] = useState('Weekly');
   const [days, setDays] = useState([]); // [{ dateStr, label, totalSec, bySubject }]
   const [loading, setLoading] = useState(false);
@@ -114,8 +115,8 @@ const StudyStatsCharts = ({ uid, refreshEpoch = 0 }) => {
         <div style={{ height: 160, display: 'grid', placeItems: 'center', color: '#94a3b8', fontWeight: 700, fontSize: '0.85rem' }}>Loading…</div>
       ) : (
         <>
-          <DailyBarChart days={days} />
-          <SubjectBreakdown subjectTotals={subjectTotals} grandTotalSec={grandTotalSec} />
+          <DailyBarChart days={days} subjectOrder={subjectTotals.map((t) => t.subject)} subjectColors={subjectColors} />
+          <SubjectBreakdown subjectTotals={subjectTotals} grandTotalSec={grandTotalSec} subjectColors={subjectColors} />
         </>
       )}
     </div>
@@ -130,12 +131,22 @@ const formatHours = (sec) => {
 
 const CHART_HEIGHT = 140;
 
-const DailyBarChart = ({ days }) => {
+// Stacked bar per day — one colored segment per subject studied that day,
+// using the same colors as the stopwatch's chips/ring (subjectColors),
+// stacked in a consistent order (biggest subject overall at the bottom).
+const DailyBarChart = ({ days, subjectOrder, subjectColors }) => {
   const maxSec = Math.max(60, ...days.map((d) => d.totalSec));
+  const colorFor = (subject, i) => subjectColors[subject] || BAR_COLORS[i % BAR_COLORS.length] || DEFAULT_SUBJECT_COLOR;
+
   return (
     <div style={{ display: 'flex', alignItems: 'flex-end', gap: days.length > 10 ? 4 : 10, height: CHART_HEIGHT, marginBottom: 20, overflowX: days.length > 14 ? 'auto' : 'visible' }}>
       {days.map((d, i) => {
-        const heightPct = Math.max(3, (d.totalSec / maxSec) * 100);
+        const segments = subjectOrder
+          .map((subj) => ({ subject: subj, sec: Number(d.bySubject[subj]) || 0 }))
+          .filter((seg) => seg.sec > 0);
+        const heightPct = Math.max(segments.length > 0 ? 3 : 0, (d.totalSec / maxSec) * 100);
+        const barPx = (CHART_HEIGHT - 24) * (heightPct / 100);
+
         return (
           <div key={d.dateStr} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, flex: days.length > 14 ? '0 0 18px' : 1, minWidth: days.length > 14 ? 18 : 0 }}>
             <div style={{ position: 'relative', width: '100%', height: CHART_HEIGHT - 24, display: 'flex', alignItems: 'flex-end' }}>
@@ -144,8 +155,34 @@ const DailyBarChart = ({ days }) => {
                 animate={{ height: `${heightPct}%` }}
                 transition={{ duration: 0.5, delay: i * 0.02, ease: 'easeOut' }}
                 title={`${d.label}: ${formatHours(d.totalSec)}`}
-                style={{ width: '100%', borderRadius: 8, background: 'linear-gradient(180deg, #818cf8, #4338ca)', minHeight: 3 }}
-              />
+                style={{
+                  width: '100%', borderRadius: 8, minHeight: segments.length > 0 ? 3 : 0, overflow: 'hidden',
+                  display: 'flex', flexDirection: 'column-reverse',
+                  background: segments.length === 0 ? '#f1f0f8' : undefined,
+                }}
+              >
+                {segments.map((seg, si) => {
+                  const segPct = d.totalSec > 0 ? (seg.sec / d.totalSec) * 100 : 0;
+                  const segPx = barPx * (segPct / 100);
+                  return (
+                    <div
+                      key={seg.subject}
+                      title={`${normalizeSubjectLabel(seg.subject)}: ${formatHours(seg.sec)}`}
+                      style={{
+                        height: `${segPct}%`, width: '100%', background: colorFor(seg.subject, si),
+                        borderTop: si > 0 ? '1px solid rgba(255,255,255,0.5)' : 'none',
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      }}
+                    >
+                      {segPx >= 16 && (
+                        <span style={{ fontSize: '0.6rem', fontWeight: 800, color: '#fff', textShadow: '0 1px 2px rgba(0,0,0,0.25)' }}>
+                          {formatHours(seg.sec)}
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
+              </motion.div>
             </div>
             {days.length <= 14 && (
               <span style={{ fontSize: '0.62rem', fontWeight: 800, color: '#94a3b8' }}>{d.label}</span>
@@ -157,7 +194,7 @@ const DailyBarChart = ({ days }) => {
   );
 };
 
-const SubjectBreakdown = ({ subjectTotals, grandTotalSec }) => {
+const SubjectBreakdown = ({ subjectTotals, grandTotalSec, subjectColors }) => {
   if (subjectTotals.length === 0) {
     return <p style={{ fontSize: '0.8rem', color: '#94a3b8', fontWeight: 600, margin: 0 }}>No study time logged for this range yet — start the stopwatch above!</p>;
   }
@@ -165,7 +202,7 @@ const SubjectBreakdown = ({ subjectTotals, grandTotalSec }) => {
     <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
       {subjectTotals.map(({ subject, sec }, i) => {
         const pct = grandTotalSec > 0 ? (sec / grandTotalSec) * 100 : 0;
-        const color = BAR_COLORS[i % BAR_COLORS.length];
+        const color = subjectColors[subject] || BAR_COLORS[i % BAR_COLORS.length];
         return (
           <div key={subject}>
             <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.76rem', fontWeight: 700, color: '#475569', marginBottom: 4 }}>

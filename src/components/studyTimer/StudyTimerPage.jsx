@@ -115,7 +115,7 @@ const StudyTimerPage = () => {
             onRemoveSubject={handleRemoveSubject}
             onFlushed={() => setRefreshEpoch((n) => n + 1)}
           />
-          <StudyStatsCharts uid={user?.uid} refreshEpoch={refreshEpoch} />
+          <StudyStatsCharts uid={user?.uid} refreshEpoch={refreshEpoch} subjectColors={subjectColors} />
         </div>
         <StudyTimeLeaderboard uid={user?.uid} profile={profile} refreshEpoch={refreshEpoch} />
       </div>
