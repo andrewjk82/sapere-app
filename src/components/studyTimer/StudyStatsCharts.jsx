@@ -135,7 +135,8 @@ const formatHours = (sec) => {
   return `${h.toFixed(1)}h`;
 };
 
-const CHART_HEIGHT = 140;
+const CHART_HEIGHT = 158; // bar area + top total-label row + bottom day-label row
+const BAR_AREA_HEIGHT = CHART_HEIGHT - 40;
 
 // Stacked bar per day — one colored segment per subject studied that day,
 // using the same colors as the stopwatch's chips/ring (subjectColors),
@@ -151,11 +152,14 @@ const DailyBarChart = ({ days, subjectOrder, subjectColors }) => {
           .map((subj) => ({ subject: subj, sec: Number(d.bySubject[subj]) || 0 }))
           .filter((seg) => seg.sec > 0);
         const heightPct = Math.max(segments.length > 0 ? 3 : 0, (d.totalSec / maxSec) * 100);
-        const barPx = (CHART_HEIGHT - 24) * (heightPct / 100);
+        const barPx = BAR_AREA_HEIGHT * (heightPct / 100);
 
         return (
           <div key={d.dateStr} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6, flex: days.length > 14 ? '0 0 18px' : 1, minWidth: days.length > 14 ? 18 : 0 }}>
-            <div style={{ position: 'relative', width: '100%', height: CHART_HEIGHT - 24, display: 'flex', alignItems: 'flex-end' }}>
+            <span style={{ fontSize: '0.66rem', fontWeight: 900, color: d.totalSec > 0 ? '#1e1b4b' : '#cbd5e1' }}>
+              {formatHours(d.totalSec)}
+            </span>
+            <div style={{ position: 'relative', width: '100%', height: BAR_AREA_HEIGHT, display: 'flex', alignItems: 'flex-end' }}>
               <motion.div
                 initial={{ height: 0 }}
                 animate={{ height: `${heightPct}%` }}
