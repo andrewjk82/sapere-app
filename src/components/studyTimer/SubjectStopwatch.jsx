@@ -200,6 +200,20 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     persistLocal(subject, 'paused');
   };
 
+  // Auto-pause when the tab goes to the background — otherwise elapsed
+  // wall-clock time keeps accruing while the student is elsewhere (e.g. a
+  // laptop left open on another tab), and it all lands as one big credit
+  // the next time the tab is foregrounded. Requires a manual Resume so
+  // idle time never sneaks back in silently.
+  useEffect(() => {
+    const handleVisibility = () => {
+      if (document.hidden && phase === 'running') handlePause();
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+    return () => document.removeEventListener('visibilitychange', handleVisibility);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [phase, subject]);
+
   async function handleStop() {
     await flushDelta();
     resetSession();
