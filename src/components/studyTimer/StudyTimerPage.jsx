@@ -1,7 +1,10 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
+import { doc, setDoc, arrayUnion } from 'firebase/firestore';
+import { db } from '../../firebase/config';
 import { useAuth } from '../../context/AuthContext';
 import { useProfile } from '../../context/ProfileContext';
+import { useToast } from '../../context/ToastContext';
 import SubjectStopwatch from './SubjectStopwatch';
 import StudyStatsCharts from './StudyStatsCharts';
 import StudyTimeLeaderboard from './StudyTimeLeaderboard';
@@ -14,6 +17,7 @@ import StudyTimeLeaderboard from './StudyTimeLeaderboard';
 const StudyTimerPage = () => {
   const { user } = useAuth();
   const { profile } = useProfile();
+  const { showToast } = useToast();
   const [isMobile] = useState(window.innerWidth < 768);
   const [refreshEpoch, setRefreshEpoch] = useState(0);
 
@@ -21,10 +25,26 @@ const StudyTimerPage = () => {
     const assigned = Array.isArray(profile?.assignedCourse)
       ? profile.assignedCourse
       : [profile?.assignedCourse].filter(Boolean);
-    const list = assigned.filter(Boolean);
+    const custom = Array.isArray(profile?.customStudySubjects) ? profile.customStudySubjects : [];
+    const list = [...assigned, ...custom].filter(Boolean);
     if (!list.includes('General Study')) list.push('General Study');
-    return list;
+    return [...new Set(list)];
   }, [profile]);
+
+  const handleAddSubject = async (name) => {
+    const trimmed = name.trim();
+    if (!trimmed || !user?.uid) return;
+    if (subjects.some((s) => s.toLowerCase() === trimmed.toLowerCase())) {
+      showToast?.('That subject is already in your list.', 'info');
+      return;
+    }
+    try {
+      await setDoc(doc(db, 'users', user.uid), { customStudySubjects: arrayUnion(trimmed) }, { merge: true });
+    } catch (e) {
+      console.warn('[studytime] add subject failed:', e?.code || e);
+      showToast?.('Could not add that subject — try again.', 'error');
+    }
+  };
 
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="app-page">
@@ -41,6 +61,7 @@ const StudyTimerPage = () => {
             uid={user?.uid}
             profile={profile}
             subjects={subjects}
+            onAddSubject={handleAddSubject}
             onFlushed={() => setRefreshEpoch((n) => n + 1)}
           />
           <StudyStatsCharts uid={user?.uid} refreshEpoch={refreshEpoch} />

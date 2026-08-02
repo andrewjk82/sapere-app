@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Play, Pause, Square } from 'lucide-react';
+import { Play, Pause, Square, Plus, X } from 'lucide-react';
 import { flushStudySession } from '../../services/studyTimeService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
@@ -38,7 +38,7 @@ const RING_C = 2 * Math.PI * RING_R;
  * the render body — `displayElapsedSec` is the one piece of render state,
  * advanced by the ticking effect.
  */
-const SubjectStopwatch = ({ uid, profile, subjects, onFlushed }) => {
+const SubjectStopwatch = ({ uid, profile, subjects, onAddSubject, onFlushed }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
   const avatarUrl = useMemo(() => buildAvatarUrl(profile, uid), [profile, uid]);
   const subjectOptions = useMemo(
@@ -47,6 +47,8 @@ const SubjectStopwatch = ({ uid, profile, subjects, onFlushed }) => {
   );
 
   const [subject, setSubject] = useState(subjectOptions[0]);
+  const [addingSubject, setAddingSubject] = useState(false);
+  const [newSubjectName, setNewSubjectName] = useState('');
   const [phase, setPhase] = useState('stopped'); // 'stopped' | 'running' | 'paused'
   const [displayElapsedSec, setDisplayElapsedSec] = useState(0);
 
@@ -191,6 +193,15 @@ const SubjectStopwatch = ({ uid, profile, subjects, onFlushed }) => {
     }
   }
 
+  async function handleAddSubjectSubmit() {
+    const trimmed = newSubjectName.trim();
+    if (!trimmed) { setAddingSubject(false); return; }
+    await onAddSubject?.(trimmed);
+    await handleSubjectChange(trimmed);
+    setNewSubjectName('');
+    setAddingSubject(false);
+  }
+
   const ringProgress = (displayElapsedSec % 3600) / 3600; // one full ring per hour, purely decorative
   const dashOffset = RING_C * (1 - ringProgress);
   const isRunning = phase === 'running';
@@ -218,6 +229,42 @@ const SubjectStopwatch = ({ uid, profile, subjects, onFlushed }) => {
             {normalizeSubjectLabel(s)}
           </button>
         ))}
+
+        {addingSubject ? (
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6, background: 'rgba(255,255,255,0.1)', borderRadius: 999, padding: '4px 6px 4px 14px', border: '1px solid rgba(255,255,255,0.3)' }}>
+            <input
+              autoFocus
+              value={newSubjectName}
+              onChange={(e) => setNewSubjectName(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') handleAddSubjectSubmit();
+                if (e.key === 'Escape') { setAddingSubject(false); setNewSubjectName(''); }
+              }}
+              placeholder="Subject name"
+              maxLength={40}
+              style={{ background: 'transparent', border: 'none', outline: 'none', color: '#fff', fontWeight: 700, fontSize: '0.78rem', width: 110 }}
+            />
+            <button type="button" onClick={handleAddSubjectSubmit} style={{ width: 22, height: 22, borderRadius: '50%', border: 'none', background: '#22c55e', color: '#fff', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0 }}>
+              <Plus size={14} />
+            </button>
+            <button type="button" onClick={() => { setAddingSubject(false); setNewSubjectName(''); }} style={{ width: 22, height: 22, borderRadius: '50%', border: 'none', background: 'rgba(255,255,255,0.15)', color: '#fff', display: 'grid', placeItems: 'center', cursor: 'pointer', flexShrink: 0 }}>
+              <X size={14} />
+            </button>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setAddingSubject(true)}
+            aria-label="Add subject"
+            style={{
+              width: 34, height: 34, borderRadius: '50%', display: 'grid', placeItems: 'center',
+              border: '1px dashed rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.06)',
+              color: 'rgba(255,255,255,0.85)', cursor: 'pointer',
+            }}
+          >
+            <Plus size={16} />
+          </button>
+        )}
       </div>
 
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 20 }}>
