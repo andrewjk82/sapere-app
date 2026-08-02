@@ -294,15 +294,16 @@ export default async function handler(req, res) {
     }
 
     // ══════════════════════════════════════════════════════════════════════
-    // PART 1.6: Online Study Session (nightly 8:30–10:30 PM Zoom room)
+    // PART 1.6: Online Study Session (nightly 7:30–10:30 PM Zoom room)
     // Admin toggles this on and sets the Zoom link via Settings →
-    // system_config/onlineStudySession { enabled, zoomLink }. At 8:30 PM
-    // Sydney every student gets an email + push with the link; the dashboard
-    // card (read directly from that same doc) is what shows/hides it 8:30–10:30.
-    // Window is wide (8:30–9:30) so a late-arriving hourly ping still catches
-    // it; `lastSentDate` on the config doc dedupes so it only fires once/day.
+    // system_config/onlineStudySession { enabled, zoomLink }. At 7:00 PM
+    // Sydney (30 min ahead of the 7:30 start) every student gets an email +
+    // push with the link; the dashboard card (read directly from that same
+    // doc) is what shows/hides it 7:30–10:30. Window is wide (7:00–8:00) so
+    // a late-arriving hourly ping still catches it; `lastSentDate` on the
+    // config doc dedupes so it only fires once/day.
     // ══════════════════════════════════════════════════════════════════════
-    if (sydTotalMin >= 1230 && sydTotalMin < 1290) {
+    if (sydTotalMin >= 1140 && sydTotalMin < 1200) {
       try {
         const sessionConfigRef = db.collection('system_config').doc('onlineStudySession');
         const sessionConfigSnap = await sessionConfigRef.get();
@@ -320,10 +321,10 @@ export default async function handler(req, res) {
             const { subject, html } = onlineStudySessionEmail({
               name: studentName,
               zoomLink: sessionConfig.zoomLink,
-              startLabel: '8:30 PM',
+              startLabel: '7:30 PM',
               endLabel: '10:30 PM',
             });
-            const pushBody = `Tonight's study room is open — join by 10:30 PM.`;
+            const pushBody = `Tonight's study room opens at 7:30 PM — join by 10:30 PM.`;
             const result = await sendNotification(
               db, transporter,
               { studentId: studentDoc.id, studentEmail: student.email, studentName },

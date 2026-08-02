@@ -729,8 +729,8 @@ const Settings = () => {
               <div style={{ marginTop: '24px', paddingTop: '20px', borderTop: '1px solid #fee2e2' }}>
                 <h4 style={{ margin: '0 0 8px', fontSize: '0.9rem', fontWeight: 800, color: '#991b1b' }}>Online Study Session</h4>
                 <p style={{ fontSize: '0.8rem', color: '#64748b', marginBottom: '14px' }}>
-                  When enabled, every student gets an email + push notification at 8:30 PM with this Zoom link,
-                  and a "join now" card appears on their dashboard from 8:30 PM to 10:30 PM.
+                  When enabled, every student gets an email + push notification at 7:00 PM with this Zoom link,
+                  and a "join now" card appears on their dashboard from 7:30 PM to 10:30 PM.
                 </p>
                 <label style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 700, color: '#1e1b4b' }}>
                   <input
@@ -739,7 +739,7 @@ const Settings = () => {
                     onChange={(e) => setStudySession((s) => ({ ...s, enabled: e.target.checked }))}
                     style={{ width: '16px', height: '16px' }}
                   />
-                  Enable nightly study session (8:30–10:30 PM)
+                  Enable nightly study session (7:30–10:30 PM)
                 </label>
                 <input
                   type="url"

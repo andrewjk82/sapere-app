@@ -3,7 +3,7 @@ import { Video } from 'lucide-react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
 
-const START_MIN = 20 * 60 + 30; // 8:30 PM
+const START_MIN = 19 * 60 + 30; // 7:30 PM
 const END_MIN = 22 * 60 + 30;   // 10:30 PM
 
 function sydneyTotalMinutes() {
@@ -15,7 +15,7 @@ function sydneyTotalMinutes() {
   return h * 60 + m;
 }
 
-// Student-facing card for the nightly 8:30–10:30 PM Zoom study room.
+// Student-facing card for the nightly 7:30–10:30 PM Zoom study room.
 // Visible only inside that Sydney-time window, and only while an admin has
 // enabled it + set a link in system_config/onlineStudySession.
 const OnlineStudySessionCard = () => {
