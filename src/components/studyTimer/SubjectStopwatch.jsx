@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Pause, Square, Plus, X } from 'lucide-react';
 import { flushStudySession } from '../../services/studyTimeService';
+import { getDeviceId, publishSessionTransition, fetchRemoteSessionState } from '../../services/studySessionSyncService';
 import { normalizeSubjectLabel } from '../../utils/subjectLabels';
 import { buildAvatarUrl } from '../../utils/avatarUtils';
 import { nowMs, splitSecondsIntoHourBuckets } from '../../utils/timeUtils';
@@ -39,6 +40,13 @@ const RING_C = 2 * Math.PI * RING_R;
  * Timestamps (`Date.now`) are read only inside effects/handlers, never in
  * the render body — `displayElapsedSec` is the one piece of render state,
  * advanced by the ticking effect.
+ *
+ * Cross-device coordination (see studySessionSyncService.js) is a separate,
+ * deliberately cheap signal on top of this: one small doc is written only
+ * on start/pause/resume/stop, and read only right before Start and when the
+ * tab returns to the foreground — never via onSnapshot or polling. It warns
+ * a student before double-running the timer on two devices, and stops this
+ * device's session if another device takes it over while this tab was away.
  */
 const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSubjectColor, onAddSubject, onRemoveSubject, onFlushed }) => {
   const sessionKey = `${SESSION_KEY_PREFIX}${uid}`;
@@ -66,6 +74,16 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   const metaRef = useRef(null);
   const flushingRef = useRef(false);
   const myTotalSecRef = useRef(null); // last known all-time total; avoids a re-read on every flush
+  const deviceIdRef = useRef(getDeviceId());
+  const lastLocalTransitionMsRef = useRef(0); // when THIS device last published a transition
+
+  // Best-effort cross-device signal — see studySessionSyncService for the
+  // traffic model (event-write only, point-read only at Start / foreground
+  // return, no listener).
+  const publishTransition = (nextPhase, nextSubject) => {
+    lastLocalTransitionMsRef.current = nowMs();
+    publishSessionTransition({ uid, phase: nextPhase, subject: nextSubject, deviceId: deviceIdRef.current });
+  };
 
   const persistLocal = (nextSubject, nextPhase) => {
     try {
@@ -185,11 +203,20 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, subject]);
 
-  const handleStart = () => {
+  const handleStart = async () => {
+    const remote = await fetchRemoteSessionState(uid);
+    if (remote?.phase === 'running' && remote.deviceId && remote.deviceId !== deviceIdRef.current) {
+      const proceed = window.confirm(
+        `다른 기기에서 "${normalizeSubjectLabel(remote.subject || subject)}" 세션이 진행 중입니다.\n` +
+        '여기서도 시작하면 두 기기에서 동시에 기록될 수 있어요. 계속할까요?',
+      );
+      if (!proceed) return;
+    }
     runningSinceRef.current = nowMs();
     setPhase('running');
     persistLocal(subject, 'running');
     setFocusMode(true);
+    publishTransition('running', subject);
   };
 
   const handlePause = () => {
@@ -198,6 +225,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     setPhase('paused');
     setDisplayElapsedSec(bankedSecRef.current);
     persistLocal(subject, 'paused');
+    publishTransition('paused', subject);
   };
 
   // Auto-pause when the tab goes to the background — otherwise elapsed
@@ -206,13 +234,29 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   // the next time the tab is foregrounded. Requires a manual Resume so
   // idle time never sneaks back in silently.
   useEffect(() => {
-    const handleVisibility = () => {
-      if (document.hidden && phase === 'running') handlePause();
+    const handleVisibility = async () => {
+      if (document.hidden) {
+        if (phase === 'running') handlePause();
+        return;
+      }
+      // Returning to foreground — one point-read to check whether another
+      // device took over this session while we were away (see
+      // studySessionSyncService: no listener, checked only at this event).
+      if (phase !== 'running' && phase !== 'paused') return;
+      const remote = await fetchRemoteSessionState(uid);
+      if (
+        remote?.deviceId && remote.deviceId !== deviceIdRef.current
+        && Number(remote.clientUpdatedMs) > lastLocalTransitionMsRef.current
+      ) {
+        await flushDelta();
+        resetSession();
+        window.alert('다른 기기에서 이 세션을 이어받아 여기서는 종료 처리되었습니다.');
+      }
     };
     document.addEventListener('visibilitychange', handleVisibility);
     return () => document.removeEventListener('visibilitychange', handleVisibility);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase, subject]);
+  }, [phase, subject, uid]);
 
   // Keep the screen awake while running, so the OS doesn't auto-sleep the
   // display mid-session (the auto-pause above already handles the tab
@@ -236,6 +280,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
   async function handleStop() {
     await flushDelta();
     resetSession();
+    publishTransition('stopped', subject);
   }
 
   async function handleSubjectChange(next) {
@@ -248,6 +293,9 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
       runningSinceRef.current = nowMs();
       setPhase('running');
       persistLocal(next, 'running');
+      publishTransition('running', next);
+    } else {
+      publishTransition('stopped', next);
     }
   }
 

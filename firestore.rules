@@ -197,6 +197,13 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // Cross-device "is a study session running elsewhere?" signal — a
+      // single doc written only on start/pause/resume/stop, read only at
+      // Start and tab-foreground-return (see studySessionSyncService.js).
+      match /study_session/{docId} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /hsc_results/{resultId} {
         allow read: if isAdmin()
           || (isSignedIn()
