@@ -214,6 +214,25 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase, subject]);
 
+  // Keep the screen awake while running, so the OS doesn't auto-sleep the
+  // display mid-session (the auto-pause above already handles the tab
+  // actually going to the background — this just stops that from happening
+  // due to idle-screen-off while the student is genuinely still on the page).
+  const wakeLockRef = useRef(null);
+  useEffect(() => {
+    if (phase !== 'running' || !('wakeLock' in navigator)) return undefined;
+    let cancelled = false;
+    navigator.wakeLock.request('screen').then((lock) => {
+      if (cancelled) { lock.release().catch(() => {}); return; }
+      wakeLockRef.current = lock;
+    }).catch(() => {});
+    return () => {
+      cancelled = true;
+      wakeLockRef.current?.release?.().catch(() => {});
+      wakeLockRef.current = null;
+    };
+  }, [phase]);
+
   async function handleStop() {
     await flushDelta();
     resetSession();
@@ -422,8 +441,8 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
         <motion.div
           role="button"
           tabIndex={0}
-          aria-label="Exit full-screen timer"
-          onClick={() => setFocusMode(false)}
+          aria-label="Tap to end study session"
+          onClick={() => { handleStop(); setFocusMode(false); }}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -441,7 +460,7 @@ const SubjectStopwatch = ({ uid, profile, subjects, subjectColors = {}, onSetSub
             {normalizeSubjectLabel(subject)}{phase === 'paused' ? ' · Paused' : ''}
           </span>
           <span style={{ fontSize: '0.7rem', fontWeight: 600, color: 'rgba(255,255,255,0.35)', marginTop: 28 }}>
-            Tap anywhere to exit
+            Tap anywhere to end session
           </span>
         </motion.div>
       )}
