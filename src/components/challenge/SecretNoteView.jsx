@@ -50,9 +50,12 @@ import {
   pruneUngradable,
   canTwin,
   slimQuestion,
+  getRawNote,
+  replaceNote,
 } from '../../utils/secretNote';
 import { syncSecretNoteBlocklist } from '../../utils/secretNoteBlocklist';
 import { tryAwardSecretNoteClearBonus } from '../../services/secretNoteBonusService';
+import { pullRemoteNoteIfNewer, pushLocalNote } from '../../services/secretNoteSyncService';
 
 // Build a preview-only queue straight from teacher-supplied questions — same
 // item shape as addMistakes() (secretNote.js) so rendering/grading paths
@@ -451,6 +454,47 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
       setTwinGraded(null);
     })();
     return () => { cancelled = true; };
+  }, [uid, kind]);
+
+  // Cross-device pull: one point-read on open (see secretNoteSyncService —
+  // no listener). Only replaces the local notebook when a different device
+  // published a newer copy since this device last synced.
+  useEffect(() => {
+    if (isPreview || !uid) return undefined;
+    let cancelled = false;
+    (async () => {
+      const remote = await pullRemoteNoteIfNewer(uid, kind);
+      if (cancelled || !remote) return;
+      replaceNote(kind, uid, remote.items);
+      const next = getDueNote(kind, uid);
+      setQueue(next);
+      setIdx(0);
+      setPhase(next.length === 0 ? 'empty' : 'solve');
+      setAnswer('');
+      setSelectedIdx(null);
+      setGraded(null);
+      setTwin(null);
+      setTwinPrep(null);
+      setTwinGraded(null);
+    })();
+    return () => { cancelled = true; };
+  }, [uid, kind]);
+
+  // Cross-device push: publish the full (small) notebook only at session
+  // boundaries — tab backgrounded or this view closing — never per answered
+  // question. An unchanged notebook since the last push is a no-op write.
+  useEffect(() => {
+    if (isPreview || !uid) return undefined;
+    const pushNow = () => { pushLocalNote(uid, kind, getRawNote(kind, uid)); };
+    const handleVisibility = () => { if (document.hidden) pushNow(); };
+    document.addEventListener('visibilitychange', handleVisibility);
+    window.addEventListener('beforeunload', pushNow);
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibility);
+      window.removeEventListener('beforeunload', pushNow);
+      pushNow();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [uid, kind]);
 
   const [answer, setAnswer] = useState('');

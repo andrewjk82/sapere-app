@@ -204,6 +204,14 @@ service cloud.firestore {
         allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
       }
 
+      // Secret Note cross-device sync — one doc per kind (daily/calc/
+      // exam_prep) holding the full notebook, written only at session
+      // boundaries and read only once on note-open (see
+      // secretNoteSyncService.js). Note content itself stays local-first.
+      match /secret_note/{kind} {
+        allow read, write: if isAdmin() || (isSignedIn() && request.auth.uid == userId);
+      }
+
       match /hsc_results/{resultId} {
         allow read: if isAdmin()
           || (isSignedIn()

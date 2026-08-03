@@ -48,6 +48,17 @@ function write(kind, uid, items) {
   }
 }
 
+// Cross-device sync (secretNoteSyncService.js) needs to both read the raw
+// item array (to push) and replace it wholesale (after pulling a newer
+// remote copy) — exposed here rather than duplicating the storage key/shape.
+export function getRawNote(kind, uid) {
+  return read(kind, uid);
+}
+
+export function replaceNote(kind, uid, items) {
+  write(kind, uid, Array.isArray(items) ? items : []);
+}
+
 // Keep only what's needed to re-render & re-grade a question.
 export function slimQuestion(q) {
   return {
