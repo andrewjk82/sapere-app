@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState, useRef } from 'react';
-import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera, Sparkles } from 'lucide-react';
+import { Bell, KeyRound, LogOut, Mail, ShieldCheck, User, Pencil, X, Check, Camera, Sparkles, QrCode } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useToast } from '../context/ToastContext';
 import { useProfile } from '../context/ProfileContext';
@@ -7,6 +7,7 @@ import { db, requestNotificationPermission } from '../firebase/config';
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
 import FilmingGuidelinesModal from './FilmingGuidelinesModal';
+import ShareAppQrModal from './ShareAppQrModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
 import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
@@ -46,6 +47,7 @@ const Settings = () => {
   const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '' });
   const [studySessionSaving, setStudySessionSaving] = useState(false);
   const [showFilmingGuidelinesPreview, setShowFilmingGuidelinesPreview] = useState(false);
+  const [qrModalOpen, setQrModalOpen] = useState(false);
   const fileInputRef = useRef(null);
 
   const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
@@ -480,6 +482,23 @@ const Settings = () => {
 
           <section className="app-panel page-card" style={{ marginTop: '24px' }}>
             <div className="page-card__header">
+              <h3>Share Secret Study</h3>
+              <span className="page-pill" style={{ background: '#f5f3ff', color: '#8b5cf6' }}>
+                <QrCode size={14} />
+                QR Code
+              </span>
+            </div>
+
+            <div className="settings-actions">
+              <button className="app-button app-button--secondary" onClick={() => setQrModalOpen(true)} style={{ width: '100%' }}>
+                <QrCode size={18} />
+                Show QR code
+              </button>
+            </div>
+          </section>
+
+          <section className="app-panel page-card" style={{ marginTop: '24px' }}>
+            <div className="page-card__header">
               <h3>Notifications</h3>
               <span className="page-pill" style={{ background: '#f5f3ff', color: '#6366f1' }}>
                 <Bell size={14} />
@@ -845,6 +864,8 @@ const Settings = () => {
           setAvatarOpen(false);
         }}
       />
+
+      <ShareAppQrModal open={qrModalOpen} onClose={() => setQrModalOpen(false)} />
     </div>
   );
 };
