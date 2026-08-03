@@ -90,7 +90,7 @@ async function checkHourlyCronHeartbeat(db, sydneyNow, todayStr) {
       ctaHref: 'https://console.cron-job.org/jobs',
     });
     await transporter.sendMail({
-      from: `"Sapere Aude" <${GMAIL_USER}>`,
+      from: `"Secret Study" <${GMAIL_USER}>`,
       to: ALERT_EMAIL,
       subject: `⚠️ 수업 알람 크론 핑거 중단 감지 — ${todayStr}`,
       html,
@@ -195,7 +195,7 @@ export default async function handler(req, res) {
         ctaHref: 'https://console.firebase.google.com/project/sapere-fe23e/usage',
       });
       await transporter.sendMail({
-        from: `"Sapere Aude" <${GMAIL_USER}>`,
+        from: `"Secret Study" <${GMAIL_USER}>`,
         to: ALERT_EMAIL,
         subject: `⚠️ Firestore 읽기 쿼터 고갈 — ${todayStr}`,
         html,

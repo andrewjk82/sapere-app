@@ -236,8 +236,8 @@ const Settings = () => {
     const result = await requestNotificationPermission(user.uid, { interactive: true });
     if (result.status !== 'granted') {
       const messages = {
-        'ios-home-screen-required': 'On iPhone, open Sapere from the Home Screen app, then enable Push Notifications here.',
-        'permission-denied': 'Notifications are blocked. Please allow Sapere in your browser or app notification settings.',
+        'ios-home-screen-required': 'On iPhone, open Secret Study from the Home Screen app, then enable Push Notifications here.',
+        'permission-denied': 'Notifications are blocked. Please allow Secret Study in your browser or app notification settings.',
         'firebase-messaging-unsupported': 'Push notifications are not supported in this browser.',
         'notifications-unavailable': 'Push notifications are not available on this device.',
         'missing-token': 'Notification permission was granted, but this device did not return a push token. Please try again from the installed app.'

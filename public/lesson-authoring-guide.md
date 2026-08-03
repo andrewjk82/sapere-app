@@ -1,7 +1,7 @@
 # 📘 Lesson Authoring Guide — Animated Step-by-step Lessons
 
 This guide is the single source of truth for turning a **textbook screenshot**
-into a **professional, animated, voiced step-by-step lesson** inside Sapere.
+into a **professional, animated, voiced step-by-step lesson** inside Secret Study.
 
 > **Workflow in one line:** screenshot → lesson spec (`registry.js`) → pre-generate
 > voice (script) → build & deploy → a "Learn step-by-step" button appears on that

@@ -241,9 +241,9 @@ export default async function handler(req, res) {
           try {
             const { subject, html } = examPrepD1StudentEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
             await transporter.sendMail({
-              from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+              from: `"Secret Study" <${process.env.GMAIL_USER}>`,
               to: studentEmail,
-              subject: `[Sapere] ${subject}`,
+              subject: `[Secret Study] ${subject}`,
               html,
             });
             logs.push(`[D-1] Student email sent to ${studentName} (${examLabel})`);
@@ -259,9 +259,9 @@ export default async function handler(req, res) {
         try {
           const { subject, html } = examPrepD1TeacherEmail({ studentName, examLabel, examDate: tomorrowStr, profile, examSummary });
           await transporter.sendMail({
-            from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+            from: `"Secret Study" <${process.env.GMAIL_USER}>`,
             to: adminEmail,
-            subject: `[Sapere] ${subject}`,
+            subject: `[Secret Study] ${subject}`,
             html,
           });
           logs.push(`[D-1] Teacher email sent for ${studentName} (${examLabel})`);
@@ -422,9 +422,9 @@ export default async function handler(req, res) {
             if (email) {
               try {
                 await transporter.sendMail({
-                  from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+                  from: `"Secret Study" <${process.env.GMAIL_USER}>`,
                   to: email,
-                  subject: `[Sapere] ${report.subject}`,
+                  subject: `[Secret Study] ${report.subject}`,
                   html: buildEmailShell(report.subject, report.bodyHtml),
                 });
               } catch (err) {
@@ -1094,9 +1094,9 @@ async function sendNotification(db, transporter, session, type, subject, body, f
   if (studentEmail) {
     try {
       await transporter.sendMail({
-        from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+        from: `"Secret Study" <${process.env.GMAIL_USER}>`,
         to: studentEmail,
-        subject: `[Sapere] ${subject}`,
+        subject: `[Secret Study] ${subject}`,
         html: fullHtml || buildEmailTemplate(subject, body)
       });
       emailSent = true;

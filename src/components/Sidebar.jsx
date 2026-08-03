@@ -88,10 +88,10 @@ const Sidebar = ({ activeTab, setActiveTab, isLocked, onShowLeaderboard, onShowN
         className="app-sidebar__brand"
       >
         <div className="app-sidebar__logo">
-          <img src="/logo.png?v=2" alt="Sapere Logo" />
+          <img src="/logo.png?v=4" alt="Secret Study Logo" />
         </div>
         <div>
-          <h1>Sapere Aude Academia</h1>
+          <h1>SECRET<br />STUDY</h1>
         </div>
       </motion.div>
 

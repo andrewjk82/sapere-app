@@ -260,8 +260,8 @@ const StudentList = ({ students, onAddStudent, onRefreshStudents, onSelectStuden
               studentId: student.id,
               email: student.email || '',
               subject: "Don't forget your daily challenge! 🔥",
-              text: `Hi ${student.name || 'there'},\n\nYou haven't done today's challenge yet. Log in to Sapere and keep your streak going!\n\nYour teacher`,
-              html: `<p>Hi <strong>${student.name || 'there'}</strong>,</p><p>You haven't done today's challenge yet. Log in to <strong>Sapere</strong> and keep your streak going! 🔥</p><p>Your teacher</p>`,
+              text: `Hi ${student.name || 'there'},\n\nYou haven't done today's challenge yet. Log in to Secret Study and keep your streak going!\n\nYour teacher`,
+              html: `<p>Hi <strong>${student.name || 'there'}</strong>,</p><p>You haven't done today's challenge yet. Log in to <strong>Secret Study</strong> and keep your streak going! 🔥</p><p>Your teacher</p>`,
               metadata: { type: 'inactivity_reminder' },
             }),
           });

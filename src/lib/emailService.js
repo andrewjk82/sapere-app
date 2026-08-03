@@ -30,7 +30,7 @@ function buildEmailTemplate(subject, body) {
             <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="max-width:720px; background:#ffffff; border-radius:26px; overflow:hidden; border:1px solid #e8e2ff; box-shadow:0 18px 45px rgba(99,102,241,0.12);">
               <tr>
                 <td align="center" bgcolor="#ede9fe" style="background:#ede9fe; padding:34px 28px; border-bottom:1px solid #ddd6fe;">
-                  <div style="font-size:30px; line-height:1.15; font-weight:900; color:#312e81; letter-spacing:0;">Sapereaude Academia</div>
+                  <div style="font-size:30px; line-height:1.15; font-weight:900; color:#312e81; letter-spacing:0;">Secret Study</div>
                 </td>
               </tr>
               <tr>
@@ -45,7 +45,7 @@ function buildEmailTemplate(subject, body) {
                 </td>
               </tr>
             </table>
-            <p style="margin:24px 0 0; color:#64748b; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Sapereaude Academia. All rights reserved.</p>
+            <p style="margin:24px 0 0; color:#64748b; font-size:14px; line-height:1.5; font-weight:600;">© 2026 Secret Study. All rights reserved.</p>
           </td>
         </tr>
       </table>
@@ -78,7 +78,7 @@ export const EmailService = {
         });
 
         await transporter.sendMail({
-          from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
+          from: `"Secret Study" <${GMAIL_USER}>`,
           to,
           subject,
           html: htmlContent,

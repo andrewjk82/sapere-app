@@ -25,7 +25,7 @@ self.addEventListener('activate', (event) => {
 
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
-  const notificationTitle = payload.notification?.title || payload.data?.title || 'Sapereaude Academia';
+  const notificationTitle = payload.notification?.title || payload.data?.title || 'Secret Study';
   const notificationOptions = {
     body: payload.notification?.body || payload.data?.body || 'You have a new notification.',
     icon: '/logo.png',

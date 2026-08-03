@@ -414,7 +414,7 @@ window.addEventListener('load', () => {
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sapere Aude Academia — Answer Booklet</title>
+<title>Secret Study — Answer Booklet</title>
 ${mathjaxScript}
 <style>${BASE_CSS}
 .ans-cover { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; min-height:100vh; padding:60px 80px; page-break-after:always; border-top:8px solid #4B3F8A; }
@@ -431,7 +431,7 @@ ${printScript}
 ${closeButton}
 <div class="ans-cover">
   <div class="ans-badge">ANSWERS &amp; SOLUTIONS</div>
-  <div class="ans-school">Sapere Aude Academia</div>
+  <div class="ans-school">Secret Study</div>
   <div class="ans-title">Mathematics Advanced</div>
   <div class="ans-sub">Practice Paper — Answer Booklet</div>
   <div class="ans-meta">Generated: ${today}</div>
@@ -439,7 +439,7 @@ ${closeButton}
 </div>
 
 <div class="exam-page">
-  <div class="page-hdr">Sapere Aude Academia — Mathematics Advanced Practice Paper · Answer Booklet</div>
+  <div class="page-hdr">Secret Study — Mathematics Advanced Practice Paper · Answer Booklet</div>
   <div class="section-hdr">
     <h2>Section I — Multiple Choice Answers</h2>
     <hr class="hdr-rule">
@@ -474,7 +474,7 @@ ${closeButton}
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Sapere Aude Academia — Mathematics Advanced Practice Paper</title>
+<title>Secret Study — Mathematics Advanced Practice Paper</title>
 ${mathjaxScript}
 <style>${BASE_CSS}
 .cover { display:flex; flex-direction:column; align-items:center; justify-content:flex-start; min-height:100vh; padding:60px 80px; page-break-after:always; }
@@ -496,7 +496,7 @@ ${printScript}
 <body>
 ${closeButton}
 <div class="cover">
-  <div class="cover-school">Sapere Aude Academia</div>
+  <div class="cover-school">Secret Study</div>
   <div class="cover-exam">Practice Paper</div>
   <div class="cover-subject">Mathematics Advanced</div>
   <table class="cover-table">
@@ -532,7 +532,7 @@ ${closeButton}
 </div>
 
 <div class="exam-page">
-  <div class="page-hdr">Sapere Aude Academia — Mathematics Advanced Practice Paper</div>
+  <div class="page-hdr">Secret Study — Mathematics Advanced Practice Paper</div>
   <div class="section-hdr">
     <h2>Section I</h2>
     <p>10 marks &nbsp;·&nbsp; Attempt Questions 1 – 10 &nbsp;·&nbsp; Allow about 15 minutes</p>
@@ -549,7 +549,7 @@ ${closeButton}
 </div>
 
 <div class="exam-page section-ii-page">
-  <div class="page-hdr">Sapere Aude Academia — Mathematics Advanced Practice Paper</div>
+  <div class="page-hdr">Secret Study — Mathematics Advanced Practice Paper</div>
   <div class="section-hdr">
     <h2>Section II</h2>
     <p>90 marks &nbsp;·&nbsp; Attempt Questions 11 – ${totalQ} &nbsp;·&nbsp; Allow about 2 hours 45 minutes</p>

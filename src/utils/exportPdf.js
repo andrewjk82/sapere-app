@@ -281,8 +281,8 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
       <div class="cover-logo-text" style="display: flex; align-items: stretch; gap: 14px; white-space: nowrap;">
         <div style="width: 5px; background: #7c3aed; border-radius: 2px; flex-shrink: 0; min-height: 40px;"></div>
         <div style="line-height: 1.2;">
-          <span style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.1em; display: block;">Sapere Aude</span>
-          <span style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.25em; opacity: 0.55; display: block; margin-top: 3px;">Academia</span>
+          <span style="font-size: 1.25rem; font-weight: 900; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.1em; display: block;">Secret</span>
+          <span style="font-size: 0.68rem; font-weight: 700; text-transform: uppercase; color: #7c3aed; letter-spacing: 0.25em; opacity: 0.55; display: block; margin-top: 3px;">Study</span>
         </div>
       </div>
       <div class="cover-metadata">
@@ -357,7 +357,7 @@ const buildPrintHtml = (questions, { chapterTitle, topicTitle, year, course, rea
   ${questionsHtml}
 
   <div class="footer">
-    Sapere – Question Bank Export
+    Secret Study – Question Bank Export
   </div>
 
   <!-- Fallback page footer for printing page numbers -->

@@ -16,7 +16,7 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const SENDER_NAME = 'Andrew Kim | Sapere Aude';
+const SENDER_NAME = 'Andrew Kim | Secret Study';
 const SENDER_EMAIL = 'andrewjk82@gmail.com';
 
 /**
@@ -93,7 +93,7 @@ exports.sendNightBeforeReminders = functions.pubsub
         await transporter.sendMail({
           from: `"${SENDER_NAME}" <${SENDER_EMAIL}>`,
           to: userData.email,
-          subject: `[Sapere] Tomorrow's Lesson: ${session.startTime}`,
+          subject: `[Secret Study] Tomorrow's Lesson: ${session.startTime}`,
           html: `<p>Hi ${userData.firstName}, you have a lesson tomorrow at ${session.startTime}.</p>`
         });
       }

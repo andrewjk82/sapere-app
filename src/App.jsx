@@ -1195,7 +1195,7 @@ function App() {
         description={`We've sent a verification email to ${user.email}. Please confirm it to access the platform.`}
         sideLabel="Secure onboarding"
         sideTitle="A polished start for every family."
-        sideDescription="Your account stays protected while keeping the setup flow calm, clean, and aligned with the Sapere look."
+        sideDescription="Your account stays protected while keeping the setup flow calm, clean, and aligned with the Secret Study look."
         sideStats={[
           { value: 'Secure', label: 'email confirmation' },
           { value: '1 min', label: 'to complete setup' },

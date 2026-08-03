@@ -176,7 +176,7 @@ const Signup = ({ onToggleMode }) => {
       // 5. Clear pending state
       sessionStorage.removeItem('pendingSignupStep');
 
-      setMessage('Welcome to Sapere! Your profile has been created.');
+      setMessage('Welcome to Secret Study! Your profile has been created.');
     } catch (err) {
       setError(err.message);
       console.error(err);
@@ -196,7 +196,7 @@ const Signup = ({ onToggleMode }) => {
       }
       sideLabel="Consistency is Key"
       sideTitle="Build a powerful academic routine, every day."
-      sideDescription="From real-time schedule tracking to personalized daily practice, Sapere turns consistency into academic excellence."
+      sideDescription="From real-time schedule tracking to personalized daily practice, Secret Study turns consistency into academic excellence."
       sideStats={[
         { value: 'Daily', label: 'problem sets' },
         { value: 'Sync', label: 'schedule updates' },

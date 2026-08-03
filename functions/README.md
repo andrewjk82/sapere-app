@@ -1,4 +1,4 @@
-# Sapere Aude Academia - Notifications Setup
+# Secret Study - Notifications Setup
 
 이 프로젝트의 자동 알림 기능을 활성화하려면 아래 설정을 완료해야 합니다.
 
@@ -8,7 +8,7 @@
 
 ### 1-1. 앱 비밀번호 발급
 1. Google 계정 설정 > 보안 > 2단계 인증 활성화
-2. '앱 비밀번호' 검색 후 생성 (이름: Sapere)
+2. '앱 비밀번호' 검색 후 생성 (이름: Secret Study)
 3. 16자리 코드 복사
 
 ### 1-2. 터미널에서 명령어 입력

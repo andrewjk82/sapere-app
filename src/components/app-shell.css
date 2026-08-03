@@ -85,8 +85,9 @@
 
 .app-sidebar__brand h1 {
   margin: 0;
+  font-family: 'Sora', sans-serif;
   font-size: 1.1rem;
-  font-weight: 800;
+  font-weight: 700;
   color: #24163f;
   line-height: 1.15;
 }

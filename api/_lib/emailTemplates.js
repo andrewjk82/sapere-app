@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Sapere Aude — transactional email templates
+   Secret Study — transactional email templates
    --------------------------------------------------------------------------
    Gmail / Outlook-safe: fully table-based, inline styles only, no flexbox.
    One shared shell + per-email body builders. Used by api/cron-unified.js.
@@ -18,7 +18,7 @@ export function emailShell(previewText, innerHtml) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light only">
   <meta name="supported-color-schemes" content="light">
-  <title>Sapere Aude</title>
+  <title>Secret Study</title>
 </head>
 <body style="margin:0;padding:0;background:#f3f1fb;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
   <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(previewText)}</div>
@@ -29,7 +29,7 @@ export function emailShell(previewText, innerHtml) {
         <tr><td style="padding:0 4px 16px;">
           <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
             <td style="width:34px;height:34px;background:#7c3aed;border-radius:9px;text-align:center;vertical-align:middle;color:#fff;font-weight:800;font-size:16px;">S</td>
-            <td style="padding-left:10px;font-weight:800;font-size:15px;color:#1e1b4b;">Sapere Aude Academia</td>
+            <td style="padding-left:10px;font-weight:800;font-size:15px;color:#1e1b4b;">Secret Study</td>
           </tr></table>
         </td></tr>
         <!-- Card -->
@@ -38,7 +38,7 @@ export function emailShell(previewText, innerHtml) {
         </td></tr>
         <!-- Footer -->
         <tr><td style="padding:22px 8px 0;text-align:center;color:#9890b5;font-size:12px;line-height:1.6;font-weight:500;">
-          Sent because you're enrolled at Sapere Aude Academia · North Sydney NSW<br>
+          Sent because you're enrolled at Secret Study · North Sydney NSW<br>
           <a href="${APP_URL}" style="color:#7c3aed;text-decoration:none;font-weight:700;">Open the app</a>
         </td></tr>
       </table>
@@ -267,7 +267,7 @@ export function challengeCompleteEmail({ studentName = 'A student', label = 'Dai
 /* ──────────────────────────────────────────────────────────────────────────
    Generic notification — any title + HTML body (schedule updates, messages…)
    ────────────────────────────────────────────────────────────────────────── */
-export function genericEmail({ title = 'Sapere Aude', body = '', ctaLabel = 'Open the app', ctaHref = APP_URL }) {
+export function genericEmail({ title = 'Secret Study', body = '', ctaLabel = 'Open the app', ctaHref = APP_URL }) {
   const inner = `
     <div style="background:linear-gradient(135deg,#7c3aed,#a78bfa);padding:28px 32px;">
       <div style="font-family:'Outfit',sans-serif;font-size:21px;font-weight:800;color:#fff;line-height:1.3;">${esc(title)}</div>

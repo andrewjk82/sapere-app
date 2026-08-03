@@ -56,9 +56,9 @@ export default async function handler(req, res) {
           auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_PASS },
         });
         await transporter.sendMail({
-          from: `"Sapere Aude Academia" <${process.env.GMAIL_USER}>`,
+          from: `"Secret Study" <${process.env.GMAIL_USER}>`,
           to: email,
-          subject: `[Sapere] ${subject}`,
+          subject: `[Secret Study] ${subject}`,
           html: buildEmailShell(subject, bodyHtml),
         });
         emailSent = true;

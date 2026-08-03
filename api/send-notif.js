@@ -211,7 +211,7 @@ export default async function handler(req, res) {
         emailHtml = buildEmailTemplate(subject, html || `<p style="margin:0; white-space:pre-wrap;">${escapeHtml(text || '')}</p>`);
       }
       await transporter.sendMail({
-        from: `"Sapere Aude Academia" <${GMAIL_USER}>`,
+        from: `"Secret Study" <${GMAIL_USER}>`,
         to: email,
         subject: emailSubject,
         html: emailHtml,
