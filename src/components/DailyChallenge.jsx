@@ -1723,7 +1723,13 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
             }, { merge: true }).catch(() => {});
           }
         }
-        updateAdminDailySummary({
+        // Awaited (with one retry) rather than fire-and-forget — a silently
+        // dropped write here leaves the teacher's dashboard showing "Not
+        // started" for a student who actually finished (2026-08-03 incident:
+        // daily_stats saved fine, but this summary write never landed and
+        // nothing surfaced the failure). Still non-fatal to finishQuiz itself
+        // if both attempts fail — the student's own stats are unaffected.
+        const adminSummaryPayload = {
           userId: user.uid,
           date: today,
           challengeType,
@@ -1732,7 +1738,17 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           xpEarned,
           studentProfile,
           user,
-        }).catch((err) => console.warn('admin daily summary update failed (non-critical):', err?.code || err));
+        };
+        try {
+          await updateAdminDailySummary(adminSummaryPayload);
+        } catch (err) {
+          console.warn('admin daily summary update failed, retrying once:', err?.code || err);
+          try {
+            await updateAdminDailySummary(adminSummaryPayload);
+          } catch (err2) {
+            console.warn('admin daily summary update failed after retry (non-critical):', err2?.code || err2);
+          }
+        }
 
         // Point-delete old YYYY-MM-DD stat docs (no full subcollection scan).
         const pruneCol = challengeType === 'calc' ? 'calc_stats' : 'daily_stats';
