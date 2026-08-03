@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Video } from 'lucide-react';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase/config';
+import FilmingGuidelinesModal from './FilmingGuidelinesModal';
 
 const START_MIN = 19 * 60 + 30; // 7:30 PM
 const END_MIN = 22 * 60 + 30;   // 10:30 PM
@@ -21,6 +22,7 @@ function sydneyTotalMinutes() {
 const OnlineStudySessionCard = () => {
   const [config, setConfig] = useState(null);
   const [nowMin, setNowMin] = useState(sydneyTotalMinutes);
+  const [showGuidelines, setShowGuidelines] = useState(false);
 
   useEffect(() => {
     const unsub = onSnapshot(doc(db, 'system_config', 'onlineStudySession'), (snap) => {
@@ -38,16 +40,16 @@ const OnlineStudySessionCard = () => {
   if (!inWindow || !config?.enabled || !config?.zoomLink) return null;
 
   return (
-    <a
-      href={config.zoomLink}
-      target="_blank"
-      rel="noopener noreferrer"
+    <>
+    <button
+      type="button"
+      onClick={() => setShowGuidelines(true)}
       style={{
         display: 'flex', alignItems: 'center', gap: '16px', width: '100%',
         margin: '0 0 24px', maxWidth: '100%',
         padding: '20px 24px', borderRadius: '28px',
         background: 'linear-gradient(135deg, #2563eb, #4338ca)',
-        color: '#fff', textDecoration: 'none', cursor: 'pointer',
+        color: '#fff', textDecoration: 'none', cursor: 'pointer', border: 'none', textAlign: 'left',
         boxShadow: '0 15px 35px rgba(37,99,235,0.25)',
         position: 'relative', overflow: 'hidden',
         transition: 'transform 0.15s, box-shadow 0.15s',
@@ -68,7 +70,17 @@ const OnlineStudySessionCard = () => {
           Tap to join the Zoom room · open until 10:30 PM
         </div>
       </div>
-    </a>
+    </button>
+
+    <FilmingGuidelinesModal
+      open={showGuidelines}
+      onCancel={() => setShowGuidelines(false)}
+      onProceed={() => {
+        setShowGuidelines(false);
+        window.open(config.zoomLink, '_blank', 'noopener,noreferrer');
+      }}
+    />
+    </>
   );
 };
 

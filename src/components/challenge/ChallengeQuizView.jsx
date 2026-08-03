@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Clock, Lightbulb, CheckCircle2, XCircle, Check, ArrowRight, PenLine } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
+import NumberLine from '../NumberLine';
+import { parseNumberLineFromText } from '../../utils/numberLineParser';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { 
   MATH_SYMBOLS, 
@@ -789,9 +791,14 @@ const ChallengeQuizView = ({
                         {String.fromCharCode(65 + i)}
                       </div>
                       <div style={{ flex: 1, minWidth: 0 }}>
-                        {(!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) && (
-                          <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />
-                        )}
+                        {(() => {
+                          const nlData = opt?.graphData?.numberLine || parseNumberLineFromText(optText);
+                          if (nlData) {
+                            // Only show the number line graph, no text
+                            return <NumberLine {...nlData} />;
+                          }
+                          return <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 500, fontSize: '0.98rem', color: '#1e1b4b' }} />;
+                        })()}
                         {!!optImage && (
                           <img
                             src={optImage}

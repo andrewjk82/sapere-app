@@ -91,6 +91,7 @@ import AuthLayout from './pages/AuthLayout';
 import LeaderboardModal from './components/LeaderboardModal';
 import FlameBuddy from './components/FlameBuddy';
 import SecretNoteClearModal from './components/SecretNoteClearModal';
+import SprintPayoutModal from './components/SprintPayoutModal';
 import ModeBonusPenaltyModal from './components/ModeBonusPenaltyModal';
 import { AlertCircle, ArrowRight, LogOut, Bell, Settings as SettingsIcon, Trophy } from 'lucide-react';
 import { db, auth, listenForForegroundNotifications, requestNotificationPermission } from './firebase/config';
@@ -111,6 +112,7 @@ import {
   SN_CLEAR_PREVIEW_EVENT,
   buildSecretNoteClearPreviewPayload,
 } from './services/secretNoteBonusService';
+import { checkPendingSprintPayout, markSprintPayoutSeen, SPRINT_PAYOUT_PREVIEW_EVENT } from './services/timesTableSprintService';
 import { applyTeacherApprovals as applyExamPrepApprovals, applyTeacherRejections as applyExamPrepRejections } from './services/examPrepService';
 import './components/app-shell.css';
 import './components/mobile-capsule.css';
@@ -385,6 +387,33 @@ function App() {
     window.addEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
     return () => window.removeEventListener(SN_CLEAR_PREVIEW_EVENT, onPreview);
   }, []);
+
+  // Times Table Sprint weekly payout — congratulate once per settlement.
+  // XP is already minted server-side (api/_lib/timesTableSprintSettlement.js);
+  // this only checks the student's own result doc once on login.
+  const [sprintPayout, setSprintPayout] = useState(null);
+  const [sprintPayoutPreview, setSprintPayoutPreview] = useState(false);
+  useEffect(() => {
+    if (!user?.uid || isAdmin) return;
+    checkPendingSprintPayout(user.uid).then((payout) => {
+      if (payout) setSprintPayout(payout);
+    }).catch(() => {});
+  }, [user?.uid, isAdmin]);
+  useEffect(() => {
+    const onPreview = (e) => {
+      setSprintPayout(e?.detail && Number(e.detail.xp) > 0 ? e.detail : { weekId: 'preview', xp: 100, rank: 1, bestTimeMs: 20499 });
+      setSprintPayoutPreview(true);
+    };
+    window.addEventListener(SPRINT_PAYOUT_PREVIEW_EVENT, onPreview);
+    return () => window.removeEventListener(SPRINT_PAYOUT_PREVIEW_EVENT, onPreview);
+  }, []);
+  const dismissSprintPayout = useCallback(() => {
+    if (user?.uid && sprintPayout?.weekId && !sprintPayoutPreview) {
+      markSprintPayoutSeen(user.uid, sprintPayout.weekId);
+    }
+    setSprintPayoutPreview(false);
+    setSprintPayout(null);
+  }, [user?.uid, sprintPayout?.weekId, sprintPayoutPreview]);
 
   // Teacher/admin: force-open medal celebration card (design QA only — no markMedalsSeen).
   useEffect(() => {
@@ -1434,6 +1463,23 @@ function App() {
           isPreview={Boolean(snClearDesignPreview)}
           forcePayload={snClearDesignPreview}
           onForceDismiss={() => setSnClearDesignPreview(null)}
+        />
+      )}
+
+      {/* Times Table Sprint weekly payout — congrats card, once per settlement.
+          Teachers/admins can force-open via Settings → Preview button. */}
+      {user?.uid && !examInProgress && sprintPayout && (
+        <SprintPayoutModal
+          open={Boolean(sprintPayout)}
+          payload={sprintPayout}
+          firstName={
+            (profile || sharedProfile)?.firstName
+            || (profile || sharedProfile)?.displayName?.split?.(' ')?.[0]
+            || (isAdmin ? 'Teacher' : '')
+          }
+          currentXP={Number((profile || sharedProfile)?.totalXP) || 0}
+          isPreview={sprintPayoutPreview}
+          onClose={dismissSprintPayout}
         />
       )}
 

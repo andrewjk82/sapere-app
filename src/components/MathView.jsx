@@ -1,8 +1,10 @@
 import React, { useLayoutEffect, useRef } from 'react';
 import MathGraph from './MathGraph';
-import GeometricDiagram from './GeometricDiagram';
-import SvgGraph from './SvgGraph';
+import NumberLine from './NumberLine';
 import GeometryFigure from './GeometryFigure';
+import GeometricDiagram from './GeometricDiagram';
+import { parseNumberLineFromText } from '../utils/numberLineParser';
+import SvgGraph from './SvgGraph';
 import { encodeSvgDataUrl } from '../utils/geometrySvg';
 import { toDisplayText } from '../utils/mathPreprocess';
 
@@ -116,6 +118,8 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
   const diagramSvgSrc = typeof diagramSvg === 'string' && diagramSvg.trim().startsWith('<svg')
     ? encodeSvgDataUrl(diagramSvg)
     : diagramSvg;
+
+  const activeNumberLine = graphData?.numberLine || parseNumberLineFromText(content);
 
   // The effect fully owns the math div's DOM: it injects the raw content AND
   // runs KaTeX. We deliberately do NOT use dangerouslySetInnerHTML here —
@@ -295,7 +299,8 @@ const MathView = ({ content, graphData: rawGraphData, style }) => {
             <GeometryFigure {...graphData.geometry} />
           ) : (
             <>
-              {graphData && !graphData.html && !graphData.diagram && !graphData.jsxGraph && <MathGraph {...graphData} />}
+              {graphData && (graphData.equations?.length > 0 || graphData.points?.length > 0) && !graphData.html && !graphData.diagram && !graphData.jsxGraph && !activeNumberLine && <MathGraph {...graphData} />}
+              {activeNumberLine && <NumberLine {...activeNumberLine} />}
               {graphData?.diagram && <GeometricDiagram {...graphData.diagram} />}
               {graphData?.jsxGraph && <SvgGraph data={graphData.jsxGraph} />}
               {graphData?.html && <div dangerouslySetInnerHTML={{ __html: graphData.html }} style={{ marginTop: '8px' }} />}

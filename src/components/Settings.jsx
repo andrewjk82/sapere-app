@@ -6,8 +6,10 @@ import { useProfile } from '../context/ProfileContext';
 import { db, requestNotificationPermission } from '../firebase/config';
 import { doc, setDoc, updateDoc, getDoc } from 'firebase/firestore';
 import AvatarPickerModal from './AvatarPickerModal';
+import FilmingGuidelinesModal from './FilmingGuidelinesModal';
 import { CURRENT_APP_VERSION } from '../constants/appVersion';
 import { requestSecretNoteClearModalPreview } from '../services/secretNoteBonusService';
+import { SPRINT_PAYOUT_PREVIEW_EVENT } from '../services/timesTableSprintService';
 
 const requestMedalModalPreview = (multi = false) => {
   const medals = multi
@@ -43,6 +45,7 @@ const Settings = () => {
   const [cloudVersion, setCloudVersion] = useState(null);
   const [studySession, setStudySession] = useState({ enabled: false, zoomLink: '' });
   const [studySessionSaving, setStudySessionSaving] = useState(false);
+  const [showFilmingGuidelinesPreview, setShowFilmingGuidelinesPreview] = useState(false);
   const fileInputRef = useRef(null);
 
   const displayName = useMemo(() => profile?.firstName ? `${profile.firstName} ${profile.lastName}` : (user?.displayName || user?.email?.split('@')[0] || 'Account'), [profile, user]);
@@ -682,6 +685,30 @@ const Settings = () => {
                     <Sparkles size={16} />
                     Preview multi-medal modal
                   </button>
+                  <button
+                    type="button"
+                    className="app-button app-button--secondary"
+                    onClick={() => window.dispatchEvent(new CustomEvent(SPRINT_PAYOUT_PREVIEW_EVENT, {
+                      detail: { weekId: 'preview', xp: 100, rank: 1, bestTimeMs: 20499 },
+                    }))}
+                    style={{
+                      width: '100%',
+                      display: 'inline-flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: 8,
+                      padding: '14px',
+                      borderRadius: 16,
+                      fontWeight: 800,
+                      border: '1px solid #fde68a',
+                      background: '#fffbeb',
+                      color: '#92400e',
+                      cursor: 'pointer',
+                    }}
+                  >
+                    <Sparkles size={16} />
+                    Preview Times Table Sprint payout modal
+                  </button>
                 </div>
               </div>
             </section>
@@ -765,11 +792,35 @@ const Settings = () => {
                 >
                   {studySessionSaving ? 'Saving...' : 'Save Study Session Settings'}
                 </button>
+                <button
+                  type="button"
+                  onClick={() => setShowFilmingGuidelinesPreview(true)}
+                  style={{
+                    width: '100%', marginTop: '10px', padding: '12px', borderRadius: '14px',
+                    border: '1px solid #fbbf24', background: '#fffbeb', color: '#92400e',
+                    fontWeight: 800, fontSize: '0.85rem', cursor: 'pointer',
+                  }}
+                >
+                  Preview Filming Guidelines modal (temp, testing only)
+                </button>
               </div>
             </section>
           )}
         </aside>
       </div>
+
+      <FilmingGuidelinesModal
+        open={showFilmingGuidelinesPreview}
+        onCancel={() => setShowFilmingGuidelinesPreview(false)}
+        onProceed={() => {
+          setShowFilmingGuidelinesPreview(false);
+          if (studySession.zoomLink?.trim()) {
+            window.open(studySession.zoomLink.trim(), '_blank', 'noopener,noreferrer');
+          } else {
+            showToast?.('No Zoom link saved yet — enter one below to test Proceed.', 'info');
+          }
+        }}
+      />
 
       <AvatarPickerModal
         open={avatarOpen}

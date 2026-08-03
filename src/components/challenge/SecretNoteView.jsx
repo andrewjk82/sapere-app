@@ -6,6 +6,8 @@ import {
 } from 'lucide-react';
 import MathView from '../MathView';
 import MathInput from '../MathInput';
+import NumberLine from '../NumberLine';
+import { parseNumberLineFromText } from '../../utils/numberLineParser';
 import ChallengeSketchBoard from './ChallengeSketchBoard';
 import { db } from '../../firebase/config';
 import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } from 'firebase/firestore';
@@ -15,7 +17,7 @@ import { collection, addDoc, serverTimestamp, doc, setDoc, increment, getDoc } f
 // (Previously +1 XP per correct note farmed 60–80+ XP and inflated the board.)
 const SECRET_NOTE_AWARDS_XP = false;
 const XP_PER_QUESTION = 0;
-import { getOptions, getOptionText } from '../../utils/challengeUtils';
+import { getOptions, getOptionText, getOptionImage } from '../../utils/challengeUtils';
 
 const SN_QUICK_INSERTS = [
   { label: '√',   latex: '\\sqrt{#?}',        title: 'Square root' },
@@ -894,7 +896,9 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
           <div className="sn__opts">
             {activePrep.options.map((opt, i) => {
               const optText = getOptionText(opt);
+              const optImage = getOptionImage(opt);
               const optGraphData = (opt && typeof opt === 'object') ? opt.graphData : null;
+              const hasImage = !!optImage;
               const isSel = selectedIdx === i;
               let status = 'default';
               if (isFeedback) {
@@ -912,7 +916,26 @@ const SecretNoteView = ({ kind, uid, user, studentProfile, studentName, onClose,
                   className={`sn__opt sn__opt--${status}${isSel && !isFeedback ? ' sn__opt--sel' : ''}`}
                 >
                   <span className="sn__opt-letter">{String.fromCharCode(65 + i)}</span>
-                  <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 700, flex: 1 }} />
+                  <div style={{ flex: 1, minWidth: 0, textAlign: 'left' }}>
+                    {(() => {
+                      const nlData = opt?.graphData?.numberLine || parseNumberLineFromText(getOptionText(opt));
+                      if (nlData) {
+                        // Only show the number line graph, no text
+                        return <NumberLine {...nlData} />;
+                      }
+                      return (!hasImage || (optText && optText !== String.fromCharCode(65 + i)) || optGraphData) ? (
+                        <MathView content={optText} graphData={optGraphData} style={{ fontWeight: 700 }} />
+                      ) : null;
+                    })()}
+                    {!!optImage && (
+                      <img
+                        src={optImage}
+                        alt={`Option ${String.fromCharCode(65 + i)}`}
+                        onClick={(e) => { e.stopPropagation(); setZoomImage?.(optImage); }}
+                        style={{ width: '100%', maxWidth: '320px', maxHeight: '220px', objectFit: 'contain', marginTop: optText && optText !== String.fromCharCode(65 + i) ? '8px' : 0, display: 'block', borderRadius: '12px', background: '#fff', border: '1px solid #f1f5f9', cursor: 'zoom-in' }}
+                      />
+                    )}
+                  </div>
                   {status === 'correct' && <CheckCircle2 size={20} style={{ color: '#16a34a' }} />}
                   {status === 'wrong' && <XCircle size={20} style={{ color: '#ef4444' }} />}
                 </button>

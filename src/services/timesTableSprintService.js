@@ -27,7 +27,7 @@ import { db } from '../firebase/config';
 import { localCache } from './localCacheService';
 import { trackRead, trackWrite } from './trafficTrackerService';
 import { buildAvatarUrl, buildDisplayName } from '../utils/avatarUtils';
-import { getSprintWeekId } from '../utils/sprintWeek';
+import { getSprintWeekId, getPreviousSprintWeekId } from '../utils/sprintWeek';
 
 export const RESULTS_COLLECTION = 'timestable_sprint_results';
 export const META_COLLECTION = 'timestable_sprint_meta';
@@ -271,6 +271,41 @@ export const fetchMySprintResult = async (weekId, userId) => {
     return null;
   }
 };
+
+// ── Weekly payout celebration (client checks once, server already paid) ────
+// XP itself is minted by api/_lib/timesTableSprintSettlement.js — this only
+// detects "was I just settled, and have I not seen the modal for that week
+// yet" so the dashboard can congratulate the student once per settlement.
+const payoutSeenKeyFor = (userId) => `ttsprint:payoutSeen:${userId}`;
+
+/**
+ * Point read of the student's own result doc for the week that most recently
+ * settled. Returns null if nothing to celebrate (not settled yet, didn't
+ * play, or already shown).
+ */
+export const checkPendingSprintPayout = async (userId) => {
+  if (!userId) return null;
+  const weekId = getPreviousSprintWeekId();
+  if (localCache.get(payoutSeenKeyFor(userId)) === weekId) return null;
+
+  const result = await fetchMySprintResult(weekId, userId);
+  if (!result || !Number.isFinite(Number(result.settledXp))) return null;
+
+  return {
+    weekId,
+    xp: Number(result.settledXp),
+    rank: Number.isFinite(Number(result.settledRank)) ? Number(result.settledRank) : null,
+    bestTimeMs: Number(result.bestTimeMs) || null,
+  };
+};
+
+export const markSprintPayoutSeen = (userId, weekId) => {
+  if (!userId || !weekId) return;
+  localCache.set(payoutSeenKeyFor(userId), weekId);
+};
+
+/** Teacher/admin design QA — open the payout celebration without a real settlement. */
+export const SPRINT_PAYOUT_PREVIEW_EVENT = 'sapere:sprint-payout-preview';
 
 // ── Submitting a run ───────────────────────────────────────────────────────
 
