@@ -886,11 +886,11 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
     const timeLimit = (overrideSeconds != null ? overrideSeconds : (questions[currentIdx]?.timeLimit || 30)) * 1000;
     const endTime = questionStartTime + timeLimit;
 
-    const timer = setInterval(() => {
+    const tick = () => {
       // Skip if already in feedback/result (question answered or timer already fired)
-      if (stepRef.current !== 'quiz') { clearInterval(timer); return; }
+      if (stepRef.current !== 'quiz') return;
       // Skip if MC already answered (both text + idx set)
-      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) { clearInterval(timer); return; }
+      if (selectedOptionRef.current !== null && selectedOptionIdxRef.current !== null) return;
       const now = Date.now();
       const remaining = Math.max(0, Math.ceil((endTime - now) / 1000));
 
@@ -905,10 +905,42 @@ const DailyChallenge = ({ onBack, setIsLocked, onOpenFeedback }) => {
           handleAnswerRef.current?.(typed, null);
         }
       }
-    }, 100); // Check more frequently for smooth UI
+    };
 
-    return () => clearInterval(timer);
+    const timer = setInterval(tick, 100); // Check more frequently for smooth UI
+
+    // Mobile browsers throttle/suspend setInterval while the screen is off
+    // or the tab is backgrounded — the interval can go silent for the whole
+    // duration and only catch up on its next natural 100ms tick once the
+    // screen is back on, which students perceive as "the timer stopped".
+    // Force an immediate resync from wall-clock time the moment the page
+    // becomes visible again, instead of waiting for that next tick.
+    const handleVisibility = () => {
+      if (!document.hidden) tick();
+    };
+    document.addEventListener('visibilitychange', handleVisibility);
+
+    return () => {
+      clearInterval(timer);
+      document.removeEventListener('visibilitychange', handleVisibility);
+    };
   }, [step, questionStartTime, currentIdx]);
+
+  // Keep the screen awake during a timed question so the OS doesn't
+  // auto-sleep the display mid-countdown in the first place.
+  useEffect(() => {
+    if (step !== 'quiz' || !('wakeLock' in navigator)) return undefined;
+    let cancelled = false;
+    let lock = null;
+    navigator.wakeLock.request('screen').then((l) => {
+      if (cancelled) { l.release().catch(() => {}); return; }
+      lock = l;
+    }).catch(() => {});
+    return () => {
+      cancelled = true;
+      lock?.release?.().catch(() => {});
+    };
+  }, [step]);
 
   // Anti-cheat (focus-loss warnings, beforeunload, termination) is handled by useAntiCheat hook above.
 
