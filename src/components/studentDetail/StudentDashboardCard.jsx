@@ -104,7 +104,16 @@ export default function StudentDashboardCard({
   const assignedCourses = Array.isArray(student?.assignedCourse)
     ? student.assignedCourse
     : [student?.assignedCourse || "Advanced"];
-  const isExtension = assignedCourses.some(c => c === "Extension 1" || c === "Extension 2");
+  const isExtensionCourse = assignedCourses.some(c => c === "Extension 1" || c === "Extension 2");
+  // Term Results & Reports mirrors the student's real school report card, not
+  // their (possibly accelerated) curriculum track — a Year 10 student working
+  // through Year 11 Extension content in-app still only gets a single Year 10
+  // report from their school. Gate the Advanced/Extension split on the
+  // student's actual year (`year`/`level`, edited in StudentProfileModal),
+  // falling back to the course-only check when that real year isn't set.
+  const realYear = student?.year || student?.level || "";
+  const isSeniorYear = realYear === "Year 11" || realYear === "Year 12";
+  const isExtension = realYear ? (isSeniorYear && isExtensionCourse) : isExtensionCourse;
   return (
     <div
       className="stats-grid-mobile"
