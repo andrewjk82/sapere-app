@@ -702,7 +702,22 @@ function App() {
     });
   }, [showToast, user?.uid]);
   const hasPendingSignup = Boolean(sessionStorage.getItem('pendingSignupStep'));
-  const [activeTab, setActiveTab] = useState('Dashboard');
+  // Persisted across reloads (same tab/session only) so a refresh keeps the
+  // student on the section they were viewing instead of always bouncing to
+  // Dashboard — there is no URL router, so this is the only place "current
+  // page" lives.
+  const [activeTab, setActiveTab] = useState(() => {
+    try {
+      return sessionStorage.getItem('sapere:activeTab') || 'Dashboard';
+    } catch {
+      return 'Dashboard';
+    }
+  });
+  useEffect(() => {
+    try {
+      sessionStorage.setItem('sapere:activeTab', activeTab);
+    } catch { /* ignore */ }
+  }, [activeTab]);
   const [reportsInitialTab, setReportsInitialTab] = useState('reports');
   const [showJourneyMap, setShowJourneyMap] = useState(false);
   const [selectedStudentId, setSelectedStudentId] = useState(null);
