@@ -163,130 +163,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            8,
-            0,
-            0
-          ],
-          "C": [
-            8,
-            0,
-            5
-          ],
-          "D": [
-            0,
-            0,
-            5
-          ],
-          "E": [
-            0,
-            10,
-            0
-          ],
-          "F": [
-            8,
-            10,
-            0
-          ],
-          "G": [
-            8,
-            10,
-            5
-          ],
-          "H": [
-            0,
-            10,
-            5
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "8 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "5 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "10 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"189.2,132 300.1,68 230.8,28 119.9,92\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"189.2,292 300.1,228 300.1,68 189.2,132\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"300.1,228 230.8,188 230.8,28 300.1,68\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"189.2\" y1=\"292\" x2=\"300.1\" y2=\"228\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"300.1\" y1=\"228\" x2=\"230.8\" y2=\"188\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230.8\" y1=\"188\" x2=\"119.9\" y2=\"252\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"119.9\" y1=\"252\" x2=\"189.2\" y2=\"292\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"189.2\" y1=\"132\" x2=\"300.1\" y2=\"68\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"300.1\" y1=\"68\" x2=\"230.8\" y2=\"28\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230.8\" y1=\"28\" x2=\"119.9\" y2=\"92\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"119.9\" y1=\"92\" x2=\"189.2\" y2=\"132\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"189.2\" y1=\"292\" x2=\"189.2\" y2=\"132\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"300.1\" y1=\"228\" x2=\"300.1\" y2=\"68\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230.8\" y1=\"188\" x2=\"230.8\" y2=\"28\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"119.9\" y1=\"252\" x2=\"119.9\" y2=\"92\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"244.6\" y=\"282\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">8 cm</text><text x=\"316.1\" y=\"206\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">5 cm</text><text x=\"316.1\" y=\"164\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">10 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -454,130 +331,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            15,
-            0,
-            0
-          ],
-          "C": [
-            15,
-            0,
-            10
-          ],
-          "D": [
-            0,
-            0,
-            10
-          ],
-          "E": [
-            0,
-            5,
-            0
-          ],
-          "F": [
-            15,
-            5,
-            0
-          ],
-          "G": [
-            15,
-            5,
-            10
-          ],
-          "H": [
-            0,
-            5,
-            10
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "15 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "10 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "5 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"186.2,201.3 329.1,118.8 233.8,63.8 90.9,146.3\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"186.2,256.3 329.1,173.8 329.1,118.8 186.2,201.3\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"329.1,173.8 233.8,118.8 233.8,63.8 329.1,118.8\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"186.2\" y1=\"256.3\" x2=\"329.1\" y2=\"173.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"329.1\" y1=\"173.8\" x2=\"233.8\" y2=\"118.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"233.8\" y1=\"118.8\" x2=\"90.9\" y2=\"201.3\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"90.9\" y1=\"201.3\" x2=\"186.2\" y2=\"256.3\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"186.2\" y1=\"201.3\" x2=\"329.1\" y2=\"118.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"329.1\" y1=\"118.8\" x2=\"233.8\" y2=\"63.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"233.8\" y1=\"63.8\" x2=\"90.9\" y2=\"146.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"90.9\" y1=\"146.3\" x2=\"186.2\" y2=\"201.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"186.2\" y1=\"256.3\" x2=\"186.2\" y2=\"201.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"329.1\" y1=\"173.8\" x2=\"329.1\" y2=\"118.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"233.8\" y1=\"118.8\" x2=\"233.8\" y2=\"63.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"90.9\" y1=\"201.3\" x2=\"90.9\" y2=\"146.3\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"257.6\" y=\"237\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">15 cm</text><text x=\"345.1\" y=\"144.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">10 cm</text><text x=\"345.1\" y=\"162.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">5 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -622,7 +376,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 100,224 A 70 26.6 0 0 0 240,224\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100\" y1=\"56\" x2=\"100\" y2=\"224\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"240\" y1=\"56\" x2=\"240\" y2=\"224\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 100,224 A 70 26.6 0 0 1 240,224\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"70\" ry=\"26.6\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"56\" x2=\"240\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"205\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><line x1=\"274\" y1=\"56\" x2=\"274\" y2=\"224\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"56\" x2=\"282\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"224\" x2=\"282\" y2=\"224\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"308\" y=\"144\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -667,7 +421,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 460 260\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 157.2,85 A 80 80 0 0 1 317.2,85\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"157.2\" y1=\"85\" x2=\"317.2\" y2=\"85\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"10\" y1=\"170\" x2=\"157.2\" y2=\"85\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><path d=\"M 10,170 A 80 80 0 0 1 170,170 L 317.2,85 A 80 80 0 0 0 157.2,85 Z\" fill=\"#e0e7ff\" opacity=\"0.4\" stroke=\"none\"/><line x1=\"90\" y1=\"90\" x2=\"237.2\" y2=\"5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"170\" x2=\"317.2\" y2=\"85\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 10,170 A 80 80 0 0 1 170,170 Z\" fill=\"#dbeafe\" opacity=\"0.6\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"10\" y1=\"170\" x2=\"170\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"90\" y1=\"170\" x2=\"170\" y2=\"170\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"90\" cy=\"170\" r=\"3\" fill=\"#1e293b\"/><text x=\"130\" y=\"162\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">4 cm</text><text x=\"163.6\" y=\"35.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -812,107 +566,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            12,
-            0,
-            0
-          ],
-          "C": [
-            0,
-            5,
-            0
-          ],
-          "D": [
-            0,
-            0,
-            20
-          ],
-          "E": [
-            12,
-            0,
-            20
-          ],
-          "F": [
-            0,
-            5,
-            20
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "D",
-            "to": "E"
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "D",
-            "dashed": true
-          },
-          {
-            "from": "A",
-            "to": "D",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "E"
-          },
-          {
-            "from": "C",
-            "to": "F"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "C"
-            ],
-            "text": "5"
-          },
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "12"
-          },
-          {
-            "between": [
-              "B",
-              "E"
-            ],
-            "text": "20"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"92.7,161.5 217.4,173.5 347.3,98.5 222.6,86.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"217.4,233.5 92.7,161.5 217.4,173.5\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"347.3\" y1=\"158.5\" x2=\"222.6\" y2=\"86.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"222.6\" y1=\"86.5\" x2=\"347.3\" y2=\"98.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"347.3\" y1=\"98.5\" x2=\"347.3\" y2=\"158.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"217.4\" y1=\"233.5\" x2=\"347.3\" y2=\"158.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"92.7\" y1=\"161.5\" x2=\"222.6\" y2=\"86.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"217.4\" y1=\"173.5\" x2=\"347.3\" y2=\"98.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"217.4\" y1=\"233.5\" x2=\"92.7\" y2=\"161.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"92.7\" y1=\"161.5\" x2=\"217.4\" y2=\"173.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"217.4\" y1=\"173.5\" x2=\"217.4\" y2=\"233.5\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"229.4\" y=\"237.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"80.7\" y=\"165.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"229.4\" y=\"177.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"155\" y=\"255.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"191.4\" y=\"203.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><text x=\"157.6\" y=\"110\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">20 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -957,7 +611,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"103.1,204.5 155,130.5 285,55.5 233,129.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"207,264.5 103.1,204.5 155,130.5\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"336.9\" y1=\"189.5\" x2=\"233\" y2=\"129.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"233\" y1=\"129.5\" x2=\"285\" y2=\"55.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"285\" y1=\"55.5\" x2=\"336.9\" y2=\"189.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"207\" y1=\"264.5\" x2=\"336.9\" y2=\"189.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"103.1\" y1=\"204.5\" x2=\"233\" y2=\"129.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"155\" y1=\"130.5\" x2=\"285\" y2=\"55.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"207\" y1=\"264.5\" x2=\"103.1\" y2=\"204.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"103.1\" y1=\"204.5\" x2=\"155\" y2=\"130.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"155\" y1=\"130.5\" x2=\"207\" y2=\"264.5\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"219\" y=\"268.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"91.1\" y=\"208.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"167\" y=\"134.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"155\" y=\"286.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">8 cm</text><text x=\"168\" y=\"153\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><line x1=\"155\" y1=\"234.5\" x2=\"155\" y2=\"130.5\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><text x=\"137\" y=\"182.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">h</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1002,7 +656,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"103.1,204.5 155,130.5 285,55.5 233,129.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"207,264.5 103.1,204.5 155,130.5\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"336.9\" y1=\"189.5\" x2=\"233\" y2=\"129.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"233\" y1=\"129.5\" x2=\"285\" y2=\"55.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"285\" y1=\"55.5\" x2=\"336.9\" y2=\"189.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"207\" y1=\"264.5\" x2=\"336.9\" y2=\"189.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"103.1\" y1=\"204.5\" x2=\"233\" y2=\"129.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"155\" y1=\"130.5\" x2=\"285\" y2=\"55.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"207\" y1=\"264.5\" x2=\"103.1\" y2=\"204.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"103.1\" y1=\"204.5\" x2=\"155\" y2=\"130.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"155\" y1=\"130.5\" x2=\"207\" y2=\"264.5\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"219\" y=\"268.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"91.1\" y=\"208.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"167\" y=\"134.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"155\" y=\"286.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">8 cm</text><text x=\"168\" y=\"153\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1047,7 +701,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210,160 319.1,97 210,34 100.9,97\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"210,286 319.1,223 319.1,97 210,160\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"319.1,223 210,160 210,34 319.1,97\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"210\" y1=\"286\" x2=\"319.1\" y2=\"223\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"100.9\" y2=\"223\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100.9\" y1=\"223\" x2=\"210\" y2=\"286\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210\" y1=\"160\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"97\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"34\" x2=\"100.9\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"97\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"286\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"223\" x2=\"100.9\" y2=\"97\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"264.6\" y=\"276.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">x</text><text x=\"335.1\" y=\"189.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x</text><text x=\"335.1\" y=\"176\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1092,7 +746,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 100,210 A 70 26.6 0 0 0 240,210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100\" y1=\"56\" x2=\"100\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"240\" y1=\"56\" x2=\"240\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 100,210 A 70 26.6 0 0 1 240,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"70\" ry=\"26.6\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"56\" x2=\"240\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"205\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><line x1=\"274\" y1=\"56\" x2=\"274\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"56\" x2=\"282\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"210\" x2=\"282\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"308\" y=\"137\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">h</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1137,7 +791,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 60,210 A 110 41.8 0 0 0 280,210\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"60\" y1=\"56\" x2=\"60\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"280\" y1=\"56\" x2=\"280\" y2=\"210\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 60,210 A 110 41.8 0 0 1 280,210\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"110\" ry=\"41.8\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"59\" rx=\"103.4\" ry=\"39.3\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"56\" x2=\"280\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"225\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><line x1=\"314\" y1=\"56\" x2=\"314\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"306\" y1=\"56\" x2=\"322\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"306\" y1=\"210\" x2=\"322\" y2=\"210\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"348\" y=\"137\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">30 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1182,7 +836,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 50,176 A 120 45.6 0 0 0 290,176\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"50\" y1=\"56\" x2=\"50\" y2=\"176\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"290\" y1=\"56\" x2=\"290\" y2=\"176\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 50,176 A 120 45.6 0 0 1 290,176\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"120\" ry=\"45.6\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"59\" rx=\"112.8\" ry=\"42.9\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"56\" x2=\"290\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"230\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><line x1=\"324\" y1=\"56\" x2=\"324\" y2=\"176\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"316\" y1=\"56\" x2=\"332\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"316\" y1=\"176\" x2=\"332\" y2=\"176\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"358\" y=\"120\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">h</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1350,130 +1004,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            12,
-            0,
-            0
-          ],
-          "C": [
-            12,
-            0,
-            8
-          ],
-          "D": [
-            0,
-            0,
-            8
-          ],
-          "E": [
-            0,
-            5,
-            0
-          ],
-          "F": [
-            12,
-            5,
-            0
-          ],
-          "G": [
-            12,
-            5,
-            8
-          ],
-          "H": [
-            0,
-            5,
-            8
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "8 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "5 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"187.5,192.5 322.6,114.5 232.5,62.5 97.4,140.5\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"187.5,257.5 322.6,179.5 322.6,114.5 187.5,192.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"322.6,179.5 232.5,127.5 232.5,62.5 322.6,114.5\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"187.5\" y1=\"257.5\" x2=\"322.6\" y2=\"179.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"322.6\" y1=\"179.5\" x2=\"232.5\" y2=\"127.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"232.5\" y1=\"127.5\" x2=\"97.4\" y2=\"205.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"97.4\" y1=\"205.5\" x2=\"187.5\" y2=\"257.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"187.5\" y1=\"192.5\" x2=\"322.6\" y2=\"114.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"322.6\" y1=\"114.5\" x2=\"232.5\" y2=\"62.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"232.5\" y1=\"62.5\" x2=\"97.4\" y2=\"140.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"140.5\" x2=\"187.5\" y2=\"192.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"187.5\" y1=\"257.5\" x2=\"187.5\" y2=\"192.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"322.6\" y1=\"179.5\" x2=\"322.6\" y2=\"114.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"232.5\" y1=\"127.5\" x2=\"232.5\" y2=\"62.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"97.4\" y1=\"205.5\" x2=\"97.4\" y2=\"140.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"255\" y=\"240.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"338.6\" y=\"151.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">8 cm</text><text x=\"338.6\" y=\"163\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">5 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1485,7 +1016,7 @@ export const Y10_CH6_QUESTIONS = [
     "type": "multiple_choice",
     "difficulty": "easy",
     "timeLimit": 30,
-    "question": "Calculate the exact volume of the cylinder (in terms of \\(\\pi\\)).",
+    "question": "A cylinder has a radius of 5 cm and a height of 12 cm. Calculate the exact volume of the cylinder (in terms of \\(\\pi\\)).",
     "opts": [
       "\\(-300\\pi\\)",
       "\\(300\\pi\\)",
@@ -1494,31 +1025,31 @@ export const Y10_CH6_QUESTIONS = [
     ],
     "a": 1,
     "answer": "1",
-    "hint": "",
+    "hint": "Use the formula \\(V = \\pi r^2 h\\) with \\(r = 5\\) cm and \\(h = 12\\) cm.",
     "solution": "The correct answer is \\(300\\pi\\).",
     "solutionSteps": [
       {
-        "explanation": "Given: read the full stem carefully and list the known values, the unknown, and any units or constraints. Strategy for Review of prisms and cylinders: choose the matching formula or geometric fact first so every later calculation has a clear purpose.",
-        "workingOut": "\\(V = \\pi r^2 h\\)",
+        "explanation": "Identify the given values and the formula for the volume of a cylinder.",
+        "workingOut": "\\(r = 5 \\text{ cm},\\quad h = 12 \\text{ cm}\\\\V = \\pi r^2 h\\)",
         "graphData": null
       },
       {
-        "explanation": "What rule or formula applies? Name it and write it in symbols. Why apply it now? It turns the worded request into an equation you can solve. A common mistake is using a related but wrong formula (for example sine rule instead of cosine rule, or simple interest instead of compound).",
+        "explanation": "Substitute the values into the formula.",
         "workingOut": "\\(V = \\pi(5^2)(12)\\)",
         "graphData": null
       },
       {
-        "explanation": "Carry out the algebra carefully: substitute, rearrange, and simplify. Check signs, units, and whether the answer must be exact or rounded. This intermediate result feeds the final simplified answer.",
+        "explanation": "Simplify.",
         "workingOut": "\\(V = 25 \\times 12 \\times \\pi = 300\\pi\\)",
         "graphData": null
       },
       {
-        "explanation": "Final answer: 300\\pi. Interpret it in context (length, angle, probability, money) and confirm it matches one option exactly. Discard any root or value that violates domain or diagram constraints.",
-        "workingOut": "\\(300\\pi\\)",
+        "explanation": "State the exact volume.",
+        "workingOut": "\\(V = 300\\pi \\text{ cm}^3\\)",
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 100,224 A 70 26.6 0 0 0 240,224\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100\" y1=\"56\" x2=\"100\" y2=\"224\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"240\" y1=\"56\" x2=\"240\" y2=\"224\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 100,224 A 70 26.6 0 0 1 240,224\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"70\" ry=\"26.6\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"56\" x2=\"240\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"205\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><line x1=\"274\" y1=\"56\" x2=\"274\" y2=\"224\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"56\" x2=\"282\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"266\" y1=\"224\" x2=\"282\" y2=\"224\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"308\" y=\"144\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1689,133 +1220,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            4,
-            6,
-            0
-          ],
-          "B": [
-            8,
-            0,
-            0
-          ],
-          "C": [
-            0,
-            0,
-            0
-          ],
-          "D": [
-            4,
-            6,
-            15
-          ],
-          "E": [
-            8,
-            0,
-            15
-          ],
-          "F": [
-            0,
-            0,
-            15
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "D",
-            "to": "E"
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "D",
-            "dashed": true
-          },
-          {
-            "from": "A",
-            "to": "D"
-          },
-          {
-            "from": "B",
-            "to": "E"
-          },
-          {
-            "from": "C",
-            "to": "F",
-            "dashed": true
-          }
-        ],
-        "vertexLabels": [
-          {
-            "at": "A",
-            "text": "A"
-          },
-          {
-            "at": "B",
-            "text": "B"
-          },
-          {
-            "at": "C",
-            "text": "C"
-          },
-          {
-            "at": "D",
-            "text": "D"
-          },
-          {
-            "at": "E",
-            "text": "E"
-          },
-          {
-            "at": "F",
-            "text": "F"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "10 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "A",
-              "D"
-            ],
-            "text": "20 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"78.8,196 146.4,131 293.6,46 226.1,111\" fill=\"#e0e7ff\" opacity=\"0.4\"/><polygon points=\"146.4,131 213.9,274 78.8,196\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"293.6\" y1=\"46\" x2=\"361.2\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"361.2\" y1=\"189\" x2=\"226.1\" y2=\"111\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"226.1\" y1=\"111\" x2=\"293.6\" y2=\"46\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"146.4\" y1=\"131\" x2=\"293.6\" y2=\"46\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"213.9\" y1=\"274\" x2=\"361.2\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"78.8\" y1=\"196\" x2=\"226.1\" y2=\"111\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"146.4\" y1=\"131\" x2=\"213.9\" y2=\"274\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"213.9\" y1=\"274\" x2=\"78.8\" y2=\"196\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"78.8\" y1=\"196\" x2=\"146.4\" y2=\"131\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"158.4\" y=\"135\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"225.9\" y=\"278\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"66.8\" y=\"200\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><line x1=\"175.6\" y1=\"204.6\" x2=\"184.7\" y2=\"200.4\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"109.1\" y1=\"159.9\" x2=\"116.1\" y2=\"167.1\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"160.3\" y=\"226\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><text x=\"132.5\" y=\"175.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><text x=\"146.4\" y=\"296\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"220\" y=\"74.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">20 cm</text><text x=\"279.6\" y=\"44\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"347.2\" y=\"203\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"240.1\" y=\"125\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -1986,133 +1391,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            4,
-            6,
-            0
-          ],
-          "B": [
-            8,
-            0,
-            0
-          ],
-          "C": [
-            0,
-            0,
-            0
-          ],
-          "D": [
-            4,
-            6,
-            15
-          ],
-          "E": [
-            8,
-            0,
-            15
-          ],
-          "F": [
-            0,
-            0,
-            15
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "A"
-          },
-          {
-            "from": "D",
-            "to": "E"
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "D",
-            "dashed": true
-          },
-          {
-            "from": "A",
-            "to": "D"
-          },
-          {
-            "from": "B",
-            "to": "E"
-          },
-          {
-            "from": "C",
-            "to": "F",
-            "dashed": true
-          }
-        ],
-        "vertexLabels": [
-          {
-            "at": "A",
-            "text": "A"
-          },
-          {
-            "at": "B",
-            "text": "B"
-          },
-          {
-            "at": "C",
-            "text": "C"
-          },
-          {
-            "at": "D",
-            "text": "D"
-          },
-          {
-            "at": "E",
-            "text": "E"
-          },
-          {
-            "at": "F",
-            "text": "F"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "10 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "A",
-              "D"
-            ],
-            "text": "20 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"78.8,196 146.4,131 293.6,46 226.1,111\" fill=\"#e0e7ff\" opacity=\"0.4\"/><polygon points=\"146.4,131 213.9,274 78.8,196\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"293.6\" y1=\"46\" x2=\"361.2\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"361.2\" y1=\"189\" x2=\"226.1\" y2=\"111\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"226.1\" y1=\"111\" x2=\"293.6\" y2=\"46\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"146.4\" y1=\"131\" x2=\"293.6\" y2=\"46\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"213.9\" y1=\"274\" x2=\"361.2\" y2=\"189\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"78.8\" y1=\"196\" x2=\"226.1\" y2=\"111\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"146.4\" y1=\"131\" x2=\"213.9\" y2=\"274\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"213.9\" y1=\"274\" x2=\"78.8\" y2=\"196\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"78.8\" y1=\"196\" x2=\"146.4\" y2=\"131\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"158.4\" y=\"135\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"225.9\" y=\"278\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"66.8\" y=\"200\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><line x1=\"175.6\" y1=\"204.6\" x2=\"184.7\" y2=\"200.4\" stroke=\"#475569\" stroke-width=\"1.6\"/><line x1=\"109.1\" y1=\"159.9\" x2=\"116.1\" y2=\"167.1\" stroke=\"#475569\" stroke-width=\"1.6\"/><text x=\"160.3\" y=\"226\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><text x=\"132.5\" y=\"175.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text><text x=\"146.4\" y=\"296\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"220\" y=\"74.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">20 cm</text><text x=\"279.6\" y=\"44\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"347.2\" y=\"203\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"240.1\" y=\"125\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2157,7 +1436,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 105,212 A 65 24.7 0 0 0 235,212\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"105\" y1=\"56\" x2=\"105\" y2=\"212\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"235\" y1=\"56\" x2=\"235\" y2=\"212\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 105,212 A 65 24.7 0 0 1 235,212\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"65\" ry=\"24.7\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"56\" x2=\"235\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"202.5\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><line x1=\"269\" y1=\"56\" x2=\"269\" y2=\"212\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"261\" y1=\"56\" x2=\"277\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"261\" y1=\"212\" x2=\"277\" y2=\"212\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"303\" y=\"138\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">h</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2202,7 +1481,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 360 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><path d=\"M 66,186 A 104 39.5 0 0 0 274,186\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"66\" y1=\"56\" x2=\"66\" y2=\"186\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"274\" y1=\"56\" x2=\"274\" y2=\"186\" stroke=\"#475569\" stroke-width=\"2\"/><path d=\"M 66,186 A 104 39.5 0 0 1 274,186\" fill=\"none\" stroke=\"#475569\" stroke-width=\"2\"/><ellipse cx=\"170\" cy=\"56\" rx=\"104\" ry=\"39.5\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"170\" y1=\"56\" x2=\"274\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"170\" cy=\"56\" r=\"3\" fill=\"#1e293b\"/><text x=\"222\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">r</text><line x1=\"308\" y1=\"56\" x2=\"308\" y2=\"186\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"56\" x2=\"316\" y2=\"56\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"186\" x2=\"316\" y2=\"186\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"342\" y=\"125\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">10 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2247,7 +1526,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210,160 319.1,97 210,34 100.9,97\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"210,286 319.1,223 319.1,97 210,160\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"319.1,223 210,160 210,34 319.1,97\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"210\" y1=\"286\" x2=\"319.1\" y2=\"223\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"100.9\" y2=\"223\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100.9\" y1=\"223\" x2=\"210\" y2=\"286\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210\" y1=\"160\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"97\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"34\" x2=\"100.9\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"97\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"286\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"223\" x2=\"100.9\" y2=\"97\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"264.6\" y=\"276.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">x cm</text><text x=\"335.1\" y=\"189.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x cm</text><text x=\"335.1\" y=\"176\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2292,7 +1571,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": null,
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210,160 319.1,97 210,34 100.9,97\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"210,286 319.1,223 319.1,97 210,160\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"319.1,223 210,160 210,34 319.1,97\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"210\" y1=\"286\" x2=\"319.1\" y2=\"223\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"100.9\" y2=\"223\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"100.9\" y1=\"223\" x2=\"210\" y2=\"286\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210\" y1=\"160\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"97\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"34\" x2=\"100.9\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"97\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"286\" x2=\"210\" y2=\"160\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"319.1\" y1=\"223\" x2=\"319.1\" y2=\"97\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"160\" x2=\"210\" y2=\"34\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"100.9\" y1=\"223\" x2=\"100.9\" y2=\"97\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"264.6\" y=\"276.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">x cm</text><text x=\"335.1\" y=\"189.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x cm</text><text x=\"335.1\" y=\"176\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">x cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2332,312 +1611,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "B1": [
-            0,
-            0,
-            0
-          ],
-          "B2": [
-            3,
-            0,
-            0
-          ],
-          "B3": [
-            3,
-            0,
-            3
-          ],
-          "B4": [
-            0,
-            0,
-            3
-          ],
-          "B5": [
-            0,
-            3,
-            0
-          ],
-          "B6": [
-            3,
-            3,
-            0
-          ],
-          "B7": [
-            3,
-            3,
-            3
-          ],
-          "B8": [
-            0,
-            3,
-            3
-          ],
-          "M1": [
-            0.5,
-            3,
-            0.5
-          ],
-          "M2": [
-            2.5,
-            3,
-            0.5
-          ],
-          "M3": [
-            2.5,
-            3,
-            2.5
-          ],
-          "M4": [
-            0.5,
-            3,
-            2.5
-          ],
-          "M5": [
-            0.5,
-            5,
-            0.5
-          ],
-          "M6": [
-            2.5,
-            5,
-            0.5
-          ],
-          "M7": [
-            2.5,
-            5,
-            2.5
-          ],
-          "M8": [
-            0.5,
-            5,
-            2.5
-          ],
-          "T1": [
-            1,
-            5,
-            1
-          ],
-          "T2": [
-            2,
-            5,
-            1
-          ],
-          "T3": [
-            2,
-            5,
-            2
-          ],
-          "T4": [
-            1,
-            5,
-            2
-          ],
-          "T5": [
-            1,
-            6,
-            1
-          ],
-          "T6": [
-            2,
-            6,
-            1
-          ],
-          "T7": [
-            2,
-            6,
-            2
-          ],
-          "T8": [
-            1,
-            6,
-            2
-          ]
-        },
-        "segments": [
-          {
-            "from": "B1",
-            "to": "B2"
-          },
-          {
-            "from": "B2",
-            "to": "B3"
-          },
-          {
-            "from": "B3",
-            "to": "B4",
-            "dashed": true
-          },
-          {
-            "from": "B4",
-            "to": "B1",
-            "dashed": true
-          },
-          {
-            "from": "B5",
-            "to": "B6"
-          },
-          {
-            "from": "B6",
-            "to": "B7"
-          },
-          {
-            "from": "B7",
-            "to": "B8"
-          },
-          {
-            "from": "B8",
-            "to": "B5"
-          },
-          {
-            "from": "B1",
-            "to": "B5"
-          },
-          {
-            "from": "B2",
-            "to": "B6"
-          },
-          {
-            "from": "B3",
-            "to": "B7"
-          },
-          {
-            "from": "B4",
-            "to": "B8",
-            "dashed": true
-          },
-          {
-            "from": "M1",
-            "to": "M2"
-          },
-          {
-            "from": "M2",
-            "to": "M3"
-          },
-          {
-            "from": "M3",
-            "to": "M4",
-            "dashed": true
-          },
-          {
-            "from": "M4",
-            "to": "M1",
-            "dashed": true
-          },
-          {
-            "from": "M5",
-            "to": "M6"
-          },
-          {
-            "from": "M6",
-            "to": "M7"
-          },
-          {
-            "from": "M7",
-            "to": "M8"
-          },
-          {
-            "from": "M8",
-            "to": "M5"
-          },
-          {
-            "from": "M1",
-            "to": "M5"
-          },
-          {
-            "from": "M2",
-            "to": "M6"
-          },
-          {
-            "from": "M3",
-            "to": "M7"
-          },
-          {
-            "from": "M4",
-            "to": "M8",
-            "dashed": true
-          },
-          {
-            "from": "T1",
-            "to": "T2"
-          },
-          {
-            "from": "T2",
-            "to": "T3"
-          },
-          {
-            "from": "T3",
-            "to": "T4",
-            "dashed": true
-          },
-          {
-            "from": "T4",
-            "to": "T1",
-            "dashed": true
-          },
-          {
-            "from": "T5",
-            "to": "T6"
-          },
-          {
-            "from": "T6",
-            "to": "T7"
-          },
-          {
-            "from": "T7",
-            "to": "T8"
-          },
-          {
-            "from": "T8",
-            "to": "T5"
-          },
-          {
-            "from": "T1",
-            "to": "T5"
-          },
-          {
-            "from": "T2",
-            "to": "T6"
-          },
-          {
-            "from": "T3",
-            "to": "T7"
-          },
-          {
-            "from": "T4",
-            "to": "T8",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "B1",
-              "B2"
-            ],
-            "text": "3 m"
-          },
-          {
-            "between": [
-              "M1",
-              "M2"
-            ],
-            "text": "2 m"
-          },
-          {
-            "between": [
-              "T1",
-              "T2"
-            ],
-            "text": "1 m"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 460 460\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"230,260 307.9,215 230,170 152.1,215\" fill=\"#dbeafe\" opacity=\"0.55\"/><polygon points=\"230,350 307.9,305 307.9,215 230,260\" fill=\"#dbeafe\" opacity=\"0.35\"/><polygon points=\"307.9,305 230,260 230,170 307.9,215\" fill=\"#e0e7ff\" opacity=\"0.5\"/><line x1=\"230\" y1=\"350\" x2=\"307.9\" y2=\"305\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"307.9\" y1=\"305\" x2=\"230\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"260\" x2=\"307.9\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"307.9\" y1=\"215\" x2=\"230\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"170\" x2=\"152.1\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"152.1\" y1=\"215\" x2=\"230\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"350\" x2=\"230\" y2=\"260\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"307.9\" y1=\"305\" x2=\"307.9\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"260\" x2=\"230\" y2=\"170\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"260\" x2=\"152.1\" y2=\"305\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"152.1\" y1=\"305\" x2=\"230\" y2=\"350\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"152.1\" y1=\"305\" x2=\"152.1\" y2=\"215\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><polygon points=\"230,185 282,155 230,125 178,155\" fill=\"#dbeafe\" opacity=\"0.55\"/><polygon points=\"230,245 282,215 282,155 230,185\" fill=\"#dbeafe\" opacity=\"0.35\"/><polygon points=\"282,215 230,185 230,125 282,155\" fill=\"#e0e7ff\" opacity=\"0.5\"/><line x1=\"230\" y1=\"245\" x2=\"282\" y2=\"215\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"282\" y1=\"215\" x2=\"230\" y2=\"185\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"185\" x2=\"282\" y2=\"155\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"282\" y1=\"155\" x2=\"230\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"125\" x2=\"178\" y2=\"155\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"178\" y1=\"155\" x2=\"230\" y2=\"185\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"245\" x2=\"230\" y2=\"185\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"282\" y1=\"215\" x2=\"282\" y2=\"155\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"185\" x2=\"230\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"185\" x2=\"178\" y2=\"215\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"178\" y1=\"215\" x2=\"230\" y2=\"245\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"178\" y1=\"215\" x2=\"178\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><polygon points=\"230,140 256,125 230,110 204,125\" fill=\"#dbeafe\" opacity=\"0.55\"/><polygon points=\"230,170 256,155 256,125 230,140\" fill=\"#dbeafe\" opacity=\"0.35\"/><polygon points=\"256,155 230,140 230,110 256,125\" fill=\"#e0e7ff\" opacity=\"0.5\"/><line x1=\"230\" y1=\"170\" x2=\"256\" y2=\"155\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"256\" y1=\"155\" x2=\"230\" y2=\"140\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"140\" x2=\"256\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"256\" y1=\"125\" x2=\"230\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"110\" x2=\"204\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"204\" y1=\"125\" x2=\"230\" y2=\"140\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"170\" x2=\"230\" y2=\"140\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"256\" y1=\"155\" x2=\"256\" y2=\"125\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"140\" x2=\"230\" y2=\"110\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"230\" y1=\"140\" x2=\"204\" y2=\"155\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"204\" y1=\"155\" x2=\"230\" y2=\"170\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"204\" y1=\"155\" x2=\"204\" y2=\"125\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"269\" y1=\"282.5\" x2=\"386\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"1.2\" stroke-dasharray=\"2 2\"/><text x=\"390\" y=\"94\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">3 m</text><line x1=\"256\" y1=\"200\" x2=\"386\" y2=\"160\" stroke=\"#dc2626\" stroke-width=\"1.2\" stroke-dasharray=\"2 2\"/><text x=\"390\" y=\"164\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">2 m</text><line x1=\"243\" y1=\"147.5\" x2=\"386\" y2=\"230\" stroke=\"#dc2626\" stroke-width=\"1.2\" stroke-dasharray=\"2 2\"/><text x=\"390\" y=\"234\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">1 m</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -2839,164 +1813,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            7,
-            0,
-            0
-          ],
-          "C": [
-            6,
-            4,
-            0
-          ],
-          "D": [
-            1,
-            4,
-            0
-          ],
-          "E": [
-            0,
-            0,
-            15
-          ],
-          "F": [
-            7,
-            0,
-            15
-          ],
-          "G": [
-            6,
-            4,
-            15
-          ],
-          "H": [
-            1,
-            4,
-            15
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A"
-          },
-          {
-            "from": "E",
-            "to": "F",
-            "dashed": true
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H"
-          }
-        ],
-        "vertexLabels": [
-          {
-            "at": "A",
-            "text": "A"
-          },
-          {
-            "at": "B",
-            "text": "B"
-          },
-          {
-            "at": "C",
-            "text": "C"
-          },
-          {
-            "at": "D",
-            "text": "D"
-          },
-          {
-            "at": "E",
-            "text": "E"
-          },
-          {
-            "at": "F",
-            "text": "F"
-          },
-          {
-            "at": "G",
-            "text": "G"
-          },
-          {
-            "at": "H",
-            "text": "H"
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "7 cm"
-          },
-          {
-            "between": [
-              "C",
-              "D"
-            ],
-            "text": "5 cm"
-          },
-          {
-            "between": [
-              "A",
-              "E"
-            ],
-            "text": "20 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 440 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"185.8,248 107,202.5 254.2,117.5 333,163\" fill=\"#e0e7ff\" opacity=\"0.4\"/><polygon points=\"107,202.5 118.2,157 265.5,72 254.2,117.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"185.8,248 107,202.5 118.2,157 174.5,189.5\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"333\" y1=\"163\" x2=\"254.2\" y2=\"117.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"254.2\" y1=\"117.5\" x2=\"265.5\" y2=\"72\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"265.5\" y1=\"72\" x2=\"321.8\" y2=\"104.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"321.8\" y1=\"104.5\" x2=\"333\" y2=\"163\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"185.8\" y1=\"248\" x2=\"333\" y2=\"163\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"107\" y1=\"202.5\" x2=\"254.2\" y2=\"117.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"118.2\" y1=\"157\" x2=\"265.5\" y2=\"72\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"174.5\" y1=\"189.5\" x2=\"321.8\" y2=\"104.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"185.8\" y1=\"248\" x2=\"107\" y2=\"202.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"107\" y1=\"202.5\" x2=\"118.2\" y2=\"157\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"118.2\" y1=\"157\" x2=\"174.5\" y2=\"189.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"174.5\" y1=\"189.5\" x2=\"185.8\" y2=\"248\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"197.8\" y=\"252\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">A</text><text x=\"95\" y=\"206.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">B</text><text x=\"106.2\" y=\"161\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">C</text><text x=\"186.5\" y=\"193.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">D</text><text x=\"146.4\" y=\"270\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">7 cm</text><text x=\"146.4\" y=\"143\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">5 cm</text><text x=\"180.6\" y=\"146\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">20 cm</text><line x1=\"146.4\" y1=\"248\" x2=\"146.4\" y2=\"157\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><text x=\"128.4\" y=\"202.5\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">h</text><text x=\"319\" y=\"167\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">E</text><text x=\"268.2\" y=\"121.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">F</text><text x=\"279.5\" y=\"66\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">G</text><text x=\"307.8\" y=\"98.5\" font-size=\"12\" font-weight=\"700\" font-style=\"italic\" fill=\"#1e293b\" text-anchor=\"middle\">H</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -3180,146 +1997,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            5,
-            0
-          ],
-          "B": [
-            8,
-            5,
-            0
-          ],
-          "C": [
-            8,
-            2,
-            0
-          ],
-          "D": [
-            4,
-            0,
-            0
-          ],
-          "E": [
-            0,
-            2,
-            0
-          ],
-          "A2": [
-            0,
-            5,
-            20
-          ],
-          "B2": [
-            8,
-            5,
-            20
-          ],
-          "C2": [
-            8,
-            2,
-            20
-          ],
-          "D2": [
-            4,
-            0,
-            20
-          ],
-          "E2": [
-            0,
-            2,
-            20
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "E"
-          },
-          {
-            "from": "E",
-            "to": "A"
-          },
-          {
-            "from": "A2",
-            "to": "B2"
-          },
-          {
-            "from": "B2",
-            "to": "C2"
-          },
-          {
-            "from": "C2",
-            "to": "D2"
-          },
-          {
-            "from": "D2",
-            "to": "E2",
-            "dashed": true
-          },
-          {
-            "from": "E2",
-            "to": "A2",
-            "dashed": true
-          },
-          {
-            "from": "A",
-            "to": "A2",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "B2"
-          },
-          {
-            "from": "C",
-            "to": "C2"
-          },
-          {
-            "from": "D",
-            "to": "D2"
-          },
-          {
-            "from": "E",
-            "to": "E2",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "30 cm"
-          },
-          {
-            "between": [
-              "B",
-              "B2"
-            ],
-            "text": "L cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 460 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210.1,197.5 120,145.5 249.9,70.5 340,122.5\" fill=\"#e0e7ff\" opacity=\"0.4\"/><polygon points=\"120,145.5 120,197.5 249.9,122.5 249.9,70.5\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"120,197.5 165,249.5 295,174.5 249.9,122.5\" fill=\"#e0e7ff\" opacity=\"0.4\"/><polygon points=\"210.1,197.5 120,145.5 120,197.5 165,249.5 210.1,249.5\" fill=\"#dbeafe\" opacity=\"0.55\"/><line x1=\"340\" y1=\"122.5\" x2=\"249.9\" y2=\"70.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"249.9\" y1=\"70.5\" x2=\"249.9\" y2=\"122.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"249.9\" y1=\"122.5\" x2=\"295\" y2=\"174.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"295\" y1=\"174.5\" x2=\"340\" y2=\"174.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"340\" y1=\"174.5\" x2=\"340\" y2=\"122.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210.1\" y1=\"197.5\" x2=\"340\" y2=\"122.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"120\" y1=\"145.5\" x2=\"249.9\" y2=\"70.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"120\" y1=\"197.5\" x2=\"249.9\" y2=\"122.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"165\" y1=\"249.5\" x2=\"295\" y2=\"174.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210.1\" y1=\"249.5\" x2=\"340\" y2=\"174.5\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210.1\" y1=\"197.5\" x2=\"120\" y2=\"145.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"120\" y1=\"145.5\" x2=\"120\" y2=\"197.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"120\" y1=\"197.5\" x2=\"165\" y2=\"249.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"165\" y1=\"249.5\" x2=\"210.1\" y2=\"249.5\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210.1\" y1=\"249.5\" x2=\"210.1\" y2=\"197.5\" stroke=\"#475569\" stroke-width=\"2\"/><text x=\"165\" y=\"209.9\" font-size=\"12\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">A = 2000 cm<tspan baseline-shift=\"super\" font-size=\"8\">2</tspan></text><text x=\"185\" y=\"94\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">L cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -3488,128 +2166,7 @@ export const Y10_CH6_QUESTIONS = [
       }
     ],
     "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            12,
-            0,
-            0
-          ],
-          "C": [
-            12,
-            0,
-            12
-          ],
-          "D": [
-            0,
-            0,
-            12
-          ],
-          "E": [
-            0,
-            15,
-            0
-          ],
-          "F": [
-            12,
-            15,
-            0
-          ],
-          "G": [
-            12,
-            15,
-            12
-          ],
-          "H": [
-            0,
-            15,
-            12
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "15 cm"
-          }
-        ]
-      }
+      "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"120,90 264,90 324,55 180,55\" fill=\"#dbeafe\" opacity=\"0.5\"/><path d=\"M294,252.5 C310.6,242.8 291.8,235 252,235 C212.2,235 166.6,242.8 150,252.5 C133.4,262.2 152.2,270 192,270 C231.8,270 277.4,262.2 294,252.5 Z\" fill=\"none\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><g stroke=\"#475569\" stroke-width=\"2\"><line x1=\"144\" y1=\"259.2\" x2=\"144\" y2=\"79.2\"/><line x1=\"300\" y1=\"245.8\" x2=\"300\" y2=\"65.8\"/></g><path d=\"M294,72.5 C310.6,62.8 291.8,55 252,55 C212.2,55 166.6,62.8 150,72.5 C133.4,82.2 152.2,90 192,90 C231.8,90 277.4,82.2 294,72.5 Z\" fill=\"#fef3c7\" opacity=\"0.75\" stroke=\"#475569\" stroke-width=\"2\"/><polygon points=\"120,270 264,270 264,90 120,90\" fill=\"#dbeafe\" opacity=\"0.35\"/><polygon points=\"264,270 324,235 324,55 264,90\" fill=\"#dbeafe\" opacity=\"0.45\"/><g stroke=\"#475569\" stroke-width=\"2\" fill=\"none\"><line x1=\"120\" y1=\"270\" x2=\"264\" y2=\"270\"/><line x1=\"264\" y1=\"270\" x2=\"324\" y2=\"235\"/><line x1=\"120\" y1=\"90\" x2=\"264\" y2=\"90\"/><line x1=\"264\" y1=\"90\" x2=\"324\" y2=\"55\"/><line x1=\"324\" y1=\"55\" x2=\"180\" y2=\"55\"/><line x1=\"180\" y1=\"55\" x2=\"120\" y2=\"90\"/><line x1=\"120\" y1=\"270\" x2=\"120\" y2=\"90\"/><line x1=\"264\" y1=\"270\" x2=\"264\" y2=\"90\"/><line x1=\"324\" y1=\"235\" x2=\"324\" y2=\"55\"/></g><g stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\" fill=\"none\"><line x1=\"324\" y1=\"235\" x2=\"180\" y2=\"235\"/><line x1=\"180\" y1=\"235\" x2=\"120\" y2=\"270\"/><line x1=\"180\" y1=\"235\" x2=\"180\" y2=\"55\"/></g><line x1=\"222\" y1=\"72.5\" x2=\"294\" y2=\"72.5\" stroke=\"#dc2626\" stroke-width=\"1.5\" stroke-dasharray=\"3 2\"/><circle cx=\"222\" cy=\"72.5\" r=\"3\" fill=\"#1e293b\"/><text x=\"236\" y=\"46\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\">6 cm</text><line x1=\"360\" y1=\"270\" x2=\"360\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"352\" y1=\"270\" x2=\"368\" y2=\"270\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><line x1=\"352\" y1=\"90\" x2=\"368\" y2=\"90\" stroke=\"#dc2626\" stroke-width=\"1.5\"/><text x=\"374\" y=\"184\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\">15 cm</text></svg>"
     },
     "isNew": true,
     "requiresManualGrading": false
@@ -3778,130 +2335,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            12,
-            0,
-            0
-          ],
-          "C": [
-            12,
-            0,
-            12
-          ],
-          "D": [
-            0,
-            0,
-            12
-          ],
-          "E": [
-            0,
-            15,
-            0
-          ],
-          "F": [
-            12,
-            15,
-            0
-          ],
-          "G": [
-            12,
-            15,
-            12
-          ],
-          "H": [
-            0,
-            15,
-            12
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "15 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210,141.3 339.9,66.3 210,-8.7 80.1,66.3\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"210,328.8 339.9,253.8 339.9,66.3 210,141.3\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"339.9,253.8 210,178.8 210,-8.7 339.9,66.3\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"210\" y1=\"328.8\" x2=\"339.9\" y2=\"253.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"253.8\" x2=\"210\" y2=\"178.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"178.8\" x2=\"80.1\" y2=\"253.8\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"80.1\" y1=\"253.8\" x2=\"210\" y2=\"328.8\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210\" y1=\"141.3\" x2=\"339.9\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"66.3\" x2=\"210\" y2=\"-8.7\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"-8.7\" x2=\"80.1\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"80.1\" y1=\"66.3\" x2=\"210\" y2=\"141.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"328.8\" x2=\"210\" y2=\"141.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"253.8\" x2=\"339.9\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"178.8\" x2=\"210\" y2=\"-8.7\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"80.1\" y1=\"253.8\" x2=\"80.1\" y2=\"66.3\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"275\" y=\"313.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"355.9\" y=\"214.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">12 cm</text><text x=\"355.9\" y=\"176\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">15 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   },
@@ -4069,130 +2503,7 @@ export const Y10_CH6_QUESTIONS = [
         "graphData": null
       }
     ],
-    "graphData": {
-      "geometry": {
-        "width": 280,
-        "projection": "isometric",
-        "points": {
-          "A": [
-            0,
-            0,
-            0
-          ],
-          "B": [
-            12,
-            0,
-            0
-          ],
-          "C": [
-            12,
-            0,
-            12
-          ],
-          "D": [
-            0,
-            0,
-            12
-          ],
-          "E": [
-            0,
-            15,
-            0
-          ],
-          "F": [
-            12,
-            15,
-            0
-          ],
-          "G": [
-            12,
-            15,
-            12
-          ],
-          "H": [
-            0,
-            15,
-            12
-          ]
-        },
-        "segments": [
-          {
-            "from": "A",
-            "to": "B"
-          },
-          {
-            "from": "B",
-            "to": "C"
-          },
-          {
-            "from": "C",
-            "to": "D"
-          },
-          {
-            "from": "D",
-            "to": "A",
-            "dashed": true
-          },
-          {
-            "from": "E",
-            "to": "F"
-          },
-          {
-            "from": "F",
-            "to": "G"
-          },
-          {
-            "from": "G",
-            "to": "H"
-          },
-          {
-            "from": "H",
-            "to": "E"
-          },
-          {
-            "from": "A",
-            "to": "E",
-            "dashed": true
-          },
-          {
-            "from": "B",
-            "to": "F"
-          },
-          {
-            "from": "C",
-            "to": "G"
-          },
-          {
-            "from": "D",
-            "to": "H",
-            "dashed": true
-          }
-        ],
-        "sideLabels": [
-          {
-            "between": [
-              "A",
-              "B"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "C"
-            ],
-            "text": "12 cm"
-          },
-          {
-            "between": [
-              "B",
-              "F"
-            ],
-            "text": "15 cm"
-          }
-        ]
-      }
-    },
+    "graphData": { "svg": "<svg viewBox=\"0 0 420 320\" xmlns=\"http://www.w3.org/2000/svg\" width=\"100%\" height=\"auto\" font-family=\"system-ui, sans-serif\"><polygon points=\"210,141.3 339.9,66.3 210,-8.7 80.1,66.3\" fill=\"#dbeafe\" opacity=\"0.5\"/><polygon points=\"210,328.8 339.9,253.8 339.9,66.3 210,141.3\" fill=\"#dbeafe\" opacity=\"0.4\"/><polygon points=\"339.9,253.8 210,178.8 210,-8.7 339.9,66.3\" fill=\"#e0e7ff\" opacity=\"0.4\"/><line x1=\"210\" y1=\"328.8\" x2=\"339.9\" y2=\"253.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"253.8\" x2=\"210\" y2=\"178.8\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"178.8\" x2=\"80.1\" y2=\"253.8\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"80.1\" y1=\"253.8\" x2=\"210\" y2=\"328.8\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><line x1=\"210\" y1=\"141.3\" x2=\"339.9\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"66.3\" x2=\"210\" y2=\"-8.7\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"-8.7\" x2=\"80.1\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"80.1\" y1=\"66.3\" x2=\"210\" y2=\"141.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"328.8\" x2=\"210\" y2=\"141.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"339.9\" y1=\"253.8\" x2=\"339.9\" y2=\"66.3\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"210\" y1=\"178.8\" x2=\"210\" y2=\"-8.7\" stroke=\"#475569\" stroke-width=\"2\"/><line x1=\"80.1\" y1=\"253.8\" x2=\"80.1\" y2=\"66.3\" stroke=\"#94a3b8\" stroke-width=\"1.4\" stroke-dasharray=\"4 3\"/><text x=\"275\" y=\"313.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"middle\">12 cm</text><text x=\"355.9\" y=\"214.3\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">12 cm</text><text x=\"355.9\" y=\"176\" font-size=\"13\" font-weight=\"600\" fill=\"#dc2626\" text-anchor=\"start\">15 cm</text></svg>" },
     "isNew": true,
     "requiresManualGrading": false
   }
