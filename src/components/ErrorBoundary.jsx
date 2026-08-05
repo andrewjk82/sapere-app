@@ -10,13 +10,32 @@ const isChunkLoadError = (msg) =>
   /failed to fetch dynamically imported module|error loading dynamically imported module|importing a module script failed|dynamically imported module|unable to preload|chunkloaderror|loading chunk .* failed/i
     .test(String(msg || ''));
 
-const RELOAD_KEY = 'sapere:eb-chunk-reload';
+// localStorage가 가득 차면 Firestore의 persistentMultipleTabManager가 탭 간
+// 동기화용 키(firestore_mutations_firestore/...)를 못 써서 내부 assertion으로
+// 죽는다 (2026-08 iPad 리포트: Challenge/SecretNote 무한 로딩 → 이 에러로 확인).
+// 우리 앱의 localCache(services/localCacheService.js, "sapere-cache:" 프리픽스)가
+// 무제한으로 쌓이는 게 가장 큰 원인 후보이므로, 감지되면 그것부터 비운다.
+const isStorageQuotaError = (msg) =>
+  /quotaexceedederror|exceeded the quota|internal assertion failed/i.test(String(msg || ''));
+
+// 우리가 직접 쓴 캐시만 지운다 — Firebase 자체 IndexedDB 데이터는 건드리지 않음.
+// 캐시일 뿐이므로 지워도 안전 (Firestore가 진짜 소스).
+const clearOwnLocalCache = () => {
+  try {
+    Object.keys(window.localStorage)
+      .filter((k) => k.startsWith('sapere-cache:'))
+      .forEach((k) => window.localStorage.removeItem(k));
+  } catch { /* ignore */ }
+};
+
+const CHUNK_RELOAD_KEY = 'sapere:eb-chunk-reload';
+const QUOTA_RELOAD_KEY = 'sapere:eb-quota-reload';
 
 // 60초 내 이미 자동 리로드했으면 다시 하지 않음(무한 루프 방지).
-// 리로드 후에도 청크가 또 실패하면 false → 사용자에게 Reload 버튼 화면을 보여줌.
-const canAutoReload = () => {
+// 리로드 후에도 또 실패하면 false → 사용자에게 Reload 버튼 화면을 보여줌.
+const canAutoReload = (key) => {
   try {
-    return Date.now() - Number(sessionStorage.getItem(RELOAD_KEY) || 0) > 60_000;
+    return Date.now() - Number(sessionStorage.getItem(key) || 0) > 60_000;
   } catch {
     return false;
   }
@@ -30,22 +49,38 @@ class ErrorBoundary extends React.Component {
 
   static getDerivedStateFromError(error) {
     const msg = String(error?.message || error || '');
-    // 청크 에러 + 아직 자동 리로드 여력이 있을 때만 "업데이트 중" 화면.
+    // 청크 에러 또는 저장공간 초과 + 아직 자동 리로드 여력이 있을 때만 "복구 중" 화면.
     // 그 외(또는 리로드 후 재실패)는 일반 에러 화면(Reload 버튼 포함).
-    return { hasError: true, error, recovering: isChunkLoadError(msg) && canAutoReload() };
+    const chunk = isChunkLoadError(msg) && canAutoReload(CHUNK_RELOAD_KEY);
+    const quota = !chunk && isStorageQuotaError(msg) && canAutoReload(QUOTA_RELOAD_KEY);
+    return { hasError: true, error, recovering: chunk || quota };
   }
 
   componentDidCatch(error, info) {
     console.error('UI crash caught by ErrorBoundary:', error, info?.componentStack || info);
 
-    // 새 배포로 청크 해시가 바뀌어 옛 빌드가 모듈을 못 받는 경우 → 1회 자동 리로드.
     const msg = String(error?.message || error || '');
-    if (!isChunkLoadError(msg) || !canAutoReload()) return;
-    try {
-      sessionStorage.setItem(RELOAD_KEY, String(Date.now()));
-      const sep = window.location.search ? '&' : '?';
-      window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
-    } catch { /* sessionStorage unavailable — fall back to manual Reload */ }
+
+    // 새 배포로 청크 해시가 바뀌어 옛 빌드가 모듈을 못 받는 경우 → 1회 자동 리로드.
+    if (isChunkLoadError(msg) && canAutoReload(CHUNK_RELOAD_KEY)) {
+      try {
+        sessionStorage.setItem(CHUNK_RELOAD_KEY, String(Date.now()));
+        const sep = window.location.search ? '&' : '?';
+        window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+      } catch { /* sessionStorage unavailable — fall back to manual Reload */ }
+      return;
+    }
+
+    // localStorage 가득 참 → Firestore 내부 assertion으로 죽음. 우리 캐시부터
+    // 비우고 1회 자동 리로드 (그래도 또 실패하면 수동 Reload 화면).
+    if (isStorageQuotaError(msg) && canAutoReload(QUOTA_RELOAD_KEY)) {
+      try {
+        sessionStorage.setItem(QUOTA_RELOAD_KEY, String(Date.now()));
+        clearOwnLocalCache();
+        const sep = window.location.search ? '&' : '?';
+        window.location.replace(window.location.href + sep + `_cb=${Date.now()}`);
+      } catch { /* sessionStorage unavailable — fall back to manual Reload */ }
+    }
   }
 
   render() {
@@ -61,7 +96,9 @@ class ErrorBoundary extends React.Component {
         }}>
           <div style={{ fontSize: '2.4rem', marginBottom: 12 }}>✨</div>
           <h2 style={{ fontSize: '1.2rem', fontWeight: 900, color: '#1e1b4b', margin: '0 0 8px' }}>
-            Updating to the latest version…
+            {isStorageQuotaError(String(this.state.error?.message || this.state.error || ''))
+              ? 'Freeing up some space…'
+              : 'Updating to the latest version…'}
           </h2>
           <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
             One moment — refreshing now.
