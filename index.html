@@ -2,6 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // A stale copy of THIS page (served by a mobile carrier's compressing
+      // proxy that ignores our no-store header, or just a tab left open
+      // across a deploy) can reference a JS/CSS chunk filename that no
+      // longer exists once a new deploy replaces it — 404. The in-app
+      // ErrorBoundary already auto-recovers from that for lazy-loaded
+      // screens, but it can only do that AFTER React has mounted. If the
+      // failing file is the entry bundle itself, React never starts and
+      // nothing inside the app can react — the page is just permanently
+      // blank. Catch that one case here, at the raw HTML level, before
+      // React exists, and force a single cache-busted reload.
+      (function () {
+        var KEY = 'sapere:entry-reload';
+        window.addEventListener('error', function (e) {
+          var t = e.target;
+          if (!t || (t.tagName !== 'SCRIPT' && t.tagName !== 'LINK')) return;
+          var url = t.src || t.href || '';
+          if (!/\/assets\//.test(url)) return;
+          try {
+            var last = Number(sessionStorage.getItem(KEY) || 0);
+            if (Date.now() - last < 60000) return; // already retried once recently — avoid a loop
+            sessionStorage.setItem(KEY, String(Date.now()));
+          } catch (err) { /* storage unavailable (private mode etc.) — still try one reload */ }
+          var sep = location.search ? '&' : '?';
+          location.replace(location.pathname + location.search + sep + '_cb=' + Date.now() + location.hash);
+        }, true);
+      })();
+    </script>
     <link rel="icon" type="image/png" sizes="32x32" href="/logo.png?v=4" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Secret Study | Student Management</title>
