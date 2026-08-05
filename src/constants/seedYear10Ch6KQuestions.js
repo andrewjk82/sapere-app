@@ -8,8 +8,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\na) the surface area",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "3950",
     "hint": "",
     "solution": "The correct answer is \\(3950\\).",
     "solutionSteps": [
@@ -39,19 +39,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-3950\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3949\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(3950\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(3951\\)",
+        "text": "\\(3900\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4150\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(15000\\)",
         "imageUrl": ""
       }
     ]
@@ -66,7 +66,7 @@ export const Y10_CH6K_QUESTIONS = [
     "timeLimit": 120,
     "question": "For a rectangular prism measuring \\( 40 \\) cm \\( \\times \\) \\( 25 \\) cm \\( \\times \\) \\( 15 \\) cm, calculate:\nb) the volume",
     "a": 2,
-    "answer": "2",
+    "answer": "15000",
     "hint": "",
     "solution": "The correct answer is \\(15000\\).",
     "solutionSteps": [
@@ -96,11 +96,11 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-15000\\)",
+        "text": "\\(1500\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(14999\\)",
+        "text": "\\(3950\\)",
         "imageUrl": ""
       },
       {
@@ -108,7 +108,7 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(15001\\)",
+        "text": "\\(30000\\)",
         "imageUrl": ""
       }
     ]
@@ -122,8 +122,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "A rectangular prism has a surface area of \\( 600 \\) cm\\(^2\\). If its length is \\( 20 \\) cm and its width is \\( 5 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "8",
     "hint": "",
     "solution": "The correct answer is \\(8\\).",
     "solutionSteps": [
@@ -153,11 +153,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-8\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7\\)",
+        "text": "\\(6\\)",
         "imageUrl": ""
       },
       {
@@ -165,7 +161,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(9\\)",
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(12\\)",
         "imageUrl": ""
       }
     ]
@@ -179,8 +179,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "A rectangular prism has a volume of \\( 840 \\) cm\\(^3\\). If its length is \\( 14 \\) cm and its width is \\( 10 \\) cm, calculate the height of the rectangular prism.\nCalculate the height.",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "6",
     "hint": "",
     "solution": "The correct answer is \\(6\\).",
     "solutionSteps": [
@@ -210,19 +210,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-6\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(5\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(7\\)",
+        "text": "\\(8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(14\\)",
         "imageUrl": ""
       }
     ]
@@ -236,8 +236,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\na) the area of \\( ABCD \\)",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "128",
     "hint": "",
     "solution": "The correct answer is \\(128\\).",
     "solutionSteps": [
@@ -267,11 +267,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-128\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(127\\)",
+        "text": "\\(160\\)",
         "imageUrl": ""
       },
       {
@@ -279,7 +275,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(129\\)",
+        "text": "\\(256\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(320\\)",
         "imageUrl": ""
       }
     ]
@@ -294,7 +294,7 @@ export const Y10_CH6K_QUESTIONS = [
     "timeLimit": 120,
     "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nb) the surface area of the prism",
     "a": 2,
-    "answer": "2",
+    "answer": "1556",
     "hint": "",
     "solution": "The correct answer is \\(1556\\).",
     "solutionSteps": [
@@ -324,11 +324,11 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-1556\\)",
+        "text": "\\(1300\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(1555\\)",
+        "text": "\\(1428\\)",
         "imageUrl": ""
       },
       {
@@ -336,7 +336,7 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1557\\)",
+        "text": "\\(1812\\)",
         "imageUrl": ""
       }
     ]
@@ -350,8 +350,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "The cross-section \\( ABCD \\) of the prism shown is an isosceles trapezium with \\( AB = 10 \\) cm, \\( DC = 22 \\) cm, \\( AD = BC = 10 \\) cm and \\( AE = 25 \\) cm.\n\nCalculate:\nc) the volume of the prism",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "3200",
     "hint": "",
     "solution": "The correct answer is \\(3200\\).",
     "solutionSteps": [
@@ -381,19 +381,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-3200\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(3199\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(3200\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(3201\\)",
+        "text": "\\(1600\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6400\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4800\\)",
         "imageUrl": ""
       }
     ]
@@ -407,8 +407,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\na) Calculate the volume of the tank, to the nearest litre.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "31416",
     "hint": "",
     "solution": "The correct answer is \\(31416\\).",
     "solutionSteps": [
@@ -438,11 +438,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-31416\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(31415\\)",
+        "text": "\\(15708\\)",
         "imageUrl": ""
       },
       {
@@ -450,7 +446,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(31417\\)",
+        "text": "\\(125664\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(62832\\)",
         "imageUrl": ""
       }
     ]
@@ -465,7 +465,7 @@ export const Y10_CH6K_QUESTIONS = [
     "timeLimit": 120,
     "question": "A cylindrical water tank stands on its circular base. It has a diameter of \\( 4 \\) m and a height of \\( 2.5 \\) m.\nb) Calculate the depth of water in the tank, to the nearest centimetre, when it contains \\( 5000 \\) litres of water.",
     "a": 2,
-    "answer": "2",
+    "answer": "40",
     "hint": "",
     "solution": "The correct answer is \\(40\\).",
     "solutionSteps": [
@@ -495,11 +495,11 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-40\\)",
+        "text": "\\(10\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(39\\)",
+        "text": "\\(20\\)",
         "imageUrl": ""
       },
       {
@@ -507,7 +507,7 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(41\\)",
+        "text": "\\(80\\)",
         "imageUrl": ""
       }
     ]
@@ -521,8 +521,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\na) A square-based pyramid has base side length \\( 14 \\) cm and perpendicular height \\( 24 \\) cm.\ni) Calculate the surface area",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "896",
     "hint": "",
     "solution": "The correct answer is \\(896\\).",
     "solutionSteps": [
@@ -552,11 +552,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-896\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(895\\)",
+        "text": "\\(700\\)",
         "imageUrl": ""
       },
       {
@@ -564,7 +560,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(897\\)",
+        "text": "\\(1092\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1960\\)",
         "imageUrl": ""
       }
     ]
@@ -578,8 +578,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nii) Calculate the volume",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "1568",
     "hint": "",
     "solution": "The correct answer is \\(1568\\).",
     "solutionSteps": [
@@ -609,11 +609,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-1568\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(1567\\)",
+        "text": "\\(4704\\)",
         "imageUrl": ""
       },
       {
@@ -621,7 +617,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1569\\)",
+        "text": "\\(2352\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(3136\\)",
         "imageUrl": ""
       }
     ]
@@ -636,7 +636,7 @@ export const Y10_CH6K_QUESTIONS = [
     "timeLimit": 120,
     "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nb) A cone has a radius of \\( 5 \\) cm and a slant height of \\( 13 \\) cm.\ni) Calculate the exact surface area",
     "a": 1,
-    "answer": "1",
+    "answer": "90\\pi",
     "hint": "",
     "solution": "The correct answer is \\(90\\pi\\).",
     "solutionSteps": [
@@ -666,7 +666,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-90\\pi\\)",
+        "text": "\\(65\\pi\\)",
         "imageUrl": ""
       },
       {
@@ -674,11 +674,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(90\\pi + 1\\)",
+        "text": "\\(115\\pi\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\dfrac{13}{6}\\)",
+        "text": "\\(150\\pi\\)",
         "imageUrl": ""
       }
     ]
@@ -692,8 +692,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "easy",
     "timeLimit": 120,
     "question": "Find exact answers to these questions (leaving \\( \\pi \\) in your answer if necessary).\nii) Calculate the exact volume",
-    "a": 1,
-    "answer": "1",
+    "a": 0,
+    "answer": "100\\pi",
     "hint": "",
     "solution": "The correct answer is \\(100\\pi\\).",
     "solutionSteps": [
@@ -723,19 +723,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-100\\pi\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(100\\pi\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(100\\pi + 1\\)",
+        "text": "\\(300\\pi\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(\\dfrac{13}{6}\\)",
+        "text": "\\(325\\pi\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(130\\pi\\)",
         "imageUrl": ""
       }
     ]
@@ -750,7 +750,7 @@ export const Y10_CH6K_QUESTIONS = [
     "timeLimit": 120,
     "question": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\na) Calculate the surface area of the pyramid in m\\(^2\\), correct to one decimal place.",
     "a": 2,
-    "answer": "2",
+    "answer": "328.6",
     "hint": "",
     "solution": "The correct answer is \\(328.6\\).",
     "solutionSteps": [
@@ -780,11 +780,11 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-328.6\\)",
+        "text": "\\(208.6\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(327.6\\)",
+        "text": "\\(264.0\\)",
         "imageUrl": ""
       },
       {
@@ -792,7 +792,7 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(329.6\\)",
+        "text": "\\(448.6\\)",
         "imageUrl": ""
       }
     ]
@@ -806,8 +806,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "In the pyramid \\( VABCD \\) shown, \\( VB \\) is perpendicular to rectangle \\( ABCD \\), \\( AB = 15 \\) m, \\( BC = 8 \\) m and \\( VB = 6 \\) m.\nb) Calculate the volume of the pyramid.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "240",
     "hint": "",
     "solution": "The correct answer is \\(240\\).",
     "solutionSteps": [
@@ -837,11 +837,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-240\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(239\\)",
+        "text": "\\(120\\)",
         "imageUrl": ""
       },
       {
@@ -849,7 +845,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(241\\)",
+        "text": "\\(720\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(480\\)",
         "imageUrl": ""
       }
     ]
@@ -863,8 +863,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\na) Calculate the radius of the cone.",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "5",
     "hint": "",
     "solution": "The correct answer is \\(5\\).",
     "solutionSteps": [
@@ -894,19 +894,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-5\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(4\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(5\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(6\\)",
+        "text": "\\(10\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(25\\)",
         "imageUrl": ""
       }
     ]
@@ -920,8 +920,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nb) Calculate the exact perpendicular height of the cone.",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "12",
     "hint": "",
     "solution": "The correct answer is \\(12\\).",
     "solutionSteps": [
@@ -951,19 +951,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-12\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(11\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(12\\)",
         "imageUrl": ""
       },
       {
         "text": "\\(13\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(144\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(169\\)",
         "imageUrl": ""
       }
     ]
@@ -977,8 +977,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "The curved surface area of a cone is \\( 65\\pi \\) cm\\(^2\\) and the area of the circular base is \\( 25\\pi \\) cm\\(^2\\).\nc) Calculate the volume of the cone, correct to the nearest cm\\(^3\\).",
-    "a": 2,
-    "answer": "2",
+    "a": 0,
+    "answer": "314",
     "hint": "",
     "solution": "The correct answer is \\(314\\).",
     "solutionSteps": [
@@ -1008,19 +1008,19 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-314\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(313\\)",
-        "imageUrl": ""
-      },
-      {
         "text": "\\(314\\)",
         "imageUrl": ""
       },
       {
-        "text": "\\(315\\)",
+        "text": "\\(942\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(1024\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(157\\)",
         "imageUrl": ""
       }
     ]
@@ -1034,8 +1034,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\na) the surface area of the tank in m\\(^2\\)",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "125.7",
     "hint": "",
     "solution": "The correct answer is \\(125.7\\).",
     "solutionSteps": [
@@ -1065,11 +1065,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-125.7\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(124.7\\)",
+        "text": "\\(100.5\\)",
         "imageUrl": ""
       },
       {
@@ -1077,7 +1073,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(126.7\\)",
+        "text": "\\(150.8\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(175.9\\)",
         "imageUrl": ""
       }
     ]
@@ -1091,8 +1091,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "A storage tank is constructed as a cylinder with a hemisphere at each end of the cylinder. The radius of the cylinder is \\( 2 \\) m and the overall length of the tank is \\( 10 \\) m.\n\nCalculate (correct to 1 decimal place):\nb) the volume of the tank",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "108.9",
     "hint": "",
     "solution": "The correct answer is \\(108.9\\).",
     "solutionSteps": [
@@ -1122,11 +1122,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-108.9\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(107.9\\)",
+        "text": "\\(75.4\\)",
         "imageUrl": ""
       },
       {
@@ -1134,7 +1130,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(109.9\\)",
+        "text": "\\(142.4\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(326.7\\)",
         "imageUrl": ""
       }
     ]
@@ -1148,8 +1148,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\na) If Length scale factor is \\( 4 \\), find the Area and Volume scale factors.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "16, 64",
     "hint": "",
     "solution": "The correct answer is \\(16, 64\\).",
     "solutionSteps": [
@@ -1179,11 +1179,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-1664\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(1663\\)",
+        "text": "\\(8, 12\\)",
         "imageUrl": ""
       },
       {
@@ -1191,7 +1187,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(1665\\)",
+        "text": "\\(16, 32\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(8, 64\\)",
         "imageUrl": ""
       }
     ]
@@ -1205,8 +1205,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\nb) If Length scale factor is \\( 2.5 \\), find the Area and Volume scale factors.",
-    "a": 1,
-    "answer": "1",
+    "a": 2,
+    "answer": "6.25, 15.625",
     "hint": "",
     "solution": "The correct answer is \\(6.25, 15.625\\).",
     "solutionSteps": [
@@ -1236,7 +1236,11 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-6.25, 15.625\\)",
+        "text": "\\(5, 7.5\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(6.25, 12.5\\)",
         "imageUrl": ""
       },
       {
@@ -1244,11 +1248,7 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(6.25, 15.625 + 1\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(6.35, 15.635\\)",
+        "text": "\\(12.5, 31.25\\)",
         "imageUrl": ""
       }
     ]
@@ -1262,8 +1262,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\nc) If Area scale factor is \\( 9 \\), find the Length and Volume scale factors.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "3, 27",
     "hint": "",
     "solution": "The correct answer is \\(3, 27\\).",
     "solutionSteps": [
@@ -1293,11 +1293,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-327\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(326\\)",
+        "text": "\\(4.5, 13.5\\)",
         "imageUrl": ""
       },
       {
@@ -1305,7 +1301,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(328\\)",
+        "text": "\\(3, 9\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(4.5, 27\\)",
         "imageUrl": ""
       }
     ]
@@ -1319,8 +1319,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\nd) If Area scale factor is \\( 49 \\), find the Length and Volume scale factors.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "7, 343",
     "hint": "",
     "solution": "The correct answer is \\(7, 343\\).",
     "solutionSteps": [
@@ -1350,11 +1350,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-7343\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(7342\\)",
+        "text": "\\(24.5, 73.5\\)",
         "imageUrl": ""
       },
       {
@@ -1362,7 +1358,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(7344\\)",
+        "text": "\\(7, 49\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(24.5, 343\\)",
         "imageUrl": ""
       }
     ]
@@ -1376,8 +1376,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\ne) If Volume scale factor is \\( 216 \\), find the Length and Area scale factors.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "6, 36",
     "hint": "",
     "solution": "The correct answer is \\(6, 36\\).",
     "solutionSteps": [
@@ -1407,11 +1407,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-636\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(635\\)",
+        "text": "\\(72, 144\\)",
         "imageUrl": ""
       },
       {
@@ -1419,7 +1415,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(637\\)",
+        "text": "\\(6, 216\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(36, 6\\)",
         "imageUrl": ""
       }
     ]
@@ -1433,8 +1433,8 @@ export const Y10_CH6K_QUESTIONS = [
     "difficulty": "medium",
     "timeLimit": 120,
     "question": "Fill in the missing entries for the scale factors.\nf) If Volume scale factor is \\( 1000 \\), find the Length and Area scale factors.",
-    "a": 2,
-    "answer": "2",
+    "a": 1,
+    "answer": "10, 100",
     "hint": "",
     "solution": "The correct answer is \\(10, 100\\).",
     "solutionSteps": [
@@ -1464,11 +1464,7 @@ export const Y10_CH6K_QUESTIONS = [
     "requiresManualGrading": false,
     "options": [
       {
-        "text": "\\(-10100\\)",
-        "imageUrl": ""
-      },
-      {
-        "text": "\\(10099\\)",
+        "text": "\\(333, 666\\)",
         "imageUrl": ""
       },
       {
@@ -1476,7 +1472,11 @@ export const Y10_CH6K_QUESTIONS = [
         "imageUrl": ""
       },
       {
-        "text": "\\(10101\\)",
+        "text": "\\(10, 1000\\)",
+        "imageUrl": ""
+      },
+      {
+        "text": "\\(100, 10\\)",
         "imageUrl": ""
       }
     ]
