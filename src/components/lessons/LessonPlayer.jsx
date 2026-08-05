@@ -2533,8 +2533,11 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
   const togglePlay = () => { if (!playing && step === total - 1) setStep(0); setPlaying((p) => !p); };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, fontFamily: FONT }}>
-      <svg width={width} height={height} style={{ display: 'block' }}>
+    <div style={{
+      display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', gap: 28,
+      fontFamily: FONT, background: '#fbfaff', border: '1px solid #ece9fb', borderRadius: 18, padding: '20px 26px',
+    }}>
+      <svg width={width} height={height} style={{ display: 'block', flex: 'none' }}>
         <polygon points={`${A[0]},${A[1]} ${B[0]},${B[1]} ${C[0]},${C[1]}`} fill="rgba(124,58,237,0.05)" />
         <line x1={A[0]} y1={A[1]} x2={B[0]} y2={B[1]} stroke={neutral} strokeWidth="2.2" style={trans} />
         <line x1={A[0]} y1={A[1]} x2={C[0]} y2={C[1]} stroke={s.known ? known : neutral} strokeWidth={s.known ? 4 : 2.2} style={trans} />
@@ -2552,51 +2555,53 @@ const UnknownSideSolver = ({ width = 320, height = 260 }) => {
         </AnimatePresence>
       </svg>
 
-      <div style={{ background: '#f8f7ff', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', minWidth: 180, textAlign: 'center' }}>
-        <AnimatePresence mode="wait">
-          <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
-            <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.08rem', fontWeight: 700, color: '#5b4b9c' }} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 12, width: 300, flex: 'none' }}>
+        <div style={{ background: '#f2effc', border: '1px solid #ece9fb', borderRadius: 12, padding: '8px 18px', width: '100%', textAlign: 'center', boxSizing: 'border-box' }}>
+          <AnimatePresence mode="wait">
+            <motion.div key={s.formula} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+              <MathView content={`$$${s.formula}$$`} style={{ fontSize: '1.08rem', fontWeight: 700, color: '#5b4b9c' }} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
-      <div style={{ display: 'flex', gap: 8 }}>
-        {MNEM_RATIOS.map((r) => (
-          <div key={r.key} style={{
-            padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58,
-            border: `1.5px solid ${s.mnem === r.key ? '#7c3aed' : '#e2e8f0'}`,
-            background: s.mnem === r.key ? '#f5f3ff' : '#fff', transition: 'border-color 0.4s ease, background 0.4s ease',
-          }}>
-            <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: s.mnem === r.key ? '#7c3aed' : '#64748b' }} />
-            <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
-          </div>
-        ))}
-      </div>
-
-      <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', maxWidth: 300, minHeight: '2.4em' }}>
-        <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
-      </div>
-
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-        <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
-          style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
-          <ArrowLeft size={14} color="#475569" />
-        </button>
-        <div style={{ display: 'flex', gap: 4 }}>
-          {UNKNOWN_SIDE_STEPS.map((_, i) => (
-            <div key={i} onClick={() => goTo(i)} style={{
-              width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
-              background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
-            }} />
+        <div style={{ display: 'flex', gap: 8 }}>
+          {MNEM_RATIOS.map((r) => (
+            <div key={r.key} style={{
+              padding: '5px 10px', borderRadius: 10, textAlign: 'center', minWidth: 58,
+              border: `1.5px solid ${s.mnem === r.key ? '#7c3aed' : '#e2e8f0'}`,
+              background: s.mnem === r.key ? '#f5f3ff' : '#fff', transition: 'border-color 0.4s ease, background 0.4s ease',
+            }}>
+              <MathView content={`$${r.label}$`} style={{ fontSize: '0.8rem', fontWeight: 800, color: s.mnem === r.key ? '#7c3aed' : '#64748b' }} />
+              <div style={{ fontSize: '0.62rem', fontWeight: 600, color: '#94a3b8', marginTop: 2 }}>{r.parts}</div>
+            </div>
           ))}
         </div>
-        <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
-          {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
-        </button>
-        <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
-          style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
-          <ArrowRight size={14} color="#475569" />
-        </button>
+
+        <div style={{ fontSize: '0.82rem', fontWeight: 600, color: '#475569', textAlign: 'center', minHeight: '2.4em' }}>
+          <span style={{ fontWeight: 800, color: '#7c3aed' }}>{s.tag}. </span>{s.text}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <button onClick={() => goTo(step - 1)} disabled={step === 0} aria-label="Previous step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === 0 ? 'default' : 'pointer', opacity: step === 0 ? 0.4 : 1 }}>
+            <ArrowLeft size={14} color="#475569" />
+          </button>
+          <div style={{ display: 'flex', gap: 4 }}>
+            {UNKNOWN_SIDE_STEPS.map((_, i) => (
+              <div key={i} onClick={() => goTo(i)} style={{
+                width: 6, height: 6, borderRadius: '50%', cursor: 'pointer',
+                background: i === step ? '#7c3aed' : '#e2e8f0', transition: 'background 0.2s ease',
+              }} />
+            ))}
+          </div>
+          <button onClick={togglePlay} style={{ border: 'none', background: '#7c3aed', color: '#fff', borderRadius: 999, padding: '6px 14px', fontWeight: 700, fontSize: '0.78rem', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 5, fontFamily: FONT }}>
+            {playing ? <Pause size={13} /> : <Play size={13} />}{playing ? 'Pause' : (step === total - 1 ? 'Replay' : 'Play')}
+          </button>
+          <button onClick={() => goTo(step + 1)} disabled={step === total - 1} aria-label="Next step"
+            style={{ border: '1.5px solid #e2e8f0', background: '#fff', borderRadius: 8, padding: '5px 9px', cursor: step === total - 1 ? 'default' : 'pointer', opacity: step === total - 1 ? 0.4 : 1 }}>
+            <ArrowRight size={14} color="#475569" />
+          </button>
+        </div>
       </div>
     </div>
   );
